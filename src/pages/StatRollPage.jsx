@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { createId } from '../utils/id'
 
 const STATS = [
@@ -31,10 +30,29 @@ function abilityModifier(score) {
 
 const STAT_CAP = 20
 
-export default function StatRollPage() {
-  const [results, setResults] = useState([])
-  const [assignments, setAssignments] = useState({})
-  const [bonuses, setBonuses] = useState({})
+export default function StatRollPage({ statRollState, setStatRollState }) {
+  const { results, assignments, bonuses } = statRollState
+
+  function setResults(updater) {
+    setStatRollState((prev) => ({
+      ...prev,
+      results: typeof updater === 'function' ? updater(prev.results) : updater,
+    }))
+  }
+
+  function setAssignments(updater) {
+    setStatRollState((prev) => ({
+      ...prev,
+      assignments: typeof updater === 'function' ? updater(prev.assignments) : updater,
+    }))
+  }
+
+  function setBonuses(updater) {
+    setStatRollState((prev) => ({
+      ...prev,
+      bonuses: typeof updater === 'function' ? updater(prev.bonuses) : updater,
+    }))
+  }
 
   function handleRoll() {
     const next = Array.from({ length: 6 }, () => roll4d6DropLowest())
@@ -88,8 +106,8 @@ export default function StatRollPage() {
   )
 
   return (
-    <div className="mx-auto max-w-4xl p-4 md:p-8">
-      <h1 className="mb-6 text-2xl font-bold text-gray-900">สุ่มค่าพลัง (4d6 ตัดต่ำสุด)</h1>
+    <div>
+      <h2 className="mb-4 text-xl font-bold text-gray-900">สุ่มค่าพลัง (4d6 ตัดต่ำสุด)</h2>
 
       <button
         onClick={handleRoll}
