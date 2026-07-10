@@ -8,7 +8,6 @@ import Modal from './Modal'
 
 const links = [
   { to: '/roll', label: 'สุ่ม' },
-  { to: '/stats', label: 'สุ่มค่าพลัง' },
   { to: '/boxes', label: 'จัดการตู้สุ่ม' },
 ]
 

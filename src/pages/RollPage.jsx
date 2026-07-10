@@ -7,17 +7,62 @@ import {
   getEffectiveTotalWeight,
   rollBox,
 } from '../utils/weightedRandom'
+import StatRollPage from './StatRollPage'
 
 const NO_CATEGORY = 'ไม่มีหมวดหมู่'
 const ROLL_DURATION_MS = 700
 
-export default function RollPage() {
+export default function RollPage({
+  rollState,
+  setRollState,
+  statRollState,
+  setStatRollState,
+  visibility,
+  setVisibility,
+}) {
   const { state, dispatch } = useGachaStore()
   const { showToast } = useToast()
-  const [config, setConfig] = useState({})
   const [rolling, setRolling] = useState(false)
-  const [boxResults, setBoxResults] = useState({})
-  const [revealedIds, setRevealedIds] = useState(new Set())
+  const { config, boxResults, revealedIds } = rollState
+  const { hiddenBoxIds, showStatRoll } = visibility
+
+  function isBoxVisible(boxId) {
+    return !hiddenBoxIds.has(boxId)
+  }
+
+  function toggleBoxVisible(boxId) {
+    setVisibility((prev) => {
+      const next = new Set(prev.hiddenBoxIds)
+      if (next.has(boxId)) next.delete(boxId)
+      else next.add(boxId)
+      return { ...prev, hiddenBoxIds: next }
+    })
+  }
+
+  function toggleStatRollVisible() {
+    setVisibility((prev) => ({ ...prev, showStatRoll: !prev.showStatRoll }))
+  }
+
+  function setConfig(updater) {
+    setRollState((prev) => ({
+      ...prev,
+      config: typeof updater === 'function' ? updater(prev.config) : updater,
+    }))
+  }
+
+  function setBoxResults(updater) {
+    setRollState((prev) => ({
+      ...prev,
+      boxResults: typeof updater === 'function' ? updater(prev.boxResults) : updater,
+    }))
+  }
+
+  function setRevealedIds(updater) {
+    setRollState((prev) => ({
+      ...prev,
+      revealedIds: typeof updater === 'function' ? updater(prev.revealedIds) : updater,
+    }))
+  }
 
   const grouped = useMemo(() => {
     const map = new Map()
@@ -135,17 +180,58 @@ export default function RollPage() {
     performRoll([{ box, count, mode }])
   }
 
+  const visibleGrouped = useMemo(
+    () =>
+      grouped
+        .map(([category, boxes]) => [category, boxes.filter((box) => isBoxVisible(box.id))])
+        .filter(([, boxes]) => boxes.length > 0),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [grouped, hiddenBoxIds],
+  )
+
   return (
     <div className="mx-auto max-w-4xl p-4 md:p-8">
       <h1 className="mb-6 text-2xl font-bold text-gray-900">สุ่ม</h1>
+
+      <div className="mb-6 rounded-lg border border-gray-200 bg-white p-3">
+        <h2 className="mb-2 text-sm font-semibold text-gray-500">เลือกสิ่งที่จะแสดง</h2>
+        <div className="space-y-3">
+          {grouped.map(([category, boxes]) => (
+            <div key={category}>
+              <div className="mb-1 text-xs font-medium text-gray-400">{category}</div>
+              <div className="flex flex-wrap gap-x-4 gap-y-1">
+                {boxes.map((box) => (
+                  <label key={box.id} className="flex items-center gap-1.5 text-sm text-gray-700">
+                    <input
+                      type="checkbox"
+                      checked={isBoxVisible(box.id)}
+                      onChange={() => toggleBoxVisible(box.id)}
+                    />
+                    {box.name}
+                  </label>
+                ))}
+              </div>
+            </div>
+          ))}
+          <div>
+            <div className="mb-1 text-xs font-medium text-gray-400">อื่นๆ</div>
+            <label className="flex items-center gap-1.5 text-sm text-gray-700">
+              <input type="checkbox" checked={showStatRoll} onChange={toggleStatRollVisible} />
+              สุ่มค่าพลัง (4d6)
+            </label>
+          </div>
+        </div>
+      </div>
 
       {state.boxes.length === 0 ? (
         <p className="text-sm text-gray-400">
           ยังไม่มีตู้สุ่ม ไปที่หน้า "จัดการตู้สุ่ม" เพื่อสร้างตู้ก่อน
         </p>
+      ) : visibleGrouped.length === 0 ? (
+        <p className="text-sm text-gray-400">ยังไม่ได้เลือกตู้ที่จะแสดง ติ๊กเลือกด้านบนก่อน</p>
       ) : (
         <div className="space-y-6">
-          {grouped.map(([category, boxes]) => (
+          {visibleGrouped.map(([category, boxes]) => (
             <div key={category}>
               <h2 className="mb-2 text-sm font-semibold text-gray-500">{category}</h2>
               <div className="space-y-2">
@@ -286,6 +372,12 @@ export default function RollPage() {
       {rolling && (
         <div className="mt-8 flex justify-center">
           <div className="h-16 w-16 animate-spin rounded-full border-4 border-purple-200 border-t-purple-600" />
+        </div>
+      )}
+
+      {showStatRoll && (
+        <div className="mt-8 border-t border-gray-200 pt-8">
+          <StatRollPage statRollState={statRollState} setStatRollState={setStatRollState} />
         </div>
       )}
     </div>
