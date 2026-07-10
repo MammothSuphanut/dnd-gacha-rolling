@@ -3630,6 +3630,3648 @@
       "boxType": "class"
     },
     {
+      "id": "box-4a3b55fd-8c17-4204-a283-fd054e02998a",
+      "name": "Core",
+      "category": "Classes",
+      "items": [
+        {
+          "id": "item-266a0692-bb11-47a5-8cd7-3a400e6f4c98",
+          "name": "Path of the Ancestral Guardian",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_ancestral%20guardian_xge=b1"
+        },
+        {
+          "id": "item-df7a6a93-affc-411d-9692-9c6cc4473426",
+          "name": "Path of the Battlerager",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: SCAG",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_battlerager_scag=b1"
+        },
+        {
+          "id": "item-1956812f-becd-460e-9508-16c8aac60636",
+          "name": "Path of the Beast",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_beast_tce=b1"
+        },
+        {
+          "id": "item-92f9ab79-cf44-431e-84d8-1006d402d53e",
+          "name": "Path of the Berserker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_berserker_xphb=b1"
+        },
+        {
+          "id": "item-7752de4a-4d6c-4ac1-8662-0b20ca790faa",
+          "name": "Path of the Carrion Raven",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PP",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_carrion%20raven_grimhollowplayerpack=b1"
+        },
+        {
+          "id": "item-bdca5ce1-1c49-474e-bad7-daaae6d751a3",
+          "name": "Path of the Fractured",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_fractured_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-27948499-a5d4-4bd2-9fe7-707786e9fab4",
+          "name": "Path of the Giant",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: BGG",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_giant_bgg=b1"
+        },
+        {
+          "id": "item-284ae0aa-02e9-42a0-8a88-5507a209a0c3",
+          "name": "Path of the Muscle Wizard",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: VSS:PP",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_muscle%20wizard_valdaplayerpack=b1"
+        },
+        {
+          "id": "item-5e9337ea-2d9a-4860-815d-d4ba42a67d63",
+          "name": "Path of the Primal Spirit",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_primal%20spirit_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-35c070b2-1f78-4c74-a899-b68a9b974d6e",
+          "name": "Path of the Storm Herald",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_storm%20herald_xge=b1"
+        },
+        {
+          "id": "item-b4656208-4651-4310-b413-da62ec3ae9f0",
+          "name": "Path of the Wild Heart",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wild%20heart_xphb=b1"
+        },
+        {
+          "id": "item-f48c063c-42d1-43d1-b09b-4348d5ad1752",
+          "name": "Path of the World Tree",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_world%20tree_xphb=b1"
+        },
+        {
+          "id": "item-48d8759e-4aa9-4e51-9113-7f91fa50dd5f",
+          "name": "Path of the Wrathful Dead",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wrathful%20dead_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-51cdbfc8-7797-4d93-a1fd-58c1fb34428c",
+          "name": "Path of the Zealot",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_zealot_xphb=b1"
+        },
+        {
+          "id": "item-4b77d6af-97d8-47ce-874f-ff93eb76cbcd",
+          "name": "Path of the Wild Magic",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Barbarian",
+          "link": "https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wild%20magic_tce=b1"
+        },
+        {
+          "id": "item-ac71bdb7-21fd-488f-82a0-3c7c8c8abd0b",
+          "name": "College of Adventurers",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_adventurers_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-87258f6a-c2d9-435a-a116-3ba1918b1b18",
+          "name": "College of Creation",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_creation_tce=b1"
+        },
+        {
+          "id": "item-e0246487-6d31-46f7-a95d-4256fb1f339b",
+          "name": "College of Dance",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_dance_xphb=b1"
+        },
+        {
+          "id": "item-83540ad2-2417-41e6-b46d-4e2254221101",
+          "name": "College of Eloquence",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_eloquence_tce=b1"
+        },
+        {
+          "id": "item-1745e93a-f89b-469a-b545-bbaeb4130e5a",
+          "name": "College of Fools",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_fools_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-a7350cda-8306-4e39-a943-5297c590a3d0",
+          "name": "College of Glamour",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_glamour_xphb=b1"
+        },
+        {
+          "id": "item-8f5f8e2c-b89b-45bc-a7e1-54d75aa88c51",
+          "name": "College of Lore",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_lore_xphb=b1"
+        },
+        {
+          "id": "item-17224db9-055e-479d-b968-4a843b4c182e",
+          "name": "College of Requiems",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_requiems_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-df707e8c-02cf-49b5-860a-7ceed815c4e8",
+          "name": "College of Spirits",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: RHW",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_spirits_rhw=b1"
+        },
+        {
+          "id": "item-73279dd4-0089-4efb-aa41-4e101663ce6e",
+          "name": "College of Swords",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_swords_xge=b1"
+        },
+        {
+          "id": "item-15643573-6d5c-4015-bc8a-42ef48522926",
+          "name": "College of the Moon",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_moon_frhof=b1"
+        },
+        {
+          "id": "item-1758ae29-a233-4d60-a9e3-cf7a144c5af1",
+          "name": "College of Valor",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_valor_xphb=b1"
+        },
+        {
+          "id": "item-1e3ea4ba-5d91-41d6-bcd8-7cfa12516dde",
+          "name": "College of Whispers",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Bard",
+          "link": "https://5e.tools/classes.html#bard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_whispers_xge=b1"
+        },
+        {
+          "id": "item-fb3eea7d-f119-4bc5-8749-bbe78290ff47",
+          "name": "Arcana Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: SCAG",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_arcana_scag=b1"
+        },
+        {
+          "id": "item-d6fa5b4e-8538-4385-b372-70c2ff6338a1",
+          "name": "Death Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: DMG'14",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_death_dmg=b1"
+        },
+        {
+          "id": "item-290fd50d-2cbc-4fad-9b8c-c38d32c0878c",
+          "name": "Eldritch Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_eldritch_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-2dbe4963-10eb-4088-8cba-c5ce877e3198",
+          "name": "Forge Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_forge_xge=b1"
+        },
+        {
+          "id": "item-cb895698-ed27-4ffa-bccd-4573297c65bc",
+          "name": "Grave Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: RHW",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_grave_rhw=b1"
+        },
+        {
+          "id": "item-4fbdc7b1-0bc1-4287-b85c-c4328400ea67",
+          "name": "Inquisition Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_inquisition_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-0fe619ff-400e-433e-b3fb-c247fb82fb57",
+          "name": "Knowledge Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_knowledge_frhof=b1"
+        },
+        {
+          "id": "item-12c33b58-1ebd-42f8-93c7-4b58d23a666c",
+          "name": "Life Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_life_xphb=b1"
+        },
+        {
+          "id": "item-2cca8d1d-4485-4975-8968-c61a41b0ea10",
+          "name": "Light Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_light_xphb=b1"
+        },
+        {
+          "id": "item-e05b939e-14f7-4340-8737-1c95c736bea8",
+          "name": "Nature Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'14",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_nature_phb=b1"
+        },
+        {
+          "id": "item-e1c7b147-5612-454f-9990-3dc1d528b6a2",
+          "name": "Order Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_order_tce=b1"
+        },
+        {
+          "id": "item-d442be50-1252-4ae5-98cc-c1d1c8acbb77",
+          "name": "Peace Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_peace_tce=b1"
+        },
+        {
+          "id": "item-640cfcd2-0e19-4e7d-865f-8114c752d3ca",
+          "name": "Pestilence Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_pestilence_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-83e483be-5b99-49eb-bae9-1f9180ec3896",
+          "name": "Purification Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_purification_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-c47bf8fc-4194-4f10-b047-d7cb8cd5ebba",
+          "name": "Tempest Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'14",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_tempest_phb=b1"
+        },
+        {
+          "id": "item-42e311b0-dbd7-4001-b103-3cee93c53557",
+          "name": "Trickery Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_trickery_xphb=b1"
+        },
+        {
+          "id": "item-ba23d069-ed2d-44e7-b5d2-0a97e5733820",
+          "name": "Twilight Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_twilight_tce=b1"
+        },
+        {
+          "id": "item-b094df67-28a7-4e64-95f8-6503c393dc44",
+          "name": "War Domain",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Cleric",
+          "link": "https://5e.tools/classes.html#cleric_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_war_xphb=b1"
+        },
+        {
+          "id": "item-a1800bf5-5e26-4621-a039-1596dbd07e88",
+          "name": "Circle of Blood",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_blood_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-07d5b56d-483e-48d9-a47b-219bbafbdf21",
+          "name": "Circle of Dreams",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_dreams_xge=b1"
+        },
+        {
+          "id": "item-2be72836-6a55-4467-a923-22bcc90e04b6",
+          "name": "Circle of Entropy",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_entropy_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-c059be8d-82b2-49e2-afaf-bef905600ea9",
+          "name": "Circle of Mutation",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_mutation_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-9b0fb690-e01e-4b67-8c38-904f95eadae1",
+          "name": "Circle of Spores",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_spores_tce=b1"
+        },
+        {
+          "id": "item-d42ee5ad-ef5d-45f0-82ba-a752cc43b120",
+          "name": "Circle of the Land",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_land_xphb=b1"
+        },
+        {
+          "id": "item-8cec3cde-b2a3-434c-a1dc-955a531a2778",
+          "name": "Circle of the Moon",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_moon_xphb=b1"
+        },
+        {
+          "id": "item-476748e6-0cda-47d9-bb27-5d64e8d3580c",
+          "name": "Circle of the Sea",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~sub_sea_xphb=b1"
+        },
+        {
+          "id": "item-d4bc6fcf-4ec6-4c0a-98ca-43595abc9ac2",
+          "name": "Circle of the Shepherd",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_shepherd_xge=b1"
+        },
+        {
+          "id": "item-dc2a2bc0-3b45-4063-bfd9-6e9d058d3734",
+          "name": "Circle of the Stars",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_stars_xphb=b1"
+        },
+        {
+          "id": "item-13adc4f1-afb8-432d-b3ff-4440257d3745",
+          "name": "Circle of Wildfire",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Druid",
+          "link": "https://5e.tools/classes.html#druid_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wildfire_tce=b1"
+        },
+        {
+          "id": "item-54a864a4-16c7-44f1-9a16-10a62a1fb7bb",
+          "name": "Arcane Archer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_arcane%20archer_xge=b1"
+        },
+        {
+          "id": "item-964e5f92-c849-4918-a0be-081177280383",
+          "name": "Banneret",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_banneret_frhof=b1"
+        },
+        {
+          "id": "item-b2c2e1fa-bef6-4cce-bcd4-c12d1e6b8ae2",
+          "name": "Battle Master",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_battle%20master_xphb=b1"
+        },
+        {
+          "id": "item-cc91e22b-ff7b-4138-8740-0f6af1cc89eb",
+          "name": "Blade Breaker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PP",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_blade%20breaker_grimhollowplayerpack=b1"
+        },
+        {
+          "id": "item-041508c3-ac1d-4072-9ab0-777124926505",
+          "name": "Bulwark Warrior",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_bulwark%20warrior_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-549949a8-3f7b-476d-b586-e01b44029ed5",
+          "name": "Cavalier",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_cavalier_xge=b1"
+        },
+        {
+          "id": "item-12bd9d5d-b6f1-4373-b578-511b01040e4c",
+          "name": "Champion",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_champion_xphb=b1"
+        },
+        {
+          "id": "item-b03bb87f-2925-466e-94d8-03d215d5feee",
+          "name": "Dungeoneer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: VSS:PP",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_dungeoneer_valdaplayerpack=b1"
+        },
+        {
+          "id": "item-68fd8cf2-df40-465c-9ff1-bb7468801561",
+          "name": "Echo Knight",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: EGW",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_echo%20knight_egw=b1"
+        },
+        {
+          "id": "item-0e52e615-bdf2-49c4-ab20-9f20cea79c7a",
+          "name": "Eldritch Knight",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_eldritch%20knight_xphb=b1"
+        },
+        {
+          "id": "item-55b7ec01-4f85-4676-b477-0116532663a0",
+          "name": "Living Crucible",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_living%20crucible_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-c7568693-607e-4105-af33-520a8f5348bd",
+          "name": "Nightwatcher",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_nightwatcher_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-b8870313-fc8d-4d45-8595-93e594cfa52b",
+          "name": "Psi Warrior",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_psi%20warrior_xphb=b1"
+        },
+        {
+          "id": "item-2e44064c-1375-4c64-b31d-4cbc0a21e337",
+          "name": "Rune Knight",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_rune%20knight_tce=b1"
+        },
+        {
+          "id": "item-b5df40ae-9271-4a24-ba1f-22a3c48a8553",
+          "name": "Samurai",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Fighter",
+          "link": "https://5e.tools/classes.html#fighter_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_samurai_xge=b1"
+        },
+        {
+          "id": "item-ab98fb71-bad6-4210-9140-c9e9cba35d6e",
+          "name": "Warrior of Mercy",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_mercy_xphb=b1"
+        },
+        {
+          "id": "item-16bd9d68-70f7-45dd-927e-1572ead76e07",
+          "name": "Warrior of Pride",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_pride_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-6c3b4045-6e26-4698-8759-3cf8dd7678fa",
+          "name": "Warrior of Regret",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_regret_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-4c246d5e-b98c-4074-a86e-410720db3cad",
+          "name": "Warrior of Shadow",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_shadow_xphb=b1"
+        },
+        {
+          "id": "item-42608e6a-a7c3-4277-96a5-085b6152a8df",
+          "name": "Warrior of the Elements",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_elements_xphb=b1"
+        },
+        {
+          "id": "item-360c851f-5f67-4d3b-9510-b6bb367f519b",
+          "name": "Warrior of the Leaden Crown",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_leaden%20crown_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-2d6b2f67-71b0-4e12-8c2b-0b3514d93188",
+          "name": "Warrior of the Open Hand",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_open%20hand_xphb=b1"
+        },
+        {
+          "id": "item-ddb3b40e-54b3-4059-8dac-64fb2319871c",
+          "name": "Warrior of the Street",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: VSS:PP",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_street_valdaplayerpack=b1"
+        },
+        {
+          "id": "item-934059c7-d3f6-4bfa-9b63-6d72f1430641",
+          "name": "Way of the Ascendant Dragon",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FTD",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_ascendant%20dragon_ftd=b1"
+        },
+        {
+          "id": "item-6e4cc51b-68ec-4902-968e-faf6cb4b4aee",
+          "name": "Way of the Astral Self",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_astral%20self_tce=b1"
+        },
+        {
+          "id": "item-e6c57b4f-9b86-46be-9c35-ac651d97079d",
+          "name": "Way of the Drunken Master",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_drunken%20master_xge=b1"
+        },
+        {
+          "id": "item-59cdfdf6-53b7-4469-ad0d-804ca6afb2dd",
+          "name": "Way of the Kensei",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_kensei_xge=b1"
+        },
+        {
+          "id": "item-4c314475-d259-499e-a625-ee3282d3bb17",
+          "name": "Way of the Long Death",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: SCAG",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_long%20death_scag=b1"
+        },
+        {
+          "id": "item-31a4a9fa-202c-4a05-b7eb-65614d405693",
+          "name": "Way of the Sun Soul",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Monk",
+          "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_sun%20soul_xge=b1"
+        },
+        {
+          "id": "item-7cd72920-73d1-40d5-8d78-b3588ff0e717",
+          "name": "Oath of Conquest",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_conquest_xge=b1"
+        },
+        {
+          "id": "item-908ef15f-f77c-4998-be4b-e8c7fc112fc9",
+          "name": "Oath of Devotion",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_devotion_xphb=b1"
+        },
+        {
+          "id": "item-0ac7ca60-298a-4267-97a7-8661ca530419",
+          "name": "Oath of Glory",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_glory_xphb=b1"
+        },
+        {
+          "id": "item-d2e20cd4-d5c6-4983-a18c-4f7f7c0b2c57",
+          "name": "Oath of Pestilence",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_pestilence_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-65a0421f-ed53-441c-8889-31ddbef9dbc5",
+          "name": "Oath of Redemption",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_redemption_xge=b1"
+        },
+        {
+          "id": "item-6e3af252-39b7-4061-9298-c36cf439d55d",
+          "name": "Oath of Revelry",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: VSS:PP",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_revelry_valdaplayerpack=b1"
+        },
+        {
+          "id": "item-3af3c4a3-bf3a-411c-805e-1727e514dc8e",
+          "name": "Oath of Slaughter",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_slaughter_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-bd0fa15b-e961-44fe-a51a-fd2fadb352f4",
+          "name": "Oath of the Ancients",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_ancients_xphb=b1"
+        },
+        {
+          "id": "item-34960cc6-999b-4ad1-a163-daa1f7f1b1eb",
+          "name": "Oath of the Crown",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: SCAG",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_crown_scag=b1"
+        },
+        {
+          "id": "item-1156f1aa-a4a0-4cce-8c4c-2f328b082e63",
+          "name": "Oath of the Noble Genies",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_noble%20genies_frhof=b1"
+        },
+        {
+          "id": "item-080ba284-e6e0-458f-ad9f-e5ed40dbf155",
+          "name": "Oath of the Watchers",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_watchers_tce=b1"
+        },
+        {
+          "id": "item-9e8c0df1-1260-4be7-ad70-c1532aa5c890",
+          "name": "Oath of Vengeance",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_vengeance_xphb=b1"
+        },
+        {
+          "id": "item-9dd945c1-47df-4643-99dc-fb2786bcbb0c",
+          "name": "Oath of Zeal",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_zeal_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-725eda3f-c139-4a27-a5af-26c8b7a801de",
+          "name": "Oathbreaker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: DMG'14",
+          "group": "Paladin",
+          "link": "https://5e.tools/classes.html#paladin_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_oathbreaker_dmg=b1"
+        },
+        {
+          "id": "item-90c2f13b-8be4-4a22-ab22-0c5e10485f88",
+          "name": "Beast Master",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_beast%20master_xphb=b1"
+        },
+        {
+          "id": "item-f515f4bc-89ca-4909-98ef-ac0e1a670512",
+          "name": "Drakewarden",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FTD",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_drakewarden_ftd=b1"
+        },
+        {
+          "id": "item-542a4b02-507b-4c78-a580-4e0d73a767a4",
+          "name": "Fey Wanderer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_fey%20wanderer_xphb=b1"
+        },
+        {
+          "id": "item-b3966c7f-bf25-4764-a5f6-57eab92022b0",
+          "name": "Gloom Stalker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_gloom%20stalker_xphb=b1"
+        },
+        {
+          "id": "item-23927f46-b673-4b0e-9e3f-f9bc68269699",
+          "name": "Green Reaper",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_green%20reaper_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-d2b9ecca-4168-48fd-a702-67ff6d48fd34",
+          "name": "Hollow Warden",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: RHW",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_hollow%20warden_rhw=b1"
+        },
+        {
+          "id": "item-9f3b71eb-c797-4a23-8f0b-1441020eba3e",
+          "name": "Horizon Walker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_horizon%20walker_xge=b1"
+        },
+        {
+          "id": "item-a30136a8-5de0-410a-a25c-644b9ea8d543",
+          "name": "Hunter",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_hunter_xphb=b1"
+        },
+        {
+          "id": "item-40fcdbd2-117c-4279-bd4f-a221e78495b0",
+          "name": "Monster Slayer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_monster%20slayer_xge=b1"
+        },
+        {
+          "id": "item-0c10247a-a570-416c-bf10-ef71f5826e0b",
+          "name": "Primordial Archer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_primordial%20archer_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-91b0bf9d-50f2-48d3-ab31-0e811a28b020",
+          "name": "Swarmkeeper",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_swarmkeeper_tce=b1"
+        },
+        {
+          "id": "item-2f894268-1b6c-40f3-9eb0-22193bad248d",
+          "name": "Vermin Lord",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_vermin%20lord_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-a478108c-1c1a-4785-8aa8-e106a9ecd3ac",
+          "name": "Winter Walker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Ranger",
+          "link": "https://5e.tools/classes.html#ranger_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_winter%20walker_frhof=b1"
+        },
+        {
+          "id": "item-5ca77713-0d50-4191-8741-2d73a3dc8b52",
+          "name": "Arachnoid Stalker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: VSS:PP",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_arachnoid%20stalker_valdaplayerpack=b1"
+        },
+        {
+          "id": "item-ea7630cc-0679-440f-9e18-2fe44efd19b0",
+          "name": "Arcane Trickster",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_arcane%20trickster_xphb=b1"
+        },
+        {
+          "id": "item-eb08bc51-72a0-4c4b-b0d6-d2af91529cef",
+          "name": "Assassin",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_assassin_xphb=b1"
+        },
+        {
+          "id": "item-64cbb57a-15bf-4adc-b27f-5be758c34d0d",
+          "name": "Highway Rider",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_highway%20rider_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-e7858c91-377b-4ef6-b8cc-12bbbe7e2cba",
+          "name": "Inquisitive",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_inquisitive_xge=b1"
+        },
+        {
+          "id": "item-0844a4d4-68f3-4955-9895-24b891b8f206",
+          "name": "Mastermind",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_mastermind_xge=b1"
+        },
+        {
+          "id": "item-89727472-9b63-4dee-86ab-e6487694d3e4",
+          "name": "Misfortune Bringer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_misfortune%20bringer_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-297a2a66-6b8f-4d64-8357-a0371a466662",
+          "name": "Phantom",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: RHW",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_phantom_rhw=b1"
+        },
+        {
+          "id": "item-9b636d7d-020a-4fc2-9d0f-ceaccd7fd8f4",
+          "name": "Sanguine Thief",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_sanguine%20thief_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-e3a4ab31-1511-43e6-a206-bbcbe39de879",
+          "name": "Scion of the Three",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_scion%20of%20the%20three_frhof=b1"
+        },
+        {
+          "id": "item-d8c28fac-0cb5-4ddc-9cb9-c7dd4756cede",
+          "name": "Scout",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_scout_xge=b1"
+        },
+        {
+          "id": "item-4024e9b8-9bc9-4bac-ac90-9619cea40d36",
+          "name": "Soulknife",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_soulknife_xphb=b1"
+        },
+        {
+          "id": "item-eac34425-cb59-4b3b-97a2-071964fd736e",
+          "name": "Swashbuckler",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_swashbuckler_xge=b1"
+        },
+        {
+          "id": "item-82280e98-1fdb-4265-bd24-5e1eea974ee2",
+          "name": "Thief",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Rogue",
+          "link": "https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_thief_xphb=b1"
+        },
+        {
+          "id": "item-757ce900-88fd-4e12-a6d2-b7b970c780f4",
+          "name": "Aberrant Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_aberrant_xphb=b1"
+        },
+        {
+          "id": "item-1c327889-4688-483a-9c0c-f4a9256b97df",
+          "name": "Apocalypse Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_apocalypse_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-09191069-70bd-456c-9e90-68708d7edd6d",
+          "name": "Clockwork Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_clockwork_xphb=b1"
+        },
+        {
+          "id": "item-e1e41a10-4c3b-49df-b1d3-04b678baefc8",
+          "name": "Divine Soul",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_divine%20soul_xge=b1"
+        },
+        {
+          "id": "item-546d339e-4d99-49f8-b261-caf9690f2836",
+          "name": "Draconic Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_draconic_xphb=b1"
+        },
+        {
+          "id": "item-98dca043-67da-4b6c-9685-254837ca69f7",
+          "name": "Haunted Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_haunted_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-a1b648e6-483c-40a8-8330-743fe5469d92",
+          "name": "Lunar Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: DSotDQ",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_lunar_dsotdq=b1"
+        },
+        {
+          "id": "item-109e9f1d-3fea-405e-b7c8-62ad7679b98c",
+          "name": "Shadow Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: RHW",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_shadow_rhw=b1"
+        },
+        {
+          "id": "item-b97f60a7-26b4-456b-a3d5-97a56a4c7fd6",
+          "name": "Spellfire Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_spellfire_frhof=b1"
+        },
+        {
+          "id": "item-04bfa57a-2f7c-4193-a335-051ed7716e4f",
+          "name": "Storm Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_storm_xge=b1"
+        },
+        {
+          "id": "item-e8537a83-e39e-4a79-a5f0-6021476c2b55",
+          "name": "Wild Magic Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wild%20magic_xphb=b1"
+        },
+        {
+          "id": "item-9e978796-8546-4790-8664-fac977b38d89",
+          "name": "Wretched Bloodline Sorcery",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Sorcerer",
+          "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wretched_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-caa004aa-8864-40af-9911-8333165f21b1",
+          "name": "Archfey Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_archfey_xphb=b1"
+        },
+        {
+          "id": "item-81bfacee-8e04-4562-83d9-af0c666557da",
+          "name": "Celestial Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_celestial_xphb=b1"
+        },
+        {
+          "id": "item-77033f31-45bc-482e-856d-04a7a58ddb2d",
+          "name": "Fiend Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_fiend_xphb=b1"
+        },
+        {
+          "id": "item-995c3533-abd7-4bf0-8639-e764eb2a269a",
+          "name": "Future You Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: VSS:PP",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_future%20you_valdaplayerpack=b1"
+        },
+        {
+          "id": "item-3f71ece3-3cd1-4e99-b0fa-a837bb508863",
+          "name": "Great Old One Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_great%20old%20one_xphb=b1"
+        },
+        {
+          "id": "item-3174f20b-264f-4aa6-a620-9363d8351df8",
+          "name": "The Coven",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_coven_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-b9de902d-2b9f-4486-8306-354ad7a87a0f",
+          "name": "The Fathomless",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_fathomless_tce=b1"
+        },
+        {
+          "id": "item-41b3b0d5-deac-40ab-8715-7cb326f90bc6",
+          "name": "The First Vampire Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_first%20vampire_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-9a28139e-9007-4197-b7ef-6e3146f517b0",
+          "name": "The Genie",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_genie_tce=b1"
+        },
+        {
+          "id": "item-ed60e3b9-54e4-4148-a897-235d9e7025b5",
+          "name": "The Hexblade",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_hexblade_xge=b1"
+        },
+        {
+          "id": "item-9132beb1-dbd8-43fd-9d6a-c03dcdc38f94",
+          "name": "The Parasite Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_parasite_helianasguidetomonsterhunting=b1"
+        },
+        {
+          "id": "item-745d6bcb-7fee-4172-81a4-f139cb247958",
+          "name": "The Undying",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: SCAG",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_undying_scag=b1"
+        },
+        {
+          "id": "item-199901da-772f-4026-ae9a-74187b21f3aa",
+          "name": "Undead Patron",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: RHW",
+          "group": "Warlock",
+          "link": "https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_undead_rhw=b1"
+        },
+        {
+          "id": "item-7641e85f-06c0-4369-bb86-46a97b12b144",
+          "name": "Abjurer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_abjurer_xphb=b1"
+        },
+        {
+          "id": "item-b48b1964-0809-4136-85a2-51bc94ed9d21",
+          "name": "Bladesinger",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: FRHoF",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_bladesinger_frhof=b1"
+        },
+        {
+          "id": "item-99f0b915-6393-4a0c-ba96-114deed0f2d5",
+          "name": "Chronurgy Magic",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: EGW",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_chronurgy_egw=b1"
+        },
+        {
+          "id": "item-da07af8d-30e6-4a80-a93d-2b5668c42148",
+          "name": "Daemonologist",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_daemonologist_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-29723255-e80f-4728-a6b4-71d13cf6bf6c",
+          "name": "Diviner",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_diviner_xphb=b1"
+        },
+        {
+          "id": "item-e8ad70db-eb8c-47c0-8b2e-5091cdaa9896",
+          "name": "Evoker",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_evoker_xphb=b1"
+        },
+        {
+          "id": "item-a9ade870-f87c-4abd-bc31-fe488ae5078b",
+          "name": "Graviturgy Magic",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: EGW",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_graviturgy_egw=b1"
+        },
+        {
+          "id": "item-c2bc5d7c-800b-4dbb-bc0f-5f0b2fbb6aa3",
+          "name": "Illusionist",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'24",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_illusionist_xphb=b1"
+        },
+        {
+          "id": "item-e9fbb1f7-78d8-4b83-9844-826c02b92ba7",
+          "name": "Order of Scribes",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: TCE",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_scribes_tce=b1"
+        },
+        {
+          "id": "item-9ab80f40-4174-4a53-a634-838922697758",
+          "name": "Plague Doctor",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20doctor_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-c7c57cb4-7812-45e5-a0b0-051c34c515d9",
+          "name": "Sangromancer",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_sangromancer_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-ff2077c3-27a0-426e-a374-dafc9c3780de",
+          "name": "School of Conjuration",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'14",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_conjuration_phb=b1"
+        },
+        {
+          "id": "item-815f3e56-6133-4cd2-97b5-2e98a557089a",
+          "name": "School of Enchantment",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'14",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_enchantment_phb=b1"
+        },
+        {
+          "id": "item-80a462a6-ca4e-43df-a6ae-0385ae207a97",
+          "name": "School of Necromancy",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'14",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_necromancy_phb=b1"
+        },
+        {
+          "id": "item-add7ef6a-651a-4ec0-a796-de7e3f993252",
+          "name": "School of Transmutation",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: PHB'14",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_transmutation_phb=b1"
+        },
+        {
+          "id": "item-9c32034a-fabf-40b9-840e-4e95b1459db7",
+          "name": "War Magic",
+          "weight": 1,
+          "tag": "Core",
+          "image": "",
+          "note": "Source: XGE",
+          "group": "Wizard",
+          "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_war_xge=b1"
+        }
+      ],
+      "groups": [
+        {
+          "name": "Barbarian",
+          "weight": 8.3333
+        },
+        {
+          "name": "Bard",
+          "weight": 8.3333
+        },
+        {
+          "name": "Cleric",
+          "weight": 8.3333
+        },
+        {
+          "name": "Druid",
+          "weight": 8.3333
+        },
+        {
+          "name": "Fighter",
+          "weight": 8.3333
+        },
+        {
+          "name": "Monk",
+          "weight": 8.3333
+        },
+        {
+          "name": "Paladin",
+          "weight": 8.3333
+        },
+        {
+          "name": "Ranger",
+          "weight": 8.3333
+        },
+        {
+          "name": "Rogue",
+          "weight": 8.3333
+        },
+        {
+          "name": "Sorcerer",
+          "weight": 8.3333
+        },
+        {
+          "name": "Warlock",
+          "weight": 8.3333
+        },
+        {
+          "name": "Wizard",
+          "weight": 8.3333
+        }
+      ],
+      "settings": {
+        "defaultNoDuplicateMode": "reroll",
+        "defaultCount": 3
+      },
+      "boxType": "class"
+    },
+    {
+      "id": "box-620ed0ff-5694-464f-b5dd-c2c6fbc1ba73",
+      "name": "Supplement",
+      "category": "Classes",
+      "items": [
+        {
+          "id": "item-4a4ecd73-906e-4020-af05-fde5f6274d5d",
+          "name": "Amorist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_amorist_valdaspire24=b1"
+        },
+        {
+          "id": "item-69c5aaab-91de-4126-8a74-b0e0d4490f1b",
+          "name": "Apothecary",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_apothecary_valdaspire24=b1"
+        },
+        {
+          "id": "item-337a8f0f-7bda-43dc-a6eb-2b14a9ec9d5b",
+          "name": "Dynamo Engineer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_dynamo%20engineer_valdaspire24=b1"
+        },
+        {
+          "id": "item-7f4d765e-1b37-4a86-9d41-b8f814f8a22d",
+          "name": "Mad Bomber",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_mad%20bomber_valdaspire24=b1"
+        },
+        {
+          "id": "item-7fab76c1-9fae-477f-9dd3-b015b55b9253",
+          "name": "Mutagenist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_mutagenist_valdaspire24=b1"
+        },
+        {
+          "id": "item-9d729dc0-9171-43c9-9148-701aca477576",
+          "name": "Ooze Rancher",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_ooze%20rancher_valdaspire24=b1"
+        },
+        {
+          "id": "item-dd23dc0b-a747-4c8c-985e-67fa1176763d",
+          "name": "Pigmentist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_pigmentist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-8dff4a46-87e1-4ac4-8491-fc8f5f608b86",
+          "name": "Resonator",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_resonator_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-898f33f7-d730-46cc-bb05-ee2c24c5c005",
+          "name": "Venomsmith",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_venomsmith_valdaspire24=b1"
+        },
+        {
+          "id": "item-aff3fc94-865d-4c00-a751-60b5be534e31",
+          "name": "Xenoalchemist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Alchemist",
+          "link": "https://5e.tools/classes.html#alchemist_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_xenoalchemist_valdaspire24=b1"
+        },
+        {
+          "id": "item-6a95ee2b-62e8-4da9-82e0-e0e025a5b875",
+          "name": "Alchemist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: EFA",
+          "group": "Artificer",
+          "link": "https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_alchemist_efa=b1"
+        },
+        {
+          "id": "item-c3fba5f9-8836-41b8-9f2d-7a9f447d751b",
+          "name": "Armorer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: EFA",
+          "group": "Artificer",
+          "link": "https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_armorer_efa=b1"
+        },
+        {
+          "id": "item-d8ce8c71-90ec-4309-b410-810699fb28a0",
+          "name": "Artillerist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: EFA",
+          "group": "Artificer",
+          "link": "https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_artillerist_efa=b1"
+        },
+        {
+          "id": "item-8524cc41-a71e-42a9-b16f-341f897c274d",
+          "name": "Battle Smith",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: EFA",
+          "group": "Artificer",
+          "link": "https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_battle%20smith_efa=b1"
+        },
+        {
+          "id": "item-1af31a25-60a5-4b79-a70c-0335420d4411",
+          "name": "Cartographer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: EFA",
+          "group": "Artificer",
+          "link": "https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_cartographer_efa=b1"
+        },
+        {
+          "id": "item-17f99f11-69f7-42ce-b035-43c971cbadec",
+          "name": "Reanimator",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: RHW",
+          "group": "Artificer",
+          "link": "https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_reanimator_rhw=b1"
+        },
+        {
+          "id": "item-4b8b5f11-89d8-4ad8-b51d-a6806adac2ad",
+          "name": "Adrenaline Junkie",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_adrenaline%20junkie_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-0f4deb91-fe0c-4652-81ae-ffa1ef148fe2",
+          "name": "Brigand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_brigand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-cac1f991-707c-44d4-9d9b-358bb92e63fa",
+          "name": "Daggermark",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_daggermark_valdaspire24=b1"
+        },
+        {
+          "id": "item-71e84956-a522-4485-ad18-1922bd7e04a5",
+          "name": "Demon Brand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_demon%20brand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-bf4aeeda-6088-4a62-afdb-7527d52ff2ca",
+          "name": "Dragon Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_dragon%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-5f478b5d-40b5-43e9-b42c-c81bf17da743",
+          "name": "Eagle Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_eagle%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-c9ff0547-1946-4877-9b60-296bb7449807",
+          "name": "Feylost",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_feylost_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-cffc7c7c-d37d-49c9-b282-535a689bc3d7",
+          "name": "Gourmand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_gourmand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-2f509c32-1613-42c5-9d14-d7d507b288aa",
+          "name": "Holy Icon",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_holy%20icon_valdaspire24=b1"
+        },
+        {
+          "id": "item-392aad56-ea10-4d7f-8349-f2a9cbfe87db",
+          "name": "Houndmaster",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_houndmaster_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-3af909bc-426f-4e7b-8c88-8ecb6b17072c",
+          "name": "Jolly Roger",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_jolly%20roger_valdaspire24=b1"
+        },
+        {
+          "id": "item-2e430a11-ca6f-4ff5-9ed1-397d85fe65bf",
+          "name": "Knight Errant",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_knight%20errant_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-04e69d6a-8425-4680-b335-37c3e86587ad",
+          "name": "Lion Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_lion%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-0c0c20e3-705e-4635-8077-f16fdf2e04f5",
+          "name": "Plague Doctor",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20doctor_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-97dabb8c-4167-4984-849e-ba5b7161e319",
+          "name": "Pugilist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_pugilist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-7efe6eb8-6431-434d-a50b-df2c12ccd8b5",
+          "name": "Rōnin",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_r%c5%8dnin_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-acf22da5-91d3-46fa-a361-8cdf62c26371",
+          "name": "Siegeball Jersey",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_siegeball%20jersey_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-828e7a43-270b-4096-8503-6d2be0fd0a77",
+          "name": "Skull Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_skull%20banner_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-7045749a-a320-4215-a34c-d7c73038c2fb",
+          "name": "Star-Spangled Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_star-spangled%20banner_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-b6068689-ad95-48a7-95ca-98f08048314b",
+          "name": "Tower Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_tower%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-ebc03ac7-639e-42b2-8b2b-d8fb4bfc870c",
+          "name": "Troubadour",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_troubadour_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-4e745ecd-3f02-4479-93f8-7dc2275cfd41",
+          "name": "Yellow Sign",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Captain",
+          "link": "https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_yellow%20sign_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-a57b0448-0ab0-4288-baf2-6a58a71f2762",
+          "name": "Arcane Maesters' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_arcane%20maesters_valdaspire24=b1"
+        },
+        {
+          "id": "item-88d08f75-2c99-4fac-a74d-14402f077d6e",
+          "name": "Armigers' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_armigers_valdaspire24=b1"
+        },
+        {
+          "id": "item-37602b28-f5ef-41cf-9af8-018767da534b",
+          "name": "Bladeworkers' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_bladeworkers_valdaspire24=b1"
+        },
+        {
+          "id": "item-be9f4d35-1ba3-430a-b5d9-9109e657d39a",
+          "name": "Calibarons' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_calibarons_valdaspire24=b1"
+        },
+        {
+          "id": "item-af26b835-6781-4fbc-a04e-30881c633515",
+          "name": "Clockworkers' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_clockworkers_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-ee500490-1759-4511-9cb0-de979b6bd8da",
+          "name": "Courtiers' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_courtiers_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-fda9d7e6-da3d-41f7-ac17-36f1662af1fd",
+          "name": "Forgeknights' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_forgeknights_valdaspire24=b1"
+        },
+        {
+          "id": "item-eecf5d88-d1ea-4f6f-ac99-806c6edb4730",
+          "name": "Mechanauts' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_mechanauts_valdaspire24=b1"
+        },
+        {
+          "id": "item-424546f0-338a-45c7-9d4a-489463bc02db",
+          "name": "Thunderlords' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_thunderlords_valdaspire24=b1"
+        },
+        {
+          "id": "item-5768861f-b558-4393-986a-bc2a169485c1",
+          "name": "Trappers' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_trappers_valdaspire24=b1"
+        },
+        {
+          "id": "item-2e20d765-e3e9-451c-bf51-618f11da3dc5",
+          "name": "Wintercarvers' Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Craftsman",
+          "link": "https://5e.tools/classes.html#craftsman_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_wintercarvers_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-14cbd038-9208-4699-b3d6-acadc954c226",
+          "name": "Acrobat",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_acrobat_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-0dc71b61-2f2f-486e-8e69-6dad5f813586",
+          "name": "Cheerleader",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_cheerleader_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-8a15a949-fb82-45ea-8d88-a542bc070630",
+          "name": "Contortionist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_contortionist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-da611971-7b27-440b-8fa7-19c6a55f1252",
+          "name": "Courtesan",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_courtesan_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-7946eb0d-2b67-4e0b-9b75-7ec7558e2298",
+          "name": "Danseur Macabre",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_danseur%20macabre_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-84e5944c-5b40-4f4c-a0de-eab7136bd3a8",
+          "name": "Dramaturge",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_dramaturge_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-2ae986e4-a9d6-4d9a-b788-ff2a425562a7",
+          "name": "Fencer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_fencer_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-00cb5169-2802-489e-a356-adca4f99f447",
+          "name": "Fey Ballerina",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_fey%20ballerina_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-38888523-3d3d-4a7e-8a1d-0ea1045fdd4c",
+          "name": "Fire Dancer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_fire%20dancer_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-7e9dced3-d6e4-428b-917b-0aaf8cf2d222",
+          "name": "Harlequin",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_harlequin_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-ea18dbd3-7722-4ce0-8a13-b26980a41a6b",
+          "name": "Marionettist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_marionettist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-b118b644-06de-4422-9974-df98a657dbbe",
+          "name": "Mime",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_mime_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-b18d05c9-5ea5-4081-9da8-525b6caef4a7",
+          "name": "Shadow Dancer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_shadow%20dancer_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-4f364333-c38c-4a31-939a-8c9ded795556",
+          "name": "Steelsinger",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Dancer",
+          "link": "https://5e.tools/classes.html#dancer_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_steelsinger_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-c388e7a3-a524-4b51-83df-dda4aeff567b",
+          "name": "Adrenaline Junkie",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_adrenaline%20junkie_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-465ab951-9c17-4761-8823-88183880bd8e",
+          "name": "Big Game Hunter",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_big%20game%20hunter_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-1c2d3a21-5cc0-4eb1-b6ff-6b15013411fe",
+          "name": "Brigand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_brigand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-70df6fa2-1a03-4dac-881a-f2b22cf458c3",
+          "name": "Daggermark",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_daggermark_valdaspire24=b1"
+        },
+        {
+          "id": "item-7d13c0db-1889-44f9-bb56-96237c44e284",
+          "name": "Dragon Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_dragon%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-713635c0-b47f-46d0-aa33-b8913c69586f",
+          "name": "Eagle Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_eagle%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-ae9f043a-a607-471a-b085-dfdfcd1a2237",
+          "name": "Feylost",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_feylost_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-98fdda96-56dc-4f8b-a591-15627877bc15",
+          "name": "Gourmand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_gourmand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-88d596e1-d093-400c-a210-5ef5171a4676",
+          "name": "Grenadier",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_grenadier_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-d0bf8873-b0e2-4929-a38e-e9a5f99d570c",
+          "name": "Gun Tank",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_gun%20tank_valdaspire24=b1"
+        },
+        {
+          "id": "item-8e5ff214-2e8e-4302-8a2d-29460b07fc59",
+          "name": "Gun-Ko Master",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_gun-ko%20master_valdaspire24=b1"
+        },
+        {
+          "id": "item-2dfde7ad-69bd-4804-a182-dd4fa4fdc496",
+          "name": "Houndmaster",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_houndmaster_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-e198b8cc-6ec2-4085-a653-2255038309d2",
+          "name": "Jolly Roger",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_jolly%20roger_valdaspire24=b1"
+        },
+        {
+          "id": "item-b3b54b2e-58eb-411c-892c-98e4b208c142",
+          "name": "Knight Errant",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_knight%20errant_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-36ba08b3-4b07-4ab8-8373-62a03cb38e24",
+          "name": "Musketeer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_musketeer_valdaspire24=b1"
+        },
+        {
+          "id": "item-088cd133-df63-4535-b941-503983a62e8b",
+          "name": "Pistolero",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_pistolero_valdaspire24=b1"
+        },
+        {
+          "id": "item-8e39f667-a66f-4a85-b211-aa0fdfc18116",
+          "name": "Plague Doctor",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20doctor_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-d5799c49-ca34-48fa-b861-5e9559b502dc",
+          "name": "Pugilist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_pugilist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-0494981c-1ca2-4444-965a-1a2899c0dff1",
+          "name": "Rōnin",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_r%c5%8dnin_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-037c5983-fbef-4adc-b085-62f0448e7a29",
+          "name": "Siegeball Jersey",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_siegeball%20jersey_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-046d9736-0ebc-493f-996b-89dea5b27bd4",
+          "name": "Troubadour",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_troubadour_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-a48ca156-9d93-4955-ba7b-6f27faabe74e",
+          "name": "Yellow Sign",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Gunslinger",
+          "link": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_yellow%20sign_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-21b768f3-bbe7-48c2-978a-c6ccaa6898ae",
+          "name": "Antiquarian",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_antiquarian_valdaspire24=b1"
+        },
+        {
+          "id": "item-122ba3a3-6cd6-4f68-b539-b2b8f068c15a",
+          "name": "Archivist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_archivist_valdaspire24=b1"
+        },
+        {
+          "id": "item-ca64c4dc-11ba-4160-a3e6-61e08fe40590",
+          "name": "Conspiracy Theorist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_conspiracy%20theorist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-42f4ef7c-fa4e-4807-97e7-eb75ef4ae93f",
+          "name": "Containment Specialist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_containment%20specialist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-f36616e5-03c2-4e78-88e3-086f501ff980",
+          "name": "Detective",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_detective_valdaspire24=b1"
+        },
+        {
+          "id": "item-1d5998e8-e722-413a-afbe-3645ead3be66",
+          "name": "Exterminator",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_exterminator_valdaspire24=b1"
+        },
+        {
+          "id": "item-2279f316-e1c7-4c73-9b5c-e802a43c5976",
+          "name": "Infernum",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_infernum_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-104b5a0a-30dd-4369-ae0d-49365833d8a1",
+          "name": "Inquisitor",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_inquisitor_valdaspire24=b1"
+        },
+        {
+          "id": "item-cbf46325-c523-45d9-8ec3-3a34109ba6d6",
+          "name": "Kid Sleuth",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_kid%20sleuth_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-cffb3cb8-e633-438b-9123-953abe627f63",
+          "name": "Medium",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_medium_valdaspire24=b1"
+        },
+        {
+          "id": "item-40abccc5-15b2-4b73-8bf7-7554a01ea2e1",
+          "name": "Occultist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_occultist_valdaspire24=b1"
+        },
+        {
+          "id": "item-828caae6-9738-45a6-b88d-b05e608b5161",
+          "name": "Spy",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_spy_valdaspire24=b1"
+        },
+        {
+          "id": "item-f39422df-1e07-4836-9f8c-16aa4ae2a979",
+          "name": "Time Operative",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Investigator",
+          "link": "https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_time%20operative_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-9b6e3bb9-a56c-4888-838c-0a1d3fbc6dab",
+          "name": "Burden of Anonymity",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_anonymity_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-fcd42ca3-307e-4d18-a125-a69af36a82a1",
+          "name": "Burden of Ascension",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_ascension_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-39a569de-c08f-48ec-8470-21bb9ffc25f6",
+          "name": "Burden of Atonement",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_atonement_valdaspire24=b1"
+        },
+        {
+          "id": "item-f6fc949b-92bb-4f0b-9c6d-52d7e53e11b6",
+          "name": "Burden of Calamity",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_calamity_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-8c42ba44-d657-4b29-bced-abe218777aa0",
+          "name": "Burden of Discord",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_discord_valdaspire24=b1"
+        },
+        {
+          "id": "item-413c1375-2de6-40a2-8dd5-a705511e4470",
+          "name": "Burden of Fame",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_fame_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-938ae873-0d25-4765-8905-5a32fdca1162",
+          "name": "Burden of Levity",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_levity_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-a623efe0-f2c3-47b0-ad00-d8315bc2db9c",
+          "name": "Burden of Mercy",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_mercy_valdaspire24=b1"
+        },
+        {
+          "id": "item-46aa4779-de53-43ba-bf2f-707c61d44898",
+          "name": "Burden of Odyssey",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_odyssey_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-5dd6fe7e-dc76-4aaa-97f2-9a75bfc9ee97",
+          "name": "Burden of Rebirth",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_rebirth_valdaspire24=b1"
+        },
+        {
+          "id": "item-cca1d09b-9386-454e-9a29-cc68c102f9df",
+          "name": "Burden of Revolution",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_revolution_valdaspire24=b1"
+        },
+        {
+          "id": "item-6af39ec5-9758-4fdf-95c4-455b62f98e3d",
+          "name": "Burden of the End",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_the%20end_valdaspire24=b1"
+        },
+        {
+          "id": "item-77654aa3-165e-40e0-8ebc-1ce2691cccea",
+          "name": "Burden of Truth",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_truth_valdaspire24=b1"
+        },
+        {
+          "id": "item-e24e56db-7860-4aff-b479-283f188c7200",
+          "name": "Burden of Tyranny",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Martyr",
+          "link": "https://5e.tools/classes.html#martyr_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_tyranny_valdaspire24=b1"
+        },
+        {
+          "id": "item-aa210c6e-9357-4825-aee4-64bf904c4688",
+          "name": "Carver Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Monster Hunter",
+          "link": "https://5e.tools/classes.html#monster%20hunter_grimhollowpg24,state:ishidefeatures=b1~ishideoutline=b1~sub_carver_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-e7d2b8d0-1730-49d0-9445-da9387dd26b4",
+          "name": "Devourer Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Monster Hunter",
+          "link": "https://5e.tools/classes.html#monster%20hunter_grimhollowpg24,state:ishidefeatures=b1~ishideoutline=b1~sub_devourer_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-896a6a48-afa9-4fa1-a2bc-74b4dbb67d7a",
+          "name": "Occultist Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Monster Hunter",
+          "link": "https://5e.tools/classes.html#monster%20hunter_grimhollowpg24,state:ishidefeatures=b1~ishideoutline=b1~sub_occultist_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-04aecaa0-6a75-4cc5-a996-115cfa29fc89",
+          "name": "Trapper Guild",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: GH:PG'24",
+          "group": "Monster Hunter",
+          "link": "https://5e.tools/classes.html#monster%20hunter_grimhollowpg24,state:ishidefeatures=b1~ishideoutline=b1~sub_trapper_grimhollowpg24=b1"
+        },
+        {
+          "id": "item-e2b7a628-943d-4aed-aec6-6220519464e4",
+          "name": "Black Rider",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_black%20rider_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-c93b79ce-1e45-4b77-a98d-32b1465814de",
+          "name": "Blood Ascendant",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_blood%20ascendant_valdaspire24=b1"
+        },
+        {
+          "id": "item-b938385d-ad59-41ec-b447-195483d40ccc",
+          "name": "Corpse Florist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_corpse%20florist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-c11b9ea4-ba44-40b7-8efe-27a7d45b7714",
+          "name": "Crone",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_crone_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-b23dfa72-f518-4ac5-9bda-0a31660cb315",
+          "name": "Dead Mist Acolyte",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_dead%20mist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-49720f2b-a29f-45fe-935c-4b072da10399",
+          "name": "Death Knight",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_death%20knight_valdaspire24=b1"
+        },
+        {
+          "id": "item-f2f5c919-ee1c-4629-b03d-babd9bc074d7",
+          "name": "Necrodancer",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_necrodancer_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-64af312a-a3b4-44e9-ba72-0185f78629f7",
+          "name": "Overlord",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_overlord_valdaspire24=b1"
+        },
+        {
+          "id": "item-158dae1e-98a7-46ad-8cef-c8616d01f5d9",
+          "name": "Pale Master",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_pale%20master_valdaspire24=b1"
+        },
+        {
+          "id": "item-d96c7851-a20d-460f-bf90-e63d3cceb0e5",
+          "name": "Pharaoh",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_pharaoh_valdaspire24=b1"
+        },
+        {
+          "id": "item-298ccd98-51cd-44eb-8cea-36cfc631242b",
+          "name": "Plague Lord",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20lord_valdaspire24=b1"
+        },
+        {
+          "id": "item-c4e1b0a2-96b1-41da-b615-3370aee5c90a",
+          "name": "Reanimator",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_reanimator_valdaspire24=b1"
+        },
+        {
+          "id": "item-a574dc2f-d959-4280-a441-4de2b4255217",
+          "name": "Reaper",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_reaper_valdaspire24=b1"
+        },
+        {
+          "id": "item-dba3743f-8db0-4334-a0c4-4fccc874e781",
+          "name": "Toymaker",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Necromancer",
+          "link": "https://5e.tools/classes.html#necromancer_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_toymaker_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-8b0e580f-2a6d-4b31-b6df-9fb90adfb1e6",
+          "name": "Adrenaline Junkie",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_adrenaline%20junkie_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-6ab2def3-9c48-4d27-85fa-d64ffcab4d2d",
+          "name": "Brigand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_brigand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-8838b9d5-66e5-4e4c-9a52-573fc6965a12",
+          "name": "Daggermark",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_daggermark_valdaspire24=b1"
+        },
+        {
+          "id": "item-281d2015-62ca-4e75-8359-49b75b59f8eb",
+          "name": "Dragon Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_dragon%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-64d04334-e20c-4514-a0c2-c4d57dd7cf9d",
+          "name": "Eagle Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_eagle%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-0c8ef9b5-ca3c-4bcf-b2d7-f79a5e950459",
+          "name": "Feylost",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_feylost_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-455e94cb-d0bc-4671-b159-440aae32f56a",
+          "name": "Gourmand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_gourmand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-d4308c2b-61e0-4d37-9748-6ffd60ee9ab4",
+          "name": "Houndmaster",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_houndmaster_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-a32ccc1c-a6ed-4fe8-b824-606d5adb7e30",
+          "name": "Jolly Roger",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_jolly%20roger_valdaspire24=b1"
+        },
+        {
+          "id": "item-57401c15-b692-4ae7-af77-b79b28e356de",
+          "name": "Knight Errant",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_knight%20errant_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-2701a393-86ff-4723-85a4-46c8fd514db7",
+          "name": "Mage Brand",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_mage%20brand_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-1d50fa6f-a2e2-4925-840c-f41c9bb957bf",
+          "name": "Plague Doctor",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20doctor_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-e3dda484-c329-4ad7-ae92-417c62c91877",
+          "name": "Pugilist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_pugilist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-005800d2-16a2-4484-860f-90328fa16add",
+          "name": "Rōnin",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_r%c5%8dnin_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-87d86847-ac49-4b68-b250-a5115f7727ef",
+          "name": "Siegeball Jersey",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_siegeball%20jersey_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-5bee594c-79d4-466c-a0b4-83af85fde07f",
+          "name": "Tower Banner",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_tower%20banner_valdaspire24=b1"
+        },
+        {
+          "id": "item-a195a73c-3ec6-4ca0-8a4e-1b1f395d9e63",
+          "name": "Troubadour",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_troubadour_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-8ccf7e3b-bda8-4ef8-a576-ab18c60e0bf6",
+          "name": "Yellow Sign",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Vagabond",
+          "link": "https://5e.tools/classes.html#vagabond_valdaspire24extras,state:ishidefeatures=b1~ishideoutline=b1~sub_yellow%20sign_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-25e1c63a-9973-4095-85d5-3f198f6b51a9",
+          "name": "Beastblood Guardian",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_beastblood%20guardian_valdaspire24=b1"
+        },
+        {
+          "id": "item-5f7bff05-d4d1-42be-b449-c04bcfc1fff3",
+          "name": "Carrion King",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_carrion%20king_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-278b6275-c216-43ba-b606-fc929291c6e4",
+          "name": "Diabolist",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_diabolist_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-86c42dc8-5a4f-416d-a9c1-c39686b410d5",
+          "name": "Drake-Blooded",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_drake-blooded_valdaspire24=b1"
+        },
+        {
+          "id": "item-0fbcfd24-d320-4fca-ba12-95b16f1a1211",
+          "name": "Godsworn",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_godsworn_valdaspire24=b1"
+        },
+        {
+          "id": "item-ce339573-09d8-44d0-ba43-e641e6eba867",
+          "name": "Grey Watchman",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_grey%20watchman_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-bf713a5c-3f7e-4c41-8f63-6df71e52c6f5",
+          "name": "Nightgaunt",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_nightgaunt_valdaspire24=b1"
+        },
+        {
+          "id": "item-96ad59cf-f327-4744-9834-0331eab3a170",
+          "name": "Rimekeeper",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_rimekeeper_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-3a53ffd7-149f-4ca7-92c5-696667834e63",
+          "name": "Stoneheart Defender",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_stoneheart%20defender_valdaspire24=b1"
+        },
+        {
+          "id": "item-96cf4d3b-878c-4f6e-98a9-9773faf43c0d",
+          "name": "Storm Sentinel",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_storm%20sentinel_valdaspire24=b1"
+        },
+        {
+          "id": "item-9e3ca595-9b0d-40a8-bdd4-08ad70c2a31f",
+          "name": "Verdant Protector",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_verdant%20protector_valdaspire24=b1"
+        },
+        {
+          "id": "item-6a2a16fb-4498-4e3f-8624-1910fb86e515",
+          "name": "Witchbane Hunter",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Warden",
+          "link": "https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_witchbane%20hunter_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-815fd059-ef4f-4ea1-b3fd-8f96eb2bc575",
+          "name": "House of Bishops",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_bishops_valdaspire24=b1"
+        },
+        {
+          "id": "item-f4b949c3-5555-4e29-859b-ff9f197bd86b",
+          "name": "House of Cards",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_cards_valdaspire24=b1"
+        },
+        {
+          "id": "item-32ec72e4-c7ca-4df5-adf6-4eb736133591",
+          "name": "House of Darts",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_darts_valdaspire24=b1"
+        },
+        {
+          "id": "item-f5888f09-db50-472f-b9bc-736fcb6b3488",
+          "name": "House of Dice",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_dice_valdaspire24=b1"
+        },
+        {
+          "id": "item-20aaac57-ee5e-411e-a5bc-7e147505760b",
+          "name": "House of Go",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_go_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-1fda2366-a205-4772-b884-5dd6e006f384",
+          "name": "House of Kings",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_kings_valdaspire24=b1"
+        },
+        {
+          "id": "item-b86348c4-d527-46e5-8e7e-57c2e86e91d3",
+          "name": "House of Knights",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_knights_valdaspire24=b1"
+        },
+        {
+          "id": "item-98683833-81fe-423c-a0e3-ef96465b7903",
+          "name": "House of Pawns",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_pawns_valdaspire24=b1"
+        },
+        {
+          "id": "item-5802dacf-c299-48e6-9459-a597013f8c0e",
+          "name": "House of Rooks",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_rooks_valdaspire24=b1"
+        },
+        {
+          "id": "item-aebef932-b0d5-4eca-a4f2-c1f2104dd774",
+          "name": "House of Roulette",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Warmage",
+          "link": "https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_roulette_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-f5a7b59e-0075-48aa-91f0-ecc80bc44ef4",
+          "name": "Black Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_black_valdaspire24=b1"
+        },
+        {
+          "id": "item-5e25737d-4451-4c95-b631-5b8e64bb0f06",
+          "name": "Blood Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_blood_valdaspire24=b1"
+        },
+        {
+          "id": "item-55388f03-acea-4bd7-a3a6-5779d450803a",
+          "name": "Blue Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_blue_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-bd735aba-8e5a-484c-92e9-80d2e2a42101",
+          "name": "Fragrant Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_fragrant_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-2d3627e8-f401-45ba-aea3-6c730b4dac88",
+          "name": "Gingerbread Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_gingerbread_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-817d3294-f857-4d38-abef-119927444442",
+          "name": "Green Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_green_valdaspire24=b1"
+        },
+        {
+          "id": "item-db69a614-84b9-4bd0-aaa9-bbd15f230a41",
+          "name": "Purple Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_purple_valdaspire24=b1"
+        },
+        {
+          "id": "item-b6b155d0-ea1c-4530-bf46-f1faa7d342e5",
+          "name": "Red Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_red_valdaspire24=b1"
+        },
+        {
+          "id": "item-04e2d65d-47af-4605-8f47-2e900c03e7bc",
+          "name": "Sky Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24+",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_sky_valdaspire24extras=b1"
+        },
+        {
+          "id": "item-c91b13ec-8818-4e2b-a63a-a592fb547572",
+          "name": "Steel Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_steel_valdaspire24=b1"
+        },
+        {
+          "id": "item-0920dd55-8abc-4869-a030-44f0ecbf569f",
+          "name": "Tea Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_tea_valdaspire24=b1"
+        },
+        {
+          "id": "item-1aafb5e9-8046-457c-bee6-e2e9772d7905",
+          "name": "Technicolor Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_technicolor_valdaspire24=b1"
+        },
+        {
+          "id": "item-064a0596-0df5-40bd-9a5a-b4277b2fb30d",
+          "name": "White Magic",
+          "weight": 1,
+          "tag": "Supplement",
+          "image": "",
+          "note": "Source: VSS'24",
+          "group": "Witch",
+          "link": "https://5e.tools/classes.html#witch_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_white_valdaspire24=b1"
+        }
+      ],
+      "groups": [
+        {
+          "name": "Alchemist",
+          "weight": 7.1429
+        },
+        {
+          "name": "Artificer",
+          "weight": 7.1429
+        },
+        {
+          "name": "Captain",
+          "weight": 7.1429
+        },
+        {
+          "name": "Craftsman",
+          "weight": 7.1429
+        },
+        {
+          "name": "Dancer",
+          "weight": 7.1429
+        },
+        {
+          "name": "Gunslinger",
+          "weight": 7.1429
+        },
+        {
+          "name": "Investigator",
+          "weight": 7.1429
+        },
+        {
+          "name": "Martyr",
+          "weight": 7.1429
+        },
+        {
+          "name": "Monster Hunter",
+          "weight": 7.1429
+        },
+        {
+          "name": "Necromancer",
+          "weight": 7.1429
+        },
+        {
+          "name": "Vagabond",
+          "weight": 7.1429
+        },
+        {
+          "name": "Warden",
+          "weight": 7.1429
+        },
+        {
+          "name": "Warmage",
+          "weight": 7.1429
+        },
+        {
+          "name": "Witch",
+          "weight": 7.1429
+        }
+      ],
+      "settings": {
+        "defaultNoDuplicateMode": "reroll",
+        "defaultCount": 3
+      },
+      "boxType": "class"
+    },
+    {
       "id": "box-1f879e02-8b5e-4de8-bc05-4c1179356013",
       "name": "Standard",
       "category": "Species",
