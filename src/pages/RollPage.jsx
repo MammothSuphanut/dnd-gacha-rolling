@@ -1,12 +1,14 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
-import { createId } from '../utils/id'
 import {
-  calculateHierarchicalPercentages,
+  applyRateUp,
   getEffectiveTotalWeight,
+  getUsableCount,
   rollBox,
 } from '../utils/weightedRandom'
+
+const DEFAULT_RATE_UP = { multiplier: 2, itemIds: [], groupNames: [] }
 import StatRollPage from './StatRollPage'
 
 const NO_CATEGORY = 'ไม่มีหมวดหมู่'
@@ -20,11 +22,11 @@ export default function RollPage({
   visibility,
   setVisibility,
 }) {
-  const { state, dispatch } = useGachaStore()
+  const { state } = useGachaStore()
   const { showToast } = useToast()
   const [rolling, setRolling] = useState(false)
   const { config, boxResults, revealedIds } = rollState
-  const { hiddenBoxIds, showStatRoll } = visibility
+  const { hiddenBoxIds, showStatRoll, defaultVisibilityApplied } = visibility
 
   function isBoxVisible(boxId) {
     return !hiddenBoxIds.has(boxId)
@@ -74,11 +76,26 @@ export default function RollPage({
     return Array.from(map.entries())
   }, [state.boxes])
 
+  useEffect(() => {
+    if (defaultVisibilityApplied || state.boxes.length === 0) return
+    setVisibility((prev) => {
+      const next = new Set(prev.hiddenBoxIds)
+      for (const [, boxes] of grouped) {
+        boxes.slice(1).forEach((box) => next.add(box.id))
+      }
+      return { ...prev, hiddenBoxIds: next, defaultVisibilityApplied: true }
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [defaultVisibilityApplied, state.boxes.length, grouped])
+
   function getConfig(box) {
     return (
       config[box.id] ?? {
         count: box.settings?.defaultCount ?? 1,
         mode: box.settings?.defaultNoDuplicateMode ?? 'reroll',
+        group: '',
+        noDuplicateGroup: false,
+        rateUp: DEFAULT_RATE_UP,
       }
     )
   }
@@ -87,10 +104,48 @@ export default function RollPage({
     setConfig((prev) => ({ ...prev, [box.id]: { ...getConfig(box), ...patch } }))
   }
 
+  function getRateUp(box) {
+    return getConfig(box).rateUp ?? DEFAULT_RATE_UP
+  }
+
+  function updateRateUp(box, patch) {
+    updateConfig(box, { rateUp: { ...getRateUp(box), ...patch } })
+  }
+
+  function toggleRateUpItem(box, itemId) {
+    const rateUp = getRateUp(box)
+    const has = rateUp.itemIds.includes(itemId)
+    updateRateUp(box, {
+      itemIds: has ? rateUp.itemIds.filter((id) => id !== itemId) : [...rateUp.itemIds, itemId],
+    })
+  }
+
+  function toggleRateUpGroup(box, groupName) {
+    const rateUp = getRateUp(box)
+    const has = rateUp.groupNames.includes(groupName)
+    updateRateUp(box, {
+      groupNames: has
+        ? rateUp.groupNames.filter((name) => name !== groupName)
+        : [...rateUp.groupNames, groupName],
+    })
+  }
+
+  function getRollItems(box, group) {
+    if (!group) return box.items
+    return box.items.filter((item) => item.group?.trim() === group)
+  }
+
+  function getEffectiveRoll(box, boxConfig) {
+    const baseItems = getRollItems(box, boxConfig.group)
+    const baseGroups = box.groups ?? []
+    return applyRateUp(baseItems, baseGroups, boxConfig.rateUp)
+  }
+
   function performRoll(entries) {
-    const invalidBox = entries.find(
-      ({ box }) => getEffectiveTotalWeight(box.items, box.groups ?? []) === 0,
-    )
+    const invalidBox = entries.find(({ box, ...boxConfig }) => {
+      const { items, groups } = getEffectiveRoll(box, boxConfig)
+      return getEffectiveTotalWeight(items, groups) === 0
+    })
     if (invalidBox) {
       showToast(`ตู้ "${invalidBox.box.name}" weight รวมเป็น 0 สุ่มไม่ได้`, 'error')
       return
@@ -101,16 +156,14 @@ export default function RollPage({
     setTimeout(() => {
       let anyCapped = false
 
-      const boxesRolledFull = entries.map(({ box, count, mode }) => {
-        const groups = box.groups ?? []
-        const usableCount = calculateHierarchicalPercentages(box.items, groups).filter(
-          (i) => i.percent > 0,
-        ).length
+      const boxesRolledFull = entries.map(({ box, count, mode, noDuplicateGroup, ...boxConfig }) => {
+        const { items: rollItems, groups } = getEffectiveRoll(box, boxConfig)
+        const usableCount = getUsableCount(rollItems, groups, noDuplicateGroup)
         const requestedCount = Math.max(1, Number(count) || 1)
         const cappedCount = Math.min(requestedCount, usableCount)
         if (requestedCount > cappedCount) anyCapped = true
 
-        const picked = rollBox(box.items, cappedCount, mode, groups)
+        const picked = rollBox(rollItems, cappedCount, mode, groups, { noDuplicateGroup })
         return {
           boxId: box.id,
           boxName: box.name,
@@ -118,19 +171,6 @@ export default function RollPage({
           resultItems: picked,
         }
       })
-
-      const entry = {
-        id: createId('history'),
-        timestamp: new Date().toISOString(),
-        boxesRolled: boxesRolledFull.map(({ boxId, boxName, mode, resultItems }) => ({
-          boxId,
-          boxName,
-          mode,
-          results: resultItems.map((item) => item.name),
-        })),
-      }
-
-      dispatch({ type: 'ADD_HISTORY', payload: entry })
 
       setBoxResults((prev) => {
         const next = { ...prev }
@@ -176,8 +216,10 @@ export default function RollPage({
   }
 
   function handleRollSingle(box) {
-    const { count, mode } = getConfig(box)
-    performRoll([{ box, count, mode }])
+    const { count, mode, group, noDuplicateGroup, rateUp } = getConfig(box)
+    performRoll([
+      { box, count, mode, group, noDuplicateGroup: noDuplicateGroup && !group, rateUp },
+    ])
   }
 
   const visibleGrouped = useMemo(
@@ -236,8 +278,15 @@ export default function RollPage({
               <h2 className="mb-2 text-sm font-semibold text-gray-500">{category}</h2>
               <div className="space-y-2">
                 {boxes.map((box) => {
-                  const totalWeight = getEffectiveTotalWeight(box.items, box.groups ?? [])
-                  const { count, mode } = getConfig(box)
+                  const boxConfig = getConfig(box)
+                  const { count, mode, group, noDuplicateGroup, rateUp } = boxConfig
+                  const subGroups = box.groups ?? []
+                  const rollItems = getRollItems(box, group)
+                  const { items: effectiveItems, groups: effectiveGroups } = getEffectiveRoll(
+                    box,
+                    boxConfig,
+                  )
+                  const totalWeight = getEffectiveTotalWeight(effectiveItems, effectiveGroups)
                   const result = boxResults[box.id]
                   return (
                     <div
@@ -246,7 +295,7 @@ export default function RollPage({
                     >
                       <div className="flex flex-wrap items-center gap-3">
                         <span className="font-medium text-gray-900">{box.name}</span>
-                        <span className="text-xs text-gray-400">({box.items.length} รายการ)</span>
+                        <span className="text-xs text-gray-400">({rollItems.length} รายการ)</span>
                         {totalWeight === 0 && (
                           <span className="text-xs font-medium text-yellow-600">
                             weight รวมเป็น 0 สุ่มไม่ได้
@@ -284,7 +333,106 @@ export default function RollPage({
                             <option value="pool-shrink">ตัดพูลจริง</option>
                           </select>
                         </label>
+                        {subGroups.length > 0 && (
+                          <label className="flex items-center gap-2 text-sm text-gray-600">
+                            หมวดย่อย
+                            <select
+                              value={group}
+                              onChange={(e) => updateConfig(box, { group: e.target.value })}
+                              className="rounded-md border border-gray-300 px-2 py-1 text-sm"
+                            >
+                              <option value="">ทั้งหมด</option>
+                              {subGroups.map((g) => (
+                                <option key={g.name} value={g.name}>
+                                  {g.name}
+                                </option>
+                              ))}
+                            </select>
+                          </label>
+                        )}
+                        {subGroups.length > 0 && !group && (
+                          <label className="flex items-center gap-1.5 text-sm text-gray-600">
+                            <input
+                              type="checkbox"
+                              checked={noDuplicateGroup}
+                              onChange={(e) =>
+                                updateConfig(box, { noDuplicateGroup: e.target.checked })
+                              }
+                            />
+                            ไม่ซ้ำหมวดย่อย
+                          </label>
+                        )}
                       </div>
+
+                      {box.items.length > 0 && (
+                        <details className="mt-3 rounded-md border border-purple-100 bg-purple-50/50 px-3 py-2">
+                          <summary className="cursor-pointer text-sm font-medium text-purple-700">
+                            Rate Up{' '}
+                            {(rateUp.itemIds.length > 0 || rateUp.groupNames.length > 0) && (
+                              <span className="ml-1 rounded-full bg-purple-600 px-2 py-0.5 text-[10px] font-semibold text-white">
+                                x{rateUp.multiplier}
+                              </span>
+                            )}
+                          </summary>
+                          <div className="mt-2 space-y-2">
+                            <label className="flex items-center gap-2 text-sm text-gray-600">
+                              ตัวคูณ
+                              <input
+                                type="number"
+                                min="0"
+                                step="0.5"
+                                value={rateUp.multiplier}
+                                onChange={(e) =>
+                                  updateRateUp(box, { multiplier: e.target.value })
+                                }
+                                className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm"
+                              />
+                            </label>
+                            {subGroups.length > 0 && (
+                              <div>
+                                <div className="mb-1 text-xs font-medium text-gray-400">
+                                  หมวดย่อย
+                                </div>
+                                <div className="flex flex-wrap gap-x-4 gap-y-1">
+                                  {subGroups.map((g) => (
+                                    <label
+                                      key={g.name}
+                                      className="flex items-center gap-1.5 text-sm text-gray-700"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        checked={rateUp.groupNames.includes(g.name)}
+                                        onChange={() => toggleRateUpGroup(box, g.name)}
+                                      />
+                                      {g.name}
+                                    </label>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                            <div>
+                              <div className="mb-1 text-xs font-medium text-gray-400">
+                                ไอเทม
+                              </div>
+                              <div className="flex max-h-40 flex-wrap gap-x-4 gap-y-1 overflow-y-auto">
+                                {box.items.map((item) => (
+                                  <label
+                                    key={item.id}
+                                    className="flex items-center gap-1.5 text-sm text-gray-700"
+                                  >
+                                    <input
+                                      type="checkbox"
+                                      checked={rateUp.itemIds.includes(item.id)}
+                                      onChange={() => toggleRateUpItem(box, item.id)}
+                                    />
+                                    {item.name}
+                                  </label>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </details>
+                      )}
 
                       {result && (
                         <div

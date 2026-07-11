@@ -110,8 +110,7 @@ export default function Navbar() {
         title="นำเข้าข้อมูล"
       >
         <p className="mb-4 text-sm text-gray-600">
-          พบข้อมูลตู้สุ่ม {pendingImport?.boxes?.length ?? 0} ตู้ และประวัติ{' '}
-          {pendingImport?.history?.length ?? 0} รายการในไฟล์
+          พบข้อมูลตู้สุ่ม {pendingImport?.boxes?.length ?? 0} ตู้ในไฟล์
           ต้องการแทนที่ข้อมูลเดิมทั้งหมด หรือรวมกับข้อมูลเดิม?
         </p>
         <div className="flex flex-wrap justify-end gap-2">

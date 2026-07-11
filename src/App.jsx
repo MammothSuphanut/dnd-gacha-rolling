@@ -16,10 +16,12 @@ function App() {
     results: [],
     assignments: {},
     bonuses: {},
+    minTotal: 75,
   })
   const [visibility, setVisibility] = useState({
     hiddenBoxIds: new Set(),
     showStatRoll: true,
+    defaultVisibilityApplied: false,
   })
 
   return (

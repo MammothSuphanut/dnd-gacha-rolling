@@ -22,9 +22,6 @@ export function validateGachaData(data) {
       }
     })
   }
-  if (!Array.isArray(data.history)) {
-    errors.push('ไม่พบฟิลด์ history หรือไม่ใช่ array')
-  }
 
   return { valid: errors.length === 0, errors }
 }

@@ -9,18 +9,17 @@ const STATS = [
   { key: 'cha', label: 'CHA' },
 ]
 
-function rollDie() {
-  return Math.floor(Math.random() * 6) + 1
+function rollDie(sides) {
+  return Math.floor(Math.random() * sides) + 1
 }
 
-function roll4d6DropLowest() {
-  const rolls = [rollDie(), rollDie(), rollDie(), rollDie()]
-  let dropIndex = 0
-  for (let i = 1; i < rolls.length; i++) {
-    if (rolls[i] < rolls[dropIndex]) dropIndex = i
-  }
-  const total = rolls.reduce((sum, v, i) => (i === dropIndex ? sum : sum + v), 0)
-  return { id: createId('stat-roll'), rolls, dropIndex, total }
+function rollDiceDropLowest(diceCount, diceSides, dropCount) {
+  const rolls = Array.from({ length: diceCount }, () => rollDie(diceSides))
+  const drops = Math.min(Math.max(dropCount, 0), diceCount - 1)
+  const order = rolls.map((_, i) => i).sort((a, b) => rolls[a] - rolls[b])
+  const dropIndices = new Set(order.slice(0, drops))
+  const total = rolls.reduce((sum, v, i) => (dropIndices.has(i) ? sum : sum + v), 0)
+  return { id: createId('stat-roll'), rolls, dropIndices, total }
 }
 
 function abilityModifier(score) {
@@ -30,8 +29,42 @@ function abilityModifier(score) {
 
 const STAT_CAP = 20
 
+const DEFAULT_MIN_TOTAL = 75
+const DEFAULT_DICE_COUNT = 4
+const DEFAULT_DICE_SIDES = 6
+const DEFAULT_DROP_COUNT = 1
+
 export default function StatRollPage({ statRollState, setStatRollState }) {
-  const { results, assignments, bonuses } = statRollState
+  const {
+    results,
+    assignments,
+    bonuses,
+    minTotal = DEFAULT_MIN_TOTAL,
+    maxTotal = '',
+    diceCount = DEFAULT_DICE_COUNT,
+    diceSides = DEFAULT_DICE_SIDES,
+    dropCount = DEFAULT_DROP_COUNT,
+  } = statRollState
+
+  function setMinTotal(value) {
+    setStatRollState((prev) => ({ ...prev, minTotal: value }))
+  }
+
+  function setMaxTotal(value) {
+    setStatRollState((prev) => ({ ...prev, maxTotal: value }))
+  }
+
+  function setDiceCount(value) {
+    setStatRollState((prev) => ({ ...prev, diceCount: value }))
+  }
+
+  function setDiceSides(value) {
+    setStatRollState((prev) => ({ ...prev, diceSides: value }))
+  }
+
+  function setDropCount(value) {
+    setStatRollState((prev) => ({ ...prev, dropCount: value }))
+  }
 
   function setResults(updater) {
     setStatRollState((prev) => ({
@@ -55,8 +88,33 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
   }
 
   function handleRoll() {
-    const next = Array.from({ length: 6 }, () => roll4d6DropLowest())
-    setResults(next)
+    const threshold = Math.max(0, Number(minTotal) || 0)
+    const ceiling = maxTotal === '' || maxTotal === null ? null : Math.max(0, Number(maxTotal) || 0)
+    const count = Math.max(1, Number(diceCount) || DEFAULT_DICE_COUNT)
+    const sides = Math.max(2, Number(diceSides) || DEFAULT_DICE_SIDES)
+    const drop = Math.min(Math.max(0, Number(dropCount) || 0), count - 1)
+
+    function distanceFromRange(sum) {
+      if (sum < threshold) return threshold - sum
+      if (ceiling !== null && sum > ceiling) return sum - ceiling
+      return 0
+    }
+
+    let best = null
+    let bestDistance = Infinity
+    let guard = 0
+    let dist
+    do {
+      const next = Array.from({ length: 6 }, () => rollDiceDropLowest(count, sides, drop))
+      const sum = next.reduce((s, r) => s + r.total, 0)
+      dist = distanceFromRange(sum)
+      if (dist < bestDistance) {
+        best = next
+        bestDistance = dist
+      }
+      guard++
+    } while (dist > 0 && guard < 50000)
+    setResults(best)
     setAssignments({})
     setBonuses({})
   }
@@ -107,14 +165,67 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
 
   return (
     <div>
-      <h2 className="mb-4 text-xl font-bold text-gray-900">สุ่มค่าพลัง (4d6 ตัดต่ำสุด)</h2>
+      <h2 className="mb-4 text-xl font-bold text-gray-900">
+        สุ่มค่าพลัง ({diceCount}d{diceSides} ตัดต่ำสุด {dropCount} ลูก)
+      </h2>
 
-      <button
-        onClick={handleRoll}
-        className="w-full rounded-lg bg-purple-600 py-3 text-lg font-bold text-white transition hover:bg-purple-700 md:w-auto md:px-8"
-      >
-        {results.length === 0 ? 'สุ่มเลย!' : 'สุ่มใหม่'}
-      </button>
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <button
+          onClick={handleRoll}
+          className="rounded-lg bg-purple-600 py-3 px-6 text-lg font-bold text-white transition hover:bg-purple-700 md:px-8"
+        >
+          {results.length === 0 ? 'สุ่มเลย!' : 'สุ่มใหม่'}
+        </button>
+        <label className="flex items-center gap-2 text-sm text-gray-600">
+          จำนวนลูกเต๋า
+          <input
+            type="number"
+            min="1"
+            value={diceCount}
+            onChange={(e) => setDiceCount(e.target.value)}
+            className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
+          />
+          d
+          <input
+            type="number"
+            min="2"
+            value={diceSides}
+            onChange={(e) => setDiceSides(e.target.value)}
+            className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
+          />
+        </label>
+        <label className="flex items-center gap-2 text-sm text-gray-600">
+          ตัดต่ำสุดกี่ลูก
+          <input
+            type="number"
+            min="0"
+            value={dropCount}
+            onChange={(e) => setDropCount(e.target.value)}
+            className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
+          />
+        </label>
+        <label className="flex items-center gap-2 text-sm text-gray-600">
+          รวมขั้นต่ำที่ยอมรับ
+          <input
+            type="number"
+            min="0"
+            value={minTotal}
+            onChange={(e) => setMinTotal(e.target.value)}
+            className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm"
+          />
+        </label>
+        <label className="flex items-center gap-2 text-sm text-gray-600">
+          รวมสูงสุดที่ยอมรับ
+          <input
+            type="number"
+            min="0"
+            placeholder="ไม่จำกัด"
+            value={maxTotal}
+            onChange={(e) => setMaxTotal(e.target.value)}
+            className="w-24 rounded-md border border-gray-300 px-2 py-1 text-sm"
+          />
+        </label>
+      </div>
 
       {results.length > 0 && (
         <>
@@ -141,7 +252,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                         <span
                           key={i}
                           className={`flex h-6 w-6 items-center justify-center rounded text-xs font-medium ${
-                            i === r.dropIndex
+                            r.dropIndices.has(i)
                               ? 'bg-gray-100 text-gray-400 line-through'
                               : 'bg-gray-800 text-white'
                           }`}
