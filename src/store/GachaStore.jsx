@@ -13,7 +13,7 @@ function getInitialState() {
     return structuredClone(sampleData)
   }
   const stored = loadFromStorage()
-  if (stored && Array.isArray(stored.boxes) && Array.isArray(stored.history)) {
+  if (stored && Array.isArray(stored.boxes)) {
     return stored
   }
   return structuredClone(sampleData)
@@ -25,7 +25,6 @@ function reducer(state, action) {
       return {
         version: action.payload.version ?? 1,
         boxes: action.payload.boxes ?? [],
-        history: action.payload.history ?? [],
       }
     }
     case 'MERGE_ALL': {
@@ -33,14 +32,9 @@ function reducer(state, action) {
       const newBoxes = (action.payload.boxes ?? []).filter(
         (box) => !existingBoxIds.has(box.id),
       )
-      const existingHistoryIds = new Set(state.history.map((h) => h.id))
-      const newHistory = (action.payload.history ?? []).filter(
-        (h) => !existingHistoryIds.has(h.id),
-      )
       return {
         ...state,
         boxes: [...state.boxes, ...newBoxes],
-        history: [...newHistory, ...state.history],
       }
     }
     case 'ADD_BOX': {
@@ -96,12 +90,6 @@ function reducer(state, action) {
             : box,
         ),
       }
-    }
-    case 'ADD_HISTORY': {
-      return { ...state, history: [action.payload, ...state.history] }
-    }
-    case 'CLEAR_HISTORY': {
-      return { ...state, history: [] }
     }
     default:
       return state

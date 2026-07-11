@@ -7280,631 +7280,701 @@
           "id": "item-618ca1e8-c834-4424-a2d3-3b8bd5a968e9",
           "name": "Dwarf",
           "weight": 6.25,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dwarf_xphb"
+          "link": "https://5e.tools/races.html#dwarf_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-c4771f4d-fae3-4a4f-8edb-8a254a567896",
           "name": "Elf; High Elf Lineage",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#elf_xphb"
+          "link": "https://5e.tools/races.html#elf_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-eeb04c09-2a3d-4fbe-881d-986faada1732",
           "name": "Elf; Wood Elf Lineage",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#elf_xphb"
+          "link": "https://5e.tools/races.html#elf_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-43fa3ff9-3abd-469a-b0d8-508a04a38cd4",
           "name": "Gnome; Forest Gnome Lineage",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#gnome_xphb"
+          "link": "https://5e.tools/races.html#gnome_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-b66db5d1-946e-4b78-b199-9cbc9b20829a",
           "name": "Gnome; Rock Gnome Lineage",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#gnome_xphb"
+          "link": "https://5e.tools/races.html#gnome_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-a4515225-aaec-4e0c-b592-d6b7af77e66b",
           "name": "Goblin",
           "weight": 6.25,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#goblin_mpmm"
+          "link": "https://5e.tools/races.html#goblin_mpmm",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-78b49d81-2e81-40a6-9fee-0a317a737fdb",
           "name": "Halfling",
           "weight": 6.25,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#halfling_xphb"
+          "link": "https://5e.tools/races.html#halfling_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-e0d7e5c8-98c4-421b-96f9-e7cc0e00f7ca",
           "name": "Human",
           "weight": 6.25,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#human_xphb"
+          "link": "https://5e.tools/races.html#human_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-0a1e781d-4360-4d2a-b500-8dbe9a7c0ce3",
           "name": "Kobold; Craftiness",
           "weight": 2.0833,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#kobold_mpmm"
+          "link": "https://5e.tools/races.html#kobold_mpmm",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-fde7a1a9-8196-4d71-a972-f141b36c5877",
           "name": "Kobold; Defiance",
           "weight": 2.0833,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#kobold_mpmm"
+          "link": "https://5e.tools/races.html#kobold_mpmm",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-234e20d6-b3f5-4cac-ae0c-e3584d93fc8c",
           "name": "Kobold; Draconic Sorcery",
           "weight": 2.0833,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#kobold_mpmm"
+          "link": "https://5e.tools/races.html#kobold_mpmm",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-d0dca086-83f6-4ec0-93f8-d83a018825d8",
           "name": "Orc",
           "weight": 6.25,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#orc_xphb"
+          "link": "https://5e.tools/races.html#orc_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-3ba3381f-e0f6-43ca-b87d-d97547b892a1",
           "name": "Aarakocra",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#aarakocra_mpmm"
+          "link": "https://5e.tools/races.html#aarakocra_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-797ebf3c-cc5c-47f4-9657-083b9bc2effa",
           "name": "Bugbear",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#bugbear_mpmm"
+          "link": "https://5e.tools/races.html#bugbear_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-19f633e8-f94f-405a-99cf-1b10460f9398",
           "name": "Centaur",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#centaur_mpmm"
+          "link": "https://5e.tools/races.html#centaur_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-6d54e4dd-02fb-420c-8ca9-66e6eabbc8a3",
           "name": "Firbolg",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#firbolg_mpmm"
+          "link": "https://5e.tools/races.html#firbolg_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-ec46261f-1e35-4297-bf3d-74e7be9a9f46",
           "name": "Harengon",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#harengon_mpmm"
+          "link": "https://5e.tools/races.html#harengon_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-ade415c5-1d93-4305-a5ea-9814b0435456",
           "name": "Hobgoblin",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#hobgoblin_mpmm"
+          "link": "https://5e.tools/races.html#hobgoblin_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-f5447193-2147-49f5-81c5-2c97df34f58d",
           "name": "Kenku",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#kenku_mpmm"
+          "link": "https://5e.tools/races.html#kenku_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-adab01d9-0060-4702-b203-00c6c8e47cc1",
           "name": "Lizardfolk",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#lizardfolk_mpmm"
+          "link": "https://5e.tools/races.html#lizardfolk_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-71e4ae56-1329-478c-bdfa-c3ebad5b180b",
           "name": "Minotaur",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#minotaur_mpmm"
+          "link": "https://5e.tools/races.html#minotaur_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-96538418-f794-482e-a13e-5b9f927992fb",
           "name": "Tabaxi",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#tabaxi_mpmm"
+          "link": "https://5e.tools/races.html#tabaxi_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-cee35c92-afe8-41bf-8e83-e22dd3d4c8b2",
           "name": "Tortle",
           "weight": 3.1818,
-          "tag": "The Primal (****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#tortle_mpmm"
+          "link": "https://5e.tools/races.html#tortle_mpmm",
+          "group": "The Primal (****)"
         },
         {
           "id": "item-30ce3bcf-4629-482f-be83-486f43f933d8",
           "name": "Aasimar",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#aasimar_xphb"
+          "link": "https://5e.tools/races.html#aasimar_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-9f1abc5f-2f51-4f1a-ae62-ffefd9a6f3a3",
           "name": "Deep Gnome",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#deep%20gnome_mpmm"
+          "link": "https://5e.tools/races.html#deep%20gnome_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-64ec244c-53eb-46bc-8130-03d9a4998278",
           "name": "Duergar",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#duergar_mpmm"
+          "link": "https://5e.tools/races.html#duergar_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-c36609a5-d3f4-47f1-b252-765aee6d41ae",
           "name": "Eladrin",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#eladrin_mpmm"
+          "link": "https://5e.tools/races.html#eladrin_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-2d0e827d-00e0-4d4c-a358-261abb46b022",
           "name": "Elf; Drow Lineage",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#elf_xphb"
+          "link": "https://5e.tools/races.html#elf_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-7610ad1e-440d-463a-a381-a4d50ac9c888",
           "name": "Fairy",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#fairy_mpmm"
+          "link": "https://5e.tools/races.html#fairy_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-dfe1e43a-bb99-4c33-8979-e83098173cfc",
           "name": "Genasi (Air)",
           "weight": 0.2143,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#genasi%20(air)_mpmm"
+          "link": "https://5e.tools/races.html#genasi%20(air)_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-77a535a7-2f4f-4aa1-8b93-53f6a4194562",
           "name": "Genasi (Earth)",
           "weight": 0.2143,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#genasi%20(earth)_mpmm"
+          "link": "https://5e.tools/races.html#genasi%20(earth)_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-37c46dc3-2ac1-46f1-8f0d-dd397211c48d",
           "name": "Genasi (Fire)",
           "weight": 0.2143,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#genasi%20(fire)_mpmm"
+          "link": "https://5e.tools/races.html#genasi%20(fire)_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-7ad5e035-b05e-420b-802c-a1f8248ceed7",
           "name": "Genasi (Water)",
           "weight": 0.2143,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#genasi%20(water)_mpmm"
+          "link": "https://5e.tools/races.html#genasi%20(water)_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-db16f3c6-2696-4b07-85c4-c789337a5713",
           "name": "Goliath; Cloud Giant Ancestry",
           "weight": 0.1429,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#goliath_xphb"
+          "link": "https://5e.tools/races.html#goliath_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-6f761234-2875-4657-b42d-9fa42fbc34c4",
           "name": "Goliath; Fire Giant Ancestry",
           "weight": 0.1429,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#goliath_xphb"
+          "link": "https://5e.tools/races.html#goliath_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-c0030b53-4c60-4dfc-b830-ed748956a0ce",
           "name": "Goliath; Frost Giant Ancestry",
           "weight": 0.1429,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#goliath_xphb"
+          "link": "https://5e.tools/races.html#goliath_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-646518de-b071-4449-8320-88029479754d",
           "name": "Goliath; Hill Giant Ancestry",
           "weight": 0.1429,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#goliath_xphb"
+          "link": "https://5e.tools/races.html#goliath_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-ab1f3068-6838-4108-a758-d88441ed57a9",
           "name": "Goliath; Stone Giant Ancestry",
           "weight": 0.1429,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#goliath_xphb"
+          "link": "https://5e.tools/races.html#goliath_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-59914878-6140-4474-bbac-6c3ea5dce7b8",
           "name": "Goliath; Storm Giant Ancestry",
           "weight": 0.1429,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#goliath_xphb"
+          "link": "https://5e.tools/races.html#goliath_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-937efd31-0cc7-47f2-b592-595a8c607757",
           "name": "Satyr",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#satyr_mpmm"
+          "link": "https://5e.tools/races.html#satyr_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-cacea7a5-2144-4e36-a4ce-0cecb7465ff5",
           "name": "Sea Elf",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#sea%20elf_mpmm"
+          "link": "https://5e.tools/races.html#sea%20elf_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-95db7b9e-d1b0-4b2c-8637-960a8c1a72f8",
           "name": "Shadar-Kai",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#shadar-kai_mpmm"
+          "link": "https://5e.tools/races.html#shadar-kai_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-d50f5970-a1e1-4da5-ad47-16c8c3f6ebb6",
           "name": "Tiefling; Abyssal Legacy",
           "weight": 0.2857,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#tiefling_xphb"
+          "link": "https://5e.tools/races.html#tiefling_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-01f663e9-d41d-4c0a-a858-d63fc5221083",
           "name": "Tiefling; Chthonic Legacy",
           "weight": 0.2857,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#tiefling_xphb"
+          "link": "https://5e.tools/races.html#tiefling_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-428f3c45-9e2b-4409-b508-db67220c9a3c",
           "name": "Tiefling; Infernal Legacy",
           "weight": 0.2857,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#tiefling_xphb"
+          "link": "https://5e.tools/races.html#tiefling_xphb",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-7f249746-563d-44f3-b9ae-bfdd7be2d71a",
           "name": "Triton",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#triton_mpmm"
+          "link": "https://5e.tools/races.html#triton_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-fe9ded55-62f8-4e16-881e-a37d14e11f67",
           "name": "Yuan-Ti",
           "weight": 0.8571,
-          "tag": "The Planar (*****)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#yuan-ti_mpmm"
+          "link": "https://5e.tools/races.html#yuan-ti_mpmm",
+          "group": "The Planar (*****)"
         },
         {
           "id": "item-54cc4bf9-6f1a-478c-9dbb-ae77d43e9694",
           "name": "Astral Elf",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#astral%20elf_aag"
+          "link": "https://5e.tools/races.html#astral%20elf_aag",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-d4420bbf-6620-47a0-9f10-83a92cbc2481",
           "name": "Autognome",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#autognome_aag"
+          "link": "https://5e.tools/races.html#autognome_aag",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-4a2d7eb1-989c-433a-ba1f-32fd702d9d80",
           "name": "Dragonborn (Black)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-bbc77f5d-ddfc-4ac4-83a7-04a3737fe091",
           "name": "Dragonborn (Blue)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-a96a206f-0fcc-416c-a192-2bd52b88382b",
           "name": "Dragonborn (Brass)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-a0b7ffa2-c754-4be3-aec4-ad7c33a110fd",
           "name": "Dragonborn (Bronze)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-40e27236-1ef3-4c1b-81e7-f2ae4fb25547",
           "name": "Dragonborn (Copper)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-869ec42b-6856-4343-9ad0-34155fd45338",
           "name": "Dragonborn (Gem; Amethyst)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd"
+          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-43db5951-e5a5-4d0c-9d62-ae9bdc80e4b9",
           "name": "Dragonborn (Gem; Crystal)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd"
+          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-90df553c-b485-477b-af26-8238c37a39e5",
           "name": "Dragonborn (Gem; Emerald)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd"
+          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-6427e90a-6ecf-4e79-a4f9-68728ae497b8",
           "name": "Dragonborn (Gem; Sapphire)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd"
+          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-e4994185-267f-42d8-8fb0-923c38247668",
           "name": "Dragonborn (Gem; Topaz)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd"
+          "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-4c8ccacd-2f42-4049-a374-15012b1180e5",
           "name": "Dragonborn (Gold)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-16d93188-46d4-4a89-9bef-c5cbbe55215d",
           "name": "Dragonborn (Green)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-72f1492f-09e4-4a2f-a616-8c2edb887577",
           "name": "Dragonborn (Red)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-7da55984-b003-4338-83de-96d351da0286",
           "name": "Dragonborn (Silver)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-0cb07981-6acf-4b9d-a3d7-e8db1a15a86e",
           "name": "Dragonborn (White)",
           "weight": 0.0222,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#dragonborn_xphb"
+          "link": "https://5e.tools/races.html#dragonborn_xphb",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-43e559f5-ea26-43ba-a294-825105aeb0aa",
           "name": "Giff",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#giff_aag"
+          "link": "https://5e.tools/races.html#giff_aag",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-962feb4d-b48e-4d59-a21f-9b8018dd3bf2",
           "name": "Githyanki",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#githyanki_mpmm"
+          "link": "https://5e.tools/races.html#githyanki_mpmm",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-6dad3416-e79f-4ce3-b226-c99453e5eb48",
           "name": "Githzerai",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#githzerai_mpmm"
+          "link": "https://5e.tools/races.html#githzerai_mpmm",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-95549a4a-0a92-41a5-9f84-5778827d0412",
           "name": "Hadozee",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#hadozee_aag"
+          "link": "https://5e.tools/races.html#hadozee_aag",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-a2bb0ced-1311-40f0-bd3b-cf8bb5466d44",
           "name": "Plasmoid",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#plasmoid_aag"
+          "link": "https://5e.tools/races.html#plasmoid_aag",
+          "group": "The Astral Apex (******)"
         },
         {
           "id": "item-cc80f55f-2394-4476-b496-8a91b17995b5",
           "name": "Thri-kreen",
           "weight": 0.3333,
-          "tag": "The Astral Apex (******)",
+          "tag": "",
           "image": "",
           "note": "",
-          "link": "https://5e.tools/races.html#thri-kreen_aag"
+          "link": "https://5e.tools/races.html#thri-kreen_aag",
+          "group": "The Astral Apex (******)"
         }
       ],
       "settings": {
@@ -7912,7 +7982,24 @@
         "defaultCount": 3
       },
       "boxType": "species",
-      "groups": []
+      "groups": [
+        {
+          "name": "The Foundation (***)",
+          "weight": 49.9999
+        },
+        {
+          "name": "The Primal (****)",
+          "weight": 34.9998
+        },
+        {
+          "name": "The Planar (*****)",
+          "weight": 11.9998
+        },
+        {
+          "name": "The Astral Apex (******)",
+          "weight": 2.9994
+        }
+      ]
     },
     {
       "id": "box-5845aef6-5c87-48ec-b6ad-05fb2a6fa31a",
@@ -7923,766 +8010,851 @@
           "id": "item-831194d6-caff-4fae-82c6-42fec09704b6",
           "name": "Acolyte",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#acolyte_xphb"
+          "link": "https://5e.tools/backgrounds.html#acolyte_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-4777a40e-b13d-4359-b726-fbe89f50dba8",
           "name": "Artisan",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#artisan_xphb"
+          "link": "https://5e.tools/backgrounds.html#artisan_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-6a7475b2-d498-4a6f-8ba0-e0d8554f77e4",
           "name": "Charlatan",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#charlatan_xphb"
+          "link": "https://5e.tools/backgrounds.html#charlatan_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-daa71139-d9cf-40e0-94ac-74bc81861afc",
           "name": "Criminal",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#criminal_xphb"
+          "link": "https://5e.tools/backgrounds.html#criminal_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-1a9f8da1-1d78-435e-bc73-b9e91e7d1554",
           "name": "Entertainer",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#entertainer_xphb"
+          "link": "https://5e.tools/backgrounds.html#entertainer_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-9e063d00-d53a-486d-93cf-b990e1e8dca5",
           "name": "Farmer",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#farmer_xphb"
+          "link": "https://5e.tools/backgrounds.html#farmer_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-b283c4f7-b5b7-4577-9089-2ecd5af38b98",
           "name": "Guard",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#guard_xphb"
+          "link": "https://5e.tools/backgrounds.html#guard_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-63d6b0b4-7414-4478-94fa-be929a79e191",
           "name": "Guide",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#guide_xphb"
+          "link": "https://5e.tools/backgrounds.html#guide_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-d0dfbe32-8825-475b-a760-b00eac7e9688",
           "name": "Hermit",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#hermit_xphb"
+          "link": "https://5e.tools/backgrounds.html#hermit_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-f36c8ab1-8a67-457f-9146-5088d49b334d",
           "name": "Merchant",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#failed%20merchant_ai"
+          "link": "https://5e.tools/backgrounds.html#failed%20merchant_ai",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-c82e0962-037e-4fee-ba08-3d2aa5b92f75",
           "name": "Noble",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#noble_xphb"
+          "link": "https://5e.tools/backgrounds.html#noble_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-0d1752af-e7d4-48cf-a88d-5aee0617c162",
           "name": "Sage",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#sage_xphb"
+          "link": "https://5e.tools/backgrounds.html#sage_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-93dc6b35-e9c6-4034-8f5a-ba54952b5644",
           "name": "Sailor",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#sailor_xphb"
+          "link": "https://5e.tools/backgrounds.html#sailor_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-59cb17d0-f0f2-42da-b985-9f8df1910e38",
           "name": "Scribe",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#scribe_xphb"
+          "link": "https://5e.tools/backgrounds.html#scribe_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-22e2eb16-1796-43df-9b5d-4621e2d8136f",
           "name": "Soldier",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#soldier_xphb"
+          "link": "https://5e.tools/backgrounds.html#soldier_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-3d95d8d0-7149-4ba0-a3de-f318ba4e4229",
           "name": "Wayfarer",
           "weight": 3.125,
-          "tag": "The Foundation (***)",
+          "tag": "",
           "image": "",
           "note": "PHB 2024 Origin Line | Source: PHB'24",
-          "link": "https://5e.tools/backgrounds.html#wayfarer_xphb"
+          "link": "https://5e.tools/backgrounds.html#wayfarer_xphb",
+          "group": "The Foundation (***)"
         },
         {
           "id": "item-460d3778-e546-49ec-b7a6-22de2ca5b0f2",
           "name": "Inquisitive",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#inquisitive_efa"
+          "link": "https://5e.tools/backgrounds.html#inquisitive_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-f8fd075f-d89d-4520-a393-2b2ff860c2de",
           "name": "House Vadalis Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20vadalis%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20vadalis%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-0110a7b4-363f-48a7-a548-341b012db288",
           "name": "House Thuranni Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20thuranni%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20thuranni%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-91bf59a3-f308-4d7e-9b8e-ef430afa44d3",
           "name": "House Tharashk Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20tharashk%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20tharashk%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-1244841d-9a30-40f1-b19b-7422fbc3aef6",
           "name": "House Sivis Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20sivis%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20sivis%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-4b5a9e89-5ea7-45f1-ba6d-109a42cdaa4b",
           "name": "House Phianlan Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20sivis%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20sivis%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-9db51d1f-9be9-4b9b-9f3f-ccd61cf570f4",
           "name": "House Orien Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20orien%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20orien%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-c8f2642b-841f-4593-b799-25a22f64fdfe",
           "name": "House Medani Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20medani%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20medani%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-7f9999d3-de1c-408f-b5ab-c3b8fc3c16f3",
           "name": "House Lyrandar Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20lyrandar%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20lyrandar%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-ab464dc4-205f-4396-84c2-3cffeeaf488e",
           "name": "House Kundarak Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20kundarak%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20kundarak%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-b3490293-4467-48f4-a36b-3601eafc3857",
           "name": "House Jorasco Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20jorasco%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20jorasco%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-ea0f59c0-d1c9-48d9-ab9b-a201c0805edd",
           "name": "House Ghallanda Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20ghallanda%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20ghallanda%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-23dd9ea2-6bf5-42f0-a574-820b9806392f",
           "name": "House Deneith Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20deneith%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20deneith%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-3be58149-a276-44fc-b705-cf533048917c",
           "name": "House Cannith Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20cannith%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20cannith%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-224cc432-2825-41bb-8449-b77abfa4709b",
           "name": "House Agent",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#house%20agent_efa"
+          "link": "https://5e.tools/backgrounds.html#house%20agent_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-16db526f-2a18-4d92-9faf-9b8b678a2664",
           "name": "Archaeologist",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#archaeologist_efa"
+          "link": "https://5e.tools/backgrounds.html#archaeologist_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-e3ff13e3-009f-4c06-a92d-c3c40a5424bc",
           "name": "Aberrant Heir",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Eberron Dragonmarked Heirs | Source: EFA",
-          "link": "https://5e.tools/backgrounds.html#aberrant%20heir_efa"
+          "link": "https://5e.tools/backgrounds.html#aberrant%20heir_efa",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-da9438b3-7f03-408c-ab30-63431a6ef267",
           "name": "Zhentarim Mercenary",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#zhentarim%20mercenary_frhof"
+          "link": "https://5e.tools/backgrounds.html#zhentarim%20mercenary_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-dac0fd8c-16d4-4da3-b5bd-d75adfc1022e",
           "name": "Spellfire Initiate",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#spellfire%20initiate_frhof"
+          "link": "https://5e.tools/backgrounds.html#spellfire%20initiate_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-b0d409c4-f637-48b0-9d41-dee6fe020cde",
           "name": "Shadowmasters Exile",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#shadowmasters%20exile_frhof"
+          "link": "https://5e.tools/backgrounds.html#shadowmasters%20exile_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-cdfc7d37-55ce-457f-9019-0bde9a2e0178",
           "name": "Rashemi Wanderer",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#rashemi%20wanderer_frhof"
+          "link": "https://5e.tools/backgrounds.html#rashemi%20wanderer_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-c0a2e2b5-2771-48a6-b85e-be184ef4c7bb",
           "name": "Purple Dragon Squire",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#purple%20dragon%20squire_frhof"
+          "link": "https://5e.tools/backgrounds.html#purple%20dragon%20squire_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-a501ec77-dcb3-4494-a355-3d136a96d822",
           "name": "Mythalkeeper",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#mythalkeeper_frhof"
+          "link": "https://5e.tools/backgrounds.html#mythalkeeper_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-919f4dea-55ac-43bc-b5aa-24af81aff1df",
           "name": "Mulhorandi Tomb Raider",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#mulhorandi%20tomb%20raider_frhof"
+          "link": "https://5e.tools/backgrounds.html#mulhorandi%20tomb%20raider_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-9b9116cb-e298-4e11-8836-8bdf024c3949",
           "name": "Moonwell Pilgrim",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#moonwell%20pilgrim_frhof"
+          "link": "https://5e.tools/backgrounds.html#moonwell%20pilgrim_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-6726fb64-45e8-4789-b529-eaaa36f663d7",
           "name": "Lords' Alliance Vassal",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#lords'%20alliance%20vassal_frhof"
+          "link": "https://5e.tools/backgrounds.html#lords'%20alliance%20vassal_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-04a22c19-dfbe-484b-9883-7c11ae747038",
           "name": "Knight of the Gauntlet",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#knight%20of%20the%20gauntlet_frhof"
+          "link": "https://5e.tools/backgrounds.html#knight%20of%20the%20gauntlet_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-db79658b-6382-4830-8433-80fee3808e10",
           "name": "Ice Fisher",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#ice%20fisher_frhof"
+          "link": "https://5e.tools/backgrounds.html#ice%20fisher_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-97f53362-5a1d-47c7-a2d3-6ea1cb5f7882",
           "name": "Harper",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#harper_frhof"
+          "link": "https://5e.tools/backgrounds.html#harper_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-34066c77-955e-4c67-900b-a6886ec76f83",
           "name": "Genie Touched",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#genie%20touched_frhof"
+          "link": "https://5e.tools/backgrounds.html#genie%20touched_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-9812356e-034b-44f4-a4ee-48d3c26dd266",
           "name": "Flaming Fist Mercenary",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#flaming%20fist%20mercenary_frhof"
+          "link": "https://5e.tools/backgrounds.html#flaming%20fist%20mercenary_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-f8afad47-bc67-4d75-af43-2572c3d5f512",
           "name": "Emerald Enclave Caretaker",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#emerald%20enclave%20caretaker_frhof"
+          "link": "https://5e.tools/backgrounds.html#emerald%20enclave%20caretaker_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-a754cc0b-49b3-4ee7-ab59-f3a68e7bd046",
           "name": "Dragon Cultist",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#dragon%20cultist_frhof"
+          "link": "https://5e.tools/backgrounds.html#dragon%20cultist_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-af9d8d6e-473e-44ec-8e6b-9e3cbd02ab1a",
           "name": "Dead Magic Dweller",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#dead%20magic%20dweller_frhof"
+          "link": "https://5e.tools/backgrounds.html#dead%20magic%20dweller_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-c40fbc49-d6ea-46e0-ac2c-ce91e37ee9c5",
           "name": "Chondathan Freebooter",
           "weight": 0.8571,
-          "tag": "Faction & City Legacies (****)",
+          "tag": "",
           "image": "",
           "note": "Forgotten Realms Faction War | Source: FRHoF",
-          "link": "https://5e.tools/backgrounds.html#chondathan%20freebooter_frhof"
+          "link": "https://5e.tools/backgrounds.html#chondathan%20freebooter_frhof",
+          "group": "Faction & City Legacies (****)"
         },
         {
           "id": "item-5aabedbb-d172-4748-a03d-c8d8ae48a378",
           "name": "Syndicate Smuggler",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#syndicate%20smuggler_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#syndicate%20smuggler_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-53bf6e01-eb77-4454-aa8e-ca660e9ee568",
           "name": "Scion of the Thaumaturge",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#scion%20of%20the%20thaumaturge_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#scion%20of%20the%20thaumaturge_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-1e1d0718-cd0d-4338-9abf-27223a7708ed",
           "name": "Released Thrall",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#released%20thrall_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#released%20thrall_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-6da01199-543f-44b8-8e8b-5e40975b1c15",
           "name": "Prisoner",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#prisoner_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#prisoner_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-15530ae2-9036-4a3c-a6a3-97384b833b93",
           "name": "Pox-Touched",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#pox-touched_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#pox-touched_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-e091bfe4-86f1-4ab3-875b-03091278fa48",
           "name": "Pit Fighter",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#pit%20fighter_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#pit%20fighter_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-9da59048-f759-465f-a873-c00f4960d8ef",
           "name": "Pioneer",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#pioneer_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#pioneer_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-807c45b3-3bd1-405e-8a9c-5ef76e74b1c0",
           "name": "Physician",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#physician_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#physician_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-8f810943-cca5-4aad-a45c-ef09b5676993",
           "name": "One of the Taken",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#one%20of%20the%20taken_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#one%20of%20the%20taken_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-69af0986-45c1-4bba-9eb4-2b9cb4751fd3",
           "name": "Lapsed Inquisitor",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#lapsed%20inquisitor_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#lapsed%20inquisitor_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-15ef6d35-fd57-4e26-af89-3677a56b84d0",
           "name": "Inquisitor of the Faithful",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#inquisitor%20of%20the%20faithful_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#inquisitor%20of%20the%20faithful_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-235ad949-a00a-4b70-bd96-87842f7a7be4",
           "name": "Heretic",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#heretic_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#heretic_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-09010aac-1c60-4709-b7db-1ef5955572ce",
           "name": "Free Swords Mercenary",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#free%20swords%20mercenary_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#free%20swords%20mercenary_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-cb8611cc-df64-4978-a7f6-d74df4c87d40",
           "name": "Fey-Blessed",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#fey-blessed_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#fey-blessed_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-1b272417-4bd9-4e79-b5f1-d607b9c27038",
           "name": "Exterminator",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#exterminator_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#exterminator_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-96532feb-e0cc-47be-9954-60059a5f3a08",
           "name": "Explorer",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#explorer_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#explorer_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-6cb67ba3-b69d-4114-ada6-6af1d7dbecdf",
           "name": "Executioner",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#executioner_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#executioner_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-e5310c7c-6ef1-461e-a371-070c436ddde5",
           "name": "Envoy",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#envoy_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#envoy_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-919c7c5f-8462-48c0-8cbc-0fb58f07834b",
           "name": "Disgraced Raider",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#disgraced%20raider_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#disgraced%20raider_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-6f93f0cf-670a-41b2-bb6f-c3d2c6ca88e5",
           "name": "Courtier (Grim)",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#courtier_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#courtier_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-e95c0f75-9e77-47a3-ab3b-3e47eb5c55d3",
           "name": "Chapter Knight",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#chapter%20knight_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#chapter%20knight_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-ad9351fd-a035-4549-a06a-829a1248477e",
           "name": "Beggar",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#beggar_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#beggar_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-052deb1a-37f6-4159-a5f3-a6421fe73f9e",
           "name": "Beast Hunter",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#beast%20hunter_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#beast%20hunter_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-06a6eee0-a538-4219-91a5-7372e4c72447",
           "name": "Antiquarian",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#antiquarian_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#antiquarian_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-bed4724e-6053-473f-bb1f-c80c0870b4b5",
           "name": "Agent of Augustine",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
-          "link": "https://5e.tools/backgrounds.html#agent%20of%20augustine_grimhollowpg24"
+          "link": "https://5e.tools/backgrounds.html#agent%20of%20augustine_grimhollowpg24",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-29d5cf08-2a47-4400-854a-1d23ba106701",
           "name": "Vampire Survivor",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: ABH",
-          "link": "https://5e.tools/backgrounds.html#vampire%20survivor_abh"
+          "link": "https://5e.tools/backgrounds.html#vampire%20survivor_abh",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-7b864d9c-96d0-44c7-a3c2-cf0f77ee47ce",
           "name": "Vampire Devotee",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: ABH",
-          "link": "https://5e.tools/backgrounds.html#vampire%20devotee_abh"
+          "link": "https://5e.tools/backgrounds.html#vampire%20devotee_abh",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-93269d35-e4cb-4cc0-8799-315b63b64de3",
           "name": "Carouser",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Grim Hollow & Cursed Line | Source: ABH",
-          "link": "https://5e.tools/backgrounds.html#carouser_abh"
+          "link": "https://5e.tools/backgrounds.html#carouser_abh",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-63b49812-ca4c-479c-8d62-2281627701c5",
           "name": "Haunted One",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Ravenloft & Ruined Destinies | Source: RHW",
-          "link": "https://5e.tools/backgrounds.html#haunted%20one_rhw"
+          "link": "https://5e.tools/backgrounds.html#haunted%20one_rhw",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-168bbe56-60fd-4622-8d6f-dc8d29edf74b",
           "name": "Spirit Medium",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Ravenloft & Ruined Destinies | Source: RHW",
-          "link": "https://5e.tools/backgrounds.html#spirit%20medium_rhw"
+          "link": "https://5e.tools/backgrounds.html#spirit%20medium_rhw",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-366a7427-bab7-4cce-8f2e-4c32a8cdcc14",
           "name": "Mist Wanderer",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Ravenloft & Ruined Destinies | Source: RHW",
-          "link": "https://5e.tools/backgrounds.html#mist%20wanderer_rhw"
+          "link": "https://5e.tools/backgrounds.html#mist%20wanderer_rhw",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-7b2f3858-a34c-40a5-91c1-86fb1357b9d6",
           "name": "Investigator",
           "weight": 0.375,
-          "tag": "Grim & Ruined Realms (*****)",
+          "tag": "",
           "image": "",
           "note": "Ravenloft & Ruined Destinies | Source: RHW",
-          "link": "https://5e.tools/backgrounds.html#investigator_rhw"
+          "link": "https://5e.tools/backgrounds.html#investigator_rhw",
+          "group": "Grim & Ruined Realms (*****)"
         },
         {
           "id": "item-93cdcf8a-bc93-4cc9-93df-baadf4226004",
           "name": "Shadowmoor Expert",
           "weight": 4,
-          "tag": "Planar & Cosmic Anomalies (******)",
+          "tag": "",
           "image": "",
           "note": "Feywild & Exotic Frontiers | Source: LFL",
-          "link": "https://5e.tools/backgrounds.html#shadowmoor%20expert_lfl"
+          "link": "https://5e.tools/backgrounds.html#shadowmoor%20expert_lfl",
+          "group": "Planar & Cosmic Anomalies (******)"
         },
         {
           "id": "item-9075628c-932e-4481-9a4f-114f4d5bffd6",
           "name": "Lorwyn Expert",
           "weight": 4,
-          "tag": "Planar & Cosmic Anomalies (******)",
+          "tag": "",
           "image": "",
           "note": "Feywild & Exotic Frontiers | Source: LFL",
-          "link": "https://5e.tools/backgrounds.html#lorwyn%20expert_lfl"
+          "link": "https://5e.tools/backgrounds.html#lorwyn%20expert_lfl",
+          "group": "Planar & Cosmic Anomalies (******)"
         }
       ],
       "settings": {
@@ -8690,8 +8862,122 @@
         "defaultCount": 3
       },
       "boxType": "background",
-      "groups": []
+      "groups": [
+        {
+          "name": "The Foundation (***)",
+          "weight": 50
+        },
+        {
+          "name": "Faction & City Legacies (****)",
+          "weight": 29.9985
+        },
+        {
+          "name": "Grim & Ruined Realms (*****)",
+          "weight": 12
+        },
+        {
+          "name": "Planar & Cosmic Anomalies (******)",
+          "weight": 8
+        }
+      ]
     }
   ],
-  "history": []
+  "history": [
+    {
+      "id": "history-cf7cb5cb-1c04-42eb-8db3-cfca90eb6ed3",
+      "timestamp": "2026-07-11T10:20:24.329Z",
+      "boxesRolled": [
+        {
+          "boxId": "box-5845aef6-5c87-48ec-b6ad-05fb2a6fa31a",
+          "boxName": "Standard",
+          "mode": "reroll",
+          "results": ["Flaming Fist Mercenary", "Acolyte", "House Agent"]
+        }
+      ]
+    },
+    {
+      "id": "history-720c93d2-a602-4e3e-a1f7-a43b35d560e1",
+      "timestamp": "2026-07-11T10:20:22.916Z",
+      "boxesRolled": [
+        {
+          "boxId": "box-1f879e02-8b5e-4de8-bc05-4c1179356013",
+          "boxName": "Standard",
+          "mode": "reroll",
+          "results": ["Lizardfolk", "Centaur", "Orc"]
+        }
+      ]
+    },
+    {
+      "id": "history-a074cbe6-cb7e-4762-b8e9-c8a2a7946ce5",
+      "timestamp": "2026-07-11T10:11:57.895Z",
+      "boxesRolled": [
+        {
+          "boxId": "box-d763f0d6-2902-42b9-ad02-7cc7628313c0",
+          "boxName": "Standard",
+          "mode": "reroll",
+          "results": [
+            "Occultist",
+            "Burden of the End",
+            "Swarmkeeper",
+            "Assassin",
+            "Scion of the Three"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history-bc679a9e-c729-4328-813b-a56b753c34fa",
+      "timestamp": "2026-07-11T10:11:45.475Z",
+      "boxesRolled": [
+        {
+          "boxId": "box-d763f0d6-2902-42b9-ad02-7cc7628313c0",
+          "boxName": "Standard",
+          "mode": "reroll",
+          "results": [
+            "Circle of Wildfire",
+            "Path of the Beast",
+            "Arcana Domain",
+            "Reanimator",
+            "College of Dance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history-1c395a62-193a-4d2b-bbf6-5f058086dae4",
+      "timestamp": "2026-07-11T10:11:39.526Z",
+      "boxesRolled": [
+        {
+          "boxId": "box-d763f0d6-2902-42b9-ad02-7cc7628313c0",
+          "boxName": "Standard",
+          "mode": "reroll",
+          "results": [
+            "Hunter",
+            "Abjurer",
+            "Oath of Vengeance",
+            "Trickery Domain",
+            "Nightgaunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history-2c8c4acf-4c21-42fe-9ab9-71e8934bbc16",
+      "timestamp": "2026-07-11T10:11:33.228Z",
+      "boxesRolled": [
+        {
+          "boxId": "box-d763f0d6-2902-42b9-ad02-7cc7628313c0",
+          "boxName": "Standard",
+          "mode": "reroll",
+          "results": [
+            "Oath of the Noble Genies",
+            "Circle of the Shepherd",
+            "Oath of Slaughter",
+            "Demon Brand",
+            "Circle of the Land"
+          ]
+        }
+      ]
+    }
+  ]
 }
