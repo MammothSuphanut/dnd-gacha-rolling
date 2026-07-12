@@ -8,7 +8,7 @@ import Modal from './Modal'
 
 const links = [
   { to: '/roll', label: 'สุ่ม' },
-  { to: '/boxes', label: 'จัดการตู้สุ่ม' },
+  { to: '/shop', label: 'ร้านค้า' },
 ]
 
 export default function Navbar() {
@@ -60,7 +60,9 @@ export default function Navbar() {
     <>
       <nav className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-2 px-4 py-3 md:px-8">
-          <span className="text-lg font-bold text-purple-600">GachaRolling</span>
+          <NavLink to="/roll" className="text-lg font-bold text-purple-600">
+            Gacha Rolling
+          </NavLink>
           <div className="flex flex-wrap items-center gap-1">
             {links.map((link) => (
               <NavLink
@@ -110,7 +112,8 @@ export default function Navbar() {
         title="นำเข้าข้อมูล"
       >
         <p className="mb-4 text-sm text-gray-600">
-          พบข้อมูลตู้สุ่ม {pendingImport?.boxes?.length ?? 0} ตู้ในไฟล์
+          พบข้อมูลตู้สุ่ม {pendingImport?.boxes?.length ?? 0} ตู้ และร้านค้า{' '}
+          {pendingImport?.shops?.length ?? 0} ร้านในไฟล์
           ต้องการแทนที่ข้อมูลเดิมทั้งหมด หรือรวมกับข้อมูลเดิม?
         </p>
         <div className="flex flex-wrap justify-end gap-2">
