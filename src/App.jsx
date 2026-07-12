@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import BoxManagerPage from './pages/BoxManagerPage'
 import RollPage from './pages/RollPage'
+import ShopPage from './pages/ShopPage'
 import { GachaProvider } from './store/GachaStore'
 import { ToastProvider } from './store/ToastContext'
 
@@ -19,9 +20,14 @@ function App() {
     minTotal: 75,
   })
   const [visibility, setVisibility] = useState({
-    hiddenBoxIds: new Set(),
+    selectedBoxId: {},
     showStatRoll: true,
     defaultVisibilityApplied: false,
+  })
+  const [cartState, setCartState] = useState({
+    items: [],
+    shopDiscounts: {},
+    overallDiscount: { type: 'percent', value: '' },
   })
 
   return (
@@ -46,6 +52,10 @@ function App() {
               }
             />
             <Route path="/boxes" element={<BoxManagerPage />} />
+            <Route
+              path="/shop"
+              element={<ShopPage cartState={cartState} setCartState={setCartState} />}
+            />
           </Routes>
         </div>
       </GachaProvider>

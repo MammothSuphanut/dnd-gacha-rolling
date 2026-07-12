@@ -14,7 +14,7 @@ function getInitialState() {
   }
   const stored = loadFromStorage()
   if (stored && Array.isArray(stored.boxes)) {
-    return stored
+    return { shops: [], ...stored }
   }
   return structuredClone(sampleData)
 }
@@ -25,6 +25,7 @@ function reducer(state, action) {
       return {
         version: action.payload.version ?? 1,
         boxes: action.payload.boxes ?? [],
+        shops: action.payload.shops ?? [],
       }
     }
     case 'MERGE_ALL': {
@@ -32,9 +33,14 @@ function reducer(state, action) {
       const newBoxes = (action.payload.boxes ?? []).filter(
         (box) => !existingBoxIds.has(box.id),
       )
+      const existingShopIds = new Set((state.shops ?? []).map((shop) => shop.id))
+      const newShops = (action.payload.shops ?? []).filter(
+        (shop) => !existingShopIds.has(shop.id),
+      )
       return {
         ...state,
         boxes: [...state.boxes, ...newBoxes],
+        shops: [...(state.shops ?? []), ...newShops],
       }
     }
     case 'ADD_BOX': {
@@ -88,6 +94,60 @@ function reducer(state, action) {
           box.id === action.payload.boxId
             ? { ...box, items: box.items.filter((item) => item.id !== action.payload.itemId) }
             : box,
+        ),
+      }
+    }
+    case 'ADD_SHOP': {
+      return { ...state, shops: [...(state.shops ?? []), action.payload] }
+    }
+    case 'UPDATE_SHOP': {
+      return {
+        ...state,
+        shops: (state.shops ?? []).map((shop) =>
+          shop.id === action.payload.id ? { ...shop, ...action.payload.patch } : shop,
+        ),
+      }
+    }
+    case 'DELETE_SHOP': {
+      return {
+        ...state,
+        shops: (state.shops ?? []).filter((shop) => shop.id !== action.payload.id),
+      }
+    }
+    case 'ADD_SHOP_ITEM': {
+      return {
+        ...state,
+        shops: (state.shops ?? []).map((shop) =>
+          shop.id === action.payload.shopId
+            ? { ...shop, items: [...shop.items, action.payload.item] }
+            : shop,
+        ),
+      }
+    }
+    case 'UPDATE_SHOP_ITEM': {
+      return {
+        ...state,
+        shops: (state.shops ?? []).map((shop) =>
+          shop.id === action.payload.shopId
+            ? {
+                ...shop,
+                items: shop.items.map((item) =>
+                  item.id === action.payload.itemId
+                    ? { ...item, ...action.payload.patch }
+                    : item,
+                ),
+              }
+            : shop,
+        ),
+      }
+    }
+    case 'DELETE_SHOP_ITEM': {
+      return {
+        ...state,
+        shops: (state.shops ?? []).map((shop) =>
+          shop.id === action.payload.shopId
+            ? { ...shop, items: shop.items.filter((item) => item.id !== action.payload.itemId) }
+            : shop,
         ),
       }
     }

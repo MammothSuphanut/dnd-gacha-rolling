@@ -60,23 +60,83 @@ export function calculateHierarchicalPercentages(items, groups = []) {
  * Multiplies the weight of chosen items and/or chosen subgroups by `multiplier`
  * before odds are computed, letting a specific item or an entire subcategory
  * be "rate up"-ed for a single roll without touching the stored box data.
+ *
+ * `rateUp.mode === 'percent'` switches to a target-share mode: instead of a
+ * fixed multiplier, the chosen items/groups are scaled so their combined
+ * share of the total weight equals `rateUp.percent`% (everything else keeps
+ * its relative proportions and splits the remainder).
+ *
+ * An item inside a subgroup can never out-earn its subgroup's own share of
+ * the pool by boosting the item's weight alone (the subgroup's weight is a
+ * separate, fixed bucket) — so in percent mode, selecting an item implicitly
+ * also lifts its subgroup's bucket weight, while a large in-group dominance
+ * factor makes that item claim (almost) all of the subgroup's raised share.
  */
 export function applyRateUp(items, groups, rateUp) {
   const itemIds = rateUp?.itemIds ?? []
   const groupNames = rateUp?.groupNames ?? []
-  const multiplier = Math.max(Number(rateUp?.multiplier) || 1, 0)
-  if (multiplier === 1 || (itemIds.length === 0 && groupNames.length === 0)) {
+  if (itemIds.length === 0 && groupNames.length === 0) {
     return { items, groups }
   }
   const itemIdSet = new Set(itemIds)
   const groupNameSet = new Set(groupNames)
-  const boostedItems = items.map((item) =>
-    itemIdSet.has(item.id)
-      ? { ...item, weight: Math.max(Number(item.weight) || 0, 0) * multiplier }
-      : item,
+  const groupByName = new Map(groups.map((g) => [g.name, g]))
+  const isPercentMode = rateUp?.mode === 'percent'
+
+  if (!isPercentMode) {
+    const multiplier = Math.max(Number(rateUp?.multiplier) || 1, 0)
+    if (multiplier === 1) return { items, groups }
+    const boostedItems = items.map((item) =>
+      itemIdSet.has(item.id)
+        ? { ...item, weight: Math.max(Number(item.weight) || 0, 0) * multiplier }
+        : item,
+    )
+    const boostedGroups = groups.map((g) =>
+      groupNameSet.has(g.name)
+        ? { ...g, weight: Math.max(Number(g.weight) || 0, 0) * multiplier }
+        : g,
+    )
+    return { items: boostedItems, groups: boostedGroups }
+  }
+
+  // Any subgroup that contains an individually selected item is implicitly
+  // treated as a selected bucket too, so its weight can be lifted enough for
+  // that item to actually reach the target share.
+  const impliedGroupNames = new Set(groupNames)
+  for (const item of items) {
+    const gname = item.group?.trim()
+    if (itemIdSet.has(item.id) && gname && groupByName.has(gname)) {
+      impliedGroupNames.add(gname)
+    }
+  }
+  const standaloneSelectedWeight = items
+    .filter((item) => itemIdSet.has(item.id) && !groupByName.has(item.group?.trim()))
+    .reduce((sum, item) => sum + Math.max(Number(item.weight) || 0, 0), 0)
+  const selectedGroupWeight = Array.from(impliedGroupNames).reduce(
+    (sum, name) => sum + Math.max(Number(groupByName.get(name)?.weight) || 0, 0),
+    0,
   )
+  const selectedWeight = standaloneSelectedWeight + selectedGroupWeight
+
+  const targetFraction = Math.min(Math.max(Number(rateUp?.percent) || 0, 0), 99.9999) / 100
+  const totalWeight = getTotalBucketWeight(items, groups)
+  const otherWeight = totalWeight - selectedWeight
+  let multiplier = 1
+  if (selectedWeight > 0 && targetFraction > 0 && otherWeight > 0) {
+    const targetSelectedWeight = (targetFraction / (1 - targetFraction)) * otherWeight
+    multiplier = targetSelectedWeight / selectedWeight
+  }
+  // Large enough to dominate any realistic sibling weight sum within a group.
+  const dominanceFactor = 1e6
+
+  const boostedItems = items.map((item) => {
+    if (!itemIdSet.has(item.id)) return item
+    const gname = item.group?.trim()
+    const factor = gname && groupByName.has(gname) ? dominanceFactor : multiplier
+    return { ...item, weight: Math.max(Number(item.weight) || 0, 0) * factor }
+  })
   const boostedGroups = groups.map((g) =>
-    groupNameSet.has(g.name)
+    impliedGroupNames.has(g.name)
       ? { ...g, weight: Math.max(Number(g.weight) || 0, 0) * multiplier }
       : g,
   )

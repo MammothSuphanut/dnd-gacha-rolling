@@ -23,5 +23,21 @@ export function validateGachaData(data) {
     })
   }
 
+  if (data.shops !== undefined && !Array.isArray(data.shops)) {
+    errors.push('ฟิลด์ shops ต้องเป็น array')
+  } else if (Array.isArray(data.shops)) {
+    data.shops.forEach((shop, index) => {
+      if (!shop || typeof shop !== 'object') {
+        errors.push(`ร้านค้าลำดับที่ ${index + 1} ไม่ถูกต้อง`)
+        return
+      }
+      if (!shop.id) errors.push(`ร้านค้าลำดับที่ ${index + 1} ไม่มี id`)
+      if (!shop.name) errors.push(`ร้านค้าลำดับที่ ${index + 1} ไม่มี name`)
+      if (!Array.isArray(shop.items)) {
+        errors.push(`ร้านค้า "${shop.name ?? index + 1}" ไม่มี items เป็น array`)
+      }
+    })
+  }
+
   return { valid: errors.length === 0, errors }
 }

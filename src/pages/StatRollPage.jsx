@@ -13,9 +13,8 @@ function rollDie(sides) {
   return Math.floor(Math.random() * sides) + 1
 }
 
-function rollDiceDropLowest(diceCount, diceSides, dropCount) {
-  const rolls = Array.from({ length: diceCount }, () => rollDie(diceSides))
-  const drops = Math.min(Math.max(dropCount, 0), diceCount - 1)
+function buildRollResult(rolls, dropCount) {
+  const drops = Math.min(Math.max(dropCount, 0), rolls.length - 1)
   const order = rolls.map((_, i) => i).sort((a, b) => rolls[a] - rolls[b])
   const dropIndices = new Set(order.slice(0, drops))
   const total = rolls.reduce((sum, v, i) => (dropIndices.has(i) ? sum : sum + v), 0)
@@ -44,10 +43,16 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
     diceCount = DEFAULT_DICE_COUNT,
     diceSides = DEFAULT_DICE_SIDES,
     dropCount = DEFAULT_DROP_COUNT,
+    fixedFaces = {},
+    fixedFacesEnabled = false,
   } = statRollState
 
   function setMinTotal(value) {
     setStatRollState((prev) => ({ ...prev, minTotal: value }))
+  }
+
+  function setFixedFacesEnabled(value) {
+    setStatRollState((prev) => ({ ...prev, fixedFacesEnabled: value }))
   }
 
   function setMaxTotal(value) {
@@ -64,6 +69,25 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
 
   function setDropCount(value) {
     setStatRollState((prev) => ({ ...prev, dropCount: value }))
+  }
+
+  function setFixedFace(resultIdx, diceIdx, value) {
+    setStatRollState((prev) => {
+      const prevFaces = prev.fixedFaces ?? {}
+      const prevRow = prevFaces[resultIdx] ?? []
+      const nextRow = [...prevRow]
+      nextRow[diceIdx] = value
+      return { ...prev, fixedFaces: { ...prevFaces, [resultIdx]: nextRow } }
+    })
+  }
+
+  function clearFixedRow(resultIdx) {
+    setStatRollState((prev) => {
+      const prevFaces = prev.fixedFaces ?? {}
+      const nextFaces = { ...prevFaces }
+      delete nextFaces[resultIdx]
+      return { ...prev, fixedFaces: nextFaces }
+    })
   }
 
   function setResults(updater) {
@@ -100,12 +124,30 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
       return 0
     }
 
+    function fixedFaceValue(idx, diceIdx) {
+      if (!fixedFacesEnabled) return null
+      const raw = fixedFaces[idx]?.[diceIdx]
+      const v = Number(raw)
+      if (raw === undefined || raw === '' || !Number.isFinite(v) || v < 1 || v > sides) {
+        return null
+      }
+      return v
+    }
+
+    function rollResultForIndex(idx) {
+      const rolls = Array.from({ length: count }, (_, diceIdx) => {
+        const fixed = fixedFaceValue(idx, diceIdx)
+        return fixed !== null ? fixed : rollDie(sides)
+      })
+      return buildRollResult(rolls, drop)
+    }
+
     let best = null
     let bestDistance = Infinity
     let guard = 0
     let dist
     do {
-      const next = Array.from({ length: 6 }, () => rollDiceDropLowest(count, sides, drop))
+      const next = Array.from({ length: 6 }, (_, idx) => rollResultForIndex(idx))
       const sum = next.reduce((s, r) => s + r.total, 0)
       dist = distanceFromRange(sum)
       if (dist < bestDistance) {
@@ -119,6 +161,27 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
     setBonuses({})
   }
 
+  function handleReset() {
+    setStatRollState({
+      results: [],
+      assignments: {},
+      bonuses: {},
+      minTotal: DEFAULT_MIN_TOTAL,
+      maxTotal: '',
+      diceCount: DEFAULT_DICE_COUNT,
+      diceSides: DEFAULT_DICE_SIDES,
+      dropCount: DEFAULT_DROP_COUNT,
+      fixedFaces: {},
+      fixedFacesEnabled: false,
+    })
+  }
+
+  function adjustResultTotal(resultId, delta) {
+    setResults((prev) =>
+      prev.map((r) => (r.id === resultId ? { ...r, total: Math.max(0, r.total + delta) } : r)),
+    )
+  }
+
   function assignStat(statKey, resultId) {
     setAssignments((prev) => {
       const next = { ...prev }
@@ -126,8 +189,16 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
         delete next[statKey]
         return next
       }
-      for (const key of Object.keys(next)) {
-        if (next[key] === resultId) delete next[key]
+      const previousResultId = next[statKey]
+      const otherStatKey = Object.keys(next).find(
+        (key) => key !== statKey && next[key] === resultId,
+      )
+      if (otherStatKey) {
+        if (previousResultId) {
+          next[otherStatKey] = previousResultId
+        } else {
+          delete next[otherStatKey]
+        }
       }
       next[statKey] = resultId
       return next
@@ -150,6 +221,8 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
   const assignedResultIds = new Set(Object.values(assignments))
   const resultById = new Map(results.map((r) => [r.id, r]))
   const resultsSum = results.reduce((sum, r) => sum + r.total, 0)
+  const resultIndexById = new Map(results.map((r, idx) => [r.id, idx]))
+  const sortedResults = [...results].sort((a, b) => b.total - a.total)
 
   function finalScore(statKey) {
     const resultId = assignments[statKey]
@@ -175,6 +248,13 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
           className="rounded-lg bg-purple-600 py-3 px-6 text-lg font-bold text-white transition hover:bg-purple-700 md:px-8"
         >
           {results.length === 0 ? 'สุ่มเลย!' : 'สุ่มใหม่'}
+        </button>
+        <button
+          type="button"
+          onClick={handleReset}
+          className="rounded-lg border border-gray-300 bg-white py-3 px-6 text-sm font-semibold text-gray-600 transition hover:bg-gray-100"
+        >
+          รีเซ็ต
         </button>
         <label className="flex items-center gap-2 text-sm text-gray-600">
           จำนวนลูกเต๋า
@@ -227,6 +307,58 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
         </label>
       </div>
 
+      <div className="mb-8">
+        <div className="mb-2 flex items-center gap-2">
+          <label className="flex items-center gap-2 text-sm font-semibold text-gray-500">
+            <input
+              type="checkbox"
+              checked={fixedFacesEnabled}
+              onChange={(e) => setFixedFacesEnabled(e.target.checked)}
+            />
+            กำหนดหน้าเต๋า (ใส่เฉพาะช่องที่ต้องการบังคับ ช่องที่เว้นว่างจะสุ่มตามปกติ)
+          </label>
+        </div>
+        {fixedFacesEnabled && (
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
+            {Array.from({ length: 6 }, (_, idx) => idx).map((idx) => {
+              const row = fixedFaces[idx] ?? []
+              const count = Math.max(1, Number(diceCount) || DEFAULT_DICE_COUNT)
+              const hasValues = row.some((v) => v !== undefined && v !== '')
+              return (
+                <div key={idx} className="rounded-lg border border-gray-200 bg-white p-3 text-center">
+                  <div className="flex items-center justify-between">
+                    <div className="text-xs text-gray-400">ครั้งที่ {idx + 1}</div>
+                    {hasValues && (
+                      <button
+                        type="button"
+                        onClick={() => clearFixedRow(idx)}
+                        className="flex h-4 w-4 items-center justify-center rounded-full text-xs leading-none text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+                        title="ล้างค่า"
+                      >
+                        ×
+                      </button>
+                    )}
+                  </div>
+                  <div className="mt-1 flex flex-wrap justify-center gap-1">
+                    {Array.from({ length: count }, (_, diceIdx) => (
+                      <input
+                        key={diceIdx}
+                        type="number"
+                        min="1"
+                        max={diceSides}
+                        value={row[diceIdx] ?? ''}
+                        onChange={(e) => setFixedFace(idx, diceIdx, e.target.value)}
+                        className="h-6 w-6 rounded border border-gray-300 p-0 text-center text-xs"
+                      />
+                    ))}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        )}
+      </div>
+
       {results.length > 0 && (
         <>
           <div className="mt-8">
@@ -261,7 +393,23 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                         </span>
                       ))}
                     </div>
-                    <div className="mt-2 text-xl font-bold text-gray-900">{r.total}</div>
+                    <div className="mt-2 flex items-center justify-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => adjustResultTotal(r.id, -1)}
+                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-gray-600 hover:bg-gray-100"
+                      >
+                        −
+                      </button>
+                      <div className="w-8 text-xl font-bold text-gray-900">{r.total}</div>
+                      <button
+                        type="button"
+                        onClick={() => adjustResultTotal(r.id, 1)}
+                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-gray-600 hover:bg-gray-100"
+                      >
+                        +
+                      </button>
+                    </div>
                   </div>
                 )
               })}
@@ -320,13 +468,13 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                       className="w-full rounded-md border border-gray-300 px-2 py-1 text-sm"
                     >
                       <option value="">-</option>
-                      {results.map((r, idx) => (
+                      {sortedResults.map((r) => (
                         <option
                           key={r.id}
                           value={r.id}
                           disabled={assignedResultIds.has(r.id) && assignedId !== r.id}
                         >
-                          ครั้งที่ {idx + 1} ({r.total})
+                          ครั้งที่ {resultIndexById.get(r.id) + 1} ({r.total})
                         </option>
                       ))}
                     </select>
