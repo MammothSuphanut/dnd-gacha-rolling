@@ -98,7 +98,7 @@ function ShopFormModal({ open, onClose, shop, onSubmit }) {
     <Modal open={open} onClose={onClose} title={shop ? 'แก้ไขร้านค้า' : 'เพิ่มร้านค้า'}>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div>
-          <label className="block text-sm font-medium text-gray-700">ชื่อร้านค้า</label>
+          <label className="block text-sm font-medium text-stone-700">ชื่อร้านค้า</label>
           <input
             value={form.name}
             onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
@@ -110,7 +110,7 @@ function ShopFormModal({ open, onClose, shop, onSubmit }) {
         </div>
         <div className="grid grid-cols-2 gap-3">
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-stone-700">
               <Tip text={HARD_SELL_TOOLTIP}>
                 <span className="cursor-help underline decoration-dotted">Hard Sell (ต่อวัน)</span>
               </Tip>
@@ -123,7 +123,7 @@ function ShopFormModal({ open, onClose, shop, onSubmit }) {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-stone-700">
               <Tip text={SELLING_CAP_TOOLTIP}>
                 <span className="cursor-help underline decoration-dotted">Selling Cap (ต่อวัน)</span>
               </Tip>
@@ -137,7 +137,7 @@ function ShopFormModal({ open, onClose, shop, onSubmit }) {
           </div>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700">รายละเอียด / กติกาเพิ่มเติม</label>
+          <label className="block text-sm font-medium text-stone-700">รายละเอียด / กติกาเพิ่มเติม</label>
           <textarea
             value={form.notes}
             onChange={(e) => setForm((f) => ({ ...f, notes: e.target.value }))}
@@ -149,13 +149,13 @@ function ShopFormModal({ open, onClose, shop, onSubmit }) {
           <button
             type="button"
             onClick={onClose}
-            className="rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-gray-100"
+            className="rounded-md px-3 py-2 text-sm text-stone-600 hover:bg-[#f5ede0]"
           >
             ยกเลิก
           </button>
           <button
             type="submit"
-            className="rounded-md bg-purple-600 px-3 py-2 text-sm font-medium text-white hover:bg-purple-700"
+            className="rounded-md bg-violet-700 px-3 py-2 text-sm font-medium text-white hover:bg-violet-800"
           >
             บันทึก
           </button>
@@ -258,22 +258,22 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
   }
 
   return (
-    <div className="rounded-lg border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md hover:border-purple-200">
+    <div className="rounded-lg border border-[#e2cfb3] bg-white shadow-sm transition-shadow hover:shadow-md hover:border-violet-200">
       <div className="flex flex-wrap items-center justify-between gap-2 p-4">
         <button
           onClick={onToggleExpand}
-          className="flex flex-1 items-center gap-2 rounded-md p-1 -m-1 text-left transition-colors hover:bg-purple-50/70"
+          className="flex flex-1 items-center gap-2 rounded-md p-1 -m-1 text-left transition-colors hover:bg-violet-50/70"
         >
-          <span className="text-gray-400">{expanded ? '▾' : '▸'}</span>
-          <span className="font-semibold text-gray-900">{shop.name}</span>
-          <span className="text-xs text-gray-400">
+          <span className="text-stone-400">{expanded ? '▾' : '▸'}</span>
+          <span className="font-semibold text-stone-900">{shop.name}</span>
+          <span className="text-xs text-stone-400">
             ({query ? `${visibleItems.length}/${draftItems.length}` : draftItems.length} รายการ)
           </span>
         </button>
         <div className="flex items-center gap-2">
           <button
             onClick={onEdit}
-            className="rounded-md border border-gray-300 px-2 py-1 text-xs text-gray-700 transition-colors hover:bg-gray-100"
+            className="rounded-md border border-gray-300 px-2 py-1 text-xs text-stone-700 transition-colors hover:bg-[#f5ede0]"
           >
             แก้ไขร้าน
           </button>
@@ -287,15 +287,15 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
       </div>
 
       {expanded && (
-        <div className="border-t border-gray-100 p-4">
+        <div className="border-t border-[#e2cfb3] p-4">
           {(shop.hardSell || shop.sellingCap) && (
-            <div className="mb-3 text-sm text-gray-600">
+            <div className="mb-3 text-sm text-stone-600">
               {shop.hardSell && (
                 <div>
                   <Tip text={HARD_SELL_TOOLTIP}>
                     <span className="cursor-help underline decoration-dotted">Hard Sell</span>
                   </Tip>
-                  : <span className="font-medium text-gray-900">{shop.hardSell}</span>
+                  : <span className="font-medium text-stone-900">{shop.hardSell}</span>
                 </div>
               )}
               {shop.sellingCap && (
@@ -303,14 +303,14 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                   <Tip text={SELLING_CAP_TOOLTIP}>
                     <span className="cursor-help underline decoration-dotted">Selling Cap</span>
                   </Tip>
-                  : <span className="font-medium text-gray-900">{shop.sellingCap}</span>
+                  : <span className="font-medium text-stone-900">{shop.sellingCap}</span>
                 </div>
               )}
             </div>
           )}
           {shop.notes && (
-            <details className="mb-3 rounded-md bg-gray-50 p-3 text-sm text-gray-600">
-              <summary className="cursor-pointer font-medium text-gray-700">รายละเอียด / กติกาเพิ่มเติม</summary>
+            <details className="mb-3 rounded-md bg-[#f5ede0] p-3 text-sm text-stone-600">
+              <summary className="cursor-pointer font-medium text-stone-700">รายละเอียด / กติกาเพิ่มเติม</summary>
               <p className="mt-2 whitespace-pre-line">{shop.notes}</p>
             </details>
           )}
@@ -321,8 +321,8 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
               onClick={toggleItemEditMode}
               className={`rounded-md border px-3 py-1.5 text-xs font-medium ${
                 itemEditMode
-                  ? 'border-purple-300 bg-purple-50 text-purple-700 hover:bg-purple-100'
-                  : 'border-gray-300 text-gray-700 hover:bg-gray-100'
+                  ? 'border-violet-300 bg-violet-50 text-violet-700 hover:bg-violet-100'
+                  : 'border-gray-300 text-stone-700 hover:bg-[#f5ede0]'
               }`}
             >
               {itemEditMode ? '✓ กำลังแก้ไขรายการ (กดเพื่อดูอย่างเดียว)' : '✎ โหมดแก้ไขรายการ'}
@@ -330,14 +330,14 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
           </div>
 
           {visibleItems.length === 0 ? (
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-stone-400">
               {query || hasActiveFilters ? 'ไม่พบรายการที่ตรงกับคำค้นหา/ตัวกรองในร้านนี้' : 'ยังไม่มีรายการในร้านนี้'}
             </p>
           ) : itemEditMode ? (
             <div className="overflow-x-auto">
               <table className="w-full min-w-[900px] border-collapse text-sm">
                 <thead>
-                  <tr className="border-b border-gray-200 text-left text-xs text-gray-500">
+                  <tr className="border-b border-[#e2cfb3] text-left text-xs text-stone-500">
                     <th className="py-2 pr-2">ชื่อรายการ</th>
                     <th className="py-2 pr-2">หมวดหลัก</th>
                     <th className="py-2 pr-2">หมวดรอง</th>
@@ -357,7 +357,7 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                   {visibleItems.map((item) => (
                     <tr
                       key={item.id}
-                      className="border-b border-gray-100 align-top transition-colors hover:bg-gray-50"
+                      className="border-b border-[#e2cfb3] align-top transition-colors hover:bg-[#f5ede0]"
                     >
                       <td className="py-1.5 pr-2">
                         <input
@@ -454,7 +454,7 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
             <div className="overflow-x-auto">
               <table className="w-full min-w-[860px] border-collapse text-sm">
                 <thead>
-                  <tr className="border-b border-gray-200 text-left text-xs text-gray-500">
+                  <tr className="border-b border-[#e2cfb3] text-left text-xs text-stone-500">
                     <th className="py-2 pr-2">ชื่อรายการ</th>
                     <th className="py-2 pr-2">หมวดหลัก</th>
                     <th className="py-2 pr-2">หมวดรอง</th>
@@ -475,9 +475,9 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                     return (
                       <tr
                         key={item.id}
-                        className="border-b border-gray-100 align-top transition-colors hover:bg-purple-50/50"
+                        className="border-b border-[#e2cfb3] align-top transition-colors hover:bg-violet-50/50"
                       >
-                        <td className="py-2 pr-2 font-medium text-gray-900">
+                        <td className="py-2 pr-2 font-medium text-stone-900">
                           {item.note ? (
                             <Tip text={item.note} tooltipClassName="max-w-[260px]">
                               <span className="cursor-help underline decoration-dotted">{item.name}</span>
@@ -486,11 +486,11 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                             item.name
                           )}
                         </td>
-                        <td className="py-2 pr-2 text-gray-600">{item.category}</td>
-                        <td className="py-2 pr-2 text-gray-600">{item.subCategory}</td>
+                        <td className="py-2 pr-2 text-stone-600">{item.category}</td>
+                        <td className="py-2 pr-2 text-stone-600">{item.subCategory}</td>
                         <td className="py-2 pr-2">
                           {available.length === 0 ? (
-                            <span className="text-xs text-gray-400">ไม่มีราคา</span>
+                            <span className="text-xs text-stone-400">ไม่มีราคา</span>
                           ) : (
                             <div className="flex flex-col gap-1">
                               {available.map((p) => (
@@ -503,8 +503,8 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                                       setSelectedPriceType((prev) => ({ ...prev, [item.id]: p.type }))
                                     }
                                   />
-                                  <span className="text-gray-500">{p.label}:</span>
-                                  <span className="font-medium text-gray-900">{item[p.field]}</span>
+                                  <span className="text-stone-500">{p.label}:</span>
+                                  <span className="font-medium text-stone-900">{item[p.field]}</span>
                                 </label>
                               ))}
                             </div>
@@ -514,7 +514,7 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                           <div className="flex flex-wrap gap-1">
                             {TAG_LABELS.filter((tag) => item[tag.key]).map((tag) => (
                               <Tip key={tag.key} text={tag.tooltip}>
-                                <span className="cursor-help rounded-full bg-gray-100 px-2 py-0.5 text-[11px] text-gray-600">
+                                <span className="cursor-help rounded-full bg-[#f5ede0] px-2 py-0.5 text-[11px] text-stone-600">
                                   {tag.label}
                                 </span>
                               </Tip>
@@ -535,7 +535,7 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                             type="button"
                             disabled={available.length === 0}
                             onClick={() => handleAddToCart(item)}
-                            className="rounded-md bg-purple-600 px-2.5 py-1 text-xs font-medium text-white hover:bg-purple-700 disabled:cursor-not-allowed disabled:bg-gray-300"
+                            className="rounded-md bg-violet-700 px-2.5 py-1 text-xs font-medium text-white hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-gray-300"
                           >
                             + ใส่ตระกร้า
                           </button>
@@ -553,7 +553,7 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
               <button
                 type="button"
                 onClick={addDraftItem}
-                className="rounded-md bg-purple-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-purple-700"
+                className="rounded-md bg-violet-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-violet-800"
               >
                 + เพิ่มรายการ
               </button>
@@ -562,7 +562,7 @@ function ShopCard({ shop, expanded, onToggleExpand, onEdit, onDelete, query, fil
                   <button
                     type="button"
                     onClick={handleCancel}
-                    className="rounded-md px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100"
+                    className="rounded-md px-3 py-1.5 text-sm text-stone-600 hover:bg-[#f5ede0]"
                   >
                     ยกเลิกการแก้ไข
                   </button>
@@ -642,7 +642,7 @@ function DiscountInput({ discount, onChange, className = '' }) {
                 placeholder="0"
                 className="w-14 rounded-md border border-gray-300 px-1.5 py-1 text-sm"
               />
-              <span className="mt-0.5 text-[10px] text-gray-400">{unit}</span>
+              <span className="mt-0.5 text-[10px] text-stone-400">{unit}</span>
             </div>
           ))}
         </div>
@@ -711,17 +711,17 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
         className="flex max-h-[90vh] w-full max-w-3xl flex-col rounded-lg bg-white shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between border-b border-gray-100 p-4">
-          <h2 className="text-lg font-semibold text-gray-900">ตระกร้าสินค้า</h2>
+        <div className="flex items-center justify-between border-b border-[#e2cfb3] p-4">
+          <h2 className="text-lg font-semibold text-stone-900">ตระกร้าสินค้า</h2>
           <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={onGoToRoll}
-              className="rounded-md border border-purple-300 px-3 py-1.5 text-sm font-medium text-purple-700 hover:bg-purple-50"
+              className="rounded-md border border-violet-300 px-3 py-1.5 text-sm font-medium text-violet-700 hover:bg-violet-50"
             >
               ไปหน้าสุ่ม
             </button>
-            <button onClick={onClose} className="text-gray-400 hover:text-gray-600">
+            <button onClick={onClose} className="text-stone-400 hover:text-stone-600">
               ✕
             </button>
           </div>
@@ -729,15 +729,15 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
 
         <div className="flex-1 overflow-y-auto p-4">
           {groups.length === 0 ? (
-            <p className="text-sm text-gray-400">ตระกร้ายังว่างเปล่า กด "+ ใส่ตระกร้า" จากหน้ารายการร้านค้า</p>
+            <p className="text-sm text-stone-400">ตระกร้ายังว่างเปล่า กด "+ ใส่ตระกร้า" จากหน้ารายการร้านค้า</p>
           ) : (
             <div className="space-y-4">
               {groups.map((group) => (
-                <div key={group.shopId} className="rounded-lg border border-gray-200 p-3">
-                  <div className="mb-2 font-semibold text-gray-900">{group.shopName}</div>
+                <div key={group.shopId} className="rounded-lg border border-[#e2cfb3] p-3">
+                  <div className="mb-2 font-semibold text-stone-900">{group.shopName}</div>
                   <table className="w-full border-collapse text-sm">
                     <thead>
-                      <tr className="text-xs text-gray-400">
+                      <tr className="text-xs text-stone-400">
                         <th className="pb-1 pr-2 text-left font-normal">รายการ</th>
                         <th className="pb-1 pr-2 text-right font-normal">ราคา/ชิ้น</th>
                         <th className="pb-1 pr-2 text-center font-normal">จำนวน</th>
@@ -747,12 +747,12 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
                     </thead>
                     <tbody>
                       {group.items.map((item) => (
-                        <tr key={item.cartId} className="border-b border-gray-100">
+                        <tr key={item.cartId} className="border-b border-[#e2cfb3]">
                           <td className="py-1.5 pr-2">
                             <div className="font-medium text-gray-800">{item.itemName}</div>
-                            <div className="text-xs text-gray-400">{item.priceLabel}</div>
+                            <div className="text-xs text-stone-400">{item.priceLabel}</div>
                           </td>
-                          <td className="py-1.5 pr-2 text-right whitespace-nowrap text-gray-700">
+                          <td className="py-1.5 pr-2 text-right whitespace-nowrap text-stone-700">
                             {item.priceText}
                             {item.priceCp == null && (
                               <span className="ml-1 text-[11px] text-amber-500">(คำนวณราคารวมไม่ได้)</span>
@@ -763,7 +763,7 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
                               <button
                                 type="button"
                                 onClick={() => bumpCartItemQty(item.cartId, -1)}
-                                className="h-6 w-6 rounded-md border border-gray-300 text-xs text-gray-600 hover:bg-gray-100"
+                                className="h-6 w-6 rounded-md border border-gray-300 text-xs text-stone-600 hover:bg-[#f5ede0]"
                               >
                                 −
                               </button>
@@ -777,13 +777,13 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
                               <button
                                 type="button"
                                 onClick={() => bumpCartItemQty(item.cartId, 1)}
-                                className="h-6 w-6 rounded-md border border-gray-300 text-xs text-gray-600 hover:bg-gray-100"
+                                className="h-6 w-6 rounded-md border border-gray-300 text-xs text-stone-600 hover:bg-[#f5ede0]"
                               >
                                 +
                               </button>
                             </div>
                           </td>
-                          <td className="py-1.5 pr-2 text-right whitespace-nowrap text-gray-700">
+                          <td className="py-1.5 pr-2 text-right whitespace-nowrap text-stone-700">
                             {item.priceCp != null ? formatCopper(item.priceCp * item.qty) : '-'}
                           </td>
                           <td className="py-1.5 pl-2 text-right">
@@ -802,7 +802,7 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
 
                   <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
                     <div>
-                      <label className="block text-xs font-medium text-gray-500">ส่วนลด</label>
+                      <label className="block text-xs font-medium text-stone-500">ส่วนลด</label>
                       <DiscountInput
                         discount={group.discount}
                         onChange={(discount) => setShopDiscount(group.shopId, discount)}
@@ -810,8 +810,8 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
                       />
                     </div>
                     <div className="text-right text-sm">
-                      <div className="text-gray-500">ยอดรวมร้านนี้: {formatCopper(group.subtotalCp)}</div>
-                      <div className="font-semibold text-gray-900">
+                      <div className="text-stone-500">ยอดรวมร้านนี้: {formatCopper(group.subtotalCp)}</div>
+                      <div className="font-semibold text-stone-900">
                         หลังหักส่วนลด: {formatCopper(group.totalCp)}
                       </div>
                     </div>
@@ -822,10 +822,10 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
           )}
         </div>
 
-        <div className="border-t border-gray-100 p-4">
+        <div className="border-t border-[#e2cfb3] p-4">
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <div>
-              <label className="block text-xs font-medium text-gray-500">ส่วนลดรวมทุกร้าน</label>
+              <label className="block text-xs font-medium text-stone-500">ส่วนลดรวมทุกร้าน</label>
               <DiscountInput discount={cartState.overallDiscount} onChange={setOverallDiscount} className="mt-1" />
             </div>
           </div>
@@ -835,13 +835,13 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
               type="button"
               onClick={clearCart}
               disabled={cartState.items.length === 0}
-              className="rounded-md border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:cursor-not-allowed disabled:border-gray-200 disabled:text-gray-300"
+              className="rounded-md border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:cursor-not-allowed disabled:border-[#e2cfb3] disabled:text-gray-300"
             >
               ล้างตระกร้า
             </button>
             <div className="text-right">
-              <div className="text-sm text-gray-500">รวมทุกร้าน (หลังหักส่วนลดร้าน): {formatCopper(grandSubtotalCp)}</div>
-              <div className="text-lg font-bold text-purple-700">
+              <div className="text-sm text-stone-500">รวมทุกร้าน (หลังหักส่วนลดร้าน): {formatCopper(grandSubtotalCp)}</div>
+              <div className="text-lg font-bold text-violet-700">
                 ยอดสุทธิ: {formatCopper(grandTotalCp)}
               </div>
             </div>
@@ -1022,15 +1022,15 @@ export default function ShopPage({ cartState, setCartState }) {
     <div className="mx-auto max-w-5xl p-4 md:p-8">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">ร้านค้า</h1>
-          <p className="text-sm text-gray-500">
+          <h1 className="text-2xl font-bold text-stone-900">ร้านค้า</h1>
+          <p className="text-sm text-stone-500">
             {shops.length} ร้านค้า · {totalItems} รายการทั้งหมด
           </p>
         </div>
         <div className="flex items-center gap-2">
           <button
             onClick={() => setShopForm({ mode: 'create' })}
-            className="rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white hover:bg-purple-700"
+            className="rounded-md bg-violet-700 px-4 py-2 text-sm font-medium text-white hover:bg-violet-800"
           >
             + เพิ่มร้านค้า
           </button>
@@ -1039,11 +1039,11 @@ export default function ShopPage({ cartState, setCartState }) {
 
       <button
         onClick={() => setCartOpen(true)}
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full border border-purple-300 bg-white px-5 py-3 text-sm font-medium text-purple-700 shadow-lg hover:bg-purple-50"
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full border border-violet-300 bg-white px-5 py-3 text-sm font-medium text-violet-700 shadow-lg hover:bg-violet-50"
       >
         🛒 ตระกร้า
         {cartState.items.length > 0 && (
-          <span className="rounded-full bg-purple-600 px-2 py-0.5 text-xs font-semibold text-white">
+          <span className="rounded-full bg-violet-700 px-2 py-0.5 text-xs font-semibold text-white">
             {cartState.items.length}
           </span>
         )}
@@ -1060,7 +1060,7 @@ export default function ShopPage({ cartState, setCartState }) {
           <select
             value={filterCategory}
             onChange={(e) => setFilterCategory(e.target.value)}
-            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-700"
+            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-stone-700"
           >
             <option value="">หมวดหลัก: ทั้งหมด</option>
             {categoryOptions.map((c) => (
@@ -1072,7 +1072,7 @@ export default function ShopPage({ cartState, setCartState }) {
           <select
             value={filterSubCategory}
             onChange={(e) => setFilterSubCategory(e.target.value)}
-            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-700"
+            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-stone-700"
           >
             <option value="">หมวดรอง: ทั้งหมด</option>
             {subCategoryOptions.map((c) => (
@@ -1084,7 +1084,7 @@ export default function ShopPage({ cartState, setCartState }) {
           <select
             value={filterTag}
             onChange={(e) => setFilterTag(e.target.value)}
-            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-700"
+            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-stone-700"
           >
             <option value="">Tag: ทั้งหมด</option>
             {tagOptions.map((tag) => (
@@ -1097,7 +1097,7 @@ export default function ShopPage({ cartState, setCartState }) {
             <button
               type="button"
               onClick={clearFilters}
-              className="rounded-md px-2 py-1.5 text-xs text-gray-500 underline decoration-dotted hover:text-gray-700"
+              className="rounded-md px-2 py-1.5 text-xs text-stone-500 underline decoration-dotted hover:text-stone-700"
             >
               ล้างตัวกรอง
             </button>
@@ -1106,9 +1106,9 @@ export default function ShopPage({ cartState, setCartState }) {
       </div>
 
       {shops.length === 0 ? (
-        <p className="text-sm text-gray-400">ยังไม่มีร้านค้า กด "+ เพิ่มร้านค้า" เพื่อเริ่มต้น</p>
+        <p className="text-sm text-stone-400">ยังไม่มีร้านค้า กด "+ เพิ่มร้านค้า" เพื่อเริ่มต้น</p>
       ) : visibleShops.length === 0 ? (
-        <p className="text-sm text-gray-400">ไม่พบร้านค้าหรือรายการที่ตรงกับคำค้นหา/ตัวกรอง</p>
+        <p className="text-sm text-stone-400">ไม่พบร้านค้าหรือรายการที่ตรงกับคำค้นหา/ตัวกรอง</p>
       ) : (
         <div className="space-y-3">
           {visibleShops.map((shop) => (

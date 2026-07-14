@@ -1,0 +1,842 @@
+[
+  {
+    "id": "box-1f879e02-8b5e-4de8-bc05-4c1179356013",
+    "name": "Standard",
+    "category": "Species",
+    "items": [
+      {
+        "id": "item-618ca1e8-c834-4424-a2d3-3b8bd5a968e9",
+        "name": "Dwarf",
+        "weight": 5.5556,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dwarf_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-c4771f4d-fae3-4a4f-8edb-8a254a567896",
+        "name": "Elf; High Elf Lineage",
+        "weight": 2.7778,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#elf_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-eeb04c09-2a3d-4fbe-881d-986faada1732",
+        "name": "Elf; Wood Elf Lineage",
+        "weight": 2.7778,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#elf_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-43fa3ff9-3abd-469a-b0d8-508a04a38cd4",
+        "name": "Gnome; Forest Gnome Lineage",
+        "weight": 2.7778,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#gnome_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-b66db5d1-946e-4b78-b199-9cbc9b20829a",
+        "name": "Gnome; Rock Gnome Lineage",
+        "weight": 2.7778,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#gnome_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-a4515225-aaec-4e0c-b592-d6b7af77e66b",
+        "name": "Goblin",
+        "weight": 5.5556,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#goblin_mpmm",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-78b49d81-2e81-40a6-9fee-0a317a737fdb",
+        "name": "Halfling",
+        "weight": 5.5556,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#halfling_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-e0d7e5c8-98c4-421b-96f9-e7cc0e00f7ca",
+        "name": "Human",
+        "weight": 5.5556,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#human_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-0a1e781d-4360-4d2a-b500-8dbe9a7c0ce3",
+        "name": "Kobold; Craftiness",
+        "weight": 1.8519,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#kobold_mpmm",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-fde7a1a9-8196-4d71-a972-f141b36c5877",
+        "name": "Kobold; Defiance",
+        "weight": 1.8519,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#kobold_mpmm",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-234e20d6-b3f5-4cac-ae0c-e3584d93fc8c",
+        "name": "Kobold; Draconic Sorcery",
+        "weight": 1.8519,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#kobold_mpmm",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-d0dca086-83f6-4ec0-93f8-d83a018825d8",
+        "name": "Orc",
+        "weight": 5.5556,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#orc_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-40bb96fb-1c0e-4eb7-912d-0c2aa49b37b7",
+        "name": "Mousefolk (Mouseling)",
+        "weight": 2.7778,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#mousefolk_vss",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-73d86a0b-3ca6-440c-88f0-787aa62df859",
+        "name": "Mousefolk (Ratling)",
+        "weight": 2.7778,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#mousefolk_vss",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-3ba3381f-e0f6-43ca-b87d-d97547b892a1",
+        "name": "Aarakocra",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#aarakocra_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-797ebf3c-cc5c-47f4-9657-083b9bc2effa",
+        "name": "Bugbear",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#bugbear_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-19f633e8-f94f-405a-99cf-1b10460f9398",
+        "name": "Centaur",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#centaur_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-6d54e4dd-02fb-420c-8ca9-66e6eabbc8a3",
+        "name": "Firbolg",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#firbolg_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-ec46261f-1e35-4297-bf3d-74e7be9a9f46",
+        "name": "Harengon",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#harengon_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-ade415c5-1d93-4305-a5ea-9814b0435456",
+        "name": "Hobgoblin",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#hobgoblin_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-f5447193-2147-49f5-81c5-2c97df34f58d",
+        "name": "Kenku",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#kenku_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-adab01d9-0060-4702-b203-00c6c8e47cc1",
+        "name": "Lizardfolk",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#lizardfolk_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-71e4ae56-1329-478c-bdfa-c3ebad5b180b",
+        "name": "Minotaur",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#minotaur_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-96538418-f794-482e-a13e-5b9f927992fb",
+        "name": "Tabaxi",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#tabaxi_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-cee35c92-afe8-41bf-8e83-e22dd3d4c8b2",
+        "name": "Tortle",
+        "weight": 2.9167,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#tortle_mpmm",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-b1d8ebb7-3f4a-4f4c-9a61-fbf733d43fa3",
+        "name": "Mandrake (Autumn)",
+        "weight": 0.7292,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#mandrake_vss",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-2508b2d3-2ae7-48f6-af2f-dc0359450820",
+        "name": "Mandrake (Spring)",
+        "weight": 0.7292,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#mandrake_vss",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-171f0e85-9061-4fc5-b6ee-6a0ed397ddb5",
+        "name": "Mandrake (Summer)",
+        "weight": 0.7292,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#mandrake_vss",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-e1b0b6ca-af46-4713-b878-1767a4e9c5f7",
+        "name": "Mandrake (Winter)",
+        "weight": 0.7292,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#mandrake_vss",
+        "group": "The Primal (****)"
+      },
+      {
+        "id": "item-30ce3bcf-4629-482f-be83-486f43f933d8",
+        "name": "Aasimar",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#aasimar_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-9f1abc5f-2f51-4f1a-ae62-ffefd9a6f3a3",
+        "name": "Deep Gnome",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#deep%20gnome_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-64ec244c-53eb-46bc-8130-03d9a4998278",
+        "name": "Duergar",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#duergar_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-c36609a5-d3f4-47f1-b252-765aee6d41ae",
+        "name": "Eladrin",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#eladrin_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-2d0e827d-00e0-4d4c-a358-261abb46b022",
+        "name": "Elf; Drow Lineage",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#elf_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-7610ad1e-440d-463a-a381-a4d50ac9c888",
+        "name": "Fairy",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#fairy_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-dfe1e43a-bb99-4c33-8979-e83098173cfc",
+        "name": "Genasi (Air)",
+        "weight": 0.2,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#genasi%20(air)_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-77a535a7-2f4f-4aa1-8b93-53f6a4194562",
+        "name": "Genasi (Earth)",
+        "weight": 0.2,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#genasi%20(earth)_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-37c46dc3-2ac1-46f1-8f0d-dd397211c48d",
+        "name": "Genasi (Fire)",
+        "weight": 0.2,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#genasi%20(fire)_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-7ad5e035-b05e-420b-802c-a1f8248ceed7",
+        "name": "Genasi (Water)",
+        "weight": 0.2,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#genasi%20(water)_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-db16f3c6-2696-4b07-85c4-c789337a5713",
+        "name": "Goliath; Cloud Giant Ancestry",
+        "weight": 0.1333,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#goliath_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-6f761234-2875-4657-b42d-9fa42fbc34c4",
+        "name": "Goliath; Fire Giant Ancestry",
+        "weight": 0.1333,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#goliath_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-c0030b53-4c60-4dfc-b830-ed748956a0ce",
+        "name": "Goliath; Frost Giant Ancestry",
+        "weight": 0.1333,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#goliath_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-646518de-b071-4449-8320-88029479754d",
+        "name": "Goliath; Hill Giant Ancestry",
+        "weight": 0.1333,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#goliath_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-ab1f3068-6838-4108-a758-d88441ed57a9",
+        "name": "Goliath; Stone Giant Ancestry",
+        "weight": 0.1333,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#goliath_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-59914878-6140-4474-bbac-6c3ea5dce7b8",
+        "name": "Goliath; Storm Giant Ancestry",
+        "weight": 0.1333,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#goliath_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-937efd31-0cc7-47f2-b592-595a8c607757",
+        "name": "Satyr",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#satyr_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-cacea7a5-2144-4e36-a4ce-0cecb7465ff5",
+        "name": "Sea Elf",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#sea%20elf_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-95db7b9e-d1b0-4b2c-8637-960a8c1a72f8",
+        "name": "Shadar-Kai",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#shadar-kai_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-d50f5970-a1e1-4da5-ad47-16c8c3f6ebb6",
+        "name": "Tiefling; Abyssal Legacy",
+        "weight": 0.2667,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#tiefling_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-01f663e9-d41d-4c0a-a858-d63fc5221083",
+        "name": "Tiefling; Chthonic Legacy",
+        "weight": 0.2667,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#tiefling_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-428f3c45-9e2b-4409-b508-db67220c9a3c",
+        "name": "Tiefling; Infernal Legacy",
+        "weight": 0.2667,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#tiefling_xphb",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-7f249746-563d-44f3-b9ae-bfdd7be2d71a",
+        "name": "Triton",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#triton_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-fe9ded55-62f8-4e16-881e-a37d14e11f67",
+        "name": "Yuan-Ti",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#yuan-ti_mpmm",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-d2918f19-a28f-4881-af8d-75faa1a5c6c9",
+        "name": "Spirithost",
+        "weight": 0.8,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#spirithost_vss",
+        "group": "The Planar (*****)"
+      },
+      {
+        "id": "item-54cc4bf9-6f1a-478c-9dbb-ae77d43e9694",
+        "name": "Astral Elf",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#astral%20elf_aag",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-d4420bbf-6620-47a0-9f10-83a92cbc2481",
+        "name": "Autognome",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#autognome_aag",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-4a2d7eb1-989c-433a-ba1f-32fd702d9d80",
+        "name": "Dragonborn (Black)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-bbc77f5d-ddfc-4ac4-83a7-04a3737fe091",
+        "name": "Dragonborn (Blue)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-a96a206f-0fcc-416c-a192-2bd52b88382b",
+        "name": "Dragonborn (Brass)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-a0b7ffa2-c754-4be3-aec4-ad7c33a110fd",
+        "name": "Dragonborn (Bronze)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-40e27236-1ef3-4c1b-81e7-f2ae4fb25547",
+        "name": "Dragonborn (Copper)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-869ec42b-6856-4343-9ad0-34155fd45338",
+        "name": "Dragonborn (Gem; Amethyst)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-43db5951-e5a5-4d0c-9d62-ae9bdc80e4b9",
+        "name": "Dragonborn (Gem; Crystal)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-90df553c-b485-477b-af26-8238c37a39e5",
+        "name": "Dragonborn (Gem; Emerald)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-6427e90a-6ecf-4e79-a4f9-68728ae497b8",
+        "name": "Dragonborn (Gem; Sapphire)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-e4994185-267f-42d8-8fb0-923c38247668",
+        "name": "Dragonborn (Gem; Topaz)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn%20(gem)_ftd",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-4c8ccacd-2f42-4049-a374-15012b1180e5",
+        "name": "Dragonborn (Gold)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-16d93188-46d4-4a89-9bef-c5cbbe55215d",
+        "name": "Dragonborn (Green)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-72f1492f-09e4-4a2f-a616-8c2edb887577",
+        "name": "Dragonborn (Red)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-7da55984-b003-4338-83de-96d351da0286",
+        "name": "Dragonborn (Silver)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-0cb07981-6acf-4b9d-a3d7-e8db1a15a86e",
+        "name": "Dragonborn (White)",
+        "weight": 0.0182,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#dragonborn_xphb",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-43e559f5-ea26-43ba-a294-825105aeb0aa",
+        "name": "Giff",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#giff_aag",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-962feb4d-b48e-4d59-a21f-9b8018dd3bf2",
+        "name": "Githyanki",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#githyanki_mpmm",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-6dad3416-e79f-4ce3-b226-c99453e5eb48",
+        "name": "Githzerai",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#githzerai_mpmm",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-95549a4a-0a92-41a5-9f84-5778827d0412",
+        "name": "Hadozee",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#hadozee_aag",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-a2bb0ced-1311-40f0-bd3b-cf8bb5466d44",
+        "name": "Plasmoid",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#plasmoid_aag",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-cc80f55f-2394-4476-b496-8a91b17995b5",
+        "name": "Thri-kreen",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#thri-kreen_aag",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-7902ed8d-bb2c-4e12-948e-454690d02cda",
+        "name": "Geppettin (Bisque)",
+        "weight": 0.0909,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#geppettin_vss",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-f7414e94-0938-499d-851f-127ea1c456cc",
+        "name": "Geppettin (Marionette)",
+        "weight": 0.0909,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#geppettin_vss",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-5aabda9a-5daa-46e3-823c-2264dfc616af",
+        "name": "Geppettin (Raggedy)",
+        "weight": 0.0909,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#geppettin_vss",
+        "group": "The Astral Apex (******)"
+      },
+      {
+        "id": "item-27a80357-7c76-4872-9f51-e51c89cc65b5",
+        "name": "Near-Human",
+        "weight": 0.2727,
+        "tag": "",
+        "image": "",
+        "note": "",
+        "link": "https://5e.tools/races.html#near-human_vss",
+        "group": "The Astral Apex (******)"
+      }
+    ],
+    "settings": {
+      "defaultNoDuplicateMode": "reroll",
+      "defaultCount": 3
+    },
+    "boxType": "species",
+    "groups": [
+      {
+        "name": "The Foundation (***)",
+        "weight": 49.9999
+      },
+      {
+        "name": "The Primal (****)",
+        "weight": 34.9998
+      },
+      {
+        "name": "The Planar (*****)",
+        "weight": 11.9998
+      },
+      {
+        "name": "The Astral Apex (******)",
+        "weight": 2.9994
+      }
+    ]
+  }
+]

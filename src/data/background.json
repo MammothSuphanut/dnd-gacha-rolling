@@ -1,0 +1,882 @@
+[
+  {
+    "id": "box-5845aef6-5c87-48ec-b6ad-05fb2a6fa31a",
+    "name": "Standard",
+    "category": "Background",
+    "items": [
+      {
+        "id": "item-831194d6-caff-4fae-82c6-42fec09704b6",
+        "name": "Acolyte",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#acolyte_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-4777a40e-b13d-4359-b726-fbe89f50dba8",
+        "name": "Artisan",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#artisan_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-6a7475b2-d498-4a6f-8ba0-e0d8554f77e4",
+        "name": "Charlatan",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#charlatan_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-daa71139-d9cf-40e0-94ac-74bc81861afc",
+        "name": "Criminal",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#criminal_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-1a9f8da1-1d78-435e-bc73-b9e91e7d1554",
+        "name": "Entertainer",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#entertainer_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-9e063d00-d53a-486d-93cf-b990e1e8dca5",
+        "name": "Farmer",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#farmer_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-b283c4f7-b5b7-4577-9089-2ecd5af38b98",
+        "name": "Guard",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#guard_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-63d6b0b4-7414-4478-94fa-be929a79e191",
+        "name": "Guide",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#guide_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-d0dfbe32-8825-475b-a760-b00eac7e9688",
+        "name": "Hermit",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#hermit_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-f36c8ab1-8a67-457f-9146-5088d49b334d",
+        "name": "Merchant",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#failed%20merchant_ai",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-c82e0962-037e-4fee-ba08-3d2aa5b92f75",
+        "name": "Noble",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#noble_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-0d1752af-e7d4-48cf-a88d-5aee0617c162",
+        "name": "Sage",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#sage_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-93dc6b35-e9c6-4034-8f5a-ba54952b5644",
+        "name": "Sailor",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#sailor_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-59cb17d0-f0f2-42da-b985-9f8df1910e38",
+        "name": "Scribe",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#scribe_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-22e2eb16-1796-43df-9b5d-4621e2d8136f",
+        "name": "Soldier",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#soldier_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-3d95d8d0-7149-4ba0-a3de-f318ba4e4229",
+        "name": "Wayfarer",
+        "weight": 3.125,
+        "tag": "",
+        "image": "",
+        "note": "PHB 2024 Origin Line | Source: PHB'24",
+        "link": "https://5e.tools/backgrounds.html#wayfarer_xphb",
+        "group": "The Foundation (***)"
+      },
+      {
+        "id": "item-460d3778-e546-49ec-b7a6-22de2ca5b0f2",
+        "name": "Inquisitive",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#inquisitive_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-f8fd075f-d89d-4520-a393-2b2ff860c2de",
+        "name": "House Vadalis Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20vadalis%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-0110a7b4-363f-48a7-a548-341b012db288",
+        "name": "House Thuranni Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20thuranni%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-91bf59a3-f308-4d7e-9b8e-ef430afa44d3",
+        "name": "House Tharashk Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20tharashk%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-1244841d-9a30-40f1-b19b-7422fbc3aef6",
+        "name": "House Sivis Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20sivis%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-4b5a9e89-5ea7-45f1-ba6d-109a42cdaa4b",
+        "name": "House Phianlan Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20sivis%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-9db51d1f-9be9-4b9b-9f3f-ccd61cf570f4",
+        "name": "House Orien Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20orien%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-c8f2642b-841f-4593-b799-25a22f64fdfe",
+        "name": "House Medani Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20medani%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-7f9999d3-de1c-408f-b5ab-c3b8fc3c16f3",
+        "name": "House Lyrandar Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20lyrandar%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-ab464dc4-205f-4396-84c2-3cffeeaf488e",
+        "name": "House Kundarak Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20kundarak%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-b3490293-4467-48f4-a36b-3601eafc3857",
+        "name": "House Jorasco Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20jorasco%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-ea0f59c0-d1c9-48d9-ab9b-a201c0805edd",
+        "name": "House Ghallanda Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20ghallanda%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-23dd9ea2-6bf5-42f0-a574-820b9806392f",
+        "name": "House Deneith Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20deneith%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-3be58149-a276-44fc-b705-cf533048917c",
+        "name": "House Cannith Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20cannith%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-224cc432-2825-41bb-8449-b77abfa4709b",
+        "name": "House Agent",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#house%20agent_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-16db526f-2a18-4d92-9faf-9b8b678a2664",
+        "name": "Archaeologist",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#archaeologist_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-e3ff13e3-009f-4c06-a92d-c3c40a5424bc",
+        "name": "Aberrant Heir",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Eberron Dragonmarked Heirs | Source: EFA",
+        "link": "https://5e.tools/backgrounds.html#aberrant%20heir_efa",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-da9438b3-7f03-408c-ab30-63431a6ef267",
+        "name": "Zhentarim Mercenary",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#zhentarim%20mercenary_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-dac0fd8c-16d4-4da3-b5bd-d75adfc1022e",
+        "name": "Spellfire Initiate",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#spellfire%20initiate_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-b0d409c4-f637-48b0-9d41-dee6fe020cde",
+        "name": "Shadowmasters Exile",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#shadowmasters%20exile_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-cdfc7d37-55ce-457f-9019-0bde9a2e0178",
+        "name": "Rashemi Wanderer",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#rashemi%20wanderer_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-c0a2e2b5-2771-48a6-b85e-be184ef4c7bb",
+        "name": "Purple Dragon Squire",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#purple%20dragon%20squire_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-a501ec77-dcb3-4494-a355-3d136a96d822",
+        "name": "Mythalkeeper",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#mythalkeeper_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-919f4dea-55ac-43bc-b5aa-24af81aff1df",
+        "name": "Mulhorandi Tomb Raider",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#mulhorandi%20tomb%20raider_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-9b9116cb-e298-4e11-8836-8bdf024c3949",
+        "name": "Moonwell Pilgrim",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#moonwell%20pilgrim_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-6726fb64-45e8-4789-b529-eaaa36f663d7",
+        "name": "Lords' Alliance Vassal",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#lords'%20alliance%20vassal_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-04a22c19-dfbe-484b-9883-7c11ae747038",
+        "name": "Knight of the Gauntlet",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#knight%20of%20the%20gauntlet_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-db79658b-6382-4830-8433-80fee3808e10",
+        "name": "Ice Fisher",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#ice%20fisher_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-97f53362-5a1d-47c7-a2d3-6ea1cb5f7882",
+        "name": "Harper",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#harper_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-34066c77-955e-4c67-900b-a6886ec76f83",
+        "name": "Genie Touched",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#genie%20touched_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-9812356e-034b-44f4-a4ee-48d3c26dd266",
+        "name": "Flaming Fist Mercenary",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#flaming%20fist%20mercenary_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-f8afad47-bc67-4d75-af43-2572c3d5f512",
+        "name": "Emerald Enclave Caretaker",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#emerald%20enclave%20caretaker_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-a754cc0b-49b3-4ee7-ab59-f3a68e7bd046",
+        "name": "Dragon Cultist",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#dragon%20cultist_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-af9d8d6e-473e-44ec-8e6b-9e3cbd02ab1a",
+        "name": "Dead Magic Dweller",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#dead%20magic%20dweller_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-c40fbc49-d6ea-46e0-ac2c-ce91e37ee9c5",
+        "name": "Chondathan Freebooter",
+        "weight": 0.8571,
+        "tag": "",
+        "image": "",
+        "note": "Forgotten Realms Faction War | Source: FRHoF",
+        "link": "https://5e.tools/backgrounds.html#chondathan%20freebooter_frhof",
+        "group": "Faction & City Legacies (****)"
+      },
+      {
+        "id": "item-5aabedbb-d172-4748-a03d-c8d8ae48a378",
+        "name": "Syndicate Smuggler",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#syndicate%20smuggler_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-53bf6e01-eb77-4454-aa8e-ca660e9ee568",
+        "name": "Scion of the Thaumaturge",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#scion%20of%20the%20thaumaturge_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-1e1d0718-cd0d-4338-9abf-27223a7708ed",
+        "name": "Released Thrall",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#released%20thrall_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-6da01199-543f-44b8-8e8b-5e40975b1c15",
+        "name": "Prisoner",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#prisoner_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-15530ae2-9036-4a3c-a6a3-97384b833b93",
+        "name": "Pox-Touched",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#pox-touched_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-e091bfe4-86f1-4ab3-875b-03091278fa48",
+        "name": "Pit Fighter",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#pit%20fighter_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-9da59048-f759-465f-a873-c00f4960d8ef",
+        "name": "Pioneer",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#pioneer_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-807c45b3-3bd1-405e-8a9c-5ef76e74b1c0",
+        "name": "Physician",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#physician_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-8f810943-cca5-4aad-a45c-ef09b5676993",
+        "name": "One of the Taken",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#one%20of%20the%20taken_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-69af0986-45c1-4bba-9eb4-2b9cb4751fd3",
+        "name": "Lapsed Inquisitor",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#lapsed%20inquisitor_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-15ef6d35-fd57-4e26-af89-3677a56b84d0",
+        "name": "Inquisitor of the Faithful",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#inquisitor%20of%20the%20faithful_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-235ad949-a00a-4b70-bd96-87842f7a7be4",
+        "name": "Heretic",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#heretic_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-09010aac-1c60-4709-b7db-1ef5955572ce",
+        "name": "Free Swords Mercenary",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#free%20swords%20mercenary_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-cb8611cc-df64-4978-a7f6-d74df4c87d40",
+        "name": "Fey-Blessed",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#fey-blessed_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-1b272417-4bd9-4e79-b5f1-d607b9c27038",
+        "name": "Exterminator",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#exterminator_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-96532feb-e0cc-47be-9954-60059a5f3a08",
+        "name": "Explorer",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#explorer_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-6cb67ba3-b69d-4114-ada6-6af1d7dbecdf",
+        "name": "Executioner",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#executioner_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-e5310c7c-6ef1-461e-a371-070c436ddde5",
+        "name": "Envoy",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#envoy_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-919c7c5f-8462-48c0-8cbc-0fb58f07834b",
+        "name": "Disgraced Raider",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#disgraced%20raider_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-6f93f0cf-670a-41b2-bb6f-c3d2c6ca88e5",
+        "name": "Courtier (Grim)",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#courtier_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-e95c0f75-9e77-47a3-ab3b-3e47eb5c55d3",
+        "name": "Chapter Knight",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#chapter%20knight_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-ad9351fd-a035-4549-a06a-829a1248477e",
+        "name": "Beggar",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#beggar_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-052deb1a-37f6-4159-a5f3-a6421fe73f9e",
+        "name": "Beast Hunter",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#beast%20hunter_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-06a6eee0-a538-4219-91a5-7372e4c72447",
+        "name": "Antiquarian",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#antiquarian_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-bed4724e-6053-473f-bb1f-c80c0870b4b5",
+        "name": "Agent of Augustine",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: GH:PG'24",
+        "link": "https://5e.tools/backgrounds.html#agent%20of%20augustine_grimhollowpg24",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-29d5cf08-2a47-4400-854a-1d23ba106701",
+        "name": "Vampire Survivor",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: ABH",
+        "link": "https://5e.tools/backgrounds.html#vampire%20survivor_abh",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-7b864d9c-96d0-44c7-a3c2-cf0f77ee47ce",
+        "name": "Vampire Devotee",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: ABH",
+        "link": "https://5e.tools/backgrounds.html#vampire%20devotee_abh",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-93269d35-e4cb-4cc0-8799-315b63b64de3",
+        "name": "Carouser",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Grim Hollow & Cursed Line | Source: ABH",
+        "link": "https://5e.tools/backgrounds.html#carouser_abh",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-63b49812-ca4c-479c-8d62-2281627701c5",
+        "name": "Haunted One",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Ravenloft & Ruined Destinies | Source: RHW",
+        "link": "https://5e.tools/backgrounds.html#haunted%20one_rhw",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-168bbe56-60fd-4622-8d6f-dc8d29edf74b",
+        "name": "Spirit Medium",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Ravenloft & Ruined Destinies | Source: RHW",
+        "link": "https://5e.tools/backgrounds.html#spirit%20medium_rhw",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-366a7427-bab7-4cce-8f2e-4c32a8cdcc14",
+        "name": "Mist Wanderer",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Ravenloft & Ruined Destinies | Source: RHW",
+        "link": "https://5e.tools/backgrounds.html#mist%20wanderer_rhw",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-7b2f3858-a34c-40a5-91c1-86fb1357b9d6",
+        "name": "Investigator",
+        "weight": 0.375,
+        "tag": "",
+        "image": "",
+        "note": "Ravenloft & Ruined Destinies | Source: RHW",
+        "link": "https://5e.tools/backgrounds.html#investigator_rhw",
+        "group": "Grim & Ruined Realms (*****)"
+      },
+      {
+        "id": "item-93cdcf8a-bc93-4cc9-93df-baadf4226004",
+        "name": "Shadowmoor Expert",
+        "weight": 4,
+        "tag": "",
+        "image": "",
+        "note": "Feywild & Exotic Frontiers | Source: LFL",
+        "link": "https://5e.tools/backgrounds.html#shadowmoor%20expert_lfl",
+        "group": "Planar & Cosmic Anomalies (******)"
+      },
+      {
+        "id": "item-9075628c-932e-4481-9a4f-114f4d5bffd6",
+        "name": "Lorwyn Expert",
+        "weight": 4,
+        "tag": "",
+        "image": "",
+        "note": "Feywild & Exotic Frontiers | Source: LFL",
+        "link": "https://5e.tools/backgrounds.html#lorwyn%20expert_lfl",
+        "group": "Planar & Cosmic Anomalies (******)"
+      }
+    ],
+    "settings": {
+      "defaultNoDuplicateMode": "reroll",
+      "defaultCount": 3
+    },
+    "boxType": "background",
+    "groups": [
+      {
+        "name": "The Foundation (***)",
+        "weight": 50
+      },
+      {
+        "name": "Faction & City Legacies (****)",
+        "weight": 29.9985
+      },
+      {
+        "name": "Grim & Ruined Realms (*****)",
+        "weight": 12
+      },
+      {
+        "name": "Planar & Cosmic Anomalies (******)",
+        "weight": 8
+      }
+    ]
+  }
+]
