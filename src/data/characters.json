@@ -12,14 +12,14 @@
     "background": "Farmer",
     "size": "Medium",
     "stats": {
-      "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "cha": 0
+      "str": 16,
+      "dex": 16,
+      "con": 19,
+      "int": 7,
+      "wis": 11,
+      "cha": 14
     },
-    "note": "16",
+    "note": "",
     "hasImage": true,
     "partyTagIds": [
       "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
@@ -32,25 +32,242 @@
         "id": "classlevel-c1db0bef-b634-41b6-b027-c2037b2fb6cd",
         "className": "Paladin",
         "subclassName": "Oath of Glory",
-        "level": 1
+        "level": 2
       }
     ],
-    "images": [],
-    "activeImageId": "",
-    "alignment": "1",
-    "faith": "4",
-    "gender": "7",
-    "eyes": "2",
-    "hair": "5",
-    "skin": "8",
-    "height": "3",
-    "weight": "6",
-    "age": "9",
-    "ideals": "10",
-    "bonds": "11",
-    "flaws": "12",
-    "personalityTraits": "13",
-    "appearance": "14",
-    "biography": "15"
+    "images": [
+      {
+        "id": "img-a48c536c-368f-4023-80d5-9326b6cd2df4",
+        "label": "ร่างหลัก"
+      }
+    ],
+    "activeImageId": "img-a48c536c-368f-4023-80d5-9326b6cd2df4",
+    "alignment": "",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": ""
+  },
+  {
+    "id": "character-ab2bdae7-db42-4d46-8ed6-eb03ccbef188",
+    "name": "Oxton",
+    "ownerId": "user-205a78cf-df8b-4b97-ba2d-afbdd5fca757",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-228e0d68-8d93-4450-854a-95b9bd5d5524",
+        "className": "Warlock",
+        "subclassName": "The Fathomless",
+        "level": 2
+      }
+    ],
+    "species": "Deep Gnome",
+    "background": "Wayfarer",
+    "size": "Small",
+    "stats": {
+      "str": 16,
+      "dex": 16,
+      "con": 18,
+      "int": 10,
+      "wis": 16,
+      "cha": 20
+    },
+    "alignment": "",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [
+      {
+        "id": "img-e04832c9-7dee-49cb-9b95-057957c8c4c0",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-e04832c9-7dee-49cb-9b95-057957c8c4c0"
+  },
+  {
+    "id": "character-69fcda54-74a9-4c00-a01e-8851cde4b0ee",
+    "name": "Lunol",
+    "ownerId": "user-cb3f7729-7f22-4296-9cd1-2e959751b05e",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-0634c2e1-49f9-444f-ac3c-f23c22d3e65c",
+        "className": "Warlock",
+        "subclassName": "Celestial Patron",
+        "level": 2
+      }
+    ],
+    "species": "Shadar-Kai",
+    "background": "Acolyte",
+    "size": "Medium",
+    "stats": {
+      "str": 14,
+      "dex": 14,
+      "con": 16,
+      "int": 10,
+      "wis": 15,
+      "cha": 19
+    },
+    "alignment": "",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [
+      {
+        "id": "img-783ded49-c70f-4154-b3d3-9b8c4a2ca631",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-783ded49-c70f-4154-b3d3-9b8c4a2ca631"
+  },
+  {
+    "id": "character-d178e79b-7e84-4847-8875-769f22a10321",
+    "name": "Xiah",
+    "ownerId": "user-0f2c5824-53b0-4a53-97e6-da3872c0efb1",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-bbac917b-8114-46d3-8465-711fc5614847",
+        "className": "Fighter",
+        "subclassName": "Arcane Archer",
+        "level": 2
+      }
+    ],
+    "species": "Dragonborn (Black)",
+    "background": "Sage",
+    "size": "Medium",
+    "stats": {
+      "str": 10,
+      "dex": 17,
+      "con": 16,
+      "int": 17,
+      "wis": 14,
+      "cha": 13
+    },
+    "alignment": "",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [
+      {
+        "id": "img-fa2e6923-e924-4913-b6a2-d5ba4dedd224",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-fa2e6923-e924-4913-b6a2-d5ba4dedd224"
+  },
+  {
+    "id": "character-b92b1152-b96b-4095-a209-c75dca05109f",
+    "name": "Salem Baskervilles",
+    "ownerId": "user-4ee161b1-9b28-4b17-ae80-b4e64485a7a1",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-466efa64-ba9d-46ed-a790-72cdec4ba433",
+        "className": "Tactician",
+        "subclassName": "Gambler",
+        "level": 2
+      }
+    ],
+    "species": "Elf; High Elf Lineage",
+    "background": "House Agent",
+    "size": "Medium",
+    "stats": {
+      "str": 11,
+      "dex": 12,
+      "con": 16,
+      "int": 18,
+      "wis": 12,
+      "cha": 14
+    },
+    "alignment": "",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [
+      {
+        "id": "img-9d41ad3b-aa0e-4eb8-a63c-7bc5619c9aa0",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-9d41ad3b-aa0e-4eb8-a63c-7bc5619c9aa0"
   }
 ]
