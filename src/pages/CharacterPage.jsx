@@ -27,6 +27,7 @@ const TABS = [
 
 const DEFAULT_COLOR = '#7c3aed'
 const MAX_TOTAL_LEVEL = 20
+const STATUS_OPTIONS = ['Astral Nexus', 'In-Action', 'Hall of Fame']
 
 function blankUser() {
   return { id: createId('user'), username: '', note: '', color: DEFAULT_COLOR }
@@ -48,6 +49,7 @@ function blankCharacter() {
   return {
     id: createId('character'),
     name: '',
+    status: STATUS_OPTIONS[0],
     ownerId: '',
     partyTagIds: [],
     campaignIds: [],
@@ -106,6 +108,7 @@ function normalizeCharacter(raw) {
       ? raw.activeImageId
       : images[0]?.id || ''
 
+  const status = STATUS_OPTIONS.includes(raw.status) ? raw.status : STATUS_OPTIONS[0]
   const alignment = raw.alignment ?? ''
   const faith = raw.faith ?? ''
   const gender = raw.gender ?? ''
@@ -129,6 +132,7 @@ function normalizeCharacter(raw) {
     classLevels,
     images,
     activeImageId,
+    status,
     alignment,
     faith,
     gender,
@@ -149,6 +153,12 @@ function normalizeCharacter(raw) {
 
 function totalLevel(character) {
   return (character.classLevels ?? []).reduce((sum, cl) => sum + (Number(cl.level) || 0), 0)
+}
+
+const STATUS_BADGE_STYLES = {
+  'Astral Nexus': 'bg-sky-100 text-sky-700',
+  'In-Action': 'bg-emerald-100 text-emerald-700',
+  'Hall of Fame': 'bg-amber-100 text-amber-700',
 }
 
 function classSummary(character) {
@@ -978,8 +988,9 @@ function CharacterFormModal({
                   <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
                     {STAT_KEYS.map((s) => {
                       const val = form.stats[s.key]
-                      const num = Number(val)
-                      const formatted = num > 0 ? `+${num}` : `${num}`
+                      const raw = Number(val)
+                      const mod = Math.floor((raw - 10) / 2)
+                      const formatted = mod > 0 ? `+${mod}` : `${mod}`
                       return (
                         <div
                           key={s.key}
@@ -989,6 +1000,7 @@ function CharacterFormModal({
                           <span className="mt-1 font-cinzel text-lg font-bold text-stone-900">
                             {formatted}
                           </span>
+                          <span className="mt-0.5 text-[10px] text-stone-400">{raw}</span>
                         </div>
                       )
                     })}
@@ -1309,6 +1321,21 @@ function CharacterFormModal({
                   {users.map((u) => (
                     <option key={u.id} value={u.id}>
                       {u.username || '(ไม่มีชื่อ)'}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">Status</label>
+                <select
+                  value={form.status}
+                  onChange={(e) => patch({ status: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                >
+                  {STATUS_OPTIONS.map((s) => (
+                    <option key={s} value={s}>
+                      {s}
                     </option>
                   ))}
                 </select>
@@ -1714,6 +1741,7 @@ function CharactersTab({
   const [imageVersions, setImageVersions] = useState({})
 
   const [search, setSearch] = useState('')
+  const [filterStatus, setFilterStatus] = useState('')
   const [filterUserId, setFilterUserId] = useState('')
   const [filterPartyId, setFilterPartyId] = useState('')
   const [filterClass, setFilterClass] = useState('')
@@ -1728,16 +1756,18 @@ function CharactersTab({
     const q = search.trim().toLowerCase()
     return characters.filter((character) => {
       if (q && !character.name?.toLowerCase().includes(q)) return false
+      if (filterStatus && character.status !== filterStatus) return false
       if (filterUserId && character.ownerId !== filterUserId) return false
       if (filterPartyId && !(character.partyTagIds ?? []).includes(filterPartyId)) return false
       if (filterClass && !(character.classLevels ?? []).some((cl) => cl.className === filterClass)) return false
       if (filterCampaignId && !(character.campaignIds ?? []).includes(filterCampaignId)) return false
       return true
     })
-  }, [characters, search, filterUserId, filterPartyId, filterClass, filterCampaignId])
+  }, [characters, search, filterStatus, filterUserId, filterPartyId, filterClass, filterCampaignId])
 
   function resetFilters() {
     setSearch('')
+    setFilterStatus('')
     setFilterUserId('')
     setFilterPartyId('')
     setFilterClass('')
@@ -1781,7 +1811,8 @@ function CharactersTab({
     showToast('ลบตัวละครแล้ว', 'success')
   }
 
-  const hasActiveFilters = search || filterUserId || filterPartyId || filterClass || filterCampaignId
+  const hasActiveFilters =
+    search || filterStatus || filterUserId || filterPartyId || filterClass || filterCampaignId
 
   return (
     <div>
@@ -1795,6 +1826,21 @@ function CharactersTab({
               placeholder="ค้นหาชื่อตัวละคร"
               className="w-48 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-900 placeholder-stone-400 focus:border-violet-400 focus:outline-none"
             />
+          </div>
+          <div>
+            <label className="mb-1 block text-xs text-stone-500">Status</label>
+            <select
+              value={filterStatus}
+              onChange={(e) => setFilterStatus(e.target.value)}
+              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
+            >
+              <option value="">ทั้งหมด</option>
+              {STATUS_OPTIONS.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">User</label>
@@ -1917,6 +1963,15 @@ function CharactersTab({
                     <div className="mt-0.5 truncate text-[10px] sm:text-xs text-stone-500 leading-normal">
                       {summary}
                     </div>
+                  )}
+                  {character.status && (
+                    <span
+                      className={`mt-1 inline-block w-fit truncate rounded-full px-1.5 py-0.5 text-[9px] sm:text-[10px] font-semibold leading-none ${
+                        STATUS_BADGE_STYLES[character.status] || 'bg-stone-100 text-stone-600'
+                      }`}
+                    >
+                      {character.status}
+                    </span>
                   )}
                 </div>
               </button>
