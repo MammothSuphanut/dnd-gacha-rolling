@@ -1,0 +1,56 @@
+[
+  {
+    "id": "character-76899c69-1f99-4795-86dd-2cd4f7e7814c",
+    "name": "Thalric Dawn-Shield",
+    "ownerId": "user-1553dd4c-1904-4b22-8954-934735b780b5",
+    "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
+    "campaignId": "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08",
+    "level": 1,
+    "className": "Paladin",
+    "subclassName": "Oath of Glory",
+    "species": "Dragonborn (Gold)",
+    "background": "Farmer",
+    "size": "Medium",
+    "stats": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "note": "16",
+    "hasImage": true,
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-c1db0bef-b634-41b6-b027-c2037b2fb6cd",
+        "className": "Paladin",
+        "subclassName": "Oath of Glory",
+        "level": 1
+      }
+    ],
+    "images": [],
+    "activeImageId": "",
+    "alignment": "1",
+    "faith": "4",
+    "gender": "7",
+    "eyes": "2",
+    "hair": "5",
+    "skin": "8",
+    "height": "3",
+    "weight": "6",
+    "age": "9",
+    "ideals": "10",
+    "bonds": "11",
+    "flaws": "12",
+    "personalityTraits": "13",
+    "appearance": "14",
+    "biography": "15"
+  }
+]

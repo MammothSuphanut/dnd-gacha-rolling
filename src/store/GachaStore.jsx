@@ -1,22 +1,17 @@
 import { createContext, useContext, useEffect, useReducer } from 'react'
-import sampleData from '../data/sampleData.json'
+import defaultData from '../data/defaultData'
 import { loadFromStorage, saveToStorage } from '../utils/storage'
+import { importImages } from '../utils/exportImport'
 
 const LOCAL_HOSTNAMES = ['localhost', '127.0.0.1']
 
-function isLocalHost() {
+export function isLocalHost() {
   return LOCAL_HOSTNAMES.includes(window.location.hostname)
 }
 
 function getInitialState() {
-  if (!isLocalHost()) {
-    return structuredClone(sampleData)
-  }
-  const stored = loadFromStorage()
-  if (stored && Array.isArray(stored.boxes)) {
-    return { shops: [], ...stored }
-  }
-  return structuredClone(sampleData)
+  importImages(defaultData.images)
+  return structuredClone(defaultData)
 }
 
 function reducer(state, action) {
@@ -26,6 +21,10 @@ function reducer(state, action) {
         version: action.payload.version ?? 1,
         boxes: action.payload.boxes ?? [],
         shops: action.payload.shops ?? [],
+        campaigns: action.payload.campaigns ?? [],
+        users: action.payload.users ?? [],
+        partyTags: action.payload.partyTags ?? [],
+        characters: action.payload.characters ?? [],
       }
     }
     case 'MERGE_ALL': {
@@ -37,10 +36,30 @@ function reducer(state, action) {
       const newShops = (action.payload.shops ?? []).filter(
         (shop) => !existingShopIds.has(shop.id),
       )
+      const existingCampaignIds = new Set((state.campaigns ?? []).map((c) => c.id))
+      const newCampaigns = (action.payload.campaigns ?? []).filter(
+        (c) => !existingCampaignIds.has(c.id),
+      )
+      const existingUserIds = new Set((state.users ?? []).map((u) => u.id))
+      const newUsers = (action.payload.users ?? []).filter(
+        (u) => !existingUserIds.has(u.id),
+      )
+      const existingPartyTagIds = new Set((state.partyTags ?? []).map((t) => t.id))
+      const newPartyTags = (action.payload.partyTags ?? []).filter(
+        (t) => !existingPartyTagIds.has(t.id),
+      )
+      const existingCharacterIds = new Set((state.characters ?? []).map((c) => c.id))
+      const newCharacters = (action.payload.characters ?? []).filter(
+        (c) => !existingCharacterIds.has(c.id),
+      )
       return {
         ...state,
         boxes: [...state.boxes, ...newBoxes],
         shops: [...(state.shops ?? []), ...newShops],
+        campaigns: [...(state.campaigns ?? []), ...newCampaigns],
+        users: [...(state.users ?? []), ...newUsers],
+        partyTags: [...(state.partyTags ?? []), ...newPartyTags],
+        characters: [...(state.characters ?? []), ...newCharacters],
       }
     }
     case 'ADD_BOX': {
@@ -149,6 +168,74 @@ function reducer(state, action) {
             ? { ...shop, items: shop.items.filter((item) => item.id !== action.payload.itemId) }
             : shop,
         ),
+      }
+    }
+    case 'ADD_CAMPAIGN': {
+      return { ...state, campaigns: [...(state.campaigns ?? []), action.payload] }
+    }
+    case 'UPDATE_CAMPAIGN': {
+      return {
+        ...state,
+        campaigns: (state.campaigns ?? []).map((c) =>
+          c.id === action.payload.id ? { ...c, ...action.payload.patch } : c,
+        ),
+      }
+    }
+    case 'DELETE_CAMPAIGN': {
+      return {
+        ...state,
+        campaigns: (state.campaigns ?? []).filter((c) => c.id !== action.payload.id),
+      }
+    }
+    case 'ADD_USER': {
+      return { ...state, users: [...(state.users ?? []), action.payload] }
+    }
+    case 'UPDATE_USER': {
+      return {
+        ...state,
+        users: (state.users ?? []).map((u) =>
+          u.id === action.payload.id ? { ...u, ...action.payload.patch } : u,
+        ),
+      }
+    }
+    case 'DELETE_USER': {
+      return {
+        ...state,
+        users: (state.users ?? []).filter((u) => u.id !== action.payload.id),
+      }
+    }
+    case 'ADD_PARTY_TAG': {
+      return { ...state, partyTags: [...(state.partyTags ?? []), action.payload] }
+    }
+    case 'UPDATE_PARTY_TAG': {
+      return {
+        ...state,
+        partyTags: (state.partyTags ?? []).map((t) =>
+          t.id === action.payload.id ? { ...t, ...action.payload.patch } : t,
+        ),
+      }
+    }
+    case 'DELETE_PARTY_TAG': {
+      return {
+        ...state,
+        partyTags: (state.partyTags ?? []).filter((t) => t.id !== action.payload.id),
+      }
+    }
+    case 'ADD_CHARACTER': {
+      return { ...state, characters: [...(state.characters ?? []), action.payload] }
+    }
+    case 'UPDATE_CHARACTER': {
+      return {
+        ...state,
+        characters: (state.characters ?? []).map((c) =>
+          c.id === action.payload.id ? { ...c, ...action.payload.patch } : c,
+        ),
+      }
+    }
+    case 'DELETE_CHARACTER': {
+      return {
+        ...state,
+        characters: (state.characters ?? []).filter((c) => c.id !== action.payload.id),
       }
     }
     default:

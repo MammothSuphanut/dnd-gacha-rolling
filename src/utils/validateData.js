@@ -23,6 +23,13 @@ export function validateGachaData(data) {
     })
   }
 
+  if (
+    data.images !== undefined &&
+    (typeof data.images !== 'object' || data.images === null || Array.isArray(data.images))
+  ) {
+    errors.push('ฟิลด์ images ต้องเป็น object')
+  }
+
   if (data.shops !== undefined && !Array.isArray(data.shops)) {
     errors.push('ฟิลด์ shops ต้องเป็น array')
   } else if (Array.isArray(data.shops)) {

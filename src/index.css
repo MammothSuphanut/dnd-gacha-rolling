@@ -1,1 +1,79 @@
 @import "tailwindcss";
+
+/* ─── Fonts ─────────────────────────────────────────────── */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #fdf8f0;
+  color: #1c1410;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-cinzel {
+  font-family: "Cinzel", Georgia, serif;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5ede0;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a87c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
+
+/* ─── Animations ────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes rollSpin {
+  0%   { transform: rotate(0deg) scale(1); }
+  40%  { transform: rotate(160deg) scale(1.15); }
+  70%  { transform: rotate(340deg) scale(0.95); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(109, 40, 217, 0.3); }
+  50%       { box-shadow: 0 0 0 8px rgba(109, 40, 217, 0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.35s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease forwards;
+}
+
+.animate-roll-spin {
+  animation: rollSpin 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}

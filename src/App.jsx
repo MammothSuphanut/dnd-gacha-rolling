@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import BoxManagerPage from './pages/BoxManagerPage'
+import CampaignPage from './pages/CampaignPage'
+import CharacterPage from './pages/CharacterPage'
 import RollPage from './pages/RollPage'
 import ShopPage from './pages/ShopPage'
 import { GachaProvider } from './store/GachaStore'
@@ -33,7 +35,7 @@ function App() {
   return (
     <ToastProvider>
       <GachaProvider>
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-[#fdf8f0]">
           <Navbar />
           <Routes>
             <Route path="/" element={<Navigate to="/roll" replace />} />
@@ -56,6 +58,8 @@ function App() {
               path="/shop"
               element={<ShopPage cartState={cartState} setCartState={setCartState} />}
             />
+            <Route path="/campaigns" element={<CampaignPage />} />
+            <Route path="/characters" element={<CharacterPage />} />
           </Routes>
         </div>
       </GachaProvider>

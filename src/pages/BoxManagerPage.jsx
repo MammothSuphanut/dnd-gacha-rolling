@@ -29,7 +29,7 @@ function BoxFormModal({ open, onClose, box, categories, onSubmit }) {
     <Modal open={open} onClose={onClose} title={box ? 'แก้ไขตู้สุ่ม' : 'เพิ่มตู้สุ่ม'}>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div>
-          <label className="block text-sm font-medium text-gray-700">ชื่อตู้สุ่ม</label>
+          <label className="block text-sm font-medium text-stone-700">ชื่อตู้สุ่ม</label>
           <input
             value={form.name}
             onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
@@ -39,7 +39,7 @@ function BoxFormModal({ open, onClose, box, categories, onSubmit }) {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700">หมวดหมู่ (Tag)</label>
+          <label className="block text-sm font-medium text-stone-700">หมวดหมู่ (Tag)</label>
           <input
             value={form.category}
             onChange={(e) => setForm((f) => ({ ...f, category: e.target.value }))}
@@ -54,7 +54,7 @@ function BoxFormModal({ open, onClose, box, categories, onSubmit }) {
           </datalist>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700">โหมดกันซ้ำเริ่มต้น</label>
+          <label className="block text-sm font-medium text-stone-700">โหมดกันซ้ำเริ่มต้น</label>
           <select
             value={form.defaultNoDuplicateMode}
             onChange={(e) => setForm((f) => ({ ...f, defaultNoDuplicateMode: e.target.value }))}
@@ -65,7 +65,7 @@ function BoxFormModal({ open, onClose, box, categories, onSubmit }) {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700">จำนวนสุ่มเริ่มต้น</label>
+          <label className="block text-sm font-medium text-stone-700">จำนวนสุ่มเริ่มต้น</label>
           <input
             type="number"
             min="1"
@@ -78,13 +78,13 @@ function BoxFormModal({ open, onClose, box, categories, onSubmit }) {
           <button
             type="button"
             onClick={onClose}
-            className="rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-gray-100"
+            className="rounded-md px-3 py-2 text-sm text-stone-600 hover:bg-[#f5ede0]"
           >
             ยกเลิก
           </button>
           <button
             type="submit"
-            className="rounded-md bg-purple-600 px-3 py-2 text-sm font-medium text-white hover:bg-purple-700"
+            className="rounded-md bg-violet-700 px-3 py-2 text-sm font-medium text-white hover:bg-violet-800"
           >
             บันทึก
           </button>
@@ -122,14 +122,14 @@ function ImageEditModal({ open, item, onClose, onSave }) {
           <button
             type="button"
             onClick={onClose}
-            className="rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-gray-100"
+            className="rounded-md px-3 py-2 text-sm text-stone-600 hover:bg-[#f5ede0]"
           >
             ยกเลิก
           </button>
           <button
             type="button"
             onClick={() => onSave(image)}
-            className="rounded-md bg-purple-600 px-3 py-2 text-sm font-medium text-white hover:bg-purple-700"
+            className="rounded-md bg-violet-700 px-3 py-2 text-sm font-medium text-white hover:bg-violet-800"
           >
             บันทึก
           </button>
@@ -141,19 +141,19 @@ function ImageEditModal({ open, item, onClose, onSave }) {
 
 function GroupsEditor({ groups, items, totalWeight, onUpdate, onAdd, onRemove }) {
   return (
-    <div className="mb-3 rounded-md border border-gray-200 p-3">
+    <div className="mb-3 rounded-md border border-[#e2cfb3] p-3">
       <div className="mb-2 flex items-center justify-between">
-        <h4 className="text-sm font-semibold text-gray-700">หมวดย่อย (ถ่วงน้ำหนักเป็นกลุ่ม)</h4>
+        <h4 className="text-sm font-semibold text-stone-700">หมวดย่อย (ถ่วงน้ำหนักเป็นกลุ่ม)</h4>
         <button
           type="button"
           onClick={onAdd}
-          className="text-xs font-medium text-purple-600 hover:underline"
+          className="text-xs font-medium text-violet-700 hover:underline"
         >
           + เพิ่มหมวดย่อย
         </button>
       </div>
       {groups.length === 0 ? (
-        <p className="text-xs text-gray-400">
+        <p className="text-xs text-stone-400">
           ไม่มีหมวดย่อย — ทุกรายการจะถ่วงน้ำหนักแบบเดี่ยวตาม weight ของตัวเอง
         </p>
       ) : (
@@ -176,7 +176,7 @@ function GroupsEditor({ groups, items, totalWeight, onUpdate, onAdd, onRemove })
                   onChange={(e) => onUpdate(index, { weight: e.target.value })}
                   className="w-20 rounded-md border border-gray-300 px-2 py-1"
                 />
-                <span className="text-xs text-gray-500">
+                <span className="text-xs text-stone-500">
                   {itemCount} รายการ · รวม {groupPercent.toFixed(1)}%
                   {itemCount > 0 && ` (~${(groupPercent / itemCount).toFixed(2)}%/รายการ)`}
                 </span>
@@ -255,11 +255,11 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
   }
 
   return (
-    <div className="rounded-lg border border-gray-200 bg-white shadow-sm">
+    <div className="rounded-lg border border-[#e2cfb3] bg-white shadow-sm">
       <div className="flex flex-wrap items-center justify-between gap-2 p-4">
         <button onClick={onToggleExpand} className="flex flex-1 items-center gap-2 text-left">
-          <span className="text-gray-400">{expanded ? '▾' : '▸'}</span>
-          <span className="font-semibold text-gray-900">{box.name}</span>
+          <span className="text-stone-400">{expanded ? '▾' : '▸'}</span>
+          <span className="font-semibold text-stone-900">{box.name}</span>
           {box.category && (
             <span
               className={`rounded-full px-2 py-0.5 text-xs font-medium ${getBoxTypeBadgeClass(box.category)}`}
@@ -267,7 +267,7 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
               {getBoxTypeLabel(box.category)}
             </span>
           )}
-          <span className="text-xs text-gray-400">({box.items.length} รายการ)</span>
+          <span className="text-xs text-stone-400">({box.items.length} รายการ)</span>
         </button>
         <div className="flex items-center gap-2">
           {totalWeight === 0 && (
@@ -277,7 +277,7 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
           )}
           <button
             onClick={onEdit}
-            className="rounded-md border border-gray-300 px-2 py-1 text-xs text-gray-700 hover:bg-gray-100"
+            className="rounded-md border border-gray-300 px-2 py-1 text-xs text-stone-700 hover:bg-[#f5ede0]"
           >
             แก้ไขตู้
           </button>
@@ -291,15 +291,15 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
       </div>
 
       {expanded && (
-        <div className="border-t border-gray-100 p-4">
-          <div className="mb-3 text-sm text-gray-600">
+        <div className="border-t border-[#e2cfb3] p-4">
+          <div className="mb-3 text-sm text-stone-600">
             โหมดกันซ้ำเริ่มต้น:{' '}
-            <span className="font-semibold text-gray-900">
+            <span className="font-semibold text-stone-900">
               {box.settings?.defaultNoDuplicateMode === 'pool-shrink' ? 'ตัดพูลจริง' : 'Reroll ถ้าซ้ำ'}
             </span>
             {' · '}
             จำนวนสุ่มเริ่มต้น:{' '}
-            <span className="font-semibold text-gray-900">{box.settings?.defaultCount ?? 1}</span>
+            <span className="font-semibold text-stone-900">{box.settings?.defaultCount ?? 1}</span>
           </div>
 
           <GroupsEditor
@@ -312,12 +312,12 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
           />
 
           {draftItems.length === 0 ? (
-            <p className="text-sm text-gray-400">ยังไม่มีรายการในตู้นี้</p>
+            <p className="text-sm text-stone-400">ยังไม่มีรายการในตู้นี้</p>
           ) : (
             <div className="overflow-x-auto">
               <table className="w-full min-w-[720px] border-collapse text-sm">
                 <thead>
-                  <tr className="border-b border-gray-200 text-left text-xs text-gray-500">
+                  <tr className="border-b border-[#e2cfb3] text-left text-xs text-stone-500">
                     <th className="py-2 pr-2">ชื่อ</th>
                     <th className="py-2 pr-2">หมวดย่อย</th>
                     <th className="py-2 pr-2">Weight</th>
@@ -332,7 +332,7 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
                   {withPercent.map((item) => {
                     const isGrouped = !!item.group && draftGroups.some((g) => g.name === item.group)
                     return (
-                      <tr key={item.id} className="border-b border-gray-100">
+                      <tr key={item.id} className="border-b border-[#e2cfb3]">
                         <td className="py-1.5 pr-2">
                           <input
                             value={item.name}
@@ -361,7 +361,7 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
                             disabled={isGrouped}
                             value={item.weight}
                             onChange={(e) => updateDraftItem(item.id, { weight: e.target.value })}
-                            className="w-20 rounded-md border border-gray-300 px-2 py-1 disabled:bg-gray-100 disabled:text-gray-400"
+                            className="w-20 rounded-md border border-gray-300 px-2 py-1 disabled:bg-[#f5ede0] disabled:text-stone-400"
                           />
                         </td>
                         <td className="py-1.5 pr-2">
@@ -386,14 +386,14 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
                             className="w-full min-w-[120px] rounded-md border border-gray-300 px-2 py-1"
                           />
                         </td>
-                        <td className="py-1.5 pr-2 text-right font-semibold text-purple-600">
+                        <td className="py-1.5 pr-2 text-right font-semibold text-violet-700">
                           {item.percent.toFixed(2)}%
                         </td>
                         <td className="py-1.5 pl-2 whitespace-nowrap text-right">
                           <button
                             type="button"
                             onClick={() => setImageEditItemId(item.id)}
-                            className="mr-1 text-xs text-gray-500 hover:underline"
+                            className="mr-1 text-xs text-stone-500 hover:underline"
                           >
                             รูป
                           </button>
@@ -417,7 +417,7 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
             <button
               type="button"
               onClick={addDraftItem}
-              className="rounded-md bg-purple-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-purple-700"
+              className="rounded-md bg-violet-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-violet-800"
             >
               + เพิ่มรายการ
             </button>
@@ -426,7 +426,7 @@ function BoxCard({ box, expanded, onToggleExpand, onEdit, onDelete, dispatch, sh
                 <button
                   type="button"
                   onClick={handleCancel}
-                  className="rounded-md px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100"
+                  className="rounded-md px-3 py-1.5 text-sm text-stone-600 hover:bg-[#f5ede0]"
                 >
                   ยกเลิกการแก้ไข
                 </button>
@@ -490,7 +490,20 @@ export default function BoxManagerPage() {
       if (!map.has(cat)) map.set(cat, [])
       map.get(cat).push(box)
     }
-    return Array.from(map.entries())
+    const entries = Array.from(map.entries())
+    const getPriority = (cat) => {
+      const norm = cat.toLowerCase()
+      if (norm.includes('class')) return 1
+      if (norm.includes('species')) return 2
+      if (norm.includes('background')) return 3
+      return 4
+    }
+    return entries.sort((a, b) => {
+      const pA = getPriority(a[0])
+      const pB = getPriority(b[0])
+      if (pA !== pB) return pA - pB
+      return a[0].localeCompare(b[0], 'th')
+    })
   }, [state.boxes])
 
   function toggleExpand(id) {
@@ -551,24 +564,24 @@ export default function BoxManagerPage() {
   return (
     <div className="mx-auto max-w-4xl p-4 md:p-8">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <h1 className="text-2xl font-bold text-gray-900">จัดการตู้สุ่ม</h1>
+        <h1 className="text-2xl font-bold text-stone-900">จัดการตู้สุ่ม</h1>
         <button
           onClick={() => setBoxForm({ mode: 'create' })}
-          className="rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white hover:bg-purple-700"
+          className="rounded-md bg-violet-700 px-4 py-2 text-sm font-medium text-white hover:bg-violet-800"
         >
           + เพิ่มตู้สุ่ม
         </button>
       </div>
 
       {state.boxes.length === 0 ? (
-        <p className="text-sm text-gray-400">ยังไม่มีตู้สุ่ม กด "+ เพิ่มตู้สุ่ม" เพื่อเริ่มต้น</p>
+        <p className="text-sm text-stone-400">ยังไม่มีตู้สุ่ม กด "+ เพิ่มตู้สุ่ม" เพื่อเริ่มต้น</p>
       ) : (
         <div className="space-y-6">
           {grouped.map(([category, boxes]) => (
             <div key={category}>
               <button
                 onClick={() => toggleCategory(category)}
-                className="mb-2 flex items-center gap-2 text-sm font-semibold text-gray-500"
+                className="mb-2 flex items-center gap-2 text-sm font-semibold text-stone-500"
               >
                 <span>{collapsedCategories.has(category) ? '▸' : '▾'}</span>
                 {category} ({boxes.length})

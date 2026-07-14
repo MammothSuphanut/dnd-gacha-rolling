@@ -238,25 +238,25 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
 
   return (
     <div>
-      <h2 className="mb-4 text-xl font-bold text-gray-900">
+      <h2 className="mb-4 text-xl font-bold text-stone-900">
         สุ่มค่าพลัง ({diceCount}d{diceSides} ตัดต่ำสุด {dropCount} ลูก)
       </h2>
 
       <div className="mb-4 flex flex-wrap items-center gap-3">
         <button
           onClick={handleRoll}
-          className="rounded-lg bg-purple-600 py-3 px-6 text-lg font-bold text-white transition hover:bg-purple-700 md:px-8"
+          className="rounded-lg bg-violet-700 py-3 px-6 text-lg font-bold text-white transition hover:bg-violet-800 md:px-8"
         >
           {results.length === 0 ? 'สุ่มเลย!' : 'สุ่มใหม่'}
         </button>
         <button
           type="button"
           onClick={handleReset}
-          className="rounded-lg border border-gray-300 bg-white py-3 px-6 text-sm font-semibold text-gray-600 transition hover:bg-gray-100"
+          className="rounded-lg border border-gray-300 bg-white py-3 px-6 text-sm font-semibold text-stone-600 transition hover:bg-[#f5ede0]"
         >
           รีเซ็ต
         </button>
-        <label className="flex items-center gap-2 text-sm text-gray-600">
+        <label className="flex items-center gap-2 text-sm text-stone-600">
           จำนวนลูกเต๋า
           <input
             type="number"
@@ -274,7 +274,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
             className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
           />
         </label>
-        <label className="flex items-center gap-2 text-sm text-gray-600">
+        <label className="flex items-center gap-2 text-sm text-stone-600">
           ตัดต่ำสุดกี่ลูก
           <input
             type="number"
@@ -284,7 +284,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
             className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
           />
         </label>
-        <label className="flex items-center gap-2 text-sm text-gray-600">
+        <label className="flex items-center gap-2 text-sm text-stone-600">
           รวมขั้นต่ำที่ยอมรับ
           <input
             type="number"
@@ -294,7 +294,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
             className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm"
           />
         </label>
-        <label className="flex items-center gap-2 text-sm text-gray-600">
+        <label className="flex items-center gap-2 text-sm text-stone-600">
           รวมสูงสุดที่ยอมรับ
           <input
             type="number"
@@ -309,7 +309,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
 
       <div className="mb-8">
         <div className="mb-2 flex items-center gap-2">
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-500">
+          <label className="flex items-center gap-2 text-sm font-semibold text-stone-500">
             <input
               type="checkbox"
               checked={fixedFacesEnabled}
@@ -325,14 +325,14 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
               const count = Math.max(1, Number(diceCount) || DEFAULT_DICE_COUNT)
               const hasValues = row.some((v) => v !== undefined && v !== '')
               return (
-                <div key={idx} className="rounded-lg border border-gray-200 bg-white p-3 text-center">
+                <div key={idx} className="rounded-lg border border-[#e2cfb3] bg-white p-3 text-center">
                   <div className="flex items-center justify-between">
-                    <div className="text-xs text-gray-400">ครั้งที่ {idx + 1}</div>
+                    <div className="text-xs text-stone-400">ครั้งที่ {idx + 1}</div>
                     {hasValues && (
                       <button
                         type="button"
                         onClick={() => clearFixedRow(idx)}
-                        className="flex h-4 w-4 items-center justify-center rounded-full text-xs leading-none text-gray-400 hover:bg-gray-100 hover:text-gray-600"
+                        className="flex h-4 w-4 items-center justify-center rounded-full text-xs leading-none text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600"
                         title="ล้างค่า"
                       >
                         ×
@@ -363,9 +363,9 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
         <>
           <div className="mt-8">
             <div className="mb-2 flex items-center justify-between">
-              <h2 className="text-sm font-semibold text-gray-500">ผลการสุ่ม (6 ครั้ง)</h2>
-              <span className="text-sm font-medium text-gray-600">
-                รวมทั้งหมด: <span className="font-bold text-gray-900">{resultsSum}</span>
+              <h2 className="text-sm font-semibold text-stone-500">ผลการสุ่ม (6 ครั้ง)</h2>
+              <span className="text-sm font-medium text-stone-600">
+                รวมทั้งหมด: <span className="font-bold text-stone-900">{resultsSum}</span>
               </span>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
@@ -375,17 +375,17 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                   <div
                     key={r.id}
                     className={`rounded-lg border p-3 text-center ${
-                      used ? 'border-purple-300 bg-purple-50' : 'border-gray-200 bg-white'
+                      used ? 'border-violet-300 bg-violet-50' : 'border-[#e2cfb3] bg-white'
                     }`}
                   >
-                    <div className="text-xs text-gray-400">ครั้งที่ {idx + 1}</div>
+                    <div className="text-xs text-stone-400">ครั้งที่ {idx + 1}</div>
                     <div className="mt-1 flex justify-center gap-1">
                       {r.rolls.map((v, i) => (
                         <span
                           key={i}
                           className={`flex h-6 w-6 items-center justify-center rounded text-xs font-medium ${
                             r.dropIndices.has(i)
-                              ? 'bg-gray-100 text-gray-400 line-through'
+                              ? 'bg-[#f5ede0] text-stone-400 line-through'
                               : 'bg-gray-800 text-white'
                           }`}
                         >
@@ -397,15 +397,15 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                       <button
                         type="button"
                         onClick={() => adjustResultTotal(r.id, -1)}
-                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-gray-600 hover:bg-gray-100"
+                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
                       >
                         −
                       </button>
-                      <div className="w-8 text-xl font-bold text-gray-900">{r.total}</div>
+                      <div className="w-8 text-xl font-bold text-stone-900">{r.total}</div>
                       <button
                         type="button"
                         onClick={() => adjustResultTotal(r.id, 1)}
-                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-gray-600 hover:bg-gray-100"
+                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
                       >
                         +
                       </button>
@@ -418,10 +418,10 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
 
           <div className="mt-8">
             <div className="mb-2 flex items-center justify-between">
-              <h2 className="text-sm font-semibold text-gray-500">ลงค่าพลัง</h2>
-              <span className="text-sm font-medium text-gray-600">
+              <h2 className="text-sm font-semibold text-stone-500">ลงค่าพลัง</h2>
+              <span className="text-sm font-medium text-stone-600">
                 รวมที่ลงแล้ว ({assignedResultIds.size}/6):{' '}
-                <span className="font-bold text-gray-900">{assignedSum}</span>
+                <span className="font-bold text-stone-900">{assignedSum}</span>
               </span>
             </div>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
@@ -449,14 +449,14 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                 return (
                   <div
                     key={stat.key}
-                    className="flex flex-col gap-2 rounded-lg border border-gray-200 bg-white p-3"
+                    className="flex flex-col gap-2 rounded-lg border border-[#e2cfb3] bg-white p-3"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="font-semibold text-gray-700">{stat.label}</span>
-                      <span className="text-sm text-gray-500">
+                      <span className="font-semibold text-stone-700">{stat.label}</span>
+                      <span className="text-sm text-stone-500">
                         {score}
                         {currentBonus ? (
-                          <span className="text-purple-600"> (+{currentBonus})</span>
+                          <span className="text-violet-700"> (+{currentBonus})</span>
                         ) : null}{' '}
                         {abilityModifier(score)}
                       </span>
@@ -479,7 +479,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                       ))}
                     </select>
 
-                    <div className="flex items-center gap-3 text-xs text-gray-500">
+                    <div className="flex items-center gap-3 text-xs text-stone-500">
                       <label
                         className={`flex items-center gap-1 ${
                           disabled2 ? 'cursor-not-allowed opacity-40' : 'cursor-pointer'
