@@ -282,13 +282,10 @@ export default function RollPage({
   )
 
   return (
-    <div className="mx-auto max-w-7xl p-4 md:p-8">
+    <div className="w-full p-4 md:p-8">
       {/* Box selector + manage link */}
       <div className="mb-6 flex flex-wrap items-start justify-between gap-3">
         <div className="flex-1 rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
-          <h2 className="font-cinzel mb-3 text-xs font-semibold uppercase tracking-widest text-amber-700">
-            เลือกสิ่งที่จะแสดง
-          </h2>
           <div className="flex flex-wrap gap-6">
             {grouped.map(([category, boxes]) => (
               <div key={category}>

@@ -171,12 +171,6 @@ function reducer(state, action) {
         ),
       }
     }
-    case 'UPDATE_ENHANCEMENT_MULTIPLIERS': {
-      return {
-        ...state,
-        enhancementMultipliers: { ...state.enhancementMultipliers, ...action.payload },
-      }
-    }
     case 'ADD_CAMPAIGN': {
       return { ...state, campaigns: [...(state.campaigns ?? []), action.payload] }
     }

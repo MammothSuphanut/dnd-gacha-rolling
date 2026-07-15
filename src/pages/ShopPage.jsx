@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import Modal from '../components/Modal'
 import ConfirmDialog from '../components/ConfirmDialog'
 import { useGachaStore } from '../store/GachaStore'
@@ -9,11 +9,14 @@ import {
   CURRENCY_UNITS,
   DEFAULT_ENHANCEMENT_MULTIPLIERS,
   ENHANCEMENT_LEVELS,
+  ENHANCEMENT_UPGRADE_RATES,
   PRICE_TYPES,
   applyDiscount,
   formatCopper,
   getEnhancementMultiplier,
+  getUpgradeCostCp,
   parsePriceToCopper,
+  rollUpgradeOutcome,
 } from '../utils/price'
 
 function blankItem() {
@@ -180,68 +183,350 @@ function ShopFormModal({ open, onClose, shop, onSubmit }) {
   )
 }
 
-function EnhancementSettingsModal({ open, onClose, multipliers, onSubmit }) {
-  const [form, setForm] = useState(() =>
-    Object.fromEntries(ENHANCEMENT_LEVELS.map((lvl) => [lvl, String(multipliers?.[lvl] ?? '')])),
+const UPGRADE_OUTCOME_META = {
+  success: { label: 'สำเร็จ!', icon: '✨', badge: 'bg-green-100 text-green-700 border-green-300' },
+  fail: { label: 'ไม่สำเร็จ', icon: '➖', badge: 'bg-stone-100 text-stone-600 border-stone-300' },
+  downgrade: { label: 'ลดขั้น!', icon: '⬇️', badge: 'bg-amber-100 text-amber-700 border-amber-300' },
+  break: { label: 'พัง!', icon: '💥', badge: 'bg-red-100 text-red-700 border-red-300' },
+}
+
+const UPGRADE_PROB_BAR_META = [
+  { key: 'success', label: 'สำเร็จ', color: 'bg-green-500' },
+  { key: 'fail', label: 'ไม่สำเร็จ', color: 'bg-stone-300' },
+  { key: 'downgrade', label: 'ลดขั้น', color: 'bg-amber-500' },
+  { key: 'break', label: 'พัง', color: 'bg-red-500' },
+]
+
+function ItemPreviewCard({ item, shopName }) {
+  const tags = TAG_LABELS.filter((tag) => item[tag.key])
+  return (
+    <div className="rounded-lg border border-[#e2cfb3] bg-white p-3">
+      <div className="flex items-start justify-between gap-2">
+        <div>
+          <p className="font-semibold text-stone-900">{item.name}</p>
+          <p className="text-xs text-stone-400">
+            {shopName}
+            {(item.category || item.subCategory) && ' · '}
+            {item.category}
+            {item.category && item.subCategory ? ' / ' : ''}
+            {item.subCategory}
+          </p>
+        </div>
+      </div>
+      {item.note && <p className="mt-1.5 text-xs text-stone-500">{item.note}</p>}
+      <div className="mt-2 flex flex-wrap gap-3 text-xs">
+        {PRICE_TYPES.filter((p) => item[p.field]).map((p) => (
+          <span key={p.type} className="text-stone-600">
+            <span className="text-stone-400">{p.label}:</span>{' '}
+            <span className="font-medium text-stone-900">{item[p.field]}</span>
+          </span>
+        ))}
+      </div>
+      {tags.length > 0 && (
+        <div className="mt-2 flex flex-wrap gap-1">
+          {tags.map((tag) => (
+            <span key={tag.key} className="rounded-full bg-[#f5ede0] px-2 py-0.5 text-[11px] text-stone-600">
+              {tag.label}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
   )
+}
+
+function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, showToast }) {
+  const enhanceableOptions = useMemo(() => {
+    const list = []
+    for (const shop of shops) {
+      for (const item of shop.items) {
+        if (item.enhanceable) list.push({ shopId: shop.id, shopName: shop.name, item })
+      }
+    }
+    return list
+  }, [shops])
+
+  const groupedOptions = useMemo(() => {
+    const map = new Map()
+    for (const opt of enhanceableOptions) {
+      if (!map.has(opt.shopName)) map.set(opt.shopName, [])
+      map.get(opt.shopName).push(opt)
+    }
+    return Array.from(map.entries())
+  }, [enhanceableOptions])
+
+  const [selectedKey, setSelectedKey] = useState('')
+  const [priceTier, setPriceTier] = useState('normal')
+  const [currentLevel, setCurrentLevel] = useState(0)
+  const [broken, setBroken] = useState(false)
+  const [history, setHistory] = useState([])
+  const [rolling, setRolling] = useState(false)
 
   useEffect(() => {
     if (open) {
-      setForm(Object.fromEntries(ENHANCEMENT_LEVELS.map((lvl) => [lvl, String(multipliers?.[lvl] ?? '')])))
+      setSelectedKey((prev) => {
+        if (prev && enhanceableOptions.some((o) => `${o.shopId}::${o.item.id}` === prev)) return prev
+        const first = enhanceableOptions[0]
+        return first ? `${first.shopId}::${first.item.id}` : ''
+      })
     }
-  }, [open, multipliers])
+  }, [open, enhanceableOptions])
+
+  function resetSimulation() {
+    setCurrentLevel(0)
+    setBroken(false)
+    setHistory([])
+  }
 
   if (!open) return null
 
-  function handleSubmit(e) {
-    e.preventDefault()
-    const next = {}
-    for (const lvl of ENHANCEMENT_LEVELS) {
-      const num = Number(form[lvl])
-      next[lvl] = num > 0 ? num : 1
-    }
-    onSubmit(next)
+  const selected = enhanceableOptions.find((o) => `${o.shopId}::${o.item.id}` === selectedKey)
+  const item = selected?.item
+
+  const availableTiers = item ? PRICE_TYPES.filter((p) => item[p.field]) : []
+  const activeTier = availableTiers.some((p) => p.type === priceTier) ? priceTier : availableTiers[0]?.type
+
+  const targetLevel = Math.min(currentLevel + 1, 3)
+  const canUpgrade = !broken && currentLevel < 3
+
+  const priceField = activeTier ? PRICE_TYPES.find((p) => p.type === activeTier)?.field : null
+  const basePriceText = priceField ? item?.[priceField] : null
+  const basePriceCp = basePriceText ? parsePriceToCopper(basePriceText) : null
+  const costCp = canUpgrade ? getUpgradeCostCp(basePriceCp, currentLevel, enhancementMultipliers) : null
+  const rates = UPGRADE_PROB_BAR_META.map((meta) => ({
+    ...meta,
+    value: ENHANCEMENT_UPGRADE_RATES[targetLevel]?.[meta.key] ?? 0,
+  })).filter((r) => r.value > 0)
+  const finishedPriceCp =
+    basePriceCp != null ? basePriceCp * getEnhancementMultiplier(targetLevel, enhancementMultipliers) : null
+
+  function handleSelectItem(key) {
+    setSelectedKey(key)
+    resetSimulation()
+  }
+
+  function handleSetCurrentLevel(level) {
+    setCurrentLevel(level)
+    setBroken(false)
+  }
+
+  function handleRoll() {
+    if (!canUpgrade || costCp == null) return
+    setRolling(true)
+    setTimeout(() => {
+      const outcome = rollUpgradeOutcome(targetLevel)
+      const fromLevel = currentLevel
+      let toLevel = fromLevel
+      if (outcome === 'success') toLevel = targetLevel
+      else if (outcome === 'downgrade') toLevel = Math.max(0, fromLevel - 1)
+
+      setHistory((prev) => [
+        { id: createId('roll'), outcome, cost: costCp, fromLevel, toLevel },
+        ...prev,
+      ].slice(0, 8))
+
+      if (outcome === 'break') {
+        setBroken(true)
+        showToast(`💥 "${item.name}" แตกพัง! ต้องซื้อชิ้นใหม่`, 'error')
+      } else {
+        setCurrentLevel(toLevel)
+        if (outcome === 'success') showToast(`✨ ตีบวก "${item.name}" สำเร็จ! ตอนนี้ +${toLevel}`, 'success')
+        else if (outcome === 'downgrade') showToast(`⬇️ ตีบวกลดขั้น! "${item.name}" เหลือ +${toLevel}`, 'error')
+        else showToast(`ตีบวก "${item.name}" ไม่สำเร็จ ลองใหม่อีกครั้ง`, 'info')
+      }
+      setRolling(false)
+    }, 450)
   }
 
   return (
-    <Modal open={open} onClose={onClose} title="ตั้งค่าตัวคูณราคาตีบวก (+1 ~ +3)">
-      <form onSubmit={handleSubmit} className="space-y-3">
-        <p className="text-xs text-stone-500">
-          ราคาไอเทมที่ตีบวกแล้ว = ราคาปกติ × ตัวคูณ ตามระดับที่เลือก กำหนดตัวคูณเองได้ตามกติกาของแคมเปญ
-        </p>
-        <div className="grid grid-cols-3 gap-3">
-          {ENHANCEMENT_LEVELS.map((lvl) => (
-            <div key={lvl}>
-              <label className="block text-sm font-medium text-stone-700">+{lvl}</label>
-              <input
-                type="number"
-                min="0"
-                step="0.1"
-                value={form[lvl]}
-                onChange={(e) => setForm((f) => ({ ...f, [lvl]: e.target.value }))}
-                placeholder="เช่น 2"
-                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
-              />
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
+      <div
+        className="flex max-h-[92vh] w-full max-w-2xl flex-col overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center justify-between border-b border-[#e2cfb3] bg-gradient-to-r from-violet-700 to-violet-600 px-5 py-4">
+          <h2 className="font-cinzel text-lg font-semibold text-white">🔨 ตีบวกอุปกรณ์</h2>
+          <button onClick={onClose} className="text-violet-200 hover:text-white">
+            ✕
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto p-5">
+          {enhanceableOptions.length === 0 ? (
+            <p className="text-sm text-stone-400">
+              ยังไม่มีสินค้าที่ติด Tag "ตีบวกได้" ในร้านค้าใดเลย ลองเปิดโหมดแก้ไขรายการแล้วติ๊ก Tag ตีบวกได้ก่อน
+            </p>
+          ) : (
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-stone-700">อุปกรณ์</label>
+                <select
+                  value={selectedKey}
+                  onChange={(e) => handleSelectItem(e.target.value)}
+                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                >
+                  {groupedOptions.map(([shopName, opts]) => (
+                    <optgroup key={shopName} label={shopName}>
+                      {opts.map((o) => (
+                        <option key={`${o.shopId}::${o.item.id}`} value={`${o.shopId}::${o.item.id}`}>
+                          {o.item.name}
+                        </option>
+                      ))}
+                    </optgroup>
+                  ))}
+                </select>
+              </div>
+
+              {item && <ItemPreviewCard item={item} shopName={selected.shopName} />}
+
+              {availableTiers.length > 0 && (
+                <div>
+                  <label className="block text-sm font-medium text-stone-700">เรทราคา</label>
+                  <div className="mt-1 flex gap-1.5">
+                    {availableTiers.map((p) => (
+                      <button
+                        key={p.type}
+                        type="button"
+                        onClick={() => setPriceTier(p.type)}
+                        className={`rounded-md border px-3 py-1.5 text-xs font-medium ${
+                          activeTier === p.type
+                            ? 'border-violet-600 bg-violet-700 text-white'
+                            : 'border-gray-300 text-stone-600 hover:bg-[#f5ede0]'
+                        }`}
+                      >
+                        {p.label} ({item[p.field]})
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-sm font-medium text-stone-700">ระดับของเดิม</label>
+                  <select
+                    value={currentLevel}
+                    onChange={(e) => handleSetCurrentLevel(Number(e.target.value))}
+                    className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                  >
+                    <option value={0}>ปกติ (+0)</option>
+                    {ENHANCEMENT_LEVELS.filter((lvl) => lvl < 3).map((lvl) => (
+                      <option key={lvl} value={lvl}>
+                        +{lvl}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-stone-700">ระดับเป้าหมาย</label>
+                  <select value={targetLevel} disabled className="mt-1 w-full rounded-md border border-gray-300 bg-[#f5ede0] px-3 py-2 text-sm text-stone-700">
+                    <option value={targetLevel}>+{targetLevel}</option>
+                  </select>
+                </div>
+              </div>
+
+              {broken ? (
+                <div className="rounded-lg border border-red-300 bg-red-50 p-4 text-center">
+                  <p className="text-2xl">💥</p>
+                  <p className="mt-1 text-sm font-medium text-red-700">ไอเทมชิ้นนี้แตกพังจากการตีบวก!</p>
+                  <p className="mt-1 text-xs text-red-500">ต้องซื้อชิ้นใหม่มาเริ่มตีบวกอีกครั้ง</p>
+                  <button
+                    type="button"
+                    onClick={resetSimulation}
+                    className="mt-3 rounded-md border border-red-300 bg-white px-3 py-1.5 text-xs font-medium text-red-600 hover:bg-red-50"
+                  >
+                    เริ่มใหม่ (ซื้อชิ้นใหม่)
+                  </button>
+                </div>
+              ) : !canUpgrade ? (
+                <div className="rounded-lg border border-green-300 bg-green-50 p-4 text-center text-sm font-medium text-green-700">
+                  🎉 ไอเทมนี้ตีบวกถึงขั้นสูงสุด (+3) แล้ว
+                </div>
+              ) : (
+                <div className="rounded-lg border border-[#e2cfb3] bg-[#f5ede0] p-4">
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+                    <span className="text-stone-500">ราคาต่อครั้ง (+{currentLevel} → +{targetLevel})</span>
+                    <span className="font-semibold text-stone-900">
+                      {costCp != null ? formatCopper(costCp) : 'คำนวณราคาไม่ได้'}
+                    </span>
+                  </div>
+                  {finishedPriceCp != null && costCp != null && (
+                    <div className="mt-1 flex flex-wrap items-center justify-between gap-2 text-xs text-stone-500">
+                      <span>ราคาซื้อของสำเร็จรูป +{targetLevel} (อ้างอิง)</span>
+                      <span>{formatCopper(finishedPriceCp)}</span>
+                    </div>
+                  )}
+
+                  <div className="mt-3">
+                    <div className="mb-1 flex justify-between text-xs text-stone-500">
+                      <span>โอกาสของการตีครั้งนี้</span>
+                    </div>
+                    <div className="flex h-3 w-full overflow-hidden rounded-full bg-gray-200">
+                      {rates.map((r) => (
+                        <div
+                          key={r.key}
+                          className={r.color}
+                          style={{ width: `${r.value * 100}%` }}
+                          title={`${r.label} ${Math.round(r.value * 100)}%`}
+                        />
+                      ))}
+                    </div>
+                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+                      {rates.map((r) => (
+                        <span key={r.key} className="flex items-center gap-1 text-stone-600">
+                          <span className={`inline-block h-2 w-2 rounded-full ${r.color}`} />
+                          {r.label} {Math.round(r.value * 100)}%
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    disabled={costCp == null || rolling}
+                    onClick={handleRoll}
+                    className="mt-4 w-full rounded-md bg-violet-700 px-4 py-2.5 text-sm font-semibold text-white transition-transform hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-gray-300 active:scale-[0.98]"
+                  >
+                    {rolling ? '🎲 กำลังตี...' : `🔨 ตีบวก (จ่าย ${costCp != null ? formatCopper(costCp) : '-'})`}
+                  </button>
+                </div>
+              )}
+
+              {history.length > 0 && (
+                <div>
+                  <div className="mb-1.5 flex items-center justify-between">
+                    <span className="text-xs font-medium text-stone-500">ประวัติการตี (ล่าสุดก่อน)</span>
+                    <button
+                      type="button"
+                      onClick={resetSimulation}
+                      className="text-xs text-stone-400 underline decoration-dotted hover:text-stone-600"
+                    >
+                      ล้างประวัติ / เริ่มใหม่
+                    </button>
+                  </div>
+                  <div className="space-y-1">
+                    {history.map((h) => {
+                      const meta = UPGRADE_OUTCOME_META[h.outcome]
+                      return (
+                        <div
+                          key={h.id}
+                          className={`flex items-center justify-between rounded-md border px-2.5 py-1.5 text-xs ${meta.badge}`}
+                        >
+                          <span>
+                            {meta.icon} {meta.label} (+{h.fromLevel} → +{h.toLevel})
+                          </span>
+                          <span>{formatCopper(h.cost)}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
-          ))}
+          )}
         </div>
-        <div className="flex justify-end gap-2 pt-2">
-          <button
-            type="button"
-            onClick={onClose}
-            className="rounded-md px-3 py-2 text-sm text-stone-600 hover:bg-[#f5ede0]"
-          >
-            ยกเลิก
-          </button>
-          <button
-            type="submit"
-            className="rounded-md bg-violet-700 px-3 py-2 text-sm font-medium text-white hover:bg-violet-800"
-          >
-            บันทึก
-          </button>
-        </div>
-      </form>
-    </Modal>
+      </div>
+    </div>
   )
 }
 
@@ -900,7 +1185,7 @@ function DiscountInput({ discount, onChange, className = '' }) {
   )
 }
 
-function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRoll }) {
+function CartModal({ open, onClose, cartState, setCartState, showToast }) {
   const groups = useMemo(() => {
     const map = new Map()
     for (const item of cartState.items) {
@@ -963,13 +1248,6 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
         <div className="flex items-center justify-between border-b border-[#e2cfb3] p-4">
           <h2 className="text-lg font-semibold text-stone-900">ตระกร้าสินค้า</h2>
           <div className="flex items-center gap-3">
-            <button
-              type="button"
-              onClick={onGoToRoll}
-              className="rounded-md border border-violet-300 px-3 py-1.5 text-sm font-medium text-violet-700 hover:bg-violet-50"
-            >
-              ไปหน้าสุ่ม
-            </button>
             <button onClick={onClose} className="text-stone-400 hover:text-stone-600">
               ✕
             </button>
@@ -1104,7 +1382,6 @@ function CartModal({ open, onClose, cartState, setCartState, showToast, onGoToRo
 export default function ShopPage({ cartState, setCartState }) {
   const { state, dispatch } = useGachaStore()
   const { showToast } = useToast()
-  const navigate = useNavigate()
   const shops = state.shops ?? []
   const [query, setQuery] = useState('')
   const [filterCategory, setFilterCategory] = useState('')
@@ -1113,7 +1390,7 @@ export default function ShopPage({ cartState, setCartState }) {
   const [shopForm, setShopForm] = useState(null)
   const [deleteShop, setDeleteShop] = useState(null)
   const [cartOpen, setCartOpen] = useState(false)
-  const [enhancementSettingsOpen, setEnhancementSettingsOpen] = useState(false)
+  const [upgradeModalOpen, setUpgradeModalOpen] = useState(false)
   const enhancementMultipliers = state.enhancementMultipliers ?? DEFAULT_ENHANCEMENT_MULTIPLIERS
   const [searchParams, setSearchParams] = useSearchParams()
   const selectedShopId = searchParams.get('shopId')
@@ -1290,7 +1567,7 @@ export default function ShopPage({ cartState, setCartState }) {
   const totalItems = shops.reduce((sum, s) => sum + s.items.length, 0)
 
   return (
-    <div className="mx-auto max-w-5xl p-4 md:p-8">
+    <div className="w-full p-4 md:p-8">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-stone-900">ร้านค้า</h1>
@@ -1298,22 +1575,20 @@ export default function ShopPage({ cartState, setCartState }) {
             {shops.length} ร้านค้า · {totalItems} รายการทั้งหมด
           </p>
         </div>
-        {!selectedShop && (
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setEnhancementSettingsOpen(true)}
-              className="rounded-md border border-gray-300 px-3 py-2 text-sm text-stone-700 hover:bg-[#f5ede0]"
-            >
-              ⚙ ตั้งค่าราคาตีบวก
-            </button>
-            <button
-              onClick={() => setShopForm({ mode: 'create' })}
-              className="rounded-md bg-violet-700 px-4 py-2 text-sm font-medium text-white hover:bg-violet-800"
-            >
-              + เพิ่มร้านค้า
-            </button>
-          </div>
-        )}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setUpgradeModalOpen(true)}
+            className="rounded-md border border-violet-300 bg-violet-50 px-3 py-2 text-sm font-medium text-violet-700 hover:bg-violet-100"
+          >
+            🔨 ตีบวกอุปกรณ์
+          </button>
+          <button
+            onClick={() => setShopForm({ mode: 'create' })}
+            className="rounded-md bg-violet-700 px-4 py-2 text-sm font-medium text-white hover:bg-violet-800"
+          >
+            + เพิ่มร้านค้า
+          </button>
+        </div>
       </div>
 
       <button
@@ -1414,7 +1689,7 @@ export default function ShopPage({ cartState, setCartState }) {
       ) : visibleShops.length === 0 ? (
         <p className="text-sm text-stone-400">ไม่พบร้านค้าหรือรายการที่ตรงกับคำค้นหา/ตัวกรอง</p>
       ) : (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
           {visibleShops.map((shop) => {
             const matched = shop.items.filter(
               (item) => itemMatchesQuery(item, normalizedQuery) && itemMatchesFilters(item, filters),
@@ -1464,21 +1739,14 @@ export default function ShopPage({ cartState, setCartState }) {
         cartState={cartState}
         setCartState={setCartState}
         showToast={showToast}
-        onGoToRoll={() => {
-          setCartOpen(false)
-          navigate('/roll')
-        }}
       />
 
-      <EnhancementSettingsModal
-        open={enhancementSettingsOpen}
-        onClose={() => setEnhancementSettingsOpen(false)}
-        multipliers={enhancementMultipliers}
-        onSubmit={(next) => {
-          dispatch({ type: 'UPDATE_ENHANCEMENT_MULTIPLIERS', payload: next })
-          setEnhancementSettingsOpen(false)
-          showToast('บันทึกตัวคูณราคาตีบวกแล้ว', 'success')
-        }}
+      <EnhanceUpgradeModal
+        open={upgradeModalOpen}
+        onClose={() => setUpgradeModalOpen(false)}
+        shops={shops}
+        enhancementMultipliers={enhancementMultipliers}
+        showToast={showToast}
       />
     </div>
   )
