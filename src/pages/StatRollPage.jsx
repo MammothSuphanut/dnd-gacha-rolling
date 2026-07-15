@@ -1,3 +1,4 @@
+import SearchSelect from '../components/SearchSelect'
 import { createId } from '../utils/id'
 
 const STATS = [
@@ -462,22 +463,17 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                       </span>
                     </div>
 
-                    <select
+                    <SearchSelect
+                      options={sortedResults.map((r) => ({
+                        value: r.id,
+                        label: `ครั้งที่ ${resultIndexById.get(r.id) + 1} (${r.total})`,
+                        disabled: assignedResultIds.has(r.id) && assignedId !== r.id,
+                      }))}
                       value={assignedId ?? ''}
-                      onChange={(e) => assignStat(stat.key, e.target.value || null)}
-                      className="w-full rounded-md border border-gray-300 px-2 py-1 text-sm"
-                    >
-                      <option value="">-</option>
-                      {sortedResults.map((r) => (
-                        <option
-                          key={r.id}
-                          value={r.id}
-                          disabled={assignedResultIds.has(r.id) && assignedId !== r.id}
-                        >
-                          ครั้งที่ {resultIndexById.get(r.id) + 1} ({r.total})
-                        </option>
-                      ))}
-                    </select>
+                      onChange={(v) => assignStat(stat.key, v || null)}
+                      placeholder="-"
+                      clearLabel="เปลี่ยน"
+                    />
 
                     <div className="flex items-center gap-3 text-xs text-stone-500">
                       <label

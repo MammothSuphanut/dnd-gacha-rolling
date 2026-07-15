@@ -831,7 +831,7 @@
         "id": "classlevel-025714b8-aadd-4b7b-ac63-ba3db3e335d6",
         "className": "Barbarian",
         "subclassName": "Path of the Zealot",
-        "level": 10
+        "level": 1
       }
     ],
     "species": "Satyr",
@@ -881,7 +881,7 @@
         "id": "classlevel-3322a5fc-855c-403a-82b4-22c59028c16b",
         "className": "Cleric",
         "subclassName": "Light Domain",
-        "level": 12
+        "level": 1
       }
     ],
     "species": "Centaur",
@@ -923,7 +923,7 @@
     "id": "character-351251cc-7dfd-4e70-8117-75163159e920",
     "name": "Kargoth Winterhide",
     "status": "Astral Nexus",
-    "ownerId": "user-a1254d50-9453-4425-975e-99295b7f9298",
+    "ownerId": "",
     "partyTagIds": [],
     "campaignIds": [],
     "classLevels": [
@@ -931,7 +931,7 @@
         "id": "classlevel-c1b210aa-8e99-4ad9-8e3f-fa7794db201b",
         "className": "Warden",
         "subclassName": "Rimekeeper",
-        "level": 13
+        "level": 1
       }
     ],
     "species": "Minotaur",
@@ -981,7 +981,7 @@
         "id": "classlevel-51f9e341-7440-4861-9b67-e6234e7a3c32",
         "className": "Paladin",
         "subclassName": "Oath of the Noble Genies",
-        "level": 18
+        "level": 1
       }
     ],
     "species": "Kobold; Draconic Sorcery",
@@ -1031,7 +1031,7 @@
         "id": "classlevel-e311f1d7-bc73-4791-9fe9-85529e239ba8",
         "className": "Fighter",
         "subclassName": "Banneret",
-        "level": 14
+        "level": 1
       }
     ],
     "species": "Genasi (Earth)",

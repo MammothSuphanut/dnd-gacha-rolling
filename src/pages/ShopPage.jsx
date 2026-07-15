@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Modal from '../components/Modal'
 import ConfirmDialog from '../components/ConfirmDialog'
+import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
@@ -11,11 +12,18 @@ import {
   ENHANCEMENT_LEVELS,
   ENHANCEMENT_UPGRADE_RATES,
   PRICE_TYPES,
-  applyDiscount,
+  applyAntiBreak,
+  applyAntiDowngrade,
+  applyPriceAdjustment,
+  applySuccessBoost,
+  flatAmountsToCopper,
   formatCopper,
   getEnhancementMultiplier,
   getUpgradeCostCp,
+  ITEM_RARITY_PRICES,
   parsePriceToCopper,
+  REPAIR_DAMAGE_LEVELS,
+  REPAIR_DAMAGE_RATES,
   rollUpgradeOutcome,
 } from '../utils/price'
 
@@ -235,7 +243,7 @@ function ItemPreviewCard({ item, shopName }) {
   )
 }
 
-function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, showToast }) {
+function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onAddToSellCart, showToast }) {
   const enhanceableOptions = useMemo(() => {
     const list = []
     for (const shop of shops) {
@@ -246,29 +254,40 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
     return list
   }, [shops])
 
-  const groupedOptions = useMemo(() => {
-    const map = new Map()
-    for (const opt of enhanceableOptions) {
-      if (!map.has(opt.shopName)) map.set(opt.shopName, [])
-      map.get(opt.shopName).push(opt)
-    }
-    return Array.from(map.entries())
-  }, [enhanceableOptions])
+  const itemSearchOptions = useMemo(
+    () =>
+      enhanceableOptions.map((o) => ({
+        value: `${o.shopId}::${o.item.id}`,
+        label: o.item.name,
+        group: o.shopName,
+      })),
+    [enhanceableOptions],
+  )
 
+  const [mode, setMode] = useState('forge')
+  const isRepair = mode === 'repair'
+  const verb = isRepair ? 'ซ่อมแซม' : 'ตีบวก'
   const [selectedKey, setSelectedKey] = useState('')
   const [priceTier, setPriceTier] = useState('normal')
   const [currentLevel, setCurrentLevel] = useState(0)
   const [broken, setBroken] = useState(false)
   const [history, setHistory] = useState([])
   const [rolling, setRolling] = useState(false)
+  const [boostMode, setBoostMode] = useState('percent')
+  const [boostValue, setBoostValue] = useState('')
+  const [antiDowngrade, setAntiDowngrade] = useState(false)
+  const [antiBreak, setAntiBreak] = useState(false)
+  const [repairDamage, setRepairDamage] = useState(100)
+  const [manualPriceAmounts, setManualPriceAmounts] = useState({})
+  const [manualRarity, setManualRarity] = useState('')
+
+  function setManualPriceUnit(unit, value) {
+    setManualPriceAmounts((prev) => ({ ...prev, [unit]: value }))
+  }
 
   useEffect(() => {
     if (open) {
-      setSelectedKey((prev) => {
-        if (prev && enhanceableOptions.some((o) => `${o.shopId}::${o.item.id}` === prev)) return prev
-        const first = enhanceableOptions[0]
-        return first ? `${first.shopId}::${first.item.id}` : ''
-      })
+      setSelectedKey((prev) => (prev && enhanceableOptions.some((o) => `${o.shopId}::${o.item.id}` === prev) ? prev : ''))
     }
   }, [open, enhanceableOptions])
 
@@ -276,26 +295,44 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
     setCurrentLevel(0)
     setBroken(false)
     setHistory([])
+    setRepairDamage(100)
   }
 
   if (!open) return null
 
   const selected = enhanceableOptions.find((o) => `${o.shopId}::${o.item.id}` === selectedKey)
   const item = selected?.item
+  const itemName = item?.name ?? 'ไอเทมที่กำหนดเอง'
 
   const availableTiers = item ? PRICE_TYPES.filter((p) => item[p.field]) : []
   const activeTier = availableTiers.some((p) => p.type === priceTier) ? priceTier : availableTiers[0]?.type
 
   const targetLevel = Math.min(currentLevel + 1, 3)
-  const canUpgrade = !broken && currentLevel < 3
+  const canUpgrade = isRepair ? !broken : !broken && currentLevel < 3
 
   const priceField = activeTier ? PRICE_TYPES.find((p) => p.type === activeTier)?.field : null
   const basePriceText = priceField ? item?.[priceField] : null
-  const basePriceCp = basePriceText ? parsePriceToCopper(basePriceText) : null
+  const hasManualPrice = CURRENCY_UNITS.some((unit) => manualPriceAmounts[unit])
+  const basePriceCp = item
+    ? (basePriceText ? parsePriceToCopper(basePriceText) : null)
+    : hasManualPrice
+      ? flatAmountsToCopper(manualPriceAmounts)
+      : null
   const costCp = canUpgrade ? getUpgradeCostCp(basePriceCp, currentLevel, enhancementMultipliers) : null
+
+  let effectiveRates
+  if (isRepair) {
+    effectiveRates = REPAIR_DAMAGE_RATES[repairDamage] ?? REPAIR_DAMAGE_RATES[100]
+  } else {
+    effectiveRates = ENHANCEMENT_UPGRADE_RATES[targetLevel] ?? ENHANCEMENT_UPGRADE_RATES[1]
+    if (antiDowngrade) effectiveRates = applyAntiDowngrade(effectiveRates)
+    if (antiBreak) effectiveRates = applyAntiBreak(effectiveRates)
+  }
+  effectiveRates = applySuccessBoost(effectiveRates, boostMode, boostValue)
+
   const rates = UPGRADE_PROB_BAR_META.map((meta) => ({
     ...meta,
-    value: ENHANCEMENT_UPGRADE_RATES[targetLevel]?.[meta.key] ?? 0,
+    value: effectiveRates[meta.key] ?? 0,
   })).filter((r) => r.value > 0)
   const finishedPriceCp =
     basePriceCp != null ? basePriceCp * getEnhancementMultiplier(targetLevel, enhancementMultipliers) : null
@@ -314,25 +351,63 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
     if (!canUpgrade || costCp == null) return
     setRolling(true)
     setTimeout(() => {
-      const outcome = rollUpgradeOutcome(targetLevel)
+      const outcome = rollUpgradeOutcome(effectiveRates)
       const fromLevel = currentLevel
       let toLevel = fromLevel
-      if (outcome === 'success') toLevel = targetLevel
-      else if (outcome === 'downgrade') toLevel = Math.max(0, fromLevel - 1)
+      if (!isRepair) {
+        if (outcome === 'success') toLevel = targetLevel
+        else if (outcome === 'downgrade') toLevel = Math.max(0, fromLevel - 1)
+      }
 
       setHistory((prev) => [
-        { id: createId('roll'), outcome, cost: costCp, fromLevel, toLevel },
+        { id: createId('roll'), outcome, cost: costCp, fromLevel, toLevel, isRepair },
         ...prev,
       ].slice(0, 8))
 
       if (outcome === 'break') {
         setBroken(true)
-        showToast(`💥 "${item.name}" แตกพัง! ต้องซื้อชิ้นใหม่`, 'error')
+        showToast(`💥 "${itemName}" แตกพัง! ต้องซื้อชิ้นใหม่`, 'error')
       } else {
         setCurrentLevel(toLevel)
-        if (outcome === 'success') showToast(`✨ ตีบวก "${item.name}" สำเร็จ! ตอนนี้ +${toLevel}`, 'success')
-        else if (outcome === 'downgrade') showToast(`⬇️ ตีบวกลดขั้น! "${item.name}" เหลือ +${toLevel}`, 'error')
-        else showToast(`ตีบวก "${item.name}" ไม่สำเร็จ ลองใหม่อีกครั้ง`, 'info')
+        if (outcome === 'success') {
+          showToast(
+            isRepair ? `✨ ${verb} "${itemName}" สำเร็จ! ไอเทมกลับมาสภาพสมบูรณ์` : `✨ ${verb} "${itemName}" สำเร็จ! ตอนนี้ +${toLevel}`,
+            'success',
+          )
+        } else if (outcome === 'downgrade') {
+          showToast(`⬇️ ${verb}ลดขั้น! "${itemName}" เหลือ +${toLevel}`, 'error')
+        } else {
+          showToast(`${verb} "${itemName}" ไม่สำเร็จ ลองใหม่อีกครั้ง`, 'info')
+        }
+
+        let resultEnhanceLevel
+        let resultConditionPct
+        if (isRepair) {
+          resultEnhanceLevel = currentLevel
+          resultConditionPct = outcome === 'success' ? 100 : repairDamage
+        } else {
+          resultEnhanceLevel = toLevel
+          resultConditionPct = 100
+        }
+        const resultPriceCp =
+          basePriceCp != null
+            ? basePriceCp * getEnhancementMultiplier(resultEnhanceLevel, enhancementMultipliers) * (resultConditionPct / 100)
+            : null
+        if (resultPriceCp != null) {
+          const conditionIdx = REPAIR_DAMAGE_LEVELS.indexOf(resultConditionPct)
+          onAddToSellCart({
+            cartId: createId('sellcart'),
+            shopId: selected?.shopId ?? 'manual',
+            shopName: selected?.shopName ?? 'กำหนดเอง',
+            itemId: item?.id ?? itemName,
+            itemName,
+            priceLabel: activeTier ? PRICE_TYPES.find((p) => p.type === activeTier)?.label : 'ราคาที่กำหนดเอง',
+            conditionLabel: `ระดับ ${conditionIdx + 1} (${resultConditionPct}%)`,
+            enhanceLevel: resultEnhanceLevel,
+            qty: 1,
+            priceCp: resultPriceCp,
+          })
+        }
       }
       setRolling(false)
     }, 450)
@@ -345,58 +420,131 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-[#e2cfb3] bg-gradient-to-r from-violet-700 to-violet-600 px-5 py-4">
-          <h2 className="font-cinzel text-lg font-semibold text-white">🔨 ตีบวกอุปกรณ์</h2>
+          <h2 className="font-cinzel text-lg font-semibold text-white">{isRepair ? '🔧 ซ่อมแซมอุปกรณ์' : '🔨 ตีบวกอุปกรณ์'}</h2>
           <button onClick={onClose} className="text-violet-200 hover:text-white">
             ✕
           </button>
         </div>
 
         <div className="flex-1 overflow-y-auto p-5">
-          {enhanceableOptions.length === 0 ? (
-            <p className="text-sm text-stone-400">
-              ยังไม่มีสินค้าที่ติด Tag "ตีบวกได้" ในร้านค้าใดเลย ลองเปิดโหมดแก้ไขรายการแล้วติ๊ก Tag ตีบวกได้ก่อน
-            </p>
-          ) : (
-            <div className="space-y-4">
+          <div className="mb-4 flex gap-1.5">
+            <button
+              type="button"
+              onClick={() => {
+                setMode('forge')
+                resetSimulation()
+              }}
+              className={`flex-1 rounded-md border px-3 py-2 text-sm font-medium ${
+                !isRepair
+                  ? 'border-violet-600 bg-violet-700 text-white'
+                  : 'border-gray-300 text-stone-600 hover:bg-[#f5ede0]'
+              }`}
+            >
+              🔨 ตีบวก
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setMode('repair')
+                resetSimulation()
+              }}
+              className={`flex-1 rounded-md border px-3 py-2 text-sm font-medium ${
+                isRepair
+                  ? 'border-violet-600 bg-violet-700 text-white'
+                  : 'border-gray-300 text-stone-600 hover:bg-[#f5ede0]'
+              }`}
+            >
+              🔧 ซ่อมแซม
+            </button>
+          </div>
+
+          <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-stone-700">อุปกรณ์</label>
-                <select
+                <SearchSelect
+                  options={itemSearchOptions}
                   value={selectedKey}
-                  onChange={(e) => handleSelectItem(e.target.value)}
-                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
-                >
-                  {groupedOptions.map(([shopName, opts]) => (
-                    <optgroup key={shopName} label={shopName}>
-                      {opts.map((o) => (
-                        <option key={`${o.shopId}::${o.item.id}`} value={`${o.shopId}::${o.item.id}`}>
-                          {o.item.name}
-                        </option>
-                      ))}
-                    </optgroup>
-                  ))}
-                </select>
+                  onChange={handleSelectItem}
+                  placeholder="พิมพ์ชื่ออุปกรณ์เพื่อค้นหา..."
+                  clearLabel="เปลี่ยนอุปกรณ์"
+                  emptyOptionsLabel="ยังไม่มีสินค้าที่ติด Tag &quot;ตีบวกได้&quot; ในร้านค้าใดเลย"
+                  noMatchLabel="ไม่พบอุปกรณ์ที่ตรงกับคำค้นหา"
+                  className="mt-1"
+                />
+                {enhanceableOptions.length === 0 && (
+                  <p className="mt-1 text-xs text-stone-400">
+                    ยังไม่มีสินค้าที่ติด Tag "ตีบวกได้" ในร้านค้าใดเลย ลองเปิดโหมดแก้ไขรายการแล้วติ๊ก Tag ตีบวกได้ก่อน หรือกำหนดราคาเองด้านล่าง
+                  </p>
+                )}
               </div>
 
-              {item && <ItemPreviewCard item={item} shopName={selected.shopName} />}
+              {item ? (
+                <ItemPreviewCard item={item} shopName={selected.shopName} />
+              ) : (
+                <div className="rounded-lg border border-[#e2cfb3] bg-white p-3">
+                  <div>
+                    <label className="block text-sm font-medium text-stone-700">ระดับความหายาก (อ้างอิง)</label>
+                    <select
+                      value={manualRarity}
+                      onChange={(e) => setManualRarity(e.target.value)}
+                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                    >
+                      <option value="">-- เลือกเพื่อดูราคาอ้างอิง --</option>
+                      {ITEM_RARITY_PRICES.map((r) => (
+                        <option key={r.key} value={r.key}>
+                          {r.label}
+                        </option>
+                      ))}
+                    </select>
+                    {manualRarity && (
+                      <p className="mt-1 text-xs text-stone-500">
+                        ราคาอ้างอิงตามกฎ D&D: {ITEM_RARITY_PRICES.find((r) => r.key === manualRarity)?.priceText}
+                      </p>
+                    )}
+                  </div>
+                  <div className="mt-3">
+                    <label className="block text-sm font-medium text-stone-700">ราคาปกติ</label>
+                    <div className="mt-1 flex gap-1.5">
+                      {CURRENCY_UNITS.map((unit) => (
+                        <div key={unit} className="flex flex-col items-center">
+                          <input
+                            type="number"
+                            min="0"
+                            value={manualPriceAmounts[unit] ?? ''}
+                            onChange={(e) => setManualPriceUnit(unit, e.target.value)}
+                            placeholder="0"
+                            className="w-16 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                          />
+                          <span className="mt-0.5 text-[10px] text-stone-400">{unit}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {availableTiers.length > 0 && (
                 <div>
                   <label className="block text-sm font-medium text-stone-700">เรทราคา</label>
                   <div className="mt-1 flex gap-1.5">
-                    {availableTiers.map((p) => (
-                      <button
-                        key={p.type}
-                        type="button"
-                        onClick={() => setPriceTier(p.type)}
-                        className={`rounded-md border px-3 py-1.5 text-xs font-medium ${
-                          activeTier === p.type
-                            ? 'border-violet-600 bg-violet-700 text-white'
-                            : 'border-gray-300 text-stone-600 hover:bg-[#f5ede0]'
-                        }`}
-                      >
-                        {p.label} ({item[p.field]})
-                      </button>
-                    ))}
+                    {availableTiers.map((p) => {
+                      const tierBaseCp = parsePriceToCopper(item[p.field])
+                      const tierCostCp = canUpgrade ? getUpgradeCostCp(tierBaseCp, currentLevel, enhancementMultipliers) : null
+                      return (
+                        <button
+                          key={p.type}
+                          type="button"
+                          onClick={() => setPriceTier(p.type)}
+                          className={`rounded-md border px-3 py-1.5 text-xs font-medium ${
+                            activeTier === p.type
+                              ? 'border-violet-600 bg-violet-700 text-white'
+                              : 'border-gray-300 text-stone-600 hover:bg-[#f5ede0]'
+                          }`}
+                        >
+                          {p.label} ({tierCostCp != null ? formatCopper(tierCostCp) : item[p.field]})
+                        </button>
+                      )
+                    })}
                   </div>
                 </div>
               )}
@@ -417,13 +565,78 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
                     ))}
                   </select>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium text-stone-700">ระดับเป้าหมาย</label>
-                  <select value={targetLevel} disabled className="mt-1 w-full rounded-md border border-gray-300 bg-[#f5ede0] px-3 py-2 text-sm text-stone-700">
-                    <option value={targetLevel}>+{targetLevel}</option>
+                {isRepair ? (
+                  <div>
+                    <label className="block text-sm font-medium text-stone-700">ระดับความเสียหาย</label>
+                    <select
+                      value={repairDamage}
+                      onChange={(e) => setRepairDamage(Number(e.target.value))}
+                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                    >
+                      {REPAIR_DAMAGE_LEVELS.map((lvl, idx) => (
+                        <option key={lvl} value={lvl}>
+                          ระดับ {idx + 1}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                ) : (
+                  <div>
+                    <label className="block text-sm font-medium text-stone-700">ระดับเป้าหมาย</label>
+                    <select value={targetLevel} disabled className="mt-1 w-full rounded-md border border-gray-300 bg-[#f5ede0] px-3 py-2 text-sm text-stone-700">
+                      <option value={targetLevel}>+{targetLevel}</option>
+                    </select>
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-stone-700">เพิ่มโอกาสสำเร็จ</label>
+                <div className="mt-1 flex gap-1.5">
+                  <input
+                    type="number"
+                    min="0"
+                    value={boostValue}
+                    onChange={(e) => setBoostValue(e.target.value)}
+                    placeholder="0"
+                    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                  />
+                  <select
+                    value={boostMode}
+                    onChange={(e) => setBoostMode(e.target.value)}
+                    className="rounded-md border border-gray-300 px-2 py-2 text-sm"
+                  >
+                    <option value="percent">%</option>
+                    <option value="times">เท่า</option>
                   </select>
                 </div>
+                <p className="mt-1 text-xs text-stone-400">
+                  เพิ่มโอกาสสำเร็จแล้วลดโอกาสอื่น ๆ ลงตามสัดส่วน
+                </p>
               </div>
+
+              {!isRepair && (
+                <div className="flex flex-wrap gap-4">
+                  <label className="flex items-center gap-1.5 text-sm text-stone-700">
+                    <input
+                      type="checkbox"
+                      checked={antiDowngrade}
+                      onChange={(e) => setAntiDowngrade(e.target.checked)}
+                      className="h-4 w-4 rounded border-gray-300 text-violet-700 focus:ring-violet-600"
+                    />
+                    กันลด
+                  </label>
+                  <label className="flex items-center gap-1.5 text-sm text-stone-700">
+                    <input
+                      type="checkbox"
+                      checked={antiBreak}
+                      onChange={(e) => setAntiBreak(e.target.checked)}
+                      className="h-4 w-4 rounded border-gray-300 text-violet-700 focus:ring-violet-600"
+                    />
+                    กันแตก
+                  </label>
+                </div>
+              )}
 
               {broken ? (
                 <div className="rounded-lg border border-red-300 bg-red-50 p-4 text-center">
@@ -445,12 +658,14 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
               ) : (
                 <div className="rounded-lg border border-[#e2cfb3] bg-[#f5ede0] p-4">
                   <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
-                    <span className="text-stone-500">ราคาต่อครั้ง (+{currentLevel} → +{targetLevel})</span>
+                    <span className="text-stone-500">
+                      ราคาต่อครั้ง {isRepair ? `(+${currentLevel})` : `(+${currentLevel} → +${targetLevel})`}
+                    </span>
                     <span className="font-semibold text-stone-900">
                       {costCp != null ? formatCopper(costCp) : 'คำนวณราคาไม่ได้'}
                     </span>
                   </div>
-                  {finishedPriceCp != null && costCp != null && (
+                  {!isRepair && finishedPriceCp != null && costCp != null && (
                     <div className="mt-1 flex flex-wrap items-center justify-between gap-2 text-xs text-stone-500">
                       <span>ราคาซื้อของสำเร็จรูป +{targetLevel} (อ้างอิง)</span>
                       <span>{formatCopper(finishedPriceCp)}</span>
@@ -459,7 +674,7 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
 
                   <div className="mt-3">
                     <div className="mb-1 flex justify-between text-xs text-stone-500">
-                      <span>โอกาสของการตีครั้งนี้</span>
+                      <span>โอกาสของการ{verb}ครั้งนี้</span>
                     </div>
                     <div className="flex h-3 w-full overflow-hidden rounded-full bg-gray-200">
                       {rates.map((r) => (
@@ -487,7 +702,9 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
                     onClick={handleRoll}
                     className="mt-4 w-full rounded-md bg-violet-700 px-4 py-2.5 text-sm font-semibold text-white transition-transform hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-gray-300 active:scale-[0.98]"
                   >
-                    {rolling ? '🎲 กำลังตี...' : `🔨 ตีบวก (จ่าย ${costCp != null ? formatCopper(costCp) : '-'})`}
+                    {rolling
+                      ? `🎲 กำลัง${verb}...`
+                      : `${isRepair ? '🔧' : '🔨'} ${verb} (จ่าย ${costCp != null ? formatCopper(costCp) : '-'})`}
                   </button>
                 </div>
               )}
@@ -495,7 +712,7 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
               {history.length > 0 && (
                 <div>
                   <div className="mb-1.5 flex items-center justify-between">
-                    <span className="text-xs font-medium text-stone-500">ประวัติการตี (ล่าสุดก่อน)</span>
+                    <span className="text-xs font-medium text-stone-500">ประวัติการ{verb} (ล่าสุดก่อน)</span>
                     <button
                       type="button"
                       onClick={resetSimulation}
@@ -513,7 +730,8 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
                           className={`flex items-center justify-between rounded-md border px-2.5 py-1.5 text-xs ${meta.badge}`}
                         >
                           <span>
-                            {meta.icon} {meta.label} (+{h.fromLevel} → +{h.toLevel})
+                            {meta.icon} {meta.label}{' '}
+                            {h.isRepair ? `(+${h.fromLevel})` : `(+${h.fromLevel} → +${h.toLevel})`}
                           </span>
                           <span>{formatCopper(h.cost)}</span>
                         </div>
@@ -523,7 +741,373 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, sho
                 </div>
               )}
             </div>
-          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const CONDITION_LEVELS = REPAIR_DAMAGE_LEVELS
+
+const DEFAULT_PRICE_ADJUST = { sign: '+', mode: 'percent', value: '' }
+
+// Bidirectional price adjuster (+ or -, percent or flat) — used for
+// "haggling" a cart total up or down.
+function PriceAdjustInput({ adjust, onChange, className = '' }) {
+  const a = adjust ?? DEFAULT_PRICE_ADJUST
+
+  function handleModeChange(mode) {
+    if (mode === a.mode) return
+    onChange({ ...a, mode, value: mode === 'flat' ? {} : '' })
+  }
+
+  return (
+    <div className={`flex flex-wrap items-center gap-1.5 ${className}`}>
+      <div className="flex overflow-hidden rounded-md border border-gray-300">
+        <button
+          type="button"
+          onClick={() => onChange({ ...a, sign: '+' })}
+          className={`px-2.5 py-1.5 text-sm font-medium ${
+            a.sign === '+' ? 'bg-green-600 text-white' : 'bg-white text-stone-600 hover:bg-[#f5ede0]'
+          }`}
+        >
+          +
+        </button>
+        <button
+          type="button"
+          onClick={() => onChange({ ...a, sign: '-' })}
+          className={`px-2.5 py-1.5 text-sm font-medium ${
+            a.sign === '-' ? 'bg-red-600 text-white' : 'bg-white text-stone-600 hover:bg-[#f5ede0]'
+          }`}
+        >
+          −
+        </button>
+      </div>
+      <select
+        value={a.mode}
+        onChange={(e) => handleModeChange(e.target.value)}
+        className="rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+      >
+        <option value="percent">%</option>
+        <option value="flat">จำนวนเงิน</option>
+      </select>
+      {a.mode === 'percent' ? (
+        <input
+          type="number"
+          min="0"
+          value={a.value}
+          onChange={(e) => onChange({ ...a, value: e.target.value })}
+          placeholder="0"
+          className="w-24 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+        />
+      ) : (
+        <div className="flex gap-1">
+          {CURRENCY_UNITS.map((unit) => (
+            <div key={unit} className="flex flex-col items-center">
+              <input
+                type="number"
+                min="0"
+                value={a.value?.[unit] ?? ''}
+                onChange={(e) => onChange({ ...a, value: { ...a.value, [unit]: e.target.value } })}
+                placeholder="0"
+                className="w-14 rounded-md border border-gray-300 px-1.5 py-1 text-sm"
+              />
+              <span className="mt-0.5 text-[10px] text-stone-400">{unit}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function AppraiseModal({ open, onClose, shops, enhancementMultipliers, onAddToSellCart, showToast }) {
+  const allOptions = useMemo(() => {
+    const list = []
+    for (const shop of shops) {
+      for (const item of shop.items) {
+        list.push({ shopId: shop.id, shopName: shop.name, item })
+      }
+    }
+    return list
+  }, [shops])
+
+  const searchOptions = useMemo(
+    () =>
+      allOptions.map((o) => ({
+        value: `${o.shopId}::${o.item.id}`,
+        label: o.item.name,
+        group: o.shopName,
+      })),
+    [allOptions],
+  )
+
+  const [selectedKey, setSelectedKey] = useState('')
+  const [priceTier, setPriceTier] = useState('normal')
+  const [qty, setQty] = useState(1)
+  const [condition, setCondition] = useState(100)
+  const [enhanceLevel, setEnhanceLevel] = useState(0)
+  const [rarity, setRarity] = useState('')
+  const [adjust, setAdjust] = useState(DEFAULT_PRICE_ADJUST)
+  const [manualItemName, setManualItemName] = useState('')
+  const [manualPriceAmounts, setManualPriceAmounts] = useState({})
+
+  function setManualPriceUnit(unit, value) {
+    setManualPriceAmounts((prev) => ({ ...prev, [unit]: value }))
+  }
+
+  useEffect(() => {
+    if (!open) {
+      setSelectedKey('')
+      setPriceTier('normal')
+      setQty(1)
+      setCondition(100)
+      setEnhanceLevel(0)
+      setRarity('')
+      setAdjust(DEFAULT_PRICE_ADJUST)
+      setManualItemName('')
+      setManualPriceAmounts({})
+    }
+  }, [open])
+
+  if (!open) return null
+
+  const selected = allOptions.find((o) => `${o.shopId}::${o.item.id}` === selectedKey)
+  const item = selected?.item
+
+  function handleSelectKey(key) {
+    setSelectedKey(key)
+    setPriceTier('normal')
+    setEnhanceLevel(0)
+  }
+
+  const availableTiers = item ? PRICE_TYPES.filter((p) => item[p.field]) : []
+  const activeTier = availableTiers.some((p) => p.type === priceTier) ? priceTier : availableTiers[0]?.type
+  const priceField = activeTier ? PRICE_TYPES.find((p) => p.type === activeTier)?.field : null
+  const unitBasePriceText = priceField ? item?.[priceField] : null
+  const hasManualPrice = CURRENCY_UNITS.some((unit) => manualPriceAmounts[unit])
+  const unitBasePriceCp = item
+    ? (unitBasePriceText ? parsePriceToCopper(unitBasePriceText) : null)
+    : hasManualPrice
+      ? flatAmountsToCopper(manualPriceAmounts)
+      : null
+
+  const conditionFactor = condition / 100
+  const enhanceMultiplier = getEnhancementMultiplier(enhanceLevel, enhancementMultipliers)
+  const unitEstimateCp = unitBasePriceCp != null ? unitBasePriceCp * conditionFactor * enhanceMultiplier : null
+  const safeQty = Math.max(1, Math.floor(Number(qty)) || 1)
+  const subtotalCp = unitEstimateCp != null ? unitEstimateCp * safeQty : null
+  const totalCp = subtotalCp != null ? applyPriceAdjustment(subtotalCp, adjust) : null
+
+  const itemName = item?.name ?? manualItemName.trim()
+
+  function handleAddToSellCart() {
+    if (!itemName || totalCp == null) return
+    const conditionIdx = CONDITION_LEVELS.indexOf(condition)
+    onAddToSellCart({
+      cartId: createId('sellcart'),
+      shopId: selected?.shopId ?? 'manual',
+      shopName: selected?.shopName ?? 'กำหนดเอง',
+      itemId: item?.id ?? itemName,
+      itemName,
+      priceLabel: activeTier ? PRICE_TYPES.find((p) => p.type === activeTier)?.label : 'ราคาที่กำหนดเอง',
+      conditionLabel: `ระดับ ${conditionIdx + 1} (${condition}%)`,
+      enhanceLevel,
+      qty: safeQty,
+      priceCp: totalCp / safeQty,
+    })
+    showToast(`เพิ่ม "${itemName}" ลงตระกร้าขายแล้ว`, 'success')
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
+      <div
+        className="flex max-h-[92vh] w-full max-w-2xl flex-col overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center justify-between border-b border-[#e2cfb3] bg-gradient-to-r from-violet-700 to-violet-600 px-5 py-4">
+          <h2 className="font-cinzel text-lg font-semibold text-white">💰 ประเมินราคาขาย</h2>
+          <button onClick={onClose} className="text-violet-200 hover:text-white">
+            ✕
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto p-5">
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-stone-700">ค้นหาไอเทม</label>
+              <SearchSelect
+                options={searchOptions}
+                value={selectedKey}
+                onChange={handleSelectKey}
+                placeholder="พิมพ์ชื่อไอเทมเพื่อค้นหา..."
+                clearLabel="เปลี่ยนไอเทม"
+                emptyOptionsLabel="ยังไม่มีสินค้าในร้านค้าใดเลย"
+                noMatchLabel="ไม่พบไอเทมที่ตรงกับคำค้นหา"
+                className="mt-1"
+              />
+            </div>
+
+            {item ? (
+              <ItemPreviewCard item={item} shopName={selected.shopName} />
+            ) : (
+              <div className="rounded-lg border border-[#e2cfb3] bg-white p-3">
+                <div>
+                  <label className="block text-sm font-medium text-stone-700">ชื่อไอเทม</label>
+                  <input
+                    type="text"
+                    value={manualItemName}
+                    onChange={(e) => setManualItemName(e.target.value)}
+                    placeholder="ระบุชื่อไอเทม"
+                    className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                  />
+                </div>
+                <div className="mt-3">
+                  <label className="block text-sm font-medium text-stone-700">ราคาปกติ</label>
+                  <div className="mt-1 flex gap-1.5">
+                    {CURRENCY_UNITS.map((unit) => (
+                      <div key={unit} className="flex flex-col items-center">
+                        <input
+                          type="number"
+                          min="0"
+                          value={manualPriceAmounts[unit] ?? ''}
+                          onChange={(e) => setManualPriceUnit(unit, e.target.value)}
+                          placeholder="0"
+                          className="w-16 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                        />
+                        <span className="mt-0.5 text-[10px] text-stone-400">{unit}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {availableTiers.length > 1 && (
+              <div>
+                <label className="block text-sm font-medium text-stone-700">เรทราคา</label>
+                <div className="mt-1 flex gap-1.5">
+                  {availableTiers.map((p) => (
+                    <button
+                      key={p.type}
+                      type="button"
+                      onClick={() => setPriceTier(p.type)}
+                      className={`rounded-md border px-3 py-1.5 text-xs font-medium ${
+                        activeTier === p.type
+                          ? 'border-violet-600 bg-violet-700 text-white'
+                          : 'border-gray-300 text-stone-600 hover:bg-[#f5ede0]'
+                      }`}
+                    >
+                      {p.label} ({item[p.field]})
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-sm font-medium text-stone-700">จำนวน</label>
+                <input
+                  type="number"
+                  min="1"
+                  value={qty}
+                  onChange={(e) => setQty(e.target.value)}
+                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-stone-700">ระดับ +1 ถึง +3</label>
+                <select
+                  value={enhanceLevel}
+                  onChange={(e) => setEnhanceLevel(Number(e.target.value))}
+                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                >
+                  <option value={0}>ปกติ (+0)</option>
+                  {ENHANCEMENT_LEVELS.map((lvl) => (
+                    <option key={lvl} value={lvl}>
+                      +{lvl} (x{getEnhancementMultiplier(lvl, enhancementMultipliers)})
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-sm font-medium text-stone-700">สภาพ (ตามระดับซ่อมแซม)</label>
+                <select
+                  value={condition}
+                  onChange={(e) => setCondition(Number(e.target.value))}
+                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                >
+                  {CONDITION_LEVELS.map((lvl, idx) => (
+                    <option key={lvl} value={lvl}>
+                      ระดับ {idx + 1} ({lvl}%)
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-stone-700">ระดับความหายาก (อ้างอิง)</label>
+                <select
+                  value={rarity}
+                  onChange={(e) => setRarity(e.target.value)}
+                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                >
+                  <option value="">-- ไม่ระบุ --</option>
+                  {ITEM_RARITY_PRICES.map((r) => (
+                    <option key={r.key} value={r.key}>
+                      {r.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            {rarity && (
+              <p className="-mt-2 text-xs text-stone-500">
+                ราคาอ้างอิงตามกฎ D&D สำหรับความหายากนี้: {ITEM_RARITY_PRICES.find((r) => r.key === rarity)?.priceText}
+                {' '}(ใช้เทียบเคียงเท่านั้น ไม่รวมในการคำนวณ)
+              </p>
+            )}
+
+            <div className="rounded-lg border border-[#e2cfb3] bg-[#f5ede0] p-4">
+              <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+                <span className="text-stone-500">ราคาประเมิน/ชิ้น</span>
+                <span className="font-medium text-stone-900">
+                  {unitEstimateCp != null ? formatCopper(unitEstimateCp) : '-'}
+                </span>
+              </div>
+              <div className="mt-1 flex flex-wrap items-center justify-between gap-2 text-sm">
+                <span className="text-stone-500">จำนวน x {safeQty}</span>
+                <span className="font-medium text-stone-900">
+                  {subtotalCp != null ? formatCopper(subtotalCp) : '-'}
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-stone-700">ต่อราคา (ปรับผลรวม +/-)</label>
+              <PriceAdjustInput adjust={adjust} onChange={setAdjust} className="mt-1" />
+            </div>
+
+            <div className="rounded-lg border border-violet-300 bg-violet-50 p-4">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="text-sm font-medium text-violet-700">ราคารวม</span>
+                <span className="text-xl font-bold text-violet-800">
+                  {totalCp != null ? formatCopper(totalCp) : 'เลือกไอเทมและใส่ราคาก่อน'}
+                </span>
+              </div>
+              <button
+                type="button"
+                disabled={!itemName || totalCp == null}
+                onClick={handleAddToSellCart}
+                className="mt-3 w-full rounded-md bg-violet-700 px-4 py-2.5 text-sm font-semibold text-white transition-transform hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-gray-300 active:scale-[0.98]"
+              >
+                🧾 ใส่ตระกร้าขาย
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -558,6 +1142,11 @@ function ShopDetailView({
   const [selectedPriceType, setSelectedPriceType] = useState({})
   const [quantities, setQuantities] = useState({})
   const [selectedLevel, setSelectedLevel] = useState({})
+
+  function handleCopyItemName(name) {
+    navigator.clipboard.writeText(name)
+    showToast(`คัดลอก "${name}" แล้ว`, 'success')
+  }
 
   useEffect(() => {
     setDraftItems(shop.items.map((item) => ({ ...item })))
@@ -939,10 +1528,26 @@ function ShopDetailView({
                               <td className="py-2 pr-2 font-medium text-stone-900">
                                 {item.note ? (
                                   <Tip text={item.note} tooltipClassName="max-w-[260px]">
-                                    <span className="cursor-help underline decoration-dotted">{item.name}</span>
+                                    <span
+                                      role="button"
+                                      tabIndex={0}
+                                      title="คลิกเพื่อคัดลอกชื่อ"
+                                      onClick={() => handleCopyItemName(item.name)}
+                                      className="cursor-copy underline decoration-dotted"
+                                    >
+                                      {item.name}
+                                    </span>
                                   </Tip>
                                 ) : (
-                                  item.name
+                                  <span
+                                    role="button"
+                                    tabIndex={0}
+                                    title="คลิกเพื่อคัดลอกชื่อ"
+                                    onClick={() => handleCopyItemName(item.name)}
+                                    className="cursor-copy hover:underline hover:decoration-dotted"
+                                  >
+                                    {item.name}
+                                  </span>
                                 )}
                               </td>
                               <td className="py-2 pr-2 text-stone-600">{item.category}</td>
@@ -1130,63 +1735,10 @@ function ShopTile({ shop, matchedCount, totalCount, isFiltered, onSelect, onEdit
   )
 }
 
-const DEFAULT_DISCOUNT = { type: 'percent', value: '' }
+function CartModal({ open, onClose, cartState, setCartState, sellCartState, setSellCartState, showToast }) {
+  const [tab, setTab] = useState('buy')
 
-function DiscountInput({ discount, onChange, className = '' }) {
-  const d = discount ?? DEFAULT_DISCOUNT
-
-  function handleTypeChange(type) {
-    if (type === d.type) return
-    onChange({ type, value: type === 'flat' ? {} : '' })
-  }
-
-  function handleFlatChange(unit, value) {
-    onChange({ ...d, value: { ...d.value, [unit]: value } })
-  }
-
-  return (
-    <div className={className}>
-      <select
-        value={d.type}
-        onChange={(e) => handleTypeChange(e.target.value)}
-        className="rounded-md border border-gray-300 px-2 py-1 text-sm"
-      >
-        <option value="percent">%</option>
-        <option value="flat">จำนวนเงิน</option>
-      </select>
-      {d.type === 'percent' ? (
-        <input
-          type="number"
-          min="0"
-          max="100"
-          value={d.value}
-          onChange={(e) => onChange({ ...d, value: e.target.value })}
-          placeholder="0"
-          className="mt-1 w-24 rounded-md border border-gray-300 px-2 py-1 text-sm"
-        />
-      ) : (
-        <div className="mt-1 flex gap-1">
-          {CURRENCY_UNITS.map((unit) => (
-            <div key={unit} className="flex flex-col items-center">
-              <input
-                type="number"
-                min="0"
-                value={d.value?.[unit] ?? ''}
-                onChange={(e) => handleFlatChange(unit, e.target.value)}
-                placeholder="0"
-                className="w-14 rounded-md border border-gray-300 px-1.5 py-1 text-sm"
-              />
-              <span className="mt-0.5 text-[10px] text-stone-400">{unit}</span>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
-function CartModal({ open, onClose, cartState, setCartState, showToast }) {
-  const groups = useMemo(() => {
+  const buyGroups = useMemo(() => {
     const map = new Map()
     for (const item of cartState.items) {
       if (!map.has(item.shopId)) {
@@ -1196,14 +1748,35 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
     }
     return Array.from(map.values()).map((group) => {
       const subtotalCp = group.items.reduce((sum, i) => sum + (i.priceCp ?? 0) * i.qty, 0)
-      const discount = cartState.shopDiscounts[group.shopId] ?? DEFAULT_DISCOUNT
-      const totalCp = applyDiscount(subtotalCp, discount)
-      return { ...group, subtotalCp, discount, totalCp }
+      const shopAdjust = cartState.shopAdjustments[group.shopId] ?? DEFAULT_PRICE_ADJUST
+      const totalCp = applyPriceAdjustment(subtotalCp, shopAdjust)
+      return { ...group, subtotalCp, shopAdjust, totalCp }
     })
-  }, [cartState.items, cartState.shopDiscounts])
+  }, [cartState.items, cartState.shopAdjustments])
 
-  const grandSubtotalCp = groups.reduce((sum, g) => sum + g.totalCp, 0)
-  const grandTotalCp = applyDiscount(grandSubtotalCp, cartState.overallDiscount)
+  const buyGrandSubtotalCp = buyGroups.reduce((sum, g) => sum + g.totalCp, 0)
+  const buyGrandTotalCp = applyPriceAdjustment(buyGrandSubtotalCp, cartState.overallAdjustment)
+
+  const sellGroups = useMemo(() => {
+    const map = new Map()
+    for (const item of sellCartState.items) {
+      if (!map.has(item.shopId)) {
+        map.set(item.shopId, { shopId: item.shopId, shopName: item.shopName, items: [] })
+      }
+      map.get(item.shopId).items.push(item)
+    }
+    return Array.from(map.values()).map((group) => {
+      const subtotalCp = group.items.reduce((sum, i) => sum + (i.priceCp ?? 0) * i.qty, 0)
+      const shopAdjust = sellCartState.shopAdjustments[group.shopId] ?? DEFAULT_PRICE_ADJUST
+      const totalCp = applyPriceAdjustment(subtotalCp, shopAdjust)
+      return { ...group, subtotalCp, shopAdjust, totalCp }
+    })
+  }, [sellCartState.items, sellCartState.shopAdjustments])
+
+  const sellGrandSubtotalCp = sellGroups.reduce((sum, g) => sum + g.totalCp, 0)
+  const sellGrandTotalCp = applyPriceAdjustment(sellGrandSubtotalCp, sellCartState.overallAdjustment)
+
+  const netCp = sellGrandTotalCp - buyGrandTotalCp
 
   if (!open) return null
 
@@ -1226,17 +1799,49 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
     }))
   }
 
-  function setShopDiscount(shopId, discount) {
-    setCartState((prev) => ({ ...prev, shopDiscounts: { ...prev.shopDiscounts, [shopId]: discount } }))
+  function setBuyShopAdjustment(shopId, shopAdjust) {
+    setCartState((prev) => ({ ...prev, shopAdjustments: { ...prev.shopAdjustments, [shopId]: shopAdjust } }))
   }
 
-  function setOverallDiscount(discount) {
-    setCartState((prev) => ({ ...prev, overallDiscount: discount }))
+  function setBuyOverallAdjustment(overallAdjustment) {
+    setCartState((prev) => ({ ...prev, overallAdjustment }))
   }
 
   function clearCart() {
-    setCartState({ items: [], shopDiscounts: {}, overallDiscount: DEFAULT_DISCOUNT })
-    showToast('ล้างตระกร้าแล้ว', 'info')
+    setCartState({ items: [], shopAdjustments: {}, overallAdjustment: DEFAULT_PRICE_ADJUST })
+    showToast('ล้างตระกร้าซื้อแล้ว', 'info')
+  }
+
+  function removeSellCartItem(cartId) {
+    setSellCartState((prev) => ({ ...prev, items: prev.items.filter((i) => i.cartId !== cartId) }))
+  }
+
+  function setSellCartItemQty(cartId, qty) {
+    const safeQty = Math.max(0, Math.floor(Number(qty)) || 0)
+    setSellCartState((prev) => ({
+      ...prev,
+      items: prev.items.map((i) => (i.cartId === cartId ? { ...i, qty: safeQty } : i)),
+    }))
+  }
+
+  function bumpSellCartItemQty(cartId, delta) {
+    setSellCartState((prev) => ({
+      ...prev,
+      items: prev.items.map((i) => (i.cartId === cartId ? { ...i, qty: Math.max(0, i.qty + delta) } : i)),
+    }))
+  }
+
+  function setSellShopAdjustment(shopId, shopAdjust) {
+    setSellCartState((prev) => ({ ...prev, shopAdjustments: { ...prev.shopAdjustments, [shopId]: shopAdjust } }))
+  }
+
+  function setSellOverallAdjustment(overallAdjustment) {
+    setSellCartState((prev) => ({ ...prev, overallAdjustment }))
+  }
+
+  function clearSellCart() {
+    setSellCartState({ items: [], shopAdjustments: {}, overallAdjustment: DEFAULT_PRICE_ADJUST })
+    showToast('ล้างตระกร้าขายแล้ว', 'info')
   }
 
   return (
@@ -1246,7 +1851,7 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-[#e2cfb3] p-4">
-          <h2 className="text-lg font-semibold text-stone-900">ตระกร้าสินค้า</h2>
+          <h2 className="text-lg font-semibold text-stone-900">ตระกร้า</h2>
           <div className="flex items-center gap-3">
             <button onClick={onClose} className="text-stone-400 hover:text-stone-600">
               ✕
@@ -1254,12 +1859,128 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
           </div>
         </div>
 
+        <div className="flex border-b border-[#e2cfb3]">
+          <button
+            type="button"
+            onClick={() => setTab('buy')}
+            className={`flex-1 px-4 py-2.5 text-sm font-medium ${
+              tab === 'buy' ? 'border-b-2 border-violet-600 text-violet-700' : 'text-stone-500 hover:bg-[#f5ede0]'
+            }`}
+          >
+            🛒 ซื้อของ{cartState.items.length > 0 ? ` (${cartState.items.length})` : ''}
+          </button>
+          <button
+            type="button"
+            onClick={() => setTab('sell')}
+            className={`flex-1 px-4 py-2.5 text-sm font-medium ${
+              tab === 'sell' ? 'border-b-2 border-violet-600 text-violet-700' : 'text-stone-500 hover:bg-[#f5ede0]'
+            }`}
+          >
+            🧾 ขายของ{sellCartState.items.length > 0 ? ` (${sellCartState.items.length})` : ''}
+          </button>
+        </div>
+
         <div className="flex-1 overflow-y-auto p-4">
-          {groups.length === 0 ? (
-            <p className="text-sm text-stone-400">ตระกร้ายังว่างเปล่า กด "+ ใส่ตระกร้า" จากหน้ารายการร้านค้า</p>
+          {tab === 'buy' ? (
+            buyGroups.length === 0 ? (
+              <p className="text-sm text-stone-400">ตระกร้ายังว่างเปล่า กด "+ ใส่ตระกร้า" จากหน้ารายการร้านค้า</p>
+            ) : (
+              <div className="space-y-4">
+                {buyGroups.map((group) => (
+                  <div key={group.shopId} className="rounded-lg border border-[#e2cfb3] p-3">
+                    <div className="mb-2 font-semibold text-stone-900">{group.shopName}</div>
+                    <table className="w-full border-collapse text-sm">
+                      <thead>
+                        <tr className="text-xs text-stone-400">
+                          <th className="pb-1 pr-2 text-left font-normal">รายการ</th>
+                          <th className="pb-1 pr-2 text-right font-normal">ราคา/ชิ้น</th>
+                          <th className="pb-1 pr-2 text-center font-normal">จำนวน</th>
+                          <th className="pb-1 pr-2 text-right font-normal">รวม</th>
+                          <th className="pb-1 pl-2"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {group.items.map((item) => (
+                          <tr key={item.cartId} className="border-b border-[#e2cfb3]">
+                            <td className="py-1.5 pr-2">
+                              <div className="font-medium text-gray-800">{item.itemName}</div>
+                              <div className="text-xs text-stone-400">{item.priceLabel}</div>
+                            </td>
+                            <td className="py-1.5 pr-2 text-right whitespace-nowrap text-stone-700">
+                              {item.priceText}
+                              {item.priceCp == null && (
+                                <span className="ml-1 text-[11px] text-amber-500">(คำนวณราคารวมไม่ได้)</span>
+                              )}
+                            </td>
+                            <td className="py-1.5 pr-2">
+                              <div className="flex items-center justify-center gap-1">
+                                <button
+                                  type="button"
+                                  onClick={() => bumpCartItemQty(item.cartId, -1)}
+                                  className="h-6 w-6 rounded-md border border-gray-300 text-xs text-stone-600 hover:bg-[#f5ede0]"
+                                >
+                                  −
+                                </button>
+                                <input
+                                  type="number"
+                                  min="0"
+                                  value={item.qty}
+                                  onChange={(e) => setCartItemQty(item.cartId, e.target.value)}
+                                  className="w-12 rounded-md border border-gray-300 px-1 py-0.5 text-center text-sm"
+                                />
+                                <button
+                                  type="button"
+                                  onClick={() => bumpCartItemQty(item.cartId, 1)}
+                                  className="h-6 w-6 rounded-md border border-gray-300 text-xs text-stone-600 hover:bg-[#f5ede0]"
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </td>
+                            <td className="py-1.5 pr-2 text-right whitespace-nowrap text-stone-700">
+                              {item.priceCp != null ? formatCopper(item.priceCp * item.qty) : '-'}
+                            </td>
+                            <td className="py-1.5 pl-2 text-right">
+                              <button
+                                type="button"
+                                onClick={() => removeCartItem(item.cartId)}
+                                className="text-xs text-red-600 hover:underline"
+                              >
+                                ลบ
+                              </button>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+
+                    <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
+                      <div>
+                        <label className="block text-xs font-medium text-stone-500">ต่อราคา</label>
+                        <PriceAdjustInput
+                          adjust={group.shopAdjust}
+                          onChange={(shopAdjust) => setBuyShopAdjustment(group.shopId, shopAdjust)}
+                          className="mt-1"
+                        />
+                      </div>
+                      <div className="text-right text-sm">
+                        <div className="text-stone-500">ยอดรวมร้านนี้: {formatCopper(group.subtotalCp)}</div>
+                        <div className="font-semibold text-stone-900">
+                          หลังต่อราคา: {formatCopper(group.totalCp)}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )
+          ) : sellGroups.length === 0 ? (
+            <p className="text-sm text-stone-400">
+              ตระกร้าขายยังว่างเปล่า กด "🧾 ใส่ตระกร้าขาย" จากหน้าประเมินราคาขาย
+            </p>
           ) : (
             <div className="space-y-4">
-              {groups.map((group) => (
+              {sellGroups.map((group) => (
                 <div key={group.shopId} className="rounded-lg border border-[#e2cfb3] p-3">
                   <div className="mb-2 font-semibold text-stone-900">{group.shopName}</div>
                   <table className="w-full border-collapse text-sm">
@@ -1277,19 +1998,19 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
                         <tr key={item.cartId} className="border-b border-[#e2cfb3]">
                           <td className="py-1.5 pr-2">
                             <div className="font-medium text-gray-800">{item.itemName}</div>
-                            <div className="text-xs text-stone-400">{item.priceLabel}</div>
+                            <div className="text-xs text-stone-400">
+                              {item.priceLabel} · {item.conditionLabel}
+                              {item.enhanceLevel > 0 ? ` · +${item.enhanceLevel}` : ''}
+                            </div>
                           </td>
                           <td className="py-1.5 pr-2 text-right whitespace-nowrap text-stone-700">
-                            {item.priceText}
-                            {item.priceCp == null && (
-                              <span className="ml-1 text-[11px] text-amber-500">(คำนวณราคารวมไม่ได้)</span>
-                            )}
+                            {formatCopper(item.priceCp)}
                           </td>
                           <td className="py-1.5 pr-2">
                             <div className="flex items-center justify-center gap-1">
                               <button
                                 type="button"
-                                onClick={() => bumpCartItemQty(item.cartId, -1)}
+                                onClick={() => bumpSellCartItemQty(item.cartId, -1)}
                                 className="h-6 w-6 rounded-md border border-gray-300 text-xs text-stone-600 hover:bg-[#f5ede0]"
                               >
                                 −
@@ -1298,12 +2019,12 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
                                 type="number"
                                 min="0"
                                 value={item.qty}
-                                onChange={(e) => setCartItemQty(item.cartId, e.target.value)}
+                                onChange={(e) => setSellCartItemQty(item.cartId, e.target.value)}
                                 className="w-12 rounded-md border border-gray-300 px-1 py-0.5 text-center text-sm"
                               />
                               <button
                                 type="button"
-                                onClick={() => bumpCartItemQty(item.cartId, 1)}
+                                onClick={() => bumpSellCartItemQty(item.cartId, 1)}
                                 className="h-6 w-6 rounded-md border border-gray-300 text-xs text-stone-600 hover:bg-[#f5ede0]"
                               >
                                 +
@@ -1311,12 +2032,12 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
                             </div>
                           </td>
                           <td className="py-1.5 pr-2 text-right whitespace-nowrap text-stone-700">
-                            {item.priceCp != null ? formatCopper(item.priceCp * item.qty) : '-'}
+                            {formatCopper(item.priceCp * item.qty)}
                           </td>
                           <td className="py-1.5 pl-2 text-right">
                             <button
                               type="button"
-                              onClick={() => removeCartItem(item.cartId)}
+                              onClick={() => removeSellCartItem(item.cartId)}
                               className="text-xs text-red-600 hover:underline"
                             >
                               ลบ
@@ -1329,17 +2050,17 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
 
                   <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
                     <div>
-                      <label className="block text-xs font-medium text-stone-500">ส่วนลด</label>
-                      <DiscountInput
-                        discount={group.discount}
-                        onChange={(discount) => setShopDiscount(group.shopId, discount)}
+                      <label className="block text-xs font-medium text-stone-500">ต่อราคา</label>
+                      <PriceAdjustInput
+                        adjust={group.shopAdjust}
+                        onChange={(shopAdjust) => setSellShopAdjustment(group.shopId, shopAdjust)}
                         className="mt-1"
                       />
                     </div>
                     <div className="text-right text-sm">
                       <div className="text-stone-500">ยอดรวมร้านนี้: {formatCopper(group.subtotalCp)}</div>
                       <div className="font-semibold text-stone-900">
-                        หลังหักส่วนลด: {formatCopper(group.totalCp)}
+                        หลังต่อราคา: {formatCopper(group.totalCp)}
                       </div>
                     </div>
                   </div>
@@ -1350,28 +2071,74 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
         </div>
 
         <div className="border-t border-[#e2cfb3] p-4">
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            <div>
-              <label className="block text-xs font-medium text-stone-500">ส่วนลดรวมทุกร้าน</label>
-              <DiscountInput discount={cartState.overallDiscount} onChange={setOverallDiscount} className="mt-1" />
-            </div>
-          </div>
-
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
-            <button
-              type="button"
-              onClick={clearCart}
-              disabled={cartState.items.length === 0}
-              className="rounded-md border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:cursor-not-allowed disabled:border-[#e2cfb3] disabled:text-gray-300"
-            >
-              ล้างตระกร้า
-            </button>
-            <div className="text-right">
-              <div className="text-sm text-stone-500">รวมทุกร้าน (หลังหักส่วนลดร้าน): {formatCopper(grandSubtotalCp)}</div>
-              <div className="text-lg font-bold text-violet-700">
-                ยอดสุทธิ: {formatCopper(grandTotalCp)}
+          {tab === 'buy' ? (
+            <>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div>
+                  <label className="block text-xs font-medium text-stone-500">ต่อราคารวมทุกร้าน</label>
+                  <PriceAdjustInput
+                    adjust={cartState.overallAdjustment}
+                    onChange={setBuyOverallAdjustment}
+                    className="mt-1"
+                  />
+                </div>
               </div>
-            </div>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+                <button
+                  type="button"
+                  onClick={clearCart}
+                  disabled={cartState.items.length === 0}
+                  className="rounded-md border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:cursor-not-allowed disabled:border-[#e2cfb3] disabled:text-gray-300"
+                >
+                  ล้างตระกร้าซื้อ
+                </button>
+                <div className="text-right">
+                  <div className="text-sm text-stone-500">
+                    รวมทุกร้าน (หลังต่อราคาร้าน): {formatCopper(buyGrandSubtotalCp)}
+                  </div>
+                  <div className="text-lg font-bold text-red-700">ยอดที่ต้องจ่าย: {formatCopper(buyGrandTotalCp)}</div>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div>
+                  <label className="block text-xs font-medium text-stone-500">ต่อราคารวมทุกร้าน</label>
+                  <PriceAdjustInput
+                    adjust={sellCartState.overallAdjustment}
+                    onChange={setSellOverallAdjustment}
+                    className="mt-1"
+                  />
+                </div>
+              </div>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+                <button
+                  type="button"
+                  onClick={clearSellCart}
+                  disabled={sellCartState.items.length === 0}
+                  className="rounded-md border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:cursor-not-allowed disabled:border-[#e2cfb3] disabled:text-gray-300"
+                >
+                  ล้างตระกร้าขาย
+                </button>
+                <div className="text-right">
+                  <div className="text-sm text-stone-500">
+                    รวมทุกร้าน (หลังต่อราคาร้าน): {formatCopper(sellGrandSubtotalCp)}
+                  </div>
+                  <div className="text-lg font-bold text-green-700">
+                    ยอดที่จะได้รับ: {formatCopper(sellGrandTotalCp)}
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+          <div className="mt-3 flex items-center justify-between gap-2 rounded-lg border border-violet-300 bg-violet-50 p-3">
+            <span className="text-sm font-medium text-violet-700">ผลรวมสุทธิ (ขาย − ซื้อ)</span>
+            <span className={`text-lg font-bold ${netCp >= 0 ? 'text-green-700' : 'text-red-700'}`}>
+              {netCp >= 0 ? '+' : '−'}
+              {formatCopper(Math.abs(netCp))}
+            </span>
           </div>
         </div>
       </div>
@@ -1379,7 +2146,7 @@ function CartModal({ open, onClose, cartState, setCartState, showToast }) {
   )
 }
 
-export default function ShopPage({ cartState, setCartState }) {
+export default function ShopPage({ cartState, setCartState, sellCartState, setSellCartState }) {
   const { state, dispatch } = useGachaStore()
   const { showToast } = useToast()
   const shops = state.shops ?? []
@@ -1391,6 +2158,7 @@ export default function ShopPage({ cartState, setCartState }) {
   const [deleteShop, setDeleteShop] = useState(null)
   const [cartOpen, setCartOpen] = useState(false)
   const [upgradeModalOpen, setUpgradeModalOpen] = useState(false)
+  const [appraiseModalOpen, setAppraiseModalOpen] = useState(false)
   const enhancementMultipliers = state.enhancementMultipliers ?? DEFAULT_ENHANCEMENT_MULTIPLIERS
   const [searchParams, setSearchParams] = useSearchParams()
   const selectedShopId = searchParams.get('shopId')
@@ -1564,6 +2332,27 @@ export default function ShopPage({ cartState, setCartState }) {
     })
   }
 
+  function handleAddToSellCart(entry) {
+    setSellCartState((prev) => {
+      const existing = prev.items.find(
+        (i) =>
+          i.shopId === entry.shopId &&
+          i.itemId === entry.itemId &&
+          i.priceLabel === entry.priceLabel &&
+          i.conditionLabel === entry.conditionLabel &&
+          i.enhanceLevel === entry.enhanceLevel &&
+          i.priceCp === entry.priceCp,
+      )
+      if (existing) {
+        return {
+          ...prev,
+          items: prev.items.map((i) => (i.cartId === existing.cartId ? { ...i, qty: i.qty + entry.qty } : i)),
+        }
+      }
+      return { ...prev, items: [...prev.items, entry] }
+    })
+  }
+
   const totalItems = shops.reduce((sum, s) => sum + s.items.length, 0)
 
   return (
@@ -1580,7 +2369,13 @@ export default function ShopPage({ cartState, setCartState }) {
             onClick={() => setUpgradeModalOpen(true)}
             className="rounded-md border border-violet-300 bg-violet-50 px-3 py-2 text-sm font-medium text-violet-700 hover:bg-violet-100"
           >
-            🔨 ตีบวกอุปกรณ์
+            🔨 Forge
+          </button>
+          <button
+            onClick={() => setAppraiseModalOpen(true)}
+            className="rounded-md border border-violet-300 bg-violet-50 px-3 py-2 text-sm font-medium text-violet-700 hover:bg-violet-100"
+          >
+            💰 ประเมินราคา
           </button>
           <button
             onClick={() => setShopForm({ mode: 'create' })}
@@ -1601,6 +2396,11 @@ export default function ShopPage({ cartState, setCartState }) {
             {cartState.items.length}
           </span>
         )}
+        {sellCartState.items.length > 0 && (
+          <span className="rounded-full bg-red-600 px-2 py-0.5 text-xs font-semibold text-white">
+            {sellCartState.items.length}
+          </span>
+        )}
       </button>
 
       <div className="mb-4">
@@ -1611,53 +2411,38 @@ export default function ShopPage({ cartState, setCartState }) {
           className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
         />
         <div className="mt-2 flex flex-wrap items-center gap-2">
-          <select
+          <SearchSelect
+            options={categoryOptions.map((c) => ({ value: c, label: c }))}
             value={filterCategory}
-            onChange={(e) => setFilterCategory(e.target.value)}
-            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-stone-700"
-          >
-            <option value="">หมวดหลัก: ทั้งหมด</option>
-            {categoryOptions.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
-          <select
+            onChange={setFilterCategory}
+            placeholder="หมวดหลัก: ทั้งหมด"
+            clearLabel="ล้าง"
+            className="w-40"
+          />
+          <SearchSelect
+            options={groupedSubCategoryOptions.flatMap((group) =>
+              group.subs.map((c) => ({ value: c, label: c, group: group.category })),
+            )}
             value={filterSubCategory}
-            onChange={(e) => {
-              const value = e.target.value
+            onChange={(value) => {
               setFilterSubCategory(value)
               if (value && !filterCategory) {
                 const group = groupedSubCategoryOptions.find((g) => g.subs.includes(value))
                 if (group) setFilterCategory(group.category)
               }
             }}
-            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-stone-700"
-          >
-            <option value="">หมวดรอง: ทั้งหมด</option>
-            {groupedSubCategoryOptions.map((group) => (
-              <optgroup key={group.category} label={group.category}>
-                {group.subs.map((c) => (
-                  <option key={c} value={c}>
-                    {c}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-          <select
+            placeholder="หมวดรอง: ทั้งหมด"
+            clearLabel="ล้าง"
+            className="w-40"
+          />
+          <SearchSelect
+            options={tagOptions.map((tag) => ({ value: tag.key, label: tag.label }))}
             value={filterTag}
-            onChange={(e) => setFilterTag(e.target.value)}
-            className="rounded-md border border-gray-300 px-2 py-1.5 text-sm text-stone-700"
-          >
-            <option value="">Tag: ทั้งหมด</option>
-            {tagOptions.map((tag) => (
-              <option key={tag.key} value={tag.key}>
-                {tag.label}
-              </option>
-            ))}
-          </select>
+            onChange={setFilterTag}
+            placeholder="Tag: ทั้งหมด"
+            clearLabel="ล้าง"
+            className="w-36"
+          />
           {hasActiveFilters && (
             <button
               type="button"
@@ -1738,6 +2523,8 @@ export default function ShopPage({ cartState, setCartState }) {
         onClose={() => setCartOpen(false)}
         cartState={cartState}
         setCartState={setCartState}
+        sellCartState={sellCartState}
+        setSellCartState={setSellCartState}
         showToast={showToast}
       />
 
@@ -1746,6 +2533,16 @@ export default function ShopPage({ cartState, setCartState }) {
         onClose={() => setUpgradeModalOpen(false)}
         shops={shops}
         enhancementMultipliers={enhancementMultipliers}
+        onAddToSellCart={handleAddToSellCart}
+        showToast={showToast}
+      />
+
+      <AppraiseModal
+        open={appraiseModalOpen}
+        onClose={() => setAppraiseModalOpen(false)}
+        shops={shops}
+        enhancementMultipliers={enhancementMultipliers}
+        onAddToSellCart={handleAddToSellCart}
         showToast={showToast}
       />
     </div>

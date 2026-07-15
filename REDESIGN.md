@@ -1,4 +1,4 @@
-# 🎲 Astral Nexus: Echoes of Eternity — Full UI/UX Redesign Plan
+# 🎲 Astral Nexus: Realm of Fortunes — Full UI/UX Redesign Plan
 
 > **คำสั่งสำหรับ AI**: อ่านไฟล์นี้ทั้งหมดก่อนทำงาน แล้วทำ task ที่ยังเป็น `[ ]` ตามลำดับ เมื่อทำเสร็จแต่ละ task ให้ mark เป็น `[x]`
 
@@ -19,7 +19,7 @@
 **เป้าหมาย**: Redesign UI/UX ทั้งแอปให้:
 
 - ธีม **Light Parchment** (classic D&D handbook feel)
-- ชื่อแอปใหม่: **Astral Nexus: Echoes of Eternity** (เดิม: Gacha Rolling)
+- ชื่อแอปใหม่: **Astral Nexus: Realm of Fortunes** (เดิม: Gacha Rolling)
 - Font: `Cinzel` (heading) + `Inter` (body) จาก Google Fonts
 - ดูเป็นมืออาชีพ สวยงาม ใช้งานง่าย
 - **ห้ามแตะ logic/state/data** — แก้เฉพาะ visual layer เท่านั้น
@@ -80,7 +80,7 @@ Semantic
 
 ### Phase 2 — Shared Components
 
-- [x] **2.1** `src/components/Navbar.jsx` — logo ใหม่ "Astral Nexus: Echoes of Eternity", icons ทุก nav link, parchment bg
+- [x] **2.1** `src/components/Navbar.jsx` — logo ใหม่ "Astral Nexus: Realm of Fortunes", icons ทุก nav link, parchment bg
 - [x] **2.2** `src/components/Modal.jsx` — backdrop blur, border สวย, rounded-xl
 - [x] **2.3** `src/components/ConfirmDialog.jsx` — icon เตือน, styling ใหม่
 
@@ -102,7 +102,7 @@ Semantic
 เพิ่มใน `<head>`:
 
 ```html
-<title>Astral Nexus: Echoes of Eternity</title>
+<title>Astral Nexus: Realm of Fortunes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -171,7 +171,7 @@ body {
 ### 2.1 — `src/components/Navbar.jsx`
 
 - bg: `bg-[#fdf8f0] border-b border-[#e2cfb3] shadow-sm`
-- Logo: emoji 🎲 + text "Astral Nexus: Echoes of Eternity" ใช้ `font-cinzel font-bold text-violet-700`
+- Logo: emoji 🎲 + text "Astral Nexus: Realm of Fortunes" ใช้ `font-cinzel font-bold text-violet-700`
 - Nav links ใหม่ (เพิ่ม icon emoji):
   - 🎲 สุ่ม → `/roll`
   - 🛒 ร้านค้า → `/shop`

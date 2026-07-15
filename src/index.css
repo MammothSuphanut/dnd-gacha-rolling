@@ -12,6 +12,18 @@ body {
   font-family: "Cinzel", Georgia, serif;
 }
 
+/* ─── Form fields ───────────────────────────────────────── */
+/* Tailwind's preflight resets form elements to a transparent
+   background, which lets the cream page background show through
+   and makes inputs blend in. Default them to white; anything that
+   wants a different background (disabled fields, color swatches)
+   already sets its own bg-* class, which overrides this safely. */
+input:not([type="color"]),
+select,
+textarea {
+  background-color: #ffffff;
+}
+
 /* ─── Scrollbar ─────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 6px;

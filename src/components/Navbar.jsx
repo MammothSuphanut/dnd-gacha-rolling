@@ -212,7 +212,7 @@ export default function Navbar() {
           <NavLink to="/roll" className="flex items-center gap-2.5 select-none">
             <D20Icon />
             <span className="font-cinzel text-lg font-bold tracking-wide text-violet-700 leading-none">
-              Astral Nexus: Echoes of Eternity
+              Astral Nexus: Realm of Fortunes
             </span>
           </NavLink>
 

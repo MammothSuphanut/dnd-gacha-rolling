@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import {
@@ -437,21 +438,16 @@ export default function RollPage({
 
                       {subGroups.length > 0 && (
                         <div className="mt-3 flex flex-col gap-1.5">
-                          <label className="flex flex-col gap-1 text-xs text-stone-500">
+                          <div className="flex flex-col gap-1 text-xs text-stone-500">
                             หมวดย่อย
-                            <select
+                            <SearchSelect
+                              options={subGroups.map((g) => ({ value: g.name, label: g.name }))}
                               value={group}
-                              onChange={(e) => updateConfig(box, { group: e.target.value })}
-                              className="w-full rounded-lg border border-[#e2cfb3] bg-[#fdf8f0] px-2 py-1.5 text-sm text-stone-900 focus:border-violet-400 focus:outline-none"
-                            >
-                              <option value="">ทั้งหมด</option>
-                              {subGroups.map((g) => (
-                                <option key={g.name} value={g.name}>
-                                  {g.name}
-                                </option>
-                              ))}
-                            </select>
-                          </label>
+                              onChange={(v) => updateConfig(box, { group: v })}
+                              placeholder="ทั้งหมด"
+                              clearLabel="ล้าง"
+                            />
+                          </div>
                           {!group && (
                             <label className="flex items-center gap-1.5 text-xs text-stone-600">
                               <input

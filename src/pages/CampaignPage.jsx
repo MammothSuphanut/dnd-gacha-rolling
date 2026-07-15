@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import ConfirmDialog from '../components/ConfirmDialog'
+import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
@@ -469,42 +470,30 @@ export default function CampaignPage() {
             </button>
           ))}
         </div>
-        <select
+        <SearchSelect
+          options={levelOptions.map((lvl) => ({ value: lvl, label: lvl }))}
           value={filterLevel}
-          onChange={(e) => setFilterLevel(e.target.value)}
-          className="rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-        >
-          <option value="">Level: ทั้งหมด</option>
-          {levelOptions.map((lvl) => (
-            <option key={lvl} value={lvl}>
-              {lvl}
-            </option>
-          ))}
-        </select>
-        <select
+          onChange={setFilterLevel}
+          placeholder="Level: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-36"
+        />
+        <SearchSelect
+          options={campaignTypeOptions.map((t) => ({ value: t, label: t }))}
           value={filterCampaignType}
-          onChange={(e) => setFilterCampaignType(e.target.value)}
-          className="rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-        >
-          <option value="">ประเภทแคมเปญ: ทั้งหมด</option>
-          {campaignTypeOptions.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
-        <select
+          onChange={setFilterCampaignType}
+          placeholder="ประเภทแคมเปญ: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-40"
+        />
+        <SearchSelect
+          options={partyTags.map((t) => ({ value: t.id, label: t.name || '(ไม่มีชื่อ)' }))}
           value={filterParty}
-          onChange={(e) => setFilterParty(e.target.value)}
-          className="rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-        >
-          <option value="">Party: ทั้งหมด</option>
-          {partyTags.map((t) => (
-            <option key={t.id} value={t.id}>
-              {t.name || '(ไม่มีชื่อ)'}
-            </option>
-          ))}
-        </select>
+          onChange={setFilterParty}
+          placeholder="Party: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-36"
+        />
       </div>
 
       {campaigns.length === 0 ? (

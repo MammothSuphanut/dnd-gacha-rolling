@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import ConfirmDialog from '../components/ConfirmDialog'
+import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
@@ -28,6 +29,9 @@ const TABS = [
 const DEFAULT_COLOR = '#7c3aed'
 const MAX_TOTAL_LEVEL = 20
 const STATUS_OPTIONS = ['Astral Nexus', 'In-Action', 'Hall of Fame']
+const NO_CAMPAIGN_FILTER = '__no_campaign__'
+const NO_PARTY_FILTER = '__no_party__'
+const NO_USER_FILTER = '__no_user__'
 
 const SORT_OPTIONS = [
   { key: 'name', label: 'ชื่อ' },
@@ -1200,7 +1204,7 @@ function CharacterFormModal({
                           <div className="text-[10px] font-bold text-stone-400 uppercase tracking-wider">
                             {item.label}
                           </div>
-                          <div className="mt-0.5 text-xs font-semibold text-stone-800 truncate" title={item.value}>
+                          <div className="mt-0.5 text-xs font-semibold text-stone-800 break-words">
                             {item.value}
                           </div>
                         </div>
@@ -1212,8 +1216,13 @@ function CharacterFormModal({
 
             {/* Bottom details block (Full width details) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Personality / Ideal / Bond / Flaws */}
-              {(form.ideals || form.bonds || form.flaws || form.personalityTraits) && (
+              {/* Personality / Ideal / Bond / Flaws + Appearance & Biography */}
+              {(form.ideals ||
+                form.bonds ||
+                form.flaws ||
+                form.personalityTraits ||
+                form.appearance ||
+                form.biography) && (
                 <div className="space-y-4 rounded-xl border border-[#e2cfb3] bg-white p-4">
                   <h3 className="font-cinzel text-sm font-bold text-stone-800 border-b border-stone-100 pb-2">
                     🎭 บุคลิกภาพและค่านิยม (Personality & Values)
@@ -1260,17 +1269,9 @@ function CharacterFormModal({
                       </div>
                     )}
                   </div>
-                </div>
-              )}
 
-              {/* Appearance & Biography */}
-              {(form.appearance || form.biography) && (
-                <div className="space-y-4 rounded-xl border border-[#e2cfb3] bg-white p-4">
-                  <h3 className="font-cinzel text-sm font-bold text-stone-800 border-b border-stone-100 pb-2">
-                    📜 รูปลักษณ์และประวัติ (Appearance & Bio)
-                  </h3>
-                  <div className="space-y-3">
-                    {form.appearance && (
+                  {form.appearance && (
+                    <div className="space-y-3 border-t border-stone-100 pt-3">
                       <div>
                         <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
                           👤 Appearance
@@ -1279,17 +1280,24 @@ function CharacterFormModal({
                           {form.appearance}
                         </p>
                       </div>
-                    )}
-                    {form.biography && (
-                      <div>
-                        <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                          🏺 Biography
-                        </span>
-                        <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                          {form.biography}
-                        </p>
-                      </div>
-                    )}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Biography */}
+              {form.biography && (
+                <div className="space-y-4 rounded-xl border border-[#e2cfb3] bg-white p-4">
+                  <h3 className="font-cinzel text-sm font-bold text-stone-800 border-b border-stone-100 pb-2">
+                    🏺 ประวัติ (Biography)
+                  </h3>
+                  <div>
+                    <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
+                      🏺 Biography
+                    </span>
+                    <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                      {form.biography}
+                    </p>
                   </div>
                 </div>
               )}
@@ -1480,80 +1488,55 @@ function CharacterFormModal({
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Owner (User)</label>
-                <select
+                <SearchSelect
+                  options={users.map((u) => ({ value: u.id, label: u.username || '(ไม่มีชื่อ)' }))}
                   value={form.ownerId}
-                  onChange={(e) => patch({ ownerId: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  <option value="">-</option>
-                  {users.map((u) => (
-                    <option key={u.id} value={u.id}>
-                      {u.username || '(ไม่มีชื่อ)'}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ ownerId: v })}
+                  placeholder="-"
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Status</label>
-                <select
+                <SearchSelect
+                  options={STATUS_OPTIONS.map((s) => ({ value: s, label: s }))}
                   value={form.status}
-                  onChange={(e) => patch({ status: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  {STATUS_OPTIONS.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ status: v })}
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Size</label>
-                <select
+                <SearchSelect
+                  options={SIZE_OPTIONS.map((s) => ({ value: s, label: s }))}
                   value={form.size}
-                  onChange={(e) => patch({ size: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  {SIZE_OPTIONS.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ size: v })}
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Species</label>
-                <select
+                <SearchSelect
+                  options={speciesOptions.map((s) => ({ value: s, label: s }))}
                   value={form.species}
-                  onChange={(e) => patch({ species: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  <option value="">-</option>
-                  {speciesOptions.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ species: v })}
+                  placeholder="-"
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Background</label>
-                <select
+                <SearchSelect
+                  options={backgroundOptions.map((b) => ({ value: b, label: b }))}
                   value={form.background}
-                  onChange={(e) => patch({ background: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  <option value="">-</option>
-                  {backgroundOptions.map((b) => (
-                    <option key={b} value={b}>
-                      {b}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ background: v })}
+                  placeholder="-"
+                  clearLabel="เปลี่ยน"
+                />
               </div>
             </div>
           </FormSection>
@@ -1592,36 +1575,24 @@ function CharacterFormModal({
                     <div className="w-6 pb-1.5 text-center text-xs text-stone-400">{index + 1}</div>
                     <div className="min-w-[140px] flex-1">
                       <label className="mb-1 block text-[11px] text-stone-500">Class</label>
-                      <select
+                      <SearchSelect
+                        options={classes.map((c) => ({ value: c, label: c }))}
                         value={cl.className}
-                        onChange={(e) =>
-                          updateClassLevel(cl.id, { className: e.target.value, subclassName: '' })
-                        }
-                        className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                      >
-                        <option value="">-</option>
-                        {classes.map((c) => (
-                          <option key={c} value={c}>
-                            {c}
-                          </option>
-                        ))}
-                      </select>
+                        onChange={(v) => updateClassLevel(cl.id, { className: v, subclassName: '' })}
+                        placeholder="-"
+                        clearLabel="เปลี่ยน"
+                      />
                     </div>
                     <div className="min-w-[140px] flex-1">
                       <label className="mb-1 block text-[11px] text-stone-500">Subclass</label>
-                      <select
+                      <SearchSelect
+                        options={availableSubclasses.map((s) => ({ value: s, label: s }))}
                         value={cl.subclassName}
-                        onChange={(e) => updateClassLevel(cl.id, { subclassName: e.target.value })}
+                        onChange={(v) => updateClassLevel(cl.id, { subclassName: v })}
                         disabled={!cl.className}
-                        className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm disabled:bg-[#f5ede0] disabled:text-stone-400"
-                      >
-                        <option value="">-</option>
-                        {availableSubclasses.map((s) => (
-                          <option key={s} value={s}>
-                            {s}
-                          </option>
-                        ))}
-                      </select>
+                        placeholder="-"
+                        clearLabel="เปลี่ยน"
+                      />
                     </div>
                     <div className="w-20">
                       <label className="mb-1 block text-[11px] text-stone-500">Level</label>
@@ -1956,10 +1927,16 @@ function CharactersTab({
     const filtered = characters.filter((character) => {
       if (q && !character.name?.toLowerCase().includes(q)) return false
       if (filterStatus && character.status !== filterStatus) return false
-      if (filterUserId && character.ownerId !== filterUserId) return false
-      if (filterPartyId && !(character.partyTagIds ?? []).includes(filterPartyId)) return false
+      if (filterUserId === NO_USER_FILTER) {
+        if (character.ownerId) return false
+      } else if (filterUserId && character.ownerId !== filterUserId) return false
+      if (filterPartyId === NO_PARTY_FILTER) {
+        if ((character.partyTagIds ?? []).length > 0) return false
+      } else if (filterPartyId && !(character.partyTagIds ?? []).includes(filterPartyId)) return false
       if (filterClass && !(character.classLevels ?? []).some((cl) => cl.className === filterClass)) return false
-      if (filterCampaignId && !(character.campaignIds ?? []).includes(filterCampaignId)) return false
+      if (filterCampaignId === NO_CAMPAIGN_FILTER) {
+        if ((character.campaignIds ?? []).length > 0) return false
+      } else if (filterCampaignId && !(character.campaignIds ?? []).includes(filterCampaignId)) return false
       return true
     })
     return [...filtered].sort((a, b) => {
@@ -2038,7 +2015,7 @@ function CharactersTab({
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
+              className="w-36 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-sm"
             >
               {SORT_OPTIONS.map((opt) => (
                 <option key={opt.key} value={opt.key}>
@@ -2053,84 +2030,76 @@ function CharactersTab({
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="ค้นหาชื่อตัวละคร"
-              className="w-48 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-900 placeholder-stone-400 focus:border-violet-400 focus:outline-none"
+              className="w-48 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
             />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Status</label>
-            <select
+            <SearchSelect
+              options={STATUS_OPTIONS.map((s) => ({ value: s, label: s }))}
               value={filterStatus}
-              onChange={(e) => setFilterStatus(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {STATUS_OPTIONS.map((s) => (
-                <option key={s} value={s}>
-                  {s}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterStatus}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Party</label>
-            <select
+            <SearchSelect
+              options={[
+                { value: NO_PARTY_FILTER, label: 'ไม่มี Party' },
+                ...partyTags.map((t) => ({ value: t.id, label: t.name || '(ไม่มีชื่อ)' })),
+              ]}
               value={filterPartyId}
-              onChange={(e) => setFilterPartyId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {partyTags.map((t) => (
-                <option key={t.id} value={t.id}>
-                  {t.name || '(ไม่มีชื่อ)'}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterPartyId}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Campaign</label>
-            <select
+            <SearchSelect
+              options={[
+                { value: NO_CAMPAIGN_FILTER, label: 'ไม่มี Campaign' },
+                ...campaignsWithCharacters.map((c) => ({ value: c.id, label: c.name || '(ไม่มีชื่อ)' })),
+              ]}
               value={filterCampaignId}
-              onChange={(e) => setFilterCampaignId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {campaignsWithCharacters.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.name || '(ไม่มีชื่อ)'}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterCampaignId}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">User</label>
-            <select
+            <SearchSelect
+              options={[
+                { value: NO_USER_FILTER, label: 'ไม่มี User' },
+                ...users.map((u) => ({ value: u.id, label: u.username || '(ไม่มีชื่อ)' })),
+              ]}
               value={filterUserId}
-              onChange={(e) => setFilterUserId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {users.map((u) => (
-                <option key={u.id} value={u.id}>
-                  {u.username || '(ไม่มีชื่อ)'}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterUserId}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Class</label>
-            <select
+            <SearchSelect
+              options={classes.map((c) => ({ value: c, label: c }))}
               value={filterClass}
-              onChange={(e) => setFilterClass(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {classes.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterClass}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
+          <span className="px-2 py-1.5 text-xs text-stone-500">
+            ({filteredCharacters.length})
+          </span>
           {hasActiveFilters && (
             <button
               type="button"
