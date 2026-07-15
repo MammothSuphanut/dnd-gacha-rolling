@@ -1,7 +1,7 @@
-import { createContext, useContext, useEffect, useReducer } from 'react'
+import { createContext, useContext, useReducer } from 'react'
 import defaultData from '../data/defaultData'
-import { loadFromStorage, saveToStorage } from '../utils/storage'
 import { importImages } from '../utils/exportImport'
+import { DEFAULT_ENHANCEMENT_MULTIPLIERS } from '../utils/price'
 
 const LOCAL_HOSTNAMES = ['localhost', '127.0.0.1']
 
@@ -25,6 +25,7 @@ function reducer(state, action) {
         users: action.payload.users ?? [],
         partyTags: action.payload.partyTags ?? [],
         characters: action.payload.characters ?? [],
+        enhancementMultipliers: action.payload.enhancementMultipliers ?? DEFAULT_ENHANCEMENT_MULTIPLIERS,
       }
     }
     case 'MERGE_ALL': {
@@ -170,6 +171,12 @@ function reducer(state, action) {
         ),
       }
     }
+    case 'UPDATE_ENHANCEMENT_MULTIPLIERS': {
+      return {
+        ...state,
+        enhancementMultipliers: { ...state.enhancementMultipliers, ...action.payload },
+      }
+    }
     case 'ADD_CAMPAIGN': {
       return { ...state, campaigns: [...(state.campaigns ?? []), action.payload] }
     }
@@ -247,10 +254,6 @@ const GachaContext = createContext(null)
 
 export function GachaProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, undefined, getInitialState)
-
-  useEffect(() => {
-    saveToStorage(state)
-  }, [state])
 
   return (
     <GachaContext.Provider value={{ state, dispatch }}>

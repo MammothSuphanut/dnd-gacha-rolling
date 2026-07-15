@@ -595,7 +595,6 @@ export default function CampaignPage() {
       {campaignForm && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
-          onClick={() => setCampaignForm(null)}
         >
           <div
             className="animate-fade-in flex max-h-[90vh] w-full max-w-lg flex-col overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"

@@ -34,6 +34,17 @@ export function formatCopper(cp) {
   return sign + parts.join(' ')
 }
 
+export const ENHANCEMENT_LEVELS = [1, 2, 3]
+
+export const DEFAULT_ENHANCEMENT_MULTIPLIERS = { 1: 2, 2: 4, 3: 8 }
+
+// multipliers = { 1: number, 2: number, 3: number } — price at level N = base price * multipliers[N]
+export function getEnhancementMultiplier(level, multipliers) {
+  if (!level) return 1
+  const m = Number(multipliers?.[level])
+  return m && !Number.isNaN(m) ? m : 1
+}
+
 export function applyDiscountPercent(cp, percent) {
   const p = Number(percent)
   if (!p || Number.isNaN(p)) return cp

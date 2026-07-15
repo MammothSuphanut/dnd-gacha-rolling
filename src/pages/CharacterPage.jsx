@@ -29,6 +29,15 @@ const DEFAULT_COLOR = '#7c3aed'
 const MAX_TOTAL_LEVEL = 20
 const STATUS_OPTIONS = ['Astral Nexus', 'In-Action', 'Hall of Fame']
 
+const SORT_OPTIONS = [
+  { key: 'name', label: 'ชื่อ' },
+  { key: 'level', label: 'เลเวล' },
+  { key: 'status', label: 'Status' },
+  { key: 'party', label: 'Party' },
+  { key: 'campaign', label: 'Campaign' },
+  { key: 'user', label: 'User' },
+]
+
 function blankUser() {
   return { id: createId('user'), username: '', note: '', color: DEFAULT_COLOR }
 }
@@ -297,18 +306,37 @@ export default function CharacterPage() {
 
 function UsersTab({ users, dispatch, showToast }) {
   const [deleteTarget, setDeleteTarget] = useState(null)
+  const [userForm, setUserForm] = useState(null)
+  const isEdit = userForm ? users.some((u) => u.id === userForm.id) : false
 
   function addUser() {
-    dispatch({ type: 'ADD_USER', payload: blankUser() })
+    setUserForm(blankUser())
   }
 
-  function updateUser(id, patch) {
-    dispatch({ type: 'UPDATE_USER', payload: { id, patch } })
+  function editUser(user) {
+    setUserForm({ ...user })
+  }
+
+  function updateFormField(field, value) {
+    setUserForm((prev) => (prev ? { ...prev, [field]: value } : prev))
+  }
+
+  function saveUser() {
+    if (!userForm || !userForm.username.trim()) return
+    if (isEdit) {
+      dispatch({ type: 'UPDATE_USER', payload: { id: userForm.id, patch: userForm } })
+      showToast('แก้ไขผู้เล่นสำเร็จ', 'success')
+    } else {
+      dispatch({ type: 'ADD_USER', payload: userForm })
+      showToast('เพิ่มผู้เล่นใหม่แล้ว', 'success')
+    }
+    setUserForm(null)
   }
 
   function confirmDelete() {
     dispatch({ type: 'DELETE_USER', payload: { id: deleteTarget.id } })
     setDeleteTarget(null)
+    setUserForm(null)
     showToast('ลบผู้เล่นแล้ว', 'success')
   }
 
@@ -324,65 +352,129 @@ function UsersTab({ users, dispatch, showToast }) {
       </div>
 
       {users.length === 0 ? (
-        <p className="text-sm text-stone-400">ยังไม่มีผู้เล่น กด "+ เพิ่มผู้เล่น" เพื่อเริ่มต้น</p>
+        <div className="rounded-xl border border-dashed border-[#e2cfb3] bg-white p-12 text-center">
+          <p className="text-sm text-stone-400">ยังไม่มีผู้เล่น กด "+ เพิ่มผู้เล่น" เพื่อเริ่มต้น</p>
+        </div>
       ) : (
-        <div className="overflow-hidden rounded-lg border border-[#e2cfb3] bg-white shadow-sm">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="border-b border-[#e2cfb3] bg-[#f5ede0] text-left text-xs text-stone-500">
-                <th className="py-2 px-3 w-1/4">Username</th>
-                <th className="py-2 px-3">Note</th>
-                <th className="py-2 px-3 w-48">สีประจำตัว</th>
-                <th className="py-2 px-3 w-16"></th>
-              </tr>
-            </thead>
-            <tbody>
-              {users.map((user) => (
-                <tr key={user.id} className="border-b border-[#e2cfb3] hover:bg-[#f5ede0]">
-                  <td className="py-2 px-3">
-                    <input
-                      value={user.username}
-                      onChange={(e) => updateUser(user.id, { username: e.target.value })}
-                      placeholder="Username"
-                      className="w-full rounded-md border border-gray-300 px-2 py-1"
-                    />
-                  </td>
-                  <td className="py-2 px-3">
-                    <input
-                      value={user.note}
-                      onChange={(e) => updateUser(user.id, { note: e.target.value })}
-                      placeholder="หมายเหตุ"
-                      className="w-full rounded-md border border-gray-300 px-2 py-1"
-                    />
-                  </td>
-                  <td className="py-2 px-3">
-                    <div className="flex items-center gap-2">
-                      <input
-                        type="color"
-                        value={user.color || DEFAULT_COLOR}
-                        onChange={(e) => updateUser(user.id, { color: e.target.value })}
-                        className="h-8 w-8 cursor-pointer rounded border border-gray-300 bg-transparent p-0.5"
-                      />
-                      <input
-                        value={user.color || DEFAULT_COLOR}
-                        onChange={(e) => updateUser(user.id, { color: e.target.value })}
-                        className="w-24 rounded-md border border-gray-300 px-2 py-1 font-mono text-xs uppercase"
-                      />
-                    </div>
-                  </td>
-                  <td className="py-2 px-3 text-right">
-                    <button
-                      type="button"
-                      onClick={() => setDeleteTarget(user)}
-                      className="text-xs text-red-600 hover:underline"
-                    >
-                      ลบ
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {users.map((user) => (
+            <button
+              type="button"
+              key={user.id}
+              onClick={() => editUser(user)}
+              className="group flex items-center gap-3 overflow-hidden rounded-xl border border-[#e2cfb3] bg-white p-3 text-left shadow-sm transition-all duration-200 hover:shadow-md"
+            >
+              <span
+                className="h-10 w-10 shrink-0 rounded-full border border-stone-200"
+                style={{ backgroundColor: user.color || DEFAULT_COLOR }}
+              />
+              <div className="min-w-0 flex-1">
+                <div className="truncate text-sm font-semibold text-stone-900 leading-tight">
+                  {user.username || '(ไม่มีชื่อ)'}
+                </div>
+                <div className="mt-0.5 truncate text-xs text-stone-500 leading-normal">
+                  {user.note || ' '}
+                </div>
+              </div>
+            </button>
+          ))}
+        </div>
+      )}
+
+      {userForm && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
+        >
+          <div
+            className="animate-fade-in flex max-h-[90vh] w-full max-w-md flex-col overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-[#e2cfb3] px-6 py-4 bg-[#f5ede0]/30">
+              <h2 className="font-cinzel text-xl font-bold text-stone-900">
+                {isEdit ? 'แก้ไขผู้เล่น' : 'เพิ่มผู้เล่นใหม่'}
+              </h2>
+              <button
+                type="button"
+                onClick={() => setUserForm(null)}
+                className="rounded-md p-1 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600 transition-colors"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <div className="overflow-y-auto px-6 py-4 space-y-4 text-sm">
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">Username <span className="text-red-500">*</span></label>
+                <input
+                  type="text"
+                  value={userForm.username}
+                  onChange={(e) => updateFormField('username', e.target.value)}
+                  placeholder="Username"
+                  className="w-full rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-stone-900 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200 transition-shadow"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">Note</label>
+                <input
+                  type="text"
+                  value={userForm.note}
+                  onChange={(e) => updateFormField('note', e.target.value)}
+                  placeholder="หมายเหตุ"
+                  className="w-full rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-stone-900 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200 transition-shadow"
+                />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">สีประจำตัว</label>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="color"
+                    value={userForm.color || DEFAULT_COLOR}
+                    onChange={(e) => updateFormField('color', e.target.value)}
+                    className="h-9 w-9 cursor-pointer rounded border border-gray-300 bg-transparent p-0.5"
+                  />
+                  <input
+                    value={userForm.color || DEFAULT_COLOR}
+                    onChange={(e) => updateFormField('color', e.target.value)}
+                    className="w-28 rounded-lg border border-[#e2cfb3] px-3 py-2 font-mono text-xs uppercase focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-between items-center border-t border-[#e2cfb3] px-6 py-3 bg-[#f5ede0]/10">
+              <div>
+                {isEdit && (
+                  <button
+                    type="button"
+                    onClick={() => setDeleteTarget(userForm)}
+                    className="rounded-lg border border-red-200 bg-red-50 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-100 transition-colors"
+                  >
+                    ลบผู้เล่น
+                  </button>
+                )}
+              </div>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => setUserForm(null)}
+                  className="rounded-lg px-4 py-2 text-stone-600 hover:bg-[#f5ede0] transition-colors"
+                >
+                  ยกเลิก
+                </button>
+                <button
+                  type="button"
+                  onClick={saveUser}
+                  disabled={!userForm.username.trim()}
+                  className="rounded-lg bg-violet-700 px-4 py-2 font-medium text-white shadow-sm hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:text-stone-500 transition-colors"
+                >
+                  บันทึก
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
@@ -401,18 +493,37 @@ function UsersTab({ users, dispatch, showToast }) {
 
 function PartyTagsTab({ partyTags, dispatch, showToast }) {
   const [deleteTarget, setDeleteTarget] = useState(null)
+  const [tagForm, setTagForm] = useState(null)
+  const isEdit = tagForm ? partyTags.some((t) => t.id === tagForm.id) : false
 
   function addTag() {
-    dispatch({ type: 'ADD_PARTY_TAG', payload: blankPartyTag() })
+    setTagForm(blankPartyTag())
   }
 
-  function updateTag(id, patch) {
-    dispatch({ type: 'UPDATE_PARTY_TAG', payload: { id, patch } })
+  function editTag(tag) {
+    setTagForm({ ...tag })
+  }
+
+  function updateFormField(field, value) {
+    setTagForm((prev) => (prev ? { ...prev, [field]: value } : prev))
+  }
+
+  function saveTag() {
+    if (!tagForm || !tagForm.name.trim()) return
+    if (isEdit) {
+      dispatch({ type: 'UPDATE_PARTY_TAG', payload: { id: tagForm.id, patch: tagForm } })
+      showToast('แก้ไข Party สำเร็จ', 'success')
+    } else {
+      dispatch({ type: 'ADD_PARTY_TAG', payload: tagForm })
+      showToast('เพิ่ม Party ใหม่แล้ว', 'success')
+    }
+    setTagForm(null)
   }
 
   function confirmDelete() {
     dispatch({ type: 'DELETE_PARTY_TAG', payload: { id: deleteTarget.id } })
     setDeleteTarget(null)
+    setTagForm(null)
     showToast('ลบ Party แล้ว', 'success')
   }
 
@@ -428,59 +539,116 @@ function PartyTagsTab({ partyTags, dispatch, showToast }) {
       </div>
 
       {partyTags.length === 0 ? (
-        <p className="text-sm text-stone-400">ยังไม่มี Party กด "+ เพิ่ม Party" เพื่อเริ่มต้น</p>
+        <div className="rounded-xl border border-dashed border-[#e2cfb3] bg-white p-12 text-center">
+          <p className="text-sm text-stone-400">ยังไม่มี Party กด "+ เพิ่ม Party" เพื่อเริ่มต้น</p>
+        </div>
       ) : (
-        <div className="overflow-hidden rounded-lg border border-[#e2cfb3] bg-white shadow-sm">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="border-b border-[#e2cfb3] bg-[#f5ede0] text-left text-xs text-stone-500">
-                <th className="py-2 px-3">ชื่อ Party</th>
-                <th className="py-2 px-3 w-48">สี</th>
-                <th className="py-2 px-3 w-16"></th>
-              </tr>
-            </thead>
-            <tbody>
-              {partyTags.map((tag) => (
-                <tr key={tag.id} className="border-b border-[#e2cfb3] hover:bg-[#f5ede0]">
-                  <td className="py-2 px-3">
-                    <div className="flex items-center gap-2">
-                      <ColorSwatch color={tag.color} />
-                      <input
-                        value={tag.name}
-                        onChange={(e) => updateTag(tag.id, { name: e.target.value })}
-                        placeholder="ชื่อ Party"
-                        className="w-full rounded-md border border-gray-300 px-2 py-1"
-                      />
-                    </div>
-                  </td>
-                  <td className="py-2 px-3">
-                    <div className="flex items-center gap-2">
-                      <input
-                        type="color"
-                        value={tag.color || DEFAULT_COLOR}
-                        onChange={(e) => updateTag(tag.id, { color: e.target.value })}
-                        className="h-8 w-8 cursor-pointer rounded border border-gray-300 bg-transparent p-0.5"
-                      />
-                      <input
-                        value={tag.color || DEFAULT_COLOR}
-                        onChange={(e) => updateTag(tag.id, { color: e.target.value })}
-                        className="w-24 rounded-md border border-gray-300 px-2 py-1 font-mono text-xs uppercase"
-                      />
-                    </div>
-                  </td>
-                  <td className="py-2 px-3 text-right">
-                    <button
-                      type="button"
-                      onClick={() => setDeleteTarget(tag)}
-                      className="text-xs text-red-600 hover:underline"
-                    >
-                      ลบ
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {partyTags.map((tag) => (
+            <button
+              type="button"
+              key={tag.id}
+              onClick={() => editTag(tag)}
+              className="group flex items-center gap-3 overflow-hidden rounded-xl border border-[#e2cfb3] bg-white p-3 text-left shadow-sm transition-all duration-200 hover:shadow-md"
+            >
+              <span
+                className="h-10 w-10 shrink-0 rounded-full border border-stone-200"
+                style={{ backgroundColor: tag.color || DEFAULT_COLOR }}
+              />
+              <div className="min-w-0 flex-1">
+                <div className="truncate text-sm font-semibold text-stone-900 leading-tight">
+                  {tag.name || '(ไม่มีชื่อ)'}
+                </div>
+              </div>
+            </button>
+          ))}
+        </div>
+      )}
+
+      {tagForm && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
+        >
+          <div
+            className="animate-fade-in flex max-h-[90vh] w-full max-w-md flex-col overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-[#e2cfb3] px-6 py-4 bg-[#f5ede0]/30">
+              <h2 className="font-cinzel text-xl font-bold text-stone-900">
+                {isEdit ? 'แก้ไข Party' : 'เพิ่ม Party ใหม่'}
+              </h2>
+              <button
+                type="button"
+                onClick={() => setTagForm(null)}
+                className="rounded-md p-1 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600 transition-colors"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <div className="overflow-y-auto px-6 py-4 space-y-4 text-sm">
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">ชื่อ Party <span className="text-red-500">*</span></label>
+                <input
+                  type="text"
+                  value={tagForm.name}
+                  onChange={(e) => updateFormField('name', e.target.value)}
+                  placeholder="ชื่อ Party"
+                  className="w-full rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-stone-900 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200 transition-shadow"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">สี</label>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="color"
+                    value={tagForm.color || DEFAULT_COLOR}
+                    onChange={(e) => updateFormField('color', e.target.value)}
+                    className="h-9 w-9 cursor-pointer rounded border border-gray-300 bg-transparent p-0.5"
+                  />
+                  <input
+                    value={tagForm.color || DEFAULT_COLOR}
+                    onChange={(e) => updateFormField('color', e.target.value)}
+                    className="w-28 rounded-lg border border-[#e2cfb3] px-3 py-2 font-mono text-xs uppercase focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-between items-center border-t border-[#e2cfb3] px-6 py-3 bg-[#f5ede0]/10">
+              <div>
+                {isEdit && (
+                  <button
+                    type="button"
+                    onClick={() => setDeleteTarget(tagForm)}
+                    className="rounded-lg border border-red-200 bg-red-50 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-100 transition-colors"
+                  >
+                    ลบ Party
+                  </button>
+                )}
+              </div>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => setTagForm(null)}
+                  className="rounded-lg px-4 py-2 text-stone-600 hover:bg-[#f5ede0] transition-colors"
+                >
+                  ยกเลิก
+                </button>
+                <button
+                  type="button"
+                  onClick={saveTag}
+                  disabled={!tagForm.name.trim()}
+                  className="rounded-lg bg-violet-700 px-4 py-2 font-medium text-white shadow-sm hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:text-stone-500 transition-colors"
+                >
+                  บันทึก
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
@@ -823,7 +991,7 @@ function CharacterFormModal({
     const selectedCampaigns = campaigns.filter((c) => form.campaignIds.includes(c.id))
 
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={onCancel}>
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
         <div
           className="flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
           onClick={(e) => e.stopPropagation()}
@@ -1165,7 +1333,7 @@ function CharacterFormModal({
   const activePreview = gallery.images.find((img) => img.id === gallery.activeImageId)?.dataUrl
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={onCancel}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
       <div
         className="flex max-h-[92vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
@@ -1746,15 +1914,46 @@ function CharactersTab({
   const [filterPartyId, setFilterPartyId] = useState('')
   const [filterClass, setFilterClass] = useState('')
   const [filterCampaignId, setFilterCampaignId] = useState('')
+  const [sortBy, setSortBy] = useState('name')
 
   const partyTagsById = useMemo(
     () => Object.fromEntries(partyTags.map((t) => [t.id, t])),
     [partyTags],
   )
 
+  const campaignsById = useMemo(
+    () => Object.fromEntries(campaigns.map((c) => [c.id, c])),
+    [campaigns],
+  )
+
+  const usersById = useMemo(
+    () => Object.fromEntries(users.map((u) => [u.id, u])),
+    [users],
+  )
+
+  const campaignsWithCharacters = useMemo(() => {
+    const usedCampaignIds = new Set(characters.flatMap((c) => c.campaignIds ?? []))
+    return campaigns.filter((c) => usedCampaignIds.has(c.id))
+  }, [campaigns, characters])
+
+  function getSortValue(character) {
+    switch (sortBy) {
+      case 'status':
+        return character.status || ''
+      case 'party':
+        return partyTagsById[(character.partyTagIds ?? [])[0]]?.name || ''
+      case 'campaign':
+        return campaignsById[(character.campaignIds ?? [])[0]]?.name || ''
+      case 'user':
+        return usersById[character.ownerId]?.username || ''
+      default:
+        return character.name || ''
+    }
+  }
+
   const filteredCharacters = useMemo(() => {
     const q = search.trim().toLowerCase()
-    return characters.filter((character) => {
+    const filtered = characters.filter((character) => {
       if (q && !character.name?.toLowerCase().includes(q)) return false
       if (filterStatus && character.status !== filterStatus) return false
       if (filterUserId && character.ownerId !== filterUserId) return false
@@ -1763,7 +1962,23 @@ function CharactersTab({
       if (filterCampaignId && !(character.campaignIds ?? []).includes(filterCampaignId)) return false
       return true
     })
-  }, [characters, search, filterStatus, filterUserId, filterPartyId, filterClass, filterCampaignId])
+    return [...filtered].sort((a, b) => {
+      if (sortBy === 'level') return totalLevel(b) - totalLevel(a)
+      return getSortValue(a).localeCompare(getSortValue(b), 'th')
+    })
+  }, [
+    characters,
+    search,
+    filterStatus,
+    filterUserId,
+    filterPartyId,
+    filterClass,
+    filterCampaignId,
+    sortBy,
+    partyTagsById,
+    campaignsById,
+    usersById,
+  ])
 
   function resetFilters() {
     setSearch('')
@@ -1819,6 +2034,20 @@ function CharactersTab({
       <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
         <div className="flex flex-wrap items-end gap-2">
           <div>
+            <label className="mb-1 block text-xs text-stone-500">เรียงตาม (A-Z)</label>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
+            >
+              {SORT_OPTIONS.map((opt) => (
+                <option key={opt.key} value={opt.key}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
             <label className="mb-1 block text-xs text-stone-500">ค้นหา</label>
             <input
               value={search}
@@ -1843,21 +2072,6 @@ function CharactersTab({
             </select>
           </div>
           <div>
-            <label className="mb-1 block text-xs text-stone-500">User</label>
-            <select
-              value={filterUserId}
-              onChange={(e) => setFilterUserId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {users.map((u) => (
-                <option key={u.id} value={u.id}>
-                  {u.username || '(ไม่มีชื่อ)'}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
             <label className="mb-1 block text-xs text-stone-500">Party</label>
             <select
               value={filterPartyId}
@@ -1873,6 +2087,36 @@ function CharactersTab({
             </select>
           </div>
           <div>
+            <label className="mb-1 block text-xs text-stone-500">Campaign</label>
+            <select
+              value={filterCampaignId}
+              onChange={(e) => setFilterCampaignId(e.target.value)}
+              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
+            >
+              <option value="">ทั้งหมด</option>
+              {campaignsWithCharacters.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.name || '(ไม่มีชื่อ)'}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className="mb-1 block text-xs text-stone-500">User</label>
+            <select
+              value={filterUserId}
+              onChange={(e) => setFilterUserId(e.target.value)}
+              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
+            >
+              <option value="">ทั้งหมด</option>
+              {users.map((u) => (
+                <option key={u.id} value={u.id}>
+                  {u.username || '(ไม่มีชื่อ)'}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
             <label className="mb-1 block text-xs text-stone-500">Class</label>
             <select
               value={filterClass}
@@ -1883,21 +2127,6 @@ function CharactersTab({
               {classes.map((c) => (
                 <option key={c} value={c}>
                   {c}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label className="mb-1 block text-xs text-stone-500">Campaign</label>
-            <select
-              value={filterCampaignId}
-              onChange={(e) => setFilterCampaignId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {campaigns.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.name || '(ไม่มีชื่อ)'}
                 </option>
               ))}
             </select>
@@ -1938,7 +2167,7 @@ function CharactersTab({
                 type="button"
                 key={character.id}
                 onClick={() => openEdit(character)}
-                className="group flex flex-row items-stretch overflow-hidden rounded-xl border border-[#e2cfb3] bg-white text-left shadow-sm transition-all duration-200 hover:shadow-md h-16 sm:h-20"
+                className="group flex flex-row items-stretch overflow-hidden rounded-xl border border-[#e2cfb3] bg-white text-left shadow-sm transition-all duration-200 hover:shadow-md min-h-16 sm:min-h-20"
               >
                 {/* Left Portrait Image */}
                 <div className="relative w-16 sm:w-20 shrink-0 bg-[#f5ede0] overflow-hidden">
@@ -1964,14 +2193,61 @@ function CharactersTab({
                       {summary}
                     </div>
                   )}
-                  {character.status && (
-                    <span
-                      className={`mt-1 inline-block w-fit truncate rounded-full px-1.5 py-0.5 text-[9px] sm:text-[10px] font-semibold leading-none ${
-                        STATUS_BADGE_STYLES[character.status] || 'bg-stone-100 text-stone-600'
-                      }`}
-                    >
-                      {character.status}
-                    </span>
+                  {(character.status || character.ownerId) && (
+                    <div className="mt-1 flex flex-wrap items-center gap-1">
+                      {character.status && (
+                        <span
+                          className={`inline-block w-fit truncate rounded-full px-1.5 py-0.5 text-[9px] sm:text-[10px] font-semibold leading-none ${
+                            STATUS_BADGE_STYLES[character.status] || 'bg-stone-100 text-stone-600'
+                          }`}
+                        >
+                          {character.status}
+                        </span>
+                      )}
+                      {(() => {
+                        const owner = users.find((u) => u.id === character.ownerId)
+                        if (!owner) return null
+                        return (
+                          <span
+                            className="inline-flex max-w-[6.5rem] items-center gap-1 truncate rounded-full px-1.5 py-0.5 text-[9px] sm:text-[10px] font-medium leading-none"
+                            style={{
+                              backgroundColor: `${owner.color || DEFAULT_COLOR}1a`,
+                              color: owner.color || DEFAULT_COLOR,
+                            }}
+                          >
+                            <span
+                              className="h-1.5 w-1.5 shrink-0 rounded-full"
+                              style={{ backgroundColor: owner.color || DEFAULT_COLOR }}
+                            />
+                            <span className="truncate">{owner.username}</span>
+                          </span>
+                        )
+                      })()}
+                    </div>
+                  )}
+                  {(character.partyTagIds ?? []).length > 0 && (
+                    <div className="mt-1 flex flex-wrap items-center gap-1">
+                      {(character.partyTagIds ?? []).map((tagId) => {
+                        const party = partyTags.find((t) => t.id === tagId)
+                        if (!party) return null
+                        return (
+                          <span
+                            key={tagId}
+                            className="inline-flex max-w-[7rem] items-center gap-1 truncate rounded-full px-1.5 py-0.5 text-[9px] sm:text-[10px] font-medium leading-none"
+                            style={{
+                              backgroundColor: `${party.color || DEFAULT_COLOR}1a`,
+                              color: party.color || DEFAULT_COLOR,
+                            }}
+                          >
+                            <span
+                              className="h-1.5 w-1.5 shrink-0 rounded-full"
+                              style={{ backgroundColor: party.color || DEFAULT_COLOR }}
+                            />
+                            <span className="truncate">{party.name}</span>
+                          </span>
+                        )
+                      })}
+                    </div>
                   )}
                 </div>
               </button>

@@ -7,6 +7,7 @@ import users from './users.json'
 import partyTags from './partyTags.json'
 import characters from './characters.json'
 import images from './images.json'
+import { DEFAULT_ENHANCEMENT_MULTIPLIERS } from '../utils/price'
 
 export default {
   version: 1,
@@ -17,4 +18,5 @@ export default {
   partyTags,
   characters,
   images,
+  enhancementMultipliers: DEFAULT_ENHANCEMENT_MULTIPLIERS,
 }

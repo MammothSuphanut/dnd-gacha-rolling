@@ -709,10 +709,7 @@ function RateUpModal({
   }
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4 backdrop-blur-sm"
-      onClick={onClose}
-    >
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4 backdrop-blur-sm">
       <div
         className="flex max-h-[88vh] w-full max-w-7xl flex-col rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
