@@ -238,7 +238,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
   )
 
   return (
-    <div>
+    <div className="pb-[150px]">
       <h2 className="mb-4 text-xl font-bold text-stone-900">
         สุ่มค่าพลัง ({diceCount}d{diceSides} ตัดต่ำสุด {dropCount} ลูก)
       </h2>
