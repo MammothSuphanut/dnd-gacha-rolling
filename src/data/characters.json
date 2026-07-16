@@ -672,7 +672,7 @@
       {
         "id": "classlevel-da2ac385-41ef-4b48-bb1e-8abacaa49ebf",
         "className": "Cleric",
-        "subclassName": "",
+        "subclassName": "Light Domain",
         "level": 2
       }
     ],
@@ -680,12 +680,12 @@
     "background": "Acolyte",
     "size": "Medium",
     "stats": {
-      "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "cha": 0
+      "str": 12,
+      "dex": 14,
+      "con": 16,
+      "int": 9,
+      "wis": 20,
+      "cha": 12
     },
     "alignment": "",
     "faith": "",
@@ -726,7 +726,7 @@
       {
         "id": "classlevel-1154d9d2-3856-4bd0-a217-2e09fc2a6c4e",
         "className": "Wizard",
-        "subclassName": "",
+        "subclassName": "Illusionist",
         "level": 2
       }
     ],
@@ -734,12 +734,12 @@
     "background": "Sage",
     "size": "Medium",
     "stats": {
-      "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "cha": 0
+      "str": 12,
+      "dex": 14,
+      "con": 16,
+      "int": 18,
+      "wis": 14,
+      "cha": 12
     },
     "alignment": "",
     "faith": "",
@@ -780,7 +780,7 @@
       {
         "id": "classlevel-9118e8ec-3809-473c-809b-00f4cd3d6d5a",
         "className": "Paladin",
-        "subclassName": "",
+        "subclassName": "Oath of Zeal",
         "level": 2
       }
     ],
@@ -788,12 +788,12 @@
     "background": "Noble",
     "size": "Medium",
     "stats": {
-      "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "cha": 0
+      "str": 15,
+      "dex": 13,
+      "con": 16,
+      "int": 12,
+      "wis": 12,
+      "cha": 18
     },
     "alignment": "",
     "faith": "",
