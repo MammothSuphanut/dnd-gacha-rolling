@@ -34,7 +34,13 @@ const DEFAULT_DICE_COUNT = 4
 const DEFAULT_DICE_SIDES = 6
 const DEFAULT_DROP_COUNT = 1
 
-export default function StatRollPage({ statRollState, setStatRollState }) {
+export default function StatRollPage({
+  statRollState,
+  setStatRollState,
+  pickMode = false,
+  pickedStatKeys,
+  onToggleStatKey,
+}) {
   const {
     results,
     assignments,
@@ -450,10 +456,26 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                 return (
                   <div
                     key={stat.key}
-                    className="flex flex-col gap-2 rounded-lg border border-[#e2cfb3] bg-white p-3"
+                    className={`flex flex-col gap-2 rounded-lg border p-3 ${
+                      pickMode && pickedStatKeys?.has(stat.key)
+                        ? 'border-violet-300 bg-violet-50'
+                        : 'border-[#e2cfb3] bg-white'
+                    }`}
                   >
                     <div className="flex items-center justify-between">
-                      <span className="font-semibold text-stone-700">{stat.label}</span>
+                      <span className="flex items-center gap-1.5 font-semibold text-stone-700">
+                        {pickMode && (
+                          <input
+                            type="checkbox"
+                            checked={!!pickedStatKeys?.has(stat.key)}
+                            disabled={!assignedId}
+                            onChange={() => onToggleStatKey?.(stat.key)}
+                            className="h-4 w-4 accent-violet-700 disabled:opacity-40"
+                            title={!assignedId ? 'ยังไม่ได้ลงค่าให้ช่องนี้' : ''}
+                          />
+                        )}
+                        {stat.label}
+                      </span>
                       <span className="text-sm text-stone-500">
                         {score}
                         {currentBonus ? (

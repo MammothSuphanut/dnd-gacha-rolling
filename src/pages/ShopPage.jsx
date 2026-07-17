@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import Modal from '../components/Modal'
 import ConfirmDialog from '../components/ConfirmDialog'
 import SearchSelect from '../components/SearchSelect'
+import AddCartToCharacterModal from '../components/AddCartToCharacterModal'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
@@ -243,7 +244,7 @@ function ItemPreviewCard({ item, shopName }) {
   )
 }
 
-function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onAddToSellCart, showToast }) {
+function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onAddCostToCart, showToast }) {
   const enhanceableOptions = useMemo(() => {
     const list = []
     for (const shop of shops) {
@@ -364,6 +365,23 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onA
         ...prev,
       ].slice(0, 8))
 
+      // Every attempt costs money regardless of outcome — charge it to the buy cart.
+      if (costCp != null) {
+        onAddCostToCart({
+          cartId: createId('cart'),
+          shopId: selected?.shopId ?? 'manual',
+          shopName: selected?.shopName ?? 'กำหนดเอง',
+          itemId: item?.id ?? itemName,
+          itemName: `${verb}: ${itemName}`,
+          priceType: isRepair ? 'repair' : 'enhance',
+          priceLabel: isRepair ? `ค่าซ่อม (+${currentLevel})` : `ค่าตีบวก (+${currentLevel} → +${targetLevel})`,
+          priceText: formatCopper(costCp),
+          priceCp: costCp,
+          level: isRepair ? currentLevel : targetLevel,
+          qty: 1,
+        })
+      }
+
       if (outcome === 'break') {
         setBroken(true)
         showToast(`💥 "${itemName}" แตกพัง! ต้องซื้อชิ้นใหม่`, 'error')
@@ -378,35 +396,6 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onA
           showToast(`⬇️ ${verb}ลดขั้น! "${itemName}" เหลือ +${toLevel}`, 'error')
         } else {
           showToast(`${verb} "${itemName}" ไม่สำเร็จ ลองใหม่อีกครั้ง`, 'info')
-        }
-
-        let resultEnhanceLevel
-        let resultConditionPct
-        if (isRepair) {
-          resultEnhanceLevel = currentLevel
-          resultConditionPct = outcome === 'success' ? 100 : repairDamage
-        } else {
-          resultEnhanceLevel = toLevel
-          resultConditionPct = 100
-        }
-        const resultPriceCp =
-          basePriceCp != null
-            ? basePriceCp * getEnhancementMultiplier(resultEnhanceLevel, enhancementMultipliers) * (resultConditionPct / 100)
-            : null
-        if (resultPriceCp != null) {
-          const conditionIdx = REPAIR_DAMAGE_LEVELS.indexOf(resultConditionPct)
-          onAddToSellCart({
-            cartId: createId('sellcart'),
-            shopId: selected?.shopId ?? 'manual',
-            shopName: selected?.shopName ?? 'กำหนดเอง',
-            itemId: item?.id ?? itemName,
-            itemName,
-            priceLabel: activeTier ? PRICE_TYPES.find((p) => p.type === activeTier)?.label : 'ราคาที่กำหนดเอง',
-            conditionLabel: `ระดับ ${conditionIdx + 1} (${resultConditionPct}%)`,
-            enhanceLevel: resultEnhanceLevel,
-            qty: 1,
-            priceCp: resultPriceCp,
-          })
         }
       }
       setRolling(false)
@@ -1735,8 +1724,33 @@ function ShopTile({ shop, matchedCount, totalCount, isFiltered, onSelect, onEdit
   )
 }
 
-function CartModal({ open, onClose, cartState, setCartState, sellCartState, setSellCartState, showToast }) {
+function CartModal({
+  open,
+  onClose,
+  cartState,
+  setCartState,
+  sellCartState,
+  setSellCartState,
+  showToast,
+  characters,
+  dispatch,
+}) {
   const [tab, setTab] = useState('buy')
+  const [addToCharacterOpen, setAddToCharacterOpen] = useState(false)
+
+  function handleAddCartToCharacters(grouped) {
+    for (const [characterId, names] of grouped) {
+      const target = characters.find((c) => c.id === characterId)
+      if (!target) continue
+      const equipment = Array.isArray(target.equipment) ? target.equipment : []
+      dispatch({
+        type: 'UPDATE_CHARACTER',
+        payload: { id: characterId, patch: { equipment: [...equipment, ...names] } },
+      })
+    }
+    showToast(`เพิ่มของเข้าตัวละคร ${grouped.size} คนแล้ว`, 'success')
+    setAddToCharacterOpen(false)
+  }
 
   const buyGroups = useMemo(() => {
     const map = new Map()
@@ -2084,14 +2098,24 @@ function CartModal({ open, onClose, cartState, setCartState, sellCartState, setS
                 </div>
               </div>
               <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
-                <button
-                  type="button"
-                  onClick={clearCart}
-                  disabled={cartState.items.length === 0}
-                  className="rounded-md border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:cursor-not-allowed disabled:border-[#e2cfb3] disabled:text-gray-300"
-                >
-                  ล้างตระกร้าซื้อ
-                </button>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={clearCart}
+                    disabled={cartState.items.length === 0}
+                    className="rounded-md border border-red-300 px-3 py-1.5 text-sm text-red-600 hover:bg-red-50 disabled:cursor-not-allowed disabled:border-[#e2cfb3] disabled:text-gray-300"
+                  >
+                    ล้างตระกร้าซื้อ
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setAddToCharacterOpen(true)}
+                    disabled={cartState.items.length === 0}
+                    className="rounded-md border border-violet-300 bg-violet-50 px-3 py-1.5 text-sm font-medium text-violet-700 hover:bg-violet-100 disabled:cursor-not-allowed disabled:border-[#e2cfb3] disabled:bg-transparent disabled:text-gray-300"
+                  >
+                    ➕ เพิ่มเข้าตัวละคร
+                  </button>
+                </div>
                 <div className="text-right">
                   <div className="text-sm text-stone-500">
                     รวมทุกร้าน (หลังต่อราคาร้าน): {formatCopper(buyGrandSubtotalCp)}
@@ -2142,6 +2166,15 @@ function CartModal({ open, onClose, cartState, setCartState, sellCartState, setS
           </div>
         </div>
       </div>
+
+      {addToCharacterOpen && (
+        <AddCartToCharacterModal
+          items={cartState.items}
+          characters={characters}
+          onClose={() => setAddToCharacterOpen(false)}
+          onConfirm={handleAddCartToCharacters}
+        />
+      )}
     </div>
   )
 }
@@ -2353,6 +2386,28 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
     })
   }
 
+  // Used by the enhance/repair modal — the cost of an attempt is already
+  // fully computed there, so this pushes it straight into the buy cart.
+  function handleAddCostToCart(entry) {
+    setCartState((prev) => {
+      const existing = prev.items.find(
+        (i) =>
+          i.shopId === entry.shopId &&
+          i.itemId === entry.itemId &&
+          i.priceLabel === entry.priceLabel &&
+          i.level === entry.level &&
+          i.priceCp === entry.priceCp,
+      )
+      if (existing) {
+        return {
+          ...prev,
+          items: prev.items.map((i) => (i.cartId === existing.cartId ? { ...i, qty: i.qty + entry.qty } : i)),
+        }
+      }
+      return { ...prev, items: [...prev.items, entry] }
+    })
+  }
+
   const totalItems = shops.reduce((sum, s) => sum + s.items.length, 0)
 
   return (
@@ -2526,6 +2581,8 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
         sellCartState={sellCartState}
         setSellCartState={setSellCartState}
         showToast={showToast}
+        characters={state.characters ?? []}
+        dispatch={dispatch}
       />
 
       <EnhanceUpgradeModal
@@ -2533,7 +2590,7 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
         onClose={() => setUpgradeModalOpen(false)}
         shops={shops}
         enhancementMultipliers={enhancementMultipliers}
-        onAddToSellCart={handleAddToSellCart}
+        onAddCostToCart={handleAddCostToCart}
         showToast={showToast}
       />
 

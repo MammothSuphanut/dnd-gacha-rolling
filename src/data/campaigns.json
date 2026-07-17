@@ -1011,7 +1011,8 @@
     "party": "",
     "note": "เควสเริ่มต้นสายเหนือใน Wildemount",
     "partyTagIds": [
-      "tag-ec0d2618-4421-486a-a327-c7f666827175"
+      "tag-ec0d2618-4421-486a-a327-c7f666827175",
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
     ]
   },
   {
@@ -1048,7 +1049,11 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "มักใช้เป็นเกม One-Shot ต้อนรับผู้เล่นใหม่"
+    "note": "มักใช้เป็นเกม One-Shot ต้อนรับผู้เล่นใหม่",
+    "partyTagIds": [
+      "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca",
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ]
   },
   {
     "id": "campaign-af8e68f3-99ad-4a1c-ad21-5cd8e8d4d1c5",
@@ -1127,7 +1132,7 @@
     "source": "Wizards (Essentials Kit ซีรีส์)",
     "name": "Essentials Kit: Dragon of Icespire Peak",
     "status": "-",
-    "briefContent": "แคมเปญหลักในชุดกล่อง Essentials บอร์ดเควสรอบเมืองพานดาลินเพื่อสะสมเลเวลไปล่ามังกรขาว",
+    "briefContent": "แคมเปญหลักในชุดกล่อง Essentials บอร์ดเควสรอบเมืองพานดาลินเพื่อสะสมเลเวลไปล่ามังก��ขาว",
     "level": "1 - 6",
     "continuesFrom": "",
     "campaignType": "Long Campaign",
