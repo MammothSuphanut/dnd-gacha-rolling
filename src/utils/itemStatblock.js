@@ -216,7 +216,11 @@ const RARITY_MIDPOINT_CP = {
 
 function priceFromEntry(entry) {
   if (entry.value != null) return entry.value
-  return RARITY_MIDPOINT_CP[entry.valueRarity] ?? null
+  if (entry.valueRarity != null) return RARITY_MIDPOINT_CP[entry.valueRarity] ?? null
+  // Named magic items (e.g. "Amulet of the Devout") rarely carry a `value`
+  // at all — 5e RAW leaves their price to the DM — but do carry a `rarity`
+  // tier, so fall back to that tier's midpoint as a last resort.
+  return RARITY_MIDPOINT_CP[entry.rarity] ?? null
 }
 
 function baseStatblock(data, entry, { bonusLabel, variant } = {}) {
