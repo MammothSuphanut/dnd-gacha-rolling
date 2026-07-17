@@ -1145,7 +1145,7 @@ function slugify(text) {
 // D&D rarity tiers, low to high — used to sort accordion groups sensibly
 // when a shop is grouped by rarity instead of category (see groupField
 // below) rather than falling back to insertion/alphabetical order.
-const RARITY_ORDER = ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary', 'Artifact']
+const RARITY_ORDER = ['Mundane', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary', 'Artifact', 'Varies']
 function groupSortIndex(label) {
   const i = RARITY_ORDER.indexOf(label)
   return i === -1 ? RARITY_ORDER.length : i
