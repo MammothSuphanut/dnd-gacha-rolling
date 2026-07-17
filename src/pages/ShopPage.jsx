@@ -1,9 +1,11 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { useVirtualizer } from '@tanstack/react-virtual'
 import { useSearchParams } from 'react-router-dom'
 import Modal from '../components/Modal'
 import ConfirmDialog from '../components/ConfirmDialog'
 import SearchSelect from '../components/SearchSelect'
 import AddCartToCharacterModal from '../components/AddCartToCharacterModal'
+import ItemStatblockModal from '../components/ItemStatblockModal'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
@@ -34,6 +36,7 @@ function blankItem() {
     name: '',
     category: '',
     subCategory: '',
+    rarity: '',
     priceNormal: '',
     priceCheap: '',
     priceExpensive: '',
@@ -42,19 +45,25 @@ function blankItem() {
     urban: false,
     premium: false,
     enhanceable: false,
-    note: '',
+    magical: false,
+    nonMagical: true,
+    attunement: false,
+    cursed: false,
+    consumable: false,
+    description: '',
   }
 }
 
 function itemMatchesQuery(item, q) {
   if (!q) return true
-  const haystack = `${item.name} ${item.category} ${item.subCategory} ${item.note}`.toLowerCase()
+  const haystack = `${item.name} ${item.category} ${item.subCategory} ${item.rarity} ${item.description}`.toLowerCase()
   return haystack.includes(q)
 }
 
 function itemMatchesFilters(item, filters) {
   if (filters?.category && item.category !== filters.category) return false
   if (filters?.subCategory && item.subCategory !== filters.subCategory) return false
+  if (filters?.rarity && item.rarity !== filters.rarity) return false
   if (filters?.tag && !item[filters.tag]) return false
   return true
 }
@@ -84,6 +93,31 @@ const TAG_LABELS = [
     key: 'enhanceable',
     label: 'ตีบวกได้',
     tooltip: 'สามารถซื้อพร้อมค่าตีบวก +1/+2/+3 ได้ ราคาจะถูกคูณตามตัวคูณที่ตั้งค่าไว้',
+  },
+  {
+    key: 'magical',
+    label: 'เวทมนตร์',
+    tooltip: 'ไอเทมเวทมนตร์ มีความหายาก (rarity) กำกับ',
+  },
+  {
+    key: 'nonMagical',
+    label: 'ไม่มีเวทมนตร์',
+    tooltip: 'ของธรรมดา ไม่มีคุณสมบัติวิเศษ',
+  },
+  {
+    key: 'attunement',
+    label: 'ต้องร่ายผูกพัน',
+    tooltip: 'ต้องใช้ Attunement (ร่ายผูกพัน) ก่อนจึงจะใช้ความสามารถพิเศษของไอเทมนี้ได้',
+  },
+  {
+    key: 'cursed',
+    label: 'ต้องคำสาป',
+    tooltip: 'ไอเทมนี้มีคำสาปแฝงอยู่ ผู้เล่นอาจไม่รู้ตัวจนกว่าจะร่ายผูกพันหรือใช้งาน',
+  },
+  {
+    key: 'consumable',
+    label: 'ใช้แล้วหมด',
+    tooltip: 'ของใช้ครั้งเดียวหมดไป เช่น ยาน้ำ ม้วนคาถา หรือกระสุน',
   },
 ]
 
@@ -212,17 +246,37 @@ function ItemPreviewCard({ item, shopName }) {
     <div className="rounded-lg border border-[#e2cfb3] bg-white p-3">
       <div className="flex items-start justify-between gap-2">
         <div>
-          <p className="font-semibold text-stone-900">{item.name}</p>
+          <p className="flex items-center gap-1.5 font-semibold text-stone-900">
+            {item.name}
+            {item.link ? (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                title="เปิดหน้าไอเทมนี้ใน 5e.tools"
+                className="text-emerald-600 hover:text-emerald-700"
+              >
+                🔗
+              </a>
+            ) : (
+              <span title="ไม่มีลิงก์ 5e.tools — ดูคำอธิบายด้านล่าง" className="text-stone-300">
+                🔗
+              </span>
+            )}
+          </p>
           <p className="text-xs text-stone-400">
             {shopName}
-            {(item.category || item.subCategory) && ' · '}
+            {(item.category || item.subCategory || item.rarity) && ' · '}
             {item.category}
             {item.category && item.subCategory ? ' / ' : ''}
             {item.subCategory}
+            {(item.category || item.subCategory) && item.rarity ? ' · ' : ''}
+            {item.rarity}
           </p>
         </div>
       </div>
-      {item.note && <p className="mt-1.5 text-xs text-stone-500">{item.note}</p>}
+      {item.description && <p className="mt-1.5 text-xs text-stone-500">{item.description}</p>}
       <div className="mt-2 flex flex-wrap gap-3 text-xs">
         {PRICE_TYPES.filter((p) => item[p.field]).map((p) => (
           <span key={p.type} className="text-stone-600">
@@ -341,11 +395,6 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onA
   function handleSelectItem(key) {
     setSelectedKey(key)
     resetSimulation()
-  }
-
-  function handleSetCurrentLevel(level) {
-    setCurrentLevel(level)
-    setBroken(false)
   }
 
   function handleRoll() {
@@ -538,46 +587,27 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onA
                 </div>
               )}
 
-              <div className="grid grid-cols-2 gap-3">
+              {isRepair ? (
                 <div>
-                  <label className="block text-sm font-medium text-stone-700">ระดับของเดิม</label>
+                  <label className="block text-sm font-medium text-stone-700">ระดับความเสียหาย</label>
                   <select
-                    value={currentLevel}
-                    onChange={(e) => handleSetCurrentLevel(Number(e.target.value))}
+                    value={repairDamage}
+                    onChange={(e) => setRepairDamage(Number(e.target.value))}
                     className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
                   >
-                    <option value={0}>ปกติ (+0)</option>
-                    {ENHANCEMENT_LEVELS.filter((lvl) => lvl < 3).map((lvl) => (
+                    {REPAIR_DAMAGE_LEVELS.map((lvl, idx) => (
                       <option key={lvl} value={lvl}>
-                        +{lvl}
+                        ระดับ {idx + 1}
                       </option>
                     ))}
                   </select>
                 </div>
-                {isRepair ? (
-                  <div>
-                    <label className="block text-sm font-medium text-stone-700">ระดับความเสียหาย</label>
-                    <select
-                      value={repairDamage}
-                      onChange={(e) => setRepairDamage(Number(e.target.value))}
-                      className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
-                    >
-                      {REPAIR_DAMAGE_LEVELS.map((lvl, idx) => (
-                        <option key={lvl} value={lvl}>
-                          ระดับ {idx + 1}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                ) : (
-                  <div>
-                    <label className="block text-sm font-medium text-stone-700">ระดับเป้าหมาย</label>
-                    <select value={targetLevel} disabled className="mt-1 w-full rounded-md border border-gray-300 bg-[#f5ede0] px-3 py-2 text-sm text-stone-700">
-                      <option value={targetLevel}>+{targetLevel}</option>
-                    </select>
-                  </div>
-                )}
-              </div>
+              ) : (
+                <div className="rounded-md border border-gray-300 bg-[#f5ede0] px-3 py-2 text-sm text-stone-700">
+                  ระดับปัจจุบัน <span className="font-semibold">+{currentLevel}</span> → กำลังตี{' '}
+                  <span className="font-semibold">+{targetLevel}</span>
+                </div>
+              )}
 
               <div>
                 <label className="block text-sm font-medium text-stone-700">เพิ่มโอกาสสำเร็จ</label>
@@ -1112,17 +1142,28 @@ function slugify(text) {
     .replace(/(^-|-$)/g, '') || 'x'
 }
 
+// D&D rarity tiers, low to high — used to sort accordion groups sensibly
+// when a shop is grouped by rarity instead of category (see groupField
+// below) rather than falling back to insertion/alphabetical order.
+const RARITY_ORDER = ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary', 'Artifact']
+function groupSortIndex(label) {
+  const i = RARITY_ORDER.indexOf(label)
+  return i === -1 ? RARITY_ORDER.length : i
+}
+
+// Shared grid template for the virtualized item list (view mode) — used by
+// both the header label row and every item row so columns line up.
+const ITEM_ROW_GRID_COLS = 'minmax(180px,2fr) 90px 130px 160px 140px 60px 90px'
+
 function ShopDetailView({
   shop,
   onBack,
   onEdit,
-  onDelete,
   query,
   filters,
   dispatch,
   showToast,
   onAddToCart,
-  enhancementMultipliers,
 }) {
   const [draftItems, setDraftItems] = useState(() => shop.items.map((item) => ({ ...item })))
   const [dirty, setDirty] = useState(false)
@@ -1130,16 +1171,19 @@ function ShopDetailView({
   const [itemEditMode, setItemEditMode] = useState(false)
   const [selectedPriceType, setSelectedPriceType] = useState({})
   const [quantities, setQuantities] = useState({})
-  const [selectedLevel, setSelectedLevel] = useState({})
-
-  function handleCopyItemName(name) {
-    navigator.clipboard.writeText(name)
-    showToast(`คัดลอก "${name}" แล้ว`, 'success')
-  }
+  const [focusedGroupSlug, setFocusedGroupSlug] = useState(null)
+  // Empty set is a sentinel meaning "nothing toggled yet" — only the first
+  // group renders expanded by default (see flatRows below). Once the user
+  // expands/collapses anything, membership is taken literally.
+  const [expandedGroups, setExpandedGroups] = useState(() => new Set())
+  const listScrollRef = useRef(null)
+  const [statblockItem, setStatblockItem] = useState(null)
 
   useEffect(() => {
     setDraftItems(shop.items.map((item) => ({ ...item })))
     setDirty(false)
+    setFocusedGroupSlug(null)
+    setExpandedGroups(new Set())
   }, [shop.id])
 
   const categoryOptions = useMemo(
@@ -1150,32 +1194,102 @@ function ShopDetailView({
     () => Array.from(new Set(draftItems.map((i) => i.subCategory).filter(Boolean))),
     [draftItems],
   )
+  const rarityOptions = useMemo(
+    () => Array.from(new Set(draftItems.map((i) => i.rarity).filter(Boolean))),
+    [draftItems],
+  )
 
   const visibleItems = useMemo(
     () => draftItems.filter((item) => itemMatchesQuery(item, query) && itemMatchesFilters(item, filters)),
     [draftItems, query, filters],
   )
 
+  // Shops that hold one uniform category (e.g. a category-specific magic
+  // item shop where every row is "Weapon") gain nothing from grouping by
+  // category — it collapses into a single giant section. Group by subCategory
+  // when that varies, otherwise fall back to rarity (magic-item shops keep
+  // subCategory blank and store their tier in `rarity` instead).
+  const groupField =
+    categoryOptions.length <= 1 && subCategoryOptions.length > 1
+      ? 'subCategory'
+      : categoryOptions.length <= 1 && rarityOptions.length > 1
+        ? 'rarity'
+        : 'category'
+
   const groupedItems = useMemo(() => {
     const map = new Map()
     for (const item of visibleItems) {
-      const cat = item.category || UNCATEGORIZED_LABEL
-      if (!map.has(cat)) map.set(cat, [])
-      map.get(cat).push(item)
+      const key = item[groupField] || UNCATEGORIZED_LABEL
+      if (!map.has(key)) map.set(key, [])
+      map.get(key).push(item)
     }
-    return Array.from(map.entries()).map(([category, items]) => ({
+    const groups = Array.from(map.entries()).map(([category, items]) => ({
       category,
       slug: slugify(category),
       items,
     }))
-  }, [visibleItems])
+    // Only reorder when grouping by rarity tier — category grouping keeps the
+    // original insertion order existing shops already rely on.
+    if (groupField === 'subCategory' || groupField === 'rarity') {
+      groups.sort((a, b) => groupSortIndex(a.category) - groupSortIndex(b.category) || a.category.localeCompare(b.category))
+    }
+    return groups
+  }, [visibleItems, groupField])
 
   const hasActiveFilters = Boolean(filters?.category || filters?.subCategory || filters?.tag)
 
-  function scrollToGroup(slug) {
-    const el = document.getElementById(`shop-${shop.id}-cat-${slug}`)
-    el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const visibleGroups = useMemo(
+    () => (focusedGroupSlug ? groupedItems.filter((g) => g.slug === focusedGroupSlug) : groupedItems),
+    [groupedItems, focusedGroupSlug],
+  )
+
+  function toggleGroupFocus(slug) {
+    setFocusedGroupSlug((prev) => (prev === slug ? null : slug))
   }
+
+  const groupSlugsKey = visibleGroups.map((g) => g.slug).join('|')
+
+  // Whenever the visible group list changes shape (shop switch, filter/focus
+  // change, search), default back to "only the first group open" — large
+  // shops (800+ items) stay cheap to render until the user opens a section.
+  useEffect(() => {
+    const firstSlug = visibleGroups[0]?.slug
+    setExpandedGroups(firstSlug ? new Set([firstSlug]) : new Set())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [groupSlugsKey])
+
+  function toggleGroupExpanded(slug) {
+    setExpandedGroups((prev) => {
+      const next = new Set(prev)
+      if (next.has(slug)) next.delete(slug)
+      else next.add(slug)
+      return next
+    })
+  }
+
+  // Flatten every visible group into one row list — a "header" row per group,
+  // followed by its "item" rows only when expanded — so the whole shop can be
+  // rendered through a single virtualizer instead of one <table> per group.
+  // Collapsed groups contribute just their header, so large shops (800+ items)
+  // stay cheap until the user actually opens a section.
+  const flatRows = useMemo(() => {
+    const rows = []
+    for (const group of visibleGroups) {
+      const expanded = expandedGroups.has(group.slug)
+      rows.push({ type: 'header', group, expanded })
+      if (expanded) {
+        for (const item of group.items) rows.push({ type: 'item', item, group })
+      }
+    }
+    return rows
+  }, [visibleGroups, expandedGroups])
+
+  const rowVirtualizer = useVirtualizer({
+    count: flatRows.length,
+    getScrollElement: () => listScrollRef.current,
+    estimateSize: (index) => (flatRows[index]?.type === 'header' ? 44 : 96),
+    overscan: 8,
+  })
 
   function updateDraftItem(id, patch) {
     setDraftItems((prev) => prev.map((item) => (item.id === id ? { ...item, ...patch } : item)))
@@ -1234,14 +1348,6 @@ function ShopDetailView({
     setQuantities((prev) => ({ ...prev, [itemId]: value }))
   }
 
-  function getSelectedLevel(item) {
-    return selectedLevel[item.id] ?? 0
-  }
-
-  function setLevel(itemId, level) {
-    setSelectedLevel((prev) => ({ ...prev, [itemId]: level }))
-  }
-
   function handleAddToCart(item) {
     const type = getSelectedPriceType(item)
     if (!type) {
@@ -1249,45 +1355,46 @@ function ShopDetailView({
       return
     }
     const qty = Math.max(1, Math.floor(Number(getQuantity(item))) || 1)
-    const level = item.enhanceable ? getSelectedLevel(item) : 0
-    onAddToCart(shop, item, type, qty, level)
+    onAddToCart(shop, item, type, qty)
     showToast(`เพิ่ม "${item.name}" ลงตระกร้าแล้ว`, 'success')
   }
 
   return (
-    <div className="rounded-lg border border-[#e2cfb3] bg-white shadow-sm">
-      <div className="flex flex-wrap items-center justify-between gap-2 p-4">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-2 rounded-md p-1 -m-1 text-left text-sm font-medium text-violet-700 transition-colors hover:bg-violet-50"
-        >
-          <span aria-hidden>←</span> กลับไปรายชื่อร้าน
-        </button>
-        <div className="flex items-center gap-2">
+    <div className="flex h-full flex-col rounded-lg border border-[#e2cfb3] bg-white shadow-sm">
+      <div className="shrink-0 border-b border-[#e2cfb3] p-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <button
-            onClick={onEdit}
-            className="rounded-md border border-gray-300 px-2 py-1 text-xs text-stone-700 transition-colors hover:bg-[#f5ede0]"
+            onClick={onBack}
+            className="flex items-center gap-1.5 rounded-md p-1 -m-1 text-left text-xs font-medium text-violet-700 transition-colors hover:bg-violet-50"
           >
-            แก้ไขร้าน
+            <span aria-hidden>←</span> กลับไปรายชื่อร้าน
           </button>
-          <button
-            onClick={onDelete}
-            className="rounded-md border border-red-300 px-2 py-1 text-xs text-red-600 transition-colors hover:bg-red-50"
-          >
-            ลบร้าน
-          </button>
-        </div>
-      </div>
-
-      <div className="border-t border-[#e2cfb3] p-4">
-        <div className="mb-3 flex items-center gap-2">
-          <h2 className="text-xl font-bold text-stone-900">{shop.name}</h2>
-          <span className="text-xs text-stone-400">
-            ({query || hasActiveFilters ? `${visibleItems.length}/${draftItems.length}` : draftItems.length} รายการ)
-          </span>
+          <div className="flex items-center gap-2">
+            <h2 className="text-base font-bold text-stone-900">{shop.name}</h2>
+            <span className="text-xs text-stone-400">
+              ({query || hasActiveFilters ? `${visibleItems.length}/${draftItems.length}` : draftItems.length} รายการ)
+            </span>
+            <button
+              onClick={onEdit}
+              className="rounded-md border border-gray-300 px-2 py-1 text-xs text-stone-700 transition-colors hover:bg-[#f5ede0]"
+            >
+              แก้ไขร้าน
+            </button>
+            <button
+              type="button"
+              onClick={toggleItemEditMode}
+              className={`rounded-md border px-2 py-1 text-xs font-medium ${
+                itemEditMode
+                  ? 'border-violet-300 bg-violet-50 text-violet-700 hover:bg-violet-100'
+                  : 'border-gray-300 text-stone-700 hover:bg-[#f5ede0]'
+              }`}
+            >
+              {itemEditMode ? '✓ กำลังแก้ไขรายการ' : '✎ โหมดแก้ไขรายการ'}
+            </button>
+          </div>
         </div>
         {(shop.hardSell || shop.sellingCap) && (
-            <div className="mb-3 text-sm text-stone-600">
+            <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-stone-600">
               {shop.hardSell && (
                 <div>
                   <Tip text={HARD_SELL_TOOLTIP}>
@@ -1307,48 +1414,52 @@ function ShopDetailView({
             </div>
           )}
           {shop.notes && (
-            <details className="mb-3 rounded-md bg-[#f5ede0] p-3 text-sm text-stone-600">
+            <details className="mt-1.5 rounded-md bg-[#f5ede0] p-2 text-xs text-stone-600">
               <summary className="cursor-pointer font-medium text-stone-700">รายละเอียด / กติกาเพิ่มเติม</summary>
-              <p className="mt-2 whitespace-pre-line">{shop.notes}</p>
+              <p className="mt-1 whitespace-pre-line">{shop.notes}</p>
             </details>
           )}
 
-          <div className="mb-3 flex items-center justify-end">
-            <button
-              type="button"
-              onClick={toggleItemEditMode}
-              className={`rounded-md border px-3 py-1.5 text-xs font-medium ${
-                itemEditMode
-                  ? 'border-violet-300 bg-violet-50 text-violet-700 hover:bg-violet-100'
-                  : 'border-gray-300 text-stone-700 hover:bg-[#f5ede0]'
-              }`}
-            >
-              {itemEditMode ? '✓ กำลังแก้ไขรายการ (กดเพื่อดูอย่างเดียว)' : '✎ โหมดแก้ไขรายการ'}
-            </button>
-          </div>
-
           {groupedItems.length > 1 && (
-            <div className="mb-3 flex flex-wrap gap-1.5">
+            <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
               {groupedItems.map((group) => (
                 <button
                   key={group.slug}
                   type="button"
-                  onClick={() => scrollToGroup(group.slug)}
-                  className="rounded-full border border-[#e2cfb3] bg-[#f5ede0] px-2.5 py-1 text-[11px] text-stone-600 hover:bg-[#e8d9c0]"
+                  onClick={() => toggleGroupFocus(group.slug)}
+                  className={`rounded-full border px-2.5 py-1 text-[11px] transition-colors ${
+                    focusedGroupSlug === group.slug
+                      ? 'border-violet-600 bg-violet-700 text-white'
+                      : 'border-[#e2cfb3] bg-[#f5ede0] text-stone-600 hover:bg-[#e8d9c0]'
+                  }`}
                 >
-                  {group.category} <span className="text-stone-400">({group.items.length})</span>
+                  {group.category}{' '}
+                  <span className={focusedGroupSlug === group.slug ? 'text-violet-200' : 'text-stone-400'}>
+                    ({group.items.length})
+                  </span>
                 </button>
               ))}
+              {focusedGroupSlug && (
+                <button
+                  type="button"
+                  onClick={() => setFocusedGroupSlug(null)}
+                  className="text-[11px] text-stone-500 underline decoration-dotted hover:text-stone-700"
+                >
+                  ล้าง
+                </button>
+              )}
             </div>
           )}
+      </div>
 
+      <div className="flex min-h-0 flex-1 flex-col p-3">
           {visibleItems.length === 0 ? (
             <p className="text-sm text-stone-400">
               {query || hasActiveFilters ? 'ไม่พบรายการที่ตรงกับคำค้นหา/ตัวกรองในร้านนี้' : 'ยังไม่มีรายการในร้านนี้'}
             </p>
           ) : itemEditMode ? (
-            <div className="space-y-3">
-              {groupedItems.map((group) => (
+            <div className="h-full space-y-3 overflow-y-auto">
+              {visibleGroups.map((group) => (
                 <details key={group.slug} id={`shop-${shop.id}-cat-${group.slug}`} open className="scroll-mt-4">
                   <summary className="cursor-pointer py-1 text-sm font-medium text-stone-700">
                     {group.category} <span className="text-xs font-normal text-stone-400">({group.items.length})</span>
@@ -1360,6 +1471,7 @@ function ShopDetailView({
                           <th className="py-2 pr-2">ชื่อรายการ</th>
                           <th className="py-2 pr-2">หมวดหลัก</th>
                           <th className="py-2 pr-2">หมวดรอง</th>
+                          <th className="py-2 pr-2">ความหายาก</th>
                           <th className="py-2 pr-2">ราคาปกติ</th>
                           <th className="py-2 pr-2">ราคาถูก</th>
                           <th className="py-2 pr-2">ราคาแพง</th>
@@ -1368,7 +1480,7 @@ function ShopDetailView({
                               Tag
                             </Tip>
                           </th>
-                          <th className="py-2 pr-2">หมายเหตุ</th>
+                          <th className="py-2 pr-2">คำอธิบาย</th>
                           <th className="py-2 pl-2"></th>
                         </tr>
                       </thead>
@@ -1399,6 +1511,14 @@ function ShopDetailView({
                                 onChange={(e) => updateDraftItem(item.id, { subCategory: e.target.value })}
                                 list={`shop-subcat-${shop.id}`}
                                 className="w-28 rounded-md border border-gray-300 px-2 py-1"
+                              />
+                            </td>
+                            <td className="py-1.5 pr-2">
+                              <input
+                                value={item.rarity ?? ''}
+                                onChange={(e) => updateDraftItem(item.id, { rarity: e.target.value })}
+                                list={`shop-rarity-${shop.id}`}
+                                className="w-24 rounded-md border border-gray-300 px-2 py-1"
                               />
                             </td>
                             <td className="py-1.5 pr-2">
@@ -1440,8 +1560,8 @@ function ShopDetailView({
                             </td>
                             <td className="py-1.5 pr-2">
                               <input
-                                value={item.note}
-                                onChange={(e) => updateDraftItem(item.id, { note: e.target.value })}
+                                value={item.description}
+                                onChange={(e) => updateDraftItem(item.id, { description: e.target.value })}
                                 className="w-full min-w-[120px] rounded-md border border-gray-300 px-2 py-1"
                               />
                             </td>
@@ -1471,161 +1591,170 @@ function ShopDetailView({
                   <option key={c} value={c} />
                 ))}
               </datalist>
+              <datalist id={`shop-rarity-${shop.id}`}>
+                {RARITY_ORDER.map((r) => (
+                  <option key={r} value={r} />
+                ))}
+              </datalist>
             </div>
           ) : (
-            <div className="space-y-3">
-              {groupedItems.map((group) => (
-                <details key={group.slug} id={`shop-${shop.id}-cat-${group.slug}`} open className="scroll-mt-4">
-                  <summary className="cursor-pointer py-1 text-sm font-medium text-stone-700">
-                    {group.category} <span className="text-xs font-normal text-stone-400">({group.items.length})</span>
-                  </summary>
-                  <div className="overflow-x-auto">
-                    <table className="w-full min-w-[860px] border-collapse text-sm">
-                      <thead>
-                        <tr className="border-b border-[#e2cfb3] text-left text-xs text-stone-500">
-                          <th className="py-2 pr-2">ชื่อรายการ</th>
-                          <th className="py-2 pr-2">หมวดหลัก</th>
-                          <th className="py-2 pr-2">หมวดรอง</th>
-                          <th className="py-2 pr-2">ราคา (เลือกราคาที่จะใส่ตระกร้า)</th>
-                          <th className="py-2 pr-2 text-center">
-                            <Tip text="ตีบวก +1/+2/+3 จะคูณราคาตามตัวคูณที่ตั้งค่าไว้ (เฉพาะไอเทมที่ติด Tag ตีบวกได้)" className="cursor-help">
-                              ตีบวก
-                            </Tip>
-                          </th>
-                          <th className="py-2 pr-2 text-center">
-                            <Tip text="ป้ายกำกับคุณสมบัติของสินค้า ชี้เพื่อดูคำอธิบาย" className="cursor-help">
-                              Tag
-                            </Tip>
-                          </th>
-                          <th className="py-2 pr-2 text-center">จำนวน</th>
-                          <th className="py-2 pl-2"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {group.items.map((item) => {
-                          const available = availablePriceTypes(item)
-                          const selected = getSelectedPriceType(item)
-                          const level = getSelectedLevel(item)
-                          const basePriceText = selected ? item[PRICE_TYPES.find((p) => p.type === selected).field] : null
-                          const baseCp = basePriceText ? parsePriceToCopper(basePriceText) : null
-                          const multiplier = getEnhancementMultiplier(level, enhancementMultipliers)
-                          return (
-                            <tr
-                              key={item.id}
-                              className="border-b border-[#e2cfb3] align-top transition-colors hover:bg-violet-50/50"
-                            >
-                              <td className="py-2 pr-2 font-medium text-stone-900">
-                                {item.note ? (
-                                  <Tip text={item.note} tooltipClassName="max-w-[260px]">
-                                    <span
-                                      role="button"
-                                      tabIndex={0}
-                                      title="คลิกเพื่อคัดลอกชื่อ"
-                                      onClick={() => handleCopyItemName(item.name)}
-                                      className="cursor-copy underline decoration-dotted"
-                                    >
-                                      {item.name}
-                                    </span>
-                                  </Tip>
-                                ) : (
-                                  <span
-                                    role="button"
-                                    tabIndex={0}
-                                    title="คลิกเพื่อคัดลอกชื่อ"
-                                    onClick={() => handleCopyItemName(item.name)}
-                                    className="cursor-copy hover:underline hover:decoration-dotted"
-                                  >
-                                    {item.name}
-                                  </span>
-                                )}
-                              </td>
-                              <td className="py-2 pr-2 text-stone-600">{item.category}</td>
-                              <td className="py-2 pr-2 text-stone-600">{item.subCategory}</td>
-                              <td className="py-2 pr-2">
-                                {available.length === 0 ? (
-                                  <span className="text-xs text-stone-400">ไม่มีราคา</span>
-                                ) : (
-                                  <div className="flex flex-col gap-1">
-                                    {available.map((p) => (
-                                      <label key={p.type} className="flex items-center gap-1.5 text-xs">
-                                        <input
-                                          type="radio"
-                                          name={`price-${item.id}`}
-                                          checked={selected === p.type}
-                                          onChange={() =>
-                                            setSelectedPriceType((prev) => ({ ...prev, [item.id]: p.type }))
-                                          }
-                                        />
-                                        <span className="text-stone-500">{p.label}:</span>
-                                        <span className="font-medium text-stone-900">{item[p.field]}</span>
-                                      </label>
-                                    ))}
-                                  </div>
-                                )}
-                              </td>
-                              <td className="py-2 pr-2 text-center">
-                                {item.enhanceable ? (
-                                  <div className="flex flex-col items-center gap-1">
-                                    <select
-                                      value={level}
-                                      onChange={(e) => setLevel(item.id, Number(e.target.value))}
-                                      className="rounded-md border border-gray-300 px-1.5 py-1 text-xs"
-                                    >
-                                      <option value={0}>ปกติ</option>
-                                      {ENHANCEMENT_LEVELS.map((lvl) => (
-                                        <option key={lvl} value={lvl}>
-                                          +{lvl} (x{getEnhancementMultiplier(lvl, enhancementMultipliers)})
-                                        </option>
-                                      ))}
-                                    </select>
-                                    {level > 0 && baseCp != null && (
-                                      <span className="text-[11px] text-stone-500">
-                                        = {formatCopper(baseCp * multiplier)}
-                                      </span>
-                                    )}
-                                  </div>
-                                ) : (
-                                  <span className="text-xs text-stone-300">—</span>
-                                )}
-                              </td>
-                              <td className="py-2 pr-2">
-                                <div className="flex flex-wrap gap-1">
-                                  {TAG_LABELS.filter((tag) => item[tag.key]).map((tag) => (
-                                    <Tip key={tag.key} text={tag.tooltip}>
-                                      <span className="cursor-help rounded-full bg-[#f5ede0] px-2 py-0.5 text-[11px] text-stone-600">
-                                        {tag.label}
-                                      </span>
-                                    </Tip>
-                                  ))}
-                                </div>
-                              </td>
-                              <td className="py-2 pr-2 text-center">
-                                <input
-                                  type="number"
-                                  min="1"
-                                  value={getQuantity(item)}
-                                  onChange={(e) => setQuantity(item.id, e.target.value)}
-                                  className="w-16 rounded-md border border-gray-300 px-2 py-1 text-center text-sm"
-                                />
-                              </td>
-                              <td className="py-2 pl-2 whitespace-nowrap text-right">
-                                <button
-                                  type="button"
-                                  disabled={available.length === 0}
-                                  onClick={() => handleAddToCart(item)}
-                                  className="rounded-md bg-violet-700 px-2.5 py-1 text-xs font-medium text-white hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-gray-300"
-                                >
-                                  + ใส่ตระกร้า
-                                </button>
-                              </td>
-                            </tr>
-                          )
-                        })}
-                      </tbody>
-                    </table>
+            <div className="flex h-full min-h-0 flex-col overflow-x-auto">
+              <div style={{ minWidth: 900 }} className="shrink-0">
+                <div
+                  className="grid gap-2 border-b border-[#e2cfb3] px-2 py-2 text-left text-xs text-stone-500"
+                  style={{ gridTemplateColumns: ITEM_ROW_GRID_COLS }}
+                >
+                  <div>ชื่อรายการ</div>
+                  <div>หมวดหลัก</div>
+                  <div>หมวดรอง / ความหายาก</div>
+                  <div>ราคา (เลือกราคาที่จะใส่ตระกร้า)</div>
+                  <div className="text-center">
+                    <Tip text="ป้ายกำกับคุณสมบัติของสินค้า ชี้เพื่อดูคำอธิบาย" className="cursor-help">
+                      Tag
+                    </Tip>
                   </div>
-                </details>
-              ))}
+                  <div className="text-center">จำนวน</div>
+                  <div></div>
+                </div>
+              </div>
+
+              <div ref={listScrollRef} className="min-h-0 flex-1 overflow-y-auto" style={{ minWidth: 900 }}>
+                <div style={{ height: rowVirtualizer.getTotalSize(), position: 'relative' }}>
+                    {rowVirtualizer.getVirtualItems().map((virtualRow) => {
+                      const row = flatRows[virtualRow.index]
+                      if (!row) return null
+
+                      if (row.type === 'header') {
+                        return (
+                          <div
+                            key={virtualRow.key}
+                            data-index={virtualRow.index}
+                            ref={rowVirtualizer.measureElement}
+                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', transform: `translateY(${virtualRow.start}px)` }}
+                          >
+                            <button
+                              type="button"
+                              onClick={() => toggleGroupExpanded(row.group.slug)}
+                              className="flex w-full items-center gap-1.5 py-2 text-left text-sm font-medium text-stone-700 hover:bg-[#f5ede0]"
+                            >
+                              <span className={`inline-block transition-transform ${row.expanded ? 'rotate-90' : ''}`}>▶</span>
+                              {row.group.category}{' '}
+                              <span className="text-xs font-normal text-stone-400">({row.group.items.length})</span>
+                            </button>
+                          </div>
+                        )
+                      }
+
+                      const item = row.item
+                      const available = availablePriceTypes(item)
+                      const selected = getSelectedPriceType(item)
+                      return (
+                        <div
+                          key={virtualRow.key}
+                          data-index={virtualRow.index}
+                          ref={rowVirtualizer.measureElement}
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            transform: `translateY(${virtualRow.start}px)`,
+                            gridTemplateColumns: ITEM_ROW_GRID_COLS,
+                          }}
+                          className="grid gap-2 border-b border-[#e2cfb3] px-2 py-2 text-sm transition-colors hover:bg-violet-50/50"
+                        >
+                          <div className="py-2 pr-2 font-medium text-stone-900">
+                            <span className="inline-flex items-center gap-1.5">
+                              <span
+                                role="button"
+                                tabIndex={0}
+                                title="คลิกเพื่อดูรายละเอียดไอเทม"
+                                onClick={() => setStatblockItem(item)}
+                                className="cursor-pointer hover:underline hover:decoration-dotted"
+                              >
+                                {item.name}
+                              </span>
+                              {item.link ? (
+                                <a
+                                  href={item.link}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  onClick={(e) => e.stopPropagation()}
+                                  title="เปิดหน้าไอเทมนี้ใน 5e.tools"
+                                  className="text-emerald-600 hover:text-emerald-700"
+                                >
+                                  🔗
+                                </a>
+                              ) : (
+                                <span title="ไม่มีลิงก์ 5e.tools — ดูคำอธิบายด้านล่างชื่อ" className="text-stone-300">
+                                  🔗
+                                </span>
+                              )}
+                            </span>
+                          </div>
+                          <div className="py-2 pr-2 text-stone-600">{item.category}</div>
+                          <div className="py-2 pr-2 text-stone-600">
+                            {item.subCategory}
+                            {item.subCategory && item.rarity ? ' · ' : ''}
+                            {item.rarity}
+                          </div>
+                          <div className="py-2 pr-2">
+                            {available.length === 0 ? (
+                              <span className="text-xs text-stone-400">ไม่มีราคา</span>
+                            ) : (
+                              <div className="flex flex-col gap-1">
+                                {available.map((p) => (
+                                  <label key={p.type} className="flex items-center gap-1.5 text-xs">
+                                    <input
+                                      type="radio"
+                                      name={`price-${item.id}`}
+                                      checked={selected === p.type}
+                                      onChange={() =>
+                                        setSelectedPriceType((prev) => ({ ...prev, [item.id]: p.type }))
+                                      }
+                                    />
+                                    <span className="text-stone-500">{p.label}:</span>
+                                    <span className="font-medium text-stone-900">{item[p.field]}</span>
+                                  </label>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                          <div className="py-2 pr-2">
+                            <div className="flex flex-wrap gap-1">
+                              {TAG_LABELS.filter((tag) => item[tag.key]).map((tag) => (
+                                <Tip key={tag.key} text={tag.tooltip}>
+                                  <span className="cursor-help rounded-full bg-[#f5ede0] px-2 py-0.5 text-[11px] text-stone-600">
+                                    {tag.label}
+                                  </span>
+                                </Tip>
+                              ))}
+                            </div>
+                          </div>
+                          <div className="py-2 pr-2 text-center">
+                            <input
+                              type="number"
+                              min="1"
+                              value={getQuantity(item)}
+                              onChange={(e) => setQuantity(item.id, e.target.value)}
+                              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-center text-sm"
+                            />
+                          </div>
+                          <div className="py-2 pl-2 whitespace-nowrap text-right">
+                            <button
+                              type="button"
+                              disabled={available.length === 0}
+                              onClick={() => handleAddToCart(item)}
+                              className="rounded-md bg-violet-700 px-2.5 py-1 text-xs font-medium text-white hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-gray-300"
+                            >
+                              + ใส่ตระกร้า
+                            </button>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
             </div>
           )}
 
@@ -1672,11 +1801,13 @@ function ShopDetailView({
             setDeleteItem(null)
           }}
         />
+
+        <ItemStatblockModal item={statblockItem} onClose={() => setStatblockItem(null)} />
     </div>
   )
 }
 
-function ShopTile({ shop, matchedCount, totalCount, isFiltered, onSelect, onEdit, onDelete }) {
+function ShopListItem({ shop, matchedCount, totalCount, isFiltered, isActive, onSelect, onEdit }) {
   return (
     <div
       role="button"
@@ -1685,41 +1816,31 @@ function ShopTile({ shop, matchedCount, totalCount, isFiltered, onSelect, onEdit
       onKeyDown={(e) => {
         if (e.key === 'Enter') onSelect()
       }}
-      className="cursor-pointer rounded-lg border border-[#e2cfb3] bg-white p-4 shadow-sm transition-shadow hover:shadow-md hover:border-violet-300"
+      className={`group cursor-pointer rounded-lg border p-2.5 transition-colors ${
+        isActive
+          ? 'border-violet-400 bg-violet-50'
+          : 'border-[#e2cfb3] bg-white hover:border-violet-300 hover:bg-violet-50/40'
+      }`}
     >
       <div className="flex items-start justify-between gap-2">
-        <h3 className="font-semibold text-stone-900">{shop.name}</h3>
-        <div className="flex shrink-0 items-center gap-1">
+        <h3 className="text-sm font-semibold leading-snug text-stone-900">{shop.name}</h3>
+        <div className="hidden shrink-0 items-center gap-1 group-hover:flex">
           <button
             type="button"
             onClick={(e) => {
               e.stopPropagation()
               onEdit()
             }}
-            className="rounded-md border border-gray-300 px-2 py-0.5 text-xs text-stone-700 transition-colors hover:bg-[#f5ede0]"
+            title="แก้ไขร้าน"
+            className="rounded-md border border-gray-300 px-1.5 py-0.5 text-[11px] text-stone-700 transition-colors hover:bg-[#f5ede0]"
           >
-            แก้ไข
-          </button>
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation()
-              onDelete()
-            }}
-            className="rounded-md border border-red-300 px-2 py-0.5 text-xs text-red-600 transition-colors hover:bg-red-50"
-          >
-            ลบ
+            ✎
           </button>
         </div>
       </div>
-      <p className="mt-1 text-xs text-stone-400">
-        {isFiltered ? `${matchedCount}/${totalCount} รายการที่ตรงกับคำค้นหา` : `${totalCount} รายการ`}
+      <p className="mt-0.5 text-xs text-stone-400">
+        {isFiltered ? `${matchedCount}/${totalCount} รายการ` : `${totalCount} รายการ`}
       </p>
-      {(shop.hardSell || shop.sellingCap) && (
-        <p className="mt-2 line-clamp-2 text-xs text-stone-500">
-          {shop.hardSell && <>Hard Sell: {shop.hardSell}</>}
-        </p>
-      )}
     </div>
   )
 }
@@ -2186,9 +2307,9 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
   const [query, setQuery] = useState('')
   const [filterCategory, setFilterCategory] = useState('')
   const [filterSubCategory, setFilterSubCategory] = useState('')
+  const [filterRarity, setFilterRarity] = useState('')
   const [filterTag, setFilterTag] = useState('')
   const [shopForm, setShopForm] = useState(null)
-  const [deleteShop, setDeleteShop] = useState(null)
   const [cartOpen, setCartOpen] = useState(false)
   const [upgradeModalOpen, setUpgradeModalOpen] = useState(false)
   const [appraiseModalOpen, setAppraiseModalOpen] = useState(false)
@@ -2207,10 +2328,10 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
 
   const normalizedQuery = query.trim().toLowerCase()
   const filters = useMemo(
-    () => ({ category: filterCategory, subCategory: filterSubCategory, tag: filterTag }),
-    [filterCategory, filterSubCategory, filterTag],
+    () => ({ category: filterCategory, subCategory: filterSubCategory, rarity: filterRarity, tag: filterTag }),
+    [filterCategory, filterSubCategory, filterRarity, filterTag],
   )
-  const hasActiveFilters = Boolean(filterCategory || filterSubCategory || filterTag)
+  const hasActiveFilters = Boolean(filterCategory || filterSubCategory || filterRarity || filterTag)
 
   const allItems = useMemo(() => shops.flatMap((s) => s.items), [shops])
 
@@ -2251,14 +2372,28 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
       .map(([category, subs]) => ({ category, subs: Array.from(subs).sort() }))
       .sort((a, b) => a.category.localeCompare(b.category))
   }, [allItems, filterCategory, filterTag])
+  const rarityOptions = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          allItems
+            .filter((i) => itemMatchesFilters(i, { category: filterCategory, subCategory: filterSubCategory, tag: filterTag }))
+            .map((i) => i.rarity)
+            .filter(Boolean),
+        ),
+      ).sort((a, b) => groupSortIndex(a) - groupSortIndex(b) || a.localeCompare(b)),
+    [allItems, filterCategory, filterSubCategory, filterTag],
+  )
   const tagOptions = useMemo(
     () =>
       TAG_LABELS.filter((tag) =>
         allItems.some(
-          (i) => i[tag.key] && itemMatchesFilters(i, { category: filterCategory, subCategory: filterSubCategory }),
+          (i) =>
+            i[tag.key] &&
+            itemMatchesFilters(i, { category: filterCategory, subCategory: filterSubCategory, rarity: filterRarity }),
         ),
       ),
-    [allItems, filterCategory, filterSubCategory],
+    [allItems, filterCategory, filterSubCategory, filterRarity],
   )
 
   useEffect(() => {
@@ -2268,6 +2403,10 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
   useEffect(() => {
     if (filterCategory && !categoryOptions.includes(filterCategory)) setFilterCategory('')
   }, [categoryOptions, filterCategory])
+
+  useEffect(() => {
+    if (filterRarity && !rarityOptions.includes(filterRarity)) setFilterRarity('')
+  }, [rarityOptions, filterRarity])
 
   useEffect(() => {
     if (filterTag && !tagOptions.some((t) => t.key === filterTag)) setFilterTag('')
@@ -2286,6 +2425,7 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
   function clearFilters() {
     setFilterCategory('')
     setFilterSubCategory('')
+    setFilterRarity('')
     setFilterTag('')
   }
 
@@ -2321,21 +2461,13 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
     setShopForm(null)
   }
 
-  function handleAddToCart(shop, item, priceType, qty = 1, level = 0) {
+  function handleAddToCart(shop, item, priceType, qty = 1) {
     const priceField = PRICE_TYPES.find((p) => p.type === priceType)
     const priceText = item[priceField.field]
-    const baseCp = parsePriceToCopper(priceText)
-    const multiplier = getEnhancementMultiplier(level, state.enhancementMultipliers)
-    const priceCp = baseCp != null ? baseCp * multiplier : null
-    const priceLabel = level > 0 ? `${priceField.label} +${level} (x${multiplier})` : priceField.label
+    const priceCp = parsePriceToCopper(priceText)
     setCartState((prev) => {
       const existing = prev.items.find(
-        (i) =>
-          i.shopId === shop.id &&
-          i.itemId === item.id &&
-          i.priceType === priceType &&
-          i.priceText === priceText &&
-          i.level === level,
+        (i) => i.shopId === shop.id && i.itemId === item.id && i.priceType === priceType && i.priceText === priceText,
       )
       if (existing) {
         return {
@@ -2354,10 +2486,10 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
             itemId: item.id,
             itemName: item.name,
             priceType,
-            priceLabel,
-            priceText: level > 0 ? `${priceText} → ${formatCopper(priceCp)}` : priceText,
+            priceLabel: priceField.label,
+            priceText,
             priceCp,
-            level,
+            level: 0,
             qty,
           },
         ],
@@ -2411,30 +2543,30 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
   const totalItems = shops.reduce((sum, s) => sum + s.items.length, 0)
 
   return (
-    <div className="w-full p-4 md:p-8">
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-bold text-stone-900">ร้านค้า</h1>
-          <p className="text-sm text-stone-500">
+    <div className="w-full p-3 md:p-4">
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-baseline gap-2">
+          <h1 className="text-lg font-bold text-stone-900">ร้านค้า</h1>
+          <p className="text-xs text-stone-500">
             {shops.length} ร้านค้า · {totalItems} รายการทั้งหมด
           </p>
         </div>
         <div className="flex items-center gap-2">
           <button
             onClick={() => setUpgradeModalOpen(true)}
-            className="rounded-md border border-violet-300 bg-violet-50 px-3 py-2 text-sm font-medium text-violet-700 hover:bg-violet-100"
+            className="rounded-md border border-violet-300 bg-violet-50 px-3 py-1.5 text-xs font-medium text-violet-700 hover:bg-violet-100"
           >
             🔨 Forge
           </button>
           <button
             onClick={() => setAppraiseModalOpen(true)}
-            className="rounded-md border border-violet-300 bg-violet-50 px-3 py-2 text-sm font-medium text-violet-700 hover:bg-violet-100"
+            className="rounded-md border border-violet-300 bg-violet-50 px-3 py-1.5 text-xs font-medium text-violet-700 hover:bg-violet-100"
           >
             💰 ประเมินราคา
           </button>
           <button
             onClick={() => setShopForm({ mode: 'create' })}
-            className="rounded-md bg-violet-700 px-4 py-2 text-sm font-medium text-white hover:bg-violet-800"
+            className="rounded-md bg-violet-700 px-3 py-1.5 text-xs font-medium text-white hover:bg-violet-800"
           >
             + เพิ่มร้านค้า
           </button>
@@ -2458,97 +2590,115 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
         )}
       </button>
 
-      <div className="mb-4">
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="ค้นหารายการ (ชื่อ, หมวดหลัก, หมวดรอง, หมายเหตุ) ทุกร้านค้า..."
-          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
-        />
-        <div className="mt-2 flex flex-wrap items-center gap-2">
-          <SearchSelect
-            options={categoryOptions.map((c) => ({ value: c, label: c }))}
-            value={filterCategory}
-            onChange={setFilterCategory}
-            placeholder="หมวดหลัก: ทั้งหมด"
-            clearLabel="ล้าง"
-            className="w-40"
-          />
-          <SearchSelect
-            options={groupedSubCategoryOptions.flatMap((group) =>
-              group.subs.map((c) => ({ value: c, label: c, group: group.category })),
-            )}
-            value={filterSubCategory}
-            onChange={(value) => {
-              setFilterSubCategory(value)
-              if (value && !filterCategory) {
-                const group = groupedSubCategoryOptions.find((g) => g.subs.includes(value))
-                if (group) setFilterCategory(group.category)
-              }
-            }}
-            placeholder="หมวดรอง: ทั้งหมด"
-            clearLabel="ล้าง"
-            className="w-40"
-          />
-          <SearchSelect
-            options={tagOptions.map((tag) => ({ value: tag.key, label: tag.label }))}
-            value={filterTag}
-            onChange={setFilterTag}
-            placeholder="Tag: ทั้งหมด"
-            clearLabel="ล้าง"
-            className="w-36"
-          />
-          {hasActiveFilters && (
-            <button
-              type="button"
-              onClick={clearFilters}
-              className="rounded-md px-2 py-1.5 text-xs text-stone-500 underline decoration-dotted hover:text-stone-700"
-            >
-              ล้างตัวกรอง
-            </button>
-          )}
-        </div>
-      </div>
-
-      {selectedShop ? (
-        <ShopDetailView
-          key={selectedShop.id}
-          shop={selectedShop}
-          onBack={closeShop}
-          onEdit={() => setShopForm({ mode: 'edit', shop: selectedShop })}
-          onDelete={() => setDeleteShop(selectedShop)}
-          query={normalizedQuery}
-          filters={filters}
-          dispatch={dispatch}
-          showToast={showToast}
-          onAddToCart={handleAddToCart}
-          enhancementMultipliers={enhancementMultipliers}
-        />
-      ) : shops.length === 0 ? (
-        <p className="text-sm text-stone-400">ยังไม่มีร้านค้า กด "+ เพิ่มร้านค้า" เพื่อเริ่มต้น</p>
-      ) : visibleShops.length === 0 ? (
-        <p className="text-sm text-stone-400">ไม่พบร้านค้าหรือรายการที่ตรงกับคำค้นหา/ตัวกรอง</p>
-      ) : (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-          {visibleShops.map((shop) => {
-            const matched = shop.items.filter(
-              (item) => itemMatchesQuery(item, normalizedQuery) && itemMatchesFilters(item, filters),
-            )
-            return (
-              <ShopTile
-                key={shop.id}
-                shop={shop}
-                totalCount={shop.items.length}
-                matchedCount={matched.length}
-                isFiltered={Boolean(normalizedQuery || hasActiveFilters)}
-                onSelect={() => openShop(shop.id)}
-                onEdit={() => setShopForm({ mode: 'edit', shop })}
-                onDelete={() => setDeleteShop(shop)}
+      <div className="flex flex-col gap-4 lg:h-[calc(100vh-130px)] lg:flex-row lg:items-stretch">
+        <aside className="w-full shrink-0 lg:flex lg:h-full lg:w-72 lg:flex-col lg:overflow-hidden">
+          <div className="shrink-0 rounded-lg border border-[#e2cfb3] bg-white p-3 shadow-sm">
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="ค้นหารายการ (ชื่อ, หมวดหลัก, หมวดรอง, หมายเหตุ)..."
+              className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+            />
+            <div className="mt-2 flex flex-col gap-2">
+              <SearchSelect
+                options={categoryOptions.map((c) => ({ value: c, label: c }))}
+                value={filterCategory}
+                onChange={setFilterCategory}
+                placeholder="หมวดหลัก: ทั้งหมด"
+                clearLabel="ล้าง"
+                className="w-full"
               />
-            )
-          })}
-        </div>
-      )}
+              <SearchSelect
+                options={groupedSubCategoryOptions.flatMap((group) =>
+                  group.subs.map((c) => ({ value: c, label: c, group: group.category })),
+                )}
+                value={filterSubCategory}
+                onChange={(value) => {
+                  setFilterSubCategory(value)
+                  if (value && !filterCategory) {
+                    const group = groupedSubCategoryOptions.find((g) => g.subs.includes(value))
+                    if (group) setFilterCategory(group.category)
+                  }
+                }}
+                placeholder="หมวดรอง: ทั้งหมด"
+                clearLabel="ล้าง"
+                className="w-full"
+              />
+              <SearchSelect
+                options={rarityOptions.map((r) => ({ value: r, label: r }))}
+                value={filterRarity}
+                onChange={setFilterRarity}
+                placeholder="ความหายาก: ทั้งหมด"
+                clearLabel="ล้าง"
+                className="w-full"
+              />
+              <SearchSelect
+                options={tagOptions.map((tag) => ({ value: tag.key, label: tag.label }))}
+                value={filterTag}
+                onChange={setFilterTag}
+                placeholder="Tag: ทั้งหมด"
+                clearLabel="ล้าง"
+                className="w-full"
+              />
+              {hasActiveFilters && (
+                <button
+                  type="button"
+                  onClick={clearFilters}
+                  className="self-start text-xs text-stone-500 underline decoration-dotted hover:text-stone-700"
+                >
+                  ล้างตัวกรอง
+                </button>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-3 max-h-[70vh] space-y-2 overflow-y-auto pr-1 lg:max-h-none lg:min-h-0 lg:flex-1">
+            {shops.length === 0 ? (
+              <p className="text-sm text-stone-400">ยังไม่มีร้านค้า กด "+ เพิ่มร้านค้า" เพื่อเริ่มต้น</p>
+            ) : visibleShops.length === 0 ? (
+              <p className="text-sm text-stone-400">ไม่พบร้านค้าหรือรายการที่ตรงกับคำค้นหา/ตัวกรอง</p>
+            ) : (
+              visibleShops.map((shop) => {
+                const matched = shop.items.filter(
+                  (item) => itemMatchesQuery(item, normalizedQuery) && itemMatchesFilters(item, filters),
+                )
+                return (
+                  <ShopListItem
+                    key={shop.id}
+                    shop={shop}
+                    totalCount={shop.items.length}
+                    matchedCount={matched.length}
+                    isFiltered={Boolean(normalizedQuery || hasActiveFilters)}
+                    isActive={shop.id === selectedShopId}
+                    onSelect={() => openShop(shop.id)}
+                    onEdit={() => setShopForm({ mode: 'edit', shop })}
+                  />
+                )
+              })
+            )}
+          </div>
+        </aside>
+
+        <main className="min-w-0 flex-1 lg:flex lg:h-full lg:min-h-0 lg:flex-col lg:overflow-hidden">
+          {selectedShop ? (
+            <ShopDetailView
+              key={selectedShop.id}
+              shop={selectedShop}
+              onBack={closeShop}
+              onEdit={() => setShopForm({ mode: 'edit', shop: selectedShop })}
+              query={normalizedQuery}
+              filters={filters}
+              dispatch={dispatch}
+              showToast={showToast}
+              onAddToCart={handleAddToCart}
+            />
+          ) : (
+            <div className="flex h-64 items-center justify-center rounded-lg border border-dashed border-[#e2cfb3] bg-white/50 text-sm text-stone-400">
+              เลือกร้านค้าทางซ้ายเพื่อดูรายการ
+            </div>
+          )}
+        </main>
+      </div>
 
       <ShopFormModal
         key={shopForm ? (shopForm.mode === 'edit' ? shopForm.shop.id : 'create') : 'closed'}
@@ -2556,21 +2706,6 @@ export default function ShopPage({ cartState, setCartState, sellCartState, setSe
         onClose={() => setShopForm(null)}
         shop={shopForm?.mode === 'edit' ? shopForm.shop : null}
         onSubmit={handleShopSubmit}
-      />
-
-      <ConfirmDialog
-        open={!!deleteShop}
-        title="ลบร้านค้า"
-        message={`ต้องการลบร้านค้า "${deleteShop?.name}" หรือไม่? รายการทั้งหมดในร้านจะถูกลบไปด้วย`}
-        confirmLabel="ลบ"
-        danger
-        onCancel={() => setDeleteShop(null)}
-        onConfirm={() => {
-          dispatch({ type: 'DELETE_SHOP', payload: { id: deleteShop.id } })
-          if (deleteShop.id === selectedShopId) closeShop()
-          setDeleteShop(null)
-          showToast('ลบร้านค้าแล้ว', 'success')
-        }}
       />
 
       <CartModal
