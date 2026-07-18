@@ -160,7 +160,7 @@ const DND_LANGUAGE_SET = new Set(DND_LANGUAGES.map((l) => l.toLowerCase()))
 
 function classAndSubclassText(character) {
   const classLevels = (character.classLevels ?? []).filter((cl) => cl.className)
-  const classText = classLevels.map((cl) => `${cl.className} ${cl.level}`).join(' / ')
+  const classText = classLevels.map((cl) => cl.className).join(' / ')
   const subclassText = classLevels
     .filter((cl) => cl.subclassName)
     .map((cl) => cl.subclassName)
