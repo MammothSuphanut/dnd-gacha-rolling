@@ -141,6 +141,8 @@ function loadOfficial() {
     ['optionalfeature', 'optionalfeatures.json', 'optionalfeature', 'fluff-optionalfeatures.json', 'optionalfeatureFluff'],
     ['deity', 'deities.json', 'deity', null, null],
     ['variantrule', 'variantrules.json', 'variantrule', null, null],
+    ['adventure', 'adventures.json', 'adventure', null, null],
+    ['book', 'books.json', 'book', null, null],
   ]
   for (const [category, file, key, fluffFile, fluffKey] of simple) {
     const d = readJson(path.join(OFFICIAL_DIR, file))

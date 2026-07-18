@@ -9,7 +9,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "บรรจุในเล่ม Acquisitions Incorporated"
+    "note": "บรรจุในเล่ม Acquisitions Incorporated",
+    "link": "https://5e.tools/adventure.html#oow"
   },
   {
     "id": "campaign-8c8df0c5-923a-4eed-9c54-1581df7f938a",
@@ -177,7 +178,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "(เป็นชุดแอนโธโลจี One-Shot ตระกูล Dragon Delves สามารถเล่นสลับกันได้)"
+    "note": "(เป็นชุดแอนโธโลจี One-Shot ตระกูล Dragon Delves สามารถเล่นสลับกันได้)",
+    "link": "https://5e.tools/adventure.html#drde-acfas"
   },
   {
     "id": "campaign-75aa9601-3b19-41b6-a4d1-de2b1479286e",
@@ -189,7 +191,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-bd"
   },
   {
     "id": "campaign-53b39b76-c110-4e77-a091-77ae608bf5ed",
@@ -201,7 +204,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-bts"
   },
   {
     "id": "campaign-91068b8d-86f5-49fc-93d6-7cf3a1d8c4e9",
@@ -213,7 +217,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-das"
   },
   {
     "id": "campaign-8515ddaf-0bd8-4d9b-9ef9-f86e00d64d0d",
@@ -225,7 +230,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-dotsc"
   },
   {
     "id": "campaign-93b873a4-0b3b-4e38-b195-58f2bde003ae",
@@ -237,7 +243,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-fwtvc"
   },
   {
     "id": "campaign-80b2d05a-5d2d-4cdc-a69c-d1c498973649",
@@ -249,7 +256,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-sd"
   },
   {
     "id": "campaign-7cec69fe-abb2-488c-a63b-476ec50fd2dd",
@@ -261,7 +269,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-tdon"
   },
   {
     "id": "campaign-6d9b3b22-a432-4ff8-9efb-e537f1f053d5",
@@ -273,7 +282,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "หนึ่งในชุดซีรีส์ Dragon Delves"
+    "note": "หนึ่งในชุดซีรีส์ Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-tfv"
   },
   {
     "id": "campaign-ab2ccf78-eeb6-4668-8944-d138bd103a0a",
@@ -285,7 +295,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เป็นจุดพีคเลเวลสูงสุดของชุด Dragon Delves"
+    "note": "เป็นจุดพีคเลเวลสูงสุดของชุด Dragon Delves",
+    "link": "https://5e.tools/adventure.html#drde-twoo"
   },
   {
     "id": "campaign-0cc3b7e5-eceb-44a3-bd90-698dba762e5a",
@@ -297,7 +308,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัว"
+    "note": "จบในตัว",
+    "link": "https://5e.tools/adventure.html#azfyt"
   },
   {
     "id": "campaign-ce5a0ec0-f829-45cc-975c-22141af61d45",
@@ -309,7 +321,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "ไม่มี"
+    "note": "ไม่มี",
+    "link": "https://5e.tools/adventure.html#hotb"
   },
   {
     "id": "campaign-50747cc2-e3f3-41fa-8289-4269f11b1b5e",
@@ -321,7 +334,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "ต่อด้วย Borderlands Quest: Goblin Trouble"
+    "note": "ต่อด้วย Borderlands Quest: Goblin Trouble",
+    "link": "https://5e.tools/adventure.html#bqdd"
   },
   {
     "id": "campaign-c9c15f35-3e99-4e18-8564-a3cc4fb1ddda",
@@ -333,7 +347,8 @@
     "continuesFrom": "Borderlands Quest: Dagger Danger!",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "ต่อจาก Borderlands Quest: Dagger Danger!"
+    "note": "ต่อจาก Borderlands Quest: Dagger Danger!",
+    "link": "https://5e.tools/adventure.html#bqgt"
   },
   {
     "id": "campaign-a48a1d98-0b11-4cbd-b68f-8b5eff526697",
@@ -345,7 +360,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เป็น One-Shot ในระบบดิจิทัล"
+    "note": "เป็น One-Shot ในระบบดิจิทัล",
+    "link": "https://5e.tools/adventure.html#ffotr"
   },
   {
     "id": "campaign-febf039b-5c32-439f-985d-a96faf48a146",
@@ -357,7 +373,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "จบในตัว (เป็นชุดเซ็ต Stranger Things Starter)"
+    "note": "จบในตัว (เป็นชุดเซ็ต Stranger Things Starter)",
+    "link": "https://5e.tools/adventure.html#hftt"
   },
   {
     "id": "campaign-ab701b1d-4bc0-414e-b0bb-9ae2c8b63ec8",
@@ -637,7 +654,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัว (แถมมากับเซ็ตสินค้าเลโก้)"
+    "note": "จบในตัว (แถมมากับเซ็ตสินค้าเลโก้)",
+    "link": "https://5e.tools/adventure.html#lrdt"
   },
   {
     "id": "campaign-3f36a2d5-3026-4ee1-8815-d6793c3c001c",
@@ -841,7 +859,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "จบในตัวตามกล่อง Rick and Morty Starter"
+    "note": "จบในตัวตามกล่อง Rick and Morty Starter",
+    "link": "https://5e.tools/adventure.html#rmbre"
   },
   {
     "id": "campaign-20032d19-bcf7-4a69-977e-9511bc4f6b20",
@@ -901,7 +920,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัว"
+    "note": "จบในตัว",
+    "link": "https://5e.tools/adventure.html#wtthc"
   },
   {
     "id": "campaign-58b7945f-3e91-4f9a-9800-1addc71cb6a6",
@@ -913,7 +933,8 @@
     "continuesFrom": "Strixhaven: Campus Kerfuffle",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "พาร์ท 2 ในชุดเซ็ต Strixhaven"
+    "note": "พาร์ท 2 ในชุดเซ็ต Strixhaven",
+    "link": "https://5e.tools/adventure.html#scc-hfmt"
   },
   {
     "id": "campaign-02bf4ceb-db27-47ac-91c5-774fd6823111",
@@ -925,7 +946,8 @@
     "continuesFrom": "Strixhaven: Hunt for Mage Tower",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "พาร์ท 3 ในชุดเซ็ต Strixhaven"
+    "note": "พาร์ท 3 ในชุดเซ็ต Strixhaven",
+    "link": "https://5e.tools/adventure.html#scc-tmm"
   },
   {
     "id": "campaign-255d2af1-b211-4a15-b5c9-548cf45c3368",
@@ -937,7 +959,8 @@
     "continuesFrom": "Strixhaven: The Magister's Masquerade",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "พาร์ทจบในชุดเซ็ต Strixhaven"
+    "note": "พาร์ทจบในชุดเซ็ต Strixhaven",
+    "link": "https://5e.tools/adventure.html#scc-arir"
   },
   {
     "id": "campaign-518fd9b2-faa8-4d3d-99b8-fe476675f0e1",
@@ -949,7 +972,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "พาร์ท 1 ของมินิแคมเปญระดับมหาวิทยาลัย"
+    "note": "พาร์ท 1 ของมินิแคมเปญระดับมหาวิทยาลัย",
+    "link": "https://5e.tools/adventure.html#scc-ck"
   },
   {
     "id": "campaign-610292ed-d09d-4eea-b880-bd1f80b41983",
@@ -973,7 +997,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "บทเปิดในเล่ม Mythic Odysseys of Theros"
+    "note": "บทเปิดในเล่ม Mythic Odysseys of Theros",
+    "link": "https://5e.tools/adventure.html#mot-nss"
   },
   {
     "id": "campaign-b2db327d-1783-4e56-968b-67533922030a",
@@ -997,7 +1022,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เควสเริ่มต้นในทวีป Wildemount (จักรวาล Critical Role)"
+    "note": "เควสเริ่มต้นในทวีป Wildemount (จักรวาล Critical Role)",
+    "link": "https://5e.tools/adventure.html#dd"
   },
   {
     "id": "campaign-d7efbf08-9478-4418-a285-90ef8d428a0f",
@@ -1013,7 +1039,8 @@
     "partyTagIds": [
       "tag-ec0d2618-4421-486a-a327-c7f666827175",
       "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
-    ]
+    ],
+    "link": "https://5e.tools/adventure.html#fs"
   },
   {
     "id": "campaign-f3138d48-addf-454f-bdad-100355edc943",
@@ -1025,7 +1052,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เควสเริ่มต้นสายชายฝั่งใน Wildemount"
+    "note": "เควสเริ่มต้นสายชายฝั่งใน Wildemount",
+    "link": "https://5e.tools/adventure.html#tor"
   },
   {
     "id": "campaign-d74b279e-2df9-4c58-8d53-873a4bda8d92",
@@ -1037,7 +1065,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เควสเริ่มต้นสายหนองน้ำใน Wildemount"
+    "note": "เควสเริ่มต้นสายหนองน้ำใน Wildemount",
+    "link": "https://5e.tools/adventure.html#us"
   },
   {
     "id": "campaign-463b8715-b9f6-4448-a406-f93ef52235be",
@@ -1101,7 +1130,8 @@
     "continuesFrom": "Essentials Kit: Sleeping Dragon's Wake",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "ต่อจาก Sleeping Dragon's Wake (จบพาร์ทขยาย)"
+    "note": "ต่อจาก Sleeping Dragon's Wake (จบพาร์ทขยาย)",
+    "link": "https://5e.tools/adventure.html#dc"
   },
   {
     "id": "campaign-299c9650-9b77-414a-88f2-9992a9c55ab6",
@@ -1113,7 +1143,8 @@
     "continuesFrom": "Essentials Kit: Dragon of Icespire Peak",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "ต่อจาก Dragon of Icespire Peak"
+    "note": "ต่อจาก Dragon of Icespire Peak",
+    "link": "https://5e.tools/adventure.html#slw"
   },
   {
     "id": "campaign-c6771bbb-7041-4f37-a8d7-0de3dc5fc8d6",
@@ -1125,7 +1156,8 @@
     "continuesFrom": "Essentials Kit: Storm Lord's Wrath",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "ต่อจาก Storm Lord's Wrath"
+    "note": "ต่อจาก Storm Lord's Wrath",
+    "link": "https://5e.tools/adventure.html#sdw"
   },
   {
     "id": "campaign-efc983fd-a375-4444-a9a3-9e9b82a969f8",
@@ -1137,7 +1169,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เริ่มต้นไตรภาคขยาย (ต่อด้วย Storm Lord's Wrath)"
+    "note": "เริ่มต้นไตรภาคขยาย (ต่อด้วย Storm Lord's Wrath)",
+    "link": "https://5e.tools/adventure.html#dip"
   },
   {
     "id": "campaign-9eb875e2-dac7-49b4-bcb1-33510b24f16f",
@@ -1149,7 +1182,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "นิยมนำมาเสริมในแคมเปญ Tomb of Annihilation"
+    "note": "นิยมนำมาเสริมในแคมเปญ Tomb of Annihilation",
+    "link": "https://5e.tools/adventure.html#ttp"
   },
   {
     "id": "campaign-a489b5d6-d926-4272-87c2-62f010092ced",
@@ -1161,7 +1195,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัว"
+    "note": "จบในตัว",
+    "link": "https://5e.tools/adventure.html#tlk"
   },
   {
     "id": "campaign-b2140339-3eba-48b5-bcba-ac6de002d710",
@@ -1173,7 +1208,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เล่นต่อจากแคมเปญระดับกลาง-สูง ได้ดีมาก"
+    "note": "เล่นต่อจากแคมเปญระดับกลาง-สูง ได้ดีมาก",
+    "link": "https://5e.tools/adventure.html#coa"
   },
   {
     "id": "campaign-6c17f41c-be05-4452-8d74-e68c5425ff0d",
@@ -1185,7 +1221,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เป็นบทนำอย่างเป็นทางการให้แคมเปญใหญ่ Vecna: Eve of Ruin"
+    "note": "เป็นบทนำอย่างเป็นทางการให้แคมเปญใหญ่ Vecna: Eve of Ruin",
+    "link": "https://5e.tools/adventure.html#vnotee"
   },
   {
     "id": "campaign-24b999af-fdd0-4434-88ed-2933a371d118",
@@ -1197,7 +1234,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "ข้อมูลตัวละครเน้นเผ่า Orc"
+    "note": "ข้อมูลตัวละครเน้นเผ่า Orc",
+    "link": "https://5e.tools/adventure.html#rtg"
   },
   {
     "id": "campaign-bac7fea1-452e-4730-8ea4-baec6b3b489e",
@@ -1209,7 +1247,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "รายได้สนับสนุนการกุศล Extra Life"
+    "note": "รายได้สนับสนุนการกุศล Extra Life",
+    "link": "https://5e.tools/adventure.html#fraif-tllol"
   },
   {
     "id": "campaign-93a11068-0a6b-48e0-a9d5-39f89b1cd6ca",
@@ -1221,7 +1260,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "สามารถใช้เป็นบทนำก่อนต่อแคมเปญ Curse of Strahd"
+    "note": "สามารถใช้เป็นบทนำก่อนต่อแคมเปญ Curse of Strahd",
+    "link": "https://5e.tools/adventure.html#hol"
   },
   {
     "id": "campaign-d044a626-ebfe-4d21-9e10-db1222fac912",
@@ -1233,7 +1273,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัวสไตล์ Survival"
+    "note": "จบในตัวสไตล์ Survival",
+    "link": "https://5e.tools/adventure.html#hbtd"
   },
   {
     "id": "campaign-4f8a77c2-7f62-4fc6-b7fe-3127e4d2051c",
@@ -1245,7 +1286,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "มีเนื้อหาเชื่อมโยงตำนาน D&D ยุคคลาสสิก"
+    "note": "มีเนื้อหาเชื่อมโยงตำนาน D&D ยุคคลาสสิก",
+    "link": "https://5e.tools/adventure.html#imr"
   },
   {
     "id": "campaign-2cb7bc99-b1ca-4b22-9d55-33284df06198",
@@ -1257,7 +1299,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "บรรจุอยู่ในเล่ม Guildmasters' Guide to Ravnica"
+    "note": "บรรจุอยู่ในเล่ม Guildmasters' Guide to Ravnica",
+    "link": "https://5e.tools/adventure.html#kkw"
   },
   {
     "id": "campaign-946f9e7e-a199-4c0c-91f9-e06709407e6e",
@@ -1269,7 +1312,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัว"
+    "note": "จบในตัว",
+    "link": "https://5e.tools/adventure.html#hfstcm"
   },
   {
     "id": "campaign-8c686c1c-b29c-48ea-bfce-3e7959060f69",
@@ -1281,7 +1325,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัว"
+    "note": "จบในตัว",
+    "link": "https://5e.tools/adventure.html#lk"
   },
   {
     "id": "campaign-1ebd546d-aa5c-4d89-a065-235b3cd7638b",
@@ -1293,7 +1338,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "ภารกิจระดับ High-level หนึ่งตอนจบ"
+    "note": "ภารกิจระดับ High-level หนึ่งตอนจบ",
+    "link": "https://5e.tools/adventure.html#gotsf"
   },
   {
     "id": "campaign-6f82c404-9d14-4c15-9172-f0458253283d",
@@ -1305,7 +1351,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เป็นบทนำอย่างเป็นทางการของแคมเปญ Light of Xaryxis"
+    "note": "เป็นบทนำอย่างเป็นทางการของแคมเปญ Light of Xaryxis",
+    "link": "https://5e.tools/adventure.html#sja"
   },
   {
     "id": "campaign-a2ddda52-eeb4-47c9-8bf5-dc161535d45d",
@@ -1317,7 +1364,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เหมาะสำหรับทดลองระบบครั้งแรก"
+    "note": "เหมาะสำหรับทดลองระบบครั้งแรก",
+    "link": "https://5e.tools/adventure.html#pip"
   },
   {
     "id": "campaign-7cd66727-8511-4245-bf8a-de8d5e10540c",
@@ -1329,7 +1377,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "รายได้มอบให้การกุศล Extra Life"
+    "note": "รายได้มอบให้การกุศล Extra Life",
+    "link": "https://5e.tools/adventure.html#llk"
   },
   {
     "id": "campaign-747221a8-ab5b-4377-aef9-ab9b52fe31f7",
@@ -1341,7 +1390,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เล่นเป็นตัวละครเผ่าพิเศษ"
+    "note": "เล่นเป็นตัวละครเผ่าพิเศษ",
+    "link": "https://5e.tools/adventure.html#lr"
   },
   {
     "id": "campaign-1963c3d5-baf3-4498-9956-5ed59202572a",
@@ -1353,7 +1403,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "จบในตัว"
+    "note": "จบในตัว",
+    "link": "https://5e.tools/adventure.html#xmts"
   },
   {
     "id": "campaign-941d04a4-b449-44e9-909a-9e4c36b627ca",
@@ -1365,7 +1416,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "แฟนเซอร์วิสการ์ตูนยุคเก่า"
+    "note": "แฟนเซอร์วิสการ์ตูนยุคเก่า",
+    "link": "https://5e.tools/adventure.html#uthftlh"
   },
   {
     "id": "campaign-ee05b7a8-a3be-4be4-b1bd-df6eae33bffa",
@@ -1377,7 +1429,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เชื่อมโยงกับตำนานธาตุคลั่งอภินิหาร"
+    "note": "เชื่อมโยงกับตำนานธาตุคลั่งอภินิหาร",
+    "link": "https://5e.tools/adventure.html#scoee"
   },
   {
     "id": "campaign-dadc79d8-d4f5-4332-83f7-56a0c20ea074",
@@ -1389,7 +1442,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign (Anthology)",
     "party": "",
-    "note": "ไม่มี (เป็นคอลเลกชันผจญภัยสั้น)"
+    "note": "ไม่มี (เป็นคอลเลกชันผจญภัยสั้น)",
+    "link": "https://5e.tools/adventure.html#qftis"
   },
   {
     "id": "campaign-944d2bea-9374-4ab1-93d7-e927918de984",
@@ -1401,7 +1455,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "ดัดแปลงมาจากโมดูลคลาสสิกยุคเก่า"
+    "note": "ดัดแปลงมาจากโมดูลคลาสสิกยุคเก่า",
+    "link": "https://5e.tools/adventure.html#ditlcot"
   },
   {
     "id": "campaign-0acc8187-d931-479a-b2da-0b643eeed930",
@@ -1413,7 +1468,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เป็นเนื้อเรื่องเริ่มต้นอิสระ"
+    "note": "เป็นเนื้อเรื่องเริ่มต้นอิสระ",
+    "link": "https://5e.tools/adventure.html#dosi"
   },
   {
     "id": "campaign-6c32d25e-7de1-4666-8f38-077433aea28d",
@@ -1425,7 +1481,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "แคมเปญเปิด (สามารถส่งต่อแคมเปญเนื้อเรื่องหลักอื่นๆ ได้แทบทั้งหมด)"
+    "note": "แคมเปญเปิด (สามารถส่งต่อแคมเปญเนื้อเรื่องหลักอื่นๆ ได้แทบทั้งหมด)",
+    "link": "https://5e.tools/adventure.html#lmop"
   },
   {
     "id": "campaign-bb3758b4-a733-4e0d-b6c8-4e8e069ae421",
@@ -1437,7 +1494,8 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "ส่งต่อผู้เล่นเข้าสู่ Dungeon of the Mad Mage ได้โดยตรง"
+    "note": "ส่งต่อผู้เล่นเข้าสู่ Dungeon of the Mad Mage ได้โดยตรง",
+    "link": "https://5e.tools/adventure.html#wdh"
   },
   {
     "id": "campaign-95adc213-111a-40ea-8263-c95a78dff169",
@@ -1449,7 +1507,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
     "party": "",
-    "note": "ไม่มี (เป็นภารกิจสั้นแยกเล่นตามเลเวล)"
+    "note": "ไม่มี (เป็นภารกิจสั้นแยกเล่นตามเลเวล)",
+    "link": "https://5e.tools/adventure.html#kftgv"
   },
   {
     "id": "campaign-6e1c4b10-a59c-40a5-b1db-2d6917bb1342",
@@ -1461,7 +1520,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
     "party": "",
-    "note": "ไม่มี (เป็น One-Shot แยกเล่นจบในตอน)"
+    "note": "ไม่มี (เป็น One-Shot แยกเล่นจบในตอน)",
+    "link": "https://5e.tools/adventure.html#jttrc"
   },
   {
     "id": "campaign-757e5b22-7559-4187-bc24-184654646d52",
@@ -1473,7 +1533,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
     "party": "",
-    "note": "ไม่มี (เป็น One-Shot แยกเล่นจบในตอน)"
+    "note": "ไม่มี (เป็น One-Shot แยกเล่นจบในตอน)",
+    "link": "https://5e.tools/adventure.html#cm"
   },
   {
     "id": "campaign-63ded309-5bf5-4abb-a33d-ef47dbbb9e01",
@@ -1485,7 +1546,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign (Anthology)",
     "party": "",
-    "note": "ไม่มี (เป็นแอนโธโลจีรวมบทความสั้นมาร้อยเรียงกัน)"
+    "note": "ไม่มี (เป็นแอนโธโลจีรวมบทความสั้นมาร้อยเรียงกัน)",
+    "link": "https://5e.tools/adventure.html#gos"
   },
   {
     "id": "campaign-d5a4ee2c-42c9-4bb3-8ed3-5e6c5fd0a7f2",
@@ -1497,7 +1559,8 @@
     "continuesFrom": "Ravenloft: The House of Lament",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "มีโมดูลสั้น Ravenloft: The House of Lament เป็นบทนำให้ได้"
+    "note": "มีโมดูลสั้น Ravenloft: The House of Lament เป็นบทนำให้ได้",
+    "link": "https://5e.tools/adventure.html#cos"
   },
   {
     "id": "campaign-2bc10c2b-275d-418a-befd-e7122f8c02fd",
@@ -1509,7 +1572,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เป็นเนื้อเรื่องเดี่ยวในจักรวาล Dragonlance"
+    "note": "เป็นเนื้อเรื่องเดี่ยวในจักรวาล Dragonlance",
+    "link": "https://5e.tools/adventure.html#dsotdq"
   },
   {
     "id": "campaign-cd9dba13-fbc9-40a2-83b3-3d535d732a49",
@@ -1521,7 +1585,8 @@
     "continuesFrom": "Lost Mine of Phandelver",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "นิยมนำมาเล่นต่อขยายจาก Lost Mine of Phandelver ช่วงเลเวล 5"
+    "note": "นิยมนำมาเล่นต่อขยายจาก Lost Mine of Phandelver ช่วงเลเวล 5",
+    "link": "https://5e.tools/adventure.html#skt"
   },
   {
     "id": "campaign-03a2dd7d-05a7-4cca-98a1-98845303ad5d",
@@ -1545,7 +1610,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เป็นเนื้อเรื่องอิสระโดดเดี่ยว"
+    "note": "เป็นเนื้อเรื่องอิสระโดดเดี่ยว",
+    "link": "https://5e.tools/adventure.html#idrotf"
   },
   {
     "id": "campaign-c8d1a92a-fd00-455f-a7c3-ddac45f83757",
@@ -1557,7 +1623,8 @@
     "continuesFrom": "Lost Mine of Phandelver",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "ครึ่งแรกคือเนื้อหาขยายของ Lost Mine of Phandelver"
+    "note": "ครึ่งแรกคือเนื้อหาขยายของ Lost Mine of Phandelver",
+    "link": "https://5e.tools/adventure.html#pabtso"
   },
   {
     "id": "campaign-0600b2f0-7bcd-4c2a-b956-3c91c6166c07",
@@ -1569,7 +1636,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เป็นพรีเควลทางอ้อมให้กับเกม Baldur's Gate 3"
+    "note": "เป็นพรีเควลทางอ้อมให้กับเกม Baldur's Gate 3",
+    "link": "https://5e.tools/adventure.html#bgdia"
   },
   {
     "id": "campaign-d01ab3ab-5574-4024-8dd4-96ea756d26e0",
@@ -1581,7 +1649,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เป็นเนื้อเรื่องอิสระใน Underdark"
+    "note": "เป็นเนื้อเรื่องอิสระใน Underdark",
+    "link": "https://5e.tools/adventure.html#oota"
   },
   {
     "id": "campaign-89e5880f-eaee-4414-9d7c-1b4e8ad26cef",
@@ -1593,7 +1662,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เชื่อมโยงทางอ้อมกับแนวคิดของ Scions of Elemental Evil"
+    "note": "เชื่อมโยงทางอ้อมกับแนวคิดของ Scions of Elemental Evil",
+    "link": "https://5e.tools/adventure.html#pota"
   },
   {
     "id": "campaign-d3e4da1c-554d-48bc-85df-9e277b72e8ac",
@@ -1605,7 +1675,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "พาร์ทแรก (ต่อด้วย Rise of Tiamat)"
+    "note": "พาร์ทแรก (ต่อด้วย Rise of Tiamat)",
+    "link": "https://5e.tools/adventure.html#hotdq"
   },
   {
     "id": "campaign-3cf7e682-4a77-4104-8e22-346f3ca8fc4a",
@@ -1617,7 +1688,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เป็นเนื้อเรื่องอิสระแนวเทพนิยาย"
+    "note": "เป็นเนื้อเรื่องอิสระแนวเทพนิยาย",
+    "link": "https://5e.tools/adventure.html#wbtw"
   },
   {
     "id": "campaign-206a244e-805c-48c1-b749-da24babaae70",
@@ -1629,7 +1701,8 @@
     "continuesFrom": "Vecna: Nest of the Eldritch Eye",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เล่นต่อจากแคมเปญใดก็ได้ที่จบช่วงเลเวล 10"
+    "note": "เล่นต่อจากแคมเปญใดก็ได้ที่จบช่วงเลเวล 10",
+    "link": "https://5e.tools/adventure.html#veor"
   },
   {
     "id": "campaign-89814cd0-6520-4894-a8a6-4303a585dc7d",
@@ -1641,7 +1714,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "เป็นเนื้อเรื่องอิสระในโลก Planescape"
+    "note": "เป็นเนื้อเรื่องอิสระในโลก Planescape",
+    "link": "https://5e.tools/adventure.html#tofw"
   },
   {
     "id": "campaign-6e4edea2-cbdb-4be4-962e-6cddde1b47a6",
@@ -1653,7 +1727,8 @@
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "สามารถเริ่มจากมินิแคมเปญในแผ่นดิน Wildemount ได้"
+    "note": "สามารถเริ่มจากมินิแคมเปญในแผ่นดิน Wildemount ได้",
+    "link": "https://5e.tools/adventure.html#crcotn"
   },
   {
     "id": "campaign-6b35e7c1-3b77-47db-a999-98680d260026",
@@ -1665,7 +1740,8 @@
     "continuesFrom": "Waterdeep: Dragon Heist",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "มีเนื้อเรื่องต่อยอดหลังจากจบ Waterdeep: Dragon Heist"
+    "note": "มีเนื้อเรื่องต่อยอดหลังจากจบ Waterdeep: Dragon Heist",
+    "link": "https://5e.tools/adventure.html#wdmm"
   },
   {
     "id": "campaign-62aa6fc0-e932-43e7-abf9-744376f6aa49",
@@ -1677,7 +1753,8 @@
     "continuesFrom": "Spelljammer Academy",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "มีโมดูลนำร่องคือ Spelljammer Academy (เลเวล 1-5)"
+    "note": "มีโมดูลนำร่องคือ Spelljammer Academy (เลเวล 1-5)",
+    "link": "https://5e.tools/adventure.html#lox"
   },
   {
     "id": "campaign-2b389fe5-58d4-49f0-8aac-62cb2ff38a73",
@@ -1689,7 +1766,8 @@
     "continuesFrom": "Hoard of the Dragon Queen",
     "campaignType": "Long Campaign",
     "party": "",
-    "note": "ต่อจาก Hoard of the Dragon Queen"
+    "note": "ต่อจาก Hoard of the Dragon Queen",
+    "link": "https://5e.tools/adventure.html#rot"
   },
   {
     "id": "campaign-43551425-0375-4b1f-8292-bad324ea03d9",
@@ -1701,7 +1779,8 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "บรรจุอยู่ในหนังสือเซ็ตติ้ง Eberron: RFTW"
+    "note": "บรรจุอยู่ในหนังสือเซ็ตติ้ง Eberron: RFTW",
+    "link": "https://5e.tools/adventure.html#efr"
   },
   {
     "id": "campaign-223d95a9-6305-48a8-afbe-a787b9d85004",
