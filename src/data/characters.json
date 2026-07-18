@@ -1545,7 +1545,7 @@
         "damages": [
           {
             "amount": "1d8+4",
-            "type": ""
+            "type": "Piercing"
           }
         ]
       }
@@ -1559,15 +1559,42 @@
     },
     "attacksSpellcasting": "",
     "equipment": [
-      "Dagger x2",
-      "Crossbow, Light",
-      "Leather Armor",
-      "Quiver",
-      "Bolt x20",
-      "Thieves' Tools",
-      "Rations (1 day) x7",
-      "Waterskin",
-      "Backpack"
+      {
+        "name": "Dagger",
+        "qty": 2
+      },
+      {
+        "name": "Crossbow, Light",
+        "qty": 1
+      },
+      {
+        "name": "Leather Armor",
+        "qty": 1
+      },
+      {
+        "name": "Quiver",
+        "qty": 1
+      },
+      {
+        "name": "Bolt",
+        "qty": 20
+      },
+      {
+        "name": "Thieves' Tools",
+        "qty": 1
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 7
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1
+      },
+      {
+        "name": "Backpack",
+        "qty": 1
+      }
     ],
     "proficienciesLanguages": [
       "Common",

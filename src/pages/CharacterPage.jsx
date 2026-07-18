@@ -44,6 +44,7 @@ import {
   skillBonus,
 } from '../utils/dnd5e'
 import ExportPdfModal from '../components/ExportPdfModal'
+import ItemStatblockModal from '../components/ItemStatblockModal'
 
 const TABS = [
   { key: 'characters', label: 'ตัวละคร' },
@@ -98,6 +99,24 @@ function toItemList(value) {
     return value.split('\n').map((line) => line.trim()).filter(Boolean)
   }
   return []
+}
+
+// Equipment is {name, qty}; older saves have plain strings, sometimes with the
+// quantity baked into the text (e.g. "Dagger x2", "Dagger (x2)") - split those apart.
+const EQUIPMENT_QTY_PATTERN = /^(.*?)\s*(?:[x×]\s*(\d+)|\(\s*[x×]?\s*(\d+)\s*\))$/i
+
+function toEquipmentList(value) {
+  return toItemList(value).map((it) => {
+    if (it && typeof it === 'object') {
+      return { name: it.name ?? '', qty: Math.max(1, Number(it.qty) || 1) }
+    }
+    const str = String(it ?? '').trim()
+    const match = str.match(EQUIPMENT_QTY_PATTERN)
+    if (match) {
+      return { name: match[1].trim(), qty: Math.max(1, Number(match[2] ?? match[3]) || 1) }
+    }
+    return { name: str, qty: 1 }
+  })
 }
 
 // Features/traits are {name, description} pairs; older saves may have plain
@@ -217,7 +236,7 @@ function normalizeCharacter(raw) {
       : [blankAction(), blankAction(), blankAction()]
   const currency = { ...blankCurrency(), ...raw.currency }
   const attacksSpellcasting = raw.attacksSpellcasting ?? ''
-  const equipment = toItemList(raw.equipment)
+  const equipment = toEquipmentList(raw.equipment)
   const proficienciesLanguages = toItemList(raw.proficienciesLanguages)
   const featuresAndTraits = toFeatureList(raw.featuresAndTraits)
   const alliesOrganizations = raw.alliesOrganizations ?? ''
@@ -940,6 +959,58 @@ function ItemListEditor({ items, onChange, modes }) {
   )
 }
 
+function EquipmentListEditor({ items, onChange, modes }) {
+  function updateItem(index, fields) {
+    onChange(items.map((it, i) => (i === index ? { ...it, ...fields } : it)))
+  }
+
+  function removeItem(index) {
+    onChange(items.filter((_, i) => i !== index))
+  }
+
+  function addItem(value) {
+    if (!value || !value.trim()) return
+    onChange([...items, { name: value.trim(), qty: 1 }])
+  }
+
+  return (
+    <div className="space-y-3">
+      <AddItemBar modes={modes} onAdd={addItem} />
+      {items.length > 0 && (
+        <div className="space-y-1.5">
+          {items.map((item, index) => (
+            <div key={index} className="flex items-center gap-1.5">
+              <span className="w-4 shrink-0 text-center text-xs text-stone-400">{index + 1}.</span>
+              <input
+                value={item.name}
+                onChange={(e) => updateItem(index, { name: e.target.value })}
+                placeholder="ชื่ออุปกรณ์"
+                className="w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+              />
+              <input
+                type="number"
+                min={1}
+                value={item.qty}
+                onChange={(e) => updateItem(index, { qty: Math.max(1, Number(e.target.value) || 1) })}
+                title="จำนวน"
+                className="w-16 shrink-0 rounded-md border border-gray-300 px-2 py-1.5 text-center text-sm focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+              />
+              <button
+                type="button"
+                onClick={() => removeItem(index)}
+                className="shrink-0 rounded-md px-2 py-1.5 text-xs text-red-500 hover:bg-red-50"
+                aria-label="ลบรายการ"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function FeatureListEditor({ items, onChange }) {
   function updateItem(index, fields) {
     onChange(items.map((it, i) => (i === index ? { ...it, ...fields } : it)))
@@ -1258,11 +1329,15 @@ function CharacterFormModal({
   const isEditing = !!initial.name
   const [form, setForm] = useState(initial)
   const fileInputRef = useRef(null)
-  const [editTab, setEditTab] = useState(EDIT_TABS[0].key)
+  const [activeTab, setActiveTab] = useState(EDIT_TABS[0].key)
+  const editTab = activeTab
+  const setEditTab = setActiveTab
   const [exportModalOpen, setExportModalOpen] = useState(false)
+  const [statblockItem, setStatblockItem] = useState(null)
 
   const [viewMode, setViewMode] = useState(isEditing)
-  const [viewTab, setViewTab] = useState(EDIT_TABS[0].key)
+  const viewTab = activeTab
+  const setViewTab = setActiveTab
   const [selectedViewImageId, setSelectedViewImageId] = useState(initial.activeImageId || initial.images?.[0]?.id || '')
   const [resetVersion, setResetVersion] = useState(0)
 
@@ -1586,7 +1661,9 @@ function CharacterFormModal({
       stats: normalizedStats,
       images,
       activeImageId,
-      equipment: form.equipment.filter((it) => it.trim()),
+      equipment: form.equipment
+        .filter((it) => it.name && it.name.trim())
+        .map((it) => ({ name: it.name.trim(), qty: Math.max(1, Number(it.qty) || 1) })),
       proficienciesLanguages: form.proficienciesLanguages.filter((it) => it.trim()),
       featuresAndTraits: form.featuresAndTraits
         .map((it) => ({ name: it.name.trim(), description: it.description.trim() }))
@@ -1616,7 +1693,6 @@ function CharacterFormModal({
       setSelectedViewImageId(initial.activeImageId || initial.images?.[0]?.id || '')
       setResetVersion((v) => v + 1)
       setViewMode(true)
-      setViewTab(EDIT_TABS[0].key)
     } else {
       onCancel()
     }
@@ -2022,82 +2098,80 @@ function CharacterFormModal({
                         </div>
                       </div>
                     </div>
+                    <div className="mt-3.5 flex justify-center border-t border-stone-100 pt-3.5">
+                      <StatsRadarChart
+                        stats={form.stats}
+                        savingThrows={form.savingThrows}
+                        profBonus={proficiencyBonus(level)}
+                      />
+                    </div>
                   </div>
                 </div>
 
-                {/* Saving Throws & Skills Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {/* Saving Throws (1 col) */}
-                  <div className="space-y-3">
-                    <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
-                      🛡️ Saving Throws
-                    </h3>
-                    <div className="grid grid-cols-1 gap-2">
-                      {ABILITY_KEYS.map((key) => {
-                        const isProf = form.savingThrows[key]
-                        const bonus = savingThrowBonus(form, key, proficiencyBonus(level))
-                        return (
+                {/* Saving Throws & Skills grouped by ability */}
+                <div className="space-y-3">
+                  <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                    🛡️ Saving Throws &amp; 🎯 ทักษะ (Skills)
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+                    {ABILITY_KEYS.map((key) => {
+                      const isProf = form.savingThrows[key]
+                      const bonus = savingThrowBonus(form, key, proficiencyBonus(level))
+                      const abilitySkills = SKILLS.filter((s) => s.ability === key)
+                      return (
+                        <div key={key} className="rounded-xl border border-[#e2cfb3] bg-white p-3 shadow-sm space-y-2">
                           <div
-                            key={key}
                             className={`flex items-center justify-between rounded-lg border px-3 py-2 text-sm shadow-sm transition-all ${
                               isProf
                                 ? 'border-violet-300 bg-violet-50/50 font-semibold text-violet-950'
-                                : 'border-stone-200 bg-white text-stone-700'
+                                : 'border-stone-200 bg-stone-50 text-stone-700'
                             }`}
                           >
                             <span className="flex items-center gap-1.5 uppercase">
                               {isProf && <span className="text-violet-600 text-xs">🛡️</span>}
-                              {key}
+                              {key} (Save)
                             </span>
                             <span className={`font-mono text-xs ${isProf ? 'text-violet-700 font-bold' : 'text-stone-500'}`}>
                               {formatMod(bonus)}
                             </span>
                           </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Skills (2 cols) */}
-                  <div className="md:col-span-2 space-y-3">
-                    <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
-                      🎯 ทักษะ (Skills)
-                    </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {SKILLS.map((s) => {
-                        const state = normalizeSkillState(form.skills[s.key])
-                        const bonus = skillBonus(form, s, proficiencyBonus(level))
-                        const hasBonus = state.prof || state.expertise
-                        return (
-                          <div
-                            key={s.key}
-                            className={`flex items-center justify-between rounded-lg border px-3 py-2 text-sm shadow-sm transition-all ${
-                              hasBonus
-                                ? 'border-violet-300 bg-violet-50/40 text-violet-950 font-semibold'
-                                : 'border-stone-200 bg-white text-stone-600'
-                            }`}
-                          >
-                            <div className="flex items-center gap-2 truncate">
-                              {state.expertise && (
-                                <span className="rounded-full bg-violet-600 text-white text-[9px] px-1 font-bold leading-none py-0.5" title="Expertise">
-                                  E
-                                </span>
-                              )}
-                              {state.prof && !state.expertise && (
-                                <span className="rounded-full bg-violet-100 text-violet-700 text-[9px] px-1 font-bold leading-none py-0.5 border border-violet-200" title="Proficiency">
-                                  P
-                                </span>
-                              )}
-                              <span className="truncate">{s.label}</span>
-                              <span className="text-[10px] text-stone-400 font-normal uppercase">({s.ability})</span>
-                            </div>
-                            <span className={`font-mono text-xs ${hasBonus ? 'text-violet-700 font-bold' : 'text-stone-400'}`}>
-                              {formatMod(bonus)}
-                            </span>
+                          <div className="space-y-1.5">
+                            {abilitySkills.map((s) => {
+                              const state = normalizeSkillState(form.skills[s.key])
+                              const skillBns = skillBonus(form, s, proficiencyBonus(level))
+                              const hasBonus = state.prof || state.expertise
+                              return (
+                                <div
+                                  key={s.key}
+                                  className={`flex items-center justify-between rounded-lg border px-3 py-1.5 text-sm transition-all ${
+                                    hasBonus
+                                      ? 'border-violet-300 bg-violet-50/40 text-violet-950 font-semibold'
+                                      : 'border-stone-200 bg-white text-stone-600'
+                                  }`}
+                                >
+                                  <div className="flex items-center gap-2 truncate">
+                                    {state.expertise && (
+                                      <span className="rounded-full bg-violet-600 text-white text-[9px] px-1 font-bold leading-none py-0.5" title="Expertise">
+                                        E
+                                      </span>
+                                    )}
+                                    {state.prof && !state.expertise && (
+                                      <span className="rounded-full bg-violet-100 text-violet-700 text-[9px] px-1 font-bold leading-none py-0.5 border border-violet-200" title="Proficiency">
+                                        P
+                                      </span>
+                                    )}
+                                    <span className="truncate">{s.label}</span>
+                                  </div>
+                                  <span className={`font-mono text-xs ${hasBonus ? 'text-violet-700 font-bold' : 'text-stone-400'}`}>
+                                    {formatMod(skillBns)}
+                                  </span>
+                                </div>
+                              )
+                            })}
                           </div>
-                        )
-                      })}
-                    </div>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
 
@@ -2216,7 +2290,20 @@ function CharacterFormModal({
                           {form.equipment.map((item, index) => (
                             <li key={index} className="py-2 text-sm text-stone-700 flex items-center gap-2">
                               <span className="text-stone-400 text-xs">🎒</span>
-                              <span>{item}</span>
+                              <span
+                                role="button"
+                                tabIndex={0}
+                                title="คลิกเพื่อดูรายละเอียดไอเทม"
+                                onClick={() => setStatblockItem({ name: item.name })}
+                                className="cursor-pointer hover:underline hover:decoration-dotted"
+                              >
+                                {item.name}
+                              </span>
+                              {item.qty > 1 && (
+                                <span className="ml-auto shrink-0 rounded bg-stone-100 px-1.5 py-0.5 text-[10px] font-semibold text-stone-500">
+                                  ×{item.qty}
+                                </span>
+                              )}
                             </li>
                           ))}
                         </ul>
@@ -2444,6 +2531,7 @@ function CharacterFormModal({
         {exportModalOpen && (
           <ExportPdfModal character={form} onClose={() => setExportModalOpen(false)} />
         )}
+        <ItemStatblockModal item={statblockItem} onClose={() => setStatblockItem(null)} />
       </div>
     )
   }
@@ -3104,7 +3192,7 @@ function CharacterFormModal({
           </FormSection>
 
           <FormSection icon="🎒" title="อุปกรณ์ (Equipment)" hint="กำหนดเองหรือเลือกจากร้านค้า">
-            <ItemListEditor
+            <EquipmentListEditor
               items={form.equipment}
               onChange={(items) => patch({ equipment: items })}
               modes={[

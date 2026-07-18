@@ -330,9 +330,16 @@ function joinFeatures(items) {
     .join('\n')
 }
 
+function equipmentEntryText(item) {
+  if (typeof item === 'string') return item
+  if (!item) return ''
+  const qty = Number(item.qty) || 1
+  return qty > 1 ? `${item.name ?? ''} x${qty}` : item.name ?? ''
+}
+
 function fillEquipment(map, character, include, excludeVolatile) {
   const equipmentLines = []
-  if (include('equipmentList')) equipmentLines.push(...(character.equipment ?? []))
+  if (include('equipmentList')) equipmentLines.push(...(character.equipment ?? []).map(equipmentEntryText))
   if (include('treasure') && character.treasure) equipmentLines.push(character.treasure)
   if (equipmentLines.length > 0) setText(map, 'Text99', joinItems(equipmentLines))
 
