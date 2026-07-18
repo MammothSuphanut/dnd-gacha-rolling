@@ -20,6 +20,23 @@ import CreateCharacterModal from '../components/CreateCharacterModal'
 
 const NO_CATEGORY = 'ไม่มีหมวดหมู่'
 const ROLL_DURATION_MS = 700
+const STAR_RARITY_CATEGORIES = new Set(['Species', 'Background'])
+
+// Species/Background groups are named "<Subcategory> (***)"; rank by star count
+// instead of alphabetically so rarer tiers sort in the right order.
+function starRarityRank(group) {
+  const match = (group ?? '').match(/\(([*]+)\)\s*$/)
+  return match ? match[1].length : 0
+}
+
+function resultItemComparator(category) {
+  if (STAR_RARITY_CATEGORIES.has(category)) {
+    return (a, b) =>
+      starRarityRank(a.group) - starRarityRank(b.group) || (a.name ?? '').localeCompare(b.name ?? '', 'th')
+  }
+  return (a, b) =>
+    (a.group ?? '').localeCompare(b.group ?? '', 'th') || (a.name ?? '').localeCompare(b.name ?? '', 'th')
+}
 
 export default function RollPage({
   rollState,
@@ -676,9 +693,7 @@ export default function RollPage({
                                   )}
                                   <div className="flex flex-wrap gap-2">
                                     {[...result.resultItems]
-                                      .sort((a, b) =>
-                                        (a.group ?? '').localeCompare(b.group ?? '', 'th'),
-                                      )
+                                      .sort(resultItemComparator(category))
                                       .map((item, i) => {
                                       const Wrapper = item.link ? 'a' : 'div'
                                       const wrapperProps = item.link
