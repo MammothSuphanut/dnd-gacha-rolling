@@ -1,22 +1,40 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { EXPORT_SECTIONS, buildCharacterPdf, downloadPdfBytes } from '../utils/pdfExport'
 import { characterImageKey, getImage } from '../utils/imageStore'
 
 function defaultSelection() {
-  return new Set(EXPORT_SECTIONS.map((s) => s.key))
+  return new Set(EXPORT_SECTIONS.filter((s) => s.defaultOn !== false).map((s) => s.key))
 }
 
-export default function ExportPdfModal({ character, users, onClose }) {
+export default function ExportPdfModal({ character, onClose }) {
   const [selected, setSelected] = useState(defaultSelection)
-  const [excludeVolatile, setExcludeVolatile] = useState(false)
+  const [excludeVolatile, setExcludeVolatile] = useState(true)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
+
+  const groups = useMemo(() => {
+    const map = new Map()
+    for (const section of EXPORT_SECTIONS) {
+      if (!map.has(section.group)) map.set(section.group, [])
+      map.get(section.group).push(section)
+    }
+    return Array.from(map.entries())
+  }, [])
 
   function toggle(key) {
     setSelected((prev) => {
       const next = new Set(prev)
       if (next.has(key)) next.delete(key)
       else next.add(key)
+      return next
+    })
+  }
+
+  function toggleGroup(sections) {
+    setSelected((prev) => {
+      const allOn = sections.every((s) => prev.has(s.key))
+      const next = new Set(prev)
+      sections.forEach((s) => (allOn ? next.delete(s.key) : next.add(s.key)))
       return next
     })
   }
@@ -29,15 +47,13 @@ export default function ExportPdfModal({ character, users, onClose }) {
 
   function resetToDefault() {
     setSelected(defaultSelection())
-    setExcludeVolatile(false)
+    setExcludeVolatile(true)
   }
 
   async function handleConfirm() {
     setBusy(true)
     setError('')
     try {
-      const ownerUsername = users.find((u) => u.id === character.ownerId)?.username || ''
-
       let imageDataUrl = null
       if (selected.has('image')) {
         const images = character.images ?? []
@@ -48,7 +64,6 @@ export default function ExportPdfModal({ character, users, onClose }) {
       }
 
       const bytes = await buildCharacterPdf(character, {
-        ownerUsername,
         sections: selected,
         imageDataUrl,
         excludeVolatile,
@@ -66,7 +81,7 @@ export default function ExportPdfModal({ character, users, onClose }) {
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 p-4" onClick={onClose}>
       <div
-        className="animate-fade-in flex max-h-[85vh] w-full max-w-md flex-col overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"
+        className="animate-fade-in flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-[#e2cfb3] px-5 py-4 bg-[#f5ede0]/30">
@@ -105,11 +120,11 @@ export default function ExportPdfModal({ character, users, onClose }) {
           </div>
           {excludeVolatile && (
             <p className="mb-2 text-[11px] text-stone-400">
-              จะไม่กรอก HP ปัจจุบัน/ชั่วคราว, Inspiration, เงิน, และจำนวนช่องเวท — เหมาะสำหรับพิมพ์ชีทไว้ล่วงหน้าก่อนอัปเลเวล
+              จะไม่กรอก HP ปัจจุบัน/ชั่วคราว, Heroic Inspiration, เงิน, และช่องเวทที่ใช้ไป — เหมาะสำหรับพิมพ์ชีทไว้ล่วงหน้าก่อนอัปเลเวล
             </p>
           )}
           <div className="mb-2 flex items-center justify-between">
-            <span className="text-xs font-semibold text-stone-500">หมวดข้อมูล</span>
+            <span className="text-xs font-semibold text-stone-500">หมวดข้อมูล ({selected.size}/{EXPORT_SECTIONS.length})</span>
             <button
               type="button"
               onClick={toggleAll}
@@ -118,24 +133,43 @@ export default function ExportPdfModal({ character, users, onClose }) {
               {selected.size === EXPORT_SECTIONS.length ? 'ยกเลิกทั้งหมด' : 'เลือกทั้งหมด'}
             </button>
           </div>
-          <div className="space-y-1.5">
-            {EXPORT_SECTIONS.map((section) => (
-              <label
-                key={section.key}
-                className="flex items-start gap-2.5 rounded-md border border-[#e2cfb3] bg-white px-3 py-2 text-sm hover:bg-[#f5ede0]/40"
-              >
-                <input
-                  type="checkbox"
-                  className="mt-0.5"
-                  checked={selected.has(section.key)}
-                  onChange={() => toggle(section.key)}
-                />
-                <span>
-                  <span className="block font-medium text-stone-800">{section.label}</span>
-                  <span className="block text-[11px] text-stone-400">{section.hint}</span>
-                </span>
-              </label>
-            ))}
+          <div className="space-y-3">
+            {groups.map(([group, sections]) => {
+              const allOn = sections.every((s) => selected.has(s.key))
+              return (
+                <div key={group} className="rounded-md border border-[#e2cfb3] overflow-hidden">
+                  <div className="flex items-center justify-between bg-[#f5ede0]/60 px-3 py-1.5">
+                    <span className="text-xs font-semibold text-stone-700">{group}</span>
+                    <button
+                      type="button"
+                      onClick={() => toggleGroup(sections)}
+                      className="text-[11px] font-medium text-violet-700 hover:underline"
+                    >
+                      {allOn ? 'ยกเลิกหมวดนี้' : 'เลือกหมวดนี้'}
+                    </button>
+                  </div>
+                  <div className="divide-y divide-[#e2cfb3]/60 bg-white">
+                    {sections.map((section) => (
+                      <label
+                        key={section.key}
+                        className="flex items-start gap-2.5 px-3 py-1.5 text-sm hover:bg-[#f5ede0]/40 cursor-pointer select-none"
+                      >
+                        <input
+                          type="checkbox"
+                          className="mt-0.5"
+                          checked={selected.has(section.key)}
+                          onChange={() => toggle(section.key)}
+                        />
+                        <span>
+                          <span className="block font-medium text-stone-800">{section.label}</span>
+                          {section.hint && <span className="block text-[11px] text-stone-400">{section.hint}</span>}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              )
+            })}
           </div>
           {error && <p className="mt-3 text-xs text-red-600">{error}</p>}
         </div>

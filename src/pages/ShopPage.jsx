@@ -45,8 +45,6 @@ function blankItem() {
     urban: false,
     premium: false,
     enhanceable: false,
-    magical: false,
-    nonMagical: true,
     attunement: false,
     cursed: false,
     consumable: false,
@@ -93,16 +91,6 @@ const TAG_LABELS = [
     key: 'enhanceable',
     label: 'ตีบวกได้',
     tooltip: 'สามารถซื้อพร้อมค่าตีบวก +1/+2/+3 ได้ ราคาจะถูกคูณตามตัวคูณที่ตั้งค่าไว้',
-  },
-  {
-    key: 'magical',
-    label: 'เวทมนตร์',
-    tooltip: 'ไอเทมเวทมนตร์ มีความหายาก (rarity) กำกับ',
-  },
-  {
-    key: 'nonMagical',
-    label: 'ไม่มีเวทมนตร์',
-    tooltip: 'ของธรรมดา ไม่มีคุณสมบัติวิเศษ',
   },
   {
     key: 'attunement',
@@ -298,6 +286,22 @@ function ItemPreviewCard({ item, shopName }) {
   )
 }
 
+// Finds the catalog entry for the enchanted version of a base item (e.g. "Longsword" at
+// level 1 -> "+1 Longsword"), preferring the shop the base item was picked from.
+function findEnhancedCatalogItem(shops, baseName, level, preferredShopId) {
+  if (!baseName || !level) return null
+  const targetName = `+${level} ${baseName}`
+  let fallback = null
+  for (const shop of shops) {
+    const match = shop.items.find((i) => i.name === targetName)
+    if (match) {
+      if (shop.id === preferredShopId) return { shopId: shop.id, shopName: shop.name, item: match }
+      if (!fallback) fallback = { shopId: shop.id, shopName: shop.name, item: match }
+    }
+  }
+  return fallback
+}
+
 function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onAddCostToCart, showToast }) {
   const enhanceableOptions = useMemo(() => {
     const list = []
@@ -437,8 +441,36 @@ function EnhanceUpgradeModal({ open, onClose, shops, enhancementMultipliers, onA
       } else {
         setCurrentLevel(toLevel)
         if (outcome === 'success') {
+          let addedNote = ''
+          if (!isRepair && item) {
+            const found = findEnhancedCatalogItem(shops, item.name, toLevel, selected?.shopId)
+            if (found) {
+              const foundPriceType = PRICE_TYPES.find((p) => p.type === activeTier && found.item[p.field])
+                ? activeTier
+                : 'normal'
+              const foundPriceField = PRICE_TYPES.find((p) => p.type === foundPriceType)
+              const foundPriceText = found.item[foundPriceField.field]
+              const foundPriceCp = parsePriceToCopper(foundPriceText)
+              onAddCostToCart({
+                cartId: createId('cart'),
+                shopId: found.shopId,
+                shopName: found.shopName,
+                itemId: found.item.id,
+                itemName: found.item.name,
+                priceType: foundPriceType,
+                priceLabel: foundPriceField.label,
+                priceText: foundPriceText,
+                priceCp: foundPriceCp,
+                level: toLevel,
+                qty: 1,
+              })
+              addedNote = ` — เพิ่ม "${found.item.name}" (${found.shopName}) ลงตะกร้าแล้ว`
+            }
+          }
           showToast(
-            isRepair ? `✨ ${verb} "${itemName}" สำเร็จ! ไอเทมกลับมาสภาพสมบูรณ์` : `✨ ${verb} "${itemName}" สำเร็จ! ตอนนี้ +${toLevel}`,
+            isRepair
+              ? `✨ ${verb} "${itemName}" สำเร็จ! ไอเทมกลับมาสภาพสมบูรณ์`
+              : `✨ ${verb} "${itemName}" สำเร็จ! ตอนนี้ +${toLevel}${addedNote}`,
             'success',
           )
         } else if (outcome === 'downgrade') {

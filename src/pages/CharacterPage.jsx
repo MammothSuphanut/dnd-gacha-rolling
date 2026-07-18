@@ -2442,7 +2442,7 @@ function CharacterFormModal({
           </div>
         </div>
         {exportModalOpen && (
-          <ExportPdfModal character={form} users={users} onClose={() => setExportModalOpen(false)} />
+          <ExportPdfModal character={form} onClose={() => setExportModalOpen(false)} />
         )}
       </div>
     )
@@ -3426,7 +3426,7 @@ function CharacterFormModal({
       </div>
 
       {exportModalOpen && (
-        <ExportPdfModal character={form} users={users} onClose={() => setExportModalOpen(false)} />
+        <ExportPdfModal character={form} onClose={() => setExportModalOpen(false)} />
       )}
     </div>
   )

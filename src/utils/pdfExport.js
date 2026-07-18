@@ -1,8 +1,9 @@
 import { PDFDocument } from 'pdf-lib'
 import fontkit from '@pdf-lib/fontkit'
-import pdfTemplateUrl from '../data/5E_CharacterSheet_Fillable.pdf?url'
+import pdfTemplateUrl from '../data/character-sheet.pdf?url'
 import thaiFontUrl from '../assets/NotoSansThai.ttf?url'
 import {
+  DND_LANGUAGES,
   SKILLS,
   abilityMod,
   formatMod,
@@ -13,86 +14,158 @@ import {
   skillBonus,
 } from './dnd5e'
 
+// Each entry fills exactly one (or a tightly related handful of) field(s) on the PDF,
+// grouped only for the export modal's UI — the grouping has no bearing on the template.
 export const EXPORT_SECTIONS = [
-  { key: 'identity', label: 'ข้อมูลตัวตน', hint: 'ชื่อ, ผู้เล่น, เผ่าพันธุ์, คลาส, ภูมิหลัง, alignment' },
-  { key: 'appearance', label: 'ลักษณะภายนอก', hint: 'อายุ, ส่วนสูง, น้ำหนัก, ตา, ผม, ผิว' },
-  { key: 'stats', label: 'ค่าพลังและทักษะ', hint: 'STR-CHA, saving throws, skills' },
-  { key: 'combat', label: 'การต่อสู้', hint: 'AC, HP, Speed, Death Saves, อาวุธ' },
-  { key: 'equipment', label: 'อุปกรณ์และทรัพย์สิน', hint: 'เงินตรา, equipment, proficiencies & languages' },
-  { key: 'personality', label: 'บุคลิกภาพ', hint: 'Ideals, Bonds, Flaws, Personality Traits' },
-  { key: 'backstory', label: 'ประวัติและพันธมิตร', hint: 'Backstory, Allies, Faction, Treasure' },
-  { key: 'spells', label: 'เวทมนตร์ (Spells)', hint: 'Spellcasting Class, Ability, Save DC, Attack Bonus, Cantrips & Spells 1-9' },
-  { key: 'image', label: 'รูปตัวละคร', hint: 'ใส่รูปหลักของตัวละครลงในชีท' },
+  // ข้อมูลตัวตน
+  { key: 'name', group: 'ข้อมูลตัวตน', label: 'ชื่อตัวละคร', hint: 'Character Name' },
+  { key: 'background', group: 'ข้อมูลตัวตน', label: 'ภูมิหลัง (Background)', hint: 'Background' },
+  { key: 'species', group: 'ข้อมูลตัวตน', label: 'เผ่าพันธุ์ (Species)', hint: 'Species' },
+  { key: 'class', group: 'ข้อมูลตัวตน', label: 'คลาส (Class)', hint: 'Class' },
+  { key: 'subclass', group: 'ข้อมูลตัวตน', label: 'ซับคลาส (Subclass)', hint: 'Subclass' },
+  { key: 'level', group: 'ข้อมูลตัวตน', label: 'เลเวล', hint: 'Level', defaultOn: false },
+  { key: 'xp', group: 'ข้อมูลตัวตน', label: 'แต้มประสบการณ์ (XP)', hint: 'XP', defaultOn: false },
+  { key: 'alignment', group: 'ข้อมูลตัวตน', label: 'แนวคิด (Alignment)', hint: 'Alignment' },
+  { key: 'size', group: 'ข้อมูลตัวตน', label: 'ขนาดตัว (Size)', hint: 'Size' },
+
+  // ลักษณะภายนอก (รวมลงช่อง Appearance ช่องเดียวในชีท)
+  { key: 'age', group: 'ลักษณะภายนอก', label: 'อายุ', hint: 'รวมลงในช่อง Appearance' },
+  { key: 'height', group: 'ลักษณะภายนอก', label: 'ส่วนสูง', hint: 'รวมลงในช่อง Appearance' },
+  { key: 'weight', group: 'ลักษณะภายนอก', label: 'น้ำหนัก', hint: 'รวมลงในช่อง Appearance' },
+  { key: 'eyes', group: 'ลักษณะภายนอก', label: 'สีตา', hint: 'รวมลงในช่อง Appearance' },
+  { key: 'hair', group: 'ลักษณะภายนอก', label: 'สีผม', hint: 'รวมลงในช่อง Appearance' },
+  { key: 'skin', group: 'ลักษณะภายนอก', label: 'สีผิว', hint: 'รวมลงในช่อง Appearance' },
+
+  // ค่าพลังและทักษะ
+  { key: 'abilityScores', group: 'ค่าพลังและทักษะ', label: 'ค่าพลัง STR-CHA', hint: 'Score, Modifier, Proficiency Bonus', defaultOn: false },
+  { key: 'savingThrows', group: 'ค่าพลังและทักษะ', label: 'Saving Throws', defaultOn: false },
+  { key: 'skills', group: 'ค่าพลังและทักษะ', label: 'ทักษะ (Skills)', defaultOn: false },
+
+  // การต่อสู้
+  { key: 'ac', group: 'การต่อสู้', label: 'Armor Class', defaultOn: false },
+  { key: 'hp', group: 'การต่อสู้', label: 'Hit Points', hint: 'Current, Temp, Max', defaultOn: false },
+  { key: 'hitDice', group: 'การต่อสู้', label: 'Hit Dice', defaultOn: false },
+  { key: 'deathSaves', group: 'การต่อสู้', label: 'Death Saves', defaultOn: false },
+  { key: 'heroicInspiration', group: 'การต่อสู้', label: 'Heroic Inspiration', defaultOn: false },
+  { key: 'combatMeta', group: 'การต่อสู้', label: 'Initiative / Speed / Passive Perception', defaultOn: false },
+  { key: 'weapons', group: 'การต่อสู้', label: 'อาวุธและดาเมจ', hint: 'สูงสุด 6 รายการ', defaultOn: false },
+
+  // อุปกรณ์และทรัพย์สิน
+  { key: 'equipmentList', group: 'อุปกรณ์และทรัพย์สิน', label: 'รายการอุปกรณ์ (Equipment)', defaultOn: false },
+  { key: 'treasure', group: 'อุปกรณ์และทรัพย์สิน', label: 'ทรัพย์สิน/ของมีค่า (Treasure)', hint: 'รวมลงในช่อง Equipment', defaultOn: false },
+  { key: 'coins', group: 'อุปกรณ์และทรัพย์สิน', label: 'เงินตรา (CP/SP/EP/GP/PP)', defaultOn: false },
+  { key: 'languages', group: 'อุปกรณ์และทรัพย์สิน', label: 'ภาษาและความชำนาญ (Proficiencies & Languages)', hint: 'แยกลงช่อง Languages และ Tools ให้อัตโนมัติ', defaultOn: false },
+
+  // ความสามารถพิเศษ
+  { key: 'classFeatures', group: 'ความสามารถพิเศษ', label: 'Class Features', defaultOn: false },
+  { key: 'feats', group: 'ความสามารถพิเศษ', label: 'Feats / ความสามารถเสริม', defaultOn: false },
+
+  // บุคลิกภาพและเรื่องราว (รวมลงช่อง Backstory & Personality ช่องเดียวในชีท)
+  { key: 'personalityTraits', group: 'บุคลิกภาพและเรื่องราว', label: 'Personality Traits', hint: 'รวมลงในช่อง Backstory & Personality' },
+  { key: 'ideals', group: 'บุคลิกภาพและเรื่องราว', label: 'Ideals', hint: 'รวมลงในช่อง Backstory & Personality' },
+  { key: 'bonds', group: 'บุคลิกภาพและเรื่องราว', label: 'Bonds', hint: 'รวมลงในช่อง Backstory & Personality' },
+  { key: 'flaws', group: 'บุคลิกภาพและเรื่องราว', label: 'Flaws', hint: 'รวมลงในช่อง Backstory & Personality' },
+  { key: 'biography', group: 'บุคลิกภาพและเรื่องราว', label: 'ประวัติตัวละคร (Biography)', hint: 'รวมลงในช่อง Backstory & Personality' },
+  { key: 'allies', group: 'บุคลิกภาพและเรื่องราว', label: 'พันธมิตร/องค์กร (Allies & Organizations)', hint: 'รวมลงในช่อง Backstory & Personality' },
+  { key: 'faction', group: 'บุคลิกภาพและเรื่องราว', label: 'กลุ่ม/สังกัด (Faction)', hint: 'รวมลงในช่อง Backstory & Personality' },
+
+  // เวทมนตร์
+  { key: 'spellcastingInfo', group: 'เวทมนตร์', label: 'ข้อมูลการร่าย', hint: 'Spellcasting Ability, Modifier, Save DC, Attack Bonus', defaultOn: false },
+  { key: 'spellSlots', group: 'เวทมนตร์', label: 'Spell Slots (Total/Expended)', defaultOn: false },
+  { key: 'cantrips', group: 'เวทมนตร์', label: 'Cantrips', defaultOn: false },
+  { key: 'preparedSpells', group: 'เวทมนตร์', label: 'Prepared Spells (เลเวล 1-9)', defaultOn: false },
+
+  // อื่นๆ
+  { key: 'image', group: 'อื่นๆ', label: 'รูปตัวละคร', hint: 'ใส่รูปหลักของตัวละครลงในชีท', defaultOn: false },
 ]
 
-const SKILL_CHECKBOX = {
-  acrobatics: 'Check Box 23',
-  animal: 'Check Box 24',
-  arcana: 'Check Box 25',
-  athletics: 'Check Box 26',
-  deception: 'Check Box 27',
-  history: 'Check Box 28',
-  insight: 'Check Box 29',
-  intimidation: 'Check Box 30',
-  investigation: 'Check Box 31',
-  medicine: 'Check Box 32',
-  nature: 'Check Box 33',
-  perception: 'Check Box 34',
-  performance: 'Check Box 35',
-  persuasion: 'Check Box 36',
-  religion: 'Check Box 37',
-  sleightOfHand: 'Check Box 38',
-  stealth: 'Check Box 39',
-  survival: 'Check Box 40',
-}
-
-const SKILL_TEXT_FIELD = {
-  acrobatics: 'Acrobatics',
-  animal: 'Animal',
-  arcana: 'Arcana',
-  athletics: 'Athletics',
-  deception: 'Deception',
-  history: 'History',
-  insight: 'Insight',
-  intimidation: 'Intimidation',
-  investigation: 'Investigation',
-  medicine: 'Medicine',
-  nature: 'Nature',
-  perception: 'Perception',
-  performance: 'Performance',
-  persuasion: 'Persuasion',
-  religion: 'Religion',
-  sleightOfHand: 'SleightofHand',
-  stealth: 'Stealth',
-  survival: 'Survival',
-}
-
 const SAVE_CHECKBOX = {
-  str: 'Check Box 11',
-  dex: 'Check Box 18',
-  con: 'Check Box 19',
-  int: 'Check Box 20',
-  wis: 'Check Box 21',
-  cha: 'Check Box 22',
+  str: 'Check Box37',
+  dex: 'Check Box33',
+  con: 'Check Box32',
+  int: 'Check Box4',
+  wis: 'Check Box21',
+  cha: 'Check Box26',
 }
 
 const SAVE_TEXT_FIELD = {
-  str: 'ST Strength',
-  dex: 'ST Dexterity',
-  con: 'ST Constitution',
-  int: 'ST Intelligence',
-  wis: 'ST Wisdom',
-  cha: 'ST Charisma',
+  str: 'Text91',
+  dex: 'Text87',
+  con: 'Text86',
+  int: 'Text69',
+  wis: 'Text75',
+  cha: 'Text81',
 }
 
-const DEATH_SAVE_SUCCESS_BOXES = ['Check Box 12', 'Check Box 13', 'Check Box 14']
-const DEATH_SAVE_FAILURE_BOXES = ['Check Box 15', 'Check Box 16', 'Check Box 17']
+// key -> { checkbox, text }, matched against dnd5e.js's SKILLS list
+const SKILL_FIELD = {
+  athletics: { checkbox: 'Check Box38', text: 'Text92' },
+  acrobatics: { checkbox: 'Check Box34', text: 'Text88' },
+  sleightOfHand: { checkbox: 'Check Box35', text: 'Text89' },
+  stealth: { checkbox: 'Check Box36', text: 'Text90' },
+  arcana: { checkbox: 'Check Box16', text: 'Text70' },
+  history: { checkbox: 'Check Box17', text: 'Text71' },
+  investigation: { checkbox: 'Check Box19', text: 'Text72' },
+  nature: { checkbox: 'Check Box20', text: 'Text73' },
+  religion: { checkbox: 'Check Box18', text: 'Text74' },
+  animal: { checkbox: 'Check Box22', text: 'Text76' },
+  insight: { checkbox: 'Check Box23', text: 'Text77' },
+  medicine: { checkbox: 'Check Box25', text: 'Text78' },
+  perception: { checkbox: 'Check Box31', text: 'Text79' },
+  survival: { checkbox: 'Check Box24', text: 'Text80' },
+  deception: { checkbox: 'Check Box27', text: 'Text82' },
+  intimidation: { checkbox: 'Check Box28', text: 'Text83' },
+  performance: { checkbox: 'Check Box30', text: 'Text84' },
+  persuasion: { checkbox: 'Check Box29', text: 'Text85' },
+}
 
-function classSummary(character) {
-  return (character.classLevels ?? [])
-    .filter((cl) => cl.className)
-    .map((cl) => `${cl.className}${cl.subclassName ? ` (${cl.subclassName})` : ''} ${cl.level}`)
+const DEATH_SAVE_SUCCESS_BOXES = ['Check Box5', 'Check Box6', 'Check Box7']
+const DEATH_SAVE_FAILURE_BOXES = ['Check Box8', 'Check Box9', 'Check Box10']
+
+const WEAPON_ROW_FIELDS = [
+  ['Text30', 'Text31', 'Text32'],
+  ['Text34', 'Text35', 'Text36'],
+  ['Text38', 'Text39', 'Text40'],
+  ['Text42', 'Text43', 'Text44'],
+  ['Text46', 'Text47', 'Text48'],
+  ['Text50', 'Text51', 'Text52'],
+]
+
+const SPELL_SLOT_TOTAL_FIELD = {
+  1: 'Text112', 2: 'Text113', 3: 'Text114',
+  4: 'Text117', 5: 'Text116', 6: 'Text115',
+  7: 'Text118', 8: 'Text119', 9: 'Text120',
+}
+
+const SPELL_SLOT_EXPENDED_BOXES = {
+  1: ['Check Box227', 'Check Box228', 'Check Box229', 'Check Box230'],
+  2: ['Check Box231', 'Check Box232', 'Check Box233'],
+  3: ['Check Box234', 'Check Box235', 'Check Box236'],
+  4: ['Check Box237', 'Check Box238', 'Check Box239'],
+  5: ['Check Box240', 'Check Box241', 'Check Box242'],
+  6: ['Check Box243', 'Check Box244'],
+  7: ['Check Box245', 'Check Box246'],
+  8: ['Check Box247'],
+  9: ['Check Box248'],
+}
+
+const PREPARED_SPELL_ROWS = 30 // Text105.N (level) / Text106.N (name), N = 0..29
+
+const COIN_FIELD = { cp: 'Text226', sp: 'Text267', ep: 'Text268', gp: 'Text269', pp: 'Text270' }
+
+// character.proficienciesLanguages is one flat list mixing languages and tool/other
+// proficiencies (the editor doesn't tag entries by type) — split by name so the
+// sheet's separate Languages and Tools boxes each get only what belongs there.
+const DND_LANGUAGE_SET = new Set(DND_LANGUAGES.map((l) => l.toLowerCase()))
+
+function classAndSubclassText(character) {
+  const classLevels = (character.classLevels ?? []).filter((cl) => cl.className)
+  const classText = classLevels.map((cl) => `${cl.className} ${cl.level}`).join(' / ')
+  const subclassText = classLevels
+    .filter((cl) => cl.subclassName)
+    .map((cl) => cl.subclassName)
     .join(' / ')
+  return { classText, subclassText }
 }
 
 function totalLevel(character) {
@@ -102,6 +175,15 @@ function totalLevel(character) {
 function buildFieldMap(form) {
   const map = new Map()
   for (const field of form.getFields()) {
+    // The template ships fixed font sizes that clip long values (e.g. "Medium",
+    // "1d8+3 slashing"); auto-size (0) lets pdf-lib shrink text to fit instead.
+    if (field.constructor.name === 'PDFTextField') {
+      try {
+        field.setFontSize(0)
+      } catch {
+        // ignore
+      }
+    }
     map.set(field.getName().trim(), field)
   }
   return map
@@ -128,94 +210,113 @@ function setCheck(map, name, checked) {
   }
 }
 
-function fillIdentity(map, character, ownerUsername) {
-  setText(map, 'CharacterName', character.name)
-  setText(map, 'CharacterName 2', character.name)
-  setText(map, 'PlayerName', ownerUsername)
-  setText(map, 'ClassLevel', classSummary(character))
-  setText(map, 'Background', character.background)
-  setText(map, 'Race', character.species)
-  setText(map, 'Alignment', character.alignment)
-  setText(map, 'XP', character.combat?.xp)
+function fillIdentity(map, character, include) {
+  if (include('name')) {
+    setText(map, 'Text1', character.name)
+  }
+  if (include('background')) setText(map, 'Text6', character.background)
+  if (include('species')) setText(map, 'Text8', character.species)
+  const { classText, subclassText } = classAndSubclassText(character)
+  if (include('class')) setText(map, 'Text7', classText)
+  if (include('subclass')) setText(map, 'Text9', subclassText)
+  if (include('level')) setText(map, 'Text11', totalLevel(character) || '')
+  if (include('xp')) setText(map, 'Text12', character.combat?.xp)
+  if (include('alignment')) setText(map, 'Text100', character.alignment)
+  if (include('size')) setText(map, 'Text28', character.size)
 }
 
-function fillAppearance(map, character) {
-  setText(map, 'Age', character.age)
-  setText(map, 'Height', character.height)
-  setText(map, 'Weight', character.weight)
-  setText(map, 'Eyes', character.eyes)
-  setText(map, 'Hair', character.hair)
-  setText(map, 'Skin', character.skin)
+function fillAppearance(map, character, include) {
+  const lines = []
+  if (include('age') && character.age) lines.push(`อายุ: ${character.age}`)
+  if (include('height') && character.height) lines.push(`ส่วนสูง: ${character.height}`)
+  if (include('weight') && character.weight) lines.push(`น้ำหนัก: ${character.weight}`)
+  if (include('eyes') && character.eyes) lines.push(`สีตา: ${character.eyes}`)
+  if (include('hair') && character.hair) lines.push(`สีผม: ${character.hair}`)
+  if (include('skin') && character.skin) lines.push(`สีผิว: ${character.skin}`)
+  if (lines.length > 0) setText(map, 'Text96', lines.join('\n'))
 }
 
-function fillStats(map, character) {
+const ABILITY_MOD_FIELD = { str: 'Text21', dex: 'Text22', con: 'Text24', int: 'Text20', wis: 'Text23', cha: 'Text25' }
+const ABILITY_SCORE_FIELD = { str: 'Text64', dex: 'Text66', con: 'Text67', int: 'Text63', wis: 'Text65', cha: 'Text68' }
+
+function fillAbilities(map, character, include) {
   const level = totalLevel(character)
   const profBonus = proficiencyBonus(level)
-  setText(map, 'ProfBonus', formatMod(profBonus))
-  setText(map, 'STR', character.stats?.str)
-  setText(map, 'DEX', character.stats?.dex)
-  setText(map, 'CON', character.stats?.con)
-  setText(map, 'INT', character.stats?.int)
-  setText(map, 'WIS', character.stats?.wis)
-  setText(map, 'CHA', character.stats?.cha)
-  setText(map, 'STRmod', formatMod(abilityMod(character.stats?.str)))
-  setText(map, 'DEXmod', formatMod(abilityMod(character.stats?.dex)))
-  setText(map, 'CONmod', formatMod(abilityMod(character.stats?.con)))
-  setText(map, 'INTmod', formatMod(abilityMod(character.stats?.int)))
-  setText(map, 'WISmod', formatMod(abilityMod(character.stats?.wis)))
-  setText(map, 'CHamod', formatMod(abilityMod(character.stats?.cha)))
-  setText(map, 'Initiative', formatMod(abilityMod(character.stats?.dex)))
-  setText(map, 'Passive', passivePerception(character, profBonus))
 
-  for (const key of Object.keys(SAVE_CHECKBOX)) {
-    setCheck(map, SAVE_CHECKBOX[key], !!character.savingThrows?.[key])
-    setText(map, SAVE_TEXT_FIELD[key], formatMod(savingThrowBonus(character, key, profBonus)))
+  if (include('abilityScores')) {
+    setText(map, 'Text19', formatMod(profBonus))
+    for (const key of Object.keys(ABILITY_MOD_FIELD)) {
+      setText(map, ABILITY_SCORE_FIELD[key], character.stats?.[key])
+      setText(map, ABILITY_MOD_FIELD[key], formatMod(abilityMod(character.stats?.[key])))
+    }
   }
 
-  for (const skill of SKILLS) {
-    const { prof, expertise } = normalizeSkillState(character.skills?.[skill.key])
-    setCheck(map, SKILL_CHECKBOX[skill.key], prof || expertise)
-    const bonusText = formatMod(skillBonus(character, skill, profBonus))
-    setText(map, SKILL_TEXT_FIELD[skill.key], expertise ? `${bonusText} (E)` : bonusText)
+  if (include('savingThrows')) {
+    for (const key of Object.keys(SAVE_CHECKBOX)) {
+      setCheck(map, SAVE_CHECKBOX[key], !!character.savingThrows?.[key])
+      setText(map, SAVE_TEXT_FIELD[key], formatMod(savingThrowBonus(character, key, profBonus)))
+    }
+  }
+
+  if (include('skills')) {
+    for (const skill of SKILLS) {
+      const fields = SKILL_FIELD[skill.key]
+      if (!fields) continue
+      const { prof, expertise } = normalizeSkillState(character.skills?.[skill.key])
+      setCheck(map, fields.checkbox, prof || expertise)
+      const bonusText = formatMod(skillBonus(character, skill, profBonus))
+      setText(map, fields.text, expertise ? `${bonusText} (E)` : bonusText)
+    }
   }
 }
 
-function fillCombat(map, character, excludeVolatile) {
-  const level = totalLevel(character)
-  setText(map, 'AC', character.combat?.ac)
-  setText(map, 'Speed', character.combat?.speed)
-  setText(map, 'HD', character.combat?.hitDice)
-  setText(map, 'HDTotal', level || '')
-  setText(map, 'HPMax', character.combat?.hp?.max)
-  if (!excludeVolatile) {
-      setText(map, 'HPCurrent', character.combat?.hp?.current)
-      setText(map, 'HPTemp', character.combat?.hp?.temp)
-      setText(map, 'Inspiration', character.combat?.inspiration ? 'X' : '')
+function fillCombat(map, character, include, excludeVolatile) {
+  if (include('ac')) setText(map, 'Text13', character.combat?.ac)
+
+  if (include('combatMeta')) {
+    setText(map, 'Text26', formatMod(abilityMod(character.stats?.dex)))
+    setText(map, 'Text27', character.combat?.speed)
+    const level = totalLevel(character)
+    setText(map, 'Text29', passivePerception(character, proficiencyBonus(level)))
   }
 
-  const successes = character.combat?.deathSaves?.successes ?? 0
-  const failures = character.combat?.deathSaves?.failures ?? 0
-  DEATH_SAVE_SUCCESS_BOXES.forEach((name, i) => setCheck(map, name, i < successes))
-  DEATH_SAVE_FAILURE_BOXES.forEach((name, i) => setCheck(map, name, i < failures))
+  if (include('hp')) {
+    setText(map, 'Text16', character.combat?.hp?.max)
+    if (!excludeVolatile) {
+      setText(map, 'Text14', character.combat?.hp?.current)
+      setText(map, 'Text15', character.combat?.hp?.temp)
+    }
+  }
 
-  const weapons = character.weapons ?? []
-  const weaponFieldNames = [
-    ['Wpn Name', 'Wpn1 AtkBonus', 'Wpn1 Damage'],
-    ['Wpn Name 2', 'Wpn2 AtkBonus', 'Wpn2 Damage'],
-    ['Wpn Name 3', 'Wpn3 AtkBonus', 'Wpn3 Damage'],
-  ]
-  weaponFieldNames.forEach(([nameField, atkField, dmgField], i) => {
-    const w = weapons[i]
-    if (!w) return
-    setText(map, nameField, w.name)
-    setText(map, atkField, w.bonusOrDC ?? w.atkBonus)
-    const damageText = (w.damages ?? [])
-      .filter((d) => d.amount || d.type)
-      .map((d) => [d.amount, d.type].filter(Boolean).join(' '))
-      .join(' / ')
-    setText(map, dmgField, damageText || w.damage)
-  })
-  setText(map, 'AttacksSpellcasting', character.attacksSpellcasting)
+  if (include('hitDice')) {
+    setText(map, 'Text17', totalLevel(character) || '')
+  }
+
+  if (include('heroicInspiration') && !excludeVolatile) {
+    setCheck(map, 'Check Box11', !!character.combat?.inspiration)
+  }
+
+  if (include('deathSaves')) {
+    const successes = character.combat?.deathSaves?.successes ?? 0
+    const failures = character.combat?.deathSaves?.failures ?? 0
+    DEATH_SAVE_SUCCESS_BOXES.forEach((name, i) => setCheck(map, name, i < successes))
+    DEATH_SAVE_FAILURE_BOXES.forEach((name, i) => setCheck(map, name, i < failures))
+  }
+
+  if (include('weapons')) {
+    const weapons = character.weapons ?? []
+    WEAPON_ROW_FIELDS.forEach(([nameField, atkField, dmgField], i) => {
+      const w = weapons[i]
+      if (!w) return
+      setText(map, nameField, w.name)
+      setText(map, atkField, w.bonusOrDC ?? w.atkBonus)
+      const damageText = (w.damages ?? [])
+        .filter((d) => d.amount || d.type)
+        .map((d) => [d.amount, d.type].filter(Boolean).join(' '))
+        .join(' / ')
+      setText(map, dmgField, damageText || w.damage)
+    })
+  }
 }
 
 function joinItems(items) {
@@ -229,278 +330,120 @@ function joinFeatures(items) {
     .join('\n')
 }
 
-function fillEquipment(map, character, excludeVolatile) {
-  if (!excludeVolatile) {
-      setText(map, 'CP', character.currency?.cp)
-      setText(map, 'SP', character.currency?.sp)
-      setText(map, 'EP', character.currency?.ep)
-      setText(map, 'GP', character.currency?.gp)
-      setText(map, 'PP', character.currency?.pp)
+function fillEquipment(map, character, include, excludeVolatile) {
+  const equipmentLines = []
+  if (include('equipmentList')) equipmentLines.push(...(character.equipment ?? []))
+  if (include('treasure') && character.treasure) equipmentLines.push(character.treasure)
+  if (equipmentLines.length > 0) setText(map, 'Text99', joinItems(equipmentLines))
+
+  if (include('languages')) {
+    const entries = character.proficienciesLanguages ?? []
+    const languages = entries.filter((it) => DND_LANGUAGE_SET.has(it.trim().toLowerCase()))
+    const otherProficiencies = entries.filter((it) => !DND_LANGUAGE_SET.has(it.trim().toLowerCase()))
+    setText(map, 'Text98', joinItems(languages))
+    setText(map, 'Text60', joinItems(otherProficiencies))
   }
-  setText(map, 'Equipment', joinItems(character.equipment))
-  setText(map, 'ProficienciesLang', joinItems(character.proficienciesLanguages))
-  setText(map, 'Features and Traits', joinFeatures(character.featuresAndTraits))
+
+  if (include('coins') && !excludeVolatile) {
+    setText(map, COIN_FIELD.cp, character.currency?.cp)
+    setText(map, COIN_FIELD.sp, character.currency?.sp)
+    setText(map, COIN_FIELD.ep, character.currency?.ep)
+    setText(map, COIN_FIELD.gp, character.currency?.gp)
+    setText(map, COIN_FIELD.pp, character.currency?.pp)
+  }
 }
 
-function fillPersonality(map, character) {
-  setText(map, 'PersonalityTraits', character.personalityTraits)
-  setText(map, 'Ideals', character.ideals)
-  setText(map, 'Bonds', character.bonds)
-  setText(map, 'Flaws', character.flaws)
+function fillFeatures(map, character, include) {
+  if (include('classFeatures')) setText(map, 'Text54', joinFeatures(character.featuresAndTraits))
+  if (include('feats')) setText(map, 'Text58', character.additionalFeaturesTraits)
 }
 
-function fillBackstory(map, character) {
-  setText(map, 'Backstory', character.biography)
-  setText(map, 'Allies', character.alliesOrganizations)
-  setText(map, 'FactionName', character.factionName)
-  setText(map, 'Treasure', character.treasure)
-  setText(map, 'Feat+Traits', character.additionalFeaturesTraits)
+function fillPersonality(map, character, include) {
+  const sections = []
+  if (include('personalityTraits') && character.personalityTraits) {
+    sections.push(`Personality Traits:\n${character.personalityTraits}`)
+  }
+  if (include('ideals') && character.ideals) sections.push(`Ideals:\n${character.ideals}`)
+  if (include('bonds') && character.bonds) sections.push(`Bonds:\n${character.bonds}`)
+  if (include('flaws') && character.flaws) sections.push(`Flaws:\n${character.flaws}`)
+  if (include('biography') && character.biography) sections.push(`Biography:\n${character.biography}`)
+  if (include('allies') && character.alliesOrganizations) sections.push(`Allies & Organizations:\n${character.alliesOrganizations}`)
+  if (include('faction') && character.factionName) sections.push(`Faction:\n${character.factionName}`)
+  if (sections.length > 0) setText(map, 'Text97', sections.join('\n\n'))
 }
 
-function fillSpells(map, character, excludeVolatile) {
+function fillSpells(map, character, include, excludeVolatile) {
   const sp = character.spellcasting
   if (!sp) return
 
-  // Metadata
-  setText(map, 'Spellcasting Class 2', sp.spellcastingClass)
-  setText(map, 'SpellcastingAbility 2', sp.spellcastingAbility)
-  setText(map, 'SpellSaveDC  2', sp.spellSaveDC)
-  setText(map, 'SpellAtkBonus 2', sp.spellAttackBonus)
-
-  // Cantrips
-  const cantripFields = [
-    'Spells 1014', 'Spells 1016', 'Spells 1017', 'Spells 1018',
-    'Spells 1019', 'Spells 1020', 'Spells 1021', 'Spells 1022'
-  ]
-  cantripFields.forEach((name, i) => {
-    setText(map, name, sp.cantrips?.[i]?.name)
-  })
-
-  // Level 1
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 19', sp.levels?.[1]?.slotsTotal)
-    setText(map, 'SlotsRemaining 19', sp.levels?.[1]?.slotsRemaining)
+  if (include('spellcastingInfo')) {
+    setText(map, 'Text111', sp.spellcastingClass)
+    setText(map, 'Text93', sp.spellcastingAbility)
+    setText(map, 'Text94', sp.spellSaveDC)
+    setText(map, 'Text95', sp.spellAttackBonus)
   }
-  const lvl1Fields = [
-    ['Spells 1015', 'Check Box 251'],
-    ['Spells 1023', 'Check Box 309'],
-    ['Spells 1024', 'Check Box 3010'],
-    ['Spells 1025', 'Check Box 3011'],
-    ['Spells 1026', 'Check Box 3012'],
-    ['Spells 1027', 'Check Box 3013'],
-    ['Spells 1028', 'Check Box 3014'],
-    ['Spells 1029', 'Check Box 3015'],
-    ['Spells 1030', 'Check Box 3016'],
-    ['Spells 1031', 'Check Box 3017'],
-    ['Spells 1032', 'Check Box 3018'],
-    ['Spells 1033', 'Check Box 3019']
-  ]
-  lvl1Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[1]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
 
-  // Level 2
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 20', sp.levels?.[2]?.slotsTotal)
-    setText(map, 'SlotsRemaining 20', sp.levels?.[2]?.slotsRemaining)
+  if (include('spellSlots')) {
+    for (let lvl = 1; lvl <= 9; lvl++) {
+      const levelData = sp.levels?.[lvl]
+      setText(map, SPELL_SLOT_TOTAL_FIELD[lvl], levelData?.slotsTotal)
+      if (!excludeVolatile) {
+        const total = Number(levelData?.slotsTotal) || 0
+        const remaining = Number(levelData?.slotsRemaining) || 0
+        const expended = Math.max(0, Math.min(total - remaining, SPELL_SLOT_EXPENDED_BOXES[lvl].length))
+        SPELL_SLOT_EXPENDED_BOXES[lvl].forEach((name, i) => setCheck(map, name, i < expended))
+      }
+    }
   }
-  const lvl2Fields = [
-    ['Spells 1046', 'Check Box 313'],
-    ['Spells 1034', 'Check Box 310'],
-    ['Spells 1035', 'Check Box 3020'],
-    ['Spells 1036', 'Check Box 3021'],
-    ['Spells 1037', 'Check Box 3022'],
-    ['Spells 1038', 'Check Box 3023'],
-    ['Spells 1039', 'Check Box 3024'],
-    ['Spells 1040', 'Check Box 3025'],
-    ['Spells 1041', 'Check Box 3026'],
-    ['Spells 1042', 'Check Box 3027'],
-    ['Spells 1043', 'Check Box 3028'],
-    ['Spells 1044', 'Check Box 3029'],
-    ['Spells 1045', 'Check Box 3030']
-  ]
-  lvl2Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[2]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
 
-  // Level 3
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 21', sp.levels?.[3]?.slotsTotal)
-    setText(map, 'SlotsRemaining 21', sp.levels?.[3]?.slotsRemaining)
+  const preparedRows = []
+  if (include('cantrips')) {
+    for (const c of sp.cantrips ?? []) {
+      if (c?.name?.trim()) preparedRows.push({ level: 0, name: c.name.trim() })
+    }
   }
-  const lvl3Fields = [
-    ['Spells 1048', 'Check Box 315'],
-    ['Spells 1047', 'Check Box 314'],
-    ['Spells 1049', 'Check Box 3031'],
-    ['Spells 1050', 'Check Box 3032'],
-    ['Spells 1051', 'Check Box 3033'],
-    ['Spells 1052', 'Check Box 3034'],
-    ['Spells 1053', 'Check Box 3035'],
-    ['Spells 1054', 'Check Box 3036'],
-    ['Spells 1055', 'Check Box 3037'],
-    ['Spells 1056', 'Check Box 3038'],
-    ['Spells 1057', 'Check Box 3039'],
-    ['Spells 1058', 'Check Box 3040'],
-    ['Spells 1059', 'Check Box 3041']
-  ]
-  lvl3Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[3]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
-
-  // Level 4
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 22', sp.levels?.[4]?.slotsTotal)
-    setText(map, 'SlotsRemaining 22', sp.levels?.[4]?.slotsRemaining)
+  if (include('preparedSpells')) {
+    for (let lvl = 1; lvl <= 9; lvl++) {
+      for (const s of sp.levels?.[lvl]?.spells ?? []) {
+        if (s?.prepared && s?.name?.trim()) preparedRows.push({ level: lvl, name: s.name.trim() })
+      }
+    }
   }
-  const lvl4Fields = [
-    ['Spells 1061', 'Check Box 317'],
-    ['Spells 1060', 'Check Box 316'],
-    ['Spells 1062', 'Check Box 3042'],
-    ['Spells 1063', 'Check Box 3043'],
-    ['Spells 1064', 'Check Box 3044'],
-    ['Spells 1065', 'Check Box 3045'],
-    ['Spells 1066', 'Check Box 3046'],
-    ['Spells 1067', 'Check Box 3047'],
-    ['Spells 1068', 'Check Box 3048'],
-    ['Spells 1069', 'Check Box 3049'],
-    ['Spells 1070', 'Check Box 3050'],
-    ['Spells 1071', 'Check Box 3051'],
-    ['Spells 1072', 'Check Box 3052']
-  ]
-  lvl4Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[4]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
-
-  // Level 5
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 23', sp.levels?.[5]?.slotsTotal)
-    setText(map, 'SlotsRemaining 23', sp.levels?.[5]?.slotsRemaining)
-  }
-  const lvl5Fields = [
-    ['Spells 1074', 'Check Box 319'],
-    ['Spells 1073', 'Check Box 318'],
-    ['Spells 1075', 'Check Box 3053'],
-    ['Spells 1076', 'Check Box 3054'],
-    ['Spells 1077', 'Check Box 3055'],
-    ['Spells 1078', 'Check Box 3056'],
-    ['Spells 1079', 'Check Box 3057'],
-    ['Spells 1080', 'Check Box 3058'],
-    ['Spells 1081', 'Check Box 3059']
-  ]
-  lvl5Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[5]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
-
-  // Level 6
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 24', sp.levels?.[6]?.slotsTotal)
-    setText(map, 'SlotsRemaining 24', sp.levels?.[6]?.slotsRemaining)
-  }
-  const lvl6Fields = [
-    ['Spells 1083', 'Check Box 321'],
-    ['Spells 1082', 'Check Box 320'],
-    ['Spells 1084', 'Check Box 3060'],
-    ['Spells 1085', 'Check Box 3061'],
-    ['Spells 1086', 'Check Box 3062'],
-    ['Spells 1087', 'Check Box 3063'],
-    ['Spells 1088', 'Check Box 3064'],
-    ['Spells 1089', 'Check Box 3065'],
-    ['Spells 1090', 'Check Box 3066']
-  ]
-  lvl6Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[6]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
-
-  // Level 7
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 25', sp.levels?.[7]?.slotsTotal)
-    setText(map, 'SlotsRemaining 25', sp.levels?.[7]?.slotsRemaining)
-  }
-  const lvl7Fields = [
-    ['Spells 1092', 'Check Box 323'],
-    ['Spells 1091', 'Check Box 322'],
-    ['Spells 1093', 'Check Box 3067'],
-    ['Spells 1094', 'Check Box 3068'],
-    ['Spells 1095', 'Check Box 3069'],
-    ['Spells 1096', 'Check Box 3070'],
-    ['Spells 1097', 'Check Box 3071'],
-    ['Spells 1098', 'Check Box 3072'],
-    ['Spells 1099', 'Check Box 3073']
-  ]
-  lvl7Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[7]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
-
-  // Level 8
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 26', sp.levels?.[8]?.slotsTotal)
-    setText(map, 'SlotsRemaining 26', sp.levels?.[8]?.slotsRemaining)
-  }
-  const lvl8Fields = [
-    ['Spells 10101', 'Check Box 325'],
-    ['Spells 10100', 'Check Box 324'],
-    ['Spells 10102', 'Check Box 3074'],
-    ['Spells 10103', 'Check Box 3075'],
-    ['Spells 10104', 'Check Box 3076'],
-    ['Spells 10105', 'Check Box 3077'],
-    ['Spells 10106', 'Check Box 3078']
-  ]
-  lvl8Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[8]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
-  })
-
-  // Level 9
-  if (!excludeVolatile) {
-    setText(map, 'SlotsTotal 27', sp.levels?.[9]?.slotsTotal)
-    setText(map, 'SlotsRemaining 27', sp.levels?.[9]?.slotsRemaining)
-  }
-  const lvl9Fields = [
-    ['Spells 10108', 'Check Box 327'],
-    ['Spells 10107', 'Check Box 326'],
-    ['Spells 10109', 'Check Box 3079'],
-    ['Spells 101010', 'Check Box 3080'],
-    ['Spells 101011', 'Check Box 3081'],
-    ['Spells 101012', 'Check Box 3082'],
-    ['Spells 101013', 'Check Box 3083']
-  ]
-  lvl9Fields.forEach(([nameField, checkField], i) => {
-    const s = sp.levels?.[9]?.spells?.[i]
-    setText(map, nameField, s?.name)
-    setCheck(map, checkField, !!s?.prepared)
+  preparedRows.slice(0, PREPARED_SPELL_ROWS).forEach((row, i) => {
+    setText(map, `Text105.${i}`, row.level)
+    setText(map, `Text106.${i}`, row.name)
   })
 }
 
+// This template has no image form field (unlike the old sheet), so the portrait is
+// drawn directly onto the page instead — anchored to the top-right corner of the
+// "Appearance" box (page 2, Text96's rect) rather than a dedicated slot.
+const APPEARANCE_BOX = { page: 1, x: 418, y: 686, w: 176, h: 68 }
+const PORTRAIT_SIZE = 58
 
-async function fillImage(map, imageDataUrl, pdfDoc) {
-  const field = map.get('CHARACTER IMAGE')
-  if (!field || !imageDataUrl) return
+async function fillImage(imageDataUrl, pdfDoc) {
+  if (!imageDataUrl) return
   try {
     const isPng = imageDataUrl.startsWith('data:image/png')
     const image = isPng ? await pdfDoc.embedPng(imageDataUrl) : await pdfDoc.embedJpg(imageDataUrl)
-    field.setImage(image)
+    const page = pdfDoc.getPages()[APPEARANCE_BOX.page]
+    if (!page) return
+    const scale = Math.min(PORTRAIT_SIZE / image.width, PORTRAIT_SIZE / image.height)
+    const w = image.width * scale
+    const h = image.height * scale
+    page.drawImage(image, {
+      x: APPEARANCE_BOX.x + APPEARANCE_BOX.w - w,
+      y: APPEARANCE_BOX.y + APPEARANCE_BOX.h - h,
+      width: w,
+      height: h,
+    })
   } catch {
-    // unsupported image format or field type - skip
+    // unsupported image format - skip
   }
 }
 
 // sections: Set of EXPORT_SECTIONS keys to include
-export async function buildCharacterPdf(character, { ownerUsername, sections, imageDataUrl, excludeVolatile } = {}) {
+export async function buildCharacterPdf(character, { sections, imageDataUrl, excludeVolatile } = {}) {
   const [templateBytes, thaiFontBytes] = await Promise.all([
     fetch(pdfTemplateUrl).then((res) => res.arrayBuffer()),
     fetch(thaiFontUrl).then((res) => res.arrayBuffer()),
@@ -515,15 +458,15 @@ export async function buildCharacterPdf(character, { ownerUsername, sections, im
 
   const include = (key) => !sections || sections.has(key)
 
-  if (include('identity')) fillIdentity(map, character, ownerUsername)
-  if (include('appearance')) fillAppearance(map, character)
-  if (include('stats')) fillStats(map, character)
-  if (include('combat')) fillCombat(map, character, excludeVolatile)
-  if (include('equipment')) fillEquipment(map, character, excludeVolatile)
-  if (include('personality')) fillPersonality(map, character)
-  if (include('backstory')) fillBackstory(map, character)
-  if (include('spells')) fillSpells(map, character, excludeVolatile)
-  if (include('image')) await fillImage(map, imageDataUrl, pdfDoc)
+  fillIdentity(map, character, include)
+  fillAppearance(map, character, include)
+  fillAbilities(map, character, include)
+  fillCombat(map, character, include, excludeVolatile)
+  fillEquipment(map, character, include, excludeVolatile)
+  fillFeatures(map, character, include)
+  fillPersonality(map, character, include)
+  fillSpells(map, character, include, excludeVolatile)
+  if (include('image')) await fillImage(imageDataUrl, pdfDoc)
 
   form.updateFieldAppearances(thaiFont)
   return pdfDoc.save()
