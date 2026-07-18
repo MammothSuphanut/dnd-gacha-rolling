@@ -2,6 +2,8 @@
 
 โฟลเดอร์นี้รวมเครื่องมือช่วยออกแบบ D&D Adventure แบบสัมภาษณ์ทีละคำถาม จนได้ adventure outline ที่มีรายละเอียดครบ มี 2 วิธีใช้งาน แล้วแต่ว่าจะใช้ที่ไหน
 
+ทุก adventure ที่สร้างผูกอยู่กับ meta-campaign หลัก **"Astral Nexus: Constellation Protocol"** (ดูเนื้อเรื่องเต็มที่ [astral-nexus-lore.md](./astral-nexus-lore.md)) — บทสัมภาษณ์จะมีคำถามเพิ่มว่า adventure นี้เชื่อมกับ "เมล็ดพันธุ์แห่งการทำลายล้าง" ในเรื่องหลักอย่างไร แล้วแทรกเป็นบทนำสั้นๆ ใน `00-overview.md` และบทส่งท้ายใน EP สุดท้าย
+
 ## วิธีที่ 1: ใช้ผ่าน Claude Code (แนะนำ)
 
 พิมพ์คำสั่งนี้ในเทอร์มินัล Claude Code ที่รันอยู่ในโปรเจกต์นี้:
@@ -16,21 +18,46 @@
 /build-adventure บุกรังหมาป่าเงา
 ```
 
-Claude จะสัมภาษณ์ทีละหัวข้อ (ขนาด adventure, level range, theme, setting, hook, antagonist, stakes, จำนวน EP/session, NPC, องค์ประกอบพิเศษ) — คำถามแบบเลือกตัวเลือกจะเด้งเป็นปุ่มให้กด ส่วนคำถามปลายเปิดให้พิมพ์ตอบเป็นข้อความ
+Claude จะสัมภาษณ์ทีละหัวข้อ (ขนาด adventure, level range, theme, setting, hook, antagonist, stakes, จุดเชื่อมกับ Constellation Protocol, จำนวน EP/session, NPC, องค์ประกอบพิเศษ) — คำถามแบบเลือกตัวเลือกจะเด้งเป็นปุ่มให้กด ส่วนคำถามปลายเปิดให้พิมพ์ตอบเป็นข้อความ
 
 เมื่อตอบครบทุกข้อ Claude จะสร้างโฟลเดอร์ `adventures/<ชื่อ-adventure>/` ในโปรเจกต์ ประกอบด้วยไฟล์:
 
 | ไฟล์ | เนื้อหา |
 |---|---|
-| `00-overview.md` | สรุปภาพรวม + สารบัญลิงก์ไปแต่ละ EP |
+| `00-overview.md` | สรุปภาพรวม + จุดเชื่อมกับ Astral Nexus meta-campaign + สารบัญลิงก์ไปแต่ละ EP |
 | `01-hook-and-antagonist.md` | Hook, ตัวร้าย, เดิมพัน |
 | `02-npcs.md` | ตาราง NPC สำคัญ |
-| `EP01-...md`, `EP02-...md`, ... | 1 ไฟล์ต่อ 1 EP พร้อมเป้าหมายเชิงเรื่อง/เชิงกลไก และเหตุการณ์สำคัญ |
+| `EP01-...md`, `EP02-...md`, ... | 1 ไฟล์ต่อ 1 EP พร้อมเป้าหมายเชิงเรื่อง/เชิงกลไก และเหตุการณ์สำคัญ (EP สุดท้ายมีบทส่งท้ายกลับสู่ Nexus ด้วย) |
 | `99-notes.md` | องค์ประกอบพิเศษ + จุดที่เปิดกว้างให้ DM ปรับหน้างาน |
 
 หลังสร้างเสร็จ สามารถขอให้ Claude **ขยาย EP ไหนให้ละเอียดขึ้น** (session-by-session, encounter, NPC dialogue) ได้ต่อในแชทเดียวกัน แค่บอกชื่อ EP ที่ต้องการ
 
 ไฟล์คำสั่งอยู่ที่ [.claude/commands/build-adventure.md](../.claude/commands/build-adventure.md) ถ้าอยากปรับหัวข้อคำถามหรือรูปแบบไฟล์ผลลัพธ์ แก้ที่ไฟล์นั้นได้เลย
+
+### ขยายเป็น Journal เต็ม (boxed read-aloud text แบบ published module)
+
+ไฟล์ outline ที่ `/build-adventure` สร้างให้เป็นแบบสรุปย่อ (bullet point) เหมาะกับ DM ที่คุ้นเรื่องแล้ว ถ้าอยากได้เวอร์ชันเต็มแบบอ่านออกเสียงหน้าโต๊ะได้จริง (boxed text, DC/stat block ระบุอินไลน์, breakdown ห้องต่อห้อง) ให้พิมพ์คำสั่งนี้ในเทอร์มินัล Claude Code:
+
+```
+/build-journal
+```
+
+หรือระบุชื่อ/slug adventure ไปด้วยเลย (ชี้ที่ "เรื่อง" ไม่ใช่ไฟล์ EP ใดไฟล์หนึ่ง):
+
+```
+/build-journal บุกรังหมาป่าเงา
+```
+
+Claude จะหาโฟลเดอร์ adventure ที่ตรงกัน (ถ้าไม่ระบุหรือหาไม่เจอจะ list ให้เลือก) แล้ว**ถามว่ารอบนี้อยากสร้างอะไรบ้าง** — เลือกได้หลายอย่างพร้อมกัน เช่น "ภาพรวมทั้งเรื่อง" และ/หรือ EP ใดก็ได้ที่มีอยู่ในเรื่องนั้น จากนั้นอ่านกฎ + syntax + ตัวอย่างจาก [journal-template.md](./journal-template.md) และถามยืนยันจุดที่ outline เดิมยังไม่ระบุ (treasure, NPC tactics, เอกสารในเกม ฯลฯ) ก่อนขยายให้เต็มรูปแบบ
+
+ผลลัพธ์จะถูกบันทึกไว้ในโฟลเดอร์ย่อย `journal/` ภายใน adventure นั้น (ไม่แก้ทับไฟล์ outline เดิม):
+
+| ไฟล์ | เนื้อหา |
+|---|---|
+| `journal/00-overview-journal.md` | ภาพรวมทั้งเรื่องแบบ prose เต็ม (ไม่ลงรายละเอียดห้อง/encounter) |
+| `journal/EP01-journal.md`, `journal/EP02-journal.md`, ... | แต่ละ EP แยกไฟล์ ลงรายละเอียดห้องต่อห้อง/encounter เต็มรูปแบบ |
+
+ไฟล์คำสั่งอยู่ที่ [.claude/commands/build-journal.md](../.claude/commands/build-journal.md) ถ้าอยากปรับกฎการขยายหรือรูปแบบไฟล์ผลลัพธ์ แก้ที่ไฟล์นั้นได้เลย ส่วน [journal-template.md](./journal-template.md) ยังใช้เป็น reference กลาง (คู่มือ syntax + ตัวอย่างเต็ม) ที่คำสั่งนี้อ่านอ้างอิงทุกครั้ง
 
 ## วิธีที่ 2: ใช้กับ AI เว็บอื่น (ChatGPT, Claude เว็บ ฯลฯ)
 
