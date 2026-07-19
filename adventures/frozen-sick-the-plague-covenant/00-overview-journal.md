@@ -32,4 +32,4 @@ Frozen Sick: The Plague Covenant เป็นแคมเปญ 6 EP (ประ�
 
 **EP6 — The Last Warm Lie** (level 6, ไคลแม็กซ์): ตัวละครเปิดโปง Bram ต่อหน้าสภาเมือง Uthodurn เผชิญการตอบโต้ทางการเมืองใน "Trial of Words" สืบเพิ่มด้วยความช่วยเหลือของ Thistlewick แล้วไล่ตาม Bram ลงไปในอุโมงค์ Uthodurn Undercroft เพื่อหยุดพิธีกรรมสุดท้าย จบด้วยการเผชิญหน้ากับ Bram ที่แปรสภาพเป็นอสูรกายน้ำแข็ง และ Jeramess Dust ที่เฉลยตัวเป็นมือขวา
 
-*(รายละเอียดฉากต่อฉาก, NPC, DC, tactics และ treasure ของแต่ละ EP อยู่ในไฟล์ journal แยกของแต่ละตอน — ดู `EP01-journal.md`, `EP02-journal.md` และ `EP03-journal.md` ถึง `EP06-journal.md`)*
+*(รายละเอียดฉากต่อฉาก, NPC, DC, tactics และ treasure ของแต่ละ EP อยู่ในไฟล์ journal แยกของแต่ละตอน — ดู `EP01 - A Village in Mourning.md` ถึง `EP06 - The Last Warm Lie.md` ในโฟลเดอร์ `ACT01-the-plague-covenant/`)*

@@ -13,7 +13,7 @@
 - [Chapter 1: หนีจากลัทธิ และมาถึง Palebank Village](./CH01-escape-and-arrival.md) `Level 1`
 - [Chapter 2: ภารกิจช่วยหมู่บ้าน](./CH02-village-quests.md) `Level 1 → 2`
 - [Chapter 3: เดินทางสู่ Eiselcross](./CH03-journey-to-eiselcross.md) `Level 2 → 3`
-  - [EP1: Travel to Syrinlya](./CH03-EP01-journal.md)
+  - [EP1: Travel to Syrinlya](<./EP01 - Travel to Syrinlya.md>)
 - [Chapter 4: Aeor Lab และ Fragment of Wisdom](./CH04-aeor-lab-and-fragment.md) `Level 3+`
 
 ---
