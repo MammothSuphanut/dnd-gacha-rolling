@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { DEFAULT_ENHANCEMENT_MULTIPLIERS } from './src/utils/price.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DATA_DIR = path.resolve(__dirname, 'src/data')
@@ -30,6 +31,7 @@ function writeDefaultData(payload) {
     partyTags = [],
     characters = [],
     images = {},
+    enhancementMultipliers = DEFAULT_ENHANCEMENT_MULTIPLIERS,
   } = payload
 
   const groups = new Map()
@@ -72,6 +74,7 @@ export default {
   partyTags,
   characters,
   images,
+  enhancementMultipliers: ${JSON.stringify(enhancementMultipliers)},
 }
 `
   fs.writeFileSync(path.join(DATA_DIR, 'defaultData.js'), content)

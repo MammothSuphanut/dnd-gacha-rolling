@@ -609,7 +609,8 @@
     "status": "Astral Nexus",
     "ownerId": "user-cb3f7729-7f22-4296-9cd1-2e959751b05e",
     "partyTagIds": [
-      "tag-ec0d2618-4421-486a-a327-c7f666827175"
+      "tag-ec0d2618-4421-486a-a327-c7f666827175",
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
     ],
     "campaignIds": [
       "campaign-d7efbf08-9478-4418-a285-90ef8d428a0f"
@@ -655,7 +656,83 @@
         "label": ""
       }
     ],
-    "activeImageId": "img-18d1f919-8ebf-4d02-8d96-cf0fb2819bf1"
+    "activeImageId": "img-18d1f919-8ebf-4d02-8d96-cf0fb2819bf1",
+    "combat": {
+      "ac": "",
+      "speed": "",
+      "hitDice": "",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "",
+        "current": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": false,
+      "animal": false,
+      "arcana": false,
+      "athletics": false,
+      "deception": false,
+      "history": false,
+      "insight": false,
+      "intimidation": false,
+      "investigation": false,
+      "medicine": false,
+      "nature": false,
+      "perception": false,
+      "performance": false,
+      "persuasion": false,
+      "religion": false,
+      "sleightOfHand": false,
+      "stealth": false,
+      "survival": false
+    },
+    "weapons": [
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      }
+    ],
+    "currency": {
+      "cp": "",
+      "sp": "",
+      "ep": "",
+      "gp": "",
+      "pp": ""
+    },
+    "attacksSpellcasting": "",
+    "equipment": [],
+    "proficienciesLanguages": [],
+    "featuresAndTraits": [],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": ""
   },
   {
     "id": "character-a1c696b8-ef0f-47ec-9654-7713028976c8",
@@ -663,7 +740,8 @@
     "status": "Astral Nexus",
     "ownerId": "user-7194c6e0-4df6-4561-b239-cf6eecfac958",
     "partyTagIds": [
-      "tag-ec0d2618-4421-486a-a327-c7f666827175"
+      "tag-ec0d2618-4421-486a-a327-c7f666827175",
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
     ],
     "campaignIds": [
       "campaign-d7efbf08-9478-4418-a285-90ef8d428a0f"
@@ -672,7 +750,7 @@
       {
         "id": "classlevel-da2ac385-41ef-4b48-bb1e-8abacaa49ebf",
         "className": "Cleric",
-        "subclassName": "",
+        "subclassName": "Light Domain",
         "level": 2
       }
     ],
@@ -680,12 +758,12 @@
     "background": "Acolyte",
     "size": "Medium",
     "stats": {
-      "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "cha": 0
+      "str": 12,
+      "dex": 14,
+      "con": 16,
+      "int": 9,
+      "wis": 20,
+      "cha": 12
     },
     "alignment": "",
     "faith": "",
@@ -709,7 +787,83 @@
         "label": ""
       }
     ],
-    "activeImageId": "img-fd3bda3e-7955-411f-9ed6-cbdfc2389c6e"
+    "activeImageId": "img-fd3bda3e-7955-411f-9ed6-cbdfc2389c6e",
+    "combat": {
+      "ac": "",
+      "speed": "",
+      "hitDice": "",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "",
+        "current": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": false,
+      "animal": false,
+      "arcana": false,
+      "athletics": false,
+      "deception": false,
+      "history": false,
+      "insight": false,
+      "intimidation": false,
+      "investigation": false,
+      "medicine": false,
+      "nature": false,
+      "perception": false,
+      "performance": false,
+      "persuasion": false,
+      "religion": false,
+      "sleightOfHand": false,
+      "stealth": false,
+      "survival": false
+    },
+    "weapons": [
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      }
+    ],
+    "currency": {
+      "cp": "",
+      "sp": "",
+      "ep": "",
+      "gp": "",
+      "pp": ""
+    },
+    "attacksSpellcasting": "",
+    "equipment": [],
+    "proficienciesLanguages": [],
+    "featuresAndTraits": [],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": ""
   },
   {
     "id": "character-cb8eeef6-c0ec-4a49-9d2d-1883db656c47",
@@ -717,7 +871,8 @@
     "status": "Astral Nexus",
     "ownerId": "user-0f2c5824-53b0-4a53-97e6-da3872c0efb1",
     "partyTagIds": [
-      "tag-ec0d2618-4421-486a-a327-c7f666827175"
+      "tag-ec0d2618-4421-486a-a327-c7f666827175",
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
     ],
     "campaignIds": [
       "campaign-d7efbf08-9478-4418-a285-90ef8d428a0f"
@@ -726,7 +881,7 @@
       {
         "id": "classlevel-1154d9d2-3856-4bd0-a217-2e09fc2a6c4e",
         "className": "Wizard",
-        "subclassName": "",
+        "subclassName": "Illusionist",
         "level": 2
       }
     ],
@@ -734,12 +889,12 @@
     "background": "Sage",
     "size": "Medium",
     "stats": {
-      "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "cha": 0
+      "str": 12,
+      "dex": 14,
+      "con": 16,
+      "int": 18,
+      "wis": 14,
+      "cha": 12
     },
     "alignment": "",
     "faith": "",
@@ -763,7 +918,83 @@
         "label": ""
       }
     ],
-    "activeImageId": "img-5c76e03f-ee80-47ca-be7f-8cd81ef25cc5"
+    "activeImageId": "img-5c76e03f-ee80-47ca-be7f-8cd81ef25cc5",
+    "combat": {
+      "ac": "",
+      "speed": "",
+      "hitDice": "",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "",
+        "current": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": false,
+      "animal": false,
+      "arcana": false,
+      "athletics": false,
+      "deception": false,
+      "history": false,
+      "insight": false,
+      "intimidation": false,
+      "investigation": false,
+      "medicine": false,
+      "nature": false,
+      "perception": false,
+      "performance": false,
+      "persuasion": false,
+      "religion": false,
+      "sleightOfHand": false,
+      "stealth": false,
+      "survival": false
+    },
+    "weapons": [
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      }
+    ],
+    "currency": {
+      "cp": "",
+      "sp": "",
+      "ep": "",
+      "gp": "",
+      "pp": ""
+    },
+    "attacksSpellcasting": "",
+    "equipment": [],
+    "proficienciesLanguages": [],
+    "featuresAndTraits": [],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": ""
   },
   {
     "id": "character-17d64ab1-2ce1-4a6d-9b4b-1e562be96509",
@@ -771,7 +1002,8 @@
     "status": "Astral Nexus",
     "ownerId": "user-4ee161b1-9b28-4b17-ae80-b4e64485a7a1",
     "partyTagIds": [
-      "tag-ec0d2618-4421-486a-a327-c7f666827175"
+      "tag-ec0d2618-4421-486a-a327-c7f666827175",
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
     ],
     "campaignIds": [
       "campaign-d7efbf08-9478-4418-a285-90ef8d428a0f"
@@ -780,7 +1012,7 @@
       {
         "id": "classlevel-9118e8ec-3809-473c-809b-00f4cd3d6d5a",
         "className": "Paladin",
-        "subclassName": "",
+        "subclassName": "Oath of Zeal",
         "level": 2
       }
     ],
@@ -788,12 +1020,12 @@
     "background": "Noble",
     "size": "Medium",
     "stats": {
-      "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "cha": 0
+      "str": 15,
+      "dex": 13,
+      "con": 16,
+      "int": 12,
+      "wis": 12,
+      "cha": 18
     },
     "alignment": "",
     "faith": "",
@@ -817,6 +1049,4333 @@
         "label": ""
       }
     ],
-    "activeImageId": "img-eac45626-7618-44b2-a1e7-3494c318d28f"
+    "activeImageId": "img-eac45626-7618-44b2-a1e7-3494c318d28f",
+    "combat": {
+      "ac": "",
+      "speed": "",
+      "hitDice": "",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "",
+        "current": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": false,
+      "animal": false,
+      "arcana": false,
+      "athletics": false,
+      "deception": false,
+      "history": false,
+      "insight": false,
+      "intimidation": false,
+      "investigation": false,
+      "medicine": false,
+      "nature": false,
+      "perception": false,
+      "performance": false,
+      "persuasion": false,
+      "religion": false,
+      "sleightOfHand": false,
+      "stealth": false,
+      "survival": false
+    },
+    "weapons": [
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      },
+      {
+        "name": "",
+        "atkBonus": "",
+        "damage": ""
+      }
+    ],
+    "currency": {
+      "cp": "",
+      "sp": "",
+      "ep": "",
+      "gp": "",
+      "pp": ""
+    },
+    "attacksSpellcasting": "",
+    "equipment": [],
+    "proficienciesLanguages": [],
+    "featuresAndTraits": [],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": ""
+  },
+  {
+    "id": "character-26f03337-b0d5-470d-a143-89c0301886bf",
+    "name": "Rufus",
+    "status": "Astral Nexus",
+    "ownerId": "user-4ee161b1-9b28-4b17-ae80-b4e64485a7a1",
+    "partyTagIds": [],
+    "campaignIds": [],
+    "classLevels": [
+      {
+        "id": "classlevel-025714b8-aadd-4b7b-ac63-ba3db3e335d6",
+        "className": "Barbarian",
+        "subclassName": "Path of the Zealot",
+        "level": 1
+      }
+    ],
+    "species": "Satyr",
+    "background": "Farmer",
+    "size": "Medium",
+    "stats": {
+      "str": 15,
+      "dex": 16,
+      "con": 18,
+      "int": 12,
+      "wis": 12,
+      "cha": 14
+    },
+    "alignment": "Chaotic Good",
+    "faith": "เทพธิดาแห่งการเพาะปลูกและฤดูกาล",
+    "gender": "ชาย",
+    "eyes": "สีอำพันประกายทองที่มักจะเบิกกว้างด้วยความตื่นตัวตลอดเวลา",
+    "hair": "สีน้ำตาลเข้ม ค่อนข้างยุ่งเหยิงและเต็มไปด้วยเศษฟางประดับอยู่ประปราย",
+    "skin": "ผิวสีแทนเข้มจากการกรำแดดทำไร่ ท่อนล่างเป็นขนแพะสีน้ำตาลแดงที่หนาและหยาบกระด้าง",
+    "height": "175 cm",
+    "weight": "82 kg",
+    "age": "26",
+    "ideals": "การปกป้องผืนดินและพรรคพวกคือความเร้าใจสูงสุด การกระทำเสียงดังกว่าคำพูดเสมอ",
+    "bonds": "ผืนนาที่เขาจากมา และ \"ผลึกชิ้นส่วนแห่งเทวะ\" เพียงชิ้นเดียวที่เขาขุดพบใต้ดิน ซึ่งเขารับสืบทอดพลังงานมาไว้ในตัว มันคือต้นกำเนิดแห่งความโกรธาอันศักดิ์สิทธิ์ของเขา",
+    "flaws": "มั่นใจในความแข็งแกร่งของตัวเองสูงลิบลิ่ว ไม่เคยประเมินขีดจำกัดของศัตรู และเชื่อเสมอว่าร่างกายของเขาสามารถทนทานได้ทุกสิ่งบนโลกใบนี้",
+    "personalityTraits": "มุทะลุ ดุดัน ทำก่อนคิด มักจะหัวเราะเสียงดังลั่นและพุ่งเข้าหาปัญหาด้วยรอยยิ้มกว้าง ไม่มีความอดทนต่อการวางแผนที่ซับซ้อน",
+    "appearance": "ซาไทร์หนุ่มร่างกำยำที่มีกล้ามเนื้อเป็นมัด สวมเพียงกางเกงผ้าหยาบๆ ที่ขาดวิ่น เขาสัตว์บนศีรษะของเขาบิ่นไปข้างหนึ่งจากการพุ่งชนหินหนา มือถือขวานทำไร่ด้ามยักษ์ที่ถูกดัดแปลงเป็นอาวุธสงคราม ทั่วร่างแผ่ออร่าความร้อนรุ่มและพลังงานที่พร้อมปะทุราวกับเตาเผาที่ควบคุมไม่ได้",
+    "biography": "เขาเริ่มต้นชีวิตในฐานะชาวนาซาไทร์ธรรมดาๆ ที่รักการปลูกข้าวบาร์เลย์และงานรื่นเริงในเขตชายแดนป่าเฟย์ไวล์ด แต่ชีวิตพลิกผันเมื่อจอบของเขาบังเอิญขุดไปพบ \"ผลึกชิ้นส่วนแห่งเทวะ\" ที่ฝังอยู่ใต้ดินเบื้องลึก พลังงานโบราณนั้นหลอมรวมเข้ากับร่างกายของเขา (ซึ่งตามกฎแห่งจักรวาล ร่างกายของเขาสามารถรองรับผลึกนี้ได้สูงสุดเพียงหนึ่งชิ้นเท่านั้น) มันมอบความบ้าคลั่งอันศักดิ์สิทธิ์ เปลี่ยนชาวนาผู้ร่าเริงให้กลายเป็นนักรบคลุ้มคลั่ง (Zealot) ผู้ไร้ความเกรงกลัว\n\nเขาละทิ้งคันไถและจับขวานยักษ์ออกเดินทางเพื่อปกป้องหมู่บ้านและผืนป่าจากสัตว์ประหลาด ด้วยสไตล์การต่อสู้ที่เน้นพุ่งชนทุกอย่างที่ขวางหน้า ไม่เคยหลบเลี่ยง ไม่เคยมีชั้นเชิง เขาสามารถไต่เต้าจนกลายเป็นวีรบุรุษระดับตำนานของท้องถิ่น (Level 10) ร่างกายที่อาบด้วยพลังแห่งผลึกทนทานต่อคมดาบและหอกดั่งกำแพงเหล็ก เขามักจะหัวเราะเยาะมัจจุราชและรอดตายมาได้ทุกครั้ง จนกระทั่งความมั่นใจนั้นกลายเป็นความจองหองอันบอดใบ้\n\nจุดจบของชีวิตแชมเปี้ยนแห่งพงไพรมาถึงในการเผชิญหน้ากับจอมเวทผู้ชั่วร้าย แทนที่จะฉวยโอกาสพุ่งเข้าสับคอหอยจอมเวทที่กำลังร่ายมนตร์ ซาไทร์หนุ่มกลับยืนกอดอก ยืดอกพองโต ชี้นิ้วไปที่กลางหน้าผากของตนเองและท้าทายด้วยเสียงหัวเราะกึกก้อง \"เวทมนตร์กระจอกๆ ทำอะไรข้าไม่ได้หรอก! แน่จริงก็ยิงมาตรงนี้เลย!\"\n\nจอมเวทไม่ได้ปฏิเสธคำขอ ลูกไฟ (Fireball) ที่ถูกยกระดับพลังงานจนถึงขีดสุดพุ่งแหวกอากาศ กระแทกเข้ากลางแสกหน้าของเขาอย่างแม่นยำ เปลวเพลิงความร้อนสูงระเบิดออกในระยะประชิด รุนแรงเสียจนระเหยท่อนบนของซาไทร์หนุ่มหายไปในพริบตา ก่อนที่ร่างกายจะทันกระตุ้นพลังงานฟื้นฟูใดๆ ขาทั้งสองข้างที่ไหม้เกรียมยืนหยัดอยู่เพียงเสี้ยววินาที ก่อนจะล้มตึงลงไป เป็นการปิดตำนานนักรบผู้ห้าวหาญ ด้วยสาเหตุการตายที่เพื่อนร่วมปาร์ตี้ยังคงส่ายหน้าทุกครั้งที่นึกถึง",
+    "note": "",
+    "images": [
+      {
+        "id": "img-32d809bb-b888-4f98-901a-3eab7e56cf70",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-32d809bb-b888-4f98-901a-3eab7e56cf70"
+  },
+  {
+    "id": "character-0d6f510a-30e7-4d22-8e6f-b5340f862290",
+    "name": "Aethon Dawnhoof",
+    "status": "Astral Nexus",
+    "ownerId": "user-c12a9fac-cd28-4378-be9d-e1222bc22d7b",
+    "partyTagIds": [],
+    "campaignIds": [],
+    "classLevels": [
+      {
+        "id": "classlevel-3322a5fc-855c-403a-82b4-22c59028c16b",
+        "className": "Cleric",
+        "subclassName": "Light Domain",
+        "level": 1
+      }
+    ],
+    "species": "Centaur",
+    "background": "Dragon Cultist",
+    "size": "Medium",
+    "stats": {
+      "str": 11,
+      "dex": 14,
+      "con": 17,
+      "int": 10,
+      "wis": 16,
+      "cha": 12
+    },
+    "alignment": "Neutral Good (อดีตเคยเอนเอียงไปทาง Lawful Evil ในช่วงที่ยังหลงผิด)",
+    "faith": "เทพมังกรแพลตตินัม บาฮามุต (Bahamut) และเคารพในแสงสว่างแห่งมังกรทอง",
+    "gender": "ชาย",
+    "eyes": "สีทองอำพันที่สงบนิ่งราวกับเปลวเทียนในห้องไร้ลม",
+    "hair": "ผมและแผงคอม้าสีขาวเงินยวบยาวสยาย (ในวัยหนุ่มเคยเป็นสีน้ำตาลเข้ม)",
+    "skin": "ท่อนบนเป็นมนุษย์ผิวสีทองแดงกร้านแดดและเต็มไปด้วยร่องรอยของวัย ท่อนล่างเป็นม้าขนสีทองหม่นที่เริ่มซีดขาวตามกาลเวลา",
+    "height": "215 cm (เทียบจากกีบเท้าถึงกลางกระหม่อม)",
+    "weight": "650 kg",
+    "age": "70",
+    "ideals": "แสงสว่าง (Light) - \"แสงสว่างที่แท้จริงไม่ควรมีไว้เพื่อแผดเผาทำลายล้าง แต่มีไว้เพื่อมอบความอบอุ่นและส่องนำทางผู้ที่หลงในความมืด\"",
+    "bonds": "วิหารลับบนยอดเขา \"Sun-Scale Sanctuary\" ซึ่งเป็นสถานที่ที่เขาค้นพบแสงสว่างที่แท้จริง และเหล่าลูกศิษย์รุ่นเยาว์ที่เขารับหน้าที่อบรมสั่งสอนในช่วงบั้นปลายชีวิต",
+    "flaws": "ความทรงจำในอดีตเมื่อครั้งเป็นผู้คลั่งไคล้ในลัทธิมังกรที่โหดร้ายยังคงตามหลอกหลอน ทำให้เขาเป็นคนระมัดระวังตัวมากเกินไปจนบางครั้งลังเลที่จะใช้พลังขั้นเด็ดขาด นอกจากนี้เขายังมักจะโทษตัวเองเสมอหากมีใครได้รับบาดเจ็บจากเวทมนตร์แห่งไฟ",
+    "personalityTraits": "เอธอนเป็นเซนทอร์ที่พูดน้อย มักจะนั่งเงียบๆ และรับฟังผู้อื่นอย่างตั้งใจ ท่าทีของเขาสุขุมรอบคอบและใจเย็นเสมอ ทุกย่างก้าวของเขาเชื่องช้าแต่มั่นคง ราวกับคนที่ผ่านโลกมามาก��นรู��ว่า��ม่ม��ควา��จำเป��นต้อ��รีบร��อน",
+    "appearance": "เซนทอร์ชราผู้มีรังสีแห่งความสงบแผ่ออกมาตลอดเวลา สวมใส่เสื้อคลุมนักบวชสีขาวขลิบทองที่เรียบง่ายแต่ดูสง่างาม บริเวณหน้าอกห้อยจี้สัญลักษณ์หัวมังกรที่ทำจากแพลตตินัม มีรอยแผลเป็นจางๆ จากไฟลวกที่แขนซ้ายและสะลักหลัง ซึ่งเป็นร่องรอยจากอดีตอันดำมืด เขาไม่พกอาวุธหนักอีกต่อไป มีเพียงไม้เท้าแกะสลักลวดลายเกล็ดมังกรที่ใช้ช่วยพยุงตัวและเป็นสื่อกลางในการร่ายเวท",
+    "biography": "ในวัยหนุ่ม เอธอนไม่ได้เป็นนักบวชผู้เมตตา เขาเกิดในเผ่าเซนทอร์ที่ถูกครอบงำโดยลัทธิมังกร (Cult of the Dragon) สาขาที่บูชามังกรแดงและเปลวเพลิงแห่งการทำลายล้าง ด้วยพละกำลังและพรสวรรค์ด้านเวทมนตร์ เขาเติบโตขึ้นมาในฐานะ \"เปลวเพลิงไร้เสียง\" นักรบแนวหน้าและผู้ใช้เวทที่เยือกเย็น เขาเผาผลาญศัตรูของลัทธิโดยไม่ตั้งคำถาม เชื่อว่าไฟคืออำนาจสูงสุดที่ชำระล้างความอ่อนแอ\n\nจนกระทั่งวันหนึ่ง กองกำลังลัทธิของเขาได้ปะทะกับ \"ออริกนิส\" (Aurignis) มังกรทองโบราณผู้ทรงธรรม แทนที่มังกรทองจะสังหารเอธอนที่พ่ายแพ้บาดเจ็บสาหัส ออริกนิสกลับใช้ลมหายใจแห่งแสงสว่างรักษาบาดแผลและชำระล้างจิตใจอันมืดบอดของเขา วินาทีที่แสงสีทองอันอบอุ่นอาบชโลมร่าง เอธอนได้ตระหนักถึงความจริงว่า ไฟที่แท้จริงคือความอบอุ่นแห่งชีวิต ไม่ใช่เถ้าถ่านแห่งความตาย\n\nเขาละทิ้งลัทธิเดิมและปวารณาตนเป็นนักบวชแห่งแสงสว่าง (Light Domain) ภายใต้ร่มเงาของบาฮามุต เขาใช้เวลาหลายสิบปีในการเดินทางผจญภัยเพื่อไถ่บาป พลังของเขาเติบโตถึงขีดสุดในฐานะผู้ชำระล้างเงา (Level 12) วีรกรรมที่เป็นตำนานที่สุดคือการยืนหยัดเพียงลำพัง ณ ช่องเขาตะวันรอน เพื่อสกัดกั้นฝูงอันเดดนับร้อย เขาปลดปล่อยเวท Dawn และ Fire Strike อาบทั้งหุบเขาด้วยแสงอาทิตย์เทียมอันเจิดจ้า ปกป้องหมู่บ้านผู้อพยพไว้ได้สำเร็จโดยที่ตนเองแทบไม่ปริปากโอ้อวด\n\nเมื่ออายุล่วงเลยเข้า 60 ปี ร่างกายที่ใหญ่โตและภาระจากการใช้พลังศักดิ์สิทธิ์มายาวนานเริ่มส่งผล เอธอนตัดสินใจวางมือจากการผจญภัย เขาปลดเกราะและอาวุธ กลับคืนสู่วิหารบนยอดเขาเพื่อใช้ชีวิตในฐานะอาจารย์ผู้ชี้แนะ เขาสอนให้เหล่านักบวชรุ่นเยาว์เข้าใจถึงการควบคุมอารมณ์และความสำคัญของความเมตตา\n\nสิบปีต่อมา ในเช้าตรู่ของฤดูใบไม้ผลิอันเงียบสงบ เอธอนวัย 70 ปี เดินออกมารับแสงอาทิตย์แรกของวันกลางลานวิหาร เขานั่งพับขาลงบนผืนหญ้าอย่างเชื่องช้า หลับตาลงรับไออุ่นจากแสงแดดที่สาดส่องลงมากระทบใบหน้า รอยยิ้มบางๆ ปรากฏขึ้นที่มุมปากเป็นครั้งสุดท้าย ลมหายใจของเขาค่อยๆ แผ่วลงจนกลมกลืนไปกับสายลมแห่งรุ่งอรุณ เซนทอร์เฒ่าจากไปอย่างสงบ ไร้ซึ่งความเจ็บปวด ไร้ซึ่งความเสียใจ ทิ้งไว้เพียงตำนานของชายผู้เปลี่ยนไฟแห่งความแค้นให้กลายเป็นแสงสว่างแห่งความหวัง",
+    "note": "",
+    "images": [
+      {
+        "id": "img-aa299e7c-5885-4029-aeee-470d8835c38b",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-aa299e7c-5885-4029-aeee-470d8835c38b"
+  },
+  {
+    "id": "character-351251cc-7dfd-4e70-8117-75163159e920",
+    "name": "Kargoth Winterhide",
+    "status": "Astral Nexus",
+    "ownerId": "",
+    "partyTagIds": [],
+    "campaignIds": [],
+    "classLevels": [
+      {
+        "id": "classlevel-c1b210aa-8e99-4ad9-8e3f-fa7794db201b",
+        "className": "Warden",
+        "subclassName": "Rimekeeper",
+        "level": 1
+      }
+    ],
+    "species": "Minotaur",
+    "background": "Ice Fisher",
+    "size": "Medium",
+    "stats": {
+      "str": 16,
+      "dex": 14,
+      "con": 18,
+      "int": 10,
+      "wis": 11,
+      "cha": 10
+    },
+    "alignment": "Lawful Good (ยึดมั่นในกฎเกณฑ์อย่างเคร่งครัด แต่ทำเพื่อปกป้องผู้อื่น)",
+    "faith": "วิญญาณบรรพชนผู้พิทักษ์แห่งเหมันต์ (The Ancestral Gatekeepers)",
+    "gender": "ชาย (Male)",
+    "eyes": "สีฟ้าอ่อนประกายขาวราวกับธารน้ำแข็ง",
+    "hair": "ขนหนาฟูสีขาวโพลนเหมือนวัวป่าอาร์กติก",
+    "skin": "ผิวหนังหนาสีเทาเข้ม ซ่อนอยู่ใต้ชั้นขนปกป้องความหนาวเย็น",
+    "height": "215 cm",
+    "weight": "165 kg",
+    "age": "32",
+    "ideals": "หน้าที่และความเสียสละ (Duty & Sacrifice) - \"ประตูต้องปลอดภัย และผู้คนต้องรอด ไม่ว่าข้าจะต้องจ่ายด้วยสิ่งใดก็ตาม\"",
+    "bonds": "ประตูมิติสู่แดนภูติ (Feywild Portal) ที่ตระกูลของเขาสละเลือดเนื้อปกป้องมาหลายชั่วอายุคน และสายลมแห่งแดนเหนือที่เป็นดั่งเพื่อนสนิท",
+    "flaws": "ยึดติดกับกฎเกณฑ์ของตระกูลอย่างเอาเป็นเอาตายจนขาดความยืดหยุ่น และไม่เคยเห็นคุณค่าชีวิตของตัวเองเลยหากต้องแลกกับการปกป้องผู้อื่น",
+    "personalityTraits": "คาร์กอธเป็นมิโนทอร์ที่หัวช้า แต่เมื่อถึงเวลาลงมือทำเขาจะเด็ดขาดและดุดัน เขามักจะอาสาเป็นคนแรกเสมอเมื่อมีงานที่อันตราย ในเวลาว่างเขารักความสงบ มักจะนั่งตกปลาใต้น้ำแข็งอย่างใจเย็น และใช้ความชำนาญจาก Woodcarver's Tools ในการแกะสลักไม้เป็นรูปปลาตัวเล็กๆ",
+    "appearance": "มิโนทอร์ร่างยักษ์ผู้บึกบึน สวมใส่ชุดเกราะหนัก (Heavy Armor) ที่เต็มไปด้วยรอยขีดข่วนจากการต่อสู้มายาวนาน เขามีเขายาวที่แข็งแกร่งซึ่งใช้เป็นอาวุธในการพุ่งชนศัตรูได้อย่างรุนแรง รอบตัวเขามีไอเย็นและพายุหิมะจางๆ พัดวนอยู่ตลอดเวลาจากพลังของสายลมเหนือ อาวุธคู่กายคือค้อนสงคราม (Warhammer) ที่แผ่ไอเย็นเยือกแข็งออกมาทุกครั้งที่กวัดแกว่ง",
+    "biography": "คาร์กอธเกิดในเผ่ามิโนทอร์แห่งแดนเหนืออันเหน็บหนาว เขาเติบโตมาในฐานะชาวประมงน้ำแข็ง (Ice Fisher) ผู้คุ้นเคยกับความโหดร้ายของธรรมชาติและมีทักษะในการเอาชีวิตรอดสูง แต่ชะตากรรมของเขาถูกกำหนดไว้แล้วในฐานะ \"ผู้พิทักษ์ (Warden)\" รุ่นล่าสุดของตระกูลวินเทอร์ไฮด์ หน้าที่เดียวที่สืบทอดกันมาอย่างยาวนานคือการปกป้อง \"ประตูสู่แดนภูติ\" ที่ซ่อนอยู่ลึกเข้าไปในทุ่งน้ำแข็ง\n\nแม้คาร์กอธจะไม่ใช่คนฉลาดหลักแหลม แต่เขามีร่างกายที่แข็งแกร่งทนทาน และมีจิตใจที่มุ่งมั่น เขาฝึกฝนจนเข้าถึงวิถีแห่ง Rimekeeper สามารถดึงพลังของพายุหิมะมาใช้และต่อต้านความหนาวเย็นได้อย่างสมบูรณ์ เขาเข้มงวดกับตัวเองและกฎระเบียบของการเฝ้ายามอย่างที่สุด แต่ในขณะเดียวกัน เขากลับมีน้ำใจที่อบอุ่นให้กับนักเดินทางและผู้คนรอบข้างเสมอ เขามักจะแบ่งปันปลาที่ตกได้ และเสนอตัวเป็นแนวหน้าในการรับมือกับความอันตรายทุกรูปแบบโดยไม่ลังเล\n\nจนกระทั่งวาระสุดท้ายมาถึง (ในจุดสูงสุดของชีวิตที่ Level 13) กองทัพมอนสเตอร์กลายพันธุ์นับล้านตัวได้แห่ทะลักเข้ามายังแดนเหนือ เป้าหมายของพวกมันคือการบุกรุกเข้าไปในแดนภูติผ่านประตูมิติ คาร์กอธรู้ดีว่าหากพวกมันหลุดเข้าไปได้ ดินแดนทั้งสองจะต้องพินาศ เขาจึงออกคำสั่งเด็ดขาดให้ชาวบ้านและสหายร่วมรบทุกคนหนีเข้าไปในประตู ส่วนตัวเขายืนตระหง่านขวางทางเข้าไว้เพียงลำพัง\n\nด้วยพละกำลังทั้งหมด เขากวัดแกว่งอาวุธที่อาบไปด้วยน้ำแข็งปะทะกับคลื่นศัตรู และใช้เขาอันทรงพลังพุ่งชนศัตรูที่ดาหน้าเข้ามา อย่างไม่รู้จักเหน็ดเหนื่อย เมื่อสหายคนสุดท้ายก้าวผ่านประตูไป คาร์กอธตัดสินใจทำลายเสาหลักของประตูทิ้ง ปิดตายทางเชื่อมต่ออย่างถาวร ทิ้งตัวเองไว้ท่ามกลางฝูงมอนสเตอร์ที่โกรธเกรี้ยว เขาต่อสู้อย่างกล้าหาญจนหยดเลือดสุดท้าย ยืนหยัดกัดฟันรับการโจมตีโดยไม่ยอมถอยแม้แต่ก้าวเดียว จนกระทั่งร่างของเขาถูกฝูงสัตว์ร้ายนับไม่ถ้วนรุมทึ้งและกลืนกินไปทั้งเป็น ไม่เหลือแม้แต่เศษซากศพ... ทิ้งไว้เพียงตำนานของ \"กำแพงเหมันต์\" ผู้ปกป้องประตูมิติด้วยชีวิตตราบลมหายใจสุดท้าย",
+    "note": "",
+    "images": [
+      {
+        "id": "img-c9fe8dd1-f744-44f8-9a58-c8aa0d196f87",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-c9fe8dd1-f744-44f8-9a58-c8aa0d196f87"
+  },
+  {
+    "id": "character-85cc1815-1f38-45c5-9865-119e2f103418",
+    "name": "ZikZak",
+    "status": "Astral Nexus",
+    "ownerId": "user-0f2c5824-53b0-4a53-97e6-da3872c0efb1",
+    "partyTagIds": [],
+    "campaignIds": [],
+    "classLevels": [
+      {
+        "id": "classlevel-51f9e341-7440-4861-9b67-e6234e7a3c32",
+        "className": "Paladin",
+        "subclassName": "Oath of the Noble Genies",
+        "level": 1
+      }
+    ],
+    "species": "Kobold; Draconic Sorcery",
+    "background": "Sage",
+    "size": "Medium",
+    "stats": {
+      "str": 14,
+      "dex": 16,
+      "con": 19,
+      "int": 14,
+      "wis": 14,
+      "cha": 16
+    },
+    "alignment": "Lawful Neutral (ยึดมั่นในกฎเกณฑ์แห่งพันธสัญญาและหน้าที่รักษาสมดุลแห่งความรู้)",
+    "faith": "อัคนีเทพโคซุธ (Kossuth) และความเคารพอย่างลึกซึ้งต่อจ้าวแห่งเอฟริทติ (Noble Efreeti Lord) ผู้มอบคำสาบานให้",
+    "gender": "ชาย",
+    "eyes": "สีส้มประกายเพลิง (Glowing Ember Orange) ที่มักจะสว่างวาบขึ้นเมื่อกำลังใช้ความคิดหรือร่ายเวท",
+    "hair": "ไม่มี (มีเพียงเขาขนาดเล็กสีดำขลับที่คดเคี้ยวคล้ายมงกุฎและหนามตามแนวสันหลัง)",
+    "skin": "เกล็ดสีแดงฉานที่มีขอบสีทอง (Crimson Red with Gold Edges) ซึ่งเป็นสัญลักษณ์ของสายเลือดมังกรแดงที่เข้มข้น",
+    "height": "72 cm",
+    "weight": "18 kg",
+    "age": "68 ปี",
+    "ideals": "ความรู้ (Knowledge) - ความรู้คือพลังที่แท้จริง และพลังที่ยิ่งใหญ่ย่อมต้องถูกควบคุมด้วยเจตจำนงที่แข็งแกร่งดั่งเหล็กกล้า ไม่ใช่ถูกแผดเผาอย่างไร้ทิศทาง",
+    "bonds": "\"หอจดหมายเหตุเถ้าถ่าน\" (The Ashen Archive) - ห้องสมุดลับที่ตั้งอยู่บนรอยต่อระหว่าง Material Plane และ Plane of Fire ข้าสาบานว่าจะปกป้องความรู้ที่ซ่อนอยู่ในนั้นด้วยชีวิต",
+    "flaws": "ข้ามีความหยิ่งผยองในสายเลือดมังกรและพลังแห่งจินนี่ของตนเอง ข้าจะโกรธเกรี้ยวและสูญเสียความเยือกเย็นทันทีหากมีใครบังอาจดูถูกเผ่าพันธุ์โคโบลด์หรือมองว่าข้าเป็นเพียงสัตว์เลื้อยคลานไร้ค่า",
+    "personalityTraits": "ข้าพูดจาด้วยคำศัพท์โบราณ โวหารงดงาม และมีน้ำเสียงที่ดูยิ่งใหญ่เกินตัว ข้าจะลูบตำราเวทมนตร์ของตนเองอย่างทะนุถนอมเสมอราวกับมันเป็นลูกในไส้ และมักจะพ่นควันจางๆ ออกจากจมูกเมื่อรู้สึกหงุดหงิด",
+    "appearance": "โคโบลด์ร่างจิ๋วที่แผ่ออร่าความร้อนออกมาจางๆ สวมชุดเกราะครึ่งท่อน (Half-Plate) ทำจากทองเหลืองสั่งทำพิเศษ สลักลวดลายเปลวเพลิงและกลุ่มควันอันเป็นเอกลักษณ์ของศิลปะนครแห่งทองเหลือง (City of Brass) ���ขาประดับตัวด้วยเครื่องประดับทองคำและทับทิม มือหนึ่งถือหอกง้าวขนาดเล็ก (Halberd) ที่ใบมีดแดงฉานราวกับเพิ่งออกจากเตาหลอม ด้านหลังมีตำราเวทมนตร์ปกหนังมังกรที่ลอยตามตัวเขาอยู่เสมอ โดยเชื่อมติดกับเข็มขัดด้วยโซ่ทองคำเส้นเล็กๆ",
+    "biography": "ซิกแซกไม่ได้เกิดมาเพื่อเป็นเพียงทาสขุดแร่ในรังของมังกรแดงเช่นโคโบลด์ทั่วไป สายเลือดมังกรในตัวเขาปะทุขึ้นตั้งแต่วัยเยาว์ มอบพลังเวทมนตร์และสติปัญญาที่เฉียบแหลมผิดมนุษย์มนา (Draconic Sorcery) เขาหลงใหลในอักขระและคัมภีร์เวทมนตร์ที่กองอยู่ในสมบัติของนายเหนือหัว แทนที่จะขโมยทองคำ ซิกแซกขโมย \"ความรู้\"\n\nวันหนึ่ง เขาได้ค้นพบวงเวทโบราณที่นำไปสู่ Plane of Fire ด้วยความอยากรู้อยากเห็นในวิถีแห่งนักปราชญ์ (Sage) เขาข้ามมิติไปยังนครแห่งทองเหลือง (City of Brass) ที่นั่น เขาเกือบถูกจับเป็นทาส ทว่าความรู้เชิงลึกเกี่ยวกับเผ่าพันธุ์มังกรและเวทมนตร์โบราณของเขา ไปสะดุดตาขุนนางเอฟริทติ (Noble Efreeti) ตนหนึ่ง ผู้ซึ่งกำลังรวบรวมภูมิปัญญาแห่งพหุจักรวาล\n\nขุนนางจินนี่ผู้นั้นได้รับซิกแซกไว้ในอุปถัมภ์ โคโบลด์น้อยใช้เวลาหลายทศวรรษศึกษาในหอจดหมายเหตุเถ้าถ่าน จนในที่สุด เขาก็ตัดสินใจคุกเข่าลงต่อหน้าเปลวเพลิงนิรันดร์ กล่าวคำสาบานแห่งจินนี่ชั้นสูง (Oath of the Noble Genies) เปลี่ยนตนเองเป็นอัศวินศักดิ์สิทธิ์ผู้ปกป้องความรู้ พลังแห่งสายเลือดมังกรและมนตราแห่งจินนี่หลอมรวมกัน ทำให้ซิกแซกกลายเป็นนักรบเวทมนตร์ที่ทรงพลังในร่างจิ๋ว\n\nจุดสูงสุดของชีวิตและการแตกสลาย: ซิกแซกมาถึงจุดสูงสุดที่เลเวล 18 (Paladin 6 / Sorcerer 12) เขาได้รับฉายาว่า \"ทูตแห่งเถ้าถ่าน\" (The Ember Emissary) เดินทางข้ามมิติเพื่อรวบรวมและปกป้องคัมภีร์ต้องห้าม ทว่าจุดจบของเขามาถึงเมื่อกองทัพแห่งความหนาวเหน็บ—เหล่าศพเดินได้และโกเลมน้ำแข็งที่นำโดย Frost Giant Lich—ได้บุกทะลวงรอยแยกมิติ หวังจะแช่แข็งและทำลายหอจดหมายเหตุเถ้าถ่านให้สิ้นซาก\n\nในขณะที่นักปราชญ์คนอื่นๆ อพยพ ซิกแซกเลือกที่จะยืนหยัดเพียงลำพังที่ประตูมิติ เขาปลดปล่อยพลังเวททั้งหมดที่มี พลังแห่งสายเลือดมังกรแดงปะทุถึงขีดสุด เขาร่ายเวทหน่วงเวลาและพุ่งเข้าปะทะกับ Frost Giant Lich ซิกแซกอัดฉีดพลังเวทมนตร์และเจตจำนงแห่งคำสาบานทั้งหมดลงในการโจมตีเพียงครั้งเดียว เกิดเป็น Divine Smite ที่ผสานด้วยเปลวเพลิงแห่งจินนี่และมังกร\n\nการปะทะนั้นสร้างการระเบิดระดับซูเปอร์โนวาขนาดย่อมที่แผดเผากองทัพน้ำแข็งจนระเหยเป็นไอในพริบตา และปิดผนึกประตูมิติลงอย่างสมบูรณ์แบบ ทว่าร่างกายของโคโบลด์ผู้กล้าหาญก็ไม่อาจทนรับพลังอำนาจมหาศาลนั้นได้ ร่างของซิกแซกสลายกลายเป็นเถ้าถ่านสีทองที่ลอยล่องไปในอากาศ เหลือทิ้งไว้เพียงชุดเกราะทองเหลืองที่ไร้รอยขีดข่วน และตำราเวทที่ยังคงลอยเรืองรองอยู่เหนือเถ้ากระดูกของเขา... ตำนานของโคโบลด์ผู้ปกป้องความรู้แห่งมิติเพลิงจึงถูกจารึกไว้ตลอดกาล",
+    "note": "",
+    "images": [
+      {
+        "id": "img-db8eb34e-71b9-4ea8-be79-d28be624a984",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-db8eb34e-71b9-4ea8-be79-d28be624a984"
+  },
+  {
+    "id": "character-47a643fe-865a-4db0-a622-be509eefd185",
+    "name": "Orem",
+    "status": "Astral Nexus",
+    "ownerId": "user-987ef0a6-6bbe-4c99-a569-d5a0afec19e5",
+    "partyTagIds": [],
+    "campaignIds": [],
+    "classLevels": [
+      {
+        "id": "classlevel-e311f1d7-bc73-4791-9fe9-85529e239ba8",
+        "className": "Fighter",
+        "subclassName": "Banneret",
+        "level": 1
+      }
+    ],
+    "species": "Genasi (Earth)",
+    "background": "House Phianlan Heir",
+    "size": "Medium",
+    "stats": {
+      "str": 12,
+      "dex": 16,
+      "con": 16,
+      "int": 11,
+      "wis": 12,
+      "cha": 18
+    },
+    "alignment": "Lawful Neutral (ยึดมั่นในหน้าที่และคำสาบานต่อตระกูลเหนือสิ่งอื่นใด)",
+    "faith": "อุดมการณ์ของตระกูลเฟียร์ลัน (The Serpentine Table) และเคารพใน Dol Arrah เทพแห่งเกียรติยศและแสงสว่างตามวิถีแห่งนักรบ",
+    "gender": "ชาย",
+    "eyes": "สีอำพันสว่างเรืองรองราวกับหินหลอมละลาย",
+    "hair": "เส้นผมสีดำขลับที่ดูคล้ายผลึกควอตซ์สีนิลที่เรียงตัวกัน",
+    "skin": "สีเทาเข้มอมดำ ผิวสัมผัสหยาบและแข็งแกร่งดั่งหินชนวน มีรอยแตกตื้นๆ ที่เปล่งแสงสีทองอ่อนๆ เมื่อเขาใช้พลัง",
+    "height": "192 cm",
+    "weight": "128 kg (ร่างกายอัดแน่นไปด้วยมวลหินและธาตุดิน)",
+    "age": "45 ปี",
+    "ideals": "ความภักดี (Loyalty) - \"ข้าคือรากฐานอันมั่นคง เพื่อให้พี่น้องของข้าได้เริงระบำอยู่ในเงามืด\"",
+    "bonds": "\"ลีรีธ\" (Lyrieth) เอลฟ์สาวผู้มีสายเลือดตรงของตระกูลเฟียร์ลัน (ผู้ครอบครอง Mark of Shadow) เธอคือพี่สาวบุญธรรมที่เก็บเขามาเลี้ยงและเป็นคนเดียวที่มองเห็นหัวใจอันอ่อนโยนภายใต้ร่างกายที่เป็นหินผา",
+    "flaws": "เขามีความซื่อสัตย์ที่มืดบอดจนเกินไป หลายครั้งเขายอมหลับตาข้างหนึ่งให้กับภารกิจลอบสังหารหรืองานสกปรกของตระกูล เพียงเพราะเชื่อว่ามันเป็น \"ความจำเป็น\" แม้ว่ามันจะขัดกับเกียรติยศของนักรบในใจเขาก็ตาม",
+    "personalityTraits": "โอเรมเป็นคนพูดน้อยแต่เสียงทุ้มกังวานหนักแน่นราวกับแผ่นดินไหว เขาไม่เคยแสดงอาการตื่นตระหนก แม้จะอยู่ในตระกูลที่เต็มไปด้วยเอลฟ์ผู้พลิ้วไหวและเจ้าเล่ห์ แต่เขากลับเป็นเหมือนขุนเขาสงบนิ่งที่ทุกคนสามารถพึ่งพาได้เสมอ",
+    "appearance": "สวมชุดเกราะหนักที่สั่งทำพิเศษ สีเขียวเข้มและสีเงินหม่นซึ่งเป็นสีประจำตระกูลเฟียร์ลัน บนแผ่นอกสลักตราสัญลักษณ์ไฮดรา (Hydra) มือซ้ายถือโล่ทาวเวอร์ชิลด์ขนาดมหึมาที่ทำจากหินออบซิเดียน มือขวาถือธงรบ (Banner) ของตระกูลที่สะบัดอย่างสง่างาม ทุกครั้งที่เขาก้าวเดิน จะมีเศษฝุ่นละอองและเศษดินลอยวนอยู่รอบตัวบางๆ เสมอ",
+    "biography": "โอเรมไม่ได้เกิดมามีสายเลือดของเอลฟ์ และไม่มีทางที่จะปรากฏ Dragonmark แห่งเงาบนร่างของเขาได้ เขาเป็นเพียงเด็กทารกเผ่า Genasi ธาตุดินที่ถูกทิ้งไว้ในเหมืองคริสตัลใต้ดินของเมือง ชะตาชีวิตของเขาเปลี่ยนไปเมื่อขบวนเดินทางของตระกูลเฟียร์ลัน (House Phiarlan) ผ่านมาพบ ลีรีธ เอลฟ์สาวแห่งตระกูลหลักได้ขัดคำสั่งผู้อาวุโสและรับเขามาเลี้ยงดูในฐานะ \"ผู้พิทักษ์\"\n\nในตระกูลที่โด่งดังเรื่องศิลปะการแสดง สายลับ และนักฆ่าที่เคลื่อนไหวไร้ร่องรอย โอเรมคือความแตกต่างที่สิ้นเชิง เขามีร่างกายที่หนักอึ้งและเชื่องช้า ทว่าเขาเปลี่ยนจุดด้อยนั้นให้เป็นจุดแข็ง โอเรมฝึกฝนวิชาดาบและการบัญชาการรบในฐานะ Banneret (Purple Dragon Knight) เขาไม่ใช่ผู้ซ่อนตัวในเงามืด แต่เขาคือ \"เป้าสายตา\" ที่เจิดจ้า โอเรมทำหน้าที่เป็นองครักษ์แนวหน้า เป็นตัวแทนของตระกูลในการรบเปิดเผย และเป็นม่านเหล็กที่คอยดึงดูดความสนใจศัตรู เพื่อให้สายลับของเฟียร์ลันสามารถแทรกซึมและทำงานได้สำเร็จ เขาได้รับตำแหน่ง \"Heir\" กิตติมศักดิ์ ซึ่งเป็นเรื่องที่เกิดขึ้นได้ยากยิ่งสำหรับคนนอกสายเลือด\n\nจุดสูงสุดของชีวิตและวาระสุดท้าย: จุดสูงสุดของชีวิตโอเรมมาถึงในคืน \"กบฏเงาสีเลือด\" เมื่อกองกำลังของตระกูลเธอร์แรนนิ (House Thuranni - ตระกูลคู่แค้นที่แยกตัวออกไป) บุกจู่โจมเซฟเฮาส์หลักของเฟียร์ลันในชาร์น เป้าหมายของพวกมันคือการสังหารลีรีธและแย่งชิงข้อมูลความลับสุดยอดของ The Serpentine Table\n\nในขณะที่มือสังหารนับร้อยล้อมกรอบ โอเรมได้สั่งให้ลีรีธและผู้อาวุโสหนีลงไปทางเส้นทางลับใต้ดิน ส่วนตัวเขาเดินออกมายืนตระหง่านอยู่เพียงลำพังที่ประตูใหญ่ เขาปักธงรบของตระกูลเฟียร์ลันลงบนพื้นหิน ใช้พลังธาตุดินในสายเลือดผสานร่างกายของตนเข้ากับโครงสร้างของอาคาร\n\nการต่อสู้ดำเนินไปอย่างดุเดือด หอกและดาบนับไม่ถ้วนทิ่มแทงทะลุเกราะของเขา แต่ด้วยจิตวิญญาณแห่ง Banneret เขาส่งเสียงคำรามกึกก้อง ร่ายพลังใจ (Rallying Cry) ให้กับทหารยามที่เหลือรอดยืนหยัดสู้ โอเรมรับการโจมตีแทนพี่น้องนับครั้งไม่ถ้วน เลือดที่ไหลรินออกมากลายเป็นทรายและโคลน จนกระทั่งถึงขีดจำกัด พลังชีวิตของเขาดับมอดลง แต่สิ่งที่น่าตกตะลึงคือ ร่างกายของเขาไม่ได้ล้มลง\n\nในวินาทีสุดท้ายก่อนสิ้นใจ โอเรมใช้พลังธาตุดินเฮือกสุดท้ายเปลี่ยนร่างกายของตนเองให้กลายเป็นรูปปั้นหินออบซิเดียนที่แข็งแกร่งที่สุด เชื่อมเป็นเนื้อเดียวกับบานประตูและกำแพง ปิดตายทางเข้าอย่างสมบูรณ์แบบ รูปปั้นหินของเขายืนตระหง่าน กำธงรบไว้แน่น ปกป้องความลับและครอบครัวของเขาไว้เบื้องหลังตลอดกาล เขาไม่ได้ตายในฐานะสายลับในเงามืด แต่ตายในฐานะวีรบุรุษผู้ยิ่งใหญ่ที่สุดที่ตระกูลสายลับเคยมีมา",
+    "note": "",
+    "images": [
+      {
+        "id": "img-d0477f15-fe95-425f-a214-7cc277533c1c",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-d0477f15-fe95-425f-a214-7cc277533c1c"
+  },
+  {
+    "id": "character-e3ffd101-b3a4-4b47-8925-d445726ea483",
+    "name": "Xanxiah",
+    "status": "Astral Nexus",
+    "ownerId": "user-0f2c5824-53b0-4a53-97e6-da3872c0efb1",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-463b8715-b9f6-4448-a406-f93ef52235be"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-b74739a2-17a9-467e-a5d5-48c02bf2a5ab",
+        "className": "Rogue",
+        "subclassName": "Scout",
+        "level": 1
+      }
+    ],
+    "species": "Goblin",
+    "background": "Criminal",
+    "size": "Small",
+    "stats": {
+      "str": 11,
+      "dex": 18,
+      "con": 14,
+      "int": 18,
+      "wis": 16,
+      "cha": 11
+    },
+    "alignment": "Neutral",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [
+      {
+        "id": "img-ec4963fb-72fd-4241-8c9d-01ba3a36cd19",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-ec4963fb-72fd-4241-8c9d-01ba3a36cd19",
+    "combat": {
+      "ac": "15",
+      "speed": "30",
+      "hitDice": "1d8",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "10",
+        "current": "10",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": true,
+      "con": false,
+      "int": true,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": true,
+        "expertise": false
+      },
+      "animal": {
+        "prof": false,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": true,
+        "expertise": true
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": true,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": true,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": true,
+        "expertise": true
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Dagger (Nick)",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "1d4+4",
+            "type": "Piercing"
+          }
+        ]
+      },
+      {
+        "name": "Light Crossbow (Slow)",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "1d8+4",
+            "type": "Piercing"
+          }
+        ]
+      }
+    ],
+    "currency": {
+      "cp": "",
+      "sp": "3",
+      "ep": "",
+      "gp": "14",
+      "pp": ""
+    },
+    "attacksSpellcasting": "",
+    "equipment": [
+      {
+        "name": "Dagger",
+        "qty": 2
+      },
+      {
+        "name": "Crossbow, Light",
+        "qty": 1
+      },
+      {
+        "name": "Leather Armor",
+        "qty": 1
+      },
+      {
+        "name": "Quiver",
+        "qty": 1
+      },
+      {
+        "name": "Bolt",
+        "qty": 20
+      },
+      {
+        "name": "Thieves' Tools",
+        "qty": 1
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 7
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1
+      },
+      {
+        "name": "Backpack",
+        "qty": 1
+      }
+    ],
+    "proficienciesLanguages": [
+      "Common",
+      "Goblin",
+      "Thieve's cant"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Alert",
+        "description": "Origin Feat\nYou gain the following benefits.\n\nInitiative Proficiency. When you roll Initiative, you can add your Proficiency Bonus to the roll.\n\nInitiative Swap. Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition."
+      },
+      {
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Fury of the Small",
+        "description": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.\n\nYou can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
+      },
+      {
+        "name": "Nimble Escape",
+        "description": "You can take the Disengage or Hide action as a bonus action on each of your turns."
+      },
+      {
+        "name": "Sneak Attack",
+        "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack roll if you have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.\n\nYou don't need Advantage on the attack roll if at least one of your allies is within 5 feet of the target, the ally doesn't have the Incapacitated condition, and you don't have Disadvantage on the attack roll.\n\nThe extra damage increases as you gain Rogue levels, as shown in the Sneak Attack column of the Rogue Features table."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "",
+    "spellcasting": {
+      "spellcastingClass": "",
+      "spellcastingAbility": "",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
+      "cantrips": [
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "character-340622a7-3f67-45b6-ab9a-be597ee3a69b",
+    "name": "Temp P'Earth",
+    "status": "In-Action",
+    "ownerId": "user-3d259d0d-c460-42db-a585-160c7bcfead2",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-463b8715-b9f6-4448-a406-f93ef52235be"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-857834c0-9855-4c8c-90f3-e80bab793293",
+        "className": "Barbarian",
+        "subclassName": "Path of the Wild Heart",
+        "level": 1
+      }
+    ],
+    "species": "Orc",
+    "background": "Farmer",
+    "size": "Medium",
+    "stats": {
+      "str": 18,
+      "dex": 14,
+      "con": 18,
+      "int": 10,
+      "wis": 13,
+      "cha": 11
+    },
+    "alignment": "Chaotic Neutral",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [],
+    "activeImageId": "",
+    "combat": {
+      "ac": "16",
+      "speed": "30",
+      "hitDice": "1d12",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "18",
+        "current": "18",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": true,
+      "dex": false,
+      "con": true,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": true,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": true,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": true,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": false,
+        "expertise": false
+      },
+      "survival": {
+        "prof": true,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Greatsword",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "2d6+4",
+            "type": "Slashing"
+          }
+        ]
+      }
+    ],
+    "attacksSpellcasting": "",
+    "currency": {
+      "cp": "",
+      "sp": "3",
+      "ep": "",
+      "gp": "254",
+      "pp": ""
+    },
+    "equipment": [
+      "Greatsword x1",
+      "Rations (1 day) x7",
+      "Waterskin x1",
+      "Backpack x1"
+    ],
+    "proficienciesLanguages": [
+      "Carpenter's Tools",
+      "Common",
+      "Orc"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Rage",
+        "description": "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.\n\nYou can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.\n\nWhile active, your Rage follows the rules below.\n\nDamage Resistance. You have Resistance to Bludgeoning, Piercing, and Slashing damage.\n\nRage Damage. When you make an attack using Strength—with either a weapon or an Unarmed Strike—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.\n\nStrength Advantage. You have Advantage on Strength checks and Strength saving throws.\n\nNo Concentration or Spells. You can't maintain Concentration, and you can't cast spells.\n\nDuration. The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:\n\nMake an attack roll against an enemy.\nForce an enemy to make a saving throw.\nTake a Bonus Action to extend your Rage.\nEach time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes."
+      },
+      {
+        "name": "Tough",
+        "description": "Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points."
+      },
+      {
+        "name": "Darkvision",
+        "description": "You have Darkvision with a range of 120 feet."
+      },
+      {
+        "name": "Adrenaline Rush",
+        "description": "You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.\n\nYou can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest."
+      },
+      {
+        "name": "Relentless Endurance",
+        "description": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "",
+    "spellcasting": {
+      "spellcastingClass": "",
+      "spellcastingAbility": "",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
+      "cantrips": [
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "character-eb13842a-5af0-480f-98d3-8a0c3916898c",
+    "name": "Salemphina",
+    "status": "In-Action",
+    "ownerId": "user-4ee161b1-9b28-4b17-ae80-b4e64485a7a1",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-463b8715-b9f6-4448-a406-f93ef52235be"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-4bfd0e0f-41da-4ae5-88df-4d88a0cd8b13",
+        "className": "Cleric",
+        "subclassName": "Life Domain",
+        "level": 1
+      }
+    ],
+    "species": "Dwarf",
+    "background": "Acolyte",
+    "size": "Medium",
+    "stats": {
+      "str": 11,
+      "dex": 14,
+      "con": 16,
+      "int": 12,
+      "wis": 18,
+      "cha": 18
+    },
+    "alignment": "Lawful Neutral",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [
+      {
+        "id": "img-84e2e3b2-fa04-4c42-9f9f-db639a505c9d",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-84e2e3b2-fa04-4c42-9f9f-db639a505c9d",
+    "combat": {
+      "ac": "17",
+      "speed": "30",
+      "hitDice": "1d8",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "12",
+        "current": "12",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": true,
+      "cha": true
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": false,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": true,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": true,
+        "expertise": false
+      },
+      "religion": {
+        "prof": true,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": false,
+        "expertise": false
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Eye of Anubis",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "1d4",
+            "type": "Necrotic"
+          }
+        ]
+      },
+      {
+        "name": "Toll the Dead",
+        "bonusOrDC": "WIS DC14",
+        "damages": [
+          {
+            "amount": "1d8 / 1d12",
+            "type": "Necrotic"
+          }
+        ]
+      },
+      {
+        "name": "Dagger",
+        "bonusOrDC": "+4",
+        "damages": [
+          {
+            "amount": "1d4+2",
+            "type": "Piercing"
+          }
+        ]
+      }
+    ],
+    "attacksSpellcasting": "",
+    "currency": {
+      "cp": "",
+      "sp": "",
+      "ep": "",
+      "gp": "215",
+      "pp": ""
+    },
+    "equipment": [
+      "Chain Shirt",
+      "Dagger x2",
+      "Shield",
+      "Amulet",
+      "Emblem",
+      "Waterskin",
+      "Backpack",
+      "Blanket",
+      "Holy Water (flask)",
+      "Lamp",
+      "Robe",
+      "Tinderbox"
+    ],
+    "proficienciesLanguages": [
+      "Common",
+      "Dwarvish",
+      "Calligrapher's Supplies"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Thaumaturge",
+        "description": "You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1)."
+      },
+      {
+        "name": "Darkvision",
+        "description": "You have Darkvision with a range of 120 feet."
+      },
+      {
+        "name": "Dwarven Resilience",
+        "description": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition."
+      },
+      {
+        "name": "Dwarven Toughness",
+        "description": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level."
+      },
+      {
+        "name": "Stonecunning",
+        "description": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.\n\nYou can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "",
+    "spellcasting": {
+      "spellcastingClass": "Cleric",
+      "spellcastingAbility": "WIS",
+      "spellSaveDC": "14",
+      "spellAttackBonus": "+6",
+      "cantrips": [
+        {
+          "name": "Guidance"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": "Eye of Anubis"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": "Light"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": "Toll the Dead"
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": "2",
+          "slotsRemaining": "2",
+          "spells": [
+            {
+              "name": "Bless",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "Healing word",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "Cure Wounds",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "Guiding Bolt",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "character-1bbea02c-8d44-458d-805b-42d793835c08",
+    "name": "Temp P'guy",
+    "status": "Astral Nexus",
+    "ownerId": "user-1553dd4c-1904-4b22-8954-934735b780b5",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-463b8715-b9f6-4448-a406-f93ef52235be"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-a00f13cd-6de3-4713-8c10-35c3b4d5ef98",
+        "className": "Monk",
+        "subclassName": "Warrior of the Elements",
+        "level": 1
+      }
+    ],
+    "species": "Human",
+    "background": "Soldier",
+    "size": "Medium",
+    "stats": {
+      "str": 14,
+      "dex": 18,
+      "con": 14,
+      "int": 12,
+      "wis": 14,
+      "cha": 10
+    },
+    "alignment": "Neutral Good",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [],
+    "activeImageId": "",
+    "combat": {
+      "ac": "16",
+      "speed": "30",
+      "hitDice": "1d8",
+      "inspiration": true,
+      "xp": "",
+      "hp": {
+        "max": "12",
+        "current": "12",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": true,
+      "dex": true,
+      "con": false,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": true,
+        "expertise": false
+      },
+      "animal": {
+        "prof": true,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": true,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": true,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": true,
+        "expertise": false
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Martial Art Attack",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "1d6+4",
+            "type": "Bludgeoning"
+          }
+        ]
+      }
+    ],
+    "attacksSpellcasting": "",
+    "currency": {
+      "cp": "",
+      "sp": "3",
+      "ep": "",
+      "gp": "92",
+      "pp": ""
+    },
+    "equipment": [
+      "Backpack",
+      "Rations (1 day) x7",
+      "Waterskin"
+    ],
+    "proficienciesLanguages": [],
+    "featuresAndTraits": [],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "",
+    "spellcasting": {
+      "spellcastingClass": "",
+      "spellcastingAbility": "",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
+      "cantrips": [
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "character-adbc3703-4808-45f8-b2c8-647e05579172",
+    "name": "Temp P'toei",
+    "status": "Astral Nexus",
+    "ownerId": "user-9685d817-130a-4a47-9bfb-0c1f5c136f3e",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-463b8715-b9f6-4448-a406-f93ef52235be"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-3df4f120-6d02-474b-abc7-502fb65707cf",
+        "className": "Paladin",
+        "subclassName": "Oath of Devotion",
+        "level": 1
+      }
+    ],
+    "species": "Human",
+    "background": "Charlatan",
+    "size": "Medium",
+    "stats": {
+      "str": 16,
+      "dex": 12,
+      "con": 20,
+      "int": 8,
+      "wis": 11,
+      "cha": 18
+    },
+    "alignment": "Lawful Evil",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "ผู้อ่อนแอ และ ผู้แข็งแกร่ง ล้วนมีค่าเท่ากัน",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [],
+    "activeImageId": "",
+    "combat": {
+      "ac": "16",
+      "speed": "30",
+      "hitDice": "1d10",
+      "inspiration": true,
+      "xp": "",
+      "hp": {
+        "max": "15",
+        "current": "15",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": true,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": false,
+      "cha": true
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": true,
+        "expertise": false
+      },
+      "animal": {
+        "prof": false,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": true,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": true,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": true,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": true,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": false,
+        "expertise": false
+      },
+      "survival": {
+        "prof": true,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Longsword",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1d10/1d8+3",
+            "type": "Slashing"
+          }
+        ]
+      }
+    ],
+    "attacksSpellcasting": "",
+    "currency": {
+      "cp": "",
+      "sp": "3",
+      "ep": "",
+      "gp": "169",
+      "pp": ""
+    },
+    "equipment": [
+      "Longsword",
+      "Chain Mail",
+      "Waterskin",
+      "Backpack",
+      "Rations (1 day) x7"
+    ],
+    "proficienciesLanguages": [
+      "Forgery Kit"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Lay on Hands",
+        "description": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.\n\nAs a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.\n\nYou can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature."
+      },
+      {
+        "name": "Lucky",
+        "description": "You gain the following benefits.\n\nLuck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.\n\nAdvantage. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.\n\nDisadvantage. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "",
+    "spellcasting": {
+      "spellcastingClass": "Paladin",
+      "spellcastingAbility": "CHA",
+      "spellSaveDC": "14",
+      "spellAttackBonus": "+6",
+      "cantrips": [
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": "2",
+          "slotsRemaining": "2",
+          "spells": [
+            {
+              "name": "Divine Favor",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "Divine Smite",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "character-2ab85ae9-5526-4f09-aa65-e962115f7e76",
+    "name": "Temp PM",
+    "status": "Astral Nexus",
+    "ownerId": "user-205a78cf-df8b-4b97-ba2d-afbdd5fca757",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-463b8715-b9f6-4448-a406-f93ef52235be"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-378cc204-bd2c-41f7-ab64-67593349a786",
+        "className": "Druid",
+        "subclassName": "Circle of the Moon",
+        "level": 1
+      }
+    ],
+    "species": "Mousefolk (Mouseling)",
+    "background": "Guide",
+    "size": "Small",
+    "stats": {
+      "str": 11,
+      "dex": 16,
+      "con": 16,
+      "int": 14,
+      "wis": 18,
+      "cha": 12
+    },
+    "alignment": "",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [],
+    "activeImageId": "",
+    "combat": {
+      "ac": "",
+      "speed": "",
+      "hitDice": "",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "",
+        "current": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": true,
+      "wis": true,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": true,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": true,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": true,
+        "expertise": false
+      },
+      "survival": {
+        "prof": true,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "bonusOrDC": "",
+        "damages": [
+          {
+            "amount": "",
+            "type": ""
+          }
+        ]
+      },
+      {
+        "name": "",
+        "bonusOrDC": "",
+        "damages": [
+          {
+            "amount": "",
+            "type": ""
+          }
+        ]
+      },
+      {
+        "name": "",
+        "bonusOrDC": "",
+        "damages": [
+          {
+            "amount": "",
+            "type": ""
+          }
+        ]
+      }
+    ],
+    "attacksSpellcasting": "",
+    "currency": {
+      "cp": "",
+      "sp": "",
+      "ep": "",
+      "gp": "",
+      "pp": ""
+    },
+    "equipment": [
+      "Waterskin",
+      "Rations (1 day) x7",
+      "Backpack",
+      "Studded Leather",
+      "Wooden Staff"
+    ],
+    "proficienciesLanguages": [],
+    "featuresAndTraits": [],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "",
+    "spellcasting": {
+      "spellcastingClass": "Druid",
+      "spellcastingAbility": "WIS",
+      "spellSaveDC": "14",
+      "spellAttackBonus": "+6",
+      "cantrips": [
+        {
+          "name": "Druidcraft"
+        },
+        {
+          "name": " Guidance"
+        },
+        {
+          "name": "Produce Flame"
+        },
+        {
+          "name": "Primal Savagery (Magic Initiate)"
+        },
+        {
+          "name": "Frostbite (Magic Initiate)"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": "2",
+          "slotsRemaining": "2",
+          "spells": [
+            {
+              "name": "Thorn Armor",
+              "prepared": true
+            },
+            {
+              "name": " Cure Wounds",
+              "prepared": true
+            },
+            {
+              "name": "Fog Cloud",
+              "prepared": true
+            },
+            {
+              "name": "Animal Friendship",
+              "prepared": true
+            },
+            {
+              "name": "Icicle Javelin",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
   }
 ]

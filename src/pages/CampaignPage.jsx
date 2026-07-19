@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import ConfirmDialog from '../components/ConfirmDialog'
+import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
+import { buildFiveEToolsLink, findAdventureOrBook, findAdventureOrBookAsync } from '../utils/adventureLinks'
 
 const STATUS_OPTIONS = ['-', 'Developing', 'Prepared', 'On-Going', 'Complete']
 const CAMPAIGN_TYPE_OPTIONS = ['-', 'One-Shot', 'Short Campaign', 'Long Campaign']
@@ -39,7 +41,41 @@ function blankCampaign() {
     campaignType: '',
     partyTagIds: [],
     note: '',
+    link: '',
   }
+}
+
+function slugify(text) {
+  return (text || '')
+    .toLowerCase()
+    .trim()
+    .replace(/'/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+}
+
+// Best-effort fallback when the name isn't found in the local 5etools
+// adventure/book index (homebrew, unofficial titles, typos, ...). 5e.tools'
+// adventure.html/book.html pages hash to just the book id (e.g. "#cos"), not
+// the name — since we don't know the real id here, guess it from the
+// campaign's Source field (which is usually the same abbreviation) instead
+// of the name. With no source at all, fall back to a search link.
+function guessFiveEToolsLink(name, source) {
+  const sourceSlug = slugify((source || '').split(',')[0])
+  if (sourceSlug) return `https://5e.tools/adventure.html#${sourceSlug}`
+  if (!name.trim()) return ''
+  return `https://5e.tools/search.html?q=${encodeURIComponent(name.trim())}`
+}
+
+// Prefers an exact match against the local 5etools adventure/book data
+// (accurate id + adventure.html vs book.html); falls back to a guess based
+// on the Source field if the name isn't in the local data (or it hasn't
+// loaded yet).
+function suggestFiveEToolsLink(name, source) {
+  if (!name.trim()) return ''
+  const entry = findAdventureOrBook(name)
+  if (entry) return buildFiveEToolsLink(entry)
+  return guessFiveEToolsLink(name, source)
 }
 
 function Tip({ text, children }) {
@@ -349,20 +385,51 @@ export default function CampaignPage() {
     }
   }
 
+  const [autoLinkFor, setAutoLinkFor] = useState(null)
+
   function addCampaign() {
     setCampaignForm(blankCampaign())
+    setAutoLinkFor(null)
   }
 
   function editCampaign(campaign) {
     setCampaignForm({ ...campaign })
+    setAutoLinkFor(null)
   }
 
   function updateFormField(field, value) {
     setCampaignForm((prev) => {
       if (!prev) return null
-      return { ...prev, [field]: value }
+      const next = { ...prev, [field]: value }
+      if (field === 'link') {
+        setAutoLinkFor(null)
+      } else if ((field === 'name' || field === 'source') && (!prev.link || autoLinkFor === prev.name)) {
+        next.link = suggestFiveEToolsLink(next.name, next.source)
+        setAutoLinkFor(next.name)
+      }
+      return next
     })
   }
+
+  // The local adventure/book index may still be loading when the user first
+  // types a name — re-check once it's ready and upgrade the guessed link to
+  // an exact match, but only if the user hasn't since edited it by hand.
+  useEffect(() => {
+    if (!campaignForm) return
+    const name = campaignForm.name
+    if (!name || autoLinkFor !== name) return
+    let cancelled = false
+    findAdventureOrBookAsync(name).then((entry) => {
+      if (cancelled || !entry) return
+      setCampaignForm((prev) => {
+        if (!prev || prev.name !== name || autoLinkFor !== name) return prev
+        return { ...prev, link: buildFiveEToolsLink(entry) }
+      })
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [campaignForm?.name, autoLinkFor])
 
   function selectContinuesFromForForm(name) {
     if (!name) {
@@ -469,42 +536,30 @@ export default function CampaignPage() {
             </button>
           ))}
         </div>
-        <select
+        <SearchSelect
+          options={levelOptions.map((lvl) => ({ value: lvl, label: lvl }))}
           value={filterLevel}
-          onChange={(e) => setFilterLevel(e.target.value)}
-          className="rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-        >
-          <option value="">Level: ทั้งหมด</option>
-          {levelOptions.map((lvl) => (
-            <option key={lvl} value={lvl}>
-              {lvl}
-            </option>
-          ))}
-        </select>
-        <select
+          onChange={setFilterLevel}
+          placeholder="Level: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-36"
+        />
+        <SearchSelect
+          options={campaignTypeOptions.map((t) => ({ value: t, label: t }))}
           value={filterCampaignType}
-          onChange={(e) => setFilterCampaignType(e.target.value)}
-          className="rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-        >
-          <option value="">ประเภทแคมเปญ: ทั้งหมด</option>
-          {campaignTypeOptions.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
-        <select
+          onChange={setFilterCampaignType}
+          placeholder="ประเภทแคมเปญ: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-40"
+        />
+        <SearchSelect
+          options={partyTags.map((t) => ({ value: t.id, label: t.name || '(ไม่มีชื่อ)' }))}
           value={filterParty}
-          onChange={(e) => setFilterParty(e.target.value)}
-          className="rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-        >
-          <option value="">Party: ทั้งหมด</option>
-          {partyTags.map((t) => (
-            <option key={t.id} value={t.id}>
-              {t.name || '(ไม่มีชื่อ)'}
-            </option>
-          ))}
-        </select>
+          onChange={setFilterParty}
+          placeholder="Party: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-36"
+        />
       </div>
 
       {campaigns.length === 0 ? (
@@ -541,11 +596,23 @@ export default function CampaignPage() {
                   </td>
                   <td className="py-2 px-3">
                     <Tip text={campaign.briefContent}>
-                      <DisplayText
-                        value={campaign.name}
-                        title={campaign.briefContent ? 'ชี้ที่ชื่อเพื่อดูเนื้อหาคร่าวๆ' : undefined}
-                        className={campaign.briefContent ? 'cursor-help font-medium underline decoration-dotted underline-offset-2' : 'font-medium'}
-                      />
+                      {campaign.link ? (
+                        <a
+                          href={campaign.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          title={campaign.briefContent || campaign.link}
+                          className="block w-full whitespace-pre-wrap break-words rounded-md px-2 py-1 leading-snug font-medium text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900"
+                        >
+                          {campaign.name}
+                        </a>
+                      ) : (
+                        <DisplayText
+                          value={campaign.name}
+                          title={campaign.briefContent ? 'ชี้ที่ชื่อเพื่อดูเนื้อหาคร่าวๆ' : undefined}
+                          className={campaign.briefContent ? 'cursor-help font-medium underline decoration-dotted underline-offset-2' : 'font-medium'}
+                        />
+                      )}
                     </Tip>
                   </td>
                   <td className="py-2 px-3">
@@ -707,6 +774,19 @@ export default function CampaignPage() {
                   partyTags={partyTags}
                   onToggle={togglePartyTagForForm}
                 />
+              </div>
+
+              {/* Row 5.5: Link */}
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">ลิงก์ (เช่น 5e.tools)</label>
+                <input
+                  type="text"
+                  value={campaignForm.link}
+                  onChange={(e) => updateFormField('link', e.target.value)}
+                  placeholder="https://5e.tools/adventure.html#..."
+                  className="w-full rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-stone-900 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200 transition-shadow"
+                />
+                <p className="text-xs text-stone-400">ระบบจะเทียบชื่อกับฐานข้อมูล 5e.tools ในเครื่องให้อัตโนมัติ ถ้าเจอชื่อตรงกันจะได้ลิงก์ที่แม่นยำ แต่ถ้าไม่เจอ (เช่น Homebrew หรือพิมพ์ชื่อไม่ตรงเป๊ะ) ระบบจะเดาลิงก์ให้แทน ลองกดดูแล้วแก้เองได้ถ้าลิงก์ผิด</p>
               </div>
 
               {/* Row 6: Brief Content */}

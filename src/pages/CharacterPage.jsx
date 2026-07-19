@@ -1,5 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import ConfirmDialog from '../components/ConfirmDialog'
+import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
@@ -8,6 +10,7 @@ import {
   STAT_KEYS,
   getBackgroundOptions,
   getClassSubclassOptions,
+  getReferenceLinks,
   getSpeciesOptions,
 } from '../utils/gachaOptions'
 import { downloadDataUrl, getExtensionFromDataUrl } from '../utils/exportImport'
@@ -18,6 +21,30 @@ import {
   readFileAsDataUrl,
   saveImage,
 } from '../utils/imageStore'
+import {
+  ABILITY_KEYS,
+  DAMAGE_TYPES,
+  DND_LANGUAGES,
+  SKILLS,
+  abilityMod,
+  blankAction,
+  blankCombat,
+  blankCurrency,
+  blankDamage,
+  blankSavingThrows,
+  blankSkills,
+  blankSpellcasting,
+  normalizeSpellcasting,
+  formatMod,
+  migrateLegacyAction,
+  normalizeSkillState,
+  passivePerception,
+  proficiencyBonus,
+  savingThrowBonus,
+  skillBonus,
+} from '../utils/dnd5e'
+import ExportPdfModal from '../components/ExportPdfModal'
+import ItemStatblockModal from '../components/ItemStatblockModal'
 
 const TABS = [
   { key: 'characters', label: 'ตัวละคร' },
@@ -28,6 +55,17 @@ const TABS = [
 const DEFAULT_COLOR = '#7c3aed'
 const MAX_TOTAL_LEVEL = 20
 const STATUS_OPTIONS = ['Astral Nexus', 'In-Action', 'Hall of Fame']
+const NO_CAMPAIGN_FILTER = '__no_campaign__'
+const NO_PARTY_FILTER = '__no_party__'
+const NO_USER_FILTER = '__no_user__'
+
+const EDIT_TABS = [
+  { key: 'identity', label: 'ข้อมูลพื้นฐาน', icon: '🧝' },
+  { key: 'combat', label: 'การต่อสู้', icon: '💥' },
+  { key: 'spells', label: 'เวทมนตร์', icon: '✨' },
+  { key: 'equipment', label: 'อุปกรณ์', icon: '🎒' },
+  { key: 'personality', label: 'บุคลิกภาพ', icon: '📜' },
+]
 
 const SORT_OPTIONS = [
   { key: 'name', label: 'ชื่อ' },
@@ -52,6 +90,44 @@ function blankStats() {
 
 function blankClassLevel() {
   return { id: createId('classlevel'), className: '', subclassName: '', level: 1 }
+}
+
+// Older saves stored these as a single free-text block; split into list items.
+function toItemList(value) {
+  if (Array.isArray(value)) return value
+  if (typeof value === 'string' && value.trim()) {
+    return value.split('\n').map((line) => line.trim()).filter(Boolean)
+  }
+  return []
+}
+
+// Equipment is {name, qty}; older saves have plain strings, sometimes with the
+// quantity baked into the text (e.g. "Dagger x2", "Dagger (x2)") - split those apart.
+const EQUIPMENT_QTY_PATTERN = /^(.*?)\s*(?:[x×]\s*(\d+)|\(\s*[x×]?\s*(\d+)\s*\))$/i
+
+function toEquipmentList(value) {
+  return toItemList(value).map((it) => {
+    if (it && typeof it === 'object') {
+      return { name: it.name ?? '', qty: Math.max(1, Number(it.qty) || 1) }
+    }
+    const str = String(it ?? '').trim()
+    const match = str.match(EQUIPMENT_QTY_PATTERN)
+    if (match) {
+      return { name: match[1].trim(), qty: Math.max(1, Number(match[2] ?? match[3]) || 1) }
+    }
+    return { name: str, qty: 1 }
+  })
+}
+
+// Features/traits are {name, description} pairs; older saves may have plain
+// text items (list of strings) or a single free-text block.
+function toFeatureList(value) {
+  if (Array.isArray(value)) {
+    return value.map((it) =>
+      typeof it === 'string' ? { name: it, description: '' } : { name: it.name ?? '', description: it.description ?? '' },
+    )
+  }
+  return toItemList(value).map((name) => ({ name, description: '' }))
 }
 
 function blankCharacter() {
@@ -85,6 +161,20 @@ function blankCharacter() {
     note: '',
     images: [],
     activeImageId: '',
+    combat: blankCombat(),
+    savingThrows: blankSavingThrows(),
+    skills: blankSkills(),
+    weapons: [blankAction(), blankAction(), blankAction()],
+    attacksSpellcasting: '',
+    currency: blankCurrency(),
+    equipment: [],
+    proficienciesLanguages: [],
+    featuresAndTraits: [],
+    alliesOrganizations: '',
+    factionName: '',
+    treasure: '',
+    additionalFeaturesTraits: '',
+    spellcasting: blankSpellcasting(),
   }
 }
 
@@ -134,6 +224,27 @@ function normalizeCharacter(raw) {
   const appearance = raw.appearance ?? ''
   const biography = raw.biography ?? ''
 
+  const combat = { ...blankCombat(), ...raw.combat, hp: { ...blankCombat().hp, ...raw.combat?.hp }, deathSaves: { ...blankCombat().deathSaves, ...raw.combat?.deathSaves } }
+  const savingThrows = { ...blankSavingThrows(), ...raw.savingThrows }
+  const skills = SKILLS.reduce(
+    (acc, s) => ({ ...acc, [s.key]: normalizeSkillState(raw.skills?.[s.key]) }),
+    {},
+  )
+  const weapons =
+    raw.weapons && raw.weapons.length > 0
+      ? raw.weapons.map(migrateLegacyAction)
+      : [blankAction(), blankAction(), blankAction()]
+  const currency = { ...blankCurrency(), ...raw.currency }
+  const attacksSpellcasting = raw.attacksSpellcasting ?? ''
+  const equipment = toEquipmentList(raw.equipment)
+  const proficienciesLanguages = toItemList(raw.proficienciesLanguages)
+  const featuresAndTraits = toFeatureList(raw.featuresAndTraits)
+  const alliesOrganizations = raw.alliesOrganizations ?? ''
+  const factionName = raw.factionName ?? ''
+  const treasure = raw.treasure ?? ''
+  const additionalFeaturesTraits = raw.additionalFeaturesTraits ?? ''
+  const spellcasting = normalizeSpellcasting(raw.spellcasting)
+
   return {
     ...raw,
     partyTagIds,
@@ -157,6 +268,20 @@ function normalizeCharacter(raw) {
     personalityTraits,
     appearance,
     biography,
+    combat,
+    savingThrows,
+    skills,
+    weapons,
+    currency,
+    attacksSpellcasting,
+    equipment,
+    proficienciesLanguages,
+    featuresAndTraits,
+    alliesOrganizations,
+    factionName,
+    treasure,
+    additionalFeaturesTraits,
+    spellcasting,
   }
 }
 
@@ -182,6 +307,23 @@ function getActiveImageKey(character) {
   if (images.length === 0) return null
   const active = images.find((img) => img.id === character.activeImageId) ?? images[0]
   return characterImageKey(character.id, active.id)
+}
+
+// Wraps children in a 5e.tools reference link when one is available for the value.
+function ReferenceLink({ href, className, children }) {
+  if (!href) return <>{children}</>
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={href}
+      onClick={(e) => e.stopPropagation()}
+      className={`text-violet-700 underline decoration-violet-300 hover:decoration-violet-600 ${className || ''}`}
+    >
+      {children}
+    </a>
+  )
 }
 
 function ColorSwatch({ color }) {
@@ -240,6 +382,8 @@ function CharacterImage({ imageKey, version, className, downloadName, allowDownl
 export default function CharacterPage() {
   const { state, dispatch } = useGachaStore()
   const { showToast } = useToast()
+  const location = useLocation()
+  const navigate = useNavigate()
   const users = state.users ?? []
   const partyTags = state.partyTags ?? []
   const characters = useMemo(
@@ -247,8 +391,14 @@ export default function CharacterPage() {
     [state.characters],
   )
   const campaigns = state.campaigns ?? []
+  const shops = state.shops ?? []
 
   const [tab, setTab] = useState('characters')
+  const prefillCharacter = location.state?.prefillCharacter
+
+  function consumePrefill() {
+    navigate(location.pathname, { replace: true, state: {} })
+  }
 
   const { classes, subclassesByClass } = useMemo(
     () => getClassSubclassOptions(state.boxes),
@@ -256,6 +406,7 @@ export default function CharacterPage() {
   )
   const speciesOptions = useMemo(() => getSpeciesOptions(state.boxes), [state.boxes])
   const backgroundOptions = useMemo(() => getBackgroundOptions(state.boxes), [state.boxes])
+  const referenceLinks = useMemo(() => getReferenceLinks(state.boxes), [state.boxes])
 
   return (
     <div className="w-full p-4 md:p-8">
@@ -292,12 +443,16 @@ export default function CharacterPage() {
           users={users}
           partyTags={partyTags}
           campaigns={campaigns}
+          shops={shops}
           classes={classes}
           subclassesByClass={subclassesByClass}
           speciesOptions={speciesOptions}
           backgroundOptions={backgroundOptions}
+          referenceLinks={referenceLinks}
           dispatch={dispatch}
           showToast={showToast}
+          prefillCharacter={prefillCharacter}
+          onConsumePrefill={consumePrefill}
         />
       )}
     </div>
@@ -680,6 +835,235 @@ function FormSection({ icon, title, hint, children }) {
   )
 }
 
+// modes: [{ key, label, type: 'text' | 'select', options?: string[], placeholder? }]
+function AddItemBar({ modes, onAdd }) {
+  const [activeKey, setActiveKey] = useState(modes[0].key)
+  const [text, setText] = useState('')
+  const [selectValue, setSelectValue] = useState('')
+  const activeMode = modes.find((m) => m.key === activeKey) ?? modes[0]
+
+  function handleAdd() {
+    if (activeMode.type === 'text') {
+      const v = text.trim()
+      if (!v) return
+      onAdd(v)
+      setText('')
+    } else {
+      if (!selectValue) return
+      onAdd(selectValue)
+      setSelectValue('')
+    }
+  }
+
+  return (
+    <div className="space-y-1.5">
+      {modes.length > 1 && (
+        <div className="flex flex-wrap gap-1">
+          {modes.map((m) => (
+            <button
+              key={m.key}
+              type="button"
+              onClick={() => {
+                setActiveKey(m.key)
+                setText('')
+                setSelectValue('')
+              }}
+              className={`rounded-full px-2.5 py-1 text-xs font-medium transition-colors ${
+                activeKey === m.key
+                  ? 'bg-violet-700 text-white'
+                  : 'bg-[#f5ede0] text-stone-600 hover:bg-violet-100'
+              }`}
+            >
+              {m.label}
+            </button>
+          ))}
+        </div>
+      )}
+      <div className="flex items-center gap-1.5">
+        {activeMode.type === 'text' ? (
+          <input
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault()
+                handleAdd()
+              }
+            }}
+            placeholder={activeMode.placeholder || 'พิมพ์ข้อความ...'}
+            className="w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+          />
+        ) : (
+          <SearchSelect
+            options={(activeMode.options || []).map((o) => ({ value: o, label: o }))}
+            value={selectValue}
+            onChange={setSelectValue}
+            placeholder={activeMode.placeholder || 'ค้นหา...'}
+            clearLabel="เปลี่ยน"
+            emptyOptionsLabel="ไม่มีตัวเลือก"
+            className="w-full"
+          />
+        )}
+        <button
+          type="button"
+          onClick={handleAdd}
+          className="shrink-0 rounded-md bg-violet-700 px-3 py-1.5 text-xs font-medium text-white hover:bg-violet-800"
+        >
+          + เพิ่ม
+        </button>
+      </div>
+    </div>
+  )
+}
+
+function ItemListEditor({ items, onChange, modes }) {
+  function updateItem(index, value) {
+    onChange(items.map((it, i) => (i === index ? value : it)))
+  }
+
+  function removeItem(index) {
+    onChange(items.filter((_, i) => i !== index))
+  }
+
+  function addItem(value) {
+    if (!value || !value.trim()) return
+    onChange([...items, value.trim()])
+  }
+
+  return (
+    <div className="space-y-3">
+      <AddItemBar modes={modes} onAdd={addItem} />
+      {items.length > 0 && (
+        <div className="space-y-1.5">
+          {items.map((item, index) => (
+            <div key={index} className="flex items-center gap-1.5">
+              <span className="w-4 shrink-0 text-center text-xs text-stone-400">{index + 1}.</span>
+              <input
+                value={item}
+                onChange={(e) => updateItem(index, e.target.value)}
+                className="w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+              />
+              <button
+                type="button"
+                onClick={() => removeItem(index)}
+                className="shrink-0 rounded-md px-2 py-1.5 text-xs text-red-500 hover:bg-red-50"
+                aria-label="ลบรายการ"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function EquipmentListEditor({ items, onChange, modes }) {
+  function updateItem(index, fields) {
+    onChange(items.map((it, i) => (i === index ? { ...it, ...fields } : it)))
+  }
+
+  function removeItem(index) {
+    onChange(items.filter((_, i) => i !== index))
+  }
+
+  function addItem(value) {
+    if (!value || !value.trim()) return
+    onChange([...items, { name: value.trim(), qty: 1 }])
+  }
+
+  return (
+    <div className="space-y-3">
+      <AddItemBar modes={modes} onAdd={addItem} />
+      {items.length > 0 && (
+        <div className="space-y-1.5">
+          {items.map((item, index) => (
+            <div key={index} className="flex items-center gap-1.5">
+              <span className="w-4 shrink-0 text-center text-xs text-stone-400">{index + 1}.</span>
+              <input
+                value={item.name}
+                onChange={(e) => updateItem(index, { name: e.target.value })}
+                placeholder="ชื่ออุปกรณ์"
+                className="w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+              />
+              <input
+                type="number"
+                min={1}
+                value={item.qty}
+                onChange={(e) => updateItem(index, { qty: Math.max(1, Number(e.target.value) || 1) })}
+                title="จำนวน"
+                className="w-16 shrink-0 rounded-md border border-gray-300 px-2 py-1.5 text-center text-sm focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+              />
+              <button
+                type="button"
+                onClick={() => removeItem(index)}
+                className="shrink-0 rounded-md px-2 py-1.5 text-xs text-red-500 hover:bg-red-50"
+                aria-label="ลบรายการ"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function FeatureListEditor({ items, onChange }) {
+  function updateItem(index, fields) {
+    onChange(items.map((it, i) => (i === index ? { ...it, ...fields } : it)))
+  }
+
+  function removeItem(index) {
+    onChange(items.filter((_, i) => i !== index))
+  }
+
+  function addItem() {
+    onChange([...items, { name: '', description: '' }])
+  }
+
+  return (
+    <div className="space-y-2">
+      {items.map((item, index) => (
+        <div key={index} className="rounded-md border border-[#e2cfb3] bg-white p-2.5">
+          <div className="flex items-center gap-1.5">
+            <input
+              value={item.name}
+              onChange={(e) => updateItem(index, { name: e.target.value })}
+              placeholder="ชื่อ Feature / Trait"
+              className="w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm font-medium focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+            />
+            <button
+              type="button"
+              onClick={() => removeItem(index)}
+              className="shrink-0 rounded-md px-2 py-1.5 text-xs text-red-500 hover:bg-red-50"
+              aria-label="ลบรายการ"
+            >
+              ✕
+            </button>
+          </div>
+          <textarea
+            value={item.description}
+            onChange={(e) => updateItem(index, { description: e.target.value })}
+            placeholder="คำอธิบาย"
+            rows={2}
+            className="mt-1.5 w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300"
+          />
+        </div>
+      ))}
+      <button
+        type="button"
+        onClick={addItem}
+        className="rounded-md border border-dashed border-violet-300 px-3 py-1.5 text-xs font-medium text-violet-700 hover:bg-violet-50"
+      >
+        + เพิ่ม Feature/Trait
+      </button>
+    </div>
+  )
+}
+
 function SearchableMultiSelect({ options, selectedIds, onToggle, emptyLabel, getColor, placeholder = 'ค้นหา...' }) {
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
@@ -778,24 +1162,182 @@ function SearchableMultiSelect({ options, selectedIds, onToggle, emptyLabel, get
   )
 }
 
+function StatsRadarChart({ stats, savingThrows, profBonus }) {
+  const maxVal = Math.max(20, ...STAT_KEYS.map((s) => Number(stats[s.key]) || 0))
+  const cx = 110
+  const cy = 110
+  const r = 70
+  const size = 220
+
+  const levels = [0.25, 0.5, 0.75, 1.0]
+
+  return (
+    <div className="flex justify-center items-center w-full max-w-[240px] aspect-square select-none rounded-lg border border-[#e2cfb3] bg-[#fdfbf8]/80 p-2 shadow-inner">
+      <svg width="100%" height="100%" viewBox={`0 0 ${size} ${size}`} className="overflow-visible">
+        <defs>
+          <radialGradient id="radarGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#78716c" stopOpacity="0.08" />
+            <stop offset="100%" stopColor="#44403c" stopOpacity="0.28" />
+          </radialGradient>
+        </defs>
+
+        {/* Outer and inner concentric hexagons */}
+        {levels.map((level, lIdx) => {
+          const radius = r * level
+          const points = STAT_KEYS.map((_, idx) => {
+            const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+            const x = cx + radius * Math.cos(angle)
+            const y = cy + radius * Math.sin(angle)
+            return `${x},${y}`
+          }).join(' ')
+
+          return (
+            <polygon
+              key={lIdx}
+              points={points}
+              fill="none"
+              stroke={lIdx === levels.length - 1 ? '#e2cfb3' : '#f3e8d7'}
+              strokeWidth={lIdx === levels.length - 1 ? '1.5' : '1'}
+              strokeDasharray={lIdx === levels.length - 1 ? 'none' : '3,3'}
+            />
+          )
+        })}
+
+        {/* Axis line connectors */}
+        {STAT_KEYS.map((_, idx) => {
+          const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+          const x = cx + r * Math.cos(angle)
+          const y = cy + r * Math.sin(angle)
+          return (
+            <line
+              key={idx}
+              x1={cx}
+              y1={cy}
+              x2={x}
+              y2={y}
+              stroke="#f3e8d7"
+              strokeWidth="1"
+              strokeDasharray="2,2"
+            />
+          )
+        })}
+
+        {/* Stats Fill Area */}
+        {(() => {
+          const points = STAT_KEYS.map((s, idx) => {
+            const val = Number(stats[s.key]) || 0
+            const radius = (val / maxVal) * r
+            const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+            const x = cx + radius * Math.cos(angle)
+            const y = cy + radius * Math.sin(angle)
+            return `${x},${y}`
+          }).join(' ')
+
+          return (
+            <polygon
+              points={points}
+              fill="url(#radarGrad)"
+              stroke="#57534e"
+              strokeWidth="2.2"
+              strokeLinejoin="round"
+            />
+          )
+        })()}
+
+        {/* Markers and Labels */}
+        {STAT_KEYS.map((s, idx) => {
+          const val = Number(stats[s.key]) || 0
+          const radius = (val / maxVal) * r
+          const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+          const x = cx + radius * Math.cos(angle)
+          const y = cy + radius * Math.sin(angle)
+
+          // Label placement offsets
+          const labelDist = r + 18
+          const lx = cx + labelDist * Math.cos(angle)
+          const ly = cy + labelDist * Math.sin(angle)
+
+          const labelAnchor = Math.cos(angle) > 0.15 ? 'start' : Math.cos(angle) < -0.15 ? 'end' : 'middle'
+          const isTop = Math.sin(angle) < -0.5
+          const isBottom = Math.sin(angle) > 0.5
+          const labelYOffset = isTop ? -8 : isBottom ? 12 : 2
+
+          const mod = Math.floor((val - 10) / 2)
+          const formattedMod = mod >= 0 ? `+${mod}` : `${mod}`
+
+          const isProf = !!savingThrows?.[s.key]
+          const saveBonus = mod + (isProf ? Number(profBonus) || 0 : 0)
+          const formattedSave = saveBonus >= 0 ? `+${saveBonus}` : `${saveBonus}`
+
+          return (
+            <g key={s.key}>
+              <text
+                x={lx}
+                y={ly + labelYOffset}
+                textAnchor={labelAnchor}
+                className="font-sans text-[10px] font-bold"
+              >
+                <tspan fill="#57534e" className="font-bold tracking-wider">{s.label}</tspan>
+                <tspan x={lx} dy="11" fill="#78716c" className="font-mono text-[9px] font-bold">
+                  {val} ({formattedMod})
+                </tspan>
+                {isProf && (
+                  <tspan x={lx} dy="11" fill="#7c3aed" className="font-mono text-[9px] font-bold">
+                    ({formattedSave})
+                  </tspan>
+                )}
+              </text>
+            </g>
+          )
+        })}
+      </svg>
+    </div>
+  )
+}
+
 function CharacterFormModal({
   initial,
   users,
   partyTags,
   campaigns,
+  shops,
   classes,
   subclassesByClass,
   speciesOptions,
   backgroundOptions,
+  referenceLinks,
   onCancel,
   onSave,
   onDelete,
 }) {
+  const shopItemOptions = useMemo(() => {
+    const names = new Set()
+    const toolNames = new Set()
+    for (const shop of shops ?? []) {
+      for (const item of shop.items ?? []) {
+        if (!item.name) continue
+        names.add(item.name)
+        if (item.category === 'Tools') toolNames.add(item.name)
+      }
+    }
+    return {
+      all: [...names].sort((a, b) => a.localeCompare(b)),
+      tools: [...toolNames].sort((a, b) => a.localeCompare(b)),
+    }
+  }, [shops])
+
   const isEditing = !!initial.name
   const [form, setForm] = useState(initial)
   const fileInputRef = useRef(null)
+  const [activeTab, setActiveTab] = useState(EDIT_TABS[0].key)
+  const editTab = activeTab
+  const setEditTab = setActiveTab
+  const [exportModalOpen, setExportModalOpen] = useState(false)
+  const [statblockItem, setStatblockItem] = useState(null)
 
   const [viewMode, setViewMode] = useState(isEditing)
+  const viewTab = activeTab
+  const setViewTab = setActiveTab
   const [selectedViewImageId, setSelectedViewImageId] = useState(initial.activeImageId || initial.images?.[0]?.id || '')
   const [resetVersion, setResetVersion] = useState(0)
 
@@ -890,6 +1432,169 @@ function CharacterFormModal({
     }))
   }
 
+  function patchCombat(fields) {
+    setForm((prev) => ({ ...prev, combat: { ...prev.combat, ...fields } }))
+  }
+
+  function patchHp(fields) {
+    setForm((prev) => ({ ...prev, combat: { ...prev.combat, hp: { ...prev.combat.hp, ...fields } } }))
+  }
+
+  function patchDeathSaves(fields) {
+    setForm((prev) => ({
+      ...prev,
+      combat: { ...prev.combat, deathSaves: { ...prev.combat.deathSaves, ...fields } },
+    }))
+  }
+
+  function toggleSavingThrow(key) {
+    setForm((prev) => ({
+      ...prev,
+      savingThrows: { ...prev.savingThrows, [key]: !prev.savingThrows[key] },
+    }))
+  }
+
+  function toggleSkillProf(key) {
+    setForm((prev) => {
+      const cur = prev.skills[key]
+      const prof = !cur.prof
+      return {
+        ...prev,
+        skills: { ...prev.skills, [key]: { prof, expertise: prof ? cur.expertise : false } },
+      }
+    })
+  }
+
+  function toggleSkillExpertise(key) {
+    setForm((prev) => {
+      const cur = prev.skills[key]
+      const expertise = !cur.expertise
+      return {
+        ...prev,
+        skills: { ...prev.skills, [key]: { prof: expertise ? true : cur.prof, expertise } },
+      }
+    })
+  }
+
+  function patchAction(index, fields) {
+    setForm((prev) => ({
+      ...prev,
+      weapons: prev.weapons.map((w, i) => (i === index ? { ...w, ...fields } : w)),
+    }))
+  }
+
+  function addAction() {
+    setForm((prev) => ({ ...prev, weapons: [...prev.weapons, blankAction()] }))
+  }
+
+  function removeAction(index) {
+    setForm((prev) => ({ ...prev, weapons: prev.weapons.filter((_, i) => i !== index) }))
+  }
+
+  function patchActionDamage(actionIndex, damageIndex, fields) {
+    setForm((prev) => ({
+      ...prev,
+      weapons: prev.weapons.map((w, i) =>
+        i !== actionIndex
+          ? w
+          : {
+              ...w,
+              damages: w.damages.map((d, di) => (di === damageIndex ? { ...d, ...fields } : d)),
+            },
+      ),
+    }))
+  }
+
+  function addActionDamage(actionIndex) {
+    setForm((prev) => ({
+      ...prev,
+      weapons: prev.weapons.map((w, i) =>
+        i !== actionIndex ? w : { ...w, damages: [...w.damages, blankDamage()] },
+      ),
+    }))
+  }
+
+  function removeActionDamage(actionIndex, damageIndex) {
+    setForm((prev) => ({
+      ...prev,
+      weapons: prev.weapons.map((w, i) =>
+        i !== actionIndex
+          ? w
+          : { ...w, damages: w.damages.filter((_, di) => di !== damageIndex) },
+      ),
+    }))
+  }
+
+  function patchCurrency(fields) {
+    setForm((prev) => ({ ...prev, currency: { ...prev.currency, ...fields } }))
+  }
+
+  function patchSpellcastingMeta(fields) {
+    setForm((prev) => ({
+      ...prev,
+      spellcasting: {
+        ...(prev.spellcasting ?? blankSpellcasting()),
+        ...fields,
+      },
+    }))
+  }
+
+  function patchCantrip(index, name) {
+    setForm((prev) => {
+      const sp = prev.spellcasting ?? blankSpellcasting()
+      const cantrips = [...(sp.cantrips ?? [])]
+      while (cantrips.length <= index) {
+        cantrips.push({ name: '' })
+      }
+      cantrips[index] = { ...cantrips[index], name }
+      return {
+        ...prev,
+        spellcasting: {
+          ...sp,
+          cantrips,
+        },
+      }
+    })
+  }
+
+  function patchSpell(level, index, fields) {
+    setForm((prev) => {
+      const sp = prev.spellcasting ?? blankSpellcasting()
+      const levels = { ...(sp.levels ?? {}) }
+      const lvlData = { ...(levels[level] ?? { slotsTotal: '', slotsRemaining: '', spells: [] }) }
+      const spells = [...(lvlData.spells ?? [])]
+      const count = { 1: 12, 2: 13, 3: 13, 4: 13, 5: 9, 6: 9, 7: 9, 8: 7, 9: 7 }[level] || 10
+      while (spells.length < count) {
+        spells.push({ name: '', prepared: false })
+      }
+      spells[index] = { ...spells[index], ...fields }
+      levels[level] = { ...lvlData, spells }
+      return {
+        ...prev,
+        spellcasting: {
+          ...sp,
+          levels,
+        },
+      }
+    })
+  }
+
+  function patchSpellSlots(level, fields) {
+    setForm((prev) => {
+      const sp = prev.spellcasting ?? blankSpellcasting()
+      const levels = { ...(sp.levels ?? {}) }
+      const lvlData = { ...(levels[level] ?? { slotsTotal: '', slotsRemaining: '', spells: [] }) }
+      levels[level] = { ...lvlData, ...fields }
+      return {
+        ...prev,
+        spellcasting: {
+          ...sp,
+          levels,
+        },
+      }
+    })
+  }
+
   async function handleAddImages(fileList) {
     const files = Array.from(fileList || [])
     if (files.length === 0) return
@@ -951,7 +1656,19 @@ function CharacterFormModal({
       ? gallery.activeImageId
       : images[0]?.id || ''
     
-    const updatedCharacter = { ...form, stats: normalizedStats, images, activeImageId }
+    const updatedCharacter = {
+      ...form,
+      stats: normalizedStats,
+      images,
+      activeImageId,
+      equipment: form.equipment
+        .filter((it) => it.name && it.name.trim())
+        .map((it) => ({ name: it.name.trim(), qty: Math.max(1, Number(it.qty) || 1) })),
+      proficienciesLanguages: form.proficienciesLanguages.filter((it) => it.trim()),
+      featuresAndTraits: form.featuresAndTraits
+        .map((it) => ({ name: it.name.trim(), description: it.description.trim() }))
+        .filter((it) => it.name || it.description),
+    }
     onSave(updatedCharacter, true)
 
     if (isEditing) {
@@ -989,6 +1706,8 @@ function CharacterFormModal({
     const ownerUser = users.find((u) => u.id === form.ownerId)
     const selectedParties = partyTags.filter((t) => form.partyTagIds.includes(t.id))
     const selectedCampaigns = campaigns.filter((c) => form.campaignIds.includes(c.id))
+    const speciesLink = referenceLinks?.speciesLinks?.get(form.species)
+    const backgroundLink = referenceLinks?.backgroundLinks?.get(form.background)
 
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
@@ -1013,11 +1732,48 @@ function CharacterFormModal({
                   </span>
                 )}
                 <span>•</span>
-                <span>Lv.{level} {form.species || 'ไม่ระบุเผ่าพันธุ์'}</span>
+                <span>Lv.{level}</span>
+                {form.classLevels && form.classLevels.length > 0 && form.classLevels.some(cl => cl.className) && (
+                  <>
+                    <span>•</span>
+                    <span className="inline-flex flex-wrap items-center">
+                      {form.classLevels
+                        .filter((cl) => cl.className)
+                        .map((cl, idx) => {
+                          const classLink = referenceLinks?.classLinks?.get(cl.className)
+                          const subclassLink = referenceLinks?.subclassLinks?.get(`${cl.className}::${cl.subclassName}`)
+                          return (
+                            <Fragment key={cl.id || idx}>
+                              {idx > 0 && <span className="mx-1 text-stone-300">/</span>}
+                              <span className="font-semibold text-stone-700">
+                                <ReferenceLink href={classLink}>{cl.className}</ReferenceLink>
+                                {cl.subclassName && (
+                                  <>
+                                    (<ReferenceLink href={subclassLink}>{cl.subclassName}</ReferenceLink>)
+                                  </>
+                                )}
+                                {' '}{cl.level}
+                              </span>
+                            </Fragment>
+                          )
+                        })}
+                    </span>
+                  </>
+                )}
+                <span>•</span>
+                <span>
+                  {form.species ? (
+                    <ReferenceLink href={speciesLink}>{form.species}</ReferenceLink>
+                  ) : (
+                    'ไม่ระบุเผ่าพันธุ์'
+                  )}
+                </span>
                 {form.background && (
                   <>
                     <span>•</span>
-                    <span>ภูมิหลัง: {form.background}</span>
+                    <span>
+                      ภูมิหลัง: <ReferenceLink href={backgroundLink}>{form.background}</ReferenceLink>
+                    </span>
                   </>
                 )}
               </div>
@@ -1032,279 +1788,716 @@ function CharacterFormModal({
             </button>
           </div>
 
-          {/* Body */}
-          <div className="flex-1 overflow-y-auto bg-[#fdfbf7] p-6 space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-              {/* Left Column: Image showcase (5 cols) */}
-              <div className="md:col-span-5 flex flex-col gap-3">
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl border border-[#e2cfb3] bg-[#f5ede0] shadow-inner flex items-center justify-center">
-                  {activePreview ? (
-                    <img src={activePreview} alt={form.name} className="h-full w-full object-cover" />
-                  ) : (
-                    <div className="flex flex-col items-center gap-2 text-stone-300">
-                      <span className="text-4xl">🖼️</span>
-                      <span className="text-xs">ไม่มีรูปภาพ</span>
-                    </div>
-                  )}
-                  <span className="absolute bottom-3 left-3 rounded-lg bg-violet-700 px-2 py-1 text-xs font-bold text-white shadow">
-                    Lv.{level}
-                  </span>
-                </div>
+          {/* View Mode Tabs */}
+          <div className="flex border-b border-[#e2cfb3] bg-white px-4">
+            {EDIT_TABS.map((t) => (
+              <button
+                key={t.key}
+                type="button"
+                onClick={() => setViewTab(t.key)}
+                className={`flex-1 inline-flex items-center justify-center gap-1.5 whitespace-nowrap border-b-2 py-3 text-xs sm:text-sm font-semibold transition-colors ${
+                  viewTab === t.key
+                    ? 'border-violet-600 text-violet-700 bg-violet-50/30'
+                    : 'border-transparent text-stone-500 hover:bg-stone-50/50 hover:text-stone-800'
+                }`}
+              >
+                <span aria-hidden className="leading-none">{t.icon}</span>
+                <span>{t.label}</span>
+              </button>
+            ))}
+          </div>
 
-                {/* Gallery skins list */}
-                {gallery.images.length > 1 && (
-                  <div>
-                    <div className="text-[11px] font-semibold text-stone-400 uppercase tracking-wider mb-1.5">
-                      ร่างตัวละคร ({gallery.images.length})
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {gallery.images.map((img) => {
-                        const isCurrent = img.id === (selectedViewImageId || gallery.activeImageId)
-                        return (
-                          <button
-                            key={img.id}
-                            type="button"
-                            onClick={() => setSelectedViewImageId(img.id)}
-                            className={`group relative w-16 rounded-lg border p-1 transition-all ${
-                              isCurrent
-                                ? 'border-purple-400 bg-violet-50 ring-2 ring-purple-300'
-                                : 'border-[#e2cfb3] bg-white hover:border-purple-300'
-                            }`}
-                          >
-                            <div className="h-12 w-full overflow-hidden rounded bg-[#f5ede0]">
-                              {img.dataUrl ? (
-                                <img src={img.dataUrl} alt="" className="h-full w-full object-cover" />
-                              ) : (
-                                <div className="flex h-full w-full items-center justify-center text-[10px] text-gray-300">
-                                  ...
+          {/* Body */}
+          <div className="flex-1 overflow-y-auto bg-[#fdfbf7] p-6">
+            {viewTab === 'identity' && (
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                {/* Left Column: Image showcase (5 cols) */}
+                <div className="md:col-span-5 flex flex-col gap-3">
+                  <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl border border-[#e2cfb3] bg-[#f5ede0] shadow-inner flex items-center justify-center">
+                    {activePreview ? (
+                      <img src={activePreview} alt={form.name} className="h-full w-full object-cover" />
+                    ) : (
+                      <div className="flex flex-col items-center gap-2 text-stone-300">
+                        <span className="text-4xl">🖼️</span>
+                        <span className="text-xs">ไม่มีรูปภาพ</span>
+                      </div>
+                    )}
+                    <span className="absolute bottom-3 left-3 rounded-lg bg-violet-700 px-2 py-1 text-xs font-bold text-white shadow">
+                      Lv.{level}
+                    </span>
+                  </div>
+
+                  {/* Gallery skins list */}
+                  {gallery.images.length > 1 && (
+                    <div>
+                      <div className="text-[11px] font-semibold text-stone-400 uppercase tracking-wider mb-1.5">
+                        ร่างตัวละคร ({gallery.images.length})
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {gallery.images.map((img) => {
+                          const isCurrent = img.id === (selectedViewImageId || gallery.activeImageId)
+                          return (
+                            <button
+                              key={img.id}
+                              type="button"
+                              onClick={() => setSelectedViewImageId(img.id)}
+                              className={`group relative w-16 rounded-lg border p-1 transition-all ${
+                                isCurrent
+                                  ? 'border-purple-400 bg-violet-50 ring-2 ring-purple-300'
+                                  : 'border-[#e2cfb3] bg-white hover:border-purple-300'
+                              }`}
+                            >
+                              <div className="h-12 w-full overflow-hidden rounded bg-[#f5ede0]">
+                                {img.dataUrl ? (
+                                  <img src={img.dataUrl} alt="" className="h-full w-full object-cover" />
+                                ) : (
+                                  <div className="flex h-full w-full items-center justify-center text-[10px] text-gray-300">
+                                    ...
+                                  </div>
+                                )}
+                              </div>
+                              {img.label && (
+                                <div className="mt-0.5 truncate text-[9px] text-stone-500 text-center leading-tight max-w-full px-0.5">
+                                  {img.label}
                                 </div>
                               )}
-                            </div>
-                            {img.label && (
-                              <div className="mt-0.5 truncate text-[9px] text-stone-500 text-center leading-tight max-w-full px-0.5">
-                                {img.label}
-                              </div>
-                            )}
-                          </button>
+                            </button>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Right Column: Character Details (7 cols) */}
+                <div className="md:col-span-7 space-y-5">
+                  {/* Party & Campaigns */}
+                  {(selectedParties.length > 0 || selectedCampaigns.length > 0) && (
+                    <div className="flex flex-wrap gap-2">
+                      {selectedParties.map((party) => (
+                        <span
+                          key={party.id}
+                          className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold"
+                          style={{
+                            borderColor: party.color || DEFAULT_COLOR,
+                            color: party.color || DEFAULT_COLOR,
+                            backgroundColor: `${party.color || DEFAULT_COLOR}0c`,
+                          }}
+                        >
+                          <span
+                            className="h-2 w-2 rounded-full"
+                            style={{ backgroundColor: party.color || DEFAULT_COLOR }}
+                          />
+                          {party.name}
+                        </span>
+                      ))}
+                      {selectedCampaigns.map((camp) => (
+                        <span
+                          key={camp.id}
+                          className="inline-flex items-center gap-1.5 rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-700"
+                        >
+                          🏰 {camp.name}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Multiclass Details */}
+                  <div className="rounded-lg border border-[#e2cfb3] bg-stone-50/50 p-3.5">
+                    <div className="text-[11px] font-semibold text-stone-400 uppercase tracking-wider mb-2">
+                      คลาสและระดับเลเวล
+                    </div>
+                    <div className="space-y-1.5">
+                      {form.classLevels.map((cl, idx) => {
+                        const classLink = referenceLinks?.classLinks?.get(cl.className)
+                        const subclassLink = referenceLinks?.subclassLinks?.get(
+                          `${cl.className}::${cl.subclassName}`,
+                        )
+                        return (
+                          <div key={cl.id || idx} className="flex items-center justify-between text-sm text-stone-800">
+                            <span className="font-semibold">
+                              {cl.className ? (
+                                <ReferenceLink href={classLink}>{cl.className}</ReferenceLink>
+                              ) : (
+                                '(ไม่มีคลาส)'
+                              )}
+                              {cl.subclassName && (
+                                <span className="ml-1.5 font-normal text-stone-500">
+                                  (<ReferenceLink href={subclassLink}>{cl.subclassName}</ReferenceLink>)
+                                </span>
+                              )}
+                            </span>
+                            <span className="font-mono font-bold text-violet-700 bg-violet-50 border border-violet-100 rounded px-2 py-0.5 text-xs">
+                              Level {cl.level}
+                            </span>
+                          </div>
                         )
                       })}
                     </div>
                   </div>
-                )}
+
+                  {/* Stats Modifier Hexagon Radar Chart & Basic Details */}
+                  <div className="flex flex-col sm:flex-row items-center gap-4">
+                    <div className="shrink-0 flex justify-center w-full sm:w-auto">
+                      <StatsRadarChart
+                        stats={form.stats}
+                        savingThrows={form.savingThrows}
+                        profBonus={proficiencyBonus(level)}
+                      />
+                    </div>
+                    <div className="w-full flex flex-col gap-2">
+                      {[
+                        { label: 'SPECIES', value: form.species, link: speciesLink },
+                        { label: 'BACKGROUND', value: form.background, link: backgroundLink },
+                        { label: 'SIZE', value: form.size },
+                      ].map(
+                        (item) =>
+                          item.value && (
+                            <div
+                              key={item.label}
+                              className="flex flex-col items-center justify-center rounded-lg border border-[#e2cfb3] bg-white p-2.5 text-center shadow-sm w-full min-h-[52px]"
+                            >
+                              <span className="text-[10px] font-bold text-stone-400 uppercase tracking-wider">
+                                {item.label}
+                              </span>
+                              <span className="mt-0.5 text-xs font-semibold text-stone-850 break-words text-center">
+                                {item.link ? (
+                                  <ReferenceLink href={item.link}>{item.value}</ReferenceLink>
+                                ) : (
+                                  item.value
+                                )}
+                              </span>
+                            </div>
+                          ),
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
+            )}
 
-              {/* Right Column: Character Details (7 cols) */}
-              <div className="md:col-span-7 space-y-5">
-                {/* Party & Campaigns */}
-                {(selectedParties.length > 0 || selectedCampaigns.length > 0) && (
-                  <div className="flex flex-wrap gap-2">
-                    {selectedParties.map((party) => (
-                      <span
-                        key={party.id}
-                        className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold"
-                        style={{
-                          borderColor: party.color || DEFAULT_COLOR,
-                          color: party.color || DEFAULT_COLOR,
-                          backgroundColor: `${party.color || DEFAULT_COLOR}0c`,
-                        }}
-                      >
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ backgroundColor: party.color || DEFAULT_COLOR }}
-                        />
-                        {party.name}
-                      </span>
-                    ))}
-                    {selectedCampaigns.map((camp) => (
-                      <span
-                        key={camp.id}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-700"
-                      >
-                        🏰 {camp.name}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                {/* Multiclass Details */}
-                <div className="rounded-lg border border-[#e2cfb3] bg-stone-50/50 p-3.5">
-                  <div className="text-[11px] font-semibold text-stone-400 uppercase tracking-wider mb-2">
-                    คลาสและระดับเลเวล
-                  </div>
-                  <div className="space-y-1.5">
-                    {form.classLevels.map((cl, idx) => (
-                      <div key={cl.id || idx} className="flex items-center justify-between text-sm text-stone-800">
-                        <span className="font-semibold">
-                          {cl.className || '(ไม่มีคลาส)'}
-                          {cl.subclassName && (
-                            <span className="ml-1.5 font-normal text-stone-500">({cl.subclassName})</span>
-                          )}
-                        </span>
-                        <span className="font-mono font-bold text-violet-700 bg-violet-50 border border-violet-100 rounded px-2 py-0.5 text-xs">
-                          Level {cl.level}
-                        </span>
+            {viewTab === 'combat' && (
+              <div className="space-y-6">
+                {/* Combat Stats Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="md:col-span-2 rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
+                    <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5 mb-3">
+                      ❤️ สถานะการต่อสู้ (Combat Stats)
+                    </h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                      <div className="rounded-lg bg-stone-50 border border-stone-150 p-2.5">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase">Armor Class (AC)</div>
+                        <div className="mt-1 font-cinzel text-lg font-bold text-stone-800">{form.combat.ac || 10}</div>
                       </div>
-                    ))}
+                      <div className="rounded-lg bg-stone-50 border border-stone-150 p-2.5">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase">Speed</div>
+                        <div className="mt-1 text-sm font-bold text-stone-800">{form.combat.speed || '-'}</div>
+                      </div>
+                      <div className="rounded-lg bg-stone-50 border border-stone-150 p-2.5">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase">Hit Dice</div>
+                        <div className="mt-1 font-mono text-sm font-bold text-stone-800">{form.combat.hitDice || '-'}</div>
+                      </div>
+                      <div className="rounded-lg bg-stone-50 border border-stone-150 p-2.5">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase">XP</div>
+                        <div className="mt-1 font-mono text-sm font-bold text-stone-800">{form.combat.xp || 0}</div>
+                      </div>
+                    </div>
+
+                    <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
+                      <div className="sm:col-span-2 rounded-lg border border-violet-100 bg-violet-50/50 px-3 py-2 flex items-center justify-between">
+                        <div>
+                          <span className="text-[10px] font-bold text-violet-400 uppercase">Hit Points (HP)</span>
+                          <div className="text-sm font-bold text-stone-800">
+                            {form.combat.hp.current || 0} / {form.combat.hp.max || 0}
+                            {form.combat.hp.temp && <span className="ml-1 text-violet-600 font-semibold">(+{form.combat.hp.temp} Temp)</span>}
+                          </div>
+                        </div>
+                        {/* Visual Health Bar */}
+                        <div className="w-24 bg-stone-200 rounded-full h-2.5 overflow-hidden">
+                          <div
+                            className="bg-violet-600 h-2.5 rounded-full"
+                            style={{
+                              width: `${Math.min(100, Math.max(0, (Number(form.combat.hp.current) / (Number(form.combat.hp.max) || 1)) * 100))}%`
+                            }}
+                          />
+                        </div>
+                      </div>
+
+                      <div className="rounded-lg border border-stone-150 bg-stone-50 px-3 py-2.5 flex items-center justify-between">
+                        <span className="text-[10px] font-bold text-stone-400 uppercase">Inspiration</span>
+                        {form.combat.inspiration ? (
+                          <span className="rounded bg-violet-600 px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider animate-pulse">
+                            Active
+                          </span>
+                        ) : (
+                          <span className="text-[10px] text-stone-400 italic">None</span>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="mt-4 grid grid-cols-3 gap-3 border-t border-stone-100 pt-3 text-center">
+                      <div>
+                        <div className="text-[10px] font-bold text-stone-400 uppercase">Proficiency Bonus</div>
+                        <div className="mt-1 font-mono text-sm font-bold text-violet-700 bg-violet-50 inline-block px-2 py-0.5 rounded border border-violet-100">
+                          {formatMod(proficiencyBonus(level))}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="text-[10px] font-bold text-stone-400 uppercase">Initiative</div>
+                        <div className="mt-1 font-mono text-sm font-bold text-stone-800">
+                          {formatMod(abilityMod(form.stats.dex))}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="text-[10px] font-bold text-stone-400 uppercase">Passive Perception</div>
+                        <div className="mt-1 font-mono text-sm font-bold text-stone-800">
+                          {passivePerception(form, proficiencyBonus(level))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Death Saves card */}
+                  <div className="self-start rounded-xl border border-[#e2cfb3] bg-white p-3.5 shadow-sm">
+                    <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5 mb-2.5">
+                      💀 Death Saves
+                    </h3>
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-semibold text-stone-600">Successes</span>
+                        <div className="flex gap-1.5">
+                          {[1, 2, 3].map((n) => (
+                            <div
+                              key={n}
+                              className={`h-4 w-4 rounded-full border-2 flex items-center justify-center text-[9px] font-bold ${
+                                form.combat.deathSaves.successes >= n
+                                  ? 'bg-emerald-500 border-emerald-500 text-white'
+                                  : 'border-stone-300 bg-stone-100 text-transparent'
+                              }`}
+                            >
+                              ✓
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-semibold text-stone-600">Failures</span>
+                        <div className="flex gap-1.5">
+                          {[1, 2, 3].map((n) => (
+                            <div
+                              key={n}
+                              className={`h-4 w-4 rounded-full border-2 flex items-center justify-center text-[9px] font-bold ${
+                                form.combat.deathSaves.failures >= n
+                                  ? 'bg-red-500 border-red-500 text-white'
+                                  : 'border-stone-300 bg-stone-100 text-transparent'
+                              }`}
+                            >
+                              ✕
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-3.5 flex justify-center border-t border-stone-100 pt-3.5">
+                      <StatsRadarChart
+                        stats={form.stats}
+                        savingThrows={form.savingThrows}
+                        profBonus={proficiencyBonus(level)}
+                      />
+                    </div>
                   </div>
                 </div>
 
-                {/* Stats Modifier Grid */}
-                <div>
-                  <div className="text-[11px] font-semibold text-stone-400 uppercase tracking-wider mb-2">
-                    ค่าพลังสเตตัส
-                  </div>
-                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
-                    {STAT_KEYS.map((s) => {
-                      const val = form.stats[s.key]
-                      const raw = Number(val)
-                      const mod = Math.floor((raw - 10) / 2)
-                      const formatted = mod > 0 ? `+${mod}` : `${mod}`
+                {/* Saving Throws & Skills grouped by ability */}
+                <div className="space-y-3">
+                  <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                    🛡️ Saving Throws &amp; 🎯 ทักษะ (Skills)
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+                    {ABILITY_KEYS.map((key) => {
+                      const isProf = form.savingThrows[key]
+                      const bonus = savingThrowBonus(form, key, proficiencyBonus(level))
+                      const abilitySkills = SKILLS.filter((s) => s.ability === key)
                       return (
-                        <div
-                          key={s.key}
-                          className="flex flex-col items-center justify-center rounded-lg border border-[#e2cfb3] bg-white p-2.5 shadow-sm text-center"
-                        >
-                          <span className="text-[10px] font-bold text-stone-400">{s.label}</span>
-                          <span className="mt-1 font-cinzel text-lg font-bold text-stone-900">
-                            {formatted}
-                          </span>
-                          <span className="mt-0.5 text-[10px] text-stone-400">{raw}</span>
+                        <div key={key} className="rounded-xl border border-[#e2cfb3] bg-white p-3 shadow-sm space-y-2">
+                          <div
+                            className={`flex items-center justify-between rounded-lg border px-3 py-2 text-sm shadow-sm transition-all ${
+                              isProf
+                                ? 'border-violet-300 bg-violet-50/50 font-semibold text-violet-950'
+                                : 'border-stone-200 bg-stone-50 text-stone-700'
+                            }`}
+                          >
+                            <span className="flex items-center gap-1.5 uppercase">
+                              {isProf && <span className="text-violet-600 text-xs">🛡️</span>}
+                              {key} (Save)
+                            </span>
+                            <span className={`font-mono text-xs ${isProf ? 'text-violet-700 font-bold' : 'text-stone-500'}`}>
+                              {formatMod(bonus)}
+                            </span>
+                          </div>
+                          <div className="space-y-1.5">
+                            {abilitySkills.map((s) => {
+                              const state = normalizeSkillState(form.skills[s.key])
+                              const skillBns = skillBonus(form, s, proficiencyBonus(level))
+                              const hasBonus = state.prof || state.expertise
+                              return (
+                                <div
+                                  key={s.key}
+                                  className={`flex items-center justify-between rounded-lg border px-3 py-1.5 text-sm transition-all ${
+                                    hasBonus
+                                      ? 'border-violet-300 bg-violet-50/40 text-violet-950 font-semibold'
+                                      : 'border-stone-200 bg-white text-stone-600'
+                                  }`}
+                                >
+                                  <div className="flex items-center gap-2 truncate">
+                                    {state.expertise && (
+                                      <span className="rounded-full bg-violet-600 text-white text-[9px] px-1 font-bold leading-none py-0.5" title="Expertise">
+                                        E
+                                      </span>
+                                    )}
+                                    {state.prof && !state.expertise && (
+                                      <span className="rounded-full bg-violet-100 text-violet-700 text-[9px] px-1 font-bold leading-none py-0.5 border border-violet-200" title="Proficiency">
+                                        P
+                                      </span>
+                                    )}
+                                    <span className="truncate">{s.label}</span>
+                                  </div>
+                                  <span className={`font-mono text-xs ${hasBonus ? 'text-violet-700 font-bold' : 'text-stone-400'}`}>
+                                    {formatMod(skillBns)}
+                                  </span>
+                                </div>
+                              )
+                            })}
+                          </div>
                         </div>
                       )
                     })}
                   </div>
                 </div>
 
-                {/* Basic Details Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {[
-                    { label: 'Species', value: form.species },
-                    { label: 'Background', value: form.background },
-                    { label: 'Size', value: form.size },
-                    { label: 'Alignment', value: form.alignment },
-                    { label: 'Faith', value: form.faith },
-                    { label: 'Gender', value: form.gender },
-                    { label: 'Age', value: form.age },
-                    { label: 'Height', value: form.height },
-                    { label: 'Weight', value: form.weight },
-                    { label: 'Eyes', value: form.eyes },
-                    { label: 'Hair', value: form.hair },
-                    { label: 'Skin', value: form.skin },
-                  ].map(
-                    (item) =>
-                      item.value && (
-                        <div
-                          key={item.label}
-                          className="rounded-lg border border-stone-200 bg-white p-2.5 shadow-sm"
-                        >
-                          <div className="text-[10px] font-bold text-stone-400 uppercase tracking-wider">
-                            {item.label}
+                {/* Actions / Attack List */}
+                <div className="space-y-3">
+                  <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                    ⚔️ Actions &amp; Weapons
+                  </h3>
+                  {form.weapons.length === 0 ? (
+                    <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-6 text-center text-xs text-stone-400">
+                      ไม่มีรายการ Action หรืออาวุธ
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                      {form.weapons.map((w, idx) => (
+                        <div key={idx} className="rounded-xl border border-[#e2cfb3] bg-white p-3.5 shadow-sm space-y-2">
+                          <div className="flex items-center justify-between border-b border-stone-50 pb-2">
+                            <h4 className="font-semibold text-stone-900 text-sm flex items-center gap-1.5">
+                              ⚔️ {w.name || '(ไม่มีชื่อ)'}
+                            </h4>
+                            {w.bonusOrDC && (
+                              <span className="font-mono text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-100">
+                                {w.bonusOrDC}
+                              </span>
+                            )}
                           </div>
-                          <div className="mt-0.5 text-xs font-semibold text-stone-800 truncate" title={item.value}>
-                            {item.value}
+                          <div className="space-y-1">
+                            {w.damages.map((d, dIdx) => (
+                              <div key={dIdx} className="flex items-center gap-2 text-xs">
+                                <span className="font-mono font-bold text-stone-700">{d.amount || '0'}</span>
+                                {d.type && (
+                                  <span className="rounded-md bg-stone-100 text-stone-600 px-1.5 py-0.5 text-[10px] font-medium border border-stone-200">
+                                    {d.type}
+                                  </span>
+                                )}
+                              </div>
+                            ))}
                           </div>
                         </div>
-                      ),
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Features and Traits */}
+                <div className="space-y-3">
+                  <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                    ✨ Features &amp; Traits (ความสามารถพิเศษ)
+                  </h3>
+                  {form.featuresAndTraits.length === 0 ? (
+                    <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-6 text-center text-xs text-stone-400">
+                      ไม่มีความสามารถพิเศษเฉพาะตัว
+                    </div>
+                  ) : (
+                    <div className="space-y-3">
+                      {form.featuresAndTraits.map((item, index) => (
+                        <div key={index} className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm space-y-1.5">
+                          <h4 className="font-bold text-stone-800 text-sm flex items-center gap-1.5">
+                            ✨ {item.name || '(ไม่มีชื่อ)'}
+                          </h4>
+                          {item.description && (
+                            <p className="text-xs text-stone-600 whitespace-pre-wrap leading-relaxed pl-4 border-l-2 border-violet-100">
+                              {item.description}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
                   )}
                 </div>
               </div>
-            </div>
+            )}
 
-            {/* Bottom details block (Full width details) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Personality / Ideal / Bond / Flaws */}
-              {(form.ideals || form.bonds || form.flaws || form.personalityTraits) && (
-                <div className="space-y-4 rounded-xl border border-[#e2cfb3] bg-white p-4">
-                  <h3 className="font-cinzel text-sm font-bold text-stone-800 border-b border-stone-100 pb-2">
-                    🎭 บุคลิกภาพและค่านิยม (Personality & Values)
+            {viewTab === 'equipment' && (
+              <div className="space-y-6">
+                {/* Currency Grid */}
+                <div className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
+                  <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5 mb-3">
+                    💰 เงินตรา (Currency)
                   </h3>
+                  <div className="grid grid-cols-5 gap-3 text-center">
+                    {[
+                      { key: 'cp', label: 'CP', color: 'bg-amber-600 border-amber-700 text-amber-950', name: 'Copper' },
+                      { key: 'sp', label: 'SP', color: 'bg-stone-300 border-stone-400 text-stone-850', name: 'Silver' },
+                      { key: 'ep', label: 'EP', color: 'bg-teal-600 border-teal-700 text-teal-950', name: 'Electrum' },
+                      { key: 'gp', label: 'GP', color: 'bg-yellow-400 border-yellow-500 text-yellow-950', name: 'Gold' },
+                      { key: 'pp', label: 'PP', color: 'bg-sky-200 border-sky-300 text-sky-950', name: 'Platinum' },
+                    ].map((coin) => (
+                      <div key={coin.key} className="rounded-lg border border-stone-150 bg-stone-50/50 p-2.5 relative overflow-hidden group">
+                        <div className="flex justify-center mb-1">
+                          <div className={`h-5 w-5 rounded-full border flex items-center justify-center text-[9px] font-bold ${coin.color} shadow-sm`}>
+                            {coin.label}
+                          </div>
+                        </div>
+                        <div className="font-mono text-sm font-bold text-stone-800">{form.currency[coin.key] || 0}</div>
+                        <div className="text-[9px] text-stone-400 select-none">{coin.name}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Equipment & Proficiencies/Languages side by side */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Equipment */}
                   <div className="space-y-3">
-                    {form.ideals && (
-                      <div>
-                        <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                          🌱 Ideals
-                        </span>
-                        <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                          {form.ideals}
-                        </p>
+                    <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                      🎒 อุปกรณ์ (Equipment)
+                    </h3>
+                    {form.equipment.length === 0 ? (
+                      <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-6 text-center text-xs text-stone-400">
+                        ไม่มีอุปกรณ์สวมใส่
+                      </div>
+                    ) : (
+                      <div className="rounded-xl border border-stone-200 bg-white p-3.5 shadow-sm">
+                        <ul className="divide-y divide-stone-100">
+                          {form.equipment.map((item, index) => (
+                            <li key={index} className="py-2 text-sm text-stone-700 flex items-center gap-2">
+                              <span className="text-stone-400 text-xs">🎒</span>
+                              <span
+                                role="button"
+                                tabIndex={0}
+                                title="คลิกเพื่อดูรายละเอียดไอเทม"
+                                onClick={() => setStatblockItem({ name: item.name })}
+                                className="cursor-pointer hover:underline hover:decoration-dotted"
+                              >
+                                {item.name}
+                              </span>
+                              {item.qty > 1 && (
+                                <span className="ml-auto shrink-0 rounded bg-stone-100 px-1.5 py-0.5 text-[10px] font-semibold text-stone-500">
+                                  ×{item.qty}
+                                </span>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     )}
-                    {form.bonds && (
-                      <div>
-                        <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                          🔗 Bonds
-                        </span>
-                        <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                          {form.bonds}
-                        </p>
+                  </div>
+
+                  {/* Proficiencies & Languages */}
+                  <div className="space-y-3">
+                    <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                      🗣️ Proficiencies &amp; Languages
+                    </h3>
+                    {form.proficienciesLanguages.length === 0 ? (
+                      <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-6 text-center text-xs text-stone-400">
+                        ไม่มีข้อมูลทักษะและภาษา
                       </div>
-                    )}
-                    {form.flaws && (
-                      <div>
-                        <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                          💔 Flaws
-                        </span>
-                        <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                          {form.flaws}
-                        </p>
-                      </div>
-                    )}
-                    {form.personalityTraits && (
-                      <div>
-                        <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                          🧩 Personality Traits
-                        </span>
-                        <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                          {form.personalityTraits}
-                        </p>
+                    ) : (
+                      <div className="rounded-xl border border-stone-200 bg-white p-3.5 shadow-sm">
+                        <ul className="divide-y divide-stone-100">
+                          {form.proficienciesLanguages.map((item, index) => (
+                            <li key={index} className="py-2 text-sm text-stone-700 flex items-center gap-2">
+                              <span className="text-stone-400 text-xs">🗣️</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     )}
                   </div>
                 </div>
-              )}
-
-              {/* Appearance & Biography */}
-              {(form.appearance || form.biography) && (
-                <div className="space-y-4 rounded-xl border border-[#e2cfb3] bg-white p-4">
-                  <h3 className="font-cinzel text-sm font-bold text-stone-800 border-b border-stone-100 pb-2">
-                    📜 รูปลักษณ์และประวัติ (Appearance & Bio)
-                  </h3>
-                  <div className="space-y-3">
-                    {form.appearance && (
-                      <div>
-                        <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                          👤 Appearance
-                        </span>
-                        <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                          {form.appearance}
-                        </p>
-                      </div>
-                    )}
-                    {form.biography && (
-                      <div>
-                        <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                          🏺 Biography
-                        </span>
-                        <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                          {form.biography}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Note Section */}
-            {form.note && (
-              <div className="rounded-xl border border-[#e2cfb3] bg-stone-50/50 p-4">
-                <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
-                  📝 หมายเหตุ (Notes)
-                </span>
-                <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
-                  {form.note}
-                </p>
               </div>
+            )}
+
+            {viewTab === 'personality' && (
+              <div className="space-y-6">
+                {/* Character Details Grid */}
+                <div className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
+                  <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5 mb-3">
+                    🎭 ข้อมูลลักษณะ (Character Details)
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {[
+                      { label: 'Alignment', value: form.alignment },
+                      { label: 'Faith', value: form.faith },
+                      { label: 'Gender', value: form.gender },
+                      { label: 'Age', value: form.age },
+                      { label: 'Height', value: form.height },
+                      { label: 'Weight', value: form.weight },
+                      { label: 'Eyes', value: form.eyes },
+                      { label: 'Hair', value: form.hair },
+                      { label: 'Skin', value: form.skin },
+                    ].map((item) => (
+                      <div key={item.label} className="rounded-lg border border-stone-150 bg-stone-50 p-2.5">
+                        <div className="text-[10px] font-bold text-stone-400 uppercase tracking-wider">{item.label}</div>
+                        <div className="mt-0.5 text-xs font-semibold text-stone-800 break-words">{item.value || '-'}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Personality Values & Traits */}
+                {(form.ideals || form.bonds || form.flaws || form.personalityTraits || form.appearance) && (
+                  <div className="space-y-4 rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
+                    <h3 className="font-cinzel text-sm font-bold text-stone-800 border-b border-stone-100 pb-2 flex items-center gap-1.5">
+                      🎭 บุคลิกภาพและค่านิยม (Personality &amp; Values)
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-3">
+                        {form.ideals && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-xs font-bold text-stone-500 uppercase flex items-center gap-1">
+                              🌱 Ideals
+                            </span>
+                            <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                              {form.ideals}
+                            </p>
+                          </div>
+                        )}
+                        {form.bonds && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-xs font-bold text-stone-500 uppercase flex items-center gap-1">
+                              🔗 Bonds
+                            </span>
+                            <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                              {form.bonds}
+                            </p>
+                          </div>
+                        )}
+                        {form.flaws && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-xs font-bold text-stone-500 uppercase flex items-center gap-1">
+                              💔 Flaws
+                            </span>
+                            <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                              {form.flaws}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                      <div className="space-y-3">
+                        {form.personalityTraits && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-xs font-bold text-stone-500 uppercase flex items-center gap-1">
+                              🧩 Personality Traits
+                            </span>
+                            <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                              {form.personalityTraits}
+                            </p>
+                          </div>
+                        )}
+                        {form.appearance && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-xs font-bold text-stone-500 uppercase flex items-center gap-1">
+                              👤 Appearance
+                            </span>
+                            <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                              {form.appearance}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Biography */}
+                {form.biography && (
+                  <div className="space-y-3 rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
+                    <h3 className="font-cinzel text-sm font-bold text-stone-800 border-b border-stone-100 pb-2 flex items-center gap-1.5">
+                      🏺 ประวัติ (Biography)
+                    </h3>
+                    <div className="pt-1">
+                      <p className="text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                        {form.biography}
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Allies & Organizations */}
+                {(form.factionName || form.treasure || form.alliesOrganizations || form.additionalFeaturesTraits) && (
+                  <div className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm space-y-4">
+                    <h3 className="text-sm font-bold text-stone-800 border-b border-stone-100 pb-2 flex items-center gap-1.5">
+                      🏰 พันธมิตรและองค์กร (Allies &amp; Factions)
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-3">
+                        {form.factionName && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-[10px] font-bold text-stone-400 uppercase">Faction Name</span>
+                            <div className="text-xs font-semibold text-stone-800 mt-0.5">{form.factionName}</div>
+                          </div>
+                        )}
+                        {form.alliesOrganizations && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-[10px] font-bold text-stone-400 uppercase">Allies &amp; Organizations</span>
+                            <p className="text-xs text-stone-700 mt-1 whitespace-pre-wrap leading-relaxed">{form.alliesOrganizations}</p>
+                          </div>
+                        )}
+                      </div>
+                      <div className="space-y-3">
+                        {form.treasure && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-[10px] font-bold text-stone-400 uppercase">Treasure</span>
+                            <div className="text-xs font-semibold text-stone-800 mt-0.5">{form.treasure}</div>
+                          </div>
+                        )}
+                        {form.additionalFeaturesTraits && (
+                          <div className="rounded-lg bg-stone-50/50 p-2.5 border border-stone-100">
+                            <span className="text-[10px] font-bold text-stone-400 uppercase">Additional Features &amp; Traits</span>
+                            <p className="text-xs text-stone-700 mt-1 whitespace-pre-wrap leading-relaxed">{form.additionalFeaturesTraits}</p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Note Section */}
+                {form.note && (
+                  <div className="rounded-xl border border-[#e2cfb3] bg-stone-50/50 p-4 shadow-sm">
+                    <span className="text-xs font-bold text-stone-400 uppercase flex items-center gap-1">
+                      📝 หมายเหตุ (Notes)
+                    </span>
+                    <p className="mt-1 text-xs text-stone-700 whitespace-pre-wrap leading-relaxed">
+                      {form.note}
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {viewTab === 'spells' && (
+              <SpellsTabView character={form} />
             )}
           </div>
 
@@ -1317,15 +2510,28 @@ function CharacterFormModal({
             >
               ปิด
             </button>
-            <button
-              type="button"
-              onClick={() => setViewMode(false)}
-              className="inline-flex items-center gap-1.5 rounded-lg bg-violet-700 px-5 py-2 text-sm font-medium text-white shadow-sm hover:bg-violet-800"
-            >
-              ✏️ แก้ไข
-            </button>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => setExportModalOpen(true)}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-medium text-violet-700 shadow-sm hover:bg-violet-100"
+              >
+                📄 Export PDF
+              </button>
+              <button
+                type="button"
+                onClick={() => setViewMode(false)}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-violet-700 px-5 py-2 text-sm font-medium text-white shadow-sm hover:bg-violet-800"
+              >
+                ✏️ แก้ไข
+              </button>
+            </div>
           </div>
         </div>
+        {exportModalOpen && (
+          <ExportPdfModal character={form} onClose={() => setExportModalOpen(false)} />
+        )}
+        <ItemStatblockModal item={statblockItem} onClose={() => setStatblockItem(null)} />
       </div>
     )
   }
@@ -1335,7 +2541,7 @@ function CharacterFormModal({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
       <div
-        className="flex max-h-[92vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
+        className="flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-[#e2cfb3] px-5 py-4">
@@ -1345,17 +2551,48 @@ function CharacterFormModal({
             </h2>
             <p className="text-xs text-stone-400">บันทึกข้อมูลตัวละคร D&amp;D อย่างครบถ้วน</p>
           </div>
-          <button
-            type="button"
-            onClick={handleCancel}
-            className="rounded-md p-1.5 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600"
-            aria-label="ปิด"
-          >
-            ✕
-          </button>
+          <div className="flex items-center gap-2">
+            {isEditing && (
+              <button
+                type="button"
+                onClick={() => setExportModalOpen(true)}
+                className="inline-flex items-center gap-1.5 rounded-md border border-violet-200 bg-violet-50 px-3 py-1.5 text-xs font-medium text-violet-700 hover:bg-violet-100"
+              >
+                📄 Export PDF
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={handleCancel}
+              className="rounded-md p-1.5 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600"
+              aria-label="ปิด"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+
+        <div className="flex border-b border-[#e2cfb3] bg-white px-4">
+          {EDIT_TABS.map((t) => (
+            <button
+              key={t.key}
+              type="button"
+              onClick={() => setEditTab(t.key)}
+              className={`flex-1 inline-flex items-center justify-center gap-1.5 whitespace-nowrap border-b-2 py-3 text-xs sm:text-sm font-semibold transition-colors ${
+                editTab === t.key
+                  ? 'border-violet-600 text-violet-700 bg-violet-50/30'
+                  : 'border-transparent text-stone-500 hover:bg-stone-50/50 hover:text-stone-800'
+              }`}
+            >
+              <span aria-hidden className="leading-none">{t.icon}</span>
+              <span>{t.label}</span>
+            </button>
+          ))}
         </div>
 
         <div className="flex-1 space-y-4 overflow-y-auto bg-[#f5ede0] px-5 py-4">
+        {editTab === 'identity' && (
+        <>
           <FormSection icon="🖼️" title="ภาพตัวละคร" hint="อัปโหลดได้หลายรูป เลือกรูปหลักที่จะแสดง">
             <div className="flex flex-col gap-3 sm:flex-row">
               <div className="h-36 w-36 shrink-0 overflow-hidden rounded-md border border-[#e2cfb3] bg-[#f5ede0]">
@@ -1480,80 +2717,55 @@ function CharacterFormModal({
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Owner (User)</label>
-                <select
+                <SearchSelect
+                  options={users.map((u) => ({ value: u.id, label: u.username || '(ไม่มีชื่อ)' }))}
                   value={form.ownerId}
-                  onChange={(e) => patch({ ownerId: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  <option value="">-</option>
-                  {users.map((u) => (
-                    <option key={u.id} value={u.id}>
-                      {u.username || '(ไม่มีชื่อ)'}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ ownerId: v })}
+                  placeholder="-"
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Status</label>
-                <select
+                <SearchSelect
+                  options={STATUS_OPTIONS.map((s) => ({ value: s, label: s }))}
                   value={form.status}
-                  onChange={(e) => patch({ status: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  {STATUS_OPTIONS.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ status: v })}
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Size</label>
-                <select
+                <SearchSelect
+                  options={SIZE_OPTIONS.map((s) => ({ value: s, label: s }))}
                   value={form.size}
-                  onChange={(e) => patch({ size: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  {SIZE_OPTIONS.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ size: v })}
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Species</label>
-                <select
+                <SearchSelect
+                  options={speciesOptions.map((s) => ({ value: s, label: s }))}
                   value={form.species}
-                  onChange={(e) => patch({ species: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  <option value="">-</option>
-                  {speciesOptions.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ species: v })}
+                  placeholder="-"
+                  clearLabel="เปลี่ยน"
+                />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs text-stone-500">Background</label>
-                <select
+                <SearchSelect
+                  options={backgroundOptions.map((b) => ({ value: b, label: b }))}
                   value={form.background}
-                  onChange={(e) => patch({ background: e.target.value })}
-                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                >
-                  <option value="">-</option>
-                  {backgroundOptions.map((b) => (
-                    <option key={b} value={b}>
-                      {b}
-                    </option>
-                  ))}
-                </select>
+                  onChange={(v) => patch({ background: v })}
+                  placeholder="-"
+                  clearLabel="เปลี่ยน"
+                />
               </div>
             </div>
           </FormSection>
@@ -1592,36 +2804,24 @@ function CharacterFormModal({
                     <div className="w-6 pb-1.5 text-center text-xs text-stone-400">{index + 1}</div>
                     <div className="min-w-[140px] flex-1">
                       <label className="mb-1 block text-[11px] text-stone-500">Class</label>
-                      <select
+                      <SearchSelect
+                        options={classes.map((c) => ({ value: c, label: c }))}
                         value={cl.className}
-                        onChange={(e) =>
-                          updateClassLevel(cl.id, { className: e.target.value, subclassName: '' })
-                        }
-                        className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
-                      >
-                        <option value="">-</option>
-                        {classes.map((c) => (
-                          <option key={c} value={c}>
-                            {c}
-                          </option>
-                        ))}
-                      </select>
+                        onChange={(v) => updateClassLevel(cl.id, { className: v, subclassName: '' })}
+                        placeholder="-"
+                        clearLabel="เปลี่ยน"
+                      />
                     </div>
                     <div className="min-w-[140px] flex-1">
                       <label className="mb-1 block text-[11px] text-stone-500">Subclass</label>
-                      <select
+                      <SearchSelect
+                        options={availableSubclasses.map((s) => ({ value: s, label: s }))}
                         value={cl.subclassName}
-                        onChange={(e) => updateClassLevel(cl.id, { subclassName: e.target.value })}
+                        onChange={(v) => updateClassLevel(cl.id, { subclassName: v })}
                         disabled={!cl.className}
-                        className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm disabled:bg-[#f5ede0] disabled:text-stone-400"
-                      >
-                        <option value="">-</option>
-                        {availableSubclasses.map((s) => (
-                          <option key={s} value={s}>
-                            {s}
-                          </option>
-                        ))}
-                      </select>
+                        placeholder="-"
+                        clearLabel="เปลี่ยน"
+                      />
                     </div>
                     <div className="w-20">
                       <label className="mb-1 block text-[11px] text-stone-500">Level</label>
@@ -1663,7 +2863,379 @@ function CharacterFormModal({
               </span>
             </div>
           </FormSection>
+        </>
+        )}
 
+        {editTab === 'combat' && (
+        <>
+          <FormSection icon="❤️" title="สถานะการต่อสู้ (Combat Stats)">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">Armor Class (AC)</label>
+                <input
+                  value={form.combat.ac}
+                  onChange={(e) => patchCombat({ ac: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">Speed</label>
+                <input
+                  value={form.combat.speed}
+                  onChange={(e) => patchCombat({ speed: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                  placeholder="เช่น 30 ft."
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">Hit Dice</label>
+                <input
+                  value={form.combat.hitDice}
+                  onChange={(e) => patchCombat({ hitDice: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                  placeholder="เช่น 5d10"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">XP</label>
+                <input
+                  value={form.combat.xp}
+                  onChange={(e) => patchCombat({ xp: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">HP สูงสุด</label>
+                <input
+                  value={form.combat.hp.max}
+                  onChange={(e) => patchHp({ max: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">HP ปัจจุบัน</label>
+                <input
+                  value={form.combat.hp.current}
+                  onChange={(e) => patchHp({ current: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">HP ชั่วคราว</label>
+                <input
+                  value={form.combat.hp.temp}
+                  onChange={(e) => patchHp({ temp: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </div>
+              <div className="flex items-end pb-1.5">
+                <label className="flex items-center gap-1.5 text-xs text-stone-600">
+                  <input
+                    type="checkbox"
+                    checked={form.combat.inspiration}
+                    onChange={(e) => patchCombat({ inspiration: e.target.checked })}
+                  />
+                  Inspiration
+                </label>
+              </div>
+            </div>
+
+            <div className="mt-3 grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <div>
+                <div className="mb-1 text-xs text-stone-500">Proficiency Bonus</div>
+                <div className="font-mono text-sm font-semibold text-stone-800">
+                  {formatMod(proficiencyBonus(level))}
+                </div>
+              </div>
+              <div>
+                <div className="mb-1 text-xs text-stone-500">Initiative</div>
+                <div className="font-mono text-sm font-semibold text-stone-800">
+                  {formatMod(abilityMod(form.stats.dex))}
+                </div>
+              </div>
+              <div>
+                <div className="mb-1 text-xs text-stone-500">Passive Perception</div>
+                <div className="font-mono text-sm font-semibold text-stone-800">
+                  {passivePerception(form, proficiencyBonus(level))}
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-3">
+              <div className="mb-1.5 text-xs text-stone-500">Death Saves</div>
+              <div className="flex flex-wrap items-center gap-4">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-xs text-stone-500">Successes</span>
+                  {[1, 2, 3].map((n) => (
+                    <label key={n} className="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        checked={form.combat.deathSaves.successes >= n}
+                        onChange={() =>
+                          patchDeathSaves({
+                            successes: form.combat.deathSaves.successes >= n ? n - 1 : n,
+                          })
+                        }
+                      />
+                    </label>
+                  ))}
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-xs text-stone-500">Failures</span>
+                  {[1, 2, 3].map((n) => (
+                    <label key={n} className="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        checked={form.combat.deathSaves.failures >= n}
+                        onChange={() =>
+                          patchDeathSaves({
+                            failures: form.combat.deathSaves.failures >= n ? n - 1 : n,
+                          })
+                        }
+                      />
+                    </label>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </FormSection>
+
+          <FormSection icon="🛡️" title="Saving Throws" hint="ติ๊กเมื่อมี proficiency">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+              {ABILITY_KEYS.map((key) => (
+                <label
+                  key={key}
+                  className="flex items-center justify-between gap-2 rounded-md border border-[#e2cfb3] bg-white px-2.5 py-1.5 text-sm"
+                >
+                  <span className="flex items-center gap-1.5">
+                    <input
+                      type="checkbox"
+                      checked={form.savingThrows[key]}
+                      onChange={() => toggleSavingThrow(key)}
+                    />
+                    <span className="uppercase text-stone-700">{key}</span>
+                  </span>
+                  <span className="font-mono text-xs text-stone-500">
+                    {formatMod(savingThrowBonus(form, key, proficiencyBonus(level)))}
+                  </span>
+                </label>
+              ))}
+            </div>
+          </FormSection>
+
+          <FormSection
+            icon="🎯"
+            title="ทักษะ (Skills)"
+            hint="P = Proficiency, E = Expertise (โบนัส x2, ตามกฎ D&D ต้องมี Proficiency ก่อน)"
+          >
+            <div className="mb-1.5 hidden items-center gap-2 px-2.5 text-[10px] uppercase text-stone-400 sm:flex">
+              <span className="flex-1">Skill</span>
+              <span className="w-6 text-center">P</span>
+              <span className="w-6 text-center">E</span>
+              <span className="w-8 text-right">Mod</span>
+            </div>
+            <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
+              {SKILLS.map((s) => {
+                const state = normalizeSkillState(form.skills[s.key])
+                return (
+                  <div
+                    key={s.key}
+                    className="flex items-center justify-between gap-2 rounded-md border border-[#e2cfb3] bg-white px-2.5 py-1.5 text-sm"
+                  >
+                    <span className="flex min-w-0 flex-1 items-center gap-1.5">
+                      <span className="truncate text-stone-700">{s.label}</span>
+                      <span className="shrink-0 text-[10px] uppercase text-stone-400">
+                        ({s.ability})
+                      </span>
+                    </span>
+                    <span className="flex shrink-0 items-center gap-2">
+                      <label
+                        title="Proficiency"
+                        className="flex w-6 cursor-pointer items-center justify-center"
+                      >
+                        <input
+                          type="checkbox"
+                          checked={state.prof}
+                          onChange={() => toggleSkillProf(s.key)}
+                        />
+                      </label>
+                      <label
+                        title="Expertise"
+                        className="flex w-6 cursor-pointer items-center justify-center"
+                      >
+                        <input
+                          type="checkbox"
+                          checked={state.expertise}
+                          onChange={() => toggleSkillExpertise(s.key)}
+                        />
+                      </label>
+                      <span className="w-8 text-right font-mono text-xs text-stone-500">
+                        {formatMod(skillBonus(form, s, proficiencyBonus(level)))}
+                      </span>
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+          </FormSection>
+
+          <FormSection icon="⚔️" title="Action" hint="เพิ่ม/ลบ Action และดาเมจได้ตามต้องการ">
+            <div className="space-y-2.5">
+              {form.weapons.map((action, index) => (
+                <div key={index} className="rounded-lg border border-[#e2cfb3] bg-[#fffaf0] p-2.5">
+                  <div className="flex items-start gap-2">
+                    <div className="min-w-0 flex-1 space-y-1.5">
+                      <div className="flex gap-2">
+                        <input
+                          value={action.name}
+                          onChange={(e) => patchAction(index, { name: e.target.value })}
+                          placeholder="Action (เช่น ดาบยาว, Fire Bolt, Breath Weapon...)"
+                          className="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-1.5 text-sm font-medium"
+                        />
+                        <input
+                          value={action.bonusOrDC}
+                          onChange={(e) => patchAction(index, { bonusOrDC: e.target.value })}
+                          placeholder="Bonus / DC (เช่น +7, DC 15)"
+                          className="w-32 sm:w-44 shrink-0 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                        />
+                      </div>
+                      <div className="space-y-1.5 pt-0.5">
+                        {action.damages.map((d, dIndex) => (
+                          <div key={dIndex} className="flex items-center gap-1.5">
+                            <input
+                              value={d.amount}
+                              onChange={(e) =>
+                                patchActionDamage(index, dIndex, { amount: e.target.value })
+                              }
+                              placeholder="ดาเมจ เช่น 1d8 + 3"
+                              className="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                            />
+                            <select
+                              value={d.type}
+                              onChange={(e) =>
+                                patchActionDamage(index, dIndex, { type: e.target.value })
+                              }
+                              className="shrink-0 rounded-md border border-gray-300 px-2 py-1.5 text-sm text-stone-600"
+                            >
+                              <option value="">ชนิดดาเมจ...</option>
+                              {DAMAGE_TYPES.map((t) => (
+                                <option key={t} value={t}>
+                                  {t}
+                                </option>
+                              ))}
+                            </select>
+                            <button
+                              type="button"
+                              onClick={() => removeActionDamage(index, dIndex)}
+                              disabled={action.damages.length <= 1}
+                              title="ลบดาเมจนี้"
+                              className="shrink-0 rounded-md px-1.5 py-1 text-stone-400 hover:text-red-600 disabled:cursor-not-allowed disabled:opacity-30"
+                            >
+                              ✕
+                            </button>
+                          </div>
+                        ))}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => addActionDamage(index)}
+                        className="text-xs font-medium text-amber-700 hover:text-amber-900"
+                      >
+                        + เพิ่มดาเมจ
+                      </button>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => removeAction(index)}
+                      title="ลบ Action นี้"
+                      className="shrink-0 rounded-md px-1.5 py-1 text-stone-400 hover:text-red-600"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <button
+              type="button"
+              onClick={addAction}
+              className="mt-2.5 rounded-md border border-dashed border-amber-400 px-3 py-1.5 text-xs font-medium text-amber-700 hover:bg-amber-50"
+            >
+              + เพิ่ม Action
+            </button>
+          </FormSection>
+
+          <FormSection icon="✨" title="Features and Traits" hint="ใส่ชื่อพร้อมคำอธิบายทีละรายการ">
+            <FeatureListEditor
+              items={form.featuresAndTraits}
+              onChange={(items) => patch({ featuresAndTraits: items })}
+            />
+          </FormSection>
+        </>
+        )}
+
+        {editTab === 'equipment' && (
+        <>
+          <FormSection icon="💰" title="เงินตรา (Currency)">
+            <div className="grid grid-cols-5 gap-2">
+              {['cp', 'sp', 'ep', 'gp', 'pp'].map((key) => (
+                <div key={key}>
+                  <label className="mb-1 block text-center text-xs uppercase text-stone-500">{key}</label>
+                  <input
+                    value={form.currency[key]}
+                    onChange={(e) => patchCurrency({ [key]: e.target.value })}
+                    className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-center text-sm"
+                  />
+                </div>
+              ))}
+            </div>
+          </FormSection>
+
+          <FormSection icon="🎒" title="อุปกรณ์ (Equipment)" hint="กำหนดเองหรือเลือกจากร้านค้า">
+            <EquipmentListEditor
+              items={form.equipment}
+              onChange={(items) => patch({ equipment: items })}
+              modes={[
+                { key: 'custom', label: 'กำหนดเอง', type: 'text', placeholder: 'เช่น ดาบยาว, เกราะโซ่...' },
+                {
+                  key: 'shop',
+                  label: 'จากร้านค้า',
+                  type: 'select',
+                  options: shopItemOptions.all,
+                  placeholder: 'ค้นหาไอเทมในร้านค้า...',
+                },
+              ]}
+            />
+          </FormSection>
+
+          <FormSection icon="🗣️" title="Proficiencies &amp; Languages" hint="กำหนดเอง, จากร้านค้า หรือภาษาตามกฎ D&amp;D">
+            <ItemListEditor
+              items={form.proficienciesLanguages}
+              onChange={(items) => patch({ proficienciesLanguages: items })}
+              modes={[
+                { key: 'custom', label: 'กำหนดเอง', type: 'text', placeholder: "เช่น Smith's Tools..." },
+                {
+                  key: 'shop',
+                  label: 'จากร้านค้า',
+                  type: 'select',
+                  options: shopItemOptions.tools,
+                  placeholder: 'ค้นหาเครื่องมือ/ทูลในร้านค้า...',
+                },
+                {
+                  key: 'language',
+                  label: 'ภาษา D&D',
+                  type: 'select',
+                  options: DND_LANGUAGES,
+                  placeholder: 'เลือกภาษา...',
+                },
+              ]}
+            />
+          </FormSection>
+        </>
+        )}
+
+        {editTab === 'personality' && (
+        <>
           <FormSection icon="🎭" title="ข้อมูลลักษณะ (Character Details)">
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {/* Column 1 */}
@@ -1847,6 +3419,45 @@ function CharacterFormModal({
             </div>
           </FormSection>
 
+          <FormSection icon="🏰" title="พันธมิตรและองค์กร (Allies &amp; Factions)">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">Faction Name</label>
+                <input
+                  value={form.factionName}
+                  onChange={(e) => patch({ factionName: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-stone-500">Treasure</label>
+                <input
+                  value={form.treasure}
+                  onChange={(e) => patch({ treasure: e.target.value })}
+                  className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </div>
+            </div>
+            <div className="mt-3">
+              <label className="mb-1 block text-xs text-stone-500">Allies &amp; Organizations</label>
+              <textarea
+                value={form.alliesOrganizations}
+                onChange={(e) => patch({ alliesOrganizations: e.target.value })}
+                rows={3}
+                className="w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm"
+              />
+            </div>
+            <div className="mt-3">
+              <label className="mb-1 block text-xs text-stone-500">Additional Features &amp; Traits</label>
+              <textarea
+                value={form.additionalFeaturesTraits}
+                onChange={(e) => patch({ additionalFeaturesTraits: e.target.value })}
+                rows={3}
+                className="w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm"
+              />
+            </div>
+          </FormSection>
+
           <FormSection icon="📝" title="หมายเหตุ">
             <textarea
               value={form.note}
@@ -1855,6 +3466,19 @@ function CharacterFormModal({
               className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm"
             />
           </FormSection>
+        </>
+        )}
+
+        {editTab === 'spells' && (
+          <SpellsTabEdit
+            form={form}
+            classes={classes}
+            patchSpellcastingMeta={patchSpellcastingMeta}
+            patchCantrip={patchCantrip}
+            patchSpell={patchSpell}
+            patchSpellSlots={patchSpellSlots}
+          />
+        )}
         </div>
 
         <div className="flex items-center justify-between border-t border-[#e2cfb3] px-5 py-3">
@@ -1888,6 +3512,10 @@ function CharacterFormModal({
           </div>
         </div>
       </div>
+
+      {exportModalOpen && (
+        <ExportPdfModal character={form} onClose={() => setExportModalOpen(false)} />
+      )}
     </div>
   )
 }
@@ -1897,16 +3525,27 @@ function CharactersTab({
   users,
   partyTags,
   campaigns,
+  shops,
   classes,
   subclassesByClass,
   speciesOptions,
   backgroundOptions,
+  referenceLinks,
   dispatch,
   showToast,
+  prefillCharacter,
+  onConsumePrefill,
 }) {
   const [editingCharacter, setEditingCharacter] = useState(null)
   const [deleteTarget, setDeleteTarget] = useState(null)
   const [imageVersions, setImageVersions] = useState({})
+
+  useEffect(() => {
+    if (!prefillCharacter) return
+    setEditingCharacter({ ...blankCharacter(), ...prefillCharacter })
+    onConsumePrefill()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [prefillCharacter])
 
   const [search, setSearch] = useState('')
   const [filterStatus, setFilterStatus] = useState('')
@@ -1956,10 +3595,16 @@ function CharactersTab({
     const filtered = characters.filter((character) => {
       if (q && !character.name?.toLowerCase().includes(q)) return false
       if (filterStatus && character.status !== filterStatus) return false
-      if (filterUserId && character.ownerId !== filterUserId) return false
-      if (filterPartyId && !(character.partyTagIds ?? []).includes(filterPartyId)) return false
+      if (filterUserId === NO_USER_FILTER) {
+        if (character.ownerId) return false
+      } else if (filterUserId && character.ownerId !== filterUserId) return false
+      if (filterPartyId === NO_PARTY_FILTER) {
+        if ((character.partyTagIds ?? []).length > 0) return false
+      } else if (filterPartyId && !(character.partyTagIds ?? []).includes(filterPartyId)) return false
       if (filterClass && !(character.classLevels ?? []).some((cl) => cl.className === filterClass)) return false
-      if (filterCampaignId && !(character.campaignIds ?? []).includes(filterCampaignId)) return false
+      if (filterCampaignId === NO_CAMPAIGN_FILTER) {
+        if ((character.campaignIds ?? []).length > 0) return false
+      } else if (filterCampaignId && !(character.campaignIds ?? []).includes(filterCampaignId)) return false
       return true
     })
     return [...filtered].sort((a, b) => {
@@ -2038,7 +3683,7 @@ function CharactersTab({
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
+              className="w-36 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-sm"
             >
               {SORT_OPTIONS.map((opt) => (
                 <option key={opt.key} value={opt.key}>
@@ -2053,84 +3698,76 @@ function CharactersTab({
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="ค้นหาชื่อตัวละคร"
-              className="w-48 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-900 placeholder-stone-400 focus:border-violet-400 focus:outline-none"
+              className="w-48 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
             />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Status</label>
-            <select
+            <SearchSelect
+              options={STATUS_OPTIONS.map((s) => ({ value: s, label: s }))}
               value={filterStatus}
-              onChange={(e) => setFilterStatus(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {STATUS_OPTIONS.map((s) => (
-                <option key={s} value={s}>
-                  {s}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterStatus}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Party</label>
-            <select
+            <SearchSelect
+              options={[
+                { value: NO_PARTY_FILTER, label: 'ไม่มี Party' },
+                ...partyTags.map((t) => ({ value: t.id, label: t.name || '(ไม่มีชื่อ)' })),
+              ]}
               value={filterPartyId}
-              onChange={(e) => setFilterPartyId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {partyTags.map((t) => (
-                <option key={t.id} value={t.id}>
-                  {t.name || '(ไม่มีชื่อ)'}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterPartyId}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Campaign</label>
-            <select
+            <SearchSelect
+              options={[
+                { value: NO_CAMPAIGN_FILTER, label: 'ไม่มี Campaign' },
+                ...campaignsWithCharacters.map((c) => ({ value: c.id, label: c.name || '(ไม่มีชื่อ)' })),
+              ]}
               value={filterCampaignId}
-              onChange={(e) => setFilterCampaignId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {campaignsWithCharacters.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.name || '(ไม่มีชื่อ)'}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterCampaignId}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">User</label>
-            <select
+            <SearchSelect
+              options={[
+                { value: NO_USER_FILTER, label: 'ไม่มี User' },
+                ...users.map((u) => ({ value: u.id, label: u.username || '(ไม่มีชื่อ)' })),
+              ]}
               value={filterUserId}
-              onChange={(e) => setFilterUserId(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {users.map((u) => (
-                <option key={u.id} value={u.id}>
-                  {u.username || '(ไม่มีชื่อ)'}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterUserId}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
           <div>
             <label className="mb-1 block text-xs text-stone-500">Class</label>
-            <select
+            <SearchSelect
+              options={classes.map((c) => ({ value: c, label: c }))}
               value={filterClass}
-              onChange={(e) => setFilterClass(e.target.value)}
-              className="w-36 rounded-lg border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm text-stone-700 focus:border-violet-400 focus:outline-none"
-            >
-              <option value="">ทั้งหมด</option>
-              {classes.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
+              onChange={setFilterClass}
+              placeholder="ทั้งหมด"
+              clearLabel="ล้าง"
+              className="w-36"
+            />
           </div>
+          <span className="px-2 py-1.5 text-xs text-stone-500">
+            ({filteredCharacters.length})
+          </span>
           {hasActiveFilters && (
             <button
               type="button"
@@ -2159,7 +3796,7 @@ function CharactersTab({
           <p className="text-sm text-stone-400">ไม่พบตัวละครที่ตรงกับตัวกรอง</p>
         </div>
       ) : (
-        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredCharacters.map((character) => {
             const summary = classSummary(character)
             return (
@@ -2167,10 +3804,10 @@ function CharactersTab({
                 type="button"
                 key={character.id}
                 onClick={() => openEdit(character)}
-                className="group flex flex-row items-stretch overflow-hidden rounded-xl border border-[#e2cfb3] bg-white text-left shadow-sm transition-all duration-200 hover:shadow-md min-h-16 sm:min-h-20"
+                className="group flex flex-row items-stretch overflow-hidden rounded-xl border border-[#e2cfb3] bg-white text-left shadow-sm transition-all duration-200 hover:shadow-md h-20 sm:h-24 w-full"
               >
                 {/* Left Portrait Image */}
-                <div className="relative w-16 sm:w-20 shrink-0 bg-[#f5ede0] overflow-hidden">
+                <div className="relative aspect-square h-full shrink-0 bg-[#f5ede0] overflow-hidden">
                   <CharacterImage
                     imageKey={getActiveImageKey(character)}
                     version={imageVersions[character.id]}
@@ -2262,10 +3899,12 @@ function CharactersTab({
           users={users}
           partyTags={partyTags}
           campaigns={campaigns}
+          shops={shops}
           classes={classes}
           subclassesByClass={subclassesByClass}
           speciesOptions={speciesOptions}
           backgroundOptions={backgroundOptions}
+          referenceLinks={referenceLinks}
           onCancel={() => setEditingCharacter(null)}
           onSave={handleSave}
           onDelete={requestDelete}
@@ -2284,3 +3923,373 @@ function CharactersTab({
     </div>
   )
 }
+
+function SpellsTabView({ character }) {
+  const sp = character.spellcasting || blankSpellcasting()
+  const [preparedOnly, setPreparedOnly] = useState(false)
+
+  // Helper to check if level has any spells
+  const hasSpells = (level) => {
+    if (level === 0) {
+      return sp.cantrips?.some(c => c.name?.trim())
+    }
+    const lvl = sp.levels?.[level]
+    return lvl?.spells?.some(s => s.name?.trim()) || lvl?.slotsTotal || lvl?.slotsRemaining
+  }
+
+  const anySpells = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].some(lvl => hasSpells(lvl))
+
+  // Render a spell level card
+  const renderLevelCard = (level, title) => {
+    const isCantrip = level === 0
+    const spellsList = isCantrip
+      ? (sp.cantrips || [])
+      : (sp.levels?.[level]?.spells || [])
+
+    let activeSpells = spellsList.filter(s => s.name?.trim())
+    if (preparedOnly && !isCantrip) {
+      activeSpells = activeSpells.filter(s => s.prepared)
+    }
+
+    if (activeSpells.length === 0 && (isCantrip || (!sp.levels?.[level]?.slotsTotal && !sp.levels?.[level]?.slotsRemaining))) {
+      return null // Hide empty levels in view mode
+    }
+
+    return (
+      <div key={level} className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm hover:shadow-md transition-shadow">
+        <div className="flex items-center justify-between border-b border-stone-105 pb-2 mb-3">
+          <h4 className="font-cinzel text-xs font-bold text-stone-800 flex items-center gap-1.5">
+            ✨ {title}
+          </h4>
+          {!isCantrip && (
+            <div className="flex gap-2">
+              <span className="rounded-md bg-stone-100 px-2 py-0.5 text-[9px] font-bold text-stone-500 uppercase tracking-wider">
+                ช่องเวท (Slots): {sp.levels?.[level]?.slotsRemaining || 0} / {sp.levels?.[level]?.slotsTotal || 0}
+              </span>
+            </div>
+          )}
+        </div>
+        
+        <div className="space-y-1.5">
+          {activeSpells.map((s, idx) => (
+            <div key={idx} className="flex items-center gap-2 rounded-md bg-stone-50/50 px-2 py-1.5 border border-stone-100/50 hover:bg-stone-50 transition-colors">
+              {!isCantrip && (
+                <div className="shrink-0">
+                  {s.prepared ? (
+                    <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-violet-100 text-violet-700 text-[10px] font-semibold" title="เตรียมการแล้ว (Prepared)">
+                      ✓
+                    </span>
+                  ) : (
+                    <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-stone-100 text-stone-300 text-[10px] font-semibold" title="ยังไม่ได้เตรียม (Unprepared)">
+                      -
+                    </span>
+                  )}
+                </div>
+              )}
+              <span className="text-xs font-medium text-stone-700 leading-tight">
+                {s.name}
+              </span>
+            </div>
+          ))}
+          {activeSpells.length === 0 && (
+            <div className="text-center py-2 text-xs text-stone-400 italic">
+              ไม่มีคาถาที่ระบุ
+            </div>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  // 3 Columns matching the PDF columns
+  const leftLevels = [
+    { lvl: 0, title: 'Cantrips (คาถาระดับ 0)' },
+    { lvl: 1, title: 'Level 1 Spells (เวทมนตร์เลเวล 1)' },
+    { lvl: 2, title: 'Level 2 Spells (เวทมนตร์เลเวล 2)' }
+  ]
+  const midLevels = [
+    { lvl: 3, title: 'Level 3 Spells (เวทมนตร์เลเวล 3)' },
+    { lvl: 4, title: 'Level 4 Spells (เวทมนตร์เลเวล 4)' },
+    { lvl: 5, title: 'Level 5 Spells (เวทมนตร์เลเวล 5)' }
+  ]
+  const rightLevels = [
+    { lvl: 6, title: 'Level 6 Spells (เวทมนตร์เลเวล 6)' },
+    { lvl: 7, title: 'Level 7 Spells (เวทมนตร์เลเวล 7)' },
+    { lvl: 8, title: 'Level 8 Spells (เวทมนตร์เลเวล 8)' },
+    { lvl: 9, title: 'Level 9 Spells (เวทมนตร์เลเวล 9)' }
+  ]
+
+  return (
+    <div className="space-y-6">
+      {/* Spellcasting Metadata Header Card */}
+      <div className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-xs font-bold text-stone-800 flex items-center gap-1.5">
+            🔮 ข้อมูลผู้ใช้เวทมนตร์ (Spellcasting Information)
+          </h3>
+          <label className="flex items-center gap-1.5 text-xs font-semibold text-stone-600 cursor-pointer select-none">
+            <input
+              type="checkbox"
+              checked={preparedOnly}
+              onChange={(e) => setPreparedOnly(e.target.checked)}
+              className="h-3.5 w-3.5 rounded text-purple-600 focus:ring-purple-500 cursor-pointer"
+            />
+            แสดงเฉพาะที่เตรียมไว้ (Prepared)
+          </label>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+          <div className="rounded-lg bg-stone-50 border border-stone-100 p-2">
+            <div className="text-[9px] font-bold text-stone-400 uppercase tracking-wider">Spellcasting Class</div>
+            <div className="mt-1 text-xs font-bold text-stone-800">{sp.spellcastingClass || '-'}</div>
+          </div>
+          <div className="rounded-lg bg-stone-50 border border-stone-100 p-2">
+            <div className="text-[9px] font-bold text-stone-400 uppercase tracking-wider">Spellcasting Ability</div>
+            <div className="mt-1 text-xs font-bold text-stone-800">{sp.spellcastingAbility || '-'}</div>
+          </div>
+          <div className="rounded-lg bg-stone-50 border border-stone-100 p-2">
+            <div className="text-[9px] font-bold text-stone-400 uppercase tracking-wider">Spell Save DC</div>
+            <div className="mt-1 font-mono text-xs font-bold text-stone-800">{sp.spellSaveDC || '-'}</div>
+          </div>
+          <div className="rounded-lg bg-stone-50 border border-stone-100 p-2">
+            <div className="text-[9px] font-bold text-stone-400 uppercase tracking-wider">Spell Attack Bonus</div>
+            <div className="mt-1 font-mono text-xs font-bold text-stone-800">{sp.spellAttackBonus || '-'}</div>
+          </div>
+        </div>
+      </div>
+
+      {anySpells ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Left Column */}
+          <div className="space-y-6">
+            {leftLevels.map(l => renderLevelCard(l.lvl, l.title))}
+          </div>
+          {/* Middle Column */}
+          <div className="space-y-6">
+            {midLevels.map(l => renderLevelCard(l.lvl, l.title))}
+          </div>
+          {/* Right Column */}
+          <div className="space-y-6">
+            {rightLevels.map(l => renderLevelCard(l.lvl, l.title))}
+          </div>
+        </div>
+      ) : (
+        <div className="rounded-xl border border-dashed border-stone-200 p-12 text-center text-stone-400 bg-white">
+          <div className="text-3xl mb-2">✨</div>
+          <div className="text-sm font-medium">ยังไม่มีข้อมูลเวทมนตร์หรือคาถาสำหรับตัวละครนี้</div>
+          <div className="text-xs text-stone-300 mt-1">คลิกปุ่ม Edit เพื่อเริ่มเพิ่มเวทมนตร์และระบุช่องร่ายเวท (Spell Slots)</div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function SpellsTabEdit({
+  form,
+  classes,
+  patchSpellcastingMeta,
+  patchCantrip,
+  patchSpell,
+  patchSpellSlots,
+}) {
+  const sp = form.spellcasting || blankSpellcasting()
+  const [activeLevel, setActiveLevel] = useState(0) // Default to Cantrips open
+
+  const abilityOption = STAT_KEYS.find((s) => s.label === sp.spellcastingAbility)
+  const level = form.classLevels.reduce((sum, cl) => sum + (Number(cl.level) || 0), 0)
+  const profBonus = proficiencyBonus(level)
+  const abilityMod_ = abilityOption ? abilityMod(form.stats?.[abilityOption.key]) : null
+  const computedDC = abilityMod_ != null ? 8 + profBonus + abilityMod_ : null
+  const computedAtk = abilityMod_ != null ? formatMod(profBonus + abilityMod_) : null
+
+  useEffect(() => {
+    if (computedDC == null) return
+    const dcText = String(computedDC)
+    if (sp.spellSaveDC === dcText && sp.spellAttackBonus === computedAtk) return
+    patchSpellcastingMeta({ spellSaveDC: dcText, spellAttackBonus: computedAtk })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [computedDC, computedAtk])
+
+  const rowCounts = {
+    1: 12, 2: 13, 3: 13, 4: 13, 5: 9, 6: 9, 7: 9, 8: 7, 9: 7
+  }
+
+  // Count active spells for badge
+  const getSpellCountText = (level) => {
+    if (level === 0) {
+      const active = (sp.cantrips || []).filter(c => c.name?.trim()).length
+      return `${active} คาถา`
+    }
+    const lvlData = sp.levels?.[level]
+    const active = (lvlData?.spells || []).filter(s => s.name?.trim()).length
+    const slotsTotal = lvlData?.slotsTotal || 0
+    return `${active} คาถา (${slotsTotal} ช่องเวท)`
+  }
+
+  return (
+    <div className="space-y-4">
+      {/* Spellcasting Meta Info */}
+      <FormSection icon="🔮" title="ข้อมูลการร่ายเวท (Spellcasting Info)">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div>
+            <label className="mb-1 block text-xs text-stone-500 font-semibold uppercase">Spellcasting Class</label>
+            <SearchSelect
+              options={classes.map((c) => ({ value: c, label: c }))}
+              value={sp.spellcastingClass || ''}
+              onChange={(v) => patchSpellcastingMeta({ spellcastingClass: v })}
+              placeholder="เลือกคลาส"
+              clearLabel="เปลี่ยน"
+            />
+          </div>
+          <div>
+            <label className="mb-1 block text-xs text-stone-500 font-semibold uppercase">Spellcasting Ability</label>
+            <SearchSelect
+              options={STAT_KEYS.map((s) => ({ value: s.label, label: s.label }))}
+              value={sp.spellcastingAbility || ''}
+              onChange={(v) => patchSpellcastingMeta({ spellcastingAbility: v })}
+              placeholder="เลือกค่าพลัง"
+              clearLabel="เปลี่ยน"
+            />
+          </div>
+          <div>
+            <label className="mb-1 block text-xs text-stone-500 font-semibold uppercase">Spell Save DC</label>
+            <div className="w-full rounded-md border border-gray-200 bg-stone-50 px-2.5 py-1.5 text-sm font-mono font-bold text-stone-700">
+              {computedDC ?? '-'}
+            </div>
+          </div>
+          <div>
+            <label className="mb-1 block text-xs text-stone-500 font-semibold uppercase">Spell Attack Bonus</label>
+            <div className="w-full rounded-md border border-gray-200 bg-stone-50 px-2.5 py-1.5 text-sm font-mono font-bold text-stone-700">
+              {computedAtk ?? '-'}
+            </div>
+          </div>
+        </div>
+      </FormSection>
+
+      {/* Accordion List */}
+      <FormSection icon="✨" title="รายการคาถา (Spell List)" hint="คลิกแต่ละระดับเพื่อระบุช่องเวทและรายชื่อเวทมนตร์">
+        <div className="space-y-2.5">
+          {/* Level 0 (Cantrips) */}
+          <div className="overflow-hidden rounded-lg border border-[#e2cfb3] bg-white shadow-sm">
+            <button
+              type="button"
+              onClick={() => setActiveLevel(activeLevel === 0 ? null : 0)}
+              className="flex w-full items-center justify-between bg-stone-50 px-4 py-3 text-left hover:bg-stone-100/70 transition-colors cursor-pointer"
+            >
+              <span className="font-cinzel text-xs font-bold text-stone-800">
+                Cantrips (คาถาระดับ 0)
+              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] bg-stone-200/80 px-2 py-0.5 rounded text-stone-600 font-semibold">
+                  {getSpellCountText(0)}
+                </span>
+                <span className={`text-stone-400 transition-transform ${activeLevel === 0 ? 'rotate-90' : ''}`}>▶</span>
+              </div>
+            </button>
+
+            {activeLevel === 0 && (
+              <div className="border-t border-[#e2cfb3] p-4 bg-stone-50/10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {Array.from({ length: 8 }).map((_, idx) => {
+                    const val = sp.cantrips?.[idx]?.name || ''
+                    return (
+                      <div key={idx} className="flex items-center gap-2">
+                        <span className="text-xs text-stone-400 font-mono w-5 text-right">{idx + 1}.</span>
+                        <input
+                          value={val}
+                          onChange={(e) => patchCantrip(idx, e.target.value)}
+                          className="flex-1 rounded-md border border-gray-300 px-2.5 py-1.5 text-xs focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300 bg-white"
+                          placeholder={`ชื่อคาถาระดับ 0 ที่ {idx + 1}`}
+                        />
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Levels 1 to 9 */}
+          {Array.from({ length: 9 }).map((_, lIdx) => {
+            const level = lIdx + 1
+            const rowCount = rowCounts[level]
+            const lvlData = sp.levels?.[level] || { slotsTotal: '', slotsRemaining: '', spells: [] }
+            const isOpen = activeLevel === level
+
+            return (
+              <div key={level} className="overflow-hidden rounded-lg border border-[#e2cfb3] bg-white shadow-sm">
+                <button
+                  type="button"
+                  onClick={() => setActiveLevel(isOpen ? null : level)}
+                  className="flex w-full items-center justify-between bg-stone-50 px-4 py-3 text-left hover:bg-stone-100/70 transition-colors cursor-pointer"
+                >
+                  <span className="font-cinzel text-xs font-bold text-stone-800">
+                    Level {level} Spells (เวทมนตร์เลเวล {level})
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] bg-stone-200/80 px-2 py-0.5 rounded text-stone-600 font-semibold">
+                      {getSpellCountText(level)}
+                    </span>
+                    <span className={`text-stone-400 transition-transform ${isOpen ? 'rotate-90' : ''}`}>▶</span>
+                  </div>
+                </button>
+
+                {isOpen && (
+                  <div className="border-t border-[#e2cfb3] p-4 bg-stone-50/10 space-y-4">
+                    {/* Spell Slots Inputs */}
+                    <div className="grid grid-cols-2 gap-4 max-w-xs bg-stone-50/60 p-3 rounded-lg border border-stone-150">
+                      <div>
+                        <label className="mb-0.5 block text-[10px] font-bold text-stone-500 uppercase">ช่องเวททั้งหมด (Total)</label>
+                        <input
+                          value={lvlData.slotsTotal || ''}
+                          onChange={(e) => patchSpellSlots(level, { slotsTotal: e.target.value })}
+                          className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-center text-xs focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300 bg-white"
+                          placeholder="0"
+                        />
+                      </div>
+                      <div>
+                        <label className="mb-0.5 block text-[10px] font-bold text-stone-500 uppercase">ช่องเวทคงเหลือ (Remaining)</label>
+                        <input
+                          value={lvlData.slotsRemaining || ''}
+                          onChange={(e) => patchSpellSlots(level, { slotsRemaining: e.target.value })}
+                          className="w-full rounded-md border border-gray-300 px-2 py-1.5 text-center text-xs focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300 bg-white"
+                          placeholder="0"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Spell List Inputs */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                      {Array.from({ length: rowCount }).map((_, idx) => {
+                        const s = lvlData.spells?.[idx] || { name: '', prepared: false }
+                        return (
+                          <div key={idx} className="flex items-center gap-2">
+                            <span className="text-xs text-stone-400 font-mono w-5 text-right">{idx + 1}.</span>
+                            <input
+                              type="checkbox"
+                              checked={!!s.prepared}
+                              onChange={(e) => patchSpell(level, idx, { prepared: e.target.checked })}
+                              className="h-3.5 w-3.5 rounded text-purple-600 focus:ring-purple-500 cursor-pointer"
+                              title="เตรียมการ (Prepared)"
+                            />
+                            <input
+                              value={s.name || ''}
+                              onChange={(e) => patchSpell(level, idx, { name: e.target.value })}
+                              className="flex-1 rounded-md border border-gray-300 px-2.5 py-1.5 text-xs focus:border-purple-400 focus:outline-none focus:ring-1 focus:ring-purple-300 bg-white"
+                              placeholder={`ชื่อเวทเลเวล ${level} ที่ ${idx + 1}`}
+                            />
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+      </FormSection>
+    </div>
+  )
+}
+
+

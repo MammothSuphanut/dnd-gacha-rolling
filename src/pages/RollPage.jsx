@@ -1,7 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import SearchSelect from '../components/SearchSelect'
+import StartingGoldModal from '../components/StartingGoldModal'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
+import { createId } from '../utils/id'
+import { STAT_KEYS } from '../utils/gachaOptions'
 import {
   applyRateUp,
   calculateHierarchicalPercentages,
@@ -12,9 +16,27 @@ import {
 
 const DEFAULT_RATE_UP = { mode: 'multiplier', multiplier: 2, percent: 50, itemIds: [], groupNames: [] }
 import StatRollPage from './StatRollPage'
+import CreateCharacterModal from '../components/CreateCharacterModal'
 
 const NO_CATEGORY = 'ไม่มีหมวดหมู่'
 const ROLL_DURATION_MS = 700
+const STAR_RARITY_CATEGORIES = new Set(['Species', 'Background'])
+
+// Species/Background groups are named "<Subcategory> (***)"; rank by star count
+// instead of alphabetically so rarer tiers sort in the right order.
+function starRarityRank(group) {
+  const match = (group ?? '').match(/\(([*]+)\)\s*$/)
+  return match ? match[1].length : 0
+}
+
+function resultItemComparator(category) {
+  if (STAR_RARITY_CATEGORIES.has(category)) {
+    return (a, b) =>
+      starRarityRank(a.group) - starRarityRank(b.group) || (a.name ?? '').localeCompare(b.name ?? '', 'th')
+  }
+  return (a, b) =>
+    (a.group ?? '').localeCompare(b.group ?? '', 'th') || (a.name ?? '').localeCompare(b.name ?? '', 'th')
+}
 
 export default function RollPage({
   rollState,
@@ -24,12 +46,108 @@ export default function RollPage({
   visibility,
   setVisibility,
 }) {
-  const { state } = useGachaStore()
+  const { state, dispatch } = useGachaStore()
   const { showToast } = useToast()
+  const navigate = useNavigate()
   const [rolling, setRolling] = useState(false)
   const [rateUpBoxId, setRateUpBoxId] = useState(null)
+  const [startingGoldOpen, setStartingGoldOpen] = useState(false)
+  const [pickMode, setPickMode] = useState(false)
+  const [pickedItems, setPickedItems] = useState({})
+  const [pickedStatKeys, setPickedStatKeys] = useState(() => new Set())
+  const [createCharacterOpen, setCreateCharacterOpen] = useState(false)
   const { config, boxResults, revealedIds } = rollState
   const { selectedBoxId, showStatRoll, defaultVisibilityApplied } = visibility
+
+  function togglePickMode() {
+    setPickMode((prev) => {
+      if (prev) {
+        setPickedItems({})
+        setPickedStatKeys(new Set())
+      }
+      return !prev
+    })
+  }
+
+  function toggleItemPick(key, payload) {
+    setPickedItems((prev) => {
+      const next = { ...prev }
+      if (next[key]) delete next[key]
+      else next[key] = payload
+      return next
+    })
+  }
+
+  function toggleStatKey(statKey) {
+    setPickedStatKeys((prev) => {
+      const next = new Set(prev)
+      if (next.has(statKey)) next.delete(statKey)
+      else next.add(statKey)
+      return next
+    })
+  }
+
+  const pickCount = Object.keys(pickedItems).length + pickedStatKeys.size
+
+  function finalStatScore(statKey) {
+    const resultId = statRollState.assignments?.[statKey]
+    if (!resultId) return null
+    const result = (statRollState.results ?? []).find((r) => r.id === resultId)
+    if (!result) return null
+    const base = result.total
+    const bonus = statRollState.bonuses?.[statKey] ?? 0
+    return Math.min(20, base + bonus)
+  }
+
+  function buildPicksSummary() {
+    const picks = Object.values(pickedItems)
+    const classLevels = picks
+      .filter((p) => p.category === 'Classes')
+      .map((p) => ({ id: createId('classlevel'), className: p.item.group || '', subclassName: p.item.name, level: 1 }))
+    const species = picks.find((p) => p.category === 'Species')?.item.name
+    const background = picks.find((p) => p.category === 'Background')?.item.name
+    const otherNames = picks
+      .filter((p) => !['Classes', 'Species', 'Background'].includes(p.category))
+      .map((p) => p.item.name)
+    const stats = {}
+    for (const key of pickedStatKeys) {
+      const score = finalStatScore(key)
+      if (score !== null) stats[key] = score
+    }
+    return { classLevels, species, background, otherNames, stats }
+  }
+
+  function handleCreateCharacterConfirm({ mode, characterId }) {
+    const { classLevels, species, background, otherNames, stats } = buildPicksSummary()
+
+    if (mode === 'existing') {
+      const target = (state.characters ?? []).find((c) => c.id === characterId)
+      if (!target) return
+      const patch = {}
+      if (classLevels.length > 0) patch.classLevels = classLevels
+      if (species) patch.species = species
+      if (background) patch.background = background
+      if (Object.keys(stats).length > 0) patch.stats = { ...target.stats, ...stats }
+      if (otherNames.length > 0) patch.equipment = [...(target.equipment ?? []), ...otherNames]
+      dispatch({ type: 'UPDATE_CHARACTER', payload: { id: target.id, patch } })
+      showToast(`อัปเดตข้อมูลไปยัง "${target.name || '(ไม่มีชื่อ)'}" แล้ว`, 'success')
+    } else {
+      const prefillCharacter = {}
+      if (classLevels.length > 0) prefillCharacter.classLevels = classLevels
+      if (species) prefillCharacter.species = species
+      if (background) prefillCharacter.background = background
+      if (Object.keys(stats).length > 0) {
+        prefillCharacter.stats = STAT_KEYS.reduce((acc, s) => ({ ...acc, [s.key]: stats[s.key] ?? 0 }), {})
+      }
+      if (otherNames.length > 0) prefillCharacter.equipment = otherNames
+      navigate('/characters', { state: { prefillCharacter } })
+    }
+
+    setCreateCharacterOpen(false)
+    setPickMode(false)
+    setPickedItems({})
+    setPickedStatKeys(new Set())
+  }
 
   function isBoxVisible(category, boxId) {
     return selectedBoxId[category] === boxId
@@ -282,13 +400,10 @@ export default function RollPage({
   )
 
   return (
-    <div className="mx-auto max-w-7xl p-4 md:p-8">
+    <div className="w-full p-4 md:p-8">
       {/* Box selector + manage link */}
       <div className="mb-6 flex flex-wrap items-start justify-between gap-3">
         <div className="flex-1 rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm">
-          <h2 className="font-cinzel mb-3 text-xs font-semibold uppercase tracking-widest text-amber-700">
-            เลือกสิ่งที่จะแสดง
-          </h2>
           <div className="flex flex-wrap gap-6">
             {grouped.map(([category, boxes]) => (
               <div key={category}>
@@ -329,13 +444,61 @@ export default function RollPage({
             </div>
           </div>
         </div>
-        <Link
-          to="/boxes"
-          className="shrink-0 rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-700 shadow-sm hover:bg-[#f5ede0]"
-        >
-          จัดการตู้สุ่ม
-        </Link>
+        <div className="flex shrink-0 flex-col gap-2">
+          <Link
+            to="/boxes"
+            className="rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-center text-sm font-medium text-stone-700 shadow-sm hover:bg-[#f5ede0]"
+          >
+            จัดการตู้สุ่ม
+          </Link>
+          <button
+            type="button"
+            onClick={() => setStartingGoldOpen(true)}
+            className="rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-700 shadow-sm hover:bg-[#f5ede0]"
+          >
+            💰 คำนวณเงินเริ่มต้น
+          </button>
+          <button
+            type="button"
+            onClick={togglePickMode}
+            className={`rounded-lg px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
+              pickMode
+                ? 'bg-violet-700 text-white hover:bg-violet-800'
+                : 'border border-[#e2cfb3] bg-white text-stone-700 hover:bg-[#f5ede0]'
+            }`}
+          >
+            🧬 สร้างตัวละคร
+          </button>
+        </div>
       </div>
+
+      {pickMode && (
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-violet-200 bg-violet-50 px-4 py-3">
+          <p className="text-sm text-violet-800">
+            ติ๊กเลือกไอเทมที่สุ่มได้ (เลือกจากรอบไหนก็ได้) และ/หรือค่าพลังที่ลงแล้วด้านล่าง แล้วกด &quot;ดำเนินการต่อ&quot;
+            {pickCount > 0 && <span className="ml-1 font-semibold">(เลือกแล้ว {pickCount} รายการ)</span>}
+          </p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={togglePickMode}
+              className="rounded-lg border border-violet-300 bg-white px-3 py-1.5 text-sm font-medium text-violet-700 hover:bg-violet-100"
+            >
+              ยกเลิก
+            </button>
+            <button
+              type="button"
+              disabled={pickCount === 0}
+              onClick={() => setCreateCharacterOpen(true)}
+              className="rounded-lg bg-violet-700 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-stone-300"
+            >
+              ดำเนินการต่อ
+            </button>
+          </div>
+        </div>
+      )}
+
+      <StartingGoldModal open={startingGoldOpen} onClose={() => setStartingGoldOpen(false)} />
 
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
         <div className="min-w-0 flex-1">
@@ -440,21 +603,16 @@ export default function RollPage({
 
                       {subGroups.length > 0 && (
                         <div className="mt-3 flex flex-col gap-1.5">
-                          <label className="flex flex-col gap-1 text-xs text-stone-500">
+                          <div className="flex flex-col gap-1 text-xs text-stone-500">
                             หมวดย่อย
-                            <select
+                            <SearchSelect
+                              options={subGroups.map((g) => ({ value: g.name, label: g.name }))}
                               value={group}
-                              onChange={(e) => updateConfig(box, { group: e.target.value })}
-                              className="w-full rounded-lg border border-[#e2cfb3] bg-[#fdf8f0] px-2 py-1.5 text-sm text-stone-900 focus:border-violet-400 focus:outline-none"
-                            >
-                              <option value="">ทั้งหมด</option>
-                              {subGroups.map((g) => (
-                                <option key={g.name} value={g.name}>
-                                  {g.name}
-                                </option>
-                              ))}
-                            </select>
-                          </label>
+                              onChange={(v) => updateConfig(box, { group: v })}
+                              placeholder="ทั้งหมด"
+                              clearLabel="ล้าง"
+                            />
+                          </div>
                           {!group && (
                             <label className="flex items-center gap-1.5 text-xs text-stone-600">
                               <input
@@ -535,9 +693,7 @@ export default function RollPage({
                                   )}
                                   <div className="flex flex-wrap gap-2">
                                     {[...result.resultItems]
-                                      .sort((a, b) =>
-                                        (a.group ?? '').localeCompare(b.group ?? '', 'th'),
-                                      )
+                                      .sort(resultItemComparator(category))
                                       .map((item, i) => {
                                       const Wrapper = item.link ? 'a' : 'div'
                                       const wrapperProps = item.link
@@ -548,9 +704,21 @@ export default function RollPage({
                                             title: item.link,
                                           }
                                         : {}
-                                      return (
+                                      const pickKey = `${box.id}:${historyIndex}:${item.id}:${i}`
+                                      const showPickCheckbox = pickMode
+                                      const pickCheckbox = showPickCheckbox && (
+                                        <input
+                                          type="checkbox"
+                                          checked={!!pickedItems[pickKey]}
+                                          onChange={() =>
+                                            toggleItemPick(pickKey, { category, boxId: box.id, boxName: box.name, item })
+                                          }
+                                          className="h-4 w-4 shrink-0 accent-violet-700"
+                                        />
+                                      )
+                                      const cardEl = (
                                         <Wrapper
-                                          key={i}
+                                          key={showPickCheckbox ? undefined : i}
                                           {...wrapperProps}
                                           className="animate-fade-in-up flex items-center gap-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 transition-shadow hover:shadow-sm"
                                           style={{
@@ -595,6 +763,13 @@ export default function RollPage({
                                           </div>
                                         </Wrapper>
                                       )
+                                      if (!showPickCheckbox) return cardEl
+                                      return (
+                                        <label key={i} className="flex items-center gap-1.5">
+                                          {pickCheckbox}
+                                          {cardEl}
+                                        </label>
+                                      )
                                     })}
                                   </div>
                                 </div>
@@ -619,8 +794,23 @@ export default function RollPage({
 
       {showStatRoll && (
         <div className="mt-8 border-t border-[#e2cfb3] pt-8">
-          <StatRollPage statRollState={statRollState} setStatRollState={setStatRollState} />
+          <StatRollPage
+            statRollState={statRollState}
+            setStatRollState={setStatRollState}
+            pickMode={pickMode}
+            pickedStatKeys={pickedStatKeys}
+            onToggleStatKey={toggleStatKey}
+          />
         </div>
+      )}
+
+      {createCharacterOpen && (
+        <CreateCharacterModal
+          characters={state.characters ?? []}
+          pickCount={pickCount}
+          onCancel={() => setCreateCharacterOpen(false)}
+          onConfirm={handleCreateCharacterConfirm}
+        />
       )}
 
       {rateUpBoxId &&

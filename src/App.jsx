@@ -28,8 +28,13 @@ function App() {
   })
   const [cartState, setCartState] = useState({
     items: [],
-    shopDiscounts: {},
-    overallDiscount: { type: 'percent', value: '' },
+    shopAdjustments: {},
+    overallAdjustment: { sign: '+', mode: 'percent', value: '' },
+  })
+  const [sellCartState, setSellCartState] = useState({
+    items: [],
+    shopAdjustments: {},
+    overallAdjustment: { sign: '+', mode: 'percent', value: '' },
   })
 
   return (
@@ -56,7 +61,14 @@ function App() {
             <Route path="/boxes" element={<BoxManagerPage />} />
             <Route
               path="/shop"
-              element={<ShopPage cartState={cartState} setCartState={setCartState} />}
+              element={
+                <ShopPage
+                  cartState={cartState}
+                  setCartState={setCartState}
+                  sellCartState={sellCartState}
+                  setSellCartState={setSellCartState}
+                />
+              }
             />
             <Route path="/campaigns" element={<CampaignPage />} />
             <Route path="/characters" element={<CharacterPage />} />

@@ -1,3 +1,4 @@
+import SearchSelect from '../components/SearchSelect'
 import { createId } from '../utils/id'
 
 const STATS = [
@@ -33,7 +34,13 @@ const DEFAULT_DICE_COUNT = 4
 const DEFAULT_DICE_SIDES = 6
 const DEFAULT_DROP_COUNT = 1
 
-export default function StatRollPage({ statRollState, setStatRollState }) {
+export default function StatRollPage({
+  statRollState,
+  setStatRollState,
+  pickMode = false,
+  pickedStatKeys,
+  onToggleStatKey,
+}) {
   const {
     results,
     assignments,
@@ -237,7 +244,7 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
   )
 
   return (
-    <div>
+    <div className="pb-[150px]">
       <h2 className="mb-4 text-xl font-bold text-stone-900">
         สุ่มค่าพลัง ({diceCount}d{diceSides} ตัดต่ำสุด {dropCount} ลูก)
       </h2>
@@ -449,10 +456,26 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                 return (
                   <div
                     key={stat.key}
-                    className="flex flex-col gap-2 rounded-lg border border-[#e2cfb3] bg-white p-3"
+                    className={`flex flex-col gap-2 rounded-lg border p-3 ${
+                      pickMode && pickedStatKeys?.has(stat.key)
+                        ? 'border-violet-300 bg-violet-50'
+                        : 'border-[#e2cfb3] bg-white'
+                    }`}
                   >
                     <div className="flex items-center justify-between">
-                      <span className="font-semibold text-stone-700">{stat.label}</span>
+                      <span className="flex items-center gap-1.5 font-semibold text-stone-700">
+                        {pickMode && (
+                          <input
+                            type="checkbox"
+                            checked={!!pickedStatKeys?.has(stat.key)}
+                            disabled={!assignedId}
+                            onChange={() => onToggleStatKey?.(stat.key)}
+                            className="h-4 w-4 accent-violet-700 disabled:opacity-40"
+                            title={!assignedId ? 'ยังไม่ได้ลงค่าให้ช่องนี้' : ''}
+                          />
+                        )}
+                        {stat.label}
+                      </span>
                       <span className="text-sm text-stone-500">
                         {score}
                         {currentBonus ? (
@@ -462,22 +485,17 @@ export default function StatRollPage({ statRollState, setStatRollState }) {
                       </span>
                     </div>
 
-                    <select
+                    <SearchSelect
+                      options={sortedResults.map((r) => ({
+                        value: r.id,
+                        label: `ครั้งที่ ${resultIndexById.get(r.id) + 1} (${r.total})`,
+                        disabled: assignedResultIds.has(r.id) && assignedId !== r.id,
+                      }))}
                       value={assignedId ?? ''}
-                      onChange={(e) => assignStat(stat.key, e.target.value || null)}
-                      className="w-full rounded-md border border-gray-300 px-2 py-1 text-sm"
-                    >
-                      <option value="">-</option>
-                      {sortedResults.map((r) => (
-                        <option
-                          key={r.id}
-                          value={r.id}
-                          disabled={assignedResultIds.has(r.id) && assignedId !== r.id}
-                        >
-                          ครั้งที่ {resultIndexById.get(r.id) + 1} ({r.total})
-                        </option>
-                      ))}
-                    </select>
+                      onChange={(v) => assignStat(stat.key, v || null)}
+                      placeholder="-"
+                      clearLabel="เปลี่ยน"
+                    />
 
                     <div className="flex items-center gap-3 text-xs text-stone-500">
                       <label

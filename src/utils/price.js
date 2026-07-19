@@ -36,7 +36,7 @@ export function formatCopper(cp) {
 
 export const ENHANCEMENT_LEVELS = [1, 2, 3]
 
-export const DEFAULT_ENHANCEMENT_MULTIPLIERS = { 1: 2, 2: 4, 3: 8 }
+export const DEFAULT_ENHANCEMENT_MULTIPLIERS = { 1: 5, 2: 25, 3: 125 }
 
 // multipliers = { 1: number, 2: number, 3: number } — price at level N = base price * multipliers[N]
 export function getEnhancementMultiplier(level, multipliers) {
@@ -45,10 +45,110 @@ export function getEnhancementMultiplier(level, multipliers) {
   return m && !Number.isNaN(m) ? m : 1
 }
 
-export function applyDiscountPercent(cp, percent) {
-  const p = Number(percent)
-  if (!p || Number.isNaN(p)) return cp
-  return cp * (1 - p / 100)
+// Chance of each outcome when attempting to reach a given target level.
+// Higher levels are harder: lower success chance, and downgrade/break risk kicks in.
+export const ENHANCEMENT_UPGRADE_RATES = {
+  1: { success: 0.2, fail: 0.8, downgrade: 0, break: 0 },
+  2: { success: 0.15, fail: 0.6, downgrade: 0.2, break: 0.05 },
+  3: { success: 0.1, fail: 0.4, downgrade: 0.4, break: 0.1 },
+}
+
+// Cost per attempt, as a fraction of the item's current (pre-attempt) price —
+// e.g. going from +1 to +2 costs a % of what the item is worth at +1, not +2.
+// Kept low so upgrading stays cheaper on average than buying the already-enhanced
+// item outright, in exchange for the risk above.
+export const ENHANCEMENT_UPGRADE_COST_FACTORS = { 1: 0.1, 2: 0.12, 3: 0.15 }
+
+// Preset damage/condition levels for repairing an item, and the chance of
+// each outcome when attempting a repair at that level. Higher level = item
+// is in better condition = repair is more likely to succeed.
+export const REPAIR_DAMAGE_LEVELS = [100, 80, 60, 40, 20, 0]
+
+// Reference price ranges by item rarity, per the commonly used D&D 5e
+// "sane magic item prices" guideline (an expansion of the DMG p.135 variant
+// rule into ranges). Shown to the user as a guideline only — they still
+// type the price into the field themselves.
+export const ITEM_RARITY_PRICES = [
+  { key: 'common', label: 'Common (สามัญ)', priceText: '50 - 100 gp' },
+  { key: 'uncommon', label: 'Uncommon (ไม่ธรรมดา)', priceText: '101 - 500 gp' },
+  { key: 'rare', label: 'Rare (หายาก)', priceText: '501 - 5,000 gp' },
+  { key: 'veryRare', label: 'Very Rare (หายากมาก)', priceText: '5,001 - 50,000 gp' },
+  { key: 'legendary', label: 'Legendary (ในตำนาน)', priceText: '50,001+ gp' },
+]
+
+// downgrade is always 0 for repairs (an explicit 0, not omitted) — applyAntiBreak
+// and applySuccessBoost both do arithmetic on rates.downgrade unconditionally,
+// and undefined + number is NaN, which silently corrupts fail/break.
+export const REPAIR_DAMAGE_RATES = {
+  100: { success: 1, fail: 0, downgrade: 0, break: 0 },
+  80: { success: 0.8, fail: 0.15, downgrade: 0, break: 0.05 },
+  60: { success: 0.6, fail: 0.3, downgrade: 0, break: 0.1 },
+  40: { success: 0.4, fail: 0.45, downgrade: 0, break: 0.15 },
+  20: { success: 0.2, fail: 0.6, downgrade: 0, break: 0.2 },
+  0: { success: 0, fail: 0.75, downgrade: 0, break: 0.25 },
+}
+
+// basePriceCp = copper price of the item at +0. currentLevel = the item's level
+// before this attempt (0-2). Returns the copper cost of one upgrade attempt
+// aiming for currentLevel + 1.
+export function getUpgradeCostCp(basePriceCp, currentLevel, multipliers) {
+  if (basePriceCp == null) return null
+  const targetLevel = currentLevel + 1
+  const currentPriceCp = basePriceCp * getEnhancementMultiplier(currentLevel, multipliers)
+  const factor = ENHANCEMENT_UPGRADE_COST_FACTORS[targetLevel] ?? 1
+  return currentPriceCp * factor
+}
+
+export function rollUpgradeOutcome(rates) {
+  const r = Math.random()
+  let cum = 0
+  for (const key of ['success', 'fail', 'downgrade', 'break']) {
+    cum += rates[key] ?? 0
+    if (r < cum) return key
+  }
+  return 'fail'
+}
+
+// Removes the downgrade chance entirely, halves success, and hands the freed
+// probability mass to fail/break (split proportionally to their current weight).
+export function applyAntiDowngrade(rates) {
+  const freed = rates.downgrade + rates.success / 2
+  const success = rates.success / 2
+  const remaining = rates.fail + rates.break
+  const fail = remaining > 0 ? rates.fail + (freed * rates.fail) / remaining : rates.fail + freed / 2
+  const brk = remaining > 0 ? rates.break + (freed * rates.break) / remaining : rates.break + freed / 2
+  return { success, fail, downgrade: 0, break: brk }
+}
+
+// Removes the break chance entirely, halves success, and hands the freed
+// probability mass to fail/downgrade (split proportionally to their current weight).
+export function applyAntiBreak(rates) {
+  const freed = rates.break + rates.success / 2
+  const success = rates.success / 2
+  const remaining = rates.fail + rates.downgrade
+  const fail = remaining > 0 ? rates.fail + (freed * rates.fail) / remaining : rates.fail + freed / 2
+  const downgrade = remaining > 0 ? rates.downgrade + (freed * rates.downgrade) / remaining : rates.downgrade + freed / 2
+  return { success, fail, downgrade, break: 0 }
+}
+
+// Boosts the success chance, either by adding percentage points ('percent')
+// or by multiplying it ('times'), then rescales fail/downgrade/break
+// proportionally so everything still sums to 1.
+export function applySuccessBoost(rates, mode, value) {
+  const amount = Number(value)
+  if (!amount || Number.isNaN(amount)) return rates
+  const rawSuccess = mode === 'times' ? rates.success * amount : rates.success + amount / 100
+  const success = Math.min(Math.max(rawSuccess, 0), 1)
+  const remaining = 1 - success
+  const othersTotal = rates.fail + rates.downgrade + rates.break
+  if (othersTotal <= 0) return { success, fail: remaining, downgrade: 0, break: 0 }
+  const scale = remaining / othersTotal
+  return {
+    success,
+    fail: rates.fail * scale,
+    downgrade: rates.downgrade * scale,
+    break: rates.break * scale,
+  }
 }
 
 export const CURRENCY_UNITS = ['pp', 'gp', 'ep', 'sp', 'cp']
@@ -63,11 +163,13 @@ export function flatAmountsToCopper(amounts) {
   }, 0)
 }
 
-// discount = { type: 'percent', value: string } | { type: 'flat', value: { pp, gp, ep, sp, cp } }
-export function applyDiscount(cp, discount) {
-  if (!discount) return cp
-  if (discount.type === 'flat') {
-    return Math.max(0, cp - flatAmountsToCopper(discount.value))
-  }
-  return applyDiscountPercent(cp, discount.value)
+// Bidirectional price adjustment — used for "haggling" a cart or appraised
+// price up or down. adjust = { sign: '+' | '-', mode: 'percent' | 'flat',
+// value: string (percent) | { pp, gp, ep, sp, cp } (flat) }
+export function applyPriceAdjustment(cp, adjust) {
+  if (!adjust) return cp
+  const deltaCp =
+    adjust.mode === 'flat' ? flatAmountsToCopper(adjust.value) : cp * ((Number(adjust.value) || 0) / 100)
+  const signedDeltaCp = adjust.sign === '-' ? -deltaCp : deltaCp
+  return Math.max(0, cp + signedDeltaCp)
 }
