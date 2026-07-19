@@ -21,12 +21,12 @@ Ofear คืออีกชื่อหนึ่งของ **Factorum Malleus*
 > ดูกลไกเกม (Usage/Effect/Stress Cost) ของแต่ละชิ้นได้ที่ [01-the-fragments.md](./01-the-fragments.md)
 
 ## สารบัญ Act
-- [Act 1: หนีจากลัทธิ สู่ Palebank Village](./ACT01-escape-to-palebank.md) — Level 1–3
-- [Act 2: สงครามเงาแห่ง Wildemount](./ACT02-shadow-war-of-wildemount.md) — Level 3–7
-- [Act 3: ลัทธิปีศาจแห่ง Tal'Dorei](./ACT03-demon-cult-of-taldorei.md) — Level 7–10
-- [Act 4: ประตูมิติเถื่อนแห่ง Issylra](./ACT04-rifts-of-issylra.md) — Level 10–14
-- [Act 5: Glintshore และเทพแห่งความตาย](./ACT05-glintshore-god-of-death.md) — Level 14–19
-- [Act 6: คืน Fragment สู่ Aeor Lab (บทส่งท้าย)](./ACT06-return-to-aeor-lab.md) — Level 19–20
+- [Act 1: หนีจากลัทธิ สู่ Palebank Village](./ACT01-escape-to-palebank/00-act-outline.md) — Level 1–3
+- [Act 2: สงครามเงาแห่ง Wildemount](./ACT02-shadow-war-of-wildemount/00-act-outline.md) — Level 3–7
+- [Act 3: ลัทธิปีศาจแห่ง Tal'Dorei](./ACT03-demon-cult-of-taldorei/00-act-outline.md) — Level 7–10
+- [Act 4: ประตูมิติเถื่อนแห่ง Issylra](./ACT04-rifts-of-issylra/00-act-outline.md) — Level 10–14
+- [Act 5: Glintshore และเทพแห่งความตาย](./ACT05-glintshore-god-of-death/00-act-outline.md) — Level 14–19
+- [Act 6: คืน Fragment สู่ Aeor Lab (บทส่งท้าย)](./ACT06-return-to-aeor-lab/00-act-outline.md) — Level 19–20
 
 ## ดูเพิ่มเติม
 - [กลไกเกมของ The Fragment](./01-the-fragments.md)
