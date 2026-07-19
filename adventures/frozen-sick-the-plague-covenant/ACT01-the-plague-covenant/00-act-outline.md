@@ -14,7 +14,7 @@ Campaign 6 EP เรียงต่อเนื่อง (ประมาณ 9-1
 - [EP5: Ashes of the Faithful](<./EP05 - Ashes of the Faithful.md>) — 2 session, level 5-6
 - [EP6: The Last Warm Lie](<./EP06 - The Last Warm Lie.md>) — 2 session, level 6
 
-ภาพรวมทั้งเรื่องแบบ prose เต็ม (Story Overview + Adventure Summary) อยู่ที่ [00-overview-journal.md](../00-overview-journal.md)
+ภาพรวมทั้งเรื่องแบบ prose เต็ม (Story Overview + Adventure Summary) อยู่ที่ [00-overview.md](../00-overview.md)
 
 ---
 [← ภาพรวม](../00-overview.md)

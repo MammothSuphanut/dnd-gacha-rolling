@@ -1,6 +1,38 @@
 # Frozen Sick: The Plague Covenant
 
+> *ลมเหนือพัดโหมกระหน่ำจนเสื้อคลุมของคุณสะบัดแทบขาด แต่ในถุงย่ามที่แนบอกยังอุ่นอยู่เสมอ — ขวดยารักษา Frigid Vow ที่กลั่นมาจากความหวังของทั้ง Eiselcross เมื่อเงาหลังคาไม้ของ Palebank Village โผล่พ้นสันเขาหิมะขึ้นมาไกลๆ เสียงกระดิ่งวัวและกลิ่นควันไฟจากปล่องบ้านลอยมาแตะจมูก คุณรู้ดีว่าการเดินทางครั้งนี้ยังไม่จบ — มันเพิ่งจะเริ่มต้น*
+
 ประเภท one-shot/short campaign เดินเรื่องเป็น Act เดียวตลอดทั้งเรื่อง (ดูรายละเอียดแคมเปญเต็ม — level range, ระบบเลื่อนระดับ, theme, setting, สารบัญ EP — ที่ [ACT01-the-plague-covenant/00-act-outline.md](./ACT01-the-plague-covenant/00-act-outline.md))
+
+**EP1-2** คือการดัดแปลงจากแคมเปญต้นฉบับ **Wildemount: Frozensick** เกือบทั้งหมด (level 1-3) ตัวละครสืบคดีการตายประหลาดใน Palebank Village แล้วเดินทางไป Eiselcross เพื่อหายารักษาโรค Frigid Vow **EP3-6** เป็นภาคต่อ homebrew (level 3-6) ที่เปิดเรื่องทันทีหลังตัวละครนำยารักษากลับมาถึง Palebank Village จาก Eiselcross ตอนจบ EP2
+
+เส้นทางของ EP3-6 เดินทางลงใต้ผ่านแถบ Flotket Alps ใน Wildemount (Exandria): **Palebank Village → Kravaraad → Cinderrest Sanctum → Uthodurn**
+
+## Story Overview
+
+**EP1-2**: Urgon Wenth นักสำรวจชาว Dwarf เสียชีวิตกลายเป็นน้ำแข็งหลังกลับจากสำรวจ Eiselcross ตัวละครสืบสวนจนพบว่าขวดแก้วปนเปื้อนสปอร์ **Frigid Vow** ที่เขานำกลับมาถูกขโมยและขายต่อจนแพร่เชื้อไปหลายครอบครัวใน Palebank Village ตามรอยผ่านแก๊งอาชญากรตระกูล Uttolot ใน Croaker Cave จนต้องเดินทางไป Eiselcross บุกซากปรักหักพัง **Salsvault** (อดีตห้องแล็บของนคร Aeor) เพื่อนำยารักษากลับมาให้ทัน
+
+**EP3-6**: สิ่งที่ดูเหมือนจะเป็นตอนจบแฮปปี้เอนดิ้ง — ตัวละครนำยารักษากลับมาแจกจ่ายให้ชาวบ้านที่ป่วยเป็น Frigid Vow — กลับกลายเป็นจุดเริ่มต้นของปริศนาใหม่ ยาและไอเทมรักษาบางส่วนเริ่ม "หายไป" อย่างลึกลับระหว่างการแจกจ่าย รอยทางนำไปสู่ **Thistlewick** ภูติจิ๋วที่แอบขโมยยาไปรักษาเพื่อนของมันซึ่งป่วยเป็นโรคเดียวกัน — แต่เพื่อนของมันอยู่ไกลถึง **Kravaraad** นั่นหมายความว่าโรค Frigid Vow กำลังระบาดขึ้นในหลายพื้นที่พร้อมกันอย่างผิดปกติ ไม่ใช่เรื่องบังเอิญ
+
+เบื้องหลังทั้งหมดคือ **Councilor Bram Ironvow** สมาชิกสภาที่ปรึกษาของราชินี Judessa Fruunast แห่ง Uthodurn ในตำแหน่ง "Assessor of Foreign Trade & Relations" ตำแหน่งที่ทำให้เขาเดินทาง/ส่งคนไปมาระหว่าง Uthodurn, Palebank Village, Kravaraad และ Cinderrest Sanctum ได้อย่างชอบธรรมโดยไม่มีใครสงสัย ภายนอก Bram คือสมาชิกลับของลัทธิ **The Everwarm** องค์กรการกุศลที่แจกอาหาร/ที่พัก/ความอบอุ่นให้ผู้ยากไร้ในภาคเหนืออันหนาวเหน็บ — สมาชิกส่วนใหญ่เป็นเพียงคนธรรมดาที่ศรัทธาอย่างบริสุทธิ์ใจ ไม่รู้ว่าผู้นำระดับสูงกำลังหว่านโรคระบาด Frigid Vow อย่างจงใจ เพื่อสังเวยชีวิตและวิญญาณของผู้ติดเชื้อให้กับพิธีกรรมที่จะมอบพลังและชีวิตอมตะให้ Bram
+
+หากตัวละครหยุด Bram ไม่ทัน ความหนาวเย็นจะเริ่มกัดกินจากตอนเหนือของ Wildemount ลุกลามเป็นโรคระบาดกลายเป็นน้ำแข็งไปทั่วทั้งภูมิภาค และท้ายที่สุดทั้งโลกจะถูกความหนาวเย็นกลืนกินจนกลายเป็นน้ำแข็งทั้งใบ
+
+## Adventure Summary
+
+**EP1 — A Village in Mourning** (level 1-2): ตัวละครสืบหาสาเหตุการตายของ Urgon Wenth ใน Palebank Village ตามรอยขวดแก้วปนเปื้อนผ่าน Tulgi Lutan และร้าน Pelc's Curiosities ที่ถูกปล้น จนบุกฐานของแก๊ง Uttolot ใน Croaker Cave พบว่า Hulil Lutan ขายขวดแก้วให้พ่อค้า Irven Liel ไปแล้ว จบด้วยข่าวร้ายว่าทั้งครอบครัว Irven ติดเชื้อ Frigid Vow และต้องเดินทางไป Eiselcross เพื่อหายารักษา
+
+**EP2 — The Salsvault Expedition** (level 2-3): ตัวละครล่องเรือไปยัง Syrinlya ด่านหน้าของ Uthodurn บนเกาะ Foren ตามรอย Urgon ไปยัง Salsvault ซากห้องแล็บของนคร Aeor ฝ่าฟันชุดเกราะมีชีวิต ซอมบี้ และ Ferol Sal เนโครแมนเซอร์อันเดชที่ยังหมกมุ่นทดลองอยู่ จนพบยารักษา Frigid Vow และนำกลับมาช่วย Palebank Village ได้ทัน
+
+**EP3 — Little Thieves of Palebank** (level 3-4): ตัวละครสืบหาต้นตอของ/หาย ตามรอยไปพบ Thistlewick ถูกกลุ่มกอบลินจับขังไว้ในถ้ำนอกหมู่บ้าน หลังช่วยเหลือและได้รับความไว้วางใจ Thistlewick เผยว่าเดินทางมาจาก Kravaraad เพื่อหายารักษาให้เพื่อน ผลักดันให้กลุ่มออกเดินทางสู่ Kravaraad
+
+**EP4 — Ashes and Alms** (level 4-5): ตัวละครเดินทางถึงค่ายบรรเทาทุกข์ของ The Everwarm ที่ตีนภูเขาไฟ Kravaraad พบว่าผู้ป่วยระยะท้ายบางคน "หายตัวไป" เงียบๆ ตามรอยจนพบตราประทับลึกลับในบัญชีบริจาคของค่าย ก่อนบุกถ้ำลับของลัทธิ ปะทะ mini-boss Warden Korrin Ashbrand แล้วพบทางเชื่อมตรงสู่ Cinderrest Sanctum
+
+**EP5 — Ashes of the Faithful** (level 5-6): ตัวละครสำรวจ Cinderrest Sanctum พบตระกูล Dust และ Jeramess Dust ผู้พิทักษ์ศาลเจ้า ค้นพบว่าเถ้าถ่านจากพิธีเผาศพถูกใช้ผิดวัตถุประสงค์ในพิธีลับของ Everwarm เผชิญหน้าสาวกระดับสูง High Devoted Varnis Cinderfell ได้หลักฐานชี้ตัว Bram Ironvow ชัดเจนเป็นครั้งแรก ก่อนเดินทางสู่ Uthodurn
+
+**EP6 — The Last Warm Lie** (level 6, ไคลแม็กซ์): ตัวละครเปิดโปง Bram ต่อหน้าสภาเมือง Uthodurn เผชิญการตอบโต้ทางการเมืองใน "Trial of Words" สืบเพิ่มด้วยความช่วยเหลือของ Thistlewick แล้วไล่ตาม Bram ลงไปในอุโมงค์ Uthodurn Undercroft เพื่อหยุดพิธีกรรมสุดท้าย จบด้วยการเผชิญหน้ากับ Bram ที่แปรสภาพเป็นอสูรกายน้ำแข็ง และ Jeramess Dust ที่เฉลยตัวเป็นมือขวา
+
+*(รายละเอียดฉากต่อฉาก, NPC, DC, tactics และ treasure ของแต่ละ EP อยู่ในไฟล์ journal แยกของแต่ละตอน — ดู `EP01 - A Village in Mourning.md` ถึง `EP06 - The Last Warm Lie.md` ในโฟลเดอร์ `ACT01-the-plague-covenant/`)*
 
 ## จุดเชื่อมกับ Astral Nexus: Constellation Protocol
 - อิงจาก: **Wildemount: Frozensick** — EP1-2 *คือ* เนื้อหาต้นฉบับนี้โดยตรง (ดัดแปลงเล็กน้อย) ส่วน EP3-6 เป็นภาคต่อ homebrew ที่เปิดเรื่องทันทีหลังตัวละครนำยารักษากลับมาถึง Palebank Village ตอนจบ EP2

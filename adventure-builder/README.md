@@ -57,7 +57,7 @@ Claude จะสัมภาษณ์ทีละหัวข้อ (ขนา�
 
 | ไฟล์ | เนื้อหา |
 |---|---|
-| `00-overview-journal.md` (root) | ภาพรวมทั้งเรื่องแบบ prose เต็ม (ไม่ลงรายละเอียดห้อง/encounter) |
+| `00-overview.md` (root) | ภาพรวมทั้งเรื่องแบบ prose เต็ม (ไม่ลงรายละเอียดห้อง/encounter) |
 | `ACT0X-<slug>/EP0Y - ชื่อตอนเต็ม.md` | แต่ละ EP แยกไฟล์ ลงรายละเอียดห้องต่อห้อง/encounter เต็มรูปแบบ อยู่ในโฟลเดอร์ Act เดียวกับ chapter brief — เลข EP นับต่อเนื่องทั้ง Act ไม่มี `CH0X-` นำหน้าแม้ Act จะมีหลาย Chapter — ถ้า EP นั้นเคยมีไฟล์ outline แยก (`EP0Y-slug.md`) มาก่อน ไฟล์นั้นจะถูกรวมเข้า journal นี้แล้วลบทิ้ง เหลือไฟล์เดียวต่อ EP เสมอ |
 
 ไฟล์คำสั่งอยู่ที่ [.claude/commands/build-ep.md](../.claude/commands/build-ep.md) ถ้าอยากปรับกฎการขยายหรือรูปแบบไฟล์ผลลัพธ์ แก้ที่ไฟล์นั้นได้เลย ส่วน [journal-template.md](./journal-template.md) ยังใช้เป็น reference กลาง (คู่มือ syntax + ตัวอย่างเต็ม) ที่คำสั่งนี้อ่านอ้างอิงทุกครั้ง
