@@ -4721,5 +4721,661 @@
         }
       }
     }
+  },
+  {
+    "id": "character-2ab85ae9-5526-4f09-aa65-e962115f7e76",
+    "name": "Temp PM",
+    "status": "Astral Nexus",
+    "ownerId": "user-205a78cf-df8b-4b97-ba2d-afbdd5fca757",
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "campaignIds": [
+      "campaign-463b8715-b9f6-4448-a406-f93ef52235be"
+    ],
+    "classLevels": [
+      {
+        "id": "classlevel-378cc204-bd2c-41f7-ab64-67593349a786",
+        "className": "Druid",
+        "subclassName": "Circle of the Moon",
+        "level": 1
+      }
+    ],
+    "species": "Mousefolk (Mouseling)",
+    "background": "Guide",
+    "size": "Small",
+    "stats": {
+      "str": 11,
+      "dex": 16,
+      "con": 16,
+      "int": 14,
+      "wis": 18,
+      "cha": 12
+    },
+    "alignment": "",
+    "faith": "",
+    "gender": "",
+    "eyes": "",
+    "hair": "",
+    "skin": "",
+    "height": "",
+    "weight": "",
+    "age": "",
+    "ideals": "",
+    "bonds": "",
+    "flaws": "",
+    "personalityTraits": "",
+    "appearance": "",
+    "biography": "",
+    "note": "",
+    "images": [],
+    "activeImageId": "",
+    "combat": {
+      "ac": "",
+      "speed": "",
+      "hitDice": "",
+      "inspiration": false,
+      "xp": "",
+      "hp": {
+        "max": "",
+        "current": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": true,
+      "wis": true,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": true,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": true,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": true,
+        "expertise": false
+      },
+      "survival": {
+        "prof": true,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "",
+        "bonusOrDC": "",
+        "damages": [
+          {
+            "amount": "",
+            "type": ""
+          }
+        ]
+      },
+      {
+        "name": "",
+        "bonusOrDC": "",
+        "damages": [
+          {
+            "amount": "",
+            "type": ""
+          }
+        ]
+      },
+      {
+        "name": "",
+        "bonusOrDC": "",
+        "damages": [
+          {
+            "amount": "",
+            "type": ""
+          }
+        ]
+      }
+    ],
+    "attacksSpellcasting": "",
+    "currency": {
+      "cp": "",
+      "sp": "",
+      "ep": "",
+      "gp": "",
+      "pp": ""
+    },
+    "equipment": [
+      "Waterskin",
+      "Rations (1 day) x7",
+      "Backpack",
+      "Studded Leather",
+      "Wooden Staff"
+    ],
+    "proficienciesLanguages": [],
+    "featuresAndTraits": [],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "",
+    "spellcasting": {
+      "spellcastingClass": "Druid",
+      "spellcastingAbility": "WIS",
+      "spellSaveDC": "14",
+      "spellAttackBonus": "+6",
+      "cantrips": [
+        {
+          "name": "Druidcraft"
+        },
+        {
+          "name": " Guidance"
+        },
+        {
+          "name": "Produce Flame"
+        },
+        {
+          "name": "Primal Savagery (Magic Initiate)"
+        },
+        {
+          "name": "Frostbite (Magic Initiate)"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": "2",
+          "slotsRemaining": "2",
+          "spells": [
+            {
+              "name": "Thorn Armor",
+              "prepared": true
+            },
+            {
+              "name": " Cure Wounds",
+              "prepared": true
+            },
+            {
+              "name": "Fog Cloud",
+              "prepared": true
+            },
+            {
+              "name": "Animal Friendship",
+              "prepared": true
+            },
+            {
+              "name": "Icicle Javelin",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": "",
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
   }
 ]
