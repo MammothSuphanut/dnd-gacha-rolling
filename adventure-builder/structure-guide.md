@@ -48,7 +48,7 @@ adventures/<slug>/
 
 ## ตัวอย่างที่คำนวณจากกฎทั้งสาม
 
-### One-shot / short campaign (≤10 EP, Act เดียว — ตรงกับ `frozen-sick-the-plague-covenant` ปัจจุบัน)
+### One-shot / short campaign แบบไม่มี Chapter (≤10 EP, Act เดียว, EP เรียงตรง)
 
 ```
 adventures/<slug>/
@@ -57,10 +57,34 @@ adventures/<slug>/
   02-npcs.md
   99-notes.md
   ACT01-<slug>/
-    00-act-outline.md                              สารบัญ EP ทั้งหมดของ Act เดียวนี้
+    00-act-outline.md                              สารบัญ EP ทั้งหมดของ Act เดียวนี้ (ไม่มี Chapter คั่น)
     EP01-<slug>.md ... EP06-<slug>.md              outline เต็มทุก EP (เขียนตั้งแต่ /build-adventure — สถานะชั่วคราวก่อนถูกรวมเข้า journal)
 ```
-เมื่อ `/build-ep` ขยาย EP ไหนเป็น journal เต็มแล้ว ไฟล์ `EP0Y-<slug>.md` ของ EP นั้นจะถูกรวมเข้า `EP0Y - <ชื่อตอน>.md` แล้วลบทิ้งทันที (ดูกฎ 2) — ถ้าขยายครบทุก EP แล้ว โฟลเดอร์นี้จะเหลือแค่ `00-act-outline.md` + `EP01 - <ชื่อตอน>.md` ... `EP06 - <ชื่อตอน>.md` เท่านั้น ไม่มีไฟล์ `EP0Y-<slug>.md` ค้างอยู่คู่กันเลย (ดูตัวอย่างจริงที่ `frozen-sick-the-plague-covenant/ACT01-the-plague-covenant/`)
+เมื่อ `/build-ep` ขยาย EP ไหนเป็น journal เต็มแล้ว ไฟล์ `EP0Y-<slug>.md` ของ EP นั้นจะถูกรวมเข้า `EP0Y - <ชื่อตอน>.md` แล้วลบทิ้งทันที (ดูกฎ 2) — ถ้าขยายครบทุก EP แล้ว โฟลเดอร์นี้จะเหลือแค่ `00-act-outline.md` + `EP01 - <ชื่อตอน>.md` ... `EP06 - <ชื่อตอน>.md` เท่านั้น ไม่มีไฟล์ `EP0Y-<slug>.md` ค้างอยู่คู่กันเลย
+
+### Short campaign ที่แบ่ง Chapter ภายใน Act เดียว (ตรงกับ `frozen-sick-the-plague-covenant` ปัจจุบัน)
+
+Act เดียวไม่ได้แปลว่าห้ามมี Chapter — ถ้าเนื้อเรื่องมีจังหวะ/arc ย่อยชัดเจน (แม้ EP รวมจะ ≤10) ก็แบ่ง Chapter ภายใน Act เดียวนั้นได้ตามกฎ 2 ปกติ:
+
+```
+adventures/<slug>/
+  00-overview.md
+  01-hook-and-antagonist.md
+  02-npcs.md
+  99-notes.md
+  ACT01-<slug>/
+    00-act-outline.md              สารบัญ: Chapter ไหนมี EP ไหน
+    CH01-<slug>.md                  chapter brief มีหัวข้อ "EP ในบทนี้" ลิงก์ไปไฟล์ journal ของแต่ละ EP ในบทนั้น
+    EP01 - <ชื่อตอน>.md            journal เต็ม (ไม่มี CH0X- นำหน้า — กฎเดียวกับ long campaign)
+    EP02 - <ชื่อตอน>.md
+    CH02-<slug>.md
+    EP03 - <ชื่อตอน>.md
+    EP04 - <ชื่อตอน>.md
+    CH03-<slug>.md
+    EP05 - <ชื่อตอน>.md
+    EP06 - <ชื่อตอน>.md
+```
+(ดูตัวอย่างจริงที่ `frozen-sick-the-plague-covenant/ACT01-the-plague-covenant/`)
 
 ### Long campaign หลาย Act หลาย Chapter (>10 EP รวม — ตรงกับ `aeorian-cataclysm` ปัจจุบัน)
 
