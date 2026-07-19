@@ -22,10 +22,10 @@
 | ฝ่า Prelate Iskavel Thorn ผู้พิทักษ์วงเวท | 17 → 18 |
 | โค่น Vaelkor Thess (จบ Act 5) | 18 → 19 |
 
-## สารบัญ Chapter
-- [Chapter 1: Glintshore — เผชิญหน้าครั้งแรก](./CH01-first-encounter-at-glintshore/00-chapter-brief.md) `Level 14`
-- [Chapter 2: ภารกิจสร้างอาร์ติแฟกต์](./CH02-artifact-quest/00-chapter-brief.md) `Level 14 → 17`
-- [Chapter 3: การล่มสลายของ Vaelkor Thess](./CH03-fall-of-vaelkor-thess/00-chapter-brief.md) `Level 17 → 19`
+## สารบัญ Chapter → EP
+- [Chapter 1: Glintshore — เผชิญหน้าครั้งแรก](./CH01-first-encounter-at-glintshore.md) `Level 14`
+- [Chapter 2: ภารกิจสร้างอาร์ติแฟกต์](./CH02-artifact-quest.md) `Level 14 → 17`
+- [Chapter 3: การล่มสลายของ Vaelkor Thess](./CH03-fall-of-vaelkor-thess.md) `Level 17 → 19`
 
 ---
 [← Act 4](../ACT04-rifts-of-issylra/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 6 →](../ACT06-return-to-aeor-lab/00-act-outline.md)

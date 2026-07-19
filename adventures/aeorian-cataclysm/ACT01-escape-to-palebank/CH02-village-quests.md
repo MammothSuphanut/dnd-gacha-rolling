@@ -16,4 +16,4 @@
 - **EP สุดท้าย — ออกเดินทาง**: หัวหน้าหมู่บ้านมอบแผนที่ Eiselcross + เตรียมเรือส่งตัวละครออกเดินทาง
 
 ---
-[← Chapter 1](../CH01-escape-and-arrival/00-chapter-brief.md) · [Act 1 outline](../00-act-outline.md) · [Chapter 3 →](../CH03-journey-to-eiselcross/00-chapter-brief.md)
+[← Chapter 1](./CH01-escape-and-arrival.md) · [Act 1 outline](./00-act-outline.md) · [Chapter 3 →](./CH03-journey-to-eiselcross.md)

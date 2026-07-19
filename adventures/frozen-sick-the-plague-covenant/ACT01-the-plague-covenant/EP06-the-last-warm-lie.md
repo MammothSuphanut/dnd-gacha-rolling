@@ -8,10 +8,10 @@
 ## NPC ประจำ EP
 | ชื่อ | บทบาท | หมายเหตุ |
 |---|---|---|
-| **ราชินี Judessa Fruunast** | ประมุขแห่ง Uthodurn (ดูรายละเอียดเต็มใน [02-npcs.md](./02-npcs.md)) | ผู้ตัดสินใน "Trial of Words" วันที่ 1 — ไว้ใจ Bram มานาน ต้องใช้ทั้งหลักฐานและการโน้มน้าวถึงจะเอนเอียงเชื่อ |
-| **Bram Ironvow** | Antagonist หลัก (ดูรายละเอียดเต็มใน [01-hook-and-antagonist.md](./01-hook-and-antagonist.md)) | เผชิญหน้าทางการเมืองวันที่ 1 แล้วแปรสภาพเป็น boss fight phase 2 ท้าย EP |
-| **Jeramess Dust** | มือขวาของ Bram (ดูรายละเอียดเต็มใน [02-npcs.md](./02-npcs.md)) | เฉลยตัวตอนบุกห้องพิธี, boss fight phase 1 |
-| **Thistlewick** | พันธมิตร (ดูรายละเอียดเต็มใน [02-npcs.md](./02-npcs.md)) | รับหน้าที่สอดแนมคฤหาสน์ Bram วันที่ 2 |
+| **ราชินี Judessa Fruunast** | ประมุขแห่ง Uthodurn (ดูรายละเอียดเต็มใน [02-npcs.md](../02-npcs.md)) | ผู้ตัดสินใน "Trial of Words" วันที่ 1 — ไว้ใจ Bram มานาน ต้องใช้ทั้งหลักฐานและการโน้มน้าวถึงจะเอนเอียงเชื่อ |
+| **Bram Ironvow** | Antagonist หลัก (ดูรายละเอียดเต็มใน [01-hook-and-antagonist.md](../01-hook-and-antagonist.md)) | เผชิญหน้าทางการเมืองวันที่ 1 แล้วแปรสภาพเป็น boss fight phase 2 ท้าย EP |
+| **Jeramess Dust** | มือขวาของ Bram (ดูรายละเอียดเต็มใน [02-npcs.md](../02-npcs.md)) | เฉลยตัวตอนบุกห้องพิธี, boss fight phase 1 |
+| **Thistlewick** | พันธมิตร (ดูรายละเอียดเต็มใน [02-npcs.md](../02-npcs.md)) | รับหน้าที่สอดแนมคฤหาสน์ Bram วันที่ 2 |
 | **High Devoted Varnis Cinderfell** (เงื่อนไข) | บอสรองจาก EP5 | ปรากฏตัวเฉพาะถ้าหนีรอดมาจาก EP5 — ดูหัวข้อ "เช็คก่อนเริ่ม EP" ด้านล่าง |
 
 ## ของสะสมที่ต้องใช้ในไคลแม็กซ์ (เช็คก่อนรัน EP)

@@ -12,4 +12,4 @@
 - **EP2 — ตอนจบ (จบ Act 4)**: Archprelate Solvenne ถอด Fragment of Genesis มอบให้ตัวละคร
 
 ---
-[← Chapter 2](../CH02-closing-the-rifts/00-chapter-brief.md) · [Act 4 outline](../00-act-outline.md) · [Act 5 →](../../ACT05-glintshore-god-of-death/00-act-outline.md)
+[← Chapter 2](./CH02-closing-the-rifts.md) · [Act 4 outline](./00-act-outline.md) · [Act 5 →](../ACT05-glintshore-god-of-death/00-act-outline.md)

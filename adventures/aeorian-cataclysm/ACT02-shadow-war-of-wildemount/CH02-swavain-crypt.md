@@ -16,4 +16,4 @@
 - **EP2 — สุสานนักเดินเรือ**: ดันเจี้ยนใต้น้ำ, บอสไฟต์ Thessaly Vane, ได้ Fragment of Void ครบสมบูรณ์ จบ Act 2
 
 ---
-[← Chapter 1](../CH01-dwendalian-to-xhorhas/00-chapter-brief.md) · [Act 2 outline](../00-act-outline.md) · [Act 3 →](../../ACT03-demon-cult-of-taldorei/00-act-outline.md)
+[← Chapter 1](./CH01-dwendalian-to-xhorhas.md) · [Act 2 outline](./00-act-outline.md) · [Act 3 →](../ACT03-demon-cult-of-taldorei/00-act-outline.md)

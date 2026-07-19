@@ -16,7 +16,7 @@ Checklist ติดตามงานที่เหลือ หลังจา
 - [x] **Act 6**: บทส่งท้ายสั้น ไม่ต้องเพิ่มภูมิศาสตร์ใหม่ (เป็นการเดินทางกลับผ่านเส้นทาง Act 1 เดิม)
 
 ## ปมอื่นที่ยังค้างอยู่ (ไม่เกี่ยวกับภูมิศาสตร์)
-- [ ] ลง detail ระดับ EP จริง (stat block เต็ม, DC เฉพาะจุด, boxed read-aloud text) — ตอนนี้ทุก Chapter brief มีแค่ระดับ outline + CR แนะนำ + ลิสต์ EP ที่แนะนำ ยังไม่ใช่ journal เต็มรูปแบบ (ใช้ `/build-journal` ได้เมื่อพร้อม) — ทำแบบ just-in-time ก่อนใกล้เล่นถึง EP นั้นจริง ไม่ต้องลงล่วงหน้าทั้งแคมเปญ
+- [ ] ลง detail ระดับ EP จริง (stat block เต็ม, DC เฉพาะจุด, boxed read-aloud text) — ตอนนี้ทุก Chapter brief มีแค่ระดับ outline + CR แนะนำ + ลิสต์ EP ที่แนะนำ ยังไม่ใช่ journal เต็มรูปแบบ (ใช้ `/build-ep` ได้เมื่อพร้อม) — ทำแบบ just-in-time ก่อนใกล้เล่นถึง EP นั้นจริง ไม่ต้องลงล่วงหน้าทั้งแคมเปญ
 - [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้ว: Flay, Grok, Chin, Messenger, Voss Kaldrenar, Ren Sk'val, Thessaly Vane, Prelate Iskavel Thorn, Vaelkor Thess, Sable Anwari, Corvain Delthasar, Archprelate Solvenne Wyrenhall
 
 ## เสร็จแล้ว
@@ -25,4 +25,4 @@ Checklist ติดตามงานที่เหลือ หลังจา
 - [x] กลไกเกม The Fragment ทั้ง 5 ชิ้น (`01-the-fragments.md`)
 - [x] sync ชื่อตัวร้าย Vaelkor Thess ข้าม Act ทั้งหมด
 - [x] pass ภูมิศาสตร์เต็มทุก Act ผูกกับแผนที่ Exandria จริง + แก้จุดที่ใช้สถานที่ผิดทวีปใน Act 4 (Kraghammer/Bysaes Tyl ย้ายไป Act 3 ที่ถูกต้อง)
-- [x] แปลง Act 1–6 ทั้งหมดจากไฟล์ `ACT0X.md` แบนราบ เป็นโครงสร้างโฟลเดอร์ `ACT0X-slug/00-act-outline.md` + `CH0X-slug/00-chapter-brief.md` (แต่ละ Chapter brief มีลิสต์ EP ที่แนะนำต่อท้าย) — `sessions/` folder (บันทึกการเล่นจริง) ไม่แตะต้อง ยังทำหน้าที่แยกกัน
+- [x] แปลง Act 1–6 ทั้งหมดจากไฟล์ `ACT0X.md` แบนราบ เป็นโครงสร้างโฟลเดอร์ `ACT0X-slug/00-act-outline.md` + Chapter/EP เป็นไฟล์แบน `CH0X-slug.md` / `CH0X-EP0Y-journal.md` วางเรียงต่อกันในโฟลเดอร์ Act เดียวกัน (ไม่มีโฟลเดอร์ `CH0X-slug/` ซ้อนอีกชั้น — ดูกติกาเต็มที่ [adventure-builder/structure-guide.md](../../adventure-builder/structure-guide.md)) — `sessions/` folder (บันทึกการเล่นจริง) ไม่แตะต้อง ยังทำหน้าที่แยกกัน

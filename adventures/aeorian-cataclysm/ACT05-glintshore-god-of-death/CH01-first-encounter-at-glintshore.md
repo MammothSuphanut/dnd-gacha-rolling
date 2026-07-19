@@ -11,4 +11,4 @@ Sable เตือนว่า ถ้าไม่สามารถตัดข�
 - **EP1 — วงเวทครอบเกาะ**: เผชิญหน้า Vaelkor ครั้งแรก, ฉากบังคับหนี, Sable Anwari ช่วยเหลือ
 
 ---
-[← Act 5 outline](../00-act-outline.md) · [Chapter 2 →](../CH02-artifact-quest/00-chapter-brief.md)
+[← Act 5 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-artifact-quest.md)

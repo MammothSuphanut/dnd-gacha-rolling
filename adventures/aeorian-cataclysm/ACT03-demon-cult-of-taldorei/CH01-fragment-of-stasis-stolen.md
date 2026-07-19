@@ -14,4 +14,4 @@ Vhaltos หักหลังโจรทันทีที่ปรากฏต
 - **EP2 — ทลายรังโจร Ashfang**: บุกรัง, Vhaltos หักหลังทุกฝ่ายแล้วขโมย Fragment หนีไป
 
 ---
-[← Act 3 outline](../00-act-outline.md) · [Chapter 2 →](../CH02-chase-across-taldorei/00-chapter-brief.md)
+[← Act 3 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-chase-across-taldorei.md)

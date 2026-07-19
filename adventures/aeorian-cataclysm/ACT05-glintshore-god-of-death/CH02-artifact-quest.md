@@ -16,4 +16,4 @@
 - **EP3 — คณะต่อต้านลับแห่ง Taloned Highlands**: social encounter + ทดสอบการต่อสู้ ~CR 13
 
 ---
-[← Chapter 1](../CH01-first-encounter-at-glintshore/00-chapter-brief.md) · [Act 5 outline](../00-act-outline.md) · [Chapter 3 →](../CH03-fall-of-vaelkor-thess/00-chapter-brief.md)
+[← Chapter 1](./CH01-first-encounter-at-glintshore.md) · [Act 5 outline](./00-act-outline.md) · [Chapter 3 →](./CH03-fall-of-vaelkor-thess.md)

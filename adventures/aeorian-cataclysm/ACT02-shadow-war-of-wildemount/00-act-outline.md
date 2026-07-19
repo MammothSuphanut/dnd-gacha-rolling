@@ -15,9 +15,9 @@ Wildemount เป็นทวีปขนาดใหญ่ Dwendalian Empire �
 | เดินทางสู่สุสานใต้สมุทร | 6 |
 | สุสานนักเดินเรือ (จบ Act 2) | 6 → 7 |
 
-## สารบัญ Chapter
-- [Chapter 1: ครึ่งที่ 1 — จาก Dwendalian สู่ Xhorhas](./CH01-dwendalian-to-xhorhas/00-chapter-brief.md) `Level 3 → 6`
-- [Chapter 2: ครึ่งที่ 2 — สุสานใต้สมุทรแห่ง Swavain Islands](./CH02-swavain-crypt/00-chapter-brief.md) `Level 6 → 7`
+## สารบัญ Chapter → EP
+- [Chapter 1: ครึ่งที่ 1 — จาก Dwendalian สู่ Xhorhas](./CH01-dwendalian-to-xhorhas.md) `Level 3 → 6`
+- [Chapter 2: ครึ่งที่ 2 — สุสานใต้สมุทรแห่ง Swavain Islands](./CH02-swavain-crypt.md) `Level 6 → 7`
 
 ---
 [← Act 1](../ACT01-escape-to-palebank/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 3 →](../ACT03-demon-cult-of-taldorei/00-act-outline.md)

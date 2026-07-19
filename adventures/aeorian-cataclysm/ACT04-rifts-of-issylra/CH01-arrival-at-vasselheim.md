@@ -7,4 +7,4 @@
 - **EP1 — มาถึง Vasselheim**: พบ Archprelate Solvenne Wyrenhall, รับงาน, ได้รายชื่อ 3 จุดรอยแยก
 
 ---
-[← Act 4 outline](../00-act-outline.md) · [Chapter 2 →](../CH02-closing-the-rifts/00-chapter-brief.md)
+[← Act 4 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-closing-the-rifts.md)

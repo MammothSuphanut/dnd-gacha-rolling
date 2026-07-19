@@ -9,4 +9,4 @@
 - **EP3 — Wildwood/Bramblewood (ใกล้ Westruun)**: ตามทันที่จุดพักเปิดประตูมิติของ Vhaltos
 
 ---
-[← Chapter 1](../CH01-fragment-of-stasis-stolen/00-chapter-brief.md) · [Act 3 outline](../00-act-outline.md) · [Chapter 3 →](../CH03-demon-lair-and-aftermath/00-chapter-brief.md)
+[← Chapter 1](./CH01-fragment-of-stasis-stolen.md) · [Act 3 outline](./00-act-outline.md) · [Chapter 3 →](./CH03-demon-lair-and-aftermath.md)

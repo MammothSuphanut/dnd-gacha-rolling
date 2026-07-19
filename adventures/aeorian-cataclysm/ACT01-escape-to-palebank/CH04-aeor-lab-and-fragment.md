@@ -18,7 +18,7 @@
 
 > **Messenger คือใคร**: เธอตั้งใจจริงที่จะหยุด Ofear ไม่ให้ทำงานเพื่อไม่ให้โลกพังทลาย เธอ**ไม่รู้เรื่องที่ลัทธิเปิดเรื่องและ Lich อยู่เบื้องหลังแผนทั้งหมด** — ในสายตาเธอ ตัวละครคือความหวังที่มาถูกที่ถูกเวลาโดยบังเอิญ ทำให้ Act 5 เป็นโศกนาฏกรรมสำหรับเธอด้วย ไม่ใช่แค่ตัวละคร
 >
-> เธอยังถูกผูกติดกับ Aeor Lab แห่งนี้ ออกไปไหนไกลไม่ได้ จึงต้องฝากความหวังไว้กับตัวละครในการตามหา Fragment ที่เหลือ (ดูเหตุผลเต็มและตอนจบของเธอใน [Act 6](../../ACT06-return-to-aeor-lab/00-act-outline.md))
+> เธอยังถูกผูกติดกับ Aeor Lab แห่งนี้ ออกไปไหนไกลไม่ได้ จึงต้องฝากความหวังไว้กับตัวละครในการตามหา Fragment ที่เหลือ (ดูเหตุผลเต็มและตอนจบของเธอใน [Act 6](../ACT06-return-to-aeor-lab/00-act-outline.md))
 
 ## Fortress of the Dead Jarl — Fragment of Wisdom ชิ้นแรก
 เบาะแสจาก Messenger พาตัวละครไปถึง **Fortress of the Dead Jarl** ป้อมปราการร้างที่มี **Golem ผู้พิทักษ์** เฝ้าอยู่ (อุปสรรค/trap-like encounter ระดับรอง ไม่ใช่บอสหลัก) ตัวละครต้องต่อสู้ฝ่า Golem เข้าไปด้านใน
@@ -41,4 +41,4 @@ Messenger เองยังคงเฝ้ารออยู่ที่ Aeor L
 - **EP4 — จบ Act 1**: กลับไปคืน Fragment ให้ Messenger เสริมพลังนำทาง
 
 ---
-[← Chapter 3](../CH03-journey-to-eiselcross/00-chapter-brief.md) · [Act 1 outline](../00-act-outline.md) · [Act 2 →](../../ACT02-shadow-war-of-wildemount/00-act-outline.md)
+[← Chapter 3](./CH03-journey-to-eiselcross.md) · [Act 1 outline](./00-act-outline.md) · [Act 2 →](../ACT02-shadow-war-of-wildemount/00-act-outline.md)

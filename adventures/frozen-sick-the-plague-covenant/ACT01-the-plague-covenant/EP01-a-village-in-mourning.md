@@ -2,7 +2,7 @@
 
 - Session โดยประมาณ: 1-2
 - Level: 1 (เริ่ม) - 2 (จบ EP, milestone level up)
-- ที่มา: ดัดแปลงจากแคมเปญต้นฉบับ **"Frozen Sick"** (Wildemount) เกือบทั้งหมด — เนื้อหาเต็มอยู่ใน [`journal/EP01-journal.md`](./journal/EP01-journal.md)
+- ที่มา: ดัดแปลงจากแคมเปญต้นฉบับ **"Frozen Sick"** (Wildemount) เกือบทั้งหมด — เนื้อหาเต็มอยู่ใน [`EP01-journal.md`](./EP01-journal.md)
 - เป้าหมายเชิงเรื่อง: ตัวละครสืบหาสาเหตุการตายประหลาดของ Urgon Wenth นักสำรวจชาว Dwarf ใน Palebank Village จนพบว่าโรค **Frigid Vow** แพร่มาจากขวดแก้วปนเปื้อนที่เขานำกลับมาจาก Eiselcross ตามรอยขวดแก้วผ่านโจรขโมยของ (Tulgi Lutan) ไปจนถึงแก๊งอาชญากรตระกูล Uttolot ที่ซ่อนตัวใน Croaker Cave ปิดท้ายด้วยข่าวร้ายว่าโรคกำลังลุกลามและต้องเดินทางไปหายารักษาถึง Eiselcross
 - เป้าหมายเชิงกลไก: จบ EP ที่ level 2 (milestone), การสืบสวน/เจรจาเป็นแกนหลัก, combat หลัก 2 ครั้ง (Pelc's Curiosities bandits, Croaker Cave), ปูตัวจับเวลาโรคระบาด (NPC ติดเชื้อนับถอยหลัง)
 

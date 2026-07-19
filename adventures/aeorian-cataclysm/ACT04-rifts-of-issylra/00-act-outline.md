@@ -17,10 +17,10 @@
 | บุกห้องทดลองของ Delthasar — Sunderpeak Mountains | 13 → 14 |
 | ตอนจบ: Archprelate ถอด Fragment (จบ Act 4) | 14 |
 
-## สารบัญ Chapter
-- [Chapter 1: มาถึง Vasselheim](./CH01-arrival-at-vasselheim/00-chapter-brief.md) `Level 10`
-- [Chapter 2: ปิดรอยแยกมิติทั้ง 3 จุด](./CH02-closing-the-rifts/00-chapter-brief.md) `Level 10 → 13`
-- [Chapter 3: ห้องทดลองของ Delthasar และตอนจบ](./CH03-delthasars-lab/00-chapter-brief.md) `Level 13 → 14`
+## สารบัญ Chapter → EP
+- [Chapter 1: มาถึง Vasselheim](./CH01-arrival-at-vasselheim.md) `Level 10`
+- [Chapter 2: ปิดรอยแยกมิติทั้ง 3 จุด](./CH02-closing-the-rifts.md) `Level 10 → 13`
+- [Chapter 3: ห้องทดลองของ Delthasar และตอนจบ](./CH03-delthasars-lab.md) `Level 13 → 14`
 
 ---
 [← Act 3](../ACT03-demon-cult-of-taldorei/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 5 →](../ACT05-glintshore-god-of-death/00-act-outline.md)

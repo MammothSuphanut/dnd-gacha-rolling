@@ -9,11 +9,12 @@
 | เดินทางถึง Aeor Lab site | 3 |
 | จบ Fortress of the Dead Jarl (รวม Mindflayer + Golem/Jarl) | 3 + 30–40% สู่ 4 |
 
-## สารบัญ Chapter
-- [Chapter 1: หนีจากลัทธิ และมาถึง Palebank Village](./CH01-escape-and-arrival/00-chapter-brief.md) `Level 1`
-- [Chapter 2: ภารกิจช่วยหมู่บ้าน](./CH02-village-quests/00-chapter-brief.md) `Level 1 → 2`
-- [Chapter 3: เดินทางสู่ Eiselcross](./CH03-journey-to-eiselcross/00-chapter-brief.md) `Level 2 → 3`
-- [Chapter 4: Aeor Lab และ Fragment of Wisdom](./CH04-aeor-lab-and-fragment/00-chapter-brief.md) `Level 3+`
+## สารบัญ Chapter → EP
+- [Chapter 1: หนีจากลัทธิ และมาถึง Palebank Village](./CH01-escape-and-arrival.md) `Level 1`
+- [Chapter 2: ภารกิจช่วยหมู่บ้าน](./CH02-village-quests.md) `Level 1 → 2`
+- [Chapter 3: เดินทางสู่ Eiselcross](./CH03-journey-to-eiselcross.md) `Level 2 → 3`
+  - [EP1: Travel to Syrinlya](./CH03-EP01-journal.md)
+- [Chapter 4: Aeor Lab และ Fragment of Wisdom](./CH04-aeor-lab-and-fragment.md) `Level 3+`
 
 ---
 [← ภาพรวม](../00-overview.md) · [Act 2 →](../ACT02-shadow-war-of-wildemount/00-act-outline.md)

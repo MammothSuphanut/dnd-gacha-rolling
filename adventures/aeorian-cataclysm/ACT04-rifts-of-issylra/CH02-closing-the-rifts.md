@@ -16,4 +16,4 @@
 - **EP3 — Utesspire Mountains (กลางทวีป)**: ปิดรอยแยกที่ 3 ~CR 10
 
 ---
-[← Chapter 1](../CH01-arrival-at-vasselheim/00-chapter-brief.md) · [Act 4 outline](../00-act-outline.md) · [Chapter 3 →](../CH03-delthasars-lab/00-chapter-brief.md)
+[← Chapter 1](./CH01-arrival-at-vasselheim.md) · [Act 4 outline](./00-act-outline.md) · [Chapter 3 →](./CH03-delthasars-lab.md)

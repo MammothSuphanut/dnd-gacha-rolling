@@ -16,10 +16,10 @@
 | บุกรังปีศาจ | 9 → 10 |
 | ผลต่อลัทธิ (จบ Act 3) | 10 |
 
-## สารบัญ Chapter
-- [Chapter 1: Fragment of Stasis ถูกชิงไป](./CH01-fragment-of-stasis-stolen/00-chapter-brief.md) `Level 7 → 8`
-- [Chapter 2: ไล่ล่าข้ามดินแดน Tal'Dorei](./CH02-chase-across-taldorei/00-chapter-brief.md) `Level 8 → 9`
-- [Chapter 3: รังปีศาจ และผลต่อลัทธิ](./CH03-demon-lair-and-aftermath/00-chapter-brief.md) `Level 9 → 10`
+## สารบัญ Chapter → EP
+- [Chapter 1: Fragment of Stasis ถูกชิงไป](./CH01-fragment-of-stasis-stolen.md) `Level 7 → 8`
+- [Chapter 2: ไล่ล่าข้ามดินแดน Tal'Dorei](./CH02-chase-across-taldorei.md) `Level 8 → 9`
+- [Chapter 3: รังปีศาจ และผลต่อลัทธิ](./CH03-demon-lair-and-aftermath.md) `Level 9 → 10`
 
 ---
 [← Act 2](../ACT02-shadow-war-of-wildemount/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 4 →](../ACT04-rifts-of-issylra/00-act-outline.md)

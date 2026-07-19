@@ -2,7 +2,7 @@
 
 - Session โดยประมาณ: 1-2
 - Level: 2 (เริ่ม) - 3 (จบ EP, milestone level up)
-- ที่มา: ดัดแปลงจากแคมเปญต้นฉบับ **"Frozen Sick"** (Wildemount) เกือบทั้งหมด — เนื้อหาเต็มอยู่ใน [`journal/EP02-journal.md`](./journal/EP02-journal.md)
+- ที่มา: ดัดแปลงจากแคมเปญต้นฉบับ **"Frozen Sick"** (Wildemount) เกือบทั้งหมด — เนื้อหาเต็มอยู่ใน [`EP02-journal.md`](./EP02-journal.md)
 - เป้าหมายเชิงเรื่อง: ตัวละครล่องเรือไปยัง Syrinlya ด่านหน้าของ Uthodurn บนเกาะ Foren ในดินแดนน้ำแข็ง Eiselcross ตามรอย Urgon Wenth ไปยังซากปรักหักพัง **Salsvault** อดีตห้องแล็บของนคร Aeor เพื่อค้นหายารักษาโรค Frigid Vow กลับไปช่วย Palebank Village
 - เป้าหมายเชิงกลไก: จบ EP ที่ level 3 (milestone), การเดินทาง/เอาตัวรอดเป็นแกนกลาง, dungeon crawl เต็มรูปแบบใน Salsvault (ผัง S1-S18), ปิดท้ายด้วยยารักษาโรคที่ตัวละครต้องนำกลับ
 

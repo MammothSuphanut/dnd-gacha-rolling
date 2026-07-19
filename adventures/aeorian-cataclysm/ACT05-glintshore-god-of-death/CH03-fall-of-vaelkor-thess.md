@@ -16,4 +16,4 @@ Sable Anwari ช่วยประกอบส่วนประกอบทั�
 - **EP3 — โค่น Vaelkor Thess**: บอสไฟต์สุดท้ายของ Act พร้อม lair actions, ได้ Fragment of Zenith ครบ 5 ชิ้น
 
 ---
-[← Chapter 2](../CH02-artifact-quest/00-chapter-brief.md) · [Act 5 outline](../00-act-outline.md) · [Act 6 →](../../ACT06-return-to-aeor-lab/00-act-outline.md)
+[← Chapter 2](./CH02-artifact-quest.md) · [Act 5 outline](./00-act-outline.md) · [Act 6 →](../ACT06-return-to-aeor-lab/00-act-outline.md)

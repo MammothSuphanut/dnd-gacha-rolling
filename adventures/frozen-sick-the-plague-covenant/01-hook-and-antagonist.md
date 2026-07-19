@@ -1,6 +1,6 @@
 # Hook, Antagonist & Stakes
 
-*(ไฟล์นี้อธิบาย hook/antagonist ของสายเรื่อง **homebrew ภาคต่อ (EP3-6)** โดยเฉพาะ — EP1-2 เป็นการดัดแปลงจากแคมเปญต้นฉบับ "Frozen Sick" ที่จบสมบูรณ์ในตัวเอง ไม่เกี่ยวข้องกับ Bram Ironvow หรือ The Everwarm โดยตรง ดูรายละเอียด EP1-2 ได้ที่ [`EP01-a-village-in-mourning.md`](./EP01-a-village-in-mourning.md) และ [`EP02-the-salsvault-expedition.md`](./EP02-the-salsvault-expedition.md))*
+*(ไฟล์นี้อธิบาย hook/antagonist ของสายเรื่อง **homebrew ภาคต่อ (EP3-6)** โดยเฉพาะ — EP1-2 เป็นการดัดแปลงจากแคมเปญต้นฉบับ "Frozen Sick" ที่จบสมบูรณ์ในตัวเอง ไม่เกี่ยวข้องกับ Bram Ironvow หรือ The Everwarm โดยตรง ดูรายละเอียด EP1-2 ได้ที่ [`EP01-a-village-in-mourning.md`](./ACT01-the-plague-covenant/EP01-a-village-in-mourning.md) และ [`EP02-the-salsvault-expedition.md`](./ACT01-the-plague-covenant/EP02-the-salsvault-expedition.md))*
 
 ## Hook
 
