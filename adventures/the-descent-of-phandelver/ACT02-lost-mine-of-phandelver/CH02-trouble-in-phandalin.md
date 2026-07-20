@@ -5,9 +5,9 @@
 
 > **DM only**: Glasstaff ทำงานให้ Nezznar อยู่เบื้องหลัง เป็นผู้ส่งกลุ่มก็อบลินไปซุ่มโจมตีเกวียนใน Chapter 1
 
-## EP ที่แนะนำ
-- **EP3 — เมืองที่ตกอยู่ใต้เงา**: สำรวจ Phandalin, รับงานจากชาวเมือง, เก็บเบาะแสเรื่อง Redbrand
-- **EP4 — รังของ Redbrand**: บุกฐานลับใต้ Sleeping Giant เผชิญหน้า Glasstaff ได้เบาะแสเรื่อง Black Spider
+## สารบัญ EP
+- [EP3: Shadow Over Phandalin](<./EP03 - Shadow Over Phandalin.md>) — สำรวจ Phandalin, รับงานจากชาวเมือง, เก็บเบาะแสเรื่อง Redbrand
+- [EP4: Redbrand Hideout](<./EP04 - Redbrand Hideout.md>) — บุกฐานลับใต้ Sleeping Giant เผชิญหน้า Glasstaff ได้เบาะแสเรื่อง Black Spider
 
 ---
 [← Chapter 1](./CH01-a-dangerous-journey.md) · [Act 2 outline](./00-act-outline.md) · [Chapter 3 →](./CH03-the-spiders-web.md)

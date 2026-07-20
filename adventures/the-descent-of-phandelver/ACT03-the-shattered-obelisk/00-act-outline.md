@@ -17,7 +17,7 @@
 - [Chapter 3: รอยแยกมิติ](./CH03-rifts-in-reality.md) `Level 9-11`
 - [Chapter 4: ดาวที่ไร้แสง](./CH04-beyond-a-lightless-star.md) `Level 11-12`
 
-> **หมายเหตุสำหรับ /build-ep**: Act นี้เป็น Act สุดท้ายของแคมเปญ — เมื่อขยาย EP สุดท้าย (ใน Chapter 4) เป็น journal เต็มด้วย `/build-ep` ให้เพิ่ม section **"บทส่งท้าย: สัญญาณเรียกกลับ Nexus"** ต่อท้าย ก่อนหัวข้อ "หมายเหตุสำหรับ DM" ตามกฎใน [structure-guide.md](../../../adventure-builder/structure-guide.md) — เนื้อหาอ้างอิงจุดเชื่อม Astral Nexus ที่ระบุไว้ใน [00-overview.md](../../00-overview.md)
+> ✅ Act นี้ขยายเป็น journal เต็มครบทุก EP แล้ว (EP1-EP8) รวม section "บทส่งท้าย: สัญญาณเรียกกลับ Nexus" ใน [EP8: Sealing the Rift](<./EP08 - Sealing the Rift.md>) เรียบร้อย
 
 ---
 [← Act 2](../ACT02-lost-mine-of-phandelver/00-act-outline.md) · [ภาพรวม](../00-overview.md)

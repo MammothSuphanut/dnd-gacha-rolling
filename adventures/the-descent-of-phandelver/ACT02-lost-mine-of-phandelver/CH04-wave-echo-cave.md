@@ -7,8 +7,8 @@
 
 > **DM only**: นี่คือจุดเริ่มต้นของ [Act 3](../ACT03-the-shattered-obelisk/00-act-outline.md) — แท่งหินนี้คือ Obelisk ซึ่งเป็นเมล็ดพันธุ์แห่งการทำลายล้างของ Astral Nexus lore (ดู [00-overview.md](../../00-overview.md)) DM สามารถแทรกฉาก foreshadow เล็กๆ ไว้ตรงนี้ได้ เช่น เสียงกระซิบเบาๆ ที่ไม่มีใครเข้าใจ หรือฝันร้ายสั้นๆ ของตัวละครคืนแรกหลังพัก
 
-## EP ที่แนะนำ
-- **EP6 — เหมืองแห่งเสียงสะท้อน**: บุกเข้า Wave Echo Cave ฝ่าสัตว์ประหลาด/กับดัก ต่อสู้กับ Nezznar ช่วย Gundren ค้นพบ Forge of Spells และเห็นแท่งหินประหลาดเป็นครั้งแรก (จบ Act 2)
+## สารบัญ EP
+- [EP6: Wave Echo Cave](<./EP06 - Wave Echo Cave.md>) — บุกเข้า Wave Echo Cave ฝ่าสัตว์ประหลาด/กับดัก ต่อสู้กับ Nezznar ช่วย Gundren ค้นพบ Forge of Spells และเห็นแท่งหินประหลาดเป็นครั้งแรก (จบ Act 2)
 
 ---
 [← Chapter 3](./CH03-the-spiders-web.md) · [Act 2 outline](./00-act-outline.md) · [Act 3 →](../ACT03-the-shattered-obelisk/00-act-outline.md)
