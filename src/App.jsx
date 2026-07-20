@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import AdventureDocPage from './pages/AdventureDocPage'
 import BoxManagerPage from './pages/BoxManagerPage'
 import CampaignPage from './pages/CampaignPage'
 import CharacterPage from './pages/CharacterPage'
@@ -72,6 +73,9 @@ function App() {
             />
             <Route path="/campaigns" element={<CampaignPage />} />
             <Route path="/characters" element={<CharacterPage />} />
+            {/* Catch-all: lets links copied out of a journal (e.g. into FoundryVTT) resolve
+                as plain "/some-file.md" paths instead of a query-string route. Must stay last. */}
+            <Route path="*" element={<AdventureDocPage />} />
           </Routes>
         </div>
       </GachaProvider>

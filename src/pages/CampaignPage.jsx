@@ -1,13 +1,25 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import AdventureJournalDrawer from '../components/AdventureJournalDrawer'
 import ConfirmDialog from '../components/ConfirmDialog'
 import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
 import { buildFiveEToolsLink, findAdventureOrBook, findAdventureOrBookAsync } from '../utils/adventureLinks'
+import { getAdventureJournal } from '../utils/adventureJournals'
 
 const STATUS_OPTIONS = ['-', 'Developing', 'Prepared', 'On-Going', 'Complete']
+const HAS_STATUS_FILTER = '__has_status__'
+const STATUS_FILTER_OPTIONS = [
+  { value: HAS_STATUS_FILTER, label: 'มี status แล้ว' },
+  ...STATUS_OPTIONS.map((s) => ({ value: s, label: s })),
+]
 const CAMPAIGN_TYPE_OPTIONS = ['-', 'One-Shot', 'Short Campaign', 'Long Campaign']
+// "บทบาท" of a campaign entry — separate axis from Status (which tracks prep
+// progress). Base = source material kept around for a DM to adapt/reference,
+// not meant to be run as-is (e.g. an official book superseded by a homebrew
+// continuation). Playable = actually intended to be run/tracked.
+const ROLE_OPTIONS = ['-', 'Playable', 'Base']
 
 const STATUS_STYLES = {
   '-': 'bg-[#f5ede0] text-stone-600',
@@ -17,15 +29,22 @@ const STATUS_STYLES = {
   Complete: 'bg-green-100 text-green-700',
 }
 
+const ROLE_STYLES = {
+  '-': 'bg-[#f5ede0] text-stone-600',
+  Playable: 'bg-green-100 text-green-700',
+  Base: 'bg-orange-100 text-orange-700',
+}
+
 const COLUMN_WIDTHS = {
   source: '10%',
-  name: '17%',
-  status: '8%',
+  name: '16%',
+  status: '7%',
+  role: '7%',
   level: '6%',
   campaignType: '10%',
-  continuesFrom: '14%',
-  party: '12%',
-  note: '19%',
+  continuesFrom: '13%',
+  party: '11%',
+  note: '17%',
   actions: '8%',
 }
 
@@ -35,6 +54,7 @@ function blankCampaign() {
     source: '',
     name: '',
     status: '-',
+    campaignRole: '-',
     briefContent: '',
     level: '',
     continuesFrom: '',
@@ -300,8 +320,10 @@ export default function CampaignPage() {
   )
   const [deleteCampaign, setDeleteCampaign] = useState(null)
   const [campaignForm, setCampaignForm] = useState(null)
+  const [journalCampaign, setJournalCampaign] = useState(null)
   const [query, setQuery] = useState('')
-  const [filterStatus, setFilterStatus] = useState('')
+  const [filterStatus, setFilterStatus] = useState(HAS_STATUS_FILTER)
+  const [filterRole, setFilterRole] = useState('Playable')
   const [filterCampaignType, setFilterCampaignType] = useState('')
   const [filterParty, setFilterParty] = useState('')
   const [filterLevel, setFilterLevel] = useState('')
@@ -327,7 +349,12 @@ export default function CampaignPage() {
   const normalizedQuery = query.trim().toLowerCase()
   const visibleCampaigns = useMemo(() => {
     const filtered = campaigns.filter((c) => {
-      if (filterStatus && c.status !== filterStatus) return false
+      if (filterStatus === HAS_STATUS_FILTER) {
+        if (!c.status || c.status === '-') return false
+      } else if (filterStatus && c.status !== filterStatus) {
+        return false
+      }
+      if (filterRole && c.campaignRole !== filterRole) return false
       if (filterCampaignType && c.campaignType !== filterCampaignType) return false
       if (filterParty && !(c.partyTagIds ?? []).includes(filterParty)) return false
       if (filterLevel && c.level !== filterLevel) return false
@@ -368,6 +395,7 @@ export default function CampaignPage() {
     campaigns,
     normalizedQuery,
     filterStatus,
+    filterRole,
     filterCampaignType,
     filterParty,
     filterLevel,
@@ -489,7 +517,7 @@ export default function CampaignPage() {
         <div>
           <h1 className="font-cinzel text-2xl font-bold text-stone-900">แคมเปญ</h1>
           <p className="mt-0.5 text-sm text-stone-500">
-            {query || filterStatus || filterCampaignType || filterParty || filterLevel
+            {query || filterStatus || filterRole || filterCampaignType || filterParty || filterLevel
               ? `${visibleCampaigns.length}/${campaigns.length}`
               : campaigns.length}{' '}
             แคมเปญทั้งหมด
@@ -512,30 +540,22 @@ export default function CampaignPage() {
           placeholder="ค้นหา (Source, ชื่อ, Party, หมายเหตุ)..."
           className="w-full max-w-xs rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm text-stone-900 placeholder-stone-400 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200"
         />
-        {/* Status pill filters */}
-        <div className="flex flex-wrap gap-1.5">
-          <button
-            type="button"
-            onClick={() => setFilterStatus('')}
-            className={!filterStatus
-              ? 'rounded-full bg-violet-700 px-3 py-1 text-xs font-medium text-white'
-              : 'rounded-full border border-[#e2cfb3] bg-white px-3 py-1 text-xs text-stone-600 hover:bg-[#f5ede0]'}
-          >
-            ทั้งหมด
-          </button>
-          {STATUS_OPTIONS.filter((s) => s !== '-').map((s) => (
-            <button
-              key={s}
-              type="button"
-              onClick={() => setFilterStatus(filterStatus === s ? '' : s)}
-              className={filterStatus === s
-                ? 'rounded-full bg-violet-700 px-3 py-1 text-xs font-medium text-white'
-                : 'rounded-full border border-[#e2cfb3] bg-white px-3 py-1 text-xs text-stone-600 hover:bg-[#f5ede0]'}
-            >
-              {s}
-            </button>
-          ))}
-        </div>
+        <SearchSelect
+          options={STATUS_FILTER_OPTIONS}
+          value={filterStatus}
+          onChange={setFilterStatus}
+          placeholder="สถานะ: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-40"
+        />
+        <SearchSelect
+          options={ROLE_OPTIONS.filter((r) => r !== '-').map((r) => ({ value: r, label: r }))}
+          value={filterRole}
+          onChange={setFilterRole}
+          placeholder="บทบาท: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-36"
+        />
         <SearchSelect
           options={levelOptions.map((lvl) => ({ value: lvl, label: lvl }))}
           value={filterLevel}
@@ -579,6 +599,7 @@ export default function CampaignPage() {
                 <SortableTh label="Source" sortKey="source" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="ชื่อแคมเปญ" sortKey="name" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="สถานะ" sortKey="status" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                <SortableTh label="บทบาท" sortKey="campaignRole" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="Level" sortKey="level" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="ประเภทแคมเปญ" sortKey="campaignType" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="ต่อจากอันไหน" sortKey="continuesFrom" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
@@ -595,25 +616,37 @@ export default function CampaignPage() {
                     <DisplayText value={campaign.source} />
                   </td>
                   <td className="py-2 px-3">
-                    <Tip text={campaign.briefContent}>
-                      {campaign.link ? (
-                        <a
-                          href={campaign.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          title={campaign.briefContent || campaign.link}
-                          className="block w-full whitespace-pre-wrap break-words rounded-md px-2 py-1 leading-snug font-medium text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900"
+                    <div className="flex items-start gap-1">
+                      <Tip text={campaign.briefContent}>
+                        {campaign.link ? (
+                          <a
+                            href={campaign.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            title={campaign.briefContent || campaign.link}
+                            className="block w-full whitespace-pre-wrap break-words rounded-md px-2 py-1 leading-snug font-medium text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900"
+                          >
+                            {campaign.name}
+                          </a>
+                        ) : (
+                          <DisplayText
+                            value={campaign.name}
+                            title={campaign.briefContent ? 'ชี้ที่ชื่อเพื่อดูเนื้อหาคร่าวๆ' : undefined}
+                            className={campaign.briefContent ? 'cursor-help font-medium underline decoration-dotted underline-offset-2' : 'font-medium'}
+                          />
+                        )}
+                      </Tip>
+                      {getAdventureJournal(campaign.adventureSlug) && (
+                        <button
+                          type="button"
+                          onClick={() => setJournalCampaign(campaign)}
+                          className="inline-flex shrink-0 items-center justify-center rounded-md p-1 text-stone-400 hover:bg-[#f5ede0] hover:text-violet-600 transition-colors"
+                          title="อ่าน Adventure Journal"
                         >
-                          {campaign.name}
-                        </a>
-                      ) : (
-                        <DisplayText
-                          value={campaign.name}
-                          title={campaign.briefContent ? 'ชี้ที่ชื่อเพื่อดูเนื้อหาคร่าวๆ' : undefined}
-                          className={campaign.briefContent ? 'cursor-help font-medium underline decoration-dotted underline-offset-2' : 'font-medium'}
-                        />
+                          📖
+                        </button>
                       )}
-                    </Tip>
+                    </div>
                   </td>
                   <td className="py-2 px-3">
                     <span
@@ -623,6 +656,19 @@ export default function CampaignPage() {
                     >
                       {campaign.status}
                     </span>
+                  </td>
+                  <td className="py-2 px-3">
+                    {campaign.campaignRole && campaign.campaignRole !== '-' ? (
+                      <span
+                        className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${
+                          ROLE_STYLES[campaign.campaignRole] ?? ROLE_STYLES['-']
+                        }`}
+                      >
+                        {campaign.campaignRole}
+                      </span>
+                    ) : (
+                      <span className="text-gray-300">—</span>
+                    )}
                   </td>
                   <td className="py-2 px-3">
                     <DisplayText value={campaign.level} />
@@ -756,6 +802,25 @@ export default function CampaignPage() {
                 </div>
               </div>
 
+              {/* Row 3.5: Role (Playable vs Base material) */}
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">บทบาท</label>
+                <select
+                  value={campaignForm.campaignRole ?? '-'}
+                  onChange={(e) => updateFormField('campaignRole', e.target.value)}
+                  className={`w-full rounded-lg border border-gray-300 px-3 py-2 font-medium focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200 ${
+                    ROLE_STYLES[campaignForm.campaignRole] ?? ''
+                  }`}
+                >
+                  {ROLE_OPTIONS.map((r) => (
+                    <option key={r} value={r}>
+                      {r}
+                    </option>
+                  ))}
+                </select>
+                <p className="text-xs text-stone-400">Playable = ตัวที่จะเอาไปเล่นจริง, Base = เก็บไว้อ้างอิง/ต่อยอด ไม่ได้เล่นตรงๆ แล้ว</p>
+              </div>
+
               {/* Row 4: Continues From */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-semibold text-stone-700">ต่อจากอันไหน</label>
@@ -845,6 +910,10 @@ export default function CampaignPage() {
             </div>
           </div>
         </div>
+      )}
+
+      {journalCampaign && (
+        <AdventureJournalDrawer campaign={journalCampaign} onClose={() => setJournalCampaign(null)} />
       )}
 
       <ConfirmDialog

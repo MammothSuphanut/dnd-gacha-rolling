@@ -170,7 +170,7 @@
   },
   {
     "id": "campaign-b9997286-0132-4134-a158-b14a9f23e5d2",
-    "source": "D&D Beyond (ซีรีส์มังกร)",
+    "source": "D&D Beyond (ซีรีส์��ังกร)",
     "name": "Dragon Delves: A Copper for a Song",
     "status": "-",
     "briefContent": "โมดูลขนาดสั้น 1 ตอนจบ เน��นภารกิจเกี่ยวกับมังกรทองแดงและกา��เจรจาหรือไขปริศนา",
@@ -536,9 +536,10 @@
     "id": "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08",
     "source": "Mammoth Homebrew",
     "name": "Aeorian Cataclysm",
+    "adventureSlug": "aeorian-cataclysm",
     "status": "On-Going",
     "briefContent": "เมื่อ 'อาวุธสังหารเทพ' แห่งนครลอยฟ้าอีออร์ (Aeor) ถูกเปิดใช้งาน ทว่าชิ้นส่วนสำคัญทั้ง 5 กลับถูกแย่งชิงไปจนมิติและกฎเกณฑ์ของโลกดิ่งสู่ความโกลาหล มีเพียงเหล่าผู้ถูกเลือกเท่านั้นที่ต้องออกผจญภัยเพื่อตามหาชิ้นส่วนที่หายไปและหยุดยั้งวันสิ้นโลกก่อนทุกสิ่งจะพังทลาย",
-    "level": "1-17",
+    "level": "1-20",
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
@@ -546,7 +547,8 @@
     "partyTagIds": [
       "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
       "tag-2b35e9ca-23da-40e8-90f7-f49ccbc15d67"
-    ]
+    ],
+    "campaignRole": "Playable"
   },
   {
     "id": "campaign-16158073-b8b7-4fe3-86f8-b340bcf46282",
@@ -1035,12 +1037,13 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เควสเริ่มต้นสายเหนือใน Wildemount",
+    "note": "ถ้าจะเล่นให้ไปเล่น Frozen Sick: The Plague Covenant แทน",
     "partyTagIds": [
       "tag-ec0d2618-4421-486a-a327-c7f666827175",
       "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
     ],
-    "link": "https://5e.tools/adventure.html#fs"
+    "link": "https://5e.tools/adventure.html#fs",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-f3138d48-addf-454f-bdad-100355edc943",
@@ -1082,7 +1085,8 @@
     "partyTagIds": [
       "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca",
       "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
-    ]
+    ],
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-af8e68f3-99ad-4a1c-ad21-5cd8e8d4d1c5",
@@ -1541,7 +1545,7 @@
     "source": "Wizards of the Coast",
     "name": "Ghosts of Saltmarsh",
     "status": "-",
-    "briefContent": "รวมบทผจญภัยทางทะเลและชายฝั่ง 7 มิติ ผสมผสานการเดินเรือ การต่อสู���กับกลุ่มโ���รสลัด และสิ่งมีชีวิตจากใต้สะดือทะเล",
+    "briefContent": "รวมบทผจญภัยทางทะเลและชา��ฝั่ง 7 มิ��ิ ผสมผสานการเดินเรือ การต่อสู���กับกลุ่มโ���รสลัด และสิ่งมีชีวิตจากใต้สะดือทะเล",
     "level": "1 - 12",
     "continuesFrom": "",
     "campaignType": "Long Campaign (Anthology)",
@@ -1882,12 +1886,14 @@
     "id": "campaign-9997f6fd-bb1c-42f8-a89b-2577dbc60fed",
     "source": "Mammoth Homebrew",
     "name": "Frozen Sick: The Plague Covenant",
+    "adventureSlug": "frozen-sick-the-plague-covenant",
     "status": "Developing",
     "briefContent": "",
-    "level": "2-12",
-    "continuesFrom": "Wildemount: Frozen Sick",
+    "level": "1-6",
+    "continuesFrom": "",
     "campaignType": "Short Campaign",
     "partyTagIds": [],
-    "note": "ต่อจาก: Wildemount: Frozen Sick"
+    "note": "มีเนื้อหา Wildemount: Frozen Sick อยู่ใน Campaign นี้แล้ว",
+    "campaignRole": "Playable"
   }
 ]

@@ -1114,7 +1114,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "เกราะกลางทำจากแผ่นโลหะเรีย������ป็นแถบซ้�������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
+        "note": "เกราะกลางทำจากแผ่นโลหะเรีย������ป็นแถบซ้����������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
         "link": "https://5e.tools/items.html#banded%20plate_vss",
         "rarity": "Mundane"
       },
@@ -5258,7 +5258,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "บูมเมอแรงเวอร์ชันอาถรรพ์ ขว้างได้ไกลและรุนแรงกว่าปกติ",
+        "note": "บูมเมอแรง���������ร์ชันอาถรรพ์ ขว้างได้ไกลและรุนแรงกว่าปกติ",
         "enhanceable": true,
         "link": "https://5e.tools/items.html#doomerang_vss",
         "rarity": "Mundane"
@@ -11291,7 +11291,7 @@
         "urban": true,
         "premium": false,
         "enhanceable": false,
-        "note": "เศษหินอัญมณีแตกหักจากก้อนใหญ่ มูลค่าต่ำกว่าหินอัญมณีเต็มเม็ดมาก แต่ยังพอขายได้ราคาเล็กน้อย",
+        "note": "เศษหินอัญมณีแตกหักจากก้อนใหญ่ มูลค่าต่ำกว่าหินอ���ญม���ีเ���็มเม็ดมาก แต่ยังพอขายได้ราคาเล็กน้อย",
         "link": "https://5e.tools/items.html#shard_wdh",
         "rarity": "Mundane"
       },
@@ -13408,7 +13408,7 @@
         "urban": true,
         "premium": false,
         "enhanceable": false,
-        "note": "เบียร์หรือน้ำผึ้งหมักหนึ่งถ้วย เครื่องดื่มราคาถูกที่สุดของร้านเหล้า",
+        "note": "เบียร์หรือน้ำผึ้งหมักหนึ่งถ้วย เครื่องดื่มราคาถูกที่สุดของร้า���เหล้���",
         "rarity": "Mundane"
       },
       {
@@ -21212,7 +21212,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Whip +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพ�����นิ���)",
+        "note": "Uncommon — Whip +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปร��บได้ตา��ดุลย�������นิ���)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20whip_xdmg",
         "rarity": "Uncommon"
@@ -23167,7 +23167,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — Javelin +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพิน��จ)",
+        "note": "Rare — Javelin +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายา�� (ปรับได้ตามดุลยพิน��จ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B2%20javelin_xdmg",
         "rarity": "Rare"
@@ -28947,7 +28947,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ป��ั��ได��ตามดุ���ยพินิจ)",
+        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสา��ารถขอ��ไอเทม (ป��ั��ได��ตามดุ���ยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#dagger%20of%20blindsight_wdmm",
         "rarity": "Rare"
@@ -30817,7 +30817,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตา���ดุลยพินิ���)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#seeker%20dart_pota",
         "rarity": "Uncommon"
@@ -32628,7 +32628,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Sling Bullet +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตา��ดุลยพ���นิ��)",
+        "note": "Uncommon — Sling Bullet +1 มาตรฐาน ราคาประเมินอัตโนมั��ิจากความหา��าก (ปรับได้ตา��ดุลยพ���นิ��)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20sling%20bullet_xdmg",
         "rarity": "Uncommon"
@@ -38192,7 +38192,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "อูฐ ความเร็ว 50 ฟุต แบกน้ำหนักได้ 480 ปอนด์ ทนแดดและทะเลทรายได้ดีเยี่ยม",
+        "note": "อูฐ ความเร็ว 50 ��ุต แบกน้ำหนั���ได้ 480 ป��นด์ ทนแดดและทะเลทรายได้ดีเยี่ยม",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -53083,7 +53083,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Common — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Common — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได��ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#moodmark%20paint_ggr",
         "rarity": "Common"
