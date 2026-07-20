@@ -1425,11 +1425,11 @@
     "note": "",
     "images": [
       {
-        "id": "img-ec4963fb-72fd-4241-8c9d-01ba3a36cd19",
+        "id": "img-f745d099-2261-4f2c-816c-b8c8e346911b",
         "label": ""
       }
     ],
-    "activeImageId": "img-ec4963fb-72fd-4241-8c9d-01ba3a36cd19",
+    "activeImageId": "img-f745d099-2261-4f2c-816c-b8c8e346911b",
     "combat": {
       "ac": "15",
       "speed": "30",
@@ -3443,7 +3443,7 @@
   },
   {
     "id": "character-1bbea02c-8d44-458d-805b-42d793835c08",
-    "name": "Temp P'guy",
+    "name": "Mionadas",
     "status": "Astral Nexus",
     "ownerId": "user-1553dd4c-1904-4b22-8954-934735b780b5",
     "partyTagIds": [
@@ -3487,8 +3487,13 @@
     "appearance": "",
     "biography": "",
     "note": "",
-    "images": [],
-    "activeImageId": "",
+    "images": [
+      {
+        "id": "img-b94f2ba3-9d4d-4f2b-b10c-4b28dc93fae1",
+        "label": ""
+      }
+    ],
+    "activeImageId": "img-b94f2ba3-9d4d-4f2b-b10c-4b28dc93fae1",
     "combat": {
       "ac": "16",
       "speed": "30",
@@ -3608,9 +3613,18 @@
       "pp": ""
     },
     "equipment": [
-      "Backpack",
-      "Rations (1 day) x7",
-      "Waterskin"
+      {
+        "name": "Backpack",
+        "qty": 1
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 7
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1
+      }
     ],
     "proficienciesLanguages": [],
     "featuresAndTraits": [],
@@ -4903,17 +4917,32 @@
     "attacksSpellcasting": "",
     "currency": {
       "cp": "",
-      "sp": "",
+      "sp": "3",
       "ep": "",
-      "gp": "",
+      "gp": "79",
       "pp": ""
     },
     "equipment": [
-      "Waterskin",
-      "Rations (1 day) x7",
-      "Backpack",
-      "Studded Leather",
-      "Wooden Staff"
+      {
+        "name": "Waterskin",
+        "qty": 1
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 7
+      },
+      {
+        "name": "Backpack",
+        "qty": 1
+      },
+      {
+        "name": "Studded Leather",
+        "qty": 1
+      },
+      {
+        "name": "Wooden Staff",
+        "qty": 1
+      }
     ],
     "proficienciesLanguages": [],
     "featuresAndTraits": [],

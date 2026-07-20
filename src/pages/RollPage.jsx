@@ -14,7 +14,7 @@ import {
   rollBox,
 } from '../utils/weightedRandom'
 
-const DEFAULT_RATE_UP = { mode: 'multiplier', multiplier: 2, percent: 50, itemIds: [], groupNames: [] }
+const DEFAULT_RATE_UP = { mode: 'percent', multiplier: 2, percent: 100, itemIds: [], groupNames: [] }
 import StatRollPage from './StatRollPage'
 import CreateCharacterModal from '../components/CreateCharacterModal'
 
@@ -416,11 +416,10 @@ export default function RollPage({
                       key={box.id}
                       type="button"
                       onClick={() => selectBox(category, box.id)}
-                      className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-150 ${
-                        isBoxVisible(category, box.id)
+                      className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-150 ${isBoxVisible(category, box.id)
                           ? 'bg-violet-700 text-white shadow-sm'
                           : 'border border-[#e2cfb3] bg-[#fdf8f0] text-stone-600 hover:bg-[#f5ede0]'
-                      }`}
+                        }`}
                     >
                       {box.name}
                     </button>
@@ -433,11 +432,10 @@ export default function RollPage({
               <button
                 type="button"
                 onClick={toggleStatRollVisible}
-                className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-150 ${
-                  showStatRoll
+                className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-150 ${showStatRoll
                     ? 'bg-violet-700 text-white shadow-sm'
                     : 'border border-[#e2cfb3] bg-[#fdf8f0] text-stone-600 hover:bg-[#f5ede0]'
-                }`}
+                  }`}
               >
                 สุ่มค่าพลัง (4d6)
               </button>
@@ -460,12 +458,14 @@ export default function RollPage({
           </button>
           <button
             type="button"
-            onClick={togglePickMode}
-            className={`rounded-lg px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
-              pickMode
-                ? 'bg-violet-700 text-white hover:bg-violet-800'
+            disabled={pickMode}
+            onClick={() => {
+              if (!pickMode) togglePickMode()
+            }}
+            className={`rounded-lg px-3 py-2 text-sm font-medium shadow-sm transition-colors ${pickMode
+                ? 'cursor-not-allowed bg-violet-700 text-white'
                 : 'border border-[#e2cfb3] bg-white text-stone-700 hover:bg-[#f5ede0]'
-            }`}
+              }`}
           >
             🧬 สร้างตัวละคร
           </button>
@@ -514,195 +514,194 @@ export default function RollPage({
           ) : (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {visibleGrouped.map(([category, boxes]) => {
-                  const box = boxes[0]
-                  const {
-                    count,
-                    mode,
-                    group,
-                    noDuplicateGroup,
-                    rateUp,
-                    subGroups,
-                    rollItems,
-                    totalWeight,
-                    itemPercentMap,
-                    groupPercentMap,
-                    formatPercent,
-                  } = getBoxDisplayData(box)
-                  const rateUpTags = [
-                    ...rateUp.groupNames.map((name) => ({
-                      key: `g-${name}`,
-                      label: name,
-                      percent: groupPercentMap.get(name),
-                    })),
-                    ...rateUp.itemIds.map((id) => ({
-                      key: `i-${id}`,
-                      label: box.items.find((item) => item.id === id)?.name ?? '',
-                      percent: itemPercentMap.get(id),
-                    })),
-                  ]
-                  const resultHistory = boxResults[box.id] ?? []
-                  return (
-                    <div
-                      key={category}
-                      className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm"
-                    >
-                      {/* Card header */}
-                      <p className="font-cinzel mb-0.5 text-[10px] uppercase tracking-widest text-amber-700">
-                        {category}
-                      </p>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <h2 className="text-base font-semibold text-stone-900">{box.name}</h2>
-                        <span className="rounded-full bg-[#f5ede0] px-2 py-0.5 text-[10px] font-medium text-stone-500">
-                          {rollItems.length} รายการ
+                const box = boxes[0]
+                const {
+                  count,
+                  mode,
+                  group,
+                  noDuplicateGroup,
+                  rateUp,
+                  subGroups,
+                  rollItems,
+                  totalWeight,
+                  itemPercentMap,
+                  groupPercentMap,
+                  formatPercent,
+                } = getBoxDisplayData(box)
+                const rateUpTags = [
+                  ...rateUp.groupNames.map((name) => ({
+                    key: `g-${name}`,
+                    label: name,
+                    percent: groupPercentMap.get(name),
+                  })),
+                  ...rateUp.itemIds.map((id) => ({
+                    key: `i-${id}`,
+                    label: box.items.find((item) => item.id === id)?.name ?? '',
+                    percent: itemPercentMap.get(id),
+                  })),
+                ]
+                const resultHistory = boxResults[box.id] ?? []
+                return (
+                  <div
+                    key={category}
+                    className="rounded-xl border border-[#e2cfb3] bg-white p-4 shadow-sm"
+                  >
+                    {/* Card header */}
+                    <p className="font-cinzel mb-0.5 text-[10px] uppercase tracking-widest text-amber-700">
+                      {category}
+                    </p>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h2 className="text-base font-semibold text-stone-900">{box.name}</h2>
+                      <span className="rounded-full bg-[#f5ede0] px-2 py-0.5 text-[10px] font-medium text-stone-500">
+                        {rollItems.length} รายการ
+                      </span>
+                      {totalWeight === 0 && (
+                        <span className="text-xs font-medium text-amber-700">
+                          ⚠ weight รวมเป็น 0
                         </span>
-                        {totalWeight === 0 && (
-                          <span className="text-xs font-medium text-amber-700">
-                            ⚠ weight รวมเป็น 0
-                          </span>
-                        )}
-                        {box.items.length > 0 && (
-                          <button
-                            type="button"
-                            onClick={() => setRateUpBoxId(box.id)}
-                            className="ml-auto rounded-lg border border-violet-200 bg-violet-50 px-2.5 py-1 text-xs font-medium text-violet-700 transition-colors hover:bg-violet-100"
-                          >
-                            Rate Up{' '}
-                            {(rateUp.itemIds.length > 0 || rateUp.groupNames.length > 0) && (
-                              <span className="ml-1 rounded-full bg-violet-700 px-1.5 py-0.5 text-[10px] font-semibold text-white">
-                                {rateUp.mode === 'percent' ? `${rateUp.percent}%` : `x${rateUp.multiplier}`}
-                              </span>
-                            )}
-                          </button>
-                        )}
-                      </div>
-
-                      {/* Controls */}
-                      <div className="mt-3 flex flex-wrap gap-3">
-                        <label className="flex flex-col gap-1 text-xs text-stone-500">
-                          จำนวนครั้ง
-                          <input
-                            type="number"
-                            min="1"
-                            value={count}
-                            onChange={(e) => updateConfig(box, { count: e.target.value })}
-                            className="w-20 rounded-lg border border-[#e2cfb3] bg-[#fdf8f0] px-2 py-1.5 text-sm text-stone-900 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-300"
-                          />
-                        </label>
-                        <label className="flex flex-col gap-1 text-xs text-stone-500">
-                          โหมดกันซ้ำ
-                          <select
-                            value={mode}
-                            onChange={(e) => updateConfig(box, { mode: e.target.value })}
-                            className="rounded-lg border border-[#e2cfb3] bg-[#fdf8f0] px-2 py-1.5 text-sm text-stone-900 focus:border-violet-400 focus:outline-none"
-                          >
-                            <option value="reroll">Reroll ถ้าซ้ำ</option>
-                            <option value="pool-shrink">ตัดพูลจริง</option>
-                          </select>
-                        </label>
-                      </div>
-
-                      {subGroups.length > 0 && (
-                        <div className="mt-3 flex flex-col gap-1.5">
-                          <div className="flex flex-col gap-1 text-xs text-stone-500">
-                            หมวดย่อย
-                            <SearchSelect
-                              options={subGroups.map((g) => ({ value: g.name, label: g.name }))}
-                              value={group}
-                              onChange={(v) => updateConfig(box, { group: v })}
-                              placeholder="ทั้งหมด"
-                              clearLabel="ล้าง"
-                            />
-                          </div>
-                          {!group && (
-                            <label className="flex items-center gap-1.5 text-xs text-stone-600">
-                              <input
-                                type="checkbox"
-                                checked={noDuplicateGroup}
-                                onChange={(e) =>
-                                  updateConfig(box, { noDuplicateGroup: e.target.checked })
-                                }
-                              />
-                              ไม่ซ้ำหมวดย่อย
-                            </label>
-                          )}
-                        </div>
                       )}
-
-                      {/* Roll button */}
-                      <div className="mt-4 flex flex-wrap items-center gap-2">
+                      {box.items.length > 0 && (
                         <button
                           type="button"
-                          disabled={rolling || totalWeight === 0}
-                          onClick={() => handleRollSingle(box)}
-                          className="rounded-xl bg-violet-700 px-6 py-3 text-base font-bold text-white shadow-md transition-all duration-200 hover:bg-violet-800 hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-50 animate-pulse-glow"
+                          onClick={() => setRateUpBoxId(box.id)}
+                          className="ml-auto rounded-lg border border-violet-200 bg-violet-50 px-2.5 py-1 text-xs font-medium text-violet-700 transition-colors hover:bg-violet-100"
                         >
-                          {rolling ? '🎲 กำลังสุ่ม...' : '🎲 สุ่มตู้นี้เลย'}
+                          Rate Up{' '}
+                          {(rateUp.itemIds.length > 0 || rateUp.groupNames.length > 0) && (
+                            <span className="ml-1 rounded-full bg-violet-700 px-1.5 py-0.5 text-[10px] font-semibold text-white">
+                              {rateUp.mode === 'percent' ? `${rateUp.percent}%` : `x${rateUp.multiplier}`}
+                            </span>
+                          )}
                         </button>
-                        {rateUpTags.map((tag) => (
-                          <span
-                            key={tag.key}
-                            className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-800"
-                          >
-                            ⬆ {tag.label} ({formatPercent(tag.percent)}%)
-                          </span>
-                        ))}
-                      </div>
+                      )}
+                    </div>
 
-                      {/* Results */}
-                      {resultHistory.length > 0 && (
-                        <div className="mt-4 border-t border-[#e2cfb3] pt-4">
-                          <div className="mb-2 flex items-center justify-between">
-                            <p className="font-cinzel text-[10px] uppercase tracking-widest text-amber-700">ผลลัพธ์</p>
-                            <button
-                              type="button"
-                              onClick={() => clearBoxResult(box.id)}
-                              className="rounded-lg border border-[#e2cfb3] px-2 py-1 text-xs text-stone-500 hover:bg-[#f5ede0]"
-                            >
-                              ล้างผล
-                            </button>
-                          </div>
-                          <div className="space-y-4">
-                            {resultHistory.map((result, historyIndex) => (
-                              <div key={historyIndex}>
-                                {historyIndex > 0 && (
-                                  <div className="mb-3 flex items-center gap-2">
-                                    <div className="h-px flex-1 bg-[#e2cfb3]" />
-                                    <span className="text-[10px] font-medium text-stone-400">
-                                      {historyIndex === 1 ? 'รอบก่อนหน้า' : 'รอบก่อนๆ'}
+                    {/* Controls */}
+                    <div className="mt-3 flex flex-wrap gap-3">
+                      <label className="flex flex-col gap-1 text-xs text-stone-500">
+                        จำนวนครั้ง
+                        <input
+                          type="number"
+                          min="1"
+                          value={count}
+                          onChange={(e) => updateConfig(box, { count: e.target.value })}
+                          className="w-20 rounded-lg border border-[#e2cfb3] bg-[#fdf8f0] px-2 py-1.5 text-sm text-stone-900 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-300"
+                        />
+                      </label>
+                      <label className="flex flex-col gap-1 text-xs text-stone-500">
+                        โหมดกันซ้ำ
+                        <select
+                          value={mode}
+                          onChange={(e) => updateConfig(box, { mode: e.target.value })}
+                          className="rounded-lg border border-[#e2cfb3] bg-[#fdf8f0] px-2 py-1.5 text-sm text-stone-900 focus:border-violet-400 focus:outline-none"
+                        >
+                          <option value="reroll">Reroll ถ้าซ้ำ</option>
+                          <option value="pool-shrink">ตัดพูลจริง</option>
+                        </select>
+                      </label>
+                    </div>
+
+                    {subGroups.length > 0 && (
+                      <div className="mt-3 flex flex-col gap-1.5">
+                        <div className="flex flex-col gap-1 text-xs text-stone-500">
+                          หมวดย่อย
+                          <SearchSelect
+                            options={subGroups.map((g) => ({ value: g.name, label: g.name }))}
+                            value={group}
+                            onChange={(v) => updateConfig(box, { group: v })}
+                            placeholder="ทั้งหมด"
+                            clearLabel="ล้าง"
+                          />
+                        </div>
+                        {!group && (
+                          <label className="flex items-center gap-1.5 text-xs text-stone-600">
+                            <input
+                              type="checkbox"
+                              checked={noDuplicateGroup}
+                              onChange={(e) =>
+                                updateConfig(box, { noDuplicateGroup: e.target.checked })
+                              }
+                            />
+                            ไม่ซ้ำหมวดย่อย
+                          </label>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Roll button */}
+                    <div className="mt-4 flex flex-wrap items-center gap-2">
+                      <button
+                        type="button"
+                        disabled={rolling || totalWeight === 0}
+                        onClick={() => handleRollSingle(box)}
+                        className="rounded-xl bg-violet-700 px-6 py-3 text-base font-bold text-white shadow-md transition-all duration-200 hover:bg-violet-800 hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-50 animate-pulse-glow"
+                      >
+                        {rolling ? '🎲 กำลังสุ่ม...' : '🎲 สุ่มตู้นี้เลย'}
+                      </button>
+                      {rateUpTags.map((tag) => (
+                        <span
+                          key={tag.key}
+                          className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-800"
+                        >
+                          ⬆ {tag.label} ({formatPercent(tag.percent)}%)
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Results */}
+                    {resultHistory.length > 0 && (
+                      <div className="mt-4 border-t border-[#e2cfb3] pt-4">
+                        <div className="mb-2 flex items-center justify-between">
+                          <p className="font-cinzel text-[10px] uppercase tracking-widest text-amber-700">ผลลัพธ์</p>
+                          <button
+                            type="button"
+                            onClick={() => clearBoxResult(box.id)}
+                            className="rounded-lg border border-[#e2cfb3] px-2 py-1 text-xs text-stone-500 hover:bg-[#f5ede0]"
+                          >
+                            ล้างผล
+                          </button>
+                        </div>
+                        <div className="space-y-4">
+                          {resultHistory.map((result, historyIndex) => (
+                            <div key={historyIndex}>
+                              {historyIndex > 0 && (
+                                <div className="mb-3 flex items-center gap-2">
+                                  <div className="h-px flex-1 bg-[#e2cfb3]" />
+                                  <span className="text-[10px] font-medium text-stone-400">
+                                    {historyIndex === 1 ? 'รอบก่อนหน้า' : 'รอบก่อนๆ'}
+                                  </span>
+                                  <div className="h-px flex-1 bg-[#e2cfb3]" />
+                                </div>
+                              )}
+                              <div
+                                className={
+                                  historyIndex === 0
+                                    ? `transition-all duration-500 ${revealedIds.has(box.id)
+                                      ? 'translate-y-0 opacity-100'
+                                      : 'translate-y-4 opacity-0'
+                                    }`
+                                    : ''
+                                }
+                              >
+                                {historyIndex === 0 && (
+                                  <div className="mb-2">
+                                    <span className="rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-medium text-violet-700">
+                                      {result.mode === 'pool-shrink' ? 'ตัดพูลจริง' : 'Reroll ถ้าซ้ำ'}
                                     </span>
-                                    <div className="h-px flex-1 bg-[#e2cfb3]" />
                                   </div>
                                 )}
-                                <div
-                                  className={
-                                    historyIndex === 0
-                                      ? `transition-all duration-500 ${
-                                          revealedIds.has(box.id)
-                                            ? 'translate-y-0 opacity-100'
-                                            : 'translate-y-4 opacity-0'
-                                        }`
-                                      : ''
-                                  }
-                                >
-                                  {historyIndex === 0 && (
-                                    <div className="mb-2">
-                                      <span className="rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-medium text-violet-700">
-                                        {result.mode === 'pool-shrink' ? 'ตัดพูลจริง' : 'Reroll ถ้าซ้ำ'}
-                                      </span>
-                                    </div>
-                                  )}
-                                  <div className="flex flex-wrap gap-2">
-                                    {[...result.resultItems]
-                                      .sort(resultItemComparator(category))
-                                      .map((item, i) => {
+                                <div className="flex flex-wrap gap-2">
+                                  {[...result.resultItems]
+                                    .sort(resultItemComparator(category))
+                                    .map((item, i) => {
                                       const Wrapper = item.link ? 'a' : 'div'
                                       const wrapperProps = item.link
                                         ? {
-                                            href: item.link,
-                                            target: '_blank',
-                                            rel: 'noopener noreferrer',
-                                            title: item.link,
-                                          }
+                                          href: item.link,
+                                          target: '_blank',
+                                          rel: 'noopener noreferrer',
+                                          title: item.link,
+                                        }
                                         : {}
                                       const pickKey = `${box.id}:${historyIndex}:${item.id}:${i}`
                                       const showPickCheckbox = pickMode
@@ -737,9 +736,8 @@ export default function RollPage({
                                           <div>
                                             <div className="flex flex-wrap items-center gap-1.5">
                                               <span
-                                                className={`text-sm font-semibold ${
-                                                  item.link ? 'text-violet-700 underline' : 'text-stone-900'
-                                                }`}
+                                                className={`text-sm font-semibold ${item.link ? 'text-violet-700 underline' : 'text-stone-900'
+                                                  }`}
                                               >
                                                 {item.name}
                                               </span>
@@ -771,15 +769,15 @@ export default function RollPage({
                                         </label>
                                       )
                                     })}
-                                  </div>
                                 </div>
                               </div>
-                            ))}
-                          </div>
+                            </div>
+                          ))}
                         </div>
-                      )}
-                    </div>
-                  )
+                      </div>
+                    )}
+                  </div>
+                )
               })}
             </div>
           )}
@@ -857,7 +855,7 @@ function RateUpModal({
     const acc = {}
     for (const item of box.items) {
       const key = item.group?.trim() || ''
-      ;(acc[key] ??= []).push(item)
+        ; (acc[key] ??= []).push(item)
     }
     return Object.entries(acc).sort(([a], [b]) => {
       const ia = subGroups.findIndex((g) => g.name === a)
@@ -978,11 +976,10 @@ function RateUpModal({
                       key={g.name}
                       type="button"
                       onClick={() => scrollToGroup(g.name)}
-                      className={`rounded-lg px-2 py-1 text-left text-sm transition-colors ${
-                        activeGroup === g.name
+                      className={`rounded-lg px-2 py-1 text-left text-sm transition-colors ${activeGroup === g.name
                           ? 'bg-violet-100 font-medium text-violet-700'
                           : 'text-stone-700 hover:bg-[#f5ede0] hover:text-violet-700'
-                      }`}
+                        }`}
                     >
                       {g.name}{' '}
                       {groupTagMap.get(g.name) && (
@@ -1030,7 +1027,20 @@ function RateUpModal({
                           checked={rateUp.itemIds.includes(item.id)}
                           onChange={() => toggleRateUpItem(box, item.id)}
                         />
-                        {item.name}{' '}
+                        {item.link ? (
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={item.link}
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-violet-700 underline hover:text-violet-900"
+                          >
+                            {item.name}
+                          </a>
+                        ) : (
+                          item.name
+                        )}{' '}
                         <span className="text-stone-400">
                           ({formatPercent(itemPercentMap.get(item.id))}%)
                         </span>
