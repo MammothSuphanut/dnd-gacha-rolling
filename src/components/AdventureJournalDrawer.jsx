@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import AdventureMarkdownView from './AdventureMarkdownView'
 import { useToast } from '../store/ToastContext'
@@ -21,7 +21,12 @@ async function copyToClipboard(content, path) {
   }
 }
 
-function ActEpisodeList({ overviewItem, acts, selectedId, onSelect }) {
+// "EP04" for a mainline episode, "EP04a" for a side episode branching off it.
+function epLabel(ep) {
+  return `EP${String(ep.number).padStart(2, '0')}${ep.sideLetter ?? ''}`
+}
+
+function ActEpisodeList({ overviewItem, acts, selectedId, onSelect, collapsedActs, onToggleAct }) {
   return (
     <nav className="space-y-3">
       {overviewItem && (
@@ -37,28 +42,61 @@ function ActEpisodeList({ overviewItem, acts, selectedId, onSelect }) {
           📜 Campaign Overview
         </button>
       )}
-      {acts.map((act) => (
-        <div key={act.id}>
-          <p className="mb-1 px-1 text-xs font-semibold uppercase tracking-wide text-stone-400">{act.title}</p>
-          <ul className="space-y-0.5">
-            {act.episodes.map((ep) => (
-              <li key={ep.id}>
-                <button
-                  type="button"
-                  onClick={() => onSelect(ep)}
-                  className={`block w-full rounded-md px-2 py-1.5 text-left text-sm leading-snug transition-colors ${
-                    selectedId === ep.id
-                      ? 'bg-violet-700 text-white'
-                      : 'text-stone-600 hover:bg-[#f5ede0]'
-                  }`}
-                >
-                  EP{String(ep.number).padStart(2, '0')}: {ep.title}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      {acts.map((act) => {
+        const collapsed = collapsedActs.has(act.id)
+        return (
+          <div key={act.id}>
+            <button
+              type="button"
+              onClick={() => onToggleAct(act.id)}
+              className="mb-1 flex w-full items-center justify-between rounded-md px-1 py-0.5 text-xs font-semibold uppercase tracking-wide text-stone-400 hover:text-stone-600"
+            >
+              <span>{act.title}</span>
+              <span
+                className={`text-[10px] transition-transform ${collapsed ? '-rotate-90' : ''}`}
+                aria-hidden="true"
+              >
+                ▼
+              </span>
+            </button>
+            {!collapsed && (
+              <ul className="space-y-0.5">
+                {act.episodes.map((ep) => (
+                  <li key={ep.id}>
+                    <button
+                      type="button"
+                      onClick={() => onSelect(ep)}
+                      title={ep.isSide ? 'ตอนย่อย — นอกเนื้อเรื่องหลัก' : undefined}
+                      className={`flex w-full items-start gap-1 rounded-md px-2 py-1.5 text-left text-sm leading-snug transition-colors ${
+                        ep.isSide ? 'ml-3 border-l-2 border-amber-300 pl-2' : ''
+                      } ${
+                        selectedId === ep.id
+                          ? 'bg-violet-700 text-white'
+                          : ep.isSide
+                            ? 'text-stone-500 hover:bg-[#f5ede0]'
+                            : 'text-stone-600 hover:bg-[#f5ede0]'
+                      }`}
+                    >
+                      <span className={ep.isSide ? 'italic' : ''}>
+                        {epLabel(ep)}: {ep.title}
+                      </span>
+                      {ep.isSide && (
+                        <span
+                          className={`ml-auto shrink-0 rounded-full px-1.5 py-0 text-[10px] font-medium not-italic ${
+                            selectedId === ep.id ? 'bg-white/20 text-white' : 'bg-amber-100 text-amber-700'
+                          }`}
+                        >
+                          ตอนย่อย
+                        </span>
+                      )}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )
+      })}
     </nav>
   )
 }
@@ -75,20 +113,44 @@ export default function AdventureJournalDrawer({ campaign, onClose }) {
   // episodes flowing right after it in the prev/next footer.
   const navItems = [overviewItem, ...allEpisodes].filter(Boolean)
   const [selected, setSelected] = useState(navItems[0] ?? null)
+  const [collapsedActs, setCollapsedActs] = useState(() => new Set())
+
+  function toggleAct(actId) {
+    setCollapsedActs((prev) => {
+      const next = new Set(prev)
+      if (next.has(actId)) next.delete(actId)
+      else next.add(actId)
+      return next
+    })
+  }
+
+  // Jumping to an episode via prev/next shouldn't leave it hidden inside a
+  // collapsed Act — reveal that Act whenever the selection lands in it.
+  useEffect(() => {
+    if (!selected || selected.kind === 'overview') return
+    const actId = selected.id.split('-EP')[0]
+    setCollapsedActs((prev) => {
+      if (!prev.has(actId)) return prev
+      const next = new Set(prev)
+      next.delete(actId)
+      return next
+    })
+  }, [selected])
 
   if (!campaign) return null
 
   async function handleCopy() {
     if (!selected) return
     await copyToClipboard(selected.content, selected.path)
-    const label = selected.kind === 'overview' ? 'Overview' : `EP${String(selected.number).padStart(2, '0')}`
+    const label = selected.kind === 'overview' ? 'Overview' : itemLabel(selected)
     showToast(`คัดลอก ${label} แล้ว`, 'success')
   }
 
   const index = navItems.findIndex((item) => item.id === selected?.id)
   const prevItem = index > 0 ? navItems[index - 1] : null
   const nextItem = index >= 0 && index < navItems.length - 1 ? navItems[index + 1] : null
-  const itemLabel = (item) => (item.kind === 'overview' ? 'Overview' : `EP${String(item.number).padStart(2, '0')}`)
+  const itemLabel = (item) =>
+    item.kind === 'overview' ? 'Overview' : `EP${String(item.number).padStart(2, '0')}${item.sideLetter ?? ''}`
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
@@ -119,7 +181,14 @@ export default function AdventureJournalDrawer({ campaign, onClose }) {
         ) : (
           <div className="flex flex-1 overflow-hidden">
             <div className="w-56 shrink-0 overflow-y-auto border-r border-[#e2cfb3] bg-[#fdf8f0] px-3 py-4">
-              <ActEpisodeList overviewItem={overviewItem} acts={acts ?? []} selectedId={selected?.id} onSelect={setSelected} />
+              <ActEpisodeList
+                overviewItem={overviewItem}
+                acts={acts ?? []}
+                selectedId={selected?.id}
+                onSelect={setSelected}
+                collapsedActs={collapsedActs}
+                onToggleAct={toggleAct}
+              />
             </div>
             <div className="flex-1 overflow-y-auto px-6 py-5">
               {selected && (

@@ -1114,7 +1114,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "เกราะกลางทำจากแผ่นโลหะเรีย������ป็นแถบซ้����������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
+        "note": "เกราะกลางทำจากแผ่นโลหะเรีย������ป็นแถบซ้������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
         "link": "https://5e.tools/items.html#banded%20plate_vss",
         "rarity": "Mundane"
       },
@@ -1131,7 +1131,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "ใบมีดสั้นติดปลายอาวุธปืนหรือหน้าไม้ 1d4 แทง (light) ใช้แทงประชิดเมื่อกระสุนหมด",
+        "note": "ใบมีดสั้นติดปลายอาวุธปืนหรือหน้าไม้ 1d4 แท�� (light) ใช้แทงประชิดเมื่อกระสุนหมด",
         "link": "https://5e.tools/items.html#bayonet_vss",
         "rarity": "Mundane"
       },
@@ -5258,7 +5258,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "บูมเมอแรง���������ร์ชันอาถรรพ์ ขว้างได้ไกลและรุนแรงกว่าปกติ",
+        "note": "������มเมอ���ร������������ร์ชันอาถรรพ์ ขว้างได้ไกลและรุนแรงกว่าปกติ",
         "enhanceable": true,
         "link": "https://5e.tools/items.html#doomerang_vss",
         "rarity": "Mundane"
@@ -7379,7 +7379,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": false,
-        "note": "ชุดหมุดเหล็ก 10 ดอกพร้อมค้อน ใช้ตอกยึดเชือกหรือปิดผนึกประตูจากภายนอก",
+        "note": "ชุดหมุ���เหล็ก 10 ดอกพร้อมค้อน ใช้ตอกยึดเชือกหรือปิดผนึกประตูจากภายนอก",
         "link": "https://5e.tools/items.html#iron%20spikes_xphb",
         "rarity": "Mundane"
       },
@@ -11291,7 +11291,7 @@
         "urban": true,
         "premium": false,
         "enhanceable": false,
-        "note": "เศษหินอัญมณีแตกหักจากก้อนใหญ่ มูลค่าต่ำกว่าหินอ���ญม���ีเ���็มเม็ดมาก แต่ยังพอขายได้ราคาเล็กน้อย",
+        "note": "เศษหินอัญมณีแตกหักจากก้อนใหญ่ ม���ลค่าต่���กว่าห���นอ���ญม���ีเ���็มเม็ดมาก แต่ยังพอขายได้ราคาเล็กน้อย",
         "link": "https://5e.tools/items.html#shard_wdh",
         "rarity": "Mundane"
       },
@@ -11307,7 +11307,7 @@
         "rural": true,
         "urban": true,
         "premium": true,
-        "note": "โลหะอะดาแมนไทน์แข็งแกร่งเกือบทำลายไม่ได้ เมื่อใช้ทำเกราะจะไม่มีวันโดนคริติคอลฮิต",
+        "note": "โลหะอะดาแมนไทน์แข็งแกร่งเกือบ���ำลายไม่ได้ เมื่อใช้ทำเกราะจะไม่มีวันโดนคริติคอลฮิต",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -13408,7 +13408,7 @@
         "urban": true,
         "premium": false,
         "enhanceable": false,
-        "note": "เบียร์หรือน้ำผึ้งหมักหนึ่งถ้วย เครื่องดื่มราคาถูกที่สุดของร้า���เหล้���",
+        "note": "เบียร์หรือน้ำผึ้งหมักหนึ่งถ้วย เครื่องด���่มราคาถู���ที่สุดข���งร้า���เหล้���",
         "rarity": "Mundane"
       },
       {
@@ -21212,7 +21212,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Whip +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปร��บได้ตา��ดุลย�������นิ���)",
+        "note": "Uncommon — Whip +1 มาตรฐาน ราคาประ���มินอัตโนมั���ิจากความห���ยาก (ปร��บได้ตา��ดุลย�������นิ���)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20whip_xdmg",
         "rarity": "Uncommon"
@@ -21229,7 +21229,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Whip Sword +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — Whip Sword +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปร���บได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20whip%20sword_xdmg",
         "rarity": "Uncommon"
@@ -23167,7 +23167,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — Javelin +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายา�� (ปรับได้ตามดุลยพิน��จ)",
+        "note": "Rare — Javelin +2 มาตรฐ��น ���าคาประเม��นอัตโนมัติจาก��วามหายา�� (ปรับได้ตามดุลยพิน��จ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B2%20javelin_xdmg",
         "rarity": "Rare"
@@ -23184,7 +23184,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — Kama +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — Kama +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามด���ลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B2%20kama_xdmg",
         "rarity": "Rare"
@@ -25122,7 +25122,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Very Rare — Avia-Ra Sunstaff +3 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Very Rare — Avia-Ra Sunstaff +3 มาตรฐาน ราคาประเมินอัตโนมัติจากค���ามหายาก (ปรับได้ต��มดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B3%20avia-ra%20sunstaff_xdmg",
         "rarity": "Very Rare"
@@ -25139,7 +25139,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Very Rare — Ballista +3 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Very Rare — Ballista +3 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายา��� (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B3%20ballista_xdmg",
         "rarity": "Very Rare"
@@ -28964,7 +28964,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "unknown (magic) — ยังไม่มีราคาอ้างอิง (rarity ไม่ชัดเจนใน 5etools) ให้ตั้งราคาเอง",
+        "note": "unknown (magic) — ยังไม่มีราคาอ้างอิง (rarity ���ม่ชัดเจนใน 5etools) ให้ตั้งราคาเอง",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#dagger%20of%20guitar%20solos_wdmm",
         "rarity": "Rare"
@@ -30817,7 +30817,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตา���ดุลยพินิ���)",
+        "note": "Uncommon — ราคาประเมินอัต���นมัติจากความหายาก/ความสามารถของไอเทม (���รับได้ตา���ดุลยพินิ���)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#seeker%20dart_pota",
         "rarity": "Uncommon"
@@ -30834,7 +30834,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาประเมินอัต��นมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#serpent's%20fang_cm",
         "rarity": "Rare"
@@ -32628,7 +32628,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Sling Bullet +1 มาตรฐาน ราคาประเมินอัตโนมั��ิจากความหา��าก (ปรับได้ตา��ดุลยพ���นิ��)",
+        "note": "Uncommon �� Sling Bullet +1 มาตรฐาน ราคาประ��มินอัตโนมั��ิจากความหา��าก (ปรับได้ตา��ดุลยพ���นิ��)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20sling%20bullet_xdmg",
         "rarity": "Uncommon"
@@ -34498,7 +34498,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอ���ทม (ปรั���ได้ตามดุลยพ��นิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#ring%20of%20fire%20resistance_xdmg",
         "rarity": "Rare"
@@ -36351,7 +36351,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Very Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Very Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพ���นิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B3%20all-purpose%20tool_tce",
         "rarity": "Very Rare"
@@ -36368,7 +36368,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Very Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Very Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับ���ด้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B3%20arcane%20grimoire_tce",
         "rarity": "Very Rare"
@@ -38192,7 +38192,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "อูฐ ความเร็ว 50 ��ุต แบกน้ำหนั���ได้ 480 ป��นด์ ทนแดดและทะเลทรายได้ดีเยี่ยม",
+        "note": "อ���ฐ ความเร็ว 50 ��ุต แบกน้ำหนั���ได้ 480 ป��นด์ ทนแดดและทะเลทรายได้ดีเยี่ยม",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -38208,7 +38208,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "ลา/ล่อ ความเร็ว 40 ฟุต แบกน้ำหนักได้ 420 ปอนด์ อดทนและราคาย่อมเยา เหมาะเป็นสัตว์บรรทุก",
+        "note": "ลา/ล่อ ความเร็ว 40 ฟุต แบกน้ำ���นักได้ 420 ปอนด์ อดทนและราคาย่อมเยา เหมาะเป็นสัตว์บรรทุก",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -41994,7 +41994,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Legendary — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Legendary — ราคาประเมินอัตโนมัติจากความหา��าก/ควา���สามารถของไอเ��ม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#scroll%20of%20titan%20summoning%20(tarrasque)_xdmg",
         "rarity": "Legendary"
@@ -42011,7 +42011,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Common — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Common — ราคาประเมิน��ัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#spell%20scroll%20(cantrip)_xdmg",
         "rarity": "Common"
@@ -45773,7 +45773,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาป���ะเมินอัตโนมัติจากความหายา���/ความสามารถของไอเทม (ปรับได���ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#bowl%20of%20commanding%20water%20elementals_xdmg",
         "rarity": "Rare"
@@ -46249,7 +46249,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — ราคาประ���มินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#card%20sharp's%20deck_bmt",
         "rarity": "Uncommon"
@@ -53083,7 +53083,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Common — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได��ตามดุลยพินิจ)",
+        "note": "Common — ราคาประเมินอัต��นมัติจากความหายาก/ความสามารถขอ���ไอเทม (ปรับได��ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#moodmark%20paint_ggr",
         "rarity": "Common"
@@ -54919,7 +54919,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสา��ารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#regenerating%20marrow_valdaspire24",
         "rarity": "Rare"
@@ -56755,7 +56755,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอ���ทม (���รับได้ต���มดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#stone%20of%20controlling%20earth%20elementals_xdmg",
         "rarity": "Rare"

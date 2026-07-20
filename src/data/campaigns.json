@@ -166,14 +166,14 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เหมาะอย่างยิ่งสำหรับใช้เป็นเซสชันแรกของผู้เล่นใหม่"
+    "note": "เหมา��อย่างยิ่งสำหรับใช้เป็นเซสชันแรกของผู้เล่นใหม่"
   },
   {
     "id": "campaign-b9997286-0132-4134-a158-b14a9f23e5d2",
     "source": "D&D Beyond (ซีรีส์��ังกร)",
     "name": "Dragon Delves: A Copper for a Song",
     "status": "-",
-    "briefContent": "โมดูลขนาดสั้น 1 ตอนจบ เน��นภารกิจเกี่ยวกับมังกรทองแดงและกา��เจรจาหรือไขปริศนา",
+    "briefContent": "โมดูลขนาดสั้น 1 ตอนจบ เน��นภารกิจเกี่ยวกับมังกรทองแดงและกา��เจรจาหรือ��ขปริศนา",
     "level": "1",
     "continuesFrom": "",
     "campaignType": "One-Shot",
@@ -555,14 +555,16 @@
     "source": "Mammoth Homebrew",
     "name": "The Descent of Phandelver",
     "adventureSlug": "the-descent-of-phandelver",
-    "status": "Prepared",
+    "status": "Developing",
     "briefContent": "แคมเปญยาวใน Forgotten Realms รอบเมือง Phandalin เริ่มจาก A Most Potent Brew ต่อด้วย Lost Mine of Phandelver แล้วขยายสู่ Phandelver and Below: The Shattered Obelisk ตามหาแท่งหินเนเธอรีสโบราณที่แตกกระจาย ก่อนกลุ่มบูชา mind flayer จะรวบรวมมันขึ้นใหม่และเปิดรอยแยกสู่ Far Realm ผูกเข้ากับปม Astral Nexus: Constellation Protocol",
     "level": "1-12",
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
     "note": "19 EP รวมทั้งแคมเปญ (Act1: 1 EP | Act2: 7 EP | Act3: 11 EP) — เนื้อเรื่องเต็มพร้อมเล่น ยังไม่มีแมพ/ภาพประกอบแนบ",
-    "partyTagIds": [],
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
     "campaignRole": "Playable"
   },
   {
@@ -1098,8 +1100,7 @@
     "party": "",
     "note": "มักใช้เป็นเกม One-Shot ต้อนรับผู้เล่นใหม่",
     "partyTagIds": [
-      "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca",
-      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+      "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca"
     ],
     "campaignRole": "Base"
   },
@@ -1494,14 +1495,15 @@
     "id": "campaign-6c32d25e-7de1-4666-8f38-077433aea28d",
     "source": "Wizards of the Coast",
     "name": "Lost Mine of Phandelver",
-    "status": "-",
+    "status": "Prepared",
     "briefContent": "แคมเปญเริ่มต้นในตำนานจากเซ็ต Starter Set ออกตามหาเหมืองโบราณและช่วยเหลือเพื่อนคนแคระจากเงื้อมมือของ The Black Spider",
     "level": "1 - 5",
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
     "note": "แคมเปญเปิด (สามารถส่งต่อแคมเปญเนื้อเรื่องหลักอื่นๆ ได้แทบทั้งหมด)",
-    "link": "https://5e.tools/adventure.html#lmop"
+    "link": "https://5e.tools/adventure.html#lmop",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-bb3758b4-a733-4e0d-b6c8-4e8e069ae421",
@@ -1534,7 +1536,7 @@
     "source": "Wizards of the Coast",
     "name": "Journeys through the Radiant Citadel",
     "status": "-",
-    "briefContent": "รวมบทผจญภัยสั้น 13 เรื่องที่มีศูนย์กลางอยู่ที่นครลอยฟ้า Radiant Citadel เน้นวัฒนธรรมที่หลากหลายและสีสันตระการตา",
+    "briefContent": "รวมบทผจญภัยสั้น 13 เรื่��งที่มีศูนย์กลางอยู่ที่นครลอยฟ้า Radiant Citadel เน้นวัฒนธรรมที่หลากหลายและสีสันตระการตา",
     "level": "1 - 14",
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
@@ -1636,14 +1638,15 @@
     "id": "campaign-c8d1a92a-fd00-455f-a7c3-ddac45f83757",
     "source": "Wizards of the Coast",
     "name": "Phandelver and Below: The Shattered Obelisk",
-    "status": "-",
+    "status": "Prepared",
     "briefContent": "แคมเปญขยายใหญ่ โดยครึ่งแรกนำเอาเนื้อหาพาร์ทเหมือง Phandelver มารีเมค และต่อครึ่งหลังด้วยภัยคุกคามจากพลังจิตต่างมิติ (Far Realm)",
     "level": "1 - 12",
     "continuesFrom": "Lost Mine of Phandelver",
     "campaignType": "Long Campaign",
     "party": "",
     "note": "ครึ่งแรกคือเนื้อหาขยายของ Lost Mine of Phandelver",
-    "link": "https://5e.tools/adventure.html#pabtso"
+    "link": "https://5e.tools/adventure.html#pabtso",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-0600b2f0-7bcd-4c2a-b956-3c91c6166c07",

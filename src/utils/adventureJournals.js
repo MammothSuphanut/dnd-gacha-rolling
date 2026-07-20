@@ -2,6 +2,11 @@
 // session (e.g. "EP01 - A Village in Mourning.md"). Only EP*.md counts as a
 // "journal entry" — CH*.md / 99-*.md are planning outlines, not narrative
 // content meant for players to read back.
+//
+// A side episode (an unplanned detour a session went on, off the main plot)
+// keeps the mainline EP number it branches from and appends a lowercase
+// letter — "EP04a - The Smuggler's Debt.md" — instead of renumbering every
+// EP after it. Multiple detours off the same EP go a, b, c...
 const journalFiles = import.meta.glob('/adventures/**/EP*.md', {
   query: '?raw',
   import: 'default',
@@ -24,14 +29,14 @@ const allMdFiles = import.meta.glob('/adventures/**/*.md', {
   eager: true,
 })
 
-const EP_PATH_RE = /^\/adventures\/([^/]+)\/(ACT\d+)[^/]*\/EP(\d+)[^/]*\.md$/
+const EP_PATH_RE = /^\/adventures\/([^/]+)\/(ACT\d+)[^/]*\/EP(\d+)([a-z]?)[^/]*\.md$/
 const OVERVIEW_PATH_RE = /^\/adventures\/([^/]+)\/00-overview\.md$/
 
 function extractTitle(content, fallback) {
   const match = content.match(/^#\s+(.+)$/m)
   if (!match) return fallback
   // Strip a redundant "EP1: " style prefix — the sidebar already prepends its own "EP01:" label.
-  return match[1].trim().replace(/^EP\d+\s*[:.-]\s*/i, '')
+  return match[1].trim().replace(/^EP\d+[a-z]?\s*[:.-]\s*/i, '')
 }
 
 function buildJournalsBySlug() {
@@ -40,16 +45,18 @@ function buildJournalsBySlug() {
   for (const [path, content] of Object.entries(journalFiles)) {
     const match = path.match(EP_PATH_RE)
     if (!match) continue
-    const [, slug, actId, epNumber] = match
+    const [, slug, actId, epNumber, sideLetter] = match
 
     if (!bySlug.has(slug)) bySlug.set(slug, new Map())
     const actsById = bySlug.get(slug)
     if (!actsById.has(actId)) actsById.set(actId, [])
 
     actsById.get(actId).push({
-      id: `${actId}-EP${epNumber}`,
+      id: `${actId}-EP${epNumber}${sideLetter}`,
       number: Number(epNumber),
-      title: extractTitle(content, `EP${epNumber}`),
+      sideLetter,
+      isSide: sideLetter !== '',
+      title: extractTitle(content, `EP${epNumber}${sideLetter}`),
       content,
       path,
     })
@@ -62,7 +69,7 @@ function buildJournalsBySlug() {
       .map(([actId, episodes]) => ({
         id: actId,
         title: actId,
-        episodes: episodes.sort((a, b) => a.number - b.number),
+        episodes: episodes.sort((a, b) => a.number - b.number || a.sideLetter.localeCompare(b.sideLetter)),
       }))
     result.set(slug, acts)
   }

@@ -9,15 +9,16 @@ Checklist ติดตามงานที่เหลือ หลังจา
 เป้าหมาย: แต่ละ Act ให้ตัวละครแวะหลายจุดย่อยของทวีปนั้น โดยอ้างอิงชื่อสถานที่จริงจากแผนที่แทนชื่อที่สมมติไว้กว้างๆ
 
 - [x] **Act 1 — Eiselcross**: เพิ่มเส้นทางจริง Balenpost (ท่าเรือขึ้นฝั่งทางใต้) → Foren (เกาะหลัก) → Aeor Crash Site/Fortress of the Dead Jarl (ทั้งคู่มีชื่อจริงบนแผนที่อยู่แล้ว ยืนยันแล้ว) — "Aeor Lab" คงชื่อไว้ตามที่ตกลง (เป็น homebrew sub-site ในบริเวณ Aeor Crash Site)
-- [x] **Act 2 — Wildemount**: หอคอยเวทมนตร์ → **Rexxentrum** (เมืองหลวง Dwendalian), เมืองใต้ดิน Xhorhas → **Rosohna** (นครหลวง Kryn Dynasty), สุสานใต้สมุทร → **Swavain Islands** ใกล้เกาะ **Rumblecusp** ผ่าน Menagerie Coast
+- [x] **Act 2 — Wildemount**: หอคอยเวทมนตร์ (Shimmer Ward) → **Rexxentrum** (เมืองหลวง Dwendalian) → **Druvenlode** (เมืองเหมืองเงินริม Amber Road ใต้ Rexxentrum, สาขาย่อยลัทธิ) → ข้ามพรมแดนสู่ **Rosohna** (นครหลวง Kryn Dynasty) → ข้ามเทือกเขา Penumbra ผ่าน **Bazzoxan** (ยังอยู่ฝั่ง Xhorhas) → **Ghor Veles**/Under Knives (ซากเมือง Age of Arcanum ฝั่ง **Blightshore**, รังหลักลัทธิ Mindflayer — แก้จุดผิดที่เคยระบุว่าอยู่ Xhorhas) → สุสานใต้สมุทรที่ **Diver's Grave** (หุบเหวใต้น้ำใน Swavain Islands) ผ่าน Menagerie Coast/Bisaft Port/Gravid Archipelago — ยืนยันภูมิศาสตร์อ้างอิงจาก Critical Role wiki (Druvenlode, Rexxentrum, Kryn Dynasty, Rosohna, Ghor Veles, Diver's Grave) เพิ่มเติมจากแผนที่ Exandria.jpeg
 - [x] **Act 3 — Tal'Dorei**: รังโจร Ashfang ย้ายไปอยู่ **Iron Authority** (ใต้สุด, แถบ Hdar-Fye/Ezordam-Haar/Beynsfal Plateaus) เส้นทางไล่ล่าผ่าน **Rifenmist Peninsula → Verdant Expanse (ใกล้ Syngorn) → Wildwood/Bramblewood (ใกล้ Westruun)** จบที่รังปีศาจใต้ **Kraghammer** (นครคนแคระ ตะวันตกเฉียงเหนือ) — สเปรดใต้→เหนือเต็มทวีป
 - [x] **Act 4 — Issylra**: แก้จุดผิดทวีป — Kraghammer/Bysaes Tyl (จริงๆ อยู่ Tal'Dorei/Wildemount ย้ายไป Act 3 แล้ว) เปลี่ยนเป็นรอยแยกที่ **Thorain Tundra** (เหนือสุด), **Caramarin Reach** (ใต้สุด), **Utesspire Mountains** (กลาง) จบที่ห้องทดลองบริเวณ **Sunderpeak Mountains** ใกล้ Vasselheim
 - [x] **Act 5 — Marquet + Glintshore**: Glintshore ยืนยันอยู่ใน **Hespet Archipelago** นอกชายฝั่งเหนือ ส่วนประกอบอาร์ติแฟกต์ผูกกับ **Rumedam Desert** (เหนือ, ใกล้ Ank'Harel), **Ozmit Sea** (กลาง, คงชื่อเดิมที่ถูกอยู่แล้ว), **Taloned Highlands/Coven Peaks** (ใต้สุด)
 - [x] **Act 6**: บทส่งท้ายสั้น ไม่ต้องเพิ่มภูมิศาสตร์ใหม่ (เป็นการเดินทางกลับผ่านเส้นทาง Act 1 เดิม)
 
 ## ปมอื่นที่ยังค้างอยู่ (ไม่เกี่ยวกับภูมิศาสตร์)
+- [ ] **Act 2 กำลังเขียน journal เต็มทีละ EP อยู่** — ดู [ACT02/SESSION-HANDOFF.md](./ACT02-shadow-war-of-wildemount/SESSION-HANDOFF.md) เพื่อสั่งงานต่อ (สรุปสถานะ + EP1 คือเป้าหมายถัดไป) ลบไฟล์นี้ทิ้งได้เมื่อ Act 2 เขียนครบทุก EP
 - [ ] ลง detail ระดับ EP จริง (stat block เต็ม, DC เฉพาะจุด, boxed read-aloud text) — ตอนนี้ทุก Chapter brief มีแค่ระดับ outline + CR แนะนำ + ลิสต์ EP ที่แนะนำ ยังไม่ใช่ journal เต็มรูปแบบ (ใช้ `/build-ep` ได้เมื่อพร้อม) — ทำแบบ just-in-time ก่อนใกล้เล่นถึง EP นั้นจริง ไม่ต้องลงล่วงหน้าทั้งแคมเปญ
-- [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้ว: Flay, Grok, Chin, Messenger, Voss Kaldrenar, Ren Sk'val, Thessaly Vane, Prelate Iskavel Thorn, Vaelkor Thess, Sable Anwari, Corvain Delthasar, Archprelate Solvenne Wyrenhall
+- [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้ว: Flay, Grok, Chin, Messenger, Voss Kaldrenar, Brack Ferrowint, Warden Yshaal, Ren Sk'val, Thessaly Vane, Prelate Iskavel Thorn, Vaelkor Thess, Sable Anwari, Corvain Delthasar, Archprelate Solvenne Wyrenhall
 
 ## เสร็จแล้ว
 - [x] โครงเรื่องเต็ม Act 1–6 พร้อม level checkpoint + CR แนะนำ
