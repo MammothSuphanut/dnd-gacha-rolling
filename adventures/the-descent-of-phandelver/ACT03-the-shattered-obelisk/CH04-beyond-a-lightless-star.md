@@ -1,11 +1,11 @@
-# Chapter 4 — ดาวที่ไร้แสง
-**Level 11-12**
+# Chapter 4 — ไกลเกินดาวไร้แสง
+**Level 10-12**
 
-จุดไคลแม็กซ์ของแคมเปญ กลุ่มเจาะลึกลงไปถึงแก่นกลางของ Obelisk พื้นที่ที่กฎเกณฑ์ของโลกความเป็นจริงบิดเบี้ยวที่สุด เผชิญหน้ากับสิ่งมีชีวิตทรงพลังจาก Far Realm ที่พยายามฉีกรอยแยกให้กว้างถาวร กลุ่มต้องปิดผนึก/ทำลายแก่นกลางให้ได้ก่อนที่มันจะสำเร็จ
+กลุ่มก้าวผ่านประตูสู่ **Briny Maze** ดินแดนกึ่งอินทรีย์ของ Ilvaash ในนาม Far Realm ที่มีลักษณะคล้ายสมองยักษ์ ต้องฝ่าด่าน "mindgate" สามจุดและหาพันธมิตรที่ไม่คาดคิด (มังกร githyanki, มังกร amethyst, ฝูง flumph) ก่อนดำดิ่งลงสู่ **Briny Pool** บ่อน้ำไขสันหลังลึก 6 ไมล์ สู่ **Endless Void** ใจกลางอาณาจักร Ilvaash ที่นั่นกลุ่มต้องสำรวจเกาะลอยฟ้าหลายเกาะ ช่วยชาวเมือง Phandalin ที่ถูกจับ ก่อนเผชิญหน้า mind flayer fanatics ทั้งสาม (Chishinix, Hashutu, Voalsh) ที่ **Ilvaash's Anima** ทำลายแท่งหินที่ประกอบขึ้นใหม่ และเอาชนะ **Refraction of Ilvaash** ก่อนกลับสู่ Phandalin ที่ได้รับการปลดปล่อย — ปิดฉากทั้งแคมเปญ
 
-## สารบัญ EP (EP8 คือ EP สุดท้ายของทั้งเรื่อง)
-- [EP7: Beyond a Lightless Star](<./EP07 - Beyond a Lightless Star.md>) — บุกแก่นกลาง Obelisk เผชิญหน้า Yshrannox บอสสุดท้ายจาก Far Realm (เฟส 1)
-- [EP8: Sealing the Rift](<./EP08 - Sealing the Rift.md>) — จบไฟต์เฟส 2, ปิดผนึก/ทำลายเมล็ดพันธุ์แห่งการทำลายล้าง, บทส่งท้าย Nexus, ปิดฉากแคมเปญ
+## สารบัญ EP
+- [EP10: The Briny Maze](<./EP10 - The Briny Maze.md>) — เขาวงกตเนื้อเยื่อของ Ilvaash, mindgate สามจุด, พันธมิตรและศัตรูหลากหลาย
+- [EP11: Beyond a Lightless Star](<./EP11 - Beyond a Lightless Star.md>) — Endless Void, ช่วยชาวเมือง, ปะทะ mind flayer fanatics + Refraction of Ilvaash, ปิดฉากแคมเปญ + บทส่งท้าย Astral Nexus
 
 ---
-[← Chapter 3](./CH03-rifts-in-reality.md) · [Act 3 outline](./00-act-outline.md) · [ภาพรวม](../00-overview.md)
+[← Chapter 3](./CH03-rifts-in-reality.md) · [Act outline](./00-act-outline.md)
