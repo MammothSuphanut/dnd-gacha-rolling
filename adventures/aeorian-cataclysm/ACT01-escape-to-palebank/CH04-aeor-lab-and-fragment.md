@@ -34,11 +34,9 @@
 
 Messenger เองยังคงเฝ้ารออยู่ที่ Aeor Lab ต่อไปจนกว่าตัวละครจะนำ Fragment ครบทั้ง 5 ชิ้นกลับมาคืนใน Act 6
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP1 — บุก Aeor Lab**: ร่วมมือกับ Flay/Grok/Chin สู้ Mindflayer หัวหน้า (Flay เสียชีวิต)
-- **EP2 — พบ Messenger**: เฉลยความจริงเรื่อง Ofear/The Fragment, ได้เบาะแส Fragment of Wisdom
-- **EP3 — Fortress of the Dead Jarl**: ฝ่า Golem, ปลดปล่อย Jarl โดยไม่ตั้งใจ, บอสไฟต์ได้ Fragment of Wisdom
-- **EP4 — จบ Act 1**: กลับไปคืน Fragment ให้ Messenger เสริมพลังนำทาง
+## EP ในบทนี้
+- **EP6 — Aeor Crash Site**: สำรวจซากปรักหักพังผิวดิน (Gauth เฝ้าทางลง) ก่อนพบ Flay/Grok/Chin กลุ่มต่อต้าน Mindflayer ใต้ดิน — Mindflayer นักสำรวจ (ไม่ใช่ตัวควบคุม Aeor Lab ตัวจริง) บังเอิญเจอกลุ่มของ Flay สังหาร Flay กลางฉากแล้วหันมาปะทะตัวละครแทนก่อนถอยหายไป จบด้วยพบ **Messenger** ผู้เฉลยความจริงเรื่อง Ofear/The Fragment และชี้เบาะแสไปยัง Fortress of the Dead Jarl — journal เต็มที่ [EP06 - Aeor Crash Site.md](<./EP06 - Aeor Crash Site.md>)
+- **EP7 — Fortress of the Dead Jarl**: ฝ่า Golem ผู้พิทักษ์ประตู, ปลดปล่อย Jarl ผู้ตายโดยไม่ตั้งใจ, บอสไฟต์ชิง **Fragment of Wisdom** กลับไปมอบให้ Messenger ปิดฉาก Act 1 — journal เต็มที่ [EP07 - Fortress of the Dead Jarl.md](<./EP07 - Fortress of the Dead Jarl.md>)
 
 ---
 [← Chapter 3](./CH03-journey-to-eiselcross.md) · [Act 1 outline](./00-act-outline.md) · [Act 2 →](../ACT02-shadow-war-of-wildemount/00-act-outline.md)

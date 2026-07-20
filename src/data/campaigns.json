@@ -551,6 +551,21 @@
     "campaignRole": "Playable"
   },
   {
+    "id": "campaign-9d3f6b2c-1a4e-4d7f-8c5b-2e6a9f0d7c31",
+    "source": "Mammoth Homebrew",
+    "name": "The Descent of Phandelver",
+    "adventureSlug": "the-descent-of-phandelver",
+    "status": "Prepared",
+    "briefContent": "แคมเปญยาวใน Forgotten Realms รอบเมือง Phandalin เริ่มจาก A Most Potent Brew ต่อด้วย Lost Mine of Phandelver แล้วขยายสู่ Phandelver and Below: The Shattered Obelisk ตามหาแท่งหินเนเธอรีสโบราณที่แตกกระจาย ก่อนกลุ่มบูชา mind flayer จะรวบรวมมันขึ้นใหม่และเปิดรอยแยกสู่ Far Realm ผูกเข้ากับปม Astral Nexus: Constellation Protocol",
+    "level": "1-12",
+    "continuesFrom": "",
+    "campaignType": "Long Campaign",
+    "party": "",
+    "note": "19 EP รวมทั้งแคมเปญ (Act1: 1 EP | Act2: 7 EP | Act3: 11 EP) — เนื้อเรื่องเต็มพร้อมเล่น ยังไม่มีแมพ/ภาพประกอบแนบ",
+    "partyTagIds": [],
+    "campaignRole": "Playable"
+  },
+  {
     "id": "campaign-16158073-b8b7-4fe3-86f8-b340bcf46282",
     "source": "James Introcaso",
     "name": "Planet of Tarrasques",

@@ -7,9 +7,8 @@
 
 การหลบหนีพาตัวละครผ่านค่ายกลปริศนา (dungeon สั้นๆ ระดับ 1 ที่ใช้เป็นบททดสอบความร่วมมือของกลุ่ม) ก่อนจะโผล่ออกมาที่ **Palebank Village** อย่างสับสนงุนงง ไม่รู้ด้วยซ้ำว่าตัวเองเดินทางมาถึงที่นี่ได้อย่างไร จากนั้นจึงเริ่มทำความรู้จักกับคนในหมู่บ้าน (หัวหน้าหมู่บ้านและ NPC สำคัญที่จะเป็นตัวมอบภารกิจใน [Chapter 2](./CH02-village-quests.md))
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง ดู [sessions/README.md](../sessions/README.md))
-- **EP1 — หลบหนีจากลัทธิ**: ค่ายกลปริศนาระดับ 1, บททดสอบความร่วมมือของกลุ่ม
-- **EP2 — มาถึง Palebank Village**: ฉากงุนงงเมื่อมาถึง, เริ่มพบและทำความรู้จักหัวหน้าหมู่บ้าน/NPC สำคัญ
+## EP ในบทนี้
+- **EP1 — Escape from the Cult**: หลบหนีค่ายลัทธิ (พร้อมทวิสต์ Doppelganger สวมรอยสมาชิกกลุ่ม), มาถึง Palebank Village อย่างงุนงง, พบ Elro Aldataur, ตามหา Mila Teno ที่หายไปในป่า และล่าเสือดุร้ายผิดปกติให้เธอ — journal เต็มที่ [EP01 - Escape from the Cult.md](<./EP01 - Escape from the Cult.md>) (เนื้อหา EP นี้ครอบคลุมยาวไปถึงภารกิจแรกของ Chapter 2 ด้วย ดู [Chapter 2](./CH02-village-quests.md))
 
 ---
 [← Act 1 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-village-quests.md)
