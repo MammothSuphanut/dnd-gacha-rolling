@@ -21,7 +21,7 @@ Checklist ติดตามงานที่เหลือ หลังจา
 - [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้ว: Flay, Grok, Chin, Messenger, Voss Kaldrenar, Brack Ferrowint, Warden Yshaal, Ren Sk'val, Thessaly Vane, Prelate Iskavel Thorn, Vaelkor Thess, Sable Anwari, Corvain Delthasar, Archprelate Solvenne Wyrenhall
 
 ## เสร็จแล้ว
-- [x] **Act 2 เขียน journal เต็มครบทุก EP หลัก (EP1-EP8) แล้ว** — ดู `ACT02-shadow-war-of-wildemount/` (ต่อจาก Act 1 ที่เขียนครบก่อนหน้า) — ลบ `SESSION-HANDOFF.md` ของ Act 2 ทิ้งได้แล้ว เว้นแต่จะเขียน EP06a (เดินทางจาก Bisaft Port) เพิ่มทีหลัง
+- [x] **Act 2 เขียน journal เต็มครบทุก EP หลัก (EP1-EP8) แล้ว** — ดู `ACT02-shadow-war-of-wildemount/` (ต่อจาก Act 1 ที่เขียนครบก่อนหน้า) — ลบ `SESSION-HANDOFF.md` ของ Act 2 แล้ว (เว้นแต่จะเขียน EP06a เดินทางจาก Bisaft Port เพิ่มทีหลัง ค่อยสร้างไฟล์ handoff ใหม่ถ้าจำเป็น)
 - [x] โครงเรื่องเต็ม Act 1–6 พร้อม level checkpoint + CR แนะนำ
 - [x] ปมย่อยทั้งหมดใน 99-notes.md (Fragment of Genesis, Messenger ตอนจบ, หัวหน้าลัทธิ Act 3, จังหวะเวลา Lich, NPC Kryn, โทน Act 6)
 - [x] กลไกเกม The Fragment ทั้ง 5 ชิ้น (`01-the-fragments.md`)

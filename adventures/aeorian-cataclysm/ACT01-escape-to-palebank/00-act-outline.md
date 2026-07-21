@@ -7,7 +7,7 @@
 | ฉากเปิด: หนีจากลัทธิ | 1 |
 | จบ Palebank Village | 2 (กลางๆ) |
 | เดินทางถึง Aeor Lab site | 3 |
-| จบ Fortress of the Dead Jarl (รวม Mindflayer + Golem/Jarl) | 3 + 30–40% สู่ 4 |
+| จบ Fortress of the Dead Jarl (รวม XP จาก Mindflayer นักสำรวจที่ Aeor Crash Site EP6 + Golem/Jarl ที่นี่) | 3 + 30–40% สู่ 4 |
 
 ## สารบัญ Chapter → EP
 - [Chapter 1: หนีจากลัทธิ และมาถึง Palebank Village](./CH01-escape-and-arrival.md) `Level 1`
