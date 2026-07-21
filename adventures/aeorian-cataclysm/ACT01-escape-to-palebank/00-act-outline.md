@@ -23,4 +23,4 @@
   - [EP7: Fortress of the Dead Jarl](<./EP07 - Fortress of the Dead Jarl.md>)
 
 ---
-[← ภาพรวม](../00-overview.md) · [Act 2 →](../ACT02-shadow-war-of-wildemount/00-act-outline.md)
+[← ภาพรวม](../00-overview.md) · [Act 2 →](../ACT02-dwendalian-shadow/00-act-outline.md)

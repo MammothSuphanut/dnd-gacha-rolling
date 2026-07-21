@@ -125,4 +125,4 @@ Messenger กล่าวคำอำลาสั้นๆ ยืนยันว
 
 ## จบ EP ด้วย
 
-ตัวละครออกจาก Aeor Lab พร้อม Fragment of Wisdom ในมือ มุ่งหน้าสู่การผจญภัยครั้งใหม่เพื่อตามหา Fragment ที่เหลืออีก 4 ชิ้น — เปิดฉาก **[Act 2](../ACT02-shadow-war-of-wildemount/00-act-outline.md)**
+ตัวละครออกจาก Aeor Lab พร้อม Fragment of Wisdom ในมือ มุ่งหน้าสู่การผจญภัยครั้งใหม่เพื่อตามหา Fragment ที่เหลืออีก 4 ชิ้น — เปิดฉาก **[Act 2](../ACT02-dwendalian-shadow/00-act-outline.md)**

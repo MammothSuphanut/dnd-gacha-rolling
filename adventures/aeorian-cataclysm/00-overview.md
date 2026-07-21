@@ -20,12 +20,14 @@ Ofear คืออีกชื่อหนึ่งของ **Factorum Malleus*
 
 > ดูกลไกเกม (Usage/Effect/Stress Cost) ของแต่ละชิ้นได้ที่ [01-the-fragments.md](./01-the-fragments.md)
 
+> **หมายเหตุขอบเขตแคมเปญ**: ทั้งเรื่องเกิดขึ้นใน **Wildemount** ล้วนๆ (Act 1 เปิด/Act 6 ปิดที่ Eiselcross เท่านั้น) — ดูที่มาของการปรับโครงนี้ที่ [RESTRUCTURE-PROPOSAL-wildemount-only.md](./RESTRUCTURE-PROPOSAL-wildemount-only.md) เนื้อหา Act 2–5 เวอร์ชันเก่า (ทวีปอื่น) ถูกเก็บไว้ที่ [_archive/](./_archive/) เป็นข้อมูลอ้างอิง ไม่ใช่เนื้อเรื่องหลักอีกต่อไป
+
 ## สารบัญ Act
-- [Act 1: หนีจากลัทธิ สู่ Palebank Village](./ACT01-escape-to-palebank/00-act-outline.md) — Level 1–3
-- [Act 2: สงครามเงาแห่ง Wildemount](./ACT02-shadow-war-of-wildemount/00-act-outline.md) — Level 3–7
-- [Act 3: ลัทธิปีศาจแห่ง Tal'Dorei](./ACT03-demon-cult-of-taldorei/00-act-outline.md) — Level 7–10
-- [Act 4: ประตูมิติเถื่อนแห่ง Issylra](./ACT04-rifts-of-issylra/00-act-outline.md) — Level 10–14
-- [Act 5: Glintshore และเทพแห่งความตาย](./ACT05-glintshore-god-of-death/00-act-outline.md) — Level 14–19
+- [Act 1: หนีจากลัทธิ สู่ Palebank Village](./ACT01-escape-to-palebank/00-act-outline.md) — Level 1–3 — Fragment of Wisdom
+- [Act 2: เงื้อมเงาแห่ง Dwendalian Empire](./ACT02-dwendalian-shadow/00-act-outline.md) — Level 3–7 — Fragment of Void
+- [Act 3: ทางแยกสู่ Xhorhas](./ACT03-crossroads-to-xhorhas/00-act-outline.md) — Level 7–10 — Fragment of Stasis
+- [Act 4: ห้องนิรภัยแห่งชีวิตนิรันดร์](./ACT04-vault-of-eternal-life/00-act-outline.md) — Level 10–14 — Fragment of Genesis
+- [Act 5: สิ่งที่ทะเลกลืนกิน](./ACT05-what-the-sea-consumed/00-act-outline.md) — Level 14–19 — Fragment of Zenith, เฉลย + ปะทะ Vaelkor Thess
 - [Act 6: คืน Fragment สู่ Aeor Lab (บทส่งท้าย)](./ACT06-return-to-aeor-lab/00-act-outline.md) — Level 19–20
 
 ## ดูเพิ่มเติม

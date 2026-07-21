@@ -39,4 +39,4 @@ Messenger เองยังคงเฝ้ารออยู่ที่ Aeor L
 - **EP7 — Fortress of the Dead Jarl**: ฝ่า Golem ผู้พิทักษ์ประตู, ปลดปล่อย Jarl ผู้ตายโดยไม่ตั้งใจ, บอสไฟต์ชิง **Fragment of Wisdom** กลับไปมอบให้ Messenger ปิดฉาก Act 1 — journal เต็มที่ [EP07 - Fortress of the Dead Jarl.md](<./EP07 - Fortress of the Dead Jarl.md>)
 
 ---
-[← Chapter 3](./CH03-journey-to-eiselcross.md) · [Act 1 outline](./00-act-outline.md) · [Act 2 →](../ACT02-shadow-war-of-wildemount/00-act-outline.md)
+[← Chapter 3](./CH03-journey-to-eiselcross.md) · [Act 1 outline](./00-act-outline.md) · [Act 2 →](../ACT02-dwendalian-shadow/00-act-outline.md)
