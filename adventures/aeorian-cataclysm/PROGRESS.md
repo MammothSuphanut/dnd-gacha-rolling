@@ -8,6 +8,7 @@ Checklist ติดตามงานที่เหลือ หลังปร
 - [x] เขียนใหม่ `ACT06-return-to-aeor-lab/00-act-outline.md` — ปรับให้สอดคล้องกับการเฉลย/ปะทะ Vaelkor Thess ที่ย้ายมา Act 5 แล้ว เพิ่มทางเลือกปิดแคมเปญ Astral Nexus (Constellation vs. อยู่ปกปักโลกเดิม)
 - [x] sync `00-overview.md` (สารบัญ Act + level range + Fragment ต่อ Act) และ `99-notes.md` (จุดตัดสินใจ, ตารางเลเวล, อ้างอิง Exandria) ให้ตรงกับโครงใหม่
 - [x] Act 1 คงเดิม 100% ไม่ต้องแก้เนื้อหา (แก้แค่ลิงก์ท้ายไฟล์ให้ชี้ไป Act 2 โฟลเดอร์ใหม่)
+- [x] เขียน EP journal เต็มรูปแบบ (boxed read-aloud text, DC เฉพาะจุด, NPC ตั้งชื่อ+tactics, Treasure แยกตามจุด) ครบทุก Act 2–6 แล้ว — Act 2 (7 EP), Act 3 (5 EP), Act 4 (5 EP), Act 5 (6 EP), Act 6 (3 EP) รวม 26 EP ใหม่ ความหนาแน่นเทียบเท่า Act 1 EP1/EP4 ตามที่ผู้เล่นยืนยัน
 
 ## ตาราง Act ใหม่
 | Act | ชื่อ | Fragment | เส้นทาง |
@@ -21,7 +22,6 @@ Checklist ติดตามงานที่เหลือ หลังปร
 
 ## งานที่เหลือ
 - [ ] ตัดสินใจว่าจะ**ลบ** `_archive/` ทิ้งถาวรเมื่อไหร่ หรือเก็บไว้เป็น reference ต่อไปเรื่อยๆ (ไม่บังคับ ไม่กระทบเนื้อเรื่องหลัก)
-- [ ] ลง detail ระดับ EP จริง (stat block เต็ม, DC เฉพาะจุด, boxed read-aloud text, NPC ตั้งชื่อ+tactics ครบ) สำหรับ Act 2–6 ทั้งหมด — ตอนนี้มีแค่ระดับ Chapter brief ทำแบบ just-in-time ด้วย `/build-ep` ก่อนใกล้เล่นถึง EP นั้นจริง ไม่ต้องลงล่วงหน้าทั้งแคมเปญ (ดูกฎ 3 ของ [structure-guide.md](../../adventure-builder/structure-guide.md))
-- [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้วในโครงใหม่: Elro Aldataur, Uvilia Whek, Prelate Iskavel Thorn, ศาสตราจารย์ Ilyana Marrow, Rennick, Vaelkor Thess, Messenger
+- [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้วในโครงใหม่: Elro Aldataur, Uvilia Whek, Prelate Iskavel Thorn, ศาสตราจารย์ Ilyana Marrow, Rennick, Vaelkor Thess, Messenger, Bright Queen Leylas Kryn, Corvin Ashwake ฯลฯ
 - [ ] pass ภูมิศาสตร์ละเอียด (ชื่อย่านในเมือง/จุด landmark เฉพาะ) สำหรับ Ruins of Draconia, Ruins of Sepesca, Diver's Grave, Darktow Isle ที่ยังไม่เคยเขียนละเอียดมาก่อน (ต่างจาก Rexxentrum/Druvenlode/Rosohna/Bazzoxan/Ghor Veles ที่มี texture ระดับหนึ่งอยู่แล้วจากเนื้อหาเก่าใน `_archive/`)
 - [ ] จุด confirm อื่นๆ ที่ยังเปิดอยู่ — ดูท้าย [RESTRUCTURE-PROPOSAL-wildemount-only.md](./RESTRUCTURE-PROPOSAL-wildemount-only.md#จุดที่ต้อง-confirm-ก่อนเริ่มลงมือจริง)

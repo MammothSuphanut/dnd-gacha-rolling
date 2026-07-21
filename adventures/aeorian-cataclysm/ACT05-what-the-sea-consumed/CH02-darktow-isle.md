@@ -10,10 +10,10 @@
 ## บอสไฟต์ปิดเนื้อเรื่องหลัก `Level 18 → 19`
 Vaelkor Thess ต่อสู้เต็มกำลัง (แนะนำ ~CR สูงสุดของทั้งแคมเปญ ปรับตามจำนวน/เลเวลปาร์ตี้จริง) แต่พลังรวมของ Fragment ทั้ง 4 ชิ้นในมือตัวละครเกินกว่าที่เขาคาดการณ์ไว้ — เขาพ่ายแพ้ (แนะนำให้ตายจริงเพื่อปิดปมตัวร้ายหลักให้เด็ดขาด ไม่ใช่หนีไปเปิดทางให้ต้องมาเฉลยซ้ำอีก) ตัวละครได้ **Fragment of Zenith** มาครองครบทั้ง 5 ชิ้น ปิดฉากเนื้อเรื่องหลักของแคมเปญ — ส่วน Terasaq ยังคงอยู่ที่ Darktow Isle ต่อไป (ปมเปิดสำหรับ Act 6 หรือเนื้อหาหลังแคมเปญจบ)
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP4 — เกาะที่ถูกกลืนกิน**: มาถึง Darktow Isle ที่พังทลาย, บรรยากาศ Terasaq เป็นฉากหลัง
-- **EP5 — เฉลยตัวร้ายแท้จริง**: เผชิญหน้า Vaelkor Thess, เฉลยความจริงทั้งหมด
-- **EP6 — บอสไฟต์ปิดเนื้อเรื่องหลัก**: การต่อสู้ครั้งสุดท้าย, ได้ Fragment of Zenith ครบทั้ง 5 ชิ้น
+## EP ในบทนี้
+- **[EP4 — The Isle That Was Devoured](<./EP04 - The Isle That Was Devoured.md>)**: มาถึง Darktow Isle ที่พังทลาย, บรรยากาศ Terasaq เป็นฉากหลัง
+- **[EP5 — The Truth Behind Everything](<./EP05 - The Truth Behind Everything.md>)**: เผชิญหน้า Vaelkor Thess, เฉลยความจริงทั้งหมด
+- **[EP6 — The Last Fragment](<./EP06 - The Last Fragment.md>)**: การต่อสู้ครั้งสุดท้าย, ได้ Fragment of Zenith ครบทั้ง 5 ชิ้น
 
 ---
 [← Chapter 1](./CH01-divers-grave.md) · [Act 6 →](../ACT06-return-to-aeor-lab/00-act-outline.md)

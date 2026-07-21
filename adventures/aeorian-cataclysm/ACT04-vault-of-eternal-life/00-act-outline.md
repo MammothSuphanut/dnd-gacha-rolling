@@ -15,7 +15,12 @@
 
 ## สารบัญ Chapter → EP
 - [Chapter 1: Ruins of Draconia](./CH01-ruins-of-draconia.md) `Level 10 → 12`
+  - [EP1 — Crossing the Ashkeeper Peaks](<./EP01 - Crossing the Ashkeeper Peaks.md>)
+  - [EP2 — The Vault of Eternal Life](<./EP02 - The Vault of Eternal Life.md>)
+  - [EP3 — The Thief in Silver](<./EP03 - The Thief in Silver.md>)
 - [Chapter 2: ไล่ล่าสู่ Ruins of Sepesca](./CH02-chase-to-sepesca.md) `Level 12 → 14`
+  - [EP4 — Race Across the Continent](<./EP04 - Race Across the Continent.md>)
+  - [EP5 — The Ruins of Sepesca](<./EP05 - The Ruins of Sepesca.md>)
 
 ---
 [← Act 3](../ACT03-crossroads-to-xhorhas/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 5 →](../ACT05-what-the-sea-consumed/00-act-outline.md)

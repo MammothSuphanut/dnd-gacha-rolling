@@ -33,10 +33,10 @@
 
 DM ปรับ epilogue ปิดท้ายให้ตรงกับสิ่งที่ผู้เล่นแต่ละคนเลือก
 
-### EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP1 — เก็บกวาดภัยร้ายที่หลุดออกมา**: encounter เก็บตกระหว่างทางกลับ Eiselcross
-- **EP2 — พบ Messenger อีกครั้ง**: บทสนทนาปิดเรื่องแบบ roleplay เต็มรูปแบบ
-- **EP3 — พิธีคืน Fragment**: จบแคมเปญ, Messenger จากไป, ทางเลือก Astral Nexus
+## EP ในบทนี้
+- **[EP1 — What the World Let Loose](<./EP01 - What the World Let Loose.md>)**: encounter เก็บตกระหว่างทางกลับ Eiselcross
+- **[EP2 — The Messenger's Farewell](<./EP02 - The Messenger's Farewell.md>)**: บทสนทนาปิดเรื่องแบบ roleplay เต็มรูปแบบ
+- **[EP3 — The Return of the Fragments](<./EP03 - The Return of the Fragments.md>)**: จบแคมเปญ, Messenger จากไป, ทางเลือก Astral Nexus
 
 ---
 [← Act 5](../ACT05-what-the-sea-consumed/00-act-outline.md) · [ภาพรวม](../00-overview.md)

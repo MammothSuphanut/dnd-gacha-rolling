@@ -16,7 +16,12 @@
 
 ## สารบัญ Chapter → EP
 - [Chapter 1: Rexxentrum และ Rosohna](./CH01-rexxentrum-and-rosohna.md) `Level 7 → 8`
+  - [EP1 — The Diplomatic Road](<./EP01 - The Diplomatic Road.md>)
+  - [EP2 — The Court of the Bright Queen](<./EP02 - The Court of the Bright Queen.md>)
 - [Chapter 2: Bazzoxan และ Ghor Veles](./CH02-bazzoxan-and-ghor-veles.md) `Level 8 → 10`
+  - [EP3 — Shadow of Bazzoxan](<./EP03 - Shadow of Bazzoxan.md>)
+  - [EP4 — Vault of Shadows](<./EP04 - Vault of Shadows.md>)
+  - [EP5 — Return to Rosohna](<./EP05 - Return to Rosohna.md>)
 
 ---
 [← Act 2](../ACT02-dwendalian-shadow/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 4 →](../ACT04-vault-of-eternal-life/00-act-outline.md)

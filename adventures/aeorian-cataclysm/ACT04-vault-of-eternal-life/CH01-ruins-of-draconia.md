@@ -14,10 +14,10 @@
 
 Marrow ตกใจไม่แพ้ตัวละคร ยืนยันว่าไม่เคยรู้จัก Rennick เป็นการส่วนตัว รู้แค่ว่าเขาเป็นตัวแทนของผู้สนับสนุนทุนที่ไม่เคยเปิดเผยตัวตน เธอขอร้องให้ตัวละครตามไปทวงคืน Fragment ก่อนที่จะสายเกินไป — Rennick มุ่งหน้าไปยัง **Menagerie Coast** เพื่อขึ้นเรือหนีออกจากทวีป
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP1 — ข้าม Ashkeeper Peaks**: travel montage สู่ Ruins of Draconia
-- **EP2 — ห้องนิรภัยแห่งชีวิตนิรันดร์**: ร่วมงานกับ Marrow, เจาะเข้าห้องนิรภัยชั้นใน
-- **EP3 — Rennick ชิง Fragment หนี**: จังหวะเผชิญหน้า, Fragment of Genesis ถูกชิงไป, เริ่มไล่ล่า
+## EP ในบทนี้
+- **[EP1 — Crossing the Ashkeeper Peaks](<./EP01 - Crossing the Ashkeeper Peaks.md>)**: travel montage สู่ Ruins of Draconia
+- **[EP2 — The Vault of Eternal Life](<./EP02 - The Vault of Eternal Life.md>)**: ร่วมงานกับ Marrow, เจาะเข้าห้องนิรภัยชั้นใน
+- **[EP3 — The Thief in Silver](<./EP03 - The Thief in Silver.md>)**: จังหวะเผชิญหน้า, Fragment of Genesis ถูกชิงไป, เริ่มไล่ล่า
 
 ---
 [← Act 4 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-chase-to-sepesca.md)

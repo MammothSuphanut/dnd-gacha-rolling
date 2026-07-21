@@ -19,7 +19,13 @@ Act ปิดท้ายเนื้อเรื่องหลักของ�
 
 ## สารบัญ Chapter → EP
 - [Chapter 1: Diver's Grave](./CH01-divers-grave.md) `Level 14 → 16`
+  - [EP1 — Into the Drowned Trench](<./EP01 - Into the Drowned Trench.md>)
+  - [EP2 — The Abandoned Ritual Chamber](<./EP02 - The Abandoned Ritual Chamber.md>)
+  - [EP3 — Terasaq Awakens](<./EP03 - Terasaq Awakens.md>)
 - [Chapter 2: Darktow Isle](./CH02-darktow-isle.md) `Level 16 → 19`
+  - [EP4 — The Isle That Was Devoured](<./EP04 - The Isle That Was Devoured.md>)
+  - [EP5 — The Truth Behind Everything](<./EP05 - The Truth Behind Everything.md>)
+  - [EP6 — The Last Fragment](<./EP06 - The Last Fragment.md>)
 
 ---
 [← Act 4](../ACT04-vault-of-eternal-life/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 6 →](../ACT06-return-to-aeor-lab/00-act-outline.md)

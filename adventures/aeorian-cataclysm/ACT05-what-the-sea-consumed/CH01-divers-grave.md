@@ -10,10 +10,10 @@
 ## Terasaq ตื่น `Level 15 → 16`
 ระหว่างสำรวจห้องพิธีกรรม ตัวละครไปรบกวนบางสิ่งที่หลับใหลลึกกว่านั้นเข้าโดยไม่ตั้งใจ — **Terasaq** สิ่งมีชีวิตโบราณนอกมิติที่หลับใหลใต้ทะเลลึกแถบนี้มานับพันปีตื่นขึ้น แรงสั่นสะเทือนจากการตื่นของมันสร้างความปั่นป่วนรุนแรงทั่วหุบเหว (แนะนำ chase/escape sequence ให้ตัวละครหนีขึ้นสู่ผิวน้ำก่อนหุบเหวถล่ม แทนที่จะสู้ตรงๆ) เมื่อขึ้นสู่ผิวน้ำ ตัวละครเห็น Terasaq พุ่งทะยานมุ่งตรงไปยัง **Darktow Isle** เกาะที่ใกล้ที่สุด
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP1 — ดำดิ่งสู่ Diver's Grave**: เตรียมตัว, ฝ่าผู้พิทักษ์ใต้สมุทร
-- **EP2 — ห้องพิธีกรรมร้าง**: สำรวจ, พบเบาะแสแผนการลึกลับ
-- **EP3 — Terasaq ตื่น**: chase sequence หนีขึ้นผิวน้ำ, เห็น Terasaq มุ่งสู่ Darktow Isle
+## EP ในบทนี้
+- **[EP1 — Into the Drowned Trench](<./EP01 - Into the Drowned Trench.md>)**: เตรียมตัว, ฝ่าผู้พิทักษ์ใต้สมุทร
+- **[EP2 — The Abandoned Ritual Chamber](<./EP02 - The Abandoned Ritual Chamber.md>)**: สำรวจ, พบเบาะแสแผนการลึกลับ
+- **[EP3 — Terasaq Awakens](<./EP03 - Terasaq Awakens.md>)**: chase sequence หนีขึ้นผิวน้ำ, เห็น Terasaq มุ่งสู่ Darktow Isle
 
 ---
 [← Act 5 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-darktow-isle.md)

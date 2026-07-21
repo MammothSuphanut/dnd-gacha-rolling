@@ -12,10 +12,10 @@ Ghor Veles ในภาษามังกรแปลว่า "Vault of Shadows
 ## กลับ Rosohna — รายงานภารกิจ `Level 9 → 10`
 ตัวละครนำ Fragment of Stasis และความจริงกลับไปรายงานราชสำนัก Kryn ที่ Rosohna — ต้นตอที่แท้จริงไม่ใช่ภัยจาก Xhorhas เองแต่เป็นกลุ่มนักล่าโบราณวัตถุนอกกฎหมาย ราชสำนักพอใจและมอบรางวัลให้ตามควร พร้อมสัญญาว่าทั้งสองฝ่าย (Dwendalian Empire และ Kryn Dynasty) จะร่วมมือกันเฝ้าระวังภัยแบบนี้ต่อไป ปิดฉาก Act 3
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP3 — ผ่าน Bazzoxan**: จุดพักก่อนเขตอันตราย, travel montage ข้ามเทือกเขา Penumbra Range
-- **EP4 — นักล่าโบราณวัตถุแห่ง Ghor Veles**: สืบหาที่ซ่อน, บอสไฟต์ปิด Chapter, ได้ Fragment of Stasis, เบาะแส Draconia
-- **EP5 — รายงานที่ Rosohna**: ปิดฉากการเมือง, รางวัล, เปิดทางสู่ Act 4
+## EP ในบทนี้
+- **[EP3 — Shadow of Bazzoxan](<./EP03 - Shadow of Bazzoxan.md>)**: จุดพักก่อนเขตอันตราย, travel montage ข้ามเทือกเขา Penumbra Range
+- **[EP4 — Vault of Shadows](<./EP04 - Vault of Shadows.md>)**: สืบหาที่ซ่อน, บอสไฟต์ปิด Chapter, ได้ Fragment of Stasis, เบาะแส Draconia
+- **[EP5 — Return to Rosohna](<./EP05 - Return to Rosohna.md>)**: ปิดฉากการเมือง, รางวัล, เปิดทางสู่ Act 4
 
 ---
 [← Chapter 1](./CH01-rexxentrum-and-rosohna.md) · [Act 4 →](../ACT04-vault-of-eternal-life/00-act-outline.md)
