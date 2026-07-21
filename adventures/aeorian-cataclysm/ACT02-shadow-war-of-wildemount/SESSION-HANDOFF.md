@@ -1,12 +1,23 @@
 # Session Handoff — Act 2 (บันทึกไว้ต่องานวันถัดไป)
-อัปเดตล่าสุด: 2026-07-20
+อัปเดตล่าสุด: 2026-07-21
+
+**สถานะ: Act 2 เขียน journal เต็มครบทุก EP หลักแล้ว (EP1-EP8) — ไฟล์นี้พร้อมลบทิ้งได้** เหลือแค่ EP06a (เดินทางจาก Bisaft Port) เป็นงานเสริมไม่บังคับที่ยังไม่ได้เขียน ถ้าไม่ต้องการเขียนเพิ่มแล้วก็ลบไฟล์นี้ทิ้งได้เลย
 
 ไฟล์นี้มีไว้ให้เปิดอ่าน/แปะให้ Claude ในแชทใหม่ เพื่อสั่งงานต่อจากรอบนี้โดยไม่ต้องอธิบายซ้ำ — ลบไฟล์นี้ทิ้งได้เมื่อ Act 2 เขียน journal เต็มครบทุก EP แล้ว
 
 ## สถานะตอนนี้
 - **CH01/CH02 outline เขียนใหม่เสร็จแล้ว** ระดับ "brief" (ยังไม่ใช่ journal เต็มแบบ published module) — ดู [00-act-outline.md](./00-act-outline.md), [CH01-dwendalian-to-xhorhas.md](./CH01-dwendalian-to-xhorhas.md), [CH02-swavain-crypt.md](./CH02-swavain-crypt.md)
-- **ยังไม่ได้เขียน journal เต็มของ EP ไหนเลยใน Act 2** (ยังไม่มีไฟล์ `EP0Y - ชื่อตอน.md` ในโฟลเดอร์นี้) — งานถัดไปคือเริ่มเขียนทีละ EP ตามลำดับ
-- คุยกับผู้ใช้ไว้ว่าจะทำ **ทีละ EP ในแต่ละรอบ** ไม่รวดเดียวทั้ง Act — เริ่มจาก EP1 ก่อน
+- **EP1 เขียน journal เต็มเสร็จแล้ว** — ดู [EP01 - The Archmage's Tower.md](<./EP01 - The Archmage's Tower.md>) (สืบสวนใน Rexxentrum/Shimmer Ward, ช่วย Dorian Kessler ลูกศิษย์ Voss Kaldrenar ที่ถูกด่านสอดแนมลัทธิ Mindflayer จับตัว, ยึดเอกสาร+แผนที่ชี้ไปยัง Druvenlode ได้สำเร็จ) — ตัวละครยังคง Level 3 เมื่อจบ EP
+- **EP2 เขียน journal เต็มเสร็จแล้ว** — ดู [EP02 - The Warehouse Man.md](<./EP02 - The Warehouse Man.md>) (สืบใน Druvenlode ผ่าน Sela Vetch จนรู้ตัวตน Brack Ferrowint, บุกโกดังใน Dustbellows, เอาชนะ Brack และยึดเอกสารที่เผยชื่อ Ghor Veles/Under Knives, จบด้วยสัญญาณจักรวรรดิเริ่มระดมพลกดดันชายแดน) — ตัวละครเลื่อนใกล้ Level 4 เมื่อจบ EP
+- **EP3 เขียน journal เต็มเสร็จแล้ว** — ดู [EP03 - The Nightless City.md](<./EP03 - The Nightless City.md>) (ตามคำขอผู้ใช้ ย่อ travel montage ข้ามพรมแดนให้สั้นแค่ 1 ย่อหน้า แล้วเริ่มเนื้อหาจริงที่ประตูเมือง Rosohna — สืบข่าวผ่าน Deputy Threll Vantosh, พ่อค้าคาราวาน Kesla Bramwick, และ Archivist Oyelen Thist จนยืนยันว่า Ghor Veles คือจุดหมายจริง เป็น EP สืบสวน/roleplay ล้วนๆ ไม่มีการต่อสู้) — ตัวละครคง Level 4 ตลอด EP
+- **EP4 เขียน journal เต็มเสร็จแล้ว** — ดู [EP04 - Vault of Shadows.md](<./EP04 - Vault of Shadows.md>) (ตามคำขอผู้ใช้ ย่อการข้าม Bazzoxan/เทือกเขา Penumbra เป็นบทสรุปสั้นๆ ไม่ลง encounter เต็ม — EP เริ่มที่มาถึงซากเมือง Ghor Veles จริง สำรวจซาก, ปะทะสายตรวจลัทธิ 2 คน + ผู้พิทักษ์หิน Arcanum Sentinel x2, พบ Echo of Archmage Servil Ilessa ให้เบาะแสประวัติ, จบด้วยพบทางเข้าลับสู่ Under Knives) — ตัวละครคง Level 4 ตลอด EP
+- **EP5 เขียน journal เต็มเสร็จแล้ว** — ดู [EP05 - Under Knives.md](<./EP05 - Under Knives.md>) (สายตรวจลัทธิใน EP4 ถูกจัดการหมด ไม่มีใครหนีรอด รังจึงไม่ทันตั้งตัว — บุก Under Knives ผ่าน Grimlock x3, ห้องเก็บศพเหยื่อ (มีทั้ง Crownsguard และ Kryn ปนกัน — เบาะแสสำคัญสำหรับ EP6), เอาชนะ Warden Yshaal ท่ามกลางแรงกดดันจาก Elder Brain ที่ไม่ได้สู้ตรงๆ, ยึด Fragment of Void ครึ่งแรกสำเร็จ แต่ถูก Ren Sk'val สกัดชิงไปบนผิวดินทันที พร้อมเสนอข้อตกลงเป็นทูตสันติภาพ) — ตัวละครเลื่อนใกล้ Level 5 เมื่อจบ EP
+- **EP6 เขียน journal เต็มเสร็จแล้ว — ปิดฉาก Chapter 1 ของ Act 2 ครบสมบูรณ์** — ดู [EP06 - The Peace Envoys.md](<./EP06 - The Peace Envoys.md>) (Bright Queen Leylas Kryn มอบสถานะทูต → Voss Kaldrenar ช่วยจัดหาช่องทางเข้าเฝ้า Cerberus Assembly → เสนอหลักฐานต่อ Archmage Ilsevet Cray → Magister Draven Holt (นายพลสายเหยี่ยว) ก่อวินาศกรรมกลางห้องพิจารณาคดี ถูกเอาชนะ/เปิดโปง → สภายอมรับความจริง สงครามสงบ → ได้ Fragment of Void ครึ่งแรกคืนจาก Ren Sk'val พร้อมรางวัลจากทั้งสองฝ่าย รวมถึงจดหมายแนะนำตัวถึงกัปตันเรือที่ Bisaft Port สำหรับ Chapter 2) — ตัวละครเลื่อนใกล้ Level 6
+- **แก้ไขเลข EP ผิดใน [CH02-swavain-crypt.md](./CH02-swavain-crypt.md) ด้วย** — เดิมเขียน "EP1/EP2" ซึ่งผิดกติกา (เลข EP ต้องนับต่อเนื่องทั้ง Act ไม่รีเซ็ตต่อ Chapter) แก้เป็น **EP7/EP8** เรียบร้อยแล้ว
+- **EP7 เขียน journal เต็มเสร็จแล้ว** — ดู [EP07 - The Drowned Fleet.md](<./EP07 - The Drowned Fleet.md>) — **ตามคำขอผู้ใช้ ข้ามเนื้อหาเดินเรือจาก Bisaft Port ทั้งหมด** (Menagerie Coast/Gravid Archipelago ยังไม่ได้เขียน — วางแผนทำเป็น **EP ย่อย EP06a** ภายหลังถ้าต้องการ ดูหมายเหตุใน [CH02-swavain-crypt.md](./CH02-swavain-crypt.md)) EP7 จริงเริ่มตรงที่เรือของ Captain Mereth Kallow มาถึงน่านน้ำ Diver's Grave แล้ว — ดำดิ่งฝ่าฝูง merrow + ผู้พิทักษ์ศพนักเดินเรือ (zombie x4) ในสนามซากเรือตื้น จนพบปากทางลงสู่หุบเหวลึก 700 ฟุต — ตัวละครคง Level 6 ตลอด EP
+- **EP8 เขียน journal เต็มเสร็จแล้ว — จบ Act 2 ทั้งหมด** — ดู [EP08 - The Ossuary Depths.md](<./EP08 - The Ossuary Depths.md>) (ปะทะ Captain Isolde Marrow ผีกัปตันเรือโบราณ + ฝูงศพลูกเรือ, ฝ่ากระแสน้ำเชี่ยว + Abyssal Eel, บอสไฟต์สองเฟส Thessaly Vane ที่แท่นพิธีกรรม "แม่มดทะเล" โบราณ — เฟส 2 เธอดึงพลัง Fragment of Void มาเสริมตัวเอง (damage resistance ทุกประเภท) → เอาชนะได้ Fragment of Void ครึ่งหลัง รวมกับครึ่งแรกเป็น **Fragment of Void สมบูรณ์** → Fragment of Wisdom ชี้ทางใหม่ไปยัง Tal'Dorei เปิด Act 3) — ตัวละครเลื่อนใกล้ Level 7
+- **Act 2 ครบทุก EP หลักแล้ว (1-8)** — เหลือแค่ EP06a (เดินทางจาก Bisaft Port ผ่าน Menagerie Coast/Gravid Archipelago ก่อนถึง EP7) เป็นงานเสริมไม่บังคับที่ผู้ใช้เลือกข้ามไป ถ้าต้องการเขียนย้อนหลังทีหลังดู [CH02-swavain-crypt.md](./CH02-swavain-crypt.md)
+- คุยกับผู้ใช้ไว้ว่าจะทำ **ทีละ EP ในแต่ละรอบ** ไม่รวดเดียวทั้ง Act — ทำครบทั้ง 8 EP แล้ว งานถัดไปที่เป็นไปได้: (1) เขียน EP06a เสริม, (2) เริ่ม Act 3 ด้วย `/build-ep` ใหม่, หรือ (3) ลบไฟล์ handoff นี้ทิ้งถ้าไม่ต้องการอะไรเพิ่มแล้ว
 
 ## โครงเรื่อง Act 2 ล่าสุด (สรุปเร็ว)
 **Chapter 1 — จาก Dwendalian สู่ Xhorhas** (`Level 3 → 6`, 6 EP):
@@ -44,13 +55,11 @@
 - https://criticalrole.fandom.com/wiki/Diver%27s_Grave
 
 ## ขั้นตอนต่อไป (พรุ่งนี้/รอบถัดไป)
-1. เริ่ม `/build-ep` ใหม่ (หรือบอก Claude ตรงๆ ว่า "เขียน journal เต็มของ EP1 Act 2 ต่อจาก SESSION-HANDOFF.md")
-2. เป้าหมายแรก: **EP1 — หอคอยเวทมนตร์แห่ง Dwendalian** (`adventures/aeorian-cataclysm/ACT02-shadow-war-of-wildemount/EP01 - หอคอยเวทมนตร์แห่ง Dwendalian.md` หรือชื่ออังกฤษตาม Title Case ตามกติกาใน `adventure-builder/structure-guide.md`)
-3. ต้องทำตาม `adventure-builder/journal-template.md` เป๊ะๆ (NPC table, boxed read-aloud text, per-location section, "What X Knows", encounter tactics, Treasure section)
-4. Context ก่อนหน้า EP1 คือจบ Act 1 ที่ Aeor Lab ([CH04-aeor-lab-and-fragment.md](../ACT01-escape-to-palebank/CH04-aeor-lab-and-fragment.md)) — ตัวละครเพิ่งได้ Fragment of Wisdom กลับมาให้ Messenger แล้ว
-5. ผู้ใช้ยังให้ AI คิดรายละเอียดเองได้ทั้งหมด (treasure/DC/NPC ย่อย) เว้นแต่จะบอกเปลี่ยนทีหลัง
-6. มีแผนที่ `adventures/aeorian-cataclysm/Exandria.jpeg` ไว้อ้างอิงภูมิศาสตร์เพิ่มได้เสมอถ้าต้องละเอียดกว่านี้
-7. เขียนเสร็จแต่ละ EP แล้วอัปเดตลิงก์ในไฟล์นี้ + `PROGRESS.md` ให้ตรง แล้วลบ SESSION-HANDOFF.md นี้ทิ้งเมื่อ Act 2 เสร็จครบทุก EP
+Act 2 เขียน journal เต็มครบทุก EP หลักแล้ว (EP1-EP8) — `PROGRESS.md` อัปเดตแล้วว่าเสร็จ ตัวเลือกสำหรับรอบถัดไป:
+1. **เขียน EP06a (ไม่บังคับ)** — เนื้อหาเดินเรือจาก Bisaft Port ผ่าน Menagerie Coast/Gravid Archipelago ที่ถูกข้ามไปตอนเขียน EP7 (ผู้ใช้ขอให้เริ่ม EP7 ตรงที่ถึง Diver's Grave เลย) ถ้าต้องการเขียนย้อนหลัง ใช้เลข EP06a ตามกฎ EP ย่อยของ `structure-guide.md` ข้อ 2.5 (แทรกอยู่หลัง EP6 ก่อน EP7)
+2. **เริ่ม Act 3 — ลัทธิปีศาจแห่ง Tal'Dorei** ด้วย `/build-ep` ใหม่ (ดู [ACT03/00-act-outline.md](../ACT03-demon-cult-of-taldorei/00-act-outline.md) — EP แรกคือ "ตามหา Fragment of Stasis" ที่ Iron Authority)
+3. **ลบไฟล์ SESSION-HANDOFF.md นี้ทิ้งได้เลย** ถ้าไม่ต้องการงานเสริมอะไรใน Act 2 อีก — เนื้อหาทั้งหมดอยู่ใน journal files ของ Act 2 แล้ว ไม่ต้องพึ่งไฟล์นี้อีกต่อไป
+4. มีแผนที่ `adventures/aeorian-cataclysm/Exandria.jpeg` ไว้อ้างอิงภูมิศาสตร์เพิ่มได้เสมอถ้าต้องละเอียดกว่านี้
 
 ---
 [← Act 2 outline](./00-act-outline.md)

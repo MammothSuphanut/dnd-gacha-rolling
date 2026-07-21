@@ -16,11 +16,12 @@ Checklist ติดตามงานที่เหลือ หลังจา
 - [x] **Act 6**: บทส่งท้ายสั้น ไม่ต้องเพิ่มภูมิศาสตร์ใหม่ (เป็นการเดินทางกลับผ่านเส้นทาง Act 1 เดิม)
 
 ## ปมอื่นที่ยังค้างอยู่ (ไม่เกี่ยวกับภูมิศาสตร์)
-- [ ] **Act 2 กำลังเขียน journal เต็มทีละ EP อยู่** — ดู [ACT02/SESSION-HANDOFF.md](./ACT02-shadow-war-of-wildemount/SESSION-HANDOFF.md) เพื่อสั่งงานต่อ (สรุปสถานะ + EP1 คือเป้าหมายถัดไป) ลบไฟล์นี้ทิ้งได้เมื่อ Act 2 เขียนครบทุก EP
-- [ ] ลง detail ระดับ EP จริง (stat block เต็ม, DC เฉพาะจุด, boxed read-aloud text) — ตอนนี้ทุก Chapter brief มีแค่ระดับ outline + CR แนะนำ + ลิสต์ EP ที่แนะนำ ยังไม่ใช่ journal เต็มรูปแบบ (ใช้ `/build-ep` ได้เมื่อพร้อม) — ทำแบบ just-in-time ก่อนใกล้เล่นถึง EP นั้นจริง ไม่ต้องลงล่วงหน้าทั้งแคมเปญ
+- [ ] ลง detail ระดับ EP จริง (stat block เต็ม, DC เฉพาะจุด, boxed read-aloud text) สำหรับ Act 3-6 — ตอนนี้ทุก Chapter brief มีแค่ระดับ outline + CR แนะนำ + ลิสต์ EP ที่แนะนำ ยังไม่ใช่ journal เต็มรูปแบบ (ใช้ `/build-ep` ได้เมื่อพร้อม) — ทำแบบ just-in-time ก่อนใกล้เล่นถึง EP นั้นจริง ไม่ต้องลงล่วงหน้าทั้งแคมเปญ
+- [ ] (ไม่บังคับ) **EP06a — เดินทางจาก Bisaft Port** ใน Act 2 ยังไม่ได้เขียน — เนื้อหาเดินเรือผ่าน Menagerie Coast/Gravid Archipelago ระหว่าง EP6 กับ EP7 ถูกข้ามไปตามคำขอผู้ใช้ ถ้าอยากเขียนย้อนหลังทีหลังดู [ACT02/CH02-swavain-crypt.md](./ACT02-shadow-war-of-wildemount/CH02-swavain-crypt.md)
 - [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้ว: Flay, Grok, Chin, Messenger, Voss Kaldrenar, Brack Ferrowint, Warden Yshaal, Ren Sk'val, Thessaly Vane, Prelate Iskavel Thorn, Vaelkor Thess, Sable Anwari, Corvain Delthasar, Archprelate Solvenne Wyrenhall
 
 ## เสร็จแล้ว
+- [x] **Act 2 เขียน journal เต็มครบทุก EP หลัก (EP1-EP8) แล้ว** — ดู `ACT02-shadow-war-of-wildemount/` (ต่อจาก Act 1 ที่เขียนครบก่อนหน้า) — ลบ `SESSION-HANDOFF.md` ของ Act 2 ทิ้งได้แล้ว เว้นแต่จะเขียน EP06a (เดินทางจาก Bisaft Port) เพิ่มทีหลัง
 - [x] โครงเรื่องเต็ม Act 1–6 พร้อม level checkpoint + CR แนะนำ
 - [x] ปมย่อยทั้งหมดใน 99-notes.md (Fragment of Genesis, Messenger ตอนจบ, หัวหน้าลัทธิ Act 3, จังหวะเวลา Lich, NPC Kryn, โทน Act 6)
 - [x] กลไกเกม The Fragment ทั้ง 5 ชิ้น (`01-the-fragments.md`)

@@ -38,12 +38,12 @@ Ren Sk'val อธิบายเหตุผลที่ Xhorhas ไม่ใช
 ตัวละครรับบทเป็นทูต เดินทางกลับข้ามพรมแดนอีกครั้งเพื่อพิสูจน์ความจริงข้อนี้ต่อทั้งสองฝ่าย (เหมาะเป็นชุด social encounter — ตรวจสอบหลักฐานทาง arcana, โน้มน้าวขุนนางแห่ง Cerberus Assembly ที่หัวแข็ง, เผชิญหน้าฝ่ายที่ต้องการทำสงครามต่อไม่ว่าความจริงจะเป็นอย่างไร, นำเอกสาร/หลักฐานจาก Druvenlode และ Under Knives มาแสดงประกอบ) เมื่อพิสูจน์สำเร็จ Dwendalian Empire ถอนกำลังและระงับแผนสงคราม Ren Sk'val คืน Fragment of Void ครึ่งที่ 1 ให้ตัวละครตามสัญญา พร้อมทั้งทั้งสองฝ่าย (Dwendalian Empire และ Kryn Dynasty) ต่างมอบการสนับสนุนให้ตัวละครเป็นการตอบแทน (เช่น จดหมายผ่านแดนถาวร, เครือข่ายผู้ให้ข้อมูล, เสบียง/ทรัพยากรสำหรับการเดินทางต่อไป — DM เลือกรายละเอียดที่เหมาะกับ Act ถัดไปได้) ปิดฉากครึ่งแรกของ Act 2
 
 ## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP1 — หอคอยเวทมนตร์แห่ง Dwendalian**: สืบสวนใน Rexxentrum (Shimmer Ward) นำไปสู่ด่านสอดแนมลับของลัทธิใต้หอคอย Voss Kaldrenar พบเบาะแสชี้ไปยัง Druvenlode
-- **EP2 — Druvenlode**: ตามรอยของเถื่อนถึงเมืองเหมืองเงิน Druvenlode, บุกโกดังลับของ Brack Ferrowint ใน Dustbellows, พบเอกสารชี้ไปยัง Ghor Veles/Under Knives (จุดปะทุสงคราม)
-- **EP3 — ข้ามพรมแดนสู่ Rosohna**: travel montage ผ่านเขตสงคราม, สืบข่าวใน Rosohna จนรู้เรื่อง Under Knives ที่ Ghor Veles
-- **EP4 — ข้ามเทือกเขา Penumbra ผ่าน Bazzoxan**: travel montage อันตรายผ่านหมู่บ้านปีศาจหลอกหลอน Bazzoxan แล้วข้ามเทือกเขาสู่ซากเมือง Ghor Veles
-- **EP5 — Under Knives ใต้ Ghor Veles**: multi-encounter dungeon ในซากห้องนิรภัยโบราณ, ปะทะ Warden Yshaal, ยึด Fragment ครึ่งหนึ่งได้สำเร็จ แต่ถูก Ren Sk'val ชิงไปทันทีที่ขึ้นสู่ผิวดิน
-- **EP6 — ทูตสันติภาพ**: ชุด social encounter พิสูจน์ความจริงต่อทั้งสองฝ่าย, ได้ Fragment คืนพร้อมการสนับสนุนจากทั้งสองฝ่าย
+- **EP1 — หอคอยเวทมนตร์แห่ง Dwendalian**: สืบสวนใน Rexxentrum (Shimmer Ward) นำไปสู่ด่านสอดแนมลับของลัทธิใต้หอคอย Voss Kaldrenar พบเบาะแสชี้ไปยัง Druvenlode — journal เต็มที่ [EP01 - The Archmage's Tower.md](<./EP01 - The Archmage's Tower.md>)
+- **EP2 — Druvenlode**: ตามรอยของเถื่อนถึงเมืองเหมืองเงิน Druvenlode, บุกโกดังลับของ Brack Ferrowint ใน Dustbellows, พบเอกสารชี้ไปยัง Ghor Veles/Under Knives (จุดปะทุสงคราม) — journal เต็มที่ [EP02 - The Warehouse Man.md](<./EP02 - The Warehouse Man.md>)
+- **EP3 — ข้ามพรมแดนสู่ Rosohna**: travel montage ผ่านเขตสงคราม, สืบข่าวใน Rosohna จนรู้เรื่อง Under Knives ที่ Ghor Veles — journal เต็มที่ [EP03 - The Nightless City.md](<./EP03 - The Nightless City.md>)
+- **EP4 — Vault of Shadows**: การข้าม Bazzoxan/เทือกเขา Penumbra ถูกย่อเป็นบทสรุปสั้นๆ ตามคำขอผู้ใช้ (ไม่ลง encounter เต็ม) — EP เริ่มที่ตัวละครมาถึงซากเมือง Ghor Veles จริง สำรวจซากปรักหักพังบนผิวดิน ปะทะสายตรวจของลัทธิ + ผู้พิทักษ์หินโบราณ จนพบทางเข้าลับสู่ Under Knives — journal เต็มที่ [EP04 - Vault of Shadows.md](<./EP04 - Vault of Shadows.md>)
+- **EP5 — Under Knives ใต้ Ghor Veles**: multi-encounter dungeon ในซากห้องนิรภัยโบราณ, ปะทะ Warden Yshaal, ยึด Fragment ครึ่งหนึ่งได้สำเร็จ แต่ถูก Ren Sk'val ชิงไปทันทีที่ขึ้นสู่ผิวดิน — journal เต็มที่ [EP05 - Under Knives.md](<./EP05 - Under Knives.md>)
+- **EP6 — ทูตสันติภาพ**: ชุด social encounter พิสูจน์ความจริงต่อทั้งสองฝ่าย, ได้ Fragment คืนพร้อมการสนับสนุนจากทั้งสองฝ่าย — journal เต็มที่ [EP06 - The Peace Envoys.md](<./EP06 - The Peace Envoys.md>)
 
 ---
 [← Act 2 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-swavain-crypt.md)

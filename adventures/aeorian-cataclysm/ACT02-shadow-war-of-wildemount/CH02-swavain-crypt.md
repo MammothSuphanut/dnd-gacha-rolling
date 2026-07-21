@@ -13,9 +13,10 @@
 
 ห้องสุดท้ายคือจุดพิธีกรรมโบราณกลางหุบเหว ที่ Thessaly Vane ยึดครองไว้ประกอบพิธีของตน — เธอใช้ Fragment of Void เสริมพลังตัวเองระหว่างพิธีเปลี่ยนผ่านสู่ Lichdom ตัวละครต้องหยุดพิธีก่อนสำเร็จ (บอสไฟต์ แนะนำ ~CR 7–8 เนื่องจากเธอเสริมพลังตัวเองจาก Fragment ระหว่างการต่อสู้ด้วย) เมื่อเอาชนะได้ Fragment of Void ครึ่งที่ 2 กลับคืนมา ตัวละครนำมาประกอบรวมกับครึ่งแรกเป็น **Fragment of Void สมบูรณ์** ปิดฉาก Act 2
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP1 — เดินทางสู่ Diver's Grave**: travel montage ทางเรือลงใต้จาก Bisaft Port ผ่าน Menagerie Coast และ Gravid Archipelago เข้าสู่น่านน้ำ Swavain Islands
-- **EP2 — สุสานใต้สมุทรแห่ง Diver's Grave**: ดันเจี้ยนใต้น้ำในหุบเหวลึก 700 ฟุต, ปะทะผู้พิทักษ์ศพนักเดินเรือและ merrow, บอสไฟต์ Thessaly Vane ที่จุดพิธีกรรมโบราณ, ได้ Fragment of Void ครบสมบูรณ์ จบ Act 2
+## EP ที่แนะนำ (เลข EP นับต่อเนื่องจาก Chapter 1 ไม่รีเซ็ตใหม่)
+- **(EP ย่อย ยังไม่ได้เขียน) travel montage จาก Bisaft Port** — ทางเรือผ่าน Menagerie Coast และ Gravid Archipelago เข้าสู่น่านน้ำ Swavain Islands ตามคำขอผู้ใช้ เนื้อเรื่องหลักข้ามส่วนนี้ไปเลย (EP7 ด้านล่างเริ่มที่เรือมาถึง Diver's Grave แล้ว) — ถ้าจะเขียนภายหลัง ให้ใช้เลขต่อท้ายแบบ EP ย่อยตาม `adventure-builder/structure-guide.md` ข้อ 2.5 คือ **EP06a** (แทรกอยู่หลัง EP6 ก่อน EP7 — ไม่ใช่ EP7 เพราะเลขนั้นถูกใช้แล้ว)
+- **EP7 — The Drowned Fleet**: journal เต็มเริ่มตรงที่เรือมาถึงน่านน้ำ Diver's Grave แล้ว ดำดิ่งฝ่าฝูง merrow และผู้พิทักษ์ศพนักเดินเรือชุดแรกในสนามซากเรือตื้น จนพบปากทางลงสู่หุบเหวลึก — journal เต็มที่ [EP07 - The Drowned Fleet.md](<./EP07 - The Drowned Fleet.md>)
+- **EP8 — The Ossuary Depths**: ดันเจี้ยนใต้น้ำในหุบเหวลึก 700 ฟุต, ปะทะ Captain Isolde Marrow (ผีกัปตันเรือโบราณ) + Abyssal Eel, บอสไฟต์สองเฟส Thessaly Vane ที่จุดพิธีกรรมโบราณ (ดึงพลัง Fragment of Void มาเสริมตัวเองกลางไฟต์), ได้ Fragment of Void ครบสมบูรณ์ **จบ Act 2** — journal เต็มที่ [EP08 - The Ossuary Depths.md](<./EP08 - The Ossuary Depths.md>)
 
 ---
 [← Chapter 1](./CH01-dwendalian-to-xhorhas.md) · [Act 2 outline](./00-act-outline.md) · [Act 3 →](../ACT03-demon-cult-of-taldorei/00-act-outline.md)
