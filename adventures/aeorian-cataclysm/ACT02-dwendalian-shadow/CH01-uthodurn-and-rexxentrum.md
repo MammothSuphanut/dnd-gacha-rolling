@@ -12,10 +12,10 @@ Uthodurn เป็นเมืองการค้าที่ปกครอ�
 
 ตัวละครสืบสวนตามหลักฐาน (สอบปากคำ ตรวจเอกสาร ติดตามข่าวลือ) ไปพร้อมกับเปิด Fragment of Wisdom เพื่อช่วยตามหาต้นตอ — แต่ผลลัพธ์กลับไม่ตรงกับที่ทางการเชื่อ Fragment ชี้ไปทาง **Druvenlode** เมืองเหมืองทางใต้ ไม่ใช่ชายแดน Xhorhas เลยแม้แต่น้อย ตัวละครต้องเลือกว่าจะเชื่อหลักฐานของทางการหรือทิศทางจาก Fragment (ทั้งสองทางสุดท้ายจะมาบรรจบกันที่ Druvenlode อยู่ดี)
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP1 — คุ้มกันคาราวานสู่ Uthodurn**: escort mission จาก Palebank Village, encounter ย่อยระหว่างทาง, มาถึง Uthodurn
-- **EP2 — ข้อพิพาททางการค้าแห่ง Uthodurn**: รับงานจากกิลด์พ่อค้า, เดินทางต่อสู่ Rexxentrum
-- **EP3 — ข้อกล่าวหาลัทธิใน Rexxentrum**: สืบสวนในเมืองหลวง, ทางการสงสัย Kryn Dynasty, Fragment of Wisdom ชี้ไป Druvenlode แทน
+## EP ในบทนี้
+- **EP1 — คุ้มกันคาราวานสู่ Uthodurn**: escort mission จาก Palebank Village, ปะทะโจรทางหลวงระหว่างทาง, มาถึง Uthodurn — journal เต็มที่ [EP01 - The Uthodurn Road.md](<./EP01 - The Uthodurn Road.md>)
+- **EP2 — ข้อพิพาททางการค้าแห่ง Uthodurn**: รับงานจากกิลด์พ่อค้า, ผ่านด่านตรวจชายแดน, เดินทางต่อสู่ Rexxentrum — journal เต็มที่ [EP02 - The Merchant's Guild.md](<./EP02 - The Merchant's Guild.md>)
+- **EP3 — ข้อกล่าวหาลัทธิใน Rexxentrum**: สืบสวนในเมืองหลวง, ปกป้องพยานจากลัทธิ, Fragment of Wisdom ชี้ไป Druvenlode แทน — journal เต็มที่ [EP03 - The Accused City.md](<./EP03 - The Accused City.md>)
 
 ---
 [← Act 2 outline](./00-act-outline.md) · [Chapter 2 →](./CH02-druvenlode-and-shattengrod.md)

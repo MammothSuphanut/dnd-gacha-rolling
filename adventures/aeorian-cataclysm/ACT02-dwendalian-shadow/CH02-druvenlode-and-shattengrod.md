@@ -14,11 +14,11 @@ Druvenlode เป็นเมืองเหมืองเงินที่ใ
 ## กลับ Rexxentrum — ปิดฉาก Act 2 `Level 6 → 7`
 ตัวละครนำหลักฐานที่แท้จริงกลับไปรายงานที่ Rexxentrum พิสูจน์ว่า Kryn Dynasty ไม่มีส่วนเกี่ยวข้อง ทางการถอนข้อกล่าวหาและมอบรางวัลตามสัญญา (พร้อมความสัมพันธ์ที่ดีขึ้นกับทั้ง Dwendalian Empire และเส้นทางการค้าของ Uthodurn ที่เปิดคืน) เปิด Fragment of Wisdom อีกครั้งหลังพิธีปิด Act จะพบว่ามันเริ่มชี้ไปทางตะวันออก ข้ามพรมแดนสู่ **Rosohna** — จุดเริ่มต้นของ Act 3
 
-## EP ที่แนะนำ (ยังไม่ลง detail — เตรียมแบบ just-in-time ก่อนเล่นจริง)
-- **EP4 — หลักฐานปลอมแห่ง Druvenlode**: สืบในเมืองเหมือง, พบหลักฐานปลอมชี้ Kryn, Fragment of Wisdom แก้ไขทางชี้ไป Shattengrod
-- **EP5 — บุก Ruins of Shattengrod**: dungeon crawl ฝ่าด่านยามและกับดักของลัทธิ
-- **EP6 — การล่มสลายของ Prelate Iskavel Thorn**: บอสไฟต์ปิด Chapter, ได้ Fragment of Void
-- **EP7 — รายงานที่ Rexxentrum**: ปิดฉากการเมือง, รางวัล, เปิดทางสู่ Act 3
+## EP ในบทนี้
+- **EP4 — หลักฐานปลอมแห่ง Druvenlode**: สืบในเมืองเหมือง, บุกโกดัง Brack Ferrowint, พบหลักฐานปลอมชี้ Kryn, Fragment of Wisdom แก้ไขทางชี้ไป Shattengrod — journal เต็มที่ [EP04 - The False Trail.md](<./EP04 - The False Trail.md>)
+- **EP5 — บุก Ruins of Shattengrod**: dungeon crawl ฝ่าด่านยามและกับดักของลัทธิ จนถึง Brother Kesh หน้าห้องพิธีกรรม — journal เต็มที่ [EP05 - Into the Ruins.md](<./EP05 - Into the Ruins.md>)
+- **EP6 — การล่มสลายของ Prelate Iskavel Thorn**: บอสไฟต์ปิด Chapter, ได้ Fragment of Void — journal เต็มที่ [EP06 - The Fall of Iskavel Thorn.md](<./EP06 - The Fall of Iskavel Thorn.md>)
+- **EP7 — รายงานที่ Rexxentrum**: ปิดฉากการเมือง, รางวัล, เปิดทางสู่ Act 3 — journal เต็มที่ [EP07 - Return to Rexxentrum.md](<./EP07 - Return to Rexxentrum.md>)
 
 ---
 [← Chapter 1](./CH01-uthodurn-and-rexxentrum.md) · [Act 3 →](../ACT03-crossroads-to-xhorhas/00-act-outline.md)

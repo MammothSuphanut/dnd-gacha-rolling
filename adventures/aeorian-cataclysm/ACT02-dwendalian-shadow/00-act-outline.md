@@ -19,7 +19,14 @@
 
 ## สารบัญ Chapter → EP
 - [Chapter 1: Uthodurn และ Rexxentrum](./CH01-uthodurn-and-rexxentrum.md) `Level 3 → 4`
+  - [EP1: The Uthodurn Road](<./EP01 - The Uthodurn Road.md>)
+  - [EP2: The Merchant's Guild](<./EP02 - The Merchant's Guild.md>)
+  - [EP3: The Accused City](<./EP03 - The Accused City.md>)
 - [Chapter 2: Druvenlode และ Ruins of Shattengrod](./CH02-druvenlode-and-shattengrod.md) `Level 4 → 7`
+  - [EP4: The False Trail](<./EP04 - The False Trail.md>)
+  - [EP5: Into the Ruins](<./EP05 - Into the Ruins.md>)
+  - [EP6: The Fall of Iskavel Thorn](<./EP06 - The Fall of Iskavel Thorn.md>)
+  - [EP7: Return to Rexxentrum](<./EP07 - Return to Rexxentrum.md>)
 
 ---
 [← Act 1](../ACT01-escape-to-palebank/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 3 →](../ACT03-crossroads-to-xhorhas/00-act-outline.md)
