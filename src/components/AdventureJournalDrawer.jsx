@@ -26,7 +26,7 @@ function epLabel(ep) {
   return `EP${String(ep.number).padStart(2, '0')}${ep.sideLetter ?? ''}`
 }
 
-function ActEpisodeList({ overviewItem, acts, selectedId, onSelect, collapsedActs, onToggleAct }) {
+function ActEpisodeList({ overviewItem, acts, selectedId, onSelect, openActId, onToggleAct }) {
   return (
     <nav className="space-y-3">
       {overviewItem && (
@@ -43,7 +43,7 @@ function ActEpisodeList({ overviewItem, acts, selectedId, onSelect, collapsedAct
         </button>
       )}
       {acts.map((act) => {
-        const collapsed = collapsedActs.has(act.id)
+        const collapsed = act.id !== openActId
         return (
           <div key={act.id}>
             <button
@@ -113,15 +113,11 @@ export default function AdventureJournalDrawer({ campaign, onClose }) {
   // episodes flowing right after it in the prev/next footer.
   const navItems = [overviewItem, ...allEpisodes].filter(Boolean)
   const [selected, setSelected] = useState(navItems[0] ?? null)
-  const [collapsedActs, setCollapsedActs] = useState(() => new Set())
+  // Accordion: only one Act's episode list is expanded at a time.
+  const [openActId, setOpenActId] = useState(() => acts?.[0]?.id ?? null)
 
   function toggleAct(actId) {
-    setCollapsedActs((prev) => {
-      const next = new Set(prev)
-      if (next.has(actId)) next.delete(actId)
-      else next.add(actId)
-      return next
-    })
+    setOpenActId((prev) => (prev === actId ? null : actId))
   }
 
   // Jumping to an episode via prev/next shouldn't leave it hidden inside a
@@ -129,12 +125,7 @@ export default function AdventureJournalDrawer({ campaign, onClose }) {
   useEffect(() => {
     if (!selected || selected.kind === 'overview') return
     const actId = selected.id.split('-EP')[0]
-    setCollapsedActs((prev) => {
-      if (!prev.has(actId)) return prev
-      const next = new Set(prev)
-      next.delete(actId)
-      return next
-    })
+    setOpenActId((prev) => (prev === actId ? prev : actId))
   }, [selected])
 
   if (!campaign) return null
@@ -186,7 +177,7 @@ export default function AdventureJournalDrawer({ campaign, onClose }) {
                 acts={acts ?? []}
                 selectedId={selected?.id}
                 onSelect={setSelected}
-                collapsedActs={collapsedActs}
+                openActId={openActId}
                 onToggleAct={toggleAct}
               />
             </div>
