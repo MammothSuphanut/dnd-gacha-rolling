@@ -45,6 +45,7 @@ import {
 } from '../utils/dnd5e'
 import ExportPdfModal from '../components/ExportPdfModal'
 import ItemStatblockModal from '../components/ItemStatblockModal'
+import { parseFoundryActor } from '../utils/foundryImport'
 
 const TABS = [
   { key: 'characters', label: 'ตัวละคร' },
@@ -1309,6 +1310,7 @@ function CharacterFormModal({
   onCancel,
   onSave,
   onDelete,
+  showToast,
 }) {
   const shopItemOptions = useMemo(() => {
     const names = new Set()
@@ -1329,6 +1331,8 @@ function CharacterFormModal({
   const isEditing = !!initial.name
   const [form, setForm] = useState(initial)
   const fileInputRef = useRef(null)
+  const foundryImportInputRef = useRef(null)
+  const [importingFoundry, setImportingFoundry] = useState(false)
   const [activeTab, setActiveTab] = useState(EDIT_TABS[0].key)
   const editTab = activeTab
   const setEditTab = setActiveTab
@@ -1613,6 +1617,26 @@ function CharacterFormModal({
   function handleImageInputChange(e) {
     handleAddImages(e.target.files)
     e.target.value = ''
+  }
+
+  async function handleFoundryImportChange(e) {
+    const file = e.target.files?.[0]
+    e.target.value = ''
+    if (!file) return
+    setImportingFoundry(true)
+    try {
+      const patch = await parseFoundryActor(file)
+      setForm((prev) => ({ ...prev, ...patch }))
+      showToast?.(
+        'นำเข้าข้อมูลจาก Foundry สำเร็จ (AC และ HP สูงสุดต้องกรอกเอง เพราะ Foundry คำนวณสดไม่ได้อยู่ในไฟล์)',
+        'success',
+      )
+    } catch (err) {
+      console.error(err)
+      showToast?.(err.message || 'นำเข้าไฟล์ไม่สำเร็จ', 'error')
+    } finally {
+      setImportingFoundry(false)
+    }
   }
 
   function handleRemoveImage(id) {
@@ -2552,6 +2576,22 @@ function CharacterFormModal({
             <p className="text-xs text-stone-400">บันทึกข้อมูลตัวละคร D&amp;D อย่างครบถ้วน</p>
           </div>
           <div className="flex items-center gap-2">
+            <input
+              ref={foundryImportInputRef}
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={handleFoundryImportChange}
+            />
+            <button
+              type="button"
+              onClick={() => foundryImportInputRef.current?.click()}
+              disabled={importingFoundry}
+              className="inline-flex items-center gap-1.5 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-100 disabled:cursor-not-allowed disabled:opacity-60"
+              title="นำเข้าข้อมูลจากไฟล์ Foundry VTT character actor export (.json)"
+            >
+              {importingFoundry ? '⏳ กำลังนำเข้า...' : '📥 Import Foundry JSON'}
+            </button>
             {isEditing && (
               <button
                 type="button"
@@ -3908,6 +3948,7 @@ function CharactersTab({
           onCancel={() => setEditingCharacter(null)}
           onSave={handleSave}
           onDelete={requestDelete}
+          showToast={showToast}
         />
       )}
 

@@ -83,6 +83,26 @@ export default function SearchSelect({
             </button>
           )}
         </div>
+      ) : value ? (
+        // value is set but doesn't match any known option (eg. imported from a PDF,
+        // or an option removed since) - show it instead of silently looking empty.
+        <div className="flex items-center justify-between gap-2 rounded-md border border-amber-300 bg-amber-50 px-2 py-1.5 text-sm">
+          <span className="truncate font-medium text-amber-800" title="ค่านี้ไม่ตรงกับตัวเลือกที่มีอยู่">
+            {value}
+          </span>
+          {!disabled && (
+            <button
+              type="button"
+              onClick={() => {
+                onChange('')
+                setQuery('')
+              }}
+              className="shrink-0 text-xs text-amber-600 underline decoration-dotted hover:text-amber-800"
+            >
+              {clearLabel}
+            </button>
+          )}
+        </div>
       ) : (
         <>
           <input
