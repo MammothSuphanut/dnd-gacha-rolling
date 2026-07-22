@@ -105,6 +105,8 @@
 
 ---
 
+*(โต๊ะ ats: ถ้าปาร์ตี้ตัดสินใจออกไปล่าฝูงหมาป่าที่ได้ยินหอนตอนกลางคืนก่อนเดินทางกลับ ไปเล่น [EP7ats1: Wolf Hunt on the Snowfields](<./EP07ats1 - Wolf Hunt on the Snowfields.md>) ก่อน แล้วค่อยกลับมาที่หัวข้อด้านล่างนี้)*
+
 ## Returning to the Messenger — End of Act 1
 
 เมื่อได้ Fragment of Wisdom มาแล้ว ตัวละครเดินทางกลับไปยัง Aeor Lab เพื่อพบ Messenger อีกครั้ง
