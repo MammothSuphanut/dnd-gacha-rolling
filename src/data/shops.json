@@ -1114,7 +1114,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "เกราะกลางทำจากแผ่นโลหะเรีย����������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
+        "note": "เกราะกลางทำจากแผ่นโลหะเรีย�������������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
         "link": "https://5e.tools/items.html#banded%20plate_vss",
         "rarity": "Mundane"
       },
@@ -1131,7 +1131,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "ใบมีดสั้นติดปลายอาวุธปืนหรือหน้าไม้ 1d4 แท�� (light) ใช้แทงประชิดเมื่อกระสุนหมด",
+        "note": "ใบมีดสั้���ติดปลายอาวุธปืนหรือหน้าไม้ 1d4 แท�� (light) ใช้แทงประชิดเมื่อกระสุนหมด",
         "link": "https://5e.tools/items.html#bayonet_vss",
         "rarity": "Mundane"
       },
@@ -3146,7 +3146,7 @@
         "rural": true,
         "urban": true,
         "premium": true,
-        "note": "ปลอกเกราะรอบคอ ป้องกันลำคอจากการโจมตี",
+        "note": "ปลอกเกราะรอบคอ ป้องกันลำคอ��ากการโจมตี",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -13424,7 +13424,7 @@
         "urban": true,
         "premium": false,
         "enhanceable": false,
-        "note": "เบียร์หรือน้ำผึ้งหมักบรรจุเหยือก เหมาะดื่มแบ่งกันหลายคน",
+        "note": "เบียร์หรือน้���ผึ้���หมักบรรจุเหยือก เหมาะดื่มแบ่งกันหลายคน",
         "rarity": "Mundane"
       },
       {
@@ -17370,7 +17370,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Very Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปร���บได้ตามดุลยพินิจ)",
+        "note": "Very Rare — ราคาประเมินอัตโนมัติจากความห��ยาก/ความสามารถของไอเทม (ปร���บได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#second%20skin_grimhollowcg24",
         "rarity": "Very Rare"
@@ -17387,7 +17387,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ป���ับได้ต���มดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#sentinel%20shield_xdmg",
         "rarity": "Uncommon"
@@ -19274,7 +19274,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Grenade Launcher +1 มาตรฐาน ราคาประเมินอัตโนมัติจ���ก���ว���ม���า���า��� (ปร��บได้ต��มดุลยพินิจ)",
+        "note": "Uncommon — Grenade Launcher +1 มาตรฐาน ราคาประเมินอ��ตโนมัติจ���ก���ว���ม���า���า��� (ปร��บได้ต��มดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20grenade%20launcher_xdmg",
         "rarity": "Uncommon"
@@ -19291,7 +19291,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Grim Scythe +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — Grim Scythe +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหา��าก (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20grim%20scythe_xdmg",
         "rarity": "Uncommon"
@@ -27043,7 +27043,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Very Rare — Magnum +3 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Very Rare — Magnum +3 มาตรฐาน ราคาประเมิน���ัตโนมัติจ���กความหายาก (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B3%20magnum_xdmg",
         "rarity": "Very Rare"
@@ -28930,7 +28930,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "unknown (magic) — ยังไม่มีราคาอ้างอิง (rarity ไม่ชัดเจนใน 5etools) ให้ตั้งราคาเอง",
+        "note": "unknown (magic) — ยังไม่มีราคาอ้างอิง (rarity ไม่ชัดเจนใน 5etools) ให้ตั้งราคา��อง",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#crusader's%20shortsword_cos",
         "rarity": "Rare"
@@ -32611,7 +32611,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Shot +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — Shot +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับไ��้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20shot_xdmg",
         "rarity": "Uncommon"
@@ -38178,7 +38178,7 @@
     "name": "Transportation",
     "hardSell": "375 gp (Cheap: 281 gp, Expensive: 500 gp)",
     "sellingCap": "750 gp (Cheap: 562 gp, Expensive: 1000 gp)",
-    "notes": "Barding – เกราะที่ใช้ป้องกันสัตว์ รา��าคื��ราค��เกร��ะมาต��ฐาน x4 ดู���มวด Blacksmithing ราคาอยู่ที่หน���า 157 ของ PHB",
+    "notes": "Barding – เ���ราะที่ใช้ป้องกันสัตว์ รา��าคื��ราค��เกร��ะมาต��ฐาน x4 ดู���มวด Blacksmithing ราคาอยู่ที่หน���า 157 ของ PHB",
     "items": [
       {
         "id": "shopitem-862ab546-f8a2-4b73-8a67-342442475bf4",
@@ -38192,7 +38192,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "อ���ฐ ความเร็ว 50 ��ุต แบกน้ำหนั���ได้ 480 ป��นด์ ทนแดดและทะเลทรายได้ดีเยี่ยม",
+        "note": "อ���ฐ ความเร็ว 50 ��ุต แบกน้ำหนั���ได้ 480 ป����นด์ ทนแดดและทะเลทรายได้ดีเยี่ยม",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -53083,7 +53083,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Common — ราคาประเมินอัต��นมัติจากความหายาก/ความสามารถขอ���ไอเทม (ปรับได��ตามดุลยพินิจ)",
+        "note": "Common — ราคาประเมินอัต��นมัติ���ากความหายาก/ความสามารถขอ���ไอเทม (ปรับได��ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#moodmark%20paint_ggr",
         "rarity": "Common"
@@ -54919,7 +54919,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสา��ารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราค��ประเมินอัตโนมัต��จากความหายาก/ความสา��ารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#regenerating%20marrow_valdaspire24",
         "rarity": "Rare"
@@ -56738,7 +56738,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ต���มดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#stirring%20scaled%20ornament_ftd",
         "rarity": "Rare"
@@ -56755,7 +56755,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคา���ระเมินอัตโนม���ติจากความหายาก/ความสามารถของไอ���ทม (���รับได้ต���มดุลยพินิจ)",
+        "note": "Rare — ราคา���ระเมินอัตโนม���ติจากความหายาก/ความสามารถของไอ���ทม (���รับได้ต������ดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#stone%20of%20controlling%20earth%20elementals_xdmg",
         "rarity": "Rare"

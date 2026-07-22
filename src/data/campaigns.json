@@ -166,7 +166,7 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เหมา��อย่างยิ่งสำหรับใช้เป็นเซสชันแรกของผู้เล่นใหม่"
+    "note": "��หมา��อย่างยิ่งสำหร��บใช้เป็นเซสชันแรกของผู้เล่นใหม่"
   },
   {
     "id": "campaign-b9997286-0132-4134-a158-b14a9f23e5d2",
@@ -537,16 +537,22 @@
     "source": "Mammoth Homebrew",
     "name": "Aeorian Cataclysm",
     "adventureSlug": "aeorian-cataclysm",
-    "status": "On-Going",
+    "status": "Developing",
     "briefContent": "เมื่อ 'อาวุธสังหารเทพ' แห่งนครลอยฟ้าอีออร์ (Aeor) ถูกเปิดใช้งาน ทว่าชิ้นส่วนสำคัญทั้ง 5 กลับถูกแย่งชิงไปจนมิติและกฎเกณฑ์ของโลกดิ่งสู่ความโกลาหล มีเพียงเหล่าผู้ถูกเลือกเท่านั้นที่ต้องออกผจญภัยเพื่อตามหาชิ้นส่วนที่หายไปและหยุดยั้งวันสิ้นโลกก่อนทุกสิ่งจะพังทลาย",
     "level": "1-20",
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
     "note": "จบในตัว",
-    "partyTagIds": [
-      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
-      "tag-2b35e9ca-23da-40e8-90f7-f49ccbc15d67"
+    "partyLinks": [
+      {
+        "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
+        "status": "On-Going"
+      },
+      {
+        "partyTagId": "tag-2b35e9ca-23da-40e8-90f7-f49ccbc15d67",
+        "status": "On-Going"
+      }
     ],
     "campaignRole": "Playable"
   },
@@ -562,7 +568,7 @@
     "campaignType": "Long Campaign",
     "party": "",
     "note": "19 EP รวมทั้งแคมเปญ (Act1: 1 EP | Act2: 7 EP | Act3: 11 EP) — เนื้อเรื่องเต็มพร้อมเล่น ยังไม่มีแมพ/ภาพประกอบแนบ",
-    "partyTagIds": [],
+    "partyLinks": [],
     "campaignRole": "Playable"
   },
   {
@@ -1053,9 +1059,15 @@
     "campaignType": "Short Campaign",
     "party": "",
     "note": "ถ้าจะเล่นให้ไปเล่น Frozen Sick: The Plague Covenant แทน",
-    "partyTagIds": [
-      "tag-ec0d2618-4421-486a-a327-c7f666827175",
-      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    "partyLinks": [
+      {
+        "partyTagId": "tag-ec0d2618-4421-486a-a327-c7f666827175",
+        "status": "-"
+      },
+      {
+        "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
+        "status": "Complete"
+      }
     ],
     "link": "https://5e.tools/adventure.html#fs",
     "campaignRole": "Base"
@@ -1097,8 +1109,11 @@
     "campaignType": "One-Shot",
     "party": "",
     "note": "มักใช้เป็นเกม One-Shot ต้อนรับผู้เล่นใหม่",
-    "partyTagIds": [
-      "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca"
+    "partyLinks": [
+      {
+        "partyTagId": "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca",
+        "status": "-"
+      }
     ],
     "campaignRole": "Base"
   },
@@ -1507,14 +1522,15 @@
     "id": "campaign-bb3758b4-a733-4e0d-b6c8-4e8e069ae421",
     "source": "Wizards of the Coast",
     "name": "Waterdeep: Dragon Heist",
-    "status": "-",
+    "status": "Considering",
     "briefContent": "แคมเปญสืบสวนและชิงไหวชิงพริบกลางเมืองหลวง เพื่อตามหาเบาะแสโกดังเก็บเหรียญทองมูลค่ามหาศาลก่อนที่วายร้ายคนอื่นจะชิงไป",
     "level": "1 - 5",
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
     "note": "ส่งต่อผู้เล่นเข้าสู่ Dungeon of the Mad Mage ได้โดยตรง",
-    "link": "https://5e.tools/adventure.html#wdh"
+    "link": "https://5e.tools/adventure.html#wdh",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-95adc213-111a-40ea-8263-c95a78dff169",
@@ -1526,7 +1542,7 @@
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
     "party": "",
-    "note": "��ม่มี (เป็นภารกิจสั้นแยกเล่นตามเลเวล)",
+    "note": "��ม่มี (เป็นภารกิจสั้���แยกเล่นตามเลเวล)",
     "link": "https://5e.tools/adventure.html#kftgv"
   },
   {
@@ -1754,14 +1770,15 @@
     "id": "campaign-6b35e7c1-3b77-47db-a999-98680d260026",
     "source": "Wizards of the Coast",
     "name": "Waterdeep: Dungeon of the Mad Mage",
-    "status": "-",
+    "status": "Considering",
     "briefContent": "มหันตภัยดันเจี้ยนใต้เมืองวอเ���อร์ดีป มีทั้งหมด 23 ชั้น ผู้เล่นต้องลงไปเผชิญหน้ากับจอมเวทคลั่ง Halaster Blackcloak",
     "level": "5 - 20",
     "continuesFrom": "Waterdeep: Dragon Heist",
     "campaignType": "Long Campaign",
     "party": "",
     "note": "มีเนื้อเรื่องต่อยอดหลังจากจบ Waterdeep: Dragon Heist",
-    "link": "https://5e.tools/adventure.html#wdmm"
+    "link": "https://5e.tools/adventure.html#wdmm",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-62aa6fc0-e932-43e7-abf9-744376f6aa49",
@@ -1806,13 +1823,14 @@
     "id": "campaign-223d95a9-6305-48a8-afbe-a787b9d85004",
     "source": "Wyatt Trull",
     "name": "Dungeon of the Mad Mage Companion",
-    "status": "-",
+    "status": "Considering",
     "briefContent": "คู่มือและบทเสริมการจัดแคมเปญกึ่งรายการเรียลลิตี้โชว์ของ Halaster เพื่อเปลี่ยนให้ดันเจี้ยน Mad Mage สนุกและฮาปนโหดขึ้น",
     "level": "5 - 20",
     "continuesFrom": "",
     "campaignType": "Long Campaign (โมดูลเสริม)",
     "party": "",
-    "note": "ต้องใช้ควบคู่กับแคมเปญหลัก Dungeon of the Mad Mage"
+    "note": "ต้องใช้ควบคู่กับแคมเปญหลัก Dungeon of the Mad Mage",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-f29492b4-c9ba-43ed-89c1-ec5e6e50015c",
@@ -1912,6 +1930,12 @@
       "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
     ],
     "note": "มีเนื้อหา Wildemount: Frozen Sick อยู่ใน Campaign นี้แล้ว",
-    "campaignRole": "Playable"
+    "campaignRole": "Playable",
+    "partyLinks": [
+      {
+        "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
+        "status": "On-Going"
+      }
+    ]
   }
 ]

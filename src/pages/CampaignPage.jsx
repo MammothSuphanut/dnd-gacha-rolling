@@ -8,12 +8,20 @@ import { createId } from '../utils/id'
 import { buildFiveEToolsLink, findAdventureOrBook, findAdventureOrBookAsync } from '../utils/adventureLinks'
 import { getAdventureJournal } from '../utils/adventureJournals'
 
-const STATUS_OPTIONS = ['-', 'Developing', 'Prepared', 'On-Going', 'Complete']
+const STATUS_OPTIONS = ['-', 'Considering', 'Developing', 'Prepared']
 const HAS_STATUS_FILTER = '__has_status__'
 const STATUS_FILTER_OPTIONS = [
   { value: HAS_STATUS_FILTER, label: 'มี status แล้ว' },
   ...STATUS_OPTIONS.map((s) => ({ value: s, label: s })),
 ]
+// Play progress is tracked per-party (a campaign can be run by several
+// parties at once, each at a different point), separate from `status` above
+// which tracks how ready the campaign *material* is.
+const PARTY_STATUS_OPTIONS = ['-', 'On-Going', 'Complete']
+const PARTY_STATUS_FILTER_OPTIONS = PARTY_STATUS_OPTIONS.filter((s) => s !== '-').map((s) => ({
+  value: s,
+  label: s,
+}))
 const CAMPAIGN_TYPE_OPTIONS = ['-', 'One-Shot', 'Short Campaign', 'Long Campaign']
 // "บทบาท" of a campaign entry — separate axis from Status (which tracks prep
 // progress). Base = source material kept around for a DM to adapt/reference,
@@ -23,10 +31,15 @@ const ROLE_OPTIONS = ['-', 'Playable', 'Base']
 
 const STATUS_STYLES = {
   '-': 'bg-[#f5ede0] text-stone-600',
+  Considering: 'bg-stone-200 text-stone-600',
   Developing: 'bg-amber-100 text-amber-700',
   Prepared: 'bg-blue-100 text-blue-700',
-  'On-Going': 'bg-violet-100 text-violet-700',
-  Complete: 'bg-green-100 text-green-700',
+}
+
+const PARTY_STATUS_STYLES = {
+  '-': 'border-gray-300 bg-white text-stone-500',
+  'On-Going': 'border-violet-300 bg-violet-100 text-violet-700',
+  Complete: 'border-green-300 bg-green-100 text-green-700',
 }
 
 const ROLE_STYLES = {
@@ -42,9 +55,9 @@ const COLUMN_WIDTHS = {
   role: '7%',
   level: '6%',
   campaignType: '10%',
-  continuesFrom: '13%',
-  party: '11%',
-  note: '17%',
+  continuesFrom: '12%',
+  party: '15%',
+  note: '14%',
   actions: '8%',
 }
 
@@ -59,7 +72,7 @@ function blankCampaign() {
     level: '',
     continuesFrom: '',
     campaignType: '',
-    partyTagIds: [],
+    partyLinks: [],
     note: '',
     link: '',
   }
@@ -124,54 +137,83 @@ function DisplayText({ value, className = '', title }) {
   )
 }
 
-function PartyTagChips({ ids, partyTags }) {
-  const selected = partyTags.filter((t) => (ids ?? []).includes(t.id))
-  if (selected.length === 0) {
+function PartyTagChips({ links, partyTags }) {
+  const entries = (links ?? [])
+    .map((link) => ({ link, tag: partyTags.find((t) => t.id === link.partyTagId) }))
+    .filter((e) => e.tag)
+  if (entries.length === 0) {
     return <div className="px-2 py-1 text-gray-300">—</div>
   }
   return (
-    <div className="flex flex-wrap gap-1 px-1 py-1">
-      {selected.map((t) => (
-        <span
-          key={t.id}
-          className="inline-flex items-center gap-1 rounded-full bg-[#f5ede0] px-2 py-0.5 text-xs text-stone-700"
+    <div className="flex flex-col gap-1 px-1 py-1">
+      {entries.map(({ link, tag }) => (
+        <div
+          key={tag.id}
+          className="flex items-center justify-between gap-2 rounded-md bg-[#f5ede0] py-1 pl-2 pr-1.5"
         >
-          <span
-            className="h-2 w-2 rounded-full border border-gray-300"
-            style={{ backgroundColor: t.color || '#e5e7eb' }}
-          />
-          {t.name || '(ไม่มีชื่อ)'}
-        </span>
+          <span className="flex min-w-0 items-center gap-1.5">
+            <span
+              className="h-2 w-2 shrink-0 rounded-full border border-gray-300"
+              style={{ backgroundColor: tag.color || '#e5e7eb' }}
+            />
+            <span className="truncate text-xs text-stone-700" title={tag.name}>
+              {tag.name || '(ไม่มีชื่อ)'}
+            </span>
+          </span>
+          {link.status && link.status !== '-' && (
+            <span
+              className={`shrink-0 whitespace-nowrap rounded-full border px-1.5 py-0.5 text-[10px] font-medium leading-none ${
+                PARTY_STATUS_STYLES[link.status] ?? ''
+              }`}
+            >
+              {link.status}
+            </span>
+          )}
+        </div>
       ))}
     </div>
   )
 }
 
-function PartyTagPicker({ selectedIds, partyTags, onToggle }) {
+function PartyTagPicker({ links, partyTags, onToggle, onStatusChange }) {
   if (partyTags.length === 0) {
     return <p className="px-1 py-1 text-xs text-stone-400">ยังไม่มี Party (สร้างได้ที่หน้าตัวละคร)</p>
   }
   return (
     <div className="flex flex-wrap gap-1 p-1">
       {partyTags.map((t) => {
-        const active = (selectedIds ?? []).includes(t.id)
+        const link = (links ?? []).find((l) => l.partyTagId === t.id)
+        const active = !!link
         return (
-          <button
+          <span
             key={t.id}
-            type="button"
-            onClick={() => onToggle(t.id)}
             className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs transition-colors ${
               active
                 ? 'border-purple-400 bg-violet-100 text-violet-700'
                 : 'border-gray-300 bg-white text-stone-600 hover:bg-[#f5ede0]'
             }`}
           >
-            <span
-              className="h-2 w-2 rounded-full border border-gray-300"
-              style={{ backgroundColor: t.color || '#e5e7eb' }}
-            />
-            {t.name || '(ไม่มีชื่อ)'}
-          </button>
+            <button type="button" onClick={() => onToggle(t.id)} className="inline-flex items-center gap-1">
+              <span
+                className="h-2 w-2 rounded-full border border-gray-300"
+                style={{ backgroundColor: t.color || '#e5e7eb' }}
+              />
+              {t.name || '(ไม่มีชื่อ)'}
+            </button>
+            {active && (
+              <select
+                value={link.status ?? '-'}
+                onChange={(e) => onStatusChange(t.id, e.target.value)}
+                className="rounded-full border border-purple-300 bg-white px-1 py-0 text-[10px] text-stone-600 focus:outline-none"
+              >
+                {PARTY_STATUS_OPTIONS.map((s) => (
+                  <option key={s} value={s}>
+                    {s}
+                  </option>
+                ))}
+              </select>
+            )}
+          </span>
         )
       })}
     </div>
@@ -323,6 +365,7 @@ export default function CampaignPage() {
   const [journalCampaign, setJournalCampaign] = useState(null)
   const [query, setQuery] = useState('')
   const [filterStatus, setFilterStatus] = useState(HAS_STATUS_FILTER)
+  const [filterPartyStatus, setFilterPartyStatus] = useState('')
   const [filterRole, setFilterRole] = useState('Playable')
   const [filterCampaignType, setFilterCampaignType] = useState('')
   const [filterParty, setFilterParty] = useState('')
@@ -356,11 +399,12 @@ export default function CampaignPage() {
       }
       if (filterRole && c.campaignRole !== filterRole) return false
       if (filterCampaignType && c.campaignType !== filterCampaignType) return false
-      if (filterParty && !(c.partyTagIds ?? []).includes(filterParty)) return false
+      if (filterParty && !(c.partyLinks ?? []).some((l) => l.partyTagId === filterParty)) return false
+      if (filterPartyStatus && !(c.partyLinks ?? []).some((l) => l.status === filterPartyStatus)) return false
       if (filterLevel && c.level !== filterLevel) return false
       if (!normalizedQuery) return true
-      const partyNames = (c.partyTagIds ?? [])
-        .map((id) => partyTagsById[id]?.name ?? '')
+      const partyNames = (c.partyLinks ?? [])
+        .map((l) => partyTagsById[l.partyTagId]?.name ?? '')
         .join(' ')
       const haystack = `${c.source} ${c.name} ${partyNames} ${c.note}`.toLowerCase()
       return haystack.includes(normalizedQuery)
@@ -370,9 +414,7 @@ export default function CampaignPage() {
 
     const getSortValue = (c) => {
       if (sortKey === 'party') {
-        return (c.partyTagIds ?? [])
-          .map((id) => partyTagsById[id]?.name ?? '')
-          .join(' ')
+        return partyTagsById[(c.partyLinks ?? [])[0]?.partyTagId]?.name ?? ''
       }
       return c[sortKey] ?? ''
     }
@@ -395,6 +437,7 @@ export default function CampaignPage() {
     campaigns,
     normalizedQuery,
     filterStatus,
+    filterPartyStatus,
     filterRole,
     filterCampaignType,
     filterParty,
@@ -484,11 +527,23 @@ export default function CampaignPage() {
   function togglePartyTagForForm(tagId) {
     setCampaignForm((prev) => {
       if (!prev) return null
-      const current = prev.partyTagIds ?? []
-      const next = current.includes(tagId)
-        ? current.filter((id) => id !== tagId)
-        : [...current, tagId]
-      return { ...prev, partyTagIds: next }
+      const current = prev.partyLinks ?? []
+      const next = current.some((l) => l.partyTagId === tagId)
+        ? current.filter((l) => l.partyTagId !== tagId)
+        : [...current, { partyTagId: tagId, status: '-' }]
+      return { ...prev, partyLinks: next }
+    })
+  }
+
+  function setPartyStatusForForm(tagId, status) {
+    setCampaignForm((prev) => {
+      if (!prev) return null
+      return {
+        ...prev,
+        partyLinks: (prev.partyLinks ?? []).map((l) =>
+          l.partyTagId === tagId ? { ...l, status } : l,
+        ),
+      }
     })
   }
 
@@ -517,7 +572,13 @@ export default function CampaignPage() {
         <div>
           <h1 className="font-cinzel text-2xl font-bold text-stone-900">แคมเปญ</h1>
           <p className="mt-0.5 text-sm text-stone-500">
-            {query || filterStatus || filterRole || filterCampaignType || filterParty || filterLevel
+            {query ||
+            filterStatus ||
+            filterPartyStatus ||
+            filterRole ||
+            filterCampaignType ||
+            filterParty ||
+            filterLevel
               ? `${visibleCampaigns.length}/${campaigns.length}`
               : campaigns.length}{' '}
             แคมเปญทั้งหมด
@@ -579,6 +640,14 @@ export default function CampaignPage() {
           placeholder="Party: ทั้งหมด"
           clearLabel="ล้าง"
           className="w-36"
+        />
+        <SearchSelect
+          options={PARTY_STATUS_FILTER_OPTIONS}
+          value={filterPartyStatus}
+          onChange={setFilterPartyStatus}
+          placeholder="สถานะปาตี้: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-40"
         />
       </div>
 
@@ -680,7 +749,7 @@ export default function CampaignPage() {
                     <DisplayText value={campaign.continuesFrom} />
                   </td>
                   <td className="py-2 px-3">
-                    <PartyTagChips ids={campaign.partyTagIds} partyTags={partyTags} />
+                    <PartyTagChips links={campaign.partyLinks} partyTags={partyTags} />
                   </td>
                   <td className="py-2 px-3">
                     <DisplayText value={campaign.note} />
@@ -835,9 +904,10 @@ export default function CampaignPage() {
               <div className="flex flex-col gap-1.5">
                 <label className="font-semibold text-stone-700">Party (กลุ่ม)</label>
                 <PartyTagPicker
-                  selectedIds={campaignForm.partyTagIds}
+                  links={campaignForm.partyLinks}
                   partyTags={partyTags}
                   onToggle={togglePartyTagForForm}
+                  onStatusChange={setPartyStatusForForm}
                 />
               </div>
 

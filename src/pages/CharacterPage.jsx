@@ -1382,7 +1382,7 @@ function CharacterFormModal({
     const matched = campaigns.filter(
       (c) =>
         form.campaignIds.includes(c.id) ||
-        (c.partyTagIds ?? []).some((id) => form.partyTagIds.includes(id)),
+        (c.partyLinks ?? []).some((l) => form.partyTagIds.includes(l.partyTagId)),
     )
     matched.sort((a, b) => {
       // แสดง campaigns ที่ assign แล้วก่อน จากนั้นเรียงตามชื่อ
