@@ -4,6 +4,8 @@
 
 ทุก adventure ที่สร้างผูกอยู่กับ meta-campaign หลัก **"Astral Nexus: Constellation Protocol"** (ดูเนื้อเรื่องเต็มที่ [astral-nexus-lore.md](./astral-nexus-lore.md)) — บทสัมภาษณ์จะมีคำถามเพิ่มว่า adventure นี้เชื่อมกับ "เมล็ดพันธุ์แห่งการทำลายล้าง" ในเรื่องหลักอย่างไร แล้วแทรกเป็นบทนำสั้นๆ ใน `00-overview.md` และบทส่งท้ายใน EP สุดท้าย
 
+ทุก adventure ยังใช้**ระบบ Stress กลางเดียวกัน**ตามกฎใน [stress-system.md](./stress-system.md) ถ้ามีกลไกในเรื่องที่ให้ตัวละครรับ Stress (เช่น item พิเศษ, สภาพแวดล้อมสุดขั้ว) — ให้ลิงก์ไปไฟล์นั้นแทนการนิยามผลลัพธ์ของ Stress ซ้ำเอง
+
 ทุก adventure ยังใช้**โครงสร้างไฟล์/โฟลเดอร์เดียวกัน**ตามกฎใน [structure-guide.md](./structure-guide.md) — สรุปสั้นๆ: root มีไฟล์ชุดเดิมเสมอ (`00-overview.md`, `01-hook-and-antagonist.md`, `02-npcs.md`, `99-notes.md`) และ**มีโฟลเดอร์ `ACT0X-slug/` อย่างน้อย 1 อันเสมอ** (แม้แต่ one-shot ก็มี `ACT01-slug/` หนึ่งโฟลเดอร์ ไม่มีข้อยกเว้น) Chapter brief เป็นไฟล์แบน `CH0X-slug.md` ส่วนไฟล์ journal เต็มของแต่ละ EP ตั้งชื่อ `EP0Y - ชื่อตอนเต็ม.md` (เลขนับต่อเนื่องทั้ง Act ไม่รีเซ็ตต่อ Chapter, ไม่มี `CH0X-` นำหน้าแม้ Act จะมีหลาย Chapter ก็ตาม) — ไม่มีโฟลเดอร์ `journal/` แยก ไฟล์ journal เต็มอยู่ชั้นเดียวกับไฟล์ outline/brief ของมันเสมอ
 
 ## วิธีที่ 1: ใช้ผ่าน Claude Code (แนะนำ)

@@ -4286,8 +4286,8 @@
       "inspiration": false,
       "xp": 0,
       "hp": {
-        "current": 15,
         "max": "",
+        "current": 15,
         "temp": ""
       },
       "deathSaves": {
@@ -4426,6 +4426,10 @@
       },
       {
         "name": "Chain Mail",
+        "qty": 1
+      },
+      {
+        "name": "Shield",
         "qty": 1
       }
     ],
