@@ -434,16 +434,18 @@ export default function RollPage({
                 </div>
               </div>
             ))}
-            <div>
-              <div className="mb-1.5 text-[10px] font-medium uppercase tracking-wide text-stone-400">อื่นๆ</div>
+            <div className="border-l border-[#e2cfb3] pl-6">
+              <div className="mb-1.5 text-[10px] font-medium uppercase tracking-wide text-stone-400">แสดง/ซ่อน</div>
               <button
                 type="button"
                 onClick={toggleStatRollVisible}
-                className={`rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-150 ${showStatRoll
-                    ? 'bg-violet-700 text-white shadow-sm'
-                    : 'border border-[#e2cfb3] bg-[#fdf8f0] text-stone-600 hover:bg-[#f5ede0]'
+                title={showStatRoll ? 'ซ่อนส่วนสุ่มค่าพลัง' : 'แสดงส่วนสุ่มค่าพลัง'}
+                className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-150 ${showStatRoll
+                    ? 'border border-violet-200 bg-violet-50 text-violet-700'
+                    : 'border border-dashed border-[#e2cfb3] bg-[#fdf8f0] text-stone-500 hover:bg-[#f5ede0]'
                   }`}
               >
+                <span aria-hidden>{showStatRoll ? '👁️' : '🙈'}</span>
                 สุ่มค่าพลัง (4d6)
               </button>
             </div>

@@ -355,8 +355,11 @@ function CharacterImage({ imageKey, version, className, downloadName, allowDownl
 
   if (!src) {
     return (
-      <div className={`flex items-center justify-center bg-[#f5ede0] text-gray-300 ${className}`}>
-        ไม่มีรูป
+      <div className={`flex items-center justify-center bg-[#f5ede0] text-stone-300 ${className}`}>
+        <svg viewBox="0 0 24 24" fill="currentColor" className="h-1/2 w-1/2 max-h-10 max-w-10">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7v1H4v-1Z" />
+        </svg>
       </div>
     )
   }
@@ -2671,8 +2674,11 @@ function CharacterFormModal({
                 {activePreview ? (
                   <img src={activePreview} alt="" className="h-full w-full object-cover" />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center text-xs text-gray-300">
-                    ไม่มีรูป
+                  <div className="flex h-full w-full items-center justify-center text-stone-300">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="h-10 w-10">
+                      <circle cx="12" cy="8" r="4" />
+                      <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7v1H4v-1Z" />
+                    </svg>
                   </div>
                 )}
               </div>
