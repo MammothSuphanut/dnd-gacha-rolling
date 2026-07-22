@@ -107,12 +107,67 @@ function weaponDamageText(item) {
   return [dmg, types].filter(Boolean).join(' ')
 }
 
-function parseWeaponsAndEquipment(items) {
+function abilityModFromScore(score) {
+  return Math.floor((Number(score ?? 10) - 10) / 2)
+}
+
+// 2024/2014 PHB proficiency bonus by total character level.
+function proficiencyBonusForLevel(totalLevel) {
+  if (totalLevel >= 17) return 6
+  if (totalLevel >= 13) return 5
+  if (totalLevel >= 9) return 4
+  if (totalLevel >= 5) return 3
+  return 2
+}
+
+function isWeaponProficient(item, weaponProfValues) {
+  const explicit = item.system?.proficient
+  if (explicit === 1 || explicit === true) return true
+  if (explicit === 0 || explicit === false) return false
+  // proficient is null/undefined -> Foundry auto-determines it from the actor's
+  // weapon proficiencies; approximate using the simple/martial category and,
+  // failing that, the specific base weapon identifier.
+  const category = item.system?.type?.value?.startsWith('simple')
+    ? 'sim'
+    : item.system?.type?.value?.startsWith('martial')
+      ? 'mar'
+      : ''
+  if (category && weaponProfValues?.includes(category)) return true
+  const baseItem = item.system?.type?.baseItem || item.system?.identifier
+  return !!(baseItem && weaponProfValues?.includes(baseItem))
+}
+
+function weaponAbilityMod(item, abilities) {
+  const strMod = abilityModFromScore(abilities?.str?.value)
+  const dexMod = abilityModFromScore(abilities?.dex?.value)
+  const activities = item.system?.activities ? Object.values(item.system.activities) : []
+  const explicitAbility = activities.find((a) => a.type === 'attack')?.attack?.ability
+  if (explicitAbility === 'str') return strMod
+  if (explicitAbility === 'dex') return dexMod
+  if (item.system?.properties?.includes('fin')) return Math.max(strMod, dexMod)
+  if (item.system?.type?.value?.endsWith('R')) return dexMod
+  return strMod
+}
+
+function weaponAttackBonus(item, abilities, weaponProfValues, profBonus) {
+  const abilityMod = weaponAbilityMod(item, abilities)
+  const proficient = isWeaponProficient(item, weaponProfValues)
+  const magicBonus = Number(item.system?.magicalBonus) || 0
+  const total = abilityMod + (proficient ? profBonus : 0) + magicBonus
+  return total >= 0 ? `+${total}` : `${total}`
+}
+
+function parseWeaponsAndEquipment(items, system, profBonus) {
   const weaponItems = [...items.filter((it) => it.type === 'weapon')].sort(
     (a, b) => (b.system?.equipped ? 1 : 0) - (a.system?.equipped ? 1 : 0),
   )
+  const weaponProfValues = system?.traits?.weaponProf?.value
   const weaponRows = weaponItems.slice(0, 6).map((it) =>
-    migrateLegacyAction({ name: it.name, atkBonus: '', damage: weaponDamageText(it) }),
+    migrateLegacyAction({
+      name: it.name,
+      atkBonus: weaponAttackBonus(it, system?.abilities, weaponProfValues, profBonus),
+      damage: weaponDamageText(it),
+    }),
   )
   const overflowWeapons = weaponItems.slice(6)
 
@@ -267,7 +322,9 @@ export async function parseFoundryActor(file) {
 
   patch.currency = { ...blankCurrency(), ...system.currency }
 
-  const { weapons, equipment } = parseWeaponsAndEquipment(items)
+  const totalLevel = patch.classLevels?.reduce((sum, cl) => sum + (Number(cl.level) || 0), 0) || level1
+  const profBonus = proficiencyBonusForLevel(totalLevel)
+  const { weapons, equipment } = parseWeaponsAndEquipment(items, system, profBonus)
   if (weapons) patch.weapons = weapons
   if (equipment.length > 0) patch.equipment = equipment
 

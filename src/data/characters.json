@@ -1390,7 +1390,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-b74739a2-17a9-467e-a5d5-48c02bf2a5ab",
+        "id": "classlevel-6928b203-8709-4700-9259-503e053efa0c",
         "className": "Rogue",
         "subclassName": "Scout",
         "level": 1
@@ -1431,14 +1431,14 @@
     ],
     "activeImageId": "img-f745d099-2261-4f2c-816c-b8c8e346911b",
     "combat": {
-      "ac": "15",
-      "speed": "30",
+      "ac": "",
+      "speed": "30 ft",
       "hitDice": "1d8",
       "inspiration": false,
-      "xp": "",
+      "xp": 0,
       "hp": {
-        "max": "10",
-        "current": "10",
+        "current": 10,
+        "max": "",
         "temp": ""
       },
       "deathSaves": {
@@ -1530,43 +1530,45 @@
     },
     "weapons": [
       {
-        "name": "Dagger (Nick)",
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+2",
+        "damages": [
+          {
+            "amount": "1",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Dagger",
         "bonusOrDC": "+6",
         "damages": [
           {
-            "amount": "1d4+4",
+            "amount": "1d4",
             "type": "Piercing"
           }
         ]
       },
       {
-        "name": "Light Crossbow (Slow)",
+        "name": "Light Crossbow",
         "bonusOrDC": "+6",
         "damages": [
           {
-            "amount": "1d8+4",
+            "amount": "1d8",
             "type": "Piercing"
           }
         ]
       }
     ],
     "currency": {
-      "cp": "",
-      "sp": "3",
-      "ep": "",
-      "gp": "14",
-      "pp": ""
+      "cp": 0,
+      "sp": 3,
+      "ep": 0,
+      "gp": 14,
+      "pp": 0
     },
     "attacksSpellcasting": "",
     "equipment": [
-      {
-        "name": "Dagger",
-        "qty": 2
-      },
-      {
-        "name": "Crossbow, Light",
-        "qty": 1
-      },
       {
         "name": "Leather Armor",
         "qty": 1
@@ -1576,7 +1578,7 @@
         "qty": 1
       },
       {
-        "name": "Bolt",
+        "name": "Bolts",
         "qty": 20
       },
       {
@@ -1584,7 +1586,7 @@
         "qty": 1
       },
       {
-        "name": "Rations (1 day)",
+        "name": "Rations",
         "qty": 7
       },
       {
@@ -1592,19 +1594,35 @@
         "qty": 1
       },
       {
+        "name": "Water (Pint)",
+        "qty": 4
+      },
+      {
         "name": "Backpack",
         "qty": 1
       }
     ],
     "proficienciesLanguages": [
+      "cant",
       "Common",
-      "Goblin",
-      "Thieve's cant"
+      "Goblin"
     ],
     "featuresAndTraits": [
       {
-        "name": "Alert",
-        "description": "Origin Feat\nYou gain the following benefits.\n\nInitiative Proficiency. When you roll Initiative, you can add your Proficiency Bonus to the roll.\n\nInitiative Swap. Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition."
+        "name": "Sneak Attack",
+        "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra [[/damage 1d6]] damage to one creature you hit with an attack roll if you have @variantrule[Advantage|XPHB] on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type. You don't need @variantrule[Advantage|XPHB] on the attack roll if at least one of your allies is within 5 feet of the target, the ally doesn't have the &Reference[condition=Incapacitated] condition, and you don't have @variantrule[Disadvantage|XPHB] on the attack roll. The extra damage increases as you gain Rogue levels, as shown in the Sneak Attack column of the Rogue Features table."
+      },
+      {
+        "name": "Thieves' Cant",
+        "description": "You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice, which you choose from the language tables in chapter 2 ."
+      },
+      {
+        "name": "Weapon Mastery",
+        "description": "Your training with weapons allows you to use the @variantrule[weapon mastery properties|XPHB|mastery properties] of two kinds of weapons of your choice with which you have proficiency, such as @item[Dagger|XPHB|Daggers] and @item[Shortbow|XPHB|Shortbows]. Whenever you finish a @variantrule[Long Rest|XPHB], you can change the kinds of weapons you chose. For example, you could switch to using the @variantrule[weapon mastery properties|XPHB|mastery properties] of @item[Scimitar|XPHB|Scimitars] and @item[Shortsword|XPHB|Shortswords]."
+      },
+      {
+        "name": "Creature Type",
+        "description": "You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid."
       },
       {
         "name": "Darkvision",
@@ -1612,25 +1630,21 @@
       },
       {
         "name": "Fey Ancestry",
-        "description": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+        "description": "You have advantage on saving throws you make to avoid or end the &Reference[condition=charmed] condition on yourself."
       },
       {
         "name": "Fury of the Small",
-        "description": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.\n\nYou can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
+        "description": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
       },
       {
         "name": "Nimble Escape",
-        "description": "You can take the Disengage or Hide action as a bonus action on each of your turns."
-      },
-      {
-        "name": "Sneak Attack",
-        "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack roll if you have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.\n\nYou don't need Advantage on the attack roll if at least one of your allies is within 5 feet of the target, the ally doesn't have the Incapacitated condition, and you don't have Disadvantage on the attack roll.\n\nThe extra damage increases as you gain Rogue levels, as shown in the Sneak Attack column of the Rogue Features table."
+        "description": "You can take the @action[Disengage] or @action[Hide] action as a bonus action on each of your turns."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "",
+    "additionalFeaturesTraits": "Alert",
     "spellcasting": {
       "spellcastingClass": "",
       "spellcastingAbility": "",
@@ -1664,7 +1678,7 @@
       ],
       "levels": {
         "1": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -1718,7 +1732,7 @@
           ]
         },
         "2": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -1776,7 +1790,7 @@
           ]
         },
         "3": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -1834,7 +1848,7 @@
           ]
         },
         "4": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -1892,7 +1906,7 @@
           ]
         },
         "5": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -1934,7 +1948,7 @@
           ]
         },
         "6": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -1976,7 +1990,7 @@
           ]
         },
         "7": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2018,7 +2032,7 @@
           ]
         },
         "8": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2052,7 +2066,7 @@
           ]
         },
         "9": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2101,7 +2115,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-857834c0-9855-4c8c-90f3-e80bab793293",
+        "id": "classlevel-eaa0d050-9880-4ce9-b311-bc6d73f72e44",
         "className": "Barbarian",
         "subclassName": "Path of the Wild Heart",
         "level": 1
@@ -2142,14 +2156,14 @@
     ],
     "activeImageId": "img-e4e7f0a7-1964-4924-aa92-54082b7730f9",
     "combat": {
-      "ac": "16",
-      "speed": "30",
+      "ac": "",
+      "speed": "30 ft",
       "hitDice": "1d12",
       "inspiration": false,
-      "xp": "",
+      "xp": 0,
       "hp": {
-        "max": "18",
-        "current": "18",
+        "current": 18,
+        "max": "",
         "temp": ""
       },
       "deathSaves": {
@@ -2241,11 +2255,21 @@
     },
     "weapons": [
       {
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "5",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
         "name": "Greatsword",
         "bonusOrDC": "+6",
         "damages": [
           {
-            "amount": "2d6+4",
+            "amount": "2d6",
             "type": "Slashing"
           }
         ]
@@ -2253,19 +2277,19 @@
     ],
     "attacksSpellcasting": "",
     "currency": {
-      "cp": "",
-      "sp": "3",
-      "ep": "",
-      "gp": "254",
-      "pp": ""
+      "cp": 0,
+      "sp": 3,
+      "ep": 0,
+      "gp": 254,
+      "pp": 0
     },
     "equipment": [
       {
-        "name": "Greatsword",
+        "name": "Backpack",
         "qty": 1
       },
       {
-        "name": "Rations (1 day)",
+        "name": "Rations",
         "qty": 7
       },
       {
@@ -2273,41 +2297,44 @@
         "qty": 1
       },
       {
-        "name": "Backpack",
-        "qty": 1
+        "name": "Water (Pint)",
+        "qty": 4
       }
     ],
     "proficienciesLanguages": [
-      "Carpenter's Tools",
       "Common",
       "Orc"
     ],
     "featuresAndTraits": [
       {
-        "name": "Rage",
-        "description": "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren't wearing Heavy armor.\n\nYou can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.\n\nWhile active, your Rage follows the rules below.\n\nDamage Resistance. You have Resistance to Bludgeoning, Piercing, and Slashing damage.\n\nRage Damage. When you make an attack using Strength—with either a weapon or an Unarmed Strike—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.\n\nStrength Advantage. You have Advantage on Strength checks and Strength saving throws.\n\nNo Concentration or Spells. You can't maintain Concentration, and you can't cast spells.\n\nDuration. The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:\n\nMake an attack roll against an enemy.\nForce an enemy to make a saving throw.\nTake a Bonus Action to extend your Rage.\nEach time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes."
-      },
-      {
-        "name": "Tough",
-        "description": "Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points."
+        "name": "Adrenaline Rush",
+        "description": "You can take the @action[Dash|XPHB] action as a @variantrule[Bonus Action|XPHB]. When you do so, you gain a number of @variantrule[Temporary Hit Points|XPHB] equal to your @variantrule[Proficiency|XPHB|Proficiency Bonus]. You can use this trait a number of times equal to your @variantrule[Proficiency|XPHB|Proficiency Bonus], and you regain all expended uses when you finish a @variantrule[Short Rest|XPHB|Short] or @variantrule[Long Rest|XPHB]."
       },
       {
         "name": "Darkvision",
-        "description": "You have Darkvision with a range of 120 feet."
-      },
-      {
-        "name": "Adrenaline Rush",
-        "description": "You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.\n\nYou can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest."
+        "description": "You have &Reference[rule=Darkvision] with a range of 120 feet."
       },
       {
         "name": "Relentless Endurance",
-        "description": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest."
+        "description": "When you are reduced to 0 @variantrule[Hit Points|XPHB] but not killed outright, you can drop to 1 @variantrule[Hit Points|XPHB|Hit Point] instead. Once you use this trait, you can't do so again until you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Rage",
+        "description": "You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a @variantrule[Bonus Action|XPHB] if you aren't wearing Heavy armor. You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a @variantrule[Short Rest|XPHB], and you regain all expended uses when you finish a @variantrule[Long Rest|XPHB]. While active, your Rage follows the rules below. Damage Resistance. You have @variantrule[Resistance|XPHB] to Bludgeoning, Piercing, and Slashing damage. Rage Damage. When you make an attack using Strength—with either a weapon or an @variantrule[Unarmed Strike|XPHB]—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table. Strength Advantage. You have @variantrule[Advantage|XPHB] on Strength checks and Strength saving throws. No Concentration or Spells. You can't maintain @status[Concentration|XPHB], and you can't cast spells. Duration. The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the &Reference[condition=Incapacitated] condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following: Make an attack roll against an enemy. Force an enemy to make a saving throw. Take a @variantrule[Bonus Action|XPHB] to extend your Rage. Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes."
+      },
+      {
+        "name": "Unarmored Defense",
+        "description": "While you aren't wearing any armor, your base @variantrule[Armor Class|XPHB] equals 10 plus your Dexterity and Constitution modifiers. You can use a @item[Shield|XPHB] and still gain this benefit."
+      },
+      {
+        "name": "Weapon Mastery",
+        "description": "Your training with weapons allows you to use the @variantrule[weapon mastery properties|XPHB|mastery properties] of two kinds of Simple or Martial Melee weapons of your choice, such as @item[Greataxe|XPHB|Greataxes] and @item[Handaxe|XPHB|Handaxes]. Whenever you finish a @variantrule[Long Rest|XPHB], you can practice weapon drills and change one of those weapon choices. When you reach certain Barbarian levels, you gain the ability to use the @variantrule[weapon mastery properties|XPHB|mastery properties] of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "",
+    "additionalFeaturesTraits": "Tough",
     "spellcasting": {
       "spellcastingClass": "",
       "spellcastingAbility": "",
@@ -2341,7 +2368,7 @@
       ],
       "levels": {
         "1": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2395,7 +2422,7 @@
           ]
         },
         "2": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2453,7 +2480,7 @@
           ]
         },
         "3": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2511,7 +2538,7 @@
           ]
         },
         "4": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2569,7 +2596,7 @@
           ]
         },
         "5": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2611,7 +2638,7 @@
           ]
         },
         "6": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2653,7 +2680,7 @@
           ]
         },
         "7": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2695,7 +2722,7 @@
           ]
         },
         "8": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2729,7 +2756,7 @@
           ]
         },
         "9": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -2778,7 +2805,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-4bfd0e0f-41da-4ae5-88df-4d88a0cd8b13",
+        "id": "classlevel-b546f8f4-4c1b-40f0-a9c6-abce72c6fda3",
         "className": "Cleric",
         "subclassName": "Life Domain",
         "level": 1
@@ -2819,14 +2846,14 @@
     ],
     "activeImageId": "img-38f7f906-7a58-4021-8c7b-0abae5c9e32b",
     "combat": {
-      "ac": "17",
-      "speed": "30",
+      "ac": "",
+      "speed": "30 ft",
       "hitDice": "1d8",
       "inspiration": false,
-      "xp": "",
+      "xp": 0,
       "hp": {
-        "max": "12",
-        "current": "12",
+        "current": 12,
+        "max": "",
         "temp": ""
       },
       "deathSaves": {
@@ -2880,7 +2907,7 @@
         "expertise": false
       },
       "medicine": {
-        "prof": true,
+        "prof": false,
         "expertise": false
       },
       "nature": {
@@ -2896,7 +2923,7 @@
         "expertise": false
       },
       "persuasion": {
-        "prof": true,
+        "prof": false,
         "expertise": false
       },
       "religion": {
@@ -2918,22 +2945,12 @@
     },
     "weapons": [
       {
-        "name": "Eye of Anubis",
-        "bonusOrDC": "+6",
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+2",
         "damages": [
           {
-            "amount": "1d4",
-            "type": "Necrotic"
-          }
-        ]
-      },
-      {
-        "name": "Toll the Dead",
-        "bonusOrDC": "WIS DC14",
-        "damages": [
-          {
-            "amount": "1d8 / 1d12",
-            "type": "Necrotic"
+            "amount": "1",
+            "type": "Bludgeoning"
           }
         ]
       },
@@ -2942,7 +2959,7 @@
         "bonusOrDC": "+4",
         "damages": [
           {
-            "amount": "1d4+2",
+            "amount": "1d4",
             "type": "Piercing"
           }
         ]
@@ -2950,20 +2967,28 @@
     ],
     "attacksSpellcasting": "",
     "currency": {
-      "cp": "",
-      "sp": "",
-      "ep": "",
-      "gp": "215",
-      "pp": ""
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 215,
+      "pp": 0
     },
     "equipment": [
       {
-        "name": "Chain Shirt",
+        "name": "Backpack",
         "qty": 1
       },
       {
-        "name": "Dagger",
-        "qty": 2
+        "name": "Waterskin",
+        "qty": 1
+      },
+      {
+        "name": "Water (Pint)",
+        "qty": 4
+      },
+      {
+        "name": "Rations",
+        "qty": 7
       },
       {
         "name": "Shield",
@@ -2978,19 +3003,11 @@
         "qty": 1
       },
       {
-        "name": "Waterskin",
-        "qty": 1
-      },
-      {
-        "name": "Backpack",
-        "qty": 1
-      },
-      {
         "name": "Blanket",
         "qty": 1
       },
       {
-        "name": "Holy Water (flask)",
+        "name": "Holy Water",
         "qty": 1
       },
       {
@@ -3013,30 +3030,38 @@
     ],
     "featuresAndTraits": [
       {
-        "name": "Thaumaturge",
-        "description": "You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1)."
-      },
-      {
         "name": "Darkvision",
-        "description": "You have Darkvision with a range of 120 feet."
+        "description": "You have &Reference[rule=Darkvision] with a range of 120 feet."
       },
       {
         "name": "Dwarven Resilience",
-        "description": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition."
+        "description": "You have @variantrule[Resistance|XPHB] to Poison damage. You also have @variantrule[Advantage|XPHB] on saving throws you make to avoid or end the &Reference[condition=Poisoned] condition."
       },
       {
         "name": "Dwarven Toughness",
-        "description": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level."
+        "description": "Your @variantrule[Hit Points|XPHB|Hit Point] maximum increases by 1, and it increases by 1 again whenever you gain a level."
       },
       {
         "name": "Stonecunning",
-        "description": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.\n\nYou can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+        "description": "As a @variantrule[Bonus Action|XPHB], you gain &Reference[rule=Tremorsense] with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this &Reference[rule=Tremorsense]. The stone can be natural or worked. You can use this @variantrule[Bonus Action|XPHB] a number of times equal to your @variantrule[Proficiency|XPHB|Proficiency Bonus], and you regain all expended uses when you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Spellcasting",
+        "description": "You have learned to cast spells through prayer and meditation. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Cleric spells, which appear on the Cleric spell list later in the class's description. Cantrips. You know three cantrips of your choice from the Cleric spell list . @spell[Guidance|XPHB], @spell[Sacred Flame|XPHB], and @spell[Thaumaturgy|XPHB] are recommended. Whenever you gain a Cleric level, you can replace one of your cantrips with another cantrip of your choice from the Cleric spell list . When you reach Cleric levels 4 and 10, you learn another cantrip of your choice from the Cleric spell list , as shown in the Cantrips column of the Cleric Features table. Spell Slots. The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a @variantrule[Long Rest|XPHB]. Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Cleric spell list . @spell[Bless|XPHB], @spell[Cure Wounds|XPHB], @spell[Guiding Bolt|XPHB], and @spell[Shield of Faith|XPHB] are recommended. The number of spells on your list increases as you gain Cleric levels, as shown in the Prepared Spells column of the Cleric Features table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Cleric, your list of prepared spells can include six spells of levels 1 and 2 in any combination. If another Cleric feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Cleric spells for you. Changing Your Prepared Spells. Whenever you finish a @variantrule[Long Rest|XPHB], you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots. Spellcasting Ability. Wisdom is your spellcasting ability for your Cleric spells. Spellcasting Focus. You can use a @item[Holy Symbol|XPHB] as a @variantrule[Spellcasting Focus|XPHB] for your Cleric spells."
+      },
+      {
+        "name": "Divine Order",
+        "description": "You have dedicated yourself to one of the following sacred roles of your choice. @UUID[Actor.iSdEiFNpZM1razSx.Item.oqOpajE6r1DMxx0K]{Thaumaturge}"
+      },
+      {
+        "name": "Divine Order: Thaumaturge",
+        "description": "You know one extra cantrip from the Cleric spell list . In addition, your mystical connection to the divine gives you a bonus to your Intelligence (&Reference[skill=Arcana] or &Reference[skill=Religion]) checks. The bonus equals your Wisdom modifier (minimum of +1)."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "",
+    "additionalFeaturesTraits": "Magic Initiate; Cleric",
     "spellcasting": {
       "spellcastingClass": "Cleric",
       "spellcastingAbility": "WIS",
@@ -3044,25 +3069,25 @@
       "spellAttackBonus": "+6",
       "cantrips": [
         {
-          "name": "Guidance"
+          "name": "Toll the Dead"
         },
         {
-          "name": ""
-        },
-        {
-          "name": "Eye of Anubis"
-        },
-        {
-          "name": ""
+          "name": "Spare the Dying"
         },
         {
           "name": "Light"
         },
         {
-          "name": ""
+          "name": "Thaumaturgy"
         },
         {
-          "name": "Toll the Dead"
+          "name": "Eye of Anubis"
+        },
+        {
+          "name": "Guidance"
+        },
+        {
+          "name": ""
         },
         {
           "name": ""
@@ -3070,36 +3095,36 @@
       ],
       "levels": {
         "1": {
-          "slotsTotal": "2",
-          "slotsRemaining": "2",
+          "slotsTotal": 2,
+          "slotsRemaining": "",
           "spells": [
             {
               "name": "Bless",
               "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
-            },
-            {
-              "name": "Healing word",
+              "name": "Healing Word",
               "prepared": true
-            },
-            {
-              "name": "",
-              "prepared": false
             },
             {
               "name": "Cure Wounds",
               "prepared": true
             },
             {
+              "name": "Guiding Bolt",
+              "prepared": true
+            },
+            {
+              "name": "Detect Magic",
+              "prepared": true
+            },
+            {
               "name": "",
               "prepared": false
             },
             {
-              "name": "Guiding Bolt",
-              "prepared": true
+              "name": "",
+              "prepared": false
             },
             {
               "name": "",
@@ -3124,7 +3149,7 @@
           ]
         },
         "2": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3182,7 +3207,7 @@
           ]
         },
         "3": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3240,7 +3265,7 @@
           ]
         },
         "4": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3298,7 +3323,7 @@
           ]
         },
         "5": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3340,7 +3365,7 @@
           ]
         },
         "6": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3382,7 +3407,7 @@
           ]
         },
         "7": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3424,7 +3449,7 @@
           ]
         },
         "8": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3458,7 +3483,7 @@
           ]
         },
         "9": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3507,7 +3532,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-a00f13cd-6de3-4713-8c10-35c3b4d5ef98",
+        "id": "classlevel-ca6cc70c-1d9a-4535-9255-3c7fa989cae1",
         "className": "Monk",
         "subclassName": "Warrior of the Elements",
         "level": 1
@@ -3548,14 +3573,14 @@
     ],
     "activeImageId": "img-b94f2ba3-9d4d-4f2b-b10c-4b28dc93fae1",
     "combat": {
-      "ac": "16",
-      "speed": "30",
+      "ac": "",
+      "speed": "30 ft",
       "hitDice": "1d8",
-      "inspiration": true,
-      "xp": "",
+      "inspiration": false,
+      "xp": 0,
       "hp": {
-        "max": "12",
-        "current": "12",
+        "current": 12,
+        "max": "",
         "temp": ""
       },
       "deathSaves": {
@@ -3647,11 +3672,31 @@
     },
     "weapons": [
       {
-        "name": "Martial Art Attack",
+        "name": "Unarmed Strike",
         "bonusOrDC": "+6",
         "damages": [
           {
-            "amount": "1d6+4",
+            "amount": "1d6",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Cestus",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "1d6",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Quarterstaff",
+        "bonusOrDC": "+4",
+        "damages": [
+          {
+            "amount": "1d6",
             "type": "Bludgeoning"
           }
         ]
@@ -3659,40 +3704,71 @@
     ],
     "attacksSpellcasting": "",
     "currency": {
-      "cp": "",
-      "sp": "1",
-      "ep": "",
-      "gp": "82",
-      "pp": ""
+      "cp": 0,
+      "sp": 1,
+      "ep": 0,
+      "gp": 82,
+      "pp": 0
     },
     "equipment": [
-      {
-        "name": "Backpack",
-        "qty": 1
-      },
-      {
-        "name": "Rations (1 day)",
-        "qty": 7
-      },
       {
         "name": "Waterskin",
         "qty": 1
       },
       {
-        "name": "Quarterstaff",
+        "name": "Water (Pint)",
+        "qty": 4
+      },
+      {
+        "name": "Backpack",
         "qty": 1
       },
       {
-        "name": "Cestus",
-        "qty": 2
+        "name": "Rations",
+        "qty": 7
       }
     ],
-    "proficienciesLanguages": [],
-    "featuresAndTraits": [],
+    "proficienciesLanguages": [
+      "Common"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Resourceful",
+        "description": "You gain @variantrule[Heroic Inspiration|XPHB] whenever you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Skillful",
+        "description": "You gain proficiency in one skill of your choice."
+      },
+      {
+        "name": "Versatile",
+        "description": "You gain an Origin feat of your choice."
+      },
+      {
+        "name": "Martial Arts",
+        "description": "Your practice of martial arts gives you mastery of combat styles that use your @variantrule[Unarmed Strike|XPHB] and Monk weapons, which are the following: Simple Melee Weapons Martial Melee Weapons that have the Light property You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a @item[Shield|XPHB]. @UUID[Actor.oH25QCW81QZsc4xt.Item.ADSfGJOjNoOoDcCo]{Bonus Unarmed Strike} @UUID[Actor.oH25QCW81QZsc4xt.Item.didCcvDvRImwhcDD]{Martial Arts Die} @UUID[Actor.oH25QCW81QZsc4xt.Item.ssWSQH5Zk9gFcuma]{Dexterous Attacks}"
+      },
+      {
+        "name": "Bonus Unarmed Strike",
+        "description": "You can make an @variantrule[Unarmed Strike|XPHB] as a @variantrule[Bonus Action|XPHB]."
+      },
+      {
+        "name": "Martial Arts Die",
+        "description": "You can roll [[/damage 1d6]] in place of the normal damage of your @variantrule[Unarmed Strike|XPHB] or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table."
+      },
+      {
+        "name": "Dexterous Attacks",
+        "description": "You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your @variantrule[Unarmed Strike|XPHB], you can use your Dexterity modifier instead of your Strength modifier to determine the save DC."
+      },
+      {
+        "name": "Unarmored Defense",
+        "description": "While you aren't wearing armor or wielding a @item[Shield|XPHB], your base @variantrule[Armor Class|XPHB] equals 10 plus your Dexterity and Wisdom modifiers."
+      }
+    ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "",
+    "additionalFeaturesTraits": "Tough; Savage Attacker",
     "spellcasting": {
       "spellcastingClass": "",
       "spellcastingAbility": "",
@@ -3726,7 +3802,7 @@
       ],
       "levels": {
         "1": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3780,7 +3856,7 @@
           ]
         },
         "2": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3838,7 +3914,7 @@
           ]
         },
         "3": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3896,7 +3972,7 @@
           ]
         },
         "4": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3954,7 +4030,7 @@
           ]
         },
         "5": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -3996,7 +4072,7 @@
           ]
         },
         "6": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4038,7 +4114,7 @@
           ]
         },
         "7": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4080,7 +4156,7 @@
           ]
         },
         "8": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4114,7 +4190,7 @@
           ]
         },
         "9": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4163,7 +4239,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-3df4f120-6d02-474b-abc7-502fb65707cf",
+        "id": "classlevel-e76d2473-1da6-4167-b288-ffd0e9da5b45",
         "className": "Paladin",
         "subclassName": "Oath of Devotion",
         "level": 1
@@ -4204,14 +4280,14 @@
     ],
     "activeImageId": "img-d07b01c2-966e-4093-800e-2612aa7b0d00",
     "combat": {
-      "ac": "16",
-      "speed": "30",
+      "ac": "",
+      "speed": "30 ft",
       "hitDice": "1d10",
-      "inspiration": true,
-      "xp": "",
+      "inspiration": false,
+      "xp": 0,
       "hp": {
-        "max": "15",
-        "current": "15",
+        "current": 15,
+        "max": "",
         "temp": ""
       },
       "deathSaves": {
@@ -4303,11 +4379,21 @@
     },
     "weapons": [
       {
-        "name": "Longsword",
-        "bonusOrDC": "+5",
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+6",
         "damages": [
           {
-            "amount": "1d10/1d8+3",
+            "amount": "@mod",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Longsword",
+        "bonusOrDC": "+6",
+        "damages": [
+          {
+            "amount": "1d8",
             "type": "Slashing"
           }
         ]
@@ -4315,19 +4401,15 @@
     ],
     "attacksSpellcasting": "",
     "currency": {
-      "cp": "",
-      "sp": "3",
-      "ep": "",
-      "gp": "169",
-      "pp": ""
+      "cp": 0,
+      "sp": 3,
+      "ep": 0,
+      "gp": 169,
+      "pp": 0
     },
     "equipment": [
       {
-        "name": "Longsword",
-        "qty": 1
-      },
-      {
-        "name": "Chain Mail",
+        "name": "Backpack",
         "qty": 1
       },
       {
@@ -4335,36 +4417,56 @@
         "qty": 1
       },
       {
-        "name": "Backpack",
-        "qty": 1
+        "name": "Water (Pint)",
+        "qty": 4
       },
       {
-        "name": "Rations (1 day)",
+        "name": "Rations",
         "qty": 7
+      },
+      {
+        "name": "Chain Mail",
+        "qty": 1
       }
     ],
     "proficienciesLanguages": [
-      "Forgery Kit"
+      "Common"
     ],
     "featuresAndTraits": [
       {
-        "name": "Lay on Hands",
-        "description": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.\n\nAs a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.\n\nYou can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature."
+        "name": "Resourceful",
+        "description": "You gain @variantrule[Heroic Inspiration|XPHB] whenever you finish a @variantrule[Long Rest|XPHB]."
       },
       {
-        "name": "Lucky",
-        "description": "You gain the following benefits.\n\nLuck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.\n\nAdvantage. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.\n\nDisadvantage. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll."
+        "name": "Skillful",
+        "description": "You gain proficiency in one skill of your choice."
+      },
+      {
+        "name": "Versatile",
+        "description": "You gain an Origin feat of your choice."
+      },
+      {
+        "name": "Lay on Hands",
+        "description": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a @variantrule[Long Rest|XPHB]. With that pool, you can restore a total number of @variantrule[Hit Points|XPHB] equal to five times your Paladin level. As a @variantrule[Bonus Action|XPHB], you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of @variantrule[Hit Points|XPHB] to that creature, up to the maximum amount remaining in the pool. You can also expend 5 @variantrule[Hit Points|XPHB] from the pool of healing power to remove the &Reference[condition=Poisoned] condition from the creature; those points don't also restore @variantrule[Hit Points|XPHB] to the creature."
+      },
+      {
+        "name": "Spellcasting",
+        "description": "You have learned to cast spells through prayer and meditation. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Paladin spells, which appear in the Paladin spell list later in the class's description. Spell Slots. The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a @variantrule[Long Rest|XPHB]. Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Paladin spells . @spell[Heroism|XPHB] and @spell[Searing Smite|XPHB] are recommended. The number of spells on your list increases as you gain Paladin levels, as shown in the Prepared Spells column of the Paladin Features table. Whenever that number increases, choose additional Paladin spells until the number of spells on your list matches the number in the Paladin Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Paladin, your list of prepared spells can include six Paladin spells of level 1 or 2 in any combination. If another Paladin feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Paladin spells for you. Changing Your Prepared Spells. Whenever you finish a @variantrule[Long Rest|XPHB], you can replace one spell on your list with another Paladin spell for which you have spell slots. Spellcasting Ability. Charisma is your spellcasting ability for your Paladin spells. Spellcasting Focus. You can use a @item[Holy Symbol|XPHB] as a @variantrule[Spellcasting Focus|XPHB] for your Paladin spells."
+      },
+      {
+        "name": "Weapon Mastery",
+        "description": "Your training with weapons allows you to use the @variantrule[weapon mastery properties|XPHB|mastery properties] of two kinds of weapons of your choice with which you have proficiency, such as @item[Longsword|XPHB|Longswords] and @item[Javelin|XPHB|Javelins]. Whenever you finish a @variantrule[Long Rest|XPHB], you can change the kinds of weapons you chose. For example, you could switch to using the @variantrule[weapon mastery properties|XPHB|mastery properties] of @item[Halberd|XPHB|Halberds] and @item[Flail|XPHB|Flails]."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "",
+    "additionalFeaturesTraits": "Lucky",
     "spellcasting": {
       "spellcastingClass": "Paladin",
       "spellcastingAbility": "CHA",
-      "spellSaveDC": "14",
-      "spellAttackBonus": "+6",
+      "spellSaveDC": "13",
+      "spellAttackBonus": "+5",
       "cantrips": [
         {
           "name": ""
@@ -4393,16 +4495,12 @@
       ],
       "levels": {
         "1": {
-          "slotsTotal": "2",
-          "slotsRemaining": "2",
+          "slotsTotal": 2,
+          "slotsRemaining": "",
           "spells": [
             {
               "name": "Divine Favor",
               "prepared": true
-            },
-            {
-              "name": "",
-              "prepared": false
             },
             {
               "name": "Divine Smite",
@@ -4443,11 +4541,15 @@
             {
               "name": "",
               "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
             }
           ]
         },
         "2": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4505,7 +4607,7 @@
           ]
         },
         "3": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4563,7 +4665,7 @@
           ]
         },
         "4": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4621,7 +4723,7 @@
           ]
         },
         "5": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4663,7 +4765,7 @@
           ]
         },
         "6": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4705,7 +4807,7 @@
           ]
         },
         "7": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4747,7 +4849,7 @@
           ]
         },
         "8": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4781,7 +4883,7 @@
           ]
         },
         "9": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -4830,7 +4932,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-378cc204-bd2c-41f7-ab64-67593349a786",
+        "id": "classlevel-b502ca10-54ae-4c9c-b9fb-484117980269",
         "className": "Druid",
         "subclassName": "Circle of the Moon",
         "level": 1
@@ -4871,14 +4973,14 @@
     ],
     "activeImageId": "img-a28f333b-a0f3-42d7-abb8-c1c054d97663",
     "combat": {
-      "ac": "15",
-      "speed": "25",
+      "ac": "",
+      "speed": "25 ft",
       "hitDice": "1d8",
       "inspiration": false,
-      "xp": "",
+      "xp": 0,
       "hp": {
-        "max": "11",
-        "current": "11",
+        "current": 11,
+        "max": "",
         "temp": ""
       },
       "deathSaves": {
@@ -4970,41 +5072,21 @@
     },
     "weapons": [
       {
-        "name": "Produce Flame",
-        "bonusOrDC": "+6",
-        "damages": [
-          {
-            "amount": "1d8",
-            "type": "Fire"
-          }
-        ]
-      },
-      {
-        "name": "Primal Savagery",
-        "bonusOrDC": "+6",
-        "damages": [
-          {
-            "amount": "1d10",
-            "type": "Acid"
-          }
-        ]
-      },
-      {
-        "name": "Frostbite",
-        "bonusOrDC": "14",
-        "damages": [
-          {
-            "amount": "1d6",
-            "type": "Cold"
-          }
-        ]
-      },
-      {
-        "name": " Wooden Staff",
+        "name": "Unarmed Strike",
         "bonusOrDC": "+2",
         "damages": [
           {
-            "amount": "1d6/1d8",
+            "amount": "1",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Wooden staff",
+        "bonusOrDC": "+2",
+        "damages": [
+          {
+            "amount": "1d6",
             "type": "Bludgeoning"
           }
         ]
@@ -5012,43 +5094,46 @@
     ],
     "attacksSpellcasting": "",
     "currency": {
-      "cp": "",
-      "sp": "3",
-      "ep": "",
-      "gp": "79",
-      "pp": ""
+      "cp": 0,
+      "sp": 3,
+      "ep": 0,
+      "gp": 79,
+      "pp": 0
     },
     "equipment": [
-      {
-        "name": "Waterskin",
-        "qty": 1
-      },
-      {
-        "name": "Rations (1 day)",
-        "qty": 7
-      },
       {
         "name": "Backpack",
         "qty": 1
       },
       {
-        "name": "Studded Leather",
+        "name": "Waterskin",
         "qty": 1
       },
       {
-        "name": "Wooden Staff",
+        "name": "Water (Pint)",
+        "qty": 4
+      },
+      {
+        "name": "Rations",
+        "qty": 7
+      },
+      {
+        "name": "Studded Leather Armor",
         "qty": 1
       }
     ],
-    "proficienciesLanguages": [],
+    "proficienciesLanguages": [
+      "Common",
+      "druidic"
+    ],
     "featuresAndTraits": [
       {
-        "name": "Magician",
-        "description": "You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1)."
+        "name": "Age",
+        "description": "Mousefolk mature in their teens and live around 80 years."
       },
       {
-        "name": "Druidic",
-        "description": "You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.\n\nYou can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic."
+        "name": "Alignment",
+        "description": "Most mousefolk are neutral good. They tend to be kind-hearted and have deeply rooted values."
       },
       {
         "name": "Darkvision",
@@ -5056,11 +5141,11 @@
       },
       {
         "name": "Lightfooted",
-        "description": "You have proficiency in the Stealth skill."
+        "description": "You have proficiency in the &Reference[skill=Stealth] skill."
       },
       {
         "name": "Scurry",
-        "description": "You can move through the space of any hostile creature as if it were difficult terrain."
+        "description": "You can move through the space of any hostile creature as if it were &Reference[rule=difficultterrain]{difficult terrain}."
       },
       {
         "name": "Squeeze",
@@ -5068,17 +5153,33 @@
       },
       {
         "name": "Brave",
-        "description": "You have advantage on saving throws you make against being frightened"
+        "description": "You have advantage on saving throws you make against being &Reference[condition=frightened]"
       },
       {
         "name": "Nimble Escape",
         "description": "When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can't use this trait when wearing medium or heavy armor."
+      },
+      {
+        "name": "Druidic",
+        "description": "You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the @spell[Speak with Animals|XPHB] spell prepared. You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful [[/save ability=int dc=15]] (&Reference[skill=Investigation]) check but can't decipher it without magic."
+      },
+      {
+        "name": "Primal Order",
+        "description": "You have dedicated yourself to one of the following sacred roles of your choice. @UUID[Actor.kZQXSC1npbaWpZrQ.Item.eKz4XxgM5S9gTDQX]{Magician}"
+      },
+      {
+        "name": "Primal Order: Magician",
+        "description": "You know one extra cantrip from the Druid spell list . In addition, your mystical connection to nature gives you a bonus to your Intelligence (&Reference[skill=Arcana] or &Reference[skill=Nature]) checks. The bonus equals your Wisdom modifier (minimum bonus of +1)."
+      },
+      {
+        "name": "Spellcasting",
+        "description": "You have learned to cast spells through studying the mystical forces of nature. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Druid spells, which appear on the Druid spell list later in the class's description. Cantrips. You know two cantrips of your choice from the Druid spell list . @spell[Druidcraft|XPHB] and @spell[Produce Flame|XPHB] are recommended. Whenever you gain a Druid level, you can replace one of your cantrips with another cantrip of your choice from the Druid spell list . When you reach Druid levels 4 and 10, you learn another cantrip of your choice from the Druid spell list , as shown in the Cantrips column of the Druid Features table. Spell Slots. The Druid Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a @variantrule[Long Rest|XPHB]. Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Druid spell list . @spell[Animal Friendship|XPHB], @spell[Cure Wounds|XPHB], @spell[Faerie Fire|XPHB], and @spell[Thunderwave|XPHB] are recommended. The number of spells on your list increases as you gain Druid levels, as shown in the Prepared Spells column of the Druid Features table. Whenever that number increases, choose additional spells from the Druid spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Druid, your list of prepared spells can include six spells of levels 1 and 2 in any combination. If another Druid feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Druid spells for you. Changing Your Prepared Spells. Whenever you finish a @variantrule[Long Rest|XPHB], you can change your list of prepared spells, replacing any of the spells with other Druid spells for which you have spell slots. Spellcasting Ability. Wisdom is your spellcasting ability for your Druid spells. Spellcasting Focus. You can use a @item[Druidic Focus|XPHB] as a @variantrule[Spellcasting Focus|XPHB] for your Druid spells."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "",
+    "additionalFeaturesTraits": "Magic Initiate; Druid",
     "spellcasting": {
       "spellcastingClass": "Druid",
       "spellcastingAbility": "WIS",
@@ -5086,19 +5187,19 @@
       "spellAttackBonus": "+6",
       "cantrips": [
         {
+          "name": "Frostbite"
+        },
+        {
+          "name": "Primal Savagery"
+        },
+        {
           "name": "Druidcraft"
         },
         {
-          "name": " Guidance"
+          "name": "Guidance"
         },
         {
           "name": "Produce Flame"
-        },
-        {
-          "name": "Primal Savagery (Magic Initiate)"
-        },
-        {
-          "name": "Frostbite (Magic Initiate)"
         },
         {
           "name": ""
@@ -5112,19 +5213,15 @@
       ],
       "levels": {
         "1": {
-          "slotsTotal": "2",
-          "slotsRemaining": "2",
+          "slotsTotal": 2,
+          "slotsRemaining": "",
           "spells": [
             {
-              "name": "Thorn Armor",
+              "name": "Icicle Javelin",
               "prepared": true
             },
             {
-              "name": " Cure Wounds",
-              "prepared": true
-            },
-            {
-              "name": "Fog Cloud",
+              "name": "Speak with Animals",
               "prepared": true
             },
             {
@@ -5132,12 +5229,16 @@
               "prepared": true
             },
             {
-              "name": "Icicle Javelin",
+              "name": "Cure Wounds",
               "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Fog Cloud",
+              "prepared": true
+            },
+            {
+              "name": "Thorn Armor",
+              "prepared": true
             },
             {
               "name": "",
@@ -5166,7 +5267,7 @@
           ]
         },
         "2": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -5224,7 +5325,7 @@
           ]
         },
         "3": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -5282,7 +5383,7 @@
           ]
         },
         "4": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -5340,7 +5441,7 @@
           ]
         },
         "5": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -5382,7 +5483,7 @@
           ]
         },
         "6": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -5424,7 +5525,7 @@
           ]
         },
         "7": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -5466,7 +5567,7 @@
           ]
         },
         "8": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {
@@ -5500,7 +5601,7 @@
           ]
         },
         "9": {
-          "slotsTotal": "",
+          "slotsTotal": 0,
           "slotsRemaining": "",
           "spells": [
             {

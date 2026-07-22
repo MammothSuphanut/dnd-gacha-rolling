@@ -2299,8 +2299,39 @@ function CharacterFormModal({
 
                 {/* Equipment & Proficiencies/Languages side by side */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Equipment */}
-                  <div className="space-y-3">
+                  {/* Weapons & Equipment */}
+                  <div className="space-y-5">
+                    {/* Weapons */}
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                        ⚔️ อาวุธ (Weapons)
+                      </h3>
+                      {form.weapons.length === 0 ? (
+                        <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-6 text-center text-xs text-stone-400">
+                          ไม่มีอาวุธ
+                        </div>
+                      ) : (
+                        <div className="rounded-xl border border-stone-200 bg-white p-3.5 shadow-sm">
+                          <ul className="divide-y divide-stone-100">
+                            {form.weapons.map((w, index) => (
+                              <li key={index} className="py-2 text-sm text-stone-700 flex items-center gap-2">
+                                <span className="text-stone-400 text-xs">⚔️</span>
+                                <span>{w.name || '(ไม่มีชื่อ)'}</span>
+                                {w.damages?.[0]?.amount && (
+                                  <span className="ml-auto shrink-0 rounded bg-stone-100 px-1.5 py-0.5 text-[10px] font-semibold text-stone-500 font-mono">
+                                    {w.damages[0].amount}
+                                    {w.damages[0].type ? ` ${w.damages[0].type}` : ''}
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Equipment */}
+                    <div className="space-y-3">
                     <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
                       🎒 อุปกรณ์ (Equipment)
                     </h3>
@@ -2333,6 +2364,7 @@ function CharacterFormModal({
                         </ul>
                       </div>
                     )}
+                    </div>
                   </div>
 
                   {/* Proficiencies & Languages */}
