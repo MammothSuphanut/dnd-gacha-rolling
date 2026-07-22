@@ -87,6 +87,13 @@ export default function RollPage({
     })
   }
 
+  function toggleAllStatKeys(statKeys) {
+    setPickedStatKeys((prev) => {
+      const allSelected = statKeys.length > 0 && statKeys.every((key) => prev.has(key))
+      return allSelected ? new Set() : new Set(statKeys)
+    })
+  }
+
   const pickCount = Object.keys(pickedItems).length + pickedStatKeys.size
 
   function finalStatScore(statKey) {
@@ -798,6 +805,7 @@ export default function RollPage({
             pickMode={pickMode}
             pickedStatKeys={pickedStatKeys}
             onToggleStatKey={toggleStatKey}
+            onToggleAllStatKeys={toggleAllStatKeys}
           />
         </div>
       )}
