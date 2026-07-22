@@ -5,7 +5,7 @@
 
 หลักฐานปลอมที่ลัทธิวางไว้ชี้ทางไปยัง Xhorhas อยู่เรื่อยๆ แต่ **Fragment of Wisdom กลับชี้สวนทาง** ไปยังเมืองเหมือง Druvenlode ทุกครั้ง — ในที่สุดเบาะแสทั้งสองทางก็มาบรรจบที่ **Ruins of Shattengrod** ซากปรักหักพังใกล้ Druvenlode ที่ลัทธิใช้เป็นรังซ่อนตัวจริง นำโดย **Prelate Iskavel Thorn** ผู้ถือครอง **Fragment of Void**
 
-*(DM only: เส้นทางที่ Fragment of Wisdom ชี้นำมาตลอด Act นี้ไม่ใช่เรื่องบังเอิญ — ดู [เฉลยตัวร้ายแท้จริง](../RESTRUCTURE-PROPOSAL-wildemount-only.md) ปมนี้ยังไม่เฉลยให้ผู้เล่นรู้จนกว่าจะถึง Act 5)*
+*(DM only: เส้นทางที่ Fragment of Wisdom ชี้นำมาตลอด Act นี้ไม่ใช่เรื่องบังเอิญ — ดู [เฉลยตัวร้ายแท้จริง — Vaelkor Thess](../00-overview.md) ปมนี้ยังไม่เฉลยให้ผู้เล่นรู้จนกว่าจะถึง Act 5)*
 
 ## Level Checkpoint
 | ช่วง | Level |

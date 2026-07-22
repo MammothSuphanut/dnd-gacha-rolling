@@ -35,4 +35,4 @@
 - **Kryn Dynasty / Xhorhas** — ใช้ Luxon beacon รีเบิร์นสมาชิกที่ได้ Consecution ([wiki](https://criticalrole.fandom.com/wiki/Kryn_Dynasty))
 - **Wildemount** — ทวีปเดียวที่ทั้งแคมเปญเกิดขึ้น (Act 2–5) ครอบคลุมทั้ง Dwendalian Empire และ Xhorhas ([wiki](https://criticalrole.fandom.com/wiki/Wildemount))
 
-> เนื้อหาเก่าที่อ้างอิง Tal'Dorei / Issylra / Marquet ถูกเก็บไว้ที่ [_archive/](./_archive/) ไม่ใช่เนื้อเรื่องหลักอีกต่อไป (ดู [RESTRUCTURE-PROPOSAL-wildemount-only.md](./RESTRUCTURE-PROPOSAL-wildemount-only.md))
+> เนื้อหาเก่าที่อ้างอิง Tal'Dorei / Issylra / Marquet ถูกเก็บไว้ที่ [_archive/](./_archive/) ไม่ใช่เนื้อเรื่องหลักอีกต่อไป

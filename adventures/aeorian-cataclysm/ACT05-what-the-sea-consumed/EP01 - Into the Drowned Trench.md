@@ -1,6 +1,6 @@
 # EP1: Into the Drowned Trench
 
-*Level 14 · ~1 session (3–4 ชม.) · Act 5, Chapter 1 (Diver's Grave), EP1 — ต่อจาก Act 4 EP5: The Ruins of Sepesca*
+*Level 14 · ~1 session (3–4 ชม.) · Act 5, Chapter 1 (Diver's Grave), EP1 — ต่อจาก Act 4 EP6: The Ruins of Sepesca*
 
 ## NPC ประจำ EP
 | ชื่อ | บทบาท | หมายเหตุ |

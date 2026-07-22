@@ -10,7 +10,7 @@
 |---|---|
 | เบาะแสจาก Ghor Veles → เดินทางสู่ Ruins of Draconia | 10 |
 | Ruins of Draconia (พบ Fragment of Genesis, ถูกชิงหนี) | 10 → 12 |
-| ไล่ล่าข้ามทวีปสู่ Menagerie Coast | 12 → 13 |
+| ไล่ล่าข้ามทวีปสู่ Menagerie Coast (กินเวลา 2 EP เต็ม) | 12 → 13 |
 | Ruins of Sepesca (ปะทะสายลับ, ได้ Fragment of Genesis, ปิด Act 4) | 13 → 14 |
 
 ## สารบัญ Chapter → EP
@@ -19,8 +19,9 @@
   - [EP2 — The Vault of Eternal Life](<./EP02 - The Vault of Eternal Life.md>)
   - [EP3 — The Thief in Silver](<./EP03 - The Thief in Silver.md>)
 - [Chapter 2: ไล่ล่าสู่ Ruins of Sepesca](./CH02-chase-to-sepesca.md) `Level 12 → 14`
-  - [EP4 — Race Across the Continent](<./EP04 - Race Across the Continent.md>)
-  - [EP5 — The Ruins of Sepesca](<./EP05 - The Ruins of Sepesca.md>)
+  - [EP4 — The Long Road West](<./EP04 - The Long Road West.md>)
+  - [EP5 — Race Across the Continent](<./EP05 - Race Across the Continent.md>)
+  - [EP6 — The Ruins of Sepesca](<./EP06 - The Ruins of Sepesca.md>)
 
 ---
 [← Act 3](../ACT03-crossroads-to-xhorhas/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 5 →](../ACT05-what-the-sea-consumed/00-act-outline.md)

@@ -209,7 +209,7 @@ Dragonborn ร่างใหญ่สามคนที่ทำงานเฝ
 
 ### Treasure
 
-- **500 GP** — ค่าตอบแทนจาก Hank
+- **150 GP** — ค่าตอบแทนจาก Hank
 
 ## Character Advancement
 

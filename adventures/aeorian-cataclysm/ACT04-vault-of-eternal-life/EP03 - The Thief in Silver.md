@@ -121,4 +121,4 @@ Fragment of Wisdom สั่นไหวอย่างรุนแรงผิ�
 
 > *Marrow ยืนอยู่ที่ทางเข้าค่าย โบกมือให้ตัวละครเป็นครั้งสุดท้ายก่อนคณะจะลับหายไปในความมืด*
 
-รถม้าของ Rennick หายลับไปในเงามืดของหุบเขา มุ่งหน้าสู่ Menagerie Coast — ต่อใน **[EP4: Race Across the Continent](<./EP04 - Race Across the Continent.md>)** (ดู [00-act-outline.md](./00-act-outline.md) และ [CH02-chase-to-sepesca.md](./CH02-chase-to-sepesca.md))
+รถม้าของ Rennick หายลับไปในเงามืดของหุบเขา มุ่งหน้าสู่ Menagerie Coast — ต่อใน **[EP4: The Long Road West](<./EP04 - The Long Road West.md>)** (ดู [00-act-outline.md](./00-act-outline.md) และ [CH02-chase-to-sepesca.md](./CH02-chase-to-sepesca.md))
