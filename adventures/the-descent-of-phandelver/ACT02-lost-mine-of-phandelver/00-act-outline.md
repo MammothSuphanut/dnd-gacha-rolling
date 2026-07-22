@@ -7,14 +7,14 @@
 | ช่วง | Level |
 |---|---|
 | ออกเดินทาง / พบร่องรอยการซุ่มโจมตี | 1 |
-| ช่วย Sildar จาก Cragmaw Hideout | 1-2 |
+| ช่วย Sildar จาก Cragmaw Hideout | 2 |
 | จัดการแก๊ง Redbrand ใต้ Tresendar Manor | 2-3 |
 | ตามเบาะแสรอบเมือง (Old Owl Well ฯลฯ) | 3 |
 | ช่วย Gundren จาก Cragmaw Castle | 3-4 |
 | จบ Wave Echo Cave (ปะทะ Nezznar) | 5 |
 
 ## สารบัญ Chapter → EP
-- [Chapter 1: ทางเปลี่ยวสู่ Phandalin](./CH01-a-dangerous-journey.md) `Level 1` — EP1-EP2
+- [Chapter 1: ทางเปลี่ยวสู่ Phandalin](./CH01-a-dangerous-journey.md) `Level 1-2` — EP1-EP2
 - [Chapter 2: เมืองใต้เงา Redbrand](./CH02-trouble-in-phandalin.md) `Level 2-3` — EP3-EP4
 - [Chapter 3: เส้นใยแมงมุม](./CH03-the-spiders-web.md) `Level 3-4` — EP5-EP6
 - [Chapter 4: เหมืองแห่งเสียงสะท้อน](./CH04-wave-echo-cave.md) `Level 4-5` — EP7

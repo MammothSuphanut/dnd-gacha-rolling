@@ -1,6 +1,6 @@
 # EP2: Cave of the Cragmaws
 
-*Level 1-2 · ~1-2 session*
+*Level 2 · ~1-2 session*
 
 ## NPC ประจำ EP
 | ชื่อ | บทบาท | หมายเหตุ |
@@ -105,7 +105,7 @@ Sildar ขอบคุณกลุ่มอย่างจริงใจแล�
 - Sildar Hallwinter ได้รับการช่วยเหลือ กลายเป็นพันธมิตรถาวรที่เดินทางไปกับกลุ่ม (สัญญาจ่าย 50 gp เมื่อถึง Phandalin)
 - รู้จักชื่อ King Grol, Cragmaw Castle, "the Spider" และได้ยินคำใบ้ลึกลับเรื่อง "Ruxithid" เป็นครั้งแรก
 - ถ้าเก็บลังเสบียง Lionshield Coster กลับไปคืน จะได้รางวัลเพิ่มใน EP3
-- กลุ่มควรขึ้น **Level 2** แล้วหลังจบ EP นี้
+- กลุ่มยังคง **Level 2** ตลอด EP นี้ (ขึ้นมาแล้วตั้งแต่จบ EP1)
 - เดินทางต่อสู่เมือง Phandalin เปิดเรื่อง [EP3: Shadow Over Phandalin](<./EP03 - Shadow Over Phandalin.md>)
 
 ## หมายเหตุสำหรับ DM

@@ -52,7 +52,7 @@
 - กลุ่มยืนยันว่า Gundren และ Sildar ถูกก็อบลินเผ่า Cragmaw จับตัวไป ไม่ใช่แค่ถูกปล้น
 - (ถ้าจับก็อบลินสอบปากคำได้) รู้ชื่อ Klarg, King Grol, Cragmaw Castle และเริ่มได้ยินชื่อ "the Spider" เป็นครั้งแรก
 - มาถึงปากถ้ำ Cragmaw Hideout พร้อมบุกต่อใน EP2
-- Level checkpoint: กลุ่มยังคง Level 1 — จะขึ้น Level 2 หลังจบ EP2 (สำรวจ Cragmaw hideout จบ)
+- Level checkpoint: กลุ่มยังคง Level 1 ตลอด EP นี้ — จะขึ้น **Level 2 ทันทีหลังจบ EP นี้** (XP จากก็อบลิน x4 + bonus 100xp/คนที่ยกยอดมาจาก Act 1 ก็เพียงพอ หรือ DM จะใช้ milestone leveling ก็ได้)
 
 ## หมายเหตุสำหรับ DM
 - ถ้ากลุ่มไม่ตามรอยเข้าป่าและเลือกเดินทางต่อ Phandalin ทันที ให้ใช้ฉาก "Development" ด้านบนเพื่อดึงกลับมาเล่น EP นี้ทีหลังได้ ไม่กระทบเนื้อเรื่องหลัก
