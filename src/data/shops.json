@@ -1114,7 +1114,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "เกราะกลางทำจากแผ่นโลหะเรีย��������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
+        "note": "เกราะกลางทำจากแผ่นโลหะเรีย����������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
         "link": "https://5e.tools/items.html#banded%20plate_vss",
         "rarity": "Mundane"
       },
@@ -19274,7 +19274,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Grenade Launcher +1 มาตรฐาน ราคาประเมินอัตโนมัติจาก���ว���ม���า���า��� (ปร��บได้ต��มดุลยพินิจ)",
+        "note": "Uncommon — Grenade Launcher +1 มาตรฐาน ราคาประเมินอัตโนมัติจ���ก���ว���ม���า���า��� (ปร��บได้ต��มดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20grenade%20launcher_xdmg",
         "rarity": "Uncommon"
@@ -27026,7 +27026,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Very Rare — Machete +3 มาตร���าน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุ���ยพินิจ)",
+        "note": "Very Rare — Machete +3 ���าตร���าน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุ���ยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B3%20machete_xdmg",
         "rarity": "Very Rare"
@@ -53066,7 +53066,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหา��าก/คว���มสามารถของ���อเทม (ปรั��ได้ตามดุ��ยพินิจ)",
+        "note": "Uncommon — ราคาประเมินอัตโนมัติจาก��วามหา��าก/คว���มสามารถของ���อเทม (ปรั��ได้ตามดุ��ยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#monstrous%20hide_valdaspire24",
         "rarity": "Uncommon"
@@ -54902,7 +54902,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Legendary — ราคาประเมินอัตโ��มัติจา��ความหายาก/ควา���สามารถของ���อเทม (ปรับ��ด้ตามดุลย��ินิจ)",
+        "note": "Legendary — ราคาประเ��ินอัตโ��มัติจา��ความหายาก/ควา���สามารถของ���อเทม (ปรับ��ด้ตามดุลย��ินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#red%20dragon%20mask_rotos",
         "rarity": "Legendary"

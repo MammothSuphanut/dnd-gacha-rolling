@@ -562,9 +562,7 @@
     "campaignType": "Long Campaign",
     "party": "",
     "note": "19 EP รวมทั้งแคมเปญ (Act1: 1 EP | Act2: 7 EP | Act3: 11 EP) — เนื้อเรื่องเต็มพร้อมเล่น ยังไม่มีแมพ/ภาพประกอบแนบ",
-    "partyTagIds": [
-      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
-    ],
+    "partyTagIds": [],
     "campaignRole": "Playable"
   },
   {
@@ -1523,7 +1521,7 @@
     "source": "Wizards of the Coast",
     "name": "Keys from the Golden Vault",
     "status": "-",
-    "briefContent": "รวมบทผ���ญภัยสั้��� 13 เรื่องในธีม \"Heist\" หรือการทำภ���รกิจโจรกรร��� วางแผน ลอบ��ร้น และขโมย���ัตถุโบราณตามคำสั่งขององค์กรลับ",
+    "briefContent": "รวมบทผ���ญ���ัยสั้��� 13 เรื่องในธีม \"Heist\" หรือการทำภ���รกิจโจรกรร��� วางแผน ลอบ��ร้น และขโมย���ัตถุโบราณตามคำสั่งขององค์กรลับ",
     "level": "1 - 11",
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
@@ -1910,7 +1908,9 @@
     "level": "1-6",
     "continuesFrom": "",
     "campaignType": "Short Campaign",
-    "partyTagIds": [],
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
     "note": "มีเนื้อหา Wildemount: Frozen Sick อยู่ใน Campaign นี้แล้ว",
     "campaignRole": "Playable"
   }
