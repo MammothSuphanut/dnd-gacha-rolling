@@ -29,4 +29,4 @@
   - [EP7: Return to Rexxentrum](<./EP07 - Return to Rexxentrum.md>)
 
 ---
-[← Act 1](../ACT01-escape-to-palebank/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [Act 3 →](../ACT03-crossroads-to-xhorhas/00-act-outline.md)
+[← Act 1](../ACT01-escape-to-palebank/00-act-outline.md) · [ภาพรวม](../00-overview.md) · [แมพที่ต้องมี](./00-maps.md) · [Act 3 →](../ACT03-crossroads-to-xhorhas/00-act-outline.md)

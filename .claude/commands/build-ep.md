@@ -11,6 +11,8 @@ argument-hint: [ชื่อหรือ slug adventure (ถ้ามี)]
 
 ก่อนเริ่มงานทุกครั้ง **ต้องอ่านไฟล์ [adventure-builder/journal-template.md](../../adventure-builder/journal-template.md) ทั้งไฟล์ก่อน** — มีทั้งกฎบังคับ, syntax legend, และตัวอย่างเต็มที่ต้องทำตามเป๊ะๆ ห้ามข้าม
 
+**อ่าน [adventure-builder/canon-reference.md](../../adventure-builder/canon-reference.md) ด้วย** — กติกาว่าเมื่อไหร่ต้องค้น Critical Role Wiki ก่อนแต่งรายละเอียดสถานที่/NPC/องค์กรที่ชื่อซ้ำหรือใกล้เคียงกับ canon
+
 ## ขั้นตอน
 
 1. **หา adventure เป้าหมาย**: ถ้ามี `$ARGUMENTS` ให้ค้นหาโฟลเดอร์ที่ตรง/ใกล้เคียงใน `adventures/` แล้วยืนยันกับผู้ใช้ 1 บรรทัด ถ้าไม่มีหรือหาไม่เจอ ให้ list โฟลเดอร์ทั้งหมดใน `adventures/` แล้วถามผู้ใช้ว่าจะทำเรื่องไหน (ใช้ AskUserQuestion ถ้าจำนวน ≤4 ไม่งั้นถามเป็นข้อความ)
