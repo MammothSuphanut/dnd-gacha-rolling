@@ -7,7 +7,7 @@
 | แมพ | ประเภท | สถานะ | หมายเหตุ |
 |---|---|---|---|
 | ร้าน Enchantress Mira Kell (ริมท่าเรือ Menagerie Coast) | View | ❌ ยังไม่ทำ | A1 — ร้านเล็กเต็มไปด้วยขวดยาและเครื่องราง ขายอุปกรณ์ดำน้ำเวทมนตร์ (โฮมบรูว์) |
-| ท่าเรือ Menagerie Coast (จุดขึ้นเรือ, พบ Grelka Tor) | View | ❌ ยังไม่ทำ | A1.5–A2 — โฮมบรูว์ |
+| ท่าเรือ Menagerie Coast (จุดขึ้นเรือ, พบ Grelka Tor) | View | ❌ ยังไม่ทำ | A1.5–A2 — โฮมบรูว์ — *หมายเหตุ: [Act 4 00-maps.md](../ACT04-vault-of-eternal-life/00-maps.md) EP5–EP6 ก็มีจุดชื่อ "Menagerie Coast" เหมือนกัน (หน้าผา/ป่าใกล้ Ruins of Sepesca) แต่เป็นคนละจุด/คนละ composition ในภูมิภาคเดียวกัน — **ไม่ใช้ภาพเดิมซ้ำ*** |
 | ดาดฟ้าเรือของ Captain Brask (กลางคืน, กองไฟลูกเรือ) | View | ❌ ยังไม่ทำ | A2.5 — โฮมบรูว์ (ปรากฏใน EP1, EP3) |
 | **Diver's Grave** (หุบเหวใต้สมุทร — dungeon เต็ม) | Battle | ❌ ยังไม่ทำ | อิงจาก [Critical Role Wiki: Diver's Grave](https://criticalrole.fandom.com/wiki/Diver%27s_Grave) — พื้นที่ทะเลใน Lucidian Ocean แถบ Swavain Islands นอกชายฝั่ง Menagerie Coast ก้นทะเลเป็นหุบเหวเต็มไปด้วยซากเรืออับปาง ผิวน้ำขึ้นชื่อเรื่องพายุรุนแรงผิดปกติ (canon: sea fury Dashilla เคยใช้พื้นที่นี้ทำพิธีเรียกพายุ — แคมเปญนี้ใช้เป็นจุดที่ Vaelkor Thess ใช้ทำพิธีลับมานานหลายศตวรรษแทน ไม่ขัดแย้งตรงๆ เพราะ canon ไม่ได้ระบุว่ามีแค่ Dashilla ที่เคยใช้พื้นที่นี้) — ก้อนใหญ่สุด หลายห้อง/โซนต่อกัน: ทางเข้าหุบเหวมีซากปรักหักพังโบราณฝังผนัง (S0) → ซากเรือของ Grelka Tor (S0.5) → จุดที่ Reef Guardian เฝ้า (S1, ~CR9) → กระแสน้ำวนกับดัก (S1.5) → ฝูง Giant Octopus x2 (S2, ~CR5-6 รวม) → ประตูปริศนาสามวงแหวน (S3) — คอมแบทหลักของ EP นี้: Reef Guardian x1 + Giant Octopus x2 (ปรากฏใน EP1–EP3) |
 

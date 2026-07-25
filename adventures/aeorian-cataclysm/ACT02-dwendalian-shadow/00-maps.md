@@ -13,7 +13,7 @@
 | แมพ | ประเภท | สถานะ | หมายเหตุ |
 |---|---|---|---|
 | **Uthodurn** | Region | ✅ ทำแล้ว | ต่อจาก EP1 (ปรากฏใน EP1–EP2) |
-| **Rexxentrum** | Region | ✅ ทำแล้ว | อิงจาก [Critical Role Wiki: Rexxentrum](https://criticalrole.fandom.com/wiki/Rexxentrum) (ปรากฏใน EP2–EP3, EP7) |
+| **Rexxentrum** | Region | ✅ ทำแล้ว | อิงจาก [Critical Role Wiki: Rexxentrum](https://criticalrole.fandom.com/wiki/Rexxentrum) (ปรากฏใน EP2–EP3, EP7) — **แมพนี้ถูกใช้ซ้ำใน [Act 3 00-maps.md](../ACT03-crossroads-to-xhorhas/00-maps.md) EP1** ด้วย (ต่อจากที่นี่ ถ้าอัปเดตสถานะภาพนี้ต้องอัปเดตฝั่ง Act3 พร้อมกัน) |
 | Guild Hall ที่ Grandcast Citadel | View | ✅ ทำแล้ว | A0 |
 | Relics & Rarities ร้านของ Otho Reams | View | ✅ ทำแล้ว | A1 |
 | ด่านตรวจชายแดนของ Ashvale | View | ✅ ทำแล้ว | A2 |

@@ -70,6 +70,15 @@ Random, Alley, Artificer's Workshop, Artist's Atelier, Bakery, Butcher's Shop, C
 
 **ไม่มี preset "Warehouse/Storage" ทั่วไปในโปรแกรม** ใกล้เคียงสุดคือ `Abandoned Ruins > Hovel` (แต่มาพร้อมดีเทลร้างมานาน) หรือ `Alchemists' Laboratory > Storage Room` (แต่มาพร้อมของแล็บปนด้วย) — ยังไม่เจอ preset ที่ตรง "โกดังธรรมดาที่มีคนใช้งานอยู่จริง" 100%
 
+### 🔵 ฉากกลางแจ้ง/ไม่มีผนัง — ยังต้องใช้ Draw Room preset เสมอ
+
+แม้ฉากจะเป็นกลางแจ้งไม่มีผนังจริงในเนื้อเรื่อง (เช่น ถนนบนเขา, ลานนอกอาคาร) **ก็ต้องระบุ Category > Preset ที่ใกล้เคียงที่สุดเสมอ ห้ามข้าม Draw Room ไปเฉยๆ** เพราะ preset ไม่ได้กำหนดแค่กำแพง แต่กำหนดพื้น/แสง/การจัดวางของอัตโนมัติที่ตรงธีมด้วย — ขั้นตอนที่แนะนำ (🔵 ยังไม่ได้ยืนยันด้วยมือทีละขั้นในโปรแกรมจริง):
+1. วาด Draw Room ตาม preset ที่ใกล้เคียงบรรยากาศที่สุดตามปกติ
+2. ใช้เครื่องมือ **Walls** (Change All Walls / Change Wall) เอากำแพงที่ AI ใส่มาให้ออก เพื่อให้ฉากอ่านเป็นพื้นที่เปิดโล่ง
+3. ถ้า Category ที่มีไม่ตรงภูมิประเทศเลย (เช่น ถนนบนเขาไม่มี preset ตรงในหมวดไหนเลย) ให้เลือก preset ที่ให้พื้น/แสงใกล้เคียงที่สุดแล้วพึ่ง Terrain + Structural/Natural Items ช่วยเสริมรายละเอียดแทน
+
+⚠️ *ยังไม่ได้ลองเองว่ากด "เอากำแพงออก" ได้จริงแบบไหนในโปรแกรม (ลบทีละผนังด้วย Change Wall เป็น "None"/invisible หรือมีปุ่มลบเฉพาะ) — ลองของจริงแล้วมาอัปเดตส่วนนี้*
+
 ---
 
 ## 🔵 Place Objects — หมวดหมู่ Prop (จากคู่มือ ยังไม่ได้ไล่เช็คทีละอันในโปรแกรม)
@@ -91,6 +100,30 @@ Favorite Items, New Items, Decorations, Statues, Paintings, Rugs, Hangings, Food
 Terrain ที่มีให้เลือก (🟢 ยืนยันจากของจริง): Dark Parchment, Badlands, Caves, Desert, Fey Plane, Forest, Grasslands, Jungle, Skeletal Plains, Snow, Green Screen Background
 
 Terrain คือพื้นดินรอบนอกเท่านั้น **ไม่ใช่ตัวกำหนดว่าฉากเป็นในร่มหรือกลางแจ้ง** — ในร่มมาจากผังห้องที่วาดเอง (มีหลังคา/กำแพง) ทับพื้น terrain อีกที terrain จึงแทบไม่โผล่ให้เห็นถ้าฉากเป็นภายในอาคารทั้งหมด เลือกอะไรก็ได้ที่ใกล้เคียงบรรยากาศรอบนอกสุด (เช่น Badlands สำหรับย่านสลัม/อุตสาหกรรม, Grasslands สำหรับตัวเลือกกลางๆ ไม่มีอะไรพิเศษ)
+
+### 🟢 Change Terrain Type — sub-options (ยืนยันจากของจริง)
+
+แต่ละ Terrain type ที่เลือกจะมีแผงตั้งค่าย่อยเพิ่ม 4 หมวด (แต่ละ terrain มีตัวเลือกในหมวดไม่เหมือนกัน): **Elevation, Vegetation, Water, Weather** — เท่าที่เจอ ไม่ใช่ทุก terrain จะมีครบทั้ง 4 หมวด และตัวเลือกในแต่ละหมวดต่างกันไปตาม terrain ที่เลือกไว้
+
+**Badlands** (🟢 ยืนยันครบจากภาพจริงในโปรแกรม):
+- **Elevation**: Flat, Hills, Mountains, Flooded Mountains, Ravine, Flooded Ravine, Grand Canyon, Floodplains, Mesa, Crater, Cave System
+- **Vegetation**: No Vegetation, Cacti, Dry Bushes
+- **Water**: No Water, Island, Lake, Lakeside, Lava Flow, Lava Lake, Oasis, River
+- **Weather**: No Weather, Snow
+
+**Caves** (🟢 ยืนยันครบจากภาพจริงในโปรแกรม — มีหมวดที่ 5 เพิ่มมาคือ **Lights** แทนที่ Weather จะอยู่ตำแหน่งเดิม):
+- **Elevation**: Solid Rock, Cave System, Labyrinth, Large Cavern, Ravine, Burrow, Tunnel, Ridge
+- **Vegetation**: Cave, Empty Cave, Crystal Cave, Glowing Mushroom Cave
+- **Water**: No Water, Island, Lake, Lakeside, River
+- **Weather**: No Weather, Snow
+- **Lights**: No Lights, Torches, Castle Lights, Crypt Lights, Desert Lights, Laboratory Lights, Mansion Lights, Village Lights
+
+Terrain type อื่นๆ ที่เหลือ (🔵 ยังไม่ได้เปิดดูของจริงทีละอัน — จากคำอธิบาย biome ทั่วไปในคู่มือ/รีวิว ใช้เป็นแนวทางกว้างๆ เท่านั้น):
+- **Forest / Grasslands** — มีระบบ Elevation (เช่น Mountains, Hills, Canyon), Vegetation (เช่น Broadleaf Forest, Evergreen Forest, Steppe), Water (เช่น River, Lake, Island) คล้ายกับ Badlands แต่ตัวเลือกในแต่ละหมวดต่างกัน — ยังไม่ยืนยัน list เต็ม
+- **Desert** — เน้นเนินทราย พืชพรรณเบาบาง มีโอเอซิสเป็นตัวเลือก water ได้
+- **Dark Parchment** — ออกแบบมาให้ไม่เน้น terrain ภายนอกเลย เหมาะกับฉาก indoor/dungeon floorplan ล้วนๆ ที่ไม่ต้องการพื้นหลังธรรมชาติแสดงผล — อาจไม่มี sub-option ให้ปรับเพราะจุดประสงค์คือ "เรียบที่สุด"
+
+⚠️ *ถ้าจะเลือก terrain อื่นนอกจาก Badlands/Caves และต้องการ sub-option ที่แม่นยำ ให้เปิดโปรแกรมเช็คของจริงก่อน (หรือขอ screenshot จากผู้ใช้) แล้วมาอัปเดตส่วนนี้ — อย่าเดา list เต็มจากข้อมูล 🔵 ด้านบน*
 
 **Room Placement** (🔵 จากคู่มือ) = "room placement height" — กำหนดว่าตึก/อาคารจะถูกวางสูงแค่ไหนบน terrain ที่มีความสูงต่างระดับ (เช่น เนินเขา/หน้าผา) ค่า default คือ **Water Level** (ระดับเดียวกับผิวน้ำ/พื้นราบ) ถ้าฉากเป็นพื้นราบธรรมดาแบบโกดัง Brack ปล่อย default ไว้ได้เลย ไม่กระทบอะไร
 
