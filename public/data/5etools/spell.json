@@ -65,6 +65,50 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "PHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "PHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -106,6 +150,26 @@
     "entries": [
       "Holding the rod used in the casting of the spell, you touch a Large or smaller chair that is unoccupied. The rod disappears, and the chair is transformed into a {@item spelljamming helm|AAG}."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -158,6 +222,42 @@
         ]
       }
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -227,6 +327,34 @@
       "MT",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -276,6 +404,26 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -335,6 +483,34 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -386,6 +562,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -458,6 +646,18 @@
       "MT",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -522,6 +722,26 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "PHB"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -609,6 +829,42 @@
     "miscTags": [
       "PRM"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -845,6 +1101,14 @@
       "PRM",
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -1891,6 +2155,30 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -1947,6 +2235,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2022,6 +2334,25 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2089,6 +2420,25 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2176,6 +2526,15 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2231,6 +2590,20 @@
       "S",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2283,6 +2656,20 @@
     "miscTags": [
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2349,6 +2736,20 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2411,6 +2812,25 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2520,6 +2940,25 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2567,6 +3006,15 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2620,6 +3068,20 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2682,6 +3144,25 @@
     "areaTags": [
       "L"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2728,6 +3209,20 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2842,6 +3337,25 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -2897,6 +3411,20 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -3000,6 +3528,20 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -3087,6 +3629,20 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -3144,6 +3700,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "FRHoF"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -3768,6 +4348,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -3824,6 +4416,18 @@
     "areaTags": [
       "N"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -3879,6 +4483,26 @@
     "miscTags": [
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -3939,6 +4563,26 @@
     "miscTags": [
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4009,6 +4653,18 @@
       "PIR",
       "PRM"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4073,6 +4729,14 @@
       "AAD",
       "LGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "PHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4138,6 +4802,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Druid",
+          "source": "PHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4195,6 +4879,40 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "PHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "SatO"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4239,6 +4957,40 @@
       "If you detect a portal in this way, you can use your action to study it. Make a {@dc 15} ability check using your spellcasting ability. On a successful check, you learn the destination plane of the portal and what portal key it requires, then the spell ends. On a failed check, you learn nothing and can't study that portal again using this spell until you cast it again.",
       "The spell can penetrate most barriers but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "PHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "SatO"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "SatO"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4283,6 +5035,42 @@
     "entries": [
       "You draw on knowledge from spirits of the past. Choose one skill in which you lack proficiency. For the spell's duration, you have proficiency in the chosen skill. The spell ends early if you cast it again."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "PHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4334,6 +5122,42 @@
     "damageInflict": [
       "force"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4379,6 +5203,34 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "PHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4432,6 +5284,34 @@
       "SGT",
       "TP"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4489,6 +5369,34 @@
     "miscTags": [
       "HL"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "PHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4641,6 +5549,48 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4792,6 +5742,48 @@
       "MT",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4867,6 +5859,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -4933,6 +5937,48 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -5135,6 +6181,48 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "PHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB",
+          "definedInSource": "SCAG"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -5193,6 +6281,18 @@
     "savingThrow": [
       "dexterity"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Artificer",
+          "source": "TCE"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "legacy",
@@ -11313,6 +12413,22 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11375,6 +12491,34 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11448,6 +12592,22 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11517,6 +12677,22 @@
       "piercing",
       "slashing"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11586,6 +12762,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11655,6 +12847,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11706,6 +12914,14 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11768,6 +12984,18 @@
       "SMN",
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11853,6 +13081,26 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11915,6 +13163,14 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -11969,6 +13225,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12053,6 +13321,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12102,6 +13386,18 @@
     "miscTags": [
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12152,6 +13448,22 @@
       "TP",
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12204,6 +13516,18 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12252,6 +13576,22 @@
     "miscTags": [
       "HL"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12322,6 +13662,14 @@
           "credit": "Tuan Duong Chu",
           "width": 1976,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
         }
       ]
     },
@@ -12397,6 +13745,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12458,6 +13814,22 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12538,6 +13910,22 @@
       "The spell doesn't account for circumstances, such as other spells, that might change the results.",
       "If you cast the spell more than once before finishing a {@variantrule Long Rest|XPHB}, there is a cumulative {@chance 25|||Random reading!|Regular reading} chance for each casting after the first that you get no answer."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12590,6 +13978,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12640,6 +14040,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12687,6 +14099,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12744,6 +14172,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12808,6 +14248,22 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12858,6 +14314,14 @@
     "miscTags": [
       "AAD"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12926,6 +14390,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -12975,6 +14463,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13026,6 +14526,14 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13072,6 +14580,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13126,6 +14646,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13199,6 +14739,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13327,6 +14883,22 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13384,6 +14956,14 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13425,6 +15005,26 @@
     "entries": [
       "Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts {@dice 1d4} from the attack roll."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13492,6 +15092,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13553,6 +15165,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13614,6 +15246,14 @@
     "miscTags": [
       "AAD"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13682,6 +15322,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13728,6 +15388,22 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13770,6 +15446,22 @@
     "entries": [
       "Your body becomes blurred. For the duration, any creature has {@variantrule Disadvantage|XPHB} on attack rolls against you. An attacker is immune to this effect if it perceives you with {@sense Blindsight|XPHB} or {@sense Truesight|XPHB}."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13834,6 +15526,18 @@
     "areaTags": [
       "N"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13903,6 +15607,14 @@
       "S",
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -13963,6 +15675,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14028,6 +15752,18 @@
       "MT",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14093,6 +15829,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14161,6 +15921,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14229,6 +16013,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14316,6 +16116,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14377,6 +16189,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14424,6 +16252,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14480,6 +16328,26 @@
     "miscTags": [
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14527,6 +16395,14 @@
     "miscTags": [
       "PRM"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14586,6 +16462,26 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14653,6 +16549,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14705,6 +16613,22 @@
     "areaTags": [
       "N"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14806,6 +16730,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14854,6 +16794,14 @@
       "Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.",
       "If you cast the spell more than once before finishing a {@variantrule Long Rest|XPHB}, there is a cumulative {@chance 25|||No answer!|Answer} chance for each casting after the first that you get no answer."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14911,6 +16859,18 @@
       },
       "For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -14962,6 +16922,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15011,6 +16979,26 @@
     "entries": [
       "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15069,6 +17057,14 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15144,6 +17140,22 @@
           "credit": "Randy Vargas",
           "width": 2226,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
         }
       ]
     },
@@ -15240,6 +17252,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15308,6 +17340,18 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15370,6 +17414,14 @@
     "areaTags": [
       "N"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15458,6 +17510,14 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15527,6 +17587,18 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15591,6 +17663,14 @@
       "SGT",
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15658,6 +17738,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15711,6 +17803,14 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15775,6 +17875,18 @@
       "SGT",
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15826,6 +17938,18 @@
     "savingThrow": [
       "intelligence"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15882,6 +18006,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15930,6 +18066,14 @@
       "The contingent spell takes effect immediately after the trigger occurs for the first time, whether or not you want it to, and then Contingency ends.",
       "The contingent spell takes effect only on you, even if it can normally target others. You can use only one Contingency spell at a time. If you cast this spell again, the effect of another Contingency spell on you ends. Also, Contingency ends on you if its material component is ever not on your person."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -15983,6 +18127,26 @@
       "LGT",
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16073,6 +18237,22 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16243,6 +18423,22 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16303,6 +18499,14 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16352,6 +18556,22 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16391,6 +18611,22 @@
     "entries": [
       "You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range—both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16470,6 +18706,18 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16532,6 +18780,22 @@
       "SMN",
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16616,6 +18880,22 @@
         ]
       }
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16675,6 +18955,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16725,6 +19025,14 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16781,6 +19089,34 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16834,6 +19170,26 @@
       "LGT",
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16887,6 +19243,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -16936,6 +19308,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17006,6 +19402,30 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17052,6 +19472,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17121,6 +19553,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17170,6 +19614,22 @@
       "PRM",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17221,6 +19681,14 @@
       "MT",
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17274,6 +19742,18 @@
       "fiend",
       "undead"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17327,6 +19807,46 @@
       "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the {@action Magic|XPHB} action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's {@book school of magic|XPHB|7|Schools of Magic}.",
       "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17376,6 +19896,26 @@
       "For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30 feet of yourself. You sense the kind of poison, creature, or contagion in each case.",
       "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17445,6 +19985,22 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17491,6 +20047,26 @@
     "miscTags": [
       "TP"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17544,6 +20120,26 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17608,6 +20204,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17699,6 +20307,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17757,6 +20377,46 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17816,6 +20476,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17863,6 +20531,22 @@
       "This spell puts you in contact with a god or a god's servants. You ask one question about a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply, which might be a short phrase or cryptic rhyme. The spell doesn't account for circumstances that might change the answer, such as the casting of other spells.",
       "If you cast the spell more than once before finishing a {@variantrule Long Rest|XPHB}, there is a cumulative {@chance 25|||Random reading!|Regular reading} chance for each casting after the first that you get no answer."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17911,6 +20595,14 @@
     "miscTags": [
       "AAD"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -17978,6 +20670,14 @@
           "credit": "Bryan Sola",
           "width": 2226,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
         }
       ]
     },
@@ -18060,6 +20760,14 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18130,6 +20838,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18197,6 +20921,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18267,6 +21011,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18334,6 +21094,22 @@
       "N",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18387,6 +21163,14 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18442,6 +21226,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18523,6 +21323,14 @@
           "credit": "Olga Drebas",
           "width": 1093,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
         }
       ]
     },
@@ -18608,6 +21416,22 @@
     "areaTags": [
       "R"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18669,6 +21493,14 @@
       "MT",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18729,6 +21561,26 @@
     "miscTags": [
       "AAD"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18810,6 +21662,26 @@
       "C",
       "Q"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18870,6 +21742,38 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -18944,6 +21848,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19012,6 +21940,14 @@
     "abilityCheck": [
       "strength"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19089,6 +22025,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19142,6 +22090,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19203,6 +22163,30 @@
       "PS",
       "SCT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19286,6 +22270,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19332,6 +22324,26 @@
     "miscTags": [
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19410,6 +22422,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19456,6 +22488,18 @@
       "PRM",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19513,6 +22557,22 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19567,6 +22627,22 @@
     "miscTags": [
       "THP"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19622,6 +22698,26 @@
     "areaTags": [
       "N"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19673,6 +22769,26 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19743,6 +22859,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19840,6 +22976,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19907,6 +23051,14 @@
       "PRM",
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19955,6 +23107,22 @@
       "You magically sense the most direct physical route to a location you name. You must be familiar with the location, and the spell fails if you name a destination on another plane of existence, a moving destination (such as a mobile fortress), or an unspecific destination (such as \"a green dragon's lair\").",
       "For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. Whenever you face a choice of paths along the way there, you know which path is the most direct."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -19998,6 +23166,22 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20052,6 +23236,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20128,6 +23328,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20184,6 +23400,22 @@
     "miscTags": [
       "LGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20236,6 +23468,22 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20321,6 +23569,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20389,6 +23649,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20448,6 +23720,14 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20518,6 +23798,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20579,6 +23875,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20641,6 +23953,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20703,6 +24035,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20771,6 +24123,14 @@
       "PIR",
       "PRM"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20830,6 +24190,22 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20879,6 +24255,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -20939,6 +24335,18 @@
       "LGT",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21002,6 +24410,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21057,6 +24489,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21122,6 +24574,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21195,6 +24663,26 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21265,6 +24753,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21315,6 +24827,22 @@
       "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become Undead.",
       "The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as {@spell Raise Dead|XPHB}."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21372,6 +24900,14 @@
     "miscTags": [
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21413,6 +24949,18 @@
     "entries": [
       "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21471,6 +25019,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21571,6 +25131,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21621,6 +25201,18 @@
     "miscTags": [
       "HL"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21691,6 +25283,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21751,6 +25355,22 @@
     "areaTags": [
       "Q"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21800,6 +25420,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21860,6 +25496,34 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -21926,6 +25590,14 @@
           "credit": "Rina Nordsol",
           "width": 2226,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
         }
       ]
     },
@@ -22023,6 +25695,18 @@
     "areaTags": [
       "Q"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22072,6 +25756,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22139,6 +25839,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22201,6 +25909,26 @@
     "areaTags": [
       "L"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22255,6 +25983,14 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22427,6 +26163,14 @@
       "LGT",
       "OBS"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22478,6 +26222,26 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22529,6 +26293,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22586,6 +26358,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22641,6 +26429,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22698,6 +26498,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22767,6 +26583,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22828,6 +26660,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22904,6 +26744,22 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -22966,6 +26822,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23032,6 +26900,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23099,6 +26975,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23172,6 +27068,34 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23232,6 +27156,14 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23319,6 +27251,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23387,6 +27327,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23442,6 +27390,26 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23520,6 +27488,22 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23583,6 +27567,22 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23640,6 +27640,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23691,6 +27707,22 @@
       "If the spell is dispelled, the original script and the illusion both disappear.",
       "A creature that has {@sense Truesight|XPHB} can read the hidden message."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23800,6 +27832,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23858,6 +27902,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23914,6 +27974,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -23982,6 +28050,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24049,6 +28133,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24136,6 +28244,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24197,6 +28317,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24247,6 +28391,22 @@
       "OBJ",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24295,6 +28455,22 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24346,6 +28522,18 @@
       "OBJ",
       "PRM"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24402,6 +28590,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24463,6 +28663,34 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24520,6 +28748,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24570,6 +28814,30 @@
       "LGT",
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24626,6 +28894,14 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24691,6 +28967,18 @@
     "areaTags": [
       "L"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24737,6 +29025,22 @@
       "beast",
       "plant"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24783,6 +29087,34 @@
       "The spell can locate a specific creature known to you or the nearest creature of a specific kind (such as a human or a unicorn) if you have seen such a creature up close—within 30 feet—at least once. If the creature you described or named is in a different form, such as under the effects of a {@spell Flesh to Stone|XPHB} or {@spell Polymorph|XPHB} spell, this spell doesn't locate the creature.",
       "This spell can't locate a creature if any thickness of lead blocks a direct path between you and the creature."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24835,6 +29167,34 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24896,6 +29256,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -24966,6 +29350,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25019,6 +29415,30 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25102,6 +29522,26 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25162,6 +29602,14 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25241,6 +29689,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25300,6 +29760,22 @@
       "OBJ",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25351,6 +29827,30 @@
         ]
       }
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25414,6 +29914,26 @@
       "PRM",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25469,6 +29989,22 @@
       "MT",
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25515,6 +30051,14 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25569,6 +30113,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25634,6 +30190,22 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25692,6 +30264,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25745,6 +30325,22 @@
     "conditionInflict": [
       "prone"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25823,6 +30419,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25870,6 +30474,30 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25917,6 +30545,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -25971,6 +30623,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26022,6 +30686,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26089,6 +30765,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26153,6 +30845,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26214,6 +30922,26 @@
     "abilityCheck": [
       "intelligence"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26262,6 +30990,22 @@
     "miscTags": [
       "DFT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26306,6 +31050,26 @@
       "Each time a creature hits you with an attack roll during the spell's duration, roll a {@dice d6} for each of your remaining duplicates. If any of the d6s rolls a 3 or higher, one of the duplicates is hit instead of you, and the duplicate is destroyed. The duplicates otherwise ignore all other damage and effects. The spell ends when all three duplicates are destroyed.",
       "A creature is unaffected by this spell if it has the {@condition Blinded|XPHB} condition, {@sense Blindsight|XPHB}, or {@sense Truesight|XPHB}."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26356,6 +31120,22 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26400,6 +31180,22 @@
       "SGT",
       "TP"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26471,6 +31267,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26538,6 +31346,14 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26594,6 +31410,18 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26662,6 +31490,18 @@
           "credit": "Helge C. Balzer",
           "width": 2226,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
         }
       ]
     },
@@ -26738,6 +31578,18 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26801,6 +31653,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26855,6 +31719,22 @@
     "areaTags": [
       "Q"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26908,6 +31788,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -26973,6 +31869,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27036,6 +31940,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27108,6 +32024,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27164,6 +32092,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27212,6 +32152,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27261,6 +32213,14 @@
       "OBJ",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27325,6 +32285,22 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27391,6 +32367,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27458,6 +32446,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27504,6 +32500,14 @@
     "miscTags": [
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27577,6 +32581,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27624,6 +32652,30 @@
       "PS",
       "TP"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27686,6 +32738,22 @@
     "miscTags": [
       "DFT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27755,6 +32823,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27815,6 +32907,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27858,6 +32970,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27903,6 +33027,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -27950,6 +33086,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28001,6 +33157,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28057,6 +33233,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28148,6 +33336,30 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28256,6 +33468,22 @@
     "areaTags": [
       "N"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28369,6 +33597,18 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28444,6 +33684,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28513,6 +33761,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28569,6 +33829,18 @@
     "miscTags": [
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28622,6 +33894,34 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28687,6 +33987,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28741,6 +34065,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28786,6 +34134,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28867,6 +34235,22 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28918,6 +34302,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -28969,6 +34365,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29041,6 +34449,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29104,6 +34528,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29153,6 +34589,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29257,6 +34709,14 @@
       "HL",
       "RO"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29301,6 +34761,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29347,6 +34827,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29411,6 +34907,18 @@
     "miscTags": [
       "HL"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29466,6 +34974,22 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29515,6 +35039,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29559,6 +35107,18 @@
       "You touch a rope. One end of it hovers upward until the rope hangs perpendicular to the ground or the rope reaches a ceiling. At the rope's upper end, an {@condition Invisible|XPHB} 3-foot-by-5-foot portal opens to an extradimensional space that lasts until the spell ends. That space can be reached by climbing the rope, which can be pulled into or dropped out of it.",
       "The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can't pass into or out of the space, but creatures inside it can see through the portal. Anything inside the space drops out when the spell ends."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29632,6 +35192,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29683,6 +35251,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29744,6 +35324,18 @@
       "MT",
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29864,6 +35456,30 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29924,6 +35540,14 @@
     "miscTags": [
       "AAD"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -29967,6 +35591,26 @@
     "entries": [
       "For the duration, you see creatures and objects that have the {@condition Invisible|XPHB} condition as if they were visible, and you can see into the Ethereal Plane. Creatures and objects there appear ghostly."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30025,6 +35669,22 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30069,6 +35729,22 @@
       "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a {@chance 5|||Message lost!|Message arrives} chance that the message doesn't arrive. You know if the delivery fails.",
       "Upon receiving your message, a creature can block your ability to reach it again with this spell for 8 hours. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30131,6 +35807,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30201,6 +35885,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30263,6 +35959,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30312,6 +36024,18 @@
     "miscTags": [
       "MAC"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30366,6 +36090,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30435,6 +36171,14 @@
       "AAD",
       "SCL"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30498,6 +36242,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30569,6 +36321,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30628,6 +36396,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30695,6 +36479,22 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30751,6 +36551,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30810,6 +36618,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30869,6 +36693,22 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -30926,6 +36766,22 @@
       "C",
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31003,6 +36859,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31057,6 +36921,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31127,6 +37007,26 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31193,6 +37093,22 @@
       "ooze",
       "plant"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31245,6 +37161,22 @@
     "miscTags": [
       "DFT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31304,6 +37236,26 @@
     "miscTags": [
       "SCT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31362,6 +37314,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31430,6 +37394,14 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31516,6 +37488,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31573,6 +37553,14 @@
     "miscTags": [
       "AAD"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31644,6 +37632,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31698,6 +37698,18 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31761,6 +37773,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31803,6 +37831,26 @@
     "miscTags": [
       "OBJ"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31859,6 +37907,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -31954,6 +38026,14 @@
     "areaTags": [
       "Y"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32014,6 +38094,26 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32091,6 +38191,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32154,6 +38266,18 @@
       "SGT",
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32234,6 +38358,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32308,6 +38444,18 @@
           "credit": "Hector Ortiz",
           "width": 850,
           "height": 1241
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
         }
       ]
     },
@@ -32390,6 +38538,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32450,6 +38606,22 @@
       "SGT",
       "SMN"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32524,6 +38696,26 @@
           "credit": "Joseph Weston",
           "width": 2225,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
         }
       ]
     },
@@ -32604,6 +38796,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32681,6 +38885,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32743,6 +38959,26 @@
     "areaTags": [
       "L"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32801,6 +39037,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32849,6 +39105,14 @@
     "miscTags": [
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -32973,6 +39237,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33021,6 +39305,26 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33083,6 +39387,18 @@
           "credit": "Linda Lithen",
           "width": 2225,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
         }
       ]
     },
@@ -33155,6 +39471,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33229,6 +39561,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33274,6 +39618,14 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33433,6 +39785,22 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33491,6 +39859,26 @@
       "PRM",
       "TP"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33557,6 +39945,14 @@
           "credit": "Ralph Horsley",
           "width": 2225,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
         }
       ]
     },
@@ -33650,6 +40046,14 @@
     "miscTags": [
       "ADV"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33719,6 +40123,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33785,6 +40201,34 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33843,6 +40287,14 @@
       "AAD",
       "FMV"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33908,6 +40360,26 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -33946,6 +40418,18 @@
       "You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take {@dice 1d4 + 1} turns in a row, during which you can use actions and move as normal.",
       "This spell ends if one of the actions you use during this period, or any effects that you create during it, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34028,6 +40512,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34073,6 +40573,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34133,6 +40657,14 @@
           "credit": "Rob Alexander",
           "width": 2400,
           "height": 1086
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
         }
       ]
     },
@@ -34197,6 +40729,18 @@
           "credit": "Rob Alexander",
           "width": 2400,
           "height": 1086
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
         }
       ]
     },
@@ -34284,6 +40828,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34335,6 +40895,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34382,6 +40954,30 @@
     "entries": [
       "For the duration, the willing creature you touch has {@sense Truesight|XPHB} with a range of 120 feet."
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34451,6 +41047,30 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34510,6 +41130,14 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34567,6 +41195,22 @@
       "SMN",
       "UBA"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34635,6 +41279,22 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34721,6 +41381,14 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34799,6 +41467,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34864,6 +41544,22 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34913,6 +41609,14 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -34980,6 +41684,14 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35040,6 +41752,26 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35106,6 +41838,14 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35159,6 +41899,18 @@
     "areaTags": [
       "ST"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35223,6 +41975,30 @@
           "credit": "Andrew Mar",
           "width": 1152,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
         }
       ]
     },
@@ -35291,6 +42067,30 @@
           "credit": "Andrew Mar",
           "width": 1152,
           "height": 1440
+        }
+      ]
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        },
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
         }
       ]
     },
@@ -35365,6 +42165,22 @@
     "areaTags": [
       "C"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Artificer",
+          "source": "EFA"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35422,6 +42238,18 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35473,6 +42301,14 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35529,6 +42365,18 @@
     "areaTags": [
       "W"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Druid",
+          "source": "XPHB"
+        },
+        {
+          "name": "Ranger",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35651,6 +42499,18 @@
       "HL",
       "SGT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35734,6 +42594,22 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Sorcerer",
+          "source": "XPHB"
+        },
+        {
+          "name": "Warlock",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35802,6 +42678,14 @@
     "areaTags": [
       "MT"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35845,6 +42729,14 @@
       "PS",
       "TP"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35906,6 +42798,14 @@
     "miscTags": [
       "AAD"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -35982,6 +42882,18 @@
         }
       ]
     },
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Wizard",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",
@@ -36032,6 +42944,22 @@
     "areaTags": [
       "S"
     ],
+    "classes": {
+      "fromClassList": [
+        {
+          "name": "Bard",
+          "source": "XPHB"
+        },
+        {
+          "name": "Cleric",
+          "source": "XPHB"
+        },
+        {
+          "name": "Paladin",
+          "source": "XPHB"
+        }
+      ]
+    },
     "_gr": {
       "origin": "official",
       "edition": "2024",

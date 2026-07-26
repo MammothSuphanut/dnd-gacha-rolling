@@ -174,6 +174,30 @@ export const CATEGORIES = [
         getValues: (e) => [e.school],
         optionLabel: (v) => label(SCHOOL_LABELS, v),
       },
+      {
+        key: 'class',
+        label: 'Class',
+        // Official spell files carry no `classes` field of their own — the
+        // normalize script backfills it from spells/sources.json, but that
+        // lookup doesn't cover every book (e.g. XGE, EGW), so some spells
+        // still fall through to "ไม่ระบุ".
+        getValues: (e) => arr(e.classes?.fromClassList).map((c) => c.name),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'ritual',
+        label: 'Ritual',
+        getValues: (e) => [e.meta?.ritual ? 'เป็น Ritual' : 'ไม่ใช่ Ritual'],
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'concentration',
+        label: 'Concentration',
+        getValues: (e) => [
+          arr(e.duration).some((d) => d.concentration) ? 'ต้อง Concentration' : 'ไม่ต้อง Concentration',
+        ],
+        optionLabel: (v) => v,
+      },
       ORIGIN_FILTER,
       EDITION_FILTER,
     ],
