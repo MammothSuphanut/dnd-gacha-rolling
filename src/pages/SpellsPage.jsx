@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useCompendiumCategory } from '../utils/useCompendiumCategory'
 import { getCategory, originLabels, originFacet, SCHOOL_LABELS } from '../utils/fiveEtoolsCategories'
+import { loadPinnedKeys, savePinnedKeys, spellKey } from '../utils/pinnedSpells'
 import SpellDetailPanel from '../components/SpellDetailPanel'
 
 const spellCategory = getCategory('spell')
@@ -46,8 +47,21 @@ export default function SpellsPage() {
   const [query, setQuery] = useState('')
   const [activeFilters, setActiveFilters] = useState({})
   const [selectedKey, setSelectedKey] = useState(null)
+  const [pinned, setPinned] = useState(() => loadPinnedKeys())
+  const [onlyPinned, setOnlyPinned] = useState(false)
 
   const spells = useMemo(() => dedupeReprints(data || []), [data])
+
+  function togglePin(spell) {
+    setPinned((prev) => {
+      const next = new Set(prev)
+      const key = spellKey(spell)
+      if (next.has(key)) next.delete(key)
+      else next.add(key)
+      savePinnedKeys(next)
+      return next
+    })
+  }
 
   const filterOptions = useMemo(() => {
     const options = {}
@@ -68,11 +82,12 @@ export default function SpellsPage() {
     return spells
       .filter((s) => (normalizedQuery ? s.name.toLowerCase().includes(normalizedQuery) : true))
       .filter((s) => matchesFilters(s, spellCategory.filters, activeFilters))
+      .filter((s) => !onlyPinned || pinned.has(spellKey(s)))
       .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
-  }, [spells, normalizedQuery, activeFilters])
+  }, [spells, normalizedQuery, activeFilters, onlyPinned, pinned])
 
   const selectedSpell = useMemo(
-    () => filtered.find((s) => `${s.name}|${s.source}` === selectedKey) || null,
+    () => filtered.find((s) => spellKey(s) === selectedKey) || null,
     [filtered, selectedKey],
   )
 
@@ -113,6 +128,15 @@ export default function SpellsPage() {
                 placeholder="ค้นหาชื่อคาถา..."
                 className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
               />
+              <label className="mt-2 flex items-center gap-2 text-sm text-stone-700">
+                <input
+                  type="checkbox"
+                  checked={onlyPinned}
+                  onChange={(e) => setOnlyPinned(e.target.checked)}
+                  className="h-4 w-4 rounded border-gray-300"
+                />
+                แสดงเฉพาะที่เล็งไว้ ({pinned.size})
+              </label>
               <div className="mt-2 flex flex-col gap-2">
                 {spellCategory.filters.map((def) => (
                   <select
@@ -147,29 +171,45 @@ export default function SpellsPage() {
             <div className="space-y-1 overflow-y-auto pr-1 lg:min-h-0 lg:flex-1">
               {filtered.length === 0 ? (
                 <p className="rounded-lg border border-[#e2cfb3] bg-white p-4 text-center text-sm text-stone-400">
-                  ไม่พบคาถาที่ตรงกับเงื่อนไข
+                  {onlyPinned ? 'ยังไม่ได้เล็งคาถาไว้เลย' : 'ไม่พบคาถาที่ตรงกับเงื่อนไข'}
                 </p>
               ) : (
                 filtered.map((spell) => {
-                  const key = `${spell.name}|${spell.source}`
+                  const key = spellKey(spell)
                   const isActive = key === selectedKey
+                  const isPinned = pinned.has(key)
                   return (
-                    <button
+                    <div
                       key={key}
-                      type="button"
-                      onClick={() => setSelectedKey(key)}
-                      className={`flex w-full flex-col items-start rounded-lg border px-3 py-2 text-left transition-colors ${
+                      className={`flex w-full items-center gap-1 rounded-lg border pr-1 transition-colors ${
                         isActive
                           ? 'border-violet-300 bg-violet-100'
                           : 'border-[#e2cfb3] bg-white hover:bg-[#f5ede0]'
                       }`}
                     >
-                      <span className="text-sm font-medium text-stone-800">{spell.name}</span>
-                      <span className="text-xs text-stone-500">
-                        {spell.level === 0 ? 'Cantrip' : `Level ${spell.level}`} · {SCHOOL_LABELS[spell.school] || spell.school} ·{' '}
-                        {originLabels[originFacet(spell)] || originFacet(spell)}
-                      </span>
-                    </button>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedKey(key)}
+                        className="flex min-w-0 flex-1 flex-col items-start px-3 py-2 text-left"
+                      >
+                        <span className="w-full truncate text-sm font-medium text-stone-800">{spell.name}</span>
+                        <span className="text-xs text-stone-500">
+                          {spell.level === 0 ? 'Cantrip' : `Level ${spell.level}`} · {SCHOOL_LABELS[spell.school] || spell.school} ·{' '}
+                          {originLabels[originFacet(spell)] || originFacet(spell)}
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => togglePin(spell)}
+                        aria-label={isPinned ? 'เลิกเล็งคาถานี้' : 'เล็งคาถานี้ไว้'}
+                        aria-pressed={isPinned}
+                        className={`shrink-0 rounded-md p-1.5 text-lg leading-none transition-colors ${
+                          isPinned ? 'text-amber-500 hover:text-amber-600' : 'text-stone-300 hover:text-stone-400'
+                        }`}
+                      >
+                        {isPinned ? '★' : '☆'}
+                      </button>
+                    </div>
                   )
                 })
               )}
