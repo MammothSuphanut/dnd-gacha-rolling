@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useCompendiumCategory } from '../utils/useCompendiumCategory'
 import { getCategory, originLabels, originFacet, SCHOOL_LABELS } from '../utils/fiveEtoolsCategories'
-import SpellStatblockModal from '../components/SpellStatblockModal'
+import SpellDetailPanel from '../components/SpellDetailPanel'
 
 const spellCategory = getCategory('spell')
 
@@ -45,7 +45,7 @@ export default function SpellsPage() {
   const { status, error, data } = useCompendiumCategory('spell')
   const [query, setQuery] = useState('')
   const [activeFilters, setActiveFilters] = useState({})
-  const [selectedSpell, setSelectedSpell] = useState(null)
+  const [selectedKey, setSelectedKey] = useState(null)
 
   const spells = useMemo(() => dedupeReprints(data || []), [data])
 
@@ -71,6 +71,11 @@ export default function SpellsPage() {
       .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
   }, [spells, normalizedQuery, activeFilters])
 
+  const selectedSpell = useMemo(
+    () => filtered.find((s) => `${s.name}|${s.source}` === selectedKey) || null,
+    [filtered, selectedKey],
+  )
+
   function setFilter(key, value) {
     setActiveFilters((prev) => ({ ...prev, [key]: value || undefined }))
   }
@@ -83,13 +88,13 @@ export default function SpellsPage() {
   const hasActiveFilters = Boolean(query || Object.values(activeFilters).some(Boolean))
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-        <h1 className="font-cinzel text-xl font-bold text-stone-900">คาถา (Spells)</h1>
+    <div className="w-full p-3 md:p-4">
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <h1 className="text-lg font-bold text-stone-900">คาถา (Spells)</h1>
         {status === 'ready' && (
-          <span className="text-sm text-stone-500">
+          <p className="text-xs text-stone-500">
             {filtered.length} / {spells.length} รายการ
-          </span>
+          </p>
         )}
       </div>
 
@@ -97,82 +102,86 @@ export default function SpellsPage() {
       {status === 'error' && <p className="text-sm text-red-600">โหลดข้อมูลไม่สำเร็จ: {error?.message}</p>}
 
       {status === 'ready' && (
-        <>
-          <div className="mb-4 flex flex-wrap items-end gap-3 rounded-lg border border-[#e2cfb3] bg-white p-3">
-            <div className="min-w-[180px] flex-1">
-              <label className="block text-sm font-medium text-stone-700">ค้นหาชื่อคาถา</label>
+        <div className="flex flex-col gap-4 lg:h-[calc(100vh-130px)] lg:flex-row lg:items-stretch">
+          {/* Filters */}
+          <aside className="w-full shrink-0 lg:w-64">
+            <div className="rounded-lg border border-[#e2cfb3] bg-white p-3 shadow-sm">
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="เช่น Fireball"
-                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                placeholder="ค้นหาชื่อคาถา..."
+                className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
               />
-            </div>
-            {spellCategory.filters.map((def) => (
-              <div key={def.key} className="min-w-[150px]">
-                <label className="block text-sm font-medium text-stone-700">{def.label}</label>
-                <select
-                  value={activeFilters[def.key] || ''}
-                  onChange={(e) => setFilter(def.key, e.target.value)}
-                  className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
-                >
-                  <option value="">ทั้งหมด</option>
-                  {filterOptions[def.key]?.map((v) => (
-                    <option key={v} value={v}>
-                      {def.optionLabel(v)}
-                    </option>
-                  ))}
-                </select>
+              <div className="mt-2 flex flex-col gap-2">
+                {spellCategory.filters.map((def) => (
+                  <select
+                    key={def.key}
+                    value={activeFilters[def.key] || ''}
+                    onChange={(e) => setFilter(def.key, e.target.value)}
+                    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                  >
+                    <option value="">{def.label}: ทั้งหมด</option>
+                    {filterOptions[def.key]?.map((v) => (
+                      <option key={v} value={v}>
+                        {def.optionLabel(v)}
+                      </option>
+                    ))}
+                  </select>
+                ))}
+                {hasActiveFilters && (
+                  <button
+                    type="button"
+                    onClick={clearFilters}
+                    className="self-start text-xs text-stone-500 underline decoration-dotted hover:text-stone-700"
+                  >
+                    ล้างตัวกรอง
+                  </button>
+                )}
               </div>
-            ))}
-            {hasActiveFilters && (
-              <button
-                type="button"
-                onClick={clearFilters}
-                className="rounded-lg px-3 py-2 text-sm text-stone-600 hover:bg-[#f5ede0]"
-              >
-                ล้าง filter
-              </button>
-            )}
+            </div>
+          </aside>
+
+          {/* List */}
+          <div className="w-full shrink-0 lg:flex lg:h-full lg:w-72 lg:flex-col lg:overflow-hidden">
+            <div className="space-y-1 overflow-y-auto pr-1 lg:min-h-0 lg:flex-1">
+              {filtered.length === 0 ? (
+                <p className="rounded-lg border border-[#e2cfb3] bg-white p-4 text-center text-sm text-stone-400">
+                  ไม่พบคาถาที่ตรงกับเงื่อนไข
+                </p>
+              ) : (
+                filtered.map((spell) => {
+                  const key = `${spell.name}|${spell.source}`
+                  const isActive = key === selectedKey
+                  return (
+                    <button
+                      key={key}
+                      type="button"
+                      onClick={() => setSelectedKey(key)}
+                      className={`flex w-full flex-col items-start rounded-lg border px-3 py-2 text-left transition-colors ${
+                        isActive
+                          ? 'border-violet-300 bg-violet-100'
+                          : 'border-[#e2cfb3] bg-white hover:bg-[#f5ede0]'
+                      }`}
+                    >
+                      <span className="text-sm font-medium text-stone-800">{spell.name}</span>
+                      <span className="text-xs text-stone-500">
+                        {spell.level === 0 ? 'Cantrip' : `Level ${spell.level}`} · {SCHOOL_LABELS[spell.school] || spell.school} ·{' '}
+                        {originLabels[originFacet(spell)] || originFacet(spell)}
+                      </span>
+                    </button>
+                  )
+                })
+              )}
+            </div>
           </div>
 
-          {filtered.length === 0 ? (
-            <p className="rounded-lg border border-[#e2cfb3] bg-white p-6 text-center text-sm text-stone-500">
-              ไม่พบคาถาที่ตรงกับเงื่อนไข
-            </p>
-          ) : (
-            <div className="overflow-hidden rounded-lg border border-[#e2cfb3] bg-white">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-[#e2cfb3] bg-[#f5ede0] text-left text-xs uppercase tracking-wide text-stone-500">
-                    <th className="px-3 py-2">ชื่อ</th>
-                    <th className="px-3 py-2">Level</th>
-                    <th className="px-3 py-2">School</th>
-                    <th className="px-3 py-2">แหล่งที่มา</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filtered.map((spell) => (
-                    <tr
-                      key={`${spell.name}|${spell.source}`}
-                      onClick={() => setSelectedSpell(spell)}
-                      className="cursor-pointer border-b border-[#f0e5d0] transition-colors last:border-0 hover:bg-[#f5ede0]"
-                    >
-                      <td className="px-3 py-2 font-medium text-stone-800">{spell.name}</td>
-                      <td className="px-3 py-2 text-stone-600">{spell.level === 0 ? 'Cantrip' : spell.level}</td>
-                      <td className="px-3 py-2 text-stone-600">{SCHOOL_LABELS[spell.school] || spell.school}</td>
-                      <td className="px-3 py-2 text-stone-600">{originLabels[originFacet(spell)] || originFacet(spell)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-        </>
+          {/* Detail */}
+          <main className="min-w-0 flex-1 lg:h-full lg:overflow-hidden">
+            <SpellDetailPanel spell={selectedSpell} />
+          </main>
+        </div>
       )}
-
-      <SpellStatblockModal spell={selectedSpell} onClose={() => setSelectedSpell(null)} />
     </div>
   )
 }

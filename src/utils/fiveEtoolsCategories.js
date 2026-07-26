@@ -185,6 +185,15 @@ export const CATEGORIES = [
         optionLabel: (v) => v,
       },
       {
+        key: 'subclass',
+        label: 'Subclass',
+        // Unlike `class`, there's no vendored lookup that backfills this for
+        // official spells — it's only present on the handful of homebrew
+        // spells (Valda's Spire "Hex" line) that embed it directly.
+        getValues: (e) => arr(e.classes?.fromSubclass).map((s) => s.subclass?.name).filter(Boolean),
+        optionLabel: (v) => v,
+      },
+      {
         key: 'ritual',
         label: 'Ritual',
         getValues: (e) => [e.meta?.ritual ? 'เป็น Ritual' : 'ไม่ใช่ Ritual'],
