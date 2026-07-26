@@ -39,7 +39,7 @@
 
 ## บอสไฟต์: Vaelkor Thess
 
-Thess ใช้ stat block **Archlich** ที่ปรับเสริม (~CR 20–21, ปรับตามจำนวน/เลเวลปาร์ตี้จริง) พร้อม Legendary Resistance (3/day), Legendary Actions, และเวทมนตร์ระดับสูงสุดของแคมเปญ (Disintegrate, Wall of Force, Finger of Death, Power Word Kill ระดับปลายเกม):
+Thess ใช้ stat block **Archlich** ที่ปรับเสริม (~CR 21) พร้อม Legendary Resistance (3/day), Legendary Actions, และเวทมนตร์ระดับสูงสุดของแคมเปญ (Disintegrate, Wall of Force, Finger of Death, Power Word Kill ระดับปลายเกม) — บอสตัวเดียวเทียบ Legendary Resistance/Actions/Lair Actions เต็มรูปแบบทดแทน action economy ที่เสียเปรียบเมื่อสู้กับปาร์ตี้ 4 คน (Moderate budget: party 4 × Level 18 = 34,800 XP — composition Vaelkor Thess ~CR21 [33,000] + Shadow x2 ~CR1/2 [100 ต่อตัว เมื่อ HP < 50%] ≈ 33,200 XP):
 
 ### Legendary Actions (3/รอบ, ใช้ได้เฉพาะท้ายรอบของสิ่งมีชีวิตอื่น)
 - **โจมตี (1 action)**: Thess โจมตีระยะประชิดหรือระยะไกลหนึ่งครั้ง
