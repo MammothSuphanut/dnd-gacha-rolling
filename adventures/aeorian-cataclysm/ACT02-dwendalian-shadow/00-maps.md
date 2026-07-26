@@ -6,7 +6,7 @@
 
 | แมพ | ประเภท | สถานะ | หมายเหตุ |
 |---|---|---|---|
-| **Uthodurn** (Volition Disk → Deliberation Disk → Grand Disk) | Region | ⚠️ ต้องทำใหม่ | อิงจาก [Critical Role Wiki: Uthodurn](https://criticalrole.fandom.com/wiki/Uthodurn) — เมือง 3 ชั้นลดหลั่นลงในหุบเขาน้ำแข็งกลาง Flotket Alps (ไม่ใช่หลุมอุกกาบาต) ต้องเห็นทั้ง 3 ชั้น + Grandcast Citadel (สลักจากเสาหินย้อย รูปทรงหอคอยกลับหัว) ที่ Grand Disk ชั้นล่างสุด — รูปที่ทำไว้เดิมอิงคอนเซปต์ผิด (หลุมอุกกาบาต + ผลึกอาร์เคน) ต้องปั่นใหม่ (ปรากฏใน EP1–EP2)
+| **Uthodurn** (Volition Disk → Deliberation Disk → Grand Disk) | Region | ✅ ทำแล้ว | อิงจาก [Critical Role Wiki: Uthodurn](https://criticalrole.fandom.com/wiki/Uthodurn) — เมือง 3 ชั้นลดหลั่นลงในหุบเขาน้ำแข็งกลาง Flotket Alps (ไม่ใช่หลุมอุกกาบาต) เห็นทั้ง 3 ชั้น + Grandcast Citadel (สลักจากเสาหินย้อย รูปทรงหอคอยกลับหัว) ที่ Grand Disk ชั้นล่างสุด — แก้จากคอนเซปต์ผิดชุดแรก (หลุมอุกกาบาต + ผลึกอาร์เคน) เรียบร้อยแล้ว (ปรากฏใน EP1–EP2) — *อัปเดตสถานะ 2026-07-26 ให้ตรงกับแถว EP2 หลังพบว่าไม่ตรงกัน*
 
 ## EP2: The Merchant's Guild
 
