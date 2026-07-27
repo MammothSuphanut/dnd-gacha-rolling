@@ -128,6 +128,10 @@ export function buildFiveEtoolsFeatLink({ name, source }) {
   return buildFiveEtoolsPageLink('feats', name, source)
 }
 
+export function buildFiveEtoolsOptionalFeatureLink({ name, source }) {
+  return buildFiveEtoolsPageLink('optionalfeatures', name, source)
+}
+
 // Subrace entries hash as `"{name} ({raceName})"_{source}` — one combined
 // name part, not two separate ones — per 5e.tools' own `subrace` hash
 // builder. Plain species (no raceName) just use the generic name/source.

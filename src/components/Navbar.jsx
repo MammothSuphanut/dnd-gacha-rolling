@@ -23,8 +23,8 @@ const links = [
     ),
   },
   {
-    to: '/spells',
-    label: 'คาถา',
+    to: '/options',
+    label: 'ตัวเลือก',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.4-6.4-2.1 2.1M8.7 15.3l-2.1 2.1m10.8 0-2.1-2.1M8.7 8.7 6.6 6.6" />

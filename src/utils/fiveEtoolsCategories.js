@@ -40,6 +40,34 @@ const FEAT_CATEGORY_LABELS = {
   RF: 'Replaces First Feat',
 }
 
+// Straight from 5e.tools' own Parser.OPT_FEATURE_TYPE_TO_FULL (js/parser.js)
+// — only covers official-book codes. Homebrew lines (Grim Hollow, Valda's
+// Spire) invent their own per-subclass codes with no published label table
+// (e.g. "BGT:Cl", "TLi:TB"), so those just fall back to showing the raw code.
+const OPT_FEATURE_TYPE_LABELS = {
+  AI: 'Artificer Infusion',
+  ED: 'Elemental Discipline',
+  EI: 'Eldritch Invocation',
+  MM: 'Metamagic',
+  MV: 'Maneuver',
+  'MV:B': 'Maneuver, Battle Master',
+  'MV:C2-UA': 'Maneuver, Cavalier V2 (UA)',
+  'AS:V1-UA': 'Arcane Shot, V1 (UA)',
+  'AS:V2-UA': 'Arcane Shot, V2 (UA)',
+  AS: 'Arcane Shot',
+  OTH: 'Other',
+  'FS:F': 'Fighting Style; Fighter',
+  'FS:B': 'Fighting Style; Bard',
+  'FS:P': 'Fighting Style; Paladin',
+  'FS:R': 'Fighting Style; Ranger',
+  PB: 'Pact Boon',
+  OR: 'Onomancy Resonant',
+  RN: "Rune Knight Rune",
+  AF: 'Alchemical Formula',
+  TT: "Traveler's Trick",
+  RP: 'Renown Perk',
+}
+
 function label(map, code) {
   return map[code] || code
 }
@@ -151,7 +179,7 @@ export const CATEGORIES = [
         key: 'featureType',
         label: 'ประเภท',
         getValues: (e) => arr(e.featureType),
-        optionLabel: (v) => v,
+        optionLabel: (v) => label(OPT_FEATURE_TYPE_LABELS, v),
       },
       ORIGIN_FILTER,
       EDITION_FILTER,
@@ -349,4 +377,4 @@ export function getCategory(id) {
   return CATEGORIES.find((c) => c.id === id)
 }
 
-export { originFacet, monsterTypeString, SCHOOL_LABELS, SIZE_LABELS, ALIGNMENT_LABELS }
+export { originFacet, monsterTypeString, SCHOOL_LABELS, SIZE_LABELS, ALIGNMENT_LABELS, FEAT_CATEGORY_LABELS }

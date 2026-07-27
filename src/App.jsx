@@ -6,8 +6,8 @@ import BoxManagerPage from './pages/BoxManagerPage'
 import CampaignPage from './pages/CampaignPage'
 import CharacterPage from './pages/CharacterPage'
 import RollPage from './pages/RollPage'
+import OptionsPage from './pages/OptionsPage'
 import ShopPage from './pages/ShopPage'
-import SpellsPage from './pages/SpellsPage'
 import { GachaProvider } from './store/GachaStore'
 import { ToastProvider } from './store/ToastContext'
 
@@ -73,7 +73,7 @@ function App() {
               }
             />
             <Route path="/campaigns" element={<CampaignPage />} />
-            <Route path="/spells" element={<SpellsPage />} />
+            <Route path="/options" element={<OptionsPage />} />
             <Route path="/characters" element={<CharacterPage />} />
             {/* Catch-all: lets links copied out of a journal (e.g. into FoundryVTT) resolve
                 as plain "/some-file.md" paths instead of a query-string route. Must stay last. */}
