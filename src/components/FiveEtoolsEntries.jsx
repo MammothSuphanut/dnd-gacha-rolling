@@ -3,6 +3,8 @@
 // our normalized data; anything unrecognized falls back to plain text so we
 // never crash on unfamiliar homebrew content.
 
+import { buildFiveEtoolsConditionLink, buildFiveEtoolsVariantRuleLink } from '../utils/spellFormat'
+
 const ATK_LABELS = {
   mw: 'Melee Weapon Attack:',
   rw: 'Ranged Weapon Attack:',
@@ -58,7 +60,29 @@ function renderTag(tag, parts, key, onSpellClick) {
     case 'condition':
     case 'status':
     case 'disease':
-      return <span key={key} className="font-medium text-amber-700">{text}</span>
+      return (
+        <a
+          key={key}
+          href={buildFiveEtoolsConditionLink({ name: parts[0], source: parts[1] })}
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-amber-700 underline decoration-dotted hover:text-amber-800"
+        >
+          {text}
+        </a>
+      )
+    case 'variantrule':
+      return (
+        <a
+          key={key}
+          href={buildFiveEtoolsVariantRuleLink({ name: parts[0], source: parts[1] })}
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-emerald-700 underline decoration-dotted hover:text-emerald-800"
+        >
+          {text}
+        </a>
+      )
     case 'spell':
       if (onSpellClick) {
         return (
@@ -75,7 +99,6 @@ function renderTag(tag, parts, key, onSpellClick) {
       return <span key={key} className="font-medium text-stone-800 underline decoration-dotted decoration-stone-400">{text}</span>
     case 'item':
     case 'creature':
-    case 'variantrule':
     case 'action':
     case 'skill':
     case 'sense':

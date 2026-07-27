@@ -143,6 +143,20 @@ export function buildFiveEtoolsFeatLink({ name, source }) {
   return buildFiveEtoolsPageLink('feats', name, source)
 }
 
+// {@variantrule}/{@condition} tags in entry text frequently omit source
+// (e.g. "{@condition charmed}" — the core conditions rarely bother citing
+// PHB) — falls back to a 5e.tools search since we have no local dataset to
+// resolve the source from the way findSpellByRef does for spells.
+export function buildFiveEtoolsVariantRuleLink({ name, source }) {
+  return source ? buildFiveEtoolsPageLink('variantrules', name, source) : `https://5e.tools/search.html?q=${encodeURIComponent(name)}`
+}
+
+export function buildFiveEtoolsConditionLink({ name, source }) {
+  return source
+    ? buildFiveEtoolsPageLink('conditionsdiseases', name, source)
+    : `https://5e.tools/search.html?q=${encodeURIComponent(name)}`
+}
+
 export function buildFiveEtoolsOptionalFeatureLink({ name, source }) {
   return buildFiveEtoolsPageLink('optionalfeatures', name, source)
 }
