@@ -7,6 +7,11 @@ import {
   formatSpellDuration,
   isRitual,
   buildFiveEtoolsSpellLink,
+  buildFiveEtoolsClassLink,
+  buildFiveEtoolsSubclassLink,
+  buildFiveEtoolsSpeciesLink,
+  buildFiveEtoolsBackgroundLink,
+  buildFiveEtoolsFeatLink,
 } from '../utils/spellFormat'
 
 function levelSchoolLine(spell) {
@@ -23,6 +28,26 @@ function Fact({ label, value }) {
       <div className="text-[11px] uppercase tracking-wide text-stone-400">{label}</div>
       <div className="text-sm font-medium text-stone-800">{value}</div>
     </div>
+  )
+}
+
+// Renders a comma-separated list of `{ text, href }` pairs as individual
+// links — each reference (class, background, ...) points to its own 5e.tools
+// page, so they can't share one combined href like a plain string join would.
+function RefLine({ label, items }) {
+  if (!items?.length) return null
+  return (
+    <p className="text-sm text-stone-700">
+      <strong>{label}:</strong>{' '}
+      {items.map((item, i) => (
+        <span key={`${item.text}-${item.href}`}>
+          {i > 0 && ', '}
+          <a href={item.href} target="_blank" rel="noreferrer" className="text-emerald-700 hover:underline">
+            {item.text}
+          </a>
+        </span>
+      ))}
+    </p>
   )
 }
 
@@ -58,19 +83,43 @@ export default function SpellDetailPanel({ spell }) {
         <Fact label="ระยะเวลา" value={formatSpellDuration(spell.duration)} />
       </div>
 
-      {spell.classes?.fromClassList?.length > 0 && (
-        <p className="text-sm text-stone-700">
-          <strong>Class:</strong> {spell.classes.fromClassList.map((c) => c.name).join(', ')}
-        </p>
-      )}
-      {spell.classes?.fromSubclass?.length > 0 && (
-        <p className="text-sm text-stone-700">
-          <strong>Subclass:</strong> {spell.classes.fromSubclass.map((s) => s.subclass?.name).filter(Boolean).join(', ')}
-        </p>
-      )}
-
       {spell.entries?.length > 0 && <Entries entries={spell.entries} />}
       {spell.entriesHigherLevel?.length > 0 && <Entries entries={spell.entriesHigherLevel} />}
+
+      {(spell.classes?.fromClassList?.length > 0 ||
+        spell.classes?.fromSubclass?.length > 0 ||
+        spell.grantedBy?.species?.length > 0 ||
+        spell.grantedBy?.background?.length > 0 ||
+        spell.grantedBy?.feat?.length > 0) && (
+        <>
+          <hr className="border-t border-[#e2cfb3]" />
+          <div className="space-y-1">
+            <RefLine
+              label="Class"
+              items={spell.classes?.fromClassList?.map((c) => ({ text: c.name, href: buildFiveEtoolsClassLink(c) }))}
+            />
+            <RefLine
+              label="Subclass"
+              items={spell.classes?.fromSubclass?.map((s) => ({
+                text: `${s.subclass?.shortName || s.subclass?.name || ''} ${s.class?.name || ''}`.trim(),
+                href: buildFiveEtoolsSubclassLink(s),
+              }))}
+            />
+            <RefLine
+              label="Species"
+              items={spell.grantedBy?.species?.map((s) => ({ text: s.label, href: buildFiveEtoolsSpeciesLink(s) }))}
+            />
+            <RefLine
+              label="Background"
+              items={spell.grantedBy?.background?.map((s) => ({ text: s.label, href: buildFiveEtoolsBackgroundLink(s) }))}
+            />
+            <RefLine
+              label="Feat"
+              items={spell.grantedBy?.feat?.map((s) => ({ text: s.label, href: buildFiveEtoolsFeatLink(s) }))}
+            />
+          </div>
+        </>
+      )}
 
       <a
         href={buildFiveEtoolsSpellLink(spell)}

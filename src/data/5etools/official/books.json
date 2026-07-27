@@ -716,6 +716,14 @@
 			]
 		},
 		{
+			"name": "Elemental Evil Player's Companion",
+			"id": "EEPC",
+			"source": "EEPC",
+			"group": "supplement-alt",
+			"published": "2015-03-03",
+			"author": "Wizards RPG Team"
+		},
+		{
 			"name": "Volo's Guide to Monsters",
 			"id": "VGM",
 			"source": "VGM",

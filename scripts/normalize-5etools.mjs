@@ -282,6 +282,112 @@ function categoryPostFilter(category, entries) {
   return entries
 }
 
+// ================= SPELL GRANTORS (species/background/feat -> spell) =================
+// Spell entries don't carry a reverse link to whatever grants them as a
+// bonus/innate spell — that's only a forward reference on the species/
+// background/feat side, in `additionalSpells`. We invert it here so the
+// spell detail view can show "Species: Tiefling", "Feat: Magic Initiate" etc.
+// (mirrors what 5e.tools' own site computes on the fly).
+const GRANTOR_SPELL_KEYS = ['innate', 'known', 'prepared', 'expanded']
+
+// Walks known/innate/prepared/expanded's arbitrarily-nested level/frequency
+// wrapper objects (e.g. innate.3.daily.1: ["invisibility"]) collecting every
+// plain spell-name string leaf. Skips "choose"-shaped nodes entirely (e.g.
+// {choose: "level=1|class=Sorcerer"}) since those are a dynamic pick, not a
+// single named spell we can attribute.
+function collectSpellNames(node, out) {
+  if (typeof node === 'string') {
+    const clean = node.split('|')[0].split('#')[0].trim().toLowerCase()
+    if (clean) out.add(clean)
+    return
+  }
+  if (Array.isArray(node)) {
+    for (const n of node) collectSpellNames(n, out)
+    return
+  }
+  if (node && typeof node === 'object') {
+    if ('choose' in node) return
+    for (const v of Object.values(node)) collectSpellNames(v, out)
+  }
+}
+
+function attachSpellGrantors(finalByCategory) {
+  const spellsByName = new Map()
+  for (const spell of finalByCategory.get('spell') || []) {
+    const key = normName(spell.name)
+    if (!spellsByName.has(key)) spellsByName.set(key, [])
+    spellsByName.get(key).push(spell)
+  }
+
+  const GRANTOR_TYPES = [
+    ['species', 'species'],
+    ['background', 'background'],
+    ['feat', 'feat'],
+  ]
+  for (const [category, grantorType] of GRANTOR_TYPES) {
+    for (const entry of finalByCategory.get(category) || []) {
+      for (const block of entry.additionalSpells || []) {
+        const spellNames = new Set()
+        for (const key of GRANTOR_SPELL_KEYS) {
+          if (block[key]) collectSpellNames(block[key], spellNames)
+        }
+        if (spellNames.size === 0) continue
+        // Prefer the fullest available display label: a subrace entry's own
+        // `name` is bare ("Variant; Infernal Legacy") without its parent
+        // race, and a block can separately name one lineage within a single
+        // entry (Elf XPHB's "Drow"/"High Elf"/"Wood Elf" sub-blocks) —
+        // combine whichever of those apply with the entry's own name.
+        // Kept separate from the raw name/source/raceName below because
+        // 5e.tools' own races.html link hash needs those raw parts in ITS
+        // convention ("{name} ({raceName})"), not our display order.
+        const label = entry.raceName
+          ? `${entry.raceName} (${entry.name})`
+          : block.name
+            ? `${entry.name} (${block.name})`
+            : entry.name
+        for (const spellName of spellNames) {
+          for (const spell of spellsByName.get(spellName) || []) {
+            spell.grantedBy = spell.grantedBy || { species: [], background: [], feat: [] }
+            const list = spell.grantedBy[grantorType]
+            if (!list.some((g) => g.label === label && g.source === entry.source)) {
+              list.push({ label, name: entry.name, source: entry.source, raceName: entry.raceName || null })
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Subclasses (e.g. a Cleric domain's expanded spell list, a Sorcerer
+  // origin's bonus spells) grant spells the exact same way via
+  // `additionalSpells` — but that's the same "classes.fromSubclass" concept
+  // a handful of spells already carry natively (Valda's Spire's Hex line),
+  // so merge into that field instead of a separate `grantedBy` bucket.
+  for (const entry of finalByCategory.get('subclass') || []) {
+    for (const block of entry.additionalSpells || []) {
+      const spellNames = new Set()
+      for (const key of GRANTOR_SPELL_KEYS) {
+        if (block[key]) collectSpellNames(block[key], spellNames)
+      }
+      if (spellNames.size === 0) continue
+      for (const spellName of spellNames) {
+        for (const spell of spellsByName.get(spellName) || []) {
+          spell.classes = spell.classes || {}
+          spell.classes.fromSubclass = spell.classes.fromSubclass || []
+          const grant = {
+            class: { name: entry.className, source: entry.classSource },
+            subclass: { name: entry.name, shortName: entry.shortName, source: entry.source },
+          }
+          const exists = spell.classes.fromSubclass.some(
+            (g) => g.subclass?.name === grant.subclass.name && g.subclass?.source === grant.subclass.source,
+          )
+          if (!exists) spell.classes.fromSubclass.push(grant)
+        }
+      }
+    }
+  }
+}
+
 // ================= MAIN =================
 loadOfficial()
 loadHomebrewLine(path.join(HOMEBREW_DIR, 'grim-hollow'), 'grim-hollow')
@@ -291,6 +397,15 @@ const publishedBySource = buildPublishedDateIndex()
 
 fs.mkdirSync(OUT_DIR, { recursive: true })
 const summary = {}
+const finalByCategory = new Map()
+// The 2024-ability postFilter on `background` (and similar per-category
+// filters) exists to keep character-creation pickers 2024-clean — it's not
+// a signal that the entry is bogus. A background like GGR's Rakdos Cultist
+// has no `ability` field (predates the 2024 rule) so `categoryPostFilter`
+// drops it from background.json, but it still legitimately grants Hellish
+// Rebuke — so the spell-grantor scan reads from this pre-postFilter (but
+// still edition-deduped) map instead of `finalByCategory`.
+const grantorSourceByCategory = new Map()
 for (const [category, rawEntries] of [...buckets].sort(([a], [b]) => a.localeCompare(b))) {
   const entries = categoryPostFilter(category, rawEntries)
   let official = dedupeByEdition(
@@ -307,7 +422,7 @@ for (const [category, rawEntries] of [...buckets].sort(([a], [b]) => a.localeCom
     '2024',
   )
   const final = [...official, ...grimHollow, ...valdasSpire]
-  fs.writeFileSync(path.join(OUT_DIR, `${category}.json`), JSON.stringify(final, null, 2) + '\n')
+  finalByCategory.set(category, final)
   summary[category] = {
     total: final.length,
     official: official.length,
@@ -315,5 +430,28 @@ for (const [category, rawEntries] of [...buckets].sort(([a], [b]) => a.localeCom
     valdasSpire: valdasSpire.length,
     droppedByEditionDedup: entries.length - final.length,
   }
+
+  const rawOfficial = dedupeByEdition(
+    rawEntries.filter((e) => e._gr.origin === 'official'),
+    '2024',
+  )
+  const rawGrimHollow = dedupeByEdition(
+    rawEntries.filter((e) => e._gr.origin === 'homebrew' && e._gr.line === 'grim-hollow'),
+    '2024',
+  )
+  const rawValdasSpire = dedupeByEdition(
+    rawEntries.filter((e) => e._gr.origin === 'homebrew' && e._gr.line === 'valdas-spire'),
+    '2024',
+  )
+  grantorSourceByCategory.set(category, [...rawOfficial, ...rawGrimHollow, ...rawValdasSpire])
+}
+// Spells themselves must still come from the shipped (postFilter'd) set —
+// only the grantor side (species/background/feat/subclass) needs the wider view.
+grantorSourceByCategory.set('spell', finalByCategory.get('spell'))
+
+attachSpellGrantors(grantorSourceByCategory)
+
+for (const [category, final] of finalByCategory) {
+  fs.writeFileSync(path.join(OUT_DIR, `${category}.json`), JSON.stringify(final, null, 2) + '\n')
 }
 console.log(JSON.stringify(summary, null, 2))

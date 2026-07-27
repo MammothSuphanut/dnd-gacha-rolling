@@ -187,10 +187,31 @@ export const CATEGORIES = [
       {
         key: 'subclass',
         label: 'Subclass',
-        // Unlike `class`, there's no vendored lookup that backfills this for
-        // official spells — it's only present on the handful of homebrew
-        // spells (Valda's Spire "Hex" line) that embed it directly.
-        getValues: (e) => arr(e.classes?.fromSubclass).map((s) => s.subclass?.name).filter(Boolean),
+        // Filled in two ways: a handful of spells (Valda's Spire "Hex" line)
+        // embed it directly, and the normalize script backfills the rest by
+        // scanning every subclass's `additionalSpells` (expanded spell
+        // lists, domain/origin bonus spells, etc.) for this spell's name.
+        getValues: (e) => arr(e.classes?.fromSubclass).map((s) => s.subclass?.shortName || s.subclass?.name).filter(Boolean),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'grantedBySpecies',
+        label: 'Species',
+        // Reverse-indexed at build time from species' `additionalSpells` —
+        // only covers spells named literally (not "choose any spell" grants).
+        getValues: (e) => arr(e.grantedBy?.species).map((g) => g.label),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'grantedByBackground',
+        label: 'Background',
+        getValues: (e) => arr(e.grantedBy?.background).map((g) => g.label),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'grantedByFeat',
+        label: 'Feat',
+        getValues: (e) => arr(e.grantedBy?.feat).map((g) => g.label),
         optionLabel: (v) => v,
       },
       {

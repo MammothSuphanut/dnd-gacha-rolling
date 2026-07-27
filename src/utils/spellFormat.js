@@ -90,11 +90,48 @@ export function isConcentration(spell) {
   return Array.isArray(spell.duration) && spell.duration.some((d) => d.concentration)
 }
 
-// "https://5e.tools/spells.html#fireball_xphb" — same "#name_source" hash
-// convention as items.html, lowercased with spaces (5e.tools does its own
-// URL-decoding on load so raw spaces work fine, matching how shops.json's
-// existing item links are written).
+// Matches 5e.tools' own `UrlUtil.URL_TO_HASH_GENERIC` (js/utils.js): each
+// part is `encodeURIComponent(str.toLowerCase()).toLowerCase()`, joined by
+// "_". Confirmed to be exactly what backgrounds.html, feats.html,
+// races.html, classes.html, and spells.html all use — verified against the
+// 5etools-src source rather than guessed, since a wrong link is worse than
+// no link.
+function toUrlified(str) {
+  return encodeURIComponent(String(str).toLowerCase()).toLowerCase()
+}
+
+function buildFiveEtoolsPageLink(page, name, source) {
+  return `https://5e.tools/${page}.html#${toUrlified(name)}_${toUrlified(source)}`
+}
+
 export function buildFiveEtoolsSpellLink(spell) {
-  const slug = spell.name.toLowerCase()
-  return `https://5e.tools/spells.html#${encodeURIComponent(slug)}_${spell.source.toLowerCase()}`
+  return buildFiveEtoolsPageLink('spells', spell.name, spell.source)
+}
+
+export function buildFiveEtoolsClassLink({ name, source }) {
+  return buildFiveEtoolsPageLink('classes', name, source)
+}
+
+// Subclasses don't have their own page — they're a tab within their parent
+// class's page, selected via an internal UI-state hash we can't safely
+// reproduce (5e.tools' `getClassesPageStatePart`) — so this links to the
+// parent class page instead of guessing at that state encoding.
+export function buildFiveEtoolsSubclassLink({ class: cls }) {
+  return buildFiveEtoolsPageLink('classes', cls?.name, cls?.source)
+}
+
+export function buildFiveEtoolsBackgroundLink({ name, source }) {
+  return buildFiveEtoolsPageLink('backgrounds', name, source)
+}
+
+export function buildFiveEtoolsFeatLink({ name, source }) {
+  return buildFiveEtoolsPageLink('feats', name, source)
+}
+
+// Subrace entries hash as `"{name} ({raceName})"_{source}` — one combined
+// name part, not two separate ones — per 5e.tools' own `subrace` hash
+// builder. Plain species (no raceName) just use the generic name/source.
+export function buildFiveEtoolsSpeciesLink({ name, source, raceName }) {
+  const fullName = raceName ? `${name} (${raceName})` : name
+  return buildFiveEtoolsPageLink('races', fullName, source)
 }
