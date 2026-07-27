@@ -249,6 +249,21 @@ function dedupeByEdition(entries, preferredEdition) {
   return entries.filter((e) => e._gr.edition === preferredEdition || !hasPreferred.has(normName(e.name)))
 }
 
+// A homebrew line occasionally declares the exact same entry twice across
+// its own files (e.g. Valda's Spire's "Adamantine" optional feature appears
+// verbatim in two of its source files) — collapses those, keeping the first.
+// Different from dedupeByEdition: this is the SAME edition/name/source
+// appearing twice, not a 2014-vs-2024 reprint.
+function dedupeExact(entries) {
+  const seen = new Set()
+  return entries.filter((e) => {
+    const key = `${normName(e.name)}|${normName(e.source)}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
 // After the 2024-vs-legacy pass, two *legacy* books can still print the same
 // name (e.g. class Artificer: TCE 2020 vs EFA 2025) — keep only the entry
 // from the most recently published source. Scoped to 'class' for now since
@@ -421,7 +436,7 @@ for (const [category, rawEntries] of [...buckets].sort(([a], [b]) => a.localeCom
     entries.filter((e) => e._gr.origin === 'homebrew' && e._gr.line === 'valdas-spire'),
     '2024',
   )
-  const final = [...official, ...grimHollow, ...valdasSpire]
+  const final = dedupeExact([...official, ...grimHollow, ...valdasSpire])
   finalByCategory.set(category, final)
   summary[category] = {
     total: final.length,

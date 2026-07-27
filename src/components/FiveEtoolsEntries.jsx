@@ -20,7 +20,10 @@ function parseTag(raw) {
   return { tag, parts }
 }
 
-function renderTag(tag, parts, key) {
+// `onSpellClick` is optional — callers that don't care about interactive
+// {@spell ...} references (most of them) just render it as static styled
+// text like every other reference tag, same as before.
+function renderTag(tag, parts, key, onSpellClick) {
   const text = parts[0] ?? ''
   switch (tag) {
     case 'b':
@@ -56,8 +59,21 @@ function renderTag(tag, parts, key) {
     case 'status':
     case 'disease':
       return <span key={key} className="font-medium text-amber-700">{text}</span>
-    case 'item':
     case 'spell':
+      if (onSpellClick) {
+        return (
+          <button
+            key={key}
+            type="button"
+            onClick={() => onSpellClick({ name: parts[0], source: parts[1] })}
+            className="font-medium text-emerald-700 underline decoration-dotted hover:text-emerald-800"
+          >
+            {text}
+          </button>
+        )
+      }
+      return <span key={key} className="font-medium text-stone-800 underline decoration-dotted decoration-stone-400">{text}</span>
+    case 'item':
     case 'creature':
     case 'variantrule':
     case 'action':
@@ -91,7 +107,7 @@ function renderTag(tag, parts, key) {
 
 // Splits a plain string on {@tag ...} tokens (non-nested) and returns an
 // array of strings / JSX nodes.
-function renderInline(str) {
+function renderInline(str, onSpellClick) {
   if (typeof str !== 'string') return str
   const out = []
   let i = 0
@@ -109,30 +125,43 @@ function renderInline(str) {
       break
     }
     const { tag, parts } = parseTag(str.slice(start + 2, end))
-    out.push(renderTag(tag, parts, key++))
+    out.push(renderTag(tag, parts, key++, onSpellClick))
     i = end + 1
   }
   return out
 }
 
-function Prose({ children }) {
-  return <p className="text-sm leading-relaxed text-stone-700">{renderInline(children)}</p>
+function Prose({ children, onSpellClick }) {
+  return <p className="text-sm leading-relaxed text-stone-700">{renderInline(children, onSpellClick)}</p>
 }
 
-function EntryList({ items, depth }) {
+function EntryList({ items, depth, onSpellClick }) {
   return (
     <ul className="ml-4 list-disc space-y-1 text-sm leading-relaxed text-stone-700">
       {items.map((item, i) => (
         <li key={i}>
           {typeof item === 'string' ? (
-            renderInline(item)
+            renderInline(item, onSpellClick)
+          ) : item?.name && item.entry != null ? (
+            // "list-hang-notitle" style (common in Background write-ups):
+            // `name` already carries its own trailing colon ("Feat:"), and
+            // the text lives in the singular `entry` field, not `entries` —
+            // a name-only space separator here, not ". ", or it reads "Feat:.".
+            <>
+              <strong>{renderInline(item.name, onSpellClick)} </strong>
+              {typeof item.entry === 'string' ? (
+                renderInline(item.entry, onSpellClick)
+              ) : (
+                <Entries entries={item.entry} depth={depth + 1} inline onSpellClick={onSpellClick} />
+              )}
+            </>
           ) : item?.name ? (
             <>
-              <strong>{renderInline(item.name)}. </strong>
-              <Entries entries={item.entries} depth={depth + 1} inline />
+              <strong>{renderInline(item.name, onSpellClick)}. </strong>
+              <Entries entries={item.entries} depth={depth + 1} inline onSpellClick={onSpellClick} />
             </>
           ) : (
-            <Entries entries={item} depth={depth + 1} inline />
+            <Entries entries={item} depth={depth + 1} inline onSpellClick={onSpellClick} />
           )}
         </li>
       ))}
@@ -140,7 +169,7 @@ function EntryList({ items, depth }) {
   )
 }
 
-function EntryTable({ node }) {
+function EntryTable({ node, onSpellClick }) {
   const rows = node.rows || []
   const cols = node.colLabels || []
   return (
@@ -154,7 +183,7 @@ function EntryTable({ node }) {
             <tr className="border-b border-[#e2cfb3]">
               {cols.map((c, i) => (
                 <th key={i} className="px-2 py-1 text-left font-semibold text-stone-700">
-                  {renderInline(String(c))}
+                  {renderInline(String(c), onSpellClick)}
                 </th>
               ))}
             </tr>
@@ -165,7 +194,12 @@ function EntryTable({ node }) {
             <tr key={ri} className="border-b border-[#f0e5d0]">
               {(Array.isArray(row) ? row : row.row || []).map((cell, ci) => (
                 <td key={ci} className="px-2 py-1 align-top text-stone-700">
-                  <Entries entries={typeof cell === 'object' && cell?.entries ? cell.entries : cell} depth={1} inline />
+                  <Entries
+                    entries={typeof cell === 'object' && cell?.entries ? cell.entries : cell}
+                    depth={1}
+                    inline
+                    onSpellClick={onSpellClick}
+                  />
                 </td>
               ))}
             </tr>
@@ -186,10 +220,10 @@ const REF_KEYS = {
   refOptionalfeature: 'optionalfeature',
 }
 
-function EntryBlock({ node, depth }) {
+function EntryBlock({ node, depth, onSpellClick }) {
   if (node == null) return null
-  if (typeof node === 'string') return <Prose>{node}</Prose>
-  if (Array.isArray(node)) return <Entries entries={node} depth={depth} />
+  if (typeof node === 'string') return <Prose onSpellClick={onSpellClick}>{node}</Prose>
+  if (Array.isArray(node)) return <Entries entries={node} depth={depth} onSpellClick={onSpellClick} />
 
   if (REF_KEYS[node.type]) {
     const name = String(node[REF_KEYS[node.type]] || '').split('|')[0]
@@ -202,20 +236,20 @@ function EntryBlock({ node, depth }) {
 
   switch (node.type) {
     case 'list':
-      return <EntryList items={node.items || []} depth={depth} />
+      return <EntryList items={node.items || []} depth={depth} onSpellClick={onSpellClick} />
     case 'table':
-      return <EntryTable node={node} />
+      return <EntryTable node={node} onSpellClick={onSpellClick} />
     case 'options':
       return (
         <div className="text-sm">
           {node.count && <p className="mb-1 italic text-stone-500">Choose {node.count}:</p>}
-          <EntryList items={node.entries || []} depth={depth} />
+          <EntryList items={node.entries || []} depth={depth} onSpellClick={onSpellClick} />
         </div>
       )
     case 'quote':
       return (
         <blockquote className="border-l-2 border-violet-300 pl-3 text-sm italic text-stone-600">
-          <Entries entries={node.entries} depth={depth + 1} inline />
+          <Entries entries={node.entries} depth={depth + 1} inline onSpellClick={onSpellClick} />
           {node.by && <div className="mt-1 not-italic text-xs text-stone-400">— {node.by}</div>}
         </blockquote>
       )
@@ -225,8 +259,8 @@ function EntryBlock({ node, depth }) {
     case 'variantInner':
       return (
         <div className="rounded-md border border-[#e2cfb3] bg-[#f5ede0] p-3">
-          {node.name && <div className="mb-1 text-sm font-semibold text-stone-800">{renderInline(node.name)}</div>}
-          <Entries entries={node.entries} depth={depth + 1} />
+          {node.name && <div className="mb-1 text-sm font-semibold text-stone-800">{renderInline(node.name, onSpellClick)}</div>}
+          <Entries entries={node.entries} depth={depth + 1} onSpellClick={onSpellClick} />
         </div>
       )
     case 'entries':
@@ -236,27 +270,27 @@ function EntryBlock({ node, depth }) {
       return (
         <div className="space-y-1.5">
           {node.name && (
-            <HeadingTag className="text-sm font-semibold text-stone-800">{renderInline(node.name)}</HeadingTag>
+            <HeadingTag className="text-sm font-semibold text-stone-800">{renderInline(node.name, onSpellClick)}</HeadingTag>
           )}
-          <Entries entries={node.entries} depth={depth + 1} />
+          <Entries entries={node.entries} depth={depth + 1} onSpellClick={onSpellClick} />
         </div>
       )
     }
   }
 }
 
-export default function Entries({ entries, depth = 0, inline = false }) {
+export default function Entries({ entries, depth = 0, inline = false, onSpellClick }) {
   if (entries == null) return null
   if (typeof entries === 'string') {
-    return inline ? <>{renderInline(entries)}</> : <Prose>{entries}</Prose>
+    return inline ? <>{renderInline(entries, onSpellClick)}</> : <Prose onSpellClick={onSpellClick}>{entries}</Prose>
   }
   if (!Array.isArray(entries)) {
-    return <EntryBlock node={entries} depth={depth} />
+    return <EntryBlock node={entries} depth={depth} onSpellClick={onSpellClick} />
   }
   return (
     <div className="space-y-1.5">
       {entries.map((e, i) => (
-        <EntryBlock key={i} node={e} depth={depth} />
+        <EntryBlock key={i} node={e} depth={depth} onSpellClick={onSpellClick} />
       ))}
     </div>
   )

@@ -20294,30 +20294,6 @@
     }
   },
   {
-    "name": "Adamantine",
-    "source": "VSS",
-    "featureType": [
-      "MP"
-    ],
-    "prerequisite": [
-      {
-        "feature": [
-          "Journeyman, Armor"
-        ]
-      }
-    ],
-    "entries": [
-      "{@bold Components:} Masterwork suit of exotic heavy armor",
-      "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While wearing it, any critical hit against you becomes a normal hit."
-    ],
-    "_gr": {
-      "origin": "homebrew",
-      "line": "valdas-spire",
-      "edition": "2014",
-      "book": "VSS"
-    }
-  },
-  {
     "name": "Advanced Poisoner",
     "source": "VSS",
     "featureType": [
@@ -21999,31 +21975,6 @@
     }
   },
   {
-    "name": "Exotic",
-    "source": "VSS",
-    "featureType": [
-      "MP"
-    ],
-    "prerequisite": [
-      {
-        "feature": [
-          "Apprentice, Armor"
-        ]
-      }
-    ],
-    "entries": [
-      "{@bold Components:} Masterwork suit of armor that isn't exotic",
-      "This armor becomes exotic armor, and you have a +1 bonus to AC while wearing it.",
-      "No class, other than the craftsman, gains proficiency with exotic armor."
-    ],
-    "_gr": {
-      "origin": "homebrew",
-      "line": "valdas-spire",
-      "edition": "2014",
-      "book": "VSS"
-    }
-  },
-  {
     "name": "Explosive",
     "source": "VSS",
     "featureType": [
@@ -23046,54 +22997,6 @@
     }
   },
   {
-    "name": "Magical",
-    "source": "VSS",
-    "featureType": [
-      "MP"
-    ],
-    "prerequisite": [
-      {
-        "feature": [
-          "Master, Weapon"
-        ]
-      }
-    ],
-    "entries": [
-      "{@bold Components:} Masterwork exotic weapon",
-      "This weapon becomes magical and gains a +1 bonus to its attack and damage rolls. This benefit stacks if you apply the Magical property at different levels."
-    ],
-    "_gr": {
-      "origin": "homebrew",
-      "line": "valdas-spire",
-      "edition": "2014",
-      "book": "VSS"
-    }
-  },
-  {
-    "name": "Magical",
-    "source": "VSS",
-    "featureType": [
-      "MP"
-    ],
-    "prerequisite": [
-      {
-        "feature": [
-          "Legendary, Weapon"
-        ]
-      }
-    ],
-    "entries": [
-      "{@bold Components:} Masterwork exotic weapon",
-      "This weapon becomes magical and gains a +1 bonus to its attack and damage rolls. This benefit stacks if you apply the Magical property at different levels."
-    ],
-    "_gr": {
-      "origin": "homebrew",
-      "line": "valdas-spire",
-      "edition": "2014",
-      "book": "VSS"
-    }
-  },
-  {
     "name": "Magnified Blast",
     "source": "VSS",
     "featureType": [
@@ -23304,30 +23207,6 @@
     "entries": [
       "{@bold Components:} Masterwork exotic melee weapon with the Finesse property",
       "This weapon's damage die increases by two steps, and its weight is halved."
-    ],
-    "_gr": {
-      "origin": "homebrew",
-      "line": "valdas-spire",
-      "edition": "2014",
-      "book": "VSS"
-    }
-  },
-  {
-    "name": "Mithral",
-    "source": "VSS",
-    "featureType": [
-      "MP"
-    ],
-    "prerequisite": [
-      {
-        "feature": [
-          "Journeyman, Armor"
-        ]
-      }
-    ],
-    "entries": [
-      "{@bold Components:} suit of medium or heavy armor",
-      "This suit of armor is made of mithral, a light and flexible metal that is as strong as steel. Armor made of mithral weighs half as much as normal, has no Strength requirement, and doesn't impose disadvantage on Dexterity ({@skill Stealth}) checks. If the armor is medium armor, the maximum Dexterity modifier you can apply to your Armor Class increases to 3, instead of 2, and the armor can easily be worn hidden under normal clothing."
     ],
     "_gr": {
       "origin": "homebrew",

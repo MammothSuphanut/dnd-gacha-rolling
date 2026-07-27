@@ -51,7 +51,7 @@ function RefLine({ label, items }) {
   )
 }
 
-export default function SpellDetailPanel({ spell }) {
+export default function SpellDetailPanel({ spell, onSpellClick }) {
   if (!spell) {
     return (
       <div className="flex h-64 items-center justify-center rounded-lg border border-dashed border-[#e2cfb3] bg-white/50 text-sm text-stone-400 lg:h-full">
@@ -83,8 +83,8 @@ export default function SpellDetailPanel({ spell }) {
         <Fact label="ระยะเวลา" value={formatSpellDuration(spell.duration)} />
       </div>
 
-      {spell.entries?.length > 0 && <Entries entries={spell.entries} />}
-      {spell.entriesHigherLevel?.length > 0 && <Entries entries={spell.entriesHigherLevel} />}
+      {spell.entries?.length > 0 && <Entries entries={spell.entries} onSpellClick={onSpellClick} />}
+      {spell.entriesHigherLevel?.length > 0 && <Entries entries={spell.entriesHigherLevel} onSpellClick={onSpellClick} />}
 
       {(spell.classes?.fromClassList?.length > 0 ||
         spell.classes?.fromSubclass?.length > 0 ||

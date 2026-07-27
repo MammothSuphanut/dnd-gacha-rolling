@@ -90,6 +90,21 @@ export function isConcentration(spell) {
   return Array.isArray(spell.duration) && spell.duration.some((d) => d.concentration)
 }
 
+// Resolves a `{@spell name|source}` inline-text reference against the full
+// spell list. `source` is frequently omitted in the raw text (5etools
+// convention leaves it out when unambiguous) — falls back to a name-only
+// match in that case, or if the given source isn't found.
+export function findSpellByRef(spellList, ref) {
+  if (!ref?.name || !Array.isArray(spellList)) return null
+  const nameLower = ref.name.toLowerCase()
+  if (ref.source) {
+    const sourceLower = ref.source.toLowerCase()
+    const bySource = spellList.find((s) => s.name.toLowerCase() === nameLower && s.source.toLowerCase() === sourceLower)
+    if (bySource) return bySource
+  }
+  return spellList.find((s) => s.name.toLowerCase() === nameLower) || null
+}
+
 // Matches 5e.tools' own `UrlUtil.URL_TO_HASH_GENERIC` (js/utils.js): each
 // part is `encodeURIComponent(str.toLowerCase()).toLowerCase()`, joined by
 // "_". Confirmed to be exactly what backgrounds.html, feats.html,

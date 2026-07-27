@@ -22995,23 +22995,6 @@
     }
   },
   {
-    "source": "PHB",
-    "raceName": "Half-Elf",
-    "raceSource": "PHB",
-    "page": 38,
-    "srd": true,
-    "reprintedAs": [
-      "Khoravar|EFA"
-    ],
-    "hasFluff": true,
-    "hasFluffImages": true,
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
     "name": "Variant; Aquatic Elf Descent",
     "source": "SCAG",
     "raceName": "Half-Elf",
@@ -23759,20 +23742,6 @@
     }
   },
   {
-    "source": "PHB",
-    "raceName": "Half-Orc",
-    "raceSource": "PHB",
-    "page": 40,
-    "srd": true,
-    "hasFluff": true,
-    "hasFluffImages": true,
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
     "name": "Variant; Mark of Finding",
     "source": "ERLW",
     "raceName": "Half-Orc",
@@ -24317,34 +24286,6 @@
           "You have advantage on saving throws against poison, and you have resistance against poison damage."
         ],
         "type": "entries"
-      }
-    ],
-    "hasFluff": true,
-    "hasFluffImages": true,
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
-    "source": "PHB",
-    "raceName": "Human",
-    "raceSource": "PHB",
-    "page": 29,
-    "srd": true,
-    "basicRules": true,
-    "reprintedAs": [
-      "Human|XPHB"
-    ],
-    "ability": [
-      {
-        "str": 1,
-        "dex": 1,
-        "con": 1,
-        "int": 1,
-        "wis": 1,
-        "cha": 1
       }
     ],
     "hasFluff": true,
@@ -25045,157 +24986,6 @@
     }
   },
   {
-    "name": "Variant; Mark of Finding",
-    "source": "ERLW",
-    "raceName": "Human",
-    "raceSource": "PHB",
-    "page": 41,
-    "reprintedAs": [
-      {
-        "uid": "Mark of Finding|EFA",
-        "tag": "feat"
-      }
-    ],
-    "ability": [
-      {
-        "con": 1,
-        "wis": 2
-      }
-    ],
-    "darkvision": 60,
-    "traitTags": [
-      "Dragonmark",
-      "Skill Bonus Dice"
-    ],
-    "languageProficiencies": [
-      {
-        "common": true,
-        "goblin": true
-      }
-    ],
-    "additionalSpells": [
-      {
-        "innate": {
-          "1": [
-            "hunter's mark"
-          ],
-          "3": {
-            "daily": {
-              "1": [
-                "locate object"
-              ]
-            }
-          }
-        },
-        "expanded": {
-          "s1": [
-            "faerie fire",
-            "longstrider"
-          ],
-          "s2": [
-            "locate animals or plants",
-            "locate object"
-          ],
-          "s3": [
-            "clairvoyance",
-            "speak with plants"
-          ],
-          "s4": [
-            "divination",
-            "locate creature"
-          ],
-          "s5": [
-            "commune with nature"
-          ]
-        },
-        "ability": "wis"
-      }
-    ],
-    "entries": [
-      {
-        "type": "entries",
-        "name": "Darkvision",
-        "entries": [
-          "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-        ]
-      },
-      {
-        "type": "entries",
-        "name": "Hunter's Intuition",
-        "entries": [
-          "When you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
-        ]
-      },
-      {
-        "type": "entries",
-        "name": "Finder's Magic",
-        "entries": [
-          "You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Wisdom is your spellcasting ability for these spells."
-        ]
-      },
-      {
-        "type": "entries",
-        "name": "Languages",
-        "entries": [
-          "You can speak, read, and write Common and Goblin."
-        ],
-        "data": {
-          "overwrite": "Languages"
-        }
-      },
-      {
-        "type": "entries",
-        "name": "Spells of the Mark",
-        "entries": [
-          "If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Finding Spells table are added to the spell list of your spellcasting class.",
-          {
-            "type": "table",
-            "caption": "Mark of Finding Spells",
-            "colLabels": [
-              "Spell Level",
-              "Spells"
-            ],
-            "colStyles": [
-              "col-2 text-center",
-              "col-10"
-            ],
-            "rows": [
-              [
-                "1st",
-                "{@spell faerie fire}, {@spell longstrider}"
-              ],
-              [
-                "2nd",
-                "{@spell locate animals or plants}, {@spell locate object}"
-              ],
-              [
-                "3rd",
-                "{@spell clairvoyance}, {@spell speak with plants}"
-              ],
-              [
-                "4th",
-                "{@spell divination}, {@spell locate creature}"
-              ],
-              [
-                "5th",
-                "{@spell commune with nature}"
-              ]
-            ]
-          }
-        ]
-      }
-    ],
-    "overwrite": {
-      "traitTags": true,
-      "languageProficiencies": true
-    },
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "ERLW"
-    }
-  },
-  {
     "name": "Gavony",
     "source": "PSI",
     "raceName": "Human (Innistrad)",
@@ -25859,23 +25649,6 @@
       "origin": "official",
       "edition": "legacy",
       "book": "ERLW"
-    }
-  },
-  {
-    "source": "PHB",
-    "raceName": "Tiefling",
-    "raceSource": "PHB",
-    "page": 42,
-    "srd": true,
-    "reprintedAs": [
-      "Tiefling|XPHB"
-    ],
-    "hasFluff": true,
-    "hasFluffImages": true,
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
     }
   },
   {
@@ -26624,75 +26397,6 @@
       "origin": "official",
       "edition": "legacy",
       "book": "MTF"
-    }
-  },
-  {
-    "name": "Ixalan",
-    "source": "PSX",
-    "raceName": "Vampire",
-    "raceSource": "PSZ",
-    "page": 14,
-    "otherSources": null,
-    "ability": [
-      {
-        "wis": 1
-      }
-    ],
-    "entries": [
-      {
-        "name": "Age",
-        "type": "entries",
-        "entries": [
-          "Vampires don't mature and age in the same way that other races do."
-        ],
-        "data": {
-          "overwrite": "Age"
-        }
-      },
-      {
-        "name": "Alignment",
-        "type": "entries",
-        "entries": [
-          "Vampires might not have an innate tendency toward evil, but many of them end up there. Evil or not, their strict hierarchies incline them toward a lawful alignment."
-        ],
-        "data": {
-          "overwrite": "Alignment"
-        }
-      },
-      {
-        "type": "entries",
-        "name": "Size",
-        "entries": [
-          "Vampires are the same size and build as humans. Your size is Medium."
-        ],
-        "data": {
-          "overwrite": "Size"
-        }
-      },
-      {
-        "type": "entries",
-        "name": "Feast of Blood",
-        "entries": [
-          "When you drain blood with your Bloodthirst ability, you experience a surge of vitality. Your speed increases by 10 feet, and you gain advantage on Strength and Dexterity checks and saving throws for 1 minute."
-        ]
-      },
-      {
-        "name": "Languages",
-        "entries": [
-          "You can speak, read, and write {@language Common Trade Pidgin|PSX|Common} (if it exists in your campaign) and {@language Vampire|PSX}."
-        ],
-        "type": "entries",
-        "data": {
-          "overwrite": "Languages"
-        }
-      }
-    ],
-    "hasFluff": true,
-    "hasFluffImages": true,
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PSX"
     }
   },
   {

@@ -103,16 +103,38 @@ function originFacet(entry) {
   return entry._gr.origin === 'homebrew' ? entry._gr.line : 'official'
 }
 
+// Character-level requirement pulled out of `prerequisite[].level` — that
+// field is either a plain number or `{level, class, subclass}`. Shared by
+// feat and optionalfeature since both use the exact same prerequisite shape.
+// No explicit level anywhere in `prerequisite` defaults to 1 — nothing gates
+// it beyond "have the class", so it's available from the earliest level, not
+// exempt from level filtering entirely (an unfiltered item would otherwise
+// wrongly bleed into e.g. a "level 3-5 only" search).
+const PREREQ_LEVEL_FILTER = {
+  key: 'prereqLevel',
+  label: 'Level',
+  type: 'range',
+  getValues: (e) => {
+    const levels = arr(e.prerequisite)
+      .map((p) => (typeof p.level === 'object' ? p.level?.level : p.level))
+      .filter((lvl) => lvl != null)
+    return (levels.length ? levels : [1]).map(String)
+  },
+  optionLabel: (v) => `Level ${v}`,
+}
+
 // Facet filter available on every category.
 const ORIGIN_FILTER = {
   key: 'origin',
   label: 'แหล่งที่มา',
+  type: 'multiselect',
   getValues: (e) => [originFacet(e)],
   optionLabel: (v) => originLabels[v] || v,
 }
 const EDITION_FILTER = {
   key: 'edition',
   label: 'Edition',
+  type: 'multiselect',
   getValues: (e) => [e._gr.edition],
   optionLabel: (v) => editionLabels[v] || v,
 }
@@ -163,9 +185,11 @@ export const CATEGORIES = [
       {
         key: 'category',
         label: 'ประเภท',
+        type: 'multiselect',
         getValues: (e) => arr(e.category),
         optionLabel: (v) => label(FEAT_CATEGORY_LABELS, v),
       },
+      PREREQ_LEVEL_FILTER,
       ORIGIN_FILTER,
       EDITION_FILTER,
     ],
@@ -178,9 +202,11 @@ export const CATEGORIES = [
       {
         key: 'featureType',
         label: 'ประเภท',
+        type: 'multiselect',
         getValues: (e) => arr(e.featureType),
         optionLabel: (v) => label(OPT_FEATURE_TYPE_LABELS, v),
       },
+      PREREQ_LEVEL_FILTER,
       ORIGIN_FILTER,
       EDITION_FILTER,
     ],
@@ -193,18 +219,21 @@ export const CATEGORIES = [
       {
         key: 'level',
         label: 'Level',
+        type: 'range',
         getValues: (e) => [String(e.level)],
         optionLabel: (v) => (v === '0' ? 'Cantrip' : `Level ${v}`),
       },
       {
         key: 'school',
         label: 'School',
+        type: 'multiselect',
         getValues: (e) => [e.school],
         optionLabel: (v) => label(SCHOOL_LABELS, v),
       },
       {
         key: 'class',
         label: 'Class',
+        type: 'multiselect',
         // Official spell files carry no `classes` field of their own — the
         // normalize script backfills it from spells/sources.json, but that
         // lookup doesn't cover every book (e.g. XGE, EGW), so some spells
@@ -215,6 +244,7 @@ export const CATEGORIES = [
       {
         key: 'subclass',
         label: 'Subclass',
+        type: 'multiselect',
         // Filled in two ways: a handful of spells (Valda's Spire "Hex" line)
         // embed it directly, and the normalize script backfills the rest by
         // scanning every subclass's `additionalSpells` (expanded spell
@@ -225,6 +255,7 @@ export const CATEGORIES = [
       {
         key: 'grantedBySpecies',
         label: 'Species',
+        type: 'multiselect',
         // Reverse-indexed at build time from species' `additionalSpells` —
         // only covers spells named literally (not "choose any spell" grants).
         getValues: (e) => arr(e.grantedBy?.species).map((g) => g.label),
@@ -233,12 +264,14 @@ export const CATEGORIES = [
       {
         key: 'grantedByBackground',
         label: 'Background',
+        type: 'multiselect',
         getValues: (e) => arr(e.grantedBy?.background).map((g) => g.label),
         optionLabel: (v) => v,
       },
       {
         key: 'grantedByFeat',
         label: 'Feat',
+        type: 'multiselect',
         getValues: (e) => arr(e.grantedBy?.feat).map((g) => g.label),
         optionLabel: (v) => v,
       },
@@ -377,4 +410,4 @@ export function getCategory(id) {
   return CATEGORIES.find((c) => c.id === id)
 }
 
-export { originFacet, monsterTypeString, SCHOOL_LABELS, SIZE_LABELS, ALIGNMENT_LABELS, FEAT_CATEGORY_LABELS }
+export { originFacet, monsterTypeString, SCHOOL_LABELS, SIZE_LABELS, ALIGNMENT_LABELS, FEAT_CATEGORY_LABELS, OPT_FEATURE_TYPE_LABELS }

@@ -15,7 +15,7 @@ const LINK_TEXT = {
   optionalfeature: 'เปิดตัวเลือกนี้ใน 5e.tools ↗',
 }
 
-export default function OptionDetailPanel({ categoryId, entry }) {
+export default function OptionDetailPanel({ categoryId, entry, onSpellClick }) {
   if (!entry) {
     return (
       <div className="flex h-64 items-center justify-center rounded-lg border border-dashed border-[#e2cfb3] bg-white/50 text-sm text-stone-400 lg:h-full">
@@ -46,7 +46,7 @@ export default function OptionDetailPanel({ categoryId, entry }) {
         </p>
       )}
 
-      {entry.entries?.length > 0 && <Entries entries={entry.entries} />}
+      {entry.entries?.length > 0 && <Entries entries={entry.entries} onSpellClick={onSpellClick} />}
 
       {buildLink && (
         <a
