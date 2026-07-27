@@ -34,12 +34,15 @@ function dedupeReprints(spells) {
   return [...bestByName.values()].map((v) => v.spell)
 }
 
-function matchesFilters(spell, filterDefs, activeFilters) {
-  return filterDefs.every((def) => {
-    const active = activeFilters[def.key]
-    if (!active) return true
-    return def.getValues(spell).includes(active)
-  })
+// 'and' = must satisfy every active filter (narrows down — the spell has to
+// survive all of them). 'or' = satisfies at least one active filter (widens
+// out — union of whatever each filter alone would match). Filters left on
+// "ทั้งหมด" don't count as a condition either way.
+function matchesFilters(spell, filterDefs, activeFilters, matchMode) {
+  const activeDefs = filterDefs.filter((def) => activeFilters[def.key])
+  if (activeDefs.length === 0) return true
+  const checks = activeDefs.map((def) => def.getValues(spell).includes(activeFilters[def.key]))
+  return matchMode === 'or' ? checks.some(Boolean) : checks.every(Boolean)
 }
 
 export default function SpellsPage() {
@@ -49,6 +52,7 @@ export default function SpellsPage() {
   const [selectedKey, setSelectedKey] = useState(null)
   const [pinned, setPinned] = useState(() => loadPinnedKeys())
   const [onlyPinned, setOnlyPinned] = useState(false)
+  const [matchMode, setMatchMode] = useState('and')
 
   const spells = useMemo(() => dedupeReprints(data || []), [data])
 
@@ -81,10 +85,10 @@ export default function SpellsPage() {
   const filtered = useMemo(() => {
     return spells
       .filter((s) => (normalizedQuery ? s.name.toLowerCase().includes(normalizedQuery) : true))
-      .filter((s) => matchesFilters(s, spellCategory.filters, activeFilters))
+      .filter((s) => matchesFilters(s, spellCategory.filters, activeFilters, matchMode))
       .filter((s) => !onlyPinned || pinned.has(spellKey(s)))
       .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
-  }, [spells, normalizedQuery, activeFilters, onlyPinned, pinned])
+  }, [spells, normalizedQuery, activeFilters, matchMode, onlyPinned, pinned])
 
   const selectedSpell = useMemo(
     () => filtered.find((s) => spellKey(s) === selectedKey) || null,
@@ -121,6 +125,26 @@ export default function SpellsPage() {
           {/* Filters */}
           <aside className="w-full shrink-0 lg:w-64">
             <div className="rounded-lg border border-[#e2cfb3] bg-white p-3 shadow-sm">
+              <div className="mb-2 flex items-center gap-3 text-sm text-stone-700">
+                <label className="flex items-center gap-1.5">
+                  <input
+                    type="radio"
+                    name="filterMatchMode"
+                    checked={matchMode === 'and'}
+                    onChange={() => setMatchMode('and')}
+                  />
+                  ตรงทุกเงื่อนไข
+                </label>
+                <label className="flex items-center gap-1.5">
+                  <input
+                    type="radio"
+                    name="filterMatchMode"
+                    checked={matchMode === 'or'}
+                    onChange={() => setMatchMode('or')}
+                  />
+                  ตรงข้อใดข้อหนึ่ง
+                </label>
+              </div>
               <input
                 type="text"
                 value={query}
@@ -143,7 +167,11 @@ export default function SpellsPage() {
                     key={def.key}
                     value={activeFilters[def.key] || ''}
                     onChange={(e) => setFilter(def.key, e.target.value)}
-                    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm"
+                    className={`w-full rounded-md border px-3 py-2 text-sm ${
+                      activeFilters[def.key]
+                        ? 'border-violet-400 bg-violet-50 font-medium text-violet-800'
+                        : 'border-gray-300'
+                    }`}
                   >
                     <option value="">{def.label}: ทั้งหมด</option>
                     {filterOptions[def.key]?.map((v) => (
