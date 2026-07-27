@@ -132,6 +132,8 @@ Messenger กล่าวคำอำลาสั้นๆ ยืนยันว
 
 ตัวละครเลื่อนสู่ **Level 3 + 30–40% สู่ Level 4** เมื่อ EP จบ (ตรงกับ Level Checkpoint ของ Act 1 — "จบ Fortress of the Dead Jarl (รวม Mindflayer + Golem/Jarl)")
 
+*(โต๊ะ ats: ก่อนเปิดฉาก Act 2 เล่น [EP00ats1: The Homeward Tide](<../ACT02-dwendalian-shadow/EP00ats1 - The Homeward Tide.md>) ก่อน — การเดินทางกลับ Palebank Village และภารกิจส่งคืนนาฬิกาให้ Foref)*
+
 ## จบ EP ด้วย
 
 ตัวละครออกจาก Aeor Lab พร้อม Fragment of Wisdom ในมือ มุ่งหน้าสู่การผจญภัยครั้งใหม่เพื่อตามหา Fragment ที่เหลืออีก 4 ชิ้น — เปิดฉาก **[Act 2](../ACT02-dwendalian-shadow/00-act-outline.md)**
