@@ -8510,6 +8510,34 @@
         "rarity": "Mundane"
       },
       {
+        "id": "shopitem-1a7b3c9d-6e2f-4b81-9c3a-7d5e8f9b0c1a",
+        "name": "Firewood",
+        "category": "Adventuring Gear",
+        "subCategory": "",
+        "priceNormal": "3 sp",
+        "limitedStock": false,
+        "rural": true,
+        "urban": true,
+        "premium": true,
+        "note": "ฟืน 1 กองสำหรับก่อไฟ เพียงพอสำหรับใช้ตั้งแคมป์ 1 คืน",
+        "enhanceable": false,
+        "rarity": "Mundane"
+      },
+      {
+        "id": "shopitem-2b8c4d0e-7f3a-4c92-8d4b-8e6f0a1b2c3d",
+        "name": "Food (Ration)",
+        "category": "Adventuring Gear",
+        "subCategory": "",
+        "priceNormal": "5 sp",
+        "limitedStock": false,
+        "rural": true,
+        "urban": true,
+        "premium": true,
+        "note": "เสบียงอาหาร 1 หน่วย เพียงพอสำหรับการเดินทาง 1 วัน",
+        "enhanceable": false,
+        "rarity": "Mundane"
+      },
+      {
         "id": "shopitem-7d9119d0-84ba-463a-8ccf-a8871e1790eb",
         "name": "Grappling Hook",
         "category": "Adventuring Gear",
@@ -8760,6 +8788,20 @@
         "note": "คบเพลิงให้แสงสว่างรัศมี 20 ฟุต เผาไหม้ได้นาน 1 ชั่วโมง สามารถใช้เป็นอาวุธทุบสร้างความเสียหาย 1d4 ไฟได้",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#torch_xphb",
+        "rarity": "Mundane"
+      },
+      {
+        "id": "shopitem-3c9d5e1f-8a4b-4da3-9e5c-9f7a1b2c3d4e",
+        "name": "Water",
+        "category": "Adventuring Gear",
+        "subCategory": "",
+        "priceNormal": "1 sp",
+        "limitedStock": false,
+        "rural": true,
+        "urban": true,
+        "premium": true,
+        "note": "น้ำดื่มสะอาด 4 ไพนต์ (1 หน่วย) เพียงพอสำหรับดื่ม 1 วัน",
+        "enhanceable": false,
         "rarity": "Mundane"
       },
       {
