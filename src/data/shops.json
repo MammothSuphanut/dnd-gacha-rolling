@@ -1114,7 +1114,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "เกราะกลางทำจากแผ่นโลหะเรีย�������������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
+        "note": "เกราะกลางทำจากแผ่นโลหะเรีย���������������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
         "link": "https://5e.tools/items.html#banded%20plate_vss",
         "rarity": "Mundane"
       },
@@ -3146,7 +3146,7 @@
         "rural": true,
         "urban": true,
         "premium": true,
-        "note": "ปลอกเกราะรอบคอ ป้องกันลำคอ��ากการโจมตี",
+        "note": "ปลอกเกราะรอบคอ ป้องกั��ลำคอ��ากการโจมตี",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -11316,7 +11316,7 @@
         "rural": false,
         "urban": false,
         "premium": true,
-        "note": "บริการบดอัญมณีระดับ 5,000 เหรียญทองให้เป็นผงสำหรับใช้ในพิธีกรรมหรือเวทมนตร์ชั้นสูง",
+        "note": "บริการ��ดอัญมณีระดับ 5,000 เหรียญทองให้เป็นผงสำหรับใช้ในพิธีกรรมหรือเวทมนตร์ชั้นสูง",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -22614,7 +22614,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — Fighting Chain, Sickle +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — Fighting Chain, Sickle +2 ��าตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B2%20fighting%20chain%2C%20sickle_xdmg",
         "rarity": "Rare"
@@ -33877,7 +33877,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — ราคาประเมินอัตโนมัติจากความหายาก/ความ���ามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#boros%20guild%20signet_ggr",
         "rarity": "Uncommon"
@@ -41392,7 +41392,7 @@
         "rural": false,
         "urban": false,
         "premium": true,
-        "note": "พิณไลร์ เครื่องดนตรีสำหรับบาร์ดใช้ร่ายเวทหรือแสดงดนตรี",
+        "note": "พิณ��ลร์ เครื่องดนตรีสำหรับบาร์ดใช้ร่ายเวทหรือแสดงดนตรี",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#lyre_xphb",
         "rarity": "Mundane"
@@ -43281,7 +43281,7 @@
         "rural": false,
         "urban": false,
         "premium": true,
-        "note": "รอยสักที่ช่วยให้ผู้สวมสั่งการและควบคุมสัตว์เลี้ยงหรือฝูงสัตว์ได้ดีขึ้น",
+        "note": "รอยสั��ที่ช่วยให้ผู้สวมสั่งการและควบคุมสัตว์เลี้ยงหรือฝูงสัตว์ได้ดีขึ้น",
         "enhanceable": false,
         "rarity": "Mundane"
       },
@@ -56134,7 +56134,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาประเมิ��อัตโนมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#soulbond%20stone_grimhollowcg24",
         "rarity": "Rare"
