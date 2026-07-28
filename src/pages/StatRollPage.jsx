@@ -40,6 +40,7 @@ export default function StatRollPage({
   pickMode = false,
   pickedStatKeys,
   onToggleStatKey,
+  onToggleAllStatKeys,
 }) {
   const {
     results,
@@ -225,6 +226,9 @@ export default function StatRollPage({
     })
   }
 
+  const assignableStatKeys = STATS.filter((stat) => assignments[stat.key]).map((stat) => stat.key)
+  const allStatKeysPicked =
+    assignableStatKeys.length > 0 && assignableStatKeys.every((key) => pickedStatKeys?.has(key))
   const assignedResultIds = new Set(Object.values(assignments))
   const resultById = new Map(results.map((r) => [r.id, r]))
   const resultsSum = results.reduce((sum, r) => sum + r.total, 0)
@@ -424,8 +428,27 @@ export default function StatRollPage({
           </div>
 
           <div className="mt-8">
-            <div className="mb-2 flex items-center justify-between">
-              <h2 className="text-sm font-semibold text-stone-500">ลงค่าพลัง</h2>
+            <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <h2 className="text-sm font-semibold text-stone-500">ลงค่าพลัง</h2>
+                {pickMode && (
+                  <label
+                    className={`flex items-center gap-1.5 text-xs text-stone-600 ${
+                      assignableStatKeys.length === 0 ? 'cursor-not-allowed opacity-40' : 'cursor-pointer'
+                    }`}
+                    title={assignableStatKeys.length === 0 ? 'ยังไม่ได้ลงค่าให้ช่องไหนเลย' : ''}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={allStatKeysPicked}
+                      disabled={assignableStatKeys.length === 0}
+                      onChange={() => onToggleAllStatKeys?.(assignableStatKeys)}
+                      className="h-4 w-4 accent-violet-700 disabled:opacity-40"
+                    />
+                    เลือกค่าพลังทั้ง 6
+                  </label>
+                )}
+              </div>
               <span className="text-sm font-medium text-stone-600">
                 รวมที่ลงแล้ว ({assignedResultIds.size}/6):{' '}
                 <span className="font-bold text-stone-900">{assignedSum}</span>

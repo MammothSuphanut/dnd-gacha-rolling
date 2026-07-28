@@ -79,7 +79,7 @@ export const EXPORT_SECTIONS = [
   { key: 'image', group: 'อื่นๆ', label: 'รูปตัวละคร', hint: 'ใส่รูปหลักของตัวละครลงในชีท', defaultOn: false },
 ]
 
-const SAVE_CHECKBOX = {
+export const SAVE_CHECKBOX = {
   str: 'Check Box37',
   dex: 'Check Box33',
   con: 'Check Box32',
@@ -88,7 +88,7 @@ const SAVE_CHECKBOX = {
   cha: 'Check Box26',
 }
 
-const SAVE_TEXT_FIELD = {
+export const SAVE_TEXT_FIELD = {
   str: 'Text91',
   dex: 'Text87',
   con: 'Text86',
@@ -98,7 +98,7 @@ const SAVE_TEXT_FIELD = {
 }
 
 // key -> { checkbox, text }, matched against dnd5e.js's SKILLS list
-const SKILL_FIELD = {
+export const SKILL_FIELD = {
   athletics: { checkbox: 'Check Box38', text: 'Text92' },
   acrobatics: { checkbox: 'Check Box34', text: 'Text88' },
   sleightOfHand: { checkbox: 'Check Box35', text: 'Text89' },
@@ -119,10 +119,10 @@ const SKILL_FIELD = {
   persuasion: { checkbox: 'Check Box29', text: 'Text85' },
 }
 
-const DEATH_SAVE_SUCCESS_BOXES = ['Check Box5', 'Check Box6', 'Check Box7']
-const DEATH_SAVE_FAILURE_BOXES = ['Check Box8', 'Check Box9', 'Check Box10']
+export const DEATH_SAVE_SUCCESS_BOXES = ['Check Box5', 'Check Box6', 'Check Box7']
+export const DEATH_SAVE_FAILURE_BOXES = ['Check Box8', 'Check Box9', 'Check Box10']
 
-const WEAPON_ROW_FIELDS = [
+export const WEAPON_ROW_FIELDS = [
   ['Text30', 'Text31', 'Text32'],
   ['Text34', 'Text35', 'Text36'],
   ['Text38', 'Text39', 'Text40'],
@@ -131,7 +131,7 @@ const WEAPON_ROW_FIELDS = [
   ['Text50', 'Text51', 'Text52'],
 ]
 
-const SPELL_SLOT_TOTAL_FIELD = {
+export const SPELL_SLOT_TOTAL_FIELD = {
   1: 'Text112', 2: 'Text113', 3: 'Text114',
   4: 'Text117', 5: 'Text116', 6: 'Text115',
   7: 'Text118', 8: 'Text119', 9: 'Text120',
@@ -149,9 +149,9 @@ const SPELL_SLOT_EXPENDED_BOXES = {
   9: ['Check Box248'],
 }
 
-const PREPARED_SPELL_ROWS = 30 // Text105.N (level) / Text106.N (name), N = 0..29
+export const PREPARED_SPELL_ROWS = 30 // Text105.N (level) / Text106.N (name), N = 0..29
 
-const COIN_FIELD = { cp: 'Text226', sp: 'Text267', ep: 'Text268', gp: 'Text269', pp: 'Text270' }
+export const COIN_FIELD = { cp: 'Text226', sp: 'Text267', ep: 'Text268', gp: 'Text269', pp: 'Text270' }
 
 // character.proficienciesLanguages is one flat list mixing languages and tool/other
 // proficiencies (the editor doesn't tag entries by type) — split by name so the
@@ -237,7 +237,7 @@ function fillAppearance(map, character, include) {
 }
 
 const ABILITY_MOD_FIELD = { str: 'Text21', dex: 'Text22', con: 'Text24', int: 'Text20', wis: 'Text23', cha: 'Text25' }
-const ABILITY_SCORE_FIELD = { str: 'Text64', dex: 'Text66', con: 'Text67', int: 'Text63', wis: 'Text65', cha: 'Text68' }
+export const ABILITY_SCORE_FIELD = { str: 'Text64', dex: 'Text66', con: 'Text67', int: 'Text63', wis: 'Text65', cha: 'Text68' }
 
 function fillAbilities(map, character, include) {
   const level = totalLevel(character)

@@ -40,6 +40,34 @@ const FEAT_CATEGORY_LABELS = {
   RF: 'Replaces First Feat',
 }
 
+// Straight from 5e.tools' own Parser.OPT_FEATURE_TYPE_TO_FULL (js/parser.js)
+// — only covers official-book codes. Homebrew lines (Grim Hollow, Valda's
+// Spire) invent their own per-subclass codes with no published label table
+// (e.g. "BGT:Cl", "TLi:TB"), so those just fall back to showing the raw code.
+const OPT_FEATURE_TYPE_LABELS = {
+  AI: 'Artificer Infusion',
+  ED: 'Elemental Discipline',
+  EI: 'Eldritch Invocation',
+  MM: 'Metamagic',
+  MV: 'Maneuver',
+  'MV:B': 'Maneuver, Battle Master',
+  'MV:C2-UA': 'Maneuver, Cavalier V2 (UA)',
+  'AS:V1-UA': 'Arcane Shot, V1 (UA)',
+  'AS:V2-UA': 'Arcane Shot, V2 (UA)',
+  AS: 'Arcane Shot',
+  OTH: 'Other',
+  'FS:F': 'Fighting Style; Fighter',
+  'FS:B': 'Fighting Style; Bard',
+  'FS:P': 'Fighting Style; Paladin',
+  'FS:R': 'Fighting Style; Ranger',
+  PB: 'Pact Boon',
+  OR: 'Onomancy Resonant',
+  RN: "Rune Knight Rune",
+  AF: 'Alchemical Formula',
+  TT: "Traveler's Trick",
+  RP: 'Renown Perk',
+}
+
 function label(map, code) {
   return map[code] || code
 }
@@ -75,16 +103,38 @@ function originFacet(entry) {
   return entry._gr.origin === 'homebrew' ? entry._gr.line : 'official'
 }
 
+// Character-level requirement pulled out of `prerequisite[].level` — that
+// field is either a plain number or `{level, class, subclass}`. Shared by
+// feat and optionalfeature since both use the exact same prerequisite shape.
+// No explicit level anywhere in `prerequisite` defaults to 1 — nothing gates
+// it beyond "have the class", so it's available from the earliest level, not
+// exempt from level filtering entirely (an unfiltered item would otherwise
+// wrongly bleed into e.g. a "level 3-5 only" search).
+const PREREQ_LEVEL_FILTER = {
+  key: 'prereqLevel',
+  label: 'Level',
+  type: 'range',
+  getValues: (e) => {
+    const levels = arr(e.prerequisite)
+      .map((p) => (typeof p.level === 'object' ? p.level?.level : p.level))
+      .filter((lvl) => lvl != null)
+    return (levels.length ? levels : [1]).map(String)
+  },
+  optionLabel: (v) => `Level ${v}`,
+}
+
 // Facet filter available on every category.
 const ORIGIN_FILTER = {
   key: 'origin',
   label: 'แหล่งที่มา',
+  type: 'multiselect',
   getValues: (e) => [originFacet(e)],
   optionLabel: (v) => originLabels[v] || v,
 }
 const EDITION_FILTER = {
   key: 'edition',
   label: 'Edition',
+  type: 'multiselect',
   getValues: (e) => [e._gr.edition],
   optionLabel: (v) => editionLabels[v] || v,
 }
@@ -135,9 +185,11 @@ export const CATEGORIES = [
       {
         key: 'category',
         label: 'ประเภท',
+        type: 'multiselect',
         getValues: (e) => arr(e.category),
         optionLabel: (v) => label(FEAT_CATEGORY_LABELS, v),
       },
+      PREREQ_LEVEL_FILTER,
       ORIGIN_FILTER,
       EDITION_FILTER,
     ],
@@ -150,9 +202,11 @@ export const CATEGORIES = [
       {
         key: 'featureType',
         label: 'ประเภท',
+        type: 'multiselect',
         getValues: (e) => arr(e.featureType),
-        optionLabel: (v) => v,
+        optionLabel: (v) => label(OPT_FEATURE_TYPE_LABELS, v),
       },
+      PREREQ_LEVEL_FILTER,
       ORIGIN_FILTER,
       EDITION_FILTER,
     ],
@@ -165,14 +219,75 @@ export const CATEGORIES = [
       {
         key: 'level',
         label: 'Level',
+        type: 'range',
         getValues: (e) => [String(e.level)],
         optionLabel: (v) => (v === '0' ? 'Cantrip' : `Level ${v}`),
       },
       {
         key: 'school',
         label: 'School',
+        type: 'multiselect',
         getValues: (e) => [e.school],
         optionLabel: (v) => label(SCHOOL_LABELS, v),
+      },
+      {
+        key: 'class',
+        label: 'Class',
+        type: 'multiselect',
+        // Official spell files carry no `classes` field of their own — the
+        // normalize script backfills it from spells/sources.json, but that
+        // lookup doesn't cover every book (e.g. XGE, EGW), so some spells
+        // still fall through to "ไม่ระบุ".
+        getValues: (e) => arr(e.classes?.fromClassList).map((c) => c.name),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'subclass',
+        label: 'Subclass',
+        type: 'multiselect',
+        // Filled in two ways: a handful of spells (Valda's Spire "Hex" line)
+        // embed it directly, and the normalize script backfills the rest by
+        // scanning every subclass's `additionalSpells` (expanded spell
+        // lists, domain/origin bonus spells, etc.) for this spell's name.
+        getValues: (e) => arr(e.classes?.fromSubclass).map((s) => s.subclass?.shortName || s.subclass?.name).filter(Boolean),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'grantedBySpecies',
+        label: 'Species',
+        type: 'multiselect',
+        // Reverse-indexed at build time from species' `additionalSpells` —
+        // only covers spells named literally (not "choose any spell" grants).
+        getValues: (e) => arr(e.grantedBy?.species).map((g) => g.label),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'grantedByBackground',
+        label: 'Background',
+        type: 'multiselect',
+        getValues: (e) => arr(e.grantedBy?.background).map((g) => g.label),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'grantedByFeat',
+        label: 'Feat',
+        type: 'multiselect',
+        getValues: (e) => arr(e.grantedBy?.feat).map((g) => g.label),
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'ritual',
+        label: 'Ritual',
+        getValues: (e) => [e.meta?.ritual ? 'เป็น Ritual' : 'ไม่ใช่ Ritual'],
+        optionLabel: (v) => v,
+      },
+      {
+        key: 'concentration',
+        label: 'Concentration',
+        getValues: (e) => [
+          arr(e.duration).some((d) => d.concentration) ? 'ต้อง Concentration' : 'ไม่ต้อง Concentration',
+        ],
+        optionLabel: (v) => v,
       },
       ORIGIN_FILTER,
       EDITION_FILTER,
@@ -295,4 +410,4 @@ export function getCategory(id) {
   return CATEGORIES.find((c) => c.id === id)
 }
 
-export { originFacet, monsterTypeString, SCHOOL_LABELS, SIZE_LABELS, ALIGNMENT_LABELS }
+export { originFacet, monsterTypeString, SCHOOL_LABELS, SIZE_LABELS, ALIGNMENT_LABELS, FEAT_CATEGORY_LABELS, OPT_FEATURE_TYPE_LABELS }

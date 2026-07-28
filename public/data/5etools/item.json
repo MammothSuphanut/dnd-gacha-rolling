@@ -85786,26 +85786,6 @@
     }
   },
   {
-    "name": "Flares (5)",
-    "source": "ValdaSpire24",
-    "type": "A|XPHB",
-    "rarity": "none",
-    "weight": 5,
-    "value": 500,
-    "packContents": [
-      {
-        "item": "flare|valdagunslinger",
-        "quantity": 5
-      }
-    ],
-    "_gr": {
-      "origin": "homebrew",
-      "line": "valdas-spire",
-      "edition": "2024",
-      "book": "ValdaSpire24"
-    }
-  },
-  {
     "name": "Grenades (5)",
     "source": "ValdaSpire24",
     "type": "A|XPHB",

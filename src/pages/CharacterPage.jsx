@@ -45,6 +45,7 @@ import {
 } from '../utils/dnd5e'
 import ExportPdfModal from '../components/ExportPdfModal'
 import ItemStatblockModal from '../components/ItemStatblockModal'
+import { parseFoundryActor } from '../utils/foundryImport'
 
 const TABS = [
   { key: 'characters', label: 'ตัวละคร' },
@@ -354,8 +355,11 @@ function CharacterImage({ imageKey, version, className, downloadName, allowDownl
 
   if (!src) {
     return (
-      <div className={`flex items-center justify-center bg-[#f5ede0] text-gray-300 ${className}`}>
-        ไม่มีรูป
+      <div className={`flex items-center justify-center bg-[#f5ede0] text-stone-300 ${className}`}>
+        <svg viewBox="0 0 24 24" fill="currentColor" className="h-1/2 w-1/2 max-h-10 max-w-10">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7v1H4v-1Z" />
+        </svg>
       </div>
     )
   }
@@ -1309,6 +1313,7 @@ function CharacterFormModal({
   onCancel,
   onSave,
   onDelete,
+  showToast,
 }) {
   const shopItemOptions = useMemo(() => {
     const names = new Set()
@@ -1329,6 +1334,8 @@ function CharacterFormModal({
   const isEditing = !!initial.name
   const [form, setForm] = useState(initial)
   const fileInputRef = useRef(null)
+  const foundryImportInputRef = useRef(null)
+  const [importingFoundry, setImportingFoundry] = useState(false)
   const [activeTab, setActiveTab] = useState(EDIT_TABS[0].key)
   const editTab = activeTab
   const setEditTab = setActiveTab
@@ -1375,7 +1382,7 @@ function CharacterFormModal({
     const matched = campaigns.filter(
       (c) =>
         form.campaignIds.includes(c.id) ||
-        (c.partyTagIds ?? []).some((id) => form.partyTagIds.includes(id)),
+        (c.partyLinks ?? []).some((l) => form.partyTagIds.includes(l.partyTagId)),
     )
     matched.sort((a, b) => {
       // แสดง campaigns ที่ assign แล้วก่อน จากนั้นเรียงตามชื่อ
@@ -1613,6 +1620,26 @@ function CharacterFormModal({
   function handleImageInputChange(e) {
     handleAddImages(e.target.files)
     e.target.value = ''
+  }
+
+  async function handleFoundryImportChange(e) {
+    const file = e.target.files?.[0]
+    e.target.value = ''
+    if (!file) return
+    setImportingFoundry(true)
+    try {
+      const patch = await parseFoundryActor(file)
+      setForm((prev) => ({ ...prev, ...patch }))
+      showToast?.(
+        'นำเข้าข้อมูลจาก Foundry สำเร็จ (AC และ HP สูงสุดต้องกรอกเอง เพราะ Foundry คำนวณสดไม่ได้อยู่ในไฟล์)',
+        'success',
+      )
+    } catch (err) {
+      console.error(err)
+      showToast?.(err.message || 'นำเข้าไฟล์ไม่สำเร็จ', 'error')
+    } finally {
+      setImportingFoundry(false)
+    }
   }
 
   function handleRemoveImage(id) {
@@ -2275,8 +2302,39 @@ function CharacterFormModal({
 
                 {/* Equipment & Proficiencies/Languages side by side */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Equipment */}
-                  <div className="space-y-3">
+                  {/* Weapons & Equipment */}
+                  <div className="space-y-5">
+                    {/* Weapons */}
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                        ⚔️ อาวุธ (Weapons)
+                      </h3>
+                      {form.weapons.length === 0 ? (
+                        <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-6 text-center text-xs text-stone-400">
+                          ไม่มีอาวุธ
+                        </div>
+                      ) : (
+                        <div className="rounded-xl border border-stone-200 bg-white p-3.5 shadow-sm">
+                          <ul className="divide-y divide-stone-100">
+                            {form.weapons.map((w, index) => (
+                              <li key={index} className="py-2 text-sm text-stone-700 flex items-center gap-2">
+                                <span className="text-stone-400 text-xs">⚔️</span>
+                                <span>{w.name || '(ไม่มีชื่อ)'}</span>
+                                {w.damages?.[0]?.amount && (
+                                  <span className="ml-auto shrink-0 rounded bg-stone-100 px-1.5 py-0.5 text-[10px] font-semibold text-stone-500 font-mono">
+                                    {w.damages[0].amount}
+                                    {w.damages[0].type ? ` ${w.damages[0].type}` : ''}
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Equipment */}
+                    <div className="space-y-3">
                     <h3 className="text-sm font-bold text-stone-800 flex items-center gap-1.5">
                       🎒 อุปกรณ์ (Equipment)
                     </h3>
@@ -2309,6 +2367,7 @@ function CharacterFormModal({
                         </ul>
                       </div>
                     )}
+                    </div>
                   </div>
 
                   {/* Proficiencies & Languages */}
@@ -2552,6 +2611,22 @@ function CharacterFormModal({
             <p className="text-xs text-stone-400">บันทึกข้อมูลตัวละคร D&amp;D อย่างครบถ้วน</p>
           </div>
           <div className="flex items-center gap-2">
+            <input
+              ref={foundryImportInputRef}
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={handleFoundryImportChange}
+            />
+            <button
+              type="button"
+              onClick={() => foundryImportInputRef.current?.click()}
+              disabled={importingFoundry}
+              className="inline-flex items-center gap-1.5 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-100 disabled:cursor-not-allowed disabled:opacity-60"
+              title="นำเข้าข้อมูลจากไฟล์ Foundry VTT character actor export (.json)"
+            >
+              {importingFoundry ? '⏳ กำลังนำเข้า...' : '📥 Import Foundry JSON'}
+            </button>
             {isEditing && (
               <button
                 type="button"
@@ -2599,8 +2674,11 @@ function CharacterFormModal({
                 {activePreview ? (
                   <img src={activePreview} alt="" className="h-full w-full object-cover" />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center text-xs text-gray-300">
-                    ไม่มีรูป
+                  <div className="flex h-full w-full items-center justify-center text-stone-300">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="h-10 w-10">
+                      <circle cx="12" cy="8" r="4" />
+                      <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7v1H4v-1Z" />
+                    </svg>
                   </div>
                 )}
               </div>
@@ -3908,6 +3986,7 @@ function CharactersTab({
           onCancel={() => setEditingCharacter(null)}
           onSave={handleSave}
           onDelete={requestDelete}
+          showToast={showToast}
         />
       )}
 

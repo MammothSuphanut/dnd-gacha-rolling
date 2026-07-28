@@ -154,26 +154,26 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "จบในตัว หรือใช้เปิดตัวละครสาย Blood Hunter"
+    "note": "จบในต���ว หรือใช้เปิดตัวละครสาย Blood Hunter"
   },
   {
     "id": "campaign-5b5734b6-371a-4920-a63f-0ddba4db840c",
     "source": "arcanist",
     "name": "The Delian Tomb",
     "status": "-",
-    "briefContent": "ดันเจี้ยนเริ่มต้นสูตรคลาสสิกขนานแท้ บุกสุสานโบราณเพื่อช่วยลูกสาวชาวบ้านที่ถูกก็อบลินจับตัวไป",
+    "briefContent": "ดันเจี้ยนเริ่มต้นสูตรคลาสสิกขนานแท้ บุกสุสานโบราณเพื่อช่วยล��กสาวชาวบ้านที่��ูกก็อบลินจับตัวไป",
     "level": "1",
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "เหมาะอย่างยิ่งสำหรับใช้เป็นเซสชันแรกของผู้เล่นใหม่"
+    "note": "��หมา��อย่างยิ่งสำหร��บใช้เป็นเซสชันแรกของผู้เล่นใหม่"
   },
   {
     "id": "campaign-b9997286-0132-4134-a158-b14a9f23e5d2",
-    "source": "D&D Beyond (ซีรีส์มังกร)",
+    "source": "D&D Beyond (ซีรีส์��ังกร)",
     "name": "Dragon Delves: A Copper for a Song",
     "status": "-",
-    "briefContent": "โมดูลขนาดสั้น 1 ตอนจบ เน��นภารกิจเกี่ยวกับมังกรทองแดงและกา��เจรจาหรือไขปริศนา",
+    "briefContent": "โมดูลขนาดสั้น 1 ตอนจบ เน��นภารกิจเกี่ยวกับมังกรทองแดงและกา��เจรจาหรือ��ขปริศนา",
     "level": "1",
     "continuesFrom": "",
     "campaignType": "One-Shot",
@@ -536,17 +536,40 @@
     "id": "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08",
     "source": "Mammoth Homebrew",
     "name": "Aeorian Cataclysm",
-    "status": "On-Going",
+    "adventureSlug": "aeorian-cataclysm",
+    "status": "Developing",
     "briefContent": "เมื่อ 'อาวุธสังหารเทพ' แห่งนครลอยฟ้าอีออร์ (Aeor) ถูกเปิดใช้งาน ทว่าชิ้นส่วนสำคัญทั้ง 5 กลับถูกแย่งชิงไปจนมิติและกฎเกณฑ์ของโลกดิ่งสู่ความโกลาหล มีเพียงเหล่าผู้ถูกเลือกเท่านั้นที่ต้องออกผจญภัยเพื่อตามหาชิ้นส่วนที่หายไปและหยุดยั้งวันสิ้นโลกก่อนทุกสิ่งจะพังทลาย",
-    "level": "1-17",
+    "level": "1-20",
     "continuesFrom": "",
     "campaignType": "Long Campaign",
     "party": "",
     "note": "จบในตัว",
-    "partyTagIds": [
-      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
-      "tag-2b35e9ca-23da-40e8-90f7-f49ccbc15d67"
-    ]
+    "partyLinks": [
+      {
+        "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
+        "status": "On-Going"
+      },
+      {
+        "partyTagId": "tag-2b35e9ca-23da-40e8-90f7-f49ccbc15d67",
+        "status": "On-Going"
+      }
+    ],
+    "campaignRole": "Playable"
+  },
+  {
+    "id": "campaign-9d3f6b2c-1a4e-4d7f-8c5b-2e6a9f0d7c31",
+    "source": "Mammoth Homebrew",
+    "name": "The Descent of Phandelver",
+    "adventureSlug": "the-descent-of-phandelver",
+    "status": "Developing",
+    "briefContent": "แคมเปญยาวใน Forgotten Realms รอบเมือง Phandalin เริ่มจาก A Most Potent Brew ต่อด้วย Lost Mine of Phandelver แล้วขยายสู่ Phandelver and Below: The Shattered Obelisk ตามหาแท่งหินเนเธอรีสโบราณที่แตกกระจาย ก่อนกลุ่มบูชา mind flayer จะรวบรวมมันขึ้นใหม่และเปิดรอยแยกสู่ Far Realm ผูกเข้ากับปม Astral Nexus: Constellation Protocol",
+    "level": "1-12",
+    "continuesFrom": "",
+    "campaignType": "Long Campaign",
+    "party": "",
+    "note": "19 EP รวมทั้งแคมเปญ (Act1: 1 EP | Act2: 7 EP | Act3: 11 EP) — เนื้อเรื่องเต็มพร้อมเล่น ยังไม่มีแมพ/ภาพประกอบแนบ",
+    "partyLinks": [],
+    "campaignRole": "Playable"
   },
   {
     "id": "campaign-16158073-b8b7-4fe3-86f8-b340bcf46282",
@@ -1035,12 +1058,19 @@
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
-    "note": "เควสเริ่มต้นสายเหนือใน Wildemount",
-    "partyTagIds": [
-      "tag-ec0d2618-4421-486a-a327-c7f666827175",
-      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    "note": "ถ้าจะเล่นให้ไปเล่น Frozen Sick: The Plague Covenant แทน",
+    "partyLinks": [
+      {
+        "partyTagId": "tag-ec0d2618-4421-486a-a327-c7f666827175",
+        "status": "-"
+      },
+      {
+        "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
+        "status": "Complete"
+      }
     ],
-    "link": "https://5e.tools/adventure.html#fs"
+    "link": "https://5e.tools/adventure.html#fs",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-f3138d48-addf-454f-bdad-100355edc943",
@@ -1079,10 +1109,13 @@
     "campaignType": "One-Shot",
     "party": "",
     "note": "มักใช้เป็นเกม One-Shot ต้อนรับผู้เล่นใหม่",
-    "partyTagIds": [
-      "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca",
-      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
-    ]
+    "partyLinks": [
+      {
+        "partyTagId": "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca",
+        "status": "-"
+      }
+    ],
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-af8e68f3-99ad-4a1c-ad21-5cd8e8d4d1c5",
@@ -1475,39 +1508,41 @@
     "id": "campaign-6c32d25e-7de1-4666-8f38-077433aea28d",
     "source": "Wizards of the Coast",
     "name": "Lost Mine of Phandelver",
-    "status": "-",
+    "status": "Prepared",
     "briefContent": "แคมเปญเริ่มต้นในตำนานจากเซ็ต Starter Set ออกตามหาเหมืองโบราณและช่วยเหลือเพื่อนคนแคระจากเงื้อมมือของ The Black Spider",
     "level": "1 - 5",
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
     "note": "แคมเปญเปิด (สามารถส่งต่อแคมเปญเนื้อเรื่องหลักอื่นๆ ได้แทบทั้งหมด)",
-    "link": "https://5e.tools/adventure.html#lmop"
+    "link": "https://5e.tools/adventure.html#lmop",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-bb3758b4-a733-4e0d-b6c8-4e8e069ae421",
     "source": "Wizards of the Coast",
     "name": "Waterdeep: Dragon Heist",
-    "status": "-",
+    "status": "Considering",
     "briefContent": "แคมเปญสืบสวนและชิงไหวชิงพริบกลางเมืองหลวง เพื่อตามหาเบาะแสโกดังเก็บเหรียญทองมูลค่ามหาศาลก่อนที่วายร้ายคนอื่นจะชิงไป",
     "level": "1 - 5",
     "continuesFrom": "",
     "campaignType": "Short Campaign",
     "party": "",
     "note": "ส่งต่อผู้เล่นเข้าสู่ Dungeon of the Mad Mage ได้โดยตรง",
-    "link": "https://5e.tools/adventure.html#wdh"
+    "link": "https://5e.tools/adventure.html#wdh",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-95adc213-111a-40ea-8263-c95a78dff169",
     "source": "Wizards of the Coast",
     "name": "Keys from the Golden Vault",
     "status": "-",
-    "briefContent": "รวมบทผจญภัยสั้น 13 เรื่องในธีม \"Heist\" หรือการทำภารกิจโจรกรรม วางแผน ลอบเร้น และขโมยวัตถุโบราณตามคำสั่งขององค์กรลับ",
+    "briefContent": "รวมบทผ���ญ���ัยสั้��� 13 เรื่องในธีม \"Heist\" หรือการทำภ���รกิจโจรกรร��� วางแผน ลอบ��ร้น และขโมย���ัตถุโบราณตามคำสั่งขององค์กรลับ",
     "level": "1 - 11",
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
     "party": "",
-    "note": "ไม่มี (เป็นภารกิจสั้นแยกเล่นตามเลเวล)",
+    "note": "��ม่มี (เป็นภารกิจสั้���แยกเล่นตามเลเวล)",
     "link": "https://5e.tools/adventure.html#kftgv"
   },
   {
@@ -1515,7 +1550,7 @@
     "source": "Wizards of the Coast",
     "name": "Journeys through the Radiant Citadel",
     "status": "-",
-    "briefContent": "รวมบทผจญภัยสั้น 13 เรื่องที่มีศูนย์กลางอยู่ที่นครลอยฟ้า Radiant Citadel เน้นวัฒนธรรมที่หลากหลายและสีสันตระการตา",
+    "briefContent": "รวมบทผจญภัยสั้น 13 เรื่��งที่มีศูนย์กลางอยู่ที่นครลอยฟ้า Radiant Citadel เน้นวัฒนธรรมที่หลากหลายและสีสันตระการตา",
     "level": "1 - 14",
     "continuesFrom": "",
     "campaignType": "One-Shot (Anthology)",
@@ -1541,7 +1576,7 @@
     "source": "Wizards of the Coast",
     "name": "Ghosts of Saltmarsh",
     "status": "-",
-    "briefContent": "รวมบทผจญภัยทางทะเลและชายฝั่ง 7 มิติ ผสมผสานการเดินเรือ การต่อสู้กับกลุ่มโจรสลัด และสิ่งมีชีวิตจากใต้สะดือทะเล",
+    "briefContent": "รวมบทผจญภัยทางทะเลและชา��ฝั่ง 7 มิ��ิ ผสมผสานการเดินเรือ การต่อสู���กับกลุ่มโ���รสลัด และสิ่งมีชีวิตจากใต้สะดือทะเล",
     "level": "1 - 12",
     "continuesFrom": "",
     "campaignType": "Long Campaign (Anthology)",
@@ -1617,14 +1652,15 @@
     "id": "campaign-c8d1a92a-fd00-455f-a7c3-ddac45f83757",
     "source": "Wizards of the Coast",
     "name": "Phandelver and Below: The Shattered Obelisk",
-    "status": "-",
+    "status": "Prepared",
     "briefContent": "แคมเปญขยายใหญ่ โดยครึ่งแรกนำเอาเนื้อหาพาร์ทเหมือง Phandelver มารีเมค และต่อครึ่งหลังด้วยภัยคุกคามจากพลังจิตต่างมิติ (Far Realm)",
     "level": "1 - 12",
     "continuesFrom": "Lost Mine of Phandelver",
     "campaignType": "Long Campaign",
     "party": "",
     "note": "ครึ่งแรกคือเนื้อหาขยายของ Lost Mine of Phandelver",
-    "link": "https://5e.tools/adventure.html#pabtso"
+    "link": "https://5e.tools/adventure.html#pabtso",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-0600b2f0-7bcd-4c2a-b956-3c91c6166c07",
@@ -1734,14 +1770,15 @@
     "id": "campaign-6b35e7c1-3b77-47db-a999-98680d260026",
     "source": "Wizards of the Coast",
     "name": "Waterdeep: Dungeon of the Mad Mage",
-    "status": "-",
+    "status": "Considering",
     "briefContent": "มหันตภัยดันเจี้ยนใต้เมืองวอเ���อร์ดีป มีทั้งหมด 23 ชั้น ผู้เล่นต้องลงไปเผชิญหน้ากับจอมเวทคลั่ง Halaster Blackcloak",
     "level": "5 - 20",
     "continuesFrom": "Waterdeep: Dragon Heist",
     "campaignType": "Long Campaign",
     "party": "",
     "note": "มีเนื้อเรื่องต่อยอดหลังจากจบ Waterdeep: Dragon Heist",
-    "link": "https://5e.tools/adventure.html#wdmm"
+    "link": "https://5e.tools/adventure.html#wdmm",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-62aa6fc0-e932-43e7-abf9-744376f6aa49",
@@ -1786,13 +1823,14 @@
     "id": "campaign-223d95a9-6305-48a8-afbe-a787b9d85004",
     "source": "Wyatt Trull",
     "name": "Dungeon of the Mad Mage Companion",
-    "status": "-",
+    "status": "Considering",
     "briefContent": "คู่มือและบทเสริมการจัดแคมเปญกึ่งรายการเรียลลิตี้โชว์ของ Halaster เพื่อเปลี่ยนให้ดันเจี้ยน Mad Mage สนุกและฮาปนโหดขึ้น",
     "level": "5 - 20",
     "continuesFrom": "",
     "campaignType": "Long Campaign (โมดูลเสริม)",
     "party": "",
-    "note": "ต้องใช้ควบคู่กับแคมเปญหลัก Dungeon of the Mad Mage"
+    "note": "ต้องใช้ควบคู่กับแคมเปญหลัก Dungeon of the Mad Mage",
+    "campaignRole": "Base"
   },
   {
     "id": "campaign-f29492b4-c9ba-43ed-89c1-ec5e6e50015c",
@@ -1882,12 +1920,22 @@
     "id": "campaign-9997f6fd-bb1c-42f8-a89b-2577dbc60fed",
     "source": "Mammoth Homebrew",
     "name": "Frozen Sick: The Plague Covenant",
+    "adventureSlug": "frozen-sick-the-plague-covenant",
     "status": "Developing",
     "briefContent": "",
-    "level": "2-12",
-    "continuesFrom": "Wildemount: Frozen Sick",
+    "level": "1-6",
+    "continuesFrom": "",
     "campaignType": "Short Campaign",
-    "partyTagIds": [],
-    "note": "ต่อจาก: Wildemount: Frozen Sick"
+    "partyTagIds": [
+      "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
+    ],
+    "note": "มีเนื้อหา Wildemount: Frozen Sick อยู่ใน Campaign นี้แล้ว",
+    "campaignRole": "Playable",
+    "partyLinks": [
+      {
+        "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
+        "status": "On-Going"
+      }
+    ]
   }
 ]

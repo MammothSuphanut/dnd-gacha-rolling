@@ -1,28 +1,27 @@
 # Progress — Aeorian Cataclysm
 
-Checklist ติดตามงานที่เหลือ หลังจากแต่งเนื้อหา Act 1–6 แบบละเอียดเสร็จแล้ว (level checkpoint + CR + NPC ครบทุก Act) งานที่เหลือหลักคือ **pass ภูมิศาสตร์** — ผูกสถานที่ในแต่ละ Act เข้ากับแผนที่ทวีปจริงของ Exandria ที่แนบมา ให้ตัวละครได้เดินทางผ่านหลายจุดของทวีปนั้นๆ อย่างมีความหมาย (ไม่ต้องครบทุกที่ แต่ให้เห็น spread ชัดเจน เช่น ไปใต้สุดก่อนค่อยขึ้นเหนือ)
-
-## Reference
-- [x] เซฟไฟล์แผนที่ทวีป Exandria ไว้ที่ `adventures/aeorian-cataclysm/Exandria.jpeg` — crop รายทวีปความละเอียดเต็มไว้อ่านชื่อสถานที่แล้ว (ไฟล์ crop อยู่ใน scratchpad ชั่วคราว ไม่ใช่ไฟล์ถาวรในโปรเจกต์)
-
-## Pass ภูมิศาสตร์ต่อ Act — เสร็จแล้วทุก Act
-เป้าหมาย: แต่ละ Act ให้ตัวละครแวะหลายจุดย่อยของทวีปนั้น โดยอ้างอิงชื่อสถานที่จริงจากแผนที่แทนชื่อที่สมมติไว้กว้างๆ
-
-- [x] **Act 1 — Eiselcross**: เพิ่มเส้นทางจริง Balenpost (ท่าเรือขึ้นฝั่งทางใต้) → Foren (เกาะหลัก) → Aeor Crash Site/Fortress of the Dead Jarl (ทั้งคู่มีชื่อจริงบนแผนที่อยู่แล้ว ยืนยันแล้ว) — "Aeor Lab" คงชื่อไว้ตามที่ตกลง (เป็น homebrew sub-site ในบริเวณ Aeor Crash Site)
-- [x] **Act 2 — Wildemount**: หอคอยเวทมนตร์ → **Rexxentrum** (เมืองหลวง Dwendalian), เมืองใต้ดิน Xhorhas → **Rosohna** (นครหลวง Kryn Dynasty), สุสานใต้สมุทร → **Swavain Islands** ใกล้เกาะ **Rumblecusp** ผ่าน Menagerie Coast
-- [x] **Act 3 — Tal'Dorei**: รังโจร Ashfang ย้ายไปอยู่ **Iron Authority** (ใต้สุด, แถบ Hdar-Fye/Ezordam-Haar/Beynsfal Plateaus) เส้นทางไล่ล่าผ่าน **Rifenmist Peninsula → Verdant Expanse (ใกล้ Syngorn) → Wildwood/Bramblewood (ใกล้ Westruun)** จบที่รังปีศาจใต้ **Kraghammer** (นครคนแคระ ตะวันตกเฉียงเหนือ) — สเปรดใต้→เหนือเต็มทวีป
-- [x] **Act 4 — Issylra**: แก้จุดผิดทวีป — Kraghammer/Bysaes Tyl (จริงๆ อยู่ Tal'Dorei/Wildemount ย้ายไป Act 3 แล้ว) เปลี่ยนเป็นรอยแยกที่ **Thorain Tundra** (เหนือสุด), **Caramarin Reach** (ใต้สุด), **Utesspire Mountains** (กลาง) จบที่ห้องทดลองบริเวณ **Sunderpeak Mountains** ใกล้ Vasselheim
-- [x] **Act 5 — Marquet + Glintshore**: Glintshore ยืนยันอยู่ใน **Hespet Archipelago** นอกชายฝั่งเหนือ ส่วนประกอบอาร์ติแฟกต์ผูกกับ **Rumedam Desert** (เหนือ, ใกล้ Ank'Harel), **Ozmit Sea** (กลาง, คงชื่อเดิมที่ถูกอยู่แล้ว), **Taloned Highlands/Coven Peaks** (ใต้สุด)
-- [x] **Act 6**: บทส่งท้ายสั้น ไม่ต้องเพิ่มภูมิศาสตร์ใหม่ (เป็นการเดินทางกลับผ่านเส้นทาง Act 1 เดิม)
-
-## ปมอื่นที่ยังค้างอยู่ (ไม่เกี่ยวกับภูมิศาสตร์)
-- [ ] ลง detail ระดับ EP จริง (stat block เต็ม, DC เฉพาะจุด, boxed read-aloud text) — ตอนนี้ทุก Chapter brief มีแค่ระดับ outline + CR แนะนำ + ลิสต์ EP ที่แนะนำ ยังไม่ใช่ journal เต็มรูปแบบ (ใช้ `/build-journal` ได้เมื่อพร้อม) — ทำแบบ just-in-time ก่อนใกล้เล่นถึง EP นั้นจริง ไม่ต้องลงล่วงหน้าทั้งแคมเปญ
-- [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้ว: Flay, Grok, Chin, Messenger, Voss Kaldrenar, Ren Sk'val, Thessaly Vane, Prelate Iskavel Thorn, Vaelkor Thess, Sable Anwari, Corvain Delthasar, Archprelate Solvenne Wyrenhall
+Checklist ติดตามงานที่เหลือ หลังปรับโครงเรื่องให้ทั้งแคมเปญเกิดขึ้นใน **Wildemount ล้วนๆ** (Act 1/6 เปิด-ปิดที่ Eiselcross)
 
 ## เสร็จแล้ว
-- [x] โครงเรื่องเต็ม Act 1–6 พร้อม level checkpoint + CR แนะนำ
-- [x] ปมย่อยทั้งหมดใน 99-notes.md (Fragment of Genesis, Messenger ตอนจบ, หัวหน้าลัทธิ Act 3, จังหวะเวลา Lich, NPC Kryn, โทน Act 6)
-- [x] กลไกเกม The Fragment ทั้ง 5 ชิ้น (`01-the-fragments.md`)
-- [x] sync ชื่อตัวร้าย Vaelkor Thess ข้าม Act ทั้งหมด
-- [x] pass ภูมิศาสตร์เต็มทุก Act ผูกกับแผนที่ Exandria จริง + แก้จุดที่ใช้สถานที่ผิดทวีปใน Act 4 (Kraghammer/Bysaes Tyl ย้ายไป Act 3 ที่ถูกต้อง)
-- [x] แปลง Act 1–6 ทั้งหมดจากไฟล์ `ACT0X.md` แบนราบ เป็นโครงสร้างโฟลเดอร์ `ACT0X-slug/00-act-outline.md` + `CH0X-slug/00-chapter-brief.md` (แต่ละ Chapter brief มีลิสต์ EP ที่แนะนำต่อท้าย) — `sessions/` folder (บันทึกการเล่นจริง) ไม่แตะต้อง ยังทำหน้าที่แยกกัน
+- [x] เก็บเนื้อหา Act 2–5 เวอร์ชันเก่า (ทวีปอื่น: Wildemount เดิม/Tal'Dorei/Issylra/Marquet) ไว้ที่ [_archive/](./_archive/) — ไม่ใช่เนื้อเรื่องหลักอีกต่อไป แต่ยังอ่านอ้างอิงได้ (บาง NPC/ฉากเลือกนำมาใช้ซ้ำแล้ว เช่น Druvenlode, Rosohna, Bazzoxan)
+- [x] สร้างโฟลเดอร์ Act 2–5 ใหม่ตามโครงเรื่อง Wildemount-only พร้อม `00-act-outline.md` + Chapter brief (`CH0X-*.md`) ครบทุก Act — ระดับ outline + CR แนะนำ + ลิสต์ "EP ที่แนะนำ" เท่านั้น ยังไม่ใช่ journal เต็ม
+- [x] เขียนใหม่ `ACT06-return-to-aeor-lab/00-act-outline.md` — ปรับให้สอดคล้องกับการเฉลย/ปะทะ Vaelkor Thess ที่ย้ายมา Act 5 แล้ว เพิ่มทางเลือกปิดแคมเปญ Astral Nexus (Constellation vs. อยู่ปกปักโลกเดิม)
+- [x] sync `00-overview.md` (สารบัญ Act + level range + Fragment ต่อ Act) และ `99-notes.md` (จุดตัดสินใจ, ตารางเลเวล, อ้างอิง Exandria) ให้ตรงกับโครงใหม่
+- [x] Act 1 คงเดิม 100% ไม่ต้องแก้เนื้อหา (แก้แค่ลิงก์ท้ายไฟล์ให้ชี้ไป Act 2 โฟลเดอร์ใหม่)
+- [x] เขียน EP journal เต็มรูปแบบ (boxed read-aloud text, DC เฉพาะจุด, NPC ตั้งชื่อ+tactics, Treasure แยกตามจุด) ครบทุก Act 2–6 แล้ว — Act 2 (7 EP), Act 3 (5 EP), Act 4 (6 EP หลังแยก EP "ไล่ล่าข้ามทวีป" เป็น 2 EP), Act 5 (6 EP), Act 6 (3 EP) รวม 27 EP ใหม่ ความหนาแน่นเทียบเท่า Act 1 EP1/EP4 ตามที่ผู้เล่นยืนยัน
+
+## ตาราง Act ใหม่
+| Act | ชื่อ | Fragment | เส้นทาง |
+|---|---|---|---|
+| 1 | หนีจากลัทธิ สู่ Palebank Village | Wisdom | Palebank Village → Syrinlya → Aeor Crash Site → Fortress of the Dead Jarl (คงเดิม) |
+| 2 | เงื้อมเงาแห่ง Dwendalian Empire | Void | Palebank Village → Uthodurn → Rexxentrum → Druvenlode/Ruins of Shattengrod → Rexxentrum |
+| 3 | ทางแยกสู่ Xhorhas | Stasis | Rexxentrum → Rosohna → Bazzoxan → Ghor Veles → Rosohna |
+| 4 | ห้องนิรภัยแห่งชีวิตนิรันดร์ | Genesis | Ghor Veles → Ruins of Draconia → Ruins of Sepesca |
+| 5 | สิ่งที่ทะเลกลืนกิน | Zenith | Ruins of Sepesca → Diver's Grave → Darktow Isle — เฉลย + ปะทะ Vaelkor Thess (last boss) |
+| 6 | คืน Fragment สู่ Aeor Lab (บทส่งท้าย) | ปิดเรื่อง | เก็บกวาดภัยร้าย → Aeor Lab → Astral Nexus |
+
+## งานที่เหลือ
+- [ ] ตัดสินใจว่าจะ**ลบ** `_archive/` ทิ้งถาวรเมื่อไหร่ หรือเก็บไว้เป็น reference ต่อไปเรื่อยๆ (ไม่บังคับ ไม่กระทบเนื้อเรื่องหลัก)
+- [ ] ทำไฟล์ NPC reference รวม (สไตล์ `02-npcs.md` ของ frozen-sick) รวมชื่อทั้งหมดที่ตั้งไปแล้วในโครงใหม่: Elro Aldataur, Uvilia Whek, Prelate Iskavel Thorn, ศาสตราจารย์ Ilyana Marrow, Rennick, Vaelkor Thess, Messenger, Bright Queen Leylas Kryn, Corvin Ashwake ฯลฯ
+- [ ] pass ภูมิศาสตร์ละเอียด (ชื่อย่านในเมือง/จุด landmark เฉพาะ) สำหรับ Ruins of Draconia, Ruins of Sepesca, Diver's Grave, Darktow Isle ที่ยังไม่เคยเขียนละเอียดมาก่อน (ต่างจาก Rexxentrum/Druvenlode/Rosohna/Bazzoxan/Ghor Veles ที่มี texture ระดับหนึ่งอยู่แล้วจากเนื้อหาเก่าใน `_archive/`)
+- [x] จุด confirm อื่นๆ ที่เคยเปิดอยู่จากช่วงวางแผน restructure — ปิดหมดแล้ว (ไฟล์ RESTRUCTURE-PROPOSAL-wildemount-only.md เป็นเอกสารร่างชั่วคราวที่ถูกลบไปหลัง merge เนื้อหาเข้า 00-overview.md เรียบร้อยแล้ว)

@@ -1,31 +1,63 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import AdventureJournalDrawer from '../components/AdventureJournalDrawer'
 import ConfirmDialog from '../components/ConfirmDialog'
 import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
 import { buildFiveEToolsLink, findAdventureOrBook, findAdventureOrBookAsync } from '../utils/adventureLinks'
+import { getAdventureJournal } from '../utils/adventureJournals'
 
-const STATUS_OPTIONS = ['-', 'Developing', 'Prepared', 'On-Going', 'Complete']
+const STATUS_OPTIONS = ['-', 'Considering', 'Developing', 'Prepared']
+const HAS_STATUS_FILTER = '__has_status__'
+const STATUS_FILTER_OPTIONS = [
+  { value: HAS_STATUS_FILTER, label: 'มี status แล้ว' },
+  ...STATUS_OPTIONS.map((s) => ({ value: s, label: s })),
+]
+// Play progress is tracked per-party (a campaign can be run by several
+// parties at once, each at a different point), separate from `status` above
+// which tracks how ready the campaign *material* is.
+const PARTY_STATUS_OPTIONS = ['-', 'On-Going', 'Complete']
+const PARTY_STATUS_FILTER_OPTIONS = PARTY_STATUS_OPTIONS.filter((s) => s !== '-').map((s) => ({
+  value: s,
+  label: s,
+}))
 const CAMPAIGN_TYPE_OPTIONS = ['-', 'One-Shot', 'Short Campaign', 'Long Campaign']
+// "บทบาท" of a campaign entry — separate axis from Status (which tracks prep
+// progress). Base = source material kept around for a DM to adapt/reference,
+// not meant to be run as-is (e.g. an official book superseded by a homebrew
+// continuation). Playable = actually intended to be run/tracked.
+const ROLE_OPTIONS = ['-', 'Playable', 'Base']
 
 const STATUS_STYLES = {
   '-': 'bg-[#f5ede0] text-stone-600',
+  Considering: 'bg-stone-200 text-stone-600',
   Developing: 'bg-amber-100 text-amber-700',
   Prepared: 'bg-blue-100 text-blue-700',
-  'On-Going': 'bg-violet-100 text-violet-700',
-  Complete: 'bg-green-100 text-green-700',
+}
+
+const PARTY_STATUS_STYLES = {
+  '-': 'border-gray-300 bg-white text-stone-500',
+  'On-Going': 'border-violet-300 bg-violet-100 text-violet-700',
+  Complete: 'border-green-300 bg-green-100 text-green-700',
+}
+
+const ROLE_STYLES = {
+  '-': 'bg-[#f5ede0] text-stone-600',
+  Playable: 'bg-green-100 text-green-700',
+  Base: 'bg-orange-100 text-orange-700',
 }
 
 const COLUMN_WIDTHS = {
   source: '10%',
-  name: '17%',
-  status: '8%',
+  name: '16%',
+  status: '7%',
+  role: '7%',
   level: '6%',
   campaignType: '10%',
-  continuesFrom: '14%',
-  party: '12%',
-  note: '19%',
+  continuesFrom: '12%',
+  party: '15%',
+  note: '14%',
   actions: '8%',
 }
 
@@ -35,11 +67,12 @@ function blankCampaign() {
     source: '',
     name: '',
     status: '-',
+    campaignRole: '-',
     briefContent: '',
     level: '',
     continuesFrom: '',
     campaignType: '',
-    partyTagIds: [],
+    partyLinks: [],
     note: '',
     link: '',
   }
@@ -104,54 +137,83 @@ function DisplayText({ value, className = '', title }) {
   )
 }
 
-function PartyTagChips({ ids, partyTags }) {
-  const selected = partyTags.filter((t) => (ids ?? []).includes(t.id))
-  if (selected.length === 0) {
+function PartyTagChips({ links, partyTags }) {
+  const entries = (links ?? [])
+    .map((link) => ({ link, tag: partyTags.find((t) => t.id === link.partyTagId) }))
+    .filter((e) => e.tag)
+  if (entries.length === 0) {
     return <div className="px-2 py-1 text-gray-300">—</div>
   }
   return (
-    <div className="flex flex-wrap gap-1 px-1 py-1">
-      {selected.map((t) => (
-        <span
-          key={t.id}
-          className="inline-flex items-center gap-1 rounded-full bg-[#f5ede0] px-2 py-0.5 text-xs text-stone-700"
+    <div className="flex flex-col gap-1 px-1 py-1">
+      {entries.map(({ link, tag }) => (
+        <div
+          key={tag.id}
+          className="flex items-center justify-between gap-2 rounded-md bg-[#f5ede0] py-1 pl-2 pr-1.5"
         >
-          <span
-            className="h-2 w-2 rounded-full border border-gray-300"
-            style={{ backgroundColor: t.color || '#e5e7eb' }}
-          />
-          {t.name || '(ไม่มีชื่อ)'}
-        </span>
+          <span className="flex min-w-0 items-center gap-1.5">
+            <span
+              className="h-2 w-2 shrink-0 rounded-full border border-gray-300"
+              style={{ backgroundColor: tag.color || '#e5e7eb' }}
+            />
+            <span className="truncate text-xs text-stone-700" title={tag.name}>
+              {tag.name || '(ไม่มีชื่อ)'}
+            </span>
+          </span>
+          {link.status && link.status !== '-' && (
+            <span
+              className={`shrink-0 whitespace-nowrap rounded-full border px-1.5 py-0.5 text-[10px] font-medium leading-none ${
+                PARTY_STATUS_STYLES[link.status] ?? ''
+              }`}
+            >
+              {link.status}
+            </span>
+          )}
+        </div>
       ))}
     </div>
   )
 }
 
-function PartyTagPicker({ selectedIds, partyTags, onToggle }) {
+function PartyTagPicker({ links, partyTags, onToggle, onStatusChange }) {
   if (partyTags.length === 0) {
     return <p className="px-1 py-1 text-xs text-stone-400">ยังไม่มี Party (สร้างได้ที่หน้าตัวละคร)</p>
   }
   return (
     <div className="flex flex-wrap gap-1 p-1">
       {partyTags.map((t) => {
-        const active = (selectedIds ?? []).includes(t.id)
+        const link = (links ?? []).find((l) => l.partyTagId === t.id)
+        const active = !!link
         return (
-          <button
+          <span
             key={t.id}
-            type="button"
-            onClick={() => onToggle(t.id)}
             className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs transition-colors ${
               active
                 ? 'border-purple-400 bg-violet-100 text-violet-700'
                 : 'border-gray-300 bg-white text-stone-600 hover:bg-[#f5ede0]'
             }`}
           >
-            <span
-              className="h-2 w-2 rounded-full border border-gray-300"
-              style={{ backgroundColor: t.color || '#e5e7eb' }}
-            />
-            {t.name || '(ไม่มีชื่อ)'}
-          </button>
+            <button type="button" onClick={() => onToggle(t.id)} className="inline-flex items-center gap-1">
+              <span
+                className="h-2 w-2 rounded-full border border-gray-300"
+                style={{ backgroundColor: t.color || '#e5e7eb' }}
+              />
+              {t.name || '(ไม่มีชื่อ)'}
+            </button>
+            {active && (
+              <select
+                value={link.status ?? '-'}
+                onChange={(e) => onStatusChange(t.id, e.target.value)}
+                className="rounded-full border border-purple-300 bg-white px-1 py-0 text-[10px] text-stone-600 focus:outline-none"
+              >
+                {PARTY_STATUS_OPTIONS.map((s) => (
+                  <option key={s} value={s}>
+                    {s}
+                  </option>
+                ))}
+              </select>
+            )}
+          </span>
         )
       })}
     </div>
@@ -300,8 +362,11 @@ export default function CampaignPage() {
   )
   const [deleteCampaign, setDeleteCampaign] = useState(null)
   const [campaignForm, setCampaignForm] = useState(null)
+  const [journalCampaign, setJournalCampaign] = useState(null)
   const [query, setQuery] = useState('')
-  const [filterStatus, setFilterStatus] = useState('')
+  const [filterStatus, setFilterStatus] = useState(HAS_STATUS_FILTER)
+  const [filterPartyStatus, setFilterPartyStatus] = useState('')
+  const [filterRole, setFilterRole] = useState('Playable')
   const [filterCampaignType, setFilterCampaignType] = useState('')
   const [filterParty, setFilterParty] = useState('')
   const [filterLevel, setFilterLevel] = useState('')
@@ -327,13 +392,19 @@ export default function CampaignPage() {
   const normalizedQuery = query.trim().toLowerCase()
   const visibleCampaigns = useMemo(() => {
     const filtered = campaigns.filter((c) => {
-      if (filterStatus && c.status !== filterStatus) return false
+      if (filterStatus === HAS_STATUS_FILTER) {
+        if (!c.status || c.status === '-') return false
+      } else if (filterStatus && c.status !== filterStatus) {
+        return false
+      }
+      if (filterRole && c.campaignRole !== filterRole) return false
       if (filterCampaignType && c.campaignType !== filterCampaignType) return false
-      if (filterParty && !(c.partyTagIds ?? []).includes(filterParty)) return false
+      if (filterParty && !(c.partyLinks ?? []).some((l) => l.partyTagId === filterParty)) return false
+      if (filterPartyStatus && !(c.partyLinks ?? []).some((l) => l.status === filterPartyStatus)) return false
       if (filterLevel && c.level !== filterLevel) return false
       if (!normalizedQuery) return true
-      const partyNames = (c.partyTagIds ?? [])
-        .map((id) => partyTagsById[id]?.name ?? '')
+      const partyNames = (c.partyLinks ?? [])
+        .map((l) => partyTagsById[l.partyTagId]?.name ?? '')
         .join(' ')
       const haystack = `${c.source} ${c.name} ${partyNames} ${c.note}`.toLowerCase()
       return haystack.includes(normalizedQuery)
@@ -343,9 +414,7 @@ export default function CampaignPage() {
 
     const getSortValue = (c) => {
       if (sortKey === 'party') {
-        return (c.partyTagIds ?? [])
-          .map((id) => partyTagsById[id]?.name ?? '')
-          .join(' ')
+        return partyTagsById[(c.partyLinks ?? [])[0]?.partyTagId]?.name ?? ''
       }
       return c[sortKey] ?? ''
     }
@@ -368,6 +437,8 @@ export default function CampaignPage() {
     campaigns,
     normalizedQuery,
     filterStatus,
+    filterPartyStatus,
+    filterRole,
     filterCampaignType,
     filterParty,
     filterLevel,
@@ -456,11 +527,23 @@ export default function CampaignPage() {
   function togglePartyTagForForm(tagId) {
     setCampaignForm((prev) => {
       if (!prev) return null
-      const current = prev.partyTagIds ?? []
-      const next = current.includes(tagId)
-        ? current.filter((id) => id !== tagId)
-        : [...current, tagId]
-      return { ...prev, partyTagIds: next }
+      const current = prev.partyLinks ?? []
+      const next = current.some((l) => l.partyTagId === tagId)
+        ? current.filter((l) => l.partyTagId !== tagId)
+        : [...current, { partyTagId: tagId, status: '-' }]
+      return { ...prev, partyLinks: next }
+    })
+  }
+
+  function setPartyStatusForForm(tagId, status) {
+    setCampaignForm((prev) => {
+      if (!prev) return null
+      return {
+        ...prev,
+        partyLinks: (prev.partyLinks ?? []).map((l) =>
+          l.partyTagId === tagId ? { ...l, status } : l,
+        ),
+      }
     })
   }
 
@@ -489,7 +572,13 @@ export default function CampaignPage() {
         <div>
           <h1 className="font-cinzel text-2xl font-bold text-stone-900">แคมเปญ</h1>
           <p className="mt-0.5 text-sm text-stone-500">
-            {query || filterStatus || filterCampaignType || filterParty || filterLevel
+            {query ||
+            filterStatus ||
+            filterPartyStatus ||
+            filterRole ||
+            filterCampaignType ||
+            filterParty ||
+            filterLevel
               ? `${visibleCampaigns.length}/${campaigns.length}`
               : campaigns.length}{' '}
             แคมเปญทั้งหมด
@@ -512,30 +601,22 @@ export default function CampaignPage() {
           placeholder="ค้นหา (Source, ชื่อ, Party, หมายเหตุ)..."
           className="w-full max-w-xs rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm text-stone-900 placeholder-stone-400 focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200"
         />
-        {/* Status pill filters */}
-        <div className="flex flex-wrap gap-1.5">
-          <button
-            type="button"
-            onClick={() => setFilterStatus('')}
-            className={!filterStatus
-              ? 'rounded-full bg-violet-700 px-3 py-1 text-xs font-medium text-white'
-              : 'rounded-full border border-[#e2cfb3] bg-white px-3 py-1 text-xs text-stone-600 hover:bg-[#f5ede0]'}
-          >
-            ทั้งหมด
-          </button>
-          {STATUS_OPTIONS.filter((s) => s !== '-').map((s) => (
-            <button
-              key={s}
-              type="button"
-              onClick={() => setFilterStatus(filterStatus === s ? '' : s)}
-              className={filterStatus === s
-                ? 'rounded-full bg-violet-700 px-3 py-1 text-xs font-medium text-white'
-                : 'rounded-full border border-[#e2cfb3] bg-white px-3 py-1 text-xs text-stone-600 hover:bg-[#f5ede0]'}
-            >
-              {s}
-            </button>
-          ))}
-        </div>
+        <SearchSelect
+          options={STATUS_FILTER_OPTIONS}
+          value={filterStatus}
+          onChange={setFilterStatus}
+          placeholder="สถานะ: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-40"
+        />
+        <SearchSelect
+          options={ROLE_OPTIONS.filter((r) => r !== '-').map((r) => ({ value: r, label: r }))}
+          value={filterRole}
+          onChange={setFilterRole}
+          placeholder="บทบาท: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-36"
+        />
         <SearchSelect
           options={levelOptions.map((lvl) => ({ value: lvl, label: lvl }))}
           value={filterLevel}
@@ -560,6 +641,14 @@ export default function CampaignPage() {
           clearLabel="ล้าง"
           className="w-36"
         />
+        <SearchSelect
+          options={PARTY_STATUS_FILTER_OPTIONS}
+          value={filterPartyStatus}
+          onChange={setFilterPartyStatus}
+          placeholder="สถานะปาตี้: ทั้งหมด"
+          clearLabel="ล้าง"
+          className="w-40"
+        />
       </div>
 
       {campaigns.length === 0 ? (
@@ -579,6 +668,7 @@ export default function CampaignPage() {
                 <SortableTh label="Source" sortKey="source" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="ชื่อแคมเปญ" sortKey="name" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="สถานะ" sortKey="status" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
+                <SortableTh label="บทบาท" sortKey="campaignRole" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="Level" sortKey="level" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="ประเภทแคมเปญ" sortKey="campaignType" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
                 <SortableTh label="ต่อจากอันไหน" sortKey="continuesFrom" activeKey={sortKey} dir={sortDir} onSort={handleSort} />
@@ -595,25 +685,37 @@ export default function CampaignPage() {
                     <DisplayText value={campaign.source} />
                   </td>
                   <td className="py-2 px-3">
-                    <Tip text={campaign.briefContent}>
-                      {campaign.link ? (
-                        <a
-                          href={campaign.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          title={campaign.briefContent || campaign.link}
-                          className="block w-full whitespace-pre-wrap break-words rounded-md px-2 py-1 leading-snug font-medium text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900"
+                    <div className="flex items-start gap-1">
+                      <Tip text={campaign.briefContent}>
+                        {campaign.link ? (
+                          <a
+                            href={campaign.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            title={campaign.briefContent || campaign.link}
+                            className="block w-full whitespace-pre-wrap break-words rounded-md px-2 py-1 leading-snug font-medium text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900"
+                          >
+                            {campaign.name}
+                          </a>
+                        ) : (
+                          <DisplayText
+                            value={campaign.name}
+                            title={campaign.briefContent ? 'ชี้ที่ชื่อเพื่อดูเนื้อหาคร่าวๆ' : undefined}
+                            className={campaign.briefContent ? 'cursor-help font-medium underline decoration-dotted underline-offset-2' : 'font-medium'}
+                          />
+                        )}
+                      </Tip>
+                      {getAdventureJournal(campaign.adventureSlug) && (
+                        <button
+                          type="button"
+                          onClick={() => setJournalCampaign(campaign)}
+                          className="inline-flex shrink-0 items-center justify-center rounded-md p-1 text-stone-400 hover:bg-[#f5ede0] hover:text-violet-600 transition-colors"
+                          title="อ่าน Adventure Journal"
                         >
-                          {campaign.name}
-                        </a>
-                      ) : (
-                        <DisplayText
-                          value={campaign.name}
-                          title={campaign.briefContent ? 'ชี้ที่ชื่อเพื่อดูเนื้อหาคร่าวๆ' : undefined}
-                          className={campaign.briefContent ? 'cursor-help font-medium underline decoration-dotted underline-offset-2' : 'font-medium'}
-                        />
+                          📖
+                        </button>
                       )}
-                    </Tip>
+                    </div>
                   </td>
                   <td className="py-2 px-3">
                     <span
@@ -625,6 +727,19 @@ export default function CampaignPage() {
                     </span>
                   </td>
                   <td className="py-2 px-3">
+                    {campaign.campaignRole && campaign.campaignRole !== '-' ? (
+                      <span
+                        className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${
+                          ROLE_STYLES[campaign.campaignRole] ?? ROLE_STYLES['-']
+                        }`}
+                      >
+                        {campaign.campaignRole}
+                      </span>
+                    ) : (
+                      <span className="text-gray-300">—</span>
+                    )}
+                  </td>
+                  <td className="py-2 px-3">
                     <DisplayText value={campaign.level} />
                   </td>
                   <td className="py-2 px-3">
@@ -634,7 +749,7 @@ export default function CampaignPage() {
                     <DisplayText value={campaign.continuesFrom} />
                   </td>
                   <td className="py-2 px-3">
-                    <PartyTagChips ids={campaign.partyTagIds} partyTags={partyTags} />
+                    <PartyTagChips links={campaign.partyLinks} partyTags={partyTags} />
                   </td>
                   <td className="py-2 px-3">
                     <DisplayText value={campaign.note} />
@@ -756,6 +871,25 @@ export default function CampaignPage() {
                 </div>
               </div>
 
+              {/* Row 3.5: Role (Playable vs Base material) */}
+              <div className="flex flex-col gap-1.5">
+                <label className="font-semibold text-stone-700">บทบาท</label>
+                <select
+                  value={campaignForm.campaignRole ?? '-'}
+                  onChange={(e) => updateFormField('campaignRole', e.target.value)}
+                  className={`w-full rounded-lg border border-gray-300 px-3 py-2 font-medium focus:border-violet-400 focus:outline-none focus:ring-1 focus:ring-violet-200 ${
+                    ROLE_STYLES[campaignForm.campaignRole] ?? ''
+                  }`}
+                >
+                  {ROLE_OPTIONS.map((r) => (
+                    <option key={r} value={r}>
+                      {r}
+                    </option>
+                  ))}
+                </select>
+                <p className="text-xs text-stone-400">Playable = ตัวที่จะเอาไปเล่นจริง, Base = เก็บไว้อ้างอิง/ต่อยอด ไม่ได้เล่นตรงๆ แล้ว</p>
+              </div>
+
               {/* Row 4: Continues From */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-semibold text-stone-700">ต่อจากอันไหน</label>
@@ -770,9 +904,10 @@ export default function CampaignPage() {
               <div className="flex flex-col gap-1.5">
                 <label className="font-semibold text-stone-700">Party (กลุ่ม)</label>
                 <PartyTagPicker
-                  selectedIds={campaignForm.partyTagIds}
+                  links={campaignForm.partyLinks}
                   partyTags={partyTags}
                   onToggle={togglePartyTagForForm}
+                  onStatusChange={setPartyStatusForForm}
                 />
               </div>
 
@@ -845,6 +980,10 @@ export default function CampaignPage() {
             </div>
           </div>
         </div>
+      )}
+
+      {journalCampaign && (
+        <AdventureJournalDrawer campaign={journalCampaign} onClose={() => setJournalCampaign(null)} />
       )}
 
       <ConfirmDialog

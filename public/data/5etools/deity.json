@@ -12150,27 +12150,6 @@
   },
   {
     "name": "Oghma",
-    "source": "PHB",
-    "page": 294,
-    "srd": true,
-    "basicRules": true,
-    "pantheon": "Forgotten Realms",
-    "alignment": [
-      "N"
-    ],
-    "title": "God of knowledge",
-    "domains": [
-      "Knowledge"
-    ],
-    "symbol": "Blank scroll",
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
-    "name": "Oghma",
     "altNames": [
       "The Binder",
       "The Lord of Knowledge"
@@ -14811,27 +14790,6 @@
   },
   {
     "name": "Silvanus",
-    "source": "PHB",
-    "page": 294,
-    "srd": true,
-    "basicRules": true,
-    "pantheon": "Forgotten Realms",
-    "alignment": [
-      "N"
-    ],
-    "title": "God of wild nature",
-    "domains": [
-      "Nature"
-    ],
-    "symbol": "Oak leaf",
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
-    "name": "Silvanus",
     "altNames": [
       "Oak Father",
       "The Old Oak",
@@ -15251,26 +15209,6 @@
     "title": "God of fire giants and craft",
     "domains": [
       "Knowledge",
-      "War"
-    ],
-    "symbol": "Flaming sword",
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
-    "name": "Surtur",
-    "source": "PHB",
-    "page": 299,
-    "pantheon": "Norse",
-    "alignment": [
-      "L",
-      "E"
-    ],
-    "title": "God of fire giants and war",
-    "domains": [
       "War"
     ],
     "symbol": "Flaming sword",
@@ -16926,26 +16864,6 @@
     }
   },
   {
-    "name": "Thrym",
-    "source": "PHB",
-    "page": 299,
-    "pantheon": "Norse",
-    "alignment": [
-      "C",
-      "E"
-    ],
-    "title": "God of frost giants and cold",
-    "domains": [
-      "War"
-    ],
-    "symbol": "White double-bladed axe",
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
     "name": "Tiamat",
     "source": "DMG",
     "page": 10,
@@ -17434,28 +17352,6 @@
       "Order"
     ],
     "symbol": "Balanced scales resting on a warhammer",
-    "_gr": {
-      "origin": "official",
-      "edition": "legacy",
-      "book": "PHB"
-    }
-  },
-  {
-    "name": "Tyr",
-    "source": "PHB",
-    "page": 299,
-    "pantheon": "Norse",
-    "alignment": [
-      "L",
-      "N"
-    ],
-    "title": "God of courage and strategy",
-    "domains": [
-      "Knowledge",
-      "War",
-      "Order"
-    ],
-    "symbol": "Sword",
     "_gr": {
       "origin": "official",
       "edition": "legacy",
