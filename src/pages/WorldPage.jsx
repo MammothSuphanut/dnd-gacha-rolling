@@ -1,26 +1,9 @@
-import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { getWorldSettings } from '../utils/worldSettings'
-import WorldSettingSidebar from '../components/world/WorldSettingSidebar'
-import WorldCategoryAccordion from '../components/world/WorldCategoryAccordion'
-import WorldEntryModal from '../components/world/WorldEntryModal'
 
 export default function WorldPage() {
+  const navigate = useNavigate()
   const worlds = getWorldSettings()
-  const [selectedWorldId, setSelectedWorldId] = useState(worlds[0]?.id ?? null)
-  const [openCategoryId, setOpenCategoryId] = useState(worlds[0]?.categories[0]?.id ?? null)
-  const [selectedCard, setSelectedCard] = useState(null)
-
-  const selectedWorld = worlds.find((world) => world.id === selectedWorldId) ?? null
-
-  function handleSelectWorld(worldId) {
-    setSelectedWorldId(worldId)
-    const world = worlds.find((w) => w.id === worldId)
-    setOpenCategoryId(world?.categories[0]?.id ?? null)
-  }
-
-  function toggleCategory(categoryId) {
-    setOpenCategoryId((prev) => (prev === categoryId ? null : categoryId))
-  }
 
   return (
     <div className="w-full p-4 md:p-8">
@@ -31,24 +14,20 @@ export default function WorldPage() {
           ยังไม่มี World Setting — เพิ่มโฟลเดอร์ manifest.json ใน world-settings/ ได้เลย
         </p>
       ) : (
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
-          <aside className="w-full shrink-0 lg:w-56">
-            <WorldSettingSidebar worlds={worlds} selectedId={selectedWorldId} onSelect={handleSelectWorld} />
-          </aside>
-          <div className="min-w-0 flex-1">
-            {selectedWorld && (
-              <WorldCategoryAccordion
-                world={selectedWorld}
-                openCategoryId={openCategoryId}
-                onToggleCategory={toggleCategory}
-                onSelectCard={setSelectedCard}
-              />
-            )}
-          </div>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {worlds.map((world) => (
+            <button
+              key={world.id}
+              type="button"
+              onClick={() => navigate(`/world/${world.id}`)}
+              className="flex flex-col items-start gap-1 rounded-xl border border-[#e2cfb3] bg-white p-4 text-left shadow-sm transition-colors hover:border-violet-300 hover:bg-violet-50/40"
+            >
+              <h2 className="font-cinzel text-lg font-semibold text-stone-900">{world.name}</h2>
+              {world.source && <p className="text-sm text-stone-500">{world.source}</p>}
+            </button>
+          ))}
         </div>
       )}
-
-      <WorldEntryModal card={selectedCard} onClose={() => setSelectedCard(null)} />
     </div>
   )
 }

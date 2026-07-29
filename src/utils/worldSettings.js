@@ -14,6 +14,14 @@ const mdFiles = import.meta.glob('/world-settings/**/*.md', {
   eager: true,
 })
 
+// World map images live alongside adventure content (they're reused from
+// campaign map assets, e.g. adventures/aeorian-cataclysm/Exandria.jpeg)
+// rather than duplicated under world-settings/.
+const mapImageFiles = import.meta.glob('/adventures/**/*.{jpg,jpeg,png}', {
+  import: 'default',
+  eager: true,
+})
+
 function buildWorlds() {
   const worlds = []
   for (const manifest of Object.values(manifestFiles)) {
@@ -25,6 +33,7 @@ function buildWorlds() {
       id: manifest.id,
       name: manifest.name,
       source: manifest.source,
+      mapImage: manifest.mapImage ? mapImageFiles[manifest.mapImage] ?? null : null,
       categories: manifest.categories ?? [],
       cards,
     })
@@ -42,8 +51,24 @@ export function getWorldSetting(id) {
   return worlds.find((world) => world.id === id) ?? null
 }
 
+// The untouched parsed manifest.json (raw mapImage/contentPath strings, no
+// resolved asset URLs or attached markdown content) — the shape the edit-mode
+// save flow needs, since saving a resolved runtime object back to disk would
+// bake in hashed build URLs instead of the original source paths.
+export function getRawManifest(id) {
+  return Object.values(manifestFiles).find((manifest) => manifest.id === id) ?? null
+}
+
 // Cards for one category within a world, in manifest order.
 export function getCategoryCards(world, categoryId) {
   if (!world) return []
   return world.cards.filter((card) => card.category === categoryId)
+}
+
+// The short markdown blurb a continent-level map pin opens (e.g. Wildemount's
+// overview), distinct from the individual city cards inside that category.
+export function getCategoryOverview(world, categoryId) {
+  const category = world?.categories.find((c) => c.id === categoryId)
+  if (!category?.overviewPath) return null
+  return { content: mdFiles[category.overviewPath] ?? null }
 }

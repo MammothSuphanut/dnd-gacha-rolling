@@ -2,13 +2,57 @@
   "id": "exandria",
   "name": "Exandria",
   "source": "Critical Role",
+  "mapImage": "/adventures/aeorian-cataclysm/Exandria.jpeg",
   "categories": [
-    { "id": "contents", "title": "Contents" },
-    { "id": "wildemount", "title": "Wildemount" },
-    { "id": "tal-dorei", "title": "Tal'Dorei" },
-    { "id": "issylra", "title": "Issylra" },
-    { "id": "marquet", "title": "Marquet" },
-    { "id": "domunas", "title": "Domunas / The Shattered Teeth" }
+    {
+      "id": "contents",
+      "title": "Contents"
+    },
+    {
+      "id": "wildemount",
+      "title": "Wildemount",
+      "overviewPath": "/world-settings/exandria/wildemount/_overview.md",
+      "pin": {
+        "x": 65.4,
+        "y": 18.4
+      }
+    },
+    {
+      "id": "tal-dorei",
+      "title": "Tal'Dorei",
+      "overviewPath": "/world-settings/exandria/tal-dorei/_overview.md",
+      "pin": {
+        "x": 40.3,
+        "y": 23.3
+      }
+    },
+    {
+      "id": "issylra",
+      "title": "Issylra",
+      "overviewPath": "/world-settings/exandria/issylra/_overview.md",
+      "pin": {
+        "x": 11.1,
+        "y": 21.7
+      }
+    },
+    {
+      "id": "marquet",
+      "title": "Marquet",
+      "overviewPath": "/world-settings/exandria/marquet/_overview.md",
+      "pin": {
+        "x": 44.4,
+        "y": 75.3
+      }
+    },
+    {
+      "id": "domunas",
+      "title": "Domunas / The Shattered Teeth",
+      "overviewPath": "/world-settings/exandria/domunas/_overview.md",
+      "pin": {
+        "x": 76.6,
+        "y": 86.6
+      }
+    }
   ],
   "cards": [
     {
@@ -23,21 +67,33 @@
       "category": "wildemount",
       "title": "Rexxentrum",
       "summary": "เมืองหลวงของ Dwendalian Empire เมืองที่ใหญ่ที่สุดใน Wildemount ศูนย์กลางอำนาจการเมืองและวิชาอาร์เคน",
-      "contentPath": "/world-settings/exandria/wildemount/rexxentrum.md"
+      "contentPath": "/world-settings/exandria/wildemount/rexxentrum.md",
+      "pin": {
+        "x": 77,
+        "y": 28.9
+      }
     },
     {
       "id": "zadash",
       "category": "wildemount",
       "title": "Zadash",
       "summary": "เมืองใหญ่ทางใต้ของ Rexxentrum จุดศูนย์กลางการค้าระหว่าง Empire กับ Menagerie Coast",
-      "contentPath": "/world-settings/exandria/wildemount/zadash.md"
+      "contentPath": "/world-settings/exandria/wildemount/zadash.md",
+      "pin": {
+        "x": 74.9,
+        "y": 37.7
+      }
     },
     {
       "id": "whitestone",
       "category": "tal-dorei",
       "title": "Whitestone",
       "summary": "นครแห่งต้นสุริยะ (City of the Sun Tree) บนเทือกเขา Alabaster Sierras ทางตะวันออกเฉียงเหนือของ Tal'Dorei",
-      "contentPath": "/world-settings/exandria/tal-dorei/whitestone.md"
+      "contentPath": "/world-settings/exandria/tal-dorei/whitestone.md",
+      "pin": {
+        "x": 53.8,
+        "y": 29.2
+      }
     }
   ]
 }

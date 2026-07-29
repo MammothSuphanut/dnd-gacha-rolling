@@ -54,6 +54,24 @@ export async function saveDefaultData(state) {
   }
 }
 
+export async function saveWorldManifest(worldId, manifest) {
+  const res = await fetch('/__save-world-manifest', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ worldId, manifest }),
+  })
+  if (!res.ok) {
+    let message = `บันทึกไม่สำเร็จ (HTTP ${res.status})`
+    try {
+      const data = await res.json()
+      if (data?.error) message = data.error
+    } catch {
+      // ignore non-JSON error body
+    }
+    throw new Error(message)
+  }
+}
+
 export async function importImages(images) {
   if (!images || typeof images !== 'object') return
   for (const [characterId, dataUrl] of Object.entries(images)) {
