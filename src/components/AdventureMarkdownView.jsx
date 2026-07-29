@@ -61,6 +61,16 @@ function buildComponents(basePath) {
     th: (props) => <th className="border border-[#e2cfb3] px-2 py-1 font-semibold text-stone-700" {...props} />,
     td: (props) => <td className="border border-[#e2cfb3] px-2 py-1 align-top text-stone-700" {...props} />,
     a: (props) => <AdventureLink basePath={basePath} {...props} />,
+    // `title` (the markdown "caption" syntax: ![alt](src "caption")) renders
+    // as a figcaption, matching the image+credit-line look official 5e
+    // journals use — src is always an absolute external URL (5e.tools /
+    // homebrew-img), never a path needing basePath resolution.
+    img: ({ src, alt, title }) => (
+      <figure className="my-4">
+        <img src={src} alt={alt} loading="lazy" className="w-full rounded-md border border-[#e2cfb3]" />
+        {title && <figcaption className="mt-1 text-center text-xs italic text-stone-500">{title}</figcaption>}
+      </figure>
+    ),
   }
 }
 
