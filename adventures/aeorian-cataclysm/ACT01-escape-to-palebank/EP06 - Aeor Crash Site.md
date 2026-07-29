@@ -2,7 +2,7 @@
 
 *Level 3 — Session ยาวประมาณ 1-2 ครั้ง — Act 1, Chapter 4 (Aeor Lab และ Fragment of Wisdom), EP6 — ต่อจาก EP5: Salsvault Expedition*
 
-## NPC ประจำ EP
+### NPC ประจำ EP
 
 | ชื่อ | บทบาท | หมายเหตุ |
 |---|---|---|
@@ -14,13 +14,13 @@
 
 ตัวละครเดินทางมาถึงพิกัดที่แผนผังจาก Salsvault ชี้ไว้ ณ **Aeor Crash Site** ซากปรักหักพังของนคร Aeor ที่ตกกระแทกลงมาเมื่อครั้ง Calamity เบื้องหน้าคือซากบ้านหินเก่าที่ดูเหมือนจะนำไปสู่สิ่งที่ใหญ่กว่านั้นซ่อนอยู่ใต้ดิน
 
-## Adventure Summary
+### Adventure Summary
 
 ตัวละครสำรวจซากบ้านบนผิวดินก่อนพบทางลงสู่ชั้นใต้ดินที่ถูกผู้พิทักษ์ดุร้ายกว่าที่คิดเฝ้าอยู่ หลังฝ่าฟันขึ้นมาได้ พวกเขาพบกับ **Flay** และสหายอีกสองคน กลุ่มต่อต้าน Mindflayer ที่เข้าใจผิดคิดว่าตัวละครเป็นศัตรูในตอนแรก แต่ไม่ทันไรเหตุการณ์ก็พลิกผัน เมื่อ **Mindflayer ตัวหนึ่งที่กำลังสำรวจพื้นที่** บังเอิญพบกลุ่มของพวกเขา สังหาร Flay กลางฉาก แล้วหันมาปะทะตัวละครที่เดินตามมาทีหลังแทน ก่อนถูกเรียกตัวจากไปอย่างลึกลับกลางไฟต์ ลึกที่สุดของซากปรักหักพัง ตัวละครพบ **Messenger** วิญญาณผู้พิทักษ์ Ofear ที่เฉลยความจริงเบื้องหลังเหตุการณ์สัตว์ป่าดุร้ายผิดปกติทั้งหมด และฝากความหวังไว้กับพวกเขาให้ตามหา **The Fragment** ที่กระจัดกระจายไป — เบาะแสแรกชี้ไปที่ **Fortress of the Dead Jarl**
 
 ---
 
-## Surface Ruins
+### Surface Ruins
 
 ### Features of the Surface Ruins
 
@@ -60,7 +60,7 @@
 
 ---
 
-## Underground Dungeon
+### Underground Dungeon
 
 ### Features of the Dungeon
 
@@ -141,10 +141,10 @@ Grok และ Chin รอดชีวิตจากเหตุการณ์
 
 ---
 
-## Character Advancement
+### Character Advancement
 
 ตัวละครยังคงอยู่ **Level 3** เมื่อจบ EP นี้ (ตรงกับ Level Checkpoint "เดินทางถึง Aeor Lab site" ที่ทำสำเร็จไปแล้วตั้งแต่จบ EP5) — XP จากการปะทะ Gauth และการเผชิญหน้ากับ Mindflayer นักสำรวจ ผลักดันตัวละครเข้าใกล้ Level 4 มากขึ้น แต่ยังไม่ข้าม checkpoint ถัดไปจนกว่าจะจบ Fortress of the Dead Jarl
 
-## จบ EP ด้วย
+### จบ EP ด้วย
 
 ตัวละครออกจากซากปรักหักพัง Aeor Crash Site มุ่งหน้าสู่ **Fortress of the Dead Jarl** ทางเหนือ ตามเบาะแสของ Messenger เพื่อตามหา Fragment of Wisdom ชิ้นแรก — ต่อใน **[EP7: Fortress of the Dead Jarl](<./EP07 - Fortress of the Dead Jarl.md>)**

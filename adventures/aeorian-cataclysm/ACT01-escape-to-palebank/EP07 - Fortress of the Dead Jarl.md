@@ -2,7 +2,7 @@
 
 *Level 3 (เริ่ม) – 3 + 30–40% สู่ 4 (จบ EP, จบ Act 1) — Session ยาวประมาณ 1 ครั้ง — Act 1, Chapter 4 (Aeor Lab และ Fragment of Wisdom), EP7 — ต่อจาก EP6: Aeor Crash Site*
 
-## NPC ประจำ EP
+### NPC ประจำ EP
 
 | ชื่อ | บทบาท | หมายเหตุ |
 |---|---|---|
@@ -11,13 +11,13 @@
 
 ตัวละครเดินทางจาก Aeor Crash Site มุ่งหน้าตามเบาะแสของ Messenger ไปทางเหนือจนถึง **Fortress of the Dead Jarl** ป้อมปราการโบราณกลางที่ราบหิมะ
 
-## Adventure Summary
+### Adventure Summary
 
 เบื้องหลังกำแพงป้อมปราการร้าง ตัวละครต้องฝ่า **Golem ผู้พิทักษ์ประตู** ก่อนจะพลาดปลดปล่อย **Jarl ผู้ตาย** ออกมาโดยไม่ตั้งใจ — นักรบแดนเหนืออันเดดที่หลับใหลมานับพันปีตื่นขึ้นพร้อมความกระหายในการต่อสู้ ตัวละครต้องเอาชนะเธอเพื่อชิง **Fragment of Wisdom** กลับมา ก่อนเดินทางกลับไปมอบให้ Messenger ที่ Aeor Lab ปิดฉาก Act 1
 
 ---
 
-## Fortress of the Dead Jarl
+### Fortress of the Dead Jarl
 
 เมื่อผู้เล่นเดินทางพ้นแนวเขาและลงมาถึงที่ราบ พวกเขาจะพบกับลานกว้างที่ถูกโอบล้อมด้วยซากปรักหักพังของป้อมปราการโบราณ
 
@@ -107,7 +107,7 @@
 
 *(โต๊ะ ats: ถ้าปาร์ตี้ตัดสินใจออกไปล่าฝูงหมาป่าที่ได้ยินหอนตอนกลางคืนก่อนเดินทางกลับ ไปเล่น [EP7ats1: Wolf Hunt on the Snowfields](<./EP07ats1 - Wolf Hunt on the Snowfields.md>) ก่อน แล้วค่อยกลับมาที่หัวข้อด้านล่างนี้)*
 
-## Returning to the Messenger — End of Act 1
+### Returning to the Messenger — End of Act 1
 
 เมื่อได้ Fragment of Wisdom มาแล้ว ตัวละครเดินทางกลับไปยัง Aeor Lab เพื่อพบ Messenger อีกครั้ง
 
@@ -128,12 +128,12 @@ Messenger กล่าวคำอำลาสั้นๆ ยืนยันว
 - **Grok และ Chin** เลือกอยู่ต่อที่ Aeor Crash Site เพื่อเฝ้าระวังไม่ให้ Mindflayer ตัวอื่นกลับมายึดพื้นที่ซ้ำ ทั้งสองสัญญาว่าจะส่งข่าวถึงตัวละครถ้าเจอความผิดปกติเพิ่มเติมในซาก — เป็นการสานต่อเจตนารมณ์ของ Flay ที่จากไป
 - **Mila Teno** เดินทางกลับไปทำหน้าที่สเกาต์ประจำ Palebank Village ตามเดิม — Elro ฝากขอบคุณตัวละครอีกครั้งผ่านนกส่งสาร พร้อมยืนยันว่าหมู่บ้านปลอดภัยดีตั้งแต่ตัวละครจัดการภัยคุกคามให้
 
-## Character Advancement
+### Character Advancement
 
 ตัวละครเลื่อนสู่ **Level 3 + 30–40% สู่ Level 4** เมื่อ EP จบ (ตรงกับ Level Checkpoint ของ Act 1 — "จบ Fortress of the Dead Jarl (รวม Mindflayer + Golem/Jarl)")
 
 *(โต๊ะ ats: ก่อนเปิดฉาก Act 2 เล่น [EP00ats1: The Homeward Tide](<../ACT02-dwendalian-shadow/EP00ats1 - The Homeward Tide.md>) ก่อน — การเดินทางกลับ Palebank Village และภารกิจส่งคืนนาฬิกาให้ Foref)*
 
-## จบ EP ด้วย
+### จบ EP ด้วย
 
 ตัวละครออกจาก Aeor Lab พร้อม Fragment of Wisdom ในมือ มุ่งหน้าสู่การผจญภัยครั้งใหม่เพื่อตามหา Fragment ที่เหลืออีก 4 ชิ้น — เปิดฉาก **[Act 2](../ACT02-dwendalian-shadow/00-act-outline.md)**

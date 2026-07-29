@@ -2,7 +2,7 @@
 
 *Level 2 (เริ่ม) - 3 (จบ EP) — Session โดยประมาณ 1-2 — ดัดแปลงจากแคมเปญต้นฉบับ "Frozen Sick" (Wildemount)*
 
-## NPC ประจำ EP
+### NPC ประจำ EP
 | ชื่อ | บทบาท | หมายเหตุ |
 |---|---|---|
 | **Morgo Delwur** | ผู้อยู่อาศัยรุ่นเก๋าของ Syrinlya (werebear) | ต้อนรับตัวละคร มอบที่พัก (Bertron's Yurt) และพาแนะนำสถานที่ |
@@ -14,7 +14,9 @@
 
 ---
 
-## Traveling to Eiselcross
+### Traveling to Eiselcross
+
+![Sailing to Eiselcross](https://5e.tools/img/book/EGW/119-05-06.webp "เรือ Remorhaz มุ่งหน้าสู่ทวีปน้ำแข็ง Eiselcross")
 
 Elro Aldataur จัดเตรียมเรือ **Remorhaz** (ดูแลโดยหน่วย Glassblades องครักษ์ของ Uthodurn) ให้ตัวละครเดินทาง — จุดหมายคือ **Syrinlya** ด่านหน้าของ Uthodurn บนเกาะ Foren (เกาะใหญ่ที่สุดของ Eiselcross) ที่นั่นควรไปพบ **Orvo Mustave** dwarf ที่เคยสำรวจร่วมกับ Urgon หลายครั้ง
 
@@ -27,7 +29,7 @@ Eiselcross ปกคลุมน้ำแข็งหิมะตลอดเว
 
 ---
 
-## Syrinlya
+### Syrinlya
 
 > *อุณหภูมิลดต่ำลงอย่างต่อเนื่องนับตั้งแต่ออกเดินทางจาก Palebank Village ทว่ามันกลับดูเหมือนจะยิ่งทวีความหนาวเหน็บขึ้นไปอีกยามที่ก้าวเท้าลงจากสะพานเรือ Remorhaz สู่พื้นเกาะ Foren ท่ามกลางกระแสลมพัดพาหิมะปลิวว่อน เต็นท์บุขนสัตว์และกระโจมยูร์ตตั้งเรียงรายเป็นค่ายพักขนาดใหญ่*
 >
@@ -58,7 +60,7 @@ Morgo พาไปที่กระโจมยูร์ตของ elf ผู
 
 ---
 
-## Into the Wilds
+### Into the Wilds
 
 หลังคุยกับ Orvo เตรียมตัวให้พร้อมก่อนมุ่งหน้าเข้าป่าตัดทุ่งน้ำแข็ง — ไม่มีร้านค้าเปิดใน Syrinlya แต่นักสำรวจยินดีแลกเปลี่ยนของ
 
@@ -80,11 +82,14 @@ Morgo พาไปที่กระโจมยูร์ตของ elf ผู
 
 ---
 
-## Salsvault
+### Salsvault
 
 Salsvault เคยเป็นห้องแล็บของนักเวท necromancy/transmutation แห่ง Aeor ที่สร้างสิ่งประดิษฐ์จักรกลและโรคร้ายไว้เป็นอาวุธ สิ่งประดิษฐ์และผลงานจำนวนมากยังทำงานอยู่ ปกป้องทั้งโรคร้ายและขุมทรัพย์ที่ซ่อนอยู่ภายในจนถึงปัจจุบัน
 
 ### Approaching Salsvault
+
+![Map 5.10: Salsvault](https://5e.tools/img/book/EGW/120-5.10-salsvault-player.webp "แผนที่ 5.10: Salsvault (Player Version)")
+
 อาคารหินสีน้ำเงินเข้มจมอยู่ใต้น้ำบางส่วน โผล่พ้นน้ำแข็ง ประตูหินสีเทาสลักหน้ากะโหลก จารึก "SALSVAULT" — **Ziro** และ **Glacies** (ice mephits 2 ตัว) ซ่อนเฝ้าทางเข้า (passive Perception 13+ สังเกตเห็น) ถ้าถูกรบกวนจะโจมตี ถ้าไม่ถูกพบจะแอบตามเข้าไปข้างในและทุบขวด Frigid Woe แตกทันทีที่เจอ (เพื่อปลดปล่อยพลังความเย็น)
 
 **Sealed Entrance**: น้ำแข็งผนึกประตู — Strength DC 15 พังเปิด หรือทำ bludgeoning/fire damage 10 แต้มใส่น้ำแข็ง การพังด้วย bludgeoning ส่งเสียงดังดึงชุดเกราะมีชีวิต 3 ชุดจาก S3 มารวมตัวที่ S1 รอโจมตีทันทีที่เข้าไป
@@ -200,16 +205,16 @@ footlocker ใต้เตียง 4 หลัง (ว่างเปล่า)
 
 ---
 
-## Concluding the Adventure
+### Concluding the Adventure
 
 เลือกใส่ random encounters ระหว่างทางกลับ Syrinlya หรือให้ราบรื่นเป็นรางวัลของงานที่สำเร็จ เมื่อถึง Syrinlya ให้ **the Buyer** เทเลพอร์ตยารักษากลับไปยัง Palebank Village — **Nadarr Splint** ผู้ดูแลผู้ป่วยระหว่างที่ตัวละครไม่อยู่เป็นผู้รับยาชุดแรกไปรักษาทันที ก่อน Elro Aldataur จ่ายเงินรางวัล **200 gp** ผ่าน the Buyer
 
 ถ้ากู้ยาไม่ทันเวลา ครอบครัว Irven Liel ทั้ง 4 คนจะยอมจำนนและเสียชีวิตด้วยโรคนี้ (Nadarr Splint ทำได้เพียงบรรเทาความเจ็บปวดช่วงสุดท้าย) ถ้าสำเร็จ ตัวละครได้รับคำขอบคุณจาก Elro, ครอบครัว Irven, ชาวหมู่บ้าน Palebank Village และเหล่านักสำรวจแห่ง Syrinlya — จำผลลัพธ์นี้ไว้ให้ดี เพราะจะส่งผลต่อฉากเปิดเรื่องของ **EP3**
 
-## Character Advancement
+### Character Advancement
 
 ตัวละครเลื่อนสู่ **level 3** เมื่อ EP จบ
 
-## จบ EP ด้วย
+### จบ EP ด้วย
 
 ตัวละครเดินทางกลับ Palebank Village พร้อมยารักษา — เปิดฉากต่อทันทีที่ **EP3: Little Thieves of Palebank** (ภาคต่อ homebrew ที่เริ่มตอนแจกจ่ายยาให้ชาวบ้าน แล้วเริ่มพบว่ายาบางส่วน "หายไป" อย่างลึกลับ)
