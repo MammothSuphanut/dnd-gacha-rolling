@@ -1,0 +1,43 @@
+{
+  "id": "exandria",
+  "name": "Exandria",
+  "source": "Critical Role",
+  "categories": [
+    { "id": "contents", "title": "Contents" },
+    { "id": "wildemount", "title": "Wildemount" },
+    { "id": "tal-dorei", "title": "Tal'Dorei" },
+    { "id": "issylra", "title": "Issylra" },
+    { "id": "marquet", "title": "Marquet" },
+    { "id": "domunas", "title": "Domunas / The Shattered Teeth" }
+  ],
+  "cards": [
+    {
+      "id": "exandria-overview",
+      "category": "contents",
+      "title": "Exandria",
+      "summary": "โลกที่แคมเปญของ Critical Role ดำเนินเรื่องอยู่ มีดวงจันทร์สองดวง (Catha, Ruidus) และ 4 ทวีปหลัก",
+      "contentPath": "/world-settings/exandria/contents/exandria-overview.md"
+    },
+    {
+      "id": "rexxentrum",
+      "category": "wildemount",
+      "title": "Rexxentrum",
+      "summary": "เมืองหลวงของ Dwendalian Empire เมืองที่ใหญ่ที่สุดใน Wildemount ศูนย์กลางอำนาจการเมืองและวิชาอาร์เคน",
+      "contentPath": "/world-settings/exandria/wildemount/rexxentrum.md"
+    },
+    {
+      "id": "zadash",
+      "category": "wildemount",
+      "title": "Zadash",
+      "summary": "เมืองใหญ่ทางใต้ของ Rexxentrum จุดศูนย์กลางการค้าระหว่าง Empire กับ Menagerie Coast",
+      "contentPath": "/world-settings/exandria/wildemount/zadash.md"
+    },
+    {
+      "id": "whitestone",
+      "category": "tal-dorei",
+      "title": "Whitestone",
+      "summary": "นครแห่งต้นสุริยะ (City of the Sun Tree) บนเทือกเขา Alabaster Sierras ทางตะวันออกเฉียงเหนือของ Tal'Dorei",
+      "contentPath": "/world-settings/exandria/tal-dorei/whitestone.md"
+    }
+  ]
+}
