@@ -17,12 +17,21 @@ function clampPercent(value) {
 export default function WorldMapPin({ x, y, label, variant = 'continent', editable = false, onClick, onReposition }) {
   const isCity = variant === 'city'
   const mapView = useWorldMapView()
-  const dragRef = useRef({ dragging: false, moved: false })
+  const dragRef = useRef({ dragging: false, moved: false, offsetX: 0, offsetY: 0 })
 
   function handlePointerDown(e) {
     if (!editable) return
     e.stopPropagation()
-    dragRef.current = { dragging: true, moved: false }
+    // Record how far off-center the cursor grabbed the pin, so the pin keeps
+    // that same offset instead of snapping its anchor onto the cursor on the
+    // very first move (which reads as the pin "teleporting" to the cursor).
+    const start = mapView?.screenToContent(e.clientX, e.clientY)
+    dragRef.current = {
+      dragging: true,
+      moved: false,
+      offsetX: start ? start.xPercent - x : 0,
+      offsetY: start ? start.yPercent - y : 0,
+    }
     e.currentTarget.setPointerCapture(e.pointerId)
   }
 
@@ -30,7 +39,10 @@ export default function WorldMapPin({ x, y, label, variant = 'continent', editab
     if (!editable || !dragRef.current.dragging || !mapView) return
     dragRef.current.moved = true
     const { xPercent, yPercent } = mapView.screenToContent(e.clientX, e.clientY)
-    onReposition?.(clampPercent(xPercent), clampPercent(yPercent))
+    onReposition?.(
+      clampPercent(xPercent - dragRef.current.offsetX),
+      clampPercent(yPercent - dragRef.current.offsetY),
+    )
   }
 
   function handlePointerUp(e) {

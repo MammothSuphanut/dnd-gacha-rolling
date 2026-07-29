@@ -13,8 +13,8 @@
       "title": "Wildemount",
       "overviewPath": "/world-settings/exandria/wildemount/_overview.md",
       "pin": {
-        "x": 65.4,
-        "y": 18.4
+        "x": 64.82363584113607,
+        "y": 20.260872991580968
       }
     },
     {
@@ -22,8 +22,8 @@
       "title": "Tal'Dorei",
       "overviewPath": "/world-settings/exandria/tal-dorei/_overview.md",
       "pin": {
-        "x": 40.3,
-        "y": 23.3
+        "x": 40.11556276559401,
+        "y": 24.726673552745677
       }
     },
     {
@@ -31,8 +31,8 @@
       "title": "Issylra",
       "overviewPath": "/world-settings/exandria/issylra/_overview.md",
       "pin": {
-        "x": 11.1,
-        "y": 21.7
+        "x": 11.192218617202995,
+        "y": 24.057107682313802
       }
     },
     {
@@ -40,8 +40,8 @@
       "title": "Marquet",
       "overviewPath": "/world-settings/exandria/marquet/_overview.md",
       "pin": {
-        "x": 44.4,
-        "y": 75.3
+        "x": 35.73973969997252,
+        "y": 77.39245284142739
       }
     },
     {
@@ -49,8 +49,8 @@
       "title": "Domunas / The Shattered Teeth",
       "overviewPath": "/world-settings/exandria/domunas/_overview.md",
       "pin": {
-        "x": 76.6,
-        "y": 86.6
+        "x": 75.88530703586963,
+        "y": 88.02667118652332
       }
     }
   ],
@@ -69,8 +69,8 @@
       "summary": "เมืองหลวงของ Dwendalian Empire เมืองที่ใหญ่ที่สุดใน Wildemount ศูนย์กลางอำนาจการเมืองและวิชาอาร์เคน",
       "contentPath": "/world-settings/exandria/wildemount/rexxentrum.md",
       "pin": {
-        "x": 77,
-        "y": 28.9
+        "x": 77.4032258064516,
+        "y": 28.769813191373764
       }
     },
     {
@@ -80,8 +80,8 @@
       "summary": "เมืองใหญ่ทางใต้ของ Rexxentrum จุดศูนย์กลางการค้าระหว่าง Empire กับ Menagerie Coast",
       "contentPath": "/world-settings/exandria/wildemount/zadash.md",
       "pin": {
-        "x": 74.9,
-        "y": 37.7
+        "x": 77.87168761484085,
+        "y": 37.091985374076614
       }
     },
     {
@@ -91,7 +91,7 @@
       "summary": "นครแห่งต้นสุริยะ (City of the Sun Tree) บนเทือกเขา Alabaster Sierras ทางตะวันออกเฉียงเหนือของ Tal'Dorei",
       "contentPath": "/world-settings/exandria/tal-dorei/whitestone.md",
       "pin": {
-        "x": 53.8,
+        "x": 54.453226298670614,
         "y": 29.2
       }
     }
