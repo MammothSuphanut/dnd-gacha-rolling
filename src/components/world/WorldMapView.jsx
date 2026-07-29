@@ -39,17 +39,19 @@ export default function WorldMapView({ src, alt, children, onBackgroundClick }) 
 
   // Zooms so the point at (originX, originY) — viewport-relative pixels —
   // stays fixed under the cursor/center instead of the image drifting.
+  // Reads zoom/pan directly from the current render rather than via
+  // functional setState updaters: this is called once per discrete user
+  // gesture (a wheel tick, a button click), so a stale closure isn't a risk,
+  // and nextPan's math depends on nextZoom — computing both in one updater
+  // meant calling setPan as a side effect inside setZoom's updater, which
+  // React Strict Mode double-invokes in dev, corrupting the pan offset.
   function applyZoom(factor, originX, originY) {
-    setZoom((prevZoom) => {
-      const nextZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, prevZoom * factor))
-      setPan((prevPan) => {
-        const contentX = (originX - prevPan.x) / prevZoom
-        const contentY = (originY - prevPan.y) / prevZoom
-        const nextPan = { x: originX - contentX * nextZoom, y: originY - contentY * nextZoom }
-        return clampPan(nextPan, nextZoom)
-      })
-      return nextZoom
-    })
+    const nextZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, zoom * factor))
+    const contentX = (originX - pan.x) / zoom
+    const contentY = (originY - pan.y) / zoom
+    const nextPan = { x: originX - contentX * nextZoom, y: originY - contentY * nextZoom }
+    setZoom(nextZoom)
+    setPan(clampPan(nextPan, nextZoom))
   }
 
   // Wheel handler below is attached once (empty dep array) so it isn't torn
