@@ -284,8 +284,8 @@
       "summary": "เมืองใหญ่ที่สุดของ Menagerie Coast เมืองหลวงโดยพฤตินัยของ Clovis Concord",
       "contentPath": "/world-settings/exandria/wildemount/port-damali.md",
       "pin": {
-        "x": 68.4,
-        "y": 43
+        "x": 69.15723855418544,
+        "y": 43.84789363338102
       },
       "sources": [
         {
@@ -301,8 +301,8 @@
       "summary": "นิคมตะวันตกสุดของ Clovis Concord บน Bisaft Isle",
       "contentPath": "/world-settings/exandria/wildemount/bisaft-port.md",
       "pin": {
-        "x": 64.80725806451615,
-        "y": 47.8
+        "x": 64.7859261174356,
+        "y": 47.52803537268792
       },
       "sources": [
         {
@@ -373,7 +373,7 @@
       "summary": "เมืองอุตสาหกรรม/วิทยาศาสตร์ ขึ้นชื่อเรื่องโลหะวิทยา",
       "contentPath": "/world-settings/exandria/wildemount/port-zoon.md",
       "pin": {
-        "x": 73.50725806451614,
+        "x": 73.53925435773787,
         "y": 49.107863115495256
       },
       "sources": [
@@ -449,8 +449,8 @@
       "summary": "หมู่บ้านใต้ Betrayers' Rise ฉากหลักของ Call of the Netherdeep",
       "contentPath": "/world-settings/exandria/wildemount/bazzoxan.md",
       "pin": {
-        "x": 89.90604867012269,
-        "y": 35.11552408741367
+        "x": 89.93024246461927,
+        "y": 35.272782059638736
       },
       "sources": [
         {
@@ -470,8 +470,8 @@
       "summary": "เมือง \"City of Beasts\" ทางตะวันตกของ Xhorhas",
       "contentPath": "/world-settings/exandria/wildemount/asarius.md",
       "pin": {
-        "x": 84.7,
-        "y": 38.3
+        "x": 85.8411891906492,
+        "y": 37.612086205328666
       },
       "sources": [
         {
@@ -487,8 +487,8 @@
       "summary": "ป้อมปราการโกงคอบลินบูชา Lolth ใต้ Vermaloc Wildwood",
       "contentPath": "/world-settings/exandria/wildemount/dumaran.md",
       "pin": {
-        "x": 89.27540350883237,
-        "y": 41.98548365869829
+        "x": 89.37139076109854,
+        "y": 41.905493739343456
       },
       "sources": [
         {
@@ -538,8 +538,8 @@
       "summary": "เกาะของเผ่าพันธุ์งูมีปีกบูชา Zehir นอกฝั่ง Tooth of Zehir",
       "contentPath": "/world-settings/exandria/wildemount/mordant-isle.md",
       "pin": {
-        "x": 95.93225693241241,
-        "y": 38.49475827678557
+        "x": 95.8218697207974,
+        "y": 38.56835138876589
       },
       "sources": [
         {
@@ -555,8 +555,8 @@
       "summary": "คาบสมุทรหมอกทางตะวันออกของ Blightshore ถิ่นมังกรเงา Karketh",
       "contentPath": "/world-settings/exandria/wildemount/tooth-of-zehir.md",
       "pin": {
-        "x": 97,
-        "y": 35.4
+        "x": 96.99003378727072,
+        "y": 35.50465435883313
       },
       "sources": [
         {
@@ -668,8 +668,8 @@
       "summary": "บ้านเกิดของ Yasha Nydoorin ใน Xhorhas",
       "contentPath": "/world-settings/exandria/wildemount/iothia-moorland.md",
       "pin": {
-        "x": 87.75846830798731,
-        "y": 42.8461697793776
+        "x": 87.83911346927762,
+        "y": 42.78568590840985
       },
       "sources": [
         {
@@ -1080,8 +1080,8 @@
       "summary": "เมืองอุตสาหกรรมของโนมที่ผลิตอาวุธสงครามของ Empire",
       "contentPath": "/world-settings/exandria/wildemount/hupperdook.md",
       "pin": {
-        "x": 80.60725806451613,
-        "y": 31.5961697793776
+        "x": 80.58592774483466,
+        "y": 31.40419446114571
       },
       "sources": [
         {
@@ -1114,8 +1114,8 @@
       "summary": "ป้อมคู่แฝดของ Rockguard จุดเริ่มสงคราม Ash and Light",
       "contentPath": "/world-settings/exandria/wildemount/ashguard-garrison.md",
       "pin": {
-        "x": 84.3,
-        "y": 33.9
+        "x": 83.98004032258063,
+        "y": 34.68390145378728
       },
       "sources": [
         {
@@ -1131,8 +1131,8 @@
       "summary": "เมืองเร่ร่อนบนหลังเต่ายักษ์ในหนอง Brokenveil Marsh",
       "contentPath": "/world-settings/exandria/wildemount/urzin.md",
       "pin": {
-        "x": 85.71008064516128,
-        "y": 31.70786311549525
+        "x": 85.76340725806452,
+        "y": 32.475766829521426
       },
       "sources": [
         {
@@ -1148,8 +1148,8 @@
       "summary": "ฐานทัพหลักของ Righteous Brand ทางตะวันออกของ Empire",
       "contentPath": "/world-settings/exandria/wildemount/bladegarden.md",
       "pin": {
-        "x": 83,
-        "y": 34.35
+        "x": 83.31995967741935,
+        "y": 33.42211644726415
       },
       "sources": [
         {
@@ -1182,8 +1182,8 @@
       "summary": "เมืองดวาร์ฟผู้ผลิตผ้าไหม Pride silk",
       "contentPath": "/world-settings/exandria/wildemount/prides-call.md",
       "pin": {
-        "x": 72.31653353168119,
-        "y": 33.34959741100188
+        "x": 72.42318675748763,
+        "y": 33.269607491647044
       },
       "sources": [
         {
@@ -1200,7 +1200,7 @@
       "contentPath": "/world-settings/exandria/wildemount/volantim.md",
       "pin": {
         "x": 71.72983955875519,
-        "y": 36.36048344642885
+        "y": 36.31248900659622
       },
       "sources": [
         {
@@ -1233,8 +1233,8 @@
       "summary": "เนินเขาความร้อนใต้พิภพ ล้อมรอบ Kamordah",
       "contentPath": "/world-settings/exandria/wildemount/bromkiln-hills.md",
       "pin": {
-        "x": 73.61854810407085,
-        "y": 36.60967720708539
+        "x": 73.68254069051436,
+        "y": 36.6256749468465
       },
       "sources": [
         {
@@ -1250,7 +1250,7 @@
       "summary": "เมืองเกษตรกรรม บ้านเกิดของ Veth Brenatto",
       "contentPath": "/world-settings/exandria/wildemount/felderwin.md",
       "pin": {
-        "x": 81.07338539861864,
+        "x": 81.11604766538066,
         "y": 37.68991755054841
       },
       "sources": [
@@ -1289,7 +1289,7 @@
       "contentPath": "/world-settings/exandria/wildemount/alfield.md",
       "pin": {
         "x": 78.46774165245796,
-        "y": 40.40080677001707
+        "y": 40.11284379266924
       },
       "sources": [
         {
@@ -1305,8 +1305,8 @@
       "summary": "เมืองที่ The Mighty Nein พบกันครั้งแรก",
       "contentPath": "/world-settings/exandria/wildemount/trostenwald.md",
       "pin": {
-        "x": 78.17580701766475,
-        "y": 42.11733870967742
+        "x": 78.31445653669296,
+        "y": 42.0693454903941
       },
       "sources": [
         {
@@ -1322,8 +1322,8 @@
       "summary": "เมืองมั่งคั่ง บ้านเกิดของ Taryon Darrington",
       "contentPath": "/world-settings/exandria/wildemount/deastok.md",
       "pin": {
-        "x": 74.17298302188996,
-        "y": 38.99092805616318
+        "x": 74.05566382254324,
+        "y": 38.75095829809866
       },
       "sources": [
         {
@@ -1373,8 +1373,8 @@
       "summary": "เมืองไร้กฎหมายนอกการปกครองของ Empire",
       "contentPath": "/world-settings/exandria/wildemount/shadycreek-run.md",
       "pin": {
-        "x": 80.7,
-        "y": 25.893144736751427
+        "x": 80.78532127872595,
+        "y": 26.22910215393189
       },
       "sources": [
         {
@@ -1397,6 +1397,555 @@
         {
           "label": "Critical Role Wiki: Yardel",
           "url": "https://criticalrole.fandom.com/wiki/Yardel"
+        }
+      ]
+    },
+    {
+      "id": "mutalos",
+      "category": "wildemount",
+      "title": "Mutalos",
+      "summary": "พื้นที่รกร้างเหนือเกาะ Foren ที่ภูมิประเทศเปลี่ยนไปทุกเช้าตามเวทมนตร์แปรสภาพยุค Aeor",
+      "contentPath": "/world-settings/exandria/wildemount/mutalos.md",
+      "pin": {
+        "x": 72.1,
+        "y": 8.4
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Mutalos",
+          "url": "https://criticalrole.fandom.com/wiki/Mutalos"
+        }
+      ]
+    },
+    {
+      "id": "dampfkan",
+      "category": "wildemount",
+      "title": "Dampfkan",
+      "summary": "หนึ่งในเกาะของ Eiselcross มีภูเขาไฟเย็นและแท่งหินปริศนา",
+      "contentPath": "/world-settings/exandria/wildemount/dampfkan.md",
+      "pin": {
+        "x": 77.2,
+        "y": 7
+      }
+    },
+    {
+      "id": "kravaraad",
+      "category": "wildemount",
+      "title": "Kravaraad",
+      "summary": "ภูเขาไฟหินดำใน Flotket Alps ที่ตั้งของ Cinderrest Sanctum และจุดตี Star Razor คืน",
+      "contentPath": "/world-settings/exandria/wildemount/kravaraad.md",
+      "pin": {
+        "x": 85.21004187036452,
+        "y": 16.64799840090128
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Kravaraad",
+          "url": "https://criticalrole.fandom.com/wiki/Kravaraad"
+        }
+      ]
+    },
+    {
+      "id": "cinderrest-sanctum",
+      "category": "wildemount",
+      "title": "Cinderrest Sanctum",
+      "summary": "ศาลเจ้าบนภูเขาไฟ Kravaraad อุทิศแด่ Melora และ Moradin ดูแลโดยตระกูล Dust",
+      "contentPath": "/world-settings/exandria/wildemount/cinderrest-sanctum.md",
+      "pin": {
+        "x": 84.30466175125183,
+        "y": 17.236969692822093
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Cinderrest Sanctum",
+          "url": "https://criticalrole.fandom.com/wiki/Cinderrest_Sanctum"
+        }
+      ]
+    },
+    {
+      "id": "uraliss",
+      "category": "wildemount",
+      "title": "Uraliss",
+      "summary": "หมู่บ้านเกษตรกรรมร้างของ Uthodurn ที่ชายแดน Flotket Alps กับ Rime Plains",
+      "contentPath": "/world-settings/exandria/wildemount/uraliss.md",
+      "pin": {
+        "x": 85.55726341108772,
+        "y": 19.60400518193129
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Uraliss",
+          "url": "https://criticalrole.fandom.com/wiki/Uraliss"
+        }
+      ]
+    },
+    {
+      "id": "ruins-of-molaesmyr",
+      "category": "wildemount",
+      "title": "Ruins of Molaesmyr",
+      "summary": "ซากนครโบราณของเอลฟ์เหนือแห่ง Wildemount ใน Savalirwood ก่อนถูกความเสื่อมทรามทำลาย",
+      "contentPath": "/world-settings/exandria/wildemount/ruins-of-molaesmyr.md",
+      "pin": {
+        "x": 80.68364984450801,
+        "y": 22.67186504140977
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Molaesmyr",
+          "url": "https://criticalrole.fandom.com/wiki/Molaesmyr"
+        }
+      ]
+    },
+    {
+      "id": "boroftkrah",
+      "category": "wildemount",
+      "title": "Boroftkrah",
+      "summary": "เมืองเต็นท์เร่ร่อนของออร์คผู้ศรัทธา Kord ที่ขอบใต้ของ Rime Plains",
+      "contentPath": "/world-settings/exandria/wildemount/boroftkrah.md",
+      "pin": {
+        "x": 84.94733984784688,
+        "y": 24.72704745207048
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Boroftkrah",
+          "url": "https://criticalrole.fandom.com/wiki/Boroftkrah"
+        }
+      ]
+    },
+    {
+      "id": "ruins-of-sepesca",
+      "category": "wildemount",
+      "title": "Ruins of Sepesca",
+      "summary": "ซากวิหาร Ki'Nau แด่ Melora บน Menagerie Coast ถูกก็อบลินบูชา Gruumsh บุกทำลาย",
+      "contentPath": "/world-settings/exandria/wildemount/ruins-of-sepesca.md",
+      "pin": {
+        "x": 63.07796403515723,
+        "y": 34.99989919354839
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Sepesca",
+          "url": "https://criticalrole.fandom.com/wiki/Sepesca"
+        }
+      ]
+    },
+    {
+      "id": "everplume",
+      "category": "wildemount",
+      "title": "Everplume",
+      "summary": "ภูเขาไฟใต้น้ำมหึมาใน Lucidian Ocean ที่แปรสัตว์แนวปะการังให้กลายเป็นสิ่งมีชีวิตธาตุไฟ",
+      "contentPath": "/world-settings/exandria/wildemount/everplume.md",
+      "pin": {
+        "x": 61.43687483726009,
+        "y": 41.72788233218654
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Everplume",
+          "url": "https://criticalrole.fandom.com/wiki/Everplume"
+        }
+      ]
+    },
+    {
+      "id": "amber-crossroads",
+      "category": "wildemount",
+      "title": "Amber Crossroads",
+      "summary": "สี่แยกถนนใต้ Rexxentrum จุดตัด Amber Road กับถนนสายอื่น มีตลาดนอกสายตากฎหมาย",
+      "contentPath": "/world-settings/exandria/wildemount/amber-crossroads.md",
+      "pin": {
+        "x": 76.90020161290323,
+        "y": 29.41599773976111
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Amber Road",
+          "url": "https://criticalrole.fandom.com/wiki/Amber_Road"
+        }
+      ]
+    },
+    {
+      "id": "rastum-den",
+      "category": "wildemount",
+      "title": "Rastum Den",
+      "summary": "ค่ายฝึกกริฟฟินทางทหารของ Dwendalian Empire บนเทือกเขา Dunrock",
+      "contentPath": "/world-settings/exandria/wildemount/rastum-den.md",
+      "pin": {
+        "x": 77.07221806741529,
+        "y": 25.5438806822223
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Rastum Den",
+          "url": "https://criticalrole.fandom.com/wiki/Rastum_Den"
+        }
+      ]
+    },
+    {
+      "id": "vergesson-sanatorium",
+      "category": "wildemount",
+      "title": "Vergesson Sanatorium",
+      "summary": "สถานบำบัดจิตเวชใน Pearlbow Wilderness ส่วนหนึ่งของปูมหลัง Caleb Widogast",
+      "contentPath": "/world-settings/exandria/wildemount/vergesson-sanatorium.md",
+      "pin": {
+        "x": 78.55058532837897,
+        "y": 25
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Vergesson Sanatorium",
+          "url": "https://criticalrole.fandom.com/wiki/Vergesson_Sanatorium"
+        }
+      ]
+    },
+    {
+      "id": "ruins-of-shattengrod",
+      "category": "wildemount",
+      "title": "Ruins of Shattengrod",
+      "summary": "ซากนครยุค Age of Arcanum ใกล้ Pride's Call ที่ Cerberus Assembly กำลังขุดค้น",
+      "contentPath": "/world-settings/exandria/wildemount/ruins-of-shattengrod.md",
+      "pin": {
+        "x": 74.27877048677011,
+        "y": 32.204062744109876
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Shattengrod",
+          "url": "https://criticalrole.fandom.com/wiki/Shattengrod"
+        }
+      ]
+    },
+    {
+      "id": "herathis-mines",
+      "category": "wildemount",
+      "title": "Herathis Mines",
+      "summary": "ชื่อเหมืองบนแผนที่ใกล้ Deastok ยังไม่พบเนื้อเรื่องอย่างเป็นทางการ",
+      "contentPath": "/world-settings/exandria/wildemount/herathis-mines.md",
+      "pin": {
+        "x": 75.35596709097584,
+        "y": 38.944132698351346
+      }
+    },
+    {
+      "id": "dolithil-mine",
+      "category": "wildemount",
+      "title": "Dolithil Mine",
+      "summary": "เหมืองแร่หลากชนิดตะวันออกเฉียงเหนือของ Gwardan วัตถุดิบของงาน steamcasting",
+      "contentPath": "/world-settings/exandria/wildemount/dolithil-mine.md",
+      "pin": {
+        "x": 67.22798354548793,
+        "y": 35.676027981696585
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Dolithil Mine",
+          "url": "https://criticalrole.fandom.com/wiki/Dolithil_Mine"
+        }
+      ]
+    },
+    {
+      "id": "blooming-grove",
+      "category": "wildemount",
+      "title": "Blooming Grove",
+      "summary": "สุสาน/วิหารแด่ The Wildmother ใน Savalirwood บ้านตระกูล Clay ของ Caduceus",
+      "contentPath": "/world-settings/exandria/wildemount/blooming-grove.md",
+      "pin": {
+        "x": 81.4398185483871,
+        "y": 25.179939516129032
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Blooming Grove",
+          "url": "https://criticalrole.fandom.com/wiki/Blooming_Grove"
+        }
+      ]
+    },
+    {
+      "id": "quannah-breach",
+      "category": "wildemount",
+      "title": "Quannah Breach",
+      "summary": "ช่องเขา Dunrock ทางเข้า Shadycreek Run เก็บค่าผ่านทางโดยตระกูล Uttolot",
+      "contentPath": "/world-settings/exandria/wildemount/quannah-breach.md",
+      "pin": {
+        "x": 80.56135048097181,
+        "y": 26.95947702700092
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Quannah Breach",
+          "url": "https://criticalrole.fandom.com/wiki/Quannah_Breach"
+        }
+      ]
+    },
+    {
+      "id": "jigow",
+      "category": "wildemount",
+      "title": "Jigow",
+      "summary": "ท่าเรือประมงชายฝั่งเหนือสุดของ Xhorhas จุดที่แม่น้ำ Ifolon ไหลลง Emerald Gulch",
+      "contentPath": "/world-settings/exandria/wildemount/jigow.md",
+      "pin": {
+        "x": 88.2638079262142,
+        "y": 31.826421358799106
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Jigow",
+          "url": "https://criticalrole.fandom.com/wiki/Jigow"
+        }
+      ]
+    },
+    {
+      "id": "deepriver-mining-camp",
+      "category": "wildemount",
+      "title": "Deepriver Mining Camp",
+      "summary": "ค่ายเหมืองเหล็ก/ทองแดงของ Xhorhas ตะวันตกเฉียงใต้ของ Rosohna รวม Icozrin Steelworks",
+      "contentPath": "/world-settings/exandria/wildemount/deepriver-mining-camp.md",
+      "pin": {
+        "x": 89.68419403260755,
+        "y": 38.02613981846841
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Deepriver Mining Camp",
+          "url": "https://criticalrole.fandom.com/wiki/Deepriver_Mining_Camp"
+        }
+      ]
+    },
+    {
+      "id": "incanters-rest",
+      "category": "wildemount",
+      "title": "Incanter's Rest",
+      "summary": "ทุ่งสนามรบผีสิงจากยุค The Calamity ใน Blightshore มีโครงกระดูกไททันสามตัว",
+      "contentPath": "/world-settings/exandria/wildemount/incanters-rest.md",
+      "pin": {
+        "x": 91.81036429251394,
+        "y": 42.191178640627086
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Incanter's Rest",
+          "url": "https://criticalrole.fandom.com/wiki/Incanter's_Rest"
+        }
+      ]
+    },
+    {
+      "id": "olc-skerry",
+      "category": "wildemount",
+      "title": "Olc Skerry",
+      "summary": "หมู่บ้านร้างลึกลับบนเกาะนอกชายฝั่งตะวันตกของ Far Hharom",
+      "contentPath": "/world-settings/exandria/wildemount/olc-skerry.md",
+      "pin": {
+        "x": 92.79102002986522,
+        "y": 29.4904138578708
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Olc Skerry",
+          "url": "https://criticalrole.fandom.com/wiki/Olc_Skerry"
+        }
+      ]
+    },
+    {
+      "id": "strathfell",
+      "category": "wildemount",
+      "title": "Strathfell",
+      "summary": "ป่าที่กลายเป็นหินใน Ebonglass Massif ถิ่นมังกรเงา Karketh",
+      "contentPath": "/world-settings/exandria/wildemount/strathfell.md",
+      "pin": {
+        "x": 96.60700748494574,
+        "y": 33.03258279312586
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Ebonglass Massif",
+          "url": "https://criticalrole.fandom.com/wiki/Ebonglass_Massif"
+        }
+      ]
+    },
+    {
+      "id": "ghor-veles",
+      "category": "wildemount",
+      "title": "Ghor Veles",
+      "summary": "ซากนคร Age of Arcanum ที่เป็นห้องทดลองลับของ Betrayer Gods ใน Blightshore",
+      "contentPath": "/world-settings/exandria/wildemount/ghor-veles.md",
+      "pin": {
+        "x": 93.19200475159714,
+        "y": 35.66911283792372
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Ghor Veles",
+          "url": "https://criticalrole.fandom.com/wiki/Ghor_Veles"
+        }
+      ]
+    },
+    {
+      "id": "ruins-of-draconia",
+      "category": "wildemount",
+      "title": "Ruins of Draconia",
+      "summary": "ซากอาณาจักรลอยฟ้าของมังกรพ่นธาตุเหนือ Dreemoth Ravine ทำลายโดย Chroma Conclave",
+      "contentPath": "/world-settings/exandria/wildemount/ruins-of-draconia.md",
+      "pin": {
+        "x": 84.41752081224995,
+        "y": 47.96760129467133
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Draconia",
+          "url": "https://criticalrole.fandom.com/wiki/Draconia"
+        }
+      ]
+    },
+    {
+      "id": "xarzith-kitril",
+      "category": "wildemount",
+      "title": "Xarzith Kitril",
+      "summary": "นครมังกรพ่นธาตุแห่งใหม่ของ ravenite ที่ปลายใต้ Dreemoth Ravine",
+      "contentPath": "/world-settings/exandria/wildemount/xarzith-kitril.md",
+      "pin": {
+        "x": 83.87485854548794,
+        "y": 49.863488147335666
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Xarzith Kitril",
+          "url": "https://criticalrole.fandom.com/wiki/Xarzith_Kitril"
+        }
+      ]
+    },
+    {
+      "id": "verstglade",
+      "category": "wildemount",
+      "title": "Verstglade",
+      "summary": "หุบเขาต้องคำสาปซ่อนในยอด Ashkeeper Peaks อดีตห้องทดลองลับของลิช Vecna",
+      "contentPath": "/world-settings/exandria/wildemount/verstglade.md",
+      "pin": {
+        "x": 79.77506015839117,
+        "y": 44.23585661072885
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Verstglade",
+          "url": "https://criticalrole.fandom.com/wiki/Verstglade"
+        }
+      ]
+    },
+    {
+      "id": "miskath-pit",
+      "category": "wildemount",
+      "title": "The Miskath Pit",
+      "summary": "หลุมยุบเวทมนตร์ลึกไม่มีที่สิ้นสุดทางใต้ของ Blightshore ถิ่น core spawn",
+      "contentPath": "/world-settings/exandria/wildemount/miskath-pit.md",
+      "pin": {
+        "x": 91.87926371497494,
+        "y": 45.79455985596104
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Miskath Pit",
+          "url": "https://criticalrole.fandom.com/wiki/Miskath_Pit"
+        }
+      ]
+    },
+    {
+      "id": "divers-grave",
+      "category": "wildemount",
+      "title": "Diver's Grave",
+      "summary": "น่านน้ำปั่นป่วนใน Swavain Islands เต็มไปด้วยซากเรือ ถิ่น Sea Fury Dashilla",
+      "contentPath": "/world-settings/exandria/wildemount/divers-grave.md",
+      "pin": {
+        "x": 61.66526160855447,
+        "y": 49.42783314951005
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Diver's Grave",
+          "url": "https://criticalrole.fandom.com/wiki/Diver's_Grave"
+        }
+      ]
+    },
+    {
+      "id": "darktow",
+      "category": "wildemount",
+      "title": "Darktow (Isle)",
+      "summary": "เกาะหน้าผาของโจรสลัด The Revelry ปกครองโดย Plank King นอก Clovis Concord",
+      "contentPath": "/world-settings/exandria/wildemount/darktow.md",
+      "pin": {
+        "x": 60.33189548677012,
+        "y": 55.42376979512555
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Darktow Isle",
+          "url": "https://criticalrole.fandom.com/wiki/Darktow_Isle"
+        }
+      ]
+    },
+    {
+      "id": "brokenbank",
+      "category": "wildemount",
+      "title": "Brokenbank",
+      "summary": "ท่าเรือด่านศุลกากรแรกของ Menagerie Coast หนึ่งในแปดนครของ Clovis Concord",
+      "contentPath": "/world-settings/exandria/wildemount/brokenbank.md",
+      "pin": {
+        "x": 67.40518177709272,
+        "y": 51.252106976893636
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Brokenbank",
+          "url": "https://criticalrole.fandom.com/wiki/Brokenbank"
+        }
+      ]
+    },
+    {
+      "id": "vide-cay",
+      "category": "wildemount",
+      "title": "Vide Cay",
+      "summary": "เกาะเล็กในหมู่เกาะ Swavain ถิ่นเฟย์ที่กันไม่ให้ The Revelry ใช้ประโยชน์ได้",
+      "contentPath": "/world-settings/exandria/wildemount/vide-cay.md",
+      "pin": {
+        "x": 68.47054337839927,
+        "y": 52.82818597209068
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Vide Cay",
+          "url": "https://criticalrole.fandom.com/wiki/Vide_Cay"
+        }
+      ]
+    },
+    {
+      "id": "rumblecusp",
+      "category": "wildemount",
+      "title": "Rumblecusp",
+      "summary": "เกาะภูเขาไฟกลาง Lucidian Ocean ที่จัด Traveler Con ถิ่นของ Vokodo ผู้ลบความทรงจำ",
+      "contentPath": "/world-settings/exandria/wildemount/rumblecusp.md",
+      "pin": {
+        "x": 72.92788436643538,
+        "y": 55.692529753715775
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Rumblecusp",
+          "url": "https://criticalrole.fandom.com/wiki/Rumblecusp"
+        }
+      ]
+    },
+    {
+      "id": "urukayxl",
+      "category": "wildemount",
+      "title": "Urukayxl",
+      "summary": "เกาะใต้ Nicodranas ถิ่น lizardfolk กับ yuan-ti แย่งชิง Temple of the False Serpent",
+      "contentPath": "/world-settings/exandria/wildemount/urukayxl.md",
+      "pin": {
+        "x": 75.9411908180483,
+        "y": 58.004465969916325
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Urukayxl",
+          "url": "https://criticalrole.fandom.com/wiki/Urukayxl"
         }
       ]
     }
