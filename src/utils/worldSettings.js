@@ -36,6 +36,7 @@ function buildWorlds() {
       mapImage: manifest.mapImage ? mapImageFiles[manifest.mapImage] ?? null : null,
       categories: manifest.categories ?? [],
       cards,
+      partyPins: manifest.partyPins ?? [],
     })
   }
   return worlds.sort((a, b) => a.name.localeCompare(b.name))

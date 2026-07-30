@@ -8,7 +8,8 @@ function clampPercent(value) {
 // A clickable marker positioned by percentage over a world map image, so it
 // stays put regardless of how wide the map is rendered. "continent" pins are
 // bigger (violet) for the 5 landmasses; "city" pins are smaller (amber) for
-// individual locations with their own card.
+// individual locations with their own card; "party" pins (emerald) track
+// where the players' party currently is and carry no card of their own.
 //
 // In edit mode (editable=true) the pin becomes draggable — it converts its
 // own pointer movement into map percentage coordinates via WorldMapView's
@@ -16,6 +17,7 @@ function clampPercent(value) {
 // tap (no movement) still calls onClick as usual.
 export default function WorldMapPin({ x, y, label, variant = 'continent', editable = false, onClick, onReposition }) {
   const isCity = variant === 'city'
+  const isParty = variant === 'party'
   const mapView = useWorldMapView()
   const dragRef = useRef({ dragging: false, moved: false, offsetX: 0, offsetY: 0 })
 
@@ -84,7 +86,7 @@ export default function WorldMapPin({ x, y, label, variant = 'continent', editab
             : mapView?.revealAll
               ? 'border-white opacity-100'
               : 'border-white opacity-20 group-hover:opacity-100'
-        } ${isCity ? 'h-2.5 w-2.5 bg-amber-500' : 'h-4 w-4 bg-violet-700'}`}
+        } ${isCity ? 'h-2.5 w-2.5 bg-amber-500' : isParty ? 'h-3 w-3 bg-emerald-600' : 'h-4 w-4 bg-violet-700'}`}
       />
       <span className="pointer-events-none absolute left-1/2 top-full z-10 -mt-1 -translate-x-1/2 whitespace-nowrap rounded bg-stone-900/85 px-1.5 py-0.5 text-[10px] font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
         {label}

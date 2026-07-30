@@ -5,9 +5,14 @@ import Modal from '../Modal'
 // an existing one. Only asks for a title + which continent it belongs to —
 // the markdown content behind the pin is meant to be filled in later
 // (by hand or by an AI pass), not written here.
+//
+// variant="party" reuses the same form for party-location markers, which
+// have no card/category of their own — just a label — so the continent
+// select is hidden and the copy swaps to match.
 export default function WorldPinFormModal({
   open,
   mode,
+  variant = 'location',
   initialTitle,
   initialCategoryId,
   categories,
@@ -15,46 +20,55 @@ export default function WorldPinFormModal({
   onSubmit,
   onDelete,
 }) {
+  const isParty = variant === 'party'
   const [title, setTitle] = useState('')
   const [categoryId, setCategoryId] = useState('')
 
   useEffect(() => {
     if (!open) return
     setTitle(initialTitle ?? '')
-    setCategoryId(initialCategoryId ?? categories[0]?.id ?? '')
+    setCategoryId(initialCategoryId ?? categories?.[0]?.id ?? '')
   }, [open, initialTitle, initialCategoryId, categories])
 
+  const modalTitle = mode === 'create'
+    ? isParty ? 'เพิ่มหมุดปาตี้ใหม่' : 'เพิ่มหมุดใหม่'
+    : isParty ? 'แก้ไขหมุดปาตี้' : 'แก้ไขหมุด'
+
   return (
-    <Modal open={open} onClose={onCancel} title={mode === 'create' ? 'เพิ่มหมุดใหม่' : 'แก้ไขหมุด'}>
+    <Modal open={open} onClose={onCancel} title={modalTitle}>
       <div className="flex flex-col gap-3">
         <label className="text-sm">
-          <span className="mb-1 block font-medium text-stone-700">ชื่อสถานที่</span>
+          <span className="mb-1 block font-medium text-stone-700">{isParty ? 'ชื่อปาตี้' : 'ชื่อสถานที่'}</span>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             className="w-full rounded-lg border border-[#e2cfb3] px-3 py-2 text-sm"
-            placeholder="เช่น Kraghammer"
+            placeholder={isParty ? 'เช่น ปาตี้หลัก' : 'เช่น Kraghammer'}
             autoFocus
           />
         </label>
-        <label className="text-sm">
-          <span className="mb-1 block font-medium text-stone-700">อยู่ในทวีป</span>
-          <select
-            value={categoryId}
-            onChange={(e) => setCategoryId(e.target.value)}
-            className="w-full rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm"
-          >
-            {categories.map((category) => (
-              <option key={category.id} value={category.id}>
-                {category.title}
-              </option>
-            ))}
-          </select>
-        </label>
-        <p className="text-xs text-stone-400">
-          ใส่แค่ชื่อไว้ก่อนได้ — เนื้อหารายละเอียดเติมทีหลังได้ (เช่นให้ AI ค้นข้อมูลมาเติม)
-        </p>
+        {!isParty && (
+          <label className="text-sm">
+            <span className="mb-1 block font-medium text-stone-700">อยู่ในทวีป</span>
+            <select
+              value={categoryId}
+              onChange={(e) => setCategoryId(e.target.value)}
+              className="w-full rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm"
+            >
+              {categories.map((category) => (
+                <option key={category.id} value={category.id}>
+                  {category.title}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+        {!isParty && (
+          <p className="text-xs text-stone-400">
+            ใส่แค่ชื่อไว้ก่อนได้ — เนื้อหารายละเอียดเติมทีหลังได้ (เช่นให้ AI ค้นข้อมูลมาเติม)
+          </p>
+        )}
         <div className="mt-2 flex items-center justify-between gap-2">
           {mode === 'edit' && onDelete ? (
             <button

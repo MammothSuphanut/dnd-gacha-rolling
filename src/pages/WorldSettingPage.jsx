@@ -42,10 +42,15 @@ export default function WorldSettingPage() {
   const [editMode, setEditMode] = useState(false)
   const [draftCategories, setDraftCategories] = useState(null)
   const [draftCards, setDraftCards] = useState(null)
+  const [draftPartyPins, setDraftPartyPins] = useState(null)
   const [saving, setSaving] = useState(false)
   const [placingPin, setPlacingPin] = useState(false)
+  const [placingPartyPin, setPlacingPartyPin] = useState(false)
   const [pendingNewPin, setPendingNewPin] = useState(null)
+  const [pendingNewPartyPin, setPendingNewPartyPin] = useState(null)
   const [editingCard, setEditingCard] = useState(null)
+  const [editingPartyPin, setEditingPartyPin] = useState(null)
+  const [pinFilter, setPinFilter] = useState('all')
 
   if (!world) {
     return (
@@ -63,6 +68,9 @@ export default function WorldSettingPage() {
   const cards = editMode ? draftCards : world.cards
   const continentCategories = categories.filter((category) => category.pin)
   const cityCards = cards.filter((card) => card.pin)
+  const partyPins = editMode ? draftPartyPins : world.partyPins
+  const showMapPins = pinFilter === 'all' || pinFilter === 'map'
+  const showPartyPins = pinFilter === 'all' || pinFilter === 'party'
 
   const activeCategory = !editMode ? continentCategories.find((category) => category.id === activeCategoryId) ?? null : null
   const activeOverview = activeCategory ? getCategoryOverview(world, activeCategory.id) : null
@@ -91,14 +99,18 @@ export default function WorldSettingPage() {
     const raw = getRawManifest(world.id)
     setDraftCategories(structuredClone(raw.categories ?? []))
     setDraftCards(structuredClone(raw.cards ?? []))
+    setDraftPartyPins(structuredClone(raw.partyPins ?? []))
     setEditMode(true)
   }
 
   function cancelEditMode() {
     setEditMode(false)
     setPlacingPin(false)
+    setPlacingPartyPin(false)
     setPendingNewPin(null)
+    setPendingNewPartyPin(null)
     setEditingCard(null)
+    setEditingPartyPin(null)
   }
 
   function handleCategoryReposition(categoryId, x, y) {
@@ -109,9 +121,28 @@ export default function WorldSettingPage() {
     setDraftCards((prev) => prev.map((c) => (c.id === cardId ? { ...c, pin: { x, y } } : c)))
   }
 
+  function handlePartyPinReposition(pinId, x, y) {
+    setDraftPartyPins((prev) => prev.map((p) => (p.id === pinId ? { ...p, x, y } : p)))
+  }
+
+  function togglePlacingPin() {
+    setPlacingPartyPin(false)
+    setPlacingPin((prev) => !prev)
+  }
+
+  function togglePlacingPartyPin() {
+    setPlacingPin(false)
+    setPlacingPartyPin((prev) => !prev)
+  }
+
   function handleBackgroundClick(x, y) {
     setPlacingPin(false)
     setPendingNewPin({ x, y })
+  }
+
+  function handlePartyBackgroundClick(x, y) {
+    setPlacingPartyPin(false)
+    setPendingNewPartyPin({ x, y })
   }
 
   function handleCreateSubmit({ title, categoryId }) {
@@ -141,11 +172,36 @@ export default function WorldSettingPage() {
     setEditingCard(null)
   }
 
+  function handleCreatePartySubmit({ title }) {
+    const existingIds = new Set(draftPartyPins.map((p) => p.id))
+    const id = uniqueId(slugify(title), existingIds)
+    const newPin = { id, label: title, x: pendingNewPartyPin.x, y: pendingNewPartyPin.y }
+    setDraftPartyPins((prev) => [...prev, newPin])
+    setPendingNewPartyPin(null)
+  }
+
+  function handleEditPartySubmit({ title }) {
+    setDraftPartyPins((prev) =>
+      prev.map((p) => (p.id === editingPartyPin.id ? { ...p, label: title } : p)),
+    )
+    setEditingPartyPin(null)
+  }
+
+  function handleDeletePartyPin() {
+    setDraftPartyPins((prev) => prev.filter((p) => p.id !== editingPartyPin.id))
+    setEditingPartyPin(null)
+  }
+
   async function handleSaveManifest() {
     setSaving(true)
     try {
       const raw = getRawManifest(world.id)
-      await saveWorldManifest(world.id, { ...raw, categories: draftCategories, cards: draftCards })
+      await saveWorldManifest(world.id, {
+        ...raw,
+        categories: draftCategories,
+        cards: draftCards,
+        partyPins: draftPartyPins,
+      })
       showToast('บันทึกตำแหน่งหมุดสำเร็จ — รีเฟรชหน้าเพื่อดูผลล่าสุด', 'success')
       cancelEditMode()
     } catch (err) {
@@ -166,6 +222,19 @@ export default function WorldSettingPage() {
           {world.source && <p className="text-xs text-stone-400">{world.source}</p>}
         </div>
         <div className="flex flex-wrap items-center gap-2">
+          {world.mapImage && (
+            <select
+              value={pinFilter}
+              onChange={(e) => setPinFilter(e.target.value)}
+              className="rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-700 shadow-sm"
+              title="ตัวกรองหมุด"
+            >
+              <option value="all">📍 แสดงหมุดทั้งหมด</option>
+              <option value="map">🗺️ แสดงหมุดแผนที่</option>
+              <option value="party">🧭 แสดงหมุดปาตี้</option>
+              <option value="none">🚫 ซ่อนหมุดทั้งหมด</option>
+            </select>
+          )}
           {contentsCards.length > 0 && !editMode && (
             <button
               type="button"
@@ -188,7 +257,7 @@ export default function WorldSettingPage() {
             <>
               <button
                 type="button"
-                onClick={() => setPlacingPin((prev) => !prev)}
+                onClick={togglePlacingPin}
                 className={`rounded-lg border px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
                   placingPin
                     ? 'border-violet-700 bg-violet-700 text-white'
@@ -196,6 +265,17 @@ export default function WorldSettingPage() {
                 }`}
               >
                 {placingPin ? '📍 คลิกบนแผนที่เพื่อวางหมุด...' : '+ เพิ่มหมุด'}
+              </button>
+              <button
+                type="button"
+                onClick={togglePlacingPartyPin}
+                className={`rounded-lg border px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
+                  placingPartyPin
+                    ? 'border-emerald-700 bg-emerald-700 text-white'
+                    : 'border-[#e2cfb3] bg-white text-stone-700 hover:bg-[#f5ede0]'
+                }`}
+              >
+                {placingPartyPin ? '🧭 คลิกบนแผนที่เพื่อวางหมุดปาตี้...' : '+ เพิ่มหมุดปาตี้'}
               </button>
               <button
                 type="button"
@@ -220,7 +300,8 @@ export default function WorldSettingPage() {
 
       {editMode && (
         <p className="mb-3 text-xs text-stone-500">
-          โหมดแก้ไข: ลากหมุดเพื่อขยับตำแหน่ง กดหมุดเมือง (จุดสีอำพัน) เพื่อแก้ชื่อ/ทวีป/ลบ ส่วนหมุดทวีป (จุดสีม่วง) ลากได้อย่างเดียว
+          โหมดแก้ไข: ลากหมุดเพื่อขยับตำแหน่ง กดหมุดเมือง (จุดสีอำพัน) หรือหมุดปาตี้ (จุดสีเขียว) เพื่อแก้ชื่อ/ลบ
+          ส่วนหมุดทวีป (จุดสีม่วง) ลากได้อย่างเดียว
         </p>
       )}
 
@@ -229,32 +310,53 @@ export default function WorldSettingPage() {
           key={world.id}
           src={world.mapImage}
           alt={`แผนที่ ${world.name}`}
-          onBackgroundClick={editMode && placingPin ? handleBackgroundClick : undefined}
+          onBackgroundClick={
+            editMode && placingPin
+              ? handleBackgroundClick
+              : editMode && placingPartyPin
+                ? handlePartyBackgroundClick
+                : undefined
+          }
         >
-          {continentCategories.map((category) => (
-            <WorldMapPin
-              key={category.id}
-              x={category.pin.x}
-              y={category.pin.y}
-              label={category.title}
-              variant="continent"
-              editable={editMode}
-              onClick={editMode ? undefined : () => openCategory(category.id)}
-              onReposition={(x, y) => handleCategoryReposition(category.id, x, y)}
-            />
-          ))}
-          {cityCards.map((card) => (
-            <WorldMapPin
-              key={card.id}
-              x={card.pin.x}
-              y={card.pin.y}
-              label={card.title}
-              variant="city"
-              editable={editMode}
-              onClick={editMode ? () => setEditingCard(card) : () => openCard(card)}
-              onReposition={(x, y) => handleCardReposition(card.id, x, y)}
-            />
-          ))}
+          {showMapPins &&
+            continentCategories.map((category) => (
+              <WorldMapPin
+                key={category.id}
+                x={category.pin.x}
+                y={category.pin.y}
+                label={category.title}
+                variant="continent"
+                editable={editMode}
+                onClick={editMode ? undefined : () => openCategory(category.id)}
+                onReposition={(x, y) => handleCategoryReposition(category.id, x, y)}
+              />
+            ))}
+          {showMapPins &&
+            cityCards.map((card) => (
+              <WorldMapPin
+                key={card.id}
+                x={card.pin.x}
+                y={card.pin.y}
+                label={card.title}
+                variant="city"
+                editable={editMode}
+                onClick={editMode ? () => setEditingCard(card) : () => openCard(card)}
+                onReposition={(x, y) => handleCardReposition(card.id, x, y)}
+              />
+            ))}
+          {showPartyPins &&
+            partyPins.map((pin) => (
+              <WorldMapPin
+                key={pin.id}
+                x={pin.x}
+                y={pin.y}
+                label={pin.label}
+                variant="party"
+                editable={editMode}
+                onClick={editMode ? () => setEditingPartyPin(pin) : undefined}
+                onReposition={(x, y) => handlePartyPinReposition(pin.id, x, y)}
+              />
+            ))}
         </WorldMapView>
       ) : (
         <p className="text-sm text-stone-400">ยังไม่มีแผนที่สำหรับ World Setting นี้</p>
@@ -294,6 +396,24 @@ export default function WorldSettingPage() {
         onCancel={() => setEditingCard(null)}
         onSubmit={handleEditSubmit}
         onDelete={handleDeleteCard}
+      />
+
+      <WorldPinFormModal
+        open={!!pendingNewPartyPin}
+        mode="create"
+        variant="party"
+        initialTitle=""
+        onCancel={() => setPendingNewPartyPin(null)}
+        onSubmit={handleCreatePartySubmit}
+      />
+      <WorldPinFormModal
+        open={!!editingPartyPin}
+        mode="edit"
+        variant="party"
+        initialTitle={editingPartyPin?.label}
+        onCancel={() => setEditingPartyPin(null)}
+        onSubmit={handleEditPartySubmit}
+        onDelete={handleDeletePartyPin}
       />
     </div>
   )
