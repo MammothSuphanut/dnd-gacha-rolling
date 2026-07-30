@@ -11,5 +11,3 @@
 ## การปกครอง
 
 ตามหลัก canon ทวีป Wildemount แบ่งเป็นสองอาณาจักรใหญ่คือ **Dwendalian Empire** และ **Kryn Dynasty** เป็นหลัก
-
-อิงจาก [Critical Role Wiki: Wildemount](https://criticalrole.fandom.com/wiki/Wildemount)

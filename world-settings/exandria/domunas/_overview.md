@@ -5,5 +5,3 @@
 ## The Shattered Teeth
 
 ซากที่หลงเหลือจากการล่มสลายของ Domunas คือหมู่เกาะขนาดใหญ่ที่เรียกว่า **Shattered Teeth** ตั้งอยู่ทางตะวันออกเฉียงใต้ของ Tal'Dorei และไกลลงไปทางใต้ของ Wildemount ประกอบด้วยเกาะกว่า 43 เกาะ มีขนาดตั้งแต่โขดหินแนวปะการังเล็กๆ ไปจนถึงเกาะใหญ่ที่มีเมืองอยู่อาศัย พื้นที่ส่วนใหญ่แบ่งออกเป็นสองกลุ่มสังคมที่ขัดแย้งกันคือ **Ossended Host** และ **Wanderman Assembly**
-
-อิงจาก [Critical Role Wiki: Domunas](https://criticalrole.fandom.com/wiki/Domunas), [Shattered Teeth](https://criticalrole.fandom.com/wiki/Shattered_Teeth)

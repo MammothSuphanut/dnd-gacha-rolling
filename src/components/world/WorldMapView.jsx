@@ -21,6 +21,7 @@ export default function WorldMapView({ src, alt, children, onBackgroundClick }) 
   const [pan, setPan] = useState({ x: 0, y: 0 })
   const [naturalSize, setNaturalSize] = useState(null)
   const [dragging, setDragging] = useState(false)
+  const [revealAll, setRevealAll] = useState(false)
   const dragStateRef = useRef({ dragging: false, moved: false, x: 0, y: 0, panX: 0, panY: 0 })
 
   function clampPan(nextPan, nextZoom) {
@@ -103,11 +104,20 @@ export default function WorldMapView({ src, alt, children, onBackgroundClick }) 
 
   // Converts a pointer event's raw screen position into the map's own 0-100
   // percentage coordinate space, undoing the current pan/zoom transform.
+  //
+  // Percentages are against the image's own rendered box (width = rect.width,
+  // height derived from its natural aspect ratio) — NOT rect.height. The
+  // viewport is capped by max-h-[75vh], so on a short window its box is
+  // shorter than the image's true 3:2 height; the image just gets cropped by
+  // overflow-hidden rather than shrinking to fit. Dividing by rect.height in
+  // that case used the wrong denominator and threw off every Y position.
   function screenToContent(clientX, clientY) {
     const rect = viewportRef.current.getBoundingClientRect()
+    const contentWidth = rect.width
+    const contentHeight = naturalSize ? contentWidth * (naturalSize.height / naturalSize.width) : rect.height
     const contentX = (clientX - rect.left - pan.x) / zoom
     const contentY = (clientY - rect.top - pan.y) / zoom
-    return { xPercent: (contentX / rect.width) * 100, yPercent: (contentY / rect.height) * 100 }
+    return { xPercent: (contentX / contentWidth) * 100, yPercent: (contentY / contentHeight) * 100 }
   }
 
   function handlePointerUp(e) {
@@ -154,7 +164,7 @@ export default function WorldMapView({ src, alt, children, onBackgroundClick }) 
       onClickCapture={handleClickCapture}
       onDoubleClick={handleDoubleClick}
     >
-      <WorldMapContext.Provider value={{ screenToContent }}>
+      <WorldMapContext.Provider value={{ screenToContent, revealAll }}>
         <div
           className="absolute left-0 top-0 w-full"
           style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`, transformOrigin: '0 0' }}
@@ -164,7 +174,24 @@ export default function WorldMapView({ src, alt, children, onBackgroundClick }) 
         </div>
       </WorldMapContext.Provider>
 
-      <div className="absolute bottom-3 right-3 flex flex-col overflow-hidden rounded-lg border border-[#e2cfb3] bg-white shadow-md">
+      <button
+        type="button"
+        onClick={() => setRevealAll((prev) => !prev)}
+        onPointerDown={(e) => e.stopPropagation()}
+        className={`absolute left-3 top-3 flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-medium shadow-md transition-colors ${
+          revealAll
+            ? 'border-violet-700 bg-violet-700 text-white'
+            : 'border-[#e2cfb3] bg-white text-stone-700 hover:bg-[#f5ede0]'
+        }`}
+        title="แสดงหมุดทั้งหมดให้ชัดเจน"
+      >
+        👁️ {revealAll ? 'ซ่อนหมุด' : 'แสดงหมุดทั้งหมด'}
+      </button>
+
+      <div
+        className="absolute bottom-3 right-3 flex flex-col overflow-hidden rounded-lg border border-[#e2cfb3] bg-white shadow-md"
+        onPointerDown={(e) => e.stopPropagation()}
+      >
         <button
           type="button"
           onClick={() => zoomAtCenter(BUTTON_STEP)}

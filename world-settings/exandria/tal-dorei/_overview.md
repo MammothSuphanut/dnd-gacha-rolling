@@ -12,5 +12,3 @@
 ## เมืองสำคัญ
 
 **Westruun** เมืองศูนย์กลางของ Republic of Tal'Dorei ประชากรหนาแน่นและเป็นจุดยุทธศาสตร์สำคัญของการค้าขายทั่วทวีป และ **Kraghammer** ป้อมปราการใต้ดินของดวาร์ฟ แหล่งผลิต mithral หลักของทวีป
-
-อิงจาก [Critical Role Wiki: Tal'Dorei](https://criticalrole.fandom.com/wiki/Tal%27Dorei), [Republic of Tal'Dorei](https://criticalrole.fandom.com/wiki/Republic_of_Tal%27Dorei)

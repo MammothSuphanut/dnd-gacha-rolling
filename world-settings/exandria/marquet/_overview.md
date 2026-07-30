@@ -5,5 +5,3 @@
 ## Ank'Harel
 
 เมืองศูนย์กลางวัฒนธรรม ประวัติศาสตร์ และอำนาจของทวีป มีชื่อเล่นว่า "Jewel of Hope" หรือ "Jewel of Marquet" ตัวเมืองมีผังเป็นรูปวงรี ตั้งอยู่บนแท่นหลายระดับ ล้อมรอบด้วยกำแพงสูงถึง 65 ฟุตที่มีหอคอยยามทรงมือประคองกำแพงอยู่ ภายในเมืองมีหอคอยสูงหลายชั้นกว่าร้อยหลัง ปกครองโดย **J'mon Sa Ord** มาตลอดสี่ศตวรรษของการก่อตั้งเมือง
-
-อิงจาก [Critical Role Wiki: Marquet](https://criticalrole.fandom.com/wiki/Marquet), [Ank'Harel](https://criticalrole.fandom.com/wiki/Ank%27Harel)

@@ -26,6 +26,10 @@ function uniqueId(base, existingIds) {
   return `${base}-${i}`
 }
 
+// Contents has no map pin (it's not a place) — just a grid of topic cards
+// like "ภาพรวม"/"ทะเล", opened from the header button instead of a pin.
+const CONTENTS_CATEGORY = { id: 'contents', title: 'Contents' }
+
 export default function WorldSettingPage() {
   const { worldId } = useParams()
   const world = getWorldSetting(worldId)
@@ -33,6 +37,7 @@ export default function WorldSettingPage() {
 
   const [activeCard, setActiveCard] = useState(null)
   const [activeCategoryId, setActiveCategoryId] = useState(null)
+  const [contentsOpen, setContentsOpen] = useState(false)
 
   const [editMode, setEditMode] = useState(false)
   const [draftCategories, setDraftCategories] = useState(null)
@@ -53,7 +58,7 @@ export default function WorldSettingPage() {
     )
   }
 
-  const contentsCard = getCategoryCards(world, 'contents')[0] ?? null
+  const contentsCards = getCategoryCards(world, 'contents')
   const categories = editMode ? draftCategories : world.categories
   const cards = editMode ? draftCards : world.cards
   const continentCategories = categories.filter((category) => category.pin)
@@ -67,6 +72,7 @@ export default function WorldSettingPage() {
 
   function openCard(card) {
     setActiveCategoryId(null)
+    setContentsOpen(false)
     setActiveCard(card)
   }
 
@@ -78,6 +84,7 @@ export default function WorldSettingPage() {
   function closeAll() {
     setActiveCard(null)
     setActiveCategoryId(null)
+    setContentsOpen(false)
   }
 
   function enterEditMode() {
@@ -159,13 +166,13 @@ export default function WorldSettingPage() {
           {world.source && <p className="text-xs text-stone-400">{world.source}</p>}
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          {contentsCard && !editMode && (
+          {contentsCards.length > 0 && !editMode && (
             <button
               type="button"
-              onClick={() => openCard(contentsCard)}
+              onClick={() => setContentsOpen(true)}
               className="rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-700 shadow-sm transition-colors hover:bg-[#f5ede0]"
             >
-              ℹ️ ภาพรวม {world.name}
+              📑 Contents
             </button>
           )}
           {isLocalHost() && !editMode && (
@@ -258,6 +265,13 @@ export default function WorldSettingPage() {
         category={activeCategory}
         overview={activeOverview}
         cards={activeCategoryCards}
+        onClose={closeAll}
+        onSelectCard={openCard}
+      />
+      <WorldCategoryModal
+        category={contentsOpen ? CONTENTS_CATEGORY : null}
+        overview={null}
+        cards={contentsCards}
         onClose={closeAll}
         onSelectCard={openCard}
       />

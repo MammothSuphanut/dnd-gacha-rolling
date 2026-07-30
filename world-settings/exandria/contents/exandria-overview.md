@@ -30,5 +30,3 @@ Exandria มีทวีปใหญ่ 4 ทวีป:
 
 - **Prime Deities** — ฝ่ายที่เลือกอยู่ช่วยปกป้องสิ่งสร้างของตนจาก Primordial และสอนเวทมนตร์อาร์เคนให้มนุษย์ใช้ป้องกันตัวเอง ได้แก่ Avandra, Bahamut, Corellon, Erathis, Ioun, Kord, Melora, Moradin, Pelor, The Raven Queen, Sarenrae (Raei), Sehanine
 - **Betrayer Gods** — ฝ่ายที่เลือกไม่ร่วมรบกับ Primordial ในยุค Founding และยอมปล่อยให้โลกกลับสู่ความโกลาหลเพื่อเริ่มใหม่ที่อื่น ได้แก่ Asmodeus, Bane, Gruumsh, Lolth, Tharizdun, Tiamat, Torog, Vecna, Zehir
-
-อิงจาก [Critical Role Wiki: Exandria](https://criticalrole.fandom.com/wiki/Exandria), [The Calamity](https://criticalrole.fandom.com/wiki/The_Calamity), [The Divergence](https://criticalrole.fandom.com/wiki/The_Divergence), [Prime Deities](https://criticalrole.fandom.com/wiki/Prime_Deities), [Betrayer Gods](https://criticalrole.fandom.com/wiki/Betrayer_Gods), [Catha](https://criticalrole.fandom.com/wiki/Catha), [Ruidus](https://criticalrole.fandom.com/wiki/Ruidus)

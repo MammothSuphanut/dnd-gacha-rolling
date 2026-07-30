@@ -15,7 +15,10 @@
       "pin": {
         "x": 64.82363584113607,
         "y": 20.260872991580968
-      }
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Wildemount", "url": "https://criticalrole.fandom.com/wiki/Wildemount" }
+      ]
     },
     {
       "id": "tal-dorei",
@@ -24,7 +27,11 @@
       "pin": {
         "x": 40.11556276559401,
         "y": 24.726673552745677
-      }
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Tal'Dorei", "url": "https://criticalrole.fandom.com/wiki/Tal%27Dorei" },
+        { "label": "Critical Role Wiki: Republic of Tal'Dorei", "url": "https://criticalrole.fandom.com/wiki/Republic_of_Tal%27Dorei" }
+      ]
     },
     {
       "id": "issylra",
@@ -33,7 +40,10 @@
       "pin": {
         "x": 11.192218617202995,
         "y": 24.057107682313802
-      }
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Issylra", "url": "https://criticalrole.fandom.com/wiki/Issylra" }
+      ]
     },
     {
       "id": "marquet",
@@ -42,7 +52,11 @@
       "pin": {
         "x": 35.73973969997252,
         "y": 77.39245284142739
-      }
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Marquet", "url": "https://criticalrole.fandom.com/wiki/Marquet" },
+        { "label": "Critical Role Wiki: Ank'Harel", "url": "https://criticalrole.fandom.com/wiki/Ank%27Harel" }
+      ]
     },
     {
       "id": "domunas",
@@ -51,16 +65,36 @@
       "pin": {
         "x": 75.88530703586963,
         "y": 88.02667118652332
-      }
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Domunas", "url": "https://criticalrole.fandom.com/wiki/Domunas" },
+        { "label": "Critical Role Wiki: Shattered Teeth", "url": "https://criticalrole.fandom.com/wiki/Shattered_Teeth" }
+      ]
     }
   ],
   "cards": [
     {
       "id": "exandria-overview",
       "category": "contents",
-      "title": "Exandria",
+      "title": "ภาพรวม",
       "summary": "โลกที่แคมเปญของ Critical Role ดำเนินเรื่องอยู่ มีดวงจันทร์สองดวง (Catha, Ruidus) และ 4 ทวีปหลัก",
-      "contentPath": "/world-settings/exandria/contents/exandria-overview.md"
+      "contentPath": "/world-settings/exandria/contents/exandria-overview.md",
+      "sources": [
+        { "label": "Critical Role Wiki: Exandria", "url": "https://criticalrole.fandom.com/wiki/Exandria" },
+        { "label": "The Calamity", "url": "https://criticalrole.fandom.com/wiki/The_Calamity" },
+        { "label": "The Divergence", "url": "https://criticalrole.fandom.com/wiki/The_Divergence" },
+        { "label": "Prime Deities", "url": "https://criticalrole.fandom.com/wiki/Prime_Deities" },
+        { "label": "Betrayer Gods", "url": "https://criticalrole.fandom.com/wiki/Betrayer_Gods" },
+        { "label": "Catha", "url": "https://criticalrole.fandom.com/wiki/Catha" },
+        { "label": "Ruidus", "url": "https://criticalrole.fandom.com/wiki/Ruidus" }
+      ]
+    },
+    {
+      "id": "seas",
+      "category": "contents",
+      "title": "ทะเล",
+      "summary": "น่านน้ำสำคัญที่ปรากฏบนแผนที่ Exandria เช่น Lucidian Ocean, Ozmit Sea, Beryl Sea",
+      "contentPath": "/world-settings/exandria/contents/seas.md"
     },
     {
       "id": "rexxentrum",
@@ -71,7 +105,10 @@
       "pin": {
         "x": 77.4032258064516,
         "y": 28.769813191373764
-      }
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Rexxentrum", "url": "https://criticalrole.fandom.com/wiki/Rexxentrum" }
+      ]
     },
     {
       "id": "zadash",
@@ -82,7 +119,10 @@
       "pin": {
         "x": 77.87168761484085,
         "y": 37.091985374076614
-      }
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Zadash", "url": "https://criticalrole.fandom.com/wiki/Zadash" }
+      ]
     },
     {
       "id": "whitestone",
@@ -93,6 +133,42 @@
       "pin": {
         "x": 54.453226298670614,
         "y": 29.2
+      },
+      "sources": [
+        { "label": "Critical Role Wiki: Whitestone", "url": "https://criticalrole.fandom.com/wiki/Whitestone" }
+      ]
+    },
+    {
+      "id": "palebank-village",
+      "category": "wildemount",
+      "title": "Palebank Village",
+      "summary": "",
+      "contentPath": "/world-settings/exandria/wildemount/palebank-village.md",
+      "pin": {
+        "x": 83.31923628802755,
+        "y": 14.888363733786694
+      }
+    },
+    {
+      "id": "aeor-crash-site",
+      "category": "wildemount",
+      "title": "Aeor Crash Site",
+      "summary": "",
+      "contentPath": "/world-settings/exandria/wildemount/aeor-crash-site.md",
+      "pin": {
+        "x": 73.91997153766557,
+        "y": 9.326527409295245
+      }
+    },
+    {
+      "id": "salsavault",
+      "category": "wildemount",
+      "title": "Salsvault",
+      "summary": "",
+      "contentPath": "/world-settings/exandria/wildemount/salsavault.md",
+      "pin": {
+        "x": 74.87159468827576,
+        "y": 9.451387198245135
       }
     }
   ]
