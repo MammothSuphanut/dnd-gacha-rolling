@@ -193,6 +193,616 @@
       ]
     },
     {
+      "id": "lyrengorn",
+      "category": "tal-dorei",
+      "title": "Lyrengorn",
+      "summary": "นครรัฐเอลฟ์ลับบนยอดเขา Elvenpeaks ทางเหนือสุดของ Tal'Dorei ปกคลุมด้วยป่าเขตร้อนใต้หิมะ",
+      "contentPath": "/world-settings/exandria/tal-dorei/lyrengorn.md",
+      "pin": { "x": 48.46, "y": 25.32 },
+      "sources": [
+        { "label": "Critical Role Wiki: Lyrengorn", "url": "https://criticalrole.fandom.com/wiki/Lyrengorn" }
+      ]
+    },
+    {
+      "id": "reaching-bluff",
+      "category": "tal-dorei",
+      "title": "Reaching Bluff",
+      "summary": "หมู่บ้านนักขุดแร่ในเทือกเขา Cliffkeep Mountains ที่บูชาโดเดคาฮีดรอนเรืองแสงลึกลับ",
+      "contentPath": "/world-settings/exandria/tal-dorei/reaching-bluff.md",
+      "pin": { "x": 45.44, "y": 25.96 },
+      "sources": [
+        { "label": "Critical Role Wiki: Reaching Bluff", "url": "https://criticalrole.fandom.com/wiki/Reaching_Bluff" }
+      ]
+    },
+    {
+      "id": "terrah",
+      "category": "tal-dorei",
+      "title": "Terrah",
+      "summary": "หมู่บ้านของ Earth Ashari กลางหุบเขาแผ่นดินไหวเหนือ Kraghammer",
+      "contentPath": "/world-settings/exandria/tal-dorei/terrah.md",
+      "pin": { "x": 46.42, "y": 29.02 },
+      "sources": [
+        { "label": "Critical Role Wiki: Terrah", "url": "https://criticalrole.fandom.com/wiki/Terrah" }
+      ]
+    },
+    {
+      "id": "fort-daxio",
+      "category": "tal-dorei",
+      "title": "Fort Daxio",
+      "summary": "ป้อมปราการทหารหลักของ Tal'Dorei เฝ้า Othendin Pass และเส้นทางสู่ Emon",
+      "contentPath": "/world-settings/exandria/tal-dorei/fort-daxio.md",
+      "pin": { "x": 44.02, "y": 30.87 },
+      "sources": [
+        { "label": "Critical Role Wiki: Fort Daxio", "url": "https://criticalrole.fandom.com/wiki/Fort_Daxio" }
+      ]
+    },
+    {
+      "id": "emberhold",
+      "category": "tal-dorei",
+      "title": "Emberhold",
+      "summary": "ป้อมปราการดูเอร์การ์ใต้พิภพในโพรงลาวา ปกครองโดยกษัตริย์ Thangrul II",
+      "contentPath": "/world-settings/exandria/tal-dorei/emberhold.md",
+      "pin": { "x": 44.63, "y": 31.19 },
+      "sources": [
+        { "label": "Critical Role Wiki: Emberhold", "url": "https://criticalrole.fandom.com/wiki/Emberhold" }
+      ]
+    },
+    {
+      "id": "kraghammer",
+      "category": "tal-dorei",
+      "title": "Kraghammer",
+      "summary": "มหานครดวอร์ฟใต้พิภพสามชั้น แหล่งมิธรัลหลักของสาธารณรัฐ",
+      "contentPath": "/world-settings/exandria/tal-dorei/kraghammer.md",
+      "pin": { "x": 45.44, "y": 32.63 },
+      "sources": [
+        { "label": "Critical Role Wiki: Kraghammer", "url": "https://criticalrole.fandom.com/wiki/Kraghammer" }
+      ]
+    },
+    {
+      "id": "othendin-pass",
+      "category": "tal-dorei",
+      "title": "Othendin Pass",
+      "summary": "ช่องเขาหินแห้งแล้งที่เคยเป็นดินแดนสโตนไจแอนต์ ปัจจุบันมี Stoneherders เฝ้าอยู่",
+      "contentPath": "/world-settings/exandria/tal-dorei/othendin-pass.md",
+      "pin": { "x": 43.09, "y": 32.63 },
+      "sources": [
+        { "label": "Critical Role Wiki: Othendin Pass", "url": "https://criticalrole.fandom.com/wiki/Othendin_Pass" }
+      ]
+    },
+    {
+      "id": "palace-of-wonder",
+      "category": "tal-dorei",
+      "title": "Palace of Wonder",
+      "summary": "ซากปรักหักพังลวงตาที่ซ่อนสำนักงานใหญ่ของ League of Miracles เอาไว้",
+      "contentPath": "/world-settings/exandria/tal-dorei/palace-of-wonder.md",
+      "pin": { "x": 41.55, "y": 32.02 },
+      "sources": [
+        { "label": "Critical Role Wiki: Palace of Wonder", "url": "https://criticalrole.fandom.com/wiki/Palace_of_Wonder" }
+      ]
+    },
+    {
+      "id": "mooren",
+      "category": "tal-dorei",
+      "title": "Mooren",
+      "summary": "เมืองประมงเล็ก ๆ ริมแม่น้ำ Mooren River Run ทางตะวันออกของ Alabaster Sierras",
+      "contentPath": "/world-settings/exandria/tal-dorei/mooren.md",
+      "pin": { "x": 54.79, "y": 30.87 },
+      "sources": [
+        { "label": "Critical Role Wiki: Mooren Lake", "url": "https://criticalrole.fandom.com/wiki/Mooren_Lake" }
+      ]
+    },
+    {
+      "id": "jorenn-village",
+      "category": "tal-dorei",
+      "title": "Jorenn Village",
+      "summary": "เมืองบูมทาวน์เหมืองเงินที่ตกอยู่ใต้อิทธิพลของแก๊ง Shadewatch",
+      "contentPath": "/world-settings/exandria/tal-dorei/jorenn-village.md",
+      "pin": { "x": 50.13, "y": 32.08 },
+      "sources": [
+        { "label": "Critical Role Wiki: Jorenn Village", "url": "https://criticalrole.fandom.com/wiki/Jorenn_Village" }
+      ]
+    },
+    {
+      "id": "skyanchor-citadel",
+      "category": "tal-dorei",
+      "title": "Skyanchor Citadel",
+      "summary": "ป้อมปราการที่ยิ่งใหญ่ที่สุดของสโตนไจแอนต์ ซ่อนในภูเขาแห่ง Alabaster Sierras",
+      "contentPath": "/world-settings/exandria/tal-dorei/skyanchor-citadel.md",
+      "pin": { "x": 55.31, "y": 27.78 },
+      "sources": [
+        { "label": "Critical Role Wiki: Skyanchor Citadel", "url": "https://criticalrole.fandom.com/wiki/Skyanchor_Citadel" }
+      ]
+    },
+    {
+      "id": "westruun",
+      "category": "tal-dorei",
+      "title": "Westruun",
+      "summary": "นครใหญ่กึ่งกลาง Republic of Tal'Dorei และบ้านเกิดของ Vox Machina",
+      "contentPath": "/world-settings/exandria/tal-dorei/westruun.md",
+      "pin": { "x": 50.53, "y": 36.74 },
+      "sources": [
+        { "label": "Critical Role Wiki: Westruun", "url": "https://criticalrole.fandom.com/wiki/Westruun" }
+      ]
+    },
+    {
+      "id": "shadebarrow",
+      "category": "tal-dorei",
+      "title": "Shadebarrow",
+      "summary": "สุสานดรูอิดโบราณที่กลายเป็นรังอันเดดใต้อิทธิพลของ Orcus",
+      "contentPath": "/world-settings/exandria/tal-dorei/shadebarrow.md",
+      "pin": { "x": 51.27, "y": 37.33 },
+      "sources": [
+        { "label": "Critical Role Wiki: Shadebarrow", "url": "https://criticalrole.fandom.com/wiki/Shadebarrow" }
+      ]
+    },
+    {
+      "id": "gatsibadow",
+      "category": "tal-dorei",
+      "title": "Gatsibadow",
+      "summary": "หมู่บ้านเล็กใน Wildwood Valley ที่ยังไม่มีเนื้อเรื่องอย่างเป็นทางการ",
+      "contentPath": "/world-settings/exandria/tal-dorei/gatsibadow.md",
+      "pin": { "x": 49.73, "y": 35.72 }
+    },
+    {
+      "id": "murdoon-mines",
+      "category": "tal-dorei",
+      "title": "Murdoon Mines",
+      "summary": "เหมืองแร่เหล็กและเงินที่ฐานเทือกเขา Cliffkeep Mountains",
+      "contentPath": "/world-settings/exandria/tal-dorei/murdoon-mines.md",
+      "pin": { "x": 49.40, "y": 36.90 },
+      "sources": [
+        { "label": "Critical Role Wiki: Bramblewood Forest", "url": "https://criticalrole.fandom.com/wiki/Bramblewood_Forest" }
+      ]
+    },
+    {
+      "id": "turst-fields",
+      "category": "tal-dorei",
+      "title": "Turst Fields",
+      "summary": "ชุมชนเกษตรกรรมที่เลี้ยงดูทั้งสาธารณรัฐและ Whitestone",
+      "contentPath": "/world-settings/exandria/tal-dorei/turst-fields.md",
+      "pin": { "x": 53.43, "y": 34.80 },
+      "sources": [
+        { "label": "Critical Role Wiki: Turst Fields", "url": "https://criticalrole.fandom.com/wiki/Turst_Fields" }
+      ]
+    },
+    {
+      "id": "drynna",
+      "category": "tal-dorei",
+      "title": "Drynna",
+      "summary": "เมืองประมงริม Mooren Lake ผู้ส่งออกปลาน้ำจืดรายใหญ่",
+      "contentPath": "/world-settings/exandria/tal-dorei/drynna.md",
+      "pin": { "x": 55.10, "y": 36.83 },
+      "sources": [
+        { "label": "Critical Role Wiki: Drynna", "url": "https://criticalrole.fandom.com/wiki/Drynna" }
+      ]
+    },
+    {
+      "id": "emon",
+      "category": "tal-dorei",
+      "title": "Emon",
+      "summary": "เมืองหลวงและท่าเรือใหญ่ที่สุดของ Republic of Tal'Dorei บน Bladeshimmer Shoreline",
+      "contentPath": "/world-settings/exandria/tal-dorei/emon.md",
+      "pin": { "x": 40.80, "y": 38.30 },
+      "sources": [
+        { "label": "Critical Role Wiki: Emon", "url": "https://criticalrole.fandom.com/wiki/Emon" },
+        { "label": "Critical Role Wiki: Scar of the Cinder King", "url": "https://criticalrole.fandom.com/wiki/Scar_of_the_Cinder_King" },
+        { "label": "Critical Role Wiki: Greyskull Keep", "url": "https://criticalrole.fandom.com/wiki/Greyskull_Keep" }
+      ]
+    },
+    {
+      "id": "shalesteps",
+      "category": "tal-dorei",
+      "title": "Shalesteps",
+      "summary": "กลุ่มหมู่บ้านชาวประมง/นักล่าในเทือกเขา Seashale ทางตะวันตกเฉียงเหนือของ Emon",
+      "contentPath": "/world-settings/exandria/tal-dorei/shalesteps.md",
+      "pin": { "x": 40.70, "y": 37.59 },
+      "sources": [
+        { "label": "Critical Role Wiki: Shalesteps", "url": "https://criticalrole.fandom.com/wiki/Shalesteps" }
+      ]
+    },
+    {
+      "id": "puddlefoot",
+      "category": "tal-dorei",
+      "title": "Puddlefoot",
+      "summary": "หมู่บ้านเล็กในกลุ่ม Shalesteps บ้านของฤๅษี Rill",
+      "contentPath": "/world-settings/exandria/tal-dorei/puddlefoot.md",
+      "pin": { "x": 40.70, "y": 37.19 },
+      "sources": [
+        { "label": "Critical Role Wiki: Rill", "url": "https://criticalrole.fandom.com/wiki/Rill" }
+      ]
+    },
+    {
+      "id": "new-onoa",
+      "category": "tal-dorei",
+      "title": "New O'Noa",
+      "summary": "ชุมชนคนนอกกฎหมายที่ตั้งอยู่ท่ามกลางซากนคร O'Noa เก่า",
+      "contentPath": "/world-settings/exandria/tal-dorei/new-onoa.md",
+      "pin": { "x": 35.85, "y": 42.65 },
+      "sources": [
+        { "label": "Critical Role Wiki: O'Noa", "url": "https://criticalrole.fandom.com/wiki/O'Noa" }
+      ]
+    },
+    {
+      "id": "skyneedle",
+      "category": "tal-dorei",
+      "title": "Skyneedle",
+      "summary": "วิหารเอลฟ์โบราณในเทือกเขา Daggerbay ที่กลุ่ม stormcaller ใช้เชื่อมต่อกับ Eye of the Storm",
+      "contentPath": "/world-settings/exandria/tal-dorei/skyneedle.md",
+      "pin": { "x": 37.07, "y": 45.68 }
+    },
+    {
+      "id": "ironseat-ridge",
+      "category": "tal-dorei",
+      "title": "Ironseat Ridge",
+      "summary": "สันเขาในตำนานที่เป็นทั้งบัลลังก์ไททันเก่าและแหล่งกำเนิดยุคตื่นทองของ Kymal",
+      "contentPath": "/world-settings/exandria/tal-dorei/ironseat-ridge.md",
+      "pin": { "x": 47.32, "y": 39.11 },
+      "sources": [
+        { "label": "Critical Role Wiki: Ironseat Ridge", "url": "https://criticalrole.fandom.com/wiki/Ironseat_Ridge" }
+      ]
+    },
+    {
+      "id": "kymal",
+      "category": "tal-dorei",
+      "title": "Kymal",
+      "summary": "เมืองคาร์นิวัลและละครสัญจร บ้านเกิดของ Kaylie ลูกสาว Scanlan",
+      "contentPath": "/world-settings/exandria/tal-dorei/kymal.md",
+      "pin": { "x": 48.04, "y": 40.11 },
+      "sources": [
+        { "label": "Critical Role Wiki: Kymal", "url": "https://criticalrole.fandom.com/wiki/Kymal" }
+      ]
+    },
+    {
+      "id": "silvercut-crossroads",
+      "category": "tal-dorei",
+      "title": "Silvercut Crossroads",
+      "summary": "จุดตัดถนนสำคัญเหนือ Kymal พร้อมประวัติศาสตร์การประหารยุค Drassig",
+      "contentPath": "/world-settings/exandria/tal-dorei/silvercut-crossroads.md",
+      "pin": { "x": 47.12, "y": 38.39 },
+      "sources": [
+        { "label": "Critical Role Wiki: Silvercut Crossroads", "url": "https://criticalrole.fandom.com/wiki/Silvercut_Crossroads" }
+      ]
+    },
+    {
+      "id": "throne-of-the-arch-heart",
+      "category": "tal-dorei",
+      "title": "Throne of the Arch Heart",
+      "summary": "สมรภูมิระหว่าง Corellon กับ Gruumsh ต้นกำเนิดเซนทอร์และออร์ค",
+      "contentPath": "/world-settings/exandria/tal-dorei/throne-of-the-arch-heart.md",
+      "pin": { "x": 45.80, "y": 38.70 },
+      "sources": [
+        { "label": "Critical Role Wiki: Throne of the Arch Heart", "url": "https://criticalrole.fandom.com/wiki/Throne_of_the_Arch_Heart" }
+      ]
+    },
+    {
+      "id": "emerald-outpost",
+      "category": "tal-dorei",
+      "title": "Emerald Outpost",
+      "summary": "ด่านการค้า/ทหารร่วมระหว่าง Syngorn กับ Tal'Dorei",
+      "contentPath": "/world-settings/exandria/tal-dorei/emerald-outpost.md",
+      "pin": { "x": 44.27, "y": 41.83 },
+      "sources": [
+        { "label": "Critical Role Wiki: Emerald Outpost", "url": "https://criticalrole.fandom.com/wiki/Emerald_Outpost" }
+      ]
+    },
+    {
+      "id": "ivyheart-thicket",
+      "category": "tal-dorei",
+      "title": "Ivyheart Thicket",
+      "summary": "ป่าลึกลับกับซากอารยธรรมโบราณ ปัจจุบันเป็นถิ่นของ azer",
+      "contentPath": "/world-settings/exandria/tal-dorei/ivyheart-thicket.md",
+      "pin": { "x": 46.41, "y": 39.91 },
+      "sources": [
+        { "label": "Critical Role Wiki: Ivyheart Thicket", "url": "https://criticalrole.fandom.com/wiki/Ivyheart_Thicket" }
+      ]
+    },
+    {
+      "id": "zephrah",
+      "category": "tal-dorei",
+      "title": "Zephrah",
+      "summary": "หมู่บ้านชาว Air Ashari บนหน้าผา Summit Peaks ตรงรอยแยกสู่ระนาบธาตุลม",
+      "contentPath": "/world-settings/exandria/tal-dorei/zephrah.md",
+      "pin": { "x": 53.06, "y": 39.94 },
+      "sources": [
+        { "label": "Critical Role Wiki: Zephrah", "url": "https://criticalrole.fandom.com/wiki/Zephrah" }
+      ]
+    },
+    {
+      "id": "stilben",
+      "category": "tal-dorei",
+      "title": "Stilben",
+      "summary": "ท่าเรือใหญ่สุดของ Lucidian Coast ที่ตกอยู่ใต้อิทธิพลกิลด์อาชญากรรม",
+      "contentPath": "/world-settings/exandria/tal-dorei/stilben.md",
+      "pin": { "x": 54.78, "y": 43.93 },
+      "sources": [
+        { "label": "Critical Role Wiki: Stilben", "url": "https://criticalrole.fandom.com/wiki/Stilben" }
+      ]
+    },
+    {
+      "id": "foramere-villages",
+      "category": "tal-dorei",
+      "title": "Foramere villages",
+      "summary": "กลุ่มหมู่บ้านชาวประมงรอบ Foramere Basin ที่เอลฟ์และคนแคระอยู่ร่วมกันอย่างสงบ",
+      "contentPath": "/world-settings/exandria/tal-dorei/foramere-villages.md",
+      "pin": { "x": 49.67, "y": 42.24 },
+      "sources": [
+        { "label": "Critical Role Wiki: Foramere Basin", "url": "https://criticalrole.fandom.com/wiki/Foramere_Basin" }
+      ]
+    },
+    {
+      "id": "syngorn",
+      "category": "tal-dorei",
+      "title": "Syngorn",
+      "summary": "นครเอลฟ์ปิดตัวที่ใหญ่ที่สุดใน Tal'Dorei หลังกำแพงหยกสูง 40 ฟุต",
+      "contentPath": "/world-settings/exandria/tal-dorei/syngorn.md",
+      "pin": { "x": 47.26, "y": 46.47 },
+      "sources": [
+        { "label": "Critical Role Wiki: Syngorn", "url": "https://criticalrole.fandom.com/wiki/Syngorn" }
+      ]
+    },
+    {
+      "id": "shifting-keep",
+      "category": "tal-dorei",
+      "title": "Shifting Keep",
+      "summary": "ป้อมมายาลวงตาของ Syngorn ที่พลิกชัยชนะใน Scattered War",
+      "contentPath": "/world-settings/exandria/tal-dorei/shifting-keep.md",
+      "pin": { "x": 44.35, "y": 46.75 },
+      "sources": [
+        { "label": "Critical Role Wiki: Shifting Keep", "url": "https://criticalrole.fandom.com/wiki/Shifting_Keep" }
+      ]
+    },
+    {
+      "id": "orencleft",
+      "category": "tal-dorei",
+      "title": "Orencleft",
+      "summary": "ชุมชนเชิงเขา Orencleft Mountain ต้นทางน้ำตกและถ้ำลึกลับใกล้ Syngorn",
+      "contentPath": "/world-settings/exandria/tal-dorei/orencleft.md",
+      "pin": { "x": 46.33, "y": 46.93 },
+      "sources": [
+        { "label": "Critical Role Wiki: Tormor Falls", "url": "https://criticalrole.fandom.com/wiki/Tormor_Falls" }
+      ]
+    },
+    {
+      "id": "termor-falls",
+      "category": "tal-dorei",
+      "title": "Termor Falls",
+      "summary": "น้ำตกหลายชั้นข้าง Orencleft Mountain ซ่อนถ้ำที่เปลี่ยนโครงสร้างทุกวัน",
+      "contentPath": "/world-settings/exandria/tal-dorei/termor-falls.md",
+      "pin": { "x": 47.26, "y": 47.12 },
+      "sources": [
+        { "label": "Critical Role Wiki: Tormor Falls", "url": "https://criticalrole.fandom.com/wiki/Tormor_Falls" }
+      ]
+    },
+    {
+      "id": "ruhn-shak",
+      "category": "tal-dorei",
+      "title": "Ruhn-Shak",
+      "summary": "นครใต้ดินของ drow ที่กำลังเสื่อมสลายจากอิทธิพลของ Tharizdun",
+      "contentPath": "/world-settings/exandria/tal-dorei/ruhn-shak.md",
+      "pin": { "x": 48.69, "y": 47.49 },
+      "sources": [
+        { "label": "Critical Role Wiki: Ruhn-Shak", "url": "https://criticalrole.fandom.com/wiki/Ruhn-Shak" }
+      ]
+    },
+    {
+      "id": "bronbog",
+      "category": "tal-dorei",
+      "title": "Bronbog",
+      "summary": "หมู่บ้านบึงห่างไกลที่มีชื่อเสียงจากเชื้อรา queenscap หายาก",
+      "contentPath": "/world-settings/exandria/tal-dorei/bronbog.md",
+      "pin": { "x": 50.65, "y": 47.40 },
+      "sources": [
+        { "label": "Critical Role Wiki: Bronbog", "url": "https://criticalrole.fandom.com/wiki/Bronbog" }
+      ]
+    },
+    {
+      "id": "cavern-of-axiom",
+      "category": "tal-dorei",
+      "title": "Cavern of Axiom",
+      "summary": "ถ้ำลับใน Frostweald ที่อยู่ของสฟิงซ์ Kamaljiori",
+      "contentPath": "/world-settings/exandria/tal-dorei/cavern-of-axiom.md",
+      "pin": { "x": 49.24, "y": 46.01 },
+      "sources": [
+        { "label": "Critical Role Wiki: Cavern of Axiom", "url": "https://criticalrole.fandom.com/wiki/Cavern_of_Axiom" }
+      ]
+    },
+    {
+      "id": "ashen-gorge",
+      "category": "tal-dorei",
+      "title": "Ashen Gorge",
+      "summary": "ปล่องภูเขาไฟที่เคยเป็นรังของ Thordak the Cinder King",
+      "contentPath": "/world-settings/exandria/tal-dorei/ashen-gorge.md",
+      "pin": { "x": 50.97, "y": 46.84 },
+      "sources": [
+        { "label": "Critical Role Wiki: Ashen Gorge", "url": "https://criticalrole.fandom.com/wiki/Ashen_Gorge" }
+      ]
+    },
+    {
+      "id": "shivergut-tribe",
+      "category": "tal-dorei",
+      "title": "Shivergut Tribe",
+      "summary": "เผ่านักรบออร์คแห่ง Frostweald ผู้บูชา the Ruiner",
+      "contentPath": "/world-settings/exandria/tal-dorei/shivergut-tribe.md",
+      "pin": { "x": 49.24, "y": 43.69 },
+      "sources": [
+        { "label": "Critical Role Wiki: Shivergut tribe", "url": "https://criticalrole.fandom.com/wiki/Shivergut_tribe" }
+      ]
+    },
+    {
+      "id": "vuesdal-villages",
+      "category": "tal-dorei",
+      "title": "Vues'dal villages",
+      "summary": "กลุ่มหมู่บ้านเกษตรกรรมรอบทะเลสาบ Vues'dal Waters ภายใต้การคุ้มครองของ Syngorn",
+      "contentPath": "/world-settings/exandria/tal-dorei/vuesdal-villages.md",
+      "pin": { "x": 46.90, "y": 49.34 },
+      "sources": [
+        { "label": "Critical Role Wiki: Vues'dal villages", "url": "https://criticalrole.fandom.com/wiki/Vues'dal_villages" }
+      ]
+    },
+    {
+      "id": "byroden",
+      "category": "tal-dorei",
+      "title": "Byroden",
+      "summary": "บ้านเกิดของฝาแฝด Vex'ahlia และ Vax'ildan แห่ง Vox Machina ที่ถูกมังกร Thordak เผาทำลาย",
+      "contentPath": "/world-settings/exandria/tal-dorei/byroden.md",
+      "pin": { "x": 43.86, "y": 51.94 },
+      "sources": [
+        { "label": "Critical Role Wiki: Byroden", "url": "https://criticalrole.fandom.com/wiki/Byroden" }
+      ]
+    },
+    {
+      "id": "roch-mar",
+      "category": "tal-dorei",
+      "title": "Roch Mar",
+      "summary": "หมู่บ้านเกษตรกรรมร้างที่กลายเป็นจุดพักพิงของผู้ลี้ภัย",
+      "contentPath": "/world-settings/exandria/tal-dorei/roch-mar.md",
+      "pin": { "x": 46.77, "y": 51.94 },
+      "sources": [
+        { "label": "Critical Role Wiki: Roch Mar", "url": "https://criticalrole.fandom.com/wiki/Roch_Mar" }
+      ]
+    },
+    {
+      "id": "heldenfaire",
+      "category": "tal-dorei",
+      "title": "Heldenfaire",
+      "summary": "หมู่บ้านเล็กจิ๋วที่เคยเผชิญโรคระบาดความคลุ้มคลั่งจากการทดลองแอลเคมีที่ล้มเหลว",
+      "contentPath": "/world-settings/exandria/tal-dorei/heldenfaire.md",
+      "pin": { "x": 48.00, "y": 53.80 },
+      "sources": [
+        { "label": "Critical Role Wiki: Heldenfaire", "url": "https://criticalrole.fandom.com/wiki/Heldenfaire" }
+      ]
+    },
+    {
+      "id": "niirdal-poc",
+      "category": "tal-dorei",
+      "title": "Niirdal-Poc",
+      "summary": "นครหลวงที่ยังอยู่รอดของอารยธรรมโบราณ Qoniira Tetrarchy",
+      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-poc.md",
+      "pin": { "x": 45.16, "y": 55.11 },
+      "sources": [
+        { "label": "Critical Role Wiki: Niirdal-Poc", "url": "https://criticalrole.fandom.com/wiki/Niirdal-Poc" }
+      ]
+    },
+    {
+      "id": "niirdal-hup",
+      "category": "tal-dorei",
+      "title": "Niirdal-Hup",
+      "summary": "อดีตนครทหารของ Qoniira Tetrarchy ที่ถูกทำลายจนราบเป็นผงธุลี",
+      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-hup.md",
+      "pin": { "x": 45.53, "y": 54.54 },
+      "sources": [
+        { "label": "Critical Role Wiki: Qoniira Tetrarchy", "url": "https://criticalrole.fandom.com/wiki/Qoniira_Tetrarchy" }
+      ]
+    },
+    {
+      "id": "niirdal-gan",
+      "category": "tal-dorei",
+      "title": "Niirdal-Gan",
+      "summary": "นครเกษตรกรรมของ Qoniira Tetrarchy ทางเหนือของ Niirdal-Poc",
+      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-gan.md",
+      "pin": { "x": 46.57, "y": 54.28 },
+      "sources": [
+        { "label": "Critical Role Wiki: Qoniira Tetrarchy", "url": "https://criticalrole.fandom.com/wiki/Qoniira_Tetrarchy" }
+      ]
+    },
+    {
+      "id": "niirdal-sarquet",
+      "category": "tal-dorei",
+      "title": "Niirdal-Sarquet",
+      "summary": "อดีตศูนย์กลางศาสนาของ Qoniira Tetrarchy ปัจจุบันเหลือเพียงซากปรักหักพัง",
+      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-sarquet.md",
+      "pin": { "x": 45.53, "y": 55.56 },
+      "sources": [
+        { "label": "Critical Role Wiki: Niirdal-Sarqet", "url": "https://criticalrole.fandom.com/wiki/Niirdal-Sarqet" }
+      ]
+    },
+    {
+      "id": "ortem-vellak",
+      "category": "tal-dorei",
+      "title": "Ortem-Vellak",
+      "summary": "นครรัฐเหนือสุดของ Iron Authority บนที่ราบสูงภูเขาไฟ",
+      "contentPath": "/world-settings/exandria/tal-dorei/ortem-vellak.md",
+      "pin": { "x": 51.17, "y": 57.19 },
+      "sources": [
+        { "label": "Critical Role Wiki: Ortem-Vellak", "url": "https://criticalrole.fandom.com/wiki/Ortem-Vellak" }
+      ]
+    },
+    {
+      "id": "hdar-fye",
+      "category": "tal-dorei",
+      "title": "Hdar-Fye",
+      "summary": "นครรัฐ Iron Authority รู้จักกันในนาม Necropolis of Prince Hdar",
+      "contentPath": "/world-settings/exandria/tal-dorei/hdar-fye.md",
+      "pin": { "x": 45.80, "y": 58.45 },
+      "sources": [
+        { "label": "Critical Role Wiki: Hdar-Fye", "url": "https://criticalrole.fandom.com/wiki/Hdar-Fye" }
+      ]
+    },
+    {
+      "id": "ezordam-haar",
+      "category": "tal-dorei",
+      "title": "Ezordam-Haar",
+      "summary": "นครรัฐ Iron Authority ที่รู้จักกันในนามรังเพกาซัสแดง",
+      "contentPath": "/world-settings/exandria/tal-dorei/ezordam-haar.md",
+      "pin": { "x": 47.12, "y": 58.36 },
+      "sources": [
+        { "label": "Critical Role Wiki: Ezordam-Haar", "url": "https://criticalrole.fandom.com/wiki/Ezordam-Haar" }
+      ]
+    },
+    {
+      "id": "rybad-kol",
+      "category": "tal-dorei",
+      "title": "Rybad-Kol",
+      "summary": "อดีตป้อมคุกของ Strife Emperor ที่กลายเป็นนครรัฐ Iron Authority",
+      "contentPath": "/world-settings/exandria/tal-dorei/rybad-kol.md",
+      "pin": { "x": 49.16, "y": 60.30 },
+      "sources": [
+        { "label": "Critical Role Wiki: Rybad-Kol", "url": "https://criticalrole.fandom.com/wiki/Rybad-Kol" }
+      ]
+    },
+    {
+      "id": "tzaarm",
+      "category": "tal-dorei",
+      "title": "Tz'aarm",
+      "summary": "เมืองหลวงของ Iron Authority สร้างจากหมวกเกราะของเทพผู้ทรยศ Bane",
+      "contentPath": "/world-settings/exandria/tal-dorei/tzaarm.md",
+      "pin": { "x": 48.14, "y": 61.42 },
+      "sources": [
+        { "label": "Critical Role Wiki: Tz'Arrm", "url": "https://criticalrole.fandom.com/wiki/Tz'Arrm" }
+      ]
+    },
+    {
+      "id": "vesrah",
+      "category": "tal-dorei",
+      "title": "Vesrah",
+      "summary": "หมู่บ้านลอยน้ำของ Water Ashari บน Islands of Anamn",
+      "contentPath": "/world-settings/exandria/tal-dorei/vesrah.md",
+      "pin": { "x": 32.08, "y": 44.50 },
+      "sources": [
+        { "label": "Critical Role Wiki: Vesrah", "url": "https://criticalrole.fandom.com/wiki/Vesrah" }
+      ]
+    },
+    {
+      "id": "visa-isle",
+      "category": "tal-dorei",
+      "title": "Visa Isle",
+      "summary": "เกาะลึกลับที่ซ่อนซากนครเซอร์เพนต์โฟล์กโบราณ Vos'sykriss",
+      "contentPath": "/world-settings/exandria/tal-dorei/visa-isle.md",
+      "pin": { "x": 41.00, "y": 47.50 },
+      "sources": [
+        { "label": "Critical Role Wiki: Visa Isle", "url": "https://criticalrole.fandom.com/wiki/Visa_Isle" },
+        { "label": "Critical Role Wiki: Vos'sykriss", "url": "https://criticalrole.fandom.com/wiki/Vos'sykriss" }
+      ]
+    },
+    {
+      "id": "ruins-of-port-udall",
+      "category": "tal-dorei",
+      "title": "Ruins of Port Udall",
+      "summary": "อดีตนิคมชายฝั่งที่ถูกมังกร Thordak เผาทำลายพร้อม Byroden",
+      "contentPath": "/world-settings/exandria/tal-dorei/ruins-of-port-udall.md",
+      "pin": { "x": 42.31, "y": 49.16 }
+    },
+    {
       "id": "palebank-village",
       "category": "wildemount",
       "title": "Palebank Village",
