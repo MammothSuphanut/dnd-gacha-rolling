@@ -3166,6 +3166,491 @@
           "url": "https://criticalrole.fandom.com/wiki/Rimecleft"
         }
       ]
+    },
+    {
+      "id": "ankharel",
+      "category": "marquet",
+      "title": "Ank'Harel",
+      "summary": "นครหลวงกลาง Rumedam Desert อัญมณีแห่ง Marquet ปกครองโดย J'mon Sa Ord มังกรทองเหลืองปลอมกาย",
+      "contentPath": "/world-settings/exandria/marquet/ankharel.md",
+      "pin": {
+        "x": 23.90963898606039,
+        "y": 71.04950687870274
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Ank'Harel",
+          "url": "https://criticalrole.fandom.com/wiki/Ank%27Harel"
+        }
+      ]
+    },
+    {
+      "id": "eish-allay",
+      "category": "marquet",
+      "title": "Eish-Allay",
+      "summary": "หุบเขาเล็กในเทือกเขา Serpentwind Peaks จุดพักหนึ่งของ Oderan Wilds",
+      "contentPath": "/world-settings/exandria/marquet/eish-allay.md",
+      "pin": {
+        "x": 8.130066053678824,
+        "y": 71.83652890415088
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Oderan Wilds",
+          "url": "https://criticalrole.fandom.com/wiki/Oderan_Wilds"
+        }
+      ]
+    },
+    {
+      "id": "sapiro-haven",
+      "category": "marquet",
+      "title": "Sapiro Haven",
+      "summary": "ท่าเรือชายฝั่งเหนือของ Oderan Wilds จุดเชื่อมต่อทางทะเลของภูมิภาค",
+      "contentPath": "/world-settings/exandria/marquet/sapiro-haven.md",
+      "pin": {
+        "x": 10.5,
+        "y": 72.7
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Oltgar Dradegon",
+          "url": "https://criticalrole.fandom.com/wiki/Oltgar_Dradegon"
+        }
+      ]
+    },
+    {
+      "id": "goradire",
+      "category": "marquet",
+      "title": "Goradire",
+      "summary": "เมืองหนึ่งใน Oderan Wilds ล้อมรอบด้วยเทือกเขา Serpentwind Peaks",
+      "contentPath": "/world-settings/exandria/marquet/goradire.md",
+      "pin": {
+        "x": 12.250164373765752,
+        "y": 74.04950687870274
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Oderan Wilds",
+          "url": "https://criticalrole.fandom.com/wiki/Oderan_Wilds"
+        }
+      ]
+    },
+    {
+      "id": "shandal",
+      "category": "marquet",
+      "title": "Shandal",
+      "summary": "หมู่บ้านโอเอซิสหนึ่งวันเดินทางจาก Ank'Harel บ้านเกิดของ Shaun Gilmore",
+      "contentPath": "/world-settings/exandria/marquet/shandal.md",
+      "pin": {
+        "x": 25.33805978121907,
+        "y": 72.24583876246412
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Shandal",
+          "url": "https://criticalrole.fandom.com/wiki/Shandal"
+        }
+      ]
+    },
+    {
+      "id": "shammel",
+      "category": "marquet",
+      "title": "Shammel",
+      "summary": "นครท่าเรือท่องเที่ยวบน Bay of Gifts ที่ Vox Machina เคยมาพักผ่อนช่วง Winter's Crest",
+      "contentPath": "/world-settings/exandria/marquet/shammel.md",
+      "pin": {
+        "x": 24.421085323112756,
+        "y": 66.54189379208604
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Shammel",
+          "url": "https://criticalrole.fandom.com/wiki/Shammel"
+        }
+      ]
+    },
+    {
+      "id": "vault-of-shumas",
+      "category": "marquet",
+      "title": "Vault of Shumas",
+      "summary": "วิหารลับในเทือกเขา Aggrad Mountains ที่ Arkhan the Cruel พบ Wreath of the Prism",
+      "contentPath": "/world-settings/exandria/marquet/vault-of-shumas.md",
+      "pin": {
+        "x": 18.46066985477107,
+        "y": 69.09901415415226
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Vault of Shumas",
+          "url": "https://criticalrole.fandom.com/wiki/Vault_of_Shumas"
+        }
+      ]
+    },
+    {
+      "id": "jrusar",
+      "category": "marquet",
+      "title": "Jrusar",
+      "summary": "นครหลวงของ Oderan Wilds เมืองยอดหินห้ายอด บ้านเกิดของ Bells Hells ในช่วงต้นแคมเปญ 3",
+      "contentPath": "/world-settings/exandria/marquet/jrusar.md",
+      "pin": {
+        "x": 10.039211158010648,
+        "y": 77.35416123753586
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Jrusar",
+          "url": "https://criticalrole.fandom.com/wiki/Jrusar"
+        }
+      ]
+    },
+    {
+      "id": "heartmoor-hamlet",
+      "category": "marquet",
+      "title": "Heartmoor Hamlet",
+      "summary": "หมู่บ้านในพื้นที่ชุ่มน้ำ Heartmoor เต็มไปด้วยร้านค้าเล็ก ๆ และเรื่องราวของ Ashton Greymoore",
+      "contentPath": "/world-settings/exandria/marquet/heartmoor-hamlet.md",
+      "pin": {
+        "x": 8.109638225629084,
+        "y": 76.1428794643571
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Heartmoor Hamlet",
+          "url": "https://criticalrole.fandom.com/wiki/Heartmoor_Hamlet"
+        }
+      ]
+    },
+    {
+      "id": "otaladume",
+      "category": "marquet",
+      "title": "Otaladume",
+      "summary": "นิคมหนึ่งใน Oderan Wilds ใกล้ Jrusar ยังไม่มีรายละเอียดปรากฏในสื่อหลัก",
+      "contentPath": "/world-settings/exandria/marquet/otaladume.md",
+      "pin": {
+        "x": 7.469770332986731,
+        "y": 79.16445733844363
+      }
+    },
+    {
+      "id": "evishi",
+      "category": "marquet",
+      "title": "Evishi",
+      "summary": "เมืองโทรลล์ใน Oderan Wilds ใกล้เหมืองเงินของตระกูล Rayia",
+      "contentPath": "/world-settings/exandria/marquet/evishi.md",
+      "pin": {
+        "x": 12.688718036713391,
+        "y": 78.78307591442312
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Evishi",
+          "url": "https://criticalrole.fandom.com/wiki/Evishi"
+        }
+      ]
+    },
+    {
+      "id": "bassuras",
+      "category": "marquet",
+      "title": "Bassuras",
+      "summary": "นครใหญ่ใน Hellcatch Valley บ้านเกิดของ Ashton Greymoore, Dancer และ Fresh Cut Grass",
+      "contentPath": "/world-settings/exandria/marquet/bassuras.md",
+      "pin": {
+        "x": 21.8,
+        "y": 83.39069128233373
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Bassuras",
+          "url": "https://criticalrole.fandom.com/wiki/Bassuras"
+        }
+      ]
+    },
+    {
+      "id": "gujjar-serai",
+      "category": "marquet",
+      "title": "Gujjar-Serai",
+      "summary": "นครสีเขียว เมืองหลวงของ Bassur Republic บนขอบ The Rift เหนือ Hellcatch Valley",
+      "contentPath": "/world-settings/exandria/marquet/gujjar-serai.md",
+      "pin": {
+        "x": 15.119933946321174,
+        "y": 80.65416123753587
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Hellcatch Valley",
+          "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
+        }
+      ]
+    },
+    {
+      "id": "kings-fall",
+      "category": "marquet",
+      "title": "King's Fall",
+      "summary": "เมืองเล็กชิดเทือกเขา Aggrad Mountains ทางเหนือของ Hellcatch Valley",
+      "contentPath": "/world-settings/exandria/marquet/kings-fall.md",
+      "pin": {
+        "x": 17.039867892642352,
+        "y": 80.9036681162386
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Hellcatch Valley",
+          "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
+        }
+      ]
+    },
+    {
+      "id": "loonpur",
+      "category": "marquet",
+      "title": "Loonpur",
+      "summary": "นิคมหนึ่งใน Hellcatch Valley บนเส้นทางสัญจรของ Bells Hells",
+      "contentPath": "/world-settings/exandria/marquet/loonpur.md",
+      "pin": {
+        "x": 16.62026345428399,
+        "y": 85.59633074311444
+      }
+    },
+    {
+      "id": "nadigarh",
+      "category": "marquet",
+      "title": "Nadigarh",
+      "summary": "นิคมทางใต้ของ Hellcatch Valley ใกล้ซาก Drowned City",
+      "contentPath": "/world-settings/exandria/marquet/nadigarh.md",
+      "pin": {
+        "x": 19.69036177437092,
+        "y": 85.8009862425945
+      }
+    },
+    {
+      "id": "tishatan-excavation",
+      "category": "marquet",
+      "title": "หลุมขุดค้น Tishtan",
+      "summary": "ไซต์โบราณคดีที่กลายเป็นจุดสร้าง Malleus Key และจุดเริ่ม Battle of the Red Center",
+      "contentPath": "/world-settings/exandria/marquet/tishatan-excavation.md",
+      "pin": {
+        "x": 19.86944082502392,
+        "y": 79.94852063610823
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Tishtan excavation site",
+          "url": "https://criticalrole.fandom.com/wiki/Tishtan_excavation_site"
+        }
+      ]
+    },
+    {
+      "id": "rajarma",
+      "category": "marquet",
+      "title": "Rajarma",
+      "summary": "จุดหนึ่งใน Hellcatch Valley ใกล้พรมแดน The Rift",
+      "contentPath": "/world-settings/exandria/marquet/rajarma.md",
+      "pin": {
+        "x": 21.24052538770536,
+        "y": 80.02990091948178
+      }
+    },
+    {
+      "id": "dead-mans-crater",
+      "category": "marquet",
+      "title": "Dead Man's Crater",
+      "summary": "แอ่งขนาดใหญ่ใน Hellcatch Valley ดินแดนไร้กฎหมายของกลุ่ม Crawlers",
+      "contentPath": "/world-settings/exandria/marquet/dead-mans-crater.md",
+      "pin": {
+        "x": 19.941019269433934,
+        "y": 83.4
+      }
+    },
+    {
+      "id": "drowned-city",
+      "category": "marquet",
+      "title": "Drowned City (Cael Morrow)",
+      "summary": "ซากนครเอลฟ์-ออร์คยุค Calamity ที่จมใต้ดิน จุดกำเนิดของ the Netherdeep",
+      "contentPath": "/world-settings/exandria/marquet/drowned-city.md",
+      "pin": {
+        "x": 21.53006453281621,
+        "y": 87.34852063610823
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Drowned City",
+          "url": "https://criticalrole.fandom.com/wiki/Drowned_City"
+        }
+      ]
+    },
+    {
+      "id": "barinak",
+      "category": "marquet",
+      "title": "Barinak",
+      "summary": "หมู่บ้านลับของไลแคนโทรป Gorgynei ซ่อนตัวในผืนป่า Gloomed Jungles",
+      "contentPath": "/world-settings/exandria/marquet/barinak.md",
+      "pin": {
+        "x": 25.688718036713386,
+        "y": 86.43871765649774
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Barinak",
+          "url": "https://criticalrole.fandom.com/wiki/Barinak"
+        }
+      ]
+    },
+    {
+      "id": "gelvan",
+      "category": "marquet",
+      "title": "Gelvan",
+      "summary": "เมืองเกษตรกรรมบนที่ราบสูงริม Taloned Highlands บ้านเกิดของ Imogen Temult",
+      "contentPath": "/world-settings/exandria/marquet/gelvan.md",
+      "pin": {
+        "x": 17.330230427444576,
+        "y": 91.2794077981845
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Gelvaan",
+          "url": "https://criticalrole.fandom.com/wiki/Gelvaan"
+        }
+      ]
+    },
+    {
+      "id": "sruwargas",
+      "category": "marquet",
+      "title": "Sruwargas",
+      "summary": "เมืองหลวงของ Taloned Highlands ที่นั่งบัลลังก์ Stratos Throne บนเทือกเขา Coven Peaks",
+      "contentPath": "/world-settings/exandria/marquet/sruwargas.md",
+      "pin": {
+        "x": 15.3,
+        "y": 94.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Sruwargas",
+          "url": "https://criticalrole.fandom.com/wiki/Sruwargas"
+        }
+      ]
+    },
+    {
+      "id": "zhavrolle",
+      "category": "marquet",
+      "title": "Zha'Vrollo",
+      "summary": "วิหารกึ่งปรักหักพังของ Sahyaadon ในผืนป่า Gloomed Jungles ใกล้ Barinak",
+      "contentPath": "/world-settings/exandria/marquet/zhavrolle.md",
+      "pin": {
+        "x": 25.83921191844196,
+        "y": 84.8916763842813
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Zha'Vrollo",
+          "url": "https://criticalrole.fandom.com/wiki/Zha%27Vrollo"
+        }
+      ]
+    },
+    {
+      "id": "silken-squall",
+      "category": "marquet",
+      "title": "Silken Squall",
+      "summary": "นครเต็นท์ลอยฟ้าเร่ร่อนของตระกูล Wyvernwind บ้านเกิดของ Dorian Storm",
+      "contentPath": "/world-settings/exandria/marquet/silken-squall.md",
+      "pin": {
+        "x": 32.73953914511085,
+        "y": 85.16078808155805
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Silken Squall",
+          "url": "https://criticalrole.fandom.com/wiki/Silken_Squall"
+        }
+      ]
+    },
+    {
+      "id": "ziggurat",
+      "category": "marquet",
+      "title": "Ziggurat แห่ง Smouldercrown Mountains",
+      "summary": "วิหารโบราณที่ the Remnants ใช้เป็นพอร์ทัลสู่ Shadowfell จุดที่ Vox Machina หยุดยั้ง Delilah Briarwood",
+      "contentPath": "/world-settings/exandria/marquet/ziggurat.md",
+      "pin": {
+        "x": 24.849506878702744,
+        "y": 78.76445733844362
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Ziggurat",
+          "url": "https://criticalrole.fandom.com/wiki/Ziggurat"
+        }
+      ]
+    },
+    {
+      "id": "qoreo",
+      "category": "marquet",
+      "title": "Qoreo",
+      "summary": "นิคมเล็กในแคว้น Aeshanadoor ใกล้ทะเลสาบทางตะวันออกเฉียงเหนือของ Gloomed Jungles",
+      "contentPath": "/world-settings/exandria/marquet/qoreo.md",
+      "pin": {
+        "x": 24.266646471006116,
+        "y": 92.60307705507009
+      }
+    },
+    {
+      "id": "aruati",
+      "category": "marquet",
+      "title": "Aruati",
+      "summary": "หมู่บ้านชาวประมงริมฝั่งเหนือของ Lake Koron ใกล้นคร Yios",
+      "contentPath": "/world-settings/exandria/marquet/aruati.md",
+      "pin": {
+        "x": 26.96976957255542,
+        "y": 88.73921077779498
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Lake Koron",
+          "url": "https://criticalrole.fandom.com/wiki/Lake_Koron"
+        }
+      ]
+    },
+    {
+      "id": "yios",
+      "category": "marquet",
+      "title": "Yios",
+      "summary": "นครแห่งแสงไหลเลื่อน เมืองออร์คกลาง Lake Koron ศูนย์กลางวิชาการคู่แข่ง Ank'Harel",
+      "contentPath": "/world-settings/exandria/marquet/yios.md",
+      "pin": {
+        "x": 26.68986789264235,
+        "y": 89.69019702038952
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Yios",
+          "url": "https://criticalrole.fandom.com/wiki/Yios"
+        }
+      ]
+    },
+    {
+      "id": "doan",
+      "category": "marquet",
+      "title": "Doan",
+      "summary": "นิคมในแคว้น Aeshanadoor ใกล้ Gloomed Jungles จุดที่เคยจับสายลับ Stratos Throne ได้",
+      "contentPath": "/world-settings/exandria/marquet/doan.md",
+      "pin": {
+        "x": 29.62990167991307,
+        "y": 92.80465435883315
+      }
+    },
+    {
+      "id": "viscan",
+      "category": "marquet",
+      "title": "เกาะ Viscan",
+      "summary": "เกาะภูเขาไฟลึกลับ อดีตห้องทดลองของเนโครแมนเซอร์ Opash ที่ดักผู้มาเยือนไว้ด้วยเวทมนตร์",
+      "contentPath": "/world-settings/exandria/marquet/viscan.md",
+      "pin": {
+        "x": 40.3,
+        "y": 80.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Island of Viscan",
+          "url": "https://criticalrole.fandom.com/wiki/Island_of_Viscan"
+        }
+      ]
     }
   ],
   "partyPins": [
