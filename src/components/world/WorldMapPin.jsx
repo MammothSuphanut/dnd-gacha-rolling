@@ -69,12 +69,13 @@ export default function WorldMapPin({ x, y, label, variant = 'continent', editab
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
       style={{ left: `${x}%`, top: `${y}%` }}
-      // The button's own hit box (h-10 w-10) is bigger than the visible dot
-      // inside it — that's the "hover near it" zone: hovering anywhere in
-      // this invisible 40px area reveals the dot via group-hover, not just
-      // the few pixels of the dot itself. In edit mode pins stay fully
-      // visible always, since you need to see them to drag/place accurately.
-      className={`group absolute flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center focus:outline-none ${
+      // The button's own hit box (h-3 w-3) is close to the size of the
+      // visible dot inside it, so the cursor has to land almost right on the
+      // dot before group-hover reveals it/makes it clickable — a small
+      // forgiveness margin rather than a wide "hover nearby" zone. In edit
+      // mode pins stay fully visible always, since you need to see them to
+      // drag/place accurately.
+      className={`group absolute flex h-3 w-3 -translate-x-1/2 -translate-y-1/2 items-center justify-center focus:outline-none ${
         editable ? 'cursor-grab active:cursor-grabbing' : ''
       }`}
       title={label}

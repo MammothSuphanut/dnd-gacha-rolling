@@ -202,7 +202,12 @@
         "x": 83.31923628802755,
         "y": 14.888363733786694
       },
-      "sources": [{ "label": "Critical Role Wiki: Palebank Village", "url": "https://criticalrole.fandom.com/wiki/Palebank_Village" }]
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Palebank Village",
+          "url": "https://criticalrole.fandom.com/wiki/Palebank_Village"
+        }
+      ]
     },
     {
       "id": "aeor-crash-site",
@@ -214,7 +219,12 @@
         "x": 73.91997153766557,
         "y": 9.326527409295245
       },
-      "sources": [{ "label": "Critical Role Wiki: Aeor", "url": "https://criticalrole.fandom.com/wiki/Aeor" }]
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Aeor",
+          "url": "https://criticalrole.fandom.com/wiki/Aeor"
+        }
+      ]
     },
     {
       "id": "salsavault",
@@ -226,7 +236,12 @@
         "x": 74.87159468827576,
         "y": 9.451387198245135
       },
-      "sources": [{ "label": "Critical Role Wiki: Salsvault", "url": "https://criticalrole.fandom.com/wiki/Salsvault" }]
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Salsvault",
+          "url": "https://criticalrole.fandom.com/wiki/Salsvault"
+        }
+      ]
     },
     {
       "id": "mythburrow",
@@ -238,7 +253,12 @@
         "x": 89.49432486804982,
         "y": 15.514178238044234
       },
-      "sources": [{ "label": "Critical Role Wiki: Mythburrow", "url": "https://criticalrole.fandom.com/wiki/Mythburrow" }]
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Mythburrow",
+          "url": "https://criticalrole.fandom.com/wiki/Mythburrow"
+        }
+      ]
     },
     {
       "id": "nicodranas",
@@ -246,8 +266,16 @@
       "title": "Nicodranas",
       "summary": "เมืองท่าตะวันออกสุดของ Menagerie Coast บ้านเกิดของ Jester และ Marion Lavorre",
       "contentPath": "/world-settings/exandria/wildemount/nicodranas.md",
-      "pin": { "x": 75.9, "y": 50.6 },
-      "sources": [{ "label": "Critical Role Wiki: Nicodranas", "url": "https://criticalrole.fandom.com/wiki/Nicodranas" }]
+      "pin": {
+        "x": 75.9,
+        "y": 50.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Nicodranas",
+          "url": "https://criticalrole.fandom.com/wiki/Nicodranas"
+        }
+      ]
     },
     {
       "id": "port-damali",
@@ -255,8 +283,16 @@
       "title": "Port Damali",
       "summary": "เมืองใหญ่ที่สุดของ Menagerie Coast เมืองหลวงโดยพฤตินัยของ Clovis Concord",
       "contentPath": "/world-settings/exandria/wildemount/port-damali.md",
-      "pin": { "x": 68.4, "y": 43.0 },
-      "sources": [{ "label": "Critical Role Wiki: Port Damali", "url": "https://criticalrole.fandom.com/wiki/Port_Damali" }]
+      "pin": {
+        "x": 68.4,
+        "y": 43
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Port Damali",
+          "url": "https://criticalrole.fandom.com/wiki/Port_Damali"
+        }
+      ]
     },
     {
       "id": "bisaft-port",
@@ -264,10 +300,19 @@
       "title": "Bisaft Port",
       "summary": "นิคมตะวันตกสุดของ Clovis Concord บน Bisaft Isle",
       "contentPath": "/world-settings/exandria/wildemount/bisaft-port.md",
-      "pin": { "x": 64.9, "y": 47.8 },
+      "pin": {
+        "x": 64.9,
+        "y": 47.8
+      },
       "sources": [
-        { "label": "Critical Role Wiki: Bisaft Isle", "url": "https://criticalrole.fandom.com/wiki/Bisaft_Isle" },
-        { "label": "Critical Role Wiki (Miraheze): Bisaft Port", "url": "https://criticalrole.miraheze.org/wiki/Bisaft_Port" }
+        {
+          "label": "Critical Role Wiki: Bisaft Isle",
+          "url": "https://criticalrole.fandom.com/wiki/Bisaft_Isle"
+        },
+        {
+          "label": "Critical Role Wiki (Miraheze): Bisaft Port",
+          "url": "https://criticalrole.miraheze.org/wiki/Bisaft_Port"
+        }
       ]
     },
     {
@@ -276,8 +321,16 @@
       "title": "Feolinn",
       "summary": "เมืองชายฝั่งขึ้นชื่อเรื่องไวน์และน้ำมัน willowshade",
       "contentPath": "/world-settings/exandria/wildemount/feolinn.md",
-      "pin": { "x": 73.3, "y": 46.2 },
-      "sources": [{ "label": "Critical Role Wiki: Feolinn", "url": "https://criticalrole.fandom.com/wiki/Feolinn" }]
+      "pin": {
+        "x": 73.3,
+        "y": 46.2
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Feolinn",
+          "url": "https://criticalrole.fandom.com/wiki/Feolinn"
+        }
+      ]
     },
     {
       "id": "palma-flora",
@@ -285,8 +338,16 @@
       "title": "Palma Flora",
       "summary": "นิคมตากอากาศเล็กๆ บนปลายแหลม Vezdali Peninsula",
       "contentPath": "/world-settings/exandria/wildemount/palma-flora.md",
-      "pin": { "x": 68.6, "y": 46.6 },
-      "sources": [{ "label": "Critical Role Wiki: Palma Flora", "url": "https://criticalrole.fandom.com/wiki/Palma_Flora" }]
+      "pin": {
+        "x": 68.6,
+        "y": 46.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Palma Flora",
+          "url": "https://criticalrole.fandom.com/wiki/Palma_Flora"
+        }
+      ]
     },
     {
       "id": "wuyun-gates",
@@ -294,8 +355,16 @@
       "title": "Wuyun Gates",
       "summary": "ด่านชายแดนป้อมปราการระหว่าง Dwendalian Empire กับ Menagerie Coast",
       "contentPath": "/world-settings/exandria/wildemount/wuyun-gates.md",
-      "pin": { "x": 76.8, "y": 45.6 },
-      "sources": [{ "label": "Critical Role Wiki: Wuyun Gates", "url": "https://criticalrole.fandom.com/wiki/Wuyun_Gates" }]
+      "pin": {
+        "x": 76.8,
+        "y": 45.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Wuyun Gates",
+          "url": "https://criticalrole.fandom.com/wiki/Wuyun_Gates"
+        }
+      ]
     },
     {
       "id": "port-zoon",
@@ -303,8 +372,16 @@
       "title": "Port Zoon",
       "summary": "เมืองอุตสาหกรรม/วิทยาศาสตร์ ขึ้นชื่อเรื่องโลหะวิทยา",
       "contentPath": "/world-settings/exandria/wildemount/port-zoon.md",
-      "pin": { "x": 73.6, "y": 49.4 },
-      "sources": [{ "label": "Critical Role Wiki: Port Zoon", "url": "https://criticalrole.fandom.com/wiki/Port_Zoon" }]
+      "pin": {
+        "x": 73.6,
+        "y": 49.4
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Port Zoon",
+          "url": "https://criticalrole.fandom.com/wiki/Port_Zoon"
+        }
+      ]
     },
     {
       "id": "gwardan",
@@ -312,8 +389,16 @@
       "title": "Gwardan",
       "summary": "นครรัฐเหนือสุดของ Clovis Concord ขึ้นชื่อเรื่องโลหะวิทยา",
       "contentPath": "/world-settings/exandria/wildemount/gwardan.md",
-      "pin": { "x": 67.9, "y": 40.35 },
-      "sources": [{ "label": "Critical Role Wiki: Gwardan", "url": "https://criticalrole.fandom.com/wiki/Gwardan" }]
+      "pin": {
+        "x": 67.9,
+        "y": 40.35
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Gwardan",
+          "url": "https://criticalrole.fandom.com/wiki/Gwardan"
+        }
+      ]
     },
     {
       "id": "othe",
@@ -321,10 +406,19 @@
       "title": "Othe",
       "summary": "นครรัฐเล็กที่สุดของ Clovis Concord ศูนย์กลางจิตวิญญาณของ Menagerie Coast",
       "contentPath": "/world-settings/exandria/wildemount/othe.md",
-      "pin": { "x": 72.9, "y": 42.5 },
+      "pin": {
+        "x": 72.9,
+        "y": 42.5
+      },
       "sources": [
-        { "label": "Critical Role Wiki: Othe", "url": "https://criticalrole.fandom.com/wiki/Othe" },
-        { "label": "Critical Role Wiki: Othemoor", "url": "https://criticalrole.fandom.com/wiki/Othemoor" }
+        {
+          "label": "Critical Role Wiki: Othe",
+          "url": "https://criticalrole.fandom.com/wiki/Othe"
+        },
+        {
+          "label": "Critical Role Wiki: Othemoor",
+          "url": "https://criticalrole.fandom.com/wiki/Othemoor"
+        }
       ]
     },
     {
@@ -333,10 +427,19 @@
       "title": "Rosohna",
       "summary": "เมืองหลวงของ Kryn Dynasty สร้างทับซากเมือง Ghor Dranas",
       "contentPath": "/world-settings/exandria/wildemount/rosohna.md",
-      "pin": { "x": 90.8, "y": 38.85 },
+      "pin": {
+        "x": 90.8,
+        "y": 38.85
+      },
       "sources": [
-        { "label": "Critical Role Wiki: Rosohna", "url": "https://criticalrole.fandom.com/wiki/Rosohna" },
-        { "label": "Critical Role Wiki: Lucid Bastion", "url": "https://criticalrole.fandom.com/wiki/Lucid_Bastion" }
+        {
+          "label": "Critical Role Wiki: Rosohna",
+          "url": "https://criticalrole.fandom.com/wiki/Rosohna"
+        },
+        {
+          "label": "Critical Role Wiki: Lucid Bastion",
+          "url": "https://criticalrole.fandom.com/wiki/Lucid_Bastion"
+        }
       ]
     },
     {
@@ -345,10 +448,19 @@
       "title": "Bazzoxan",
       "summary": "หมู่บ้านใต้ Betrayers' Rise ฉากหลักของ Call of the Netherdeep",
       "contentPath": "/world-settings/exandria/wildemount/bazzoxan.md",
-      "pin": { "x": 89.6, "y": 34.1 },
+      "pin": {
+        "x": 89.6,
+        "y": 34.1
+      },
       "sources": [
-        { "label": "Critical Role Wiki: Bazzoxan", "url": "https://criticalrole.fandom.com/wiki/Bazzoxan" },
-        { "label": "Critical Role Wiki: Beneath Bazzoxan", "url": "https://criticalrole.fandom.com/wiki/Beneath_Bazzoxan" }
+        {
+          "label": "Critical Role Wiki: Bazzoxan",
+          "url": "https://criticalrole.fandom.com/wiki/Bazzoxan"
+        },
+        {
+          "label": "Critical Role Wiki: Beneath Bazzoxan",
+          "url": "https://criticalrole.fandom.com/wiki/Beneath_Bazzoxan"
+        }
       ]
     },
     {
@@ -357,8 +469,16 @@
       "title": "Asarius",
       "summary": "เมือง \"City of Beasts\" ทางตะวันตกของ Xhorhas",
       "contentPath": "/world-settings/exandria/wildemount/asarius.md",
-      "pin": { "x": 84.7, "y": 38.3 },
-      "sources": [{ "label": "Critical Role Wiki: Asarius", "url": "https://criticalrole.fandom.com/wiki/Asarius" }]
+      "pin": {
+        "x": 84.7,
+        "y": 38.3
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Asarius",
+          "url": "https://criticalrole.fandom.com/wiki/Asarius"
+        }
+      ]
     },
     {
       "id": "dumaran",
@@ -366,8 +486,16 @@
       "title": "Dumaran",
       "summary": "ป้อมปราการโกงคอบลินบูชา Lolth ใต้ Vermaloc Wildwood",
       "contentPath": "/world-settings/exandria/wildemount/dumaran.md",
-      "pin": { "x": 87.3, "y": 40.65 },
-      "sources": [{ "label": "Critical Role Wiki: Dumaran", "url": "https://criticalrole.fandom.com/wiki/Dumaran" }]
+      "pin": {
+        "x": 87.3,
+        "y": 40.65
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Dumaran",
+          "url": "https://criticalrole.fandom.com/wiki/Dumaran"
+        }
+      ]
     },
     {
       "id": "new-haxon",
@@ -375,8 +503,16 @@
       "title": "New Haxon",
       "summary": "ฐานทัพเดียวของ Dwendalian Empire บน Blightshore",
       "contentPath": "/world-settings/exandria/wildemount/new-haxon.md",
-      "pin": { "x": 95.0, "y": 43.35 },
-      "sources": [{ "label": "Critical Role Wiki: New Haxon", "url": "https://criticalrole.fandom.com/wiki/New_Haxon" }]
+      "pin": {
+        "x": 95,
+        "y": 43.35
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: New Haxon",
+          "url": "https://criticalrole.fandom.com/wiki/New_Haxon"
+        }
+      ]
     },
     {
       "id": "rotthold",
@@ -384,8 +520,16 @@
       "title": "Rotthold",
       "summary": "เมืองไร้กฎหมายบน Blightshore ปกครองโดย the Myriad และ the Revelry",
       "contentPath": "/world-settings/exandria/wildemount/rotthold.md",
-      "pin": { "x": 93.8, "y": 46.95 },
-      "sources": [{ "label": "Critical Role Wiki: Rotthold", "url": "https://criticalrole.fandom.com/wiki/Rotthold" }]
+      "pin": {
+        "x": 93.8,
+        "y": 46.95
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Rotthold",
+          "url": "https://criticalrole.fandom.com/wiki/Rotthold"
+        }
+      ]
     },
     {
       "id": "mordant-isle",
@@ -393,8 +537,16 @@
       "title": "Mordant Isle",
       "summary": "เกาะของเผ่าพันธุ์งูมีปีกบูชา Zehir นอกฝั่ง Tooth of Zehir",
       "contentPath": "/world-settings/exandria/wildemount/mordant-isle.md",
-      "pin": { "x": 96.6, "y": 38.3 },
-      "sources": [{ "label": "Critical Role Wiki: Tooth of Zehir", "url": "https://criticalrole.fandom.com/wiki/Tooth_of_Zehir" }]
+      "pin": {
+        "x": 96.6,
+        "y": 38.3
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Tooth of Zehir",
+          "url": "https://criticalrole.fandom.com/wiki/Tooth_of_Zehir"
+        }
+      ]
     },
     {
       "id": "tooth-of-zehir",
@@ -402,8 +554,16 @@
       "title": "Tooth of Zehir",
       "summary": "คาบสมุทรหมอกทางตะวันออกของ Blightshore ถิ่นมังกรเงา Karketh",
       "contentPath": "/world-settings/exandria/wildemount/tooth-of-zehir.md",
-      "pin": { "x": 97.0, "y": 35.4 },
-      "sources": [{ "label": "Critical Role Wiki: Tooth of Zehir", "url": "https://criticalrole.fandom.com/wiki/Tooth_of_Zehir" }]
+      "pin": {
+        "x": 97,
+        "y": 35.4
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Tooth of Zehir",
+          "url": "https://criticalrole.fandom.com/wiki/Tooth_of_Zehir"
+        }
+      ]
     },
     {
       "id": "ebonglass-massif",
@@ -411,8 +571,16 @@
       "title": "Ebonglass Massif",
       "summary": "เทือกเขาหินออบซิเดียนบน Blightshore ถิ่นของ Fang of the Worm",
       "contentPath": "/world-settings/exandria/wildemount/ebonglass-massif.md",
-      "pin": { "x": 94.7, "y": 30.7 },
-      "sources": [{ "label": "Critical Role Wiki: Ebonglass Massif", "url": "https://criticalrole.fandom.com/wiki/Ebonglass_Massif" }]
+      "pin": {
+        "x": 94.7,
+        "y": 30.7
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Ebonglass Massif",
+          "url": "https://criticalrole.fandom.com/wiki/Ebonglass_Massif"
+        }
+      ]
     },
     {
       "id": "far-hharom",
@@ -420,8 +588,16 @@
       "title": "Far Hharom",
       "summary": "คาบสมุทรทุ่งร้างเหนือสุดของ Blightshore",
       "contentPath": "/world-settings/exandria/wildemount/far-hharom.md",
-      "pin": { "x": 93.4, "y": 27.5 },
-      "sources": [{ "label": "Critical Role Wiki: Far Hharom", "url": "https://criticalrole.fandom.com/wiki/Far_Hharom" }]
+      "pin": {
+        "x": 93.4,
+        "y": 27.5
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Far Hharom",
+          "url": "https://criticalrole.fandom.com/wiki/Far_Hharom"
+        }
+      ]
     },
     {
       "id": "barbed-fields",
@@ -429,8 +605,16 @@
       "title": "Barbed Fields",
       "summary": "ดินแดนรกร้างจุดศูนย์กลาง The Calamity เดิม",
       "contentPath": "/world-settings/exandria/wildemount/barbed-fields.md",
-      "pin": { "x": 90.05, "y": 35.4 },
-      "sources": [{ "label": "Critical Role Wiki: Barbed Fields", "url": "https://criticalrole.fandom.com/wiki/Barbed_Fields" }]
+      "pin": {
+        "x": 90.05,
+        "y": 35.4
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Barbed Fields",
+          "url": "https://criticalrole.fandom.com/wiki/Barbed_Fields"
+        }
+      ]
     },
     {
       "id": "ghostwall",
@@ -438,8 +622,16 @@
       "title": "Ghostwall",
       "summary": "พื้นที่ใน Ghostlands รู้จักผ่าน nether gnome ชื่อ Dryca",
       "contentPath": "/world-settings/exandria/wildemount/ghostwall.md",
-      "pin": { "x": 91.7, "y": 36.9 },
-      "sources": [{ "label": "Critical Role Wiki: Dryca", "url": "https://criticalrole.fandom.com/wiki/Dryca" }]
+      "pin": {
+        "x": 91.7,
+        "y": 36.9
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Dryca",
+          "url": "https://criticalrole.fandom.com/wiki/Dryca"
+        }
+      ]
     },
     {
       "id": "galgarad",
@@ -447,7 +639,10 @@
       "title": "Galgarad",
       "summary": "ชื่อสถานที่บนแผนที่ทางใต้ของ Xhorhas ยังไม่พบข้อมูลใน Wiki",
       "contentPath": "/world-settings/exandria/wildemount/galgarad.md",
-      "pin": { "x": 87.1, "y": 40.25 }
+      "pin": {
+        "x": 87.1,
+        "y": 40.25
+      }
     },
     {
       "id": "many-hosts-of-igrathad",
@@ -455,8 +650,16 @@
       "title": "Many Hosts of Igrathad",
       "summary": "สมาพันธ์ 7 หมู่บ้านปกครองตนเองทางใต้ของ Sorrowseep Waters",
       "contentPath": "/world-settings/exandria/wildemount/many-hosts-of-igrathad.md",
-      "pin": { "x": 84.3, "y": 43.35 },
-      "sources": [{ "label": "Critical Role Wiki: Many Hosts of Igrathad", "url": "https://criticalrole.fandom.com/wiki/Many_Hosts_of_Igrathad" }]
+      "pin": {
+        "x": 84.3,
+        "y": 43.35
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Many Hosts of Igrathad",
+          "url": "https://criticalrole.fandom.com/wiki/Many_Hosts_of_Igrathad"
+        }
+      ]
     },
     {
       "id": "iothia-moorland",
@@ -464,8 +667,16 @@
       "title": "Iothia Moorland",
       "summary": "บ้านเกิดของ Yasha Nydoorin ใน Xhorhas",
       "contentPath": "/world-settings/exandria/wildemount/iothia-moorland.md",
-      "pin": { "x": 87.1, "y": 43.5 },
-      "sources": [{ "label": "Critical Role Wiki: Iothia Moorland", "url": "https://criticalrole.fandom.com/wiki/Iothia_Moorland" }]
+      "pin": {
+        "x": 87.1,
+        "y": 43.5
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Iothia Moorland",
+          "url": "https://criticalrole.fandom.com/wiki/Iothia_Moorland"
+        }
+      ]
     },
     {
       "id": "charis",
@@ -473,8 +684,16 @@
       "title": "Charis",
       "summary": "หมู่บ้านดรูอิดใน Lotusden Greenwood",
       "contentPath": "/world-settings/exandria/wildemount/charis.md",
-      "pin": { "x": 84.3, "y": 47.85 },
-      "sources": [{ "label": "Critical Role Wiki: Charis", "url": "https://criticalrole.fandom.com/wiki/Charis" }]
+      "pin": {
+        "x": 84.3,
+        "y": 47.85
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Charis",
+          "url": "https://criticalrole.fandom.com/wiki/Charis"
+        }
+      ]
     },
     {
       "id": "vurmas",
@@ -482,8 +701,16 @@
       "title": "Vurmas",
       "summary": "ฐานลอยน้ำของ Kryn Dynasty บนเรือสามลำใกล้ Gelier",
       "contentPath": "/world-settings/exandria/wildemount/vurmas.md",
-      "pin": { "x": 68.0, "y": 8.7 },
-      "sources": [{ "label": "Critical Role Wiki: Vurmas", "url": "https://criticalrole.fandom.com/wiki/Vurmas" }]
+      "pin": {
+        "x": 68,
+        "y": 8.7
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Vurmas",
+          "url": "https://criticalrole.fandom.com/wiki/Vurmas"
+        }
+      ]
     },
     {
       "id": "tomb-of-the-worm",
@@ -491,8 +718,16 @@
       "title": "Tomb of the Worm",
       "summary": "ถ้ำน้ำแข็งบน Gelier ที่ฝังร่างของ Quajath, the Undermaw",
       "contentPath": "/world-settings/exandria/wildemount/tomb-of-the-worm.md",
-      "pin": { "x": 69.2, "y": 9.6 },
-      "sources": [{ "label": "Critical Role Wiki: Tomb of the Worm", "url": "https://criticalrole.fandom.com/wiki/Tomb_of_the_Worm" }]
+      "pin": {
+        "x": 69.2,
+        "y": 9.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Tomb of the Worm",
+          "url": "https://criticalrole.fandom.com/wiki/Tomb_of_the_Worm"
+        }
+      ]
     },
     {
       "id": "gelier",
@@ -500,8 +735,16 @@
       "title": "Gelier",
       "summary": "เกาะใหญ่อันดับสองของ Eiselcross เป็นที่ตั้งของ Tomb of the Worm",
       "contentPath": "/world-settings/exandria/wildemount/gelier.md",
-      "pin": { "x": 67.9, "y": 12.0 },
-      "sources": [{ "label": "Critical Role Wiki: Eiselcross", "url": "https://criticalrole.fandom.com/wiki/Eiselcross" }]
+      "pin": {
+        "x": 67.9,
+        "y": 12
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        }
+      ]
     },
     {
       "id": "schneescel",
@@ -509,8 +752,16 @@
       "title": "Schneescel",
       "summary": "เกาะเล็กที่มีพายุหิมะเวทมนตร์ปกคลุมถาวร",
       "contentPath": "/world-settings/exandria/wildemount/schneescel.md",
-      "pin": { "x": 70.3, "y": 12.0 },
-      "sources": [{ "label": "Critical Role Wiki: Eiselcross", "url": "https://criticalrole.fandom.com/wiki/Eiselcross" }]
+      "pin": {
+        "x": 70.3,
+        "y": 12
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        }
+      ]
     },
     {
       "id": "frostbogen",
@@ -518,8 +769,16 @@
       "title": "Frostbogen",
       "summary": "เกาะที่คณะสำรวจ Cerberus Assembly กว่า 100 คนหายสาบสูญ",
       "contentPath": "/world-settings/exandria/wildemount/frostbogen.md",
-      "pin": { "x": 72.1, "y": 14.55 },
-      "sources": [{ "label": "Critical Role Wiki: Eiselcross", "url": "https://criticalrole.fandom.com/wiki/Eiselcross" }]
+      "pin": {
+        "x": 72.1,
+        "y": 14.55
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        }
+      ]
     },
     {
       "id": "taergoss",
@@ -527,8 +786,16 @@
       "title": "Taergoss",
       "summary": "เกาะเล็กที่มีพายุฟ้าผ่าสีเขียวปรากฏขึ้นในปี 835 PD",
       "contentPath": "/world-settings/exandria/wildemount/taergoss.md",
-      "pin": { "x": 75.8, "y": 16.5 },
-      "sources": [{ "label": "Critical Role Wiki: Eiselcross", "url": "https://criticalrole.fandom.com/wiki/Eiselcross" }]
+      "pin": {
+        "x": 75.8,
+        "y": 16.5
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        }
+      ]
     },
     {
       "id": "biessel",
@@ -536,8 +803,16 @@
       "title": "Biessel",
       "summary": "เกาะใหญ่อันดับสามของ Eiselcross ปกครองโดยมังกรขาว",
       "contentPath": "/world-settings/exandria/wildemount/biessel.md",
-      "pin": { "x": 67.9, "y": 5.25 },
-      "sources": [{ "label": "Critical Role Wiki: Eiselcross", "url": "https://criticalrole.fandom.com/wiki/Eiselcross" }]
+      "pin": {
+        "x": 67.9,
+        "y": 5.25
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        }
+      ]
     },
     {
       "id": "dampflan",
@@ -545,8 +820,16 @@
       "title": "Dampflan",
       "summary": "เกาะภูเขาไฟที่ยังคุกรุ่นอยู่ตลอดเวลา",
       "contentPath": "/world-settings/exandria/wildemount/dampflan.md",
-      "pin": { "x": 75.7, "y": 5.25 },
-      "sources": [{ "label": "Critical Role Wiki: Eiselcross", "url": "https://criticalrole.fandom.com/wiki/Eiselcross" }]
+      "pin": {
+        "x": 75.7,
+        "y": 5.25
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        }
+      ]
     },
     {
       "id": "foren",
@@ -554,8 +837,16 @@
       "title": "Foren",
       "summary": "เกาะใหญ่ที่สุดของ Eiselcross จุดตกของนคร Aeor",
       "contentPath": "/world-settings/exandria/wildemount/foren.md",
-      "pin": { "x": 74.5, "y": 10.2 },
-      "sources": [{ "label": "Critical Role Wiki: Foren", "url": "https://criticalrole.fandom.com/wiki/Foren" }]
+      "pin": {
+        "x": 74.5,
+        "y": 10.2
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Foren",
+          "url": "https://criticalrole.fandom.com/wiki/Foren"
+        }
+      ]
     },
     {
       "id": "syrinlya",
@@ -563,8 +854,16 @@
       "title": "Syrinlya",
       "summary": "ด่านหน้าของ Uthodurn บน Foren ต้นกำเนิด \"relic rush\"",
       "contentPath": "/world-settings/exandria/wildemount/syrinlya.md",
-      "pin": { "x": 77.0, "y": 12.0 },
-      "sources": [{ "label": "Critical Role Wiki: Syrinlya", "url": "https://criticalrole.fandom.com/wiki/Syrinlya" }]
+      "pin": {
+        "x": 77,
+        "y": 12
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Syrinlya",
+          "url": "https://criticalrole.fandom.com/wiki/Syrinlya"
+        }
+      ]
     },
     {
       "id": "kaltsel",
@@ -572,8 +871,16 @@
       "title": "Kaltsel",
       "summary": "เกาะเล็กที่สุดของ Eiselcross ข่าวลือถิ่น warlock อมตะ",
       "contentPath": "/world-settings/exandria/wildemount/kaltsel.md",
-      "pin": { "x": 78.5, "y": 12.0 },
-      "sources": [{ "label": "Critical Role Wiki: Eiselcross", "url": "https://criticalrole.fandom.com/wiki/Eiselcross" }]
+      "pin": {
+        "x": 78.5,
+        "y": 12
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        }
+      ]
     },
     {
       "id": "allowaks-sanctuary",
@@ -581,8 +888,16 @@
       "title": "Allowak's Sanctuary",
       "summary": "หมู่บ้านลับของเยติที่ฉลาดขึ้นจากผลึก Aeor",
       "contentPath": "/world-settings/exandria/wildemount/allowaks-sanctuary.md",
-      "pin": { "x": 72.6, "y": 12.15 },
-      "sources": [{ "label": "Critical Role Wiki: Allowak's Sanctuary", "url": "https://criticalrole.fandom.com/wiki/Allowak's_Sanctuary" }]
+      "pin": {
+        "x": 72.6,
+        "y": 12.15
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Allowak's Sanctuary",
+          "url": "https://criticalrole.fandom.com/wiki/Allowak's_Sanctuary"
+        }
+      ]
     },
     {
       "id": "balenpost",
@@ -590,8 +905,16 @@
       "title": "Balenpost",
       "summary": "ด่านหน้าของ Cerberus Assembly สำหรับสำรวจซาก Aeor",
       "contentPath": "/world-settings/exandria/wildemount/balenpost.md",
-      "pin": { "x": 74.3, "y": 14.1 },
-      "sources": [{ "label": "Critical Role Wiki: Balenpost", "url": "https://criticalrole.fandom.com/wiki/Balenpost" }]
+      "pin": {
+        "x": 74.3,
+        "y": 14.1
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Balenpost",
+          "url": "https://criticalrole.fandom.com/wiki/Balenpost"
+        }
+      ]
     },
     {
       "id": "fortress-of-the-dead-jarl",
@@ -599,8 +922,16 @@
       "title": "Fortress of the Dead Jarl",
       "summary": "ปราสาทน้ำแข็งของยักษ์น้ำแข็งที่กลายเป็นซอมบี้",
       "contentPath": "/world-settings/exandria/wildemount/fortress-of-the-dead-jarl.md",
-      "pin": { "x": 74.7, "y": 6.3 },
-      "sources": [{ "label": "Critical Role Wiki: Fortress of the Dead Jarl", "url": "https://criticalrole.fandom.com/wiki/Fortress_of_the_Dead_Jarl" }]
+      "pin": {
+        "x": 74.7,
+        "y": 6.3
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Fortress of the Dead Jarl",
+          "url": "https://criticalrole.fandom.com/wiki/Fortress_of_the_Dead_Jarl"
+        }
+      ]
     },
     {
       "id": "uthodurn",
@@ -608,10 +939,19 @@
       "title": "Uthodurn",
       "summary": "เมืองถ้ำของ Diarchy ดวาร์ฟ-เอลฟ์ ใน Flotker Alps",
       "contentPath": "/world-settings/exandria/wildemount/uthodurn.md",
-      "pin": { "x": 84.2, "y": 18.0 },
+      "pin": {
+        "x": 84.2,
+        "y": 18
+      },
       "sources": [
-        { "label": "Critical Role Wiki: Uthodurn", "url": "https://criticalrole.fandom.com/wiki/Uthodurn" },
-        { "label": "Critical Role Wiki: Diarchy of Uthodurn", "url": "https://criticalrole.fandom.com/wiki/Diarchy_of_Uthodurn" }
+        {
+          "label": "Critical Role Wiki: Uthodurn",
+          "url": "https://criticalrole.fandom.com/wiki/Uthodurn"
+        },
+        {
+          "label": "Critical Role Wiki: Diarchy of Uthodurn",
+          "url": "https://criticalrole.fandom.com/wiki/Diarchy_of_Uthodurn"
+        }
       ]
     },
     {
@@ -620,8 +960,16 @@
       "title": "Icehaven",
       "summary": "ท่าเรือแห่งเดียวของ Dwendalian Empire บน Frigid Depths",
       "contentPath": "/world-settings/exandria/wildemount/icehaven.md",
-      "pin": { "x": 71.8, "y": 25.35 },
-      "sources": [{ "label": "Critical Role Wiki: Icehaven", "url": "https://criticalrole.fandom.com/wiki/Icehaven" }]
+      "pin": {
+        "x": 71.8,
+        "y": 25.35
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Icehaven",
+          "url": "https://criticalrole.fandom.com/wiki/Icehaven"
+        }
+      ]
     },
     {
       "id": "odessloe",
@@ -629,8 +977,16 @@
       "title": "Odessloe",
       "summary": "นิคมประมง/ตัดไม้ ฐานลักลอบขนของของ the Myriad",
       "contentPath": "/world-settings/exandria/wildemount/odessloe.md",
-      "pin": { "x": 77.5, "y": 27.45 },
-      "sources": [{ "label": "Critical Role Wiki: Odessloe", "url": "https://criticalrole.fandom.com/wiki/Odessloe" }]
+      "pin": {
+        "x": 77.5,
+        "y": 27.45
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Odessloe",
+          "url": "https://criticalrole.fandom.com/wiki/Odessloe"
+        }
+      ]
     },
     {
       "id": "yrrosa",
@@ -638,8 +994,16 @@
       "title": "Yrrosa",
       "summary": "เมืองที่ the Myriad ก่อตั้งขึ้นเป็นครั้งแรก",
       "contentPath": "/world-settings/exandria/wildemount/yrrosa.md",
-      "pin": { "x": 73.8, "y": 29.55 },
-      "sources": [{ "label": "Critical Role Wiki: Yrrosa", "url": "https://criticalrole.fandom.com/wiki/Yrrosa" }]
+      "pin": {
+        "x": 73.8,
+        "y": 29.55
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Yrrosa",
+          "url": "https://criticalrole.fandom.com/wiki/Yrrosa"
+        }
+      ]
     },
     {
       "id": "nogvurot",
@@ -647,8 +1011,16 @@
       "title": "Nogvurot",
       "summary": "เมืองชายแดนเหนือของ Empire ใกล้ Quannah Breach",
       "contentPath": "/world-settings/exandria/wildemount/nogvurot.md",
-      "pin": { "x": 79.7, "y": 27.9 },
-      "sources": [{ "label": "Critical Role Wiki: Nogvurot", "url": "https://criticalrole.fandom.com/wiki/Nogvurot" }]
+      "pin": {
+        "x": 79.7,
+        "y": 27.9
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Nogvurot",
+          "url": "https://criticalrole.fandom.com/wiki/Nogvurot"
+        }
+      ]
     },
     {
       "id": "blumenthal",
@@ -656,8 +1028,16 @@
       "title": "Blumenthal",
       "summary": "หมู่บ้านเกษตรกรรม บ้านเกิดของ Caleb Widogast",
       "contentPath": "/world-settings/exandria/wildemount/blumenthal.md",
-      "pin": { "x": 78.3, "y": 30.0 },
-      "sources": [{ "label": "Critical Role Wiki: Blumenthal", "url": "https://criticalrole.fandom.com/wiki/Blumenthal" }]
+      "pin": {
+        "x": 78.3,
+        "y": 30
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Blumenthal",
+          "url": "https://criticalrole.fandom.com/wiki/Blumenthal"
+        }
+      ]
     },
     {
       "id": "grimgolir",
@@ -665,8 +1045,16 @@
       "title": "Grimgolir",
       "summary": "นครรัฐดวาร์ฟปกครองตนเองเพียงแห่งเดียวใน Empire",
       "contentPath": "/world-settings/exandria/wildemount/grimgolir.md",
-      "pin": { "x": 82.9, "y": 30.0 },
-      "sources": [{ "label": "Critical Role Wiki: Grimgolir", "url": "https://criticalrole.fandom.com/wiki/Grimgolir" }]
+      "pin": {
+        "x": 82.9,
+        "y": 30
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Grimgolir",
+          "url": "https://criticalrole.fandom.com/wiki/Grimgolir"
+        }
+      ]
     },
     {
       "id": "druvenlode",
@@ -674,8 +1062,16 @@
       "title": "Druvenlode",
       "summary": "เมืองเหมืองแร่เงินหลักของ Dwendalian Empire",
       "contentPath": "/world-settings/exandria/wildemount/druvenlode.md",
-      "pin": { "x": 77.0, "y": 31.05 },
-      "sources": [{ "label": "Critical Role Wiki: Druvenlode", "url": "https://criticalrole.fandom.com/wiki/Druvenlode" }]
+      "pin": {
+        "x": 77,
+        "y": 31.05
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Druvenlode",
+          "url": "https://criticalrole.fandom.com/wiki/Druvenlode"
+        }
+      ]
     },
     {
       "id": "hupperdook",
@@ -683,8 +1079,16 @@
       "title": "Hupperdook",
       "summary": "เมืองอุตสาหกรรมของโนมที่ผลิตอาวุธสงครามของ Empire",
       "contentPath": "/world-settings/exandria/wildemount/hupperdook.md",
-      "pin": { "x": 80.7, "y": 32.25 },
-      "sources": [{ "label": "Critical Role Wiki: Hupperdook", "url": "https://criticalrole.fandom.com/wiki/Hupperdook" }]
+      "pin": {
+        "x": 80.7,
+        "y": 32.25
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Hupperdook",
+          "url": "https://criticalrole.fandom.com/wiki/Hupperdook"
+        }
+      ]
     },
     {
       "id": "rockguard-garrison",
@@ -692,8 +1096,16 @@
       "title": "Rockguard Garrison",
       "summary": "ด่านทหารของ Empire ป้องกันการบุกจาก Xhorhas",
       "contentPath": "/world-settings/exandria/wildemount/rockguard-garrison.md",
-      "pin": { "x": 83.8, "y": 31.1 },
-      "sources": [{ "label": "Critical Role Wiki: Rockguard Garrison", "url": "https://criticalrole.fandom.com/wiki/Rockguard_Garrison" }]
+      "pin": {
+        "x": 83.8,
+        "y": 31.1
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Rockguard Garrison",
+          "url": "https://criticalrole.fandom.com/wiki/Rockguard_Garrison"
+        }
+      ]
     },
     {
       "id": "ashguard-garrison",
@@ -701,8 +1113,16 @@
       "title": "Ashguard Garrison",
       "summary": "ป้อมคู่แฝดของ Rockguard จุดเริ่มสงคราม Ash and Light",
       "contentPath": "/world-settings/exandria/wildemount/ashguard-garrison.md",
-      "pin": { "x": 84.3, "y": 33.9 },
-      "sources": [{ "label": "Critical Role Wiki: Ashguard Garrison", "url": "https://criticalrole.fandom.com/wiki/Ashguard_Garrison" }]
+      "pin": {
+        "x": 84.3,
+        "y": 33.9
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Ashguard Garrison",
+          "url": "https://criticalrole.fandom.com/wiki/Ashguard_Garrison"
+        }
+      ]
     },
     {
       "id": "urzin",
@@ -710,8 +1130,16 @@
       "title": "Urzin",
       "summary": "เมืองเร่ร่อนบนหลังเต่ายักษ์ในหนอง Brokenveil Marsh",
       "contentPath": "/world-settings/exandria/wildemount/urzin.md",
-      "pin": { "x": 85.2, "y": 32.0 },
-      "sources": [{ "label": "Critical Role Wiki: Urzin", "url": "https://criticalrole.fandom.com/wiki/Urzin" }]
+      "pin": {
+        "x": 85.2,
+        "y": 32
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Urzin",
+          "url": "https://criticalrole.fandom.com/wiki/Urzin"
+        }
+      ]
     },
     {
       "id": "bladegarden",
@@ -719,8 +1147,16 @@
       "title": "Bladegarden",
       "summary": "ฐานทัพหลักของ Righteous Brand ทางตะวันออกของ Empire",
       "contentPath": "/world-settings/exandria/wildemount/bladegarden.md",
-      "pin": { "x": 83.0, "y": 34.35 },
-      "sources": [{ "label": "Critical Role Wiki: Bladegarden", "url": "https://criticalrole.fandom.com/wiki/Bladegarden" }]
+      "pin": {
+        "x": 83,
+        "y": 34.35
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Bladegarden",
+          "url": "https://criticalrole.fandom.com/wiki/Bladegarden"
+        }
+      ]
     },
     {
       "id": "berleben",
@@ -728,8 +1164,16 @@
       "title": "Berleben",
       "summary": "เมืองหนองน้ำที่สร้างบนเสาเข็มใกล้ Labenda Swamps",
       "contentPath": "/world-settings/exandria/wildemount/berleben.md",
-      "pin": { "x": 77.8, "y": 34.65 },
-      "sources": [{ "label": "Critical Role Wiki: Berleben", "url": "https://criticalrole.fandom.com/wiki/Berleben" }]
+      "pin": {
+        "x": 77.8,
+        "y": 34.65
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Berleben",
+          "url": "https://criticalrole.fandom.com/wiki/Berleben"
+        }
+      ]
     },
     {
       "id": "prides-call",
@@ -737,8 +1181,16 @@
       "title": "Pride's Call",
       "summary": "เมืองดวาร์ฟผู้ผลิตผ้าไหม Pride silk",
       "contentPath": "/world-settings/exandria/wildemount/prides-call.md",
-      "pin": { "x": 72.4, "y": 33.6 },
-      "sources": [{ "label": "Critical Role Wiki: Pride's Call", "url": "https://criticalrole.fandom.com/wiki/Pride's_Call" }]
+      "pin": {
+        "x": 72.4,
+        "y": 33.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Pride's Call",
+          "url": "https://criticalrole.fandom.com/wiki/Pride's_Call"
+        }
+      ]
     },
     {
       "id": "volantim",
@@ -746,8 +1198,16 @@
       "title": "Vol'antim",
       "summary": "ชุมชนลับของ aarakocra บนหน้าผา Cyrios Mountains",
       "contentPath": "/world-settings/exandria/wildemount/volantim.md",
-      "pin": { "x": 71.6, "y": 36.75 },
-      "sources": [{ "label": "Critical Role Wiki: Vol'antim", "url": "https://criticalrole.fandom.com/wiki/Vol'antim" }]
+      "pin": {
+        "x": 71.6,
+        "y": 36.75
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Vol'antim",
+          "url": "https://criticalrole.fandom.com/wiki/Vol'antim"
+        }
+      ]
     },
     {
       "id": "kamordah",
@@ -755,8 +1215,16 @@
       "title": "Kamordah",
       "summary": "เมืองไวน์ บ้านเกิดของ Beauregard Lionett",
       "contentPath": "/world-settings/exandria/wildemount/kamordah.md",
-      "pin": { "x": 73.4, "y": 36.75 },
-      "sources": [{ "label": "Critical Role Wiki: Kamordah", "url": "https://criticalrole.fandom.com/wiki/Kamordah" }]
+      "pin": {
+        "x": 73.4,
+        "y": 36.75
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Kamordah",
+          "url": "https://criticalrole.fandom.com/wiki/Kamordah"
+        }
+      ]
     },
     {
       "id": "bromkiln-hills",
@@ -764,8 +1232,16 @@
       "title": "Bromkiln Hills",
       "summary": "เนินเขาความร้อนใต้พิภพ ล้อมรอบ Kamordah",
       "contentPath": "/world-settings/exandria/wildemount/bromkiln-hills.md",
-      "pin": { "x": 73.6, "y": 37.5 },
-      "sources": [{ "label": "Critical Role Wiki: Bromkiln Byway", "url": "https://criticalrole.fandom.com/wiki/Bromkiln_Byway" }]
+      "pin": {
+        "x": 73.6,
+        "y": 37.5
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Bromkiln Byway",
+          "url": "https://criticalrole.fandom.com/wiki/Bromkiln_Byway"
+        }
+      ]
     },
     {
       "id": "felderwin",
@@ -773,10 +1249,19 @@
       "title": "Felderwin",
       "summary": "เมืองเกษตรกรรม บ้านเกิดของ Veth Brenatto",
       "contentPath": "/world-settings/exandria/wildemount/felderwin.md",
-      "pin": { "x": 79.2, "y": 37.05 },
+      "pin": {
+        "x": 79.2,
+        "y": 37.05
+      },
       "sources": [
-        { "label": "Critical Role Wiki: Felderwin", "url": "https://criticalrole.fandom.com/wiki/Felderwin" },
-        { "label": "Critical Role Wiki: Felderwin Tillage", "url": "https://criticalrole.fandom.com/wiki/Felderwin_Tillage" }
+        {
+          "label": "Critical Role Wiki: Felderwin",
+          "url": "https://criticalrole.fandom.com/wiki/Felderwin"
+        },
+        {
+          "label": "Critical Role Wiki: Felderwin Tillage",
+          "url": "https://criticalrole.fandom.com/wiki/Felderwin_Tillage"
+        }
       ]
     },
     {
@@ -785,8 +1270,16 @@
       "title": "Talonstadt",
       "summary": "เมืองเต็นท์ผู้ลี้ภัยจาก Draconia ริมชายแดน Xhorhas",
       "contentPath": "/world-settings/exandria/wildemount/talonstadt.md",
-      "pin": { "x": 81.7, "y": 36.75 },
-      "sources": [{ "label": "Critical Role Wiki: Talonstadt", "url": "https://criticalrole.fandom.com/wiki/Talonstadt" }]
+      "pin": {
+        "x": 81.7,
+        "y": 36.75
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Talonstadt",
+          "url": "https://criticalrole.fandom.com/wiki/Talonstadt"
+        }
+      ]
     },
     {
       "id": "alfield",
@@ -794,8 +1287,16 @@
       "title": "Alfield",
       "summary": "เมืองเกษตรกรรมเล็กๆ บน Amber Road ใน Marrow Valley",
       "contentPath": "/world-settings/exandria/wildemount/alfield.md",
-      "pin": { "x": 77.8, "y": 39.9 },
-      "sources": [{ "label": "Critical Role Wiki: Alfield", "url": "https://criticalrole.fandom.com/wiki/Alfield" }]
+      "pin": {
+        "x": 77.8,
+        "y": 39.9
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Alfield",
+          "url": "https://criticalrole.fandom.com/wiki/Alfield"
+        }
+      ]
     },
     {
       "id": "trostenwald",
@@ -803,8 +1304,16 @@
       "title": "Trostenwald",
       "summary": "เมืองที่ The Mighty Nein พบกันครั้งแรก",
       "contentPath": "/world-settings/exandria/wildemount/trostenwald.md",
-      "pin": { "x": 77.1, "y": 41.7 },
-      "sources": [{ "label": "Critical Role Wiki: Trostenwald", "url": "https://criticalrole.fandom.com/wiki/Trostenwald" }]
+      "pin": {
+        "x": 77.1,
+        "y": 41.7
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Trostenwald",
+          "url": "https://criticalrole.fandom.com/wiki/Trostenwald"
+        }
+      ]
     },
     {
       "id": "deastok",
@@ -812,8 +1321,16 @@
       "title": "Deastok",
       "summary": "เมืองมั่งคั่ง บ้านเกิดของ Taryon Darrington",
       "contentPath": "/world-settings/exandria/wildemount/deastok.md",
-      "pin": { "x": 73.7, "y": 39.45 },
-      "sources": [{ "label": "Critical Role Wiki: Deastok", "url": "https://criticalrole.fandom.com/wiki/Deastok" }]
+      "pin": {
+        "x": 73.7,
+        "y": 39.45
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Deastok",
+          "url": "https://criticalrole.fandom.com/wiki/Deastok"
+        }
+      ]
     },
     {
       "id": "tussoa",
@@ -821,8 +1338,16 @@
       "title": "Tussoa",
       "summary": "เมืองชายแดนริมแม่น้ำ Tyodan สมาชิก Clovis Concord",
       "contentPath": "/world-settings/exandria/wildemount/tussoa.md",
-      "pin": { "x": 73.1, "y": 39.9 },
-      "sources": [{ "label": "Critical Role Wiki: Tussoa", "url": "https://criticalrole.fandom.com/wiki/Tussoa" }]
+      "pin": {
+        "x": 73.1,
+        "y": 39.9
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Tussoa",
+          "url": "https://criticalrole.fandom.com/wiki/Tussoa"
+        }
+      ]
     },
     {
       "id": "bysaes-tyl",
@@ -830,8 +1355,16 @@
       "title": "Bysaes Tyl",
       "summary": "นครเอลฟ์แห่งเดียวใน Empire ก่อตั้งโดยผู้ลี้ภัยจาก Molaesmyr",
       "contentPath": "/world-settings/exandria/wildemount/bysaes-tyl.md",
-      "pin": { "x": 75.1, "y": 22.65 },
-      "sources": [{ "label": "Critical Role Wiki: Bysaes Tyl", "url": "https://criticalrole.fandom.com/wiki/Bysaes_Tyl" }]
+      "pin": {
+        "x": 75.1,
+        "y": 22.65
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Bysaes Tyl",
+          "url": "https://criticalrole.fandom.com/wiki/Bysaes_Tyl"
+        }
+      ]
     },
     {
       "id": "shadycreek-run",
@@ -839,8 +1372,16 @@
       "title": "Shadycreek Run",
       "summary": "เมืองไร้กฎหมายนอกการปกครองของ Empire",
       "contentPath": "/world-settings/exandria/wildemount/shadycreek-run.md",
-      "pin": { "x": 80.7, "y": 26.7 },
-      "sources": [{ "label": "Critical Role Wiki: Shadycreek Run", "url": "https://criticalrole.fandom.com/wiki/Shadycreek_Run" }]
+      "pin": {
+        "x": 80.7,
+        "y": 26.7
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Shadycreek Run",
+          "url": "https://criticalrole.fandom.com/wiki/Shadycreek_Run"
+        }
+      ]
     },
     {
       "id": "yardel",
@@ -848,8 +1389,16 @@
       "title": "Yardel",
       "summary": "หมู่บ้านช่างหินเหนือ Grimgolir ปรากฏในแคมเปญ 3",
       "contentPath": "/world-settings/exandria/wildemount/yardel.md",
-      "pin": { "x": 80.6, "y": 27.75 },
-      "sources": [{ "label": "Critical Role Wiki: Yardel", "url": "https://criticalrole.fandom.com/wiki/Yardel" }]
+      "pin": {
+        "x": 80.6,
+        "y": 27.75
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Yardel",
+          "url": "https://criticalrole.fandom.com/wiki/Yardel"
+        }
+      ]
     }
   ],
   "partyPins": [
