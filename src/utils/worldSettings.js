@@ -14,13 +14,24 @@ const mdFiles = import.meta.glob('/world-settings/**/*.md', {
   eager: true,
 })
 
-// World map images live alongside adventure content (they're reused from
-// campaign map assets, e.g. adventures/aeorian-cataclysm/Exandria.jpeg)
-// rather than duplicated under world-settings/.
-const mapImageFiles = import.meta.glob('/adventures/**/*.{jpg,jpeg,png}', {
-  import: 'default',
-  eager: true,
-})
+// World map images mostly live under world-settings/ next to their manifest,
+// but a few older worlds still point at campaign map assets under
+// adventures/ (e.g. adventures/aeorian-cataclysm/Exandria.jpeg) — both glob
+// patterns feed the same lookup table so either mapImage path resolves.
+const mapImageFiles = {
+  ...import.meta.glob('/adventures/**/*.{jpg,jpeg,png,webp}', { import: 'default', eager: true }),
+  ...import.meta.glob('/world-settings/**/*.{jpg,jpeg,png,webp}', { import: 'default', eager: true }),
+}
+
+// A continent/region category can declare its own detail map (e.g.
+// Wildemount's own hi-res image) instead of only appearing as a pin on the
+// world's overview map — resolved through the same lookup table as mapImage.
+function resolveCategories(categories) {
+  return (categories ?? []).map((category) => ({
+    ...category,
+    map: category.map?.image ? { ...category.map, image: mapImageFiles[category.map.image] ?? null } : null,
+  }))
+}
 
 function buildWorlds() {
   const worlds = []
@@ -34,7 +45,7 @@ function buildWorlds() {
       name: manifest.name,
       source: manifest.source,
       mapImage: manifest.mapImage ? mapImageFiles[manifest.mapImage] ?? null : null,
-      categories: manifest.categories ?? [],
+      categories: resolveCategories(manifest.categories),
       cards,
       partyPins: manifest.partyPins ?? [],
     })

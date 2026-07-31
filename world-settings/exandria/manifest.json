@@ -2,7 +2,7 @@
   "id": "exandria",
   "name": "Exandria",
   "source": "Critical Role",
-  "mapImage": "/adventures/aeorian-cataclysm/Exandria.jpeg",
+  "mapImage": "/world-settings/exandria/Exandria.jpeg",
   "categories": [
     {
       "id": "contents",
@@ -12,6 +12,9 @@
       "id": "wildemount",
       "title": "Wildemount",
       "overviewPath": "/world-settings/exandria/wildemount/_overview.md",
+      "map": {
+        "image": "/world-settings/exandria/Wildemount.jpg"
+      },
       "pin": {
         "x": 64.82363584113607,
         "y": 20.260872991580968
@@ -27,6 +30,9 @@
       "id": "tal-dorei",
       "title": "Tal'Dorei",
       "overviewPath": "/world-settings/exandria/tal-dorei/_overview.md",
+      "map": {
+        "image": "/world-settings/exandria/Tal'Dorei.jpg"
+      },
       "pin": {
         "x": 40.11556276559401,
         "y": 24.726673552745677
@@ -46,6 +52,9 @@
       "id": "issylra",
       "title": "Issylra",
       "overviewPath": "/world-settings/exandria/issylra/_overview.md",
+      "map": {
+        "image": "/world-settings/exandria/Issylra.webp"
+      },
       "pin": {
         "x": 11.192218617202995,
         "y": 24.057107682313802
@@ -61,6 +70,9 @@
       "id": "marquet",
       "title": "Marquet",
       "overviewPath": "/world-settings/exandria/marquet/_overview.md",
+      "map": {
+        "image": "/world-settings/exandria/Marquet.webp"
+      },
       "pin": {
         "x": 35.73973969997252,
         "y": 77.39245284142739
@@ -156,7 +168,11 @@
           "label": "Critical Role Wiki: Rexxentrum",
           "url": "https://criticalrole.fandom.com/wiki/Rexxentrum"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 49.51884856965232,
+        "y": 43.729091974165996
+      }
     },
     {
       "id": "zadash",
@@ -173,7 +189,11 @@
           "label": "Critical Role Wiki: Zadash",
           "url": "https://criticalrole.fandom.com/wiki/Zadash"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 50.15426105235939,
+        "y": 57.53721654657046
+      }
     },
     {
       "id": "whitestone",
@@ -1153,7 +1173,11 @@
           "label": "Critical Role Wiki: Palebank Village",
           "url": "https://criticalrole.fandom.com/wiki/Palebank_Village"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 59.63027776158509,
+        "y": 21.115865269232124
+      }
     },
     {
       "id": "aeor-crash-site",
@@ -1170,7 +1194,11 @@
           "label": "Critical Role Wiki: Aeor",
           "url": "https://criticalrole.fandom.com/wiki/Aeor"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.24437890524761,
+        "y": 12.147146412268128
+      }
     },
     {
       "id": "salsavault",
@@ -1187,7 +1215,11 @@
           "label": "Critical Role Wiki: Salsvault",
           "url": "https://criticalrole.fandom.com/wiki/Salsvault"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 44.87981795183442,
+        "y": 12.463338684575097
+      }
     },
     {
       "id": "mythburrow",
@@ -1204,7 +1236,11 @@
           "label": "Critical Role Wiki: Mythburrow",
           "url": "https://criticalrole.fandom.com/wiki/Mythburrow"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 70.81445055038701,
+        "y": 22.901277378654576
+      }
     },
     {
       "id": "nicodranas",
@@ -1221,7 +1257,11 @@
           "label": "Critical Role Wiki: Nicodranas",
           "url": "https://criticalrole.fandom.com/wiki/Nicodranas"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 46.748148451693154,
+        "y": 79.67202455803665
+      }
     },
     {
       "id": "port-damali",
@@ -1238,7 +1278,11 @@
           "label": "Critical Role Wiki: Port Damali",
           "url": "https://criticalrole.fandom.com/wiki/Port_Damali"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 35.0559056685453,
+        "y": 68.58454541419768
+      }
     },
     {
       "id": "bisaft-port",
@@ -1259,7 +1303,11 @@
           "label": "Critical Role Wiki (Miraheze): Bisaft Port",
           "url": "https://criticalrole.miraheze.org/wiki/Bisaft_Port"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 27.434434458080776,
+        "y": 74.79208333115668
+      }
     },
     {
       "id": "feolinn",
@@ -1276,7 +1324,11 @@
           "label": "Critical Role Wiki: Feolinn",
           "url": "https://criticalrole.fandom.com/wiki/Feolinn"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 42.209670076059304,
+        "y": 72.67234670216136
+      }
     },
     {
       "id": "palma-flora",
@@ -1293,7 +1345,11 @@
           "label": "Critical Role Wiki: Palma Flora",
           "url": "https://criticalrole.fandom.com/wiki/Palma_Flora"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 34.15697771032778,
+        "y": 73.50439931811198
+      }
     },
     {
       "id": "wuyun-gates",
@@ -1310,7 +1366,11 @@
           "label": "Critical Role Wiki: Wuyun Gates",
           "url": "https://criticalrole.fandom.com/wiki/Wuyun_Gates"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 49.37121917184038,
+        "y": 72.16134930416412
+      }
     },
     {
       "id": "port-zoon",
@@ -1327,7 +1387,11 @@
           "label": "Critical Role Wiki: Port Zoon",
           "url": "https://criticalrole.fandom.com/wiki/Port_Zoon"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 42.73710912288888,
+        "y": 77.26365515432323
+      }
     },
     {
       "id": "gwardan",
@@ -1344,7 +1408,11 @@
           "label": "Critical Role Wiki: Gwardan",
           "url": "https://criticalrole.fandom.com/wiki/Gwardan"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 30.455782149716544,
+        "y": 56.72897232666222
+      }
     },
     {
       "id": "othe",
@@ -1365,7 +1433,11 @@
           "label": "Critical Role Wiki: Othemoor",
           "url": "https://criticalrole.fandom.com/wiki/Othemoor"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 41.184376847905554,
+        "y": 65.16578799208916
+      }
     },
     {
       "id": "rosohna",
@@ -1386,7 +1458,11 @@
           "label": "Critical Role Wiki: Lucid Bastion",
           "url": "https://criticalrole.fandom.com/wiki/Lucid_Bastion"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 72.77598087678344,
+        "y": 60.513566707344985
+      }
     },
     {
       "id": "bazzoxan",
@@ -1407,7 +1483,11 @@
           "label": "Critical Role Wiki: Beneath Bazzoxan",
           "url": "https://criticalrole.fandom.com/wiki/Beneath_Bazzoxan"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 71.24013094205728,
+        "y": 54.556533264866545
+      }
     },
     {
       "id": "asarius",
@@ -1424,7 +1504,11 @@
           "label": "Critical Role Wiki: Asarius",
           "url": "https://criticalrole.fandom.com/wiki/Asarius"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 63.971911855796634,
+        "y": 58.539998328641204
+      }
     },
     {
       "id": "dumaran",
@@ -1441,7 +1525,11 @@
           "label": "Critical Role Wiki: Dumaran",
           "url": "https://criticalrole.fandom.com/wiki/Dumaran"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 70.20837298734916,
+        "y": 65.28443822699276
+      }
     },
     {
       "id": "new-haxon",
@@ -1458,7 +1546,11 @@
           "label": "Critical Role Wiki: New Haxon",
           "url": "https://criticalrole.fandom.com/wiki/New_Haxon"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 76.00901067104994,
+        "y": 70.08949540063963
+      }
     },
     {
       "id": "rotthold",
@@ -1475,7 +1567,11 @@
           "label": "Critical Role Wiki: Rotthold",
           "url": "https://criticalrole.fandom.com/wiki/Rotthold"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 73.71793984145468,
+        "y": 74.70062773837803
+      }
     },
     {
       "id": "mordant-isle",
@@ -1492,7 +1588,11 @@
           "label": "Critical Role Wiki: Tooth of Zehir",
           "url": "https://criticalrole.fandom.com/wiki/Tooth_of_Zehir"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 80.94540396718637,
+        "y": 60.29095994756835
+      }
     },
     {
       "id": "tooth-of-zehir",
@@ -1509,7 +1609,11 @@
           "label": "Critical Role Wiki: Tooth of Zehir",
           "url": "https://criticalrole.fandom.com/wiki/Tooth_of_Zehir"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 82.67716609203677,
+        "y": 57.15360591813036
+      }
     },
     {
       "id": "ebonglass-massif",
@@ -1526,7 +1630,11 @@
           "label": "Critical Role Wiki: Ebonglass Massif",
           "url": "https://criticalrole.fandom.com/wiki/Ebonglass_Massif"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 78.89417955011393,
+        "y": 48.974033796999514
+      }
     },
     {
       "id": "far-hharom",
@@ -1543,7 +1651,11 @@
           "label": "Critical Role Wiki: Far Hharom",
           "url": "https://criticalrole.fandom.com/wiki/Far_Hharom"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 78.49364427297812,
+        "y": 42.91095632260466
+      }
     },
     {
       "id": "barbed-fields",
@@ -1560,24 +1672,11 @@
           "label": "Critical Role Wiki: Barbed Fields",
           "url": "https://criticalrole.fandom.com/wiki/Barbed_Fields"
         }
-      ]
-    },
-    {
-      "id": "ghostwall",
-      "category": "wildemount",
-      "title": "Ghostwall",
-      "summary": "พื้นที่ใน Ghostlands รู้จักผ่าน nether gnome ชื่อ Dryca",
-      "contentPath": "/world-settings/exandria/wildemount/ghostwall.md",
-      "pin": {
-        "x": 91.30120939439342,
-        "y": 38.2354841893719
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Dryca",
-          "url": "https://criticalrole.fandom.com/wiki/Dryca"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 71.8640466045326,
+        "y": 56.34884404337821
+      }
     },
     {
       "id": "galgarad",
@@ -1605,7 +1704,11 @@
           "label": "Critical Role Wiki: Many Hosts of Igrathad",
           "url": "https://criticalrole.fandom.com/wiki/Many_Hosts_of_Igrathad"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 62.18757895023285,
+        "y": 66.5380445182293
+      }
     },
     {
       "id": "iothia-moorland",
@@ -1622,7 +1725,11 @@
           "label": "Critical Role Wiki: Iothia Moorland",
           "url": "https://criticalrole.fandom.com/wiki/Iothia_Moorland"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 67.55965390692242,
+        "y": 66.69695074838565
+      }
     },
     {
       "id": "charis",
@@ -1639,7 +1746,11 @@
           "label": "Critical Role Wiki: Charis",
           "url": "https://criticalrole.fandom.com/wiki/Charis"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 64.04803081230054,
+        "y": 73.53704689821315
+      }
     },
     {
       "id": "vurmas",
@@ -1656,7 +1767,11 @@
           "label": "Critical Role Wiki: Vurmas",
           "url": "https://criticalrole.fandom.com/wiki/Vurmas"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 33.865937137074106,
+        "y": 12.389523441819414
+      }
     },
     {
       "id": "tomb-of-the-worm",
@@ -1673,7 +1788,11 @@
           "label": "Critical Role Wiki: Tomb of the Worm",
           "url": "https://criticalrole.fandom.com/wiki/Tomb_of_the_Worm"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 37.36898138623041,
+        "y": 13.898967108605298
+      }
     },
     {
       "id": "gelier",
@@ -1690,7 +1809,11 @@
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 34.13432019298125,
+        "y": 14.742936976907068
+      }
     },
     {
       "id": "schneescel",
@@ -1707,7 +1830,11 @@
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 38.56203703811601,
+        "y": 16.681568673573704
+      }
     },
     {
       "id": "frostbogen",
@@ -1724,7 +1851,11 @@
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 40.85376717253089,
+        "y": 19.542165876860533
+      }
     },
     {
       "id": "taergoss",
@@ -1741,7 +1872,11 @@
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 46.800805044135906,
+        "y": 22.44422886674146
+      }
     },
     {
       "id": "biessel",
@@ -1758,24 +1893,11 @@
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
         }
-      ]
-    },
-    {
-      "id": "dampflan",
-      "category": "wildemount",
-      "title": "Dampflan",
-      "summary": "เกาะภูเขาไฟที่ยังคุกรุ่นอยู่ตลอดเวลา",
-      "contentPath": "/world-settings/exandria/wildemount/dampflan.md",
-      "pin": {
-        "x": 75.25645161290322,
-        "y": 5.721773916675199
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Eiselcross",
-          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 34.01676626890147,
+        "y": 7.056818702004174
+      }
     },
     {
       "id": "foren",
@@ -1792,7 +1914,11 @@
           "label": "Critical Role Wiki: Foren",
           "url": "https://criticalrole.fandom.com/wiki/Foren"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 45.31443483947953,
+        "y": 14.654696004094154
+      }
     },
     {
       "id": "syrinlya",
@@ -1809,7 +1935,11 @@
           "label": "Critical Role Wiki: Syrinlya",
           "url": "https://criticalrole.fandom.com/wiki/Syrinlya"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 49.93799201434888,
+        "y": 16.53721744844165
+      }
     },
     {
       "id": "kaltsel",
@@ -1826,7 +1956,11 @@
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51.62989592557881,
+        "y": 17.3044577847546
+      }
     },
     {
       "id": "allowaks-sanctuary",
@@ -1843,7 +1977,11 @@
           "label": "Critical Role Wiki: Allowak's Sanctuary",
           "url": "https://criticalrole.fandom.com/wiki/Allowak's_Sanctuary"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 42.684298879158916,
+        "y": 15.856723802705009
+      }
     },
     {
       "id": "balenpost",
@@ -1860,7 +1998,11 @@
           "label": "Critical Role Wiki: Balenpost",
           "url": "https://criticalrole.fandom.com/wiki/Balenpost"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 45.0878386640652,
+        "y": 20.175158512474564
+      }
     },
     {
       "id": "fortress-of-the-dead-jarl",
@@ -1877,7 +2019,11 @@
           "label": "Critical Role Wiki: Fortress of the Dead Jarl",
           "url": "https://criticalrole.fandom.com/wiki/Fortress_of_the_Dead_Jarl"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.74911842085032,
+        "y": 9.856754105778723
+      }
     },
     {
       "id": "uthodurn",
@@ -1898,7 +2044,11 @@
           "label": "Critical Role Wiki: Diarchy of Uthodurn",
           "url": "https://criticalrole.fandom.com/wiki/Diarchy_of_Uthodurn"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 61.50657074423038,
+        "y": 26.97730906129566
+      }
     },
     {
       "id": "icehaven",
@@ -1915,7 +2065,11 @@
           "label": "Critical Role Wiki: Icehaven",
           "url": "https://criticalrole.fandom.com/wiki/Icehaven"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 40.16202331268552,
+        "y": 40.454688154701685
+      }
     },
     {
       "id": "odessloe",
@@ -1932,7 +2086,11 @@
           "label": "Critical Role Wiki: Odessloe",
           "url": "https://criticalrole.fandom.com/wiki/Odessloe"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 48.406897073874376,
+        "y": 42.67441076904922
+      }
     },
     {
       "id": "yrrosa",
@@ -1949,7 +2107,11 @@
           "label": "Critical Role Wiki: Yrrosa",
           "url": "https://criticalrole.fandom.com/wiki/Yrrosa"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 44.216921704763216,
+        "y": 45.58786993255653
+      }
     },
     {
       "id": "nogvurot",
@@ -1966,7 +2128,11 @@
           "label": "Critical Role Wiki: Nogvurot",
           "url": "https://criticalrole.fandom.com/wiki/Nogvurot"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 53.806238531760684,
+        "y": 42.929349500047465
+      }
     },
     {
       "id": "blumenthal",
@@ -1983,7 +2149,11 @@
           "label": "Critical Role Wiki: Blumenthal",
           "url": "https://criticalrole.fandom.com/wiki/Blumenthal"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 50.35943446352023,
+        "y": 45.19048147600773
+      }
     },
     {
       "id": "grimgolir",
@@ -2000,7 +2170,11 @@
           "label": "Critical Role Wiki: Grimgolir",
           "url": "https://criticalrole.fandom.com/wiki/Grimgolir"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 60.50814220966961,
+        "y": 45.5080203356906
+      }
     },
     {
       "id": "druvenlode",
@@ -2017,7 +2191,11 @@
           "label": "Critical Role Wiki: Druvenlode",
           "url": "https://criticalrole.fandom.com/wiki/Druvenlode"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 49.19046176226597,
+        "y": 46.38840135796047
+      }
     },
     {
       "id": "hupperdook",
@@ -2034,7 +2212,11 @@
           "label": "Critical Role Wiki: Hupperdook",
           "url": "https://criticalrole.fandom.com/wiki/Hupperdook"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 54.81772686199669,
+        "y": 48.39620763835623
+      }
     },
     {
       "id": "rockguard-garrison",
@@ -2051,7 +2233,11 @@
           "label": "Critical Role Wiki: Rockguard Garrison",
           "url": "https://criticalrole.fandom.com/wiki/Rockguard_Garrison"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 61.777167572253504,
+        "y": 48.399801417491084
+      }
     },
     {
       "id": "ashguard-garrison",
@@ -2068,7 +2254,11 @@
           "label": "Critical Role Wiki: Ashguard Garrison",
           "url": "https://criticalrole.fandom.com/wiki/Ashguard_Garrison"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 60.94103824580754,
+        "y": 53.69131339345882
+      }
     },
     {
       "id": "urzin",
@@ -2085,7 +2275,11 @@
           "label": "Critical Role Wiki: Urzin",
           "url": "https://criticalrole.fandom.com/wiki/Urzin"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 63.95792277235018,
+        "y": 49.9897566769395
+      }
     },
     {
       "id": "bladegarden",
@@ -2102,7 +2296,11 @@
           "label": "Critical Role Wiki: Bladegarden",
           "url": "https://criticalrole.fandom.com/wiki/Bladegarden"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 59.48601837351307,
+        "y": 51.757187620555925
+      }
     },
     {
       "id": "berleben",
@@ -2119,7 +2317,11 @@
           "label": "Critical Role Wiki: Berleben",
           "url": "https://criticalrole.fandom.com/wiki/Berleben"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51.35882108118739,
+        "y": 52.206616253527
+      }
     },
     {
       "id": "prides-call",
@@ -2136,7 +2338,11 @@
           "label": "Critical Role Wiki: Pride's Call",
           "url": "https://criticalrole.fandom.com/wiki/Pride's_Call"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 40.666978911028195,
+        "y": 51.54875030728001
+      }
     },
     {
       "id": "volantim",
@@ -2153,7 +2359,11 @@
           "label": "Critical Role Wiki: Vol'antim",
           "url": "https://criticalrole.fandom.com/wiki/Vol'antim"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 39.425814439681616,
+        "y": 56.2422349409911
+      }
     },
     {
       "id": "kamordah",
@@ -2170,7 +2380,11 @@
           "label": "Critical Role Wiki: Kamordah",
           "url": "https://criticalrole.fandom.com/wiki/Kamordah"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.77205243557494,
+        "y": 55.64394529689284
+      }
     },
     {
       "id": "bromkiln-hills",
@@ -2187,7 +2401,11 @@
           "label": "Critical Role Wiki: Bromkiln Byway",
           "url": "https://criticalrole.fandom.com/wiki/Bromkiln_Byway"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.97173436353094,
+        "y": 57.26865401521726
+      }
     },
     {
       "id": "felderwin",
@@ -2208,7 +2426,11 @@
           "label": "Critical Role Wiki: Felderwin Tillage",
           "url": "https://criticalrole.fandom.com/wiki/Felderwin_Tillage"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 55.81483388797889,
+        "y": 58.68255663544708
+      }
     },
     {
       "id": "talonstadt",
@@ -2225,7 +2447,11 @@
           "label": "Critical Role Wiki: Talonstadt",
           "url": "https://criticalrole.fandom.com/wiki/Talonstadt"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 58.60048424503445,
+        "y": 57.51137029252504
+      }
     },
     {
       "id": "alfield",
@@ -2242,7 +2468,11 @@
           "label": "Critical Role Wiki: Alfield",
           "url": "https://criticalrole.fandom.com/wiki/Alfield"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51.335828398267566,
+        "y": 62.764654302238476
+      }
     },
     {
       "id": "trostenwald",
@@ -2259,7 +2489,11 @@
           "label": "Critical Role Wiki: Trostenwald",
           "url": "https://criticalrole.fandom.com/wiki/Trostenwald"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 50.832491099782615,
+        "y": 65.65045923315147
+      }
     },
     {
       "id": "deastok",
@@ -2276,7 +2510,11 @@
           "label": "Critical Role Wiki: Deastok",
           "url": "https://criticalrole.fandom.com/wiki/Deastok"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.648018327173865,
+        "y": 60.50862639023443
+      }
     },
     {
       "id": "tussoa",
@@ -2293,7 +2531,11 @@
           "label": "Critical Role Wiki: Tussoa",
           "url": "https://criticalrole.fandom.com/wiki/Tussoa"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 35.59629259866632,
+        "y": 62.020778823945825
+      }
     },
     {
       "id": "bysaes-tyl",
@@ -2310,7 +2552,11 @@
           "label": "Critical Role Wiki: Bysaes Tyl",
           "url": "https://criticalrole.fandom.com/wiki/Bysaes_Tyl"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 46.34066792159141,
+        "y": 33.695984322504515
+      }
     },
     {
       "id": "shadycreek-run",
@@ -2327,7 +2573,11 @@
           "label": "Critical Role Wiki: Shadycreek Run",
           "url": "https://criticalrole.fandom.com/wiki/Shadycreek_Run"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 54.91676857635848,
+        "y": 40.46052457779603
+      }
     },
     {
       "id": "yardel",
@@ -2344,7 +2594,11 @@
           "label": "Critical Role Wiki: Yardel",
           "url": "https://criticalrole.fandom.com/wiki/Yardel"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 57.33510844842408,
+        "y": 43.24545056841481
+      }
     },
     {
       "id": "mutalos",
@@ -2372,6 +2626,10 @@
       "pin": {
         "x": 77.2,
         "y": 7
+      },
+      "detailPin": {
+        "x": 45.77370830372578,
+        "y": 6.326389609447257
       }
     },
     {
@@ -2389,13 +2647,17 @@
           "label": "Critical Role Wiki: Kravaraad",
           "url": "https://criticalrole.fandom.com/wiki/Kravaraad"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 60.88028173544052,
+        "y": 23.65271785224074
+      }
     },
     {
       "id": "cinderrest-sanctum",
       "category": "wildemount",
       "title": "Cinderrest Sanctum",
-      "summary": "ศาลเจ้าบนภูเขาไฟ Kravaraad อุทิศแด่ Melora และ Moradin ดูแลโดยตระกูล Dust",
+      "summary": "ศาลเจ้าบนภ��เขาไฟ Kravaraad อุทิศแด่ Melora และ Moradin ดูแลโดยตระกูล Dust",
       "contentPath": "/world-settings/exandria/wildemount/cinderrest-sanctum.md",
       "pin": {
         "x": 84.30466175125183,
@@ -2406,7 +2668,11 @@
           "label": "Critical Role Wiki: Cinderrest Sanctum",
           "url": "https://criticalrole.fandom.com/wiki/Cinderrest_Sanctum"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 62.300451192313105,
+        "y": 24.702664059687706
+      }
     },
     {
       "id": "uraliss",
@@ -2423,7 +2689,11 @@
           "label": "Critical Role Wiki: Uraliss",
           "url": "https://criticalrole.fandom.com/wiki/Uraliss"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 63.87517503105173,
+        "y": 28.855249071700264
+      }
     },
     {
       "id": "ruins-of-molaesmyr",
@@ -2440,7 +2710,11 @@
           "label": "Critical Role Wiki: Molaesmyr",
           "url": "https://criticalrole.fandom.com/wiki/Molaesmyr"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 56.23526437061374,
+        "y": 33.63703404315866
+      }
     },
     {
       "id": "boroftkrah",
@@ -2457,7 +2731,11 @@
           "label": "Critical Role Wiki: Boroftkrah",
           "url": "https://criticalrole.fandom.com/wiki/Boroftkrah"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 62.3520567028374,
+        "y": 37.01612013543243
+      }
     },
     {
       "id": "ruins-of-sepesca",
@@ -2474,7 +2752,11 @@
           "label": "Critical Role Wiki: Sepesca",
           "url": "https://criticalrole.fandom.com/wiki/Sepesca"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 24.640860936327837,
+        "y": 54.225431499859866
+      }
     },
     {
       "id": "everplume",
@@ -2491,7 +2773,11 @@
           "label": "Critical Role Wiki: Everplume",
           "url": "https://criticalrole.fandom.com/wiki/Everplume"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 21.462443573955763,
+        "y": 65.17427661575923
+      }
     },
     {
       "id": "amber-crossroads",
@@ -2508,7 +2794,11 @@
           "label": "Critical Role Wiki: Amber Road",
           "url": "https://criticalrole.fandom.com/wiki/Amber_Road"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 48.41815082495072,
+        "y": 44.95954227269774
+      }
     },
     {
       "id": "rastum-den",
@@ -2525,7 +2815,11 @@
           "label": "Critical Role Wiki: Rastum Den",
           "url": "https://criticalrole.fandom.com/wiki/Rastum_Den"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 48.41598667497599,
+        "y": 39.473094646141654
+      }
     },
     {
       "id": "vergesson-sanatorium",
@@ -2542,7 +2836,11 @@
           "label": "Critical Role Wiki: Vergesson Sanatorium",
           "url": "https://criticalrole.fandom.com/wiki/Vergesson_Sanatorium"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51.61169370581743,
+        "y": 37.83275212031817
+      }
     },
     {
       "id": "ruins-of-shattengrod",
@@ -2559,7 +2857,11 @@
           "label": "Critical Role Wiki: Shattengrod",
           "url": "https://criticalrole.fandom.com/wiki/Shattengrod"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.91235705949046,
+        "y": 49.476849164691075
+      }
     },
     {
       "id": "herathis-mines",
@@ -2570,6 +2872,10 @@
       "pin": {
         "x": 75.35596709097584,
         "y": 38.944132698351346
+      },
+      "detailPin": {
+        "x": 45.76407878636342,
+        "y": 60.50499120686051
       }
     },
     {
@@ -2587,7 +2893,11 @@
           "label": "Critical Role Wiki: Dolithil Mine",
           "url": "https://criticalrole.fandom.com/wiki/Dolithil_Mine"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 31.958628843441815,
+        "y": 55.14685994687238
+      }
     },
     {
       "id": "blooming-grove",
@@ -2604,7 +2914,11 @@
           "label": "Critical Role Wiki: Blooming Grove",
           "url": "https://criticalrole.fandom.com/wiki/Blooming_Grove"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 55.797766187178404,
+        "y": 38.49629223131998
+      }
     },
     {
       "id": "quannah-breach",
@@ -2621,7 +2935,11 @@
           "label": "Critical Role Wiki: Quannah Breach",
           "url": "https://criticalrole.fandom.com/wiki/Quannah_Breach"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 56.42325636920948,
+        "y": 41.058197220400835
+      }
     },
     {
       "id": "jigow",
@@ -2638,7 +2956,11 @@
           "label": "Critical Role Wiki: Jigow",
           "url": "https://criticalrole.fandom.com/wiki/Jigow"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 68.31493613469677,
+        "y": 48.70761108196604
+      }
     },
     {
       "id": "deepriver-mining-camp",
@@ -2655,7 +2977,11 @@
           "label": "Critical Role Wiki: Deepriver Mining Camp",
           "url": "https://criticalrole.fandom.com/wiki/Deepriver_Mining_Camp"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 70.89090633393944,
+        "y": 59.23666825944182
+      }
     },
     {
       "id": "incanters-rest",
@@ -2672,7 +2998,11 @@
           "label": "Critical Role Wiki: Incanter's Rest",
           "url": "https://criticalrole.fandom.com/wiki/Incanter's_Rest"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 74.99554187358012,
+        "y": 66.04747623870021
+      }
     },
     {
       "id": "olc-skerry",
@@ -2689,7 +3019,11 @@
           "label": "Critical Role Wiki: Olc Skerry",
           "url": "https://criticalrole.fandom.com/wiki/Olc_Skerry"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 76.19648581569047,
+        "y": 45.18001938067254
+      }
     },
     {
       "id": "strathfell",
@@ -2706,7 +3040,11 @@
           "label": "Critical Role Wiki: Ebonglass Massif",
           "url": "https://criticalrole.fandom.com/wiki/Ebonglass_Massif"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 82.7988709370404,
+        "y": 51.36177669875157
+      }
     },
     {
       "id": "ghor-veles",
@@ -2723,7 +3061,11 @@
           "label": "Critical Role Wiki: Ghor Veles",
           "url": "https://criticalrole.fandom.com/wiki/Ghor_Veles"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 76.8788145763005,
+        "y": 55.0361935240899
+      }
     },
     {
       "id": "ruins-of-draconia",
@@ -2740,7 +3082,11 @@
           "label": "Critical Role Wiki: Draconia",
           "url": "https://criticalrole.fandom.com/wiki/Draconia"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 60.877208311152394,
+        "y": 75.7260419633399
+      }
     },
     {
       "id": "xarzith-kitril",
@@ -2757,7 +3103,11 @@
           "label": "Critical Role Wiki: Xarzith Kitril",
           "url": "https://criticalrole.fandom.com/wiki/Xarzith_Kitril"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 60.58650680260944,
+        "y": 78.41382789830705
+      }
     },
     {
       "id": "verstglade",
@@ -2791,7 +3141,11 @@
           "label": "Critical Role Wiki: Miskath Pit",
           "url": "https://criticalrole.fandom.com/wiki/Miskath_Pit"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 74.48705172106676,
+        "y": 72.2095977997579
+      }
     },
     {
       "id": "divers-grave",
@@ -2808,7 +3162,11 @@
           "label": "Critical Role Wiki: Diver's Grave",
           "url": "https://criticalrole.fandom.com/wiki/Diver's_Grave"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 21.862320230331335,
+        "y": 77.50611002855064
+      }
     },
     {
       "id": "darktow",
@@ -2825,7 +3183,11 @@
           "label": "Critical Role Wiki: Darktow Isle",
           "url": "https://criticalrole.fandom.com/wiki/Darktow_Isle"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 19.357925531405243,
+        "y": 88.87789284035458
+      }
     },
     {
       "id": "brokenbank",
@@ -2842,7 +3204,11 @@
           "label": "Critical Role Wiki: Brokenbank",
           "url": "https://criticalrole.fandom.com/wiki/Brokenbank"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 31.922582208196005,
+        "y": 80.65373472877721
+      }
     },
     {
       "id": "vide-cay",
@@ -2859,7 +3225,11 @@
           "label": "Critical Role Wiki: Vide Cay",
           "url": "https://criticalrole.fandom.com/wiki/Vide_Cay"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 33.881985123355854,
+        "y": 82.84095621187082
+      }
     },
     {
       "id": "rumblecusp",
@@ -2876,7 +3246,11 @@
           "label": "Critical Role Wiki: Rumblecusp",
           "url": "https://criticalrole.fandom.com/wiki/Rumblecusp"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 41.67845188563857,
+        "y": 87.96560142860965
+      }
     },
     {
       "id": "urukayxl",
@@ -2893,7 +3267,11 @@
           "label": "Critical Role Wiki: Urukayxl",
           "url": "https://criticalrole.fandom.com/wiki/Urukayxl"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 47.032672345532085,
+        "y": 91.66749797617642
+      }
     },
     {
       "id": "vasselheim",

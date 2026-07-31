@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getWorldSetting, getRawManifest, getCategoryCards, getCategoryOverview } from '../utils/worldSettings'
+import { getPinBounds, projectPoint, isWithinBounds } from '../utils/mapProjection'
 import { saveWorldManifest } from '../utils/exportImport'
 import { isLocalHost } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import WorldMapPin from '../components/world/WorldMapPin'
 import WorldMapView from '../components/world/WorldMapView'
+import WorldMapLayerTabs from '../components/world/WorldMapLayerTabs'
 import WorldEntryModal from '../components/world/WorldEntryModal'
 import WorldCategoryModal from '../components/world/WorldCategoryModal'
 import WorldPinFormModal from '../components/world/WorldPinFormModal'
@@ -38,6 +40,7 @@ export default function WorldSettingPage() {
   const [activeCard, setActiveCard] = useState(null)
   const [activeCategoryId, setActiveCategoryId] = useState(null)
   const [contentsOpen, setContentsOpen] = useState(false)
+  const [activeMapId, setActiveMapId] = useState('overview')
 
   const [editMode, setEditMode] = useState(false)
   const [draftCategories, setDraftCategories] = useState(null)
@@ -67,10 +70,44 @@ export default function WorldSettingPage() {
   const categories = editMode ? draftCategories : world.categories
   const cards = editMode ? draftCards : world.cards
   const continentCategories = categories.filter((category) => category.pin)
-  const cityCards = cards.filter((card) => card.pin)
   const partyPins = editMode ? draftPartyPins : world.partyPins
   const showMapPins = pinFilter === 'all' || pinFilter === 'map'
   const showPartyPins = pinFilter === 'all' || pinFilter === 'party'
+
+  // A continent with its own dedicated hi-res image (category.map, resolved
+  // from the stable world.categories — this assignment isn't editable
+  // through this page, so it's never read from the edit-mode draft) gets its
+  // own map "layer": a tab that swaps WorldMapView's image + pin set instead
+  // of cramming every city onto the single world overview map.
+  const worldCategoriesWithMap = world.categories.filter((category) => category.map?.image)
+  const mapLayers = [
+    { id: 'overview', title: world.name, image: world.mapImage },
+    ...worldCategoriesWithMap.map((category) => ({ id: category.id, title: category.title, image: category.map.image })),
+  ]
+  const activeLayer = mapLayers.find((layer) => layer.id === activeMapId) ?? mapLayers[0]
+  const isOverviewLayer = activeLayer.id === 'overview'
+
+  // Overview layer: every city pin, same as before there were per-continent
+  // detail maps — a continent having its own map is an extra way to reach a
+  // city, not a replacement for finding it on the world map.
+  const overviewCityCards = cards.filter((card) => card.pin)
+
+  // Detail layer: every city pin belonging to this continent, positioned by
+  // its own card.detailPin once someone's dragged it into place, or a
+  // best-effort projection from its overview pin in the meantime (see
+  // utils/mapProjection.js). Party pins do the same, matched to this
+  // continent by whether their overview position falls inside its bounds.
+  const detailLayerCards = isOverviewLayer ? [] : cards.filter((card) => card.category === activeMapId && card.pin)
+  const detailLayerBounds = getPinBounds(detailLayerCards.map((card) => card.pin))
+  const detailLayerPins = detailLayerCards.map((card) => ({
+    card,
+    pos: card.detailPin ?? projectPoint(card.pin, detailLayerBounds),
+  }))
+  const detailLayerPartyPins = isOverviewLayer
+    ? []
+    : partyPins
+        .filter((pin) => pin.detailPin || isWithinBounds(pin, detailLayerBounds))
+        .map((pin) => ({ pin, pos: pin.detailPin ?? projectPoint(pin, detailLayerBounds) }))
 
   const activeCategory = !editMode ? continentCategories.find((category) => category.id === activeCategoryId) ?? null : null
   const activeOverview = activeCategory ? getCategoryOverview(world, activeCategory.id) : null
@@ -87,6 +124,17 @@ export default function WorldSettingPage() {
   function openCategory(categoryId) {
     setActiveCard(null)
     setActiveCategoryId(categoryId)
+  }
+
+  // A continent pin on the overview map either zooms into that continent's
+  // own dedicated map (if one exists) or, for the continents that don't have
+  // one yet, falls back to the old behaviour of opening its card grid.
+  function handleContinentPinClick(category) {
+    if (category.map) {
+      setActiveMapId(category.id)
+    } else {
+      openCategory(category.id)
+    }
   }
 
   function closeAll() {
@@ -117,8 +165,13 @@ export default function WorldSettingPage() {
     setDraftCategories((prev) => prev.map((c) => (c.id === categoryId ? { ...c, pin: { x, y } } : c)))
   }
 
+  // On the overview layer this drags the card's normal pin; on a continent's
+  // own detail map it writes a detailPin instead, which then takes priority
+  // over the bounding-box projection every time this card is displayed there.
   function handleCardReposition(cardId, x, y) {
-    setDraftCards((prev) => prev.map((c) => (c.id === cardId ? { ...c, pin: { x, y } } : c)))
+    setDraftCards((prev) =>
+      prev.map((c) => (c.id === cardId ? { ...c, ...(isOverviewLayer ? { pin: { x, y } } : { detailPin: { x, y } }) } : c)),
+    )
   }
 
   function handlePartyPinReposition(pinId, x, y) {
@@ -148,13 +201,16 @@ export default function WorldSettingPage() {
   function handleCreateSubmit({ title, categoryId }) {
     const existingIds = new Set(draftCards.map((c) => c.id))
     const id = uniqueId(slugify(title), existingIds)
+    // On a continent's own detail map the pin can only belong to that
+    // continent, so the category is forced rather than taken from the form.
+    const targetCategoryId = isOverviewLayer ? categoryId : activeMapId
     const newCard = {
       id,
-      category: categoryId,
+      category: targetCategoryId,
       title,
       summary: '',
-      contentPath: `/world-settings/${world.id}/${categoryId}/${id}.md`,
-      pin: pendingNewPin,
+      contentPath: `/world-settings/${world.id}/${targetCategoryId}/${id}.md`,
+      ...(isOverviewLayer ? { pin: pendingNewPin } : { detailPin: pendingNewPin }),
     }
     setDraftCards((prev) => [...prev, newCard])
     setPendingNewPin(null)
@@ -212,7 +268,7 @@ export default function WorldSettingPage() {
   }
 
   return (
-    <div className="w-full p-4 md:p-8">
+    <div className="flex h-full w-full flex-col p-4 md:p-8">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
         <div>
           <Link to="/world" className="text-xs text-stone-500 hover:text-violet-700">
@@ -266,17 +322,19 @@ export default function WorldSettingPage() {
               >
                 {placingPin ? '📍 คลิกบนแผนที่เพื่อวางหมุด...' : '+ เพิ่มหมุด'}
               </button>
-              <button
-                type="button"
-                onClick={togglePlacingPartyPin}
-                className={`rounded-lg border px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
-                  placingPartyPin
-                    ? 'border-emerald-700 bg-emerald-700 text-white'
-                    : 'border-[#e2cfb3] bg-white text-stone-700 hover:bg-[#f5ede0]'
-                }`}
-              >
-                {placingPartyPin ? '🧭 คลิกบนแผนที่เพื่อวางหมุดปาตี้...' : '+ เพิ่มหมุดปาตี้'}
-              </button>
+              {isOverviewLayer && (
+                <button
+                  type="button"
+                  onClick={togglePlacingPartyPin}
+                  className={`rounded-lg border px-3 py-2 text-sm font-medium shadow-sm transition-colors ${
+                    placingPartyPin
+                      ? 'border-emerald-700 bg-emerald-700 text-white'
+                      : 'border-[#e2cfb3] bg-white text-stone-700 hover:bg-[#f5ede0]'
+                  }`}
+                >
+                  {placingPartyPin ? '🧭 คลิกบนแผนที่เพื่อวางหมุดปาตี้...' : '+ เพิ่มหมุดปาตี้'}
+                </button>
+              )}
               <button
                 type="button"
                 onClick={cancelEditMode}
@@ -302,65 +360,99 @@ export default function WorldSettingPage() {
         <p className="mb-3 text-xs text-stone-500">
           โหมดแก้ไข: ลากหมุดเพื่อขยับตำแหน่ง กดหมุดเมือง (จุดสีอำพัน) หรือหมุดปาตี้ (จุดสีเขียว) เพื่อแก้ชื่อ/ลบ
           ส่วนหมุดทวีป (จุดสีม่วง) ลากได้อย่างเดียว
+          {!isOverviewLayer && ' — หมุดปาตี้แก้ไขได้เฉพาะแผนที่รวมเท่านั้น'}
         </p>
       )}
 
-      {world.mapImage ? (
-        <WorldMapView
-          key={world.id}
-          src={world.mapImage}
-          alt={`แผนที่ ${world.name}`}
-          onBackgroundClick={
-            editMode && placingPin
-              ? handleBackgroundClick
-              : editMode && placingPartyPin
-                ? handlePartyBackgroundClick
-                : undefined
-          }
-        >
-          {showMapPins &&
-            continentCategories.map((category) => (
-              <WorldMapPin
-                key={category.id}
-                x={category.pin.x}
-                y={category.pin.y}
-                label={category.title}
-                variant="continent"
-                editable={editMode}
-                onClick={editMode ? undefined : () => openCategory(category.id)}
-                onReposition={(x, y) => handleCategoryReposition(category.id, x, y)}
-              />
-            ))}
-          {showMapPins &&
-            cityCards.map((card) => (
-              <WorldMapPin
-                key={card.id}
-                x={card.pin.x}
-                y={card.pin.y}
-                label={card.title}
-                variant="city"
-                editable={editMode}
-                onClick={editMode ? () => setEditingCard(card) : () => openCard(card)}
-                onReposition={(x, y) => handleCardReposition(card.id, x, y)}
-              />
-            ))}
-          {showPartyPins &&
-            partyPins.map((pin) => (
-              <WorldMapPin
-                key={pin.id}
-                x={pin.x}
-                y={pin.y}
-                label={pin.label}
-                variant="party"
-                editable={editMode}
-                onClick={editMode ? () => setEditingPartyPin(pin) : undefined}
-                onReposition={(x, y) => handlePartyPinReposition(pin.id, x, y)}
-              />
-            ))}
-        </WorldMapView>
-      ) : (
-        <p className="text-sm text-stone-400">ยังไม่มีแผนที่สำหรับ World Setting นี้</p>
+      {mapLayers.length > 1 && (
+        <WorldMapLayerTabs layers={mapLayers} activeId={activeLayer.id} onSelect={setActiveMapId} worldName={world.name} />
       )}
+
+      {!isOverviewLayer && activeCategory === null && !editMode && (
+        <button
+          type="button"
+          onClick={() => openCategory(activeMapId)}
+          className="mb-2 text-xs text-stone-500 hover:text-violet-700 hover:underline"
+        >
+          ℹ️ เกี่ยวกับ {activeLayer.title}
+        </button>
+      )}
+
+      <div className="min-h-0 flex-1">
+        {activeLayer.image ? (
+          <WorldMapView
+            key={`${world.id}:${activeLayer.id}`}
+            src={activeLayer.image}
+            alt={`แผนที่ ${activeLayer.title}`}
+            onBackgroundClick={
+              editMode && placingPin
+                ? handleBackgroundClick
+                : editMode && isOverviewLayer && placingPartyPin
+                  ? handlePartyBackgroundClick
+                  : undefined
+            }
+          >
+            {isOverviewLayer && showMapPins &&
+              continentCategories.map((category) => (
+                <WorldMapPin
+                  key={category.id}
+                  x={category.pin.x}
+                  y={category.pin.y}
+                  label={category.title}
+                  variant="continent"
+                  editable={editMode}
+                  onClick={editMode ? undefined : () => handleContinentPinClick(category)}
+                  onReposition={(x, y) => handleCategoryReposition(category.id, x, y)}
+                />
+              ))}
+            {isOverviewLayer && showMapPins &&
+              overviewCityCards.map((card) => (
+                <WorldMapPin
+                  key={card.id}
+                  x={card.pin.x}
+                  y={card.pin.y}
+                  label={card.title}
+                  variant="city"
+                  editable={editMode}
+                  onClick={editMode ? () => setEditingCard(card) : () => openCard(card)}
+                  onReposition={(x, y) => handleCardReposition(card.id, x, y)}
+                />
+              ))}
+            {!isOverviewLayer && showMapPins &&
+              detailLayerPins.map(({ card, pos }) => (
+                <WorldMapPin
+                  key={card.id}
+                  x={pos.x}
+                  y={pos.y}
+                  label={card.title}
+                  variant="city"
+                  editable={editMode}
+                  onClick={editMode ? () => setEditingCard(card) : () => openCard(card)}
+                  onReposition={(x, y) => handleCardReposition(card.id, x, y)}
+                />
+              ))}
+            {isOverviewLayer && showPartyPins &&
+              partyPins.map((pin) => (
+                <WorldMapPin
+                  key={pin.id}
+                  x={pin.x}
+                  y={pin.y}
+                  label={pin.label}
+                  variant="party"
+                  editable={editMode}
+                  onClick={editMode ? () => setEditingPartyPin(pin) : undefined}
+                  onReposition={(x, y) => handlePartyPinReposition(pin.id, x, y)}
+                />
+              ))}
+            {!isOverviewLayer && showPartyPins &&
+              detailLayerPartyPins.map(({ pin, pos }) => (
+                <WorldMapPin key={pin.id} x={pos.x} y={pos.y} label={pin.label} variant="party" />
+              ))}
+          </WorldMapView>
+        ) : (
+          <p className="text-sm text-stone-400">ยังไม่มีแผนที่สำหรับ World Setting นี้</p>
+        )}
+      </div>
 
       <WorldEntryModal card={activeCard} onClose={closeAll} />
       <WorldCategoryModal
@@ -382,8 +474,8 @@ export default function WorldSettingPage() {
         open={!!pendingNewPin}
         mode="create"
         initialTitle=""
-        initialCategoryId={continentCategories[0]?.id}
-        categories={continentCategories}
+        initialCategoryId={isOverviewLayer ? continentCategories[0]?.id : activeMapId}
+        categories={isOverviewLayer ? continentCategories : continentCategories.filter((c) => c.id === activeMapId)}
         onCancel={() => setPendingNewPin(null)}
         onSubmit={handleCreateSubmit}
       />

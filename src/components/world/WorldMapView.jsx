@@ -15,6 +15,11 @@ const BUTTON_STEP = 1.4
 // coordinates when the user taps empty map area without dragging — a pin's
 // own pointerdown stops propagation, so this never fires for clicks that
 // land on a pin.
+//
+// Fills its parent's height (see WorldSettingPage's flex layout, which sizes
+// that parent to exactly the space left below the header/tabs) rather than
+// deriving its own height from the image's aspect ratio — a pan/zoom map
+// viewport, so cropping the image to fit is expected, not a layout bug.
 export default function WorldMapView({ src, alt, children, onBackgroundClick }) {
   const viewportRef = useRef(null)
   const [zoom, setZoom] = useState(MIN_ZOOM)
@@ -107,10 +112,11 @@ export default function WorldMapView({ src, alt, children, onBackgroundClick }) 
   //
   // Percentages are against the image's own rendered box (width = rect.width,
   // height derived from its natural aspect ratio) — NOT rect.height. The
-  // viewport is capped by max-h-[75vh], so on a short window its box is
-  // shorter than the image's true 3:2 height; the image just gets cropped by
-  // overflow-hidden rather than shrinking to fit. Dividing by rect.height in
-  // that case used the wrong denominator and threw off every Y position.
+  // viewport's height comes from its parent's flex layout independently of
+  // the image's aspect ratio, so it's often shorter than the image's true
+  // height; the image just gets cropped by overflow-hidden rather than
+  // shrinking to fit. Dividing by rect.height in that case used the wrong
+  // denominator and threw off every Y position.
   function screenToContent(clientX, clientY) {
     const rect = viewportRef.current.getBoundingClientRect()
     const contentWidth = rect.width
@@ -153,7 +159,7 @@ export default function WorldMapView({ src, alt, children, onBackgroundClick }) 
   return (
     <div
       ref={viewportRef}
-      className={`relative aspect-[3/2] max-h-[75vh] w-full select-none overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-sm ${
+      className={`relative h-full w-full select-none overflow-hidden rounded-xl border border-[#e2cfb3] bg-white shadow-sm ${
         onBackgroundClick ? 'cursor-crosshair' : ''
       }`}
       style={onBackgroundClick ? undefined : { cursor: dragging ? 'grabbing' : 'grab' }}
