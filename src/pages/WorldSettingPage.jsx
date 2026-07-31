@@ -174,8 +174,14 @@ export default function WorldSettingPage() {
     )
   }
 
+  // Same overview-vs-detail split as handleCardReposition: on the overview
+  // layer this drags the pin's normal x/y, on a continent's own detail map
+  // it writes a detailPin instead, which takes priority over the bounding-box
+  // projection every time this pin is displayed there.
   function handlePartyPinReposition(pinId, x, y) {
-    setDraftPartyPins((prev) => prev.map((p) => (p.id === pinId ? { ...p, x, y } : p)))
+    setDraftPartyPins((prev) =>
+      prev.map((p) => (p.id === pinId ? { ...p, ...(isOverviewLayer ? { x, y } : { detailPin: { x, y } }) } : p)),
+    )
   }
 
   function togglePlacingPin() {
@@ -446,7 +452,16 @@ export default function WorldSettingPage() {
               ))}
             {!isOverviewLayer && showPartyPins &&
               detailLayerPartyPins.map(({ pin, pos }) => (
-                <WorldMapPin key={pin.id} x={pos.x} y={pos.y} label={pin.label} variant="party" />
+                <WorldMapPin
+                  key={pin.id}
+                  x={pos.x}
+                  y={pos.y}
+                  label={pin.label}
+                  variant="party"
+                  editable={editMode}
+                  onClick={editMode ? () => setEditingPartyPin(pin) : undefined}
+                  onReposition={(x, y) => handlePartyPinReposition(pin.id, x, y)}
+                />
               ))}
           </WorldMapView>
         ) : (

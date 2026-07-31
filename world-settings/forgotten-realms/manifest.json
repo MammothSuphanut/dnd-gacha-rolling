@@ -1,0 +1,123 @@
+{
+  "id": "forgotten-realms",
+  "name": "Forgotten Realms",
+  "source": "Dungeons & Dragons",
+  "mapImage": "/world-settings/forgotten-realms/Faerun.webp",
+  "categories": [
+    {
+      "id": "sword-coast",
+      "title": "Sword Coast",
+      "map": {
+        "image": "/world-settings/forgotten-realms/Sword-Coast.jpg"
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": "luskan",
+      "category": "sword-coast",
+      "title": "Luskan",
+      "summary": "เมืองท่าโจรสลัดทางเหนือสุดของ Sword Coast ปกครองโดยตระกูลพ่อค้า-โจรสลัด the Ships ขึ้นชื่อเรื่องซากปรักหักพังของ Host Tower of the Arcane",
+      "contentPath": "/world-settings/forgotten-realms/sword-coast/luskan.md",
+      "pin": {
+        "x": 8.5,
+        "y": 10.7
+      },
+      "detailPin": {
+        "x": 38.6205319950495,
+        "y": 13.606457254804548
+      },
+      "sources": [
+        {
+          "label": "Forgotten Realms Wiki: Luskan",
+          "url": "https://forgottenrealms.fandom.com/wiki/Luskan"
+        }
+      ]
+    },
+    {
+      "id": "neverwinter",
+      "category": "sword-coast",
+      "title": "Neverwinter",
+      "summary": "อดีต 'อัญมณีแห่งเหนือ' เมืองที่ฟื้นตัวจากหายนะภูเขาไฟ Mount Hotenow ปัจจุบันเป็นเมืองพหุเชื้อชาติที่กำลังเติบโตอีกครั้ง",
+      "contentPath": "/world-settings/forgotten-realms/sword-coast/neverwinter.md",
+      "pin": {
+        "x": 10.25,
+        "y": 16.6
+      },
+      "detailPin": {
+        "x": 39.84145256418085,
+        "y": 20.55248607232157
+      },
+      "sources": [
+        {
+          "label": "Forgotten Realms Wiki: Neverwinter",
+          "url": "https://forgottenrealms.fandom.com/wiki/Neverwinter"
+        }
+      ]
+    },
+    {
+      "id": "mirabar",
+      "category": "sword-coast",
+      "title": "Mirabar",
+      "summary": "นครรัฐเหมืองแร่ใต้เทือกเขา Spine of the World ปกครองโดยสภาเจ้าเหมือง (Council of Sparkling Stones) ร่ำรวยจากแร่เหล็กและอัญมณี",
+      "contentPath": "/world-settings/forgotten-realms/sword-coast/mirabar.md",
+      "pin": {
+        "x": 11.75,
+        "y": 9
+      },
+      "detailPin": {
+        "x": 43.31533224131141,
+        "y": 10.183540410756674
+      },
+      "sources": [
+        {
+          "label": "Forgotten Realms Wiki: Mirabar",
+          "url": "https://forgottenrealms.fandom.com/wiki/Mirabar"
+        }
+      ]
+    },
+    {
+      "id": "waterdeep",
+      "category": "sword-coast",
+      "title": "Waterdeep",
+      "summary": "นครแห่งความโอ่อ่า (City of Splendors) มหานครที่ทรงอิทธิพลที่สุดแห่งหนึ่งใน Faerûn ศูนย์กลางการค้าและการเมืองของ Sword Coast ปกครองโดย Open Lord ท่ามกลาง Masked Lords ปริศนา",
+      "contentPath": "/world-settings/forgotten-realms/sword-coast/waterdeep.md",
+      "pin": {
+        "x": 14.15,
+        "y": 21.6
+      },
+      "detailPin": {
+        "x": 45.14776752142235,
+        "y": 37.11628404251807
+      },
+      "sources": [
+        {
+          "label": "Forgotten Realms Wiki: Waterdeep",
+          "url": "https://forgottenrealms.fandom.com/wiki/Waterdeep"
+        }
+      ]
+    },
+    {
+      "id": "baldurs-gate",
+      "category": "sword-coast",
+      "title": "Baldur's Gate",
+      "summary": "นครรัฐท่าเรือทางใต้สุดของ Sword Coast ริมแม่น้ำ Chionthar ศูนย์กลางการค้าสำคัญที่ปกครองโดยสภาขุนนางสี่ตระกูล (the Four)",
+      "contentPath": "/world-settings/forgotten-realms/sword-coast/baldurs-gate.md",
+      "pin": {
+        "x": 21.5,
+        "y": 36.6
+      },
+      "detailPin": {
+        "x": 52.4709201889157,
+        "y": 64.66882083709604
+      },
+      "sources": [
+        {
+          "label": "Forgotten Realms Wiki: Baldur's Gate",
+          "url": "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate"
+        }
+      ]
+    }
+  ],
+  "partyPins": []
+}

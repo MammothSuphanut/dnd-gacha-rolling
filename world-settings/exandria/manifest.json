@@ -1579,6 +1579,27 @@
       }
     },
     {
+      "id": "ghostwall",
+      "category": "wildemount",
+      "title": "Ghostwall",
+      "summary": "พื้นที่ใน Ghostlands รอบนอกกำแพง Rosohna ที่ nether gnome ชื่อ Dryca ตั้งเครื่องป้องกันทางเข้าสู่ระนาบ Abyssal ของ Lolth",
+      "contentPath": "/world-settings/exandria/wildemount/ghostwall.md",
+      "pin": {
+        "x": 90.4,
+        "y": 37.6
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Dryca",
+          "url": "https://criticalrole.fandom.com/wiki/Dryca"
+        }
+      ],
+      "detailPin": {
+        "x": 72.3,
+        "y": 58.4
+      }
+    },
+    {
       "id": "new-haxon",
       "category": "wildemount",
       "title": "New Haxon",
@@ -2662,7 +2683,11 @@
           "label": "Critical Role Wiki: Mutalos",
           "url": "https://criticalrole.fandom.com/wiki/Mutalos"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 41.19129195306856,
+        "y": 9.28910986875502
+      }
     },
     {
       "id": "dampfkan",
@@ -2767,7 +2792,7 @@
       "id": "boroftkrah",
       "category": "wildemount",
       "title": "Boroftkrah",
-      "summary": "เมืองเต็นท์เ�������่ร่อนของออร์คผู้ศรัทธา Kord ที่ขอบใต้ของ Rime Plains",
+      "summary": "เมืองเต็นท์เ���������่ร่อนของออร์คผู้ศรัทธา Kord ที่ขอบใต้ของ Rime Plains",
       "contentPath": "/world-settings/exandria/wildemount/boroftkrah.md",
       "pin": {
         "x": 84.94733984784688,
@@ -4067,19 +4092,31 @@
       "id": "ac-ats",
       "label": "AC ATS",
       "x": 83.5337833199418,
-      "y": 14.123706582022844
+      "y": 14.123706582022844,
+      "detailPin": {
+        "x": 59.80885871476203,
+        "y": 20.4425153816196
+      }
     },
     {
       "id": "fs-w",
       "label": "FS W",
       "x": 83.61443094232715,
-      "y": 15.418060128657643
+      "y": 15.418060128657643,
+      "detailPin": {
+        "x": 59.57719813749786,
+        "y": 21.88980268403659
+      }
     },
     {
       "id": "ac-w",
       "label": "AC W",
       "x": 77.75959112515699,
-      "y": 12.127738378632042
+      "y": 12.127738378632042,
+      "detailPin": {
+        "x": 50.364474220283505,
+        "y": 15.880218895662857
+      }
     }
   ]
 }
