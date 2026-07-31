@@ -210,7 +210,11 @@
           "label": "Critical Role Wiki: Whitestone",
           "url": "https://criticalrole.fandom.com/wiki/Whitestone"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 63.53516415727994,
+        "y": 23.53152441084466
+      }
     },
     {
       "id": "lyrengorn",
@@ -227,7 +231,11 @@
           "label": "Critical Role Wiki: Lyrengorn",
           "url": "https://criticalrole.fandom.com/wiki/Lyrengorn"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.406038262022044,
+        "y": 17.01647425092736
+      }
     },
     {
       "id": "reaching-bluff",
@@ -244,7 +252,11 @@
           "label": "Critical Role Wiki: Reaching Bluff",
           "url": "https://criticalrole.fandom.com/wiki/Reaching_Bluff"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 33.244073615619584,
+        "y": 18.688632793339718
+      }
     },
     {
       "id": "terrah",
@@ -261,7 +273,11 @@
           "label": "Critical Role Wiki: Terrah",
           "url": "https://criticalrole.fandom.com/wiki/Terrah"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 35.646400121884625,
+        "y": 23.31647425092736
+      }
     },
     {
       "id": "fort-daxio",
@@ -278,24 +294,11 @@
           "label": "Critical Role Wiki: Fort Daxio",
           "url": "https://criticalrole.fandom.com/wiki/Fort_Daxio"
         }
-      ]
-    },
-    {
-      "id": "emberhold",
-      "category": "tal-dorei",
-      "title": "Emberhold",
-      "summary": "ป้อมปราการดูเอร์การ์ใต้พิภพในโพรงลาวา ปกครองโดยกษัตริย์ Thangrul II",
-      "contentPath": "/world-settings/exandria/tal-dorei/emberhold.md",
-      "pin": {
-        "x": 45.44451600597752,
-        "y": 31.673870967741944
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Emberhold",
-          "url": "https://criticalrole.fandom.com/wiki/Emberhold"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 22,
+        "y": 27.7
+      }
     },
     {
       "id": "kraghammer",
@@ -312,7 +315,11 @@
           "label": "Critical Role Wiki: Kraghammer",
           "url": "https://criticalrole.fandom.com/wiki/Kraghammer"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 31.6,
+        "y": 30.7
+      }
     },
     {
       "id": "othendin-pass",
@@ -329,24 +336,11 @@
           "label": "Critical Role Wiki: Othendin Pass",
           "url": "https://criticalrole.fandom.com/wiki/Othendin_Pass"
         }
-      ]
-    },
-    {
-      "id": "palace-of-wonder",
-      "category": "tal-dorei",
-      "title": "Palace of Wonder",
-      "summary": "ซากปรักหักพังลวงตาที่ซ่อนสำนักงานใหญ่ของ League of Miracles เอาไว้",
-      "contentPath": "/world-settings/exandria/tal-dorei/palace-of-wonder.md",
-      "pin": {
-        "x": 41.291935729980466,
-        "y": 32.201451612903234
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Palace of Wonder",
-          "url": "https://criticalrole.fandom.com/wiki/Palace_of_Wonder"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 25.1,
+        "y": 30.8
+      }
     },
     {
       "id": "mooren",
@@ -363,7 +357,11 @@
           "label": "Critical Role Wiki: Mooren Lake",
           "url": "https://criticalrole.fandom.com/wiki/Mooren_Lake"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 68.90853007751758,
+        "y": 36.94515242774494
+      }
     },
     {
       "id": "jorenn-village",
@@ -380,7 +378,11 @@
           "label": "Critical Role Wiki: Jorenn Village",
           "url": "https://criticalrole.fandom.com/wiki/Jorenn_Village"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 48.83556529938331,
+        "y": 29.504651230558697
+      }
     },
     {
       "id": "skyanchor-citadel",
@@ -397,7 +399,11 @@
           "label": "Critical Role Wiki: Skyanchor Citadel",
           "url": "https://criticalrole.fandom.com/wiki/Skyanchor_Citadel"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 64.71778273603887,
+        "y": 22.955155735391724
+      }
     },
     {
       "id": "westruun",
@@ -414,7 +420,11 @@
           "label": "Critical Role Wiki: Westruun",
           "url": "https://criticalrole.fandom.com/wiki/Westruun"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51.13595714792571,
+        "y": 36.82562763408881
+      }
     },
     {
       "id": "shadebarrow",
@@ -431,7 +441,11 @@
           "label": "Critical Role Wiki: Shadebarrow",
           "url": "https://criticalrole.fandom.com/wiki/Shadebarrow"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 54.74064239693097,
+        "y": 37.61672422695779
+      }
     },
     {
       "id": "gatsibadow",
@@ -442,6 +456,10 @@
       "pin": {
         "x": 49.73,
         "y": 35.72
+      },
+      "detailPin": {
+        "x": 39.3,
+        "y": 33
       }
     },
     {
@@ -459,7 +477,11 @@
           "label": "Critical Role Wiki: Bramblewood Forest",
           "url": "https://criticalrole.fandom.com/wiki/Bramblewood_Forest"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 48.47693152021464,
+        "y": 36.42787280151152
+      }
     },
     {
       "id": "turst-fields",
@@ -476,7 +498,11 @@
           "label": "Critical Role Wiki: Turst Fields",
           "url": "https://criticalrole.fandom.com/wiki/Turst_Fields"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 59.46507104091711,
+        "y": 33.11471448755377
+      }
     },
     {
       "id": "drynna",
@@ -493,7 +519,11 @@
           "label": "Critical Role Wiki: Drynna",
           "url": "https://criticalrole.fandom.com/wiki/Drynna"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 67.53286175986341,
+        "y": 36.47101639993724
+      }
     },
     {
       "id": "emon",
@@ -518,7 +548,11 @@
           "label": "Critical Role Wiki: Greyskull Keep",
           "url": "https://criticalrole.fandom.com/wiki/Greyskull_Keep"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 22.689250042325256,
+        "y": 39.2
+      }
     },
     {
       "id": "shalesteps",
@@ -535,7 +569,11 @@
           "label": "Critical Role Wiki: Shalesteps",
           "url": "https://criticalrole.fandom.com/wiki/Shalesteps"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 16.2,
+        "y": 34.9
+      }
     },
     {
       "id": "puddlefoot",
@@ -552,34 +590,10 @@
           "label": "Critical Role Wiki: Rill",
           "url": "https://criticalrole.fandom.com/wiki/Rill"
         }
-      ]
-    },
-    {
-      "id": "new-onoa",
-      "category": "tal-dorei",
-      "title": "New O'Noa",
-      "summary": "ชุมชนคนนอกกฎหมายที่ตั้งอยู่ท่ามกลางซากนคร O'Noa เก่า",
-      "contentPath": "/world-settings/exandria/tal-dorei/new-onoa.md",
-      "pin": {
-        "x": 42.59233913421631,
-        "y": 43.02560388349717
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: O'Noa",
-          "url": "https://criticalrole.fandom.com/wiki/O'Noa"
-        }
-      ]
-    },
-    {
-      "id": "skyneedle",
-      "category": "tal-dorei",
-      "title": "Skyneedle",
-      "summary": "วิหารเอลฟ์โบราณในเทือกเขา Daggerbay ที่กลุ่ม stormcaller ใช้เชื่อมต่อกับ Eye of the Storm",
-      "contentPath": "/world-settings/exandria/tal-dorei/skyneedle.md",
-      "pin": {
-        "x": 42.79217749011132,
-        "y": 44.970524405817834
+      ],
+      "detailPin": {
+        "x": 15.3,
+        "y": 35.8
       }
     },
     {
@@ -597,7 +611,11 @@
           "label": "Critical Role Wiki: Ironseat Ridge",
           "url": "https://criticalrole.fandom.com/wiki/Ironseat_Ridge"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 40.483242880663454,
+        "y": 40.31114948463854
+      }
     },
     {
       "id": "kymal",
@@ -614,7 +632,11 @@
           "label": "Critical Role Wiki: Kymal",
           "url": "https://criticalrole.fandom.com/wiki/Kymal"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 43.02084976271658,
+        "y": 41.79743668148997
+      }
     },
     {
       "id": "silvercut-crossroads",
@@ -631,24 +653,11 @@
           "label": "Critical Role Wiki: Silvercut Crossroads",
           "url": "https://criticalrole.fandom.com/wiki/Silvercut_Crossroads"
         }
-      ]
-    },
-    {
-      "id": "throne-of-the-arch-heart",
-      "category": "tal-dorei",
-      "title": "Throne of the Arch Heart",
-      "summary": "สมรภูมิระหว่าง Corellon กับ Gruumsh ต้นกำเนิดเซนทอร์และออร์ค",
-      "contentPath": "/world-settings/exandria/tal-dorei/throne-of-the-arch-heart.md",
-      "pin": {
-        "x": 46.437096897248296,
-        "y": 38.72419317922285
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Throne of the Arch Heart",
-          "url": "https://criticalrole.fandom.com/wiki/Throne_of_the_Arch_Heart"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 42.49762743890514,
+        "y": 39.35529658763905
+      }
     },
     {
       "id": "emerald-outpost",
@@ -665,7 +674,11 @@
           "label": "Critical Role Wiki: Emerald Outpost",
           "url": "https://criticalrole.fandom.com/wiki/Emerald_Outpost"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 29.717062481211936,
+        "y": 46.205019343043645
+      }
     },
     {
       "id": "ivyheart-thicket",
@@ -682,7 +695,11 @@
           "label": "Critical Role Wiki: Ivyheart Thicket",
           "url": "https://criticalrole.fandom.com/wiki/Ivyheart_Thicket"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 38.35386304042929,
+        "y": 40.49643317691515
+      }
     },
     {
       "id": "zephrah",
@@ -699,7 +716,11 @@
           "label": "Critical Role Wiki: Zephrah",
           "url": "https://criticalrole.fandom.com/wiki/Zephrah"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 57.2,
+        "y": 41.2
+      }
     },
     {
       "id": "stilben",
@@ -716,7 +737,11 @@
           "label": "Critical Role Wiki: Stilben",
           "url": "https://criticalrole.fandom.com/wiki/Stilben"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 63.9,
+        "y": 48.1
+      }
     },
     {
       "id": "foramere-villages",
@@ -733,7 +758,11 @@
           "label": "Critical Role Wiki: Foramere Basin",
           "url": "https://criticalrole.fandom.com/wiki/Foramere_Basin"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 57.4,
+        "y": 43.6
+      }
     },
     {
       "id": "syngorn",
@@ -750,7 +779,11 @@
           "label": "Critical Role Wiki: Syngorn",
           "url": "https://criticalrole.fandom.com/wiki/Syngorn"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 36.043918242501924,
+        "y": 52.2
+      }
     },
     {
       "id": "shifting-keep",
@@ -767,7 +800,11 @@
           "label": "Critical Role Wiki: Shifting Keep",
           "url": "https://criticalrole.fandom.com/wiki/Shifting_Keep"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 34.5609783975371,
+        "y": 53.47257803404207
+      }
     },
     {
       "id": "orencleft",
@@ -784,7 +821,11 @@
           "label": "Critical Role Wiki: Tormor Falls",
           "url": "https://criticalrole.fandom.com/wiki/Tormor_Falls"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 38.291465270128896,
+        "y": 54.020291960127444
+      }
     },
     {
       "id": "termor-falls",
@@ -801,7 +842,11 @@
           "label": "Critical Role Wiki: Tormor Falls",
           "url": "https://criticalrole.fandom.com/wiki/Tormor_Falls"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 39.393840157400504,
+        "y": 54.278151866276545
+      }
     },
     {
       "id": "ruhn-shak",
@@ -835,7 +880,11 @@
           "label": "Critical Role Wiki: Bronbog",
           "url": "https://criticalrole.fandom.com/wiki/Bronbog"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 47.3,
+        "y": 56.4
+      }
     },
     {
       "id": "cavern-of-axiom",
@@ -852,7 +901,11 @@
           "label": "Critical Role Wiki: Cavern of Axiom",
           "url": "https://criticalrole.fandom.com/wiki/Cavern_of_Axiom"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51,
+        "y": 51.5
+      }
     },
     {
       "id": "ashen-gorge",
@@ -869,7 +922,11 @@
           "label": "Critical Role Wiki: Ashen Gorge",
           "url": "https://criticalrole.fandom.com/wiki/Ashen_Gorge"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 50.7,
+        "y": 53.6
+      }
     },
     {
       "id": "shivergut-tribe",
@@ -886,7 +943,11 @@
           "label": "Critical Role Wiki: Shivergut tribe",
           "url": "https://criticalrole.fandom.com/wiki/Shivergut_tribe"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 48.6,
+        "y": 50
+      }
     },
     {
       "id": "vuesdal-villages",
@@ -903,7 +964,11 @@
           "label": "Critical Role Wiki: Vues'dal villages",
           "url": "https://criticalrole.fandom.com/wiki/Vues'dal_villages"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 41.34043399669592,
+        "y": 57.23857327076606
+      }
     },
     {
       "id": "byroden",
@@ -920,41 +985,11 @@
           "label": "Critical Role Wiki: Byroden",
           "url": "https://criticalrole.fandom.com/wiki/Byroden"
         }
-      ]
-    },
-    {
-      "id": "roch-mar",
-      "category": "tal-dorei",
-      "title": "Roch Mar",
-      "summary": "หมู่บ้านเกษตรกรรมร้างที่กลายเป็นจุดพักพิงของผู้ลี้ภัย",
-      "contentPath": "/world-settings/exandria/tal-dorei/roch-mar.md",
-      "pin": {
-        "x": 46.22161327239006,
-        "y": 52.50854801793252
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Roch Mar",
-          "url": "https://criticalrole.fandom.com/wiki/Roch_Mar"
-        }
-      ]
-    },
-    {
-      "id": "heldenfaire",
-      "category": "tal-dorei",
-      "title": "Heldenfaire",
-      "summary": "หมู่บ้านเล็กจิ๋วที่เคยเผชิญโรคระบาดความคลุ้มคลั่งจากการทดลองแอลเคมีที่ล้มเหลว",
-      "contentPath": "/world-settings/exandria/tal-dorei/heldenfaire.md",
-      "pin": {
-        "x": 47.846774685767386,
-        "y": 53.497580645161285
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Heldenfaire",
-          "url": "https://criticalrole.fandom.com/wiki/Heldenfaire"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 30.298576529881103,
+        "y": 62.80197007537341
+      }
     },
     {
       "id": "niirdal-poc",
@@ -971,7 +1006,11 @@
           "label": "Critical Role Wiki: Niirdal-Poc",
           "url": "https://criticalrole.fandom.com/wiki/Niirdal-Poc"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 35.37485062054113,
+        "y": 68.20395667876039
+      }
     },
     {
       "id": "niirdal-hup",
@@ -988,7 +1027,11 @@
           "label": "Critical Role Wiki: Qoniira Tetrarchy",
           "url": "https://criticalrole.fandom.com/wiki/Qoniira_Tetrarchy"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 34.38612122741107,
+        "y": 67.94710621182982
+      }
     },
     {
       "id": "niirdal-gan",
@@ -1005,7 +1048,11 @@
           "label": "Critical Role Wiki: Qoniira Tetrarchy",
           "url": "https://criticalrole.fandom.com/wiki/Qoniira_Tetrarchy"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 35.719336937543694,
+        "y": 67.52356724034632
+      }
     },
     {
       "id": "niirdal-sarquet",
@@ -1022,7 +1069,11 @@
           "label": "Critical Role Wiki: Niirdal-Sarqet",
           "url": "https://criticalrole.fandom.com/wiki/Niirdal-Sarqet"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 35.05219531171795,
+        "y": 69.24513613645637
+      }
     },
     {
       "id": "ortem-vellak",
@@ -1039,7 +1090,11 @@
           "label": "Critical Role Wiki: Ortem-Vellak",
           "url": "https://criticalrole.fandom.com/wiki/Ortem-Vellak"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51.90461746076775,
+        "y": 72.18475558251828
+      }
     },
     {
       "id": "hdar-fye",
@@ -1056,7 +1111,11 @@
           "label": "Critical Role Wiki: Hdar-Fye",
           "url": "https://criticalrole.fandom.com/wiki/Hdar-Fye"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 34.07995285689584,
+        "y": 74.55298697229618
+      }
     },
     {
       "id": "ezordam-haar",
@@ -1073,7 +1132,11 @@
           "label": "Critical Role Wiki: Ezordam-Haar",
           "url": "https://criticalrole.fandom.com/wiki/Ezordam-Haar"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 38.89288417890448,
+        "y": 74.07652414859304
+      }
     },
     {
       "id": "rybad-kol",
@@ -1090,7 +1153,11 @@
           "label": "Critical Role Wiki: Rybad-Kol",
           "url": "https://criticalrole.fandom.com/wiki/Rybad-Kol"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 46.01886244750406,
+        "y": 77.63340647475967
+      }
     },
     {
       "id": "tzaarm",
@@ -1107,24 +1174,11 @@
           "label": "Critical Role Wiki: Tz'Arrm",
           "url": "https://criticalrole.fandom.com/wiki/Tz'Arrm"
         }
-      ]
-    },
-    {
-      "id": "vesrah",
-      "category": "tal-dorei",
-      "title": "Vesrah",
-      "summary": "หมู่บ้านลอยน้ำของ Water Ashari บน Islands of Anamn",
-      "contentPath": "/world-settings/exandria/tal-dorei/vesrah.md",
-      "pin": {
-        "x": 31.991290137998522,
-        "y": 44.40322497583205
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Vesrah",
-          "url": "https://criticalrole.fandom.com/wiki/Vesrah"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 41.765835309788095,
+        "y": 79.58828566952577
+      }
     },
     {
       "id": "visa-isle",
@@ -1145,17 +1199,10 @@
           "label": "Critical Role Wiki: Vos'sykriss",
           "url": "https://criticalrole.fandom.com/wiki/Vos'sykriss"
         }
-      ]
-    },
-    {
-      "id": "ruins-of-port-udall",
-      "category": "tal-dorei",
-      "title": "Ruins of Port Udall",
-      "summary": "อดีตนิคมชายฝั่งที่ถูกมังกร Thordak เผาทำลายพร้อม Byroden",
-      "contentPath": "/world-settings/exandria/tal-dorei/ruins-of-port-udall.md",
-      "pin": {
-        "x": 42.31,
-        "y": 49.16
+      ],
+      "detailPin": {
+        "x": 18.057344960058543,
+        "y": 55.829987104637574
       }
     },
     {
@@ -2720,7 +2767,7 @@
       "id": "boroftkrah",
       "category": "wildemount",
       "title": "Boroftkrah",
-      "summary": "เมืองเต็นท์เร่ร่อนของออร์คผู้ศรัทธา Kord ที่ขอบใต้ของ Rime Plains",
+      "summary": "เมืองเต็นท์เ�������่ร่อนของออร์คผู้ศรัทธา Kord ที่ขอบใต้ของ Rime Plains",
       "contentPath": "/world-settings/exandria/wildemount/boroftkrah.md",
       "pin": {
         "x": 84.94733984784688,
@@ -3288,41 +3335,11 @@
           "label": "Critical Role Wiki: Vasselheim",
           "url": "https://criticalrole.fandom.com/wiki/Vasselheim"
         }
-      ]
-    },
-    {
-      "id": "heavens-stair",
-      "category": "issylra",
-      "title": "Heaven's Stair",
-      "summary": "ภูเขาที่ Vasselheim ตั้งอยู่บนยอด มี Platinum Sanctuary วิหารของ Bahamut และเป็นจุดที่ Earth Titan ล้มลง",
-      "contentPath": "/world-settings/exandria/issylra/heavens-stair.md",
-      "pin": {
-        "x": 29.549999876945247,
-        "y": 26.23951612903226
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Vasselheim",
-          "url": "https://criticalrole.fandom.com/wiki/Vasselheim"
-        }
-      ]
-    },
-    {
-      "id": "himblewood",
-      "category": "issylra",
-      "title": "Himblewood",
-      "summary": "เมืองเล็กในป่า Vesper Timberland ขึ้นชื่อเรื่องตลาดประจำเดือนและเหตุการณ์วุ้นยักษ์หลุด",
-      "contentPath": "/world-settings/exandria/issylra/himblewood.md",
-      "pin": {
-        "x": 30.595161413377326,
-        "y": 23.412096589611416
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Himblewood",
-          "url": "https://criticalrole.fandom.com/wiki/Himblewood"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 74.85324507713415,
+        "y": 47.85292329712362
+      }
     },
     {
       "id": "muldire",
@@ -3339,41 +3356,11 @@
           "label": "Critical Role Wiki: Muldire",
           "url": "https://criticalrole.fandom.com/wiki/Muldire"
         }
-      ]
-    },
-    {
-      "id": "josgrens-hollow",
-      "category": "issylra",
-      "title": "Josgren's Hollow",
-      "summary": "เมืองแอลเคมีในพื้นที่ชุ่มน้ำรอบ Marrowglade Loch เจ้าของงาน Potion Con ประจำปี",
-      "contentPath": "/world-settings/exandria/issylra/josgrens-hollow.md",
-      "pin": {
-        "x": 27.57258002988754,
-        "y": 31.374999815417883
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Josgren's Hollow",
-          "url": "https://criticalrole.fandom.com/wiki/Josgren%27s_Hollow"
-        }
-      ]
-    },
-    {
-      "id": "hug-hive",
-      "category": "issylra",
-      "title": "Hug Hive",
-      "summary": "ชุมชนกอบลินอยด์ในเทือกเขา Utesspire หลังปลดคำสาป Curse of Strife กลายเป็นสังคมสงบสุข",
-      "contentPath": "/world-settings/exandria/issylra/hug-hive.md",
-      "pin": {
-        "x": 15.2,
-        "y": 28.5
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Hug Hive",
-          "url": "https://criticalrole.fandom.com/wiki/Hug_Hive"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 70.05958944111126,
+        "y": 45.35740906383599
+      }
     },
     {
       "id": "pyrah",
@@ -3390,7 +3377,11 @@
           "label": "Critical Role Wiki: Pyrah",
           "url": "https://criticalrole.fandom.com/wiki/Pyrah"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 61.86038784290254,
+        "y": 50.80823723339245
+      }
     },
     {
       "id": "endovaar",
@@ -3407,7 +3398,11 @@
           "label": "Critical Role Wiki: Endovaar",
           "url": "https://criticalrole.fandom.com/wiki/Endovaar"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 56.72902306393738,
+        "y": 52.968040059403755
+      }
     },
     {
       "id": "hearthdell",
@@ -3424,7 +3419,11 @@
           "label": "Critical Role Wiki: Hearthdell",
           "url": "https://criticalrole.fandom.com/wiki/Hearthdell"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 54.56103912440353,
+        "y": 53.795329096764476
+      }
     },
     {
       "id": "shorecomb",
@@ -3441,24 +3440,11 @@
           "label": "Critical Role Wiki: Shorecomb",
           "url": "https://criticalrole.fandom.com/wiki/Shorecomb"
         }
-      ]
-    },
-    {
-      "id": "shoresight-isle",
-      "category": "issylra",
-      "title": "Shoresight Isle",
-      "summary": "เกาะนอกชายฝั่ง Shorecomb ถิ่นพำนักของนักเวทเอลฟ์ Duderonomous",
-      "contentPath": "/world-settings/exandria/issylra/shoresight-isle.md",
-      "pin": {
-        "x": 25.8,
-        "y": 35.1
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Shorecomb",
-          "url": "https://criticalrole.fandom.com/wiki/Shorecomb"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 61.73201872046439,
+        "y": 53.84935540545163
+      }
     },
     {
       "id": "ivaadel",
@@ -3475,24 +3461,11 @@
           "label": "Critical Role Wiki: Ivaadel",
           "url": "https://criticalrole.fandom.com/wiki/Ivaadel"
         }
-      ]
-    },
-    {
-      "id": "ria-doin",
-      "category": "issylra",
-      "title": "Ria'Doin",
-      "summary": "หมู่บ้านร้างริม Lake Umamu เหยื่อของวิญญาณมืด The Silt ปัจจุบันฟื้นฟูเป็นจุดติดต่อกับ Ruidus",
-      "contentPath": "/world-settings/exandria/issylra/ria-doin.md",
-      "pin": {
-        "x": 16.401612657116303,
-        "y": 36.82741953942083
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Ria'Doin",
-          "url": "https://criticalrole.fandom.com/wiki/Ria%27Doin"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 41.06225458022367,
+        "y": 49.644361761109764
+      }
     },
     {
       "id": "hishari",
@@ -3509,24 +3482,11 @@
           "label": "Critical Role Wiki: Hishari",
           "url": "https://criticalrole.fandom.com/wiki/Hishari"
         }
-      ]
-    },
-    {
-      "id": "purvan-suul-tomb",
-      "category": "issylra",
-      "title": "สุสานของ Purvan Suul",
-      "summary": "The Sunken Tomb ทางตะวันตกของ Vasselheim จุดที่ Vox Machina พบเวสทิจ Deathwalker's Ward",
-      "contentPath": "/world-settings/exandria/issylra/purvan-suul-tomb.md",
-      "pin": {
-        "x": 27.22903090446227,
-        "y": 29.619354469545424
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Purvan Suul",
-          "url": "https://criticalrole.fandom.com/wiki/Purvan_Suul"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 45.860460854889155,
+        "y": 56.964539133670435
+      }
     },
     {
       "id": "rimecleft",
@@ -3543,7 +3503,11 @@
           "label": "Critical Role Wiki: Rimecleft",
           "url": "https://criticalrole.fandom.com/wiki/Rimecleft"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 67.16928251253846,
+        "y": 44.66583195425659
+      }
     },
     {
       "id": "ankharel",
@@ -3560,7 +3524,11 @@
           "label": "Critical Role Wiki: Ank'Harel",
           "url": "https://criticalrole.fandom.com/wiki/Ank%27Harel"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 56.906492814266514,
+        "y": 38.48726531330776
+      }
     },
     {
       "id": "eish-allay",
@@ -3577,24 +3545,11 @@
           "label": "Critical Role Wiki: Oderan Wilds",
           "url": "https://criticalrole.fandom.com/wiki/Oderan_Wilds"
         }
-      ]
-    },
-    {
-      "id": "sapiro-haven",
-      "category": "marquet",
-      "title": "Sapiro Haven",
-      "summary": "ท่าเรือชายฝั่งเหนือของ Oderan Wilds จุดเชื่อมต่อทางทะเลของภูมิภาค",
-      "contentPath": "/world-settings/exandria/marquet/sapiro-haven.md",
-      "pin": {
-        "x": 10.5,
-        "y": 72.7
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Oltgar Dradegon",
-          "url": "https://criticalrole.fandom.com/wiki/Oltgar_Dradegon"
-        }
-      ]
+      ],
+      "detailPin": {
+        "x": 29.650618033023875,
+        "y": 26.134703230950638
+      }
     },
     {
       "id": "goradire",
@@ -3611,7 +3566,11 @@
           "label": "Critical Role Wiki: Oderan Wilds",
           "url": "https://criticalrole.fandom.com/wiki/Oderan_Wilds"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 36.48543880095767,
+        "y": 31.406603158517765
+      }
     },
     {
       "id": "shandal",
@@ -3628,7 +3587,11 @@
           "label": "Critical Role Wiki: Shandal",
           "url": "https://criticalrole.fandom.com/wiki/Shandal"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 58.52787294122215,
+        "y": 41.60892407070499
+      }
     },
     {
       "id": "shammel",
@@ -3645,7 +3608,11 @@
           "label": "Critical Role Wiki: Shammel",
           "url": "https://criticalrole.fandom.com/wiki/Shammel"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 62.363419067889254,
+        "y": 25.87509502709387
+      }
     },
     {
       "id": "vault-of-shumas",
@@ -3662,7 +3629,11 @@
           "label": "Critical Role Wiki: Vault of Shumas",
           "url": "https://criticalrole.fandom.com/wiki/Vault_of_Shumas"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 52.34602445266729,
+        "y": 29.35949290730614
+      }
     },
     {
       "id": "jrusar",
@@ -3679,7 +3650,11 @@
           "label": "Critical Role Wiki: Jrusar",
           "url": "https://criticalrole.fandom.com/wiki/Jrusar"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 31.966805897243376,
+        "y": 35.483816922840646
+      }
     },
     {
       "id": "heartmoor-hamlet",
@@ -3696,7 +3671,11 @@
           "label": "Critical Role Wiki: Heartmoor Hamlet",
           "url": "https://criticalrole.fandom.com/wiki/Heartmoor_Hamlet"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 27.325464362461176,
+        "y": 32.56105554718143
+      }
     },
     {
       "id": "otaladume",
@@ -3707,6 +3686,10 @@
       "pin": {
         "x": 7.469770332986731,
         "y": 79.16445733844363
+      },
+      "detailPin": {
+        "x": 25.233194102756634,
+        "y": 36.72550651674225
       }
     },
     {
@@ -3724,7 +3707,11 @@
           "label": "Critical Role Wiki: Evishi",
           "url": "https://criticalrole.fandom.com/wiki/Evishi"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 35.51408060922387,
+        "y": 39.50432447064743
+      }
     },
     {
       "id": "bassuras",
@@ -3741,7 +3728,11 @@
           "label": "Critical Role Wiki: Bassuras",
           "url": "https://criticalrole.fandom.com/wiki/Bassuras"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 48.83615045694008,
+        "y": 50.03185189956173
+      }
     },
     {
       "id": "gujjar-serai",
@@ -3758,7 +3749,11 @@
           "label": "Critical Role Wiki: Hellcatch Valley",
           "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 39.00179455175634,
+        "y": 42.70569639816273
+      }
     },
     {
       "id": "kings-fall",
@@ -3775,7 +3770,11 @@
           "label": "Critical Role Wiki: Hellcatch Valley",
           "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 41.99592628398721,
+        "y": 43.96514839878808
+      }
     },
     {
       "id": "loonpur",
@@ -3786,6 +3785,10 @@
       "pin": {
         "x": 16.62026345428399,
         "y": 85.59633074311444
+      },
+      "detailPin": {
+        "x": 40.25314197407922,
+        "y": 50.42915648910164
       }
     },
     {
@@ -3797,6 +3800,10 @@
       "pin": {
         "x": 19.69036177437092,
         "y": 85.8009862425945
+      },
+      "detailPin": {
+        "x": 44.783599808603554,
+        "y": 52.069506844180644
       }
     },
     {
@@ -3814,7 +3821,11 @@
           "label": "Critical Role Wiki: Tishtan excavation site",
           "url": "https://criticalrole.fandom.com/wiki/Tishtan_excavation_site"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 51.41263968481638,
+        "y": 44.281416611781964
+      }
     },
     {
       "id": "rajarma",
@@ -3825,6 +3836,10 @@
       "pin": {
         "x": 21.24052538770536,
         "y": 80.02990091948178
+      },
+      "detailPin": {
+        "x": 49.27788142606735,
+        "y": 45.29183732428008
       }
     },
     {
@@ -3836,6 +3851,10 @@
       "pin": {
         "x": 19.941019269433934,
         "y": 83.4
+      },
+      "detailPin": {
+        "x": 46.64537568782267,
+        "y": 49.09832898348971
       }
     },
     {
@@ -3853,7 +3872,11 @@
           "label": "Critical Role Wiki: Drowned City",
           "url": "https://criticalrole.fandom.com/wiki/Drowned_City"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 47.42757072064687,
+        "y": 55.09071946341187
+      }
     },
     {
       "id": "barinak",
@@ -3870,7 +3893,11 @@
           "label": "Critical Role Wiki: Barinak",
           "url": "https://criticalrole.fandom.com/wiki/Barinak"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 53.814920411094725,
+        "y": 60.710426767732315
+      }
     },
     {
       "id": "gelvan",
@@ -3887,7 +3914,11 @@
           "label": "Critical Role Wiki: Gelvaan",
           "url": "https://criticalrole.fandom.com/wiki/Gelvaan"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 38.905452587379834,
+        "y": 60.841688307849154
+      }
     },
     {
       "id": "sruwargas",
@@ -3904,7 +3935,11 @@
           "label": "Critical Role Wiki: Sruwargas",
           "url": "https://criticalrole.fandom.com/wiki/Sruwargas"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 42.18302936856082,
+        "y": 65.47232628683071
+      }
     },
     {
       "id": "zhavrolle",
@@ -3921,7 +3956,11 @@
           "label": "Critical Role Wiki: Zha'Vrollo",
           "url": "https://criticalrole.fandom.com/wiki/Zha%27Vrollo"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 55.16357216072855,
+        "y": 61.84518578563054
+      }
     },
     {
       "id": "silken-squall",
@@ -3938,7 +3977,11 @@
           "label": "Critical Role Wiki: Silken Squall",
           "url": "https://criticalrole.fandom.com/wiki/Silken_Squall"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 69.90485899193216,
+        "y": 58.30685469272606
+      }
     },
     {
       "id": "ziggurat",
@@ -3955,7 +3998,11 @@
           "label": "Critical Role Wiki: Ziggurat",
           "url": "https://criticalrole.fandom.com/wiki/Ziggurat"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 61.16877968132689,
+        "y": 46.85918941206008
+      }
     },
     {
       "id": "qoreo",
@@ -3966,6 +4013,10 @@
       "pin": {
         "x": 24.266646471006116,
         "y": 92.60307705507009
+      },
+      "detailPin": {
+        "x": 51.83031704061123,
+        "y": 66.58703158721801
       }
     },
     {
@@ -3983,7 +4034,11 @@
           "label": "Critical Role Wiki: Lake Koron",
           "url": "https://criticalrole.fandom.com/wiki/Lake_Koron"
         }
-      ]
+      ],
+      "detailPin": {
+        "x": 58.43936591877757,
+        "y": 62.27165730212396
+      }
     },
     {
       "id": "yios",
@@ -4000,35 +4055,11 @@
           "label": "Critical Role Wiki: Yios",
           "url": "https://criticalrole.fandom.com/wiki/Yios"
         }
-      ]
-    },
-    {
-      "id": "doan",
-      "category": "marquet",
-      "title": "Doan",
-      "summary": "นิคมในแคว้น Aeshanadoor ใกล้ Gloomed Jungles จุดที่เคยจับสายลับ Stratos Throne ได้",
-      "contentPath": "/world-settings/exandria/marquet/doan.md",
-      "pin": {
-        "x": 29.62990167991307,
-        "y": 92.80465435883315
+      ],
+      "detailPin": {
+        "x": 57.81515967682658,
+        "y": 63.474732159142775
       }
-    },
-    {
-      "id": "viscan",
-      "category": "marquet",
-      "title": "เกาะ Viscan",
-      "summary": "เกาะภูเขาไฟลึกลับ อดีตห้องทดลองของเนโครแมนเซอร์ Opash ที่ดักผู้มาเยือนไว้ด้วยเวทมนตร์",
-      "contentPath": "/world-settings/exandria/marquet/viscan.md",
-      "pin": {
-        "x": 40.3,
-        "y": 80.6
-      },
-      "sources": [
-        {
-          "label": "Critical Role Wiki: Island of Viscan",
-          "url": "https://criticalrole.fandom.com/wiki/Island_of_Viscan"
-        }
-      ]
     }
   ],
   "partyPins": [
