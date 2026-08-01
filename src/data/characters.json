@@ -1437,7 +1437,7 @@
       "inspiration": false,
       "xp": 0,
       "hp": {
-        "max": "",
+        "max": "10",
         "current": 10,
         "temp": ""
       },
@@ -2162,7 +2162,7 @@
       "inspiration": false,
       "xp": 0,
       "hp": {
-        "max": "",
+        "max": "18",
         "current": 18,
         "temp": ""
       },
@@ -2852,7 +2852,7 @@
       "inspiration": false,
       "xp": 0,
       "hp": {
-        "max": "",
+        "max": "12",
         "current": 12,
         "temp": ""
       },
@@ -3579,7 +3579,7 @@
       "inspiration": false,
       "xp": 0,
       "hp": {
-        "max": "",
+        "max": "12",
         "current": 12,
         "temp": ""
       },
@@ -4286,7 +4286,7 @@
       "inspiration": false,
       "xp": 0,
       "hp": {
-        "max": "",
+        "max": "15",
         "current": 15,
         "temp": ""
       },
@@ -4983,7 +4983,7 @@
       "inspiration": false,
       "xp": 0,
       "hp": {
-        "max": "",
+        "max": "11",
         "current": 11,
         "temp": ""
       },
