@@ -48,5 +48,16 @@
   - หากการโจมตีหรือเวทมนตร์ทำความเสียหายได้สำเร็จ ความเสียหายนั้นจะออกหน้าเต๋าสูงสุดเสมอ
 - **Cost**: ได้รับ +4 Stress ทันทีที่เปิดใช้งาน (แลกมากับการที่ร่างกายจะเข้าสู่ภาวะวิกฤติตอนพักแรม)
 
+## เป้าหมาย/สถานที่ของแต่ละ Fragment
+
+| Act | Fragment | Level | เป้าหมาย/สถานที่ | ที่มา |
+|---|---|---|---|---|
+| Act 1 | Fragment of Wisdom | 1–3 | Aeor Crash Site / Aeor Lab (Eiselcross) | ตัวละครมีติดตัวตั้งแต่ต้นเรื่อง (หนีจากลัทธิ → Palebank Village) |
+| Act 2 | Fragment of Void | 3–7 | Ruins of Shattengrod (ใกล้ Druvenlode) | Dwendalian Empire — ถือครองโดย Prelate Iskavel Thorn |
+| Act 3 | Fragment of Stasis | 7–10 | Ghor Veles | ทางแยกสู่ Xhorhas — นักล่าโบราณวัตถุขุดพบและใช้ปล้น/แช่แข็งเหยื่อ |
+| Act 4 | Fragment of Genesis | 10–14 | Ruins of Draconia (พบ) → ถูกชิง → Ruins of Sepesca (ทวงคืน) | ห้องนิรภัยแห่งชีวิตนิรันดร์ |
+| Act 5 | Fragment of Zenith | 14–19 | Darktow Isle | อยู่กับ Vaelkor Thess มาตลอด ไม่เคยแยกออกไป — ได้คืนตอนปะทะ/เฉลยจบ |
+| Act 6 | — (บทส่งท้าย) | 19–20 | Aeor Lab (Eiselcross) | คืน Fragment ทั้ง 5 ชิ้นสู่แท่นวางในห้องหลักของ Lab |
+
 ---
 [← ภาพรวม](./00-overview.md)
