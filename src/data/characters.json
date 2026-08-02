@@ -1,7 +1,7 @@
 [
   {
     "id": "character-76899c69-1f99-4795-86dd-2cd4f7e7814c",
-    "name": "Thalric Dawn-Shield sss",
+    "name": "Thalric Dawn-Shield",
     "ownerId": "user-1553dd4c-1904-4b22-8954-934735b780b5",
     "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
     "campaignId": "campaign-74e1fa2d-c487-4a91-a112-61ed34f29c08",
@@ -29,7 +29,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-c1db0bef-b634-41b6-b027-c2037b2fb6cd",
+        "id": "classlevel-b91aa27b-8417-427a-8761-4d4f7df1eeb4",
         "className": "Paladin",
         "subclassName": "Oath of Glory",
         "level": 2
@@ -57,7 +57,664 @@
     "personalityTraits": "",
     "appearance": "",
     "biography": "",
-    "status": "In-Action"
+    "status": "In-Action",
+    "combat": {
+      "ac": "",
+      "speed": "30 ft",
+      "hitDice": "2d10",
+      "inspiration": true,
+      "xp": 300,
+      "hp": {
+        "max": "",
+        "current": 28,
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": true,
+      "cha": true
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": true,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": true,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": true,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": true,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": false,
+        "expertise": false
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1 + @mod",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Spear",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1d6",
+            "type": "Piercing"
+          }
+        ]
+      }
+    ],
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 60,
+      "pp": 0
+    },
+    "attacksSpellcasting": "",
+    "equipment": [
+      {
+        "name": "Shield",
+        "qty": 1
+      },
+      {
+        "name": "Holy Symbol",
+        "qty": 1
+      },
+      {
+        "name": "Traveler's Clothes",
+        "qty": 1
+      },
+      {
+        "name": "Whisperlink Mail",
+        "qty": 1
+      },
+      {
+        "name": "Holy Water",
+        "qty": 5
+      },
+      {
+        "name": "Backpack",
+        "qty": 1
+      }
+    ],
+    "proficienciesLanguages": [
+      "Common",
+      "Draconic",
+      "sign"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Breath Weapon",
+        "description": "When you take the @action[Attack|XPHB] action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot @variantrule[Cone [Area of Effect]|XPHB|Cone] or a 30-foot @variantrule[Line [Area of Effect]|XPHB|Line] that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and @variantrule[Proficiency|XPHB|Proficiency Bonus]). On a failed save, a creature takes [[/damage 1d10 type=fire]] damage. On a successful save, a creature takes half as much damage. This damage increases by [[/damage 1d10]] when you reach character levels 5 ([[/damage 2d10]]), 11 ([[/damage 3d10]]), and 17 ([[/damage 4d10]]). You can use this Breath Weapon a number of times equal to your @variantrule[Proficiency|XPHB|Proficiency Bonus], and you regain all expended uses when you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Damage Resistance",
+        "description": "You have @variantrule[Resistance|XPHB] to Fire damage."
+      },
+      {
+        "name": "Darkvision",
+        "description": "You have &Reference[rule=Darkvision] with a range of 60 feet."
+      },
+      {
+        "name": "Draconic Flight",
+        "description": "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a @variantrule[Bonus Action|XPHB], you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the &Reference[condition=Incapacitated] condition. During that time, you have a @variantrule[Fly Speed|XPHB] equal to your @variantrule[Speed|XPHB]. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Lay on Hands",
+        "description": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a @variantrule[Long Rest|XPHB]. With that pool, you can restore a total number of @variantrule[Hit Points|XPHB] equal to five times your Paladin level. As a @variantrule[Bonus Action|XPHB], you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of @variantrule[Hit Points|XPHB] to that creature, up to the maximum amount remaining in the pool. You can also expend 5 @variantrule[Hit Points|XPHB] from the pool of healing power to remove the &Reference[condition=Poisoned] condition from the creature; those points don't also restore @variantrule[Hit Points|XPHB] to the creature."
+      },
+      {
+        "name": "Spellcasting",
+        "description": "You have learned to cast spells through prayer and meditation. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Paladin spells, which appear in the Paladin spell list later in the class's description. Spell Slots. The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a @variantrule[Long Rest|XPHB]. Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Paladin spells . @spell[Heroism|XPHB] and @spell[Searing Smite|XPHB] are recommended. The number of spells on your list increases as you gain Paladin levels, as shown in the Prepared Spells column of the Paladin Features table. Whenever that number increases, choose additional Paladin spells until the number of spells on your list matches the number in the Paladin Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Paladin, your list of prepared spells can include six Paladin spells of level 1 or 2 in any combination. If another Paladin feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Paladin spells for you. Changing Your Prepared Spells. Whenever you finish a @variantrule[Long Rest|XPHB], you can replace one spell on your list with another Paladin spell for which you have spell slots. Spellcasting Ability. Charisma is your spellcasting ability for your Paladin spells. Spellcasting Focus. You can use a @item[Holy Symbol|XPHB] as a @variantrule[Spellcasting Focus|XPHB] for your Paladin spells."
+      },
+      {
+        "name": "Weapon Mastery",
+        "description": "Your training with weapons allows you to use the @variantrule[weapon mastery properties|XPHB|mastery properties] of two kinds of weapons of your choice with which you have proficiency, such as @item[Longsword|XPHB|Longswords] and @item[Javelin|XPHB|Javelins]. Whenever you finish a @variantrule[Long Rest|XPHB], you can change the kinds of weapons you chose. For example, you could switch to using the @variantrule[weapon mastery properties|XPHB|mastery properties] of @item[Halberd|XPHB|Halberds] and @item[Flail|XPHB|Flails]."
+      },
+      {
+        "name": "Fighting Style",
+        "description": "You gain a Fighting Style feat of your choice. Instead of choosing one of those feats, you can choose the @feat[Blessed Warrior|XPHB] Fighting Style."
+      },
+      {
+        "name": "Paladin's Smite",
+        "description": "You always have the @spell[Divine Smite|XPHB] spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a @variantrule[Long Rest|XPHB] before you can cast it in this way again."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "Tough; Fighting Style: Blessed Warrior",
+    "spellcasting": {
+      "spellcastingClass": "Paladin",
+      "spellcastingAbility": "CHA",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
+      "cantrips": [
+        {
+          "name": "Word of Radiance"
+        },
+        {
+          "name": "Thaumaturgy"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": 2,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "Cure Wounds",
+              "prepared": true
+            },
+            {
+              "name": "Bless",
+              "prepared": true
+            },
+            {
+              "name": "Command",
+              "prepared": true
+            },
+            {
+              "name": "Divine Smite",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
   },
   {
     "id": "character-ab2bdae7-db42-4d46-8ed6-eb03ccbef188",
@@ -71,7 +728,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-228e0d68-8d93-4450-854a-95b9bd5d5524",
+        "id": "classlevel-68994f11-c873-4910-8568-b636c6989a0f",
         "className": "Warlock",
         "subclassName": "The Fathomless",
         "level": 2
@@ -111,7 +768,705 @@
       }
     ],
     "activeImageId": "img-e04832c9-7dee-49cb-9b95-057957c8c4c0",
-    "status": "In-Action"
+    "status": "In-Action",
+    "combat": {
+      "ac": "",
+      "speed": "30 ft",
+      "hitDice": "2d8",
+      "inspiration": false,
+      "xp": 0,
+      "hp": {
+        "current": 21,
+        "max": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": true,
+      "cha": true
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": false,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": true,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": true,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": true,
+        "expertise": false
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1 + @mod",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "The Nameless Rod",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1d8",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Dagger",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1d4",
+            "type": "Piercing"
+          }
+        ]
+      }
+    ],
+    "currency": {
+      "cp": 7,
+      "sp": 4,
+      "ep": 0,
+      "gp": 113,
+      "pp": 0
+    },
+    "attacksSpellcasting": "",
+    "equipment": [
+      {
+        "name": "Backpack",
+        "qty": 1
+      },
+      {
+        "name": "Traveler's Clothes",
+        "qty": 1
+      },
+      {
+        "name": "Torch",
+        "qty": 7
+      },
+      {
+        "name": "Thieves' Tools",
+        "qty": 1
+      },
+      {
+        "name": "Net",
+        "qty": 1
+      },
+      {
+        "name": "Bedroll",
+        "qty": 1
+      },
+      {
+        "name": "Studded Leather Armor",
+        "qty": 1
+      },
+      {
+        "name": "Rope",
+        "qty": 2
+      },
+      {
+        "name": "Oil Flask",
+        "qty": 9
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 2
+      },
+      {
+        "name": "Lamp",
+        "qty": 1
+      },
+      {
+        "name": "ปลาหมักเกลือ",
+        "qty": 2
+      }
+    ],
+    "proficienciesLanguages": [
+      "Common",
+      "Undercommon"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Eldritch Invocations",
+        "description": "You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons. You gain one invocation of your choice, such as Pact of the Tome. Invocations are described in the \" Eldritch Invocation Options \" section later in this class's description. Prerequisites. If an invocation has a prerequisite, you must meet it to learn that invocation. For example, if an invocation requires you to be a level 5+ Warlock, you can select the invocation once you reach Warlock level 5. Replacing and Gaining Invocations. Whenever you gain a Warlock level, you can replace one of your invocations with another one for which you qualify. You can't replace an invocation if it's a prerequisite for another invocation that you have. When you gain certain Warlock levels, you gain more invocations of your choice, as shown in the Invocations column of the Warlock Features table. You can't pick the same invocation more than once unless its description says otherwise."
+      },
+      {
+        "name": "Pact Magic",
+        "description": "Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers. The entity is a voice in the shadows—its identity unclear—but its boon to you is concrete: the ability to cast spells. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Warlock spells, which appear in the Warlock spell list later in the class's description. Cantrips. You know two Warlock cantrips of your choice. @spell[Eldritch Blast|XPHB] and @spell[Prestidigitation|XPHB] are recommended. Whenever you gain a Warlock level, you can replace one of your cantrips from this feature with another Warlock cantrip of your choice. When you reach Warlock levels 4 and 10, you learn another Warlock cantrip of your choice, as shown in the Cantrips column of the Warlock Features table. Spell Slots. The Warlock Features table shows how many spell slots you have to cast your Warlock spells of levels 1–5. The table also shows the level of those slots, all of which are the same level. You regain all expended Pact Magic spell slots when you finish a @variantrule[Short Rest|XPHB|Short] or @variantrule[Long Rest|XPHB]. For example, when you're a level 5 Warlock, you have two level 3 spell slots. To cast the level 1 spell @spell[Witch Bolt|XPHB], you must spend one of those slots, and you cast it as a level 3 spell. Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Warlock spells. @spell[Charm Person|XPHB] and @spell[Hex|XPHB] are recommended. The number of spells on your list increases as you gain Warlock levels, as shown in the Prepared Spells column of the Warlock Features table. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Warlock spell, which can be of levels 1–3. If another Warlock feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Warlock spells for you. Changing Your Prepared Spells. Whenever you gain a Warlock level, you can replace one spell on your list with another Warlock spell of an eligible level. Spellcasting Ability. Charisma is the spellcasting ability for your Warlock spells. Spellcasting Focus. You can use an @item[Arcane Focus|XPHB] as a @variantrule[Spellcasting Focus|XPHB] for your Warlock spells."
+      },
+      {
+        "name": "Eldritch Invocations: Eldritch Mind",
+        "description": "You have @variantrule[Advantage|XPHB] on Constitution saving throws that you make to maintain @status[Concentration|XPHB]."
+      },
+      {
+        "name": "Creature Type",
+        "description": "You are a Humanoid. You are also considered a gnome for any prerequisite or effect that requires you to be a gnome."
+      },
+      {
+        "name": "Darkvision",
+        "description": "You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Gift of the Svirfneblin",
+        "description": "Starting at 3rd level, you can cast the @UUID[.OdFlkjqbJmiTd427] spell with this trait. Starting at 5th level, you can also cast the @UUID[.aUNmUtj4zgGzxtkR] spell with it, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+      },
+      {
+        "name": "Gnomish Magic Resistance",
+        "description": "You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells."
+      },
+      {
+        "name": "Svirfneblin Camouflage",
+        "description": "When you make a Dexterity (&Reference[skill=Stealth]) check, you can make the check with advantage. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      },
+      {
+        "name": "Languages",
+        "description": "You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+      },
+      {
+        "name": "Agonizing Blast",
+        "description": "Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls. Repeatable. You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+      },
+      {
+        "name": "Fiendish Vigor",
+        "description": "Prerequisite: Level 2+ Warlock You can cast @spell[False Life|XPHB] on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the @variantrule[Temporary Hit Points|XPHB]; you automatically get the highest number on the die."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "Lucky",
+    "spellcasting": {
+      "spellcastingClass": "Warlock",
+      "spellcastingAbility": "CHA",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
+      "cantrips": [
+        {
+          "name": "Eldritch Blast"
+        },
+        {
+          "name": "Hocuspocus"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "Disguise Self",
+              "prepared": true
+            },
+            {
+              "name": "Armor of Agathys",
+              "prepared": true
+            },
+            {
+              "name": "False Life",
+              "prepared": true
+            },
+            {
+              "name": "Hex",
+              "prepared": true
+            },
+            {
+              "name": "Lashing Tendrils",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "Nondetection",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
   },
   {
     "id": "character-69fcda54-74a9-4c00-a01e-8851cde4b0ee",
@@ -125,7 +1480,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-0634c2e1-49f9-444f-ac3c-f23c22d3e65c",
+        "id": "classlevel-123ac852-f017-42cf-9e56-11992c153a10",
         "className": "Warlock",
         "subclassName": "Celestial Patron",
         "level": 2
@@ -165,11 +1520,677 @@
       }
     ],
     "activeImageId": "img-783ded49-c70f-4154-b3d3-9b8c4a2ca631",
-    "status": "In-Action"
+    "status": "In-Action",
+    "combat": {
+      "ac": "",
+      "speed": "30 ft",
+      "hitDice": "2d8",
+      "inspiration": false,
+      "xp": 0,
+      "hp": {
+        "current": 19,
+        "max": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": false,
+      "wis": true,
+      "cha": true
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": false,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": true,
+        "expertise": false
+      },
+      "history": {
+        "prof": false,
+        "expertise": false
+      },
+      "insight": {
+        "prof": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": true,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": true,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": true,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": false,
+        "expertise": false
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+4",
+        "damages": [
+          {
+            "amount": "1 + @mod",
+            "type": "Bludgeoning"
+          }
+        ]
+      }
+    ],
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 60,
+      "pp": 0
+    },
+    "attacksSpellcasting": "",
+    "equipment": [
+      {
+        "name": "Book of Shadows",
+        "qty": 1
+      },
+      {
+        "name": "Backpack",
+        "qty": 1
+      },
+      {
+        "name": "Traveler's Clothes",
+        "qty": 1
+      },
+      {
+        "name": "Studded Leather Armor",
+        "qty": 1
+      },
+      {
+        "name": "Potion of Healing",
+        "qty": 1
+      },
+      {
+        "name": "Blanket",
+        "qty": 1
+      },
+      {
+        "name": "Rations",
+        "qty": 10
+      }
+    ],
+    "proficienciesLanguages": [
+      "Common",
+      "Elvish"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Eldritch Invocations",
+        "description": "You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons. You gain one invocation of your choice, such as Pact of the Tome. Invocations are described in the \" Eldritch Invocation Options \" section later in this class's description. Prerequisites. If an invocation has a prerequisite, you must meet it to learn that invocation. For example, if an invocation requires you to be a level 5+ Warlock, you can select the invocation once you reach Warlock level 5. Replacing and Gaining Invocations. Whenever you gain a Warlock level, you can replace one of your invocations with another one for which you qualify. You can't replace an invocation if it's a prerequisite for another invocation that you have. When you gain certain Warlock levels, you gain more invocations of your choice, as shown in the Invocations column of the Warlock Features table. You can't pick the same invocation more than once unless its description says otherwise."
+      },
+      {
+        "name": "Pact Magic",
+        "description": "Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers. The entity is a voice in the shadows—its identity unclear—but its boon to you is concrete: the ability to cast spells. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Warlock spells, which appear in the Warlock spell list later in the class's description. Cantrips. You know two Warlock cantrips of your choice. @spell[Eldritch Blast|XPHB] and @spell[Prestidigitation|XPHB] are recommended. Whenever you gain a Warlock level, you can replace one of your cantrips from this feature with another Warlock cantrip of your choice. When you reach Warlock levels 4 and 10, you learn another Warlock cantrip of your choice, as shown in the Cantrips column of the Warlock Features table. Spell Slots. The Warlock Features table shows how many spell slots you have to cast your Warlock spells of levels 1–5. The table also shows the level of those slots, all of which are the same level. You regain all expended Pact Magic spell slots when you finish a @variantrule[Short Rest|XPHB|Short] or @variantrule[Long Rest|XPHB]. For example, when you're a level 5 Warlock, you have two level 3 spell slots. To cast the level 1 spell @spell[Witch Bolt|XPHB], you must spend one of those slots, and you cast it as a level 3 spell. Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Warlock spells. @spell[Charm Person|XPHB] and @spell[Hex|XPHB] are recommended. The number of spells on your list increases as you gain Warlock levels, as shown in the Prepared Spells column of the Warlock Features table. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Warlock spell, which can be of levels 1–3. If another Warlock feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Warlock spells for you. Changing Your Prepared Spells. Whenever you gain a Warlock level, you can replace one spell on your list with another Warlock spell of an eligible level. Spellcasting Ability. Charisma is the spellcasting ability for your Warlock spells. Spellcasting Focus. You can use an @item[Arcane Focus|XPHB] as a @variantrule[Spellcasting Focus|XPHB] for your Warlock spells."
+      },
+      {
+        "name": "Eldritch Invocations: Pact of the Tome",
+        "description": "Stitching together strands of shadow, you conjure forth a book in your hand at the end of a @variantrule[Short Rest|XPHB|Short] or @variantrule[Long Rest|XPHB]. This Book of Shadows (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die. Cantrips and Rituals. When the book appears, choose three cantrips , and choose two level 1 spells that have the @variantrule[Ritual|XPHB] tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you. Spellcasting Focus. You can use the book as a @variantrule[Spellcasting Focus|XPHB]."
+      },
+      {
+        "name": "Creature Type",
+        "description": "You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
+      },
+      {
+        "name": "Blessing of the Raven Queen",
+        "description": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
+      },
+      {
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have advantage on saving throws you make to avoid or end the &Reference[condition=charmed] condition on yourself."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "You have proficiency in the &Reference[skill=Perception] skill."
+      },
+      {
+        "name": "Necrotic Resistance",
+        "description": "You have resistance to necrotic damage."
+      },
+      {
+        "name": "Trance",
+        "description": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+      },
+      {
+        "name": "Languages",
+        "description": "You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+      },
+      {
+        "name": "Fiendish Vigor",
+        "description": "Prerequisite: Level 2+ Warlock You can cast @spell[False Life|XPHB] on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the @variantrule[Temporary Hit Points|XPHB]; you automatically get the highest number on the die."
+      },
+      {
+        "name": "Agonizing Blast",
+        "description": "Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls. Repeatable. You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "Magic Initiate; Cleric",
+    "spellcasting": {
+      "spellcastingClass": "Warlock",
+      "spellcastingAbility": "CHA",
+      "spellSaveDC": "14",
+      "spellAttackBonus": "+6",
+      "cantrips": [
+        {
+          "name": "Eldritch Blast"
+        },
+        {
+          "name": "Friends"
+        },
+        {
+          "name": "Vicious Mockery"
+        },
+        {
+          "name": "Mage Hand"
+        },
+        {
+          "name": "Minor Illusion"
+        },
+        {
+          "name": "Spare the Dying"
+        },
+        {
+          "name": "Guidance"
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "Detect Magic",
+              "prepared": true
+            },
+            {
+              "name": "Comprehend Languages",
+              "prepared": true
+            },
+            {
+              "name": "Healing Word",
+              "prepared": true
+            },
+            {
+              "name": "Hex",
+              "prepared": true
+            },
+            {
+              "name": "Armor of Agathys",
+              "prepared": true
+            },
+            {
+              "name": "Unseen Servant",
+              "prepared": true
+            },
+            {
+              "name": "False Life",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
   },
   {
     "id": "character-d178e79b-7e84-4847-8875-769f22a10321",
-    "name": "Xiah",
+    "name": "Xiah Mystvale",
     "ownerId": "user-0f2c5824-53b0-4a53-97e6-da3872c0efb1",
     "partyTagIds": [
       "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70"
@@ -179,7 +2200,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-bbac917b-8114-46d3-8465-711fc5614847",
+        "id": "classlevel-f0f7b220-cf92-407a-b4ed-c198d5c4a4e8",
         "className": "Fighter",
         "subclassName": "Arcane Archer",
         "level": 2
@@ -219,7 +2240,682 @@
       }
     ],
     "activeImageId": "img-fa2e6923-e924-4913-b6a2-d5ba4dedd224",
-    "status": "In-Action"
+    "status": "In-Action",
+    "combat": {
+      "ac": "",
+      "speed": "30 ft",
+      "hitDice": "2d10",
+      "inspiration": false,
+      "xp": 300,
+      "hp": {
+        "current": 22,
+        "max": "",
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": true,
+      "dex": false,
+      "con": true,
+      "int": false,
+      "wis": false,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": true,
+        "expertise": false
+      },
+      "animal": {
+        "prof": false,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": true,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": false,
+        "expertise": false
+      },
+      "history": {
+        "prof": true,
+        "expertise": false
+      },
+      "insight": {
+        "prof": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": false,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": false,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": false,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": false,
+        "expertise": false
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+2",
+        "damages": [
+          {
+            "amount": "1 + @mod",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Longbow",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1d8",
+            "type": "Piercing"
+          }
+        ]
+      },
+      {
+        "name": "Shortbow",
+        "bonusOrDC": "+5",
+        "damages": [
+          {
+            "amount": "1d6",
+            "type": "Piercing"
+          }
+        ]
+      }
+    ],
+    "currency": {
+      "cp": 0,
+      "sp": 0,
+      "ep": 0,
+      "gp": 60,
+      "pp": 0
+    },
+    "attacksSpellcasting": "",
+    "equipment": [
+      {
+        "name": "Backpack",
+        "qty": 1
+      },
+      {
+        "name": "Quiver",
+        "qty": 1
+      },
+      {
+        "name": "Quiver",
+        "qty": 1
+      },
+      {
+        "name": "Traveler's Clothes",
+        "qty": 1
+      },
+      {
+        "name": "Arrows",
+        "qty": 40
+      },
+      {
+        "name": "Potion of Healing",
+        "qty": 1
+      },
+      {
+        "name": "Spell Scroll: Revivify",
+        "qty": 1
+      },
+      {
+        "name": "Chain Shirt",
+        "qty": 1
+      }
+    ],
+    "proficienciesLanguages": [
+      "Common",
+      "Draconic",
+      "sign"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Fighting Style",
+        "description": "You have honed your martial prowess and gain a Fighting Style feat of your choice. @feat[Defense|XPHB] is recommended. Whenever you gain a Fighter level, you can replace the feat you chose with a different Fighting Style feat ."
+      },
+      {
+        "name": "Second Wind",
+        "description": "You have a limited well of physical and mental stamina that you can draw on. As a @variantrule[Bonus Action|XPHB], you can use it to regain @variantrule[Hit Points|XPHB] equal to [[/r 1d10]] plus your Fighter level. You can use this feature twice. You regain one expended use when you finish a @variantrule[Short Rest|XPHB], and you regain all expended uses when you finish a @variantrule[Long Rest|XPHB]. When you reach certain Fighter levels, you gain more uses of this feature, as shown in the Second Wind column of the Fighter Features table."
+      },
+      {
+        "name": "Weapon Mastery",
+        "description": "Your training with weapons allows you to use the @variantrule[weapon mastery properties|XPHB|mastery properties] of three kinds of Simple or Martial weapons of your choice. Whenever you finish a @variantrule[Long Rest|XPHB], you can practice weapon drills and change one of those weapon choices. When you reach certain Fighter levels, you gain the ability to use the @variantrule[weapon mastery properties|XPHB|mastery properties] of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter Features table."
+      },
+      {
+        "name": "Breath Weapon",
+        "description": "When you take the @action[Attack|XPHB] action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot @variantrule[Cone [Area of Effect]|XPHB|Cone] or a 30-foot @variantrule[Line [Area of Effect]|XPHB|Line] that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and @variantrule[Proficiency|XPHB|Proficiency Bonus]). On a failed save, a creature takes [[/damage 1d10 type=acid]] damage. On a successful save, a creature takes half as much damage. This damage increases by [[/damage 1d10]] when you reach character levels 5 ([[/damage 2d10]]), 11 ([[/damage 3d10]]), and 17 ([[/damage 4d10]]). You can use this Breath Weapon a number of times equal to your @variantrule[Proficiency|XPHB|Proficiency Bonus], and you regain all expended uses when you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Damage Resistance",
+        "description": "You have @variantrule[Resistance|XPHB] to Acid damage."
+      },
+      {
+        "name": "Darkvision",
+        "description": "You have &Reference[rule=Darkvision] with a range of 60 feet."
+      },
+      {
+        "name": "Draconic Flight",
+        "description": "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a @variantrule[Bonus Action|XPHB], you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the &Reference[condition=Incapacitated] condition. During that time, you have a @variantrule[Fly Speed|XPHB] equal to your @variantrule[Speed|XPHB]. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Action Surge",
+        "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the @action[Magic|XPHB] action. Once you use this feature, you can't do so again until you finish a @variantrule[Short Rest|XPHB|Short] or @variantrule[Long Rest|XPHB]. Starting at level 17, you can use it twice before a rest but only once on a turn."
+      },
+      {
+        "name": "Tactical Mind",
+        "description": "You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining @variantrule[Hit Points|XPHB], you roll [[/r 1d10]] and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "Fighting Style: Archery; Magic Initiate; Wizard",
+    "spellcasting": {
+      "spellcastingClass": "",
+      "spellcastingAbility": "",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
+      "cantrips": [
+        {
+          "name": "Shocking Grasp"
+        },
+        {
+          "name": "Toll the Dead"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "Burning Hands",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
   },
   {
     "id": "character-b92b1152-b96b-4095-a209-c75dca05109f",
@@ -233,7 +2929,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-466efa64-ba9d-46ed-a790-72cdec4ba433",
+        "id": "classlevel-e2512bba-363f-4135-ae8a-af9df36cfb38",
         "className": "Tactician",
         "subclassName": "Gambler",
         "level": 2
@@ -273,7 +2969,700 @@
       }
     ],
     "activeImageId": "img-9d41ad3b-aa0e-4eb8-a63c-7bc5619c9aa0",
-    "status": "In-Action"
+    "status": "In-Action",
+    "combat": {
+      "ac": "",
+      "speed": "30 ft",
+      "hitDice": "2d8",
+      "inspiration": false,
+      "xp": 0,
+      "hp": {
+        "max": "",
+        "current": 19,
+        "temp": ""
+      },
+      "deathSaves": {
+        "successes": 0,
+        "failures": 0
+      }
+    },
+    "savingThrows": {
+      "str": false,
+      "dex": false,
+      "con": false,
+      "int": true,
+      "wis": true,
+      "cha": false
+    },
+    "skills": {
+      "acrobatics": {
+        "prof": false,
+        "expertise": false
+      },
+      "animal": {
+        "prof": false,
+        "expertise": false
+      },
+      "arcana": {
+        "prof": false,
+        "expertise": false
+      },
+      "athletics": {
+        "prof": false,
+        "expertise": false
+      },
+      "deception": {
+        "prof": true,
+        "expertise": false
+      },
+      "history": {
+        "prof": true,
+        "expertise": false
+      },
+      "insight": {
+        "prof": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "prof": false,
+        "expertise": false
+      },
+      "investigation": {
+        "prof": true,
+        "expertise": false
+      },
+      "medicine": {
+        "prof": false,
+        "expertise": false
+      },
+      "nature": {
+        "prof": false,
+        "expertise": false
+      },
+      "perception": {
+        "prof": true,
+        "expertise": false
+      },
+      "performance": {
+        "prof": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "prof": true,
+        "expertise": false
+      },
+      "religion": {
+        "prof": false,
+        "expertise": false
+      },
+      "sleightOfHand": {
+        "prof": false,
+        "expertise": false
+      },
+      "stealth": {
+        "prof": false,
+        "expertise": false
+      },
+      "survival": {
+        "prof": false,
+        "expertise": false
+      }
+    },
+    "weapons": [
+      {
+        "name": "Hand Crossbow",
+        "bonusOrDC": "+3",
+        "damages": [
+          {
+            "amount": "1d6",
+            "type": "Piercing"
+          }
+        ]
+      },
+      {
+        "name": "Unarmed Strike",
+        "bonusOrDC": "+2",
+        "damages": [
+          {
+            "amount": "1 + @mod",
+            "type": "Bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Rapier",
+        "bonusOrDC": "+3",
+        "damages": [
+          {
+            "amount": "1d8",
+            "type": "Piercing"
+          }
+        ]
+      }
+    ],
+    "currency": {
+      "cp": 0,
+      "sp": 5,
+      "ep": 3,
+      "gp": 313,
+      "pp": 0
+    },
+    "attacksSpellcasting": "",
+    "equipment": [
+      {
+        "name": "Backpack",
+        "qty": 1
+      },
+      {
+        "name": "Quiver",
+        "qty": 1
+      },
+      {
+        "name": "Potion of Fire Breath",
+        "qty": 1
+      },
+      {
+        "name": "Bolts",
+        "qty": 20
+      },
+      {
+        "name": "Studded Leather Armor",
+        "qty": 1
+      },
+      {
+        "name": "Traveler's Clothes",
+        "qty": 1
+      },
+      {
+        "name": "อัญมณีสีม่วง",
+        "qty": 1
+      },
+      {
+        "name": "Spell Scroll: Fireball",
+        "qty": 1
+      },
+      {
+        "name": "potion belt (5 max)",
+        "qty": 1
+      },
+      {
+        "name": "Cook's Utensils",
+        "qty": 1
+      }
+    ],
+    "proficienciesLanguages": [
+      "cant",
+      "Common",
+      "Dwarvish",
+      "Elvish",
+      "sign"
+    ],
+    "featuresAndTraits": [
+      {
+        "name": "Darkvision",
+        "description": "You have &Reference[rule=Darkvision] with a range of 60 feet."
+      },
+      {
+        "name": "Elven Lineage (High Elf)",
+        "description": "You are part of a lineage that grants you supernatural abilities. You know the @UUID[.k9FLRL4sK39AA2m4] cantrip. Whenever you finish a @variantrule[Long Rest|XPHB], you can replace that cantrip with a different cantrip from the Wizard spell list . When you reach character level 3, you learn the @UUID[.rESEZPWh0Wv6grZk] spell. When you reach character level 5, you also learn the @UUID[.yUrur1DUF707spJg] spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a @variantrule[Long Rest|XPHB]. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have @variantrule[Advantage|XPHB] on saving throws you make to avoid or end the &Reference[condition=Charmed] condition."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "You have proficiency in the &Reference[skill=Insight], &Reference[skill=Perception], or &Reference[skill=Survival] skill."
+      },
+      {
+        "name": "Trance",
+        "description": "You don't need to sleep, and magic can't put you to sleep. You can finish a @variantrule[Long Rest|XPHB] in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness."
+      },
+      {
+        "name": "Polyglot",
+        "description": "Your learning encompasses far more than simply warfare. You learn two languages of your choice."
+      },
+      {
+        "name": "Intelligent Defense",
+        "description": "You rely on predictive measures and careful observation to protect yourself, rather than raw agility. You can use your Intelligence instead of your Dexterity when determining your Armor Class."
+      },
+      {
+        "name": "Perfect Plan",
+        "description": "You can spend 10 minutes formulating a Perfect Plan , gaining Perfect Plan dice (d4s) equal to your Intelligence modifier (min 1). The plan includes yourself and any number of willing creatures within 60 ft when made. When a creature within 60 ft that is part of your plan makes a d20 Test and can see or hear you, you can use your Reaction to expend one Perfect Plan die, adding it to the result. You may decide after the d20 is rolled but before success/failure is announced. Only one die at a time; a rolled die is lost. Once made, you can't make another plan until you finish a Long Rest, at which point unspent dice are lost. Level 5+: Max dice = Intelligence modifier + Proficiency Bonus (min 4)."
+      },
+      {
+        "name": "Weapon Mastery (Tactician)",
+        "description": "You can use the Mastery property of two kinds of weapons of your choice with which you have proficiency. Whenever you finish a Long Rest, you can change the weapons chosen."
+      },
+      {
+        "name": "Analyze",
+        "description": "As a Bonus Action , begin analyzing a creature you can see within 60 ft. While analyzing: You gain a special extra Reaction once each round (not on the same turn as your normal Reaction), usable only to spend Perfect Plan dice on d20 Tests made against, in contest with, or caused by the analyzed creature. The analyzed creature has Disadvantage on opportunity attacks against you. Lasts 1 minute. Ends early if you lose Concentration, or if you end your turn unable to see it or more than 60 ft away."
+      },
+      {
+        "name": "Contingency Plan",
+        "description": "When you complete a Short Rest, you can regain expended Perfect Plan dice equal to half your maximum (rounded up). Once used, you can't use it again until you finish a Long Rest."
+      }
+    ],
+    "alliesOrganizations": "",
+    "factionName": "",
+    "treasure": "",
+    "additionalFeaturesTraits": "Lucky",
+    "spellcasting": {
+      "spellcastingClass": "",
+      "spellcastingAbility": "",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
+      "cantrips": [
+        {
+          "name": "Prestidigitation"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        }
+      ],
+      "levels": {
+        "1": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "Detect Magic",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "2": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "Misty Step",
+              "prepared": true
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "3": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "4": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "5": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "6": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "7": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "8": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        },
+        "9": {
+          "slotsTotal": 0,
+          "slotsRemaining": "",
+          "spells": [
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            },
+            {
+              "name": "",
+              "prepared": false
+            }
+          ]
+        }
+      }
+    }
   },
   {
     "id": "character-b2bf1f7b-160d-441d-b165-5db86f33b215",
@@ -1313,7 +4702,7 @@
     "weight": "18 kg",
     "age": "68 ปี",
     "ideals": "ความรู้ (Knowledge) - ความรู้คือพลังที่แท้จริง และพลังที่ยิ่งใหญ่ย่อมต้องถูกควบคุมด้วยเจตจำนงที่แข็งแกร่งดั่งเหล็กกล้า ไม่ใช่ถูกแผดเผาอย่างไร้ทิศทาง",
-    "bonds": "\"หอจดหมายเหตุเถ้าถ่าน\" (The Ashen Archive) - ห้องสมุดลับที่ตั้งอยู่บนรอยต่อระหว่าง Material Plane และ Plane of Fire ข้าสาบานว่าจะปกป้องความรู้ที่ซ่อนอยู่ในนั้นด้วยชีวิต",
+    "bonds": "\"���อจดหมายเหตุเถ้าถ่าน\" (The Ashen Archive) - ห้องสมุดลับที่ตั้งอยู่บนรอยต่อระหว่าง Material Plane และ Plane of Fire ข้าสาบานว่าจะปกป้องความรู้ที่ซ่อนอยู่ในนั้นด้วยชีวิต",
     "flaws": "ข้ามีความหยิ่งผยองในสายเลือดมังกรและพลังแห่งจินนี่ของตนเอง ข้าจะโกรธเกรี้ยวและสูญเสียความเยือกเย็นทันทีหากมีใครบังอาจดูถูกเผ่าพันธุ์โคโบลด์หรือมองว่าข้าเป็นเพียงสัตว์เลื้อยคลานไร้ค่า",
     "personalityTraits": "ข้าพูดจาด้วยคำศัพท์โบราณ โวหารงดงาม และมีน้ำเสียงที่ดูยิ่งใหญ่เกินตัว ข้าจะลูบตำราเวทมนตร์ของตนเองอย่างทะนุถนอมเสมอราวกับมันเป็นลูกในไส้ และมักจะพ่นควันจางๆ ออกจากจมูกเมื่อรู้สึกหงุดหงิด",
     "appearance": "โคโบลด์ร่างจิ๋วที่แผ่ออร่าความร้อนออกมาจางๆ สวมชุดเกราะครึ่งท่อน (Half-Plate) ทำจากทองเหลืองสั่งทำพิเศษ สลักลวดลายเปลวเพลิงและกลุ่มควันอันเป็นเอกลักษณ์ของศิลปะนครแห่งทองเหลือง (City of Brass) ���ขาประดับตัวด้วยเครื่องประดับทองคำและทับทิม มือหนึ่งถือหอกง้าวขนาดเล็ก (Halberd) ที่ใบมีดแดงฉานราวกับเพิ่งออกจากเตาหลอม ด้านหลังมีตำราเวทมนตร์ปกหนังมังกรที่ลอยตามตัวเขาอยู่เสมอ โดยเชื่อมติดกับเข็มขัดด้วยโซ่ทองคำเส้นเล็กๆ",

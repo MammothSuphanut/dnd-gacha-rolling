@@ -1114,7 +1114,7 @@
         "urban": true,
         "premium": true,
         "enhanceable": true,
-        "note": "เกราะกลางทำจากแผ่นโลหะเรีย�����������������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
+        "note": "เกราะกลางทำจากแผ่นโลหะเรีย�������������������������������ป็นแถบซ้��������������������������น���ับ ให้ AC 15 + DEX mod (สูงสุด 2) และทำให้ Stealth เสียเปรียบ",
         "link": "https://5e.tools/items.html#banded%20plate_vss",
         "rarity": "Mundane"
       },
@@ -9357,7 +9357,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "กระเป๋าสัมภาระสำหรับโจร มีเชือก ตะข��� กระโปก และอุปกรณ์ลอบเข้า",
+        "note": "กระเป๋าสัมภาระสำหรับโจร มีเชือก ต���ข��� กระโปก และอุปกรณ์ลอบเข้า",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#burglar's%20pack_xphb",
         "rarity": "Mundane"
@@ -19248,7 +19248,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — Greatbow +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพิ���ิจ)",
+        "note": "Uncommon — Greatbow +1 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุ���ยพิ���ิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B1%20greatbow_xdmg",
         "rarity": "Uncommon"
@@ -23073,7 +23073,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — Hinge Spear +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามดุลยพิน����จ)",
+        "note": "Rare — Hinge Spear +2 มาตรฐาน ราคาประเมินอัตโนมัติจากความหายาก (ปรับได้ตามด��ลยพิน����จ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#%2B2%20hinge%20spear_xdmg",
         "rarity": "Rare"
@@ -28768,7 +28768,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "Uncommon — ราคาประเมินอัต���นมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Uncommon — ราคาประ���มินอัต���นมัติจากความหายาก/ความสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#bloodrage%20greataxe_bmt",
         "rarity": "Uncommon"
@@ -37993,7 +37993,7 @@
         "rural": true,
         "urban": true,
         "premium": true,
-        "note": "คบเพลิงให้แสงสว่างรัศมี 20 ฟุต เผาไหม้ได้นาน 1 ชั่ว��ม���",
+        "note": "คบเพลิงให้แสงสว่างรัศมี 20 ฟุต เผาไหม้ได��นาน 1 ชั่ว��ม���",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#torch_xphb",
         "rarity": "Mundane"
@@ -45594,7 +45594,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Rare — ราคาประเมินอัตโนมัติจากความหายาก/ค���ามสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Rare — ราคาประเมินอัตโนมัติจาก��วามหายาก/ค���ามสามารถของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#boots%20of%20levitation_xdmg",
         "rarity": "Rare"
@@ -49249,7 +49249,7 @@
         "rural": false,
         "urban": true,
         "premium": false,
-        "note": "unknown — ยังไม่มีราคาอ้างอิง (rarity ไม่ชัดเจนใน 5etools) ให้ตั้งรา��าเอง",
+        "note": "unknown — ยังไม่มีราคาอ้างอิง (rarity ไม่ชัดเจ���ใน 5etools) ให้ตั้งรา��าเอง",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#flensing%20claws%20(medium)_vgm",
         "rarity": "Rare"
@@ -58412,7 +58412,7 @@
         "rural": false,
         "urban": true,
         "premium": true,
-        "note": "Legendary — ราคาประเมินอัตโนมัติจากความหายาก/ความสามาร��ของไอเทม (ปรับได้ตามดุลยพินิจ)",
+        "note": "Legendary — ราคาประเมินอัตโนมัติจากคว���มหายาก/ความสามาร��ของไอเทม (ปรับได้ตามดุลยพินิจ)",
         "enhanceable": false,
         "link": "https://5e.tools/items.html#ythryn%20mythallar_idrotf",
         "rarity": "Legendary"
