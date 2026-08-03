@@ -20,7 +20,7 @@ Ofear มี **The Fragment** ทั้ง 5 ชิ้นเป็นทั้�
 - Fragment of Genesis
 - Fragment of Zenith
 
-> ดูกลไกเกม (Usage/Effect/Stress Cost) ของแต่ละชิ้นได้ที่ [01-the-fragments.md](./01-the-fragments.md)
+> ดูกลไกเกม (Usage/Effect/Limit) ของแต่ละชิ้นได้ที่ [01-the-fragments.md](./01-the-fragments.md)
 
 > **หมายเหตุขอบเขตแคมเปญ**: ทั้งเรื่องเกิดขึ้นใน **Wildemount** ล้วนๆ (Act 1 เปิด/Act 6 ปิดที่ Eiselcross เท่านั้น) เนื้อหา Act 2–5 เวอร์ชันเก่า (ทวีปอื่น) ถูกเก็บไว้ที่ [_archive/](./_archive/) เป็นข้อมูลอ้างอิง ไม่ใช่เนื้อเรื่องหลักอีกต่อไป
 
