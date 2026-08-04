@@ -2,9 +2,11 @@
 
 โฟลเดอร์นี้รวมเครื่องมือช่วยออกแบบ D&D Adventure แบบสัมภาษณ์ทีละคำถาม จนได้ adventure outline ที่มีรายละเอียดครบ มี 2 วิธีใช้งาน แล้วแต่ว่าจะใช้ที่ไหน
 
-ทุก adventure ที่สร้างผูกอยู่กับ meta-campaign หลัก **"Astral Nexus: Constellation Protocol"** (ดูเนื้อเรื่องเต็มที่ [astral-nexus-lore.md](./astral-nexus-lore.md)) — บทสัมภาษณ์จะมีคำถามเพิ่มว่า adventure นี้เชื่อมกับ "เมล็ดพันธุ์แห่งการทำลายล้าง" ในเรื่องหลักอย่างไร แล้วแทรกเป็นบทนำสั้นๆ ใน `00-overview.md` และบทส่งท้ายใน EP สุดท้าย
+ทุก adventure ที่สร้างผูกอยู่กับ meta-campaign หลัก **"Astral Nexus: Constellation Protocol"** (ดูเนื้อเรื่องเต็มที่ [astral-nexus-lore.md](../homebrew-rules/astral-nexus-lore.md)) — บทสัมภาษณ์จะมีคำถามเพิ่มว่า adventure นี้เชื่อมกับ "เมล็ดพันธุ์แห่งการทำลายล้าง" ในเรื่องหลักอย่างไร แล้วแทรกเป็นบทนำสั้นๆ ใน `00-overview.md` และบทส่งท้ายใน EP สุดท้าย
 
-ทุก adventure ยังใช้**ระบบ Fatigue กลางเดียวกัน**ตามกฎใน [stress-system.md](./stress-system.md) ถ้ามีกลไกในเรื่องที่ให้ตัวละครรับ Fatigue (เช่น สภาพแวดล้อมสุดขั้ว, การเดินทางหนัก) — ให้ลิงก์ไปไฟล์นั้นแทนการนิยามผลลัพธ์ของ Fatigue ซ้ำเอง
+ทุก adventure ยังใช้**ระบบ Fatigue กลางเดียวกัน**ตามกฎใน [Fatigue-system.md](../homebrew-rules/Fatigue-system.md) ถ้ามีกลไกในเรื่องที่ให้ตัวละครรับ Fatigue (เช่น สภาพแวดล้อมสุดขั้ว, การเดินทางหนัก) — ให้ลิงก์ไปไฟล์นั้นแทนการนิยามผลลัพธ์ของ Fatigue ซ้ำเอง
+
+ทุก adventure ยังใช้**กฎ Death & Dying กลางเดียวกัน**ตามกฎใน [Death-and-Dying-system.md](../homebrew-rules/Death-and-Dying-system.md) — ครอบคลุมกฎ 0 HP มาตรฐาน + กฎ "แรงฮึด (Surge of Will)" ที่ให้ตัวละคร stable ฮึดลุกขึ้นสู้ต่อได้เองโดยจ่าย Hit Dice
 
 ทุก adventure ยังใช้**กฎอ้างอิง Critical Role Wiki**ตามใน [canon-reference.md](./canon-reference.md) — ก่อนแต่งรายละเอียดสถานที่/NPC/องค์กรที่ชื่อซ้ำหรือใกล้เคียงกับ Critical Role canon (Rexxentrum, Uthodurn, Kryn Dynasty ฯลฯ) ให้ค้น Wiki ก่อนเสมอ แทนการเดาขึ้นเอง
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generates character-builder/class-subclass-index.md by scanning every
+ * Generates homebrew-rules/class-subclass-index.md by scanning every
  * class/subclass definition mirrored under src/data/5etools/ (official +
  * homebrew). Run this any time the 5etools data changes:
  *
@@ -19,7 +19,7 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const DATA_5E = path.join(ROOT, "src", "data", "5etools");
-const OUT_FILE = path.join(ROOT, "character-builder", "class-subclass-index.md");
+const OUT_FILE = path.join(ROOT, "homebrew-rules", "class-subclass-index.md");
 
 const EDITION_LABEL = { classic: "2014", one: "2024" };
 

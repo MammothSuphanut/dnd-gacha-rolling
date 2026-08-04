@@ -10,7 +10,7 @@
 | Grim Hollow (Ghostfire Gaming) | `src/data/5etools/homebrew/grim-hollow/` | class/subclass/feat/species สายดาร์กแฟนตาซี |
 | Valda's Spire of Secrets (Mage Hand Press) | `src/data/5etools/homebrew/valdas-spire/` | class/subclass/feat/species เสริมทางเลือกอื่นๆ |
 
-**ดัชนี class/subclass ทั้งหมด**: [class-subclass-index.md](class-subclass-index.md) เป็นไฟล์ auto-generated รวมทุก class (official + homebrew) พร้อม subclass ของแต่ละ class ครบทุกตัว ระบุ edition/source/book กำกับ — สร้างขึ้นเพราะ homebrew subclass (โดยเฉพาะ Valda's Spire of Secrets ที่มีเกือบ 200 ตัว) ถูกฝังปนกับ spell/monster/item อยู่ในไฟล์ compendium ก้อนใหญ่ก้อนเดียวต่อเล่ม เปิดไฟล์ตรงๆ แล้วมีโอกาสเห็นไม่ครบ **ทุกครั้งที่จะเสนอ/เปรียบเทียบ subclass ของ class ใดก็ตาม ให้เปิดไฟล์นี้ดูรายชื่อ subclass ทั้งหมดของ class นั้นก่อนเสมอ** (ทั้ง official และ homebrew) แล้วค่อยไปอ่านรายละเอียด feature จากไฟล์ source จริงใน `src/data/5etools/` ตามที่ระบุไว้ในตาราง — ห้ามข้ามขั้นนี้แล้วไล่หาเองในไฟล์ homebrew ก้อนใหญ่ตรงๆ เพราะเป็นสาเหตุที่เคยเสนอ subclass ไม่ครบ
+**ดัชนี class/subclass ทั้งหมด**: [class-subclass-index.md](../homebrew-rules/class-subclass-index.md) เป็นไฟล์ auto-generated รวมทุก class (official + homebrew) พร้อม subclass ของแต่ละ class ครบทุกตัว ระบุ edition/source/book กำกับ — สร้างขึ้นเพราะ homebrew subclass (โดยเฉพาะ Valda's Spire of Secrets ที่มีเกือบ 200 ตัว) ถูกฝังปนกับ spell/monster/item อยู่ในไฟล์ compendium ก้อนใหญ่ก้อนเดียวต่อเล่ม เปิดไฟล์ตรงๆ แล้วมีโอกาสเห็นไม่ครบ **ทุกครั้งที่จะเสนอ/เปรียบเทียบ subclass ของ class ใดก็ตาม ให้เปิดไฟล์นี้ดูรายชื่อ subclass ทั้งหมดของ class นั้นก่อนเสมอ** (ทั้ง official และ homebrew) แล้วค่อยไปอ่านรายละเอียด feature จากไฟล์ source จริงใน `src/data/5etools/` ตามที่ระบุไว้ในตาราง — ห้ามข้ามขั้นนี้แล้วไล่หาเองในไฟล์ homebrew ก้อนใหญ่ตรงๆ เพราะเป็นสาเหตุที่เคยเสนอ subclass ไม่ครบ
 
 ถ้าข้อมูลใน `src/data/5etools/` เปลี่ยน (เพิ่ม/อัปเดต mirror) ให้รันคำสั่งนี้เพื่อ regenerate ไฟล์ดัชนีใหม่:
 
@@ -20,7 +20,7 @@ node character-builder/scripts/generate-class-subclass-index.cjs
 
 ## Ruleset ก่อนเริ่มสร้าง/ปรึกษาตัวละคร
 
-ทุกครั้งที่จะใช้ข้อมูลจาก `src/data/5etools/` หรือไฟล์ดัชนี [class-subclass-index.md](class-subclass-index.md) เพื่อสร้างตัวละครใหม่หรือปรึกษาเรื่องตัวละครเดิม (level up, เลือก subclass/feat/spell ฯลฯ) **ต้องถามผู้ใช้ 4 คำถามนี้ก่อนเสมอ**: (ถามครั้งเดียวตอนเริ่ม — ถ้าตอบไว้แล้วในเซสชันเดียวกัน หรือมีบันทึกไว้ใน header ของ `character-sheet.md` แล้ว ให้ใช้ค่าเดิมโดยไม่ต้องถามซ้ำ เว้นแต่ผู้ใช้อยากเปลี่ยน)
+ทุกครั้งที่จะใช้ข้อมูลจาก `src/data/5etools/` หรือไฟล์ดัชนี [class-subclass-index.md](../homebrew-rules/class-subclass-index.md) เพื่อสร้างตัวละครใหม่หรือปรึกษาเรื่องตัวละครเดิม (level up, เลือก subclass/feat/spell ฯลฯ) **ต้องถามผู้ใช้ 4 คำถามนี้ก่อนเสมอ**: (ถามครั้งเดียวตอนเริ่ม — ถ้าตอบไว้แล้วในเซสชันเดียวกัน หรือมีบันทึกไว้ใน header ของ `character-sheet.md` แล้ว ให้ใช้ค่าเดิมโดยไม่ต้องถามซ้ำ เว้นแต่ผู้ใช้อยากเปลี่ยน)
 
 1. **Edition**: 2014 หรือ 2024 — เป็นตัวกรองเนื้อหาทุกประเภท ไม่ใช่แค่ subclass แต่รวม class, species, background, feat, spell, item ฯลฯ ด้วย
    - เลือก **2014** → ใช้เฉพาะตัวเลือกที่มี edition 2014 เท่านั้น ตัดตัวเลือกที่มีเฉพาะ 2024 ทิ้งทั้งหมด
@@ -36,7 +36,7 @@ node character-builder/scripts/generate-class-subclass-index.cjs
 **ลำดับการค้นข้อมูล**: ค้นในไฟล์ local ที่ `src/data/5etools/` ก่อนเสมอ ถ้าหาไม่เจอ (เช่น errata ล่าสุด หรือ content ที่ยังไม่ได้ mirror ไว้) ค่อยเปิดเว็บค้น 5e.tools เสริม — ไม่ต้องเปิดเว็บถ้าข้อมูล local มีอยู่แล้ว
 
 **เวลาเปรียบเทียบ/แนะนำ class ตามเกณฑ์ที่ผู้ใช้ตั้ง** (เช่น "เก่งรอบด้าน", "เบิสแรง", "เล่นได้เรื่อยๆ", "เน้น mono/group") **ห้ามเลือกตัวเลือกจากภาพจำ (fluff/flavor) ของคลาสเพียงอย่างเดียว** เพราะจะพลาดคลาสที่กลไกจริงตอบโจทย์แต่ fluff ไม่ตรงธีมที่คิดไว้ก่อน (เคยพลาดไม่เสนอ Monk ตอนถูกถามหาคลาส pure-combat ที่ครบ mono+group+burst+sustain ทั้งที่ Monk ตอบโจทย์ทุกแกน เพราะตอนแรกนึกถึงแต่ Fighter/Paladin/Barbarian ที่ "ภาพจำ" ตรงกว่า) แนวทางที่ถูกต้อง:
-1. ไล่ดูรายชื่อ class ทั้งหมดที่มีจริง (เปิด [class-subclass-index.md](class-subclass-index.md) ดูสารบัญ class ได้เลย — ครอบคลุมทั้ง official ใน `src/data/5etools/official/class/` และ homebrew ทุกคลาสใน `src/data/5etools/homebrew/*/`) ไม่ใช่แค่คลาสที่นึกออกทันที — กติกาเดียวกันนี้ใช้กับตอนเปรียบเทียบ/เสนอ **subclass** ภายใน class เดียวกันด้วย ให้ไล่ดูตาราง subclass ของ class นั้นในไฟล์ index ให้ครบก่อนตัดตัวเลือกไหนทิ้ง
+1. ไล่ดูรายชื่อ class ทั้งหมดที่มีจริง (เปิด [class-subclass-index.md](../homebrew-rules/class-subclass-index.md) ดูสารบัญ class ได้เลย — ครอบคลุมทั้ง official ใน `src/data/5etools/official/class/` และ homebrew ทุกคลาสใน `src/data/5etools/homebrew/*/`) ไม่ใช่แค่คลาสที่นึกออกทันที — กติกาเดียวกันนี้ใช้กับตอนเปรียบเทียบ/เสนอ **subclass** ภายใน class เดียวกันด้วย ให้ไล่ดูตาราง subclass ของ class นั้นในไฟล์ index ให้ครบก่อนตัดตัวเลือกไหนทิ้ง
 2. เช็คกลไกแต่ละคลาส (feature, resource, recharge ตอน short/long rest ฯลฯ) เทียบกับเกณฑ์ทีละแกนที่ผู้ใช้ตั้งไว้ จากข้อมูลจริงในไฟล์ ไม่ใช่จากความจำ/สมมติฐาน
 3. ถ้าพบว่ามีคลาสที่เข้าเกณฑ์ดีแต่ไม่ได้เสนอไปตั้งแต่รอบแรก ให้บอกตรงๆ ว่าพลาดอะไรไป ไม่ต้องแก้ตัว
 
