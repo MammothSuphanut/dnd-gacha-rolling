@@ -1935,6 +1935,16 @@
         "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wretched_grimhollowpg24=b1"
       },
       {
+        "id": "item-af8f017d-d2b1-4ded-906d-3752c10547b1",
+        "name": "The Ruined Flame",
+        "weight": 1,
+        "tag": "Core",
+        "image": "",
+        "note": "Source: Homebrew",
+        "group": "Sorcerer",
+        "link": "/homebrew-subclass/The-Ruined-Flame"
+      },
+      {
         "id": "item-bc1e8c37-a539-4269-b5ad-40d1be5675a5",
         "name": "Archfey Patron",
         "weight": 1,
@@ -6259,6 +6269,16 @@
         "note": "Source: GH:PG'24",
         "group": "Sorcerer",
         "link": "https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wretched_grimhollowpg24=b1"
+      },
+      {
+        "id": "item-a9be312a-8668-4eb0-a23c-f0aec185bf95",
+        "name": "The Ruined Flame",
+        "weight": 1,
+        "tag": "Core",
+        "image": "",
+        "note": "Source: Homebrew",
+        "group": "Sorcerer",
+        "link": "/homebrew-subclass/The-Ruined-Flame"
       },
       {
         "id": "item-caa004aa-8864-40af-9911-8333165f21b1",
