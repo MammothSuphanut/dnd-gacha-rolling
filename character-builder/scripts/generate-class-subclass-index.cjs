@@ -1,0 +1,287 @@
+#!/usr/bin/env node
+/**
+ * Generates character-builder/class-subclass-index.md by scanning every
+ * class/subclass definition mirrored under src/data/5etools/ (official +
+ * homebrew). Run this any time the 5etools data changes:
+ *
+ *   node character-builder/scripts/generate-class-subclass-index.cjs
+ *
+ * Why this exists: official classes each live in their own clean
+ * class-<name>.json file, but homebrew subclasses are buried inside giant
+ * per-book compendium JSON files (Valda's Spire of Secrets alone has ~190
+ * subclasses in one file). That made it easy to miss homebrew subclasses
+ * when consulting during /build-character or /level-up-character. This
+ * script builds one flat, complete index so nothing gets skipped.
+ */
+
+const fs = require("fs");
+const path = require("path");
+
+const ROOT = path.resolve(__dirname, "..", "..");
+const DATA_5E = path.join(ROOT, "src", "data", "5etools");
+const OUT_FILE = path.join(ROOT, "character-builder", "class-subclass-index.md");
+
+const EDITION_LABEL = { classic: "2014", one: "2024" };
+
+// Subclass `source` abbreviations that don't match their id in books.json.
+const OFFICIAL_SOURCE_ALIASES = {
+  PSA: "PS-A",
+  PSK: "PS-K",
+  PSX: "PS-X",
+  PSI: "PS-I",
+  PSD: "PS-D",
+};
+
+// Abbreviations that don't appear in books.json at all (UA docs, etc.).
+const OFFICIAL_SOURCE_MANUAL = {
+  DSotDQ: "Dragonlance: Shadow of the Dragon Queen",
+  UATheMysticClass: "Unearthed Arcana: The Mystic Class",
+};
+
+const HOMEBREW_FOLDER_LABELS = {
+  "grim-hollow": "Grim Hollow (Ghostfire Gaming)",
+  "valdas-spire": "Valda's Spire of Secrets (Mage Hand Press)",
+};
+
+function readJson(file) {
+  return JSON.parse(fs.readFileSync(file, "utf8"));
+}
+
+function buildOfficialSourceNames() {
+  const books = readJson(path.join(DATA_5E, "official", "books.json"));
+  const arr = books.book || books;
+  const names = {};
+  for (const b of arr) names[b.id] = b.name;
+  return names;
+}
+
+function officialSourceName(abbrev, officialNames) {
+  const aliased = OFFICIAL_SOURCE_ALIASES[abbrev] || abbrev;
+  return (
+    officialNames[aliased] ||
+    OFFICIAL_SOURCE_MANUAL[abbrev] ||
+    abbrev
+  );
+}
+
+// Many subclass entries omit their own `edition` field, but the class
+// variant they attach to (keyed by className + classSource) almost always
+// carries one. Populated while reading class[] arrays, consulted as a
+// fallback while reading subclass[] arrays.
+function editionKey(className, sourceAbbrev) {
+  return `${className}::${sourceAbbrev}`;
+}
+
+function editionFromExplicitField(rawEdition) {
+  return EDITION_LABEL[rawEdition] || rawEdition || null;
+}
+
+// Some homebrew products have no `edition` field on the class/subclass at
+// all, but their resolved source title spells out the year (e.g. "Valda's
+// Spire of Secrets (2014)" vs "... (2024)").
+function editionFromSourceName(fullSourceName) {
+  if (/\(2014\)/.test(fullSourceName)) return "2014";
+  if (/\(2024\)/.test(fullSourceName)) return "2024";
+  return null;
+}
+
+function loadOfficialClasses(officialNames, classSourceEdition) {
+  const dir = path.join(DATA_5E, "official", "class");
+  const classes = new Map(); // name -> { name, entries: [{source, edition, book:'Official'}] }
+  const subclasses = []; // { className, name, source, edition, page, book }
+
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.startsWith("class-")) continue;
+    const d = readJson(path.join(dir, file));
+
+    for (const c of d.class || []) {
+      const sourceName = officialSourceName(c.source, officialNames);
+      const edition = editionFromExplicitField(c.edition) || editionFromSourceName(sourceName);
+      if (!classes.has(c.name)) classes.set(c.name, { name: c.name, entries: [] });
+      classes.get(c.name).entries.push({
+        source: sourceName,
+        sourceAbbrev: c.source,
+        edition: edition || "?",
+        book: "Official",
+      });
+      if (edition) classSourceEdition.set(editionKey(c.name, c.source), edition);
+    }
+
+    for (const s of d.subclass || []) {
+      subclasses.push({
+        className: s.className,
+        name: s.name,
+        source: officialSourceName(s.source, officialNames),
+        sourceAbbrev: s.source,
+        edition: editionFromExplicitField(s.edition),
+        classSourceAbbrev: s.classSource,
+        page: s.page,
+        book: "Official",
+      });
+    }
+  }
+
+  return { classes, subclasses };
+}
+
+function loadHomebrewFolder(folderName, classSourceEdition) {
+  const dir = path.join(DATA_5E, "homebrew", folderName);
+  const bookLabel = HOMEBREW_FOLDER_LABELS[folderName] || folderName;
+  const classes = new Map();
+  const subclasses = [];
+  const sourceNames = {};
+
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.endsWith(".json")) continue;
+    const d = readJson(path.join(dir, file));
+
+    for (const src of (d._meta && d._meta.sources) || []) {
+      sourceNames[src.json] = src.full;
+    }
+
+    for (const c of d.class || []) {
+      const sourceName = sourceNames[c.source] || c.source;
+      const edition = editionFromExplicitField(c.edition) || editionFromSourceName(sourceName);
+      if (!classes.has(c.name)) classes.set(c.name, { name: c.name, entries: [] });
+      classes.get(c.name).entries.push({
+        source: sourceName,
+        sourceAbbrev: c.source,
+        edition: edition || "?",
+        book: bookLabel,
+      });
+      if (edition) classSourceEdition.set(editionKey(c.name, c.source), edition);
+    }
+
+    for (const s of d.subclass || []) {
+      subclasses.push({
+        className: s.className,
+        name: s.name,
+        source: sourceNames[s.source] || s.source,
+        sourceAbbrev: s.source,
+        edition: editionFromExplicitField(s.edition),
+        classSourceAbbrev: s.classSource,
+        page: s.page,
+        book: bookLabel,
+      });
+    }
+  }
+
+  return { classes, subclasses };
+}
+
+function resolveSubclassEditions(subclasses, classSourceEdition) {
+  for (const s of subclasses) {
+    s.edition =
+      s.edition ||
+      classSourceEdition.get(editionKey(s.className, s.classSourceAbbrev)) ||
+      editionFromSourceName(s.source) ||
+      "?";
+  }
+}
+
+function mergeClassMaps(target, source) {
+  for (const [name, info] of source) {
+    if (!target.has(name)) target.set(name, { name, entries: [] });
+    target.get(name).entries.push(...info.entries);
+  }
+}
+
+function classBookSummary(entries) {
+  const books = [...new Set(entries.map((e) => e.book))];
+  return books.join(" + ");
+}
+
+function main() {
+  const officialNames = buildOfficialSourceNames();
+  const classSourceEdition = new Map();
+  const official = loadOfficialClasses(officialNames, classSourceEdition);
+  const grimHollow = loadHomebrewFolder("grim-hollow", classSourceEdition);
+  const valdasSpire = loadHomebrewFolder("valdas-spire", classSourceEdition);
+
+  const allClasses = new Map();
+  mergeClassMaps(allClasses, official.classes);
+  mergeClassMaps(allClasses, grimHollow.classes);
+  mergeClassMaps(allClasses, valdasSpire.classes);
+
+  const allSubclasses = [
+    ...official.subclasses,
+    ...grimHollow.subclasses,
+    ...valdasSpire.subclasses,
+  ];
+  resolveSubclassEditions(allSubclasses, classSourceEdition);
+
+  // Also register classes that only ever appear as a subclass's className
+  // target but weren't in any class[] array we scanned (shouldn't normally
+  // happen, but keeps the index complete if it does).
+  for (const s of allSubclasses) {
+    if (!allClasses.has(s.className)) {
+      allClasses.set(s.className, { name: s.className, entries: [{ source: "?", edition: "?", book: "?" }] });
+    }
+  }
+
+  const subclassesByClass = new Map();
+  for (const s of allSubclasses) {
+    if (!subclassesByClass.has(s.className)) subclassesByClass.set(s.className, []);
+    subclassesByClass.get(s.className).push(s);
+  }
+
+  const classNames = [...allClasses.keys()].sort((a, b) => a.localeCompare(b));
+
+  const lines = [];
+  lines.push("# Class & Subclass Index");
+  lines.push("");
+  lines.push(
+    "> **Auto-generated — อย่าแก้ไฟล์นี้ตรงๆ** รันคำสั่งนี้ใหม่ทุกครั้งที่ข้อมูลใน `src/data/5etools/` เปลี่ยน:"
+  );
+  lines.push("> `node character-builder/scripts/generate-class-subclass-index.cjs`");
+  lines.push(">");
+  lines.push(
+    "> **จุดประสงค์**: ก่อนเสนอ/เปรียบเทียบ subclass ให้ผู้ใช้ตอน `/build-character` หรือ `/level-up-character` ให้ไล่ดูตารางของ class นั้นในไฟล์นี้ก่อน แทนที่จะเปิด compendium JSON ของ homebrew ตรงๆ (โดยเฉพาะ Valda's Spire ที่ subclass เกือบ 200 ตัวปนอยู่ในไฟล์เดียว) เพื่อไม่ให้พลาดตัวเลือก official/homebrew ตัวใดตัวหนึ่งไปแบบไม่ตั้งใจ — ยังต้องเสนอ official และ homebrew เท่าเทียมกันตามกติกาใน [README.md](README.md) เหมือนเดิม"
+  );
+  lines.push(">");
+  lines.push(
+    "> **ก่อนอ่านตารางด้านล่างเพื่อสร้าง/ปรึกษาตัวละคร**: ต้องถามผู้ใช้ 4 คำถามก่อนเสมอ — (1) edition 2014/2024 (2014 = ใช้เฉพาะ edition 2014, 2024 = ใช้ทั้งหมดแต่ถ้าซ้ำกันให้ใช้เวอร์ชัน 2024), (2) ขอบเขต class หลัก(official)/เสริม(homebrew)/ทั้งคู่, (3) กฎพิเศษของ campaign ถ้ามี (เช่น Grim Hollow: Grievous Wounds, Gritty Realism), (4) level ที่จะสร้าง/ปรึกษา — รายละเอียดเต็มดูที่ [README.md § Ruleset ก่อนเริ่มสร้าง/ปรึกษาตัวละคร](README.md#ruleset-ก่อนเริ่มสร้างปรึกษาตัวละคร)"
+  );
+  lines.push(
+    `> Generated: ${new Date().toISOString().slice(0, 10)} • ${classNames.length} classes • ${allSubclasses.length} subclasses (official: ${official.subclasses.length}, Grim Hollow: ${grimHollow.subclasses.length}, Valda's Spire: ${valdasSpire.subclasses.length})`
+  );
+  lines.push("");
+  lines.push("## สารบัญ class");
+  lines.push("");
+  for (const name of classNames) {
+    const anchor = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    lines.push(`- [${name}](#${anchor})`);
+  }
+  lines.push("");
+
+  for (const name of classNames) {
+    const classInfo = allClasses.get(name);
+    lines.push(`## ${name}`);
+    lines.push("");
+    lines.push(`_${classBookSummary(classInfo.entries)}_`);
+    lines.push("");
+
+    const subs = (subclassesByClass.get(name) || []).slice().sort((a, b) => {
+      if (a.book !== b.book) return a.book === "Official" ? -1 : b.book === "Official" ? 1 : a.book.localeCompare(b.book);
+      if (a.edition !== b.edition) return a.edition.localeCompare(b.edition);
+      return a.name.localeCompare(b.name);
+    });
+
+    if (subs.length === 0) {
+      lines.push("_(ไม่มี subclass ในข้อมูล local ที่ mirror ไว้)_");
+    } else {
+      lines.push("| Subclass | Edition | Source | Book |");
+      lines.push("|---|---|---|---|");
+      for (const s of subs) {
+        lines.push(`| ${s.name} | ${s.edition} | ${s.source} (\`${s.sourceAbbrev}\`) | ${s.book} |`);
+      }
+    }
+    lines.push("");
+  }
+
+  fs.writeFileSync(OUT_FILE, lines.join("\n"));
+  console.log(`Wrote ${OUT_FILE}`);
+  console.log(`${classNames.length} classes, ${allSubclasses.length} subclasses`);
+}
+
+main();

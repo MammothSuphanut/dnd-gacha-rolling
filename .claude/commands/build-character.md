@@ -34,18 +34,21 @@ argument-hint: [ชื่อ/คอนเซปต์ตัวละคร (ถ�
 ## หัวข้อที่ต้องถามให้ครบ (ตามลำดับ)
 
 1. **ชื่อตัวละคร** (ใช้ตั้งชื่อโฟลเดอร์ด้วย)
-2. **Level เริ่มต้น**: level 1 ตามปกติ หรือเริ่มที่ level อื่น (ถ้าเข้าปาร์ตี้ที่เล่นไปแล้ว) — ถามข้อนี้ก่อนคอนเซปต์/บทบาท เพราะ level ที่ได้จะเป็นตัวกำหนดว่าต้องคุยเรื่อง subclass เลยไหม
+2. **Ruleset** (ดู [character-builder/README.md § Ruleset ก่อนเริ่มสร้าง/ปรึกษาตัวละคร](../../character-builder/README.md#ruleset-ก่อนเริ่มสร้างปรึกษาตัวละคร) สำหรับกติกาเต็ม) — ถาม 4 ข้อนี้ก่อนเข้าคอนเซปต์/class:
+   - **Edition**: 2014 (PHB) หรือ 2024 (XPHB) — ใช้ AskUserQuestion, ค่าแนะนำ = 2024 (เป็น edition ปัจจุบัน) เว้นแต่ผู้ใช้มีเหตุผลอยากเล่น 2014 เลือก **2014** → ใช้เฉพาะตัวเลือกที่มี edition 2014 เท่านั้นตลอดการ build (class/subclass/species/background/feat/spell/item) เลือก **2024** → ใช้ตัวเลือกทั้งหมดทั้ง 2014+2024 แต่ถ้าตัวเลือกไหนมีทั้งสอง edition ให้ใช้เวอร์ชัน 2024 เป็นหลักเสมอ
+   - **ขอบเขต class**: เอาเฉพาะ class หลัก (official) / เอาเฉพาะ class เสริม (homebrew: Grim Hollow, Valda's Spire) / เอาทั้งคู่ — ใช้ AskUserQuestion, ค่าแนะนำ = ทั้งคู่ ถ้าเลือกขอบเขตใดขอบเขตหนึ่ง ห้ามเสนออีกฝั่งอีกตลอดการสัมภาษณ์นี้
+   - **กฎพิเศษของ campaign** (ถ้ามี): เช่น Grim Hollow: Grievous Wounds, Gritty Realism (variant rest rules) หรืออื่นๆ — ใช้ AskUserQuestion ตัวเลือก "ไม่มี" / "Grim Hollow: Grievous Wounds" / "Gritty Realism" / อื่นๆ (พิมพ์เอง) ถ้ามีให้จดไว้ปรับคำแนะนำให้สอดคล้องตลอดการ build
+   - **Level เริ่มต้น**: level 1 ตามปกติ หรือเริ่มที่ level อื่น (ถ้าเข้าปาร์ตี้ที่เล่นไปแล้ว) — ถามเป็นข้อความธรรมดา (ไม่ใช่ AskUserQuestion เพราะเป็นตัวเลขเปิด) level ที่ได้จะเป็นตัวกำหนดว่าต้องคุยเรื่อง subclass เลยไหม (ข้อ 6)
 3. **คอนเซปต์/บทบาท**: อยากเล่นตัวละครแบบไหน (นักสู้แนวหน้า, นักเวท, สายซัพพอร์ต, ลอบเร้น ฯลฯ) และโทน/บุคลิกคร่าวๆ (ถ้าไม่รู้ ให้เสนอ archetype ตัวอย่าง 3-4 แบบ)
-4. **Edition**: 2014 (PHB) หรือ 2024 (XPHB) — ยึดเป็นหลักตลอดการ build นี้ **ค่าเริ่มต้น**: ถ้าตัวเลือก class/subclass/homebrew ที่เข้ากับคอนเซปต์ (ข้อ 3) มีให้ทั้งสอง edition ให้ใช้ **2024 (XPHB)** เป็นดีฟอลต์/ตัวเลือกแนะนำ แต่ถ้าตัวเลือกที่เข้ากับคอนเซปต์มีอยู่แค่ edition เดียว (เช่น homebrew subclass บางตัวมีแค่ PHB 2014) ให้ใช้ edition นั้นไปเลยและแจ้งเหตุผลให้ผู้ใช้ทราบ — ยังคงถามยืนยันกับผู้ใช้ด้วย AskUserQuestion เสมอ (ระบุว่าอันไหนเป็น "แนะนำ" ตามเหตุผลข้างต้น) เว้นแต่มีข้อมูลรองรับแค่ edition เดียวจริงๆ ก็แจ้งตรงๆ ไม่ต้องถามเป็นตัวเลือก
-5. **Class**: เสนอตัวเลือกที่เข้ากับคอนเซปต์ทั้งจาก official และ homebrew พร้อมแหล่งอ้างอิง อธิบายจุดเด่นสั้นๆ ต่อคลาส (ทำตามกติกาข้อ 7 — สำรวจ class ทั้งหมดจากกลไกจริง ไม่ใช่แค่ภาพจำ)
-6. **Subclass**: ถ้า level เริ่มต้น ≥ level ที่ class นั้นได้ subclass (เช็คจากข้อมูล class จริง เช่น Cleric/Sorcerer ได้ตอน level 1, Wizard/Druid ตอน level 2, ส่วนใหญ่ตอน level 3) ให้เสนอตัวเลือก subclass ที่เข้ากับคอนเซปต์ทั้งจาก official และ homebrew พร้อมแหล่งอ้างอิง อธิบายจุดเด่นสั้นๆ ต่อ subclass (ทำตามกติกาข้อ 7 เหมือนตอนเลือก class — ไล่ดู subclass ทั้งหมดจากกลไกจริง ไม่ใช่แค่ภาพจำ) แล้ว **ต้องแนะนำ subclass ที่เข้ากับคอนเซปต์ที่สุด 1 ตัวเลือกพร้อมเหตุผลเสมอ** ก่อนถามยืนยันด้วย AskUserQuestion (ระบุว่าอันไหนเป็น "แนะนำ") ถ้ายังไม่ถึง level ที่ปลดล็อก subclass ให้บันทึกไว้ใน Build Notes ว่ายังไม่ได้เลือก
-7. **Species** (เผ่าพันธุ์): เสนอตัวเลือกจาก official + homebrew พร้อมแหล่งอ้างอิง ถ้าตัวละครผูกกับ world-setting ในโปรเจกต์ (ดูข้อ 12) ให้กรองให้เข้ากับ lore ของ setting นั้นด้วย
-8. **Background**: เสนอตัวเลือกพร้อมแหล่งอ้างอิง เช็คว่า skill/tool proficiency ที่ได้เข้ากับคอนเซปต์
-9. **Ability scores**: ถามวิธี (standard array / point buy / roll 4d6 drop lowest / ระบุเลขเอง) แล้วช่วยจัดค่าให้เข้ากับ class/subclass ที่เลือก
-10. **Feat เริ่มต้น** (ถ้า edition/background ให้ feat ตั้งแต่ level 1 เช่น 2024 origin feat หรือ variant human 2014): เสนอตัวเลือกพร้อมแหล่งอ้างอิง
-11. **อุปกรณ์เริ่มต้น**: ใช้ starting equipment ตาม class/background หรือแปลงเป็นทองเริ่มต้นซื้อเอง (ถามผู้ใช้)
-12. **จุดเชื่อมกับโปรเจกต์** (ไม่บังคับ): ตัวละครนี้ผูกกับ world-setting ไหนใน [world-settings/](../../world-settings/) หรือ adventure ไหนใน [adventures/](../../adventures/) หรือไม่ — ถ้าผูก ให้ถามด้วยว่ามี NPC/สถานที่ที่เกี่ยวกับ backstory ตัวละครที่ชื่อใกล้เคียง Critical Role canon ไหม (ถ้ามีให้ทำตาม [adventure-builder/canon-reference.md](../../adventure-builder/canon-reference.md))
-13. **Roleplay** (ไม่บังคับ, ถามครั้งเดียวรวมกัน): personality trait, ideal, bond, flaw, backstory ย่อ — ถ้าผู้ใช้ไม่อยากลงตอนนี้ ข้ามได้ ปล่อยว่างในไฟล์
+4. **Class**: เสนอตัวเลือกที่เข้ากับคอนเซปต์ตามขอบเขต/edition ที่เลือกไว้ในข้อ 2 พร้อมแหล่งอ้างอิง อธิบายจุดเด่นสั้นๆ ต่อคลาส (ทำตามกติกาข้อ 7 — สำรวจ class ทั้งหมดจากกลไกจริง ไม่ใช่แค่ภาพจำ)
+5. **Subclass**: ถ้า level เริ่มต้น ≥ level ที่ class นั้นได้ subclass (เช็คจากข้อมูล class จริง เช่น Cleric/Sorcerer ได้ตอน level 1, Wizard/Druid ตอน level 2, ส่วนใหญ่ตอน level 3) ให้เปิด [character-builder/class-subclass-index.md](../../character-builder/class-subclass-index.md) ดูตาราง subclass ของ class นี้ **ให้ครบทุกแถวก่อน** แล้วกรองตาม edition/ขอบเขตที่เลือกไว้ในข้อ 2 (2014 = ตัดตัวเลือกที่มีเฉพาะ 2024 ทิ้ง, 2024 = เอาทั้งหมดแต่ถ้าซ้ำ edition ใช้ตัวปี 2024) ก่อนเสนอตัวเลือกที่เข้ากับคอนเซปต์พร้อมแหล่งอ้างอิง อธิบายจุดเด่นสั้นๆ ต่อ subclass (ทำตามกติกาข้อ 7 เหมือนตอนเลือก class — เช็คกลไกจริงจากไฟล์ source ที่ตารางชี้ไป ไม่ใช่แค่ภาพจำ) แล้ว **ต้องแนะนำ subclass ที่เข้ากับคอนเซปต์ที่สุด 1 ตัวเลือกพร้อมเหตุผลเสมอ** ก่อนถามยืนยันด้วย AskUserQuestion (ระบุว่าอันไหนเป็น "แนะนำ") ถ้ายังไม่ถึง level ที่ปลดล็อก subclass ให้บันทึกไว้ใน Build Notes ว่ายังไม่ได้เลือก
+6. **Species** (เผ่าพันธุ์): เสนอตัวเลือกตามขอบเขต/edition ที่เลือกไว้พร้อมแหล่งอ้างอิง ถ้าตัวละครผูกกับ world-setting ในโปรเจกต์ (ดูข้อ 11) ให้กรองให้เข้ากับ lore ของ setting นั้นด้วย
+7. **Background**: เสนอตัวเลือกพร้อมแหล่งอ้างอิง เช็คว่า skill/tool proficiency ที่ได้เข้ากับคอนเซปต์
+8. **Ability scores**: ถามวิธี (standard array / point buy / roll 4d6 drop lowest / ระบุเลขเอง) แล้วช่วยจัดค่าให้เข้ากับ class/subclass ที่เลือก
+9. **Feat เริ่มต้น** (ถ้า edition/background ให้ feat ตั้งแต่ level 1 เช่น 2024 origin feat หรือ variant human 2014): เสนอตัวเลือกพร้อมแหล่งอ้างอิง
+10. **อุปกรณ์เริ่มต้น**: ใช้ starting equipment ตาม class/background หรือแปลงเป็นทองเริ่มต้นซื้อเอง (ถามผู้ใช้)
+11. **จุดเชื่อมกับโปรเจกต์** (ไม่บังคับ): ตัวละครนี้ผูกกับ world-setting ไหนใน [world-settings/](../../world-settings/) หรือ adventure ไหนใน [adventures/](../../adventures/) หรือไม่ — ถ้าผูก ให้ถามด้วยว่ามี NPC/สถานที่ที่เกี่ยวกับ backstory ตัวละครที่ชื่อใกล้เคียง Critical Role canon ไหม (ถ้ามีให้ทำตาม [adventure-builder/canon-reference.md](../../adventure-builder/canon-reference.md))
+12. **Roleplay** (ไม่บังคับ, ถามครั้งเดียวรวมกัน): personality trait, ideal, bond, flaw, backstory ย่อ — ถ้าผู้ใช้ไม่อยากลงตอนนี้ ข้ามได้ ปล่อยว่างในไฟล์
 
 ## หลังจากเก็บข้อมูลครบ
 
@@ -58,6 +61,8 @@ argument-hint: [ชื่อ/คอนเซปต์ตัวละคร (ถ�
 # [ชื่อตัวละคร]
 
 - Edition: 2014 (PHB) / 2024 (XPHB)
+- Content Scope: Official เท่านั้น / Homebrew เท่านั้น / ทั้งคู่
+- Campaign Rules: [รายการกฎพิเศษ เช่น "Grim Hollow: Grievous Wounds" หรือ "ไม่มี"]
 - Level: [N]
 - Class / Subclass: [Class] ([source]) — [Subclass] ([source], ถ้ายังไม่เลือกให้ใส่ "ยังไม่เลือก (ปลดล็อกที่ level X)")
 - Species: [Species] ([source])
