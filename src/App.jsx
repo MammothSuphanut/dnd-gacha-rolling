@@ -1,10 +1,13 @@
 import { useState } from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes, matchPath, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import AdventureDocPage from './pages/AdventureDocPage'
+import AdventureJournalPage from './pages/AdventureJournalPage'
 import BoxManagerPage from './pages/BoxManagerPage'
 import CampaignPage from './pages/CampaignPage'
-import CharacterPage from './pages/CharacterPage'
+import CharacterPage, { CharacterDetailPage } from './pages/CharacterPage'
+import HomebrewRuleDocPage from './pages/HomebrewRuleDocPage'
+import HomebrewRulesPage from './pages/HomebrewRulesPage'
 import RollPage from './pages/RollPage'
 import OptionsPage from './pages/OptionsPage'
 import ShopPage from './pages/ShopPage'
@@ -13,7 +16,20 @@ import WorldSettingPage from './pages/WorldSettingPage'
 import { GachaProvider } from './store/GachaStore'
 import { ToastProvider } from './store/ToastContext'
 
+// Routes meant to be opened in their own tab for distraction-free full-page
+// reading (e.g. the campaign journal) skip the navbar entirely instead of
+// just filling the space below it.
+const STANDALONE_ROUTES = [
+  '/campaigns/:campaignId/journal',
+  '/world/:worldId',
+  '/homebrew-rules/:slug',
+  '/characters/:characterId',
+]
+
 function App() {
+  const location = useLocation()
+  const isStandalone = STANDALONE_ROUTES.some((pattern) => matchPath(pattern, location.pathname))
+
   const [rollState, setRollState] = useState({
     config: {},
     boxResults: {},
@@ -51,9 +67,9 @@ function App() {
             WorldSettingPage's map) opt into filling that space exactly with
             its own internal flex layout instead of ever needing the window
             to scroll. */}
-        <div className="flex h-dvh flex-col bg-[#fdf8f0]">
-          <Navbar />
-          <div className="min-h-0 flex-1 overflow-y-auto">
+        <div className={isStandalone ? 'h-dvh bg-[#fdf8f0]' : 'flex h-dvh flex-col bg-[#fdf8f0]'}>
+          {!isStandalone && <Navbar />}
+          <div className={isStandalone ? 'h-full' : 'min-h-0 flex-1 overflow-y-auto'}>
             <Routes>
               <Route path="/" element={<Navigate to="/roll" replace />} />
               <Route path="/stats" element={<Navigate to="/roll" replace />} />
@@ -83,10 +99,14 @@ function App() {
                 }
               />
               <Route path="/campaigns" element={<CampaignPage />} />
+              <Route path="/campaigns/:campaignId/journal" element={<AdventureJournalPage />} />
               <Route path="/options" element={<OptionsPage />} />
               <Route path="/world" element={<WorldPage />} />
               <Route path="/world/:worldId" element={<WorldSettingPage />} />
+              <Route path="/homebrew-rules" element={<HomebrewRulesPage />} />
+              <Route path="/homebrew-rules/:slug" element={<HomebrewRuleDocPage />} />
               <Route path="/characters" element={<CharacterPage />} />
+              <Route path="/characters/:characterId" element={<CharacterDetailPage />} />
               {/* Catch-all: lets links copied out of a journal (e.g. into FoundryVTT) resolve
                   as plain "/some-file.md" paths instead of a query-string route. Must stay last. */}
               <Route path="*" element={<AdventureDocPage />} />

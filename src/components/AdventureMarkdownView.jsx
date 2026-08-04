@@ -1,11 +1,23 @@
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { getAdventureDoc, resolveAdventureLink, toCleanAdventurePath } from '../utils/adventureJournals'
+import { getHomebrewDoc, toHomebrewCleanPath } from '../utils/homebrewRules'
 
 const LINK_CLASS = 'text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900'
 
 function isExternalHref(href) {
   return /^([a-z][a-z0-9+.-]*:)/i.test(href) || href.startsWith('#')
+}
+
+// Adventure journals and homebrew rule docs link into each other (e.g. an
+// EP linking to the Fatigue rules) — check both doc sets so either kind of
+// crossing link still resolves to an in-app route.
+function getKnownDoc(path) {
+  return getAdventureDoc(path) ?? getHomebrewDoc(path)
+}
+
+function toAppPath(path) {
+  return path.startsWith('/homebrew-rules/') ? toHomebrewCleanPath(path) : toCleanAdventurePath(path)
 }
 
 function AdventureLink({ basePath, href, children, ...props }) {
@@ -18,8 +30,8 @@ function AdventureLink({ basePath, href, children, ...props }) {
   }
 
   const targetPath = resolveAdventureLink(basePath, href)
-  if (!getAdventureDoc(targetPath)) {
-    // Not a doc we know about (e.g. an image or a link to text outside adventures/) — leave it alone.
+  if (!getKnownDoc(targetPath)) {
+    // Not a doc we know about (e.g. an image or a link to text outside adventures/ and homebrew-rules/) — leave it alone.
     return (
       <a href={href} target="_blank" rel="noreferrer" className={LINK_CLASS} {...props}>
         {children}
@@ -30,7 +42,7 @@ function AdventureLink({ basePath, href, children, ...props }) {
   // Absolute, origin-qualified, and shaped like a plain site path (no query
   // string) so the link still works after being copied into FoundryVTT (or
   // anywhere else) — it doesn't depend on the paste destination's own origin.
-  const openUrl = `${window.location.origin}${toCleanAdventurePath(targetPath)}`
+  const openUrl = `${window.location.origin}${toAppPath(targetPath)}`
   return (
     <a href={openUrl} target="_blank" rel="noreferrer" className={LINK_CLASS} {...props}>
       {children}

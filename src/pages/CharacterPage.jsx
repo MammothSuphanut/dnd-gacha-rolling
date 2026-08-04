@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import ConfirmDialog from '../components/ConfirmDialog'
 import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
@@ -1314,6 +1314,10 @@ function CharacterFormModal({
   onSave,
   onDelete,
   showToast,
+  // Rendered as a full page (opened in its own tab) instead of a modal
+  // overlay — no backdrop, and no close controls since there's no "back to
+  // the list" to close to (the list lives in a different tab).
+  standalone = false,
 }) {
   const shopItemOptions = useMemo(() => {
     const names = new Set()
@@ -1737,9 +1741,13 @@ function CharacterFormModal({
     const backgroundLink = referenceLinks?.backgroundLinks?.get(form.background)
 
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+      <div className={standalone ? 'h-full w-full' : 'fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4'}>
         <div
-          className="flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
+          className={
+            standalone
+              ? 'flex h-full w-full flex-col overflow-hidden bg-white'
+              : 'flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl'
+          }
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
@@ -1805,14 +1813,16 @@ function CharacterFormModal({
                 )}
               </div>
             </div>
-            <button
-              type="button"
-              onClick={onCancel}
-              className="rounded-md p-1.5 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600"
-              aria-label="ปิด"
-            >
-              ✕
-            </button>
+            {!standalone && (
+              <button
+                type="button"
+                onClick={onCancel}
+                className="rounded-md p-1.5 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600"
+                aria-label="ปิด"
+              >
+                ✕
+              </button>
+            )}
           </div>
 
           {/* View Mode Tabs */}
@@ -2561,14 +2571,16 @@ function CharacterFormModal({
           </div>
 
           {/* Footer */}
-          <div className="flex items-center justify-between border-t border-[#e2cfb3] px-6 py-4 bg-[#f5ede0]/30">
-            <button
-              type="button"
-              onClick={onCancel}
-              className="rounded-lg border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm hover:bg-[#f5ede0]"
-            >
-              ปิด
-            </button>
+          <div className={`flex items-center border-t border-[#e2cfb3] px-6 py-4 bg-[#f5ede0]/30 ${standalone ? 'justify-end' : 'justify-between'}`}>
+            {!standalone && (
+              <button
+                type="button"
+                onClick={onCancel}
+                className="rounded-lg border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm hover:bg-[#f5ede0]"
+              >
+                ปิด
+              </button>
+            )}
             <div className="flex gap-2">
               <button
                 type="button"
@@ -2598,9 +2610,13 @@ function CharacterFormModal({
   const activePreview = gallery.images.find((img) => img.id === gallery.activeImageId)?.dataUrl
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+    <div className={standalone ? 'h-full w-full' : 'fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4'}>
       <div
-        className="flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
+        className={
+          standalone
+            ? 'flex h-full w-full flex-col overflow-hidden bg-white'
+            : 'flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl'
+        }
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-[#e2cfb3] px-5 py-4">
@@ -3716,10 +3732,6 @@ function CharactersTab({
     setEditingCharacter(blankCharacter())
   }
 
-  function openEdit(character) {
-    setEditingCharacter(character)
-  }
-
   function handleSave(character, keepOpen = false) {
     const exists = characters.some((c) => c.id === character.id)
     if (exists) {
@@ -3878,10 +3890,11 @@ function CharactersTab({
           {filteredCharacters.map((character) => {
             const summary = classSummary(character)
             return (
-              <button
-                type="button"
+              <a
                 key={character.id}
-                onClick={() => openEdit(character)}
+                href={`/characters/${character.id}`}
+                target="_blank"
+                rel="noreferrer"
                 className="group flex flex-row items-stretch overflow-hidden rounded-xl border border-[#e2cfb3] bg-white text-left shadow-sm transition-all duration-200 hover:shadow-md h-20 sm:h-24 w-full"
               >
                 {/* Left Portrait Image */}
@@ -3965,7 +3978,7 @@ function CharactersTab({
                     </div>
                   )}
                 </div>
-              </button>
+              </a>
             )
           })}
         </div>
@@ -4367,6 +4380,83 @@ function SpellsTabEdit({
           })}
         </div>
       </FormSection>
+    </div>
+  )
+}
+
+// Full-page character sheet, opened in its own tab from a character's card
+// in the grid — reuses CharacterFormModal (in standalone mode, so it fills
+// the page instead of rendering as a modal overlay) rather than duplicating
+// its view/edit UI.
+export function CharacterDetailPage() {
+  const { characterId } = useParams()
+  const { state, dispatch } = useGachaStore()
+  const { showToast } = useToast()
+  const [deleteTarget, setDeleteTarget] = useState(null)
+
+  const character = useMemo(() => {
+    const found = (state.characters ?? []).find((c) => c.id === characterId)
+    return found ? normalizeCharacter(found) : null
+  }, [state.characters, characterId])
+
+  const { classes, subclassesByClass } = useMemo(
+    () => getClassSubclassOptions(state.boxes),
+    [state.boxes],
+  )
+  const speciesOptions = useMemo(() => getSpeciesOptions(state.boxes), [state.boxes])
+  const backgroundOptions = useMemo(() => getBackgroundOptions(state.boxes), [state.boxes])
+  const referenceLinks = useMemo(() => getReferenceLinks(state.boxes), [state.boxes])
+
+  function handleSave(updated) {
+    dispatch({ type: 'UPDATE_CHARACTER', payload: { id: updated.id, patch: updated } })
+    showToast('บันทึกตัวละครแล้ว', 'success')
+  }
+
+  async function confirmDelete() {
+    const images = deleteTarget.images ?? []
+    await Promise.all(images.map((img) => deleteImage(characterImageKey(deleteTarget.id, img.id))))
+    dispatch({ type: 'DELETE_CHARACTER', payload: { id: deleteTarget.id } })
+    setDeleteTarget(null)
+    showToast('ลบตัวละครแล้ว', 'success')
+  }
+
+  if (!character) {
+    return (
+      <div className="w-full p-4 md:p-8">
+        <p className="text-sm text-stone-400">ไม่พบตัวละครนี้</p>
+      </div>
+    )
+  }
+
+  return (
+    <div className="h-full w-full">
+      <CharacterFormModal
+        key={character.id}
+        initial={character}
+        users={state.users ?? []}
+        partyTags={state.partyTags ?? []}
+        campaigns={state.campaigns ?? []}
+        shops={state.shops ?? []}
+        classes={classes}
+        subclassesByClass={subclassesByClass}
+        speciesOptions={speciesOptions}
+        backgroundOptions={backgroundOptions}
+        referenceLinks={referenceLinks}
+        onCancel={() => {}}
+        onSave={handleSave}
+        onDelete={setDeleteTarget}
+        showToast={showToast}
+        standalone
+      />
+      <ConfirmDialog
+        open={!!deleteTarget}
+        title="ลบตัวละคร"
+        message={`ต้องการลบตัวละคร "${deleteTarget?.name}" หรือไม่?`}
+        confirmLabel="ลบ"
+        danger
+        onCancel={() => setDeleteTarget(null)}
+        onConfirm={confirmDelete}
+      />
     </div>
   )
 }

@@ -7,7 +7,7 @@ export default function WorldMapLayerTabs({ layers, activeId, onSelect, worldNam
   const isOverview = active.id === 'overview'
 
   return (
-    <div className="mb-3">
+    <div>
       <div className="flex gap-1 overflow-x-auto">
         {layers.map((layer) => {
           const isActive = layer.id === active.id

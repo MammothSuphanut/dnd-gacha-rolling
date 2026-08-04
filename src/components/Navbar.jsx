@@ -61,6 +61,17 @@ const links = [
     ),
   },
   {
+    to: '/homebrew-rules',
+    label: 'Homebrew',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3.75h7.5L18.75 8v12a1 1 0 0 1-1 1H6.25a1 1 0 0 1-1-1V4.75a1 1 0 0 1 1-1Z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 3.75V8h4.5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8M8 15.5h8M8 8.5h3" />
+      </svg>
+    ),
+  },
+  {
     to: '/characters',
     label: 'ตัวละคร',
     icon: (
@@ -226,7 +237,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="sticky top-0 z-10 border-b border-[#e2cfb3] bg-[#fdf8f0]/95 shadow-sm backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-3 md:px-6">
+        <div className="flex flex-wrap items-center justify-between gap-2 px-4 py-3 md:px-6">
 
           {/* Logo */}
           <NavLink to="/roll" className="flex items-center gap-2.5 select-none">

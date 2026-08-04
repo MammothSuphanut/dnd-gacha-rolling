@@ -276,12 +276,10 @@ export default function WorldSettingPage() {
   return (
     <div className="flex h-full w-full flex-col p-4 md:p-8">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-        <div>
-          <Link to="/world" className="text-xs text-stone-500 hover:text-violet-700">
-            ← กลับไปหน้า World
-          </Link>
-          <h1 className="font-cinzel text-2xl font-bold text-stone-900">{world.name}</h1>
-          {world.source && <p className="text-xs text-stone-400">{world.source}</p>}
+        <div className="min-w-0">
+          {mapLayers.length > 1 && (
+            <WorldMapLayerTabs layers={mapLayers} activeId={activeLayer.id} onSelect={setActiveMapId} worldName={world.name} />
+          )}
         </div>
         <div className="flex flex-wrap items-center gap-2">
           {world.mapImage && (
@@ -368,10 +366,6 @@ export default function WorldSettingPage() {
           ส่วนหมุดทวีป (จุดสีม่วง) ลากได้อย่างเดียว
           {!isOverviewLayer && ' — หมุดปาตี้แก้ไขได้เฉพาะแผนที่รวมเท่านั้น'}
         </p>
-      )}
-
-      {mapLayers.length > 1 && (
-        <WorldMapLayerTabs layers={mapLayers} activeId={activeLayer.id} onSelect={setActiveMapId} worldName={world.name} />
       )}
 
       {!isOverviewLayer && activeCategory === null && !editMode && (

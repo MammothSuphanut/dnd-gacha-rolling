@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import AdventureJournalDrawer from '../components/AdventureJournalDrawer'
 import ConfirmDialog from '../components/ConfirmDialog'
 import SearchSelect from '../components/SearchSelect'
 import { useGachaStore } from '../store/GachaStore'
@@ -362,7 +361,6 @@ export default function CampaignPage() {
   )
   const [deleteCampaign, setDeleteCampaign] = useState(null)
   const [campaignForm, setCampaignForm] = useState(null)
-  const [journalCampaign, setJournalCampaign] = useState(null)
   const [query, setQuery] = useState('')
   const [filterStatus, setFilterStatus] = useState(HAS_STATUS_FILTER)
   const [filterPartyStatus, setFilterPartyStatus] = useState('')
@@ -706,14 +704,15 @@ export default function CampaignPage() {
                         )}
                       </Tip>
                       {getAdventureJournal(campaign.adventureSlug) && (
-                        <button
-                          type="button"
-                          onClick={() => setJournalCampaign(campaign)}
+                        <a
+                          href={`/campaigns/${campaign.id}/journal`}
+                          target="_blank"
+                          rel="noreferrer"
                           className="inline-flex shrink-0 items-center justify-center rounded-md p-1 text-stone-400 hover:bg-[#f5ede0] hover:text-violet-600 transition-colors"
-                          title="อ่าน Adventure Journal"
+                          title="อ่าน Adventure Journal (เปิดแท็บใหม่)"
                         >
                           📖
-                        </button>
+                        </a>
                       )}
                     </div>
                   </td>
@@ -980,10 +979,6 @@ export default function CampaignPage() {
             </div>
           </div>
         </div>
-      )}
-
-      {journalCampaign && (
-        <AdventureJournalDrawer campaign={journalCampaign} onClose={() => setJournalCampaign(null)} />
       )}
 
       <ConfirmDialog
