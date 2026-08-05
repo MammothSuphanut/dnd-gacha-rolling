@@ -5,7 +5,11 @@ import { copyMarkdownToClipboard } from '../utils/copyMarkdown'
 import { getHomebrewSubclass } from '../utils/homebrewSubclasses'
 
 export default function HomebrewSubclassDocPage() {
-  const { slug } = useParams()
+  // Route is "/homebrew-subclass/*" (not ":slug") because files live in
+  // per-class subfolders (homebrew-subclass/<ClassName>/<Name>.md), so the
+  // slug itself contains a "/" — grab it via the wildcard param.
+  const params = useParams()
+  const slug = params['*']
   const subclass = getHomebrewSubclass(slug)
   const { showToast } = useToast()
 

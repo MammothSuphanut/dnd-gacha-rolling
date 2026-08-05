@@ -1,8 +1,10 @@
 // Homebrew subclass writeups (e.g. The Ruined Flame) that get rolled from the
 // gacha pool. Mirrors the homebrewRules.js + import.meta.glob pattern so a
-// classes.json item can link to "/homebrew-subclass/<slug>" and open in a new
-// tab instead of a 5e.tools URL.
-const mdFiles = import.meta.glob('/homebrew-subclass/*.md', {
+// classes.json item can link to "/homebrew-subclass/<ClassName>/<slug>" and
+// open in a new tab instead of a 5e.tools URL. Files live one folder per
+// class (homebrew-subclass/<ClassName>/<Name>.md); a brand-new homebrew
+// class documents itself the same way (homebrew-subclass/<ClassName>/<ClassName>.md).
+const mdFiles = import.meta.glob('/homebrew-subclass/**/*.md', {
   query: '?raw',
   import: 'default',
   eager: true,
