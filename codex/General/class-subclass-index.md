@@ -573,7 +573,7 @@ _Official_
 | [Spellfire Sorcery](https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_spellfire_frhof=b1) | 2024 | Forgotten Realms: Heroes of Faerûn (`FRHoF`) | Official |
 | [Spiritborn](https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_spiritborn_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Storm Sorcery](https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_storm_xge=b1) | 2024 | Xanathar's Guide to Everything (`XGE`) | Official |
-| [The Ruined Flame](/homebrew-subclass/The-Ruined-Flame) | 2024 | Homebrew Aichi | Homebrew Aichi |
+| [The Ruined Flame](/homebrew-subclass/The-Ruined-Flame) | 2024 | Homebrew | Homebrew |
 | [Toon Magic](https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_toon%20magic_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Wild Magic](https://5e.tools/search.html?q=Wild%20Magic) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
 | [Wild Magic Sorcery](https://5e.tools/classes.html#sorcerer_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wild%20magic_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
