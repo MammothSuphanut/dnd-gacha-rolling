@@ -248,9 +248,9 @@ Technique สาย **Universal** ใช้ได้ทั้งสอง Path �
 
 ## Subclass
 
-Aura Knight เลือก Subclass ตอนเลเวล 3 (ได้ feature เพิ่มที่เลเวล 3, 6, 10, 14) — ยังไม่มี subclass ที่ออกแบบไว้ในขณะนี้ ดู subclass ที่จะเพิ่มในอนาคตใน `homebrew-subclass/Aura-Knight/`
+Aura Knight เลือก Subclass ตอนเลเวล 3 (ได้ feature เพิ่มที่เลเวล 3, 6, 10, 14) — ยังไม่มี subclass ที่ออกแบบกลไกเต็มไว้ในขณะนี้ วางแผนไว้ทั้งหมด **7 ตัว** (6 ตัวอิงบัลลังก์จาก Throne of Seal + 1 ตัวคอนเซ็ปต์ใหม่ของโปรเจกต์) — ดูร่าง concept ของแต่ละตัวที่ [subclass-concepts.md](subclass-concepts.md)
 
-**แนวทางออกแบบ Subclass ในอนาคต**: ให้ subclass ทำหน้าที่ "ต่อยอด/อัพเกรด Technique ที่มีอยู่แล้ว" เป็นหลัก แทนที่จะเพิ่มกลไกใหม่แยกขาด — เช่น subclass สาย A อาจให้ Focused Edge/Light Sword ลดต้นทุน Aura ต่อ stack ลง (ถูกกว่า 1 Aura/stack ปกติ), subclass สาย B อาจให้ Cross Slash ทะลุเพดานจาก 3 ครั้งเป็น 4-5 ครั้งโจมตีได้ ฯลฯ — วิธีนี้ทำให้แต่ละ subclass รู้สึกเหมือน "สายการเล่น" ที่ผูกกับ technique หลักที่เลือกใช้บ่อย ไม่ใช่แค่ feature แถมที่แยกจากระบบหลัก
+**แนวทางออกแบบ Subclass ในอนาคต**: ให้ subclass ทำหน้าที่ "ต่อยอด/อัพเกรด Technique ที่มีอยู่แล้ว" เป็นหลัก แทนที่จะเพิ่มกลไกใหม่แยกขาด — เช่น subclass สาย A อาจให้ Focused Edge/Light Sword ลดต้นทุน Aura ต่อ stack ลง (ถูกกว่า 1 Aura/stack ปกติ), subclass สาย B อาจให้ Cross Slash ลดอัตราคูณต้นทุนต่อ stack ลง (จากปกติ stack ที่ N ราคา N+2 Aura เหลือถูกกว่านั้น เช่น N+1) ฯลฯ — วิธีนี้ทำให้แต่ละ subclass รู้สึกเหมือน "สายการเล่น" ที่ผูกกับ technique หลักที่เลือกใช้บ่อย ไม่ใช่แค่ feature แถมที่แยกจากระบบหลัก
 
 ## ข้อจำกัดของแอปนี้
 
