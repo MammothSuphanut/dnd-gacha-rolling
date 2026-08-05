@@ -20,6 +20,7 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..", "..");
 const DATA_5E = path.join(ROOT, "src", "data", "5etools");
 const OUT_FILE = path.join(ROOT, "codex", "General", "class-subclass-index.md");
+const CLASSES_JSON = path.join(ROOT, "src", "data", "classes.json");
 
 const EDITION_LABEL = { classic: "2014", one: "2024" };
 
@@ -191,12 +192,93 @@ function classBookSummary(entries) {
   return books.join(" + ");
 }
 
+// A subclass reprinted for 2024 shows up twice in the raw data (once per
+// edition, same name) — collapse those down to a single row, keeping the
+// 2024 printing when one exists since it's the newer/current book. A
+// subclass with no 2024 reprint keeps its 2014 (or "?") row untouched.
+const EDITION_RANK = { 2024: 2, 2014: 1 };
+
+function dedupeSubclassesByName(subs) {
+  const best = new Map();
+  for (const s of subs) {
+    const key = s.name.trim().toLowerCase();
+    const existing = best.get(key);
+    if (!existing || (EDITION_RANK[s.edition] || 0) > (EDITION_RANK[existing.edition] || 0)) {
+      best.set(key, s);
+    }
+  }
+  return [...best.values()];
+}
+
+// src/data/classes.json backs the gacha "box" feature, but each item there
+// also carries a real 5e.tools deep link (className + subclass name ->
+// exact subclass entry on the class page). Reuse it here so the index
+// table can link out instead of just naming the subclass. Keyed
+// case-insensitively since casing has drifted between the two datasets here
+// and there (e.g. "the Totem Warrior" vs "The Totem Warrior").
+function buildSubclassLinkMap() {
+  const map = new Map();
+  for (const box of readJson(CLASSES_JSON)) {
+    for (const item of box.items || []) {
+      if (item.group && item.name && item.link) {
+        map.set(`${item.group.trim().toLowerCase()}|${item.name.trim().toLowerCase()}`, item.link);
+      }
+    }
+  }
+  return map;
+}
+
+// Not every subclass mirrored under src/data/5etools/ has a matching entry
+// in classes.json (that file only tracks what's been added to the gacha
+// box roll, not the full compendium) — fall back to a 5e.tools search link
+// so every row is still clickable instead of leaving some as plain text.
+function resolveSubclassLink(s, linkMap) {
+  const key = `${s.className.trim().toLowerCase()}|${s.name.trim().toLowerCase()}`;
+  return linkMap.get(key) || `https://5e.tools/search.html?q=${encodeURIComponent(s.name)}`;
+}
+
+// This project's own bespoke homebrew subclasses (prose .md files under
+// homebrew-subclass/, e.g. The Ruined Flame) aren't mirrored as 5etools-style
+// JSON, so the two loaders above never see them. They *are* registered in
+// classes.json for the gacha box though (group = class name, link straight
+// into the /homebrew-subclass/:slug route) — reuse that as the source of
+// truth instead of inventing a second manifest. classes.json can list the
+// same subclass more than once (it backs multiple boxes), so dedupe by
+// class+name.
+function loadProjectHomebrewSubclasses() {
+  const seen = new Set();
+  const subclasses = [];
+  for (const box of readJson(CLASSES_JSON)) {
+    for (const item of box.items || []) {
+      if (!item.group || !item.name || !item.link || !item.link.startsWith("/homebrew-subclass/")) continue;
+      const key = `${item.group}|${item.name}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      subclasses.push({
+        className: item.group,
+        name: item.name,
+        source: "This Project",
+        sourceAbbrev: "Homebrew",
+        // homebrew-subclass/ is a newer addition written against the 2024
+        // rules (e.g. The Ruined Flame keys off Innate Sorcery) — no per-file
+        // edition metadata exists yet, so this is a fixed assumption rather
+        // than something detected. Revisit if a 2014-only entry shows up here.
+        edition: "2024",
+        book: "Homebrew (This Project)",
+      });
+    }
+  }
+  return subclasses;
+}
+
 function main() {
+  const linkMap = buildSubclassLinkMap();
   const officialNames = buildOfficialSourceNames();
   const classSourceEdition = new Map();
   const official = loadOfficialClasses(officialNames, classSourceEdition);
   const grimHollow = loadHomebrewFolder("grim-hollow", classSourceEdition);
   const valdasSpire = loadHomebrewFolder("valdas-spire", classSourceEdition);
+  const projectHomebrew = loadProjectHomebrewSubclasses();
 
   const allClasses = new Map();
   mergeClassMaps(allClasses, official.classes);
@@ -207,6 +289,7 @@ function main() {
     ...official.subclasses,
     ...grimHollow.subclasses,
     ...valdasSpire.subclasses,
+    ...projectHomebrew,
   ];
   resolveSubclassEditions(allSubclasses, classSourceEdition);
 
@@ -243,7 +326,7 @@ function main() {
     "> **ก่อนอ่านตารางด้านล่างเพื่อสร้าง/ปรึกษาตัวละคร**: ต้องถามผู้ใช้ 4 คำถามก่อนเสมอ — (1) edition 2014/2024 (2014 = ใช้เฉพาะ edition 2014, 2024 = ใช้ทั้งหมดแต่ถ้าซ้ำกันให้ใช้เวอร์ชัน 2024), (2) ขอบเขต class หลัก(official)/เสริม(homebrew)/ทั้งคู่, (3) กฎพิเศษของ campaign ถ้ามี (เช่น Grim Hollow: Grievous Wounds, Gritty Realism), (4) level ที่จะสร้าง/ปรึกษา — รายละเอียดเต็มดูที่ [README.md § Ruleset ก่อนเริ่มสร้าง/ปรึกษาตัวละคร](README.md#ruleset-ก่อนเริ่มสร้างปรึกษาตัวละคร)"
   );
   lines.push(
-    `> Generated: ${new Date().toISOString().slice(0, 10)} • ${classNames.length} classes • ${allSubclasses.length} subclasses (official: ${official.subclasses.length}, Grim Hollow: ${grimHollow.subclasses.length}, Valda's Spire: ${valdasSpire.subclasses.length})`
+    `> Generated: ${new Date().toISOString().slice(0, 10)} • ${classNames.length} classes • ${allSubclasses.length} subclasses (official: ${official.subclasses.length}, Grim Hollow: ${grimHollow.subclasses.length}, Valda's Spire: ${valdasSpire.subclasses.length}, This Project: ${projectHomebrew.length})`
   );
   lines.push("");
   lines.push("## สารบัญ class");
@@ -261,11 +344,9 @@ function main() {
     lines.push(`_${classBookSummary(classInfo.entries)}_`);
     lines.push("");
 
-    const subs = (subclassesByClass.get(name) || []).slice().sort((a, b) => {
-      if (a.book !== b.book) return a.book === "Official" ? -1 : b.book === "Official" ? 1 : a.book.localeCompare(b.book);
-      if (a.edition !== b.edition) return a.edition.localeCompare(b.edition);
-      return a.name.localeCompare(b.name);
-    });
+    const subs = dedupeSubclassesByName(subclassesByClass.get(name) || []).sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
 
     if (subs.length === 0) {
       lines.push("_(ไม่มี subclass ในข้อมูล local ที่ mirror ไว้)_");
@@ -273,7 +354,8 @@ function main() {
       lines.push("| Subclass | Edition | Source | Book |");
       lines.push("|---|---|---|---|");
       for (const s of subs) {
-        lines.push(`| ${s.name} | ${s.edition} | ${s.source} (\`${s.sourceAbbrev}\`) | ${s.book} |`);
+        const link = resolveSubclassLink(s, linkMap);
+        lines.push(`| [${s.name}](${link}) | ${s.edition} | ${s.source} (\`${s.sourceAbbrev}\`) | ${s.book} |`);
       }
     }
     lines.push("");

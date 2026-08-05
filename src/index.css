@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Smooth-scrolls in-page anchor jumps (e.g. a markdown table of contents
+   linking to its own headings, like codex/General/class-subclass-index.md). */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ─── Fonts ─────────────────────────────────────────────── */
 body {
   font-family: "Inter", system-ui, sans-serif;

@@ -1,8 +1,14 @@
 import { Link, useParams } from 'react-router-dom'
 import AdventureMarkdownView from '../components/AdventureMarkdownView'
+import ClassSubclassIndexView from '../components/ClassSubclassIndexView'
 import { useToast } from '../store/ToastContext'
 import { copyMarkdownToClipboard } from '../utils/copyMarkdown'
 import { getHomebrewRule } from '../utils/homebrewRules'
+
+// This one doc is long enough (500+ subclass rows across 31 classes) to need
+// its own filterable view instead of the plain markdown renderer every other
+// Codex doc uses — see ClassSubclassIndexView for why.
+const FILTERABLE_SLUGS = new Set(['General/class-subclass-index'])
 
 export default function HomebrewRuleDocPage() {
   const { slug } = useParams()
@@ -39,7 +45,11 @@ export default function HomebrewRuleDocPage() {
             📋 คัดลอก {rule.title}
           </button>
         </div>
-        <AdventureMarkdownView content={rule.content} basePath={rule.path} />
+        {FILTERABLE_SLUGS.has(rule.slug) ? (
+          <ClassSubclassIndexView content={rule.content} basePath={rule.path} />
+        ) : (
+          <AdventureMarkdownView content={rule.content} basePath={rule.path} />
+        )}
       </div>
     </div>
   )

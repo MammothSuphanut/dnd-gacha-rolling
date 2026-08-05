@@ -3,10 +3,26 @@ import remarkGfm from 'remark-gfm'
 import { getAdventureDoc, resolveAdventureLink, toCleanAdventurePath } from '../utils/adventureJournals'
 import { getHomebrewDoc, toHomebrewCleanPath } from '../utils/homebrewRules'
 
-const LINK_CLASS = 'text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900'
+export const LINK_CLASS = 'text-violet-700 underline decoration-dotted underline-offset-2 hover:text-violet-900'
 
 function isExternalHref(href) {
-  return /^([a-z][a-z0-9+.-]*:)/i.test(href) || href.startsWith('#')
+  return /^([a-z][a-z0-9+.-]*:)/i.test(href)
+}
+
+// Heading id/anchor scheme shared with character-builder/scripts/generate-class-subclass-index.cjs
+// so its "## Class Name" headings line up with the "[Class Name](#class-name)"
+// table-of-contents links it also generates.
+function headingText(children) {
+  return (Array.isArray(children) ? children : [children])
+    .map((child) => (typeof child === 'string' || typeof child === 'number' ? String(child) : ''))
+    .join('')
+}
+
+export function slugifyHeading(children) {
+  return headingText(children)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
 }
 
 // Adventure journals and homebrew rule docs link into each other (e.g. an
@@ -21,6 +37,16 @@ function toAppPath(path) {
 }
 
 function AdventureLink({ basePath, href, children, ...props }) {
+  if (href && href.startsWith('#')) {
+    // In-page anchor (e.g. a "สารบัญ" table of contents linking to its own
+    // headings below) — plain same-page navigation, not a new tab.
+    return (
+      <a href={href} className={LINK_CLASS} {...props}>
+        {children}
+      </a>
+    )
+  }
+
   if (!href || isExternalHref(href)) {
     return (
       <a href={href} target="_blank" rel="noreferrer" className={LINK_CLASS} {...props}>
@@ -50,11 +76,23 @@ function AdventureLink({ basePath, href, children, ...props }) {
   )
 }
 
-function buildComponents(basePath) {
+export function buildComponents(basePath) {
   return {
-    h1: (props) => <h1 className="font-cinzel mb-2 text-xl font-bold text-stone-900" {...props} />,
-    h2: (props) => <h2 className="font-cinzel mt-5 mb-2 text-lg font-bold text-stone-800" {...props} />,
-    h3: (props) => <h3 className="mt-4 mb-1.5 text-base font-semibold text-stone-800" {...props} />,
+    h1: ({ children, ...props }) => (
+      <h1 id={slugifyHeading(children)} className="font-cinzel mb-2 text-xl font-bold text-stone-900" {...props}>
+        {children}
+      </h1>
+    ),
+    h2: ({ children, ...props }) => (
+      <h2 id={slugifyHeading(children)} className="font-cinzel mt-5 mb-2 text-lg font-bold text-stone-800" {...props}>
+        {children}
+      </h2>
+    ),
+    h3: ({ children, ...props }) => (
+      <h3 id={slugifyHeading(children)} className="mt-4 mb-1.5 text-base font-semibold text-stone-800" {...props}>
+        {children}
+      </h3>
+    ),
     p: (props) => <p className="mb-3 leading-relaxed text-stone-700" {...props} />,
     ul: (props) => <ul className="mb-3 list-disc space-y-1 pl-5 text-stone-700" {...props} />,
     ol: (props) => <ol className="mb-3 list-decimal space-y-1 pl-5 text-stone-700" {...props} />,

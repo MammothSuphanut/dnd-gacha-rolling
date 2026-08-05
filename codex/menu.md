@@ -13,9 +13,13 @@
 - class-subclass-index
 
 ## Core-Rules | Core Rules
+- astral-nexus-lore
 - Fatigue-system
 - Death-and-Dying-system
-- astral-nexus-lore
+
+
+## Consults
+- witsawa-party-balance-review
 
 ## 2024-tier-list | 2024 Tier List
 - alchemist-subclass-tier-list-2024
@@ -46,6 +50,3 @@
 - warmage-subclass-tier-list-2024
 - witch-subclass-tier-list-2024
 - wizard-subclass-tier-list-2024
-
-## Consults
-- witsawa-party-balance-review
