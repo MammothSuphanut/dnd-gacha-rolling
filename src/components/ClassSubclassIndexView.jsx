@@ -132,13 +132,27 @@ export default function ClassSubclassIndexView({ content, basePath }) {
       })
       .filter((c) => {
         if (!hasActiveFacetFilter) return true
+        // Scope = 'class' means the Book chips must be satisfied by the
+        // class's own chassis book, full stop — independent of whatever
+        // survives at the subclass level below. Without this upfront gate,
+        // a class with any subclass surviving edition/search would show
+        // regardless of its own book (bookAppliesToSub is false in this
+        // scope, so filteredSubs never excludes it either).
+        if (bookAppliesToClass && bookScope === 'class' && !c.classBookMatches) return false
         if (c.subclasses.length === 0) {
           // No subclass rows to fall back on — only the class's own name
-          // (search) or its own book (when scope includes 'class') can keep
-          // it visible; edition has no meaning for a class with no subclasses.
+          // (search) or its own book can keep it visible; edition has no
+          // meaning for a class with no subclasses.
           if (editions.size > 0) return false
           if (query !== '' && !c.classNameMatches) return false
-          if (books.size > 0 && !c.classBookMatches) return false
+          if (books.size > 0) {
+            // Scope is subclass-only: there's no subclass row left to
+            // match, so a book filter can never be satisfied here.
+            if (!bookAppliesToClass) return false
+            // Scope includes 'class' (or 'both'): fall back to whether the
+            // class's own chassis book matches.
+            if (!c.classBookMatches) return false
+          }
           return true
         }
         if (c.filteredSubs.length > 0) return true
@@ -147,7 +161,7 @@ export default function ClassSubclassIndexView({ content, basePath }) {
         // is active to demand a matching row too.
         return bookAppliesToClass && c.classBookMatches && editions.size === 0 && query === ''
       })
-  }, [classes, selectedClasses, editions, books, query, hasActiveFacetFilter, bookAppliesToClass, bookAppliesToSub])
+  }, [classes, selectedClasses, editions, books, query, hasActiveFacetFilter, bookAppliesToClass, bookAppliesToSub, bookScope])
 
   const totalShown = visibleClasses.reduce((sum, c) => sum + c.filteredSubs.length, 0)
   const totalAll = classes.reduce((sum, c) => sum + c.subclasses.length, 0)
