@@ -1,4 +1,4 @@
-# Astral Nexus: Constellation Protocol — Meta-Campaign Lore
+# Astral Nexus: Constellation Protocol
 
 ไฟล์นี้เก็บเนื้อเรื่องหลัก (meta-campaign) ที่ทุก adventure ในโปรเจกต์นี้ผูกอยู่เบื้องหลัง ใช้เป็นข้อมูลอ้างอิงเวลาสร้าง adventure ใหม่ด้วย `/build-adventure` — **ไม่ต้องยกทั้งไฟล์ไปแปะในบทสนทนา** อ่านแค่ส่วน "สรุปสำหรับใช้งานจริง" ก็พอสำหรับงานส่วนใหญ่
 

@@ -61,8 +61,8 @@ const links = [
     ),
   },
   {
-    to: '/homebrew-rules',
-    label: 'Homebrew',
+    to: '/codex',
+    label: 'Codex',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4">
         <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3.75h7.5L18.75 8v12a1 1 0 0 1-1 1H6.25a1 1 0 0 1-1-1V4.75a1 1 0 0 1 1-1Z" />

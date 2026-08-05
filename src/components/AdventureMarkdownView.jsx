@@ -17,7 +17,7 @@ function getKnownDoc(path) {
 }
 
 function toAppPath(path) {
-  return path.startsWith('/homebrew-rules/') ? toHomebrewCleanPath(path) : toCleanAdventurePath(path)
+  return path.startsWith('/codex/') ? toHomebrewCleanPath(path) : toCleanAdventurePath(path)
 }
 
 function AdventureLink({ basePath, href, children, ...props }) {
@@ -31,7 +31,7 @@ function AdventureLink({ basePath, href, children, ...props }) {
 
   const targetPath = resolveAdventureLink(basePath, href)
   if (!getKnownDoc(targetPath)) {
-    // Not a doc we know about (e.g. an image or a link to text outside adventures/ and homebrew-rules/) — leave it alone.
+    // Not a doc we know about (e.g. an image or a link to text outside adventures/ and codex/) — leave it alone.
     return (
       <a href={href} target="_blank" rel="noreferrer" className={LINK_CLASS} {...props}>
         {children}

@@ -18,9 +18,9 @@ export default function HomebrewRuleDocPage() {
   if (!rule) {
     return (
       <div className="w-full p-4 md:p-8">
-        <p className="mb-2 text-sm text-stone-400">ไม่พบกฎ Homebrew นี้</p>
-        <Link to="/homebrew-rules" className="text-sm text-violet-700 underline">
-          ← กลับไปหน้า Homebrew Rules
+        <p className="mb-2 text-sm text-stone-400">ไม่พบข้อมูลนี้ใน Codex</p>
+        <Link to="/codex" className="text-sm text-violet-700 underline">
+          ← กลับไปหน้า Codex
         </Link>
       </div>
     )

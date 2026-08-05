@@ -36,7 +36,7 @@ argument-hint: [ชื่อตัวละคร (ถ้ามี)]
    - **Subclass feature ใหม่**: แจ้งว่า level นี้ subclass ได้ feature อะไร ถ้า feature นั้นมีตัวเลือกย่อย (เช่นเลือก spell, เลือก maneuver, เลือก invocation) ให้ถามเลือก
    - **Spell ใหม่ที่เรียนได้** (ถ้าเป็น class ที่เลือก spell รู้จำนวนจำกัด เช่น Sorcerer/Warlock/Ranger/Bard — ไม่ใช่ prepared caster แบบ Cleric/Druid/Wizard ที่เตรียมใหม่ได้ทุกวัน): เสนอ spell list ที่เรียนได้ใน level นี้
    - **Multiclass** (ถ้าผู้ใช้อยากคุยตัวเลือกนี้ — ถามเปิดกว้างว่าอยาก multiclass ไหมก่อนเข้า level ถัดไป ถ้าไม่สนใจข้ามได้เลย): เช็ค prerequisite ability score ตามกฎ multiclassing แล้วเสนอทางเลือก
-   - **Subclass เลือกครั้งแรก** (ถ้า class นั้นยังไม่เคยเลือก subclass มาก่อนและ level นี้ถึงจุดที่ต้องเลือกแล้ว) — เปิด [homebrew-rules/class-subclass-index.md](../../homebrew-rules/class-subclass-index.md) ดูตาราง subclass ของ class นี้ให้ครบก่อนเสนอ แล้วกรองตาม edition/ขอบเขตที่ตอบไว้ในขั้นตอนที่ 3 (2014 = ตัดตัวเลือกที่มีเฉพาะ 2024 ทิ้ง, 2024 = เอาทั้งหมดแต่ถ้าซ้ำ edition ใช้ตัวปี 2024) ก่อนเช็คกลไกจริงจากไฟล์ source ที่ตารางชี้ไป ห้ามเสนอจากภาพจำ
+   - **Subclass เลือกครั้งแรก** (ถ้า class นั้นยังไม่เคยเลือก subclass มาก่อนและ level นี้ถึงจุดที่ต้องเลือกแล้ว) — เปิด [codex/General/class-subclass-index.md](../../codex/General/class-subclass-index.md) ดูตาราง subclass ของ class นี้ให้ครบก่อนเสนอ แล้วกรองตาม edition/ขอบเขตที่ตอบไว้ในขั้นตอนที่ 3 (2014 = ตัดตัวเลือกที่มีเฉพาะ 2024 ทิ้ง, 2024 = เอาทั้งหมดแต่ถ้าซ้ำ edition ใช้ตัวปี 2024) ก่อนเช็คกลไกจริงจากไฟล์ source ที่ตารางชี้ไป ห้ามเสนอจากภาพจำ
 5. หลังคุยจบแต่ละ level สรุปสั้นๆ 1 บรรทัดว่า level นี้ได้อะไรเพิ่มบ้าง ก่อนไป level ถัดไป
 
 6. **สรุปภาพรวมทั้งหมดที่เปลี่ยนแปลง** (จาก level เดิมถึง level ใหม่) ให้ผู้ใช้ยืนยันก่อนแก้ไฟล์จริง

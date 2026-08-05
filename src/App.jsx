@@ -23,7 +23,7 @@ import { ToastProvider } from './store/ToastContext'
 const STANDALONE_ROUTES = [
   '/campaigns/:campaignId/journal',
   '/world/:worldId',
-  '/homebrew-rules/:slug',
+  '/codex/:slug',
   '/homebrew-subclass/:slug',
   '/characters/:characterId',
 ]
@@ -105,8 +105,8 @@ function App() {
               <Route path="/options" element={<OptionsPage />} />
               <Route path="/world" element={<WorldPage />} />
               <Route path="/world/:worldId" element={<WorldSettingPage />} />
-              <Route path="/homebrew-rules" element={<HomebrewRulesPage />} />
-              <Route path="/homebrew-rules/:slug" element={<HomebrewRuleDocPage />} />
+              <Route path="/codex" element={<HomebrewRulesPage />} />
+              <Route path="/codex/:slug" element={<HomebrewRuleDocPage />} />
               <Route path="/homebrew-subclass/:slug" element={<HomebrewSubclassDocPage />} />
               <Route path="/characters" element={<CharacterPage />} />
               <Route path="/characters/:characterId" element={<CharacterDetailPage />} />
