@@ -1,7 +1,7 @@
 # Class Overview Tier List (Edition 2024)
 
 **วันที่**: 2026-08-05
-**ขอบเขต**: เทียบ **ทุก class** ในสารบัญ [class-subclass-index.md](../General/class-subclass-index.md) แบบ class-ต่อ-class (ไม่นับ 3 sidekick class เพราะไม่มีโครงสร้าง subclass/power scaling แบบ PC class) รวม 28 class เดิม + **Sacred Knight** (homebrew ใหม่ของโปรเจกต์นี้) = 29 class
+**ขอบเขต**: เทียบ **ทุก class** ในสารบัญ [class-subclass-index.md](../General/class-subclass-index.md) แบบ class-ต่อ-class (ไม่นับ 3 sidekick class เพราะไม่มีโครงสร้าง subclass/power scaling แบบ PC class) รวม 28 class เดิม + **Aura Knight** (homebrew ใหม่ของโปรเจกต์นี้) = 29 class
 **แหล่งข้อมูล**: [class-subclass-index.md](../General/class-subclass-index.md), tier list รายคลาสทั้งหมดใน [2024-tier-list/](.) (โดยเฉพาะบรรทัด "กลไกคลาสหลัก"/"จุดสังเกต" ของแต่ละไฟล์), ความรู้ทั่วไปเรื่อง 5e 2024 สำหรับ 13 class official
 **หมายเหตุสำคัญ**: นี่คือการประเมิน **ระดับ chassis ของทั้ง class** (ไม่ใช่ subclass) — ไม่ได้จำลอง DPR ทุกเลเวลแบบละเอียดเหมือนไฟล์ subclass ต่อคลาส เป็นการสังเคราะห์จากกลไกหลัก + จุดแข็ง/จุดอ่อนของ subclass pool แต่ละคลาสที่มีอยู่แล้วในโปรเจกต์ ถือเป็นไกด์คร่าวๆ ไม่ใช่ผลจำลองทางคณิตศาสตร์ที่แม่นเป๊ะ — ใช้ประกอบการตัดสินใจ ไม่ใช่กฎตายตัว
 
@@ -72,9 +72,9 @@ D&D 2024 ตั้งใจออกแบบให้ **chassis พื้นฐ
 - **จุดเด่น**: Dance Style เปิด companion/control ที่ทรงพลัง เป็น pattern ที่อยู่ tier บนสุดซ้ำหลาย class ในโปรเจกต์ ([dancer-subclass-tier-list-2024.md](dancer-subclass-tier-list-2024.md))
 - **จุดด้อย**: ต้องคง Dance (สเตตแบบ rage) ไว้ตลอดถึงจะได้ประโยชน์เต็มที่ หลุดสเตตแล้วอ่อนลงทันที
 
-### Sacred Knight 🟡 (Homebrew ใหม่ของโปรเจกต์นี้) — Alignment-locked Aura striker/tank
-- **จุดเด่น**: Aura Technique ให้ output คุมได้แม่นยำ (จ่าย Aura เท่าไหร่ได้ผลเท่านั้น ไม่มีองค์ประกอบสุ่ม) + Domain (lv17) เป็น capstone-tier control ที่แรงจริง + Clarity Aura ให้ utility นอกคอมแบต (guarantee skill check) โดยแลกกับ Aura ก้อนเดียวกับที่ใช้ต่อสู้
-- **จุดด้อย**: ไม่มี Extra Attack เลยตลอด class และยังไม่มี spellcasting จริงแม้แต่น้อย — utility ที่มีจำกัดแค่ skill check ไม่ครอบคลุมกว้างเท่า utility spell ของ Paladin/Ranger ([Sacred-Knight.md](../../homebrew-subclass/Sacred-Knight/Sacred-Knight.md))
+### Aura Knight 🟡 (Homebrew ใหม่ของโปรเจกต์นี้) — Alignment-locked Aura striker/tank
+- **จุดเด่น**: Aura Technique ให้ output คุมได้แม่นยำ (จ่าย Aura เท่าไหร่ได้ผลเท่านั้น ไม่มีองค์ประกอบสุ่ม, ไม่มีระบบ rank/อัพเกรดให้ยุ่งยากอีกแล้ว) + Domain (lv17) เป็น capstone-tier control ที่แรงจริง + Clarity Aura ให้ utility นอกคอมแบต (guarantee skill check) โดยแลกกับ Aura ก้อนเดียวกับที่ใช้ต่อสู้ + Aura Surge (lv2) เติม Aura ฟรีทุกครั้งที่เข้าไฟต์ (สูงสุด PB ครั้ง/วัน) ปิด gap "งบ Aura ทั้งวันบางไป" สำหรับวันมาตรฐาน 6-8 ไฟต์ได้เกือบสนิท
+- **จุดด้อย**: ไม่มี Extra Attack เลยตลอด class และยังไม่มี spellcasting จริงแม้แต่น้อย — utility ที่มีจำกัดแค่ skill check ไม่ครอบคลุมกว้างเท่า utility spell ของ Paladin/Ranger, alignment lock (Lawful only) เป็นความเสี่ยงเชิงปฏิบัติที่ class อื่นไม่มี (พังทั้ง kit ถ้า alignment เปลี่ยนจริง) ([Aura-Knight.md](../../homebrew-subclass/Aura-Knight/Aura-Knight.md))
 
 ---
 
@@ -146,10 +146,11 @@ D&D 2024 ตั้งใจออกแบบให้ **chassis พื้นฐ
 
 ---
 
-## สรุปตำแหน่งเทียบ Sacred Knight
+## สรุปตำแหน่งเทียบ Aura Knight
 
-Sacred Knight อยู่ **A tier** — หลังปรับ Aura Upgrade ทุกขั้น (+1 slot/bonus action ทุก bracket, แก้ปัญหา "resource-starved ต้นไฟต์") และเพิ่ม Clarity Aura (technique ใหม่ที่จ่าย Aura ก้อนเดียวกับที่ใช้ต่อสู้มาบวก skill check แทน ในอัตราเดียวกับ Focused Edge) ทำให้ปิด gap ทั้งสองที่เคยกันไว้ที่ B:
-- **Combat consistency**: ไม่ต้องรอชาร์จหลายเทิร์นอีกต่อไป ได้ output สูงตั้งแต่ต้นไฟต์ใกล้เคียงกับ full caster ที่นับ turn เดียวคาสต์ได้เลย
-- **Multi-pillar utility**: มี utility นอกคอมแบตจริงเป็นครั้งแรก (การันตี skill check ได้) แม้ไม่ใช่ spellcasting — จับคู่ใกล้เคียง **Paladin** มากขึ้น (combat burst + utility ที่ต้องแลกด้วย resource เดียวกัน ไม่ใช่ของแถมฟรี)
+Aura Knight อยู่ **A tier** — ยืนยันอีกครั้งหลังปรับใหญ่ทั้ง class ในรอบนี้ (ตัดระบบ rank/อัพเกรดทิ้งทั้งหมดให้ technique มีค่าคงที่ตัวเดียว, ปรับ proficiency ให้ผูกกับ Path จริงจัง — Retribution ได้ Twin Blade Stance dual-wield, Guardian ได้ heavy armor+shield, เพิ่ม Aura Surge lv2 แก้ปัญหางบ Aura ทั้งวัน):
+- **Combat consistency**: ไม่ต้องรอชาร์จหลายเทิร์นอีกต่อไปตั้งแต่ต้นไฟต์ (Aura Upgrade) และตอนนี้ไม่ขาดแคลนตลอดทั้งวันด้วย (Aura Surge เติม PB Aura ฟรีทุกครั้งที่เข้าไฟต์ สูงสุด PB ครั้ง/Long Rest — งบรวมวันมาตรฐาน 6-8 ไฟต์เพิ่มจาก ~47→63 ที่ lv11 และ ~89→125 ที่ lv20)
+- **Multi-pillar utility**: มี utility นอกคอมแบตจริง (การันตี skill check ได้ผ่าน Clarity Aura) แม้ไม่ใช่ spellcasting — จับคู่ใกล้เคียง **Paladin** มากขึ้น (combat burst + utility ที่ต้องแลกด้วย resource เดียวกัน ไม่ใช่ของแถมฟรี)
+- **Nova ceiling ที่ตรวจสอบแล้ว**: technique สายดาเมจ (Light Sword, Sun Slash) ไม่มี cap และ "เก็บ Aura หลายเทิร์นแล้วเทลงตาเดียว" ทำได้จริงเพราะแปลง Aura ใช้แค่ Bonus Action — แต่คำนวณแล้วดาเมจรวมทั้งไฟต์เท่าเดิมไม่ว่าจะกระจายจ่ายหรือเก็บมาเทตาเดียว (อัตราแลกเปลี่ยนเชิงเส้น 1:1 คงที่) แค่เปลี่ยนจังหวะเท่านั้น ไม่ใช่การปั๊มดาเมจเกินงบ — ความเสี่ยงพลาดการโจมตีครั้งเดียวก็ถ่วงดุลการ nova ไว้ในตัวอยู่แล้ว ไม่ต้องเติม cap เทียม
 
-ยังไม่ใช่ S เพราะ utility ที่เพิ่มมาแคบกว่า full caster จริง (จำกัดแค่ skill check ไม่ครอบคลุม exploration/social แบบ spell เช่น Teleport/Scrying) — ตำแหน่ง A เทียบเท่า Paladin/Warlock ถือว่าเหมาะสมกับ trade-off ที่ยังคงไว้
+ยังไม่ใช่ S เพราะ utility ที่มีแคบกว่า full caster จริง (จำกัดแค่ skill check ไม่ครอบคลุม exploration/social แบบ spell เช่น Teleport/Scrying) และมี alignment lock เป็นความเสี่ยงเชิงปฏิบัติที่ full caster ไม่ต้องแบก — ตำแหน่ง A เทียบเท่า Paladin/Warlock ถือว่าเหมาะสมกับ trade-off ที่ยังคงไว้
