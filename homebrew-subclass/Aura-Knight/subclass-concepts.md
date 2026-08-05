@@ -4,7 +4,7 @@
 >
 > ธีมทั้ง 6 บัลลังก์อิงจาก canon จริงของ **Throne of Seal (神印王座)** — ดูที่มา/แหล่งอ้างอิงใน [Aura-Knight.md § Designer's Note](Aura-Knight.md#designers-note)
 >
-> **หมายเหตุ**: เดิมมีบัลลังก์ที่ 7 "อัศวินบำเพ็ญคู่" (concept ใหม่ของโปรเจกต์ ไม่มีใน canon) เก็บไว้ในไฟล์นี้ด้วย — ย้ายไปเป็น **Path ที่ 3 ("Tempered", ชื่อร่าง) ในเลเวล 1 — Choose Your Path** แทนแล้ว เพราะแก่นของ concept คือการสลับสไตล์การเล่น ไม่ใช่การเรียนรู้ technique พิเศษแบบ subclass ดูรายละเอียดที่ [Aura-Knight.md § เลเวล 1 — Choose Your Path](Aura-Knight.md#เลเวล-1--choose-your-path)
+> **หมายเหตุ**: เดิมมีบัลลังก์ที่ 7 "อัศวินบำเพ็ญคู่" (concept ใหม่ของโปรเจกต์ ไม่มีใน canon) เก็บไว้ในไฟล์นี้ด้วย — ย้ายไปเป็น **Path ที่ 3 ("Formless") ในเลเวล 1 — Choose Your Path** แทนแล้ว เพราะแก่นของ concept คือการสลับสไตล์การเล่น ไม่ใช่การเรียนรู้ technique พิเศษแบบ subclass ดูรายละเอียดที่ [Aura-Knight.md § เลเวล 1 — Choose Your Path](Aura-Knight.md#เลเวล-1--choose-your-path)
 >
 > **แนวทางออกแบบร่วม** (ตามที่วางไว้ใน [Aura-Knight.md § Subclass](Aura-Knight.md#subclass)): แต่ละ subclass ควร "ต่อยอด/อัพเกรด Technique ที่มีอยู่แล้ว" เป็นหลัก ไม่ใช่เพิ่มกลไกใหม่แยกขาด — ในตารางด้านล่าง คอลัมน์ "ต่อยอดจาก" คือ technique/feature เดิมที่ subclass นั้นควรผูกด้วย
 
@@ -166,7 +166,7 @@
 - [x] เพิ่มโครง "เลเวลที่ได้ (3/6/10/14)" เว้นว่างไว้ท้ายทุก subclass — รอแปลง concept ด้านบนมาใส่
 - [x] ตัด Domain ออกจากคลาสหลักทั้งหมด — lv17 เปลี่ยนเป็น Subclass Feature (รวมเป็น 5 ระดับ: 3/6/10/14/17), lv18 เปลี่ยนเป็น Improve Aura Technique, ขยายโครง "เลเวลที่ได้" ทุก subclass ให้มีช่อง lv17 ด้วย — ดู [Aura-Knight.md § Level Progression](Aura-Knight.md#level-progression)
 - [x] ออกแบบ Improve Aura Technique (lv18) ครบทั้ง 10 technique หลักของคลาสแล้ว — ดู [Aura-Knight.md § เลเวล 18](Aura-Knight.md#เลเวล-18--improve-aura-technique) (technique ที่ subclass มอบให้เพิ่มยังไม่ได้ทำ)
-- [x] ย้ายบัลลังก์ที่ 7 (อัศวินบำเพ็ญคู่) ออกจากไฟล์นี้ — กลายเป็น Path ที่ 3 "Tempered" (ชื่อร่าง) ใน [Aura-Knight.md § Choose Your Path](Aura-Knight.md#เลเวล-1--choose-your-path) แทน พร้อมกฎใหม่ผูก technique access กับอุปกรณ์ที่ถืออยู่ (ไม่ใช่ Path ที่เลือกตอนเลเวล 1) — Retribution technique ใช้ได้ตอนถืออาวุธ 2 มือ, Guardian technique ใช้ได้ตอนถือโล่
+- [x] ย้ายบัลลังก์ที่ 7 (อัศวินบำเพ็ญคู่) ออกจากไฟล์นี้ — กลายเป็น Path ที่ 3 "Formless" ใน [Aura-Knight.md § Choose Your Path](Aura-Knight.md#เลเวล-1--choose-your-path) แทน พร้อมกฎใหม่ผูก technique access กับอุปกรณ์ที่ถืออยู่ (ไม่ใช่ Path ที่เลือกตอนเลเวล 1) — Retribution technique ใช้ได้ตอนถืออาวุธ 2 มือ, Guardian technique ใช้ได้ตอนถือโล่
 - [ ] กระจาย concept ของแต่ละ subclass (ทั้ง 6 ที่เหลือ) ลงช่อง เลเวล 3/6/10/14/17 ที่เว้นว่างไว้
 - [ ] เลือก subclass ตัวแรกที่จะลงมือออกแบบกลไกเต็ม (แนะนำเริ่มจาก #3 หรือ #4 เพราะจับคู่ Path ตรงที่สุด ออกแบบง่ายสุด)
 - [ ] เข้า `/build-class` เพื่อ balance check ทีละตัวตามระบบเดิมของโปรเจกต์ (โดยเฉพาะ #1/#2 ที่เป็น technique ใหม่ทั้งคู่ ไม่ใช่แค่อัพเกรดของเดิม — และ #4 ที่ต้องยืนยันว่าไม่แตะอัตราแลกเปลี่ยน)

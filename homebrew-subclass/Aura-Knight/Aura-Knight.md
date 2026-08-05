@@ -23,7 +23,7 @@ Aura Knight ต้องเป็น **Lawful** (Lawful Good, Lawful Neutral, �
 |---|---|
 | Hit Die | d10 |
 | Saving Throws | Strength, Wisdom |
-| Armor Proficiency | Light armor, Medium armor (Guardian ได้ Heavy armor + Shields เพิ่ม, Tempered ได้ Shields เพิ่ม (ไม่ได้ Heavy) — ทั้งคู่มาจาก Path เลือกตอนเลเวล 1 ดู [Choose Your Path](#เลเวล-1--choose-your-path)) |
+| Armor Proficiency | Light armor, Medium armor (Guardian ได้ Heavy armor + Shields เพิ่ม, Formless ได้ Shields เพิ่ม (ไม่ได้ Heavy) — ทั้งคู่มาจาก Path เลือกตอนเลเวล 1 ดู [Choose Your Path](#เลเวล-1--choose-your-path)) |
 | Weapon Proficiency | Simple weapons (ทั้งหมด), Martial weapons ที่มีคุณสมบัติ **Versatile** เท่านั้น (เช่น Longsword, Battleaxe, Warhammer, Spear, Trident, War Pick, Quarterstaff) |
 | Skill Proficiency | เลือก 2 จาก: Athletics, Insight, Intimidation, Perception, Persuasion, Religion |
 | Primary Ability | Strength |
@@ -128,7 +128,7 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
   - ได้ **AC +1** เมื่อถืออาวุธ 2 มือ (คู่) เท่านั้น
   - ชักอาวุธออกจากฝัก/เก็บอาวุธเข้าฝักได้ครั้งละ 2 เล่ม (แทนที่จะเป็น 1 เล่มตามปกติ)
 - **Guardian** — อัศวินผู้พิทักษ์ เน้นการตั้งรับและปกป้องพันธมิตร นิยมใช้โล่คู่กับอาวุธ ได้ **Armor Proficiency เพิ่ม: Heavy armor, Shields**
-- **Tempered** *(ชื่อร่าง)* — อัศวินที่ไม่ยึดติดท่าใดท่าหนึ่ง ปรับตัวสลับระหว่างสายบุกและสายรับกลางไฟต์ได้ตามสถานการณ์ ได้ **Armor Proficiency เพิ่ม: Shields เท่านั้น** (ไม่ได้ Heavy armor — ยังจำกัดแค่ light/medium เหมือน Chassis พื้นฐาน) ได้ฟีเจอร์ **Adaptive Stance**:
+- **Formless** — อัศวินบำเพ็ญคู่ ไม่ยึดติดท่าใดท่าหนึ่ง ปรับตัวสลับระหว่างสายบุกและสายรับกลางไฟต์ได้ตามสถานการณ์ ได้ **Armor Proficiency เพิ่ม: Shields เท่านั้น** (ไม่ได้ Heavy armor — ยังจำกัดแค่ light/medium เหมือน Chassis พื้นฐาน) ได้ฟีเจอร์ **Adaptive Stance**:
   - **สลับมือรอง (อาวุธ ↔ โล่) ได้ทั้งแบบ part of an attack หรือ Reaction** — ชัก/สับเปลี่ยนระหว่างอาวุธมือรองกับโล่ ได้ระหว่างใช้ Action โจมตี (ไม่เสีย action แยก) หรือใช้ **Reaction** สลับได้แม้ไม่ใช่เทิร์นตัวเอง — ไม่เสีย Aura ใดๆ
   - **ถืออาวุธคู่ (ไม่ถือโล่)**: อาวุธหลัก (versatile) ใช้ **ดาเมจไดซ์แบบสองมือ** ได้แม้ถือมือเดียว + ได้ **AC +1** (เหมือน Twin Blade Stance ของ Retribution ทุกประการ)
   - **ถือโล่**: ได้ผลของโล่ปกติ (AC+2 ตามกฎมาตรฐาน) **เท่านั้น** — ไม่ทับซ้อนกับ AC+1/ดาเมจไดซ์สองมือด้านบน (กันไม่ให้ได้ครบทั้งโล่+ดาเมจสองมือ+AC+1 พร้อมกันซึ่งจะแรงเกิน)
@@ -267,7 +267,7 @@ Technique สาย **Universal** ใช้ได้เสมอ — Technique �
 
 ## Subclass
 
-Aura Knight เลือก Subclass ตอนเลเวล 3 (ได้ feature เพิ่มที่เลเวล **3, 6, 10, 14, 17**) — ยังไม่มี subclass ที่ออกแบบกลไกเต็มไว้ในขณะนี้ วางแผนไว้ทั้งหมด **6 ตัว** อิงบัลลังก์จาก Throne of Seal — ดูร่าง concept ของแต่ละตัวที่ [subclass-concepts.md](subclass-concepts.md) *(เดิมมีตัวที่ 7 "อัศวินบำเพ็ญคู่" คอนเซ็ปต์ใหม่ของโปรเจกต์ — ย้ายไปเป็น Path ที่ 3 "Tempered" ในหัวข้อ [Choose Your Path](#เลเวล-1--choose-your-path) แทนแล้ว)*
+Aura Knight เลือก Subclass ตอนเลเวล 3 (ได้ feature เพิ่มที่เลเวล **3, 6, 10, 14, 17**) — ยังไม่มี subclass ที่ออกแบบกลไกเต็มไว้ในขณะนี้ วางแผนไว้ทั้งหมด **6 ตัว** อิงบัลลังก์จาก Throne of Seal — ดูร่าง concept ของแต่ละตัวที่ [subclass-concepts.md](subclass-concepts.md) *(เดิมมีตัวที่ 7 "อัศวินบำเพ็ญคู่" คอนเซ็ปต์ใหม่ของโปรเจกต์ — ย้ายไปเป็น Path ที่ 3 "Formless" ในหัวข้อ [Choose Your Path](#เลเวล-1--choose-your-path) แทนแล้ว)*
 
 **แนวทางออกแบบ Subclass ในอนาคต**: ให้ subclass ทำหน้าที่ "ต่อยอด/อัพเกรด Technique ที่มีอยู่แล้ว" เป็นหลัก แทนที่จะเพิ่มกลไกใหม่แยกขาด — เช่น subclass สาย A อาจให้ Focused Edge/Light Sword ลดต้นทุน Aura ต่อ stack ลง (ถูกกว่า 1 Aura/stack ปกติ), subclass สาย B อาจให้ Cross Slash ลดอัตราคูณต้นทุนต่อ stack ลง (จากปกติ stack ที่ N ราคา N+2 Aura เหลือถูกกว่านั้น เช่น N+1) ฯลฯ — วิธีนี้ทำให้แต่ละ subclass รู้สึกเหมือน "สายการเล่น" ที่ผูกกับ technique หลักที่เลือกใช้บ่อย ไม่ใช่แค่ feature แถมที่แยกจากระบบหลัก
 
