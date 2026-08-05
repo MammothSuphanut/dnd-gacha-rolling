@@ -23,7 +23,18 @@ export function parseClassSubclassIndex(raw) {
 
     const headingMatch = line.match(/^##\s+(.+)$/)
     if (headingMatch) {
-      current = { name: headingMatch[1].trim(), summary: '', subclasses: [] }
+      // Class headings are "## [Name](link)" (link to 5e.tools, or to this
+      // project's own doc for a project-original class) — fall back to a
+      // plain "## Name" read for safety if the generator ever emits one
+      // unlinked.
+      const linkMatch = headingMatch[1].trim().match(/^\[(.+)\]\((.+)\)$/)
+      current = {
+        name: linkMatch ? linkMatch[1].trim() : headingMatch[1].trim(),
+        link: linkMatch ? linkMatch[2].trim() : null,
+        summary: '',
+        books: [],
+        subclasses: [],
+      }
       classes.push(current)
       inTable = false
       continue
@@ -58,6 +69,11 @@ export function parseClassSubclassIndex(raw) {
     const summaryMatch = line.match(/^_(.+)_$/)
     if (summaryMatch && !current.summary && current.subclasses.length === 0) {
       current.summary = summaryMatch[1].trim()
+      // Generator joins a class's distinct source books with " + " (see
+      // classBookSummary in generate-class-subclass-index.cjs) — split that
+      // back out so the Book filter can match against the class itself, not
+      // just its subclasses.
+      current.books = current.summary.split('+').map((b) => b.trim())
     }
   }
 

@@ -44,6 +44,24 @@ const HOMEBREW_FOLDER_LABELS = {
   "valdas-spire": "Valda's Spire of Secrets (Mage Hand Press)",
 };
 
+// Classes this project invented from scratch (own prose .md doc under
+// homebrew-subclass/<ClassName>/<ClassName>.md, see homebrewSubclasses.js) —
+// they have no 5etools mirror and, unlike a finished homebrew subclass,
+// aren't registered in classes.json until they have at least one complete
+// subclass (see each doc's own "ข้อจำกัดของแอปนี้" section for why). Listed
+// here by hand so the index still links to the class doc itself in the
+// meantime. Once a class gets its first subclass into classes.json it'll
+// start showing subclass rows too (loadProjectHomebrewSubclasses handles
+// that part automatically) — leave the manual entry here regardless, since
+// this is what makes the *class heading itself* clickable to the doc.
+const PROJECT_ORIGINAL_CLASSES = [
+  {
+    name: "Aura Knight",
+    link: "/homebrew-subclass/Aura-Knight/Aura-Knight",
+    book: "Homebrew",
+  },
+];
+
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
@@ -237,6 +255,15 @@ function resolveSubclassLink(s, linkMap) {
   return linkMap.get(key) || `https://5e.tools/search.html?q=${encodeURIComponent(s.name)}`;
 }
 
+// Class heading link: a project-original class (see PROJECT_ORIGINAL_CLASSES)
+// points at its own doc; everything else (official/Grim Hollow/Valda's
+// Spire) has no single reliable "class page" anchor across every printing,
+// so fall back to the same 5e.tools search-link pattern resolveSubclassLink
+// already uses for subclasses with no exact match.
+function resolveClassLink(classInfo) {
+  return classInfo.link || `https://5e.tools/search.html?q=${encodeURIComponent(classInfo.name)}`;
+}
+
 // This project's own bespoke homebrew subclasses (prose .md files under
 // homebrew-subclass/, e.g. The Ruined Flame) aren't mirrored as 5etools-style
 // JSON, so the two loaders above never see them. They *are* registered in
@@ -257,14 +284,14 @@ function loadProjectHomebrewSubclasses() {
       subclasses.push({
         className: item.group,
         name: item.name,
-        source: "This Project",
+        source: "Homebrew",
         sourceAbbrev: "Homebrew",
         // homebrew-subclass/ is a newer addition written against the 2024
         // rules (e.g. The Ruined Flame keys off Innate Sorcery) — no per-file
         // edition metadata exists yet, so this is a fixed assumption rather
         // than something detected. Revisit if a 2014-only entry shows up here.
         edition: "2024",
-        book: "Homebrew (This Project)",
+        book: "Homebrew",
       });
     }
   }
@@ -284,6 +311,16 @@ function main() {
   mergeClassMaps(allClasses, official.classes);
   mergeClassMaps(allClasses, grimHollow.classes);
   mergeClassMaps(allClasses, valdasSpire.classes);
+
+  // Project-original classes (see PROJECT_ORIGINAL_CLASSES above) — registered
+  // even before they have a single finished subclass, purely so the class
+  // heading itself links to the doc instead of a nonsense 5e.tools search.
+  for (const proj of PROJECT_ORIGINAL_CLASSES) {
+    if (!allClasses.has(proj.name)) allClasses.set(proj.name, { name: proj.name, entries: [] });
+    const info = allClasses.get(proj.name);
+    info.link = proj.link;
+    info.entries.push({ source: proj.book, sourceAbbrev: "Homebrew", edition: "2024", book: proj.book });
+  }
 
   const allSubclasses = [
     ...official.subclasses,
@@ -339,7 +376,7 @@ function main() {
 
   for (const name of classNames) {
     const classInfo = allClasses.get(name);
-    lines.push(`## ${name}`);
+    lines.push(`## [${name}](${resolveClassLink(classInfo)})`);
     lines.push("");
     lines.push(`_${classBookSummary(classInfo.entries)}_`);
     lines.push("");
@@ -355,7 +392,12 @@ function main() {
       lines.push("|---|---|---|---|");
       for (const s of subs) {
         const link = resolveSubclassLink(s, linkMap);
-        lines.push(`| [${s.name}](${link}) | ${s.edition} | ${s.source} (\`${s.sourceAbbrev}\`) | ${s.book} |`);
+        // Skip the redundant "(`Abbrev`)" suffix when it's just the same
+        // word as the source name (e.g. this project's own homebrew rows,
+        // source="Homebrew"/sourceAbbrev="Homebrew" — showing "Homebrew
+        // (`Homebrew`)" would be silly).
+        const sourceCell = s.source === s.sourceAbbrev ? s.source : `${s.source} (\`${s.sourceAbbrev}\`)`;
+        lines.push(`| [${s.name}](${link}) | ${s.edition} | ${sourceCell} | ${s.book} |`);
       }
     }
     lines.push("");
