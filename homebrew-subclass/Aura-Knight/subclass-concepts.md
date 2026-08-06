@@ -17,9 +17,9 @@
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
 - เลเวล 3: Eternity: Action, 1 Aura ต่อ stack: รักษา HP ให้ตัวเองหรือพันธมิตร 1 คนในระยะ 30 ft เท่ากับ **1d4 ต่อ stack** ไม่มีเพดาน stack
-- เลเวล 6: Creation: Pure White Blade — ทะลวง Resistance กายภาพ และ ได้ Resistance ต่อกายภาพ 1 นาที 
-- เลเวล 10: True Eternity: สามารถจ่าย 2 Aura เพื่อเพิ่ม Temp hp ได้ **1d4 ต่อ stack** ไม่มีเพดาน stack
-- เลเวล 14: True Creation: ทะลวง Resistance ทุกชนิด และ ได้ Resistance ต่อทุกชนิด 1 นาที 
+- เลเวล 6: Creation: Pure White Blade สามารถจ่าย Aura เพิ่มเพื่อโจมตีเป้าหมายเพิ่มในการโจมตีครั้งเดียวกัน (ทุกเป้าหมายต้องอยู่ในระยะที่ Pure White Blade คำนวณไว้) — จ่ายเพิ่ม **5 Aura** โจมตีเป้าหมายที่ 2 ได้, จ่ายเพิ่มอีก **10 Aura** (รวม 15) โจมตีเป้าหมายที่ 3 ได้
+- เลเวล 10: True Eternity: สามารถจ่าย **1 Aura ต่อ stack** (อัตราเดียวกับ Eternity) เพื่อเพิ่ม Temp HP ได้ **1d4 ต่อ stack** ไม่มีเพดาน stack
+- เลเวล 14: True Creation: Pure White Blade ทะลวง Resistance กายภาพ และ ได้ Resistance ต่อกายภาพ 1 นาที *(ย้ายมาจาก lv6 เดิม — เลื่อนช้าลงเพราะแรงเกินไปสำหรับเลเวลต้น)*
 - เลเวล 17: Throne of Eternity and Creation (1 min / longrest): Aura 30 ft ภายใน 1 Action สามารถโจมตีด้วย Pure White Blade หรือ Eternity ได้สูงสุด Wis เป้าหมาย ต่อ Action (จ่าย cost แยกต่อเป้าหมาย)
 
 ---
@@ -30,11 +30,11 @@
 - **Flavor**: เจ้าของจริงในเรื่อง (Han Yu) มีตำแหน่ง "อัศวินแห่งการทำลายและการให้อภัย" — dual เข้ากับความขัดแย้งในตัว: ทำลายล้างสุดขั้ว แต่กลับให้อภัยได้ เหมาะกับอัศวินที่ทำให้ศัตรูหวาดกลัวก่อนจะจบด้วยความเมตตา
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: Sorrow's Bargain: **ทุกครั้งที่ใช้ BA แปลง Aura** จะสามารถจ่าย HP = 3*Wis เพื่อรับ Aura เพิ่มเท่ากับ Wis
-- เลเวล 6: Fear's Bargain: การโจมตีที่ใช้ Focused Edge ถ้า Attack Roll >= AC เป้าหมาย +15 + Proficiency Bonus ของเป้าหมาย จะนับว่าเป็นการ Critical Hit
-- เลเวล 10: True Sorrow's Bargain: เมื่อใช้ BA แปลง Aura จะสามารถจ่าย HP = 2*Wis เพื่อรับ Aura เพิ่มเท่ากับ Wis + ได้ Advantage ในการโจมตีครั้งแรก
-- เลเวล 14: True Fear's Bargain: การโจมตีที่ใช้ Focused Edge และดาเมจ Critical Hit ในครั้งนี้จะเป็น 3 เท่า จาก 2 เท่า
-- เลเวล 17: Throne of Fear and Sorrow (1 min / longrest): เมื่อใช้  BA consume Spell slot มาเป็น Aura สามารถจ่าย Max hp 10 เพื่อรับ Aura เพิ่ม 20 หน่วย ได้ dash และ disengauge
+- เลเวล 3: Sorrow's Bargain: **ทุกครั้งที่ใช้ BA แปลง Aura** จะสามารถจ่าย HP = 3×WIS **modifier** เพื่อรับ Aura เพิ่มเท่ากับ WIS modifier
+- เลเวล 6: Fear's Bargain: การโจมตีที่ใช้ Focused Edge ถ้า Attack Roll >= AC เป้าหมาย +15 + Proficiency Bonus ของเป้าหมาย จะนับว่าเป็นการ Critical Hit — **ใช้ได้สูงสุด 1 ครั้ง/เทิร์น** แม้เทิร์นนั้นจะโจมตีหลายครั้ง (แต่ละครั้งยังต้องจ่าย Focused Edge cost แยกกันตามกฎ [Aura-Knight.md § Technique หลายครั้งต่อเทิร์น](Aura-Knight.md#aura-technique) ตามปกติ — cap นี้กันไม่ให้ combo กับ technique ที่โจมตีถี่แล้วได้ auto-crit รัวหลายจานต่อเทิร์น)
+- เลเวล 10: True Sorrow's Bargain: เมื่อใช้ BA แปลง Aura จะสามารถจ่าย HP = 2×WIS modifier เพื่อรับ Aura เพิ่มเท่ากับ WIS modifier
+- เลเวล 14: True Fear's Bargain: การโจมตีที่ใช้ Focused Edge และดาเมจ Critical Hit ในครั้งนี้จะเป็น 3 เท่า จาก 2 เท่า (ยังอยู่ภายใต้ cap 1 ครั้ง/เทิร์นจาก Fear's Bargain)
+- เลเวล 17: Throne of Fear and Sorrow (1 min / longrest): เมื่อใช้ BA consume Spell slot มาเป็น Aura สามารถจ่าย **Max HP 20** (หายไปจนกว่าจะทำ Long Rest ครั้งถัดไป จึงฟื้นคืนเต็ม ไม่ใช่เสียถาวร) เพื่อรับ Aura เพิ่ม **10 หน่วย** ได้ dash และ disengage
 
 ---
 
@@ -60,11 +60,11 @@
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
 - ต้องเลือก Guardian เท่านั้น
-- เลเวล 3: The Protection: Aegis Aura สามารถใช้กับเพื่อนร่วมทีมในระยะ 30 ft ได้
+- เลเวล 3: The Protection: เลือกเพื่อนร่วมทีม 1 คน (ไม่ใช่ตัวเอง) ในระยะ 30 ft เป็นเป้าหมาย — ใช้ Aegis Aura ปกป้องเป้าหมายนั้นแทนตัวเองได้ โดยต้องจ่าย **Reaction** เพิ่มจาก Aura cost ปกติ (ใช้กับตัวเองยังฟรีเหมือนเดิม ไม่เสีย Reaction)
 - เลเวล 6: The Mercy: ทุก 2 hp ที่เสียไปจะได้ 1 Aura
-- เลเวล 10: The True Protection: Steadfast Aura สามารถใช้กับเพื่อนร่วมทีมในระยะ 30 ft ได้
+- เลเวล 10: The True Protection: Steadfast Aura ใช้กับเป้าหมายเดียวกับ The Protection (เพื่อน 1 คนในระยะ 30 ft) ได้เช่นกัน โดยต้องจ่าย **Reaction** เหมือนกัน
 - เลเวล 14: The True Mercy: เป้าหมายได้ temp hp 1 หน่วยทุก 2 Aura ที่ใช้ไปใน Aegis Aura หรือ Steadfast
-- เลเวล 17: Throne of Protection and Mercy (1 min / longrest): Speed เหลือ 0 ในระยะ 120 ft  ศัตรูโจมตีเพื่อนจะ disadvantage และ พวกเค้าจะได้ Adventage ใน Saving throw และได้ AC+1
+- เลเวล 17: Throne of Protection and Mercy (1 min / longrest): **ตัวเอง** Speed เหลือ 0 ตลอดช่วงเวลานี้ (สละการเคลื่อนที่ตัวเองเพื่อโปรเจกต์บัฟ) แลกกับเพื่อนร่วมทีมในระยะ 120 ft ได้รับ: ศัตรูที่โจมตีพวกเขา disadvantage, พวกเขาได้ Advantage ใน Saving Throw, และได้ AC+1
 
 ---
 
@@ -75,10 +75,10 @@
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
 - เลเวล 3: The Wisdom: Clarity Aura ใช้กับเพื่อนในระยะ 30 ft ได้
-- เลเวล 6: The Spirit: จ่าย 10 Aura เพื่อมอบ Heroic Inspiration แก่เพื่อน 1 คน
+- เลเวล 6: The Spirit: เมื่อใช้ Clarity Aura กับ Skill Check ใดๆ ถ้าจ่าย Aura รวมอย่างน้อย **5 หน่วย** ในครั้งนั้น (นับรวมกับ stack +1/Aura ปกติ) สามารถ **reroll** ผลการทอย Skill Check นั้นได้ 1 ครั้ง โดยต้องใช้ผลที่ทอยใหม่เสมอ (เลือกกลับไปใช้ผลเดิมไม่ได้)
 - เลเวล 10: The True Wisdom: Adventage ในการทอย Skill check เมื่อใช้ Clarity Aura
-- เลเวล 14: The True The Spirit: สามารถใช้ Heroic Inspiration หรือ 10 Aura เพื่อใช้  Heroic Inspiration ให้คนอื่นได้ตลอดเวลา
-- เลเวล 17: Throne of Wisdom and Spirit (1 min / longrest): ในระยะ 30 ft เพื่อนจะได้ advantage ในการทอย attack roll และ skill check ศัตรูจะ disadvantage ในการ Saving Throw ต่อฝ่ายเรา
+- เลเวล 14: The True Spirit: เกณฑ์ขั้นต่ำของ The Spirit ลดลงจาก **5 Aura เหลือ 3 Aura** *(ตัวเลขนี้เป็นข้อเสนอ ปรับได้ถ้าต้องการ)*
+- เลเวล 17: Throne of Wisdom and Spirit (1 min / longrest): เลือกเพื่อน 1 คน (ไม่ใช่ตัวเอง) ในระยะ 30 ft — เป้าหมายนั้นได้ advantage ในการทอย attack roll และ skill check ตลอดช่วงเวลานี้ ศัตรูที่ทำ Saving Throw ต่อเอฟเฟกต์ที่เป้าหมายนั้นสร้างขึ้นจะ disadvantage
 
 ---
 
@@ -88,7 +88,7 @@
 - **Flavor**: เจ้าของจริง (Long Tianyin) ตำแหน่ง "อัศวินแห่งการควบคุมและการจำกัด" — ธีมนี้ผูกกับข้อกำหนด **Lawful alignment** ของทั้งคลาสได้แนบสนิทที่สุด (ระเบียบ/กฎ = แก่นของ Lawful) เหมาะเป็น subclass "ตัวแทนแท้ๆ" ของธีม Aura Knight
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: The Order: Swift Aura ใช้กับเพื่อนร่วมทีมในระยะ 30 ft เคลื่อนที่ได้ทันทีเท่ากับ speed ของ Swift Aura
+- เลเวล 3: The Order: Swift Aura ใช้กับเพื่อนร่วมทีมในระยะ 30 ft เคลื่อนที่ได้ทันทีเท่ากับ speed ของ Swift Aura — เพื่อนที่ยินยอมสามารถจ่าย **Reaction** ของตัวเองเพื่อโจมตีด้วยอาวุธ 1 ครั้งทันทีหลังเคลื่อนที่จบ
 - เลเวล 6: The Law: Swift Aura ทำให้ไม่โดน Opportunity Attack
 - เลเวล 10: The True Order: เพื่อที่ได้รับผลของ Swift Aura จะได้รับ Speed เท่ากับของ Swift Aura เมื่อเข้าเทินตัวเอง
 - เลเวล 14: The True Law: Swift Aura ทำให้ได้รับสถาณะ Dodge
