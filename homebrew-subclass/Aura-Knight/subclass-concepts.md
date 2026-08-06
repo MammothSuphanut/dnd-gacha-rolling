@@ -57,9 +57,9 @@
 **EN**: Throne of Doom and Slaughter · **CN**: 末日与杀戮之神印王座
 
 - **Flavor**: เจ้าของจริง (Long Xingyu) ตำแหน่ง "อัศวินแห่งการพิพากษาและการไต่สวน" — สายบุกทำลายล้างเพียวๆ ธีม "ผู้พิพากษาที่ลงทัณฑ์ด้วยกำลัง" ตรงกับ Retribution path เป๊ะที่สุดในบรรดา 6 บัลลังก์
-- **แนวทางกลไก (อัปเดต — ยืนยันแล้ว)**: อัพเกรด technique ที่ "บ้าน" ของ Retribution ทั้งคู่ (Light Sword ย้ายมาเป็น Retribution แล้ว — ดู [Aura-Knight.md § Aura Technique](Aura-Knight.md#aura-technique)) — **ใช้ร่วมกับ lv18 Improve Aura Technique ได้เต็มๆ ไม่ชนกัน** เพราะ subclass ต่อยอด "บนฐาน" ของ lv18 แทนที่จะแทนที่มัน:
-  1. **Light Sword**: ดาเมจ **d4 → d6 ต่อ stack** (คงเรทต้นทุน 1 Aura/stack เท่าเดิม) — ถ้ามี lv18 Improve Aura Technique เลือก Light Sword ด้วย (lv18 อัพเป็น d6 เหมือนกัน) ทั้งคู่รวมกันเป็น **d8/stack** (d6→d8 อีกขั้น ไม่ compound เป็น 2 ลูกเต๋า — ยืนยันแล้วว่าเลือกทางนี้แทน 2d4/2d6 เพื่อไม่ให้แรงเกินไปตอนผสมกับ Cross Slash)
-  2. **Cross Slash**: ใช้สูตร **N+1 ต่อ stack เหมือน lv18** (ถ้าตัวละครยังไม่ได้ lv18 ก็ยังใช้ N+2 ฐานตามปกติ) **บวกโบนัสครั้งเดียว**: พอยอด Aura ที่จ่ายให้ Cross Slash สะสมถึง **5** (ครั้งแรกที่ถึงเท่านั้น ไม่ใช่ทุกๆ 5 — จ่ายต่อไปอีกเท่าไหร่ก็ไม่ได้โบนัสซ้ำ) ได้ **ตีเพิ่มฟรีอีก 1 ครั้ง**
+- **แนวทางกลไก (อัปเดต — ยืนยันแล้ว)**: อัพเกรด technique ที่ "บ้าน" ของ Retribution ทั้งคู่ (Light Sword ย้ายมาเป็น Retribution แล้ว — ดู [Aura-Knight.md § Aura Technique](Aura-Knight.md#aura-technique)) — **ใช้ร่วมกับ Improve Aura Technique (lv7/lv18) ได้เต็มๆ ไม่ชนกัน** เพราะ subclass ต่อยอด "บนฐาน" ของ lv7/lv18 แทนที่จะแทนที่มัน:
+  1. **Light Sword**: ดาเมจ **d4 → d6 ต่อ stack** (คงเรทต้นทุน 1 Aura/stack เท่าเดิม) — ถ้ามี Improve Aura Technique (lv7 หรือ lv18) เลือก Light Sword ด้วย (อัพเป็น d6 เหมือนกัน) ทั้งคู่รวมกันเป็น **d8/stack** (d6→d8 อีกขั้น ไม่ compound เป็น 2 ลูกเต๋า — ยืนยันแล้วว่าเลือกทางนี้แทน 2d4/2d6 เพื่อไม่ให้แรงเกินไปตอนผสมกับ Cross Slash)
+  2. **Cross Slash**: ใช้สูตร **N+1 ต่อ stack เหมือนตอนเลือกอัพเกรดนี้** (ถ้าตัวละครยังไม่ได้เลือกอัพเกรดนี้เลย (ทั้ง lv7 และ lv18) ก็ยังใช้ N+2 ฐานตามปกติ) **บวกโบนัสครั้งเดียว**: พอยอด Aura ที่จ่ายให้ Cross Slash สะสมถึง **5** (ครั้งแรกที่ถึงเท่านั้น ไม่ใช่ทุกๆ 5 — จ่ายต่อไปอีกเท่าไหร่ก็ไม่ได้โบนัสซ้ำ) ได้ **ตีเพิ่มฟรีอีก 1 ครั้ง**
 
   ตารางสรุป (นับเฉพาะ N+1 stepped ซึ่งเป็นเคสที่มี lv18 แล้ว):
 
@@ -165,7 +165,7 @@
 - [x] ย้าย Light Sword Universal → Retribution, ตัด Sun Slash ออก, แก้ Pure White Blade เป็น +5ft range/stack ใน [Aura-Knight.md](Aura-Knight.md)
 - [x] เพิ่มโครง "เลเวลที่ได้ (3/6/10/14)" เว้นว่างไว้ท้ายทุก subclass — รอแปลง concept ด้านบนมาใส่
 - [x] ตัด Domain ออกจากคลาสหลักทั้งหมด — lv17 เปลี่ยนเป็น Subclass Feature (รวมเป็น 5 ระดับ: 3/6/10/14/17), lv18 เปลี่ยนเป็น Improve Aura Technique, ขยายโครง "เลเวลที่ได้" ทุก subclass ให้มีช่อง lv17 ด้วย — ดู [Aura-Knight.md § Level Progression](Aura-Knight.md#level-progression)
-- [x] ออกแบบ Improve Aura Technique (lv18) ครบทั้ง 10 technique หลักของคลาสแล้ว — ดู [Aura-Knight.md § เลเวล 18](Aura-Knight.md#เลเวล-18--improve-aura-technique) (technique ที่ subclass มอบให้เพิ่มยังไม่ได้ทำ)
+- [x] ออกแบบ Improve Aura Technique ครบทั้ง 10 technique หลักของคลาสแล้ว — เพิ่มเป็นเลือกได้ 2 ครั้ง (เลเวล 7 และ 18 คนละตัวกัน) แทนที่ Aura Mastery ที่เดิมอยู่เลเวล 7 (รวม technique ที่เรียนได้ผ่าน Aura Mastery เหลือ 5 ตัวจาก 6) — ดู [Aura-Knight.md § เลเวล 7](Aura-Knight.md#เลเวล-7--improve-aura-technique-i) และ [§ เลเวล 18](Aura-Knight.md#เลเวล-18--improve-aura-technique-ii) (technique ที่ subclass มอบให้เพิ่มยังไม่ได้ทำ)
 - [x] ย้ายบัลลังก์ที่ 7 (อัศวินบำเพ็ญคู่) ออกจากไฟล์นี้ — กลายเป็น Path ที่ 3 "Formless" ใน [Aura-Knight.md § Choose Your Path](Aura-Knight.md#เลเวล-1--choose-your-path) แทน พร้อมกฎใหม่ผูก technique access กับอุปกรณ์ที่ถืออยู่ (ไม่ใช่ Path ที่เลือกตอนเลเวล 1) — Retribution technique ใช้ได้ตอนถืออาวุธ 2 มือ, Guardian technique ใช้ได้ตอนถือโล่
 - [ ] กระจาย concept ของแต่ละ subclass (ทั้ง 6 ที่เหลือ) ลงช่อง เลเวล 3/6/10/14/17 ที่เว้นว่างไว้
 - [ ] เลือก subclass ตัวแรกที่จะลงมือออกแบบกลไกเต็ม (แนะนำเริ่มจาก #3 หรือ #4 เพราะจับคู่ Path ตรงที่สุด ออกแบบง่ายสุด)

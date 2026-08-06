@@ -47,20 +47,20 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 | 2 | +2 | Aura Mastery (1 technique) |
 | 3 | +2 | Subclass Feature, Aura Mastery (1 technique) |
 | 4 | +2 | Ability Score Improvement |
-| 5 | +3 | Aura Upgrade (I) (Bonus Action แปลง 3 slot, Aura Surge +1 ครั้ง/short rest) |
+| 5 | +3 | Aura Upgrade (I) (Bonus Action แปลง 3 slot) |
 | 6 | +3 | Subclass Feature |
-| 7 | +3 | Aura Mastery (1 technique) |
+| 7 | +3 | Improve Aura Technique (I) |
 | 8 | +3 | Ability Score Improvement |
-| 9 | +4 | Aura Upgrade (II) (Bonus Action แปลง 4 slot, Aura Surge +1 ครั้ง/short rest) |
+| 9 | +4 | Aura Upgrade (II) (Bonus Action แปลง 4 slot) |
 | 10 | +4 | Subclass Feature |
 | 11 | +4 | Aura Mastery (1 technique) |
 | 12 | +4 | Ability Score Improvement |
-| 13 | +5 | Aura Upgrade (III) (Bonus Action แปลง 5 slot, Aura Surge +1 ครั้ง/short rest) |
+| 13 | +5 | Aura Upgrade (III) (Bonus Action แปลง 5 slot) |
 | 14 | +5 | Subclass Feature |
 | 15 | +5 | Aura Mastery (1 technique) |
 | 16 | +5 | Ability Score Improvement |
 | 17 | +6 | Subclass Feature |
-| 18 | +6 | Improve Aura Technique |
+| 18 | +6 | Improve Aura Technique (II) |
 | 19 | +6 | Ability Score Improvement |
 | 20 | +6 | Transcendent Aura (Capstone — Aura ไม่เสื่อมสลาย) |
 
@@ -97,24 +97,24 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 | 2 | 3 | 2 (2 ใบ) +3 = **5** | 9 |
 | 3 | 8 | 4 (2 ใบ) +3 = **7** | 14 |
 | 4 | 10 | 4 (2 ใบ) +3 = **7** | 16 |
-| 5 | 16 | 8 (3 ใบ) +3 = **11** | 28 |
-| 6 | 19 | 9 (3 ใบ) +3 = **12** | 31 |
-| 7 | 23 | 10 (3 ใบ) +3 = **13** | 35 |
-| 8 | 27 | 11 (3 ใบ) +3 = **14** | 39 |
-| 9 | 36 | 17 (4 ใบ) +4 = **21** | 60 |
-| 10 | 41 | 18 (4 ใบ) +4 = **22** | 65 |
-| 11 | 47 | 20 (4 ใบ) +4 = **24** | 71 |
-| 12 | 47 | 20 (4 ใบ) +4 = **24** | 71 |
-| 13 | 54 | 27 (5 ใบ) +4 = **31** | 86 |
-| 14 | 54 | 27 (5 ใบ) +4 = **31** | 86 |
-| 15 | 62 | 31 (5 ใบ) +4 = **35** | 94 |
-| 16 | 62 | 31 (5 ใบ) +4 = **35** | 94 |
-| 17 | 71 | 35 (5 ใบ) +5 = **40** | 111 |
-| 18 | 76 | 35 (5 ใบ) +5 = **40** | 116 |
-| 19 | 82 | 36 (5 ใบ) +5 = **41** | 122 |
-| 20 | 89 | 37 (5 ใบ) +5 = **42** | 129 |
+| 5 | 16 | 8 (3 ใบ) +3 = **11** | 25 |
+| 6 | 19 | 9 (3 ใบ) +3 = **12** | 28 |
+| 7 | 23 | 10 (3 ใบ) +3 = **13** | 32 |
+| 8 | 27 | 11 (3 ใบ) +3 = **14** | 36 |
+| 9 | 36 | 17 (4 ใบ) +4 = **21** | 52 |
+| 10 | 41 | 18 (4 ใบ) +4 = **22** | 57 |
+| 11 | 47 | 20 (4 ใบ) +4 = **24** | 63 |
+| 12 | 47 | 20 (4 ใบ) +4 = **24** | 63 |
+| 13 | 54 | 27 (5 ใบ) +4 = **31** | 74 |
+| 14 | 54 | 27 (5 ใบ) +4 = **31** | 74 |
+| 15 | 62 | 31 (5 ใบ) +4 = **35** | 82 |
+| 16 | 62 | 31 (5 ใบ) +4 = **35** | 82 |
+| 17 | 71 | 35 (5 ใบ) +5 = **40** | 101 |
+| 18 | 76 | 35 (5 ใบ) +5 = **40** | 106 |
+| 19 | 82 | 36 (5 ใบ) +5 = **41** | 112 |
+| 20 | 89 | 37 (5 ใบ) +5 = **42** | 119 |
 
-> **วิธีคิดแต่ละคอลัมน์**: คอลัมน์ 1 = Σ(ระดับ slot × จำนวน slot) ทุกระดับที่มีในวันนั้น (เพดานสูงสุดถ้าแปลงหมดเกลี้ยงไม่เหลือ slot เลย) — คอลัมน์ 2 = แปลงแบบเลือก slot ระดับสูงสุดเท่าที่มีใส่โควตา BA ครั้งเดียว (2/3/4/5 ใบ ตาม Aura Upgrade I/II/III ที่ปลดล็อกตามเลเวล) **+ WIS mod จาก Aura Surge** (เพราะ Aura Surge trigger พร้อม BA แปลง slot เดียวกันได้เลยถ้ายังมี charge เหลือ) เป็นค่าสูงสุดที่เป็นไปได้ **ในเทิร์นเดียว** ถ้า slot ยังเต็มอยู่และยังไม่ใช้ Aura Surge มาก่อนในวันนั้น ไม่ใช่ค่าที่ทำซ้ำได้ทุกเทิร์น (Aura Surge มีจำกัดครั้ง/short rest ตาม [Aura Upgrade](#เลเวล-5--aura-upgrade-i)) — ตัวเลข WIS mod ที่บวกเป็น**ตัวอย่างประกอบ**เท่านั้น (สมมติ +3 ที่เลเวล 1-8, +4 ที่ 9-16, +5 ที่ 17-20) ขึ้นกับ WIS mod จริงของตัวละคร — คอลัมน์ 3 = คอลัมน์ 1 + โบนัสจาก Aura Surge (WIS mod ต่อครั้งที่ใช้ ×จำนวนครั้ง/short rest ตามเลเวล ×สมมติ 2 short rest/วัน) เป็น**ตัวอย่างประกอบ**เช่นกัน เพราะขึ้นกับ WIS mod จริงของตัวละครและจำนวน short rest ต่อวันที่แคมเปญให้จริง (ถ้า short rest น้อยกว่า 2 ครั้ง/วัน ตัวเลขคอลัมน์นี้จะต่ำกว่านี้ตามสัดส่วน)
+> **วิธีคิดแต่ละคอลัมน์**: คอลัมน์ 1 = Σ(ระดับ slot × จำนวน slot) ทุกระดับที่มีในวันนั้น (เพดานสูงสุดถ้าแปลงหมดเกลี้ยงไม่เหลือ slot เลย) — คอลัมน์ 2 = แปลงแบบเลือก slot ระดับสูงสุดเท่าที่มีใส่โควตา BA ครั้งเดียว (2/3/4/5 ใบ ตาม Aura Upgrade I/II/III ที่ปลดล็อกตามเลเวล) **+ WIS mod จาก Aura Surge** (เพราะ Aura Surge trigger พร้อม BA แปลง slot เดียวกันได้เลยถ้ายังมี charge เหลือ) เป็นค่าสูงสุดที่เป็นไปได้ **ในเทิร์นเดียว** ถ้า slot ยังเต็มอยู่และยังไม่ใช้ Aura Surge มาก่อนในวันนั้น ไม่ใช่ค่าที่ทำซ้ำได้ทุกเทิร์น (Aura Surge มีจำกัดครั้ง/long rest เท่ากับ Proficiency Bonus ตาม [Aura Surge](#เลเวล-1--aura-surge)) — ตัวเลข WIS mod ที่บวกเป็น**ตัวอย่างประกอบ**เท่านั้น (สมมติ +3 ที่เลเวล 1-8, +4 ที่ 9-16, +5 ที่ 17-20) ขึ้นกับ WIS mod จริงของตัวละคร — คอลัมน์ 3 = คอลัมน์ 1 + โบนัสจาก Aura Surge (WIS mod ต่อครั้งที่ใช้ ×จำนวนครั้ง/long rest ซึ่งเท่ากับ Proficiency Bonus ตามเลเวล ×1 long rest/วัน) เป็น**ตัวอย่างประกอบ**เช่นกัน เพราะขึ้นกับ WIS mod จริงของตัวละคร — ตัวเลขนี้ไม่ผันตามจำนวน short rest ต่อวันของแคมเปญอีกต่อไป (ต่างจากระบบเดิม) เพราะผูกกับ Long Rest แทน
 
 ## Class Features
 
@@ -148,15 +148,15 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 เรียนรู้ **Aura Technique** ใหม่ **1 ตัวแรกทันที** (เลือกจากลิสต์ Universal หรือลิสต์ตาม Path ที่เลือก)
 
-ได้ฟีเจอร์ Aura Mastery เพิ่มอีกที่เลเวล **2, 3, 7, 11, 15** — เลเวลละ **1 technique ใหม่** (รวมทั้งเกม 6 ตัวตลอด 1-20)
+ได้ฟีเจอร์ Aura Mastery เพิ่มอีกที่เลเวล **2, 3, 11, 15** — เลเวลละ **1 technique ใหม่** (รวมทั้งเกม 5 ตัวตลอด 1-20)
 
 **ไม่มีระบบอัพเกรด Rank** — แต่ละ Technique มีค่าคงที่ตัวเดียวตลอดทั้งเกม ไม่ว่าจะเรียนรู้ตอนเลเวลไหน กำลังของตัวละครโตขึ้นผ่าน Aura ที่มีมากขึ้น/แปลงได้เร็วขึ้นตาม [Aura Upgrade](#เลเวล-5--aura-upgrade-i) และผ่านจำนวน Technique ที่รู้เพิ่มขึ้น ไม่ใช่ผ่านการอัพเกรด Technique เดิม
 
 ### เลเวล 1 — Aura Surge
 
-ใช้ได้ **1 ครั้ง/short rest** — เมื่อใช้ **Bonus Action แปลง Spell Slot เป็น Aura** ครั้งใดครั้งหนึ่ง จ่ายการใช้งาน Aura Surge 1 ครั้งเพื่อรับ **Aura เพิ่มเท่ากับ Wisdom modifier** ของตัวเอง เข้าไปรวมกับ Aura ที่ได้จากการแปลง slot ปกติในเทิร์นนั้นทันที (ไม่เสีย action เพิ่ม เพราะเกาะไปกับ BA ที่ใช้อยู่แล้ว)
+ใช้ได้ **เท่ากับ Proficiency Bonus ครั้ง/long rest** — เมื่อใช้ **Bonus Action แปลง Spell Slot เป็น Aura** ครั้งใดครั้งหนึ่ง จ่ายการใช้งาน Aura Surge 1 ครั้งเพื่อรับ **Aura เพิ่มเท่ากับ Wisdom modifier** ของตัวเอง เข้าไปรวมกับ Aura ที่ได้จากการแปลง slot ปกติในเทิร์นนั้นทันที (ไม่เสีย action เพิ่ม เพราะเกาะไปกับ BA ที่ใช้อยู่แล้ว)
 
-จำนวนครั้งที่ใช้ได้/short rest เพิ่มขึ้นตาม [Aura Upgrade](#เลเวล-5--aura-upgrade-i) — **+1 ครั้ง/short rest ทุกครั้งที่ได้ Aura Upgrade** (I ที่เลเวล 5, II ที่เลเวล 9, III ที่เลเวล 13) รวมสูงสุด **4 ครั้ง/short rest** ที่เลเวล 13 ขึ้นไป
+จำนวนครั้งที่ใช้ได้โตขึ้นอัตโนมัติตาม Proficiency Bonus ที่เพิ่มตามเลเวล (ไม่ต้องมี tier แยกผูกกับ [Aura Upgrade](#เลเวล-5--aura-upgrade-i) อีกต่อไป) — ผูกกับ **Long Rest** แทน Short Rest เพื่อให้จำนวนครั้ง/วันเสถียร ไม่ขึ้นกับจำนวน short rest ที่แคมเปญให้ในแต่ละวัน
 
 ### เลเวล 2 — Aura Mastery
 
@@ -164,17 +164,25 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 ### เลเวล 5 — Aura Upgrade (I)
 
-การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้น — **Bonus Action แปลงได้ 3 slot พร้อมกัน** (จากเดิม 2 slot) และ [Aura Surge](#เลเวล-1--aura-surge) ใช้ได้เพิ่มเป็น **2 ครั้ง/short rest**
+การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้น — **Bonus Action แปลงได้ 3 slot พร้อมกัน** (จากเดิม 2 slot)
 
 > Aura Knight ไม่ได้รับ Extra Attack ที่เลเวลนี้หรือเลเวลใดๆ ตลอด class — ดาเมจส่วนใหญ่มาจาก Aura Technique แทน
 
+### เลเวล 7 — Improve Aura Technique (I)
+
+เลือก **Aura Technique ที่ตัวเองรู้แล้ว 1 ตัว** (จาก Universal/Retribution/Guardian หรือ technique ที่ subclass มอบให้) แล้วอัพเกรดมันถาวร — อัพเกรดอาจเป็น **เพิ่มความสามารถใหม่ให้ technique เดิม** หรือ **ปรับอัตราแลกเปลี่ยน Aura ให้ดีขึ้น** (เช่น ลดต้นทุนต่อ stack, เพิ่มผลต่อ stack) แล้วแต่ technique — ใช้ upgrade text เดียวกับที่ออกแบบไว้ในหัวข้อ [Aura Technique](#aura-technique) ด้านล่าง (มีบรรทัด "Improve Aura Technique" กำกับไว้ในแต่ละตัว)
+
+ได้ activation แบบนี้อีกครั้งที่ **เลเวล 18** (ดู [เลเวล 18 — Improve Aura Technique (II)](#เลเวล-18--improve-aura-technique-ii)) — ทั้งสองครั้งต้องเลือก Technique **คนละตัวกัน ห้ามเลือกซ้ำตัวเดิม**
+
+> **จุดที่ต้องระวัง**: ถ้าเลือกอัพเกรด Cross Slash หรือ Light Sword ตั้งแต่เลเวลนี้ ควรเช็ค worst-case ร่วมกับ [subclass #3 Doom and Slaughter](subclass-concepts.md) ที่ผูกกับ 2 technique นี้โดยตรง เพราะจะได้ combo ที่ตั้งใจไว้สำหรับเลเวล 18 เร็วขึ้นถึง 11 เลเวล
+
 ### เลเวล 9 — Aura Upgrade (II)
 
-การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 4 slot พร้อมกัน** (จากเดิม 3 slot) และ [Aura Surge](#เลเวล-1--aura-surge) ใช้ได้เพิ่มเป็น **3 ครั้ง/short rest**
+การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 4 slot พร้อมกัน** (จากเดิม 3 slot)
 
 ### เลเวล 13 — Aura Upgrade (III)
 
-การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 5 slot พร้อมกัน** (จากเดิม 4 slot) และ [Aura Surge](#เลเวล-1--aura-surge) ใช้ได้เพิ่มเป็น **4 ครั้ง/short rest**
+การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 5 slot พร้อมกัน** (จากเดิม 4 slot)
 
 ### เลเวล 17 — Subclass Feature
 
@@ -182,11 +190,11 @@ Subclass feature level ที่ 5 (ต่อจาก 3, 6, 10, 14) — รา�
 
 > **หมายเหตุ**: เดิมเลเวลนี้เป็น class feature ตายตัวชื่อ **Domain** (กางเขตแดน 15-30ft ตามเลเวล ให้ teleport ในโดเมน/Advantage ตัวเอง/Disadvantage ศัตรู) — **ตัด Domain ออกจากคลาสหลักทั้งหมดแล้ว** เปลี่ยนเลเวลนี้เป็น Subclass Feature slot ธรรมดาแทน (ให้แต่ละ subclass ออกแบบเองว่าจะใส่อะไร)
 
-### เลเวล 18 — Improve Aura Technique
+### เลเวล 18 — Improve Aura Technique (II)
 
-เลือก **Aura Technique ที่ตัวเองรู้แล้ว 1 ตัว** (จาก Universal/Retribution/Guardian หรือ technique ที่ subclass มอบให้) แล้วอัพเกรดมันถาวร — อัพเกรดอาจเป็น **เพิ่มความสามารถใหม่ให้ technique เดิม** หรือ **ปรับอัตราแลกเปลี่ยน Aura ให้ดีขึ้น** (เช่น ลดต้นทุนต่อ stack, เพิ่มผลต่อ stack) แล้วแต่ technique
+เหมือนกับ [เลเวล 7 — Improve Aura Technique (I)](#เลเวล-7--improve-aura-technique-i) ทุกประการ — เลือก **Aura Technique ที่ตัวเองรู้แล้ว 1 ตัว** แล้วอัพเกรดมันถาวร แต่ **ต้องเลือกตัวที่ต่างจาก technique ที่เลือกไปแล้วตอนเลเวล 7 ห้ามเลือกซ้ำตัวเดิม**
 
-> Technique หลักของคลาสทั้ง 10 ตัว (4 Universal + 3 Retribution + 3 Guardian) ออกแบบอัพเกรด lv18 ครบแล้ว — **ดูรายละเอียดอัพเกรดของแต่ละตัวได้ในบล็อกของ technique นั้นเองที่หัวข้อ [Aura Technique](#aura-technique) ด้านล่าง** (มีบรรทัด "เลเวล 18 (Improve Aura Technique)" กำกับไว้ในแต่ละตัว) — technique ที่ subclass มอบให้เพิ่ม (Aegis Forging, Renewal Aura, Dread Aura, Sorrow's Bargain ฯลฯ) ยังไม่ได้ออกแบบว่าจะอัพเกรดยังไงถ้าถูกเลือกที่ lv18 ด้วย
+> Technique หลักของคลาสทั้ง 10 ตัว (4 Universal + 3 Retribution + 3 Guardian) ออกแบบอัพเกรดไว้ครบแล้ว — **ดูรายละเอียดอัพเกรดของแต่ละตัวได้ในบล็อกของ technique นั้นเองที่หัวข้อ [Aura Technique](#aura-technique) ด้านล่าง** (มีบรรทัด "Improve Aura Technique" กำกับไว้ในแต่ละตัว) — technique ที่ subclass มอบให้เพิ่ม (Aegis Forging, Renewal Aura, Dread Aura, Sorrow's Bargain ฯลฯ) ยังไม่ได้ออกแบบว่าจะอัพเกรดยังไงถ้าถูกเลือกที่เลเวล 7/18 ด้วย
 
 ### เลเวล 20 — Transcendent Aura (Capstone)
 
@@ -205,22 +213,22 @@ Technique สาย **Universal** ใช้ได้เสมอ — Technique �
 #### Pure White Blade — 1 Aura ต่อ stack
 เมื่อโจมตี เพิ่มระยะการโจมตีของการโจมตีครั้งนี้ **+5 ft ต่อ stack** ที่จ่าย (จ่าย 1 Aura ต่อ stack เพิ่ม) — ใช้ได้ทั้งระยะประชิดและระยะไกล ไม่มีเพดาน stack สูงสุด จำกัดแค่ Aura ที่มีอยู่
 
-> **เลเวล 18 (Improve Aura Technique)**: **+10 ft ระยะโจมตี/stack** (คงต้นทุน 1 Aura/stack เท่าเดิม)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **+10 ft ระยะโจมตี/stack** (คงต้นทุน 1 Aura/stack เท่าเดิม)
 
 #### Swift Aura — 1 Aura ต่อ stack
 เพิ่ม Speed ของตัวเอง **+10 ft ต่อ stack** ที่จ่าย คงอยู่จนถึงต้นเทิร์นถัดไปของตัวเอง (ไม่ใช่แค่จบเทิร์นนี้) และ ignore difficult terrain ตลอดช่วงที่ผลยังอยู่ — ไม่มีเพดาน stack สูงสุด จำกัดแค่ Aura ที่มีอยู่ (ระยะที่เพิ่มจาก technique นี้ **แยกคำนวณจาก base Speed** — เวลา Dash ได้ 2 เท่าเฉพาะ base Speed เท่านั้น ไม่รวมส่วนนี้)
 
-> **เลเวล 18 (Improve Aura Technique)**: **Speed +15 ft/stack** (คงต้นทุน 1 Aura/stack, เงื่อนไขระยะเวลา/ignore difficult terrain เท่าเดิม)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **Speed +15 ft/stack** (คงต้นทุน 1 Aura/stack, เงื่อนไขระยะเวลา/ignore difficult terrain เท่าเดิม)
 
 #### Focused Edge — 1 Aura ต่อ stack
 เมื่อโจมตี เพิ่ม ATK Roll **+1 ต่อ stack** ที่จ่าย (จ่าย 1 Aura ต่อ stack เพิ่ม) — ไม่มีเพดาน stack สูงสุด จำกัดแค่ Aura ที่มีอยู่
 
-> **เลเวล 18 (Improve Aura Technique)**: **ATK Roll +2 ต่อ stack** (คงต้นทุน 1 Aura/stack เท่าเดิม)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **ATK Roll +2 ต่อ stack** (คงต้นทุน 1 Aura/stack เท่าเดิม)
 
 #### Clarity Aura — 1 Aura ต่อ stack
 ก่อนทอย **Skill Check** ใดๆ ของตัวเอง (ต้องประกาศใช้ก่อนทอยลูกเต๋าเสมอ ใช้ย้อนหลังหลังเห็นผลไม่ได้) จ่าย Aura เพื่อเพิ่ม **+1 ต่อ stack** ให้ check นั้น — อัตราแลกเปลี่ยนเท่ากับ Focused Edge เป๊ะ (1 Aura = +1) เพื่อไม่ให้ถูกกว่า technique สายโจมตีโดยไม่มีเหตุผล ไม่มีเพดาน stack สูงสุด จำกัดแค่ Aura ที่มีอยู่
 
-> **เลเวล 18 (Improve Aura Technique)**: **Skill Check +2 ต่อ stack** (คงต้นทุน 1 Aura/stack เท่าเดิม — คง parity กับ Focused Edge ตามที่ตั้งใจไว้ตั้งแต่ base)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **Skill Check +2 ต่อ stack** (คงต้นทุน 1 Aura/stack เท่าเดิม — คง parity กับ Focused Edge ตามที่ตั้งใจไว้ตั้งแต่ base)
 
 ### Retribution
 
@@ -238,17 +246,17 @@ Technique สาย **Universal** ใช้ได้เสมอ — Technique �
 | 5 | 18 |
 | 6 | 25 |
 
-> **เลเวล 18 (Improve Aura Technique)**: ต้นทุนต่อ stack ที่ N จาก N+2 → **N+1 Aura** — ถ้าเป็น subclass #3 (Doom and Slaughter) ด้วย ได้โบนัสเพิ่มอีก (ดู [subclass-concepts.md](subclass-concepts.md))
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: ต้นทุนต่อ stack ที่ N จาก N+2 → **N+1 Aura** — ถ้าเป็น subclass #3 (Doom and Slaughter) ด้วย ได้โบนัสเพิ่มอีก (ดู [subclass-concepts.md](subclass-concepts.md))
 
 #### Vengeful Riposte — 3 Aura
 เมื่อโดนโจมตีติด จ่าย 3 Aura เพื่อโจมตีสวนกลับด้วยอาวุธที่ถืออยู่ทันที 1 ครั้ง — **ไม่เสีย Reaction** ใช้ได้ทุกครั้งที่โดนตี (จำกัดแค่ Aura ที่มีอยู่ ไม่จำกัดจำนวนครั้ง/เทิร์น)
 
-> **เลเวล 18 (Improve Aura Technique)**: **สวนกลับ 2 ครั้ง/trigger** (คงต้นทุน 3 Aura fixed เท่าเดิม, ไม่เสีย Reaction เหมือนเดิม)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **สวนกลับ 2 ครั้ง/trigger** (คงต้นทุน 3 Aura fixed เท่าเดิม, ไม่เสีย Reaction เหมือนเดิม)
 
 #### Light Sword — 1 Aura ต่อ stack
 เมื่อโจมตี เพิ่มดาเมจ Radiant **+1d4 ต่อ stack** ที่จ่าย (จ่าย 1 Aura ต่อ stack เพิ่ม) — ไม่มีเพดาน stack สูงสุด จำกัดแค่ Aura ที่มีอยู่ *(ย้ายมาจากสาย Universal — เดิม Sun Slash เคยอยู่ตรงนี้ ถูกตัดออกแล้ว ดู [subclass-concepts.md](subclass-concepts.md) สำหรับที่มา)*
 
-> **เลเวล 18 (Improve Aura Technique)**: **+1d6 Radiant/stack** (d4→d6, ไม่เพิ่มจำนวนลูก) — ถ้ามี subclass #3 (Doom and Slaughter) ด้วย รวมกันเป็น **+1d8/stack** (d6→d8 อีกขั้น ไม่ compound เป็น 2 ลูก)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **+1d6 Radiant/stack** (d4→d6, ไม่เพิ่มจำนวนลูก) — ถ้ามี subclass #3 (Doom and Slaughter) ด้วย รวมกันเป็น **+1d8/stack** (d6→d8 อีกขั้น ไม่ compound เป็น 2 ลูก)
 
 ### Guardian
 
@@ -257,17 +265,17 @@ Technique สาย **Universal** ใช้ได้เสมอ — Technique �
 #### Aegis Aura — 1 Aura หักล้างดาเมจได้ 2
 เมื่อโดนโจมตีติดและทราบดาเมจแล้ว จ่าย Aura เพื่อหักล้างดาเมจที่ได้รับในอัตรา **1 Aura ต่อดาเมจ 2 หน่วย** (เช่น โดนดาเมจ 10 จ่าย 5 Aura หักล้างได้หมด) — จ่ายน้อยกว่าก็หักล้างได้ตามสัดส่วน ไม่มีเพดาน จำกัดแค่ Aura ที่มีอยู่
 
-> **เลเวล 18 (Improve Aura Technique)**: **1 Aura หักดาเมจ 3** (ยังเป็น Reaction เหมือนเดิม — จับตาดูตอนผสมกับ subclass #4 ที่ใช้กับพันธมิตรได้แล้ว)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **1 Aura หักดาเมจ 3** (ยังเป็น Reaction เหมือนเดิม — จับตาดูตอนผสมกับ subclass #4 ที่ใช้กับพันธมิตรได้แล้ว)
 
 #### Steadfast Aura — 2 Aura ต่อ 1 แต้มที่ขาดจาก DC
 เมื่อ Saving Throw ของตัวเองพลาด (fail) จ่าย Aura ทันทีหลังทราบผลทอย เพื่อเปลี่ยนผลเป็นผ่าน (Success) ได้ — อัตรา **2 Aura ต่อ 1 แต้มที่ขาดจาก DC** (เช่น ทอยได้ 10 ต้องการ DC 15 ขาดอยู่ 5 แต้ม จ่าย 10 Aura เพื่อผ่าน)
 
-> **เลเวล 18 (Improve Aura Technique)**: **1 Aura ต่อ 1 แต้มที่ขาดจาก DC** (ถูกลงครึ่งหนึ่ง)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **1 Aura ต่อ 1 แต้มที่ขาดจาก DC** (ถูกลงครึ่งหนึ่ง)
 
 #### Guardian's Swap — 1 Aura ต่อ 5 ft (Reaction)
 จ่าย Reaction และ Aura ตามระยะทาง (**1 Aura ต่อ 5 ft**) เพื่อสลับตำแหน่งเข้าไปแทนที่เป้าหมาย 1 คนภายในระยะที่จ่ายไหว (ใช้ได้ทั้งพันธมิตรและศัตรู) — เป้าหมายที่ถูกสลับจะถูกย้ายไปยังตำแหน่งใหม่ในระยะ 5 ft จากจุดเดิม (เลือกตำแหน่งได้เอง) การสลับตำแหน่งนี้ไม่กระตุ้น Opportunity Attack
 
-> **เลเวล 18 (Improve Aura Technique)**: **1 Aura ต่อ 10 ft** (ถูกลงครึ่งหนึ่ง) + ย้ายเป้าหมายที่ถูกสลับได้ไกลขึ้นเป็น **10 ft** จากจุดเดิม (จากเดิม 5 ft)
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **1 Aura ต่อ 10 ft** (ถูกลงครึ่งหนึ่ง) + ย้ายเป้าหมายที่ถูกสลับได้ไกลขึ้นเป็น **10 ft** จากจุดเดิม (จากเดิม 5 ft)
 
 ## Subclass
 
