@@ -7,6 +7,8 @@
 > **หมายเหตุ**: เดิมมีบัลลังก์ที่ 7 "อัศวินบำเพ็ญคู่" (concept ใหม่ของโปรเจกต์ ไม่มีใน canon) เก็บไว้ในไฟล์นี้ด้วย — ย้ายไปเป็น **Path ที่ 3 ("Formless") ในเลเวล 1 — Choose Your Path** แทนแล้ว เพราะแก่นของ concept คือการสลับสไตล์การเล่น ไม่ใช่การเรียนรู้ technique พิเศษแบบ subclass ดูรายละเอียดที่ [Aura-Knight.md § เลเวล 1 — Choose Your Path](Aura-Knight.md#เลเวล-1--choose-your-path)
 >
 > **แนวทางออกแบบร่วม** (ตามที่วางไว้ใน [Aura-Knight.md § Subclass](Aura-Knight.md#subclass)): แต่ละ subclass ควร "ต่อยอด/อัพเกรด Technique ที่มีอยู่แล้ว" เป็นหลัก ไม่ใช่เพิ่มกลไกใหม่แยกขาด — ในตารางด้านล่าง คอลัมน์ "ต่อยอดจาก" คือ technique/feature เดิมที่ subclass นั้นควรผูกด้วย
+>
+> **Throne (feature เลเวล 17 ของทุกบัลลังก์)**: ใช้ได้ **1 ครั้ง/Long Rest** เท่านั้น เมื่อเปิดใช้แล้วมีผลต่อเนื่องนาน **1 นาที** (ไม่ใช่ recharge ทุก 1 นาที) — สัญลักษณ์ "(1 min / longrest)" ที่กำกับท้ายชื่อ Throne ในทุก subclass หมายถึงกฎนี้เหมือนกันหมด
 
 ---
 
@@ -17,9 +19,9 @@
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
 - เลเวล 3: Eternity: Action, 1 Aura ต่อ stack: รักษา HP ให้ตัวเองหรือพันธมิตร 1 คนในระยะ 30 ft เท่ากับ **1d4 ต่อ stack** ไม่มีเพดาน stack
-- เลเวล 6: Creation: Pure White Blade สามารถจ่าย Aura เพิ่มเพื่อโจมตีเป้าหมายเพิ่มในการโจมตีครั้งเดียวกัน (ทุกเป้าหมายต้องอยู่ในระยะที่ Pure White Blade คำนวณไว้) — จ่ายเพิ่ม **5 Aura** โจมตีเป้าหมายที่ 2 ได้, จ่ายเพิ่มอีก **10 Aura** (รวม 15) โจมตีเป้าหมายที่ 3 ได้
+- เลเวล 6: Creation: Pure White Blade สามารถจ่าย Aura เพิ่มเพื่อเปลี่ยนการโจมตีครั้งนั้นให้เป็น**พื้นที่**แทนเป้าหมายเดียว (จุดที่เลือกต้องอยู่ในระยะที่ Pure White Blade คำนวณไว้) — จ่ายเพิ่ม **5 Aura** โจมตีทุกเป้าหมายในพื้นที่ **5×5 ft**, จ่ายเพิ่มอีก **10 Aura** (รวม 15) ขยายพื้นที่เป็น **10×10 ft** — ที่เลเวล 17 ถ้าใช้ร่วมกับ capstone (จ่าย cost แยกต่อการโจมตี) ก็โจมตีเป็นพื้นที่ได้หลายจุดใน 1 Action เช่นกัน (เช่น ศัตรูมี 3 กลุ่มยืนกระจุกกันคนละจุด จ่าย cost Pure White Blade 3 รอบ ก็ตีหมู่ได้ทั้ง 3 กลุ่ม)
 - เลเวล 10: True Eternity: สามารถจ่าย **1 Aura ต่อ stack** (อัตราเดียวกับ Eternity) เพื่อเพิ่ม Temp HP ได้ **1d4 ต่อ stack** ไม่มีเพดาน stack
-- เลเวล 14: True Creation: Pure White Blade ทะลวง Resistance กายภาพ และ ได้ Resistance ต่อกายภาพ 1 นาที *(ย้ายมาจาก lv6 เดิม — เลื่อนช้าลงเพราะแรงเกินไปสำหรับเลเวลต้น)*
+- เลเวล 14: True Creation: ถ้าใช้ Pure White Blade โดยจ่าย Aura รวม **≥5** ในการโจมตีครั้งนั้น (เช่น เปิดโหมดพื้นที่ 5×5ft ขึ้นไปจาก Creation) จะทะลวง Resistance กายภาพ และ ได้ Resistance ต่อกายภาพ 1 นาที
 - เลเวล 17: Throne of Eternity and Creation (1 min / longrest): Aura 30 ft ภายใน 1 Action สามารถโจมตีด้วย Pure White Blade หรือ Eternity ได้สูงสุด Wis เป้าหมาย ต่อ Action (จ่าย cost แยกต่อเป้าหมาย)
 
 ---
@@ -34,7 +36,7 @@
 - เลเวล 6: Fear's Bargain: การโจมตีที่ใช้ Focused Edge ถ้า Attack Roll >= AC เป้าหมาย +15 + Proficiency Bonus ของเป้าหมาย จะนับว่าเป็นการ Critical Hit — **ใช้ได้สูงสุด 1 ครั้ง/เทิร์น** แม้เทิร์นนั้นจะโจมตีหลายครั้ง (แต่ละครั้งยังต้องจ่าย Focused Edge cost แยกกันตามกฎ [Aura-Knight.md § Technique หลายครั้งต่อเทิร์น](Aura-Knight.md#aura-technique) ตามปกติ — cap นี้กันไม่ให้ combo กับ technique ที่โจมตีถี่แล้วได้ auto-crit รัวหลายจานต่อเทิร์น)
 - เลเวล 10: True Sorrow's Bargain: เมื่อใช้ BA แปลง Aura จะสามารถจ่าย HP = 2×WIS modifier เพื่อรับ Aura เพิ่มเท่ากับ WIS modifier
 - เลเวล 14: True Fear's Bargain: การโจมตีที่ใช้ Focused Edge และดาเมจ Critical Hit ในครั้งนี้จะเป็น 3 เท่า จาก 2 เท่า (ยังอยู่ภายใต้ cap 1 ครั้ง/เทิร์นจาก Fear's Bargain)
-- เลเวล 17: Throne of Fear and Sorrow (1 min / longrest): เมื่อใช้ BA consume Spell slot มาเป็น Aura สามารถจ่าย **Max HP 20** (หายไปจนกว่าจะทำ Long Rest ครั้งถัดไป จึงฟื้นคืนเต็ม ไม่ใช่เสียถาวร) เพื่อรับ Aura เพิ่ม **10 หน่วย** ได้ dash และ disengage
+- เลเวล 17: Throne of Fear and Sorrow (1 min / longrest): เมื่อใช้ BA consume Spell slot มาเป็น Aura สามารถจ่าย **Max HP 20** (หายไปจนกว่าจะทำ Long Rest ครั้งถัดไป จึงฟื้นคืนเต็ม ไม่ใช่เสียถาวร) เพื่อรับ Aura เพิ่ม **10 หน่วย** ได้ dash และ disengage — ใช้ได้ทุกเทิร์นที่ Throne เปิดอยู่ (จำกัดโดยธรรมชาติที่ 1 ครั้ง/เทิร์นอยู่แล้ว เพราะผูกกับ BA convert ที่ทำได้ครั้งเดียว/เทิร์น) เป็นความเสี่ยงสูงที่ตั้งใจให้ตรงธีม "ทำลายล้างสุดขั้ว" ของบัลลังก์นี้
 
 ---
 
