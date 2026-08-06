@@ -14,21 +14,13 @@
 **EN**: Throne of Eternity and Creation · **CN**: 永恒与创造之神印王座
 
 - **Flavor**: บัลลังก์สูงสุด/ต้นแบบแท้จริงในเรื่อง (ของ Long Haochen พระเอก) — ไม่ใช่ของจำลองเหมือนอีก 5 บัลลังก์ สื่อถึง "การสร้างสิ่งใหม่จากความว่างเปล่า" และ "ความคงอยู่ชั่วนิรันดร์"
-- **แนวทางกลไก (อัปเดตล่าสุด — Pure White Blade เหลือแค่ res/immune ไม่แตกแขนง heal แล้ว)**: **ต่อยอด Pure White Blade** ให้เข้ากับแนวทางออกแบบหลักของ subclass เหมือน 5 บัลลังก์ที่เหลือ บวก **technique ใหม่ 1 ตัว** (Renewal Aura) เป็น bonus แยกไม่กิน slot Aura Mastery:
-  1. **Pure White Blade — ทะลวง Resistance/Immunity (lv3, จุดแรกที่ได้ subclass)**: Pure White Blade ยังทำงานแบบเดิมทุกประการ (**ระยะโจมตี +5 ft/stack**, 1 Aura/stack, ไม่แตกแขนงไป heal/temp HP แล้ว) — เพิ่มแค่ผลใหม่: การโจมตีที่ใช้ Pure White Blade (จ่ายอย่างน้อย 1 stack) **ทะลวง damage resistance และ immunity ได้ทุกชนิดของดาเมจในการโจมตีครั้งนั้น** (รวมดาเมจฐานของอาวุธ + ดาเมจเสริมจาก technique อื่นที่ผูกกับการโจมตีเดียวกัน เช่น Light Sword Radiant)
-  2. **Renewal Aura** (technique ใหม่ ไม่กิน Aura Mastery slot) — Action, 1 Aura ต่อ stack: รักษา HP ให้ตัวเองหรือพันธมิตร 1 คนในระยะ 30 ft เท่ากับ **1d4 ต่อ stack** ไม่มีเพดาน stack — เป็น**แหล่งฮีล HP จริงแหล่งเดียวในทั้งคลาส** (Aegis Aura/Steadfast Aura เดิมเป็นแค่ mitigation ไม่ใช่ฮีล) ตั้งใจล็อกไว้ที่ subclass นี้เท่านั้น
-     > **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **+1d6 ต่อ stack** (d4→d6, คงต้นทุน 1 Aura/stack — parity กับ Light Sword ที่อัพเกรดแบบเดียวกัน)
-- **ต่อยอดจาก**: Pure White Blade (สาย Universal) สำหรับข้อ 1 — Renewal Aura ยังเป็น technique ใหม่ (ข้อยกเว้นเดิม) สำหรับข้อ 2
-- **จุดที่ต้องระวัง**:
-  - **ทะลวง res/immune ตั้งแต่ lv3 + ครอบคลุมทุกดาเมจในการโจมตีนั้น (รวม rider จาก technique อื่น)** เป็นตัวเลือกที่แรงและเร็วกว่าที่ปกติ 5e ให้ (เทียบ Monk's ki-empowered strikes ที่ให้ผล nonmagical-resistance-bypass ตอน lv6) — ผสมกับ Retribution/Path ที่ dual-wield + Light Sword + Cross Slash จะกลายเป็น "การันตีดาเมจเต็ม" ทุกครั้งที่โจมตีศัตรูสาย resistance/immunity ควรคำนวณ worst-case ร่วมกับ subclass #3 (Doom and Slaughter) และเทียบ nova ceiling ในทีลิสต์อีกครั้งก่อนใช้จริง เพราะเป็นจุดที่ตั้งใจเลือกความแรงไว้สูงสุดในบรรดาตัวเลือกที่มี
-  - Renewal Aura เป็นฮีลแหล่งแรกในคลาส ต้องเช็ค nova ceiling เดียวกับที่ตรวจ Cross Slash/Sun Slash ไว้ใน tier list — ตอนนี้ถูกลงจาก 2 Aura/stack เหลือ **1 Aura/stack** (เทียบเท่า Light Sword ที่ 1 Aura : 1d4 ดาเมจ) ทำให้ efficient ฮีลสูงขึ้นเท่าตัวจากดราฟต์ก่อนหน้า — Aura pool ระดับสูง (60-80+) แปลว่าฮีลได้ 60-80d4/วันถ้าทุ่มหมด (เฉลี่ย ~150-200 HP) ต้องเทียบว่าล้น healing budget ระดับ full-caster ไหม
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: _(ยังไม่ระบุ)_
-- เลเวล 6: _(ยังไม่ระบุ)_
-- เลเวล 10: _(ยังไม่ระบุ)_
-- เลเวล 14: _(ยังไม่ระบุ)_
-- เลเวล 17: _(ยังไม่ระบุ)_
+- เลเวล 3: Eternity: Action, 1 Aura ต่อ stack: รักษา HP ให้ตัวเองหรือพันธมิตร 1 คนในระยะ 30 ft เท่ากับ **1d4 ต่อ stack** ไม่มีเพดาน stack
+- เลเวล 6: Creation: Pure White Blade — ทะลวง Resistance กายภาพ และ ได้ Resistance ต่อกายภาพ 1 นาที 
+- เลเวล 10: True Eternity: สามารถจ่าย 2 Aura เพื่อเพิ่ม Temp hp ได้ **1d4 ต่อ stack** ไม่มีเพดาน stack
+- เลเวล 14: True Creation: ทะลวง Resistance ทุกชนิด และ ได้ Resistance ต่อทุกชนิด 1 นาที 
+- เลเวล 17: Throne of Eternity and Creation (1 min / longrest): Aura 30 ft ภายใน 1 Action สามารถโจมตีด้วย Pure White Blade หรือ Eternity ได้สูงสุด Wis เป้าหมาย ต่อ Action (จ่าย cost แยกต่อเป้าหมาย)
 
 ---
 
@@ -36,21 +28,13 @@
 **EN**: Throne of Fear and Sorrow · **CN**: 恐惧与悲伤之神印王座
 
 - **Flavor**: เจ้าของจริงในเรื่อง (Han Yu) มีตำแหน่ง "อัศวินแห่งการทำลายและการให้อภัย" — dual เข้ากับความขัดแย้งในตัว: ทำลายล้างสุดขั้ว แต่กลับให้อภัยได้ เหมาะกับอัศวินที่ทำให้ศัตรูหวาดกลัวก่อนจะจบด้วยความเมตตา
-- **แนวทางกลไก (อัปเดตล่าสุด — Sorrow's Bargain ผูกกับ Aura Surge แทนที่จะเป็น Bonus Action แยกอิสระ)**:
-  1. **Dread Aura** — Action, 2 Aura (fixed cost ไม่ scale ตาม stack): เป้าหมาย 1 ตัวในระยะ 30 ft ทำ Wisdom Saving Throw (DC = 8 + Proficiency Bonus + Wisdom modifier) ไม่ผ่าน = **Frightened** เป็นเวลา 1 นาที (เซฟใหม่ได้ทุกจบเทิร์นของเป้าหมาย) — **ใช้กับเป้าหมายเดิมซ้ำได้แค่ 1 ครั้ง/Short หรือ Long Rest** (กันไม่ให้ยิงซ้ำจน perma-lock ศัตรูตัวเดียว) — ยังเป็น technique ใหม่ ไม่ต่อยอดจากตัวไหน
-  2. **Sorrow's Bargain (สังเวยเลือด)** — ไม่ใช่ Bonus Action แยกอิสระอีกต่อไป **ผูกเป็นตัวเลือกเสริมตอนใช้ Aura Surge เท่านั้น** (trigger พร้อมกับ Bonus Action แปลง slot ที่ใช้ Aura Surge ไปด้วยในจังหวะเดียวกัน): เวลาใช้ Aura Surge (ยังจำกัด **Proficiency Bonus ครั้ง/Long Rest** เท่าเดิม ไม่มี cap แยกซ้อน) เลือกยอมเสีย HP ปัจจุบันเพิ่ม **เท่าไหร่ก็ได้ตามใจ แต่ไม่เกิน (current HP − 1)** (กันฆ่าตัวเองด้วย technique ตัวเอง) แลก **Aura เพิ่มเท่ากับครึ่งหนึ่งของ HP ที่เสียไป (อัตรา 2 HP : 1 Aura, ปัดเศษลง)** เข้ากองรวมกับ Aura ที่ได้จาก Aura Surge (WIS mod) + การแปลง slot ปกติในเทิร์นนั้น — HP ที่เสียนับเป็น **self-inflicted ไม่ใช่ดาเมจจากศัตรู** (ไม่ trigger Vengeful Riposte/technique อื่นที่อ่านเงื่อนไข "โดนโจมตี")
-- **ต่อยอดจาก**: Aura Surge (ฟีเจอร์หลักของคลาส เลเวล 1) สำหรับ Sorrow's Bargain — Dread Aura ยังเป็น technique ใหม่ (ข้อยกเว้นเดิม)
-- **จุดที่ต้องระวัง**:
-  - ~~Dread Aura ซ้อนกับ Domain~~ ข้อกังวลเดิมตกไปแล้วเพราะ **Domain ถูกตัดออกจากคลาสหลักทั้งหมด** (lv17 เปลี่ยนเป็น Subclass Feature เฉยๆ) — cap "1 ครั้ง/เป้าหมาย/rest" ยังคงไว้เผื่อซ้อนกับ fear/control effect อื่นที่อาจเพิ่มเข้ามาทีหลัง (เช่นจาก Improve Aura Technique lv18)
-  - การผูกกับ Aura Surge ทำให้ไม่ต้องคิด cap แยกอีกต่อไป (ข้อดี) แต่ก็แปลว่า **ทุกครั้งที่ใช้ Aura Surge จะได้ทางเลือกนี้ติดไม้ติดมือฟรีเสมอ** — ต้องเช็คว่ารวมกับ WIS mod bonus ของ Aura Surge เดิมแล้ว burst Aura ต่อครั้ง (WIS mod + HP/2) จะพุ่งเกิน nova ceiling ที่ตรวจไว้ใน tier list ไหม โดยเฉพาะตอน Aura Surge เต็มโควตา PB ครั้ง/Long Rest ในวันเดียว (worst case: ทุ่ม HP เกือบเต็มทุกครั้งที่ใช้ Aura Surge)
-  - ควรกำหนดด้วยว่านับเป็นดาเมจชนิดไหน/trigger อะไรได้บ้าง (เช่น Aegis Aura ของ subclass อื่นหักล้างดาเมจนี้ได้ไหม — แนะนำ**ไม่ได้** เพราะเป็นการสละ HP โดยสมัครใจ ไม่ใช่ดาเมจที่ "รับ" จากภายนอก)
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: _(ยังไม่ระบุ)_
-- เลเวล 6: _(ยังไม่ระบุ)_
-- เลเวล 10: _(ยังไม่ระบุ)_
-- เลเวล 14: _(ยังไม่ระบุ)_
-- เลเวล 17: _(ยังไม่ระบุ)_
+- เลเวล 3: Sorrow's Bargain: **ทุกครั้งที่ใช้ BA แปลง Aura** จะสามารถจ่าย HP = 3*Wis เพื่อรับ Aura เพิ่มเท่ากับ Wis
+- เลเวล 6: Fear's Bargain: การโจมตีที่ใช้ Focused Edge ถ้า Attack Roll >= AC เป้าหมาย +15 + Proficiency Bonus ของเป้าหมาย จะนับว่าเป็นการ Critical Hit
+- เลเวล 10: True Sorrow's Bargain: เมื่อใช้ BA แปลง Aura จะสามารถจ่าย HP = 2*Wis เพื่อรับ Aura เพิ่มเท่ากับ Wis + ได้ Advantage ในการโจมตีครั้งแรก
+- เลเวล 14: True Fear's Bargain: การโจมตีที่ใช้ Focused Edge และดาเมจ Critical Hit ในครั้งนี้จะเป็น 3 เท่า จาก 2 เท่า
+- เลเวล 17: Throne of Fear and Sorrow (1 min / longrest): เมื่อใช้  BA consume Spell slot มาเป็น Aura สามารถจ่าย Max hp 10 เพื่อรับ Aura เพิ่ม 20 หน่วย ได้ dash และ disengauge
 
 ---
 
@@ -58,32 +42,14 @@
 **EN**: Throne of Doom and Slaughter · **CN**: 末日与杀戮之神印王座
 
 - **Flavor**: เจ้าของจริง (Long Xingyu) ตำแหน่ง "อัศวินแห่งการพิพากษาและการไต่สวน" — สายบุกทำลายล้างเพียวๆ ธีม "ผู้พิพากษาที่ลงทัณฑ์ด้วยกำลัง" ตรงกับ Retribution path เป๊ะที่สุดในบรรดา 6 บัลลังก์
-- **แนวทางกลไก (อัปเดต — ยืนยันแล้ว)**: อัพเกรด technique ที่ "บ้าน" ของ Retribution ทั้งคู่ (Light Sword ย้ายมาเป็น Retribution แล้ว — ดู [Aura-Knight.md § Aura Technique](Aura-Knight.md#aura-technique)) — **ใช้ร่วมกับ Improve Aura Technique (lv7/lv18) ได้เต็มๆ ไม่ชนกัน** เพราะ subclass ต่อยอด "บนฐาน" ของ lv7/lv18 แทนที่จะแทนที่มัน:
-  1. **Light Sword**: ดาเมจ **d4 → d6 ต่อ stack** (คงเรทต้นทุน 1 Aura/stack เท่าเดิม) — ถ้ามี Improve Aura Technique (lv7 หรือ lv18) เลือก Light Sword ด้วย (อัพเป็น d6 เหมือนกัน) ทั้งคู่รวมกันเป็น **d8/stack** (d6→d8 อีกขั้น ไม่ compound เป็น 2 ลูกเต๋า — ยืนยันแล้วว่าเลือกทางนี้แทน 2d4/2d6 เพื่อไม่ให้แรงเกินไปตอนผสมกับ Cross Slash)
-  2. **Cross Slash**: ใช้สูตร **N+1 ต่อ stack เหมือนตอนเลือกอัพเกรดนี้** (ถ้าตัวละครยังไม่ได้เลือกอัพเกรดนี้เลย (ทั้ง lv7 และ lv18) ก็ยังใช้ N+2 ฐานตามปกติ) **บวกโบนัสครั้งเดียว**: พอยอด Aura ที่จ่ายให้ Cross Slash สะสมถึง **5** (ครั้งแรกที่ถึงเท่านั้น ไม่ใช่ทุกๆ 5 — จ่ายต่อไปอีกเท่าไหร่ก็ไม่ได้โบนัสซ้ำ) ได้ **ตีเพิ่มฟรีอีก 1 ครั้ง**
-
-  ตารางสรุป (นับเฉพาะ N+1 stepped ซึ่งเป็นเคสที่มี lv18 แล้ว):
-
-  | ตีเพิ่มที่ซื้อ (stepped) | ต้นทุน N+1 สะสม | โบนัส (+1 ครั้งเดียว เมื่อสะสม ≥5) | ตีเพิ่มรวมจริง |
-  |---|---|---|---|
-  | 1 | 2 | — | 1 |
-  | 2 | 5 | +1 | 3 |
-  | 3 | 9 | +1 | 4 |
-  | 4 | 14 | +1 | 5 |
-  | 5 | 20 | +1 | 6 |
-  | 6 | 27 | +1 | 7 |
-  | 7 | 35 | +1 | 8 |
-
-  > โบนัสเป็น flat +1 ครั้งเดียวตลอดทั้งการใช้ (ไม่ scale ตามจำนวน Aura ที่จ่ายเพิ่ม) จึงเป็นแค่ "ส่วนลดคงที่" เล็กๆ ไม่ใช่ตัวคูณที่ยิ่งจ่ายยิ่งได้เยอะ — ปลอดภัยกว่าเวอร์ชันที่คิดว่าจะได้โบนัสทุกๆ 5 Aura (ซึ่งจะพุ่งไม่หยุดที่ Aura สูงๆ)
-- **ต่อยอดจาก**: Cross Slash, Light Sword (ทั้งคู่สาย Retribution)
-- **จุดที่ต้องระวัง**: เป็น subclass ที่ตรงไปตรงมาที่สุด (pure damage) ต้องเทียบ nova ceiling ที่ตรวจไว้แล้วใน [tier list](../../codex/2024-tier-list/00-class-overview-tier-list-2024.md) ให้ยังอยู่ในกรอบเดิม — Light Sword d6 ดันดาเมจต่อการโจมตีขึ้นด้วย และยิ่งอันตรายเมื่อผสมกับ Cross Slash ที่ตีถี่ขึ้น (ตาม[กฎ technique หลายครั้งต่อเทิร์น](Aura-Knight.md#aura-technique) rider ต้องจ่ายแยกทุกครั้งที่โจมตี) — ควรคำนวณ worst-case ดาเมจรวม/เทิร์นตอน Aura เต็มพูลอีกครั้งก่อนใช้จริง
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: _(ยังไม่ระบุ)_
-- เลเวล 6: _(ยังไม่ระบุ)_
-- เลเวล 10: _(ยังไม่ระบุ)_
-- เลเวล 14: _(ยังไม่ระบุ)_
-- เลเวล 17: _(ยังไม่ระบุ)_
+- ต้องเลือก Retribution เท่านั้น
+- เลเวล 3: The Slaughter: เมื่อโจมตีครั้งที่ 3 ด้วย Cross Slash (นับการโจมตีปกติด้วย) จะโจมตีเพิ่มอีก 1 ครั้ง
+- เลเวล 6: The Doom: การโจมตีด้วย Cross Slash จะได้รับโบนัสดาเมจ +Wisdom bonus ทุกครั้งที่โจมตี 
+- เลเวล 10: The True Slaughter: เมื่อโจมตีครั้งที่ 6 ด้วย Cross Slash (นับการโจมตีปกติ และ The Slaughter ด้วย) จะโจมตีเพิ่มอีก 1 ครั้ง
+- เลเวล 14: The True Doom: การโจมตีด้วย Cross Slash จะได้รับโบนัสดาเมจ +Proficiency bonus ทุกครั้งที่โจมตี 
+- เลเวล 17: Throne of Doom and Slaughter (1 min / longrest): ทุกครั้งที่โจมตีการโจมตีครั้งถัดไปจะแรงขึ้น 2 จนกว่าจะจบเทิน และได้ speed +10 ทุกครั้งที่โจมตี
 
 ---
 
@@ -91,20 +57,14 @@
 **EN**: Throne of Protection and Mercy · **CN**: 守护与怜悯之神印王座
 
 - **Flavor**: เจ้าของจริง (Yang Haohan) ตำแหน่ง "อัศวินแห่งการป้องกันและการประสานงาน" — จับคู่ตรงกับ Guardian path เป๊ะที่สุดในบรรดา 6 บัลลังก์ เน้นปกป้องทีมและงานประสานงาน (support จริงจัง ไม่ใช่แค่ tank เดี่ยว)
-- **แนวทางกลไก (อัปเดต — ยืนยันแล้ว)**: ขยายขอบเขตของ 2 technique ให้ใช้กับพันธมิตรได้ โดย **คงอัตราแลกเปลี่ยนเดิมไว้ (ไม่แก้ตัวเลข)**:
-  1. **Aegis Aura**: ใช้กับพันธมิตร 1 คนในระยะ 30 ft ได้ (นอกจากตัวเอง) — ยังเป็น Reaction, ยังจ่าย **1 Aura ต่อดาเมจ 2 หน่วย** เท่าเดิม
-  2. **Steadfast Aura**: ใช้กับพันธมิตร 1 คนในระยะ 30 ft ได้ (นอกจากตัวเอง) — ยังจ่าย **2 Aura ต่อ 1 แต้มที่ขาดจาก DC** เท่าเดิม
-
-  > **ตอบคำถาม "ถ้าบัพจาก 1:2 → 1:1 จะโกงมั้ย"**: เช็คเลขก่อน — เรทปัจจุบันของ Aegis Aura คือ "1 Aura หัก 2 ดาเมจ" (2 ดาเมจ/Aura) ถ้าเปลี่ยนเป็น "1:1" ตามตัวอักษร (1 Aura หัก 1 ดาเมจ) นั่นคือ**การนอร์ฟ ไม่ใช่บัพ** (แพงขึ้น 2 เท่าเพื่อหักดาเมจเท่าเดิม) — เดาว่าที่ตั้งใจจริงคือ "อยากให้แรงขึ้นกว่าเดิม" แนะนำว่า **ไม่ต้องแตะเรทเลย**: แค่ขยายให้ใช้กับพันธมิตรได้ก็แรงพอแล้ว เพราะ Reaction มีแค่ 1 ครั้ง/รอบตามกฎ 5e อยู่แล้ว (self กับ ally แย่งโควตาเดียวกัน) — การขยาย scope จึงไม่เพิ่มความถี่การใช้ต่อรอบ แค่เพิ่ม "ใครได้ประโยชน์" ถ้าจะบัพเรทเพิ่มด้วย (เช่นเป็น 1:3) ต้องผ่าน nova/sustain check แยกอีกรอบ เพราะเทียบเท่าเพิ่ม effective HP ของทั้งปาร์ตี้ ไม่ใช่แค่ตัวเดียว
-- **ต่อยอดจาก**: Aegis Aura, Steadfast Aura (สาย Guardian)
-- **จุดที่ต้องระวัง**: ต้อง require เห็น/รับรู้เป้าหมาย (line of sight) และจำกัดระยะ (แนะนำ 30 ft) กัน "ป้องกันได้จากทุกที่ในสนาม" ที่จะเกินขอบเขตปกติของ Reaction-based ability
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: _(ยังไม่ระบุ)_
-- เลเวล 6: _(ยังไม่ระบุ)_
-- เลเวล 10: _(ยังไม่ระบุ)_
-- เลเวล 14: _(ยังไม่ระบุ)_
-- เลเวล 17: _(ยังไม่ระบุ)_
+- ต้องเลือก Guardian เท่านั้น
+- เลเวล 3: The Protection: Aegis Aura สามารถใช้กับเพื่อนร่วมทีมในระยะ 30 ft ได้
+- เลเวล 6: The Mercy: ทุก 2 hp ที่เสียไปจะได้ 1 Aura
+- เลเวล 10: The True Protection: Steadfast Aura สามารถใช้กับเพื่อนร่วมทีมในระยะ 30 ft ได้
+- เลเวล 14: The True Mercy: เป้าหมายได้ temp hp 1 หน่วยทุก 2 Aura ที่ใช้ไปใน Aegis Aura หรือ Steadfast
+- เลเวล 17: Throne of Protection and Mercy (1 min / longrest): Speed เหลือ 0 ในระยะ 120 ft  ศัตรูโจมตีเพื่อนจะ disadvantage และ พวกเค้าจะได้ Adventage ใน Saving throw และได้ AC+1
 
 ---
 
@@ -112,18 +72,13 @@
 **EN**: Throne of Wisdom and Spirit · **CN**: 智慧与精神之神印王座
 
 - **Flavor**: เจ้าของจริง (Zhang Fangfang) ตำแหน่ง "อัศวินแห่งการตรัสรู้และการสืบทอด" — ธีมนักปราชญ์/ผู้ถ่ายทอดความรู้ เหมาะกับสายที่เก่ง utility นอกคอมแบตและ "ส่งต่อพลัง"
-- **แนวทางกลไก (อัปเดต — ไม่เสีย Reaction)**: ขยายขอบเขต 2 technique ให้ใช้กับพันธมิตรได้ **โดยไม่เสีย action ใดๆ เลย เหมือนตอนใช้กับตัวเอง** (คงเรทเดิม 1 Aura : +1 ต่อ stack ทั้งคู่):
-  1. **Clarity Aura**: ก่อนพันธมิตรในระยะ 30 ft ทอย Skill Check ประกาศจ่าย Aura เพิ่ม **+1 ต่อ stack** ให้ check นั้น (ต้องประกาศก่อนทอยเหมือนเดิม ใช้ย้อนหลังหลังเห็นผลไม่ได้ — แค่ไม่ต้องเสีย Reaction/Action แล้ว)
-  2. **Focused Edge**: ก่อนพันธมิตรในระยะ 30 ft ทอย Attack Roll ประกาศจ่าย Aura เพิ่ม **+1 ต่อ stack** ให้ ATK roll นั้น (เงื่อนไขเดียวกัน)
-- **ต่อยอดจาก**: Clarity Aura (สาย Universal), Focused Edge (สาย Universal)
-- **จุดที่ต้องระวัง**: เพราะไม่มี Reaction คุมความถี่แล้ว ตัวคุมความถี่เหลือแค่ **Aura ที่มี** + เงื่อนไข "ต้องประกาศก่อนทอยเสมอ" (ต้องรับรู้ว่าใครกำลังจะทอยอะไร ณ ตอนนั้นจริงๆ — ประกาศแทนทั้งปาร์ตี้ล่วงหน้าไม่ได้) ซึ่งจริงๆ ตรงกับ design เดิมของทั้งคลาสอยู่แล้ว (ทั้งคลาสไม่มี action tax บน technique ใดเลย ดู [Aura — ระบบทรัพยากรหลัก](Aura-Knight.md#aura--ระบบทรัพยากรหลัก)) — ยังต้องคุมระยะ (30 ft) และ line of sight/awareness ไว้กันใช้ข้ามแผนที่
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: _(ยังไม่ระบุ)_
-- เลเวล 6: _(ยังไม่ระบุ)_
-- เลเวล 10: _(ยังไม่ระบุ)_
-- เลเวล 14: _(ยังไม่ระบุ)_
-- เลเวล 17: _(ยังไม่ระบุ)_
+- เลเวล 3: The Wisdom: Clarity Aura ใช้กับเพื่อนในระยะ 30 ft ได้
+- เลเวล 6: The Spirit: จ่าย 10 Aura เพื่อมอบ Heroic Inspiration แก่เพื่อน 1 คน
+- เลเวล 10: The True Wisdom: Adventage ในการทอย Skill check เมื่อใช้ Clarity Aura
+- เลเวล 14: The True The Spirit: สามารถใช้ Heroic Inspiration หรือ 10 Aura เพื่อใช้  Heroic Inspiration ให้คนอื่นได้ตลอดเวลา
+- เลเวล 17: Throne of Wisdom and Spirit (1 min / longrest): ในระยะ 30 ft เพื่อนจะได้ advantage ในการทอย attack roll และ skill check ศัตรูจะ disadvantage ในการ Saving Throw ต่อฝ่ายเรา
 
 ---
 
@@ -131,44 +86,10 @@
 **EN**: Throne of Order and Law · **CN**: 秩序与法则之神印王座
 
 - **Flavor**: เจ้าของจริง (Long Tianyin) ตำแหน่ง "อัศวินแห่งการควบคุมและการจำกัด" — ธีมนี้ผูกกับข้อกำหนด **Lawful alignment** ของทั้งคลาสได้แนบสนิทที่สุด (ระเบียบ/กฎ = แก่นของ Lawful) เหมาะเป็น subclass "ตัวแทนแท้ๆ" ของธีม Aura Knight
-- **แนวทางกลไก (อัปเดต — เปลี่ยนจาก Domain มาเป็น Swift Aura)**: ธีม "ควบคุม/สั่งการ" แปลงเป็นการบัญชาการเคลื่อนที่ของพันธมิตรแทน (แทนที่ concept เดิมที่เคยผูกกับ Domain — **Domain ถูกตัดออกจากคลาสหลักทั้งหมดแล้ว จึงไม่มี fallback ให้ย้อนกลับไปอีก**):
-  1. **Swift Aura ใช้กับพันธมิตรได้**: เป้าหมายพันธมิตร 1 คนในระยะ 30 ft ได้ Speed **+10 ft ต่อ stack** เหมือน base (คงเรทเดิม 1 Aura/stack)
-  2. **Rider ใหม่ — "Commanding Step"**: เมื่อใช้ Swift Aura กับพันธมิตร จ่ายเพิ่ม **2 Aura** (fixed ไม่ scale) เพื่อให้เป้าหมายนั้นใช้ **Reaction ของตัวเอง** เคลื่อนที่ทันทีในระยะสูงสุดเท่าที่ Swift Aura บัพให้ครั้งนี้ โดยไม่โดน Opportunity Attack (เป้าหมายต้องยินยอม และเสีย Reaction ของตัวเอง ไม่ใช่ของผู้ใช้ Aura Knight)
-- **ต่อยอดจาก**: Swift Aura (สาย Universal) — เปลี่ยนจาก Domain เดิม
-- **จุดที่ต้องระวัง**:
-  - Commanding Step ใช้ **Reaction ของเป้าหมาย ไม่ใช่ของ Aura Knight** — Aura Knight เองไม่เสีย action ใดๆ เพิ่ม (Swift Aura ตัวฐานไม่เสีย action อยู่แล้ว จ่ายแค่ Aura) ต้องเขียนกฎนี้ให้ชัดกันสับสน
-  - ต้องเช็คว่า "ให้พันธมิตร disengage-move ฟรีแบบไม่โดน OA" ไม่แรงเกิน spell เทียบเคียง (เช่น Misty Step ระดับ 2, Expeditious Retreat) — จำกัดด้วยระยะที่ Swift Aura บัพให้เท่านั้น (ไม่ใช่ teleport) น่าจะพอคุมได้
-  - ธีม "Order and Law" กับ "บัญชาการเคลื่อนที่พันธมิตร" เชื่อมกันไม่ตรงเป๊ะเท่า Domain เดิม (ที่ผูก alignment/capstone ตรงๆ) — **หมายเหตุ: Domain ถูกตัดออกจากคลาสหลักทั้งหมดแล้ว จึงไม่มี concept เดิมให้ fallback กลับไปอีก** ถ้า Swift Aura ไม่เข้าธีมพอตอน playtest ต้องคิด concept ใหม่แทน ไม่ใช่ย้อนกลับไป Domain
 
 **เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
-- เลเวล 3: _(ยังไม่ระบุ)_
-- เลเวล 6: _(ยังไม่ระบุ)_
-- เลเวล 10: _(ยังไม่ระบุ)_
-- เลเวล 14: _(ยังไม่ระบุ)_
-- เลเวล 17: _(ยังไม่ระบุ)_
-
----
-
-## สรุปการจับคู่กับ Path เดิม
-
-| บัลลังก์ | Path ที่เข้ากันที่สุด |
-|---|---|
-| 1. Eternity and Creation | เป็นกลาง — ผูกกับกลไก core ของคลาส ไม่เอียง Path ไหน |
-| 2. Fear and Sorrow | Retribution |
-| 3. Doom and Slaughter | Retribution (ตรงที่สุด) |
-| 4. Protection and Mercy | Guardian (ตรงที่สุด) |
-| 5. Wisdom and Spirit | เป็นกลาง — เอียง Universal/utility |
-| 6. Order and Law | เป็นกลาง — เอียง Universal (Swift Aura) + alignment theme |
-
-## TODO ก่อนออกแบบเต็ม
-
-- [x] ร่างกลไก tech ใหม่/อัพเกรดของทั้ง 7 subclass (อัปเดตล่าสุด — ยังเป็น draft ตัวเลขยังไม่ผ่าน balance check)
-- [x] ย้าย Light Sword Universal → Retribution, ตัด Sun Slash ออก, แก้ Pure White Blade เป็น +5ft range/stack ใน [Aura-Knight.md](Aura-Knight.md)
-- [x] เพิ่มโครง "เลเวลที่ได้ (3/6/10/14)" เว้นว่างไว้ท้ายทุก subclass — รอแปลง concept ด้านบนมาใส่
-- [x] ตัด Domain ออกจากคลาสหลักทั้งหมด — lv17 เปลี่ยนเป็น Subclass Feature (รวมเป็น 5 ระดับ: 3/6/10/14/17), lv18 เปลี่ยนเป็น Improve Aura Technique, ขยายโครง "เลเวลที่ได้" ทุก subclass ให้มีช่อง lv17 ด้วย — ดู [Aura-Knight.md § Level Progression](Aura-Knight.md#level-progression)
-- [x] ออกแบบ Improve Aura Technique ครบทั้ง 10 technique หลักของคลาสแล้ว — เพิ่มเป็นเลือกได้ 2 ครั้ง (เลเวล 7 และ 18 คนละตัวกัน) แทนที่ Aura Mastery ที่เดิมอยู่เลเวล 7 (รวม technique ที่เรียนได้ผ่าน Aura Mastery เหลือ 5 ตัวจาก 6) — ดู [Aura-Knight.md § เลเวล 7](Aura-Knight.md#เลเวล-7--improve-aura-technique-i) และ [§ เลเวล 18](Aura-Knight.md#เลเวล-18--improve-aura-technique-ii) (technique ที่ subclass มอบให้เพิ่มยังไม่ได้ทำ)
-- [x] ย้ายบัลลังก์ที่ 7 (อัศวินบำเพ็ญคู่) ออกจากไฟล์นี้ — กลายเป็น Path ที่ 3 "Formless" ใน [Aura-Knight.md § Choose Your Path](Aura-Knight.md#เลเวล-1--choose-your-path) แทน พร้อมกฎใหม่ผูก technique access กับอุปกรณ์ที่ถืออยู่ (ไม่ใช่ Path ที่เลือกตอนเลเวล 1) — Retribution technique ใช้ได้ตอนถืออาวุธ 2 มือ, Guardian technique ใช้ได้ตอนถือโล่
-- [ ] กระจาย concept ของแต่ละ subclass (ทั้ง 6 ที่เหลือ) ลงช่อง เลเวล 3/6/10/14/17 ที่เว้นว่างไว้
-- [ ] เลือก subclass ตัวแรกที่จะลงมือออกแบบกลไกเต็ม (แนะนำเริ่มจาก #3 หรือ #4 เพราะจับคู่ Path ตรงที่สุด ออกแบบง่ายสุด)
-- [ ] เข้า `/build-class` เพื่อ balance check ทีละตัวตามระบบเดิมของโปรเจกต์ (โดยเฉพาะ #1/#2 ที่เป็น technique ใหม่ทั้งคู่ ไม่ใช่แค่อัพเกรดของเดิม — และ #4 ที่ต้องยืนยันว่าไม่แตะอัตราแลกเปลี่ยน)
-- [ ] อัปเดต [Aura-Knight.md § Subclass](Aura-Knight.md#subclass) ให้ลิงก์มาไฟล์นี้ระหว่างที่ยังไม่มี subclass ไหนเสร็จสมบูรณ์
+- เลเวล 3: The Order: Swift Aura ใช้กับเพื่อนร่วมทีมในระยะ 30 ft เคลื่อนที่ได้ทันทีเท่ากับ speed ของ Swift Aura
+- เลเวล 6: The Law: Swift Aura ทำให้ไม่โดน Opportunity Attack
+- เลเวล 10: The True Order: เพื่อที่ได้รับผลของ Swift Aura จะได้รับ Speed เท่ากับของ Swift Aura เมื่อเข้าเทินตัวเอง
+- เลเวล 14: The True Law: Swift Aura ทำให้ได้รับสถาณะ Dodge
+- เลเวล 17: Throne of Order and Law (1 min / longrest): สามารถเลือกเป้าหมาย Swift Aura ได้ครั้งละ Wis เป้าหมาย
