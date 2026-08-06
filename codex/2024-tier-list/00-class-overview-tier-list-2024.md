@@ -73,7 +73,7 @@ D&D 2024 ตั้งใจออกแบบให้ **chassis พื้นฐ
 - **จุดด้อย**: ต้องคง Dance (สเตตแบบ rage) ไว้ตลอดถึงจะได้ประโยชน์เต็มที่ หลุดสเตตแล้วอ่อนลงทันที
 
 ### Aura Knight 🟡 (Homebrew ใหม่ของโปรเจกต์นี้) — Alignment-locked Aura striker/tank
-- **จุดเด่น**: Aura Technique ให้ output คุมได้แม่นยำ (จ่าย Aura เท่าไหร่ได้ผลเท่านั้น ไม่มีองค์ประกอบสุ่ม, ไม่มีระบบ rank/อัพเกรดให้ยุ่งยากอีกแล้ว) + Domain (lv17) เป็น capstone-tier control ที่แรงจริง + Clarity Aura ให้ utility นอกคอมแบต (guarantee skill check) โดยแลกกับ Aura ก้อนเดียวกับที่ใช้ต่อสู้ + Aura Surge (lv2) เติม Aura ฟรีทุกครั้งที่เข้าไฟต์ (สูงสุด PB ครั้ง/วัน) ปิด gap "งบ Aura ทั้งวันบางไป" สำหรับวันมาตรฐาน 6-8 ไฟต์ได้เกือบสนิท
+- **จุดเด่น**: Aura Technique ให้ output คุมได้แม่นยำ (จ่าย Aura เท่าไหร่ได้ผลเท่านั้น ไม่มีองค์ประกอบสุ่ม, ไม่มีระบบ rank/อัพเกรดให้ยุ่งยากอีกแล้ว) + Domain (lv17) เป็น capstone-tier control ที่แรงจริง + Clarity Aura ให้ utility นอกคอมแบต (guarantee skill check) โดยแลกกับ Aura ก้อนเดียวกับที่ใช้ต่อสู้ + Aura Surge (lv1, ใช้ได้ 1 ครั้ง/short rest แล้วเพิ่มเป็น 4 ครั้ง/short rest ตาม Aura Upgrade I-III) เติม Aura เพิ่มเท่า WIS mod ทุกครั้งที่ใช้ BA แปลง slot ผูก WIS ให้มีค่าจริงและปิด gap "งบ Aura ทั้งวันบางไป" ได้ต่อเนื่องกว่าระบบเดิมที่ผูกกับ initiative
 - **จุดด้อย**: ไม่มี Extra Attack เลยตลอด class และยังไม่มี spellcasting จริงแม้แต่น้อย — utility ที่มีจำกัดแค่ skill check ไม่ครอบคลุมกว้างเท่า utility spell ของ Paladin/Ranger, alignment lock (Lawful only) เป็นความเสี่ยงเชิงปฏิบัติที่ class อื่นไม่มี (พังทั้ง kit ถ้า alignment เปลี่ยนจริง) ([Aura-Knight.md](../../homebrew-subclass/Aura-Knight/Aura-Knight.md))
 
 ---
@@ -148,8 +148,8 @@ D&D 2024 ตั้งใจออกแบบให้ **chassis พื้นฐ
 
 ## สรุปตำแหน่งเทียบ Aura Knight
 
-Aura Knight อยู่ **A tier** — ยืนยันอีกครั้งหลังปรับใหญ่ทั้ง class ในรอบนี้ (ตัดระบบ rank/อัพเกรดทิ้งทั้งหมดให้ technique มีค่าคงที่ตัวเดียว, ปรับ proficiency ให้ผูกกับ Path จริงจัง — Retribution ได้ Twin Blade Stance dual-wield, Guardian ได้ heavy armor+shield, เพิ่ม Aura Surge lv2 แก้ปัญหางบ Aura ทั้งวัน):
-- **Combat consistency**: ไม่ต้องรอชาร์จหลายเทิร์นอีกต่อไปตั้งแต่ต้นไฟต์ (Aura Upgrade) และตอนนี้ไม่ขาดแคลนตลอดทั้งวันด้วย (Aura Surge เติม PB Aura ฟรีทุกครั้งที่เข้าไฟต์ สูงสุด PB ครั้ง/Long Rest — งบรวมวันมาตรฐาน 6-8 ไฟต์เพิ่มจาก ~47→63 ที่ lv11 และ ~89→125 ที่ lv20)
+Aura Knight อยู่ **A tier** — ยืนยันอีกครั้งหลังปรับใหญ่ทั้ง class ในรอบนี้ (ตัดระบบ rank/อัพเกรดทิ้งทั้งหมดให้ technique มีค่าคงที่ตัวเดียว, ปรับ proficiency ให้ผูกกับ Path จริงจัง — Retribution ได้ Twin Blade Stance dual-wield, Guardian ได้ heavy armor+shield, เพิ่ม Aura Surge lv1 แก้ปัญหางบ Aura ทั้งวัน):
+- **Combat consistency**: ไม่ต้องรอชาร์จหลายเทิร์นอีกต่อไปตั้งแต่ต้นไฟต์ (Aura Upgrade) และตอนนี้ไม่ขาดแคลนตลอดทั้งวันด้วย (Aura Surge ให้ Aura เพิ่มเท่า WIS mod ทุกครั้งที่ใช้ BA แปลง slot ใช้ได้ 1→4 ครั้ง/short rest ตาม Aura Upgrade I-III — งบรวมวันมาตรฐาน สมมติ 2 short rest/วันกับ WIS mod ทั่วไป เพิ่มจาก ~47→71 ที่ lv11 และ ~89→129 ที่ lv20, ดูรายละเอียดสมมติฐานที่ [Aura-Knight.md](../../homebrew-subclass/Aura-Knight/Aura-Knight.md))
 - **Multi-pillar utility**: มี utility นอกคอมแบตจริง (การันตี skill check ได้ผ่าน Clarity Aura) แม้ไม่ใช่ spellcasting — จับคู่ใกล้เคียง **Paladin** มากขึ้น (combat burst + utility ที่ต้องแลกด้วย resource เดียวกัน ไม่ใช่ของแถมฟรี)
 - **Nova ceiling ที่ตรวจสอบแล้ว**: technique สายดาเมจ (Light Sword, Sun Slash) ไม่มี cap และ "เก็บ Aura หลายเทิร์นแล้วเทลงตาเดียว" ทำได้จริงเพราะแปลง Aura ใช้แค่ Bonus Action — แต่คำนวณแล้วดาเมจรวมทั้งไฟต์เท่าเดิมไม่ว่าจะกระจายจ่ายหรือเก็บมาเทตาเดียว (อัตราแลกเปลี่ยนเชิงเส้น 1:1 คงที่) แค่เปลี่ยนจังหวะเท่านั้น ไม่ใช่การปั๊มดาเมจเกินงบ — ความเสี่ยงพลาดการโจมตีครั้งเดียวก็ถ่วงดุลการ nova ไว้ในตัวอยู่แล้ว ไม่ต้องเติม cap เทียม
 

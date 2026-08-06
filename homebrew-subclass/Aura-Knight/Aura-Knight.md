@@ -43,19 +43,19 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 | เลเวล | Proficiency Bonus | Feature |
 |---|---|---|
-| 1 | +2 | Choose Your Path (Retribution/Guardian), Aura Awakening, Aura Mastery (2 techniques) |
-| 2 | +2 | Aura Surge |
+| 1 | +2 | Choose Your Path (Retribution/Guardian), Aura Awakening, Aura Mastery (1 technique), Aura Surge |
+| 2 | +2 | Aura Mastery (1 technique) |
 | 3 | +2 | Subclass Feature, Aura Mastery (1 technique) |
 | 4 | +2 | Ability Score Improvement |
-| 5 | +3 | Aura Upgrade (I) (Bonus Action แปลง 3 slot) |
+| 5 | +3 | Aura Upgrade (I) (Bonus Action แปลง 3 slot, Aura Surge +1 ครั้ง/short rest) |
 | 6 | +3 | Subclass Feature |
 | 7 | +3 | Aura Mastery (1 technique) |
 | 8 | +3 | Ability Score Improvement |
-| 9 | +4 | Aura Upgrade (II) (Bonus Action แปลง 4 slot) |
+| 9 | +4 | Aura Upgrade (II) (Bonus Action แปลง 4 slot, Aura Surge +1 ครั้ง/short rest) |
 | 10 | +4 | Subclass Feature |
 | 11 | +4 | Aura Mastery (1 technique) |
 | 12 | +4 | Ability Score Improvement |
-| 13 | +5 | Aura Upgrade (III) (Bonus Action แปลง 5 slot) |
+| 13 | +5 | Aura Upgrade (III) (Bonus Action แปลง 5 slot, Aura Surge +1 ครั้ง/short rest) |
 | 14 | +5 | Subclass Feature |
 | 15 | +5 | Aura Mastery (1 technique) |
 | 16 | +5 | Ability Score Improvement |
@@ -91,30 +91,30 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 ### ตาราง Aura Conversion Reference
 
-| เลเวล | แปลง slot ทั้งหมด = กี่ Aura | BA ดึงได้สูงสุด 1 เทิร์น | รวมถ้าใช้ Aura Surge ด้วย (ต่อวัน) |
+| เลเวล | แปลง slot ทั้งหมด = กี่ Aura | BA ดึงได้สูงสุด 1 เทิร์น (รวม Aura Surge ถ้ามี charge เหลือ, ตัวอย่าง) | รวมถ้าใช้ Aura Surge ด้วย (ต่อวัน, ตัวอย่าง) |
 |---|---|---|---|
-| 1 | 2 | 2 (2 ใบ) | 6 |
-| 2 | 3 | 2 (2 ใบ) | 7 |
-| 3 | 8 | 4 (2 ใบ) | 12 |
-| 4 | 10 | 4 (2 ใบ) | 14 |
-| 5 | 16 | 8 (3 ใบ) | 25 |
-| 6 | 19 | 9 (3 ใบ) | 28 |
-| 7 | 23 | 10 (3 ใบ) | 32 |
-| 8 | 27 | 11 (3 ใบ) | 36 |
-| 9 | 36 | 17 (4 ใบ) | 52 |
-| 10 | 41 | 18 (4 ใบ) | 57 |
-| 11 | 47 | 20 (4 ใบ) | 63 |
-| 12 | 47 | 20 (4 ใบ) | 63 |
-| 13 | 54 | 27 (5 ใบ) | 79 |
-| 14 | 54 | 27 (5 ใบ) | 79 |
-| 15 | 62 | 31 (5 ใบ) | 87 |
-| 16 | 62 | 31 (5 ใบ) | 87 |
-| 17 | 71 | 35 (5 ใบ) | 107 |
-| 18 | 76 | 35 (5 ใบ) | 112 |
-| 19 | 82 | 36 (5 ใบ) | 118 |
-| 20 | 89 | 37 (5 ใบ) | 125 |
+| 1 | 2 | 2 (2 ใบ) +3 = **5** | 8 |
+| 2 | 3 | 2 (2 ใบ) +3 = **5** | 9 |
+| 3 | 8 | 4 (2 ใบ) +3 = **7** | 14 |
+| 4 | 10 | 4 (2 ใบ) +3 = **7** | 16 |
+| 5 | 16 | 8 (3 ใบ) +3 = **11** | 28 |
+| 6 | 19 | 9 (3 ใบ) +3 = **12** | 31 |
+| 7 | 23 | 10 (3 ใบ) +3 = **13** | 35 |
+| 8 | 27 | 11 (3 ใบ) +3 = **14** | 39 |
+| 9 | 36 | 17 (4 ใบ) +4 = **21** | 60 |
+| 10 | 41 | 18 (4 ใบ) +4 = **22** | 65 |
+| 11 | 47 | 20 (4 ใบ) +4 = **24** | 71 |
+| 12 | 47 | 20 (4 ใบ) +4 = **24** | 71 |
+| 13 | 54 | 27 (5 ใบ) +4 = **31** | 86 |
+| 14 | 54 | 27 (5 ใบ) +4 = **31** | 86 |
+| 15 | 62 | 31 (5 ใบ) +4 = **35** | 94 |
+| 16 | 62 | 31 (5 ใบ) +4 = **35** | 94 |
+| 17 | 71 | 35 (5 ใบ) +5 = **40** | 111 |
+| 18 | 76 | 35 (5 ใบ) +5 = **40** | 116 |
+| 19 | 82 | 36 (5 ใบ) +5 = **41** | 122 |
+| 20 | 89 | 37 (5 ใบ) +5 = **42** | 129 |
 
-> **วิธีคิดแต่ละคอลัมน์**: คอลัมน์ 1 = Σ(ระดับ slot × จำนวน slot) ทุกระดับที่มีในวันนั้น (เพดานสูงสุดถ้าแปลงหมดเกลี้ยงไม่เหลือ slot เลย) — คอลัมน์ 2 = แปลงแบบเลือก slot ระดับสูงสุดเท่าที่มีใส่โควตา BA ครั้งเดียว (2/3/4/5 ใบ ตาม Aura Upgrade I/II/III ที่ปลดล็อกตามเลเวล) เป็นค่าสูงสุดที่เป็นไปได้ **ในเทิร์นเดียว** ถ้า slot ยังเต็มอยู่ ไม่ใช่ค่าที่ทำซ้ำได้ทุกเทิร์น — คอลัมน์ 3 = คอลัมน์ 1 + (Proficiency Bonus × Proficiency Bonus) จาก Aura Surge (ได้ PB Aura ฟรีทุกครั้งที่ทอย initiative ใช้ได้สูงสุด PB ครั้ง/Long Rest) เป็นเพดานทางทฤษฎีถ้าเจอไฟต์ครบจำนวนครั้งเท่า PB และทุ่ม Action/Bonus Action ไปกับการแปลง slot ที่เหลือทั้งหมดด้วย ในทางปฏิบัติจริงจะน้อยกว่านี้เพราะต้องเอา Action ไปโจมตี/ใช้ technique ด้วย
+> **วิธีคิดแต่ละคอลัมน์**: คอลัมน์ 1 = Σ(ระดับ slot × จำนวน slot) ทุกระดับที่มีในวันนั้น (เพดานสูงสุดถ้าแปลงหมดเกลี้ยงไม่เหลือ slot เลย) — คอลัมน์ 2 = แปลงแบบเลือก slot ระดับสูงสุดเท่าที่มีใส่โควตา BA ครั้งเดียว (2/3/4/5 ใบ ตาม Aura Upgrade I/II/III ที่ปลดล็อกตามเลเวล) **+ WIS mod จาก Aura Surge** (เพราะ Aura Surge trigger พร้อม BA แปลง slot เดียวกันได้เลยถ้ายังมี charge เหลือ) เป็นค่าสูงสุดที่เป็นไปได้ **ในเทิร์นเดียว** ถ้า slot ยังเต็มอยู่และยังไม่ใช้ Aura Surge มาก่อนในวันนั้น ไม่ใช่ค่าที่ทำซ้ำได้ทุกเทิร์น (Aura Surge มีจำกัดครั้ง/short rest ตาม [Aura Upgrade](#เลเวล-5--aura-upgrade-i)) — ตัวเลข WIS mod ที่บวกเป็น**ตัวอย่างประกอบ**เท่านั้น (สมมติ +3 ที่เลเวล 1-8, +4 ที่ 9-16, +5 ที่ 17-20) ขึ้นกับ WIS mod จริงของตัวละคร — คอลัมน์ 3 = คอลัมน์ 1 + โบนัสจาก Aura Surge (WIS mod ต่อครั้งที่ใช้ ×จำนวนครั้ง/short rest ตามเลเวล ×สมมติ 2 short rest/วัน) เป็น**ตัวอย่างประกอบ**เช่นกัน เพราะขึ้นกับ WIS mod จริงของตัวละครและจำนวน short rest ต่อวันที่แคมเปญให้จริง (ถ้า short rest น้อยกว่า 2 ครั้ง/วัน ตัวเลขคอลัมน์นี้จะต่ำกว่านี้ตามสัดส่วน)
 
 ## Class Features
 
@@ -146,31 +146,35 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 ### เลเวล 1 — Aura Mastery
 
-เรียนรู้ **Aura Technique** ใหม่ 2 ตัวแรกทันที (เลือกจากลิสต์ Universal หรือลิสต์ตาม Path ที่เลือก)
+เรียนรู้ **Aura Technique** ใหม่ **1 ตัวแรกทันที** (เลือกจากลิสต์ Universal หรือลิสต์ตาม Path ที่เลือก)
 
-ได้ฟีเจอร์ Aura Mastery เพิ่มอีกที่เลเวล **3, 7, 11, 15** — เลเวลละ **1 technique ใหม่** (รวมทั้งเกม 6 ตัวตลอด 1-20)
+ได้ฟีเจอร์ Aura Mastery เพิ่มอีกที่เลเวล **2, 3, 7, 11, 15** — เลเวลละ **1 technique ใหม่** (รวมทั้งเกม 6 ตัวตลอด 1-20)
 
 **ไม่มีระบบอัพเกรด Rank** — แต่ละ Technique มีค่าคงที่ตัวเดียวตลอดทั้งเกม ไม่ว่าจะเรียนรู้ตอนเลเวลไหน กำลังของตัวละครโตขึ้นผ่าน Aura ที่มีมากขึ้น/แปลงได้เร็วขึ้นตาม [Aura Upgrade](#เลเวล-5--aura-upgrade-i) และผ่านจำนวน Technique ที่รู้เพิ่มขึ้น ไม่ใช่ผ่านการอัพเกรด Technique เดิม
 
-### เลเวล 2 — Aura Surge
+### เลเวล 1 — Aura Surge
 
-ทุกครั้งที่ทอย **Initiative** เข้าสู่การต่อสู้ ได้รับ Aura ทันที **เท่ากับ Proficiency Bonus** ของตัวเอง โดยไม่เสีย action หรือเวลาใดๆ — ใช้ได้สูงสุด **Proficiency Bonus ครั้งต่อ Long Rest** (เช่น Prof +4 ใช้ได้ 4 ครั้ง/วัน ได้ครั้งละ 4 Aura)
+ใช้ได้ **1 ครั้ง/short rest** — เมื่อใช้ **Bonus Action แปลง Spell Slot เป็น Aura** ครั้งใดครั้งหนึ่ง จ่ายการใช้งาน Aura Surge 1 ครั้งเพื่อรับ **Aura เพิ่มเท่ากับ Wisdom modifier** ของตัวเอง เข้าไปรวมกับ Aura ที่ได้จากการแปลง slot ปกติในเทิร์นนั้นทันที (ไม่เสีย action เพิ่ม เพราะเกาะไปกับ BA ที่ใช้อยู่แล้ว)
 
-> ใช้ดุลยพินิจ DM — ไม่นับไฟต์ที่ผู้เล่นจงใจก่อขึ้นเพื่อฟาร์ม Aura Surge โดยเฉพาะ (เช่น ยั่วมอนสเตอร์อ่อนแอให้ตีเพื่อทอย initiative เก็บของ)
+จำนวนครั้งที่ใช้ได้/short rest เพิ่มขึ้นตาม [Aura Upgrade](#เลเวล-5--aura-upgrade-i) — **+1 ครั้ง/short rest ทุกครั้งที่ได้ Aura Upgrade** (I ที่เลเวล 5, II ที่เลเวล 9, III ที่เลเวล 13) รวมสูงสุด **4 ครั้ง/short rest** ที่เลเวล 13 ขึ้นไป
+
+### เลเวล 2 — Aura Mastery
+
+เรียนรู้ **Aura Technique** ใหม่อีก **1 ตัว** (เลือกจากลิสต์ Universal หรือลิสต์ตาม Path ที่เลือก เหมือน [Aura Mastery](#เลเวล-1--aura-mastery) ที่เลเวล 1) — รวมเป็น 2 technique ที่รู้แล้วเมื่อถึงเลเวล 2
 
 ### เลเวล 5 — Aura Upgrade (I)
 
-การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้น — **Bonus Action แปลงได้ 3 slot พร้อมกัน** (จากเดิม 2 slot)
+การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้น — **Bonus Action แปลงได้ 3 slot พร้อมกัน** (จากเดิม 2 slot) และ [Aura Surge](#เลเวล-1--aura-surge) ใช้ได้เพิ่มเป็น **2 ครั้ง/short rest**
 
 > Aura Knight ไม่ได้รับ Extra Attack ที่เลเวลนี้หรือเลเวลใดๆ ตลอด class — ดาเมจส่วนใหญ่มาจาก Aura Technique แทน
 
 ### เลเวล 9 — Aura Upgrade (II)
 
-การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 4 slot พร้อมกัน** (จากเดิม 3 slot)
+การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 4 slot พร้อมกัน** (จากเดิม 3 slot) และ [Aura Surge](#เลเวล-1--aura-surge) ใช้ได้เพิ่มเป็น **3 ครั้ง/short rest**
 
 ### เลเวล 13 — Aura Upgrade (III)
 
-การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 5 slot พร้อมกัน** (จากเดิม 4 slot)
+การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้นอีกขั้น — **Bonus Action แปลงได้ 5 slot พร้อมกัน** (จากเดิม 4 slot) และ [Aura Surge](#เลเวล-1--aura-surge) ใช้ได้เพิ่มเป็น **4 ครั้ง/short rest**
 
 ### เลเวล 17 — Subclass Feature
 
