@@ -25,8 +25,9 @@
 ## Consults
 - witsawa-party-balance-review
 
-<!-- ## 2024-tier-list | 2024 Tier List
-- 00-class-overview-tier-list-2024
+## 2024-tier-list | 2024 Tier List
+- wizard-subclass-scorecard-2024
+<!-- - 00-class-overview-tier-list-2024
 - alchemist-subclass-tier-list-2024
 - artificer-subclass-tier-list-2024
 - barbarian-subclass-tier-list-2024

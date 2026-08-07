@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import AdventureMarkdownView from '../components/AdventureMarkdownView'
 import ClassSubclassIndexView from '../components/ClassSubclassIndexView'
+import SubclassScorecardView from '../components/SubclassScorecardView'
 import SubclassTierOverviewView from '../components/SubclassTierOverviewView'
 import { useToast } from '../store/ToastContext'
 import { copyMarkdownToClipboard } from '../utils/copyMarkdown'
@@ -13,6 +14,9 @@ import { getHomebrewRule } from '../utils/homebrewRules'
 const FILTERABLE_VIEWS = {
   'General/class-subclass-index': ClassSubclassIndexView,
   'General/00-sub-class-overview-tier-list-2024': SubclassTierOverviewView,
+  // 🧪 Pilot only (Wizard) as of 2026-08-07 — see the file's own "สถานะ" line.
+  // Add the rest of the 27 classes' scorecard slugs here once the rubric is confirmed.
+  '2024-tier-list/wizard-subclass-scorecard-2024': SubclassScorecardView,
 }
 
 export default function HomebrewRuleDocPage() {
