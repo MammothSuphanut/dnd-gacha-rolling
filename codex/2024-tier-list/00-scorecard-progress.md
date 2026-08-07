@@ -16,6 +16,7 @@
 - **Captain**: Demon Banner, Jolly Roger Banner, Siegeball Banner
 - **Investigator**: Infernal Agent
 - **Rogue**: Arachnoid Stalker
+- **Sacred Knight**: Throne of Eternity and Creation, Throne of Fear and Sorrow, Throne of Doom and Slaughter, Throne of Protection and Mercy, Throne of Wisdom and Spirit, Throne of Order and Law (ทั้ง 6 ตัว homebrew ของโปรเจกต์นี้เอง — เพิ่งสร้างไฟล์จริงเสร็จ 2026-08-07)
 - **Sorcerer**: The Ruined Flame (homebrew ของโปรเจกต์นี้เอง)
 - **Warmage**: House of Lancers
 
@@ -32,7 +33,7 @@
 
 - [ ] Alchemist
 - [ ] Artificer
-- [ ] Sacred Knight _(ยังไม่มี subclass ในโปรเจกต์ตอนนี้ — รอ subclass แรกก่อนถึงจะประเมิน baseline ได้จริง)_
+- [ ] Sacred Knight
 - [ ] Barbarian
 - [ ] Bard
 - [ ] Captain
@@ -62,7 +63,7 @@
 
 ---
 
-## Subclass Scorecard Progress (466)
+## Subclass Scorecard Progress (472)
 
 ประเมินราย axis ตามกติกาใน 00-scorecard-methodology.md — จัดกลุ่มตาม class เดียวกับ [class-subclass-index.md](../General/class-subclass-index.md)
 
@@ -470,6 +471,15 @@
 - [ ] Temporal Trickster
 - [ ] Thief
 - [ ] Titan Slayer
+
+### Sacred Knight (6)
+
+- [ ] Throne of Doom and Slaughter — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
+- [ ] Throne of Eternity and Creation — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
+- [ ] Throne of Fear and Sorrow — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
+- [ ] Throne of Order and Law — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
+- [ ] Throne of Protection and Mercy — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
+- [ ] Throne of Wisdom and Spirit — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
 
 ### Sorcerer (20)
 
