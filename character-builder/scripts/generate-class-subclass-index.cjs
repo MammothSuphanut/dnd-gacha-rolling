@@ -231,28 +231,13 @@ function dedupeSubclassesByName(subs) {
 // src/data/classes.json backs the gacha "box" feature, but each item there
 // also carries a real 5e.tools deep link (className + subclass name ->
 // exact subclass entry on the class page). Reuse it here so the index
-// table can link out instead of just naming the subclass. Keyed
-// case-insensitively since casing has drifted between the two datasets here
-// and there (e.g. "the Totem Warrior" vs "The Totem Warrior").
-function buildSubclassLinkMap() {
-  const map = new Map();
-  for (const box of readJson(CLASSES_JSON)) {
-    for (const item of box.items || []) {
-      if (item.group && item.name && item.link) {
-        map.set(`${item.group.trim().toLowerCase()}|${item.name.trim().toLowerCase()}`, item.link);
-      }
-    }
-  }
-  return map;
-}
+// table can link out instead of just naming the subclass — shared with
+// generate-subclass-overview-tier-list.cjs so both generated docs link out
+// identically. See lib/subclass-links.cjs for the actual lookup.
+const { buildSubclassLinkMap, resolveSubclassLink: resolveSubclassLinkByName } = require("./lib/subclass-links.cjs");
 
-// Not every subclass mirrored under src/data/5etools/ has a matching entry
-// in classes.json (that file only tracks what's been added to the gacha
-// box roll, not the full compendium) — fall back to a 5e.tools search link
-// so every row is still clickable instead of leaving some as plain text.
 function resolveSubclassLink(s, linkMap) {
-  const key = `${s.className.trim().toLowerCase()}|${s.name.trim().toLowerCase()}`;
-  return linkMap.get(key) || `https://5e.tools/search.html?q=${encodeURIComponent(s.name)}`;
+  return resolveSubclassLinkByName(s.className, s.name, linkMap);
 }
 
 // Class heading link: a project-original class (see PROJECT_ORIGINAL_CLASSES)
@@ -299,7 +284,7 @@ function loadProjectHomebrewSubclasses() {
 }
 
 function main() {
-  const linkMap = buildSubclassLinkMap();
+  const linkMap = buildSubclassLinkMap(CLASSES_JSON);
   const officialNames = buildOfficialSourceNames();
   const classSourceEdition = new Map();
   const official = loadOfficialClasses(officialNames, classSourceEdition);
@@ -364,6 +349,10 @@ function main() {
   );
   lines.push(
     `> Generated: ${new Date().toISOString().slice(0, 10)} • ${classNames.length} classes • ${allSubclasses.length} subclasses (official: ${official.subclasses.length}, Grim Hollow: ${grimHollow.subclasses.length}, Valda's Spire: ${valdasSpire.subclasses.length}, This Project: ${projectHomebrew.length})`
+  );
+  lines.push(">");
+  lines.push(
+    "> **หาว่า subclass ไหนแรง/อ่อน (ไม่ใช่แค่ว่ามีอะไรบ้าง)**: ไฟล์นี้เป็นแค่ดัชนี ไม่มีข้อมูล tier — ไปดู [00-sub-class-overview-tier-list-2024.md](00-sub-class-overview-tier-list-2024.md) (จัดกลุ่ม S/A/B/C/D ข้าม class ทั้งหมด) แทน"
   );
   lines.push("");
   lines.push("## สารบัญ class");

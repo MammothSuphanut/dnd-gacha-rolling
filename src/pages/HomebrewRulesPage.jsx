@@ -19,7 +19,7 @@ export default function HomebrewRulesPage() {
                 {group.rules.map((rule) => (
                   <a
                     key={rule.slug}
-                    href={`/codex/${encodeURIComponent(rule.slug)}`}
+                    href={`/codex/${rule.slug.split('/').map(encodeURIComponent).join('/')}`}
                     target="_blank"
                     rel="noreferrer"
                     className="flex flex-col items-start gap-1 rounded-xl border border-[#e2cfb3] bg-white p-4 text-left shadow-sm transition-colors hover:border-violet-300 hover:bg-violet-50/40"

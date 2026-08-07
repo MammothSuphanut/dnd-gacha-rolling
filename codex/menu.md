@@ -8,9 +8,13 @@
 - ลำดับหมวด = ลำดับที่ `##` ปรากฏในไฟล์นี้จากบนลงล่าง
 - ไฟล์ใหม่ที่เพิ่มเข้า codex/ แล้วยังไม่ได้ list ไว้ที่นี่ จะถูกเติมท้ายหมวดของมันให้อัตโนมัติ (เรียง A-Z) — ไม่หายไปไหน แค่ยังไม่ได้จัดตำแหน่งเอง
 - หมวดใหม่ (โฟลเดอร์ใหม่ใน codex/) ที่ยังไม่ได้เพิ่ม `##` ไว้ที่นี่ จะถูกเติมท้ายสุดให้อัตโนมัติเช่นกัน
+- **ซ่อนไฟล์ไม่ให้ขึ้นเว็บเลย**: comment บรรทัด `- ชื่อไฟล์` ด้วย HTML comment (เปิด `<!--` ปิด `-->`) — ไฟล์นั้นจะไม่โชว์บนเว็บเลย (ต่างจากแค่ไม่ list ไว้ ซึ่งยังจะถูกเติมท้ายอัตโนมัติอยู่ดี) ทำได้ 2 แบบ: ครอบบรรทัดเดียว หรือครอบทั้งบล็อกหลายบรรทัดพร้อมกัน (เปิดก่อนบรรทัดแรกที่จะซ่อน ปิดหลังบรรทัดสุดท้าย) แบบที่ทำกับ subclass list ทั้งชุดด้านล่างนี้
+- **ซ่อนทั้งหมวด**: comment บรรทัด `##` ด้วยวิธีเดียวกัน — ทั้งหมวดจะไม่โชว์บนเว็บเลย
+- ⚠️ ตัวสแกน comment เป็น string scan ธรรมดา (หา `<!--`/`-->` ตรงๆ ไม่ใช่ HTML parser เต็มรูป) ห้ามพิมพ์ตัวอย่าง literal `<!--`/`-->` ไว้ในข้อความอธิบายส่วนนี้ เพราะจะโดนอ่านเป็นคำสั่งซ่อนจริงไปด้วย
 
 ## General
 - class-subclass-index
+- 00-sub-class-overview-tier-list-2024
 
 ## Core-Rules | Core Rules
 - astral-nexus-lore
@@ -21,7 +25,8 @@
 ## Consults
 - witsawa-party-balance-review
 
-## 2024-tier-list | 2024 Tier List
+<!-- ## 2024-tier-list | 2024 Tier List
+- 00-class-overview-tier-list-2024
 - alchemist-subclass-tier-list-2024
 - artificer-subclass-tier-list-2024
 - barbarian-subclass-tier-list-2024
@@ -49,4 +54,4 @@
 - warlock-subclass-tier-list-2024
 - warmage-subclass-tier-list-2024
 - witch-subclass-tier-list-2024
-- wizard-subclass-tier-list-2024
+- wizard-subclass-tier-list-2024 -->

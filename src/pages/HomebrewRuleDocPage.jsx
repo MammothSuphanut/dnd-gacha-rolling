@@ -1,17 +1,26 @@
 import { Link, useParams } from 'react-router-dom'
 import AdventureMarkdownView from '../components/AdventureMarkdownView'
 import ClassSubclassIndexView from '../components/ClassSubclassIndexView'
+import SubclassTierOverviewView from '../components/SubclassTierOverviewView'
 import { useToast } from '../store/ToastContext'
 import { copyMarkdownToClipboard } from '../utils/copyMarkdown'
 import { getHomebrewRule } from '../utils/homebrewRules'
 
-// This one doc is long enough (500+ subclass rows across 31 classes) to need
-// its own filterable view instead of the plain markdown renderer every other
-// Codex doc uses — see ClassSubclassIndexView for why.
-const FILTERABLE_SLUGS = new Set(['General/class-subclass-index'])
+// Some docs are long enough (500+ rows across dozens of classes) to need
+// their own filterable view instead of the plain markdown renderer every
+// other Codex doc uses — see each component for why + the exact generator
+// it's paired with.
+const FILTERABLE_VIEWS = {
+  'General/class-subclass-index': ClassSubclassIndexView,
+  'General/00-sub-class-overview-tier-list-2024': SubclassTierOverviewView,
+}
 
 export default function HomebrewRuleDocPage() {
-  const { slug } = useParams()
+  // Route is "/codex/*" (not ":slug") because files live in per-category
+  // subfolders (codex/<Category>/<Name>.md), so the slug itself contains a
+  // "/" — grab it via the wildcard param (mirrors HomebrewSubclassDocPage).
+  const params = useParams()
+  const slug = params['*']
   const rule = getHomebrewRule(slug)
   const { showToast } = useToast()
 
@@ -45,11 +54,14 @@ export default function HomebrewRuleDocPage() {
             📋 คัดลอก {rule.title}
           </button>
         </div>
-        {FILTERABLE_SLUGS.has(rule.slug) ? (
-          <ClassSubclassIndexView content={rule.content} basePath={rule.path} />
-        ) : (
-          <AdventureMarkdownView content={rule.content} basePath={rule.path} />
-        )}
+        {(() => {
+          const FilterableView = FILTERABLE_VIEWS[rule.slug]
+          return FilterableView ? (
+            <FilterableView content={rule.content} basePath={rule.path} />
+          ) : (
+            <AdventureMarkdownView content={rule.content} basePath={rule.path} />
+          )
+        })()}
       </div>
     </div>
   )

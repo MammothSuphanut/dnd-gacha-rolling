@@ -23,7 +23,7 @@ import { ToastProvider } from './store/ToastContext'
 const STANDALONE_ROUTES = [
   '/campaigns/:campaignId/journal',
   '/world/:worldId',
-  '/codex/:slug',
+  '/codex/*',
   '/homebrew-subclass/*',
   '/characters/:characterId',
 ]
@@ -106,7 +106,10 @@ function App() {
               <Route path="/world" element={<WorldPage />} />
               <Route path="/world/:worldId" element={<WorldSettingPage />} />
               <Route path="/codex" element={<HomebrewRulesPage />} />
-              <Route path="/codex/:slug" element={<HomebrewRuleDocPage />} />
+              {/* Wildcard, not :slug — files live in per-category subfolders
+                  (codex/<Category>/<Name>.md) so the slug itself contains a
+                  "/". See HomebrewRuleDocPage.jsx. */}
+              <Route path="/codex/*" element={<HomebrewRuleDocPage />} />
               {/* Wildcard, not :slug — files live in per-class subfolders
                   (homebrew-subclass/<ClassName>/<Name>.md) so the slug itself
                   contains a "/". See HomebrewSubclassDocPage.jsx. */}

@@ -38,29 +38,72 @@ function toSlugAndCategory(path) {
   return { slug: rel, category: rel.slice(0, slashIndex) }
 }
 
-// Parses codex/menu.md into an ordered list of { folder, label, items }.
+// Parses codex/menu.md into an ordered list of { folder, label, items,
+// hiddenItems } plus a top-level hiddenCategories set.
 // `##` headings (optionally "Folder | Display Label") open a category in
 // file order; `- filename` lines under it (no .md) set that file's position
-// within the category. See codex/menu.md itself for the authored format —
-// this just has to stay lenient with anything else written in there
-// (prose, comments, blank lines) since it's meant to be hand-edited.
+// within the category. Wrapping a `##` or `-` line in an HTML comment —
+// `<!-- ## Folder -->`, `<!-- - filename -->`, or a whole block spanning
+// several lines (`<!--` opening before the first hidden line, `-->` closing
+// after the last one) — hides that category/file from the Codex page
+// entirely (not just "unordered": it won't fall through to the leftover
+// auto-append either). This is a simple open/close scan, not a real HTML
+// parser, so it assumes menu.md never nests or overlaps comments — true for
+// hand-edited content but worth knowing if this ever misbehaves. See
+// codex/menu.md itself for the authored format — this just has to stay
+// lenient with anything else written in there (prose, blank lines) since
+// it's meant to be hand-edited.
 function parseMenu(raw) {
   const groups = []
+  const hiddenCategories = new Set()
   let current = null
-  for (const line of raw.split('\n')) {
-    const catMatch = line.match(/^##\s+(.+)$/)
+  let inComment = false
+
+  function processContent(text, hidden) {
+    const t = text.trim()
+    const catMatch = t.match(/^##\s+(.+)$/)
     if (catMatch) {
       const [folderPart, labelPart] = catMatch[1].split('|').map((s) => s.trim())
-      current = { folder: folderPart, label: labelPart || null, items: [] }
-      groups.push(current)
-      continue
+      if (hidden) {
+        hiddenCategories.add(folderPart)
+        current = null
+      } else {
+        current = { folder: folderPart, label: labelPart || null, items: [], hiddenItems: new Set() }
+        groups.push(current)
+      }
+      return
     }
-    const itemMatch = current && line.match(/^-\s+(.+)$/)
+    const itemMatch = current && t.match(/^-\s+(.+)$/)
     if (itemMatch) {
-      current.items.push(itemMatch[1].trim().replace(/\.md$/, ''))
+      const name = itemMatch[1].trim().replace(/\.md$/, '')
+      if (hidden) current.hiddenItems.add(name)
+      else current.items.push(name)
     }
   }
-  return groups
+
+  for (const rawLine of raw.split('\n')) {
+    let line = rawLine
+    if (!inComment) {
+      const openIdx = line.indexOf('<!--')
+      if (openIdx === -1) {
+        processContent(line, false)
+        continue
+      }
+      processContent(line.slice(0, openIdx), false)
+      line = line.slice(openIdx + 4)
+      inComment = true
+    }
+    const closeIdx = line.indexOf('-->')
+    if (closeIdx === -1) {
+      processContent(line, true)
+      continue
+    }
+    processContent(line.slice(0, closeIdx), true)
+    inComment = false
+    processContent(line.slice(closeIdx + 3), false)
+  }
+
+  return { groups, hiddenCategories }
 }
 
 const rules = Object.entries(mdFiles)
@@ -79,6 +122,8 @@ export function getHomebrewRules() {
 // Anything that exists on disk but isn't listed in menu.md yet — a new file
 // in a known category, or a whole new category folder — is appended
 // automatically (alphabetically) instead of silently disappearing.
+// A category or file wrapped in an HTML comment in menu.md (see parseMenu)
+// is dropped entirely instead — it does NOT fall through to auto-append.
 export function getHomebrewRuleGroups() {
   const byCategory = new Map()
   for (const rule of rules) {
@@ -86,11 +131,15 @@ export function getHomebrewRuleGroups() {
     byCategory.get(rule.category).push(rule)
   }
 
-  const menu = parseMenu(menuRaw)
+  const { groups: menu, hiddenCategories } = parseMenu(menuRaw)
   const consumed = new Set()
   const result = []
 
-  for (const { folder, label, items } of menu) {
+  for (const { folder, label, items, hiddenItems } of menu) {
+    if (hiddenCategories.has(folder)) {
+      consumed.add(folder)
+      continue
+    }
     const rulesInCategory = byCategory.get(folder)
     if (!rulesInCategory) continue // listed in menu but no files present (yet) — skip
     consumed.add(folder)
@@ -99,17 +148,20 @@ export function getHomebrewRuleGroups() {
     const used = new Set()
     const ordered = []
     for (const basename of items) {
+      if (hiddenItems.has(basename)) continue
       const rule = byBasename.get(basename)
       if (rule && !used.has(rule.slug)) {
         ordered.push(rule)
         used.add(rule.slug)
       }
     }
-    const leftover = rulesInCategory.filter((r) => !used.has(r.slug))
+    const leftover = rulesInCategory.filter((r) => !used.has(r.slug) && !hiddenItems.has(r.slug.split('/').pop()))
     result.push({ category: folder, label: label || prettifyCategory(folder), rules: [...ordered, ...leftover] })
   }
 
-  const remaining = [...byCategory.keys()].filter((c) => !consumed.has(c)).sort((a, b) => a.localeCompare(b, 'th'))
+  const remaining = [...byCategory.keys()]
+    .filter((c) => !consumed.has(c) && !hiddenCategories.has(c))
+    .sort((a, b) => a.localeCompare(b, 'th'))
   for (const category of remaining) {
     result.push({ category, label: prettifyCategory(category), rules: byCategory.get(category) })
   }
