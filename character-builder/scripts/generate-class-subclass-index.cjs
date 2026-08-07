@@ -57,8 +57,8 @@ const HOMEBREW_FOLDER_LABELS = {
 // this is what makes the *class heading itself* clickable to the doc.
 const PROJECT_ORIGINAL_CLASSES = [
   {
-    name: "Aura Knight",
-    link: "/codex/homebrew-subclass/Aura-Knight/Aura-Knight",
+    name: "Sacred Knight",
+    link: "/codex/homebrew-subclass/Sacred-Knight/Sacred-Knight-concept",
     book: "Homebrew",
   },
 ];

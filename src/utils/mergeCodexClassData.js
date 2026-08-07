@@ -13,7 +13,7 @@
 //
 // Match key is case-insensitive/trimmed subclass name scoped to its class,
 // since a subclass with no 2024 tier write-up yet (or a class outside the
-// 28 with a tier-list file, e.g. Aura Knight / sidekicks) simply won't have
+// 28 with a tier-list file, e.g. Sacred Knight / sidekicks) simply won't have
 // a match — that's expected, not an error, and surfaces as tier: null.
 function matchKey(className, subclassName) {
   return `${className.trim().toLowerCase()}::${subclassName.trim().toLowerCase()}`

@@ -168,7 +168,7 @@ function subclassCell(r) {
 let out = '';
 out += '# Subclass Overview Tier List (Edition 2024)\n\n';
 out += `**วันที่**: ${new Date().toISOString().slice(0, 10)}\n`;
-out += `**ขอบเขต**: **ทุก subclass** จากทั้ง 28 class ที่มีข้อมูล subclass ในโปรเจกต์ (ไม่รวม Aura Knight — ยังไม่มี subclass, ไม่รวม 3 sidekick class — ไม่มีโครงสร้าง subclass) รวม **${rows.length} รายการ** (นับรวม subclass ที่แชร์ pool ข้าม class เช่น Dragon Banner ของ Captain/Gunslinger/Vagabond แยกเป็นคนละแถวเพราะเป็นตัวเลือกคนละอันตอนสร้างตัวละคร)\n`;
+out += `**ขอบเขต**: **ทุก subclass** จากทั้ง 28 class ที่มีข้อมูล subclass ในโปรเจกต์ (ไม่รวม Sacred Knight — ยังไม่มี subclass, ไม่รวม 3 sidekick class — ไม่มีโครงสร้าง subclass) รวม **${rows.length} รายการ** (นับรวม subclass ที่แชร์ pool ข้าม class เช่น Dragon Banner ของ Captain/Gunslinger/Vagabond แยกเป็นคนละแถวเพราะเป็นตัวเลือกคนละอันตอนสร้างตัวละคร)\n`;
 out += `**แหล่งข้อมูล**: รวบรวมจาก tier ที่วิเคราะห์ไว้แล้วในไฟล์ [\`<class>-subclass-tier-list-2024.md\`](.) ทั้ง 28 ไฟล์ — **ไม่ได้วิเคราะห์กลไกใหม่**, ดึงเฉพาะ tier + หมายเหตุสั้นจากหัวข้อ "###" ของแต่ละไฟล์มาจัดกลุ่มข้าม class ทั้งหมด อยากรู้จุดเด่น/จุดด้อย/วิธีเล่นแบบเต็มให้ตามลิงก์ในคอลัมน์ Class ไปที่ไฟล์รายคลาส — คอลัมน์ Subclass ลิงก์ตรงไป 5e.tools (หรือหน้า homebrew ของโปรเจกต์) แบบเดียวกับ [class-subclass-index.md](class-subclass-index.md)\n`;
 out += `**หมายเหตุสำคัญ**: ⚠️ **Auto-generated — อย่าแก้ไฟล์นี้ตรงๆ** รันคำสั่งนี้ใหม่ทุกครั้งที่ไฟล์ subclass-tier-list รายคลาสไฟล์ใดไฟล์หนึ่งเปลี่ยน: \`node character-builder/scripts/generate-subclass-overview-tier-list.cjs\`\n\n`;
 out += '---\n\n';

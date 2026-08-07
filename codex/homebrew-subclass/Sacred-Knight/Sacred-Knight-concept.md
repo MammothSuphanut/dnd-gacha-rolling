@@ -1,4 +1,4 @@
-# Class: Aura Knight
+# Class: Sacred Knight
 
 > อัศวินผู้เข้าใจตัวตนภายในของตนเองลึกซึ้งขึ้นเรื่อยๆ จนสามารถปลดปล่อยพลัง **Aura** ออกมาได้ — เป็น martial ล้วน ไม่มี spellcasting แม้จะมี spell slot ติดตัว (spell slot ใช้แปลงเป็น Aura เท่านั้น ร่ายเวทไม่ได้เด็ดขาด) และพลังนี้ใช้ได้เฉพาะผู้ที่ยึดมั่นใน **Lawful alignment** เท่านั้น
 
@@ -10,7 +10,7 @@
 
 ## ข้อกำหนด Alignment (สำคัญ อ่านก่อนเล่น)
 
-Aura Knight ต้องเป็น **Lawful** (Lawful Good, Lawful Neutral, หรือ Lawful Evil) เท่านั้นจึงจะใช้ฟีเจอร์ที่เกี่ยวกับ **Aura** ได้ทั้งหมด (Aura Awakening, Aura Technique ทุกตัว ฯลฯ) — ความสามารถพื้นฐานที่ไม่เกี่ยวกับ Aura (การโจมตีด้วยอาวุธปกติ, proficiency, saving throw ฯลฯ) ยังใช้ได้ตามปกติเสมอ
+Sacred Knight ต้องเป็น **Lawful** (Lawful Good, Lawful Neutral, หรือ Lawful Evil) เท่านั้นจึงจะใช้ฟีเจอร์ที่เกี่ยวกับ **Aura** ได้ทั้งหมด (Aura Awakening, Aura Technique ทุกตัว ฯลฯ) — ความสามารถพื้นฐานที่ไม่เกี่ยวกับ Aura (การโจมตีด้วยอาวุธปกติ, proficiency, saving throw ฯลฯ) ยังใช้ได้ตามปกติเสมอ
 
 หาก alignment ของตัวละครไม่ใช่ Lawful อีกต่อไป (เช่น ตัดสินใจเปลี่ยนเอง, โดนเวทมนตร์บังคับเปลี่ยน alignment, หรือ DM ตัดสินว่าเปลี่ยนจริงจากพฤติกรรมสะสม) **ฟีเจอร์ Aura ทั้งหมดปิดใช้งานทันที** จนกว่าจะกลับมา Lawful อีกครั้ง
 
@@ -30,7 +30,7 @@ Aura Knight ต้องเป็น **Lawful** (Lawful Good, Lawful Neutral, �
 
 ## Aura — ระบบทรัพยากรหลัก
 
-Aura Knight มีตาราง **Spell Slot** เหมือน full caster (Wizard/Cleric/Druid) ทุกประการตามตาราง Level Progression ด้านล่าง แต่ **ร่ายเวทไม่ได้เด็ดขาด** — แม้จะได้ spell ผ่าน feat (เช่น Magic Initiate), multiclass, หรือแหล่งอื่นใด ก็ไม่สามารถใช้ spell slot ของ class นี้ร่ายเวทได้ (slot เหล่านี้มีไว้แปลงเป็น Aura เท่านั้น)
+Sacred Knight มีตาราง **Spell Slot** เหมือน full caster (Wizard/Cleric/Druid) ทุกประการตามตาราง Level Progression ด้านล่าง แต่ **ร่ายเวทไม่ได้เด็ดขาด** — แม้จะได้ spell ผ่าน feat (เช่น Magic Initiate), multiclass, หรือแหล่งอื่นใด ก็ไม่สามารถใช้ spell slot ของ class นี้ร่ายเวทได้ (slot เหล่านี้มีไว้แปลงเป็น Aura เท่านั้น)
 
 **การแปลง Spell Slot → Aura**
 - **Bonus Action**: แปลง spell slot สูงสุด **2 ใบพร้อมกัน** เป็น Aura จำนวนเท่ากับผลรวมระดับของ slot ที่แปลง (เช่น แปลง slot ระดับ 3 + ระดับ 2 พร้อมกัน ได้ 5 Aura) — เป็นวิธีเดียวที่แปลง slot เป็น Aura ได้ (ไม่มีทางเลือกแปลงด้วย Action) ดังนั้น Action ยังว่างไปโจมตี/ใช้ technique ได้ตามปกติทุกเทิร์น
@@ -166,7 +166,7 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 การแปลง Spell Slot เป็น Aura มีประสิทธิภาพขึ้น — **Bonus Action แปลงได้ 3 slot พร้อมกัน** (จากเดิม 2 slot)
 
-> Aura Knight ไม่ได้รับ Extra Attack ที่เลเวลนี้หรือเลเวลใดๆ ตลอด class — ดาเมจส่วนใหญ่มาจาก Aura Technique แทน
+> Sacred Knight ไม่ได้รับ Extra Attack ที่เลเวลนี้หรือเลเวลใดๆ ตลอด class — ดาเมจส่วนใหญ่มาจาก Aura Technique แทน
 
 ### เลเวล 7 — Improve Aura Technique (I)
 
@@ -174,7 +174,7 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 ได้ activation แบบนี้อีกครั้งที่ **เลเวล 18** (ดู [เลเวล 18 — Improve Aura Technique (II)](#เลเวล-18--improve-aura-technique-ii)) — ทั้งสองครั้งต้องเลือก Technique **คนละตัวกัน ห้ามเลือกซ้ำตัวเดิม**
 
-> **จุดที่ต้องระวัง**: ถ้าเลือกอัพเกรด Cross Slash หรือ Light Sword ตั้งแต่เลเวลนี้ ควรเช็ค worst-case ร่วมกับ [subclass #3 Doom and Slaughter](subclass-concepts.md) ที่ผูกกับ 2 technique นี้โดยตรง เพราะจะได้ combo ที่ตั้งใจไว้สำหรับเลเวล 18 เร็วขึ้นถึง 11 เลเวล
+> **จุดที่ต้องระวัง**: ถ้าเลือกอัพเกรด Cross Slash หรือ Light Sword ตั้งแต่เลเวลนี้ ควรเช็ค worst-case ร่วมกับ [subclass #3 Doom and Slaughter](#3-บัลลังก์แห่งวันวิบัติและการเข่นฆ่า) ที่ผูกกับ 2 technique นี้โดยตรง เพราะจะได้ combo ที่ตั้งใจไว้สำหรับเลเวล 18 เร็วขึ้นถึง 11 เลเวล
 
 ### เลเวล 9 — Aura Upgrade (II)
 
@@ -186,7 +186,7 @@ Aura Knight มีตาราง **Spell Slot** เหมือน full caster 
 
 ### เลเวล 17 — Subclass Feature
 
-Subclass feature level ที่ 5 (ต่อจาก 3, 6, 10, 14) — รายละเอียดขึ้นอยู่กับ subclass ที่เลือก ดู [subclass-concepts.md](subclass-concepts.md)
+Subclass feature level ที่ 5 (ต่อจาก 3, 6, 10, 14) — รายละเอียดขึ้นอยู่กับ subclass ที่เลือก ดูหัวข้อ [Subclass](#subclass) ด้านล่าง
 
 > **หมายเหตุ**: เดิมเลเวลนี้เป็น class feature ตายตัวชื่อ **Domain** (กางเขตแดน 15-30ft ตามเลเวล ให้ teleport ในโดเมน/Advantage ตัวเอง/Disadvantage ศัตรู) — **ตัด Domain ออกจากคลาสหลักทั้งหมดแล้ว** เปลี่ยนเลเวลนี้เป็น Subclass Feature slot ธรรมดาแทน (ให้แต่ละ subclass ออกแบบเองว่าจะใส่อะไร)
 
@@ -194,7 +194,7 @@ Subclass feature level ที่ 5 (ต่อจาก 3, 6, 10, 14) — รา�
 
 เหมือนกับ [เลเวล 7 — Improve Aura Technique (I)](#เลเวล-7--improve-aura-technique-i) ทุกประการ — เลือก **Aura Technique ที่ตัวเองรู้แล้ว 1 ตัว** แล้วอัพเกรดมันถาวร แต่ **ต้องเลือกตัวที่ต่างจาก technique ที่เลือกไปแล้วตอนเลเวล 7 ห้ามเลือกซ้ำตัวเดิม**
 
-> Technique หลักของคลาสทั้ง 10 ตัว (4 Universal + 3 Retribution + 3 Guardian) ออกแบบอัพเกรดไว้ครบแล้ว — **ดูรายละเอียดอัพเกรดของแต่ละตัวได้ในบล็อกของ technique นั้นเองที่หัวข้อ [Aura Technique](#aura-technique) ด้านล่าง** (มีบรรทัด "Improve Aura Technique" กำกับไว้ในแต่ละตัว) — technique ที่ subclass มอบให้เพิ่ม (Aegis Forging, Renewal Aura, Dread Aura, Sorrow's Bargain ฯลฯ) ยังไม่ได้ออกแบบว่าจะอัพเกรดยังไงถ้าถูกเลือกที่เลเวล 7/18 ด้วย
+> Technique หลักของคลาสทั้ง 10 ตัว (4 Universal + 3 Retribution + 3 Guardian) ออกแบบอัพเกรดไว้ครบแล้ว — **ดูรายละเอียดอัพเกรดของแต่ละตัวได้ในบล็อกของ technique นั้นเองที่หัวข้อ [Aura Technique](#aura-technique) ด้านล่าง** (มีบรรทัด "Improve Aura Technique" กำกับไว้ในแต่ละตัว) — technique ที่ subclass มอบให้เพิ่ม (Aegis Forging, Renewal Aura, Dread Aura, Sorrow's Bargain ฯลฯ) ยังไม่ได้ออกแบบว่าจะอัพเกรดยังไงถ้าถูกเลือกที่เลเวล 7/18 ด้วย (ยกเว้น Eternity/True Eternity ของ subclass #1 ที่ออกแบบไว้แล้ว ดู [Subclass § 1. บัลลังก์แห่งนิรันดร์และการสรรค์สร้าง](#1-บัลลังก์แห่งนิรันดร์และการสรรค์สร้าง))
 
 ### เลเวล 20 — Transcendent Aura (Capstone)
 
@@ -248,7 +248,7 @@ Technique สาย **Universal** ใช้ได้เสมอ — Technique �
 | 5 | 18 |
 | 6 | 25 |
 
-> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: ต้นทุนต่อ stack ที่ N จาก N+2 → **N+1 Aura** — ถ้าเป็น subclass #3 (Doom and Slaughter) ด้วย ได้โบนัสเพิ่มอีก (ดู [subclass-concepts.md](subclass-concepts.md))
+> **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: ต้นทุนต่อ stack ที่ N จาก N+2 → **N+1 Aura** — ถ้าเป็น subclass #3 (Doom and Slaughter) ด้วย ได้โบนัสเพิ่มอีก (ดู [Subclass § 3. บัลลังก์แห่งวันวิบัติและการเข่นฆ่า](#3-บัลลังก์แห่งวันวิบัติและการเข่นฆ่า))
 
 #### Vengeful Riposte — 3 Aura
 เมื่อโดนโจมตีติด จ่าย 3 Aura เพื่อโจมตีสวนกลับด้วยอาวุธที่ถืออยู่ทันที 1 ครั้ง — **ไม่เสีย Reaction** ใช้ได้ทุกครั้งที่โดนตี (จำกัดแค่ Aura ที่มีอยู่ ไม่จำกัดจำนวนครั้ง/เทิร์น)
@@ -256,7 +256,7 @@ Technique สาย **Universal** ใช้ได้เสมอ — Technique �
 > **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **สวนกลับ 2 ครั้ง/trigger** (คงต้นทุน 3 Aura fixed เท่าเดิม, ไม่เสีย Reaction เหมือนเดิม)
 
 #### Light Sword — 1 Aura ต่อ stack
-เมื่อโจมตี เพิ่มดาเมจ Radiant **+1d4 ต่อ stack** ที่จ่าย (จ่าย 1 Aura ต่อ stack เพิ่ม) — ไม่มีเพดาน stack สูงสุด จำกัดแค่ Aura ที่มีอยู่ *(ย้ายมาจากสาย Universal — เดิม Sun Slash เคยอยู่ตรงนี้ ถูกตัดออกแล้ว ดู [subclass-concepts.md](subclass-concepts.md) สำหรับที่มา)*
+เมื่อโจมตี เพิ่มดาเมจ Radiant **+1d4 ต่อ stack** ที่จ่าย (จ่าย 1 Aura ต่อ stack เพิ่ม) — ไม่มีเพดาน stack สูงสุด จำกัดแค่ Aura ที่มีอยู่ *(ย้ายมาจากสาย Universal — เดิม Sun Slash เคยอยู่ตรงนี้ ถูกตัดออกแล้ว ดู [Subclass](#subclass) สำหรับที่มา)*
 
 > **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: **+1d6 Radiant/stack** (d4→d6, ไม่เพิ่มจำนวนลูก) — ถ้ามี subclass #3 (Doom and Slaughter) ด้วย รวมกันเป็น **+1d8/stack** (d6→d8 อีกขั้น ไม่ compound เป็น 2 ลูก)
 
@@ -281,10 +281,100 @@ Technique สาย **Universal** ใช้ได้เสมอ — Technique �
 
 ## Subclass
 
-Aura Knight เลือก Subclass ตอนเลเวล 3 (ได้ feature เพิ่มที่เลเวล **3, 6, 10, 14, 17**) — ยังไม่มี subclass ที่ออกแบบกลไกเต็มไว้ในขณะนี้ วางแผนไว้ทั้งหมด **6 ตัว** อิงบัลลังก์จาก Throne of Seal — ดูร่าง concept ของแต่ละตัวที่ [subclass-concepts.md](subclass-concepts.md) *(เดิมมีตัวที่ 7 "อัศวินบำเพ็ญคู่" คอนเซ็ปต์ใหม่ของโปรเจกต์ — ย้ายไปเป็น Path ที่ 3 "Formless" ในหัวข้อ [Choose Your Path](#เลเวล-1--choose-your-path) แทนแล้ว)*
+Sacred Knight เลือก Subclass ตอนเลเวล 3 (ได้ feature เพิ่มที่เลเวล **3, 6, 10, 14, 17**) — ยังไม่มี subclass ที่ออกแบบกลไกเต็มไว้จริงจัง (ทั้งหมด 6 ตัวด้านล่างยังเป็น **ร่าง concept** เท่านั้น ยังต้องผ่านรอบออกแบบ+balance check ตามระบบ `/build-class` ก่อนใช้ในเกม) อิงบัลลังก์จาก **Throne of Seal (神印王座)** — ดูที่มา/แหล่งอ้างอิงใน [Designer's Note](#designers-note) *(เดิมมีตัวที่ 7 "อัศวินบำเพ็ญคู่" คอนเซ็ปต์ใหม่ของโปรเจกต์ ไม่มีใน canon — ย้ายไปเป็น Path ที่ 3 "Formless" ในหัวข้อ [Choose Your Path](#เลเวล-1--choose-your-path) แทนแล้ว)*
 
 **แนวทางออกแบบ Subclass ในอนาคต**: ให้ subclass ทำหน้าที่ "ต่อยอด/อัพเกรด Technique ที่มีอยู่แล้ว" เป็นหลัก แทนที่จะเพิ่มกลไกใหม่แยกขาด — เช่น subclass สาย A อาจให้ Focused Edge/Light Sword ลดต้นทุน Aura ต่อ stack ลง (ถูกกว่า 1 Aura/stack ปกติ), subclass สาย B อาจให้ Cross Slash ลดอัตราคูณต้นทุนต่อ stack ลง (จากปกติ stack ที่ N ราคา N+2 Aura เหลือถูกกว่านั้น เช่น N+1) ฯลฯ — วิธีนี้ทำให้แต่ละ subclass รู้สึกเหมือน "สายการเล่น" ที่ผูกกับ technique หลักที่เลือกใช้บ่อย ไม่ใช่แค่ feature แถมที่แยกจากระบบหลัก
 
+> ในตารางของแต่ละบัลลังก์ด้านล่าง คอลัมน์ "ต่อยอดจาก" (ถ้ามีระบุ) คือ technique/feature เดิมที่ subclass นั้นควรผูกด้วย ตามแนวทางข้างต้น
+
+> **Throne (feature เลเวล 17 ของทุกบัลลังก์)**: ใช้ได้ **1 ครั้ง/Long Rest** เท่านั้น เมื่อเปิดใช้แล้วมีผลต่อเนื่องนาน **1 นาที** (ไม่ใช่ recharge ทุก 1 นาที) — สัญลักษณ์ "(1 min / longrest)" ที่กำกับท้ายชื่อ Throne ในทุก subclass หมายถึงกฎนี้เหมือนกันหมด
+
+### 1. บัลลังก์แห่งนิรันดร์และการสรรค์สร้าง
+**EN**: Throne of Eternity and Creation · **CN**: 永恒与创造之神印王座
+
+- **Flavor**: บัลลังก์สูงสุด/ต้นแบบแท้จริงในเรื่อง (ของ Long Haochen พระเอก) — ไม่ใช่ของจำลองเหมือนอีก 5 บัลลังก์ สื่อถึง "การสร้างสิ่งใหม่จากความว่างเปล่า" และ "ความคงอยู่ชั่วนิรันดร์"
+
+**เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
+- เลเวล 3: Eternity: Action, 1 Aura ต่อ stack: รักษา HP ให้ตัวเองหรือพันธมิตร 1 คนในระยะ 30 ft เท่ากับ **1d4 ต่อ stack** ไม่มีเพดาน stack
+
+  > **Improve Aura Technique (เลือกได้ตอน lv7 หรือ lv18)**: heal จาก Eternity และ Temp HP จาก True Eternity (เลเวล 10) **เปลี่ยนจาก 1d4 → 1d6 ต่อ stack** (คงต้นทุน 1 Aura/stack เท่าเดิม)
+- เลเวล 6: Creation: Pure White Blade สามารถจ่าย Aura เพิ่มเพื่อเปลี่ยนการโจมตีครั้งนั้นให้เป็น**พื้นที่**แทนเป้าหมายเดียว (จุดที่เลือกต้องอยู่ในระยะที่ Pure White Blade คำนวณไว้) — จ่ายเพิ่ม **5 Aura** โจมตีทุกเป้าหมายในพื้นที่ **5×5 ft**, จ่ายเพิ่มอีก **10 Aura** (รวม 15) ขยายพื้นที่เป็น **10×10 ft** — ที่เลเวล 17 ถ้าใช้ร่วมกับ capstone (จ่าย cost แยกต่อการโจมตี) ก็โจมตีเป็นพื้นที่ได้หลายจุดใน 1 Action เช่นกัน (เช่น ศัตรูมี 3 กลุ่มยืนกระจุกกันคนละจุด จ่าย cost Pure White Blade 3 รอบ ก็ตีหมู่ได้ทั้ง 3 กลุ่ม)
+- เลเวล 10: True Eternity: สามารถจ่าย **1 Aura ต่อ stack** (อัตราเดียวกับ Eternity) เพื่อเพิ่ม Temp HP ได้ **1d4 ต่อ stack** ไม่มีเพดาน stack (ถ้าอัพเกรด Eternity ผ่าน Improve Aura Technique แล้ว ใช้ **1d6 ต่อ stack** แทนเช่นกัน — ดูหมายเหตุที่เลเวล 3 ด้านบน)
+- เลเวล 14: True Creation: ถ้าใช้ Pure White Blade โดยจ่าย Aura รวม **≥5** ในการโจมตีครั้งนั้น (เช่น เปิดโหมดพื้นที่ 5×5ft ขึ้นไปจาก Creation) จะทะลวง Resistance กายภาพ และ ได้ Resistance ต่อกายภาพ 1 นาที
+- เลเวล 17: Throne of Eternity and Creation (1 min / longrest): Aura 30 ft ภายใน 1 Action สามารถโจมตีด้วย Pure White Blade หรือ Eternity ได้สูงสุด Wis เป้าหมาย ต่อ Action (จ่าย cost แยกต่อเป้าหมาย)
+
+---
+
+### 2. บัลลังก์แห่งความหวาดกลัวและโศกเศร้า
+**EN**: Throne of Fear and Sorrow · **CN**: 恐惧与悲伤之神印王座
+
+- **Flavor**: เจ้าของจริงในเรื่อง (Han Yu) มีตำแหน่ง "อัศวินแห่งการทำลายและการให้อภัย" — dual เข้ากับความขัดแย้งในตัว: ทำลายล้างสุดขั้ว แต่กลับให้อภัยได้ เหมาะกับอัศวินที่ทำให้ศัตรูหวาดกลัวก่อนจะจบด้วยความเมตตา
+
+**เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
+- เลเวล 3: Sorrow's Bargain: **ทุกครั้งที่ใช้ BA แปลง Aura** จะสามารถจ่าย HP = 3×WIS **modifier** เพื่อรับ Aura เพิ่มเท่ากับ WIS modifier
+- เลเวล 6: Fear's Bargain: การโจมตีที่ใช้ Focused Edge ถ้า Attack Roll >= AC เป้าหมาย +15 + Proficiency Bonus ของเป้าหมาย จะนับว่าเป็นการ Critical Hit — **ใช้ได้สูงสุด 1 ครั้ง/เทิร์น** แม้เทิร์นนั้นจะโจมตีหลายครั้ง (แต่ละครั้งยังต้องจ่าย Focused Edge cost แยกกันตามกฎ [Technique หลายครั้งต่อเทิร์น](#aura-technique) ตามปกติ — cap นี้กันไม่ให้ combo กับ technique ที่โจมตีถี่แล้วได้ auto-crit รัวหลายจานต่อเทิร์น)
+- เลเวล 10: True Sorrow's Bargain: เมื่อใช้ BA แปลง Aura จะสามารถจ่าย HP = 2×WIS modifier เพื่อรับ Aura เพิ่มเท่ากับ WIS modifier
+- เลเวล 14: True Fear's Bargain: การโจมตีที่ใช้ Focused Edge และดาเมจ Critical Hit ในครั้งนี้จะเป็น 3 เท่า จาก 2 เท่า (ยังอยู่ภายใต้ cap 1 ครั้ง/เทิร์นจาก Fear's Bargain)
+- เลเวล 17: Throne of Fear and Sorrow (1 min / longrest): เมื่อใช้ BA consume Spell slot มาเป็น Aura สามารถจ่าย **Max HP 20** (หายไปจนกว่าจะทำ Long Rest ครั้งถัดไป จึงฟื้นคืนเต็ม ไม่ใช่เสียถาวร) เพื่อรับ Aura เพิ่ม **10 หน่วย** ได้ dash และ disengage — ใช้ได้ทุกเทิร์นที่ Throne เปิดอยู่ (จำกัดโดยธรรมชาติที่ 1 ครั้ง/เทิร์นอยู่แล้ว เพราะผูกกับ BA convert ที่ทำได้ครั้งเดียว/เทิร์น) เป็นความเสี่ยงสูงที่ตั้งใจให้ตรงธีม "ทำลายล้างสุดขั้ว" ของบัลลังก์นี้
+
+---
+
+### 3. บัลลังก์แห่งวันวิบัติและการเข่นฆ่า
+**EN**: Throne of Doom and Slaughter · **CN**: 末日与杀戮之神印王座
+
+- **Flavor**: เจ้าของจริง (Long Xingyu) ตำแหน่ง "อัศวินแห่งการพิพากษาและการไต่สวน" — สายบุกทำลายล้างเพียวๆ ธีม "ผู้พิพากษาที่ลงทัณฑ์ด้วยกำลัง" ตรงกับ Retribution path เป๊ะที่สุดในบรรดา 6 บัลลังก์
+
+**เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
+- ต้องเลือก Retribution เท่านั้น
+- เลเวล 3: The Slaughter: เมื่อโจมตีครั้งที่ 3 ด้วย Cross Slash (นับการโจมตีปกติด้วย) จะโจมตีเพิ่มอีก 1 ครั้ง
+- เลเวล 6: The Doom: การโจมตีด้วย Cross Slash จะได้รับโบนัสดาเมจ +Wisdom bonus ทุกครั้งที่โจมตี 
+- เลเวล 10: The True Slaughter: เมื่อโจมตีครั้งที่ 6 ด้วย Cross Slash (นับการโจมตีปกติ และ The Slaughter ด้วย) จะโจมตีเพิ่มอีก 1 ครั้ง
+- เลเวล 14: The True Doom: การโจมตีด้วย Cross Slash จะได้รับโบนัสดาเมจ +Proficiency bonus ทุกครั้งที่โจมตี 
+- เลเวล 17: Throne of Doom and Slaughter (1 min / longrest): ทุกครั้งที่โจมตีการโจมตีครั้งถัดไปจะแรงขึ้น 2 จนกว่าจะจบเทิน และได้ speed +10 ทุกครั้งที่โจมตี
+
+---
+
+### 4. บัลลังก์แห่งการพิทักษ์และความเมตตา
+**EN**: Throne of Protection and Mercy · **CN**: 守护与怜悯之神印王座
+
+- **Flavor**: เจ้าของจริง (Yang Haohan) ตำแหน่ง "อัศวินแห่งการป้องกันและการประสานงาน" — จับคู่ตรงกับ Guardian path เป๊ะที่สุดในบรรดา 6 บัลลังก์ เน้นปกป้องทีมและงานประสานงาน (support จริงจัง ไม่ใช่แค่ tank เดี่ยว)
+
+**เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
+- ต้องเลือก Guardian เท่านั้น
+- เลเวล 3: The Protection: เลือกเพื่อนร่วมทีม 1 คน (ไม่ใช่ตัวเอง) ในระยะ 30 ft เป็นเป้าหมาย — ใช้ Aegis Aura ปกป้องเป้าหมายนั้นแทนตัวเองได้ โดยต้องจ่าย **Reaction** เพิ่มจาก Aura cost ปกติ (ใช้กับตัวเองยังฟรีเหมือนเดิม ไม่เสีย Reaction)
+- เลเวล 6: The Mercy: ทุก 2 hp ที่เสียไปจะได้ 1 Aura
+- เลเวล 10: The True Protection: Steadfast Aura ใช้กับเป้าหมายเดียวกับ The Protection (เพื่อน 1 คนในระยะ 30 ft) ได้เช่นกัน โดยต้องจ่าย **Reaction** เหมือนกัน
+- เลเวล 14: The True Mercy: เป้าหมายได้ temp hp 1 หน่วยทุก 2 Aura ที่ใช้ไปใน Aegis Aura หรือ Steadfast
+- เลเวล 17: Throne of Protection and Mercy (1 min / longrest): **ตัวเอง** Speed เหลือ 0 ตลอดช่วงเวลานี้ (สละการเคลื่อนที่ตัวเองเพื่อโปรเจกต์บัฟ) แลกกับเพื่อนร่วมทีมในระยะ 120 ft ได้รับ: ศัตรูที่โจมตีพวกเขา disadvantage, พวกเขาได้ Advantage ใน Saving Throw, และได้ AC+1
+
+---
+
+### 5. บัลลังก์แห่งปัญญาและจิตวิญญาณ
+**EN**: Throne of Wisdom and Spirit · **CN**: 智慧与精神之神印王座
+
+- **Flavor**: เจ้าของจริง (Zhang Fangfang) ตำแหน่ง "อัศวินแห่งการตรัสรู้และการสืบทอด" — ธีมนักปราชญ์/ผู้ถ่ายทอดความรู้ เหมาะกับสายที่เก่ง utility นอกคอมแบตและ "ส่งต่อพลัง"
+
+**เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
+- เลเวล 3: The Wisdom: Clarity Aura ใช้กับเพื่อนในระยะ 30 ft ได้
+- เลเวล 6: The Spirit: เมื่อใช้ Clarity Aura กับ Skill Check ใดๆ ถ้าจ่าย Aura รวมอย่างน้อย **5 หน่วย** ในครั้งนั้น (นับรวมกับ stack +1/Aura ปกติ) สามารถ **reroll** ผลการทอย Skill Check นั้นได้ 1 ครั้ง โดยต้องใช้ผลที่ทอยใหม่เสมอ (เลือกกลับไปใช้ผลเดิมไม่ได้)
+- เลเวล 10: The True Wisdom: Adventage ในการทอย Skill check เมื่อใช้ Clarity Aura
+- เลเวล 14: The True Spirit: เกณฑ์ขั้นต่ำของ The Spirit ลดลงจาก **5 Aura เหลือ 3 Aura** *(ตัวเลขนี้เป็นข้อเสนอ ปรับได้ถ้าต้องการ)*
+- เลเวล 17: Throne of Wisdom and Spirit (1 min / longrest): เลือกเพื่อน 1 คน (ไม่ใช่ตัวเอง) ในระยะ 30 ft — เป้าหมายนั้นได้ advantage ในการทอย attack roll และ skill check ตลอดช่วงเวลานี้ ศัตรูที่ทำ Saving Throw ต่อเอฟเฟกต์ที่เป้าหมายนั้นสร้างขึ้นจะ disadvantage
+
+---
+
+### 6. บัลลังก์แห่งระเบียบและกฎเกณฑ์
+**EN**: Throne of Order and Law · **CN**: 秩序与法则之神印王座
+
+- **Flavor**: เจ้าของจริง (Long Tianyin) ตำแหน่ง "อัศวินแห่งการควบคุมและการจำกัด" — ธีมนี้ผูกกับข้อกำหนด **Lawful alignment** ของทั้งคลาสได้แนบสนิทที่สุด (ระเบียบ/กฎ = แก่นของ Lawful) เหมาะเป็น subclass "ตัวแทนแท้ๆ" ของธีม Sacred Knight
+
+**เลเวลที่ได้ (เว้นว่างไว้ก่อน — จะแปลง concept ด้านบนมาใส่ทีหลัง)**
+- เลเวล 3: The Order: Swift Aura ใช้กับเพื่อนร่วมทีมในระยะ 30 ft เคลื่อนที่ได้ทันทีเท่ากับ speed ของ Swift Aura — เพื่อนที่ยินยอมสามารถจ่าย **Reaction** ของตัวเองเพื่อโจมตีด้วยอาวุธ 1 ครั้งทันทีหลังเคลื่อนที่จบ
+- เลเวล 6: The Law: Swift Aura ทำให้ไม่โดน Opportunity Attack
+- เลเวล 10: The True Order: เพื่อที่ได้รับผลของ Swift Aura จะได้รับ Speed เท่ากับของ Swift Aura เมื่อเข้าเทินตัวเอง
+- เลเวล 14: The True Law: Swift Aura ทำให้ได้รับสถาณะ Dodge
+- เลเวล 17: Throne of Order and Law (1 min / longrest): สามารถเลือกเป้าหมาย Swift Aura ได้ครั้งละ Wis mod เป้าหมาย
+
 ## ข้อจำกัดของแอปนี้
 
-Class นี้เป็น **design doc/homebrew supplement** ไม่ได้ผูกเข้ากลไก roll อัตโนมัติของแอป (`src/data/classes.json` เป็นตาราง roll ของ subclass เท่านั้น ไม่มีตาราง "roll ทั้ง class") — เมื่อมี subclass ของ Aura Knight อย่างน้อย 1 ตัวแล้ว จะเพิ่ม `group: "Aura Knight"` เข้า `src/data/classes.json` ให้ roll ได้จริงในแอป
+Class นี้เป็น **design doc/homebrew supplement** ไม่ได้ผูกเข้ากลไก roll อัตโนมัติของแอป (`src/data/classes.json` เป็นตาราง roll ของ subclass เท่านั้น ไม่มีตาราง "roll ทั้ง class") — เมื่อมี subclass ของ Sacred Knight อย่างน้อย 1 ตัวแล้ว จะเพิ่ม `group: "Sacred Knight"` เข้า `src/data/classes.json` ให้ roll ได้จริงในแอป

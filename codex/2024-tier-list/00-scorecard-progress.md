@@ -1,7 +1,7 @@
 # Subclass Scorecard Progress Tracker
 
 **วันที่เริ่ม**: 2026-08-07
-**ขอบเขต**: 29 class (รวม homebrew class ของโปรเจกต์เอง — Aura Knight) — **ไม่รวม 3 sidekick class** (Expert/Spellcaster/Warrior Sidekick) เพราะไม่มีโครงสร้าง subclass ให้ประเมิน baseline+subclass ตามระบบนี้ได้
+**ขอบเขต**: 29 class (รวม homebrew class ของโปรเจกต์เอง — Sacred Knight) — **ไม่รวม 3 sidekick class** (Expert/Spellcaster/Warrior Sidekick) เพราะไม่มีโครงสร้าง subclass ให้ประเมิน baseline+subclass ตามระบบนี้ได้
 **กติกาการให้คะแนน**: ดู [00-scorecard-methodology.md](00-scorecard-methodology.md) (7 axis, M/R/B, Class Baseline, ขอบเขต edition 2024)
 
 **สถานะ**: ทุกช่องเริ่มที่ `[ ]` ยังไม่ได้ประเมิน — ติ๊ก `[x]` เมื่อประเมินเสร็จแล้ว (เขียนคะแนนราย axis ครบ + เหตุผลตามกติกาใน 00-scorecard-methodology.md แล้ว)
@@ -32,7 +32,7 @@
 
 - [ ] Alchemist
 - [ ] Artificer
-- [ ] Aura Knight _(ยังไม่มี subclass ในโปรเจกต์ตอนนี้ — รอ subclass แรกก่อนถึงจะประเมิน baseline ได้จริง)_
+- [ ] Sacred Knight _(ยังไม่มี subclass ในโปรเจกต์ตอนนี้ — รอ subclass แรกก่อนถึงจะประเมิน baseline ได้จริง)_
 - [ ] Barbarian
 - [ ] Bard
 - [ ] Captain

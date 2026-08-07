@@ -14,7 +14,6 @@
 
 - [Alchemist](#alchemist)
 - [Artificer](#artificer)
-- [Aura Knight](#aura-knight)
 - [Barbarian](#barbarian)
 - [Bard](#bard)
 - [Captain](#captain)
@@ -35,6 +34,7 @@
 - [Paladin](#paladin)
 - [Ranger](#ranger)
 - [Rogue](#rogue)
+- [Sacred Knight](#sacred-knight)
 - [Sorcerer](#sorcerer)
 - [Spellcaster Sidekick](#spellcaster-sidekick)
 - [Vagabond](#vagabond)
@@ -74,12 +74,6 @@ _Official_
 | [Battle Smith](https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_battle%20smith_efa=b1) | 2024 | Tasha's Cauldron of Everything (`TCE`) | Official |
 | [Cartographer](https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_cartographer_efa=b1) | 2024 | Eberron: Forge of the Artificer (`EFA`) | Official |
 | [Reanimator](https://5e.tools/classes.html#artificer_efa,state:ishidefeatures=b1~ishideoutline=b1~sub_reanimator_rhw=b1) | 2024 | Ravenloft: The Horrors Within (`RHW`) | Official |
-
-## [Aura Knight](/codex/homebrew-subclass/Aura-Knight/Aura-Knight)
-
-_Homebrew_
-
-_(ไม่มี subclass ในข้อมูล local ที่ mirror ไว้)_
 
 ## [Barbarian](https://5e.tools/search.html?q=Barbarian)
 
@@ -554,6 +548,12 @@ _Official_
 | [Temporal Trickster](https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_temporal%20trickster_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Thief](https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_thief_xphb=b1) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
 | [Titan Slayer](https://5e.tools/classes.html#rogue_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_titan%20slayer_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+
+## [Sacred Knight](/codex/homebrew-subclass/Sacred-Knight/Sacred-Knight-concept)
+
+_Homebrew_
+
+_(ไม่มี subclass ในข้อมูล local ที่ mirror ไว้)_
 
 ## [Sorcerer](https://5e.tools/search.html?q=Sorcerer)
 

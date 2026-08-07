@@ -224,7 +224,7 @@ function AxisRadarChart({ axes }) {
 // its per-subclass 7-axis breakdown is attached too so the detail modal can
 // draw a radar chart instead of falling back to the one-line note.
 //
-// Classes with zero mirrored subclasses (Aura Knight, the 3 sidekick
+// Classes with zero mirrored subclasses (Sacred Knight, the 3 sidekick
 // classes — same exclusions the source docs already call out) contribute no
 // rows and simply don't appear here; that matches what both source docs
 // already documented as out of scope, not a bug.
