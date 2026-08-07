@@ -31,35 +31,35 @@
 
 ตาราง Class Baseline (floor 0-10 ต่อ axis ของ class เปล่าๆ) ต้องเขียนก่อนเริ่มให้คะแนน subclass ตัวแรกของ class นั้นเสมอ — ดู [00-scorecard-methodology.md § Class Chassis Baseline](00-scorecard-methodology.md)
 
-- [ ] Alchemist
-- [ ] Artificer
-- [ ] Sacred Knight
-- [ ] Barbarian
-- [ ] Bard
-- [ ] Captain
-- [ ] Channeler
-- [ ] Cleric
-- [ ] Craftsman
-- [ ] Dancer
-- [ ] Druid
-- [ ] Fighter
-- [ ] Gunslinger
-- [ ] Investigator
-- [ ] Martyr
-- [ ] Monk
-- [ ] Monster Hunter
-- [ ] Mystic
-- [ ] Necromancer
-- [ ] Paladin
-- [ ] Ranger
-- [ ] Rogue
-- [ ] Sorcerer
-- [ ] Vagabond
-- [ ] Warden
-- [ ] Warlock
-- [ ] Warmage
-- [ ] Witch
-- [ ] Wizard
+- [x] Alchemist
+- [x] Artificer
+- [x] Sacred Knight
+- [x] Barbarian
+- [x] Bard
+- [x] Captain
+- [x] Channeler
+- [x] Cleric
+- [x] Craftsman
+- [x] Dancer
+- [x] Druid
+- [x] Fighter
+- [x] Gunslinger
+- [x] Investigator
+- [x] Martyr
+- [x] Monk
+- [x] Monster Hunter
+- [x] Mystic
+- [x] Necromancer
+- [x] Paladin
+- [x] Ranger
+- [x] Rogue
+- [x] Sorcerer
+- [x] Vagabond
+- [x] Warden
+- [x] Warlock
+- [x] Warmage
+- [x] Witch
+- [x] Wizard
 
 ---
 
