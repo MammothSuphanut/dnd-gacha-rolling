@@ -10,7 +10,7 @@
 | Tier list ต่อ class (2024) | [codex/2024-tier-list/](../codex/2024-tier-list/) | ใช้เทียบ "แรงแค่ไหนถึงจะสมดุล" กับ subclass official/homebrew ที่มีอยู่แล้วของ class เดียวกัน (ดู tier A/B/C แล้ววาง subclass ใหม่ไว้ tier ที่ตั้งใจ) |
 | ข้อมูล class จริง (official) | `src/data/5etools/official/class/` | โครงสร้าง level progression, feature ระดับต่างๆ, saving throw/proficiency ที่แท้จริงของแต่ละ class — ใช้เทียบ chassis ตอนสร้าง class ใหม่ หรือหาระดับที่ subclass feature ปลดล็อกตอนสร้าง subclass ใหม่ |
 | ข้อมูล class homebrew ที่มีอยู่ | `src/data/5etools/homebrew/grim-hollow/`, `src/data/5etools/homebrew/valdas-spire/` | ตัวอย่าง class/subclass ฝั่ง 3rd-party ที่ผ่านการ balance มาแล้ว ใช้เทียบระดับพลังได้เหมือนกับ official |
-| ตัวอย่างงานจริงในโปรเจกต์ + บันทึกการปรับบาลานซ์ | [homebrew-subclass/Sorcerer/The-Ruined-Flame.md](../homebrew-subclass/Sorcerer/The-Ruined-Flame.md) | ตัวอย่าง subclass homebrew ที่เขียนจบแล้วและผ่านรอบ balance review จริง (เทียบดาเมจกับ Fireball/Finger of Death, แก้ปัญหา no-save burst, แก้ stacking กับ Quickened Spell) — ใช้เป็น case study เวลาทำ balance validation ตาม [subclass-creation-rules.md § Balance Validation](subclass-creation-rules.md#5-balance-validation-ตัวอย่างจริง) |
+| ตัวอย่างงานจริงในโปรเจกต์ + บันทึกการปรับบาลานซ์ | [codex/homebrew-subclass/Sorcerer/The-Ruined-Flame.md](../codex/homebrew-subclass/Sorcerer/The-Ruined-Flame.md) | ตัวอย่าง subclass homebrew ที่เขียนจบแล้วและผ่านรอบ balance review จริง (เทียบดาเมจกับ Fireball/Finger of Death, แก้ปัญหา no-save burst, แก้ stacking กับ Quickened Spell) — ใช้เป็น case study เวลาทำ balance validation ตาม [subclass-creation-rules.md § Balance Validation](subclass-creation-rules.md#5-balance-validation-ตัวอย่างจริง) |
 
 **ลำดับการค้นข้อมูล**: ค้นในไฟล์ local ของโปรเจกต์ก่อนเสมอ ถ้าหาไม่เจอ (เช่นอยากดูว่า WotC/3rd-party เคยออกแบบ archetype แนวนี้มาก่อนหรือยัง) ค่อยเปิดเว็บค้นเสริม
 
@@ -31,15 +31,15 @@
 ## โครงสร้างไฟล์ผลลัพธ์
 
 ```
-homebrew-subclass/
+codex/homebrew-subclass/
   <ClassName>/
     <ClassName>.md       ← เอกสารของ "class ใหม่ทั้ง class" (ถ้ากำลังสร้าง class ใหม่)
     <SubclassName>.md    ← เอกสารของ subclass แต่ละตัว (ของ class เดิมหรือ class ใหม่ก็ได้)
 ```
 
-- โฟลเดอร์ `<ClassName>` ตั้งชื่อตาม class ต้นสังกัดเสมอ (สร้างใหม่ถ้ายังไม่มี — เช็คก่อนว่ามีโฟลเดอร์อยู่แล้วหรือยังจาก `homebrew-subclass/`)
-- ไฟล์ตั้งชื่อแบบ PascalCase คั่นด้วย `-` (ตัวอย่างจริง: `The-Ruined-Flame.md`) ให้ตรงกับ `<h1>` ในไฟล์ (ตัว `homebrewSubclasses.js` ดึง title จาก `# ` heading บรรทัดแรกอัตโนมัติ)
-- Route ที่แอปใช้แสดงผล: `/homebrew-subclass/<ClassName>/<SubclassName>` (รองรับ nested path แล้ว — ดู `src/pages/HomebrewSubclassDocPage.jsx` + `src/utils/homebrewSubclasses.js`)
+- โฟลเดอร์ `<ClassName>` ตั้งชื่อตาม class ต้นสังกัดเสมอ (สร้างใหม่ถ้ายังไม่มี — เช็คก่อนว่ามีโฟลเดอร์อยู่แล้วหรือยังจาก `codex/homebrew-subclass/`)
+- ไฟล์ตั้งชื่อแบบ PascalCase คั่นด้วย `-` (ตัวอย่างจริง: `The-Ruined-Flame.md`) ให้ตรงกับ `<h1>` ในไฟล์ (ตัว `homebrewRules.js` ดึง title จาก `# ` heading บรรทัดแรกอัตโนมัติ — เหมือนไฟล์ codex/ อื่นๆ ทุกไฟล์ ไม่มี loader แยกอีกต่อไปตั้งแต่ 2026-08-07)
+- Route ที่แอปใช้แสดงผล: `/codex/homebrew-subclass/<ClassName>/<SubclassName>` (เหมือนไฟล์ codex/ อื่นๆ ทุกไฟล์ — ดู `src/pages/HomebrewRuleDocPage.jsx` + `src/utils/homebrewRules.js`)
 
 ## วิธีที่ 1: ใช้ผ่าน Claude Code (แนะนำ)
 

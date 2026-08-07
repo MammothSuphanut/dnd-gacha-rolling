@@ -12,7 +12,7 @@
 
 **ระดับที่เลือก subclass ได้** (level 1/2/3) แตกต่างกันตาม class เป้าหมาย — เปิดไฟล์ class นั้นใน `src/data/5etools/official/class/` (หรือไฟล์ homebrew class ที่เกี่ยวข้อง) ดูค่าจริง อย่าอนุมานจาก class อื่น
 
-**ระดับที่ feature ของ subclass ปลดล็อกหลังจากนั้น** มักจะ**เหมือนกันทุก subclass ภายใน class เดียวกัน** (เช่น Sorcerer 2024 ทุกสาย official ปลดล็อกที่เลเวล 3/6/14/18 ตามที่เห็นใน [The-Ruined-Flame.md](../homebrew-subclass/Sorcerer/The-Ruined-Flame.md), Warlock ปลดที่ 1/6/10/14, Cleric ปลดที่ 1/2/6/8/17 เป็นต้น) — **เปิดดู subclass official 2-3 ตัวของ class เป้าหมายจริงเพื่อหา pattern ที่ใช้ร่วมกัน** แล้วให้ subclass ใหม่ตามรอยระดับเดียวกัน เพื่อให้ผู้เล่นวางแผน build ข้าม subclass ได้สม่ำเสมอ
+**ระดับที่ feature ของ subclass ปลดล็อกหลังจากนั้น** มักจะ**เหมือนกันทุก subclass ภายใน class เดียวกัน** (เช่น Sorcerer 2024 ทุกสาย official ปลดล็อกที่เลเวล 3/6/14/18 ตามที่เห็นใน [The-Ruined-Flame.md](../codex/homebrew-subclass/Sorcerer/The-Ruined-Flame.md), Warlock ปลดที่ 1/6/10/14, Cleric ปลดที่ 1/2/6/8/17 เป็นต้น) — **เปิดดู subclass official 2-3 ตัวของ class เป้าหมายจริงเพื่อหา pattern ที่ใช้ร่วมกัน** แล้วให้ subclass ใหม่ตามรอยระดับเดียวกัน เพื่อให้ผู้เล่นวางแผน build ข้าม subclass ได้สม่ำเสมอ
 
 ## 3. Power Budget — เทียบกับ Tier List ของ Class เดียวกัน
 
@@ -28,7 +28,7 @@ subclass ใหม่ควรระบุ **ตั้งใจวาง tier �
 
 ## 4. Checklist ข้อผิดพลาดที่พบบ่อย
 
-บทเรียนจริงจากรอบ balance review ของ [The Ruined Flame](../homebrew-subclass/Sorcerer/The-Ruined-Flame.md) (ดู memory `project_ruined_flame_balance`) — เช็คทุกข้อก่อนสรุปตัวเลขสุดท้าย:
+บทเรียนจริงจากรอบ balance review ของ [The Ruined Flame](../codex/homebrew-subclass/Sorcerer/The-Ruined-Flame.md) (ดู memory `project_ruined_flame_balance`) — เช็คทุกข้อก่อนสรุปตัวเลขสุดท้าย:
 
 - [ ] **No-save unlimited burst**: feature ที่เพิ่มดาเมจไม่ควรข้าม saving throw ของ spell ต้นทาง (ถ้า spell มี save ให้ดาเมจเสริมตามผลของ save เดิม — full เมื่อ fail, half เมื่อ pass — ไม่ใช่บวกดาเมจอัตโนมัติทุกกรณี)
 - [ ] **Upcast scaling เกินสัดส่วนของ spell ต้นทาง**: ถ้า feature ให้โบนัสสเกลตาม spell slot level ที่ใช้ ต้องเทียบกับอัตราสเกลของ spell นั้นเอง (เช่น Fireball สเกล +1d6/level ปกติ — feature ที่ให้ +3d6/level คือสเกลเกิน 3 เท่าโดยไม่มีต้นทุนเพิ่ม)
@@ -47,11 +47,11 @@ subclass ใหม่ควรระบุ **ตั้งใจวาง tier �
 4. **เช็ค uses-per-rest cap เทียบข้าม splatbook**: ไล่ดู capstone/big-burst feature ของ subclass official + homebrew อื่นในclassเดียวกัน (รวม Grim Hollow ที่มักจะ power-creep กว่า official เล็กน้อย) ว่า cap ที่ใช้จริงคือเท่าไหร่ (1/long rest, N SP ต่อครั้ง ฯลฯ) แล้วเทียบให้ subclass ใหม่อยู่ในช่วงเดียวกัน ไม่ใช่หลุดออกไปเป็น outlier
 5. หลังปรับตัวเลขแล้ว **สรุปให้ผู้ใช้เห็นตัวเลขก่อน-หลัง** พร้อมเหตุผล ให้ผู้ใช้เป็นคนตัดสินใจสุดท้ายว่าจะรับ fix หรือเลือกทางอื่น (เช่น การแลกด้วยข้อจำกัดการเลือก spell แทนตัวเลข — ให้เสนอเป็นทางเลือก ไม่ใช่บังคับ)
 
-ดูรายละเอียดเต็มของเคสนี้ได้ที่ [homebrew-subclass/Sorcerer/The-Ruined-Flame.md](../homebrew-subclass/Sorcerer/The-Ruined-Flame.md)
+ดูรายละเอียดเต็มของเคสนี้ได้ที่ [codex/homebrew-subclass/Sorcerer/The-Ruined-Flame.md](../codex/homebrew-subclass/Sorcerer/The-Ruined-Flame.md)
 
 ## 6. Output File
 
-บันทึกเป็น `homebrew-subclass/<ClassName>/<SubclassName>.md` (สร้างโฟลเดอร์ `<ClassName>` ถ้ายังไม่มี) โครงไฟล์แนะนำ (mirror จาก The Ruined Flame):
+บันทึกเป็น `codex/homebrew-subclass/<ClassName>/<SubclassName>.md` (สร้างโฟลเดอร์ `<ClassName>` ถ้ายังไม่มี) โครงไฟล์แนะนำ (mirror จาก The Ruined Flame):
 
 ```markdown
 # <ประเภท Subclass ของ Class เช่น "Sorcerous Origin">: <ชื่อ Subclass>
@@ -84,7 +84,7 @@ subclass ใหม่ควรระบุ **ตั้งใจวาง tier �
   "image": "",
   "note": "Source: Homebrew",
   "group": "<ClassName>",
-  "link": "/homebrew-subclass/<ClassName>/<SubclassName>"
+  "link": "/codex/homebrew-subclass/<ClassName>/<SubclassName>"
 }
 ```
 

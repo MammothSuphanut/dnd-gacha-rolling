@@ -45,7 +45,8 @@ const HOMEBREW_FOLDER_LABELS = {
 };
 
 // Classes this project invented from scratch (own prose .md doc under
-// homebrew-subclass/<ClassName>/<ClassName>.md, see homebrewSubclasses.js) —
+// codex/homebrew-subclass/<ClassName>/<ClassName>.md, picked up by the
+// generic codex glob in homebrewRules.js) —
 // they have no 5etools mirror and, unlike a finished homebrew subclass,
 // aren't registered in classes.json until they have at least one complete
 // subclass (see each doc's own "ข้อจำกัดของแอปนี้" section for why). Listed
@@ -57,7 +58,7 @@ const HOMEBREW_FOLDER_LABELS = {
 const PROJECT_ORIGINAL_CLASSES = [
   {
     name: "Aura Knight",
-    link: "/homebrew-subclass/Aura-Knight/Aura-Knight",
+    link: "/codex/homebrew-subclass/Aura-Knight/Aura-Knight",
     book: "Homebrew",
   },
 ];
@@ -250,19 +251,19 @@ function resolveClassLink(classInfo) {
 }
 
 // This project's own bespoke homebrew subclasses (prose .md files under
-// homebrew-subclass/, e.g. The Ruined Flame) aren't mirrored as 5etools-style
-// JSON, so the two loaders above never see them. They *are* registered in
-// classes.json for the gacha box though (group = class name, link straight
-// into the /homebrew-subclass/:slug route) — reuse that as the source of
-// truth instead of inventing a second manifest. classes.json can list the
-// same subclass more than once (it backs multiple boxes), so dedupe by
-// class+name.
+// codex/homebrew-subclass/, e.g. The Ruined Flame) aren't mirrored as
+// 5etools-style JSON, so the two loaders above never see them. They *are*
+// registered in classes.json for the gacha box though (group = class name,
+// link straight into the /codex/homebrew-subclass/* route) — reuse that as
+// the source of truth instead of inventing a second manifest. classes.json
+// can list the same subclass more than once (it backs multiple boxes), so
+// dedupe by class+name.
 function loadProjectHomebrewSubclasses() {
   const seen = new Set();
   const subclasses = [];
   for (const box of readJson(CLASSES_JSON)) {
     for (const item of box.items || []) {
-      if (!item.group || !item.name || !item.link || !item.link.startsWith("/homebrew-subclass/")) continue;
+      if (!item.group || !item.name || !item.link || !item.link.startsWith("/codex/homebrew-subclass/")) continue;
       const key = `${item.group}|${item.name}`;
       if (seen.has(key)) continue;
       seen.add(key);
@@ -271,7 +272,7 @@ function loadProjectHomebrewSubclasses() {
         name: item.name,
         source: "Homebrew",
         sourceAbbrev: "Homebrew",
-        // homebrew-subclass/ is a newer addition written against the 2024
+        // codex/homebrew-subclass/ is a newer addition written against the 2024
         // rules (e.g. The Ruined Flame keys off Innate Sorcery) — no per-file
         // edition metadata exists yet, so this is a fixed assumption rather
         // than something detected. Revisit if a 2014-only entry shows up here.

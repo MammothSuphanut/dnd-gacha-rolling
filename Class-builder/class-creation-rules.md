@@ -57,7 +57,7 @@ class ใหม่ที่สร้างในนี้ **ไม่ได้�
 
 ## 8. Output File
 
-บันทึกเป็น `homebrew-subclass/<ClassName>/<ClassName>.md` (สร้างโฟลเดอร์ `<ClassName>` ถ้ายังไม่มี) โครงไฟล์แนะนำ:
+บันทึกเป็น `codex/homebrew-subclass/<ClassName>/<ClassName>.md` (สร้างโฟลเดอร์ `<ClassName>` ถ้ายังไม่มี) โครงไฟล์แนะนำ:
 
 ```markdown
 # Class: <ชื่อ Class>
@@ -95,5 +95,5 @@ class ใหม่ที่สร้างในนี้ **ไม่ได้�
 
 ## Subclass
 
-class นี้เลือก subclass ตอนเลเวล [1/2/3] — ดู subclass ที่มีอยู่แล้วใน `homebrew-subclass/<ClassName>/`
+class นี้เลือก subclass ตอนเลเวล [1/2/3] — ดู subclass ที่มีอยู่แล้วใน `codex/homebrew-subclass/<ClassName>/`
 ```

@@ -8,7 +8,6 @@ import CampaignPage from './pages/CampaignPage'
 import CharacterPage, { CharacterDetailPage } from './pages/CharacterPage'
 import HomebrewRuleDocPage from './pages/HomebrewRuleDocPage'
 import HomebrewRulesPage from './pages/HomebrewRulesPage'
-import HomebrewSubclassDocPage from './pages/HomebrewSubclassDocPage'
 import RollPage from './pages/RollPage'
 import OptionsPage from './pages/OptionsPage'
 import ShopPage from './pages/ShopPage'
@@ -24,7 +23,6 @@ const STANDALONE_ROUTES = [
   '/campaigns/:campaignId/journal',
   '/world/:worldId',
   '/codex/*',
-  '/homebrew-subclass/*',
   '/characters/:characterId',
 ]
 
@@ -110,10 +108,6 @@ function App() {
                   (codex/<Category>/<Name>.md) so the slug itself contains a
                   "/". See HomebrewRuleDocPage.jsx. */}
               <Route path="/codex/*" element={<HomebrewRuleDocPage />} />
-              {/* Wildcard, not :slug — files live in per-class subfolders
-                  (homebrew-subclass/<ClassName>/<Name>.md) so the slug itself
-                  contains a "/". See HomebrewSubclassDocPage.jsx. */}
-              <Route path="/homebrew-subclass/*" element={<HomebrewSubclassDocPage />} />
               <Route path="/characters" element={<CharacterPage />} />
               <Route path="/characters/:characterId" element={<CharacterDetailPage />} />
               {/* Catch-all: lets links copied out of a journal (e.g. into FoundryVTT) resolve
