@@ -12,9 +12,15 @@
 - **ซ่อนทั้งหมวด**: comment บรรทัด `##` ด้วยวิธีเดียวกัน — ทั้งหมวดจะไม่โชว์บนเว็บเลย
 - ⚠️ ตัวสแกน comment เป็น string scan ธรรมดา (หา `<!--`/`-->` ตรงๆ ไม่ใช่ HTML parser เต็มรูป) ห้ามพิมพ์ตัวอย่าง literal `<!--`/`-->` ไว้ในข้อความอธิบายส่วนนี้ เพราะจะโดนอ่านเป็นคำสั่งซ่อนจริงไปด้วย
 
-## General
+<!-- ## General
 - class-subclass-index
-- 00-sub-class-overview-tier-list-2024
+- 00-sub-class-overview-tier-list-2024 -->
+<!-- ↑ hidden from Documents: both files now feed the "Class & Subclass"
+     browser tab directly (see mergeCodexClassData.js) instead of being
+     rendered as their own doc pages. Files themselves are untouched — other
+     skills (build-character, level-up-character, build-class) still read
+     class-subclass-index.md directly, and both /codex/General/* routes
+     still resolve if something links to them straight. -->
 
 ## Core-Rules | Core Rules
 - astral-nexus-lore
