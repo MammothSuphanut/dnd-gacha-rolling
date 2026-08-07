@@ -13,14 +13,17 @@
 - ⚠️ ตัวสแกน comment เป็น string scan ธรรมดา (หา `<!--`/`-->` ตรงๆ ไม่ใช่ HTML parser เต็มรูป) ห้ามพิมพ์ตัวอย่าง literal `<!--`/`-->` ไว้ในข้อความอธิบายส่วนนี้ เพราะจะโดนอ่านเป็นคำสั่งซ่อนจริงไปด้วย
 
 <!-- ## General
-- class-subclass-index
-- 00-sub-class-overview-tier-list-2024 -->
-<!-- ↑ hidden from Documents: both files now feed the "Class & Subclass"
-     browser tab directly (see mergeCodexClassData.js) instead of being
-     rendered as their own doc pages. Files themselves are untouched — other
-     skills (build-character, level-up-character, build-class) still read
-     class-subclass-index.md directly, and both /codex/General/* routes
-     still resolve if something links to them straight. -->
+- class-subclass-index -->
+<!-- ↑ hidden from Documents: feeds the "Class & Subclass" browser tab
+     directly (see mergeCodexClassData.js) instead of being rendered as its
+     own doc page. File itself is untouched — other skills (build-character,
+     level-up-character, build-class) still read class-subclass-index.md
+     directly, and /codex/General/class-subclass-index still resolves if
+     something links to it straight.
+     (00-sub-class-overview-tier-list-2024.md, the tier half of that merge,
+     was deleted along with the 28 per-class tier-list files it rolled up —
+     being redone under the new 00-scorecard-methodology.md rules. Until new
+     tier-list files exist, CodexClassBrowser has no tier data to merge in.) -->
 
 ## Core-Rules | Core Rules
 - astral-nexus-lore
@@ -32,33 +35,13 @@
 - witsawa-party-balance-review
 
 ## 2024-tier-list | 2024 Tier List
-- wizard-subclass-scorecard-2024
-<!-- - 00-class-overview-tier-list-2024
-- alchemist-subclass-tier-list-2024
-- artificer-subclass-tier-list-2024
-- barbarian-subclass-tier-list-2024
-- bard-subclass-tier-list-2024
-- captain-subclass-tier-list-2024
-- channeler-subclass-tier-list-2024
-- cleric-subclass-tier-list-2024
-- craftsman-subclass-tier-list-2024
-- dancer-subclass-tier-list-2024
-- druid-subclass-tier-list-2024
-- fighter-subclass-tier-list-2024
-- gunslinger-subclass-tier-list-2024
-- investigator-subclass-tier-list-2024
-- martyr-subclass-tier-list-2024
-- monk-subclass-tier-list-2024
-- monster-hunter-subclass-tier-list-2024
-- mystic-subclass-tier-list-2024
-- necromancer-subclass-tier-list-2024
-- paladin-subclass-tier-list-2024
-- ranger-subclass-tier-list-2024
-- rogue-subclass-tier-list-2024
-- sorcerer-subclass-tier-list-2024
-- vagabond-subclass-tier-list-2024
-- warden-subclass-tier-list-2024
-- warlock-subclass-tier-list-2024
-- warmage-subclass-tier-list-2024
-- witch-subclass-tier-list-2024
-- wizard-subclass-tier-list-2024 -->
+- 00-scorecard-methodology
+- 00-scorecard-progress
+<!-- The class-level 00-class-overview-tier-list-2024.md, the 28 per-class
+     <class>-subclass-tier-list-2024.md files, and the old
+     wizard-subclass-scorecard-2024.md pilot were all deleted 2026-08-07 —
+     being redone from scratch under the new rules in
+     00-scorecard-methodology.md (Class Baseline, M/R/B tags, 2024-only
+     scope). Progress tracked in 00-scorecard-progress.md. New per-class
+     files will auto-append here (A-Z) as they're written; no need to
+     re-list them by hand. -->

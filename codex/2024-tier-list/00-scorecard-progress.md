@@ -1,28 +1,28 @@
 # Subclass Scorecard Progress Tracker
 
 **วันที่เริ่ม**: 2026-08-07
-**ขอบเขต**: 29 class (รวม homebrew class ของโปรเจกต์เอง — Aura Knight) — **ไม่รวม 3 sidekick class** (Expert/Spellcaster/Warrior Sidekick) เพราะไม่มีโครงสร้าง subclass ให้ประเมิน baseline+subclass ตามระบบนี้ได้ (ตามธรรมเนียมเดียวกับ [00-class-overview-tier-list-2024.md](00-class-overview-tier-list-2024.md) และ [00-sub-class-overview-tier-list-2024.md](../General/00-sub-class-overview-tier-list-2024.md))
+**ขอบเขต**: 29 class (รวม homebrew class ของโปรเจกต์เอง — Aura Knight) — **ไม่รวม 3 sidekick class** (Expert/Spellcaster/Warrior Sidekick) เพราะไม่มีโครงสร้าง subclass ให้ประเมิน baseline+subclass ตามระบบนี้ได้
 **กติกาการให้คะแนน**: ดู [00-scorecard-methodology.md](00-scorecard-methodology.md) (7 axis, M/R/B, Class Baseline, ขอบเขต edition 2024)
 
 **สถานะ**: ทุกช่องเริ่มที่ `[ ]` ยังไม่ได้ประเมิน — ติ๊ก `[x]` เมื่อประเมินเสร็จแล้ว (เขียนคะแนนราย axis ครบ + เหตุผลตามกติกาใน 00-scorecard-methodology.md แล้ว)
 
-**หมายเหตุการ reconcile**: รายชื่อ subclass ด้านล่าง deduped แล้วระหว่าง `class-subclass-index.md` (794 รายการดิบ ก่อนหัก sidekick) กับไฟล์ `<class>-subclass-tier-list-2024.md` ทั้ง 28 ไฟล์ (ชื่อที่เปลี่ยนระหว่าง edition ถูกรวมเป็นแถวเดียวแล้ว ใช้ชื่อ 2024 ตามกติกา) — แถวที่มีธง 🆕 หรือ ⚠️ ต้องจัดการเพิ่มก่อนประเมินได้เต็มรูปแบบ ดูรายละเอียดที่หัวข้อด้านล่าง
+**หมายเหตุการ reconcile**: รายชื่อ subclass ด้านล่างมาจากการ deduped ระหว่าง `class-subclass-index.md` (794 รายการดิบ ก่อนหัก sidekick) กับไฟล์ tier-list รายคลาสชุดเก่า (ชื่อที่เปลี่ยนระหว่าง edition ถูกรวมเป็นแถวเดียวแล้ว ใช้ชื่อ 2024 ตามกติกา) — ไฟล์ tier-list ชุดเก่าทั้งหมด (28 ไฟล์ + rollup + wizard scorecard pilot + class-overview) **ถูกลบไปแล้ว 2026-08-07** กำลังเขียนใหม่ทั้งหมดตามกติกาใน 00-scorecard-methodology.md — รายชื่อด้านล่างเป็นแค่ผลลัพธ์ที่ deduped ไว้ก่อนลบ ไม่ใช่ไฟล์ที่ยังอ้างอิงอยู่จริง แถวที่มีธง 🆕 หรือ ⚠️ มีบริบทเพิ่มเติมให้อ่านก่อนประเมิน (ดูหัวข้อด้านล่าง)
 
 ---
 
-## ⚠️ สิ่งที่ต้องแก้ในไฟล์ tier-list ก่อน (ไม่ใช่แค่ checklist)
+## ⚠️ บริบทที่ควรรู้ก่อนเริ่มประเมิน (มาจากการ reconcile ก่อนลบไฟล์เก่า)
 
-**🆕 subclass ที่ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list รายคลาสเลย** (มีอยู่จริงในเกม อยู่ใน class-subclass-index.md แต่ไม่มี `###` heading ในไฟล์ tier-list) — ต้องเพิ่ม heading ให้ไฟล์รายคลาสนั้นก่อน (หรือประเมินตรงด้วยระบบใหม่นี้เลยโดยไม่ผูกกับไฟล์เก่าก็ได้):
+**🆕 subclass ที่ยังไม่เคยถูกวิเคราะห์มาก่อนเลย** (มีอยู่จริงในเกม อยู่ใน class-subclass-index.md แต่ไฟล์ tier-list เก่าไม่เคยมี heading ให้) — ไม่มีของเก่าให้อ้างอิง ต้องวิเคราะห์จากศูนย์:
 - **Captain**: Demon Banner, Jolly Roger Banner, Siegeball Banner
 - **Investigator**: Infernal Agent
 - **Rogue**: Arachnoid Stalker
-- **Sorcerer**: The Ruined Flame
+- **Sorcerer**: The Ruined Flame (homebrew ของโปรเจกต์นี้เอง)
 - **Warmage**: House of Lancers
 
-**⚠️ tier-list ยังเขียนด้วยชื่อ 2014 เดิม ทั้งที่มี 2024 rename แล้ว** (ขัดกติกา 2024-only scope) — ต้องแก้ heading ในไฟล์ `monk-subclass-tier-list-2024.md`:
-- `Way of the Open Hand` → `Warrior of the Open Hand`
-- `Way of Shadow` → `Warrior of Shadow`
-- `Way of Mercy` → `Warrior of Mercy`
+**⚠️ ไฟล์ tier-list เก่าเคยเขียนด้วยชื่อ 2014 เดิม ทั้งที่มี 2024 rename แล้ว** (ขัดกติกา 2024-only scope) — ตอนเขียนไฟล์ Monk ใหม่ ให้ใช้ชื่อ 2024 เหล่านี้แทนชื่อเก่า:
+- `Way of the Open Hand` → **`Warrior of the Open Hand`**
+- `Way of Shadow` → **`Warrior of Shadow`**
+- `Way of Mercy` → **`Warrior of Mercy`**
 
 ---
 

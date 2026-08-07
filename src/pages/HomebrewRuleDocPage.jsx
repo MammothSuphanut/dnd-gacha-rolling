@@ -1,8 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import AdventureMarkdownView from '../components/AdventureMarkdownView'
 import ClassSubclassIndexView from '../components/ClassSubclassIndexView'
-import SubclassScorecardView from '../components/SubclassScorecardView'
-import SubclassTierOverviewView from '../components/SubclassTierOverviewView'
 import { useToast } from '../store/ToastContext'
 import { copyMarkdownToClipboard } from '../utils/copyMarkdown'
 import { getHomebrewRule } from '../utils/homebrewRules'
@@ -11,12 +9,17 @@ import { getHomebrewRule } from '../utils/homebrewRules'
 // their own filterable view instead of the plain markdown renderer every
 // other Codex doc uses — see each component for why + the exact generator
 // it's paired with.
+//
+// SubclassTierOverviewView (General/00-sub-class-overview-tier-list-2024)
+// and SubclassScorecardView (2024-tier-list/wizard-subclass-scorecard-2024)
+// were dropped from here 2026-08-07 — both source docs were deleted along
+// with the rest of the old tier-list system (being redone under
+// codex/2024-tier-list/00-scorecard-methodology.md). The components
+// themselves are left in src/components/ (SubclassScorecardView's rendering
+// approach is what CodexClassBrowser's detail-modal radar chart reuses) —
+// re-add an entry here once a new doc exists at either slug.
 const FILTERABLE_VIEWS = {
   'General/class-subclass-index': ClassSubclassIndexView,
-  'General/00-sub-class-overview-tier-list-2024': SubclassTierOverviewView,
-  // 🧪 Pilot only (Wizard) as of 2026-08-07 — see the file's own "สถานะ" line.
-  // Add the rest of the 27 classes' scorecard slugs here once the rubric is confirmed.
-  '2024-tier-list/wizard-subclass-scorecard-2024': SubclassScorecardView,
 }
 
 export default function HomebrewRuleDocPage() {

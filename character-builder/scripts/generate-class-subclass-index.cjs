@@ -352,7 +352,7 @@ function main() {
   );
   lines.push(">");
   lines.push(
-    "> **หาว่า subclass ไหนแรง/อ่อน (ไม่ใช่แค่ว่ามีอะไรบ้าง)**: ไฟล์นี้เป็นแค่ดัชนี ไม่มีข้อมูล tier — ไปดู [00-sub-class-overview-tier-list-2024.md](00-sub-class-overview-tier-list-2024.md) (จัดกลุ่ม S/A/B/C/D ข้าม class ทั้งหมด) แทน"
+    "> **หาว่า subclass ไหนแรง/อ่อน (ไม่ใช่แค่ว่ามีอะไรบ้าง)**: ไฟล์นี้เป็นแค่ดัชนี ไม่มีข้อมูล tier — ระบบ tier แบบเก่า (00-sub-class-overview-tier-list-2024.md) ถูกลบไปแล้ว 2026-08-07 กำลังทำใหม่ทั้งหมดตามกติกาใน [00-scorecard-methodology.md](../2024-tier-list/00-scorecard-methodology.md) — เช็คความคืบหน้าได้ที่ [00-scorecard-progress.md](../2024-tier-list/00-scorecard-progress.md)"
   );
   lines.push("");
   lines.push("## สารบัญ class");

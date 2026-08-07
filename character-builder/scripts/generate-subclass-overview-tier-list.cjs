@@ -1,3 +1,15 @@
+// ⚠️ DEPRECATED as of 2026-08-07 — do not run as-is. The 28 per-class
+// `*-subclass-tier-list-2024.md` files this script reads (and the
+// codex/General/00-sub-class-overview-tier-list-2024.md file it writes) were
+// deleted; the whole tier-list system is being redone from scratch under the
+// new rules in codex/2024-tier-list/00-scorecard-methodology.md (Class
+// Baseline, M/R/B score tags, 2024-only scope — none of which this script
+// knows about). Once the new per-class file format is settled, this script
+// needs a matching rewrite (new heading/table regex at minimum) before it's
+// safe to run again — running it unmodified today would just write an empty
+// rollup (no files to read) to a path nothing currently links to.
+//
+// Original description, kept for reference:
 // Auto-generates codex/General/00-sub-class-overview-tier-list-2024.md by
 // rolling up every "### Subclass Name (Source) ICON — role" heading found
 // across the 28 per-class `*-subclass-tier-list-2024.md` files (which live
