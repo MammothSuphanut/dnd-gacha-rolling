@@ -34,18 +34,20 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 > **ข้อจำกัดข้อมูลเดียวกับ baseline**: ทุก Order มีฟีเจอร์ "Bonus Disciplines" (lv1, ปลดล็อก 2 discipline เพิ่มจากลิสต์เฉพาะ Order) ที่ไม่มีเนื้อหาให้ตรวจสอบในไฟล์ data ของโปรเจกต์ — คะแนนด้านล่างจึงประเมินจากฟีเจอร์ตั้งชื่อชัดเจนที่ยืนยันได้เท่านั้น (lv1/lv3/lv6/lv14 อื่นๆ) เป็น floor ที่ระมัดระวัง ไม่มี Order ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก
 
-| Subclass | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|
-| Order of the Avatar | 5 (B) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
-| Order of the Awakened | 5 (B) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 8 (A) | 8 (A) |
-| Order of the Immortal | 5 (B) | 3 (C) | 0 (D) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
-| Order of the Nomad | 5 (B) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 8 (A) | 8 (A) |
-| Order of the Soul Knife | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Order of the Wu Jen | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 9 (S) |
+| Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|
+| Order of the Avatar | S | 5 (B) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Order of the Awakened | A | 5 (B) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 8 (A) | 8 (A) |
+| Order of the Immortal | A | 5 (B) | 3 (C) | 0 (D) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
+| Order of the Nomad | A | 5 (B) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 8 (A) | 8 (A) |
+| Order of the Soul Knife | A | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Order of the Wu Jen | A | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 9 (S) |
 
 ---
 
 ### Order of the Avatar
+
+**Overall**: S — ออร่าบัฟทีมสามชั้น (initiative/heal/speed) ทำงานตลอดเวลาโดยไม่เสีย resource เลย บวก Survivability A และ Versatility A คู่กัน ไม่มี axis ไหนถูกตัดทอนต่ำกว่า baseline สักตัว ทำให้เป็นตัวเสริมทีมที่แทบไม่มีจุดอ่อนเลย
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -59,6 +61,8 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Awakened
 
+**Overall**: A — Survivability S (Spectral Form resist ทุกดาเมจ) + Utility/Versatility A คู่กัน + Control ขยับขึ้นมาเป็น B จาก baseline C แต่ Support เป็น 0 เต็ม (ไม่มี feature เสริมทีมเลย) ทำให้พึ่งเพื่อนร่วมทีมด้าน support แทน ไม่ถึงขั้น S เหมือน Avatar
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ที่ยืนยันได้ = เท่า baseline |
@@ -70,6 +74,8 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 | **Versatility** | 8/10 (A) | ผสม investigation/control/defense สุดขั้วในธีมเดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### Order of the Immortal
+
+**Overall**: A — Survivability 10/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (แทงค์ตัวจริง แทบตายไม่ได้) แต่ Support เป็น 0 เต็มและ Control/Utility ค้างที่ baseline ทำให้เป็น one-trick tank ที่เก่งด้าน survive สุดขั้วแต่ไม่ขยาย role อื่นเลย
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -83,6 +89,8 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Nomad
 
+**Overall**: A — Survivability S ผ่านการหนี/เทเลพอร์ตแทนการแท้งค์ + Action Economy/Utility/Versatility A ทั้งสามแกน กระจาย breadth ได้กว้างกว่า Immortal มาก แม้ Support จะเป็น 0 เหมือนกันก็ตาม
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ที่ยืนยันได้ = เท่า baseline |
@@ -95,6 +103,8 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Soul Knife
 
+**Overall**: A — Damage A (8/10) สูงสุดในกลุ่มร่วมกับ Wu Jen บวก Survivability/Action Economy A คู่กัน เป็น striker ที่ตีแรง+อึดพร้อมกัน แม้ Support จะเป็น 0 เหมือนตัวอื่นในคลาสนี้
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Soul Knife (อาวุธ 1d8 psychic finesse ติดตัวถาวรผ่าน bonus action) + Hone the Blade (lv3, จ่าย psi ได้ atk/dmg bonus สูงสุด +4 นาน 10 นาที) + Phantom Knife (lv14, ตีเป้าเสมือนมี AC 10) [M:3/4] [R:2/3] [B:3/3] |
@@ -106,6 +116,8 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | โฟกัส weapon-striker เฉพาะทางสุดขั้ว ไม่ขยาย role อื่น = เท่า baseline |
 
 ### Order of the Wu Jen
+
+**Overall**: A — Versatility 9/10 สูงสุดในกลุ่ม (hybrid psionics-wizard เต็มระบบ) บวก Damage/Survivability/Action Economy/Utility ล้วน A ทั้งหมด กว้างที่สุดในบรรดา Order ทั้ง 6 แต่ Support ยังเป็น 0 เหมือนเดิม เลยไม่ถึง S แบบ Avatar ที่ครบทุก role จริงๆ
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

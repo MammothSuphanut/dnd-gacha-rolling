@@ -3,9 +3,14 @@ import Modal from './Modal'
 import { LINK_CLASS } from './AdventureMarkdownView'
 import { getHomebrewRule } from '../utils/homebrewRules'
 import { parseClassSubclassIndex } from '../utils/parseClassSubclassIndex'
-import { parseSubclassTierOverview } from '../utils/parseSubclassTierOverview'
 import { parseSubclassScorecard } from '../utils/parseSubclassScorecard'
 import { mergeCodexClassData } from '../utils/mergeCodexClassData'
+
+// Standard grade order — tier data now comes from each class's own
+// *-subclass-scorecard-2024.md (inline "**Overall**: <Tier>" per subclass,
+// see 00-scorecard-methodology.md), not a single cross-class rollup doc, so
+// there's no generated ordering to read; S/A/B/C/D is always the right order.
+const TIER_ORDER = ['S', 'A', 'B', 'C', 'D']
 
 const AXIS_ORDER = ['Damage', 'Control', 'Support', 'Survivability', 'Action Economy', 'Utility', 'Versatility']
 const AXIS_SHORT = {
@@ -229,31 +234,37 @@ function AxisRadarChart({ axes }) {
 // rows and simply don't appear here; that matches what both source docs
 // already documented as out of scope, not a bug.
 export default function CodexClassBrowser() {
-  const { classes, tierOrder } = useMemo(() => {
+  const classes = useMemo(() => {
     const indexRule = getHomebrewRule('General/class-subclass-index')
-    const tierRule = getHomebrewRule('General/00-sub-class-overview-tier-list-2024')
-    if (!indexRule || !tierRule) return { classes: [], tierOrder: [] }
+    if (!indexRule) return []
     const indexResult = parseClassSubclassIndex(indexRule.content)
-    const tierResult = parseSubclassTierOverview(tierRule.content)
-    const merged = mergeCodexClassData(indexResult, tierResult)
+    const merged = mergeCodexClassData(indexResult)
 
-    const withScorecards = merged.map((c) => {
-      const scorecardRule = getHomebrewRule(`2024-tier-list/${classSlug(c.name)}-subclass-scorecard-2024`)
+    return merged.map((c) => {
+      const scorecardSlug = `2024-tier-list/${classSlug(c.name)}-subclass-scorecard-2024`
+      const scorecardRule = getHomebrewRule(scorecardSlug)
       if (!scorecardRule) return c
-      const { groups: scGroups } = parseSubclassScorecard(scorecardRule.content)
-      const byName = new Map()
-      for (const g of scGroups) for (const s of g.subclasses) byName.set(s.name.trim().toLowerCase(), s)
+      const { subclasses: scSubclasses } = parseSubclassScorecard(scorecardRule.content)
+      const byName = new Map(scSubclasses.map((s) => [s.name.trim().toLowerCase(), s]))
+      const analysisLink = `/codex/${scorecardSlug}`
       return {
         ...c,
+        analysisLink,
         subclasses: c.subclasses.map((s) => {
           const sc = byName.get(s.name.trim().toLowerCase())
-          return sc ? { ...s, axes: sc.axes, overallReason: sc.overallReason } : s
+          // A scorecard file existing for the class is enough to link every one
+          // of its subclasses to the write-up, even ones whose "**Overall**"
+          // judgment (tier) hasn't been written yet — axes/tier stay unset for
+          // those until it is (see 00-scorecard-methodology.md § การเขียน
+          // Overall Tier), and they render as "ยังไม่ได้จัดระดับ".
+          if (!sc) return { ...s, analysisLink }
+          return { ...s, analysisLink, tier: sc.tier, overallReason: sc.overallReason, axes: sc.axes }
         }),
       }
     })
-
-    return { classes: withScorecards, tierOrder: tierResult.groups.map((g) => g.tier) }
   }, [])
+
+  const tierOrder = TIER_ORDER
 
   const flatRows = useMemo(
     () =>

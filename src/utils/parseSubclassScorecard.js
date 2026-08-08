@@ -1,77 +1,73 @@
 // Structured reader for codex/2024-tier-list/<class>-subclass-scorecard-2024.md
-// — a per-class companion to <class>-subclass-tier-list-2024.md that adds a
-// 7-axis M/R/B score breakdown (Damage/Control/Support/Survivability/Action
-// Economy/Utility/Versatility) per subclass, with a short reason per axis.
-// Shape: intro/methodology text, then one "## <Tier> Tier (<count>)" section
-// per tier, each containing one "### Name (Source) ICON — role" subsection
-// per subclass with a "**ภาพรวม**: ..." line and a
-// "| Axis | Score | Grade | เหตุผล |" table right after.
+// — the 2026-08-07 methodology rework's per-class file, which replaced the
+// old prose tier-list corpus (see 00-scorecard-methodology.md). Shape: intro
+// text, a "## Class Baseline (...)" section, then one "## Subclass Scoring
+// (N)" section containing a summary table followed by one flat "### <Name>"
+// subsection per subclass (no tier grouping — tier lives inline per
+// subclass, see below), each with a "| Axis | คะแนน | เหตุผล |" table and an
+// optional "**Overall**: <Tier> — <reason>" line just above it.
 //
-// If the generator/author shape ever changes, update this parser to match.
+// A subclass heading may carry a trailing "(Source [icons])" parenthetical
+// (e.g. "### Path of Heavy Metal (VSS 🕰️)") — stripped here since
+// class-subclass-index.md already carries the canonical source/edition/book.
+//
+// "**Overall**" is optional: methodology allows classes to have full 7-axis
+// scoring before their Overall Tier judgment call is written — see
+// 00-scorecard-methodology.md § การเขียน Overall Tier. Subclasses missing it
+// come back with tier: null, which callers should treat as "not yet ranked",
+// not an error.
+//
+// If the file shape ever changes, update this parser to match.
 
-const TIER_HEADING_RE = /^##\s+([SABCD](?:\/[SABCD])*)\s+Tier\s*\((\d+)\)\s*$/
-const ICONS = '🔵🔴🟢🟡🟣🕰️🔗'
-const headingReSourceFirst = new RegExp(`^### (.+?)\\s*\\(([^)]+)\\)\\s*([${ICONS}]+)\\s*—\\s*(.+)$`, 'u')
-const headingReIconFirst = new RegExp(`^### (.+?)\\s*([${ICONS}]+)\\s*(?:\\(([^)]+)\\)\\s*)?—\\s*(.+)$`, 'u')
-
-function matchSubclassHeading(line) {
-  let m = line.match(headingReSourceFirst)
-  if (m) return { name: m[1].trim(), source: m[2].trim(), icons: m[3], role: m[4].trim() }
-  m = line.match(headingReIconFirst)
-  if (m) return { name: m[1].trim(), source: (m[3] || '').trim(), icons: m[2], role: m[4].trim() }
-  return null
-}
+const SCORING_HEADING_RE = /^##\s+Subclass Scoring/
+const SUBCLASS_HEADING_RE = /^###\s+(.+)$/
+const OVERALL_RE = /^\*\*Overall\*\*:\s*([SABCD](?:\/[SABCD])*)\s*(?:—|-)\s*(.+)$/
+const AXIS_SCORE_RE = /(\d+)\s*\/\s*10\s*\(([SABCD])\)/
 
 export function parseSubclassScorecard(raw) {
   const lines = raw.split('\n')
-  const firstGroupIdx = lines.findIndex((l) => TIER_HEADING_RE.test(l.trim()))
-  const header = (firstGroupIdx === -1 ? lines : lines.slice(0, firstGroupIdx)).join('\n').trim()
+  const scoringIdx = lines.findIndex((l) => SCORING_HEADING_RE.test(l.trim()))
+  const header = (scoringIdx === -1 ? lines : lines.slice(0, scoringIdx)).join('\n').trim()
 
-  const groups = []
-  let currentGroup = null
-  let currentSub = null
+  const subclasses = []
+  let current = null
 
-  for (let i = firstGroupIdx === -1 ? lines.length : firstGroupIdx; i < lines.length; i++) {
+  for (let i = scoringIdx === -1 ? lines.length : scoringIdx; i < lines.length; i++) {
     const line = lines[i]
+
+    const headingMatch = line.match(SUBCLASS_HEADING_RE)
+    if (headingMatch) {
+      const name = headingMatch[1].replace(/\s*\([^)]*\)\s*$/, '').trim()
+      current = { name, tier: null, overallReason: '', axes: [] }
+      subclasses.push(current)
+      continue
+    }
+
+    if (!current) continue // still inside the summary table / intro, before the first "### Name"
+
     const trimmed = line.trim()
-
-    const tierMatch = trimmed.match(TIER_HEADING_RE)
-    if (tierMatch) {
-      currentGroup = { tier: tierMatch[1], count: Number(tierMatch[2]), subclasses: [] }
-      groups.push(currentGroup)
-      currentSub = null
-      continue
-    }
-
-    if (/^### /.test(line)) {
-      if (!currentGroup) continue // heading appeared before any tier section — ignore
-      const hm = matchSubclassHeading(line)
-      if (!hm) continue
-      currentSub = { ...hm, tier: currentGroup.tier, overallReason: '', axes: [] }
-      currentGroup.subclasses.push(currentSub)
-      continue
-    }
-
-    if (!currentSub) continue
-
-    const overallMatch = trimmed.match(/^\*\*ภาพรวม\*\*:\s*(.+)$/)
+    const overallMatch = trimmed.match(OVERALL_RE)
     if (overallMatch) {
-      currentSub.overallReason = overallMatch[1].trim()
+      current.tier = overallMatch[1]
+      current.overallReason = overallMatch[2].trim()
       continue
     }
 
     if (line.startsWith('| Axis |') || line.startsWith('|---')) continue
+    if (!line.startsWith('|')) continue
 
-    if (line.startsWith('|')) {
-      const cells = line
-        .split('|')
-        .slice(1, -1)
-        .map((c) => c.trim())
-      if (cells.length < 4) continue
-      const [axis, score, grade, reason] = cells
-      currentSub.axes.push({ axis, score, grade, reason })
-    }
+    const cells = line.split('|').slice(1, -1).map((c) => c.trim())
+    if (cells.length < 3) continue
+    const [axisRaw, scoreCell, reason] = cells
+    const axis = axisRaw.replace(/\*\*/g, '').trim()
+    const scoreMatch = scoreCell.match(AXIS_SCORE_RE)
+    current.axes.push({
+      axis,
+      score: scoreMatch ? scoreMatch[1] : scoreCell,
+      grade: scoreMatch ? scoreMatch[2] : '',
+      reason,
+    })
   }
 
-  return { header, groups }
+  return { header, subclasses }
 }

@@ -36,18 +36,20 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Gambler | DToE Vol.2 🕰️ | 6 (B) | 2 (D) | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
-| Grandmaster | DToE Vol.1 🕰️ | 6 (B) | 3 (C) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Medic | DToE Vol.2 🕰️ | 4 (C) | 3 (C) | 10 (S) | 4 (C) | 8 (A) | 6 (B) | 6 (B) |
-| Mentalist | DToE Vol.1 🕰️ | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
-| Scholar | DToE Vol.1 🕰️ | 8 (A) | 5 (B) | 8 (A) | 4 (C) | 8 (A) | 8 (A) | 9 (S) |
-| War Mind | DToE Vol.1 🕰️ | 9 (S) | 2 (D) | 8 (A) | 6 (B) | 8 (A) | 5 (B) | 6 (B) |
+| Subclass | Source | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Gambler | DToE Vol.2 🕰️ | A | 6 (B) | 2 (D) | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
+| Grandmaster | DToE Vol.1 🕰️ | A | 6 (B) | 3 (C) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Medic | DToE Vol.2 🕰️ | B | 4 (C) | 3 (C) | 10 (S) | 4 (C) | 8 (A) | 6 (B) | 6 (B) |
+| Mentalist | DToE Vol.1 🕰️ | S | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
+| Scholar | DToE Vol.1 🕰️ | S | 8 (A) | 5 (B) | 8 (A) | 4 (C) | 8 (A) | 8 (A) | 9 (S) |
+| War Mind | DToE Vol.1 🕰️ | A | 9 (S) | 2 (D) | 8 (A) | 6 (B) | 8 (A) | 5 (B) | 6 (B) |
 
 ---
 
 ### Gambler
+
+**Overall**: A — ยกระดับ 5 ใน 7 axis เหนือ baseline พร้อมกัน (Damage/Support/AE/Utility/Versatility) ด้วยการขยายมูลค่า/ความแน่นอนของ Perfect Plan die เดิม ไม่ใช่ one-trick pony เลย แม้ Control/Survivability จะยังค้างที่ baseline
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -61,6 +63,8 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### Grandmaster
 
+**Overall**: A — Support S เดี่ยว (Perfectionist กันพลาดทั้งทีม) บวก Damage/AE/Utility/Versatility ยกขึ้นเป็น B/A ทั่วกระดาน มีแค่ Control ที่ค้าง baseline — breadth กว้างแต่ไม่มี axis ที่สองที่แรงพอจะดันขึ้น S เหมือน Mentalist/Scholar
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Counterplay (lv10, ทุกครั้งที่โดนดาเมจ ใช้ Reaction ตีอาวุธใส่คนที่ทำดาเมจได้ ใช้ได้เท่า proficiency bonus/Long Rest) + Checkmate (lv18, ตอน analyzed creature โดนตีแบบมี Advantage ใช้ Reaction เปลี่ยนให้เป็น critical hit อัตโนมัติ 1 ครั้ง/short-or-long rest) — เพิ่มโอกาสตีได้บ่อยขึ้น/แรงขึ้นเหนือ baseline แต่ยังจำกัดจำนวนครั้ง/rest [M:2/4] [R:2/3] [B:2/3] |
@@ -72,6 +76,8 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | ผสมทั้ง damage-punish (Counterplay/Checkmate), team-safety (Moving Pieces/Perfectionist), และ defense เฉพาะจุด (Two Steps Ahead) ไม่ยึดติด role เดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### Medic
+
+**Overall**: B — Support 10/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (healer ตัวจริง) แต่ Damage/Control/Survivability ค้างที่ baseline ทั้ง 3 แกน มี Utility เดียวที่ขยับขึ้นมาเป็น B — one-trick pony ตัวชัดเจน: เก่งสุดขั้วด้าน heal แต่แทบไม่มี value อื่นให้ทีมเลยนอกเหนือจากบทบาทนั้น จึงไม่ควรได้ A ทั้งที่ราย axis เฉลี่ยดูดี
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -85,6 +91,8 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### Mentalist
 
+**Overall**: S — 5 ใน 7 axis อยู่ที่ A พร้อมกัน (Damage/Control/Support/AE/Utility) ไม่มี axis ไหนถูกตัดทอนต่ำกว่า baseline เลยสักตัว เป็นตัวคุมเกม+ดาเมจ-แอมป์+ซัพพอร์ตครบเครื่องที่สุดในคลาสนี้ จุดอ่อนเดียวคือ Survivability ที่ยังอยู่แค่ baseline
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Insightful Prediction ที่ lv10 ให้ reaction ตีอาวุธใส่เป้าทุกครั้งที่เป้าพลาด attack roll หรือ fail ability check (ใช้ได้เท่า proficiency bonus/Long Rest) บวก Disarming Words (lv18, เป้าที่โดน Insightful Prediction รับ 1d12 psychic damage เพิ่มทุกครั้งที่โดนตี "โดยใครก็ได้" ก่อนเทิร์นถัดไปของคุณ) เป็น damage amplifier ระดับทีมที่แรงมากช่วง endgame [M:3/4] [R:2/3] [B:2/3] |
@@ -97,6 +105,8 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### Scholar
 
+**Overall**: S — เพิ่มระบบ spellcasting เต็มรูปแบบทับบน chassis เดิม ดัน Damage/Support/AE/Utility ขึ้นเป็น A ทั้งหมดพร้อม Versatility S (9/10) สูงสุดในคลาส กว้างที่สุดในบรรดา subclass ทั้ง 6 ตัว มีแค่ Survivability ที่ยังอยู่ baseline
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ได้ spellcasting จริงจาก Wizard spell list (2 cantrip + 3 first-level spell ที่ lv3, cantrip เพิ่มอีก 1 ที่ lv10) ซึ่งเลือก damage spell ได้ (1 ใน 3 first-level spell ไม่บังคับ school) บวก Analyze extension (lv10, ตีเป้าที่ analyze ด้วยคาถา lv1+ ได้ damage die เพิ่มอีก 1 ลูกของคาถานั้น) และ lv18 หล่อคาถาที่รู้โดยไม่เสีย spell slot (จ่าย Perfect Plan die แทน 2×spell level) ทำให้ sustain ดาเมจจากคาถาได้ทั้งวันผ่าน pool ใหญ่ [M:3/4] [R:3/3] [B:2/3] |
@@ -108,6 +118,8 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 | **Versatility** | 9/10 (S) | เพิ่มระบบ spellcasting เต็มรูปแบบทับบน chassis support/tactics เดิม เป็นการขยาย breadth มากที่สุดในบรรดา subclass ที่ประเมินได้ [M:3/4] [R:3/3] [B:3/3] |
 
 ### War Mind
+
+**Overall**: A — Damage 9/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (Extra Attack + crit 19-20) บวก Support/AE ที่ A คู่กัน แต่ Control ค้าง baseline เต็มและ Utility/Versatility แค่ B — striker เฉพาะทางที่แรงสุดขั้วด้าน damage แต่ breadth แคบกว่า Mentalist/Scholar จึงไม่ถึง S
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
