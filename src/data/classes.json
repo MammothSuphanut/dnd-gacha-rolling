@@ -4897,6 +4897,14 @@
       {
         "name": "Witch",
         "weight": 1.25
+      },
+      {
+        "name": "Mystic",
+        "weight": 1.25
+      },
+      {
+        "name": "Sacred Knight",
+        "weight": 1.25
       }
     ],
     "settings": {
@@ -9816,6 +9824,14 @@
       },
       {
         "name": "Witch",
+        "weight": 6.25
+      },
+      {
+        "name": "Mystic",
+        "weight": 6.25
+      },
+      {
+        "name": "Sacred Knight",
         "weight": 6.25
       }
     ],
