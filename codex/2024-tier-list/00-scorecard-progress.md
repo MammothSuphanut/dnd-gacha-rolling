@@ -474,12 +474,12 @@
 
 ### Sacred Knight (6)
 
-- [ ] Throne of Doom and Slaughter — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
-- [ ] Throne of Eternity and Creation — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
-- [ ] Throne of Fear and Sorrow — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
-- [ ] Throne of Order and Law — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
-- [ ] Throne of Protection and Mercy — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
-- [ ] Throne of Wisdom and Spirit — 🆕 homebrew ของโปรเจกต์นี้เอง ยังไม่เคยถูกวิเคราะห์
+- [x] Throne of Doom and Slaughter
+- [x] Throne of Eternity and Creation
+- [x] Throne of Fear and Sorrow
+- [x] Throne of Order and Law
+- [x] Throne of Protection and Mercy
+- [x] Throne of Wisdom and Spirit
 
 ### Sorcerer (20)
 
