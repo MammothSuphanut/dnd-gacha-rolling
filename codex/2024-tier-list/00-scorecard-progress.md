@@ -69,16 +69,16 @@
 
 ### Alchemist (10)
 
-- [ ] Amorist
-- [ ] Apothecary
-- [ ] Dynamo Engineer
-- [ ] Mad Bomber
-- [ ] Mutagenist
-- [ ] Ooze Rancher
-- [ ] Pigmentist
-- [ ] Resonator
-- [ ] Venomsmith
-- [ ] Xenoalchemist
+- [x] Amorist
+- [x] Apothecary
+- [x] Dynamo Engineer
+- [x] Mad Bomber
+- [x] Mutagenist
+- [x] Ooze Rancher
+- [x] Pigmentist
+- [x] Resonator
+- [x] Venomsmith
+- [x] Xenoalchemist
 
 ### Artificer (6)
 
