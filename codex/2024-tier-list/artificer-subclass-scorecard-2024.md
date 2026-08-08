@@ -72,7 +72,7 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 | **Support** | 6/10 (B) | ไม่มี feature ที่ให้ประโยชน์ตรงกับ ally นอกเหนือจาก baseline (Defensive Field/Perfected Armor เป็น self-buff ล้วน) = เท่า baseline [M:2/4] [R:2/3] [B:2/3] |
 | **Survivability** | 7/10 (A) | training heavy armor (AC สูงขึ้นตั้งแต่ lv3 เกิน baseline's medium-only) + Defensive Field (bonus action, temp HP = artificer level, ตอน Bloodied) + Arcane Armor ที่ถอดไม่ได้โดยไม่สมัครใจ รวมกันเป็น personal tankiness ที่สูงกว่า baseline ชัดเจน [M:2/4] [R:2/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | Extra Attack (lv5) คือการดึงดาเมจสองเท่าออกจาก 1 Attack action เดียว ถือเป็นการเพิ่มประสิทธิภาพ action ที่มีอยู่แล้วอย่างชัดเจน แม้ไม่ได้เพิ่ม action ใหม่ [M:2/4] [R:3/3] [B:1/3] |
-| **Utility** | 7/10 (A) | Arcane Armor เป็น spellcasting focus + ไม่มีข้อจำกัด Str requirement แต่ breadth utility โดยรวมไม่ได้กว้างขึ้นจาก baseline ที่มาจาก Replicate Magic Item/Magic Item Tinker อยู่แล้ว = เท่า baseline [M:3/4] [R:2/3] [B:3/3] |
+| **Utility** | 7/10 (A) | Arcane Armor เป็น spellcasting focus + ไม่มีข้อจำกัด Str requirement แต่ breadth utility โดยรวมไม่ได้กว้างขึ้นจาก baseline ที่มาจาก Replicate Magic Item/Magic Item Tinker อยู่แล้ว = เท่า baseline [M:3/4] [R:2/3] [B:2/3] |
 | **Versatility** | 9/10 (S) | เลือกสลับได้ถึง **3 Armor Model** — Dreadnaught (บุก-เพิ่มขนาด/reach), Guardian (แทงค์-forced movement), Infiltrator (skirmisher-stealth) — ได้ทุก short/long rest แค่มี Smith's Tools ในมือ (2024 เพิ่ม Dreadnaught เข้ามาใหม่ 2014 มีแค่ 2 โมเดล) ปรับ playstyle ทั้งชุดให้เข้ากับสถานการณ์ได้กว้างกว่าเดิมอีก [M:3/4] [R:3/3] [B:3/3] |
 
 ### Artillerist (EFA)

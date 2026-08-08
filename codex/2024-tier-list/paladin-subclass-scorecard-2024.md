@@ -63,7 +63,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Invincible Conqueror (lv20, ตีเพิ่มอีก 1 ครั้ง + crit range 19-20 + resist ดาเมจทุกชนิด นาน 1 นาที) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Invincible Conqueror (lv20, ตีเพิ่มอีก 1 ครั้ง + crit range 19-20 + resist ดาเมจทุกชนิด นาน 1 นาที) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 8/10 (A) | Conquering Presence (CD, AoE Frightened) + Aura of Conquest (lv7, เป้าที่ Frightened speed เป็น 0 ในออร่า + psychic dmg ต่อเนื่อง) — lockdown ที่ครบเครื่อง [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 9/10 (S) | ไม่มี ally-support ใหม่ (ออร่าเน้นข่มขู่ศัตรู) = เท่า baseline |
 | **Survivability** | 9/10 (S) | Scornful Rebuke (lv15, psychic dmg ตอบโต้ทุกครั้งที่โดนตี) + Invincible Conqueror (resist ทุกดาเมจ) [M:3/4] [R:3/3] [B:3/3] |
@@ -78,9 +78,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Sacred Weapon (บวก Cha mod เข้า attack roll + เลือกดาเมจ radiant แทนได้) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Sacred Weapon (บวก Cha mod เข้า attack roll + เลือกดาเมจ radiant แทนได้) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
-| **Support** | 10/10 (S) | Aura of Devotion (lv7, immune Charmed ทั้งออร่า) + Smite of Protection (lv15, half cover ให้ทีมทุกครั้งที่ smite) + Holy Nimbus (lv20, radiant dmg อัตโนมัติใส่ศัตรูในออร่า) [M:3/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Aura of Devotion (lv7, immune Charmed ทั้งออร่า) + Smite of Protection (lv15, half cover ให้ทีมทุกครั้งที่ smite) + Holy Nimbus (lv20, radiant dmg อัตโนมัติใส่ศัตรูในออร่า) [M:4/4] [R:3/3] [B:3/3] |
 | **Survivability** | 9/10 (S) | Aura of Devotion ป้องกันตัวเองจาก Charmed ด้วย + Holy Nimbus (Advantage save ต้าน fiend/undead) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 4/10 (C) | Sacred Weapon's แสงสว่าง (20/20ft) เป็น utility เล็กน้อย = ใกล้เท่า baseline |
@@ -93,11 +93,11 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Shadow Form (lv20, extra 3d6 necrotic ทุกครั้งที่ตีเมลีโดนในที่มืด/สลัว) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Shadow Form (lv20, extra 3d6 necrotic ทุกครั้งที่ตีเมลีโดนในที่มืด/สลัว) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Cover of Darkness (CD, AoE ความมืดวิเศษ 15ft) เป็น battlefield control เล็กน้อย [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 9/10 (S) | Slip Into the Shadows (lv7, ally ในออร่าใช้ Hide เป็น bonus action ได้ด้วย) = ใกล้เท่า baseline |
 | **Survivability** | 9/10 (S) | Cloak of Night (lv15, reaction กด Disadvantage การโจมตีถัดไปใส่เรา) [M:3/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Shadow Form (bonus action teleport 60ft ระหว่างฤทธิ์) [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Shadow Form (bonus action teleport 60ft ระหว่างฤทธิ์) [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 6/10 (B) | Shrouded Armor (Cha บวกเข้า Stealth + ไม่มี disadvantage) + Cover of Darkness (ใช้แทรกซึมได้) [M:2/4] [R:2/3] [B:2/3] |
 | **Versatility** | 7/10 (A) | เปิด role นักฆ่าเงา/แทรกซึมที่ต่างจาก paladin ทั่วไป [M:2/4] [R:2/3] [B:3/3] |
 
@@ -108,9 +108,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Living Legend's Unerring Strike (lv20, แปลงพลาดเป็นโดน 1 ครั้ง/เทิร์น) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Living Legend's Unerring Strike (lv20, แปลงพลาดเป็นโดน 1 ครั้ง/เทิร์น) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
-| **Support** | 10/10 (S) | Inspiring Smite (CD, แจก temp HP ให้ทีมทุกครั้งที่ smite) + Aura of Alacrity (lv7, +10ft speed ให้ ally ที่เข้าออร่า) [M:3/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Inspiring Smite (CD, แจก temp HP ให้ทีมทุกครั้งที่ smite) + Aura of Alacrity (lv7, +10ft speed ให้ ally ที่เข้าออร่า) [M:4/4] [R:3/3] [B:3/3] |
 | **Survivability** | 9/10 (S) | Glorious Defense (lv15, reaction บวก AC ให้ตัวเอง/คนใกล้ตัวจนพลาด+ตีสวนได้) + Living Legend (reroll failed save) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 6/10 (B) | Peerless Athlete (Advantage Athletics/Acrobatics + ระยะกระโดดเพิ่ม) [M:2/4] [R:2/3] [B:2/3] |
@@ -123,11 +123,11 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Blaspheme (CD, AoE psychic 2d6×prof bonus) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Blaspheme (CD, AoE psychic 2d6×prof bonus) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 8/10 (A) | Turn the Holy (turn celestial**และ**ผู้แคส Wis-based ในระยะเดียว — กว้างกว่า Turn Undead ปกติ) + Blaspheme (deafen) [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 9/10 (S) | ไม่มี ally-support บวกใหม่ (ธีมต้านศาสนา) = เท่า baseline |
 | **Survivability** | 9/10 (S) | Implacable Will (lv15, reroll failed save ด้วย Advantage) + Apostate (lv20, temp HP 20/เทิร์น) [M:3/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Godless Aura (lv7, แคส Counterspell ฟรีเป็น reaction ต้านผู้แคส Wis-based) [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Godless Aura (lv7, แคส Counterspell ฟรีเป็น reaction ต้านผู้แคส Wis-based) [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | ไม่มี utility นอกคอมแบตใหม่ที่ชัดเจน = เท่า baseline |
 | **Versatility** | 6/10 (B) | ผู้เชี่ยวชาญต้านเวทมนตร์ศักดิ์สิทธิ์เฉพาะทาง = ใกล้เท่า baseline |
 
@@ -138,8 +138,8 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Entropic Infection (CD, extra 2d6 necrotic ต่อเนื่อง + ลบ resistance/immunity necrotic ของเป้า) [M:3/4] [R:2/3] [B:3/3] |
-| **Control** | 9/10 (S) | Debilitating Fever (CD, Poisoned+Incapacitated บนเป้า — เท่ากับ stun เฉพาะทาง) + Aura of Rampant Sickness (lv7, reaction กด Disadvantage บน d20 test ใดๆ ในออร่า) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Entropic Infection (CD, extra 2d6 necrotic ต่อเนื่อง + ลบ resistance/immunity necrotic ของเป้า) [M:3/4] [R:3/3] [B:3/3] |
+| **Control** | 9/10 (S) | Debilitating Fever (CD, Poisoned+Incapacitated บนเป้า — เท่ากับ stun เฉพาะทาง) + Aura of Rampant Sickness (lv7, reaction กด Disadvantage บน d20 test ใดๆ ในออร่า) [M:3/4] [R:3/3] [B:3/3] |
 | **Support** | 9/10 (S) | ไม่มี ally-support บวกใหม่ (ธีม debuff/DoT ล้วน) = เท่า baseline |
 | **Survivability** | 9/10 (S) | Disgusting Resilience (lv15, จ่าย Hit Dice ลดดาเมจตอน 0 HP) + Plaguebringer (lv20, immune poison + resist necrotic + max HP ไม่ลด) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
@@ -153,9 +153,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Rebuke the Violent (CD, reaction ดาเมจ radiant สะท้อนเท่าที่ผู้โจมตีเพิ่งสร้างใส่คนอื่น) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Rebuke the Violent (CD, reaction ดาเมจ radiant สะท้อนเท่าที่ผู้โจมตีเพิ่งสร้างใส่คนอื่น) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
-| **Support** | 10/10 (S) | Aura of the Guardian (lv7, reaction รับดาเมจแทน ally ในระยะ 10→30ft เต็มจำนวนไม่ลด) — protector tool ที่ตรงไปตรงมาที่สุดในกลุ่ม [M:3/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Aura of the Guardian (lv7, reaction รับดาเมจแทน ally ในระยะ 10→30ft เต็มจำนวนไม่ลด) — protector tool ที่ตรงไปตรงมาที่สุดในกลุ่ม [M:4/4] [R:3/3] [B:3/3] |
 | **Survivability** | 9/10 (S) | Protective Spirit (lv15, ฮีลตัวเองทุกเทิร์นตอนเลือดต่ำ) + Emissary of Redemption (lv20, resist ทุกดาเมจจากศัตรูที่ยังไม่โจมตี) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 5/10 (B) | Emissary of Peace (+5 Persuasion ชั่วคราว) [M:1/4] [R:2/3] [B:2/3] |
@@ -198,7 +198,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Thunder God (lv20, แคส Call Lightning ฟรีเป็น bonus action ได้ทุกเทิร์นระหว่างฤทธิ์) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Thunder God (lv20, แคส Call Lightning ฟรีเป็น bonus action ได้ทุกเทิร์นระหว่างฤทธิ์) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Vortex Aura (lv7, bonus action สร้าง difficult terrain รอบตัว) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 9/10 (S) | ไม่มี ally-support บวกใหม่ (ธีม self-focused blaster) = เท่า baseline |
 | **Survivability** | 9/10 (S) | Storm Soul (lv15, resist lightning + ตอบโต้ดาเมจ lightning) + Thunder God (immune lightning/thunder) [M:3/4] [R:3/3] [B:3/3] |
@@ -215,9 +215,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม defense/support ล้วน) = เท่า baseline |
 | **Control** | 7/10 (A) | Nature's Wrath (CD, AoE Restrained 15ft) [M:2/4] [R:2/3] [B:3/3] |
-| **Support** | 10/10 (S) | Aura of Warding (lv7, resist necrotic/psychic/radiant ให้ตัวเอง+ทีมทั้งออร่า) [M:3/4] [R:3/3] [B:3/3] |
-| **Survivability** | 10/10 (S) | Undying Sentinel (lv15, ตกลง 1 HP แทน 0 + ฮีล 3×level, 1/long rest) + Elder Champion (lv20, ฟื้น HP 10/เทิร์น) [M:3/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Elder Champion (lv20, แคส spell action-casting-time เป็น bonus action ได้) [M:2/4] [R:2/3] [B:2/3] |
+| **Support** | 10/10 (S) | Aura of Warding (lv7, resist necrotic/psychic/radiant ให้ตัวเอง+ทีมทั้งออร่า) [M:4/4] [R:3/3] [B:3/3] |
+| **Survivability** | 10/10 (S) | Undying Sentinel (lv15, ตกลง 1 HP แทน 0 + ฮีล 3×level, 1/long rest) + Elder Champion (lv20, ฟื้น HP 10/เทิร์น) [M:4/4] [R:3/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Elder Champion (lv20, แคส spell action-casting-time เป็น bonus action ได้) [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | ไม่มี utility นอกคอมแบตใหม่ = เท่า baseline |
 | **Versatility** | 7/10 (A) | ผสม control/resist-aura/self-heal ในธีมผู้พิทักษ์ธรรมชาติ [M:2/4] [R:2/3] [B:3/3] |
 
@@ -230,7 +230,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม tank/support ล้วน) = เท่า baseline |
 | **Control** | 7/10 (A) | Champion Challenge (CD, bonus action AoE taunt-lock ห้ามศัตรูขยับหนีเกิน 30ft) [M:2/4] [R:2/3] [B:3/3] |
-| **Support** | 10/10 (S) | Turn the Tide (CD, bonus action AoE ฮีล ally ที่ Bloodied) + Divine Allegiance (lv7, reaction รับดาเมจแทน ally เต็มจำนวนไม่ลด) + Exalted Champion (lv20, Advantage death save+Wis save ให้ทั้งทีม) [M:3/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Turn the Tide (CD, bonus action AoE ฮีล ally ที่ Bloodied) + Divine Allegiance (lv7, reaction รับดาเมจแทน ally เต็มจำนวนไม่ลด) + Exalted Champion (lv20, Advantage death save+Wis save ให้ทั้งทีม) [M:4/4] [R:3/3] [B:3/3] |
 | **Survivability** | 9/10 (S) | Unyielding Spirit (lv15, Advantage ต้าน paralyzed/stunned) + Exalted Champion (resist B/P/S) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 4/10 (C) | ไม่มี utility นอกคอมแบตใหม่ = เท่า baseline |
@@ -243,11 +243,11 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Efreeti's Fury (ตัวเลือก Elemental Smite, extra fire dmg ใส่ 2 เป้าพร้อมกัน) [M:2/4] [R:2/3] [B:3/3] |
-| **Control** | 8/10 (A) | Dao's Crush (Restrained) + Marid's Surge (AoE push+prone) — ตัวเลือก control ที่ยืดหยุ่นบน smite เดียวกัน [M:2/4] [R:2/3] [B:3/3] |
-| **Support** | 10/10 (S) | Aura of Elemental Shielding (lv7, resist ธาตุที่เลือกให้ทีม สลับได้ทุกเทิร์น) + Noble Scion's Minor Wish (lv20, reroll ทดแทน d20 test ที่ล้มเหลวให้ตัวเองหรือ ally ในออร่า) [M:3/4] [R:3/3] [B:3/3] |
-| **Survivability** | 10/10 (S) | Djinni's Escape (ตัวเลือก smite, teleport+resist B/P/S+immune grapple/prone/restrain) + Elemental Rebuke (lv15, reaction ลดดาเมจครึ่ง+ตอบโต้) [M:3/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | ตัวเลือก Elemental Smite ทั้งหมดแนบมากับ Divine Smite ที่แคสอยู่แล้วไม่เสีย action เพิ่ม [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Efreeti's Fury (ตัวเลือก Elemental Smite, extra fire dmg ใส่ 2 เป้าพร้อมกัน) [M:2/4] [R:3/3] [B:3/3] |
+| **Control** | 8/10 (A) | Dao's Crush (Restrained) + Marid's Surge (AoE push+prone) — ตัวเลือก control ที่ยืดหยุ่นบน smite เดียวกัน [M:2/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Aura of Elemental Shielding (lv7, resist ธาตุที่เลือกให้ทีม สลับได้ทุกเทิร์น) + Noble Scion's Minor Wish (lv20, reroll ทดแทน d20 test ที่ล้มเหลวให้ตัวเองหรือ ally ในออร่า) [M:4/4] [R:3/3] [B:3/3] |
+| **Survivability** | 10/10 (S) | Djinni's Escape (ตัวเลือก smite, teleport+resist B/P/S+immune grapple/prone/restrain) + Elemental Rebuke (lv15, reaction ลดดาเมจครึ่ง+ตอบโต้) [M:4/4] [R:3/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | ตัวเลือก Elemental Smite ทั้งหมดแนบมากับ Divine Smite ที่แคสอยู่แล้วไม่เสีย action เพิ่ม [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | Genie's Splendor (skill proficiency) เป็น utility เล็กน้อย = ใกล้เท่า baseline |
 | **Versatility** | 8/10 (A) | เลือกได้ 4 ตัวเลือก Elemental Smite (control/damage/escape/AoE) ตามสถานการณ์ — ยืดหยุ่นที่สุดในกลุ่ม [M:2/4] [R:3/3] [B:3/3] |
 
@@ -258,7 +258,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Incandescent Fury (lv15, Smite die อัปเกรดเป็น d10) + Zenith (lv20, แคส Sunbeam ฟรี) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Incandescent Fury (lv15, Smite die อัปเกรดเป็น d10) + Zenith (lv20, แคส Sunbeam ฟรี) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Solar Flare (CD, AoE Blinded 20ft) [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 9/10 (S) | Sun's Warmth (lv7, resist cold/fire ให้ ally ในออร่าด้วย) = ใกล้เท่า baseline |
 | **Survivability** | 9/10 (S) | Glorious Radiance (CD, temp HP เท่า level+Cha + ตอบโต้ดาเมจ radiant) + Zenith (ฮีลตัวเองทุกเทิร์นตอนเลือดต่ำ) [M:3/4] [R:3/3] [B:3/3] |
@@ -273,9 +273,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Vigilant Rebuke (lv15, reaction ดาเมจ force ทุกครั้งที่ตัวเอง/ally เซฟ Int/Wis/Cha ผ่าน) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Vigilant Rebuke (lv15, reaction ดาเมจ force ทุกครั้งที่ตัวเอง/ally เซฟ Int/Wis/Cha ผ่าน) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Abjure the Extraplanar (CD, turn 5 ชนิดสิ่งมีชีวิตนอกโลก) [M:2/4] [R:2/3] [B:3/3] |
-| **Support** | 10/10 (S) | Watcher's Will (CD, Advantage Int/Wis/Cha save ให้ตัวเอง+ally สูงสุดเท่า Cha mod คน) + Aura of the Sentinel (lv7, บวก initiative ให้ทั้งทีม) [M:3/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Watcher's Will (CD, Advantage Int/Wis/Cha save ให้ตัวเอง+ally สูงสุดเท่า Cha mod คน) + Aura of the Sentinel (lv7, บวก initiative ให้ทั้งทีม) [M:4/4] [R:3/3] [B:3/3] |
 | **Survivability** | 9/10 (S) | Watcher's Will ป้องกันตัวเองได้ด้วย + Mortal Bulwark (lv20, truesight) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 5/10 (B) | Mortal Bulwark (lv20, truesight 120ft) มาช้ามากแต่ยืนยันได้ [M:1/4] [R:2/3] [B:2/3] |
@@ -303,10 +303,10 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | North Wind (CD, AoE cone cold dmg สเกลตาม prof bonus + ลด speed ครึ่ง) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | North Wind (CD, AoE cone cold dmg สเกลตาม prof bonus + ลด speed ครึ่ง) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | North Wind (ลด speed ครึ่ง) + Father Winter (lv20, difficult terrain aura) [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 9/10 (S) | Frigid Aura (lv7, resist cold/fire ให้ ally ในออร่าด้วย) = ใกล้เท่า baseline |
-| **Survivability** | 10/10 (S) | Ice Armor (CD, temp HP 2×level+Cha) + Iceflesh (lv15, reaction "แช่แข็ง" ดีเลย์ดาเมจ/condition ใดๆ ไว้ 1 นาที) + Father Winter (immune cold) [M:3/4] [R:3/3] [B:3/3] |
+| **Survivability** | 10/10 (S) | Ice Armor (CD, temp HP 2×level+Cha) + Iceflesh (lv15, reaction "แช่แข็ง" ดีเลย์ดาเมจ/condition ใดๆ ไว้ 1 นาที) + Father Winter (immune cold) [M:4/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 4/10 (C) | Father Winter's ดับไฟที่ไม่ใช่เวทมนตร์ เป็น utility เฉพาะทางแคบ = ใกล้เท่า baseline |
 | **Versatility** | 6/10 (B) | Cold-blaster/tank hybrid = ใกล้เท่า baseline |
@@ -318,9 +318,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Mark of the Heretic (CD, ขยาย crit range เป็น 19-20 ใส่เป้าที่มาร์ก + ตีฟรีทุกครั้งที่เป้าเริ่มเทิร์นผ่าน reaction) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Mark of the Heretic (CD, ขยาย crit range เป็น 19-20 ใส่เป้าที่มาร์ก + ตีฟรีทุกครั้งที่เป้าเริ่มเทิร์นผ่าน reaction) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Apocalyptic Revelation (lv20, AoE Blinded รอบตัว) [M:2/4] [R:2/3] [B:3/3] |
-| **Support** | 10/10 (S) | Aura of Clarity (lv7, immune Blinded+เห็นล่องหนให้ทีมทั้งออร่า) + Smite the Heretic (lv20, Advantage การโจมตีให้ทั้งทีมใส่เป้าที่เลือก) [M:3/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Aura of Clarity (lv7, immune Blinded+เห็นล่องหนให้ทีมทั้งออร่า) + Smite the Heretic (lv20, Advantage การโจมตีให้ทั้งทีมใส่เป้าที่เลือก) [M:4/4] [R:3/3] [B:3/3] |
 | **Survivability** | 9/10 (S) | Aura of Clarity ป้องกันตัวเองจาก Blinded ด้วย [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 8/10 (A) | Mark of the Heretic ให้ตีฟรีผ่าน reaction ทุกครั้งที่เป้าที่มาร์กเริ่มเทิร์น [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 6/10 (B) | Compel Confession (lv15, แคส Zone of Truth ฟรี + psychic dmg ถ้าโกหก) [M:2/4] [R:2/3] [B:2/3] |
@@ -333,10 +333,10 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Aura of Hate (lv7, บวก Cha mod เข้าดาเมจเมลี passive ตลอดเวลา) + Dread Lord (lv20, psychic dmg ต่อเนื่อง + bonus action โจมตีเงา) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Aura of Hate (lv7, บวก Cha mod เข้าดาเมจเมลี passive ตลอดเวลา) + Dread Lord (lv20, psychic dmg ต่อเนื่อง + bonus action โจมตีเงา) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 8/10 (A) | Control Undead (CD, ครอบงำ undead 24 ชม.) + Dreadful Aspect (CD, AoE Frightened) [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 9/10 (S) | Aura of Hate ให้ผลกับ fiend/undead ที่อยู่ใกล้ ไม่ใช่ ally มีชีวิต = เท่า baseline |
 | **Survivability** | 9/10 (S) | Supernatural Resistance (lv15, resist B/P/S จากอาวุธไม่วิเศษ) [M:3/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Dread Lord ให้โจมตีเพิ่มผ่าน bonus action ทุกเทิร์นระหว่างฤทธิ์ [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Dread Lord ให้โจมตีเพิ่มผ่าน bonus action ทุกเทิร์นระหว่างฤทธิ์ [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 5/10 (B) | Control Undead (ครอบงำ undead ได้นานถึง 24 ชม. เป็น pet/utility เฉพาะทาง) [M:2/4] [R:2/3] [B:1/3] |
 | **Versatility** | 7/10 (A) | Paladin-วายร้ายที่ผสม control(undead+fear)/damage ครบเครื่อง [M:2/4] [R:2/3] [B:3/3] |

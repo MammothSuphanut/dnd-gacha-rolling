@@ -32,33 +32,36 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) หมายเหตุพิเศษ: **Banneret (2024, FRHoF)** และ **Purple Dragon Knight (Banneret) (2014, SCAG)** เป็น subclass เดียวกันตามสายข้อมูล (`reprintedAs`) แต่ progress tracker แยกให้คะแนน 2 รายการเพราะกลไกเวอร์ชัน 2014 อ่อนกว่า 2024 อย่างมีนัยสำคัญ (ไม่มี ritual spell, ไม่มี advantage bonus, Bulwark จำกัดแค่ 3 saving throw) — คะแนนจึงต่างกันแม้ธีมเดียวกัน มี 3 subclass ที่ไฟล์ข้อมูลไม่ระบุรายละเอียดตัวเลือกย่อยครบ (Arcane Shot ของ Arcane Archer, Martial Maneuvers ของ Blade Breaker, Rune effects ของ Rune Knight, Compound options ของ Living Crucible) จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้ พร้อมหมายเหตุกำกับ
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Arcane Archer | XGE 🕰️ | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 6 (B) |
-| Banneret | FRHoF | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 10 (S) | 4 (C) | 7 (A) |
-| Battle Master | XPHB | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 9 (S) | 2 (C) | 9 (S) |
-| Blade Breaker | GrimHollowPlayerPack 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 0 (D) | 8 (A) |
-| Bone Knight | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 10 (S) | 9 (S) | 3 (C) | 6 (B) |
-| Brawler | VSS 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 2 (C) | 6 (B) |
-| Bulwark Warrior | GrimHollowPG24 | 9 (S) | 7 (A) | 6 (B) | 10 (S) | 8 (A) | 0 (D) | 7 (A) |
-| Cavalier | XGE 🕰️ | 9 (S) | 8 (A) | 6 (B) | 9 (S) | 10 (S) | 2 (C) | 7 (A) |
-| Celestial Lancer | VSS 🕰️ | 9 (S) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 5 (B) | 7 (A) |
-| Champion | XPHB | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 0 (D) | 5 (B) |
-| Corsair | VSS 🕰️ | 9 (S) | 5 (B) | 0 (D) | 9 (S) | 9 (S) | 3 (C) | 7 (A) |
-| Dungeoneer | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 10 (S) | 8 (A) | 5 (B) | 6 (B) |
-| Echo Knight | EGW 🕰️ | 10 (S) | 3 (C) | 5 (B) | 9 (S) | 9 (S) | 5 (B) | 8 (A) |
-| Eldritch Knight | XPHB | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 9 (S) | 6 (B) | 9 (S) |
-| Living Crucible | GrimHollowPG24 | 8 (A) | 3 (C) | 0 (D) | 9 (S) | 9 (S) | 5 (B) | 7 (A) |
-| Mage Hand Magus | VSS 🕰️ | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 9 (S) | 8 (A) | 8 (A) |
-| Nightwatcher | GrimHollowPG24 | 9 (S) | 6 (B) | 5 (B) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
-| Psi Warrior | XPHB | 9 (S) | 6 (B) | 6 (B) | 10 (S) | 9 (S) | 6 (B) | 9 (S) |
-| Purple Dragon Knight (Banneret) | SCAG 🕰️ | 8 (A) | 3 (C) | 8 (A) | 8 (A) | 9 (S) | 2 (C) | 6 (B) |
-| Rune Knight | TCE 🕰️ | 9 (S) | 6 (B) | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
-| Samurai | XGE 🕰️ | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 9 (S) | 2 (C) | 5 (B) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Arcane Archer | C | XGE 🕰️ | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 6 (B) |
+| Banneret | A | FRHoF | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 10 (S) | 4 (C) | 7 (A) |
+| Battle Master | S | XPHB | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 9 (S) | 2 (C) | 9 (S) |
+| Blade Breaker | B | GrimHollowPlayerPack 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 0 (D) | 8 (A) |
+| Bone Knight | C | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 10 (S) | 9 (S) | 3 (C) | 6 (B) |
+| Brawler | B | VSS 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 2 (C) | 6 (B) |
+| Bulwark Warrior | A | GrimHollowPG24 | 9 (S) | 7 (A) | 6 (B) | 10 (S) | 8 (A) | 0 (D) | 7 (A) |
+| Cavalier | S | XGE 🕰️ | 9 (S) | 8 (A) | 6 (B) | 9 (S) | 10 (S) | 2 (C) | 7 (A) |
+| Celestial Lancer | S | VSS 🕰️ | 9 (S) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 5 (B) | 7 (A) |
+| Champion | C | XPHB | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 0 (D) | 5 (B) |
+| Corsair | B | VSS 🕰️ | 9 (S) | 5 (B) | 0 (D) | 9 (S) | 9 (S) | 3 (C) | 7 (A) |
+| Dungeoneer | B | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 10 (S) | 8 (A) | 5 (B) | 6 (B) |
+| Echo Knight | A | EGW 🕰️ | 10 (S) | 3 (C) | 5 (B) | 9 (S) | 9 (S) | 5 (B) | 8 (A) |
+| Eldritch Knight | A | XPHB | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 9 (S) | 6 (B) | 9 (S) |
+| Living Crucible | B | GrimHollowPG24 | 8 (A) | 3 (C) | 0 (D) | 9 (S) | 9 (S) | 5 (B) | 7 (A) |
+| Mage Hand Magus | A | VSS 🕰️ | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 9 (S) | 8 (A) | 8 (A) |
+| Nightwatcher | S | GrimHollowPG24 | 9 (S) | 6 (B) | 5 (B) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
+| Psi Warrior | S | XPHB | 9 (S) | 6 (B) | 6 (B) | 10 (S) | 9 (S) | 6 (B) | 9 (S) |
+| Purple Dragon Knight (Banneret) | A | SCAG 🕰️ | 8 (A) | 3 (C) | 8 (A) | 8 (A) | 9 (S) | 2 (C) | 6 (B) |
+| Rune Knight | S | TCE 🕰️ | 9 (S) | 6 (B) | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
+| Samurai | C | XGE 🕰️ | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 9 (S) | 2 (C) | 5 (B) |
 
 ---
 
 ### Arcane Archer (XGE 🕰️)
+
+**Overall**: C — Damage/Survivability/Action Economy อยู่ที่ baseline สูงอยู่แล้ว (A/A/A) ตัวชี้วัดจริงคือ 4 axis ที่ baseline อ่อน (Control/Support/Utility/Versatility) — มีแค่ Utility/Versatility ที่ขยับ Control/Support ยังนิ่งสนิท
+
 
 > **หมายเหตุข้อมูล**: รายการ "Arcane Shot Options" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนน Damage/Control แบบระมัดระวังจากกลไกที่ยืนยันได้เท่านั้น (Curving Shot, Magic Arrow, Ever-Ready Shot)
 
@@ -74,6 +77,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Banneret (FRHoF)
 
+**Overall**: A — Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) บวก Utility/Versatility ขยับตาม แต่ Control ยังนิ่ง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม support/leader ล้วน) = เท่า baseline |
@@ -86,6 +92,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Battle Master (XPHB)
 
+**Overall**: S — ทั้ง 4 axis ที่ baseline อ่อน (Control/Support/Utility/Versatility) ขยับขึ้นพร้อมกัน โดย Control ถึง A และ Versatility ถึง S — สมบูรณ์ที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Maneuver อย่าง Precision Attack/Trip Attack เพิ่ม Superiority Die (d8→d12) เข้าดาเมจ/เอฟเฟกต์ทุกการตีที่เลือกใช้ ยืดหยุ่นเลือกได้จากคลัง maneuver ที่รู้ [M:3/4] [R:3/3] [B:3/3] |
@@ -97,6 +106,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | **Versatility** | 9/10 (S) | เลือก maneuver ได้จากคลังใหญ่ (สูงสุด 9 ตัวที่ lv15) ครอบคลุมดาเมจ/control/support/defense พร้อมกัน — "มีดพกสวิส" ของ Fighter ทั้งหมด [M:3/4] [R:3/3] [B:3/3] |
 
 ### Blade Breaker (GrimHollowPlayerPack 🕰️)
+
+**Overall**: B — มีแค่ Control/Versatility ที่ขยับ Support และ Utility ยังเป็น 0 เต็มทั้งคู่
+
 
 > **หมายเหตุข้อมูล**: รายการ "Blade Breaker Maneuvers" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังจากกลไกที่ยืนยันได้เท่านั้น (4 stance + feature เสริม)
 
@@ -112,6 +124,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Bone Knight (VSS 🕰️)
 
+**Overall**: C — มีแค่ Utility/Versatility ที่ขยับเล็กน้อย Control/Support ยังนิ่งสนิททั้งคู่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Bone Blades ให้แลก Hit Die เพิ่มดาเมจอาวุธที่ตีโดนได้ (ตั้งแต่ lv7) และเป็นอาวุธที่แยกออกจากตัวไม่ได้เลย [M:3/4] [R:3/3] [B:3/3] |
@@ -123,6 +138,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | ระบบแปลง Hit Die เป็น AC/ดาเมจ/Second Wind/Action Surge ให้ยืดหยุ่นเลือกใช้ resource เดียวกันได้หลายทาง [M:2/4] [R:2/3] [B:2/3] |
 
 ### Brawler (VSS 🕰️)
+
+**Overall**: B — Control/Utility/Versatility ขยับกลางๆ 3 ใน 4 axis อ่อน แต่ Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -136,6 +154,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Bulwark Warrior (GrimHollowPG24)
 
+**Overall**: A — Control กระโดด +4 และ Support กระโดด +6 บวก Versatility ขยับตาม แต่ Utility ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Aggressive Defense (แลก temp HP เป็นดาเมจเพิ่มทุกครั้งที่ตีโดน) + Threatening Presence (lv7, AoE 5d6 psychic) [M:3/4] [R:3/3] [B:3/3] |
@@ -148,17 +169,23 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Cavalier (XGE 🕰️)
 
+**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Control ถึง A (กระโดด +5) และ Support ถึง B (กระโดด +6)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Unwavering Mark ให้ bonus action ตีสวนแบบ Advantage + ดาเมจเสริมเท่าครึ่ง Fighter level เมื่อเป้าที่มาร์กไว้ทำร้ายคนอื่น [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 8/10 (A) | Unwavering Mark (Disadvantage โจมตีคนอื่นในระยะ 5ft) + Hold the Line (lv10, ลด speed เป้าเป็น 0 เมื่อโดน OA) — lockdown-tank เต็มรูปแบบ [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 6/10 (B) | Warding Maneuver (reaction, บวก Armor Class ให้ ally/ม้าที่โดนโจมตี + resistance ถ้ายังโดน) [M:2/4] [R:2/3] [B:2/3] |
-| **Survivability** | 9/10 (S) | Warding Maneuver ใช้ป้องกันตัวเองได้เช่นกัน [M:2/4] [R:2/3] [B:3/3] |
+| **Survivability** | 9/10 (S) | Warding Maneuver ใช้ป้องกันตัวเองได้เช่นกัน [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 10/10 (S) | Vigilant Defender (lv18) ให้ reaction พิเศษสำหรับทำ opportunity attack ได้ **1 ครั้งต่อเทิร์นของศัตรูแต่ละตัว** (แยกจาก reaction ปกติ) — economy multiplier ที่มหาศาลเมื่อเจอศัตรูหลายตัว [M:4/4] [R:3/3] [B:3/3] |
 | **Utility** | 2/10 (C) | Bonus Proficiency (skill/ภาษา) เป็น utility เล็กน้อยจาก 0 [M:1/4] [R:1/3] [B:0/3] |
 | **Versatility** | 7/10 (A) | เปิด role "lockdown-tank" เต็มรูปแบบ (ดาเมจ+control+protect) [M:2/4] [R:2/3] [B:3/3] |
 
 ### Celestial Lancer (VSS 🕰️)
+
+**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว (Control/Support/Utility ล้วนกระโดด +3 ถึง +5) กว้างที่สุดในกลุ่มทั้งหมด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -172,6 +199,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Champion (XPHB)
 
+**Overall**: C — 3 ใน 4 axis อ่อนของ baseline (Control/Support/Utility) นิ่งสนิทไม่ขยับเลยสักตัว มีแค่ Versatility ที่ขยับ +1 เล็กน้อย — แก้จุดอ่อนของ baseline น้อยที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Improved/Superior Critical (โดน crit ที่ 19-20 → 18-20 ที่ lv15) ขยายช่วงคริติคอลซึ่งทวีคูณกับจำนวนการโจมตีที่สูงอยู่แล้วของ baseline [M:3/4] [R:3/3] [B:3/3] |
@@ -183,6 +213,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | **Versatility** | 5/10 (B) | Additional Fighting Style (lv7) เพิ่มตัวเลือก passive อีกหนึ่ง แต่ยังคงเป็น "striker เรียบง่ายที่สุด" ของคลาส [M:1/4] [R:2/3] [B:2/3] |
 
 ### Corsair (VSS 🕰️)
+
+**Overall**: B — Control/Utility/Versatility ขยับกลางๆ 3 ใน 4 axis อ่อน แต่ Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -196,6 +229,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Dungeoneer (VSS 🕰️)
 
+**Overall**: B — Utility กระโดด +5 บวก Versatility ขยับตาม แต่ Control/Support ยังนิ่งสนิททั้งคู่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Kick In The Door (Advantage ทุกการโจมตีในรอบแรกถ้าเปิดฉากรุก) + Monster Kill (lv10, extra damage die ใส่ 5 ประเภทสัตว์, 3/rest) [M:3/4] [R:3/3] [B:3/3] |
@@ -208,6 +244,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Echo Knight (EGW 🕰️)
 
+**Overall**: A — Support และ Utility กระโดด +5 ทั้งคู่ บวก Versatility กระโดด +4 มีแค่ Control ที่ยังนิ่ง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Unleash Incarnation ให้ตีเพิ่มอีกครั้งจากตำแหน่ง echo ทุกครั้งที่ใช้ Attack action (Con mod ครั้ง/rest) บวก Legion of One (lv18) มี echo 2 ตัวพร้อมกัน — เพิ่มจำนวนการโจมตี/เทิร์นเกินเพดานปกติของคลาส [M:4/4] [R:3/3] [B:3/3] |
@@ -216,9 +255,12 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | **Survivability** | 9/10 (S) | Reclaim Potential (lv15, temp HP เมื่อ echo ถูกทำลาย, Con mod ครั้ง/rest) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 9/10 (S) | ตีจากตำแหน่ง echo/สลับที่ผ่าน bonus action + OA จากตำแหน่ง echo ได้ด้วย — ขยาย positioning options โดยไม่เสีย action เพิ่ม [M:3/4] [R:3/3] [B:3/3] |
 | **Utility** | 5/10 (B) | Echo Avatar (lv7, มองผ่านตา echo ได้ไกลถึง 1,000ft นาน 10 นาที) เป็น scouting utility ที่แรงมาก [M:2/4] [R:2/3] [B:1/3] |
-| **Versatility** | 8/10 (A) | กลไก "ร่างที่สอง" เปิด role สอดแนม/จัดตำแหน่ง/ป้องกัน ally ที่ Fighter ปกติทำไม่ได้ [M:2/4] [R:2/3] [B:3/3] |
+| **Versatility** | 8/10 (A) | กลไก "ร่างที่สอง" เปิด role สอดแนม/จัดตำแหน่ง/ป้องกัน ally ที่ Fighter ปกติทำไม่ได้ [M:3/4] [R:2/3] [B:3/3] |
 
 ### Eldritch Knight (XPHB)
+
+**Overall**: A — Control กระโดด +4 และ Utility กระโดด +6 บวก Versatility เป็น S แต่ Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -231,6 +273,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | **Versatility** | 9/10 (S) | เข้าถึง spell list ของ Wizard ทั้งเล่ม (ดาเมจ/control/utility) ผสมกับ martial baseline — hybrid gish เต็มรูปแบบ [M:3/4] [R:3/3] [B:3/3] |
 
 ### Living Crucible (GrimHollowPG24)
+
+**Overall**: B — Utility/Versatility ขยับ แต่ Control/Support ยังนิ่งสนิททั้งคู่
+
 
 > **หมายเหตุข้อมูล**: รายการ "Compound Options" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล จึงให้คะแนน Damage/Control แบบระมัดระวัง
 
@@ -246,6 +291,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Mage Hand Magus (VSS 🕰️)
 
+**Overall**: A — Control กระโดด +4 และ Utility กระโดด +8 (D→A เต็มขั้น) บวก Versatility ขยับตาม แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Warhand (lv10, ความสามารถระดับ Bigby's Hand เช่น Clenched Fist ที่ดาเมจแรงมาก) + โจมตีจากระยะไกลผ่านมือได้ (Combat Hands) [M:3/4] [R:3/3] [B:3/3] |
@@ -254,13 +302,16 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | **Survivability** | 8/10 (A) | ไม่มี defense feature โดยตรง (มือเน้นโจมตี/utility) = เท่า baseline |
 | **Action Economy** | 9/10 (S) | Warhand ใช้ action หลักได้พร้อมกับตีด้วยมืออีกข้างเป็น bonus action ในเทิร์นเดียว [M:3/4] [R:3/3] [B:3/3] |
 | **Utility** | 8/10 (A) | Mage Hand ยกของหนักได้ (5×level ปอนด์) + ทำ ability check ระยะไกลได้ทุกแบบ + Handglide (lv15, บินได้) — utility นอกคอมแบตที่กว้างมาก [M:3/4] [R:2/3] [B:3/3] |
-| **Versatility** | 8/10 (A) | ผสมดาเมจ/control/utility ผ่านกลไก "แขนเสริม" ที่ยืดหยุ่นมาก [M:2/4] [R:2/3] [B:3/3] |
+| **Versatility** | 8/10 (A) | ผสมดาเมจ/control/utility ผ่านกลไก "แขนเสริม" ที่ยืดหยุ่นมาก [M:2/4] [R:3/3] [B:3/3] |
 
 ### Nightwatcher (GrimHollowPG24)
 
+**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัวแบบสม่ำเสมอ (Control/Support/Utility ล้วน +3 ถึง +6)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Beat Down (lv18, พลาดใส่เป้าที่ Size Up ไว้ → โจมตีฟรีเพิ่มแบบ Advantage) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Beat Down (lv18, พลาดใส่เป้าที่ Size Up ไว้ → โจมตีฟรีเพิ่มแบบ Advantage) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Size Up (bonus action, reaction กด Disadvantage + Resistance บนการโจมตีของเป้าที่เลือกใส่ตัวเอง/ally ใกล้ตัว) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 5/10 (B) | Size Up ป้องกัน ally ที่อยู่ใกล้ได้ด้วย + Warning Shout (แจก Advantage initiative + เคลื่อนที่ฟรีให้ทีม) [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 9/10 (S) | Night Stalker (lv10, OA ต่อต้านตัวเองมี Disadvantage + ไม่โดน OA ในที่มืด) + Size Up (resistance เมื่อเป้าที่มาร์กตีตัวเอง) [M:3/4] [R:3/3] [B:3/3] |
@@ -269,6 +320,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | Hybrid scout/ambusher/protector ที่เน้นความมืดและ initiative [M:2/4] [R:2/3] [B:3/3] |
 
 ### Psi Warrior (XPHB)
+
+**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Versatility ถึง S (กระโดด +5)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -282,6 +336,9 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Purple Dragon Knight (Banneret) (SCAG 🕰️)
 
+**Overall**: A — Support กระโดด +8 (D→A เต็มขั้น) บวก Utility/Versatility ขยับตาม แต่ Control ยังนิ่ง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ = เท่า baseline |
@@ -294,19 +351,25 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Rune Knight (TCE 🕰️)
 
+**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว (Control/Support/Utility ล้วน +3 ถึง +6)
+
+
 > **หมายเหตุข้อมูล**: รายละเอียด Rune เฉพาะตัว (Cloud/Fire/Frost/Hill/Stone/Storm) ไม่ปรากฏครบในไฟล์ข้อมูล (มีแค่ Hill/Storm ระบุชื่อหัวข้อ) จึงให้คะแนนแบบระมัดระวังโดยอิงจากกลไก Giant's Might ที่ยืนยันได้เป็นหลัก
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Giant's Might (bonus action, 1 นาที) เพิ่มดาเมจ 1d6→1d10 ทุกเทิร์น + ขยายร่างเป็น Large/Huge (Runic Juggernaut lv18) เพิ่ม reach [M:2/4] [R:3/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Giant's Might (bonus action, 1 นาที) เพิ่มดาเมจ 1d6→1d10 ทุกเทิร์น + ขยายร่างเป็น Large/Huge (Runic Juggernaut lv18) เพิ่ม reach [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Rune ที่ทราบธีม (เช่น Frost=ลด speed, Storm=ผลัก) บ่งชี้ control option แม้ไม่ทราบรายละเอียดเต็ม [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 6/10 (B) | Runic Shield (lv7, reaction บังคับผู้โจมตี ally ให้ทอย d20 ใหม่) เป็น protection tool ที่ยืนยันได้ [M:2/4] [R:2/3] [B:2/3] |
-| **Survivability** | 9/10 (S) | Giant's Might ให้ Advantage Str save + ขนาดใหญ่ขึ้น บวก Rune ธีม Hill ที่มักให้ resistance (บ่งชี้จากชื่อ) [M:2/4] [R:2/3] [B:3/3] |
+| **Survivability** | 9/10 (S) | Giant's Might ให้ Advantage Str save + ขนาดใหญ่ขึ้น บวก Rune ธีม Hill ที่มักให้ resistance (บ่งชี้จากชื่อ) [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 8/10 (A) | Giant's Might เป็น bonus action ที่ baseline มีโครงสร้างอยู่แล้ว = เท่า baseline |
 | **Utility** | 4/10 (C) | smith's tools + ภาษา Giant เป็น utility เล็กน้อย บวก Rune บางตัวน่าจะมี utility เสริม (ไม่ยืนยันเต็ม) [M:1/4] [R:2/3] [B:1/3] |
 | **Versatility** | 7/10 (A) | เลือก Rune ได้ 2→5 ตัวจาก pool สลับได้ทุก Long Rest ให้ toolkit ที่กว้างกว่า baseline [M:2/4] [R:2/3] [B:3/3] |
 
 ### Samurai (XGE 🕰️)
+
+**Overall**: C — มีแค่ Utility/Versatility ที่ขยับเล็กน้อย Control/Support ยังนิ่งสนิททั้งคู่เหมือน Bone Knight
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

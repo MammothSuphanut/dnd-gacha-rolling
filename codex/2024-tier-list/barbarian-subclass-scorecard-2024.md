@@ -32,33 +32,36 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ไม่มี subclass ตัวไหนมี prerequisite/กลไก explicit ที่ตัด baseline capability ออก (Battlerager's "Dwarves Only" เป็นข้อจำกัดเชื้อชาติที่ DM ยกเลิกได้ ไม่ใช่การตัดความสามารถออกจาก axis ใดๆ) — ทุกแกนจึงต้อง ≥ baseline เสมอ
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Path of Heavy Metal | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 4 (C) | 3 (C) |
-| Path of the Ancestral Guardian | XGE 🕰️ | 7 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) | 5 (B) | 3 (C) |
-| Path of the Battlerager | SCAG 🕰️ | 7 (A) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 3 (C) | 3 (C) |
-| Path of the Beast | TCE 🕰️ | 8 (A) | 6 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Path of the Berserker | XPHB | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 3 (C) | 3 (C) |
-| Path of the Carrion Raven | GrimHollowPlayerPack 🕰️ | 9 (S) | 7 (A) | 5 (B) | 10 (S) | 7 (A) | 8 (A) | 9 (S) |
-| Path of the Colossus | VSS 🕰️ | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 3 (C) | 4 (C) |
-| Path of the Fin | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 5 (B) | 4 (C) |
-| Path of the Muscle Wizard | VSS 🕰️ | 9 (S) | 5 (B) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
-| Path of the Rage Mage | VSS 🕰️ | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
-| Path of the Storm Herald | XGE 🕰️ | 7 (A) | 5 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
-| Path of the Totem Warrior | PHB 🕰️ | 6 (B) | 5 (B) | 5 (B) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Path of the Wild Heart | XPHB | 6 (B) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 6 (B) | 9 (S) |
-| Path of the World Tree | XPHB | 6 (B) | 8 (A) | 8 (A) | 9 (S) | 7 (A) | 6 (B) | 8 (A) |
-| Path of the Wrathful Dead | GrimHollowPG24 | 8 (A) | 7 (A) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 7 (A) |
-| Path of the Zealot | XPHB | 8 (A) | 3 (C) | 9 (S) | 10 (S) | 8 (A) | 4 (C) | 8 (A) |
-| Path of Tranquility | VSS 🕰️ | 6 (B) | 6 (B) | 5 (B) | 9 (S) | 7 (A) | 6 (B) | 6 (B) |
-| Path of Wild Magic | TCE 🕰️ | 7 (A) | 5 (B) | 5 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Path of the Fractured | GrimHollowPG24 | 7 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 4 (C) | 6 (B) |
-| Path of the Giant | BGG 🕰️ | 8 (A) | 6 (B) | 3 (C) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
-| Path of the Primal Spirit | GrimHollowPG24 | 7 (A) | 3 (C) | 2 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Path of Heavy Metal | B | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 4 (C) | 3 (C) |
+| Path of the Ancestral Guardian | S | XGE 🕰️ | 7 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) | 5 (B) | 3 (C) |
+| Path of the Battlerager | B | SCAG 🕰️ | 7 (A) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 3 (C) | 3 (C) |
+| Path of the Beast | S | TCE 🕰️ | 8 (A) | 6 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Path of the Berserker | S | XPHB | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 3 (C) | 3 (C) |
+| Path of the Carrion Raven | S | GrimHollowPlayerPack 🕰️ | 9 (S) | 7 (A) | 5 (B) | 10 (S) | 7 (A) | 8 (A) | 9 (S) |
+| Path of the Colossus | B | VSS 🕰️ | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 3 (C) | 4 (C) |
+| Path of the Fin | A | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 5 (B) | 4 (C) |
+| Path of the Muscle Wizard | S | VSS 🕰️ | 9 (S) | 5 (B) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
+| Path of the Rage Mage | A | VSS 🕰️ | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Path of the Storm Herald | S | XGE 🕰️ | 7 (A) | 5 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
+| Path of the Totem Warrior | A | PHB 🕰️ | 6 (B) | 5 (B) | 5 (B) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Path of the Wild Heart | S | XPHB | 6 (B) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 6 (B) | 9 (S) |
+| Path of the World Tree | S | XPHB | 6 (B) | 8 (A) | 8 (A) | 9 (S) | 7 (A) | 6 (B) | 8 (A) |
+| Path of the Wrathful Dead | S | GrimHollowPG24 | 8 (A) | 7 (A) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 7 (A) |
+| Path of the Zealot | S | XPHB | 8 (A) | 3 (C) | 9 (S) | 10 (S) | 8 (A) | 4 (C) | 8 (A) |
+| Path of Tranquility | A | VSS 🕰️ | 6 (B) | 6 (B) | 5 (B) | 9 (S) | 7 (A) | 6 (B) | 6 (B) |
+| Path of Wild Magic | A | TCE 🕰️ | 7 (A) | 5 (B) | 5 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Path of the Fractured | A | GrimHollowPG24 | 7 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 4 (C) | 6 (B) |
+| Path of the Giant | A | BGG 🕰️ | 8 (A) | 6 (B) | 3 (C) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
+| Path of the Primal Spirit | B | GrimHollowPG24 | 7 (A) | 3 (C) | 2 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
 
 ---
 
 ### Path of Heavy Metal (VSS 🕰️)
+
+**Overall**: B — ขยับกลางๆ 4 axis (Damage/Control/AE/Utility) Support ยังเป็น 0 เต็ม ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -72,6 +75,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Ancestral Guardian (XGE 🕰️)
 
+**Overall**: S — Support กระโดดจาก 0 (D) เป็น 8 (A) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงมาก บวกขยับตามอีก 4 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Vengeful Ancestors (lv14) สะท้อนดาเมจที่ Spirit Shield กันได้กลับไปเป็น force damage ใส่ผู้โจมตี เป็นดาเมจทางอ้อมที่ผูกกับการใช้ reaction ป้องกันทีม [M:2/4] [R:3/3] [B:2/3] |
@@ -83,6 +89,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 3/10 (C) | เป็น dedicated protector/tank role เดียวตลอด ไม่มี feature ขยาย role อื่น = เท่า baseline [M:1/4] [R:1/3] [B:1/3] |
 
 ### Path of the Battlerager (SCAG 🕰️)
+
+**Overall**: B — Survivability เป็น S ใหม่ แต่ breadth แคบมาก Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -96,17 +105,23 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Beast (TCE 🕰️)
 
+**Overall**: S — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | natural weapon (bite/claw/tail) overcome resistance ดาเมจกายภาพแบบไม่ใช้เวทย์ตั้งแต่ lv6 บวก Infectious Fury (lv10, 2d12 psychic) และ Call the Hunt (lv14, ให้เพื่อนที่ร่วม hunt ได้ d6 damage bonus ทุกครั้งที่ตี) — ดาเมจซ้อนทั้งของตัวเองและทีม [M:3/4] [R:2/3] [B:3/3] |
 | **Control** | 6/10 (B) | Infectious Fury บังคับ Wisdom save ไม่งั้นเป้าต้องใช้ reaction โจมตีพวกเดียวกันเอง (PB ครั้ง/วัน) — hard-CC ทางอ้อมที่ baseline ไม่มีเลย [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 6/10 (B) | Call the Hunt ให้ temp HP (5/ตัว) และ damage-bonus d6 ต่อการโจมตีแก่พวกพ้องที่เลือกร่วม hunt (Con mod คน, PB ครั้ง/วัน) — support ทั้งเชิงป้องกันและเชิงดาเมจ [M:2/4] [R:2/3] [B:2/3] |
-| **Survivability** | 9/10 (S) | Bestial Soul (lv6) ให้เลือก swim/climb/enhanced-jump ทุก short/long rest บวก temp HP ของตัวเองจาก Call the Hunt — เพิ่ม adaptability และ buffer เหนือ baseline ชัดเจน [M:3/4] [R:2/3] [B:3/3] |
+| **Survivability** | 9/10 (S) | Bestial Soul (lv6) ให้เลือก swim/climb/enhanced-jump ทุก short/long rest บวก temp HP ของตัวเองจาก Call the Hunt — เพิ่ม adaptability และ buffer เหนือ baseline ชัดเจน [M:3/4] [R:3/3] [B:3/3] |
 | **Action Economy** | 7/10 (A) | natural weapon ใช้ฟรีตอน rage (ไม่เสีย action สร้าง), Infectious Fury/Call the Hunt trigger จากการตีปกติไม่เสีย action เพิ่ม [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 5/10 (B) | Bestial Soul ให้ breathe underwater/climb ceiling/extend jump แบบเลือกได้ทุก short rest — utility นอกคอมแบตที่ baseline ไม่มี [M:2/4] [R:2/3] [B:1/3] |
 | **Versatility** | 6/10 (B) | เลือกอาวุธธรรมชาติ (bite/claw/tail) ใหม่ได้ทุกครั้งที่ rage + เลือก adaptation ใหม่ได้ทุก short rest — ปรับตัวเข้าสถานการณ์ได้กว้างกว่า baseline [M:2/4] [R:2/3] [B:2/3] |
 
 ### Path of the Berserker (XPHB)
+
+**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ แม้ Support จะยังเป็น 0
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -119,6 +134,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 3/10 (C) | เป็น damage/tank ล้วนแบบเดียวตลอด ไม่ขยาย role = เท่า baseline |
 
 ### Path of the Carrion Raven (GrimHollowPlayerPack 🕰️)
+
+**Overall**: S — 3 axis เป็น S ใหม่พร้อมกัน (Damage, Survivability 10/10 เต็ม, Versatility กระโดด +6) ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย — แรงและกว้างที่สุดในคลาสทั้งหมด
+
 
 > **หมายเหตุข้อมูล**: ระบบ Martial Maneuvers มีตัวเลือกทั้งหมด 16 แบบ (รู้ 3 ตัวตอน lv3 → 6 ตัวตอน lv14) ให้คะแนนจากภาพรวมของ pool ทั้งหมดที่ยืนยันได้ในไฟล์ ไม่ใช่ build เดียว — magnitude/breadth จึงสูงเพราะเลือกได้จากคลังกว้างมาก แม้แต่ละตัวละครจะรู้พร้อมกันแค่บางส่วน
 
@@ -134,6 +152,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Colossus (VSS 🕰️)
 
+**Overall**: B — ขยับกลางๆ 3 axis (Damage/Support/Versatility) ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Larger Than Life ให้อาวุธ +1d4 ดาเมจตลอด rage + action พิเศษตีทุกตัวในแนว 15ft (roll แยกแต่ละเป้า) บวก Boulder Throw (2d8 ระยะไกล) — burst damage สูงจาก line attack [M:3/4] [R:2/3] [B:3/3] |
@@ -145,6 +166,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 4/10 (C) | Boulder Throw เพิ่มตัวเลือกโจมตีระยะไกลให้ build ที่ปกติเป็นเมลีล้วน [M:2/4] [R:1/3] [B:1/3] |
 
 ### Path of the Fin (VSS 🕰️)
+
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน Support ยังเป็น 0
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -158,6 +182,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Muscle Wizard (VSS 🕰️)
 
+**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวกขยับตามอีก 2 axis แม้ Support จะยังเป็น 0
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | True Strike (+1d8 บน hit), "Burning Hands" (AoE unarmed 1d8+Str ทุกตัวในระยะเอื้อม), "Magic Missile" (bonus action ranged attack แบบ advantage), และ I Cast Fist (lv14, advantage melee 8d8+Str นัดเดียว/rage) — คลังดาเมจซ้อนกันได้หลายทาง [M:3/4] [R:3/3] [B:3/3] |
@@ -169,6 +196,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 5/10 (B) | เลือกได้ระหว่าง shove-prone/deny-reaction/extra-damage บนแต่ละ hit + "Magic Missile" เพิ่มตัวเลือกระยะไกลให้ build เมลี [M:2/4] [R:2/3] [B:1/3] |
 
 ### Path of the Rage Mage (VSS 🕰️)
+
+**Overall**: A — Versatility กระโดด +5 (C→A) บวกขยับขึ้นอีก 3 axis กลางๆ ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -182,6 +212,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Storm Herald (XGE 🕰️)
 
+**Overall**: S — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบ 6 ใน 7 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Desert/Sea aura activate ได้ทุกเทิร์นด้วย bonus action ให้ดาเมจ AoE/single-target ที่ขยับสเกล (2→6 dmg ตามระดับ) — เป็นแหล่งดาเมจ recurring ที่ reliable แต่ magnitude ต่ำต่อครั้ง [M:2/4] [R:3/3] [B:2/3] |
@@ -193,6 +226,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | เลือกธาตุ (Desert/Sea/Tundra) ได้ใหม่ทุกครั้งที่เลเวลอัพ แต่ละธาตุให้บทบาทต่างกัน (damage/control/support) — ปรับ role ได้กว้าง [M:2/4] [R:3/3] [B:2/3] |
 
 ### Path of the Totem Warrior (PHB 🕰️)
+
+**Overall**: A — Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -206,6 +242,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Wild Heart (XPHB)
 
+**Overall**: S — Survivability และ Versatility เป็น S ใหม่ทั้งคู่ (Versatility กระโดด +6) บวก Support ขยับบางส่วน และขยับตามอีก 2 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ทั้ง Bear/Eagle/Wolf/Owl/Panther/Salmon/Falcon/Lion/Ram ไม่มีตัวไหนเพิ่มดาเมจให้ตัวเองโดยตรง = เท่า baseline |
@@ -217,6 +256,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 9/10 (S) | เลือกใหม่ได้ทุก rage (Bear/Eagle/Wolf) + ทุก long rest (Owl/Panther/Salmon) + ทุก rage อีกครั้งที่ lv14 (Falcon/Lion/Ram) — reconfigurability สูงสุดในกลุ่ม totem-style subclass ที่ทำมา [M:3/4] [R:3/3] [B:3/3] |
 
 ### Path of the World Tree (XPHB)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Survivability เป็น S ใหม่ และ Control/Versatility กระโดด +5 ทั้งคู่ — กว้างและแรงพร้อมกัน
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -230,6 +272,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Wrathful Dead (GrimHollowPG24)
 
+**Overall**: S — Support ขยับบางส่วน (0→5) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบทั้ง 6 axis ที่เหลือ (นอกจาก Damage) กว้างที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Dark Doom Revisited (1 ครั้ง/rage) เลือก AoE persistent damage (poison/cold/fire, d6 เท่า Rage Damage bonus) ใส่ทุกตัวในออร่าทุกเทิร์น บวก Hate option (lv14) ให้ crit range 19-20 [M:3/4] [R:2/3] [B:3/3] |
@@ -241,6 +286,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | เลือก emotion ได้ 3 แบบ (Hate=aggressive re-attack, Jealousy=grapple-control, Terror=hit-and-run) สลับได้ทุก long rest บวกความสามารถฮีล/ชุบชีวิต [M:2/4] [R:3/3] [B:2/3] |
 
 ### Path of the Zealot (XPHB)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในคลาส บวก Survivability เป็น S ใหม่ด้วย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -254,6 +302,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of Tranquility (VSS 🕰️)
 
+**Overall**: A — Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Anticipate/Battle Trance (lv6) ให้ reaction attack สูงสุด 2 ครั้งเมื่อไม่ได้โจมตีในเทิร์นตัวเอง (เช่นใช้ Dodge) — เป็นดาเมจทางอ้อมที่มีเงื่อนไขแลก (ต้องไม่โจมตี) จึง magnitude ปานกลาง = ใกล้เท่า baseline [M:3/4] [R:2/3] [B:1/3] |
@@ -265,6 +316,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 6/10 (B) | เล่นสวนทางกับ barbarian ทั่วไปทั้งหมด (reactive/defensive แทน aggressive) พร้อมมีคาถา social-utility สำรอง — เปลี่ยน playstyle ได้กว้าง [M:2/4] [R:2/3] [B:2/3] |
 
 ### Path of Wild Magic (TCE 🕰️)
+
+**Overall**: A — Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis เหมือน Path of Tranquility
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -278,6 +332,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Fractured (GrimHollowPG24)
 
+**Overall**: A — Survivability เป็น S ใหม่ (10/10 เต็ม) บวกขยับขึ้นอีก 4 axis กลางๆ แต่ Support แก้ได้แค่บางส่วน (0→3, ยังเกรด C)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Face of Rage ให้ unarmed strike 1d8 force + Cunning and Brutal (lv10) ให้ crit range 19-20 บน unarmed strike ตอน raging — ยกระดับ unarmed build ให้แข่งกับอาวุธได้ [M:2/4] [R:3/3] [B:2/3] |
@@ -290,6 +347,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Giant (BGG 🕰️)
 
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Versatility กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Crushing Throw บวก Rage Damage bonus เข้าดาเมจอาวุธขว้าง + Elemental Cleaver (+1d6→2d6 ธาตุที่เลือก พร้อม thrown 20/60ft คืนมือ) + Mighty Impel ใช้เหวี่ยงศัตรูไปโดนอันตราย (fall damage) [M:3/4] [R:2/3] [B:3/3] |
@@ -301,6 +361,9 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | Elemental Cleaver สลับ damage type ได้ 5 ชนิด (acid/cold/fire/thunder/lightning) เพื่อเลี่ยง resistance ศัตรู + Crushing Throw เปิดตัวเลือกโจมตีระยะไกล [M:2/4] [R:3/3] [B:2/3] |
 
 ### Path of the Primal Spirit (GrimHollowPG24)
+
+**Overall**: B — ขยับกลางๆ 3 axis (Damage/Utility/Versatility) Support แทบไม่ขยับ (0→2 ยังเกรด D)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

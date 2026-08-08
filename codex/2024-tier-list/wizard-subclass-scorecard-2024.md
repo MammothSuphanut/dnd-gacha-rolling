@@ -38,40 +38,43 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 - **15 ตัวเป็น homebrew 2024-compatible** (ยืนยัน `classSource: XPHB` ทุกตัว, ไม่มี 🕰️): Chronomancer/Familiar Master/Gastronomer/Magic Missile Mage/Mystic Strategist (ValdaSpire24Extras, มีเวอร์ชัน 2014 เดิมด้วยแต่ให้คะแนนเฉพาะ 2024 ตาม precedent เดียวกับ Sorcerer), Fumaturge/Protomancer/Scroll Scribe/Somnomancer/Tyromancer/Universalist/Wand Wizard (ValdaSpire24Extras, เป็นของใหม่เฉพาะ 2024 ไม่มี 2014 มาก่อน), Daemonologist/Plague Doctor (Wizard)/Sangromancer (GrimHollowPG24)
 - **หมายเหตุพิเศษเรื่องบรรทัด "X / Y" ของ tracker**: ต่างจาก Sorcerer ที่ "X / Y" หมายถึงชื่อ 2014→2024 ของ **subclass เดียวกัน** — สำหรับ Wizard บรรทัด **"Familiar Master / Fumaturge"** และ **"Scroll Scribe / Wand Wizard"** คือ subclass ที่**แยกจากกันจริง 2 ตัว** อยู่ในหนังสือ 2024 เดียวกัน (ตรวจสอบแล้วว่าไม่มี `reprintedAs` เชื่อมกัน และ shortName ต่างกันคนละตัว) จึงให้คะแนนแยกกันครบทั้ง 2 ตัวต่อ 1 บรรทัด tracker (รวม 28 subclass จริงจาก 26 บรรทัด checkbox)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Abjurer | XPHB | 6 (B) | 7 (A) | 5 (B) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
-| Diviner | XPHB | 6 (B) | 7 (A) | 4 (C) | 3 (C) | 7 (A) | 9 (S) | 8 (A) |
-| Evoker | XPHB | 9 (S) | 7 (A) | 5 (B) | 3 (C) | 6 (B) | 8 (A) | 8 (A) |
-| Illusionist | XPHB | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
-| Bladesinger | FRHoF | 9 (S) | 7 (A) | 3 (C) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
-| School of Conjuration | PHB 🕰️ | 6 (B) | 7 (A) | 4 (C) | 4 (C) | 6 (B) | 8 (A) | 8 (A) |
-| School of Enchantment | PHB 🕰️ | 6 (B) | 8 (A) | 3 (C) | 5 (B) | 6 (B) | 8 (A) | 8 (A) |
-| School of Necromancy | PHB 🕰️ | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
-| School of Transmutation | PHB 🕰️ | 6 (B) | 7 (A) | 5 (B) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
-| War Magic | XGE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 6 (B) | 8 (A) | 8 (A) |
-| Chronurgy Magic | EGW 🕰️ | 6 (B) | 8 (A) | 5 (B) | 4 (C) | 6 (B) | 9 (S) | 8 (A) |
-| Graviturgy Magic | EGW 🕰️ | 8 (A) | 8 (A) | 5 (B) | 3 (C) | 7 (A) | 8 (A) | 9 (S) |
-| Order of Scribes | TCE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 7 (A) | 9 (S) | 9 (S) |
-| Chronomancer | ValdaSpire24Extras | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 9 (S) |
-| Familiar Master | ValdaSpire24Extras | 7 (A) | 7 (A) | 4 (C) | 4 (C) | 6 (B) | 8 (A) | 8 (A) |
-| Fumaturge | ValdaSpire24Extras | 6 (B) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
-| Gastronomer | ValdaSpire24Extras | 6 (B) | 7 (A) | 9 (S) | 3 (C) | 6 (B) | 9 (S) | 9 (S) |
-| Magic Missile Mage | ValdaSpire24Extras | 9 (S) | 8 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
-| Mystic Strategist | ValdaSpire24Extras | 8 (A) | 8 (A) | 5 (B) | 5 (B) | 7 (A) | 8 (A) | 9 (S) |
-| Protomancer | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 5 (B) | 7 (A) | 8 (A) | 9 (S) |
-| Scroll Scribe | ValdaSpire24Extras | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
-| Somnomancer | ValdaSpire24Extras | 7 (A) | 9 (S) | 3 (C) | 5 (B) | 6 (B) | 9 (S) | 8 (A) |
-| Tyromancer | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 5 (B) | 6 (B) | 8 (A) | 8 (A) |
-| Universalist | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 9 (S) | 9 (S) |
-| Wand Wizard | ValdaSpire24Extras | 8 (A) | 8 (A) | 3 (C) | 6 (B) | 8 (A) | 9 (S) | 9 (S) |
-| Daemonologist | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 4 (C) | 7 (A) | 9 (S) | 9 (S) |
-| Plague Doctor (Wizard) | GrimHollowPG24 | 8 (A) | 8 (A) | 8 (A) | 5 (B) | 7 (A) | 9 (S) | 9 (S) |
-| Sangromancer | GrimHollowPG24 | 8 (A) | 7 (A) | 3 (C) | 7 (A) | 7 (A) | 8 (A) | 8 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Abjurer | A | XPHB | 6 (B) | 7 (A) | 5 (B) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
+| Diviner | B | XPHB | 6 (B) | 7 (A) | 4 (C) | 3 (C) | 7 (A) | 9 (S) | 8 (A) |
+| Evoker | B | XPHB | 9 (S) | 7 (A) | 5 (B) | 3 (C) | 6 (B) | 8 (A) | 8 (A) |
+| Illusionist | B | XPHB | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
+| Bladesinger | A | FRHoF | 9 (S) | 7 (A) | 3 (C) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
+| School of Conjuration | C | PHB 🕰️ | 6 (B) | 7 (A) | 4 (C) | 4 (C) | 6 (B) | 8 (A) | 8 (A) |
+| School of Enchantment | C | PHB 🕰️ | 6 (B) | 8 (A) | 3 (C) | 5 (B) | 6 (B) | 8 (A) | 8 (A) |
+| School of Necromancy | B | PHB 🕰️ | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
+| School of Transmutation | S | PHB 🕰️ | 6 (B) | 7 (A) | 5 (B) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
+| War Magic | A | XGE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 6 (B) | 8 (A) | 8 (A) |
+| Chronurgy Magic | A | EGW 🕰️ | 6 (B) | 8 (A) | 5 (B) | 4 (C) | 6 (B) | 9 (S) | 8 (A) |
+| Graviturgy Magic | A | EGW 🕰️ | 8 (A) | 8 (A) | 5 (B) | 3 (C) | 7 (A) | 8 (A) | 9 (S) |
+| Order of Scribes | S | TCE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 7 (A) | 9 (S) | 9 (S) |
+| Chronomancer | S | ValdaSpire24Extras | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 9 (S) |
+| Familiar Master | C | ValdaSpire24Extras | 7 (A) | 7 (A) | 4 (C) | 4 (C) | 6 (B) | 8 (A) | 8 (A) |
+| Fumaturge | A | ValdaSpire24Extras | 6 (B) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
+| Gastronomer | S | ValdaSpire24Extras | 6 (B) | 7 (A) | 9 (S) | 3 (C) | 6 (B) | 9 (S) | 9 (S) |
+| Magic Missile Mage | A | ValdaSpire24Extras | 9 (S) | 8 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
+| Mystic Strategist | S | ValdaSpire24Extras | 8 (A) | 8 (A) | 5 (B) | 5 (B) | 7 (A) | 8 (A) | 9 (S) |
+| Protomancer | A | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 5 (B) | 7 (A) | 8 (A) | 9 (S) |
+| Scroll Scribe | S | ValdaSpire24Extras | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
+| Somnomancer | S | ValdaSpire24Extras | 7 (A) | 9 (S) | 3 (C) | 5 (B) | 6 (B) | 9 (S) | 8 (A) |
+| Tyromancer | B | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 5 (B) | 6 (B) | 8 (A) | 8 (A) |
+| Universalist | S | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 9 (S) | 9 (S) |
+| Wand Wizard | S | ValdaSpire24Extras | 8 (A) | 8 (A) | 3 (C) | 6 (B) | 8 (A) | 9 (S) | 9 (S) |
+| Daemonologist | S | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 4 (C) | 7 (A) | 9 (S) | 9 (S) |
+| Plague Doctor (Wizard) | S | GrimHollowPG24 | 8 (A) | 8 (A) | 8 (A) | 5 (B) | 7 (A) | 9 (S) | 9 (S) |
+| Sangromancer | A | GrimHollowPG24 | 8 (A) | 7 (A) | 3 (C) | 7 (A) | 7 (A) | 8 (A) | 8 (A) |
 
 ---
 
 ### Abjurer (XPHB)
+
+**Overall**: A — Survivability กระโดด +5 (C→A) บวก Support/Action Economy ขยับตาม ไม่มี peak ถึง S ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -79,11 +82,14 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 5/10 (B) | Projected Ward (lv6, reaction ให้ Arcane Ward ดูดซับดาเมจแทน ally ในระยะ 30ft) เป็น support ที่ break เหนือ baseline ชัดเจน [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 8/10 (A) | Arcane Ward (pool HP=2xlevel+Int ดูดซับดาเมจทุกชนิดแทนตัวเอง เติมเต็มได้ทุกครั้งที่ cast Abjuration spell) บวก Spell Resistance (lv14, Adv save+Resist ดาเมจจากคาถา) เป็นเลเยอร์ป้องกันที่แข็งแกร่งมากสำหรับ class ที่ปกติเปราะบางที่สุด [M:3/4] [R:2/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Spell Breaker (lv10, cast Dispel Magic เป็น bonus action + คืน slot ถ้า check ล้มเหลว) เป็นการประหยัด action ที่แท้จริง [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Spell Breaker (lv10, cast Dispel Magic เป็น bonus action + คืน slot ถ้า check ล้มเหลว) เป็นการประหยัด action ที่แท้จริง [M:3/4] [R:2/3] [B:2/3] |
 | **Utility** | 8/10 (A) | Spell Breaker (Counterspell+Dispel Magic เตรียมไว้ตลอด) เป็น combat utility ไม่พอยกระดับเหนือ baseline ที่กว้างอยู่แล้ว = เท่า baseline |
 | **Versatility** | 8/10 (A) | โฟกัส anti-magic/protector specialist ชัดเจน ไม่ได้ขยาย breadth เกิน baseline = เท่า baseline |
 
 ### Diviner (XPHB)
+
+**Overall**: B — Utility เป็น S ใหม่ แต่ breadth แคบ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -91,11 +97,14 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 4/10 (C) | Portent ใช้แทนที่ D20 Test ของ creature อื่นที่เห็นได้ด้วย เป็น support ที่ break เหนือ baseline |
 | **Survivability** | 3/10 (C) | The Third Eye's Darkvision option เป็น addition เล็กน้อย = เท่า baseline |
-| **Action Economy** | 7/10 (A) | Expert Divination (lv6, cast Divination spell lv2+ แล้วคืน slot ระดับต่ำกว่า) เป็นตัวคูณจำนวนครั้งที่ cast ได้ต่อวัน [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Expert Divination (lv6, cast Divination spell lv2+ แล้วคืน slot ระดับต่ำกว่า) เป็นตัวคูณจำนวนครั้งที่ cast ได้ต่อวัน [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 9/10 (S) | Portent (บันทึกผลทอย d20 2-3 ครั้ง/วัน แทนที่ roll อะไรก็ได้ของตัวเองหรือใครก็ได้ที่เห็น) บวก The Third Eye (bonus action เลือก Darkvision/อ่านภาษาใดก็ได้/See Invisibility ฟรี) เป็นชุด reliability+info ที่ทรงพลังที่สุดในบรรดา Wizard [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 8/10 (A) | Portent ใช้ได้กับทุกประเภท roll ไม่ว่าจะเป็นของใคร บวก Third Eye 3 โหมด = breadth สูงแต่ยังอยู่ในกรอบ baseline ที่กว้างอยู่แล้ว = เท่า baseline |
 
 ### Evoker (XPHB)
+
+**Overall**: B — Damage เป็น S ใหม่ แต่ breadth แคบมาก มีแค่ Support ขยับตามอีกนิด Survivability ไม่ถูกแตะ
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -109,29 +118,38 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Illusionist (XPHB)
 
+**Overall**: B — ขยับกลางๆ 3 axis (Damage/Survivability/AE) Support ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Phantasmal Creatures (lv6, cast Summon Beast/Fey ฟรี 1/long rest แม้จะ HP ครึ่งเดียว) เป็น damage add ที่มาพร้อม combat presence เพิ่ม [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Phantasmal Creatures (lv6, cast Summon Beast/Fey ฟรี 1/long rest แม้จะ HP ครึ่งเดียว) เป็น damage add ที่มาพร้อม combat presence เพิ่ม [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
-| **Survivability** | 6/10 (B) | Illusory Self (lv10, reaction ให้ attack ที่โดนตัวเองพลาดอัตโนมัติผ่านภาพลวงตา, refill ด้วย slot lv2+) เป็นการบล็อกเป้าเดียวที่มีประสิทธิภาพสูง [M:2/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | Improved Illusions ให้ Minor Illusion อัพเกรด (เสียง+ภาพพร้อมกัน) cast เป็น bonus action ได้ [M:2/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Illusory Self (lv10, reaction ให้ attack ที่โดนตัวเองพลาดอัตโนมัติผ่านภาพลวงตา, refill ด้วย slot lv2+) เป็นการบล็อกเป้าเดียวที่มีประสิทธิภาพสูง [M:2/4] [R:3/3] [B:1/3] |
+| **Action Economy** | 7/10 (A) | Improved Illusions ให้ Minor Illusion อัพเกรด (เสียง+ภาพพร้อมกัน) cast เป็น bonus action ได้ [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | Illusory Reality (lv14, ทำให้ส่วนหนึ่งของภาพลวงตาเป็นของจริงชั่วคราว) เป็นเครื่องมือแก้ปัญหาเชิงสร้างสรรค์ที่ยอดเยี่ยม แต่ไม่พอยกระดับเหนือ baseline ที่กว้างอยู่แล้ว = เท่า baseline |
 | **Versatility** | 8/10 (A) | โฟกัส illusion-trickster ที่มี combat safety net (Illusory Self) + free summons เสริม = เท่า baseline |
 
 ### Bladesinger (FRHoF)
 
+**Overall**: A — Damage เป็น S ใหม่ บวก Survivability กระโดด +5 (C→A) และ Action Economy ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Extra Attack (lv6, โจมตี 2 ครั้ง + แทนที่ 1 ครั้งด้วย cantrip ได้) บวก Song of Victory (lv14, โจมตีด้วยอาวุธฟรีด้วย bonus action หลัง cast คาถา action) เท่ากับโจมตีได้ถึง 3 ครั้งต่อเทิร์นผสมกับคาถา [M:4/4] [R:2/3] [B:2/3] |
+| **Damage** | 9/10 (S) | Extra Attack (lv6, โจมตี 2 ครั้ง + แทนที่ 1 ครั้งด้วย cantrip ได้) บวก Song of Victory (lv14, โจมตีด้วยอาวุธฟรีด้วย bonus action หลัง cast คาถา action) เท่ากับโจมตีได้ถึง 3 ครั้งต่อเทิร์นผสมกับคาถา [M:4/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
-| **Survivability** | 8/10 (A) | Bladesong (bonus action +AC=Int mod+Speed+10ft, Int mod ครั้ง/รอบ) บวก Song of Defense (lv10, reaction ลดดาเมจ 5x ระดับ slot ที่แลก) เป็นเลเยอร์ป้องกันที่แข็งแกร่งมากทั้งที่ chassis d6 HP ไม่มีเกราะ [M:3/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 8/10 (A) | Song of Victory ให้โจมตีด้วยอาวุธฟรีทุกครั้งที่ cast คาถา action บวก Extra Attack's cantrip-option เป็นชุด AE ที่แข็งแกร่งมาก [M:3/4] [R:2/3] [B:2/3] |
+| **Survivability** | 8/10 (A) | Bladesong (bonus action +AC=Int mod+Speed+10ft, Int mod ครั้ง/รอบ) บวก Song of Defense (lv10, reaction ลดดาเมจ 5x ระดับ slot ที่แลก) เป็นเลเยอร์ป้องกันที่แข็งแกร่งมากทั้งที่ chassis d6 HP ไม่มีเกราะ [M:3/4] [R:3/3] [B:2/3] |
+| **Action Economy** | 8/10 (A) | Song of Victory ให้โจมตีด้วยอาวุธฟรีทุกครั้งที่ cast คาถา action บวก Extra Attack's cantrip-option เป็นชุด AE ที่แข็งแกร่งมาก [M:3/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | ไม่มี utility feature ใหม่นอกเหนือจาก weapon proficiency = เท่า baseline |
 | **Versatility** | 8/10 (A) | Melee-caster hybrid (Gish) archetype ที่โฟกัสบทบาทเดียวชัดเจนแม้จะทำได้ดีมาก = เท่า baseline |
 
 ### School of Conjuration (PHB 🕰️)
+
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -145,10 +163,13 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### School of Enchantment (PHB 🕰️)
 
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Control/Survivability) ไม่มี peak ใหม่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ไม่มี damage feature ใหม่ = เท่า baseline |
-| **Control** | 8/10 (A) | Hypnotic Gaze (action ทุกเทิร์น กด Incapacitate+Speed 0 เป้าเดียวต่อเนื่อง) บวก Split Enchantment (lv10, คาถา enchantment เป้าเดียวโดนได้ 2 เป้าพร้อมกัน — เพิ่ม breadth ของ control 2 เท่า) [M:3/4] [R:2/3] [B:2/3] |
+| **Control** | 8/10 (A) | Hypnotic Gaze (action ทุกเทิร์น กด Incapacitate+Speed 0 เป้าเดียวต่อเนื่อง) บวก Split Enchantment (lv10, คาถา enchantment เป้าเดียวโดนได้ 2 เป้าพร้อมกัน — เพิ่ม breadth ของ control 2 เท่า) [M:3/4] [R:3/3] [B:2/3] |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ (Instinctive Charm ป้องกันตัวเอง ไม่ใช่ ally) = เท่า baseline |
 | **Survivability** | 5/10 (B) | Instinctive Charm (lv6, reaction เบี่ยง attack ที่เข้าใส่ตัวเองไปหาเป้าอื่นที่ใกล้ที่สุด 1 ครั้ง/ศัตรู/วัน) เป็นการป้องกันตัวเองที่มีประสิทธิภาพ [M:2/4] [R:2/3] [B:1/3] |
 | **Action Economy** | 6/10 (B) | Hypnotic Gaze เสีย action เต็มทุกเทิร์นเพื่อรักษาผล ไม่ประหยัด action สุทธิ = เท่า baseline |
@@ -157,17 +178,23 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### School of Necromancy (PHB 🕰️)
 
+**Overall**: B — ขยับกลางๆ 3 axis (Damage/Survivability/AE) Support ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Undead Thralls (lv6, Animate Dead สร้าง undead เพิ่ม 1 ตัว + undead ทุกตัวได้ HP เพิ่ม=level + ดาเมจอาวุธเพิ่ม=prof bonus) เป็นการเสริมกองทัพ minion ที่แข็งแกร่งขึ้นถาวร [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Undead Thralls (lv6, Animate Dead สร้าง undead เพิ่ม 1 ตัว + undead ทุกตัวได้ HP เพิ่ม=level + ดาเมจอาวุธเพิ่ม=prof bonus) เป็นการเสริมกองทัพ minion ที่แข็งแกร่งขึ้นถาวร [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | Command Undead (lv14, ครอบครอง undead ใดก็ได้รวมของนักคาถาคนอื่น) เป็น control เฉพาะทางที่แรงในแคมเปญที่มี undead เยอะ ไม่พอยกระดับ tier โดยรวม = เท่า baseline |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
-| **Survivability** | 6/10 (B) | Grim Harvest (ฮีลตัวเองทุกครั้งที่ kill ด้วยคาถา 2x-3x ระดับคาถา) บวก Inured to Undeath (lv10, Resist Necrotic + HP max ลดไม่ได้) เป็นเลเยอร์ sustain ที่ครบวงจร [M:2/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | Grim Harvest เป็น passive ไม่เสีย action เพิ่มเลย [M:2/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Grim Harvest (ฮีลตัวเองทุกครั้งที่ kill ด้วยคาถา 2x-3x ระดับคาถา) บวก Inured to Undeath (lv10, Resist Necrotic + HP max ลดไม่ได้) เป็นเลเยอร์ sustain ที่ครบวงจร [M:2/4] [R:3/3] [B:1/3] |
+| **Action Economy** | 7/10 (A) | Grim Harvest เป็น passive ไม่เสีย action เพิ่มเลย [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | ไม่มี utility feature ใหม่ = เท่า baseline |
 | **Versatility** | 8/10 (A) | โฟกัส necromancer-specialist (minion army + self-sustain) ชัดเจน = เท่า baseline |
 
 ### School of Transmutation (PHB 🕰️)
+
+**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Support/Survivability ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -181,9 +208,12 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### War Magic (XGE 🕰️)
 
+**Overall**: A — Survivability กระโดด +4 (C→A) บวก Damage ขยับตาม Support ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Power Surge (lv6, สะสมได้จาก Counterspell/Dispel Magic ที่สำเร็จ, แลกดาเมจ Force เพิ่ม=ครึ่ง level) บวก Deflecting Shroud (lv14, Arcane Deflection แผ่ดาเมจ Force ไปยังศัตรู 3 ตัวด้วย) [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Power Surge (lv6, สะสมได้จาก Counterspell/Dispel Magic ที่สำเร็จ, แลกดาเมจ Force เพิ่ม=ครึ่ง level) บวก Deflecting Shroud (lv14, Arcane Deflection แผ่ดาเมจ Force ไปยังศัตรู 3 ตัวด้วย) [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Arcane Deflection (reaction +2AC/+4 save แลกกับ cast ได้แค่ cantrip จนถึงเทิร์นถัดไป) บวก Durable Magic (lv10, +2AC+ทุก save ตลอดเวลาที่ Concentrate ซึ่งมี uptime สูงมาก) [M:2/4] [R:3/3] [B:2/3] |
@@ -193,10 +223,13 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Chronurgy Magic (EGW 🕰️)
 
+**Overall**: A — Utility เป็น S ใหม่ บวก Control/Support/Survivability ขยับตามอีก 3 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ไม่มี damage feature ใหม่โดยตรง (Momentary Stasis ล็อกเป้าให้โดนง่ายขึ้นแต่ไม่ใช่ดาเมจ) = เท่า baseline |
-| **Control** | 8/10 (A) | Momentary Stasis (lv6, action กด Incapacitate+Speed 0 เป้าเดียว Int mod ครั้ง/วัน) บวก Chronal Shift (บังคับ reroll หลังเห็นผลแล้ว = พลิกผล save ของศัตรูจากผ่านเป็นพลาดได้) [M:3/4] [R:2/3] [B:2/3] |
+| **Control** | 8/10 (A) | Momentary Stasis (lv6, action กด Incapacitate+Speed 0 เป้าเดียว Int mod ครั้ง/วัน) บวก Chronal Shift (บังคับ reroll หลังเห็นผลแล้ว = พลิกผล save ของศัตรูจากผ่านเป็นพลาดได้) [M:3/4] [R:3/3] [B:2/3] |
 | **Support** | 5/10 (B) | Chronal Shift ใช้แก้ roll ที่ ally พลาดได้เช่นกัน บวก Arcane Abeyance (lv10, บรรจุคาถาไว้ในลูกปัดให้ใครก็ได้ปล่อยทีหลัง — มอบบัฟ/ฮีลให้ ally แบบ delayed ได้) [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 4/10 (C) | Chronal Shift ใช้แก้ save ของตัวเองได้เช่นกัน [M:1/4] [R:2/3] [B:1/3] |
 | **Action Economy** | 6/10 (B) | Arcane Abeyance ให้ cast คาถาล่วงหน้าเก็บไว้ปล่อยทีหลัง (ยังเสีย action ตอนปล่อยอยู่ดี) = เท่า baseline |
@@ -205,45 +238,57 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Graviturgy Magic (EGW 🕰️)
 
+**Overall**: A — Versatility เป็น S ใหม่ บวก Damage/Control/Support ขยับตาม แต่ Survivability ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Violent Attraction (lv10, reaction เพิ่ม 1d10 ดาเมจให้การตีของ ally หรือ 2d10 ดาเมจตกจากที่สูงใส่ศัตรู) บวก Event Horizon (lv14, AoE ดาเมจ Force ต่อเนื่อง 2d10/เทิร์น 1 นาที) [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Violent Attraction (lv10, reaction เพิ่ม 1d10 ดาเมจให้การตีของ ally หรือ 2d10 ดาเมจตกจากที่สูงใส่ศัตรู) บวก Event Horizon (lv14, AoE ดาเมจ Force ต่อเนื่อง 2d10/เทิร์น 1 นาที) [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 8/10 (A) | Adjust Density (เพิ่ม/ลด speed+Str save ของเป้า) บวก Gravity Well (บังคับเคลื่อนที่ฟรีทุกครั้งที่คาถาโดน/fail save — ไม่เสีย action เพิ่ม) บวก Event Horizon (Speed 0 lockdown zone) เป็นชุด control หลากหลายที่สุดใน class นี้ [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 5/10 (B) | Adjust Density ใช้บัฟ ally ได้ (ลดน้ำหนัก=speed+10+jump 2x) บวก Violent Attraction เสริมดาเมจการตีของ ally ได้ [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 3/10 (C) | ไม่มี survivability feature ใหม่โดยตรงสำหรับตัวเอง = เท่า baseline |
-| **Action Economy** | 7/10 (A) | Gravity Well ทำงานฟรีทุกครั้งที่คาถาโดนเป้า ไม่เสีย action เพิ่มเลย [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Gravity Well ทำงานฟรีทุกครั้งที่คาถาโดนเป้า ไม่เสีย action เพิ่มเลย [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | Adjust Density มีประโยชน์เชิงสร้างสรรค์ (เคลื่อนย้ายของหนัก) แต่ไม่พอยกระดับเหนือ baseline = เท่า baseline |
 | **Versatility** | 9/10 (S) | รวมดาเมจ+control+support เข้าด้วยกันผ่านธีม gravity เดียวที่ประยุกต์ใช้ได้ทุกสถานการณ์ [M:3/4] [R:3/3] [B:3/3] |
 
 ### Order of Scribes (TCE 🕰️)
 
+**Overall**: S — Survivability กระโดด +4 (C→A) บวก Utility และ Versatility เป็น S ใหม่ทั้งคู่ กว้างมาก
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Awakened Spellbook's damage-type swap ช่วยบายพาส resistance ของศัตรูได้ เป็น damage-reliability ที่มีประโยชน์จริง [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Awakened Spellbook's damage-type swap ช่วยบายพาส resistance ของศัตรูได้ เป็น damage-reliability ที่มีประโยชน์จริง [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมโดยตรง (scroll ใช้ได้แค่ตัวเองตามข้อความ) = เท่า baseline |
-| **Survivability** | 7/10 (A) | One with the Word (lv14, reaction ป้องกันดาเมจทั้งหมดจากการโดนตี 1 ครั้ง แลกด้วยการเสียคาถาจาก spellbook รวมระดับ≥3d6) เป็นปุ่ม "ไม่โดนดาเมจเลย" ที่ทรงพลัง [M:3/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | Awakened Spellbook ให้ cast ritual ด้วยเวลาปกติ 1 ครั้ง/วัน (ประหยัด 10 นาทีในสถานการณ์กดดันเวลา) บวก Manifest Mind (cast คาถาผ่านตำแหน่งวิญญาณสอดแนมได้) [M:2/4] [R:2/3] [B:2/3] |
+| **Survivability** | 7/10 (A) | One with the Word (lv14, reaction ป้องกันดาเมจทั้งหมดจากการโดนตี 1 ครั้ง แลกด้วยการเสียคาถาจาก spellbook รวมระดับ≥3d6) เป็นปุ่ม "ไม่โดนดาเมจเลย" ที่ทรงพลัง [M:3/4] [R:3/3] [B:1/3] |
+| **Action Economy** | 7/10 (A) | Awakened Spellbook ให้ cast ritual ด้วยเวลาปกติ 1 ครั้ง/วัน (ประหยัด 10 นาทีในสถานการณ์กดดันเวลา) บวก Manifest Mind (cast คาถาผ่านตำแหน่งวิญญาณสอดแนมได้) [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 9/10 (S) | Manifest Mind (lv6, ส่งวิญญาณสอดแนม Tiny มี Darkvision 60ft + cast คาถาผ่านมันได้) บวก Master Scrivener (lv10, ม้วนคาถาฟรีทุก long rest ระดับสูงกว่าปกติ 1 ระดับ) เป็นชุด scouting+resource ที่ทรงพลังมาก [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 9/10 (S) | สลับชนิดดาเมจ+สอดแนมระยะไกล+ป้องกันฉุกเฉิน+ทำม้วนคาถา ครอบคลุมหลายมิติมาก [M:3/4] [R:3/3] [B:3/3] |
 
 ### Chronomancer (ValdaSpire24Extras)
 
+**Overall**: S — Versatility เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis พร้อมกัน (Control/Support/Survivability/AE) กว้างที่สุดในกลุ่มที่ไม่ใช่ Domain-max
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ไม่มี damage feature ใหม่โดยตรง (theme เน้น utility/control ผ่านคาถาสาย Haste/Slow/Time Stop) = เท่า baseline |
-| **Control** | 8/10 (A) | Lag Spell (lv10, หน่วงผลคาถาไว้ 1-3 รอบ เป็น tactical setup ที่ไม่มีใครทำได้) บวกการเข้าถึง Slow/Time Stop ผ่าน Chronomancy Savant [M:2/4] [R:2/3] [B:3/3] |
+| **Control** | 8/10 (A) | Lag Spell (lv10, หน่วงผลคาถาไว้ 1-3 รอบ เป็น tactical setup ที่ไม่มีใครทำได้) บวกการเข้าถึง Slow/Time Stop ผ่าน Chronomancy Savant [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 6/10 (B) | Time Loop (lv14, reaction ให้ creature ที่เห็น — รวม ally — ได้เทิร์นพิเศษระหว่างที่เวลาหยุดสำหรับคนอื่นทั้งหมด) เท่ากับมอบเทิร์นฟรีให้ ally ได้โดยตรง [M:2/4] [R:2/3] [B:2/3] |
 | **Survivability** | 5/10 (B) | Retroactive Spell (cast คาถาบัฟตัวเอง ระดับ 1-3 ฟรีไม่เสีย action ตอนทอย Initiative) เป็นการเตรียมตัวก่อนต่อสู้ที่มีประโยชน์ [M:2/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 8/10 (A) | Chronoshift (ได้ action พิเศษจำกัดฟรีทุกครั้งที่ cast คาถา Chronomancy) บวก Retroactive Spell (cast ฟรีไม่เสีย action) เป็นชุด AE ที่แข็งแกร่งมาก [M:3/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 8/10 (A) | Chronoshift (ได้ action พิเศษจำกัดฟรีทุกครั้งที่ cast คาถา Chronomancy) บวก Retroactive Spell (cast ฟรีไม่เสีย action) เป็นชุด AE ที่แข็งแกร่งมาก [M:3/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | Lag Spell/Retroactive Spell เป็น tactical utility เชิงเวลาที่มีเอกลักษณ์ แต่ไม่พอยกระดับเหนือ baseline ที่กว้างอยู่แล้ว = เท่า baseline |
-| **Versatility** | 9/10 (S) | Time Loop เลือกเป้าได้ทั้ง ally/ศัตรู บวก Lag Spell/Chronoshift/Retroactive Spell ที่ต่างกันโดยสิ้นเชิง ครอบคลุมทั้ง damage-setup/control/support/action-economy [M:3/4] [R:2/3] [B:3/3] |
+| **Versatility** | 9/10 (S) | Time Loop เลือกเป้าได้ทั้ง ally/ศัตรู บวก Lag Spell/Chronoshift/Retroactive Spell ที่ต่างกันโดยสิ้นเชิง ครอบคลุมทั้ง damage-setup/control/support/action-economy [M:3/4] [R:3/3] [B:3/3] |
 
 ### Familiar Master (ValdaSpire24Extras)
 
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่ (ชื่อรุ่น 2014 ของ Fumaturge)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Arcane Evolution ให้ familiar โจมตีได้จริงจัง (สเกลตามระดับ slot ที่ใช้) บวก Fiend Planar Familiar (lv14, AoE hellfire 4d6) [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Arcane Evolution ให้ familiar โจมตีได้จริงจัง (สเกลตามระดับ slot ที่ใช้) บวก Fiend Planar Familiar (lv14, AoE hellfire 4d6) [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | Fey Planar Familiar (lv14, teleport familiar + Disadvantage ต่อ attack ที่เข้าใส่มัน) ไม่พอยกระดับ tier = เท่า baseline |
 | **Support** | 4/10 (C) | Celestial Planar Familiar (lv14, familiar ให้ ally ที่ fail test reroll ด้วย Advantage ผ่าน reaction) เป็น support ที่ break เหนือ baseline |
 | **Survivability** | 4/10 (C) | Servitor's Agility's "No Special Speed" option ให้ Disadvantage ต่อ AOO ที่เข้าใส่ตัวเอง [M:1/4] [R:2/3] [B:1/3] |
@@ -253,23 +298,29 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Fumaturge (ValdaSpire24Extras)
 
+**Overall**: A — Survivability กระโดด +5 (C→A) บวก Utility เป็น S ใหม่ และ Control/AE ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ไม่มี damage feature ใหม่โดยตรง = เท่า baseline |
-| **Control** | 8/10 (A) | Fogcrafting's Difficult Terrain option บวกการควบคุมพื้นที่หมอกควันที่หลากหลาย (sculpt/undispersible) ยกระดับความยืดหยุ่นของ battlefield control อย่างมาก [M:2/4] [R:2/3] [B:3/3] |
+| **Control** | 8/10 (A) | Fogcrafting's Difficult Terrain option บวกการควบคุมพื้นที่หมอกควันที่หลากหลาย (sculpt/undispersible) ยกระดับความยืดหยุ่นของ battlefield control อย่างมาก [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 3/10 (C) | Fogcrafting's Sculpted (เว้นพื้นที่ AoE ให้ ally ไม่โดน) เป็น support แคบไม่พอยกระดับ = เท่า baseline |
 | **Survivability** | 8/10 (A) | Gaseous Escape (lv6, reaction cast Gaseous Form ฟรีตอนโดนดาเมจ B/P/S ได้ Resistance ย้อนหลัง) บวก Smoke Mage (lv14, Gaseous Form ไม่ต้อง Concentration+Fly Speed เต็ม+cast คาถาได้ระหว่างแปลงร่าง) เป็นชุดหลบหนี/ล่องหนที่ทรงพลังมาก [M:3/4] [R:2/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Greater Fogcrafting's Fog Step (lv10, bonus action teleport ภายในกลุ่มควันตัวเอง) [M:2/4] [R:2/3] [B:2/3] |
-| **Utility** | 9/10 (S) | Smoke Animals (familiar ควันบิน 60ft ฟรี) บวก Fogcrafting 4 modifier ที่ปรับคาถากลุ่มควันได้ตามสถานการณ์ บวก Gaseous Form access เต็มรูปแบบ เป็นชุด utility ที่หลากหลายมาก [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Greater Fogcrafting's Fog Step (lv10, bonus action teleport ภายในกลุ่มควันตัวเอง) [M:2/4] [R:3/3] [B:2/3] |
+| **Utility** | 9/10 (S) | Smoke Animals (familiar ควันบิน 60ft ฟรี) บวก Fogcrafting 4 modifier ที่ปรับคาถากลุ่มควันได้ตามสถานการณ์ บวก Gaseous Form access เต็มรูปแบบ เป็นชุด utility ที่หลากหลายมาก [M:4/4] [R:2/3] [B:3/3] |
 | **Versatility** | 8/10 (A) | ธีมควัน/แก๊สครอบคลุม control+survival+utility เชื่อมโยงกันแน่น = เท่า baseline |
 
 ### Gastronomer (ValdaSpire24Extras)
+
+**Overall**: S — Support กระโดดจาก 3 เป็น 9 (C→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Utility/Versatility เป็น S ใหม่ด้วย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ไม่มี damage feature ใหม่ = เท่า baseline |
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
-| **Support** | 9/10 (S) | Monster Meal (temp HP+บัฟตามประเภทมอนสเตอร์ให้หลายคน) บวก Arcane Condiments (lv6, เพิ่ม utility spell เช่น Water Breathing/Darkvision ให้ทุกคนที่กินมื้ออาหาร) บวก **Heroic Snacks (lv10, cast Heroes' Feast ฟรีไม่เสีย slot ให้ Int mod คนกิน — ปกติเป็นคาถา lv6)** บวก Five-Star Condiments (lv14, เพิ่ม Fly/Invisibility/Blur ให้กลุ่ม) เป็นชุด support ที่ทรงพลังและกว้างที่สุดในบรรดา Wizard ทั้งหมด [M:4/4] [R:3/3] [B:3/3] |
+| **Support** | 9/10 (S) | Monster Meal (temp HP+บัฟตามประเภทมอนสเตอร์ให้หลายคน) บวก Arcane Condiments (lv6, เพิ่ม utility spell เช่น Water Breathing/Darkvision ให้ทุกคนที่กินมื้ออาหาร) บวก **Heroic Snacks (lv10, cast Heroes' Feast ฟรีไม่เสีย slot ให้ Int mod คนกิน — ปกติเป็นคาถา lv6)** บวก Five-Star Condiments (lv14, เพิ่ม Fly/Invisibility/Blur ให้กลุ่ม) เป็นชุด support ที่ทรงพลังและกว้างที่สุดในบรรดา Wizard ทั้งหมด [M:4/4] [R:3/3] [B:2/3] |
 | **Survivability** | 3/10 (C) | ไม่มี survivability feature ใหม่เฉพาะตัวเอง (ได้ประโยชน์ร่วมจากมื้ออาหารตัวเองเท่านั้น) = เท่า baseline |
 | **Action Economy** | 6/10 (B) | Heroic Snacks กินเป็น bonus action ต่อคน แต่การเตรียมยังต้องใช้เวลา rest ไม่ใช่ combat action = เท่า baseline |
 | **Utility** | 9/10 (S) | Sous Chef (Create Food and Water ฟรี) บวก Arcane Condiments (Comprehend Languages/Darkvision/Water Breathing ให้ทั้งทีม) เป็น exploration utility ที่กว้างมาก [M:3/4] [R:3/3] [B:3/3] |
@@ -277,41 +328,53 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Magic Missile Mage (ValdaSpire24Extras)
 
+**Overall**: A — Damage เป็น S ใหม่ บวก Control/Survivability ขยับตาม Support ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Extra Darts (สูงสุด +4 ลูก = รวม 7-8 ลูกที่ lv14) บวก Giga-Missile (lv14, +Int mod ดาเมจต่อลูก) บนคาถาที่โดนชัวร์ไม่ต้องทอย attack roll เลย เป็น reliable burst damage ที่สูงมาก [M:4/4] [R:3/3] [B:2/3] |
-| **Control** | 8/10 (A) | Versatile Missiles (lv6, แปลงลูกดอกเป็น Prone/Blind/Stun ได้โดยแลกจำนวนลูก) เป็น control ที่ยืดหยุ่นบนคาถาที่โดนชัวร์ [M:3/4] [R:2/3] [B:2/3] |
+| **Control** | 8/10 (A) | Versatile Missiles (lv6, แปลงลูกดอกเป็น Prone/Blind/Stun ได้โดยแลกจำนวนลูก) เป็น control ที่ยืดหยุ่นบนคาถาที่โดนชัวร์ [M:3/4] [R:3/3] [B:2/3] |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 6/10 (B) | Shield of Missiles (lv10, AC bonus สูงสุด +5 + สวนกลับอัตโนมัติทุกครั้งที่ศัตรูพลาดตี + โซนดาเมจ) เป็นการป้องกันที่ดีมาก [M:2/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Free Casting (cast Magic Missile ฟรี Int mod ครั้ง/วัน) เป็นตัวคูณทรัพยากรที่ดี [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Free Casting (cast Magic Missile ฟรี Int mod ครั้ง/วัน) เป็นตัวคูณทรัพยากรที่ดี [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | ไม่มี utility feature ใหม่นอกคอมแบต = เท่า baseline |
 | **Versatility** | 8/10 (A) | Magic Missile ที่โดนชัวร์+ตัวเลือก control หลายแบบ+โหมดป้องกัน แต่ยังเป็น "one-spell specialist" = เท่า baseline |
 
 ### Mystic Strategist (ValdaSpire24Extras)
 
+**Overall**: S — Versatility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Control/Support/Survivability) กว้างที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Potent Spell (เพิ่ม battle die ใส่ดาเมจคาถา) บวก Sanguine Spell (lv14, DoT Necrotic ต่อเป้าที่ fail save) [M:3/4] [R:2/3] [B:2/3] |
-| **Control** | 8/10 (A) | Staggering Spell (halve speed+atk penalty บนเป้าที่ fail save) บวก Inexorable Spell (lv14, บังคับ reroll Disadvantage บนเป้าที่ save ผ่านไปแล้ว — พลิกผลได้) [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Potent Spell (เพิ่ม battle die ใส่ดาเมจคาถา) บวก Sanguine Spell (lv14, DoT Necrotic ต่อเป้าที่ fail save) [M:3/4] [R:3/3] [B:2/3] |
+| **Control** | 8/10 (A) | Staggering Spell (halve speed+atk penalty บนเป้าที่ fail save) บวก Inexorable Spell (lv14, บังคับ reroll Disadvantage บนเป้าที่ save ผ่านไปแล้ว — พลิกผลได้) [M:3/4] [R:3/3] [B:2/3] |
 | **Support** | 5/10 (B) | Bolstering Spell (temp HP ให้ ally ที่ตัวเองบัฟด้วยคาถา) บวก Morale Boost (reaction แก้ save ที่ ally พลาด) เป็น support จริงที่ break เหนือ baseline [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 5/10 (B) | Unbreakable Concentration (reaction แก้ save Concentration ที่พลาด) เป็นการป้องกันตัวเองที่สำคัญสำหรับ full-caster [M:2/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | Spell Tactics (lv10, bonus action+slot คืน battle die) เป็นการบริหารทรัพยากรที่ดี [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Spell Tactics (lv10, bonus action+slot คืน battle die) เป็นการบริหารทรัพยากรที่ดี [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | Flash of Brilliance (แก้ Int/Wis check พลาด) + Arcane Assessment (lv6, ตรวจสอบความสามารถเวทมนตร์+Adv save ต่อเป้า) ไม่พอยกระดับเหนือ baseline = เท่า baseline |
 | **Versatility** | 9/10 (S) | 6 maneuver ที่ต่างกันโดยสิ้นเชิง (dmg/control/support/defense/utility) ครอบคลุมทุกมิติมากที่สุดในบรรดา Wizard subclass เดียว [M:3/4] [R:3/3] [B:3/3] |
 
 ### Protomancer (ValdaSpire24Extras)
 
+**Overall**: A — Versatility เป็น S ใหม่ บวก Damage/Control/Survivability ขยับตาม Support ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Amnesia Surge's Advantage-on-spell-attack option (แลก spell ที่เตรียมไว้เพื่อ Adv attack roll) เป็นดาเมจ-reliability ที่มีประโยชน์ [M:2/4] [R:2/3] [B:2/3] |
-| **Control** | 8/10 (A) | Amnesia Surge's Impose-Disadvantage option (แลก spell ที่เตรียมไว้เพื่อให้เป้ามี Disadvantage ต่อ save) ช่วยให้คาถา control ที่ยากลงได้ง่ายขึ้นมาก [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 7/10 (A) | Amnesia Surge's Advantage-on-spell-attack option (แลก spell ที่เตรียมไว้เพื่อ Adv attack roll) เป็นดาเมจ-reliability ที่มีประโยชน์ [M:2/4] [R:3/3] [B:2/3] |
+| **Control** | 8/10 (A) | Amnesia Surge's Impose-Disadvantage option (แลก spell ที่เตรียมไว้เพื่อให้เป้ามี Disadvantage ต่อ save) ช่วยให้คาถา control ที่ยากลงได้ง่ายขึ้นมาก [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 5/10 (B) | Amnesia Surge's Advantage-on-own-saves option บวก Mnemonic Concentration (lv10, การันตี save Concentration แลกด้วยการเสีย spell ที่เตรียมไว้) [M:2/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | Vital Recovery (lv6, แลก Hit Dice เพื่อเพิ่มจำนวน slot ที่ Arcane Recovery คืนได้) เป็นตัวคูณทรัพยากรที่ดี [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Vital Recovery (lv6, แลก Hit Dice เพื่อเพิ่มจำนวน slot ที่ Arcane Recovery คืนได้) เป็นตัวคูณทรัพยากรที่ดี [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | Proto-Master (lv14, cast protospell ที่เตรียมไว้ฟรี effective level 3) เป็น utility เสริม ไม่พอยกระดับเหนือ baseline = เท่า baseline |
-| **Versatility** | 9/10 (S) | Amnesia Surge ใช้แลก spell ที่เตรียมไว้เพื่อโบนัส 3 แบบ (dmg/control/defense) ได้ทุกครั้งที่ cast คาถาอะไรก็ได้ เป็นความยืดหยุ่นเชิง trade-off ที่ประยุกต์ใช้ได้ตลอดเวลา [M:3/4] [R:2/3] [B:3/3] |
+| **Versatility** | 9/10 (S) | Amnesia Surge ใช้แลก spell ที่เตรียมไว้เพื่อโบนัส 3 แบบ (dmg/control/defense) ได้ทุกครั้งที่ cast คาถาอะไรก็ได้ เป็นความยืดหยุ่นเชิง trade-off ที่ประยุกต์ใช้ได้ตลอดเวลา [M:3/4] [R:3/3] [B:3/3] |
 
 ### Scroll Scribe (ValdaSpire24Extras)
+
+**Overall**: S — Support กระโดด +5 (C→A) บวก Utility/Versatility เป็น S ใหม่ทั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -325,9 +388,12 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Somnomancer (ValdaSpire24Extras)
 
+**Overall**: S — Control เป็น S ใหม่ (กระโดด +2) บวก Utility เป็น S ใหม่ด้วย และ Damage/Survivability ขยับตาม Support ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Nightmares (lv14, bonus action ดาเมจ Psychic=level ให้ทุกเป้าที่ Unconscious ในระยะ 60ft) ทำงานร่วมกับ Deep Sleep ได้ดีมาก [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Nightmares (lv14, bonus action ดาเมจ Psychic=level ให้ทุกเป้าที่ Unconscious ในระยะ 60ft) ทำงานร่วมกับ Deep Sleep ได้ดีมาก [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 9/10 (S) | Deep Sleep (Sleep spell ฟรี + fail save ครั้งแรก = Unconscious ทันทีไม่ต้องรอ HP threshold) บวก Hypnotize (lv6, พิธี 1 นาที กด Charmed + ตอบคำถามตามจริง + auto-fail Suggestion) เป็น control/interrogation ที่แรงที่สุดในบรรดา Wizard [M:3/4] [R:3/3] [B:3/3] |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 5/10 (B) | Somnambulist (ป้องกันตัวเองจากผล Unconscious แบบเต็ม — ยังเคลื่อนที่/กระทำได้ครึ่งความเร็วแม้ถูก knockout) [M:2/4] [R:2/3] [B:1/3] |
@@ -337,10 +403,13 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Tyromancer (ValdaSpire24Extras)
 
+**Overall**: B — ขยับกลางๆ 3 axis (Damage/Control/Survivability) Support ไม่ถูกแตะ ไม่มี peak ใหม่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Lactose Intolerance (lv14, Ferment Spell เพิ่มดาเมจ Poison=ครึ่ง level+Int mod) [M:2/4] [R:2/3] [B:2/3] |
-| **Control** | 8/10 (A) | Ferment Spell (lv6, แปลง save ของคาถา action ใดก็ได้เป็น Con + เพิ่ม Poisoned condition บน fail, Int mod ครั้ง/วัน) เป็น debuff-attachment ที่ประยุกต์ใช้ได้กับคาถาแทบทุกตัว [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 7/10 (A) | Lactose Intolerance (lv14, Ferment Spell เพิ่มดาเมจ Poison=ครึ่ง level+Int mod) [M:2/4] [R:3/3] [B:2/3] |
+| **Control** | 8/10 (A) | Ferment Spell (lv6, แปลง save ของคาถา action ใดก็ได้เป็น Con + เพิ่ม Poisoned condition บน fail, Int mod ครั้ง/วัน) เป็น debuff-attachment ที่ประยุกต์ใช้ได้กับคาถาแทบทุกตัว [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 5/10 (B) | Legen-Dairy Resistance (lv10, แปลง save ที่พลาดเป็นสำเร็จ 1/rest) [M:2/4] [R:2/3] [B:1/3] |
 | **Action Economy** | 6/10 (B) | Cheese Magic ไม่เสีย action เพิ่ม (ติดมากับการ cast ปกติ) แต่ไม่พอยกระดับ tier = เท่า baseline |
@@ -349,60 +418,75 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Universalist (ValdaSpire24Extras)
 
+**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Damage/Control/Action Economy ขยับตาม แม้ Support จะไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Arcane Excellence (spell slot เพิ่มอีก 1 ช่องที่ระดับสูงสุดเสมอ สูงสุดถึง lv7) เท่ากับได้ cast คาถาแรงสุด 1 ครั้งเพิ่มทุกวัน [M:2/4] [R:2/3] [B:2/3] |
-| **Control** | 8/10 (A) | Spellwarp (lv10, สลับประเภท saving throw ของคาถาใดก็ได้ระหว่างกลุ่ม Str/Dex/Con หรือ Int/Wis/Cha — โจมตี save ที่อ่อนแอของเป้าได้เสมอ) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 7/10 (A) | Arcane Excellence (spell slot เพิ่มอีก 1 ช่องที่ระดับสูงสุดเสมอ สูงสุดถึง lv7) เท่ากับได้ cast คาถาแรงสุด 1 ครั้งเพิ่มทุกวัน [M:2/4] [R:3/3] [B:2/3] |
+| **Control** | 8/10 (A) | Spellwarp (lv10, สลับประเภท saving throw ของคาถาใดก็ได้ระหว่างกลุ่ม Str/Dex/Con หรือ Int/Wis/Cha — โจมตี save ที่อ่อนแอของเป้าได้เสมอ) [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 4/10 (C) | Erudite Focus (lv14, Adv save ต่อคาถาระหว่าง Concentrate บน feature นี้) เป็นการป้องกันที่มีเงื่อนไข [M:1/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 8/10 (A) | Eidetic Memory (lv6, Memorize Spell เป็น bonus action Int mod ครั้ง/วัน) บวก Erudite Focus (bonus action Study/cantrip/ใช้ item ระหว่าง Concentrate) เป็นชุด AE ที่แข็งแกร่งมาก [M:3/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 8/10 (A) | Eidetic Memory (lv6, Memorize Spell เป็น bonus action Int mod ครั้ง/วัน) บวก Erudite Focus (bonus action Study/cantrip/ใช้ item ระหว่าง Concentrate) เป็นชุด AE ที่แข็งแกร่งมาก [M:3/4] [R:3/3] [B:2/3] |
 | **Utility** | 9/10 (S) | Universal Savant (เพิ่ม spell จากโรงเรียนไหนก็ได้ฟรีเข้าสมุด) บวก Multidisciplinary Scholar (Expertise skill ที่ 2) เป็นการเข้าถึงความรู้ที่กว้างที่สุด [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 9/10 (S) | ออกแบบมาให้เป็น "ผู้เชี่ยวชาญทุกด้าน" อย่างแท้จริง (slot เพิ่ม+เข้าถึงทุกโรงเรียน+สลับ save+จัดการ action หลายรูปแบบ) [M:3/4] [R:3/3] [B:3/3] |
 
 ### Wand Wizard (ValdaSpire24Extras)
 
+**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวกขยับขึ้นอีก 3 axis พร้อมกัน (Damage/Control/Survivability/AE) กว้างมาก
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Wand Slinger (lv6, bonus action ยิงคาถาจากไม้กายสิทธิ์ = cast ได้ 2 คาถาต่อเทิร์นถ้าไม่ cast คาถา lv1+ ปกติในเทิร์นนั้น) เป็นการเพิ่ม magnitude ที่ทรงพลัง [M:3/4] [R:2/3] [B:2/3] |
-| **Control** | 8/10 (A) | Arcane Duelist's Impair option (Disadvantage ต่อ spell attack ครั้งถัดไปของเป้า) บวกไม้กายสิทธิ์อาจบรรจุคาถา control ได้ [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Wand Slinger (lv6, bonus action ยิงคาถาจากไม้กายสิทธิ์ = cast ได้ 2 คาถาต่อเทิร์นถ้าไม่ cast คาถา lv1+ ปกติในเทิร์นนั้น) เป็นการเพิ่ม magnitude ที่ทรงพลัง [M:4/4] [R:2/3] [B:2/3] |
+| **Control** | 8/10 (A) | Arcane Duelist's Impair option (Disadvantage ต่อ spell attack ครั้งถัดไปของเป้า) บวกไม้กายสิทธิ์อาจบรรจุคาถา control ได้ [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 6/10 (B) | Warding Shield (lv10, cast Shield ฟรีตอน save พลาด +5 ต่อ save นั้น — แก้ save ที่พลาดให้กลายเป็นสำเร็จได้เกือบทุกครั้ง) [M:2/4] [R:3/3] [B:1/3] |
-| **Action Economy** | 8/10 (A) | Wand Slinger ให้ "cast คาถาที่ 2" ผ่าน bonus action ในเทิร์นเดียวกัน เป็นตัวคูณ action ที่ทรงพลัง [M:3/4] [R:2/3] [B:2/3] |
-| **Utility** | 9/10 (S) | Craft Wands (เก็บคาถาไว้ในไม้กายสิทธิ์ได้สูงสุด 6 อัน ระดับสูงสุด 5 พร้อมใช้งานได้ทันที) เป็นคลังคาถาสำรองที่ยืดหยุ่นมาก [M:3/4] [R:2/3] [B:3/3] |
-| **Versatility** | 9/10 (S) | ไม้กายสิทธิ์หลายอันพร้อมกัน (สูงสุด 6 อันที่ lv17) ให้เข้าถึงคาถาได้หลากหลายพร้อมกันเสมอ บวกกลไก AE คูณสอง [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 8/10 (A) | Wand Slinger ให้ "cast คาถาที่ 2" ผ่าน bonus action ในเทิร์นเดียวกัน เป็นตัวคูณ action ที่ทรงพลัง [M:3/4] [R:3/3] [B:2/3] |
+| **Utility** | 9/10 (S) | Craft Wands (เก็บคาถาไว้ในไม้กายสิทธิ์ได้สูงสุด 6 อัน ระดับสูงสุด 5 พร้อมใช้งานได้ทันที) เป็นคลังคาถาสำรองที่ยืดหยุ่นมาก [M:4/4] [R:2/3] [B:3/3] |
+| **Versatility** | 9/10 (S) | ไม้กายสิทธิ์หลายอันพร้อมกัน (สูงสุด 6 อันที่ lv17) ให้เข้าถึงคาถาได้หลากหลายพร้อมกันเสมอ บวกกลไก AE คูณสอง [M:3/4] [R:3/3] [B:3/3] |
 
 ### Daemonologist (GrimHollowPG24)
 
+**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Damage/AE ขยับตาม แม้ Support/Survivability จะขยับได้แค่บางส่วน
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Eternal War Eruption (lv14, AoE 4d10 Necrotic+4d10 Radiant+Blind พร้อมกัน) บวก Unearthly Countenance (lv10, upcast คาถาจากตาราง Daemon/Seraph ขึ้น 1 ระดับฟรี) [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Eternal War Eruption (lv14, AoE 4d10 Necrotic+4d10 Radiant+Blind พร้อมกัน) บวก Unearthly Countenance (lv10, upcast คาถาจากตาราง Daemon/Seraph ขึ้น 1 ระดับฟรี) [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | Eternal War Eruption's Blind condition เสริมจาก AoE damage เป็นหลัก ไม่พอยกระดับ tier = เท่า baseline |
 | **Support** | 4/10 (C) | Fair and Foul's Seraph list (Aid/Bless/Revivify/Greater Restoration) เข้าถึง support spell ระดับสูงได้ถ้าเลือกฝั่งนี้ เป็น support ที่ break เหนือ baseline |
 | **Survivability** | 4/10 (C) | Borrowed Tongues and Hides (Resist Necrotic หรือ Radiant ตามฝั่งที่เลือก) [M:1/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | Stolen Secrets ให้ Eldritch Invocation ที่ส่วนใหญ่ใช้ได้แบบ at-will ไม่เสีย action เพิ่ม [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Stolen Secrets ให้ Eldritch Invocation ที่ส่วนใหญ่ใช้ได้แบบ at-will ไม่เสีย action เพิ่ม [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 9/10 (S) | Stolen Secrets ให้เข้าถึงคลัง Eldritch Invocation ทั้ง 28 ตัวเลือกของ Warlock มาเสริม utility ของ Wizard ที่กว้างอยู่แล้วให้กว้างขึ้นไปอีก [M:4/4] [R:2/3] [B:3/3] |
 | **Versatility** | 9/10 (S) | เข้าถึงคาถา 2 สาย (Daemon/Seraph) สลับได้ทุก long rest บวก Invocation pool เป็นความยืดหยุ่นที่กว้างมาก [M:3/4] [R:3/3] [B:3/3] |
 
 ### Plague Doctor (Wizard) (GrimHollowPG24)
 
+**Overall**: S — Support กระโดด +5 (C→A) บวก Utility/Versatility เป็น S ใหม่ทั้งคู่ และขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่มทั้งหมด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Bad Medicine (ปาโปชั่นใส่ AoE 5 เอฟเฟกต์สะสมตามระดับ slot) บวก Medicinal Master (lv14, +2d8 Acid+Disadvantage save) [M:3/4] [R:2/3] [B:2/3] |
-| **Control** | 8/10 (A) | Bad Medicine ให้ Poisoned/Speed halved/DoT สะสมได้พร้อมกันหลายแบบตามระดับ slot เป็น debuff kit ที่หลากหลาย [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Bad Medicine (ปาโปชั่นใส่ AoE 5 เอฟเฟกต์สะสมตามระดับ slot) บวก Medicinal Master (lv14, +2d8 Acid+Disadvantage save) [M:3/4] [R:3/3] [B:2/3] |
+| **Control** | 8/10 (A) | Bad Medicine ให้ Poisoned/Speed halved/DoT สะสมได้พร้อมกันหลายแบบตามระดับ slot เป็น debuff kit ที่หลากหลาย [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 8/10 (A) | Potion Craft (บรรจุคาถา single-target ที่เตรียมไว้ **อะไรก็ได้** ลงโปชั่นให้ ally ดื่มเองได้) บวก Good Medicine (โปชั่นฮีลบริสุทธิ์สเกลตาม slot + ล้าง Poisoned) เป็นชุด support ที่ยืดหยุ่นที่สุดในบรรดา Wizard เพราะมอบคาถาอะไรก็ได้ให้ทีมใช้ผ่านโปชั่น [M:3/4] [R:2/3] [B:3/3] |
 | **Survivability** | 5/10 (B) | Breathe It In (lv10, temp HP จากดาเมจ Necrotic/Poison ที่ได้รับ + Immune Poisoned) [M:2/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | โปชั่นดื่มเป็น bonus action ต่อคน เท่ากับแบ่งเบา action การ cast ให้ ally ทำเองได้ [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | โปชั่นดื่มเป็น bonus action ต่อคน เท่ากับแบ่งเบา action การ cast ให้ ally ทำเองได้ [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 9/10 (S) | Potion Craft (บรรจุคาถา single-target อะไรก็ได้จาก spellbook ลงโปชั่น) เป็นความยืดหยุ่นระดับสูงมาก [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 9/10 (S) | ดาเมจ+control+support+ฮีล ผ่านกลไก potion-crafting เดียวกัน ครอบคลุมทุกมิติ [M:3/4] [R:3/3] [B:3/3] |
 
 ### Sangromancer (GrimHollowPG24)
 
+**Overall**: A — Survivability กระโดด +4 (C→A) บวก Damage/Action Economy ขยับตาม Support ไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Blood for Blood (lv10, แลก Hit Dice/Sangromancy Die เพิ่มดาเมจทุกครั้งที่คาถาโดน ดับเบิลถ้าเป้า Bloodied) [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Blood for Blood (lv10, แลก Hit Dice/Sangromancy Die เพิ่มดาเมจทุกครั้งที่คาถาโดน ดับเบิลถ้าเป้า Bloodied) [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Sanguine Vigor (+6 HP max +1/level + ฮีลตัวเองทุกครั้งที่ cast คาถา Sangromancy) บวก Red Renewal (lv14, คืน Hit Dice+Sangromancy Dice ตอน short rest) เป็นการยกระดับ HP pool ที่ต่ำที่สุดในเกม (d6) ให้แข็งแกร่งขึ้นอย่างเห็นได้ชัด [M:3/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Blood for Blood ทำงานฟรีเป็นส่วนหนึ่งของการโดนคาถา ไม่เสีย action เพิ่ม [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Blood for Blood ทำงานฟรีเป็นส่วนหนึ่งของการโดนคาถา ไม่เสีย action เพิ่ม [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 8/10 (A) | ไม่มี utility feature ใหม่ = เท่า baseline |
 | **Versatility** | 8/10 (A) | โฟกัส blood-magic nova/self-sustain specialist ชัดเจน = เท่า baseline |

@@ -36,41 +36,44 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 **ข้อยกเว้น baseline floor**: Demon Brand (2024) และ Demon Banner (2014 🕰️) มีข้อความ explicit ว่า "forgo the companionship of a Cohort" — Cohort ไม่แยกร่างเป็นตัวละครที่สองที่ลงมือเองทุกรอบเหมือน subclass อื่น (ผู้เล่นแปลงร่างเป็นปีศาจแทน ใช้ turn เดียวกัน) จึงเป็น subclass เดียวที่มีสิทธิ์ให้คะแนน Support/Action Economy **ต่ำกว่า baseline** ได้ตามกติกา
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Daggermark | ValdaSpire24 | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 8 (A) | 5 (B) | 6 (B) |
-| Demon Brand | ValdaSpire24Extras | 5 (B) | 3 (C) | 4 (C) ⚠️ | 8 (A) | 5 (B) ⚠️ | 8 (A) | 7 (A) |
-| Dragon Banner | ValdaSpire24 | 9 (S) | 6 (B) | 9 (S) | 4 (C) | 9 (S) | 3 (C) | 6 (B) |
-| Eagle Banner | ValdaSpire24 | 7 (A) | 5 (B) | 10 (S) | 4 (C) | 7 (A) | 4 (C) | 7 (A) |
-| Holy Icon | ValdaSpire24 | 6 (B) | 3 (C) | 10 (S) | 4 (C) | 8 (A) | 5 (B) | 6 (B) |
-| Jolly Roger | ValdaSpire24 | 7 (A) | 6 (B) | 10 (S) | 4 (C) | 8 (A) | 4 (C) | 7 (A) |
-| Lion Banner | ValdaSpire24 | 6 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 3 (C) | 7 (A) |
-| Siegeball Jersey | ValdaSpire24Extras | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
-| Skull Banner | ValdaSpire24Extras | 9 (S) | 6 (B) | 10 (S) | 6 (B) | 9 (S) | 3 (C) | 7 (A) |
-| Star-Spangled Banner | ValdaSpire24Extras | 9 (S) | 6 (B) | 10 (S) | 7 (A) | 9 (S) | 3 (C) | 8 (A) |
-| Tower Banner | ValdaSpire24 | 6 (B) | 5 (B) | 10 (S) | 9 (S) | 8 (A) | 3 (C) | 6 (B) |
-| Yellow Sign | ValdaSpire24Extras | 7 (A) | 9 (S) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Adrenaline Junkie | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) |
-| Brigand | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 6 (B) |
-| Feylost | ValdaSpire24Extras (Vagabond) | 6 (B) | 8 (A) | 9 (S) | 7 (A) | 7 (A) | 3 (C) | 7 (A) |
-| Gourmand | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 10 (S) | 6 (B) | 7 (A) | 4 (C) | 7 (A) |
-| Houndmaster | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 7 (A) |
-| Knight Errant | ValdaSpire24Extras (Vagabond) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
-| Plague Doctor | ValdaSpire24Extras (Vagabond) | 7 (A) | 6 (B) | 10 (S) | 4 (C) | 7 (A) | 5 (B) | 7 (A) |
-| Pugilist | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 7 (A) | 3 (C) | 6 (B) |
-| Rōnin | ValdaSpire24Extras (Vagabond) | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 4 (C) | 6 (B) |
-| Troubadour | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 10 (S) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
-| Demon Banner | ValdaSpireExtras 🕰️ | 6 (B) | 3 (C) | 5 (B) ⚠️ | 7 (A) | 5 (B) ⚠️ | 5 (B) | 7 (A) |
-| Jolly Roger Banner | VSS 🕰️ | 7 (A) | 4 (C) | 10 (S) | 5 (B) | 9 (S) | 4 (C) | 7 (A) |
-| Ram Banner | VSS 🕰️ | 6 (B) | 6 (B) | 10 (S) | 4 (C) | 7 (A) | 4 (C) | 6 (B) |
-| Raven Banner | VSS 🕰️ | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 6 (B) |
-| Siegeball Banner | ValdaSpireExtras 🕰️ | 5 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 4 (C) | 6 (B) |
-| Treant Banner | ValdaSpireExtras 🕰️ | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 7 (A) | 3 (C) | 7 (A) |
-| Turtle Banner | VSS 🕰️ | 5 (B) | 3 (C) | 10 (S) | 9 (S) | 7 (A) | 3 (C) | 6 (B) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Daggermark | B | ValdaSpire24 | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 8 (A) | 5 (B) | 6 (B) |
+| Demon Brand | B | ValdaSpire24Extras | 5 (B) | 3 (C) | 4 (C) ⚠️ | 8 (A) | 5 (B) ⚠️ | 8 (A) | 7 (A) |
+| Dragon Banner | B | ValdaSpire24 | 9 (S) | 6 (B) | 9 (S) | 4 (C) | 9 (S) | 3 (C) | 6 (B) |
+| Eagle Banner | B | ValdaSpire24 | 7 (A) | 5 (B) | 10 (S) | 4 (C) | 7 (A) | 4 (C) | 7 (A) |
+| Holy Icon | C | ValdaSpire24 | 6 (B) | 3 (C) | 10 (S) | 4 (C) | 8 (A) | 5 (B) | 6 (B) |
+| Jolly Roger | B | ValdaSpire24 | 7 (A) | 6 (B) | 10 (S) | 4 (C) | 8 (A) | 4 (C) | 7 (A) |
+| Lion Banner | A | ValdaSpire24 | 6 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 3 (C) | 7 (A) |
+| Siegeball Jersey | A | ValdaSpire24Extras | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
+| Skull Banner | A | ValdaSpire24Extras | 9 (S) | 6 (B) | 10 (S) | 6 (B) | 9 (S) | 3 (C) | 7 (A) |
+| Star-Spangled Banner | A | ValdaSpire24Extras | 9 (S) | 6 (B) | 10 (S) | 7 (A) | 9 (S) | 3 (C) | 8 (A) |
+| Tower Banner | A | ValdaSpire24 | 6 (B) | 5 (B) | 10 (S) | 9 (S) | 8 (A) | 3 (C) | 6 (B) |
+| Yellow Sign | S | ValdaSpire24Extras | 7 (A) | 9 (S) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Adrenaline Junkie | B | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) |
+| Brigand | A | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 6 (B) |
+| Feylost | A | ValdaSpire24Extras (Vagabond) | 6 (B) | 8 (A) | 9 (S) | 7 (A) | 7 (A) | 3 (C) | 7 (A) |
+| Gourmand | B | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 10 (S) | 6 (B) | 7 (A) | 4 (C) | 7 (A) |
+| Houndmaster | B | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 7 (A) |
+| Knight Errant | A | ValdaSpire24Extras (Vagabond) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
+| Plague Doctor | B | ValdaSpire24Extras (Vagabond) | 7 (A) | 6 (B) | 10 (S) | 4 (C) | 7 (A) | 5 (B) | 7 (A) |
+| Pugilist | A | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 7 (A) | 3 (C) | 6 (B) |
+| Rōnin | B | ValdaSpire24Extras (Vagabond) | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 4 (C) | 6 (B) |
+| Troubadour | C | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 10 (S) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
+| Demon Banner | C | ValdaSpireExtras 🕰️ | 6 (B) | 3 (C) | 5 (B) ⚠️ | 7 (A) | 5 (B) ⚠️ | 5 (B) | 7 (A) |
+| Jolly Roger Banner | B | VSS 🕰️ | 7 (A) | 4 (C) | 10 (S) | 5 (B) | 9 (S) | 4 (C) | 7 (A) |
+| Ram Banner | B | VSS 🕰️ | 6 (B) | 6 (B) | 10 (S) | 4 (C) | 7 (A) | 4 (C) | 6 (B) |
+| Raven Banner | B | VSS 🕰️ | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 6 (B) |
+| Siegeball Banner | A | ValdaSpireExtras 🕰️ | 5 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 4 (C) | 6 (B) |
+| Treant Banner | A | ValdaSpireExtras 🕰️ | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 7 (A) | 3 (C) | 7 (A) |
+| Turtle Banner | B | VSS 🕰️ | 5 (B) | 3 (C) | 10 (S) | 9 (S) | 7 (A) | 3 (C) | 6 (B) |
 
 ---
 
 ### Daggermark (ValdaSpire24)
+
+**Overall**: B — Support baseline เป็น S (9/10) อยู่แล้ว ตัวชี้วัดจริงคือ 3 axis ที่ baseline อ่อน (Control/Survivability/Utility) — Survivability กระโดด +3 และ Utility ขยับตาม แต่ Control นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -83,6 +86,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | เพิ่มธีม stealth/rogue ให้ leader class แต่ไม่ได้ขยาย breadth มาก = เท่า baseline |
 
 ### Demon Brand (ValdaSpire24Extras)
+
+**Overall**: B — Survivability/Utility กระโดดขึ้นแรง (+4/+5) แต่ Support ถูกตัดลงจาก baseline (9→4) และ Action Economy ก็ถูกตัดด้วย (7→5) — ได้มากแต่เสียจริงเช่นกัน
+
 
 > **ข้อยกเว้น baseline**: ข้อความ subclass ระบุชัดว่า "forgo the companionship of a Cohort" และ demon "doesn't take its own turn" (ต่างจาก Cohort ปกติที่ลงมือเองทุกรอบ) — เป็นเหตุผล explicit ที่ทำให้ Support/Action Economy ต่ำกว่า baseline ได้
 
@@ -98,6 +104,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Dragon Banner (ValdaSpire24)
 
+**Overall**: B — มีแค่ Control ที่ขยับใน 3 axis อ่อนของ baseline Survivability/Utility นิ่งสนิททั้งคู่ แม้ Damage/AE จะเป็น S ก็ตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Critical Focus ขยาย crit range ได้ถึง 16-20 แบบ snowball ทุกครั้งที่ครีหรือฆ่า + Rampage (ตี-ย้ายฟรีทุกครั้งที่ครี/ฆ่า) + Coup de Grâce (lv14, dice เพิ่มเพื่อ execute) — คลังดาเมจที่ยิ่งฆ่ายิ่งแรง [M:3/4] [R:3/3] [B:3/3] |
@@ -109,6 +118,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | เน้นดาเมจ/crit-snowball ธีมเดียวหนักมาก = เท่า baseline |
 
 ### Eagle Banner (ValdaSpire24)
+
+**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -122,6 +134,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Holy Icon (ValdaSpire24)
 
+**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อยใน 3 axis อ่อนของ baseline Control/Survivability นิ่งสนิททั้งคู่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Zealous Fervor (lv6) เพิ่ม 1d6 radiant ให้การโจมตีที่ Blitz สั่งให้ ally ทำ [M:2/4] [R:3/3] [B:1/3] |
@@ -133,6 +148,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | เป็น dedicated healer ธีมเดียวหนักมาก = เท่า baseline |
 
 ### Jolly Roger (ValdaSpire24)
+
+**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -146,6 +164,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Lion Banner (ValdaSpire24)
 
+**Overall**: A — Control และ Survivability ขยับขึ้นทั้งคู่ (ถึง B grade) มีแค่ Utility ที่ยังนิ่ง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Challenge เพิ่ม die เข้าดาเมจตอน taunt + Vengeful Gambit (lv10) ให้ counter-attack [M:2/4] [R:3/3] [B:1/3] |
@@ -157,6 +178,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | ผสม tank/taunt + counter-attack + team-wide buff ได้ในตัวเดียว [M:2/4] [R:3/3] [B:2/3] |
 
 ### Siegeball Jersey (ValdaSpire24Extras)
+
+**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Survivability ถึง A (กระโดด +3)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -170,6 +194,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Skull Banner (ValdaSpire24Extras)
 
+**Overall**: A — Control และ Survivability ขยับขึ้นทั้งคู่ (ถึง B grade) บวก Damage/Action Economy เป็น S ใหม่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Necromantic Burst (lv14) เป็น AoE nova 10d8 necrotic รัศมี 30ft save-for-half — magnitude สูงสุดในกลุ่ม Captain ที่ทำมา [M:3/4] [R:3/3] [B:3/3] |
@@ -182,17 +209,23 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Star-Spangled Banner (ValdaSpire24Extras)
 
+**Overall**: A — Control และ Survivability ขยับขึ้นทั้งคู่ (Survivability ถึง A) บวก Damage/Action Economy เป็น S ใหม่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Extra Attack (lv6, baseline Captain ไม่มีเลย) + Bull Rush (bonus dmg+push+prone) + Shield Fighter (อาวุธเพิ่ม) — สามแหล่งดาเมจซ้อนกัน [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Bull Rush บังคับ Str save ไม่งั้น prone+ผลัก 10ft [M:2/4] [R:2/3] [B:2/3] |
-| **Support** | 10/10 (S) | Patriotism free-cast Heroism (temp HP ต่อเนื่อง+immune frightened ให้เป้าที่เลือกได้) [M:3/4] [R:3/3] [B:3/3] |
+| **Support** | 10/10 (S) | Patriotism free-cast Heroism (temp HP ต่อเนื่อง+immune frightened ให้เป้าที่เลือกได้) [M:4/4] [R:3/3] [B:3/3] |
 | **Survivability** | 7/10 (A) | Freedom of Movement (lv10, free-cast ตัวเอง+Cohort) + Liberty or Death (lv14, cheat death ด้วยการเสีย die) [M:2/4] [R:2/3] [B:3/3] |
 | **Action Economy** | 9/10 (S) | Wings of Liberty (lv14) ให้ special bonus action เพิ่มสำหรับ maneuver โดยเฉพาะนาน 1 นาที — ทวีคูณ AE ของ baseline [M:3/4] [R:3/3] [B:3/3] |
 | **Utility** | 3/10 (C) | Second Amendment (weapon mastery ที่ 3) เน้นคอมแบตล้วน = เท่า baseline |
 | **Versatility** | 8/10 (A) | ผสมเมลี+shield-throw+"super mode" (บิน+extra action+cheat death) นาน 1 นาที [M:3/4] [R:2/3] [B:3/3] |
 
 ### Tower Banner (ValdaSpire24)
+
+**Overall**: A — Survivability กระโดดจาก 4 (C) เป็น 9 (S เต็มสเกล) — swing ใหญ่ที่สุดในกลุ่มสำหรับ axis นี้
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -206,6 +239,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Yellow Sign (ValdaSpire24Extras)
 
+**Overall**: S — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว โดย Control กระโดด +6 ถึง S (3→9) — สมบูรณ์ที่สุดในกลุ่มทั้งหมด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Nightmarish Glow (lv14) ให้ตัวเอง+ally ในออร่าตี extra 1d6 psychic ทุกครั้งที่โดน [M:2/4] [R:3/3] [B:2/3] |
@@ -217,6 +253,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | eldritch cultist ธีม control/debuff เฉพาะทาง บวก utility skill หมุนเวียน [M:2/4] [R:3/3] [B:2/3] |
 
 ### Adrenaline Junkie (ValdaSpire24Extras, ยืมจาก Vagabond)
+
+**Overall**: B — Survivability กระโดด +4 (C→A) บวก Utility ขยับตาม แต่ Control นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -230,6 +269,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Brigand (ValdaSpire24Extras, ยืมจาก Vagabond)
 
+**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันแบบกลางๆ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Ambush (โจมตีฟรีตอนทอย initiative) + Cutthroat (lv14, exploding damage dice สูงสุด 4 รอบ) [M:3/4] [R:3/3] [B:2/3] |
@@ -241,6 +283,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | ธีม hostage-taking/heist แคบ = เท่า baseline |
 
 ### Feylost (ValdaSpire24Extras, ยืมจาก Vagabond)
+
+**Overall**: A — Control กระโดด +5 (C→A) และ Survivability กระโดด +3 (C→A) พร้อมกัน มีแค่ Utility ที่ยังนิ่ง
+
 
 > **หมายเหตุข้อมูล**: ตาราง Fey Moods ไม่มีเนื้อหาละเอียดในไฟล์ที่ตรวจสอบได้ — ให้คะแนน Damage แบบระมัดระวังไว้ก่อนตามธีม "สุ่มบัฟ/เอฟเฟกต์" ที่ชื่อบ่งชี้
 
@@ -256,6 +301,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Gourmand (ValdaSpire24Extras, ยืมจาก Vagabond — Quick Snack ดัดแปลงให้ใช้ Hit Dice แทน Breather)
 
+**Overall**: B — Survivability/Utility ขยับกลางๆ แต่ Control นิ่งสนิท
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Carve (bonus dmg ผ่าน 2 Battle Dice ตอนชำแหละเป้า) [M:2/4] [R:2/3] [B:2/3] |
@@ -267,6 +315,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | Monster Meal ให้บัฟต่างกันตามชนิดสัตว์ที่ล่ามาปรุง — ปรับตามแคมเปญได้กว้าง [M:2/4] [R:3/3] [B:2/3] |
 
 ### Houndmaster (ValdaSpire24Extras, ยืมจาก Vagabond — Hound กลายเป็น Cohort)
+
+**Overall**: B — Survivability/Utility ขยับกลางๆ เหมือน Gourmand Control นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -280,6 +331,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Knight Errant (ValdaSpire24Extras, ยืมจาก Vagabond)
 
+**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Survivability ถึง A (กระโดด +3)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจโดยตรง = เท่า baseline |
@@ -291,6 +345,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | ผสม tank/protector + party morale-booster [M:2/4] [R:3/3] [B:2/3] |
 
 ### Plague Doctor (ValdaSpire24Extras, ยืมจาก Vagabond)
+
+**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -304,6 +361,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Pugilist (ValdaSpire24Extras, ยืมจาก Vagabond)
 
+**Overall**: A — Control กระโดด +3 และ Survivability กระโดด +4 ถึง A พร้อมกัน มีแค่ Utility ที่ยังนิ่ง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Brute Force (bonus dmg = unarmed die ทุกเทิร์นบน hit แรก) + unarmed die สเกล 1d6→1d12 + Knockout (lv14, 3-die execute) [M:3/4] [R:3/3] [B:2/3] |
@@ -315,6 +375,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | pure unarmed-brawler ธีมเดียว = เท่า baseline |
 
 ### Rōnin (ValdaSpire24Extras, ยืมจาก Vagabond)
+
+**Overall**: B — Survivability กระโดด +4 (C→A) แต่ Control ยังนิ่งสนิท มีแค่ Utility ที่ขยับตามอีกนิด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -328,6 +391,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Troubadour (ValdaSpire24Extras, ยืมจาก Vagabond)
 
+**Overall**: C — มีแค่ Utility ที่ขยับใน 3 axis อ่อนของ baseline Control/Survivability นิ่งสนิททั้งคู่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Scathing Retort (lv10, reaction psychic dmg ตอนมีคนพลาด/save สำเร็จใส่คุณ) [M:2/4] [R:2/3] [B:2/3] |
@@ -339,6 +405,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | bard-like party-buffer + social-utility hybrid [M:2/4] [R:3/3] [B:2/3] |
 
 ### Demon Banner (ValdaSpireExtras 🕰️)
+
+**Overall**: C — Survivability/Utility กระโดดขึ้น แต่ Support ถูกตัดลงจาก baseline (9→5) และ Action Economy ก็ถูกตัดด้วย (7→5) — การเสียมากกว่าตัว Demon Brand ในสัดส่วนเดียวกัน
+
 
 > **ข้อยกเว้น baseline**: เช่นเดียวกับ Demon Brand — ข้อความระบุชัดว่า "forgo the companionship of a cohort" ทำให้ Support/Action Economy ต่ำกว่า baseline ได้ (แม้ demon เวอร์ชันนี้จะแยกสแตทบล็อกและ "ลงมือก่อนหรือหลัง turn ของคุณ" แต่ต้องแปลงร่างเข้าไปใช้ turn เดียวกัน ไม่ใช่สองร่างคู่ขนาน)
 
@@ -354,6 +423,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Jolly Roger Banner (VSS 🕰️)
 
+**Overall**: B — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นแต่แค่ +1 เท่านั้นทุกตัว บวก Action Economy เป็น S ใหม่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Double Thrust (bonus action ตีเพิ่มด้วยอาวุธ finesse) [M:2/4] [R:3/3] [B:2/3] |
@@ -365,6 +437,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | swashbuckler-repositioning + massive team-action tool [M:2/4] [R:3/3] [B:2/3] |
 
 ### Ram Banner (VSS 🕰️)
+
+**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -378,6 +453,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Raven Banner (VSS 🕰️)
 
+**Overall**: B — Survivability/Utility ขยับกลางๆ แต่ Control นิ่งสนิท
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Flanking Strike (die+ครึ่งเลเวลตอน flank) + Guerilla Warfare (lv17, 2 Battle Dice ฟรีบน hit แรกของไฟต์) [M:3/4] [R:3/3] [B:2/3] |
@@ -389,6 +467,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | ambush/skirmisher rogue-hybrid = เท่า baseline |
 
 ### Siegeball Banner (ValdaSpireExtras 🕰️)
+
+**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันแบบกลางๆ เหมือน Brigand
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -402,6 +483,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Treant Banner (ValdaSpireExtras 🕰️)
 
+**Overall**: A — Control กระโดด +4 ถึง A บวก Survivability ขยับตาม มีแค่ Utility ที่ยังนิ่ง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Thornfoot (lv17) ทิ้งหนามแบบ Spike Growth ไว้ตามทาง (ตัวเอง/Cohort) [M:2/4] [R:2/3] [B:2/3] |
@@ -413,6 +497,9 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | เปลี่ยนภูมิประเทศได้จริง — เครื่องมือ unique ที่ไม่มี subclass อื่นเทียบได้ [M:2/4] [R:3/3] [B:2/3] |
 
 ### Turtle Banner (VSS 🕰️)
+
+**Overall**: B — Survivability กระโดดจาก 4 เป็น 9 (C→S เต็มสเกล) แต่ breadth แคบมาก Control/Utility นิ่งสนิททั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

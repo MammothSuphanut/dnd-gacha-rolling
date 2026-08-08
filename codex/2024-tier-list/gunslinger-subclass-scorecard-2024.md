@@ -38,46 +38,49 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Adrenaline Junkie | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 5 (B) |
-| Big Game Hunter | ValdaSpire24Extras | 10 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
-| Brigand | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 8 (A) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 7 (A) |
-| Covert Operative | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 6 (B) |
-| Daggermark | ValdaSpire24 (ยืมจาก Captain) | 9 (S) | 5 (B) | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) |
-| Deadeye | ValdaGunslinger | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 6 (B) |
-| Dragon Banner | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 7 (A) | 0 (D) | 5 (B) | 9 (S) | 3 (C) | 5 (B) |
-| Eagle Banner | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 4 (C) | 7 (A) |
-| Feylost | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
-| Gourmand | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 4 (C) | 8 (A) |
-| Grenadier | ValdaSpire24Extras | 10 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 4 (C) | 7 (A) |
-| Gun Tank | ValdaSpire24 | 10 (S) | 5 (B) | 0 (D) | 9 (S) | 6 (B) | 3 (C) | 7 (A) |
-| Gun-Ko Master | ValdaSpire24 | 10 (S) | 7 (A) | 0 (D) | 7 (A) | 9 (S) | 5 (B) | 8 (A) |
-| Gundead | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
-| High Roller | ValdaGunslinger | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 4 (C) | 5 (B) |
-| Houndmaster | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 5 (B) | 0 (D) | 6 (B) | 9 (S) | 5 (B) | 7 (A) |
-| Janissary | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 5 (B) | 6 (B) |
-| Jolly Roger | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 4 (C) | 8 (A) |
-| Knight Errant | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 4 (C) | 8 (A) |
-| Musketeer | ValdaSpire24 | 10 (S) | 5 (B) | 8 (A) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
-| Pistolero | ValdaSpire24 | 10 (S) | 6 (B) | 0 (D) | 5 (B) | 9 (S) | 3 (C) | 5 (B) |
-| Plague Doctor | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 5 (B) | 7 (A) | 5 (B) | 7 (A) |
-| Pugilist | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
-| Rōnin | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 5 (B) | 0 (D) | 8 (A) | 8 (A) | 4 (C) | 5 (B) |
-| Secret Agent | ValdaGunslinger | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
-| Sharpshooter | VSS 🕰️ | 10 (S) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 6 (B) | 6 (B) |
-| Siegeball Jersey | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 6 (B) | 8 (A) | 8 (A) | 8 (A) | 3 (C) | 7 (A) |
-| Spellslinger | ValdaGunslinger | 10 (S) | 7 (A) | 0 (D) | 5 (B) | 8 (A) | 6 (B) | 8 (A) |
-| Storm Gunner | ValdaSpireExtras 🕰️ | 10 (S) | 5 (B) | 0 (D) | 5 (B) | 7 (A) | 4 (C) | 6 (B) |
-| Trick Shot | ValdaGunslinger | 10 (S) | 5 (B) | 5 (B) | 5 (B) | 8 (A) | 4 (C) | 7 (A) |
-| Troubadour | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 7 (A) | 5 (B) | 7 (A) |
-| Twice-Damned | ValdaSpireExtras 🕰️ | 10 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 5 (B) |
-| White Hat | ValdaGunslinger | 9 (S) | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 3 (C) | 7 (A) |
-| Yellow Sign | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 9 (S) | 4 (C) | 6 (B) | 6 (B) | 5 (B) | 7 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Adrenaline Junkie | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 5 (B) |
+| Big Game Hunter | B | ValdaSpire24Extras | 10 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
+| Brigand | A | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 8 (A) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 7 (A) |
+| Covert Operative | B | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 6 (B) |
+| Daggermark | A | ValdaSpire24 (ยืมจาก Captain) | 9 (S) | 5 (B) | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) |
+| Deadeye | B | ValdaGunslinger | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 6 (B) |
+| Dragon Banner | B | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 7 (A) | 0 (D) | 5 (B) | 9 (S) | 3 (C) | 5 (B) |
+| Eagle Banner | A | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 4 (C) | 7 (A) |
+| Feylost | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
+| Gourmand | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 4 (C) | 8 (A) |
+| Grenadier | A | ValdaSpire24Extras | 10 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 4 (C) | 7 (A) |
+| Gun Tank | B | ValdaSpire24 | 10 (S) | 5 (B) | 0 (D) | 9 (S) | 6 (B) | 3 (C) | 7 (A) |
+| Gun-Ko Master | A | ValdaSpire24 | 10 (S) | 7 (A) | 0 (D) | 7 (A) | 9 (S) | 5 (B) | 8 (A) |
+| Gundead | C | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
+| High Roller | C | ValdaGunslinger | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 4 (C) | 5 (B) |
+| Houndmaster | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 5 (B) | 0 (D) | 6 (B) | 9 (S) | 5 (B) | 7 (A) |
+| Janissary | C | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 5 (B) | 6 (B) |
+| Jolly Roger | S | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 4 (C) | 8 (A) |
+| Knight Errant | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 4 (C) | 8 (A) |
+| Musketeer | S | ValdaSpire24 | 10 (S) | 5 (B) | 8 (A) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
+| Pistolero | B | ValdaSpire24 | 10 (S) | 6 (B) | 0 (D) | 5 (B) | 9 (S) | 3 (C) | 5 (B) |
+| Plague Doctor | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 5 (B) | 7 (A) | 5 (B) | 7 (A) |
+| Pugilist | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
+| Rōnin | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 5 (B) | 0 (D) | 8 (A) | 8 (A) | 4 (C) | 5 (B) |
+| Secret Agent | B | ValdaGunslinger | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
+| Sharpshooter | C | VSS 🕰️ | 10 (S) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 6 (B) | 6 (B) |
+| Siegeball Jersey | S | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 6 (B) | 8 (A) | 8 (A) | 8 (A) | 3 (C) | 7 (A) |
+| Spellslinger | B | ValdaGunslinger | 10 (S) | 7 (A) | 0 (D) | 5 (B) | 8 (A) | 6 (B) | 8 (A) |
+| Storm Gunner | C | ValdaSpireExtras 🕰️ | 10 (S) | 5 (B) | 0 (D) | 5 (B) | 7 (A) | 4 (C) | 6 (B) |
+| Trick Shot | A | ValdaGunslinger | 10 (S) | 5 (B) | 5 (B) | 5 (B) | 8 (A) | 4 (C) | 7 (A) |
+| Troubadour | A | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 7 (A) | 5 (B) | 7 (A) |
+| Twice-Damned | C | ValdaSpireExtras 🕰️ | 10 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 5 (B) |
+| White Hat | A | ValdaGunslinger | 9 (S) | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 3 (C) | 7 (A) |
+| Yellow Sign | S | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 9 (S) | 4 (C) | 6 (B) | 6 (B) | 5 (B) | 7 (A) |
 
 ---
 
 ### Adrenaline Junkie (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
+
+**Overall**: B — Damage baseline เป็น S (9/10) อยู่แล้ว ตัวชี้วัดจริงคือ Support (จุดอ่อนสุดของ baseline) ที่ยังเป็น 0 เต็ม — Survivability/AE ขยับเป็น A แต่ Support/Utility ไม่ถูกแตะเลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -91,6 +94,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Big Game Hunter (ValdaSpire24Extras)
 
+**Overall**: B — AE/Versatility ขยับเป็น A ทั้งคู่ + Utility ขยับเล็กน้อย แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Elephant Gun (ดาเมจก้อนเดียวสูงสุด 6d10 ที่ lv17) บวก Exotic Caliber (lv14, เลือก AoE cone/explosion/piercing line ด้วยดาเมจระดับเดียวกัน) — magnitude สูงที่สุดในกลุ่ม native Gunslinger [M:4/4] [R:3/3] [B:3/3] |
@@ -102,6 +108,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญล่าบอส/สัตว์ใหญ่ที่มีทั้งดาเมจก้อนเดียวและ AoE ให้เลือกใช้ [M:2/4] [R:2/3] [B:3/3] |
 
 ### Brigand (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
+
+**Overall**: A — 4 axis ขยับเป็น A พร้อมกัน (Control/Survivability/AE/Versatility) กว้างมาก แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -115,17 +124,23 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Covert Operative (ValdaSpireExtras 🕰️)
 
+**Overall**: B — Utility/AE ขยับกลางๆ แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | License to Kill (บวก risk die เข้าดาเมจทุกครั้งที่ยิงโดน) เป็นโบนัสเล็กน้อย ไม่พอข้าม tier = เท่า baseline |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
-| **Survivability** | 6/10 (B) | Fieldcraft (ไม่โดน Surprised ตลอดเวลาที่มีสติ) กัน surprise round ได้จริง [M:1/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Fieldcraft (ไม่โดน Surprised ตลอดเวลาที่มีสติ) กัน surprise round ได้จริง [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 8/10 (A) | Sneaky Shot (bonus action ยิงเมื่อ Dash/Disengage) + Risky Mission (lv10, ทำ deed 2 อย่างในเทิร์นเดียวโดยจ่าย 2 risk dice) [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 6/10 (B) | tool/skill proficiency คู่ (double prof bonus) + Concealed Gear (ซ่อนอุปกรณ์จากการค้นตัว) — spy utility ครบเครื่อง [M:2/4] [R:2/3] [B:2/3] |
 | **Versatility** | 6/10 (B) | ผู้เชี่ยวชาญสายลับที่ผสม stealth/social/combat opener [M:2/4] [R:2/3] [B:2/3] |
 
 ### Daggermark (ValdaSpire24 🔁 ยืมจาก Captain)
+
+**Overall**: A — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability/AE ขยับเป็น A
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -139,6 +154,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Deadeye (ValdaGunslinger)
 
+**Overall**: B — Utility/Survivability/AE ขยับกลางๆ แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Focused Shot (lv14, ยิงนัดเดียวได้ Advantage + คริติคอลอัตโนมัติ) บวก Eagle Eye (แปลงพลาดเป็นโดนด้วย Risk Die) [M:4/4] [R:3/3] [B:3/3] |
@@ -150,6 +168,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 | **Versatility** | 6/10 (B) | ผู้เชี่ยวชาญสไนเปอร์แบบ Prone เฉพาะทาง ไม่ขยาย role อื่นมาก [M:2/4] [R:2/3] [B:2/3] |
 
 ### Dragon Banner (ValdaSpire24 🔁 ยืมจาก Captain)
+
+**Overall**: B — Action Economy เป็น S ใหม่และ Control ขยับเป็น A แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -163,6 +184,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Eagle Banner (ValdaSpire24 🔁 ยืมจาก Captain)
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability ขยับเป็น A และ Utility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Hundred-Arrow Volley (lv14, AoE cone/cylinder หลายเป้า) บวก Eagle Eye (แปลงพลาดเป็นโดน) — เพิ่มทั้ง magnitude แบบ AoE และ reliability ให้ baseline ที่เดิมเป็น single-target ล้วน [M:4/4] [R:3/3] [B:3/3] |
@@ -175,17 +199,23 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Feylost (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
+**Overall**: S — Support ขยับบางส่วน (0→3) บวกขยับขึ้นเป็น A ครบ 4 axis พร้อมกัน (Control/Survivability/AE/Versatility) กว้างที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Spiteful mood ให้ดาเมจเสริม 1d8 force เมื่อตอบโต้ แต่เป็นแค่ 1 ใน 8 mood สุ่ม ไม่พอข้าม tier = เท่า baseline |
 | **Control** | 8/10 (A) | Frenzied Strike (บังคับเป้าโจมตีสุ่มรวมพวกเดียวกัน) + Irresistible Mood (lv10, Charmed/Frightened เมื่อเลือดตก) — control-disruption ที่แรง [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 3/10 (C) | mood "Forlorn" (ดึงการโจมตีจาก ally มาโดนตัวเองแทน) เป็น support แบบสุ่ม 1 ใน 8 เท่านั้น [M:1/4] [R:1/3] [B:1/3] |
 | **Survivability** | 8/10 (A) | Fey Moods ให้บัฟป้องกันสุ่มหลายแบบ (temp HP/no-adv-OA/adv-save) + Misty Pathways (teleport หนีฟรี) + Mercurial (lv14, เลือก mood ได้เองแล้ว) [M:2/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Misty Pathways (teleport ฟรีไม่เสีย slot) + Mercurial (bonus action เปิดใช้ mood) [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Misty Pathways (teleport ฟรีไม่เสีย slot) + Mercurial (bonus action เปิดใช้ mood) [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 3/10 (C) | Misty Pathways เป็น combat mobility เป็นหลัก = เท่า baseline |
 | **Versatility** | 7/10 (A) | ระบบ mood สุ่ม 8 แบบ + Mercurial เลือกได้เองที่ lv14 ให้ toolkit กว้างมาก [M:2/4] [R:2/3] [B:3/3] |
 
 ### Gourmand (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในคลาส บวกขยับเป็น A อีก 3 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -193,11 +223,14 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 9/10 (S) | Monster Meal (มื้ออาหารให้ temp HP + บัฟตาม creature type สูงสุด 3 แบบ แก่หลายคนพร้อมกัน) + Gourmet Ingredients (lv14, Heroic Inspiration/ability score +2/free spell ให้คนที่กิน) — ระบบบัฟทีมที่หนาแน่นที่สุดในกลุ่ม [M:3/4] [R:3/3] [B:3/3] |
 | **Survivability** | 7/10 (A) | Quick Snack (bonus action ฮีลตัวเองด้วย Hit Die) [M:2/4] [R:2/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Quick Snack ไม่เสีย action + Carve เป็น bonus action [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Quick Snack ไม่เสีย action + Carve เป็น bonus action [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | Cook's Utensils + ritual Gentle Repose เป็น utility เล็กน้อย [M:1/4] [R:2/3] [B:1/3] |
 | **Versatility** | 8/10 (A) | เปิด role "เชฟ-บัฟเฟอร์" ที่ต่างจาก striker ทั่วไปของคลาสโดยสิ้นเชิง [M:2/4] [R:3/3] [B:3/3] |
 
 ### Grenadier (ValdaSpire24Extras)
+
+**Overall**: A — Support กระโดดจาก 0 เป็น 5 (D→B) บวก Control/Versatility ขยับเป็น A
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -205,11 +238,14 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 | **Control** | 7/10 (A) | Clusterbomb ทำให้เป้าที่โดนล้ม Prone เป็นวงกว้าง [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 5/10 (B) | Take Cover (lv10, ขยาย Evasion ให้ ally ที่อยู่ใกล้) [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 5/10 (B) | ไม่มี mitigation ใหม่สำหรับตัวเอง (Take Cover ให้ผลกับคนอื่น) = เท่า baseline |
-| **Action Economy** | 7/10 (A) | Heavy Ordnance เป็น bonus action เสริมการระเบิดที่เกิดขึ้นอยู่แล้ว [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Heavy Ordnance เป็น bonus action เสริมการระเบิดที่เกิดขึ้นอยู่แล้ว [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | Configurable Blast (ทำลายวัตถุ/จุดไฟเชื้อเพลิง) เป็น utility เชิงทำลายล้างเล็กน้อย [M:1/4] [R:2/3] [B:1/3] |
 | **Versatility** | 7/10 (A) | ผสม AoE-blaster + protector (Take Cover) [M:2/4] [R:2/3] [B:3/3] |
 
 ### Gun Tank (ValdaSpire24)
+
+**Overall**: B — Survivability เป็น S ใหม่ (กระโดด +4) บวก Versatility ขยับเป็น A แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -223,6 +259,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Gun-Ko Master (ValdaSpire24)
 
+**Overall**: A — Action Economy เป็น S ใหม่ บวก Control/Versatility ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Gun-Ko's Bonus Action Strike (ตีเมลีเพิ่มด้วย bonus action ทุกครั้งที่ยิงโดนเป้าประชิด) + Flash Assault (lv14, ยิง+ตีพร้อมกันเป็น bonus action เดียว) [M:4/4] [R:3/3] [B:3/3] |
@@ -234,6 +273,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 | **Versatility** | 8/10 (A) | Hybrid เมลี-ระยะไกลเต็มรูปแบบ ผสมดาเมจ/control/mobility [M:2/4] [R:3/3] [B:3/3] |
 
 ### Gundead (ValdaSpireExtras 🕰️)
+
+**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -247,6 +289,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### High Roller (ValdaGunslinger)
 
+**Overall**: C — ขยับแค่ Action Economy/Utility เล็กน้อย Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Liar's Dice/Double or Nothing เพิ่ม magnitude ได้สูงมาก (ดาเมจ 2 เท่าหรือทอย crit dice 4 รอบ) แต่มี downside เสี่ยงลดดาเมจครึ่ง/กลายเป็น hit ธรรมดา ทำให้ variance สูงไม่ใช่ magnitude ที่รับประกัน = เท่า baseline |
@@ -259,35 +304,44 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Houndmaster (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
+**Overall**: B — Action Economy เป็น S ใหม่ บวก Versatility ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | สุนัขคู่ใจโจมตีเองได้ทุกเทิร์นผ่าน bonus action สั่งงาน (Sick 'Em!) — เท่ากับได้นักสู้เพิ่มอีกตัวที่โจมตีคู่ขนานกับตัวเอง [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | Loyal Redirection ป้องกันแค่ตัวเอง/สุนัข ไม่ใช่ ally-support วงกว้าง = เท่า baseline |
-| **Survivability** | 6/10 (B) | Loyal Redirection ให้สุนัขรับดาเมจแทนตัวเองได้ (reaction) [M:1/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Loyal Redirection ให้สุนัขรับดาเมจแทนตัวเองได้ (reaction) [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 9/10 (S) | สั่งสุนัขโจมตีผ่าน bonus action เดียว เท่ากับได้ "เทิร์นเพิ่ม" จากนักสู้อีกตัวแทบฟรี [M:4/4] [R:3/3] [B:2/3] |
 | **Utility** | 5/10 (B) | Hound's Instincts (Blindsight 30ft + ตรวจจับการแปลงร่าง/ปลอมตัว) เป็น detection utility ที่ baseline ไม่มี [M:2/4] [R:2/3] [B:1/3] |
 | **Versatility** | 7/10 (A) | เปิด role "ผู้ควบคุมสัตว์เลี้ยง" ที่ต่างจาก solo striker ของคลาส [M:2/4] [R:2/3] [B:3/3] |
 
 ### Janissary (ValdaSpireExtras 🕰️)
 
+**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิทเหมือน Gundead
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Coordinated Volley (Advantage เมื่อตามยิงเป้าที่ ally เพิ่งยิงโดน) เป็น reliability boost ที่ต้องอาศัยทีมเวิร์ก ไม่พอข้าม tier = เท่า baseline |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | Coordinated Volley รับผลจากการกระทำของ ally ไม่ใช่ให้ผลกับ ally = เท่า baseline |
-| **Survivability** | 6/10 (B) | Defensive Formation (lv14, half/three-quarters cover จากระยะไกลเมื่ออยู่ใกล้ ally) [M:1/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Defensive Formation (lv14, half/three-quarters cover จากระยะไกลเมื่ออยู่ใกล้ ally) [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจน = เท่า baseline |
 | **Utility** | 5/10 (B) | Steel Discipline (Advantage ต้าน illusion school) + Influence (เสริม Charisma check ด้วย risk die) [M:2/4] [R:2/3] [B:1/3] |
 | **Versatility** | 6/10 (B) | ผู้เชี่ยวชาญทีมเวิร์กระยะไกล + social/defense เสริม [M:2/4] [R:2/3] [B:2/3] |
 
 ### Jolly Roger (ValdaSpire24 🔁 ยืมจาก Captain)
 
+**Overall**: S — Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) เหมือน Gourmand บวก Control/Versatility ขยับเป็น A
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Skirmish (bonus action ตีเพิ่มผสมเมลี+ระยะไกล) [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Dirty Tactics (lv10, เลือก Trip/Prone หรือ Disadvantage ทุกเทิร์นที่ตีเมลีโดน) [M:2/4] [R:2/3] [B:3/3] |
-| **Support** | 9/10 (S) | All Hands on Deck (lv14, bonus action เดียวแจก Advantage บน d20 test ครั้งถัดไปให้ทั้งทีม, Cha mod ครั้ง/วัน) [M:4/4] [R:3/3] [B:3/3] |
+| **Support** | 9/10 (S) | All Hands on Deck (lv14, bonus action เดียวแจก Advantage บน d20 test ครั้งถัดไปให้ทั้งทีม, Cha mod ครั้ง/วัน) [M:4/4] [R:2/3] [B:3/3] |
 | **Survivability** | 5/10 (B) | ไม่มี feature ป้องกันตัวเองใหม่ = เท่า baseline |
 | **Action Economy** | 8/10 (A) | Skirmish เป็น bonus action extra attack + Fancy Footwork ย้ายตำแหน่งฟรี [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 4/10 (C) | Swim speed เป็น utility เฉพาะทางน้ำ [M:1/4] [R:2/3] [B:1/3] |
@@ -295,29 +349,38 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Knight Errant (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
+**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวกขยับเป็น A ครบ 3 axis อีก (Control/Survivability/Versatility) กว้างมาก
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม protector/tank ล้วน) = เท่า baseline |
 | **Control** | 7/10 (A) | Knight's Challenge (ขยายเวลา taunt ของ Challenge maneuver จนจบ 1 นาทีแทนแค่จบเทิร์นถัดไป) [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 8/10 (A) | Inspiring Battlecry (แจก Heroic Inspiration ให้ตัวเอง+ทีมฟรีเมื่อเลือดตก) + Redirection (lv10, reaction รับดาเมจแทน ally + resistance) [M:3/4] [R:2/3] [B:3/3] |
 | **Survivability** | 8/10 (A) | Chivalrous Oath (temp HP ตอน initiative + Advantage ต้าน charm/frightened) + Redirection (resistance ตอนรับแทน) + Surge of Valor (lv14, ลดดาเมจ+reroll failed test) [M:2/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Surge of Valor เป็น bonus action ให้ผล 2 ชั้นต่อเนื่อง [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Surge of Valor เป็น bonus action ให้ผล 2 ชั้นต่อเนื่อง [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | Chivalrous Oath (skill proficiency 2 ตัว) เป็น utility เล็กน้อย [M:1/4] [R:2/3] [B:1/3] |
 | **Versatility** | 8/10 (A) | เปิด role "protector/tank" เต็มรูปแบบที่ต่างจาก striker ของคลาสโดยสิ้นเชิง [M:2/4] [R:3/3] [B:3/3] |
 
 ### Musketeer (ValdaSpire24)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Action Economy/Versatility ขยับเป็น A แต่ Utility ยังนิ่ง
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Skirmish (bonus action ตีเพิ่มผสมเมลี+ระยะไกล, expend Risk Die) [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 8/10 (A) | Morale Boost (Bite the Bullet → temp HP ให้ ally สูงสุด 5 คน) + All for One (lv14, reaction ยิงตอบโต้ทุกครั้งที่ ally ใกล้ตัวโดนตี) — protector/support kit ที่ครบเครื่อง [M:3/4] [R:2/3] [B:3/3] |
-| **Survivability** | 6/10 (B) | Mobile Tactics (lv10, เป้าที่โดนตีทำ OA ใส่ไม่ได้จนจบเทิร์นถัดไป) ช่วยขยับตัวได้ปลอดภัยขึ้น [M:1/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Mobile Tactics (lv10, เป้าที่โดนตีทำ OA ใส่ไม่ได้จนจบเทิร์นถัดไป) ช่วยขยับตัวได้ปลอดภัยขึ้น [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 8/10 (A) | Skirmish เป็น bonus action extra attack [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 3/10 (C) | Bayonet/martial weapon access เป็น combat flavor ไม่ใช่ utility นอกคอมแบต = เท่า baseline |
 | **Versatility** | 8/10 (A) | Hybrid เมลี-ระยะไกล + team-fighter (support) เต็มรูปแบบ [M:2/4] [R:3/3] [B:3/3] |
 
 ### Pistolero (ValdaSpire24)
+
+**Overall**: B — Action Economy เป็น S ใหม่ แต่ breadth แคบ Support/Utility ยังนิ่งสนิททั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -331,17 +394,23 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Plague Doctor (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
+**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Control/Utility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Sanguine humor (extra necrotic ทอย 1 die) เป็นตัวเลือกเดียวจาก 4 แบบ ไม่พอข้าม tier = เท่า baseline |
 | **Control** | 7/10 (A) | Imbalance Humors (เลือก 1 ใน 4 debuff ทุกครั้งที่ตีโดน: adv-ทั้งสองทาง/disadvantage/กัน-OA/bleed) — debuff toolkit ที่ยืดหยุ่น [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 8/10 (A) | Remedy (bonus action ฮีล ally 2 ทอย Battle Die + ปลด condition) + Analgesic Remedy (lv10, temp HP เพิ่ม) — healer feature ตัวจริง [M:3/4] [R:2/3] [B:3/3] |
 | **Survivability** | 5/10 (B) | ไม่มี feature ป้องกันตัวเองโดยตรง (ทุกอย่างมุ่งช่วยคนอื่น) = เท่า baseline |
-| **Action Economy** | 7/10 (A) | Remedy เป็น bonus action ให้ผลฮีล+ปลด condition พร้อมกัน [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Remedy เป็น bonus action ให้ผลฮีล+ปลด condition พร้อมกัน [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 5/10 (B) | Physician's Diagnosis (ตรวจ Poisoned/Bloodied/contagion ฟรี) + Medicine expertise [M:2/4] [R:2/3] [B:1/3] |
 | **Versatility** | 7/10 (A) | Hybrid healer-debuffer ที่ต่างจาก striker ของคลาส [M:2/4] [R:2/3] [B:3/3] |
 
 ### Pugilist (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
+
+**Overall**: B — Control/Survivability ขยับเป็น A ทั้งคู่ แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -349,11 +418,14 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 | **Control** | 7/10 (A) | Intimidating Blow (Horrific Strike แบบ AoE 10ft, Frightened ตราบใดที่เซฟไม่ผ่าน) [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 8/10 (A) | Unarmored Defense (10+Dex+Con) + Shrug Off (reaction ลดดาเมจด้วย Battle Die) + Desperate Endurance (lv10, เปลี่ยน failed save เป็น success ตอนเลือดตก) [M:2/4] [R:3/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | Knockout (lv14, bonus action มีโอกาส KO เป้า) [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Knockout (lv14, bonus action มีโอกาส KO เป้า) [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 3/10 (C) | ไม่มี utility นอกคอมแบตใหม่ = เท่า baseline |
 | **Versatility** | 7/10 (A) | พลิก gunslinger เป็นนักชกเมลีเต็มตัว — สไตล์การต่อสู้ต่างไปจาก chassis เดิมอย่างสิ้นเชิง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Rōnin (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
+
+**Overall**: B — Survivability ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม breadth แคบ
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -367,6 +439,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Secret Agent (ValdaGunslinger)
 
+**Overall**: B — Utility กระโดด +4 ถึง A (สูงสุดในกลุ่มสำหรับ axis นี้) บวก Survivability ขยับเป็น A แต่ Support ยังเป็น 0
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | License to Kill (lv14, บวก Risk Dice ที่ทอยได้เลขสูงสุด reroll ต่อได้เรื่อยๆ สูงสุดเท่า prof bonus) — exploding-dice ที่ magnitude สูงมาก [M:4/4] [R:3/3] [B:3/3] |
@@ -379,17 +454,23 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Sharpshooter (VSS 🕰️)
 
+**Overall**: C — มีแค่ Utility ที่ขยับ Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิทเกือบทั้งหมด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Focused Shot (lv14, ยิงนัดเดียวได้ Advantage+คริติคอลอัตโนมัติ) + Eagle Eye (แปลงพลาดเป็นโดน) — เวอร์ชัน 2014 ของ Deadeye [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
-| **Survivability** | 6/10 (B) | Camouflage (ซ่อนตัวต่อได้แม้ยิงพลาด) เป็นการหลบหลีกไม่ใช่ mitigation โดยตรง [M:1/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Camouflage (ซ่อนตัวต่อได้แม้ยิงพลาด) เป็นการหลบหลีกไม่ใช่ mitigation โดยตรง [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 6/10 (B) | Sniper's Stance (ลุกจาก prone ด้วย 5ft) ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 6/10 (B) | Camouflage (Advantage Stealth+ซ่อนแหล่งที่มาการยิง) + Eye For Movement (lv10, darkvision+see invisibility) [M:2/4] [R:2/3] [B:2/3] |
 | **Versatility** | 6/10 (B) | ผู้เชี่ยวชาญสไนเปอร์แบบ Prone เหมือน Deadeye แต่มี utility เสริมมากกว่าเล็กน้อย [M:2/4] [R:2/3] [B:2/3] |
 
 ### Siegeball Jersey (ValdaSpire24Extras 🔁 ยืมจาก Captain)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวกขยับเป็น A อีก 2 axis (Survivability/Versatility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -403,6 +484,9 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Spellslinger (ValdaGunslinger)
 
+**Overall**: B — Control/Versatility ขยับเป็น A ทั้งคู่ บวก Utility ขยับตาม แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | เข้าถึง spell list ของ Wizard (รวม blast spell) + Arcane Shot ให้ดาเมจเสริมกับ Finger Guns — ช่องทางดาเมจเพิ่มบน baseline ที่แรงอยู่แล้ว [M:4/4] [R:3/3] [B:3/3] |
@@ -415,17 +499,23 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Storm Gunner (ValdaSpireExtras 🕰️)
 
+**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิท
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Bullet Hell (โจมตีหลายเป้าพร้อมกันด้วยอาวุธ Automatic) + Riddle with Holes (lv14, ลบ Disadvantage ออกจากการยิงอัตโนมัติทั้งหมด) — เปลี่ยนดาเมจ single-target ให้เป็น AoE เต็มความแม่นยำ [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | Riddle with Holes แค่กันไม่ให้ ally โดนหางเลข ไม่ใช่ buff โดยตรง = เท่า baseline |
 | **Survivability** | 5/10 (B) | ไม่มี feature ป้องกันตัวเองใหม่ = เท่า baseline |
-| **Action Economy** | 7/10 (A) | Ammunition Belt (lv7, อาวุธ Automatic ไม่ต้อง reload) — ลดภาระ logistics [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Ammunition Belt (lv7, อาวุธ Automatic ไม่ต้อง reload) — ลดภาระ logistics [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | Running Riot (lv10, +10ft speed) เป็น mobility utility เล็กน้อย [M:1/4] [R:2/3] [B:1/3] |
 | **Versatility** | 6/10 (B) | ผู้เชี่ยวชาญ AoE-อัตโนมัติเฉพาะทาง แต่เลือก exclude ally ได้ทำให้ยืดหยุ่นขึ้น [M:2/4] [R:2/3] [B:2/3] |
 
 ### Trick Shot (ValdaGunslinger)
+
+**Overall**: A — Support กระโดดจาก 0 เป็น 5 (D→B) บวก Action Economy ขยับเป็น A
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -439,48 +529,60 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Troubadour (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Utility ขยับตาม แต่ breadth ที่เหลือแคบกว่า Musketeer/Plague Doctor
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Scathing Retort (ดาเมจ psychic ตอบโต้ตอนศัตรูพลาด/เซฟผ่าน) เป็นแหล่งดาเมจรองเล็กน้อย ไม่พอข้าม tier = เท่า baseline |
 | **Control** | 6/10 (B) | Fast Friends (Charm เป้าผ่าน Influence action) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 8/10 (A) | Inspiring Tune (bonus action มอบ Battle Die ให้ ally พลิกความล้มเหลว) + Marvelous Troupe (lv14, ขยายเป็นหลาย ally พร้อมกัน = Cha mod) [M:2/4] [R:3/3] [B:3/3] |
 | **Survivability** | 5/10 (B) | Scathing Retort เป็นการตอบโต้ ไม่ใช่ mitigation โดยตรง = เท่า baseline |
-| **Action Economy** | 7/10 (A) | Inspiring Tune เป็น bonus action ให้ resource แก่ ally [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Inspiring Tune เป็น bonus action ให้ resource แก่ ally [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 5/10 (B) | Folk Musician (Performance expertise + instrument proficiency คู่ + สื่อสารพื้นฐานข้ามภาษา) [M:2/4] [R:2/3] [B:1/3] |
 | **Versatility** | 7/10 (A) | เปิด role "นักดนตรี-บัฟเฟอร์" ที่ต่างจาก striker ของคลาส [M:2/4] [R:2/3] [B:3/3] |
 
 ### Twice-Damned (ValdaSpireExtras 🕰️)
+
+**Overall**: C — ขยับแค่ Action Economy/Utility เล็กน้อย Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Hateful Vengeance (Advantage + **ดาเมจสูงสุด** ทุกครั้งที่ยิงเป้าที่เลือกไว้) — รับประกัน max damage ต่อเป้าเดียวตลอดแคมเปญ [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Black Bullet (ลด HP max ของเป้าชั่วคราว) เป็น soft-debuff [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
-| **Survivability** | 6/10 (B) | Grim Determination (Advantage ต้าน Frightened) [M:1/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Grim Determination (Advantage ต้าน Frightened) [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 8/10 (A) | Marked for Death (lv14, ฆ่าเป้าที่มาร์กใน 1 นาที → ได้ action เพิ่ม) [M:3/4] [R:2/3] [B:3/3] |
 | **Utility** | 4/10 (C) | Shotgun Interrogation (Advantage Intimidation + ปัดผลต่ำเป็น 10) เป็น utility เล็กน้อย [M:1/4] [R:2/3] [B:1/3] |
 | **Versatility** | 5/10 (B) | ธีมล้างแค้นเป้าเดียวเฉพาะทางมาก ไม่ขยาย role อื่น = เท่า baseline |
 
 ### White Hat (ValdaGunslinger)
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 7 (D→A) บวก Control/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม control/protector ล้วน) = เท่า baseline |
 | **Control** | 8/10 (A) | Reach for the Skies (คริติคอล → Frightened+Incapacitated แทนดาเมจ) + Long Arm of the Law (lv10, hobble ความเร็วเป้า) + Stunned upgrade (lv14) — control kit ที่ทรงพลัง [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 7/10 (A) | Lay Down the Law (bonus action, temp HP ให้ ally + reaction ยิงตอบโต้ผู้โจมตี ally) + Steely-Eyed Aura (Advantage ต้าน Frightened ให้ทีม) [M:2/4] [R:2/3] [B:3/3] |
-| **Survivability** | 6/10 (B) | Steely-Eyed Aura ป้องกันตัวเองจาก Frightened ได้เช่นกัน [M:1/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Lay Down the Law เป็น bonus action ให้ผล temp HP + reaction attack พ่วง [M:2/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Steely-Eyed Aura ป้องกันตัวเองจาก Frightened ได้เช่นกัน [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Lay Down the Law เป็น bonus action ให้ผล temp HP + reaction attack พ่วง [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 3/10 (C) | ไม่มี utility นอกคอมแบตใหม่ที่ชัดเจน = เท่า baseline |
 | **Versatility** | 7/10 (A) | เปิด role "ตำรวจ/protector" ที่ผสม control+support [M:2/4] [R:2/3] [B:3/3] |
 
 ### Yellow Sign (ValdaSpire24Extras 🔁 ยืมจาก Captain)
+
+**Overall**: S — Control กระโดด +4 ถึง S (5→9) บวก Support ขยับบางส่วน (0→4) และ Versatility ขยับเป็น A
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Nightmarish Glow (lv14, extra 1d6 psychic ทุกครั้งที่ตีโดนในออร่า) เป็นโบนัสเล็กน้อย = เท่า baseline |
 | **Control** | 9/10 (S) | Frenzied Strike (บังคับเป้าโจมตีสุ่มรวมพวกเดียวกัน) + Maniacal Influence (lv10, สั่ง Advantage/Disadvantage ให้เป้าที่ Frenzied ได้) — ควบคุมศัตรูให้หันไปตีกันเองได้จริง [M:3/4] [R:3/3] [B:3/3] |
 | **Support** | 4/10 (C) | Nightmarish Glow ให้ผลดาเมจเสริมกับ ally ในออร่าด้วย แต่เป็นแค่โบนัสรอง [M:1/4] [R:2/3] [B:1/3] |
-| **Survivability** | 6/10 (B) | Eldritch Herald (Advantage ต้าน charm/frightened) [M:1/4] [R:2/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Eldritch Herald (Advantage ต้าน charm/frightened) [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 6/10 (B) | Frenzied Strike เป็น bonus action ผลกว้าง ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
 | **Utility** | 5/10 (B) | Outer Knowledge (expertise skill ที่หมุนเวียนได้ทุก long rest ตาม GM เลือก) [M:2/4] [R:2/3] [B:1/3] |
 | **Versatility** | 7/10 (A) | Eldritch cultist ธีม control/debuff เฉพาะทาง บวก utility skill หมุนเวียน [M:2/4] [R:2/3] [B:3/3] |

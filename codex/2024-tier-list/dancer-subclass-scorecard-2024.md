@@ -162,7 +162,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 10/10 (S) | Dueling Stance (Dance Style, +Dance Die ดาเมจเมื่อถืออาวุธมือเดียว) บวก Superior Flourish (lv14, ตี crit หรือฆ่าเป้าให้ตีเพิ่มได้อีก สูงสุด 3 ครั้ง/เทิร์น) — ต่อยอด multi-attack ของ baseline ให้ทะลุเพดานเดิมได้ [M:3/4] [R:3/3] [B:3/3] |
+| **Damage** | 10/10 (S) | Dueling Stance (Dance Style, +Dance Die ดาเมจเมื่อถืออาวุธมือเดียว) บวก Superior Flourish (lv14, ตี crit หรือฆ่าเป้าให้ตีเพิ่มได้อีก สูงสุด 3 ครั้ง/เทิร์น) — ต่อยอด multi-attack ของ baseline ให้ทะลุเพดานเดิมได้ [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | Fencing Maneuvers ให้ En Garde (taunt-lite, Disadvantage โจมตีคนอื่น) + Disarm (bonus action, ทำอาวุธหลุดมือ) [M:2/4] [R:2/3] [B:1/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Parry and Riposte (reaction, +Dance Die เข้า AC ต้านการโจมตีที่กำลังเข้า) [M:2/4] [R:2/3] [B:3/3] |
@@ -213,7 +213,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 10/10 (S) | Deft Fling (ทุกเทิร์น) ให้ยิงอาวุธ juggling ระยะไกลใส่เป้าเดิมฟรีทันทีที่พลาดการโจมตี — เท่ากับได้โอกาสตีสองครั้งจริงทุกครั้งที่พลาด ไม่เสีย resource [M:3/4] [R:3/3] [B:3/3] |
+| **Damage** | 10/10 (S) | Deft Fling (ทุกเทิร์น) ให้ยิงอาวุธ juggling ระยะไกลใส่เป้าเดิมฟรีทันทีที่พลาดการโจมตี — เท่ากับได้โอกาสตีสองครั้งจริงทุกครั้งที่พลาด ไม่เสีย resource [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Jest (Dance Style, bonus action) กด Disadvantage การโจมตีครั้งถัดไปของเป้าใส่คนอื่น บวก Vexing Jest (lv10, ขยายผลต่อเนื่องเมื่อเป้าพลาดหรือทอย 20) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 6/10 (B) | ไม่มี feature ป้องกันตัวเองใหม่ = เท่า baseline |
@@ -247,7 +247,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 10/10 (S) | Mystical Maul (ระหว่าง Pantomime) แปลงดาเมจอาวุธ 1d4/1d6 ให้กลายเป็น 2d6 Force คงที่ — เพิ่ม magnitude ให้อาวุธเบาอย่างมีนัยสำคัญ (สูงกว่าการอัปเกรดปกติของ baseline อีกขั้น) [M:3/4] [R:3/3] [B:3/3] |
+| **Damage** | 10/10 (S) | Mystical Maul (ระหว่าง Pantomime) แปลงดาเมจอาวุธ 1d4/1d6 ให้กลายเป็น 2d6 Force คงที่ — เพิ่ม magnitude ให้อาวุธเบาอย่างมีนัยสำคัญ (สูงกว่าการอัปเกรดปกติของ baseline อีกขั้น) [M:4/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Unseen Impact (ทุกเทิร์นเมื่อตีโดน) ให้ Prone หรือผลัก 10ft บวก Invisible Wall (แคส Wall of Force ฟรี) — control tool ที่หลากหลาย [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 6/10 (B) | ไม่มี feature ป้องกันตัวเองใหม่ = เท่า baseline |

@@ -32,32 +32,35 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ไม่มี origin ตัวไหนมีข้อความ explicit ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้นหรือ feature ที่แคบเกินกว่าจะขยับคะแนนรวม) หมายเหตุแหล่งที่มา: รายการที่ tracker เขียนแบบ "ชื่อ 2014 / ชื่อ 2024" (Aberrant Mind/Aberrant Sorcery, Clockwork Soul/Clockwork Sorcery, Draconic Bloodline/Draconic Sorcery, Shadow Magic/Shadow Sorcery, Wild Magic/Wild Magic Sorcery) ให้คะแนนโดยใช้เวอร์ชัน **2024 (XPHB/RHW) เป็นหลัก** ตาม 2024-scope rule เพียงเวอร์ชันเดียว (ไม่ใช่ dual-score แบบ Fighter's Banneret) เพราะกลไกแทบไม่ต่างกันและ tracker รวมเป็นบรรทัดเดียว — Pyromancer(PSK)/Divine Soul(XGE)/Storm Sorcery(XGE) ไม่มี reprint จึงเป็น 2014-only 🕰️, Lunar Sorcery(DSotDQ)/Spellfire Sorcery(FRHoF) เป็น 2024-compatible, Apocalypse/Haunted/Wretched Bloodline เป็น GrimHollowPG24 (2024), Emotion Lord/Mirrorkin/Oozemaster/Reincarnated Hero/Spiritborn/Toon Magic เป็น VSS 2014-only 🕰️ (ยืนยันแล้วว่าไฟล์ VSS 2024 ไม่มี Sorcerer subclass เหล่านี้), The Ruined Flame เป็น homebrew ของโปรเจกต์เอง (ผ่านการรีวิว balance แล้ว ดู [[project_ruined_flame_balance]])
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Aberrant Sorcery | XPHB | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Apocalypse Sorcery | GrimHollowPG24 | 9 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 7 (A) | 8 (A) |
-| Clockwork Sorcery | XPHB | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Divine Soul | XGE 🕰️ | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 9 (S) |
-| Draconic Sorcery | XPHB | 8 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Emotion Lord | VSS 🕰️ | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 5 (B) | 9 (S) |
-| Haunted Sorcery | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 6 (B) | 8 (A) | 7 (A) | 8 (A) |
-| Lunar Sorcery | DSotDQ | 7 (A) | 7 (A) | 4 (C) | 6 (B) | 7 (A) | 6 (B) | 8 (A) |
-| Mirrorkin | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
-| Oozemaster | VSS 🕰️ | 7 (A) | 6 (B) | 3 (C) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Pyromancer | PSK 🕰️ | 8 (A) | 6 (B) | 3 (C) | 5 (B) | 7 (A) | 3 (C) | 7 (A) |
-| Reincarnated Hero | VSS 🕰️ | 8 (A) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 5 (B) | 8 (A) |
-| Shadow Sorcery | RHW | 7 (A) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Spellfire Sorcery | FRHoF | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
-| Spiritborn | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
-| Storm Sorcery | XGE 🕰️ | 8 (A) | 7 (A) | 4 (C) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
-| The Ruined Flame | Homebrew | 9 (S) | 6 (B) | 3 (C) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
-| Toon Magic | VSS 🕰️ | 7 (A) | 6 (B) | 3 (C) | 8 (A) | 8 (A) | 7 (A) | 7 (A) |
-| Wild Magic Sorcery | XPHB | 7 (A) | 7 (A) | 4 (C) | 3 (C) | 7 (A) | 5 (B) | 8 (A) |
-| Wretched Bloodline Sorcery | GrimHollowPG24 | 7 (A) | 8 (A) | 3 (C) | 7 (A) | 7 (A) | 5 (B) | 8 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Aberrant Sorcery | B | XPHB | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Apocalypse Sorcery | S | GrimHollowPG24 | 9 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 7 (A) | 8 (A) |
+| Clockwork Sorcery | S | XPHB | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Divine Soul | S | XGE 🕰️ | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 9 (S) |
+| Draconic Sorcery | A | XPHB | 8 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Emotion Lord | S | VSS 🕰️ | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 5 (B) | 9 (S) |
+| Haunted Sorcery | S | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 6 (B) | 8 (A) | 7 (A) | 8 (A) |
+| Lunar Sorcery | A | DSotDQ | 7 (A) | 7 (A) | 4 (C) | 6 (B) | 7 (A) | 6 (B) | 8 (A) |
+| Mirrorkin | A | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
+| Oozemaster | B | VSS 🕰️ | 7 (A) | 6 (B) | 3 (C) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Pyromancer | C | PSK 🕰️ | 8 (A) | 6 (B) | 3 (C) | 5 (B) | 7 (A) | 3 (C) | 7 (A) |
+| Reincarnated Hero | S | VSS 🕰️ | 8 (A) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 5 (B) | 8 (A) |
+| Shadow Sorcery | A | RHW | 7 (A) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Spellfire Sorcery | A | FRHoF | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
+| Spiritborn | S | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
+| Storm Sorcery | A | XGE 🕰️ | 8 (A) | 7 (A) | 4 (C) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
+| The Ruined Flame | B | Homebrew | 9 (S) | 6 (B) | 3 (C) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
+| Toon Magic | A | VSS 🕰️ | 7 (A) | 6 (B) | 3 (C) | 8 (A) | 8 (A) | 7 (A) | 7 (A) |
+| Wild Magic Sorcery | B | XPHB | 7 (A) | 7 (A) | 4 (C) | 3 (C) | 7 (A) | 5 (B) | 8 (A) |
+| Wretched Bloodline Sorcery | A | GrimHollowPG24 | 7 (A) | 8 (A) | 3 (C) | 7 (A) | 7 (A) | 5 (B) | 8 (A) |
 
 ---
 
 ### Aberrant Sorcery (XPHB)
+
+**Overall**: B — ขยับกลางๆ 3 axis (Control/Survivability/Utility) ไม่มี peak ถึง S เลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -71,9 +74,12 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Apocalypse Sorcery (GrimHollowPG24)
 
+**Overall**: S — Damage เป็น S ใหม่ บวก Utility กระโดด +4 และขยับขึ้นอีก 3 axis กว้างมาก
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Forbidden Magic ตัวเลือก Pyrrhic (cast attack spell ใดๆ **auto-crit** แลกด้วย HP max ลด) + The End is Nigh (lv18, AoE 6d6 Psychic + 6d6 Force = 12d6 รวมถึง**ห้ามฟื้นคืนชีพยกเว้น True Resurrection/Wish**) — nova ที่โหดที่สุดตัวหนึ่งในกลุ่ม [M:4/4] [R:2/3] [B:2/3] |
+| **Damage** | 9/10 (S) | Forbidden Magic ตัวเลือก Pyrrhic (cast attack spell ใดๆ **auto-crit** แลกด้วย HP max ลด) + The End is Nigh (lv18, AoE 6d6 Psychic + 6d6 Force = 12d6 รวมถึง**ห้ามฟื้นคืนชีพยกเว้น True Resurrection/Wish**) — nova ที่โหดที่สุดตัวหนึ่งในกลุ่ม [M:4/4] [R:2/3] [B:3/3] |
 | **Control** | 7/10 (A) | Apocalyptic Spells ผูก Bestow Curse/Banishment/Contagion ติดตัวถาวร + The End is Nigh ติด Frightened = ใกล้เคียง baseline โดยประมาณ |
 | **Support** | 5/10 (B) | Revivify ผูกติดตัวถาวรฟรี (ฟื้นคืนชีพพวกพ้อง) + Arcane Apocrypha (lv6, scroll ฟรีทุกรอบพักยาวอาจเป็นสายซัพพอร์ตได้) [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 5/10 (B) | Bear Witness (ระหว่าง Innate Sorcery: resistance Force + immune Frightened) [M:2/4] [R:2/3] [B:1/3] |
@@ -83,10 +89,13 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Clockwork Sorcery (XPHB)
 
+**Overall**: S — Support กระโดด +5 (C→A) และ Survivability กระโดด +4 (C→A) พร้อมกัน — แก้จุดอ่อนสองแกนของ baseline ได้ในตัวเดียว บวก Control/Utility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature ดาเมจใหม่ (spell list เอียง support/utility ทั้งหมด) = เท่า baseline |
-| **Control** | 8/10 (A) | Restore Balance (reaction ยกเลิก Advantage/Disadvantage ของการทอย d20 ในระยะ 60ft, Cha mod ครั้ง/วัน) + Wall of Force ผูกติดตัวถาวร (lv9) [M:2/4] [R:2/3] [B:3/3] |
+| **Control** | 8/10 (A) | Restore Balance (reaction ยกเลิก Advantage/Disadvantage ของการทอย d20 ในระยะ 60ft, Cha mod ครั้ง/วัน) + Wall of Force ผูกติดตัวถาวร (lv9) [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 8/10 (A) | Bastion of Law (action, 1-5 SP สร้างเกราะลดดาเมจ d8 ให้ตัวเองหรือพวกพ้อง) + Clockwork Cavalcade (lv18, AoE ฟื้น HP รวม 100 แบ่งให้ใครก็ได้ + ซ่อมของ + dispel magic) — support kit ที่แรงที่สุดในกลุ่ม Sorcerer [M:3/4] [R:2/3] [B:3/3] |
 | **Survivability** | 7/10 (A) | Bastion of Law ใช้ ward ตัวเองได้เช่นกัน + Trance of Order (lv14, bonus action 1 นาที: กันโดน Advantage ใส่ + d20 ต่ำกว่า 10 นับเป็น 10) [M:2/4] [R:2/3] [B:3/3] |
 | **Action Economy** | 7/10 (A) | ไม่มีฟีเจอร์ประหยัด action พิเศษเพิ่มจาก baseline = เท่า baseline |
@@ -94,6 +103,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | เน้น support/control/defense หนัก ดาเมจแทบไม่มี = ใกล้เคียง baseline |
 
 ### Divine Soul (XGE 🕰️)
+
+**Overall**: S — Versatility เป็น S ใหม่ บวก Support กระโดด +4 (C→A) และ Survivability/Control ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -103,21 +115,27 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Survivability** | 6/10 (B) | Favored by the Gods (แปลง save/attack ที่พลาดให้สำเร็จด้วย +2d4, 1/รอบพัก) + Unearthly Recovery (lv18, bonus action ฟื้นครึ่ง HP max, 1/long rest) [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 7/10 (A) | Otherworldly Wings (lv14, bonus action บิน) = ใกล้เคียง baseline |
 | **Utility** | 4/10 (C) | Otherworldly Wings ให้บินได้ (เดินทาง) เพียงอย่างเดียว [M:1/4] [R:2/3] [B:1/3] |
-| **Versatility** | 9/10 (S) | Divine Magic เปิดทาง spell list ของ Cleric **ทั้งหมด**เป็นทางเลือกแทน/เสริม Sorcerer list — ขยาย breadth มหาศาลครอบคลุมฮีล/บัฟ/control/ดาเมจทุกด้าน [M:3/4] [R:2/3] [B:3/3] |
+| **Versatility** | 9/10 (S) | Divine Magic เปิดทาง spell list ของ Cleric **ทั้งหมด**เป็นทางเลือกแทน/เสริม Sorcerer list — ขยาย breadth มหาศาลครอบคลุมฮีล/บัฟ/control/ดาเมจทุกด้าน [M:4/4] [R:2/3] [B:3/3] |
 
 ### Draconic Sorcery (XPHB)
+
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน (Damage/Control/Survivability/Utility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Elemental Affinity (lv6, +Cha mod ดาเมจต่อการทอยดาเมจ 1 ลูกทุกครั้งที่ cast สเปลล์ธาตุที่เลือก ไม่จำกัดจำนวนครั้ง) + Draconic Spells (Chromatic Orb/Dragon's Breath) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Draconic Spells มี Command/Charm Monster/Fear ติดตัวถาวร = ใกล้เคียง baseline |
 | **Support** | 3/10 (C) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
-| **Survivability** | 6/10 (B) | Draconic Resilience (HP max +3 บวก +1/level + AC = 10+Dex+Cha ตอนไม่สวมเกราะ) ยกระดับ AC/HP อย่างเป็นรูปธรรมตลอดเวลา [M:2/4] [R:3/3] [B:2/3] |
+| **Survivability** | 6/10 (B) | Draconic Resilience (HP max +3 บวก +1/level + AC = 10+Dex+Cha ตอนไม่สวมเกราะ) ยกระดับ AC/HP อย่างเป็นรูปธรรมตลอดเวลา [M:2/4] [R:3/3] [B:1/3] |
 | **Action Economy** | 7/10 (A) | Dragon Wings (lv14, bonus action บิน 1 ชม.) = ใกล้เคียง baseline |
 | **Utility** | 6/10 (B) | Dragon Wings (บิน) + Dragon Companion (lv18, Summon Dragon ฟรี 1/วัน) [M:2/4] [R:2/3] [B:2/3] |
 | **Versatility** | 7/10 (A) | ดาเมจ/control/defense/mobility กระจายพอประมาณ = ใกล้เคียง baseline |
 
 ### Emotion Lord (VSS 🕰️)
+
+**Overall**: S — Versatility เป็น S ใหม่ บวก Control/Survivability/Utility ขยับตามอีก 3 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -131,6 +149,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Haunted Sorcery (GrimHollowPG24)
 
+**Overall**: S — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 6 ใน 7 axis พร้อมกัน กว้างที่สุดในกลุ่มทั้งหมด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Phantom Companion ให้ familiar (Specter reskin) ใช้ Life Drain ผ่าน Reaction ได้ (สละการโจมตีตัวเอง 1 ครั้ง) + Strength of Spirit (lv6) ให้สั่ง Life Drain ด้วย bonus action **ทุกครั้งที่ cast สเปลล์** โดยไม่ต้องสละอะไร — นักสู้เพิ่มอีกตัวแบบฟรีๆ + Deathly Pallor แปลงดาเมจเป็น Necrotic เลี่ยง resistance ได้ [M:2/4] [R:3/3] [B:3/3] |
@@ -142,6 +163,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Versatility** | 8/10 (A) | ผสมดาเมจ(familiar)/control(possession)/utility(cast ระยะไกล)/survivability(spectral form) ครบทุกด้าน [M:3/4] [R:2/3] [B:3/3] |
 
 ### Lunar Sorcery (DSotDQ)
+
+**Overall**: A — ขยับขึ้น 4 axis กลางๆ (Control/Support/Survivability/Utility) ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -155,6 +179,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Mirrorkin (VSS 🕰️)
 
+**Overall**: A — Utility กระโดด +5 (C→A) บวก Control/Survivability ขยับตาม ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature ดาเมจ fixed ใหม่ (Copycat/Mirror Magic ขึ้นกับสถานการณ์รอบตัวทั้งหมด) = เท่า baseline |
@@ -166,6 +193,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Versatility** | 8/10 (A) | ธีม "กลายเป็นใครก็ได้ที่อยู่ใกล้" ให้ breadth สูงมาก แม้ reliability จะขึ้นกับสถานการณ์รอบตัว [M:3/4] [R:2/3] [B:3/3] |
 
 ### Oozemaster (VSS 🕰️)
+
+**Overall**: B — ขยับแค่ 2 axis (Survivability/Utility) เล็กน้อย ไม่มี peak ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -179,6 +209,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Pyromancer (PSK 🕰️)
 
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Damage/Survivability) Utility (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Heart of Fire (AoE dmg ฟรีเท่าครึ่ง sorcerer level ทุกครั้งที่ cast สเปลล์ไฟ lv1+ ไม่มีค่าใช้จ่าย) + Fire in the Veins/Fiery Soul (สเปลล์ไฟเลี่ยง resistance/immunity ได้ทั้งหมด) + Pyromancer's Fury (reaction dmg ใส่ผู้โจมตี melee) [M:2/4] [R:3/3] [B:3/3] |
@@ -190,6 +223,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | ธีมโฟกัสดาเมจไฟล้วนๆ breadth แคบ = เท่า baseline |
 
 ### Reincarnated Hero (VSS 🕰️)
+
+**Overall**: S — Survivability กระโดด +6 (3→9, C→S) — swing ใหญ่ที่สุดในกลุ่ม บวก Damage/Action Economy/Utility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -203,6 +239,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Shadow Sorcery (RHW)
 
+**Overall**: A — Survivability กระโดด +5 (C→A) บวก Control/Utility ขยับตาม ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Shadow Spells ผูก Inflict Wounds/Phantasmal Killer ติดตัวถาวร = ใกล้เคียง baseline |
@@ -214,6 +253,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | ผสม control/defense/utility ในธีมเงาชัดเจน = ใกล้เคียง baseline |
 
 ### Spellfire Sorcery (FRHoF)
+
+**Overall**: A — Support กระโดด +4 (C→A) บวก Control/Survivability/Utility ขยับตาม ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -227,6 +269,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Spiritborn (VSS 🕰️)
 
+**Overall**: S — Damage เป็น S ใหม่ บวก Survivability/Utility กระโดด +4 ทั้งคู่ และ Control/AE ขยับตาม กว้างที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Spirit Animal เป็น familiar ที่**โจมตีได้จริง**ด้วย spell attack bonus ของตัวเอง + Prof bonus บวก AC/save/dmg + HP 2×level และแปลงร่างเป็นสัตว์ใหญ่ขึ้นตามเลเวล (Tiger/Polar Bear ที่ lv14) — เท่ากับมีนักสู้เต็มตัวอีกคนที่แม่นมาก [M:3/4] [R:3/3] [B:3/3] |
@@ -238,6 +283,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Versatility** | 8/10 (A) | ระบบ pet ครอบคลุมดาเมจ/control(Druid list)/defense/utility ในตัวเดียว [M:3/4] [R:2/3] [B:3/3] |
 
 ### Storm Sorcery (XGE 🕰️)
+
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -251,6 +299,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### The Ruined Flame (Homebrew)
 
+**Overall**: B — Damage เป็น S ใหม่ แต่ breadth แคบมาก (แค่ Survivability ขยับตามอีกนิด) Support/Utility ยังนิ่งที่ baseline C ทั้งคู่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Shattered Flame (2 SP เพิ่ม pool ดาเมจไฟเท่า Prof Bonus เป็น d6 บวก 1d6/ระดับ slot ที่เกิน 3rd แบ่งให้ทุกเป้าที่โดน Fireball) + Walking Calamity's Ruined Target (Disadvantage เซฟ + เลี่ยง fire resistance + speed 0) — ทำให้ Fireball สเกลใส่เป้าเดียวได้จริงตามที่ออกแบบไว้ [M:4/4] [R:2/3] [B:3/3] |
@@ -262,6 +313,9 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | แม้ทั้ง subclass โฟกัสสเปลล์เดียว (Fireball) แต่มีโหมดเลือกได้ 2 แบบ (จุดกำเนิดตัวเอง=tank/จุดกำเนิดศัตรู=blast) ที่พลิกบทบาทได้ = ใกล้เคียง baseline |
 
 ### Toon Magic (VSS 🕰️)
+
+**Overall**: A — Survivability กระโดด +5 (C→A) บวก Utility กระโดด +4 และ AE ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -275,17 +329,23 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Wild Magic Sorcery (XPHB)
 
+**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Control/Support/Utility) Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Wild Magic Surge table มีแถวดาเมจ (เช่น 4d10 Lightning) แต่สุ่มล้วนๆ ไม่ reliable = เท่า baseline |
 | **Control** | 7/10 (A) | Bend Luck (reaction, 1 SP, ±1d4 การทอย d20 ของใครก็ได้ที่เห็น — พลิกผลสำเร็จ/ล้มเหลวได้) = ใกล้เคียง baseline |
-| **Support** | 4/10 (C) | Bend Luck ใช้บวกให้พวกพ้องได้เช่นกัน + Surge table บางแถวฟื้น HP ให้พวกพ้อง (สุ่ม) [M:1/4] [R:1/3] [B:1/3] |
+| **Support** | 4/10 (C) | Bend Luck ใช้บวกให้พวกพ้องได้เช่นกัน + Surge table บางแถวฟื้น HP ให้พวกพ้อง (สุ่ม) [M:1/4] [R:1/3] [B:2/3] |
 | **Survivability** | 3/10 (C) | Surge table มีแถว resistance/heal แต่สุ่มล้วนๆ ไม่มี feature ป้องกันที่ยืนยันได้แน่นอน = เท่า baseline |
 | **Action Economy** | 7/10 (A) | Surge table มีแถว "extra action" แต่สุ่มล้วนๆ ไม่ reliable = เท่า baseline |
 | **Utility** | 5/10 (B) | Tides of Chaos ให้ Advantage การทอยที่เลือกได้แน่นอน 1 ครั้ง/รอบพักหรือจนกว่าจะ cast สเปลล์ด้วย slot [M:1/4] [R:2/3] [B:2/3] |
-| **Versatility** | 8/10 (A) | ธีม random surge ครอบคลุมทุกแกนที่เป็นไปได้ (ดาเมจ/ฮีล/บัฟ/debuff/เทเลพอร์ต) + Tamed Surge (lv18, เลือกผลลัพธ์เองได้แทนสุ่ม 1/รอบพัก) [M:2/4] [R:2/3] [B:3/3] |
+| **Versatility** | 8/10 (A) | ธีม random surge ครอบคลุมทุกแกนที่เป็นไปได้ (ดาเมจ/ฮีล/บัฟ/debuff/เทเลพอร์ต) + Tamed Surge (lv18, เลือกผลลัพธ์เองได้แทนสุ่ม 1/รอบพัก) [M:2/4] [R:3/3] [B:3/3] |
 
 ### Wretched Bloodline Sorcery (GrimHollowPG24)
+
+**Overall**: A — Survivability กระโดด +4 (C→A) บวก Control/Utility ขยับตาม ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -295,4 +355,4 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | **Survivability** | 7/10 (A) | Wretched Curse (เลือก 1 ใน 3: +HP สะสม / darkvision กว้าง / immune Poisoned+resist Necrotic) + Blood Ties (สิ่งมีชีวิตประเภทที่เลือก Disadvantage โจมตีเรา + กัน possess/charm/frighten จากพวกมัน) [M:2/4] [R:2/3] [B:3/3] |
 | **Action Economy** | 7/10 (A) | Bad Luck Charm เป็น bonus action มาตรฐาน = ใกล้เคียง baseline |
 | **Utility** | 5/10 (B) | Blood Ties (Detect Evil and Good ฟรี) + Wretched Curse's Nocturnal (มองในที่มืด 120ft) [M:2/4] [R:2/3] [B:1/3] |
-| **Versatility** | 8/10 (A) | คำสาป 3 แบบ × ประเภทศัตรู 3 แบบใน Blood Ties ให้ทางเลือก build หลากหลาย บวก summon ally แรงๆ ที่ lv18 [M:2/4] [R:2/3] [B:3/3] |
+| **Versatility** | 8/10 (A) | คำสาป 3 แบบ × ประเภทศัตรู 3 แบบใน Blood Ties ให้ทางเลือก build หลากหลาย บวก summon ally แรงๆ ที่ lv18 [M:3/4] [R:2/3] [B:3/3] |

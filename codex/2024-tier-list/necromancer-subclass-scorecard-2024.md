@@ -74,7 +74,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่โดยตรง (ธีม charm/self-sustain) = เท่า baseline |
-| **Control** | 8/10 (A) | Blood Ascendant Spells รับประกัน Sleep/Hypnotic Pattern/Dominate Person ติดตัวถาวร [M:2/4] [R:2/3] [B:3/3] |
+| **Control** | 8/10 (A) | Blood Ascendant Spells รับประกัน Sleep/Hypnotic Pattern/Dominate Person ติดตัวถาวร [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Charnel Drain (ฮีลตัวเองเมื่อฆ่าด้วย Charnel Touch) + Vampiric Transformation (lv6, resistance B/P/S + Advantage Str/Dex/Con save ในร่างหมอก/ค้างคาว) [M:3/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 7/10 (A) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
@@ -88,11 +88,11 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Rotten Seed (lv6, bonus action ปลูกเมล็ด DoT necrotic 1d8→1d12 ทุกต้นเทิร์นของเป้า) [M:2/4] [R:3/3] [B:3/3] |
-| **Control** | 8/10 (A) | Charnel Entangle (Restrained เมื่อ Charnel Touch สร้างดาเมจ 5+) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Rotten Seed (lv6, bonus action ปลูกเมล็ด DoT necrotic 1d8→1d12 ทุกต้นเทิร์นของเป้า) [M:3/4] [R:3/3] [B:3/3] |
+| **Control** | 8/10 (A) | Charnel Entangle (Restrained เมื่อ Charnel Touch สร้างดาเมจ 5+) [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 6/10 (B) | Rotten Seed ให้ temp HP ตัวเองเท่าดาเมจที่ DoT สร้างทุกเทิร์น [M:2/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 8/10 (A) | Rotten Seed เป็น bonus action ที่ให้ผลดาเมจ+ฮีลต่อเนื่องหลายเทิร์นจากการลงทุนครั้งเดียว [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 8/10 (A) | Rotten Seed เป็น bonus action ที่ให้ผลดาเมจ+ฮีลต่อเนื่องหลายเทิร์นจากการลงทุนครั้งเดียว [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 3/10 (C) | ไม่มี utility นอกคอมแบตใหม่ที่ชัดเจน = เท่า baseline |
 | **Versatility** | 8/10 (A) | ผสม DoT/control/self-sustain ในธีมพืชกินซาก [M:2/4] [R:3/3] [B:3/3] |
 
@@ -104,7 +104,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (คำสาปเป็น debuff ไม่ใช่ดาเมจ) = เท่า baseline |
-| **Control** | 8/10 (A) | Charnel Curse (ลบ 1d6 จากทุก d20 test ของเป้า นาน 1 นาทีแบบ recurring save) [M:2/4] [R:2/3] [B:3/3] |
+| **Control** | 8/10 (A) | Charnel Curse (ลบ 1d6 จากทุก d20 test ของเป้า นาน 1 นาทีแบบ recurring save) [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 3/10 (C) | Witch's Cauldron (lv6, ปรุงยาที่แจก ally ได้ เช่น Potion of Healing/Resistance) [M:1/4] [R:1/3] [B:1/3] |
 | **Survivability** | 3/10 (C) | ไม่มี feature ป้องกันตัวเองใหม่โดยตรง = เท่า baseline |
 | **Action Economy** | 7/10 (A) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
@@ -148,10 +148,10 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Backup Dancers table ให้บวกดาเมจ +1→+3 แบบ passive ตามจำนวน thrall ที่กำลัง Dance (สูงสุด 6 ตัว) [M:3/4] [R:3/3] [B:2/3] |
-| **Control** | 8/10 (A) | Charnel Groove (บังคับเป้าเต้นแทนทำอย่างอื่น จนจบเทิร์นถัดไป — lockdown เต็มรูปแบบ) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Backup Dancers table ให้บวกดาเมจ +1→+3 แบบ passive ตามจำนวน thrall ที่กำลัง Dance (สูงสุด 6 ตัว) [M:3/4] [R:3/3] [B:3/3] |
+| **Control** | 8/10 (A) | Charnel Groove (บังคับเป้าเต้นแทนทำอย่างอื่น จนจบเทิร์นถัดไป — lockdown เต็มรูปแบบ) [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 5/10 (B) | Graveyard Tango (lv6, bonus action แบ่งบัฟ Backup Dancers ให้ ally 1 คน) [M:2/4] [R:2/3] [B:1/3] |
-| **Survivability** | 9/10 (S) | Backup Dancers table ให้ AC +1→+3 + Evasion (5+ ตัว) + Disadvantage การโจมตีทุกครั้งใส่เรา (6 ตัว) — mitigation ที่ทรงพลังมากเมื่อกองทัพครบ [M:3/4] [R:2/3] [B:3/3] |
+| **Survivability** | 9/10 (S) | Backup Dancers table ให้ AC +1→+3 + Evasion (5+ ตัว) + Disadvantage การโจมตีทุกครั้งใส่เรา (6 ตัว) — mitigation ที่ทรงพลังมากเมื่อกองทัพครบ [M:4/4] [R:2/3] [B:3/3] |
 | **Action Economy** | 10/10 (S) | Backup Dancers table ให้ Disengage/Dash/Strike ฟรีเป็น bonus action + **bonus action 2 ครั้ง/เทิร์น** ที่ 4 ตัวขึ้นไป — economy multiplier ที่แรงที่สุดในกลุ่ม [M:4/4] [R:3/3] [B:3/3] |
 | **Utility** | 3/10 (C) | ไม่มี utility นอกคอมแบตใหม่ = เท่า baseline |
 | **Versatility** | 9/10 (S) | ตาราง scaling เดียวให้ผลครบทั้งดาเมจ/control/defense/economy ตามจำนวน thrall — รอบด้านที่สุดในกลุ่ม [M:3/4] [R:3/3] [B:3/3] |
@@ -163,11 +163,11 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Charnel Aura (bonus action, บวก d20/damage/AC +1→+3 ให้ Undead ที่คุมทุกตัวในรัศมี 30ft) เพิ่มดาเมจรวมของกองทัพ thrall [M:2/4] [R:3/3] [B:3/3] |
-| **Control** | 8/10 (A) | Overlord Spells รับประกัน Command/Hold Person/Dominate Person/Geas ติดตัวถาวร [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Charnel Aura (bonus action, บวก d20/damage/AC +1→+3 ให้ Undead ที่คุมทุกตัวในรัศมี 30ft) เพิ่มดาเมจรวมของกองทัพ thrall [M:3/4] [R:3/3] [B:3/3] |
+| **Control** | 8/10 (A) | Overlord Spells รับประกัน Command/Hold Person/Dominate Person/Geas ติดตัวถาวร [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 0/10 (D) | Charnel Aura ให้ผลกับ Undead ที่คุมเท่านั้น ไม่ใช่ ally มีชีวิต = เท่า baseline |
 | **Survivability** | 6/10 (B) | Sacrificial Thralls (lv10, reaction เปลี่ยนเป้าการโจมตีที่จะโดนไปโดน thrall แทน) [M:2/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 8/10 (A) | Charnel Aura เป็น bonus action ให้ผลบัฟกว้างต่อเนื่อง [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 8/10 (A) | Charnel Aura เป็น bonus action ให้ผลบัฟกว้างต่อเนื่อง [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 4/10 (C) | Despotic Discourse (Cha check bonus) เป็น utility เล็กน้อย [M:1/4] [R:2/3] [B:1/3] |
 | **Versatility** | 8/10 (A) | ผสม control(domination spell)/buff(aura)/defense(sacrifice) ในธีมผู้ปกครอง [M:2/4] [R:3/3] [B:3/3] |
 
@@ -179,10 +179,10 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Charnel Empower ให้เพิ่มดาเมจ necrotic เสริมกับ spell necromancy ใดๆ ได้สูงสุดเท่า level+Int mod แต้ม Charnel Touch — ดาเมจเสริมที่ scale สูงที่สุดในกลุ่ม [M:4/4] [R:3/3] [B:3/3] |
-| **Control** | 8/10 (A) | Frightening Gaze (lv6, bonus action Frighten แบบ recurring save 1 นาที) [M:2/4] [R:2/3] [B:3/3] |
+| **Control** | 8/10 (A) | Frightening Gaze (lv6, bonus action Frighten แบบ recurring save 1 นาที) [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 5/10 (B) | Magic Resistance (lv20, Advantage ทุก save ต้าน spell) มาช้ามาก ไม่มี defense feature ก่อนหน้านั้น [M:2/4] [R:1/3] [B:2/3] |
-| **Action Economy** | 8/10 (A) | Thrall Rush (lv10, thrall ทุกตัวขยับเต็ม speed ฟรีตอน initiative) [M:2/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 8/10 (A) | Thrall Rush (lv10, thrall ทุกตัวขยับเต็ม speed ฟรีตอน initiative) [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 3/10 (C) | ไม่มี utility นอกคอมแบตใหม่ = เท่า baseline |
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญขยายดาเมจ spell เฉพาะทางหนักมาก ไม่ขยาย role อื่นมาก = เท่า baseline |
 
@@ -193,7 +193,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Ankh of Radiance (retaliation dmg 1d6→4d6 radiant ใส่ผู้โจมตีเมลีที่ตี ally ที่ blessed) [M:2/4] [R:3/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Ankh of Radiance (retaliation dmg 1d6→4d6 radiant ใส่ผู้โจมตีเมลีที่ตี ally ที่ blessed) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | ไม่มี control feature ใหม่ (spell list เน้นสาย support/divine) = เท่า baseline |
 | **Support** | 9/10 (S) | Ankh of Radiance (บัฟ resistance+retaliation ให้ ally สูงสุดเท่า Int mod คน) + Pharaoh Spells (Revivify/Death Ward/Greater Restoration ติดตัวถาวร) + Scarab of Judgment (lv10, เสียสละ thrall เพื่อฮีลเต็มให้ ally) — Necromancer เพียงตัวเดียวที่เป็น dedicated healer/support [M:3/4] [R:3/3] [B:3/3] |
 | **Survivability** | 3/10 (C) | ไม่มี feature ป้องกันตัวเองโดยตรง (ทุกอย่างเน้นช่วยคนอื่น) = เท่า baseline |
@@ -208,11 +208,11 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Bloated Thralls (lv10, thrall ระเบิดเป็น AoE 4d6 poison ทุกครั้งที่ตายหรือถูกปล่อย — nova ที่เกิดซ้ำได้ไม่จำกัด) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Bloated Thralls (lv10, thrall ระเบิดเป็น AoE 4d6 poison ทุกครั้งที่ตายหรือถูกปล่อย — nova ที่เกิดซ้ำได้ไม่จำกัด) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 8/10 (A) | Charnel Toxin (Poisoned เมื่อ Charnel Touch สร้างดาเมจ 5+) + Vile Congregation (aura passive ลบ 1d4 จาก d20 test ของศัตรูใกล้ตัว) [M:2/4] [R:3/3] [B:3/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 3/10 (C) | ไม่มี feature ป้องกันตัวเองใหม่โดยตรง = เท่า baseline |
-| **Action Economy** | 8/10 (A) | Bloated Thralls ทำงานอัตโนมัติไม่เสีย action เพิ่ม + Projectile Spew (ระยะ Charnel Touch ไกลขึ้น 10ft) [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 8/10 (A) | Bloated Thralls ทำงานอัตโนมัติไม่เสีย action เพิ่ม + Projectile Spew (ระยะ Charnel Touch ไกลขึ้น 10ft) [M:2/4] [R:3/3] [B:3/3] |
 | **Utility** | 3/10 (C) | ไม่มี utility นอกคอมแบตใหม่ = เท่า baseline |
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญพิษ/debuff-aura เฉพาะทาง [M:2/4] [R:2/3] [B:3/3] |
 
@@ -223,8 +223,8 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Charnel Voltage (Charnel Touch แตกไปเป้าที่สองในระยะ 5ft ด้วยดาเมจ lightning) [M:2/4] [R:3/3] [B:3/3] |
-| **Control** | 7/10 (A) | Charnel Voltage ทำให้เป้าที่สองทำ Opportunity Attack ไม่ได้จนจบเทิร์นถัดไป [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 9/10 (S) | Charnel Voltage (Charnel Touch แตกไปเป้าที่สองในระยะ 5ft ด้วยดาเมจ lightning) [M:3/4] [R:3/3] [B:3/3] |
+| **Control** | 7/10 (A) | Charnel Voltage ทำให้เป้าที่สองทำ Opportunity Attack ไม่ได้จนจบเทิร์นถัดไป [M:2/4] [R:3/3] [B:2/3] |
 | **Support** | 5/10 (B) | Lazarus Bolt (lv6, ชุบชีวิต ally ที่เพิ่งตายให้ตื่นด้วย 1 HP+temp HP) [M:2/4] [R:1/3] [B:2/3] |
 | **Survivability** | 4/10 (C) | Spell-Stitches บางแบบ (Tough/Armored) ใช้กับตัวเองได้ก็ต่อเมื่อถึง Self-Stitches ที่ lv20 เท่านั้น ก่อนหน้านั้นใช้ได้แค่กับ thrall [M:1/4] [R:1/3] [B:2/3] |
 | **Action Economy** | 7/10 (A) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |

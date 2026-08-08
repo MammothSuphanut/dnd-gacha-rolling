@@ -63,7 +63,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Dreadful Step (2d10 Psychic AoE ตอน teleport) บวก Beguiling Defenses (lv10, reaction สะท้อนดาเมจ Psychic เท่ากับดาเมจที่รับ) ต่อยอดจาก Misty Step ที่ cast ฟรีได้บ่อย [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Dreadful Step (2d10 Psychic AoE ตอน teleport) บวก Beguiling Defenses (lv10, reaction สะท้อนดาเมจ Psychic เท่ากับดาเมจที่รับ) ต่อยอดจาก Misty Step ที่ cast ฟรีได้บ่อย [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | Taunting Step (AoE Disadvantage ต่อการโจมตีเป้าอื่นนอกจากตัวเอง) เป็น soft-control ที่ trigger ได้ทุกครั้งที่ teleport [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 3/10 (C) | Refreshing Step ให้ temp HP แก่ตัวเองหรือ ally ในระยะ 10ft ได้ทุกครั้งที่ teleport เป็น support ที่ break เหนือ 0-baseline |
 | **Survivability** | 8/10 (A) | Beguiling Defenses (Immune Charmed + reaction ลดดาเมจครึ่ง+สะท้อน Psychic) บวก Misty Escape (lv6, reaction Misty Step ตอนโดนดาเมจ) เป็นเลเยอร์หนี/ป้องกันที่ทรงพลัง [M:3/4] [R:3/3] [B:2/3] |
@@ -84,7 +84,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Survivability** | 4/10 (C) | Radiant Resistance (lv6) เป็น addition เล็กน้อยเท่านั้น [M:1/4] [R:2/3] [B:1/3] |
 | **Action Economy** | 6/10 (B) | Healing Light เป็น bonus action ปกติ, Celestial Resilience เป็น passive trigger ไม่เสีย action เพิ่ม = เท่า baseline |
 | **Utility** | 7/10 (A) | ไม่มี utility feature ใหม่นอกเหนือจากคาถาที่ได้ = เท่า baseline |
-| **Versatility** | 6/10 (B) | มีทั้งดาเมจ Radiant/Fire เสริมและฮีลเป็นหลัก แต่ยังเป็น healer archetype ที่ค่อนข้างเน้นมิติเดียว [M:2/4] [R:2/3] [B:1/3] |
+| **Versatility** | 6/10 (B) | มีทั้งดาเมจ Radiant/Fire เสริมและฮีลเป็นหลัก แต่ยังเป็น healer archetype ที่ค่อนข้างเน้นมิติเดียว [M:2/4] [R:3/3] [B:1/3] |
 
 ### The Coven (GrimHollowPG24)
 
@@ -93,12 +93,12 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Hag's Visage (lv10, ห่วงโซ่ save-or-die 3 ขั้น Frightened→Paralyzed→0 HP ต่อเป้า Humanoid) เป็น execute ที่ทรงพลังมาก แม้จะต้องตั้งเงื่อนไขก่อน [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Hag's Visage (lv10, ห่วงโซ่ save-or-die 3 ขั้น Frightened→Paralyzed→0 HP ต่อเป้า Humanoid) เป็น execute ที่ทรงพลังมาก แม้จะต้องตั้งเงื่อนไขก่อน [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 9/10 (S) | Hex+Bestow Curse cast ฟรีไม่เสีย slot (Hag's Eye) บวก Hag's Visage's Frightened→Paralyzed chain เป็นชุด control ที่ยาวและแรงที่สุดในบรรดา class นี้ [M:3/4] [R:3/3] [B:3/3] |
 | **Support** | 2/10 (D) | Hag's Craft (lv14, ปรุงยา 2-3 โดสให้ทีมได้ต่อวัน) เป็น downtime support เล็กน้อยที่ break เหนือ 0-baseline |
 | **Survivability** | 3/10 (C) | ไม่มี survivability feature ใหม่ = เท่า baseline |
 | **Action Economy** | 6/10 (B) | Hex/Bestow Curse cast ฟรีประหยัด spell slot ไม่ใช่ action = เท่า baseline |
-| **Utility** | 8/10 (A) | Hag's Craft (ปรุงยาวิเศษ Common/Uncommon/Rare + สร้าง Minor Heartstone item ทุก long rest) เป็น downtime utility ที่ทรงคุณค่ามาก [M:3/4] [R:2/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Hag's Craft (ปรุงยาวิเศษ Common/Uncommon/Rare + สร้าง Minor Heartstone item ทุก long rest) เป็น downtime utility ที่ทรงคุณค่ามาก [M:3/4] [R:3/3] [B:2/3] |
 | **Versatility** | 7/10 (A) | รวม control chain, execute damage, และ item crafting เข้าด้วยกันในตัวเดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### The Dead Mists (VSS 🕰️)
@@ -112,7 +112,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมเลย ทุกอย่างเป็น self-only |
 | **Survivability** | 4/10 (C) | Feed The Soul (ฮีลตัวเองด้วยการเผา slot) + Master of the Mists (lifesteal necrotic) ถูกหักล้างบางส่วนด้วยข้อจำกัดของ subclass เอง ("ฮีลจากคาถาตัวเองไม่ได้เลย") [M:1/4] [R:2/3] [B:1/3] |
-| **Action Economy** | 7/10 (A) | Drink The Mists (bonus action แลก HP เพื่อคืน Pact Magic slot ที่ใช้ไปแล้วในเทิร์นถัดไป) เป็นตัวคูณทรัพยากรที่ให้ cast คาถาต่อวันได้มากกว่าปกติ [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Drink The Mists (bonus action แลก HP เพื่อคืน Pact Magic slot ที่ใช้ไปแล้วในเทิร์นถัดไป) เป็นตัวคูณทรัพยากรที่ให้ cast คาถาต่อวันได้มากกว่าปกติ [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 7/10 (A) | Fog Form (lv10, แปลงร่างเป็น Gaseous Form ตัวเองฟรี 1/วัน) เป็น escape/infiltration utility เพิ่ม แต่ไม่พอยกระดับเหนือ baseline ที่มี Invocation pool กว้างอยู่แล้ว = เท่า baseline |
 | **Versatility** | 5/10 (B) | Toolkit ทั้งหมดผูกกับธีม HP-แลก-พลังเดียว ไม่กว้างมาก = เท่า baseline |
 
@@ -123,7 +123,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Tentacle of the Deeps (bonus action สร้าง+เคลื่อนที่+โจมตีซ้ำได้ สเกล 1d8→2d8) บวก Grasping Tentacles (lv10, Evard's Black Tentacles ฟรี 1/วัน) เป็น damage kit ที่ยิงได้ทุกเทิร์น [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Tentacle of the Deeps (bonus action สร้าง+เคลื่อนที่+โจมตีซ้ำได้ สเกล 1d8→2d8) บวก Grasping Tentacles (lv10, Evard's Black Tentacles ฟรี 1/วัน) เป็น damage kit ที่ยิงได้ทุกเทิร์น [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 8/10 (A) | Evard's Black Tentacles (AoE restrain แรงมาก, cast ฟรี+ Concentration ทำลายไม่ได้) บวก Tentacle's speed reduction ทุกครั้งที่โจมตีโดน [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 4/10 (C) | Guardian Coil (lv6, reaction ลดดาเมจให้ตัวเองหรือ ally ที่อยู่ใกล้ tentacle ได้ 1d8→2d8) เป็น support ปกป้องที่ break เหนือ baseline ชัดเจน |
 | **Survivability** | 4/10 (C) | Guardian Coil ใช้ป้องกันตัวเองได้เช่นกัน บวก swim speed 40ft/หายใจใต้น้ำ (niche) [M:1/4] [R:2/3] [B:1/3] |
@@ -138,8 +138,8 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Hurl Through Hell (lv14, 8d10 Psychic + Incapacitated 1 เทิร์น ต่อเป้าเดียว, refill ด้วย spell slot) เป็นดาเมจก้อนเดียวที่สูงที่สุดในบรรดา subclass ของ class นี้ [M:4/4] [R:2/3] [B:2/3] |
-| **Control** | 6/10 (B) | Hurl Through Hell มาพร้อม Incapacitated 1 เทิร์นเป็นผลพลอยได้จากดาเมจก้อนใหญ่ [M:2/4] [R:1/3] [B:2/3] |
+| **Damage** | 9/10 (S) | Hurl Through Hell (lv14, 8d10 Psychic + Incapacitated 1 เทิร์น ต่อเป้าเดียว, refill ด้วย spell slot) เป็นดาเมจก้อนเดียวที่สูงที่สุดในบรรดา subclass ของ class นี้ [M:4/4] [R:3/3] [B:2/3] |
+| **Control** | 6/10 (B) | Hurl Through Hell มาพร้อม Incapacitated 1 เทิร์นเป็นผลพลอยได้จากดาเมจก้อนใหญ่ [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 0/10 (D) | Dark One's Blessing ให้ temp HP เฉพาะตัวเอง (แม้จะ trigger จาก kill ของ ally ก็ตาม) ไม่มี feature เสริมทีมจริง |
 | **Survivability** | 6/10 (B) | Dark One's Blessing (temp HP ทุกครั้งที่ kill ในระยะ 10ft) บวก Fiendish Resilience (lv10, เลือก resistance ชนิดดาเมจทุก rest) [M:2/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 7/10 (A) | Dark One's Own Luck (เพิ่ม 1d10 ให้ roll ไหนก็ได้หลังเห็นผลแล้ว Cha mod ครั้ง/วัน) ใช้ได้โดยไม่เสีย action [M:2/4] [R:2/3] [B:3/3] |
@@ -153,12 +153,12 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Drain Life (bonus action โจมตีซ้ำได้ทุกเทิร์นหลัง Attack/Magic action สเกลดาเมจตาม spell slot ที่แลก) บวก Eternal Night (lv14, extra 1d8 Necrotic ฟรีทุกครั้งที่ใช้ Drain Life) [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Drain Life (bonus action โจมตีซ้ำได้ทุกเทิร์นหลัง Attack/Magic action สเกลดาเมจตาม spell slot ที่แลก) บวก Eternal Night (lv14, extra 1d8 Necrotic ฟรีทุกครั้งที่ใช้ Drain Life) [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมเลย |
 | **Survivability** | 7/10 (A) | Drain Life ฮีลตัวเองเท่ากับดาเมจที่แลก slot ไป บวก Eternal Night (ฮีล 1d6/เทิร์น) บวก Eldritch Appetite (lv10, kill ผ่าน Drain Life คืน spell slot) เป็น sustain loop ที่ครบวงจร [M:2/4] [R:3/3] [B:2/3] |
-| **Action Economy** | 8/10 (A) | Drain Life เป็น bonus action หลัง Attack/Magic action = ได้การโจมตีเพิ่มฟรีทุกเทิร์นโดยไม่เสีย action หลัก [M:3/4] [R:2/3] [B:2/3] |
-| **Utility** | 8/10 (A) | Creature of the Night (lv6, Polymorph ตัวเองเป็น Bat/Rat/Wolf ฟรี Cha mod ครั้ง/วัน) เป็นเครื่องมือแปลงร่างสำรวจ/แทรกซึมที่หลากหลาย [M:3/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 8/10 (A) | Drain Life เป็น bonus action หลัง Attack/Magic action = ได้การโจมตีเพิ่มฟรีทุกเทิร์นโดยไม่เสีย action หลัก [M:3/4] [R:3/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Creature of the Night (lv6, Polymorph ตัวเองเป็น Bat/Rat/Wolf ฟรี Cha mod ครั้ง/วัน) เป็นเครื่องมือแปลงร่างสำรวจ/แทรกซึมที่หลากหลาย [M:3/4] [R:3/3] [B:2/3] |
 | **Versatility** | 6/10 (B) | ผสมดาเมจ+lifesteal+shapeshift utility ในตัวเดียว [M:2/4] [R:2/3] [B:2/3] |
 
 ### The Genie (TCE 🕰️)
@@ -168,7 +168,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Genie's Wrath (extra ดาเมจ=prof bonus ทุกเทิร์นที่ตีโดน) บวก Limited Wish (lv14, ขอคาถาระดับ 6 หรือต่ำกว่าได้ทุกชนิด 1 ครั้ง/1d4 long rests รวมคาถาดาเมจแรงๆ) [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Genie's Wrath (extra ดาเมจ=prof bonus ทุกเทิร์นที่ตีโดน) บวก Limited Wish (lv14, ขอคาถาระดับ 6 หรือต่ำกว่าได้ทุกชนิด 1 ครั้ง/1d4 long rests รวมคาถาดาเมจแรงๆ) [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 5/10 (B) | Limited Wish สามารถขอคาถา control ได้เช่นกัน แต่เป็นทรัพยากรหายาก (1/1d4 long rests) ไม่ reliable พอ = เท่า baseline |
 | **Support** | 4/10 (C) | Sanctuary Vessel (lv10, พาทีมสูงสุด 5 คนเข้า vessel ได้ short rest ฟรี+ฮีล Hit Dice โบนัส) เป็น support ที่ break เหนือ baseline ชัดเจน |
 | **Survivability** | 5/10 (B) | Bottled Respite (หลบเข้า vessel ส่วนตัว) บวก Elemental Gift (lv6, resistance ธาตุตามประเภท genie) [M:2/4] [R:2/3] [B:1/3] |
@@ -183,10 +183,10 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | OP Class Feature (lv14, bonus action Advantage แบบทอย 3d20 เลือกสูงสุดกับทุก attack roll/check/save เป็นเวลา 1 นาที) เป็น burst window ที่ทรงพลังมาก [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | OP Class Feature (lv14, bonus action Advantage แบบทอย 3d20 เลือกสูงสุดกับทุก attack roll/check/save เป็นเวลา 1 นาที) เป็น burst window ที่ทรงพลังมาก [M:4/4] [R:2/3] [B:2/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
-| **Support** | 5/10 (B) | Plot Armor (lv10, temp HP=level+Cha mod ให้ตัวเอง+ally ทุกคนทุกครั้งที่ rest) เป็น support ที่ reliable และซ้ำได้ทุก rest [M:2/4] [R:3/3] [B:1/3] |
-| **Survivability** | 6/10 (B) | Plot Armor (temp HP ตัวเองด้วย) บวก Fudge The Roll (lv6, ปรับ/reroll d20 test ไหนก็ได้รวม saving throw) [M:2/4] [R:2/3] [B:1/3] |
+| **Support** | 5/10 (B) | Plot Armor (lv10, temp HP=level+Cha mod ให้ตัวเอง+ally ทุกคนทุกครั้งที่ rest) เป็น support ที่ reliable และซ้ำได้ทุก rest [M:2/4] [R:3/3] [B:0/3] |
+| **Survivability** | 6/10 (B) | Plot Armor (temp HP ตัวเองด้วย) บวก Fudge The Roll (lv6, ปรับ/reroll d20 test ไหนก็ได้รวม saving throw) [M:2/4] [R:3/3] [B:1/3] |
 | **Action Economy** | 7/10 (A) | Fudge The Roll ไม่เสีย action, OP Class Feature เป็น bonus action ให้ผลต่อเนื่อง 1 นาที [M:2/4] [R:2/3] [B:3/3] |
 | **Utility** | 7/10 (A) | Player Character (Adv Persuasion/Deception แบบ GM-gated) เป็น utility แคบ ไม่พอยกระดับ = เท่า baseline |
 | **Versatility** | 8/10 (A) | Fudge The Roll (แก้ roll อะไรก็ได้) + OP Class Feature (Advantage ทุกอย่างชั่วคราว) เป็นเครื่องมือ meta ที่ปรับใช้ได้กับทุกสถานการณ์ [M:3/4] [R:2/3] [B:3/3] |
@@ -198,7 +198,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Eldritch Hex (Hex เตรียมไว้ตลอด+เพิ่ม Disadvantage save) บวก Create Thrall (lv14, Summon Aberration ไม่ต้อง Concentration+ดาเมจ Psychic โบนัสจาก Hex) เป็น damage-debuff engine ที่ยั่งยืน [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Eldritch Hex (Hex เตรียมไว้ตลอด+เพิ่ม Disadvantage save) บวก Create Thrall (lv14, Summon Aberration ไม่ต้อง Concentration+ดาเมจ Psychic โบนัสจาก Hex) เป็น damage-debuff engine ที่ยั่งยืน [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 8/10 (A) | Clairvoyant Combatant (lv6, บังคับเป้าที่ผูก telepathy มี Disadvantage ตีคนอื่น+ตัวเองมี Advantage) บวก Eldritch Hex (Disadvantage save ต่อเนื่อง) [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 0/10 (D) | Awakened Mind เป็น utility ส่วนตัว ไม่ใช่ support ทีม |
 | **Survivability** | 4/10 (C) | Thought Shield (lv10, กัน telepathy+resist Psychic+สะท้อนดาเมจ Psychic) [M:1/4] [R:2/3] [B:1/3] |
@@ -263,7 +263,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมเลย |
 | **Survivability** | 8/10 (A) | Physical Specimen (บัฟกายภาพเลือกได้ Cha mod อย่าง รวม HP max เพิ่ม) + Symbiotic Sentinel (lv6, กัน surprise+Adv initiative+Adv charm/fear save) + Larval Regeneration (lv14, ล้มแล้วฟื้นเป็นปรสิตควบคุมได้ ถึงขั้นแย่งร่างใหม่ = โกงความตายได้จริง) เป็นชุด survival ที่ครบวงจรที่สุด [M:3/4] [R:3/3] [B:2/3] |
 | **Action Economy** | 7/10 (A) | Spell Siphon เป็น reaction ไม่เสีย action, Physical Specimen เป็น bonus action ที่ให้ผลยาวทั้งวัน [M:2/4] [R:2/3] [B:3/3] |
-| **Utility** | 8/10 (A) | Physical Specimen มีตัวเลือกครอบคลุมหลายสถานการณ์ (climb speed, jump 3x, skill bonus, darkvision) เลือกได้หลายอย่างพร้อมกันตาม Cha mod [M:3/4] [R:2/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Physical Specimen มีตัวเลือกครอบคลุมหลายสถานการณ์ (climb speed, jump 3x, skill bonus, darkvision) เลือกได้หลายอย่างพร้อมกันตาม Cha mod [M:3/4] [R:3/3] [B:2/3] |
 | **Versatility** | 8/10 (A) | เมนูบัฟ 6 แบบ + control ที่แรงที่สุด + survival-cheat เป็น breadth ที่กว้างมาก [M:3/4] [R:2/3] [B:3/3] |
 
 ### The Symbiont (VSS 🕰️)
@@ -273,10 +273,10 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Extra Attack ด้วยกรงเล็บ (Cha-based, 1d8 slashing x2 ที่ lv5) บวก Traumatic Rend (lv6, โจมตีที่ 3 ฟรีหลังตีโดน 2 ครั้ง) เปลี่ยน Warlock เป็นนักสู้ระยะประชิดเต็มตัว [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Extra Attack ด้วยกรงเล็บ (Cha-based, 1d8 slashing x2 ที่ lv5) บวก Traumatic Rend (lv6, โจมตีที่ 3 ฟรีหลังตีโดน 2 ครั้ง) เปลี่ยน Warlock เป็นนักสู้ระยะประชิดเต็มตัว [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 5/10 (B) | Traumatic Rend ให้เป้า Disadvantage ต่อการโจมตีใส่ตัวเอง ไม่พอยกระดับ tier = ใกล้เคียง baseline |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมเลย |
-| **Survivability** | 6/10 (B) | Lifedrain (lv10, ฮีล 1d4 ทุกครั้งที่กรงเล็บตีโดน ซึ่งมีถึง 2-3 ครั้ง/เทิร์น) บวก Violence After Death (lv14, สู้ต่อได้ที่ 0 HP) [M:2/4] [R:2/3] [B:1/3] |
+| **Survivability** | 6/10 (B) | Lifedrain (lv10, ฮีล 1d4 ทุกครั้งที่กรงเล็บตีโดน ซึ่งมีถึง 2-3 ครั้ง/เทิร์น) บวก Violence After Death (lv14, สู้ต่อได้ที่ 0 HP) [M:2/4] [R:3/3] [B:1/3] |
 | **Action Economy** | 6/10 (B) | Transform เสีย bonus action แต่ให้ Extra Attack แบบ passive ตลอดไป = เท่า baseline |
 | **Utility** | 7/10 (A) | ไม่มี utility feature ใหม่ (ระหว่าง transform cast คาถาไม่ได้เลยด้วยซ้ำ) = เท่า baseline |
 | **Versatility** | 7/10 (A) | สลับโหมด caster (ร่ายคาถาปกติ) กับ melee brawler (กรงเล็บ Extra Attack) ได้ด้วย bonus action เดียว เป็น dual-playstyle ที่แท้จริง [M:2/4] [R:2/3] [B:3/3] |
@@ -288,12 +288,12 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Grave Touched (lv6, สลับดาเมจเป็น Necrotic+เพิ่ม dice ตอน transform) บวก Necrotic Husk (lv10, ดาเมจ AoE 2d10+level ตอนใกล้ตาย) [M:3/4] [R:2/3] [B:2/3] |
-| **Control** | 6/10 (B) | Form of Dread's Frighten-on-hit (1 ครั้ง/เทิร์นตอน transform) [M:2/4] [R:2/3] [B:1/3] |
+| **Damage** | 8/10 (A) | Grave Touched (lv6, สลับดาเมจเป็น Necrotic+เพิ่ม dice ตอน transform) บวก Necrotic Husk (lv10, ดาเมจ AoE 2d10+level ตอนใกล้ตาย) [M:3/4] [R:3/3] [B:2/3] |
+| **Control** | 6/10 (B) | Form of Dread's Frighten-on-hit (1 ครั้ง/เทิร์นตอน transform) [M:2/4] [R:3/3] [B:1/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมเลย |
 | **Survivability** | 7/10 (A) | Form of Dread (temp HP+Immune Frightened) บวก Necrotic Husk (resist/immune Necrotic ตอน transform+กันตาย 1 ครั้งด้วย AoE burst, 1/1d4 long rests) [M:3/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 6/10 (B) | Form of Dread เป็น bonus action, Necrotic Husk เป็น trigger อัตโนมัติไม่เสีย action = เท่า baseline |
-| **Utility** | 8/10 (A) | Spirit Projection (lv14, แยกวิญญาณออกจากร่างสำรวจได้ 1 ชั่วโมง ผ่านทะลุสิ่งกีดขวาง+บิน) เป็นเครื่องมือสำรวจ/ลาดตระเวนที่ทรงพลังแม้ปลดล็อกช้า [M:3/4] [R:2/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Spirit Projection (lv14, แยกวิญญาณออกจากร่างสำรวจได้ 1 ชั่วโมง ผ่านทะลุสิ่งกีดขวาง+บิน) เป็นเครื่องมือสำรวจ/ลาดตระเวนที่ทรงพลังแม้ปลดล็อกช้า [M:3/4] [R:3/3] [B:2/3] |
 | **Versatility** | 6/10 (B) | ดาเมจ+control+survival triad ผ่านโหมด transform เดียว + scouting tool ปลายเกม [M:2/4] [R:2/3] [B:2/3] |
 
 ### The Undying (SCAG 🕰️)
@@ -306,7 +306,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Damage** | 7/10 (A) | ไม่มี damage feature ใหม่ = เท่า baseline |
 | **Control** | 5/10 (B) | Among the Dead บังคับ Undead ต้อง save ก่อนโจมตีตรงเป้า เป็น soft-control ที่แคบเฉพาะ Undead = เท่า baseline |
 | **Support** | 0/10 (D) | Defy Death ฮีลเฉพาะตัวเองแม้ trigger จากการ stabilize ผู้อื่น ไม่มี support จริง |
-| **Survivability** | 6/10 (B) | Indestructible Life (lv14, bonus action ฮีลตัวเอง 1d8+level ซ้ำได้ 1/rest) บวก Defy Death (ฮีลตอน save ตายผ่าน) บวก Undying Nature (ไม่ต้องกิน/ดื่ม/นอน) [M:2/4] [R:2/3] [B:1/3] |
+| **Survivability** | 6/10 (B) | Indestructible Life (lv14, bonus action ฮีลตัวเอง 1d8+level ซ้ำได้ 1/rest) บวก Defy Death (ฮีลตอน save ตายผ่าน) บวก Undying Nature (ไม่ต้องกิน/ดื่ม/นอน) [M:2/4] [R:3/3] [B:1/3] |
 | **Action Economy** | 6/10 (B) | Indestructible Life เป็น bonus action ปกติ = เท่า baseline |
 | **Utility** | 7/10 (A) | Undying Nature (ไม่ต้องกิน/ดื่ม/นอน+แก่ช้าลง) เป็น long-term utility ที่มีประโยชน์แต่ไม่พอยกระดับ = เท่า baseline |
 | **Versatility** | 5/10 (B) | Toolkit ทั้งหมดเน้น self-sustain เดี่ยว ไม่กว้าง = เท่า baseline |
@@ -319,11 +319,11 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Arcane Necrosis (ดาเมจ Necrotic บายพาส Resistance ทั้งหมด+สลับดาเมจคาถาเป็น Necrotic) บวก Dreaded Necrosis (dice โบนัสตอน transform) เป็น damage kit ที่แรงกว่าเวอร์ชัน 2014 อย่างชัดเจนจากการบายพาส resistance [M:3/4] [R:3/3] [B:3/3] |
-| **Control** | 6/10 (B) | Frightful Avatar (Frighten-on-hit ตอน transform) เหมือนเวอร์ชัน 2014 [M:2/4] [R:2/3] [B:1/3] |
+| **Control** | 6/10 (B) | Frightful Avatar (Frighten-on-hit ตอน transform) เหมือนเวอร์ชัน 2014 [M:2/4] [R:3/3] [B:1/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมเลย |
 | **Survivability** | 8/10 (A) | Necrotic Resilience + Unholy Resuscitation (กันตาย 1/rest แทน 1/1d4 long rests ของเวอร์ชัน 2014 ทำให้ reliable กว่ามาก) + Dread Resistance (lv14, resist B/P/S เพิ่ม) + Fearless Form (ล้าง Frightened เดิมด้วย) [M:3/4] [R:3/3] [B:2/3] |
 | **Action Economy** | 7/10 (A) | Form of Dread bonus action, Unholy Resuscitation trigger อัตโนมัติไม่เสีย action [M:2/4] [R:2/3] [B:3/3] |
-| **Utility** | 8/10 (A) | Ghostly Flight (lv14, บิน+ทะลุสิ่งกีดขวาง) + Profane Casting (ยกเว้น component ทั้งโรงเรียน Conjuration/Necromancy กว้างกว่าเวอร์ชัน 2014) [M:3/4] [R:2/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Ghostly Flight (lv14, บิน+ทะลุสิ่งกีดขวาง) + Profane Casting (ยกเว้น component ทั้งโรงเรียน Conjuration/Necromancy กว้างกว่าเวอร์ชัน 2014) [M:3/4] [R:3/3] [B:2/3] |
 | **Versatility** | 7/10 (A) | ดาเมจ+control+survival+mobility ครบทุกมิติ เป็นเวอร์ชันที่ปรับปรุงรอบด้านกว่า The Undead 2014 [M:2/4] [R:2/3] [B:3/3] |
 
 ### Future You Patron (ValdaPlayerPack)
@@ -333,7 +333,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Grandfather Paradox (lv14, 10d6 Psychic + Stunned 1 นาทีถ้า fail save) เป็น nova เดี่ยวที่ทรงพลัง [M:3/4] [R:2/3] [B:2/3] |
+| **Damage** | 8/10 (A) | Grandfather Paradox (lv14, 10d6 Psychic + Stunned 1 นาทีถ้า fail save) เป็น nova เดี่ยวที่ทรงพลัง [M:3/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | Grandfather Paradox's Stun (1 นาที, save ทุกจบเทิร์น) เป็น control ที่แรงมากถ้า land ได้ [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 6/10 (B) | It Happened Like This ใช้แทนที่ D20 Test ของ **ตัวเองหรือ creature ที่เห็นก็ได้** — เท่ากับมอบ "ผลทอยที่บันทึกไว้" ให้ ally คนไหนก็ได้ในสถานการณ์วิกฤต [M:2/4] [R:2/3] [B:2/3] |
 | **Survivability** | 7/10 (A) | Expect an Ambush (lv10, Adv initiative + Resistance ดาเมจทุกชนิดในรอบแรกของการต่อสู้) บวก I Could Do With Fewer Scars (reaction +10 AC 2 ครั้ง/วัน) [M:2/4] [R:3/3] [B:2/3] |

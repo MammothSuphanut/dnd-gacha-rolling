@@ -62,8 +62,8 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Control** | 6/10 (B) | Hateful Arrowhead ปลดล็อก Ray of Enfeeblement ฟรี (debuff เบาๆ) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 7/10 (A) | Razortooth Bandages ปลดล็อก Cure Wounds ฟรี พร้อมบวก Investigator level เข้าไปในค่าฮีล [M:2/4] [R:2/3] [B:3/3] |
 | **Survivability** | 7/10 (A) | Warped Prism ปลดล็อก Shield ฟรี + Soul Jar ให้ temp HP (bonus action) และ Undead Fortitude (ตกลง 1 HP แทน 0 เมื่อควรตาย) [M:2/4] [R:2/3] [B:3/3] |
-| **Action Economy** | 7/10 (A) | ความสามารถ Soul Jar ทั้งหมดเป็น bonus action (temp HP, ฟื้น Trinket use) [M:2/4] [R:2/3] [B:2/3] |
-| **Utility** | 9/10 (S) | Magic Item Collection (lv10, สร้างไอเทมวิเศษฟรีทุก Long Rest จากลิสต์ทรงพลัง เช่น Carpet of Flying, Ring of Telekinesis) + Lich's Deathmask ปลดล็อก Dispel Magic/Counterspell ฟรี — utility toolkit ที่กว้างที่สุดในกลุ่ม [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | ความสามารถ Soul Jar ทั้งหมดเป็น bonus action (temp HP, ฟื้น Trinket use) [M:2/4] [R:3/3] [B:2/3] |
+| **Utility** | 9/10 (S) | Magic Item Collection (lv10, สร้างไอเทมวิเศษฟรีทุก Long Rest จากลิสต์ทรงพลัง เช่น Carpet of Flying, Ring of Telekinesis) + Lich's Deathmask ปลดล็อก Dispel Magic/Counterspell ฟรี — utility toolkit ที่กว้างที่สุดในกลุ่ม [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 8/10 (A) | เลือกได้จากคลัง Trinket/Relic ที่ครอบคลุมดาเมจ/ป้องกัน/ฮีล/utility พร้อมสลับไอเทมวิเศษได้ทุก Long Rest [M:2/4] [R:3/3] [B:3/3] |
 
 ### Archivist (ValdaSpire24)
@@ -88,12 +88,12 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Masonic Charm (ขยาย crit range เป็น 10-19 นาน 1 นาที) + Unfathomable Metal (2d6 radiant ต่อเนื่อง) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Masonic Charm (ขยาย crit range เป็น 10-19 นาน 1 นาที) + Unfathomable Metal (2d6 radiant ต่อเนื่อง) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ (Trinket ทั้งหมดเน้นตัวเอง) = เท่า baseline |
 | **Survivability** | 5/10 (B) | Off the Grid (lv14, reaction Invisible เมื่อโดนดาเมจ) [M:1/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Three-Headed Coin (การันตี Advantage ก่อนทอยได้ทันที) + Arcane Relics (Advantage บน Ready reaction) [M:2/4] [R:2/3] [B:2/3] |
-| **Utility** | 8/10 (A) | Connect the Dots (lv10, สลับ Expertise skill ได้ทุกครั้งที่พัก) + Off the Grid (แคส Nondetection ฟรี) [M:2/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Three-Headed Coin (การันตี Advantage ก่อนทอยได้ทันที) + Arcane Relics (Advantage บน Ready reaction) [M:2/4] [R:3/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Connect the Dots (lv10, สลับ Expertise skill ได้ทุกครั้งที่พัก) + Off the Grid (แคส Nondetection ฟรี) [M:2/4] [R:3/3] [B:3/3] |
 | **Versatility** | 7/10 (A) | ผสมดาเมจ/reliability/stealth ตามธีมทฤษฎีสมคบคิด [M:2/4] [R:2/3] [B:3/3] |
 
 ### Containment Specialist (ValdaSpire24Extras)
@@ -108,7 +108,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ (Black Bag เป็น personal storage) = เท่า baseline |
 | **Survivability** | 3/10 (C) | ไม่มี feature ป้องกันตัวเองใหม่ (Cover Story เป็น social ไม่ใช่ combat) = เท่า baseline |
 | **Action Economy** | 6/10 (B) | Trinket ทั้งหมดเป็น bonus action ที่ baseline มีโครงสร้างอยู่แล้ว = เท่า baseline |
-| **Utility** | 9/10 (S) | Black Bag (extradimensional storage พร้อม Antimagic Field) + Cinnabar Compass (Locate Object ฟรี) + Nothing to See Here (lv10, Modify Memory 3 เป้าฟรี) — investigation utility ที่ครบเครื่องที่สุดในกลุ่ม [M:3/4] [R:2/3] [B:3/3] |
+| **Utility** | 9/10 (S) | Black Bag (extradimensional storage พร้อม Antimagic Field) + Cinnabar Compass (Locate Object ฟรี) + Nothing to See Here (lv10, Modify Memory 3 เป้าฟรี) — investigation utility ที่ครบเครื่องที่สุดในกลุ่ม [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 7/10 (A) | ผสม control(lockdown)/social/utility ในธีมนักสืบสายลึกลับ [M:2/4] [R:2/3] [B:3/3] |
 
 ### Detective (ValdaSpire24)
@@ -118,12 +118,12 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Predictive Intuition (bonus action, +1d6 การโจมตีใส่เป้าจนถึงเทิร์นถัดไป, ไม่จำกัดเป้าที่ lv14) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Predictive Intuition (bonus action, +1d6 การโจมตีใส่เป้าจนถึงเทิร์นถัดไป, ไม่จำกัดเป้าที่ lv14) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Predictive Intuition ลบ 1d6 จากการโจมตีของเป้าใส่ตัวเองด้วย เป็น soft-debuff [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 5/10 (B) | Predictive Intuition ลดการโจมตีของเป้าใส่ตัวเองได้จริง (-1d6) [M:1/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Predictive Intuition เป็น bonus action ให้ผลต่อเนื่องจนจบเทิร์นถัดไป [M:2/4] [R:2/3] [B:2/3] |
-| **Utility** | 9/10 (S) | Interrogator's Instinct (lv10, ตรวจจับ cursed/possessed/charmed/frightened + Advantage แยกภาพลวงตา/คำโกหก) — investigative utility ครบเครื่อง [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Predictive Intuition เป็น bonus action ให้ผลต่อเนื่องจนจบเทิร์นถัดไป [M:2/4] [R:3/3] [B:2/3] |
+| **Utility** | 9/10 (S) | Interrogator's Instinct (lv10, ตรวจจับ cursed/possessed/charmed/frightened + Advantage แยกภาพลวงตา/คำโกหก) — investigative utility ครบเครื่อง [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 7/10 (A) | นักสืบ-นักต่อสู้ hybrid ที่ผสม damage-buff/debuff เข้ากับ investigation [M:2/4] [R:2/3] [B:3/3] |
 
 ### Exterminator (ValdaSpire24)
@@ -133,7 +133,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Mimic-Tooth Necklace (2d8 acid เสริม) + Monster Slayer (bonus action ตีเพิ่ม, Int mod ครั้ง/วัน) + Killer Instinct (lv14, ใช้ Exploit Weakness ได้ 2 ครั้ง/เทิร์นกับ 2 เป้า) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Mimic-Tooth Necklace (2d8 acid เสริม) + Monster Slayer (bonus action ตีเพิ่ม, Int mod ครั้ง/วัน) + Killer Instinct (lv14, ใช้ Exploit Weakness ได้ 2 ครั้ง/เทิร์นกับ 2 เป้า) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Silvered Edge (lv10, สลับ mastery property เป็น Sap/Vex ได้) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Silvered Shield (armor training medium+shield จาก light-only ของ baseline + ใช้ Int แทน Dex คำนวณ AC) + Gilded Dragon Scale (resistance ธาตุที่เลือก) [M:2/4] [R:2/3] [B:3/3] |
@@ -148,11 +148,11 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Sinister Emblem เลือกได้ Fist (natural weapon 1d10+Str) หรือ Shadow (pet โจมตีเองได้) บวก Broken Ankh (2d10 เสริม vs celestial/elemental/fiend) + Kick 'em While They're Down (extra 2d6 เมื่อมี Advantage) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Sinister Emblem เลือกได้ Fist (natural weapon 1d10+Str) หรือ Shadow (pet โจมตีเองได้) บวก Broken Ankh (2d10 เสริม vs celestial/elemental/fiend) + Kick 'em While They're Down (extra 2d6 เมื่อมี Advantage) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Horns option ปลดล็อก Charm Person ฟรี (2 ครั้ง/rest) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 6/10 (B) | Shadow option ใช้ Help action แทนได้ (bonus action) แต่เป็น utility เฉพาะทางแคบ = เท่า baseline |
 | **Survivability** | 5/10 (B) | Fist option ลดดาเมจ B/P/S จากอาวุธไม่วิเศษ 3 แต้มถาวร [M:2/4] [R:1/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Shadow option สั่งงานผ่าน bonus action ได้ทั้งเคลื่อนที่+โจมตี+Help — เท่ากับได้ผู้ช่วยตัวที่สอง [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Shadow option สั่งงานผ่าน bonus action ได้ทั้งเคลื่อนที่+โจมตี+Help — เท่ากับได้ผู้ช่วยตัวที่สอง [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 7/10 (A) | Hide the Body (ซ่อนหลักฐานอาชญากรรม) + Glass Demon's Eye (darkvision 120ft) เป็น utility เฉพาะทาง = ใกล้เท่า baseline |
 | **Versatility** | 8/10 (A) | 3 build ที่ต่างกันสิ้นเชิงจาก Sinister Emblem (tank-เมลี/caster/pet-summoner) ให้ toolkit กว้างมาก [M:2/4] [R:3/3] [B:3/3] |
 
@@ -163,12 +163,12 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Diabolical Barb ปลดล็อก Hellish Rebuke ฟรี + Hexagram Pendant ปลดล็อก Hex ฟรี + Infernal Bargain "Damage and Actions" (แลก necrotic dmg ตัวเองเป็น action เพิ่มสำหรับตีอีกครั้ง) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Diabolical Barb ปลดล็อก Hellish Rebuke ฟรี + Hexagram Pendant ปลดล็อก Hex ฟรี + Infernal Bargain "Damage and Actions" (แลก necrotic dmg ตัวเองเป็น action เพิ่มสำหรับตีอีกครั้ง) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Hex (debuff check) + Spiteful Distraction (bonus action, familiar บังคับ Disadvantage การโจมตีถัดไปของศัตรู) [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ (Fiendish Familiar เป็นของส่วนตัว) = เท่า baseline |
 | **Survivability** | 5/10 (B) | Infernal Bargain "Resistance and Vulnerability" ให้เลือก resistance 2 ธาตุ (แลกด้วย vulnerability 1 ธาตุที่ GM เลือก) [M:2/4] [R:1/3] [B:2/3] |
 | **Action Economy** | 8/10 (A) | Infernal Bargain's extra action (1 ครั้ง/เทิร์น แลกดาเมจ necrotic) + familiar ที่ลงมือเองได้อิสระ [M:3/4] [R:2/3] [B:3/3] |
-| **Utility** | 8/10 (A) | Binding Contract (lv10, Geas ฟรีแบบสัญญาเขียนละเอียดได้ 10 เงื่อนไข นานสูงสุด 90 วัน) + Blindsight bargain option [M:2/4] [R:2/3] [B:3/3] |
+| **Utility** | 8/10 (A) | Binding Contract (lv10, Geas ฟรีแบบสัญญาเขียนละเอียดได้ 10 เงื่อนไข นานสูงสุด 90 วัน) + Blindsight bargain option [M:2/4] [R:3/3] [B:3/3] |
 | **Versatility** | 8/10 (A) | Hybrid pet-summoner/caster/damage พร้อม build-defining choice จาก Infernal Bargain ทุกวัน [M:2/4] [R:3/3] [B:3/3] |
 
 ### Inquisitor (ValdaSpire24)
@@ -198,7 +198,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Support** | 9/10 (S) | Dooby Snack (temp HP+Advantage ให้ ally ที่กิน) + Split Up Gang (ให้ ally เคลื่อนที่ฟรีตอนใช้ Exploit Weakness) + Meddling Kids (lv14, reaction กด Disadvantage การโจมตีที่จะโดน ally ใกล้ตัว) — protector kit ที่หนาแน่นที่สุดในกลุ่ม [M:3/4] [R:3/3] [B:3/3] |
 | **Survivability** | 5/10 (B) | Cunning Companion (lv10, ได้ผล Dash/Disengage/Hide ฟรีตามที่สัตว์เลี้ยงทำ) [M:1/4] [R:2/3] [B:2/3] |
 | **Action Economy** | 8/10 (A) | Split Up Gang ไม่เสีย action เพิ่ม + Cunning Companion ได้ผลฟรีจาก action ของสัตว์เลี้ยง [M:2/4] [R:3/3] [B:3/3] |
-| **Utility** | 8/10 (A) | Bag of Traps (ไอเทม utility/trap หลายแบบ) + Magnifying Glass (Clue spell + ระบุรอยเท้า/ลายนิ้วมือ) [M:2/4] [R:2/3] [B:3/3] |
+| **Utility** | 8/10 (A) | Bag of Traps (ไอเทม utility/trap หลายแบบ) + Magnifying Glass (Clue spell + ระบุรอยเท้า/ลายนิ้วมือ) [M:2/4] [R:3/3] [B:3/3] |
 | **Versatility** | 8/10 (A) | ผสม support/control/utility ผ่านสัตว์เลี้ยง+trinket ในธีมนักสืบเด็ก [M:2/4] [R:3/3] [B:3/3] |
 
 ### Medium (ValdaSpire24)
@@ -208,12 +208,12 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Foretold Demise (แทนที่ damage die ด้วยผลทอย Foretelling ที่ล็อกไว้ล่วงหน้า — ใช้เป็นเลขสูงสุดได้) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Foretold Demise (แทนที่ damage die ด้วยผลทอย Foretelling ที่ล็อกไว้ล่วงหน้า — ใช้เป็นเลขสูงสุดได้) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
-| **Support** | 8/10 (A) | Foretelling ใช้แทน d20 test ของ**ใครก็ได้ที่เห็น**รวมถึง ally ได้ — การันตีผลสำคัญของเพื่อนร่วมทีมได้จริง [M:2/4] [R:2/3] [B:3/3] |
+| **Support** | 8/10 (A) | Foretelling ใช้แทน d20 test ของ**ใครก็ได้ที่เห็น**รวมถึง ally ได้ — การันตีผลสำคัญของเพื่อนร่วมทีมได้จริง [M:2/4] [R:3/3] [B:3/3] |
 | **Survivability** | 6/10 (B) | Foretelling ใช้แทน saving throw ของตัวเองได้ + Lucent Mirror (partial ethereal phase หนีได้) [M:2/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Foretelling roll ประกาศใช้ก่อนทอยแบบไม่เสีย action เลย [M:2/4] [R:2/3] [B:2/3] |
-| **Utility** | 9/10 (S) | Third Eye (lv14, แคส True Seeing ฟรี + Advantage การโจมตีแรกทุกเทิร์นระหว่างฤทธิ์) + Whispers from Beyond (lv10, คำใบ้จาก GM ฟรี) — divination utility ที่ทรงพลัง [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Foretelling roll ประกาศใช้ก่อนทอยแบบไม่เสีย action เลย [M:2/4] [R:3/3] [B:2/3] |
+| **Utility** | 9/10 (S) | Third Eye (lv14, แคส True Seeing ฟรี + Advantage การโจมตีแรกทุกเทิร์นระหว่างฤทธิ์) + Whispers from Beyond (lv10, คำใบ้จาก GM ฟรี) — divination utility ที่ทรงพลัง [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 8/10 (A) | Foretelling ใช้แทน d20 test ได้ทุกประเภททั้งของตัวเองและคนอื่น — ยืดหยุ่นแบบไม่ผูก build [M:2/4] [R:3/3] [B:3/3] |
 
 ### Occultist (ValdaSpire24)
@@ -223,12 +223,12 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | เข้าถึง cantrip/spell ของ Warlock (Eldritch Blast ที่แนะนำ) + Maleficium (lv14, Exploit Weakness → Bestow Curse ฟรีเป็น bonus action) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | เข้าถึง cantrip/spell ของ Warlock (Eldritch Blast ที่แนะนำ) + Maleficium (lv14, Exploit Weakness → Bestow Curse ฟรีเป็น bonus action) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 8/10 (A) | เข้าถึง control spell ของ Warlock (Hex, Charm Person) + Maleficium (Bestow Curse ผูกกับ Exploit Weakness) [M:3/4] [R:2/3] [B:3/3] |
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 3/10 (C) | ไม่มี feature ป้องกันตัวเองใหม่ = เท่า baseline |
 | **Action Economy** | 8/10 (A) | Eldritch Ruin (แคส cantrip Warlock เป็น bonus action, Int mod ครั้ง/วัน) + Maleficium (Bestow Curse ฟรีเป็น bonus action) [M:2/4] [R:3/3] [B:3/3] |
-| **Utility** | 9/10 (S) | Eyes of Another World (lv10, เห็นล่องหน/ระนาบวิญญาณ + รู้ว่าเป้าแคสสเปลได้ไหม + ระบุชนิด/ระนาบต้นกำเนิดของสิ่งมีชีวิตเหนือธรรมชาติ) — detection utility ครบเครื่อง [M:3/4] [R:2/3] [B:3/3] |
+| **Utility** | 9/10 (S) | Eyes of Another World (lv10, เห็นล่องหน/ระนาบวิญญาณ + รู้ว่าเป้าแคสสเปลได้ไหม + ระบุชนิด/ระนาบต้นกำเนิดของสิ่งมีชีวิตเหนือธรรมชาติ) — detection utility ครบเครื่อง [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 8/10 (A) | Hybrid Warlock-gish เต็มรูปแบบพร้อม detection utility [M:2/4] [R:3/3] [B:3/3] |
 
 ### Spy (ValdaSpire24)
@@ -238,12 +238,12 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Cloak and Dagger (extra Force dmg เท่า Investigator level ตอนเปิดฉากรบหรือมี Advantage) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Cloak and Dagger (extra Force dmg เท่า Investigator level ตอนเปิดฉากรบหรือมี Advantage) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | Martini Glass ปลดล็อก Charm Person ฟรี [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ (เน้นตัวเองเป็นสายลับเดี่ยว) = เท่า baseline |
 | **Survivability** | 5/10 (B) | Glass Dust (AoE Invisible รวมตัวเองได้) [M:1/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Glib (lv14, Influence action เป็น bonus action) [M:2/4] [R:2/3] [B:2/3] |
-| **Utility** | 9/10 (S) | Body Double (lv10, ปลอมตัวเป็นบุคคล/ศพที่แตะได้สมบูรณ์แบบ) + Horn-Rimmed Glasses (Disguise Self ฟรี) + Glib (แคส Glibness ฟรี) — spy toolkit ครบเครื่อง [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Glib (lv14, Influence action เป็น bonus action) [M:2/4] [R:3/3] [B:2/3] |
+| **Utility** | 9/10 (S) | Body Double (lv10, ปลอมตัวเป็นบุคคล/ศพที่แตะได้สมบูรณ์แบบ) + Horn-Rimmed Glasses (Disguise Self ฟรี) + Glib (แคส Glibness ฟรี) — spy toolkit ครบเครื่อง [M:3/4] [R:3/3] [B:3/3] |
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญสายลับ (social+stealth+opener damage) [M:2/4] [R:2/3] [B:3/3] |
 
 ### Time Operative (ValdaSpire24Extras)
@@ -253,7 +253,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Borrowed Time ให้ action พิเศษ (รวม Attack 1 ครั้ง) 1 ครั้ง/เทิร์น 2 ครั้ง/long rest — ดาเมจส่วนเพิ่มที่แท้จริงจาก extra action [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Borrowed Time ให้ action พิเศษ (รวม Attack 1 ครั้ง) 1 ครั้ง/เทิร์น 2 ครั้ง/long rest — ดาเมจส่วนเพิ่มที่แท้จริงจาก extra action [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 5/10 (B) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 6/10 (B) | ไม่มี feature เสริมทีมใหม่ (Rewind เป็นการรีรอลของตัวเอง) = เท่า baseline |
 | **Survivability** | 6/10 (B) | Rewind (bonus action รีรอล d20 test ที่ล้มเหลว รวม saving throw, Int mod ครั้ง/วัน) [M:2/4] [R:2/3] [B:2/3] |

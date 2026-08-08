@@ -48,7 +48,7 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | Close Quarters (reaction extra 1d6→3d6 ดาเมจทุกครั้งที่ตีเมลีโดน) บวก Controlled Footwork (lv18, ใช้ reaction ได้ 2 ครั้ง/รอบ — ทวีคูณจำนวนครั้งที่ trigger Close Quarters/Studied Response ได้) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | Close Quarters (reaction extra 1d6→3d6 ดาเมจทุกครั้งที่ตีเมลีโดน) บวก Controlled Footwork (lv18, ใช้ reaction ได้ 2 ครั้ง/รอบ — ทวีคูณจำนวนครั้งที่ trigger Close Quarters/Studied Response ได้) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 7/10 (A) | Close Quarters (Disadvantage การโจมตีถัดไปของเป้า) + Terrorize the Terrors (lv10, reaction-attack → Frightened) + Deadly Redirect (lv15, Disadvantage ทุกการโจมตีของเป้า) [M:2/4] [R:2/3] [B:3/3] |
 | **Support** | 4/10 (C) | True Grit ใช้ปลด Frightened ให้ ally ได้ผ่าน reaction-attack trigger — support ทางอ้อมเล็กน้อย [M:1/4] [R:1/3] [B:2/3] |
 | **Survivability** | 7/10 (A) | Equipped for Battle (heavy armor proficiency จาก medium-only ของ baseline) + True Grit (immune Frightened จาก Grimoire type + Advantage ต้าน Frightened ทั่วไป) [M:2/4] [R:2/3] [B:3/3] |
@@ -65,11 +65,11 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Synchronized Response (lv7, extra 1d6 ดาเมจทุกครั้งที่ reaction-attack นาน 1 นาทีหลังกินเนื้อ) [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Synchronized Response (lv7, extra 1d6 ดาเมจทุกครั้งที่ reaction-attack นาน 1 นาทีหลังกินเนื้อ) [M:2/4] [R:3/3] [B:3/3] |
 | **Control** | 3/10 (C) | ไม่สามารถยืนยันตัวเลือก control-based ใน Mutations ได้ = เท่า baseline |
 | **Support** | 6/10 (B) | Alchemical Decoctions (lv15) แปลง Mutation เป็นยาที่คนอื่นกินได้ — แบ่งปันบัฟให้ทีมได้จริง [M:2/4] [R:2/3] [B:2/3] |
 | **Survivability** | 6/10 (B) | Gnawing Hunger (lv10, temp HP เท่าครึ่ง/เต็มดาเมจที่สร้างเมื่อตีเมลีโดน, Int mod ครั้ง/rest) [M:2/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (A) | Acquired Taste (lv18, Advantage บนการโจมตีที่เป็น reaction หลังกินเนื้อ) เสริม reliability ให้ Studied Response ที่เป็นแกนหลักของ baseline [M:2/4] [R:2/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Acquired Taste (lv18, Advantage บนการโจมตีที่เป็น reaction หลังกินเนื้อ) เสริม reliability ให้ Studied Response ที่เป็นแกนหลักของ baseline [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 4/10 (C) | Alchemist's Supplies + Cook's Utensils proficiency เป็น utility เล็กน้อย [M:1/4] [R:1/3] [B:2/3] |
 | **Versatility** | 7/10 (A) | ระบบ Mutation ให้เลือกได้หลายแบบพร้อมกันตามชนิดสัตว์ที่กิน ปรับตัวได้ตามสถานการณ์แม้ไม่ทราบรายละเอียดเต็ม [M:2/4] [R:2/3] [B:3/3] |
 
@@ -80,7 +80,7 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 9/10 (S) | เข้าถึง spell list ของ Wizard (รวม blast spell) + Arcane Response (lv18, แคส spell ผ่าน Studied Response โดยไม่เสีย action เพิ่ม) [M:3/4] [R:2/3] [B:3/3] |
+| **Damage** | 9/10 (S) | เข้าถึง spell list ของ Wizard (รวม blast spell) + Arcane Response (lv18, แคส spell ผ่าน Studied Response โดยไม่เสีย action เพิ่ม) [M:3/4] [R:3/3] [B:3/3] |
 | **Control** | 6/10 (B) | เข้าถึง control spell ของ Wizard + Mage Hunter (lv7, Disadvantage บน Concentration save ของเป้า Grimoire type ที่โดนดาเมจ) [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 5/10 (B) | Magical Aegis (lv15, AoE 20ft) แจก Advantage บน save ต้าน spell ของ Grimoire type ให้ ally ด้วย [M:2/4] [R:2/3] [B:1/3] |
 | **Survivability** | 7/10 (A) | Arcane Interference (Advantage save ต้าน spell ของ Grimoire type) + free Counterspell (lv15) — anti-magic defense ที่ baseline ไม่มีเลย [M:2/4] [R:2/3] [B:3/3] |
@@ -97,7 +97,7 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 8/10 (A) | Trapper Gadgets น่าจะมีตัวเลือกดาเมจ (สอดคล้องธีมกับดัก) แต่ไม่ยืนยันได้เต็ม = ให้คะแนนแบบระมัดระวัง [M:2/4] [R:2/3] [B:3/3] |
+| **Damage** | 8/10 (A) | Trapper Gadgets น่าจะมีตัวเลือกดาเมจ (สอดคล้องธีมกับดัก) แต่ไม่ยืนยันได้เต็ม = ให้คะแนนแบบระมัดระวัง [M:3/4] [R:2/3] [B:3/3] |
 | **Control** | 5/10 (B) | Trapper Gadgets น่าจะมีตัวเลือก control (เช่น net/caltrops) แต่ไม่ยืนยันได้เต็ม [M:2/4] [R:1/3] [B:2/3] |
 | **Support** | 3/10 (C) | ไม่สามารถยืนยัน ally-support ที่ชัดเจนได้ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Agile Response (lv10, reaction กด Disadvantage ผู้โจมตีเมลี + ขยับฟรีครึ่ง speed) + Monster-Hide Armor (lv15, เกราะที่คราฟต์เองพร้อม modification 2 ช่อง) [M:2/4] [R:2/3] [B:3/3] |

@@ -110,7 +110,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 |---|---|---|
 | **Damage** | 7/10 (A) | Dreadful Strikes ให้ extra 1d4→1d6 Psychic dmg ทุกครั้งที่ตีโดน "once per turn" แบบไม่จำกัดจำนวนครั้ง/วัน — magnitude กลางแต่ reliability สูงมาก [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 6/10 (B) | Beguiling Twist (lv7) ให้ reaction บังคับเป้าในระยะ 120ft เซฟ Wis หรือโดน Charmed/Frightened 1 นาที เมื่อตัวเองหรือพวกพ้องเซฟผ่านสำเร็จ [M:2/4] [R:2/3] [B:2/3] |
-| **Support** | 2/10 (D) | Misty Wanderer (lv15) พาพวกพ้อง 1 ตัวเทเลพอร์ตไปด้วยตอน cast Misty Step — support แบบแคบมาก [M:1/4] [R:1/3] [B:1/3] |
+| **Support** | 2/10 (D) | Misty Wanderer (lv15) พาพวกพ้อง 1 ตัวเทเลพอร์ตไปด้วยตอน cast Misty Step — support แบบแคบมาก [M:1/4] [R:1/3] [B:0/3] |
 | **Survivability** | 7/10 (A) | Beguiling Twist ให้ Advantage เซฟกัน/หลุด Charmed/Frightened แบบถาวร — defensive tech แคบแต่ใช้ได้จริง [M:2/4] [R:2/3] [B:3/3] |
 | **Action Economy** | 4/10 (C) | ไม่มีฟีเจอร์ประหยัด action พิเศษเพิ่มจาก baseline = เท่า baseline |
 | **Utility** | 9/10 (S) | Fey Wanderer Spells ผูก Charm Person/Misty Step/Summon Fey/Dimension Door/Mislead ติดตัวถาวร บวก Fey Reinforcements (Summon Fey ฟรี 1/วัน ไม่เสีย concentration ได้) และ Misty Wanderer (Misty Step ฟรีหลายครั้ง/วัน พาเพื่อนไปด้วย) [M:3/4] [R:3/3] [B:3/3] |
@@ -123,7 +123,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Momentum ให้ extra 1d6→2d6 dmg บนการโจมตีถัดไปหลังเคลื่อนที่ผ่านเงื่อนไข (ทะลุช่อง/ออกจาก reach/เดิน 15ft+) ไม่จำกัดจำนวนครั้ง/วัน [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Momentum ให้ extra 1d6→2d6 dmg บนการโจมตีถัดไปหลังเคลื่อนที่ผ่านเงื่อนไข (ทะลุช่อง/ออกจาก reach/เดิน 15ft+) ไม่จำกัดจำนวนครั้ง/วัน [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 3/10 (C) | ไม่มี control feature ใหม่ = เท่า baseline |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Evasive Fighter (+2 AC ชั่วคราวเมื่อใช้ technique) + Nimble Dodge (lv15, reaction ขยับครึ่ง speed หนี AoE save) [M:2/4] [R:2/3] [B:3/3] |
@@ -168,7 +168,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 6/10 (B) | Opportunity attack ผ่าน Nobody Move! (reaction เมื่อพวกพ้อง trigger OA) และ No Seriously, Don't Move! (lv11, ตีได้ 2 ครั้งตอนทำ OA) เป็นดาเมจแบบมีเงื่อนไข ต้องพึ่งพวกพ้อง provoke ก่อน [M:2/4] [R:1/3] [B:2/3] |
+| **Damage** | 6/10 (B) | Opportunity attack ผ่าน Nobody Move! (reaction เมื่อพวกพ้อง trigger OA) และ No Seriously, Don't Move! (lv11, ตีได้ 2 ครั้งตอนทำ OA) เป็นดาเมจแบบมีเงื่อนไข ต้องพึ่งพวกพ้อง provoke ก่อน [M:2/4] [R:1/3] [B:3/3] |
 | **Control** | 3/10 (C) | ไม่มี control feature ใหม่โดยตรง (Get Out of Dodge มี shove เป็นแค่ตัวเลือกย่อย) = เท่า baseline |
 | **Support** | 2/10 (D) | Merry Confederates ให้ advantage Stealth แก่ทุกคนที่ซุ่มด้วยกัน 3+ คน — support แคบ ต้องมีเงื่อนไขจำนวนคน [M:1/4] [R:1/3] [B:0/3] |
 | **Survivability** | 7/10 (A) | Get Out of Dodge (lv15) ให้เลือก 2 ผลจาก Disengage ที่อัพเกรดแล้ว (Dash ฟรี, ใช้ของ, โจมตี, shove, ครึ่งดาเมจตกและกระโดดคู่) — เครื่องมือหนีที่ยืดหยุ่นมาก [M:2/4] [R:2/3] [B:3/3] |
@@ -228,7 +228,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Slayer's Prey (bonus action mark, extra 1d6 dmg ครั้งแรกที่ตีโดนแต่ละเทิร์น จนกว่าจะพัก) เป็น magnitude กลางแต่ reliable ตลอดการต่อสู้ [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Slayer's Prey (bonus action mark, extra 1d6 dmg ครั้งแรกที่ตีโดนแต่ละเทิร์น จนกว่าจะพัก) เป็น magnitude กลางแต่ reliable ตลอดการต่อสู้ [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 7/10 (A) | Magic-User's Nemesis (lv11, reaction ยับยั้งสเปลล์/เทเลพอร์ตของศัตรูในระยะ 60ft, เซฟ Wis) + สเปลล์ list ที่มี Banishment และ Hold Monster ติดตัวถาวร [M:3/4] [R:2/3] [B:2/3] |
 | **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่ = เท่า baseline |
 | **Survivability** | 7/10 (A) | Supernatural Defense (+1d6 เซฟ/หลุด grapple เมื่อโดน prey บังคับ) + Slayer's Counter (lv15, reaction ตีโต้กลับก่อนเซฟ ถ้าตีโดน เซฟสำเร็จอัตโนมัติ) [M:2/4] [R:2/3] [B:3/3] |
@@ -273,7 +273,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| **Damage** | 7/10 (A) | Gathered Swarm ให้เลือก extra 1d6→1d8 piercing dmg ทุกครั้งที่ตีโดน (once/turn ไม่จำกัดครั้ง/วัน) [M:2/4] [R:2/3] [B:2/3] |
+| **Damage** | 7/10 (A) | Gathered Swarm ให้เลือก extra 1d6→1d8 piercing dmg ทุกครั้งที่ตีโดน (once/turn ไม่จำกัดครั้ง/วัน) [M:2/4] [R:3/3] [B:2/3] |
 | **Control** | 6/10 (B) | Gathered Swarm เลือกดันเป้า 15ft (เซฟ Str) แทนดาเมจได้ บวก Mighty Swarm (lv11) เพิ่ม Prone ให้เป้าที่เซฟพลาด + สเปลล์ list มี Web/Insect Plague [M:2/4] [R:2/3] [B:2/3] |
 | **Support** | 0/10 (D) | Gathered Swarm ทุกทางเลือกกระทบแค่ตัวเองหรือศัตรู ไม่มีที่เสริมพวกพ้อง = เท่า baseline |
 | **Survivability** | 7/10 (A) | Writhing Tide (bonus action บินได้ 10ft, Prof bonus ครั้ง/วัน) + Swarming Dispersal (lv15, reaction resistance + เทเลพอร์ตหนี 30ft, Prof bonus ครั้ง/วัน) [M:2/4] [R:2/3] [B:3/3] |
