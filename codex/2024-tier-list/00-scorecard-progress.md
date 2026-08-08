@@ -82,395 +82,395 @@
 
 ### Artificer (6)
 
-- [ ] Alchemist
-- [ ] Armorer
-- [ ] Artillerist
-- [ ] Battle Smith
-- [ ] Cartographer
-- [ ] Reanimator
+- [x] Alchemist
+- [x] Armorer
+- [x] Artillerist
+- [x] Battle Smith
+- [x] Cartographer
+- [x] Reanimator
 
 ### Barbarian (21)
 
-- [ ] Path of Heavy Metal
-- [ ] Path of the Ancestral Guardian
-- [ ] Path of the Battlerager
-- [ ] Path of the Beast
-- [ ] Path of the Berserker
-- [ ] Path of the Carrion Raven
-- [ ] Path of the Colossus
-- [ ] Path of the Fin
-- [ ] Path of the Fractured
-- [ ] Path of the Giant
-- [ ] Path of the Muscle Wizard
-- [ ] Path of the Primal Spirit
-- [ ] Path of the Rage Mage
-- [ ] Path of the Storm Herald
-- [ ] Path of the Totem Warrior
-- [ ] Path of the Wild Heart
-- [ ] Path of the World Tree
-- [ ] Path of the Wrathful Dead
-- [ ] Path of the Zealot
-- [ ] Path of Tranquility
-- [ ] Path of Wild Magic
+- [x] Path of Heavy Metal
+- [x] Path of the Ancestral Guardian
+- [x] Path of the Battlerager
+- [x] Path of the Beast
+- [x] Path of the Berserker
+- [x] Path of the Carrion Raven
+- [x] Path of the Colossus
+- [x] Path of the Fin
+- [x] Path of the Fractured
+- [x] Path of the Giant
+- [x] Path of the Muscle Wizard
+- [x] Path of the Primal Spirit
+- [x] Path of the Rage Mage
+- [x] Path of the Storm Herald
+- [x] Path of the Totem Warrior
+- [x] Path of the Wild Heart
+- [x] Path of the World Tree
+- [x] Path of the Wrathful Dead
+- [x] Path of the Zealot
+- [x] Path of Tranquility
+- [x] Path of Wild Magic
 
 ### Bard (19)
 
-- [ ] College of Adventurers
-- [ ] College of Cantors
-- [ ] College of Creation
-- [ ] College of Dance
-- [ ] College of Eloquence
-- [ ] College of Fools
-- [ ] College of Glamour
-- [ ] College of Graffiti
-- [ ] College of Jesters
-- [ ] College of Lore
-- [ ] College of Masks
-- [ ] College of Requiems
-- [ ] College of Romance
-- [ ] College of Spirits
-- [ ] College of Swords
-- [ ] College of the Mad God
-- [ ] College of the Moon
-- [ ] College of Valor
-- [ ] College of Whispers
+- [x] College of Adventurers
+- [x] College of Cantors
+- [x] College of Creation
+- [x] College of Dance
+- [x] College of Eloquence
+- [x] College of Fools
+- [x] College of Glamour
+- [x] College of Graffiti
+- [x] College of Jesters
+- [x] College of Lore
+- [x] College of Masks
+- [x] College of Requiems
+- [x] College of Romance
+- [x] College of Spirits
+- [x] College of Swords
+- [x] College of the Mad God
+- [x] College of the Moon
+- [x] College of Valor
+- [x] College of Whispers
 
 ### Captain (29)
 
-- [ ] Adrenaline Junkie
-- [ ] Brigand
-- [ ] Daggermark
-- [ ] Demon Banner — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
-- [ ] Demon Brand
-- [ ] Dragon Banner
-- [ ] Eagle Banner
-- [ ] Feylost
-- [ ] Gourmand
-- [ ] Holy Icon
-- [ ] Houndmaster
-- [ ] Jolly Roger
-- [ ] Jolly Roger Banner — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
-- [ ] Knight Errant
-- [ ] Lion Banner
-- [ ] Plague Doctor
-- [ ] Pugilist
-- [ ] Ram Banner
-- [ ] Raven Banner
-- [ ] Rōnin
-- [ ] Siegeball Banner — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
-- [ ] Siegeball Jersey
-- [ ] Skull Banner
-- [ ] Star-Spangled Banner
-- [ ] Tower Banner
-- [ ] Treant Banner
-- [ ] Troubadour
-- [ ] Turtle Banner
-- [ ] Yellow Sign
+- [x] Adrenaline Junkie
+- [x] Brigand
+- [x] Daggermark
+- [x] Demon Banner
+- [x] Demon Brand
+- [x] Dragon Banner
+- [x] Eagle Banner
+- [x] Feylost
+- [x] Gourmand
+- [x] Holy Icon
+- [x] Houndmaster
+- [x] Jolly Roger
+- [x] Jolly Roger Banner
+- [x] Knight Errant
+- [x] Lion Banner
+- [x] Plague Doctor
+- [x] Pugilist
+- [x] Ram Banner
+- [x] Raven Banner
+- [x] Rōnin
+- [x] Siegeball Banner
+- [x] Siegeball Jersey
+- [x] Skull Banner
+- [x] Star-Spangled Banner
+- [x] Tower Banner
+- [x] Treant Banner
+- [x] Troubadour
+- [x] Turtle Banner
+- [x] Yellow Sign
 
 ### Channeler (4)
 
-- [ ] Order of Blinknights
-- [ ] Order of Dimensional Magi
-- [ ] Order of Titanfists
-- [ ] Order of Wild Hunters
+- [x] Order of Blinknights
+- [x] Order of Dimensional Magi
+- [x] Order of Titanfists
+- [x] Order of Wild Hunters
 
 ### Cleric (27)
 
-- [ ] Ambition Domain
-- [ ] Arcana Domain
-- [ ] Death Domain
-- [ ] Destruction Domain
-- [ ] Eldritch Domain
-- [ ] Forge Domain
-- [ ] Grave Domain
-- [ ] Inquisition Domain
-- [ ] Knowledge Domain
-- [ ] Life Domain
-- [ ] Light Domain
-- [ ] Madness Domain
-- [ ] Nature Domain
-- [ ] Order Domain
-- [ ] Peace Domain
-- [ ] Pestilence Domain
-- [ ] Purification Domain
-- [ ] Rum Domain
-- [ ] Solidarity Domain
-- [ ] Strength Domain
-- [ ] Tempest Domain
-- [ ] Travel Domain
-- [ ] Trickery Domain
-- [ ] Twilight Domain
-- [ ] War Domain
-- [ ] Wealth Domain
-- [ ] Zeal Domain
+- [x] Ambition Domain
+- [x] Arcana Domain
+- [x] Death Domain
+- [x] Destruction Domain
+- [x] Eldritch Domain
+- [x] Forge Domain
+- [x] Grave Domain
+- [x] Inquisition Domain
+- [x] Knowledge Domain
+- [x] Life Domain
+- [x] Light Domain
+- [x] Madness Domain
+- [x] Nature Domain
+- [x] Order Domain
+- [x] Peace Domain
+- [x] Pestilence Domain
+- [x] Purification Domain
+- [x] Rum Domain
+- [x] Solidarity Domain
+- [x] Strength Domain
+- [x] Tempest Domain
+- [x] Travel Domain
+- [x] Trickery Domain
+- [x] Twilight Domain
+- [x] War Domain
+- [x] Wealth Domain
+- [x] Zeal Domain
 
 ### Craftsman (11)
 
-- [ ] Arcane Maesters' Guild
-- [ ] Armigers' Guild
-- [ ] Bladeworkers' Guild
-- [ ] Calibarons' Guild
-- [ ] Clockworkers' Guild
-- [ ] Courtiers' Guild
-- [ ] Forgeknights' Guild
-- [ ] Mechanauts' Guild
-- [ ] Thunderlords' Guild
-- [ ] Trappers' Guild
-- [ ] Wintercarvers' Guild
+- [x] Arcane Maesters' Guild
+- [x] Armigers' Guild
+- [x] Bladeworkers' Guild
+- [x] Calibarons' Guild
+- [x] Clockworkers' Guild
+- [x] Courtiers' Guild
+- [x] Forgeknights' Guild
+- [x] Mechanauts' Guild
+- [x] Thunderlords' Guild
+- [x] Trappers' Guild
+- [x] Wintercarvers' Guild
 
 ### Dancer (14)
 
-- [ ] Acrobat
-- [ ] Cheerleader
-- [ ] Contortionist
-- [ ] Courtesan
-- [ ] Danseur Macabre
-- [ ] Dramaturge
-- [ ] Fencer
-- [ ] Fey Ballerina
-- [ ] Fire Dancer
-- [ ] Harlequin
-- [ ] Marionettist
-- [ ] Mime
-- [ ] Shadow Dancer
-- [ ] Steelsinger
+- [x] Acrobat
+- [x] Cheerleader
+- [x] Contortionist
+- [x] Courtesan
+- [x] Danseur Macabre
+- [x] Dramaturge
+- [x] Fencer
+- [x] Fey Ballerina
+- [x] Fire Dancer
+- [x] Harlequin
+- [x] Marionettist
+- [x] Mime
+- [x] Shadow Dancer
+- [x] Steelsinger
 
 ### Druid (17)
 
-- [ ] Circle of Blood
-- [ ] Circle of Dreams
-- [ ] Circle of Entropy
-- [ ] Circle of Mutation
-- [ ] Circle of Spores
-- [ ] Circle of Stars
-- [ ] Circle of Stones
-- [ ] Circle of the City
-- [ ] Circle of the Deep
-- [ ] Circle of the Fist
-- [ ] Circle of the Land
-- [ ] Circle of the Moon
-- [ ] Circle of the Sea
-- [ ] Circle of the Shepherd
-- [ ] Circle of the Wyrm
-- [ ] Circle of Vermin
-- [ ] Circle of Wildfire
+- [x] Circle of Blood
+- [x] Circle of Dreams
+- [x] Circle of Entropy
+- [x] Circle of Mutation
+- [x] Circle of Spores
+- [x] Circle of Stars
+- [x] Circle of Stones
+- [x] Circle of the City
+- [x] Circle of the Deep
+- [x] Circle of the Fist
+- [x] Circle of the Land
+- [x] Circle of the Moon
+- [x] Circle of the Sea
+- [x] Circle of the Shepherd
+- [x] Circle of the Wyrm
+- [x] Circle of Vermin
+- [x] Circle of Wildfire
 
 ### Fighter (21)
 
-- [ ] Arcane Archer
-- [ ] Banneret
-- [ ] Battle Master
-- [ ] Blade Breaker
-- [ ] Bone Knight
-- [ ] Brawler
-- [ ] Bulwark Warrior
-- [ ] Cavalier
-- [ ] Celestial Lancer
-- [ ] Champion
-- [ ] Corsair
-- [ ] Dungeoneer
-- [ ] Echo Knight
-- [ ] Eldritch Knight
-- [ ] Living Crucible
-- [ ] Mage Hand Magus
-- [ ] Nightwatcher
-- [ ] Psi Warrior
-- [ ] Purple Dragon Knight (Banneret)
-- [ ] Rune Knight
-- [ ] Samurai
+- [x] Arcane Archer
+- [x] Banneret
+- [x] Battle Master
+- [x] Blade Breaker
+- [x] Bone Knight
+- [x] Brawler
+- [x] Bulwark Warrior
+- [x] Cavalier
+- [x] Celestial Lancer
+- [x] Champion
+- [x] Corsair
+- [x] Dungeoneer
+- [x] Echo Knight
+- [x] Eldritch Knight
+- [x] Living Crucible
+- [x] Mage Hand Magus
+- [x] Nightwatcher
+- [x] Psi Warrior
+- [x] Purple Dragon Knight (Banneret)
+- [x] Rune Knight
+- [x] Samurai
 
 ### Gunslinger (34)
 
-- [ ] Adrenaline Junkie
-- [ ] Big Game Hunter
-- [ ] Brigand
-- [ ] Covert Operative
-- [ ] Daggermark
-- [ ] Deadeye
-- [ ] Dragon Banner
-- [ ] Eagle Banner
-- [ ] Feylost
-- [ ] Gourmand
-- [ ] Grenadier
-- [ ] Gun Tank
-- [ ] Gun-Ko Master
-- [ ] Gundead
-- [ ] High Roller
-- [ ] Houndmaster
-- [ ] Janissary
-- [ ] Jolly Roger
-- [ ] Knight Errant
-- [ ] Musketeer
-- [ ] Pistolero
-- [ ] Plague Doctor
-- [ ] Pugilist
-- [ ] Rōnin
-- [ ] Secret Agent
-- [ ] Sharpshooter
-- [ ] Siegeball Jersey
-- [ ] Spellslinger
-- [ ] Storm Gunner
-- [ ] Trick Shot
-- [ ] Troubadour
-- [ ] Twice-Damned
-- [ ] White Hat
-- [ ] Yellow Sign
+- [x] Adrenaline Junkie
+- [x] Big Game Hunter
+- [x] Brigand
+- [x] Covert Operative
+- [x] Daggermark
+- [x] Deadeye
+- [x] Dragon Banner
+- [x] Eagle Banner
+- [x] Feylost
+- [x] Gourmand
+- [x] Grenadier
+- [x] Gun Tank
+- [x] Gun-Ko Master
+- [x] Gundead
+- [x] High Roller
+- [x] Houndmaster
+- [x] Janissary
+- [x] Jolly Roger
+- [x] Knight Errant
+- [x] Musketeer
+- [x] Pistolero
+- [x] Plague Doctor
+- [x] Pugilist
+- [x] Rōnin
+- [x] Secret Agent
+- [x] Sharpshooter
+- [x] Siegeball Jersey
+- [x] Spellslinger
+- [x] Storm Gunner
+- [x] Trick Shot
+- [x] Troubadour
+- [x] Twice-Damned
+- [x] White Hat
+- [x] Yellow Sign
 
 ### Investigator (14)
 
-- [ ] Antiquarian
-- [ ] Archivist
-- [ ] Conspiracy Theorist
-- [ ] Containment Specialist
-- [ ] Detective
-- [ ] Exterminator
-- [ ] Infernal Agent — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
-- [ ] Infernum
-- [ ] Inquisitor
-- [ ] Kid Sleuth
-- [ ] Medium
-- [ ] Occultist
-- [ ] Spy
-- [ ] Time Operative
+- [x] Antiquarian
+- [x] Archivist
+- [x] Conspiracy Theorist
+- [x] Containment Specialist
+- [x] Detective
+- [x] Exterminator
+- [x] Infernal Agent
+- [x] Infernum
+- [x] Inquisitor
+- [x] Kid Sleuth
+- [x] Medium
+- [x] Occultist
+- [x] Spy
+- [x] Time Operative
 
 ### Martyr (14)
 
-- [ ] Burden of Anonymity
-- [ ] Burden of Ascension
-- [ ] Burden of Atonement
-- [ ] Burden of Calamity
-- [ ] Burden of Discord
-- [ ] Burden of Fame
-- [ ] Burden of Levity
-- [ ] Burden of Mercy
-- [ ] Burden of Odyssey
-- [ ] Burden of Rebirth
-- [ ] Burden of Revolution
-- [ ] Burden of the End
-- [ ] Burden of Truth
-- [ ] Burden of Tyranny
+- [x] Burden of Anonymity
+- [x] Burden of Ascension
+- [x] Burden of Atonement
+- [x] Burden of Calamity
+- [x] Burden of Discord
+- [x] Burden of Fame
+- [x] Burden of Levity
+- [x] Burden of Mercy
+- [x] Burden of Odyssey
+- [x] Burden of Rebirth
+- [x] Burden of Revolution
+- [x] Burden of the End
+- [x] Burden of Truth
+- [x] Burden of Tyranny
 
 ### Monk (20)
 
-- [ ] Bow
-- [ ] Flagellant
-- [ ] Warrior of Mercy — ⚠️ tier-list ยังใช้ชื่อ 2014 เดิม (ต้องอัปเดต heading ในไฟล์ก่อน)
-- [ ] Warrior of Pride
-- [ ] Warrior of Regret
-- [ ] Warrior of Shadow — ⚠️ tier-list ยังใช้ชื่อ 2014 เดิม (ต้องอัปเดต heading ในไฟล์ก่อน)
-- [ ] Warrior of the Elements
-- [ ] Warrior of the Leaden Crown
-- [ ] Warrior of the Open Hand — ⚠️ tier-list ยังใช้ชื่อ 2014 เดิม (ต้องอัปเดต heading ในไฟล์ก่อน)
-- [ ] Warrior of the Street
-- [ ] Way of the Ascendant Dragon
-- [ ] Way of the Astral Self
-- [ ] Way of the Drunken Master
-- [ ] Way of the Four Elements
-- [ ] Way of the Four Fists
-- [ ] Way of the Kensei
-- [ ] Way of the Long Death
-- [ ] Way of the Mask
-- [ ] Way of the Rose
-- [ ] Way of the Sun Soul
+- [x] Bow
+- [x] Flagellant
+- [x] Warrior of Mercy
+- [x] Warrior of Pride
+- [x] Warrior of Regret
+- [x] Warrior of Shadow
+- [x] Warrior of the Elements
+- [x] Warrior of the Leaden Crown
+- [x] Warrior of the Open Hand
+- [x] Warrior of the Street
+- [x] Way of the Ascendant Dragon
+- [x] Way of the Astral Self
+- [x] Way of the Drunken Master
+- [x] Way of the Four Elements
+- [x] Way of the Four Fists
+- [x] Way of the Kensei
+- [x] Way of the Long Death
+- [x] Way of the Mask
+- [x] Way of the Rose
+- [x] Way of the Sun Soul
 
 ### Monster Hunter (4)
 
-- [ ] Carver Guild
-- [ ] Devourer Guild
-- [ ] Occultist Guild
-- [ ] Trapper Guild
+- [x] Carver Guild
+- [x] Devourer Guild
+- [x] Occultist Guild
+- [x] Trapper Guild
 
 ### Mystic (6)
 
-- [ ] Order of the Avatar
-- [ ] Order of the Awakened
-- [ ] Order of the Immortal
-- [ ] Order of the Nomad
-- [ ] Order of the Soul Knife
-- [ ] Order of the Wu Jen
+- [x] Order of the Avatar
+- [x] Order of the Awakened
+- [x] Order of the Immortal
+- [x] Order of the Nomad
+- [x] Order of the Soul Knife
+- [x] Order of the Wu Jen
 
 ### Necromancer (14)
 
-- [ ] Black Rider
-- [ ] Blood Ascendant
-- [ ] Corpse Florist
-- [ ] Crone
-- [ ] Dead Mist Acolyte
-- [ ] Death Knight
-- [ ] Necrodancer
-- [ ] Overlord
-- [ ] Pale Master
-- [ ] Pharaoh
-- [ ] Plague Lord
-- [ ] Reanimator
-- [ ] Reaper
-- [ ] Toymaker
+- [x] Black Rider
+- [x] Blood Ascendant
+- [x] Corpse Florist
+- [x] Crone
+- [x] Dead Mist Acolyte
+- [x] Death Knight
+- [x] Necrodancer
+- [x] Overlord
+- [x] Pale Master
+- [x] Pharaoh
+- [x] Plague Lord
+- [x] Reanimator
+- [x] Reaper
+- [x] Toymaker
 
 ### Paladin (19)
 
-- [ ] Oath of Conquest
-- [ ] Oath of Devotion
-- [ ] Oath of Eternal Night
-- [ ] Oath of Glory
-- [ ] Oath of Heresy
-- [ ] Oath of Pestilence
-- [ ] Oath of Redemption
-- [ ] Oath of Revelry
-- [ ] Oath of Slaughter
-- [ ] Oath of Storms
-- [ ] Oath of the Ancients
-- [ ] Oath of the Crown
-- [ ] Oath of the Noble Genies
-- [ ] Oath of The Sun
-- [ ] Oath of the Watchers
-- [ ] Oath of Vengeance
-- [ ] Oath of Winter
-- [ ] Oath of Zeal
-- [ ] Oathbreaker
+- [x] Oath of Conquest
+- [x] Oath of Devotion
+- [x] Oath of Eternal Night
+- [x] Oath of Glory
+- [x] Oath of Heresy
+- [x] Oath of Pestilence
+- [x] Oath of Redemption
+- [x] Oath of Revelry
+- [x] Oath of Slaughter
+- [x] Oath of Storms
+- [x] Oath of the Ancients
+- [x] Oath of the Crown
+- [x] Oath of the Noble Genies
+- [x] Oath of The Sun
+- [x] Oath of the Watchers
+- [x] Oath of Vengeance
+- [x] Oath of Winter
+- [x] Oath of Zeal
+- [x] Oathbreaker
 
 ### Ranger (19)
 
-- [ ] Beast Master
-- [ ] Beastborne
-- [ ] Drakewarden
-- [ ] Fey Wanderer
-- [ ] Freerunner
-- [ ] Gloom Stalker
-- [ ] Green Reaper
-- [ ] Highwayman
-- [ ] Hollow Warden
-- [ ] Horizon Walker
-- [ ] Hunter
-- [ ] Monster Slayer
-- [ ] Primordial Archer
-- [ ] Spellbreaker
-- [ ] Swarmkeeper
-- [ ] Trophy Hunter
-- [ ] Vermin Lord
-- [ ] Vigilante
-- [ ] Winter Walker
+- [x] Beast Master
+- [x] Beastborne
+- [x] Drakewarden
+- [x] Fey Wanderer
+- [x] Freerunner
+- [x] Gloom Stalker
+- [x] Green Reaper
+- [x] Highwayman
+- [x] Hollow Warden
+- [x] Horizon Walker
+- [x] Hunter
+- [x] Monster Slayer
+- [x] Primordial Archer
+- [x] Spellbreaker
+- [x] Swarmkeeper
+- [x] Trophy Hunter
+- [x] Vermin Lord
+- [x] Vigilante
+- [x] Winter Walker
 
 ### Rogue (19)
 
-- [ ] Arachnoid Stalker — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
-- [ ] Arcane Trickster
-- [ ] Assassin
-- [ ] Enforcer
-- [ ] Grifter
-- [ ] Highway Rider
-- [ ] Inquisitive
-- [ ] Mastermind
-- [ ] Misfortune Bringer
-- [ ] Phantom
-- [ ] Sanguine Thief
-- [ ] Scion of the Three
-- [ ] Scout
-- [ ] Shadow Master
-- [ ] Soulknife
-- [ ] Swashbuckler
-- [ ] Temporal Trickster
-- [ ] Thief
-- [ ] Titan Slayer
+- [x] Arachnoid Stalker — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
+- [x] Arcane Trickster
+- [x] Assassin
+- [x] Enforcer
+- [x] Grifter
+- [x] Highway Rider
+- [x] Inquisitive
+- [x] Mastermind
+- [x] Misfortune Bringer
+- [x] Phantom
+- [x] Sanguine Thief
+- [x] Scion of the Three
+- [x] Scout
+- [x] Shadow Master
+- [x] Soulknife
+- [x] Swashbuckler
+- [x] Temporal Trickster
+- [x] Thief
+- [x] Titan Slayer
 
 ### Sacred Knight (6)
 
@@ -483,146 +483,146 @@
 
 ### Sorcerer (20)
 
-- [ ] Aberrant Mind / Aberrant Sorcery
-- [ ] Apocalypse Sorcery
-- [ ] Clockwork Soul / Clockwork Sorcery
-- [ ] Divine Soul
-- [ ] Draconic Bloodline / Draconic Sorcery
-- [ ] Emotion Lord
-- [ ] Haunted Sorcery
-- [ ] Lunar Sorcery
-- [ ] Mirrorkin
-- [ ] Oozemaster
-- [ ] Pyromancer
-- [ ] Reincarnated Hero
-- [ ] Shadow Magic / Shadow Sorcery
-- [ ] Spellfire Sorcery
-- [ ] Spiritborn
-- [ ] Storm Sorcery
-- [ ] The Ruined Flame — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
-- [ ] Toon Magic
-- [ ] Wild Magic / Wild Magic Sorcery
-- [ ] Wretched Bloodline Sorcery
+- [x] Aberrant Mind / Aberrant Sorcery
+- [x] Apocalypse Sorcery
+- [x] Clockwork Soul / Clockwork Sorcery
+- [x] Divine Soul
+- [x] Draconic Bloodline / Draconic Sorcery
+- [x] Emotion Lord
+- [x] Haunted Sorcery
+- [x] Lunar Sorcery
+- [x] Mirrorkin
+- [x] Oozemaster
+- [x] Pyromancer
+- [x] Reincarnated Hero
+- [x] Shadow Magic / Shadow Sorcery
+- [x] Spellfire Sorcery
+- [x] Spiritborn
+- [x] Storm Sorcery
+- [x] The Ruined Flame — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
+- [x] Toon Magic
+- [x] Wild Magic / Wild Magic Sorcery
+- [x] Wretched Bloodline Sorcery
 
 ### Vagabond (18)
 
-- [ ] Adrenaline Junkie
-- [ ] Brigand
-- [ ] Daggermark
-- [ ] Dragon Banner
-- [ ] Eagle Banner
-- [ ] Feylost
-- [ ] Gourmand
-- [ ] Houndmaster
-- [ ] Jolly Roger
-- [ ] Knight Errant
-- [ ] Mage Brand
-- [ ] Plague Doctor
-- [ ] Pugilist
-- [ ] Rōnin
-- [ ] Siegeball Jersey
-- [ ] Tower Banner
-- [ ] Troubadour
-- [ ] Yellow Sign
+- [x] Adrenaline Junkie
+- [x] Brigand
+- [x] Daggermark
+- [x] Dragon Banner
+- [x] Eagle Banner
+- [x] Feylost
+- [x] Gourmand
+- [x] Houndmaster
+- [x] Jolly Roger
+- [x] Knight Errant
+- [x] Mage Brand
+- [x] Plague Doctor
+- [x] Pugilist
+- [x] Rōnin
+- [x] Siegeball Jersey
+- [x] Tower Banner
+- [x] Troubadour
+- [x] Yellow Sign
 
 ### Warden (17)
 
-- [ ] Beastblood Guardian
-- [ ] Carrion King
-- [ ] Diabolist
-- [ ] Drake-Blooded
-- [ ] Fey Trailblazer
-- [ ] Godsworn
-- [ ] Grey Watchman
-- [ ] Hellkeeper
-- [ ] Iceheart Bastion
-- [ ] Loreseeker
-- [ ] Nightgaunt
-- [ ] Rimekeeper
-- [ ] Soulblood Shaman
-- [ ] Stoneheart Defender
-- [ ] Storm Sentinel
-- [ ] Verdant Protector
-- [ ] Witchbane Hunter
+- [x] Beastblood Guardian
+- [x] Carrion King
+- [x] Diabolist
+- [x] Drake-Blooded
+- [x] Fey Trailblazer
+- [x] Godsworn
+- [x] Grey Watchman
+- [x] Hellkeeper
+- [x] Iceheart Bastion
+- [x] Loreseeker
+- [x] Nightgaunt
+- [x] Rimekeeper
+- [x] Soulblood Shaman
+- [x] Stoneheart Defender
+- [x] Storm Sentinel
+- [x] Verdant Protector
+- [x] Witchbane Hunter
 
 ### Warlock (19)
 
-- [ ] Dead Mists
-- [ ] Future You Patron
-- [ ] Legacy
-- [ ] Magician
-- [ ] Symbiont
-- [ ] The Archfey
-- [ ] The Celestial
-- [ ] The Coven
-- [ ] The Fathomless
-- [ ] The Fiend
-- [ ] The First Vampire Patron
-- [ ] The Genie
-- [ ] The GM
-- [ ] The Great Old One
-- [ ] The Hexblade
-- [ ] The Parasite Patron
-- [ ] The Undead
-- [ ] The Undying
-- [ ] Undead Patron
+- [x] Dead Mists
+- [x] Future You Patron
+- [x] Legacy
+- [x] Magician
+- [x] Symbiont
+- [x] The Archfey
+- [x] The Celestial
+- [x] The Coven
+- [x] The Fathomless
+- [x] The Fiend
+- [x] The First Vampire Patron
+- [x] The Genie
+- [x] The GM
+- [x] The Great Old One
+- [x] The Hexblade
+- [x] The Parasite Patron
+- [x] The Undead
+- [x] The Undying
+- [x] Undead Patron
 
 ### Warmage (11)
 
-- [ ] House of Bishops
-- [ ] House of Cards
-- [ ] House of Darts
-- [ ] House of Dice
-- [ ] House of Go
-- [ ] House of Kings
-- [ ] House of Knights
-- [ ] House of Lancers — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
-- [ ] House of Pawns
-- [ ] House of Rooks
-- [ ] House of Roulette
+- [x] House of Bishops
+- [x] House of Cards
+- [x] House of Darts
+- [x] House of Dice
+- [x] House of Go
+- [x] House of Kings
+- [x] House of Knights
+- [x] House of Lancers — 🆕 ยังไม่เคยถูกวิเคราะห์ในไฟล์ tier-list เลย
+- [x] House of Pawns
+- [x] House of Rooks
+- [x] House of Roulette
 
 ### Witch (13)
 
-- [ ] Black Magic
-- [ ] Blood Magic
-- [ ] Blue Magic
-- [ ] Fragrant Magic
-- [ ] Gingerbread Magic
-- [ ] Green Magic
-- [ ] Purple Magic
-- [ ] Red Magic
-- [ ] Sky Magic
-- [ ] Steel Magic
-- [ ] Tea Magic
-- [ ] Technicolor Magic
-- [ ] White Magic
+- [x] Black Magic
+- [x] Blood Magic
+- [x] Blue Magic
+- [x] Fragrant Magic
+- [x] Gingerbread Magic
+- [x] Green Magic
+- [x] Purple Magic
+- [x] Red Magic
+- [x] Sky Magic
+- [x] Steel Magic
+- [x] Tea Magic
+- [x] Technicolor Magic
+- [x] White Magic
 
 ### Wizard (26)
 
-- [ ] Abjurer
-- [ ] Bladesinger
-- [ ] Chronomancer
-- [ ] Chronurgy Magic
-- [ ] Daemonologist
-- [ ] Diviner
-- [ ] Evoker
-- [ ] Familiar Master / Fumaturge
-- [ ] Gastronomer
-- [ ] Graviturgy Magic
-- [ ] Illusionist
-- [ ] Magic Missile Mage
-- [ ] Mystic Strategist
-- [ ] Order of Scribes
-- [ ] Plague Doctor
-- [ ] Protomancer
-- [ ] Sangromancer
-- [ ] School of Conjuration
-- [ ] School of Enchantment
-- [ ] School of Necromancy
-- [ ] School of Transmutation
-- [ ] Scroll Scribe / Wand Wizard
-- [ ] Somnomancer
-- [ ] Tyromancer
-- [ ] Universalist
-- [ ] War Magic
+- [x] Abjurer
+- [x] Bladesinger
+- [x] Chronomancer
+- [x] Chronurgy Magic
+- [x] Daemonologist
+- [x] Diviner
+- [x] Evoker
+- [x] Familiar Master / Fumaturge
+- [x] Gastronomer
+- [x] Graviturgy Magic
+- [x] Illusionist
+- [x] Magic Missile Mage
+- [x] Mystic Strategist
+- [x] Order of Scribes
+- [x] Plague Doctor
+- [x] Protomancer
+- [x] Sangromancer
+- [x] School of Conjuration
+- [x] School of Enchantment
+- [x] School of Necromancy
+- [x] School of Transmutation
+- [x] Scroll Scribe / Wand Wizard
+- [x] Somnomancer
+- [x] Tyromancer
+- [x] Universalist
+- [x] War Magic
 

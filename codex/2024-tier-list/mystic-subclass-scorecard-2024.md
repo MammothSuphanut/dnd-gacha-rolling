@@ -4,7 +4,7 @@
 
 **วันที่เริ่ม**: 2026-08-07
 **ขอบเขต**: 6 subclass (ดูรายชื่อใน [00-scorecard-progress.md § Mystic](00-scorecard-progress.md))
-**สถานะปัจจุบัน**: ทำเสร็จแค่ **Class Baseline** ด้านล่าง — ยังไม่เริ่มให้คะแนน subclass ตัวไหนเลย
+**สถานะปัจจุบัน**: เสร็จสมบูรณ์ — Class Baseline + Subclass Scoring ครบทั้ง 6 ตัว
 
 **ที่มาข้อมูล chassis**: `src/data/5etools/official/class/class-mystic.json` — source `UATheMysticClass` (Unearthed Arcana, **ไม่เคยตีพิมพ์เป็นทางการทั้ง 2014 และ 2024**) — 🕰️ ใช้กติกา 2014-only orphan ของโปรเจกต์เพราะเป็นตัวเลือกเดียวที่มีในโปรเจกต์
 
@@ -30,4 +30,89 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ## Subclass Scoring (6)
 
-_ยังไม่เริ่ม — ตารางจะเพิ่มทีหลังตาม [00-scorecard-progress.md § Mystic](00-scorecard-progress.md)_
+**Class Baseline อ้างอิง**: Damage 5, Control 3, Support 0, Survivability 7, Action Economy 6, Utility 6, Versatility 7
+
+> **ข้อจำกัดข้อมูลเดียวกับ baseline**: ทุก Order มีฟีเจอร์ "Bonus Disciplines" (lv1, ปลดล็อก 2 discipline เพิ่มจากลิสต์เฉพาะ Order) ที่ไม่มีเนื้อหาให้ตรวจสอบในไฟล์ data ของโปรเจกต์ — คะแนนด้านล่างจึงประเมินจากฟีเจอร์ตั้งชื่อชัดเจนที่ยืนยันได้เท่านั้น (lv1/lv3/lv6/lv14 อื่นๆ) เป็น floor ที่ระมัดระวัง ไม่มี Order ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก
+
+| Subclass | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|
+| Order of the Avatar | 5 (B) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Order of the Awakened | 5 (B) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 8 (A) | 8 (A) |
+| Order of the Immortal | 5 (B) | 3 (C) | 0 (D) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
+| Order of the Nomad | 5 (B) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 8 (A) | 8 (A) |
+| Order of the Soul Knife | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Order of the Wu Jen | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 9 (S) |
+
+---
+
+### Order of the Avatar
+
+| Axis | คะแนน | เหตุผล |
+|---|---|---|
+| **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ที่ยืนยันได้ (ธีม support/aura ล้วน) = เท่า baseline |
+| **Control** | 3/10 (C) | ไม่มี control feature ใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Support** | 9/10 (S) | Avatar of Battle (lv3, aura +2 initiative ให้ ally ทุกคนในระยะ 30ft) + Avatar of Healing (lv6, aura บวก Int mod เข้าการฮีลของ ally ทุกครั้งที่ฮีลจาก discipline) + Avatar of Speed (lv14, aura Dash ฟรีเป็น bonus action ให้ ally) — ออร่าบัฟทีมสามชั้นที่ทำงานตลอดเวลาโดยไม่เสีย resource เลย [M:3/4] [R:3/3] [B:3/3] |
+| **Survivability** | 8/10 (A) | Armor Training (medium armor+shield จาก light-only ของ baseline) [M:2/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 6/10 (B) | ออร่าทั้งหมดเป็น passive ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
+| **Utility** | 6/10 (B) | ไม่มี utility นอกคอมแบตใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Versatility** | 8/10 (A) | ออร่า 3 แบบ (initiative/heal/speed) ซ้อนกันให้ทีมได้ประโยชน์หลายด้านพร้อมกัน [M:2/4] [R:3/3] [B:3/3] |
+
+### Order of the Awakened
+
+| Axis | คะแนน | เหตุผล |
+|---|---|---|
+| **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Control** | 6/10 (B) | Psionic Surge (lv6) บังคับ Disadvantage บน save ของเป้าต้าน discipline/talent ที่ใช้ แลกด้วยการเสีย psychic focus [M:2/4] [R:2/3] [B:2/3] |
+| **Support** | 0/10 (D) | ไม่มี feature เสริมทีมที่ยืนยันได้ = เท่า baseline |
+| **Survivability** | 9/10 (S) | Spectral Form (lv14, action, resistance **ทุกชนิดดาเมจ** นาน 10 นาที + ทะลุสิ่งกีดขวางได้) — mitigation ระดับสูงมาก แม้ใช้ได้แค่ 1/long rest [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
+| **Utility** | 8/10 (A) | Psionic Investigation (lv3, อ่านความทรงจำ/ติดตามวัตถุนาน 24 ชม.) เป็น investigative utility ที่ baseline ไม่มีเลย [M:2/4] [R:2/3] [B:3/3] |
+| **Versatility** | 8/10 (A) | ผสม investigation/control/defense สุดขั้วในธีมเดียว [M:2/4] [R:2/3] [B:3/3] |
+
+### Order of the Immortal
+
+| Axis | คะแนน | เหตุผล |
+|---|---|---|
+| **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ที่ยืนยันได้ (ธีม tank ล้วน) = เท่า baseline |
+| **Control** | 3/10 (C) | ไม่มี control feature ใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Support** | 0/10 (D) | ไม่มี feature เสริมทีมที่ยืนยันได้ = เท่า baseline |
+| **Survivability** | 10/10 (S) | Immortal Durability (+1 max HP/level ถาวร + Unarmored Defense 10+Dex+Con) + Psionic Resilience (lv3, temp HP เท่า Int mod ทุกต้นเทิร์น) + Surge of Health (lv6, reaction ลดดาเมจครึ่งหนึ่ง) + Immortal Will (lv14, ฟื้นคืนชีพตัวเองที่ 0 HP ผ่าน psi point) — ชั้นการรอดชีวิตที่หนาแน่นที่สุดในกลุ่ม [M:4/4] [R:3/3] [B:3/3] |
+| **Action Economy** | 6/10 (B) | ไม่มี economy gain ใหม่ที่ชัดเจนเกิน baseline = เท่า baseline |
+| **Utility** | 6/10 (B) | ไม่มี utility นอกคอมแบตใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Versatility** | 7/10 (A) | โฟกัส tank เฉพาะทางสุดขั้ว ไม่ขยาย role อื่น = เท่า baseline |
+
+### Order of the Nomad
+
+| Axis | คะแนน | เหตุผล |
+|---|---|---|
+| **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Control** | 3/10 (C) | ไม่มี control feature ใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Support** | 0/10 (D) | ไม่มี feature เสริมทีมที่ยืนยันได้ = เท่า baseline |
+| **Survivability** | 9/10 (S) | Memory of a Thousand Steps (lv3, reaction เทเลพอร์ตหนีทำให้การโจมตีพลาดอัตโนมัติ) [M:3/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Effortless Journey (lv14, แปลงระยะเดิน 30ft เป็นเทเลพอร์ตได้ฟรีไม่เสีย action เพิ่ม) [M:2/4] [R:2/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Breadth of Knowledge (lv1, 2 proficiency ใดก็ได้ สลับได้ทุก Long Rest) เป็น utility ที่ยืดหยุ่นที่สุดในกลุ่ม [M:2/4] [R:2/3] [B:3/3] |
+| **Versatility** | 8/10 (A) | ผู้เชี่ยวชาญเทเลพอร์ต/mobility ที่มี proficiency สลับได้ทุกวันเสริมความยืดหยุ่นอีกชั้น [M:2/4] [R:3/3] [B:3/3] |
+
+### Order of the Soul Knife
+
+| Axis | คะแนน | เหตุผล |
+|---|---|---|
+| **Damage** | 8/10 (A) | Soul Knife (อาวุธ 1d8 psychic finesse ติดตัวถาวรผ่าน bonus action) + Hone the Blade (lv3, จ่าย psi ได้ atk/dmg bonus สูงสุด +4 นาน 10 นาที) + Phantom Knife (lv14, ตีเป้าเสมือนมี AC 10) [M:3/4] [R:2/3] [B:3/3] |
+| **Control** | 3/10 (C) | ไม่มี control feature ใหม่ที่ยืนยันได้ = เท่า baseline |
+| **Support** | 0/10 (D) | ไม่มี feature เสริมทีมที่ยืนยันได้ = เท่า baseline |
+| **Survivability** | 8/10 (A) | Soul Knife's parry option (bonus action, +2 AC) + Martial Training (medium armor) [M:2/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Consumptive Knife (lv6, ฟื้น 2 psi point ทุกครั้งที่ฆ่าศัตรูด้วย soul knife) เป็น resource-sustain [M:2/4] [R:2/3] [B:2/3] |
+| **Utility** | 6/10 (B) | ไม่มี utility นอกคอมแบตใหม่ที่ยืนยันได้ (เน้นคอมแบตล้วน) = เท่า baseline |
+| **Versatility** | 7/10 (A) | โฟกัส weapon-striker เฉพาะทางสุดขั้ว ไม่ขยาย role อื่น = เท่า baseline |
+
+### Order of the Wu Jen
+
+| Axis | คะแนน | เหตุผล |
+|---|---|---|
+| **Damage** | 7/10 (A) | Elemental Attunement (lv3, จ่าย 1 psi ทะลุ resistance ของเป้า) + Arcane Dabbler (lv6, เข้าถึง spell ดาเมจของ Wizard lv1-3 ผ่าน spell slot ที่สร้างจาก psi point) [M:2/4] [R:2/3] [B:3/3] |
+| **Control** | 5/10 (B) | Arcane Dabbler เลือกเป็น control spell ของ Wizard ได้เช่นกัน (เช่น Hold Person) [M:2/4] [R:1/3] [B:2/3] |
+| **Support** | 0/10 (D) | ไม่มี feature เสริมทีมที่ยืนยันได้ = เท่า baseline |
+| **Survivability** | 8/10 (A) | Elemental Mastery (lv14, reaction, ได้ immunity เต็มต่อดาเมจธาตุที่มี resistance อยู่แล้ว) [M:2/4] [R:2/3] [B:3/3] |
+| **Action Economy** | 7/10 (A) | Arcane Dabbler สร้าง spell slot ได้ผ่าน bonus action จาก psi point ที่ยืดหยุ่นกว่า slot ปกติ [M:2/4] [R:2/3] [B:2/3] |
+| **Utility** | 8/10 (A) | Arcane Dabbler เข้าถึง spell utility ของ Wizard (เช่น Comprehend Languages, Fly) + Hermit's Study (2 skill proficiency จาก list กว้าง) [M:2/4] [R:2/3] [B:3/3] |
+| **Versatility** | 9/10 (S) | Hybrid psionics-wizard เต็มรูปแบบ เข้าถึง spell list อีกระบบทั้งหมดผ่าน psi point เดียวกัน — breadth กว้างที่สุดในกลุ่ม [M:3/4] [R:2/3] [B:3/3] |
