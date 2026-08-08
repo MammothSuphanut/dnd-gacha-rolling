@@ -20,17 +20,18 @@ The next time you land a weapon attack — on any turn — all of the Sealed Wra
 
 Every 2 hit points you lose grants you 1 Fervor, with no cap per turn.
 
-### 10th Level: Guardian's Wrath
+### 10th Level: Vanguard's Instinct
+
+*A guardian's hand moves before the thought finishes forming.*
+
+You gain one additional reaction each turn, usable only to activate Bulwark Shift. Your normal reaction remains completely separate and free to use on anything else.
+
+### 14th Level: Guardian's Wrath
 
 *What you protect against, you keep in full.*
 
 Sealed Wrath's accumulation rate improves from 2 damage reduced per 1 Sealed Wrath to a full 1-for-1 rate.
 
-### 14th Level: Vanguard's Instinct
-
-*A guardian's hand moves before the thought finishes forming.*
-
-You gain one additional reaction each turn, usable only to activate Bulwark Shift. Your normal reaction remains completely separate and free to use on anything else.
 
 ### 17th Level: Throne of Protection and Mercy
 

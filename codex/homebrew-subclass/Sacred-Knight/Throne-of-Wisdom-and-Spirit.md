@@ -30,10 +30,7 @@ An ally you grant Clarity to gains advantage on the ability check or attack roll
 
 *The clearest insight strikes exactly where it's needed.*
 
-You gain two benefits:
-
-- Second Sight's threshold for granting a reroll drops from 5 Fervor to 3 Fervor.
-- If you spend at least 10 total Fervor on a single use of Clarity granted to an ally, and the resulting attack roll is at least the target's AC + 15 + the target's Proficiency Bonus, that attack counts as a critical hit automatically. You can trigger this only once per turn, matching the limit on Moment of Dread from the Throne of Fear and Sorrow, to prevent this from combining with rapid multi-attacks for repeated automatic crits.
+If you spend at least 10 total Fervor on a single use of Clarity granted to an ally, and the resulting attack roll is at least the target's AC + 15 + the target's Proficiency Bonus, that attack counts as a critical hit automatically. You can trigger this only once per turn, matching the limit on Moment of Dread from the Throne of Fear and Sorrow, to prevent this from combining with rapid multi-attacks for repeated automatic crits.
 
 ### 17th Level: Throne of Wisdom and Spirit
 
