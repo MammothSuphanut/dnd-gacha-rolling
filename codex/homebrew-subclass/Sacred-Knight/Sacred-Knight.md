@@ -114,7 +114,7 @@ You can learn Fervor Techniques from the Universal and Guardian lists only.
 
 You can learn Fervor Techniques from the Universal, Retribution, and Guardian lists — all three. This is Formless's defining strength, in exchange for never reaching either specialist's peak AC or peak damage.
 
-*Learning versus using a technique.* The list you can learn from is fixed by your Path and never changes. Using a technique you've learned still requires you to meet its equipment condition in the moment — a Guardian who temporarily picks up a second weapon still can't use Retribution techniques, because they never learned any; they'd need the Formless Path to learn techniques from both lists.
+*Learning versus using a technique.* The list you can learn from is fixed by your Path and never changes — but once you've learned a technique, you can use it at any time, regardless of what you're currently wielding. A Retribution Knight can use a Retribution technique while fighting unarmed, and a Guardian can use a Guardian technique without a shield in hand. Equipment (Twin Blade Stance, Bulwark Stance, and so on) still governs your stance features and armor benefits — it just no longer gates which techniques you're allowed to trigger.
 
 ### 1st Level: Fervor Awakening
 
@@ -206,7 +206,7 @@ The rule that Fervor fades after 1 minute (10 rounds) still applies without exce
 
 Each Fervor Technique has a fixed **Cost** — the amount of Fervor you spend to use it. There's no rank or upgrade track beyond what *Improve Fervor Technique* grants; the numbers below are final for the whole game. This is a starter list, meant to be expanded over time.
 
-**Universal** techniques can always be used. **Retribution** techniques can be used only while you're actively wielding two weapons (dual-wielding). **Guardian** techniques can be used only while you're actively wielding a shield. Which techniques you're able to *learn* is fixed by your Path (see *Choose Your Path*) — meeting a technique's equipment condition doesn't let you use a technique you never learned.
+Any technique you've learned can be used at any time, regardless of what you're currently wielding — Fervor Techniques are no longer gated by equipment. Which techniques you're able to *learn* is fixed by your Path (see *Choose Your Path*): a Retribution Knight can learn from the Universal and Retribution lists, a Guardian from the Universal and Guardian lists, and a Formless Knight from all three.
 
 **Using multiple techniques on a multi-attack turn.** A technique that grants multiple attacks in a single turn (such as Cross Slash) doesn't automatically apply another attack-linked technique (such as Faith Halo or Light Sword) to every one of those attacks. If you want an effect like that to apply to each attack individually, you must pay that technique's Fervor cost separately for each attack.
 
@@ -229,8 +229,6 @@ Each Fervor Technique has a fixed **Cost** — the amount of Fervor you spend to
 *Improvement (7th or 15th level).* For every 2 additional Fervor you spend beyond the base rate, you gain an extra +1 to the check (matching Faith Halo's improved rate exactly). The stack cap doesn't change.
 
 ### Retribution Techniques
-
-*Usable only while you're actively wielding two weapons.*
 
 **Cross Slash.** *Cost: starts at 3 Fervor, rising with each additional attack.* You make an additional weapon attack within the same turn. The cost of the Nth additional attack (beyond your base attack) is **N + 2 Fervor** — 3 for the first, 4 for the second, 5 for the third, and so on.
 
@@ -256,8 +254,6 @@ You can purchase a maximum of your Wisdom modifier + Proficiency Bonus additiona
 *Improvement (7th or 15th level).* Each stack now deals 1d6 radiant damage instead of 1d4 (the number of dice and the stack cap don't change).
 
 ### Guardian Techniques
-
-*Usable only while you're actively wielding a shield.*
 
 **Shared Reaction.** Spirit Ward, Guardian's Blessing, and Bulwark Shift all use the same reaction — one per round, as normal. However, a single use of your reaction can trigger **all three** of these techniques against the same triggering event at once, as long as you have enough Fervor to pay for each one you want to use — you don't have to pick only one. (For example, if you fail a saving throw against an effect that also deals damage, you can spend your one reaction to use both Guardian's Blessing, to turn the failed save into a success, and Spirit Ward, to reduce the damage, in the same reaction — as long as you can afford both costs.) A reaction granted by another feature (such as Vanguard's Instinct) is a separate reaction and isn't affected by this rule.
 
