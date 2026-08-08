@@ -20,7 +20,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Control** | 7/10 (A) | Druid spell list แข็งไม่แพ้ Wizard ในสาย battlefield control แนวธรรมชาติ (Entangle lv1, Faerie Fire lv1, Spike Growth lv2, Plant Growth lv3, Wall of Thorns lv6, Insect Plague lv5) ครอบคลุมทั้ง restrain/บังคับพื้นที่/ลด mobility ศัตรู [M:3/4] [R:2/3] [B:2/3] |
 | **Support** | 3/10 (C) | ไม่มี free heal-on-demand ติด chassis แบบ Cleric's Divine Spark มีแค่ full spell list ที่เข้าถึง Cure Wounds/Goodberry ได้ (ต้องแลก slot กับสายอื่นเหมือนปกติ) buff เช่น Barkskin ก็ single-target [M:1/4] [R:1/3] [B:1/3] |
 | **Survivability** | 7/10 (A) | Wild Shape ให้ temp HP เท่า Druid level ทุกครั้งที่แปลงร่าง (2 ครั้ง/วันตั้งแต่ lv2 ฟื้น 1/short rest) แล้วยังสลับไปใช้ HP pool ของ Beast form แทนของตัวเอง เท่ากับมี "บัฟเฟอร์กันดาเมจ" สองชั้นซ้อนกัน บวก Wild Resurgence (lv5) แปลง spell slot ↔ Wild Shape use ได้อิสระแบบไม่เสีย action ทำให้ยืด uptime ของบัฟเฟอร์นี้ได้ทั้งวัน แต่ต้อง commit เข้า Beast form ถึงจะได้ (เสีย spellcasting ระหว่างนั้นจนถึง lv18) [M:3/4] [R:2/3] [B:2/3] |
-| **Action Economy** | 7/10 (B) | Wild Shape เข้า/ออกด้วย Bonus Action, Wild Companion ให้เลือกจ่าย Wild Shape use หรือ spell slot เพื่อ summon familiar (ยืดหยุ่นเลือก resource ได้), Wild Resurgence (lv5) แปลง spell slot → Wild Shape use หรือกลับกันได้ **ไม่เสีย action เลย** ทำให้ resource pool 2 ก้อน (slot กับ shape) หนุนกันได้ทั้งวันแทนที่จะแยกขาดจากกัน [M:2/4] [R:3/3] [B:2/3] |
+| **Action Economy** | 7/10 (A) | Wild Shape เข้า/ออกด้วย Bonus Action, Wild Companion ให้เลือกจ่าย Wild Shape use หรือ spell slot เพื่อ summon familiar (ยืดหยุ่นเลือก resource ได้), Wild Resurgence (lv5) แปลง spell slot → Wild Shape use หรือกลับกันได้ **ไม่เสีย action เลย** ทำให้ resource pool 2 ก้อน (slot กับ shape) หนุนกันได้ทั้งวันแทนที่จะแยกขาดจากกัน [M:2/4] [R:3/3] [B:2/3] |
 | **Utility** | 6/10 (B) | Speak with Animals ติดตัวฟรีตลอดเวลาไม่กิน prepared slot (Druidic feature) บวก Magician (ถ้าเลือกใน Primal Order) ให้ cantrip เพิ่ม + bonus Wis mod กับ Arcana/Nature check และ Wild Shape เปิดให้แปลงเป็นสัตว์ที่ใช้ scout/สำรวจได้ (ว่าย/ปีน/lv8+บิน) โดยไม่ต้องพึ่ง spell แยก [M:2/4] [R:2/3] [B:2/3] |
 | **Versatility** | 8/10 (A) | Prepared spell list reset เต็มทุก Long Rest เหมือน Wizard บวกจุดเลือก build 2 จุดที่ไม่ผูก subclass เลย (Primal Order: Magician vs Warden, Elemental Fury: Potent Spellcasting vs Primal Strike) และ Wild Shape ให้ "เปลี่ยนร่างเป็นสิ่งมีชีวิตอื่นทั้งตัว" ซึ่งเป็นเครื่องมือปรับ role แบบที่ไม่มี class อื่นทำได้ (จากนักเวทย์เป็นสัตว์ tank/scout ได้ในเทิร์นเดียว) แม้ Beast form จะห้ามร่ายคาถาระหว่างนั้นจนกว่าจะถึง lv18 ก็ตาม [M:3/4] [R:3/3] [B:2/3] |
 
@@ -32,29 +32,32 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ไม่มี Circle ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) หมายเหตุพิเศษ: Circle of the Wyrm (2014) มีฟีเจอร์ "Wild Shape เป็น Bonus Action แทน Action" ซึ่ง**เป็นค่า default อยู่แล้วใน baseline 2024** จึงไม่นับเป็นการเพิ่มคะแนน Action Economy — และ Circle of Mutation มีรายการ "Mutation Options" ที่ตัวไฟล์ข้อมูลไม่ระบุรายละเอียดครบ (แสดงแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังในแกนที่เกี่ยวข้อง (Survivability/Utility)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Circle of Blood | GrimHollowPG24 | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 6 (B) | 8 (A) |
-| Circle of Dreams | XGE 🕰️ | 6 (B) | 7 (A) | 8 (A) | 7 (A) | 8 (A) | 9 (S) | 9 (S) |
-| Circle of Entropy | GrimHollowPG24 | 10 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
-| Circle of Mutation | GrimHollowPG24 | 8 (A) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 8 (A) |
-| Circle of Spores | TCE 🕰️ | 8 (A) | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 9 (S) |
-| Circle of Stars | XPHB | 8 (A) | 8 (A) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
-| Circle of Stones | VSS 🕰️ | 6 (B) | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
-| Circle of the City | VSS 🕰️ | 6 (B) | 9 (S) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 9 (S) |
-| Circle of the Deep | VSS 🕰️ | 8 (A) | 7 (A) | 5 (B) | 7 (A) | 7 (A) | 7 (A) | 8 (A) |
-| Circle of the Fist | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 9 (S) | 9 (S) | 6 (B) | 8 (A) |
-| Circle of the Land | XPHB | 7 (A) | 7 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) | 9 (S) |
-| Circle of the Moon | XPHB | 9 (S) | 8 (A) | 6 (B) | 10 (S) | 8 (A) | 6 (B) | 10 (S) |
-| Circle of the Sea | XPHB | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 7 (A) | 9 (S) |
-| Circle of the Shepherd | XGE 🕰️ | 6 (B) | 7 (A) | 9 (S) | 8 (A) | 8 (A) | 6 (B) | 8 (A) |
-| Circle of the Wyrm | VSS 🕰️ | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 7 (A) | 6 (B) | 9 (S) |
-| Circle of Vermin | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 9 (S) | 7 (A) | 7 (A) | 8 (A) |
-| Circle of Wildfire | TCE 🕰️ | 9 (S) | 7 (A) | 7 (A) | 8 (A) | 8 (A) | 6 (B) | 9 (S) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Circle of Blood | A | GrimHollowPG24 | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 6 (B) | 8 (A) |
+| Circle of Dreams | S | XGE 🕰️ | 6 (B) | 7 (A) | 8 (A) | 7 (A) | 8 (A) | 9 (S) | 9 (S) |
+| Circle of Entropy | S | GrimHollowPG24 | 10 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
+| Circle of Mutation | B | GrimHollowPG24 | 8 (A) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 8 (A) |
+| Circle of Spores | S | TCE 🕰️ | 8 (A) | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 9 (S) |
+| Circle of Stars | A | XPHB | 8 (A) | 8 (A) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
+| Circle of Stones | A | VSS 🕰️ | 6 (B) | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
+| Circle of the City | S | VSS 🕰️ | 6 (B) | 9 (S) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 9 (S) |
+| Circle of the Deep | B | VSS 🕰️ | 8 (A) | 7 (A) | 5 (B) | 7 (A) | 7 (A) | 7 (A) | 8 (A) |
+| Circle of the Fist | S | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 9 (S) | 9 (S) | 6 (B) | 8 (A) |
+| Circle of the Land | A | XPHB | 7 (A) | 7 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) | 9 (S) |
+| Circle of the Moon | S | XPHB | 9 (S) | 8 (A) | 6 (B) | 10 (S) | 8 (A) | 6 (B) | 10 (S) |
+| Circle of the Sea | S | XPHB | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 7 (A) | 9 (S) |
+| Circle of the Shepherd | A | XGE 🕰️ | 6 (B) | 7 (A) | 9 (S) | 8 (A) | 8 (A) | 6 (B) | 8 (A) |
+| Circle of the Wyrm | S | VSS 🕰️ | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 7 (A) | 6 (B) | 9 (S) |
+| Circle of Vermin | B | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 9 (S) | 7 (A) | 7 (A) | 8 (A) |
+| Circle of Wildfire | S | TCE 🕰️ | 9 (S) | 7 (A) | 7 (A) | 8 (A) | 8 (A) | 6 (B) | 9 (S) |
 
 ---
 
 ### Circle of Blood (GrimHollowPG24)
+
+**Overall**: A — Survivability เป็น S (9/10) บวกขยับขึ้นอีก 4 axis กลางๆ (Damage/Control/Support/AE) ไม่มี S ตัวที่สอง
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -68,6 +71,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Dreams (XGE 🕰️)
 
+**Overall**: S — Utility และ Versatility เป็น S ทั้งคู่ บวก Support กระโดด +5 (C→A) แก้จุดอ่อนใหญ่สุดของ baseline ไปด้วย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ = เท่า baseline |
@@ -80,6 +86,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Entropy (GrimHollowPG24)
 
+**Overall**: S — Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Versatility เป็น S ด้วย แม้ Support (จุดอ่อนสุดของ baseline) จะยังไม่ถูกแตะเลย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Ruin Incarnate (bonus action WS use) ให้ตี**สองครั้ง**แทนหนึ่งครั้งทุกครั้งที่ใช้ Attack action (**สามครั้ง**ที่ lv14) บวก Ruinous Smite (extra necrotic สเกลตาม spell slot) บวก Elemental Cataclysm (AoE เผาผลาญ+Vulnerability) — magnitude ดาเมจสูงที่สุดใน Circle ที่ทำมา [M:4/4] [R:3/3] [B:3/3] |
@@ -91,6 +100,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Versatility** | 9/10 (S) | Catastrophic Power ให้เลือก 1 ใน 3 โหมด (AoE elemental/single-target necrotic/weapon mastery) ทุกครั้งที่พัก ปรับกลยุทธ์ได้ตามสถานการณ์ [M:3/4] [R:3/3] [B:3/3] |
 
 ### Circle of Mutation (GrimHollowPG24)
+
+**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Damage/Action Economy) ไม่มี peak ถึง S เลย แคบที่สุดในกลุ่มร่วมกับ Circle of the Deep
+
 
 > **หมายเหตุข้อมูล**: รายการ "Mutation Options" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนน Survivability/Utility แบบระมัดระวังจากฟีเจอร์ที่ยืนยันได้เท่านั้น
 
@@ -106,6 +118,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Spores (TCE 🕰️)
 
+**Overall**: S — Survivability และ Versatility เป็น S ทั้งคู่ บวก Damage/Action Economy ขยับตาม แม้ Support จะยังไม่ถูกแตะ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Halo of Spores (reaction proximity dmg, 1d4→1d10) เพิ่มเป็นทอย 2 ครั้งระหว่าง Symbiotic Entity บวก extra 1d6 necrotic ทุกครั้งที่ตีด้วยอาวุธ บวก Spreading Spores (lv10, AoE cube ต่อเนื่อง) [M:3/4] [R:2/3] [B:3/3] |
@@ -117,6 +132,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Versatility** | 9/10 (S) | ผสม necromancer(zombie summon)/damage(spore)/tank(temp HP) ในธีมเดียว [M:3/4] [R:3/3] [B:3/3] |
 
 ### Circle of Stars (XPHB)
+
+**Overall**: A — Versatility เป็น S บวก Support กระโดด +3 (C→B) และขยับตามอีก 3 axis กว้างพอสมควรแต่มีแค่ S เดียว
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -130,6 +148,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Stones (VSS 🕰️)
 
+**Overall**: A — ไม่มี axis ไหนถึง S เลย แต่ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility) กว้างที่สุดในกลุ่มที่ไม่มี S peak
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | ไม่มี feature เพิ่มดาเมจใหม่ = เท่า baseline |
@@ -141,6 +162,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Versatility** | 8/10 (A) | เปิด role "ผู้พิทักษ์จุดยึด" (defense/travel-node/control) ที่ต่างจาก mobile caster ทั่วไป แต่ผูกกับสถานที่ทำให้ breadth จำกัดกว่าตัวเลือกอื่น [M:2/4] [R:3/3] [B:3/3] |
 
 ### Circle of the City (VSS 🕰️)
+
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Control, Utility, Versatility) มากที่สุดในกลุ่มร่วมกับ Fist/Moon/Wyrm แม้ Support จะยังไม่ถูกแตะเลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -154,6 +178,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Deep (VSS 🕰️)
 
+**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Damage/Support/Utility) ไม่มี peak ถึง S เลย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Vortex Attack (lv6, extra attack + ถ้าอยู่ใต้น้ำ/HP ต่ำกว่าครึ่งโจมตีทุกเป้ารอบตัวได้) บวก Davy Jones' Locker (lv14, extra 1d8 + ทะลุ resistance) [M:3/4] [R:2/3] [B:3/3] |
@@ -165,6 +192,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Versatility** | 8/10 (A) | เฉพาะทางใต้น้ำ/ทะเลสูงมาก แต่ในบริบทอื่นไม่ได้ขยาย breadth เกินปกติ = เท่า baseline |
 
 ### Circle of the Fist (VSS 🕰️)
+
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Survivability, Action Economy) แม้ Support/Control/Utility จะนิ่งสนิททั้งหมดก็ตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -178,6 +208,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Land (XPHB)
 
+**Overall**: A — Versatility เป็น S บวกขยับขึ้นอีก 5 axis กลางๆ (Damage/Support/Survivability/AE/Utility) กว้างมากแต่มีแค่ S เดียว
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Land's Aid (action WS use) ดาเมจ necrotic AoE 2d6→4d6 พร้อมฮีลไปด้วยในการใช้เดียว [M:2/4] [R:2/3] [B:3/3] |
@@ -189,6 +222,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Versatility** | 9/10 (S) | สลับ terrain type ได้ทุก Long Rest ปรับ spell package ทั้งชุดตามสถานการณ์แคมเปญ [M:3/4] [R:3/3] [B:3/3] |
 
 ### Circle of the Moon (XPHB)
+
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Survivability 10/10 เต็ม, Versatility 10/10 เต็ม) บวกขยับตามอีก 3 axis กว้างและแรงที่สุดในกลุ่ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -202,6 +238,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Sea (XPHB)
 
+**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย บวก 2 axis เป็น S (Survivability, Versatility)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Wrath of the Sea (bonus action ทุกเทิร์นระหว่างฤทธิ์ 10 นาที) ดาเมจ cold สเกลตาม Wis mod + ผลักเป้า [M:2/4] [R:3/3] [B:3/3] |
@@ -213,6 +252,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Versatility** | 9/10 (S) | ผสม blaster/mobility(บิน+ว่ายน้ำ)/support(แบ่งฤทธิ์) ผ่านกลไก emanation เดียว [M:3/4] [R:3/3] [B:3/3] |
 
 ### Circle of the Shepherd (XGE 🕰️)
+
+**Overall**: A — Support กระโดด +6 (3→9, C→S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม แต่ breadth แคบ (มีแค่ Support/Survivability/AE ที่ขยับ)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -226,6 +268,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Wyrm (VSS 🕰️)
 
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Survivability, Versatility) บวก Support ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Breath Weapon (แลก spell slot, AoE cone สเกลตาม slot level) บวก Infused Strikes (extra 1d6 ธาตุทุกครั้งที่ตีด้วย Wild Shape) บวก Wyrm Perfection (lv14, ใช้ได้แม้ไม่แปลงร่าง) [M:3/4] [R:3/3] [B:3/3] |
@@ -238,6 +283,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Vermin (VSS 🕰️)
 
+**Overall**: B — Survivability เป็น S แต่ breadth แคบมาก (มีแค่ Damage/Utility ที่ขยับตามเล็กน้อย) Support/Control/AE/Versatility นิ่งสนิท
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Infested ตอบโต้ดาเมจ 1d4 piercing อัตโนมัติทุกครั้งที่โดนตีประชิด (ไม่เสีย resource) [M:2/4] [R:3/3] [B:2/3] |
@@ -249,6 +297,9 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Versatility** | 8/10 (A) | โฟกัส tank-via-pet + passive retaliation เฉพาะทาง ไม่ขยาย role อื่นมาก = เท่า baseline |
 
 ### Circle of Wildfire (TCE 🕰️)
+
+**Overall**: S — Damage และ Versatility เป็น S ทั้งคู่ บวก Support กระโดด +4 (C→A) และขยับตามอีก 2 axis กว้างพอสมควร
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

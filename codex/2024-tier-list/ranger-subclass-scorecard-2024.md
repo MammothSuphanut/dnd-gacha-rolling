@@ -32,31 +32,34 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ไม่มี archetype ตัวไหนมีข้อความ explicit ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) หมายเหตุแหล่งที่มา: Beast Master/Fey Wanderer/Gloom Stalker/Hunter เป็น XPHB 2024 อย่างเป็นทางการ, Green Reaper/Primordial Archer/Vermin Lord เป็น GrimHollowPG24 (`classSource: XPHB` ยืนยัน compatible 2024), Hollow Warden (RHW) และ Winter Walker (FRHoF) เป็น 2024-compatible เช่นกัน (อ้างอิง XPHB chassis), ส่วน Beastborne/Drakewarden/Freerunner/Highwayman/Horizon Walker/Monster Slayer/Spellbreaker/Swarmkeeper/Trophy Hunter/Vigilante เป็น 2014-only orphan 🕰️ (ไม่มี reprint ใน XPHB)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Beast Master | XPHB | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
-| Beastborne | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 6 (B) |
-| Drakewarden | FTD 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 8 (A) | 6 (B) |
-| Fey Wanderer | XPHB | 7 (A) | 6 (B) | 2 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
-| Freerunner | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 5 (B) |
-| Gloom Stalker | XPHB | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 8 (A) | 6 (B) |
-| Green Reaper | GrimHollowPG24 | 9 (S) | 8 (A) | 0 (D) | 8 (A) | 5 (B) | 7 (A) | 8 (A) |
-| Highwayman | VSS 🕰️ | 6 (B) | 3 (C) | 2 (D) | 7 (A) | 8 (A) | 7 (A) | 5 (B) |
-| Hollow Warden | RHW | 8 (A) | 7 (A) | 0 (D) | 9 (S) | 6 (B) | 7 (A) | 8 (A) |
-| Horizon Walker | XGE 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 6 (B) | 9 (S) | 6 (B) |
-| Hunter | XPHB | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 7 (A) | 6 (B) |
-| Monster Slayer | XGE 🕰️ | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 5 (B) |
-| Primordial Archer | GrimHollowPG24 | 8 (A) | 6 (B) | 3 (C) | 7 (A) | 5 (B) | 8 (A) | 7 (A) |
-| Spellbreaker | VSS 🕰️ | 7 (A) | 8 (A) | 0 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
-| Swarmkeeper | TCE 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 6 (B) |
-| Trophy Hunter | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 5 (B) |
-| Vermin Lord | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 7 (A) | 6 (B) |
-| Vigilante | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 9 (S) | 7 (A) |
-| Winter Walker | FRHoF | 8 (A) | 7 (A) | 6 (B) | 8 (A) | 4 (C) | 7 (A) | 8 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Beast Master | B | XPHB | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
+| Beastborne | A | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 6 (B) |
+| Drakewarden | A | FTD 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 8 (A) | 6 (B) |
+| Fey Wanderer | A | XPHB | 7 (A) | 6 (B) | 2 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
+| Freerunner | B | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 5 (B) |
+| Gloom Stalker | A | XPHB | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 8 (A) | 6 (B) |
+| Green Reaper | S | GrimHollowPG24 | 9 (S) | 8 (A) | 0 (D) | 8 (A) | 5 (B) | 7 (A) | 8 (A) |
+| Highwayman | B | VSS 🕰️ | 6 (B) | 3 (C) | 2 (D) | 7 (A) | 8 (A) | 7 (A) | 5 (B) |
+| Hollow Warden | S | RHW | 8 (A) | 7 (A) | 0 (D) | 9 (S) | 6 (B) | 7 (A) | 8 (A) |
+| Horizon Walker | A | XGE 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 6 (B) | 9 (S) | 6 (B) |
+| Hunter | B | XPHB | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 7 (A) | 6 (B) |
+| Monster Slayer | A | XGE 🕰️ | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 5 (B) |
+| Primordial Archer | A | GrimHollowPG24 | 8 (A) | 6 (B) | 3 (C) | 7 (A) | 5 (B) | 8 (A) | 7 (A) |
+| Spellbreaker | A | VSS 🕰️ | 7 (A) | 8 (A) | 0 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
+| Swarmkeeper | A | TCE 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 6 (B) |
+| Trophy Hunter | B | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 5 (B) |
+| Vermin Lord | A | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 7 (A) | 6 (B) |
+| Vigilante | A | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 9 (S) | 7 (A) |
+| Winter Walker | S | FRHoF | 8 (A) | 7 (A) | 6 (B) | 8 (A) | 4 (C) | 7 (A) | 8 (A) |
 
 ---
 
 ### Beast Master (XPHB)
+
+**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Action Economy/Versatility) Support/Control/Survivability นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -70,6 +73,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Beastborne (VSS 🕰️)
 
+**Overall**: A — Damage เป็น S ใหม่ บวก Survivability/Action Economy/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Bestial Aspect เป็นระบบ damage pool ที่สะสมจากการตี/โดนตี แล้วปลดล็อกโบนัสดาเมจสะสม (+2 ถึง +3 ต่อ threshold, สูงสุดรวมมหาศาลที่ pool 100) บวกกรงเล็บ 1d6+Str slashing แถม extra 1d6 ที่ pool 100 — magnitude สูงมากแต่ต้องไต่ pool ก่อน [M:4/4] [R:2/3] [B:3/3] |
@@ -81,6 +87,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | Pool system เดียวครอบคลุมทั้งดาเมจ/ต้านทาน/ความเร็ว ปรับตามสถานการณ์การต่อสู้ [M:2/4] [R:2/3] [B:2/3] |
 
 ### Drakewarden (FTD 🕰️)
+
+**Overall**: A — Damage เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis กลางๆ (Survivability/AE/Utility/Versatility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -94,6 +103,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Fey Wanderer (XPHB)
 
+**Overall**: A — Utility เป็น S ใหม่ บวก Control กระโดด +3 และขยับตามอีก 2 axis แต่ Support แทบไม่ขยับ (0→2)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Dreadful Strikes ให้ extra 1d4→1d6 Psychic dmg ทุกครั้งที่ตีโดน "once per turn" แบบไม่จำกัดจำนวนครั้ง/วัน — magnitude กลางแต่ reliability สูงมาก [M:2/4] [R:3/3] [B:2/3] |
@@ -105,6 +117,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | ผสมดาเมจ/control/mobility/summon กระจายทั่วทุกแกน [M:2/4] [R:2/3] [B:2/3] |
 
 ### Freerunner (VSS 🕰️)
+
+**Overall**: B — ขยับ 4 axis เล็กน้อย ไม่มี peak ถึง S เลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -118,6 +133,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Gloom Stalker (XPHB)
 
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis พร้อมกันแบบกลางๆ กว้างที่สุดในกลุ่มที่ไม่มี S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Dread Ambusher ให้ extra 2d6→2d8 Psychic dmg (Wis mod ครั้ง/long rest) บวก Stalker's Flurry (lv11) เพิ่มโอกาสเลือก Sudden Strike ให้ตีเป้าที่สองเพิ่ม [M:3/4] [R:2/3] [B:3/3] |
@@ -129,6 +147,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | Stalker's Flurry เลือกได้ระหว่าง Sudden Strike (ดาเมจ) กับ Mass Fear (control) ทุกครั้งที่ trigger [M:2/4] [R:2/3] [B:2/3] |
 
 ### Green Reaper (GrimHollowPG24)
+
+**Overall**: S — Damage เป็น S ใหม่ บวก Control และ Versatility กระโดด +5 ทั้งคู่ — สอง swing ใหญ่ที่สุดในกลุ่ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -142,6 +163,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Highwayman (VSS 🕰️)
 
+**Overall**: B — ขยับ 3 axis (Survivability/AE/Versatility) Action Economy กระโดด +4 แต่ไม่มี S และ Support/Control นิ่งสนิท
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Opportunity attack ผ่าน Nobody Move! (reaction เมื่อพวกพ้อง trigger OA) และ No Seriously, Don't Move! (lv11, ตีได้ 2 ครั้งตอนทำ OA) เป็นดาเมจแบบมีเงื่อนไข ต้องพึ่งพวกพ้อง provoke ก่อน [M:2/4] [R:1/3] [B:2/3] |
@@ -153,6 +177,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 5/10 (B) | ธีมพึ่งพาทีมชัดเจน (reaction ผูกกับการกระทำของพวกพ้อง) breadth แคบกว่ากลุ่มที่ครอบคลุมหลายแกนเอง [M:2/4] [R:1/3] [B:2/3] |
 
 ### Hollow Warden (RHW)
+
+**Overall**: S — Survivability พุ่งเป็น 9 (S) บวก Control กระโดด +4 และ Versatility กระโดด +5 — กว้างและแรงพร้อมกัน
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -166,6 +193,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Horizon Walker (XGE 🕰️)
 
+**Overall**: A — Utility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis กลางๆ (Damage/Control/Survivability/AE/Versatility)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Planar Warrior (bonus action mark, extra 1d8→2d8 Force dmg ตีครั้งถัดไป ไม่จำกัดครั้ง/วัน) + Distant Strike (lv11, ตีเป้าที่ 3 เพิ่มถ้าโจมตี 2 เป้าต่างกัน) [M:3/4] [R:3/3] [B:2/3] |
@@ -177,6 +207,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | ผสมดาเมจ/control/mobility ข้ามระนาบในธีมเดียว [M:2/4] [R:2/3] [B:2/3] |
 
 ### Hunter (XPHB)
+
+**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -190,6 +223,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Monster Slayer (XGE 🕰️)
 
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Control กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Slayer's Prey (bonus action mark, extra 1d6 dmg ครั้งแรกที่ตีโดนแต่ละเทิร์น จนกว่าจะพัก) เป็น magnitude กลางแต่ reliable ตลอดการต่อสู้ [M:2/4] [R:2/3] [B:2/3] |
@@ -201,6 +237,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 5/10 (B) | ผสม control/damage/defense รอบธีม "prey" เป้าเดียว breadth ปานกลาง [M:2/4] [R:1/3] [B:2/3] |
 
 ### Primordial Archer (GrimHollowPG24)
+
+**Overall**: A — ขยับขึ้น 6 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มที่ไม่มี S peak
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -214,6 +253,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Spellbreaker (VSS 🕰️)
 
+**Overall**: A — Utility เป็น S ใหม่ บวก Control กระโดด +5 และขยับตามอีก 2 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Antimagic Strike (bonus action once/turn, extra 1d6→2d6 Force dmg เพิ่มเป็น 2d6 ถ้าเป้ากำลัง Concentration) + Arcane Burst (lv11, AoE nova จาก spell slot) [M:2/4] [R:2/3] [B:3/3] |
@@ -225,6 +267,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | ธีมโฟกัส anti-magic ชัดเจน breadth แคบกว่าแม้แต่ละเครื่องมือจะแรง [M:2/4] [R:2/3] [B:2/3] |
 
 ### Swarmkeeper (TCE 🕰️)
+
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis พร้อมกันแบบกลางๆ
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -238,6 +283,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Trophy Hunter (VSS 🕰️)
 
+**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Trophy ให้ +2 dmg ต่อเป้าประเภทตรง (แคบ) + Visceral Attack (1/rest, ดาเมจ dice สูงสุดทันที) + Fell The Leviathan (lv11, ตีเพิ่มต่อเป้า Large+) — magnitude ดีแต่มีเงื่อนไขหลายชั้น [M:3/4] [R:1/3] [B:3/3] |
@@ -249,6 +297,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 5/10 (B) | ธีม "ล่าเป้าเดี่ยวตัวใหญ่" ชัดเจน breadth แคบกว่ากลุ่มผสมหลายแกน [M:2/4] [R:1/3] [B:2/3] |
 
 ### Vermin Lord (GrimHollowPG24)
+
+**Overall**: A — Action Economy กระโดด +4 บวกขยับขึ้นอีก 3 axis กลางๆ (Damage/Survivability/Versatility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -262,6 +313,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Vigilante (VSS 🕰️)
 
+**Overall**: A — Utility เป็น S ใหม่ บวก Versatility กระโดด +4 และขยับตามอีก 3 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Hand-To-Hand ให้หมัดสเกลดาเมจ (1d6→1d12) + extra die ด้วย bonus action + Biff! Bam! Pow! (lv11, ตี 2 ครั้งแทน 1 ด้วย disadvantage) + Catchphrase (+Wis mod ดาเมจชั่วคราว) [M:3/4] [R:2/3] [B:2/3] |
@@ -273,6 +327,9 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผสม brawler/control/defense/mobility ในตัวเดียว breadth กว้าง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Winter Walker (FRHoF)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 6 (D→B) — แก้จุดอ่อนใหญ่สุดของ baseline บวก Control กระโดด +4 และ Versatility กระโดด +5 กว้างและแรงพร้อมกันที่สุดในกลุ่ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

@@ -32,25 +32,28 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 
 **ที่มาข้อมูล**: `subclassFeature` array ใน `Mage Hand Press; Valda's Spire of Secrets - 2024.json` (className=Alchemist) — ทุก subclass source `ValdaSpire24` ยกเว้น Pigmentist/Resonator ที่เป็น `ValdaSpire24Extras`
 
-| Subclass | Damage | Control | Support | Survivability | Action Economy | Utility | Versatility |
-|---|---|---|---|---|---|---|---|
+| Subclass | Overall | Damage | Control | Support | Survivability | Action Economy | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|
 | **Class Baseline** | 7 (A) | 3 (C) | 4 (C) | 4 (C) | 4 (C) | 5 (B) | 6 (B) |
-| Amorist | 7 (A) | **8 (A)** | 4 (C) | 6 (B) | 5 (B) | **8 (A)** | 6 (B) |
-| Apothecary | 7 (A) | 3 (C) | **10 (S)** | 4 (C) | 4 (C) | 5 (B) | 6 (B) |
-| Dynamo Engineer | 8 (A) | 6 (B) | 4 (C) | 4 (C) | 5 (B) | 7 (A) | 8 (A) |
-| Mad Bomber | **9 (S)** | 3 (C) | 4 (C) | 5 (B) | 4 (C) | 5 (B) | 6 (B) |
-| Mutagenist | 7 (A) | 3 (C) | 4 (C) | 5 (B) | 4 (C) | 5 (B) | 7 (A) |
-| Ooze Rancher | 7 (A) | 5 (B) | 4 (C) | 6 (B) | 5 (B) | 5 (B) | 6 (B) |
-| Pigmentist | 7 (A) | 3 (C) | 4 (C) | 4 (C) | 4 (C) | 6 (B) | 7 (A) |
-| Resonator | 7 (A) | 4 (C) | 5 (B) | 6 (B) | 4 (C) | 6 (B) | 7 (A) |
-| Venomsmith | 8 (A) | 3 (C) | 4 (C) | 6 (B) | 6 (B) | 5 (B) | 6 (B) |
-| Xenoalchemist | 8 (A) | 7 (A) | 4 (C) | 4 (C) | 5 (B) | 6 (B) | 7 (A) |
+| Amorist | A | 7 (A) | **8 (A)** | 4 (C) | 6 (B) | 5 (B) | **8 (A)** | 6 (B) |
+| Apothecary | B | 7 (A) | 3 (C) | **10 (S)** | 4 (C) | 4 (C) | 5 (B) | 6 (B) |
+| Dynamo Engineer | A | 8 (A) | 6 (B) | 4 (C) | 4 (C) | 5 (B) | 7 (A) | 8 (A) |
+| Mad Bomber | B | **9 (S)** | 3 (C) | 4 (C) | 5 (B) | 4 (C) | 5 (B) | 6 (B) |
+| Mutagenist | C | 7 (A) | 3 (C) | 4 (C) | 5 (B) | 4 (C) | 5 (B) | 7 (A) |
+| Ooze Rancher | B | 7 (A) | 5 (B) | 4 (C) | 6 (B) | 5 (B) | 5 (B) | 6 (B) |
+| Pigmentist | C | 7 (A) | 3 (C) | 4 (C) | 4 (C) | 4 (C) | 6 (B) | 7 (A) |
+| Resonator | B | 7 (A) | 4 (C) | 5 (B) | 6 (B) | 4 (C) | 6 (B) | 7 (A) |
+| Venomsmith | B | 8 (A) | 3 (C) | 4 (C) | 6 (B) | 6 (B) | 5 (B) | 6 (B) |
+| Xenoalchemist | A | 8 (A) | 7 (A) | 4 (C) | 4 (C) | 5 (B) | 6 (B) | 7 (A) |
 
 ไม่มี subclass ตัวไหนต่ำกว่า baseline เลยสักแกน (ไม่มี prerequisite ที่ตัดทอนความสามารถแบบ Sacred Knight)
 
 ---
 
 ### Amorist — สาย charm/social control
+
+**Overall**: A — Control กระโดดจาก C ไป A (3→8) บวก Utility A (3→8) และ Survivability/Action Economy ขยับเป็น B — control specialist ที่กว้างพอสมควร ไม่มี axis ไหนถึง S
+
 
 *Pheromone Bomb (AoE Charmed) + Beguiling Perfume (บังคับศัตรูเปลี่ยนเป้า/เสียการโจมตี) + Magnetic Personality (Influence เป็น Bonus Action + เปลี่ยนทัศนคติศัตรู)*
 
@@ -66,6 +69,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 
 ### Apothecary — สาย healer เต็มตัว
 
+**Overall**: B — Support พุ่งเป็น 10/10 (S) เต็มสเกล แต่เป็น axis เดียวที่ขยับเลย อีก 6 axis เท่า baseline หมด — one-trick healer ที่สุดขั้วด้านเดียวจริงๆ
+
+
 *Painkiller Bomb (AoE temp HP) + Concentrated Healing (potion ฮีลเต็มครึ่งนึง) + Alchemical Resurrection (ชุบชีวิตจริง!) + Miracle Serum*
 
 | Axis | คะแนน | เหตุผล |
@@ -79,6 +85,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 | Versatility | 6/10 (B) | เจาะจงสาย healer เต็มตัว ไม่ได้ขยาย role อื่น = baseline พอดี [M:2/4] [R:2/3] [B:2/3] |
 
 ### Dynamo Engineer — ได้ spellcasting จริงจาก Wizard spell list
+
+**Overall**: A — ขยับขึ้น 5 ใน 7 axis (Damage/Control/Action Economy/Utility/Versatility) กว้างที่สุดในกลุ่ม แต่ไม่มี axis ไหนถึง S เลย
+
 
 *Spell Dynamos (ระบบ slot แยกที่ cast Wizard spell ได้จริง) + Arcano Bomb (Force damage d12) + Counter-Discharge/Arcane Recycler (โต้คาถาศัตรู)*
 
@@ -94,6 +103,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 
 ### Mad Bomber — สาย blast ล้วนๆ
 
+**Overall**: B — Damage พุ่งเป็น S (9/10) แต่มีแค่ Survivability ที่ขยับตามเล็กน้อย (+1) ที่เหลือเท่า baseline หมด — blaster เฉพาะทางแคบ
+
+
 *Black Powder Bomb (d12 ทะลุ Fire resistance/immunity) + Overloaded Charge (Prime Bomb ฟรีเพิ่ม) + Blast Shield*
 
 | Axis | คะแนน | เหตุผล |
@@ -107,6 +119,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 | Versatility | 6/10 (B) | เจาะจงสาย pure-blaster เต็มตัว ไม่ได้ขยาย role อื่น = baseline พอดี [M:2/4] [R:2/3] [B:2/3] |
 
 ### Mutagenist — สาย self-buff/transformation
+
+**Overall**: C — มีแค่ 2 axis ขยับจาก baseline แบบเล็กน้อย (Survivability/Versatility +1) ที่เหลือ 5 axis นิ่งสนิท เป็นตัวที่เพิ่มน้อยที่สุดในกลุ่ม
+
 
 *Mutagens (บัฟร่างกายชั่วคราวเลือกได้) + Shared Mutagen (แบ่งให้ ally) + Advanced Mutation*
 
@@ -122,6 +137,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 
 ### Ooze Rancher — สาย pet/summoner ตัวเล็ก
 
+**Overall**: B — ขยับขึ้น 3 axis แบบกลางๆ (Control/Survivability/Action Economy +1 ถึง +2) ไม่มี peak เด่นชัด
+
+
 *Bottled Oozes (สัตว์เลี้ยง) + Sacrificial Slime (สลับเป้าโจมตีไปที่ Ooze) + Slime Bomb*
 
 | Axis | คะแนน | เหตุผล |
@@ -135,6 +153,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 | Versatility | 6/10 (B) | Elemental Oozes (lv14) ปรับ Ooze ให้ immune+ฟื้น HP จากดาเมจชนิดที่เลือกได้ เป็นการปรับแต่งสัตว์เลี้ยง ไม่ได้ขยาย role ของ Alchemist เองมาก = baseline พอดี [M:2/4] [R:2/3] [B:2/3] |
 
 ### Pigmentist — สาย paint-themed
+
+**Overall**: C — มีแค่ 2 axis ขยับเล็กน้อย (Utility/Versatility +1) ที่เหลือ 5 axis เท่า baseline หมด แคบพอกับ Mutagenist
+
 
 *Paint Bombs (มาร์คดาเมจตามสี) + Palette Portals (เทเลพอร์ตผ่านสี) + Pigment Potions*
 
@@ -150,6 +171,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 
 ### Resonator — สาย เสียง/คลื่นสั่นสะเทือน
 
+**Overall**: B — ขยับขึ้น 5 axis แต่ทุกตัวขยับแค่ +1 ถึง +2 เท่านั้น กว้างแต่ตื้น ไม่มี peak ไหนแรงจริง
+
+
 *Resonant Frequency (ดาเมจอัตโนมัติใส่วัสดุที่เลือก) + Flashbang (ป้องกัน OA หมู่) + Audio Enhancer (Blindsight)*
 
 | Axis | คะแนน | เหตุผล |
@@ -164,6 +188,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 
 ### Venomsmith — สาย poison เต็มตัว
 
+**Overall**: B — ขยับขึ้น 3 axis กลางๆ (Damage/Survivability/Action Economy) ไม่มี peak เด่นชัดเหมือน Ooze Rancher
+
+
 *Alchemical Assassin (แหวนพิษ Bonus Action) + Toxic Recompense (พ่นพิษตอบโต้) + Mithridatism*
 
 | Axis | คะแนน | เหตุผล |
@@ -177,6 +204,9 @@ Floor 0-10 ต่อ axis ของ **Alchemist เปล่าๆ ไม่น�
 | Versatility | 6/10 (B) | เจาะจงสาย poison เต็มตัว ไม่ได้ขยาย role อื่นชัดเจน = baseline พอดี [M:2/4] [R:2/3] [B:2/3] |
 
 ### Xenoalchemist — สาย monster-graft + golem
+
+**Overall**: A — Control กระโดดจาก C ไป A (3→7) บวก Damage/Action Economy/Utility/Versatility ขยับตาม กว้างเทียบเท่า Dynamo Engineer
+
 
 *Mad Scientist (graft สัตว์ประหลาดฟรี 2 ชิ้น) + Sleep Bomb (hard-CC) + It's Alive! (Golem ถาวร)*
 

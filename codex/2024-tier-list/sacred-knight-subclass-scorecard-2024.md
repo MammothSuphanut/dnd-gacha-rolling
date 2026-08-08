@@ -36,15 +36,15 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 **⚠️ กติกาพิเศษของ 2 Throne ที่มี Path prerequisite**: Throne of Doom and Slaughter บังคับ Retribution Path และ Throne of Protection and Mercy บังคับ Guardian Path — Path prerequisite เป็นกลไกที่ตัดทอนบางส่วนของ Class Baseline ออกจริง (baseline เครดิต "ถ้าเลือก Guardian Path จะเข้าถึง Spirit Ward/Guardian's Blessing" และ "ถ้าเลือก Retribution/Formless Path จะเข้าถึง Light Sword/Cross Slash" แบบมีเงื่อนไข) ดังนั้น 2 Throne นี้จึงมีบาง axis ต่ำกว่า baseline ได้ตามกติกา "subclass ตัดทอนความสามารถออกไปจริง" — **Throne อีก 4 ตัวไม่มี prerequisite เลือก Path ไหนก็ได้** จึงห้ามให้คะแนนต่ำกว่า baseline ในทุก axis (คะแนน = baseline พอดีถ้าไม่ได้เสริมอะไรเพิ่ม)
 
-| Throne | Damage | Control | Support | Survivability | Action Economy | Utility | Versatility |
-|---|---|---|---|---|---|---|---|
-| **Class Baseline** | 7 (A) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 5 (B) | 8 (A) |
-| Doom and Slaughter 🗡️ | 9 (S) | 3 (C) | 0 (D) ↓ | 4 (C) ↓ | 8 (A) | 5 (B) | 6 (B) ↓ |
-| Eternity and Creation | 8 (A) | 3 (C) | 8 (A) | 9 (S) | 7 (A) | 5 (B) | 9 (S) |
-| Fear and Sorrow | 9 (S) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 5 (B) | 8 (A) |
-| Order and Law | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 8 (A) | 5 (B) | 9 (S) |
-| Protection and Mercy 🛡️ | 5 (B) ↓ | 3 (C) | 8 (A) | 9 (S) | 8 (A) | 5 (B) | 5 (B) ↓ |
-| Wisdom and Spirit | 7 (A) | 3 (C) | 8 (A) | 8 (A) | 8 (A) | 5 (B) | 9 (S) |
+| Throne | Overall | Damage | Control | Support | Survivability | Action Economy | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|
+| **Class Baseline** | — | 7 (A) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 5 (B) | 8 (A) |
+| Doom and Slaughter 🗡️ | C | 9 (S) | 3 (C) | 0 (D) ↓ | 4 (C) ↓ | 8 (A) | 5 (B) | 6 (B) ↓ |
+| Eternity and Creation | S | 8 (A) | 3 (C) | 8 (A) | 9 (S) | 7 (A) | 5 (B) | 9 (S) |
+| Fear and Sorrow | B | 9 (S) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 5 (B) | 8 (A) |
+| Order and Law | A | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 8 (A) | 5 (B) | 9 (S) |
+| Protection and Mercy 🛡️ | B | 5 (B) ↓ | 3 (C) | 8 (A) | 9 (S) | 8 (A) | 5 (B) | 5 (B) ↓ |
+| Wisdom and Spirit | A | 7 (A) | 3 (C) | 8 (A) | 8 (A) | 8 (A) | 5 (B) | 9 (S) |
 
 🗡️ = ต้องเลือก Retribution Path เท่านั้น · 🛡️ = ต้องเลือก Guardian Path เท่านั้น · ↓ = ต่ำกว่า baseline โดยมีกลไกตัดทอนชัดเจน (ระบุในเหตุผล)
 
@@ -53,6 +53,8 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 ### Throne of Doom and Slaughter 🗡️
 
 *ปรับ Cross Slash (Retribution) ให้เป็นเครื่องยนต์ดาเมจล้วนๆ — Blood for Blood/Sealed Fate/Final Verdict/capstone*
+
+**Overall**: C — Damage พุ่งเป็น S (9/10) สูงสุดในกลุ่มร่วมกับ Fear and Sorrow แต่ Retribution-lock ตัด **3 axis ให้ต่ำกว่า baseline จริง** (Support 0, Survivability 4, Versatility 6) ไม่ใช่แค่คงที่เฉยๆ — glass cannon ที่จ่ายราคาแพงกว่า Throne อื่นทุกตัวเพื่อแลกดาเมจสูงสุด
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -68,6 +70,8 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *แปลง Pure White Blade (Universal) ให้เป็น AoE + เพิ่ม Everlasting Grace เป็นฮีล/temp-HP เต็มรูปแบบ — hybrid damage/support ที่กว้างที่สุดในบรรดา Throne*
 
+**Overall**: S — ไม่มี Path prerequisite เลยจึงไม่มีทางเสียแต้มเลยสักแกน แถมยกระดับ 4 ใน 7 axis พร้อมกัน (Damage A, Support A, Survivability S, Versatility S) กว้างที่สุดในบรรดา Throne ทั้งหมด ไม่มีจุดอ่อนที่แท้จริงเลย
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | Damage | 8/10 (A) | Genesis Wave (lv6) แปลง Pure White Blade เป็น AoE 5-10ft square ได้ (จ่าย Fervor เพิ่ม) และ capstone (lv17) ยิงได้หลายเป้าพร้อมกัน (เท่า Wis mod) บวก Absolute Genesis (lv14) ที่ทำให้ทะลุ resistance ดาเมจกายภาพ — ขยาย breadth การส่งดาเมจจากเดี่ยวเป็นกลุ่มได้จริง [M:2/4] [R:3/3] [B:3/3] |
@@ -81,6 +85,8 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 ### Throne of Fear and Sorrow
 
 *จ่าย HP แลก Fervor เพิ่ม + Faith Halo คูณเป็น auto-crit สามเท่า — glass cannon ดาเมจสูงสุดที่ไม่ผูก Path*
+
+**Overall**: B — Damage S (9/10) เท่า Doom and Slaughter แต่ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย — แลกกับไม่มี axis อื่นขยับขึ้นจาก baseline สักตัว (Control/Support/Survivability/AE/Utility/Versatility เท่า baseline หมด) เป็น one-note damage specialist ที่ไม่มีจุดอ่อนแต่ก็ไม่มี breadth เพิ่มเลย
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -96,6 +102,8 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *แปลง Swift (Universal) ให้เป็นเครื่องมือขับเคลื่อน+เสริมพลังทั้งทีม — support กระจายหลาย ally พร้อมกัน*
 
+**Overall**: A — ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 3 axis พร้อมกัน (Support S, Action Economy A, Versatility S) เป็น support specialist ที่กว้างรองจาก Eternity and Creation เท่านั้น แต่ Damage/Survivability/Control/Utility ไม่ขยับเลยสักตัว
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | Damage | 7/10 (A) | ไม่มี feature เพิ่มดาเมจของตัวเอง (ฟีเจอร์ทั้งหมดเล็ง ally) = baseline พอดี [M:2/4] [R:3/3] [B:2/3] |
@@ -110,6 +118,8 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *Sealed Wrath แปลงดาเมจที่ทนไว้เป็นดาเมจตอบโต้ + Compassion's Toll แปลง HP เป็น Fervor — ป้อมปราการตัวจริงของ 6 Throne*
 
+**Overall**: B — Guardian-lock ตัด **2 axis ให้ต่ำกว่า baseline จริง** (Damage 5, Versatility 5) แต่แลกมาด้วย 3 axis ที่ขยับขึ้น (Support A, Survivability S, Action Economy A) เป็นการเทรดที่ได้มากกว่าเสีย (+3/-2) ต่างจาก Doom and Slaughter (+1/-3) ชัดเจน — แท็งค์/ซัพพอร์ตเฉพาะทางที่ยังมีจุดอ่อนจริงด้าน offense/breadth
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | Damage | 5/10 (B) ↓ | **Prerequisite: Guardian Path ตัด Retribution Path ออกถาวร** ทำให้ไม่มีทางเข้าถึง Light Sword/Cross Slash เลย (baseline 7/10 ส่วนหนึ่งมาจากเครดิตแบบมีเงื่อนไขของ Retribution) ชดเชยด้วย Sealed Wrath (lv3) ที่แปลงดาเมจที่ Spirit Ward ทนไว้ (2:1 → 1:1 ที่ lv10) เป็นดาเมจ radiant สะสมปล่อยอัตโนมัติตอนตีติดครั้งถัดไป ไม่มี cap แต่ต้องโดนตีก่อนถึงจะมี ammo ให้ยิง [M:2/4] [R:2/3] [B:1/3] |
@@ -123,6 +133,8 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 ### Throne of Wisdom and Spirit
 
 *แปลง Clarity (Universal) ให้เป็นบัฟเดี่ยวทรงพลังสำหรับ ally 1 คน — concentrated support ที่แรงกว่า Order and Law ต่อเป้าเดียวแต่แคบกว่า*
+
+**Overall**: A — ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 3 axis เหมือน Order and Law (Support A, Action Economy A, Versatility S) แต่ Support ต่ำกว่า Order and Law หนึ่งขั้น (8 ไม่ใช่ 9) เพราะบัฟเดี่ยวเข้มข้นกว่าแต่กระจายได้แคบกว่า
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

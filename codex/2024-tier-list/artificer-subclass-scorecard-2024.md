@@ -34,18 +34,21 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ไม่มี subclass ตัวไหนมี prerequisite หรือกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) **Alchemist/Armorer/Artillerist/Battle Smith ให้คะแนนใหม่ด้วยกลไก EFA (2024) แทน TCE (2014) เดิม** — ดูหมายเหตุแก้ไขด้านบนของไฟล์
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Alchemist | EFA | 6 (B) | 3 (C) | 9 (S) | 7 (A) | 4 (C) | 8 (A) | 7 (A) |
-| Armorer | EFA | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) |
-| Artillerist | EFA | 8 (A) | 4 (C) | 8 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) |
-| Battle Smith | EFA | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 7 (A) |
-| Cartographer | EFA | 6 (B) | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 9 (S) | 9 (S) |
-| Reanimator | RHW (*Ravenloft: The Horrors Within*) | 7 (A) | 5 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) | 9 (S) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Alchemist | A | EFA | 6 (B) | 3 (C) | 9 (S) | 7 (A) | 4 (C) | 8 (A) | 7 (A) |
+| Armorer | S | EFA | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) |
+| Artillerist | S | EFA | 8 (A) | 4 (C) | 8 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) |
+| Battle Smith | A | EFA | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 7 (A) |
+| Cartographer | S | EFA | 6 (B) | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 9 (S) | 9 (S) |
+| Reanimator | S | RHW (*Ravenloft: The Horrors Within*) | 7 (A) | 5 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) | 9 (S) |
 
 ---
 
 ### Alchemist (EFA)
+
+**Overall**: A — Support S (9/10) สูงสุดในกลุ่ม บวก Survivability/Utility A แต่ Action Economy ยังค้างที่ baseline (4, C) — healer/buffer เฉพาะทางที่แรงสุดด้าน support แต่ Action Economy ไม่ขยับเลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -59,6 +62,9 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Armorer (EFA)
 
+**Overall**: S — Versatility S (9/10) บวก Damage/Survivability/Utility ล้วน A พร้อมกัน ไม่มี axis ไหนอยู่ต่ำกว่า B เลย เป็น all-rounder ที่กว้างและแรงพร้อมกัน
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ได้ **Extra Attack ที่ lv5** ซึ่ง baseline chassis ของ Artificer ไม่มีเลย บวกอาวุธประจำ Armor Model ที่ใช้ Int mod แทน Str/Dex (Force Demolisher 1d10 force reach+ผลัก/ดึง 10ft, Thunder Pulse 1d8 thunder, Lightning Launcher 1d6+1d6 lightning) บวก Improved Arsenal (lv9, +1 atk/dmg) และ Perfected Armor (lv15) ยกดาเมจอาวุธเป็น 2d6/1d10/2d6 ตามโมเดล — magnitude กระโดดสูงกว่า baseline มากเพราะปกติ Artificer ไม่ได้ออกแบบมาเป็น weapon-attacker [M:3/4] [R:3/3] [B:2/3] |
@@ -70,6 +76,9 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 | **Versatility** | 9/10 (S) | เลือกสลับได้ถึง **3 Armor Model** — Dreadnaught (บุก-เพิ่มขนาด/reach), Guardian (แทงค์-forced movement), Infiltrator (skirmisher-stealth) — ได้ทุก short/long rest แค่มี Smith's Tools ในมือ (2024 เพิ่ม Dreadnaught เข้ามาใหม่ 2014 มีแค่ 2 โมเดล) ปรับ playstyle ทั้งชุดให้เข้ากับสถานการณ์ได้กว้างกว่าเดิมอีก [M:3/4] [R:3/3] [B:3/3] |
 
 ### Artillerist (EFA)
+
+**Overall**: S — Versatility S (9/10) บวก Damage/Support/Action Economy/Utility ล้วน A ครบเกือบทุกแกน มีแค่ Survivability ที่เป็น B เท่านั้นที่ไม่ถึง A
+
 
 > **หมายเหตุข้อมูล**: รายละเอียดโหมด Flamethrower/Force Ballista/Protector ของ Eldritch Cannon (EFA) อยู่ใน object stat block แยกที่ไม่มีอยู่ในไฟล์ data ที่ดึงมาได้ (มีแค่ชื่อ "Protector" ถูกอ้างถึงใน Explosive Cannon lv9 ยืนยันว่ายังมีโหมดนี้อยู่) ใช้ตัวเลขจากเวอร์ชัน TCE 2014 (2d8 dmg/ผลัก 5ft/1d8+Int temp HP) เป็น proxy ประมาณคะแนน เพราะกลไกฐาน (สร้าง cannon แบบ bonus action, Detonate) เหมือนกันเกือบทั้งหมด
 
@@ -85,6 +94,9 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Battle Smith (EFA)
 
+**Overall**: A — 5 ใน 7 axis อยู่ที่ A (Damage/Support/Action Economy/Utility/Versatility) กว้างมากแต่ไม่มี axis ไหนถึง S เลยสักตัว
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Martial weapon proficiency + ใช้ Int mod กับ magic weapon attack (Arcane Empowerment), Extra Attack (lv5), และ Arcane Jolt (lv9) เพิ่ม 2d6→4d6 (lv15) force damage ต่อการโจมตีที่โดน (ใช้ได้ทั้งจากตัวเองและจาก Steel Defender) — หลายแหล่งดาเมจซ้อนกันเหมือน Armorer [M:3/4] [R:3/3] [B:2/3] |
@@ -97,6 +109,9 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Cartographer (EFA)
 
+**Overall**: S — Utility และ Versatility S (9/10) พร้อมกันสองแกน บวก Support A — เป็น subclass เดียวในกลุ่มที่มี 2 axis เป็น S แม้ Damage/Action Economy จะแค่ B
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Guided Precision (lv5) บวก Int mod เข้าหนึ่ง damage roll ต่อเทิร์นเมื่อ cast Cartographer spell หรือโจมตีเป้าที่ติด Faerie Fire — reliable แต่ magnitude เท่า Alchemical Savant พอดี ไม่ใช่แหล่งดาเมจใหม่ [M:2/4] [R:2/3] [B:2/3] |
@@ -108,6 +123,9 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 | **Versatility** | 9/10 (S) | Adventurer's Atlas ใช้ได้ทุกสถานการณ์ (initiative, ignore-cover targeting) ไม่ผูกกับ combat type ใดโดยเฉพาะ บวก Faerie Fire ที่ใช้ได้ทั้งเป็น control/damage-enabler — ปรับใช้ได้กว้างกว่า baseline [M:3/4] [R:3/3] [B:3/3] |
 
 ### Reanimator (RHW, *Ravenloft: The Horrors Within*)
+
+**Overall**: S — Utility และ Versatility S (9/10) พร้อมกันเหมือน Cartographer แต่กระจายกว้างกว่า (Damage/Support/Action Economy ล้วน A แทนที่จะเป็น B) — กว้างที่สุดในกลุ่มทั้งหมด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

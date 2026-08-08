@@ -32,31 +32,34 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ไม่มี archetype ตัวไหนมีข้อความ explicit ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้นหรือ feature ที่มีแคบเกินกว่าจะขยับคะแนนรวม) หมายเหตุแหล่งที่มา: Arcane Trickster/Assassin/Soulknife/Thief เป็น XPHB 2024 อย่างเป็นทางการ, Scion of the Three (FRHoF) เป็น 2024-compatible, Phantom ใช้เวอร์ชัน RHW (reprint จาก TCE, 2024-compatible), Highway Rider/Misfortune Bringer/Sanguine Thief เป็น GrimHollowPG24 (2024), Arachnoid Stalker ใช้เวอร์ชัน ValdaPlayerPack (`classSource: XPHB` ยืนยัน compatible 2024), ส่วน Inquisitive/Mastermind/Scout/Swashbuckler (XGE) และ Enforcer/Grifter/Shadow Master/Temporal Trickster/Titan Slayer (VSS) เป็น 2014-only orphan 🕰️ (ไม่มี reprint ใน XPHB — ยืนยันแล้วว่าไฟล์ VSS 2024 ไม่มี Rogue subclass เหล่านี้)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Arachnoid Stalker | ValdaPlayerPack | 8 (A) | 8 (A) | 0 (D) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
-| Arcane Trickster | XPHB | 7 (A) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 9 (S) | 7 (A) |
-| Assassin | XPHB | 9 (S) | 4 (C) | 0 (D) | 6 (B) | 7 (A) | 8 (A) | 6 (B) |
-| Enforcer | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 7 (A) |
-| Grifter | VSS 🕰️ | 7 (A) | 4 (C) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
-| Highway Rider | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 8 (A) | 6 (B) |
-| Inquisitive | XGE 🕰️ | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 7 (A) | 9 (S) | 6 (B) |
-| Mastermind | XGE 🕰️ | 7 (A) | 4 (C) | 6 (B) | 7 (A) | 7 (A) | 8 (A) | 6 (B) |
-| Misfortune Bringer | GrimHollowPG24 | 7 (A) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 7 (A) |
-| Phantom | RHW | 7 (A) | 4 (C) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 6 (B) |
-| Sanguine Thief | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 9 (S) | 8 (A) |
-| Scion of the Three | FRHoF | 8 (A) | 6 (B) | 0 (D) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
-| Scout | XGE 🕰️ | 7 (A) | 4 (C) | 4 (C) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
-| Shadow Master | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 9 (S) | 7 (A) |
-| Soulknife | XPHB | 8 (A) | 6 (B) | 2 (D) | 7 (A) | 9 (S) | 8 (A) | 8 (A) |
-| Swashbuckler | XGE 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
-| Temporal Trickster | VSS 🕰️ | 7 (A) | 6 (B) | 4 (C) | 7 (A) | 8 (A) | 8 (A) | 7 (A) |
-| Thief | XPHB | 7 (A) | 4 (C) | 0 (D) | 6 (B) | 9 (S) | 9 (S) | 7 (A) |
-| Titan Slayer | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Arachnoid Stalker | S | ValdaPlayerPack | 8 (A) | 8 (A) | 0 (D) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
+| Arcane Trickster | A | XPHB | 7 (A) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 9 (S) | 7 (A) |
+| Assassin | B | XPHB | 9 (S) | 4 (C) | 0 (D) | 6 (B) | 7 (A) | 8 (A) | 6 (B) |
+| Enforcer | B | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 7 (A) |
+| Grifter | C | VSS 🕰️ | 7 (A) | 4 (C) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
+| Highway Rider | A | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 8 (A) | 6 (B) |
+| Inquisitive | B | XGE 🕰️ | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 7 (A) | 9 (S) | 6 (B) |
+| Mastermind | A | XGE 🕰️ | 7 (A) | 4 (C) | 6 (B) | 7 (A) | 7 (A) | 8 (A) | 6 (B) |
+| Misfortune Bringer | C | GrimHollowPG24 | 7 (A) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 7 (A) |
+| Phantom | C | RHW | 7 (A) | 4 (C) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 6 (B) |
+| Sanguine Thief | S | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 9 (S) | 8 (A) |
+| Scion of the Three | A | FRHoF | 8 (A) | 6 (B) | 0 (D) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
+| Scout | A | XGE 🕰️ | 7 (A) | 4 (C) | 4 (C) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
+| Shadow Master | S | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 9 (S) | 7 (A) |
+| Soulknife | S | XPHB | 8 (A) | 6 (B) | 2 (D) | 7 (A) | 9 (S) | 8 (A) | 8 (A) |
+| Swashbuckler | C | XGE 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
+| Temporal Trickster | A | VSS 🕰️ | 7 (A) | 6 (B) | 4 (C) | 7 (A) | 8 (A) | 8 (A) | 7 (A) |
+| Thief | S | XPHB | 7 (A) | 4 (C) | 0 (D) | 6 (B) | 9 (S) | 9 (S) | 7 (A) |
+| Titan Slayer | C | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
 
 ---
 
 ### Arachnoid Stalker (ValdaPlayerPack)
+
+**Overall**: S — Utility เป็น S ใหม่ (9/10) บวก Control กระโดด +4 และขยับขึ้นอีก 3 axis พร้อมกัน กว้างที่สุดในกลุ่ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -70,6 +73,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Arcane Trickster (XPHB)
 
+**Overall**: A — Utility เป็น S ใหม่ บวก Control/Versatility ขยับตามเล็กน้อย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Spell list เป็นตัวเลือกผู้เล่นเลือกเอง ไม่มี feature ดาเมจ fixed ใหม่จาก chassis = เท่า baseline |
@@ -81,6 +87,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผสม skulduggery (Mage Hand) + illusion-utility + control spell ทำให้ toolkit กว้างกว่า Rogue ทั่วไปมาก [M:2/4] [R:2/3] [B:3/3] |
 
 ### Assassin (XPHB)
+
+**Overall**: B — Damage เป็น S ใหม่ แต่ breadth แคบมาก มีแค่ Utility ที่ขยับตามอีกนิด Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -94,6 +103,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Enforcer (VSS 🕰️)
 
+**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Control/Survivability/Versatility) ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Double Attack (lv17, bonus action โจมตีเพิ่มรวม Sneak Attack ได้เมื่อฆ่าเป้าลง 0 HP) = เท่า baseline โดยประมาณ (เงื่อนไข "ต้องฆ่าก่อน" แคบกว่าฟีเจอร์ damage ทั่วไปในกลุ่ม) [M:2/4] [R:2/3] [B:2/3] |
@@ -105,6 +117,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | Brutal Attack ให้ Sneak Attack ใช้ได้กับอาวุธ simple/martial melee ใดๆ (ไม่จำกัดแค่ finesse) บวกเกราะกลาง — ขยาย build option เกินข้อจำกัดเดิมของ baseline ชัดเจน [M:2/4] [R:2/3] [B:3/3] |
 
 ### Grifter (VSS 🕰️)
+
+**Overall**: C — ขยับแค่ 1 axis (Survivability +1) ที่เหลือเท่า baseline หมด แคบที่สุดในกลุ่มร่วมกับ Misfortune Bringer/Phantom/Swashbuckler/Titan Slayer
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -118,6 +133,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Highway Rider (GrimHollowPG24)
 
+**Overall**: A — ขยับขึ้น 4 axis กลางๆ พร้อมกัน (Damage/Survivability/AE/Utility) ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Ride Them Down (Sneak Attack ไม่ต้องใช้ Advantage ถ้าตัวเองหรือม้าเคลื่อนที่ 20ft+) + Hair Trigger (reaction โจมตีฟรีตอน initiative ดีไม่มี Disadvantage) + Desperado (lv17, ใช้ Hair Trigger ได้แม้ตอน 0 HP) [M:2/4] [R:3/3] [B:3/3] |
@@ -129,6 +147,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | ธีม mounted combat โฟกัสชัดเจน breadth ปานกลาง = เท่า baseline |
 
 ### Inquisitive (XGE 🕰️)
+
+**Overall**: B — Utility เป็น S ใหม่ แต่ breadth แคบ มีแค่ Damage ที่ขยับตามอีกนิด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -142,6 +163,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Mastermind (XGE 🕰️)
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 6 (D→B) — แก้จุดอ่อนใหญ่สุดของ baseline บวก Survivability/Utility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature ดาเมจใหม่ = เท่า baseline |
@@ -153,6 +177,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | ธีม support/social ผสมกับ defense เล็กน้อย = เท่า baseline |
 
 ### Misfortune Bringer (GrimHollowPG24)
+
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Control/Versatility) Support ยังเป็น 0 เต็ม
+
 
 > **หมายเหตุข้อมูล**: รายการ "Misfortunes" เต็มรูปแบบ (คล้ายระบบ Eldritch Invocation) ไม่ปรากฏรายละเอียดในไฟล์ข้อมูลที่ดึงมา (มีแค่ชื่อระบบ Jinx Points) จึงให้คะแนน Damage/Control/Versatility แบบระมัดระวังจากฟีเจอร์ที่ยืนยันได้เท่านั้น (Evil Eye, Steal Luck, Curse Caster)
 
@@ -168,6 +195,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Phantom (RHW)
 
+**Overall**: C — ขยับแค่ 2 axis (Survivability/Utility) เล็กน้อย ไม่มี peak ใหม่
+
+
 > **หมายเหตุข้อมูล**: รายละเอียดของ soul trinket ทั้ง 3 แบบ (Death's Knell/Life Essence/Spirit Query) ใน Tokens of the Departed ไม่ปรากฏข้อความเต็มในไฟล์ข้อมูลที่ดึงมา (มีแค่ชื่อหัวข้อ) จึงให้คะแนน Support/Utility แบบระมัดระวังจากฟีเจอร์ที่ยืนยันได้เท่านั้น
 
 | Axis | คะแนน | เหตุผล |
@@ -182,6 +212,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Sanguine Thief (GrimHollowPG24)
 
+**Overall**: S — Utility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Survivability/AE/Versatility) กว้างมาก
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Bloody Blades (lv9, crit ด้วยกริชที่สร้างไว้ = extra Necrotic dice เท่าจำนวนที่ลงทุน) + Bloodstitch (lv13, AoE 30ft nova 3d8) + Bloody Exit (lv17, reaction โจมตีฟรีเพิ่ม extra 5d8) [M:3/4] [R:2/3] [B:3/3] |
@@ -193,6 +226,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 8/10 (A) | ระบบ dice pool คู่ (HD หรือ Sangromancy Dice ใช้แทนกันได้) ป้อนทั้งคาถา/ดาเมจ/ฮีล/หนี — breadth กว้างมาก [M:3/4] [R:2/3] [B:3/3] |
 
 ### Scion of the Three (FRHoF)
+
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -206,6 +242,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Scout (XGE 🕰️)
 
+**Overall**: A — Support ขยับบางส่วน (0→4) บวก Survivability/AE/Utility ขยับตามอีก 3 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Sudden Strike (lv17, โจมตีเพิ่มด้วย bonus action หลัง Attack action ใช้ Sneak Attack ได้) = เท่า baseline โดยประมาณ (ปลดล็อกช้ามาก) [M:2/4] [R:2/3] [B:2/3] |
@@ -217,6 +256,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | ธีม skirmish/scout ผสม support เล็กน้อย = เท่า baseline |
 
 ### Shadow Master (VSS 🕰️)
+
+**Overall**: S — Utility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Control/Survivability/AE/Versatility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -230,6 +272,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Soulknife (XPHB)
 
+**Overall**: S — Action Economy เป็น S ใหม่ บวกขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่มทั้งหมด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Psychic Blades ให้โจมตีที่สองด้วย bonus action ฟรีทุกเทิร์น (1d4) โดยไม่ต้องใช้อาวุธคู่จริง และเป็นได้ทั้ง melee/ranged [M:2/4] [R:3/3] [B:3/3] |
@@ -242,6 +287,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Swashbuckler (XGE 🕰️)
 
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Control/Survivability) ไม่มี peak ใหม่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Rakish Audacity (Sneak Attack ไม่ต้องใช้ Advantage ถ้าตัวต่อตัวไม่มีใครประกบ) + Master Duelist (lv17, ทอยโจมตีที่พลาดใหม่ด้วย Advantage, 1/รอบพัก) [M:2/4] [R:2/3] [B:2/3] |
@@ -253,6 +301,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | ธีม duelist โฟกัสดาเมจ/control/mobility เดี่ยวชัดเจน = เท่า baseline |
 
 ### Temporal Trickster (VSS 🕰️)
+
+**Overall**: A — Support ขยับบางส่วน (0→4) บวกขยับตามอีก 4 axis พร้อมกัน
+
 
 > **หมายเหตุข้อมูล**: คาถา chronomancy เฉพาะของ VSS (action, instant replay, delay, recall) และ cantrip moment to think ไม่มีข้อความเต็มปรากฏในไฟล์ข้อมูลที่ดึงมา (มีแค่ชื่อ) จึงให้คะแนนแบบระมัดระวังโดยอ้างอิงเฉพาะฟีเจอร์ที่ยืนยันได้ (Haste/Slow ที่รู้ effect แน่นอน, Time Dilation, Stop the Clock, การเคลื่อนที่จาก Moment to Act)
 
@@ -268,6 +319,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 
 ### Thief (XPHB)
 
+**Overall**: S — Action Economy และ Utility เป็น S ใหม่ทั้งคู่ บวก Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature ดาเมจโดยตรงใหม่ (Thief's Reflexes ให้เทิร์นเพิ่มซึ่งมีดาเมจแฝงอยู่ แต่คุณค่าหลักคือ Action Economy) = เท่า baseline |
@@ -279,6 +333,9 @@ Floor 0-10 ต่อ axis ของ **Rogue เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | Use Magic Device เปิดทางให้ใช้ scroll/item เกือบทุกชนิดได้ ขยาย toolkit กว้างมาก [M:2/4] [R:2/3] [B:3/3] |
 
 ### Titan Slayer (VSS 🕰️)
+
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Control/Survivability) เหมือน Swashbuckler ไม่มี peak ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

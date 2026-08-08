@@ -32,26 +32,29 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 13 จาก 14 subclass มาจาก `Valda's Spire of Secrets 2024` (ไม่มี 🕰️) ยกเว้น **Infernal Agent** ที่มีแค่ในไฟล์ 2014 (`ValdaSpireExtras`) — 🆕 ไม่เคยถูกวิเคราะห์มาก่อนในไฟล์ tier-list เก่า และไม่มี reprint 2024 จึงเป็น orphan ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) หมายเหตุ: เนื้อหา Trinkets ของแต่ละ subclass (สเปลฟรีที่เลือกได้ 3 ตัว) คือสิ่งที่กำหนดว่า subclass นั้นเสริมแกนไหนเป็นหลัก เพราะ baseline Trinkets เองไม่มีสเปลติดตัวเลย
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Antiquarian | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 7 (A) | 7 (A) | 9 (S) | 8 (A) |
-| Archivist | ValdaSpire24 | 7 (A) | 6 (B) | 6 (B) | 3 (C) | 6 (B) | 10 (S) | 8 (A) |
-| Conspiracy Theorist | ValdaSpire24Extras | 8 (A) | 5 (B) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) |
-| Containment Specialist | ValdaSpire24Extras | 7 (A) | 8 (A) | 6 (B) | 3 (C) | 6 (B) | 9 (S) | 7 (A) |
-| Detective | ValdaSpire24 | 8 (A) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 9 (S) | 7 (A) |
-| Exterminator | ValdaSpire24 | 9 (S) | 6 (B) | 6 (B) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
-| Infernal Agent | ValdaSpireExtras 🕰️ | 9 (S) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 7 (A) | 8 (A) |
-| Infernum | ValdaSpire24Extras | 9 (S) | 7 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
-| Inquisitor | ValdaSpire24 | 9 (S) | 8 (A) | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 8 (A) |
-| Kid Sleuth | ValdaSpire24Extras | 7 (A) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
-| Medium | ValdaSpire24 | 8 (A) | 5 (B) | 8 (A) | 6 (B) | 7 (A) | 9 (S) | 8 (A) |
-| Occultist | ValdaSpire24 | 9 (S) | 8 (A) | 6 (B) | 3 (C) | 8 (A) | 9 (S) | 8 (A) |
-| Spy | ValdaSpire24 | 8 (A) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 9 (S) | 7 (A) |
-| Time Operative | ValdaSpire24Extras | 9 (S) | 5 (B) | 6 (B) | 6 (B) | 9 (S) | 9 (S) | 8 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Antiquarian | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 7 (A) | 7 (A) | 9 (S) | 8 (A) |
+| Archivist | B | ValdaSpire24 | 7 (A) | 6 (B) | 6 (B) | 3 (C) | 6 (B) | 10 (S) | 8 (A) |
+| Conspiracy Theorist | A | ValdaSpire24Extras | 8 (A) | 5 (B) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) |
+| Containment Specialist | A | ValdaSpire24Extras | 7 (A) | 8 (A) | 6 (B) | 3 (C) | 6 (B) | 9 (S) | 7 (A) |
+| Detective | A | ValdaSpire24 | 8 (A) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 9 (S) | 7 (A) |
+| Exterminator | A | ValdaSpire24 | 9 (S) | 6 (B) | 6 (B) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
+| Infernal Agent | A | ValdaSpireExtras 🕰️ | 9 (S) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 7 (A) | 8 (A) |
+| Infernum | S | ValdaSpire24Extras | 9 (S) | 7 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
+| Inquisitor | S | ValdaSpire24 | 9 (S) | 8 (A) | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 8 (A) |
+| Kid Sleuth | S | ValdaSpire24Extras | 7 (A) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
+| Medium | S | ValdaSpire24 | 8 (A) | 5 (B) | 8 (A) | 6 (B) | 7 (A) | 9 (S) | 8 (A) |
+| Occultist | A | ValdaSpire24 | 9 (S) | 8 (A) | 6 (B) | 3 (C) | 8 (A) | 9 (S) | 8 (A) |
+| Spy | A | ValdaSpire24 | 8 (A) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 9 (S) | 7 (A) |
+| Time Operative | S | ValdaSpire24Extras | 9 (S) | 5 (B) | 6 (B) | 6 (B) | 9 (S) | 9 (S) | 8 (A) |
 
 ---
 
 ### Antiquarian (ValdaSpire24)
+
+**Overall**: S — Damage และ Utility เป็น S ทั้งคู่ บวก Survivability กระโดด +4 (C→A) และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม มีแค่ Control ที่นิ่ง
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -65,6 +68,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Archivist (ValdaSpire24)
 
+**Overall**: B — Utility พุ่งเป็น 10/10 (S) เต็มสเกล แต่มีแค่ Versatility ที่ขยับตามเล็กน้อย อีก 5 axis นิ่งสนิทรวมถึง Survivability ที่อ่อนสุดของ baseline
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ที่ยืนยันได้ (ขึ้นกับ Thesis ที่เลือก) = เท่า baseline |
@@ -76,6 +82,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Versatility** | 8/10 (A) | Thesis เลือกได้ 4 หัวข้อ (Corpus/Mentis/Mortis/Oculus) สลับได้ทุกเลเวล ปรับ toolkit ตามสถานการณ์ [M:2/4] [R:3/3] [B:3/3] |
 
 ### Conspiracy Theorist (ValdaSpire24Extras)
+
+**Overall**: A — ขยับขึ้น 5 axis แบบกลางๆ (Damage/Survivability/AE/Utility/Versatility) กว้างแต่ไม่มี peak ถึง S เลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -89,6 +98,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Containment Specialist (ValdaSpire24Extras)
 
+**Overall**: A — Control กระโดด +3 (B→A) บวก Utility เป็น S แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม control/utility ล้วน) = เท่า baseline |
@@ -100,6 +112,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Versatility** | 7/10 (A) | ผสม control(lockdown)/social/utility ในธีมนักสืบสายลึกลับ [M:2/4] [R:2/3] [B:3/3] |
 
 ### Detective (ValdaSpire24)
+
+**Overall**: A — ขยับขึ้น 5 axis กลางๆ บวก Utility เป็น S หนึ่งแกน กว้างพอสมควร
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -113,6 +128,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Exterminator (ValdaSpire24)
 
+**Overall**: A — Damage เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Mimic-Tooth Necklace (2d8 acid เสริม) + Monster Slayer (bonus action ตีเพิ่ม, Int mod ครั้ง/วัน) + Killer Instinct (lv14, ใช้ Exploit Weakness ได้ 2 ครั้ง/เทิร์นกับ 2 เป้า) [M:3/4] [R:2/3] [B:3/3] |
@@ -124,6 +142,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญล่าสัตว์ประหลาดที่เป็นทั้ง tank(medium armor) และ striker [M:2/4] [R:2/3] [B:3/3] |
 
 ### Infernal Agent (ValdaSpireExtras 🕰️)
+
+**Overall**: A — Damage เป็น S บวกขยับกลางๆ อีก 3 axis (Survivability/AE/Versatility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -137,6 +158,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Infernum (ValdaSpire24Extras)
 
+**Overall**: S — Damage เป็น S บวกขยับขึ้นอีก 5 axis พร้อมกัน (Control/Survivability/AE/Utility/Versatility) กว้างมาก มีแค่ Support ที่นิ่ง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Diabolical Barb ปลดล็อก Hellish Rebuke ฟรี + Hexagram Pendant ปลดล็อก Hex ฟรี + Infernal Bargain "Damage and Actions" (แลก necrotic dmg ตัวเองเป็น action เพิ่มสำหรับตีอีกครั้ง) [M:3/4] [R:2/3] [B:3/3] |
@@ -148,6 +172,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Versatility** | 8/10 (A) | Hybrid pet-summoner/caster/damage พร้อม build-defining choice จาก Infernal Bargain ทุกวัน [M:2/4] [R:3/3] [B:3/3] |
 
 ### Inquisitor (ValdaSpire24)
+
+**Overall**: S — Damage เป็น S บวก Control/Support ขยับเป็น A ทั้งคู่ และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม มีแค่ Utility ที่นิ่ง (แต่ Utility เป็น A ของ baseline อยู่แล้ว)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -161,6 +188,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Kid Sleuth (ValdaSpire24Extras)
 
+**Overall**: S — Support เป็น S (9/10) สูงสุดในกลุ่ม บวกขยับตามอีก 5 axis (Control/Survivability/AE/Utility/Versatility) มีแค่ Damage ที่นิ่ง (แต่เป็น A ของ baseline อยู่แล้ว)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม support/utility ล้วน) = เท่า baseline |
@@ -172,6 +202,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Versatility** | 8/10 (A) | ผสม support/control/utility ผ่านสัตว์เลี้ยง+trinket ในธีมนักสืบเด็ก [M:2/4] [R:3/3] [B:3/3] |
 
 ### Medium (ValdaSpire24)
+
+**Overall**: S — Utility เป็น S บวกขยับขึ้นอีก 5 axis พร้อมกัน (Damage/Support/Survivability/AE/Versatility) กว้างเทียบเท่า Kid Sleuth มีแค่ Control ที่นิ่ง
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -185,6 +218,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Occultist (ValdaSpire24)
 
+**Overall**: A — Damage และ Utility เป็น S ทั้งคู่ บวก Control ขยับเป็น A แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลยสักตัว ต่างจาก Antiquarian/Exterminator/Infernum/Inquisitor ที่แก้จุดนี้ไปแล้ว
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | เข้าถึง cantrip/spell ของ Warlock (Eldritch Blast ที่แนะนำ) + Maleficium (lv14, Exploit Weakness → Bestow Curse ฟรีเป็น bonus action) [M:3/4] [R:2/3] [B:3/3] |
@@ -197,6 +233,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Spy (ValdaSpire24)
 
+**Overall**: A — Utility เป็น S บวกขยับกลางๆ อีก 5 axis (Damage/Control/Survivability/AE/Versatility) กว้างแต่ magnitude ต่อแกนไม่สูงเท่า Antiquarian
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Cloak and Dagger (extra Force dmg เท่า Investigator level ตอนเปิดฉากรบหรือมี Advantage) [M:2/4] [R:2/3] [B:3/3] |
@@ -208,6 +247,9 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญสายลับ (social+stealth+opener damage) [M:2/4] [R:2/3] [B:3/3] |
 
 ### Time Operative (ValdaSpire24Extras)
+
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Action Economy, Utility) มากที่สุดในกลุ่มทั้งหมด บวก Survivability ก็ขยับตามด้วย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

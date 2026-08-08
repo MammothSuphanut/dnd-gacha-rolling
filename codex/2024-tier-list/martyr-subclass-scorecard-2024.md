@@ -32,26 +32,29 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ทั้ง 14 Burden มาจากไฟล์เดียวกัน (`Valda's Spire of Secrets 2024`, ไม่มี 🕰️ orphan เลย) ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) หมายเหตุ: Survivability baseline สูงมากอยู่แล้ว (9) ทำให้หลาย subclass ยัง "เท่า baseline" แม้จะมี feature เสริมเพราะ magnitude ไม่พอข้าม tier
 
-| Subclass | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|
-| Burden of Anonymity | 8 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
-| Burden of Ascension | 8 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
-| Burden of Atonement | 7 (A) | 5 (B) | 9 (S) | 10 (S) | 8 (A) | 8 (A) | 8 (A) |
-| Burden of Calamity | 9 (S) | 6 (B) | 3 (C) | 9 (S) | 6 (B) | 7 (A) | 7 (A) |
-| Burden of Discord | 9 (S) | 6 (B) | 3 (C) | 9 (S) | 7 (A) | 7 (A) | 8 (A) |
-| Burden of Fame | 7 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 7 (A) | 7 (A) |
-| Burden of Levity | 7 (A) | 7 (A) | 3 (C) | 10 (S) | 7 (A) | 7 (A) | 7 (A) |
-| Burden of Mercy | 8 (A) | 3 (C) | 10 (S) | 9 (S) | 6 (B) | 7 (A) | 6 (B) |
-| Burden of Odyssey | 7 (A) | 3 (C) | 4 (C) | 10 (S) | 8 (A) | 8 (A) | 8 (A) |
-| Burden of Rebirth | 7 (A) | 3 (C) | 5 (B) | 10 (S) | 6 (B) | 8 (A) | 7 (A) |
-| Burden of Revolution | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 7 (A) | 8 (A) |
-| Burden of the End | 8 (A) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 8 (A) |
-| Burden of Truth | 8 (A) | 6 (B) | 5 (B) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
-| Burden of Tyranny | 8 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
+| Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|
+| Burden of Anonymity | A | 8 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
+| Burden of Ascension | A | 8 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
+| Burden of Atonement | S | 7 (A) | 5 (B) | 9 (S) | 10 (S) | 8 (A) | 8 (A) | 8 (A) |
+| Burden of Calamity | A | 9 (S) | 6 (B) | 3 (C) | 9 (S) | 6 (B) | 7 (A) | 7 (A) |
+| Burden of Discord | A | 9 (S) | 6 (B) | 3 (C) | 9 (S) | 7 (A) | 7 (A) | 8 (A) |
+| Burden of Fame | S | 7 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 7 (A) | 7 (A) |
+| Burden of Levity | A | 7 (A) | 7 (A) | 3 (C) | 10 (S) | 7 (A) | 7 (A) | 7 (A) |
+| Burden of Mercy | S | 8 (A) | 3 (C) | 10 (S) | 9 (S) | 6 (B) | 7 (A) | 6 (B) |
+| Burden of Odyssey | A | 7 (A) | 3 (C) | 4 (C) | 10 (S) | 8 (A) | 8 (A) | 8 (A) |
+| Burden of Rebirth | B | 7 (A) | 3 (C) | 5 (B) | 10 (S) | 6 (B) | 8 (A) | 7 (A) |
+| Burden of Revolution | S | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 7 (A) | 8 (A) |
+| Burden of the End | A | 8 (A) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 8 (A) |
+| Burden of Truth | S | 8 (A) | 6 (B) | 5 (B) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
+| Burden of Tyranny | S | 8 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
 
 ---
 
 ### Burden of Anonymity
+
+**Overall**: A — ขยับขึ้น 6 ใน 7 axis แบบกลางๆ (Damage/Control/Survivability/AE/Utility/Versatility) มีแค่ Support ที่นิ่ง ไม่มี peak ถึง S เพิ่มเลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -65,6 +68,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Ascension
 
+**Overall**: A — รูปแบบเดียวกับ Burden of Anonymity เป๊ะ (ตัวเลขเหมือนกันทุก axis) — กว้างแบบกลางๆ ไม่มี peak S เพิ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Herculean Surge (บวก Str/Dex ชั่วคราวเสริมโจมตี) + Xiphos relic (lv14, ตีเพิ่มฟรีทุกครั้งที่ครี/ฆ่า) [M:2/4] [R:2/3] [B:3/3] |
@@ -76,6 +82,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ธีมเทพครึ่งองค์ที่เน้น Str/Dex + relic 3 แบบให้เลือกใช้ตามสถานการณ์ [M:2/4] [R:2/3] [B:3/3] |
 
 ### Burden of Atonement
+
+**Overall**: S — Support กระโดด +6 (3→9, C→S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงสุดในกลุ่ม บวก Survivability เป็น S ด้วย และขยับตามอีก 4 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -89,6 +98,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Calamity
 
+**Overall**: A — Damage เป็น S (9/10) บวก Control/Utility/Versatility ขยับตาม แต่ Support/Action Economy นิ่งสนิท
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Aura of Calamity (action, AoE emanation ต่อเนื่อง 1 นาที สเกล 1d8→4d8 ธาตุที่เลือก+Prone) + Doom Foretold (lv18, แคส Earthquake/Fire Storm/Storm of Vengeance ฟรี) — AoE nova ที่หนักที่สุดในกลุ่ม [M:3/4] [R:2/3] [B:3/3] |
@@ -100,6 +112,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | เลือกธาตุของ Aura ได้อิสระ + Apocalyptic Omen ใช้ได้ทุกสถานการณ์ [M:2/4] [R:2/3] [B:3/3] |
 
 ### Burden of Discord
+
+**Overall**: A — Damage เป็น S บวกขยับกลางๆ อีก 3 axis (Control/AE/Versatility) กว้างกว่า Calamity เล็กน้อย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -113,6 +128,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Fame
 
+**Overall**: S — Control กระโดด +6 (3→9, C→S) — เลข Control สูงสุดในกลุ่มทั้งหมด บวก Survivability เป็น S ด้วย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม charm/control ล้วน) = เท่า baseline |
@@ -124,6 +142,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญ charm/celebrity ที่ป้องกันตัวเองได้ดีจากเป้าที่ charm ไว้ [M:2/4] [R:2/3] [B:3/3] |
 
 ### Burden of Levity
+
+**Overall**: A — Control ขยับ +4 (C→A) บวกขยับกลางๆ อีก 3 axis (AE/Utility/Versatility) ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -137,6 +158,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Mercy
 
+**Overall**: S — Support กระโดด +7 (3→10, C→S เต็มสเกล) — การแก้จุดอ่อนที่แรงที่สุดในทั้งคลาส
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Censuring Light (lv14, AoE 4d6 radiant ต่อเนื่องใส่ creature type ที่เลือก) [M:2/4] [R:2/3] [B:3/3] |
@@ -148,6 +172,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | โฟกัส healer เฉพาะทางสุดขั้ว ไม่ขยาย role อื่น = เท่า baseline |
 
 ### Burden of Odyssey
+
+**Overall**: A — ขยับขึ้น 4 axis แบบกลางๆ (Support/AE/Utility/Versatility) ไม่มี peak เด่นชัด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -161,6 +188,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Rebirth
 
+**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Support/Utility/Versatility) Control/Action Economy นิ่งสนิท แคบที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม nature/support ล้วน) = เท่า baseline |
@@ -172,6 +202,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | Nature-guardian ที่ผสม tank+utility+party mobility [M:2/4] [R:2/3] [B:3/3] |
 
 ### Burden of Revolution
+
+**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย (Support +4 เด่นสุด) กว้างที่สุดในบรรดา Burden ทั้งหมด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -185,6 +218,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of the End
 
+**Overall**: A — ขยับขึ้น 5 axis แบบกลางๆ (Damage/Control/AE/Utility/Versatility) ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | เข้าถึง Chromatic Orb/Lightning Bolt/Cone of Cold + Sacrificial Spell's Quicken (lv14, แคส spell เป็น bonus action ได้ — เท่ากับแคสสองครั้ง/เทิร์น) [M:2/4] [R:2/3] [B:3/3] |
@@ -197,6 +233,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Truth
 
+**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline เหมือน Burden of Revolution ไม่เหลือแกนไหนนิ่งเลยสักตัว
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | เข้าถึง Word of Force/Word of Frailty (สเปลเฉพาะทาง VSS) ติดตัวถาวร [M:2/4] [R:2/3] [B:3/3] |
@@ -208,6 +247,9 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผู้เผยพระวจนะที่แตะทั้ง control/support/defense/utility [M:2/4] [R:2/3] [B:3/3] |
 
 ### Burden of Tyranny
+
+**Overall**: S — Control กระโดด +6 (3→9, C→S) เท่า Burden of Fame บวก Survivability เป็น S ด้วย แม้ Support/AE/Utility จะยังนิ่งอยู่ก็ตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

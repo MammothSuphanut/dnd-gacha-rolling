@@ -32,16 +32,19 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 
 ทั้ง 4 Planar Order มาจากไฟล์เดียวกัน (`ValdaSpireExtras`, 2014-only 🕰️) มีโครงสร้างเหมือนกันหมด: cantrip 3→4 จาก list เฉพาะทาง + "Portal Key" item เฉพาะทาง (lv1) + Bonus Planar Focus option ใหม่ (lv7) + feature รบ (lv10) + capstone (lv15) ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Order of Blinknights | ValdaSpireExtras 🕰️ | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
-| Order of Dimensional Magi | ValdaSpireExtras 🕰️ | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 8 (A) |
-| Order of Titanfists | ValdaSpireExtras 🕰️ | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
-| Order of Wild Hunters | ValdaSpireExtras 🕰️ | 8 (A) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 8 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Order of Blinknights | B | ValdaSpireExtras 🕰️ | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Order of Dimensional Magi | A | ValdaSpireExtras 🕰️ | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 8 (A) |
+| Order of Titanfists | A | ValdaSpireExtras 🕰️ | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
+| Order of Wild Hunters | A | ValdaSpireExtras 🕰️ | 8 (A) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 8 (A) |
 
 ---
 
 ### Order of Blinknights (ValdaSpireExtras 🕰️)
+
+**Overall**: B — แค่ 2 ใน 7 axis ขยับจาก baseline (Survivability +2, Utility +2) ที่เหลือเท่า baseline ทั้งหมด ทั้งที่ baseline ของ Channeler เองก็แรงอยู่แล้ว (Damage/Versatility A) — เป็นแค่ generalist กลางๆ ไม่มีจุดเด่นใหม่ชัดเจน
+
 
 > **คอนเซปต์**: melee weapon-bond channeler ที่ teleport ผ่าน Ethereal Plane และแท็งค์ด้วย temp HP ward
 
@@ -57,6 +60,9 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 
 ### Order of Dimensional Magi (ValdaSpireExtras 🕰️)
 
+**Overall**: A — ขยับขึ้น 4 axis พร้อมกัน (Damage A, Control B จาก baseline C, Survivability A, Utility A จาก baseline C) กว้างที่สุดในกลุ่ม แม้ Support จะยังเป็น 0 เหมือนทุกตัว
+
+
 > **คอนเซปต์**: scholar-channeler ที่ผูกกับสมุดคาถา ritual caster + ยืม spell wizard ระดับสูงมาใช้ฟรี
 
 | Axis | คะแนน | เหตุผล |
@@ -71,6 +77,9 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 
 ### Order of Titanfists (ValdaSpireExtras 🕰️)
 
+**Overall**: A — Damage พุ่งเป็น S (9/10) สูงสุดในกลุ่ม บวก Control B และ Action Economy A แต่ Survivability/Utility ยังค้าง baseline เต็มๆ — striker/controller เฉพาะทางที่แรงมาก ไม่ถึง S เพราะยังมี 3 axis ไม่ขยับเลย
+
+
 > **คอนเซปต์**: brawler-channeler ที่ผูกกับ battlefist คู่ ชกแบบ dual-wield ไม่ต้องมีมือว่าง
 
 | Axis | คะแนน | เหตุผล |
@@ -84,6 +93,9 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 | **Versatility** | 8/10 (A) | Olympus Focus เพิ่มตัวเลือกที่ 5 เข้า Planar Focus menu ของ baseline ทำให้สลับ role ได้กว้างขึ้นอีกขั้น [M:2/4] [R:3/3] [B:3/3] |
 
 ### Order of Wild Hunters (ValdaSpireExtras 🕰️)
+
+**Overall**: A — ขยับขึ้น 4 axis (Damage A, Survivability A, Action Economy A, Utility B) กระจายทั่วโดยไม่มี peak เดี่ยวสูงมาก แต่ breadth กว้างเทียบเท่า Dimensional Magi
+
 
 > **คอนเซปต์**: ranged channeler ที่ผูกกับ quiver อาวุธไม่จำกัด + teleport ตามลูกธนู
 

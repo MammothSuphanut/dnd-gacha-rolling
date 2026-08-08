@@ -32,31 +32,34 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ไม่มี subclass ตัวไหนมี prerequisite/กลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| College of Adventurers | GrimHollowPG24 | 7 (A) | 7 (A) | 9 (S) | 6 (B) | 8 (A) | 9 (S) | 10 (S) |
-| College of Cantors | VSS 🕰️ | 6 (B) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
-| College of Creation | TCE 🕰️ | 7 (A) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 10 (S) | 8 (A) |
-| College of Dance | XPHB | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) | 7 (A) |
-| College of Eloquence | TCE 🕰️ | 5 (B) | 8 (A) | 10 (S) | 4 (C) | 7 (A) | 9 (S) | 6 (B) |
-| College of Fools | GrimHollowPG24 | 8 (A) | 8 (A) | 8 (A) | 9 (S) | 8 (A) | 8 (A) | 7 (A) |
-| College of Glamour | XPHB | 5 (B) | 9 (S) | 8 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
-| College of Graffiti | VSS 🕰️ | 7 (A) | 8 (A) | 8 (A) | 4 (C) | 6 (B) | 8 (A) | 7 (A) |
-| College of Jesters | VSS 🕰️ | 8 (A) | 7 (A) | 8 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) |
-| College of Lore | XPHB | 5 (B) | 8 (A) | 8 (A) | 4 (C) | 7 (A) | 9 (S) | 8 (A) |
-| College of Masks | VSS 🕰️ | 9 (S) | 8 (A) | 9 (S) | 5 (B) | 7 (A) | 9 (S) | 9 (S) |
-| College of Requiems | GrimHollowPG24 | 9 (S) | 7 (A) | 9 (S) | 4 (C) | 8 (A) | 8 (A) | 7 (A) |
-| College of Romance | VSS 🕰️ | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 6 (B) |
-| College of Spirits | RHW | 9 (S) | 8 (A) | 9 (S) | 6 (B) | 7 (A) | 8 (A) | 9 (S) |
-| College of Swords | XGE 🕰️ | 9 (S) | 7 (A) | 8 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) |
-| College of the Mad God | VSS 🕰️ | 10 (S) | 9 (S) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
-| College of the Moon | FRHoF 🕰️ | 6 (B) | 7 (A) | 9 (S) | 8 (A) | 7 (A) | 8 (A) | 7 (A) |
-| College of Valor | XPHB | 9 (S) | 7 (A) | 9 (S) | 5 (B) | 9 (S) | 8 (A) | 7 (A) |
-| College of Whispers | XGE 🕰️ | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 7 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| College of Adventurers | S | GrimHollowPG24 | 7 (A) | 7 (A) | 9 (S) | 6 (B) | 8 (A) | 9 (S) | 10 (S) |
+| College of Cantors | A | VSS 🕰️ | 6 (B) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
+| College of Creation | S | TCE 🕰️ | 7 (A) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 10 (S) | 8 (A) |
+| College of Dance | S | XPHB | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) | 7 (A) |
+| College of Eloquence | S | TCE 🕰️ | 5 (B) | 8 (A) | 10 (S) | 4 (C) | 7 (A) | 9 (S) | 6 (B) |
+| College of Fools | A | GrimHollowPG24 | 8 (A) | 8 (A) | 8 (A) | 9 (S) | 8 (A) | 8 (A) | 7 (A) |
+| College of Glamour | A | XPHB | 5 (B) | 9 (S) | 8 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
+| College of Graffiti | B | VSS 🕰️ | 7 (A) | 8 (A) | 8 (A) | 4 (C) | 6 (B) | 8 (A) | 7 (A) |
+| College of Jesters | A | VSS 🕰️ | 8 (A) | 7 (A) | 8 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) |
+| College of Lore | A | XPHB | 5 (B) | 8 (A) | 8 (A) | 4 (C) | 7 (A) | 9 (S) | 8 (A) |
+| College of Masks | S | VSS 🕰️ | 9 (S) | 8 (A) | 9 (S) | 5 (B) | 7 (A) | 9 (S) | 9 (S) |
+| College of Requiems | S | GrimHollowPG24 | 9 (S) | 7 (A) | 9 (S) | 4 (C) | 8 (A) | 8 (A) | 7 (A) |
+| College of Romance | S | VSS 🕰️ | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 6 (B) |
+| College of Spirits | S | RHW | 9 (S) | 8 (A) | 9 (S) | 6 (B) | 7 (A) | 8 (A) | 9 (S) |
+| College of Swords | A | XGE 🕰️ | 9 (S) | 7 (A) | 8 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) |
+| College of the Mad God | S | VSS 🕰️ | 10 (S) | 9 (S) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
+| College of the Moon | A | FRHoF 🕰️ | 6 (B) | 7 (A) | 9 (S) | 8 (A) | 7 (A) | 8 (A) | 7 (A) |
+| College of Valor | S | XPHB | 9 (S) | 7 (A) | 9 (S) | 5 (B) | 9 (S) | 8 (A) | 7 (A) |
+| College of Whispers | S | XGE 🕰️ | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 7 (A) |
 
 ---
 
 ### College of Adventurers (GrimHollowPG24)
+
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Support, Utility, Versatility 10/10 เต็ม) มากที่สุดในกลุ่มร่วมกับ Masks/Spirits/Valor
+
 
 > **หมายเหตุ**: subclass นี้ให้เลือก "Adventurer's Talent" 3→5 อย่างจาก 11 ตัวเลือก (Barbarian/Cleric/Druid/Fighter/Monk/Paladin/Ranger/Rogue/Sorcerer/Warlock/Wizard) — คะแนนประเมินจากภาพรวม pool ทั้งหมด เพราะแต่ละ talent มาจากอีก class หนึ่งโดยตรง breadth จึงกว้างเป็นพิเศษ
 
@@ -72,6 +75,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Cantors (VSS 🕰️)
 
+**Overall**: A — Support เป็น S บวกขยับตามอีก 3 axis กลางๆ ไม่มี peak ที่สอง
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Angelic Chorus (lv6) ward ให้เพื่อนสะท้อนดาเมจ radiant เท่าครึ่งเลเวลใส่ผู้โจมตี — ดาเมจทางอ้อมที่ magnitude ต่ำ [M:2/4] [R:3/3] [B:1/3] |
@@ -83,6 +89,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 6/10 (B) | เป็น dedicated healer-support ธีมเดียวตลอด ไม่ขยาย role อื่น = เท่า baseline |
 
 ### College of Creation (TCE 🕰️)
+
+**Overall**: S — Support และ Utility เป็น S ทั้งคู่ (Utility 10/10 เต็ม) บวกขยับตามอีก 3 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -96,6 +105,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Dance (XPHB)
 
+**Overall**: S — ไม่มี axis ไหนต่ำกว่า A เลยแม้แต่ตัวเดียว (Survivability กระโดด C→A) — comprehensive ที่สุดในกลุ่ม แม้จะไม่มี axis ไหนถึง S ก็ตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Bardic Damage ให้ unarmed strike ดาเมจ = BI die + Dex mod **โดยไม่เสีย die** ทุกครั้ง บวก Agile Strikes แถม unarmed strike ฟรีทุกครั้งที่เสีย BI die กับ action/bonus action/reaction ใดๆ [M:3/4] [R:3/3] [B:2/3] |
@@ -107,6 +119,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 7/10 (A) | เปลี่ยน Bard จาก caster ล้วนเป็น melee-striker/evasion-tank ผสม พร้อม initiative-buffer ให้ทีม — playstyle ต่างจาก baseline ชัดเจน [M:2/4] [R:3/3] [B:2/3] |
 
 ### College of Eloquence (TCE 🕰️)
+
+**Overall**: S — Support และ Utility เป็น S ทั้งคู่ (Support 10/10 เต็ม) บวก Control ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -120,6 +135,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Fools (GrimHollowPG24)
 
+**Overall**: A — Survivability กระโดด +5 (C→S) บวกขยับขึ้นอีก 4 axis กลางๆ กว้างพอสมควร
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Cruel Jest (reaction, BI die+Cha psychic dmg ทุกครั้งที่มีคน**ล้มเหลว**การ roll ในระยะ 30ft) + Last Laugh (lv14, สะท้อน psychic dmg สูงสุด 3×BI die ใส่ผู้โจมตี) — คลังดาเมจปฏิกิริยาที่ trigger บ่อย [M:3/4] [R:2/3] [B:3/3] |
@@ -131,6 +149,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 7/10 (A) | คลังปฏิกิริยา (damage+control+defense) ที่ trigger จากสถานการณ์ต่างกัน ทำให้ตอบสนองได้หลายแบบในไฟต์เดียว [M:2/4] [R:3/3] [B:2/3] |
 
 ### College of Glamour (XPHB)
+
+**Overall**: A — Control เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -144,6 +165,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Graffiti (VSS 🕰️)
 
+**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Damage/Control/Versatility) ไม่มี peak ถึง S เลย แคบที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Signature Mark เพิ่ม 1d8 ทุกเทิร์นที่ตีเป้าที่ mark ไว้ + Kaleidoscopic Spray (lv14) เป็น AoE cone ที่ mark ทุกตัวในพื้นที่ [M:2/4] [R:3/3] [B:2/3] |
@@ -155,6 +179,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 7/10 (A) | ทำหน้าที่ได้ทั้ง party-buffer (Street Art) และ damage-amplifier/target-marker (Signature Mark) [M:2/4] [R:3/3] [B:2/3] |
 
 ### College of Jesters (VSS 🕰️)
+
+**Overall**: A — ขยับขึ้น 4 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -168,6 +195,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Lore (XPHB)
 
+**Overall**: A — Utility เป็น S บวกขยับตามอีก 3 axis กลางๆ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 5/10 (B) | ไม่มี feature เพิ่มดาเมจโดยตรง = เท่า baseline |
@@ -179,6 +209,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 8/10 (A) | Magical Discoveries ทำลายข้อจำกัด "สลับ prepared spell 1 คาถา/level-up" ของ baseline สำหรับ 2 ช่องนี้ (สลับได้ทุกเลเวล) และครอบคลุมถึง 3 spell list [M:3/4] [R:2/3] [B:3/3] |
 
 ### College of Masks (VSS 🕰️)
+
+**Overall**: S — 4 axis เป็น S พร้อมกัน (Damage, Support, Utility, Versatility) มากที่สุดในกลุ่มทั้งหมด — แรงและกว้างที่สุดในคลาส
+
 
 > **หมายเหตุ**: Persona Masks มีตัวเลือก 9 แบบ (Angel/Archmage/Devil/Dragon/Faceless/Fool/Gladiator/High Priest/Lord/Spirit) รู้ 2→4 อันพร้อมกัน สลับได้ทุกเลเวล — คะแนนประเมินจากภาพรวม pool
 
@@ -194,6 +227,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Requiems (GrimHollowPG24)
 
+**Overall**: S — Damage และ Support เป็น S ทั้งคู่ (Damage กระโดด +4) บวก Action Economy/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Pluck the Heartstrings (BI die necrotic dmg บวกเข้าการโจมตี) + Stir the Bones (lv6, แจก BI die ให้ undead minion ที่ควบคุมอยู่ทุกตัว ไม่นับ limit ปกติ) + Dual Death (lv14, necromancy spell เดี่ยวโจมตีได้ 2 เป้า) — ดาเมจทวีคูณผ่านกองทัพ undead [M:3/4] [R:3/3] [B:3/3] |
@@ -206,6 +242,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Romance (VSS 🕰️)
 
+**Overall**: S — Control และ Utility เป็น S ทั้งคู่ แม้ breadth โดยรวมจะแคบกว่าตัวอื่น (มีแค่ 3 axis ที่ขยับ)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Enemy of My Enemy (lv6) สั่งเป้าที่ถูก charm ให้โจมตีเป้าอื่นด้วย reaction — ดาเมจทางอ้อมที่ต้อง charm สำเร็จก่อน [M:2/4] [R:2/3] [B:2/3] |
@@ -217,6 +256,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 6/10 (B) | เน้น charm/domination ธีมเดียวหนักมาก ไม่ขยาย combat breadth อื่น = เท่า baseline |
 
 ### College of Spirits (RHW)
+
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Support, Versatility) บวก Control/Survivability/AE ขยับตาม
+
 
 > **หมายเหตุ**: Spirits from Beyond table มี 12 ผลลัพธ์ (heal/dmg 4 ธาตุ/control/mobility/buff) — Controlled Channeling ให้เลือกผลที่ต้องการได้ตรงๆ (ไม่ต้องสุ่ม) ตราบเท่าที่เลขไม่เกินขนาด BI die
 
@@ -232,6 +274,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Swords (XGE 🕰️)
 
+**Overall**: A — Damage กระโดด +4 (B→S) บวก Survivability/Action Economy ขยับตามเล็กน้อย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Blade Flourish (BI die extra dmg ทุกแบบ) + Extra Attack (lv6) + Master's Flourish (lv14, roll d6 แทนการเสีย BI die ทำให้ flourish ใช้ได้แทบไม่จำกัด) — ดาเมจมาร์เชียลที่ reliable สูงมาก [M:3/4] [R:3/3] [B:3/3] |
@@ -243,6 +288,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 7/10 (A) | ยกระดับ Bard ให้เป็น melee-striker เต็มรูปแบบควบคู่กับ full spellcasting — dual-role ที่ baseline ไม่มี [M:2/4] [R:3/3] [B:2/3] |
 
 ### College of the Mad God (VSS 🕰️)
+
+**Overall**: S — Damage และ Control เป็น S ทั้งคู่ (Damage กระโดด +5 สูงสุดในกลุ่มทั้งหมด เป็น 10/10 เต็ม) แม้ breadth ที่เหลือจะแคบก็ตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -256,6 +304,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of the Moon (FRHoF 🕰️)
 
+**Overall**: A — Support เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Blessing of Moonlight (lv6) ให้ Moonbeam เตรียมถาวร เป็น spell radiant มาตรฐาน ไม่ได้ขยาย magnitude เกิน spell list ปกติมากนัก [M:2/4] [R:3/3] [B:1/3] |
@@ -268,6 +319,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Valor (XPHB)
 
+**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Support, Action Economy) บวก Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Combat Inspiration โหมด offense (BI die dmg) + Extra Attack (lv6) + Battle Magic (lv14, bonus action weapon attack หลัง cast spell action) — สาม stack ดาเมจที่ผสาน spell กับอาวุธได้ลงตัว [M:3/4] [R:3/3] [B:3/3] |
@@ -279,6 +333,9 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | **Versatility** | 7/10 (A) | ผสาน caster + weapon-striker + shield-tank ได้ในตัวเดียว [M:2/4] [R:3/3] [B:2/3] |
 
 ### College of Whispers (XGE 🕰️)
+
+**Overall**: S — Damage และ Utility เป็น S ทั้งคู่ (Damage กระโดด +4) บวก Control/Versatility ขยับตามเล็กน้อย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

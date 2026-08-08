@@ -32,30 +32,33 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ไม่มี archetype ตัวไหนมีข้อความ explicit ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) **หมายเหตุแหล่งที่มา**: Vagabond เป็น class ใหม่เฉพาะ 2024 ไม่มีเวอร์ชัน 2014 ให้เทียบ ดังนั้นไม่มี subclass ตัวไหนติดแท็ก 🕰️ เลย — แต่ 7 ตัว (Daggermark, Dragon Banner, Eagle Banner, Jolly Roger, Siegeball Jersey, Tower Banner, Yellow Sign) เป็น **"Cross-Compatible Subclass"** ที่มีต้นกำเนิดจริงจาก class **Captain** (ติดแท็ก 🔀) — เนื้อหา level 3 (flavor + proficiency/skill features) มักมีเวอร์ชันเขียนใหม่เฉพาะสำหรับ Vagabond (บางตัวมี "Cross-Compatibility Modifications" ปรับกลไกที่ผูกกับ Cohort ของ Captain ให้ใช้กับ "ally" ทั่วไปแทน เนื่องจาก Vagabond ไม่มี Cohort) ส่วน feature level 6/10/14 ใช้ข้อความชุดเดียวกับต้นฉบับ Captain ตรงๆ ถ้าไม่มีการ override ไว้เฉพาะ
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Adrenaline Junkie | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
-| Brigand | ValdaSpire24Extras | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
-| Daggermark | ValdaSpire24 🔀 | 8 (A) | 3 (C) | 4 (C) | 9 (S) | 7 (A) | 5 (B) | 5 (B) |
-| Dragon Banner | ValdaSpire24 🔀 | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 6 (B) |
-| Eagle Banner | ValdaSpire24 🔀 | 8 (A) | 4 (C) | 3 (C) | 7 (A) | 6 (B) | 4 (C) | 6 (B) |
-| Feylost | ValdaSpire24Extras 🔀 | 7 (A) | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Gourmand | ValdaSpire24Extras 🔀 | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
-| Houndmaster | ValdaSpire24Extras 🔀 | 8 (A) | 4 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 5 (B) |
-| Jolly Roger | ValdaSpire24 🔀 | 8 (A) | 6 (B) | 6 (B) | 8 (A) | 7 (A) | 4 (C) | 6 (B) |
-| Knight Errant | ValdaSpire24Extras 🔀 | 8 (A) | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 5 (B) | 6 (B) |
-| Mage Brand | ValdaSpire24Extras | 8 (A) | 6 (B) | 1 (D) | 8 (A) | 6 (B) | 7 (A) | 8 (A) |
-| Plague Doctor | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
-| Pugilist | ValdaSpire24Extras 🔀 | 8 (A) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 3 (C) | 6 (B) |
-| Rōnin | ValdaSpire24Extras 🔀 | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
-| Siegeball Jersey | ValdaSpire24Extras 🔀 | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Tower Banner | ValdaSpire24 🔀 | 8 (A) | 5 (B) | 4 (C) | 9 (S) | 6 (B) | 4 (C) | 5 (B) |
-| Troubadour | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
-| Yellow Sign | ValdaSpire24Extras 🔀 | 8 (A) | 9 (S) | 4 (C) | 7 (A) | 6 (B) | 5 (B) | 6 (B) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Adrenaline Junkie | B | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
+| Brigand | A | ValdaSpire24Extras | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
+| Daggermark | A | ValdaSpire24 🔀 | 8 (A) | 3 (C) | 4 (C) | 9 (S) | 7 (A) | 5 (B) | 5 (B) |
+| Dragon Banner | B | ValdaSpire24 🔀 | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 6 (B) |
+| Eagle Banner | A | ValdaSpire24 🔀 | 8 (A) | 4 (C) | 3 (C) | 7 (A) | 6 (B) | 4 (C) | 6 (B) |
+| Feylost | A | ValdaSpire24Extras 🔀 | 7 (A) | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Gourmand | S | ValdaSpire24Extras 🔀 | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
+| Houndmaster | B | ValdaSpire24Extras 🔀 | 8 (A) | 4 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 5 (B) |
+| Jolly Roger | A | ValdaSpire24 🔀 | 8 (A) | 6 (B) | 6 (B) | 8 (A) | 7 (A) | 4 (C) | 6 (B) |
+| Knight Errant | S | ValdaSpire24Extras 🔀 | 8 (A) | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 5 (B) | 6 (B) |
+| Mage Brand | A | ValdaSpire24Extras | 8 (A) | 6 (B) | 1 (D) | 8 (A) | 6 (B) | 7 (A) | 8 (A) |
+| Plague Doctor | A | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
+| Pugilist | A | ValdaSpire24Extras 🔀 | 8 (A) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 3 (C) | 6 (B) |
+| Rōnin | S | ValdaSpire24Extras 🔀 | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
+| Siegeball Jersey | S | ValdaSpire24Extras 🔀 | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Tower Banner | A | ValdaSpire24 🔀 | 8 (A) | 5 (B) | 4 (C) | 9 (S) | 6 (B) | 4 (C) | 5 (B) |
+| Troubadour | A | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
+| Yellow Sign | S | ValdaSpire24Extras 🔀 | 8 (A) | 9 (S) | 4 (C) | 7 (A) | 6 (B) | 5 (B) | 6 (B) |
 
 ---
 
 ### Adrenaline Junkie (ValdaSpire24Extras)
+
+**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Action Economy/Versatility) Support ยังเป็น 0 เต็ม ไม่มี peak ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -69,6 +72,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Brigand (ValdaSpire24Extras)
 
+**Overall**: A — ขยับขึ้น 5 ใน 7 axis กลางๆ (Damage/Control/Survivability/AE/Versatility) กว้างแต่ไม่มี axis ไหนถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Cutthroat (lv14, exploding damage die สูงสุด 4 รอบทุกครั้งที่ทอยได้เลขสูงสุด) บวก Ambush maneuver (โจมตีฟรีทันทีตอนทอย Initiative) เป็น damage engine ที่ magnitude สูงและ trigger ได้บ่อย [M:3/4] [R:2/3] [B:2/3] |
@@ -80,6 +86,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 6/10 (B) | มีเครื่องมือครบทั้งโจมตี (Cutthroat), ควบคุม (Take Hostage/Underhanded Blow), และหนี (Craven) ในตัวเดียว [M:2/4] [R:2/3] [B:1/3] |
 
 ### Daggermark (ValdaSpire24 🔀)
+
+**Overall**: A — Survivability เป็น S บวก Support ขยับบางส่วน (0→4) และอีก 3 axis ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -93,6 +102,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Dragon Banner (ValdaSpire24 🔀)
 
+**Overall**: B — Damage เป็น S แต่ Support ยังเป็น 0 เต็ม breadth แคบ (แค่ 3 axis ขยับ)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Critical Focus (ช่วง crit ขยายไปถึง 16-20 หลังชนะ/critical ติดกัน 3 ครั้งในรอบเดียวกัน) บวก Rampage maneuver (โจมตีฟรี+เคลื่อนที่ทันทีหลัง reduce ศัตรูเหลือ 0 HP หรือ crit) และ Coup de Grâce (lv14, โจมตีประหารเพิ่มดาเมจก้อนใหญ่) รวมเป็น damage-nova engine ที่ snowball ได้แรงมาก [M:4/4] [R:2/3] [B:3/3] |
@@ -104,6 +116,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 6/10 (B) | แม้จะเป็น nova-executioner archetype เดี่ยว แต่มีทั้งโหมด AoE fear และโหมดโจมตีเดี่ยวสลับใช้ตามสถานการณ์ [M:2/4] [R:2/3] [B:1/3] |
 
 ### Eagle Banner (ValdaSpire24 🔀)
+
+**Overall**: A — ขยับขึ้น 5 axis กลางๆ พร้อมกัน (Damage/Control/Support/AE/Utility/Versatility) ไม่มี peak ถึง S แต่กว้าง
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -117,6 +132,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Feylost (ValdaSpire24Extras 🔀)
 
+**Overall**: A — Control กระโดด +5 (C→A) บวก Survivability เป็น S และขยับตามอีก 3 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Fey Mood "Spiteful" ให้ดาเมจ Force เพิ่มเล็กน้อยแบบมีเงื่อนไข ไม่พอยกระดับด้าน damage โดยรวม = ใกล้เคียง baseline |
@@ -128,6 +146,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | Fey Mood table ครอบคลุม 8 effect ที่ต่างกันมาก (control/support/survival/damage) แม้จะสุ่มจนถึง lv14 ที่เลือกเองได้ ถือเป็นความกว้างของ toolkit ที่สูงมาก [M:3/4] [R:2/3] [B:2/3] |
 
 ### Gourmand (ValdaSpire24Extras 🔀)
+
+**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวกขยับตามอีก 4 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -141,6 +162,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Houndmaster (ValdaSpire24Extras 🔀)
 
+**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Damage/Control/AE/Utility) Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Faithful Hound เป็นนักสู้เพิ่มที่โจมตีเองได้ทุกเทิร์นผ่าน Sick 'Em! maneuver (bonus action สั่งกัด+เคลื่อนที่ ไม่โดน AOO) บวก Desperate Companion (หมามี Advantage ตอนตัวเอง Bloodied) และ Old Dog New Tricks (lv14, หมาได้ maneuver ของตัวเอง 2 อัน) [M:3/4] [R:2/3] [B:3/3] |
@@ -152,6 +176,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 5/10 (B) | โฟกัส pet-fighter เดี่ยวชัดเจน แม้ lv14 จะเลือก maneuver ให้หมาได้ 2 อัน = เท่า baseline |
 
 ### Jolly Roger (ValdaSpire24 🔀)
+
+**Overall**: A — Support ขยับ +6 (0→6, B) บวกขยับขึ้นอีก 5 axis กลางๆ กว้างแต่ไม่มี S ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -165,6 +192,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Knight Errant (ValdaSpire24Extras 🔀)
 
+**Overall**: S — Survivability เป็น S บวก Support ขยับ +6 (0→6, B) และขยับขึ้นครบเกือบทุก axis (6 ใน 7) กว้างที่สุดในกลุ่ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Knight's Challenge maneuver (เวอร์ชัน sustain 1 นาที เพิ่ม battle die ใส่ดาเมจการตีครั้งแรก + คงเอฟเฟกต์ persistent) เป็น damage engine ต่อเนื่องเมื่อล็อกเป้าเดียว [M:2/4] [R:3/3] [B:2/3] |
@@ -176,6 +206,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 6/10 (B) | Surge of Valor มี 2 โหมด (ลดดาเมจ/reroll test ที่พลาด) ให้เลือกใช้ตามสถานการณ์ [M:2/4] [R:2/3] [B:1/3] |
 
 ### Mage Brand (ValdaSpire24Extras)
+
+**Overall**: A — Utility กระโดด +4 (C→A) และ Versatility +3 (B→A) บวกขยับตามอีก 4 axis กว้างมากแม้ Support จะยังแทบเป็น 0 อยู่ (1/10)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -189,6 +222,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Plague Doctor (ValdaSpire24Extras 🔀)
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวกขยับตามอีก 4 axis กว้างพอสมควรแต่ไม่มี axis ไหนถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Imbalance Humors ทางเลือก "Sanguine" (ดาเมจ Necrotic เพิ่มตอนโดนตีครั้งถัดไป) บวก Bloodletting (lv14, Wounding Strike maneuver ให้บาดแผลเลือดไหลสะสม) เป็น damage add ที่มาพร้อมระบบ debuff [M:2/4] [R:2/3] [B:2/3] |
@@ -200,6 +236,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 6/10 (B) | มีครบทั้งดาเมจ (Sanguine/Bloodletting), control (Melancholic/Phlegmatic), และ support (Remedy) ในตัวเดียว [M:2/4] [R:2/3] [B:2/3] |
 
 ### Pugilist (ValdaSpire24Extras 🔀)
+
+**Overall**: A — Survivability เป็น S บวก Control/Damage/Action Economy ขยับตาม แต่ Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -213,6 +252,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Rōnin (ValdaSpire24Extras 🔀)
 
+**Overall**: S — Damage และ Survivability เป็น S ทั้งคู่ บวก Action Economy ขยับ +3 แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Swordmaster (lv14, โจมตีซ้ำฟรีทุกครั้งที่พลาด ไม่จำกัดจำนวนครั้ง/เทิร์น) ยกระดับ DPR floor ขึ้นอย่างมหาศาล บวก Grudge (battle die เฉพาะสำหรับ maneuver ใส่เป้าที่ตั้งเป้าไว้) และ Killing Stroke (lv10, reaction โจมตีก่อน melee attack ที่เข้าใส่ตัวเอง) [M:4/4] [R:2/3] [B:3/3] |
@@ -224,6 +266,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 5/10 (B) | โฟกัส solo-duelist archetype ชัดเจนตัวเดียวตายตัว = เท่า baseline |
 
 ### Siegeball Jersey (ValdaSpire24Extras 🔀)
+
+**Overall**: S — Survivability เป็น S บวก Support กระโดดจาก 0 เป็น 7 (A) และขยับตามอีก 3 axis รวมกันแล้วกว้างและแรงพร้อมกัน
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -237,6 +282,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Tower Banner (ValdaSpire24 🔀)
 
+**Overall**: A — Survivability เป็น S บวก Support ขยับบางส่วน (0→4) และอีก 3 axis ขยับตามเล็กน้อย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Iron Retribution (lv14, ทุกครั้งที่ศัตรูใกล้ตัวพลาดการโจมตี ตอบโต้ด้วย Shield ทันที 3d6 Bludgeoning ไม่เสีย action) เป็น damage engine passive ที่ trigger บ่อย [M:2/4] [R:3/3] [B:2/3] |
@@ -249,6 +297,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Troubadour (ValdaSpire24Extras 🔀)
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวกขยับตามอีก 4 axis กว้างแต่ไม่มี S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Scathing Retort (lv10, reaction ดาเมจ Psychic 1d10+ครึ่งเลเวล ทุกครั้งที่ศัตรูพลาดตีตัวเองหรือตัวเอง save ผ่าน) เป็น damage passive ที่ trigger บ่อยมาก [M:2/4] [R:3/3] [B:2/3] |
@@ -260,6 +311,9 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 | **Versatility** | 6/10 (B) | มีครบทั้ง damage (Scathing Retort), control (Fast Friends), และ support (Inspiring Tune) ในตัวเดียวแบบธีม bard-lite [M:2/4] [R:2/3] [B:2/3] |
 
 ### Yellow Sign (ValdaSpire24Extras 🔀)
+
+**Overall**: S — Control กระโดด +6 (3→9, C→S) บวก Support ขยับบางส่วน (0→4) และขยับตามอีก 3 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

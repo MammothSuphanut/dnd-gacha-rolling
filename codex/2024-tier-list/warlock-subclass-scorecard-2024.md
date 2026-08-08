@@ -32,31 +32,34 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ไม่มี archetype ตัวไหนมีข้อความ explicit ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ **หมายเหตุแหล่งที่มา**: Archfey/Celestial/Fiend/Great Old One มีทั้งเวอร์ชัน 2014 (PHB/XGE) และ 2024 (XPHB) — tracker ใช้ชื่อ 2014 เดิม ("The Archfey" ฯลฯ) แต่ตาม 2024-scope rule ให้คะแนนด้วยกลไก **2024 (XPHB)** เป็นตัวแทน ส่วน **The Undead** (VRGR 2014) กับ **Undead Patron** (RHW 2024 reprint) tracker แยกเป็น 2 บรรทัดอิสระ (รูปแบบเดียวกับ Fighter Banneret/PDK และ Warden Hellkeeper/Diabolist) จึงให้คะแนนแยกกันคนละตัว ส่วน **The Future You** (VSS 2014) มีแค่บรรทัดเดียวในชื่อ "Future You Patron" (ValdaPlayerPack 2024 reprint, ยืนยัน `classSource: XPHB`) — ให้คะแนนเฉพาะเวอร์ชัน 2024 เท่านั้นตาม precedent เดียวกับ Sorcerer's dual-name rule ส่วน Fathomless/Genie/Hexblade/Undying (TCE/TCE/XGE/SCAG) ไม่มี reprint ใน XPHB จึงเป็น 2014-only 🕰️ และ Dead Mists/GM/Legacy/Magician/Symbiont (ทั้งหมดจาก VSS 2014) ก็เป็น 2014-only 🕰️ เช่นกัน (ตรวจสอบแล้วว่าไฟล์ VSS-2024 ไม่มี Warlock subclass เหล่านี้เลย) ส่วน Coven/First Vampire/Parasite (GrimHollowPG24) ยืนยัน `classSource: XPHB` 2024-compatible
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| The Archfey | XPHB | 8 (A) | 7 (A) | 3 (C) | 8 (A) | 7 (A) | 7 (A) | 7 (A) |
-| The Celestial | XPHB | 7 (A) | 5 (B) | 9 (S) | 4 (C) | 6 (B) | 7 (A) | 6 (B) |
-| The Coven | GrimHollowPG24 | 8 (A) | 9 (S) | 2 (D) | 3 (C) | 6 (B) | 8 (A) | 7 (A) |
-| The Dead Mists | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 4 (C) | 7 (A) | 7 (A) | 5 (B) |
-| The Fathomless | TCE 🕰️ | 8 (A) | 8 (A) | 4 (C) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
-| The Fiend | XPHB | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
-| The First Vampire Patron | GrimHollowPG24 | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
-| The Genie | TCE 🕰️ | 8 (A) | 5 (B) | 4 (C) | 5 (B) | 7 (A) | 9 (S) | 8 (A) |
-| The GM | VSS 🕰️ | 8 (A) | 5 (B) | 5 (B) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
-| The Great Old One | XPHB | 8 (A) | 8 (A) | 0 (D) | 4 (C) | 7 (A) | 7 (A) | 7 (A) |
-| The Hexblade | XGE 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 7 (A) | 7 (A) | 6 (B) |
-| The Legacy | VSS 🕰️ | 9 (S) | 5 (B) | 7 (A) | 5 (B) | 6 (B) | 7 (A) | 7 (A) |
-| The Magician | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 4 (C) | 6 (B) | 9 (S) | 9 (S) |
-| The Parasite Patron | GrimHollowPG24 | 7 (A) | 9 (S) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
-| The Symbiont | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 7 (A) | 7 (A) |
-| The Undead | VRGR 🕰️ | 8 (A) | 6 (B) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 6 (B) |
-| The Undying | SCAG 🕰️ | 7 (A) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 7 (A) | 5 (B) |
-| Undead Patron | RHW | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 7 (A) |
-| Future You Patron | ValdaPlayerPack | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) | 8 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| The Archfey | A | XPHB | 8 (A) | 7 (A) | 3 (C) | 8 (A) | 7 (A) | 7 (A) | 7 (A) |
+| The Celestial | S | XPHB | 7 (A) | 5 (B) | 9 (S) | 4 (C) | 6 (B) | 7 (A) | 6 (B) |
+| The Coven | A | GrimHollowPG24 | 8 (A) | 9 (S) | 2 (D) | 3 (C) | 6 (B) | 8 (A) | 7 (A) |
+| The Dead Mists | C | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 4 (C) | 7 (A) | 7 (A) | 5 (B) |
+| The Fathomless | A | TCE 🕰️ | 8 (A) | 8 (A) | 4 (C) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
+| The Fiend | A | XPHB | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
+| The First Vampire Patron | A | GrimHollowPG24 | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
+| The Genie | S | TCE 🕰️ | 8 (A) | 5 (B) | 4 (C) | 5 (B) | 7 (A) | 9 (S) | 8 (A) |
+| The GM | A | VSS 🕰️ | 8 (A) | 5 (B) | 5 (B) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
+| The Great Old One | A | XPHB | 8 (A) | 8 (A) | 0 (D) | 4 (C) | 7 (A) | 7 (A) | 7 (A) |
+| The Hexblade | A | XGE 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 7 (A) | 7 (A) | 6 (B) |
+| The Legacy | S | VSS 🕰️ | 9 (S) | 5 (B) | 7 (A) | 5 (B) | 6 (B) | 7 (A) | 7 (A) |
+| The Magician | S | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 4 (C) | 6 (B) | 9 (S) | 9 (S) |
+| The Parasite Patron | S | GrimHollowPG24 | 7 (A) | 9 (S) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
+| The Symbiont | B | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 7 (A) | 7 (A) |
+| The Undead | A | VRGR 🕰️ | 8 (A) | 6 (B) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 6 (B) |
+| The Undying | C | SCAG 🕰️ | 7 (A) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 7 (A) | 5 (B) |
+| Undead Patron | S | RHW | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 7 (A) |
+| Future You Patron | S | ValdaPlayerPack | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) | 8 (A) |
 
 ---
 
 ### The Archfey (XPHB)
+
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +5 (C→A) และขยับขึ้นอีก 5 axis พร้อมกัน กว้างที่สุดในกลุ่มที่ไม่มี S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -70,6 +73,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Celestial (XPHB)
 
+**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในทั้งคลาส
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Radiant Soul (เพิ่ม Cha mod ใส่ดาเมจคาถา Radiant/Fire 1 ครั้ง/เทิร์น) ไม่พอยกระดับเหนือ baseline ที่เน้นสาย heal มากกว่าดาเมจ = ใกล้เคียง baseline |
@@ -81,6 +87,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | มีทั้งดาเมจ Radiant/Fire เสริมและฮีลเป็นหลัก แต่ยังเป็น healer archetype ที่ค่อนข้างเน้นมิติเดียว [M:2/4] [R:2/3] [B:1/3] |
 
 ### The Coven (GrimHollowPG24)
+
+**Overall**: A — Control เป็น S ใหม่ (กระโดด +4) บวก Utility/Versatility ขยับตาม แต่ Support ยังแทบเป็น 0 (2/10)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -94,6 +103,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Dead Mists (VSS 🕰️)
 
+**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Survivability/AE) Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี damage feature ใหม่โดยตรง (Master of the Mists เป็น lifesteal ไม่ใช่ดาเมจเพิ่ม) = เท่า baseline |
@@ -105,6 +117,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 5/10 (B) | Toolkit ทั้งหมดผูกกับธีม HP-แลก-พลังเดียว ไม่กว้างมาก = เท่า baseline |
 
 ### The Fathomless (TCE 🕰️)
+
+**Overall**: A — Control กระโดด +3 บวก Support ขยับบางส่วน (0→4) และขยับตามอีก 2 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -118,6 +133,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Fiend (XPHB)
 
+**Overall**: A — Damage เป็น S ใหม่ บวก Survivability/Action Economy ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Hurl Through Hell (lv14, 8d10 Psychic + Incapacitated 1 เทิร์น ต่อเป้าเดียว, refill ด้วย spell slot) เป็นดาเมจก้อนเดียวที่สูงที่สุดในบรรดา subclass ของ class นี้ [M:4/4] [R:2/3] [B:2/3] |
@@ -129,6 +147,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 5/10 (B) | Toolkit เน้นดาเมจเดี่ยว+luck+resistance เป็นหลัก ค่อนข้างแคบ = เท่า baseline |
 
 ### The First Vampire Patron (GrimHollowPG24)
+
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -142,6 +163,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Genie (TCE 🕰️)
 
+**Overall**: S — Utility เป็น S ใหม่ บวก Versatility กระโดด +3 และ Support ขยับบางส่วน (0→4) กว้างมาก
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Genie's Wrath (extra ดาเมจ=prof bonus ทุกเทิร์นที่ตีโดน) บวก Limited Wish (lv14, ขอคาถาระดับ 6 หรือต่ำกว่าได้ทุกชนิด 1 ครั้ง/1d4 long rests รวมคาถาดาเมจแรงๆ) [M:3/4] [R:2/3] [B:2/3] |
@@ -153,6 +177,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 8/10 (A) | Limited Wish เพียงตัวเดียวทำให้ subclass นี้ยืดหยุ่นที่สุดในเชิงกลไก (ขอผลคาถาอะไรก็ได้ตามสถานการณ์) [M:3/4] [R:2/3] [B:3/3] |
 
 ### The GM (VSS 🕰️)
+
+**Overall**: A — Support กระโดด +5 (0→5, D→B) บวก Survivability/Versatility ขยับตาม ไม่มี axis ไหนถึง S
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -166,6 +193,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Great Old One (XPHB)
 
+**Overall**: A — Control กระโดด +3 บวกขยับขึ้นอีก 3 axis กลางๆ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Eldritch Hex (Hex เตรียมไว้ตลอด+เพิ่ม Disadvantage save) บวก Create Thrall (lv14, Summon Aberration ไม่ต้อง Concentration+ดาเมจ Psychic โบนัสจาก Hex) เป็น damage-debuff engine ที่ยั่งยืน [M:3/4] [R:2/3] [B:2/3] |
@@ -177,6 +207,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | Psychic Spells (สลับดาเมจทุกคาถาเป็น Psychic บายพาส resist ทั่วไป + cast Enchant/Illusion ไม่ใช้ V/S component) เพิ่มความยืดหยุ่นเชิงกลไก [M:2/4] [R:2/3] [B:3/3] |
 
 ### The Hexblade (XGE 🕰️)
+
+**Overall**: A — Damage เป็น S ใหม่ แต่ breadth แคบ (แค่ Survivability/AE ขยับตามเล็กน้อย) Support ยังเป็น 0
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -190,6 +223,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Legacy (VSS 🕰️)
 
+**Overall**: S — Damage เป็น S ใหม่ บวก Support กระโดดจาก 0 เป็น 7 (D→A) — สองจุดแข็งใหญ่พร้อมกัน
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Battle Dice เพิ่มดาเมจทุกครั้งที่ตีโดน (สเกล 4d10 ที่ lv19) บวก Final Legacy (lv14, ยิงลำแสงสูงสุด 30d10 Force โดยให้ทีมช่วยชาร์จ) เป็น damage kit ที่ magnitude สูงที่สุดในบรรดา class นี้ [M:4/4] [R:2/3] [B:3/3] |
@@ -201,6 +237,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | รวม nova-damage, party-wide support aura, และ resistance เข้าด้วยกันในตัวเดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### The Magician (VSS 🕰️)
+
+**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ (Versatility กระโดด +4) แม้ Support จะยังเป็น 0 เต็มก็ตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -214,6 +253,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Parasite Patron (GrimHollowPG24)
 
+**Overall**: S — Control เป็น S ใหม่ (กระโดด +4) บวก Survivability กระโดด +5 และขยับขึ้นอีก 3 axis กว้างมาก แม้ Support จะยังเป็น 0
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | Spawn Pawn's backlash (ดาเมจ Psychic เมื่อเป้า save ผ่าน Dominate Person) เป็น damage เสริมเล็กน้อยเท่านั้น = ใกล้เคียง baseline |
@@ -225,6 +267,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 8/10 (A) | เมนูบัฟ 6 แบบ + control ที่แรงที่สุด + survival-cheat เป็น breadth ที่กว้างมาก [M:3/4] [R:2/3] [B:3/3] |
 
 ### The Symbiont (VSS 🕰️)
+
+**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Survivability/Versatility) Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -238,6 +283,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Undead (VRGR 🕰️)
 
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +4 และขยับขึ้นอีก 3 axis พร้อมกัน
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Grave Touched (lv6, สลับดาเมจเป็น Necrotic+เพิ่ม dice ตอน transform) บวก Necrotic Husk (lv10, ดาเมจ AoE 2d10+level ตอนใกล้ตาย) [M:3/4] [R:2/3] [B:2/3] |
@@ -249,6 +297,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | ดาเมจ+control+survival triad ผ่านโหมด transform เดียว + scouting tool ปลายเกม [M:2/4] [R:2/3] [B:2/3] |
 
 ### The Undying (SCAG 🕰️)
+
+**Overall**: C — ขยับแค่ 1 axis (Survivability +3) ที่เหลือเท่า baseline หมด แคบที่สุดในกลุ่มร่วมกับ The Dead Mists
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -262,6 +313,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### Undead Patron (RHW)
 
+**Overall**: S — Damage เป็น S ใหม่ บวก Survivability กระโดด +5 และขยับขึ้นอีก 3 axis กว้างมาก แม้ Support จะยังเป็น 0
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Arcane Necrosis (ดาเมจ Necrotic บายพาส Resistance ทั้งหมด+สลับดาเมจคาถาเป็น Necrotic) บวก Dreaded Necrosis (dice โบนัสตอน transform) เป็น damage kit ที่แรงกว่าเวอร์ชัน 2014 อย่างชัดเจนจากการบายพาส resistance [M:3/4] [R:3/3] [B:3/3] |
@@ -273,6 +327,9 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | ดาเมจ+control+survival+mobility ครบทุกมิติ เป็นเวอร์ชันที่ปรับปรุงรอบด้านกว่า The Undead 2014 [M:2/4] [R:2/3] [B:3/3] |
 
 ### Future You Patron (ValdaPlayerPack)
+
+**Overall**: S — Utility เป็น S ใหม่ บวก Support กระโดด +6 (0→6, D→B) และ Survivability/Versatility ขยับตามอีก — ขยับขึ้น 6 ใน 7 axis กว้างที่สุดในกลุ่มทั้งหมด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

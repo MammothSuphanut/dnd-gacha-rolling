@@ -32,26 +32,29 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ทั้ง 14 subclass มาจากไฟล์เดียวกัน (`Valda's Spire of Secrets 2024`, source `ValdaSpire24Extras`, ไม่มี 🕰️ orphan เลย) ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) หมายเหตุ: baseline Damage/Action Economy สูงมากอยู่แล้ว (9 และ 7) ทำให้หลาย subclass ยัง "เท่า baseline" ในสองแกนนี้แม้จะมี feature เสริมเล็กน้อย เพราะ magnitude ไม่พอข้ามระดับ
 
-| Subclass | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|
-| Acrobat | 9 (S) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Cheerleader | 9 (S) | 3 (C) | 9 (S) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
-| Contortionist | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
-| Courtesan | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 7 (A) |
-| Danseur Macabre | 10 (S) | 3 (C) | 0 (D) | 7 (A) | 9 (S) | 7 (A) | 8 (A) |
-| Dramaturge | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 8 (A) |
-| Fencer | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 4 (C) | 6 (B) |
-| Fey Ballerina | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
-| Fire Dancer | 10 (S) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 4 (C) | 7 (A) |
-| Harlequin | 10 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 6 (B) |
-| Marionettist | 9 (S) | 9 (S) | 3 (C) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
-| Mime | 10 (S) | 7 (A) | 0 (D) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Shadow Dancer | 9 (S) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Steelsinger | 9 (S) | 3 (C) | 8 (A) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
+| Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|
+| Acrobat | B | 9 (S) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Cheerleader | S | 9 (S) | 3 (C) | 9 (S) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
+| Contortionist | A | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
+| Courtesan | A | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 7 (A) |
+| Danseur Macabre | A | 10 (S) | 3 (C) | 0 (D) | 7 (A) | 9 (S) | 7 (A) | 8 (A) |
+| Dramaturge | A | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 8 (A) |
+| Fencer | B | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 4 (C) | 6 (B) |
+| Fey Ballerina | B | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
+| Fire Dancer | B | 10 (S) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 4 (C) | 7 (A) |
+| Harlequin | C | 10 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 6 (B) |
+| Marionettist | S | 9 (S) | 9 (S) | 3 (C) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
+| Mime | B | 10 (S) | 7 (A) | 0 (D) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Shadow Dancer | B | 9 (S) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Steelsinger | S | 9 (S) | 3 (C) | 8 (A) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
 
 ---
 
 ### Acrobat
+
+**Overall**: B — ขยับกลางๆ 3 axis (Survivability/Utility/Versatility) ไม่มี peak ใหม่ Support ยังเป็น 0 เต็ม
+
 
 > **คอนเซปต์**: นักกายกรรมที่แปลงความเร็ว/การเคลื่อนที่เป็นดาเมจ
 
@@ -67,6 +70,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Cheerleader
 
+**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S) เต็มสเกล — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Versatility ขยับตาม
+
+
 > **คอนเซปต์**: นักเชียร์ที่ปลุกใจทีมด้วยเสียงเชียร์และผาดโผน
 
 | Axis | คะแนน | เหตุผล |
@@ -80,6 +86,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 | **Versatility** | 8/10 (A) | Squad Warmup แจก Dance Style ใดก็ได้ (ไม่ใช่แค่ของตัวเอง) ให้ ally ทำให้ปรับ role ของทั้งทีมได้กว้างมาก [M:3/4] [R:2/3] [B:3/3] |
 
 ### Contortionist
+
+**Overall**: A — Survivability เป็น S (9/10) บวก Action Economy/Versatility ขยับเล็กน้อย แต่ Support/Control ไม่ถูกแตะเลย
+
 
 > **คอนเซปต์**: นักดัดตัวที่หลบและตอบโต้ด้วยความยืดหยุ่นเหนือมนุษย์
 
@@ -95,6 +104,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Courtesan
 
+**Overall**: A — Control กระโดด +5 (3→8, C→A) บวก Action Economy/Utility/Versatility ขยับตาม แต่ Support ยังเป็น 0
+
+
 > **คอนเซปต์**: นักเสน่ห์ที่ครอบงำจิตใจศัตรูด้วยเสน่ห์
 
 | Axis | คะแนน | เหตุผล |
@@ -108,6 +120,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | เปิด role นักเสน่ห์/นักสังคมที่ต่างจาก striker ทั่วไปของคลาสอย่างชัดเจน [M:2/4] [R:2/3] [B:3/3] |
 
 ### Danseur Macabre
+
+**Overall**: A — Action Economy เป็น S (9/10) บวก Survivability/Utility/Versatility ขยับตาม กว้างแต่ Support/Control ยังไม่ถูกแตะเลย
+
 
 > **คอนเซปต์**: นักเต้นเนโครแมนเซอร์ที่เรียกโครงกระดูกมาเต้นรำและสู้ด้วยกัน
 
@@ -123,6 +138,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Dramaturge
 
+**Overall**: A — ขยับขึ้น 5 ใน 7 axis (Control/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มแต่ไม่มี axis ไหนถึง S เพิ่มจาก baseline เลย
+
+
 > **คอนเซปต์**: นักแสดงที่ใช้เวทมนตร์การแสดงควบคู่กับการเต้น
 
 | Axis | คะแนน | เหตุผล |
@@ -136,6 +154,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 | **Versatility** | 8/10 (A) | ผสม caster เต็มตัวเข้ากับ striker เดิม เปิด role hybrid ที่กว้างกว่า Dancer ทั่วไปมาก [M:3/4] [R:2/3] [B:3/3] |
 
 ### Fencer
+
+**Overall**: B — ขยับกลางๆ 3 axis (Control/Survivability/AE) Support/Utility/Versatility นิ่งสนิท
+
 
 > **คอนเซปต์**: นักฟันดาบมือเดียวที่ปัดป้องและแทงสวนแม่นยำ
 
@@ -151,6 +172,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Fey Ballerina
 
+**Overall**: B — Survivability เป็น S (9/10) แต่ Control/Support/Action Economy นิ่งสนิททั้งหมด แคบเหมือน Contortionist แต่ breadth น้อยกว่า
+
+
 > **คอนเซปต์**: นักบัลเลต์ที่ได้พรจากภาคีเฟย์ให้เต้นได้สมบูรณ์แบบ
 
 | Axis | คะแนน | เหตุผล |
@@ -164,6 +188,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผสม mobility(Misty Step)/defense(auto-save)/self-heal ในตัวเดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### Fire Dancer
+
+**Overall**: B — ขยับกลางๆ 3 axis (Control/Survivability/Versatility) Support/Utility นิ่งสนิท
+
 
 > **คอนเซปต์**: นักเล่นไฟที่พ่นเปลวเพลิงใส่ศัตรูเป็นวงกว้าง
 
@@ -179,6 +206,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Harlequin
 
+**Overall**: C — มีแค่ Control/Action Economy ที่ขยับเล็กน้อย Support/Survivability/Utility/Versatility นิ่งสนิททั้งหมด แคบที่สุดในกลุ่ม
+
+
 > **คอนเซปต์**: ตัวตลกนักกายกรรมที่ล้อเลียนและปาดาบเป้าหมาย
 
 | Axis | คะแนน | เหตุผล |
@@ -192,6 +222,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | โฟกัส skirmisher เดี่ยวล้วนๆ ไม่ขยาย role อื่น = เท่า baseline |
 
 ### Marionettist
+
+**Overall**: S — Control กระโดด +6 (3→9, C→S) — เลข Control สูงสุดในบรรดา Dancer ทุกตัว บวก Support ขยับบางส่วน (0→3) และ Utility/Versatility ตาม
+
 
 > **คอนเซปต์**: นักเชิดหุ่นที่บังคับศัตรูให้กลายเป็นตุ๊กตาของตัวเอง
 
@@ -207,6 +240,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Mime
 
+**Overall**: B — Control ขยับ +4 (A) บวก Utility เล็กน้อย Support/Survivability/Action Economy นิ่งสนิท
+
+
 > **คอนเซปต์**: นักแสดงใบ้ที่ทำให้ของสมมติกลายเป็นของจริง
 
 | Axis | คะแนน | เหตุผล |
@@ -221,6 +257,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Shadow Dancer
 
+**Overall**: B — ขยับกลางๆ 3 axis (Survivability/Utility/Versatility) เหมือน Acrobat ไม่มี peak ใหม่
+
+
 > **คอนเซปต์**: นักเต้นที่มีเงาของตัวเองเป็นคู่เต้นและโล่กำบัง
 
 | Axis | คะแนน | เหตุผล |
@@ -234,6 +273,9 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผสม stealth/defense/damage ในธีมเงาเดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### Steelsinger
+
+**Overall**: S — Survivability พุ่งเป็น 10/10 (S) สูงสุดในกลุ่มทั้งหมด บวก Support กระโดดจาก 0 เป็น 8 (A) และ Versatility ขยับตาม — สองจุดแข็งใหญ่พร้อมกัน
+
 
 > **คอนเซปต์**: นักเต้นเกราะหนักที่ปัดป้องดาเมจและปกป้องทีม
 

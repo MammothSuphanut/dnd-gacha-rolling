@@ -32,23 +32,26 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ทั้ง 11 Guild มาจากไฟล์เดียวกัน (`Valda's Spire of Secrets 2024`, ทุกตัวมี reprint 2024 ไม่มี 🕰️ orphan เลย) ไม่มี guild ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Arcane Maesters' Guild | ValdaSpire24 | 9 (S) | 3 (C) | 7 (A) | 8 (A) | 4 (C) | 10 (S) | 8 (A) |
-| Armigers' Guild | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 9 (S) | 7 (A) |
-| Bladeworkers' Guild | ValdaSpire24 | 9 (S) | 5 (B) | 6 (B) | 8 (A) | 6 (B) | 9 (S) | 6 (B) |
-| Calibarons' Guild | ValdaSpire24 | 9 (S) | 6 (B) | 6 (B) | 7 (A) | 4 (C) | 9 (S) | 7 (A) |
-| Clockworkers' Guild | ValdaSpire24Extras | 10 (S) | 3 (C) | 7 (A) | 7 (A) | 9 (S) | 9 (S) | 8 (A) |
-| Courtiers' Guild | ValdaSpire24Extras | 8 (A) | 3 (C) | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 8 (A) |
-| Forgeknights' Guild | ValdaSpire24 | 10 (S) | 3 (C) | 6 (B) | 8 (A) | 4 (C) | 9 (S) | 7 (A) |
-| Mechanauts' Guild | ValdaSpire24 | 10 (S) | 3 (C) | 6 (B) | 10 (S) | 6 (B) | 9 (S) | 9 (S) |
-| Thunderlords' Guild | ValdaSpire24 | 10 (S) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 9 (S) | 7 (A) |
-| Trappers' Guild | ValdaSpire24 | 9 (S) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
-| Wintercarvers' Guild | ValdaSpire24Extras | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 6 (B) | 9 (S) | 8 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Arcane Maesters' Guild | B | ValdaSpire24 | 9 (S) | 3 (C) | 7 (A) | 8 (A) | 4 (C) | 10 (S) | 8 (A) |
+| Armigers' Guild | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 9 (S) | 7 (A) |
+| Bladeworkers' Guild | A | ValdaSpire24 | 9 (S) | 5 (B) | 6 (B) | 8 (A) | 6 (B) | 9 (S) | 6 (B) |
+| Calibarons' Guild | A | ValdaSpire24 | 9 (S) | 6 (B) | 6 (B) | 7 (A) | 4 (C) | 9 (S) | 7 (A) |
+| Clockworkers' Guild | S | ValdaSpire24Extras | 10 (S) | 3 (C) | 7 (A) | 7 (A) | 9 (S) | 9 (S) | 8 (A) |
+| Courtiers' Guild | A | ValdaSpire24Extras | 8 (A) | 3 (C) | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 8 (A) |
+| Forgeknights' Guild | B | ValdaSpire24 | 10 (S) | 3 (C) | 6 (B) | 8 (A) | 4 (C) | 9 (S) | 7 (A) |
+| Mechanauts' Guild | S | ValdaSpire24 | 10 (S) | 3 (C) | 6 (B) | 10 (S) | 6 (B) | 9 (S) | 9 (S) |
+| Thunderlords' Guild | A | ValdaSpire24 | 10 (S) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 9 (S) | 7 (A) |
+| Trappers' Guild | A | ValdaSpire24 | 9 (S) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
+| Wintercarvers' Guild | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 6 (B) | 9 (S) | 8 (A) |
 
 ---
 
 ### Arcane Maesters' Guild (ValdaSpire24)
+
+**Overall**: B — Damage/Utility เป็น S ทั้งคู่ แต่ Control/Action Economy (สอง axis ที่ baseline อ่อนสุด) นิ่งสนิทไม่ขยับเลย — ทิ้งจุดอ่อนของ baseline ไว้เหมือนเดิมทั้งคู่ อ่อนสุดในกลุ่ม 11 Guild
+
 
 > **คอนเซปต์**: ช่างเวทย์ที่คราฟต์ไอเทมวิเศษของจริงได้ (ไม่ใช่แค่ Masterwork ธรรมดา)
 
@@ -64,6 +67,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Armigers' Guild (ValdaSpire24)
 
+**Overall**: S — 3 axis เป็น S (Damage, Survivability 10/10 เต็ม, Utility) และยังแก้จุดอ่อน Control/Action Economy ของ baseline ขึ้นมาเป็น B ทั้งคู่ — สมดุลที่สุดในกลุ่มพร้อม peak สูงสุด
+
+
 > **คอนเซปต์**: แทงค์เกราะหนักที่ใช้เกราะเป็นทั้งเกราะและอาวุธ
 
 | Axis | คะแนน | เหตุผล |
@@ -77,6 +83,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | เปิด role "ถัง/taunt-tank" ที่ชัดเจนกว่า Craftsman ทั่วไป [M:2/4] [R:2/3] [B:2/3] |
 
 ### Bladeworkers' Guild (ValdaSpire24)
+
+**Overall**: A — 2 axis เป็น S (Damage, Utility) บวก Control/Action Economy ขยับเป็น B ทั้งคู่ กว้างพอสมควรแต่ peak น้อยกว่า Armigers'/Mechanauts'
+
 
 > **คอนเซปต์**: นักดาบผู้เชี่ยวชาญอาวุธประชิดทุกชนิด
 
@@ -92,6 +101,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Calibarons' Guild (ValdaSpire24)
 
+**Overall**: A — 2 axis เป็น S (Damage, Utility) แก้ Control ขึ้นมาเป็น B แต่ Action Economy ยังนิ่งที่ baseline C
+
+
 > **คอนเซปต์**: มือปืน/นักยิงที่ดัดแปลงกระสุนพิเศษได้
 
 | Axis | คะแนน | เหตุผล |
@@ -105,6 +117,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 | **Versatility** | 7/10 (A) | เลือกชนิดกระสุนได้หลายแบบ (เจาะเกราะ/ไฟ/เจาะทะลุ/AoE) ปรับกลยุทธ์ตามสถานการณ์ [M:2/4] [R:2/3] [B:3/3] |
 
 ### Clockworkers' Guild (ValdaSpire24Extras)
+
+**Overall**: S — 3 axis เป็น S (Damage 10/10, Action Economy กระโดดจาก C เป็น S (4→9), Utility) — แก้จุดอ่อน Action Economy ของ baseline ได้แรงที่สุดในกลุ่ม แม้ Control จะยังนิ่ง
+
 
 > **คอนเซปต์**: วิศวกรที่มีหุ่นยนต์คลอควร์ก 2 ตัวเป็นผู้ช่วยรบ
 
@@ -120,6 +135,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Courtiers' Guild (ValdaSpire24Extras)
 
+**Overall**: A — 2 axis เป็น S (Support กระโดดจาก B เป็น S, Utility) เป็น Guild เดียวที่ไม่ดัน Damage เพิ่มเลย (นิ่งที่ baseline A) เอียงไปทาง support เต็มตัวแทน
+
+
 > **คอนเซปต์**: ช่างตัดเสื้อในราชสำนักที่เย็บแผลและปลุกใจทีมได้
 
 | Axis | คะแนน | เหตุผล |
@@ -133,6 +151,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 | **Versatility** | 8/10 (A) | พลิก Craftsman จาก combat-crafter เป็น healer/buffer/social specialist ได้เต็มรูปแบบ — บทบาทต่างจาก guild อื่นชัดเจน [M:2/4] [R:2/3] [B:3/3] |
 
 ### Forgeknights' Guild (ValdaSpire24)
+
+**Overall**: B — Damage/Utility เป็น S ทั้งคู่เหมือน Arcane Maesters' แต่ Control/Action Economy ก็นิ่งสนิทเหมือนกัน — รูปแบบเดียวกับ Arcane Maesters' อ่อนสุดร่วมกัน
+
 
 > **คอนเซปต์**: นักตีเหล็กที่พกเตาไฟติดตัวและระเบิดไฟใส่ศัตรู
 
@@ -148,6 +169,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Mechanauts' Guild (ValdaSpire24)
 
+**Overall**: S — 4 axis เป็น S พร้อมกัน (Damage, Survivability 10/10 เต็ม, Utility, Versatility) มากที่สุดในกลุ่มทั้ง 11 Guild แม้ Control จะยังไม่ขยับก็ตาม
+
+
 > **คอนเซปต์**: นักบินรถถังปูยักษ์ที่ปรับแต่งได้เต็มที่
 
 | Axis | คะแนน | เหตุผล |
@@ -161,6 +185,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 | **Versatility** | 9/10 (S) | Apparatus ปรับแต่งได้ทั้งด้านดาเมจ/traversal/utility ผ่านโมดูลสลับได้ทุก long rest — breadth กว้างที่สุดใน guild ที่ทำมา [M:3/4] [R:3/3] [B:3/3] |
 
 ### Thunderlords' Guild (ValdaSpire24)
+
+**Overall**: A — 2 axis เป็น S (Damage 10/10, Utility) บวก Survivability/Support/Versatility ขยับเป็น A แต่ Control ยังนิ่งที่ baseline
+
 
 > **คอนเซปต์**: ช่างไฟฟ้าที่สะสม Charge Point มาปล่อยเป็นดาเมจสายฟ้า
 
@@ -176,6 +203,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Trappers' Guild (ValdaSpire24)
 
+**Overall**: A — แก้จุดอ่อนทั้งคู่ของ baseline ได้ดีที่สุด (Control 3→7 เป็น A, Action Economy 4→7 เป็น A) ไม่เหลือจุดอ่อนเลย แต่ peak สูงสุดแค่ S สองตัว (Damage, Utility) น้อยกว่า Mechanauts'/Armigers'
+
+
 > **คอนเซปต์**: นักวางกับดักที่ควบคุมสนามรบด้วยกลไก
 
 | Axis | คะแนน | เหตุผล |
@@ -189,6 +219,9 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 | **Versatility** | 8/10 (A) | เปิด role "ผู้ควบคุมสนามรบ" ที่ต่างจาก Craftsman แนวประชิด/ระยะไกลทั่วไปชัดเจน [M:2/4] [R:2/3] [B:3/3] |
 
 ### Wintercarvers' Guild (ValdaSpire24Extras)
+
+**Overall**: A — Control กระโดดจาก C เป็น A (3→8) บวก Survivability/Utility เป็น S สองแกน แต่ Action Economy ขยับแค่ B
+
 
 > **คอนเซปต์**: ช่างแกะสลักน้ำแข็งที่แช่แข็งศัตรูให้เป็นอัมพาต
 

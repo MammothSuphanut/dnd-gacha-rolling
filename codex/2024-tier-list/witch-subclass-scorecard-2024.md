@@ -32,25 +32,28 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ไม่มี archetype ตัวไหนมีข้อความ explicit ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ (เท่ากับ baseline ถ้าไม่มี feature เพิ่มด้านนั้น) **หมายเหตุแหล่งที่มา**: ทั้ง 13 ตัวเป็น ValdaSpire24/24Extras 2024-native ครบ ไม่มีตัวไหนเป็น 2014-only orphan
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Black Magic | ValdaSpire24 | 8 (A) | 6 (B) | 0 (D) | 5 (B) | 8 (A) | 7 (A) | 6 (B) |
-| Blood Magic | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 3 (C) | 9 (S) | 8 (A) | 6 (B) |
-| Blue Magic | ValdaSpire24Extras | 8 (A) | 7 (A) | 0 (D) | 5 (B) | 8 (A) | 9 (S) | 9 (S) |
-| Fragrant Magic | ValdaSpire24Extras | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 7 (A) |
-| Gingerbread Magic | ValdaSpire24Extras | 7 (A) | 6 (B) | 7 (A) | 5 (B) | 8 (A) | 7 (A) | 7 (A) |
-| Green Magic | ValdaSpire24 | 8 (A) | 6 (B) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 7 (A) |
-| Purple Magic | ValdaSpire24 | 7 (A) | 8 (A) | 0 (D) | 3 (C) | 7 (A) | 8 (A) | 7 (A) |
-| Red Magic | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
-| Sky Magic | ValdaSpire24Extras | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
-| Steel Magic | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 7 (A) | 6 (B) |
-| Tea Magic | ValdaSpire24 | 7 (A) | 6 (B) | 8 (A) | 5 (B) | 8 (A) | 9 (S) | 8 (A) |
-| Technicolor Magic | ValdaSpire24 | 7 (A) | 7 (A) | 4 (C) | 7 (A) | 8 (A) | 8 (A) | 7 (A) |
-| White Magic | ValdaSpire24 | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 8 (A) | 7 (A) | 6 (B) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Black Magic | B | ValdaSpire24 | 8 (A) | 6 (B) | 0 (D) | 5 (B) | 8 (A) | 7 (A) | 6 (B) |
+| Blood Magic | A | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 3 (C) | 9 (S) | 8 (A) | 6 (B) |
+| Blue Magic | S | ValdaSpire24Extras | 8 (A) | 7 (A) | 0 (D) | 5 (B) | 8 (A) | 9 (S) | 9 (S) |
+| Fragrant Magic | S | ValdaSpire24Extras | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 7 (A) |
+| Gingerbread Magic | A | ValdaSpire24Extras | 7 (A) | 6 (B) | 7 (A) | 5 (B) | 8 (A) | 7 (A) | 7 (A) |
+| Green Magic | A | ValdaSpire24 | 8 (A) | 6 (B) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 7 (A) |
+| Purple Magic | C | ValdaSpire24 | 7 (A) | 8 (A) | 0 (D) | 3 (C) | 7 (A) | 8 (A) | 7 (A) |
+| Red Magic | A | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
+| Sky Magic | A | ValdaSpire24Extras | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
+| Steel Magic | B | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 7 (A) | 6 (B) |
+| Tea Magic | S | ValdaSpire24 | 7 (A) | 6 (B) | 8 (A) | 5 (B) | 8 (A) | 9 (S) | 8 (A) |
+| Technicolor Magic | A | ValdaSpire24 | 7 (A) | 7 (A) | 4 (C) | 7 (A) | 8 (A) | 8 (A) | 7 (A) |
+| White Magic | S | ValdaSpire24 | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 8 (A) | 7 (A) | 6 (B) |
 
 ---
 
 ### Black Magic (ValdaSpire24)
+
+**Overall**: B — ขยับกลางๆ 3 axis (Damage/Survivability/Action Economy) ไม่มี peak ถึง S เลย Support ยังเป็น 0 เต็ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -64,6 +67,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Blood Magic (ValdaSpire24)
 
+**Overall**: A — Damage และ Action Economy เป็น S ทั้งคู่ (9/10) แต่ Support ยังเป็น 0 เต็มและ Survivability ไม่ขยับเลย — peak แรงแต่ breadth แคบ
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Sanguine (lv14, แลก HP ตัวเองเพื่อดาเมจ Necrotic เพิ่มสูงสุด 6d8 ต่อเป้าที่ Hex ไว้) บวก Arcane Bloodletting (แลกดาเมจเปลี่ยน casting time เป็น bonus action = ร่ายคาถาได้มากขึ้นต่อเทิร์น) [M:3/4] [R:3/3] [B:2/3] |
@@ -75,6 +81,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | โฟกัส nova-caster ที่แลก HP เพื่อพลัง เป็น archetype เดี่ยวตายตัว = เท่า baseline |
 
 ### Blue Magic (ValdaSpire24Extras)
+
+**Overall**: S — Utility และ Versatility เป็น S ทั้งคู่ บวกขยับขึ้นอีก 4 axis (Damage/Control/Survivability/AE) กว้างที่สุดในกลุ่ม มีแค่ Support ที่ยังไม่ขยับ
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -88,6 +97,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Fragrant Magic (ValdaSpire24Extras)
 
+**Overall**: S — Support กระโดดจาก 0 (D) เป็น 8 (A) — แก้จุดอ่อนใหญ่สุดของ baseline ได้ บวกอีก 4 axis ขยับตามแบบกลางๆ (Control/Survivability/Utility/Versatility)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี damage feature ใหม่โดยตรง = เท่า baseline |
@@ -99,6 +111,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | Fragrant Aura 3 โหมด + aura เสริมทีมถาวร + control เป็น breadth ที่กว้าง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Gingerbread Magic (ValdaSpire24Extras)
+
+**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวก Survivability/Action Economy/Versatility ขยับตามเล็กน้อย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -112,6 +127,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Green Magic (ValdaSpire24)
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวก Survivability ขยับ +3 และ Damage/AE/Versatility ขยับเล็กน้อย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Twin Familiar (lv6, แยก familiar เป็น 2 ตัวแชร์ HP pool เดียวกัน ใช้ Quick Attack ได้ทั้งคู่ = ดาเมจ pet เพิ่มเป็น 2 เท่า) [M:2/4] [R:3/3] [B:2/3] |
@@ -123,6 +141,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผสม familiar-focused pet-build, support, และ utility ภาษา ในตัวเดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### Purple Magic (ValdaSpire24)
+
+**Overall**: C — มีแค่ Control/Utility/Versatility ที่ขยับเล็กน้อย Support และ Survivability (สอง axis อ่อนสุดของ baseline) ไม่ถูกแตะเลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -136,6 +157,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Red Magic (ValdaSpire24)
 
+**Overall**: A — Damage เป็น S บวก Survivability กระโดด +4 (C→A) แต่ Support ยังเป็น 0 เต็ม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Elemental Annihilation (lv14, แลก spell slot อีกลูกเพื่อการันตีดาเมจสูงสุดของคาถาธาตุ) เป็น damage nova ที่ magnitude สูงมาก [M:4/4] [R:2/3] [B:2/3] |
@@ -147,6 +171,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | โฟกัส blaster-nuker archetype เดี่ยวตายตัวชัดเจน = เท่า baseline |
 
 ### Sky Magic (ValdaSpire24Extras)
+
+**Overall**: A — Survivability กระโดด +4 (C→A) บวก Control/Action Economy/Utility ขยับเล็กน้อยทั่ว แต่ Support ไม่ถูกแตะ
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -160,6 +187,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Steel Magic (ValdaSpire24)
 
+**Overall**: B — Damage เป็น S บวก Survivability ขยับ +3 แต่ Support ยังเป็น 0 เต็ม และ Control/Utility/Versatility นิ่งสนิท
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Extra Attack (lv6, โจมตี 2 ครั้ง + แทนที่ 1 ครั้งด้วย cantrip/Hex ได้) เป็นการเพิ่มดาเมจก้าวกระโดดสำหรับ full-caster ที่ปกติโจมตีทีละครั้ง บวก Insidious Smite (lv10, nova ผ่านการแลก slot) [M:4/4] [R:2/3] [B:2/3] |
@@ -171,6 +201,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | Melee-caster hybrid (Gish) archetype ที่ค่อนข้างโฟกัสบทบาทเดียว = เท่า baseline |
 
 ### Tea Magic (ValdaSpire24)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 8 (A) บวก Utility เป็น S และขยับอีก 3 axis ตาม (Survivability/AE/Versatility) กว้างที่สุดร่วมกับ Blue Magic/Fragrant Magic
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -184,6 +217,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Technicolor Magic (ValdaSpire24)
 
+**Overall**: A — ขยับขึ้น 6 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มแต่ไม่มี axis ไหนถึง S เลยสักตัว
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี damage feature ใหม่ = เท่า baseline |
@@ -195,6 +231,9 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ธีม friendship-support ครอบคลุมทั้งป้องกัน/utility/สังคม [M:2/4] [R:2/3] [B:3/3] |
 
 ### White Magic (ValdaSpire24)
+
+**Overall**: S — Support กระโดดจาก 0 เป็น 9 (S) — เลขสูงสุดในบรรดา Witch ทุกตัวที่แก้จุดอ่อนนี้ บวก Survivability ขยับ +3
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

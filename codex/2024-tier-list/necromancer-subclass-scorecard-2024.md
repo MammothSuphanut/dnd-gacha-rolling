@@ -32,26 +32,29 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ทั้ง 14 subclass มาจากไฟล์เดียวกัน (`Valda's Spire of Secrets 2024`, ไม่มี 🕰️ orphan เลย) ทุกตัวมีฟีเจอร์ lv20 "[Lichdom]" เป็น capstone เสริม (ปลดล็อกช้ามากแต่ยังนับรวมในคะแนน) ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ
 
-| Subclass | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|
-| Black Rider | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
-| Blood Ascendant | 8 (A) | 8 (A) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 8 (A) |
-| Corpse Florist | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
-| Crone | 8 (A) | 8 (A) | 3 (C) | 3 (C) | 7 (A) | 6 (B) | 7 (A) |
-| Dead Mist Acolyte | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 5 (B) | 7 (A) |
-| Death Knight | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
-| Necrodancer | 9 (S) | 8 (A) | 5 (B) | 9 (S) | 10 (S) | 3 (C) | 9 (S) |
-| Overlord | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
-| Pale Master | 10 (S) | 8 (A) | 0 (D) | 5 (B) | 8 (A) | 3 (C) | 7 (A) |
-| Pharaoh | 9 (S) | 6 (B) | 9 (S) | 3 (C) | 7 (A) | 5 (B) | 8 (A) |
-| Plague Lord | 9 (S) | 8 (A) | 0 (D) | 3 (C) | 8 (A) | 3 (C) | 7 (A) |
-| Reanimator | 9 (S) | 7 (A) | 5 (B) | 4 (C) | 7 (A) | 5 (B) | 8 (A) |
-| Reaper | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Toymaker | 10 (S) | 7 (A) | 0 (D) | 3 (C) | 9 (S) | 3 (C) | 7 (A) |
+| Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|
+| Black Rider | A | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
+| Blood Ascendant | B | 8 (A) | 8 (A) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 8 (A) |
+| Corpse Florist | A | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
+| Crone | B | 8 (A) | 8 (A) | 3 (C) | 3 (C) | 7 (A) | 6 (B) | 7 (A) |
+| Dead Mist Acolyte | B | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 5 (B) | 7 (A) |
+| Death Knight | A | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
+| Necrodancer | S | 9 (S) | 8 (A) | 5 (B) | 9 (S) | 10 (S) | 3 (C) | 9 (S) |
+| Overlord | A | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
+| Pale Master | A | 10 (S) | 8 (A) | 0 (D) | 5 (B) | 8 (A) | 3 (C) | 7 (A) |
+| Pharaoh | S | 9 (S) | 6 (B) | 9 (S) | 3 (C) | 7 (A) | 5 (B) | 8 (A) |
+| Plague Lord | B | 9 (S) | 8 (A) | 0 (D) | 3 (C) | 8 (A) | 3 (C) | 7 (A) |
+| Reanimator | A | 9 (S) | 7 (A) | 5 (B) | 4 (C) | 7 (A) | 5 (B) | 8 (A) |
+| Reaper | A | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Toymaker | A | 10 (S) | 7 (A) | 0 (D) | 3 (C) | 9 (S) | 3 (C) | 7 (A) |
 
 ---
 
 ### Black Rider
+
+**Overall**: A — Damage และ Action Economy เป็น S ทั้งคู่ บวก Survivability กระโดด +5 (C→A) และ Versatility ขยับตาม แต่ Support/Control/Utility นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -65,6 +68,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Blood Ascendant
 
+**Overall**: B — ขยับขึ้น 4 axis แบบกลางๆ (Control/Survivability/Utility/Versatility) ไม่มี peak ถึง S เลยสักตัว
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่โดยตรง (ธีม charm/self-sustain) = เท่า baseline |
@@ -76,6 +82,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | **Versatility** | 8/10 (A) | ผสม charm-control/self-sustain/shapeshift ในธีมแวมไพร์ [M:2/4] [R:3/3] [B:3/3] |
 
 ### Corpse Florist
+
+**Overall**: A — Damage เป็น S บวกขยับขึ้นอีก 4 axis กลางๆ (Control/Survivability/AE/Versatility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -89,6 +98,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Crone
 
+**Overall**: B — ขยับขึ้น 4 axis (Control/Support/Utility/Versatility) แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย ไม่มี peak S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (คำสาปเป็น debuff ไม่ใช่ดาเมจ) = เท่า baseline |
@@ -100,6 +112,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | **Versatility** | 7/10 (A) | ผสม curse/potion-crafting/utility ในธีมแม่มด [M:2/4] [R:2/3] [B:3/3] |
 
 ### Dead Mist Acolyte
+
+**Overall**: B — Survivability กระโดด +5 (C→A) บวก Utility/Versatility ขยับเล็กน้อย แต่ Damage/Control/Support/AE นิ่งสนิททั้งหมด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -113,6 +128,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Death Knight
 
+**Overall**: A — รูปแบบเดียวกับ Black Rider เป๊ะ — Damage/Action Economy เป็น S ทั้งคู่ บวก Survivability/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 10/10 (S) | Extra Attack (lv6) เปิดช่องทางดาเมจอาวุธเต็มรูปแบบเหมือน Black Rider — บวก cantrip แทนการตีได้ 1 ครั้ง [M:4/4] [R:3/3] [B:3/3] |
@@ -124,6 +142,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | **Versatility** | 8/10 (A) | Hybrid เมลี-caster เต็มรูปแบบเหมือน Black Rider [M:2/4] [R:3/3] [B:3/3] |
 
 ### Necrodancer
+
+**Overall**: S — 4 axis เป็น S พร้อมกัน (Damage, Survivability, Action Economy, Versatility) มากที่สุดในกลุ่มทั้งหมด บวก Support กระโดดจาก 0 เป็น 5 (B) ด้วย — แรงและกว้างที่สุดในคลาส
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -137,6 +158,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Overlord
 
+**Overall**: A — Damage เป็น S บวกขยับขึ้นอีก 4 axis กลางๆ (Control/Survivability/AE/Utility/Versatility)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Charnel Aura (bonus action, บวก d20/damage/AC +1→+3 ให้ Undead ที่คุมทุกตัวในรัศมี 30ft) เพิ่มดาเมจรวมของกองทัพ thrall [M:2/4] [R:3/3] [B:3/3] |
@@ -148,6 +172,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | **Versatility** | 8/10 (A) | ผสม control(domination spell)/buff(aura)/defense(sacrifice) ในธีมผู้ปกครอง [M:2/4] [R:3/3] [B:3/3] |
 
 ### Pale Master
+
+**Overall**: A — Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Survivability/AE/Versatility ขยับตาม แต่ Support/Utility นิ่งสนิท
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -161,6 +188,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Pharaoh
 
+**Overall**: S — Support กระโดดจาก 0 เป็น 9 (S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Damage เป็น S ด้วย แม้ Survivability จะยังไม่ถูกแตะก็ตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Ankh of Radiance (retaliation dmg 1d6→4d6 radiant ใส่ผู้โจมตีเมลีที่ตี ally ที่ blessed) [M:2/4] [R:3/3] [B:3/3] |
@@ -172,6 +202,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | **Versatility** | 8/10 (A) | พลิก Necromancer ให้เป็น healer/support เต็มตัว — role-shift ที่กว้างที่สุดในกลุ่ม [M:2/4] [R:3/3] [B:3/3] |
 
 ### Plague Lord
+
+**Overall**: B — Damage เป็น S บวก Control/AE/Versatility ขยับเล็กน้อย แต่ Support และ Survivability (สอง axis อ่อนสุดของ baseline) ไม่ถูกแตะเลยทั้งคู่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -185,6 +218,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Reanimator
 
+**Overall**: A — Support กระโดดจาก 0 เป็น 5 (B) บวก Damage เป็น S และขยับตามอีก 3 axis กว้างพอสมควร
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Charnel Voltage (Charnel Touch แตกไปเป้าที่สองในระยะ 5ft ด้วยดาเมจ lightning) [M:2/4] [R:3/3] [B:3/3] |
@@ -197,6 +233,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Reaper
 
+**Overall**: A — Damage เป็น S บวก Survivability กระโดด +5 (C→A) และ Utility/Versatility ขยับตาม แต่ Support ไม่ถูกแตะเลย
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Charnel Veil (Invisible ทุกครั้งที่ Charnel Touch สร้างดาเมจ 5+ — เปิดทาง Advantage การโจมตีถัดไปจากการล่องหน) [M:3/4] [R:3/3] [B:3/3] |
@@ -208,6 +247,9 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญหลบหลีก/สอดแนมเฉพาะทาง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Toymaker
+
+**Overall**: A — Damage และ Action Economy เป็น S ทั้งคู่ แต่ Support/Survivability/Utility (3 axis อ่อนสุดของ baseline) นิ่งสนิททั้งหมด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

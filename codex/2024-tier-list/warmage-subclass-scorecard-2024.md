@@ -32,23 +32,26 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ไม่มี archetype ตัวไหนมีข้อความ explicit ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ **หมายเหตุแหล่งที่มา**: 10 ตัว (Bishops, Cards, Darts, Dice, Go, Kings, Knights, Pawns, Rooks, Roulette) เป็น ValdaSpire24/24Extras 2024-native ส่วน **House of Lancers** พบเฉพาะในไฟล์ VSS 2014 (ไม่มี `reprintedAs`) จึงเป็น 2014-only 🕰️ — ให้คะแนนด้วยกลไก 2014 ดั้งเดิม (Warden's ธีม monk-caster hybrid)
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| House of Bishops | ValdaSpire24 | 9 (S) | 6 (B) | 2 (D) | 4 (C) | 4 (C) | 7 (A) | 8 (A) |
-| House of Cards | ValdaSpire24 | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 5 (B) | 4 (C) | 7 (A) |
-| House of Darts | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 5 (B) | 6 (B) | 4 (C) | 7 (A) |
-| House of Dice | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 3 (C) | 8 (A) |
-| House of Go | ValdaSpire24Extras | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 6 (B) | 4 (C) | 7 (A) |
-| House of Kings | ValdaSpire24 | 8 (A) | 7 (A) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 8 (A) |
-| House of Knights | ValdaSpire24 | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 5 (B) | 3 (C) | 6 (B) |
-| House of Lancers | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 6 (B) |
-| House of Pawns | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 6 (B) | 5 (B) | 3 (C) | 7 (A) |
-| House of Rooks | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 8 (A) | 6 (B) |
-| House of Roulette | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 6 (B) | 4 (C) | 3 (C) | 6 (B) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| House of Bishops | A | ValdaSpire24 | 9 (S) | 6 (B) | 2 (D) | 4 (C) | 4 (C) | 7 (A) | 8 (A) |
+| House of Cards | B | ValdaSpire24 | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 5 (B) | 4 (C) | 7 (A) |
+| House of Darts | A | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 5 (B) | 6 (B) | 4 (C) | 7 (A) |
+| House of Dice | B | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 3 (C) | 8 (A) |
+| House of Go | S | ValdaSpire24Extras | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 6 (B) | 4 (C) | 7 (A) |
+| House of Kings | S | ValdaSpire24 | 8 (A) | 7 (A) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 8 (A) |
+| House of Knights | B | ValdaSpire24 | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 5 (B) | 3 (C) | 6 (B) |
+| House of Lancers | A | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 6 (B) |
+| House of Pawns | A | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 6 (B) | 5 (B) | 3 (C) | 7 (A) |
+| House of Rooks | A | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 8 (A) | 6 (B) |
+| House of Roulette | C | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 6 (B) | 4 (C) | 3 (C) | 6 (B) |
 
 ---
 
 ### House of Bishops (ValdaSpire24)
+
+**Overall**: A — Damage S บวก Utility/Versatility กระโดดขึ้นเป็น A ทั้งคู่ (+4/+3) และ Control ขยับเป็น B แต่ Support ยังแทบเป็น 0 (2/10, ยังเกรด D)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -62,6 +65,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Cards (ValdaSpire24)
 
+**Overall**: B — ไม่มี axis ไหนขยับเกิน +2 เลย เป็นการเสริมกลางๆ ทั่วทั้ง 4 axis (Survivability/AE/Utility/Versatility) โดยไม่มี peak
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Deck of Fate's Straight/Flush/Three of a Kind/Pair ให้ดาเมจเสริมสูงสุด +12 ทุกครั้งที่ตีโดน แต่ขึ้นกับไพ่ในมือที่สุ่มได้ [M:3/4] [R:1/3] [B:2/3] |
@@ -73,6 +79,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | Hands table มี 8 ผลลัพธ์ต่างกันครอบคลุมดาเมจ/ป้องกัน/utility เป็น breadth ที่กว้าง [M:2/4] [R:2/3] [B:3/3] |
 
 ### House of Darts (ValdaSpire24)
+
+**Overall**: A — Damage S บวกขยับขึ้น 5 axis พร้อมกันแบบกลางๆ (Support D→C, Survivability/AE/Utility/Versatility ล้วนบวก) กว้างกว่า Bishops แต่ magnitude ต่อแกนน้อยกว่า
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -86,6 +95,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Dice (ValdaSpire24)
 
+**Overall**: B — ขยับกลางๆ 4 axis ไม่มี peak เด่น Versatility ขึ้นมากสุดแค่ +3
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Chaos Roll table มีผลลัพธ์ Fireball ฟรี/Lightning Bolt+dice ฟรี เป็นดาเมจก้อนใหญ่ที่สุ่มได้ แต่มีทั้งผลบวก/ลบปนกันในตาราง [M:3/4] [R:1/3] [B:2/3] |
@@ -97,6 +109,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 | **Versatility** | 8/10 (A) | Chaos Roll table มี 12 ผลลัพธ์ครอบคลุมดาเมจ/ควบคุม/ป้องกัน/utility/downside เป็นตารางสุ่มที่กว้างที่สุดในบรรดา class นี้ [M:3/4] [R:2/3] [B:3/3] |
 
 ### House of Go (ValdaSpire24Extras)
+
+**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S) — swing แรงที่สุดในกลุ่ม จากไม่มี support เลยกลายเป็นดีที่สุดในคลาส บวก Survivability/Action Economy/Utility/Versatility ขยับตามอีก 4 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -110,6 +125,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Kings (ValdaSpire24)
 
+**Overall**: S — Support กระโดด 0→9 (S) เหมือน House of Go แต่กว้างกว่า: Control ก็กระโดด 3→7 (A) และ Action Economy ขึ้นเป็น A ด้วย เหลือแค่ Damage แกนเดียวที่นิ่งที่ baseline
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Maneuver ส่วนใหญ่ (Check/Gambit/Stalemate) เพิ่ม battle die ใส่ดาเมจการตี แต่ magnitude โดยรวมยังไม่เกิน baseline ที่แน่นอยู่แล้วมาก = ใกล้เคียง baseline |
@@ -121,6 +139,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 | **Versatility** | 8/10 (A) | 6 maneuver ที่ต่างกันโดยสิ้นเชิง (movement/fear/check-fix/attack-bonus/save-fix/slow) ครอบคลุมทุกมิติ [M:3/4] [R:2/3] [B:3/3] |
 
 ### House of Knights (ValdaSpire24)
+
+**Overall**: B — Damage S บวก Survivability A แต่ Support ยังเป็น 0 เต็ม (ไม่เคยแก้เลย) ต่างจาก House of Go/Kings ที่ปลดล็อกแกนนี้ไปแล้ว
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -134,6 +155,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Lancers (VSS 🕰️)
 
+**Overall**: A — Damage S บวก Survivability/Action Economy ขึ้นเป็น A ทั้งคู่ (+3 ทั้งคู่) และ Utility ขยับ B แต่ Support ยังเป็น 0 เต็มเหมือน House of Knights
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Hand-to-Hand Arcana (bonus action unarmed strike ฟรีทุกครั้งที่ใช้ Attack action) บวก Flurry of Spells (lv18, ใช้ Arcane Surge cast cantrip 3 อันพร้อมกันในการกระทำเดียว) เป็น damage output ที่สูงมาก [M:3/4] [R:3/3] [B:2/3] |
@@ -145,6 +169,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | ผสม monk-style unarmed combat กับ caster เต็มตัวในธีมเดียว เป็น hybrid ที่มีเอกลักษณ์ [M:2/4] [R:2/3] [B:2/3] |
 
 ### House of Pawns (ValdaSpire24)
+
+**Overall**: A — Damage S บวกขยับขึ้น 4 axis กลางๆ (Support D→C, Survivability/AE/Versatility) กว้างพอสมควรไม่มี peak อื่น
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -158,6 +185,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Rooks (ValdaSpire24)
 
+**Overall**: A — Utility กระโดดจาก C เป็น A (3→8) บวก Survivability/Action Economy/Control ขยับตาม แต่ Damage ไม่ขยับเลย (เท่า baseline)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Rook Strike's Disadvantage-on-save option ช่วยให้คาถา save-based landing ง่ายขึ้น ไม่ใช่ดาเมจเพิ่มโดยตรง = ใกล้เคียง baseline |
@@ -169,6 +199,9 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | โฟกัส stealth/infiltration specialist ชัดเจน แม้จะมี utility spell หลากหลาย [M:2/4] [R:2/3] [B:2/3] |
 
 ### House of Roulette (ValdaSpire24Extras)
+
+**Overall**: C — มีแค่ Survivability/Versatility ที่ขยับเล็กน้อย (+1 ถึง +2) ที่เหลือนิ่งสนิทรวมถึง Damage ที่ตัวเลขต่ำกว่า sibling ทุกตัวในกลุ่ม — เพิ่มน้อยที่สุดในคลาส
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

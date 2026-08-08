@@ -8,8 +8,10 @@
 // optional "**Overall**: <Tier> — <reason>" line just above it.
 //
 // A subclass heading may carry a trailing "(Source [icons])" parenthetical
-// (e.g. "### Path of Heavy Metal (VSS 🕰️)") — stripped here since
-// class-subclass-index.md already carries the canonical source/edition/book.
+// (e.g. "### Path of Heavy Metal (VSS 🕰️)") and/or a trailing "— role/flavor
+// blurb" (e.g. "### Amorist — สาย charm/social control", Alchemist's file
+// only, so far) — both stripped here since class-subclass-index.md already
+// carries the canonical source/edition/book, and the blurb is prose, not data.
 //
 // "**Overall**" is optional: methodology allows classes to have full 7-axis
 // scoring before their Overall Tier judgment call is written — see
@@ -19,7 +21,11 @@
 //
 // If the file shape ever changes, update this parser to match.
 
-const SCORING_HEADING_RE = /^##\s+Subclass Scoring/
+// Usually "## Subclass Scoring (N)", but Sacred Knight's file (its subclass
+// concept is called a "Sacred Throne", not a plain "subclass") uses
+// "## Subclass (Sacred Throne) Scoring (N)" instead — allow anything between
+// the two words rather than force that file to match the generic wording.
+const SCORING_HEADING_RE = /^##\s+Subclass\b.*\bScoring/
 const SUBCLASS_HEADING_RE = /^###\s+(.+)$/
 const OVERALL_RE = /^\*\*Overall\*\*:\s*([SABCD](?:\/[SABCD])*)\s*(?:—|-)\s*(.+)$/
 const AXIS_SCORE_RE = /(\d+)\s*\/\s*10\s*\(([SABCD])\)/
@@ -37,7 +43,7 @@ export function parseSubclassScorecard(raw) {
 
     const headingMatch = line.match(SUBCLASS_HEADING_RE)
     if (headingMatch) {
-      const name = headingMatch[1].replace(/\s*\([^)]*\)\s*$/, '').trim()
+      const name = headingMatch[1].replace(/\s*\([^)]*\)\s*$/, '').replace(/\s+—.*$/, '').trim()
       current = { name, tier: null, overallReason: '', axes: [] }
       subclasses.push(current)
       continue

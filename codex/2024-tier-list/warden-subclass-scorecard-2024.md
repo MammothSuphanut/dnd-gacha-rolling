@@ -34,29 +34,32 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 **หมายเหตุแหล่งที่มา**: 12 ตัว (Beastblood Guardian, Carrion King, Diabolist, Drake-Blooded, Godsworn, Grey Watchman, Nightgaunt, Rimekeeper, Stoneheart Defender, Storm Sentinel, Verdant Protector, Witchbane Hunter) เป็น ValdaSpire24/24Extras 2024-native ส่วนอีก 5 ตัว (Fey Trailblazer, Hellkeeper, Iceheart Bastion, Loreseeker, Soulblood Shaman) เป็น 2014-only 🕰️ จากไฟล์ VSS 2014 — ในจำนวนนี้ **Hellkeeper ถูก reprint เป็น Diabolist** และ **Iceheart Bastion ถูก reprint เป็น Rimekeeper** ในเวอร์ชัน 2024 (ยืนยันจาก `reprintedAs` field) แต่ tracker แยกบรรทัดทั้งคู่เป็นรายการอิสระ (รูปแบบเดียวกับ Fighter Banneret/Purple Dragon Knight ไม่ใช่แบบ Sorcerer ที่รวมเป็นบรรทัดเดียว) จึงให้คะแนนแยกกันคนละตัวโดยใช้กลไก 2014 ดั้งเดิมสำหรับตัว 🕰️ และกลไก 2024 สำหรับตัว reprint — นอกจากนี้ Warden เวอร์ชัน 2014 ใช้ core feature ชื่อ **Warden's Grasp** (bonus action ตรึงตัวเอง+กันศัตรูข้างเคียงหนี) และ **Warden's Mark** (bonus action ล่อเป้าให้ disadvantage ตีคนอื่น) ซึ่งเทียบเท่าฟังก์ชันกับ Guardian Tactics' Grasp/Challenge ของเวอร์ชัน 2024 — ใช้เป็นฐานอ้างอิงตีความ feature ของ 5 ตัว 🕰️
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Beastblood Guardian | ValdaSpire24 | 9 (S) | 7 (A) | 7 (A) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Carrion King | ValdaSpire24Extras | 8 (A) | 9 (S) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
-| Diabolist | ValdaSpire24Extras | 8 (A) | 7 (A) | 5 (B) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
-| Drake-Blooded | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
-| Fey Trailblazer | VSS 🕰️ | 5 (B) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
-| Godsworn | ValdaSpire24 | 6 (B) | 6 (B) | 9 (S) | 10 (S) | 6 (B) | 5 (B) | 7 (A) |
-| Grey Watchman | ValdaSpire24Extras | 8 (A) | 8 (A) | 8 (A) | 10 (S) | 8 (A) | 3 (C) | 8 (A) |
-| Hellkeeper | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
-| Iceheart Bastion | VSS 🕰️ | 7 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
-| Loreseeker | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 6 (B) | 6 (B) |
-| Nightgaunt | ValdaSpire24 | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 6 (B) | 6 (B) |
-| Rimekeeper | ValdaSpire24Extras | 8 (A) | 7 (A) | 7 (A) | 10 (S) | 6 (B) | 5 (B) | 7 (A) |
-| Soulblood Shaman | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 6 (B) |
-| Stoneheart Defender | ValdaSpire24 | 6 (B) | 7 (A) | 8 (A) | 10 (S) | 7 (A) | 3 (C) | 6 (B) |
-| Storm Sentinel | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
-| Verdant Protector | ValdaSpire24 | 8 (A) | 8 (A) | 8 (A) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
-| Witchbane Hunter | ValdaSpire24Extras | 8 (A) | 8 (A) | 7 (A) | 10 (S) | 6 (B) | 7 (A) | 7 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Beastblood Guardian | S | ValdaSpire24 | 9 (S) | 7 (A) | 7 (A) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Carrion King | A | ValdaSpire24Extras | 8 (A) | 9 (S) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
+| Diabolist | C | ValdaSpire24Extras | 8 (A) | 7 (A) | 5 (B) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
+| Drake-Blooded | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
+| Fey Trailblazer | C | VSS 🕰️ | 5 (B) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
+| Godsworn | A | ValdaSpire24 | 6 (B) | 6 (B) | 9 (S) | 10 (S) | 6 (B) | 5 (B) | 7 (A) |
+| Grey Watchman | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 8 (A) | 10 (S) | 8 (A) | 3 (C) | 8 (A) |
+| Hellkeeper | B | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
+| Iceheart Bastion | B | VSS 🕰️ | 7 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
+| Loreseeker | B | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 6 (B) | 6 (B) |
+| Nightgaunt | B | ValdaSpire24 | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 6 (B) | 6 (B) |
+| Rimekeeper | A | ValdaSpire24Extras | 8 (A) | 7 (A) | 7 (A) | 10 (S) | 6 (B) | 5 (B) | 7 (A) |
+| Soulblood Shaman | B | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 6 (B) |
+| Stoneheart Defender | A | ValdaSpire24 | 6 (B) | 7 (A) | 8 (A) | 10 (S) | 7 (A) | 3 (C) | 6 (B) |
+| Storm Sentinel | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
+| Verdant Protector | A | ValdaSpire24 | 8 (A) | 8 (A) | 8 (A) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
+| Witchbane Hunter | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 7 (A) | 10 (S) | 6 (B) | 7 (A) | 7 (A) |
 
 ---
 
 ### Beastblood Guardian (ValdaSpire24)
+
+**Overall**: S — Damage พุ่งจาก baseline 5 (B) เป็น 9 (S) — swing +4 แรงที่สุดในกลุ่ม บวก Control/Action Economy/Utility/Versatility ขยับตามอีก 4 axis (Survivability เป็น 10 เต็มเท่า baseline ของทุก Warden อยู่แล้ว ไม่นับเป็นจุดเด่นเฉพาะตัว)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -70,6 +73,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Carrion King (ValdaSpire24Extras)
 
+**Overall**: A — Control กระโดดจาก baseline 6 (B) เป็น 9 (S) บวก Damage/Action Economy/Utility/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Infest (ดาเมจสเกล 1d6→1d12 พร้อม debuff) บวก Blinding Bites (lv17, แทนที่การโจมตี 1 ครั้งด้วย 2d10 dmg+Blind) และ Infesting Swarm (ขยาย Infest ให้โจมตีได้หลายเป้าพร้อมกันในระยะ Swarm Cloud) [M:3/4] [R:2/3] [B:2/3] |
@@ -81,6 +87,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | มีครบทั้งดาเมจ, control หลายรูปแบบ (obscure/terrain/deafen/blind/poison), และ utility ในตัวเดียว [M:2/4] [R:2/3] [B:3/3] |
 
 ### Diabolist (ValdaSpire24Extras)
+
+**Overall**: C — Support ลดลงจาก baseline 7 (A) เหลือ 5 (B) — axis เดียวในกลุ่มที่ต่ำกว่า baseline จริง แม้ Damage/Control/AE จะขยับขึ้นก็ตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -94,6 +103,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Drake-Blooded (ValdaSpire24)
 
+**Overall**: S — Damage กระโดดจาก baseline 5 (B) เป็น 9 (S) เหมือน Beastblood Guardian บวก Action Economy/Utility/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Full spellcasting hybrid เข้าถึง Sorcerer spell list เต็ม บวก Aspect of the Greatwyrm (lv17, Breath Weapon 6d6 AoE แทนที่การโจมตี + Elemental Fury extra 1d6 ทุกครั้งที่ตี melee) และ Draconic Vengeance (lv10, reaction AoE ดาเมจตอบโต้) เป็น damage kit ที่ครอบคลุมทั้ง AoE และ single-target [M:4/4] [R:2/3] [B:3/3] |
@@ -105,6 +117,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | Mortal Metamagic (Empowered/Quickened ผ่าน Hit Point Dice) บวก full spellcasting hybrid บน chassis นักสู้ = ความยืดหยุ่นสูง [M:3/4] [R:2/3] [B:2/3] |
 
 ### Fey Trailblazer (VSS 🕰️)
+
+**Overall**: C — มีแค่ Utility ที่ขยับ +1 เล็กน้อย อีก 5 axis เท่า baseline เป๊ะ แคบที่สุดในกลุ่มทั้งหมด
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -118,6 +133,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Godsworn (ValdaSpire24)
 
+**Overall**: A — Support กระโดดจาก baseline 7 (A) เป็น 9 (S) บวก Damage/Utility/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Sainted Mantle's Spirit Guardians (lv17, cast ฟรีไม่ต้อง Concentration) เป็น AoE damage source ต่อเนื่องที่ทรงพลัง แต่ magnitude โดยรวมยังไม่สูงเท่า archetype เน้นดาเมจอื่น [M:2/4] [R:2/3] [B:1/3] |
@@ -129,6 +147,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ชุด support+utility spell menu ที่หลากหลาย (Daylight/Lesser Restoration/Sanctuary/Zone of Truth) บวกความสามารถ heal-ally แทนตัวเอง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Grey Watchman (ValdaSpire24Extras)
+
+**Overall**: A — ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/AE/Versatility) กว้างที่สุดในกลุ่มแม้จะไม่มี S peak ใหม่เลย
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -142,6 +163,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Hellkeeper (VSS 🕰️)
 
+**Overall**: B — ขยับแค่ 2 axis (Damage/Utility) เล็กน้อย ไม่มี peak ใหม่
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Hellish Grasp (Grasp ดาเมจไฟ AoE 1d6→2d6 ให้ทุกเป้าที่ติด) บวก Spiteful Mark (Mark ดาเมจไฟ 1d6→2d6) บวก Hellbent (lv20, +2d8 ดาเมจไฟ 1 นาที ที่ทะลุ resist/immunity ทั้งหมด) [M:3/4] [R:2/3] [B:2/3] |
@@ -153,6 +177,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 5/10 (B) | Toolkit ค่อนข้างบาง (เน้นเพิ่มดาเมจไฟให้ฟีเจอร์เดิม + defensive capstone ปลายเกม) = เท่า baseline |
 
 ### Iceheart Bastion (VSS 🕰️)
+
+**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Damage/Utility) เหมือน Hellkeeper
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -166,6 +193,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Loreseeker (VSS 🕰️)
 
+**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Utility/Versatility) ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Full spellcasting hybrid เข้าถึง Wizard spell list (เน้น abjuration/evocation) บวก Bookmark/Librarian of the Eternal (lv20, เป้าที่ mark มี disadvantage ต่อ save vs คาถาตัวเอง = คาถาโจมตีลงง่ายขึ้นมาก) [M:3/4] [R:2/3] [B:2/3] |
@@ -177,6 +207,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | Caster-hybrid archetype แต่ถูกจำกัดด้วยเงื่อนไข school abjuration/evocation จนถึงเลเวลปลาย ทำให้แคบกว่า Drake-Blooded ที่เข้าถึง Sorcerer list แบบเปิดกว้าง [M:2/4] [R:2/3] [B:2/3] |
 
 ### Nightgaunt (ValdaSpire24)
+
+**Overall**: B — รูปแบบเดียวกับ Loreseeker (Damage/Utility/Versatility ขยับกลางๆ) ไม่มี peak ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -190,6 +223,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Rimekeeper (ValdaSpire24Extras)
 
+**Overall**: A — ขยับขึ้น 4 axis กลางๆ (Damage/Control/Utility/Versatility) กว้างกว่า Loreseeker/Nightgaunt แต่ไม่มี peak ถึง S
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Frostbite (สเกล 2d12→4d12, ใช้แทนที่การโจมตีได้ที่ lv17) บวกความสามารถสลับดาเมจธาตุ Cold บนอาวุธทุกครั้งที่ตี [M:3/4] [R:2/3] [B:2/3] |
@@ -201,6 +237,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | Ice Blast มี 4 โหมดเลือกได้ (AoE prone/utility/single-target dmg/cover) เป็น breadth ที่กว้าง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Soulblood Shaman (VSS 🕰️)
+
+**Overall**: B — ขยับ 3 axis เล็กน้อย (Damage/Utility/Versatility) ไม่มี peak ใหม่
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -214,6 +253,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Stoneheart Defender (ValdaSpire24)
 
+**Overall**: A — ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/AE/Versatility) กว้างเทียบเท่า Grey Watchman แต่ทุกแกนขยับแค่ +1 เท่านั้น
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 6/10 (B) | Earthshatter (AoE Prone แทนที่การโจมตี) เอื้อให้พวกเดียวกันโจมตี Advantage ต่อเป้าที่ Prone แต่ตัวเองไม่ได้ดาเมจโดยตรงมาก บวก Giant Strength (lv17, +4 Str) เป็นตัวเสริมดาเมจเล็กน้อย [M:2/4] [R:2/3] [B:1/3] |
@@ -225,6 +267,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 6/10 (B) | โฟกัส tank/AoE-control archetype ชัดเจน มีมิติเดียวเป็นหลัก [M:2/4] [R:2/3] [B:1/3] |
 
 ### Storm Sentinel (ValdaSpire24)
+
+**Overall**: S — Damage กระโดดจาก baseline 5 (B) เป็น 9 (S) เหมือน Beastblood Guardian/Drake-Blooded บวก Action Economy/Utility/Versatility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -238,6 +283,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Verdant Protector (ValdaSpire24)
 
+**Overall**: A — ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/Utility/Versatility) กว้างเทียบเท่า Grey Watchman/Stoneheart Defender
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Armor of Thorns (lv17, ตอบโต้ 4d6 Piercing ทุกครั้งที่โดนตีระยะประชิด) บวกการเข้าถึง Spike Growth (damage-over-terrain) [M:2/4] [R:2/3] [B:2/3] |
@@ -249,6 +297,9 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | **Versatility** | 7/10 (A) | ผสมผสาน nature-magic, battlefield control, และ team support ในตัวเดียวอย่างสมดุล [M:2/4] [R:2/3] [B:3/3] |
 
 ### Witchbane Hunter (ValdaSpire24Extras)
+
+**Overall**: A — Utility กระโดด +4 (C→A) เลขสูงสุดในกลุ่มสำหรับ axis นี้ บวก Damage/Control/Versatility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

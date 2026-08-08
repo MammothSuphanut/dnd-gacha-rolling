@@ -32,16 +32,19 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 ทั้ง 4 Guild มาจาก `Grim Hollow Player's Guide 2024` เดียวกัน (ไม่มี 🕰️) ไม่มี subclass ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ หมายเหตุข้อมูล: **Devourer Guild** (รายการ "Mutations") และ **Trapper Guild** (รายการ "Trapper Gadgets"/"Armor Modifications") มีตัวเลือกย่อยที่ไม่ปรากฏรายละเอียดเต็มในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้
 
-| Subclass | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|
-| Carver Guild | 9 (S) | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 3 (C) | 6 (B) |
-| Devourer Guild | 8 (A) | 3 (C) | 6 (B) | 6 (B) | 7 (A) | 4 (C) | 7 (A) |
-| Occultist Guild | 9 (S) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
-| Trapper Guild | 8 (A) | 5 (B) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 7 (A) |
+| Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|
+| Carver Guild | S | 9 (S) | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 3 (C) | 6 (B) |
+| Devourer Guild | A | 8 (A) | 3 (C) | 6 (B) | 6 (B) | 7 (A) | 4 (C) | 7 (A) |
+| Occultist Guild | S | 9 (S) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
+| Trapper Guild | A | 8 (A) | 5 (B) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 7 (A) |
 
 ---
 
 ### Carver Guild
+
+**Overall**: S — Damage S (9/10) + Action Economy S (9/10) สองแกนพร้อมกัน บวก Control/Survivability ขยับเป็น A ทั้งคู่ — peak สูงสุดในกลุ่มและมี 2 axis เป็น S เลย แม้ Support/Utility จะยังค้าง baseline
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -54,6 +57,9 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 | **Versatility** | 6/10 (B) | ธีม fear-immune tank-bruiser ที่ผสมดาเมจ/control ผ่านการซ้อน reaction [M:2/4] [R:2/3] [B:2/3] |
 
 ### Devourer Guild
+
+**Overall**: A — ขยับขึ้น 5 ใน 7 axis (Damage A, Support B, Survivability B, Action Economy A, Versatility A) กระจายทั่วแต่ไม่มี axis ไหนถึง S เลยสักตัว
+
 
 > **หมายเหตุข้อมูล**: รายการ "Mutations" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้
 
@@ -69,6 +75,9 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 ### Occultist Guild
 
+**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย (Damage S, ที่เหลือ A/B ทั้งหมด) กว้างที่สุดในบรรดา Guild ทั้ง 4
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | เข้าถึง spell list ของ Wizard (รวม blast spell) + Arcane Response (lv18, แคส spell ผ่าน Studied Response โดยไม่เสีย action เพิ่ม) [M:3/4] [R:2/3] [B:3/3] |
@@ -80,6 +89,9 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 | **Versatility** | 8/10 (A) | Hybrid นักล่าอสูร-นักเวทย์ต้านเวทมนตร์เต็มรูปแบบ [M:2/4] [R:3/3] [B:3/3] |
 
 ### Trapper Guild
+
+**Overall**: A — ขยับขึ้น 6 ใน 7 axis (เหลือแค่ Support ที่ baseline) กว้างรองจาก Occultist แต่ peak สูงสุดแค่ A ไม่มี axis ไหนถึง S เลยสักตัว
+
 
 > **หมายเหตุข้อมูล**: รายการ "Trapper Gadgets" และ "Armor Modifications" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้
 

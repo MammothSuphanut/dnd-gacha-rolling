@@ -32,31 +32,34 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 หมายเหตุที่มา: Devotion/Glory/Ancients/Vengeance = XPHB (2024 official) — Oathbreaker(DMG)/Crown(SCAG)/Conquest+Redemption(XGE)/Watchers(TCE)/Eternal Night+Heresy+Storms+The Sun+Winter(VSS) = 🕰️ 2014-only ไม่มี reprint — Pestilence/Slaughter/Zeal = GrimHollowPG24 (2024) — Noble Genies = FRHoF (2024) — Revelry = ValdaPlayerPack (ตรวจสอบแล้วใช้ chassis 2024/`XPHB` จึงไม่ติด 🕰️) ไม่มี Oath ตัวไหนมีกลไก explicit ที่ตัด baseline capability ออก — ทุกแกนจึงต้อง ≥ baseline เสมอ หมายเหตุ: Support baseline สูงมากอยู่แล้ว (9) ทำให้หลาย Oath ยัง "เท่า baseline" แม้มี aura เสริมเพราะ magnitude ไม่พอข้าม tier
 
-| Subclass | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
-|---|---|---|---|---|---|---|---|---|
-| Oath of Conquest | XGE 🕰️ | 9 (S) | 8 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Oath of Devotion | XPHB | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
-| Oath of Eternal Night | VSS 🕰️ | 8 (A) | 6 (B) | 9 (S) | 9 (S) | 7 (A) | 6 (B) | 7 (A) |
-| Oath of Glory | XPHB | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 6 (B) | 7 (A) |
-| Oath of Heresy | VSS 🕰️ | 8 (A) | 8 (A) | 9 (S) | 9 (S) | 7 (A) | 4 (C) | 6 (B) |
-| Oath of Pestilence | GrimHollowPG24 | 9 (S) | 9 (S) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Oath of Redemption | XGE 🕰️ | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 5 (B) | 6 (B) |
-| Oath of Revelry | ValdaPlayerPack | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 8 (A) |
-| Oath of Slaughter | GrimHollowPG24 | 10 (S) | 5 (B) | 9 (S) | 9 (S) | 8 (A) | 4 (C) | 6 (B) |
-| Oath of Storms | VSS 🕰️ | 9 (S) | 6 (B) | 9 (S) | 9 (S) | 6 (B) | 6 (B) | 6 (B) |
-| Oath of the Ancients | XPHB | 7 (A) | 7 (A) | 10 (S) | 10 (S) | 7 (A) | 4 (C) | 7 (A) |
-| Oath of the Crown | SCAG 🕰️ | 7 (A) | 7 (A) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Oath of the Noble Genies | FRHoF | 8 (A) | 8 (A) | 10 (S) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
-| Oath of The Sun | VSS 🕰️ | 9 (S) | 7 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
-| Oath of the Watchers | TCE 🕰️ | 8 (A) | 7 (A) | 10 (S) | 9 (S) | 6 (B) | 5 (B) | 7 (A) |
-| Oath of Vengeance | XPHB | 8 (A) | 7 (A) | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) |
-| Oath of Winter | VSS 🕰️ | 8 (A) | 7 (A) | 9 (S) | 10 (S) | 6 (B) | 4 (C) | 6 (B) |
-| Oath of Zeal | GrimHollowPG24 | 9 (S) | 7 (A) | 10 (S) | 9 (S) | 8 (A) | 6 (B) | 7 (A) |
-| Oathbreaker | DMG 🕰️ | 9 (S) | 8 (A) | 9 (S) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
+| Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
+|---|---|---|---|---|---|---|---|---|---|
+| Oath of Conquest | S | XGE 🕰️ | 9 (S) | 8 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Oath of Devotion | A | XPHB | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
+| Oath of Eternal Night | A | VSS 🕰️ | 8 (A) | 6 (B) | 9 (S) | 9 (S) | 7 (A) | 6 (B) | 7 (A) |
+| Oath of Glory | A | XPHB | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 6 (B) | 7 (A) |
+| Oath of Heresy | A | VSS 🕰️ | 8 (A) | 8 (A) | 9 (S) | 9 (S) | 7 (A) | 4 (C) | 6 (B) |
+| Oath of Pestilence | S | GrimHollowPG24 | 9 (S) | 9 (S) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Oath of Redemption | A | XGE 🕰️ | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 5 (B) | 6 (B) |
+| Oath of Revelry | A | ValdaPlayerPack | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 8 (A) |
+| Oath of Slaughter | S | GrimHollowPG24 | 10 (S) | 5 (B) | 9 (S) | 9 (S) | 8 (A) | 4 (C) | 6 (B) |
+| Oath of Storms | S | VSS 🕰️ | 9 (S) | 6 (B) | 9 (S) | 9 (S) | 6 (B) | 6 (B) | 6 (B) |
+| Oath of the Ancients | A | XPHB | 7 (A) | 7 (A) | 10 (S) | 10 (S) | 7 (A) | 4 (C) | 7 (A) |
+| Oath of the Crown | A | SCAG 🕰️ | 7 (A) | 7 (A) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Oath of the Noble Genies | S | FRHoF | 8 (A) | 8 (A) | 10 (S) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
+| Oath of The Sun | S | VSS 🕰️ | 9 (S) | 7 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
+| Oath of the Watchers | A | TCE 🕰️ | 8 (A) | 7 (A) | 10 (S) | 9 (S) | 6 (B) | 5 (B) | 7 (A) |
+| Oath of Vengeance | A | XPHB | 8 (A) | 7 (A) | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) |
+| Oath of Winter | A | VSS 🕰️ | 8 (A) | 7 (A) | 9 (S) | 10 (S) | 6 (B) | 4 (C) | 6 (B) |
+| Oath of Zeal | S | GrimHollowPG24 | 9 (S) | 7 (A) | 10 (S) | 9 (S) | 8 (A) | 6 (B) | 7 (A) |
+| Oathbreaker | S | DMG 🕰️ | 9 (S) | 8 (A) | 9 (S) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
 
 ---
 
 ### Oath of Conquest (XGE 🕰️)
+
+**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ (baseline Survivability เดิมก็ A อยู่แล้วแต่ขยับขึ้นถึง S) บวก Control กระโดด +3
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -70,6 +73,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Devotion (XPHB)
 
+**Overall**: A — Survivability ขยับเป็น S ใหม่ (baseline A) แต่ breadth แคบ มีแค่ Versatility ที่ขยับตามอีกนิด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Sacred Weapon (บวก Cha mod เข้า attack roll + เลือกดาเมจ radiant แทนได้) [M:2/4] [R:2/3] [B:3/3] |
@@ -81,6 +87,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | Paladin แบบคลาสสิก (defender+support) ธีมมาตรฐาน = ใกล้เท่า baseline |
 
 ### Oath of Eternal Night (VSS 🕰️)
+
+**Overall**: A — Survivability เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis กลางๆ (Control/AE/Versatility)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -94,6 +103,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Glory (XPHB)
 
+**Overall**: A — Survivability เป็น S ใหม่ บวก Utility/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Living Legend's Unerring Strike (lv20, แปลงพลาดเป็นโดน 1 ครั้ง/เทิร์น) [M:2/4] [R:2/3] [B:3/3] |
@@ -105,6 +117,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | ธีมวีรบุรุษที่ผสม support/defense/athletics [M:2/4] [R:2/3] [B:3/3] |
 
 ### Oath of Heresy (VSS 🕰️)
+
+**Overall**: A — Survivability เป็น S ใหม่ บวก Control กระโดด +3 และ AE/Versatility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -118,6 +133,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Pestilence (GrimHollowPG24)
 
+**Overall**: S — 3 axis เป็น S ใหม่พร้อมกัน (Damage, Control กระโดด +4, Survivability) มากที่สุดในกลุ่มร่วมกับ Storms/The Sun
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Entropic Infection (CD, extra 2d6 necrotic ต่อเนื่อง + ลบ resistance/immunity necrotic ของเป้า) [M:3/4] [R:2/3] [B:3/3] |
@@ -129,6 +147,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | ผู้เชี่ยวชาญ debuff/DoT เฉพาะทาง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Oath of Redemption (XGE 🕰️)
+
+**Overall**: A — Survivability เป็น S ใหม่ แต่ breadth แคบ (แค่ Utility/Versatility ขยับตามเล็กน้อย)
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -142,6 +163,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Revelry (ValdaPlayerPack)
 
+**Overall**: A — Survivability เป็น S ใหม่ บวก Versatility กระโดด +4 เด่นชัด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Aura of Fraternity (lv7, +1d4→1d8 ดาเมจ passive ให้ตัวเอง+ally ในออร่าทุกครั้งที่ตีเมลีโดน) [M:2/4] [R:3/3] [B:3/3] |
@@ -153,6 +177,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 8/10 (A) | ผู้เชี่ยวชาญบัฟทีมที่ครบเครื่องที่สุดในบรรดา Oath [M:2/4] [R:3/3] [B:3/3] |
 
 ### Oath of Slaughter (GrimHollowPG24)
+
+**Overall**: S — Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Survivability เป็น S ใหม่ด้วย และ Action Economy/Versatility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -166,6 +193,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Storms (VSS 🕰️)
 
+**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control/Utility/Versatility ขยับตามอีก 3 axis
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Thunder God (lv20, แคส Call Lightning ฟรีเป็น bonus action ได้ทุกเทิร์นระหว่างฤทธิ์) [M:3/4] [R:2/3] [B:3/3] |
@@ -177,6 +207,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | Storm-blaster ที่ผสมดาเมจ+resist+mobility น้ำ = ใกล้เท่า baseline |
 
 ### Oath of the Ancients (XPHB)
+
+**Overall**: A — Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Action Economy/Versatility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -190,6 +223,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of the Crown (SCAG 🕰️)
 
+**Overall**: A — Survivability เป็น S ใหม่ บวก Control/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 7/10 (A) | ไม่มี feature เพิ่มดาเมจใหม่ (ธีม tank/support ล้วน) = เท่า baseline |
@@ -201,6 +237,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | Tank-protector คลาสสิกที่ผสม control+heal+defense [M:2/4] [R:2/3] [B:3/3] |
 
 ### Oath of the Noble Genies (FRHoF)
+
+**Overall**: S — Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Control/AE/Versatility) กว้างที่สุดในกลุ่ม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -214,6 +253,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of The Sun (VSS 🕰️)
 
+**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control/Versatility ขยับตาม
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Incandescent Fury (lv15, Smite die อัปเกรดเป็น d10) + Zenith (lv20, แคส Sunbeam ฟรี) [M:3/4] [R:2/3] [B:3/3] |
@@ -225,6 +267,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | Radiant blaster-tank hybrid = ใกล้เท่า baseline |
 
 ### Oath of the Watchers (TCE 🕰️)
+
+**Overall**: A — Survivability เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis กลางๆ กว้างพอสมควร
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -238,6 +283,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Vengeance (XPHB)
 
+**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน (Damage/Control/AE/Versatility)
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 8/10 (A) | Vow of Enmity (CD, Advantage ทุกการโจมตีใส่เป้าที่เลือกนาน 1 นาที) [M:2/4] [R:3/3] [B:3/3] |
@@ -249,6 +297,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 6/10 (B) | ผู้ล่าเป้าเดี่ยวเฉพาะทาง = ใกล้เท่า baseline |
 
 ### Oath of Winter (VSS 🕰️)
+
+**Overall**: A — Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Versatility ขยับตาม
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -262,6 +313,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Zeal (GrimHollowPG24)
 
+**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวกขยับขึ้นครบเกือบทุก axis (6 ใน 7) กว้างที่สุดในกลุ่มทั้งหมด
+
+
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
 | **Damage** | 9/10 (S) | Mark of the Heretic (CD, ขยาย crit range เป็น 19-20 ใส่เป้าที่มาร์ก + ตีฟรีทุกครั้งที่เป้าเริ่มเทิร์นผ่าน reaction) [M:3/4] [R:2/3] [B:3/3] |
@@ -273,6 +327,9 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 | **Versatility** | 7/10 (A) | นักไต่สวน/ผู้ล่าเป้าเดี่ยวที่มี support แข็งแรง [M:2/4] [R:2/3] [B:3/3] |
 
 ### Oathbreaker (DMG 🕰️)
+
+**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control กระโดด +3 และขยับตามอีก 2 axis
+
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
