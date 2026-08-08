@@ -39,7 +39,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | Circle of Entropy | S | GrimHollowPG24 | 10 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
 | Circle of Mutation | B | GrimHollowPG24 | 8 (A) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 8 (A) |
 | Circle of Spores | S | TCE 🕰️ | 8 (A) | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 9 (S) |
-| Circle of Stars | A | XPHB | 8 (A) | 8 (A) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
+| Circle of the Stars | A | XPHB | 8 (A) | 8 (A) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
 | Circle of Stones | A | VSS 🕰️ | 6 (B) | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
 | Circle of the City | S | VSS 🕰️ | 6 (B) | 9 (S) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 9 (S) |
 | Circle of the Deep | B | VSS 🕰️ | 8 (A) | 7 (A) | 5 (B) | 7 (A) | 7 (A) | 7 (A) | 8 (A) |
@@ -131,7 +131,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 | **Utility** | 6/10 (B) | ไม่มี utility นอกคอมแบตใหม่ = เท่า baseline |
 | **Versatility** | 9/10 (S) | ผสม necromancer(zombie summon)/damage(spore)/tank(temp HP) ในธีมเดียว [M:3/4] [R:3/3] [B:3/3] |
 
-### Circle of Stars (XPHB)
+### Circle of the Stars (XPHB)
 
 **Overall**: A — Versatility เป็น S บวก Support กระโดด +3 (C→B) และขยับตามอีก 3 axis กว้างพอสมควรแต่มีแค่ S เดียว
 

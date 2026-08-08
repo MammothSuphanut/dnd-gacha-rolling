@@ -33,6 +33,69 @@ function classSlug(className) {
 const CELL_CLASS = 'border border-[#e2cfb3] px-2 py-1 align-top text-stone-700'
 const UNRANKED = 'unranked'
 
+// class-subclass-index.md doesn't dedupe a subclass that got renamed between
+// editions — 5etools mirrors both the pre-2024 name (linked via a generic
+// search.html query, book usually still says "(2014)" even though the row's
+// Edition column is mislabeled "2024") and the true 2024-native reprint
+// (linked via classes.html) as two separate rows. The scorecard files follow
+// the project's 2024-only-scope rule and score the subclass exactly once —
+// so the old-name row has nothing to match by exact string comparison. This
+// maps each such old name to whichever name the scorecard actually scored it
+// under, so the old row shows the same tier instead of a false "unranked".
+// See project_scorecard_methodology_rework memory, "reconciliation gotcha".
+// Every pair here was cross-checked against the source JSON's own
+// `reprintedAs` field (5etools' authoritative old-name→new-name link), not
+// guessed from string similarity — e.g. Warlock's "Archfey Patron" etc. did
+// turn out to be the genuine 2024 PHB content (confirmed by its 2024-only
+// "Steps of the Fey" feature text), not a leftover playtest name as first
+// suspected; the scorecard file just still carries the old label "The
+// Archfey" as its heading, which is a legal alias, not a scoring error.
+const RENAMED_SUBCLASS_ALIASES = {
+  Druid: { 'circle of stars': 'circle of the stars' },
+  Fighter: { 'the bulwark warrior': 'bulwark warrior' },
+  Monk: {
+    'way of mercy': 'warrior of mercy',
+    'way of pride': 'warrior of pride',
+    'way of shadow': 'warrior of shadow',
+    'way of street fighting': 'warrior of the street',
+    'way of the leaden crown': 'warrior of the leaden crown',
+    'way of the open hand': 'warrior of the open hand',
+  },
+  Sorcerer: {
+    'aberrant mind': 'aberrant sorcery',
+    'clockwork soul': 'clockwork sorcery',
+    'draconic bloodline': 'draconic sorcery',
+    'haunted': 'haunted sorcery',
+    'shadow magic': 'shadow sorcery',
+    'wild magic': 'wild magic sorcery',
+    'wretched bloodline': 'wretched bloodline sorcery',
+  },
+  Warden: {
+    'bloodwrath guardian': 'beastblood guardian',
+  },
+  Warlock: {
+    'archfey patron': 'the archfey',
+    'celestial patron': 'the celestial',
+    'fiend patron': 'the fiend',
+    'great old one patron': 'the great old one',
+    'the first vampire': 'the first vampire patron',
+    'the future you': 'future you patron',
+    'the parasite': 'the parasite patron',
+  },
+  Wizard: {
+    bladesinging: 'bladesinger',
+    'mystic savant': 'mystic strategist',
+    'school of abjuration': 'abjurer',
+    'school of chronomancy': 'chronomancer',
+    'school of divination': 'diviner',
+    'school of evocation': 'evoker',
+    'school of gastronomy': 'gastronomer',
+    'school of illusion': 'illusionist',
+    'school of sangromancy': 'sangromancer',
+    'school of somnomancy': 'somnomancer',
+  },
+}
+
 const TIER_BADGE_CLASS = {
   S: 'bg-violet-100 text-violet-800 border-violet-300',
   A: 'bg-emerald-100 text-emerald-800 border-emerald-300',
@@ -246,12 +309,22 @@ export default function CodexClassBrowser() {
       if (!scorecardRule) return c
       const { subclasses: scSubclasses } = parseSubclassScorecard(scorecardRule.content)
       const byName = new Map(scSubclasses.map((s) => [s.name.trim().toLowerCase(), s]))
+      const aliases = RENAMED_SUBCLASS_ALIASES[c.name]
       const analysisLink = `/codex/${scorecardSlug}`
       return {
         ...c,
         analysisLink,
         subclasses: c.subclasses.map((s) => {
-          const sc = byName.get(s.name.trim().toLowerCase())
+          const indexName = s.name.trim().toLowerCase()
+          // 1) exact match. 2) the index's own name still carries a
+          // disambiguating "(PSA)"/"(PSK)" suffix that the scorecard heading
+          // strips (e.g. "Ambition Domain (PSA)" vs scorecard's "Ambition
+          // Domain") — retry with that trailing parenthetical stripped. 3) a
+          // known old-name/2024-rename duplicate (see RENAMED_SUBCLASS_ALIASES).
+          const sc =
+            byName.get(indexName) ||
+            byName.get(indexName.replace(/\s*\([^)]*\)\s*$/, '').trim()) ||
+            (aliases?.[indexName] ? byName.get(aliases[indexName]) : undefined)
           // A scorecard file existing for the class is enough to link every one
           // of its subclasses to the write-up, even ones whose "**Overall**"
           // judgment (tier) hasn't been written yet — axes/tier stay unset for
