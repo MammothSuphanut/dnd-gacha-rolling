@@ -28,7 +28,13 @@ const STANDALONE_ROUTES = [
 
 function App() {
   const location = useLocation()
-  const isStandalone = STANDALONE_ROUTES.some((pattern) => matchPath(pattern, location.pathname))
+  // '/codex/*' is meant to catch only doc subpages (e.g. /codex/General/foo) —
+  // matchPath lets the splat match an empty string, so it would otherwise also
+  // swallow the bare '/codex' landing page (the CodexClassBrowser), which should
+  // keep its navbar like any other top-level page.
+  const isStandalone =
+    location.pathname !== '/codex' &&
+    STANDALONE_ROUTES.some((pattern) => matchPath(pattern, location.pathname))
 
   const [rollState, setRollState] = useState({
     config: {},
