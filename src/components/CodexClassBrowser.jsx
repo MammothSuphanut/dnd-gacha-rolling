@@ -280,7 +280,6 @@ export default function CodexClassBrowser() {
     [classes]
   )
 
-  const editionOptions = useMemo(() => [...new Set(flatRows.map((r) => r.edition))].sort(), [flatRows])
   const bookOptions = useMemo(
     () => [...new Set([...flatRows.map((r) => r.book), ...classes.flatMap((c) => c.books || [])])].sort((a, b) => a.localeCompare(b)),
     [flatRows, classes]
@@ -291,20 +290,18 @@ export default function CodexClassBrowser() {
   const [groupMode, setGroupMode] = useState('class')
   const [detailRow, setDetailRow] = useState(null)
   const [search, setSearch] = useState('')
-  const [editions, setEditions] = useState(new Set())
   const [books, setBooks] = useState(new Set())
   const [bookScope, setBookScope] = useState('both')
   const [tiers, setTiers] = useState(new Set())
   const [selectedClasses, setSelectedClasses] = useState(new Set())
 
   const query = search.trim().toLowerCase()
-  const hasAnyFilter = query !== '' || editions.size > 0 || books.size > 0 || tiers.size > 0 || selectedClasses.size > 0
+  const hasAnyFilter = query !== '' || books.size > 0 || tiers.size > 0 || selectedClasses.size > 0
 
   const filteredRows = useMemo(() => {
     return flatRows.filter((r) => {
       if (selectedClasses.size && !selectedClasses.has(r.className)) return false
       if (tiers.size && !(r.tier && tiers.has(r.tier))) return false
-      if (editions.size && !editions.has(r.edition)) return false
       if (books.size) {
         const classBookOk = bookScope !== 'subclass' && r.classBooks.some((b) => books.has(b))
         const subBookOk = bookScope !== 'class' && books.has(r.book)
@@ -313,7 +310,7 @@ export default function CodexClassBrowser() {
       if (query !== '' && !r.name.toLowerCase().includes(query) && !r.className.toLowerCase().includes(query)) return false
       return true
     })
-  }, [flatRows, selectedClasses, tiers, editions, books, bookScope, query])
+  }, [flatRows, selectedClasses, tiers, books, bookScope, query])
 
   const classGroups = useMemo(() => {
     const byClass = new Map(classes.map((c) => [c.name, []]))
@@ -337,7 +334,6 @@ export default function CodexClassBrowser() {
 
   function clearFilters() {
     setSearch('')
-    setEditions(new Set())
     setBooks(new Set())
     setBookScope('both')
     setTiers(new Set())
@@ -374,7 +370,6 @@ export default function CodexClassBrowser() {
         </div>
 
         <FilterRow label="Tier" options={tierOrder} selected={tiers} onToggle={(v) => setTiers(toggled(tiers, v))} />
-        <FilterRow label="Edition" options={editionOptions} selected={editions} onToggle={(v) => setEditions(toggled(editions, v))} />
         <FilterRow
           label="Book"
           options={bookOptions}

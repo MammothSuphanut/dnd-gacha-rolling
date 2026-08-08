@@ -63,6 +63,22 @@ const PROJECT_ORIGINAL_CLASSES = [
   },
 ];
 
+// Classes this project plays that are 3rd-party (not this project's own
+// invention, unlike PROJECT_ORIGINAL_CLASSES above) but have no 5etools-style
+// JSON mirror under src/data/5etools/ at all — so loadOfficialClasses/
+// loadHomebrewFolder never see them either. Listed here by hand for the same
+// reason as PROJECT_ORIGINAL_CLASSES: makes the class heading link somewhere
+// real even before/regardless of a JSON mirror existing. Their subclasses
+// come from classes.json via loadProjectHomebrewSubclasses (see its comment)
+// same as project-original ones.
+const EXTERNAL_HOMEBREW_CLASSES = [
+  {
+    name: "Tactician",
+    link: "https://roll20.net/compendium/dnd5e/Tactician",
+    book: "Drizzt's Travelogue of Everything (DMs Guild)",
+  },
+];
+
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
@@ -250,34 +266,44 @@ function resolveClassLink(classInfo) {
   return classInfo.link || `https://5e.tools/search.html?q=${encodeURIComponent(classInfo.name)}`;
 }
 
-// This project's own bespoke homebrew subclasses (prose .md files under
-// codex/homebrew-subclass/, e.g. The Ruined Flame) aren't mirrored as
-// 5etools-style JSON, so the two loaders above never see them. They *are*
-// registered in classes.json for the gacha box though (group = class name,
-// link straight into the /codex/homebrew-subclass/* route) — reuse that as
-// the source of truth instead of inventing a second manifest. classes.json
-// can list the same subclass more than once (it backs multiple boxes), so
-// dedupe by class+name.
-function loadProjectHomebrewSubclasses() {
+// Two kinds of subclass never show up in the three JSON scans above, so both
+// need a fallback source: (a) this project's own bespoke homebrew (prose .md
+// files under codex/homebrew-subclass/, e.g. The Ruined Flame, Sacred
+// Knight's Thrones — link starts with /codex/homebrew-subclass/), and (b) a
+// wholly external 3rd-party class this project plays but never got a
+// 5etools-format JSON file for at all (e.g. Tactician — Drizzt's Travelogue
+// of Everything, DMs Guild; see EXTERNAL_HOMEBREW_CLASSES). Both *are*
+// registered in classes.json for the gacha box though (group = class name),
+// so reuse that as the source of truth instead of inventing a second
+// manifest, filtering out anything whose class was already sourced from a
+// real JSON mirror (`coveredClassNames`) to avoid duplicating those.
+// classes.json can list the same subclass more than once (it backs multiple
+// boxes), so dedupe by class+name.
+function loadProjectHomebrewSubclasses(coveredClassNames) {
   const seen = new Set();
   const subclasses = [];
   for (const box of readJson(CLASSES_JSON)) {
     for (const item of box.items || []) {
-      if (!item.group || !item.name || !item.link || !item.link.startsWith("/codex/homebrew-subclass/")) continue;
+      if (!item.group || !item.name || !item.link) continue;
+      const isOwnHomebrew = item.link.startsWith("/codex/homebrew-subclass/");
+      if (!isOwnHomebrew && coveredClassNames.has(item.group)) continue;
       const key = `${item.group}|${item.name}`;
       if (seen.has(key)) continue;
       seen.add(key);
+      const book = isOwnHomebrew
+        ? "Homebrew"
+        : (EXTERNAL_HOMEBREW_CLASSES.find((c) => c.name === item.group) || {}).book || "External Homebrew";
       subclasses.push({
         className: item.group,
         name: item.name,
-        source: "Homebrew",
+        source: book,
         sourceAbbrev: "Homebrew",
-        // codex/homebrew-subclass/ is a newer addition written against the 2024
-        // rules (e.g. The Ruined Flame keys off Innate Sorcery) — no per-file
-        // edition metadata exists yet, so this is a fixed assumption rather
-        // than something detected. Revisit if a 2014-only entry shows up here.
+        // Neither codex/homebrew-subclass/ nor any EXTERNAL_HOMEBREW_CLASSES
+        // entry so far carries per-file edition metadata — this is a fixed
+        // assumption rather than something detected. Revisit if a 2014-only
+        // entry shows up here.
         edition: "2024",
-        book: "Homebrew",
+        book,
       });
     }
   }
@@ -291,17 +317,19 @@ function main() {
   const official = loadOfficialClasses(officialNames, classSourceEdition);
   const grimHollow = loadHomebrewFolder("grim-hollow", classSourceEdition);
   const valdasSpire = loadHomebrewFolder("valdas-spire", classSourceEdition);
-  const projectHomebrew = loadProjectHomebrewSubclasses();
+  const coveredClassNames = new Set([...official.classes.keys(), ...grimHollow.classes.keys(), ...valdasSpire.classes.keys()]);
+  const projectHomebrew = loadProjectHomebrewSubclasses(coveredClassNames);
 
   const allClasses = new Map();
   mergeClassMaps(allClasses, official.classes);
   mergeClassMaps(allClasses, grimHollow.classes);
   mergeClassMaps(allClasses, valdasSpire.classes);
 
-  // Project-original classes (see PROJECT_ORIGINAL_CLASSES above) — registered
+  // Project-original and external-no-JSON-mirror classes (see
+  // PROJECT_ORIGINAL_CLASSES / EXTERNAL_HOMEBREW_CLASSES above) — registered
   // even before they have a single finished subclass, purely so the class
-  // heading itself links to the doc instead of a nonsense 5e.tools search.
-  for (const proj of PROJECT_ORIGINAL_CLASSES) {
+  // heading itself links somewhere real instead of a nonsense 5e.tools search.
+  for (const proj of [...PROJECT_ORIGINAL_CLASSES, ...EXTERNAL_HOMEBREW_CLASSES]) {
     if (!allClasses.has(proj.name)) allClasses.set(proj.name, { name: proj.name, entries: [] });
     const info = allClasses.get(proj.name);
     info.link = proj.link;

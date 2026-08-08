@@ -6,7 +6,7 @@
 > **จุดประสงค์**: ก่อนเสนอ/เปรียบเทียบ subclass ให้ผู้ใช้ตอน `/build-character` หรือ `/level-up-character` ให้ไล่ดูตารางของ class นั้นในไฟล์นี้ก่อน แทนที่จะเปิด compendium JSON ของ homebrew ตรงๆ (โดยเฉพาะ Valda's Spire ที่ subclass เกือบ 200 ตัวปนอยู่ในไฟล์เดียว) เพื่อไม่ให้พลาดตัวเลือก official/homebrew ตัวใดตัวหนึ่งไปแบบไม่ตั้งใจ — ยังต้องเสนอ official และ homebrew เท่าเทียมกันตามกติกาใน [README.md](README.md) เหมือนเดิม
 >
 > **ก่อนอ่านตารางด้านล่างเพื่อสร้าง/ปรึกษาตัวละคร**: ต้องถามผู้ใช้ 4 คำถามก่อนเสมอ — (1) edition 2014/2024 (2014 = ใช้เฉพาะ edition 2014, 2024 = ใช้ทั้งหมดแต่ถ้าซ้ำกันให้ใช้เวอร์ชัน 2024), (2) ขอบเขต class หลัก(official)/เสริม(homebrew)/ทั้งคู่, (3) กฎพิเศษของ campaign ถ้ามี (เช่น Grim Hollow: Grievous Wounds, Gritty Realism), (4) level ที่จะสร้าง/ปรึกษา — รายละเอียดเต็มดูที่ [README.md § Ruleset ก่อนเริ่มสร้าง/ปรึกษาตัวละคร](README.md#ruleset-ก่อนเริ่มสร้างปรึกษาตัวละคร)
-> Generated: 2026-08-07 • 32 classes • 794 subclasses (official: 322, Grim Hollow: 73, Valda's Spire: 398, This Project: 1)
+> Generated: 2026-08-08 • 33 classes • 806 subclasses (official: 322, Grim Hollow: 73, Valda's Spire: 398, This Project: 13)
 >
 > **หาว่า subclass ไหนแรง/อ่อน (ไม่ใช่แค่ว่ามีอะไรบ้าง)**: ไฟล์นี้เป็นแค่ดัชนี ไม่มีข้อมูล tier — ระบบ tier แบบเก่า (00-sub-class-overview-tier-list-2024.md) ถูกลบไปแล้ว 2026-08-07 กำลังทำใหม่ทั้งหมดตามกติกาใน [00-scorecard-methodology.md](../2024-tier-list/00-scorecard-methodology.md) — เช็คความคืบหน้าได้ที่ [00-scorecard-progress.md](../2024-tier-list/00-scorecard-progress.md)
 
@@ -37,6 +37,7 @@
 - [Sacred Knight](#sacred-knight)
 - [Sorcerer](#sorcerer)
 - [Spellcaster Sidekick](#spellcaster-sidekick)
+- [Tactician](#tactician)
 - [Vagabond](#vagabond)
 - [Warden](#warden)
 - [Warlock](#warlock)
@@ -95,7 +96,7 @@ _Official_
 | [Path of the Primal Spirit](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_primal%20spirit_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [Path of the Rage Mage](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_rage%20mage_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Path of the Storm Herald](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_storm%20herald_xge=b1) | 2024 | Xanathar's Guide to Everything (`XGE`) | Official |
-| [Path of the Totem Warrior](https://5e.tools/search.html?q=Path%20of%20the%20Totem%20Warrior) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
+| [Path of the Totem Warrior](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_totem%20warrior_phb=b1) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
 | [Path of the Wild Heart](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wild%20heart_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
 | [Path of the World Tree](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_world%20tree_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
 | [Path of the Wrathful Dead](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wrathful%20dead_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
@@ -138,7 +139,7 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [Adrenaline Junkie](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_adrenaline%20junkie_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Brigand](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_brigand_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Daggermark](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_daggermark_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Demon Banner](https://5e.tools/search.html?q=Demon%20Banner) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Demon Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_demon%20banner_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Demon Brand](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_demon%20brand_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Dragon Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_dragon%20banner_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Eagle Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_eagle%20banner_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
@@ -147,22 +148,22 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [Holy Icon](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_holy%20icon_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Houndmaster](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_houndmaster_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Jolly Roger](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_jolly%20roger_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Jolly Roger Banner](https://5e.tools/search.html?q=Jolly%20Roger%20Banner) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Jolly Roger Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_jolly%20roger%20banner_valdaspire24=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Knight Errant](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_knight%20errant_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Lion Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_lion%20banner_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Plague Doctor](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20doctor_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Pugilist](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_pugilist_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Ram Banner](https://5e.tools/search.html?q=Ram%20Banner) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Raven Banner](https://5e.tools/search.html?q=Raven%20Banner) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Ram Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_ram%20banner_valdaspire24=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Raven Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_raven%20banner_valdaspire24=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Rōnin](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_r%c5%8dnin_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Siegeball Banner](https://5e.tools/search.html?q=Siegeball%20Banner) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Siegeball Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_siegeball%20banner_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Siegeball Jersey](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_siegeball%20jersey_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Skull Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_skull%20banner_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Star-Spangled Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_star-spangled%20banner_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Tower Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_tower%20banner_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Treant Banner](https://5e.tools/search.html?q=Treant%20Banner) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Treant Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_treant%20banner_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Troubadour](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_troubadour_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Turtle Banner](https://5e.tools/search.html?q=Turtle%20Banner) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Turtle Banner](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_turtle%20banner_valdaspire24=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Yellow Sign](https://5e.tools/classes.html#captain_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_yellow%20sign_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 
 ## [Channeler](https://5e.tools/search.html?q=Channeler)
@@ -319,9 +320,9 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [Adrenaline Junkie](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_adrenaline%20junkie_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Big Game Hunter](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_big%20game%20hunter_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Brigand](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_brigand_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Covert Operative](https://5e.tools/search.html?q=Covert%20Operative) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Covert Operative](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_covert%20operative_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Daggermark](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_daggermark_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Deadeye](https://5e.tools/search.html?q=Deadeye) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Deadeye](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_deadeye_valdaspire24extras=b1) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Dragon Banner](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_dragon%20banner_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Eagle Banner](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_eagle%20banner_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Feylost](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_feylost_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
@@ -329,10 +330,10 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [Grenadier](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_grenadier_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Gun Tank](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_gun%20tank_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Gun-Ko Master](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_gun-ko%20master_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Gundead](https://5e.tools/search.html?q=Gundead) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [High Roller](https://5e.tools/search.html?q=High%20Roller) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Gundead](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_gundead_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [High Roller](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_high%20roller_valdaspire24extras=b1) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Houndmaster](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_houndmaster_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Janissary](https://5e.tools/search.html?q=Janissary) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Janissary](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_janissary_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Jolly Roger](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_jolly%20roger_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Knight Errant](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_knight%20errant_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Musketeer](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_musketeer_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
@@ -340,15 +341,15 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [Plague Doctor](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20doctor_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Pugilist](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_pugilist_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Rōnin](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_r%c5%8dnin_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Secret Agent](https://5e.tools/search.html?q=Secret%20Agent) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Sharpshooter](https://5e.tools/search.html?q=Sharpshooter) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Secret Agent](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_secret%20agent_valdaspire24extras=b1) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Sharpshooter](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_sharpshooter_valdaspire24=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Siegeball Jersey](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_siegeball%20jersey_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Spellslinger](https://5e.tools/search.html?q=Spellslinger) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Storm Gunner](https://5e.tools/search.html?q=Storm%20Gunner) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Trick Shot](https://5e.tools/search.html?q=Trick%20Shot) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Spellslinger](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_spellslinger_valdaspire24extras=b1) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Storm Gunner](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_storm%20gunner_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Trick Shot](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_trick%20shot_valdaspire24extras=b1) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Troubadour](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_troubadour_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Twice-Damned](https://5e.tools/search.html?q=Twice-Damned) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [White Hat](https://5e.tools/search.html?q=White%20Hat) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Twice-Damned](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_twice-damned_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [White Hat](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_white%20hat_valdaspire24extras=b1) | 2024 | The Gunslinger Class: Valda's Spire of Secrets (`ValdaGunslinger`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Yellow Sign](https://5e.tools/classes.html#gunslinger_valdagunslinger,state:ishidefeatures=b1~ishideoutline=b1~sub_yellow%20sign_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 
 ## [Investigator](https://5e.tools/search.html?q=Investigator)
@@ -363,7 +364,7 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [Containment Specialist](https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_containment%20specialist_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Detective](https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_detective_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Exterminator](https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_exterminator_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Infernal Agent](https://5e.tools/search.html?q=Infernal%20Agent) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Infernal Agent](https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_infernal%20agent_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Infernum](https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_infernum_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Inquisitor](https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_inquisitor_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Kid Sleuth](https://5e.tools/classes.html#investigator_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_kid%20sleuth_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
@@ -416,7 +417,7 @@ _Official_
 | [Way of the Bow](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_bow_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Way of the Drunken Master](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_drunken%20master_xge=b1) | 2024 | Xanathar's Guide to Everything (`XGE`) | Official |
 | [Way of the Flagellant](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_flagellant_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Way of the Four Elements](https://5e.tools/search.html?q=Way%20of%20the%20Four%20Elements) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
+| [Way of the Four Elements](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_four%20elements_phb=b1) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
 | [Way of the Four Fists](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_four%20fists_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Way of the Kensei](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_kensei_xge=b1) | 2024 | Xanathar's Guide to Everything (`XGE`) | Official |
 | [Way of the Leaden Crown](https://5e.tools/search.html?q=Way%20of%20the%20Leaden%20Crown) | 2014 | Grim Hollow: The Player's Guide (2014) (`GHPG`) | Grim Hollow (Ghostfire Gaming) |
@@ -443,12 +444,12 @@ _Official_
 
 | Subclass | Edition | Source | Book |
 |---|---|---|---|
-| [Order of the Avatar](https://5e.tools/search.html?q=Order%20of%20the%20Avatar) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
-| [Order of the Awakened](https://5e.tools/search.html?q=Order%20of%20the%20Awakened) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
-| [Order of the Immortal](https://5e.tools/search.html?q=Order%20of%20the%20Immortal) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
-| [Order of the Nomad](https://5e.tools/search.html?q=Order%20of%20the%20Nomad) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
-| [Order of the Soul Knife](https://5e.tools/search.html?q=Order%20of%20the%20Soul%20Knife) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
-| [Order of the Wu Jen](https://5e.tools/search.html?q=Order%20of%20the%20Wu%20Jen) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
+| [Order of the Avatar](https://5e.tools/classes.html#mystic_uathemysticclass,state:ishidefeatures=b1~ishideoutline=b1~sub_avatar_uathemysticclass=b1) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
+| [Order of the Awakened](https://5e.tools/classes.html#mystic_uathemysticclass,state:ishidefeatures=b1~ishideoutline=b1~sub_awakened_uathemysticclass=b1) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
+| [Order of the Immortal](https://5e.tools/classes.html#mystic_uathemysticclass,state:ishidefeatures=b1~ishideoutline=b1~sub_immortal_uathemysticclass=b1) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
+| [Order of the Nomad](https://5e.tools/classes.html#mystic_uathemysticclass,state:ishidefeatures=b1~ishideoutline=b1~sub_nomad_uathemysticclass=b1) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
+| [Order of the Soul Knife](https://5e.tools/classes.html#mystic_uathemysticclass,state:ishidefeatures=b1~ishideoutline=b1~sub_soul%20knife_uathemysticclass=b1) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
+| [Order of the Wu Jen](https://5e.tools/classes.html#mystic_uathemysticclass,state:ishidefeatures=b1~ishideoutline=b1~sub_wu%20jen_uathemysticclass=b1) | 2014 | Unearthed Arcana: The Mystic Class (`UATheMysticClass`) | Official |
 
 ## [Necromancer](https://5e.tools/search.html?q=Necromancer)
 
@@ -553,7 +554,14 @@ _Official_
 
 _Homebrew_
 
-_(ไม่มี subclass ในข้อมูล local ที่ mirror ไว้)_
+| Subclass | Edition | Source | Book |
+|---|---|---|---|
+| [Throne of Doom and Slaughter](/codex/homebrew-subclass/Sacred-Knight/Throne-of-Doom-and-Slaughter) | 2024 | Homebrew | Homebrew |
+| [Throne of Eternity and Creation](/codex/homebrew-subclass/Sacred-Knight/Throne-of-Eternity-and-Creation) | 2024 | Homebrew | Homebrew |
+| [Throne of Fear and Sorrow](/codex/homebrew-subclass/Sacred-Knight/Throne-of-Fear-and-Sorrow) | 2024 | Homebrew | Homebrew |
+| [Throne of Order and Law](/codex/homebrew-subclass/Sacred-Knight/Throne-of-Order-and-Law) | 2024 | Homebrew | Homebrew |
+| [Throne of Protection and Mercy](/codex/homebrew-subclass/Sacred-Knight/Throne-of-Protection-and-Mercy) | 2024 | Homebrew | Homebrew |
+| [Throne of Wisdom and Spirit](/codex/homebrew-subclass/Sacred-Knight/Throne-of-Wisdom-and-Spirit) | 2024 | Homebrew | Homebrew |
 
 ## [Sorcerer](https://5e.tools/search.html?q=Sorcerer)
 
@@ -595,6 +603,19 @@ _Official_
 
 _(ไม่มี subclass ในข้อมูล local ที่ mirror ไว้)_
 
+## [Tactician](https://roll20.net/compendium/dnd5e/Tactician)
+
+_Drizzt's Travelogue of Everything (DMs Guild)_
+
+| Subclass | Edition | Source | Book |
+|---|---|---|---|
+| [Gambler](https://roll20.net/compendium/dnd5e/Subclasses:Gambler?expansion=33335#content) | 2024 | Drizzt's Travelogue of Everything (DMs Guild) (`Homebrew`) | Drizzt's Travelogue of Everything (DMs Guild) |
+| [Grandmaster](https://roll20.net/compendium/dnd5e/Subclasses:Grandmaster?expansion=33335#content) | 2024 | Drizzt's Travelogue of Everything (DMs Guild) (`Homebrew`) | Drizzt's Travelogue of Everything (DMs Guild) |
+| [Medic](https://roll20.net/compendium/dnd5e/Subclasses:Medic?expansion=33335#content) | 2024 | Drizzt's Travelogue of Everything (DMs Guild) (`Homebrew`) | Drizzt's Travelogue of Everything (DMs Guild) |
+| [Mentalist](https://roll20.net/compendium/dnd5e/Subclasses:Mentalist?expansion=33335#content) | 2024 | Drizzt's Travelogue of Everything (DMs Guild) (`Homebrew`) | Drizzt's Travelogue of Everything (DMs Guild) |
+| [Scholar](https://roll20.net/compendium/dnd5e/Subclasses:Scholar?expansion=33335#content) | 2024 | Drizzt's Travelogue of Everything (DMs Guild) (`Homebrew`) | Drizzt's Travelogue of Everything (DMs Guild) |
+| [War Mind](https://roll20.net/compendium/dnd5e/Subclasses:War%20Mind?expansion=33335#content) | 2024 | Drizzt's Travelogue of Everything (DMs Guild) (`Homebrew`) | Drizzt's Travelogue of Everything (DMs Guild) |
+
 ## [Vagabond](https://5e.tools/search.html?q=Vagabond)
 
 _Valda's Spire of Secrets (Mage Hand Press)_
@@ -631,15 +652,15 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [Carrion King](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_carrion%20king_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Diabolist](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_diabolist_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Drake-Blooded](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_drake-blooded_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Fey Trailblazer](https://5e.tools/search.html?q=Fey%20Trailblazer) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Fey Trailblazer](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_fey%20trailblazer_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Godsworn](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_godsworn_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Grey Watchman](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_grey%20watchman_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Hellkeeper](https://5e.tools/search.html?q=Hellkeeper) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Iceheart Bastion](https://5e.tools/search.html?q=Iceheart%20Bastion) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Loreseeker](https://5e.tools/search.html?q=Loreseeker) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Hellkeeper](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_hellkeeper_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Iceheart Bastion](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_iceheart%20bastion_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Loreseeker](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_loreseeker_valdaspire24extras=b1) | 2014 | Valda's Spire of Secrets Extras (2014) (`ValdaSpireExtras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Nightgaunt](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_nightgaunt_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Rimekeeper](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_rimekeeper_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Soulblood Shaman](https://5e.tools/search.html?q=Soulblood%20Shaman) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Soulblood Shaman](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_soulblood%20shaman_valdaspire24=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Stoneheart Defender](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_stoneheart%20defender_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Storm Sentinel](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_storm%20sentinel_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Verdant Protector](https://5e.tools/classes.html#warden_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_verdant%20protector_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
@@ -674,7 +695,7 @@ _Official_
 | [The Parasite](https://5e.tools/search.html?q=The%20Parasite) | 2014 | Grim Hollow: The Player's Guide (2014) (`GHPG`) | Grim Hollow (Ghostfire Gaming) |
 | [The Parasite Patron](https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_parasite_helianasguidetomonsterhunting=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [The Symbiont](https://5e.tools/search.html?q=The%20Symbiont) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [The Undead](https://5e.tools/search.html?q=The%20Undead) | 2024 | Van Richten's Guide to Ravenloft (`VRGR`) | Official |
+| [The Undead](https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_undead_vrgr=b1) | 2024 | Van Richten's Guide to Ravenloft (`VRGR`) | Official |
 | [The Undying](https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_undying_scag=b1) | 2024 | Sword Coast Adventurer's Guide (`SCAG`) | Official |
 | [Undead Patron](https://5e.tools/classes.html#warlock_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_undead_rhw=b1) | 2024 | Ravenloft: The Horrors Within (`RHW`) | Official |
 
@@ -691,7 +712,7 @@ _Valda's Spire of Secrets (Mage Hand Press)_
 | [House of Go](https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_go_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [House of Kings](https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_kings_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [House of Knights](https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_knights_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [House of Lancers](https://5e.tools/search.html?q=House%20of%20Lancers) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [House of Lancers](https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_lancers_valdaspire24=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [House of Pawns](https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_pawns_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [House of Rooks](https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_rooks_valdaspire24=b1) | 2024 | Valda's Spire of Secrets (2024) (`ValdaSpire24`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [House of Roulette](https://5e.tools/classes.html#warmage_valdaspire24,state:ishidefeatures=b1~ishideoutline=b1~sub_roulette_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
@@ -731,22 +752,22 @@ _Official_
 | [Abjurer](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_abjurer_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
 | [Bladesinger](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_bladesinger_frhof=b1) | 2024 | Forgotten Realms: Heroes of Faerûn (`FRHoF`) | Official |
 | [Bladesinging](https://5e.tools/search.html?q=Bladesinging) | 2024 | Tasha's Cauldron of Everything (`TCE`) | Official |
-| [Chronomancer](https://5e.tools/search.html?q=Chronomancer) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Chronomancer](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_chronomancer_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Chronurgy Magic](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_chronurgy_egw=b1) | 2024 | Explorer's Guide to Wildemount (`EGW`) | Official |
 | [Daemonologist](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_daemonologist_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [Diviner](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_diviner_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
 | [Evoker](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_evoker_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
 | [Familiar Master](https://5e.tools/search.html?q=Familiar%20Master) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Fumaturge](https://5e.tools/search.html?q=Fumaturge) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Gastronomer](https://5e.tools/search.html?q=Gastronomer) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Fumaturge](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_fumaturge_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Gastronomer](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_gastronomer_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Graviturgy Magic](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_graviturgy_egw=b1) | 2024 | Explorer's Guide to Wildemount (`EGW`) | Official |
 | [Illusionist](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_illusionist_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
-| [Magic Missile Mage](https://5e.tools/search.html?q=Magic%20Missile%20Mage) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Magic Missile Mage](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_magic%20missile%20mage_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Mystic Savant](https://5e.tools/search.html?q=Mystic%20Savant) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Mystic Strategist](https://5e.tools/search.html?q=Mystic%20Strategist) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Mystic Strategist](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_mystic%20strategist_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Order of Scribes](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_scribes_tce=b1) | 2024 | Tasha's Cauldron of Everything (`TCE`) | Official |
 | [Plague Doctor](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_plague%20doctor_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
-| [Protomancer](https://5e.tools/search.html?q=Protomancer) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Protomancer](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_protomancer_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [Sangromancer](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_sangromancer_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [School of Abjuration](https://5e.tools/search.html?q=School%20of%20Abjuration) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
 | [School of Chronomancy](https://5e.tools/search.html?q=School%20of%20Chronomancy) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
@@ -760,9 +781,9 @@ _Official_
 | [School of Sangromancy](https://5e.tools/search.html?q=School%20of%20Sangromancy) | 2014 | Grim Hollow: The Player's Guide (2014) (`GHPG`) | Grim Hollow (Ghostfire Gaming) |
 | [School of Somnomancy](https://5e.tools/search.html?q=School%20of%20Somnomancy) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [School of Transmutation](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_transmutation_phb=b1) | 2024 | Player's Handbook (2014) (`PHB`) | Official |
-| [Scroll Scribe](https://5e.tools/search.html?q=Scroll%20Scribe) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Somnomancer](https://5e.tools/search.html?q=Somnomancer) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Tyromancer](https://5e.tools/search.html?q=Tyromancer) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Universalist](https://5e.tools/search.html?q=Universalist) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Wand Wizard](https://5e.tools/search.html?q=Wand%20Wizard) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Scroll Scribe](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_scroll%20scribe_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Somnomancer](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_somnomancer_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Tyromancer](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_tyromancer_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Universalist](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_universalist_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
+| [Wand Wizard](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wand%20wizard_valdaspire24extras=b1) | 2024 | Valda's Spire of Secrets Extras (2024) (`ValdaSpire24Extras`) | Valda's Spire of Secrets (Mage Hand Press) |
 | [War Magic](https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_war_xge=b1) | 2024 | Xanathar's Guide to Everything (`XGE`) | Official |
