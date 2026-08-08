@@ -4,7 +4,7 @@
 
 **วันที่เริ่ม**: 2026-08-07
 **ขอบเขต**: 21 subclass (ดูรายชื่อใน [00-scorecard-progress.md § Barbarian](00-scorecard-progress.md))
-**สถานะปัจจุบัน**: ทำเสร็จแค่ **Class Baseline** ด้านล่าง — ยังไม่เริ่มให้คะแนน subclass ตัวไหนเลย
+**สถานะปัจจุบัน**: เสร็จสมบูรณ์ — Class Baseline + Subclass Scoring ครบทั้ง 21 ตัว
 
 **ที่มาข้อมูล chassis**: `src/data/5etools/official/class/class-barbarian.json` — source `XPHB` (Player's Handbook 2024)
 

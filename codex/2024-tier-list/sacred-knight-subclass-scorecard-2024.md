@@ -4,7 +4,7 @@
 
 **วันที่เริ่ม**: 2026-08-07
 **ขอบเขต**: 6 subclass — **Sacred Throne** ทั้ง 6 (ดูรายชื่อใน [00-scorecard-progress.md § Sacred Knight](00-scorecard-progress.md))
-**สถานะปัจจุบัน**: ทำเสร็จแค่ **Class Baseline** ด้านล่าง — ยังไม่เริ่มให้คะแนน Sacred Throne ตัวไหนเลย
+**สถานะปัจจุบัน**: เสร็จสมบูรณ์ — Class Baseline + Subclass Scoring ครบทั้ง 6 Sacred Throne
 
 **ที่มาข้อมูล chassis**: [Sacred-Knight.md](../homebrew-subclass/Sacred-Knight/Sacred-Knight.md) — homebrew class ของโปรเจกต์นี้เอง (ไม่ใช่เนื้อหาทางการ)
 

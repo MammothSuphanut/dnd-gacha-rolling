@@ -4,7 +4,7 @@
 
 **วันที่เริ่ม**: 2026-08-07
 **ขอบเขต**: 29 subclass (ดูรายชื่อใน [00-scorecard-progress.md § Captain](00-scorecard-progress.md))
-**สถานะปัจจุบัน**: ทำเสร็จแค่ **Class Baseline** ด้านล่าง — ยังไม่เริ่มให้คะแนน subclass ตัวไหนเลย
+**สถานะปัจจุบัน**: เสร็จสมบูรณ์ — Class Baseline + Subclass Scoring ครบทั้ง 29 ตัว
 
 **ที่มาข้อมูล chassis**: `src/data/5etools/homebrew/valdas-spire/Mage Hand Press; Valda's Spire of Secrets - 2024.json` — source `ValdaSpire24`
 

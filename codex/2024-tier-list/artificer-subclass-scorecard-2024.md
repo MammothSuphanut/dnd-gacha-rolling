@@ -4,7 +4,7 @@
 
 **วันที่เริ่ม**: 2026-08-07
 **ขอบเขต**: 6 subclass (ดูรายชื่อใน [00-scorecard-progress.md § Artificer](00-scorecard-progress.md))
-**สถานะปัจจุบัน**: ทำเสร็จแค่ **Class Baseline** ด้านล่าง — ยังไม่เริ่มให้คะแนน subclass ตัวไหนเลย
+**สถานะปัจจุบัน**: เสร็จสมบูรณ์ — Class Baseline + Subclass Scoring ครบทั้ง 6 ตัว
 
 **ที่มาข้อมูล chassis**: `src/data/5etools/official/class/class-artificer.json` — source `TCE` (Tasha's Cauldron of Everything) — **🕰️ Artificer ไม่มี reprint 2024 ใน PHB/XPHB** จึงใช้กลไก/ตัวเลขจากเวอร์ชัน 2014 ทั้งหมดตามกติกา 2014-only orphan ของโปรเจกต์
 
