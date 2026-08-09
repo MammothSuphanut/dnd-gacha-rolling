@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { Fragment, useMemo, useState } from 'react'
 import Modal from './Modal'
 import { LINK_CLASS } from './AdventureMarkdownView'
 import { getHomebrewRule } from '../utils/homebrewRules'
@@ -174,7 +174,7 @@ function FilterRow({ label, options, selected, onToggle, extra }) {
   if (options.length === 0) return null
   return (
     <div className="flex flex-wrap items-center gap-1.5">
-      <span className="mr-1 text-xs font-semibold text-stone-500">{label}:</span>
+      {label && <span className="mr-1 text-xs font-semibold text-stone-500">{label}:</span>}
       {extra}
       {options.map((option) => (
         <FilterChip key={option} active={selected.has(option)} onClick={() => onToggle(option)}>
@@ -194,7 +194,7 @@ function TierCell({ tier, active, onClick }) {
       type="button"
       onClick={onClick}
       title={tier}
-      className={`inline-flex h-6 w-6 items-center justify-center rounded-full border text-[11px] font-bold transition-colors ${active ? tierBadgeClass(tier) : 'border-[#e2cfb3] bg-white text-stone-400 hover:bg-[#f5ede0]'
+      className={`inline-flex h-7 w-7 items-center justify-center rounded-full border text-xs font-bold transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 ${active ? `${tierBadgeClass(tier)} shadow-sm` : 'border-[#e2cfb3] bg-white text-stone-400 hover:border-violet-300 hover:text-stone-600'
         }`}
     >
       {tier}
@@ -209,16 +209,19 @@ const TIER_FILTER_MODES = [
 
 // Per-axis "exact match vs. minimum threshold" toggle — only meaningful for
 // the 7 axis rows, not the Overall row (Overall already has its own S/A/B/C/D
-// grouping in the tier-list view, so it stays exact-only).
+// grouping in the tier-list view, so it stays exact-only). Must be
+// inline-flex, not flex: this sits alone inside a CSS Grid cell (see
+// TierMatrix), and a block-level flex box defaults to filling all available
+// track width instead of hugging its own two buttons.
 function TierFilterModeToggle({ mode, onChange }) {
   return (
-    <div className="flex items-center overflow-hidden rounded-full border border-[#e2cfb3] bg-white text-[10px]">
+    <div className="inline-flex items-center overflow-hidden rounded-full border border-[#e2cfb3] bg-white text-[10px] shadow-sm">
       {TIER_FILTER_MODES.map((opt) => (
         <button
           key={opt.value}
           type="button"
           onClick={() => onChange(opt.value)}
-          className={`whitespace-nowrap px-1.5 py-0.5 font-medium transition-colors ${mode === opt.value ? 'bg-violet-100 text-violet-800' : 'text-stone-500 hover:bg-[#f5ede0]'
+          className={`whitespace-nowrap px-2 py-1 font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 ${mode === opt.value ? 'bg-violet-600 text-white' : 'text-stone-500 hover:bg-[#f5ede0]'
             }`}
         >
           {opt.label}
@@ -231,39 +234,40 @@ function TierFilterModeToggle({ mode, onChange }) {
 // Condenses what used to be 8 separate FilterRow strips (Overall Tier + one
 // per axis, each repeating the S/A/B/C/D labels) into a single grid — the
 // column header prints S/A/B/C/D exactly once instead of 8 times, cutting
-// the filter panel's height roughly in half. Rows carrying `onModeChange`
-// (the 7 axis rows) also get the exact/minimum toggle in a middle column;
+// the filter panel's height roughly in half. Built as a CSS Grid rather than
+// a <table>: an HTML table's auto layout algorithm dumps all of a row's
+// leftover width into whichever cell has no explicit width (the mode-toggle
+// column here), stretching it into a huge empty box — a grid with explicit
+// track sizes doesn't have that failure mode. Rows carrying `onModeChange`
+// (the 7 axis rows) get the exact/minimum toggle in the middle column;
 // Overall has none, so that cell is left blank for it.
 function TierMatrix({ rows }) {
   return (
-    <table className="w-full border-collapse text-xs">
-      <thead>
-        <tr>
-          <th></th>
-          <th></th>
+    <div
+      className="grid w-fit items-center gap-x-4 gap-y-1.5"
+      style={{ gridTemplateColumns: 'max-content max-content repeat(5, 2.25rem)' }}
+    >
+      <div />
+      <div />
+      {TIER_ORDER.map((t) => (
+        <div key={t} className="pb-1 text-center text-xs font-semibold text-stone-500">
+          {t}
+        </div>
+      ))}
+      {rows.map((row) => (
+        <Fragment key={row.label}>
+          <div className={`whitespace-nowrap text-right text-sm font-medium ${row.onModeChange ? 'text-stone-600' : 'text-stone-800'}`}>
+            {row.label}
+          </div>
+          <div>{row.onModeChange && <TierFilterModeToggle mode={row.mode} onChange={row.onModeChange} />}</div>
           {TIER_ORDER.map((t) => (
-            <th key={t} className="pb-1 text-center font-semibold text-stone-500">
-              {t}
-            </th>
+            <div key={t} className="flex justify-center">
+              <TierCell tier={t} active={row.selected.has(t)} onClick={() => row.onToggle(t)} />
+            </div>
           ))}
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row) => (
-          <tr key={row.label}>
-            <td className="whitespace-nowrap py-0.5 pr-2 text-right font-medium text-stone-600">{row.label}</td>
-            <td className="whitespace-nowrap py-0.5 pr-2">
-              {row.onModeChange && <TierFilterModeToggle mode={row.mode} onChange={row.onModeChange} />}
-            </td>
-            {TIER_ORDER.map((t) => (
-              <td key={t} className="py-0.5 text-center">
-                <TierCell tier={t} active={row.selected.has(t)} onClick={() => row.onToggle(t)} />
-              </td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
+        </Fragment>
+      ))}
+    </div>
   )
 }
 
@@ -462,8 +466,10 @@ export default function CodexClassBrowser() {
   // expandMinimum. Defaults to exact for every axis.
   const [axisTierModes, setAxisTierModes] = useState(() => new Map(AXIS_ORDER.map((axis) => [axis, 'exact'])))
   const [selectedClasses, setSelectedClasses] = useState(new Set())
+  // Whether the filter section (Tier matrix + Book + Class) is expanded
+  // inline below the search bar — an accordion, not a floating popover, so
+  // it stays open until the toggle button itself is clicked again.
   const [filterOpen, setFilterOpen] = useState(false)
-  const filterPanelRef = useRef(null)
 
   function toggleAxisTier(axis, value) {
     setAxisTiers((prev) => {
@@ -476,18 +482,6 @@ export default function CodexClassBrowser() {
   function setAxisTierMode(axis, mode) {
     setAxisTierModes((prev) => new Map(prev).set(axis, mode))
   }
-
-  // Close the filter drawer on an outside click, same convention as any
-  // popover/dropdown — the toggle button itself is inside filterPanelRef too
-  // so re-clicking it to close doesn't fight this listener.
-  useEffect(() => {
-    if (!filterOpen) return
-    function handleClickOutside(e) {
-      if (filterPanelRef.current && !filterPanelRef.current.contains(e.target)) setFilterOpen(false)
-    }
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [filterOpen])
 
   const query = search.trim().toLowerCase()
   const hasAxisTierFilter = useMemo(() => [...axisTiers.values()].some((s) => s.size > 0), [axisTiers])
@@ -560,72 +554,81 @@ export default function CodexClassBrowser() {
 
   return (
     <div>
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-[#e2cfb3] bg-[#f5ede0]/60 p-4">
-        <div className="flex flex-wrap items-center gap-3">
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="ค้นหาชื่อ subclass หรือ class..."
-            className="w-full max-w-xs rounded-md border border-[#e2cfb3] bg-white px-3 py-1.5 text-sm text-stone-700 placeholder:text-stone-400 focus:border-violet-400 focus:outline-none"
-          />
-          {hasAnyFilter && (
-            <button type="button" onClick={clearFilters} className="text-xs text-violet-700 underline">
-              ล้างตัวกรอง
-            </button>
-          )}
+      <div className="mb-6 rounded-xl border border-[#e2cfb3] bg-[#f5ede0]/60 p-4 shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="ค้นหาชื่อ subclass หรือ class..."
+              className="w-full max-w-xs rounded-md border border-[#e2cfb3] bg-white px-3 py-1.5 text-sm text-stone-700 placeholder:text-stone-400 focus:border-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-200"
+            />
+            {hasAnyFilter && (
+              <button
+                type="button"
+                onClick={clearFilters}
+                className="rounded text-xs text-violet-700 underline decoration-violet-300 underline-offset-2 hover:text-violet-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
+              >
+                ล้างตัวกรอง
+              </button>
+            )}
 
-          {/* Filter drawer — everything but search/clear collapses behind this
-              button so the page opens on the data, not a wall of chip rows. */}
-          <div className="relative" ref={filterPanelRef}>
+            {/* Filter accordion — everything but search/clear collapses behind
+                this button so the page opens on the data, not a wall of chip
+                rows; expands inline below instead of floating over content. */}
             <button
               type="button"
               onClick={() => setFilterOpen((o) => !o)}
-              className={`flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${filterOpen || activeFilterCount > 0
-                ? 'border-violet-400 bg-violet-100 text-violet-800'
+              className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 ${filterOpen || activeFilterCount > 0
+                ? 'border-violet-400 bg-violet-600 text-white'
                 : 'border-[#e2cfb3] bg-white text-stone-600 hover:bg-[#f5ede0]'
                 }`}
             >
               ตัวกรอง{activeFilterCount > 0 ? ` (${activeFilterCount})` : ''}
+              <span className={`text-[9px] transition-transform ${filterOpen ? 'rotate-180' : ''}`}>▾</span>
             </button>
-
-            {filterOpen && (
-              <div className="absolute left-0 z-20 mt-2 max-h-[75vh] w-[min(92vw,640px)] overflow-y-auto rounded-lg border border-[#e2cfb3] bg-[#fdfbf8] p-4 shadow-xl">
-                <div className="mb-4">
-                  <h3 className="mb-1.5 text-xs font-semibold text-stone-500">Tier</h3>
-                  <TierMatrix rows={tierMatrixRows} />
-                </div>
-                <div className="mb-3">
-                  <FilterRow
-                    label="Book"
-                    options={bookOptions}
-                    selected={books}
-                    onToggle={(v) => setBooks(toggled(books, v))}
-                    extra={<BookScopeToggle value={bookScope} onChange={setBookScope} />}
-                  />
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <FilterRow
-                    label="Core Class"
-                    options={rankedClassOptions.core}
-                    selected={selectedClasses}
-                    onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
-                  />
-                  <FilterRow
-                    label="Supplement Class"
-                    options={rankedClassOptions.supplement}
-                    selected={selectedClasses}
-                    onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
-                  />
-                </div>
-              </div>
-            )}
           </div>
+
+          <span className="text-xs text-stone-500">
+            แสดง <span className="font-semibold text-stone-700">{totalShown}</span> จาก {totalAll} subclass
+          </span>
         </div>
 
-        <span className="text-xs text-stone-500">
-          แสดง {totalShown} จาก {totalAll} subclass
-        </span>
+        {filterOpen && (
+          <div className="mt-4 flex flex-col gap-4 border-t border-[#e2cfb3] pt-4">
+            <div className="rounded-lg bg-white/50 p-3">
+              <h3 className="mb-2 text-[11px] font-bold uppercase tracking-wide text-stone-500">Tier</h3>
+              <div className="overflow-x-auto">
+                <TierMatrix rows={tierMatrixRows} />
+              </div>
+            </div>
+            <div className="rounded-lg bg-white/50 p-3">
+              <h3 className="mb-2 text-[11px] font-bold uppercase tracking-wide text-stone-500">Book</h3>
+              <FilterRow
+                options={bookOptions}
+                selected={books}
+                onToggle={(v) => setBooks(toggled(books, v))}
+                extra={<BookScopeToggle value={bookScope} onChange={setBookScope} />}
+              />
+            </div>
+            <div className="flex flex-col gap-2.5 rounded-lg bg-white/50 p-3">
+              <h3 className="text-[11px] font-bold uppercase tracking-wide text-stone-500">Class</h3>
+              <FilterRow
+                label="Core"
+                options={rankedClassOptions.core}
+                selected={selectedClasses}
+                onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
+              />
+              <FilterRow
+                label="Supplement"
+                options={rankedClassOptions.supplement}
+                selected={selectedClasses}
+                onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
+              />
+            </div>
+          </div>
+        )}
       </div>
 
       {totalShown === 0 && <p className="text-sm text-stone-400">ไม่พบ subclass ที่ตรงกับตัวกรอง</p>}
