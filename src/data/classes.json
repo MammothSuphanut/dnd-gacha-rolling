@@ -1245,6 +1245,16 @@
         "link": "https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_four%20elements_phb=b1"
       },
       {
+        "id": "item-f5022620-d890-477c-986f-b25146aed64d",
+        "name": "Warrior of the Asura",
+        "weight": 1,
+        "tag": "Core",
+        "image": "",
+        "note": "Source: Homebrew",
+        "group": "Monk",
+        "link": "/codex/homebrew-subclass/Monk/Warrior-of-the-Asura"
+      },
+      {
         "id": "item-299ea362-4a6b-44b7-a858-d3c625a620d3",
         "name": "Oath of Conquest",
         "weight": 1,
