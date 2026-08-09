@@ -53,8 +53,13 @@ const UNRANKED = 'unranked'
 // the project's 2024-only-scope rule and score the subclass exactly once —
 // so the old-name row has nothing to match by exact string comparison. This
 // maps each such old name to whichever name the scorecard actually scored it
-// under, so the old row shows the same tier instead of a false "unranked".
-// See project_scorecard_methodology_rework memory, "reconciliation gotcha".
+// under. When the 2024-named row is also present in the index (the normal
+// case), the old-name row is dropped entirely so the subclass shows once,
+// under its current name — see the `.filter()` above the `.map()` that uses
+// this table. If the 2024 row is ever missing from the index, the old-name
+// row is kept and just borrows the same tier via this alias instead of
+// showing a false "unranked". See project_scorecard_methodology_rework
+// memory, "reconciliation gotcha".
 // Every pair here was cross-checked against the source JSON's own
 // `reprintedAs` field (5etools' authoritative old-name→new-name link), not
 // guessed from string similarity — e.g. Warlock's "Archfey Patron" etc. did
@@ -398,25 +403,39 @@ export default function CodexClassBrowser() {
       return {
         ...c,
         analysisLink,
-        subclasses: c.subclasses.map((s) => {
-          const indexName = s.name.trim().toLowerCase()
-          // 1) exact match. 2) the index's own name still carries a
-          // disambiguating "(PSA)"/"(PSK)" suffix that the scorecard heading
-          // strips (e.g. "Ambition Domain (PSA)" vs scorecard's "Ambition
-          // Domain") — retry with that trailing parenthetical stripped. 3) a
-          // known old-name/2024-rename duplicate (see RENAMED_SUBCLASS_ALIASES).
-          const sc =
-            byName.get(indexName) ||
-            byName.get(indexName.replace(/\s*\([^)]*\)\s*$/, '').trim()) ||
-            (aliases?.[indexName] ? byName.get(aliases[indexName]) : undefined)
-          // A scorecard file existing for the class is enough to link every one
-          // of its subclasses to the write-up, even ones whose "**Overall**"
-          // judgment (tier) hasn't been written yet — axes/tier stay unset for
-          // those until it is (see 00-scorecard-methodology.md § การเขียน
-          // Overall Tier), and they render as "ยังไม่ได้จัดระดับ".
-          if (!sc) return { ...s, analysisLink }
-          return { ...s, analysisLink, tier: sc.tier, overallReason: sc.overallReason, axes: sc.axes }
-        }),
+        // The index still lists the pre-2024 name as its own row alongside
+        // the 2024 rename (both point at the same scorecard entry via
+        // RENAMED_SUBCLASS_ALIASES) — e.g. "Way of Mercy" next to "Warrior
+        // of Mercy". Drop the old-name row once we know its 2024 replacement
+        // is also present, so the browser shows each subclass once, under
+        // its current name, instead of two rows with identical tiers.
+        subclasses: c.subclasses
+          .filter((s) => {
+            const indexName = s.name.trim().toLowerCase()
+            const renamedTo = aliases?.[indexName]
+            return !renamedTo || !c.subclasses.some((other) => other.name.trim().toLowerCase() === renamedTo)
+          })
+          .map((s) => {
+            const indexName = s.name.trim().toLowerCase()
+            // 1) exact match. 2) the index's own name still carries a
+            // disambiguating "(PSA)"/"(PSK)" suffix that the scorecard heading
+            // strips (e.g. "Ambition Domain (PSA)" vs scorecard's "Ambition
+            // Domain") — retry with that trailing parenthetical stripped. 3) a
+            // known old-name/2024-rename duplicate (see RENAMED_SUBCLASS_ALIASES) —
+            // only reached when the 2024 row itself wasn't in the index, so
+            // this old-name row is the only one left to carry the tier.
+            const sc =
+              byName.get(indexName) ||
+              byName.get(indexName.replace(/\s*\([^)]*\)\s*$/, '').trim()) ||
+              (aliases?.[indexName] ? byName.get(aliases[indexName]) : undefined)
+            // A scorecard file existing for the class is enough to link every one
+            // of its subclasses to the write-up, even ones whose "**Overall**"
+            // judgment (tier) hasn't been written yet — axes/tier stay unset for
+            // those until it is (see 00-scorecard-methodology.md § การเขียน
+            // Overall Tier), and they render as "ยังไม่ได้จัดระดับ".
+            if (!sc) return { ...s, analysisLink }
+            return { ...s, analysisLink, tier: sc.tier, overallReason: sc.overallReason, axes: sc.axes }
+          }),
       }
     })
   }, [])
