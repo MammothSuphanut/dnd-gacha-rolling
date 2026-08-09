@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import Modal from './Modal'
 import { LINK_CLASS } from './AdventureMarkdownView'
 import { getHomebrewRule } from '../utils/homebrewRules'
@@ -143,6 +143,18 @@ function toggled(set, value) {
   return next
 }
 
+// "ขั้นต่ำ" (minimum) mode for an axis's tier filter: selecting a grade also
+// admits every grade ranked above it (TIER_ORDER runs best-to-worst, S
+// first), not just an exact match. With several grades selected at once the
+// loosest one wins — e.g. A + C both selected means "at least C" already
+// covers "at least A" — so only the worst selected grade's cutoff matters.
+function expandMinimum(selected) {
+  if (!selected.size) return selected
+  let worstIdx = -1
+  for (const grade of selected) worstIdx = Math.max(worstIdx, TIER_ORDER.indexOf(grade))
+  return new Set(TIER_ORDER.slice(0, worstIdx + 1))
+}
+
 function FilterChip({ active, onClick, children }) {
   return (
     <button
@@ -170,6 +182,88 @@ function FilterRow({ label, options, selected, onToggle, extra }) {
         </FilterChip>
       ))}
     </div>
+  )
+}
+
+// One S/A/B/C/D toggle button, shared by every cell of TierMatrix — same
+// visual language as TierBadge (tierBadgeClass) but sized for a dense grid
+// and always clickable (toggles a filter, never opens the detail modal).
+function TierCell({ tier, active, onClick }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      title={tier}
+      className={`inline-flex h-6 w-6 items-center justify-center rounded-full border text-[11px] font-bold transition-colors ${active ? tierBadgeClass(tier) : 'border-[#e2cfb3] bg-white text-stone-400 hover:bg-[#f5ede0]'
+        }`}
+    >
+      {tier}
+    </button>
+  )
+}
+
+const TIER_FILTER_MODES = [
+  { value: 'exact', label: 'ตรงตามเงื่อนไข' },
+  { value: 'min', label: 'ขั้นต่ำ' },
+]
+
+// Per-axis "exact match vs. minimum threshold" toggle — only meaningful for
+// the 7 axis rows, not the Overall row (Overall already has its own S/A/B/C/D
+// grouping in the tier-list view, so it stays exact-only).
+function TierFilterModeToggle({ mode, onChange }) {
+  return (
+    <div className="flex items-center overflow-hidden rounded-full border border-[#e2cfb3] bg-white text-[10px]">
+      {TIER_FILTER_MODES.map((opt) => (
+        <button
+          key={opt.value}
+          type="button"
+          onClick={() => onChange(opt.value)}
+          className={`whitespace-nowrap px-1.5 py-0.5 font-medium transition-colors ${mode === opt.value ? 'bg-violet-100 text-violet-800' : 'text-stone-500 hover:bg-[#f5ede0]'
+            }`}
+        >
+          {opt.label}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+// Condenses what used to be 8 separate FilterRow strips (Overall Tier + one
+// per axis, each repeating the S/A/B/C/D labels) into a single grid — the
+// column header prints S/A/B/C/D exactly once instead of 8 times, cutting
+// the filter panel's height roughly in half. Rows carrying `onModeChange`
+// (the 7 axis rows) also get the exact/minimum toggle in a middle column;
+// Overall has none, so that cell is left blank for it.
+function TierMatrix({ rows }) {
+  return (
+    <table className="w-full border-collapse text-xs">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          {TIER_ORDER.map((t) => (
+            <th key={t} className="pb-1 text-center font-semibold text-stone-500">
+              {t}
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr key={row.label}>
+            <td className="whitespace-nowrap py-0.5 pr-2 text-right font-medium text-stone-600">{row.label}</td>
+            <td className="whitespace-nowrap py-0.5 pr-2">
+              {row.onModeChange && <TierFilterModeToggle mode={row.mode} onChange={row.onModeChange} />}
+            </td>
+            {TIER_ORDER.map((t) => (
+              <td key={t} className="py-0.5 text-center">
+                <TierCell tier={t} active={row.selected.has(t)} onClick={() => row.onToggle(t)} />
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
   )
 }
 
@@ -364,7 +458,12 @@ export default function CodexClassBrowser() {
   // Tier row above and of each other (a row must match every axis filter
   // that has at least one grade selected).
   const [axisTiers, setAxisTiers] = useState(() => new Map(AXIS_ORDER.map((axis) => [axis, new Set()])))
+  // Per-axis "ตรงตามเงื่อนไข" (exact) vs "ขั้นต่ำ" (minimum) mode — see
+  // expandMinimum. Defaults to exact for every axis.
+  const [axisTierModes, setAxisTierModes] = useState(() => new Map(AXIS_ORDER.map((axis) => [axis, 'exact'])))
   const [selectedClasses, setSelectedClasses] = useState(new Set())
+  const [filterOpen, setFilterOpen] = useState(false)
+  const filterPanelRef = useRef(null)
 
   function toggleAxisTier(axis, value) {
     setAxisTiers((prev) => {
@@ -374,9 +473,33 @@ export default function CodexClassBrowser() {
     })
   }
 
+  function setAxisTierMode(axis, mode) {
+    setAxisTierModes((prev) => new Map(prev).set(axis, mode))
+  }
+
+  // Close the filter drawer on an outside click, same convention as any
+  // popover/dropdown — the toggle button itself is inside filterPanelRef too
+  // so re-clicking it to close doesn't fight this listener.
+  useEffect(() => {
+    if (!filterOpen) return
+    function handleClickOutside(e) {
+      if (filterPanelRef.current && !filterPanelRef.current.contains(e.target)) setFilterOpen(false)
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [filterOpen])
+
   const query = search.trim().toLowerCase()
   const hasAxisTierFilter = useMemo(() => [...axisTiers.values()].some((s) => s.size > 0), [axisTiers])
   const hasAnyFilter = query !== '' || books.size > 0 || tiers.size > 0 || selectedClasses.size > 0 || hasAxisTierFilter
+  // Badge count on the "ตัวกรอง" button — total selected chips across Tier
+  // (overall + every axis), Book, and Class, but not the always-visible
+  // search box.
+  const activeFilterCount = useMemo(() => {
+    let n = tiers.size + books.size + selectedClasses.size
+    for (const s of axisTiers.values()) n += s.size
+    return n
+  }, [tiers, axisTiers, books, selectedClasses])
 
   const filteredRows = useMemo(() => {
     return flatRows.filter((r) => {
@@ -384,8 +507,9 @@ export default function CodexClassBrowser() {
       if (tiers.size && !(r.tier && tiers.has(r.tier))) return false
       for (const [axis, selected] of axisTiers) {
         if (!selected.size) continue
+        const allowed = axisTierModes.get(axis) === 'min' ? expandMinimum(selected) : selected
         const a = r.axes?.find((x) => x.axis === axis)
-        if (!a || !selected.has(a.grade)) return false
+        if (!a || !allowed.has(a.grade)) return false
       }
       if (books.size) {
         const classBookOk = bookScope !== 'subclass' && r.classBooks.some((b) => books.has(b))
@@ -395,7 +519,7 @@ export default function CodexClassBrowser() {
       if (query !== '' && !r.name.toLowerCase().includes(query) && !r.className.toLowerCase().includes(query)) return false
       return true
     })
-  }, [flatRows, selectedClasses, tiers, axisTiers, books, bookScope, query])
+  }, [flatRows, selectedClasses, tiers, axisTiers, axisTierModes, books, bookScope, query])
 
   const tierGroups = useMemo(() => {
     const byTier = new Map(fullTierOrder.map((t) => [t, []]))
@@ -415,6 +539,7 @@ export default function CodexClassBrowser() {
     setBookScope('both')
     setTiers(new Set())
     setAxisTiers(new Map(AXIS_ORDER.map((axis) => [axis, new Set()])))
+    setAxisTierModes(new Map(AXIS_ORDER.map((axis) => [axis, 'exact'])))
     setSelectedClasses(new Set())
   }
 
@@ -422,15 +547,20 @@ export default function CodexClassBrowser() {
     return <p className="text-sm text-stone-400">ยังไม่มีข้อมูล class/subclass ใน Codex</p>
   }
 
+  const tierMatrixRows = [
+    { label: 'Overall', selected: tiers, onToggle: (v) => setTiers(toggled(tiers, v)) },
+    ...AXIS_ORDER.map((axis) => ({
+      label: axis,
+      selected: axisTiers.get(axis),
+      onToggle: (v) => toggleAxisTier(axis, v),
+      mode: axisTierModes.get(axis),
+      onModeChange: (m) => setAxisTierMode(axis, m),
+    })),
+  ]
+
   return (
     <div>
-      <div className="mb-4 flex flex-wrap items-center justify-end gap-3">
-        <span className="text-xs text-stone-500">
-          แสดง {totalShown} จาก {totalAll} subclass
-        </span>
-      </div>
-
-      <div className="mb-6 flex flex-col gap-2.5 rounded-lg border border-[#e2cfb3] bg-[#f5ede0]/60 p-4">
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-[#e2cfb3] bg-[#f5ede0]/60 p-4">
         <div className="flex flex-wrap items-center gap-3">
           <input
             type="text"
@@ -444,39 +574,58 @@ export default function CodexClassBrowser() {
               ล้างตัวกรอง
             </button>
           )}
+
+          {/* Filter drawer — everything but search/clear collapses behind this
+              button so the page opens on the data, not a wall of chip rows. */}
+          <div className="relative" ref={filterPanelRef}>
+            <button
+              type="button"
+              onClick={() => setFilterOpen((o) => !o)}
+              className={`flex items-center gap-1 rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${filterOpen || activeFilterCount > 0
+                ? 'border-violet-400 bg-violet-100 text-violet-800'
+                : 'border-[#e2cfb3] bg-white text-stone-600 hover:bg-[#f5ede0]'
+                }`}
+            >
+              ตัวกรอง{activeFilterCount > 0 ? ` (${activeFilterCount})` : ''}
+            </button>
+
+            {filterOpen && (
+              <div className="absolute left-0 z-20 mt-2 max-h-[75vh] w-[min(92vw,640px)] overflow-y-auto rounded-lg border border-[#e2cfb3] bg-[#fdfbf8] p-4 shadow-xl">
+                <div className="mb-4">
+                  <h3 className="mb-1.5 text-xs font-semibold text-stone-500">Tier</h3>
+                  <TierMatrix rows={tierMatrixRows} />
+                </div>
+                <div className="mb-3">
+                  <FilterRow
+                    label="Book"
+                    options={bookOptions}
+                    selected={books}
+                    onToggle={(v) => setBooks(toggled(books, v))}
+                    extra={<BookScopeToggle value={bookScope} onChange={setBookScope} />}
+                  />
+                </div>
+                <div className="flex flex-col gap-1.5">
+                  <FilterRow
+                    label="Core Class"
+                    options={rankedClassOptions.core}
+                    selected={selectedClasses}
+                    onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
+                  />
+                  <FilterRow
+                    label="Supplement Class"
+                    options={rankedClassOptions.supplement}
+                    selected={selectedClasses}
+                    onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
+                  />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
-        <FilterRow label="Overall Tier" options={tierOrder} selected={tiers} onToggle={(v) => setTiers(toggled(tiers, v))} />
-        {AXIS_ORDER.map((axis) => (
-          <FilterRow
-            key={axis}
-            label={axis}
-            options={tierOrder}
-            selected={axisTiers.get(axis)}
-            onToggle={(v) => toggleAxisTier(axis, v)}
-          />
-        ))}
-        <FilterRow
-          label="Book"
-          options={bookOptions}
-          selected={books}
-          onToggle={(v) => setBooks(toggled(books, v))}
-          extra={<BookScopeToggle value={bookScope} onChange={setBookScope} />}
-        />
-        <div className="flex flex-col gap-1.5">
-          <FilterRow
-            label="Core Class"
-            options={rankedClassOptions.core}
-            selected={selectedClasses}
-            onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
-          />
-          <FilterRow
-            label="Supplement Class"
-            options={rankedClassOptions.supplement}
-            selected={selectedClasses}
-            onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
-          />
-        </div>
+        <span className="text-xs text-stone-500">
+          แสดง {totalShown} จาก {totalAll} subclass
+        </span>
       </div>
 
       {totalShown === 0 && <p className="text-sm text-stone-400">ไม่พบ subclass ที่ตรงกับตัวกรอง</p>}
