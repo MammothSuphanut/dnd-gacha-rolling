@@ -20,6 +20,7 @@
 |---|---|
 | [class-creation-rules.md](class-creation-rules.md) | เปิดอ่านก่อนเริ่มออกแบบ **class ใหม่ทั้ง class** (ไม่ใช่แค่ subclass) — ครอบคลุม design pillar, chassis, level progression, power budget ต่อ tier |
 | [subclass-creation-rules.md](subclass-creation-rules.md) | เปิดอ่านก่อนเริ่มออกแบบ **subclass ใหม่ของ class ที่มีอยู่แล้ว** (หรือ class ใหม่ที่เพิ่งสร้าง) — ครอบคลุมระดับปลดล็อก feature, power budget เทียบ tier list, checklist ข้อผิดพลาดที่เจอบ่อย, balance validation |
+| [foundry-export-rules.md](foundry-export-rules.md) | เปิดอ่านตอนอยาก **แปลง subclass (หรือ class เต็ม class) ที่สร้างเสร็จแล้วให้เล่นได้จริงใน FoundryVTT** (V14, dnd5e 5.x) — ครอบคลุม mapping จากไฟล์ .md ไป FoundryVTT script macro, heuristic เลือก activation type ต่อ feature, schema ของ limited-use/roll formula, ข้อจำกัดของ attack/damage/save activity ที่ต้องต่อเติมเองใน UI, และ (§15) chassis + advancement เพิ่มเติมสำหรับ Class item เต็มรูปแบบ (Hit Die/save/proficiency/ASI) |
 
 ## ขอบเขตของ "class" ในแอปนี้ — ข้อจำกัดที่ต้องรู้ก่อนเริ่ม
 
@@ -59,8 +60,23 @@ Claude จะสัมภาษณ์ทีละหัวข้อ (จะส�
 
 คุยกับ Claude ตามปกติได้เลยโดยไม่ต้องเรียก `/build-class` — Claude จะใช้ [class-subclass-index.md](../codex/General/class-subclass-index.md), [2024-tier-list/](../codex/2024-tier-list/) และไฟล์กฎ 2 ไฟล์นี้ประกอบการตอบคำถาม/ระดมไอเดีย พอคุยจนได้คอนเซปต์ที่พอใจแล้วค่อยขอให้สร้างไฟล์จริงทีหลัง (Claude จะตามกติกาการตั้งชื่อโฟลเดอร์/ไฟล์ด้านบนให้อัตโนมัติ)
 
+## วิธีที่ 3: แปลง subclass ที่มีอยู่แล้วให้เล่นได้จริงใน FoundryVTT
+
+```
+/export-foundry
+```
+
+หรือระบุชื่อ/path ของ subclass ไปด้วยเลย:
+
+```
+/export-foundry Warrior of the Asura
+```
+
+Claude จะอ่านไฟล์ subclass .md ที่มีอยู่แล้วใน `codex/homebrew-subclass/` แล้ว generate ไฟล์ FoundryVTT script macro (`.macro.js`) ที่ก็อปไปวางรันใน Foundry ได้ทันที ตามกติกาใน [foundry-export-rules.md](foundry-export-rules.md) — ดูรายละเอียดเต็มที่ [.claude/commands/export-foundry.md](../.claude/commands/export-foundry.md)
+
 ## จุดเชื่อมกับส่วนอื่นของโปรเจกต์
 
 - ถ้าอยากให้ subclass ที่สร้างเสร็จ roll ได้จริงในแอป ให้ขอ Claude เพิ่ม entry เข้า `src/data/classes.json` ต่อท้ายการสัมภาษณ์ (ดูตัวอย่างจริงที่ entry `"The Ruined Flame"` กลุ่ม `"Sorcerer"`)
+- ถ้าอยากให้ subclass ที่สร้างเสร็จเล่นได้จริงบนโต๊ะ FoundryVTT (ไม่ใช่แค่ roll ได้ในแอป) ให้ใช้ `/export-foundry` ต่อท้ายเพื่อสร้าง macro นำเข้า
 - ถ้า class/subclass ใหม่ผูกกับ world-setting/adventure ในโปรเจกต์ ([world-settings/](../world-settings/), [adventures/](../adventures/)) แจ้ง Claude ได้ระหว่างสัมภาษณ์เพื่อช่วยปรับ flavor ให้เข้ากับ lore
 - ทุกครั้งที่สร้าง/แก้ไข subclass แล้วอยากได้รอบ balance review เต็ม ให้ขอแยกต่างหากได้ — Claude จะเทียบดาเมจ/utility กับ spell หรือ feature official ระดับเดียวกันตามวิธีที่ใช้จริงกับ The Ruined Flame ([ดูสรุปวิธี](subclass-creation-rules.md#5-balance-validation-ตัวอย่างจริง))
