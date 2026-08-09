@@ -35,31 +35,31 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
 | Aberrant Sorcery | B | XPHB | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Apocalypse Sorcery | S | GrimHollowPG24 | 9 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 7 (A) | 8 (A) |
-| Clockwork Sorcery | S | XPHB | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Divine Soul | S | XGE 🕰️ | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 9 (S) |
-| Draconic Sorcery | A | XPHB | 8 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Emotion Lord | S | VSS 🕰️ | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 5 (B) | 9 (S) |
-| Haunted Sorcery | S | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 6 (B) | 8 (A) | 7 (A) | 8 (A) |
-| Lunar Sorcery | A | DSotDQ | 7 (A) | 7 (A) | 4 (C) | 6 (B) | 7 (A) | 6 (B) | 8 (A) |
-| Mirrorkin | A | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
+| Apocalypse Sorcery | A | GrimHollowPG24 | 9 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 7 (A) | 8 (A) |
+| Clockwork Sorcery | A | XPHB | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Divine Soul | A | XGE 🕰️ | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 9 (S) |
+| Draconic Sorcery | B | XPHB | 8 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Emotion Lord | A | VSS 🕰️ | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 5 (B) | 9 (S) |
+| Haunted Sorcery | B | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 6 (B) | 8 (A) | 7 (A) | 8 (A) |
+| Lunar Sorcery | B | DSotDQ | 7 (A) | 7 (A) | 4 (C) | 6 (B) | 7 (A) | 6 (B) | 8 (A) |
+| Mirrorkin | B | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
 | Oozemaster | B | VSS 🕰️ | 7 (A) | 6 (B) | 3 (C) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
 | Pyromancer | C | PSK 🕰️ | 8 (A) | 6 (B) | 3 (C) | 5 (B) | 7 (A) | 3 (C) | 7 (A) |
-| Reincarnated Hero | S | VSS 🕰️ | 8 (A) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 5 (B) | 8 (A) |
-| Shadow Sorcery | A | RHW | 7 (A) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Spellfire Sorcery | A | FRHoF | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
-| Spiritborn | S | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
-| Storm Sorcery | A | XGE 🕰️ | 8 (A) | 7 (A) | 4 (C) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
+| Reincarnated Hero | B | VSS 🕰️ | 8 (A) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 5 (B) | 8 (A) |
+| Shadow Sorcery | B | RHW | 7 (A) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Spellfire Sorcery | B | FRHoF | 7 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
+| Spiritborn | A | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
+| Storm Sorcery | B | XGE 🕰️ | 8 (A) | 7 (A) | 4 (C) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
 | The Ruined Flame | B | Homebrew | 9 (S) | 6 (B) | 3 (C) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
-| Toon Magic | A | VSS 🕰️ | 7 (A) | 6 (B) | 3 (C) | 8 (A) | 8 (A) | 7 (A) | 7 (A) |
+| Toon Magic | B | VSS 🕰️ | 7 (A) | 6 (B) | 3 (C) | 8 (A) | 8 (A) | 7 (A) | 7 (A) |
 | Wild Magic Sorcery | B | XPHB | 7 (A) | 7 (A) | 4 (C) | 3 (C) | 7 (A) | 5 (B) | 8 (A) |
-| Wretched Bloodline Sorcery | A | GrimHollowPG24 | 7 (A) | 8 (A) | 3 (C) | 7 (A) | 7 (A) | 5 (B) | 8 (A) |
+| Wretched Bloodline Sorcery | B | GrimHollowPG24 | 7 (A) | 8 (A) | 3 (C) | 7 (A) | 7 (A) | 5 (B) | 8 (A) |
 
 ---
 
 ### Aberrant Sorcery (XPHB)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Control/Survivability/Utility) ไม่มี peak ถึง S เลย
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Control/Survivability/Utility) ไม่มี peak ถึง S เลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -74,7 +74,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Apocalypse Sorcery (GrimHollowPG24)
 
-**Overall**: S — Damage เป็น S ใหม่ บวก Utility กระโดด +4 และขยับขึ้นอีก 3 axis กว้างมาก
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Utility กระโดด +4 และขยับขึ้นอีก 3 axis กว้างมาก
 
 
 | Axis | คะแนน | เหตุผล |
@@ -89,7 +89,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Clockwork Sorcery (XPHB)
 
-**Overall**: S — Support กระโดด +5 (C→A) และ Survivability กระโดด +4 (C→A) พร้อมกัน — แก้จุดอ่อนสองแกนของ baseline ได้ในตัวเดียว บวก Control/Utility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +5 (C→A) และ Survivability กระโดด +4 (C→A) พร้อมกัน — แก้จุดอ่อนสองแกนของ baseline ได้ในตัวเดียว บวก Control/Utility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -104,7 +104,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Divine Soul (XGE 🕰️)
 
-**Overall**: S — Versatility เป็น S ใหม่ บวก Support กระโดด +4 (C→A) และ Survivability/Control ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S ใหม่ บวก Support กระโดด +4 (C→A) และ Survivability/Control ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -119,7 +119,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Draconic Sorcery (XPHB)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน (Damage/Control/Survivability/Utility)
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน (Damage/Control/Survivability/Utility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -134,7 +134,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Emotion Lord (VSS 🕰️)
 
-**Overall**: S — Versatility เป็น S ใหม่ บวก Control/Survivability/Utility ขยับตามอีก 3 axis
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S ใหม่ บวก Control/Survivability/Utility ขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -149,7 +149,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Haunted Sorcery (GrimHollowPG24)
 
-**Overall**: S — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 6 ใน 7 axis พร้อมกัน กว้างที่สุดในกลุ่มทั้งหมด
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 6 ใน 7 axis พร้อมกัน กว้างที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -164,7 +164,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Lunar Sorcery (DSotDQ)
 
-**Overall**: A — ขยับขึ้น 4 axis กลางๆ (Control/Support/Survivability/Utility) ไม่มี peak ถึง S
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis กลางๆ (Control/Support/Survivability/Utility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -179,7 +179,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Mirrorkin (VSS 🕰️)
 
-**Overall**: A — Utility กระโดด +5 (C→A) บวก Control/Survivability ขยับตาม ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility กระโดด +5 (C→A) บวก Control/Survivability ขยับตาม ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -194,7 +194,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Oozemaster (VSS 🕰️)
 
-**Overall**: B — ขยับแค่ 2 axis (Survivability/Utility) เล็กน้อย ไม่มี peak ใหม่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis (Survivability/Utility) เล็กน้อย ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -209,7 +209,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Pyromancer (PSK 🕰️)
 
-**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Damage/Survivability) Utility (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Damage/Survivability) Utility (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -224,7 +224,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Reincarnated Hero (VSS 🕰️)
 
-**Overall**: S — Survivability กระโดด +6 (3→9, C→S) — swing ใหญ่ที่สุดในกลุ่ม บวก Damage/Action Economy/Utility ขยับตาม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +6 (3→9, C→S) — swing ใหญ่ที่สุดในกลุ่ม บวก Damage/Action Economy/Utility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -239,7 +239,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Shadow Sorcery (RHW)
 
-**Overall**: A — Survivability กระโดด +5 (C→A) บวก Control/Utility ขยับตาม ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +5 (C→A) บวก Control/Utility ขยับตาม ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -254,7 +254,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Spellfire Sorcery (FRHoF)
 
-**Overall**: A — Support กระโดด +4 (C→A) บวก Control/Survivability/Utility ขยับตาม ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +4 (C→A) บวก Control/Survivability/Utility ขยับตาม ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -269,7 +269,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Spiritborn (VSS 🕰️)
 
-**Overall**: S — Damage เป็น S ใหม่ บวก Survivability/Utility กระโดด +4 ทั้งคู่ และ Control/AE ขยับตาม กว้างที่สุดในกลุ่ม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Survivability/Utility กระโดด +4 ทั้งคู่ และ Control/AE ขยับตาม กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -284,7 +284,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Storm Sorcery (XGE 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -299,7 +299,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### The Ruined Flame (Homebrew)
 
-**Overall**: B — Damage เป็น S ใหม่ แต่ breadth แคบมาก (แค่ Survivability ขยับตามอีกนิด) Support/Utility ยังนิ่งที่ baseline C ทั้งคู่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ แต่ breadth แคบมาก (แค่ Survivability ขยับตามอีกนิด) Support/Utility ยังนิ่งที่ baseline C ทั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -314,7 +314,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Toon Magic (VSS 🕰️)
 
-**Overall**: A — Survivability กระโดด +5 (C→A) บวก Utility กระโดด +4 และ AE ขยับตาม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +5 (C→A) บวก Utility กระโดด +4 และ AE ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -329,7 +329,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Wild Magic Sorcery (XPHB)
 
-**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Control/Support/Utility) Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 3 axis เล็กน้อย (Control/Support/Utility) Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -344,7 +344,7 @@ Floor 0-10 ต่อ axis ของ **Sorcerer เปล่าๆ ไม่น�
 
 ### Wretched Bloodline Sorcery (GrimHollowPG24)
 
-**Overall**: A — Survivability กระโดด +4 (C→A) บวก Control/Utility ขยับตาม ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +4 (C→A) บวก Control/Utility ขยับตาม ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |

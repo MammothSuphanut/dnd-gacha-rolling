@@ -39,40 +39,40 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
 | Daggermark | B | ValdaSpire24 | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 8 (A) | 5 (B) | 6 (B) |
-| Demon Brand | B | ValdaSpire24Extras | 5 (B) | 3 (C) | 4 (C) ⚠️ | 8 (A) | 5 (B) ⚠️ | 8 (A) | 7 (A) |
+| Demon Brand | C | ValdaSpire24Extras | 5 (B) | 3 (C) | 4 (C) ⚠️ | 8 (A) | 5 (B) ⚠️ | 8 (A) | 7 (A) |
 | Dragon Banner | B | ValdaSpire24 | 9 (S) | 6 (B) | 9 (S) | 4 (C) | 9 (S) | 3 (C) | 6 (B) |
 | Eagle Banner | B | ValdaSpire24 | 7 (A) | 5 (B) | 10 (S) | 4 (C) | 7 (A) | 4 (C) | 7 (A) |
 | Holy Icon | C | ValdaSpire24 | 6 (B) | 3 (C) | 10 (S) | 4 (C) | 8 (A) | 5 (B) | 6 (B) |
 | Jolly Roger | B | ValdaSpire24 | 7 (A) | 6 (B) | 10 (S) | 4 (C) | 8 (A) | 4 (C) | 7 (A) |
-| Lion Banner | A | ValdaSpire24 | 6 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 3 (C) | 7 (A) |
-| Siegeball Jersey | A | ValdaSpire24Extras | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
+| Lion Banner | B | ValdaSpire24 | 6 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 3 (C) | 7 (A) |
+| Siegeball Jersey | B | ValdaSpire24Extras | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
 | Skull Banner | A | ValdaSpire24Extras | 9 (S) | 6 (B) | 10 (S) | 6 (B) | 9 (S) | 3 (C) | 7 (A) |
 | Star-Spangled Banner | A | ValdaSpire24Extras | 9 (S) | 6 (B) | 10 (S) | 7 (A) | 9 (S) | 3 (C) | 8 (A) |
-| Tower Banner | A | ValdaSpire24 | 6 (B) | 5 (B) | 10 (S) | 9 (S) | 8 (A) | 3 (C) | 6 (B) |
-| Yellow Sign | S | ValdaSpire24Extras | 7 (A) | 9 (S) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Tower Banner | B | ValdaSpire24 | 6 (B) | 5 (B) | 10 (S) | 9 (S) | 8 (A) | 3 (C) | 6 (B) |
+| Yellow Sign | A | ValdaSpire24Extras | 7 (A) | 9 (S) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
 | Adrenaline Junkie | B | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) |
-| Brigand | A | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 6 (B) |
+| Brigand | B | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 6 (B) |
 | Feylost | A | ValdaSpire24Extras (Vagabond) | 6 (B) | 8 (A) | 9 (S) | 7 (A) | 7 (A) | 3 (C) | 7 (A) |
 | Gourmand | B | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 10 (S) | 6 (B) | 7 (A) | 4 (C) | 7 (A) |
 | Houndmaster | B | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 7 (A) |
-| Knight Errant | A | ValdaSpire24Extras (Vagabond) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
+| Knight Errant | B | ValdaSpire24Extras (Vagabond) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 8 (A) | 4 (C) | 7 (A) |
 | Plague Doctor | B | ValdaSpire24Extras (Vagabond) | 7 (A) | 6 (B) | 10 (S) | 4 (C) | 7 (A) | 5 (B) | 7 (A) |
-| Pugilist | A | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 7 (A) | 3 (C) | 6 (B) |
+| Pugilist | B | ValdaSpire24Extras (Vagabond) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 7 (A) | 3 (C) | 6 (B) |
 | Rōnin | B | ValdaSpire24Extras (Vagabond) | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 4 (C) | 6 (B) |
-| Troubadour | C | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 10 (S) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
+| Troubadour | B | ValdaSpire24Extras (Vagabond) | 6 (B) | 3 (C) | 10 (S) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
 | Demon Banner | C | ValdaSpireExtras 🕰️ | 6 (B) | 3 (C) | 5 (B) ⚠️ | 7 (A) | 5 (B) ⚠️ | 5 (B) | 7 (A) |
 | Jolly Roger Banner | B | VSS 🕰️ | 7 (A) | 4 (C) | 10 (S) | 5 (B) | 9 (S) | 4 (C) | 7 (A) |
-| Ram Banner | B | VSS 🕰️ | 6 (B) | 6 (B) | 10 (S) | 4 (C) | 7 (A) | 4 (C) | 6 (B) |
+| Ram Banner | C | VSS 🕰️ | 6 (B) | 6 (B) | 10 (S) | 4 (C) | 7 (A) | 4 (C) | 6 (B) |
 | Raven Banner | B | VSS 🕰️ | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 6 (B) |
-| Siegeball Banner | A | ValdaSpireExtras 🕰️ | 5 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 4 (C) | 6 (B) |
-| Treant Banner | A | ValdaSpireExtras 🕰️ | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 7 (A) | 3 (C) | 7 (A) |
+| Siegeball Banner | B | ValdaSpireExtras 🕰️ | 5 (B) | 6 (B) | 10 (S) | 6 (B) | 8 (A) | 4 (C) | 6 (B) |
+| Treant Banner | B | ValdaSpireExtras 🕰️ | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 7 (A) | 3 (C) | 7 (A) |
 | Turtle Banner | B | VSS 🕰️ | 5 (B) | 3 (C) | 10 (S) | 9 (S) | 7 (A) | 3 (C) | 6 (B) |
 
 ---
 
 ### Daggermark (ValdaSpire24)
 
-**Overall**: B — Support baseline เป็น S (9/10) อยู่แล้ว ตัวชี้วัดจริงคือ 3 axis ที่ baseline อ่อน (Control/Survivability/Utility) — Survivability กระโดด +3 และ Utility ขยับตาม แต่ Control นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support baseline เป็น S (9/10) อยู่แล้ว ตัวชี้วัดจริงคือ 3 axis ที่ baseline อ่อน (Control/Survivability/Utility) — Survivability กระโดด +3 และ Utility ขยับตาม แต่ Control นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -87,7 +87,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Demon Brand (ValdaSpire24Extras)
 
-**Overall**: B — Survivability/Utility กระโดดขึ้นแรง (+4/+5) แต่ Support ถูกตัดลงจาก baseline (9→4) และ Action Economy ก็ถูกตัดด้วย (7→5) — ได้มากแต่เสียจริงเช่นกัน
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability/Utility กระโดดขึ้นแรง (+4/+5) แต่ Support ถูกตัดลงจาก baseline (9→4) และ Action Economy ก็ถูกตัดด้วย (7→5) — ได้มากแต่เสียจริงเช่นกัน
 
 
 > **ข้อยกเว้น baseline**: ข้อความ subclass ระบุชัดว่า "forgo the companionship of a Cohort" และ demon "doesn't take its own turn" (ต่างจาก Cohort ปกติที่ลงมือเองทุกรอบ) — เป็นเหตุผล explicit ที่ทำให้ Support/Action Economy ต่ำกว่า baseline ได้
@@ -104,7 +104,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Dragon Banner (ValdaSpire24)
 
-**Overall**: B — มีแค่ Control ที่ขยับใน 3 axis อ่อนของ baseline Survivability/Utility นิ่งสนิททั้งคู่ แม้ Damage/AE จะเป็น S ก็ตาม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Control ที่ขยับใน 3 axis อ่อนของ baseline Survivability/Utility นิ่งสนิททั้งคู่ แม้ Damage/AE จะเป็น S ก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -119,7 +119,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Eagle Banner (ValdaSpire24)
 
-**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -134,7 +134,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Holy Icon (ValdaSpire24)
 
-**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อยใน 3 axis อ่อนของ baseline Control/Survivability นิ่งสนิททั้งคู่
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility ที่ขยับเล็กน้อยใน 3 axis อ่อนของ baseline Control/Survivability นิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -149,7 +149,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Jolly Roger (ValdaSpire24)
 
-**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -164,7 +164,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Lion Banner (ValdaSpire24)
 
-**Overall**: A — Control และ Survivability ขยับขึ้นทั้งคู่ (ถึง B grade) มีแค่ Utility ที่ยังนิ่ง
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control และ Survivability ขยับขึ้นทั้งคู่ (ถึง B grade) มีแค่ Utility ที่ยังนิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -179,7 +179,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Siegeball Jersey (ValdaSpire24Extras)
 
-**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Survivability ถึง A (กระโดด +3)
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Survivability ถึง A (กระโดด +3)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -194,7 +194,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Skull Banner (ValdaSpire24Extras)
 
-**Overall**: A — Control และ Survivability ขยับขึ้นทั้งคู่ (ถึง B grade) บวก Damage/Action Economy เป็น S ใหม่
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control และ Survivability ขยับขึ้นทั้งคู่ (ถึง B grade) บวก Damage/Action Economy เป็น S ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -209,7 +209,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Star-Spangled Banner (ValdaSpire24Extras)
 
-**Overall**: A — Control และ Survivability ขยับขึ้นทั้งคู่ (Survivability ถึง A) บวก Damage/Action Economy เป็น S ใหม่
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control และ Survivability ขยับขึ้นทั้งคู่ (Survivability ถึง A) บวก Damage/Action Economy เป็น S ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -224,7 +224,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Tower Banner (ValdaSpire24)
 
-**Overall**: A — Survivability กระโดดจาก 4 (C) เป็น 9 (S เต็มสเกล) — swing ใหญ่ที่สุดในกลุ่มสำหรับ axis นี้
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดดจาก 4 (C) เป็น 9 (S เต็มสเกล) — swing ใหญ่ที่สุดในกลุ่มสำหรับ axis นี้
 
 
 | Axis | คะแนน | เหตุผล |
@@ -239,7 +239,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Yellow Sign (ValdaSpire24Extras)
 
-**Overall**: S — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว โดย Control กระโดด +6 ถึง S (3→9) — สมบูรณ์ที่สุดในกลุ่มทั้งหมด
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว โดย Control กระโดด +6 ถึง S (3→9) — สมบูรณ์ที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -254,7 +254,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Adrenaline Junkie (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: B — Survivability กระโดด +4 (C→A) บวก Utility ขยับตาม แต่ Control นิ่งสนิท
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +4 (C→A) บวก Utility ขยับตาม แต่ Control นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -269,7 +269,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Brigand (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันแบบกลางๆ
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันแบบกลางๆ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -284,7 +284,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Feylost (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: A — Control กระโดด +5 (C→A) และ Survivability กระโดด +3 (C→A) พร้อมกัน มีแค่ Utility ที่ยังนิ่ง
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +5 (C→A) และ Survivability กระโดด +3 (C→A) พร้อมกัน มีแค่ Utility ที่ยังนิ่ง
 
 
 > **หมายเหตุข้อมูล**: ตาราง Fey Moods ไม่มีเนื้อหาละเอียดในไฟล์ที่ตรวจสอบได้ — ให้คะแนน Damage แบบระมัดระวังไว้ก่อนตามธีม "สุ่มบัฟ/เอฟเฟกต์" ที่ชื่อบ่งชี้
@@ -301,7 +301,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Gourmand (ValdaSpire24Extras, ยืมจาก Vagabond — Quick Snack ดัดแปลงให้ใช้ Hit Dice แทน Breather)
 
-**Overall**: B — Survivability/Utility ขยับกลางๆ แต่ Control นิ่งสนิท
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability/Utility ขยับกลางๆ แต่ Control นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -316,7 +316,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Houndmaster (ValdaSpire24Extras, ยืมจาก Vagabond — Hound กลายเป็น Cohort)
 
-**Overall**: B — Survivability/Utility ขยับกลางๆ เหมือน Gourmand Control นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability/Utility ขยับกลางๆ เหมือน Gourmand Control นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -331,7 +331,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Knight Errant (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Survivability ถึง A (กระโดด +3)
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Survivability ถึง A (กระโดด +3)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -346,7 +346,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Plague Doctor (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -361,7 +361,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Pugilist (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: A — Control กระโดด +3 และ Survivability กระโดด +4 ถึง A พร้อมกัน มีแค่ Utility ที่ยังนิ่ง
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +3 และ Survivability กระโดด +4 ถึง A พร้อมกัน มีแค่ Utility ที่ยังนิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -376,7 +376,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Rōnin (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: B — Survivability กระโดด +4 (C→A) แต่ Control ยังนิ่งสนิท มีแค่ Utility ที่ขยับตามอีกนิด
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +4 (C→A) แต่ Control ยังนิ่งสนิท มีแค่ Utility ที่ขยับตามอีกนิด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -391,7 +391,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Troubadour (ValdaSpire24Extras, ยืมจาก Vagabond)
 
-**Overall**: C — มีแค่ Utility ที่ขยับใน 3 axis อ่อนของ baseline Control/Survivability นิ่งสนิททั้งคู่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility ที่ขยับใน 3 axis อ่อนของ baseline Control/Survivability นิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -406,7 +406,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Demon Banner (ValdaSpireExtras 🕰️)
 
-**Overall**: C — Survivability/Utility กระโดดขึ้น แต่ Support ถูกตัดลงจาก baseline (9→5) และ Action Economy ก็ถูกตัดด้วย (7→5) — การเสียมากกว่าตัว Demon Brand ในสัดส่วนเดียวกัน
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability/Utility กระโดดขึ้น แต่ Support ถูกตัดลงจาก baseline (9→5) และ Action Economy ก็ถูกตัดด้วย (7→5) — การเสียมากกว่าตัว Demon Brand ในสัดส่วนเดียวกัน
 
 
 > **ข้อยกเว้น baseline**: เช่นเดียวกับ Demon Brand — ข้อความระบุชัดว่า "forgo the companionship of a cohort" ทำให้ Support/Action Economy ต่ำกว่า baseline ได้ (แม้ demon เวอร์ชันนี้จะแยกสแตทบล็อกและ "ลงมือก่อนหรือหลัง turn ของคุณ" แต่ต้องแปลงร่างเข้าไปใช้ turn เดียวกัน ไม่ใช่สองร่างคู่ขนาน)
@@ -423,7 +423,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Jolly Roger Banner (VSS 🕰️)
 
-**Overall**: B — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นแต่แค่ +1 เท่านั้นทุกตัว บวก Action Economy เป็น S ใหม่
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นแต่แค่ +1 เท่านั้นทุกตัว บวก Action Economy เป็น S ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -438,7 +438,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Ram Banner (VSS 🕰️)
 
-**Overall**: B — Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Utility ขยับกลางๆ แต่ Survivability นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -453,7 +453,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Raven Banner (VSS 🕰️)
 
-**Overall**: B — Survivability/Utility ขยับกลางๆ แต่ Control นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability/Utility ขยับกลางๆ แต่ Control นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -468,7 +468,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Siegeball Banner (ValdaSpireExtras 🕰️)
 
-**Overall**: A — ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันแบบกลางๆ เหมือน Brigand
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 3 axis อ่อนของ baseline ขยับขึ้นพร้อมกันแบบกลางๆ เหมือน Brigand
 
 
 | Axis | คะแนน | เหตุผล |
@@ -483,7 +483,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Treant Banner (ValdaSpireExtras 🕰️)
 
-**Overall**: A — Control กระโดด +4 ถึง A บวก Survivability ขยับตาม มีแค่ Utility ที่ยังนิ่ง
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +4 ถึง A บวก Survivability ขยับตาม มีแค่ Utility ที่ยังนิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -498,7 +498,7 @@ Floor 0-10 ต่อ axis ของ **Captain เปล่าๆ ไม่นั
 
 ### Turtle Banner (VSS 🕰️)
 
-**Overall**: B — Survivability กระโดดจาก 4 เป็น 9 (C→S เต็มสเกล) แต่ breadth แคบมาก Control/Utility นิ่งสนิททั้งคู่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดดจาก 4 เป็น 9 (C→S เต็มสเกล) แต่ breadth แคบมาก Control/Utility นิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |

@@ -46,26 +46,26 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 | Illusionist | B | XPHB | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
 | Bladesinger | A | FRHoF | 9 (S) | 7 (A) | 3 (C) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
 | School of Conjuration | C | PHB 🕰️ | 6 (B) | 7 (A) | 4 (C) | 4 (C) | 6 (B) | 8 (A) | 8 (A) |
-| School of Enchantment | C | PHB 🕰️ | 6 (B) | 8 (A) | 3 (C) | 5 (B) | 6 (B) | 8 (A) | 8 (A) |
+| School of Enchantment | B | PHB 🕰️ | 6 (B) | 8 (A) | 3 (C) | 5 (B) | 6 (B) | 8 (A) | 8 (A) |
 | School of Necromancy | B | PHB 🕰️ | 7 (A) | 7 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
-| School of Transmutation | S | PHB 🕰️ | 6 (B) | 7 (A) | 5 (B) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
-| War Magic | A | XGE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 6 (B) | 8 (A) | 8 (A) |
-| Chronurgy Magic | A | EGW 🕰️ | 6 (B) | 8 (A) | 5 (B) | 4 (C) | 6 (B) | 9 (S) | 8 (A) |
+| School of Transmutation | A | PHB 🕰️ | 6 (B) | 7 (A) | 5 (B) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
+| War Magic | B | XGE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 6 (B) | 8 (A) | 8 (A) |
+| Chronurgy Magic | B | EGW 🕰️ | 6 (B) | 8 (A) | 5 (B) | 4 (C) | 6 (B) | 9 (S) | 8 (A) |
 | Graviturgy Magic | A | EGW 🕰️ | 8 (A) | 8 (A) | 5 (B) | 3 (C) | 7 (A) | 8 (A) | 9 (S) |
-| Order of Scribes | S | TCE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 7 (A) | 9 (S) | 9 (S) |
-| Chronomancer | S | ValdaSpire24Extras | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 9 (S) |
-| Familiar Master | C | ValdaSpire24Extras | 7 (A) | 7 (A) | 4 (C) | 4 (C) | 6 (B) | 8 (A) | 8 (A) |
+| Order of Scribes | A | TCE 🕰️ | 7 (A) | 7 (A) | 3 (C) | 7 (A) | 7 (A) | 9 (S) | 9 (S) |
+| Chronomancer | A | ValdaSpire24Extras | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 9 (S) |
+| Familiar Master | B | ValdaSpire24Extras | 7 (A) | 7 (A) | 4 (C) | 4 (C) | 6 (B) | 8 (A) | 8 (A) |
 | Fumaturge | A | ValdaSpire24Extras | 6 (B) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
-| Gastronomer | S | ValdaSpire24Extras | 6 (B) | 7 (A) | 9 (S) | 3 (C) | 6 (B) | 9 (S) | 9 (S) |
+| Gastronomer | A | ValdaSpire24Extras | 6 (B) | 7 (A) | 9 (S) | 3 (C) | 6 (B) | 9 (S) | 9 (S) |
 | Magic Missile Mage | A | ValdaSpire24Extras | 9 (S) | 8 (A) | 3 (C) | 6 (B) | 7 (A) | 8 (A) | 8 (A) |
-| Mystic Strategist | S | ValdaSpire24Extras | 8 (A) | 8 (A) | 5 (B) | 5 (B) | 7 (A) | 8 (A) | 9 (S) |
+| Mystic Strategist | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 5 (B) | 5 (B) | 7 (A) | 8 (A) | 9 (S) |
 | Protomancer | A | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 5 (B) | 7 (A) | 8 (A) | 9 (S) |
-| Scroll Scribe | S | ValdaSpire24Extras | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
-| Somnomancer | S | ValdaSpire24Extras | 7 (A) | 9 (S) | 3 (C) | 5 (B) | 6 (B) | 9 (S) | 8 (A) |
+| Scroll Scribe | A | ValdaSpire24Extras | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) | 9 (S) | 9 (S) |
+| Somnomancer | A | ValdaSpire24Extras | 7 (A) | 9 (S) | 3 (C) | 5 (B) | 6 (B) | 9 (S) | 8 (A) |
 | Tyromancer | B | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 5 (B) | 6 (B) | 8 (A) | 8 (A) |
-| Universalist | S | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 9 (S) | 9 (S) |
-| Wand Wizard | S | ValdaSpire24Extras | 8 (A) | 8 (A) | 3 (C) | 6 (B) | 8 (A) | 9 (S) | 9 (S) |
-| Daemonologist | S | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 4 (C) | 7 (A) | 9 (S) | 9 (S) |
+| Universalist | A | ValdaSpire24Extras | 7 (A) | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 9 (S) | 9 (S) |
+| Wand Wizard | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 3 (C) | 6 (B) | 8 (A) | 9 (S) | 9 (S) |
+| Daemonologist | A | GrimHollowPG24 | 8 (A) | 7 (A) | 4 (C) | 4 (C) | 7 (A) | 9 (S) | 9 (S) |
 | Plague Doctor (Wizard) | S | GrimHollowPG24 | 8 (A) | 8 (A) | 8 (A) | 5 (B) | 7 (A) | 9 (S) | 9 (S) |
 | Sangromancer | A | GrimHollowPG24 | 8 (A) | 7 (A) | 3 (C) | 7 (A) | 7 (A) | 8 (A) | 8 (A) |
 
@@ -73,7 +73,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Abjurer (XPHB)
 
-**Overall**: A — Survivability กระโดด +5 (C→A) บวก Support/Action Economy ขยับตาม ไม่มี peak ถึง S ใหม่
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +5 (C→A) บวก Support/Action Economy ขยับตาม ไม่มี peak ถึง S ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -88,7 +88,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Diviner (XPHB)
 
-**Overall**: B — Utility เป็น S ใหม่ แต่ breadth แคบ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ แต่ breadth แคบ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -103,7 +103,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Evoker (XPHB)
 
-**Overall**: B — Damage เป็น S ใหม่ แต่ breadth แคบมาก มีแค่ Support ขยับตามอีกนิด Survivability ไม่ถูกแตะ
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ แต่ breadth แคบมาก มีแค่ Support ขยับตามอีกนิด Survivability ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -118,7 +118,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Illusionist (XPHB)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Damage/Survivability/AE) Support ไม่ถูกแตะ
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Damage/Survivability/AE) Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -133,7 +133,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Bladesinger (FRHoF)
 
-**Overall**: A — Damage เป็น S ใหม่ บวก Survivability กระโดด +5 (C→A) และ Action Economy ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Survivability กระโดด +5 (C→A) และ Action Economy ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -148,7 +148,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### School of Conjuration (PHB 🕰️)
 
-**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -163,7 +163,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### School of Enchantment (PHB 🕰️)
 
-**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Control/Survivability) ไม่มี peak ใหม่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Control/Survivability) ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -178,7 +178,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### School of Necromancy (PHB 🕰️)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Damage/Survivability/AE) Support ไม่ถูกแตะ
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Damage/Survivability/AE) Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -193,7 +193,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### School of Transmutation (PHB 🕰️)
 
-**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Support/Survivability ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Support/Survivability ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -208,7 +208,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### War Magic (XGE 🕰️)
 
-**Overall**: A — Survivability กระโดด +4 (C→A) บวก Damage ขยับตาม Support ไม่ถูกแตะ
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +4 (C→A) บวก Damage ขยับตาม Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -223,7 +223,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Chronurgy Magic (EGW 🕰️)
 
-**Overall**: A — Utility เป็น S ใหม่ บวก Control/Support/Survivability ขยับตามอีก 3 axis
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ บวก Control/Support/Survivability ขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -238,7 +238,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Graviturgy Magic (EGW 🕰️)
 
-**Overall**: A — Versatility เป็น S ใหม่ บวก Damage/Control/Support ขยับตาม แต่ Survivability ไม่ถูกแตะ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S ใหม่ บวก Damage/Control/Support ขยับตาม แต่ Survivability ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -253,7 +253,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Order of Scribes (TCE 🕰️)
 
-**Overall**: S — Survivability กระโดด +4 (C→A) บวก Utility และ Versatility เป็น S ใหม่ทั้งคู่ กว้างมาก
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +4 (C→A) บวก Utility และ Versatility เป็น S ใหม่ทั้งคู่ กว้างมาก
 
 
 | Axis | คะแนน | เหตุผล |
@@ -268,7 +268,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Chronomancer (ValdaSpire24Extras)
 
-**Overall**: S — Versatility เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis พร้อมกัน (Control/Support/Survivability/AE) กว้างที่สุดในกลุ่มที่ไม่ใช่ Domain-max
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis พร้อมกัน (Control/Support/Survivability/AE) กว้างที่สุดในกลุ่มที่ไม่ใช่ Domain-max
 
 
 | Axis | คะแนน | เหตุผล |
@@ -283,7 +283,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Familiar Master (ValdaSpire24Extras)
 
-**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่ (ชื่อรุ่น 2014 ของ Fumaturge)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่ (ชื่อรุ่น 2014 ของ Fumaturge)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -298,7 +298,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Fumaturge (ValdaSpire24Extras)
 
-**Overall**: A — Survivability กระโดด +5 (C→A) บวก Utility เป็น S ใหม่ และ Control/AE ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +5 (C→A) บวก Utility เป็น S ใหม่ และ Control/AE ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -313,7 +313,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Gastronomer (ValdaSpire24Extras)
 
-**Overall**: S — Support กระโดดจาก 3 เป็น 9 (C→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Utility/Versatility เป็น S ใหม่ด้วย
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 3 เป็น 9 (C→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Utility/Versatility เป็น S ใหม่ด้วย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -328,7 +328,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Magic Missile Mage (ValdaSpire24Extras)
 
-**Overall**: A — Damage เป็น S ใหม่ บวก Control/Survivability ขยับตาม Support ไม่ถูกแตะ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Control/Survivability ขยับตาม Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -343,7 +343,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Mystic Strategist (ValdaSpire24Extras)
 
-**Overall**: S — Versatility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Control/Support/Survivability) กว้างที่สุดในกลุ่ม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Control/Support/Survivability) กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -358,7 +358,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Protomancer (ValdaSpire24Extras)
 
-**Overall**: A — Versatility เป็น S ใหม่ บวก Damage/Control/Survivability ขยับตาม Support ไม่ถูกแตะ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S ใหม่ บวก Damage/Control/Survivability ขยับตาม Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -373,7 +373,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Scroll Scribe (ValdaSpire24Extras)
 
-**Overall**: S — Support กระโดด +5 (C→A) บวก Utility/Versatility เป็น S ใหม่ทั้งคู่
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +5 (C→A) บวก Utility/Versatility เป็น S ใหม่ทั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -388,7 +388,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Somnomancer (ValdaSpire24Extras)
 
-**Overall**: S — Control เป็น S ใหม่ (กระโดด +2) บวก Utility เป็น S ใหม่ด้วย และ Damage/Survivability ขยับตาม Support ไม่ถูกแตะ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control เป็น S ใหม่ (กระโดด +2) บวก Utility เป็น S ใหม่ด้วย และ Damage/Survivability ขยับตาม Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -403,7 +403,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Tyromancer (ValdaSpire24Extras)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Damage/Control/Survivability) Support ไม่ถูกแตะ ไม่มี peak ใหม่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Damage/Control/Survivability) Support ไม่ถูกแตะ ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -418,7 +418,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Universalist (ValdaSpire24Extras)
 
-**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Damage/Control/Action Economy ขยับตาม แม้ Support จะไม่ถูกแตะ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Damage/Control/Action Economy ขยับตาม แม้ Support จะไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -433,7 +433,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Wand Wizard (ValdaSpire24Extras)
 
-**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวกขยับขึ้นอีก 3 axis พร้อมกัน (Damage/Control/Survivability/AE) กว้างมาก
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวกขยับขึ้นอีก 3 axis พร้อมกัน (Damage/Control/Survivability/AE) กว้างมาก
 
 
 | Axis | คะแนน | เหตุผล |
@@ -448,7 +448,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Daemonologist (GrimHollowPG24)
 
-**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Damage/AE ขยับตาม แม้ Support/Survivability จะขยับได้แค่บางส่วน
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ใหม่ทั้งคู่ บวก Damage/AE ขยับตาม แม้ Support/Survivability จะขยับได้แค่บางส่วน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -463,7 +463,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Plague Doctor (Wizard) (GrimHollowPG24)
 
-**Overall**: S — Support กระโดด +5 (C→A) บวก Utility/Versatility เป็น S ใหม่ทั้งคู่ และขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่มทั้งหมด
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +5 (C→A) บวก Utility/Versatility เป็น S ใหม่ทั้งคู่ และขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -478,7 +478,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Sangromancer (GrimHollowPG24)
 
-**Overall**: A — Survivability กระโดด +4 (C→A) บวก Damage/Action Economy ขยับตาม Support ไม่ถูกแตะ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +4 (C→A) บวก Damage/Action Economy ขยับตาม Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |

@@ -40,46 +40,46 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Adrenaline Junkie | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 5 (B) |
+| Adrenaline Junkie | C | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 5 (B) |
 | Big Game Hunter | B | ValdaSpire24Extras | 10 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
-| Brigand | A | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 8 (A) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 7 (A) |
-| Covert Operative | B | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 6 (B) |
-| Daggermark | A | ValdaSpire24 (ยืมจาก Captain) | 9 (S) | 5 (B) | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) |
+| Brigand | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 8 (A) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 7 (A) |
+| Covert Operative | C | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 6 (B) |
+| Daggermark | B | ValdaSpire24 (ยืมจาก Captain) | 9 (S) | 5 (B) | 6 (B) | 7 (A) | 8 (A) | 5 (B) | 6 (B) |
 | Deadeye | B | ValdaGunslinger | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 6 (B) |
 | Dragon Banner | B | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 7 (A) | 0 (D) | 5 (B) | 9 (S) | 3 (C) | 5 (B) |
-| Eagle Banner | A | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 4 (C) | 7 (A) |
-| Feylost | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
-| Gourmand | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 4 (C) | 8 (A) |
-| Grenadier | A | ValdaSpire24Extras | 10 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 4 (C) | 7 (A) |
+| Eagle Banner | B | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 4 (C) | 7 (A) |
+| Feylost | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
+| Gourmand | A | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 4 (C) | 8 (A) |
+| Grenadier | B | ValdaSpire24Extras | 10 (S) | 7 (A) | 5 (B) | 5 (B) | 7 (A) | 4 (C) | 7 (A) |
 | Gun Tank | B | ValdaSpire24 | 10 (S) | 5 (B) | 0 (D) | 9 (S) | 6 (B) | 3 (C) | 7 (A) |
 | Gun-Ko Master | A | ValdaSpire24 | 10 (S) | 7 (A) | 0 (D) | 7 (A) | 9 (S) | 5 (B) | 8 (A) |
-| Gundead | C | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
+| Gundead | B | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 5 (B) | 7 (A) |
 | High Roller | C | ValdaGunslinger | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 8 (A) | 4 (C) | 5 (B) |
 | Houndmaster | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 5 (B) | 0 (D) | 6 (B) | 9 (S) | 5 (B) | 7 (A) |
 | Janissary | C | ValdaSpireExtras 🕰️ | 9 (S) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 5 (B) | 6 (B) |
-| Jolly Roger | S | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 4 (C) | 8 (A) |
-| Knight Errant | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 4 (C) | 8 (A) |
-| Musketeer | S | ValdaSpire24 | 10 (S) | 5 (B) | 8 (A) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
-| Pistolero | B | ValdaSpire24 | 10 (S) | 6 (B) | 0 (D) | 5 (B) | 9 (S) | 3 (C) | 5 (B) |
-| Plague Doctor | S | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 5 (B) | 7 (A) | 5 (B) | 7 (A) |
+| Jolly Roger | A | ValdaSpire24 (ยืมจาก Captain) | 10 (S) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 4 (C) | 8 (A) |
+| Knight Errant | A | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 4 (C) | 8 (A) |
+| Musketeer | B | ValdaSpire24 | 10 (S) | 5 (B) | 8 (A) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
+| Pistolero | C | ValdaSpire24 | 10 (S) | 6 (B) | 0 (D) | 5 (B) | 9 (S) | 3 (C) | 5 (B) |
+| Plague Doctor | A | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 8 (A) | 5 (B) | 7 (A) | 5 (B) | 7 (A) |
 | Pugilist | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 7 (A) | 3 (C) | 7 (A) |
-| Rōnin | B | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 5 (B) | 0 (D) | 8 (A) | 8 (A) | 4 (C) | 5 (B) |
+| Rōnin | C | ValdaSpire24Extras (ยืมจาก Vagabond) | 10 (S) | 5 (B) | 0 (D) | 8 (A) | 8 (A) | 4 (C) | 5 (B) |
 | Secret Agent | B | ValdaGunslinger | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
 | Sharpshooter | C | VSS 🕰️ | 10 (S) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 6 (B) | 6 (B) |
-| Siegeball Jersey | S | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 6 (B) | 8 (A) | 8 (A) | 8 (A) | 3 (C) | 7 (A) |
+| Siegeball Jersey | A | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 6 (B) | 8 (A) | 8 (A) | 8 (A) | 3 (C) | 7 (A) |
 | Spellslinger | B | ValdaGunslinger | 10 (S) | 7 (A) | 0 (D) | 5 (B) | 8 (A) | 6 (B) | 8 (A) |
 | Storm Gunner | C | ValdaSpireExtras 🕰️ | 10 (S) | 5 (B) | 0 (D) | 5 (B) | 7 (A) | 4 (C) | 6 (B) |
-| Trick Shot | A | ValdaGunslinger | 10 (S) | 5 (B) | 5 (B) | 5 (B) | 8 (A) | 4 (C) | 7 (A) |
+| Trick Shot | B | ValdaGunslinger | 10 (S) | 5 (B) | 5 (B) | 5 (B) | 8 (A) | 4 (C) | 7 (A) |
 | Troubadour | A | ValdaSpire24Extras (ยืมจาก Vagabond) | 9 (S) | 6 (B) | 8 (A) | 5 (B) | 7 (A) | 5 (B) | 7 (A) |
 | Twice-Damned | C | ValdaSpireExtras 🕰️ | 10 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 5 (B) |
 | White Hat | A | ValdaGunslinger | 9 (S) | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 3 (C) | 7 (A) |
-| Yellow Sign | S | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 9 (S) | 4 (C) | 6 (B) | 6 (B) | 5 (B) | 7 (A) |
+| Yellow Sign | B | ValdaSpire24Extras (ยืมจาก Captain) | 9 (S) | 9 (S) | 4 (C) | 6 (B) | 6 (B) | 5 (B) | 7 (A) |
 
 ---
 
 ### Adrenaline Junkie (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: B — Damage baseline เป็น S (9/10) อยู่แล้ว ตัวชี้วัดจริงคือ Support (จุดอ่อนสุดของ baseline) ที่ยังเป็น 0 เต็ม — Survivability/AE ขยับเป็น A แต่ Support/Utility ไม่ถูกแตะเลย
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage baseline เป็น S (9/10) อยู่แล้ว ตัวชี้วัดจริงคือ Support (จุดอ่อนสุดของ baseline) ที่ยังเป็น 0 เต็ม — Survivability/AE ขยับเป็น A แต่ Support/Utility ไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -94,7 +94,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Big Game Hunter (ValdaSpire24Extras)
 
-**Overall**: B — AE/Versatility ขยับเป็น A ทั้งคู่ + Utility ขยับเล็กน้อย แต่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) AE/Versatility ขยับเป็น A ทั้งคู่ + Utility ขยับเล็กน้อย แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -109,7 +109,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Brigand (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: A — 4 axis ขยับเป็น A พร้อมกัน (Control/Survivability/AE/Versatility) กว้างมาก แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 4 axis ขยับเป็น A พร้อมกัน (Control/Survivability/AE/Versatility) กว้างมาก แต่ Support/Utility ยังนิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -124,7 +124,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Covert Operative (ValdaSpireExtras 🕰️)
 
-**Overall**: B — Utility/AE ขยับกลางๆ แต่ Support ยังเป็น 0 เต็ม
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility/AE ขยับกลางๆ แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -139,7 +139,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Daggermark (ValdaSpire24 🔁 ยืมจาก Captain)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability/AE ขยับเป็น A
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability/AE ขยับเป็น A
 
 
 | Axis | คะแนน | เหตุผล |
@@ -154,7 +154,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Deadeye (ValdaGunslinger)
 
-**Overall**: B — Utility/Survivability/AE ขยับกลางๆ แต่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility/Survivability/AE ขยับกลางๆ แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -169,7 +169,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Dragon Banner (ValdaSpire24 🔁 ยืมจาก Captain)
 
-**Overall**: B — Action Economy เป็น S ใหม่และ Control ขยับเป็น A แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy เป็น S ใหม่และ Control ขยับเป็น A แต่ Support/Utility ยังนิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -184,7 +184,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Eagle Banner (ValdaSpire24 🔁 ยืมจาก Captain)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability ขยับเป็น A และ Utility ขยับตาม
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability ขยับเป็น A และ Utility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -199,7 +199,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Feylost (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: S — Support ขยับบางส่วน (0→3) บวกขยับขึ้นเป็น A ครบ 4 axis พร้อมกัน (Control/Survivability/AE/Versatility) กว้างที่สุดในกลุ่ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support ขยับบางส่วน (0→3) บวกขยับขึ้นเป็น A ครบ 4 axis พร้อมกัน (Control/Survivability/AE/Versatility) กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -214,7 +214,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Gourmand (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในคลาส บวกขยับเป็น A อีก 3 axis
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในคลาส บวกขยับเป็น A อีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -229,7 +229,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Grenadier (ValdaSpire24Extras)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 5 (D→B) บวก Control/Versatility ขยับเป็น A
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 5 (D→B) บวก Control/Versatility ขยับเป็น A
 
 
 | Axis | คะแนน | เหตุผล |
@@ -244,7 +244,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Gun Tank (ValdaSpire24)
 
-**Overall**: B — Survivability เป็น S ใหม่ (กระโดด +4) บวก Versatility ขยับเป็น A แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ (กระโดด +4) บวก Versatility ขยับเป็น A แต่ Support/Utility ยังนิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -259,7 +259,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Gun-Ko Master (ValdaSpire24)
 
-**Overall**: A — Action Economy เป็น S ใหม่ บวก Control/Versatility ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy เป็น S ใหม่ บวก Control/Versatility ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -274,7 +274,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Gundead (ValdaSpireExtras 🕰️)
 
-**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิท
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -289,7 +289,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### High Roller (ValdaGunslinger)
 
-**Overall**: C — ขยับแค่ Action Economy/Utility เล็กน้อย Support ยังเป็น 0 เต็ม
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ Action Economy/Utility เล็กน้อย Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -304,7 +304,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Houndmaster (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: B — Action Economy เป็น S ใหม่ บวก Versatility ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy เป็น S ใหม่ บวก Versatility ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -319,7 +319,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Janissary (ValdaSpireExtras 🕰️)
 
-**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิทเหมือน Gundead
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิทเหมือน Gundead
 
 
 | Axis | คะแนน | เหตุผล |
@@ -334,7 +334,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Jolly Roger (ValdaSpire24 🔁 ยืมจาก Captain)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) เหมือน Gourmand บวก Control/Versatility ขยับเป็น A
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) เหมือน Gourmand บวก Control/Versatility ขยับเป็น A
 
 
 | Axis | คะแนน | เหตุผล |
@@ -349,7 +349,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Knight Errant (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวกขยับเป็น A ครบ 3 axis อีก (Control/Survivability/Versatility) กว้างมาก
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 8 (D→A) บวกขยับเป็น A ครบ 3 axis อีก (Control/Survivability/Versatility) กว้างมาก
 
 
 | Axis | คะแนน | เหตุผล |
@@ -364,7 +364,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Musketeer (ValdaSpire24)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Action Economy/Versatility ขยับเป็น A แต่ Utility ยังนิ่ง
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 8 (D→A) บวก Action Economy/Versatility ขยับเป็น A แต่ Utility ยังนิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -379,7 +379,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Pistolero (ValdaSpire24)
 
-**Overall**: B — Action Economy เป็น S ใหม่ แต่ breadth แคบ Support/Utility ยังนิ่งสนิททั้งคู่
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy เป็น S ใหม่ แต่ breadth แคบ Support/Utility ยังนิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -394,7 +394,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Plague Doctor (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Control/Utility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 8 (D→A) บวก Control/Utility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -409,7 +409,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Pugilist (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: B — Control/Survivability ขยับเป็น A ทั้งคู่ แต่ Support/Utility ยังนิ่งสนิททั้งคู่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Survivability ขยับเป็น A ทั้งคู่ แต่ Support/Utility ยังนิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -424,7 +424,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Rōnin (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: B — Survivability ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม breadth แคบ
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability ขยับเป็น A แต่ Support ยังเป็น 0 เต็ม breadth แคบ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -439,7 +439,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Secret Agent (ValdaGunslinger)
 
-**Overall**: B — Utility กระโดด +4 ถึง A (สูงสุดในกลุ่มสำหรับ axis นี้) บวก Survivability ขยับเป็น A แต่ Support ยังเป็น 0
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility กระโดด +4 ถึง A (สูงสุดในกลุ่มสำหรับ axis นี้) บวก Survivability ขยับเป็น A แต่ Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -454,7 +454,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Sharpshooter (VSS 🕰️)
 
-**Overall**: C — มีแค่ Utility ที่ขยับ Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิทเกือบทั้งหมด
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility ที่ขยับ Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิทเกือบทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -469,7 +469,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Siegeball Jersey (ValdaSpire24Extras 🔁 ยืมจาก Captain)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวกขยับเป็น A อีก 2 axis (Survivability/Versatility)
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 8 (D→A) บวกขยับเป็น A อีก 2 axis (Survivability/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -484,7 +484,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Spellslinger (ValdaGunslinger)
 
-**Overall**: B — Control/Versatility ขยับเป็น A ทั้งคู่ บวก Utility ขยับตาม แต่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Versatility ขยับเป็น A ทั้งคู่ บวก Utility ขยับตาม แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -499,7 +499,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Storm Gunner (ValdaSpireExtras 🕰️)
 
-**Overall**: C — มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิท
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility ที่ขยับเล็กน้อย Support ยังเป็น 0 เต็ม ที่เหลือนิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -514,7 +514,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Trick Shot (ValdaGunslinger)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 5 (D→B) บวก Action Economy ขยับเป็น A
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 5 (D→B) บวก Action Economy ขยับเป็น A
 
 
 | Axis | คะแนน | เหตุผล |
@@ -529,7 +529,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Troubadour (ValdaSpire24Extras 🔁 ยืมจาก Vagabond)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Utility ขยับตาม แต่ breadth ที่เหลือแคบกว่า Musketeer/Plague Doctor
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 8 (D→A) บวก Utility ขยับตาม แต่ breadth ที่เหลือแคบกว่า Musketeer/Plague Doctor
 
 
 | Axis | คะแนน | เหตุผล |
@@ -544,7 +544,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Twice-Damned (ValdaSpireExtras 🕰️)
 
-**Overall**: C — ขยับแค่ Action Economy/Utility เล็กน้อย Support ยังเป็น 0 เต็ม
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ Action Economy/Utility เล็กน้อย Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -559,7 +559,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### White Hat (ValdaGunslinger)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 7 (D→A) บวก Control/Versatility ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 7 (D→A) บวก Control/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -574,7 +574,7 @@ Floor 0-10 ต่อ axis ของ **Gunslinger เปล่าๆ ไม่น
 
 ### Yellow Sign (ValdaSpire24Extras 🔁 ยืมจาก Captain)
 
-**Overall**: S — Control กระโดด +4 ถึง S (5→9) บวก Support ขยับบางส่วน (0→4) และ Versatility ขยับเป็น A
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +4 ถึง S (5→9) บวก Support ขยับบางส่วน (0→4) และ Versatility ขยับเป็น A
 
 
 | Axis | คะแนน | เหตุผล |

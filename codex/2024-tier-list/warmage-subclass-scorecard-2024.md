@@ -34,23 +34,23 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| House of Bishops | A | ValdaSpire24 | 9 (S) | 6 (B) | 2 (D) | 4 (C) | 4 (C) | 7 (A) | 8 (A) |
-| House of Cards | B | ValdaSpire24 | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 5 (B) | 4 (C) | 7 (A) |
-| House of Darts | A | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 5 (B) | 6 (B) | 4 (C) | 7 (A) |
-| House of Dice | B | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 3 (C) | 8 (A) |
-| House of Go | S | ValdaSpire24Extras | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 6 (B) | 4 (C) | 7 (A) |
-| House of Kings | S | ValdaSpire24 | 8 (A) | 7 (A) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 8 (A) |
-| House of Knights | B | ValdaSpire24 | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 5 (B) | 3 (C) | 6 (B) |
-| House of Lancers | A | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 6 (B) |
-| House of Pawns | A | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 6 (B) | 5 (B) | 3 (C) | 7 (A) |
-| House of Rooks | A | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 8 (A) | 6 (B) |
-| House of Roulette | C | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 6 (B) | 4 (C) | 3 (C) | 6 (B) |
+| House of Bishops | C | ValdaSpire24 | 9 (S) | 6 (B) | 2 (D) | 4 (C) | 4 (C) | 7 (A) | 8 (A) |
+| House of Cards | D | ValdaSpire24 | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 5 (B) | 4 (C) | 7 (A) |
+| House of Darts | C | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 5 (B) | 6 (B) | 4 (C) | 7 (A) |
+| House of Dice | D | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 3 (C) | 8 (A) |
+| House of Go | B | ValdaSpire24Extras | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 6 (B) | 4 (C) | 7 (A) |
+| House of Kings | A | ValdaSpire24 | 8 (A) | 7 (A) | 9 (S) | 5 (B) | 7 (A) | 4 (C) | 8 (A) |
+| House of Knights | C | ValdaSpire24 | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 5 (B) | 3 (C) | 6 (B) |
+| House of Lancers | C | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 6 (B) |
+| House of Pawns | C | ValdaSpire24 | 9 (S) | 3 (C) | 3 (C) | 6 (B) | 5 (B) | 3 (C) | 7 (A) |
+| House of Rooks | C | ValdaSpire24 | 8 (A) | 4 (C) | 0 (D) | 6 (B) | 5 (B) | 8 (A) | 6 (B) |
+| House of Roulette | D | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 6 (B) | 4 (C) | 3 (C) | 6 (B) |
 
 ---
 
 ### House of Bishops (ValdaSpire24)
 
-**Overall**: A — Damage S บวก Utility/Versatility กระโดดขึ้นเป็น A ทั้งคู่ (+4/+3) และ Control ขยับเป็น B แต่ Support ยังแทบเป็น 0 (2/10, ยังเกรด D)
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage S บวก Utility/Versatility กระโดดขึ้นเป็น A ทั้งคู่ (+4/+3) และ Control ขยับเป็น B แต่ Support ยังแทบเป็น 0 (2/10, ยังเกรด D)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -65,7 +65,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Cards (ValdaSpire24)
 
-**Overall**: B — ไม่มี axis ไหนขยับเกิน +2 เลย เป็นการเสริมกลางๆ ทั่วทั้ง 4 axis (Survivability/AE/Utility/Versatility) โดยไม่มี peak
+**Overall**: D — (5 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนขยับเกิน +2 เลย เป็นการเสริมกลางๆ ทั่วทั้ง 4 axis (Survivability/AE/Utility/Versatility) โดยไม่มี peak
 
 
 | Axis | คะแนน | เหตุผล |
@@ -80,7 +80,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Darts (ValdaSpire24)
 
-**Overall**: A — Damage S บวกขยับขึ้น 5 axis พร้อมกันแบบกลางๆ (Support D→C, Survivability/AE/Utility/Versatility ล้วนบวก) กว้างกว่า Bishops แต่ magnitude ต่อแกนน้อยกว่า
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage S บวกขยับขึ้น 5 axis พร้อมกันแบบกลางๆ (Support D→C, Survivability/AE/Utility/Versatility ล้วนบวก) กว้างกว่า Bishops แต่ magnitude ต่อแกนน้อยกว่า
 
 
 | Axis | คะแนน | เหตุผล |
@@ -95,7 +95,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Dice (ValdaSpire24)
 
-**Overall**: B — ขยับกลางๆ 4 axis ไม่มี peak เด่น Versatility ขึ้นมากสุดแค่ +3
+**Overall**: D — (5 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 4 axis ไม่มี peak เด่น Versatility ขึ้นมากสุดแค่ +3
 
 
 | Axis | คะแนน | เหตุผล |
@@ -110,7 +110,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Go (ValdaSpire24Extras)
 
-**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S) — swing แรงที่สุดในกลุ่ม จากไม่มี support เลยกลายเป็นดีที่สุดในคลาส บวก Survivability/Action Economy/Utility/Versatility ขยับตามอีก 4 axis
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 9 (S) — swing แรงที่สุดในกลุ่ม จากไม่มี support เลยกลายเป็นดีที่สุดในคลาส บวก Survivability/Action Economy/Utility/Versatility ขยับตามอีก 4 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -125,7 +125,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Kings (ValdaSpire24)
 
-**Overall**: S — Support กระโดด 0→9 (S) เหมือน House of Go แต่กว้างกว่า: Control ก็กระโดด 3→7 (A) และ Action Economy ขึ้นเป็น A ด้วย เหลือแค่ Damage แกนเดียวที่นิ่งที่ baseline
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด 0→9 (S) เหมือน House of Go แต่กว้างกว่า: Control ก็กระโดด 3→7 (A) และ Action Economy ขึ้นเป็น A ด้วย เหลือแค่ Damage แกนเดียวที่นิ่งที่ baseline
 
 
 | Axis | คะแนน | เหตุผล |
@@ -140,7 +140,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Knights (ValdaSpire24)
 
-**Overall**: B — Damage S บวก Survivability A แต่ Support ยังเป็น 0 เต็ม (ไม่เคยแก้เลย) ต่างจาก House of Go/Kings ที่ปลดล็อกแกนนี้ไปแล้ว
+**Overall**: C — (6 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage S บวก Survivability A แต่ Support ยังเป็น 0 เต็ม (ไม่เคยแก้เลย) ต่างจาก House of Go/Kings ที่ปลดล็อกแกนนี้ไปแล้ว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -155,7 +155,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Lancers (VSS 🕰️)
 
-**Overall**: A — Damage S บวก Survivability/Action Economy ขึ้นเป็น A ทั้งคู่ (+3 ทั้งคู่) และ Utility ขยับ B แต่ Support ยังเป็น 0 เต็มเหมือน House of Knights
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage S บวก Survivability/Action Economy ขึ้นเป็น A ทั้งคู่ (+3 ทั้งคู่) และ Utility ขยับ B แต่ Support ยังเป็น 0 เต็มเหมือน House of Knights
 
 
 | Axis | คะแนน | เหตุผล |
@@ -170,7 +170,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Pawns (ValdaSpire24)
 
-**Overall**: A — Damage S บวกขยับขึ้น 4 axis กลางๆ (Support D→C, Survivability/AE/Versatility) กว้างพอสมควรไม่มี peak อื่น
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage S บวกขยับขึ้น 4 axis กลางๆ (Support D→C, Survivability/AE/Versatility) กว้างพอสมควรไม่มี peak อื่น
 
 
 | Axis | คะแนน | เหตุผล |
@@ -185,7 +185,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Rooks (ValdaSpire24)
 
-**Overall**: A — Utility กระโดดจาก C เป็น A (3→8) บวก Survivability/Action Economy/Control ขยับตาม แต่ Damage ไม่ขยับเลย (เท่า baseline)
+**Overall**: C — (6 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility กระโดดจาก C เป็น A (3→8) บวก Survivability/Action Economy/Control ขยับตาม แต่ Damage ไม่ขยับเลย (เท่า baseline)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -200,7 +200,7 @@ Floor 0-10 ต่อ axis ของ **Warmage เปล่าๆ ไม่นั
 
 ### House of Roulette (ValdaSpire24Extras)
 
-**Overall**: C — มีแค่ Survivability/Versatility ที่ขยับเล็กน้อย (+1 ถึง +2) ที่เหลือนิ่งสนิทรวมถึง Damage ที่ตัวเลขต่ำกว่า sibling ทุกตัวในกลุ่ม — เพิ่มน้อยที่สุดในคลาส
+**Overall**: D — (3 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Survivability/Versatility ที่ขยับเล็กน้อย (+1 ถึง +2) ที่เหลือนิ่งสนิทรวมถึง Damage ที่ตัวเลขต่ำกว่า sibling ทุกตัวในกลุ่ม — เพิ่มน้อยที่สุดในคลาส
 
 
 | Axis | คะแนน | เหตุผล |

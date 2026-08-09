@@ -38,18 +38,18 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 | Subclass | Source | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Gambler | DToE Vol.2 🕰️ | A | 6 (B) | 2 (D) | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
-| Grandmaster | DToE Vol.1 🕰️ | A | 6 (B) | 3 (C) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
-| Medic | DToE Vol.2 🕰️ | B | 4 (C) | 3 (C) | 10 (S) | 4 (C) | 8 (A) | 6 (B) | 6 (B) |
-| Mentalist | DToE Vol.1 🕰️ | S | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
-| Scholar | DToE Vol.1 🕰️ | S | 8 (A) | 5 (B) | 8 (A) | 4 (C) | 8 (A) | 8 (A) | 9 (S) |
-| War Mind | DToE Vol.1 🕰️ | A | 9 (S) | 2 (D) | 8 (A) | 6 (B) | 8 (A) | 5 (B) | 6 (B) |
+| Gambler | DToE Vol.2 🕰️ | C | 6 (B) | 2 (D) | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 7 (A) |
+| Grandmaster | DToE Vol.1 🕰️ | B | 6 (B) | 3 (C) | 9 (S) | 5 (B) | 7 (A) | 6 (B) | 7 (A) |
+| Medic | DToE Vol.2 🕰️ | C | 4 (C) | 3 (C) | 10 (S) | 4 (C) | 8 (A) | 6 (B) | 6 (B) |
+| Mentalist | DToE Vol.1 🕰️ | B | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
+| Scholar | DToE Vol.1 🕰️ | A | 8 (A) | 5 (B) | 8 (A) | 4 (C) | 8 (A) | 8 (A) | 9 (S) |
+| War Mind | DToE Vol.1 🕰️ | B | 9 (S) | 2 (D) | 8 (A) | 6 (B) | 8 (A) | 5 (B) | 6 (B) |
 
 ---
 
 ### Gambler
 
-**Overall**: A — ยกระดับ 5 ใน 7 axis เหนือ baseline พร้อมกัน (Damage/Support/AE/Utility/Versatility) ด้วยการขยายมูลค่า/ความแน่นอนของ Perfect Plan die เดิม ไม่ใช่ one-trick pony เลย แม้ Control/Survivability จะยังค้างที่ baseline
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ยกระดับ 5 ใน 7 axis เหนือ baseline พร้อมกัน (Damage/Support/AE/Utility/Versatility) ด้วยการขยายมูลค่า/ความแน่นอนของ Perfect Plan die เดิม ไม่ใช่ one-trick pony เลย แม้ Control/Survivability จะยังค้างที่ baseline
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -63,7 +63,7 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### Grandmaster
 
-**Overall**: A — Support S เดี่ยว (Perfectionist กันพลาดทั้งทีม) บวก Damage/AE/Utility/Versatility ยกขึ้นเป็น B/A ทั่วกระดาน มีแค่ Control ที่ค้าง baseline — breadth กว้างแต่ไม่มี axis ที่สองที่แรงพอจะดันขึ้น S เหมือน Mentalist/Scholar
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support S เดี่ยว (Perfectionist กันพลาดทั้งทีม) บวก Damage/AE/Utility/Versatility ยกขึ้นเป็น B/A ทั่วกระดาน มีแค่ Control ที่ค้าง baseline — breadth กว้างแต่ไม่มี axis ที่สองที่แรงพอจะดันขึ้น S เหมือน Mentalist/Scholar
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -77,7 +77,7 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### Medic
 
-**Overall**: B — Support 10/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (healer ตัวจริง) แต่ Damage/Control/Survivability ค้างที่ baseline ทั้ง 3 แกน มี Utility เดียวที่ขยับขึ้นมาเป็น B — one-trick pony ตัวชัดเจน: เก่งสุดขั้วด้าน heal แต่แทบไม่มี value อื่นให้ทีมเลยนอกเหนือจากบทบาทนั้น จึงไม่ควรได้ A ทั้งที่ราย axis เฉลี่ยดูดี
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support 10/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (healer ตัวจริง) แต่ Damage/Control/Survivability ค้างที่ baseline ทั้ง 3 แกน มี Utility เดียวที่ขยับขึ้นมาเป็น B — one-trick pony ตัวชัดเจน: เก่งสุดขั้วด้าน heal แต่แทบไม่มี value อื่นให้ทีมเลยนอกเหนือจากบทบาทนั้น จึงไม่ควรได้ A ทั้งที่ราย axis เฉลี่ยดูดี
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -91,7 +91,7 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### Mentalist
 
-**Overall**: S — 5 ใน 7 axis อยู่ที่ A พร้อมกัน (Damage/Control/Support/AE/Utility) ไม่มี axis ไหนถูกตัดทอนต่ำกว่า baseline เลยสักตัว เป็นตัวคุมเกม+ดาเมจ-แอมป์+ซัพพอร์ตครบเครื่องที่สุดในคลาสนี้ จุดอ่อนเดียวคือ Survivability ที่ยังอยู่แค่ baseline
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 5 ใน 7 axis อยู่ที่ A พร้อมกัน (Damage/Control/Support/AE/Utility) ไม่มี axis ไหนถูกตัดทอนต่ำกว่า baseline เลยสักตัว เป็นตัวคุมเกม+ดาเมจ-แอมป์+ซัพพอร์ตครบเครื่องที่สุดในคลาสนี้ จุดอ่อนเดียวคือ Survivability ที่ยังอยู่แค่ baseline
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -105,7 +105,7 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### Scholar
 
-**Overall**: S — เพิ่มระบบ spellcasting เต็มรูปแบบทับบน chassis เดิม ดัน Damage/Support/AE/Utility ขึ้นเป็น A ทั้งหมดพร้อม Versatility S (9/10) สูงสุดในคลาส กว้างที่สุดในบรรดา subclass ทั้ง 6 ตัว มีแค่ Survivability ที่ยังอยู่ baseline
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) เพิ่มระบบ spellcasting เต็มรูปแบบทับบน chassis เดิม ดัน Damage/Support/AE/Utility ขึ้นเป็น A ทั้งหมดพร้อม Versatility S (9/10) สูงสุดในคลาส กว้างที่สุดในบรรดา subclass ทั้ง 6 ตัว มีแค่ Survivability ที่ยังอยู่ baseline
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -119,7 +119,7 @@ Floor 0-10 ต่อ axis ของ **Tactician เปล่าๆ ไม่น�
 
 ### War Mind
 
-**Overall**: A — Damage 9/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (Extra Attack + crit 19-20) บวก Support/AE ที่ A คู่กัน แต่ Control ค้าง baseline เต็มและ Utility/Versatility แค่ B — striker เฉพาะทางที่แรงสุดขั้วด้าน damage แต่ breadth แคบกว่า Mentalist/Scholar จึงไม่ถึง S
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage 9/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (Extra Attack + crit 19-20) บวก Support/AE ที่ A คู่กัน แต่ Control ค้าง baseline เต็มและ Utility/Versatility แค่ B — striker เฉพาะทางที่แรงสุดขั้วด้าน damage แต่ breadth แคบกว่า Mentalist/Scholar จึงไม่ถึง S
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

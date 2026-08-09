@@ -38,11 +38,11 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | Banneret | A | FRHoF | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 10 (S) | 4 (C) | 7 (A) |
 | Battle Master | S | XPHB | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 9 (S) | 2 (C) | 9 (S) |
 | Blade Breaker | B | GrimHollowPlayerPack 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 0 (D) | 8 (A) |
-| Bone Knight | C | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 10 (S) | 9 (S) | 3 (C) | 6 (B) |
+| Bone Knight | B | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 10 (S) | 9 (S) | 3 (C) | 6 (B) |
 | Brawler | B | VSS 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 2 (C) | 6 (B) |
 | Bulwark Warrior | A | GrimHollowPG24 | 9 (S) | 7 (A) | 6 (B) | 10 (S) | 8 (A) | 0 (D) | 7 (A) |
-| Cavalier | S | XGE 🕰️ | 9 (S) | 8 (A) | 6 (B) | 9 (S) | 10 (S) | 2 (C) | 7 (A) |
-| Celestial Lancer | S | VSS 🕰️ | 9 (S) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 5 (B) | 7 (A) |
+| Cavalier | A | XGE 🕰️ | 9 (S) | 8 (A) | 6 (B) | 9 (S) | 10 (S) | 2 (C) | 7 (A) |
+| Celestial Lancer | A | VSS 🕰️ | 9 (S) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 5 (B) | 7 (A) |
 | Champion | C | XPHB | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 0 (D) | 5 (B) |
 | Corsair | B | VSS 🕰️ | 9 (S) | 5 (B) | 0 (D) | 9 (S) | 9 (S) | 3 (C) | 7 (A) |
 | Dungeoneer | B | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 10 (S) | 8 (A) | 5 (B) | 6 (B) |
@@ -50,17 +50,17 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 | Eldritch Knight | A | XPHB | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 9 (S) | 6 (B) | 9 (S) |
 | Living Crucible | B | GrimHollowPG24 | 8 (A) | 3 (C) | 0 (D) | 9 (S) | 9 (S) | 5 (B) | 7 (A) |
 | Mage Hand Magus | A | VSS 🕰️ | 9 (S) | 7 (A) | 0 (D) | 8 (A) | 9 (S) | 8 (A) | 8 (A) |
-| Nightwatcher | S | GrimHollowPG24 | 9 (S) | 6 (B) | 5 (B) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
+| Nightwatcher | A | GrimHollowPG24 | 9 (S) | 6 (B) | 5 (B) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
 | Psi Warrior | S | XPHB | 9 (S) | 6 (B) | 6 (B) | 10 (S) | 9 (S) | 6 (B) | 9 (S) |
-| Purple Dragon Knight (Banneret) | A | SCAG 🕰️ | 8 (A) | 3 (C) | 8 (A) | 8 (A) | 9 (S) | 2 (C) | 6 (B) |
-| Rune Knight | S | TCE 🕰️ | 9 (S) | 6 (B) | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
-| Samurai | C | XGE 🕰️ | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 9 (S) | 2 (C) | 5 (B) |
+| Purple Dragon Knight (Banneret) | B | SCAG 🕰️ | 8 (A) | 3 (C) | 8 (A) | 8 (A) | 9 (S) | 2 (C) | 6 (B) |
+| Rune Knight | A | TCE 🕰️ | 9 (S) | 6 (B) | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
+| Samurai | B | XGE 🕰️ | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 9 (S) | 2 (C) | 5 (B) |
 
 ---
 
 ### Arcane Archer (XGE 🕰️)
 
-**Overall**: C — Damage/Survivability/Action Economy อยู่ที่ baseline สูงอยู่แล้ว (A/A/A) ตัวชี้วัดจริงคือ 4 axis ที่ baseline อ่อน (Control/Support/Utility/Versatility) — มีแค่ Utility/Versatility ที่ขยับ Control/Support ยังนิ่งสนิท
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage/Survivability/Action Economy อยู่ที่ baseline สูงอยู่แล้ว (A/A/A) ตัวชี้วัดจริงคือ 4 axis ที่ baseline อ่อน (Control/Support/Utility/Versatility) — มีแค่ Utility/Versatility ที่ขยับ Control/Support ยังนิ่งสนิท
 
 
 > **หมายเหตุข้อมูล**: รายการ "Arcane Shot Options" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนน Damage/Control แบบระมัดระวังจากกลไกที่ยืนยันได้เท่านั้น (Curving Shot, Magic Arrow, Ever-Ready Shot)
@@ -77,7 +77,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Banneret (FRHoF)
 
-**Overall**: A — Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) บวก Utility/Versatility ขยับตาม แต่ Control ยังนิ่ง
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) บวก Utility/Versatility ขยับตาม แต่ Control ยังนิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -92,7 +92,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Battle Master (XPHB)
 
-**Overall**: S — ทั้ง 4 axis ที่ baseline อ่อน (Control/Support/Utility/Versatility) ขยับขึ้นพร้อมกัน โดย Control ถึง A และ Versatility ถึง S — สมบูรณ์ที่สุดในกลุ่ม
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 4 axis ที่ baseline อ่อน (Control/Support/Utility/Versatility) ขยับขึ้นพร้อมกัน โดย Control ถึง A และ Versatility ถึง S — สมบูรณ์ที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -107,7 +107,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Blade Breaker (GrimHollowPlayerPack 🕰️)
 
-**Overall**: B — มีแค่ Control/Versatility ที่ขยับ Support และ Utility ยังเป็น 0 เต็มทั้งคู่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Control/Versatility ที่ขยับ Support และ Utility ยังเป็น 0 เต็มทั้งคู่
 
 
 > **หมายเหตุข้อมูล**: รายการ "Blade Breaker Maneuvers" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังจากกลไกที่ยืนยันได้เท่านั้น (4 stance + feature เสริม)
@@ -124,7 +124,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Bone Knight (VSS 🕰️)
 
-**Overall**: C — มีแค่ Utility/Versatility ที่ขยับเล็กน้อย Control/Support ยังนิ่งสนิททั้งคู่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility/Versatility ที่ขยับเล็กน้อย Control/Support ยังนิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -139,7 +139,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Brawler (VSS 🕰️)
 
-**Overall**: B — Control/Utility/Versatility ขยับกลางๆ 3 ใน 4 axis อ่อน แต่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Utility/Versatility ขยับกลางๆ 3 ใน 4 axis อ่อน แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -154,7 +154,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Bulwark Warrior (GrimHollowPG24)
 
-**Overall**: A — Control กระโดด +4 และ Support กระโดด +6 บวก Versatility ขยับตาม แต่ Utility ยังเป็น 0 เต็ม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +4 และ Support กระโดด +6 บวก Versatility ขยับตาม แต่ Utility ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -169,7 +169,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Cavalier (XGE 🕰️)
 
-**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Control ถึง A (กระโดด +5) และ Support ถึง B (กระโดด +6)
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Control ถึง A (กระโดด +5) และ Support ถึง B (กระโดด +6)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -184,7 +184,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Celestial Lancer (VSS 🕰️)
 
-**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว (Control/Support/Utility ล้วนกระโดด +3 ถึง +5) กว้างที่สุดในกลุ่มทั้งหมด
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว (Control/Support/Utility ล้วนกระโดด +3 ถึง +5) กว้างที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -199,7 +199,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Champion (XPHB)
 
-**Overall**: C — 3 ใน 4 axis อ่อนของ baseline (Control/Support/Utility) นิ่งสนิทไม่ขยับเลยสักตัว มีแค่ Versatility ที่ขยับ +1 เล็กน้อย — แก้จุดอ่อนของ baseline น้อยที่สุดในกลุ่ม
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 ใน 4 axis อ่อนของ baseline (Control/Support/Utility) นิ่งสนิทไม่ขยับเลยสักตัว มีแค่ Versatility ที่ขยับ +1 เล็กน้อย — แก้จุดอ่อนของ baseline น้อยที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -214,7 +214,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Corsair (VSS 🕰️)
 
-**Overall**: B — Control/Utility/Versatility ขยับกลางๆ 3 ใน 4 axis อ่อน แต่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control/Utility/Versatility ขยับกลางๆ 3 ใน 4 axis อ่อน แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -229,7 +229,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Dungeoneer (VSS 🕰️)
 
-**Overall**: B — Utility กระโดด +5 บวก Versatility ขยับตาม แต่ Control/Support ยังนิ่งสนิททั้งคู่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility กระโดด +5 บวก Versatility ขยับตาม แต่ Control/Support ยังนิ่งสนิททั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -244,7 +244,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Echo Knight (EGW 🕰️)
 
-**Overall**: A — Support และ Utility กระโดด +5 ทั้งคู่ บวก Versatility กระโดด +4 มีแค่ Control ที่ยังนิ่ง
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support และ Utility กระโดด +5 ทั้งคู่ บวก Versatility กระโดด +4 มีแค่ Control ที่ยังนิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -259,7 +259,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Eldritch Knight (XPHB)
 
-**Overall**: A — Control กระโดด +4 และ Utility กระโดด +6 บวก Versatility เป็น S แต่ Support ยังเป็น 0 เต็ม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +4 และ Utility กระโดด +6 บวก Versatility เป็น S แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -274,7 +274,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Living Crucible (GrimHollowPG24)
 
-**Overall**: B — Utility/Versatility ขยับ แต่ Control/Support ยังนิ่งสนิททั้งคู่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility/Versatility ขยับ แต่ Control/Support ยังนิ่งสนิททั้งคู่
 
 
 > **หมายเหตุข้อมูล**: รายการ "Compound Options" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล จึงให้คะแนน Damage/Control แบบระมัดระวัง
@@ -291,7 +291,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Mage Hand Magus (VSS 🕰️)
 
-**Overall**: A — Control กระโดด +4 และ Utility กระโดด +8 (D→A เต็มขั้น) บวก Versatility ขยับตาม แต่ Support ยังเป็น 0 เต็ม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +4 และ Utility กระโดด +8 (D→A เต็มขั้น) บวก Versatility ขยับตาม แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -306,7 +306,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Nightwatcher (GrimHollowPG24)
 
-**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัวแบบสม่ำเสมอ (Control/Support/Utility ล้วน +3 ถึง +6)
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัวแบบสม่ำเสมอ (Control/Support/Utility ล้วน +3 ถึง +6)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -321,7 +321,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Psi Warrior (XPHB)
 
-**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Versatility ถึง S (กระโดด +5)
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกัน โดย Versatility ถึง S (กระโดด +5)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -336,7 +336,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Purple Dragon Knight (Banneret) (SCAG 🕰️)
 
-**Overall**: A — Support กระโดด +8 (D→A เต็มขั้น) บวก Utility/Versatility ขยับตาม แต่ Control ยังนิ่ง
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +8 (D→A เต็มขั้น) บวก Utility/Versatility ขยับตาม แต่ Control ยังนิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -351,7 +351,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Rune Knight (TCE 🕰️)
 
-**Overall**: S — ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว (Control/Support/Utility ล้วน +3 ถึง +6)
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ทั้ง 4 axis อ่อนของ baseline ขยับขึ้นพร้อมกันครบทุกตัว (Control/Support/Utility ล้วน +3 ถึง +6)
 
 
 > **หมายเหตุข้อมูล**: รายละเอียด Rune เฉพาะตัว (Cloud/Fire/Frost/Hill/Stone/Storm) ไม่ปรากฏครบในไฟล์ข้อมูล (มีแค่ Hill/Storm ระบุชื่อหัวข้อ) จึงให้คะแนนแบบระมัดระวังโดยอิงจากกลไก Giant's Might ที่ยืนยันได้เป็นหลัก
@@ -368,7 +368,7 @@ Floor 0-10 ต่อ axis ของ **Fighter เปล่าๆ ไม่นั
 
 ### Samurai (XGE 🕰️)
 
-**Overall**: C — มีแค่ Utility/Versatility ที่ขยับเล็กน้อย Control/Support ยังนิ่งสนิททั้งคู่เหมือน Bone Knight
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility/Versatility ที่ขยับเล็กน้อย Control/Support ยังนิ่งสนิททั้งคู่เหมือน Bone Knight
 
 
 | Axis | คะแนน | เหตุผล |

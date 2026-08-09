@@ -36,18 +36,18 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Alchemist | A | EFA | 6 (B) | 3 (C) | 9 (S) | 7 (A) | 4 (C) | 8 (A) | 7 (A) |
-| Armorer | S | EFA | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) |
-| Artillerist | S | EFA | 8 (A) | 4 (C) | 8 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) |
-| Battle Smith | A | EFA | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 7 (A) |
-| Cartographer | S | EFA | 6 (B) | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 9 (S) | 9 (S) |
-| Reanimator | S | RHW (*Ravenloft: The Horrors Within*) | 7 (A) | 5 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) | 9 (S) |
+| Alchemist | B | EFA | 6 (B) | 3 (C) | 9 (S) | 7 (A) | 4 (C) | 8 (A) | 7 (A) |
+| Armorer | A | EFA | 8 (A) | 5 (B) | 6 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) |
+| Artillerist | A | EFA | 8 (A) | 4 (C) | 8 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) |
+| Battle Smith | B | EFA | 8 (A) | 4 (C) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 7 (A) |
+| Cartographer | A | EFA | 6 (B) | 6 (B) | 8 (A) | 6 (B) | 5 (B) | 9 (S) | 9 (S) |
+| Reanimator | A | RHW (*Ravenloft: The Horrors Within*) | 7 (A) | 5 (B) | 7 (A) | 6 (B) | 7 (A) | 9 (S) | 9 (S) |
 
 ---
 
 ### Alchemist (EFA)
 
-**Overall**: A — Support S (9/10) สูงสุดในกลุ่ม บวก Survivability/Utility A แต่ Action Economy ยังค้างที่ baseline (4, C) — healer/buffer เฉพาะทางที่แรงสุดด้าน support แต่ Action Economy ไม่ขยับเลย
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support S (9/10) สูงสุดในกลุ่ม บวก Survivability/Utility A แต่ Action Economy ยังค้างที่ baseline (4, C) — healer/buffer เฉพาะทางที่แรงสุดด้าน support แต่ Action Economy ไม่ขยับเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -62,7 +62,7 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Armorer (EFA)
 
-**Overall**: S — Versatility S (9/10) บวก Damage/Survivability/Utility ล้วน A พร้อมกัน ไม่มี axis ไหนอยู่ต่ำกว่า B เลย เป็น all-rounder ที่กว้างและแรงพร้อมกัน
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility S (9/10) บวก Damage/Survivability/Utility ล้วน A พร้อมกัน ไม่มี axis ไหนอยู่ต่ำกว่า B เลย เป็น all-rounder ที่กว้างและแรงพร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -77,7 +77,7 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Artillerist (EFA)
 
-**Overall**: S — Versatility S (9/10) บวก Damage/Support/Action Economy/Utility ล้วน A ครบเกือบทุกแกน มีแค่ Survivability ที่เป็น B เท่านั้นที่ไม่ถึง A
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility S (9/10) บวก Damage/Support/Action Economy/Utility ล้วน A ครบเกือบทุกแกน มีแค่ Survivability ที่เป็น B เท่านั้นที่ไม่ถึง A
 
 
 > **หมายเหตุข้อมูล**: รายละเอียดโหมด Flamethrower/Force Ballista/Protector ของ Eldritch Cannon (EFA) อยู่ใน object stat block แยกที่ไม่มีอยู่ในไฟล์ data ที่ดึงมาได้ (มีแค่ชื่อ "Protector" ถูกอ้างถึงใน Explosive Cannon lv9 ยืนยันว่ายังมีโหมดนี้อยู่) ใช้ตัวเลขจากเวอร์ชัน TCE 2014 (2d8 dmg/ผลัก 5ft/1d8+Int temp HP) เป็น proxy ประมาณคะแนน เพราะกลไกฐาน (สร้าง cannon แบบ bonus action, Detonate) เหมือนกันเกือบทั้งหมด
@@ -94,7 +94,7 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Battle Smith (EFA)
 
-**Overall**: A — 5 ใน 7 axis อยู่ที่ A (Damage/Support/Action Economy/Utility/Versatility) กว้างมากแต่ไม่มี axis ไหนถึง S เลยสักตัว
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 5 ใน 7 axis อยู่ที่ A (Damage/Support/Action Economy/Utility/Versatility) กว้างมากแต่ไม่มี axis ไหนถึง S เลยสักตัว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -109,7 +109,7 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Cartographer (EFA)
 
-**Overall**: S — Utility และ Versatility S (9/10) พร้อมกันสองแกน บวก Support A — เป็น subclass เดียวในกลุ่มที่มี 2 axis เป็น S แม้ Damage/Action Economy จะแค่ B
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility S (9/10) พร้อมกันสองแกน บวก Support A — เป็น subclass เดียวในกลุ่มที่มี 2 axis เป็น S แม้ Damage/Action Economy จะแค่ B
 
 
 | Axis | คะแนน | เหตุผล |
@@ -124,7 +124,7 @@ Floor 0-10 ต่อ axis ของ **Artificer เปล่าๆ ไม่น�
 
 ### Reanimator (RHW, *Ravenloft: The Horrors Within*)
 
-**Overall**: S — Utility และ Versatility S (9/10) พร้อมกันเหมือน Cartographer แต่กระจายกว้างกว่า (Damage/Support/Action Economy ล้วน A แทนที่จะเป็น B) — กว้างที่สุดในกลุ่มทั้งหมด
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility S (9/10) พร้อมกันเหมือน Cartographer แต่กระจายกว้างกว่า (Damage/Support/Action Economy ล้วน A แทนที่จะเป็น B) — กว้างที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |

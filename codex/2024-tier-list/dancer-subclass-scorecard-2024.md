@@ -35,25 +35,25 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 | Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|
 | Acrobat | B | 9 (S) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Cheerleader | S | 9 (S) | 3 (C) | 9 (S) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
-| Contortionist | A | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
-| Courtesan | A | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 7 (A) |
-| Danseur Macabre | A | 10 (S) | 3 (C) | 0 (D) | 7 (A) | 9 (S) | 7 (A) | 8 (A) |
-| Dramaturge | A | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 8 (A) |
-| Fencer | B | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 4 (C) | 6 (B) |
+| Cheerleader | B | 9 (S) | 3 (C) | 9 (S) | 6 (B) | 7 (A) | 4 (C) | 8 (A) |
+| Contortionist | B | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 7 (A) |
+| Courtesan | B | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 6 (B) | 7 (A) |
+| Danseur Macabre | B | 10 (S) | 3 (C) | 0 (D) | 7 (A) | 9 (S) | 7 (A) | 8 (A) |
+| Dramaturge | B | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 8 (A) |
+| Fencer | C | 10 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 4 (C) | 6 (B) |
 | Fey Ballerina | B | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
 | Fire Dancer | B | 10 (S) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 4 (C) | 7 (A) |
 | Harlequin | C | 10 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 6 (B) |
-| Marionettist | S | 9 (S) | 9 (S) | 3 (C) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
+| Marionettist | A | 9 (S) | 9 (S) | 3 (C) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
 | Mime | B | 10 (S) | 7 (A) | 0 (D) | 6 (B) | 7 (A) | 6 (B) | 7 (A) |
 | Shadow Dancer | B | 9 (S) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Steelsinger | S | 9 (S) | 3 (C) | 8 (A) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
+| Steelsinger | A | 9 (S) | 3 (C) | 8 (A) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
 
 ---
 
 ### Acrobat
 
-**Overall**: B — ขยับกลางๆ 3 axis (Survivability/Utility/Versatility) ไม่มี peak ใหม่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Survivability/Utility/Versatility) ไม่มี peak ใหม่ Support ยังเป็น 0 เต็ม
 
 
 > **คอนเซปต์**: นักกายกรรมที่แปลงความเร็ว/การเคลื่อนที่เป็นดาเมจ
@@ -70,7 +70,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Cheerleader
 
-**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S) เต็มสเกล — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Versatility ขยับตาม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 9 (S) เต็มสเกล — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Versatility ขยับตาม
 
 
 > **คอนเซปต์**: นักเชียร์ที่ปลุกใจทีมด้วยเสียงเชียร์และผาดโผน
@@ -87,7 +87,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Contortionist
 
-**Overall**: A — Survivability เป็น S (9/10) บวก Action Economy/Versatility ขยับเล็กน้อย แต่ Support/Control ไม่ถูกแตะเลย
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S (9/10) บวก Action Economy/Versatility ขยับเล็กน้อย แต่ Support/Control ไม่ถูกแตะเลย
 
 
 > **คอนเซปต์**: นักดัดตัวที่หลบและตอบโต้ด้วยความยืดหยุ่นเหนือมนุษย์
@@ -104,7 +104,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Courtesan
 
-**Overall**: A — Control กระโดด +5 (3→8, C→A) บวก Action Economy/Utility/Versatility ขยับตาม แต่ Support ยังเป็น 0
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +5 (3→8, C→A) บวก Action Economy/Utility/Versatility ขยับตาม แต่ Support ยังเป็น 0
 
 
 > **คอนเซปต์**: นักเสน่ห์ที่ครอบงำจิตใจศัตรูด้วยเสน่ห์
@@ -121,7 +121,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Danseur Macabre
 
-**Overall**: A — Action Economy เป็น S (9/10) บวก Survivability/Utility/Versatility ขยับตาม กว้างแต่ Support/Control ยังไม่ถูกแตะเลย
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy เป็น S (9/10) บวก Survivability/Utility/Versatility ขยับตาม กว้างแต่ Support/Control ยังไม่ถูกแตะเลย
 
 
 > **คอนเซปต์**: นักเต้นเนโครแมนเซอร์ที่เรียกโครงกระดูกมาเต้นรำและสู้ด้วยกัน
@@ -138,7 +138,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Dramaturge
 
-**Overall**: A — ขยับขึ้น 5 ใน 7 axis (Control/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มแต่ไม่มี axis ไหนถึง S เพิ่มจาก baseline เลย
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 ใน 7 axis (Control/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มแต่ไม่มี axis ไหนถึง S เพิ่มจาก baseline เลย
 
 
 > **คอนเซปต์**: นักแสดงที่ใช้เวทมนตร์การแสดงควบคู่กับการเต้น
@@ -155,7 +155,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Fencer
 
-**Overall**: B — ขยับกลางๆ 3 axis (Control/Survivability/AE) Support/Utility/Versatility นิ่งสนิท
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Control/Survivability/AE) Support/Utility/Versatility นิ่งสนิท
 
 
 > **คอนเซปต์**: นักฟันดาบมือเดียวที่ปัดป้องและแทงสวนแม่นยำ
@@ -172,7 +172,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Fey Ballerina
 
-**Overall**: B — Survivability เป็น S (9/10) แต่ Control/Support/Action Economy นิ่งสนิททั้งหมด แคบเหมือน Contortionist แต่ breadth น้อยกว่า
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S (9/10) แต่ Control/Support/Action Economy นิ่งสนิททั้งหมด แคบเหมือน Contortionist แต่ breadth น้อยกว่า
 
 
 > **คอนเซปต์**: นักบัลเลต์ที่ได้พรจากภาคีเฟย์ให้เต้นได้สมบูรณ์แบบ
@@ -189,7 +189,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Fire Dancer
 
-**Overall**: B — ขยับกลางๆ 3 axis (Control/Survivability/Versatility) Support/Utility นิ่งสนิท
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Control/Survivability/Versatility) Support/Utility นิ่งสนิท
 
 
 > **คอนเซปต์**: นักเล่นไฟที่พ่นเปลวเพลิงใส่ศัตรูเป็นวงกว้าง
@@ -206,7 +206,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Harlequin
 
-**Overall**: C — มีแค่ Control/Action Economy ที่ขยับเล็กน้อย Support/Survivability/Utility/Versatility นิ่งสนิททั้งหมด แคบที่สุดในกลุ่ม
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Control/Action Economy ที่ขยับเล็กน้อย Support/Survivability/Utility/Versatility นิ่งสนิททั้งหมด แคบที่สุดในกลุ่ม
 
 
 > **คอนเซปต์**: ตัวตลกนักกายกรรมที่ล้อเลียนและปาดาบเป้าหมาย
@@ -223,7 +223,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Marionettist
 
-**Overall**: S — Control กระโดด +6 (3→9, C→S) — เลข Control สูงสุดในบรรดา Dancer ทุกตัว บวก Support ขยับบางส่วน (0→3) และ Utility/Versatility ตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +6 (3→9, C→S) — เลข Control สูงสุดในบรรดา Dancer ทุกตัว บวก Support ขยับบางส่วน (0→3) และ Utility/Versatility ตาม
 
 
 > **คอนเซปต์**: นักเชิดหุ่นที่บังคับศัตรูให้กลายเป็นตุ๊กตาของตัวเอง
@@ -240,7 +240,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Mime
 
-**Overall**: B — Control ขยับ +4 (A) บวก Utility เล็กน้อย Support/Survivability/Action Economy นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control ขยับ +4 (A) บวก Utility เล็กน้อย Support/Survivability/Action Economy นิ่งสนิท
 
 
 > **คอนเซปต์**: นักแสดงใบ้ที่ทำให้ของสมมติกลายเป็นของจริง
@@ -257,7 +257,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Shadow Dancer
 
-**Overall**: B — ขยับกลางๆ 3 axis (Survivability/Utility/Versatility) เหมือน Acrobat ไม่มี peak ใหม่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Survivability/Utility/Versatility) เหมือน Acrobat ไม่มี peak ใหม่
 
 
 > **คอนเซปต์**: นักเต้นที่มีเงาของตัวเองเป็นคู่เต้นและโล่กำบัง
@@ -274,7 +274,7 @@ Floor 0-10 ต่อ axis ของ **Dancer เปล่าๆ ไม่นั�
 
 ### Steelsinger
 
-**Overall**: S — Survivability พุ่งเป็น 10/10 (S) สูงสุดในกลุ่มทั้งหมด บวก Support กระโดดจาก 0 เป็น 8 (A) และ Versatility ขยับตาม — สองจุดแข็งใหญ่พร้อมกัน
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability พุ่งเป็น 10/10 (S) สูงสุดในกลุ่มทั้งหมด บวก Support กระโดดจาก 0 เป็น 8 (A) และ Versatility ขยับตาม — สองจุดแข็งใหญ่พร้อมกัน
 
 
 > **คอนเซปต์**: นักเต้นเกราะหนักที่ปัดป้องดาเมจและปกป้องทีม

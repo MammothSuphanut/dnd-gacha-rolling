@@ -36,18 +36,18 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 | Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|
-| Order of the Avatar | S | 5 (B) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
-| Order of the Awakened | A | 5 (B) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 8 (A) | 8 (A) |
-| Order of the Immortal | A | 5 (B) | 3 (C) | 0 (D) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
-| Order of the Nomad | A | 5 (B) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 8 (A) | 8 (A) |
-| Order of the Soul Knife | A | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Order of the Wu Jen | A | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 9 (S) |
+| Order of the Avatar | B | 5 (B) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Order of the Awakened | B | 5 (B) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 8 (A) | 8 (A) |
+| Order of the Immortal | C | 5 (B) | 3 (C) | 0 (D) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
+| Order of the Nomad | B | 5 (B) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 8 (A) | 8 (A) |
+| Order of the Soul Knife | C | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Order of the Wu Jen | B | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 9 (S) |
 
 ---
 
 ### Order of the Avatar
 
-**Overall**: S — ออร่าบัฟทีมสามชั้น (initiative/heal/speed) ทำงานตลอดเวลาโดยไม่เสีย resource เลย บวก Survivability A และ Versatility A คู่กัน ไม่มี axis ไหนถูกตัดทอนต่ำกว่า baseline สักตัว ทำให้เป็นตัวเสริมทีมที่แทบไม่มีจุดอ่อนเลย
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ออร่าบัฟทีมสามชั้น (initiative/heal/speed) ทำงานตลอดเวลาโดยไม่เสีย resource เลย บวก Survivability A และ Versatility A คู่กัน ไม่มี axis ไหนถูกตัดทอนต่ำกว่า baseline สักตัว ทำให้เป็นตัวเสริมทีมที่แทบไม่มีจุดอ่อนเลย
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -61,7 +61,7 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Awakened
 
-**Overall**: A — Survivability S (Spectral Form resist ทุกดาเมจ) + Utility/Versatility A คู่กัน + Control ขยับขึ้นมาเป็น B จาก baseline C แต่ Support เป็น 0 เต็ม (ไม่มี feature เสริมทีมเลย) ทำให้พึ่งเพื่อนร่วมทีมด้าน support แทน ไม่ถึงขั้น S เหมือน Avatar
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability S (Spectral Form resist ทุกดาเมจ) + Utility/Versatility A คู่กัน + Control ขยับขึ้นมาเป็น B จาก baseline C แต่ Support เป็น 0 เต็ม (ไม่มี feature เสริมทีมเลย) ทำให้พึ่งเพื่อนร่วมทีมด้าน support แทน ไม่ถึงขั้น S เหมือน Avatar
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -75,7 +75,7 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Immortal
 
-**Overall**: A — Survivability 10/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (แทงค์ตัวจริง แทบตายไม่ได้) แต่ Support เป็น 0 เต็มและ Control/Utility ค้างที่ baseline ทำให้เป็น one-trick tank ที่เก่งด้าน survive สุดขั้วแต่ไม่ขยาย role อื่นเลย
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability 10/10 คือคะแนนสูงสุดทั้งไฟล์นี้ (แทงค์ตัวจริง แทบตายไม่ได้) แต่ Support เป็น 0 เต็มและ Control/Utility ค้างที่ baseline ทำให้เป็น one-trick tank ที่เก่งด้าน survive สุดขั้วแต่ไม่ขยาย role อื่นเลย
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -89,7 +89,7 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Nomad
 
-**Overall**: A — Survivability S ผ่านการหนี/เทเลพอร์ตแทนการแท้งค์ + Action Economy/Utility/Versatility A ทั้งสามแกน กระจาย breadth ได้กว้างกว่า Immortal มาก แม้ Support จะเป็น 0 เหมือนกันก็ตาม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability S ผ่านการหนี/เทเลพอร์ตแทนการแท้งค์ + Action Economy/Utility/Versatility A ทั้งสามแกน กระจาย breadth ได้กว้างกว่า Immortal มาก แม้ Support จะเป็น 0 เหมือนกันก็ตาม
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -103,7 +103,7 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Soul Knife
 
-**Overall**: A — Damage A (8/10) สูงสุดในกลุ่มร่วมกับ Wu Jen บวก Survivability/Action Economy A คู่กัน เป็น striker ที่ตีแรง+อึดพร้อมกัน แม้ Support จะเป็น 0 เหมือนตัวอื่นในคลาสนี้
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage A (8/10) สูงสุดในกลุ่มร่วมกับ Wu Jen บวก Survivability/Action Economy A คู่กัน เป็น striker ที่ตีแรง+อึดพร้อมกัน แม้ Support จะเป็น 0 เหมือนตัวอื่นในคลาสนี้
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -117,7 +117,7 @@ Floor 0-10 ต่อ axis ของ **Mystic เปล่าๆ ไม่นั�
 
 ### Order of the Wu Jen
 
-**Overall**: A — Versatility 9/10 สูงสุดในกลุ่ม (hybrid psionics-wizard เต็มระบบ) บวก Damage/Survivability/Action Economy/Utility ล้วน A ทั้งหมด กว้างที่สุดในบรรดา Order ทั้ง 6 แต่ Support ยังเป็น 0 เหมือนเดิม เลยไม่ถึง S แบบ Avatar ที่ครบทุก role จริงๆ
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility 9/10 สูงสุดในกลุ่ม (hybrid psionics-wizard เต็มระบบ) บวก Damage/Survivability/Action Economy/Utility ล้วน A ทั้งหมด กว้างที่สุดในบรรดา Order ทั้ง 6 แต่ Support ยังเป็น 0 เหมือนเดิม เลยไม่ถึง S แบบ Avatar ที่ครบทุก role จริงๆ
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

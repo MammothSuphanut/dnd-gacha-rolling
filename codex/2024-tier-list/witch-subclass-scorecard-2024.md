@@ -34,25 +34,25 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Black Magic | B | ValdaSpire24 | 8 (A) | 6 (B) | 0 (D) | 5 (B) | 8 (A) | 7 (A) | 6 (B) |
-| Blood Magic | A | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 3 (C) | 9 (S) | 8 (A) | 6 (B) |
-| Blue Magic | S | ValdaSpire24Extras | 8 (A) | 7 (A) | 0 (D) | 5 (B) | 8 (A) | 9 (S) | 9 (S) |
-| Fragrant Magic | S | ValdaSpire24Extras | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 7 (A) |
+| Black Magic | C | ValdaSpire24 | 8 (A) | 6 (B) | 0 (D) | 5 (B) | 8 (A) | 7 (A) | 6 (B) |
+| Blood Magic | B | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 3 (C) | 9 (S) | 8 (A) | 6 (B) |
+| Blue Magic | A | ValdaSpire24Extras | 8 (A) | 7 (A) | 0 (D) | 5 (B) | 8 (A) | 9 (S) | 9 (S) |
+| Fragrant Magic | A | ValdaSpire24Extras | 7 (A) | 7 (A) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 7 (A) |
 | Gingerbread Magic | A | ValdaSpire24Extras | 7 (A) | 6 (B) | 7 (A) | 5 (B) | 8 (A) | 7 (A) | 7 (A) |
 | Green Magic | A | ValdaSpire24 | 8 (A) | 6 (B) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 7 (A) |
-| Purple Magic | C | ValdaSpire24 | 7 (A) | 8 (A) | 0 (D) | 3 (C) | 7 (A) | 8 (A) | 7 (A) |
-| Red Magic | A | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
-| Sky Magic | A | ValdaSpire24Extras | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
+| Purple Magic | B | ValdaSpire24 | 7 (A) | 8 (A) | 0 (D) | 3 (C) | 7 (A) | 8 (A) | 7 (A) |
+| Red Magic | B | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 7 (A) | 7 (A) | 7 (A) | 6 (B) |
+| Sky Magic | B | ValdaSpire24Extras | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
 | Steel Magic | B | ValdaSpire24 | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 7 (A) | 6 (B) |
-| Tea Magic | S | ValdaSpire24 | 7 (A) | 6 (B) | 8 (A) | 5 (B) | 8 (A) | 9 (S) | 8 (A) |
+| Tea Magic | A | ValdaSpire24 | 7 (A) | 6 (B) | 8 (A) | 5 (B) | 8 (A) | 9 (S) | 8 (A) |
 | Technicolor Magic | A | ValdaSpire24 | 7 (A) | 7 (A) | 4 (C) | 7 (A) | 8 (A) | 8 (A) | 7 (A) |
-| White Magic | S | ValdaSpire24 | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 8 (A) | 7 (A) | 6 (B) |
+| White Magic | A | ValdaSpire24 | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 8 (A) | 7 (A) | 6 (B) |
 
 ---
 
 ### Black Magic (ValdaSpire24)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Damage/Survivability/Action Economy) ไม่มี peak ถึง S เลย Support ยังเป็น 0 เต็ม
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Damage/Survivability/Action Economy) ไม่มี peak ถึง S เลย Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -67,7 +67,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Blood Magic (ValdaSpire24)
 
-**Overall**: A — Damage และ Action Economy เป็น S ทั้งคู่ (9/10) แต่ Support ยังเป็น 0 เต็มและ Survivability ไม่ขยับเลย — peak แรงแต่ breadth แคบ
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ทั้งคู่ (9/10) แต่ Support ยังเป็น 0 เต็มและ Survivability ไม่ขยับเลย — peak แรงแต่ breadth แคบ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -82,7 +82,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Blue Magic (ValdaSpire24Extras)
 
-**Overall**: S — Utility และ Versatility เป็น S ทั้งคู่ บวกขยับขึ้นอีก 4 axis (Damage/Control/Survivability/AE) กว้างที่สุดในกลุ่ม มีแค่ Support ที่ยังไม่ขยับ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ทั้งคู่ บวกขยับขึ้นอีก 4 axis (Damage/Control/Survivability/AE) กว้างที่สุดในกลุ่ม มีแค่ Support ที่ยังไม่ขยับ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -97,7 +97,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Fragrant Magic (ValdaSpire24Extras)
 
-**Overall**: S — Support กระโดดจาก 0 (D) เป็น 8 (A) — แก้จุดอ่อนใหญ่สุดของ baseline ได้ บวกอีก 4 axis ขยับตามแบบกลางๆ (Control/Survivability/Utility/Versatility)
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 8 (A) — แก้จุดอ่อนใหญ่สุดของ baseline ได้ บวกอีก 4 axis ขยับตามแบบกลางๆ (Control/Survivability/Utility/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -112,7 +112,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Gingerbread Magic (ValdaSpire24Extras)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวก Survivability/Action Economy/Versatility ขยับตามเล็กน้อย
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 7 (A) บวก Survivability/Action Economy/Versatility ขยับตามเล็กน้อย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -127,7 +127,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Green Magic (ValdaSpire24)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวก Survivability ขยับ +3 และ Damage/AE/Versatility ขยับเล็กน้อย
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 7 (A) บวก Survivability ขยับ +3 และ Damage/AE/Versatility ขยับเล็กน้อย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -142,7 +142,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Purple Magic (ValdaSpire24)
 
-**Overall**: C — มีแค่ Control/Utility/Versatility ที่ขยับเล็กน้อย Support และ Survivability (สอง axis อ่อนสุดของ baseline) ไม่ถูกแตะเลย
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Control/Utility/Versatility ที่ขยับเล็กน้อย Support และ Survivability (สอง axis อ่อนสุดของ baseline) ไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -157,7 +157,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Red Magic (ValdaSpire24)
 
-**Overall**: A — Damage เป็น S บวก Survivability กระโดด +4 (C→A) แต่ Support ยังเป็น 0 เต็ม
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวก Survivability กระโดด +4 (C→A) แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -172,7 +172,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Sky Magic (ValdaSpire24Extras)
 
-**Overall**: A — Survivability กระโดด +4 (C→A) บวก Control/Action Economy/Utility ขยับเล็กน้อยทั่ว แต่ Support ไม่ถูกแตะ
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +4 (C→A) บวก Control/Action Economy/Utility ขยับเล็กน้อยทั่ว แต่ Support ไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -187,7 +187,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Steel Magic (ValdaSpire24)
 
-**Overall**: B — Damage เป็น S บวก Survivability ขยับ +3 แต่ Support ยังเป็น 0 เต็ม และ Control/Utility/Versatility นิ่งสนิท
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวก Survivability ขยับ +3 แต่ Support ยังเป็น 0 เต็ม และ Control/Utility/Versatility นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -202,7 +202,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Tea Magic (ValdaSpire24)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 8 (A) บวก Utility เป็น S และขยับอีก 3 axis ตาม (Survivability/AE/Versatility) กว้างที่สุดร่วมกับ Blue Magic/Fragrant Magic
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 8 (A) บวก Utility เป็น S และขยับอีก 3 axis ตาม (Survivability/AE/Versatility) กว้างที่สุดร่วมกับ Blue Magic/Fragrant Magic
 
 
 | Axis | คะแนน | เหตุผล |
@@ -217,7 +217,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### Technicolor Magic (ValdaSpire24)
 
-**Overall**: A — ขยับขึ้น 6 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มแต่ไม่มี axis ไหนถึง S เลยสักตัว
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 6 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มแต่ไม่มี axis ไหนถึง S เลยสักตัว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -232,7 +232,7 @@ Floor 0-10 ต่อ axis ของ **Witch เปล่าๆ ไม่นั�
 
 ### White Magic (ValdaSpire24)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 9 (S) — เลขสูงสุดในบรรดา Witch ทุกตัวที่แก้จุดอ่อนนี้ บวก Survivability ขยับ +3
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 9 (S) — เลขสูงสุดในบรรดา Witch ทุกตัวที่แก้จุดอ่อนนี้ บวก Survivability ขยับ +3
 
 
 | Axis | คะแนน | เหตุผล |

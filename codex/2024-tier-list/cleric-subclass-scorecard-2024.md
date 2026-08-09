@@ -34,31 +34,31 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Ambition Domain | C | PSA 🕰️ | 6 (B) | 6 (B) | 8 (A) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Ambition Domain | B | PSA 🕰️ | 6 (B) | 6 (B) | 8 (A) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
 | Arcana Domain | A | SCAG 🕰️ | 7 (A) | 7 (A) | 8 (A) | 7 (A) | 7 (A) | 8 (A) | 8 (A) |
-| Death Domain | C | DMG 🕰️ | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 6 (B) | 6 (B) | 7 (A) |
-| Destruction Domain | C | VSS 🕰️ | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Death Domain | B | DMG 🕰️ | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 6 (B) | 6 (B) | 7 (A) |
+| Destruction Domain | A | VSS 🕰️ | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
 | Eldritch Domain | A | GrimHollowPG24 | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 7 (A) | 6 (B) | 8 (A) |
 | Forge Domain | A | XGE 🕰️ | 7 (A) | 5 (B) | 8 (A) | 9 (S) | 6 (B) | 7 (A) | 7 (A) |
-| Grave Domain | S | RHW | 8 (A) | 7 (A) | 10 (S) | 8 (A) | 7 (A) | 6 (B) | 8 (A) |
+| Grave Domain | A | RHW | 8 (A) | 7 (A) | 10 (S) | 8 (A) | 7 (A) | 6 (B) | 8 (A) |
 | Inquisition Domain | A | GrimHollowPG24 | 8 (A) | 5 (B) | 9 (S) | 8 (A) | 7 (A) | 6 (B) | 8 (A) |
-| Knowledge Domain | S | FRHoF | 6 (B) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 9 (S) | 9 (S) |
+| Knowledge Domain | A | FRHoF | 6 (B) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 9 (S) | 9 (S) |
 | Life Domain | A | XPHB | 6 (B) | 5 (B) | 10 (S) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
 | Light Domain | A | XPHB | 7 (A) | 5 (B) | 9 (S) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
 | Madness Domain | B | VSS 🕰️ | 6 (B) | 8 (A) | 8 (A) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
-| Nature Domain | C | PHB 🕰️ | 6 (B) | 6 (B) | 8 (A) | 8 (A) | 6 (B) | 6 (B) | 7 (A) |
+| Nature Domain | B | PHB 🕰️ | 6 (B) | 6 (B) | 8 (A) | 8 (A) | 6 (B) | 6 (B) | 7 (A) |
 | Order Domain | A | TCE 🕰️ | 6 (B) | 7 (A) | 9 (S) | 7 (A) | 8 (A) | 6 (B) | 8 (A) |
 | Peace Domain | A | TCE 🕰️ | 6 (B) | 5 (B) | 10 (S) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
 | Pestilence Domain | A | ValdaSpire24Extras | 7 (A) | 8 (A) | 8 (A) | 7 (A) | 7 (A) | 7 (A) | 8 (A) |
-| Purification Domain | S | GrimHollowPG24 | 8 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
+| Purification Domain | A | GrimHollowPG24 | 8 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
 | Rum Domain | B | VSS 🕰️ | 6 (B) | 6 (B) | 8 (A) | 8 (A) | 7 (A) | 6 (B) | 8 (A) |
-| Solidarity Domain | B | PSA 🕰️ | 6 (B) | 5 (B) | 10 (S) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Strength Domain | C | PSA 🕰️ | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 6 (B) | 6 (B) | 7 (A) |
-| Tempest Domain | B | PHB 🕰️ | 8 (A) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 8 (A) |
+| Solidarity Domain | A | PSA 🕰️ | 6 (B) | 5 (B) | 10 (S) | 7 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Strength Domain | B | PSA 🕰️ | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 6 (B) | 6 (B) | 7 (A) |
+| Tempest Domain | A | PHB 🕰️ | 8 (A) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 8 (A) |
 | Travel Domain | A | VSS 🕰️ | 7 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
-| Trickery Domain | S | XPHB | 6 (B) | 5 (B) | 9 (S) | 8 (A) | 7 (A) | 7 (A) | 8 (A) |
-| Twilight Domain | S | TCE 🕰️ | 6 (B) | 5 (B) | 9 (S) | 8 (A) | 7 (A) | 7 (A) | 8 (A) |
-| War Domain | S | XPHB | 8 (A) | 5 (B) | 9 (S) | 8 (A) | 8 (A) | 6 (B) | 8 (A) |
+| Trickery Domain | A | XPHB | 6 (B) | 5 (B) | 9 (S) | 8 (A) | 7 (A) | 7 (A) | 8 (A) |
+| Twilight Domain | A | TCE 🕰️ | 6 (B) | 5 (B) | 9 (S) | 8 (A) | 7 (A) | 7 (A) | 8 (A) |
+| War Domain | A | XPHB | 8 (A) | 5 (B) | 9 (S) | 8 (A) | 8 (A) | 6 (B) | 8 (A) |
 | Wealth Domain | B | VSS 🕰️ | 6 (B) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 8 (A) | 8 (A) |
 | Zeal Domain | A | PSA 🕰️ | 9 (S) | 6 (B) | 8 (A) | 7 (A) | 8 (A) | 6 (B) | 8 (A) |
 
@@ -66,7 +66,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Ambition Domain (PSA 🕰️)
 
-**Overall**: C — ขยับแค่ 3 axis เล็กน้อย (Control/Survivability/Versatility) ไม่มี peak ใหม่ แคบที่สุดในกลุ่มร่วมกับ Death/Nature/Strength Domain
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 3 axis เล็กน้อย (Control/Survivability/Versatility) ไม่มี peak ใหม่ แคบที่สุดในกลุ่มร่วมกับ Death/Nature/Strength Domain
 
 
 | Axis | คะแนน | เหตุผล |
@@ -81,7 +81,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Arcana Domain (SCAG 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน กว้างที่สุดในกลุ่มที่ไม่มี S
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน กว้างที่สุดในกลุ่มที่ไม่มี S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -96,7 +96,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Death Domain (DMG 🕰️)
 
-**Overall**: C — ขยับแค่ Damage +2 แกนเดียว ที่เหลือนิ่งสนิททั้งหมด
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ Damage +2 แกนเดียว ที่เหลือนิ่งสนิททั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -111,7 +111,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Destruction Domain (VSS 🕰️)
 
-**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Damage/AE) ไม่มี peak ใหม่
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Damage/AE) ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -126,7 +126,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Eldritch Domain (GrimHollowPG24)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -141,7 +141,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Forge Domain (XGE 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ (กระโดด +2) บวก Damage/Utility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ (กระโดด +2) บวก Damage/Utility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -156,7 +156,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Grave Domain (RHW)
 
-**Overall**: S — Support พุ่งเป็น 10/10 (S เต็มสเกล) บวกขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่ม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support พุ่งเป็น 10/10 (S เต็มสเกล) บวกขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -171,7 +171,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Inquisition Domain (GrimHollowPG24)
 
-**Overall**: A — Support เป็น S ใหม่ บวก Damage/Survivability/AE ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S ใหม่ บวก Damage/Survivability/AE ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -186,7 +186,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Knowledge Domain (FRHoF)
 
-**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ (Utility กระโดด +3)
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ใหม่ทั้งคู่ (Utility กระโดด +3)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -201,7 +201,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Life Domain (XPHB)
 
-**Overall**: A — Support พุ่งเป็น 10/10 (S เต็มสเกล) บวก Survivability ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support พุ่งเป็น 10/10 (S เต็มสเกล) บวก Survivability ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -216,7 +216,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Light Domain (XPHB)
 
-**Overall**: A — Support เป็น S ใหม่ บวก Damage/Survivability ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S ใหม่ บวก Damage/Survivability ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -231,7 +231,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Madness Domain (VSS 🕰️)
 
-**Overall**: B — Control กระโดด +3 บวก Survivability/Versatility ขยับตาม ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +3 บวก Survivability/Versatility ขยับตาม ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -246,7 +246,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Nature Domain (PHB 🕰️)
 
-**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Control/Survivability) ไม่มี peak ใหม่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Control/Survivability) ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -261,7 +261,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Order Domain (TCE 🕰️)
 
-**Overall**: A — Support เป็น S ใหม่ บวก Control/AE/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S ใหม่ บวก Control/AE/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -276,7 +276,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Peace Domain (TCE 🕰️)
 
-**Overall**: A — Support พุ่งเป็น 10/10 (S เต็มสเกล) บวก Survivability/AE ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support พุ่งเป็น 10/10 (S เต็มสเกล) บวก Survivability/AE ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -291,7 +291,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Pestilence Domain (ValdaSpire24Extras)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -306,7 +306,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Purification Domain (GrimHollowPG24)
 
-**Overall**: S — ขยับขึ้น 6 ใน 7 axis พร้อมกัน (มีแค่ Support ที่นิ่ง) กว้างที่สุดในกลุ่มที่ไม่มี S peak เดี่ยว
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 6 ใน 7 axis พร้อมกัน (มีแค่ Support ที่นิ่ง) กว้างที่สุดในกลุ่มที่ไม่มี S peak เดี่ยว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -321,7 +321,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Rum Domain (VSS 🕰️)
 
-**Overall**: B — ขยับกลางๆ 4 axis เล็กน้อย ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 4 axis เล็กน้อย ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -336,7 +336,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Solidarity Domain (PSA 🕰️)
 
-**Overall**: B — Support พุ่งเป็น 10/10 (S เต็มสเกล) แต่ breadth แคบมาก มีแค่ AE ที่ขยับตามอีกนิด
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support พุ่งเป็น 10/10 (S เต็มสเกล) แต่ breadth แคบมาก มีแค่ AE ที่ขยับตามอีกนิด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -351,7 +351,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Strength Domain (PSA 🕰️)
 
-**Overall**: C — ขยับแค่ Survivability +1 แกนเดียว ที่เหลือนิ่งสนิททั้งหมด แคบที่สุดในกลุ่ม
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ Survivability +1 แกนเดียว ที่เหลือนิ่งสนิททั้งหมด แคบที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -366,7 +366,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Tempest Domain (PHB 🕰️)
 
-**Overall**: B — ขยับกลางๆ 4 axis (Damage/Control/Utility/Versatility) ไม่มี peak ถึง S
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 4 axis (Damage/Control/Utility/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -381,7 +381,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Travel Domain (VSS 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis กลางๆ พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -396,7 +396,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Trickery Domain (XPHB)
 
-**Overall**: S — Support เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Survivability/AE/Utility/Versatility)
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Survivability/AE/Utility/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -411,7 +411,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Twilight Domain (TCE 🕰️)
 
-**Overall**: S — รูปแบบเดียวกับ Trickery Domain — Support เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) รูปแบบเดียวกับ Trickery Domain — Support เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -426,7 +426,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### War Domain (XPHB)
 
-**Overall**: S — Support เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Survivability/AE/Versatility)
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Survivability/AE/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -441,7 +441,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Wealth Domain (VSS 🕰️)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Control/Utility/Versatility) ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Control/Utility/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -456,7 +456,7 @@ Floor 0-10 ต่อ axis ของ **Cleric เปล่าๆ ไม่นั�
 
 ### Zeal Domain (PSA 🕰️)
 
-**Overall**: A — Damage เป็น S ใหม่ บวก Control/AE/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Control/AE/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |

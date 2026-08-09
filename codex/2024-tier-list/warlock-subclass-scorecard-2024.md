@@ -35,30 +35,30 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
 | The Archfey | A | XPHB | 8 (A) | 7 (A) | 3 (C) | 8 (A) | 7 (A) | 7 (A) | 7 (A) |
-| The Celestial | S | XPHB | 7 (A) | 5 (B) | 9 (S) | 4 (C) | 6 (B) | 7 (A) | 6 (B) |
-| The Coven | A | GrimHollowPG24 | 8 (A) | 9 (S) | 2 (D) | 3 (C) | 6 (B) | 8 (A) | 7 (A) |
+| The Celestial | B | XPHB | 7 (A) | 5 (B) | 9 (S) | 4 (C) | 6 (B) | 7 (A) | 6 (B) |
+| The Coven | B | GrimHollowPG24 | 8 (A) | 9 (S) | 2 (D) | 3 (C) | 6 (B) | 8 (A) | 7 (A) |
 | The Dead Mists | C | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 4 (C) | 7 (A) | 7 (A) | 5 (B) |
-| The Fathomless | A | TCE 🕰️ | 8 (A) | 8 (A) | 4 (C) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
-| The Fiend | A | XPHB | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
-| The First Vampire Patron | A | GrimHollowPG24 | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
-| The Genie | S | TCE 🕰️ | 8 (A) | 5 (B) | 4 (C) | 5 (B) | 7 (A) | 9 (S) | 8 (A) |
-| The GM | A | VSS 🕰️ | 8 (A) | 5 (B) | 5 (B) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
-| The Great Old One | A | XPHB | 8 (A) | 8 (A) | 0 (D) | 4 (C) | 7 (A) | 7 (A) | 7 (A) |
-| The Hexblade | A | XGE 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 7 (A) | 7 (A) | 6 (B) |
-| The Legacy | S | VSS 🕰️ | 9 (S) | 5 (B) | 7 (A) | 5 (B) | 6 (B) | 7 (A) | 7 (A) |
-| The Magician | S | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 4 (C) | 6 (B) | 9 (S) | 9 (S) |
-| The Parasite Patron | S | GrimHollowPG24 | 7 (A) | 9 (S) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
-| The Symbiont | B | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 7 (A) | 7 (A) |
-| The Undead | A | VRGR 🕰️ | 8 (A) | 6 (B) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 6 (B) |
+| The Fathomless | B | TCE 🕰️ | 8 (A) | 8 (A) | 4 (C) | 4 (C) | 7 (A) | 7 (A) | 6 (B) |
+| The Fiend | B | XPHB | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
+| The First Vampire Patron | B | GrimHollowPG24 | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 8 (A) | 6 (B) |
+| The Genie | B | TCE 🕰️ | 8 (A) | 5 (B) | 4 (C) | 5 (B) | 7 (A) | 9 (S) | 8 (A) |
+| The GM | B | VSS 🕰️ | 8 (A) | 5 (B) | 5 (B) | 6 (B) | 7 (A) | 7 (A) | 8 (A) |
+| The Great Old One | B | XPHB | 8 (A) | 8 (A) | 0 (D) | 4 (C) | 7 (A) | 7 (A) | 7 (A) |
+| The Hexblade | B | XGE 🕰️ | 9 (S) | 5 (B) | 0 (D) | 5 (B) | 7 (A) | 7 (A) | 6 (B) |
+| The Legacy | A | VSS 🕰️ | 9 (S) | 5 (B) | 7 (A) | 5 (B) | 6 (B) | 7 (A) | 7 (A) |
+| The Magician | B | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 4 (C) | 6 (B) | 9 (S) | 9 (S) |
+| The Parasite Patron | A | GrimHollowPG24 | 7 (A) | 9 (S) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 8 (A) |
+| The Symbiont | C | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 7 (A) | 7 (A) |
+| The Undead | C | VRGR 🕰️ | 8 (A) | 6 (B) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 6 (B) |
 | The Undying | C | SCAG 🕰️ | 7 (A) | 5 (B) | 0 (D) | 6 (B) | 6 (B) | 7 (A) | 5 (B) |
-| Undead Patron | S | RHW | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 7 (A) |
-| Future You Patron | S | ValdaPlayerPack | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) | 8 (A) |
+| Undead Patron | B | RHW | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 8 (A) | 7 (A) |
+| Future You Patron | A | ValdaPlayerPack | 8 (A) | 7 (A) | 6 (B) | 7 (A) | 7 (A) | 9 (S) | 8 (A) |
 
 ---
 
 ### The Archfey (XPHB)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +5 (C→A) และขยับขึ้นอีก 5 axis พร้อมกัน กว้างที่สุดในกลุ่มที่ไม่มี S
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +5 (C→A) และขยับขึ้นอีก 5 axis พร้อมกัน กว้างที่สุดในกลุ่มที่ไม่มี S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -73,7 +73,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Celestial (XPHB)
 
-**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในทั้งคลาส
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในทั้งคลาส
 
 
 | Axis | คะแนน | เหตุผล |
@@ -88,7 +88,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Coven (GrimHollowPG24)
 
-**Overall**: A — Control เป็น S ใหม่ (กระโดด +4) บวก Utility/Versatility ขยับตาม แต่ Support ยังแทบเป็น 0 (2/10)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control เป็น S ใหม่ (กระโดด +4) บวก Utility/Versatility ขยับตาม แต่ Support ยังแทบเป็น 0 (2/10)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -103,7 +103,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Dead Mists (VSS 🕰️)
 
-**Overall**: C — ขยับแค่ 2 axis เล็กน้อย (Survivability/AE) Support ยังเป็น 0 เต็ม
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Survivability/AE) Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -118,7 +118,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Fathomless (TCE 🕰️)
 
-**Overall**: A — Control กระโดด +3 บวก Support ขยับบางส่วน (0→4) และขยับตามอีก 2 axis
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +3 บวก Support ขยับบางส่วน (0→4) และขยับตามอีก 2 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -133,7 +133,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Fiend (XPHB)
 
-**Overall**: A — Damage เป็น S ใหม่ บวก Survivability/Action Economy ขยับตาม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Survivability/Action Economy ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -148,7 +148,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The First Vampire Patron (GrimHollowPG24)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -163,7 +163,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Genie (TCE 🕰️)
 
-**Overall**: S — Utility เป็น S ใหม่ บวก Versatility กระโดด +3 และ Support ขยับบางส่วน (0→4) กว้างมาก
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ บวก Versatility กระโดด +3 และ Support ขยับบางส่วน (0→4) กว้างมาก
 
 
 | Axis | คะแนน | เหตุผล |
@@ -178,7 +178,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The GM (VSS 🕰️)
 
-**Overall**: A — Support กระโดด +5 (0→5, D→B) บวก Survivability/Versatility ขยับตาม ไม่มี axis ไหนถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +5 (0→5, D→B) บวก Survivability/Versatility ขยับตาม ไม่มี axis ไหนถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -193,7 +193,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Great Old One (XPHB)
 
-**Overall**: A — Control กระโดด +3 บวกขยับขึ้นอีก 3 axis กลางๆ Support ยังเป็น 0 เต็ม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +3 บวกขยับขึ้นอีก 3 axis กลางๆ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -208,7 +208,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Hexblade (XGE 🕰️)
 
-**Overall**: A — Damage เป็น S ใหม่ แต่ breadth แคบ (แค่ Survivability/AE ขยับตามเล็กน้อย) Support ยังเป็น 0
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ แต่ breadth แคบ (แค่ Survivability/AE ขยับตามเล็กน้อย) Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -223,7 +223,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Legacy (VSS 🕰️)
 
-**Overall**: S — Damage เป็น S ใหม่ บวก Support กระโดดจาก 0 เป็น 7 (D→A) — สองจุดแข็งใหญ่พร้อมกัน
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Support กระโดดจาก 0 เป็น 7 (D→A) — สองจุดแข็งใหญ่พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -238,7 +238,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Magician (VSS 🕰️)
 
-**Overall**: S — Utility และ Versatility เป็น S ใหม่ทั้งคู่ (Versatility กระโดด +4) แม้ Support จะยังเป็น 0 เต็มก็ตาม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ใหม่ทั้งคู่ (Versatility กระโดด +4) แม้ Support จะยังเป็น 0 เต็มก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -253,7 +253,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Parasite Patron (GrimHollowPG24)
 
-**Overall**: S — Control เป็น S ใหม่ (กระโดด +4) บวก Survivability กระโดด +5 และขยับขึ้นอีก 3 axis กว้างมาก แม้ Support จะยังเป็น 0
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control เป็น S ใหม่ (กระโดด +4) บวก Survivability กระโดด +5 และขยับขึ้นอีก 3 axis กว้างมาก แม้ Support จะยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -268,7 +268,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Symbiont (VSS 🕰️)
 
-**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Survivability/Versatility) Support ยังเป็น 0 เต็ม
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 3 axis เล็กน้อย (Survivability/Versatility) Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -283,7 +283,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Undead (VRGR 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +4 และขยับขึ้นอีก 3 axis พร้อมกัน
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ Survivability กระโดด +4 และขยับขึ้นอีก 3 axis พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -298,7 +298,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### The Undying (SCAG 🕰️)
 
-**Overall**: C — ขยับแค่ 1 axis (Survivability +3) ที่เหลือเท่า baseline หมด แคบที่สุดในกลุ่มร่วมกับ The Dead Mists
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 1 axis (Survivability +3) ที่เหลือเท่า baseline หมด แคบที่สุดในกลุ่มร่วมกับ The Dead Mists
 
 
 | Axis | คะแนน | เหตุผล |
@@ -313,7 +313,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### Undead Patron (RHW)
 
-**Overall**: S — Damage เป็น S ใหม่ บวก Survivability กระโดด +5 และขยับขึ้นอีก 3 axis กว้างมาก แม้ Support จะยังเป็น 0
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Survivability กระโดด +5 และขยับขึ้นอีก 3 axis กว้างมาก แม้ Support จะยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -328,7 +328,7 @@ Floor 0-10 ต่อ axis ของ **Warlock เปล่าๆ ไม่นั
 
 ### Future You Patron (ValdaPlayerPack)
 
-**Overall**: S — Utility เป็น S ใหม่ บวก Support กระโดด +6 (0→6, D→B) และ Survivability/Versatility ขยับตามอีก — ขยับขึ้น 6 ใน 7 axis กว้างที่สุดในกลุ่มทั้งหมด
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ บวก Support กระโดด +6 (0→6, D→B) และ Survivability/Versatility ขยับตามอีก — ขยับขึ้น 6 ใน 7 axis กว้างที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |

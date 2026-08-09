@@ -34,20 +34,20 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Oath of Conquest | S | XGE 🕰️ | 9 (S) | 8 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Oath of Devotion | A | XPHB | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
+| Oath of Conquest | A | XGE 🕰️ | 9 (S) | 8 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Oath of Devotion | B | XPHB | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
 | Oath of Eternal Night | A | VSS 🕰️ | 8 (A) | 6 (B) | 9 (S) | 9 (S) | 7 (A) | 6 (B) | 7 (A) |
 | Oath of Glory | A | XPHB | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 6 (B) | 7 (A) |
 | Oath of Heresy | A | VSS 🕰️ | 8 (A) | 8 (A) | 9 (S) | 9 (S) | 7 (A) | 4 (C) | 6 (B) |
 | Oath of Pestilence | S | GrimHollowPG24 | 9 (S) | 9 (S) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
 | Oath of Redemption | A | XGE 🕰️ | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 5 (B) | 6 (B) |
 | Oath of Revelry | A | ValdaPlayerPack | 8 (A) | 5 (B) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 8 (A) |
-| Oath of Slaughter | S | GrimHollowPG24 | 10 (S) | 5 (B) | 9 (S) | 9 (S) | 8 (A) | 4 (C) | 6 (B) |
-| Oath of Storms | S | VSS 🕰️ | 9 (S) | 6 (B) | 9 (S) | 9 (S) | 6 (B) | 6 (B) | 6 (B) |
+| Oath of Slaughter | A | GrimHollowPG24 | 10 (S) | 5 (B) | 9 (S) | 9 (S) | 8 (A) | 4 (C) | 6 (B) |
+| Oath of Storms | A | VSS 🕰️ | 9 (S) | 6 (B) | 9 (S) | 9 (S) | 6 (B) | 6 (B) | 6 (B) |
 | Oath of the Ancients | A | XPHB | 7 (A) | 7 (A) | 10 (S) | 10 (S) | 7 (A) | 4 (C) | 7 (A) |
 | Oath of the Crown | A | SCAG 🕰️ | 7 (A) | 7 (A) | 10 (S) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Oath of the Noble Genies | S | FRHoF | 8 (A) | 8 (A) | 10 (S) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
-| Oath of The Sun | S | VSS 🕰️ | 9 (S) | 7 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
+| Oath of the Noble Genies | A | FRHoF | 8 (A) | 8 (A) | 10 (S) | 10 (S) | 7 (A) | 4 (C) | 8 (A) |
+| Oath of The Sun | A | VSS 🕰️ | 9 (S) | 7 (A) | 9 (S) | 9 (S) | 6 (B) | 4 (C) | 6 (B) |
 | Oath of the Watchers | A | TCE 🕰️ | 8 (A) | 7 (A) | 10 (S) | 9 (S) | 6 (B) | 5 (B) | 7 (A) |
 | Oath of Vengeance | A | XPHB | 8 (A) | 7 (A) | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) |
 | Oath of Winter | A | VSS 🕰️ | 8 (A) | 7 (A) | 9 (S) | 10 (S) | 6 (B) | 4 (C) | 6 (B) |
@@ -58,7 +58,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Conquest (XGE 🕰️)
 
-**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ (baseline Survivability เดิมก็ A อยู่แล้วแต่ขยับขึ้นถึง S) บวก Control กระโดด +3
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ใหม่ทั้งคู่ (baseline Survivability เดิมก็ A อยู่แล้วแต่ขยับขึ้นถึง S) บวก Control กระโดด +3
 
 
 | Axis | คะแนน | เหตุผล |
@@ -73,7 +73,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Devotion (XPHB)
 
-**Overall**: A — Survivability ขยับเป็น S ใหม่ (baseline A) แต่ breadth แคบ มีแค่ Versatility ที่ขยับตามอีกนิด
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability ขยับเป็น S ใหม่ (baseline A) แต่ breadth แคบ มีแค่ Versatility ที่ขยับตามอีกนิด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -88,7 +88,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Eternal Night (VSS 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis กลางๆ (Control/AE/Versatility)
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis กลางๆ (Control/AE/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -103,7 +103,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Glory (XPHB)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวก Utility/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวก Utility/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -118,7 +118,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Heresy (VSS 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวก Control กระโดด +3 และ AE/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวก Control กระโดด +3 และ AE/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -133,7 +133,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Pestilence (GrimHollowPG24)
 
-**Overall**: S — 3 axis เป็น S ใหม่พร้อมกัน (Damage, Control กระโดด +4, Survivability) มากที่สุดในกลุ่มร่วมกับ Storms/The Sun
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S ใหม่พร้อมกัน (Damage, Control กระโดด +4, Survivability) มากที่สุดในกลุ่มร่วมกับ Storms/The Sun
 
 
 | Axis | คะแนน | เหตุผล |
@@ -148,7 +148,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Redemption (XGE 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ แต่ breadth แคบ (แค่ Utility/Versatility ขยับตามเล็กน้อย)
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ แต่ breadth แคบ (แค่ Utility/Versatility ขยับตามเล็กน้อย)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -163,7 +163,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Revelry (ValdaPlayerPack)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวก Versatility กระโดด +4 เด่นชัด
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวก Versatility กระโดด +4 เด่นชัด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -178,7 +178,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Slaughter (GrimHollowPG24)
 
-**Overall**: S — Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Survivability เป็น S ใหม่ด้วย และ Action Economy/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Survivability เป็น S ใหม่ด้วย และ Action Economy/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -193,7 +193,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Storms (VSS 🕰️)
 
-**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control/Utility/Versatility ขยับตามอีก 3 axis
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control/Utility/Versatility ขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -208,7 +208,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of the Ancients (XPHB)
 
-**Overall**: A — Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Action Economy/Versatility ขยับตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Action Economy/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -223,7 +223,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of the Crown (SCAG 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวก Control/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวก Control/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -238,7 +238,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of the Noble Genies (FRHoF)
 
-**Overall**: S — Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Control/AE/Versatility) กว้างที่สุดในกลุ่ม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวกขยับขึ้นอีก 4 axis พร้อมกัน (Damage/Control/AE/Versatility) กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -253,7 +253,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of The Sun (VSS 🕰️)
 
-**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -268,7 +268,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of the Watchers (TCE 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis กลางๆ กว้างพอสมควร
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis กลางๆ กว้างพอสมควร
 
 
 | Axis | คะแนน | เหตุผล |
@@ -283,7 +283,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Vengeance (XPHB)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน (Damage/Control/AE/Versatility)
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน (Damage/Control/AE/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -298,7 +298,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Winter (VSS 🕰️)
 
-**Overall**: A — Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Versatility ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -313,7 +313,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oath of Zeal (GrimHollowPG24)
 
-**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวกขยับขึ้นครบเกือบทุก axis (6 ใน 7) กว้างที่สุดในกลุ่มทั้งหมด
+**Overall**: S — (16 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวกขยับขึ้นครบเกือบทุก axis (6 ใน 7) กว้างที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -328,7 +328,7 @@ Floor 0-10 ต่อ axis ของ **Paladin เปล่าๆ ไม่นั
 
 ### Oathbreaker (DMG 🕰️)
 
-**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control กระโดด +3 และขยับตามอีก 2 axis
+**Overall**: S — (16 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวก Control กระโดด +3 และขยับตามอีก 2 axis
 
 
 | Axis | คะแนน | เหตุผล |

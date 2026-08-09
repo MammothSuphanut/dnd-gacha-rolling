@@ -34,16 +34,16 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Order of Blinknights | B | ValdaSpireExtras 🕰️ | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
-| Order of Dimensional Magi | A | ValdaSpireExtras 🕰️ | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 8 (A) |
-| Order of Titanfists | A | ValdaSpireExtras 🕰️ | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
-| Order of Wild Hunters | A | ValdaSpireExtras 🕰️ | 8 (A) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 8 (A) |
+| Order of Blinknights | C | ValdaSpireExtras 🕰️ | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Order of Dimensional Magi | B | ValdaSpireExtras 🕰️ | 8 (A) | 5 (B) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 8 (A) |
+| Order of Titanfists | C | ValdaSpireExtras 🕰️ | 9 (S) | 6 (B) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
+| Order of Wild Hunters | C | ValdaSpireExtras 🕰️ | 8 (A) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 8 (A) |
 
 ---
 
 ### Order of Blinknights (ValdaSpireExtras 🕰️)
 
-**Overall**: B — แค่ 2 ใน 7 axis ขยับจาก baseline (Survivability +2, Utility +2) ที่เหลือเท่า baseline ทั้งหมด ทั้งที่ baseline ของ Channeler เองก็แรงอยู่แล้ว (Damage/Versatility A) — เป็นแค่ generalist กลางๆ ไม่มีจุดเด่นใหม่ชัดเจน
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) แค่ 2 ใน 7 axis ขยับจาก baseline (Survivability +2, Utility +2) ที่เหลือเท่า baseline ทั้งหมด ทั้งที่ baseline ของ Channeler เองก็แรงอยู่แล้ว (Damage/Versatility A) — เป็นแค่ generalist กลางๆ ไม่มีจุดเด่นใหม่ชัดเจน
 
 
 > **คอนเซปต์**: melee weapon-bond channeler ที่ teleport ผ่าน Ethereal Plane และแท็งค์ด้วย temp HP ward
@@ -60,7 +60,7 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 
 ### Order of Dimensional Magi (ValdaSpireExtras 🕰️)
 
-**Overall**: A — ขยับขึ้น 4 axis พร้อมกัน (Damage A, Control B จาก baseline C, Survivability A, Utility A จาก baseline C) กว้างที่สุดในกลุ่ม แม้ Support จะยังเป็น 0 เหมือนทุกตัว
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis พร้อมกัน (Damage A, Control B จาก baseline C, Survivability A, Utility A จาก baseline C) กว้างที่สุดในกลุ่ม แม้ Support จะยังเป็น 0 เหมือนทุกตัว
 
 
 > **คอนเซปต์**: scholar-channeler ที่ผูกกับสมุดคาถา ritual caster + ยืม spell wizard ระดับสูงมาใช้ฟรี
@@ -77,7 +77,7 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 
 ### Order of Titanfists (ValdaSpireExtras 🕰️)
 
-**Overall**: A — Damage พุ่งเป็น S (9/10) สูงสุดในกลุ่ม บวก Control B และ Action Economy A แต่ Survivability/Utility ยังค้าง baseline เต็มๆ — striker/controller เฉพาะทางที่แรงมาก ไม่ถึง S เพราะยังมี 3 axis ไม่ขยับเลย
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage พุ่งเป็น S (9/10) สูงสุดในกลุ่ม บวก Control B และ Action Economy A แต่ Survivability/Utility ยังค้าง baseline เต็มๆ — striker/controller เฉพาะทางที่แรงมาก ไม่ถึง S เพราะยังมี 3 axis ไม่ขยับเลย
 
 
 > **คอนเซปต์**: brawler-channeler ที่ผูกกับ battlefist คู่ ชกแบบ dual-wield ไม่ต้องมีมือว่าง
@@ -94,7 +94,7 @@ Floor 0-10 ต่อ axis ของ **Channeler เปล่าๆ ไม่น�
 
 ### Order of Wild Hunters (ValdaSpireExtras 🕰️)
 
-**Overall**: A — ขยับขึ้น 4 axis (Damage A, Survivability A, Action Economy A, Utility B) กระจายทั่วโดยไม่มี peak เดี่ยวสูงมาก แต่ breadth กว้างเทียบเท่า Dimensional Magi
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis (Damage A, Survivability A, Action Economy A, Utility B) กระจายทั่วโดยไม่มี peak เดี่ยวสูงมาก แต่ breadth กว้างเทียบเท่า Dimensional Magi
 
 
 > **คอนเซปต์**: ranged channeler ที่ผูกกับ quiver อาวุธไม่จำกัด + teleport ตามลูกธนู

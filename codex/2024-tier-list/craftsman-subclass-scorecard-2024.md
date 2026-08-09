@@ -34,23 +34,23 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Arcane Maesters' Guild | B | ValdaSpire24 | 9 (S) | 3 (C) | 7 (A) | 8 (A) | 4 (C) | 10 (S) | 8 (A) |
+| Arcane Maesters' Guild | A | ValdaSpire24 | 9 (S) | 3 (C) | 7 (A) | 8 (A) | 4 (C) | 10 (S) | 8 (A) |
 | Armigers' Guild | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 9 (S) | 7 (A) |
 | Bladeworkers' Guild | A | ValdaSpire24 | 9 (S) | 5 (B) | 6 (B) | 8 (A) | 6 (B) | 9 (S) | 6 (B) |
 | Calibarons' Guild | A | ValdaSpire24 | 9 (S) | 6 (B) | 6 (B) | 7 (A) | 4 (C) | 9 (S) | 7 (A) |
 | Clockworkers' Guild | S | ValdaSpire24Extras | 10 (S) | 3 (C) | 7 (A) | 7 (A) | 9 (S) | 9 (S) | 8 (A) |
 | Courtiers' Guild | A | ValdaSpire24Extras | 8 (A) | 3 (C) | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 8 (A) |
 | Forgeknights' Guild | B | ValdaSpire24 | 10 (S) | 3 (C) | 6 (B) | 8 (A) | 4 (C) | 9 (S) | 7 (A) |
-| Mechanauts' Guild | S | ValdaSpire24 | 10 (S) | 3 (C) | 6 (B) | 10 (S) | 6 (B) | 9 (S) | 9 (S) |
+| Mechanauts' Guild | A | ValdaSpire24 | 10 (S) | 3 (C) | 6 (B) | 10 (S) | 6 (B) | 9 (S) | 9 (S) |
 | Thunderlords' Guild | A | ValdaSpire24 | 10 (S) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 9 (S) | 7 (A) |
-| Trappers' Guild | A | ValdaSpire24 | 9 (S) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
+| Trappers' Guild | S | ValdaSpire24 | 9 (S) | 7 (A) | 6 (B) | 8 (A) | 7 (A) | 9 (S) | 8 (A) |
 | Wintercarvers' Guild | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 6 (B) | 9 (S) | 8 (A) |
 
 ---
 
 ### Arcane Maesters' Guild (ValdaSpire24)
 
-**Overall**: B — Damage/Utility เป็น S ทั้งคู่ แต่ Control/Action Economy (สอง axis ที่ baseline อ่อนสุด) นิ่งสนิทไม่ขยับเลย — ทิ้งจุดอ่อนของ baseline ไว้เหมือนเดิมทั้งคู่ อ่อนสุดในกลุ่ม 11 Guild
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage/Utility เป็น S ทั้งคู่ แต่ Control/Action Economy (สอง axis ที่ baseline อ่อนสุด) นิ่งสนิทไม่ขยับเลย — ทิ้งจุดอ่อนของ baseline ไว้เหมือนเดิมทั้งคู่ อ่อนสุดในกลุ่ม 11 Guild
 
 
 > **คอนเซปต์**: ช่างเวทย์ที่คราฟต์ไอเทมวิเศษของจริงได้ (ไม่ใช่แค่ Masterwork ธรรมดา)
@@ -67,7 +67,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Armigers' Guild (ValdaSpire24)
 
-**Overall**: S — 3 axis เป็น S (Damage, Survivability 10/10 เต็ม, Utility) และยังแก้จุดอ่อน Control/Action Economy ของ baseline ขึ้นมาเป็น B ทั้งคู่ — สมดุลที่สุดในกลุ่มพร้อม peak สูงสุด
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S (Damage, Survivability 10/10 เต็ม, Utility) และยังแก้จุดอ่อน Control/Action Economy ของ baseline ขึ้นมาเป็น B ทั้งคู่ — สมดุลที่สุดในกลุ่มพร้อม peak สูงสุด
 
 
 > **คอนเซปต์**: แทงค์เกราะหนักที่ใช้เกราะเป็นทั้งเกราะและอาวุธ
@@ -84,7 +84,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Bladeworkers' Guild (ValdaSpire24)
 
-**Overall**: A — 2 axis เป็น S (Damage, Utility) บวก Control/Action Economy ขยับเป็น B ทั้งคู่ กว้างพอสมควรแต่ peak น้อยกว่า Armigers'/Mechanauts'
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 2 axis เป็น S (Damage, Utility) บวก Control/Action Economy ขยับเป็น B ทั้งคู่ กว้างพอสมควรแต่ peak น้อยกว่า Armigers'/Mechanauts'
 
 
 > **คอนเซปต์**: นักดาบผู้เชี่ยวชาญอาวุธประชิดทุกชนิด
@@ -101,7 +101,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Calibarons' Guild (ValdaSpire24)
 
-**Overall**: A — 2 axis เป็น S (Damage, Utility) แก้ Control ขึ้นมาเป็น B แต่ Action Economy ยังนิ่งที่ baseline C
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 2 axis เป็น S (Damage, Utility) แก้ Control ขึ้นมาเป็น B แต่ Action Economy ยังนิ่งที่ baseline C
 
 
 > **คอนเซปต์**: มือปืน/นักยิงที่ดัดแปลงกระสุนพิเศษได้
@@ -118,7 +118,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Clockworkers' Guild (ValdaSpire24Extras)
 
-**Overall**: S — 3 axis เป็น S (Damage 10/10, Action Economy กระโดดจาก C เป็น S (4→9), Utility) — แก้จุดอ่อน Action Economy ของ baseline ได้แรงที่สุดในกลุ่ม แม้ Control จะยังนิ่ง
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S (Damage 10/10, Action Economy กระโดดจาก C เป็น S (4→9), Utility) — แก้จุดอ่อน Action Economy ของ baseline ได้แรงที่สุดในกลุ่ม แม้ Control จะยังนิ่ง
 
 
 > **คอนเซปต์**: วิศวกรที่มีหุ่นยนต์คลอควร์ก 2 ตัวเป็นผู้ช่วยรบ
@@ -135,7 +135,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Courtiers' Guild (ValdaSpire24Extras)
 
-**Overall**: A — 2 axis เป็น S (Support กระโดดจาก B เป็น S, Utility) เป็น Guild เดียวที่ไม่ดัน Damage เพิ่มเลย (นิ่งที่ baseline A) เอียงไปทาง support เต็มตัวแทน
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 2 axis เป็น S (Support กระโดดจาก B เป็น S, Utility) เป็น Guild เดียวที่ไม่ดัน Damage เพิ่มเลย (นิ่งที่ baseline A) เอียงไปทาง support เต็มตัวแทน
 
 
 > **คอนเซปต์**: ช่างตัดเสื้อในราชสำนักที่เย็บแผลและปลุกใจทีมได้
@@ -152,7 +152,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Forgeknights' Guild (ValdaSpire24)
 
-**Overall**: B — Damage/Utility เป็น S ทั้งคู่เหมือน Arcane Maesters' แต่ Control/Action Economy ก็นิ่งสนิทเหมือนกัน — รูปแบบเดียวกับ Arcane Maesters' อ่อนสุดร่วมกัน
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage/Utility เป็น S ทั้งคู่เหมือน Arcane Maesters' แต่ Control/Action Economy ก็นิ่งสนิทเหมือนกัน — รูปแบบเดียวกับ Arcane Maesters' อ่อนสุดร่วมกัน
 
 
 > **คอนเซปต์**: นักตีเหล็กที่พกเตาไฟติดตัวและระเบิดไฟใส่ศัตรู
@@ -169,7 +169,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Mechanauts' Guild (ValdaSpire24)
 
-**Overall**: S — 4 axis เป็น S พร้อมกัน (Damage, Survivability 10/10 เต็ม, Utility, Versatility) มากที่สุดในกลุ่มทั้ง 11 Guild แม้ Control จะยังไม่ขยับก็ตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 4 axis เป็น S พร้อมกัน (Damage, Survivability 10/10 เต็ม, Utility, Versatility) มากที่สุดในกลุ่มทั้ง 11 Guild แม้ Control จะยังไม่ขยับก็ตาม
 
 
 > **คอนเซปต์**: นักบินรถถังปูยักษ์ที่ปรับแต่งได้เต็มที่
@@ -186,7 +186,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Thunderlords' Guild (ValdaSpire24)
 
-**Overall**: A — 2 axis เป็น S (Damage 10/10, Utility) บวก Survivability/Support/Versatility ขยับเป็น A แต่ Control ยังนิ่งที่ baseline
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 2 axis เป็น S (Damage 10/10, Utility) บวก Survivability/Support/Versatility ขยับเป็น A แต่ Control ยังนิ่งที่ baseline
 
 
 > **คอนเซปต์**: ช่างไฟฟ้าที่สะสม Charge Point มาปล่อยเป็นดาเมจสายฟ้า
@@ -203,7 +203,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Trappers' Guild (ValdaSpire24)
 
-**Overall**: A — แก้จุดอ่อนทั้งคู่ของ baseline ได้ดีที่สุด (Control 3→7 เป็น A, Action Economy 4→7 เป็น A) ไม่เหลือจุดอ่อนเลย แต่ peak สูงสุดแค่ S สองตัว (Damage, Utility) น้อยกว่า Mechanauts'/Armigers'
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) แก้จุดอ่อนทั้งคู่ของ baseline ได้ดีที่สุด (Control 3→7 เป็น A, Action Economy 4→7 เป็น A) ไม่เหลือจุดอ่อนเลย แต่ peak สูงสุดแค่ S สองตัว (Damage, Utility) น้อยกว่า Mechanauts'/Armigers'
 
 
 > **คอนเซปต์**: นักวางกับดักที่ควบคุมสนามรบด้วยกลไก
@@ -220,7 +220,7 @@ Floor 0-10 ต่อ axis ของ **Craftsman เปล่าๆ ไม่น�
 
 ### Wintercarvers' Guild (ValdaSpire24Extras)
 
-**Overall**: A — Control กระโดดจาก C เป็น A (3→8) บวก Survivability/Utility เป็น S สองแกน แต่ Action Economy ขยับแค่ B
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดดจาก C เป็น A (3→8) บวก Survivability/Utility เป็น S สองแกน แต่ Action Economy ขยับแค่ B
 
 
 > **คอนเซปต์**: ช่างแกะสลักน้ำแข็งที่แช่แข็งศัตรูให้เป็นอัมพาต

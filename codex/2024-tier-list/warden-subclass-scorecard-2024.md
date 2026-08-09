@@ -36,11 +36,11 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Beastblood Guardian | S | ValdaSpire24 | 9 (S) | 7 (A) | 7 (A) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Carrion King | A | ValdaSpire24Extras | 8 (A) | 9 (S) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
-| Diabolist | C | ValdaSpire24Extras | 8 (A) | 7 (A) | 5 (B) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
-| Drake-Blooded | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
-| Fey Trailblazer | C | VSS 🕰️ | 5 (B) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
+| Beastblood Guardian | A | ValdaSpire24 | 9 (S) | 7 (A) | 7 (A) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Carrion King | S | ValdaSpire24Extras | 8 (A) | 9 (S) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
+| Diabolist | B | ValdaSpire24Extras | 8 (A) | 7 (A) | 5 (B) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
+| Drake-Blooded | A | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 7 (A) | 6 (B) | 7 (A) |
+| Fey Trailblazer | B | VSS 🕰️ | 5 (B) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
 | Godsworn | A | ValdaSpire24 | 6 (B) | 6 (B) | 9 (S) | 10 (S) | 6 (B) | 5 (B) | 7 (A) |
 | Grey Watchman | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 8 (A) | 10 (S) | 8 (A) | 3 (C) | 8 (A) |
 | Hellkeeper | B | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 5 (B) |
@@ -49,8 +49,8 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 | Nightgaunt | B | ValdaSpire24 | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 6 (B) | 6 (B) |
 | Rimekeeper | A | ValdaSpire24Extras | 8 (A) | 7 (A) | 7 (A) | 10 (S) | 6 (B) | 5 (B) | 7 (A) |
 | Soulblood Shaman | B | VSS 🕰️ | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 6 (B) | 4 (C) | 6 (B) |
-| Stoneheart Defender | A | ValdaSpire24 | 6 (B) | 7 (A) | 8 (A) | 10 (S) | 7 (A) | 3 (C) | 6 (B) |
-| Storm Sentinel | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
+| Stoneheart Defender | B | ValdaSpire24 | 6 (B) | 7 (A) | 8 (A) | 10 (S) | 7 (A) | 3 (C) | 6 (B) |
+| Storm Sentinel | A | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 4 (C) | 6 (B) |
 | Verdant Protector | A | ValdaSpire24 | 8 (A) | 8 (A) | 8 (A) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
 | Witchbane Hunter | A | ValdaSpire24Extras | 8 (A) | 8 (A) | 7 (A) | 10 (S) | 6 (B) | 7 (A) | 7 (A) |
 
@@ -58,7 +58,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Beastblood Guardian (ValdaSpire24)
 
-**Overall**: S — Damage พุ่งจาก baseline 5 (B) เป็น 9 (S) — swing +4 แรงที่สุดในกลุ่ม บวก Control/Action Economy/Utility/Versatility ขยับตามอีก 4 axis (Survivability เป็น 10 เต็มเท่า baseline ของทุก Warden อยู่แล้ว ไม่นับเป็นจุดเด่นเฉพาะตัว)
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage พุ่งจาก baseline 5 (B) เป็น 9 (S) — swing +4 แรงที่สุดในกลุ่ม บวก Control/Action Economy/Utility/Versatility ขยับตามอีก 4 axis (Survivability เป็น 10 เต็มเท่า baseline ของทุก Warden อยู่แล้ว ไม่นับเป็นจุดเด่นเฉพาะตัว)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -73,7 +73,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Carrion King (ValdaSpire24Extras)
 
-**Overall**: A — Control กระโดดจาก baseline 6 (B) เป็น 9 (S) บวก Damage/Action Economy/Utility/Versatility ขยับตาม
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดดจาก baseline 6 (B) เป็น 9 (S) บวก Damage/Action Economy/Utility/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -88,7 +88,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Diabolist (ValdaSpire24Extras)
 
-**Overall**: C — Support ลดลงจาก baseline 7 (A) เหลือ 5 (B) — axis เดียวในกลุ่มที่ต่ำกว่า baseline จริง แม้ Damage/Control/AE จะขยับขึ้นก็ตาม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support ลดลงจาก baseline 7 (A) เหลือ 5 (B) — axis เดียวในกลุ่มที่ต่ำกว่า baseline จริง แม้ Damage/Control/AE จะขยับขึ้นก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -103,7 +103,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Drake-Blooded (ValdaSpire24)
 
-**Overall**: S — Damage กระโดดจาก baseline 5 (B) เป็น 9 (S) เหมือน Beastblood Guardian บวก Action Economy/Utility/Versatility ขยับตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage กระโดดจาก baseline 5 (B) เป็น 9 (S) เหมือน Beastblood Guardian บวก Action Economy/Utility/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -118,7 +118,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Fey Trailblazer (VSS 🕰️)
 
-**Overall**: C — มีแค่ Utility ที่ขยับ +1 เล็กน้อย อีก 5 axis เท่า baseline เป๊ะ แคบที่สุดในกลุ่มทั้งหมด
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) มีแค่ Utility ที่ขยับ +1 เล็กน้อย อีก 5 axis เท่า baseline เป๊ะ แคบที่สุดในกลุ่มทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -133,7 +133,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Godsworn (ValdaSpire24)
 
-**Overall**: A — Support กระโดดจาก baseline 7 (A) เป็น 9 (S) บวก Damage/Utility/Versatility ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก baseline 7 (A) เป็น 9 (S) บวก Damage/Utility/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -148,7 +148,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Grey Watchman (ValdaSpire24Extras)
 
-**Overall**: A — ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/AE/Versatility) กว้างที่สุดในกลุ่มแม้จะไม่มี S peak ใหม่เลย
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/AE/Versatility) กว้างที่สุดในกลุ่มแม้จะไม่มี S peak ใหม่เลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -163,7 +163,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Hellkeeper (VSS 🕰️)
 
-**Overall**: B — ขยับแค่ 2 axis (Damage/Utility) เล็กน้อย ไม่มี peak ใหม่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis (Damage/Utility) เล็กน้อย ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -178,7 +178,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Iceheart Bastion (VSS 🕰️)
 
-**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Damage/Utility) เหมือน Hellkeeper
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Damage/Utility) เหมือน Hellkeeper
 
 
 | Axis | คะแนน | เหตุผล |
@@ -193,7 +193,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Loreseeker (VSS 🕰️)
 
-**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Utility/Versatility) ไม่มี peak ถึง S
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับ 3 axis กลางๆ (Damage/Utility/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -208,7 +208,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Nightgaunt (ValdaSpire24)
 
-**Overall**: B — รูปแบบเดียวกับ Loreseeker (Damage/Utility/Versatility ขยับกลางๆ) ไม่มี peak ใหม่
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) รูปแบบเดียวกับ Loreseeker (Damage/Utility/Versatility ขยับกลางๆ) ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -223,7 +223,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Rimekeeper (ValdaSpire24Extras)
 
-**Overall**: A — ขยับขึ้น 4 axis กลางๆ (Damage/Control/Utility/Versatility) กว้างกว่า Loreseeker/Nightgaunt แต่ไม่มี peak ถึง S
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis กลางๆ (Damage/Control/Utility/Versatility) กว้างกว่า Loreseeker/Nightgaunt แต่ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -238,7 +238,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Soulblood Shaman (VSS 🕰️)
 
-**Overall**: B — ขยับ 3 axis เล็กน้อย (Damage/Utility/Versatility) ไม่มี peak ใหม่
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับ 3 axis เล็กน้อย (Damage/Utility/Versatility) ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -253,7 +253,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Stoneheart Defender (ValdaSpire24)
 
-**Overall**: A — ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/AE/Versatility) กว้างเทียบเท่า Grey Watchman แต่ทุกแกนขยับแค่ +1 เท่านั้น
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/AE/Versatility) กว้างเทียบเท่า Grey Watchman แต่ทุกแกนขยับแค่ +1 เท่านั้น
 
 
 | Axis | คะแนน | เหตุผล |
@@ -268,7 +268,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Storm Sentinel (ValdaSpire24)
 
-**Overall**: S — Damage กระโดดจาก baseline 5 (B) เป็น 9 (S) เหมือน Beastblood Guardian/Drake-Blooded บวก Action Economy/Utility/Versatility ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage กระโดดจาก baseline 5 (B) เป็น 9 (S) เหมือน Beastblood Guardian/Drake-Blooded บวก Action Economy/Utility/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -283,7 +283,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Verdant Protector (ValdaSpire24)
 
-**Overall**: A — ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/Utility/Versatility) กว้างเทียบเท่า Grey Watchman/Stoneheart Defender
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Damage/Control/Support/Utility/Versatility) กว้างเทียบเท่า Grey Watchman/Stoneheart Defender
 
 
 | Axis | คะแนน | เหตุผล |
@@ -298,7 +298,7 @@ Floor 0-10 ต่อ axis ของ **Warden เปล่าๆ ไม่นั�
 
 ### Witchbane Hunter (ValdaSpire24Extras)
 
-**Overall**: A — Utility กระโดด +4 (C→A) เลขสูงสุดในกลุ่มสำหรับ axis นี้ บวก Damage/Control/Versatility ขยับตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility กระโดด +4 (C→A) เลขสูงสุดในกลุ่มสำหรับ axis นี้ บวก Damage/Control/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |

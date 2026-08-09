@@ -36,24 +36,24 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 |---|---|---|---|---|---|---|---|---|---|
 | Antiquarian | S | ValdaSpire24 | 9 (S) | 6 (B) | 7 (A) | 7 (A) | 7 (A) | 9 (S) | 8 (A) |
 | Archivist | B | ValdaSpire24 | 7 (A) | 6 (B) | 6 (B) | 3 (C) | 6 (B) | 10 (S) | 8 (A) |
-| Conspiracy Theorist | A | ValdaSpire24Extras | 8 (A) | 5 (B) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) |
-| Containment Specialist | A | ValdaSpire24Extras | 7 (A) | 8 (A) | 6 (B) | 3 (C) | 6 (B) | 9 (S) | 7 (A) |
+| Conspiracy Theorist | B | ValdaSpire24Extras | 8 (A) | 5 (B) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) |
+| Containment Specialist | B | ValdaSpire24Extras | 7 (A) | 8 (A) | 6 (B) | 3 (C) | 6 (B) | 9 (S) | 7 (A) |
 | Detective | A | ValdaSpire24 | 8 (A) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 9 (S) | 7 (A) |
 | Exterminator | A | ValdaSpire24 | 9 (S) | 6 (B) | 6 (B) | 7 (A) | 8 (A) | 7 (A) | 7 (A) |
 | Infernal Agent | A | ValdaSpireExtras 🕰️ | 9 (S) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 7 (A) | 8 (A) |
-| Infernum | S | ValdaSpire24Extras | 9 (S) | 7 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
-| Inquisitor | S | ValdaSpire24 | 9 (S) | 8 (A) | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 8 (A) |
-| Kid Sleuth | S | ValdaSpire24Extras | 7 (A) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
-| Medium | S | ValdaSpire24 | 8 (A) | 5 (B) | 8 (A) | 6 (B) | 7 (A) | 9 (S) | 8 (A) |
+| Infernum | A | ValdaSpire24Extras | 9 (S) | 7 (A) | 6 (B) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
+| Inquisitor | A | ValdaSpire24 | 9 (S) | 8 (A) | 8 (A) | 5 (B) | 8 (A) | 7 (A) | 8 (A) |
+| Kid Sleuth | A | ValdaSpire24Extras | 7 (A) | 7 (A) | 9 (S) | 5 (B) | 8 (A) | 8 (A) | 8 (A) |
+| Medium | A | ValdaSpire24 | 8 (A) | 5 (B) | 8 (A) | 6 (B) | 7 (A) | 9 (S) | 8 (A) |
 | Occultist | A | ValdaSpire24 | 9 (S) | 8 (A) | 6 (B) | 3 (C) | 8 (A) | 9 (S) | 8 (A) |
 | Spy | A | ValdaSpire24 | 8 (A) | 6 (B) | 6 (B) | 5 (B) | 7 (A) | 9 (S) | 7 (A) |
-| Time Operative | S | ValdaSpire24Extras | 9 (S) | 5 (B) | 6 (B) | 6 (B) | 9 (S) | 9 (S) | 8 (A) |
+| Time Operative | A | ValdaSpire24Extras | 9 (S) | 5 (B) | 6 (B) | 6 (B) | 9 (S) | 9 (S) | 8 (A) |
 
 ---
 
 ### Antiquarian (ValdaSpire24)
 
-**Overall**: S — Damage และ Utility เป็น S ทั้งคู่ บวก Survivability กระโดด +4 (C→A) และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม มีแค่ Control ที่นิ่ง
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Utility เป็น S ทั้งคู่ บวก Survivability กระโดด +4 (C→A) และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม มีแค่ Control ที่นิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -68,7 +68,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Archivist (ValdaSpire24)
 
-**Overall**: B — Utility พุ่งเป็น 10/10 (S) เต็มสเกล แต่มีแค่ Versatility ที่ขยับตามเล็กน้อย อีก 5 axis นิ่งสนิทรวมถึง Survivability ที่อ่อนสุดของ baseline
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility พุ่งเป็น 10/10 (S) เต็มสเกล แต่มีแค่ Versatility ที่ขยับตามเล็กน้อย อีก 5 axis นิ่งสนิทรวมถึง Survivability ที่อ่อนสุดของ baseline
 
 
 | Axis | คะแนน | เหตุผล |
@@ -83,7 +83,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Conspiracy Theorist (ValdaSpire24Extras)
 
-**Overall**: A — ขยับขึ้น 5 axis แบบกลางๆ (Damage/Survivability/AE/Utility/Versatility) กว้างแต่ไม่มี peak ถึง S เลย
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 axis แบบกลางๆ (Damage/Survivability/AE/Utility/Versatility) กว้างแต่ไม่มี peak ถึง S เลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -98,7 +98,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Containment Specialist (ValdaSpire24Extras)
 
-**Overall**: A — Control กระโดด +3 (B→A) บวก Utility เป็น S แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +3 (B→A) บวก Utility เป็น S แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -113,7 +113,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Detective (ValdaSpire24)
 
-**Overall**: A — ขยับขึ้น 5 axis กลางๆ บวก Utility เป็น S หนึ่งแกน กว้างพอสมควร
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 axis กลางๆ บวก Utility เป็น S หนึ่งแกน กว้างพอสมควร
 
 
 | Axis | คะแนน | เหตุผล |
@@ -128,7 +128,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Exterminator (ValdaSpire24)
 
-**Overall**: A — Damage เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -143,7 +143,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Infernal Agent (ValdaSpireExtras 🕰️)
 
-**Overall**: A — Damage เป็น S บวกขยับกลางๆ อีก 3 axis (Survivability/AE/Versatility)
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวกขยับกลางๆ อีก 3 axis (Survivability/AE/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -158,7 +158,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Infernum (ValdaSpire24Extras)
 
-**Overall**: S — Damage เป็น S บวกขยับขึ้นอีก 5 axis พร้อมกัน (Control/Survivability/AE/Utility/Versatility) กว้างมาก มีแค่ Support ที่นิ่ง
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวกขยับขึ้นอีก 5 axis พร้อมกัน (Control/Survivability/AE/Utility/Versatility) กว้างมาก มีแค่ Support ที่นิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -173,7 +173,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Inquisitor (ValdaSpire24)
 
-**Overall**: S — Damage เป็น S บวก Control/Support ขยับเป็น A ทั้งคู่ และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม มีแค่ Utility ที่นิ่ง (แต่ Utility เป็น A ของ baseline อยู่แล้ว)
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวก Control/Support ขยับเป็น A ทั้งคู่ และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม มีแค่ Utility ที่นิ่ง (แต่ Utility เป็น A ของ baseline อยู่แล้ว)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -188,7 +188,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Kid Sleuth (ValdaSpire24Extras)
 
-**Overall**: S — Support เป็น S (9/10) สูงสุดในกลุ่ม บวกขยับตามอีก 5 axis (Control/Survivability/AE/Utility/Versatility) มีแค่ Damage ที่นิ่ง (แต่เป็น A ของ baseline อยู่แล้ว)
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S (9/10) สูงสุดในกลุ่ม บวกขยับตามอีก 5 axis (Control/Survivability/AE/Utility/Versatility) มีแค่ Damage ที่นิ่ง (แต่เป็น A ของ baseline อยู่แล้ว)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -203,7 +203,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Medium (ValdaSpire24)
 
-**Overall**: S — Utility เป็น S บวกขยับขึ้นอีก 5 axis พร้อมกัน (Damage/Support/Survivability/AE/Versatility) กว้างเทียบเท่า Kid Sleuth มีแค่ Control ที่นิ่ง
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S บวกขยับขึ้นอีก 5 axis พร้อมกัน (Damage/Support/Survivability/AE/Versatility) กว้างเทียบเท่า Kid Sleuth มีแค่ Control ที่นิ่ง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -218,7 +218,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Occultist (ValdaSpire24)
 
-**Overall**: A — Damage และ Utility เป็น S ทั้งคู่ บวก Control ขยับเป็น A แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลยสักตัว ต่างจาก Antiquarian/Exterminator/Infernum/Inquisitor ที่แก้จุดนี้ไปแล้ว
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Utility เป็น S ทั้งคู่ บวก Control ขยับเป็น A แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลยสักตัว ต่างจาก Antiquarian/Exterminator/Infernum/Inquisitor ที่แก้จุดนี้ไปแล้ว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -233,7 +233,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Spy (ValdaSpire24)
 
-**Overall**: A — Utility เป็น S บวกขยับกลางๆ อีก 5 axis (Damage/Control/Survivability/AE/Versatility) กว้างแต่ magnitude ต่อแกนไม่สูงเท่า Antiquarian
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S บวกขยับกลางๆ อีก 5 axis (Damage/Control/Survivability/AE/Versatility) กว้างแต่ magnitude ต่อแกนไม่สูงเท่า Antiquarian
 
 
 | Axis | คะแนน | เหตุผล |
@@ -248,7 +248,7 @@ Floor 0-10 ต่อ axis ของ **Investigator เปล่าๆ ไม่�
 
 ### Time Operative (ValdaSpire24Extras)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Action Economy, Utility) มากที่สุดในกลุ่มทั้งหมด บวก Survivability ก็ขยับตามด้วย
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Damage, Action Economy, Utility) มากที่สุดในกลุ่มทั้งหมด บวก Survivability ก็ขยับตามด้วย
 
 
 | Axis | คะแนน | เหตุผล |

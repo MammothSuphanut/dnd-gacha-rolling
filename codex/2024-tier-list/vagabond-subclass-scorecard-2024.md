@@ -34,30 +34,30 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Adrenaline Junkie | B | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
-| Brigand | A | ValdaSpire24Extras | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
-| Daggermark | A | ValdaSpire24 🔀 | 8 (A) | 3 (C) | 4 (C) | 9 (S) | 7 (A) | 5 (B) | 5 (B) |
-| Dragon Banner | B | ValdaSpire24 🔀 | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 6 (B) |
-| Eagle Banner | A | ValdaSpire24 🔀 | 8 (A) | 4 (C) | 3 (C) | 7 (A) | 6 (B) | 4 (C) | 6 (B) |
-| Feylost | A | ValdaSpire24Extras 🔀 | 7 (A) | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Gourmand | S | ValdaSpire24Extras 🔀 | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
-| Houndmaster | B | ValdaSpire24Extras 🔀 | 8 (A) | 4 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 5 (B) |
-| Jolly Roger | A | ValdaSpire24 🔀 | 8 (A) | 6 (B) | 6 (B) | 8 (A) | 7 (A) | 4 (C) | 6 (B) |
-| Knight Errant | S | ValdaSpire24Extras 🔀 | 8 (A) | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 5 (B) | 6 (B) |
-| Mage Brand | A | ValdaSpire24Extras | 8 (A) | 6 (B) | 1 (D) | 8 (A) | 6 (B) | 7 (A) | 8 (A) |
-| Plague Doctor | A | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
-| Pugilist | A | ValdaSpire24Extras 🔀 | 8 (A) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 3 (C) | 6 (B) |
-| Rōnin | S | ValdaSpire24Extras 🔀 | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
-| Siegeball Jersey | S | ValdaSpire24Extras 🔀 | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
-| Tower Banner | A | ValdaSpire24 🔀 | 8 (A) | 5 (B) | 4 (C) | 9 (S) | 6 (B) | 4 (C) | 5 (B) |
-| Troubadour | A | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
-| Yellow Sign | S | ValdaSpire24Extras 🔀 | 8 (A) | 9 (S) | 4 (C) | 7 (A) | 6 (B) | 5 (B) | 6 (B) |
+| Adrenaline Junkie | D | ValdaSpire24Extras | 7 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
+| Brigand | C | ValdaSpire24Extras | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 3 (C) | 6 (B) |
+| Daggermark | B | ValdaSpire24 🔀 | 8 (A) | 3 (C) | 4 (C) | 9 (S) | 7 (A) | 5 (B) | 5 (B) |
+| Dragon Banner | C | ValdaSpire24 🔀 | 9 (S) | 5 (B) | 0 (D) | 7 (A) | 8 (A) | 3 (C) | 6 (B) |
+| Eagle Banner | C | ValdaSpire24 🔀 | 8 (A) | 4 (C) | 3 (C) | 7 (A) | 6 (B) | 4 (C) | 6 (B) |
+| Feylost | B | ValdaSpire24Extras 🔀 | 7 (A) | 8 (A) | 3 (C) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Gourmand | B | ValdaSpire24Extras 🔀 | 8 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
+| Houndmaster | C | ValdaSpire24Extras 🔀 | 8 (A) | 4 (C) | 0 (D) | 7 (A) | 7 (A) | 6 (B) | 5 (B) |
+| Jolly Roger | B | ValdaSpire24 🔀 | 8 (A) | 6 (B) | 6 (B) | 8 (A) | 7 (A) | 4 (C) | 6 (B) |
+| Knight Errant | B | ValdaSpire24Extras 🔀 | 8 (A) | 7 (A) | 6 (B) | 9 (S) | 6 (B) | 5 (B) | 6 (B) |
+| Mage Brand | B | ValdaSpire24Extras | 8 (A) | 6 (B) | 1 (D) | 8 (A) | 6 (B) | 7 (A) | 8 (A) |
+| Plague Doctor | B | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
+| Pugilist | C | ValdaSpire24Extras 🔀 | 8 (A) | 6 (B) | 0 (D) | 9 (S) | 6 (B) | 3 (C) | 6 (B) |
+| Rōnin | C | ValdaSpire24Extras 🔀 | 9 (S) | 3 (C) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
+| Siegeball Jersey | B | ValdaSpire24Extras 🔀 | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 6 (B) | 4 (C) | 7 (A) |
+| Tower Banner | C | ValdaSpire24 🔀 | 8 (A) | 5 (B) | 4 (C) | 9 (S) | 6 (B) | 4 (C) | 5 (B) |
+| Troubadour | B | ValdaSpire24Extras 🔀 | 8 (A) | 5 (B) | 7 (A) | 7 (A) | 6 (B) | 6 (B) | 6 (B) |
+| Yellow Sign | B | ValdaSpire24Extras 🔀 | 8 (A) | 9 (S) | 4 (C) | 7 (A) | 6 (B) | 5 (B) | 6 (B) |
 
 ---
 
 ### Adrenaline Junkie (ValdaSpire24Extras)
 
-**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Action Economy/Versatility) Support ยังเป็น 0 เต็ม ไม่มี peak ใหม่
+**Overall**: D — (5 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Action Economy/Versatility) Support ยังเป็น 0 เต็ม ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -72,7 +72,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Brigand (ValdaSpire24Extras)
 
-**Overall**: A — ขยับขึ้น 5 ใน 7 axis กลางๆ (Damage/Control/Survivability/AE/Versatility) กว้างแต่ไม่มี axis ไหนถึง S
+**Overall**: C — (6 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 ใน 7 axis กลางๆ (Damage/Control/Survivability/AE/Versatility) กว้างแต่ไม่มี axis ไหนถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -87,7 +87,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Daggermark (ValdaSpire24 🔀)
 
-**Overall**: A — Survivability เป็น S บวก Support ขยับบางส่วน (0→4) และอีก 3 axis ขยับตาม
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S บวก Support ขยับบางส่วน (0→4) และอีก 3 axis ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -102,7 +102,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Dragon Banner (ValdaSpire24 🔀)
 
-**Overall**: B — Damage เป็น S แต่ Support ยังเป็น 0 เต็ม breadth แคบ (แค่ 3 axis ขยับ)
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S แต่ Support ยังเป็น 0 เต็ม breadth แคบ (แค่ 3 axis ขยับ)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -117,7 +117,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Eagle Banner (ValdaSpire24 🔀)
 
-**Overall**: A — ขยับขึ้น 5 axis กลางๆ พร้อมกัน (Damage/Control/Support/AE/Utility/Versatility) ไม่มี peak ถึง S แต่กว้าง
+**Overall**: C — (6 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 axis กลางๆ พร้อมกัน (Damage/Control/Support/AE/Utility/Versatility) ไม่มี peak ถึง S แต่กว้าง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -132,7 +132,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Feylost (ValdaSpire24Extras 🔀)
 
-**Overall**: A — Control กระโดด +5 (C→A) บวก Survivability เป็น S และขยับตามอีก 3 axis
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +5 (C→A) บวก Survivability เป็น S และขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -147,7 +147,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Gourmand (ValdaSpire24Extras 🔀)
 
-**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวกขยับตามอีก 4 axis
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวกขยับตามอีก 4 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -162,7 +162,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Houndmaster (ValdaSpire24Extras 🔀)
 
-**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Damage/Control/AE/Utility) Support ยังเป็น 0 เต็ม
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 3 axis เล็กน้อย (Damage/Control/AE/Utility) Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -177,7 +177,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Jolly Roger (ValdaSpire24 🔀)
 
-**Overall**: A — Support ขยับ +6 (0→6, B) บวกขยับขึ้นอีก 5 axis กลางๆ กว้างแต่ไม่มี S ใหม่
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support ขยับ +6 (0→6, B) บวกขยับขึ้นอีก 5 axis กลางๆ กว้างแต่ไม่มี S ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -192,7 +192,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Knight Errant (ValdaSpire24Extras 🔀)
 
-**Overall**: S — Survivability เป็น S บวก Support ขยับ +6 (0→6, B) และขยับขึ้นครบเกือบทุก axis (6 ใน 7) กว้างที่สุดในกลุ่ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S บวก Support ขยับ +6 (0→6, B) และขยับขึ้นครบเกือบทุก axis (6 ใน 7) กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -207,7 +207,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Mage Brand (ValdaSpire24Extras)
 
-**Overall**: A — Utility กระโดด +4 (C→A) และ Versatility +3 (B→A) บวกขยับตามอีก 4 axis กว้างมากแม้ Support จะยังแทบเป็น 0 อยู่ (1/10)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility กระโดด +4 (C→A) และ Versatility +3 (B→A) บวกขยับตามอีก 4 axis กว้างมากแม้ Support จะยังแทบเป็น 0 อยู่ (1/10)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -222,7 +222,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Plague Doctor (ValdaSpire24Extras 🔀)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวกขยับตามอีก 4 axis กว้างพอสมควรแต่ไม่มี axis ไหนถึง S
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 7 (A) บวกขยับตามอีก 4 axis กว้างพอสมควรแต่ไม่มี axis ไหนถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -237,7 +237,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Pugilist (ValdaSpire24Extras 🔀)
 
-**Overall**: A — Survivability เป็น S บวก Control/Damage/Action Economy ขยับตาม แต่ Support ยังเป็น 0 เต็ม
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S บวก Control/Damage/Action Economy ขยับตาม แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -252,7 +252,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Rōnin (ValdaSpire24Extras 🔀)
 
-**Overall**: S — Damage และ Survivability เป็น S ทั้งคู่ บวก Action Economy ขยับ +3 แต่ Support ยังเป็น 0 เต็ม
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ทั้งคู่ บวก Action Economy ขยับ +3 แต่ Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -267,7 +267,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Siegeball Jersey (ValdaSpire24Extras 🔀)
 
-**Overall**: S — Survivability เป็น S บวก Support กระโดดจาก 0 เป็น 7 (A) และขยับตามอีก 3 axis รวมกันแล้วกว้างและแรงพร้อมกัน
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S บวก Support กระโดดจาก 0 เป็น 7 (A) และขยับตามอีก 3 axis รวมกันแล้วกว้างและแรงพร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -282,7 +282,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Tower Banner (ValdaSpire24 🔀)
 
-**Overall**: A — Survivability เป็น S บวก Support ขยับบางส่วน (0→4) และอีก 3 axis ขยับตามเล็กน้อย
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S บวก Support ขยับบางส่วน (0→4) และอีก 3 axis ขยับตามเล็กน้อย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -297,7 +297,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Troubadour (ValdaSpire24Extras 🔀)
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 7 (A) บวกขยับตามอีก 4 axis กว้างแต่ไม่มี S
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 7 (A) บวกขยับตามอีก 4 axis กว้างแต่ไม่มี S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -312,7 +312,7 @@ Floor 0-10 ต่อ axis ของ **Vagabond เปล่าๆ ไม่น�
 
 ### Yellow Sign (ValdaSpire24Extras 🔀)
 
-**Overall**: S — Control กระโดด +6 (3→9, C→S) บวก Support ขยับบางส่วน (0→4) และขยับตามอีก 3 axis
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +6 (3→9, C→S) บวก Support ขยับบางส่วน (0→4) และขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |

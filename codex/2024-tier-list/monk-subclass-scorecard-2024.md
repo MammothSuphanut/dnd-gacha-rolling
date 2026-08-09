@@ -37,29 +37,29 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 | Warrior of Mercy | S | XPHB | 8 (A) | 7 (A) | 9 (S) | 9 (S) | 9 (S) | 7 (A) | 8 (A) |
 | Warrior of Shadow | A | XPHB | 8 (A) | 6 (B) | 0 (D) | 10 (S) | 9 (S) | 8 (A) | 7 (A) |
 | Warrior of the Elements | A | XPHB | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 8 (A) | 8 (A) | 8 (A) |
-| Warrior of the Open Hand | S | XPHB | 9 (S) | 8 (A) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
+| Warrior of the Open Hand | A | XPHB | 9 (S) | 8 (A) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
 | Warrior of Pride | B | GrimHollowPG24 | 9 (S) | 6 (B) | 0 (D) | 10 (S) | 8 (A) | 6 (B) | 6 (B) |
 | Warrior of Regret | S | GrimHollowPG24 | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
 | Warrior of the Leaden Crown | A | GrimHollowPG24 | 8 (A) | 9 (S) | 0 (D) | 9 (S) | 8 (A) | 8 (A) | 8 (A) |
-| Warrior of the Street | S | ValdaPlayerPack | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 9 (S) | 7 (A) | 7 (A) |
+| Warrior of the Street | A | ValdaPlayerPack | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 9 (S) | 7 (A) | 7 (A) |
 | Way of the Bow | A | VSS 🕰️ | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 8 (A) | 7 (A) | 7 (A) |
-| Way of the Flagellant | S | VSS 🕰️ | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 6 (B) |
+| Way of the Flagellant | A | VSS 🕰️ | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 6 (B) |
 | Way of the Four Fists | A | VSS 🕰️ | 8 (A) | 6 (B) | 0 (D) | 10 (S) | 9 (S) | 8 (A) | 7 (A) |
 | Way of the Mask | A | VSS 🕰️ | 8 (A) | 9 (S) | 0 (D) | 9 (S) | 8 (A) | 6 (B) | 7 (A) |
 | Way of the Rose | S | VSS 🕰️ | 8 (A) | 7 (A) | 7 (A) | 9 (S) | 9 (S) | 6 (B) | 8 (A) |
 | Way of the Ascendant Dragon | B | FTD 🕰️ | 8 (A) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 7 (A) | 7 (A) |
-| Way of the Drunken Master | S | XGE 🕰️ | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
-| Way of the Kensei | S | XGE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
+| Way of the Drunken Master | A | XGE 🕰️ | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
+| Way of the Kensei | A | XGE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 7 (A) |
 | Way of the Long Death | B | SCAG 🕰️ | 9 (S) | 7 (A) | 0 (D) | 9 (S) | 8 (A) | 6 (B) | 6 (B) |
-| Way of the Sun Soul | S | XGE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 6 (B) |
-| Way of the Astral Self | S | TCE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 10 (S) | 9 (S) | 8 (A) | 8 (A) |
+| Way of the Sun Soul | B | XGE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 6 (B) |
+| Way of the Astral Self | A | TCE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 10 (S) | 9 (S) | 8 (A) | 8 (A) |
 | Way of the Four Elements | B | PHB 🕰️ | 8 (A) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 7 (A) | 7 (A) |
 
 ---
 
 ### Warrior of Mercy (XPHB)
 
-**Overall**: S — Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Action Economy เป็น S ใหม่ด้วย
+**Overall**: S — (17 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 9 (S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Action Economy เป็น S ใหม่ด้วย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -74,7 +74,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Warrior of Shadow (XPHB)
 
-**Overall**: A — Action Economy เป็น S ใหม่ บวก Utility/Versatility ขยับตาม Support ยังเป็น 0 เต็ม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy เป็น S ใหม่ บวก Utility/Versatility ขยับตาม Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -89,7 +89,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Warrior of the Elements (XPHB)
 
-**Overall**: A — Damage เป็น S ใหม่ บวก Control/Utility/Versatility ขยับตาม Support ยังเป็น 0
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Control/Utility/Versatility ขยับตาม Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -104,7 +104,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Warrior of the Open Hand (XPHB)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Control/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Control/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -119,7 +119,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Warrior of Pride (GrimHollowPG24)
 
-**Overall**: B — Damage เป็น S ใหม่ แต่ breadth แคบมาก Support ยังเป็น 0 เต็ม และ Control/Utility นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ แต่ breadth แคบมาก Support ยังเป็น 0 เต็ม และ Control/Utility นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -134,7 +134,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Warrior of Regret (GrimHollowPG24)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Support กระโดด +6 (D→B) — กว้างและแรงพร้อมกัน
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Support กระโดด +6 (D→B) — กว้างและแรงพร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -149,7 +149,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Warrior of the Leaden Crown (GrimHollowPG24)
 
-**Overall**: A — Control เป็น S ใหม่ (กระโดด +3) บวก Utility/Versatility ขยับตาม Support ยังเป็น 0
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control เป็น S ใหม่ (กระโดด +3) บวก Utility/Versatility ขยับตาม Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -164,7 +164,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Warrior of the Street (ValdaPlayerPack)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Control/Utility/Versatility ขยับตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Control/Utility/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -179,7 +179,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Bow (VSS 🕰️)
 
-**Overall**: A — Damage เป็น S ใหม่ บวก Control/Utility/Versatility ขยับตาม Support ยังเป็น 0
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Control/Utility/Versatility ขยับตาม Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -194,7 +194,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Flagellant (VSS 🕰️)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ แม้ Support จะยังเป็น 0
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ แม้ Support จะยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -209,7 +209,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Four Fists (VSS 🕰️)
 
-**Overall**: A — Action Economy เป็น S ใหม่ บวก Utility/Versatility ขยับตาม Support ยังเป็น 0
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy เป็น S ใหม่ บวก Utility/Versatility ขยับตาม Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -224,7 +224,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Mask (VSS 🕰️)
 
-**Overall**: A — Control เป็น S ใหม่ (กระโดด +3) บวก Versatility ขยับตาม Support ยังเป็น 0
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control เป็น S ใหม่ (กระโดด +3) บวก Versatility ขยับตาม Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -239,7 +239,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Rose (VSS 🕰️)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 7 (D→A) บวก Action Economy เป็น S ใหม่ และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 7 (D→A) บวก Action Economy เป็น S ใหม่ และขยับตามอีก 3 axis กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -254,7 +254,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Ascendant Dragon (FTD 🕰️)
 
-**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Utility/Versatility) ไม่มี peak ใหม่ Support ยังเป็น 0
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Utility/Versatility) ไม่มี peak ใหม่ Support ยังเป็น 0
 
 
 > **หมายเหตุข้อมูล**: Draconic Disciple (Presence/Strike/Tongue), ตัวเลือกของ Aspect of the Wyrm, และ Ascendant Aspect (Augment Breath/Blindsight/Explosive Fury) ไม่ปรากฏรายละเอียดเต็มในไฟล์ข้อมูล จึงให้คะแนนแบบระมัดระวังโดยอิงจาก Breath of the Dragon และ Wings Unfurled ที่ยืนยันได้เป็นหลัก
@@ -271,7 +271,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Drunken Master (XGE 🕰️)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Control/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Control/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -286,7 +286,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Kensei (XGE 🕰️)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ แม้ breadth ที่เหลือจะแคบก็ตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ แม้ breadth ที่เหลือจะแคบก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -301,7 +301,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Long Death (SCAG 🕰️)
 
-**Overall**: B — Damage เป็น S ใหม่ แต่ breadth แคบ (แค่ Control/Versatility ขยับตามเล็กน้อย)
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ แต่ breadth แคบ (แค่ Control/Versatility ขยับตามเล็กน้อย)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -316,7 +316,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Sun Soul (XGE 🕰️)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ แม้ breadth ที่เหลือจะแคบก็ตาม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ แม้ breadth ที่เหลือจะแคบก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -331,7 +331,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Astral Self (TCE 🕰️)
 
-**Overall**: S — Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Utility/Versatility ขยับตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ใหม่ทั้งคู่ บวก Utility/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -346,7 +346,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 ### Way of the Four Elements (PHB 🕰️)
 
-**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Utility/Versatility) ไม่มี peak ใหม่ Support ยังเป็น 0
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Utility/Versatility) ไม่มี peak ใหม่ Support ยังเป็น 0
 
 
 > **หมายเหตุข้อมูล**: รายการ Elemental Disciplines เต็มรูปแบบ (Breath of Winter, Clench of the North Wind, Eternal Mountain Defense ฯลฯ) ไม่ปรากฏรายละเอียดในไฟล์ข้อมูล (มีแค่ชื่อ+level requirement) จึงให้คะแนนแบบระมัดระวัง

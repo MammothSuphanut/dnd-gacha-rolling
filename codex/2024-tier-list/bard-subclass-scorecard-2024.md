@@ -35,30 +35,30 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
 | College of Adventurers | S | GrimHollowPG24 | 7 (A) | 7 (A) | 9 (S) | 6 (B) | 8 (A) | 9 (S) | 10 (S) |
-| College of Cantors | A | VSS 🕰️ | 6 (B) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
-| College of Creation | S | TCE 🕰️ | 7 (A) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 10 (S) | 8 (A) |
-| College of Dance | S | XPHB | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) | 7 (A) |
-| College of Eloquence | S | TCE 🕰️ | 5 (B) | 8 (A) | 10 (S) | 4 (C) | 7 (A) | 9 (S) | 6 (B) |
-| College of Fools | A | GrimHollowPG24 | 8 (A) | 8 (A) | 8 (A) | 9 (S) | 8 (A) | 8 (A) | 7 (A) |
+| College of Cantors | B | VSS 🕰️ | 6 (B) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
+| College of Creation | A | TCE 🕰️ | 7 (A) | 7 (A) | 9 (S) | 4 (C) | 7 (A) | 10 (S) | 8 (A) |
+| College of Dance | A | XPHB | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) | 7 (A) |
+| College of Eloquence | A | TCE 🕰️ | 5 (B) | 8 (A) | 10 (S) | 4 (C) | 7 (A) | 9 (S) | 6 (B) |
+| College of Fools | S | GrimHollowPG24 | 8 (A) | 8 (A) | 8 (A) | 9 (S) | 8 (A) | 8 (A) | 7 (A) |
 | College of Glamour | A | XPHB | 5 (B) | 9 (S) | 8 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
 | College of Graffiti | B | VSS 🕰️ | 7 (A) | 8 (A) | 8 (A) | 4 (C) | 6 (B) | 8 (A) | 7 (A) |
 | College of Jesters | A | VSS 🕰️ | 8 (A) | 7 (A) | 8 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) |
 | College of Lore | A | XPHB | 5 (B) | 8 (A) | 8 (A) | 4 (C) | 7 (A) | 9 (S) | 8 (A) |
 | College of Masks | S | VSS 🕰️ | 9 (S) | 8 (A) | 9 (S) | 5 (B) | 7 (A) | 9 (S) | 9 (S) |
-| College of Requiems | S | GrimHollowPG24 | 9 (S) | 7 (A) | 9 (S) | 4 (C) | 8 (A) | 8 (A) | 7 (A) |
-| College of Romance | S | VSS 🕰️ | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 6 (B) |
+| College of Requiems | A | GrimHollowPG24 | 9 (S) | 7 (A) | 9 (S) | 4 (C) | 8 (A) | 8 (A) | 7 (A) |
+| College of Romance | B | VSS 🕰️ | 6 (B) | 9 (S) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 6 (B) |
 | College of Spirits | S | RHW | 9 (S) | 8 (A) | 9 (S) | 6 (B) | 7 (A) | 8 (A) | 9 (S) |
 | College of Swords | A | XGE 🕰️ | 9 (S) | 7 (A) | 8 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) |
-| College of the Mad God | S | VSS 🕰️ | 10 (S) | 9 (S) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
+| College of the Mad God | A | VSS 🕰️ | 10 (S) | 9 (S) | 8 (A) | 4 (C) | 7 (A) | 8 (A) | 6 (B) |
 | College of the Moon | A | FRHoF 🕰️ | 6 (B) | 7 (A) | 9 (S) | 8 (A) | 7 (A) | 8 (A) | 7 (A) |
 | College of Valor | S | XPHB | 9 (S) | 7 (A) | 9 (S) | 5 (B) | 9 (S) | 8 (A) | 7 (A) |
-| College of Whispers | S | XGE 🕰️ | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 7 (A) |
+| College of Whispers | A | XGE 🕰️ | 9 (S) | 8 (A) | 8 (A) | 4 (C) | 6 (B) | 9 (S) | 7 (A) |
 
 ---
 
 ### College of Adventurers (GrimHollowPG24)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Support, Utility, Versatility 10/10 เต็ม) มากที่สุดในกลุ่มร่วมกับ Masks/Spirits/Valor
+**Overall**: S — (16 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Support, Utility, Versatility 10/10 เต็ม) มากที่สุดในกลุ่มร่วมกับ Masks/Spirits/Valor
 
 
 > **หมายเหตุ**: subclass นี้ให้เลือก "Adventurer's Talent" 3→5 อย่างจาก 11 ตัวเลือก (Barbarian/Cleric/Druid/Fighter/Monk/Paladin/Ranger/Rogue/Sorcerer/Warlock/Wizard) — คะแนนประเมินจากภาพรวม pool ทั้งหมด เพราะแต่ละ talent มาจากอีก class หนึ่งโดยตรง breadth จึงกว้างเป็นพิเศษ
@@ -75,7 +75,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Cantors (VSS 🕰️)
 
-**Overall**: A — Support เป็น S บวกขยับตามอีก 3 axis กลางๆ ไม่มี peak ที่สอง
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S บวกขยับตามอีก 3 axis กลางๆ ไม่มี peak ที่สอง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -90,7 +90,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Creation (TCE 🕰️)
 
-**Overall**: S — Support และ Utility เป็น S ทั้งคู่ (Utility 10/10 เต็ม) บวกขยับตามอีก 3 axis
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support และ Utility เป็น S ทั้งคู่ (Utility 10/10 เต็ม) บวกขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -105,7 +105,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Dance (XPHB)
 
-**Overall**: S — ไม่มี axis ไหนต่ำกว่า A เลยแม้แต่ตัวเดียว (Survivability กระโดด C→A) — comprehensive ที่สุดในกลุ่ม แม้จะไม่มี axis ไหนถึง S ก็ตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนต่ำกว่า A เลยแม้แต่ตัวเดียว (Survivability กระโดด C→A) — comprehensive ที่สุดในกลุ่ม แม้จะไม่มี axis ไหนถึง S ก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -120,7 +120,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Eloquence (TCE 🕰️)
 
-**Overall**: S — Support และ Utility เป็น S ทั้งคู่ (Support 10/10 เต็ม) บวก Control ขยับตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support และ Utility เป็น S ทั้งคู่ (Support 10/10 เต็ม) บวก Control ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -135,7 +135,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Fools (GrimHollowPG24)
 
-**Overall**: A — Survivability กระโดด +5 (C→S) บวกขยับขึ้นอีก 4 axis กลางๆ กว้างพอสมควร
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +5 (C→S) บวกขยับขึ้นอีก 4 axis กลางๆ กว้างพอสมควร
 
 
 | Axis | คะแนน | เหตุผล |
@@ -150,7 +150,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Glamour (XPHB)
 
-**Overall**: A — Control เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -165,7 +165,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Graffiti (VSS 🕰️)
 
-**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Damage/Control/Versatility) ไม่มี peak ถึง S เลย แคบที่สุดในกลุ่ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 3 axis เล็กน้อย (Damage/Control/Versatility) ไม่มี peak ถึง S เลย แคบที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -180,7 +180,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Jesters (VSS 🕰️)
 
-**Overall**: A — ขยับขึ้น 4 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -195,7 +195,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Lore (XPHB)
 
-**Overall**: A — Utility เป็น S บวกขยับตามอีก 3 axis กลางๆ
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S บวกขยับตามอีก 3 axis กลางๆ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -210,7 +210,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Masks (VSS 🕰️)
 
-**Overall**: S — 4 axis เป็น S พร้อมกัน (Damage, Support, Utility, Versatility) มากที่สุดในกลุ่มทั้งหมด — แรงและกว้างที่สุดในคลาส
+**Overall**: S — (17 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 4 axis เป็น S พร้อมกัน (Damage, Support, Utility, Versatility) มากที่สุดในกลุ่มทั้งหมด — แรงและกว้างที่สุดในคลาส
 
 
 > **หมายเหตุ**: Persona Masks มีตัวเลือก 9 แบบ (Angel/Archmage/Devil/Dragon/Faceless/Fool/Gladiator/High Priest/Lord/Spirit) รู้ 2→4 อันพร้อมกัน สลับได้ทุกเลเวล — คะแนนประเมินจากภาพรวม pool
@@ -227,7 +227,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Requiems (GrimHollowPG24)
 
-**Overall**: S — Damage และ Support เป็น S ทั้งคู่ (Damage กระโดด +4) บวก Action Economy/Versatility ขยับตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Support เป็น S ทั้งคู่ (Damage กระโดด +4) บวก Action Economy/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -242,7 +242,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Romance (VSS 🕰️)
 
-**Overall**: S — Control และ Utility เป็น S ทั้งคู่ แม้ breadth โดยรวมจะแคบกว่าตัวอื่น (มีแค่ 3 axis ที่ขยับ)
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control และ Utility เป็น S ทั้งคู่ แม้ breadth โดยรวมจะแคบกว่าตัวอื่น (มีแค่ 3 axis ที่ขยับ)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -257,7 +257,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Spirits (RHW)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Support, Versatility) บวก Control/Survivability/AE ขยับตาม
+**Overall**: S — (16 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Damage, Support, Versatility) บวก Control/Survivability/AE ขยับตาม
 
 
 > **หมายเหตุ**: Spirits from Beyond table มี 12 ผลลัพธ์ (heal/dmg 4 ธาตุ/control/mobility/buff) — Controlled Channeling ให้เลือกผลที่ต้องการได้ตรงๆ (ไม่ต้องสุ่ม) ตราบเท่าที่เลขไม่เกินขนาด BI die
@@ -274,7 +274,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Swords (XGE 🕰️)
 
-**Overall**: A — Damage กระโดด +4 (B→S) บวก Survivability/Action Economy ขยับตามเล็กน้อย
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage กระโดด +4 (B→S) บวก Survivability/Action Economy ขยับตามเล็กน้อย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -289,7 +289,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of the Mad God (VSS 🕰️)
 
-**Overall**: S — Damage และ Control เป็น S ทั้งคู่ (Damage กระโดด +5 สูงสุดในกลุ่มทั้งหมด เป็น 10/10 เต็ม) แม้ breadth ที่เหลือจะแคบก็ตาม
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Control เป็น S ทั้งคู่ (Damage กระโดด +5 สูงสุดในกลุ่มทั้งหมด เป็น 10/10 เต็ม) แม้ breadth ที่เหลือจะแคบก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -304,7 +304,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of the Moon (FRHoF 🕰️)
 
-**Overall**: A — Support เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support เป็น S บวก Survivability กระโดด +4 (C→A) และ Action Economy/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -319,7 +319,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Valor (XPHB)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Support, Action Economy) บวก Versatility ขยับตาม
+**Overall**: S — (16 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Damage, Support, Action Economy) บวก Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -334,7 +334,7 @@ Floor 0-10 ต่อ axis ของ **Bard เปล่าๆ ไม่นับ
 
 ### College of Whispers (XGE 🕰️)
 
-**Overall**: S — Damage และ Utility เป็น S ทั้งคู่ (Damage กระโดด +4) บวก Control/Versatility ขยับตามเล็กน้อย
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Utility เป็น S ทั้งคู่ (Damage กระโดด +4) บวก Control/Versatility ขยับตามเล็กน้อย
 
 
 | Axis | คะแนน | เหตุผล |

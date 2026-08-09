@@ -36,27 +36,27 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 |---|---|---|---|---|---|---|---|---|---|
 | Circle of Blood | A | GrimHollowPG24 | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 6 (B) | 8 (A) |
 | Circle of Dreams | S | XGE 🕰️ | 6 (B) | 7 (A) | 8 (A) | 7 (A) | 8 (A) | 9 (S) | 9 (S) |
-| Circle of Entropy | S | GrimHollowPG24 | 10 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
+| Circle of Entropy | A | GrimHollowPG24 | 10 (S) | 8 (A) | 3 (C) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
 | Circle of Mutation | B | GrimHollowPG24 | 8 (A) | 7 (A) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 8 (A) |
-| Circle of Spores | S | TCE 🕰️ | 8 (A) | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 9 (S) |
+| Circle of Spores | A | TCE 🕰️ | 8 (A) | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 6 (B) | 9 (S) |
 | Circle of the Stars | A | XPHB | 8 (A) | 8 (A) | 6 (B) | 8 (A) | 7 (A) | 6 (B) | 9 (S) |
 | Circle of Stones | A | VSS 🕰️ | 6 (B) | 8 (A) | 7 (A) | 8 (A) | 8 (A) | 8 (A) | 8 (A) |
-| Circle of the City | S | VSS 🕰️ | 6 (B) | 9 (S) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 9 (S) |
-| Circle of the Deep | B | VSS 🕰️ | 8 (A) | 7 (A) | 5 (B) | 7 (A) | 7 (A) | 7 (A) | 8 (A) |
-| Circle of the Fist | S | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 9 (S) | 9 (S) | 6 (B) | 8 (A) |
+| Circle of the City | A | VSS 🕰️ | 6 (B) | 9 (S) | 3 (C) | 8 (A) | 7 (A) | 9 (S) | 9 (S) |
+| Circle of the Deep | A | VSS 🕰️ | 8 (A) | 7 (A) | 5 (B) | 7 (A) | 7 (A) | 7 (A) | 8 (A) |
+| Circle of the Fist | A | VSS 🕰️ | 9 (S) | 7 (A) | 3 (C) | 9 (S) | 9 (S) | 6 (B) | 8 (A) |
 | Circle of the Land | A | XPHB | 7 (A) | 7 (A) | 6 (B) | 8 (A) | 8 (A) | 7 (A) | 9 (S) |
 | Circle of the Moon | S | XPHB | 9 (S) | 8 (A) | 6 (B) | 10 (S) | 8 (A) | 6 (B) | 10 (S) |
 | Circle of the Sea | S | XPHB | 8 (A) | 8 (A) | 6 (B) | 9 (S) | 8 (A) | 7 (A) | 9 (S) |
 | Circle of the Shepherd | A | XGE 🕰️ | 6 (B) | 7 (A) | 9 (S) | 8 (A) | 8 (A) | 6 (B) | 8 (A) |
 | Circle of the Wyrm | S | VSS 🕰️ | 9 (S) | 7 (A) | 6 (B) | 9 (S) | 7 (A) | 6 (B) | 9 (S) |
-| Circle of Vermin | B | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 9 (S) | 7 (A) | 7 (A) | 8 (A) |
+| Circle of Vermin | A | VSS 🕰️ | 7 (A) | 7 (A) | 3 (C) | 9 (S) | 7 (A) | 7 (A) | 8 (A) |
 | Circle of Wildfire | S | TCE 🕰️ | 9 (S) | 7 (A) | 7 (A) | 8 (A) | 8 (A) | 6 (B) | 9 (S) |
 
 ---
 
 ### Circle of Blood (GrimHollowPG24)
 
-**Overall**: A — Survivability เป็น S (9/10) บวกขยับขึ้นอีก 4 axis กลางๆ (Damage/Control/Support/AE) ไม่มี S ตัวที่สอง
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S (9/10) บวกขยับขึ้นอีก 4 axis กลางๆ (Damage/Control/Support/AE) ไม่มี S ตัวที่สอง
 
 
 | Axis | คะแนน | เหตุผล |
@@ -71,7 +71,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Dreams (XGE 🕰️)
 
-**Overall**: S — Utility และ Versatility เป็น S ทั้งคู่ บวก Support กระโดด +5 (C→A) แก้จุดอ่อนใหญ่สุดของ baseline ไปด้วย
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility และ Versatility เป็น S ทั้งคู่ บวก Support กระโดด +5 (C→A) แก้จุดอ่อนใหญ่สุดของ baseline ไปด้วย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -86,7 +86,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Entropy (GrimHollowPG24)
 
-**Overall**: S — Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Versatility เป็น S ด้วย แม้ Support (จุดอ่อนสุดของ baseline) จะยังไม่ถูกแตะเลย
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Versatility เป็น S ด้วย แม้ Support (จุดอ่อนสุดของ baseline) จะยังไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -101,7 +101,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Mutation (GrimHollowPG24)
 
-**Overall**: B — ขยับแค่ 2 axis เล็กน้อย (Damage/Action Economy) ไม่มี peak ถึง S เลย แคบที่สุดในกลุ่มร่วมกับ Circle of the Deep
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Damage/Action Economy) ไม่มี peak ถึง S เลย แคบที่สุดในกลุ่มร่วมกับ Circle of the Deep
 
 
 > **หมายเหตุข้อมูล**: รายการ "Mutation Options" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนน Survivability/Utility แบบระมัดระวังจากฟีเจอร์ที่ยืนยันได้เท่านั้น
@@ -118,7 +118,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Spores (TCE 🕰️)
 
-**Overall**: S — Survivability และ Versatility เป็น S ทั้งคู่ บวก Damage/Action Economy ขยับตาม แม้ Support จะยังไม่ถูกแตะ
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability และ Versatility เป็น S ทั้งคู่ บวก Damage/Action Economy ขยับตาม แม้ Support จะยังไม่ถูกแตะ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -133,7 +133,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Stars (XPHB)
 
-**Overall**: A — Versatility เป็น S บวก Support กระโดด +3 (C→B) และขยับตามอีก 3 axis กว้างพอสมควรแต่มีแค่ S เดียว
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S บวก Support กระโดด +3 (C→B) และขยับตามอีก 3 axis กว้างพอสมควรแต่มีแค่ S เดียว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -148,7 +148,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Stones (VSS 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S เลย แต่ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility) กว้างที่สุดในกลุ่มที่ไม่มี S peak
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S เลย แต่ขยับขึ้น 5 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility) กว้างที่สุดในกลุ่มที่ไม่มี S peak
 
 
 | Axis | คะแนน | เหตุผล |
@@ -163,7 +163,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the City (VSS 🕰️)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Control, Utility, Versatility) มากที่สุดในกลุ่มร่วมกับ Fist/Moon/Wyrm แม้ Support จะยังไม่ถูกแตะเลย
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Control, Utility, Versatility) มากที่สุดในกลุ่มร่วมกับ Fist/Moon/Wyrm แม้ Support จะยังไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -178,7 +178,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Deep (VSS 🕰️)
 
-**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Damage/Support/Utility) ไม่มี peak ถึง S เลย
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 3 axis เล็กน้อย (Damage/Support/Utility) ไม่มี peak ถึง S เลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -193,7 +193,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Fist (VSS 🕰️)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Survivability, Action Economy) แม้ Support/Control/Utility จะนิ่งสนิททั้งหมดก็ตาม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Damage, Survivability, Action Economy) แม้ Support/Control/Utility จะนิ่งสนิททั้งหมดก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -208,7 +208,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Land (XPHB)
 
-**Overall**: A — Versatility เป็น S บวกขยับขึ้นอีก 5 axis กลางๆ (Damage/Support/Survivability/AE/Utility) กว้างมากแต่มีแค่ S เดียว
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility เป็น S บวกขยับขึ้นอีก 5 axis กลางๆ (Damage/Support/Survivability/AE/Utility) กว้างมากแต่มีแค่ S เดียว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -223,7 +223,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Moon (XPHB)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Survivability 10/10 เต็ม, Versatility 10/10 เต็ม) บวกขยับตามอีก 3 axis กว้างและแรงที่สุดในกลุ่ม
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Damage, Survivability 10/10 เต็ม, Versatility 10/10 เต็ม) บวกขยับตามอีก 3 axis กว้างและแรงที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -238,7 +238,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Sea (XPHB)
 
-**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย บวก 2 axis เป็น S (Survivability, Versatility)
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย บวก 2 axis เป็น S (Survivability, Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -253,7 +253,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Shepherd (XGE 🕰️)
 
-**Overall**: A — Support กระโดด +6 (3→9, C→S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม แต่ breadth แคบ (มีแค่ Support/Survivability/AE ที่ขยับ)
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +6 (3→9, C→S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม แต่ breadth แคบ (มีแค่ Support/Survivability/AE ที่ขยับ)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -268,7 +268,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of the Wyrm (VSS 🕰️)
 
-**Overall**: S — 3 axis เป็น S พร้อมกัน (Damage, Survivability, Versatility) บวก Support ขยับตาม
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S พร้อมกัน (Damage, Survivability, Versatility) บวก Support ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -283,7 +283,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Vermin (VSS 🕰️)
 
-**Overall**: B — Survivability เป็น S แต่ breadth แคบมาก (มีแค่ Damage/Utility ที่ขยับตามเล็กน้อย) Support/Control/AE/Versatility นิ่งสนิท
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S แต่ breadth แคบมาก (มีแค่ Damage/Utility ที่ขยับตามเล็กน้อย) Support/Control/AE/Versatility นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -298,7 +298,7 @@ Floor 0-10 ต่อ axis ของ **Druid เปล่าๆ ไม่นั�
 
 ### Circle of Wildfire (TCE 🕰️)
 
-**Overall**: S — Damage และ Versatility เป็น S ทั้งคู่ บวก Support กระโดด +4 (C→A) และขยับตามอีก 2 axis กว้างพอสมควร
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Versatility เป็น S ทั้งคู่ บวก Support กระโดด +4 (C→A) และขยับตามอีก 2 axis กว้างพอสมควร
 
 
 | Axis | คะแนน | เหตุผล |

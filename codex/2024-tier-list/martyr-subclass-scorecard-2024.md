@@ -39,21 +39,21 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 | Burden of Atonement | S | 7 (A) | 5 (B) | 9 (S) | 10 (S) | 8 (A) | 8 (A) | 8 (A) |
 | Burden of Calamity | A | 9 (S) | 6 (B) | 3 (C) | 9 (S) | 6 (B) | 7 (A) | 7 (A) |
 | Burden of Discord | A | 9 (S) | 6 (B) | 3 (C) | 9 (S) | 7 (A) | 7 (A) | 8 (A) |
-| Burden of Fame | S | 7 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 7 (A) | 7 (A) |
+| Burden of Fame | A | 7 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 7 (A) | 7 (A) |
 | Burden of Levity | A | 7 (A) | 7 (A) | 3 (C) | 10 (S) | 7 (A) | 7 (A) | 7 (A) |
-| Burden of Mercy | S | 8 (A) | 3 (C) | 10 (S) | 9 (S) | 6 (B) | 7 (A) | 6 (B) |
-| Burden of Odyssey | A | 7 (A) | 3 (C) | 4 (C) | 10 (S) | 8 (A) | 8 (A) | 8 (A) |
+| Burden of Mercy | A | 8 (A) | 3 (C) | 10 (S) | 9 (S) | 6 (B) | 7 (A) | 6 (B) |
+| Burden of Odyssey | B | 7 (A) | 3 (C) | 4 (C) | 10 (S) | 8 (A) | 8 (A) | 8 (A) |
 | Burden of Rebirth | B | 7 (A) | 3 (C) | 5 (B) | 10 (S) | 6 (B) | 8 (A) | 7 (A) |
-| Burden of Revolution | S | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 7 (A) | 8 (A) |
+| Burden of Revolution | A | 8 (A) | 6 (B) | 7 (A) | 10 (S) | 8 (A) | 7 (A) | 8 (A) |
 | Burden of the End | A | 8 (A) | 6 (B) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 8 (A) |
-| Burden of Truth | S | 8 (A) | 6 (B) | 5 (B) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
-| Burden of Tyranny | S | 8 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
+| Burden of Truth | A | 8 (A) | 6 (B) | 5 (B) | 10 (S) | 7 (A) | 8 (A) | 7 (A) |
+| Burden of Tyranny | A | 8 (A) | 9 (S) | 3 (C) | 10 (S) | 6 (B) | 6 (B) | 7 (A) |
 
 ---
 
 ### Burden of Anonymity
 
-**Overall**: A — ขยับขึ้น 6 ใน 7 axis แบบกลางๆ (Damage/Control/Survivability/AE/Utility/Versatility) มีแค่ Support ที่นิ่ง ไม่มี peak ถึง S เพิ่มเลย
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 6 ใน 7 axis แบบกลางๆ (Damage/Control/Survivability/AE/Utility/Versatility) มีแค่ Support ที่นิ่ง ไม่มี peak ถึง S เพิ่มเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -68,7 +68,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Ascension
 
-**Overall**: A — รูปแบบเดียวกับ Burden of Anonymity เป๊ะ (ตัวเลขเหมือนกันทุก axis) — กว้างแบบกลางๆ ไม่มี peak S เพิ่ม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) รูปแบบเดียวกับ Burden of Anonymity เป๊ะ (ตัวเลขเหมือนกันทุก axis) — กว้างแบบกลางๆ ไม่มี peak S เพิ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -83,7 +83,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Atonement
 
-**Overall**: S — Support กระโดด +6 (3→9, C→S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงสุดในกลุ่ม บวก Survivability เป็น S ด้วย และขยับตามอีก 4 axis
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +6 (3→9, C→S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงสุดในกลุ่ม บวก Survivability เป็น S ด้วย และขยับตามอีก 4 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -98,7 +98,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Calamity
 
-**Overall**: A — Damage เป็น S (9/10) บวก Control/Utility/Versatility ขยับตาม แต่ Support/Action Economy นิ่งสนิท
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S (9/10) บวก Control/Utility/Versatility ขยับตาม แต่ Support/Action Economy นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -113,7 +113,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Discord
 
-**Overall**: A — Damage เป็น S บวกขยับกลางๆ อีก 3 axis (Control/AE/Versatility) กว้างกว่า Calamity เล็กน้อย
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวกขยับกลางๆ อีก 3 axis (Control/AE/Versatility) กว้างกว่า Calamity เล็กน้อย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -128,7 +128,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Fame
 
-**Overall**: S — Control กระโดด +6 (3→9, C→S) — เลข Control สูงสุดในกลุ่มทั้งหมด บวก Survivability เป็น S ด้วย
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +6 (3→9, C→S) — เลข Control สูงสุดในกลุ่มทั้งหมด บวก Survivability เป็น S ด้วย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -143,7 +143,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Levity
 
-**Overall**: A — Control ขยับ +4 (C→A) บวกขยับกลางๆ อีก 3 axis (AE/Utility/Versatility) ไม่มี peak ถึง S
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control ขยับ +4 (C→A) บวกขยับกลางๆ อีก 3 axis (AE/Utility/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -158,7 +158,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Mercy
 
-**Overall**: S — Support กระโดด +7 (3→10, C→S เต็มสเกล) — การแก้จุดอ่อนที่แรงที่สุดในทั้งคลาส
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดด +7 (3→10, C→S เต็มสเกล) — การแก้จุดอ่อนที่แรงที่สุดในทั้งคลาส
 
 
 | Axis | คะแนน | เหตุผล |
@@ -173,7 +173,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Odyssey
 
-**Overall**: A — ขยับขึ้น 4 axis แบบกลางๆ (Support/AE/Utility/Versatility) ไม่มี peak เด่นชัด
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis แบบกลางๆ (Support/AE/Utility/Versatility) ไม่มี peak เด่นชัด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -188,7 +188,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Rebirth
 
-**Overall**: B — ขยับแค่ 3 axis เล็กน้อย (Support/Utility/Versatility) Control/Action Economy นิ่งสนิท แคบที่สุดในกลุ่ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 3 axis เล็กน้อย (Support/Utility/Versatility) Control/Action Economy นิ่งสนิท แคบที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -203,7 +203,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Revolution
 
-**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย (Support +4 เด่นสุด) กว้างที่สุดในบรรดา Burden ทั้งหมด
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย (Support +4 เด่นสุด) กว้างที่สุดในบรรดา Burden ทั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -218,7 +218,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of the End
 
-**Overall**: A — ขยับขึ้น 5 axis แบบกลางๆ (Damage/Control/AE/Utility/Versatility) ไม่มี peak ถึง S
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 axis แบบกลางๆ (Damage/Control/AE/Utility/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -233,7 +233,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Truth
 
-**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline เหมือน Burden of Revolution ไม่เหลือแกนไหนนิ่งเลยสักตัว
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้นครบทั้ง 7 axis จาก baseline เหมือน Burden of Revolution ไม่เหลือแกนไหนนิ่งเลยสักตัว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -248,7 +248,7 @@ Floor 0-10 ต่อ axis ของ **Martyr เปล่าๆ ไม่นั�
 
 ### Burden of Tyranny
 
-**Overall**: S — Control กระโดด +6 (3→9, C→S) เท่า Burden of Fame บวก Survivability เป็น S ด้วย แม้ Support/AE/Utility จะยังนิ่งอยู่ก็ตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Control กระโดด +6 (3→9, C→S) เท่า Burden of Fame บวก Survivability เป็น S ด้วย แม้ Support/AE/Utility จะยังนิ่งอยู่ก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |

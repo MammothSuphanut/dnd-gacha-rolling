@@ -60,10 +60,10 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 |---|---|---|---|---|---|---|---|---|
 | **Class Baseline** | — | 7 (A) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 5 (B) | 8 (A) |
 | Doom and Slaughter 🗡️ | C | 9 (S) | 3 (C) | 0 (D) ↓ | 5 (B) ↓ | 7 (A) | 5 (B) | 6 (B) ↓ |
-| Eternity and Creation | S | 7 (A) | 3 (C) | 8 (A) ↑ | 9 (S) ↑ | 7 (A) | 5 (B) | 9 (S) ↑ |
+| Eternity and Creation | A | 7 (A) | 3 (C) | 8 (A) ↑ | 9 (S) ↑ | 7 (A) | 5 (B) | 9 (S) ↑ |
 | Fear and Sorrow | B | 9 (S) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 5 (B) | 8 (A) |
 | Order and Law | A | 7 (A) | 3 (C) | 8 (A) ↑ | 8 (A) | 7 (A) | 5 (B) | 9 (S) ↑ |
-| Protection and Mercy 🛡️ | B | 5 (B) ↓ | 3 (C) | 9 (S) ↑ | 9 (S) | 9 (S) ↑ | 5 (B) | 5 (B) ↓ |
+| Protection and Mercy 🛡️ | A | 5 (B) ↓ | 3 (C) | 9 (S) ↑ | 9 (S) | 9 (S) ↑ | 5 (B) | 5 (B) ↓ |
 | Wisdom and Spirit | A | 7 (A) | 3 (C) | 9 (S) ↑ | 8 (A) | 7 (A) | 5 (B) | 9 (S) ↑ |
 
 🗡️ = ต้องเลือก Retribution Path เท่านั้น · 🛡️ = ต้องเลือก Guardian Path เท่านั้น · ↑ = สูงกว่า baseline จาก feature ที่ Throne เสริมจริง · ↓ = ต่ำกว่า baseline โดยมีกลไกตัดทอนชัดเจน (ระบุในเหตุผล)
@@ -74,7 +74,7 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *ปรับ Cross Slash (Retribution) ให้เป็นเครื่องยนต์ดาเมจล้วนๆ — Blood for Blood/Sealed Fate/Final Verdict/capstone*
 
-**Overall**: C — Damage ยังคงพุ่งเป็น S (9/10) สูงสุดในกลุ่มร่วมกับ Fear and Sorrow แม้กลไกจะเปลี่ยนจาก "ตีฟรีไม่จำกัด" (เวอร์ชันเดิม) เป็น "Cross Slash ถูกลงมาก + สะสม HP/Fervor ตอนฆ่า" ที่ bounded ด้วย Fervor budget เสมอ แต่ Retribution-lock ยังตัด **3 axis ให้ต่ำกว่า baseline จริง** (Support 0, Survivability 5, Versatility 6) ไม่ใช่แค่คงที่เฉยๆ — Action Economy กลับมาเท่า baseline พอดีแล้ว (ไม่มีการตีฟรีอีกต่อไป) glass cannon ที่จ่ายราคาแพงกว่า Throne อื่นทุกตัวเพื่อแลกดาเมจสูงสุด (+1 axis ยกระดับ vs -3 axis ตัดทอน)
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage ยังคงพุ่งเป็น S (9/10) สูงสุดในกลุ่มร่วมกับ Fear and Sorrow แม้กลไกจะเปลี่ยนจาก "ตีฟรีไม่จำกัด" (เวอร์ชันเดิม) เป็น "Cross Slash ถูกลงมาก + สะสม HP/Fervor ตอนฆ่า" ที่ bounded ด้วย Fervor budget เสมอ แต่ Retribution-lock ยังตัด **3 axis ให้ต่ำกว่า baseline จริง** (Support 0, Survivability 5, Versatility 6) ไม่ใช่แค่คงที่เฉยๆ — Action Economy กลับมาเท่า baseline พอดีแล้ว (ไม่มีการตีฟรีอีกต่อไป) glass cannon ที่จ่ายราคาแพงกว่า Throne อื่นทุกตัวเพื่อแลกดาเมจสูงสุด (+1 axis ยกระดับ vs -3 axis ตัดทอน)
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -90,7 +90,7 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *แปลง Pure White Blade (Universal) ให้ Everlasting Grace ฮีล/temp-HP scaling เต็มรูปแบบ — hybrid damage-chassis/heal-support ที่กว้างที่สุดในบรรดา Throne*
 
-**Overall**: S — ไม่มี Path prerequisite เลยจึงไม่มีทางเสียแต้มเลยสักแกน แถมยกระดับ 3 ใน 7 axis พร้อมกัน (Support A, Survivability S, Versatility S) เป็น healer/generalist ที่กว้างที่สุดในบรรดา Throne ทั้งหมด แม้ Damage จะไม่ขยับจาก baseline เลยเพราะทุก feature ของ Throne นี้ผูกกับสาขาฮีล (Everlasting Grace) เท่านั้น ไม่แตะสาขาโจมตีของ Pure White Blade
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี Path prerequisite เลยจึงไม่มีทางเสียแต้มเลยสักแกน แถมยกระดับ 3 ใน 7 axis พร้อมกัน (Support A, Survivability S, Versatility S) เป็น healer/generalist ที่กว้างที่สุดในบรรดา Throne ทั้งหมด แม้ Damage จะไม่ขยับจาก baseline เลยเพราะทุก feature ของ Throne นี้ผูกกับสาขาฮีล (Everlasting Grace) เท่านั้น ไม่แตะสาขาโจมตีของ Pure White Blade
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -106,7 +106,7 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *จ่าย HP แลก Fervor เพิ่ม + Faith Halo คูณเป็น auto-crit สามเท่า — glass cannon ดาเมจสูงสุดที่ไม่ผูก Path*
 
-**Overall**: B — Damage S (9/10) เท่า Doom and Slaughter แต่ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย — แลกกับไม่มี axis อื่นขยับขึ้นจาก baseline สักตัว (Control/Support/Survivability/AE/Utility/Versatility เท่า baseline หมด) เป็น one-note damage specialist ที่ไม่มีจุดอ่อนแต่ก็ไม่มี breadth เพิ่มเลย
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage S (9/10) เท่า Doom and Slaughter แต่ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย — แลกกับไม่มี axis อื่นขยับขึ้นจาก baseline สักตัว (Control/Support/Survivability/AE/Utility/Versatility เท่า baseline หมด) เป็น one-note damage specialist ที่ไม่มีจุดอ่อนแต่ก็ไม่มี breadth เพิ่มเลย
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -122,7 +122,7 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *แปลง Swift (Universal) ให้เป็นเครื่องมือขับเคลื่อน+เสริมพลังทั้งทีม — support กระจายหลาย ally พร้อมกัน*
 
-**Overall**: A — ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 2 axis (Support A, Versatility S) เป็น support specialist ที่กว้างรองจาก Eternity and Creation แต่ Damage/Control/Survivability/Action Economy/Utility ไม่ขยับเลยสักตัว
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 2 axis (Support A, Versatility S) เป็น support specialist ที่กว้างรองจาก Eternity and Creation แต่ Damage/Control/Survivability/Action Economy/Utility ไม่ขยับเลยสักตัว
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -138,7 +138,7 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *Sealed Wrath แปลงดาเมจที่ทนไว้เป็นดาเมจตอบโต้ + Compassion's Toll แปลง HP เป็น Fervor — ป้อมปราการตัวจริงของ 6 Throne*
 
-**Overall**: B — Guardian-lock ตัด **2 axis ให้ต่ำกว่า baseline จริง** (Damage 5, Versatility 5) แต่แลกมาด้วย 3 axis ที่ขยับขึ้น (Support S, Survivability S, Action Economy S) เป็นการเทรดที่ได้มากกว่าเสีย (+3/-2) ต่างจาก Doom and Slaughter (+1/-3) ชัดเจน — แท็งค์/ซัพพอร์ตเฉพาะทางที่ยังมีจุดอ่อนจริงด้าน offense/breadth
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Guardian-lock ตัด **2 axis ให้ต่ำกว่า baseline จริง** (Damage 5, Versatility 5) แต่แลกมาด้วย 3 axis ที่ขยับขึ้น (Support S, Survivability S, Action Economy S) เป็นการเทรดที่ได้มากกว่าเสีย (+3/-2) ต่างจาก Doom and Slaughter (+1/-3) ชัดเจน — แท็งค์/ซัพพอร์ตเฉพาะทางที่ยังมีจุดอ่อนจริงด้าน offense/breadth
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
@@ -154,7 +154,7 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *Anointed Bond โยกทั้ง Fervor Technique toolkit ของตัวเองไปให้ ally 1 คนได้ — proxy เต็มรูปแบบให้เพื่อนร่วมทีม 1 คน*
 
-**Overall**: A — ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 2 axis ถึงระดับ S (Support, Versatility) จาก Anointed Bond ที่โยกทั้ง toolkit ไปให้ ally ได้ แลกกับ Damage/Survivability/Action Economy/Control/Utility ไม่ขยับเลยสักตัว
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 2 axis ถึงระดับ S (Support, Versatility) จาก Anointed Bond ที่โยกทั้ง toolkit ไปให้ ally ได้ แลกกับ Damage/Survivability/Action Economy/Control/Utility ไม่ขยับเลยสักตัว
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|

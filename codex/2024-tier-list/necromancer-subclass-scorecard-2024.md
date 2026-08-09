@@ -34,26 +34,26 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 | Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|
-| Black Rider | A | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
+| Black Rider | B | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
 | Blood Ascendant | B | 8 (A) | 8 (A) | 0 (D) | 7 (A) | 7 (A) | 5 (B) | 8 (A) |
-| Corpse Florist | A | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
+| Corpse Florist | B | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 3 (C) | 8 (A) |
 | Crone | B | 8 (A) | 8 (A) | 3 (C) | 3 (C) | 7 (A) | 6 (B) | 7 (A) |
 | Dead Mist Acolyte | B | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 5 (B) | 7 (A) |
-| Death Knight | A | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
+| Death Knight | B | 10 (S) | 6 (B) | 0 (D) | 8 (A) | 9 (S) | 3 (C) | 8 (A) |
 | Necrodancer | S | 9 (S) | 8 (A) | 5 (B) | 9 (S) | 10 (S) | 3 (C) | 9 (S) |
-| Overlord | A | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
-| Pale Master | A | 10 (S) | 8 (A) | 0 (D) | 5 (B) | 8 (A) | 3 (C) | 7 (A) |
-| Pharaoh | S | 9 (S) | 6 (B) | 9 (S) | 3 (C) | 7 (A) | 5 (B) | 8 (A) |
-| Plague Lord | B | 9 (S) | 8 (A) | 0 (D) | 3 (C) | 8 (A) | 3 (C) | 7 (A) |
-| Reanimator | A | 9 (S) | 7 (A) | 5 (B) | 4 (C) | 7 (A) | 5 (B) | 8 (A) |
-| Reaper | A | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
-| Toymaker | A | 10 (S) | 7 (A) | 0 (D) | 3 (C) | 9 (S) | 3 (C) | 7 (A) |
+| Overlord | B | 9 (S) | 8 (A) | 0 (D) | 6 (B) | 8 (A) | 4 (C) | 8 (A) |
+| Pale Master | B | 10 (S) | 8 (A) | 0 (D) | 5 (B) | 8 (A) | 3 (C) | 7 (A) |
+| Pharaoh | A | 9 (S) | 6 (B) | 9 (S) | 3 (C) | 7 (A) | 5 (B) | 8 (A) |
+| Plague Lord | C | 9 (S) | 8 (A) | 0 (D) | 3 (C) | 8 (A) | 3 (C) | 7 (A) |
+| Reanimator | B | 9 (S) | 7 (A) | 5 (B) | 4 (C) | 7 (A) | 5 (B) | 8 (A) |
+| Reaper | B | 9 (S) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Toymaker | B | 10 (S) | 7 (A) | 0 (D) | 3 (C) | 9 (S) | 3 (C) | 7 (A) |
 
 ---
 
 ### Black Rider
 
-**Overall**: A — Damage และ Action Economy เป็น S ทั้งคู่ บวก Survivability กระโดด +5 (C→A) และ Versatility ขยับตาม แต่ Support/Control/Utility นิ่งสนิท
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ทั้งคู่ บวก Survivability กระโดด +5 (C→A) และ Versatility ขยับตาม แต่ Support/Control/Utility นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -68,7 +68,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Blood Ascendant
 
-**Overall**: B — ขยับขึ้น 4 axis แบบกลางๆ (Control/Survivability/Utility/Versatility) ไม่มี peak ถึง S เลยสักตัว
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis แบบกลางๆ (Control/Survivability/Utility/Versatility) ไม่มี peak ถึง S เลยสักตัว
 
 
 | Axis | คะแนน | เหตุผล |
@@ -83,7 +83,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Corpse Florist
 
-**Overall**: A — Damage เป็น S บวกขยับขึ้นอีก 4 axis กลางๆ (Control/Survivability/AE/Versatility)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวกขยับขึ้นอีก 4 axis กลางๆ (Control/Survivability/AE/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -98,7 +98,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Crone
 
-**Overall**: B — ขยับขึ้น 4 axis (Control/Support/Utility/Versatility) แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย ไม่มี peak S
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 4 axis (Control/Support/Utility/Versatility) แต่ Survivability (จุดอ่อนสุดของ baseline) ไม่ถูกแตะเลย ไม่มี peak S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -113,7 +113,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Dead Mist Acolyte
 
-**Overall**: B — Survivability กระโดด +5 (C→A) บวก Utility/Versatility ขยับเล็กน้อย แต่ Damage/Control/Support/AE นิ่งสนิททั้งหมด
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability กระโดด +5 (C→A) บวก Utility/Versatility ขยับเล็กน้อย แต่ Damage/Control/Support/AE นิ่งสนิททั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |
@@ -128,7 +128,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Death Knight
 
-**Overall**: A — รูปแบบเดียวกับ Black Rider เป๊ะ — Damage/Action Economy เป็น S ทั้งคู่ บวก Survivability/Versatility ขยับตาม
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) รูปแบบเดียวกับ Black Rider เป๊ะ — Damage/Action Economy เป็น S ทั้งคู่ บวก Survivability/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -143,7 +143,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Necrodancer
 
-**Overall**: S — 4 axis เป็น S พร้อมกัน (Damage, Survivability, Action Economy, Versatility) มากที่สุดในกลุ่มทั้งหมด บวก Support กระโดดจาก 0 เป็น 5 (B) ด้วย — แรงและกว้างที่สุดในคลาส
+**Overall**: S — (15 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 4 axis เป็น S พร้อมกัน (Damage, Survivability, Action Economy, Versatility) มากที่สุดในกลุ่มทั้งหมด บวก Support กระโดดจาก 0 เป็น 5 (B) ด้วย — แรงและกว้างที่สุดในคลาส
 
 
 | Axis | คะแนน | เหตุผล |
@@ -158,7 +158,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Overlord
 
-**Overall**: A — Damage เป็น S บวกขยับขึ้นอีก 4 axis กลางๆ (Control/Survivability/AE/Utility/Versatility)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวกขยับขึ้นอีก 4 axis กลางๆ (Control/Survivability/AE/Utility/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -173,7 +173,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Pale Master
 
-**Overall**: A — Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Survivability/AE/Versatility ขยับตาม แต่ Support/Utility นิ่งสนิท
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage พุ่งเป็น 10/10 (S เต็มสเกล) บวก Control/Survivability/AE/Versatility ขยับตาม แต่ Support/Utility นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -188,7 +188,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Pharaoh
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 9 (S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Damage เป็น S ด้วย แม้ Survivability จะยังไม่ถูกแตะก็ตาม
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 9 (S) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในกลุ่ม บวก Damage เป็น S ด้วย แม้ Survivability จะยังไม่ถูกแตะก็ตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -203,7 +203,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Plague Lord
 
-**Overall**: B — Damage เป็น S บวก Control/AE/Versatility ขยับเล็กน้อย แต่ Support และ Survivability (สอง axis อ่อนสุดของ baseline) ไม่ถูกแตะเลยทั้งคู่
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวก Control/AE/Versatility ขยับเล็กน้อย แต่ Support และ Survivability (สอง axis อ่อนสุดของ baseline) ไม่ถูกแตะเลยทั้งคู่
 
 
 | Axis | คะแนน | เหตุผล |
@@ -218,7 +218,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Reanimator
 
-**Overall**: A — Support กระโดดจาก 0 เป็น 5 (B) บวก Damage เป็น S และขยับตามอีก 3 axis กว้างพอสมควร
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 5 (B) บวก Damage เป็น S และขยับตามอีก 3 axis กว้างพอสมควร
 
 
 | Axis | คะแนน | เหตุผล |
@@ -233,7 +233,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Reaper
 
-**Overall**: A — Damage เป็น S บวก Survivability กระโดด +5 (C→A) และ Utility/Versatility ขยับตาม แต่ Support ไม่ถูกแตะเลย
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S บวก Survivability กระโดด +5 (C→A) และ Utility/Versatility ขยับตาม แต่ Support ไม่ถูกแตะเลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -248,7 +248,7 @@ Floor 0-10 ต่อ axis ของ **Necromancer เปล่าๆ ไม่�
 
 ### Toymaker
 
-**Overall**: A — Damage และ Action Economy เป็น S ทั้งคู่ แต่ Support/Survivability/Utility (3 axis อ่อนสุดของ baseline) นิ่งสนิททั้งหมด
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Action Economy เป็น S ทั้งคู่ แต่ Support/Survivability/Utility (3 axis อ่อนสุดของ baseline) นิ่งสนิททั้งหมด
 
 
 | Axis | คะแนน | เหตุผล |

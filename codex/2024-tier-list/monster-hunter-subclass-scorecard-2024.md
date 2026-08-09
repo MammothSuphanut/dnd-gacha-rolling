@@ -34,16 +34,16 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 | Subclass | Overall | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|
-| Carver Guild | S | 9 (S) | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 3 (C) | 6 (B) |
-| Devourer Guild | A | 8 (A) | 3 (C) | 6 (B) | 6 (B) | 7 (A) | 4 (C) | 7 (A) |
-| Occultist Guild | S | 9 (S) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
-| Trapper Guild | A | 8 (A) | 5 (B) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 7 (A) |
+| Carver Guild | B | 9 (S) | 7 (A) | 4 (C) | 7 (A) | 9 (S) | 3 (C) | 6 (B) |
+| Devourer Guild | C | 8 (A) | 3 (C) | 6 (B) | 6 (B) | 7 (A) | 4 (C) | 7 (A) |
+| Occultist Guild | A | 9 (S) | 6 (B) | 5 (B) | 7 (A) | 8 (A) | 7 (A) | 8 (A) |
+| Trapper Guild | B | 8 (A) | 5 (B) | 3 (C) | 7 (A) | 8 (A) | 6 (B) | 7 (A) |
 
 ---
 
 ### Carver Guild
 
-**Overall**: S — Damage S (9/10) + Action Economy S (9/10) สองแกนพร้อมกัน บวก Control/Survivability ขยับเป็น A ทั้งคู่ — peak สูงสุดในกลุ่มและมี 2 axis เป็น S เลย แม้ Support/Utility จะยังค้าง baseline
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage S (9/10) + Action Economy S (9/10) สองแกนพร้อมกัน บวก Control/Survivability ขยับเป็น A ทั้งคู่ — peak สูงสุดในกลุ่มและมี 2 axis เป็น S เลย แม้ Support/Utility จะยังค้าง baseline
 
 
 | Axis | คะแนน | เหตุผล |
@@ -58,7 +58,7 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 ### Devourer Guild
 
-**Overall**: A — ขยับขึ้น 5 ใน 7 axis (Damage A, Support B, Survivability B, Action Economy A, Versatility A) กระจายทั่วแต่ไม่มี axis ไหนถึง S เลยสักตัว
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 5 ใน 7 axis (Damage A, Support B, Survivability B, Action Economy A, Versatility A) กระจายทั่วแต่ไม่มี axis ไหนถึง S เลยสักตัว
 
 
 > **หมายเหตุข้อมูล**: รายการ "Mutations" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้
@@ -75,7 +75,7 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 ### Occultist Guild
 
-**Overall**: S — ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย (Damage S, ที่เหลือ A/B ทั้งหมด) กว้างที่สุดในบรรดา Guild ทั้ง 4
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย (Damage S, ที่เหลือ A/B ทั้งหมด) กว้างที่สุดในบรรดา Guild ทั้ง 4
 
 
 | Axis | คะแนน | เหตุผล |
@@ -90,7 +90,7 @@ Floor 0-10 ต่อ axis ของ **Monster Hunter เปล่าๆ ไม�
 
 ### Trapper Guild
 
-**Overall**: A — ขยับขึ้น 6 ใน 7 axis (เหลือแค่ Support ที่ baseline) กว้างรองจาก Occultist แต่ peak สูงสุดแค่ A ไม่มี axis ไหนถึง S เลยสักตัว
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 6 ใน 7 axis (เหลือแค่ Support ที่ baseline) กว้างรองจาก Occultist แต่ peak สูงสุดแค่ A ไม่มี axis ไหนถึง S เลยสักตัว
 
 
 > **หมายเหตุข้อมูล**: รายการ "Trapper Gadgets" และ "Armor Modifications" เต็มรูปแบบไม่ปรากฏในไฟล์ข้อมูล (มีแค่หัวข้อ) จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้

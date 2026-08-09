@@ -34,31 +34,31 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Beast Master | B | XPHB | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
-| Beastborne | A | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 6 (B) |
-| Drakewarden | A | FTD 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 8 (A) | 6 (B) |
-| Fey Wanderer | A | XPHB | 7 (A) | 6 (B) | 2 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
-| Freerunner | B | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 5 (B) |
-| Gloom Stalker | A | XPHB | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 8 (A) | 6 (B) |
-| Green Reaper | S | GrimHollowPG24 | 9 (S) | 8 (A) | 0 (D) | 8 (A) | 5 (B) | 7 (A) | 8 (A) |
-| Highwayman | B | VSS 🕰️ | 6 (B) | 3 (C) | 2 (D) | 7 (A) | 8 (A) | 7 (A) | 5 (B) |
-| Hollow Warden | S | RHW | 8 (A) | 7 (A) | 0 (D) | 9 (S) | 6 (B) | 7 (A) | 8 (A) |
-| Horizon Walker | A | XGE 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 6 (B) | 9 (S) | 6 (B) |
-| Hunter | B | XPHB | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 7 (A) | 6 (B) |
-| Monster Slayer | A | XGE 🕰️ | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 5 (B) |
-| Primordial Archer | A | GrimHollowPG24 | 8 (A) | 6 (B) | 3 (C) | 7 (A) | 5 (B) | 8 (A) | 7 (A) |
-| Spellbreaker | A | VSS 🕰️ | 7 (A) | 8 (A) | 0 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
-| Swarmkeeper | A | TCE 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 6 (B) |
-| Trophy Hunter | B | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 5 (B) |
-| Vermin Lord | A | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 7 (A) | 6 (B) |
-| Vigilante | A | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 9 (S) | 7 (A) |
-| Winter Walker | S | FRHoF | 8 (A) | 7 (A) | 6 (B) | 8 (A) | 4 (C) | 7 (A) | 8 (A) |
+| Beast Master | C | XPHB | 8 (A) | 3 (C) | 0 (D) | 6 (B) | 7 (A) | 7 (A) | 5 (B) |
+| Beastborne | C | VSS 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 6 (B) |
+| Drakewarden | B | FTD 🕰️ | 9 (S) | 3 (C) | 0 (D) | 7 (A) | 7 (A) | 8 (A) | 6 (B) |
+| Fey Wanderer | C | XPHB | 7 (A) | 6 (B) | 2 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
+| Freerunner | C | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 8 (A) | 5 (B) |
+| Gloom Stalker | C | XPHB | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 8 (A) | 6 (B) |
+| Green Reaper | B | GrimHollowPG24 | 9 (S) | 8 (A) | 0 (D) | 8 (A) | 5 (B) | 7 (A) | 8 (A) |
+| Highwayman | C | VSS 🕰️ | 6 (B) | 3 (C) | 2 (D) | 7 (A) | 8 (A) | 7 (A) | 5 (B) |
+| Hollow Warden | B | RHW | 8 (A) | 7 (A) | 0 (D) | 9 (S) | 6 (B) | 7 (A) | 8 (A) |
+| Horizon Walker | B | XGE 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 6 (B) | 9 (S) | 6 (B) |
+| Hunter | C | XPHB | 8 (A) | 3 (C) | 0 (D) | 8 (A) | 6 (B) | 7 (A) | 6 (B) |
+| Monster Slayer | B | XGE 🕰️ | 7 (A) | 7 (A) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 5 (B) |
+| Primordial Archer | B | GrimHollowPG24 | 8 (A) | 6 (B) | 3 (C) | 7 (A) | 5 (B) | 8 (A) | 7 (A) |
+| Spellbreaker | B | VSS 🕰️ | 7 (A) | 8 (A) | 0 (D) | 7 (A) | 4 (C) | 9 (S) | 6 (B) |
+| Swarmkeeper | C | TCE 🕰️ | 7 (A) | 6 (B) | 0 (D) | 7 (A) | 5 (B) | 8 (A) | 6 (B) |
+| Trophy Hunter | C | VSS 🕰️ | 7 (A) | 3 (C) | 0 (D) | 7 (A) | 6 (B) | 7 (A) | 5 (B) |
+| Vermin Lord | C | GrimHollowPG24 | 8 (A) | 4 (C) | 0 (D) | 8 (A) | 8 (A) | 7 (A) | 6 (B) |
+| Vigilante | B | VSS 🕰️ | 7 (A) | 5 (B) | 0 (D) | 8 (A) | 5 (B) | 9 (S) | 7 (A) |
+| Winter Walker | B | FRHoF | 8 (A) | 7 (A) | 6 (B) | 8 (A) | 4 (C) | 7 (A) | 8 (A) |
 
 ---
 
 ### Beast Master (XPHB)
 
-**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Action Economy/Versatility) Support/Control/Survivability นิ่งสนิท
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับ 3 axis กลางๆ (Damage/Action Economy/Versatility) Support/Control/Survivability นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -73,7 +73,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Beastborne (VSS 🕰️)
 
-**Overall**: A — Damage เป็น S ใหม่ บวก Survivability/Action Economy/Versatility ขยับตาม
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Survivability/Action Economy/Versatility ขยับตาม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -88,7 +88,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Drakewarden (FTD 🕰️)
 
-**Overall**: A — Damage เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis กลางๆ (Survivability/AE/Utility/Versatility)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวกขยับขึ้นอีก 3 axis กลางๆ (Survivability/AE/Utility/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -103,7 +103,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Fey Wanderer (XPHB)
 
-**Overall**: A — Utility เป็น S ใหม่ บวก Control กระโดด +3 และขยับตามอีก 2 axis แต่ Support แทบไม่ขยับ (0→2)
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ บวก Control กระโดด +3 และขยับตามอีก 2 axis แต่ Support แทบไม่ขยับ (0→2)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -118,7 +118,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Freerunner (VSS 🕰️)
 
-**Overall**: B — ขยับ 4 axis เล็กน้อย ไม่มี peak ถึง S เลย
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับ 4 axis เล็กน้อย ไม่มี peak ถึง S เลย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -133,7 +133,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Gloom Stalker (XPHB)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis พร้อมกันแบบกลางๆ กว้างที่สุดในกลุ่มที่ไม่มี S
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis พร้อมกันแบบกลางๆ กว้างที่สุดในกลุ่มที่ไม่มี S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -148,7 +148,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Green Reaper (GrimHollowPG24)
 
-**Overall**: S — Damage เป็น S ใหม่ บวก Control และ Versatility กระโดด +5 ทั้งคู่ — สอง swing ใหญ่ที่สุดในกลุ่ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage เป็น S ใหม่ บวก Control และ Versatility กระโดด +5 ทั้งคู่ — สอง swing ใหญ่ที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -163,7 +163,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Highwayman (VSS 🕰️)
 
-**Overall**: B — ขยับ 3 axis (Survivability/AE/Versatility) Action Economy กระโดด +4 แต่ไม่มี S และ Support/Control นิ่งสนิท
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับ 3 axis (Survivability/AE/Versatility) Action Economy กระโดด +4 แต่ไม่มี S และ Support/Control นิ่งสนิท
 
 
 | Axis | คะแนน | เหตุผล |
@@ -178,7 +178,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Hollow Warden (RHW)
 
-**Overall**: S — Survivability พุ่งเป็น 9 (S) บวก Control กระโดด +4 และ Versatility กระโดด +5 — กว้างและแรงพร้อมกัน
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability พุ่งเป็น 9 (S) บวก Control กระโดด +4 และ Versatility กระโดด +5 — กว้างและแรงพร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -193,7 +193,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Horizon Walker (XGE 🕰️)
 
-**Overall**: A — Utility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis กลางๆ (Damage/Control/Survivability/AE/Versatility)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ บวกขยับขึ้นอีก 4 axis กลางๆ (Damage/Control/Survivability/AE/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -208,7 +208,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Hunter (XPHB)
 
-**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับ 3 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -223,7 +223,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Monster Slayer (XGE 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Control กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ Control กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -238,7 +238,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Primordial Archer (GrimHollowPG24)
 
-**Overall**: A — ขยับขึ้น 6 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มที่ไม่มี S peak
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับขึ้น 6 ใน 7 axis พร้อมกัน (Control/Support/Survivability/AE/Utility/Versatility) กว้างที่สุดในกลุ่มที่ไม่มี S peak
 
 
 | Axis | คะแนน | เหตุผล |
@@ -253,7 +253,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Spellbreaker (VSS 🕰️)
 
-**Overall**: A — Utility เป็น S ใหม่ บวก Control กระโดด +5 และขยับตามอีก 2 axis
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ บวก Control กระโดด +5 และขยับตามอีก 2 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -268,7 +268,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Swarmkeeper (TCE 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis พร้อมกันแบบกลางๆ
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 5 axis พร้อมกันแบบกลางๆ
 
 
 | Axis | คะแนน | เหตุผล |
@@ -283,7 +283,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Trophy Hunter (VSS 🕰️)
 
-**Overall**: B — ขยับ 3 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับ 3 axis กลางๆ (Damage/Survivability/AE/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -298,7 +298,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Vermin Lord (GrimHollowPG24)
 
-**Overall**: A — Action Economy กระโดด +4 บวกขยับขึ้นอีก 3 axis กลางๆ (Damage/Survivability/Versatility)
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Action Economy กระโดด +4 บวกขยับขึ้นอีก 3 axis กลางๆ (Damage/Survivability/Versatility)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -313,7 +313,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Vigilante (VSS 🕰️)
 
-**Overall**: A — Utility เป็น S ใหม่ บวก Versatility กระโดด +4 และขยับตามอีก 3 axis
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Utility เป็น S ใหม่ บวก Versatility กระโดด +4 และขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -328,7 +328,7 @@ Floor 0-10 ต่อ axis ของ **Ranger เปล่าๆ ไม่นั�
 
 ### Winter Walker (FRHoF)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 6 (D→B) — แก้จุดอ่อนใหญ่สุดของ baseline บวก Control กระโดด +4 และ Versatility กระโดด +5 กว้างและแรงพร้อมกันที่สุดในกลุ่ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 6 (D→B) — แก้จุดอ่อนใหญ่สุดของ baseline บวก Control กระโดด +4 และ Versatility กระโดด +5 กว้างและแรงพร้อมกันที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |

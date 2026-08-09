@@ -34,33 +34,33 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
-| Path of Heavy Metal | B | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 4 (C) | 3 (C) |
-| Path of the Ancestral Guardian | S | XGE 🕰️ | 7 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) | 5 (B) | 3 (C) |
-| Path of the Battlerager | B | SCAG 🕰️ | 7 (A) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 3 (C) | 3 (C) |
-| Path of the Beast | S | TCE 🕰️ | 8 (A) | 6 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Path of the Berserker | S | XPHB | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 3 (C) | 3 (C) |
+| Path of Heavy Metal | C | VSS 🕰️ | 8 (A) | 5 (B) | 0 (D) | 8 (A) | 7 (A) | 4 (C) | 3 (C) |
+| Path of the Ancestral Guardian | B | XGE 🕰️ | 7 (A) | 5 (B) | 8 (A) | 8 (A) | 7 (A) | 5 (B) | 3 (C) |
+| Path of the Battlerager | C | SCAG 🕰️ | 7 (A) | 3 (C) | 0 (D) | 9 (S) | 7 (A) | 3 (C) | 3 (C) |
+| Path of the Beast | B | TCE 🕰️ | 8 (A) | 6 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Path of the Berserker | C | XPHB | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 3 (C) | 3 (C) |
 | Path of the Carrion Raven | S | GrimHollowPlayerPack 🕰️ | 9 (S) | 7 (A) | 5 (B) | 10 (S) | 7 (A) | 8 (A) | 9 (S) |
-| Path of the Colossus | B | VSS 🕰️ | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 3 (C) | 4 (C) |
-| Path of the Fin | A | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 5 (B) | 4 (C) |
-| Path of the Muscle Wizard | S | VSS 🕰️ | 9 (S) | 5 (B) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
-| Path of the Rage Mage | A | VSS 🕰️ | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
-| Path of the Storm Herald | S | XGE 🕰️ | 7 (A) | 5 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
-| Path of the Totem Warrior | A | PHB 🕰️ | 6 (B) | 5 (B) | 5 (B) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Path of the Wild Heart | S | XPHB | 6 (B) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 6 (B) | 9 (S) |
-| Path of the World Tree | S | XPHB | 6 (B) | 8 (A) | 8 (A) | 9 (S) | 7 (A) | 6 (B) | 8 (A) |
-| Path of the Wrathful Dead | S | GrimHollowPG24 | 8 (A) | 7 (A) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 7 (A) |
-| Path of the Zealot | S | XPHB | 8 (A) | 3 (C) | 9 (S) | 10 (S) | 8 (A) | 4 (C) | 8 (A) |
-| Path of Tranquility | A | VSS 🕰️ | 6 (B) | 6 (B) | 5 (B) | 9 (S) | 7 (A) | 6 (B) | 6 (B) |
-| Path of Wild Magic | A | TCE 🕰️ | 7 (A) | 5 (B) | 5 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
-| Path of the Fractured | A | GrimHollowPG24 | 7 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 4 (C) | 6 (B) |
-| Path of the Giant | A | BGG 🕰️ | 8 (A) | 6 (B) | 3 (C) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
-| Path of the Primal Spirit | B | GrimHollowPG24 | 7 (A) | 3 (C) | 2 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
+| Path of the Colossus | C | VSS 🕰️ | 8 (A) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 3 (C) | 4 (C) |
+| Path of the Fin | C | VSS 🕰️ | 7 (A) | 6 (B) | 0 (D) | 8 (A) | 7 (A) | 5 (B) | 4 (C) |
+| Path of the Muscle Wizard | B | VSS 🕰️ | 9 (S) | 5 (B) | 0 (D) | 9 (S) | 8 (A) | 4 (C) | 5 (B) |
+| Path of the Rage Mage | C | VSS 🕰️ | 8 (A) | 6 (B) | 0 (D) | 8 (A) | 6 (B) | 6 (B) | 8 (A) |
+| Path of the Storm Herald | A | XGE 🕰️ | 7 (A) | 5 (B) | 6 (B) | 9 (S) | 7 (A) | 5 (B) | 7 (A) |
+| Path of the Totem Warrior | B | PHB 🕰️ | 6 (B) | 5 (B) | 5 (B) | 10 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Path of the Wild Heart | A | XPHB | 6 (B) | 5 (B) | 6 (B) | 10 (S) | 7 (A) | 6 (B) | 9 (S) |
+| Path of the World Tree | A | XPHB | 6 (B) | 8 (A) | 8 (A) | 9 (S) | 7 (A) | 6 (B) | 8 (A) |
+| Path of the Wrathful Dead | A | GrimHollowPG24 | 8 (A) | 7 (A) | 5 (B) | 9 (S) | 7 (A) | 7 (A) | 7 (A) |
+| Path of the Zealot | A | XPHB | 8 (A) | 3 (C) | 9 (S) | 10 (S) | 8 (A) | 4 (C) | 8 (A) |
+| Path of Tranquility | B | VSS 🕰️ | 6 (B) | 6 (B) | 5 (B) | 9 (S) | 7 (A) | 6 (B) | 6 (B) |
+| Path of Wild Magic | B | TCE 🕰️ | 7 (A) | 5 (B) | 5 (B) | 9 (S) | 7 (A) | 5 (B) | 6 (B) |
+| Path of the Fractured | B | GrimHollowPG24 | 7 (A) | 5 (B) | 3 (C) | 10 (S) | 7 (A) | 4 (C) | 6 (B) |
+| Path of the Giant | B | BGG 🕰️ | 8 (A) | 6 (B) | 3 (C) | 8 (A) | 7 (A) | 4 (C) | 7 (A) |
+| Path of the Primal Spirit | C | GrimHollowPG24 | 7 (A) | 3 (C) | 2 (D) | 8 (A) | 7 (A) | 6 (B) | 7 (A) |
 
 ---
 
 ### Path of Heavy Metal (VSS 🕰️)
 
-**Overall**: B — ขยับกลางๆ 4 axis (Damage/Control/AE/Utility) Support ยังเป็น 0 เต็ม ไม่มี peak ถึง S
+**Overall**: C — (6 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 4 axis (Damage/Control/AE/Utility) Support ยังเป็น 0 เต็ม ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -75,7 +75,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Ancestral Guardian (XGE 🕰️)
 
-**Overall**: S — Support กระโดดจาก 0 (D) เป็น 8 (A) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงมาก บวกขยับตามอีก 4 axis
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 (D) เป็น 8 (A) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงมาก บวกขยับตามอีก 4 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -90,7 +90,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Battlerager (SCAG 🕰️)
 
-**Overall**: B — Survivability เป็น S ใหม่ แต่ breadth แคบมาก Support ยังเป็น 0 เต็ม
+**Overall**: C — (6 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ แต่ breadth แคบมาก Support ยังเป็น 0 เต็ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -105,7 +105,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Beast (TCE 🕰️)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่ม
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบ 6 ใน 7 axis กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -120,7 +120,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Berserker (XPHB)
 
-**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ แม้ Support จะยังเป็น 0
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ใหม่ทั้งคู่ แม้ Support จะยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -135,7 +135,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Carrion Raven (GrimHollowPlayerPack 🕰️)
 
-**Overall**: S — 3 axis เป็น S ใหม่พร้อมกัน (Damage, Survivability 10/10 เต็ม, Versatility กระโดด +6) ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย — แรงและกว้างที่สุดในคลาสทั้งหมด
+**Overall**: S — (16 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) 3 axis เป็น S ใหม่พร้อมกัน (Damage, Survivability 10/10 เต็ม, Versatility กระโดด +6) ขยับขึ้นครบทั้ง 7 axis จาก baseline ไม่เหลือแกนไหนนิ่งเลย — แรงและกว้างที่สุดในคลาสทั้งหมด
 
 
 > **หมายเหตุข้อมูล**: ระบบ Martial Maneuvers มีตัวเลือกทั้งหมด 16 แบบ (รู้ 3 ตัวตอน lv3 → 6 ตัวตอน lv14) ให้คะแนนจากภาพรวมของ pool ทั้งหมดที่ยืนยันได้ในไฟล์ ไม่ใช่ build เดียว — magnitude/breadth จึงสูงเพราะเลือกได้จากคลังกว้างมาก แม้แต่ละตัวละครจะรู้พร้อมกันแค่บางส่วน
@@ -152,7 +152,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Colossus (VSS 🕰️)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Damage/Support/Versatility) ไม่มี peak ถึง S
+**Overall**: C — (6 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Damage/Support/Versatility) ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -167,7 +167,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Fin (VSS 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน Support ยังเป็น 0
+**Overall**: C — (7 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ขยับขึ้น 4 axis กลางๆ พร้อมกัน Support ยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -182,7 +182,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Muscle Wizard (VSS 🕰️)
 
-**Overall**: S — Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวกขยับตามอีก 2 axis แม้ Support จะยังเป็น 0
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ใหม่ทั้งคู่ บวกขยับตามอีก 2 axis แม้ Support จะยังเป็น 0
 
 
 | Axis | คะแนน | เหตุผล |
@@ -197,7 +197,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Rage Mage (VSS 🕰️)
 
-**Overall**: A — Versatility กระโดด +5 (C→A) บวกขยับขึ้นอีก 3 axis กลางๆ ไม่มี peak ถึง S
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Versatility กระโดด +5 (C→A) บวกขยับขึ้นอีก 3 axis กลางๆ ไม่มี peak ถึง S
 
 
 | Axis | คะแนน | เหตุผล |
@@ -212,7 +212,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Storm Herald (XGE 🕰️)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบ 6 ใน 7 axis
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 6 (D→B) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบ 6 ใน 7 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -227,7 +227,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Totem Warrior (PHB 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -242,7 +242,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Wild Heart (XPHB)
 
-**Overall**: S — Survivability และ Versatility เป็น S ใหม่ทั้งคู่ (Versatility กระโดด +6) บวก Support ขยับบางส่วน และขยับตามอีก 2 axis
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability และ Versatility เป็น S ใหม่ทั้งคู่ (Versatility กระโดด +6) บวก Support ขยับบางส่วน และขยับตามอีก 2 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -257,7 +257,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the World Tree (XPHB)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 8 (D→A) บวก Survivability เป็น S ใหม่ และ Control/Versatility กระโดด +5 ทั้งคู่ — กว้างและแรงพร้อมกัน
+**Overall**: A — (13 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 8 (D→A) บวก Survivability เป็น S ใหม่ และ Control/Versatility กระโดด +5 ทั้งคู่ — กว้างและแรงพร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -272,7 +272,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Wrathful Dead (GrimHollowPG24)
 
-**Overall**: S — Support ขยับบางส่วน (0→5) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบทั้ง 6 axis ที่เหลือ (นอกจาก Damage) กว้างที่สุดในกลุ่ม
+**Overall**: A — (14 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support ขยับบางส่วน (0→5) บวก Survivability เป็น S ใหม่ และขยับขึ้นครบทั้ง 6 axis ที่เหลือ (นอกจาก Damage) กว้างที่สุดในกลุ่ม
 
 
 | Axis | คะแนน | เหตุผล |
@@ -287,7 +287,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Zealot (XPHB)
 
-**Overall**: S — Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในคลาส บวก Survivability เป็น S ใหม่ด้วย
+**Overall**: A — (12 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Support กระโดดจาก 0 เป็น 9 (D→S เต็มสเกล) — แก้จุดอ่อนใหญ่สุดของ baseline ได้แรงที่สุดในคลาส บวก Survivability เป็น S ใหม่ด้วย
 
 
 | Axis | คะแนน | เหตุผล |
@@ -302,7 +302,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of Tranquility (VSS 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis
 
 
 | Axis | คะแนน | เหตุผล |
@@ -317,7 +317,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of Wild Magic (TCE 🕰️)
 
-**Overall**: A — Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis เหมือน Path of Tranquility
+**Overall**: B — (11 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ บวก Support ขยับบางส่วน (0→5) และขยับตามอีก 3 axis เหมือน Path of Tranquility
 
 
 | Axis | คะแนน | เหตุผล |
@@ -332,7 +332,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Fractured (GrimHollowPG24)
 
-**Overall**: A — Survivability เป็น S ใหม่ (10/10 เต็ม) บวกขยับขึ้นอีก 4 axis กลางๆ แต่ Support แก้ได้แค่บางส่วน (0→3, ยังเกรด C)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Survivability เป็น S ใหม่ (10/10 เต็ม) บวกขยับขึ้นอีก 4 axis กลางๆ แต่ Support แก้ได้แค่บางส่วน (0→3, ยังเกรด C)
 
 
 | Axis | คะแนน | เหตุผล |
@@ -347,7 +347,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Giant (BGG 🕰️)
 
-**Overall**: A — ไม่มี axis ไหนถึง S ใหม่ แต่ Versatility กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ไม่มี axis ไหนถึง S ใหม่ แต่ Versatility กระโดด +4 และขยับขึ้นอีก 4 axis พร้อมกัน
 
 
 | Axis | คะแนน | เหตุผล |
@@ -362,7 +362,7 @@ Floor 0-10 ต่อ axis ของ **Barbarian เปล่าๆ ไม่น�
 
 ### Path of the Primal Spirit (GrimHollowPG24)
 
-**Overall**: B — ขยับกลางๆ 3 axis (Damage/Utility/Versatility) Support แทบไม่ขยับ (0→2 ยังเกรด D)
+**Overall**: C — (8 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับกลางๆ 3 axis (Damage/Utility/Versatility) Support แทบไม่ขยับ (0→2 ยังเกรด D)
 
 
 | Axis | คะแนน | เหตุผล |
