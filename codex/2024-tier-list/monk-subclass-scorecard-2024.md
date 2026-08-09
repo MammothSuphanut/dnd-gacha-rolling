@@ -3,8 +3,8 @@
 **วิธีให้คะแนน**: ดู [00-scorecard-methodology.md](00-scorecard-methodology.md) — 7 axis, M/R/B scoring, Class Baseline, กติกาการเขียนเหตุผล
 
 **วันที่เริ่ม**: 2026-08-07
-**ขอบเขต**: 20 subclass (ดูรายชื่อใน [00-scorecard-progress.md § Monk](00-scorecard-progress.md))
-**สถานะปัจจุบัน**: เสร็จสมบูรณ์ — Class Baseline + Subclass Scoring ครบทั้ง 20 ตัว
+**ขอบเขต**: 21 subclass (ดูรายชื่อใน [00-scorecard-progress.md § Monk](00-scorecard-progress.md))
+**สถานะปัจจุบัน**: เสร็จสมบูรณ์ — Class Baseline + Subclass Scoring ครบทั้ง 21 ตัว (รวม "Warrior of the Asura" homebrew ของโปรเจกต์)
 
 **ที่มาข้อมูล chassis**: `src/data/5etools/official/class/class-monk.json` — source `XPHB` (Player's Handbook 2024)
 
@@ -30,7 +30,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 
 **Class Baseline อ้างอิง**: Damage 7, Control 6, Support 0, Survivability 9, Action Economy 8, Utility 6, Versatility 5
 
-**หมายเหตุที่มาข้อมูล**: "Warrior of X" (Mercy/Shadow/Elements/Open Hand) คือชื่อ 2024 official ของ subclass ที่เดิมชื่อ "Way of X" ใน PHB 2014 (Mercy/Shadow/Four Elements/Open Hand) — progress tracker แยกให้คะแนนทั้งสองเวอร์ชันเหมือนกรณี Banneret/Purple Dragon Knight ของ Fighter เพราะกลไก 2014 กับ 2024 ต่างกันจริง "Warrior of Pride/Regret/the Leaden Crown" มาจาก Grim Hollow 2024 และ "Warrior of the Street" มาจาก Valda's Spire Player Pack (ตรวจสอบแล้วว่าใช้ chassis 2024/`XPHB` จึงไม่ติด 🕰️) ส่วนที่เหลือเป็น 2014-only orphan จาก XGE/SCAG/TCE/FTD/VSS หมายเหตุข้อมูล: **Way of the Ascendant Dragon** และ **Way of the Four Elements** มีฟีเจอร์ย่อยบางส่วน (Draconic Disciple's Presence/Strike/Tongue, Aspect of the Wyrm's ตัวเลือก, Elemental Disciplines ทั้งหมด) ที่ไม่ปรากฏรายละเอียดเต็มในไฟล์ข้อมูล จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้
+**หมายเหตุที่มาข้อมูล**: "Warrior of X" (Mercy/Shadow/Elements/Open Hand) คือชื่อ 2024 official ของ subclass ที่เดิมชื่อ "Way of X" ใน PHB 2014 (Mercy/Shadow/Four Elements/Open Hand) — progress tracker แยกให้คะแนนทั้งสองเวอร์ชันเหมือนกรณี Banneret/Purple Dragon Knight ของ Fighter เพราะกลไก 2014 กับ 2024 ต่างกันจริง "Warrior of Pride/Regret/the Leaden Crown" มาจาก Grim Hollow 2024 และ "Warrior of the Street" มาจาก Valda's Spire Player Pack (ตรวจสอบแล้วว่าใช้ chassis 2024/`XPHB` จึงไม่ติด 🕰️) ส่วนที่เหลือเป็น 2014-only orphan จาก XGE/SCAG/TCE/FTD/VSS **Warrior of the Asura** เป็น homebrew ของโปรเจกต์เอง หมายเหตุข้อมูล: **Way of the Ascendant Dragon** และ **Way of the Four Elements** มีฟีเจอร์ย่อยบางส่วน (Draconic Disciple's Presence/Strike/Tongue, Aspect of the Wyrm's ตัวเลือก, Elemental Disciplines ทั้งหมด) ที่ไม่ปรากฏรายละเอียดเต็มในไฟล์ข้อมูล จึงให้คะแนนแบบระมัดระวังในแกนที่ไม่ยืนยันได้
 
 | Subclass | Overall | Source | Damage | Control | Support | Surv. | AE | Utility | Versatility |
 |---|---|---|---|---|---|---|---|---|---|
@@ -54,6 +54,7 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 | Way of the Sun Soul | B | XGE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 9 (S) | 6 (B) | 6 (B) |
 | Way of the Astral Self | A | TCE 🕰️ | 9 (S) | 6 (B) | 0 (D) | 10 (S) | 9 (S) | 8 (A) | 8 (A) |
 | Way of the Four Elements | B | PHB 🕰️ | 8 (A) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 7 (A) | 7 (A) |
+| Warrior of the Asura | B | Homebrew | 9 (S) | 6 (B) | 0 (D) | 9 (S) | 8 (A) | 6 (B) | 6 (B) |
 
 ---
 
@@ -360,3 +361,17 @@ Floor 0-10 ต่อ axis ของ **Monk เปล่าๆ ไม่นับ
 | **Action Economy** | 8/10 (A) | ไม่สามารถยืนยัน economy gain ใหม่ได้ = เท่า baseline |
 | **Utility** | 7/10 (A) | Ride the Wind (ชื่อบ่งชี้บิน) + Mist Stance (ชื่อบ่งชี้ gaseous/หลบหลีก) เพิ่ม utility แม้ไม่ทราบรายละเอียดเต็ม [M:2/4] [R:3/3] [B:2/3] |
 | **Versatility** | 7/10 (A) | เลือก discipline ได้ 4 จาก 9+ ตัวเลือก สลับได้ทุกครั้งที่เรียนใหม่ — toolkit ยืดหยุ่นแม้ไม่ทราบผลแต่ละตัวครบ [M:2/4] [R:2/3] [B:3/3] |
+
+### Warrior of the Asura (Homebrew)
+
+**Overall**: B — (10 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) Damage และ Survivability เป็น S ทั้งคู่ (nova magnitude สูงสุดในกลุ่ม + resistance ดาเมจทุกชนิดจาก Steel Body) แต่ Support ยังเป็น 0 (D) เต็ม และ Control/Action Economy/Utility นิ่งสนิทที่ baseline ฉุดผลรวมให้อยู่แค่ B
+
+| Axis | คะแนน | เหตุผล |
+|---|---|---|
+| **Damage** | 9/10 (S) | Asura Strike (lv3, ต้องมี 5 Spirit Sphere) เผา Action+Bonus Action+Speed ที่เหลือทั้งหมด รวม Focus Point และ Spirit Sphere ทุกแต้ม แลกดาเมจ Martial Arts die × (จำนวน Focus Point ที่จ่าย + 1) + Dex mod ในการตีครั้งเดียว — ที่ lv17+ (MA die d12, Focus pool สูงสุด 13) ทุ่มได้ถึง ~13d12+Dex ในตาเดียว บวก Force Crit (attack roll รวม ≥ AC เป้าหมาย+15+Prof Bonus กลายเป็นคริติคอลอัตโนมัติ) ที่ lv17 ผ่าน Annihilating Fury ดาเมจคริติคอลกลายเป็น 3 เท่าแทน 2 เท่า — nova magnitude สูงสุดในกลุ่ม Monk ทั้งหมด แต่ต้องสะสม Spirit Sphere อย่างน้อย 2-3 เทิร์นก่อนถึงจะปลดล็อกได้ [M:4/4] [R:2/3] [B:3/3] |
+| **Control** | 6/10 (B) | ไม่มี control feature ใหม่ (threshold ของ Spirit Sphere ทั้งหมดเป็น self-buff ไม่ใช่ debuff ศัตรู) = เท่า baseline |
+| **Support** | 0/10 (D) | ไม่มี feature เสริมทีมใหม่เลย = เท่า baseline |
+| **Survivability** | 9/10 (S) | Wrathful Momentum (lv6) ให้ temporary hit point เท่า Martial Arts die + Monk level ทุกครั้งที่ฆ่าเป้าหรือคริติคอลด้วย Unarmed Strike (ไม่จำกัดจำนวนครั้ง/เทิร์น) และ Steel Body (lv11, 1 ครั้ง/short หรือ long rest, bonus action) ให้ resistance ดาเมจ**ทุกชนิด**จนถึงต้นเทิร์นถัดไป แลกด้วย Speed 0 และ Disadvantage การโจมตี — ครอบคลุมกว้างกว่า Deflect Attacks ของ baseline ที่จำกัดแค่ B/P/S จนถึง lv13 และช่วยปิดจุดอ่อนที่ Designer's Note ระบุไว้ตรงๆ (ไม่มีการป้องกันตัวเองช่วงหลังทุ่ม Asura Strike) [M:3/4] [R:3/3] [B:3/3] |
+| **Action Economy** | 8/10 (A) | Asura Strike ผูก Action+Bonus Action+Speed ที่เหลือทั้งหมดไว้ในการกระทำเดียว (จ่ายตูมทีเดียวแล้วแห้งทั้งวันตามนิยาม Action Economy ของกติกา) ส่วน Steel Body คุ้มทุนด้วยการใช้แค่ bonus action เดียวแลก resistance เต็มรอบ แต่ก็แลกด้วย Speed 0 และ Disadvantage — หักล้างกันจนไม่มีกำไรสุทธิเกิน baseline ชัดเจน = เท่า baseline |
+| **Utility** | 6/10 (B) | ไม่มี utility นอกคอมแบตใหม่ (Speed +5ft จาก Spirit Sphere 1+ เป็นแค่ mobility ในคอมแบต) = เท่า baseline |
+| **Versatility** | 6/10 (B) | Spirit Sphere threshold ให้ตัวเลือกใช้งานสองขั้ว — ทุ่มทุกอย่างเป็น Asura Strike (striker เดี่ยว) หรือกด Steel Body เป็นแท็งค์ฉุกเฉิน (resistance ทุกดาเมจ) ทำให้สลับบทบาทได้กว้างกว่า baseline เล็กน้อยแม้จะยังผูกกับอาวุธมือเปล่า Dex build เดียวเหมือนเดิม [M:2/4] [R:2/3] [B:2/3] |

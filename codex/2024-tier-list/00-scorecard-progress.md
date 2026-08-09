@@ -351,7 +351,7 @@
 - [x] Burden of Truth
 - [x] Burden of Tyranny
 
-### Monk (20)
+### Monk (21)
 
 - [x] Way of the Bow
 - [x] Way of the Flagellant
@@ -359,6 +359,7 @@
 - [x] Warrior of Pride
 - [x] Warrior of Regret
 - [x] Warrior of Shadow
+- [x] Warrior of the Asura (Homebrew)
 - [x] Warrior of the Elements
 - [x] Warrior of the Leaden Crown
 - [x] Warrior of the Open Hand

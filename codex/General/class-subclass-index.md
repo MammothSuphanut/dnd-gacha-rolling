@@ -6,7 +6,7 @@
 > **จุดประสงค์**: ก่อนเสนอ/เปรียบเทียบ subclass ให้ผู้ใช้ตอน `/build-character` หรือ `/level-up-character` ให้ไล่ดูตารางของ class นั้นในไฟล์นี้ก่อน แทนที่จะเปิด compendium JSON ของ homebrew ตรงๆ (โดยเฉพาะ Valda's Spire ที่ subclass เกือบ 200 ตัวปนอยู่ในไฟล์เดียว) เพื่อไม่ให้พลาดตัวเลือก official/homebrew ตัวใดตัวหนึ่งไปแบบไม่ตั้งใจ — ยังต้องเสนอ official และ homebrew เท่าเทียมกันตามกติกาใน [README.md](README.md) เหมือนเดิม
 >
 > **ก่อนอ่านตารางด้านล่างเพื่อสร้าง/ปรึกษาตัวละคร**: ต้องถามผู้ใช้ 4 คำถามก่อนเสมอ — (1) edition 2014/2024 (2014 = ใช้เฉพาะ edition 2014, 2024 = ใช้ทั้งหมดแต่ถ้าซ้ำกันให้ใช้เวอร์ชัน 2024), (2) ขอบเขต class หลัก(official)/เสริม(homebrew)/ทั้งคู่, (3) กฎพิเศษของ campaign ถ้ามี (เช่น Grim Hollow: Grievous Wounds, Gritty Realism), (4) level ที่จะสร้าง/ปรึกษา — รายละเอียดเต็มดูที่ [README.md § Ruleset ก่อนเริ่มสร้าง/ปรึกษาตัวละคร](README.md#ruleset-ก่อนเริ่มสร้างปรึกษาตัวละคร)
-> Generated: 2026-08-08 • 33 classes • 806 subclasses (official: 322, Grim Hollow: 73, Valda's Spire: 398, This Project: 13)
+> Generated: 2026-08-09 • 33 classes • 807 subclasses (official: 322, Grim Hollow: 73, Valda's Spire: 398, This Project: 14)
 >
 > **หาว่า subclass ไหนแรง/อ่อน (ไม่ใช่แค่ว่ามีอะไรบ้าง)**: ไฟล์นี้เป็นแค่ดัชนี ไม่มีข้อมูล tier — ระบบ tier แบบเก่า (00-sub-class-overview-tier-list-2024.md) ถูกลบไปแล้ว 2026-08-07 กำลังทำใหม่ทั้งหมดตามกติกาใน [00-scorecard-methodology.md](../2024-tier-list/00-scorecard-methodology.md) — เช็คความคืบหน้าได้ที่ [00-scorecard-progress.md](../2024-tier-list/00-scorecard-progress.md)
 
@@ -102,7 +102,7 @@ _Official_
 | [Path of the Wrathful Dead](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wrathful%20dead_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [Path of the Zealot](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_zealot_xphb=b1) | 2024 | Xanathar's Guide to Everything (`XGE`) | Official |
 | [Path of Tranquility](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_tranquility_valdaplayerpack=b1) | 2014 | Valda's Spire of Secrets (2014) (`VSS`) | Valda's Spire of Secrets (Mage Hand Press) |
-| [Path of Wild Magic](https://5e.tools/search.html?q=Path%20of%20Wild%20Magic) | 2024 | Tasha's Cauldron of Everything (`TCE`) | Official |
+| [Path of Wild Magic](https://5e.tools/classes.html#barbarian_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_wild%20magic_tce=b1) | 2024 | Tasha's Cauldron of Everything (`TCE`) | Official |
 
 ## [Bard](https://5e.tools/search.html?q=Bard)
 
@@ -404,6 +404,7 @@ _Official_
 | [Warrior of Pride](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_pride_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [Warrior of Regret](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_regret_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [Warrior of Shadow](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_shadow_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
+| [Warrior of the Asura](/codex/homebrew-subclass/Monk/Warrior-of-the-Asura) | 2024 | Homebrew | Homebrew |
 | [Warrior of the Elements](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_elements_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
 | [Warrior of the Leaden Crown](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_leaden%20crown_grimhollowpg24=b1) | 2024 | Grim Hollow: Player's Guide (2024) (`GrimHollowPG24`) | Grim Hollow (Ghostfire Gaming) |
 | [Warrior of the Open Hand](https://5e.tools/classes.html#monk_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_open%20hand_xphb=b1) | 2024 | Player's Handbook (2024) (`XPHB`) | Official |
