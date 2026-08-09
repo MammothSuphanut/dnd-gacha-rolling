@@ -10,11 +10,14 @@
 
 Whenever you take the bonus action to convert a spell slot into Fervor, you can also choose to pay hit points to gain bonus Fervor, at a rate of 3 hit points per 1 Fervor, up to a maximum of your Wisdom modifier in bonus Fervor gained this way.
 
+
 ### 6th Level: Moment of Dread
 
 *Fear, at its sharpest, kills as surely as steel.*
 
 When you make an attack using Faith Halo, if the resulting attack roll is at least the target's AC + 15 + the target's Proficiency Bonus, that attack counts as a critical hit. You can trigger this only once per turn.
+
+Faith Halo now can stack exceed the cap in single use.
 
 ### 10th Level: Mercy's Embrace
 

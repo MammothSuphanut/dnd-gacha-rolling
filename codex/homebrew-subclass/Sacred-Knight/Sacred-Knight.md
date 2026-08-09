@@ -237,21 +237,21 @@ Any technique you've learned can be used at any time, regardless of what you're 
 
 ### Universal Techniques
 
-**Pure White Blade.** *Cost: 1 Fervor per stack.* When you make an attack, you can increase its range by 5 feet per stack of Fervor spent, usable on both melee and ranged attacks. If you spend 5 or more Fervor on a single use (25 feet or more of bonus range), you also gain advantage on that attack roll. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single use (further limited by the Fervor you have available).
+**Pure White Blade.** *Cost: 1 Fervor per stack.* When you make an attack, you can increase its range by 5 feet per stack of Fervor spent, usable on both melee and ranged attacks. If you spend 5 or more Fervor on a single use (25 feet or more of bonus range), you also gain advantage on that attack roll. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single use.
 
 *Improvement (7th or 15th level).* Each stack now grants +10 feet of range instead of +5 (the cost and stack cap don't change).
 
-**Swift.** *Cost: 1 Fervor per stack.* As a free action, usable once per turn, you increase your Speed by 10 feet per stack of Fervor spent until the start of your next turn, and you ignore difficult terrain for as long as the effect lasts. The bonus Speed from this technique is calculated separately from your base Speed — Dash only doubles your base Speed, not this bonus. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single use (further limited by the Fervor you have available).
+**Swift.** *Cost: 1 Fervor per stack.* As a free action, usable once per turn, you increase your Speed by 10 feet per stack of Fervor spent until the start of your next turn, and you ignore difficult terrain for as long as the effect lasts. The bonus Speed from this technique is calculated separately from your base Speed — Dash only doubles your base Speed, not this bonus. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single use.
 
 *Improvement (7th or 15th level).* Each stack now grants +15 feet of Speed instead of +10 (the cost, duration, and stack cap don't change).
 
-**Faith Halo.** *Cost: 1 Fervor per stack.* When you make an attack, you increase the attack roll by +1 per stack of Fervor spent (paid before you roll — see *Paying Before You Know the Result*).
+**Faith Halo.** *Cost: 1 Fervor per stack.* When you make an attack, you increase the attack roll by +1 per stack of Fervor spent (paid before you roll — see *Paying Before You Know the Result*). You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single use.
 
-*Improvement (7th or 15th level).* For every 2 additional Fervor you spend beyond the base 1-per-+1 rate, you gain an extra +1 to the attack roll (an effective rate of 1 Fervor : 1.5 bonus — for example, spending 4 Fervor grants +4 from the base rate plus +2 from this bonus, for +6 total). The stack cap doesn't change.
+*Improvement (7th or 15th level).* For every 2 additional Fervor you spend beyond the base 1-per-+1 rate, you gain an extra +1 to the attack roll. The stack cap doesn't change.
 
-**Clarity.** *Cost: 1 Fervor per stack.*As a Reaction action, Before making any ability check of your own, you can spend Fervor to add +1 per stack to the check. You must declare this before you roll — you can't apply it after seeing the result. This uses the same exchange rate as Faith Halo (1 Fervor : +1) so it isn't cheaper than an attack-focused technique without reason. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single check (further limited by the Fervor you have available).
+**Clarity.** *Cost: 1 Fervor per stack.*As a Reaction action, Before making any ability check of your own, you can spend Fervor to add +1 per stack to the check. You must declare this before you roll — you can't apply it after seeing the result. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single check.
 
-*Improvement (7th or 15th level).* For every 2 additional Fervor you spend beyond the base rate, you gain an extra +1 to the check (matching Faith Halo's improved rate exactly). The stack cap doesn't change.
+*Improvement (7th or 15th level).* For every 2 additional Fervor you spend beyond the base rate, you gain an extra +1 to the check. The stack cap doesn't change.
 
 ### Retribution Techniques
 
@@ -270,15 +270,13 @@ Any technique you've learned can be used at any time, regardless of what you're 
 | 9 | 55 | 44 |
 | 10 | 67 | 54 |
 
-You can purchase a maximum of your Wisdom modifier + Proficiency Bonus additional attacks per turn this way (in practice, your Fervor budget runs out well before this cap at most levels — it exists purely as a safety net).
-
 *Improvement (7th or 15th level).* The cost of the Nth additional attack drops from N + 2 to **N + 1** Fervor.
 
 **Rising Dragon Strike.** *Cost: 3 Fervor.* When you're hit by an attack, you can spend 3 Fervor to immediately make one counterattack with a weapon you're wielding. This doesn't cost your reaction. You can use this every time you're hit — it's limited only by your available Fervor, not by a per-turn cap, since how often you're hit is already a natural limiter.
 
 *Improvement (7th or 15th level).* The cost drops from 3 Fervor to **2 Fervor** per use.
 
-**Light Sword.** *Cost: 1 Fervor per stack.* When you make an attack, you add 1d4 radiant damage per stack of Fervor spent. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single attack (further limited by the Fervor you have available), preventing you from hoarding Fervor across many turns and dumping it all into a single oversized attack.
+**Light Sword.** *Cost: 1 Fervor per stack.* When you make an attack, you add 1d4 radiant damage per stack of Fervor spent. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single attack.
 
 *Improvement (7th or 15th level).* Each stack now deals 1d6 radiant damage instead of 1d4 (the number of dice and the stack cap don't change).
 
@@ -286,13 +284,13 @@ You can purchase a maximum of your Wisdom modifier + Proficiency Bonus additiona
 
 **Shared Reaction.** Spirit Ward, Guardian's Blessing, and Bulwark Shift all use the same reaction — one per round, as normal. However, a single use of your reaction can trigger **all three** of these techniques against the same triggering event at once, as long as you have enough Fervor to pay for each one you want to use — you don't have to pick only one. (For example, if you fail a saving throw against an effect that also deals damage, you can spend your one reaction to use both Guardian's Blessing, to turn the failed save into a success, and Spirit Ward, to reduce the damage, in the same reaction — as long as you can afford both costs.) A reaction granted by another feature (such as Vanguard's Instinct) is a separate reaction and isn't affected by this rule.
 
-**Spirit Ward.** *Cost: 1 Fervor reduces damage by 2.* When you're hit by an attack and know the damage, you can spend Fervor to reduce that damage at a rate of 1 Fervor per 2 points of damage (for example, spending 5 Fervor against 10 damage negates it entirely). Spending less still reduces damage proportionally. (See *Shared Reaction*, above.) You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single reduction (further limited by the Fervor you have available).
+**Spirit Ward.** *Cost: 1 Fervor reduces damage by 2.* When you're hit by an attack and know the damage, you can spend Fervor to reduce that damage at a rate of 1 Fervor per 2 points of damage (for example, spending 5 Fervor against 10 damage negates it entirely). Spending less still reduces damage proportionally. (See *Shared Reaction*, above.) You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single reduction.
 
-*Improvement (7th or 15th level).* The rate improves to a flat **1 Fervor per 3 points of damage** (for example, spending 4 Fervor reduces 12 damage). The stack cap doesn't change.
+*Improvement (7th or 15th level).* The rate improves to a flat **1 Fervor per 3 points of damage**.
 
-**Guardian's Blessing.** *Cost: 2 Fervor per point below the DC.* When you fail a saving throw, you can spend Fervor immediately after learning the result to turn that failure into a success, at a rate of 2 Fervor per point you fell short of the DC (for example, rolling a 10 against DC 15 — 5 points short — costs 10 Fervor to succeed). (See *Shared Reaction*, above.) You can cover a maximum of your Wisdom modifier + Proficiency Bonus points below the DC on a single use (further limited by the Fervor you have available).
+**Guardian's Blessing.** *Cost: 2 Fervor per point below the DC.* When you fail a saving throw, you can spend Fervor immediately after learning the result to turn that failure into a success, at a rate of 2 Fervor per point you fell short of the DC (for example, rolling a 10 against DC 15 — 5 points short — costs 10 Fervor to succeed). (See *Shared Reaction*, above.) You can cover a maximum of your Wisdom modifier + Proficiency Bonus points below the DC on a single use.
 
-*Improvement (7th or 15th level).* The rate improves to a flat **1 Fervor per point** (for example, spending 6 Fervor covers 6 points below the DC). The point cap doesn't change.
+*Improvement (7th or 15th level).* The rate improves to a flat **1 Fervor per point**.
 
 **Bulwark Shift.** *Cost: 1 Fervor per 5 feet (reaction).* You spend Fervor based on distance (1 Fervor per 5 feet) to swap places with one creature — ally or enemy — within the distance you can afford. The swapped creature is moved to a space within 5 feet of its original position (you choose where). This movement doesn't provoke opportunity attacks. (See *Shared Reaction*, above.)
 
