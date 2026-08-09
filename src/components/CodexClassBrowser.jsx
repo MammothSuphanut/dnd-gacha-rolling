@@ -5,6 +5,18 @@ import { getHomebrewRule } from '../utils/homebrewRules'
 import { parseClassSubclassIndex } from '../utils/parseClassSubclassIndex'
 import { parseSubclassScorecard } from '../utils/parseSubclassScorecard'
 import { mergeCodexClassData } from '../utils/mergeCodexClassData'
+import classesBoxes from '../data/classes.json'
+
+// Core = the 12 classic PHB classes; every other class (including official
+// non-PHB ones like Artificer/Mystic, and all 3rd-party/homebrew classes) is
+// Supplement. This isn't derivable from class-subclass-index.md's "Official"
+// vs publisher-name book line (Artificer/Mystic are both "Official" there
+// but aren't PHB core) — classes.json's gacha roll table already tags each
+// class's subclass items with the canonical "Core"/"Supplement" split the
+// user wants mirrored here, so read it from there instead of re-deriving it.
+const CORE_CLASS_NAMES = new Set(
+  classesBoxes.flatMap((box) => box.items.filter((item) => item.tag === 'Core').map((item) => item.group))
+)
 
 // Standard grade order — tier data now comes from each class's own
 // *-subclass-scorecard-2024.md (inline "**Overall**: <Tier>" per subclass,
@@ -136,11 +148,10 @@ function FilterChip({ active, onClick, children }) {
     <button
       type="button"
       onClick={onClick}
-      className={`rounded-full border px-2.5 py-1 text-xs font-medium transition-colors ${
-        active
-          ? 'border-violet-400 bg-violet-100 text-violet-800'
-          : 'border-[#e2cfb3] bg-white text-stone-600 hover:bg-[#f5ede0]'
-      }`}
+      className={`rounded-full border px-2.5 py-1 text-xs font-medium transition-colors ${active
+        ? 'border-violet-400 bg-violet-100 text-violet-800'
+        : 'border-[#e2cfb3] bg-white text-stone-600 hover:bg-[#f5ede0]'
+        }`}
     >
       {children}
     </button>
@@ -176,9 +187,8 @@ function BookScopeToggle({ value, onChange }) {
           key={opt.value}
           type="button"
           onClick={() => onChange(opt.value)}
-          className={`px-2 py-1 font-medium transition-colors ${
-            value === opt.value ? 'bg-violet-100 text-violet-800' : 'text-stone-500 hover:bg-[#f5ede0]'
-          }`}
+          className={`px-2 py-1 font-medium transition-colors ${value === opt.value ? 'bg-violet-100 text-violet-800' : 'text-stone-500 hover:bg-[#f5ede0]'
+            }`}
         >
           {opt.label}
         </button>
@@ -200,9 +210,8 @@ function GroupModeToggle({ value, onChange }) {
           key={opt.value}
           type="button"
           onClick={() => onChange(opt.value)}
-          className={`px-3 py-1.5 font-semibold transition-colors ${
-            value === opt.value ? 'bg-violet-600 text-white' : 'text-violet-700 hover:bg-violet-50'
-          }`}
+          className={`px-3 py-1.5 font-semibold transition-colors ${value === opt.value ? 'bg-violet-600 text-white' : 'text-violet-700 hover:bg-violet-50'
+            }`}
         >
           {opt.label}
         </button>
@@ -357,7 +366,16 @@ export default function CodexClassBrowser() {
     () => [...new Set([...flatRows.map((r) => r.book), ...classes.flatMap((c) => c.books || [])])].sort((a, b) => a.localeCompare(b)),
     [flatRows, classes]
   )
-  const classOptions = useMemo(() => classes.filter((c) => c.subclasses.length > 0).map((c) => c.name), [classes])
+  // Class filter is split into Core vs Supplement (see CORE_CLASS_NAMES),
+  // each sorted A-Z independently rather than one interleaved list.
+  const rankedClassOptions = useMemo(() => {
+    const withSubclasses = classes.filter((c) => c.subclasses.length > 0)
+    const byName = (a, b) => a.name.localeCompare(b.name)
+    return {
+      core: withSubclasses.filter((c) => CORE_CLASS_NAMES.has(c.name)).sort(byName).map((c) => c.name),
+      supplement: withSubclasses.filter((c) => !CORE_CLASS_NAMES.has(c.name)).sort(byName).map((c) => c.name),
+    }
+  }, [classes])
   const fullTierOrder = useMemo(() => [...tierOrder, UNRANKED], [tierOrder])
 
   const [groupMode, setGroupMode] = useState('class')
@@ -450,127 +468,135 @@ export default function CodexClassBrowser() {
           onToggle={(v) => setBooks(toggled(books, v))}
           extra={<BookScopeToggle value={bookScope} onChange={setBookScope} />}
         />
-        <FilterRow
-          label="Class"
-          options={classOptions}
-          selected={selectedClasses}
-          onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
-        />
+        <div className="flex flex-col gap-1.5">
+          <FilterRow
+            label="Core Class"
+            options={rankedClassOptions.core}
+            selected={selectedClasses}
+            onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
+          />
+          <FilterRow
+            label="Supplement Class"
+            options={rankedClassOptions.supplement}
+            selected={selectedClasses}
+            onToggle={(v) => setSelectedClasses(toggled(selectedClasses, v))}
+          />
+        </div>
       </div>
 
       {totalShown === 0 && <p className="text-sm text-stone-400">ไม่พบ subclass ที่ตรงกับตัวกรอง</p>}
 
       {groupMode === 'class'
         ? classGroups.map((c) => (
-            <section key={c.name} className="mb-6">
-              <div className="mt-2 mb-2 flex flex-wrap items-baseline gap-2">
-                <h2 className="font-cinzel text-lg font-bold text-stone-800">
-                  {c.link ? (
-                    <a href={c.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                      {c.name}
-                    </a>
-                  ) : (
-                    c.name
-                  )}
-                </h2>
-                {c.analysisLink && (
-                  <a href={c.analysisLink} target="_blank" rel="noreferrer" className={`${LINK_CLASS} text-xs`}>
-                    📊 ดูวิเคราะห์เต็ม/tier list
+          <section key={c.name} className="mb-6">
+            <div className="mt-2 mb-2 flex flex-wrap items-baseline gap-2">
+              <h2 className="font-cinzel text-lg font-bold text-stone-800">
+                {c.link ? (
+                  <a href={c.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
+                    {c.name}
                   </a>
+                ) : (
+                  c.name
                 )}
-              </div>
-              <div className="mb-3 overflow-x-auto">
-                <table className="w-full border-collapse text-sm">
-                  <thead className="bg-[#f5ede0] text-left">
-                    <tr>
-                      <th className={`${CELL_CLASS} font-semibold`}>Subclass</th>
-                      <th className={`${CELL_CLASS} text-center font-semibold`}>Tier</th>
-                      <th className={`${CELL_CLASS} font-semibold`}>Edition</th>
-                      <th className={`${CELL_CLASS} font-semibold`}>Source</th>
-                      <th className={`${CELL_CLASS} font-semibold`}>Book</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {c.rows.map((s, i) => (
-                      <tr key={`${s.name}-${s.edition}-${i}`}>
-                        <td className={CELL_CLASS}>
-                          {s.link ? (
-                            <a href={s.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                              {s.name}
-                            </a>
-                          ) : (
-                            s.name
-                          )}
-                        </td>
-                        <td className={`${CELL_CLASS} text-center`}>
-                          <TierBadge tier={s.tier} onClick={s.tier ? () => setDetailRow(s) : undefined} />
-                        </td>
-                        <td className={CELL_CLASS}>{s.edition}</td>
-                        <td className={CELL_CLASS}>{s.source}</td>
-                        <td className={CELL_CLASS}>{s.book}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </section>
-          ))
-        : tierGroups.map((g) => (
-            <section key={g.tier} className="mb-6">
-              <h2 className="font-cinzel mt-2 mb-2 flex items-center gap-2 text-lg font-bold text-stone-800">
-                <TierBadge tier={g.tier === UNRANKED ? null : g.tier} />
-                {g.tier === UNRANKED ? 'ยังไม่ได้จัดระดับ (ยังไม่มีไฟล์วิเคราะห์)' : `${g.tier} Tier`} ({g.rows.length})
               </h2>
-              <div className="mb-3 overflow-x-auto">
-                <table className="w-full border-collapse text-sm">
-                  <thead className="bg-[#f5ede0] text-left">
-                    <tr>
-                      <th className={`${CELL_CLASS} font-semibold`}>Subclass</th>
-                      <th className={`${CELL_CLASS} text-center font-semibold`}>Tier</th>
-                      <th className={`${CELL_CLASS} font-semibold`}>Class</th>
-                      <th className={`${CELL_CLASS} font-semibold`}>Edition</th>
-                      <th className={`${CELL_CLASS} font-semibold`}>Book</th>
-                      <th className={`${CELL_CLASS} font-semibold`}>หมายเหตุ</th>
+              {c.analysisLink && (
+                <a href={c.analysisLink} target="_blank" rel="noreferrer" className={`${LINK_CLASS} text-xs`}>
+                  📊 ดูวิเคราะห์เต็ม/tier list
+                </a>
+              )}
+            </div>
+            <div className="mb-3 overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead className="bg-[#f5ede0] text-left">
+                  <tr>
+                    <th className={`${CELL_CLASS} font-semibold`}>Subclass</th>
+                    <th className={`${CELL_CLASS} text-center font-semibold`}>Tier</th>
+                    <th className={`${CELL_CLASS} font-semibold`}>Edition</th>
+                    <th className={`${CELL_CLASS} font-semibold`}>Source</th>
+                    <th className={`${CELL_CLASS} font-semibold`}>Book</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {c.rows.map((s, i) => (
+                    <tr key={`${s.name}-${s.edition}-${i}`}>
+                      <td className={CELL_CLASS}>
+                        {s.link ? (
+                          <a href={s.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
+                            {s.name}
+                          </a>
+                        ) : (
+                          s.name
+                        )}
+                      </td>
+                      <td className={`${CELL_CLASS} text-center`}>
+                        <TierBadge tier={s.tier} onClick={s.tier ? () => setDetailRow(s) : undefined} />
+                      </td>
+                      <td className={CELL_CLASS}>{s.edition}</td>
+                      <td className={CELL_CLASS}>{s.source}</td>
+                      <td className={CELL_CLASS}>{s.book}</td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    {g.rows.map((r, i) => (
-                      <tr key={`${r.className}-${r.name}-${i}`}>
-                        <td className={CELL_CLASS}>
-                          {r.link ? (
-                            <a href={r.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                              {r.name}
-                            </a>
-                          ) : (
-                            r.name
-                          )}
-                        </td>
-                        <td className={`${CELL_CLASS} text-center`}>
-                          <TierBadge tier={r.tier} onClick={r.tier ? () => setDetailRow(r) : undefined} />
-                        </td>
-                        <td className={CELL_CLASS}>
-                          {r.analysisLink ? (
-                            <a href={r.analysisLink} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                              {r.className}
-                            </a>
-                          ) : r.classLink ? (
-                            <a href={r.classLink} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                              {r.className}
-                            </a>
-                          ) : (
-                            r.className
-                          )}
-                        </td>
-                        <td className={CELL_CLASS}>{r.edition}</td>
-                        <td className={CELL_CLASS}>{r.book}</td>
-                        <td className={CELL_CLASS}>{r.note || '—'}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </section>
-          ))}
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ))
+        : tierGroups.map((g) => (
+          <section key={g.tier} className="mb-6">
+            <h2 className="font-cinzel mt-2 mb-2 flex items-center gap-2 text-lg font-bold text-stone-800">
+              <TierBadge tier={g.tier === UNRANKED ? null : g.tier} />
+              {g.tier === UNRANKED ? 'ยังไม่ได้จัดระดับ (ยังไม่มีไฟล์วิเคราะห์)' : `${g.tier} Tier`} ({g.rows.length})
+            </h2>
+            <div className="mb-3 overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead className="bg-[#f5ede0] text-left">
+                  <tr>
+                    <th className={`${CELL_CLASS} font-semibold`}>Subclass</th>
+                    <th className={`${CELL_CLASS} text-center font-semibold`}>Tier</th>
+                    <th className={`${CELL_CLASS} font-semibold`}>Class</th>
+                    <th className={`${CELL_CLASS} font-semibold`}>Edition</th>
+                    <th className={`${CELL_CLASS} font-semibold`}>Book</th>
+                    <th className={`${CELL_CLASS} font-semibold`}>หมายเหตุ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {g.rows.map((r, i) => (
+                    <tr key={`${r.className}-${r.name}-${i}`}>
+                      <td className={CELL_CLASS}>
+                        {r.link ? (
+                          <a href={r.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
+                            {r.name}
+                          </a>
+                        ) : (
+                          r.name
+                        )}
+                      </td>
+                      <td className={`${CELL_CLASS} text-center`}>
+                        <TierBadge tier={r.tier} onClick={r.tier ? () => setDetailRow(r) : undefined} />
+                      </td>
+                      <td className={CELL_CLASS}>
+                        {r.analysisLink ? (
+                          <a href={r.analysisLink} target="_blank" rel="noreferrer" className={LINK_CLASS}>
+                            {r.className}
+                          </a>
+                        ) : r.classLink ? (
+                          <a href={r.classLink} target="_blank" rel="noreferrer" className={LINK_CLASS}>
+                            {r.className}
+                          </a>
+                        ) : (
+                          r.className
+                        )}
+                      </td>
+                      <td className={CELL_CLASS}>{r.edition}</td>
+                      <td className={CELL_CLASS}>{r.book}</td>
+                      <td className={CELL_CLASS}>{r.note || '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ))}
 
       <Modal open={!!detailRow} onClose={() => setDetailRow(null)} title={detailRow?.name} size={detailRow?.axes?.length ? 'lg' : 'md'}>
         {detailRow && (
