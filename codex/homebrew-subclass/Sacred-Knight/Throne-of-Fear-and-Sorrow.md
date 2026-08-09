@@ -8,19 +8,19 @@
 
 *Power drawn from the body itself, paid for in blood rather than rest.*
 
-Whenever you take the bonus action to convert a spell slot into Fervor, you can also pay hit points equal to 3 times your Wisdom modifier to gain bonus Fervor equal to your Wisdom modifier. You can use this a number of times equal to your Proficiency Bonus per long rest, preventing you from bleeding yourself dry without limit.
+Whenever you take the bonus action to convert a spell slot into Fervor, you can also choose to pay hit points to gain bonus Fervor, at a rate of 3 hit points per 1 Fervor, up to a maximum of your Wisdom modifier in bonus Fervor gained this way.
 
 ### 6th Level: Moment of Dread
 
 *Fear, at its sharpest, kills as surely as steel.*
 
-When you make an attack using Faith Halo, if the resulting attack roll is at least the target's AC + 15 + the target's Proficiency Bonus, that attack counts as a critical hit. You can trigger this only once per turn, even if you make several attacks that turn — each individual attack still requires you to pay Faith Halo's cost separately, as normal, but only one of them can become a critical hit this way, preventing this from combining with rapid multi-attacks for repeated automatic crits.
+When you make an attack using Faith Halo, if the resulting attack roll is at least the target's AC + 15 + the target's Proficiency Bonus, that attack counts as a critical hit. You can trigger this only once per turn.
 
 ### 10th Level: Mercy's Embrace
 
 *Even ruin can be tempered, if you choose to spend less of yourself.*
 
-Sorrow's Toll becomes more efficient: the hit point cost drops from 3 times your Wisdom modifier to 2 times your Wisdom modifier, for the same Fervor gained. This shares the same per-long-rest use cap as Sorrow's Toll — it doesn't grant additional uses.
+Sorrow's Toll becomes more efficient: the rate drops from 3 hit points per 1 Fervor to 2 hit points per 1 Fervor, up to the same cap of your Wisdom modifier in bonus Fervor.
 
 ### 14th Level: Wrath of Ruin
 

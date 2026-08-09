@@ -8,19 +8,19 @@
 
 *A single command, and the line moves as one.*
 
-You can use Swift on an ally within 30 feet instead of yourself, moving them immediately by a distance equal to the Speed bonus Swift grants. A willing ally moved this way can spend their own reaction to make one attack (counting as a single attack only — it doesn't trigger Extra Attack or Multiattack) or cast one cantrip with a casting time of an action or less (no spells of any other level) immediately after the movement ends.
+You can use an action to use Swift on a friendly creature within 60 feet that you can see or hear (including yourself), granting them Speed equal to the Speed bonus Swift grants. A willing creature can spend their own reaction to move up to that Speed and then make one attack (counting as a single attack only — it doesn't trigger Extra Attack or Multiattack) or cast one cantrip with a casting time of an action or less (no spells of any other level) immediately.
 
 ### 6th Level: Iron Discipline
 
 *A well-drilled line doesn't break formation for a passing blade.*
 
-Swift now prevents you from provoking opportunity attacks for as long as its effect lasts.
+While you are affected by Swift, you don't provoke opportunity attacks. A friendly creature you use Swift on this way also doesn't provoke opportunity attacks for as long as its effect lasts.
 
 ### 10th Level: Absolute Command
 
 *Momentum given is momentum kept.*
 
-An ally affected by Swift gains Speed equal to Swift's bonus when their own turn begins.
+Swift's effect — whether you use it on yourself or on a friendly creature — now lasts until the start of your next turn, instead of ending as soon as it's spent.
 
 ### 14th Level: Unyielding Law
 

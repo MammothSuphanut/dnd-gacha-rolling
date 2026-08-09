@@ -43,8 +43,8 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 | Eternity and Creation | S | 8 (A) | 3 (C) | 8 (A) | 9 (S) | 7 (A) | 5 (B) | 9 (S) |
 | Fear and Sorrow | B | 9 (S) | 3 (C) | 4 (C) | 8 (A) | 7 (A) | 5 (B) | 8 (A) |
 | Order and Law | A | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 8 (A) | 5 (B) | 9 (S) |
-| Protection and Mercy 🛡️ | B | 5 (B) ↓ | 3 (C) | 8 (A) | 9 (S) | 8 (A) | 5 (B) | 5 (B) ↓ |
-| Wisdom and Spirit | A | 7 (A) | 3 (C) | 8 (A) | 8 (A) | 8 (A) | 5 (B) | 9 (S) |
+| Protection and Mercy 🛡️ | B | 5 (B) ↓ | 3 (C) | 9 (S) | 9 (S) | 9 (S) | 5 (B) | 5 (B) ↓ |
+| Wisdom and Spirit | A | 7 (A) | 3 (C) | 9 (S) | 8 (A) | 7 (A) | 5 (B) | 9 (S) |
 
 🗡️ = ต้องเลือก Retribution Path เท่านั้น · 🛡️ = ต้องเลือก Guardian Path เท่านั้น · ↓ = ต่ำกว่า baseline โดยมีกลไกตัดทอนชัดเจน (ระบุในเหตุผล)
 
@@ -118,30 +118,34 @@ Floor 0-10 ต่อ axis ของ **Sacred Knight เปล่าๆ ไม่
 
 *Sealed Wrath แปลงดาเมจที่ทนไว้เป็นดาเมจตอบโต้ + Compassion's Toll แปลง HP เป็น Fervor — ป้อมปราการตัวจริงของ 6 Throne*
 
-**Overall**: B — Guardian-lock ตัด **2 axis ให้ต่ำกว่า baseline จริง** (Damage 5, Versatility 5) แต่แลกมาด้วย 3 axis ที่ขยับขึ้น (Support A, Survivability S, Action Economy A) เป็นการเทรดที่ได้มากกว่าเสีย (+3/-2) ต่างจาก Doom and Slaughter (+1/-3) ชัดเจน — แท็งค์/ซัพพอร์ตเฉพาะทางที่ยังมีจุดอ่อนจริงด้าน offense/breadth
+**อัปเดต 2026-08-09**: Sacred Throne นี้แก้ลำดับเลเวลและกลไกใหม่ — Compassion's Toll ย้ายมา lv3 (จาก lv6 เดิม), Vanguard's Instinct ย้ายมา lv6 (จาก lv10 เดิม) และเปลี่ยนจาก "ล็อกเฉพาะ Bulwark Shift" เป็น "ใช้ได้กับ Fervor Technique ใดก็ได้", Sealed Wrath ย้ายมา lv10 และสะสมอัตรา 1:1 ตรงๆ ตั้งแต่ต้น (ยุบรวม Guardian's Wrath เดิมที่เคยมาปรับอัตราทีหลังเข้าไปในนี้), และเพิ่ม feature ใหม่ **Endless Vigil (lv14)** ให้ reaction พิเศษอันที่ 2 (ใช้ได้เฉพาะ Fervor Technique เหมือนกัน) — กระทบ Support และ Action Economy โดยตรง ดูรายละเอียดด้านล่าง
+
+**Overall**: B — Guardian-lock ตัด **2 axis ให้ต่ำกว่า baseline จริง** (Damage 5, Versatility 5) แต่แลกมาด้วย 3 axis ที่ขยับขึ้น (Support S, Survivability S, Action Economy S) เป็นการเทรดที่ได้มากกว่าเสีย (+3/-2) ต่างจาก Doom and Slaughter (+1/-3) ชัดเจน — แท็งค์/ซัพพอร์ตเฉพาะทางที่ยังมีจุดอ่อนจริงด้าน offense/breadth
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| Damage | 5/10 (B) ↓ | **Prerequisite: Guardian Path ตัด Retribution Path ออกถาวร** ทำให้ไม่มีทางเข้าถึง Light Sword/Cross Slash เลย (baseline 7/10 ส่วนหนึ่งมาจากเครดิตแบบมีเงื่อนไขของ Retribution) ชดเชยด้วย Sealed Wrath (lv3) ที่แปลงดาเมจที่ Spirit Ward ทนไว้ (2:1 → 1:1 ที่ lv10) เป็นดาเมจ radiant สะสมปล่อยอัตโนมัติตอนตีติดครั้งถัดไป ไม่มี cap แต่ต้องโดนตีก่อนถึงจะมี ammo ให้ยิง [M:2/4] [R:2/3] [B:1/3] |
+| Damage | 5/10 (B) ↓ | **Prerequisite: Guardian Path ตัด Retribution Path ออกถาวร** ทำให้ไม่มีทางเข้าถึง Light Sword/Cross Slash เลย (baseline 7/10 ส่วนหนึ่งมาจากเครดิตแบบมีเงื่อนไขของ Retribution) ชดเชยด้วย Sealed Wrath (lv10) ที่แปลงดาเมจที่ Spirit Ward ทนไว้เป็น Sealed Wrath อัตรา 1:1 ตรงๆ ตั้งแต่ต้น (ไม่มีช่วง 2:1 อ่อนๆ ก่อนแล้ว แต่ก็มาช้ากว่าเดิมที่เคยได้ตั้งแต่ lv3) เป็นดาเมจ radiant สะสมปล่อยอัตโนมัติตอนตีติดครั้งถัดไป ไม่มี cap แต่ต้องโดนตีก่อนถึงจะมี ammo ให้ยิง [M:2/4] [R:2/3] [B:1/3] |
 | Control | 3/10 (C) | ไม่มี control feature เพิ่ม = baseline พอดี [M:1/4] [R:1/3] [B:1/3] |
-| Support | 8/10 (A) | Guardian Path การันตี Bulwark Shift แน่นอน 100% (ไม่ใช่แค่มีโอกาสแบบ baseline) บวก Vanguard's Instinct (lv14) ให้ reaction พิเศษแยกต่างหากใช้ Bulwark Shift โดยเฉพาะ และ capstone (lv17) ทำให้ Bulwark Shift ไม่เสีย reaction เลยระหว่าง active [M:3/4] [R:3/3] [B:2/3] |
-| Survivability | 9/10 (S) | Guardian Path การันตี Spirit Ward/Guardian's Blessing แน่นอน บวก Compassion's Toll (lv6, ทุก 2 HP ที่เสียแปลงเป็น 1 Fervor ไม่จำกัด/เทิร์น) สร้าง feedback loop "ยิ่งโดนตียิ่งมี resource ป้องกันตัวเองมากขึ้น" และ capstone ให้ resistance ดาเมจ**ทุกชนิด** 1 นาที — ป้องกันครบสุดในบรรดา Throne ทั้งหมด [M:4/4] [R:3/3] [B:2/3] |
-| Action Economy | 8/10 (A) | Vanguard's Instinct ให้ reaction เพิ่มอีก 1 อันแยกจาก reaction ปกติสำหรับ Bulwark Shift โดยเฉพาะ และ capstone ทำให้ Bulwark Shift spam ได้ไม่จำกัดจำนวนครั้ง จำกัดแค่ Fervor เท่านั้น [M:3/4] [R:3/3] [B:2/3] |
+| Support | 9/10 (S) ↑ | Guardian Path การันตี Bulwark Shift แน่นอน 100% (ไม่ใช่แค่มีโอกาสแบบ baseline) บวก **Vanguard's Instinct (lv6)** และ **Endless Vigil (lv14)** ให้ reaction พิเศษรวม 2 อันแยกจาก reaction ปกติ ใช้ได้กับ Fervor Technique ใดก็ได้ (รวม Bulwark Shift) ทำให้สลับตำแหน่งช่วย ally ได้บ่อยขึ้นโดยไม่แย่ง reaction หลักของตัวเอง และ capstone (lv17) ทำให้ Bulwark Shift ไม่เสีย reaction เลยระหว่าง active [M:4/4] [R:3/3] [B:2/3] |
+| Survivability | 9/10 (S) | Guardian Path การันตี Spirit Ward/Guardian's Blessing แน่นอน บวก Compassion's Toll (lv3, ทุก 2 HP ที่เสียแปลงเป็น 1 Fervor cap/เทิร์น = Wis mod + Prof Bonus) สร้าง feedback loop "ยิ่งโดนตียิ่งมี resource ป้องกันตัวเองมากขึ้น" ตั้งแต่เลเวลต้นๆ และ capstone ให้ resistance ดาเมจ**ทุกชนิด** 1 นาที — ป้องกันครบสุดในบรรดา Throne ทั้งหมด [M:4/4] [R:3/3] [B:2/3] |
+| Action Economy | 9/10 (S) ↑ | **Vanguard's Instinct (lv6)** และ **Endless Vigil (lv14)** ให้ reaction เพิ่มรวม 2 อัน แยกจาก reaction ปกติ ใช้ได้กับ Fervor Technique ใดก็ได้ (ไม่ล็อกเฉพาะ Bulwark Shift อีกต่อไป) และ capstone ทำให้ Bulwark Shift spam ได้ไม่จำกัดจำนวนครั้ง จำกัดแค่ Fervor เท่านั้น [M:4/4] [R:3/3] [B:2/3] |
 | Utility | 5/10 (B) | ไม่มี utility feature เพิ่ม = baseline พอดี [M:2/4] [R:2/3] [B:1/3] |
 | Versatility | 5/10 (B) ↓ | **Guardian-lock ถาวร** ตัดโอกาส "เลือก Formless/Retribution" ที่ baseline เคยเครดิตไว้ออกไป และทุก feature ของ Throne นี้ทุ่มไปที่ tanking/support ล้วนๆ ไม่มี damage-role ให้สลับเลย [M:2/4] [R:2/3] [B:1/3] |
 
 ### Throne of Wisdom and Spirit
 
-*แปลง Clarity (Universal) ให้เป็นบัฟเดี่ยวทรงพลังสำหรับ ally 1 คน — concentrated support ที่แรงกว่า Order and Law ต่อเป้าเดียวแต่แคบกว่า*
+*Anointed Bond โยกทั้ง Fervor Technique toolkit ของตัวเองไปให้ ally 1 คนได้ — จาก Clarity-only buff เดิม ขยายเป็น "proxy" เต็มรูปแบบให้เพื่อนร่วมทีม 1 คน*
 
-**Overall**: A — ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 3 axis เหมือน Order and Law (Support A, Action Economy A, Versatility S) แต่ Support ต่ำกว่า Order and Law หนึ่งขั้น (8 ไม่ใช่ 9) เพราะบัฟเดี่ยวเข้มข้นกว่าแต่กระจายได้แคบกว่า
+**อัปเดต 2026-08-09**: เขียนใหม่ทั้งกลไก — จากเดิมที่ผูกอยู่กับ Clarity (Universal) ตัวเดียว เปลี่ยนเป็น **Anointed Bond** (lv3, ระยะ 120 ft, Prof/long rest) ให้ redirect **Universal Fervor Technique ใดก็ได้** ไปให้ ally 1 คนที่ designate ไว้แทน, **Deepened Wisdom** (lv6) เพิ่ม technique ที่ 6 + Improve Fervor Technique ฟรีอันหนึ่ง, **Shared Fate** (lv10) แจก Heroic Inspiration ให้ทั้งคู่ตอน designate และให้โอนของตัวเองต่อได้, **Kindred Strength** (lv14) ขยาย redirect ให้ครอบคลุม Retribution/Guardian technique ด้วย, และ capstone (lv17) เปลี่ยนจากแจก Dash+Dodge+Disengage ฟรี เป็นแพ็กเกจ Advantage ทุก roll ให้ ally + Disadvantage ให้ศัตรูที่ตี/เซฟต้าน ally คนนั้น (สไตล์ Foresight) — กระทบ Support/Action Economy/Versatility โดยตรง ดูรายละเอียดด้านล่าง
+
+**Overall**: A — ไม่มี Path prerequisite เลยจึงไม่เสียแต้มแกนไหนเลย ยกระดับ 2 axis ถึงระดับ S (Support, Versatility) จาก Anointed Bond ที่โยกทั้ง toolkit ไปให้ ally ได้ แลกกับ Action Economy ที่กลับมาเท่า baseline พอดี เพราะ capstone ใหม่เป็นบัฟล้วนๆ ไม่ได้แจก action ฟรีเหมือนเดิมแล้ว
 
 | Axis | คะแนน | เหตุผล |
 |---|---|---|
-| Damage | 7/10 (A) | Governing Rule ระบุชัดว่าทุกโบนัสของ Throne นี้ใช้กับ ally เท่านั้น ตัวเองยังใช้ Clarity แบบพื้นฐาน (check อย่างเดียว ไม่มี reroll/advantage/crit) ไม่มีผลต่อดาเมจตัวเองเลย = baseline พอดี [M:2/4] [R:3/3] [B:2/3] |
+| Damage | 7/10 (A) | Anointed Bond และ Kindred Strength ให้ redirect technique ไปที่ ally เท่านั้น (หรือเลือกเก็บไว้ใช้กับตัวเองแบบปกติก็ได้ แต่ไม่ได้เพิ่มอะไรเกินเดิม) Universal list เองก็ไม่มี technique เพิ่มดาเมจตรงๆ อยู่แล้ว (Faith Halo เพิ่ม accuracy ไม่ใช่ raw damage) = baseline พอดี [M:2/4] [R:3/3] [B:2/3] |
 | Control | 3/10 (C) | ไม่มี control feature เพิ่ม = baseline พอดี [M:1/4] [R:1/3] [B:1/3] |
-| Support | 8/10 (A) | Second Sight (lv6) ขยาย Clarity ให้ใช้กับ attack roll ของ ally ได้ด้วย (ไม่ใช่แค่ check) + reroll ถ้าจ่าย 5+ Fervor, Perfect Clarity (lv10) ให้ Advantage บน roll ที่ ally ได้รับ Clarity, Transcendent Mind (lv14) ลด threshold reroll เหลือ 3 Fervor + auto-crit ถ้าจ่าย 10+ Fervor ถึง threshold — stacking บัฟเดี่ยวที่แรงที่สุดในบรรดา Throne ทั้งหมด แต่จำกัดแค่ 1 ally/ครั้ง [M:4/4] [R:2/3] [B:2/3] |
-| Survivability | 8/10 (A) | Governing Rule ตัดสิทธิ์ตัวเองจากโบนัสของ Throne ทั้งหมด ไม่มีผลต่อ survivability ตัวเองเลย = baseline พอดี (baseline's Guardian-conditional defense ยังอยู่ครบเพราะไม่มี prerequisite) [M:3/4] [R:3/3] [B:2/3] |
-| Action Economy | 8/10 (A) | Capstone (lv17) ให้ ally ที่เลือกได้ผล Dash+Dodge+Disengage พร้อมกันทุกเทิร์นโดยไม่เสีย action ของตัวเองเลย เป็นการมอบ action economy เต็มเทิร์นให้ ally 1 คนตลอด 1 นาที [M:2/4] [R:3/3] [B:3/3] |
+| Support | 9/10 (S) ↑ | Anointed Bond (lv3) redirect **ทั้ง 4 Universal technique** (Pure White Blade/Swift/Faith Halo/Clarity) ไปให้ ally ในระยะ 120 ft ได้ ใช้ Prof/long rest ครั้ง อยู่ได้ครั้งละ 1 นาที และ Kindred Strength (lv14) ขยายให้ครอบคลุม Retribution/Guardian technique ทั้งหมดที่รู้ด้วย (Spirit Ward/Guardian's Blessing/Bulwark Shift ถ้าถือ Guardian Path, Light Sword/Cross Slash ถ้าถือ Retribution) — กว้างกว่า Clarity-only เดิมมาก แต่ยังจำกัดแค่ 1 ally/ครั้งเหมือนเดิม [M:4/4] [R:2/3] [B:3/3] |
+| Survivability | 8/10 (A) | Anointed Bond เองไม่ได้ตัดสิทธิ์ตัวเองออก (เลือก redirect ไปที่ตัวเองก็ได้เหมือนเดิม) แต่ก็ไม่ได้เพิ่มอะไรเกิน baseline โดยตรง มีแค่ Shared Fate (lv10) ที่แถม Heroic Inspiration ให้ตัวเองด้วยทุกครั้งที่ designate ally (ไม่จำกัดจำนวนครั้ง นอกจาก cap ของ Anointed Bond เอง) เป็น safety net เล็กๆ ไม่ถึงขั้นเปลี่ยน tier [M:3/4] [R:3/3] [B:2/3] |
+| Action Economy | 7/10 (A) | ไม่มีฟีเจอร์เสริม action economy โดยตรง — redirect technique ไปหา ally ใช้ action cost เท่าเดิมของ technique นั้นๆ ไม่มีส่วนเพิ่ม, การให้ Heroic Inspiration (lv10) เป็น free action แต่ magnitude เล็กเกินจะขยับ tier, และ capstone ใหม่ไม่ได้แจก action ให้ ally ฟรีเหมือนเดิมแล้ว (เปลี่ยนไปเป็นบัฟ roll แทน) = baseline พอดี [M:2/4] [R:3/3] [B:2/3] |
 | Utility | 5/10 (B) | ไม่มี utility feature เพิ่ม = baseline พอดี [M:2/4] [R:2/3] [B:1/3] |
-| Versatility | 9/10 (S) | Sage's Guidance (lv3) ปลดล็อกให้ Clarity ใช้กับ ally ได้ (เดิม baseline ใช้ได้แค่ตัวเอง) ขยาย technique เดียวให้ครอบคลุม 2 เป้าหมาย (ตัวเอง/ally) x 2 ประเภท roll (check/attack ที่ lv6+) ไม่ผูก Path เลย [M:3/4] [R:3/3] [B:3/3] |
+| Versatility | 9/10 (S) | Anointed Bond ไม่ผูกกับ technique เดียวอีกต่อไป — เลือก redirect ได้ทั้ง 4 Universal technique (บัฟ check/attack/speed/range) ไปตัวเองหรือ ally คนใดก็ได้ทุกครั้งที่ใช้ บวก Deepened Wisdom (lv6) ให้เรียน technique ที่ 6 นอกเหนือโควตาปกติ และ Kindred Strength (lv14) ขยายไปถึง Retribution/Guardian ด้วย ไม่ผูก Path เลย [M:3/4] [R:3/3] [B:3/3] |

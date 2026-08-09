@@ -26,7 +26,7 @@ Whenever an attack made with Cross Slash reduces a target to 0 hit points, you i
 
 *No ward built of flesh and bone stops this judgment.*
 
-Attacks made with Cross Slash ignore immunity and resistance to physical damage.
+Attacks made with Cross Slash gain 5 feet of Speed each time you attack.
 
 ### 14th Level: Final Verdict
 

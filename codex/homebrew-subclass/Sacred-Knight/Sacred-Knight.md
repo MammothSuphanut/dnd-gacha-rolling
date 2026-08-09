@@ -83,6 +83,31 @@ Every Sacred Knight carries a table of spell slots identical to a full spellcast
 
 *The slots shown above are your Fervor Slots. They function exactly like a full spellcaster's spell slots for the purpose of the Fervor rules above — never for casting spells.*
 
+### ตาราง Fervor Conversion Reference
+
+| เลเวล | Fervor รวม/วัน (แปลงหมดทุกใบ, ตัวอย่าง WIS) | BA เดียว ปกติ (ไม่ใช้ Surge, ตัวอย่าง) | BA เดียว + Fervor Surge (เปิดไฟต์, ตัวอย่าง) |
+|---|---|---|---|
+| 1 | 8 | 1+3 = **4** | *(ยังไม่มี Surge)* |
+| 2 | 12 | 1+3 = **4** | (1+3)+(1+3) = **8** |
+| 3 | 26 | 2+3 = **5** | (2+3)+(1+3) = **9** |
+| 4 | 31 | 2+3 = **5** | (2+3)+(2+3) = **10** |
+| 5 | 43 | 3+3 = **6** | (3+3)+(2+3) = **11** |
+| 6 | 49 | 3+3 = **6** | (3+3)+(3+3) = **12** |
+| 7 | 56 | 4+3 = **7** | (4+3)+(3+3) = **13** |
+| 8 | 63 | 4+3 = **7** | (4+3)+(4+3) = **14** |
+| 9 | 92 | 5+4 = **9** | (5+4)+(4+4) = **17** |
+| 10 | 101 | 5+4 = **9** | (5+4)+(5+4) = **18** |
+| 11 | 111 | 6+4 = **10** | (6+4)+(5+4) = **19** |
+| 12 | 111 | 6+4 = **10** | (6+4)+(5+4) = **19** |
+| 13 | 122 | 7+4 = **11** | (7+4)+(6+4) = **21** |
+| 14 | 122 | 7+4 = **11** | (7+4)+(6+4) = **21** |
+| 15 | 134 | 8+4 = **12** | (8+4)+(7+4) = **23** |
+| 16 | 134 | 8+4 = **12** | (8+4)+(7+4) = **23** |
+| 17 | 166 | 9+5 = **14** | (9+5)+(8+5) = **27** |
+| 18 | 176 | (9+5)+(8+5) = **27** | (9+5)+(8+5)+(7+5) = **39** |
+| 19 | 187 | (9+5)+(8+5) = **27** | (9+5)+(8+5)+(7+5) = **39** |
+| 20 | 199 | (9+5)+(8+5) = **27** | (9+5)+(8+5)+(7+5) = **39** |
+
 ## Class Features
 
 As a Sacred Knight, you gain the following class features.
@@ -220,11 +245,11 @@ Any technique you've learned can be used at any time, regardless of what you're 
 
 *Improvement (7th or 15th level).* Each stack now grants +15 feet of Speed instead of +10 (the cost, duration, and stack cap don't change).
 
-**Faith Halo.** *Cost: 1 Fervor per stack.* When you make an attack, you increase the attack roll by +1 per stack of Fervor spent (paid before you roll — see *Paying Before You Know the Result*). You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single attack (further limited by the Fervor you have available).
+**Faith Halo.** *Cost: 1 Fervor per stack.* When you make an attack, you increase the attack roll by +1 per stack of Fervor spent (paid before you roll — see *Paying Before You Know the Result*).
 
 *Improvement (7th or 15th level).* For every 2 additional Fervor you spend beyond the base 1-per-+1 rate, you gain an extra +1 to the attack roll (an effective rate of 1 Fervor : 1.5 bonus — for example, spending 4 Fervor grants +4 from the base rate plus +2 from this bonus, for +6 total). The stack cap doesn't change.
 
-**Clarity.** *Cost: 1 Fervor per stack.* Before making any ability check of your own, you can spend Fervor to add +1 per stack to the check. You must declare this before you roll — you can't apply it after seeing the result. This uses the same exchange rate as Faith Halo (1 Fervor : +1) so it isn't cheaper than an attack-focused technique without reason. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single check (further limited by the Fervor you have available).
+**Clarity.** *Cost: 1 Fervor per stack.*As a Reaction action, Before making any ability check of your own, you can spend Fervor to add +1 per stack to the check. You must declare this before you roll — you can't apply it after seeing the result. This uses the same exchange rate as Faith Halo (1 Fervor : +1) so it isn't cheaper than an attack-focused technique without reason. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single check (further limited by the Fervor you have available).
 
 *Improvement (7th or 15th level).* For every 2 additional Fervor you spend beyond the base rate, you gain an extra +1 to the check (matching Faith Halo's improved rate exactly). The stack cap doesn't change.
 
@@ -232,14 +257,18 @@ Any technique you've learned can be used at any time, regardless of what you're 
 
 **Cross Slash.** *Cost: starts at 3 Fervor, rising with each additional attack.* You make an additional weapon attack within the same turn. The cost of the Nth additional attack (beyond your base attack) is **N + 2 Fervor** — 3 for the first, 4 for the second, 5 for the third, and so on.
 
-| Total attacks this turn | Cumulative Fervor spent |
-|---|---|
-| 1 (base, no technique) | 0 |
-| 2 | 3 |
-| 3 | 7 |
-| 4 | 12 |
-| 5 | 18 |
-| 6 | 25 |
+| Total attacks this turn | Cumulative Fervor spent | Cumulative Fervor spent (Improved) |
+|---|---|---|
+| 1 (base, no technique) | 0 | 0 |
+| 2 | 3 | 2 |
+| 3 | 7 | 5 |
+| 4 | 12 | 9 |
+| 5 | 18 | 14 |
+| 6 | 25 | 20 |
+| 7 | 34 | 27 |
+| 8 | 44 | 35 |
+| 9 | 55 | 44 |
+| 10 | 67 | 54 |
 
 You can purchase a maximum of your Wisdom modifier + Proficiency Bonus additional attacks per turn this way (in practice, your Fervor budget runs out well before this cap at most levels — it exists purely as a safety net).
 
@@ -247,7 +276,7 @@ You can purchase a maximum of your Wisdom modifier + Proficiency Bonus additiona
 
 **Rising Dragon Strike.** *Cost: 3 Fervor.* When you're hit by an attack, you can spend 3 Fervor to immediately make one counterattack with a weapon you're wielding. This doesn't cost your reaction. You can use this every time you're hit — it's limited only by your available Fervor, not by a per-turn cap, since how often you're hit is already a natural limiter.
 
-*Improvement (7th or 15th level).* The cost drops from 3 Fervor to **2 Fervor** per use (the trigger and the fact that it doesn't cost your reaction stay the same).
+*Improvement (7th or 15th level).* The cost drops from 3 Fervor to **2 Fervor** per use.
 
 **Light Sword.** *Cost: 1 Fervor per stack.* When you make an attack, you add 1d4 radiant damage per stack of Fervor spent. You can spend a maximum of your Wisdom modifier + Proficiency Bonus in stacks on a single attack (further limited by the Fervor you have available), preventing you from hoarding Fervor across many turns and dumping it all into a single oversized attack.
 

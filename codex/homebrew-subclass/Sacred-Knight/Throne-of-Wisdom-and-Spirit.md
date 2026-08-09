@@ -1,41 +1,43 @@
 # Throne of Wisdom and Spirit
 
-*Known in the ranks as the Knight of Enlightenment and Legacy — a scholar's throne among warriors. Its knights measure their strength not by what they can strike down themselves, but by how far their clarity can carry the people fighting beside them.*
-
-> **Governing Rule.** Every bonus this Sacred Throne grants to Clarity — through Second Sight, Perfect Clarity, Transcendent Mind, and this Throne's capstone — can be granted only to an ally, never to yourself. You still use the base version of Clarity (ability checks only, with no reroll, advantage, or automatic critical hit from this Throne) on yourself as normal.
+*Known in the ranks as the Knight of Enlightenment and Legacy — a scholar's throne among warriors. Its knights measure their strength not by what they can strike down themselves, but by how much of it they can pour into the one person fighting beside them who needs it most.*
 
 ## Sacred Throne Features
 
-### 3rd Level: Sage's Guidance
+### 3rd Level: Anointed Bond
 
-*Insight is worth more, shared.*
+*Insight is worth more, shared — and so is everything else.*
 
-You can use Clarity on an ally within 30 feet, granting them its benefit instead of yourself. This unlocks allies as a valid target for Clarity — every later feature in this Sacred Throne builds on this ability to grant Clarity to an ally.
+As a bonus action, choose one ally within 120 feet that you can see and designate them as your **Anointed Ally**. This designation lasts for 1 minute, or until you designate a different Anointed Ally, whichever comes first — you can have only one Anointed Ally at a time. You can use this feature a number of times equal to your Proficiency Bonus per long rest.
 
-### 6th Level: Second Sight
+While a creature is your Anointed Ally, any **Universal Fervor Technique** you use can grant its benefit to your Anointed Ally instead of to yourself. You still choose to use the technique and still pay its Fervor cost as normal — only the recipient of the effect changes, and you decide who receives it each time you use the technique. Every later feature in this Sacred Throne refers to this designated creature as your Anointed Ally.
 
-*What steadies a hand steadies a blade just as well.*
+### 6th Level: Deepened Wisdom
 
-Clarity can now also apply to an ally's attack roll, not just their ability checks. This uses the same rate as before — 1 Fervor per stack for +1 to the roll, with no stack cap beyond your available Fervor — and works only on an ally who qualifies through Sage's Guidance, never on yourself.
+*What one mind learns, it learns to give away.*
 
-Additionally, whenever you use Clarity on an ally's ability check or attack roll and spend at least 5 total Fervor on that use, the ally can reroll that roll once, and must use the new result.
+You learn one additional Fervor Technique, chosen from the lists your Path allows — bringing your total learned techniques to six instead of the usual five.
 
-### 10th Level: Perfect Clarity
+Additionally, choose one Fervor Technique you know and upgrade it permanently, exactly as *Improve Fervor Technique* (7th level, see the base class) allows — see each technique's entry under *Fervor Techniques* for its specific improvement. This follows the same rules as that feature, including never upgrading the same technique twice, and is entirely separate from your two uses of *Improve Fervor Technique* granted by the base class — it doesn't use one up, and doesn't share the "different technique each time" restriction with them.
 
-*Certainty, once given, doesn't waver.*
+### 10th Level: Shared Fate
 
-An ally you grant Clarity to gains advantage on the ability check or attack roll it applies to (covering both, now that Second Sight lets Clarity apply to attack rolls) — this benefit is available to allies only, never to yourself.
+*Luck given freely finds its way back.*
 
-### 14th Level: Transcendent Mind
+Whenever you designate a creature as your Anointed Ally (see 3rd level), you and that creature each gain Heroic Inspiration if you don't already have it.
 
-*The clearest insight strikes exactly where it's needed.*
+Additionally, whenever you have Heroic Inspiration, you can give it to your Anointed Ally as a free action instead of keeping it for yourself — you lose Heroic Inspiration when you do this, exactly as if you'd spent it.
 
-If you spend at least 10 total Fervor on a single use of Clarity granted to an ally, and the resulting attack roll is at least the target's AC + 15 + the target's Proficiency Bonus, that attack counts as a critical hit automatically. You can trigger this only once per turn, matching the limit on Moment of Dread from the Throne of Fear and Sorrow, to prevent this from combining with rapid multi-attacks for repeated automatic crits.
+### 14th Level: Kindred Strength
+
+*Everything you've mastered, they can carry too.*
+
+Your Anointed Ally (see 3rd level) can now also receive the benefit of any **Retribution** or **Guardian** Fervor Technique you know, not just Universal ones — regardless of which Path granted you access to them. This otherwise works exactly like the 3rd-level feature: you still choose to use the technique and pay its cost, only the recipient changes, and only your current Anointed Ally can receive it.
 
 ### 17th Level: Throne of Wisdom and Spirit
 
 *Let one mind carry the whole battle forward.*
 
-You can activate this Throne by spending spell slots with a combined level of 10 (calculated the same way as converting Fervor, but spent to activate the Throne rather than banked as Fervor). Once activated, the Throne's effect lasts for 1 minute.
+You can activate this Throne by spending spell slots with a combined level of 10 (calculated the same way as converting Fervor, but spent to activate the Throne rather than banked as Fervor). You must have an Anointed Ally (see 3rd level) to activate this Throne — if you don't currently have one, you can designate one as part of activating it, using one of that feature's daily uses. Once activated, the Throne's effect lasts for 1 minute.
 
-When you activate it, choose one ally (not yourself) within 30 feet. For the duration, that ally has advantage on attack rolls and ability checks, and gains the effects of Dash, Dodge, and Disengage simultaneously on every one of their turns without spending their action. Enemies making a saving throw against an effect that ally creates have disadvantage on that save.
+While active, your Anointed Ally has advantage on attack rolls, ability checks, and saving throws. Enemies have disadvantage on attack rolls against your Anointed Ally, and disadvantage on saving throws against any effect your Anointed Ally creates.
