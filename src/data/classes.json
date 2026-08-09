@@ -156,7 +156,7 @@
       },
       {
         "id": "item-900f4ad2-ad57-405e-bfb5-a53d84606176",
-        "name": "Path of the Wild Magic",
+        "name": "Path of Wild Magic",
         "weight": 1,
         "tag": "Core",
         "image": "",
@@ -2373,6 +2373,16 @@
         "note": "Source: VSS'24+",
         "group": "Wizard",
         "link": "https://5e.tools/classes.html#wizard_xphb,state:ishidefeatures=b1~ishideoutline=b1~sub_chronomancer_valdaspire24extras=b1"
+      },
+      {
+        "id": "item-2d38ea58-ea27-4b8a-baa7-07bd3c018ec1",
+        "name": "Familiar Master",
+        "weight": 1,
+        "tag": "Core",
+        "image": "",
+        "note": "Source: VSS'24+",
+        "group": "Wizard",
+        "link": "https://5e.tools/search.html?q=Familiar%20Master"
       },
       {
         "id": "item-bd1d09cc-fe78-47d0-84eb-d801107637b4",

@@ -243,7 +243,7 @@
 - [x] Circle of Entropy
 - [x] Circle of Mutation
 - [x] Circle of Spores
-- [x] Circle of Stars
+- [x] Circle of the Stars
 - [x] Circle of Stones
 - [x] Circle of the City
 - [x] Circle of the Deep
@@ -353,8 +353,8 @@
 
 ### Monk (20)
 
-- [x] Bow
-- [x] Flagellant
+- [x] Way of the Bow
+- [x] Way of the Flagellant
 - [x] Warrior of Mercy
 - [x] Warrior of Pride
 - [x] Warrior of Regret
@@ -607,7 +607,7 @@
 - [x] Technicolor Magic
 - [x] White Magic
 
-### Wizard (26)
+### Wizard (28)
 
 - [x] Abjurer
 - [x] Bladesinger
@@ -616,7 +616,8 @@
 - [x] Daemonologist
 - [x] Diviner
 - [x] Evoker
-- [x] Familiar Master / Fumaturge
+- [x] Familiar Master
+- [x] Fumaturge
 - [x] Gastronomer
 - [x] Graviturgy Magic
 - [x] Illusionist
@@ -630,7 +631,8 @@
 - [x] School of Enchantment
 - [x] School of Necromancy
 - [x] School of Transmutation
-- [x] Scroll Scribe / Wand Wizard
+- [x] Scroll Scribe
+- [x] Wand Wizard
 - [x] Somnomancer
 - [x] Tyromancer
 - [x] Universalist

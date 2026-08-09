@@ -283,7 +283,7 @@ Floor 0-10 ต่อ axis ของ **Wizard เปล่าๆ ไม่นั�
 
 ### Familiar Master (ValdaSpire24Extras)
 
-**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่ (ชื่อรุ่น 2014 ของ Fumaturge)
+**Overall**: B — (9 คะแนนจาก 7 axis: S=+3/A=+2/B=+1/C=0/D=-1, คำนวณอัตโนมัติแทนดุลยพินิจเดิม ดู [00-scorecard-methodology.md](00-scorecard-methodology.md)) ขยับแค่ 2 axis เล็กน้อย (Support/Survivability) ไม่มี peak ใหม่
 
 
 | Axis | คะแนน | เหตุผล |
