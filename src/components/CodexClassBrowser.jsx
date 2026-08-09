@@ -197,29 +197,6 @@ function BookScopeToggle({ value, onChange }) {
   )
 }
 
-const GROUP_MODES = [
-  { value: 'class', label: 'จัดกลุ่มตาม Class' },
-  { value: 'tier', label: 'จัดกลุ่มตาม Tier' },
-]
-
-function GroupModeToggle({ value, onChange }) {
-  return (
-    <div className="flex items-center overflow-hidden rounded-full border border-violet-300 bg-white text-sm">
-      {GROUP_MODES.map((opt) => (
-        <button
-          key={opt.value}
-          type="button"
-          onClick={() => onChange(opt.value)}
-          className={`px-3 py-1.5 font-semibold transition-colors ${value === opt.value ? 'bg-violet-600 text-white' : 'text-violet-700 hover:bg-violet-50'
-            }`}
-        >
-          {opt.label}
-        </button>
-      ))}
-    </div>
-  )
-}
-
 // N-axis radar chart for a subclass's 7-axis scorecard breakdown — same
 // concentric-polygon construction as CharacterPage's StatsRadarChart
 // (StatsRadarChart is fixed to the 6 ability scores; this generalizes the
@@ -378,21 +355,38 @@ export default function CodexClassBrowser() {
   }, [classes])
   const fullTierOrder = useMemo(() => [...tierOrder, UNRANKED], [tierOrder])
 
-  const [groupMode, setGroupMode] = useState('class')
   const [detailRow, setDetailRow] = useState(null)
   const [search, setSearch] = useState('')
   const [books, setBooks] = useState(new Set())
   const [bookScope, setBookScope] = useState('both')
   const [tiers, setTiers] = useState(new Set())
+  // One S/A/B/C/D chip-set per axis, filtered independently of the overall
+  // Tier row above and of each other (a row must match every axis filter
+  // that has at least one grade selected).
+  const [axisTiers, setAxisTiers] = useState(() => new Map(AXIS_ORDER.map((axis) => [axis, new Set()])))
   const [selectedClasses, setSelectedClasses] = useState(new Set())
 
+  function toggleAxisTier(axis, value) {
+    setAxisTiers((prev) => {
+      const next = new Map(prev)
+      next.set(axis, toggled(prev.get(axis), value))
+      return next
+    })
+  }
+
   const query = search.trim().toLowerCase()
-  const hasAnyFilter = query !== '' || books.size > 0 || tiers.size > 0 || selectedClasses.size > 0
+  const hasAxisTierFilter = useMemo(() => [...axisTiers.values()].some((s) => s.size > 0), [axisTiers])
+  const hasAnyFilter = query !== '' || books.size > 0 || tiers.size > 0 || selectedClasses.size > 0 || hasAxisTierFilter
 
   const filteredRows = useMemo(() => {
     return flatRows.filter((r) => {
       if (selectedClasses.size && !selectedClasses.has(r.className)) return false
       if (tiers.size && !(r.tier && tiers.has(r.tier))) return false
+      for (const [axis, selected] of axisTiers) {
+        if (!selected.size) continue
+        const a = r.axes?.find((x) => x.axis === axis)
+        if (!a || !selected.has(a.grade)) return false
+      }
       if (books.size) {
         const classBookOk = bookScope !== 'subclass' && r.classBooks.some((b) => books.has(b))
         const subBookOk = bookScope !== 'class' && books.has(r.book)
@@ -401,15 +395,7 @@ export default function CodexClassBrowser() {
       if (query !== '' && !r.name.toLowerCase().includes(query) && !r.className.toLowerCase().includes(query)) return false
       return true
     })
-  }, [flatRows, selectedClasses, tiers, books, bookScope, query])
-
-  const classGroups = useMemo(() => {
-    const byClass = new Map(classes.map((c) => [c.name, []]))
-    for (const r of filteredRows) byClass.get(r.className)?.push(r)
-    return classes
-      .map((c) => ({ ...c, rows: byClass.get(c.name) || [] }))
-      .filter((c) => c.rows.length > 0)
-  }, [classes, filteredRows])
+  }, [flatRows, selectedClasses, tiers, axisTiers, books, bookScope, query])
 
   const tierGroups = useMemo(() => {
     const byTier = new Map(fullTierOrder.map((t) => [t, []]))
@@ -428,6 +414,7 @@ export default function CodexClassBrowser() {
     setBooks(new Set())
     setBookScope('both')
     setTiers(new Set())
+    setAxisTiers(new Map(AXIS_ORDER.map((axis) => [axis, new Set()])))
     setSelectedClasses(new Set())
   }
 
@@ -437,8 +424,7 @@ export default function CodexClassBrowser() {
 
   return (
     <div>
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <GroupModeToggle value={groupMode} onChange={setGroupMode} />
+      <div className="mb-4 flex flex-wrap items-center justify-end gap-3">
         <span className="text-xs text-stone-500">
           แสดง {totalShown} จาก {totalAll} subclass
         </span>
@@ -460,7 +446,16 @@ export default function CodexClassBrowser() {
           )}
         </div>
 
-        <FilterRow label="Tier" options={tierOrder} selected={tiers} onToggle={(v) => setTiers(toggled(tiers, v))} />
+        <FilterRow label="Overall Tier" options={tierOrder} selected={tiers} onToggle={(v) => setTiers(toggled(tiers, v))} />
+        {AXIS_ORDER.map((axis) => (
+          <FilterRow
+            key={axis}
+            label={axis}
+            options={tierOrder}
+            selected={axisTiers.get(axis)}
+            onToggle={(v) => toggleAxisTier(axis, v)}
+          />
+        ))}
         <FilterRow
           label="Book"
           options={bookOptions}
@@ -486,62 +481,7 @@ export default function CodexClassBrowser() {
 
       {totalShown === 0 && <p className="text-sm text-stone-400">ไม่พบ subclass ที่ตรงกับตัวกรอง</p>}
 
-      {groupMode === 'class'
-        ? classGroups.map((c) => (
-          <section key={c.name} className="mb-6">
-            <div className="mt-2 mb-2 flex flex-wrap items-baseline gap-2">
-              <h2 className="font-cinzel text-lg font-bold text-stone-800">
-                {c.link ? (
-                  <a href={c.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                    {c.name}
-                  </a>
-                ) : (
-                  c.name
-                )}
-              </h2>
-              {c.analysisLink && (
-                <a href={c.analysisLink} target="_blank" rel="noreferrer" className={`${LINK_CLASS} text-xs`}>
-                  📊 ดูวิเคราะห์เต็ม/tier list
-                </a>
-              )}
-            </div>
-            <div className="mb-3 overflow-x-auto">
-              <table className="w-full border-collapse text-sm">
-                <thead className="bg-[#f5ede0] text-left">
-                  <tr>
-                    <th className={`${CELL_CLASS} font-semibold`}>Subclass</th>
-                    <th className={`${CELL_CLASS} text-center font-semibold`}>Tier</th>
-                    <th className={`${CELL_CLASS} font-semibold`}>Edition</th>
-                    <th className={`${CELL_CLASS} font-semibold`}>Source</th>
-                    <th className={`${CELL_CLASS} font-semibold`}>Book</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {c.rows.map((s, i) => (
-                    <tr key={`${s.name}-${s.edition}-${i}`}>
-                      <td className={CELL_CLASS}>
-                        {s.link ? (
-                          <a href={s.link} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                            {s.name}
-                          </a>
-                        ) : (
-                          s.name
-                        )}
-                      </td>
-                      <td className={`${CELL_CLASS} text-center`}>
-                        <TierBadge tier={s.tier} onClick={s.tier ? () => setDetailRow(s) : undefined} />
-                      </td>
-                      <td className={CELL_CLASS}>{s.edition}</td>
-                      <td className={CELL_CLASS}>{s.source}</td>
-                      <td className={CELL_CLASS}>{s.book}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        ))
-        : tierGroups.map((g) => (
+      {tierGroups.map((g) => (
           <section key={g.tier} className="mb-6">
             <h2 className="font-cinzel mt-2 mb-2 flex items-center gap-2 text-lg font-bold text-stone-800">
               <TierBadge tier={g.tier === UNRANKED ? null : g.tier} />
@@ -551,12 +491,22 @@ export default function CodexClassBrowser() {
               <table className="w-full border-collapse text-sm">
                 <thead className="bg-[#f5ede0] text-left">
                   <tr>
-                    <th className={`${CELL_CLASS} font-semibold`}>Subclass</th>
-                    <th className={`${CELL_CLASS} text-center font-semibold`}>Tier</th>
-                    <th className={`${CELL_CLASS} font-semibold`}>Class</th>
-                    <th className={`${CELL_CLASS} font-semibold`}>Edition</th>
-                    <th className={`${CELL_CLASS} font-semibold`}>Book</th>
-                    <th className={`${CELL_CLASS} font-semibold`}>หมายเหตุ</th>
+                    <th rowSpan={2} className={`${CELL_CLASS} align-middle font-semibold`}>
+                      Subclass
+                    </th>
+                    <th colSpan={AXIS_ORDER.length} className={`${CELL_CLASS} text-center font-semibold`}>
+                      Tier
+                    </th>
+                    <th rowSpan={2} className={`${CELL_CLASS} align-middle font-semibold`}>
+                      Book
+                    </th>
+                  </tr>
+                  <tr>
+                    {AXIS_ORDER.map((name) => (
+                      <th key={name} className={`${CELL_CLASS} text-center font-semibold`} title={name}>
+                        {AXIS_SHORT[name]}
+                      </th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
@@ -569,27 +519,18 @@ export default function CodexClassBrowser() {
                           </a>
                         ) : (
                           r.name
-                        )}
+                        )}{' '}
+                        <span className="text-xs text-stone-400">({r.className})</span>
                       </td>
-                      <td className={`${CELL_CLASS} text-center`}>
-                        <TierBadge tier={r.tier} onClick={r.tier ? () => setDetailRow(r) : undefined} />
-                      </td>
-                      <td className={CELL_CLASS}>
-                        {r.analysisLink ? (
-                          <a href={r.analysisLink} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                            {r.className}
-                          </a>
-                        ) : r.classLink ? (
-                          <a href={r.classLink} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                            {r.className}
-                          </a>
-                        ) : (
-                          r.className
-                        )}
-                      </td>
-                      <td className={CELL_CLASS}>{r.edition}</td>
+                      {AXIS_ORDER.map((name) => {
+                        const a = r.axes?.find((x) => x.axis === name)
+                        return (
+                          <td key={name} className={`${CELL_CLASS} text-center`}>
+                            <TierBadge tier={a?.grade} onClick={a ? () => setDetailRow(r) : undefined} />
+                          </td>
+                        )
+                      })}
                       <td className={CELL_CLASS}>{r.book}</td>
-                      <td className={CELL_CLASS}>{r.note || '—'}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -604,16 +545,16 @@ export default function CodexClassBrowser() {
             {detailRow.axes?.length ? (
               // 7-axis scorecard pilot (Wizard only for now) — chart + big
               // Overall Rank side by side, per-axis grade/reasoning below.
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex items-start gap-4">
                 <AxisRadarChart axes={AXIS_ORDER.map((name) => detailRow.axes.find((a) => a.axis === name)).filter(Boolean)} />
-                <div className="flex flex-col items-start gap-1.5">
+                <div className="flex min-w-0 flex-1 flex-col items-start gap-1.5">
                   <span className="text-xs font-semibold text-stone-500">Overall Rank</span>
                   <span
                     className={`inline-flex h-12 w-12 items-center justify-center rounded-lg border text-xl font-extrabold ${tierBadgeClass(detailRow.tier)}`}
                   >
                     {detailRow.tier}
                   </span>
-                  <span className="text-xs text-stone-500">
+                  <span className="break-words text-xs text-stone-500">
                     {detailRow.className} · {detailRow.edition} · {detailRow.source}
                   </span>
                 </div>
