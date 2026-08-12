@@ -37,13 +37,16 @@
 - [x] **[Halaster's Game — กรอบเกม Act 2+](./03-halasters-game-framework.md)** สร้างแล้ว: แปล/สรุป 7 เป้าหมายของ Halaster, Gags & Gimmicks (Dropping Monsters, Points Game, Regional Effects), 10 แฟกชันของ Undermountain, ตารางอ้างอิง 31 ประตูลัด (Halaster's Gates) — ลิงก์จาก 00-overview.md และ 99-notes.md แล้ว
 - [x] **ACT02-into-the-yawning-depths/** สร้างโฟลเดอร์แล้ว พร้อม `00-act-outline.md` + `CH01-the-dungeon-level.md` (มี DM Prep Quick Notes ของ Level 1 ในนั้น)
 - [x] **EP01: The Dungeon Level (Level 1)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 41 ห้อง (Entry Well ถึง Cracked Ceiling) รวม Before the Descent (hook เปิด + ข่าวลือโรงเตี๊ยม + คำแนะนำ Durnan), Wandering Monsters & Random Encounters (d8 table ผสาน WDMM หลัก + Companion), Undertakers vs. Xanathar Guild (แก๊งอันธพาลปลอมเป็นแวมไพร์ vs. หน่วยสอดแนมกิลด์), ฉากสำคัญที่ Hidden Demiplane (พื้นที่ 27 — พบ Halaster simulacrum ครั้งแรก + กติกาเกม), Sick Trivia กับแมนทิคอร์ (พื้นที่ 16), ปม Fine Fellows of Daggerford (Kelim ติดกับที่ 36b, Halleth revenant ที่ 37 — ปูต่อ Level 2), ปิดท้ายด้วย "The Host's Send-Off"
+- [x] **EP02: The Arcane Chambers (Level 2)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 26 พื้นที่ (รวมพื้นที่ 25b-25r ห้องเก็บสิ่งมีชีวิตกลายหิน 17 ห้องย่อย) รวม Goblin Bazaar เต็มรูปแบบ (Yek the Tall ที่กลายเป็นมนุษย์, Glom ผู้ให้ข้อมูล), ศึกสามเส้า Xanathar Guild (Shunn Shurreth/Nadia the Unbent) vs. Rizzeryl ดรอว์-แก๊ง wererat, Kalabash กับ Trenzia (อดีตศิษย์ Halaster ที่เพี้ยนคนละแบบ), **Halleth's Revenge** เต็ม 3 ฉาก (Copper Stormforge ที่ 1e, Midna Tauberth ที่ 11b, Rex the Hammer ที่ 13g — จบเนื้อเรื่อง Fine Fellows of Daggerford จาก Level 1), Halastron modron ที่พื้นที่ 25a, ปิดท้ายด้วย "The Host's Send-Off"
+
+**Level 1-2 (Chapter 1-2 ของ Act 2) แปลครบสมบูรณ์แล้ว ณ 2026-08-12**
 
 ## แผนคร่าวๆ Act 2+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
 | Act (คร่าวๆ) | เนื้อหา | Char level | สถานะ |
 |---|---|---|---|
-| Into the Yawning Depths | Level 1-2 | 5-7 | 🔄 L1 เสร็จ (EP01) — L2 (Arcane Chambers) รอคิว |
+| Into the Yawning Depths | Level 1-2 | 5-7 | ✅ ครบ (EP01+EP02) — Act 2 จบแล้ว |
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ⬜ รอคิว |
 | Twisted Wilds | Level 4-6 | 9-11 | ⬜ รอคิว |
 | Castle & Swamp | Level 7-9 | 11-13 | ⬜ รอคิว |

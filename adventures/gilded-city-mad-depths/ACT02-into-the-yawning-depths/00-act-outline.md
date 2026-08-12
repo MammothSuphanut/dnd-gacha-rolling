@@ -13,7 +13,9 @@ Act นี้ครอบคลุม **Level 1 (Dungeon Level)** และ **Le
 
 ## สารบัญ Chapter → EP
 - [Chapter 1: The Dungeon Level](./CH01-the-dungeon-level.md) `Level 5-6` — [EP01: The Dungeon Level (Level 1)](<./EP01 - The Dungeon Level (Level 1).md>) ✅
-- Chapter 2: Arcane Chambers `Level 6-7` — ยังไม่สร้าง (จะทำ CH02 brief ตอนใกล้ถึง ตามกฎ 3 ของ structure-guide.md)
+- [Chapter 2: The Arcane Chambers](./CH02-the-arcane-chambers.md) `Level 6-7` — [EP02: The Arcane Chambers (Level 2)](<./EP02 - The Arcane Chambers (Level 2).md>) ✅
+
+**Level 1-2 (ทั้ง Chapter 1-2) แปลครบสมบูรณ์แล้ว ณ 2026-08-12** — ต่อไปคือ Level 3 (Sargauth Level + Skullport) ซึ่งเริ่ม Act 3 ใหม่ตามแผนคร่าวๆ ใน PROGRESS.md
 
 ## หมายเหตุโครงสร้าง
 
