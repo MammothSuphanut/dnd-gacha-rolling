@@ -387,4 +387,4 @@ Stone of Golorr เผยว่า Vault of Dragons อยู่ใต้สุ�
 เมื่อปาร์ตี้เดินทะลุภาพลวงตาแล้วผ่านอุโมงค์ทอดยาวหลายร้อยฟุต พวกเขามาถึงทางเข้า Vault of Dragons — จุดจบร่วมของทุกสายวายร้าย ไม่ว่าจะเลือกสายไหน ต่อด้วย **EP8: Vault of Dragons**
 
 ---
-[← Chapter 4 brief](./CH04-dragon-season.md) · [Act 1 outline](./00-act-outline.md) · EP8: Vault of Dragons → *(ยังไม่ได้เขียน — รอคิว)*
+[← Chapter 4 brief](./CH04-dragon-season.md) · [Act 1 outline](./00-act-outline.md) · [EP8: Vault of Dragons →](<./EP08 - Vault of Dragons.md>)

@@ -21,11 +21,16 @@
 
 **ทั้ง 4 สายของ Ch.4 (EP4-7) แปลครบแล้ว ณ 2026-08-12**
 
-- [ ] EP8 — Vault of Dragons (ตอนจบร่วมของทุกสาย)
-- [ ] EP9 — Spring Madness (Ch.5, คู่กับ Xanathar)
-- [ ] EP10 — Hell of a Summer (Ch.6, คู่กับ Cassalanters)
-- [ ] EP11 — Maestro's Fall (Ch.7, คู่กับ Jarlaxle)
-- [ ] EP12 — Winter Wizardry (Ch.8, คู่กับ Manshoon)
+- [x] **EP8: Vault of Dragons** แปล/ขยายเป็น journal เต็มแล้ว (ตอนจบร่วมของทุกสาย — V1-V9 เต็มทุกห้อง incl. Enthralling Fresco/Black Pudding/Secret Stair/Ol' Fire Eyes trap, เจรจา/สู้กับ Aurinax มังกรทองที่ V9, Leaving the Vault แยกกองกำลังตามวายร้าย 4 สาย, Faction Reinforcements ครบ 7 แฟกชัน, Adventure Conclusion: Dying in the Vault/Removing the Gold incl. 5 NPC ขอยืมเงิน/Onward and Downward)
+
+**Chapter 4 ทั้ง Chapter (EP4-8) แปลครบสมบูรณ์แล้ว ณ 2026-08-12 — Act 1 เหลือแค่ Ch.5-8**
+
+- [x] **EP9: Spring Madness (Xanathar)** แปล/ขยายเป็น journal เต็มแล้ว (Facing Xanathar + ตำแหน่งสุ่ม d100, Foiling Xanathar's Operation 3 กลุ่มวิธี, Getting to the Lair ตามแฟกชัน 5 อัน, คุกเต็ม X1-X36 ทั้ง 2 ชั้น incl. Nihiloor มายด์เฟลเยอร์/intellect devourer, Blood and Fortune tournament, Trolltide Slaughter — จบเนื้อเรื่อง Xanathar ภายใน Ch.5 เดียว ไม่มี Ch.6-8 ของสายนี้)
+- [x] **EP10: Hell of a Summer (Cassalanters)** แปล/ขยายเป็น journal เต็มแล้ว (Cult of Asmodeus + Meet the Cassalanters incl. ตำแหน่งสุ่ม d100 ของ Victoro/Ammalia/ฝาแฝด, Head Servants 4 คน, Facing the Cassalanters + Disrupting Operation, Cassalanter Villa เต็ม Guest House/Coach House/C1-C29 incl. Osvaldo chain devil ในห้องใต้หลังคา, Temple of Asmodeus เต็ม A1-A9 incl. Caladorn ghost บรรพบุรุษ + รูปปั้น Asmodeus, Special Events: Getting the Gold + Day of the Damned งานเลี้ยงยาพิษ)
+- [x] **EP11: Maestro's Fall (Jarlaxle)** แปล/ขยายเป็น journal เต็มแล้ว (Facing Jarlaxle + Disrupting Operation, Sea Maidens Faire เต็ม 3 ลำเรือ J1-J32 incl. คลังรถแห่พาเหรด/มังกรทองกลไก/คอกสัตว์ 12 คอก, เรือดำน้ำลับ Scarlet Marpenoth เต็ม U1-U13 incl. ห้อง Jarlaxle/มือปืนดรอว์ 3 คน/โนมวิศวกร, Special Events: มังกรบรอนซ์ Zelifarn/จดหมายลับถึง Laeral/ขบวนพาเหรด Day of Wonders/หมีขั้วโลกหลุด)
+- [x] **EP12: Winter Wizardry (Manshoon)** แปล/ขยายเป็น journal เต็มแล้ว (Facing Manshoon + Disrupting Operation, Kolat Towers เต็ม K1-K22 incl. force field/barlgura ถูกกัก/Lady Gondafrey การ์กอยล์วิญญาณอัศวิน/flameskull Duhlark, Extradimensional Sanctum เต็ม E1-E13 incl. ซิมูลาครัม/Manshoon ตัวจริง/สมุดบัญชีแบล็กเมล์ Masked Lords, Special Events: Blackmailed Lords/Deadwinter Day Feast/Secret Simulacrum)
+
+**🎉 Act 1 (Dragon Heist) แปลครบสมบูรณ์ทั้ง 12 ไฟล์ EP แล้ว ณ 2026-08-12** — EP1-3 (เนื้อเรื่องกลาง) + EP4-7 (Ch.4 แยก 4 สาย) + EP8 (Vault of Dragons ร่วม) + EP9-12 (Ch.5-8 แยก 4 สาย) เล่นจริงแค่ 6 ไฟล์ตามสายวายร้ายที่เลือก ที่เหลือเป็น reference เผื่อเปลี่ยนใจ/รันคู่ขนานอีกโต๊ะ
 
 ## แผนคร่าวๆ Act 2+ (Undermountain — ยังไม่ได้เริ่ม)
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):

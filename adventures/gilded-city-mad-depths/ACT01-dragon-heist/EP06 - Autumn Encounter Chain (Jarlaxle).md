@@ -578,4 +578,4 @@ Kalain เป็นฮาล์ฟเอลฟ์ใช้ stat block **bard** �
 เมื่อปาร์ตี้ไต่ลงบันไดจากห้อง W4a ผ่านทางเดินลึก 120 ฟุตแล้วทอดยาวอีก 60 ฟุต พวกเขามาถึงทางเข้า Vault of Dragons — จุดจบร่วมของทุกสายวายร้าย ไม่ว่าจะเลือกสายไหน ต่อด้วย **EP8: Vault of Dragons**
 
 ---
-[← Chapter 4 brief](./CH04-dragon-season.md) · [Act 1 outline](./00-act-outline.md) · EP8: Vault of Dragons → *(ยังไม่ได้เขียน — รอคิว)*
+[← Chapter 4 brief](./CH04-dragon-season.md) · [Act 1 outline](./00-act-outline.md) · [EP8: Vault of Dragons →](<./EP08 - Vault of Dragons.md>)

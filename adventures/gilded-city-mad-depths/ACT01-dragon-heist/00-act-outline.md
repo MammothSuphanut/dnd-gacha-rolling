@@ -18,8 +18,10 @@ Ch.1-3 เป็นเนื้อเรื่องกลางที่ใช�
 - [Chapter 1: เพื่อนที่หายไป](./CH01-a-friend-in-need.md) `Level 1-2` — EP1
 - [Chapter 2: Trollskull Alley](./CH02-trollskull-alley.md) `Level 2` — [EP2: Trollskull Alley](<./EP02 - Trollskull Alley.md>)
 - [Chapter 3: ลูกไฟกลางเมือง](./CH03-fireball.md) `Level 3` — [EP3: Fireball](<./EP03 - Fireball.md>)
-- [Chapter 4: ฤดูกาลแห่งมังกร](./CH04-dragon-season.md) `Level 3-4` — **แยก 4 สาย เล่นแค่ 1 ไฟล์**: [EP4 Spring (Xanathar)](<./EP04 - Spring Encounter Chain (Xanathar).md>) ✅ / [EP5 Summer (Cassalanters)](<./EP05 - Summer Encounter Chain (Cassalanters).md>) ✅ / [EP6 Autumn (Jarlaxle)](<./EP06 - Autumn Encounter Chain (Jarlaxle).md>) ✅ / [EP7 Winter (Manshoon)](<./EP07 - Winter Encounter Chain (Manshoon).md>) ✅ — ทั้ง 4 สายแปลครบแล้ว ตามด้วย **EP8: Vault of Dragons** (ตอนจบร่วมของทุกสาย, ยังไม่ได้แปล)
-- Chapter 5-8: ฤดูกาลของวายร้ายที่เลือก `Level 5` — **แยก 4 สายเช่นกัน เล่นแค่ 1 ไฟล์** (คู่กับสายที่เลือกใน Ch.4): EP9 Spring Madness (Xanathar) / EP10 Hell of a Summer (Cassalanters) / EP11 Maestro's Fall (Jarlaxle) / EP12 Winter Wizardry (Manshoon)
+- [Chapter 4: ฤดูกาลแห่งมังกร](./CH04-dragon-season.md) `Level 3-4` — **แยก 4 สาย เล่นแค่ 1 ไฟล์**: [EP4 Spring (Xanathar)](<./EP04 - Spring Encounter Chain (Xanathar).md>) ✅ / [EP5 Summer (Cassalanters)](<./EP05 - Summer Encounter Chain (Cassalanters).md>) ✅ / [EP6 Autumn (Jarlaxle)](<./EP06 - Autumn Encounter Chain (Jarlaxle).md>) ✅ / [EP7 Winter (Manshoon)](<./EP07 - Winter Encounter Chain (Manshoon).md>) ✅ — ทั้ง 4 สายแปลครบแล้ว ตามด้วย [EP8: Vault of Dragons](<./EP08 - Vault of Dragons.md>) ✅ (ตอนจบร่วมของทุกสาย) — **Chapter 4 แปลครบสมบูรณ์แล้ว**
+- Chapter 5-8: ฤดูกาลของวายร้ายที่เลือก `Level 5` — **แยก 4 สายเช่นกัน เล่นแค่ 1 ไฟล์** (คู่กับสายที่เลือกใน Ch.4): [EP9 Spring Madness (Xanathar)](<./EP09 - Spring Madness (Xanathar).md>) ✅ / [EP10 Hell of a Summer (Cassalanters)](<./EP10 - Hell of a Summer (Cassalanters).md>) ✅ / [EP11 Maestro's Fall (Jarlaxle)](<./EP11 - Maestro's Fall (Jarlaxle).md>) ✅ / [EP12 Winter Wizardry (Manshoon)](<./EP12 - Winter Wizardry (Manshoon).md>) ✅ — แต่ละวายร้ายจบเนื้อเรื่องภายใน Chapter เดียวของตัวเอง (หนังสือไม่มี Ch.6-8 ซ้อนสำหรับสายเดียวกัน)
+
+**Act 1 (Dragon Heist) แปลครบสมบูรณ์ทั้ง 12 ไฟล์ EP แล้ว (2026-08-12)** — เล่นจริงแค่ 6 EP ตามสายที่เลือก (EP1-3 + 1 ใน EP4-7 + EP8 + 1 ใน EP9-12) ที่เหลือเก็บเป็น reference
 
 ---
 [← ภาพรวม](../00-overview.md)

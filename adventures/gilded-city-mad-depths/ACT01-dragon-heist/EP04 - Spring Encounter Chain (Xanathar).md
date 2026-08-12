@@ -639,4 +639,4 @@ Encounter นี้เริ่มเมื่อปาร์ตี้มี **S
 เมื่อปาร์ตี้ไต่ลงบันไดจากห้องแต่งตัว P8 ผ่านทางเดินลาดลง 100 ฟุต พวกเขามาถึงทางเข้า Vault of Dragons — จุดจบร่วมของทุกสายวายร้าย ไม่ว่าจะเลือกสายไหน ต่อด้วย **EP8: Vault of Dragons**
 
 ---
-[← Chapter 4 brief](./CH04-dragon-season.md) · [Act 1 outline](./00-act-outline.md) · EP8: Vault of Dragons → *(ยังไม่ได้เขียน — รอคิว)*
+[← Chapter 4 brief](./CH04-dragon-season.md) · [Act 1 outline](./00-act-outline.md) · [EP8: Vault of Dragons →](<./EP08 - Vault of Dragons.md>)

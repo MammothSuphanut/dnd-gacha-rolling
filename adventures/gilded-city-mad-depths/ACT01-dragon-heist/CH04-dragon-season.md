@@ -18,7 +18,9 @@ Stone of Golorr ถูกส่งไปหาวายร้ายที่เ�
 **ทั้ง 4 สายของ Ch.4 แปลครบแล้ว (2026-08-12)** — เหลือแค่ตอนจบร่วม EP8 ด้านล่าง
 
 **ตอนจบร่วม (ทุกสายมาเจอกันที่นี่):**
-- EP8: Vault of Dragons — ยังไม่ได้แปล (รอคิว)
+- [EP8: Vault of Dragons](<./EP08 - Vault of Dragons.md>) — **แปลเสร็จแล้ว** (V1-V9 เต็มทุกห้อง, เจรจา/สู้กับ Aurinax มังกรทองที่คลัง, Leaving the Vault แยกกองกำลังตามวายร้าย 4 สาย + Faction Reinforcements ครบ 7 แฟกชัน, Adventure Conclusion: Dying/Removing the Gold/Onward and Downward)
+
+**Chapter 4 ทั้ง Chapter (EP4-8) แปลครบสมบูรณ์แล้ว (2026-08-12)**
 
 ---
 [← Chapter 3](./CH03-fireball.md) · [Act 1 outline](./00-act-outline.md)
