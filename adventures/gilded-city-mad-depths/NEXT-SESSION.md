@@ -1,6 +1,6 @@
 # Next Session — Resume Point (อ่านไฟล์นี้ก่อนเริ่มงานทุกครั้ง)
 
-**อัปเดตล่าสุด**: 2026-08-12 (หลังจบ Act 3 สมบูรณ์)
+**อัปเดตล่าสุด**: 2026-08-13 (หลังจบ Level 7 — Act 5 เริ่มแล้ว)
 
 > ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วทำงานต่อได้ทันทีโดยไม่เพี้ยนจากรูปแบบ/มาตรฐานเดิม — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้เริ่มจากหัวข้อ **"งานถัดไปแบบเจาะจง"** ด้านล่างได้เลย ไม่ต้องถามซ้ำว่าจะทำอะไร
 
@@ -14,39 +14,43 @@
 - ✅ **Act 1 — Dragon Heist** (`ACT01-dragon-heist/`): ครบ 12 ไฟล์ EP (EP1-3 เนื้อเรื่องกลาง, EP4-7 = Ch.4 แยก 4 สายวายร้าย, EP8 = Vault of Dragons ร่วม, EP9-12 = Ch.5-8 แยก 4 สายวายร้ายอีกรอบ)
 - ✅ **Act 2 — Into the Yawning Depths** (`ACT02-into-the-yawning-depths/`): Undermountain Level 1-2, ครบ EP01+EP02
 - ✅ **Act 3 — The Sunless Sea** (`ACT03-the-sunless-sea/`): Undermountain Level 3 + Skullport, ครบ EP01 (Sargauth Level) + EP02+EP03 (Skullport แยก 2 ไฟล์เพราะเนื้อหาใหญ่มาก)
+- ✅ **Act 4 — Twisted Wilds** (`ACT04-twisted-wilds/`): **ครบทั้ง Act แล้ว — Level 4, 5, 6 ทั้งหมด**
+  - Level 4 (Twisted Caverns): `CH01-the-twisted-caverns.md` + `EP01 - The Twisted Caverns (Level 4).md` ครบ 24 พื้นที่ รวมตัวแปร Companion "Halaster's Game — Halngaloon the Mad God" (kuo-toa บูชา Halaster แทนรูปปั้น otyugh, ประตูเวทที่ 11c ถูกปิด), Illuun the aboleth ธีม "the Lover in the Dark"
+  - Level 5 (Wyllowwood): `CH02-wyllowwood.md` + `EP02 - Wyllowwood (Level 5).md` ครบ 24 พื้นที่ รวม Companion เขียน Wyllow อาร์คดรูอิดใหม่เป็นวายร้ายซ่อนเร้น ("A Web of Dread" 5 องก์ + "Wyllow's Hunt" tactics เต็มรูปแบบ)
+  - Level 6 (Lost Level): `CH03-the-lost-level.md` + `EP03 - The Lost Level (Level 6).md` ครบ 48 พื้นที่ รวมตัวแปร Companion "Halaster's Game" เต็มรูปแบบ (ปิดผนึกทางออก, ปิด darkvision, invisible stalker ไล่ล่าทุกฝ่ายจนเปิด Heart of the Mountain สำเร็จ), ฮับประตูเวท 10 บาน — ใหญ่ที่สุดในแคมเปญ
+- 🔄 **Act 5 — Castle & Swamp** (`ACT05-castle-and-swamp/`): Level 7 (Maddgoth's Castle) เสร็จแล้ว — `00-act-outline.md` + `CH01-maddgoths-castle.md` + `EP01 - Maddgoth's Castle (Level 7).md` ครบ 47 พื้นที่ รวมตัวแปร Companion "Maddgoth's Dance" เต็มรูปแบบ (พ่อมดฆาตกรต่อเนื่องกลับมากลางเรื่อง เชิญปาร์ตี้เป็นแขก วางยาพิษ วางแผนสังหารตอนเที่ยงคืน) และปม "The Shadow of Ghnorsh" **Level 8 (Slitherswamp) และ Level 9 (Dweomercore) ยังไม่เริ่ม** — ดูหัวข้อ 2
 
-**ยังไม่เริ่ม**: Act 4 เป็นต้นไป (Undermountain Level 4-23) — ดูตาราง Act คร่าวๆ ในหัวข้อ 6
+**ยังไม่เริ่ม**: Act 5 ที่เหลือ (Level 8-9) และ Act 6 เป็นต้นไป (Undermountain Level 10-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
 
 รายละเอียด checklist แบบละเอียดทุกบรรทัดอยู่ใน [`PROGRESS.md`](./PROGRESS.md) — ไฟล์นี้ (`NEXT-SESSION.md`) เป็นตัวสรุป "ทำอย่างไรต่อ" ไม่ใช่ตัวแทน PROGRESS.md อัปเดตทั้งสองไฟล์คู่กันเสมอเมื่อทำงานเสร็จแต่ละก้อน
 
 ---
 
-## 2. งานถัดไปแบบเจาะจง — Act 4: Twisted Wilds (Level 4-6)
+## 2. งานถัดไปแบบเจาะจง — Act 5: Castle & Swamp ต่อ (Level 8)
 
-ตาม `PROGRESS.md` § "แผนคร่าวๆ Act 3+ ที่เหลือ": **Act 4 = Undermountain Level 4-6, char level 9-11**
+ตาม `PROGRESS.md` § "แผนคร่าวๆ Act 3+ ที่เหลือ": **Act 5 = Undermountain Level 7-9, char level 11-13** — Level 7 เสร็จแล้ว ต่อไปคือ **Level 8 (Slitherswamp)** = Chapter 2 ของ Act 5 นี้ (โฟลเดอร์ `ACT05-castle-and-swamp/` มีอยู่แล้ว ไม่ต้องสร้างใหม่)
 
-| Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) |
-|---|---|---|---|
-| 4 | `Level 4: Twisted Caverns` | `Level IV: The Twisted Caverns` | 75,735 / 60,763 ตัวอักษร |
-| 5 | `Level 5: Wyllowwood` | `Level V: Wyllowwood` | 97,162 / 94,445 ตัวอักษร |
-| 6 | `Level 6: Lost Level` | `Level VI: The Lost Level` | 110,605 / 57,572 ตัวอักษร |
+| Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) | สถานะ |
+|---|---|---|---|---|
+| 7 | `Level 7: Maddgoth's Castle` | `Level VII: Maddgoth's Castle` | 109,575 / 103,008 ตัวอักษร | ✅ เสร็จ (EP01) |
+| 8 | `Level 8: Slitherswamp` | `Level VIII: Slitherswamp` | 59,559 / 94,262 ตัวอักษร | ⬜ ถัดไป |
+| 9 | `Level 9: Dweomercore` | `Level IX: Dweomercore` | 147,053 / 151,424 ตัวอักษร | ⬜ รอคิว |
 
-**ทั้ง 3 ชั้นนี้ใหญ่กว่า Level 1-2 ทั้งคู่ และ Level 6 ใหญ่เกือบเท่า Level 3 บวก Skullport รวมกัน** — เตรียมใจว่าอาจต้องแตกเป็นหลาย EP ต่อ Chapter แบบที่ Skullport ทำ (ดูกฎการตัดสินใจในหัวข้อ 5.3)
+**Level 9 (Dweomercore) ใหญ่ที่สุดเท่าที่เจอมาในแคมเปญนี้ (147K+151K = 298K ตัวอักษรรวม)** — ใหญ่กว่า Level 6 (48 พื้นที่, 168K รวม) และ Level 7 (109K+103K=212K รวม, 47 พื้นที่ที่เพิ่งจบ) เกือบเท่าตัว เตรียมใจไว้ว่า **Level 9 มีโอกาสสูงที่จะต้องแตกเป็นหลาย EP** แบบ Skullport (ดูเกณฑ์ตัดสินใจในหัวข้อ 5.3 — ประเมินหน้างานจริงตอนอ่านเนื้อหาก่อนตัดสินใจ อย่าแตกไฟล์ล่วงหน้าไปเองจนกว่าจะเห็นว่าเนื้อหาเป็นคนละ "ประเภท" จริงๆ ไม่ใช่แค่ยาว) Level 8 มีขนาด WDMM เล็กกว่า Level 4 เสียอีก (59K) แม้ Companion จะใหญ่กว่า (94K) น่าจะยังจบในไฟล์เดียวได้สบายๆ
 
 **ขั้นตอนที่ต้องทำ** (ตามลำดับ, อ้างอิง workflow ของ `/build-ep` skill):
 
 1. อ่าน [`adventure-builder/journal-template.md`](../../adventure-builder/journal-template.md) และ [`adventure-builder/structure-guide.md`](../../adventure-builder/structure-guide.md) และ [`adventure-builder/canon-reference.md`](../../adventure-builder/canon-reference.md) ให้ครบทั้งไฟล์ก่อนเริ่มเขียนอะไรทั้งสิ้น (บังคับตาม skill — ห้ามข้าม แม้จะทำมาหลายรอบแล้ว กฎอาจถูกแก้ระหว่างทาง)
-2. สร้างโฟลเดอร์ `ACT04-twisted-wilds/` พร้อม `00-act-outline.md` (ใช้ `ACT03-the-sunless-sea/00-act-outline.md` เป็นแม่แบบโครงสร้าง)
-3. ต่อ Chapter ทีละชั้น: Ch.1 = Level 4 (Twisted Caverns), Ch.2 = Level 5 (Wyllowwood), Ch.3 = Level 6 (Lost Level) — แต่ละ Chapter มี `CH0X-slug.md` brief ของตัวเอง (ใส่ Companion Quick Notes ไว้ในนี้ ไม่ใช่ใน Act outline — ดูหัวข้อ 5.2)
-4. ต่อ EP เลขต่อเนื่องข้าม Chapter ทั้ง Act (ไม่รีเซ็ตเป็น EP01 ทุก Chapter) — เช็คไฟล์ EP ล่าสุดที่มีอยู่แล้วในโฟลเดอร์ Act ก่อนตั้งเลขใหม่เสมอ
-5. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง
-6. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ
-7. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
+2. เพิ่ม `CH02-slitherswamp.md` ใน `ACT05-castle-and-swamp/` ที่มีอยู่แล้ว (ใช้ `CH01-maddgoths-castle.md` เป็นแม่แบบโครงสร้าง) พร้อมอัปเดต `00-act-outline.md` ให้มีลิงก์ Chapter 2
+3. เลข EP ต่อจาก EP01 (Level 7) คือ **EP02** สำหรับ Level 8 — เช็คไฟล์ EP ล่าสุดที่มีอยู่แล้วในโฟลเดอร์ Act ก่อนตั้งเลขใหม่เสมอ
+4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 8: Slitherswamp` (WDMM) / `Level VIII: Slitherswamp` (Companion)
+5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ
+6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
 
-**เนื้อเรื่องคร่าวๆ ของ Level 4-6** (จากการอ่านหัวข้อ H1 คร่าวๆ ตอนสำรวจ ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
-- Level 4 (Twisted Caverns): อาณาเขต kuo-toa, aboleth Illuun เป็นภัยเงียบเบื้องหลัง (มีพูดถึงในหลาย EP ก่อนหน้าแล้วว่า kuo-toa หนีจากที่นี่), ดรอว์ House Auvryndar (Melith น้องสาว T'rissa) เพิ่งตั้งฐานที่มั่นที่นี่ (ปูมาแล้วใน EP01 ของ Act 3 พื้นที่ 7d/7e)
-- Level 5 (Wyllowwood): มีประตูเวท (Halaster's Gate) เชื่อมมาจาก Level 3 พื้นที่ 15a (Gate of the Elder Wand) — ปาร์ตี้อาจข้ามมาทางลัดได้ถ้าเลือกใช้ประตูนั้นระหว่าง Level 3
-- Level 6 (Lost Level): มีประตูเวทเชื่อมมาจาก Level 3 พื้นที่ 21p ด้วย (ไปโผล่ที่พื้นที่ 36c บน Level 6)
+**เนื้อเรื่องคร่าวๆ ของ Level 8-9** (จากการอ้างอิงที่พบระหว่างเขียน Level 6-7 เท่านั้น ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
+- **Level 8 (Slitherswamp)**: มี bullywug ที่ก้าวร้าวขึ้นเรื่อยๆ (อ้างอิงจาก Level 7's "Faces of Halaster") ถือชิ้นส่วนไม้เท้าหยกที่หายไปจาก Level 6 พื้นที่ 39b (พื้นที่ 19c บน L8) — เป็นเธรดต่อเนื่องที่ต้องจำไว้ตอนเขียน มีประตูเวทเชื่อมมาจาก Level 6 พื้นที่ 34b (Gate #12 Penitent Dwarf, ต้องเลเวล 10+) และจาก Level 7 พื้นที่ 8 (อุโมงค์ธรรมดา ไม่ใช่ประตูเวท — descending tunnel) **"The Gentlemen Bastards"** ปาร์ตี้นักผจญภัย NPC (Grel Momesk champion, Jocelyn of Daggerford warlock, Perlos assassin ฮาล์ฟลิง, Ilinar war priest เอลฟ์) กำลังมุ่งหน้ามาที่นี่หลังผ่าน Level 7 — Companion บอกว่าจะ "มีบทบาทสำคัญ" ที่ชั้นนี้ ต้องอ่านรายละเอียดจริงตอนเขียน
+- **Level 9 (Dweomercore)**: ยังไม่มีข้อมูลอ้างอิงล่วงหน้า — ต้องอ่านสดตอนเริ่มทำ มีประตูเวทเชื่อมมาจาก Level 6 พื้นที่ 8b (Gate #9 Floating Fiends, ต้องเลเวล 10+) และจาก Level 7 พื้นที่ 22 (Gate #16 Riddled Sky, ต้องเลเวล 10+)
+- ตรวจสอบภารกิจค้างที่ต้องติดตาม: **Retrieve Azrok's Dagger** จบไปแล้วที่ Level 6 (ถ้าปาร์ตี้ทำ), **jade staff piece** ที่ Level 8 (ต่อเนื่องจาก Level 6 พื้นที่ 39b), **spell scroll ของ mind blank** ที่ Level 7 (ถ้าปาร์ตี้ยังไม่ใช้รักษายักษ์หิน ก็ไม่มีผลต่อเนื่องอะไรอีกเพราะ Halaster สาปซ้ำเสมอ)
 
 ---
 
@@ -76,7 +80,7 @@
 - `adventures/gilded-city-mad-depths/_source/waterdeep-dungeon-of-the-mad-mage.json` (WDMM ทางการ, 30 pages — index `.pages[].name`)
 - `adventures/gilded-city-mad-depths/_source/dungeon-of-the-mad-mage-companion.json` (Companion แฟนเมด, 30 pages)
 
-**Helper script ถาวรอยู่แล้วที่**: [`_source/extract-tools/extract-common.js`](./_source/extract-tools/extract-common.js) — มีฟังก์ชัน `clean(html)` (HTML→plaintext แบบ markdown-ish: h1-h4→`#`-`####`, table→`[TABLE START]/[ROW]/|`, list→`- `, bold/italic→`**`/`*`, img→`[IMG]`), `headingIndex(html)` (คืน array ของ `{level, text, offset}` ไล่หา h1-h4 ทั้งหมด), `imageIndex(html)` (คืนตำแหน่ง+src/alt/title ของ `<img>` ทั้งหมด) — **ใช้ต่อได้เลย ไม่ต้องเขียนใหม่**
+**Helper script ถาวรอยู่แล้วที่**: [`_source/extract-tools/extract-common.cjs`](./_source/extract-tools/extract-common.cjs) — มีฟังก์ชัน `clean(html)` (HTML→plaintext แบบ markdown-ish: h1-h4→`#`-`####`, table→`[TABLE START]/[ROW]/|`, list→`- `, bold/italic→`**`/`*`, img→`[IMG]`), `headingIndex(html)` (คืน array ของ `{level, text, offset}` ไล่หา h1-h4 ทั้งหมด), `imageIndex(html)` (คืนตำแหน่ง+src/alt/title ของ `<img>` ทั้งหมด) — **ใช้ต่อได้เลย ไม่ต้องเขียนใหม่** — **นามสกุลไฟล์ต้องเป็น `.cjs` ไม่ใช่ `.js`** เพราะ `d:/dnd-gacha-rolling/package.json` มี `"type": "module"` ทำให้ไฟล์ `.js` ทั้งหมดในโปรเจกต์ถูก Node ตีความเป็น ES module โดยอัตโนมัติ — ถ้า `require()` ไฟล์ `.js` ที่เขียนด้วย `module.exports =` แบบ CommonJS จะได้ object ว่างเปล่ากลับมาเงียบๆ ไม่มี error (เจอปัญหานี้มาแล้วตอนเริ่ม Level 4 — แก้โดยเปลี่ยนนามสกุลเป็น `.cjs` ซึ่งบังคับ Node ให้ตีความเป็น CommonJS เสมอไม่ว่า package.json จะตั้งอะไรไว้) — สคริปต์ตัด chunk ที่เขียนเพิ่มเอง (เช่น `slice_l4.js`) ก็ต้องตั้งชื่อ `.cjs` ด้วยเช่นกันถ้าใช้ `require()`
 
 **ขั้นตอนมาตรฐาน** (รันผ่าน Bash tool, working directory = scratchpad):
 
@@ -91,7 +95,7 @@ fs.writeFileSync('l4_wdmm_raw.html', pw.text.content);
 fs.writeFileSync('l4_companion_raw.html', pc.text.content);
 
 // 2. หา heading index ของแต่ละไฟล์ (ใช้กำหนดจุดตัด chunk)
-const { clean, headingIndex, imageIndex } = require('D:/dnd-gacha-rolling/adventures/gilded-city-mad-depths/_source/extract-tools/extract-common.js');
+const { clean, headingIndex, imageIndex } = require('D:/dnd-gacha-rolling/adventures/gilded-city-mad-depths/_source/extract-tools/extract-common.cjs');
 fs.writeFileSync('l4w_headings.json', JSON.stringify(headingIndex(pw.text.content), null, 1));
 fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), null, 1));
 ```
@@ -140,8 +144,8 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 | Dragon Heist | ทั้งเล่ม | 1-5 | ✅ ครบ (Act 1, 12 EP) |
 | Into the Yawning Depths | Level 1-2 | 5-7 | ✅ ครบ (Act 2, EP01-02) |
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (Act 3, EP01-03) |
-| **Twisted Wilds** | **Level 4-6** | **9-11** | **⬜ ถัดไป — ดูหัวข้อ 2** |
-| Castle & Swamp | Level 7-9 | 11-13 | ⬜ รอคิว |
+| Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
+| **Castle & Swamp** | **Level 7-9** | **11-13** | **🔄 L7 เสร็จ, L8 ถัดไป — ดูหัวข้อ 2** |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ รอคิว |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
@@ -165,7 +169,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 ## 8. เมื่อผู้ใช้พิมพ์ "ทำต่อ" ในเซสชันถัดไป
 
 1. อ่านไฟล์นี้ทั้งหมดก่อน
-2. ยืนยันสั้นๆ 1 บรรทัดว่าจะเริ่ม Act 4 (Level 4: Twisted Caverns) หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
+2. ยืนยันสั้นๆ 1 บรรทัดว่าจะเริ่ม Act 5 ต่อ (Level 8: Slitherswamp) หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
 3. เข้าสู่ขั้นตอนในหัวข้อ 2 ทันที ไม่ต้องถามซ้ำเรื่อง scope/รูปแบบที่ตกลงกันไปแล้วในหัวข้อ 3-5
 4. ทำงานทีละ EP แล้วรายงานผล + ถามว่าทำต่อเลยไหมทุกครั้ง (ตามกฎข้อ 10 ในหัวข้อ 3)
 5. อัปเดตไฟล์นี้ทุกครั้งที่จบก้อนงานใหญ่ (จบ 1 EP ขึ้นไป) ให้ "สถานะโดยรวม" (หัวข้อ 1) และ "งานถัดไปแบบเจาะจง" (หัวข้อ 2) ตรงกับความจริงเสมอ — ไฟล์นี้ต้อง**ไม่ล้าสมัย**ไม่ว่าจะกลับมาทำต่อเมื่อไหร่

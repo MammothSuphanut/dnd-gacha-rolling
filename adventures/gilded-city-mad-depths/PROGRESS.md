@@ -52,6 +52,24 @@
 
 **🎉 Act 3 (The Sunless Sea) แปลครบสมบูรณ์ทั้ง 3 ไฟล์ EP แล้ว ณ 2026-08-12** — Level 3 (Sargauth Level) เต็มรูปแบบ + Skullport เต็มรูปแบบ (เมืองฮับ 36 จุด + เควสต์ไลน์ 5 องก์)
 
+## Act 4: Twisted Wilds — เริ่มแล้ว 2026-08-13
+
+- [x] **ACT04-twisted-wilds/** สร้างโฟลเดอร์แล้ว พร้อม `00-act-outline.md` + `CH01-the-twisted-caverns.md`
+- [x] **EP01: The Twisted Caverns (Level 4)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 24 พื้นที่ (Fungus Forest ถึง Troglodyte Takeover รวมทุก sub-area) รวมตัวแปร Companion เต็มรูปแบบ "Halaster's Game — Halngaloon the Mad God" (kuo-toa บูชา Halaster แทนรูปปั้น otyugh กลายหิน, ประตูเวทที่ 11c ถูกปิดขังดรอว์ไว้บนชั้นนี้), Illuun the aboleth ในธีม "the Lover in the Dark" พร้อม Regional Effect ใหม่ Whispers from the Dark, บอสไฟต์ที่ Grotto of Madness (พื้นที่ 16), NPC เด่น (Melith Auvryndar/Thirza ทรยศลับ, Noolgaloop archpriest, Jibber-Jabber เอททินสองหัว, the Alchemist green slaad ปลอมตัว, Darribeth Meltimer นักผจญภัยเสียสติ + Teeha quasit), Special Events 4 อัน (Ambushed!, Jabbering Madness, Tainted Love, Whispers from the Dark), Halaster's Gate 2 บาน (ไป L2 และ L6)
+- [x] **CH02-wyllowwood.md** สร้างแล้ว (Quick Notes, "Wyllow: A Hidden Evil" roleplay notes, โครงเรื่อง 5 องก์ "A Web of Dread", Other Considerations)
+- [x] **EP02: Wyllowwood (Level 5)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 24 พื้นที่ (River of the Depths ถึง Animal Cloisters รวมทุก sub-area) รวม Skill Challenge แก่งน้ำเปิดฉาก, Companion เขียน Wyllow อาร์คดรูอิดใหม่เป็นวายร้ายซ่อนเร้น พร้อมภารกิจกวาดล้างเผ่าเวียร์แบท (รวมเด็ก) แลกสิทธิ์ออกจากป่า, ระบบ "Wyllow's Hunt" tactics เต็มรูปแบบ (Wild Shape 5 ร่าง, Ambush 4 แบบ, Mad Intervention), NPC เด่น (Halastree ต้นไม้ตื่นรู้, Crissann displacer beast + วิญญาณ will-o'-wisp, Valdemar/Tearulai มังกร+ดาบอัจฉริยะ, Mobar หัวหน้าเวียร์แบท, Vool the Outcast), Special Events 3 อัน (A Light Between the Trees, A Desperate Vool, Halaster's Visit), Halaster's Gate 3 บาน (ไป L2, L3, L6) + อุโมงค์ธรรมดาไป L6/L7, boots of elvenkind ข้างที่สอง (คู่กับ L4 พื้นที่ 16a)
+- [x] **CH03-the-lost-level.md** สร้างแล้ว (Quick Notes, ตัวแปร "Halaster's Game" เต็มรูปแบบ, ตารางประตูเวท 10 บาน)
+- [x] **EP03: The Lost Level (Level 6)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 48 พื้นที่ (Umber Hulk Tunnel ถึง High Priest's Quarters รวมทุก sub-area) รวมตัวแปร Companion "Halaster's Game" เต็มรูปแบบ (ทางออกทั้งหมดถูกปิดผนึก, darkvision ของฮิวแมนอยด์ใช้ไม่ได้, invisible stalker ไล่ล่าทั้งปาร์ตี้และ duergar เผ่า Ironeye จนกว่าจะเปิด Heart of the Mountain สำเร็จ), จุดไคลแมกซ์ 3 ระลอกที่ Heart of the Mountain (พื้นที่ 16), NPC เด่น (Skella Ironeye หัวหน้า duergar, "Ghorn" ปีศาจ glabrezu ปลอมตัว, Mornhyld Crystalmantle วิญญาณนักบวช, King Melair มัมมี่กษัตริย์), สุสานลับของกษัตริย์ Melair เต็มรูปแบบ (พื้นที่ 28-29 รวม 4 ปีศาจติดรูปปั้น), ภารกิจ Retrieve Azrok's Dagger จบที่นี่ (Skella ถือกริช), Special Events 3 อัน (A Single Glimpse, It Follows, Rampage!), Halaster's Gate 10 บาน (ฮับใหญ่ที่สุดในแคมเปญ — เชื่อม L2/L3/L4/L5/L8/L9/L10/L11/L12/L13/L18)
+
+**🎉 Act 4 (Twisted Wilds) แปลครบสมบูรณ์ทั้ง 3 ไฟล์ EP แล้ว ณ 2026-08-13** — Level 4-5-6 เต็มรูปแบบ
+
+## Act 5: Castle & Swamp — เริ่มแล้ว 2026-08-13
+
+- [x] **ACT05-castle-and-swamp/** สร้างโฟลเดอร์แล้ว พร้อม `00-act-outline.md` + `CH01-maddgoths-castle.md`
+- [x] **EP01: Maddgoth's Castle (Level 7)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 47 พื้นที่ (The Caverns พื้นที่ 1-16 + The Castle พื้นที่ 17-47) รวมตัวแปร Companion เต็มรูปแบบ "Maddgoth's Dance" (พ่อมดฆาตกรต่อเนื่อง Maddgoth กลับมากลางเรื่อง เชิญปาร์ตี้เป็นแขก วางยา Midnight Tears ในไวน์ วางแผนสังหารตอนเที่ยงคืน 3 องก์: Master's Home → The Gracious Host → Eternal Sleep), ปม "The Shadow of Ghnorsh" (ลูกยักษ์หินคนที่ 7 ที่ตายแล้วแต่ครอบครัวจำไม่ได้เพราะคำสาปความจำเสื่อม), กลไกหดขนาด 1/12 รอบปราสาทจิ๋ว, NPC เด่น (Maddgoth, Khodnar แขกผู้บริสุทธิ์, Otto มังกรแฟรี่, Maddgoth's Homunculus, ครอบครัวยักษ์หิน 6 ตัว, "Zartem"/gray slaad ในออคโทเบส, Miguel roper ปลอมตัว, nycaloth คู่ Yzig/Gorzog), Special Event "The Gentlemen Bastards Pass Through" (ปาร์ตี้ NPC ที่จะมีบทบาทที่ Level 8), Halaster's Gate 3 บาน (ไป L9, L11, L10)
+
+**Level 7 แปลครบสมบูรณ์แล้ว ณ 2026-08-13** — ต่อไปคือ Level 8 (Slitherswamp)
+
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
@@ -59,8 +77,8 @@
 |---|---|---|---|
 | Into the Yawning Depths | Level 1-2 | 5-7 | ✅ ครบ (EP01+EP02) — Act 2 จบแล้ว |
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (EP01+EP02+EP03) — Act 3 จบแล้ว |
-| Twisted Wilds | Level 4-6 | 9-11 | ⬜ รอคิว |
-| Castle & Swamp | Level 7-9 | 11-13 | ⬜ รอคิว |
+| Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
+| Castle & Swamp | Level 7-9 | 11-13 | 🔄 L7 เสร็จ, L8-9 รอคิว |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ รอคิว |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
