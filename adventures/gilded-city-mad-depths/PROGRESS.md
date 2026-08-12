@@ -32,20 +32,26 @@
 
 **🎉 Act 1 (Dragon Heist) แปลครบสมบูรณ์ทั้ง 12 ไฟล์ EP แล้ว ณ 2026-08-12** — EP1-3 (เนื้อเรื่องกลาง) + EP4-7 (Ch.4 แยก 4 สาย) + EP8 (Vault of Dragons ร่วม) + EP9-12 (Ch.5-8 แยก 4 สาย) เล่นจริงแค่ 6 ไฟล์ตามสายวายร้ายที่เลือก ที่เหลือเป็น reference เผื่อเปลี่ยนใจ/รันคู่ขนานอีกโต๊ะ
 
-## แผนคร่าวๆ Act 2+ (Undermountain — ยังไม่ได้เริ่ม)
+## Act 2+ (Undermountain) — เริ่มแล้ว 2026-08-12
+
+- [x] **[Halaster's Game — กรอบเกม Act 2+](./03-halasters-game-framework.md)** สร้างแล้ว: แปล/สรุป 7 เป้าหมายของ Halaster, Gags & Gimmicks (Dropping Monsters, Points Game, Regional Effects), 10 แฟกชันของ Undermountain, ตารางอ้างอิง 31 ประตูลัด (Halaster's Gates) — ลิงก์จาก 00-overview.md และ 99-notes.md แล้ว
+- [x] **ACT02-into-the-yawning-depths/** สร้างโฟลเดอร์แล้ว พร้อม `00-act-outline.md` + `CH01-the-dungeon-level.md` (มี DM Prep Quick Notes ของ Level 1 ในนั้น)
+- [x] **EP01: The Dungeon Level (Level 1)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 41 ห้อง (Entry Well ถึง Cracked Ceiling) รวม Before the Descent (hook เปิด + ข่าวลือโรงเตี๊ยม + คำแนะนำ Durnan), Wandering Monsters & Random Encounters (d8 table ผสาน WDMM หลัก + Companion), Undertakers vs. Xanathar Guild (แก๊งอันธพาลปลอมเป็นแวมไพร์ vs. หน่วยสอดแนมกิลด์), ฉากสำคัญที่ Hidden Demiplane (พื้นที่ 27 — พบ Halaster simulacrum ครั้งแรก + กติกาเกม), Sick Trivia กับแมนทิคอร์ (พื้นที่ 16), ปม Fine Fellows of Daggerford (Kelim ติดกับที่ 36b, Halleth revenant ที่ 37 — ปูต่อ Level 2), ปิดท้ายด้วย "The Host's Send-Off"
+
+## แผนคร่าวๆ Act 2+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
-| Act (คร่าวๆ) | เนื้อหา | Char level |
-|---|---|---|
-| Into the Yawning Depths | Level 1-2 | 5-7 |
-| The Sunless Sea | Level 3 + Skullport | 7-9 |
-| Twisted Wilds | Level 4-6 | 9-11 |
-| Castle & Swamp | Level 7-9 | 11-13 |
-| Muiral's Gauntlet | Level 10-12 | 13-15 |
-| Graveyard & Ruin | Level 13-15 | 15-17 |
-| Crystal & Sea | Level 16-18 | 17-18 |
-| The Deepest Halls | Level 19-21 | 18-19 |
-| Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 |
+| Act (คร่าวๆ) | เนื้อหา | Char level | สถานะ |
+|---|---|---|---|
+| Into the Yawning Depths | Level 1-2 | 5-7 | 🔄 L1 เสร็จ (EP01) — L2 (Arcane Chambers) รอคิว |
+| The Sunless Sea | Level 3 + Skullport | 7-9 | ⬜ รอคิว |
+| Twisted Wilds | Level 4-6 | 9-11 | ⬜ รอคิว |
+| Castle & Swamp | Level 7-9 | 11-13 | ⬜ รอคิว |
+| Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ รอคิว |
+| Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
+| Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
+| The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
+| Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
 
 ทุกห้องของ WDMM หลักได้ full room breakdown เสมอ (ไม่ตัดเพื่อความสั้น) — ใช้แนวทางเดียวกับ EP1 ของ Act 1 นี้เป็นมาตรฐานความละเอียด, Companion (Quick Notes/Before the Descent/Random Encounters/Areas of Note/Epilogue) ผสานเข้าแต่ละชั้นตามที่ระบุใน [99-notes.md](./99-notes.md), motif "Halaster's Game" ใช้ต่อเนื่องทุกชั้น
 

@@ -19,4 +19,5 @@
 ## ดูเพิ่มเติม
 - [Hook & Antagonist](./01-hook-and-antagonist.md)
 - [NPC สำคัญ](./02-npcs.md)
+- [Halaster's Game — กรอบเกม Act 2+](./03-halasters-game-framework.md)
 - [องค์ประกอบพิเศษ & บันทึก](./99-notes.md)
