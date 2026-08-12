@@ -1,5 +1,7 @@
 # Progress — Gilded City, Mad Depths
 
+> 📌 **จะทำงานต่อ? อ่าน [`NEXT-SESSION.md`](./NEXT-SESSION.md) ก่อนเสมอ** — มีขั้นตอนเจาะจง, กฎรูปแบบ, และ pipeline การสกัดเนื้อหาที่ต้องทำตามให้ครบ ไฟล์นี้ (`PROGRESS.md`) เป็นแค่ checklist ประวัติเท่านั้น
+
 ## เสร็จแล้ว
 - [x] โครงราก: `00-overview.md`, `01-hook-and-antagonist.md`, `02-npcs.md`, `99-notes.md`
 - [x] จุดเชื่อม Astral Nexus: Constellation Protocol (Halaster's madness = เมล็ดพันธุ์แห่งการทำลายล้างฝังลึกใต้ Undermountain, Dragon Heist ยังไม่แตะปมนี้ตรงๆ)
