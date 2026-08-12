@@ -1,0 +1,10 @@
+# Chapter 3 — ลูกไฟกลางเมือง
+**Level 3**
+
+เหตุระเบิดลูกไฟกลางเมืองเชื่อมโยงกลับมาที่ปาร์ตี้และ Renaer — จุดพลิกที่ดึงปาร์ตี้เข้าสู่การไล่ล่า Stone of Golorr อย่างเป็นทางการ จบ Chapter นี้ Lady Gralhund's nimblewright ขโมย Stone หนีไป เปิดทางสู่ Ch.4
+
+## สารบัญ EP
+- EP3 — ยังไม่ได้แปลเป็น journal เต็ม (รอคิว)
+
+---
+[← Chapter 2](./CH02-trollskull-alley.md) · [Act 1 outline](./00-act-outline.md) · [Chapter 4 →](./CH04-dragon-season.md)
