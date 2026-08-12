@@ -41,13 +41,22 @@
 
 **Level 1-2 (Chapter 1-2 ของ Act 2) แปลครบสมบูรณ์แล้ว ณ 2026-08-12**
 
-## แผนคร่าวๆ Act 2+ ที่เหลือ
+## Act 3: The Sunless Sea — เสร็จแล้ว 2026-08-12
+
+- [x] **ACT03-the-sunless-sea/** สร้างโฟลเดอร์แล้ว พร้อม `00-act-outline.md` + `CH01-the-sargauth-level.md` + `CH02-skullport.md`
+- [x] **EP01: The Sargauth Level (Level 3)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 23 พื้นที่ (Catacombs ถึง Way to Skullport รวมทุก sub-area) รวม "Halaster's Game" ฉากมิติกระเป๋าพิเศษ (เควสต์ฆ่า T'rissa Auvryndar + โยนสัญลักษณ์ Lolth ลงแม่น้ำ), สมรภูมิ House Auvryndar (ดรอว์) vs. Legion of Azrok (กอบลินนอยด์ตาบอดปิดบังความจริง), Side Quest ตามหา dagger of blindsight, Sea Hag Coven พันธมิตรลับของ Halaster, Halaster's Gate 2 บาน (ไป L5 และ L6), Special Event Chimera Drift, ปิดท้ายด้วย "The Host's Send-Off"
+- [x] **EP02: Skullport, Part 1 — The Port of Shadows** แปล/ขยายเป็น journal เต็มแล้ว — Approaching Skullport (9 random encounters ทางบก/น้ำ), Skull Island ป้อม Xanathar เต็มรูปแบบ (พื้นที่ 1-10 รวม Tower of the Seven Woes/Sundeth), Exploring the Town ครบทั้ง 36 ร้านค้า/สถานที่ (Dead Man's Corner, Flagon and the Dragon, Poisoned Quill, Nightshade's Caress, Tanor'thal Refuge ฯลฯ)
+- [x] **EP03: Skullport, Part 2 — Return of the Thirteen** แปล/ขยายเป็น journal เต็มแล้ว — เควสต์ไลน์ใหญ่จาก Companion เต็ม 5 องก์ (A Revolution of Flames → Nightshade's Simple Request → Reaching the Grotto → Legacy of the Sargauth incl. Sea Hag Coven บอสไฟต์ → Return to Skullport incl. Sundeth ปะทะ) พร้อม Special Events 3 อัน (A Mind Flayer Amok, The Mad Mage Pays a Visit, Xanathar Sends Its Love) ปิดท้ายด้วย Epilogue คู่
+
+**🎉 Act 3 (The Sunless Sea) แปลครบสมบูรณ์ทั้ง 3 ไฟล์ EP แล้ว ณ 2026-08-12** — Level 3 (Sargauth Level) เต็มรูปแบบ + Skullport เต็มรูปแบบ (เมืองฮับ 36 จุด + เควสต์ไลน์ 5 องก์)
+
+## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
 | Act (คร่าวๆ) | เนื้อหา | Char level | สถานะ |
 |---|---|---|---|
 | Into the Yawning Depths | Level 1-2 | 5-7 | ✅ ครบ (EP01+EP02) — Act 2 จบแล้ว |
-| The Sunless Sea | Level 3 + Skullport | 7-9 | ⬜ รอคิว |
+| The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (EP01+EP02+EP03) — Act 3 จบแล้ว |
 | Twisted Wilds | Level 4-6 | 9-11 | ⬜ รอคิว |
 | Castle & Swamp | Level 7-9 | 11-13 | ⬜ รอคิว |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ รอคิว |
