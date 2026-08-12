@@ -16,7 +16,7 @@ Ch.1-4 เป็นเนื้อเรื่องกลางที่ใช�
 
 ## สารบัญ Chapter → EP
 - [Chapter 1: เพื่อนที่หายไป](./CH01-a-friend-in-need.md) `Level 1-2` — EP1
-- [Chapter 2: Trollskull Alley](./CH02-trollskull-alley.md) `Level 2` — EP2
+- [Chapter 2: Trollskull Alley](./CH02-trollskull-alley.md) `Level 2` — [EP2: Trollskull Alley](<./EP02 - Trollskull Alley.md>)
 - [Chapter 3: ลูกไฟกลางเมือง](./CH03-fireball.md) `Level 3` — EP3
 - [Chapter 4: ฤดูกาลแห่งมังกร](./CH04-dragon-season.md) `Level 3-4` — EP4 (บทใหญ่ อาจต้องแตกเป็น EP4-EP5 เมื่อลงมือแปลจริง เพราะเนื้อหาต้นฉบับยาวเป็นพิเศษ)
 - Chapter 5: ฤดูกาลของวายร้ายที่เลือก `Level 5` — EP สุดท้ายของ Act — **รอเลือกสาย** (Xanathar → Spring Madness / Cassalanters → Hell of a Summer / Jarlaxle → Maestro's Fall / Manshoon → Winter Wizardry)

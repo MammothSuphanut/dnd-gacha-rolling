@@ -7,9 +7,9 @@
 - [x] ย้ายไฟล์ต้นฉบับ 3 ไฟล์ (WDH, WDMM, WDMMC) เข้า `_source/`
 - [x] Act 1 (Dragon Heist): `00-act-outline.md` + CH01-CH04 brief
 - [x] **EP1: A Friend in Need** แปล/ขยายเป็น journal เต็มแล้ว (ทะเลาะวิวาทที่ Yawning Portal → ตามหา Floon ทั่ว Dock Ward → บุก Zhentarim hideout → บุก Xanathar Guild hideout → รับรางวัล Trollskull Manor)
+- [x] **EP2: Trollskull Alley** แปล/ขยายเป็น journal เต็มแล้ว (ทัวร์ย่าน T1-T7 รวม Lif โพลเทอร์ไกสต์, รับสมัครเข้า 7 แฟกชันพร้อม mission เต็มทุกระดับ 2-5, กติกาเปิดผับ, ปม Emmek Frewn คู่แข่งธุรกิจ)
 
 ## กำลังทำ / รอคิว (Act 1: Dragon Heist)
-- [ ] EP2 — Ch.2 Trollskull Alley
 - [ ] EP3 — Ch.3 Fireball
 - [ ] EP4 (อาจ EP4-5) — Ch.4 Dragon Season (ตัดเฉพาะเส้นทางของวายร้ายที่เลือก)
 - [ ] EP สุดท้ายของ Act 1 — Chapter 5-8 เฉพาะสายที่เลือก (Spring Madness / Hell of a Summer / Maestro's Fall / Winter Wizardry)
