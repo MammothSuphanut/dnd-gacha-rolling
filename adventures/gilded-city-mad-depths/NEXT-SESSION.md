@@ -1,6 +1,6 @@
 # Next Session — Resume Point (อ่านไฟล์นี้ก่อนเริ่มงานทุกครั้ง)
 
-**อัปเดตล่าสุด**: 2026-08-13 (หลังจบ Level 7 — Act 5 เริ่มแล้ว)
+**อัปเดตล่าสุด**: 2026-08-13 (หลังจบ Level 9 — Act 5 จบสมบูรณ์ทั้ง Act, ต่อไปคือ Act 6)
 
 > ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วทำงานต่อได้ทันทีโดยไม่เพี้ยนจากรูปแบบ/มาตรฐานเดิม — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้เริ่มจากหัวข้อ **"งานถัดไปแบบเจาะจง"** ด้านล่างได้เลย ไม่ต้องถามซ้ำว่าจะทำอะไร
 
@@ -18,39 +18,45 @@
   - Level 4 (Twisted Caverns): `CH01-the-twisted-caverns.md` + `EP01 - The Twisted Caverns (Level 4).md` ครบ 24 พื้นที่ รวมตัวแปร Companion "Halaster's Game — Halngaloon the Mad God" (kuo-toa บูชา Halaster แทนรูปปั้น otyugh, ประตูเวทที่ 11c ถูกปิด), Illuun the aboleth ธีม "the Lover in the Dark"
   - Level 5 (Wyllowwood): `CH02-wyllowwood.md` + `EP02 - Wyllowwood (Level 5).md` ครบ 24 พื้นที่ รวม Companion เขียน Wyllow อาร์คดรูอิดใหม่เป็นวายร้ายซ่อนเร้น ("A Web of Dread" 5 องก์ + "Wyllow's Hunt" tactics เต็มรูปแบบ)
   - Level 6 (Lost Level): `CH03-the-lost-level.md` + `EP03 - The Lost Level (Level 6).md` ครบ 48 พื้นที่ รวมตัวแปร Companion "Halaster's Game" เต็มรูปแบบ (ปิดผนึกทางออก, ปิด darkvision, invisible stalker ไล่ล่าทุกฝ่ายจนเปิด Heart of the Mountain สำเร็จ), ฮับประตูเวท 10 บาน — ใหญ่ที่สุดในแคมเปญ
-- 🔄 **Act 5 — Castle & Swamp** (`ACT05-castle-and-swamp/`): Level 7 (Maddgoth's Castle) เสร็จแล้ว — `00-act-outline.md` + `CH01-maddgoths-castle.md` + `EP01 - Maddgoth's Castle (Level 7).md` ครบ 47 พื้นที่ รวมตัวแปร Companion "Maddgoth's Dance" เต็มรูปแบบ (พ่อมดฆาตกรต่อเนื่องกลับมากลางเรื่อง เชิญปาร์ตี้เป็นแขก วางยาพิษ วางแผนสังหารตอนเที่ยงคืน) และปม "The Shadow of Ghnorsh" **Level 8 (Slitherswamp) และ Level 9 (Dweomercore) ยังไม่เริ่ม** — ดูหัวข้อ 2
+- ✅ **Act 5 — Castle & Swamp** (`ACT05-castle-and-swamp/`): **ครบทั้ง Act แล้ว — Level 7, 8, 9 ทั้งหมด (4 ไฟล์ EP)**
+  - Level 7: `CH01-maddgoths-castle.md` + `EP01 - Maddgoth's Castle (Level 7).md` ครบ 47 พื้นที่ รวมตัวแปร Companion "Maddgoth's Dance" เต็มรูปแบบ (พ่อมดฆาตกรต่อเนื่องกลับมากลางเรื่อง เชิญปาร์ตี้เป็นแขก วางยาพิษ วางแผนสังหารตอนเที่ยงคืน) และปม "The Shadow of Ghnorsh"
+  - Level 8: `CH02-slitherswamp.md` + `EP02 - Slitherswamp (Level 8).md` ครบ 24 พื้นที่ รวม 2 เนื้อเรื่องคู่ขนานจาก Companion ("Out from Under the Rod" — ปาร์ตี้ถูกนาคาสะกดจิต, "The Blacktongue Breakout" — ปาร์ตี้ถูก bullywug จับติดเชื้อ chaos phage) ผ่านปาร์ตี้ NPC "The Gentlemen Bastards" พบข้อผิดพลาดเล็กน้อยในตาราง Gate กลางแคมเปญ (Gate #19 ปลายทางจริงคือ L10 ไม่ใช่ L9 ตามที่เคยพิมพ์ไว้) แก้ไขแล้วใน `03-halasters-game-framework.md`
+  - Level 9: `CH03-dweomercore.md` + **`EP03 - Dweomercore, Part 1 - The Academy.md`** (49 พื้นที่ + Companion เปลี่ยนเป็น "evil Hogwarts" เต็มรูปแบบ 7 บ้าน/Houses) + **`EP04 - Dweomercore, Part 2 - The High Wizard Tournament.md`** (ทัวร์นาเมนต์ 3 ภารกิจดัดแปลงจาก Harry Potter and the Goblet of Fire, ไคลแมกซ์คือการคืนชีพของ Ezzat ลิชจาก L20) — **Level 9 เป็นชั้นแรกที่ต้องแตกเป็น 2 EP แบบ Skullport** เพราะเนื้อหาดันเจี้ยนสำรวจ vs. ทัวร์นาเมนต์นอกสถานที่เป็นคนละประเภทชัดเจน
 
-**ยังไม่เริ่ม**: Act 5 ที่เหลือ (Level 8-9) และ Act 6 เป็นต้นไป (Undermountain Level 10-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
+**ยังไม่เริ่ม**: Act 6 เป็นต้นไป (Undermountain Level 10-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
 
 รายละเอียด checklist แบบละเอียดทุกบรรทัดอยู่ใน [`PROGRESS.md`](./PROGRESS.md) — ไฟล์นี้ (`NEXT-SESSION.md`) เป็นตัวสรุป "ทำอย่างไรต่อ" ไม่ใช่ตัวแทน PROGRESS.md อัปเดตทั้งสองไฟล์คู่กันเสมอเมื่อทำงานเสร็จแต่ละก้อน
 
 ---
 
-## 2. งานถัดไปแบบเจาะจง — Act 5: Castle & Swamp ต่อ (Level 8)
+## 2. งานถัดไปแบบเจาะจง — Act 6: Muiral's Gauntlet (Level 10) — เริ่ม Act ใหม่
 
-ตาม `PROGRESS.md` § "แผนคร่าวๆ Act 3+ ที่เหลือ": **Act 5 = Undermountain Level 7-9, char level 11-13** — Level 7 เสร็จแล้ว ต่อไปคือ **Level 8 (Slitherswamp)** = Chapter 2 ของ Act 5 นี้ (โฟลเดอร์ `ACT05-castle-and-swamp/` มีอยู่แล้ว ไม่ต้องสร้างใหม่)
+ตาม `PROGRESS.md` § "แผนคร่าวๆ Act 3+ ที่เหลือ": **Act 5 จบสมบูรณ์แล้วทั้ง Act (Level 7-9)** ต่อไปคือ **Act 6: Muiral's Gauntlet** (Undermountain Level 10-12, char level 13-15) — ต้องสร้างโฟลเดอร์ `ACT06-muirals-gauntlet/` ใหม่ (ใช้ `ACT05-castle-and-swamp/` เป็นแม่แบบโครงสร้าง) เริ่มด้วย **Level 10 (Muiral's Gauntlet)** = Chapter 1 ของ Act 6 นี้ เลข EP รีเซ็ตกลับ EP01 ตามกฎ per-Act ของ structure-guide.md
 
 | Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) | สถานะ |
 |---|---|---|---|---|
-| 7 | `Level 7: Maddgoth's Castle` | `Level VII: Maddgoth's Castle` | 109,575 / 103,008 ตัวอักษร | ✅ เสร็จ (EP01) |
-| 8 | `Level 8: Slitherswamp` | `Level VIII: Slitherswamp` | 59,559 / 94,262 ตัวอักษร | ⬜ ถัดไป |
-| 9 | `Level 9: Dweomercore` | `Level IX: Dweomercore` | 147,053 / 151,424 ตัวอักษร | ⬜ รอคิว |
+| 10 | `Level 10: Muiral's Gauntlet` | `Level X: Muiral's Gauntlet` | 127,594 / 89,081 ตัวอักษร | ⬜ ถัดไป |
+| 11 | `Level 11: Troglodyte Warrens` | `Level XI: The Troglodyte Warrens` | 60,066 / 47,623 ตัวอักษร | ⬜ รอคิว |
+| 12 | `Level 12: Maze Level` | `Level XII: The Maze Level` | 94,166 / 76,192 ตัวอักษร | ⬜ รอคิว |
 
-**Level 9 (Dweomercore) ใหญ่ที่สุดเท่าที่เจอมาในแคมเปญนี้ (147K+151K = 298K ตัวอักษรรวม)** — ใหญ่กว่า Level 6 (48 พื้นที่, 168K รวม) และ Level 7 (109K+103K=212K รวม, 47 พื้นที่ที่เพิ่งจบ) เกือบเท่าตัว เตรียมใจไว้ว่า **Level 9 มีโอกาสสูงที่จะต้องแตกเป็นหลาย EP** แบบ Skullport (ดูเกณฑ์ตัดสินใจในหัวข้อ 5.3 — ประเมินหน้างานจริงตอนอ่านเนื้อหาก่อนตัดสินใจ อย่าแตกไฟล์ล่วงหน้าไปเองจนกว่าจะเห็นว่าเนื้อหาเป็นคนละ "ประเภท" จริงๆ ไม่ใช่แค่ยาว) Level 8 มีขนาด WDMM เล็กกว่า Level 4 เสียอีก (59K) แม้ Companion จะใหญ่กว่า (94K) น่าจะยังจบในไฟล์เดียวได้สบายๆ
+**Level 10 มีขนาดใหญ่กว่า Level 9's WDMM ฝั่งเดียว (147K)** เล็กน้อย (127K) แต่ Companion ฝั่งนี้เล็กกว่ามาก (89K เทียบ 151K) รวม 216K ตัวอักษร — ใกล้เคียง Level 7 (212K รวม, 47 พื้นที่) เตรียมใจประเมินหน้างานว่าจะจบใน 1 EP ได้หรือต้องแตก (ดูเกณฑ์ตัดสินใจในหัวข้อ 5.3 — Level 9 เพิ่งสอนบทเรียนว่าเกณฑ์คือ "เนื้อหาคนละประเภท" ไม่ใช่แค่ขนาด อย่าตัดสินใจแตกไฟล์จากตัวเลขขนาดเพียงอย่างเดียว)
 
 **ขั้นตอนที่ต้องทำ** (ตามลำดับ, อ้างอิง workflow ของ `/build-ep` skill):
 
 1. อ่าน [`adventure-builder/journal-template.md`](../../adventure-builder/journal-template.md) และ [`adventure-builder/structure-guide.md`](../../adventure-builder/structure-guide.md) และ [`adventure-builder/canon-reference.md`](../../adventure-builder/canon-reference.md) ให้ครบทั้งไฟล์ก่อนเริ่มเขียนอะไรทั้งสิ้น (บังคับตาม skill — ห้ามข้าม แม้จะทำมาหลายรอบแล้ว กฎอาจถูกแก้ระหว่างทาง)
-2. เพิ่ม `CH02-slitherswamp.md` ใน `ACT05-castle-and-swamp/` ที่มีอยู่แล้ว (ใช้ `CH01-maddgoths-castle.md` เป็นแม่แบบโครงสร้าง) พร้อมอัปเดต `00-act-outline.md` ให้มีลิงก์ Chapter 2
-3. เลข EP ต่อจาก EP01 (Level 7) คือ **EP02** สำหรับ Level 8 — เช็คไฟล์ EP ล่าสุดที่มีอยู่แล้วในโฟลเดอร์ Act ก่อนตั้งเลขใหม่เสมอ
-4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 8: Slitherswamp` (WDMM) / `Level VIII: Slitherswamp` (Companion)
+2. สร้างโฟลเดอร์ `ACT06-muirals-gauntlet/` ใหม่ พร้อม `00-act-outline.md` (ใช้ `ACT05-castle-and-swamp/00-act-outline.md` เป็นแม่แบบ) + `CH01-muirals-gauntlet.md` (ใช้ `CH01-maddgoths-castle.md` เป็นแม่แบบ) — อัปเดตลิงก์ Act 6 ใน root `00-overview.md` ด้วยถ้ามีสารบัญ Act อยู่ที่นั่น
+3. เลข EP เริ่มใหม่ที่ **EP01** สำหรับ Level 10 (per-Act numbering — ไม่ต่อจาก EP04 ของ Act 5)
+4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 10: Muiral's Gauntlet` (WDMM) / `Level X: Muiral's Gauntlet` (Companion)
 5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ
-6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
+6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act — เพิ่มส่วน "Act 6" ใหม่), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
 
-**เนื้อเรื่องคร่าวๆ ของ Level 8-9** (จากการอ้างอิงที่พบระหว่างเขียน Level 6-7 เท่านั้น ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
-- **Level 8 (Slitherswamp)**: มี bullywug ที่ก้าวร้าวขึ้นเรื่อยๆ (อ้างอิงจาก Level 7's "Faces of Halaster") ถือชิ้นส่วนไม้เท้าหยกที่หายไปจาก Level 6 พื้นที่ 39b (พื้นที่ 19c บน L8) — เป็นเธรดต่อเนื่องที่ต้องจำไว้ตอนเขียน มีประตูเวทเชื่อมมาจาก Level 6 พื้นที่ 34b (Gate #12 Penitent Dwarf, ต้องเลเวล 10+) และจาก Level 7 พื้นที่ 8 (อุโมงค์ธรรมดา ไม่ใช่ประตูเวท — descending tunnel) **"The Gentlemen Bastards"** ปาร์ตี้นักผจญภัย NPC (Grel Momesk champion, Jocelyn of Daggerford warlock, Perlos assassin ฮาล์ฟลิง, Ilinar war priest เอลฟ์) กำลังมุ่งหน้ามาที่นี่หลังผ่าน Level 7 — Companion บอกว่าจะ "มีบทบาทสำคัญ" ที่ชั้นนี้ ต้องอ่านรายละเอียดจริงตอนเขียน
-- **Level 9 (Dweomercore)**: ยังไม่มีข้อมูลอ้างอิงล่วงหน้า — ต้องอ่านสดตอนเริ่มทำ มีประตูเวทเชื่อมมาจาก Level 6 พื้นที่ 8b (Gate #9 Floating Fiends, ต้องเลเวล 10+) และจาก Level 7 พื้นที่ 22 (Gate #16 Riddled Sky, ต้องเลเวล 10+)
-- ตรวจสอบภารกิจค้างที่ต้องติดตาม: **Retrieve Azrok's Dagger** จบไปแล้วที่ Level 6 (ถ้าปาร์ตี้ทำ), **jade staff piece** ที่ Level 8 (ต่อเนื่องจาก Level 6 พื้นที่ 39b), **spell scroll ของ mind blank** ที่ Level 7 (ถ้าปาร์ตี้ยังไม่ใช้รักษายักษ์หิน ก็ไม่มีผลต่อเนื่องอะไรอีกเพราะ Halaster สาปซ้ำเสมอ)
+**เนื้อเรื่องคร่าวๆ ของ Level 10-12** (จากการอ้างอิงที่พบระหว่างเขียน Level 8-9 เท่านั้น ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
+- Level 10 ชื่อ **Muiral's Gauntlet** — ตั้งตาม Muiral the Misshapen อดีตบอดี้การ์ดของ Halaster ที่กลายร่างเป็นอสูรครึ่งคนครึ่งแมงป่อง (กล่าวถึงใน L9 Quick Notes ว่าเป็นตัวอย่างการมีบอดี้การ์ดของนักเวท, House Muiral ที่ L9 ตั้งชื่อตามเขา และมี "flu ปลอม" ทุกครั้งที่เขามาเลคเชอร์)
+- Vlonwelv Auvryndar (House Auvryndar) อยู่ที่นี่ — เป็นเป้าหมาย wish-quest ของ Halaster's Game จาก L8 chaos phage system ("ฆ่า Vlonwelv Auvryndar แห่ง Muiral's Gauntlet, L10")
+- Muiral the Misshapen เองก็เป็นเป้าหมาย wish-quest เดียวกัน ("บังคับ Muiral the Misshapen แห่ง L10 ให้ส่องกระจกดูตัวเอง")
+- มีประตูเวทเชื่อมมาจาก Level 8 พื้นที่ 17c (Gate #19 Interwoven Gears, ต้องเลเวล 11+, ปลายทางพื้นที่ 25b) และจาก Level 7 พื้นที่ 41 (Gate #18 Tuoyaw mirror gate) รวมถึงทางเชื่อมธรรมดาจาก Level 9 พื้นที่ 41/44 (Drop to Level 10 / Dweomercore's Back Door)
+- pneumatic tube ของ headmaster ที่ L9 พื้นที่ 15a เชื่อมตรงไปห้อง laboratory ของ Muiral ที่ L10 พื้นที่ 4b ด้วย — เป็นปมต่อเนื่องเล็กๆ ระหว่างสองชั้น
+- ตรวจสอบภารกิจค้างที่ต้องติดตามจาก Act 5: **jade staff piece** จาก L8 (Torbit ถือไว้ ยังไม่ประกอบคืน — ต้นตอชิ้นส่วนอยู่ L6 พื้นที่ 39b), **spell scroll ของ mind blank** จาก L7 (จบแล้ว ไม่มีผลต่อเนื่อง), **The Gentlemen Bastards** ชะตากรรมขึ้นกับผลลัพธ์ L8 — Companion บอกจะโผล่อีกครั้งที่ L20/L23 ไม่ใช่ Act 6 (ไม่ต้องนำมาต่อยอดตอนนี้), **wish-quest ทั้ง 7 ข้อจาก chaos phage system L8** ยังเปิดค้างอยู่ถ้ามีตัวละครติดเชื้อ — 2 ข้อ (Vlonwelv, Muiral) อยู่ที่ Level 10 นี้พอดี
 
 ---
 
@@ -145,8 +151,8 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 | Into the Yawning Depths | Level 1-2 | 5-7 | ✅ ครบ (Act 2, EP01-02) |
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (Act 3, EP01-03) |
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
-| **Castle & Swamp** | **Level 7-9** | **11-13** | **🔄 L7 เสร็จ, L8 ถัดไป — ดูหัวข้อ 2** |
-| Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ รอคิว |
+| Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
+| **Muiral's Gauntlet** | **Level 10-12** | **13-15** | **⬜ ถัดไป (เริ่ม Act 6 ใหม่) — ดูหัวข้อ 2** |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
@@ -169,7 +175,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 ## 8. เมื่อผู้ใช้พิมพ์ "ทำต่อ" ในเซสชันถัดไป
 
 1. อ่านไฟล์นี้ทั้งหมดก่อน
-2. ยืนยันสั้นๆ 1 บรรทัดว่าจะเริ่ม Act 5 ต่อ (Level 8: Slitherswamp) หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
+2. ยืนยันสั้นๆ 1 บรรทัดว่าจะเริ่ม Act 6 ใหม่ (Level 10: Muiral's Gauntlet) หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
 3. เข้าสู่ขั้นตอนในหัวข้อ 2 ทันที ไม่ต้องถามซ้ำเรื่อง scope/รูปแบบที่ตกลงกันไปแล้วในหัวข้อ 3-5
 4. ทำงานทีละ EP แล้วรายงานผล + ถามว่าทำต่อเลยไหมทุกครั้ง (ตามกฎข้อ 10 ในหัวข้อ 3)
 5. อัปเดตไฟล์นี้ทุกครั้งที่จบก้อนงานใหญ่ (จบ 1 EP ขึ้นไป) ให้ "สถานะโดยรวม" (หัวข้อ 1) และ "งานถัดไปแบบเจาะจง" (หัวข้อ 2) ตรงกับความจริงเสมอ — ไฟล์นี้ต้อง**ไม่ล้าสมัย**ไม่ว่าจะกลับมาทำต่อเมื่อไหร่

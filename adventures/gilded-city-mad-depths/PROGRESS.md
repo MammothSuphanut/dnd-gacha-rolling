@@ -67,8 +67,13 @@
 
 - [x] **ACT05-castle-and-swamp/** สร้างโฟลเดอร์แล้ว พร้อม `00-act-outline.md` + `CH01-maddgoths-castle.md`
 - [x] **EP01: Maddgoth's Castle (Level 7)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 47 พื้นที่ (The Caverns พื้นที่ 1-16 + The Castle พื้นที่ 17-47) รวมตัวแปร Companion เต็มรูปแบบ "Maddgoth's Dance" (พ่อมดฆาตกรต่อเนื่อง Maddgoth กลับมากลางเรื่อง เชิญปาร์ตี้เป็นแขก วางยา Midnight Tears ในไวน์ วางแผนสังหารตอนเที่ยงคืน 3 องก์: Master's Home → The Gracious Host → Eternal Sleep), ปม "The Shadow of Ghnorsh" (ลูกยักษ์หินคนที่ 7 ที่ตายแล้วแต่ครอบครัวจำไม่ได้เพราะคำสาปความจำเสื่อม), กลไกหดขนาด 1/12 รอบปราสาทจิ๋ว, NPC เด่น (Maddgoth, Khodnar แขกผู้บริสุทธิ์, Otto มังกรแฟรี่, Maddgoth's Homunculus, ครอบครัวยักษ์หิน 6 ตัว, "Zartem"/gray slaad ในออคโทเบส, Miguel roper ปลอมตัว, nycaloth คู่ Yzig/Gorzog), Special Event "The Gentlemen Bastards Pass Through" (ปาร์ตี้ NPC ที่จะมีบทบาทที่ Level 8), Halaster's Gate 3 บาน (ไป L9, L11, L10)
+- [x] **CH02-slitherswamp.md** สร้างแล้ว (Quick Notes, roster เต็มของ Gentlemen Bastards, โครงเรื่อง OUR + BB, ตารางประตูเวท 3 บาน)
+- [x] **EP02: Slitherswamp (Level 8)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 24 พื้นที่ (Precipice ถึง Kelp Farm รวมทุก sub-area) รวม 2 เนื้อเรื่องคู่ขนานจาก Companion ที่ไม่บังคับเกิดพร้อมกัน: **"Out from Under the Rod"** (ปาร์ตี้ถูก Ssethian Scourges สะกดจิตด้วย rod of rulership, กลไก secret Wisdom save, 3 องก์ Kneel or Die → Under the Rod → Thy Lord's Will Be Done) และ **"The Blacktongue Breakout"** (ปาร์ตี้ถูก bullywug จับ ติดเชื้อ chaos phage เสี่ยงกลายเป็น red/green slaad, 3 องก์ Ambushed! → Kuketh's Gambit (4-wave escape) → Betrayal!, ระบบ Aberrant/Race Model ถ้าผู้เล่นกลายร่างจริง + Halaster's Game wish-quest table 7 ข้อ), NPC เด่น (Excrutha/Serakath spirit naga คู่, Hexacali bone naga, Yoastal yuan-ti ghost, Karstis สายลับ Dweomercore, Kuketh death slaad + Hyin blue slaad, Torbit bullywug assassin ถือชิ้นส่วนไม้เท้าหยกต่อเนื่องจาก L6, Gentlemen Bastards ครบ 4 คน), Halaster's Gate 3 บาน (ไป L6, L10, L11) — **แก้ไขตารางกลางแคมเปญ 1 จุด**: Gate #19 Interwoven Gears เดิมพิมพ์ผิดว่า L8-L9 ต้นฉบับ WDMM ระบุปลายทาง L10 ชัดเจน
+- [x] **CH03-dweomercore.md** สร้างแล้ว (Quick Notes, The Academy Revamped สรุปเต็ม, 7 Houses, Faculty, ภาพรวม High Wizard Tournament, ตารางประตูเวท 3 บาน)
+- [x] **EP03: Dweomercore, Part 1 — The Academy** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 49 พื้นที่ (Entry Hall ถึง Arch Gate to Level 14 รวมทุก sub-area) รวมการปรับปรุง Companion เป็น **"evil Hogwarts"** เต็มรูปแบบ: นักเรียนขยายเป็น 7 บ้าน (Arcturia/Muiral/Nester/Trobriand/Nyghtsteel/Rantantar/Kestellharp) พร้อมทางเข้าหอพัก demiplane เฉพาะบ้าน, การสอบเข้าใหม่ (ปราบ bone devil), Nester เปลี่ยนจาก archmage เป็น boneclaw ผู้โหดร้าย, Special Events 4 อัน (A Crime Most Foul, Have at Thee Cur! spell duel, Blood-Lines of the Black Quill, Troll in the Dungeons!), NPC เด่น (Arcanaloth headmaster ปลอมเป็น Halaster, Wormriddle night hag, นักเรียนรุ่นพี่ 8 คนครบ)
+- [x] **EP04: Dweomercore, Part 2 — The High Wizard Tournament** แปล/ขยายเป็น journal เต็มแล้ว — ทัวร์นาเมนต์ 3 ภารกิจดัดแปลงจาก Harry Potter and the Goblet of Fire เต็มรูปแบบ: **I. The Arctic Egg** (ขโมยไข่จาก adult white dragon Serakrish), **II. The Sunken Depths** (กู้ของรักจากวิหาร Sekolah ใต้สมุทร sahuagin), **III. Maze of the Spotless Mind** (เขาวงกตของ gynosphinx Aleria + จุดไคลแมกซ์การคืนชีพของ **Ezzat ลิชจาก Level 20**), กฎ/คะแนน/รางวัลทัวร์นาเมนต์เต็มรูปแบบ, Aftermath ปิด Act 5 ทั้ง Act
 
-**Level 7 แปลครบสมบูรณ์แล้ว ณ 2026-08-13** — ต่อไปคือ Level 8 (Slitherswamp)
+**🎉 Act 5 (Castle & Swamp) แปลครบสมบูรณ์ทั้ง 4 ไฟล์ EP แล้ว ณ 2026-08-13** — Level 7-8-9 เต็มรูปแบบ — Level 9 เป็นชั้นแรกในแคมเปญที่ต้องแตกเป็น 2 EP (เหมือน Skullport) เพราะเนื้อหาดันเจี้ยนสำรวจกับทัวร์นาเมนต์นอกสถานที่เป็นคนละประเภทชัดเจน ต่อไปคือ **Act 6: Muiral's Gauntlet** (Level 10-12)
 
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
@@ -78,8 +83,8 @@
 | Into the Yawning Depths | Level 1-2 | 5-7 | ✅ ครบ (EP01+EP02) — Act 2 จบแล้ว |
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (EP01+EP02+EP03) — Act 3 จบแล้ว |
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
-| Castle & Swamp | Level 7-9 | 11-13 | 🔄 L7 เสร็จ, L8-9 รอคิว |
-| Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ รอคิว |
+| Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
+| Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ ถัดไป |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
