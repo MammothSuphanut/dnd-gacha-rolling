@@ -1,6 +1,6 @@
 # Next Session — Resume Point (อ่านไฟล์นี้ก่อนเริ่มงานทุกครั้ง)
 
-**อัปเดตล่าสุด**: 2026-08-13 (หลังจบ Level 9 — Act 5 จบสมบูรณ์ทั้ง Act, ต่อไปคือ Act 6)
+**อัปเดตล่าสุด**: 2026-08-14 (หลังจบ Level 10 — Act 6 เริ่มแล้ว, ต่อไปคือ Level 11 Troglodyte Warrens)
 
 > ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วทำงานต่อได้ทันทีโดยไม่เพี้ยนจากรูปแบบ/มาตรฐานเดิม — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้เริ่มจากหัวข้อ **"งานถัดไปแบบเจาะจง"** ด้านล่างได้เลย ไม่ต้องถามซ้ำว่าจะทำอะไร
 
@@ -22,41 +22,42 @@
   - Level 7: `CH01-maddgoths-castle.md` + `EP01 - Maddgoth's Castle (Level 7).md` ครบ 47 พื้นที่ รวมตัวแปร Companion "Maddgoth's Dance" เต็มรูปแบบ (พ่อมดฆาตกรต่อเนื่องกลับมากลางเรื่อง เชิญปาร์ตี้เป็นแขก วางยาพิษ วางแผนสังหารตอนเที่ยงคืน) และปม "The Shadow of Ghnorsh"
   - Level 8: `CH02-slitherswamp.md` + `EP02 - Slitherswamp (Level 8).md` ครบ 24 พื้นที่ รวม 2 เนื้อเรื่องคู่ขนานจาก Companion ("Out from Under the Rod" — ปาร์ตี้ถูกนาคาสะกดจิต, "The Blacktongue Breakout" — ปาร์ตี้ถูก bullywug จับติดเชื้อ chaos phage) ผ่านปาร์ตี้ NPC "The Gentlemen Bastards" พบข้อผิดพลาดเล็กน้อยในตาราง Gate กลางแคมเปญ (Gate #19 ปลายทางจริงคือ L10 ไม่ใช่ L9 ตามที่เคยพิมพ์ไว้) แก้ไขแล้วใน `03-halasters-game-framework.md`
   - Level 9: `CH03-dweomercore.md` + **`EP03 - Dweomercore, Part 1 - The Academy.md`** (49 พื้นที่ + Companion เปลี่ยนเป็น "evil Hogwarts" เต็มรูปแบบ 7 บ้าน/Houses) + **`EP04 - Dweomercore, Part 2 - The High Wizard Tournament.md`** (ทัวร์นาเมนต์ 3 ภารกิจดัดแปลงจาก Harry Potter and the Goblet of Fire, ไคลแมกซ์คือการคืนชีพของ Ezzat ลิชจาก L20) — **Level 9 เป็นชั้นแรกที่ต้องแตกเป็น 2 EP แบบ Skullport** เพราะเนื้อหาดันเจี้ยนสำรวจ vs. ทัวร์นาเมนต์นอกสถานที่เป็นคนละประเภทชัดเจน
+- 🔄 **Act 6 — Muiral's Gauntlet** (`ACT06-muirals-gauntlet/`): **เริ่มแล้ว — Level 10 เสร็จ, Level 11-12 รอคิว**
+  - Level 10: `CH01-muirals-gauntlet.md` + `EP01 - Muiral's Gauntlet (Level 10).md` ครบ 30 พื้นที่ รวม "Muiral's Mad Dash" โครงเรื่องไล่ล่า/หลบหนี, Halaster's Game สองเป้าหมาย ("Muiral's Ugly Mug" บังคับ Muiral ส่องกระจก + "The Auvryndar Armageddon" ยุยง Gorzil ก่อกบฏ), สงครามสามฝ่าย Muiral vs. House Auvryndar vs. สายลับ House Freth (Xarann A'Daragon) — **ยังคงเป็น 1 ไฟล์ EP** (ไม่แตกแบบ Level 9) เพราะเนื้อหาทั้งหมดเกิดในดันเจี้ยนเดิม ไม่มีการย้ายไปสถานที่นอกดันเจี้ยน — Halaster's Gate 5 บาน (มากที่สุดตั้งแต่ L6) ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข (ยืนยัน Gate #19 ที่แก้ตอน L8 ด้วย)
 
-**ยังไม่เริ่ม**: Act 6 เป็นต้นไป (Undermountain Level 10-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
+**ยังไม่เริ่ม**: Level 11-12 (จบ Act 6) และ Act 7 เป็นต้นไป (Undermountain Level 13-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
 
 รายละเอียด checklist แบบละเอียดทุกบรรทัดอยู่ใน [`PROGRESS.md`](./PROGRESS.md) — ไฟล์นี้ (`NEXT-SESSION.md`) เป็นตัวสรุป "ทำอย่างไรต่อ" ไม่ใช่ตัวแทน PROGRESS.md อัปเดตทั้งสองไฟล์คู่กันเสมอเมื่อทำงานเสร็จแต่ละก้อน
 
 ---
 
-## 2. งานถัดไปแบบเจาะจง — Act 6: Muiral's Gauntlet (Level 10) — เริ่ม Act ใหม่
+## 2. งานถัดไปแบบเจาะจง — Act 6: Muiral's Gauntlet, Level 11 (Troglodyte Warrens) — Chapter 2
 
-ตาม `PROGRESS.md` § "แผนคร่าวๆ Act 3+ ที่เหลือ": **Act 5 จบสมบูรณ์แล้วทั้ง Act (Level 7-9)** ต่อไปคือ **Act 6: Muiral's Gauntlet** (Undermountain Level 10-12, char level 13-15) — ต้องสร้างโฟลเดอร์ `ACT06-muirals-gauntlet/` ใหม่ (ใช้ `ACT05-castle-and-swamp/` เป็นแม่แบบโครงสร้าง) เริ่มด้วย **Level 10 (Muiral's Gauntlet)** = Chapter 1 ของ Act 6 นี้ เลข EP รีเซ็ตกลับ EP01 ตามกฎ per-Act ของ structure-guide.md
+ตาม `PROGRESS.md` § "แผนคร่าวๆ Act 3+ ที่เหลือ": **Level 10 จบแล้ว** ต่อไปคือ **Level 11 (Troglodyte Warrens)** = Chapter 2 ของ Act 6 (ใช้ `ACT06-muirals-gauntlet/00-act-outline.md` ที่มีอยู่แล้วเป็นฐาน ไม่ต้องสร้างโฟลเดอร์ใหม่) เลข EP ต่อเนื่องจาก EP01 → **EP02**
 
 | Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) | สถานะ |
 |---|---|---|---|---|
-| 10 | `Level 10: Muiral's Gauntlet` | `Level X: Muiral's Gauntlet` | 127,594 / 89,081 ตัวอักษร | ⬜ ถัดไป |
-| 11 | `Level 11: Troglodyte Warrens` | `Level XI: The Troglodyte Warrens` | 60,066 / 47,623 ตัวอักษร | ⬜ รอคิว |
+| 10 | `Level 10: Muiral's Gauntlet` | `Level X: Muiral's Gauntlet` | 127,594 / 89,081 ตัวอักษร | ✅ เสร็จ (EP01, 30 พื้นที่) |
+| 11 | `Level 11: Troglodyte Warrens` | `Level XI: The Troglodyte Warrens` | 60,066 / 47,623 ตัวอักษร | ⬜ ถัดไป |
 | 12 | `Level 12: Maze Level` | `Level XII: The Maze Level` | 94,166 / 76,192 ตัวอักษร | ⬜ รอคิว |
 
-**Level 10 มีขนาดใหญ่กว่า Level 9's WDMM ฝั่งเดียว (147K)** เล็กน้อย (127K) แต่ Companion ฝั่งนี้เล็กกว่ามาก (89K เทียบ 151K) รวม 216K ตัวอักษร — ใกล้เคียง Level 7 (212K รวม, 47 พื้นที่) เตรียมใจประเมินหน้างานว่าจะจบใน 1 EP ได้หรือต้องแตก (ดูเกณฑ์ตัดสินใจในหัวข้อ 5.3 — Level 9 เพิ่งสอนบทเรียนว่าเกณฑ์คือ "เนื้อหาคนละประเภท" ไม่ใช่แค่ขนาด อย่าตัดสินใจแตกไฟล์จากตัวเลขขนาดเพียงอย่างเดียว)
+**Level 11 เล็กกว่า Level 10 มาก** (107K รวม เทียบ 216K ของ L10) ใกล้เคียงขนาด Level 8 (Slitherswamp, 24 พื้นที่, 1 EP) — ตามเกณฑ์หัวข้อ 5.3 น่าจะจบใน 1 EP ได้สบายๆ แต่ยังต้องอ่านเนื้อหาจริงก่อนตัดสินใจเสมอ (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว)
 
 **ขั้นตอนที่ต้องทำ** (ตามลำดับ, อ้างอิง workflow ของ `/build-ep` skill):
 
 1. อ่าน [`adventure-builder/journal-template.md`](../../adventure-builder/journal-template.md) และ [`adventure-builder/structure-guide.md`](../../adventure-builder/structure-guide.md) และ [`adventure-builder/canon-reference.md`](../../adventure-builder/canon-reference.md) ให้ครบทั้งไฟล์ก่อนเริ่มเขียนอะไรทั้งสิ้น (บังคับตาม skill — ห้ามข้าม แม้จะทำมาหลายรอบแล้ว กฎอาจถูกแก้ระหว่างทาง)
-2. สร้างโฟลเดอร์ `ACT06-muirals-gauntlet/` ใหม่ พร้อม `00-act-outline.md` (ใช้ `ACT05-castle-and-swamp/00-act-outline.md` เป็นแม่แบบ) + `CH01-muirals-gauntlet.md` (ใช้ `CH01-maddgoths-castle.md` เป็นแม่แบบ) — อัปเดตลิงก์ Act 6 ใน root `00-overview.md` ด้วยถ้ามีสารบัญ Act อยู่ที่นั่น
-3. เลข EP เริ่มใหม่ที่ **EP01** สำหรับ Level 10 (per-Act numbering — ไม่ต่อจาก EP04 ของ Act 5)
-4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 10: Muiral's Gauntlet` (WDMM) / `Level X: Muiral's Gauntlet` (Companion)
+2. เขียน `CH02-troglodyte-warrens.md` ใหม่ (ใช้ `CH01-muirals-gauntlet.md` เป็นแม่แบบ) — เพิ่มลิงก์ Chapter 2 ใน `ACT06-muirals-gauntlet/00-act-outline.md`
+3. เลข EP ต่อจาก EP01 ของ Level 10 → **EP02** สำหรับ Level 11 (per-Act numbering ต่อเนื่อง ไม่รีเซ็ต)
+4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 11: Troglodyte Warrens` (WDMM) / `Level XI: The Troglodyte Warrens` (Companion)
 5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ
-6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act — เพิ่มส่วน "Act 6" ใหม่), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
+6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
 
-**เนื้อเรื่องคร่าวๆ ของ Level 10-12** (จากการอ้างอิงที่พบระหว่างเขียน Level 8-9 เท่านั้น ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
-- Level 10 ชื่อ **Muiral's Gauntlet** — ตั้งตาม Muiral the Misshapen อดีตบอดี้การ์ดของ Halaster ที่กลายร่างเป็นอสูรครึ่งคนครึ่งแมงป่อง (กล่าวถึงใน L9 Quick Notes ว่าเป็นตัวอย่างการมีบอดี้การ์ดของนักเวท, House Muiral ที่ L9 ตั้งชื่อตามเขา และมี "flu ปลอม" ทุกครั้งที่เขามาเลคเชอร์)
-- Vlonwelv Auvryndar (House Auvryndar) อยู่ที่นี่ — เป็นเป้าหมาย wish-quest ของ Halaster's Game จาก L8 chaos phage system ("ฆ่า Vlonwelv Auvryndar แห่ง Muiral's Gauntlet, L10")
-- Muiral the Misshapen เองก็เป็นเป้าหมาย wish-quest เดียวกัน ("บังคับ Muiral the Misshapen แห่ง L10 ให้ส่องกระจกดูตัวเอง")
-- มีประตูเวทเชื่อมมาจาก Level 8 พื้นที่ 17c (Gate #19 Interwoven Gears, ต้องเลเวล 11+, ปลายทางพื้นที่ 25b) และจาก Level 7 พื้นที่ 41 (Gate #18 Tuoyaw mirror gate) รวมถึงทางเชื่อมธรรมดาจาก Level 9 พื้นที่ 41/44 (Drop to Level 10 / Dweomercore's Back Door)
-- pneumatic tube ของ headmaster ที่ L9 พื้นที่ 15a เชื่อมตรงไปห้อง laboratory ของ Muiral ที่ L10 พื้นที่ 4b ด้วย — เป็นปมต่อเนื่องเล็กๆ ระหว่างสองชั้น
-- ตรวจสอบภารกิจค้างที่ต้องติดตามจาก Act 5: **jade staff piece** จาก L8 (Torbit ถือไว้ ยังไม่ประกอบคืน — ต้นตอชิ้นส่วนอยู่ L6 พื้นที่ 39b), **spell scroll ของ mind blank** จาก L7 (จบแล้ว ไม่มีผลต่อเนื่อง), **The Gentlemen Bastards** ชะตากรรมขึ้นกับผลลัพธ์ L8 — Companion บอกจะโผล่อีกครั้งที่ L20/L23 ไม่ใช่ Act 6 (ไม่ต้องนำมาต่อยอดตอนนี้), **wish-quest ทั้ง 7 ข้อจาก chaos phage system L8** ยังเปิดค้างอยู่ถ้ามีตัวละครติดเชื้อ — 2 ข้อ (Vlonwelv, Muiral) อยู่ที่ Level 10 นี้พอดี
+**เนื้อเรื่องคร่าวๆ ของ Level 11-12** (จากการอ้างอิงที่พบระหว่างเขียน Level 10 เท่านั้น ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
+- Level 11 ชื่อ **Troglodyte Warrens** — House Freth (ดรอว์คู่แข่ง House Auvryndar นำโดย Erelal Freth) มีป้อมปราการอยู่ที่นี่ ปะทะกับ House Auvryndar จาก L10 อย่างต่อเนื่อง
+- ตัวละครที่ L10 อาจได้ทางลัดมา L11 จาก Xarann A'Daragon, Vlonwelv หรือ Gorzil (สายลับ House Freth ที่ปาร์ตี้อาจช่วยเหลือที่ L10) — ถ้าปาร์ตี้ช่วย Xarann สำเร็จที่ L10 อาจมีสการาบ/จดหมายแนะนำตัวให้ House Freth ใช้เปิดทางได้ดีขึ้น
+- ดรอว์สอดแนม Llossul และ Yuinfein จาก L10 พื้นที่ 25b เพิ่งกลับจากภารกิจสอดแนมที่ L11 — น่าจะมีข้อมูลเชื่อมสองชั้นนี้เพิ่มเติมถ้าอ่านเนื้อหา L11 แล้วเจอ
+- มีประตูเวทเชื่อมมาจาก Level 6 พื้นที่ (Gate #11 Amber Flagon), Level 6 อีกจุด (Gate #13 Runic Palm), Level 7 พื้นที่ 29 (Gate #17 Raging Torch), Level 8 พื้นที่ 18b (Gate #20 Crystal Crown) — L11 เป็นฮับประตูเวทอีกจุดเหมือน L6/L10 ต้องครอสเรฟกับตารางกลางให้ครบทุกบานตอนอ่านเนื้อหาจริง
+- ตรวจสอบภารกิจค้างที่ต้องติดตามจาก Level 10: **wish-quest ทั้ง 7 ข้อจาก chaos phage system L8** — 2 ข้อ (Vlonwelv, Muiral) อยู่ที่ L10 แล้ว ถ้าปาร์ตี้ยังไม่ทำ อาจยังค้างอยู่ได้ (ไม่บังคับต้องปิดที่ L10), ชะตากรรมของ House Auvryndar ที่ L10 (Vlonwelv รอด/ตาย, ใครสืบทอด) ส่งผลต่อความสัมพันธ์กับ House Freth ที่ L11 โดยตรงตาม Aftermath ที่เขียนไว้ใน EP01
 
 ---
 
@@ -152,7 +153,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (Act 3, EP01-03) |
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
-| **Muiral's Gauntlet** | **Level 10-12** | **13-15** | **⬜ ถัดไป (เริ่ม Act 6 ใหม่) — ดูหัวข้อ 2** |
+| **Muiral's Gauntlet** | **Level 10-12** | **13-15** | **🔄 L10 เสร็จ, L11-12 รอคิว — ดูหัวข้อ 2** |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
@@ -175,7 +176,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 ## 8. เมื่อผู้ใช้พิมพ์ "ทำต่อ" ในเซสชันถัดไป
 
 1. อ่านไฟล์นี้ทั้งหมดก่อน
-2. ยืนยันสั้นๆ 1 บรรทัดว่าจะเริ่ม Act 6 ใหม่ (Level 10: Muiral's Gauntlet) หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
+2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 11 (Troglodyte Warrens, Chapter 2 ของ Act 6) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
 3. เข้าสู่ขั้นตอนในหัวข้อ 2 ทันที ไม่ต้องถามซ้ำเรื่อง scope/รูปแบบที่ตกลงกันไปแล้วในหัวข้อ 3-5
 4. ทำงานทีละ EP แล้วรายงานผล + ถามว่าทำต่อเลยไหมทุกครั้ง (ตามกฎข้อ 10 ในหัวข้อ 3)
 5. อัปเดตไฟล์นี้ทุกครั้งที่จบก้อนงานใหญ่ (จบ 1 EP ขึ้นไป) ให้ "สถานะโดยรวม" (หัวข้อ 1) และ "งานถัดไปแบบเจาะจง" (หัวข้อ 2) ตรงกับความจริงเสมอ — ไฟล์นี้ต้อง**ไม่ล้าสมัย**ไม่ว่าจะกลับมาทำต่อเมื่อไหร่

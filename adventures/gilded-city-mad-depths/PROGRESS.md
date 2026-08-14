@@ -75,6 +75,13 @@
 
 **🎉 Act 5 (Castle & Swamp) แปลครบสมบูรณ์ทั้ง 4 ไฟล์ EP แล้ว ณ 2026-08-13** — Level 7-8-9 เต็มรูปแบบ — Level 9 เป็นชั้นแรกในแคมเปญที่ต้องแตกเป็น 2 EP (เหมือน Skullport) เพราะเนื้อหาดันเจี้ยนสำรวจกับทัวร์นาเมนต์นอกสถานที่เป็นคนละประเภทชัดเจน ต่อไปคือ **Act 6: Muiral's Gauntlet** (Level 10-12)
 
+## Act 6: Muiral's Gauntlet — เริ่มแล้ว 2026-08-14
+
+- [x] **ACT06-muirals-gauntlet/** สร้างโฟลเดอร์แล้ว พร้อม `00-act-outline.md` + `CH01-muirals-gauntlet.md` (มี DM Prep Quick Notes, roleplay notes ของ Muiral, House Auvryndar roster, "Muiral's Mad Dash" chase outline, Halaster's Game สองเป้าหมาย, ตารางประตูเวท 5 บาน)
+- [x] **EP01: Muiral's Gauntlet (Level 10)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 30 พื้นที่ (Shattered Mirrors ถึง Natural Cavern รวมทุก sub-area) รวม **"Muiral's Mad Dash"** โครงเรื่องไล่ล่า/หลบหนีระหว่าง Muiral กับปาร์ตี้ที่ผูกร้อยหลายพื้นที่, **Halaster's Game สองเป้าหมาย** ("Muiral's Ugly Mug" — บังคับ Muiral ส่องกระจกของจริง, "The Auvryndar Armageddon" — ยุยง Gorzil ก่อกบฏ), Special Event "Auvryndar Escort", NPC เด่น (Muiral the Misshapen ครึ่งคนครึ่งแมงป่อง, Vlonwelv Auvryndar นักบวชประมุข + Zress Orlezziir ลูกบุญธรรม + yochlol Chalizana, Xarann A'Daragon สายลับ House Freth, Sornnozz ดรอว์ทรยศ, Gorzil troglodyte กบฏ, Falkir Gravelfist ผีนักผจญภัยดวาร์ฟ), Halaster's Gate 5 บาน (ไป L1/L6/L7/L8/L12 — ครอสเรฟตรงกับตารางกลางทุกบานรวมยืนยัน Gate #19 ที่แก้ไขไว้ตอน L8) + "False Mirror Gate" ที่เป็นกับดักภาพลวงตาไม่ใช่ประตูจริง
+
+**Level 10 ยังคงเป็น 1 ไฟล์ EP** (ไม่แตกแบบ Level 9) เพราะทั้ง Halaster's Game และ Muiral's Mad Dash ยังเกิดขึ้นในดันเจี้ยนเดิมทั้งหมด — ดูรายละเอียดเกณฑ์ตัดสินใจใน `CH01-muirals-gauntlet.md`
+
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
@@ -84,7 +91,7 @@
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (EP01+EP02+EP03) — Act 3 จบแล้ว |
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
-| Muiral's Gauntlet | Level 10-12 | 13-15 | ⬜ ถัดไป |
+| Muiral's Gauntlet | Level 10-12 | 13-15 | 🔄 L10 เสร็จ, L11-12 รอคิว |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
