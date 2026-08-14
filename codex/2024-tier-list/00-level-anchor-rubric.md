@@ -24,12 +24,12 @@
 - **ชั้น 1 (ยังไม่เริ่ม)**: 30 Class Baseline แบบ level-indexed — เทียบกับ Anchor Rubric แต่ละเลเวล
 - **ชั้น 2 (ยังไม่เริ่ม)**: 478 Subclass overlay แบบ level-indexed — เทียบกับ Anchor Rubric เหมือนกัน ไม่ใช่เทียบกับ baseline ของคลาสตัวเองอย่างเดียว
 
-## ความคืบหน้า Anchor Rubric (2/7 axis)
+## ความคืบหน้า Anchor Rubric (4/7 axis)
 
 - [x] Damage
 - [x] Control
-- [ ] Support
-- [ ] Survivability
+- [x] Support
+- [x] Survivability
 - [ ] Action Economy
 - [ ] Utility
 - [ ] Versatility
@@ -93,8 +93,55 @@
 
 ---
 
+## Support Anchor
+
+Support มีสองสาย mixed กัน ที่มูลค่าจริงต่างกันมาก: **ฮีล** (แก้หลังเกิดเรื่อง) กับ **บัฟ** (กันก่อนเกิดเรื่อง) — 5 มิติที่ใช้ประเมิน: **Magnitude** (ค่าที่ได้ต่อครั้ง) / **Breadth** (เดี่ยว vs ทั้งปาร์ตี้) / **Action Economy** (bonus action vs full action vs free ผ่าน aura) / **Proactive vs Reactive** (บัฟก่อนเกิดเรื่องมักคุ้มกว่าฮีลหลังเกิดเรื่อง เพราะฮีลแค่ลบล้างดาเมจที่ทำไปแล้ว ไม่เพิ่มมูลค่าใหม่ให้ encounter) / **Frequency/Sustainability** (จำกัดครั้ง/วัน vs aura ต่อเนื่อง vs downtime-only)
+
+ยืนยันจาก spell text จริงในไฟล์ `spells-xphb.json`:
+
+| Lv | Spell อ้างอิง (slot) | Magnitude | Breadth | Action Economy | Proactive/Reactive | Frequency |
+|---|---|---|---|---|---|---|
+| 1-2 | Bless / Cure Wounds / **Healing Word** (slot1) | ฮีล ~2d8+mod (~13) เดี่ยว หรือ +1d4 atk/save 3 คน | สูงสุด 3 (Bless) / เดี่ยว (ฮีล) | **ผสม** — Healing Word เป็น **bonus action** (ฮีลได้โดยยังโจมตีได้ปกติ) ส่วน Cure Wounds/Bless เป็น full action | ทั้งสองสายมีตั้งแต่ lv1 | ~3-4/วัน |
+| 3-4 | Aid (slot2) | +5 max/current HP ×3 คน — อยู่ทั้งวัน ไม่ต้อง cast ซ้ำ | 3 คน | full action แต่ cast ครั้งเดียวคุ้มทั้งวัน | **Proactive** | ~3-4/วัน (ผลอยู่ยาว) |
+| 5-8 | Beacon of Hope / Haste / Death Ward / Freedom of Movement (slot3-4) | **สูงมาก** — Haste ให้ action เพิ่มทั้งตัว, Death Ward กัน HP=0 ครั้งนึงฟรี, Freedom of Movement กัน paralyze/restrain ทั้งดื้อ | ผสม (Beacon ไม่จำกัดจำนวน, ที่เหลือเดี่ยว) | full action แต่ผลอยู่ตลอด duration | **Proactive ล้วน** — Magnitude แซงฮีลไปไกล | ~2-3/วัน |
+| 9-10 | Mass Cure Wounds / Greater Restoration (slot5) | ~27/คน ×6 คน (~162 รวม) หรือแก้ debuff หนัก (curse/stat drain/exhaustion) | กว้าง (6 คน) | full action | **Reactive** กลับมาโดดเด่นด้วย breadth | ~2/วัน |
+| 11-12 | Heal (slot6) | **70 HP คงที่** + แก้ blind/deaf/poison | เดี่ยว | full action | Reactive | ~1-2/วัน |
+| 13-14 | Regenerate (slot7) | 4d8+15 + ฟื้น 1HP/เทิร์นต่อเนื่อง | เดี่ยว | **downtime-only** (cast 1 นาที ใช้กลางคอมแบตไม่ได้) | Reactive | ~1/วัน (นอกคอมแบต) |
+| 15-16 | **Holy Aura** (slot8) | advantage ทุก save + disadvantage ศัตรูโจมตี + blind fiend/undead ที่ตี | **ทั้งปาร์ตี้** (ไม่จำกัดจำนวน) | full action, ผลอยู่ตลอด duration | **Proactive สูงสุด** | ~1/วัน |
+| 17-20 | Mass Heal / Power Word Heal (slot9) | สูงสุด 700 HP แบ่งได้ทุกคน หรือฮีลเต็ม 100% ทันทีแบบไม่มีเงื่อนไข | เลือกได้ (กว้างสุด vs การันตีเดี่ยว) | full action | Reactive | ~1/วัน |
+
+**ข้อค้นพบ**:
+1. **รูปแบบ zigzag proactive/reactive**: lv1-4 ผสม → lv5-8 proactive ครองเวที (มูลค่าเกิน slot level ตัวเองมาก) → lv9-14 reactive กลับมา (breadth/magnitude ไล่ทัน) → lv15-16 proactive สูงสุด (Holy Aura) → lv17-20 reactive ปิดท้ายระดับ "แก้ทุกอย่างในคลิกเดียว" — ยืนยันความเชื่อเมต้า 5e ว่า proactive buff ให้มูลค่าเกิน slot level เสมอ ส่วน reactive heal โตแบบเส้นตรงตาม slot level เท่านั้น
+2. **Support hard-counter Control ได้โดยตรง** (Freedom of Movement lv7 กัน paralyze/restrain ทั้งหมด, Death Ward กันตายจาก HP=0) — จุดเชื่อมข้าม axis ที่ไม่มีใน Damage/Control เดี่ยวๆ
+
+---
+
+## Survivability Anchor
+
+**ทำไมไม่ใช้ AC เป็นตัวตัดสินหลัก**: AC ส่วนใหญ่มาจาก "เกราะ+DEX" ซึ่งเป็นตัวเลือกอุปกรณ์ที่ผู้เล่นทุกคลาสไล่ตามได้ใกล้เคียงกัน (ไม่ใช่สิ่งที่ class/subclass feature ควบคุมเป็นหลัก) — ใช้เป็นตัวแยกดี/แย่ข้ามคลาสไม่ยุติธรรมเท่า HP pool (ผูกกับ hit die ที่ fix ตาม class จริง) เหมือนที่ Control axis เจอปัญหาเดียวกันกับ DC — เพราะงั้น Anchor นี้ตัด AC ออก ใช้ **HP pool + mitigation ที่มาจาก feature จริง** แทน
+
+5 มิติที่ใช้ประเมิน: **Effective HP** (HP pool จาก hit die, d8 เป็นค่ากลาง — Sorcerer/Wizard d6 และ Fighter/Paladin/Ranger d10 / Barbarian d12 คือ deviation ที่ไปตัดสินระดับ Class Baseline) / **Mitigation** (resistance/immunity ต่อดาเมจ, temp HP, ลดดาเมจที่โดนหลังโดนตีแล้ว) / **Save Reliability** (จำนวน save proficiency + bonus ที่ให้ตัวเอง/ปาร์ตี้ + reroll/auto-fix เมื่อ save พลาด) / **Debuff/Condition Resistance** (ต้าน/หลุด condition ที่ไม่ใช่ดาเมจโดยตรง เช่น Paralyzed, Frightened, Charmed) / **Death Prevention** (self-heal ในคอมแบต, cheat-death, กันตกเลข 0 ซ้ำ)
+
+ยืนยันจาก `classFeature` จริงในไฟล์ `src/data/5etools/official/class/class-*.json` (XPHB):
+
+| Lv | Feature อ้างอิง (คลาส) | Effective HP | Mitigation | Save Reliability | Debuff/Condition Resistance | Death Prevention |
+|---|---|---|---|---|---|---|
+| 1-4 | Rage (Barbarian, lv1) / Second Wind (Fighter, lv1) | ~10-30 (d8 peer-standard, CON+2) | **ปกติ = 0** ที่ peer-standard — Barbarian Rage (resist B/P/S dmg) เป็น outlier ตั้งแต่ lv1 | คงที่ 2 save prof จาก lv1 (ไม่เปลี่ยนตลอดอาชีพ เว้นมี feature เสริม) | ไม่มีที่ peer-standard | ไม่มีที่ peer-standard — Second Wind (1d10+lv, bonus action) เป็น outlier |
+| 5-8 | Uncanny Dodge (Rogue, lv5) / Evasion (Rogue lv7 / Monk lv7) / Aura of Protection (Paladin, lv6) | ~38-60 (CON mod ขยับ +3 หลัง ASI แรก) | **จุดเปลี่ยนแรก** — Uncanny Dodge (reaction ลดดาเมจครึ่งนึง 1 ครั้ง/เทิร์น) กลายเป็นมาตรฐานใหม่ที่พบได้ | ยังคงที่ 2 prof เว้น Paladin (Aura of Protection: +CHA mod ให้ save ทุกตัว ตัวเอง+ปาร์ตี้ในระยะ 10ft) — outlier แรงมาก | Evasion (lv7): DEX-save AoE พลาด=โดนครึ่ง, ผ่าน=ไม่โดนเลย — กันดาเมจได้ไม่ใช่กัน condition ตรงๆ แต่ผลลัพธ์เทียบเท่า | ไม่มีเพิ่มจาก peer-standard |
+| 9-12 | Indomitable (Fighter, lv9) / Relentless Rage (Barbarian, lv11) | ~68-90 | Indomitable (reroll save พลาดได้) เริ่มนับเป็น mitigation ทางอ้อม | เหมือนเดิม (2 prof + Paladin aura) | ยังไม่มีเพิ่ม | **จุดเปลี่ยนสำคัญ** — Relentless Rage (lv11, Barbarian): ตก 0 HP ระหว่าง Rage → CON save DC10 ไม่ตาย ฟื้นเป็น 2×level HP แทน (คือ cheat-death จริงจังตัวแรกในตาราง) |
+| 13-16 | Disciplined Survivor (Monk, lv14) | ~98-120 | เหมือนเดิม | **จุดเปลี่ยนใหญ่สุดของแกนนี้** — Disciplined Survivor (lv14, Monk): proficiency **ทุก saving throw** + reroll ด้วย Focus Point เมื่อพลาด — ทำให้ save reliability กระโดดจาก 2 prof ไปเป็นครบทุกตัวในก้าวเดียว | — | Indomitable ใช้ได้ 2 ครั้ง (Fighter, lv13) |
+| 17-20 | Superior Defense (Monk, lv18) | ~129-155 | **เพดานของแกนนี้** — Superior Defense (lv18, Monk): จ่าย Focus Point resist **ทุกชนิดดาเมจยกเว้น force** นาน 1 นาที | Indomitable ใช้ได้ 3 ครั้ง (Fighter, lv17) | เหมือนเดิม | เหมือนเดิม |
+
+**ข้อค้นพบ**:
+1. Survivability **ไม่มีมาตรฐานกลางที่ยุติธรรมข้ามทุกคลาสเหมือนกัน** กับ Control — full caster ส่วนใหญ่ (Wizard, Sorcerer นอกเหนือจากใช้สเปลล์ป้องกันตัวเอง) แทบไม่มี structural mitigation/death-prevention feature จาก base class เลย ฟีเจอร์แกนนี้กระจุกอยู่ที่ Barbarian/Rogue/Monk/Fighter/Paladin เท่านั้น
+2. **Save Reliability เป็นเส้นราบยาว ไม่ใช่กราฟไต่ขึ้นแบบ Damage** — ค้าง 2 prof คงที่แทบทั้งอาชีพ มีแค่ 2 จุดกระโดดใหญ่คือ lv6 (Paladin aura) และ lv14 (Monk all-saves) ซึ่งทั้งคู่ผูกกับคลาสเฉพาะ ไม่ใช่ peer-standard สากล
+3. lv14 (Disciplined Survivor: prof ทุก save) และ lv18 (Superior Defense: resist ทุกดาเมจยกเว้น force) คือ 2 ฟีเจอร์ defensive ที่แรงที่สุดในเกม ทั้งคู่เป็นของ Monk — ควรถูกนับเป็นตัวอย่างเพดานคะแนน (คล้าย Fighter ใน Damage axis) ไม่ใช่มาตรฐานกลาง
+4. Mitigation กับ Death Prevention เชื่อมกับ **resource เฉพาะคลาส** เสมอ (Rage uses, Focus Points, Indomitable uses/Long Rest) — ต่างจาก Support ที่ผูกกับ spell slot สากล ทำให้การเทียบข้ามคลาสต้องดู "ทำได้กี่ครั้ง/วัน" ควบคู่ไปกับ "แรงแค่ไหน" เสมอ
+
+---
+
 ## Next Steps
 
-1. ทำ Anchor Rubric ให้ครบ 5 axis ที่เหลือ (Support, Survivability, Action Economy, Utility, Versatility) — แต่ละ axis ต้องหา "ตัวตัดสิน" ของตัวเอง (เหมือน DPR สำหรับ Damage, severity/stickiness สำหรับ Control) ไม่ใช่ copy pattern เดิมตรงๆ
+1. ทำ Anchor Rubric ให้ครบ 3 axis ที่เหลือ (Action Economy, Utility, Versatility) — แต่ละ axis ต้องหา "ตัวตัดสิน" ของตัวเอง (เหมือน DPR สำหรับ Damage, severity/stickiness สำหรับ Control, proactive/reactive สำหรับ Support, HP-pool+mitigation สำหรับ Survivability) ไม่ใช่ copy pattern เดิมตรงๆ
 2. เริ่มชั้น 1 (30 Class Baseline level-indexed) หลัง Anchor Rubric ครบ 7 axis
 3. เริ่มชั้น 2 (478 Subclass overlay level-indexed) หลังชั้น 1 เสร็จ
