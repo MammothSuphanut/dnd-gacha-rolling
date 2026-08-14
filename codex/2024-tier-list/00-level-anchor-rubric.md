@@ -1,6 +1,6 @@
 # Level-Indexed Tier System — Anchor Rubric (2024)
 
-**สถานะ**: 🚧 WIP / อยู่ในขั้นออกแบบ methodology — **ยังไม่ได้เริ่มนำไปใช้กับ Class Baseline หรือ Subclass ตัวจริงตัวใดเลย** ระบบ [00-scorecard-methodology.md](00-scorecard-methodology.md) (คะแนนภาพรวมตัวเดียวครอบคลุม 1-20 เลเวล) ยังเป็นระบบที่ใช้งานจริงอยู่ **ไม่ถูกแตะต้อง** — ไฟล์นี้คือ groundwork สำหรับระบบใหม่ที่จะแยกคะแนนตามช่วงเลเวล ทำคู่ขนานไว้ก่อน
+**สถานะ**: 🚧 WIP — **Anchor Rubric (ชั้น 0) เสร็จครบ 7/7 axis แล้ว** แต่ **ยังไม่ได้เริ่มนำไปใช้กับ Class Baseline หรือ Subclass ตัวจริงตัวใดเลย** (ชั้น 1/2 ยังไม่เริ่ม) ระบบ [00-scorecard-methodology.md](00-scorecard-methodology.md) (คะแนนภาพรวมตัวเดียวครอบคลุม 1-20 เลเวล) ยังเป็นระบบที่ใช้งานจริงอยู่ **ไม่ถูกแตะต้อง** — ไฟล์นี้คือ groundwork สำหรับระบบใหม่ที่จะแยกคะแนนตามช่วงเลเวล ทำคู่ขนานไว้ก่อน
 
 **วันที่เริ่มออกแบบ**: 2026-08-14
 
@@ -24,15 +24,15 @@
 - **ชั้น 1 (ยังไม่เริ่ม)**: 30 Class Baseline แบบ level-indexed — เทียบกับ Anchor Rubric แต่ละเลเวล
 - **ชั้น 2 (ยังไม่เริ่ม)**: 478 Subclass overlay แบบ level-indexed — เทียบกับ Anchor Rubric เหมือนกัน ไม่ใช่เทียบกับ baseline ของคลาสตัวเองอย่างเดียว
 
-## ความคืบหน้า Anchor Rubric (4/7 axis)
+## ความคืบหน้า Anchor Rubric (7/7 axis — ครบแล้ว)
 
 - [x] Damage
 - [x] Control
 - [x] Support
 - [x] Survivability
-- [ ] Action Economy
-- [ ] Utility
-- [ ] Versatility
+- [x] Action Economy
+- [x] Utility
+- [x] Versatility
 
 ---
 
@@ -140,8 +140,93 @@ Support มีสองสาย mixed กัน ที่มูลค่าจ�
 
 ---
 
-## Next Steps
+## Action Economy Anchor
 
-1. ทำ Anchor Rubric ให้ครบ 3 axis ที่เหลือ (Action Economy, Utility, Versatility) — แต่ละ axis ต้องหา "ตัวตัดสิน" ของตัวเอง (เหมือน DPR สำหรับ Damage, severity/stickiness สำหรับ Control, proactive/reactive สำหรับ Support, HP-pool+mitigation สำหรับ Survivability) ไม่ใช่ copy pattern เดิมตรงๆ
-2. เริ่มชั้น 1 (30 Class Baseline level-indexed) หลัง Anchor Rubric ครบ 7 axis
-3. เริ่มชั้น 2 (478 Subclass overlay level-indexed) หลังชั้น 1 เสร็จ
+**ขอบเขต**: แกนนี้วัด "ได้มูลค่ามากกว่า 1 action + 1 reaction (opportunity attack) มาตรฐานแค่ไหนต่อรอบ" — ครอบคลุม Bonus Action / Reaction / extra action เต็มรูปแบบ / การแปลง resource เป็น action พิเศษ ไม่นับ DPR (อยู่ใน Damage แล้ว) แต่นับ "การบีบมูลค่าให้ได้มากกว่า 1 การกระทำ/เทิร์น"
+
+5 มิติที่ใช้ประเมิน: **Bonus Action Value** (ทำอะไรได้ด้วย bonus action, บ่อยแค่ไหน, ต้นทุนเท่าไหร่) / **Reaction Value** (เกินกว่า opportunity attack ปกติ) / **Extra Action Access** (ได้ action เต็มเพิ่มทั้งเทิร์น — magnitude+frequency) / **Resource-to-Action Conversion** (จ่าย resource แลกบีบ 2 อย่างในเทิร์นเดียว) / **Attack-Action Efficiency** (1 action ได้กี่ attack — Extra Attack แบบ Damage axis แต่มองมุม "ความคุ้มต่อ action" แทน DPR)
+
+ยืนยันจาก `classFeature`/`optionalfeature` จริงในไฟล์ `class-*.json` และ `optionalfeatures.json` (XPHB):
+
+| Lv | Feature อ้างอิง (คลาส) | Bonus Action Value | Reaction Value | Extra Action Access | Resource-to-Action Conversion | Attack-Action Efficiency |
+|---|---|---|---|---|---|---|
+| 1 | — | **ปกติ = ไม่มี** ที่ peer-standard (ยังไม่มี feature ให้ bonus action ทำอะไร) | มีแค่ opportunity attack มาตรฐาน | ไม่มี | ไม่มี | 1 attack/action (มาตรฐาน) |
+| 2 | Cunning Action (Rogue) / Flurry of Blows (Monk) / Action Surge (Fighter) / Metamagic (Sorcerer) | **จุดเปลี่ยนใหญ่ที่สุดของแกนนี้** — Cunning Action (Dash/Disengage/Hide ฟรีเป็น bonus action ไม่จำกัดครั้ง), Flurry of Blows (จ่าย 1 Focus Point แลก 2 unarmed strike เป็น bonus action) | ไม่มีเพิ่ม | **Action Surge** (Fighter): action เต็มเพิ่มอีก 1 ครั้ง/short rest — outlier แรงสุดในตาราง | **Metamagic** (Sorcerer): เลือก option ได้ 2 ตัว รวม Quickened Spell (จ่าย 2 Sorcery Points เปลี่ยนสเปลล์ action→bonus action ได้ แต่ห้าม cast สเปลล์ level 1+ action ซ้ำในเทิร์นเดียวกัน — กติกาจริงจากไฟล์ยืนยันข้อจำกัดนี้) | เหมือนเดิม |
+| 3-4 | Steady Aim (Rogue) / Riposte (Battle Master maneuver, Fighter subclass) | Steady Aim: bonus action แลก advantage โจมตีครั้งถัดไป แต่ต้อง speed=0 (trade-off ชัดเจน) | **Riposte** (Battle Master เท่านั้น): ศัตรู melee พลาดใส่เรา → reaction โจมตีสวนได้ (จ่าย Superiority Die) — subclass-locked ไม่ใช่ peer-standard | ไม่มีเพิ่ม | เหมือนเดิม | เหมือนเดิม |
+| 5-9 | เหมือนเดิม (ไม่มี feature ใหม่ที่ peer-standard) | เหมือนเดิม | เหมือนเดิม | เหมือนเดิม | **Extra Attack** (มาร์เชียลทุกคลาส): 1 action = 2 attacks — จุดเปลี่ยนของมิตินี้ (caster ไม่มีมิตินี้เลยเชิงโครงสร้าง) |
+| 10 | Metamagic (Sorcerer, ชุดที่ 2) | เหมือนเดิม | เหมือนเดิม | เหมือนเดิม | Metamagic options เพิ่มอีก 2 ตัว (breadth ของการแปลง resource กว้างขึ้น) | เหมือนเดิม |
+| 11-16 | Two Extra Attacks (Fighter, lv11) | เหมือนเดิม | เหมือนเดิม | เหมือนเดิม | เหมือนเดิม | Fighter แซงมาตรฐาน 2 attacks → 3 attacks/action (outlier ไม่นับ peer-standard) |
+| 17-20 | Action Surge ครั้งที่ 2 (Fighter) / Metamagic (Sorcerer, ชุดที่ 3) / Three Extra Attacks (Fighter, lv20) | เหมือนเดิม | เหมือนเดิม | **เพดานของแกนนี้** — Fighter ใช้ Action Surge ได้ 2 ครั้ง/short rest | Metamagic options ครบชุดสุดท้าย | Fighter แตะ 4 attacks/action ที่ lv20 (outlier สุดขั้ว) |
+
+**ข้อค้นพบ**:
+1. **lv2 คือจุดเปลี่ยนใหญ่ที่สุดของแกนนี้ข้ามคลาส** — Cunning Action/Flurry of Blows/Action Surge/Metamagic ทั้ง 4 คลาสต่างกันกระจุกที่เลเวลเดียวกันพอดี ต่างจาก Damage(lv5)/Control(lv3-5)/Support(lv1)/Survivability(กระจาย) ที่แต่ละแกนมีจุดเปลี่ยนของตัวเอง
+2. Full caster ได้มูลค่า Action Economy ผ่าน **Metamagic (จ่าย resource)** เป็นหลัก ไม่ใช่ feature ฟรี — sourcery points เป็น resource-gate เหมือน Focus Point/Superiority Die ของแกน Survivability (pattern เดียวกันข้ามแกน: full caster ไม่มีของฟรี ต้องแลก resource เสมอ)
+3. **Reaction Value เป็นมิติที่อ่อนที่สุด** — เกือบทุกคลาสค้างที่ opportunity attack มาตรฐานตลอดอาชีพ ของเสริม (Riposte) ผูกกับ subclass เฉพาะ (Battle Master) ไม่ใช่ base class ใดๆ เลย — ไม่มี peer-standard กลางให้เทียบ ต้องประเมินเป็นรายคลาส/subclass
+4. Attack-Action Efficiency ซ้ำเงื่อนไขกับ Damage axis (Extra Attack lv5, Fighter outlier lv11/20) โดยเจตนา — แต่ตัดสินคนละมุม (Damage วัด "ได้ดาเมจเท่าไหร่" ส่วนแกนนี้วัด "ได้ความคุ้มต่อ 1 action เท่าไหร่") ไม่ถือเป็นการนับซ้ำคะแนน เพราะอยู่คนละ axis ในระบบ 7-axis
+
+---
+
+## Utility Anchor
+
+**ขอบเขต**: แกนนี้วัดการแก้ปัญหานอกคอมแบต (exploration/social/information) — แยกเป็น 3 สายจริง: **Reveal Info** (สเปลล์เปิดเผยข้อมูล), **Solve Problem** (สเปลล์แก้ปัญหาสิ่งแวดล้อม/การเดินทาง), และ **Skill-Check Layer** (ไม่ใช่สเปลล์เลย — Expertise/Jack of All Trades/Reliable Talent) ซึ่งสายที่ 3 นี้สำคัญมากเพราะเป็นช่องทางเดียวที่ non-caster (โดยเฉพาะ Rogue) ได้คะแนนแกนนี้อย่างจริงจัง
+
+5 มิติที่ใช้ประเมิน: **Magnitude** (แก้ปัญหาสมบูรณ์แค่ไหน — ให้ข้อมูลเริ่มต้น vs แก้เบ็ดเสร็จ) / **Breadth** (ครอบคลุมกี่ประเภทปัญหา) / **Reliability** (auto-success ไม่มี save/check vs มีโอกาสพลาด/ถูกต้าน) / **Access Cost** (ritual = free ไม่จำกัดครั้งแต่เสียเวลา vs เสีย spell slot จำกัด/วัน vs class feature ฟรีตลอด) / **Skill-Check Layer** (Expertise ฯลฯ ที่ให้ผลเป็นตัวคูณ proficiency ไม่ใช่สเปลล์)
+
+ยืนยันจาก `classFeature` จริงในไฟล์ `class-*.json` และ spell text จริงใน `spells-xphb.json` (XPHB) — ใช้ band เดียวกับ Control/Support (ผูกกับ spell-slot level 1,3,5,7,9,11,13,15,17) เพื่อให้เทียบข้ามแกนได้ง่าย:
+
+| Lv | Feature/Spell อ้างอิง (slot) | Magnitude | Breadth | Reliability | Access Cost | Skill-Check Layer |
+|---|---|---|---|---|---|---|
+| 1-2 | Detect Magic / Comprehend Languages / Identify (slot1, ทั้งหมด ritual) + Ritual Adept (Wizard, lv1) + Expertise (Rogue lv1) / Expertise+Jack of All Trades (Bard lv2) | ให้ข้อมูลเริ่มต้นเท่านั้น (มีเวทมนตร์ไหม/แปลภาษาไหม/ของนี้คืออะไร) ไม่แก้ปัญหาใหญ่ | แคบ — แต่ละสเปลล์คลุมเรื่องเดียว | **auto-success** ไม่มี save | **ritual = ไม่เสีย slot เลย** เสียแค่เวลา cast +10 นาที (จำกัดนอกคอมแบต) — Ritual Adept ทำให้ Wizard cast ได้แม้ไม่เตรียม | **จุดเปลี่ยนแรก** — Rogue Expertise (×2 skill) / Bard Expertise (×2) + Jack of All Trades (ครึ่ง prof ให้ทุก skill ที่ไม่ชำนาญ) |
+| 3-4 | Knock (slot2) | แก้ปัญหาเฉพาะจุดเบ็ดเสร็จ (ล็อก/โซ่ใดๆ เปิด/พังทันที ไม่ต้องทอย check) | แคบมาก (เฉพาะของถูกล็อก) | auto-success | เสีย slot จริง จำกัดครั้ง/วัน | เหมือนเดิม |
+| 5-6 | Clairvoyance / Tongues / Water Breathing (slot3) + Expertise รอบ 2 (Rogue, lv6) | Water Breathing แก้ปัญหาสิ่งแวดล้อมเบ็ดเสร็จ (หายใจใต้น้ำทั้งปาร์ตี้ 24ชม.), Tongues แก้ปัญหาภาษาทุกภาษา | กว้างขึ้น (ครอบคลุมทั้งปาร์ตี้) | auto-success | เสีย slot | Rogue สะสม Expertise ครบ 4 skill — นำหน้าเรื่อง skill utility |
+| 7-8 | Divination (slot4) + Reliable Talent (Rogue, lv7) | Divination ถามคำถามได้คำตอบจริงจาก deity | เฉพาะทาง (หาข้อมูล/หาเป้าหมาย) | Divination มีโอกาสคำตอบกำกวม/ไม่สมบูรณ์ — **ไม่ auto-success 100%** ตัวแรกในตาราง | slot, ปกติ 1/long rest | **Reliable Talent** (lv7, Rogue): d20 ที่ทอยได้ ≤9 ในสกิล/tool ที่ชำนาญ นับเป็น 10 — กันพลาดขั้นต่ำแทบทุก check |
+| 9-10 | Legend Lore / Scrying / Teleportation Circle (slot5) + Expertise รอบ 2 (Bard lv9) / Expertise (Ranger lv9) | **จุดเปลี่ยนใหญ่ที่สุดของแกนนี้** — Legend Lore รู้ประวัติ/จุดสำคัญของสิ่งใดก็ได้แทบไม่จำกัด, Teleportation Circle ข้ามทวีปได้ทันที (ต้องมีวงกลมปลายทาง) | กว้างมาก — ครอบคลุมข้อมูล/เดินทาง/สอดแนม 3 ปัญหาต่างกันพร้อมกัน | Legend Lore auto-success, Scrying มี WIS save ต้านได้ (ไม่ auto เสมอไป) | slot | Bard/Ranger ตามทัน Rogue ด้วย Expertise รอบใหม่ |
+| 11-12 | True Seeing (slot6) | มองทะลุ illusion/invisible/shapechange/Ethereal ทั้งหมด 120ft นาน 1ชม. — แก้ปัญหา "มองไม่เห็นความจริง" เบ็ดเสร็จ | กว้าง (คลุมหลายประเภทการซ่อนตัวพร้อมกัน) | auto-success | slot | คงที่ |
+| 13-14 | Teleport / Plane Shift (slot7) | **เพดานการเดินทาง** — ไปไหนก็ได้บนระนาบเดียวกันแทบไม่จำกัดระยะ, Plane Shift ข้ามมิติได้ทั้งปาร์ตี้ | กว้างที่สุดในหมวดเดินทาง | Teleport มี % โอกาสคลาดเคลื่อนถ้าไม่คุ้นสถานที่ปลายทาง (ไม่ auto สมบูรณ์) | slot | คงที่ |
+| 15-16 | Mind Blank (slot8) | ป้องกัน divination/mind-reading/charm ทั้งหมด 24ชม. — utility เชิงป้องกันข้อมูล ไม่ใช่แก้ปัญหาเดินทาง/หาข้อมูล | แคบ (จุดประสงค์เดียว) แต่สมบูรณ์แบบ (กันได้แม้ effect ระดับ wish) | auto-success (ตัวเองยินยอมรับผล) | slot | คงที่ |
+| 17-20 | Wish (slot9) | **เพดานสูงสุดทั้งเกม** — จำลองสเปลล์ระดับ8ลงมาได้ทุกตัวไม่มีเงื่อนไข หรือขอ effect กำหนดเอง (DM adjudicate) | **ไม่จำกัด** — สเปลล์เดียวในเกมที่ breadth ไม่มีขอบเขต | การขอ effect กำหนดเองมีความเสี่ยง (โอกาสเสีย stress จน cast Wish ไม่ได้อีก) — auto-success เฉพาะกรณี duplicate สเปลล์ระดับ8ลงมา | 1/long rest เท่านั้น (ทุ่มสุดตัว) | คงที่ |
+
+**ข้อค้นพบ**:
+1. Utility แยกเป็น **3 สายจริง** (Reveal Info / Solve Problem / Skill-Check Layer) ต่างจาก 5 axis ก่อนหน้าที่มีสายเดียวเด่นชัด — non-caster (โดยเฉพาะ Rogue) พึ่งสายที่ 3 เกือบทั้งหมด ขณะ full caster ได้ทั้ง 3 สายพร้อมกัน
+2. **Rogue เป็น "Utility specialist ที่ไม่มีสเปลล์" ตัวจริง** — ได้ Expertise 2 รอบ (lv1, lv6) + Reliable Talent (lv7) นำหน้า full caster ไปก่อน จน Bard/Ranger เพิ่งตามทันด้วย Expertise รอบ 2 ที่ lv9 — พิสูจน์ว่า skill-based utility ไม่ได้ด้อยกว่า spell-based เชิงโครงสร้าง เป็นแค่รูปแบบต่างกัน (deterministic bonus ทุก check vs สเปลล์ทรงพลังเฉพาะจุด)
+3. lv9-10 (Legend Lore/Scrying/Teleportation Circle) คือจุดเปลี่ยนใหญ่สุดของแกนนี้ — full-caster utility กว้างสุดหลายมิติพร้อมกัน คล้ายที่ Control/Support ก็มีจุดพีคช่วง mid-tier เหมือนกัน
+4. **Ritual tag คือมิติ Access Cost ที่ไม่มีในแกนอื่น** — สเปลล์ tier1 (Detect Magic ฯลฯ) cast ได้ไม่จำกัดครั้ง/วันถ้ามีเวลา 10 นาที ไม่เคย "หมด" เหมือนสเปลล์ปกติ — ไม่มี "ritual CC" หรือ "ritual heal" เทียบเท่าในแกน Control/Support เลย
+
+---
+
+## Versatility Anchor
+
+**ขอบเขต**: ระบบเดิม ([00-scorecard-methodology.md](00-scorecard-methodology.md)) นิยาม Versatility ว่า "ใช้ได้ทุกสถานการณ์/ทุกช่วงเลเวล ไม่ผูก build ตายตัว" — ในระบบ level-indexed ส่วน "ทุกช่วงเลเวล" ถูกจัดการโดยโครงสร้าง 20 แถวอยู่แล้ว เหลือแค่ "ทุกสถานการณ์ ณ เลเวลนั้นๆ" ให้วัด: **ยืดหยุ่นสลับแผนได้แค่ไหนโดยไม่ต้องเปลี่ยน build/multiclass**
+
+5 มิติที่ใช้ประเมิน: **Loadout Flexibility** (สลับสเปลล์ที่เตรียมได้บ่อยแค่ไหน) / **Resource Fungibility** (1 resource pool ใช้ซื้อผลลัพธ์ต่างประเภทกันได้ไหม) / **Cross-Axis Coverage** (kit ครอบคลุมกี่ axis จาก 6 axis อื่นพร้อมกัน ณ เลเวลนั้น — อ้างอิงย้อนไปยัง milestone ที่บันทึกไว้แล้วในแต่ละ Anchor ด้านบน) / **Target-Type Coverage** (มีทั้ง single-target และ AoE ให้เลือกในคราวเดียวไหม) / **Adaptability Under Pressure** (ปรับแผนกลางคอมแบตได้ทันทีไหม หรือทำ routine เดิมซ้ำทุกเทิร์น)
+
+ยืนยันจาก `classFeature` จริงในไฟล์ `class-*.json` (XPHB) — โดยเฉพาะ **มิติ Loadout Flexibility ยืนยันจาก text "Changing Your Prepared Spells" ของทุกคลาส** พบ 2024 เปลี่ยนศัพท์ทุกคลาสเป็น "Prepared Spells" เหมือนกันหมด แต่กลไกจริงยังต่างกัน 3 ระดับ:
+
+| ระดับ | คลาส | กลไกจริง |
+|---|---|---|
+| **สูง** — สลับได้เต็มทุก Long Rest | Wizard, Cleric, Druid | "เปลี่ยนสเปลล์ในลิสต์กี่ตัวก็ได้" ทุกครั้งที่จบ Long Rest |
+| **กลาง** — สลับ 1 ตัวได้ทุก Long Rest | Paladin, Ranger | "เปลี่ยนได้ 1 สเปลล์" แต่ทำได้ทุกครั้งที่จบ Long Rest |
+| **ต่ำ** — สลับ 1 ตัวได้เฉพาะตอนเลเวลอัพ | Sorcerer, Bard, Warlock | "เปลี่ยนได้ 1 สเปลล์" เฉพาะตอนได้เลเวลใหม่เท่านั้น |
+
+| Lv | Feature/Mechanic อ้างอิง | Loadout Flexibility | Resource Fungibility | Cross-Axis Coverage | Target-Type Coverage | Adaptability Under Pressure |
+|---|---|---|---|---|---|---|
+| 1 | Prepared Spells (ทุก full caster) | **กำหนด tier ตั้งแต่ lv1 คงที่ตลอดอาชีพ** (ดูตาราง 3 ระดับด้านบน) — มาร์เชียลไม่มีสเปลล์ = N/A ไม่ใช่คะแนนต่ำสุด | ยังไม่มี (Focus Points/Sorcery Points/Channel Divinity ทั้งหมดเริ่ม lv2) | peer-standard ~1-2 axis (Damage หลัก + Support เล็กน้อยถ้ามี cantrip) | full caster มีทั้ง single (Fire Bolt) และ AoE (Burning Hands, slot1) ตั้งแต่ lv1; มาร์เชียล single-target ล้วน | full caster เลือกสเปลล์ต่อเทิร์นได้อิสระ; มาร์เชียลทำ attack routine เดิมซ้ำทุกเทิร์น |
+| 2 | Monk's Focus (Monk) / Font of Magic (Sorcerer) / Channel Divinity (Cleric) | เหมือนเดิม (คงที่) | **จุดเปลี่ยนใหญ่สุดของแกนนี้ คู่ขนานกับ lv2 ของ Action Economy** — Focus Point เดียวซื้อ Flurry of Blows(Damage)/Patient Defense(Survivability)/Step of the Wind(Utility) ได้; Sorcery Point แปลงเป็น spell slot ได้ทั้งสองทาง; Channel Divinity เลือก Divine Spark(Damage) หรือ Turn Undead(Control) จาก resource เดียว | กระโดดขึ้นทันที (1 resource → หลาย axis พร้อมกัน ตามตัวอย่างซ้าย) | เหมือนเดิม | เพิ่มขึ้นตามจำนวนตัวเลือก resource ใหม่ |
+| 3-4 | subclass gate (ส่วนใหญ่) | เหมือนเดิม | เมนูคงที่จาก lv2 (จำนวน point เพิ่ม แต่ตัวเลือกเท่าเดิมจนถึง milestone ถัดไป) | เหมือนเดิม | เหมือนเดิม | เหมือนเดิม |
+| 5-10 | Extra Attack (มาร์เชียล) / slot3 AoE (caster) / Empowered Strikes (Monk, lv6) | เหมือนเดิม | เมนูขยาย (Channel Divinity ได้ตัวเลือกใหม่ตามเลเวล, Monk ผูก feature ใหม่กับ Focus Point เดิม) | กว้างขึ้นตามที่แต่ละ axis ปลดล็อกฟีเจอร์ใหม่ (Damage lv5 Extra Attack, Control lv5-6 Hypnotic Pattern, Support lv5-8 Haste/Death Ward) — full caster เริ่มมีของครบเกือบทุก axis พร้อมกัน | caster ได้ AoE ใหญ่ขึ้น (Fireball-tier); มาร์เชียลยังคง single-target เว้นมี subclass เสริม | full caster เลือก option ได้กว้างขึ้นตามจำนวน slot/point |
+| 11-16 | Metamagic รอบ 2 (Sorcerer, lv10) / Self-Restoration+Deflect Energy (Monk, lv10/13) | เหมือนเดิม | เมนูเพิ่มอีกรอบ | full caster ครอบคลุมเกือบครบ 5-6 axis พร้อมกัน (Damage/Control/Support/Survivability/Utility ล้วนมีของใช้แล้ว) | เหมือนเดิม (กว้างสุดแล้วสำหรับ caster) | เหมือนเดิม (สูงต่อเนื่อง) |
+| 17-20 | Wish (slot9) / Superior Defense (Monk, lv18) | เหมือนเดิม | **เพดานของแกนนี้** — Wish จำลองสเปลล์ระดับ8ลงมาได้ทุกตัว = resource ที่ fungible ที่สุดในเกม | full caster ครบเกือบทุก axis พร้อมกันในวันเดียว | เหมือนเดิม | **สูงสุด** — Wish ปรับใช้ได้แทบทุกสถานการณ์ที่จินตนาการได้ |
+
+**ข้อค้นพบ**:
+1. **Loadout Flexibility เป็นมิติเดียวในทั้ง 7 axis ที่คงที่ตายตัวตั้งแต่ lv1 ตลอดอาชีพ ไม่มี milestone เปลี่ยนแปลงเลย** — ต่างจากทุกมิติอื่นที่ไต่ระดับไปเรื่อยๆ เป็นตัวบ่งชี้ "สไตล์ของคลาส" มากกว่า "พลังที่เพิ่มขึ้นตามเลเวล" — ยืนยันพบ 3 ระดับจริงจาก text "Changing Your Prepared Spells": full-swap-per-Long-Rest (Wizard/Cleric/Druid) / partial-swap-per-Long-Rest (Paladin/Ranger) / partial-swap-per-level-up (Sorcerer/Bard/Warlock)
+2. lv2 คือจุดเปลี่ยนใหญ่สุดของแกนนี้เหมือน Action Economy แต่คนละประเด็น — Action Economy วัด "ได้ action เพิ่มเท่าไหร่", Versatility วัด "1 resource ใช้ได้กี่แบบ" (fungibility ไม่ใช่ปริมาณ)
+3. **Versatility เป็น axis เดียวที่อ้างอิงย้อนไปยัง 5 axis ก่อนหน้าโดยตรง** ผ่านมิติ Cross-Axis Coverage — เหตุผลที่ต้องทำเป็น axis สุดท้ายตามลำดับที่วางแผนไว้ เพราะต้องมี anchor อื่นเสร็จก่อนถึงจะนับ coverage ได้จริง
+4. มาร์เชียลล้วน (ไม่มีสเปลล์) **ไม่มีมิติ Loadout Flexibility และ Resource Fungibility เลยเชิงโครงสร้าง** (ต้องบันทึกเป็น N/A ไม่ใช่คะแนนต่ำสุด) เว้นแต่มี subclass เสริมทรัพยากร fungible ของตัวเอง (เช่น Battle Master's Superiority Dice) — ประเด็นสำคัญที่ต้องระวังตอนให้คะแนนจริงใน Layer 1/2 อย่าปนกับ "มีมิติแต่คะแนนต่ำ"
+
+---
+
+## Next Steps — Anchor Rubric ครบ 7/7 axis แล้ว
+
+1. ✅ Anchor Rubric (ชั้น 0) เสร็จสมบูรณ์ทั้ง 7 axis: Damage, Control, Support, Survivability, Action Economy, Utility, Versatility — แต่ละ axis มี "ตัวตัดสิน" เฉพาะของตัวเอง ไม่ใช่ copy pattern เดียวกันซ้ำ และยืนยันจากไฟล์ข้อมูลจริงทุกจุดสำคัญ
+2. เริ่มชั้น 1 (30 Class Baseline level-indexed) — ยังไม่เริ่ม รอ user ยืนยันก่อนเริ่มงานจริง เพราะเป็น scope ใหญ่ (30 คลาส × 20 เลเวล × 7 axis)
+3. เริ่มชั้น 2 (478 Subclass overlay level-indexed) — หลังชั้น 1 เสร็จ
