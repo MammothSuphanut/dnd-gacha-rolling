@@ -13,7 +13,7 @@
 ## สารบัญ Chapter → EP
 - [Chapter 1: Crystal Labyrinth](./CH01-crystal-labyrinth.md) `Level 16` — [EP01: Crystal Labyrinth (Level 16)](<./EP01 - Crystal Labyrinth (Level 16).md>) ✅
 - [Chapter 2: Seadeeps](./CH02-seadeeps.md) `Level 17` — [EP02: Seadeeps, Part 1 - Alterdeep](<./EP02 - Seadeeps, Part 1 - Alterdeep.md>) ✅ · [EP03: Seadeeps, Part 2 - The Illithid Colony](<./EP03 - Seadeeps, Part 2 - The Illithid Colony.md>) ✅
-- Chapter 3: Vanrakdoom `Level 18` — ยังไม่เริ่ม
+- [Chapter 3: Vanrakdoom](./CH03-vanrakdoom.md) `Level 18` — [EP04: Vanrakdoom](<./EP04 - Vanrakdoom.md>) ✅ — **ปิด Act 8**
 
 ## หมายเหตุโครงสร้าง
 
@@ -23,6 +23,7 @@
 - **จุดเชื่อมกับ Level 4**: Infernexus มังกรแดงหนุ่ม ขอให้ปาร์ตี้พาตัวไปสร้างรังที่ Twisted Caverns (L4) โดยเฉพาะ ถ้าตกลง เขาเป็นพันธมิตรชั่วคราว 1d10 วัน
 - **ปมส่งต่อ Level 17 ที่ปิดท้าย EP นี้**: Send-Off เป็น "กับดักหลอก" — เมื่อปาร์ตี้เดินผ่านประตูกลับ Toril จริงๆ แล้วพวกเขาถูกลวงเข้าสู่ **"The Matrix"** ของ Extremiton (ulitharid หัวหน้าอาณานิคม mind flayer ที่ Seadeeps) ทันที ไม่ได้กลับ Waterdeep จริง — Halaster ร่วมมือด้วย wish spell ทำให้หลับและเข้าสู่ "Alterdeep" ภาพลวงตา (payoff เต็มรูปแบบอยู่ใน Level 17) — EP นี้ปิดท้ายด้วย Send-Off แบบมาตรฐานที่ผู้เล่นเชื่อว่ากลับถึง Yawning Portal จริง เพื่อรักษาเซอร์ไพรส์ตามกฎ Companion Quick Notes
 - **Level 17 แตกเป็น 2 ไฟล์ EP** (EP02 Alterdeep / EP03 The Illithid Colony) — จุดทดสอบเกณฑ์แบ่ง EP ที่ชัดเจนที่สุดเท่าที่เจอมา เพราะ Companion เปลี่ยน "Alterdeep" ให้เป็นฉาก in-town vignette เต็มรูปแบบ (คนละโหมดการเล่นกับดันเจี้ยนสำรวจ) พร้อมปม "หนีออกจาก The Matrix" มีตัวเลือกยาแดง/น้ำเงินและไคลแมกซ์ "Battle of the Yawning Portal" — ดูรายละเอียดเต็มที่ [CH02-seadeeps.md](./CH02-seadeeps.md)
+- **Level 18 (Vanrakdoom) ยังคงเป็น 1 ไฟล์ EP** แม้จะมี 33 พื้นที่ — ป่า "Deadwood" ที่ Companion เพิ่มเข้ามาเป็นด่านนำก่อนเข้าดันเจี้ยนจริงยังคงเป็นการสำรวจ/เดินทางแบบเดียวกับดันเจี้ยนอื่น (เทียบเคียง Wyllowwood ของ Level 5) ไม่ใช่เนื้อหาคนละประเภทแบบ Alterdeep — หัวใจของ EP คือเควสต์ "Save the Dragon" ไถ่บาปมังกรเงามืด Umbraxakar คู่ขนานกับการปราบ Keresta Delvingstone หัวหน้าลัทธิ Shar — **EP นี้ปิด Act 8 อย่างสมบูรณ์** ดูรายละเอียดเต็มที่ [CH03-vanrakdoom.md](./CH03-vanrakdoom.md)
 
 ---
 [← ภาพรวม](../00-overview.md)

@@ -127,7 +127,11 @@
 - [x] **EP03: Seadeeps, Part 2 - The Illithid Colony** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 20 พื้นที่หลัก + sub-area (Tunnel Plexus ถึง River Branches) รวม Qualith Door Locks framework, สงคราม githyanki (Yaveklar vs. Lashiir) vs. mind flayer colony ของ Extremiton, neothelid ที่ถูกขังในพื้นที่ 8, Detention Facility พื้นที่ 10 (Ishan Toru/Ahpok ผู้มี intellect devourer สิง/Glorz), Dynamo พื้นที่ 12 เต็มรูปแบบ (Control Room 12g เผชิญหน้า Extremiton แบบแยกสองทางตามผลของ EP02), Psipod Nexus พื้นที่ 14-15 (รายชื่อเหยื่อ 9 คนครบ), Halaster's Gate 3 บานยืนยันครอสเรฟตรงกับตารางกลางทุกบาน (ไป L14/L15/L19 — ทั้งหมดเคยถูกบันทึกไว้ล่วงหน้าแล้วตอนเขียน L14/L15) ปิดท้ายด้วย Send-Off คู่ ปูทาง Vanrakdoom (L18) เป็นรังลิช
 - [x] **Level 17 แตกเป็น 2 ไฟล์ EP** (แบบเดียวกับ L9's Dweomercore/L15's Obstacle Course) — จุดทดสอบเกณฑ์แบ่ง EP ที่ชัดเจนที่สุดเท่าที่เจอมา เพราะ Companion เปลี่ยน "Alterdeep" จาก sidebar สั้นๆ ใน WDMM ให้กลายเป็นฉาก in-town vignette เต็มรูปแบบคนละโหมดการเล่นกับดันเจี้ยนสำรวจปกติจริงๆ (ปม escape-the-Matrix พร้อมตัวเลือกแยกทาง, ไคลแมกซ์ Battle of the Yawning Portal) — ลำดับการสำรวจ**กลับด้าน**จากปกติ (เริ่มจากข้างในฐานทัพออกสู่ข้างนอก) เพราะปาร์ตี้ถูกส่งเข้า psipod ตั้งแต่ต้น Level — ดูรายละเอียดใน `CH02-seadeeps.md`
 
-**🎉 Act 8 Chapter 1-2 (Level 16-17) เสร็จสมบูรณ์ ณ 2026-08-15** — เหลือ Chapter 3 (Level 18: Vanrakdoom) ปิด Act
+- [x] **CH03-vanrakdoom.md** สร้างแล้ว (Quick Notes, Previously on DotMM, หมายเหตุ Deadwood ไม่ใช่เนื้อหาคนละประเภทแบบ Alterdeep, หมายเหตุ Portia ถูกย้ายที่, หมายเหตุไม่มี Send-Off มาตรฐาน)
+- [x] **EP04: Vanrakdoom (Level 18)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 33 พื้นที่หลัก + sub-area (Entrance ถึง Dragon's Hoard รวม 7a-c/12a-d/13a-c/25a-b/28a-c/30a-b) รวมปูมหลังเต็มรูปแบบของ Lord Vanrak Moonstar (death knight ผู้สำนึกผิดทำลายตัวเองด้วย sun blade ปี 1436 DR), เควสต์ **"Save the Dragon"** ไถ่บาปมังกรเงามืด Umbraxakar/Glyster ด้วยของที่ระลึก 4 ชิ้น (แหวนปะการัง พื้นที่ 5 / sun blade Scintilmorn พื้นที่ 8 / mithral chain shirt พื้นที่ 15 / แตรดวาร์ฟ พื้นที่ 17), ระบบ Dragon's Vision 7 ฉากเรียงลำดับเวลาที่พบไม่เรียงจริงระหว่างสำรวจ, พื้นที่ 19-33 จมอยู่ใน Shadowfell ถาวร, Companion เพิ่ม **"Through the Deadwood"** ป่าใต้ดินก่อนเข้าดันเจี้ยนจริง (ต้นแบบของ Wyllowwood) พร้อม Portia Dzuth เป็น quest giver ที่ถูกย้ายจากพื้นที่ 25b มาไว้ที่นี่, ทีมล่า cultist นำโดย vampire spawn Hraskal, บอสสองตัวยากที่สุดในแคมเปญ (Keresta Delvingstone พื้นที่ 26 พร้อม Tactics เต็มรูปแบบจาก Companion, Umbraxakar พื้นที่ 32 พร้อมบทเล่น Roleplaying และไคลแมกซ์ Dragon Redeemed), Halaster's Gate 2 บานยืนยันครอสเรฟถูกต้อง (Gate #15 ↔ L6 พื้นที่ 47a, Gate #28 ↔ L15 พื้นที่ 30a), ปิดท้ายด้วยปมปริศนา "A.M." (Artor Morlin บารอนแห่งเลือด) และ Send-Off คู่ที่ปรับโทนตามต้นฉบับ (ไม่มีคำอำลามาตรฐาน มีแต่ความเงียบ) — **EP นี้ปิด Act 8 สมบูรณ์**
+- [x] **Level 18 ยังคงเป็น 1 ไฟล์ EP** แม้มี 33 พื้นที่ — เพราะ Deadwood ยังเป็นการสำรวจ/เดินทางแบบเดียวกับดันเจี้ยนอื่น (เทียบเคียง Wyllowwood ของ L5) ไม่ใช่เนื้อหาคนละประเภทแบบ Alterdeep — ดูรายละเอียดใน `CH03-vanrakdoom.md`
+
+**🎉 Act 8: Crystal & Sea แปลครบสมบูรณ์ทั้ง Act แล้ว ณ 2026-08-15** — Level 16-17-18 เต็มรูปแบบ (4 ไฟล์ EP) ปิดฉากด้วยการไถ่บาปมังกรเงามืดและปมปริศนา Baron of Blood ต่อไปคือ **Act 9: The Deepest Halls** (Level 19-21)
 
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
@@ -140,8 +144,8 @@
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
-| Crystal & Sea | Level 16-18 | 17-18 | 🔄 กำลังทำ (Act 8, EP01-03 เสร็จแล้ว — Level 18 ต่อไป) |
-| The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
+| Crystal & Sea | Level 16-18 | 17-18 | ✅ ครบ (Act 8, EP01-04) |
+| The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว — ต่อไป |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
 
 ทุกห้องของ WDMM หลักได้ full room breakdown เสมอ (ไม่ตัดเพื่อความสั้น) — ใช้แนวทางเดียวกับ EP1 ของ Act 1 นี้เป็นมาตรฐานความละเอียด, Companion (Quick Notes/Before the Descent/Random Encounters/Areas of Note/Epilogue) ผสานเข้าแต่ละชั้นตามที่ระบุใน [99-notes.md](./99-notes.md), motif "Halaster's Game" ใช้ต่อเนื่องทุกชั้น
