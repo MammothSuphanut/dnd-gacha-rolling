@@ -106,6 +106,14 @@
 
 **Level 14 ยังคงเป็น 1 ไฟล์ EP** แม้ใหญ่ที่สุดในแคมเปญจนถึงตอนนี้ (WDMM 111,713 ตัวอักษร, 41 พื้นที่หลัก) เพราะกลไก WMD นับถอยหลังครอบคลุมทั้งชั้นยังเกิดในดันเจี้ยนเดียวกัน ไม่ย้ายสถานที่จริง (เทียบเคียง Level 6's full-level "Halaster's Game" lockdown) — ยืนยัน **Arcturia เป็นลิชจริง** ตามปมที่ Level 13's Host's Send-Off ทิ้งไว้ — ดูรายละเอียดใน `00-act-outline.md`
 
+- [x] **CH03-obstacle-course.md** สร้างแล้ว (Quick Notes, Previously on DotMM, ตารางประตูเวท 3 บาน, หมายเหตุแตก 2 EP + หมายเหตุปิด Act)
+- [x] **EP03: The Obstacle Course, Part 1 - Netherskull's Gauntlet (Level 15)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 40 พื้นที่หลัก + sub-area (On Your Mark! Get Set! Go! ถึง Netherskull's Chasm) รวมกับดักที่ใช้ซ้ำทั่วชั้น (Covered Pits, Teleport Traps, Halaster's Play-by-Play) และตัวแปร Companion **"Halaster's Game: Victory or Death"** (กุญแจกระดูกย้ายไปอยู่กับ Netherskull ประตู L15→L16 ล็อกจนกว่าจะฆ่ามันหรือขโมยกุญแจ), NPC เด่น (Netherskull the Death Tyrant บอสประจำชั้น, Fidelio's Ghost อัศวิน Tyr หมกมุ่นอยากฆ่า Netherskull, Elvilac/Lorlynn Zmirth ดรอว์ฝาแฝด, Yrlakka ผู้นำ githzerai zerth สาย Sha'sal Khou, Zorak Lightdrinker ดวาร์ฟแวมไพร์ถูก geas บังคับ, Thwad Underbrew อดีตแชมเปี้ยนที่กลายเป็นเพชฌฆาตของ Halaster, Kavil Mereshanter นักเขียนชีวประวัติของ Netherskull, Halastron callback ทางเลือกจาก Level 2), Special Event "I'm Your Biggest Fan", Halaster's Gate 3 บาน (ไป L17/L18/L20 — ชั้นแรกที่มีประตูออกไปยังชั้นที่ยังไม่เคยเขียนถึง 3 บานพร้อมกัน ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข)
+- [x] **EP04: The Obstacle Course, Part 2 - Mecha-Halaster's March** แปล/ขยายเป็น journal เต็มแล้ว — payoff ของปม demiplane 3 เดือนจาก Level 14's Send-Off ปาร์ตี้ถูกส่งขึ้นสู่กำแพงเมือง Waterdeep ต่อสู้กับ **Mecha-Halaster** (WHOOP-ASS tactics, Magic Missile Gatling Gun, Stonecloak/quadrone minions) ก่อนได้รับรางวัลจากเมืองและถูกเรียกตัวกลับ Undermountain ภายใน 1 สัปดาห์ (Halaster โกหกว่าจะให้ 2 สัปดาห์) ปิดท้ายด้วย Send-Off คู่ (Standard + Host's) **ปิด Act 7 สมบูรณ์**
+
+**Level 15 (Obstacle Course) แตกเป็น 2 ไฟล์ EP** (แบบเดียวกับ Level 9's Skullport/Dweomercore split) เพราะ Mecha-Halaster's March ย้ายฉากออกจาก Undermountain ไปกำแพงเมือง Waterdeep เต็มรูปแบบ ต่างจากกลไกครอบทั้งชั้นแบบ L6/L10/L14 ที่ยังอยู่ในดันเจี้ยนเดิม — Level 15 เป็นไฟล์ WDMM เดี่ยวใหญ่ที่สุดเท่าที่เจอมา (135,725 ตัวอักษร) — ดูรายละเอียดใน `00-act-outline.md`
+
+**🎉 Act 7 (Graveyard & Ruin) แปลครบสมบูรณ์ทั้ง 4 ไฟล์ EP แล้ว ณ 2026-08-15** — Level 13-14-15 เต็มรูปแบบ ปิดฉากด้วยศึก Mecha-Halaster ที่ Waterdeep ต่อไปคือ **Act 8: Crystal & Sea** (Level 16-18) ซึ่งมี hook เปิดวางไว้แล้วจากกลุ่ม githzerai ที่ Level 15 (สงคราม githyanki vs. mind flayer ที่ Crystal Labyrinth/Seadeeps)
+
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
@@ -116,8 +124,8 @@
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
-| Graveyard & Ruin | Level 13-15 | 15-17 | 🔄 L13-L14 เสร็จ, L15 รอคิว |
-| Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
+| Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
+| Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว — ถัดไป |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
 
