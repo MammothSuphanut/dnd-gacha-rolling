@@ -114,6 +114,21 @@
 
 **🎉 Act 7 (Graveyard & Ruin) แปลครบสมบูรณ์ทั้ง 4 ไฟล์ EP แล้ว ณ 2026-08-15** — Level 13-14-15 เต็มรูปแบบ ปิดฉากด้วยศึก Mecha-Halaster ที่ Waterdeep ต่อไปคือ **Act 8: Crystal & Sea** (Level 16-18) ซึ่งมี hook เปิดวางไว้แล้วจากกลุ่ม githzerai ที่ Level 15 (สงคราม githyanki vs. mind flayer ที่ Crystal Labyrinth/Seadeeps)
 
+## Act 8: Crystal & Sea — เริ่มแล้ว 2026-08-15
+
+- [x] **ACT08-crystal-and-sea/** สร้างโฟลเดอร์ใหม่แล้ว พร้อม `00-act-outline.md` + `CH01-crystal-labyrinth.md` (Quick Notes, Previously on DotMM, หมายเหตุไม่มี Halaster's Gate มาตรฐานในชั้นนี้, หมายเหตุเปลี่ยนระนาบแต่ยังนับเป็น 1 EP)
+- [x] **EP01: Crystal Labyrinth (Level 16)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 32 พื้นที่ (Entry Hall ถึง Graduation Chamber รวมทุก sub-area — 11 พื้นที่ใน Undermountain เดิม + 21 พื้นที่บนดาวเคราะห์น้อย Stardock) รวมกฎเฉพาะของ Stardock (ไร้เขตจำกัดเวทของ Halaster, กรอบอากาศ, ระนาบแรงโน้มถ่วง, ไร้ทิศ), Special Event **"Ashtyrranthor's Hunt"** เต็ม 3 ระยะ (The Brood Mother → Toril Below and Death Above → Race to Toril), NPC เด่น (Al'chaia ผู้บัญชาการโหด, Ashtyrranthor มังกรแดงบอสตัวจริง, Urlon มือขวาวางแผนก่อกบฏ, Ezria githzerai เชลยจาก L15, Infernexus มังกรหนุ่มขอไปสร้างรังที่ L4, Jerath อัศวินตาบอดตัวตลก, Marquox/Tel'zact/Yeluit mind flayer เชลย), ปิดท้ายด้วย Send-Off คู่ที่เป็น "กับดักหลอก" โดยเจตนา — ปูทาง **"The Matrix"** ของ Extremiton ที่จะเฉลยเต็มรูปแบบที่ Level 17
+- [x] **ไม่มี Halaster's Gate มาตรฐานในชั้นนี้** — ประตู Stardock Gate (พื้นที่ 11 ↔ 12a) เป็นกลไกเฉพาะที่ ใช้ Stardock rod ไม่ใช่ elder rune แบบ Gate ทั่วไปในตารางกลาง
+
+**Level 16 ยังคงเป็น 1 ไฟล์ EP** แม้จะมีการ "เปลี่ยนระนาบ" จากดันเจี้ยนหินสู่ดาวเคราะห์น้อยกลางอวกาศ (Stardock) — ทดสอบเกณฑ์ตัดสินใจแบบใหม่ (เปลี่ยนระนาบ ไม่ใช่แค่สถานที่) แต่สรุปว่ายังเข้าเกณฑ์เดิม เพราะ Stardock ยังคงเป็นส่วนต่อขยายของดันเจี้ยนเดียวกันเชิงกลไก ผูกด้วยประตู Stardock rod ทางเดียว ไม่มีเนื้อเรื่องแยกขาดแบบ Tournament ของ L9 หรือ Mecha-Halaster's March ของ L15 — ดูรายละเอียดใน `00-act-outline.md`
+
+- [x] **CH02-seadeeps.md** สร้างแล้ว (Quick Notes, Previously on DotMM, ลำดับกลับด้าน, หมายเหตุการแบ่ง 2 EP)
+- [x] **EP02: Seadeeps, Part 1 - Alterdeep** แปล/ขยายเป็น journal เต็มแล้ว — ครอบคลุมฉาก in-town vignette เต็มรูปแบบ (ตื่นที่ Yawning Portal จำลอง, Flaws of the Simulation, Hints & Tidbits, ฉากย่อย "Mugged"/"ภาษาแปดเปื้อน") ก่อนเข้าสู่ปม "หนีออกจาก The Matrix" — Yrlakka และ githzerai zerth แทรกซึมเข้ามาเสนอตัวเลือกยาแดง/ยาน้ำเงิน (ยกบทพูดจาก The Matrix ตรงๆ), ไคลแมกซ์ "The Battle of the Yawning Portal" เผชิญหน้า Extremiton ในภาพจำลอง, Aftermath อธิบายผลถ้า Extremiton ตายในนี้ (ตายจริงในโลกจริงทันที + neothelid มีโอกาสหลุดจากคุก)
+- [x] **EP03: Seadeeps, Part 2 - The Illithid Colony** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 20 พื้นที่หลัก + sub-area (Tunnel Plexus ถึง River Branches) รวม Qualith Door Locks framework, สงคราม githyanki (Yaveklar vs. Lashiir) vs. mind flayer colony ของ Extremiton, neothelid ที่ถูกขังในพื้นที่ 8, Detention Facility พื้นที่ 10 (Ishan Toru/Ahpok ผู้มี intellect devourer สิง/Glorz), Dynamo พื้นที่ 12 เต็มรูปแบบ (Control Room 12g เผชิญหน้า Extremiton แบบแยกสองทางตามผลของ EP02), Psipod Nexus พื้นที่ 14-15 (รายชื่อเหยื่อ 9 คนครบ), Halaster's Gate 3 บานยืนยันครอสเรฟตรงกับตารางกลางทุกบาน (ไป L14/L15/L19 — ทั้งหมดเคยถูกบันทึกไว้ล่วงหน้าแล้วตอนเขียน L14/L15) ปิดท้ายด้วย Send-Off คู่ ปูทาง Vanrakdoom (L18) เป็นรังลิช
+- [x] **Level 17 แตกเป็น 2 ไฟล์ EP** (แบบเดียวกับ L9's Dweomercore/L15's Obstacle Course) — จุดทดสอบเกณฑ์แบ่ง EP ที่ชัดเจนที่สุดเท่าที่เจอมา เพราะ Companion เปลี่ยน "Alterdeep" จาก sidebar สั้นๆ ใน WDMM ให้กลายเป็นฉาก in-town vignette เต็มรูปแบบคนละโหมดการเล่นกับดันเจี้ยนสำรวจปกติจริงๆ (ปม escape-the-Matrix พร้อมตัวเลือกแยกทาง, ไคลแมกซ์ Battle of the Yawning Portal) — ลำดับการสำรวจ**กลับด้าน**จากปกติ (เริ่มจากข้างในฐานทัพออกสู่ข้างนอก) เพราะปาร์ตี้ถูกส่งเข้า psipod ตั้งแต่ต้น Level — ดูรายละเอียดใน `CH02-seadeeps.md`
+
+**🎉 Act 8 Chapter 1-2 (Level 16-17) เสร็จสมบูรณ์ ณ 2026-08-15** — เหลือ Chapter 3 (Level 18: Vanrakdoom) ปิด Act
+
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
@@ -125,7 +140,7 @@
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
-| Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว — ถัดไป |
+| Crystal & Sea | Level 16-18 | 17-18 | 🔄 กำลังทำ (Act 8, EP01-03 เสร็จแล้ว — Level 18 ต่อไป) |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
 

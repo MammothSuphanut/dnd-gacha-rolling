@@ -1,6 +1,6 @@
 # Next Session — Resume Point (อ่านไฟล์นี้ก่อนเริ่มงานทุกครั้ง)
 
-**อัปเดตล่าสุด**: 2026-08-15 (หลังจบ Level 15 Obstacle Course — **Act 7 ปิดสมบูรณ์แล้ว** — ต่อไปคือ Act 8: Crystal & Sea, Level 16 Crystal Labyrinth)
+**อัปเดตล่าสุด**: 2026-08-15 (หลังจบ Level 17 Seadeeps — Act 8: Crystal & Sea ทำไปแล้ว Level 16-17 (EP01-03) — ต่อไปคือ Level 18 Vanrakdoom, Chapter 3 ของ Act 8 ปิด Act)
 
 > ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วทำงานต่อได้ทันทีโดยไม่เพี้ยนจากรูปแบบ/มาตรฐานเดิม — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้เริ่มจากหัวข้อ **"งานถัดไปแบบเจาะจง"** ด้านล่างได้เลย ไม่ต้องถามซ้ำว่าจะทำอะไร
 
@@ -30,37 +30,41 @@
   - Level 13: `CH01-trobriands-graveyard.md` + `EP01 - Trobriand's Graveyard (Level 13).md` ครบ 12 พื้นที่หลัก + sub-area รวม **"Mad Mage: Fury Road"** การปรับโฉมทั้งชั้นจาก Companion เป็นทะเลทรายรกร้างสไตล์ Mad Max (สเกล 1 ตาราง = 1 ไมล์, กฎยานพาหนะ deathcycle/death jeep, Extreme Heat), Halaster's Game "Zox Hunt" เควสต์คุ้มกัน Zox Clammersham 5 ช่วง, Special Events 4 อัน (Death Valley, Historic on the Fury Road, Out of Gas, Tremors) — **ยังคงเป็น 1 ไฟล์ EP** แม้เป็นจุดทดสอบเกณฑ์ตัดสินใจที่สุดขั้วที่สุด (รูปแบบการเดินทางทั้งชั้นเปลี่ยนหมด ไม่ใช่แค่ special event ฝังอยู่) เพราะยังเกิดในแผนที่ 13 พื้นที่เดิม ไม่ย้ายสถานที่จริง — Halaster's Gate 1 บาน (น้อยที่สุดเท่าที่เจอมา — ไป L6) ครอสเรฟตรงกับตารางกลาง ไม่ต้องแก้ไข
   - Level 14: `CH02-arcturiadoom.md` + `EP02 - Arcturiadoom (Level 14).md` ครบ 41 พื้นที่หลัก + sub-area (ใหญ่ที่สุดในแคมเปญจนถึงตอนนี้ — WDMM 111,713 ตัวอักษร) รวม **"Halaster's Game: The Mid-Season Finale"** กลไก Companion ครอบคลุมทั้งชั้น (Weapon of Mass Disintegration นับถอยหลัง 10 นาที ต้องหากุญแจ mithral 6 ดอกกระจายทั่วดันเจี้ยน), ยืนยัน **Arcturia เป็นลิชจริง** ตามปมจาก L13, NPC เด่น (Emberosa/Hrossk ยักษ์ไฟสร้าง Mecha-Halaster, Doomcrown/Ernie the flumph, Vanar Freth ดรอว์วิ่งหนี, Alussiarr rakshasa ที่ถูกกักขัง, Xebekal beholder-ผ้าทอ, Cheeky Pluckers), Send-Off ผูกกับ hook ใหญ่ของแคมเปญ (Halaster เหวี่ยงปาร์ตี้เข้า demiplane 3 เดือน, Mecha-Halaster จะบุก Waterdeep ตอนกลับมา) — **ยังคงเป็น 1 ไฟล์ EP** เพราะกลไก WMD ยังเกิดในดันเจี้ยนเดียวกันทั้งหมด ไม่ย้ายสถานที่จริง (เทียบเคียง Level 6's full-level lockdown) — Halaster's Gate 3 บาน (มากที่สุดตั้งแต่ L10 — ไป L9/L12/L17) ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข
   - Level 15: `CH03-obstacle-course.md` + **`EP03 - The Obstacle Course, Part 1 - Netherskull's Gauntlet (Level 15).md`** (ดันเจี้ยนกับดักคลาสสิก 40 พื้นที่หลัก + sub-area — WDMM 135,725 ตัวอักษร ไฟล์ WDMM เดี่ยวใหญ่ที่สุดในแคมเปญ — บอสประจำชั้น Netherskull the Death Tyrant, ตัวแปร "Halaster's Game: Victory or Death", NPC เด่น Fidelio's Ghost/Lorlynn Zmirth/Yrlakka the githzerai/Zorak Lightdrinker/Thwad Underbrew/Kavil Mereshanter, Halaster's Gate 3 บานไป L17/L18/L20 — ชั้นแรกที่มีประตูไปชั้นที่ยังไม่เขียนถึง 3 บานพร้อมกัน) + **`EP04 - The Obstacle Course, Part 2 - Mecha-Halaster's March.md`** (payoff ปม demiplane 3 เดือนจาก L14 — ปาร์ตี้ถูกส่งขึ้น Waterdeep สู้ Mecha-Halaster เต็มรูปแบบที่กำแพงเมือง แล้วถูกเรียกตัวกลับ Undermountain ใน 1 สัปดาห์) — **Level 15 เป็นชั้นที่สองที่ต้องแตกเป็น 2 EP แบบ Skullport/Dweomercore** เพราะ Mecha-Halaster's March ย้ายสถานที่ออกจากดันเจี้ยนไป Waterdeep เต็มรูปแบบ (ต่างจาก L6/L10/L14 ที่กลไกครอบทั้งชั้นแต่ยังอยู่ในดันเจี้ยนเดิม) — **นี่คือ EP ปิด Act 7**
+- ✅ **Act 8 — Crystal & Sea** (`ACT08-crystal-and-sea/`): **เริ่มแล้ว 2026-08-15 — Level 16-17 เสร็จแล้ว (EP01-03), Level 18 ยังไม่เริ่ม**
+  - Level 16: `CH01-crystal-labyrinth.md` + `EP01 - Crystal Labyrinth (Level 16).md` ครบ 32 พื้นที่ (11 พื้นที่ใน Undermountain เดิม + 21 พื้นที่บนดาวเคราะห์น้อย Stardock ที่เข้าถึงผ่านประตู Stardock rod) รวม Special Event "Ashtyrranthor's Hunt" 3 ระยะ, ปมกบฏ Urlon vs. Al'chaia, Ezria เชลย githzerai จาก L15, Infernexus มังกรหนุ่มขอไปสร้างรังที่ Twisted Caverns (L4) — **ทดสอบเกณฑ์ตัดสินใจแบบใหม่ (เปลี่ยนระนาบ ไม่ใช่แค่สถานที่) แต่ยังคงเป็น 1 EP** เพราะ Stardock ยังผูกกับ Crystal Labyrinth ด้วยประตูทางเดียว ไม่มีเนื้อเรื่องแยกขาดแบบ L9/L15 — **ไม่มี Halaster's Gate มาตรฐานในชั้นนี้** (ประตู Stardock ใช้ rod ไม่ใช่ elder rune) — Send-Off ปิดท้ายเป็น "กับดักหลอก" โดยเจตนา ปูทาง "The Matrix" ของ Extremiton ที่จะเฉลยเต็มที่ L17
+  - Level 17: `CH02-seadeeps.md` + **`EP02 - Seadeeps, Part 1 - Alterdeep.md`** (ฉาก in-town vignette เต็มรูปแบบ — ตื่นที่ Yawning Portal จำลอง, Flaws of the Simulation/Hints & Tidbits, ฉากย่อย Mugged/"ภาษาแปดเปื้อน", Yrlakka+githzerai zerth เสนอตัวเลือกยาแดง/น้ำเงินแบบ The Matrix ตรงๆ, ไคลแมกซ์ Battle of the Yawning Portal เผชิญหน้า Extremiton ในภาพจำลอง) + **`EP03 - Seadeeps, Part 2 - The Illithid Colony.md`** (ครบ 20 พื้นที่หลัก + sub-area, สงคราม githyanki Yaveklar/Lashiir vs. mind flayer colony, neothelid ขังในพื้นที่ 8, Detention Facility พื้นที่ 10, Dynamo พื้นที่ 12 เผชิญหน้า Extremiton แบบแยกสองทางตามผล EP02, Halaster's Gate 3 บานยืนยันครอสเรฟถูกต้อง — ไป L14/L15/L19) — **Level 17 เป็นชั้นที่สามที่ต้องแตกเป็น 2 EP แบบ Skullport/Dweomercore/Obstacle Course** เพราะ Companion เปลี่ยน Alterdeep เป็นฉากคนละโหมดการเล่นจริงๆ (ไม่ใช่แค่ยาว) — ลำดับสำรวจกลับด้าน (เริ่มจากในฐานทัพออกสู่นอก) เพราะปาร์ตี้เข้า psipod ตั้งแต่ต้น Level
 
-**ยังไม่เริ่ม**: Act 8 เป็นต้นไป (Undermountain Level 16-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
+**ยังไม่เริ่ม**: Level 18 (Vanrakdoom) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
 
 รายละเอียด checklist แบบละเอียดทุกบรรทัดอยู่ใน [`PROGRESS.md`](./PROGRESS.md) — ไฟล์นี้ (`NEXT-SESSION.md`) เป็นตัวสรุป "ทำอย่างไรต่อ" ไม่ใช่ตัวแทน PROGRESS.md อัปเดตทั้งสองไฟล์คู่กันเสมอเมื่อทำงานเสร็จแต่ละก้อน
 
 ---
 
-## 2. งานถัดไปแบบเจาะจง — Act 8: Crystal & Sea, Level 16 (Crystal Labyrinth) — Chapter 1
+## 2. งานถัดไปแบบเจาะจง — Act 8: Crystal & Sea, Level 18 (Vanrakdoom) — Chapter 3 (ปิด Act)
 
-**Act 7 ปิดสมบูรณ์แล้ว** (Level 13-15 ครบ EP01-04) ต่อไปคือ **Act 8: Crystal & Sea** (Level 16-18) — **ต้องสร้างโฟลเดอร์ Act ใหม่ `ACT08-crystal-and-sea/`** ตามกฎ 1 ของ `structure-guide.md` (ทุก Act มีโฟลเดอร์ของตัวเองเสมอ) เลข EP เริ่มนับใหม่จาก **EP01** (เลข EP นับต่อเนื่องเฉพาะภายใน Act เดียวกัน ไม่ใช่ทั้งแคมเปญ)
+**Level 16-17 เสร็จแล้ว** (EP01-03 ✅) ต่อไปคือ **Level 18: Vanrakdoom** — Chapter 3 ของ Act 8 ที่มีอยู่แล้ว โฟลเดอร์ `ACT08-crystal-and-sea/` สร้างไว้แล้ว แค่เพิ่ม `CH03-vanrakdoom.md` + EP ใหม่ เลข EP ต่อจาก EP03 → **EP04** — **นี่คือ EP ปิด Act 8**
 
 | Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) | สถานะ |
 |---|---|---|---|---|
-| 16 | `Level 16: Crystal Labyrinth` | `Level XVI: The Crystal Labyrinth` | 96,128 / 79,736 ตัวอักษร | ⬜ ถัดไป |
-| 17 | `Level 17: Seadeeps` | `Level XVII: Seadeeps` | 73,826 / 69,323 ตัวอักษร | ⬜ รอคิว |
-| 18 | `Level 18: Vanrakdoom` | `Level XVIII: Vanrakdoom` | 91,816 / 62,568 ตัวอักษร | ⬜ รอคิว |
+| 16 | `Level 16: Crystal Labyrinth` | `Level XVI: The Crystal Labyrinth` | 96,128 / 79,736 ตัวอักษร | ✅ เสร็จ (EP01) |
+| 17 | `Level 17: Seadeeps` | `Level XVII: Seadeeps` | 73,826 / 69,323 ตัวอักษร | ✅ เสร็จ (EP02-03) |
+| 18 | `Level 18: Vanrakdoom` | `Level XVIII: Vanrakdoom` | 91,816 / 62,568 ตัวอักษร | ⬜ ถัดไป |
 
-**บริบทที่ต้องรู้ก่อนเริ่ม Level 16** (จากที่พบระหว่างเขียน Level 15 — ยังไม่ได้อ่านเนื้อหาเต็มของ L16 เอง ต้องอ่านจริงตอนเริ่มทำ):
-- **githyanki ยึดครอง Crystal Labyrinth แล้ว** ทำสงครามกับอาณานิคม mind flayer ที่ Seadeeps (L17) นำโดย **Al'chaia** อัศวิน githyanki ที่โหดเหี้ยมและถือว่าเผ่าพันธุ์ตนสูงส่งกว่าใคร
-- **Ezria** ศิษย์ของ Yrlakka (กลุ่ม githzerai จาก L15) ถูกจับที่นี่ระหว่างสอดแนมแนวป้องกัน githyanki — ถ้าปาร์ตี้รับเควสต์ช่วย Ezria ที่ L15 มาแล้ว นี่คือจุดที่ต้องตามหาตัว
-- Companion บอกใบ้ว่า githzerai "ไม่อยากให้เสียเซอร์ไพรส์" ว่าประตูออกจาก Obstacle Course (L15 พื้นที่ 37) เปิดสู่ **asteroid ในอวกาศ** — ยืนยันว่า Crystal Labyrinth ตั้งอยู่บน Astral Plane ไม่ใช่ในดันเจี้ยนแบบทั่วไป (ธีมชั้นนี้จะต่างจากทุกชั้นก่อนหน้าอย่างชัดเจน)
-- gith ไม่ใช่ชาวโลกดั้งเดิม — บ้านเกิดของพวกเขาถูกอาณาจักร mind flayer ยึดครองในอดีต หลังหลุดพ้นได้ เผ่าพันธุ์แตกแยกเป็น githyanki (สงคราม) กับ githzerai (สงบ) ส่วนใหญ่ยังอยู่บน Astral Plane ล่า mind flayer ต่อไป
-- Halaster's Gate 3 บานที่ L15 ชี้มาที่นี่แล้ว 1 บาน (Gate #27 "Six-Fingered Gauntlet" L15↔L17 — ไม่ใช่ L16 แต่เป็น Seadeeps) — ต้องเช็คตาราง `03-halasters-game-framework.md` อีกครั้งว่า L16 มีประตูเข้า-ออกกี่บาน
+**บริบทที่ต้องรู้ก่อนเริ่ม Level 18** (จากที่พบระหว่างเขียน Level 16-17 — ยังไม่ได้อ่านเนื้อหาเต็มของ L18 เอง ต้องอ่านจริงตอนเริ่มทำ):
+- **ชื่อ "-doom" = รังลิช**: Host's Send-Off ของ EP03 (L17) เตือนไว้แล้วว่าคำต่อท้าย "-doom" หมายถึงรังลิช (ทอย Arcana DC 14 ถ้าปาร์ตี้ยังไม่เก็ต) — Vanrakdoom น่าจะเป็นรังของลิชชื่อ Vanrak หรือใกล้เคียง (ยังไม่ยืนยัน ต้องอ่านจริง)
+- **เส้นทางเข้าถูกเขียนใหม่แบบ Wyllowwood (L5)**: ตาม Companion's Epilogue ของ EP03 เส้นทางสู่ Vanrakdoom ไม่ใช่ถ้ำคดเคี้ยวธรรมดา — เป็นป่าใต้ดินที่ Halaster สร้างไว้ (**"Deadwoods"**) ที่ลัทธิกำลังแปลงให้กลายเป็นส่วนหนึ่งของ Shadowfell ต้องดูรายละเอียดจริงว่ากลไกนี้ครอบคลุมแค่ไหน
+- **Shar's Cult**: ตาม `03-halasters-game-framework.md` บรรทัด 67 — ลัทธิ Shar นำโดยแวมไพร์นักบวช วางแผนโจมตีวิหาร Lathander/Selûne ที่ซ่อนครึ่งหนึ่งในเงามืด (Shadowfell) น่าจะเป็นแฟกชันหลักของชั้นนี้ ผูกกับธีม Deadwoods/Shadowfell ข้างต้น
+- **Halaster's Gate ที่รู้แล้วว่าชี้มา L18**: Gate #15 "Forbidden Lovers" (L6↔L18, ทริกเกอร์ = เอลฟ์คู่รักทำท่าเงียบ), Gate #28 "Soaring Drakes" (L15↔L18, ทริกเกอร์ = จารึก Draconic "มีแต่มังกรเท่านั้นที่เปิดประตูนี้ได้") — ครอสเรฟให้ตรงกับพื้นที่จริงตอนอ่าน L18 ต้นฉบับ
+- **L17's neothelid loose end**: ถ้า neothelid หลุดจากคุกตอนจบ L17 (ทั้งจาก Extremiton ตายใน Alterdeep หรือ Extremiton ยังไม่ตายแต่กำแพงถูกทำลาย) มันอาจยังป้วนเปี้ยนอยู่แถวทางเชื่อม L17↔L18 — ใช้เป็น hook เปิดฉากได้ถ้าต้องการ
+- **นี่คือ EP ปิด Act 8** — เมื่อจบแล้วให้เตรียม context เปิด Act 9 (The Deepest Halls, Level 19-21) ไว้ใน NEXT-SESSION.md ตามธรรมเนียมทุกครั้งที่ปิด Act
 
 **ขั้นตอนที่ต้องทำ** (ตามลำดับ, อ้างอิง workflow ของ `/build-ep` skill):
 
 1. อ่าน [`adventure-builder/journal-template.md`](../../adventure-builder/journal-template.md) และ [`adventure-builder/structure-guide.md`](../../adventure-builder/structure-guide.md) และ [`adventure-builder/canon-reference.md`](../../adventure-builder/canon-reference.md) ให้ครบทั้งไฟล์ก่อนเริ่มเขียนอะไรทั้งสิ้น (บังคับตาม skill — ห้ามข้าม แม้จะทำมาหลายรอบแล้ว กฎอาจถูกแก้ระหว่างทาง)
-2. สร้างโฟลเดอร์ `ACT08-crystal-and-sea/` ใหม่ พร้อม `00-act-outline.md` (รวม Chapter 1 brief ไว้ในตัวถ้า Level 16 เป็น Chapter เดียวจบ หรือแยก `CH01-crystal-labyrinth.md` ถ้าเนื้อหาเยอะพอ — ดูตัวอย่างจาก Act 7 ที่แยก Chapter ต่อ Level) อัปเดต `00-overview.md` (root) ให้มีลิงก์ไป Act 8
-3. เลข EP เริ่มนับใหม่จาก **EP01** สำหรับ Level 16 (เลข EP นับต่อเนื่องเฉพาะใน Act เดียวกัน ไม่ใช่ทั้งแคมเปญ — ดูกฎ 2 ของ `structure-guide.md`)
-4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 16: Crystal Labyrinth` (WDMM) / `Level XVI: The Crystal Labyrinth` (Companion)
-5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ — **ต้องอ่านเนื้อหาก่อนตัดสินใจว่าจะแตกเป็นหลาย EP หรือไม่** (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว ใช้เกณฑ์ "เนื้อหาต่างประเภทกันจริงจนแยกอ่าน/แยกรันได้อย่างเป็นธรรมชาติ" ตามหัวข้อ 5.3 — ธีม Astral Plane/asteroid อาจเป็นจุดทดสอบเกณฑ์นี้อีกครั้ง เพราะเป็นการย้าย "ระนาบ" ไม่ใช่แค่สถานที่ในโลกวัตถุ ต้องดูเนื้อหาจริงก่อนว่ายังเป็นดันเจี้ยนต่อเนื่องหรือแยกขาดจริง)
+2. สร้าง `CH03-vanrakdoom.md` ใหม่ในโฟลเดอร์ `ACT08-crystal-and-sea/` ที่มีอยู่แล้ว อัปเดต `00-act-outline.md` ให้ลิงก์ Chapter 3
+3. เลข EP ต่อจาก EP03 → **EP04** สำหรับ Level 18 (เลข EP นับต่อเนื่องเฉพาะใน Act เดียวกัน ไม่ใช่ทั้งแคมเปญ — ดูกฎ 2 ของ `structure-guide.md`)
+4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 18: Vanrakdoom` (WDMM) / `Level XVIII: Vanrakdoom` (Companion)
+5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ — **ต้องอ่านเนื้อหาก่อนตัดสินใจว่าจะแตกเป็นหลาย EP หรือไม่** (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว ใช้เกณฑ์ "เนื้อหาต่างประเภทกันจริงจนแยกอ่าน/แยกรันได้อย่างเป็นธรรมชาติ" ตามหัวข้อ 5.3 — Deadwoods/Shadowfell ของ Companion อาจเป็นจุดทดสอบเกณฑ์นี้อีกครั้งเหมือน L17's Alterdeep ต้องดูเนื้อหาจริงก่อนตัดสินใจ)
 6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
 
 ---
@@ -159,7 +163,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
-| **Crystal & Sea** | **Level 16-18** | **17-18** | **⬜ รอคิว — ดูหัวข้อ 2** |
+| **Crystal & Sea** | **Level 16-18** | **17-18** | **🔄 กำลังทำ (Level 16-17 ✅ / Level 18 ดูหัวข้อ 2 — EP ปิด Act)** |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
 
@@ -180,7 +184,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 ## 8. เมื่อผู้ใช้พิมพ์ "ทำต่อ" ในเซสชันถัดไป
 
 1. อ่านไฟล์นี้ทั้งหมดก่อน
-2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 16 (Crystal Labyrinth, Chapter 1 ของ Act 8 ใหม่) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
+2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 18 (Vanrakdoom, Chapter 3 ของ Act 8 — EP ปิด Act) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
 3. เข้าสู่ขั้นตอนในหัวข้อ 2 ทันที ไม่ต้องถามซ้ำเรื่อง scope/รูปแบบที่ตกลงกันไปแล้วในหัวข้อ 3-5
 4. ทำงานทีละ EP แล้วรายงานผล + ถามว่าทำต่อเลยไหมทุกครั้ง (ตามกฎข้อ 10 ในหัวข้อ 3)
 5. อัปเดตไฟล์นี้ทุกครั้งที่จบก้อนงานใหญ่ (จบ 1 EP ขึ้นไป) ให้ "สถานะโดยรวม" (หัวข้อ 1) และ "งานถัดไปแบบเจาะจง" (หัวข้อ 2) ตรงกับความจริงเสมอ — ไฟล์นี้ต้อง**ไม่ล้าสมัย**ไม่ว่าจะกลับมาทำต่อเมื่อไหร่
