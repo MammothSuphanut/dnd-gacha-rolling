@@ -82,6 +82,25 @@
 
 **Level 10 ยังคงเป็น 1 ไฟล์ EP** (ไม่แตกแบบ Level 9) เพราะทั้ง Halaster's Game และ Muiral's Mad Dash ยังเกิดขึ้นในดันเจี้ยนเดิมทั้งหมด — ดูรายละเอียดเกณฑ์ตัดสินใจใน `CH01-muirals-gauntlet.md`
 
+- [x] **CH02-troglodyte-warrens.md** สร้างแล้ว (Quick Notes, Previously on DotMM, ทางเลือก Illuun the aboleth แทน balhannoth, ตารางประตูเวท 3 บาน)
+- [x] **EP02: Troglodyte Warrens (Level 11)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 17 พื้นที่ (Auvryndar Watch Post ถึง Behir Lair รวมทุก sub-area) รวม **The Balhannoth** ที่ Companion เพิ่มเข้ามา (นักล่าทะลุมิติจาก Shadowfell ที่ House Auvryndar ลักลอบดึงเข้ามาแต่ควบคุมไม่ได้ ยึดพื้นที่ 7 เป็นรัง สร้างภาพลวงตา "สวรรค์ปลอม" จากความปรารถนาลึกของปาร์ตี้), Special Event **"Clash of the Titans"** (ปาร์ตี้ล่อ behir กับ balhannoth มาเจอกัน Halaster โผล่มาถ่ายทอดสดเป็นเกมโชว์), NPC เด่น (Hrektar/Xlorp troll ที่ถูกสาปเป็น deep gnome จิ๋ว ท่องบท Hamlet, Kol'daan หัวหน้าเผ่า troglodyte อิสระกลุ่มสุดท้าย, Orl Telenna drow mage เกือบเสียสติจาก telepathy ของ balhannoth, Zaztorrl ดรอว์ House Freth ความภักดีสั่นคลอน, Spirreth Dalambra กับ Shindreer Argonrae สองผู้บัญชาการศึกที่พื้นที่ 12), Halaster's Gate 3 บาน (ไป L6/L7/L8 — ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข)
+
+**Level 11 ยังคงเป็น 1 ไฟล์ EP** (จุดยืนยันที่ 3 ต่อจาก Level 8, Level 10) — Companion เองระบุว่าชั้นนี้ควรจบได้ในเซสชันเดียว เนื้อหาทั้งหมดเกิดในดันเจี้ยนเดิม ไม่มีฉากนอกดันเจี้ยน — ดูรายละเอียดใน `CH02-troglodyte-warrens.md`
+
+- [x] **CH03-the-maze-level.md** สร้างแล้ว (Quick Notes, Previously on DotMM, ตารางประตูเวท 4 บาน, หมายเหตุปิด Act)
+- [x] **EP03: The Maze Level (Level 12)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 19 พื้นที่หลัก + 45 sub-area (Into the Maze ถึง Spiderwatch Keep area 19k) รวม **"Halaster Gets Hitched"** ปมเรื่อง 3 องก์เต็มรูปแบบจาก Companion (Erelal Freth ลักพาตัว **Sim** simulacrum ของ Halaster มาบังคับแต่งงาน โดยเข้าใจผิดว่าจับตัวจริงได้ — องก์ I Bachelor Party/Run with the Bulls, องก์ II The Wedding, องก์ III เปิดโปงโดย Halaster ตัวจริง), Special Event **"The Wedding Present"** (Drivvin Freth เรียก goristro demon สำเร็จแต่คุมไม่ได้ อาละวาดในป้อมปราการ), NPC เด่น (Erelal Freth เจ้าสาวตั้งท้องแก่, Drivvin Freth พี่ชายนักเวทย์อาร์ค, Rilna/Tanimar/Xaphtal/Talabsyn/Llaxdorl Freth ญาติต่างๆ, Maku หมอมิโนทอร์ warlock ลับที่รับใช้ Demogorgon แอบอ้าง Baphomet, ทูต Shadowdusk สองคน, Hatchrin/Varrn สองเชลยที่พื้นที่ 19j), Halaster's Gate 4 บาน (มากที่สุดตั้งแต่ L10 — ไป L6/L10/L14/L19 ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข)
+
+**Level 12 ยังคงเป็น 1 ไฟล์ EP** แม้ขนาดใหญ่ที่สุดใน Act นี้ (170,358 ตัวอักษรรวม) เพราะพิธีแต่งงานทั้งหมดเกิดในป้อมปราการเดียวกับที่สำรวจอยู่แล้ว ไม่ย้ายไปสถานที่แยกนอกดันเจี้ยน (เทียบเคียง Level 7's Maddgoth's Dance) และ Level 10 (216K ตัวอักษร ใหญ่กว่านี้อีก) ก็ยังเป็น 1 ไฟล์ EP ได้เช่นกัน — ดูรายละเอียดใน `CH03-the-maze-level.md`
+
+**🎉 Act 6 (Muiral's Gauntlet) แปลครบสมบูรณ์ทั้ง 3 ไฟล์ EP แล้ว ณ 2026-08-15** — Level 10-11-12 เต็มรูปแบบ ปิดฉากด้วย Halaster เปิดโปงตัวเองกลางงานแต่งงานปลอม ต่อไปคือ **Act 7: Graveyard & Ruin** (Level 13-15) ซึ่งมี hook เปิดวางไว้แล้วที่ Level 12 พื้นที่ 14 (Level 13 ถูกเขียนใหม่เป็นทะเลทรายรกร้างสไตล์ Mad Max ตาม Companion, นำโดย Zox Clammersham)
+
+## Act 7: Graveyard & Ruin — เริ่มแล้ว 2026-08-15
+
+- [x] **ACT07-graveyard-and-ruin/** สร้างโฟลเดอร์ใหม่แล้ว พร้อม `00-act-outline.md` + `CH01-trobriands-graveyard.md` (Quick Notes, Previously on DotMM, ตารางประตูเวท 1 บาน, หมายเหตุ Zox พบตัวคนละจุด WDMM/Companion)
+- [x] **EP01: Trobriand's Graveyard (Level 13)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 12 พื้นที่หลัก + sub-area (Tunnels and Trenches ถึง Paradise Lost) รวม **"Mad Mage: Fury Road"** การปรับโฉมทั้งชั้นจาก Companion เป็นทะเลทรายรกร้างสไตล์ Mad Max เต็มรูปแบบ (สเกลแผนที่เปลี่ยนเป็น 1 ตาราง = 1 ไมล์, กฎยานพาหนะ deathcycle/death jeep, Extreme Heat ตลอดกลางวัน), Halaster's Game **"Zox Hunt"** เควสต์คุ้มกัน Zox Clammersham กลับวังตลอด 3 วัน 3 คืน แบ่ง 5 ช่วง (Finding Zox → The Ring! → No Good Deed → Rex Reborn → Palace of the Lost), Special Events 4 อัน (Death Valley พายุอาร์เคน, Historic on the Fury Road ขบวนสงคราม Yargoth, Out of Gas, Tremors จาก bore worm), NPC เด่น (Zox Clammersham gnome archmage หนีตาย, Yargoth the Breaker hobgoblin warlord จอมลัทธิ "The Broken" ขับ hellfire engine จาก Nine Hells, Kurlog hobgoblin captain, Chanterella myconid sovereign, Grendiziel หัวหน้าช่างตี azer), Halaster's Gate 1 บาน (น้อยที่สุดเท่าที่เจอมา — ไป L6 ครอสเรฟตรงกับตารางกลาง ไม่ต้องแก้ไข)
+
+**Level 13 ยังคงเป็น 1 ไฟล์ EP** แม้จะเป็นจุดทดสอบเกณฑ์ตัดสินใจที่สุดขั้วที่สุดเท่าที่เจอมา (Companion เปลี่ยนรูปแบบการเดินทางทั้งชั้นเป็นเควสต์คุ้มกันข้ามทะเลทรายหลายวันด้วยยานพาหนะ ไม่ใช่แค่มี special event ฝังอยู่) — แต่ยังเข้าเกณฑ์เดิมเพราะเนื้อหาทั้งหมดเกิดในแผนที่ 13 พื้นที่เดิม ไม่มีการย้ายไปสถานที่/รูปแบบที่แยกขาดจริงแบบ Level 9's Tournament — ดูรายละเอียดใน `00-act-outline.md`
+
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
@@ -91,8 +110,8 @@
 | The Sunless Sea | Level 3 + Skullport | 7-9 | ✅ ครบ (EP01+EP02+EP03) — Act 3 จบแล้ว |
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
-| Muiral's Gauntlet | Level 10-12 | 13-15 | 🔄 L10 เสร็จ, L11-12 รอคิว |
-| Graveyard & Ruin | Level 13-15 | 15-17 | ⬜ รอคิว |
+| Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
+| Graveyard & Ruin | Level 13-15 | 15-17 | 🔄 L13 เสร็จ, L14-15 รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
