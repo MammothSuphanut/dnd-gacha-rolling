@@ -133,11 +133,22 @@
 
 **🎉 Act 8: Crystal & Sea แปลครบสมบูรณ์ทั้ง Act แล้ว ณ 2026-08-15** — Level 16-17-18 เต็มรูปแบบ (4 ไฟล์ EP) ปิดฉากด้วยการไถ่บาปมังกรเงามืดและปมปริศนา Baron of Blood ต่อไปคือ **Act 9: The Deepest Halls** (Level 19-21)
 
-## Act 9: The Deepest Halls — เริ่มแล้ว 2026-08-15
+## Act 9: The Deepest Halls — เริ่มแล้วและจบสมบูรณ์แล้ว 2026-08-15
 
 - [x] **ACT09-the-deepest-halls/** สร้างโฟลเดอร์ใหม่แล้ว พร้อม `00-act-outline.md` + `CH01-caverns-of-ooze.md` (Quick Notes, Previously on DotMM, หมายเหตุ 1 EP เดียวเพราะต้นฉบับบอกตรงๆ ว่าเป็นชั้นพักสั้นๆ, ตัวแปร "Maximum Absurdity" เป็นตัวเลือกเสริมไม่บังคับ)
 - [x] **EP01: Caverns of Ooze (Level 19)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 16 พื้นที่หลัก + sub-area (1a-c/3a-b/5a-b/11a-b/13a-h) รวมดราม่า genie คู่แข่ง **Ichthyglug the marid** (area 1) vs. **Jarûk the dao** (area 11) ที่แข่งกันหา phylactery ของลิช **Ezzat** (L20) มาแลกอิสรภาพ — ปมนี้โยงตรงกับ Halaster's Goal #3 และการคืนชีพ Ezzat กลางไคลแมกซ์ Dweomercore Tournament (Act 5 EP04), เรือ spelljammer *Scavenger* เต็มรูปแบบ (area 13a-h) พร้อมกัปตัน mind flayer หิวโหย **N'ghathrod**, ลัทธิบูชา Ghaunadaur ที่ Halaster แปลงร่างสาวกเป็นอูซมีสติปัญญา, Special Events "Dao-Daddy Beatdown"/"Marid Meltdown" สำหรับตอนปาร์ตี้ย้อนกลับมาหลังตัดสินใจแล้ว, Halaster's Gate 3 บานยืนยันครอสเรฟถูกต้องทุกบาน (Gate #23 ↔ L12 พื้นที่ 8b, Gate #29 ↔ L17 พื้นที่ 8b, Gate #30 ↔ L21 พื้นที่ 23b — บันทึกไว้ล่วงหน้ารอเขียน L21), ปิดท้ายด้วย Send-Off คู่ที่มีนิมิตความสัมพันธ์ Halaster-Ezzat ในอดีต (เจือคำโกหกตามต้นฉบับ) ปูทาง L20
 - [x] **Level 19 ยังคงเป็น 1 ไฟล์ EP** — ต้นฉบับ Companion ระบุตรงๆ ว่าชั้นนี้ตั้งใจให้สั้นและเป็น breather ระหว่างสองชั้นอันตราย แนะนำให้จบในเซสชันเดียว ไม่มีประเด็นเรื่องแตก EP — ดูรายละเอียดใน `CH01-caverns-of-ooze.md`
+- [x] **CH02-runestone-caverns.md** สร้างแล้ว (Quick Notes, Previously on DotMM, หมายเหตุ 1 EP เดียว, ไขปม "เจือคำโกหก" จาก L19)
+- [x] **EP02: Runestone Caverns (Level 20)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 23 พื้นที่หลัก + sub-area ทั้งหมด (4a-c/6a-c/8a-d/9a-b/11a-c/12a-c/13a-g/22a-b) แบ่งเป็นสองโซน: **Runestone Caverns** (ถ้ำธรรมชาติ — Stonecloak golems, มัมมี่ลอร์ด **Gorka Tharn**, อาณานิคม myconid, คณะสำรวจ **Shadowdusk Expedition** นำโดย Akarrth + beholder Gz'zarp, duergar raiders/throwback Skella จาก L6, throwback Gentlemen Bastards จาก L7/L8) และ **Stalagmite Tower** (lair ของ **Ezzat** เต็มรูปแบบ — Roleplaying + Tactics ยาวเต็ม, vampire คู่ที่ประตู, animated staff มีสติปัญญา, ห้องสมุด/journal ของ Ezzat ที่เผยปม Jhesiyra Kestellharp, marilith เฝ้า phylactery), Halaster's Game section "จอมมารผู้เคยรัก" เผยความผูกพัน Halaster-Ezzat เต็มรูปแบบ + ตาราง Dramatized Visions of the Past ที่ EP นี้แต่งเติมเอง (ต้นฉบับอ้างถึง compendium table ที่ไม่มีในไฟล์ source), Special Event "The Gentleman's Hello" (ambush เต็มรูปแบบ), Send-Off คู่ "The Lich Robbed"/"The Lich Untouched" พร้อมไขปม "เจือคำโกหก" จาก L19 อย่างชัดเจน
+- [x] **Level 20 ยังคงเป็น 1 ไฟล์ EP** แม้เนื้อหาใหญ่มาก (เทียบเคียง L12/L14/L17) — เพราะทั้งหมดเกิดในสถานที่เดียวต่อเนื่องกัน (ถ้ำ→หอคอยกลางถ้ำ) ไม่มีการย้ายสถานที่แบบ Alterdeep — ดูรายละเอียดใน `CH02-runestone-caverns.md`
+- [x] **Halaster's Gate #26 "The Jigsaw Gate" (L15↔L20)** ยืนยันตำแหน่งฝั่ง L20 (พื้นที่ 9b) ที่ค้างมาตั้งแต่เขียน L15 — พบความคลาดเคลื่อนเล็กน้อยระหว่างสองฝั่งต้นฉบับ (L15=adult white dragon, L20=beholder) เก็บทั้งคู่ไว้ตามต้นฉบับ
+- [x] **CH03-terminus-level.md** สร้างแล้ว (Quick Notes, Previously on DotMM — Sim จาก L12/Skella จาก L6-L20, หมายเหตุแตก 2 EP, ปม Trobriand foreshadow L23, DM Toolkit พยาน)
+- [x] **EP03: Terminus Level, Part 1 - The Deep Mines (Level 21)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 22 พื้นที่หลัก + sub-area ทั้งหมด (3a-b/4a-d/6a-c/10a-b/11a-b/16a-d/17a-f/18a-d/19a-b/20a-d) เปิดด้วยฉาก "Terminus Tour" ของ Halaster (มินิคาร์ทัวร์กวนๆ), ครอบคลุมเหมือง duergar เต็มรูปแบบ — เจ้าชายลี้ภัย **Valtagar Steelshadow** (archmage), ภรรยา **Stalagma Steelshadow** (adult silver dragon ปลอมตัว), กัปตันทหาร **Rojkarn Ironhead**, arcanaloth คู่ **Aximus/Exekarus** ปลอมเป็นนักบวช Laduguer, ultroloth **Xindulus** เฝ้าทาง L22, ยักษ์ fomorian, ผีนักบวช **Brythia Mulspeer**, throwback ตัวเลือก Skella Ironeye — จบด้วยปาร์ตี้มาถึงประตู Fazrian's Court
+- [x] **EP04: Terminus Level, Part 2 - Judged From on High (Level 21)** แปล/ขยายเป็น journal เต็มแล้ว — กลไก **"Judged From on High"** เต็มรูปแบบ: Act I-III ของการพิจารณาคดี (ข้อกล่าวหา/ผู้พิพากษา Fazrian/ลูกขุน 5-6 คน/อัยการ Sim-Halaster's Simulacrum throwback จาก L12/พยาน DM Toolkit ครบทุกตัวเลือกจาก L2-Skullport), คำตัดสิน 4 แบบ (Hung/Guilty/Not Guilty/Screw It) + กลไก Redemption, areas 23 (Fazrian's Court เต็มรูปแบบ พร้อม Tactics, เสาหินคริสตัล marilith คู่, Gate #30), 23c (Garbage Disposal/otyugh), 24 (Secret Vault — เฉลยปม Brythia Mulspeer เต็มรูปแบบ), Aftermath, Epilogue (คำแนะนำรับมือคาถา wish), Send-Off ไร้ Host — **นี่คือ EP ที่ปิด Act 9 สมบูรณ์**
+- [x] **Level 21 แตกเป็น 2 ไฟล์ EP** (EP03/EP04) — เกณฑ์เดียวกับ Skullport/Dweomercore/Obstacle Course/Seadeeps: เนื้อหาต่างประเภทกันจริง (ดันเจี้ยนสำรวจ vs. ฉากศาล/สังคมล้วนๆ ที่ต้นฉบับบอกตรงๆ ว่าไม่ควรรันแบบ dungeon crawl) — ดูรายละเอียดใน `CH03-terminus-level.md`
+- [x] **Halaster's Gate #30 "The Crystalline Menhirs" (L19↔L21)** ยืนยันครบทั้งสองฝั่งแล้ว ตรงกับตารางกลางทุกประการ ไม่พบข้อคลาดเคลื่อน
+
+**🎉 Act 9: The Deepest Halls แปลครบสมบูรณ์ทั้ง Act แล้ว ณ 2026-08-15** — Level 19-20-21 เต็มรูปแบบ (4 ไฟล์ EP) ปาร์ตี้ถึงเลเวล 17 พร้อมคาถา wish ต่อไปคือ **Act 10: Halaster's Reckoning** (Level 22-23, ไฟนอลแคมเปญ)
 
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
@@ -151,7 +162,7 @@
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
 | Crystal & Sea | Level 16-18 | 17-18 | ✅ ครบ (Act 8, EP01-04) |
-| The Deepest Halls | Level 19-21 | 18-19 | 🔄 กำลังทำ (Act 9, EP01 เสร็จแล้ว — Level 19) |
+| The Deepest Halls | Level 19-21 | 18-19 | ✅ ครบ (Act 9, EP01-04) |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
 
 ทุกห้องของ WDMM หลักได้ full room breakdown เสมอ (ไม่ตัดเพื่อความสั้น) — ใช้แนวทางเดียวกับ EP1 ของ Act 1 นี้เป็นมาตรฐานความละเอียด, Companion (Quick Notes/Before the Descent/Random Encounters/Areas of Note/Epilogue) ผสานเข้าแต่ละชั้นตามที่ระบุใน [99-notes.md](./99-notes.md), motif "Halaster's Game" ใช้ต่อเนื่องทุกชั้น

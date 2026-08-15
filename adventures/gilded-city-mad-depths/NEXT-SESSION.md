@@ -1,6 +1,6 @@
 # Next Session — Resume Point (อ่านไฟล์นี้ก่อนเริ่มงานทุกครั้ง)
 
-**อัปเดตล่าสุด**: 2026-08-15 (หลังจบ Level 19 Caverns of Ooze — **Act 9: The Deepest Halls เริ่มแล้ว** EP01 เสร็จสมบูรณ์ — ต่อไปคือ **Level 20 (Runestone Caverns), Chapter 2 ของ Act 9 เดียวกัน, EP02** ตัวลิช Ezzat ที่ถูกปูมาตั้งแต่ Act 5)
+**อัปเดตล่าสุด**: 2026-08-15 (หลังจบ Level 21 Terminus Level — **Act 9: The Deepest Halls ปิดสมบูรณ์แล้ว** ทั้ง Level 19-20-21, EP01-04 — ต่อไปคือ **Act 10: Halaster's Reckoning (Level 22-23, ไฟนอลแคมเปญ)** เริ่มที่ **Level 22 (Shadowdusk Hold), โฟลเดอร์ Act ใหม่ `ACT10-halasters-reckoning/`, EP01**)
 
 > ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วทำงานต่อได้ทันทีโดยไม่เพี้ยนจากรูปแบบ/มาตรฐานเดิม — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้เริ่มจากหัวข้อ **"งานถัดไปแบบเจาะจง"** ด้านล่างได้เลย ไม่ต้องถามซ้ำว่าจะทำอะไร
 
@@ -35,44 +35,44 @@
   - Level 17: `CH02-seadeeps.md` + **`EP02 - Seadeeps, Part 1 - Alterdeep.md`** (ฉาก in-town vignette เต็มรูปแบบ — ตื่นที่ Yawning Portal จำลอง, Flaws of the Simulation/Hints & Tidbits, ฉากย่อย Mugged/"ภาษาแปดเปื้อน", Yrlakka+githzerai zerth เสนอตัวเลือกยาแดง/น้ำเงินแบบ The Matrix ตรงๆ, ไคลแมกซ์ Battle of the Yawning Portal เผชิญหน้า Extremiton ในภาพจำลอง) + **`EP03 - Seadeeps, Part 2 - The Illithid Colony.md`** (ครบ 20 พื้นที่หลัก + sub-area, สงคราม githyanki Yaveklar/Lashiir vs. mind flayer colony, neothelid ขังในพื้นที่ 8, Detention Facility พื้นที่ 10, Dynamo พื้นที่ 12 เผชิญหน้า Extremiton แบบแยกสองทางตามผล EP02, Halaster's Gate 3 บานยืนยันครอสเรฟถูกต้อง — ไป L14/L15/L19) — **Level 17 เป็นชั้นที่สามที่ต้องแตกเป็น 2 EP แบบ Skullport/Dweomercore/Obstacle Course** เพราะ Companion เปลี่ยน Alterdeep เป็นฉากคนละโหมดการเล่นจริงๆ (ไม่ใช่แค่ยาว) — ลำดับสำรวจกลับด้าน (เริ่มจากในฐานทัพออกสู่นอก) เพราะปาร์ตี้เข้า psipod ตั้งแต่ต้น Level
   - Level 18: `CH03-vanrakdoom.md` + `EP04 - Vanrakdoom.md` ครบ 33 พื้นที่หลัก + sub-area (Entrance ถึง Dragon's Hoard) รวมปูมหลัง Lord Vanrak Moonstar (death knight ผู้สำนึกผิดทำลายตัวเองด้วย sun blade ปี 1436 DR — **ไม่มีลิชในชั้นนี้จริงๆ แม้ EP03 (L17) จะทิ้งปมเตือนไว้ว่า "-doom" = รังลิช** ซึ่งเป็นการหักมุมตั้งใจ), เควสต์ **"Save the Dragon"** ไถ่บาปมังกรเงามืด Umbraxakar/Glyster ด้วยของที่ระลึก 4 ชิ้น, Companion เพิ่มป่า **"Through the Deadwood"** เป็นด่านนำ (ต้นแบบของ Wyllowwood — **ยังคงนับเป็น 1 EP** เพราะยังเป็นการสำรวจ/เดินทางแบบเดียวกับดันเจี้ยนอื่น ไม่ใช่เนื้อหาคนละประเภทแบบ Alterdeep) พร้อม Portia Dzuth quest giver ที่ถูกย้ายมาจากพื้นที่ 25b, บอสสองตัวยากสุดขั้วในแคมเปญ (Keresta Delvingstone พื้นที่ 26, Umbraxakar พื้นที่ 32), Halaster's Gate 2 บานยืนยันครอสเรฟถูกต้อง (Gate #15 ↔ L6 พื้นที่ 47a, Gate #28 ↔ L15 พื้นที่ 30a), ปิดท้ายด้วยปมปริศนา "A.M." (Artor Morlin บารอนแห่งเลือด) และ Send-Off คู่ที่ปรับโทนไม่มีคำอำลามาตรฐานตามต้นฉบับ — **EP นี้ปิด Act 8 สมบูรณ์**
 
-- 🔄 **Act 9 — The Deepest Halls** (`ACT09-the-deepest-halls/`): **เริ่มแล้ว 2026-08-15 — Level 19 เสร็จ (EP01)**
+- ✅ **Act 9 — The Deepest Halls** (`ACT09-the-deepest-halls/`): **ครบสมบูรณ์ทั้ง Act แล้ว 2026-08-15 — Level 19-20-21 (EP01-04)**
   - Level 19: `CH01-caverns-of-ooze.md` + `EP01 - Caverns of Ooze (Level 19).md` ครบ 16 พื้นที่หลัก + sub-area (1a-c/3a-b/5a-b/11a-b/13a-h) รวมดราม่า genie คู่แข่ง **Ichthyglug the marid** (area 1) vs. **Jarûk the dao** (area 11) ที่แข่งกันหา phylactery ของลิช **Ezzat** (L20) มาแลกอิสรภาพ ผูก Halaster's Goal #3 เข้ากับการคืนชีพ Ezzat ที่ Dweomercore Tournament (Act 5 EP04) โดยตรง, เรือ spelljammer *Scavenger* เต็มรูปแบบพร้อมกัปตัน mind flayer หิวโหย N'ghathrod, ลัทธิ Ghaunadaur ที่แปลงสาวกเป็นอูซมีสติปัญญา, Halaster's Gate 3 บานยืนยันครอสเรฟถูกต้องทุกบาน (Gate #23/#29/#30 — Gate #30 ไป L21 area 23b บันทึกรอไว้แล้ว), Send-Off คู่ปิดท้ายด้วยนิมิต Halaster-Ezzat ในอดีตที่ "เจือคำโกหก" ปูทาง L20 — **ยังคงเป็น 1 ไฟล์ EP** เพราะต้นฉบับ Companion ระบุตรงๆ ว่าชั้นนี้ตั้งใจให้สั้น เป็น breather ระหว่างสองชั้นอันตราย ไม่มีประเด็นเรื่องแตก EP เลย
+  - Level 20: `CH02-runestone-caverns.md` + `EP02 - Runestone Caverns (Level 20).md` ครบ 23 พื้นที่หลัก + sub-area ทั้งหมด (4a-c/6a-c/8a-d/9a-b/11a-c/12a-c/13a-g/22a-b) — payoff เต็มรูปแบบของปม Ezzat: บุก Stalagmite Tower lair ของลิช (Roleplaying+Tactics เต็ม, vampire คู่, animated staff มีสติปัญญา, marilith เฝ้า phylactery), Halaster's Game "จอมมารผู้เคยรัก" เผยว่า Halaster เคยรัก Ezzat ราวพี่น้อง, ตาราง Dramatized Visions of the Past ที่ EP นี้แต่งเติมเอง (ต้นฉบับอ้าง compendium table ที่ไม่มีในไฟล์ source), throwback หลายจุด (Skella จาก L6, Gentlemen Bastards จาก L7/L8, Chanterella จาก L13), Special Event "The Gentleman's Hello", Send-Off คู่ "The Lich Robbed"/"The Lich Untouched" **ไขปม "เจือคำโกหก" จาก L19 สำเร็จ** (Ezzat เคยเกือบเป็นลูกศิษย์ Halaster จริง แต่ข้อกล่าวหา "ทรยศ" เป็นการบิดเบือนของ Halaster เอง), ยืนยัน Gate #26 "The Jigsaw Gate" ฝั่ง L20 (พื้นที่ 9b) พร้อมพบความคลาดเคลื่อนเล็กน้อยกับที่บันทึกไว้ตอน L15 (adult white dragon vs. beholder — เก็บทั้งคู่ไว้) — **ยังคงเป็น 1 ไฟล์ EP** แม้เนื้อหาใหญ่มาก เพราะเกิดในสถานที่เดียวต่อเนื่องกัน (ถ้ำ→หอคอย) ไม่มีการย้ายสถานที่
+  - Level 21: `CH03-terminus-level.md` + **`EP03 - Terminus Level, Part 1 - The Deep Mines.md`** (22 พื้นที่หลัก + sub-area ของเหมือง duergar — เจ้าชายลี้ภัย Valtagar Steelshadow, ภรรยามังกร Stalagma Steelshadow ปลอมตัว, arcanaloth คู่ Aximus/Exekarus, ultroloth Xindulus, ผีนักบวช Brythia Mulspeer, ฉากเปิด "Terminus Tour" กวนๆ ของ Halaster) + **`EP04 - Terminus Level, Part 2 - Judged From on High.md`** (กลไกพิจารณาคดีเต็มรูปแบบ Act I-III, ผู้พิพากษา Fazrian planetar ตกสวรรค์, อัยการ Sim/Halaster's Simulacrum throwback จาก L12, ลูกขุน 5-6 คน, พยาน DM Toolkit ครบทุกตัวเลือกจาก L2 ถึง Skullport, คำตัดสิน 4 แบบ + กลไก Redemption, Gate #30 ยืนยันครบไม่มีข้อคลาดเคลื่อน, Epilogue คำแนะนำคาถา wish) — **Level 21 เป็นชั้นที่สี่ที่ต้องแตกเป็น 2 EP แบบ Skullport/Dweomercore/Obstacle Course/Seadeeps** เพราะ "Judged From on High" เป็นฉากศาล/สังคมล้วนๆ คนละประเภทกับดันเจี้ยนสำรวจ (areas 1-22) — **นี่คือ EP ปิด Act 9 สมบูรณ์**
 
-**ยังไม่เริ่ม**: Level 20 (Runestone Caverns), Level 21 (Terminus Level) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
+**ยังไม่เริ่ม**: Act 10 — Halaster's Reckoning (Level 22-23, ไฟนอลแคมเปญ) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
 
 รายละเอียด checklist แบบละเอียดทุกบรรทัดอยู่ใน [`PROGRESS.md`](./PROGRESS.md) — ไฟล์นี้ (`NEXT-SESSION.md`) เป็นตัวสรุป "ทำอย่างไรต่อ" ไม่ใช่ตัวแทน PROGRESS.md อัปเดตทั้งสองไฟล์คู่กันเสมอเมื่อทำงานเสร็จแต่ละก้อน
 
 ---
 
-## 2. งานถัดไปแบบเจาะจง — Act 9: The Deepest Halls, Level 20 (Runestone Caverns) — Chapter 2
+## 2. งานถัดไปแบบเจาะจง — Act 10: Halaster's Reckoning, Level 22 (Shadowdusk Hold) — Chapter 1 (เปิด Act ใหม่)
 
-**Level 19 (Caverns of Ooze) เสร็จแล้ว** (EP01 ✅) ต่อไปคือ **Level 20 (Runestone Caverns)** — Chapter 2 ของ Act 9 เดียวกัน (โฟลเดอร์ `ACT09-the-deepest-halls/` มีอยู่แล้ว ไม่ต้องสร้างใหม่) — เลข EP นับต่อเนื่องจาก EP01 คือเริ่มที่ **EP02**
+**Act 9 (Level 19-20-21) จบสมบูรณ์แล้วทั้ง Act** ต่อไปคือ **Act 10: Halaster's Reckoning** — Act สุดท้ายของทั้งแคมเปญ (Level 22-23) เริ่มด้วย **Level 22 (Shadowdusk Hold)** — ต้องสร้างโฟลเดอร์ Act ใหม่ `ACT10-halasters-reckoning/` (Act 9 ปิดแล้ว ไม่ใช้ต่อ) — เลข EP รีเซ็ตเริ่มที่ **EP01** เพราะเป็น Act ใหม่ (กฎ 3.6/6: เลข EP นับต่อเนื่อง**ทั้ง Act** ไม่ใช่ทั้งแคมเปญ)
 
 | Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) | สถานะ |
 |---|---|---|---|---|
-| 19 | `Level 19: Caverns of Ooze` | `Level XIX: Caverns of Ooze` | 71,991 / 61,220 ตัวอักษร | ✅ เสร็จ (EP01) |
-| 20 | `Level 20: Runestone Caverns` | `Level XX: Runestone Gardens` | 92,358 / 83,083 ตัวอักษร | ⬜ ถัดไป |
-| 21 | `Level 21: Terminus Level` | `Level XXI: The Terminus Level` | 91,068 / 88,893 ตัวอักษร | ⬜ รอคิว |
+| 22 | `Level 22: Shadowdusk Hold` | `Level XXII: Shadowdusk Hold` | 92,007 / 152,920 ตัวอักษร | ⬜ ถัดไป |
+| 23 | `Level 23: Mad Wizard's Lair` | `Level XXIII: Mad Wizard's Lair` | 104,784 / 358,889 ตัวอักษร | ⬜ รอคิว (ไฟนอลแคมเปญ) |
 
-*(ขนาดจากการ query ต้นฉบับ JSON ตรงๆ ล่วงหน้า — ยังไม่ได้อ่านเนื้อหาเต็มของ L20/L21 ต้องอ่านจริงตอนเริ่มทำแต่ละชั้น ชื่อ Companion ของ L20 ต่างจาก WDMM เล็กน้อย "Runestone Gardens" ไม่ใช่ "Runestone Caverns" — ใช้ชื่อ WDMM ตอน `.find(p => p.name === ...)` เสมอ)*
+*(ขนาดจากการ query ต้นฉบับ JSON ตรงๆ ล่วงหน้า — ยังไม่ได้อ่านเนื้อหาเต็มของทั้งสองชั้น ต้องอ่านจริงตอนเริ่มทำ — **สังเกต: Companion ของ L23 ใหญ่ถึง 358,889 ตัวอักษร ใหญ่กว่าไฟล์ Companion อื่นในทั้งแคมเปญเกินสองเท่า (ใหญ่กว่า L21's trial ที่ 88,893 ถึง 4 เท่า) — เกือบแน่นอนว่า L23 จะต้องแตกเป็นหลาย EP เมื่อถึงตอนนั้น อย่าตัดสินใจล่วงหน้า ต้องอ่านเนื้อหาจริงก่อน แต่เตรียมใจไว้ว่าอาจเป็นชั้นที่ใหญ่ที่สุดในทั้งแคมเปญ)*
 
-**บริบทที่ต้องรู้ก่อนเริ่ม Level 20** (จากสิ่งที่สะสมมาตลอดแคมเปญ + สิ่งที่ยืนยันแล้วตอนเขียน L19 — ยังไม่ได้อ่านเนื้อหาเต็มของ L20 เอง ต้องอ่านจริงตอนเริ่มทำ):
-- **Ezzat ลิชคือหัวใจของชั้นนี้ทั้งชั้น**: ตาม `03-halasters-game-framework.md` — Ezzat คือเป้าหมายอันดับ 3 ของ Halaster's Goals, ถูกคืนชีพที่ไคลแมกซ์ Dweomercore Tournament (Act 5, EP04) มาก่อนแล้ว — **สำคัญมาก อย่าลืมครอสเรฟ EP04 ของ Act 5 (Dweomercore) ตอนเขียน L20** ว่า Ezzat กลับมามีชีวิต (undeath) ในสภาพ/บริบทแบบไหน
-- **Genie สองตนจาก L19 ฝากเควสต์ไว้แล้ว**: Ichthyglug (marid) และ Jarûk (dao) ต่างขอให้ปาร์ตี้เอา phylactery ของ Ezzat มาแลกอิสรภาพของตัวเอง มอบให้ตนไหนจะสร้างศัตรูกับอีกตนอัตโนมัติ (ดู Special Events "Dao-Daddy Beatdown"/"Marid Meltdown" ใน EP01) — decision นี้ควรมีผลกระทบชัดเจนตอนเขียน Aftermath ของ L20
-- **Halaster-Ezzat มีปมอดีตร่วมกันที่ Dweomercore**: Send-Off ของ L19 (EP01) ให้นิมิตว่า Ezzat เคยเป็นลูกศิษย์ของ Halaster ที่ Dweomercore ก่อนถูกปฏิเสธ/ทรยศ (ต้นฉบับกำกับไว้ว่า "เจือด้วยคำโกหก" ไม่ใช่ความจริงทั้งหมด) — ต้องตัดสินใจตอนเขียน L20 ว่าส่วนไหนจริง ส่วนไหนโกหก
-- **Heads Up ที่บันทึกไว้แล้วจาก L19 (area 16)**: Ezzat วาง *symbol* spell ดักไว้ที่ "Area 1" ฝั่ง L20 (Investigation DC 20 ตรวจจับ, พลาด/เดินผ่านคนแรกกระตุ้น necrotic 10d10, CON save DC 20 ลดครึ่ง) — ต้องเช็คว่าตรงกับพื้นที่ไหนจริงตอนอ่านต้นฉบับ L20
-- **The Runestone ถูกพูดถึงล่วงหน้าแล้วที่ L19 area 7** (ในตาราง Beholder Memories ผลลัพธ์ 41-60): "หินงอกขนาดหอคอยที่มีคริสตัลก้อนใหญ่อยู่บนยอด" อยู่ที่ **L20 area 14** — เป็น callback เล็กๆ ที่ผู้เล่นอาจจำได้ถ้าเคยสูดสปอร์ตอน L19
-- **Gate #26 "The Jigsaw Gate" (L15↔L20)**: บันทึกไว้แล้วตอนเขียน L15 ว่าเป็นจิ๊กซอว์หินหลายร้อยชิ้น (ถอดผิด = adult white dragon โจมตี) — ยังไม่เคยระบุพื้นที่ฝั่ง L20 ต้องคอนเฟิร์มตอนอ่านต้นฉบับ L20
-- **ยังไม่มีการเช็ค**: แฟกชันหลัก/ธีมของ L20 (Runestone Caverns/Gardens) ยังไม่รู้จนกว่าจะอ่านเนื้อหาเต็ม รวมถึงต้องเช็คว่า Companion เพิ่มกลไกระดับชั้นแบบเดียวกับ Deadwood (L18)/Alterdeep (L17) หรือไม่ — **อย่าตัดสินใจ 1 EP vs. หลาย EP ก่อนอ่านเนื้อหาจริง**
+**บริบทที่ต้องรู้ก่อนเริ่ม Level 22** (จากสิ่งที่สะสมมาตลอดแคมเปญ — ยังไม่ได้อ่านเนื้อหาเต็มของ L22 เอง ต้องอ่านจริงตอนเริ่มทำ):
+- **House Shadowdusk** คือแฟกชัน "Minor (แต่ทรงอิทธิพลสุด)" ตาม [`03-halasters-game-framework.md`](./03-halasters-game-framework.md) บรรทัดตาราง Factions — ตระกูลที่เพี้ยนจากการสัมผัส Far Realms นำโดยพี่น้อง death knight **Dezmyr/Zalthar** วางแผนแก้แค้น Waterdeep — ระบุไว้แล้วว่าเป็น **ตัวร้ายรองสุดท้ายของทั้งแคมเปญ** (รองจาก Halaster เอง)
+- **Halaster's Goal #4 "โค่น Waterdeep"** ผูกกับชั้นนี้โดยตรง — Halaster สนใจให้ House Shadowdusk เป็นหุ่นเชิดคุม Waterdeep เพื่อขยายอิทธิพล/ถ่ายรายการซีซั่นใหม่
+- **L21 area 19a** คือทางเข้า Level 22 (เฝ้าโดย ultroloth Xindulus ที่อาจตายไปแล้วหรือหนีมาที่นี่ถ้ารอดจากการพิจารณาคดี L21 — Xindulus พยายามสร้างพันธมิตรกับ death knight ที่ Shadowdusk Hold ตามที่ระบุใน Aftermath ของ EP04)
+- **Gate #31 "Gate of the Mad Mage" (L22↔L23)** — ประตูสุดท้ายในตาราง 31 บาน สลักใบหน้า Halaster เอง ดวงตาเคลื่อนตามผู้เข้าใกล้ ต้อง "ยื่นเวทมนตร์แลกทางผ่าน" ไม่งั้นโดนกลายเป็นหิน — รอคอนเฟิร์มพื้นที่ทั้งสองฝั่งตอนเขียนจริง
+- **Level 23 คือ Mad Wizard's Lair = ห้องส่วนตัวของ Halaster เอง** บทสรุปของทั้งแคมเปญ — ปมค้างที่ต้องได้รับคำตอบที่นี่ตาม Halaster's Goals 7 ข้อ: **Goal #2 "คนที่คู่ควร"** (ศิษย์คนต่อไปที่เอาชนะเขาได้), **Goal #7 "เงาของ Jhesiyra"** (การหายตัวไปของ Jhesiyra Kestellharp ที่หลอกหลอนเขา — ธงไว้ตั้งแต่ระดับกลางแคมเปญว่าจะเข้าเรื่องเต็มที่นี่) — Halaster **ไม่ทำ deus ex machina ช่วยตัวเองและไม่ฆ่าปาร์ตี้ตรงๆ จนกว่าจะถึงฉากดวลจริงที่ L23** ตามกรอบเกมทั้งแคมเปญ
+- **ก่อนเริ่ม Level 22 ต้องอ่าน [`03-halasters-game-framework.md`](./03-halasters-game-framework.md) ทั้งไฟล์ใหม่อีกรอบ** โดยเฉพาะ Goal #4/#2/#7 และ Gate #31 เพื่อเตรียมบริบทให้ครบก่อนเขียน — ไฟล์นี้ไม่ได้ถูกอ่านเต็มมาตั้งแต่ต้น Act 9
 
 **ขั้นตอนที่ต้องทำ** (ตามลำดับ, อ้างอิง workflow ของ `/build-ep` skill):
 
 1. อ่าน [`adventure-builder/journal-template.md`](../../adventure-builder/journal-template.md) และ [`adventure-builder/structure-guide.md`](../../adventure-builder/structure-guide.md) และ [`adventure-builder/canon-reference.md`](../../adventure-builder/canon-reference.md) ให้ครบทั้งไฟล์ก่อนเริ่มเขียนอะไรทั้งสิ้น (บังคับตาม skill — ห้ามข้าม แม้จะทำมาหลายรอบแล้ว กฎอาจถูกแก้ระหว่างทาง)
-2. เพิ่ม `CH02-runestone-caverns.md` ในโฟลเดอร์ `ACT09-the-deepest-halls/` ที่มีอยู่แล้ว (ไม่ต้องสร้างโฟลเดอร์ใหม่)
-3. เลข EP นับต่อเนื่องจาก EP01 — Level 20 เริ่มที่ **EP02**
-4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 20: Runestone Caverns` (WDMM) / `Level XX: Runestone Gardens` (Companion — ชื่อต่างกัน!)
-5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ — **ต้องอ่านเนื้อหาก่อนตัดสินใจว่าจะแตกเป็นหลาย EP หรือไม่** (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว ใช้เกณฑ์ "เนื้อหาต่างประเภทกันจริงจนแยกอ่าน/แยกรันได้อย่างเป็นธรรมชาติ" ตามหัวข้อ 5.3)
-6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
+2. **สร้างโฟลเดอร์ Act ใหม่** `ACT10-halasters-reckoning/` พร้อม `00-act-outline.md` (ดูตัวอย่างโครงสร้างจาก `ACT09-the-deepest-halls/00-act-outline.md`) — Act นี้มี Level 22-23 เท่านั้น (2 ชั้น สั้นกว่า Act อื่นเพราะเป็นไฟนอล) ตัดสินใจตอนเขียนว่าจะแยก Chapter ต่อ Level (`CH01-shadowdusk-hold.md`/`CH02-mad-wizards-lair.md`) หรือยุบ Chapter เดียวถ้า Act นี้สั้นพอ
+3. เลข EP เริ่มใหม่ที่ **EP01** (Act ใหม่)
+4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 22: Shadowdusk Hold` (WDMM) / `Level XXII: Shadowdusk Hold` (Companion)
+5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ — **ต้องอ่านเนื้อหาก่อนตัดสินใจว่าจะแตกเป็นหลาย EP หรือไม่** (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว ใช้เกณฑ์ "เนื้อหาต่างประเภทกันจริงจนแยกอ่าน/แยกรันได้อย่างเป็นธรรมชาติ" ตามหัวข้อ 5.3 — Companion ของ L22 ใหญ่กว่า WDMM ถึง 1.7 เท่า ให้ระวังกลไกระดับชั้นแบบเดียวกับที่เจอตอน L17/L21)
+6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน — **เมื่อจบ L22 ให้เตรียม context เปิด L23 (ไฟนอลแคมเปญ) ไว้ในไฟล์นี้ล่วงหน้าเหมือนที่ทำทุก Level ก่อนหน้า — โดยเฉพาะเตือนตัวเองเรื่องขนาดมหึมาของ Companion L23 (358,889 ตัวอักษร)**
 
 ---
 
@@ -171,8 +171,8 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
 | Crystal & Sea | Level 16-18 | 17-18 | ✅ ครบ (Act 8, EP01-04) |
-| **The Deepest Halls** | **Level 19-21** | **18-19** | **🔄 กำลังทำ — ดูหัวข้อ 2 (Level 20 ถัดไป, Chapter 2, EP02 — Level 19 เสร็จแล้ว)** |
-| Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
+| The Deepest Halls | Level 19-21 | 18-19 | ✅ ครบ (Act 9, EP01-04) |
+| **Halaster's Reckoning** | **Level 22-23 (ไฟนอล)** | **19-20** | **🔄 กำลังทำ — ดูหัวข้อ 2 (Level 22 ถัดไป, เปิด Act ใหม่ `ACT10-halasters-reckoning/`, EP01)** |
 
 ---
 
@@ -191,7 +191,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 ## 8. เมื่อผู้ใช้พิมพ์ "ทำต่อ" ในเซสชันถัดไป
 
 1. อ่านไฟล์นี้ทั้งหมดก่อน
-2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 20 (Runestone Caverns, Chapter 2 ของ Act 9 — EP02) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
+2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 22 (Shadowdusk Hold, เปิด Act 10 ใหม่ — EP01) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
 3. เข้าสู่ขั้นตอนในหัวข้อ 2 ทันที ไม่ต้องถามซ้ำเรื่อง scope/รูปแบบที่ตกลงกันไปแล้วในหัวข้อ 3-5
 4. ทำงานทีละ EP แล้วรายงานผล + ถามว่าทำต่อเลยไหมทุกครั้ง (ตามกฎข้อ 10 ในหัวข้อ 3)
 5. อัปเดตไฟล์นี้ทุกครั้งที่จบก้อนงานใหญ่ (จบ 1 EP ขึ้นไป) ให้ "สถานะโดยรวม" (หัวข้อ 1) และ "งานถัดไปแบบเจาะจง" (หัวข้อ 2) ตรงกับความจริงเสมอ — ไฟล์นี้ต้อง**ไม่ล้าสมัย**ไม่ว่าจะกลับมาทำต่อเมื่อไหร่
