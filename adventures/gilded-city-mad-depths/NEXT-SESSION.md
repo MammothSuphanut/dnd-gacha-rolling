@@ -1,6 +1,6 @@
 # Next Session — Resume Point (อ่านไฟล์นี้ก่อนเริ่มงานทุกครั้ง)
 
-**อัปเดตล่าสุด**: 2026-08-15 (หลังจบ Level 13 — ต่อไปคือ Level 14 Arcturiadoom, Chapter 2 ของ Act 7)
+**อัปเดตล่าสุด**: 2026-08-15 (หลังจบ Level 14 Arcturiadoom — ต่อไปคือ Level 15 Obstacle Course, Chapter 3 ของ Act 7)
 
 > ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วทำงานต่อได้ทันทีโดยไม่เพี้ยนจากรูปแบบ/มาตรฐานเดิม — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้เริ่มจากหัวข้อ **"งานถัดไปแบบเจาะจง"** ด้านล่างได้เลย ไม่ต้องถามซ้ำว่าจะทำอะไร
 
@@ -26,40 +26,42 @@
   - Level 10: `CH01-muirals-gauntlet.md` + `EP01 - Muiral's Gauntlet (Level 10).md` ครบ 30 พื้นที่ รวม "Muiral's Mad Dash" โครงเรื่องไล่ล่า/หลบหนี, Halaster's Game สองเป้าหมาย ("Muiral's Ugly Mug" บังคับ Muiral ส่องกระจก + "The Auvryndar Armageddon" ยุยง Gorzil ก่อกบฏ), สงครามสามฝ่าย Muiral vs. House Auvryndar vs. สายลับ House Freth (Xarann A'Daragon) — **ยังคงเป็น 1 ไฟล์ EP** (ไม่แตกแบบ Level 9) เพราะเนื้อหาทั้งหมดเกิดในดันเจี้ยนเดิม ไม่มีการย้ายไปสถานที่นอกดันเจี้ยน — Halaster's Gate 5 บาน (มากที่สุดตั้งแต่ L6) ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข (ยืนยัน Gate #19 ที่แก้ตอน L8 ด้วย)
   - Level 11: `CH02-troglodyte-warrens.md` + `EP02 - Troglodyte Warrens (Level 11).md` ครบ 17 พื้นที่ รวม **The Balhannoth** ที่ Companion เพิ่มเข้ามา (นักล่าทะลุมิติจาก Shadowfell ที่ House Auvryndar ลักลอบดึงเข้ามาแต่ควบคุมไม่ได้ ยึดพื้นที่ 7 เป็นรัง สร้างภาพลวงตา "สวรรค์ปลอม"), Special Event "Clash of the Titans" (behir ปะทะ balhannoth, Halaster ถ่ายทอดสดเป็นเกมโชว์), สงคราม House Auvryndar vs. House Freth ต่อเนื่องจาก L10 — **ยังคงเป็น 1 ไฟล์ EP** (จุดยืนยันที่ 3 ต่อจาก L8, L10 — Companion เองบอกว่าชั้นนี้ควรจบในเซสชันเดียว) — Halaster's Gate 3 บาน (ไป L6/L7/L8) ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข
   - Level 12: `CH03-the-maze-level.md` + `EP03 - The Maze Level (Level 12).md` ครบ 19 พื้นที่หลัก + 45 sub-area รวม **"Halaster Gets Hitched"** ปมเรื่อง 3 องก์เต็มรูปแบบจาก Companion (Erelal Freth ลักพาตัว Sim simulacrum ของ Halaster มาบังคับแต่งงาน จบด้วย Halaster ตัวจริงเปิดโปงกลางพิธี), Special Event "The Wedding Present" (Drivvin เรียก goristro คุมไม่ได้) — **ยังคงเป็น 1 ไฟล์ EP** แม้ขนาดใหญ่สุดของ Act (170K ตัวอักษร) เพราะพิธีทั้งหมดเกิดในป้อมปราการเดียวกับที่สำรวจ (เทียบเคียง L7's Maddgoth's Dance, และ L10 ที่ใหญ่กว่านี้อีกก็ยังเป็น 1 EP ได้) — Halaster's Gate 4 บาน (มากที่สุดตั้งแต่ L10 — ไป L6/L10/L14/L19) ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข — **นี่คือ EP ปิด Act 6**
-- 🔄 **Act 7 — Graveyard & Ruin** (`ACT07-graveyard-and-ruin/`): **Level 13 เสร็จ, Level 14-15 รอคิว**
+- 🔄 **Act 7 — Graveyard & Ruin** (`ACT07-graveyard-and-ruin/`): **Level 13-14 เสร็จ, Level 15 รอคิว**
   - Level 13: `CH01-trobriands-graveyard.md` + `EP01 - Trobriand's Graveyard (Level 13).md` ครบ 12 พื้นที่หลัก + sub-area รวม **"Mad Mage: Fury Road"** การปรับโฉมทั้งชั้นจาก Companion เป็นทะเลทรายรกร้างสไตล์ Mad Max (สเกล 1 ตาราง = 1 ไมล์, กฎยานพาหนะ deathcycle/death jeep, Extreme Heat), Halaster's Game "Zox Hunt" เควสต์คุ้มกัน Zox Clammersham 5 ช่วง, Special Events 4 อัน (Death Valley, Historic on the Fury Road, Out of Gas, Tremors) — **ยังคงเป็น 1 ไฟล์ EP** แม้เป็นจุดทดสอบเกณฑ์ตัดสินใจที่สุดขั้วที่สุด (รูปแบบการเดินทางทั้งชั้นเปลี่ยนหมด ไม่ใช่แค่ special event ฝังอยู่) เพราะยังเกิดในแผนที่ 13 พื้นที่เดิม ไม่ย้ายสถานที่จริง — Halaster's Gate 1 บาน (น้อยที่สุดเท่าที่เจอมา — ไป L6) ครอสเรฟตรงกับตารางกลาง ไม่ต้องแก้ไข
+  - Level 14: `CH02-arcturiadoom.md` + `EP02 - Arcturiadoom (Level 14).md` ครบ 41 พื้นที่หลัก + sub-area (ใหญ่ที่สุดในแคมเปญจนถึงตอนนี้ — WDMM 111,713 ตัวอักษร) รวม **"Halaster's Game: The Mid-Season Finale"** กลไก Companion ครอบคลุมทั้งชั้น (Weapon of Mass Disintegration นับถอยหลัง 10 นาที ต้องหากุญแจ mithral 6 ดอกกระจายทั่วดันเจี้ยน), ยืนยัน **Arcturia เป็นลิชจริง** ตามปมจาก L13, NPC เด่น (Emberosa/Hrossk ยักษ์ไฟสร้าง Mecha-Halaster, Doomcrown/Ernie the flumph, Vanar Freth ดรอว์วิ่งหนี, Alussiarr rakshasa ที่ถูกกักขัง, Xebekal beholder-ผ้าทอ, Cheeky Pluckers), Send-Off ผูกกับ hook ใหญ่ของแคมเปญ (Halaster เหวี่ยงปาร์ตี้เข้า demiplane 3 เดือน, Mecha-Halaster จะบุก Waterdeep ตอนกลับมา) — **ยังคงเป็น 1 ไฟล์ EP** เพราะกลไก WMD ยังเกิดในดันเจี้ยนเดียวกันทั้งหมด ไม่ย้ายสถานที่จริง (เทียบเคียง Level 6's full-level lockdown) — Halaster's Gate 3 บาน (มากที่สุดตั้งแต่ L10 — ไป L9/L12/L17) ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข
 
-**ยังไม่เริ่ม**: Level 14-15 (ที่เหลือของ Act 7) และ Act 8 เป็นต้นไป (Undermountain Level 16-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
+**ยังไม่เริ่ม**: Level 15 (ปิด Act 7) และ Act 8 เป็นต้นไป (Undermountain Level 16-23) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
 
 รายละเอียด checklist แบบละเอียดทุกบรรทัดอยู่ใน [`PROGRESS.md`](./PROGRESS.md) — ไฟล์นี้ (`NEXT-SESSION.md`) เป็นตัวสรุป "ทำอย่างไรต่อ" ไม่ใช่ตัวแทน PROGRESS.md อัปเดตทั้งสองไฟล์คู่กันเสมอเมื่อทำงานเสร็จแต่ละก้อน
 
 ---
 
-## 2. งานถัดไปแบบเจาะจง — Act 7: Graveyard & Ruin, Level 14 (Arcturiadoom) — Chapter 2
+## 2. งานถัดไปแบบเจาะจง — Act 7: Graveyard & Ruin, Level 15 (Obstacle Course) — Chapter 3
 
-**Level 13 จบแล้ว** ต่อไปคือ **Level 14 (Arcturiadoom)** = Chapter 2 ของ Act 7 (ใช้ `ACT07-graveyard-and-ruin/00-act-outline.md` ที่มีอยู่แล้วเป็นฐาน ไม่ต้องสร้างโฟลเดอร์ใหม่) เลข EP ต่อเนื่องจาก EP01 → **EP02**
+**Level 13-14 จบแล้ว** ต่อไปคือ **Level 15 (Obstacle Course)** = Chapter 3 ของ Act 7 (ใช้ `ACT07-graveyard-and-ruin/00-act-outline.md` ที่มีอยู่แล้วเป็นฐาน ไม่ต้องสร้างโฟลเดอร์ใหม่) เลข EP ต่อเนื่องจาก EP02 → **EP03** — **นี่คือ EP ปิด Act 7**
 
 | Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) | สถานะ |
 |---|---|---|---|---|
 | 13 | `Level 13: Trobriand's Graveyard` | `Level XIII: Trobriand's Graveyard` | 59,386 / 82,409 ตัวอักษร | ✅ เสร็จ (EP01, 12 พื้นที่) |
-| 14 | `Level 14: Arcturiadoom` | `Level XIV: Arcturiadoom` | 111,713 / 71,267 ตัวอักษร | ⬜ ถัดไป |
+| 14 | `Level 14: Arcturiadoom` | `Level XIV: Arcturiadoom` | 111,713 / 71,267 ตัวอักษร | ✅ เสร็จ (EP02, 41 พื้นที่) |
+| 15 | `Level 15: Obstacle Course` | `Level XV: The Obstacle Course` | 135,725 / 105,737 ตัวอักษร | ⬜ ถัดไป — **ใหญ่ที่สุดในแคมเปญจนถึงตอนนี้** |
 
-**Level 14 คือ Arcturiadoom** — บ้านของ **Arcturia** หนึ่งในศิษย์เจ็ดคนของ Halaster (ปรากฏชื่อมาก่อนแล้วเป็น 1 ใน 7 Houses ของ Dweomercore ที่ L9) — Level 13's Host's Send-Off บอกใบ้ไว้แล้วว่า "Arcturiadoom" อาจเป็นรังของ**ลิช** (คำต่อท้าย "-doom" ที่ Halaster ล้อเล่นถึง) — ต้องอ่านเนื้อหาจริงก่อนยืนยัน ขนาด WDMM ใหญ่ที่สุดในบรรดาที่เจอมา (111K) ใกล้เคียง Level 9 (147K) — ต้องอ่านเนื้อหาก่อนตัดสินใจว่าจะแตกเป็นหลาย EP หรือไม่ (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว)
+**หมายเหตุขนาด**: WDMM ของ Level 15 (135,725 ตัวอักษร) แซง Level 14 (111,713) และ Level 9 (147K รวม Companion) ขึ้นเป็นไฟล์ WDMM เดี่ยวใหญ่ที่สุดที่เจอมา — **ต้องอ่านเนื้อหาก่อนตัดสินใจว่าจะแตกเป็นหลาย EP หรือไม่** (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว ใช้เกณฑ์ "เนื้อหาต่างประเภทกันจริงจนแยกอ่าน/แยกรันได้อย่างเป็นธรรมชาติ" ตามหัวข้อ 5.3 — Level 10 ที่ 216K ตัวอักษรรวมก็ยังเป็น 1 EP ได้เพราะไม่ย้ายสถานที่จริง)
 
 **ขั้นตอนที่ต้องทำ** (ตามลำดับ, อ้างอิง workflow ของ `/build-ep` skill):
 
 1. อ่าน [`adventure-builder/journal-template.md`](../../adventure-builder/journal-template.md) และ [`adventure-builder/structure-guide.md`](../../adventure-builder/structure-guide.md) และ [`adventure-builder/canon-reference.md`](../../adventure-builder/canon-reference.md) ให้ครบทั้งไฟล์ก่อนเริ่มเขียนอะไรทั้งสิ้น (บังคับตาม skill — ห้ามข้าม แม้จะทำมาหลายรอบแล้ว กฎอาจถูกแก้ระหว่างทาง)
-2. เขียน `CH02-arcturiadoom.md` ใหม่ (ใช้ `CH01-trobriands-graveyard.md` เป็นแม่แบบ) — เพิ่มลิงก์ Chapter 2 ใน `ACT07-graveyard-and-ruin/00-act-outline.md`
-3. เลข EP ต่อจาก EP01 ของ Level 13 → **EP02** สำหรับ Level 14 (per-Act numbering ต่อเนื่อง ไม่รีเซ็ต) — เว้นแต่เนื้อหาใหญ่พอต้องแตกเป็นหลาย EP (ดูหมายเหตุด้านบน)
-4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 14: Arcturiadoom` (WDMM) / `Level XIV: Arcturiadoom` (Companion)
+2. เขียน `CH03-obstacle-course.md` ใหม่ (ใช้ `CH02-arcturiadoom.md` เป็นแม่แบบ) — เพิ่มลิงก์ Chapter 3 ใน `ACT07-graveyard-and-ruin/00-act-outline.md` พร้อมหมายเหตุว่านี่คือ EP ปิด Act 7
+3. เลข EP ต่อจาก EP02 ของ Level 14 → **EP03** สำหรับ Level 15 (per-Act numbering ต่อเนื่อง ไม่รีเซ็ต) — เว้นแต่เนื้อหาใหญ่พอต้องแตกเป็นหลาย EP (ดูหมายเหตุด้านบน)
+4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 15: Obstacle Course` (WDMM) / `Level XV: The Obstacle Course` (Companion)
 5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ
-6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน
+6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅ + หมายเหตุปิด Act), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน — **เพิ่มเติมสำหรับ EP นี้**: เพราะเป็น EP ปิด Act 7 ให้เตรียมข้อมูลเปิด Act 8 (Crystal & Sea, Level 16-18) ไว้ใน NEXT-SESSION.md ด้วยเหมือนที่เคยทำตอนปิด Act 6
 
-**เนื้อเรื่องคร่าวๆ ของ Level 14** (จากการอ้างอิงที่พบระหว่างเขียน Level 12-13 เท่านั้น ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
-- **Arcturiadoom** — บ้านของ Arcturia ศิษย์ Halaster (ชื่อซ้ำกับ 1 ใน 7 Houses ของ Dweomercore ที่ L9 — Arcturia คือ NPC จริงไม่ใช่แค่ชื่อบ้าน ต้องดูว่าเนื้อหา L14 เชื่อมโยงกับ Dweomercore ไหม)
-- ฮอบกอบลิน Death's Head Phalanx ที่รับใช้ยักษ์ไฟ (fire giant) ตั้งฐานอยู่ที่นี่ (Doomcrown หัวหน้าใหญ่ที่ L13 อ้างถึงซ้ำๆ อยู่ที่นี่)
-- Level 13's Host's Send-Off บอกใบ้ "Arcturiadoom" อาจเป็นรังลิช — ยังไม่ยืนยัน ต้องอ่านเนื้อหาจริง
-- ปาร์ตี้ระดับ 13 กำลังเข้าใกล้ครึ่งทางของ Act 7 (character level 15-17 ตามตาราง milestone) — Act นี้ยังมี Level 15 ต่อจาก Level 14 ด้วย ก่อนเข้าสู่ Act 8
+**เนื้อเรื่องคร่าวๆ ของ Level 15** (จากการอ้างอิงที่พบระหว่างเขียน Level 14 เท่านั้น ยังไม่ได้อ่านเนื้อหาเต็ม — ต้องอ่านจริงตอนเริ่มทำ):
+- ทางเข้าคือบันไดยาวหลายร้อยฟุตจาก L14 พื้นที่ 41 (Watchful Pillars) ลงมาที่ L15 พื้นที่ 1
+- Companion เรียกพื้นที่ 1 ว่า "On Your Mark! Get Set! Go!" — สื่อถึงธีมการแข่งขัน/ด่านอุปสรรค ตรงกับชื่อ "Obstacle Course" ตามต้นฉบับ WDMM
+- ถ้าเลือกเส้นทาง Companion ที่ Level 14 จบด้วยปาร์ตี้ถูกเหวี่ยงเข้า demiplane 3 เดือน (mid-season break) — Level 15 อาจเป็นจุดที่เนื้อเรื่องกลับมาดำเนินต่อหลังพัก หรือ DM อาจเลือกให้ Level 15 เกิดขึ้นก่อนพัก (ต้องอ่านเนื้อหาจริงเพื่อดูว่า Companion วางลำดับเหตุการณ์ไว้อย่างไร)
+- ปาร์ตี้ระดับ 14 กำลังจะจบ Act 7 (character level 15-17 ตามตาราง milestone) — Level 15 เป็นชั้นสุดท้ายของ Act นี้ ก่อนเข้าสู่ Act 8: Crystal & Sea (Level 16-18)
 
 ---
 
@@ -156,7 +158,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
-| **Graveyard & Ruin** | **Level 13-15** | **15-17** | **🔄 L13 เสร็จ, L14 รอคิว — ดูหัวข้อ 2** |
+| **Graveyard & Ruin** | **Level 13-15** | **15-17** | **🔄 L13-14 เสร็จ, L15 รอคิว — ดูหัวข้อ 2** |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
@@ -178,7 +180,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 ## 8. เมื่อผู้ใช้พิมพ์ "ทำต่อ" ในเซสชันถัดไป
 
 1. อ่านไฟล์นี้ทั้งหมดก่อน
-2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 14 (Arcturiadoom, Chapter 2 ของ Act 7) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
+2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 15 (Obstacle Course, Chapter 3 ของ Act 7 — ปิด Act) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
 3. เข้าสู่ขั้นตอนในหัวข้อ 2 ทันที ไม่ต้องถามซ้ำเรื่อง scope/รูปแบบที่ตกลงกันไปแล้วในหัวข้อ 3-5
 4. ทำงานทีละ EP แล้วรายงานผล + ถามว่าทำต่อเลยไหมทุกครั้ง (ตามกฎข้อ 10 ในหัวข้อ 3)
 5. อัปเดตไฟล์นี้ทุกครั้งที่จบก้อนงานใหญ่ (จบ 1 EP ขึ้นไป) ให้ "สถานะโดยรวม" (หัวข้อ 1) และ "งานถัดไปแบบเจาะจง" (หัวข้อ 2) ตรงกับความจริงเสมอ — ไฟล์นี้ต้อง**ไม่ล้าสมัย**ไม่ว่าจะกลับมาทำต่อเมื่อไหร่

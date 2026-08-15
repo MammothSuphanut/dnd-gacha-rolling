@@ -101,6 +101,11 @@
 
 **Level 13 ยังคงเป็น 1 ไฟล์ EP** แม้จะเป็นจุดทดสอบเกณฑ์ตัดสินใจที่สุดขั้วที่สุดเท่าที่เจอมา (Companion เปลี่ยนรูปแบบการเดินทางทั้งชั้นเป็นเควสต์คุ้มกันข้ามทะเลทรายหลายวันด้วยยานพาหนะ ไม่ใช่แค่มี special event ฝังอยู่) — แต่ยังเข้าเกณฑ์เดิมเพราะเนื้อหาทั้งหมดเกิดในแผนที่ 13 พื้นที่เดิม ไม่มีการย้ายไปสถานที่/รูปแบบที่แยกขาดจริงแบบ Level 9's Tournament — ดูรายละเอียดใน `00-act-outline.md`
 
+- [x] **CH02-arcturiadoom.md** สร้างแล้ว (Quick Notes, Previously on DotMM, ตารางประตูเวท 3 บาน, หมายเหตุยืนยัน Arcturia เป็นลิชจริง)
+- [x] **EP02: Arcturiadoom (Level 14)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 41 พื้นที่หลัก + sub-area (Entrance to Arcturiadoom ถึง Watchful Pillars) รวม **"Halaster's Game: The Mid-Season Finale"** กลไก Companion ครอบคลุมทั้งชั้น (Weapon of Mass Disintegration นับถอยหลัง 10 นาที ต้องหากุญแจ mithral 6 ดอก F/H/J/U/V/Y กระจายทั่วดันเจี้ยน พร้อม 3 วิธีจับเวลา), NPC เด่น (Emberosa หัวหน้ายักษ์ไฟที่สร้าง Mecha-Halaster, Hrossk ยักษ์ไฟช่างตีเหล็กบ่นเรื่องค่าล่วงเวลา, Doomcrown ลูกชายที่แตกคอกับ Azrok, Ernie flumph คู่หู Doomcrown, Vanar Freth ดรอว์วิ่งหนีสไตล์ Benny Hill, Alussiarr rakshasa ที่ถูกกักขังพร้อมฉากเผชิญหน้ากับ Halaster, Xebekal beholder ที่ถูกแปลงเป็นผ้าทอ, Ellix Gaspar อดีตนักเรียน Dweomercore ถูกสาป feeblemind, Guffaw Gravelstock deep gnome กินหิน, Cheeky Pluckers 5 คนที่ถูกจับแปลงร่าง, มังกรฟ้า Tenragos/Mylegosa ปลอมตัวเต้นรำ), Send-Off คู่ (Standard + Host's ที่ผูกกับ hook ใหญ่ของแคมเปญ — Halaster เหวี่ยงปาร์ตี้เข้า demiplane 3 เดือนหลังปิด WMD สำเร็จ, Mecha-Halaster จะบุก Waterdeep ตอนกลับมา), Halaster's Gate 3 บาน (มากที่สุดตั้งแต่ L10 — ไป L9/L12/L17 ครอสเรฟตรงกับตารางกลางทุกบาน ไม่ต้องแก้ไข), เพิ่มของรางวัลทางเลือกจาก Companion ครบ 6 ชิ้น (+2 arrows พื้นที่ 9b, Quiver of Ehlonna พื้นที่ 15, Ring of Jumping พื้นที่ 30, Trident of Fish Command พื้นที่ 31, Instrument of the Bards พื้นที่ 39c, Wand of Web พื้นที่ 40b)
+
+**Level 14 ยังคงเป็น 1 ไฟล์ EP** แม้ใหญ่ที่สุดในแคมเปญจนถึงตอนนี้ (WDMM 111,713 ตัวอักษร, 41 พื้นที่หลัก) เพราะกลไก WMD นับถอยหลังครอบคลุมทั้งชั้นยังเกิดในดันเจี้ยนเดียวกัน ไม่ย้ายสถานที่จริง (เทียบเคียง Level 6's full-level "Halaster's Game" lockdown) — ยืนยัน **Arcturia เป็นลิชจริง** ตามปมที่ Level 13's Host's Send-Off ทิ้งไว้ — ดูรายละเอียดใน `00-act-outline.md`
+
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
@@ -111,7 +116,7 @@
 | Twisted Wilds | Level 4-6 | 9-11 | ✅ ครบ (Act 4, EP01-03) |
 | Castle & Swamp | Level 7-9 | 11-13 | ✅ ครบ (Act 5, EP01-04) |
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
-| Graveyard & Ruin | Level 13-15 | 15-17 | 🔄 L13 เสร็จ, L14-15 รอคิว |
+| Graveyard & Ruin | Level 13-15 | 15-17 | 🔄 L13-L14 เสร็จ, L15 รอคิว |
 | Crystal & Sea | Level 16-18 | 17-18 | ⬜ รอคิว |
 | The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
