@@ -133,6 +133,12 @@
 
 **🎉 Act 8: Crystal & Sea แปลครบสมบูรณ์ทั้ง Act แล้ว ณ 2026-08-15** — Level 16-17-18 เต็มรูปแบบ (4 ไฟล์ EP) ปิดฉากด้วยการไถ่บาปมังกรเงามืดและปมปริศนา Baron of Blood ต่อไปคือ **Act 9: The Deepest Halls** (Level 19-21)
 
+## Act 9: The Deepest Halls — เริ่มแล้ว 2026-08-15
+
+- [x] **ACT09-the-deepest-halls/** สร้างโฟลเดอร์ใหม่แล้ว พร้อม `00-act-outline.md` + `CH01-caverns-of-ooze.md` (Quick Notes, Previously on DotMM, หมายเหตุ 1 EP เดียวเพราะต้นฉบับบอกตรงๆ ว่าเป็นชั้นพักสั้นๆ, ตัวแปร "Maximum Absurdity" เป็นตัวเลือกเสริมไม่บังคับ)
+- [x] **EP01: Caverns of Ooze (Level 19)** แปล/ขยายเป็น journal เต็มแล้ว — ครบทั้ง 16 พื้นที่หลัก + sub-area (1a-c/3a-b/5a-b/11a-b/13a-h) รวมดราม่า genie คู่แข่ง **Ichthyglug the marid** (area 1) vs. **Jarûk the dao** (area 11) ที่แข่งกันหา phylactery ของลิช **Ezzat** (L20) มาแลกอิสรภาพ — ปมนี้โยงตรงกับ Halaster's Goal #3 และการคืนชีพ Ezzat กลางไคลแมกซ์ Dweomercore Tournament (Act 5 EP04), เรือ spelljammer *Scavenger* เต็มรูปแบบ (area 13a-h) พร้อมกัปตัน mind flayer หิวโหย **N'ghathrod**, ลัทธิบูชา Ghaunadaur ที่ Halaster แปลงร่างสาวกเป็นอูซมีสติปัญญา, Special Events "Dao-Daddy Beatdown"/"Marid Meltdown" สำหรับตอนปาร์ตี้ย้อนกลับมาหลังตัดสินใจแล้ว, Halaster's Gate 3 บานยืนยันครอสเรฟถูกต้องทุกบาน (Gate #23 ↔ L12 พื้นที่ 8b, Gate #29 ↔ L17 พื้นที่ 8b, Gate #30 ↔ L21 พื้นที่ 23b — บันทึกไว้ล่วงหน้ารอเขียน L21), ปิดท้ายด้วย Send-Off คู่ที่มีนิมิตความสัมพันธ์ Halaster-Ezzat ในอดีต (เจือคำโกหกตามต้นฉบับ) ปูทาง L20
+- [x] **Level 19 ยังคงเป็น 1 ไฟล์ EP** — ต้นฉบับ Companion ระบุตรงๆ ว่าชั้นนี้ตั้งใจให้สั้นและเป็น breather ระหว่างสองชั้นอันตราย แนะนำให้จบในเซสชันเดียว ไม่มีประเด็นเรื่องแตก EP — ดูรายละเอียดใน `CH01-caverns-of-ooze.md`
+
 ## แผนคร่าวๆ Act 3+ ที่เหลือ
 ตามที่คุยกันไว้ จัดกลุ่มชั้นดันเจี้ยนเป็น Act ตาม character-level milestone ของหนังสือ (ปรับได้เมื่อใกล้ถึงจริง):
 
@@ -145,7 +151,7 @@
 | Muiral's Gauntlet | Level 10-12 | 13-15 | ✅ ครบ (Act 6, EP01-03) |
 | Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
 | Crystal & Sea | Level 16-18 | 17-18 | ✅ ครบ (Act 8, EP01-04) |
-| The Deepest Halls | Level 19-21 | 18-19 | ⬜ รอคิว — ต่อไป |
+| The Deepest Halls | Level 19-21 | 18-19 | 🔄 กำลังทำ (Act 9, EP01 เสร็จแล้ว — Level 19) |
 | Halaster's Reckoning | Level 22-23 (ไฟนอล) | 19-20 | ⬜ รอคิว |
 
 ทุกห้องของ WDMM หลักได้ full room breakdown เสมอ (ไม่ตัดเพื่อความสั้น) — ใช้แนวทางเดียวกับ EP1 ของ Act 1 นี้เป็นมาตรฐานความละเอียด, Companion (Quick Notes/Before the Descent/Random Encounters/Areas of Note/Epilogue) ผสานเข้าแต่ละชั้นตามที่ระบุใน [99-notes.md](./99-notes.md), motif "Halaster's Game" ใช้ต่อเนื่องทุกชั้น
