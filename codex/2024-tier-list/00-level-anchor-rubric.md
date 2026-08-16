@@ -81,7 +81,7 @@
 | Control | Severity | เกม 5e วัด CC จาก "ทำอะไรเป้าหมายได้แค่ไหน" ก่อนเสมอ — Breadth/Frequency/Stickiness/LR-bypass ล้วนขยาย/จำกัดผลของ severity นั้น |
 | Support | Magnitude | เช่นเดียวกับ Damage — ค่าที่ได้ต่อครั้งคือแกนหลัก ส่วน Proactive/Reactive เป็นตัวคูณมูลค่าเชิงคุณภาพ |
 | Survivability | Effective HP | เป็นมิติเดียวที่ไม่เคยเป็น D จริง (ทุกคลาสมี hit die) เหมาะเป็นฐาน ส่วน Mitigation/Death Prevention เป็น modifier ที่ปกติจะ D สำหรับ full caster (ดู finding #1) โดยไม่ทำให้เกรดรวมพังเป็น D ทั้งที่ยังมี HP ปกติ |
-| Action Economy | Attack-Action Efficiency | Extra Attack cadence คือกระดูกสันหลังของแกนนี้ (เหมือน Damage) ส่วน Bonus/Reaction/Extra-Action/Resource-Conversion เป็นตัวเสริมชั้นบน |
+| Action Economy | Attack-Action Efficiency | Extra Attack cadence คือกระดูกสันหลังของแกนนี้ (เหมือน Damage) ส่วน Bonus/Reaction/Extra-Action/Resource-Conversion เป็นตัวเสริมชั้นบน — **ชี้แจงเพิ่ม (2026-08-16, ตอนเริ่มชั้น1 Alchemist)**: คลาสที่ไม่มี Extra Attack เลย (full caster ส่วนใหญ่ + hybrid อย่าง Alchemist) แต่ยังมี attack routine ปกติ (1 attack/action) ให้ Primary = **C** (ต่ำกว่า peer 2-attack แต่ยังมีกลไกจริง ไม่ใช่ D) — สงวน **D** ไว้เฉพาะคลาสที่ไม่มี attack routine เลยจริงๆ (full caster ที่พึ่ง save-based spell ล้วนไม่มี attack roll เลย) กันไม่ให้ floor rule ล็อกทุกคลาสไม่มี Extra Attack เป็น D อัตโนมัติทั้งที่ Bonus Action/Metamagic ของบางคลาสยังเก่งจริง (ยืนยันจาก user ตอนทำ Alchemist baseline) |
 | Utility | Magnitude | ระดับความสมบูรณ์ของการแก้ปัญหาคือตัวตัดสินหลัก Breadth/Reliability/Access-Cost/Skill-Check-Layer ขยายผลนั้น |
 | Versatility | Loadout Flexibility | เป็นมิติที่ "คงที่ตายตัวตาม class" ตามที่ finding #1 ของแกนนี้ระบุไว้แล้ว เหมาะเป็นฐานเพราะไม่ผันตาม milestone เหมือนมิติอื่น |
 

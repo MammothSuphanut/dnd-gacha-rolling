@@ -14,8 +14,8 @@
 
 ตาราง Class Baseline แบบ level-indexed (20 แถว × 7 axis ต่อคลาส เทียบกับ Anchor Rubric แต่ละแถว) ต้องเขียนก่อนเริ่มประเมิน subclass overlay ตัวแรกของ class นั้นเสมอ — ดู [00-level-anchor-rubric.md § Workflow เต็ม (3 ชั้น)](00-level-anchor-rubric.md#workflow-เต็ม-3-ชั้น)
 
-- [ ] Alchemist
-- [ ] Artificer
+- [x] Alchemist — [alchemist-level-baseline.md](alchemist-level-baseline.md) (2026-08-16)
+- [x] Artificer — [artificer-level-baseline.md](artificer-level-baseline.md) (2026-08-16)
 - [ ] Sacred Knight
 - [ ] Barbarian
 - [ ] Bard
