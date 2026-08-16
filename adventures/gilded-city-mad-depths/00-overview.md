@@ -1,5 +1,7 @@
 # Gilded City, Mad Depths
 
+**🎉 แคมเปญจบสมบูรณ์แล้ว (2026-08-16)** — ครบทั้ง 10 Act, Level 1-23, จาก Waterdeep ผิวดินลงสู่ก้นบึ้ง Undermountain จนเอาชนะ Halaster Blackcloak ได้สำเร็จใน Act 10 EP04 — ดูสถานะละเอียดที่ [PROGRESS.md](./PROGRESS.md)
+
 - ประเภท: Long Campaign
 - Level range: 1 - 20
 - Theme: Urban Intrigue, Heist, Faction Politics, Megadungeon Crawl, Cosmic Horror (via Astral Nexus tie-in)
@@ -14,7 +16,8 @@
 
 ## สารบัญ Act
 - [Act 1: Dragon Heist](./ACT01-dragon-heist/00-act-outline.md) — level 1-5, บนผิวดิน Waterdeep
-- Act 2 เป็นต้นไป: Undermountain (Dungeon of the Mad Mage) แบ่งเป็นหลาย Act ตามกลุ่มชั้น — จะสร้างโฟลเดอร์ตามลำดับเมื่อใกล้ถึง (ดูแผนคร่าวๆ ที่ [PROGRESS.md](./PROGRESS.md))
+- Act 2-9: Undermountain (Dungeon of the Mad Mage) Level 1-21 แบ่งเป็น 8 Act ตามกลุ่มชั้น — ทุก Act ครบสมบูรณ์แล้ว (ดูรายละเอียดที่ [PROGRESS.md](./PROGRESS.md))
+- [Act 10: Halaster's Reckoning](./ACT10-halasters-reckoning/00-act-outline.md) — level 22-23, ไฟนอลแคมเปญ — **✅ จบสมบูรณ์ทั้งแคมเปญ**
 
 ## ดูเพิ่มเติม
 - [Hook & Antagonist](./01-hook-and-antagonist.md)

@@ -1,8 +1,8 @@
 # Next Session — Resume Point (อ่านไฟล์นี้ก่อนเริ่มงานทุกครั้ง)
 
-**อัปเดตล่าสุด**: 2026-08-15 (หลังจบ Level 21 Terminus Level — **Act 9: The Deepest Halls ปิดสมบูรณ์แล้ว** ทั้ง Level 19-20-21, EP01-04 — ต่อไปคือ **Act 10: Halaster's Reckoning (Level 22-23, ไฟนอลแคมเปญ)** เริ่มที่ **Level 22 (Shadowdusk Hold), โฟลเดอร์ Act ใหม่ `ACT10-halasters-reckoning/`, EP01**)
+**🎉 แคมเปญจบสมบูรณ์แล้ว (2026-08-16)** — **EP04: Mad Wizard's Lair, Part 3 - The Mad Mage Showdown เสร็จสมบูรณ์** ปิด Act 10, ปิด Level 23, **ปิดทั้งแคมเปญ Gilded City: Mad Depths** — ไม่มีงาน EP/Chapter/Act ถัดไปให้ทำต่อแล้ว หัวข้อ "งานถัดไปแบบเจาะจง" (§2) ด้านล่างจึงถูกแทนที่ด้วยสรุปปิดโปรเจกต์ — ไฟล์นี้เก็บไว้เป็นบันทึกประวัติของกระบวนการทำงานเท่านั้น ถ้าผู้ใช้อยากทำงานใหม่กับแคมเปญนี้ (แก้ไข EP เก่า, เพิ่มเนื้อหาเสริม, ฯลฯ) ให้ถามผู้ใช้ว่าต้องการอะไรเจาะจง แทนที่จะสมมติว่ามี Act/Level ถัดไปให้ทำ
 
-> ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วทำงานต่อได้ทันทีโดยไม่เพี้ยนจากรูปแบบ/มาตรฐานเดิม — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้เริ่มจากหัวข้อ **"งานถัดไปแบบเจาะจง"** ด้านล่างได้เลย ไม่ต้องถามซ้ำว่าจะทำอะไร
+> ไฟล์นี้มีไว้ให้ session ถัดไป (หรือ AI ตัวใหม่ที่ไม่มี context เดิม) อ่านแล้วเข้าใจสถานะโปรเจกต์ได้ทันที — ถ้าผู้ใช้พิมพ์ "ทำต่อ" ให้แจ้งว่าแคมเปญจบสมบูรณ์แล้วตามหัวข้อนี้ แล้วถามว่าต้องการทำอะไรต่อ (เช่น เริ่มแคมเปญใหม่ แก้ไข EP เก่า หรืออื่นๆ) ไม่ต้องถือว่ามีงานค้างอัตโนมัติ
 
 ---
 
@@ -40,39 +40,25 @@
   - Level 20: `CH02-runestone-caverns.md` + `EP02 - Runestone Caverns (Level 20).md` ครบ 23 พื้นที่หลัก + sub-area ทั้งหมด (4a-c/6a-c/8a-d/9a-b/11a-c/12a-c/13a-g/22a-b) — payoff เต็มรูปแบบของปม Ezzat: บุก Stalagmite Tower lair ของลิช (Roleplaying+Tactics เต็ม, vampire คู่, animated staff มีสติปัญญา, marilith เฝ้า phylactery), Halaster's Game "จอมมารผู้เคยรัก" เผยว่า Halaster เคยรัก Ezzat ราวพี่น้อง, ตาราง Dramatized Visions of the Past ที่ EP นี้แต่งเติมเอง (ต้นฉบับอ้าง compendium table ที่ไม่มีในไฟล์ source), throwback หลายจุด (Skella จาก L6, Gentlemen Bastards จาก L7/L8, Chanterella จาก L13), Special Event "The Gentleman's Hello", Send-Off คู่ "The Lich Robbed"/"The Lich Untouched" **ไขปม "เจือคำโกหก" จาก L19 สำเร็จ** (Ezzat เคยเกือบเป็นลูกศิษย์ Halaster จริง แต่ข้อกล่าวหา "ทรยศ" เป็นการบิดเบือนของ Halaster เอง), ยืนยัน Gate #26 "The Jigsaw Gate" ฝั่ง L20 (พื้นที่ 9b) พร้อมพบความคลาดเคลื่อนเล็กน้อยกับที่บันทึกไว้ตอน L15 (adult white dragon vs. beholder — เก็บทั้งคู่ไว้) — **ยังคงเป็น 1 ไฟล์ EP** แม้เนื้อหาใหญ่มาก เพราะเกิดในสถานที่เดียวต่อเนื่องกัน (ถ้ำ→หอคอย) ไม่มีการย้ายสถานที่
   - Level 21: `CH03-terminus-level.md` + **`EP03 - Terminus Level, Part 1 - The Deep Mines.md`** (22 พื้นที่หลัก + sub-area ของเหมือง duergar — เจ้าชายลี้ภัย Valtagar Steelshadow, ภรรยามังกร Stalagma Steelshadow ปลอมตัว, arcanaloth คู่ Aximus/Exekarus, ultroloth Xindulus, ผีนักบวช Brythia Mulspeer, ฉากเปิด "Terminus Tour" กวนๆ ของ Halaster) + **`EP04 - Terminus Level, Part 2 - Judged From on High.md`** (กลไกพิจารณาคดีเต็มรูปแบบ Act I-III, ผู้พิพากษา Fazrian planetar ตกสวรรค์, อัยการ Sim/Halaster's Simulacrum throwback จาก L12, ลูกขุน 5-6 คน, พยาน DM Toolkit ครบทุกตัวเลือกจาก L2 ถึง Skullport, คำตัดสิน 4 แบบ + กลไก Redemption, Gate #30 ยืนยันครบไม่มีข้อคลาดเคลื่อน, Epilogue คำแนะนำคาถา wish) — **Level 21 เป็นชั้นที่สี่ที่ต้องแตกเป็น 2 EP แบบ Skullport/Dweomercore/Obstacle Course/Seadeeps** เพราะ "Judged From on High" เป็นฉากศาล/สังคมล้วนๆ คนละประเภทกับดันเจี้ยนสำรวจ (areas 1-22) — **นี่คือ EP ปิด Act 9 สมบูรณ์**
 
-**ยังไม่เริ่ม**: Act 10 — Halaster's Reckoning (Level 22-23, ไฟนอลแคมเปญ) — ดูหัวข้อ 2 และตาราง Act คร่าวๆ ในหัวข้อ 6
+- ✅ **Act 10 — Halaster's Reckoning** (`ACT10-halasters-reckoning/`): **จบสมบูรณ์ 2026-08-16 — Chapter 1 (Level 22) + Chapter 2 (Level 23, EP02-EP04) ทั้งหมดเสร็จ — ปิดทั้งแคมเปญ**
+  - Level 22: `CH01-shadowdusk-hold.md` + `EP01 - Shadowdusk Hold.md` ครบ 41 พื้นที่หลัก + sub-area ทั้งหมด 3 Tier (4a-b/10a-b/16a-c/18a-b/20a-c/23a-b/24a-c/30a-b/31a-b/34a-b/36a-b/38a-c) — คฤหาสน์ใต้ดินของตระกูล Shadowdusk ที่เพี้ยนจาก Far Realm เต็มรูปแบบ นำโดยฝาแฝด death knight **Dezmyr/Zalthar**, archmage 4 คน (Melissara/Vertrand/Berlain/Cassiok), blue dracolich **Lynnorax**, couatl ติดกับดัก **Tezca-Zyanya**, black crystal tablet ต้นตอหายนะ, รวมตัวแปรเสริม **Halaster's Game: Dead Hold** เต็มรูปแบบ (7 ฉาก Dead Run, NPC ใหม่ Jeras, star spawn รุกราน, Send-Off แยกสองแบบ) — **ยังคงเป็น 1 ไฟล์ EP** แม้ใหญ่มาก (WDMM 92,007 + Companion 152,920 ตัวอักษร) เพราะ Dead Hold เป็นตัวเลือกโหมดการรันทั้งชั้นเดียวกัน ไม่ใช่การย้ายสถานที่ — Halaster's Gate #31 "Gate of the Mad Mage" ยืนยันฝั่ง L22 แล้วที่พื้นที่ 35
+  - Level 23: `CH02-mad-wizards-lair.md` เขียนแล้ว (Quick Notes, Optional Twists 4 แบบ — เลือกใช้ Halaster's Game ต่อเนื่อง, Leveling Up/Personalizing guidance, Previously on DotMM) — **`EP02 - Mad Wizard's Lair, Part 1 - The Dungeon.md` เสร็จแล้ว** (พื้นที่ 1-21 ครบ + sub-area 6a-c/9a-b/10a-b/11a-c/21a-b — Arcturia lich + mimic 12 ตัว, Trobriand the Metal Mage boss fight 2 รอบ, Aryx/Kastzanedes โล่คู่, Flameskull 7 ตัว = ศิษย์ Dweomercore ตาย, helm of the Scavenger, ปิดปม xunderbrok จาก L22 — **ยืนยัน Gate #31 ฝั่ง L23 แล้ว ปิดตาราง 31 บานสมบูรณ์**) — **`EP03 - Mad Wizard's Lair, Part 2 - Halaster's Tower.md` เสร็จแล้ว** (พื้นที่ 22-32 ครบ 11 พื้นที่หลัก — Gnome with No Name, Branta Myntion demilich, Rantantar's Wand ที่มีวิญญาณสิง, Hidden Treasure/Shield of the Uven Rune, Apprentice Portraits ครบ 7 คน + ภาพ Jhesiyra ที่กรีดขาด + horned ring, Scrying Room, Art Studio, Jhesiyra's Warning — บวก**เมนู Penultimate Encounter ครบทั้ง 4 ตัวเลือกเต็มรูปแบบ** (The Elite Four รวม backup Drivvin Freth/Marambra Nyghtsteel, The Prismatic Gauntlet, Tarrasquic Park กับ tarrasque CR 30 เต็ม, Welcome to the Thunderdome กับ Nalkara the Empyrean) — Marambra Nyghtsteel ตัดสินใจใช้จุดเดียวที่ Elite Four backup) — **`EP04 - Mad Wizard's Lair, Part 3 - The Mad Mage Showdown.md` เสร็จแล้ว** (คู่มือ "Battling Halaster" เต็มรูปแบบ, พื้นที่ 33-36 + Conclusion, เมนู Ultimate Showdown ครบทั้ง 9 ตัวเลือก รวม Jhesiyra's Sacrifice ที่ปิดปม Goal #7, Epilogue เต็มรูปแบบรวม Post-Credits) — **L23 แตกเป็น 3 ไฟล์ EP ตามที่คาดไว้ (EP02+EP03+EP04 เสร็จครบ) — Level 23 จบสมบูรณ์ ปิด Act 10 ปิดทั้งแคมเปญ**
 
 รายละเอียด checklist แบบละเอียดทุกบรรทัดอยู่ใน [`PROGRESS.md`](./PROGRESS.md) — ไฟล์นี้ (`NEXT-SESSION.md`) เป็นตัวสรุป "ทำอย่างไรต่อ" ไม่ใช่ตัวแทน PROGRESS.md อัปเดตทั้งสองไฟล์คู่กันเสมอเมื่อทำงานเสร็จแต่ละก้อน
 
 ---
 
-## 2. งานถัดไปแบบเจาะจง — Act 10: Halaster's Reckoning, Level 22 (Shadowdusk Hold) — Chapter 1 (เปิด Act ใหม่)
+## 2. สถานะ: แคมเปญจบสมบูรณ์แล้ว — ไม่มีงานถัดไป
 
-**Act 9 (Level 19-20-21) จบสมบูรณ์แล้วทั้ง Act** ต่อไปคือ **Act 10: Halaster's Reckoning** — Act สุดท้ายของทั้งแคมเปญ (Level 22-23) เริ่มด้วย **Level 22 (Shadowdusk Hold)** — ต้องสร้างโฟลเดอร์ Act ใหม่ `ACT10-halasters-reckoning/` (Act 9 ปิดแล้ว ไม่ใช้ต่อ) — เลข EP รีเซ็ตเริ่มที่ **EP01** เพราะเป็น Act ใหม่ (กฎ 3.6/6: เลข EP นับต่อเนื่อง**ทั้ง Act** ไม่ใช่ทั้งแคมเปญ)
+**EP04: Mad Wizard's Lair, Part 3 - The Mad Mage Showdown เสร็จสมบูรณ์แล้ว (2026-08-16)** — ครอบคลุมคู่มือ "Battling Halaster" เต็มรูปแบบ, พื้นที่ 33-36 + Conclusion, เมนู Ultimate Showdown ครบทั้ง 9 ตัวเลือก (รวม "Jhesiyra's Sacrifice" ที่ปิดปม Goal #7 เต็มรูปแบบ), และ Epilogue เต็มรูปแบบ (รวม Post-Credits: Jhesiyra's Return) — **นี่คือ EP สุดท้ายของทั้งแคมเปญ Gilded City: Mad Depths**
 
-| Level | ชื่อใน WDMM (Arabic) | ชื่อใน Companion (Roman) | ขนาด HTML ดิบ (WDMM / Companion) | สถานะ |
-|---|---|---|---|---|
-| 22 | `Level 22: Shadowdusk Hold` | `Level XXII: Shadowdusk Hold` | 92,007 / 152,920 ตัวอักษร | ⬜ ถัดไป |
-| 23 | `Level 23: Mad Wizard's Lair` | `Level XXIII: Mad Wizard's Lair` | 104,784 / 358,889 ตัวอักษร | ⬜ รอคิว (ไฟนอลแคมเปญ) |
+**ทุก Act (1-10), ทุก Level (1-23) ของ Undermountain, และ Dragon Heist บนผิวดิน แปล/ขยายเป็น journal เต็มรูปแบบครบถ้วนแล้ว** ไม่มี Chapter, Level, หรือ Act ถัดไปที่รอเขียน — ตารางประตู Halaster's Gate ทั้ง 31 บานปิดครบทั้งสองฝั่ง, ปม Halaster's Goals ทั้ง 7 ข้อได้คำตอบครบ (รวม Goal #2 "คนที่คู่ควร" ที่ฉากดวลพื้นที่ 33 และ Goal #7 "เงาของ Jhesiyra" ที่ Epilogue)
 
-*(ขนาดจากการ query ต้นฉบับ JSON ตรงๆ ล่วงหน้า — ยังไม่ได้อ่านเนื้อหาเต็มของทั้งสองชั้น ต้องอ่านจริงตอนเริ่มทำ — **สังเกต: Companion ของ L23 ใหญ่ถึง 358,889 ตัวอักษร ใหญ่กว่าไฟล์ Companion อื่นในทั้งแคมเปญเกินสองเท่า (ใหญ่กว่า L21's trial ที่ 88,893 ถึง 4 เท่า) — เกือบแน่นอนว่า L23 จะต้องแตกเป็นหลาย EP เมื่อถึงตอนนั้น อย่าตัดสินใจล่วงหน้า ต้องอ่านเนื้อหาจริงก่อน แต่เตรียมใจไว้ว่าอาจเป็นชั้นที่ใหญ่ที่สุดในทั้งแคมเปญ)*
-
-**บริบทที่ต้องรู้ก่อนเริ่ม Level 22** (จากสิ่งที่สะสมมาตลอดแคมเปญ — ยังไม่ได้อ่านเนื้อหาเต็มของ L22 เอง ต้องอ่านจริงตอนเริ่มทำ):
-- **House Shadowdusk** คือแฟกชัน "Minor (แต่ทรงอิทธิพลสุด)" ตาม [`03-halasters-game-framework.md`](./03-halasters-game-framework.md) บรรทัดตาราง Factions — ตระกูลที่เพี้ยนจากการสัมผัส Far Realms นำโดยพี่น้อง death knight **Dezmyr/Zalthar** วางแผนแก้แค้น Waterdeep — ระบุไว้แล้วว่าเป็น **ตัวร้ายรองสุดท้ายของทั้งแคมเปญ** (รองจาก Halaster เอง)
-- **Halaster's Goal #4 "โค่น Waterdeep"** ผูกกับชั้นนี้โดยตรง — Halaster สนใจให้ House Shadowdusk เป็นหุ่นเชิดคุม Waterdeep เพื่อขยายอิทธิพล/ถ่ายรายการซีซั่นใหม่
-- **L21 area 19a** คือทางเข้า Level 22 (เฝ้าโดย ultroloth Xindulus ที่อาจตายไปแล้วหรือหนีมาที่นี่ถ้ารอดจากการพิจารณาคดี L21 — Xindulus พยายามสร้างพันธมิตรกับ death knight ที่ Shadowdusk Hold ตามที่ระบุใน Aftermath ของ EP04)
-- **Gate #31 "Gate of the Mad Mage" (L22↔L23)** — ประตูสุดท้ายในตาราง 31 บาน สลักใบหน้า Halaster เอง ดวงตาเคลื่อนตามผู้เข้าใกล้ ต้อง "ยื่นเวทมนตร์แลกทางผ่าน" ไม่งั้นโดนกลายเป็นหิน — รอคอนเฟิร์มพื้นที่ทั้งสองฝั่งตอนเขียนจริง
-- **Level 23 คือ Mad Wizard's Lair = ห้องส่วนตัวของ Halaster เอง** บทสรุปของทั้งแคมเปญ — ปมค้างที่ต้องได้รับคำตอบที่นี่ตาม Halaster's Goals 7 ข้อ: **Goal #2 "คนที่คู่ควร"** (ศิษย์คนต่อไปที่เอาชนะเขาได้), **Goal #7 "เงาของ Jhesiyra"** (การหายตัวไปของ Jhesiyra Kestellharp ที่หลอกหลอนเขา — ธงไว้ตั้งแต่ระดับกลางแคมเปญว่าจะเข้าเรื่องเต็มที่นี่) — Halaster **ไม่ทำ deus ex machina ช่วยตัวเองและไม่ฆ่าปาร์ตี้ตรงๆ จนกว่าจะถึงฉากดวลจริงที่ L23** ตามกรอบเกมทั้งแคมเปญ
-- **ก่อนเริ่ม Level 22 ต้องอ่าน [`03-halasters-game-framework.md`](./03-halasters-game-framework.md) ทั้งไฟล์ใหม่อีกรอบ** โดยเฉพาะ Goal #4/#2/#7 และ Gate #31 เพื่อเตรียมบริบทให้ครบก่อนเขียน — ไฟล์นี้ไม่ได้ถูกอ่านเต็มมาตั้งแต่ต้น Act 9
-
-**ขั้นตอนที่ต้องทำ** (ตามลำดับ, อ้างอิง workflow ของ `/build-ep` skill):
-
-1. อ่าน [`adventure-builder/journal-template.md`](../../adventure-builder/journal-template.md) และ [`adventure-builder/structure-guide.md`](../../adventure-builder/structure-guide.md) และ [`adventure-builder/canon-reference.md`](../../adventure-builder/canon-reference.md) ให้ครบทั้งไฟล์ก่อนเริ่มเขียนอะไรทั้งสิ้น (บังคับตาม skill — ห้ามข้าม แม้จะทำมาหลายรอบแล้ว กฎอาจถูกแก้ระหว่างทาง)
-2. **สร้างโฟลเดอร์ Act ใหม่** `ACT10-halasters-reckoning/` พร้อม `00-act-outline.md` (ดูตัวอย่างโครงสร้างจาก `ACT09-the-deepest-halls/00-act-outline.md`) — Act นี้มี Level 22-23 เท่านั้น (2 ชั้น สั้นกว่า Act อื่นเพราะเป็นไฟนอล) ตัดสินใจตอนเขียนว่าจะแยก Chapter ต่อ Level (`CH01-shadowdusk-hold.md`/`CH02-mad-wizards-lair.md`) หรือยุบ Chapter เดียวถ้า Act นี้สั้นพอ
-3. เลข EP เริ่มใหม่ที่ **EP01** (Act ใหม่)
-4. ใช้ pipeline การสกัดเนื้อหาในหัวข้อ 4 ด้านล่าง ดึงเนื้อหาจาก 2 ไฟล์ต้นทางออกมาเป็น plaintext ก่อนเขียน markdown จริง — ใช้ชื่อ page `Level 22: Shadowdusk Hold` (WDMM) / `Level XXII: Shadowdusk Hold` (Companion)
-5. เขียนตามกฎรูปแบบในหัวข้อ 5 ให้ครบทุกข้อ ไม่ตัดทอนเนื้อหาห้อง/NPC/treasure ใดๆ — **ต้องอ่านเนื้อหาก่อนตัดสินใจว่าจะแตกเป็นหลาย EP หรือไม่** (ห้ามตัดสินใจจากขนาดเพียงอย่างเดียว ใช้เกณฑ์ "เนื้อหาต่างประเภทกันจริงจนแยกอ่าน/แยกรันได้อย่างเป็นธรรมชาติ" ตามหัวข้อ 5.3 — Companion ของ L22 ใหญ่กว่า WDMM ถึง 1.7 เท่า ให้ระวังกลไกระดับชั้นแบบเดียวกับที่เจอตอน L17/L21)
-6. อัปเดต bookkeeping 4 จุดเสมอหลังจบแต่ละ EP: `00-act-outline.md` (ลิงก์ ✅), `PROGRESS.md` (checklist + ตาราง Act), memory file `project_waterdeep_duology_conversion.md`, `MEMORY.md` index บรรทัดเดียว — และอัปเดตไฟล์นี้ (`NEXT-SESSION.md`) ด้วยทุกครั้งที่จบ session ทำงาน — **เมื่อจบ L22 ให้เตรียม context เปิด L23 (ไฟนอลแคมเปญ) ไว้ในไฟล์นี้ล่วงหน้าเหมือนที่ทำทุก Level ก่อนหน้า — โดยเฉพาะเตือนตัวเองเรื่องขนาดมหึมาของ Companion L23 (358,889 ตัวอักษร)**
+**ถ้าผู้ใช้พิมพ์ "ทำต่อ" หรือขอทำงานกับแคมเปญนี้ต่อ**: อย่าสมมติว่ามีงานค้าง — ให้แจ้งสถานะจบสมบูรณ์นี้ก่อน แล้วถามผู้ใช้ว่าต้องการอะไรเจาะจง เป็นไปได้ว่าอาจหมายถึง:
+- แก้ไข/ปรับปรุง EP เก่าที่มีอยู่แล้ว
+- เพิ่มเนื้อหาเสริม (side episode, ฉากพิเศษ) ที่ไม่เคยวางแผนไว้
+- เริ่มแคมเปญใหม่ทั้งหมด (adventure อื่น)
+- งานอื่นในโปรเจกต์ที่ไม่เกี่ยวกับแคมเปญนี้เลย
 
 ---
 
@@ -172,7 +158,7 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 | Graveyard & Ruin | Level 13-15 | 15-17 | ✅ ครบ (Act 7, EP01-04) |
 | Crystal & Sea | Level 16-18 | 17-18 | ✅ ครบ (Act 8, EP01-04) |
 | The Deepest Halls | Level 19-21 | 18-19 | ✅ ครบ (Act 9, EP01-04) |
-| **Halaster's Reckoning** | **Level 22-23 (ไฟนอล)** | **19-20** | **🔄 กำลังทำ — ดูหัวข้อ 2 (Level 22 ถัดไป, เปิด Act ใหม่ `ACT10-halasters-reckoning/`, EP01)** |
+| **Halaster's Reckoning** | **Level 22-23 (ไฟนอล)** | **19-20** | **✅ ครบ (Act 10, EP01-04) — ปิดทั้งแคมเปญ** |
 
 ---
 
@@ -190,8 +176,8 @@ fs.writeFileSync('l4w_images.json', JSON.stringify(imageIndex(pw.text.content), 
 
 ## 8. เมื่อผู้ใช้พิมพ์ "ทำต่อ" ในเซสชันถัดไป
 
-1. อ่านไฟล์นี้ทั้งหมดก่อน
-2. ยืนยันสั้นๆ 1 บรรทัดว่าจะทำ Level 22 (Shadowdusk Hold, เปิด Act 10 ใหม่ — EP01) ต่อ หรือถามถ้าผู้ใช้ระบุงานอื่นเจาะจง
-3. เข้าสู่ขั้นตอนในหัวข้อ 2 ทันที ไม่ต้องถามซ้ำเรื่อง scope/รูปแบบที่ตกลงกันไปแล้วในหัวข้อ 3-5
-4. ทำงานทีละ EP แล้วรายงานผล + ถามว่าทำต่อเลยไหมทุกครั้ง (ตามกฎข้อ 10 ในหัวข้อ 3)
-5. อัปเดตไฟล์นี้ทุกครั้งที่จบก้อนงานใหญ่ (จบ 1 EP ขึ้นไป) ให้ "สถานะโดยรวม" (หัวข้อ 1) และ "งานถัดไปแบบเจาะจง" (หัวข้อ 2) ตรงกับความจริงเสมอ — ไฟล์นี้ต้อง**ไม่ล้าสมัย**ไม่ว่าจะกลับมาทำต่อเมื่อไหร่
+**แคมเปญนี้จบสมบูรณ์แล้ว** — ไม่มี "งานถัดไป" อัตโนมัติให้ทำอีก:
+
+1. อ่านไฟล์นี้ทั้งหมดก่อน ยืนยันกับตัวเองว่าสถานะคือ "จบสมบูรณ์" ตามหัวข้อ 1-2
+2. แจ้งผู้ใช้สั้นๆ ว่าแคมเปญ Gilded City: Mad Depths จบสมบูรณ์แล้วทั้ง 10 Act — **ห้ามเริ่มเขียน EP/Chapter/Act ใหม่โดยไม่ถามก่อน** เพราะไม่มีงานที่วางแผนไว้ล่วงหน้าเหลืออยู่แล้ว
+3. ถามผู้ใช้ว่าต้องการอะไรเจาะจง (แก้ไข EP เก่า / เพิ่มเนื้อหาเสริม / เริ่มแคมเปญใหม่ / อื่นๆ) ก่อนลงมือทำอะไรทั้งสิ้น
