@@ -16,8 +16,8 @@
 
 - [x] Alchemist — [alchemist-level-baseline.md](alchemist-level-baseline.md) (2026-08-16)
 - [x] Artificer — [artificer-level-baseline.md](artificer-level-baseline.md) (2026-08-16)
-- [ ] Sacred Knight
-- [ ] Barbarian
+- [x] Sacred Knight — [sacred-knight-level-baseline.md](sacred-knight-level-baseline.md) (2026-08-16)
+- [x] Barbarian — [barbarian-level-baseline.md](barbarian-level-baseline.md) (2026-08-17)
 - [ ] Bard
 - [ ] Captain
 - [ ] Channeler
