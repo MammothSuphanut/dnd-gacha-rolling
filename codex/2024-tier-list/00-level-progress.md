@@ -158,304 +158,304 @@
 - [x] Order of Titanfists
 - [x] Order of Wild Hunters
 
-### Cleric (27)
+### Cleric (27) — [cleric-subclass-level-overlay.md](cleric-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Ambition Domain
-- [ ] Arcana Domain
-- [ ] Death Domain
-- [ ] Destruction Domain
-- [ ] Eldritch Domain
-- [ ] Forge Domain
-- [ ] Grave Domain
-- [ ] Inquisition Domain
-- [ ] Knowledge Domain
-- [ ] Life Domain
-- [ ] Light Domain
-- [ ] Madness Domain
-- [ ] Nature Domain
-- [ ] Order Domain
-- [ ] Peace Domain
-- [ ] Pestilence Domain
-- [ ] Purification Domain
-- [ ] Rum Domain
-- [ ] Solidarity Domain
-- [ ] Strength Domain
-- [ ] Tempest Domain
-- [ ] Travel Domain
-- [ ] Trickery Domain
-- [ ] Twilight Domain
-- [ ] War Domain
-- [ ] Wealth Domain
-- [ ] Zeal Domain
+- [x] Ambition Domain
+- [x] Arcana Domain
+- [x] Death Domain
+- [x] Destruction Domain
+- [x] Eldritch Domain
+- [x] Forge Domain
+- [x] Grave Domain
+- [x] Inquisition Domain
+- [x] Knowledge Domain
+- [x] Life Domain
+- [x] Light Domain
+- [x] Madness Domain
+- [x] Nature Domain
+- [x] Order Domain
+- [x] Peace Domain
+- [x] Pestilence Domain
+- [x] Purification Domain
+- [x] Rum Domain
+- [x] Solidarity Domain
+- [x] Strength Domain
+- [x] Tempest Domain
+- [x] Travel Domain
+- [x] Trickery Domain
+- [x] Twilight Domain
+- [x] War Domain
+- [x] Wealth Domain
+- [x] Zeal Domain
 
-### Craftsman (11)
+### Craftsman (11) — [craftsman-subclass-level-overlay.md](craftsman-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Arcane Maesters' Guild
-- [ ] Armigers' Guild
-- [ ] Bladeworkers' Guild
-- [ ] Calibarons' Guild
-- [ ] Clockworkers' Guild
-- [ ] Courtiers' Guild
-- [ ] Forgeknights' Guild
-- [ ] Mechanauts' Guild
-- [ ] Thunderlords' Guild
-- [ ] Trappers' Guild
-- [ ] Wintercarvers' Guild
+- [x] Arcane Maesters' Guild
+- [x] Armigers' Guild
+- [x] Bladeworkers' Guild
+- [x] Calibarons' Guild
+- [x] Clockworkers' Guild
+- [x] Courtiers' Guild
+- [x] Forgeknights' Guild
+- [x] Mechanauts' Guild
+- [x] Thunderlords' Guild
+- [x] Trappers' Guild
+- [x] Wintercarvers' Guild
 
-### Dancer (14)
+### Dancer (14) — [dancer-subclass-level-overlay.md](dancer-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Acrobat
-- [ ] Cheerleader
-- [ ] Contortionist
-- [ ] Courtesan
-- [ ] Danseur Macabre
-- [ ] Dramaturge
-- [ ] Fencer
-- [ ] Fey Ballerina
-- [ ] Fire Dancer
-- [ ] Harlequin
-- [ ] Marionettist
-- [ ] Mime
-- [ ] Shadow Dancer
-- [ ] Steelsinger
+- [x] Acrobat
+- [x] Cheerleader
+- [x] Contortionist
+- [x] Courtesan
+- [x] Danseur Macabre
+- [x] Dramaturge
+- [x] Fencer
+- [x] Fey Ballerina
+- [x] Fire Dancer
+- [x] Harlequin
+- [x] Marionettist
+- [x] Mime
+- [x] Shadow Dancer
+- [x] Steelsinger
 
-### Druid (17)
+### Druid (17) — [druid-subclass-level-overlay.md](druid-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Circle of Blood
-- [ ] Circle of Dreams
-- [ ] Circle of Entropy
-- [ ] Circle of Mutation
-- [ ] Circle of Spores
-- [ ] Circle of the Stars
-- [ ] Circle of Stones
-- [ ] Circle of the City
-- [ ] Circle of the Deep
-- [ ] Circle of the Fist
-- [ ] Circle of the Land
-- [ ] Circle of the Moon
-- [ ] Circle of the Sea
-- [ ] Circle of the Shepherd
-- [ ] Circle of the Wyrm
-- [ ] Circle of Vermin
-- [ ] Circle of Wildfire
+- [x] Circle of Blood
+- [x] Circle of Dreams
+- [x] Circle of Entropy
+- [x] Circle of Mutation
+- [x] Circle of Spores
+- [x] Circle of the Stars
+- [x] Circle of Stones
+- [x] Circle of the City
+- [x] Circle of the Deep
+- [x] Circle of the Fist
+- [x] Circle of the Land
+- [x] Circle of the Moon
+- [x] Circle of the Sea
+- [x] Circle of the Shepherd
+- [x] Circle of the Wyrm
+- [x] Circle of Vermin
+- [x] Circle of Wildfire
 
-### Fighter (21)
+### Fighter (21) — [fighter-subclass-level-overlay.md](fighter-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Arcane Archer
-- [ ] Banneret
-- [ ] Battle Master
-- [ ] Blade Breaker
-- [ ] Bone Knight
-- [ ] Brawler
-- [ ] Bulwark Warrior
-- [ ] Cavalier
-- [ ] Celestial Lancer
-- [ ] Champion
-- [ ] Corsair
-- [ ] Dungeoneer
-- [ ] Echo Knight
-- [ ] Eldritch Knight
-- [ ] Living Crucible
-- [ ] Mage Hand Magus
-- [ ] Nightwatcher
-- [ ] Psi Warrior
-- [ ] Purple Dragon Knight (Banneret)
-- [ ] Rune Knight
-- [ ] Samurai
+- [x] Arcane Archer
+- [x] Banneret
+- [x] Battle Master
+- [x] Blade Breaker
+- [x] Bone Knight
+- [x] Brawler
+- [x] Bulwark Warrior
+- [x] Cavalier
+- [x] Celestial Lancer
+- [x] Champion
+- [x] Corsair
+- [x] Dungeoneer
+- [x] Echo Knight
+- [x] Eldritch Knight
+- [x] Living Crucible
+- [x] Mage Hand Magus
+- [x] Nightwatcher
+- [x] Psi Warrior
+- [x] Purple Dragon Knight (Banneret)
+- [x] Rune Knight
+- [x] Samurai
 
-### Gunslinger (34)
+### Gunslinger (34) — [gunslinger-subclass-level-overlay.md](gunslinger-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Adrenaline Junkie
-- [ ] Big Game Hunter
-- [ ] Brigand
-- [ ] Covert Operative
-- [ ] Daggermark
-- [ ] Deadeye
-- [ ] Dragon Banner
-- [ ] Eagle Banner
-- [ ] Feylost
-- [ ] Gourmand
-- [ ] Grenadier
-- [ ] Gun Tank
-- [ ] Gun-Ko Master
-- [ ] Gundead
-- [ ] High Roller
-- [ ] Houndmaster
-- [ ] Janissary
-- [ ] Jolly Roger
-- [ ] Knight Errant
-- [ ] Musketeer
-- [ ] Pistolero
-- [ ] Plague Doctor
-- [ ] Pugilist
-- [ ] Rōnin
-- [ ] Secret Agent
-- [ ] Sharpshooter
-- [ ] Siegeball Jersey
-- [ ] Spellslinger
-- [ ] Storm Gunner
-- [ ] Trick Shot
-- [ ] Troubadour
-- [ ] Twice-Damned
-- [ ] White Hat
-- [ ] Yellow Sign
+- [x] Adrenaline Junkie
+- [x] Big Game Hunter
+- [x] Brigand
+- [x] Covert Operative
+- [x] Daggermark
+- [x] Deadeye
+- [x] Dragon Banner
+- [x] Eagle Banner
+- [x] Feylost
+- [x] Gourmand
+- [x] Grenadier
+- [x] Gun Tank
+- [x] Gun-Ko Master
+- [x] Gundead
+- [x] High Roller
+- [x] Houndmaster
+- [x] Janissary
+- [x] Jolly Roger
+- [x] Knight Errant
+- [x] Musketeer
+- [x] Pistolero
+- [x] Plague Doctor
+- [x] Pugilist
+- [x] Rōnin
+- [x] Secret Agent
+- [x] Sharpshooter
+- [x] Siegeball Jersey
+- [x] Spellslinger
+- [x] Storm Gunner
+- [x] Trick Shot
+- [x] Troubadour
+- [x] Twice-Damned
+- [x] White Hat
+- [x] Yellow Sign
 
-### Investigator (14)
+### Investigator (14) — [investigator-subclass-level-overlay.md](investigator-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Antiquarian
-- [ ] Archivist
-- [ ] Conspiracy Theorist
-- [ ] Containment Specialist
-- [ ] Detective
-- [ ] Exterminator
-- [ ] Infernal Agent
-- [ ] Infernum
-- [ ] Inquisitor
-- [ ] Kid Sleuth
-- [ ] Medium
-- [ ] Occultist
-- [ ] Spy
-- [ ] Time Operative
+- [x] Antiquarian
+- [x] Archivist
+- [x] Conspiracy Theorist
+- [x] Containment Specialist
+- [x] Detective
+- [x] Exterminator
+- [x] Infernal Agent
+- [x] Infernum
+- [x] Inquisitor
+- [x] Kid Sleuth
+- [x] Medium
+- [x] Occultist
+- [x] Spy
+- [x] Time Operative
 
-### Martyr (14)
+### Martyr (14) — [martyr-subclass-level-overlay.md](martyr-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Burden of Anonymity
-- [ ] Burden of Ascension
-- [ ] Burden of Atonement
-- [ ] Burden of Calamity
-- [ ] Burden of Discord
-- [ ] Burden of Fame
-- [ ] Burden of Levity
-- [ ] Burden of Mercy
-- [ ] Burden of Odyssey
-- [ ] Burden of Rebirth
-- [ ] Burden of Revolution
-- [ ] Burden of the End
-- [ ] Burden of Truth
-- [ ] Burden of Tyranny
+- [x] Burden of Anonymity
+- [x] Burden of Ascension
+- [x] Burden of Atonement
+- [x] Burden of Calamity
+- [x] Burden of Discord
+- [x] Burden of Fame
+- [x] Burden of Levity
+- [x] Burden of Mercy
+- [x] Burden of Odyssey
+- [x] Burden of Rebirth
+- [x] Burden of Revolution
+- [x] Burden of the End
+- [x] Burden of Truth
+- [x] Burden of Tyranny
 
-### Monk (21)
+### Monk (21) — [monk-subclass-level-overlay.md](monk-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Way of the Bow
-- [ ] Way of the Flagellant
-- [ ] Warrior of Mercy
-- [ ] Warrior of Pride
-- [ ] Warrior of Regret
-- [ ] Warrior of Shadow
-- [ ] Warrior of the Asura (Homebrew)
-- [ ] Warrior of the Elements
-- [ ] Warrior of the Leaden Crown
-- [ ] Warrior of the Open Hand
-- [ ] Warrior of the Street
-- [ ] Way of the Ascendant Dragon
-- [ ] Way of the Astral Self
-- [ ] Way of the Drunken Master
-- [ ] Way of the Four Elements
-- [ ] Way of the Four Fists
-- [ ] Way of the Kensei
-- [ ] Way of the Long Death
-- [ ] Way of the Mask
-- [ ] Way of the Rose
-- [ ] Way of the Sun Soul
+- [x] Way of the Bow
+- [x] Way of the Flagellant
+- [x] Warrior of Mercy
+- [x] Warrior of Pride
+- [x] Warrior of Regret
+- [x] Warrior of Shadow
+- [x] Warrior of the Asura (Homebrew)
+- [x] Warrior of the Elements
+- [x] Warrior of the Leaden Crown
+- [x] Warrior of the Open Hand
+- [x] Warrior of the Street
+- [x] Way of the Ascendant Dragon
+- [x] Way of the Astral Self
+- [x] Way of the Drunken Master
+- [x] Way of the Four Elements
+- [x] Way of the Four Fists
+- [x] Way of the Kensei
+- [x] Way of the Long Death
+- [x] Way of the Mask
+- [x] Way of the Rose
+- [x] Way of the Sun Soul
 
-### Monster Hunter (4)
+### Monster Hunter (4) — [monster-hunter-subclass-level-overlay.md](monster-hunter-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Carver Guild
-- [ ] Devourer Guild
-- [ ] Occultist Guild
-- [ ] Trapper Guild
+- [x] Carver Guild
+- [x] Devourer Guild
+- [x] Occultist Guild
+- [x] Trapper Guild
 
-### Mystic (6)
+### Mystic (6) — [mystic-subclass-level-overlay.md](mystic-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Order of the Avatar
-- [ ] Order of the Awakened
-- [ ] Order of the Immortal
-- [ ] Order of the Nomad
-- [ ] Order of the Soul Knife
-- [ ] Order of the Wu Jen
+- [x] Order of the Avatar
+- [x] Order of the Awakened
+- [x] Order of the Immortal
+- [x] Order of the Nomad
+- [x] Order of the Soul Knife
+- [x] Order of the Wu Jen
 
-### Necromancer (14)
+### Necromancer (14) — [necromancer-subclass-level-overlay.md](necromancer-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Black Rider
-- [ ] Blood Ascendant
-- [ ] Corpse Florist
-- [ ] Crone
-- [ ] Dead Mist Acolyte
-- [ ] Death Knight
-- [ ] Necrodancer
-- [ ] Overlord
-- [ ] Pale Master
-- [ ] Pharaoh
-- [ ] Plague Lord
-- [ ] Reanimator
-- [ ] Reaper
-- [ ] Toymaker
+- [x] Black Rider
+- [x] Blood Ascendant
+- [x] Corpse Florist
+- [x] Crone
+- [x] Dead Mist Acolyte
+- [x] Death Knight
+- [x] Necrodancer
+- [x] Overlord
+- [x] Pale Master
+- [x] Pharaoh
+- [x] Plague Lord
+- [x] Reanimator
+- [x] Reaper
+- [x] Toymaker
 
-### Paladin (19)
+### Paladin (19) — [paladin-subclass-level-overlay.md](paladin-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Oath of Conquest
-- [ ] Oath of Devotion
-- [ ] Oath of Eternal Night
-- [ ] Oath of Glory
-- [ ] Oath of Heresy
-- [ ] Oath of Pestilence
-- [ ] Oath of Redemption
-- [ ] Oath of Revelry
-- [ ] Oath of Slaughter
-- [ ] Oath of Storms
-- [ ] Oath of the Ancients
-- [ ] Oath of the Crown
-- [ ] Oath of the Noble Genies
-- [ ] Oath of The Sun
-- [ ] Oath of the Watchers
-- [ ] Oath of Vengeance
-- [ ] Oath of Winter
-- [ ] Oath of Zeal
-- [ ] Oathbreaker
+- [x] Oath of Conquest
+- [x] Oath of Devotion
+- [x] Oath of Eternal Night
+- [x] Oath of Glory
+- [x] Oath of Heresy
+- [x] Oath of Pestilence
+- [x] Oath of Redemption
+- [x] Oath of Revelry
+- [x] Oath of Slaughter
+- [x] Oath of Storms
+- [x] Oath of the Ancients
+- [x] Oath of the Crown
+- [x] Oath of the Noble Genies
+- [x] Oath of The Sun
+- [x] Oath of the Watchers
+- [x] Oath of Vengeance
+- [x] Oath of Winter
+- [x] Oath of Zeal
+- [x] Oathbreaker
 
-### Ranger (19)
+### Ranger (19) — [ranger-subclass-level-overlay.md](ranger-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Beast Master
-- [ ] Beastborne
-- [ ] Drakewarden
-- [ ] Fey Wanderer
-- [ ] Freerunner
-- [ ] Gloom Stalker
-- [ ] Green Reaper
-- [ ] Highwayman
-- [ ] Hollow Warden
-- [ ] Horizon Walker
-- [ ] Hunter
-- [ ] Monster Slayer
-- [ ] Primordial Archer
-- [ ] Spellbreaker
-- [ ] Swarmkeeper
-- [ ] Trophy Hunter
-- [ ] Vermin Lord
-- [ ] Vigilante
-- [ ] Winter Walker
+- [x] Beast Master
+- [x] Beastborne
+- [x] Drakewarden
+- [x] Fey Wanderer
+- [x] Freerunner
+- [x] Gloom Stalker
+- [x] Green Reaper
+- [x] Highwayman
+- [x] Hollow Warden
+- [x] Horizon Walker
+- [x] Hunter
+- [x] Monster Slayer
+- [x] Primordial Archer
+- [x] Spellbreaker
+- [x] Swarmkeeper
+- [x] Trophy Hunter
+- [x] Vermin Lord
+- [x] Vigilante
+- [x] Winter Walker
 
-### Rogue (19)
+### Rogue (19) — [rogue-subclass-level-overlay.md](rogue-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Arachnoid Stalker
-- [ ] Arcane Trickster
-- [ ] Assassin
-- [ ] Enforcer
-- [ ] Grifter
-- [ ] Highway Rider
-- [ ] Inquisitive
-- [ ] Mastermind
-- [ ] Misfortune Bringer
-- [ ] Phantom
-- [ ] Sanguine Thief
-- [ ] Scion of the Three
-- [ ] Scout
-- [ ] Shadow Master
-- [ ] Soulknife
-- [ ] Swashbuckler
-- [ ] Temporal Trickster
-- [ ] Thief
-- [ ] Titan Slayer
+- [x] Arachnoid Stalker
+- [x] Arcane Trickster
+- [x] Assassin
+- [x] Enforcer
+- [x] Grifter
+- [x] Highway Rider
+- [x] Inquisitive
+- [x] Mastermind
+- [x] Misfortune Bringer
+- [x] Phantom
+- [x] Sanguine Thief
+- [x] Scion of the Three
+- [x] Scout
+- [x] Shadow Master
+- [x] Soulknife
+- [x] Swashbuckler
+- [x] Temporal Trickster
+- [x] Thief
+- [x] Titan Slayer
 
 ### Sacred Knight (6) — [sacred-knight-subclass-level-overlay.md](sacred-knight-subclass-level-overlay.md) (2026-08-17, first pass)
 
@@ -466,78 +466,78 @@
 - [x] Throne of Protection and Mercy
 - [x] Throne of Wisdom and Spirit
 
-### Sorcerer (20)
+### Sorcerer (20) — [sorcerer-subclass-level-overlay.md](sorcerer-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Aberrant Mind / Aberrant Sorcery
-- [ ] Apocalypse Sorcery
-- [ ] Clockwork Soul / Clockwork Sorcery
-- [ ] Divine Soul
-- [ ] Draconic Bloodline / Draconic Sorcery
-- [ ] Emotion Lord
-- [ ] Haunted Sorcery
-- [ ] Lunar Sorcery
-- [ ] Mirrorkin
-- [ ] Oozemaster
-- [ ] Pyromancer
-- [ ] Reincarnated Hero
-- [ ] Shadow Magic / Shadow Sorcery
-- [ ] Spellfire Sorcery
-- [ ] Spiritborn
-- [ ] Storm Sorcery
-- [ ] The Ruined Flame
-- [ ] Toon Magic
-- [ ] Wild Magic / Wild Magic Sorcery
-- [ ] Wretched Bloodline Sorcery
+- [x] Aberrant Mind / Aberrant Sorcery
+- [x] Apocalypse Sorcery
+- [x] Clockwork Soul / Clockwork Sorcery
+- [x] Divine Soul
+- [x] Draconic Bloodline / Draconic Sorcery
+- [x] Emotion Lord
+- [x] Haunted Sorcery
+- [x] Lunar Sorcery
+- [x] Mirrorkin
+- [x] Oozemaster
+- [x] Pyromancer
+- [x] Reincarnated Hero
+- [x] Shadow Magic / Shadow Sorcery
+- [x] Spellfire Sorcery
+- [x] Spiritborn
+- [x] Storm Sorcery
+- [x] The Ruined Flame
+- [x] Toon Magic
+- [x] Wild Magic / Wild Magic Sorcery
+- [x] Wretched Bloodline Sorcery
 
-### Tactician (6)
+### Tactician (6) — [tactician-subclass-level-overlay.md](tactician-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Gambler
-- [ ] Grandmaster
-- [ ] Medic
-- [ ] Mentalist
-- [ ] Scholar
-- [ ] War Mind
+- [x] Gambler
+- [x] Grandmaster
+- [x] Medic
+- [x] Mentalist
+- [x] Scholar
+- [x] War Mind
 
-### Vagabond (18)
+### Vagabond (18) — [vagabond-subclass-level-overlay.md](vagabond-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Adrenaline Junkie
-- [ ] Brigand
-- [ ] Daggermark
-- [ ] Dragon Banner
-- [ ] Eagle Banner
-- [ ] Feylost
-- [ ] Gourmand
-- [ ] Houndmaster
-- [ ] Jolly Roger
-- [ ] Knight Errant
-- [ ] Mage Brand
-- [ ] Plague Doctor
-- [ ] Pugilist
-- [ ] Rōnin
-- [ ] Siegeball Jersey
-- [ ] Tower Banner
-- [ ] Troubadour
-- [ ] Yellow Sign
+- [x] Adrenaline Junkie
+- [x] Brigand
+- [x] Daggermark
+- [x] Dragon Banner
+- [x] Eagle Banner
+- [x] Feylost
+- [x] Gourmand
+- [x] Houndmaster
+- [x] Jolly Roger
+- [x] Knight Errant
+- [x] Mage Brand
+- [x] Plague Doctor
+- [x] Pugilist
+- [x] Rōnin
+- [x] Siegeball Jersey
+- [x] Tower Banner
+- [x] Troubadour
+- [x] Yellow Sign
 
-### Warden (17)
+### Warden (17) — [warden-subclass-level-overlay.md](warden-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Beastblood Guardian
-- [ ] Carrion King
-- [ ] Diabolist
-- [ ] Drake-Blooded
-- [ ] Fey Trailblazer
-- [ ] Godsworn
-- [ ] Grey Watchman
-- [ ] Hellkeeper
-- [ ] Iceheart Bastion
-- [ ] Loreseeker
-- [ ] Nightgaunt
-- [ ] Rimekeeper
-- [ ] Soulblood Shaman
-- [ ] Stoneheart Defender
-- [ ] Storm Sentinel
-- [ ] Verdant Protector
-- [ ] Witchbane Hunter
+- [x] Beastblood Guardian
+- [x] Carrion King
+- [x] Diabolist
+- [x] Drake-Blooded
+- [x] Fey Trailblazer
+- [x] Godsworn
+- [x] Grey Watchman
+- [x] Hellkeeper
+- [x] Iceheart Bastion
+- [x] Loreseeker
+- [x] Nightgaunt
+- [x] Rimekeeper
+- [x] Soulblood Shaman
+- [x] Stoneheart Defender
+- [x] Storm Sentinel
+- [x] Verdant Protector
+- [x] Witchbane Hunter
 
 ### Warlock (19)
 
