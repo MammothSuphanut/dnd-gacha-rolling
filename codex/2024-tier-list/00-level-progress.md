@@ -4,7 +4,7 @@
 **ขอบเขต**: เหมือนกับระบบเดิมทุกประการ (30 class รวม homebrew Sacred Knight + Tactician, ไม่รวม 3 sidekick class, 478 subclass) — ดูรายละเอียด/เหตุผลของ scope เต็มๆ ที่ [00-scorecard-progress.md](00-scorecard-progress.md) รายชื่อ class/subclass ด้านล่าง copy มาจากรายชื่อที่ reconciled แล้วในไฟล์นั้นตรงๆ (scope เดียวกันเป๊ะ ไม่ต้องนับใหม่)
 **กติกาการให้คะแนน**: ดู [00-level-anchor-rubric.md](00-level-anchor-rubric.md) — Anchor Rubric ชั้น 0 (7 axis, level-indexed 1-20, Grading Scale S/A/B/C/D ต่อ checkpoint, Sub-dimension tie-break rule)
 
-**สถานะ**: ทุกช่องเริ่มที่ `[ ]` ยังไม่ได้ประเมิน — ติ๊ก `[x]` เมื่อประเมินครบทั้ง 20 แถว × 7 axis (หรือ 6 มิติ×20 แถวสำหรับ Control/Support) ของ class/subclass นั้นแล้วเท่านั้น ไม่ใช่แค่บางเลเวล/บาง axis
+**สถานะ**: ติ๊ก `[x]` เมื่อประเมินครบทั้ง 20 แถว × 7 axis (หรือ 6 มิติ×20 แถวสำหรับ Control/Support) ของ class/subclass นั้นแล้วเท่านั้น ไม่ใช่แค่บางเลเวล/บาง axis — **🏁 ชั้น 1 (30 Class Baseline) เสร็จสมบูรณ์ครบ 30/30 แล้ว (2026-08-17)** — **ชั้น 2 (478 Subclass Overlay) เริ่มแล้ว 2026-08-17**: format ตกลงเป็น **delta-only** (1 ไฟล์/คลาส, list เฉพาะเลเวล/axis ที่เกรดเปลี่ยนจาก baseline) ดูตัวอย่างที่ [alchemist-subclass-level-overlay.md](alchemist-subclass-level-overlay.md) — Alchemist (10/10) เสร็จก่อน (first pass)
 
 ⚠️ **ไฟล์นี้คือระบบใหม่ (level-indexed) แยกขาดจาก [00-scorecard-progress.md](00-scorecard-progress.md) (ระบบเดิม คะแนนภาพรวมเดียวครอบคลุม 1-20) โดยสิ้นเชิง** — ห้ามแก้ 00-scorecard-progress.md / 00-scorecard-methodology.md / ไฟล์ `<class>-subclass-scorecard-2024.md` ใดๆ เด็ดขาด ระบบเดิมเสร็จสมบูรณ์แล้วและยังใช้งานจริงอยู่ ทำระบบนี้คู่ขนานไปเท่านั้น
 
@@ -18,32 +18,32 @@
 - [x] Artificer — [artificer-level-baseline.md](artificer-level-baseline.md) (2026-08-16)
 - [x] Sacred Knight — [sacred-knight-level-baseline.md](sacred-knight-level-baseline.md) (2026-08-16)
 - [x] Barbarian — [barbarian-level-baseline.md](barbarian-level-baseline.md) (2026-08-17)
-- [ ] Bard
-- [ ] Captain
-- [ ] Channeler
-- [ ] Cleric
-- [ ] Craftsman
-- [ ] Dancer
-- [ ] Druid
-- [ ] Fighter
-- [ ] Gunslinger
-- [ ] Investigator
-- [ ] Martyr
-- [ ] Monk
-- [ ] Monster Hunter
-- [ ] Mystic
-- [ ] Necromancer
-- [ ] Paladin
-- [ ] Ranger
-- [ ] Rogue
-- [ ] Sorcerer
-- [ ] Tactician
-- [ ] Vagabond
-- [ ] Warden
-- [ ] Warlock
-- [ ] Warmage
-- [ ] Witch
-- [ ] Wizard
+- [x] Bard — [bard-level-baseline.md](bard-level-baseline.md) (2026-08-17)
+- [x] Captain — [captain-level-baseline.md](captain-level-baseline.md) (2026-08-17)
+- [x] Channeler — [channeler-level-baseline.md](channeler-level-baseline.md) (2026-08-17)
+- [x] Cleric — [cleric-level-baseline.md](cleric-level-baseline.md) (2026-08-17)
+- [x] Craftsman — [craftsman-level-baseline.md](craftsman-level-baseline.md) (2026-08-17)
+- [x] Dancer — [dancer-level-baseline.md](dancer-level-baseline.md) (2026-08-17)
+- [x] Druid — [druid-level-baseline.md](druid-level-baseline.md) (2026-08-17)
+- [x] Fighter — [fighter-level-baseline.md](fighter-level-baseline.md) (2026-08-17)
+- [x] Gunslinger — [gunslinger-level-baseline.md](gunslinger-level-baseline.md) (2026-08-17)
+- [x] Investigator — [investigator-level-baseline.md](investigator-level-baseline.md) (2026-08-17)
+- [x] Martyr — [martyr-level-baseline.md](martyr-level-baseline.md) (2026-08-17)
+- [x] Monk — [monk-level-baseline.md](monk-level-baseline.md) (2026-08-17)
+- [x] Monster Hunter — [monster-hunter-level-baseline.md](monster-hunter-level-baseline.md) (2026-08-17)
+- [x] Mystic — [mystic-level-baseline.md](mystic-level-baseline.md) (2026-08-17)
+- [x] Necromancer — [necromancer-level-baseline.md](necromancer-level-baseline.md) (2026-08-17)
+- [x] Paladin — [paladin-level-baseline.md](paladin-level-baseline.md) (2026-08-17)
+- [x] Ranger — [ranger-level-baseline.md](ranger-level-baseline.md) (2026-08-17)
+- [x] Rogue — [rogue-level-baseline.md](rogue-level-baseline.md) (2026-08-17)
+- [x] Sorcerer — [sorcerer-level-baseline.md](sorcerer-level-baseline.md) (2026-08-17)
+- [x] Tactician — [tactician-level-baseline.md](tactician-level-baseline.md) (2026-08-17)
+- [x] Vagabond — [vagabond-level-baseline.md](vagabond-level-baseline.md) (2026-08-17)
+- [x] Warden — [warden-level-baseline.md](warden-level-baseline.md) (2026-08-17)
+- [x] Warlock — [warlock-level-baseline.md](warlock-level-baseline.md) (2026-08-17)
+- [x] Warmage — [warmage-level-baseline.md](warmage-level-baseline.md) (2026-08-17)
+- [x] Witch — [witch-level-baseline.md](witch-level-baseline.md) (2026-08-17)
+- [x] Wizard — [wizard-level-baseline.md](wizard-level-baseline.md) (2026-08-17) — **🏁 ชั้น 1 ครบ 30/30**
 
 ---
 
@@ -51,73 +51,73 @@
 
 ประเมินราย axis ต่อเลเวลตามกติกาใน 00-level-anchor-rubric.md — เทียบกับ Anchor Rubric โดยตรง (ไม่ใช่เทียบกับ baseline ของคลาสตัวเองอย่างเดียว) — จัดกลุ่มตาม class เดียวกับ [class-subclass-index.md](../General/class-subclass-index.md) / [00-scorecard-progress.md](00-scorecard-progress.md)
 
-### Alchemist (10)
+### Alchemist (10) — [alchemist-subclass-level-overlay.md](alchemist-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Amorist
-- [ ] Apothecary
-- [ ] Dynamo Engineer
-- [ ] Mad Bomber
-- [ ] Mutagenist
-- [ ] Ooze Rancher
-- [ ] Pigmentist
-- [ ] Resonator
-- [ ] Venomsmith
-- [ ] Xenoalchemist
+- [x] Amorist
+- [x] Apothecary
+- [x] Dynamo Engineer
+- [x] Mad Bomber
+- [x] Mutagenist
+- [x] Ooze Rancher
+- [x] Pigmentist
+- [x] Resonator
+- [x] Venomsmith
+- [x] Xenoalchemist
 
-### Artificer (6)
+### Artificer (6) — [artificer-subclass-level-overlay.md](artificer-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Alchemist
-- [ ] Armorer
-- [ ] Artillerist
-- [ ] Battle Smith
-- [ ] Cartographer
-- [ ] Reanimator
+- [x] Alchemist
+- [x] Armorer
+- [x] Artillerist
+- [x] Battle Smith
+- [x] Cartographer
+- [x] Reanimator
 
-### Barbarian (21)
+### Barbarian (21) — [barbarian-subclass-level-overlay.md](barbarian-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Path of Heavy Metal
-- [ ] Path of the Ancestral Guardian
-- [ ] Path of the Battlerager
-- [ ] Path of the Beast
-- [ ] Path of the Berserker
-- [ ] Path of the Carrion Raven
-- [ ] Path of the Colossus
-- [ ] Path of the Fin
-- [ ] Path of the Fractured
-- [ ] Path of the Giant
-- [ ] Path of the Muscle Wizard
-- [ ] Path of the Primal Spirit
-- [ ] Path of the Rage Mage
-- [ ] Path of the Storm Herald
-- [ ] Path of the Totem Warrior
-- [ ] Path of the Wild Heart
-- [ ] Path of the World Tree
-- [ ] Path of the Wrathful Dead
-- [ ] Path of the Zealot
-- [ ] Path of Tranquility
-- [ ] Path of Wild Magic
+- [x] Path of Heavy Metal
+- [x] Path of the Ancestral Guardian
+- [x] Path of the Battlerager
+- [x] Path of the Beast
+- [x] Path of the Berserker
+- [x] Path of the Carrion Raven
+- [x] Path of the Colossus
+- [x] Path of the Fin
+- [x] Path of the Fractured
+- [x] Path of the Giant
+- [x] Path of the Muscle Wizard
+- [x] Path of the Primal Spirit
+- [x] Path of the Rage Mage
+- [x] Path of the Storm Herald
+- [x] Path of the Totem Warrior
+- [x] Path of the Wild Heart
+- [x] Path of the World Tree
+- [x] Path of the Wrathful Dead
+- [x] Path of the Zealot
+- [x] Path of Tranquility
+- [x] Path of Wild Magic
 
-### Bard (19)
+### Bard (19) — [bard-subclass-level-overlay.md](bard-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] College of Adventurers
-- [ ] College of Cantors
-- [ ] College of Creation
-- [ ] College of Dance
-- [ ] College of Eloquence
-- [ ] College of Fools
-- [ ] College of Glamour
-- [ ] College of Graffiti
-- [ ] College of Jesters
-- [ ] College of Lore
-- [ ] College of Masks
-- [ ] College of Requiems
-- [ ] College of Romance
-- [ ] College of Spirits
-- [ ] College of Swords
-- [ ] College of the Mad God
-- [ ] College of the Moon
-- [ ] College of Valor
-- [ ] College of Whispers
+- [x] College of Adventurers
+- [x] College of Cantors
+- [x] College of Creation
+- [x] College of Dance
+- [x] College of Eloquence
+- [x] College of Fools
+- [x] College of Glamour
+- [x] College of Graffiti
+- [x] College of Jesters
+- [x] College of Lore
+- [x] College of Masks
+- [x] College of Requiems
+- [x] College of Romance
+- [x] College of Spirits
+- [x] College of Swords
+- [x] College of the Mad God
+- [x] College of the Moon
+- [x] College of Valor
+- [x] College of Whispers
 
 ### Captain (29)
 
@@ -457,14 +457,14 @@
 - [ ] Thief
 - [ ] Titan Slayer
 
-### Sacred Knight (6)
+### Sacred Knight (6) — [sacred-knight-subclass-level-overlay.md](sacred-knight-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Throne of Doom and Slaughter
-- [ ] Throne of Eternity and Creation
-- [ ] Throne of Fear and Sorrow
-- [ ] Throne of Order and Law
-- [ ] Throne of Protection and Mercy
-- [ ] Throne of Wisdom and Spirit
+- [x] Throne of Doom and Slaughter
+- [x] Throne of Eternity and Creation
+- [x] Throne of Fear and Sorrow
+- [x] Throne of Order and Law
+- [x] Throne of Protection and Mercy
+- [x] Throne of Wisdom and Spirit
 
 ### Sorcerer (20)
 

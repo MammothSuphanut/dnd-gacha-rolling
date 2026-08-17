@@ -3,25 +3,22 @@
 **แคมเปญ**: Aeorian Cataclysm (Mammoth Homebrew)
 **ตี้**: Witsawa
 **เลเวลปัจจุบัน**: 3 (ทุกคน) | **XP**: 900 (ทุกคน)
-**แหล่งข้อมูล**: ดึงตรงจาก FoundryVTT actor export (.json) ในโฟลเดอร์นี้ — สะท้อนสถานะ ณ จุด export จริง (รวม HP ปัจจุบันที่อาจต่ำกว่าค่าสูงสุดเพราะโดนตีมาแล้วในไฟต์ล่าสุด)
+**แหล่งข้อมูล**: ดึงตรงจาก FoundryVTT actor export (.json) ในโฟลเดอร์นี้
 
-> ⚠️ **หมายเหตุ**: Aichi (ชื่อชั่วคราวในเอกสาร `witsawa-party-balance-review.md`) คือตัวเดียวกับ **Vorgash Cinderhand** ในไฟล์ JSON — ตั้งชื่อจริงแล้ว
-> ⚠️ HP สูงสุดที่คำนวณได้จาก JSON ของ **Lunol และ Salem อยู่ที่ 27** ทั้งคู่ — สูงกว่าตัวเลข "19" ที่เขียนไว้ใน balance review (2026-08-14) ค่อนข้างมาก น่าจะเป็นตัวเลขเก่าที่ยังไม่อัปเดตในเอกสารนั้น ควรใช้ 27 เป็นค่าปัจจุบันที่ถูกต้องแทน
+> 📌 **House Rule ใหม่**: ทุกตัวละครเลือก General Feat เพิ่มได้ 1 อันตอนเลเวล 1 (แยกจาก feat ปกติของ class/background) — สถานะ: Thalric ✅ Dragon Fear, Xiah ✅ Marksman's Luck, Lunol ✅ Favorite Spell (Cure Wounds), **Oxton / Salem / Vorgash ⏳ ยังไม่เลือก**
 
 ---
 
 ## สรุปตี้
 
-| ตัวละคร | สายพันธุ์ | คลาส / ซับคลาส | เลเวล | AC | HP (ปัจจุบัน/สูงสุด) |
+| ตัวละคร | สายพันธุ์ | คลาส / ซับคลาส | เลเวล | AC | Max HP |
 |---|---|---|---|---|---|
-| Thalric Dawn-Shield | Dragonborn (Gold) | Paladin — Oath of Devotion | 3 | 18 | 2 / 40 ⚠️ ใกล้ตาย |
-| Oxton | Deep Gnome | Warlock — The Fathomless | 3 | 15 | 30 / 30 |
-| Lunol | Shadar-Kai | Warlock — Celestial Patron | 3 | 14 | 27 / 27 |
-| Xiah Mystvale | Dragonborn (Black) | Fighter — Arcane Archer | 3 | 15 | 31 / 31 |
-| Salem Baskervilles | Elf (High Elf Lineage) | Tactician — Gambler (homebrew) | 3 | 13 | 1 / 27 ⚠️ ใกล้ตาย |
-| Vorgash Cinderhand *(เดิม Aichi)* | Near-Human (Ogre-Blooded) | Barbarian — Path of the Fractured (Grim Hollow) | 3 | 18 | 15 / 35 |
-
-**สรุปฝั่ง HP**: Thalric (2/40) และ Salem (1/27) กำลังโหวงอยู่ ณ จุด export — ทั้งตี้เพิ่ง (หรือกำลัง) เจอไฟต์หนักมา ควรเช็คกับผู้เล่นว่าพักยาว/สั้นแล้วหรือยัง
+| Thalric Dawn-Shield | Dragonborn (Gold) | Paladin — Oath of Devotion | 3 | 19 | 40 |
+| Oxton | Deep Gnome | Warlock — The Fathomless | 3 | 15 | 30 |
+| Lunol | Shadar-Kai | Warlock — Celestial Patron | 3 | 14 | 27 |
+| Xiah Mystvale | Dragonborn (Black) | Fighter — Arcane Archer | 3 | 15 | 31 |
+| Salem Baskervilles | Elf (High Elf Lineage) | Tactician — Gambler (homebrew) | 3 | 16 | 27 |
+| Vorgash Cinderhand *(เดิม Aichi)* | Near-Human (Ogre-Blooded) | Barbarian — Path of the Fractured (Grim Hollow) | 3 | 18 | 35 |
 
 ---
 
@@ -32,14 +29,16 @@
 ### Ability Scores
 | STR | DEX | CON | INT | WIS | CHA |
 |---|---|---|---|---|---|
-| 16 (+3) | 14 (+2) | 19 (+4) | 7 (−2) | 11 (+0) | 16 (+3) |
+| 16 (+3) | 14 (+2) | 19 (+4) | 7 (−2) | 11 (+0) | 17 (+3) |
+
+*(CHA 16→17 จาก feat Dragon Fear — mod ยังคง +3 เท่าเดิม เพราะ 16-17 อยู่ใน bracket เดียวกัน)*
 
 **Saving Throw proficient**: WIS, CHA
 
-### AC 18
-Whisperlink Mail (heavy, base 16, ไม่รับ DEX bonus) + Shield (+2) = **18**
+### AC 19
+Whisperlink Mail (heavy, base 16, ไม่รับ DEX bonus) + Shield (+2) + Fighting Style: Defense (+1) = **19**
 
-### HP 2 / 40 ⚠️
+### Max HP 40
 Hit Dice (d10): 10 (max, lv1) + 6 (avg, lv2) + 6 (avg, lv3) = 22, + CON mod ×3 (4×3=12) = 34, + **feat Tough** (+2/เลเวล ×3 = +6) = **40**
 
 ### Skill ที่ Proficient
@@ -51,10 +50,10 @@ Whisperlink Mail, Shield, Spear (1d6 piercing), Unarmed Strike, Traveler's Cloth
 ### สเปลล์สล็อต (ปัจจุบัน)
 Level 1: 2/2
 
-**สเปลล์ที่รู้**: Cure Wounds, Divine Favor, Bless, Divine Smite, Protection from Evil and Good, Shield of Faith, Command, Purify Food and Drink, Word of Radiance (cantrip), Thaumaturgy (cantrip)
+**สเปลล์ที่รู้**: Cure Wounds, Divine Favor, Bless, Divine Smite, Protection from Evil and Good, Shield of Faith, Command, Purify Food and Drink *(ตัด Word of Radiance และ Thaumaturgy ออกแล้ว — เดิมมาจาก Fighting Style: Blessed Warrior ที่เปลี่ยนเป็น Defense แล้ว)*
 
 ### Feats / Features เด่น
-Breath Weapon, Damage Resistance, Draconic Flight, **Tough**, Lay on Hands, Fighting Style: Blessed Warrior, Channel Divinity, Divine Sense, Oath of Devotion Spells, **Sacred Weapon**, **Divine Recovery** (feat ใหม่ที่อนุมัติแล้ว)
+Breath Weapon, Damage Resistance, Draconic Flight, **Tough**, Lay on Hands, Fighting Style: Defense (+1 AC ขณะสวมเกราะ), Channel Divinity, Divine Sense, Oath of Devotion Spells, **Sacred Weapon**, **Divine Recovery** (feat ใหม่ที่อนุมัติแล้ว), **Dragon Fear** (feat เลเวล 1 ใหม่ — +1 CHA, ใช้ Breath Weapon roar เป็น Wisdom save ให้ศัตรูตกใจกลัวแทนดาเมจได้)
 
 ### เงิน
 60 gp
@@ -75,7 +74,7 @@ Breath Weapon, Damage Resistance, Draconic Flight, **Tough**, Lay on Hands, Figh
 ### AC 15
 Studded Leather Armor (light, base 12) + DEX mod (+3) = **15**
 
-### HP 30 / 30 (เต็ม)
+### Max HP 30
 Hit Dice (d8): 8 + 5 + 5 = 18, + CON mod ×3 (4×3=12) = **30**
 
 ### Skill ที่ Proficient
@@ -91,6 +90,8 @@ Pact Magic: 2/2
 
 ### Feats / Features เด่น
 Eldritch Invocations: **Eldritch Mind**, **Agonizing Blast**, Pact Magic, Gift of the Svirfneblin, Gnomish Magic Resistance, Svirfneblin Camouflage, Fiendish Vigor, Tentacle of the Deeps, Gift of the Sea
+
+⏳ **ยังไม่ได้เลือก general feat เลเวล 1** (house rule ใหม่)
 
 ### เงิน
 113 gp, 4 sp, 7 cp
@@ -111,7 +112,7 @@ Eldritch Invocations: **Eldritch Mind**, **Agonizing Blast**, Pact Magic, Gift o
 ### AC 14
 Studded Leather Armor (light, base 12) + DEX mod (+2) = **14**
 
-### HP 27 / 27 (เต็ม, + Temp HP 12)
+### Max HP 27 (+ Temp HP 12)
 Hit Dice (d8): 8 + 5 + 5 = 18, + CON mod ×3 (3×3=9) = **27** (แก้ตัวเลข 19 ในเอกสารรีวิวเดิม — ดูหมายเหตุด้านบน)
 
 ### Skill ที่ Proficient
@@ -126,9 +127,17 @@ Pact Magic: 2/2
 **สเปลล์ที่รู้**: Eldritch Blast (+ Agonizing Blast), Hex, Armor of Agathys, Unseen Servant, False Life, Cure Wounds, Guiding Bolt, Detect Magic, Comprehend Languages, Healing Word, Aid, Lesser Restoration, Suggestion, Friends, Vicious Mockery, Mage Hand, Minor Illusion, Spare the Dying, Guidance, Light, Sacred Flame *(หลาย spell มาจาก Magic Initiate: Cleric + Pact of the Tome)*
 
 ### Feats / Features เด่น
-Eldritch Invocations: Pact of the Tome, **Agonizing Blast**, Blessing of the Raven Queen, Fey Ancestry, Keen Senses, Trance, Magic Initiate (Cleric), Fiendish Vigor, Celestial Spells, **Healing Light** (ฮีลเลอร์เดี่ยวที่ดีสุดในตี้ — bonus action, pool d6 = warlock level+1)
+Eldritch Invocations: Pact of the Tome, **Agonizing Blast**, Blessing of the Raven Queen, Fey Ancestry, Keen Senses, Trance, Magic Initiate (Cleric), Fiendish Vigor, Celestial Spells, **Healing Light** (ฮีลเลอร์เดี่ยวที่ดีสุดในตี้ — bonus action, pool d6 = warlock level+1), **Favorite Spell: Cure Wounds** (feat เลเวล 1 ใหม่ — cast ด้วย slot สูงกว่าจริง 1 ระดับ, กัน counterspell, ใช้ฟรีไม่เปลืองสล็อตได้ 1 ครั้ง/Long Rest)
 
 **บัพที่อนุมัติแล้ว**: Healing Light — ทุกลูกที่ทอยได้ d6 + CHA mod (แทนที่จะทอย d6 เฉยๆ ไม่มี mod) — pool size และจำนวนลูกสูงสุด/ครั้ง (= CHA mod) ยังคงเดิม, รีแค่ Long Rest เหมือนเดิม (อนุมัติ 2026-08-17 หลังคุยเรื่อง balance — pool ทั้งก้อนคืองบทั้งวัน ไม่ใช่งบต่อเทิร์น เลยไม่ทำให้ sustain ต่อวันบวมเกินจริง — ควรรีเช็คเลขอีกทีตอน Lunol ใกล้ Lv.9 ที่ CHA mod นิ่งที่ +5 และ pool โตเป็น 10 ลูก)
+
+### ความสามารถฮีลทั้งหมด (สรุปตัวเลขปัจจุบัน)
+| แหล่งฮีล | ดาเมจฮีล | ใช้ได้กี่ครั้ง |
+|---|---|---|
+| Healing Word | 2d4+4 | ฟรี 1 ครั้ง (ไม่เปลืองสล็อต) |
+| Cure Wounds (free cast จาก Favorite Spell) | 2d8+4 | ฟรี 1 ครั้ง (ไม่เปลืองสล็อต) |
+| Cure Wounds (ใช้ pact slot จริง) | 6d8+4 | 2 ครั้ง ถ้าใช้ทุก spell slot ที่มี |
+| Healing Light | d6+4 ต่อลูก | pool ปัจจุบัน 4 ลูก, ใช้สูงสุด 4 ลูก/ครั้ง |
 
 ### เงิน
 60 gp
@@ -142,14 +151,16 @@ Eldritch Invocations: Pact of the Tome, **Agonizing Blast**, Blessing of the Rav
 ### Ability Scores
 | STR | DEX | CON | INT | WIS | CHA |
 |---|---|---|---|---|---|
-| 10 (+0) | 17 (+3) | 16 (+3) | 17 (+3) | 14 (+2) | 13 (+1) |
+| 10 (+0) | 18 (+4) | 16 (+3) | 17 (+3) | 14 (+2) | 13 (+1) |
+
+*(DEX 17→18 จาก feat Marksman's Luck — mod ขยับ +3→+4 เพิ่ม attack/damage กับ Longbow และ DEX check/save ทุกอัน แต่ AC ไม่ขยับเพราะ Chain Shirt cap DEX bonus ไว้ที่ +2 อยู่แล้ว)*
 
 **Saving Throw proficient**: STR, CON
 
 ### AC 15
 Chain Shirt (medium, base 13, DEX cap +2) + DEX mod (capped ที่ +2) = **15**
 
-### HP 31 / 31 (เต็ม)
+### Max HP 31
 Hit Dice (d10): 10 + 6 + 6 = 22, + CON mod ×3 (3×3=9) = **31**
 
 ### Skill ที่ Proficient
@@ -162,7 +173,7 @@ Chain Shirt, Longbow (1d8 piercing), Unarmed Strike, Traveler's Clothes
 Burning Hands, Shocking Grasp (cantrip), Toll the Dead (cantrip), Prestidigitation (cantrip)
 
 ### Feats / Features เด่น
-Fighting Style: Archery, Second Wind, Action Surge, Tactical Mind, Arcane Archer Lore, **Arcane Shot** (Grasping Arrow + Shadow Arrow เลือกไว้), Breath Weapon, Draconic Flight, Magic Initiate: Wizard
+Fighting Style: Archery, Second Wind, Action Surge, Tactical Mind, Arcane Archer Lore, **Arcane Shot** (Grasping Arrow + Shadow Arrow เลือกไว้), Breath Weapon, Draconic Flight, Magic Initiate: Wizard, **Marksman's Luck** (feat เลเวล 1 ใหม่ — +1 DEX, Flip Die กับดาเมจอาวุธระยะไกล 1 ครั้ง/เทิร์น, Enhanced Critical ล็อก Speed ศัตรูเป็น 0 เมื่อคริท)
 
 **บัพที่อนุมัติแล้ว**: Arcane Shot uses = INT modifier (ขั้นต่ำ 2) แทนค่าคงที่ 2 นัด
 
@@ -182,11 +193,11 @@ Fighting Style: Archery, Second Wind, Action Surge, Tactical Mind, Arcane Archer
 
 **Saving Throw proficient**: INT, WIS
 
-### AC 13
-Studded Leather Armor (light, base 12) + DEX mod (+1) = **13**
+### AC 16
+Studded Leather Armor (light, base 12) + **Intelligent Defense** (INT mod +4 แทน DEX) = **16**
 
-### HP 1 / 27 ⚠️
-Hit Dice (d8): 8 + 5 + 5 = 18, + CON mod ×3 (3×3=9) = **27** (แก้ตัวเลข 19 ในเอกสารรีวิวเดิม — ดูหมายเหตุด้านบน) — ปัจจุบันเหลือ **1 HP** เท่านั้น ต้องระวังเป็นพิเศษ
+### Max HP 27
+Hit Dice (d8): 8 + 5 + 5 = 18, + CON mod ×3 (3×3=9) = **27** (แก้ตัวเลข 19 ในเอกสารรีวิวเดิม — ดูหมายเหตุด้านบน)
 
 ### Skill ที่ Proficient
 Deception, History, Insight, Investigation, Perception, Persuasion (6 ตัว — มากสุดในตี้)
@@ -199,6 +210,8 @@ Detect Magic, Misty Step, Prestidigitation
 
 ### Feats / Features เด่น
 Elven Lineage (High Elf), Fey Ancestry, Keen Senses, Trance, Lucky, Polyglot, **Perfect Plan**, Intelligent Defense, Analyze, **Contingency Plan**, Expertise (Tactician), **Double Down**, **All In** (feat ใหม่ที่อนุมัติแล้ว)
+
+⏳ **ยังไม่ได้เลือก general feat เลเวล 1** (house rule ใหม่ — Lucky ด้านบนเป็น feat เดิมจาก build ไม่ใช่ช่องนี้)
 
 ### เงิน
 313 gp, 3 ep, 5 sp
@@ -219,7 +232,7 @@ Elven Lineage (High Elf), Fey Ancestry, Keen Senses, Trance, Lucky, Polyglot, **
 ### AC 18
 **Unarmored Defense** (10 + DEX mod 3 + CON mod 3 = 16) + Shield (+2) = **18** — ไม่ใส่เกราะเลย
 
-### HP 15 / 35
+### Max HP 35
 Hit Dice (d12): 12 + 7 + 7 = 26, + CON mod ×3 (3×3=9) = **35**
 
 ### Skill ที่ Proficient
@@ -234,6 +247,8 @@ Mending (Forge Hammer)
 
 ### Feats / Features เด่น
 Rage, **Unarmored Defense**, Weapon Mastery, Ogre-Blooded, Danger Sense, Reckless Attack, **Face of Rage** (unarmed 1d8 force + prone/push on Con-save fail), Mask of Civility, Primal Knowledge, **Symbiotic Being** (feat จาก background — Sustained Symbiosis reaction + ความเสี่ยง Symbiotic Agenda บน nat 1), Blacksmith
+
+⏳ **ยังไม่ได้เลือก general feat เลเวล 1** (house rule ใหม่ — Symbiotic Being ด้านบนมาจาก background ไม่ใช่ช่องนี้)
 
 ### เงิน
 83 gp, 4 ep, 14 sp, 9 cp
