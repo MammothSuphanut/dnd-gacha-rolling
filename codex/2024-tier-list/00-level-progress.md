@@ -119,44 +119,44 @@
 - [x] College of Valor
 - [x] College of Whispers
 
-### Captain (29)
+### Captain (29) — [captain-subclass-level-overlay.md](captain-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Adrenaline Junkie
-- [ ] Brigand
-- [ ] Daggermark
-- [ ] Demon Banner
-- [ ] Demon Brand
-- [ ] Dragon Banner
-- [ ] Eagle Banner
-- [ ] Feylost
-- [ ] Gourmand
-- [ ] Holy Icon
-- [ ] Houndmaster
-- [ ] Jolly Roger
-- [ ] Jolly Roger Banner
-- [ ] Knight Errant
-- [ ] Lion Banner
-- [ ] Plague Doctor
-- [ ] Pugilist
-- [ ] Ram Banner
-- [ ] Raven Banner
-- [ ] Rōnin
-- [ ] Siegeball Banner
-- [ ] Siegeball Jersey
-- [ ] Skull Banner
-- [ ] Star-Spangled Banner
-- [ ] Tower Banner
-- [ ] Treant Banner
-- [ ] Troubadour
-- [ ] Turtle Banner
-- [ ] Yellow Sign
+- [x] Adrenaline Junkie
+- [x] Brigand
+- [x] Daggermark
+- [x] Demon Banner
+- [x] Demon Brand
+- [x] Dragon Banner
+- [x] Eagle Banner
+- [x] Feylost
+- [x] Gourmand
+- [x] Holy Icon
+- [x] Houndmaster
+- [x] Jolly Roger
+- [x] Jolly Roger Banner
+- [x] Knight Errant
+- [x] Lion Banner
+- [x] Plague Doctor
+- [x] Pugilist
+- [x] Ram Banner
+- [x] Raven Banner
+- [x] Rōnin
+- [x] Siegeball Banner
+- [x] Siegeball Jersey
+- [x] Skull Banner
+- [x] Star-Spangled Banner
+- [x] Tower Banner
+- [x] Treant Banner
+- [x] Troubadour
+- [x] Turtle Banner
+- [x] Yellow Sign
 
-### Channeler (4)
+### Channeler (4) — [channeler-subclass-level-overlay.md](channeler-subclass-level-overlay.md) (2026-08-17, first pass)
 
-- [ ] Order of Blinknights
-- [ ] Order of Dimensional Magi
-- [ ] Order of Titanfists
-- [ ] Order of Wild Hunters
+- [x] Order of Blinknights
+- [x] Order of Dimensional Magi
+- [x] Order of Titanfists
+- [x] Order of Wild Hunters
 
 ### Cleric (27)
 
