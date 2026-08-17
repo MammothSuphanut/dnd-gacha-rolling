@@ -128,6 +128,8 @@ Pact Magic: 2/2
 ### Feats / Features เด่น
 Eldritch Invocations: Pact of the Tome, **Agonizing Blast**, Blessing of the Raven Queen, Fey Ancestry, Keen Senses, Trance, Magic Initiate (Cleric), Fiendish Vigor, Celestial Spells, **Healing Light** (ฮีลเลอร์เดี่ยวที่ดีสุดในตี้ — bonus action, pool d6 = warlock level+1)
 
+**บัพที่อนุมัติแล้ว**: Healing Light — ทุกลูกที่ทอยได้ d6 + CHA mod (แทนที่จะทอย d6 เฉยๆ ไม่มี mod) — pool size และจำนวนลูกสูงสุด/ครั้ง (= CHA mod) ยังคงเดิม, รีแค่ Long Rest เหมือนเดิม (อนุมัติ 2026-08-17 หลังคุยเรื่อง balance — pool ทั้งก้อนคืองบทั้งวัน ไม่ใช่งบต่อเทิร์น เลยไม่ทำให้ sustain ต่อวันบวมเกินจริง — ควรรีเช็คเลขอีกทีตอน Lunol ใกล้ Lv.9 ที่ CHA mod นิ่งที่ +5 และ pool โตเป็น 10 ลูก)
+
 ### เงิน
 60 gp
 
