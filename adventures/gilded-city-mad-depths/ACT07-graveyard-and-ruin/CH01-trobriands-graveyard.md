@@ -1,5 +1,7 @@
 # Chapter 1 — Trobriand's Graveyard
 
+![ปกประจำ Level 13 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXIII.webp "Art: Dungeon of the Mad Mage Companion")
+
 *Level 13 ของ Undermountain — Chapter 1 ของ [Act 7: Graveyard & Ruin](./00-act-outline.md)*
 
 ## Quick Notes (จาก Companion)

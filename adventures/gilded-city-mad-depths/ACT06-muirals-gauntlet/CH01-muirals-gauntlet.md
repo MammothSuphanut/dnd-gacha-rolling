@@ -1,5 +1,7 @@
 # Chapter 1 — Muiral's Gauntlet (Level 10)
 
+![ปกประจำ Level 10 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelX.webp "Art: Dungeon of the Mad Mage Companion")
+
 *"เจ้าจะกลายเป็นศพที่งดงาม... แล้วเราจะเต้นรำด้วยกันในโถงมรณะนี้ตลอดกาล"* — Muiral the Misshapen
 
 หลังลงจาก Dweomercore ปาร์ตี้มาถึงป้อมปราการดรอว์เก่าแก่ที่ **Muiral the Misshapen** อดีตบอดี้การ์ดของ Halaster ยึดเป็นดินแดนล่าสัตว์ส่วนตัวมานาน — แต่ตอนนี้ **House Auvryndar** นำโดยนักบวชหญิง Vlonwelv Auvryndar กำลังยกทัพดรอว์กลับมาทวงคืนพื้นที่ พร้อมสร้างวิหาร Lolth ขึ้นใหม่ ท่ามกลางความขัดแย้งสามฝ่ายนี้ยังมีสายลับ House Freth และแก๊ง troglodyte ของ Gorzil แทรกตัวอยู่ด้วย

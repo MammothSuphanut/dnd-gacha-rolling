@@ -2,6 +2,8 @@
 
 *เอกสารอ้างอิงสำหรับ DM เท่านั้น (ไม่ใช่ journal ที่อ่านให้ผู้เล่นฟัง) แปล/สรุปจาก Dungeon of the Mad Mage Companion หัวข้อ "Halaster's Game" — ใช้เป็นฐานความคิดตลอด Act 2 เป็นต้นไปทุกชั้น ตามที่ตกลงไว้ใน [99-notes.md](./99-notes.md)*
 
+![Halaster Blackcloak, the Host](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/Halaster.webp "Art: Dungeon of the Mad Mage Companion")
+
 Halaster Blackcloak ไม่ได้เป็นแค่ "อาร์คเมจบ้า" ธรรมดา — ในกรอบนี้เขาคือ **โฮสต์เกมโชว์คอสมิก** ที่ถ่ายทอด (ผ่าน scrying/arcane eye ตลอดเวลา) การผจญภัยของปาร์ตี้เป็น "ซีซั่น" หนึ่งของรายการ "Dungeon of the Mad Mage" เขารู้ทุกอย่างที่เกิดขึ้นในดันเจี้ยนของตัวเอง คำสั่งเวทของเขาไร้ขีดจำกัดในทางทฤษฎี (ข้อจำกัดเดียวคือ "ห้ามฆ่าปาร์ตี้ตรงๆ" — เขาไม่ทำ deus ex machina ช่วย แต่ก็ไม่ทำลายปาร์ตี้เองเช่นกัน จนกว่าจะถึงชั้น 23 ห้องของเขาเอง)
 
 ## Halaster's Goals — 7 เป้าหมาย (เรียงลำดับความสำคัญ)
@@ -15,6 +17,8 @@ Halaster Blackcloak ไม่ได้เป็นแค่ "อาร์คเ�
 5. **ทำลายดรอว์** — เกลียดความหยิ่งของ House Auvryndar และ House Freth เป็นพิเศษ อยากเห็นพวกเขาถูกโค่นโดยสิ่งมีชีวิตที่ต่ำต้อยที่สุดเท่าที่จะทำได้
 6. **สันติภาพ (ไม่มีวันเกิดในยุคเรา)** — สงคราม githyanki vs. อาณานิคม mind flayer ที่ Seadeeps เป็นเรื่องบันเทิงสำหรับเขา อยากยืดสงครามนี้ออกไปให้นานที่สุดเพื่อมีวัตถุดิบถ่ายทำต่อ ไม่อยากให้จบเร็ว
 7. **เงาของ Jhesiyra** — การหายตัวไปของ Jhesiyra ยังคงหลอกหลอนเขา (มองเป็นการทรยศที่เลวร้ายที่สุด) รายละเอียดว่าจะให้เธอเข้าเรื่องยังไงอยู่ที่ L23 (บทสรุป)
+
+![The Party — ผู้เข้าแข่งขันในเกมของ Halaster](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/Party.webp "Art: Dungeon of the Mad Mage Companion")
 
 ## Gags & Gimmicks — เครื่องมือของ Halaster ระหว่างเกม
 
@@ -66,6 +70,8 @@ Halaster ให้/หัก "แต้ม" ตัวละครแต่ละ
 | **Seadeeps Colony** | Minor | L17 | อาณานิคม mind flayer ถูก githyanki บีบพื้นที่ นำโดย ulitharid Extremiton ที่กำลังเพาะพันธุ์ neothelid |
 | **Shar's Cult** | Minor | L18 | ลัทธิ Shar นำโดยแวมไพร์นักบวช วางแผนโจมตีวิหาร Lathander/Selûne ลับซ่อนครึ่งหนึ่งในเงามืด (Shadowfell) |
 | **House Shadowdusk** | Minor (แต่ทรงอิทธิพลสุด) | L22 | ตระกูลที่เพี้ยนจากการสัมผัส Far Realms นำโดยพี่น้อง death knight Dezmyr/Zalthar วางแผนแก้แค้น Waterdeep — ตัวร้ายรองสุดท้ายของทั้งแคมเปญ |
+
+![Halaster's Gates](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/Gates.webp "Art: Dungeon of the Mad Mage Companion")
 
 ## Halaster's Gates — เครือข่ายประตูลัด 31 คู่
 

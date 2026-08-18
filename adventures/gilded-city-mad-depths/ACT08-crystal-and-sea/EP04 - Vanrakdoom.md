@@ -151,6 +151,10 @@ Portia รีบเล่าข้อมูลต่อไปนี้ให้�
 
 ## สำรวจ Level 18
 
+![Level 18: Vanrakdoom](https://cdn.5e.tools/2024/img/adventure/WDMM/057-18-01.webp "Art credit: Eric Belisle")
+
+![แผนที่ Level 18](https://cdn.5e.tools/2024/img/adventure/WDMM/058-18-02.webp "Map 18. Art credit: Tim Hartin")
+
 ### 1. Entrance
 
 > *ตัวละครที่เดินลงอุโมงค์จาก Level 17 มาถึงชุดอุโมงค์หินหยาบที่เปิดออกสู่ทางเดินหินขัดสูง 10 ฟุต*

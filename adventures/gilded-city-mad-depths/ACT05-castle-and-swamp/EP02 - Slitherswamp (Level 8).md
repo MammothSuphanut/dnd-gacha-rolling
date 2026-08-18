@@ -216,6 +216,10 @@ Halaster ยินดีมากถ้ามีตัวละครติด c
 
 ## สำรวจ Level 8
 
+![Level 8: Slitherswamp](https://cdn.5e.tools/2024/img/adventure/WDMM/024-801.webp "Art credit: Julian Kok")
+
+![แผนที่ Level 8](https://cdn.5e.tools/2024/img/adventure/WDMM/025-802.webp "Map 8. Art credit: Tim Hartin")
+
 ### 1. Precipice
 
 > *อากาศชื้นหนักขึ้นเรื่อยๆ เหงื่อเกาะผิวคุณราวกับเด็กที่กลัวจนไม่ยอมปล่อย แมลงบินหึ่งอยู่ไกลๆ ดังขึ้นทุกวินาที ในที่สุดอุโมงค์ก็สิ้นสุดที่หน้าผาที่มองเห็นหนองน้ำทั้งผืน*

@@ -23,6 +23,10 @@
 
 **Dweomercore** คือสถาบันเวทมนตร์ลับสำหรับพ่อมดชั่วร้าย ปกครองโดย arcanaloth ที่ปลอมตัวเป็น Halaster Blackcloak เอง ร่วมกับ Wormriddle เจ้าแม่มดราตรี Companion เปลี่ยนสถานที่นี้ให้กลายเป็น **"evil Hogwarts"** เต็มรูปแบบ — นักเรียนขยายเป็นหลายสิบคนจัดกลุ่มเป็น 7 บ้าน (Houses) ตามธรรมชาติของแต่ละคน (ดู [CH03 brief](./CH03-dweomercore.md) สำหรับรายละเอียดเต็ม) EP นี้ครอบคลุมการสำรวจตัวสถาบันทั้ง 49 พื้นที่ — EP04 จะครอบคลุม The High Wizard Tournament ที่เป็นไคลแมกซ์ของทั้งชั้น
 
+![7 บ้านของ Dweomercore](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/Houses.webp "แผนผัง 7 บ้าน (Houses) ของ Dweomercore")
+
+![Lesser Temple of the Heretics](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LesserTemple.webp "Lesser Temple of the Heretics—One Square = 10 ft.. Art credit: Dyson Logos")
+
 ## Before the Descent
 
 > *อุโมงค์เปิดออกสู่ซากปรักหักพังของห้องโถงคฤหาสน์หรูหรา — คุณแทบไม่แปลกใจอีกแล้วที่ Mad Mage ยกคฤหาสน์มาปลูกไว้กลาง Undermountain*
@@ -92,6 +96,10 @@ Bone devil ถูกเรียกโดยไม่ตั้งใจในป
 **Refusing the Call**: ถ้าปาร์ตี้ปฏิเสธไม่ยอมสู้ปีศาจหรือจ่ายไอเทมเวท พวกเขาถูกขอให้กลับไปตามทางเดิมและห้ามกลับมาที่ Dweomercore อีก ถ้าไม่ยอมออกไป จะถูกโจมตี ตัวละครที่อ้างว่าเป็นนักร่ายคาถาอาร์เคนแสวงหาการชี้แนะ จะถูกเชิญให้พักที่ Dweomercore และเข้าสอบ
 
 ## สำรวจ Dweomercore
+
+![Level 9: Dweomercore](https://cdn.5e.tools/2024/img/adventure/WDMM/027-901.webp "Art credit: Christopher Moeller")
+
+![แผนที่ Level 9](https://cdn.5e.tools/2024/img/adventure/WDMM/028-902.webp "Map 9. Art credit: Tim Hartin")
 
 ### 1. Entry Hall
 

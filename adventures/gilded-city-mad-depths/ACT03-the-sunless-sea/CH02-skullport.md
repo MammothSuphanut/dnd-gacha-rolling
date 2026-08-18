@@ -1,4 +1,7 @@
 # Chapter 2 — Skullport
+
+![ปกประจำ Skullport (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/Skullport.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Level 8-9**
 
 **Skullport** ("Port of Shadow") คือเมืองใต้ดินเต็มรูปแบบแห่งเดียวที่เหลือรอดใน Undermountain — เคยเป็นนิคมของนักเวท Netherese โบราณ ปัจจุบันตกอยู่ใต้อำนาจเหล็กของ **Xanathar Guild** ผ่านครึ่งอสูรกาย **Sundeth** ผู้ปกครองป้อม Skull Island ต่างจาก Chapter อื่นๆ ก่อนหน้า ชั้นนี้ไม่ใช่ดันเจี้ยนธรรมดา แต่เป็น**ฮับเมือง**เต็มรูปแบบ — มีร้านค้า โรงเตี๊ยม แฟกชันในเมือง (Zhentarim, Harpers) และเป็นจุดพัก/เติมเสบียงจริงจังจุดแรกนับตั้งแต่ Yawning Portal

@@ -177,6 +177,10 @@ Gz'zarp ไม่สนใจ "เรื่องขัดแย้งจิ๊�
 
 ## สำรวจ Level 20
 
+![Level 20: Runestone Caverns](https://cdn.5e.tools/2024/img/adventure/WDMM/065-20-01.webp "Art credit: Zoltan Boros")
+
+![แผนที่ Level 20](https://cdn.5e.tools/2024/img/adventure/WDMM/066-20-02.webp "Map 20. Art credit: Tim Hartin")
+
 *แผนที่: map 20 — ถ้ำและอุโมงค์ทั้งหมดชื้นแฉะจากน้ำที่ซึมผ่านรอยแตกในผนังและเพดาน เสียงน้ำหยดก้องสะท้อนไปทั่ว*
 
 ### 1. Desiccating Symbol

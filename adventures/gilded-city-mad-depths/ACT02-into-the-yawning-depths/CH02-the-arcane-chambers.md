@@ -1,4 +1,7 @@
 # Chapter 2 — The Arcane Chambers (Undermountain L2)
+
+![ปกประจำ Level 2 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelII.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Level 6-7**
 
 ชั้นที่สองของ Undermountain เคยเป็นห้องทดลองของศิษย์ Halaster หลายรุ่น ตอนนี้กลายเป็นซากปรักหักพังที่เต็มไปด้วยผลลัพธ์ของการทดลองที่ผิดพลาด — nothic, gibbering mouther, และวิญญาณของศิษย์ที่เพี้ยนไปกับเวทมนตร์ที่พวกเขาไม่เข้าใจ ท่ามกลางซากนั้น ชนเผ่ากอบลิน Rustbone ตั้งตลาดนัด (Goblin Bazaar) ขึ้นเป็นจุดกึ่งอารยธรรมเล็กๆ ท่ามกลางความมืด — เป็นโอกาสหายากที่ปาร์ตี้จะได้ **ช่วย** กอบลินแทนที่จะฆ่าพวกมัน

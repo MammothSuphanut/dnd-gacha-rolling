@@ -60,6 +60,10 @@ Extremiton ตั้งใจจะกดขี่ประชากร Waterdee
 
 ## สำรวจ Level 17
 
+![Level 17: Seadeeps](https://cdn.5e.tools/2024/img/adventure/WDMM/054-17-01.webp "Art credit: Scott Murphy")
+
+![แผนที่ Level 17](https://cdn.5e.tools/2024/img/adventure/WDMM/055-17-02.webp "Map 17. Art credit: Tim Hartin")
+
 ทุกจุดในชั้นนี้อ้างอิงตาม map 17 — ถ้ำที่ล้อมรอบอาณานิคม mind flayer มืดและชื้น พื้นที่ที่อาณานิคมครอบครองถูกแกะสลักจากหินแข็งอย่างเรียบเนียน ตลอดทั้งชั้นได้ยินเสียงคำรามต่อเนื่องของแม่น้ำใต้ดิน ซึ่งดังที่สุดที่**พื้นที่ 12** และเบาลงบ้างที่**พื้นที่ 16-20**
 
 ### 1. Tunnel Plexus

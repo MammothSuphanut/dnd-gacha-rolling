@@ -41,6 +41,10 @@
 
 ## สำรวจ Level 23
 
+![Level 23: Mad Wizard's Lair](https://cdn.5e.tools/2024/img/adventure/WDMM/075-23-01.webp "Art credit: Scott Murphy")
+
+![แผนที่ Level 23](https://cdn.5e.tools/2024/img/adventure/WDMM/076-23-02.webp "Map 23. Art credit: Tim Hartin")
+
 ### 1. No Retreat
 
 > *(ดูข้อความ "Before the Descent" ด้านบน)*
@@ -286,6 +290,8 @@ Halaster สร้าง flameskull เหล่านี้จากกะโ�
 
 *งานฝีมือนี้ดูคุ้นตา คุณเคยเห็นมันมาก่อนแล้ว 10 ชั้นก่อนหน้าที่ Trobriand's Graveyard (L13) — นี่คือห้องทำงานของ Metal Mage อย่างไม่ต้องสงสัย*
 
+![Scaladar](https://cdn.5e.tools/2024/img/adventure/WDMM/078-23-04.webp "Scaladar. Art credit: Leesha Hannigan")
+
 #### 11b. Scaladar
 
 > ***Scaladar!** ชื่อนี้ผุดขึ้นในปากคุณราวกับผู้สร้างมันต้องการให้ทุกคนรู้จักสิ่งประดิษฐ์ของตัวเอง! แมงป่องโลหะพุ่งเข้าใส่คุณ เหล็กในของมันสั่นไหวด้วยส่วนโค้งของสายฟ้า!*
@@ -398,6 +404,8 @@ Rabbithead หนีมาที่นี่เพื่อหลบหน้า
 **เครื่องเรือน**: ทั่วห้องมีเก้าอี้บุนวม 4 ตัว, เก้าอี้วางเท้าบุนวม 4 ตัว, โซฟา 2 ตัว, โต๊ะกาแฟใหญ่ 2 ตัว (**เครื่องเรือนทั้งหมดนี้คือ mimic x12 ปลอมตัวอยู่** Arcturia ถือว่าพวกมันเป็นเพื่อนแท้ที่สุด ถ้าลิชถูกโจมตีหรือขุ่นเคืองกับผู้มาเยือน mimic จะเผยร่างจริงและสู้เคียงข้างเธอทันที)
 
 **คนหัวสัตว์**: ระหว่างเสา 8 ต้นมีมนุษยนุษย์หัวสัตว์ 6 ตัวยืนอยู่ — 3 ตัวสวมชุดคนรับใช้ถือไม้ปัดฝุ่น, 3 ตัวสวมเกราะหนักถือดาบ
+
+![Arcturia](https://cdn.5e.tools/2024/img/adventure/WDMM/079-23-05.webp "Arcturia. Art credit: Shawn Wood")
 
 #### Arcturia
 Arcturia ใช้สแตทบล็อค **lich** โดยมีการเปลี่ยนแปลง:

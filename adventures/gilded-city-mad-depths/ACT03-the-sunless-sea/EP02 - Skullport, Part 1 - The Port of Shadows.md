@@ -112,6 +112,14 @@ EP นี้ครอบคลุมการเดินทางเข้า�
 
 ## Skullport Overview
 
+![Skullport](https://cdn.5e.tools/2024/img/adventure/WDMM/080-24-01.webp "Art credit: Juliak Kok")
+
+![แผนที่ Skull Island](https://cdn.5e.tools/2024/img/adventure/WDMM/081-24-02.webp "Map 24. Art credit: Tim Hartin")
+
+![แผนที่ Skullport เขตกลาง](https://cdn.5e.tools/2024/img/adventure/WDMM/083-24-04.webp "Map 25. Art credit: Tim Hartin")
+
+![แผนที่ Skullport เขตนอก](https://cdn.5e.tools/2024/img/adventure/WDMM/085-24-06.webp "Map 26. Art credit: Tim Hartin")
+
 Skullport เต็มเมืองอยู่ในถ้ำมหึมา แบ่งเป็นสามชั้น: ชั้นล่าง ชั้นกลาง ชั้นบน สะพานหินโค้งเชื่อมปลายใต้ของเมืองกับเกาะกลางแม่น้ำ Sargauth ที่ไหลเอื่อย — เกาะนี้เรียก **Skull Island** บนเกาะมีป้อมปราการของ Xanathar Guild ตั้งอยู่
 
 ### What Dwells Here?

@@ -103,6 +103,10 @@ Halaster ไม่ให้ข้อมูลอื่นนอกจากบ�
 
 ## สำรวจ Level 3
 
+![Level 3: Sargauth Level](https://cdn.5e.tools/2024/img/adventure/WDMM/008-301.webp "Art credit: Clint Cearley")
+
+![แผนที่ Level 3](https://cdn.5e.tools/2024/img/adventure/WDMM/009-302.webp "Map 3. Art credit: Tim Hartin")
+
 *ทุกจุดอ้างอิงกับ Map 3 — ยิ่งใกล้แม่น้ำ Sargauth เสียงน้ำไหลเอื่อยจะดังขึ้นเรื่อยๆ*
 
 ### 1. Catacombs

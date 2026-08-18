@@ -1,5 +1,7 @@
 # Chapter 3 — Vanrakdoom
 
+![ปกประจำ Level 18 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXVIII.webp "Art: Dungeon of the Mad Mage Companion")
+
 *Level 18 ของ Undermountain — Chapter 3 ของ [Act 8: Crystal & Sea](./00-act-outline.md) — ต่อจาก [Chapter 2: Seadeeps](./CH02-seadeeps.md) — ปิดท้าย Act 8*
 
 ## Quick Notes (จาก Companion)

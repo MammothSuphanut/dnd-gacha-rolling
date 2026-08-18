@@ -469,6 +469,8 @@ Kaevja Cynavern, Vevette Blackwater, Agorn Fuoco, Havia Quickknife, และ Mo
 - หีบของ Havia: หวีทองคำรูปมังกรมีทับทิมเล็กแทนดวงตา (มูลค่า 250 gp)
 - หีบของ Mookie: ตุ๊กตาฮาล์ฟลิงเล็ก ยัดไว้ข้างในคือถุงบรรจุไข่มุก 100 gp จำนวน 5 เม็ด
 
+![Manshoon](https://cdn.5e.tools/2024/img/adventure/WDH/Manshoon.webp "Manshoon ตัวจริง รอปาร์ตี้อยู่ที่ area E12")
+
 **E12. Manshoon's Quarters**: ไม่มีใครนอกจาก Manshoon ได้รับอนุญาตลงมาที่นี่ บันไดอลาบาสเตอร์สู่ห้องนี้ไต่ลึกต่ออีก 10 ฟุตสู่ **area E13**
 
 ห้องนี้มีลักษณะดังนี้:

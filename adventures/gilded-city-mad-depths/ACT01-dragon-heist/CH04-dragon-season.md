@@ -7,6 +7,16 @@ Stone of Golorr ถูกส่งไปหาวายร้ายที่เ�
 >
 > ตัดสินใจแล้ว (2026-08-12): **เขียน journal เต็มทั้ง 4 สายแยกไฟล์กัน** (ดูกฎ 2.6 ใน [structure-guide.md](../../../adventure-builder/structure-guide.md)) แทนการ fix วายร้ายไว้ล่วงหน้า — ตอนจะเล่นจริง DM เลือกไฟล์ที่ตรงกับวายร้ายที่เลือกแค่ไฟล์เดียว ไฟล์อื่นเป็น reference เผื่อเปลี่ยนใจ/รันแคมเปญคู่ขนานอีกโต๊ะ
 
+![Encounter Chains overview](https://cdn.5e.tools/2024/img/adventure/WDH/EncounterChains.webp "แผนภาพรวมสายเชนการไล่ล่าทั้ง 4 สาย")
+
+![Dock Ward](https://cdn.5e.tools/2024/img/adventure/WDH/Dock-Ward.webp "แผนที่ Dock Ward")
+
+![City of the Dead](https://cdn.5e.tools/2024/img/adventure/WDH/City-of-the-Dead-Map.webp "แผนที่ City of the Dead")
+
+![Trades Ward](https://cdn.5e.tools/2024/img/adventure/WDH/Trades-Ward-Map.webp "แผนที่ Trades Ward")
+
+![Field Ward](https://cdn.5e.tools/2024/img/adventure/WDH/Field-Ward-Map.webp "แผนที่ Field Ward")
+
 ## สารบัญ EP
 
 **ขั้นล่าตัว nimblewright (แยกสาย — เล่นแค่ 1 ใน 4 ไฟล์นี้ตามวายร้ายที่เลือก):**

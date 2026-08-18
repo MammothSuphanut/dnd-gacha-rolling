@@ -438,6 +438,10 @@ kenku กำ Stone of Golorr ไว้ในกรงเล็บข้างห
 
 ## Encounter 1: Alley
 
+![Alley — DM Version](https://cdn.5e.tools/2024/img/adventure/WDH/Alley-DM.webp "ตรอกที่ Encounter 1 เกิดขึ้น ฉบับ DM")
+
+![Alley — Player Version](https://cdn.5e.tools/2024/img/adventure/WDH/Alley-Players.webp "ตรอกที่ Encounter 1 เกิดขึ้น ฉบับผู้เล่น")
+
 ### Areas of the Alley
 
 ### L1. Alley Residence

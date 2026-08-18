@@ -1,5 +1,7 @@
 # Chapter 2 — Seadeeps
 
+![ปกประจำ Level 17 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXVII.webp "Art: Dungeon of the Mad Mage Companion")
+
 *Level 17 ของ Undermountain — Chapter 2 ของ [Act 8: Crystal & Sea](./00-act-outline.md) — ต่อจาก [Chapter 1: Crystal Labyrinth](./CH01-crystal-labyrinth.md)*
 
 ## Quick Notes (จาก Companion)

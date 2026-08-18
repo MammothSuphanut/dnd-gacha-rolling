@@ -100,6 +100,8 @@ Xanathar พึ่งพาลูกน้องเพื่อคำแนะ�
 
 ### Destroy the Lair
 
+![Smokepowder Keg](https://cdn.5e.tools/2024/img/adventure/WDH/Smokepowder.webp "ถังดินปืนเวทที่ใช้ระเบิดคุกของ Xanathar")
+
 **Nar'l Xibrindas** ลักลอบนำ smokepowder เข้าคุก (ดู **area X36**) และร่วมมือกับ **Thorvin Twinbeard** ระบุจุดที่โครงสร้างไม่มั่นคง ถ้าจุดเหล่านี้ทั้งหมดถูกทำลายอย่างรุนแรงพร้อมกัน คุกจะถล่มภายในเวลา 1 ชั่วโมง ตัวละครรู้ข้อมูลนี้ได้จากการคุยกับ Thorvin ที่ **area X13** จุดที่ไม่มั่นคงมีดังนี้:
 
 - **Area X2** ตรงธรณีประตูลับ
@@ -117,6 +119,8 @@ Xanathar พึ่งพาลูกน้องเพื่อคำแนะ�
 ## Xanathar's Lair
 
 คุกของ Xanathar คือดันเจี้ยนโบราณที่สร้างโดยพ่อมด Netherese แต่เดิม แล้วถูกขยายเพิ่มโดยบีโฮลเดอร์รุ่นต่อรุ่น มันเชื่อมกับเมืองใต้ดิน Skullport ผ่านอุโมงค์ยาว (**area X4**) บันไดลับ (**area X1**) เชื่อมสู่ท่อระบายน้ำของ Waterdeep
+
+![Stealing Sylgar](https://cdn.5e.tools/2024/img/adventure/WDH/Xanathar-Lair.webp "Xanathar ขโมยตัว Sylgar บีโฮลเดอร์คู่แข่ง")
 
 ![Xanathar's Lair — DM Map](https://cdn.5e.tools/2024/img/adventure/WDH/Xanathar-Lair-DM.webp "ผังแผนที่คุกของ Xanathar ฉบับ DM")
 
@@ -325,6 +329,8 @@ Noska เลี้ยง rust monster เป็นสัตว์เลี้ย
 ตัวละครที่ยืนหัวบันไดสว่างเวทมนตร์นี้ได้ยินเสียงดนตรีดังและเสียงหัวเราะครึกโครมลอยขึ้นมาจากด้านล่าง บันไดลงลึก 20 ฟุตสู่ **area X28**
 
 ### X16. Panopticus Guard Station
+
+![Panopticus](https://cdn.5e.tools/2024/img/adventure/WDH/Panopticus.webp "Panopticus ยามเฝ้าประตูของ Xanathar")
 
 ห้องนี้มีลักษณะดังนี้:
 

@@ -126,6 +126,10 @@ Halaster ไม่พูดถึงว่าภายหลัง Wyllow ตก
 
 ## สำรวจ Level 5
 
+![Level 5: Wyllowwood](https://cdn.5e.tools/2024/img/adventure/WDMM/015-501.webp "Art credit: Zoltan Boros")
+
+![แผนที่ Level 5](https://cdn.5e.tools/2024/img/adventure/WDMM/016-502.webp "Map 5. Art credit: Tim Hartin")
+
 *ทุกจุดอ้างอิงตาม Map 5 — ใช้แผนที่ประกอบถ้ามี*
 
 ### 1. River of the Depths

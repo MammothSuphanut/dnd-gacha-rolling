@@ -117,6 +117,10 @@ Trobriand's Graveyard ถูกจินตนาการใหม่เป็�
 
 ## สำรวจ Level 13
 
+![Level 13: Trobriand's Graveyard](https://cdn.5e.tools/2024/img/adventure/WDMM/041-13-01.webp "Art credit: Craig J Spearing")
+
+![แผนที่ Level 13](https://cdn.5e.tools/2024/img/adventure/WDMM/042-13-02.webp "Map 13. Art credit: Tim Hartin")
+
 *รายละเอียดทุกพื้นที่อ้างอิงกับแผนที่ 13 — ยกเว้นระบุไว้เป็นอื่น เพดานอุโมงค์เชื่อมถ้ำต่างๆ สูง 30 ฟุต*
 
 ### 1. Tunnels and Trenches

@@ -1,5 +1,7 @@
 # Chapter 2 — Slitherswamp (Level 8)
 
+![ปกประจำ Level 8 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelVIII.webp "Art: Dungeon of the Mad Mage Companion")
+
 *"ร่วมกัน เราจะพิชิตตามวิถีที่สแลดต้องเป็น ข้าจะสอนมรดกของเผ่าพันธุ์ข้า... เผ่าพันธุ์เจ้า"* — Kuketh
 
 หลังผ่านปราสาทของ Maddgoth ปาร์ตี้ลงมาถึง **Slitherswamp** — ถ้ำโคลนเปียกชื้นเต็มไปด้วยวิหารพังทลายของ yuan-ti ที่ครั้งหนึ่งเคยเป็นเจ้าของพื้นที่นี้ ก่อนถูกนาคผู้พิทักษ์ **Ssethian Scourges** ล้มล้าง แล้ว Halaster ก็ยัดเผ่า bullywug **Blacktongue** เข้ามาแทนที่ ปกครองโดย death slaad **Kuketh** ที่ถูกบังคับให้รับใช้ Mad Mage ทั้งสองฝ่ายทำสงครามแย่งชิงพื้นที่กันไม่หยุด ขณะที่สายลับจาก **Dweomercore** (Karstis) จับตาดูอยู่เงียบๆ และมี**ปาร์ตี้นักผจญภัย NPC "The Gentlemen Bastards"** ติดอยู่กลางความขัดแย้งนี้ด้วย

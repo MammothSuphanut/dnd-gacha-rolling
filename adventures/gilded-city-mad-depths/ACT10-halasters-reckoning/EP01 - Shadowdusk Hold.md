@@ -52,6 +52,8 @@ Level 22 ของ Undermountain กลายเป็นที่หลบภ�
 
 ### Dezmyr และ Zalthar
 
+![Dezmyr Shadowdusk](https://cdn.5e.tools/2024/img/adventure/WDMM/074-22-04.webp "Dezmyr Shadowdusk. Art credit: Shawn Wood")
+
 ผู้นำปัจจุบันของ Shadowdusk Hold คือฝาแฝด **Dezmyr** และ **Zalthar Shadowdusk** ทั้งคู่สนิทกันมาตลอดชีวิตแม้กระทั่งหลังความตาย และอาจนำตระกูลได้อย่างเก่งกาจถ้าสถานการณ์ต่างออกไป ฝาแฝดทั้งสองทุ่มเทให้กันและกัน หมกมุ่นกับการนำตระกูลกลับสู่ความรุ่งเรืองและยึดครอง Waterdeep ให้ได้ในที่สุด
 
 ## Halaster's Game: Dead Hold (ตัวแปรเสริม — DM เลือกก่อนเริ่มเซสชัน)
@@ -127,6 +129,10 @@ Companion เสนอว่า Level 22 มีศักยภาพมากก
 ความบ้าคลั่งเป็นธีมหลักของชั้นนี้ หลายจุดกระตุ้นให้เกิดอาการนี้ — ใช้ตาราง Madness จาก DMG บทที่ 8 (long-term/indefinite/short-term) ตลอดชั้นนี้
 
 ## สำรวจ Level 22
+
+![Level 22: Shadowdusk Hold](https://cdn.5e.tools/2024/img/adventure/WDMM/071-22-01.webp "Art credit: Eric Belisle")
+
+![แผนที่ Level 22](https://cdn.5e.tools/2024/img/adventure/WDMM/072-22-02.webp "Map 22. Art credit: Tim Hartin")
 
 ### Tier 1
 
@@ -954,6 +960,8 @@ Cassiok เสียสติและโจมตีทุกคนที่ไ
 
 #### ตัวแปร: Dead Hold
 ในตัวแปรนี้ สมาชิกตระกูล Shadowdusk คนหนึ่งต้องถูกสังเวยให้ Far Realm เพื่อให้ **star spawn seer** สิงร่างเข้าสู่ Material Plane ถ้าเหยื่อไม่ใช่ Melissara (ที่ถูกลากตัวกรีดร้องไปที่ประตู) ก็ต้องเป็น Cassiok — ไม่มีทางรักษาธีมสยองขวัญของชั้นนี้ไว้ได้ถ้าให้ผู้เล่นเจอชายร่างด้วง มันดูตลกเกินไป ส่ง Cassiok ไปที่ประตู เหลือ gray slaad และ grick alpha เฝ้าห้องนี้แทน
+
+![Lynnorax](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/Lynnorax.webp "Lynnorax มังกรโครงกระดูกจอมปลอม เฝ้า Lair ที่ area 40")
 
 ### 40. Lynnorax's Lair
 

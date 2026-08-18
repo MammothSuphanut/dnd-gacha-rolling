@@ -119,6 +119,10 @@ Arcturiadoom คือฉาก**มิดซีซั่นไฟนอล**ข
 
 ## สำรวจ Level 14
 
+![Level 14: Arcturiadoom](https://cdn.5e.tools/2024/img/adventure/WDMM/044-14-01.webp "Art credit: Sam Keiser")
+
+![แผนที่ Level 14](https://cdn.5e.tools/2024/img/adventure/WDMM/045-14-02.webp "Map 14. Art credit: Tim Hartin")
+
 ### 1. Entrance to Arcturiadoom
 
 ถ้ำเหล่านี้อยู่ปลายอุโมงค์ที่ bore worm เจาะทะลุลงมาจาก Level 13

@@ -1,4 +1,7 @@
 # Chapter 2 — Mad Wizard's Lair
+
+![ปกประจำ Level 23 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXXIII.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Undermountain Level 23** — Chapter 2 ของ [Act 10: Halaster's Reckoning](./00-act-outline.md) — **บทสุดท้ายของทั้งแคมเปญ — ✅ จบสมบูรณ์แล้ว**
 
 ## Quick Notes (DM Prep)

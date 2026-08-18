@@ -165,6 +165,8 @@ Lord Cassalanter ส่ง Arn กับ Seffia ไปทำภารกิจ�
 
 ## Encounter 5: Rooftop Chase
 
+![Rooftop Chase](https://cdn.5e.tools/2024/img/adventure/WDH/Rooftop.webp "การไล่ล่าข้ามหลังคาเมือง Waterdeep")
+
 ### Rooftop Chase: Summer
 
 ปาร์ตี้พยายามตาม **spined devil x3** ที่บินต่ำเหนือหลังคา เพื่อไม่ให้ Griffon Cavalry ของ Waterdeep เห็น ปีศาจอยู่ห่างปาร์ตี้ 100 ฟุตตอนเริ่มการไล่ล่า

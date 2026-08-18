@@ -388,6 +388,8 @@ Halaster เตือน Muiral ล่วงหน้า 12 วินาที �
 
 *(แผนที่: The Violet Beacon — ตารางละ 5 ฟุต)*
 
+![The Violet Beacon](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/VioletBeacon.webp "The Violet Beacon—Top Platform Square = 5 ft.. Art credit: Dyson Logos")
+
 **Minions**: ในฐานะผู้เชี่ยวชาญ Evocation Marambra สร้าง living spell รับใช้ในการต่อสู้: **Living Burning Hands x3** และ **Living Lightning Bolt x1** พร้อมด้วย **Shield Guardian** ที่ผูกกับสร้อยคอที่เธอสวมอยู่ ซึ่งเก็บคาถา *fireball* ไว้ในตัว
 
 **Tactics**: Halaster เตือน Marambra ล่วงหน้า 14 วินาที ให้เธอเตรียมตัว 2 รอบ และห้ามเธอหลบหนี ไม่งั้นสัญญาว่าจะตามล่าเธอไม่ว่าจะหนีไปที่ไหนในพหุภพ:

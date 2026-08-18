@@ -1,5 +1,7 @@
 # Chapter 3 — The Lost Level (Level 6)
 
+![ปกประจำ Level 6 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelVI.webp "Art: Dungeon of the Mad Mage Companion")
+
 *"เคยรู้สึกเสมอว่าชั้นนี้ขาด...สีสัน แต่หลังการร่ายเวทไม่กี่ครั้ง ข้าค่อนข้างมั่นใจว่ามันจะสร้างความประทับใจได้"* — Mad Mage พูดถึง Lost Level
 
 หลังจากป่าลวงตาของ Wyllowwood ปาร์ตี้ลึกลงไปอีกชั้นสู่ **Lost Level** — ซับซ้อนวิหารโบราณที่อุทิศให้ **Dumathoin เทพผู้พิทักษ์ความลับใต้ขุนเขา** ที่ถูกตัดขาดจากส่วนอื่นของ Undermountain มานานหลายศตวรรษ จนกระทั่ง umber hulk ขุดอุโมงค์ทะลุเข้ามาโดยบังเอิญ เปิดทางให้นักล่าสมบัติ (และ **duergar เผ่า Clan Ironeye**) หลั่งไหลเข้ามา

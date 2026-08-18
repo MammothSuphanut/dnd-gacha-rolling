@@ -1,4 +1,7 @@
 # Chapter 1 — Caverns of Ooze
+
+![ปกประจำ Level 19 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXIX.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Undermountain Level 19** — เลเวลตัวละครแนะนำ 15-16 (จบชั้นแล้วควรถึง 16)
 
 ## Quick Notes

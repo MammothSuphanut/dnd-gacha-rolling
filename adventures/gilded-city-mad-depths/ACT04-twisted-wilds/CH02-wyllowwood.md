@@ -1,5 +1,7 @@
 # Chapter 2 — Wyllowwood (Level 5)
 
+![ปกประจำ Level 5 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelV.webp "Art: Dungeon of the Mad Mage Companion")
+
 *"จงมองดูป่าของ Wyllow เถิด อย่าได้ทำร้าย มิเช่นนั้นเจ้าจะถูกทำร้ายตอบ"*
 
 หลังจากฝ่าความสยองของ Twisted Caverns มาได้ ปาร์ตี้ล่องแม่น้ำ River of the Depths ลงมาถึงชั้นที่ดูราวกับ "หลุดจาก Undermountain กลับสู่ผิวโลก" — ป่าไม้จริง ท้องฟ้าจำลองที่สมจริงจนหลอกตาได้ แสงแดดอุ่นๆ และสายลมเย็น ทั้งหมดนี้คือของขวัญที่ Halaster สร้างให้กับ **Wyllow** อาร์คดรูอิดมูนเอลฟ์ผู้เป็นเจ้าของป่าแห่งนี้

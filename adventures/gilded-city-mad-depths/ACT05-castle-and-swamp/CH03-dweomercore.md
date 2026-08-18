@@ -1,5 +1,7 @@
 # Chapter 3 — Dweomercore (Level 9)
 
+![ปกประจำ Level 9 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelIX.webp "Art: Dungeon of the Mad Mage Companion")
+
 *"ความตาย — หรือเลวร้ายกว่านั้น การถูกไล่ออก — รอคอยผู้ที่ปฏิเสธเสียงเรียกของเปลวเพลิงเยือกเย็น!"* — The Headmaster
 
 หลังผ่าน Slitherswamp ปาร์ตี้มาถึง **Dweomercore** — สถาบันเวทมนตร์ลับสำหรับพ่อมดชั่วร้าย ปกครองโดย arcanaloth ที่ปลอมตัวเป็น Halaster Blackcloak เอง ร่วมกับ Wormriddle เจ้าแม่มดราตรี Companion เปลี่ยนชั้นนี้ให้กลายเป็น **"evil Hogwarts"** เต็มรูปแบบ — นักเรียนหลายสิบคน, 7 บ้าน (Houses), และไคลแมกซ์คือ **The High Wizard Tournament** การแข่งขันเวทมนตร์ 3 ภารกิจที่ดัดแปลงมาจาก Harry Potter and the Goblet of Fire โดยตรง

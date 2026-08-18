@@ -78,6 +78,10 @@ House Auvryndar ในสงครามกับ House Freth ฉวยรอย
 
 ## สำรวจ Level 11
 
+![Level 11: Troglodyte Warrens](https://cdn.5e.tools/2024/img/adventure/WDMM/035-11-01.webp "Art credit: Cory Trego-Erdner")
+
+![แผนที่ Level 11](https://cdn.5e.tools/2024/img/adventure/WDMM/036-11-02.webp "Map 11. Art credit: Tim Hartin")
+
 ### 1. Auvryndar Watch Post
 
 > *เพดานถ้ำโค้งเว้าสูง 20 ฟุต กองไฟเล็กๆ ยังคุอยู่ในซอกหิน มีเสื้อคลุมสีเทาเปื้อนดินวางอยู่บนก้อนหิน*

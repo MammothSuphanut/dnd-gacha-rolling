@@ -82,6 +82,10 @@ Erelal Freth ลักพาตัว **Sim** ตัวจำลอง (simulacr
 
 ## สำรวจ Level 12
 
+![Level 12: Maze Level](https://cdn.5e.tools/2024/img/adventure/WDMM/038-12-01.webp "Art credit: Lake Hurwitz")
+
+![แผนที่ Level 12](https://cdn.5e.tools/2024/img/adventure/WDMM/039-12-02.webp "Map 12. Art credit: Tim Hartin")
+
 *รายละเอียดทุกพื้นที่อ้างอิงกับแผนที่ 12*
 
 ### 1. Into the Maze

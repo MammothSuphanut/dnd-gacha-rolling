@@ -1,5 +1,7 @@
 # Chapter 2 — Arcturiadoom
 
+![ปกประจำ Level 14 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXIV.webp "Art: Dungeon of the Mad Mage Companion")
+
 *Level 14 ของ Undermountain — Chapter 2 ของ [Act 7: Graveyard & Ruin](./00-act-outline.md)*
 
 ## Quick Notes (จาก Companion)

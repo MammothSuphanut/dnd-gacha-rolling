@@ -1,4 +1,7 @@
 # Chapter 1 — Shadowdusk Hold
+
+![ปกประจำ Level 22 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXXII.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Undermountain Level 22** — Chapter 1 ของ [Act 10: Halaster's Reckoning](./00-act-outline.md)
 
 ## Quick Notes (DM Prep)

@@ -71,6 +71,10 @@
 
 ## สำรวจ Level 16
 
+![Level 16: Crystal Labyrinth](https://cdn.5e.tools/2024/img/adventure/WDMM/051-16-01.webp "Art credit: Lars Grant-West")
+
+![แผนที่ Level 16](https://cdn.5e.tools/2024/img/adventure/WDMM/052-16-02.webp "Map 16. Art credit: Tim Hartin")
+
 ### 1. Entry Hall
 
 > *Crystal Golem ยืนเฝ้าอยู่ตรงนี้*

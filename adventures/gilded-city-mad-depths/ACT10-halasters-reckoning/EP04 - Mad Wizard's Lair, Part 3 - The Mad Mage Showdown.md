@@ -407,6 +407,8 @@ Halaster พังทลายง่ายถ้าโดนรุม รู้�
 
 เหมือนใน Donkey Kong ตัวละครต้องปีนขึ้นไปถึงยอด กระโดดข้ามถัง ปีนบันได ลิงยักษ์ลักพาตัว Halaster (ที่สวมชุดกระโปรงสีชมพูลายดอกไม้) มาไว้บนสุด แล้วขว้างถังลงมาจากชั้นบนสุด เพื่อความง่าย ถังไม่ถูกติดตามบนแผนที่และเล็งเป้าไม่ได้
 
+![Definitely not the Level 1 Map from Donkey Kong 1981](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/DK.webp "Definitely not the Level 1 Map from Donkey Kong 1981")
+
 **แผนที่**: ด้วยปัญหาลิขสิทธิ์ Companion ไม่สามารถแนบภาพแผนที่ Donkey Kong ได้ตรงๆ — ใช้แรงบันดาลใจจากด่าน 1 ของเกมต้นฉบับได้ แต่ละแท่นยาว 50 ฟุต ห่างกัน 10 ฟุต บันไดเชื่อมแท่นนับเป็น difficult terrain สำหรับสิ่งมีชีวิตที่ไม่มี climbing speed
 
 **Rules**: ทำตามแนวทางนี้สำหรับเกมของ Halaster:
@@ -666,6 +668,8 @@ Plane of Water ต้อนรับทุกสมบัติที่ไห�
 **Revenge of the Marid**: Halaster พลาดพลั้งครั้งใหญ่ที่มาที่นี่ — ถ้า **Ichthyglug the marid** ถูกปลดปล่อยจากคุกที่ L19 มันจะมาแก้แค้น Halaster ทันทีที่รู้สึกถึงเขา genie ตัวนี้ใช้ *wish* ปรากฏตัวใกล้ๆ Halaster ใช้ Legendary Action หลังเทิร์นของ genie เพื่อ *plane shift* ตัวเองและปาร์ตี้ไปยังระนาบถัดไปทันที
 
 ### Snakes and Portals
+
+![Snakes and Portals Diagram](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/SnakesandPortals.webp "Snakes and Portals Diagram—One Square = 5 ft.")
 
 > *คุณพบตัวเองในอาณาจักรราบเรียบเศร้าหมองที่ที่ราบไกลๆ ปกคลุมด้วยเงามืด ทั้งหมดที่มองเห็นคือพื้นกระเบื้องหมากรุกสีดำ-ขาว เหนือทุกกระเบื้องลอยตัวเลขโปร่งแสง บ้างสีแดง บ้างสีทอง แต่ส่วนใหญ่สีขาว*
 >

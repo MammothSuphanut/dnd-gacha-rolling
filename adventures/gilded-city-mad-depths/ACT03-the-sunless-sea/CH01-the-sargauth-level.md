@@ -1,4 +1,7 @@
 # Chapter 1 — The Sargauth Level (Undermountain L3)
+
+![ปกประจำ Level 3 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelIII.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Level 7-8**
 
 ซากเมืองใต้ดินโบราณ **Stromkuhldur** ของคนแคระ Melairkyn ถูกแบ่งเป็นเสี่ยงๆ ด้วยแผ่นดินไหวในอดีต ตอนนี้กลายเป็นสมรภูมิระหว่าง **House Auvryndar** (ดรอว์บูชา Lolth นำโดยนักบวชสาว T'rissa Auvryndar) กับ **Legion of Azrok** (กอบลินนอยด์นำโดยขุนศึกตาบอด Azrok ที่ปิดบังความบอดของตน) — ทั้งคู่ต้องการยึดเส้นทางสู่ Skullport ให้ได้ ท่ามกลางกลุ่มที่สาม: **Sea Hags of the Sargauth** แม่มดทะเลที่รับใช้ Halaster อย่างลับๆ คอยยุให้ปาร์ตี้สู้กับดรอว์

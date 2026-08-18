@@ -131,6 +131,10 @@ Teleport trap **มองไม่เห็น** ต่อประสาทส�
 
 ## สำรวจ Level 15
 
+![Level 15: Obstacle Course](https://cdn.5e.tools/2024/img/adventure/WDMM/047-15-01.webp "Art credit: Zoltan Boros")
+
+![แผนที่ Level 15](https://cdn.5e.tools/2024/img/adventure/WDMM/048-15-02.webp "Map 15. Art credit: Tim Hartin")
+
 *ดันเจี้ยนชั้นนี้เกือบไม่มีเฟอร์นิเจอร์ใดๆ เลย เพราะออกแบบมาให้กำจัดผู้บุกรุกอย่างมีประสิทธิภาพและสนุกสนานไปพร้อมกัน จุดเด่นที่สุดของชั้นคือหุบเหวขนาดใหญ่ที่ล้อมรอบทางเดินและห้องหลายจุด (ดูพื้นที่ 40)*
 
 ### 1. On Your Mark! Get Set! Go!

@@ -1,5 +1,7 @@
 # Chapter 3 — The Obstacle Course
 
+![ปกประจำ Level 15 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXV.webp "Art: Dungeon of the Mad Mage Companion")
+
 *Level 15 ของ Undermountain — Chapter 3 (ปิด Act) ของ [Act 7: Graveyard & Ruin](./00-act-outline.md)*
 
 > "*Ye'll become like me—a traitor to all you once held dear... Only way to win the mage's game is not to play.*"

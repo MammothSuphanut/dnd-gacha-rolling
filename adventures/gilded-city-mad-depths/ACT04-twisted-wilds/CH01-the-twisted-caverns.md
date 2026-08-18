@@ -1,4 +1,7 @@
 # Chapter 1 — The Twisted Caverns (Undermountain L4)
+
+![ปกประจำ Level 4 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelIV.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Level 8-9**
 
 ชั้นที่สี่ของ Undermountain คืออาณาจักรน้ำท่วมแห่งความสิ้นหวัง ปกครองด้วยความขัดแย้งสามเส้า: **Illuun** อโบเลธในตำนานที่ยึดถ้ำทะเลสาบเป็นรัง เผ่า **kuo-toa** ที่ถูกขับไล่จากบ้านและกำลังสร้างเทพเจ้าองค์ใหม่ด้วยความสิ้นหวัง และหน่วยดรอว์ House Auvryndar ที่ติดกับอยู่ที่นี่โดยไม่รู้ตัว — เชื้อโรค/พิษจากการมีอยู่ของ Illuun ได้ปนเปื้อนแม่น้ำทั้งสาย ฆ่าปลาและวางยาพิษทุกฝ่ายที่ต้องพึ่งน้ำ

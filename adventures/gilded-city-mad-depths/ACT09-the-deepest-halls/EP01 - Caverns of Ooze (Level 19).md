@@ -72,6 +72,10 @@ Caverns of Ooze เคยเป็นวิหาร/ที่พักพิง
 
 ## สำรวจ Level 19
 
+![Level 19: Caverns of Ooze](https://cdn.5e.tools/2024/img/adventure/WDMM/060-19-01.webp "Art credit: Eric Belisle")
+
+![แผนที่ Level 19](https://cdn.5e.tools/2024/img/adventure/WDMM/061-19-02.webp "Map 19. Art credit: Tim Hartin")
+
 *แผนที่: map 19 — ถ้ำและอุโมงค์ธรรมชาติส่วนใหญ่ บางส่วนขุดโดย purple worm มานานแล้ว ธาร ooze ที่ไหลผ่านส่วนใหญ่มีกลิ่นเหม็นแต่ไม่เป็นอันตราย (ดู "Elemental Ooze" ด้านล่าง)*
 
 ### Elemental Ooze

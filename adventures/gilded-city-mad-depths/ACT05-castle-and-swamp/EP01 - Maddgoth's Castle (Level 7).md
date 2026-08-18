@@ -85,6 +85,10 @@ The Bastards ผ่านมุมอันตรายและแปลกป�
 
 ## สำรวจ Level 7
 
+![Level 7: Maddgoth's Castle](https://cdn.5e.tools/2024/img/adventure/WDMM/021-701.webp "Art credit: Mark Behm")
+
+![แผนที่ Level 7](https://cdn.5e.tools/2024/img/adventure/WDMM/022-702.webp "Map 7. Art credit: Tim Hartin")
+
 *ทุกจุดอ้างอิงตาม Map 7 — ยกเว้นระบุไว้เป็นอื่น ห้องทั้งหมดในถ้ำแกะสลักหยาบ (ไม่ใช่ถ้ำธรรมชาติ) และมีเพดานสูง 30 ฟุต ทางเดินกว้างสูง 20 ฟุต (พอดีกับยักษ์หินสูง 18 ฟุต) อุโมงค์แคบกว้าง 5 ฟุต สูง 8 ฟุต (เล็กเกินไปสำหรับยักษ์) ถ้ำและอุโมงค์ทั้งหมดไม่มีแสง เพราะยักษ์หินอาศัย darkvision*
 
 ### The Caverns (พื้นที่ 1-16)

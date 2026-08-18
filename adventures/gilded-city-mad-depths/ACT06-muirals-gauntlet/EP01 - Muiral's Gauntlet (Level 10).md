@@ -23,6 +23,8 @@
 
 ปาร์ตี้ลงบันไดจาก Dweomercore มาถึง **Muiral's Gauntlet** — ป้อมปราการดรอว์ร้างที่ Muiral the Misshapen ยึดเป็นดินแดนล่าสัตว์ ก่อนจะพัวพันกับสงครามแย่งชิงอำนาจสามฝ่าย: Muiral ผู้หวาดระแวงทุกสิ่ง, House Auvryndar ที่กำลังยกทัพทวงคืนป้อมปราการภายใต้การนำของ Vlonwelv, และสายลับ House Freth ที่วางแผนลอบสังหารเธอจากเงามืด Halaster เฝ้าดูอยู่เสมอ พร้อมท้าทายปาร์ตี้ให้บังคับ Muiral มองกระจกของจริงสักครั้งในชีวิต
 
+![Obsidian Scarabs of Houses Freth and Auvryndar](https://cdn.5e.tools/2024/img/adventure/WDMM/033-10-04.webp "Obsidian Scarabs of Houses Freth and Auvryndar. Art credit: Leesha Hannigan")
+
 ## Before the Descent
 
 > *บันไดหินจาก Dweomercore ทอดยาวลงสู่ความมืด อากาศเปลี่ยนกลิ่นทันที — จากไอเวทมนตร์ห้องเรียนกลายเป็นกลิ่นเนื้อเน่าเหม็นคลุ้ง ทางเดินราบลงสู่ห้องโถงที่เกลื่อนไปด้วยเศษกระจกแตก กรอบกระจกเปล่าเรียงรายตามผนัง ท่ามกลางเศษแก้วนั้น คุณเห็นภาพสะท้อนแวบหนึ่ง — ใบหน้ายิ้มเยาะของ Halaster เสียงของเขาแทรกเข้ามาในความคิด:*
@@ -90,6 +92,10 @@ Vlonwelv มี troglodyte รับใช้ยี่สิบตัว หน�
 ปาร์ตี้ที่สำรวจพื้นที่ 13 ถึง 30 มักเจอหน่วยลาดตระเวนดรอว์ ประกอบด้วย **drow elite warrior** 1d4+2 ตัวสวมสัญลักษณ์ House Auvryndar หัวหน้าหน่วยเป็นดรอว์หญิงที่รายงานตรงต่อ Zress Orlezziir เสมอ ส่วนใหญ่กระหายต่อสู้ แต่ถ้าสถานการณ์พลิกผัน จะถอยหนีไปที่มั่นที่ป้องกันได้ดีกว่า
 
 ## สำรวจ Level 10
+
+![Level 10: Muiral's Gauntlet](https://cdn.5e.tools/2024/img/adventure/WDMM/030-10-01.webp "Art credit: Zoltan Boros")
+
+![แผนที่ Level 10](https://cdn.5e.tools/2024/img/adventure/WDMM/031-10-02.webp "Map 10. Art credit: Tim Hartin")
 
 ทุกจุดในชั้นนี้อ้างอิงตามแมพ 10 ปาร์ตี้เข้าสู่ Muiral's Gauntlet ผ่านบันไดจาก Level 9 (ใกล้พื้นที่ 1) หรือลงมาทางปล่องที่พื้นที่ 3b
 

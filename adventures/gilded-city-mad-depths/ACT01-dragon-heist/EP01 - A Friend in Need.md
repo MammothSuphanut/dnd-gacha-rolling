@@ -138,6 +138,8 @@ Floon ไม่ได้มาที่นี่ตั้งแต่คืน�
 
 ที่ซ่อนบน Castle Lane เป็นโกดังไม้สองชั้นทรุดโทรม — Black Network (ชื่อเล่นของ Zhentarim) มีที่ซ่อนแบบนี้กระจายทั่วเมือง (ผังนี้เอาไปใช้ซ้ำกับที่ซ่อน Zhent แห่งอื่นได้)
 
+![Zhent Warehouse — DM Version](https://cdn.5e.tools/2024/img/adventure/WDH/Zhent-Warehouse-DM.webp "ผังโกดัง Zhentarim ชั้นล่าง ฉบับ DM")
+
 ![Zhent Warehouse — Player Version](https://cdn.5e.tools/2024/img/adventure/WDH/Zhent-Warehouse-Lower-Players.webp "ผังโกดัง Zhentarim ชั้นล่าง")
 
 โกดังตั้งอยู่หลังรั้วสูงในลานหลังบ้าน ประตูรั้วไม่ได้ล็อก ส่วนทางเข้าอาคารสามจุด (ประตูหน้า, ประตูขนถ่ายสินค้าบานใหญ่, หน้าต่างทาสี) ล็อกอยู่ทั้งหมด ประตูหน้ามีช่องสไลด์มองจากด้านในได้ ปลดล็อกได้ด้วย **thieves' tools (DC 12)** หรืองัดด้วย **Athletics (DC 10)**

@@ -1,5 +1,7 @@
 # Chapter 2 — The Troglodyte Warrens
 
+![ปกประจำ Level 11 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXI.webp "Art: Dungeon of the Mad Mage Companion")
+
 *Level 11 ของ Undermountain — Chapter 2 ของ [Act 6: Muiral's Gauntlet](./00-act-outline.md)*
 
 ## Quick Notes (จาก Companion)

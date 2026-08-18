@@ -119,6 +119,10 @@ Jibber-Jabber เดินเข้าใกล้แม่น้ำบ่อย
 
 ## สำรวจ Level 4
 
+![Level 4: Twisted Caverns](https://cdn.5e.tools/2024/img/adventure/WDMM/011-401.webp "Art credit: Craig J Spearing")
+
+![แผนที่ Level 4](https://cdn.5e.tools/2024/img/adventure/WDMM/012-402.webp "Map 4. Art credit: Tim Hartin")
+
 *ทุกจุดอ้างอิงกับ Map 4 — เว้นแต่ระบุไว้เป็นอื่น อุโมงค์ทั้งหมดบนชั้นนี้สูง 20 ฟุต ถ้ำสูง 30-50 ฟุต พื้นส่วนใหญ่ขรุขระปกคลุมด้วยดินและมูลค้างคาว พื้นนุ่มแบบนี้ทำให้ Wisdom (Survival) check เพื่อตามรอยสิ่งมีชีวิตบนชั้นนี้ได้ advantage — แม่น้ำสาขาของ Sargauth ที่ชื่อ River of the Depths ไหลเข้า Undermountain ที่นี่และไหลลงสู่ Level 5*
 
 ### 1. Fungus Forest

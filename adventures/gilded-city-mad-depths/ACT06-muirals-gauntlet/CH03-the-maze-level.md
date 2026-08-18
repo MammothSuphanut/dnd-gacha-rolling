@@ -1,5 +1,7 @@
 # Chapter 3 — The Maze Level
 
+![ปกประจำ Level 12 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXII.webp "Art: Dungeon of the Mad Mage Companion")
+
 *Level 12 ของ Undermountain — Chapter 3 (สุดท้าย) ของ [Act 6: Muiral's Gauntlet](./00-act-outline.md)*
 
 ## Quick Notes (จาก Companion)

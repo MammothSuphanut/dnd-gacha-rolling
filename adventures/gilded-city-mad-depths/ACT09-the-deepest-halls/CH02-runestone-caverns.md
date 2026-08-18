@@ -1,4 +1,7 @@
 # Chapter 2 — Runestone Caverns
+
+![ปกประจำ Level 20 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXX.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Undermountain Level 20** — เลเวลตัวละครแนะนำ 16-17 (จบชั้นแล้วควรถึงกลางเลเวล 17)
 
 ## Quick Notes

@@ -88,6 +88,10 @@ Halaster ยังคงใช้ Terminus Level เป็นที่ทิ้�
 
 ## สำรวจ Level 21
 
+![Level 21: Terminus Level](https://cdn.5e.tools/2024/img/adventure/WDMM/068-21-01.webp "Art credit: Sam Keiser")
+
+![แผนที่ Level 21](https://cdn.5e.tools/2024/img/adventure/WDMM/069-21-02.webp "Map 21. Art credit: Tim Hartin")
+
 *แผนที่ทุกจุดของชั้นนี้ยึดตาม map 21 ผนัง พื้น และเพดานมีรอยเลือดเป็นทาง (ดู Regional Effects) อากาศอบอุ่นและแห้ง*
 
 ### 1. Entrance

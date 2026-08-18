@@ -1,4 +1,7 @@
 # Chapter 1 — The Dungeon Level (Undermountain L1)
+
+![ปกประจำ Level 1 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelI.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Level 5-6**
 
 ชั้นบนสุดของ Undermountain ใต้ Yawning Portal ห้องขนาด 40x40 ฟุตที่บันไดหิน/รอกจาก Yawning Portal หย่อนตัวละครลงมา จากนั้นเป็นเขาวงกตห้อง 41 ห้อง ที่ปกครองโดยแก๊งอันธพาลปลอมตัวเป็นแวมไพร์ (**the Undertakers**) และหน่วยสอดแนมของ **Xanathar Guild** (บั๊กแบร์ที่ถูกฝัง intellect devourer + กอบลิน) แทรกด้วยมอนสเตอร์เร่ร่อนของดันเจี้ยนเอง (เกรลล์, กริก, อูซ, สเตอร์จ)

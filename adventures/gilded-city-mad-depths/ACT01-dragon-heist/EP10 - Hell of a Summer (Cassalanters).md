@@ -458,6 +458,8 @@ Terenzio และ Elzerina เคยได้ยินเสียงหอน�
 
 ### C24. Osvaldo's Prison
 
+![Osvaldo](https://cdn.5e.tools/2024/img/adventure/WDH/Osvaldo.webp "Osvaldo Cassalanter ที่กลายร่างเป็น chain devil")
+
 ถ้า **Ammalia Cassalanter** หรือ **Victoro Cassalanter** หรือทั้งคู่อยู่ที่นี่ ประตูห้องนี้ไม่ล็อกแต่ปิดอยู่ มิฉะนั้นล็อกสนิท Victoro และ Ammalia ถือกุญแจเพียงชุดเดียว เมื่อตัวละครเปิดประตูครั้งแรก อ่าน:
 
 > *คุณถูกโถมทับด้วยคลื่นเสียงหอนไร้เหตุผล ราวกับการเปิดประตูได้ทำลายเขื่อนที่กักเสียงกรีดร้องของคนบ้าไว้*

@@ -68,6 +68,10 @@ umber hulk ที่เดินเพ่นพ่านตรวจจับต
 
 ## สำรวจ Level 6
 
+![Level 6: Lost Level](https://cdn.5e.tools/2024/img/adventure/WDMM/018-601.webp "Art credit: Scott Murphy")
+
+![แผนที่ Level 6](https://cdn.5e.tools/2024/img/adventure/WDMM/019-602.webp "Map 6. Art credit: Tim Hartin")
+
 *ทุกจุดอ้างอิงตาม Map 6 — หลายประตูหินถูก umber hulk พังทลาย สิ่งมีชีวิตเดินผ่านซากปรักหักพังได้โดยไม่มีบทลงโทษ เสาหินคริสตัลควอตซ์ (Quartz Pillar) กระจายอยู่ทั่วชั้นนี้ ส่องแสงจ้าระยะ 20 ฟุตและแสงสลัวอีก 20 ฟุตถัดไป คาถา dispel magic (DC 12) หรือทำลายเสาจะดับแสงถาวร (เสาเป็นวัตถุขนาด Huge, AC 11, 50 HP, ภูมิคุ้มกัน poison/psychic — ไม่ใช่โครงสร้างรับน้ำหนัก ทำลายแล้วเพดานไม่ถล่ม ตัวละครที่มี Stonecunning รู้ข้อเท็จจริงนี้ทันทีโดยไม่ต้องทอย)*
 
 ### 1. Umber Hulk Tunnel

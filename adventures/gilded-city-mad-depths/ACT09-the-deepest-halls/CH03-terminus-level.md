@@ -1,4 +1,7 @@
 # Chapter 3 — Terminus Level
+
+![ปกประจำ Level 21 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelXXI.webp "Art: Dungeon of the Mad Mage Companion")
+
 **Undermountain Level 21** — เลเวลตัวละครแนะนำ 16-17 (จบชั้นแล้วควรถึงเลเวล 17 — ปลดล็อกคาถา **wish** สำหรับ wizard/sorcerer/bard ที่มี Magical Secrets)
 
 ## Quick Notes

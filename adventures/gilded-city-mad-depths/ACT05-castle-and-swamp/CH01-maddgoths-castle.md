@@ -1,5 +1,7 @@
 # Chapter 1 — Maddgoth's Castle (Level 7)
 
+![ปกประจำ Level 7 (Companion)](https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WDMMC/LevelVII.webp "Art: Dungeon of the Mad Mage Companion")
+
 *"...แล้วข้าก็ได้รู้ว่าแขกนั้นถูกประเมินค่าสูงเกินไป ใครก็ตามที่หลบซ่อนอยู่ตอนนี้ ข้าอนุญาตให้อยู่ต่อได้"* — Mad Mage
 
 หลังลงจาก Lost Level ปาร์ตี้เดินทางผ่านถ้ำที่ครอบครัวยักษ์หินความจำเสื่อมอาศัยอยู่ ก่อนจะพบ **Maddgoth's Castle** — ปราสาทจิ๋วสเกล 1/12 ลอยอยู่กลางถ้ำมหึมา บ้านของ **Maddgoth** ฆาตกรต่อเนื่องผู้ล่อลวงพ่อมดคนอื่นมาสังหารเพื่อสะสมของที่ระลึกเวทมนตร์
