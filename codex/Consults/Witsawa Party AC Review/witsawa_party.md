@@ -89,7 +89,9 @@ Pact Magic: 2/2
 **สเปลล์ที่รู้**: Eldritch Blast (cantrip, + Agonizing Blast), Disguise Self, False Life, Hex, Lashing Tendrils, Misty Step, Hellish Rebuke, Nondetection, Hocuspocus (cantrip)
 
 ### Feats / Features เด่น
-Eldritch Invocations: **Eldritch Mind**, **Agonizing Blast**, Pact Magic, Gift of the Svirfneblin, Gnomish Magic Resistance, Svirfneblin Camouflage, Fiendish Vigor, Tentacle of the Deeps, Gift of the Sea
+Eldritch Invocations: **Eldritch Mind**, **Agonizing Blast**, Pact Magic, Gift of the Svirfneblin, Gnomish Magic Resistance, Svirfneblin Camouflage, Fiendish Vigor, **Tentacle of the Deeps**, Gift of the Sea
+
+**บัพที่อนุมัติแล้ว**: Tentacle of the Deeps ดาเมจเพิ่ม CHA modifier เข้าไปด้วย (1d8 + CHA mod ที่ lv1-9, 2d8 + CHA mod ที่ lv10+ ตาม base progression เดิม) แทนที่จะเป็น 1d8 เฉยๆ ไม่มี mod ตาม RAW — จำนวนครั้งใช้ (= proficiency bonus/Long Rest) และกลไกอื่นคงเดิมทั้งหมด (อนุมัติ 2026-08-18 — ปิด gap ที่ RAW ของ Fathomless ลืมใส่ ability mod เข้าดาเมจ tentacle ต่างจาก spell attack ทั่วไปในเกม, Oxton มี CHA 20 (+5) ซึ่งไม่ถูกใช้ประโยชน์จาก feature นี้เลยก่อนบัพ)
 
 ⏳ **ยังไม่ได้เลือก general feat เลเวล 1** (house rule ใหม่)
 
@@ -209,7 +211,9 @@ Studded Leather Armor, Hand Crossbow (1d6 piercing), Unarmed Strike, Traveler's 
 Detect Magic, Misty Step, Prestidigitation
 
 ### Feats / Features เด่น
-Elven Lineage (High Elf), Fey Ancestry, Keen Senses, Trance, Lucky, Polyglot, **Perfect Plan**, Intelligent Defense, Analyze, **Contingency Plan**, Expertise (Tactician), **Double Down**, **All In** (feat ใหม่ที่อนุมัติแล้ว)
+Elven Lineage (High Elf), Fey Ancestry, Keen Senses, Trance, Lucky, Polyglot, **Perfect Plan**, Intelligent Defense, Analyze, **Contingency Plan**, Expertise (Tactician), **Double Down**, **Jackpot** (feat ใหม่ที่อนุมัติแล้ว — แทน All In เดิม)
+
+**บัพที่อนุมัติแล้ว**: All In เดิมแทนที่ด้วย **Jackpot** — เมื่อใช้ Double Down กับ Perfect Plan die ที่เติมเข้า attack roll ของตัวเอง และ attack roll นั้นโดนเป้าอยู่แล้ว (total ≥ AC) ถ้าทั้งลูกแรกและลูกที่ reroll ออกผลอยู่ใน qualifying range ของ Perfect Plan die (4 บน d4, 5–6 บน d6, 6–8 บน d8) จะบังคับให้เป็น critical hit ได้ทันที แม้ attack roll เดิมจะไม่ใช่คริทก็ตาม — ไม่มี usage cap แยก ผูกกับ economy ของ Double Down เดิมเท่านั้น (1 ครั้ง/เทิร์น + ล็อกเมื่อสะสมเลข 1 ครบ proficiency bonus ครั้ง จนจบ Long Rest) (อนุมัติ 2026-08-18 — แก้ปัญหา All In เดิมที่ threshold AC+15+PB เป้าแทบเป็นไปไม่ได้ทางคณิตศาสตร์ตั้งแต่ level ต่ำ)
 
 ⏳ **ยังไม่ได้เลือก general feat เลเวล 1** (house rule ใหม่ — Lucky ด้านบนเป็น feat เดิมจาก build ไม่ใช่ช่องนี้)
 
