@@ -539,85 +539,85 @@
 - [x] Verdant Protector
 - [x] Witchbane Hunter
 
-### Warlock (19)
+### Warlock (19) — [warlock-subclass-level-overlay.md](warlock-subclass-level-overlay.md) (2026-08-18, first pass)
 
-- [ ] Dead Mists
-- [ ] Future You Patron
-- [ ] Legacy
-- [ ] Magician
-- [ ] Symbiont
-- [ ] The Archfey
-- [ ] The Celestial
-- [ ] The Coven
-- [ ] The Fathomless
-- [ ] The Fiend
-- [ ] The First Vampire Patron
-- [ ] The Genie
-- [ ] The GM
-- [ ] The Great Old One
-- [ ] The Hexblade
-- [ ] The Parasite Patron
-- [ ] The Undead
-- [ ] The Undying
-- [ ] Undead Patron
+- [x] Dead Mists
+- [x] Future You Patron
+- [x] Legacy
+- [x] Magician
+- [x] Symbiont
+- [x] The Archfey
+- [x] The Celestial
+- [x] The Coven
+- [x] The Fathomless
+- [x] The Fiend
+- [x] The First Vampire Patron
+- [x] The Genie
+- [x] The GM
+- [x] The Great Old One
+- [x] The Hexblade
+- [x] The Parasite Patron
+- [x] The Undead
+- [x] The Undying
+- [x] Undead Patron
 
-### Warmage (11)
+### Warmage (11) — [warmage-subclass-level-overlay.md](warmage-subclass-level-overlay.md) (2026-08-18, first pass)
 
-- [ ] House of Bishops
-- [ ] House of Cards
-- [ ] House of Darts
-- [ ] House of Dice
-- [ ] House of Go
-- [ ] House of Kings
-- [ ] House of Knights
-- [ ] House of Lancers
-- [ ] House of Pawns
-- [ ] House of Rooks
-- [ ] House of Roulette
+- [x] House of Bishops
+- [x] House of Cards
+- [x] House of Darts
+- [x] House of Dice
+- [x] House of Go
+- [x] House of Kings
+- [x] House of Knights
+- [x] House of Lancers
+- [x] House of Pawns
+- [x] House of Rooks
+- [x] House of Roulette
 
-### Witch (13)
+### Witch (13) — [witch-subclass-level-overlay.md](witch-subclass-level-overlay.md) (2026-08-18, first pass)
 
-- [ ] Black Magic
-- [ ] Blood Magic
-- [ ] Blue Magic
-- [ ] Fragrant Magic
-- [ ] Gingerbread Magic
-- [ ] Green Magic
-- [ ] Purple Magic
-- [ ] Red Magic
-- [ ] Sky Magic
-- [ ] Steel Magic
-- [ ] Tea Magic
-- [ ] Technicolor Magic
-- [ ] White Magic
+- [x] Black Magic
+- [x] Blood Magic
+- [x] Blue Magic
+- [x] Fragrant Magic
+- [x] Gingerbread Magic
+- [x] Green Magic
+- [x] Purple Magic
+- [x] Red Magic
+- [x] Sky Magic
+- [x] Steel Magic
+- [x] Tea Magic
+- [x] Technicolor Magic
+- [x] White Magic
 
-### Wizard (28)
+### Wizard (28) — [wizard-subclass-level-overlay.md](wizard-subclass-level-overlay.md) (2026-08-18, first pass) — 🏁 คลาสสุดท้ายของชั้น 2 (30/30 เสร็จสมบูรณ์)
 
-- [ ] Abjurer
-- [ ] Bladesinger
-- [ ] Chronomancer
-- [ ] Chronurgy Magic
-- [ ] Daemonologist
-- [ ] Diviner
-- [ ] Evoker
-- [ ] Familiar Master
-- [ ] Fumaturge
-- [ ] Gastronomer
-- [ ] Graviturgy Magic
-- [ ] Illusionist
-- [ ] Magic Missile Mage
-- [ ] Mystic Strategist
-- [ ] Order of Scribes
-- [ ] Plague Doctor
-- [ ] Protomancer
-- [ ] Sangromancer
-- [ ] School of Conjuration
-- [ ] School of Enchantment
-- [ ] School of Necromancy
-- [ ] School of Transmutation
-- [ ] Scroll Scribe
-- [ ] Wand Wizard
-- [ ] Somnomancer
-- [ ] Tyromancer
-- [ ] Universalist
-- [ ] War Magic
+- [x] Abjurer
+- [x] Bladesinger
+- [x] Chronomancer
+- [x] Chronurgy Magic
+- [x] Daemonologist
+- [x] Diviner
+- [x] Evoker
+- [x] Familiar Master
+- [x] Fumaturge
+- [x] Gastronomer
+- [x] Graviturgy Magic
+- [x] Illusionist
+- [x] Magic Missile Mage
+- [x] Mystic Strategist
+- [x] Order of Scribes
+- [x] Plague Doctor
+- [x] Protomancer
+- [x] Sangromancer
+- [x] School of Conjuration
+- [x] School of Enchantment
+- [x] School of Necromancy
+- [x] School of Transmutation
+- [x] Scroll Scribe
+- [x] Wand Wizard
+- [x] Somnomancer
+- [x] Tyromancer
+- [x] Universalist
+- [x] War Magic
