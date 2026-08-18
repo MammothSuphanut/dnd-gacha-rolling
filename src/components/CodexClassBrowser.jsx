@@ -5,6 +5,9 @@ import { getHomebrewRule } from '../utils/homebrewRules'
 import { parseClassSubclassIndex } from '../utils/parseClassSubclassIndex'
 import { parseSubclassScorecard } from '../utils/parseSubclassScorecard'
 import { mergeCodexClassData } from '../utils/mergeCodexClassData'
+import { parseLevelBaseline } from '../utils/parseLevelBaseline'
+import { parseSubclassLevelOverlay } from '../utils/parseSubclassLevelOverlay'
+import { LEVEL_AXIS_ORDER, resolveLevelGrid, overallFromAxisGrades, gradeToRadarScore } from '../utils/levelTierGrading'
 import classesBoxes from '../data/classes.json'
 
 // Core = the 12 classic PHB classes; every other class (including official
@@ -24,7 +27,9 @@ const CORE_CLASS_NAMES = new Set(
 // there's no generated ordering to read; S/A/B/C/D is always the right order.
 const TIER_ORDER = ['S', 'A', 'B', 'C', 'D']
 
-const AXIS_ORDER = ['Damage', 'Control', 'Support', 'Survivability', 'Action Economy', 'Utility', 'Versatility']
+// Shared with the level-indexed parsers (levelTierGrading.js) so the axis
+// list can't drift between the two tier systems.
+const AXIS_ORDER = LEVEL_AXIS_ORDER
 const AXIS_SHORT = {
   Damage: 'Dmg',
   Control: 'Ctrl',
@@ -111,6 +116,46 @@ const RENAMED_SUBCLASS_ALIASES = {
     'school of sangromancy': 'sangromancer',
     'school of somnomancy': 'somnomancer',
   },
+}
+
+// A handful of the level-indexed overlay files (Barbarian/Bard, mostly)
+// drop each subclass's common badge-word prefix ("Path of the ", "College
+// of ", "Order of the ", ...) from its own "## " heading — e.g. Barbarian's
+// heading is just "## Berserker", not "## Path of the Berserker" like
+// class-subclass-index.md and every scorecard file use. This gives a
+// couple of extra lookup keys to try, after the exact/alias matches used
+// for the old scorecard system, before falling back to the class's plain
+// baseline (tried both with and without a following "the" kept, since some
+// subclasses keep it as part of their own short name — Bard's "College of
+// the Mad God" maps to the overlay's own "## the Mad God").
+const OVERLAY_PREFIX_WORD_RE = /^(path|college|circle|order|way|oath|school|warrior|throne|house|burden|guild)\s+of\s+/i
+function overlayCoreNameCandidates(indexName) {
+  const withThe = indexName.replace(OVERLAY_PREFIX_WORD_RE, '').trim()
+  const noThe = withThe.replace(/^the\s+/, '').trim()
+  return [withThe, noThe].filter((n) => n && n !== indexName)
+}
+
+// Resolves one subclass's full 1-20×7-axis level-indexed grid: the class's
+// Class Baseline with its matching Subclass Overlay block (if any) layered
+// on top. A subclass with no matching overlay block at all quietly falls
+// back to the plain baseline (zero overrides) rather than "no data" — the
+// correct default per every overlay file's own "unlisted = equals baseline"
+// convention (see overlayCoreNameCandidates' comment for the one genuine
+// documentation gap this covers, Captain's Adrenaline Junkie/Brigand).
+function attachLevelGrid(s, overlayByName, aliases, levelBaseline) {
+  const indexName = s.name.trim().toLowerCase()
+  const candidates = [
+    indexName,
+    indexName.replace(/\s*\([^)]*\)\s*$/, '').trim(),
+    aliases?.[indexName],
+    ...overlayCoreNameCandidates(indexName),
+  ].filter(Boolean)
+  let ov
+  for (const key of candidates) {
+    ov = overlayByName.get(key)
+    if (ov) break
+  }
+  return resolveLevelGrid(levelBaseline.axes, ov?.overrides)
 }
 
 const TIER_BADGE_CLASS = {
@@ -395,10 +440,38 @@ export default function CodexClassBrowser() {
     return merged.map((c) => {
       const scorecardSlug = `2024-tier-list/${classSlug(c.name)}-subclass-scorecard-2024`
       const scorecardRule = getHomebrewRule(scorecardSlug)
-      if (!scorecardRule) return c
+      const aliases = RENAMED_SUBCLASS_ALIASES[c.name]
+
+      // Level-indexed system (see 00-level-anchor-rubric.md) — a completely
+      // separate pair of files per class from the scorecard above. Loaded
+      // unconditionally (not gated behind the scorecard existing) since a
+      // class could in principle have one system's files but not the
+      // other's, though in practice both cover the same 30 classes.
+      const levelBaselineSlug = `2024-tier-list/${classSlug(c.name)}-level-baseline`
+      const levelOverlaySlug = `2024-tier-list/${classSlug(c.name)}-subclass-level-overlay`
+      const levelBaselineRule = getHomebrewRule(levelBaselineSlug)
+      const levelOverlayRule = getHomebrewRule(levelOverlaySlug)
+      const levelBaseline = levelBaselineRule ? parseLevelBaseline(levelBaselineRule.content) : null
+      const overlayByName = new Map(
+        (levelOverlayRule ? parseSubclassLevelOverlay(levelOverlayRule.content).subclasses : []).map((s) => [
+          s.name.trim().toLowerCase(),
+          s,
+        ])
+      )
+      const levelAnalysisLink = `/codex/${levelOverlaySlug}`
+
+      if (!scorecardRule) {
+        return {
+          ...c,
+          subclasses: c.subclasses.map((s) => ({
+            ...s,
+            levelAnalysisLink,
+            levelGrid: levelBaseline ? attachLevelGrid(s, overlayByName, aliases, levelBaseline) : null,
+          })),
+        }
+      }
       const { subclasses: scSubclasses } = parseSubclassScorecard(scorecardRule.content)
       const byName = new Map(scSubclasses.map((s) => [s.name.trim().toLowerCase(), s]))
-      const aliases = RENAMED_SUBCLASS_ALIASES[c.name]
       const analysisLink = `/codex/${scorecardSlug}`
       return {
         ...c,
@@ -428,13 +501,14 @@ export default function CodexClassBrowser() {
               byName.get(indexName) ||
               byName.get(indexName.replace(/\s*\([^)]*\)\s*$/, '').trim()) ||
               (aliases?.[indexName] ? byName.get(aliases[indexName]) : undefined)
+            const levelGrid = levelBaseline ? attachLevelGrid(s, overlayByName, aliases, levelBaseline) : null
             // A scorecard file existing for the class is enough to link every one
             // of its subclasses to the write-up, even ones whose "**Overall**"
             // judgment (tier) hasn't been written yet — axes/tier stay unset for
             // those until it is (see 00-scorecard-methodology.md § การเขียน
             // Overall Tier), and they render as "ยังไม่ได้จัดระดับ".
-            if (!sc) return { ...s, analysisLink }
-            return { ...s, analysisLink, tier: sc.tier, overallReason: sc.overallReason, axes: sc.axes }
+            if (!sc) return { ...s, analysisLink, levelAnalysisLink, levelGrid }
+            return { ...s, analysisLink, levelAnalysisLink, levelGrid, tier: sc.tier, overallReason: sc.overallReason, axes: sc.axes }
           }),
       }
     })
@@ -455,6 +529,38 @@ export default function CodexClassBrowser() {
       ),
     [classes]
   )
+
+  // "ภาพรวม" (whole-career, the old scorecard system, unchanged) or a
+  // specific character level 1-20 (the level-indexed system) — see
+  // project_tier_list_level_split_idea memory. Selecting a level swaps
+  // every row's tier/axes source from the scorecard's whole-career grades
+  // to that level's resolved grid (levelGrid, built above), computing a
+  // derived Overall via the point formula since the level-indexed docs only
+  // ever grade the 7 axes per level, never a combined score.
+  const [selectedLevel, setSelectedLevel] = useState('overall')
+  const isLevelMode = selectedLevel !== 'overall'
+  const levelRows = useMemo(() => {
+    if (!isLevelMode) return flatRows
+    const lv = parseInt(selectedLevel, 10)
+    return flatRows.map((r) => {
+      if (!r.levelGrid) return { ...r, tier: null, axes: undefined, overallReason: null, isLevelMode: true, selectedLevel: lv }
+      const axes = AXIS_ORDER.map((axis) => {
+        const cell = r.levelGrid[axis][lv]
+        return { axis, grade: cell?.grade || null, reason: cell?.reason || null, score: gradeToRadarScore(cell?.grade) }
+      })
+      const gradeByAxis = Object.fromEntries(axes.map((a) => [a.axis, a.grade]))
+      const summary = axes.map((a) => `${AXIS_SHORT[a.axis]} ${a.grade || '—'}`).join(' · ')
+      return {
+        ...r,
+        tier: overallFromAxisGrades(gradeByAxis),
+        axes,
+        overallReason: `Lv${lv}: ${summary} — Overall คำนวณจากสูตร point (S=+3/A=+2/B=+1/C=0/D=-1, ดู 00-scorecard-methodology.md)`,
+        analysisLink: r.levelAnalysisLink || r.analysisLink,
+        isLevelMode: true,
+        selectedLevel: lv,
+      }
+    })
+  }, [flatRows, isLevelMode, selectedLevel])
 
   const bookOptions = useMemo(
     () => [...new Set([...flatRows.map((r) => r.book), ...classes.flatMap((c) => c.books || [])])].sort((a, b) => a.localeCompare(b)),
@@ -515,7 +621,7 @@ export default function CodexClassBrowser() {
   }, [tiers, axisTiers, books, selectedClasses])
 
   const filteredRows = useMemo(() => {
-    return flatRows.filter((r) => {
+    return levelRows.filter((r) => {
       if (selectedClasses.size && !selectedClasses.has(r.className)) return false
       if (tiers.size && !(r.tier && tiers.has(r.tier))) return false
       for (const [axis, selected] of axisTiers) {
@@ -532,7 +638,7 @@ export default function CodexClassBrowser() {
       if (query !== '' && !r.name.toLowerCase().includes(query) && !r.className.toLowerCase().includes(query)) return false
       return true
     })
-  }, [flatRows, selectedClasses, tiers, axisTiers, axisTierModes, books, bookScope, query])
+  }, [levelRows, selectedClasses, tiers, axisTiers, axisTierModes, books, bookScope, query])
 
   const tierGroups = useMemo(() => {
     const byTier = new Map(fullTierOrder.map((t) => [t, []]))
@@ -576,6 +682,23 @@ export default function CodexClassBrowser() {
       <div className="mb-6 rounded-xl border border-[#e2cfb3] bg-[#f5ede0]/60 p-4 shadow-sm">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-3">
+            {/* 21 options: whole-career "ภาพรวม" (the old scorecard system,
+                unchanged) plus Lv1-20 (the level-indexed system) — picking a
+                level swaps every row's Tier/axis grades to that level's
+                resolved grid instead of the whole-career score. */}
+            <select
+              value={selectedLevel}
+              onChange={(e) => setSelectedLevel(e.target.value)}
+              title="เลือกดู Tier แบบภาพรวมทั้งอาชีพ หรือที่เลเวลใดเลเวลหนึ่ง"
+              className="rounded-md border border-[#e2cfb3] bg-white px-2 py-1.5 text-sm font-medium text-stone-700 focus:border-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-200"
+            >
+              <option value="overall">ภาพรวม (ทั้งอาชีพ)</option>
+              {Array.from({ length: 20 }, (_, i) => i + 1).map((lv) => (
+                <option key={lv} value={String(lv)}>
+                  Lv {lv}
+                </option>
+              ))}
+            </select>
             <input
               type="text"
               value={search}
@@ -613,6 +736,15 @@ export default function CodexClassBrowser() {
             แสดง <span className="font-semibold text-stone-700">{totalShown}</span> จาก {totalAll} subclass
           </span>
         </div>
+
+        {isLevelMode && (
+          <p className="mt-3 rounded-md border border-violet-200 bg-violet-50 px-3 py-2 text-xs text-violet-800">
+            🔬 กำลังดู Tier ที่ <span className="font-semibold">Lv {selectedLevel}</span> — เกรดราย axis มาจากระบบ level-indexed ใหม่
+            (Class Baseline + Subclass Overlay) ส่วน <span className="font-semibold">Overall</span> คำนวณจากสูตร point (S=+3/A=+2/B=+1/C=0/D=-1
+            รวม 7 axis) เพราะเอกสารต้นฉบับให้แค่เกรดราย axis ต่อเลเวล ไม่มี Overall รวมต่อเลเวลอยู่แล้ว — ต่างจากโหมด "ภาพรวม" ที่ใช้ Overall Tier
+            ที่ให้ดุลยพินิจ/คำนวณแยกไว้ในไฟล์ scorecard ระบบเดิม
+          </p>
+        )}
 
         {filterOpen && (
           <div className="mt-4 flex flex-col gap-4 border-t border-[#e2cfb3] pt-4">
@@ -666,7 +798,7 @@ export default function CodexClassBrowser() {
                       Subclass
                     </th>
                     <th colSpan={AXIS_ORDER.length} className={`${CELL_CLASS} text-center font-semibold`}>
-                      Tier
+                      {isLevelMode ? `Tier @ Lv ${selectedLevel}` : 'Tier'}
                     </th>
                     <th rowSpan={2} className={`${CELL_CLASS} align-middle font-semibold`}>
                       Book
@@ -710,7 +842,21 @@ export default function CodexClassBrowser() {
           </section>
         ))}
 
-      <Modal open={!!detailRow} onClose={() => setDetailRow(null)} title={detailRow?.name} size={detailRow?.axes?.length ? 'lg' : 'md'}>
+      <Modal
+        open={!!detailRow}
+        onClose={() => setDetailRow(null)}
+        title={
+          detailRow && (
+            <>
+              {detailRow.name}{' '}
+              <span className="text-sm font-normal text-stone-400">
+                ({detailRow.isLevelMode ? `Lv ${detailRow.selectedLevel}` : 'ภาพรวม'})
+              </span>
+            </>
+          )
+        }
+        size={detailRow?.axes?.length ? 'lg' : 'md'}
+      >
         {detailRow && (
           <div className="flex flex-col gap-4 text-sm text-stone-700">
             {detailRow.axes?.length ? (
@@ -762,9 +908,20 @@ export default function CodexClassBrowser() {
                           {a.grade}
                         </span>
                         <span className="text-xs font-semibold text-stone-600">{name}</span>
-                        <span className="text-[11px] text-stone-400">{a.score}</span>
+                        {/* Level mode's "score" is a pseudo 0-10 value that
+                            only exists to drive the radar chart's polygon
+                            math (see gradeToRadarScore) — showing it as text
+                            here would read as a real measurement it isn't. */}
+                        {!detailRow.isLevelMode && <span className="text-[11px] text-stone-400">{a.score}</span>}
                       </div>
-                      <p className="text-stone-700">{a.reason}</p>
+                      <p className="text-stone-700">
+                        {a.reason ||
+                          (detailRow.isLevelMode && (
+                            <span className="italic text-stone-400">
+                              เท่ากับ Class Baseline ที่เลเวลนี้ (ไม่พบคำอธิบายในเอกสารต้นฉบับ)
+                            </span>
+                          ))}
+                      </p>
                     </div>
                   )
                 })}
@@ -779,7 +936,23 @@ export default function CodexClassBrowser() {
               )}
               {detailRow.analysisLink && (
                 <a href={detailRow.analysisLink} target="_blank" rel="noreferrer" className={LINK_CLASS}>
-                  📊 ดูวิเคราะห์เต็ม/tier list
+                  {detailRow.isLevelMode ? '📊 ดู Subclass Overlay (delta จาก baseline)' : '📊 ดูวิเคราะห์เต็ม/tier list'}
+                </a>
+              )}
+              {/* Overlay doc above is delta-only — doesn't restate every one
+                  of the 20 levels for axes the subclass never changes. The
+                  Class Baseline doc is where the full un-abridged 7×20
+                  table (with its own per-level reasoning) actually lives —
+                  useful reference in either Tier mode, not just level mode,
+                  so it isn't gated behind selecting a level. */}
+              {detailRow.className && (
+                <a
+                  href={`/codex/2024-tier-list/${classSlug(detailRow.className)}-level-baseline`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={LINK_CLASS}
+                >
+                  📐 ดู Class Baseline ({detailRow.className}, 7 axis × 20 เลเวลเต็ม)
                 </a>
               )}
             </div>
