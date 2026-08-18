@@ -9,6 +9,37 @@
 
 ---
 
+## ภาพรวมปาร์ตี้ (Lv.3)
+
+**จุดเด่นปาร์ตี้**
+- แนวหน้าแข็งแรง 2 คน (Thalric AC19/HP40, Vorgash AC18/HP35 แบบไม่ใส่เกราะเลย) — มี tank สำรองกันเอง ถ้าตัวนึงล้มยังมีอีกตัวรับหน้าต่อได้
+- มีฮีลเลอร์เฉพาะทาง (Lunol) บวกฮีลเลอร์สำรอง (Thalric ผ่าน Lay on Hands/Cure Wounds) — ไม่พึ่งฮีลเลอร์คนเดียวขาดไม่ได้
+- ดาเมจกระจายครบทุก range: melee (Vorgash, Thalric), ranged (Xiah, Oxton Eldritch Blast, Salem hand crossbow) — ไม่มีจุดบอดเรื่อง positioning ของศัตรู
+- Skill proficiency กระจายกว้างมาก (Salem 6 ตัว, Vorgash 7 ตัว) ครอบคลุมเกือบทุกหมวดในเกม รวมถึงฝั่งสังคม (Oxton CHA+5, Thalric CHA+3)
+
+**จุดด้อยปาร์ตี้**
+- ไม่มี dedicated control caster เลยในตี้ — ไม่มีใครมี AoE control สเปลล์แท้ๆ (grease/web/hold person ฯลฯ) ที่ lv3 ตอนนี้ ต้องพึ่ง debuff เล็กๆ จาก Hex/Analyze/Perfect Plan แทน
+- AC กระจายกว้างมาก (14-19) — **Lunol (AC 14)** เป็นจุดอ่อนชัดเจนที่ศัตรูฉลาดจะเลือกโฟกัสก่อน
+- 3 ใน 6 คนยังไม่เลือก general feat lv1 (Oxton / Salem / Vorgash) — แปลว่าพลังปัจจุบันของตี้ยังไม่ใช่ full potential
+- แนวหน้าจริงๆ มีแค่ 2 คน (Thalric, Vorgash) ถ้าทั้งคู่โดนล็อก/ดาวน์พร้อมกัน แนวหลัง (Lunol AC14, Salem HP27) จะรับดาเมจตรงได้ลำบาก
+
+---
+
+## คะแนนภาพรวม (Lv.3 ปัจจุบัน)
+
+*หมายเหตุ: เป็นการประเมินภาพรวม ณ เลเวล 3 ปัจจุบันเท่านั้น (ไม่ใช่ whole-career score แบบ Codex tier-list) — ใช้เทียบ role/จุดแข็งจุดอ่อนในตี้เดียวกัน ไม่ใช่เทียบข้าม build อื่น*
+
+| ตัวละคร | คะแนนรวม | จุดเด่น | จุดด้อย |
+|---|---|---|---|
+| **Thalric Dawn-Shield** (Paladin) | 8.5/10 | AC 19 + HP 40 สูงสุดในตี้ (แนวหน้าตัวหลัก) • Lay on Hands + Divine Smite burst ฮีล/ดาเมจในตัว • Dragon Fear เพิ่มออปชัน control (fear แทนดาเมจ) | INT −2 dump เต็มตัว • สล็อตคาถามีแค่ 2 (lv1) ใช้ได้จำกัด • ไม่มีออปชันระยะไกลเลย |
+| **Oxton** (Warlock — Fathomless) | 8/10 | CHA 20 (+5) สูงสุดในตี้ • สเตตัสกระจายดีแทบไม่มี dump stat เลย (DEX/CON/WIS +3 ขึ้นทั้งหมด) • Tentacle of the Deeps บัพแล้ว = bonus action damage แรงขึ้นเท่าตัว | AC 15 กลางๆ ไม่มี mobility/evasion feature • Pact slot จำกัดแค่ 2 • ยังไม่เลือก general feat lv1 |
+| **Lunol** (Warlock — Celestial) | 7/10 | ฮีลเลอร์เดี่ยวที่ดีที่สุดในตี้ชัดเจน (Healing Word ฟรี + Cure Wounds ฟรี + Healing Light บัพ CHA mod) • สเปลล์หลากหลายจาก Magic Initiate: Cleric | **AC 14 ต่ำสุดในตี้** เสี่ยงโดนโฟกัสตาย • HP 27 เท่า Salem (ต่ำสุดร่วม) • ไม่มีทางป้องกันตัวระยะประชิดเลย |
+| **Xiah Mystvale** (Fighter — Arcane Archer) | 7.5/10 | Action Surge + Second Wind ทนทานด้าน resource • Arcane Shot บัพแล้ว (ใช้ตาม INT mod) + Marksman's Luck เพิ่มความแน่นอนดาเมจ • DPR ระยะไกลมั่นคง | Chain Shirt cap DEX ไว้ที่ +2 ทำให้ DEX +4 ส่วนเกินไม่ได้ใช้กับ AC เลย • CHA +1 อ่อนด้านสังคม • ยังไม่มี Extra Attack (มาที่ lv5) |
+| **Salem Baskervilles** (Tactician — Gambler) | 6.5/10 | Skill proficiency เยอะสุดในตี้ (6 ตัว) • INT 18 สูงสุดในตี้ • Perfect Plan die เป็น support engine ที่ยืดหยุ่นมาก + Jackpot ใหม่เปิดช่องทำดาเมจเองได้บ้าง | Attack bonus ตัวเองต่ำ (+3 เท่านั้น) ทำให้แม้แต่ฟีเจอร์ที่บัพแล้วก็ยังโดนยาก • ต้องวางแผนล่วงหน้า 10 นาทีก่อนถึงจะใช้ Perfect Plan ได้ • ยังพึ่งพา support-ผู้อื่นเป็นหลัก มากกว่าทำอะไรได้เองเต็มที่ |
+| **Vorgash Cinderhand** (Barbarian — Path of the Fractured) | 8.5/10 | AC 18 + HP 35 โดยไม่ใส่เกราะเลย (Unarmored Defense + Shield) • Reckless Attack + Face of Rage ดาเมจสูงสม่ำเสมอ • Skill proficiency เยอะเป็นอันดับ 2 (7 ตัว) | CHA −1 / INT −1 อ่อนทั้งสังคมและความรู้ • Symbiotic Agenda เสี่ยง backfire เวลาทอย nat 1 • ไม่มีออปชันระยะไกลเลย (melee-only) |
+
+---
+
 ## สรุปตี้
 
 | ตัวละคร | สายพันธุ์ | คลาส / ซับคลาส | เลเวล | AC | Max HP |
