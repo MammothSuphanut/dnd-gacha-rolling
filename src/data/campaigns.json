@@ -572,6 +572,21 @@
     "campaignRole": "Playable"
   },
   {
+    "id": "campaign-1ab10c7a-f77d-41d4-8e4d-270b22a2c11b",
+    "source": "Mammoth Homebrew",
+    "name": "Gilded City, Mad Depths",
+    "adventureSlug": "gilded-city-mad-depths",
+    "status": "Developing",
+    "briefContent": "อิงจาก Waterdeep: Dragon Heist ต่อด้วย Waterdeep: Dungeon of the Mad Mage ผสาน Dungeon of the Mad Mage Companion (fan supplement) — ปาร์ตี้ไล่ล่าทองคำและแก๊งอาชญากรรมบนผิวดินเมือง Waterdeep ก่อนดิ่งลง Undermountain เมกาดันเจี้ยน 23 ชั้นที่ปกครองโดยอาร์คเมจบ้า Halaster Blackcloak ผูกเข้ากับปม Astral Nexus: Constellation Protocol",
+    "level": "1 - 20",
+    "continuesFrom": "",
+    "campaignType": "Long Campaign",
+    "party": "",
+    "note": "🎉 เขียนจบสมบูรณ์แล้ว (2026-08-16) — ครบ 10 Act (Dragon Heist + Undermountain 23 ชั้น), เอาชนะ Halaster Blackcloak สำเร็จใน Act 10 EP04 — ดูสถานะละเอียดที่ adventures/gilded-city-mad-depths/PROGRESS.md",
+    "partyLinks": [],
+    "campaignRole": "Playable"
+  },
+  {
     "id": "campaign-16158073-b8b7-4fe3-86f8-b340bcf46282",
     "source": "James Introcaso",
     "name": "Planet of Tarrasques",

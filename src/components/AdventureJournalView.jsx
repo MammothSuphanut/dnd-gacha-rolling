@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import AdventureMarkdownView from './AdventureMarkdownView'
 import { useToast } from '../store/ToastContext'
 import { getAdventureJournal, getAdventureOverview } from '../utils/adventureJournals'
@@ -102,6 +102,13 @@ export default function AdventureJournalView({ campaign }) {
   const [selected, setSelected] = useState(navItems[0] ?? null)
   // Accordion: only one Act's episode list is expanded at a time.
   const [openActId, setOpenActId] = useState(() => acts?.[0]?.id ?? null)
+  const contentRef = useRef(null)
+
+  // Switching EP/Overview should always land the reader at the top of the
+  // new content, not wherever the previous doc's scroll happened to be.
+  useEffect(() => {
+    contentRef.current?.scrollTo(0, 0)
+  }, [selected])
 
   function toggleAct(actId) {
     setOpenActId((prev) => (prev === actId ? null : actId))
@@ -155,7 +162,7 @@ export default function AdventureJournalView({ campaign }) {
               onToggleAct={toggleAct}
             />
           </div>
-          <div className="flex-1 overflow-y-auto px-6 py-5">
+          <div ref={contentRef} className="flex-1 overflow-y-auto px-6 py-5">
             {selected && (
               <>
                 <div className="mb-3 flex justify-end">
