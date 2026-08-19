@@ -6,117 +6,170 @@
 
 ## ROX Skill Reference — Archer → Hunter/Bard-Dancer
 
+> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1500, 1510-1513, 1520-1523) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) Sniper และ Minstrel มี Talent skill กลางเพิ่มเติม (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
+>
+> *หมายเหตุชื่ออาชีพ*: ROX ไม่มี Dancer แยกสายจาก Bard — สายที่ 2 ของ Archer line ใช้ชื่อ **Bard → Clown → Minstrel → Troubadour** ทั้งหมด (ไฟล์นี้เคยเดาว่า Transcendent = "Minstrel/Gypsy" และ 3rd = "Maestro/Wanderer" ซึ่งไม่ตรงกับฐานข้อมูลจริง — Transcendent คือ **Clown**, 3rd คือ **Minstrel**)
+
 #### Archer (1st Class)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Double Strafe | ยิงธนู 2 ครั้งพร้อมกันใส่เป้าเดียว |
-| Arrow Shower | ยิง AoE รอบเป้าหมาย ดันเป้าหมายถอยหลัง |
-| Arrow Repel | ยิงเป้าเดียวดาเมจสูงกว่าปกติ + ผลักถอยหลัง 6 ช่อง |
-| Improve Concentration | บัฟเพิ่ม DEX/AGI ชั่วคราว + ตรวจจับศัตรูซ่อนตัว |
-| Owl's Eye | Passive เพิ่ม DEX ถาวร |
-| Vulture's Eye | Passive เพิ่มระยะยิงอาวุธระยะไกล + Accuracy Rate |
-| Arrow Crafting | ประดิษฐ์ลูกธนูจากวัตถุดิบ (ชนิด/จำนวนขึ้นกับไอเทมที่ใช้) |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Double Strafe | Active | 10 | Shoots 2 arrows at the same time, dealing a total of (%s% P.ATK + %s) physical damage of your weapon's attribute to a single enemy. Can be used with Elemental Arrow. |
+| Charge Arrow | Active | 10 | Deals (%s% of ATK + %s) physical damage of your weapon's attribute to an enemy target and stuns them for %s second(s). Can be used in conjunction with Elemental Arrow. |
+| Ankle Snare | Active | 10 | Deploy an Anklesnare with an effect radius of 3 meters and a trigger radius of 2 meters at the specified location. After detonating, deals ((DEX + 100) × (10 + INT/10) × %s%) + %s) Neutral physical damage to all enemies within the area and has a %s% chance to immobilize them for %s second(s). Immobilized units can cast skills but cannot move. After the Immobilize state ends, the unit becomes immune to Immobilize for 1.5 seconds. Your other traps deal %s% more damage to immobilized units. Anklesnare lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
+| Arrow Shower | Active | 10 | Shoots 4 waves of arrows at a specified range, each wave dealing (%s% P.ATK + %s) physical damage of your weapon's attribute. Can be used with Elemental Arrow. |
+| Owl's Eye | Toggle | 10 | Permanently increase your DEX by %s. |
+| Freezing Trap | Active | 10 | Deploys an Ice Trap with a damage radius of 3 meters and trigger radius of 2 meters at the specified location. After detonating, deals Water attribute P.DMG equal to ((DEX + 100) x (10 + INT/2) x %s% + %s) to all enemy units within the area and has a %s% chance to freeze the target for %s second(s). If the target is not frozen, its MSPD is decreased by %s% for %s second(s). The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
+| Vulture's Eye | Toggle | 5 | Using a Longbow or Shortbow increases normal attack and all shooting skills' range by %s meter(s). When no more than 1 enemy is within 4 meters, Final DMG Bonus is increased by %s%; if more than 1 enemy is nearby, Final DMG Reduction is reduced by %s% (only MVP, MINI, Boss, and Adventurer units are counted). Using an Instrument or Whip increases the normal attack range by %s meter(s) and the ranged arrow skill range by %s meter(s). |
+| Elemental Arrow | Toggle | 10 | Normal attacks, Double Strafe, Charge Arrow, Multi Firing, Focused Shot, Sharp Shooting, Arrow Shower, Musical Strike, Throw Arrow, Severe Rainstorm, Arrow Vulcan, Rhythm Shooting, and Rose Blossom can be used in conjunction with Elemental Bolts, increasing skill damage by %s%. When using Exploding Arrow, Silver Arrow, Freezing Arrow, Wind Arrow, and Earth Arrow, your damage type will change to Fire, Holy, Water, Wind, and Earth, respectively. |
 
-*Source:* [Ragnarok Online (Renewal) Archer Skills](https://renewal.playragnarok.com/gameguide/classes_skill.aspx?c=4)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1500)
 
 #### Hunter (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Double Strafe | ยิงธนู 2 ครั้งพร้อมกัน |
-| Arrow Shower | ยิง AoE รอบเป้าหมาย |
-| Detect | ตรวจจับศัตรูซ่อนตัวในพื้นที่ |
-| Owl's Eye | Passive เพิ่ม DEX |
-| Vulture's Eye | Passive เพิ่มระยะยิง/hit |
-| Blitz Beat | สั่งเหยี่ยวโจมตีอัตโนมัติ |
-| Falcon Mastery | ปลดล็อกการใช้เหยี่ยวคู่ใจ |
-| Steel Crow | เหยี่ยวโจมตี AoE |
-| Landmine | วางกับระเบิดใต้ดิน |
-| Ankle Snare | กับดักตรึงเป้าหมาย |
-| Shockwave Trap | กับดักดีบัฟ SP |
-| Sandman | กับดักทำให้หลับ |
-| Flasher | กับดักทำให้ตาบอด |
-| Freezing Trap | กับดักแช่แข็ง |
-| Claymore Trap | กับดักระเบิดดาเมจสูง |
-| Beast Bane | Passive เพิ่มดาเมจใส่สัตว์ |
-| Sharp Shooting | ยิงธนูเป้าเดียวดาเมจสูง |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Improve Concentration | Active | 10 | Increase your AGI by %s and DEX by %s for %s seconds. |
+| Falconry Mastery | Toggle | 10 | After renting a falcon, normal attacks have a chance to trigger a falcon attack. Triggering this effect deals ((Steel Crow damage + (INT/8)^1.8 + DEX x 2) × %s + %s) Neutral attribute P.DMG that ignores defense. The initial falcon attack rate is 10%. The falcon's initial size modifier against enemies is 100%. |
+| Claymore Trap | Active | 10 | Deploys a Claymore Trap with a damage radius of 3 meters and a trigger radius of 2 meters at the specified location. After detonating, deals Fire attribute P.DMG equal to ((DEX + 100) x (10 + INT/2) x %s% + %s) to all enemies within the area and inflicts the Kindle effect on them for 5 seconds. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
+| Beast Bane | Toggle | 10 | Increases damage dealt to Brute, Insect, and Fish monsters by %s%. Every 80 DEX increases an additional %s% damage (up to 50%). |
+| Blitz Beat | Active | 10 | Can only be used if you own a falcon. Commands your falcon to attack an enemy unit, dealing ((Steel Crow damage + (INT/8)^1.8 + DEX × 2) × %s + %s) Neutral P.DMG that ignores defense and increases your ASPD by 30 for 12 seconds. Can stack up to 5 times. The falcon's initial size modifier against enemies is 100%. |
+| Electric Shock | Active | 10 | Deploys an Electric Shock trap with a damage radius of 3 meters and a trigger radius of 2 meters at the specified location. After detonating, deals Wind attribute P.DMG equal to ((DEX + 100) x (10 + INT/2) x %s% + %s) to all enemies within the area. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
+| Steel Crow | Toggle | 10 | When the falcon strikes, deals Neutral attribute P.DMG equal to (%s + (INT or DEX) x %s%) that ignores defense. For every 1 additional INT, your P.ATK is increased by 4. |
+| Spring Trap | Active | 10 | Increases trap damage by %s%. Uses all detonable traps that have been deployed. |
+| Focused Shot | Active | 10 | Aim and fire an arrow, dealing weapon attribute P.DMG equal to (%s% of P.ATK + %s) to an enemy and marking the target for 10 seconds. The Mark effect can be stacked up to 5 times. Each stack of the Marks increases the P.DMG dealt to the target by 8% (can be stacked with Multi Firing Marks). This skill can be used in conjunction with Elemental Arrow. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1510)
 
 #### Sniper (Transcendent)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| True Sight | บัฟเพิ่มสเตตัสหลายอย่างชั่วคราว |
-| Wind Walk | บัฟเพิ่ม Speed/หลบหลีก |
-| Falcon Assault (อัพเกรด) | เหยี่ยวโจมตีดาเมจแรงขึ้น |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Wind Walk | Toggle | 10 | Increases your Movement Speed by %s% and Dodge by %s%. |
+| Detect | Active | 5 | Your falcon actively searches for enemies. Reveals stealthed units within 8 meters and inflicts a Falcon's Mark on them for 10 seconds. Your normal attacks and skills deal %s% more damage to units with Falcon's Mark. All monsters within the area will notice your falcon, and you gain 1 Threat. |
+| Sandman | Active | 10 | Deploys a Sandman trap with an effect radius of 3 meters and trigger radius of 2 meters at the specified location. After detonating, deals ((DEX + 100) × (10 + INT/10) × %s%) + %s Neutral physical damage to all enemies in range and has a %s% chance to make the target sleep for %s seconds. After the Sleep state ends, the unit that triggered the Sandman trap becomes immune to Sleep for 1.5 seconds. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
+| True Sight | Active | 10 | Increases sniping ability in a short period of time. After casting the skill, increases six basic attributes by 10 points each, P.ATK by %s%, Crit DMG Bonus by %s%, and Final Physical Penetration by %s%. Every 50 DEX adds: 0.25% P.ATK, 1% Crit DMG, and 0.5% Final Physical Penetration. Lasts 15 seconds. |
+| Falcon Assault | Active | 10 | Sends your falcon to attack an enemy, dealing ((Steel Crow damage + (INT/8)^1.8 + DEX × 2) × %s + %s) Neutral attribute P.DMG that ignores defense. The falcon's initial size modifier against enemies is 100%. |
+| Land Mine | Active | 10 | Deploys a Land Mine with a damage radius of 3 meters and a trigger radius of 2 meters at the specified location. After detonating, deals Earth attribute P.DMG equal to ((DEX + 100) x (10 + INT/2) x %s% + %s) to all enemies within the area. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
+| Multi Firing | Active | 10 | While having multiple arrows in your hand, fire 7 arrows to the 60° fan-shaped area in front of you and knock back the hit target for 2 meters. Each arrow deals weapon attribute physical damage equal to (%s% of Physical Attack) to an enemy and marks the target for 10 seconds. The Mark effect can be stacked up to 5 times. Each stack of the Marks increases the physical damage dealt to the target by 8% (can be stacked with Focused Shot). This skill can be used in conjunction with Elemental Arrow. |
+| Intimidation | Toggle | 10 | When using Falcon Assault and Blitz Beat, there is a %s% chance to peck the enemy unit, stunning it for %s second(s), during which your normal attacks and skills deal %s% more damage. |
+| Trap Research | Toggle | 10 | Increases Intelligence by %s and the maximum number of traps that can be deployed at the same time by %s. |
+| Sharp Shooting | Active | 10 | Charges up and fires a powerful arrow at a target, dealing (%s% P.ATK + %s) Physical Damage of your Weapon's attribute to enemies in its path and knocking them back 4 meters. This skill has a 30% chance to increase skill damage by an additional 100%. Can be used in conjunction with Elemental Bolt. |
+| Ace Tamer | Toggle | 10 | Whenever a beast attacks, you gain a stack of Ace Tamer. When in the Ace Tamer state, your ATK increases by %s% for 7 seconds. Ace Tamer can stack up to 3 times. |
+| Wild Awakening | Toggle | 10 | Increases your LUK by %s and chance to trigger a beast attack by %s%. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1511)
 
 #### Ranger (3rd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Arrow Storm | ยิงธนูรัวใส่เป้าเดียวดาเมจสูง |
-| Aimed Bolt | ยิงเจาะจงดาเมจสูงเป้าเดียว |
-| Detonator | จุดระเบิดกับดักทั้งหมดพร้อมกัน |
-| Electric Shocker | กับดักไฟฟ้าดีบัฟ |
-| Cluster Bomb | กับดักระเบิดหน่วงเวลา |
-| Warg Mastery/Rider/Dash/Strike/Bite | กลุ่ม skill ขี่/บังคับหมาป่า Warg |
-| Tooth of Warg | Warg กัดโจมตี |
-| Sensitive Keen | Passive เพิ่มการตรวจจับ |
-| Camouflage | พรางตัวไม่ให้ศัตรูเห็น |
-| Trap Research | Passive เสริมพลังกับดัก |
-| Magenta/Cobalt/Maze/Verdure/Firing/Ice Bound Trap | กับดักธาตุ/เอฟเฟกต์หลากแบบ |
-| Fear Breeze | ดีบัฟความกลัวพื้นที่ |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Warg Rider | Toggle | 10 | Mounts a Warg that increases MSPD by 4 points in battle (2 points in PVP). Reduces ASPD by %s% and Final Haste by %s% while increasing P.ATK by %s%. When not mounted on any combat mount, a Warg will be summoned to follow by your side. |
+| Warg Strike | Active | 10 | Commands your Warg to dash forward 12 meters in the desired direction, dealing Neutral attribute P.DMG equal to %s% P.ATK to all enemies in its path and reducing MSPD by %s. To cast, mount a Warg first. |
+| Warg Bite | Active | 10 | Commands a Warg to savagely bite a target, dealing Neutral attribute P.DMG equal to %s% of P.ATK, with a 50% chance of inflicting Bleed. While in effect, the target loses HP equal to %s% of Max HP per second for 4 seconds (does not apply to MVP, MINI, or Boss). Can only be triggered when the Warg is following. The Warg's initial size modifier against enemies is 100%. |
+| Prowling Wolf | Toggle | 10 | Grants a 2% chance of triggering Prowling Wolf when dealing a normal attack. Once triggered, your Warg launches a vicious attack, dealing Neutral attribute P.DMG equal to %s% of P.ATK and an additional %s% when the target's HP is below 20%. Can only be triggered when the Warg is following. The Warg's initial size modifier against enemies is 100%. |
+| Aimed Bolt | Active | 10 | Grants Aimed Bolt, during which you are immobilized. After drawing your bowstring back, you then fire a powerful arrow at one target, dealing weapon attribute P.DMG equal to %s% of P.ATK. Every 4 DEX increases the damage coefficient of this skill by 1% of P.ATK, up to 3,000%. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. Can be used with Elemental Arrow. If the hit target's HP is below 50%, the cooldown of Aimed Bolt is reduced by 4 seconds. |
+| Arrow Storm | Active | 10 | Spins rapidly while firing continuously, dealing 6 attacks to enemies within a 6-meter radius for 3 seconds and inflicting weapon attribute P.DMG equal to %s% of P.ATK. Can be used with Elemental Arrow. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. The healing gained from Physical Lifesteal through this skill's damage is increased by %s%. This skill can be cast while moving and is not affected by Vulture's Eye. |
+| Fear Breeze | Toggle | 10 | Grants Fear Breeze upon triggering a crit, increasing Crit Damage Bonus by %s% for 2 sec. Can be stacked up to 4 times. |
+| Splitting Arrows | Toggle | 10 | A normal attack that splits into multiple arrows, dealing %s% Splash Damage to up to 2 enemies in a 3-meter range. Arrows that deal Splash Damage can deal crits but cannot trigger Falconry Mastery or Prowling Wolf. |
+| Precision Shot | Active | 10 | Use to grant Aimed Fire, reducing Final Attack Speed by %s%. While in effect, each normal attack unleashes 3 arrows on a target, dealing weapon-based Physical Damage equal to %s% Physical Attack per arrow, with a chance of triggering a crit, Falconry Mastery, or Prowling Wolf for 10 sec. May be paired with Elemental Arrows. Splitting Arrows cannot be triggered for the duration of the skill. |
+| No Limits | Active | 10 | Continuously fire at enemies within a 60° fan-shaped area in front of you for 3 seconds, dealing weapon attribute physical damage equal to %s% of Physical Attack per arrow. This skill can be used in conjunction with Elemental Arrow. When a target is hit by no less than 5 arrows, they will be Wounded, reducing their healing received by 50% (including Lifesteal) for 5 seconds. |
+| Elemental Trap | Active | 10 | Extracts the elemental power of an arrow, fusing it with a trap that covers a 4-meter radius. Upon consuming an Arrow and a Trap, the arrow's attributes are granted to the elemental trap, after which, if an enemy triggers it, the armor attributes of all enemies within range will be synchronized with the trap's elemental attribute (does not apply to Boss, MINI, and MVP targets). This effect lasts for 3 sec, and the trap itself can exist for up to %s sec, with a maximum of 7 traps at one time (including all other trap types). |
+| Machine Expert | Toggle | 10 | A modified trap, increasing the trigger area of effect by 2 meters and granting increased Movement Speed while pursuing the triggerer. Upon triggering the trap, it will use %s Movement Speed to pursue the enemy before exploding. Does not apply to Elemental Trap. |
 
-#### Windhawk (4th)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1512)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Hawk Rush | เหยี่ยว Windhawk พุ่งโจมตีดาเมจแรง |
-| (Falcon skill ทั้งหมด: Blitz Beat, Detect ฯลฯ) | ใช้ความสามารถเหยี่ยวรุ่นก่อนได้ครบ |
+#### Wind Hawk (4th)
 
-#### Bard/Dancer (2nd)
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Hawk Boomerang | Active | 10 | When you have 1 stack of Ace Tamer, command your falcon to snipe the target by consuming every stack of Ace Tamer. Each 1 stack of Ace Tamer consumed deals 1 hit, with each hit dealing ((Steel Crow damage + (INT/8)^1.8 + DEX x 2) x %s) Neutral attribute P.DMG that ignores defense. The falcon's initial size modifier against enemies is 100%. |
+| Hawk Mastery | Toggle | 10 | Increases the range of Blitz Beat, Falcon Assault, and Hawk Boomerang by %s meters. When your DEX is higher than INT, Falconry Mastery, Blitz Beat, Falcon Assault, and Hawk Boomerang deal %s times, %s times, %s times, and %s times the Neutral attribute DMG equal to ((Steel Crow damage + (DEX/8)^1.8 + INT x 2) that ignores defense, respectively. When you have a longbow equipped and your Final Crit is higher than Final P.PEN, the damage dealt by Falconry Mastery, Blitz Beat, Falcon Assault, and Hawk Boomerang can trigger critical hits. |
+| Nature Friendly | Toggle | 10 | Rents a wind hawk for combat. When normal attacks do not trigger Falconry Mastery, there is a %s% chance to trigger Blitz Beat, Falcon Assault, and Hawk Boomerang. This effect triggers once every 3 seconds. Nature Friendly cannot be triggered by the splash effect of Splitting Arrows, and it won't apply the Intimidation effect when triggered. Precision Shot can trigger the attack effect. If your INT reaches 3,000 or higher, every 1 additional INT increases your P.ATK by 4. |
+| Wolf Fang | Toggle | 10 | Increases the range of Warg Bite by %s meters. There's a %s% chance to trigger Warg Bite when Wind Warg is in follow mode and the normal attack doesn't trigger Prowling Wolf. When you have a longbow equipped and your INT is higher than DEX, the skill coefficient of Prowling Wolf, Warg Strike, and Warg Bite is increased by 1% (up to %s%) for every %s INT you possess. When you have a longbow equipped and your Final Crit is higher than Final P.PEN, the damage of Prowling Wolf, Warg Strike, and Warg Bite can trigger critical hits. |
+| Hawk Rush | Active | 10 | Mounts the wind hawk to take Flight for 6 seconds, increasing MSPD by 5. During the flight, you can't attack and are immune to all ongoing ground effects from enemies (except those from MVP, MINI, and Instance Boss units). You also receive a shield equal to %s% of your Max HP. When time is up, or the shield is depleted, the Flight is canceled immediately. Upon landing, enemies within 6 meters are inflicted with Blind for 3 seconds, and you enter Bombard for 6 seconds, increasing your damage against enemies with less than %s% HP by %s%. |
+| Wind Sign | Toggle | 10 | When dealing damage to enemies with Aimed Bolt, No Limits, Arrow Storm, Gale Storm, or Crescive Bolt, there's a %s% chance to apply Wind Sign to the target. While marked, the target cannot enter Hiding. The Wind Sign lasts for 5 seconds and can only be triggered once every 20 seconds. |
+| Calamity Gale | Toggle | 10 | When Wind Sign is applied to the target, Calamity Gale is summoned at the target's location. Calamity Gale will follow the target, dealing weapon attribute P.DMG equal to %s% of P.ATK every 0.5 seconds to all enemies within a 3-meter radius. Calamity Gale lasts for 5 seconds and up to 8 Calamity Gale can be summoned at the same time. |
+| Gale Storm | Active | 10 | Launches the destructive Arrow Storm, dealing weapon attribute P.DMG equal to %s% of P.ATK to targets within a 6-meter radius. For each 1 additional target hit, Gale Storm's damage increases by 20%, up to 100%. Hitting 6 or more targets reduces the cooldown by 8 seconds. |
+| Crescive Bolt | Active | 10 | Creates a sniper zone at your position, allowing you to cast Crescive Bolt 5 times and deal weapon attribute P.DMG equal to %s% of P.ATK to all enemies on the path each time. Consumes 10% Max SP per cast. Each successive cast increases the damage by %s%. The sniper zone lasts for 12 seconds but disappears if you leave. |
+| Advanced Trap | Toggle | 10 | For every %s INT you have, the damage of traps is increased by 1%, up to %s%, and the range of traps is increased by 2 meters. |
+| Elemental Arrow Array | Active | 10 | Shoots at a targeted area to create a 4-meter radius Elemental Arrow Array. Consumes arrows on use, and the array adopts the element of the current arrow type. Enemies in the array take extra %s% elemental damage from party members. The array lasts for 8 seconds and doesn't count toward the trap limit. |
+| Gale Whistle | Type 5 | 10 | Wind Hawk can ride their summoned Wind Warg in battle. Using the whistle automatically mounts the Wind Warg. Using the whistle again will dismount, switching the Wind Warg to follow mode, and you can remount after 5 seconds. When Wind Warg is in follow mode, the chance to trigger Prowling Wolf is increased by %s%. |
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Music Lessons/Dance Lessons | Passive ปลดล็อก skill ร้อง/รำ |
-| Mute Filter | ดีบัฟ silence ศัตรู |
-| Poem of Bragi | ลดเวลา cooldown/ร่ายเวทให้ปาร์ตี้ |
-| Whistle | บัฟ Flee ให้ปาร์ตี้ |
-| Arrow Vulcan | โจมตีธนูเป้าเดียวดาเมจสูง |
-| Frost Joke/Scream | ดีบัฟตกใจ/แช่แข็งพื้นที่ |
-| Longing for Freedom | ยกเลิก debuff เคลื่อนไหวไม่ได้ |
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1513)
 
-#### Minstrel/Gypsy (Transcendent)
+#### Bard (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Windmill Rush | โจมตีธนูหมุนรอบตัว |
-| Severe Rainstorm | ยิงธนู AoE ห่าฝน |
-| Metallic Sound | ดีบัฟเสียงพื้นที่ |
-| Reverberation | สร้างพื้นที่ก้องเสียงเสริมเอฟเฟกต์ |
-| Great Echo | บัฟ/ดีบัฟรวมพลังหลายคนพร้อมกัน |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Musical Strike | Active | 10 | Releases a powerful arrow from an instrument, dealing (P.ATK × %s%) total physical damage of your weapon's attribute to an enemy over 3 attacks. An instrument weapon must be equipped. Can be used in conjunction with Elemental Arrow. |
+| Frost Joker | Active | 10 | Deals (P.ATK × %s%) Neutral physical damage to all enemies within 4m, with a %s% chance to freeze them for 4 seconds. The chance of freezing targets who have lower INT than yourself increases by ((your INT - target's INT)/(Base Level × 300)). |
+| Musical Lesson | Toggle | 10 | Improves the ability to control musical instruments, increasing P.ATK by (INT × %s%) when using an instrument weapon, and increasing MSPD by %s% when performing a music skill. |
+| Dissonance | Active | 10 | Performs a solo skill, dealing (P.ATK × %s% + INT × %s) physical damage of your weapon's attribute to all enemies within 4m every 1 second. The performance lasts 30 seconds and consumes 10 SP every second. An instrument weapon must be equipped. |
+| Assassin Cross of Sunset | Active | 10 | Performs a solo skill, increasing the Final ASPD of party members within 6m by %s% during the performance. Additionally increases the Final ASPD bonus by 1% for every %s INT of the caster. The performance lasts 30 seconds and consumes 10 SP every second. An instrument weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. |
+| The Apple of Idun | Active | 10 | Performs a solo skill, increasing the Max HP of party members within 6m by %s% during the performance. Additionally increases the Max HP bonus by 1% for every %s VIT of the caster. The performance lasts 30 seconds and consumes 10 SP every second. An instrument weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. |
+| Energy Beat | Active | 10 | Releases a powerful sound wave, dealing (P.ATK × %s% + AGI or INT (whichever is higher) × %s) total physical damage of your weapon's attribute to all enemies along the specified path over 5 attacks. |
+| Encore | Toggle | 10 | Reduces the SP cost of solo and ensemble skills by %s%. |
+| Adaptation to Circumstances | Active | 10 | When an instrument is equipped, each 1 INT additionally increases your Haste by %s. When a whip is equipped, each 1 AGI additionally increases your Haste by %s. Bards or Dancers can use this skill to stop solo or ensemble skills that are being performed. (The Haste bonus takes effect only after equipping the skill to the skill slot.) |
+| Ensemble Invitation | Active | 10 | Invites Bards or Dancers in the party to perform an ensemble together. They will gain the Ensemble status after the invite, and ensemble skills can be performed when the ensemble partner is nearby. While under the Ensemble status, you both take %s% less damage. Using this skill again cancels the Ensemble status. |
+| A Drum on the Battlefield | Active | 10 | Performs an ensemble skill, creating a fixed 6m field that increases the adaptive damage of party members within range by %s%. The performance lasts 30 seconds and consumes 20 SP every second (the ensemble partner's SP is not consumed). The specified ensemble partner must have learned this skill (the skill's effect level is equal to the sum of the skill level of you both divided by 2 and rounded to a whole number). An instrument or whip weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. |
+| Mr. Kim A Rich Man | Active | 10 | Performs an ensemble skill, creating a fixed 6m field that increases the Base EXP and Job EXP of party members within range by %s% (Odin bonus EXP and event EXP are not counted). The performance lasts 30 seconds and consumes 20 SP every second (the ensemble partner's SP is not consumed). The specified ensemble partner must have learned this skill (the skill's effect level is equal to the sum of the skill level of you both divided by 2 and rounded to a whole number). An instrument or whip weapon must be equipped. |
 
-#### Maestro/Wanderer (3rd)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1520)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Sound of Destruction | ทำลายบัฟศัตรูด้วยเสียง |
-| Melody of Sink | ดีบัฟลดสเตตัสพื้นที่ |
-| Unlimited Humming Voice | ขยายระยะ ensemble skill |
-| Symphony of Lovers | บัฟรวมหลายสเตตัสให้ปาร์ตี้ |
-| Song of Mana | ฟื้น SP พื้นที่ต่อเนื่อง |
-| Dance of Fury | บัฟเพิ่มดาเมจ/ASPD |
-| Saturday Night Fever | บัฟดาเมจสูงระยะสั้น |
-| Deep Sleep Lullaby | ทำให้ศัตรูหลับพื้นที่ |
-| Sequence | ล็อกเป้าหมายไม่ให้ขยับ |
-| Refresh | ล้าง debuff + ฟื้น HP/SP พื้นที่ |
-| Voice of Siren | ล่อ/ดีบัฟศัตรูด้วยเสียง (ensemble skill ต้องมี Bard+Dancer ในปาร์ตี้) |
+#### Clown (Transcendent)
 
-#### Troubadour/Trouvere (4th)
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Pang Voice | Active | 10 | Generate maddening sounds at the target area with an instrument, dealing (P.ATK × %s% + INT × %s) physical damage of your weapon's attribute to targets within range and confusing them. Confused enemies can't tell where they are moving for 3 seconds. |
+| Arrow Vulcan | Active | 10 | Shoots a large number of bolts continuously, dealing (P.ATK x %s% + (INT + AGI) x %s) total physical damage of your weapon's attribute to an enemy over 6 attacks. This skill can be used while a music skill is being performed, and can be used with Elemental Bolt. A whip or instrument weapon must be equipped. |
+| A Poem of Bragi | Active | 10 | Performs a solo skill, reducing the casting time of all party members within 4m by %s seconds and making their casting uninterruptable during the performance. The performance lasts 30 seconds and consumes 10 SP every second. An instrument weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. |
+| A Whistle | Active | 10 | Performs a solo skill, increasing the Threat of all monsters within 4m by 1 during the performance. Non-monster targets will stop and watch, becoming immobilized for %s seconds. This skill only takes effect on targets once until they leave the performance range. The performance lasts 30 seconds and consumes 10 SP every second. An instrument weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. |
+| Severe Rainstorm | Active | 10 | Shoots countless bolts into the sky, dealing weapon attribute P.DMG equal to (%s% of P.ATK + (INT + AGI) x %s) to all enemies within 4 meters every 0.5 seconds for 3 seconds. The damage increases by 10% every wave. Can be used with Elemental Arrow. |
+| Polymeric Note | Toggle | 10 | While under the Solo and Ensemble status, gains 1 stack of Polymeric Note every 3 seconds. Polymeric Note lasts for 10 seconds and stacks up to 10 times. Each stack increases P.ATK by %s%. |
+| Lesson | Toggle | 10 | Increases Max SP by %s% and SP Regen by %s%. Also increases MSPD by %s% when performing a solo. If your INT reaches 3,000 or higher, every 1 additional INT increases your P.ATK by 4. If your AGI reaches 3,000 or higher, every 1 additional AGI increases your P.ATK by 4. |
+| Eternal Chaos | Active | 10 | Performs an ensemble skill, creating a fixed 6m field that increases the Final Physical Damage Bonus and Final Magic Damage Bonus of party members within range by %s%. For every 50 INT or AGI the caster has (whichever is higher), additionally increases party members' Final Physical and Magic Damage Bonus by 0.6%. The performance lasts 30 seconds and consumes 20 SP every second (the ensemble partner's SP is not consumed). The specified ensemble partner must have learned this skill. The skill's effect level is equal to the skill level of both parties divided by 2, rounded down. An instrument or whip weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. |
+| Invulnerable Siegfried | Active | 10 | Performs an ensemble skill, creating a fixed 6m field that reduces the Wind, Earth, Water, and Fire damage taken by party members within range by %s% and increases their Debuff Resistance by %s. For every 50 INT or AGI the caster has, additionally increases the Wind, Earth, Water, and Fire DMG Reduction by 0.5% and Debuff Resistance of party members by 0.5 (Debuff Resistance and Elemental DMG Reduction can be increased by up to 70 and 70%, respectively). The performance lasts 60 seconds and consumes 15 SP every second (the ensemble partner's SP is not consumed). The specified ensemble partner must have learned this skill. The skill's effect level is equal to the sum of the skill levels of both parties divided by 2, rounded down. An instrument or whip must be equipped to cast the skill. Effects of the same songs do not stack when their performance ranges overlap. |
+| Longing for Freedom | Toggle | 10 | When an ensemble skill is in effect, the Bard and Dancer do not need to maintain the ensemble posture and can move freely within the skill's range using attack skills (but not solo skills). The damage you take during the ensemble is reduced by %s%. |
+| Lerad's Dew | Active | 10 | Chorus Skill: the performer sings in a beautiful voice of morning dew, granting the Salvation status to all allied units within 30 meters. This status, while active, reduces their damage taken by %s% and restores %s% of their lost HP every 4 times they are attacked (the healing triggers once every 4 seconds). Salvation lasts 10 seconds. Every Bard or Dancer-branch class existing in the party will reduce the damage taken by an additional %s% and increase the healing by an additional %s%. Casting this skill consumes Throat Lozenge x1. |
+| Great Echo | Active | 10 | Performs a chorus skill that creates a huge echo with singing, dealing (P.ATK × %s% + (AGI + INT) × %s) physical damage of your weapon's attribute to all enemies along the specified 8m path. For every Bard or Dancer in the party, additionally increases damage by %s%, up to 75%. Casting this skill consumes Throat Lozenge x1. |
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Mystic Symphony | บัฟดาเมจ skill เฉพาะ + ดาเมจเพิ่มใส่ fish/demi-human |
-| Sonata of Kvasir | เล่น Ensemble skill คนเดียวได้ ไม่ต้องมี Bard+Dancer คู่กัน |
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1521)
 
-*Source:* [ROX Archer/Sniper Build Guide](https://www.bluestacks.com/blog/game-guides/ragnarok-x-next-generation/rox-archer-sniper-build-guide-en.html), [Windhawk (search summary)](https://irowiki.org/wiki/Windhawk), [Bard & Dancer Ensemble Skills List](http://ragnamobileguide.com/bard-dancer-ensemble-skills-list/)
+#### Minstrel (3rd)
+
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Metallic Sound | Active | 10 | Attacks the target with a high-pitched sound, dealing (P.ATK × %s%) physical damage of your weapon's attribute to the target and stunning them for 3 seconds. |
+| Dominion Impulse | Active | 10 | Creates a 4-meter sonic field at a designated location, dealing weapon attribute P.DMG equal to %s% of P.ATK to enemies within range every 0.5 seconds for 8 seconds. Targets within range will be slowed by 50%. Casting this skill consumes Throat Lozenge x1. |
+| Reverberation | Toggle | 10 | Whenever performing a solo, ensemble, or chorus, grants yourself 1 stack of Echo. Each stack of Echo increases the damage of Dominion Impulse by %s%. Echo lasts 15 seconds and can stack up to 10 times. |
+| Tarot Card of Fate | Active | 10 | Tells the fortune of all party members, distributing one of the Grail, Sceptre, Sword, and Star Coin cards to each member and randomly generating the points of each card, up to %s points (the number of card points is equal to the number of buff stacks). Grail: grants 2% Max HP regen for every 1 point (restores HP 1 time every 5 seconds) for 30 seconds. Sceptre: grants 4% M.ATK for every 1 point for 30 seconds. Sword: grants 4% P.ATK for every 1 point for 30 seconds. Star Coin: grants 4% Final DMG Reduction for every 1 point for 30 seconds. The deck is shuffled when this skill is used repeatedly, and cards will be reassigned to party members again. |
+| Valley of Death | Active | 10 | There is a %s% chance to resurrect 1 designated ally with %s% of their Max HP and %s% of their Max SP. There is an additional {[(INT + AGI) / Base Level] x %s%} chance to successfully resurrect (up to 30%). |
+| Marionette Control | Active | 10 | Summons a marionette at the specified location. The marionette then bursts open, dealing (P.ATK × %s%) Neutral physical damage to all enemy targets within 3m. After that, you appear at the location of the marionette. |
+| Circle of Nature's Sound | Active | 10 | Performs a solo skill, restoring %s% of Max HP to all party members within 4m every 3 seconds. The performance lasts 30 seconds and consumes 10 SP every second. An instrument or whip weapon must be equipped. |
+| Lingering Sound | Toggle | 10 | Whenever the performance of Assassin Cross of Sunset, The Apple of Idun, A Poem of Bragi, or Circle of Nature's Sound ends, their buffs will last for an additional %s seconds. This effect is triggered once every 30 seconds. The effect increases by 1 second for every 600 INT or AGI (whichever is higher), up to 15 seconds. |
+| Lullaby | Active | 10 | Performs an ensemble skill, creating a fixed 6m field that puts all enemy units within range to sleep for 4 seconds. Sleeping targets cannot move or attack, and their Final Physical and Final Magic Damage Reduction are reduced by %s%. 10 stacks of sleep will be applied at the beginning, and 1 stack will be removed each time the target takes damage from a normal attack or skill. Targets that awaken from sleep cannot be put to sleep again within 8 seconds. The performance lasts 30 seconds and consumes 20 SP every second (the ensemble partner's SP is not consumed). The specified ensemble partner must have learned this skill. The skill's effect level is equal to the skill level of both parties divided by 2, rounded down. An instrument or whip weapon must be equipped. |
+| Ensemble Marionette | Toggle | 5 | When you are not sending an ensemble invite, you can perform an ensemble with a marionette that cannot attack, move, or take damage. The marionette's skill level in the ensemble is Lv.%s, and the performance time of the ensemble is reduced by 10 seconds. |
+| Dance With Warg | Active | 10 | Performs a chorus skill with a unique musical rhythm that makes all enemy targets within 6m enter a dancing state and dance wildly (unable to move or attack) for 3 seconds. They then become exhausted, losing %s% Max HP and Max SP every second with their healing effect reduced by %s% (this has no effect on bosses, MVP, and MINI). Exhaustion lasts for 3 seconds. For every Bard or Dancer in the party, additionally increases the Max HP and Max SP lost every second by %s% and the healing effect reduction by %s%. Casting this skill consumes Throat Lozenge x1. |
+| Harmonize | Toggle | 10 | Whenever another Bard or Dancer in the party uses a chorus skill within 30m, if your corresponding chorus skill is on cooldown, there is a %s% chance of reducing your chorus skill cooldown by 1 second. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1522)
+
+#### Troubadour (4th)
+
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Sound Blend | Toggle | 10 | While performing alongside an ensemble partner, attacking using Musical Strike, Throw Arrow, Arrow Vulcan, Metallic Sound, or Rhythm Shooting has a %s% chance to apply Sound Blend to the target. This effect triggers once every 2 seconds. Sound Blend can be stacked up to 5 times. Each stack of Sound Blend increases the damage received by the target from both the caster and the ensemble partner by 6%. Sound Blend lasts for 6 seconds. |
+| Rhythm Shooting | Active | 10 | During a solo or ensemble performance, every 5 seconds a random music note of do/re/mi/fa/sol/la/si is called. Casting Rhythm Shooting deals weapon attribute P.DMG equal to (%s% of P.ATK + (INT or AGI, whichever is higher) x %s, up to 2 times the P.ATK) to the target. Depending on the call, Rhythm Shooting's initial damage varies: do → 1, re → 9/8, mi → 5/4, fa → 4/3, sol → 3/2, la → 5/3, si → 15/8. This skill can be used in conjunction with Elemental Arrow. |
+| Rose Blossom | Active | 10 | Shoots an arrow imbued with rose seeds, dealing weapon attribute P.DMG equal to (%s% of P.ATK + (INT or AGI, whichever is higher) x %s, up to 5 times the P.ATK) to enemies within a 6-meter radius. For every additional target in the area, Rose Blossom's damage increases by 6%, up to 30%. This skill can be used in conjunction with Elemental Arrow. |
+| Metallic Fury | Active | 10 | Sends out an echo blast, clearing all Sound Blend effects and dealing weapon attribute P.DMG equal to (%s% of P.ATK + (INT or AGI, whichever is higher) x %s, up to 3 times the P.ATK). For each stack of Sound Blend cleared, Metallic Fury's damage increases by %s%. |
+| Loki Sonata | Active | 10 | Performs a solo skill, increasing the damage against Demon monsters by %s% for all party members within a 6-meter radius. The performance lasts 30 seconds and consumes 15 SP every second. An instrument weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. (Affected by Lingering Sound.) |
+| Dusk Serenade | Active | 10 | Performs a solo skill, increasing the Final M.PEN and Final M.DMG Bonus of all party members within a 6-meter radius by %s% and %s%. The performance lasts 30 seconds and consumes 15 SP every second. An instrument weapon must be equipped. Effects of the same songs do not stack when their performance ranges overlap. (Affected by Lingering Sound.) |
+| March of Prontera | Active | 10 | Performs an ensemble skill, creating a 6-meter fixed field that increases the highest main attribute (STR, AGI, INT, DEX, or LUK) of party members within range by %s%. The performance lasts 30 seconds and consumes 30 SP every second (the ensemble partner's SP is not consumed). The specified ensemble partner must have learned this skill. The skill's effect level is equal to the sum of the skill levels of both parties divided by 2, rounded to a whole number. An instrument or whip must be equipped to cast the skill. Effects of the same songs do not stack when their performance ranges overlap. |
+| Retrospection | Toggle | 10 | If party members are within an ensemble range, they gain Retrospection, allowing them to retain the ensemble buffs even after leaving the field or after the ensemble ends. Retrospection lasts for %s second(s) and can be triggered once every %s seconds. Retrospection can only be triggered by an ensemble; while active, other ensemble buffs can still be received. |
+| Stage Manner | Toggle | 10 | When performing with an ensemble partner, the ensemble casting range is increased by 4 meters, and its effective range is increased by 2 meters. During the ensemble, you or your partner may temporarily leave the area, but if only 1 performer remains within the range, and the other does not return within %s seconds, the ensemble will be forcibly terminated. |
+| Musical Interlude | Toggle | 10 | After starting the ensemble, if the partner is outside the performance range, there's a %s% chance to trigger Musical Interlude. Each successful trigger delays the partner's return timer by 2 seconds. This effect can only be triggered once every 2 seconds. |
+| Mystic Symphony | Toggle | 10 | During an ensemble, all party members within 30 meters have a 30% chance to gain Mystic Symphony's Inspire effect every 5 seconds, reducing their damage taken by %s%. The Inspire effect lasts for 10 seconds. Each party member can only receive this effect once every 14 seconds. Mystic Symphony can only be triggered by an ensemble. |
+| Requiem of Nifleheim | Active | 10 | Performs a hunting chorus and sends waves of terrifying wails, dealing weapon attribute P.DMG equal to (%s% of P.ATK + (INT or AGI, whichever is higher) x %s, up to 1.5 times the P.ATK) to enemies within a 6-meter radius every 0.5 seconds for 6 seconds. Enemies within the area have an 8% chance to suffer Remorse. While under the effect of Remorse, any debuffs removed from the enemies will be reapplied, lasting for 6 seconds. Casting this skill consumes Throat Lozenge x1. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1523)

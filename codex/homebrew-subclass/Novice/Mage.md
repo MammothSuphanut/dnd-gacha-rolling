@@ -6,128 +6,178 @@
 
 ## ROX Skill Reference — Mage → Wizard/Sage
 
+> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1300, 1310-1313, 1320-1323) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลาง (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
+>
+> *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมของ tier 2nd-branch (Sage line) ต่างจากที่ไฟล์นี้เคยเดาไว้ — Transcendent คือ **Professor** (ไม่ใช่ "Scholar")
+
 #### Mage (1st Class)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Cold Bolt / Fire Bolt / Lightning Bolt | เรียกสายฟ้า/ไฟ/น้ำแข็งลงมาโจมตีเป้าเดียว (สกิลโจมตีธาตุพื้นฐานของ Mage) |
-| Napalm Beat | โจมตีเวท ghost property รอบตัวเป้าหมาย ต้นทางของสาย Mage |
-| Soul Strike | เรียกวิญญาณศักดิ์สิทธิ์โจมตี ghost property เพิ่มดาเมจใส่ undead |
-| Fire Ball | ลูกไฟระเบิด AoE เล็ก (ต้องมี Fire Bolt lv4) |
-| Fire Wall | สร้างกำแพงไฟกันทาง สร้างดาเมจ+knockback ให้ศัตรูที่เดินผ่าน |
-| Frost Diver | โจมตีน้ำแข็ง มีโอกาสแช่แข็งเป้าหมาย (ต้องมี Cold Bolt lv5) |
-| Stone Curse | สาปเป้าหมายกลายเป็นหินชั่วคราว ใช้ Red Gemstone |
-| Thunderstorm | พายุฟ้า AoE ต่อเนื่อง (ต้องมี Lightning Bolt lv4) |
-| Safety Wall | กำแพงเวทกันดาเมจกายภาพระยะประชิด (ต้องมี Napalm Beat + Soul Strike, ใช้ Blue Gemstone) |
-| Sight | ตรวจจับศัตรูซ่อนตัวรอบตัว |
-| Energy Coat | โล่เวทลดดาเมจกายภาพ แลก SP ต่อเนื่อง |
-| Increase SP Recovery | Passive ฟื้น SP เร็วขึ้นเมื่อยืนนิ่ง |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Frost Diver | Active | 10 | Deals (%s% M.ATK + %s) Water magic damage to an enemy and has a %s% chance to freeze them for %s seconds. While frozen, the target's Armor attribute will become Water, their M.DEF will be decreased by 20%, and their HP and SP will not recover naturally. When the frozen effect is dispelled in advance due to being attacked, the Water armor attribute effect will persist for another 3 seconds. |
+| Lightning Bolt | Active | 10 | Call down a lightning bolt on an enemy, dealing Wind attribute M.DMG equal to (%s% of M.ATK + %s). Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
+| Soul Strike | Active | 10 | Summon Holy spirits to attack, dealing (%s% of M.ATK + %s) Ghost magic damage to an enemy. Deals %s% more damage to Undead monsters. |
+| Increase SP Recovery | Toggle | 10 | Increase SP Regen, restoring (%s% of Max SP + %s) SP every 10 seconds and increasing the effectiveness of SP recovery items by %s%. |
+| Fire Bolt | Active | 10 | Call down a fire bolt on an enemy, dealing Fire attribute M.DMG equal to (%s% of M.ATK + %s). Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
+| Fire Wall | Active | 10 | Conjures a ring of fire to obstruct enemies from advancing, dealing (%s% of M.ATK + %s) Fire magic damage to enemies that attempt to pass the fire wall. Lasts for 10 seconds. The ring of fire can obstruct enemies up to %s times and will persist for at least 3 seconds. |
+| Cold Bolt | Active | 10 | Call down an ice bolt on an enemy, dealing Water attribute M.DMG equal to (%s% of M.ATK + %s). Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
+| Fire Ball | Active | 10 | Shoot a fireball, dealing (%s% of M.ATK + %s) Fire magic damage to enemy units within 3 meters of the specified location. |
+| Heaven's Drive | Active | 10 | Commands spikes to protrude from the ground near the target, dealing Earth attribute M.DMG equal to (%s% of M.ATK + %s) to a single enemy target. Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
+| Magic Crasher | Active | 10 | Deal (%s% of M.ATK + %s) Neutral magic damage to an enemy on use. |
 
-*หมายเหตุ*: ROX รีเนม/ปรับบางสกิลจากชื่อ RO classic ข้างต้น (เช่น Frost Diver → "Frost Driver", Increase SP Recovery → "Zen") — ใช้ชื่อ RO classic เป็นหลักในตารางนี้เพื่อความชัดเจนของแหล่งอ้างอิง
-
-*Source:* [Ragnarok Online (Renewal) Mage Skills](https://renewal.playragnarok.com/gameguide/classes_skill.aspx?c=3), [Ragnarok X: Next Generation Mage Skill Database](https://hthgaming.com/rox-mage-skill-database/) (ใช้เฉพาะส่วนที่ยืนยันเป็น 1st Class จริง — บางรายการในฐานข้อมูลนี้ปนกับ tier Wizard/High Wizard จึงตัดออกไม่ใส่ซ้ำ)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1300)
 
 #### Wizard (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Fire Bolt / Cold Bolt / Lightning Bolt | โจมตีธาตุเป้าเดียว (ไฟ/น้ำแข็ง/ฟ้า) |
-| Soul Strike | โจมตีเวท ghost property |
-| Fire Ball | ลูกไฟ AoE เล็ก |
-| Frost Diver | แช่แข็ง unable to move |
-| Stone Curse | กลายเป็นหินชั่วคราว |
-| Napalm Beat | โจมตีเวทเป้าเดียว ต้นทาง |
-| Fire Wall / Ice Wall | สร้างกำแพงธาตุกันทาง |
-| Frost Nova | ระเบิดน้ำแข็งรอบตัว หน่วง speed |
-| Jupitel Thunder | โจมตีฟ้าเป้าเดียว |
-| Lord of Vermilion | ระเบิดฟ้า AoE ใหญ่ |
-| Quagmire | ดีบัฟลด ASPD/Speed พื้นที่ |
-| Sightrasher | เวทเป้าเดียวธาตุ neutral |
-| Water Ball | ลูกน้ำโจมตี AoE |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Sight | Active | 10 | Summons a fireball, dealing (%s% of M.ATK + %s) Fire magic damage to enemy units within 3 meters of you and reveals nearby enemy units who are Hiding for 10 seconds. When the Sight effect is active, you can launch Sightrasher to knock back nearby enemy units 4 meters, dealing (%s% of M.ATK + %s) Fire magic damage and stunning them for 2 seconds. |
+| Energy Coat | Active | 10 | Envelop yourself with spiritual energy, reducing your P.DMG and M.DMG received by %s% (every 300 VIT reduces an additional 1%, up to 10%) for 10 seconds. |
+| Storm Gust | Active | 10 | Conjures 7 waves of Storm Gust at the specified location. Each wave deals (%s% of M.ATK + %s) Water magic damage to enemies within the area and has a %s% chance to slow them by %s%. The Slow effect lasts for 3 seconds and can stack up to 3 times. When stacked 3 times, the enemy will be frozen for 3 seconds. Each target can only be slowed and frozen by one Storm Gust at any one time. When a target is frozen by this skill, it will no longer be affected by this skill's Slow effect. This skill's freeze effect will not be removed when the enemy takes damage. |
+| Jupitel Thunder | Active | 10 | Shoot a ball of lightning at an enemy, dealing (%s% of M.ATK + %s) Wind magic damage and knocks them back 4 meters. |
+| Sightrasher | Active | 10 | Knock nearby enemy units back 4 meters using the fireball summoned through Sight, dealing (%s% of M.ATK + %s) Fire magic damage to them and stunning them for 2 seconds. |
+| Lord of Vermilion | Active | 10 | Release a powerful electric shock at the specified location, dealing (%s% of M.ATK + %s) Wind magic damage to enemies within the area 6 times. Has a %s% chance to Blind enemies in range for 10 seconds. |
+| Soul Drain | Toggle | 10 | Increases Max SP by %s% and increases your M.ATK by Max SP/100. |
+| Frost Nova | Active | 10 | Freezes the air nearby, dealing (%s% M.ATK + %s) Water magic damage to enemy units in a 4 meter radius, and has a %s% chance to freeze them for 3 seconds. While frozen, the target's Armor attribute will become Water, their M.DEF will be decreased by 20%, and their HP and SP will not recover naturally. When the frozen effect is dispelled in advance due to being attacked, the Water armor attribute effect will persist for another 3 seconds. |
+| Fire Pillar | Active | 10 | Summons a fire pillar, dealing (%s% of M.ATK (every %s INT increases the damage by 1% up to 880%) + %s) Fire attribute M.DMG to a single enemy target. If the target is ignited, they will be detonated, dealing (%s% of M.ATK (every %s INT increases the damage by 1% up to 1,980%) + %s) Fire attribute M.DMG to all enemy units within 3 meters of them. The detonation does not ignite targets. |
+| Kindle | Toggle | 10 | All Fire attribute skills have a %s% chance to inflict Kindle on the enemy unit on hit. While under the effect of Kindle, targets will take Fire attribute M.DMG equal to %s% of the caster's M.ATK per second for each stack, stacking up to 4 times. Additionally, the enemies receive %s% more Fire attribute DMG from the caster for 8 seconds. |
+| Napalm Beat | Active | 10 | Attack with a blast of telekinetic force, dealing a total of (%s% of M.ATK + %s) Ghost magic damage to enemy units within the area. If there are multiple targets in the area, the damage will be distributed evenly to all of them (up to a maximum of 8 targets). |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1310)
 
 #### High Wizard (Transcendent)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Meteor Storm | ฝนดาวตก ดาเมจ AoE ต่อเนื่อง |
-| Storm Gust | พายุหิมะ AoE + freeze |
-| Chain Lightning | ฟ้ากระโดดหลายเป้า |
-| Napalm Vulcan | ระเบิดเวท AoE รอบเป้าหมาย |
-| Abyssal Swamp | ดีบัฟพื้นที่ ลดสเตตัส |
-| Heaven's Drive | เวท AoE พร้อมโอกาส stun |
-| Mystical Amplification | บัฟเพิ่มดาเมจเวทครั้งถัดไป |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Napalm Vulcan | Active | 10 | Attacks a target 5 times in a row using Ghost Power, dealing Ghost attribute M.DMG equal to (%s% M.ATK + %s). Napalm Vulcan has a %s% chance to deal double damage. When the target takes damage, there's a %s% chance of being cursed, reducing their Final HP by 15% and healing received by 50% for 6 seconds. |
+| Safety Wall | Active | 10 | Creates a barrier at the specified location. You and all party members will be immune to melee physical damage for %s seconds within the barrier. The barrier can take up to %s hits. |
+| Meteor Storm | Active | 10 | Channels for %s seconds, summoning %s meteors to rain down at the specified location. Each meteor deals (%s% of M.ATK + %s) Fire magic damage to the enemy unit hit and has a %s% chance to stun the target for 3 seconds. |
+| Gravitational Field | Active | 10 | Rapidly amplifies the gravity at the specified location, dealing Earth magic damage equal to %s% of magic attack + %s every 0.5 seconds to enemy units within the area for %s seconds. Damage reduces by 10% each time it deals and has a chance to stun enemies for 2 seconds (chance equal to %s%). If the target was not stunned, slows them by 40% for 4 seconds. |
+| Amplify Magic Power | Active | 10 | After using this skill, increases Final M.DMG Bonus of all party members within 30 meters by %s% for 30 seconds. Loses its effect when the caster is more than 30 meters away. |
+| Abyssal Swamp | Active | 10 | Creates a quagmire with a radius of 4 meters at the specified location. Enemy units within the quagmire will have their Movement Speed decreased by %s%, Final ASPD decreased by %s%, and Final Haste decreased by %s%. The quagmire lasts for 7 seconds, and units in the quagmire have a %s% chance per second for their Armor's attribute to switch to Earth. This Earth attribute effect lasts for 3 seconds. This skill is ineffective against MVP, Mini, and Boss monsters. |
+| Chain Lightning | Active | 10 | Deals (%s% of M.ATK + %s) Wind magic damage to an enemy. If other enemy units are near the target, Chain Lightning will automatically bounce to and hit them, bouncing up to %s times. If there are no other targets to bounce to, Chain Lightning will deal the remaining damage to the current target up to 2 times. |
+| Earth Spike | Active | 10 | Calls earth spikes to erupt from the ground, dealing (%s% M.ATK + %s) Earth magic damage to enemy units within 4 meters. The skill has a %s% chance to stun the target for 3 seconds. |
+| Intense Telekinesis | Toggle | 10 | After casting a Ghost attribute skill, there is a %s% chance to gain 1 stack of Intense Telekinesis, reducing fixed cast time by 0.2 seconds, increasing Ghost attribute enhancement by %s%, and reducing SP consumption by 5%. This effect lasts for 6 seconds and can stack up to 6 times. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1311)
 
 #### Warlock (3rd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Crimson Rock | หินไฟระเบิด AoE |
-| Comet | ดาวหางดาเมจสูงมาก AoE |
-| Jack Frost | น้ำแข็งดาเมจ + freeze |
-| Frost Misty | หมอกน้ำแข็งดีบัฟพื้นที่ |
-| Sienna Execration | ดีบัฟลบเวทป้องกันศัตรู |
-| Tetra Vortex | รวมธาตุ 4 แบบ ดาเมจสูงเป้าเดียว |
-| Marsh of Abyss | ดีบัฟหน่วง Speed/ASPD พื้นที่ |
-| White Imprison | ขังเป้าหมายในเวทมนตร์ |
-| Hell Inferno | โจมตีธาตุมืด/ไฟผสม |
-| Recognized Spell | เพิ่มพลังเวทให้ skill ถัดไป |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| White Imprison | Active | 10 | Shrouds an enemy unit in a thin, transparent layer of telekinetic energy. Has a %s% chance to immobilize the target for 5 seconds (has no effect on bosses). While immobilized, increases damage dealt by the caster with other Ghost skills by %s%. Regardless of whether the target is immobilized, once White Imprison dissipates, the target takes Ghost magic damage equal to %s% of M.ATK. |
+| Soul Expansion | Active | 10 | Uses telekinesis to deal Ghost attribute M.DMG equal to %s% of M.ATK to a faraway single enemy target. While the target is under the effect of White Imprison or their HP falls below 30%, this skill deals %s% increased damage and resets its cooldown. |
+| White Barrier | Active | 10 | Shrouds yourself in a thin, transparent layer of telekinetic energy, turning your armor attribute into Ghost and making you immune to damage in all attributes (except damage from MVP, MINI, and Boss) other than Ghost damage for 5 seconds. |
+| Radial Emission | Toggle | 10 | Increases the distance of all ranged skills cast by %s meter(s). |
+| Recognized Spell | Toggle | 10 | Greatly increases the caster's understanding of magic, increasing Magic Penetration by %s% but also increasing SP cost by %s%. |
+| Elemental Enhancement | Toggle | 10 | Each time you use an active skill for your current class that is of the Wind, Earth, Water, or Fire attribute, you gain the corresponding attribute orb. Each attribute orb enhances that attribute by %s%. There can be a maximum of 4 attribute orbs at the same time and 4 of the same attribute orbs. The attribute orbs last 20 seconds. |
+| Tetra Vortex | Active | 10 | Spends all of your current attribute orbs, each dealing magic damage of the corresponding attribute equal to %s% of Magic Attack to the enemy unit. Deals %s% Neutral magic damage instead if there are no attribute orbs. When spending 4 of the same attribute orbs, inflicts the enemy with the following debuffs for 3 seconds: Fire inflicts Burn (loses %s% of Max HP every second, not effective for Bosses/MVPs/MINIs); Water reduces Freeze Resistance by 50% and inflicts Freeze; Earth reduces Petrify Resistance by 50% and inflicts Petrify; Wind reduces Blind Resistance by 50% and inflicts Blind. |
+| Jack Frost | Toggle | 10 | When you deal Water damage to a target frozen by you, their Freeze is removed and you are not granted the effect of Water Armor Extension. You also deal Water magic damage equal to %s% of M.ATK to the target. Removing Freeze does not affect the next application of Freeze. |
+| Electric Induction | Toggle | 10 | Upon dealing damage to the target with Wind skills, there is a %s% chance to inflict the target with Electrify for 6 seconds. When two enemy targets with Electrify come within 4 meters of each other, current flows between them to form a chain lightning which then seeks out another target under the effect of Electrify within 4 meters of them. The chain lightning deals Wind magic damage equal to %s% of M.ATK to each unit under the effect of Electrify and removes the Electrify effect from them. |
+| Confusion Storm | Active | 10 | Creates a lightning storm that follows the target, dealing Wind magic damage equal to %s% of M.ATK every 0.5 seconds to the target and an area of 3 meters around the target. It also inflicts Confuse on all enemies within range. Enemies under the effect of Confuse will move erratically for 6 seconds. Each target can only take damage from one Confusion Storm from the same caster, but can be hit by Confusion Storms from different casters. |
+| Frosty Misty | Active | 10 | Spreads an icy fog, with a %s% chance of converting enemy armor attributes to water attributes for 6 sec. Enemies in range are also inflicted with Frost Misty, reducing their Movement Speed by %s% for the duration of the effect and granting a %s% chance of being Frozen for 3 sec after taking damage. Frost Misty's effect lasts for 6 sec and is cleared after triggering Frozen. |
+| Earth Strain | Active | 10 | Unleashes a powerful quake within a specified range, dealing Earth Magic Damage equal to %s% Magic Attack with a %s% chance of inflicting Petrify for 3 sec. Targets within range will be forced towards the center of the attack. |
+| Flame Shock | Active | 10 | Shrouds yourself in the power of flames, charging 8 meters in the specified direction and dealing Fire magic damage equal to %s% of M.ATK to each enemy unit in your path. You also leave behind a 3-meter-wide Path of Fire, inflicting Burn on enemies within it and causing them to lose %s% of their Max HP every second (not effective against Boss monsters, MVP, MINI). The Path of Fire lasts 7 seconds. Targets on the path will be slowed by a further 50%. This skill can be recharged 2 times. |
+| Flame Guard | Toggle | 10 | While within the range of the Path of Fire or Fire Wall, grants yourself Flame Guard. While under the effect of Flame Guard, grants yourself a shield equal to %s% of Max HP for 6 seconds. Triggers once every 12 seconds. |
+| Sienna Execrate | Toggle | 10 | When you inflict Earth damage on a target that was petrified by you, the target will get out of the Petrify state immediately and receive Earth attribute M.DMG equal to %s% of Max HP, up to %s% of ATK. The hit target will not enter the Earth Armor effect. Forcibly removing Petrify from a petrified target will curse them. Their Max HP is reduced by 15%, and healing received is reduced by 50% for 6 seconds. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1312)
 
 #### Arch Mage (4th)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Astral Strike | ดาเมจ AoE สูงมาก |
-| Climax | บัฟอัพเกรด skill Arch Mage ที่เลือกไว้ |
-| (mastery ธาตุ undead/shadow) | ปลดล็อก mastery ธาตุใหม่ที่ tier ก่อนไม่มี |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Climax | Toggle | 10 | When you have 4 identical elemental energy orbs, you enter the Climax state, increasing your corresponding elemental power by %s%, Debuff Penetration by %s, and Debuff Enhancement by %s. When you have enough energy orbs under the effect of Climax, casting Crimson Arrow, All Bloom, Rock Down, Violent Quake, Frozen Slash, Rain of Crystal, Destructive Hurricane, or Storm Cannon no longer grants energy orbs but instead consumes them to add extra effect to the skills. |
+| Crimson Arrow | Active | 10 | Launches a fire arrow at the target, dealing Fire attribute M.DMG equal to %s% of M.ATK. While under the effect of Climax, the fire arrow explodes on impact, dealing extra damage equal to %s% of the target's lost HP (capped at 1,400% M.ATK). Consumes 2 Fire energy orbs when cast. |
+| All Bloom | Active | 10 | Summons a flower field at the designated location, where flame buds continuously explode, dealing Fire attribute M.DMG equal to %s% of M.ATK to all targets within a 6-meter radius every 0.5 seconds. While under the effect of Climax, the exploding flame buds will trigger the target's Kindle effect, dealing extra Fire attribute M.DMG equal to 0.9% of Max HP to the target (capped at 250%) for 4 seconds. Consumes 4 Fire energy orbs when cast. |
+| Rock Down | Active | 10 | Hurls a boulder at the target, dealing Earth attribute M.DMG equal to %s% of M.ATK. While under the effect of Climax, it deals extra Earth attribute M.DMG equal to %s% of M.ATK. After Rock Down deals damage, there's a (30% + INT/%s x 1%) chance to inflict Curse to the target (the increased chance from INT will not exceed 40%). Consumes 2 Earth energy orbs when cast. |
+| Violent Quake | Active | 10 | Triggers an earthquake at the target to make the rocks randomly emerge from the ground, dealing Earth attribute M.DMG equal to %s% of M.ATK within a 6-meter radius every 1 second for 4 seconds. While under the effect of Climax, the rocks emerge at 2 times the original speed and there's a (20% + INT/%s x 1%) chance to inflict Petrify to the target (the increased chance from INT will not exceed 30%). Consumes 4 Earth energy orbs when cast. |
+| Frozen Slash | Active | 10 | Unleashes 5 sharp ice shards at targets within 6 meters, dealing Water attribute M.DMG equal to %s% of M.ATK to each target. While under the effect of Climax, it deals extra Water attribute M.DMG equal to %s% of M.ATK. After Frozen Slash deals damage, there's a (20% + INT/%s x 1%) chance to inflict Frost Misty to the target (the increased chance from INT will not exceed 40%). Consumes 2 Water energy orbs when cast. |
+| Rain of Crystal | Active | 10 | Calls down the rain of crystals centered around you, dealing Water attribute M.DMG equal to %s% of M.ATK to all enemies within a 6-meter radius every 0.5 second for 4 seconds. While under the effect of Climax, the duration is extended by 2 seconds. After dealing damage, there's a (20% + INT/%s x 1%) chance to inflict Freeze to the target (the increased chance from INT will not exceed 30%). Consumes 4 Water energy orbs when cast. |
+| Destructive Hurricane | Active | 10 | Unleashes a tornado around you, dealing Wind attribute M.DMG equal to %s% of M.ATK to all enemies within a 6-meter radius. While under the effect of Climax, it deals extra Wind attribute M.DMG equal to %s% of M.ATK. After Destructive Hurricane deals damage, it knocks back enemies 6 meters and launches them into the air for 1.5 seconds. Consumes 2 Wind energy orbs when cast. |
+| Storm Cannon | Active | 10 | Channels for 4 seconds, continuously launching storms at the target and dealing Wind attribute M.DMG equal to %s% of M.ATK to all targets along the straight line every 0.5 seconds. While under the effect of Climax, the storm range is enlarged by 4 and there's a (20% + INT/%s x 1%) chance to inflict Blind to the target (the increased chance from INT will not exceed 30%). Consumes 4 Wind energy orbs when cast. |
+| Soul Vulcan Strike | Toggle/Active | 10 | When Intense Telekinesis is fully stacked, Soul Strike is replaced by Soul Vulcan Strike. After a 1.2-second cast time, Soul Vulcan Strike deals Ghost attribute M.DMG equal to %s% to the target. (Appears twice in the source, once as a Toggle entry and once as an Active entry, with identical text — likely a passive-enabler + active-cast pair.) |
+| Ice Shackles | Toggle | 10 | Frozen targets will no longer have the Freeze effect removed immediately upon taking damage. The Freeze effect will only be removed once the accumulated damage equals %s% of the target's Max HP. Jack Frost can still instantly remove the target's Freeze effect. |
+| Rock Chains | Toggle | 10 | Petrified targets will no longer have the Petrify effect removed immediately upon taking damage. The Petrify effect will only be removed once the accumulated damage equals %s% of the target's Max HP. Sienna Execrate can still instantly remove the target's Petrify effect. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1313)
 
 #### Sage (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Free Cast | เดินระหว่างร่ายเวทได้ |
-| Dispel | ล้างบัฟ/สถานะเวทของเป้าหมาย |
-| Elemental Change (Aqua/Fervor/Ventus/Terra) | เปลี่ยนธาตุอาวุธ/ตัวเอง |
-| Earth Spike | โจมตีธาตุดินเป้าเดียว |
-| Deluge/Volcano/Violent Gale/Land Protector | สร้างพื้นที่ธาตุเสริม/ป้องกันปาร์ตี้ |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Free Cast | Toggle | 10 | Increases INT by %s and enables moving while casting magic, but reduces Final Magic Damage by %s%. |
+| Magic Rod | Active | 5 | When released, a magic barrier is applied to all party members within a 12-meter radius for 8 seconds, blocking %s hit(s) of M.DMG dealt by skills, with every 1,000 INT increasing the times of blocking by 1, up to 10 times. Each time damage is successfully blocked, 4% of your Max SP is consumed, increasing the attacker's fixed cooldown by 0.5 seconds and your Final M.DMG Bonus by %s%. These effects last for 10 seconds, stacking up to 10 times. The skill can only be released if your remaining SP is higher than 60% of your Max SP, and if your SP drops below 20% of your Max SP, all barrier effects will be removed. |
+| Spell Breaker | Active | 5 | Deals M.ATK × %s% Neutral magic damage to enemies within a 4m radius and inflicts Spell Breaker on them for %s seconds. If an enemy attempts to cast, chant, or channel while Spell Breaker is in effect, their skill is interrupted and they are silenced for 3 seconds, and the effect of Spell Breaker is removed then. Spell Breaker can only be triggered once each time. |
+| Dispell | Active | 5 | Reduces the M.DEF of enemies within a specified 4m area by %s% for %s seconds, with a %s% chance to remove 1 buff from the target. Buffs cannot be removed from an MVP, MINI, or Instance Boss. |
+| Advanced Book | Toggle | 10 | When equipped with a book weapon, normal attacks become close-range magic attacks, and M.ATK is increased by %s%. For every 15 INT, increases Final ASPD by 1%. When equipped with a two-handed book, increases your Final ASPD by an additional 20% for every 1 level the weapon has been refined. |
+| Auto Spell | Active | 10 | When Auto Spell is released, if Sage is equipped with a Book weapon, there's a %s% chance (every 40 INT increases the chance by 1%, up to 20%) to cast Elemental Arrow to the target. The level of the Elemental Arrow will be divided by 3, rounded down, with every 750 INT increasing the level by 1, up to 4 levels. This lasts for %s second(s). The triggered type of Elemental Arrow is related to the consumed medium (Great Earth/Flame Heart/Mystic Frozen/Rough Wind). |
+| Elemental Mark | Toggle | 10 | Sages have come to understand the mysteries of magic through long-term melee combat experience. After an Elemental Arrow triggered by their Auto Spell hits a target, they inflict an Elemental Mark on them. Whenever a party member deals Earth, Fire, Water, or Wind damage while Elemental Mark is in effect, the target will take %s corresponding Earth, Fire, Water, or Wind magic damage (the attribute of damage dealt by Elemental Mark is the same as the attribute of damage triggering it, and no damage will be triggered for Neutral damage). The mark lasts for 2 seconds. |
+| Element Bonus | Toggle | 5 | When dealing Earth, Fire, Water, or Wind damage to enemies who are under the effect of Elemental Mark (all Elemental Marks inflicted by yourself and party members on enemies can be triggered), Earth, Fire, Water, or Wind enhancement will be increased by %s% according to the type of damage dealt (this effect does not apply when Neutral damage is dealt). At the same time, Final M.PEN and M.ATK percentage will be increased by %s% and %s% respectively for 3 seconds (additionally increases Final M.PEN by 1% for every 100 INT). |
+| Habitual Casting | Toggle | 5 | The Sage enters the Habitual Casting state when releasing 2 Elemental Arrows of the same attribute. While in this state, the cast time of Elemental Arrows of the same attribute is reduced by %s seconds, lasting %s seconds. The Habitual Casting state is removed after it is triggered once. |
+| Radius | Toggle | 5 | Increases the cast range of Heaven's Drive, Fire Bolt, Cold Bolt, and Lightning Bolt by %sm. |
+| Bolt Enhancement | Active | 10 | Enters the Enhanced Elemental Arrow state after casting a skill, which increases the range of the corresponding Elemental Arrows you cast to a 3m radius. Enhanced Elemental Arrow lasts for %s seconds. The triggered type of Enhanced Elemental Arrow is related to the 1 consumed medium (Great Earth/Flame Heart/Mystic Frozen/Rough Wind). |
+| Elemental Field | Active | 10 | Creates an 8×8m elemental field around you that lasts for %s seconds. The attribute of the elemental field will correspond to the consumed medium (Great Earth/Flame Heart/Mystic Frozen/Rough Wind). Field effect: deals magic damage of the corresponding attribute × %s% to all enemy targets within range every second and reduces damage taken from the corresponding attribute in the field by %s%. Only 1 type of elemental field can exist at any time. The creation of a new elemental field will terminate the previous elemental field. If there are multiple elemental fields of the same attribute, their effects do not stack. Costs 1 Yellow Gemstone. |
+| Heaven's Drive | Active | 10 | Commands spikes to protrude from the ground near the target, dealing Earth attribute M.DMG equal to (%s% of M.ATK + %s) to a single enemy target. Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
+| Fire Bolt | Active | 10 | Call down a fire bolt on an enemy, dealing Fire attribute M.DMG equal to (%s% of M.ATK + %s). Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
+| Cold Bolt | Active | 10 | Call down an ice bolt on an enemy, dealing Water attribute M.DMG equal to (%s% of M.ATK + %s). Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
+| Lightning Bolt | Active | 10 | Call down a lightning bolt on an enemy, dealing Wind attribute M.DMG equal to (%s% of M.ATK + %s). Every %s point(s) of INT will increase the skill coefficient of M.ATK by an additional %s%. |
 
-#### Scholar (Transcendent) — *(alt name ของ "Professor" ในภาคหลักด้วย ไม่ใช่ชื่อ ROX เฉพาะ)*
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1320)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Soul Exhale | ปล่อย SP สะสมคืนให้ปาร์ตี้ |
-| Indulge | มอบ SP ให้พันธมิตรโดยตรง |
-| Soul Siphon | ดูด SP จากศัตรู/แหล่งอื่นมาใช้ |
+#### Professor (Transcendent)
 
-#### Sorcerer (3rd) *(ชื่อ+skill ยืมจาก RO classic)*
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Health Conversion | Active | 5 | Converts %s% of Max SP to %s% of Max HP. |
+| Soul Change | Active | 5 | Exchange SP with the target player. After the exchange, the target gains your current SP and you gain %s% of the target's Max SP. When the target is an enemy player, the target will be inflicted with Deplete, which prevents them from recovering SP. While under the Deplete status, 10% of Max SP is deducted every second. The player cannot recover SP by consuming potions or regenerating SP naturally. Deplete lasts for 5 seconds. When the target is a monster, restores your SP by %s% of Max SP. |
+| Mind Drain | Toggle | 5 | When casting Spell Breaker, Dispell, or Soul Change on an enemy player, deals Neutral damage equal to %s% of your Max SP to them. |
+| Mind Breaker | Toggle | 5 | When an enemy player casts Spell Breaker, Dispell, or Soul Change, the target has a Mental Breakdown, which has a %s% chance to reduce the target's M.ATK by %s% and M.DEF by %s% for 6 seconds. This has no effect on Boss, Mini, or MVP targets. |
+| Spider Web | Active | 5 | Shoots spider webs at the target, immobilizing them for %s seconds. Increases the damage the target takes from Fire attribute attacks by %s%. The immobilization effect ends early after an immobilized target takes Fire damage %s times. |
+| Spell Fist | Active | 10 | Enchants the weapon, granting yourself the Spell Fist state. Spell Fist changes the attribute of your weapon to a corresponding element depending on the consumed medium (Great Earth/Flame Heart/Mystic Frozen/Rough Wind). While Spell Fist is active, Final Hit is increased by an extra %s% and every 50 INT increases Final Hit by an additional 1%. Normal attacks made while Spell Fist is in effect have a 20% chance to deal additional corresponding attribute M.DMG equal to M.ATK x %s% to the target 6 times. Spell Fist lasts for 600 seconds. |
+| Striking | Active | 10 | Sages comprehend the secrets of battle once again, using the power of magic to enhance weapons. Striking lasts for %s seconds. While this status is in effect, increases the damage you deal to the target by %s% for every 1% Max HP they lose during this time. Costs 1 Red Gemstone. |
+| Elemental Knowledge | Toggle | 5 | Extensive studying of elements has increased the Earth/Fire/Water/Wind damage of Sages by %s%. |
+| Memorize | Toggle | 10 | After actively casting Fire Bolt, Cold Bolt, Lightning Bolt, or Heaven's Drive, there is a %s% chance to enter the Memorize state. Memorize lasts for 2 seconds. Memorize also makes the next Elemental Bolt cast instantly. Elemental Bolts cast in the Memorize state will not trigger Memorize and other skills related to Elemental Bolts. |
+| Double Casting | Toggle | 10 | After actively casting Fire Bolt, Cold Bolt, Lightning Bolt, or Heaven's Drive, there is a %s% chance to double the damage immediately. Elemental Arrows cast through Double Casting will not trigger Memorize. |
+| Monster Knowledge | Toggle | 5 | Extensive studying of monsters has increased your DMG Reduction against damage dealt by Fire, Water, Wind, and Earth monsters by %s% and increased your damage dealt to Fire, Water, Wind, and Earth monsters by %s%. |
+| Extended Field | Toggle | 5 | After you and your party members leave the elemental field, the field's effect will last for another %s seconds. |
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Varetyr Spear | หอกฟ้าจากฟากฟ้า ดาเมจสูง |
-| Psychic Wave | คลื่นเวท AoE เส้นตรง |
-| Earth Grave | หนามดินทิ่มจากพื้น AoE |
-| Diamond Dust | น้ำแข็ง AoE ใหญ่ |
-| Cloud Kill | เมฆพิษดาเมจต่อเนื่อง |
-| Fire/Water/Wind/Earth Insignia | เสริมพลังธาตุพื้นที่ให้ทีม |
-| Spell Fist | รวมเวทเข้าหมัดโจมตีประชิด |
-| Summon Elemental Spirit (Agni/Aqua/Ventus/Tera) | เรียกวิญญาณธาตุมาช่วยรบ |
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1321)
+
+#### Sorcerer (3rd)
+
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Warmer | Active | 10 | Deals M.ATK × %s% Fire magic damage in a 4m radius around you, removes all debuffs on you, and summons Warmer to protect you. Warmer lasts for %s seconds. During this time, you are immune to upcoming Freeze and Slow effects (immunity does not apply to effects from MVP, Mini, and Boss units). This skill can still be cast even when you are controlled or silenced. |
+| Earth Grave | Active | 10 | Turns rocks within a specified 4-meter area into hard spears that stab out from the ground under the enemy's feet, dealing Earth attribute M.DMG equal to %s% of M.ATK (every 8 INT increases the damage by 1% up to 1,500%) and reducing the MSPD of targets within range by %s% for %s seconds. |
+| Diamond Dust | Active | 10 | Deals Water attribute M.DMG equal to %s% of M.ATK (every 12 INT increases the damage by 1% up to 1,000%) to enemies within range, with a %s% chance to freeze the target for 3 seconds. |
+| Varetyr Spear | Active | 10 | Summons several giant bolts of lightning to strike the target, dealing Wind attribute M.DMG equal to %s% of M.ATK (every 12 INT increases the damage by 1% up to 1000%) to the target and enemies within a 4-meter radius of the target. There is a %s% chance to stun the hit target for %s seconds. |
+| Summon Spirit | Active | 5 | Sorcerers can sign a pact of life & magic with elemental spirits to summon powerful elemental spirits. Elemental spirits will exist in the form of a shield that protects the Sorcerer (the shield's value is equal to the Sage's M.ATK x 900%, up to 300% of the caster's Max HP). The shield's value is affected by the increased percentage of Max HP. Only 1 elemental spirit can exist at a time, and it consumes %s SP every second while it exists. The elemental spirit disappears when the shield is depleted or you run out of SP, and it exists for up to %s second(s). The elemental spirit inherits some stats of the Sage. The attribute of the summoned spirit is related to the consumed medium (Great Earth/Flame Heart/Mystic Frozen/Rough Wind). |
+| Elemental Action | Active | 5 | Stimulates the potential of spirits, inspiring Earth Spirits to comprehend Gravitational Field, Fire Spirits to comprehend Meteor Storm, Water Spirits to comprehend Storm Gust, and Wind Spirits to comprehend Lord of Vermilion. When an elemental spirit is on the field, you can command it to continuously channel for %s seconds and cast the above skills at the target 4m area. The above skills deal M.ATK × %s% magic damage of the corresponding attribute to targets within range every 0.5 seconds. Other special effects of the skills remain unchanged. When possessed by an elemental spirit, the above skills do not need to be continuously channeled and can be cast instantly, but the damage will be reduced by %s%. |
+| Elemental Shield | Active | 5 | Elemental power bursts out as the currently summoned elemental spirit is sacrificed to create a Lightdark Wall for each party member for %s seconds. While the Lightdark Wall exists, all party members in the area are immune to upcoming melee and ranged physical damage %s times. The number of times is deducted when any member within range takes melee or ranged damage, and the number of times is shared. |
+| Spirit Sympathy | Toggle | 5 | Increases the damage dealt by spirits by %s%. When a spirit exists, the Sorcerer gains 1 stack of Spirit Sympathy every 2 seconds, which increases the corresponding elemental enhancement by %s%, up to %s stacks. Also increases the Sorcerer's MSPD in battle by %s. Spirit Sympathy is removed when the current spirit dies or a new spirit is summoned. The complete effect of Spirit Sympathy continues when you are possessed by a spirit and will be removed after the possession ends. |
+| Spirit Insignia | Active | 5 | Grants the Sorcerer an elemental insignia that has a range of 4m. This insignia is of the same attribute as the summoned spirit, and all party members of the same attribute will recover HP equal to their own M.ATK × %s% every second. Enemy units of the countered attribute within range will lose HP equal to their own M.ATK × %s% every second. This effect lasts for 20 seconds. This skill can only be cast when an elemental spirit exists. |
+| Spirit Recovery | Active | 5 | Channels for 4 seconds. While channeling, consumes %s% of your Max HP every second to restore the spirit's HP by the summoner's M.ATK × %s% until the spirit's HP has been restored to its initial Max HP. This skill is terminated when your HP is insufficient to meet the cost and can only be cast when your HP is equal to at least 30% of your Max HP. |
+| Spirit Possession | Active | 5 | Sacrifices a summoned elemental spirit to transfer its power to yourself in the form of elemental possession for %s seconds, granting you the following effects according to the attribute of the sacrificed spirit — Tera: changes armor/weapon attribute to Earth, reduces damage taken by %s%; successful Book attacks have a 50% chance to reduce enemy ASPD/MSPD within a 2x4m frontal area by %s%/%s% for 3 seconds. Agni: changes armor/weapon attribute to Fire, increases MSPD by %s; expands Advanced Book's melee range to a 4m 180° fan. Aqua: changes armor/weapon attribute to Water, summons crashing waves within 4m dealing Water M.DMG equal to %s% of M.ATK every second, knocking enemies back 4m and reducing their MSPD by 40% for 2 seconds. Ventus: changes armor/weapon attribute to Wind; when taking damage, %s% chance to counter with a chain lightning dealing Wind M.DMG equal to %s% x M.ATK and blinding for 2 seconds (triggers at most once every 0.2 seconds). |
+| Spirit Control | Type 5 | 5 | Give orders to the spirit, enabling the skill to put it in attack mode, or disabling the skill to put it in defense mode. In attack mode, the spirit assists the Sorcerer in attacking. In defense mode, the spirit does not actively attack and will recover (%s% + %s% × the depleted shield percentage) Max Shield every second. Meanwhile, %s% of the damage taken by the spirit will be borne by the Sorcerer instead. This skill is set to attack mode by default. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1322)
 
 #### Elemental Master (4th)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Activity Burn | ดาเมจต่อเนื่องจากวิญญาณธาตุ |
-| Conflagration | ไฟลุกไหม้พื้นที่ |
-| Diamond Storm | พายุน้ำแข็ง AoE |
-| Elemental Buster | ระเบิดพลังวิญญาณธาตุ ดาเมจสูง |
-| Elemental Spirit Mastery | Passive เสริมพลังวิญญาณธาตุ |
-| Elemental Veil | บัฟป้องกันจากวิญญาณธาตุ |
-| Increasing Activity | เร่งวิญญาณธาตุให้ทำดาเมจไวขึ้น |
-| Lightning Land | สายฟ้าฟาดพื้นที่ |
-| Magic Book Mastery | Passive เพิ่มดาเมจเวท |
-| Psychic Stream | คลื่นเวทต่อเนื่อง |
-| Spell Enchanting | เสริมเอฟเฟกต์พิเศษให้เวท |
-| Summon Elemental Ardor/Diluvio/Procella/Serpens/Terremotus | เรียก High Elemental Spirit ตามธาตุ |
-| Terra Drive | พลังธาตุดินระเบิด AoE |
-| Venom Swamp | บึงพิษดาเมจต่อเนื่อง |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Terra Drive | Active | 10 | Causes the ground to rise in a 6-meter radius, dealing Earth attribute M.DMG equal to (%s% + INT/%s x 1%, up to 400% of the caster's M.ATK) every 0.5 seconds over a duration of 5 seconds. When Tera, the Earth Spirit, is present, the total damage coefficient of Terra Drive is increased to %s and there's a 15% chance to inflict Crystallize to the enemies, preventing them from moving and attacking and changing their armor attribute to Earth (Terra Drive is unaffected by Earth attribute armor with Crystallize) for 6 seconds. Crystallize can be resisted with Petrify Resistance. |
+| Conflagration | Active | 10 | Engulfs the ground with searing flames in a 6-meter radius, dealing Fire attribute M.DMG equal to (%s% + INT/%s x 1%, up to 400% of the caster's M.ATK) every 0.5 seconds over a duration of 5 seconds. When Agni, the Fire Spirit, is present, the total damage coefficient of Conflagration is increased to %s and there's a 5% chance to inflict Firestorm to the enemies, triggering a fire explosion every 2 seconds and dealing %s% Fire attribute damage to the target. Firestorm lasts for 6 seconds. |
+| Diamond Storm | Active | 10 | Summons a powerful blizzard across a 6-meter radius, dealing Water attribute M.DMG equal to (%s% + INT/%s x 1%, up to 400% of the caster's M.ATK) every 0.5 seconds over a duration of 5 seconds. When Aqua, the Water Spirit, is present, the total damage coefficient of Diamond Storm is increased to %s and there's a 15% chance to inflict Instant Freeze to the enemies, preventing them from moving and attacking, and changing their armor attribute to Water (Diamond Storm is unaffected by Water attribute armor with Instant Freeze) for 6 seconds. Instant Freeze can be resisted with Freeze Resistance. |
+| Lightning Land | Active | 10 | Electrifies the ground across a 6-meter radius, dealing Wind attribute M.DMG equal to (%s% + INT/%s x 1%, up to 400% of the caster's M.ATK) every 0.5 seconds over a duration of 5 seconds. When Ventus, the Wind Spirit, is present, the total damage coefficient of Lightning Land is increased to %s and there's a 5% chance to inflict Conductive to the enemies, triggering a lightning chain every 2 seconds and dealing %s% Wind attribute area damage to the target within a 6-meter radius. Conductive lasts for 6 seconds. |
+| Venom Swamp | Active | 10 | Conjures a Venom Swamp within a 6-meter radius on the ground, dealing Poison attribute M.DMG equal to (%s% + INT/%s x 1%, up to 400% of the caster's M.ATK) to enemies within range every 0.5 seconds over a duration of 5 seconds. When Serpens, the Poison Spirit, is present, the total damage coefficient of Venom Swamp is increased to %s and there's an 8% chance to inflict Lethal Venom to the enemies, generating a 4-meter poison cloud every 3 seconds and applying 1 stack of Poison that lasts 6 seconds to everyone within the area, stacking up to 5 times. The poison cloud lasts for 6 seconds. Each stack of Poison deals %s% Poison attribute M.DMG to the carrier. Lethal Venom lasts for 6 seconds and can be resisted with Poison Resistance. |
+| Elemental Spirit Mastery | Toggle | 10 | Elemental Spirit gains an additional HP equal to %s% of M.ATK. While an Elemental Spirit exists, your M.DMG of the corresponding attribute is increased by %s%, and damage received from the corresponding attribute is reduced by %s%. |
+| Increasing Activity | Active | 10 | While an Elemental Spirit exists, your highest Elemental Enhancement attribute can be converted to match the summoned spirit for %s second(s). Summoning another spirit will automatically cancel this effect. |
+| Summon Elemental Serpens | Active | 10 | Consumes 1 Venom Energy Stone to transform the existing spirit into Serpens, the Poison Spirit, replacing one previously summoned Water, Fire, Earth, or Wind Spirit. While Serpens is present, it drains %s SP every second and can exist up to %s second(s). Serpens can cast Elemental Shield, Spirit Possession, Elemental Action, Spirit Control, and Spirit Insignia. When possessed by Serpens, the Sorcerer's armor and weapon attributes become Poison, and their Poison attribute M.DMG ignores %s% of the target's M.DEF. Using Elemental Action while Serpens is present triggers Venom Dust. |
+| Spell Enchanting | Active | 10 | Sacrifices the current Elemental Spirit to grant all party members %s% of Elemental Enhancement and Resistance of their corresponding attributes for %s second(s). Spell Enchanting is automatically triggered when Spirit Possession is used, without entering the cooldown. |
+| Elemental Buster | Toggle | 10 | After using Spell Fist or Spirit Possession to change the weapon attribute, the damage dealt to enemies carries the Elemental Buster effect of the corresponding weapon attribute (only applies on 1 target when multiple enemies exist), reducing %s% of the target's Elemental Resistance for 10 seconds. Once the effect ends, an additional corresponding attribute M.DMG equal to %s% of M.ATK will be dealt. Triggers once every 20 seconds. |
+| Activity Burn | Toggle | 10 | When dealing normal attacks with a book weapon, there's a %s% chance to auto-cast Elemental Arrow to deal M.DMG of the corresponding attribute equal to %s% of Max SP (up to %s% of M.ATK). Each trigger consumes 10% of Max SP, and this effect will not trigger if Max SP is below 10%. |
+| Magic Book Mastery | Toggle | 10 | When Advanced Book is learned and equipped with a Spell Book, the normal attack range increases by 2 meters. For each additional weapon refinement level, Final M.DMG Bonus is increased by %s%. For every 3 additional weapon refinement levels, the Elemental Arrow triggered by Auto Spell is increased by 1 level, up to 3 levels. |
 
-*Source:* [Ragnarok Mobile Mage/Wizard/High Wizard Guide](https://99porings.com/mobile.php?guide=ragnarok-mobile-mage-wizard-high-wizard-guide), [Sage + Scholar Preview (YouTube)](https://www.youtube.com/watch?v=Kqphlbvaz3E)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1323)

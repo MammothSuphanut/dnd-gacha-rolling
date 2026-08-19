@@ -6,117 +6,169 @@
 
 ## ROX Skill Reference — Thief → Assassin/Rogue
 
+> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1400, 1410-1413, 1420-1423) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) Shadow Chaser มี Talent skill กลางเพิ่มเติม (Type 6, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
+
 #### Thief (1st Class)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Steal | ขโมยไอเทมจากศัตรู |
-| Envenom | โจมตีพิษเป้าเดียว ลด HP/DEF เป้าหมาย |
-| Double Attack | Passive โอกาสตีซ้ำอัตโนมัติเมื่อถืออาวุธประเภท dagger |
-| Hiding | ล่องหนอยู่กับที่ (ต้องมี Steal lv5) |
-| Improve Dodge | Passive เพิ่ม Flee Rate ถาวร |
-| Detoxify | รักษาสถานะ Poison ให้เป้าหมาย (ต้องมี Envenom lv3) |
-| Back Slide | ถอยหลังทันที 5 ช่อง (quest skill, Job Lv.35+) |
-| Find Stone | สร้างก้อนหินจากของหนักในกระเป๋า (quest skill, Job Lv.20+) |
-| Sand Attack | โจมตีธาตุดิน + โอกาสทำให้ blind (quest skill, Job Lv.25+) |
-| Stone Fling | ขว้างหินดาเมจ neutral + โอกาส stun (quest skill, Job Lv.15+) |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Double Attack | Toggle | 10 | When you deal normal attacks while equipped with a Dagger, there will be a %s% chance to deal double damage. If Double Attack is triggered, then this attack is guaranteed to hit the target. After the Hiding status is removed, the first attack within 5 seconds is guaranteed to be triggered. |
+| Improve Dodge | Toggle | 10 | Increases Final Flee by %s% and MSPD by %s%. Fleeing increases P.ATK by %s% and Final ASPD by %s% for 5 seconds. |
+| Hiding | Active | 10 | After using this skill, you maintain %s% of your MSPD for 6 seconds and enter the Hiding state, becoming undetectable to enemies. Actively attacking, taking damage, or being affected by anti-stealth will cancel the Hiding state. After the Hiding state is removed, you will receive an Assassinate effect for 3 seconds. Dealing damage the first time under the Assassinate effect applies an Assassination mark to the first target that takes damage from you. This mark lasts for 6 seconds. Your attacks will deal %s% increased damage to the marked target. |
+| Brute Force | Active | 10 | Deals (%s% of ATK + %s) physical damage of your weapon's attribute to an enemy target and lowers their Movement Speed by 40% for 5 seconds. |
+| Ambush | Active | 10 | Deals (%s% of ATK + %s) physical damage of your weapon's attribute to an enemy. If used while Hiding, stuns the target for 2 seconds. |
+| Venom Knife | Active | 10 | Attack with Venom Knife, dealing (%s% of ATK + %s) physical damage of your weapon's attribute to an enemy. If the target of Venom Knife is poisoned, deals an additional 100% physical damage of your weapon's attribute. |
+| Detoxify | Active | 5 | Removes the Poison status from yourself and all party members within 30 meters and makes you and your party members immune to Poison for 8 seconds. Loses its effect when the caster is more than 30 meters away. When the Poison effect is removed by Detoxify, the target is healed for %s% of their current HP. |
+| Enchant Poison | Active | 10 | Apply poison to your weapon. Your normal attacks deal %s% Poison physical damage for %s seconds and has a %s% chance to poison the target for 7 seconds. The poison on your weapon will not be removed when you are killed. When poisoned, the target will take Poison physical damage equal to 20% of the caster's Physical ATK every second, their DEF will be decreased by 25%, and they will not naturally recover HP and SP for the duration of the effect. The damage effect can stack up to 5 times. When the target's HP is less than 25%, they will stop taking damage, but the poison will still be in effect. |
+| Grimtooth | Active | 10 | Shoots spikes in the specified direction, dealing (%s% of P.ATK + %s) weapon attribute P.DMG to enemies within the area and stuns them for 3 seconds. Every 7 STR increases the damage coefficient by an extra 1%, up to 1700%. When using this skill while Hiding, there is a %s% chance that using this skill will not cancel Hiding. If your Final Crit is higher than Final Penetration, this skill may trigger critical damage. |
 
-*Source:* [Ragnarok Online (Renewal) Thief Skills](https://renewal.playragnarok.com/gameguide/classes_skill.aspx?c=6)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1400)
 
 #### Assassin (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Sonic Blow | โจมตีติดกันหลายครั้งเร็วมาก ดาเมจสูง |
-| Grimtooth | katar AoE รอบตัว |
-| Cloaking | ล่องหน |
-| Envenom | โจมตีพิษเป้าเดียว |
-| Enchant Poison | เสริมพิษเข้าอาวุธ |
-| Poison React | สวนกลับพิษเมื่อโดนโจมตี |
-| Venom Dust | พ่นผงพิษ AoE |
-| Venom Splasher | ระเบิดพิษหน่วงเวลา |
-| Katar Mastery | Passive เพิ่มดาเมจ katar |
-| Double Attack | โอกาสตีซ้ำอัตโนมัติ |
-| Right/Left Hand Mastery | Passive เพิ่มดาเมจอาวุธมือขวา/ซ้าย |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Right-Hand Mastery | Toggle | 5 | P.ATK is increased by (%s + %s% of STR), and ASPD is increased by (%s% of STR) when equipped with a Dagger in your right hand. |
+| Left-Hand Mastery | Toggle | 5 | P.ATK is increased by (%s + %s% of STR), and ASPD is increased by (%s% of STR) when your left hand acquires the ability to use a Dagger and is equipped with a Dagger. |
+| Katar Mastery | Toggle | 10 | When equipped with a Katar, Crit increases by %s%. |
+| Sonic Blow | Active | 10 | Slices and dices a single enemy target at lightning speed, dealing weapon attribute P.DMG equal to (%s% of P.ATK + %s × STR (up to 400% of caster's P.ATK)) to them. Has a %s% chance to stun them for 3 seconds. This skill may trigger critical damage. |
+| Grimtooth | Active | 10 | Shoots spikes in the specified direction, dealing (%s% of P.ATK + %s) weapon attribute P.DMG to enemies within the area and stuns them for 3 seconds. Every 7 STR increases the damage coefficient by an extra 1%, up to 1700%. When using this skill while Hiding, there is a %s% chance that using this skill will not cancel Hiding. If your Final Crit is higher than Final Penetration, this skill may trigger critical damage. |
+| Venom Dart | Active | 10 | Attacks with Venom Knife, dealing (%s% of ATK + %s) physical damage of your weapon's attribute and causing the enemy target to be poisoned for 7 seconds. When poisoned, the target will take Poison physical damage equal to 20% of the caster's ATK every second, their DEF will be decreased by 25%, and they will not naturally recover HP and SP for the duration of the effect. The damage effect can stack up to 5 times. When the target's HP is less than 25%, they will stop taking damage, but the other debuffs will still be in effect. |
+| Roll Away | Active | 10 | Rolls back 7 meters, evading enemy attacks and entering Hiding mode. After the Hiding effect granted by this skill is removed, increases Flee by %s for 5 seconds. Grants the effect of Shadow Cloak after rolling and reduces %s% of damage the next time you take damage equal to more than 25% of Max HP within 2 seconds. (True Damage can be reduced.) |
+| Twin Blade Piercing | Toggle | 10 | When dual-wielding, normal attacks have a %s% chance to lower enemy units' P.DEF by (5 x character's level) for 4 seconds. The debuff of reduced defense can be countered by Armor Break. |
+| Enhanced Hiding | Toggle | 10 | While Hiding, gain Sneak Attack effect (canceling Hiding by using a normal attack will cause it to be guaranteed a critical attack). Within %s seconds of canceling Hiding, skills that gain bonus effects during Hiding will still retain the bonus effects and skills that are only usable during Hiding can still be used. Also, damage received will be reduced by %s%. |
+| Enhanced Enchant Poison | Toggle | 10 | Applies venom to your weapon, increasing the Poison physical damage of poisoned weapons by %s% of Physical ATK, and extending the duration of Poison effect caused by Enchant Poison, Venom Dart, and Venom Spreader by %s second(s). The effect will not be removed when you are killed. |
+| Supersonic Blow | Toggle | 10 | Increase damage of Sonic Blow by %s%. Whenever you land a critical attack with your normal attack, Sonic Blow's cooldown is reduced by 1 second. |
+| Shadow Blade | Active | 10 | Multiplies your ASPD by %s after using this skill. Loses its effect after 6 seconds or %s normal attacks. For every critical hit from a normal attack or every time Double Attack is triggered, the cooldown of this skill is reduced by 0.5 seconds. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1410)
 
 #### Assassin Cross (Transcendent)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Enchant Deadly Poison | เสริมพิษร้ายแรงเข้าอาวุธ |
-| Meltdown | ลด DEF/ทำลายเกราะเป้าหมาย |
-| Counter Slash | สวนกลับดาเมจเมื่อโดนโจมตี |
-| Sight Blaster | ระเบิดดาเมจเมื่อเห็นศัตรูในพื้นที่ |
-| Soul Breaker | พุ่งแทงทะลุเกราะดาเมจสูง |
-| Weapon Blocking | โอกาส block อาวุธศัตรู |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Venom Spreader | Active | 10 | Tosses a bottle filled with deadly poison at the specified location. The bottle will break when it hits the floor, leaving behind poison for 4 seconds. Enemies in the area take (%s% of ATK + %s) Poison physical damage every second and gain 1 stack of Poison. Poison lasts for 10 seconds. When poisoned, the target will take Poison physical damage equal to 20% of the caster's ATK every second, their DEF will be decreased by 25%, and they will not naturally recover HP and SP for the duration of the effect. This damage effect can stack up to 5 times. When the target's HP is less than 25%, they will stop taking damage, but the other debuffs will remain in effect. |
+| Venom Splasher | Active | 10 | Triggers the toxins in the target and enemy units within 4 meters, dealing ((%s% + 80% × Number of Poison stacks) ATK + %s) Poison physical damage to them and removing their Poison effect. |
+| Advanced Katar Mastery | Toggle | 10 | When equipped with a Katar, Crit Damage increases by %s%. |
+| Soul Destroyer | Active | 10 | Fires a shockwave from a distance, dealing (%s% P.ATK + %s x DEX + %s) weapon attribute P.DMG that ignores defense to an enemy. Every 4 STR/DEX increases the damage coefficient by an extra 1%, up to 3,000%. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. |
+| Meteor Assault | Active | 10 | Deals (%s% of P.ATK + %s) weapon attribute P.DMG (every 6 STR increases it by an extra 1%, up to 2,000%) to enemy units within 3 meters and has a 25% chance to randomly inflict the target with a Blind, Stun, or Bleed effect that persists for 3 seconds. If this skill is used while Hiding, the chance to inflict the debuffs increases by an extra %s%. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. |
+| Enchant Deadly Poison | Toggle | 10 | Applies deadly poison to your weapon. Enchant Poison will turn your weapon's attribute to Poison and increase your Poison damage by %s%. The effect will not be removed when you are killed. |
+| Assassination Halo | Active | 10 | After 3 seconds of casting this skill, your entire party gains 5 seconds of Hiding effect. Once the Hiding effect of the Assassination Halo fades, you get an extra %s% Final Flee and %s% Final ASPD for 5 seconds. |
+| Slash | Active | 10 | Deals (%s% of ATK + %s) physical damage of your weapon's attribute to an enemy. If this skill's damage is lethal, it can be used again within 10 seconds. This skill enters cooldown whether or not it is used within 10 seconds. |
+| Mirror Image | Active | 10 | Flashes to a single target and unleashes 7 fast slashes, immobilizing them for 2 seconds during the attack. Each slash deals weapon attribute P.DMG equal to %s% of P.ATK. For every 15% of the target's Max HP lost, the damage of subsequent slashes increases by 5%. Increases your Final DMG Reduction by 100% during the attack. After using this skill, all debuffs on you are cleared, and you are immune to debuffs and knockback effects during the attack. If your Final Crit is higher than Final Penetration, this skill may trigger critical damage. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1411)
 
 #### Guillotine Cross (3rd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Cross Impact | พุ่งเข้าตี critical ดาเมจสูงมาก |
-| Rolling Cutter | หมุนตัวฟันรอบตัวหลายรอบ |
-| Cross Ripper Slasher | ขว้างมีดระยะไกลจาก Rolling Cutter |
-| Soul Destroyer | โจมตีระยะไกลดาเมจสูง |
-| Weapon Crush | ทำลายอาวุธเป้าหมายชั่วคราว |
-| Poison Smoke | ควันพิษ AoE |
-| Venom Impress | เพิ่มโอกาสติดพิธีให้อาวุธ |
-| Antidote | ล้างพิษตัวเอง |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Venom Impress | Toggle | 10 | Increases the chance of inflicting Poison on the enemy by %s% after dealing normal attacks and its duration by %s second(s) when Enchant Poison is in effect. Ignores 15 of the target's Debuff Resistance and Debuff Duration Reduction when applying Poison. |
+| New Poison Research | Toggle | 10 | Enhances Poison's effect, inflicting an additional %s% Poison DMG on targets suffering from Poison. During this time, the target also takes Poison attribute P.DMG equal to %s% of P.ATK. Once the target's HP falls below 25%, the effects of Poison are no longer automatically cleared. If your Final Crit is higher than Final P.PEN, Enchant Poison, Poison, and Enhanced Enchant Poison may trigger critical damage. |
+| Poison Mist | Active | 10 | Removes Enchant Deadly Poison from yourself and applies a poisonous mist to your weapon that spreads in a 3-meter radius for 5 seconds. Enemies within range take Poison Damage equal to %s% of Physical Attack and suffer 1 stack of Poison for 6 seconds. |
+| Deadly Mist | Toggle | 10 | After killing a target inflicted with Poison, a ring of poisonous mist will form at the site of their death. (Effect is dependent on your current level of Poison Mist. A target killed by the poisonous mist will not generate a new poisonous mist after its death.) Can create up to %s rings at the same time (including Poison Mist triggered by clearing Enchant Deadly Poison). |
+| Cross Impact | Active | 10 | Flashes to a designated location and inflicts Cross Impact on all enemies within a 4-meter radius, dealing weapon attribute P.DMG equal to (%s% P.ATK + %s% of the target's Max HP + %s x the target's VIT). When attacking MVP, MINI, or Boss, effects related to Max HP in the damage coefficient will not take effect; instead, it deals extra damage equal to %s% of P.ATK. Each successful execution recovers %s% of your lost HP. Each hit reduces the skill's cooldown by 1 second. |
+| Dark Illusion | Active | 10 | Surges forward 12 meters in the desired direction, leaving only a ghostly shadow in your wake. All enemies in the path take Neutral P.DMG equal to %s% of P.ATK, with a %s% chance of immobilizing them for 3 seconds. Every enemy hit by Phantom reduces the skill cooldown by %s seconds. Releasing Dark Illusion removes all debuffs, grants immunity to all debuffs (debuffs from MVP, MINI, and Boss cannot be removed or negated by this immunity effect), and increases MSPD by %s% for 3 seconds. Can be released even under Control. |
+| Hallucination Walk | Toggle | 10 | While in Hiding, you activate Hallucination Walk for 10 seconds. Your first attack will damage the target, making them wounded for 6 seconds and reducing their healing received by %s%. Hallucination Walk ends after any target is wounded. When attacking the wounded target, the skill attacks deal additional weapon attribute P.DMG equal to %s% of the target's Max HP. When attacking MVP, MINI, or Boss, it deals additional damage equal to %s% of P.ATK instead. This effect can trigger once every 1 second, up to a maximum of %s times. |
+| Counter Blade | Active | 10 | Summons eight blades that work in unison to form Blade Guardian. While in effect, each blade has a %s% chance of blocking upcoming P.DMG. For each attack successfully blocked, the energy generated will charge one of the blades and reduce Counter Blade's fixed cooldown by 1.5 seconds. This effect remains active for 8 sec, after which the first enemy you attack during the subsequent 6 seconds triggers an onslaught of flying blades, dealing weapon attribute P.DMG equal to ((%s% of P.ATK + %s × STR) x blade count). |
+| Spinning Blade | Active | 10 | Every 0.5 seconds, your spinning weapon deals weapon attribute P.DMG equal to (%s% P.ATK + %s x STR) to enemies within 4 meters for 3 seconds. Each enemy hit adds 1 Spin Point, up to a maximum of 10 stacks, with Spin Points lasting for 12 seconds. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. |
+| Spinning Cross Impact | Active | 10 | Consumes all Spin Points accumulated from Rolling Cutter and casts a concealed weapon at a single enemy, dealing weapon attribute P.DMG equal to %s% of P.ATK. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. Every 1 stack of Spin Points increases the damage of Spinning Cross Impact by (%s% of P.ATK + %s x STR). |
+| Dark Claw | Toggle | 10 | Grants a %s% chance of inflicting a grievous wound when triggering a crit with a normal attack, which lasts for 3 seconds and stacks up to 6 times. Each stack increases the damage dealt from a normal attack by %s%, and reduces the Final HP of targets by %s% (effects of the same type reduce up to 50%; non-effective against MVP, MINI, and Boss). |
+| Covert Disguise | Toggle | 10 | Grants Hiding, which camouflages yourself and will not cancel Hiding when being attacked. Increases Final Damage Reduction by %s% while the effect is active. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1412)
 
 #### Shadow Cross (4th)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Savage Impact | พุ่งชนเป้าหมาย ตี 3 ครั้งรอบตัว (5 ครั้งตอน Cloaking Exceed) |
-| Cross Slash | ตี 3 ครั้ง + เข้าสู่ block state 10 วิ ดาเมจเพิ่มตอน Shadow Exceed |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Potent Venom | Toggle | 10 | When your Final P.PEN is higher than Final Crit, for each stack of Poison applied by you, the target's Final P.DEF is reduced by %s%. When your Final Crit is higher than Final P.PEN, for each stack of Poison applied by you, the target's Crit DMG Reduction is reduced by %s%. When Poison is naturally removed, it deals Poison attribute P.DMG equal to %s% based on the number of Poison stacks. |
+| Shadow Sense | Toggle | 10 | Increases your Final Flee by %s%. For every %s% Final ASPD possessed, Rolling Cutter's duration is extended by 1 second, up to 3 seconds. For every %s% Final Haste possessed, Rolling Cutter's attack interval is reduced by 0.1 seconds, to a minimum of 0.3 seconds. |
+| Dancing Knife | Active | 10 | Consumes all Spin Points to unleash knives within a 6-meter radius, dealing weapon attribute P.DMG equal to %s% to all enemies within range. For every 1 Spin Point consumed, the damage is increased by an additional %s%. When Double Attack is triggered, Dancing Knife's cooldown is reduced by 1 second, but it won't trigger if the cooldown is already less than 12 seconds. |
+| Shadow Stab | Active | 10 | Summons multiple shadow daggers to strike forward, dealing weapon attribute P.DMG equal to %s% to all enemies on the path. When Double Attack is triggered by normal attacks, Shadow Stab's cooldown is reduced by 1 second, but it won't trigger if the cooldown is already less than 6 seconds. |
+| Eternal Slash | Active | 10 | Unleashes 7 quick slashes at enemies within a 6-meter radius, each dealing weapon attribute P.DMG equal to %s% to all enemies in the area. After the slashes, deals an additional hit of weapon attribute P.DMG equal to %s% to all enemies in the area. The damage is split among all targets in the area. The skill's damage is increased by %s% for each 1 stack of Shadow Scar applied on the target. |
+| Impact Crater | Active | 10 | Consumes all Spin Points to thrust in a straight line, dealing weapon attribute P.DMG equal to %s% to all enemies within range. For every 1 Spin Point consumed, the damage is increased by an additional %s%. This skill can trigger critical damage, which applies 1 stack of Dark Claw upon a critical hit. When a critical hit is dealt by a normal attack using a katar, Impact Crater's cooldown is reduced by 1 second, but it won't trigger if the cooldown is already less than 12 seconds. |
+| Savage Impact | Active | 10 | Moves near the target, dealing %s% damage to all targets within a 4-meter range. This skill can trigger critical damage, which applies 1 stack of Dark Claw upon a critical hit. When a critical hit is dealt by a normal attack using a katar, Savage Impact's cooldown is reduced by 1 second, but it won't trigger if the cooldown is already less than 8 seconds. |
+| Fatal Shadow Crow | Active | 10 | Teleports instantly to a specified location, dealing weapon attribute P.DMG equal to %s% to the enemies within a 6-meter range and inflicting Immobilize on them for 3 seconds. The damage is split among all targets and can trigger critical hits. For each stack of Dark Claw applied on the target, their damage taken is increased by 85%, up to 600%. |
+| Blade Barrier | Active | 10 | Instantly cancels the Blade Guard or Blade Strike from Counter Blade, then charges up and enters the defensive stance. While charging, blades spin around you, making you immune to all incoming damage (except from MVP, MINI, and Boss units). You cannot move during the charge. When the charge ends, blades are launched at all targets within 6 meters, dealing weapon attribute P.DMG equal to %s%. For each stack of Blade Guard or Blade Strike consumed by Blade Barrier, 1 additional hit of equal damage will be dealt when the charge ends. When your Final Crit is higher than Final P.PEN, the blades can trigger critical hits. |
+| Enchanting Shadow | Toggle | 10 | Using a dagger increases your Final P.PEN by %s%. Using a katar increases your Final Crit by %s%. When a weapon is equipped, the normal attack range is increased by 2 meters, and you automatically dash to targets within range when attacking. |
+| Shadow Exceed | Toggle | 10 | Infuses shadow power into the weapon. Using a skill while equipped with a dagger to deal damage has a %s% chance to summon a phantom behind the target to attack, applying 1 stack of Shadow Scar (cannot be triggered by Eternal Slash). As Shadow Scar stacks increase, the target takes weapon attribute P.DMG equal to %s% dealt by the phantom, and each stack of Shadow Scar increases the damage by %s%. When Shadow Scar reaches 7 stacks, it is removed upon the next phantom attack, and Shadow Exceed cannot trigger again for 15 seconds. |
+| Shadow Claw | Toggle | 10 | Triggering Dark Claw with katar attacks the target with Shadow Claw, dealing weapon attribute P.DMG equal to %s% to the target and all enemies within a 3-meter radius. Shadow Claw can trigger critical hits, and its damage is split among all enemies within range. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1413)
 
 #### Rogue (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Backstab | โจมตีจากด้านหลัง ดาเมจสูง |
-| Steal | ขโมยไอเทมจากศัตรู |
-| Envenom | โจมตีพิษเป้าเดียว |
-| Gank | ขโมยเงินจากศัตรู |
-| Raid | โจมตี AoE พร้อมดีบัฟ |
-| Chase Walk | ล่องหนเดินได้ |
-| Close Confine | ตรึงเป้าหมายไม่ให้หนี |
-| Snatch | แย่งของจากศัตรู |
-| Compulsion Discount | บังคับลดราคาซื้อของ |
-| Plagiarism | คัดลอก skill ศัตรูมาใช้ |
-| Intimidate | ข่มขู่ ลดสเตตัสศัตรู |
-| Strip Weapon/Shield/Armor/Helm | ถอดอุปกรณ์ศัตรูชั่วคราว |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Compulsion Discount | Toggle | 10 | Enjoy a %s% discount when purchasing items from NPC shops and a %s% discount when purchasing items from the Chamber of Commerce using Zeny. |
+| Dip | Toggle | 10 | After using Enchant Poison, your weapon attribute will change to Poison. Each normal attack will have an 8% chance to grant you the Dip state. The Dip state can stack up to %s times and last for 10 seconds. Each stack of Dip increases your Poison Attribute Enhancement by 1%. |
+| Evoked | Toggle | 10 | When equipped with a Dagger, gain a 20% chance to increase your P.PEN by %s when dealing damage. When equipped with a Bow, gain a 20% chance to increase your Crit by %s and your Crit DMG Bonus by %s% when dealing damage. This effect lasts 2 seconds. |
+| Assault | Active | 10 | Launches a ranged attack that targets the enemy's vital points, dealing weapon attribute P.DMG equal to %s% of P.ATK. |
+| Double Strafe | Active | 10 | Fires two arrows at the same time, each arrow dealing weapon attribute P.DMG equal to %s% of P.ATK to a single enemy target (this damage can be critical). Each critical normal attack reduces the skill's cooldown by 1 second. Must equip a Longbow to cast. |
+| Ranged Toxic Attack | Active | 10 | Shoots a poisonous arrow, dealing 200% weapon attribute P.DMG to the target (this damage can be critical). When in the Dip state, you additionally deal Poison P.DMG equal to (42% x Dip Stacks ^1.8) x P.ATK to the target and enemies within 4 meters of the target (this damage can be critical). After this skill hits, it consumes all of your Dip stacks. Must equip a Longbow to cast. |
+| Repeated Shot | Toggle | 10 | Normal attacks have an 8% chance to cast Lv.%s Double Strafe. Must equip a Longbow to trigger. |
+| Vulture's Eye | Toggle | 10 | Increases the skill range of Bow Normal Attack, Assault, Ranged Toxic Attack, Double Strafe, Repeated Shot, Triangle Slot, and Bone Rotting Arrow by %s meters. Each point of STR additionally increases Hit by 1. |
+| Dagger Mastery | Toggle | 10 | Rogue can equip two daggers. When using dagger-type weapons, P.ATK increases by (DEX x %s%). |
+| Back Stab | Active | 10 | Deals weapon attribute P.DMG equal to %s% of P.ATK + DEX x %s to an enemy unit. When behind the target, increases damage dealt by 100%. Must equip a Dagger to cast. |
+| Raid | Active | 10 | Deals weapon attribute P.DMG equal to %s% of P.ATK + %s x DEX to enemies within 4 meters and has a %s% chance to inflict the Blind state. The Blind state lasts 3 seconds. Must equip a Dagger to cast. |
+| Close Confine | Active | 10 | Captures the target and afflicts them with Overpower for 6 seconds. Captured targets cannot move or use normal attacks, and take weapon attribute P.DMG equal to %s% of P.ATK + DEX x %s every 0.5 seconds. During Close Confine, you cannot use normal attacks or skills. Close Confine ends prematurely when you move or if the target dies. The target can use Hiding, Charge Attack, Sonic Wave, Trample, Shield Press, Body Relocation, Flame Shock, Roll Away, Warg Strike, Marionette Control, Front Side Slide, or Self Destruction to escape Close Confine, but cannot cast any other skills while it is active. Must equip a Dagger to cast. Close Confine's control effect does not work against MVP, Mini, and Boss units. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1420)
 
 #### Stalker (Transcendent)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Preserve | ป้องกัน skill ที่คัดลอกไว้ไม่ถูกเขียนทับ |
-| Reject Sword | สะท้อนดาเมจอาวุธมีคม |
-| Full Strip | ถอดอุปกรณ์ศัตรูทุกชิ้นพร้อมกัน |
-| Chase Walk 2 | อัพเกรด Chase Walk เคลื่อนที่เร็วขึ้น |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Plagiarism | Active | 5 | After use, there is a 50% chance of copying a random active attack skill from the enemy player. The level of the copied skill is (%s x max level of the target skill / 5). |
+| Filch | Toggle | 10 | Boosts the Base EXP and Job EXP you acquire by %s%. When you kill a monster, there is a 15% chance to gain an additional %s% of Zeny from the monster. |
+| Gangster's Paradise | Toggle | 10 | When the number of enemy units within 4 meters of yourself is less than 2, increases your P.ATK by %s%. |
+| Strip Accessory | Active | 10 | Strips one of the enemy target's accessories in a very fast way. The base success rate of stripping is %s%. |
+| Triangle Slot | Active | 10 | Shoot three arrows at the same time, each arrow dealing weapon attribute P.DMG equal to %s% of P.ATK, which can trigger Critical Hits. |
+| Bone Rotting Arrow | Active | 10 | Rains down an Arrow Shower over a specified range of 4 meters, dealing weapon attribute P.DMG equal to %s% of P.ATK to all enemy targets. |
+| Man Hole | Active | 10 | Draw a Man Hole trap on the ground with a radius of 3 meters, lasting 100 seconds. When triggered, the nearest 1 enemy in the area of effect will be sucked into the center of the trap. |
+| Poison Death Arrow | Toggle | 10 | When Repeated Shot triggers Double Strafe, there is a %s% chance to add 1 stack of Dip to yourself. |
+| Intimidate | Active | 10 | Deals weapon attribute P.DMG equal to (%s% of P.ATK + DEX x %s) to enemy units, with a (%s% + 1% x (Max((your level − the enemy's level), 0)^2) / 10) chance of hijacking the target to teleport to random nearby areas of the same map. |
+| Strip Armor | Active | 10 | Strips the enemy target's armor, muffler, or shoes (one of the above) in a very fast way. The base success rate of stripping is %s%. |
+| Shadow Pierce | Active | 10 | Attaches Shadow Power to your dagger and strikes forward within a range of 6 meters, dealing weapon attribute P.DMG equal to ((300% + (8 − number of Hits) x %s%) of P.ATK + DEX x (8 − number of targets) x 30) to each target in your path. |
+| Reject Sword | Active | 10 | When enabled, you will enter the state of Reject Sword. When you receive melee P.DMG, reflects %s% of the damage to the attacker. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1421)
 
 #### Shadow Chaser (3rd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Rolling Cutter | หมุนฟันรอบตัว (ร่วมกับ GX) |
-| Feint Bomb | ระเบิดหลอกล่อ/ดันตัวเองหนี |
-| Manhole | ดักเป้าหมายลงหลุมชั่วคราว |
-| Reproduce | คัดลอก skill ศัตรูแบบถาวรกว่าเดิม |
-| Auto Shadow Spell | สุ่มร่าย skill ที่คัดลอกมาอัตโนมัติ |
-| Shadow Form | เปลี่ยนดาเมจที่ตัวเองรับให้ตัวอื่นแทน |
-| Body Painting | ดีบัฟ/พรางตัวเป้าหมาย |
-| Groomy Horror | ดีบัฟความกลัวพื้นที่ |
-| Meteor Assault | โจมตี AoE รอบตัว |
-| Expulsion | ไล่/เทเลพอร์ตเป้าหมายออกจากพื้นที่ |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Shadow Form | Active | 10 | Transforms yourself into a shadow form and attaches to the target's shadow. Cannot be selected by others. %s% of the damage received during this period will be taken by the target (up to 100% of your Max HP). Meanwhile, enjoys %s% of the target's healing received (up to 100% of your Max HP). The possession lasts 3 seconds. After it ends, slashes the target once, dealing weapon attribute P.DMG equal to (%s% of P.ATK + DEX x %s). During the possession, you cannot be selected as a skill target and you will be immune to area damage, but you are not immune to damage caused by the debuff that you are carrying. |
+| Deadly Infect | Toggle | 10 | When you are inflicted with a debuff such as Freeze, Silence, Blind, Confuse, Petrify, Stun, Curse, or Immobilize, there is a %s% chance of inflicting the same one on the caster for 3 seconds. Triggers once at most every 9 seconds. |
+| Feint Bomb | Active | 10 | Draw a dummy in place, then retreat 8 meters immediately. After 1 second, the dummy explodes, dealing weapon attribute P.DMG equal to (%s% of P.ATK + DEX x %s) to enemies within 4 meters. This skill consumes 1 Paint Brush and Surface Paint. |
+| Chaos Panic | Toggle | 10 | The Rogue flashes out from the shadow. When you appear from Shadow Form or from Hiding, there is a %s% chance to put enemies within a 4-meter radius into the state of Confuse or Fear for 3 seconds. For every 1 enemy who enters the state of Confuse or Fear, gain a stack of Frenzy for yourself. Each stack of Frenzy increases your P.ATK by %s%, DEX by %s points, and MSPD by 0.2 points. Stacks up to 5 times, and lasts 10 seconds. |
+| Dimension Door | Active | 10 | Draw the Dimension Door at the enemy target's location. 3 seconds later, teleport the target to the location of the Dimension Door. If the target is not in the current scene or the target is more than 20m away from the trap, they cannot be teleported. This skill consumes 1 Paint Brush and Surface Paint. |
+| Shadow Spell | Active | 10 | Enter the Shadow Spell state after use. When attacking a target with Normal Attack, Double Strafe, Repeated Shot, or Triangle Slot, additionally deals weapon attribute P.DMG equal to %s% of the original skill damage to enemies within a 4m radius of your target (if this attack kills the target or if the target dies before the arrow hits, area damage cannot be triggered). The Shadow Spell state lasts 6 seconds. |
+| Phantom Raid | Toggle | 10 | Rogues are proficient in hiding and launching attacks. When in the Hiding state, taking damage will not reveal yourself. The Hiding state also adds 20 stacks of Ghost Power to yourself, forcing your weapon attribute to turn into Ghost during the period. Launching normal attacks with a bow reduces 1 stack of Ghost Power; triggering Double Strafe with Repeated Shot, or releasing Ranged Toxic Attack, Double Strafe, Triangle Slot, or Bone Rotting Arrow reduces 3 stacks of Ghost Power. Using normal attacks or skills that consume Ghost Power, or casting Shadow Spell, will not reveal yourself. During Hiding, when normal attacks trigger Critical Hits, there is a %s% chance to add 1 stack of Ghost Power; when Ranged Toxic Attack, Double Strafe, Triangle Slot, or Bone Rotting Arrow triggers Critical Hits, there is a %s% chance to add 3 stacks of Ghost Power to yourself. When Hiding ends, the effect of Ghost Power will also end. |
+| Dormancy | Toggle | 10 | Reduces damage received by %s% while Hiding. When Hiding is in cooldown, killing each enemy shortens the cooldown of Hiding by %s second(s). Killing an Adventurer shortens the cooldown of Hiding by an additional %s second(s). While under the effect of Hiding, using Enchant Poison will not clear your Hiding effect. |
+| Strip Weapon | Active | 10 | Strips the enemy target's primary and secondary weapons in a very fast way. The base success rate of stripping is %s%. Based on the DEX difference on both sides, the success rate of this skill will be increased by (your DEX − target's DEX) / 5,000 x %s%. The stripped equipment cannot provide attribute bonus to the carrier within 10 seconds. Enemy units that have been disarmed cannot launch normal attacks. When casting the skill on monsters, decreases the monsters' P.ATK and M.ATK by %s%. |
+| Snatcher | Active | 10 | Strike the target, dealing weapon attribute P.DMG equal to %s% of your P.ATK. There is a 50% chance to snatch %s points of the target's highest stat. Based on the DEX difference between you and the target, you may gain additional (your DEX − target DEX) / 100 points of the snatched stat for 8 seconds. While the target's stat is being snatched, they cannot be snatched again. You can snatch no more than one target at a time. A Dagger must be equipped to cast the skill. |
+| Shadow Cage | Active | 10 | Summons a Shadow Cage around the target with a side length of 8 meters. The cage exists for 3 seconds, during which enemies other than the selected targets will be knocked back after entering the prison, and the Final P.DEF of enemy targets in the prison will be decreased by %s%. When the selected target leaves the Shadow Cage, they will receive True DMG equal to %s% of Max HP, and their MSPD will be decreased by 75% for 6 seconds. The Shadow Cage will disappear after the target leaves it. Must have a Dagger equipped to use. (This skill does not apply to MVP, MINI, and BOSS.) |
+| Bloody Lust | Toggle | 10 | When you deal damage to an enemy using Ambush, Back Stab, Shadow Pierce, or Snatcher, inflicts Bleed on the target, causing them to receive neutral attribute P.DMG equal to %s% of your P.ATK per second for 10 seconds. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1422)
 
 #### Abyss Chaser (4th)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Hit and Sliding | โจมตีแล้วถอยหลัง 1-5 ช่อง ให้บัฟ Chasing เสริมดาเมจ skill อื่น |
-| Chasing Break | พุ่งชนประชิด ตี 5-7 ครั้งรอบตัว |
-| Chasing Shot | สายธนู พุ่งชนแล้วยิงไกล 2-3 ครั้งรอบตัว |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Abyss Slayer | Active | 10 | Channels the abyssal power into the body, gaining 5 Abyssal Orbs, which grants the ability to harness abyssal power. Using this skill while Hiding does not remove the Hiding effect. Each active Abyssal Orb increases PVP Debuff Resistance by %s and PVP Debuff Duration Reduction by %s. While under the effect of Abyss Slayer, using skills or normal attacks, there's a %s% chance to deal extra damage equal to %s% of the target's Max HP (up to %s of the caster's P.ATK). This effect triggers once every 1 second and the Abyssal Orb lasts for 12 seconds. |
+| Shadow Equipment Disarm | Toggle | 10 | Upon an unsuccessful equipment strip, when neither Double Strip nor Strip All fails to trigger, there's a chance to trigger Shadow Equipment Disarm. The base success rate is %s%, which increases based on the DEX difference between the caster and the target. For every %s DEX difference, the success rate increases by 1%, up to 20%. If successful, the target's Shadow Equipment's Inscription and Pioneer effects are disabled for the next 12 seconds. |
+| Abyss Square | Active | 10 | Consumes 1 Abyssal Orb to summon a 6-meter-wide Abyss Square, dealing weapon attribute P.DMG equal to %s% of P.ATK every 0.5 seconds to all enemies within Abyss Square and pulling them toward the center. Abyss Square lasts for 5 seconds. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. |
+| Omega Abyss Strike | Active | 10 | Consumes 1 Abyssal Orb to call forth a devastating meteor, dealing weapon attribute P.DMG equal to %s% of P.ATK to all enemies within a 6-meter radius. Enemies within the Abyss Square receive an additional %s% damage. When possessing Abyssal Orbs, this skill's cooldown is reduced to 10 seconds. If your Final Crit is higher than Final P.PEN, Omega Abyss Strike may trigger critical damage. |
+| From the Abyss | Toggle | 10 | When using a longbow, there's a %s% chance for Shadow Spell to consume 1 Abyssal Orb, creating a 4-meter radius abyssal zone that lasts for 3 seconds at the target area. Targets within the abyssal zone are inflicted with Blind and Confuse. Triggers once every 3 seconds. |
+| Dagger & Bow Mastery | Toggle | 10 | When equipping a longbow, increases your damage dealt to Large monsters, Medium monsters, Small monsters, and Demi-Human monsters by %s%, %s%, %s%, %s%, respectively. For every 200 STR, your Hit is increased by %s. |
+| Chain Reaction Shot | Active | 10 | Wraps an arrow with chains and fires it at the target, dealing weapon attribute P.DMG equal to %s% of P.ATK upon hit, with potential critical damage. The chains then trap the target, dealing the same damage to other enemies (up to 6) within 6 meters and trapping them as well. The trap effect lasts for 1.5 seconds. |
+| Frenzy Shot | Active | 10 | With a surge of speed, rapidly fires 5 arrows, each dealing weapon attribute P.DMG equal to %s% of P.ATK. These arrows may trigger critical damage, and the caster becomes untargetable while casting the skill. Frenzy Shot deals an additional %s% damage to enemies within Abyss Square. |
+| Magic Sword Mastery | Toggle | 10 | When equipping a dagger, increases your PVP Final P.DMG Bonus by %s%. When your DEX reaches 3,000, every additional DEX increases your P.ATK by 4. When attacking a target within Abyss Square, Deft Stab, Unlucky Rush, and Abyss Dagger deal an additional %s% damage. |
+| Deft Stab | Active | 10 | Executes 5 rapid strikes on the target, dealing weapon attribute P.DMG equal to %s% of P.ATK in total. When attacking targets inflicted with Curse, Blind, Confuse, Fear, or Slow, their debuff durations are reset to 5 seconds (only applies on debuffs with less than 5 seconds remaining). For every successful debuff reset, your DEX is increased by %s%, stacking up to 5 times and lasting 10 seconds. |
+| Unlucky Rush | Active | 10 | Dashes toward the target, dealing weapon attribute P.DMG equal to %s% of P.ATK and there's a %s% chance to inflict Curse on the enemy. While under the effect, the target's Max HP is reduced by %s%, with the healing received and recovery effect reduced by %s% (ineffective against MVP, MINI, and Boss). The Curse lasts for 10 seconds. |
+| Abyss Dagger | Toggle | 10 | When possessing Abyssal Orbs, every dagger attack has a %s% chance to consume 1 Abyssal Orb, summoning 5 Abyss Daggers around the target and attacking the target 5 times, dealing weapon attribute P.DMG equal to %s% of P.ATK in total. Triggers once every 2 seconds. |
 
-*Source:* [ROX Assassin Class Guide](https://www.bluestacks.com/blog/game-guides/ragnarok-x-next-generation/rox-assassin-class-guide-en.html), [Guillotine Cross Skill DB](https://ratemyserver.net/index.php?page=skill_db&jid=4065), [Shadow Chaser Skill DB](https://ratemyserver.net/index.php?page=skill_db&jid=4079)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1423)

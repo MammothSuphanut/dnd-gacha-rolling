@@ -6,126 +6,174 @@
 
 ## ROX Skill Reference — Merchant → Blacksmith/Alchemist
 
+> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1600, 1610-1613, 1620-1623) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล)
+>
+> *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมต่างจากที่ไฟล์นี้เคยเดาไว้หลายจุด — Transcendent ของสาย Blacksmith คือ **Whitesmith** (ไม่ใช่ "Mastersmith"), Transcendent ของสาย Alchemist คือ **Creator** (ไม่ใช่ "Biochemist"), 3rd ของสาย Alchemist คือ **Genetic** (ไม่ใช่ "Geneticist")
+
 #### Merchant (1st Class)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Mammonite | โจมตีประชิดด้วยเงิน ดาเมจสูง (เผา zeny ต่อครั้ง) |
-| Discount | ซื้อของจากร้าน NPC ได้ถูกลง |
-| Overcharge | ขายของให้ร้าน NPC ได้ราคาสูงขึ้น |
-| Pushcart | เช่าเกวียนมาใช้ ปลดล็อกการติดตั้งเกวียนของสาย Merchant |
-| Vending | เปิดร้านขายของด้วยเกวียน (ต้องมี Pushcart ก่อน) |
-| Enlarge Weight Limit | Passive เพิ่มน้ำหนักบรรทุกสูงสุดถาวร |
-| Item Appraisal | ระบุไอเทมไม่ทราบชนิดได้โดยไม่ต้องใช้แว่นขยาย |
-| Change Cart | เปลี่ยนรูปลักษณ์เกวียน (quest skill, Job Lv.30+) |
-| Crazy Uproar | บัฟเพิ่ม STR ชั่วคราว (quest skill, Job Lv.15+) |
-| Cart Revolution | โจมตี AoE ดาเมจตามน้ำหนักเกวียน+ของที่แบก (quest skill, Job Lv.35+) |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Discount | Toggle | 5 | Enjoy a %s% discount when purchasing items from NPC shops and a %s% discount when purchasing items from the Chamber of Commerce using Zeny. |
+| Overcharge | Toggle | 5 | Earn %s% more when selling items to NPC shops and %s% more when selling items to the Chamber of Commerce. |
+| Enlarge Weight Limit | Toggle | 10 | Increases weight limit by %s. |
+| Pushcart | Toggle | 5 | Allows the usage of pushcarts that can carry a heavy load. You can rent a pushcart that has an initial weight limit of 8000 from the Kafra Service. Each level up increases the weight limit by 500. Current weight limit is %s. |
+| Cart Revolution | Active | 10 | Can only be used when equipped with a pushcart. After casting, attacks an enemy target within a circular area using the pushcart, dealing (%s% of ATK + %s) Neutral physical damage. After learning Weight Utility, the damage of this skill increases with maximum weight. |
+| Crazy Uproar | Active | 10 | Lets out an incredible roar. After casting, all party members gain %s STR for 120 seconds. Loses effect if more than 30 meters from the caster. |
+| Battle Will | Toggle | 10 | Whenever your normal attacks hit, your Physical Damage Bonus is increased by 20, increasing by %s more for every 50 STR. Can stack up to 8 times. Lasts for 5 seconds. |
+| Midas Touch | Active | 10 | Deals (%s% ATK + %s) Neutral physical damage to an enemy and inflicts Bounty on it for 10 seconds. Killing a monster with Bounty earns you %s% more Zeny. |
+| Mammonite | Active | 10 | Expends %s Zeny, dealing (%s% ATK + %s) physical damage of your weapon's attribute to an enemy. |
+| Vending | Active | 10 | Set up a shop to sell items. You can list up to %s items for sale currently. |
 
-*Source:* [Ragnarok Online (Renewal) Merchant Skills](https://renewal.playragnarok.com/gameguide/classes_skill.aspx?c=5)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1600)
 
 #### Blacksmith (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Mammonite | โจมตีประชิดด้วยเงิน ดาเมจสูง |
-| Discount/Overcharge | ซื้อถูกลง/ขายแพงขึ้น |
-| Weapon Perfection | ยกเลิก penalty ขนาดอาวุธ |
-| Adrenaline Rush | บัฟเพิ่ม ASPD |
-| Weaponry Research | Passive เพิ่มดาเมจอาวุธ |
-| Repair Weapon | ซ่อมอุปกรณ์ที่ชำรุด |
-| Skin Tempering | Passive ต้าน status ธาตุ |
-| Hilt Binding | Passive เพิ่ม hit |
-| Maximum Overthrust | บัฟดาเมจอาวุธสูงสุด |
-| Loud Exclamation | บัฟ STR ให้ปาร์ตี้ |
-| Cart Boost | เร่ง Speed ขณะลากเกวียน |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Skin Tempering | Toggle | 5 | Receive %s% less damage from Fire attribute monsters and %s% less damage from Neutral attribute monsters. Increases Fire DMG dealt by %s%. |
+| Weaponry Research | Toggle | 10 | When using a weapon, ATK increases by (%s + %s% of STR). |
+| Over Thrust | Toggle | 10 | Casting Crazy Uproar increases your ATK by %s% and the Physical Attack of all party members within 30 meters by %s%. Loses effect if more than 30 meters from the caster. |
+| Adrenaline Rush | Active | 10 | Increases the Final ASPD of all party members by %s% (increases by an additional 1% for every 50 AGI) for 40 seconds. Loses effect if more than 30 meters from the caster. |
+| Weapon Perfection | Toggle | 5 | Adrenaline Rush causes all party members within 30 meters to gain %s% of base weapon modifier, up to 100%, for 40 seconds. Loses effect if more than 30 meters from the caster. |
+| Cart Blitz | Active | 10 | Rides on the pushcart and charges forward, dealing Neutral attribute P.DMG equal to (%s% of P.ATK + %s) to enemies in the path within 3 meters of the pushcart. Enemies that have taken damage will not be damaged again within 1.5 seconds. During the charge, you gain the Endure and Control Immunity effects, with damage received decreased by %s%, and MSPD increased by %s. However, other attacks are disabled during this period. Lasts for 8 seconds. After Cart Blitz kills 8 targets or deals 32 hits, the charge will end prematurely. After learning Weight Utility, the damage of this skill increases with maximum weight. |
+| Cart Hurl | Active | 10 | Hurls the pushcart forward, dealing (%s% of ATK + %s) Neutral physical damage to enemies in its path. The pushcart stays put after reaching the maximum distance for up to 5 seconds. Casting the skill again causes you to rush toward the pushcart's location and deal the same amount of physical damage to enemies near the pushcart. After learning Weight Utility, the damage of the first part of this skill increases with maximum weight. |
+| Unfair Trick | Toggle | 10 | Decreases Zeny required to cast Mammonite, Hurl Zeny, and Zeny Storm by %s%. |
+| Hammer Fall | Active | 10 | Slams the ground, dealing weapon attribute P.DMG equal to (%s% P.ATK + %s) to enemy units within 4 meters and has a %s% chance to stun them for 2 seconds. Can stun up to 8 targets. |
+| Savage Slash | Active | 10 | Stuns the enemy for 1 second and slashes 5 times, dealing weapon attribute P.DMG equal to %s% of P.ATK in total. Every 50 STR increases the damage by an additional 5%, up to 800%. |
+| Lunging Charge | Active | 10 | Charges towards the location of the pushcart. Upon reaching, deals (%s% ATK + %s) Neutral physical damage to enemies around you. |
+| Weight Utility | Toggle | 10 | Increases damage of Cart Revolution, Cart Blitz (only for first instance of damage), Cart Hurl (only for the first stage), and Cart Termination by 1% for every increase of your maximum weight by %s. |
 
-#### Mastersmith (Transcendent)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1610)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Hammer Fall | ทุบค้อน AoE stun |
-| Cart Termination | พุ่งเกวียนชน ดาเมจ AoE |
-| Meltdown | ลด DEF/ทำลายเกราะเป้าหมาย |
-| Zeny Storm | ขว้างเหรียญ AoE ดาเมจตามเงินที่มี |
+#### Whitesmith (Transcendent)
+
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Cart Boost | Active | 10 | Can only be used when equipped with a pushcart. After casting, removes the Decrease Agility state. Increases Movement Speed by %s% and Final Dodge Rate by %s% (increases by an additional 1% for every 30 VIT you have). Cannot be dispelled. Lasts for 6 seconds. Does not stack with other Movement Speed increase effects. |
+| Greed | Toggle | 10 | Killing monsters in the wild earns you %s% more Zeny. |
+| Melt Down | Active | 10 | Deals weapon attribute P.DMG equal to %s% of P.ATK to an enemy and has a %s% chance to break the enemy's armor. Every 30 STR increases the chance by an extra 1%. Lasts for 6 seconds. |
+| Maximum Over Thrust | Active | 10 | Expends %s Zeny and increases the damage of your normal attacks by %s%. Lasts for 10 seconds. |
+| Hurl Zeny | Active | 10 | Throws %s Zeny for a ranged attack, dealing Neutral attribute P.DMG equal to %s% of P.ATK to a single enemy target. This skill has a %s% chance to deal double damage. |
+| Zeny Utility | Toggle | 10 | Increases the damage of Mammonite, Hurl Zeny, Zeny Storm, and Zenypult by %s%. |
+| Zeny Storm | Active | 10 | Expends %s Zeny and blasts enemy units in a specified circular area with Zeny 6 times. Each blast deals (%s% of ATK + 400 (increases by an additional 100 for every 50 STR you have)) Neutral physical damage and slows the enemy by 50% for 3 seconds. |
+| Cart Termination | Active | 10 | Deals (%s% ATK + %s) Neutral physical damage to enemy units within the area and stuns them for 3 seconds. After learning Weight Utility, the damage of this skill increases with maximum weight. |
+| Cart Assault | Toggle | 10 | During Cart Blitz, increases damage by %s% and an additional increase of 20% each time the same target is hit. Knocks back the target 2 meters. (The same target will not be knocked back for 1.5 seconds.) |
+| Savagery | Toggle | 10 | Casting Savage Slash and Melt Down grants you 1 stack of Savage for 10 seconds. Each stack grants you %s% Lifesteal and Final P.PEN, stacking up to 5 times. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1611)
 
 #### Mechanic (3rd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Axe Boomerang | ขว้างขวานกลับมา |
-| Power Swing | ฟันขวานดาเมจสูง |
-| Axe Tornado | หมุนขวานรอบตัว AoE |
-| Magma Eruption | พื้นดินระเบิดลาวา AoE |
-| Vulcan Arm | ยิงปืนกลจากแขนกล |
-| Cannon Spear | ยิงปืนใหญ่ดาเมจสูง |
-| Arm Cannon | ปืนใหญ่ติดแขนโจมตีระยะไกล |
-| Self Destruction | ระเบิดตัวเองดาเมจสูงมาก |
-| Analyze | ลด DEF/MDEF เป้าหมาย |
-| Neutral Barrier | กำแพงกันดาเมจธาตุ |
-| Stealth Field | พื้นที่ซ่อนตัวจากศัตรู |
-| Chain Drive | โซ่พุ่งดึงเป้าหมายเข้าหา |
-| Silver Sniper | เรียกหุ่นเงินยิงระยะไกล |
-| Magnetic Field | ดักเป้าหมายในสนามแม่เหล็ก |
-| Diamond Storm | พายุน้ำแข็ง AoE |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Madogear License | Type 5 | 10 | Learns the basic skills to operate Magic Gear and ride it into battle, granting its effect for 120 sec. Magic Gear's Movement Speed is increased by 4 in PVE mode, and 2 in PVP mode. While riding it, all Cart-related skills are cast by the Magic Gear in a new way, however their effect remains unchanged. The Magic Gear manually launches normal attacks with its weapons, granting a 20% chance of dealing %sx normal damage and decreasing the target's Movement Speed by 50% for 2 sec. Overheating will be caused by boarding the Magic Gear too often, and you cannot ride the Magic Gear within 6 sec. |
+| Neutral Barrier | Toggle | 10 | While riding Magic Gear, %s% of damage dealt and %s% of damage taken is converted into Energy, up to the equivalent of %s% Max HP. When Max HP is lower than %s%, accumulated Energy will be converted into a shield that remains in effect for 10 sec (can be triggered once every 24 sec). |
+| Front Side Slide | Active | 10 | Propels the Magic Gear forward 10 meters, dealing Regular Physical Damage equal to %s% of Physical Attack to enemies within a 3-meter range upon reaching its final destination. |
+| Suicidal Destruction | Active | 10 | Sets the countdown for the Magic Gear's detonator, then ejects yourself 4 meters backward. During the 2-second countdown, the Magic Gear pulls enemies within 6 meters toward its center. After the countdown, it explodes, dealing Fire attribute P.DMG equal to %s% of the target's Max HP to enemies within 6 meters. If the target is a BOSS, MVP, or MINI, it deals Fire attribute P.DMG equal to %s% of P.ATK. You cannot board the Magic Gear for 36 seconds after using this skill. |
+| Knuckle Boost | Active | 10 | Fires a rocket punch from the Magic Gear, dealing weapon-based Physical Damage equal to %s% Physical Attack to a target, with a chance of reducing the cooldown for this skill by 1 sec for each crit dealt. |
+| Vulcan Arm | Active | 10 | Deploys the Magic Gear's Vulcan Arm, unleashing a continuous 6-missile attack on targets within a 6-meter range for 3 seconds. Each bombardment deals Fire attribute P.DMG equal to %s% of P.ATK to enemies within range and an additional %s% damage to small and medium-sized monsters. It also has a %s% chance to slow down the targets within range by 50% for 3 seconds. |
+| Arm Cannon | Active | 10 | Fires the Magic Gear's Arm Cannon in a fixed location, dealing Fire attribute P.DMG equal to %s% to all enemies within a 6-meter range. The Magic Gear can carry up to 5 cannon balls. |
+| Savage Frenzy | Toggle | 10 | Grants 1 stack of Savage Fury for every crit triggered, increasing Physical Attack by %s% and Final Attack Speed by %s% for 3 sec. Can be stacked up to 6 times, after which Blood Thirst is granted, increasing Physical Lifesteal by %s% for 6 sec. Blood Thirst can be triggered once every 24 sec. |
+| Magma Eruption | Toggle | 10 | Grants normal attacks a %s% chance of inflicting a powerful quake beneath the enemy's feet and an eruption of lava, dealing Fire Damage equal to %s% Physical Attack. This probability increases by %s% when a normal attack triggers a crit. |
+| Axe Boomerang | Active | 10 | Hurls an axe in a desired direction, dealing weapon-based Physical Damage equal to %s% Physical Attack to all enemies in its path. After reaching its maximum trajectory, the axe will return to you, dealing an equal amount of damage to the enemies in its path. |
+| Power Swing | Toggle | 10 | Increases the damage coefficient of Axe Boomerang by %s%. When thrown in the desired direction, targets in its path will be slowed by %s% for 2 sec. |
+| Zenypult | Active | 10 | Places a launcher that hurls tons of Zeny every 0.5 sec up to 24 times (counted as each time a target takes damage), lasting for 18 sec max. The launcher affects targets within a 6-meter range, dealing Neutral Physical Damage equal to %s% Physical Attack. Up to 3 launchers can be placed at the same time, each costing 3000 Zeny. |
+| Gainful Lure | Toggle | 10 | Inflicts Lure on targets who take damage from Mammonite, Hurl Zeny, Zeny Storm, or Zenypult, reducing their Final Physical Defense by %s%, which can be stacked up to 6 times. Also reduces their Movement Speed by %s% (not effective against boss-level monsters), which can be stacked up to 5 times. Both effects last for 6 seconds. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1612)
 
 #### Meister (4th)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Spark Blaster | ยิงพลังงานดาเมจสูงถึง cap |
-| Triple Laser | เลเซอร์ 3 จังหวะดาเมจสูงถึง cap |
-| Axe Stomp | กระทืบขวาน AoE (สาย axe build) |
-| Mighty Smash | ฟันขวานแรงพิเศษ (สาย axe build) |
-| (ควบคุมหุ่นรบอัตโนมัติ) | สั่งหุ่นยนต์รบแยกจากตัวเองได้ ต่างจาก Mechanic |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Activation Attack Machine | Active | 10 | Activates the drone attack system on the Magic Gear, attacking enemies in a 180-degree fan-shaped area in front, with each attack dealing weapon attribute P.DMG equal to %s% of P.ATK to up to 3 targets at a time. The drone can trigger critical hits when using a mace. The attack system can only be activated while mounted on the Magic Gear, lasts 20 seconds, and automatically deactivates when you exit the Magic Gear. |
+| Activation Defense Machine | Active | 10 | Summons a 4-meter radius defensive field at your position, protecting all allies within it from damage coming from outside. The amount of damage blocked is equal to %s% of Meister's Max HP, and the field lasts for 5 seconds. The field can only be activated while mounted on the Magic Gear, but it doesn't block damage from enemies who have already entered the field. |
+| ABR - Battle Warrior | Active | 10 | Summons the automated combat robot, Battle Warrior, which automatically joins the battle. After %s attacks, Battle Warrior performs a Strike, dealing Neutral attribute P.DMG equal to %s% of P.ATK to all enemies in a 180-degree fan-shaped area in front of the Battle Warrior, with a chance to trigger critical hits. Battle Warrior lasts up to %s seconds and consumes ABR Capsule x1 when summoned. ABR - Battle Warrior and ABR - Dual Cannon cannot be summoned at the same time. |
+| ABR - Dual Cannon | Active | 10 | Summons the automated combat robot, Dual Cannon, which automatically joins the battle. Every %s seconds, Dual Cannon fires Arm Cannon, dealing Fire attribute P.DMG equal to %s% of P.ATK to the target and all enemies within a 4-meter radius. Dual Cannon lasts up to %s seconds and consumes ABR Capsule x1 when summoned. ABR - Battle Warrior and ABR - Dual Cannon cannot be summoned at the same time. |
+| ABR - Infinity | Active | 10 | Commands ABR - Battle Warrior and ABR - Dual Cannon to repeatedly cast Strike and Arm Cannon within %s seconds. The attack frequency of the Magic Gear's drone attack system is also doubled. |
+| ABR Mastery | Toggle | 10 | Summoning ABR - Battle Warrior increases the damage of Knuckle Boost, Activation Attack Machine, and Rush Quake by %s%. Summoning ABR - Dual Cannon increases the damage of Vulcan Arm, Arm Cannon, and Axe Stomp by %s%. |
+| Rush Quake | Active | 10 | Dashes to the target location, creating ground shockwaves that pull in all enemies within 6 meters. Then, follow up with a powerful strike that deals weapon attribute P.DMG equal to %s% of P.ATK to the enemy, with a %s% chance to inflict Armor Break for 5 seconds to all enemies within the area. Requires a mace to use, and the damage can trigger critical hits. |
+| Turbo Drive | Toggle | 10 | While mounted on the Magic Gear, your normal attacks utilize the Magic Gear's turbo weapon, reducing the ASPD bonus to %s% of the original but increasing base normal attack damage by %s%. Using the Turbo Drive hammer while in Magic Gear mode converts the damage of Midas Touch, Zeny Storm, Hurl Zeny, and Zenypult to weapon attribute. When your Final Crit is higher than Final P.PEN, all the above skills can trigger critical hits and generate substantial Threat when dealing damage. Threat won't be generated while Emergency Armor is active. |
+| Axe Stomp | Active | 10 | Swings the axe to split the ground, creating a fissure that deals Fire attribute P.DMG equal to %s% of P.ATK to all targets within range and slows them down for 4 seconds. At the end of the fissure, flames erupt, dealing Fire attribute P.DMG equal to %s% of Max HP (capped at 2,000% P.ATK) to targets within a 6-meter radius and launching them into the air for 2 seconds. Requires an axe to use. |
+| Mech Overhaul | Toggle | 10 | While mounted on Magic Gear, the damage of Cart Revolution, Cart Hurl, Cart Blitz, and Cart Termination is converted to Fire attribute. When Activation Attack Machine is active and Cart Hurl is cast, the drone stays at the initial position, dealing Fire attribute P.DMG equal to %s% of P.ATK every second to all enemies within the area. Casting Cart Blitz will apply the Activation Attack Machine effect. Cart Termination will deal additional Fire attribute P.DMG equal to %s% of P.ATK to enemies on the path. |
+| Armor Swap | Toggle | 10 | While mounted on Magic Gear, there's a 2.5% chance to swap your armor attribute to resist damage when taking Earth, Fire, Water, and Wind attribute damage (damage from periodic effects caused by debuffs won't trigger this). This effect can be triggered once every 6 seconds. While mounted on Magic Gear and attacked by large, medium, or small monsters, you take 15%, 10%, and 5% less damage, respectively, and your PVP Final M.DMG RED and PVP Final P.DMG RED are increased by %s%. |
+| Emergency Armor | Toggle | 10 | Using Suicidal Destruction to exit the Magic Gear activates Emergency Armor. While under the effect of Emergency Armor, your MSPD is increased by 4, and Suicidal Destruction is disabled, but other skills that require the Magic Gear remain usable. Armor Swap does not apply to Emergency Armor. Emergency Armor lasts for %s seconds. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1613)
 
 #### Alchemist (2nd)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Acid Terror/Demonstration | ขว้างขวดกรด ดาเมจตามไอเทม |
-| Aid Potion | ใช้ยา/ไอเทมได้ผลเพิ่ม |
-| Prepare Potion | เพิ่มโอกาสผลิตยาสำเร็จ |
-| Sulfur Fume | พ่นควันกำมะถันดีบัฟ |
-| Slim Potion | ปรุงยาจาก Slime |
-| Full Chemical Protection | ป้องกันสถานะผิดปกติทางเคมี |
-| Poison React | สวนกลับพิษเมื่อโดนโจมตี |
-| Summon Homunculus | เรียกโฮมุนคูลุสคู่ใจ |
-| Cultivation | ปลูกพืชเก็บวัตถุดิบ |
-| Summon Flora | เรียกพืชมาช่วยรบ |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Axe Mastery | Toggle | 10 | When using a one-handed axe, two-handed axe, or mace, P.ATK increases by INT x %s%. |
+| Pharmacy | Toggle | 5 | Allows the Alchemist to learn how to craft potions, alchemy items, plant items, and projectiles. Learns to craft potions at Lv.1: Red Slim Potion Kit, Yellow Slim Potion Kit, White Slim Potion Kit, Gray Slim Potion Kit, and Premium White Slim Potion Kit. Learns to craft alchemy items at Lv.2: Bottle Grenade, Acid Bottle, Marine Sphere Bottle, Glistening Coat, and Alcohol. Learns to craft plant items at Lv.3: Bomb Mushroom Spore, Bloodsuck Plant Seed, Thorn Plant Seed, Mandragora Flowerpot, and Plant Bottle. Learns to craft projectiles at Lv.4: Cannon Ball and Super Cannon Ball. Learns to craft special items at Lv.5: Explosive Powder, Corrosion Potion, Oil Bottle, Smoke Powder, and Tear Gas. |
+| Learning Potion | Toggle | 10 | Increases the recovery effect of Alchemist Potion by %s%. |
+| Call Homunculus | Active | 4 | Learn how to summon Homunculi, including Lif, Amistr, Vanilmirth, and Filir. There can only be 1 Homunculus existing at a time. The summoned Homunculi carry most of their owner's stats and cost Embryo x1 to summon. Lv.1: Summon Lif. Lv.2: Summon Amistr. Lv.3: Summon Vanilmirth. Lv.4: Summon Filir. |
+| Rest | Type 5 | 10 | Switches the Homunculus to a non-battle stance, rendering it untargetable while recovering %s% of Max HP over the next 10 seconds. |
+| Resurrect Homunculus | Active | 10 | Resurrects the Homunculus and recovers %s% of its Max HP. |
+| Demonstration | Active | 10 | Throws the Bottle Grenade at the 4-meter target area, dealing Fire P.DMG equal to (%s% of P.ATK + INT x %s) to the enemy units within the area per 0.5 seconds. The on-fire area lasts 12 seconds. This skill consumes Bottle Grenade x1. |
+| Acid Terror | Active | 10 | Throws the Acid Bottle and burns the target, inflicting the target with Bleed status and dealing weapon attribute P.DMG equal to (%s% of P.ATK + INT x %s) to the inflicted target every second. Lasts 4 seconds. This skill consumes Acid Bottle x1. |
+| Bio Cannibalize | Active | 10 | Summons a Plant monster in a specified location within a 6-meter radius. The Plant monster automatically attacks enemy targets within 3 meters, dealing Neutral attribute P.DMG equal to (%s% of P.ATK + INT x %s) to the monster targets each time. When attacking character targets, deals True DMG equal to %s% of the target's Max HP and lasts for 12 seconds. This skill consumes Plant Bottle x1 and cannot be released again within 2 seconds. |
+| Sphere Mine | Active | 10 | Summons a Marine Sphere at a specified location, and it will explode after 3 seconds, dealing weapon attribute P.DMG equal to %s% of P.ATK + INT × 17 to all enemy units within a 4-meter area. This skill consumes Marine Sphere Bottle × 1. |
+| Impulsive Slash | Toggle | 10 | When the Alchemist is using a Mace, their normal attacks have a %s% chance of dealing weapon attribute P.DMG equal to (%s% of P.ATK + INT x %s) to the enemies within 3 meters. The damage can be critical. |
+| Gene Upgrade | Toggle | 10 | Strengthens the physical force of the Alchemist to their peak level. There is a %s% chance of dealing x2 damage when using a Mace in normal attacks or casting Impulsive Slash (the probability of double damage caused by Impulsive Slash is calculated separately for each target within range). |
 
-#### Biochemist (Transcendent)
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1620)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Bio Cannon | ยิงสารชีวภาพดาเมจสูง |
-| Bio Explosion | ระเบิดชีวภาพ AoE |
-| Sphere Mine | วางระเบิดทรงกลมดักศัตรู |
+#### Creator (Transcendent)
 
-#### Geneticist (3rd)
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Slim Potion Pitcher | Active | 5 | Throws the Slim Potion to the specified location, recovering HP equal to %s% of the potion healing amount on allied units within a 4-meter area. The healing amount increases by 1% for every 5 VIT. Lv.1: Throws Red Slim Potion. Lv.2: Throws Yellow Slim Potion. Lv.3: Throws White Slim Potion. Lv.4: Throws Premium White Slim Potion. Lv.5: Throws Gray Slim Potion. |
+| Homunculus Upgrade | Toggle | 10 | Permanently boosts the stats of Homunculi. Lif: increases its Max HP by %s% and healing effectiveness by %s%. Amistr: increases its Max HP by %s% and P.DEF & M.DEF by %s%. Vanilmirth: increases its P.DMG by %s% and Final P.PEN by %s%. Filir: increases its P.ATK by %s%, Final Crit by %s%, and Crit DMG Bonus by %s%. |
+| Cart Upgrade | Toggle | 10 | Increases your maximum loading capacity by %s and boosts the damage of Cart Revolution, Cart Tornado, Cart Cannon, and Heavy Cannon by 0.5% for each %s loading capacity increased. |
+| Cart Tornado | Active | 10 | Spins the Cart at high speed to create a tornado, dealing weapon attribute P.DMG equal to (%s% of P.ATK + INT x %s) to the enemies within 5 meters per 0.5 seconds. Enemies within the area will be knocked back by 2 meters and stunned for 1 second. Casting time: 5 seconds. Grants the Endure effect during the effective period. A Cart must be equipped to cast this skill. |
+| Hell's Plant | Active | 10 | Summons a man-eating plant from Hell and hides it beneath the ground for 30 seconds. When enemies get close to the plant, it will pop out from the ground and attack them 1 time every 3 seconds, each attack dealing Neutral attribute P.DMG equal to (%s% of P.ATK + INT x %s) to monster targets. When attacking character targets, deals True DMG equal to %s% of the target's Max HP each time, and there is a %s% chance of stunning the enemies for 3 seconds. The plant attacks up to 5 times and remains on the surface for up to 15 seconds once it pops out. This skill consumes Marine Sphere Bottle x1. (Takes effect 1 second after being stepped on.) |
+| Acid Demonstration | Active | 10 | Throws the Acid Bottle Grenade at the target, dealing Fire P.DMG equal to (%s% of P.ATK + INT x %s). The targets hit by the Acid Bottle Grenade have a %s% chance of entering the Armor Breakage and Weapon Breakage states for 3 seconds. This skill consumes Bottle Grenade x1 and Acid Bottle x1. |
+| Spore Explosion | Active | 10 | Implants the Bomb Mushroom Spore into the target. The mushroom spore explodes after 3 seconds, dealing weapon attribute P.DMG equal to (%s% of P.ATK + INT x %s) to the target and the nearby units within 3 meters of the target. This skill consumes Bomb Mushroom Spore x1. |
+| Demonic Fire | Active | 10 | Breathes fire at a 60-degree fan-shaped area in front of you with a radius of 6 meters, dealing Fire attribute P.DMG equal to (%s% of P.ATK + INT x %s) to the enemy units within the area per 0.5 seconds. Casting time: 5 seconds. Grants the Endure effect during the effective period. |
+| Blood Sucker | Active | 10 | Implants the Blood Sucker into the target for 5 seconds. Whenever the target receives healing, %s% of the healing effect will be transferred to you (this effect doesn't work on Boss, MVP, and Mini units). At the same time, when dealing damage to the target, there is a %s% chance of increasing your Lifesteal effect by %s% for 10 seconds. The Blood Sucker becomes ineffective if the target is more than 8 meters away from you. Each implant consumes Bloodsuck Plant Seed x1. |
+| Illusion Doping | Active | 10 | Fills up your surrounding area within 3 meters with the Illusion Doping effect for 90 seconds, dealing weapon attribute P.DMG equal to (%s% of P.ATK + INT x %s) to the enemies within the area each second and inflicting them with Illusion. Enemies inflicted with Illusion will have blurry vision, which decreases their Final Hit by %s% and MSPD by %s. Stacks up to 2 times. This skill consumes Concentrated Alcohol x1. |
+| Chemical Protection Accessory | Toggle | 10 | During the armor protection period, the odds of the target's accessory being divested by the skill Strip Accessory decrease by 25% for %s second(s). The duration increases by 0.1 seconds for every 20 INT. |
+| Chemical Protection Armor | Active | 10 | Makes your or a friendly target's armor indestructible and immune to Armor Break during the given period. The odds of the target's armor being divested by the skill Strip Armor decrease by 25% for %s second(s). The duration is further increased by 0.1 seconds for every 20 INT. This skill consumes Glistening Coat x1. |
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Cart Cannon | ยิงปืนใหญ่จากเกวียน |
-| Cart Tornado | หมุนเกวียน AoE รอบตัว |
-| Hell Plant | ปลูกพืชนรกระเบิดดักศัตรู |
-| Fling | เหวี่ยงเป้าหมายออกไป |
-| Change Instance | สลับพื้นที่/มิติชั่วคราว |
-| Thorn Trap | กับดักหนามตรึงเป้าหมาย |
-| Demonic Fire | ไฟปีศาจดาเมจต่อเนื่อง |
-| Magic Mushroom | เห็ดวิเศษ ดีบัฟสุ่มเอฟเฟกต์ |
-| Anti-Melee/Berry Vaccine | เสิร์ฟไอเทมป้องกันให้ปาร์ตี้ |
-| Vitata 500 | ยาฟื้น SP ให้ปาร์ตี้ |
-| Wolf Mimic | อำพรางเป็นหมาป่าล่อศัตรู |
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1621)
+
+#### Genetic (3rd)
+
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Cart Boost | Active | 10 | Within the next 15 seconds, increases your MSPD by %s and P.ATK by %s%. Cannot use this skill if the Cart is not equipped. |
+| Vine Armor | Toggle | 5 | Increases your P.REF by %s% and reduces your P.DMG taken by %s%, but decreases your Fire RES by %s%. |
+| Chemical Protection Weapon | Toggle | 10 | Protects the target's weapon from being broken during the armor protection period. The odds of the target's weapon being divested by the skill Strip Weapon decrease by 25% for %s second(s). The duration increases by 0.1 seconds for every 20 INT. |
+| Homunculus Evolution | Toggle | 10 | Reduces the Water, Fire, Earth, and Wind damage taken by a Phase 1 Homunculus by %s%. Reduces the same damage taken by a Phase 2 Homunculus by %s%. Reduces the same damage taken by a Phase 3 Homunculus by %s%. |
+| Life Fusion | Active | 10 | Sacrifices the Homunculus and extracts life energy from it, which grants you a boost of stats over the next 15 seconds. Lif: increases Max HP by %s% and healing effectiveness by %s%. Amistr: increases Max HP by %s% and P.DEF & M.DEF by %s%. Vanilmirth: increases P.ATK by %s% and Final P.PEN by %s%. Filir: increases P.ATK by %s%, Final Crit by %s%, and Crit DMG Bonus by %s%. |
+| Thorn Trap | Active | 10 | Sets up the Thorn Trap, which lasts for 120s in a specified area. Enemies who enter this area will be trapped for 3s and receive weapon attribute P.DMG equal to (180% of P.ATK + INT x %s) each second. The trapped enemies will get out of the trap state early if they receive Fire DMG. There can only be 7 Thorn Traps existing at the same time. This skill consumes Thorn Plant Seed x1. |
+| Howling of Mandragora | Active | 10 | Increases the duration of active skills' fixed cooldown by %s second(s) and fixed cast time by %s second(s) of the enemies within 4 meters. Lasts 5 seconds. This skill consumes Mandragora Flowerpot x1. Each Crit reduces its fixed cooldown by 1 second. |
+| Demonic Potion | Active | 10 | Takes the Demonic Potion and removes all control effects on you (this effect doesn't work on Boss, MVP, and Mini units), rendering yourself into the Demonic state, increasing your MSPD by %s, Crit DMG Bonus by %s%, Final P.PEN by %s%, and P.ATK by %s% for 15 seconds. Due to the side effect of the potion, you will be silenced for 6 seconds after the effect wears off. |
+| Cart Cannon | Active | 10 | Uses a Cart to shoot Cannon Balls to a target area within 4 meters, dealing weapon attribute P.DMG equal to %s% of P.ATK + INT x %s to enemies within 4 meters. The maximum loading capacity is 10. Each attack consumes Cannon Ball (if the skill level is maxed out, it consumes Super Cannon Ball). When shooting Super Cannon Balls, the area of damage increases by 2 meters, additionally dealing Physical True Damage equal to 1.2% of the target's lost HP (this effect does not apply to a target who is an MVP, Mini, or Boss). The maximum loading capacity of Super Cannon Balls is 8. |
+| Heavy Cannon | Type 5 | 10 | Transforms the Cart into Heavy Cannon and refills all the shells, which increases the normal attack range to 24 meters with a fixed 2-second attack interval. During this period, each normal attack becomes a projectile that attacks the enemies, dealing weapon attribute P.DMG equal to %s% of P.ATK + INT x %s, %s% of P.ATK + INT x %s, and %s% of P.ATK + INT x %s to the enemies that are 0–8, 8–16, and 16–24 meters away, respectively. Each normal attack consumes Cannon Shells. You cannot move when operating Heavy Cannon, and its maximum loading capacity is 5. Every 4 seconds, it will automatically refill 1 shell, and you can cast this skill again to release you from the Heavy Cannon. This skill can only be used when equipping Axe weapons and renting the Hovercannon. (Appears twice in the source — once as a Type 5 mount-toggle entry, once as an Active cast-to-exit entry — with identical description text.) |
+| Wall Of Thorns | Active | 10 | Summons a Wall Of Thorns in the target area that lasts for 20 seconds. The enemy receives weapon attribute P.DMG equal to %s% of P.ATK + INT x %s and gets knocked back by 2 meters when touching it (the wall deals damage to enemies that cannot be knocked back once every 0.2 seconds). The Wall Of Thorns will be shattered after receiving damage %s times. If the Wall Of Thorns receives Fire DMG, it turns into a Fire Barricade, which does not knock back the enemies, but deals Fire P.DMG equal to %s% of P.ATK + INT x %s to the enemies within the area every 0.5 seconds. Lasts 20 seconds. There can only be 1 Wall Of Thorns existing at a time, requiring Thorn Plant Seed x1 to cast. |
+| Fire Expansion | Toggle | 10 | When using Demonstration, Demonic Fire, and Wall Of Thorns, depending on the items consumed, they carry additional effects: consuming Oil Bottle x1 increases the damage dealt by %s%; consuming Explosive Powder x1 has a %s% chance of generating an explosive effect and dealing Fire P.DMG equal to 100% of P.ATK + INT x 60 to the target and their nearby units within 3 meters; consuming Smoke Powder x1 increases the Final Dodge of allied units within the area by %s% every 0.5 seconds and decreases the Final Hit of enemy units within the area by %s% every 0.5 seconds for 1 second; consuming Tear Gas x1 makes the target within the area enter a Blind state for 5 seconds; consuming Corrosion Potion x1 ignores %s% of the enemy's P.DEF. |
+
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1622)
 
 #### Biolo (4th)
 
-| Skill | ความสามารถคร่าวๆ |
-|---|---|
-| Mystery Powder | โปรยผงระเบิดใส่เป้าหมาย+รอบข้าง ให้บัฟ 60 วิ |
-| Dust Explosion | ต้องมีบัฟ Mystery Powder ก่อน — ระเบิดผง 5 ครั้งรอบเป้าหมาย |
+| Skill | Type | Max Lv | Description |
+|---|---|---|---|
+| Research Report | Toggle | 10 | Increases your damage dealt to Plant and Demi-Human monsters by %s%. There's a %s% chance to consume no skill items when casting skills of your own class. |
+| Withered Guardian | Active | 10 | Consumes Plant Bottle x1 to transform the existing Homunculus, Amistr or Filir, into a Withered Guardian (same attribute as the summoner) that lasts for %s second(s) and is untargetable. Withered Guardian and Wooden Fairy can only exist one at a time, and no other Homunculus may be summoned while it's active. The Withered Guardian inherits all skills from the transformed Homunculus upon summoning. When casting Amistr's Sharp Horn Charge, it will not apply a taunt effect on enemies. While Withered Guardian is present, each attack grants you %s% of Final P.DMG Bonus, stacking up to 6 times. This effect lasts 6 seconds and triggers once every 2 seconds. |
+| Wooden Fairy | Active | 10 | Consumes Plant Bottle x1 to transform the existing Homunculus, Lif or Vanilmirth, into a Wooden Fairy (same attribute as the summoner) that lasts for %s second(s) and is untargetable. Withered Guardian and Wooden Fairy can only exist one at a time, and no other Homunculus may be summoned while it's active. The Wooden Fairy inherits all skills from the transformed Homunculus upon summoning. When casting Vanilmirth's Caprice or Chaotic Blessing, it will not deal damage to the Wooden Fairy. While Wooden Fairy is present, it senses all nearby enemies, revealing any hidden enemies within a %s-meter radius. |
+| Acidified Zone | Active | 10 | Consumes Acid Bottle x1 to create a 6-meter Acidified Zone, dealing adaptive attribute P.DMG equal to (%s% + INT/%s x 1%, up to 500%) of P.ATK to all enemies within range every 0.5 seconds. Lasts 6 seconds. |
+| Catalyst Infusion | Toggle | 10 | Enhances the power of acid and fire by adding Catalyst Infusion, increasing the damage of Acid Terror, Acid Demonstration, and Acidified Zone by %s%. If the target carries a shield, the damage effect is modified to %s%. |
+| Automated Cannon | Active | 10 | Hovercannon automatically fires at the 1 nearest target within a 12-meter radius for a set period of time, each dealing weapon attribute P.DMG equal to (%s% + INT/%s x 1%, up to 750%) of P.ATK for 10 seconds, during which Cart Tornado and Heavy Cannon cannot be used. Consumes Normal Cannon Ball x1. If your Final Crit is higher than Final P.PEN, Automated Cannon may trigger critical damage. |
+| Charged Blitz | Active | 10 | Charges and unleashes a powerful strike, attacking 5 times, each dealing weapon attribute P.DMG equal to (%s% + INT/%s x 1%, up to 400%) of P.ATK. Each critical hit landed during the attack increases the damage of the next attack by %s%. If your Final Crit is higher than Final P.PEN, Charged Blitz may trigger critical damage. |
+| Advance Protection | Toggle | 10 | While Advance Protection is active, the Shadow Equipment Disarm success rate of removing the target's Shadow Equipment's Pioneer and Inscription effects is reduced by 25% for %s second(s). Each additional 20 INT increases the duration of this skill by 0.1. |
+| Crazy Weed | Active | 10 | Summons plant, dealing Earth attribute P.DMG equal to %s% of P.ATK to all enemies within range, unveiling hidden enemies, and removing 6 ongoing ground-based effect(s) (excluding ground-based effects inflicted by MVP, MINI, and Boss units). Consumes Marine Sphere Bottle x1. |
+| Genetic Shift | Toggle | 10 | Genetic Shift grants a breakthrough in physical prowess. For every %s% of Final ASPD, the attack time for Impulsive Slash and Charged Blitz is reduced by 1%, up to 50%. When using Demonic Potion, the physical prowess is increased significantly, as well as the body size. During this period, your attacks ignore size decay effects, receive %s% less M.DMG, and no longer suffer the negative effect of Demonic Potion. |
+| Genetic Failure | Toggle | 10 | Normal attacks and skills have an 8% and 12% chance to reduce the enemy's highest main attribute bonus by %s%, Debuff Resistance by %s, and Debuff Duration Reduction by %s. Triggers once every 20 seconds, lasting 10 seconds. |
+| Genetic Regulation | Toggle | 10 | When your INT reaches 3,000, every additional INT grants 4 extra ATK. When HP falls below %s%, grants a shield equal to (INT x %s), up to 20% of your Max HP. The shield lasts for 8 seconds and can only trigger once every 15 seconds. |
 
-*Source:* [ROX Merchant Guide](https://www.bluestacks.com/blog/game-guides/ragnarok-x-next-generation/rox-merchant-guide-en.html), [ROX Alchemist Class Guide](https://www.bluestacks.com/blog/game-guides/ragnarok-x-next-generation/rox-alchemist-guide-en.html), [ROX 4th Job Phase 2](https://www.ldcloud.net/blog/ragnarok-x-next-generation-guide-rox-4th-job-phase-2), [Divine Pride skill database](https://www.divine-pride.net/database/skill/6509) (skill ID 6509/6510)
-
-## หมายเหตุการค้นข้อมูล (ครอบคลุมทั้ง 6 สาย)
-
-ฐานข้อมูล skill เฉพาะของ ROX (เช่น ragnarokxmobile.com) และ iRO Wiki/Ragnarok Fandom Wiki/ratemyserver เข้าถึงไม่ได้โดยตรงผ่านเครื่องมือค้นเว็บที่มี (SSL/403/402 บล็อก bot) — list ในไฟล์ทั้ง 6 สายจึงผสมระหว่าง ROX-specific guide ที่ค้นเจอจริง (เช่น hthgaming.com skill database สำหรับ Swordsman/Mage) กับ RO classic skill database ที่เข้าถึงได้ (kRO patch notes, Divine Pride skill detail pages, และ **renewal.playragnarok.com** ซึ่งเป็นเว็บทางการของ Gravity ที่ใช้เป็นแหล่งหลักสำหรับตาราง 1st Class ทั้ง 6 สายที่เพิ่มมาใหม่) เพราะ**ชื่อ Fourth Class ในตารางที่ให้มาตรงกับ RO ภาคหลัก (PC/kRO) 100%** ยืนยันว่า ROX ไม่ได้ออกแบบ Fourth Class เองแยกต่างหาก แต่ใช้ระบบเดียวกับภาคหลัก — จึงใช้ข้อมูลจาก RO ภาคหลักเติมช่องว่างได้อย่างมั่นใจ (ต่างจาก skill ระดับ 2nd-3rd job ที่ชัวร์อยู่แล้วว่าเหมือนกันทุกภาค) **Shadow Cross, Abyss Chaser, Biolo ตอนนี้ครบทุกสายแล้ว** — เจอผ่านการไล่ skill ID ตรงบน Divine Pride (6509-6514) หลัง search แบบทั่วไปหาไม่เจอ **1st Class ทั้ง 6 สายก็เพิ่มครบแล้วเช่นกัน** (2026-08-18) — Mage 1st Class ตัดบางรายการจาก hthgaming.com ออก (เช่น "Heaven Drive", "Magic Crusher") เพราะขัดแย้งกับ tier ที่ประกาศไว้แล้วในไฟล์นี้ (Heaven's Drive อยู่ใน High Wizard tier) หรือไม่มีแหล่งยืนยัน tier ที่แน่ชัดพอ ใช้ renewal.playragnarok.com (เว็บทางการ) เป็นหลักแทน
+*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1623)
