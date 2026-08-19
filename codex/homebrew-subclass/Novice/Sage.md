@@ -1,14 +1,14 @@
-# Novice Job Line: Mage → Wizard/Sage
+# Novice Job Line: Sage (Mage → Sage → Professor → Sorcerer → Elemental Master)
 
-> ส่วนหนึ่งของ [Novice-Concept.md](Novice-Concept.md) — แยกออกมาเป็นไฟล์เฉพาะสาย ตาม convention การแยกไฟล์ต่อสาย/subclass ของโปรเจกต์ (ดูตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) สำหรับภาพรวมทั้ง 6 สาย)
+> ส่วนหนึ่งของ [Novice-Concept.md](Novice-Concept.md) — แยกออกมาเป็นไฟล์เฉพาะสาย 1 ไฟล์ต่อ 1 fork ตั้งแต่ Second Class เป็นต้นไป (ดีไซน์ปัจจุบันข้าม First Class เป็น mechanical step แล้ว — เลือกตรงเป็น Second Class ตั้งแต่เลเวล 3) ตาม convention การแยกไฟล์ต่อสาย/subclass ของโปรเจกต์ (ดูตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) สำหรับภาพรวมทั้ง 12 สาย) — คู่ fork ของสายนี้คือ [Wizard.md](Wizard.md) (ไฟล์นี้แทนที่ Mage.md เดิมที่ถูกแยกออกเป็น 2 ไฟล์)
 
-> 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว
-
-## ROX Skill Reference — Mage → Wizard/Sage
-
-> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1300, 1310-1313, 1320-1323) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลาง (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
+> 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว ตาราง Mage (1st Class) ด้านล่างเป็นเนื้อหาที่ใช้ร่วมกันกับ [Wizard.md](Wizard.md) เพราะทั้งคู่สืบทอดมาจาก Mage เดิม — เก็บไว้เป็นวัตถุดิบสำหรับออกแบบ Mastery Branch pool ในอนาคต (ระบบ Mastery Branch เดิมถูกลบไปรอออกแบบใหม่ตามจังหวะเลเวลล่าสุด)
 >
-> *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมของ tier 2nd-branch (Sage line) ต่างจากที่ไฟล์นี้เคยเดาไว้ — Transcendent คือ **Professor** (ไม่ใช่ "Scholar")
+> *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมของ tier Transcendent ของสายนี้คือ **Professor** (ไม่ใช่ "Scholar" ตามที่ตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) ใน Novice-Concept.md เคยเดาไว้)
+
+## ROX Skill Reference — Mage → Sage
+
+> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1300, 1320-1323) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลาง (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
 
 #### Mage (1st Class)
 
@@ -26,81 +26,6 @@
 | Magic Crasher | Active | 10 | Deal (%s% of M.ATK + %s) Neutral magic damage to an enemy on use. |
 
 *Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1300)
-
-#### Wizard (2nd)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| Sight | Active | 10 | Summons a fireball, dealing (%s% of M.ATK + %s) Fire magic damage to enemy units within 3 meters of you and reveals nearby enemy units who are Hiding for 10 seconds. When the Sight effect is active, you can launch Sightrasher to knock back nearby enemy units 4 meters, dealing (%s% of M.ATK + %s) Fire magic damage and stunning them for 2 seconds. |
-| Energy Coat | Active | 10 | Envelop yourself with spiritual energy, reducing your P.DMG and M.DMG received by %s% (every 300 VIT reduces an additional 1%, up to 10%) for 10 seconds. |
-| Storm Gust | Active | 10 | Conjures 7 waves of Storm Gust at the specified location. Each wave deals (%s% of M.ATK + %s) Water magic damage to enemies within the area and has a %s% chance to slow them by %s%. The Slow effect lasts for 3 seconds and can stack up to 3 times. When stacked 3 times, the enemy will be frozen for 3 seconds. Each target can only be slowed and frozen by one Storm Gust at any one time. When a target is frozen by this skill, it will no longer be affected by this skill's Slow effect. This skill's freeze effect will not be removed when the enemy takes damage. |
-| Jupitel Thunder | Active | 10 | Shoot a ball of lightning at an enemy, dealing (%s% of M.ATK + %s) Wind magic damage and knocks them back 4 meters. |
-| Sightrasher | Active | 10 | Knock nearby enemy units back 4 meters using the fireball summoned through Sight, dealing (%s% of M.ATK + %s) Fire magic damage to them and stunning them for 2 seconds. |
-| Lord of Vermilion | Active | 10 | Release a powerful electric shock at the specified location, dealing (%s% of M.ATK + %s) Wind magic damage to enemies within the area 6 times. Has a %s% chance to Blind enemies in range for 10 seconds. |
-| Soul Drain | Toggle | 10 | Increases Max SP by %s% and increases your M.ATK by Max SP/100. |
-| Frost Nova | Active | 10 | Freezes the air nearby, dealing (%s% M.ATK + %s) Water magic damage to enemy units in a 4 meter radius, and has a %s% chance to freeze them for 3 seconds. While frozen, the target's Armor attribute will become Water, their M.DEF will be decreased by 20%, and their HP and SP will not recover naturally. When the frozen effect is dispelled in advance due to being attacked, the Water armor attribute effect will persist for another 3 seconds. |
-| Fire Pillar | Active | 10 | Summons a fire pillar, dealing (%s% of M.ATK (every %s INT increases the damage by 1% up to 880%) + %s) Fire attribute M.DMG to a single enemy target. If the target is ignited, they will be detonated, dealing (%s% of M.ATK (every %s INT increases the damage by 1% up to 1,980%) + %s) Fire attribute M.DMG to all enemy units within 3 meters of them. The detonation does not ignite targets. |
-| Kindle | Toggle | 10 | All Fire attribute skills have a %s% chance to inflict Kindle on the enemy unit on hit. While under the effect of Kindle, targets will take Fire attribute M.DMG equal to %s% of the caster's M.ATK per second for each stack, stacking up to 4 times. Additionally, the enemies receive %s% more Fire attribute DMG from the caster for 8 seconds. |
-| Napalm Beat | Active | 10 | Attack with a blast of telekinetic force, dealing a total of (%s% of M.ATK + %s) Ghost magic damage to enemy units within the area. If there are multiple targets in the area, the damage will be distributed evenly to all of them (up to a maximum of 8 targets). |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1310)
-
-#### High Wizard (Transcendent)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| Napalm Vulcan | Active | 10 | Attacks a target 5 times in a row using Ghost Power, dealing Ghost attribute M.DMG equal to (%s% M.ATK + %s). Napalm Vulcan has a %s% chance to deal double damage. When the target takes damage, there's a %s% chance of being cursed, reducing their Final HP by 15% and healing received by 50% for 6 seconds. |
-| Safety Wall | Active | 10 | Creates a barrier at the specified location. You and all party members will be immune to melee physical damage for %s seconds within the barrier. The barrier can take up to %s hits. |
-| Meteor Storm | Active | 10 | Channels for %s seconds, summoning %s meteors to rain down at the specified location. Each meteor deals (%s% of M.ATK + %s) Fire magic damage to the enemy unit hit and has a %s% chance to stun the target for 3 seconds. |
-| Gravitational Field | Active | 10 | Rapidly amplifies the gravity at the specified location, dealing Earth magic damage equal to %s% of magic attack + %s every 0.5 seconds to enemy units within the area for %s seconds. Damage reduces by 10% each time it deals and has a chance to stun enemies for 2 seconds (chance equal to %s%). If the target was not stunned, slows them by 40% for 4 seconds. |
-| Amplify Magic Power | Active | 10 | After using this skill, increases Final M.DMG Bonus of all party members within 30 meters by %s% for 30 seconds. Loses its effect when the caster is more than 30 meters away. |
-| Abyssal Swamp | Active | 10 | Creates a quagmire with a radius of 4 meters at the specified location. Enemy units within the quagmire will have their Movement Speed decreased by %s%, Final ASPD decreased by %s%, and Final Haste decreased by %s%. The quagmire lasts for 7 seconds, and units in the quagmire have a %s% chance per second for their Armor's attribute to switch to Earth. This Earth attribute effect lasts for 3 seconds. This skill is ineffective against MVP, Mini, and Boss monsters. |
-| Chain Lightning | Active | 10 | Deals (%s% of M.ATK + %s) Wind magic damage to an enemy. If other enemy units are near the target, Chain Lightning will automatically bounce to and hit them, bouncing up to %s times. If there are no other targets to bounce to, Chain Lightning will deal the remaining damage to the current target up to 2 times. |
-| Earth Spike | Active | 10 | Calls earth spikes to erupt from the ground, dealing (%s% M.ATK + %s) Earth magic damage to enemy units within 4 meters. The skill has a %s% chance to stun the target for 3 seconds. |
-| Intense Telekinesis | Toggle | 10 | After casting a Ghost attribute skill, there is a %s% chance to gain 1 stack of Intense Telekinesis, reducing fixed cast time by 0.2 seconds, increasing Ghost attribute enhancement by %s%, and reducing SP consumption by 5%. This effect lasts for 6 seconds and can stack up to 6 times. |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1311)
-
-#### Warlock (3rd)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| White Imprison | Active | 10 | Shrouds an enemy unit in a thin, transparent layer of telekinetic energy. Has a %s% chance to immobilize the target for 5 seconds (has no effect on bosses). While immobilized, increases damage dealt by the caster with other Ghost skills by %s%. Regardless of whether the target is immobilized, once White Imprison dissipates, the target takes Ghost magic damage equal to %s% of M.ATK. |
-| Soul Expansion | Active | 10 | Uses telekinesis to deal Ghost attribute M.DMG equal to %s% of M.ATK to a faraway single enemy target. While the target is under the effect of White Imprison or their HP falls below 30%, this skill deals %s% increased damage and resets its cooldown. |
-| White Barrier | Active | 10 | Shrouds yourself in a thin, transparent layer of telekinetic energy, turning your armor attribute into Ghost and making you immune to damage in all attributes (except damage from MVP, MINI, and Boss) other than Ghost damage for 5 seconds. |
-| Radial Emission | Toggle | 10 | Increases the distance of all ranged skills cast by %s meter(s). |
-| Recognized Spell | Toggle | 10 | Greatly increases the caster's understanding of magic, increasing Magic Penetration by %s% but also increasing SP cost by %s%. |
-| Elemental Enhancement | Toggle | 10 | Each time you use an active skill for your current class that is of the Wind, Earth, Water, or Fire attribute, you gain the corresponding attribute orb. Each attribute orb enhances that attribute by %s%. There can be a maximum of 4 attribute orbs at the same time and 4 of the same attribute orbs. The attribute orbs last 20 seconds. |
-| Tetra Vortex | Active | 10 | Spends all of your current attribute orbs, each dealing magic damage of the corresponding attribute equal to %s% of Magic Attack to the enemy unit. Deals %s% Neutral magic damage instead if there are no attribute orbs. When spending 4 of the same attribute orbs, inflicts the enemy with the following debuffs for 3 seconds: Fire inflicts Burn (loses %s% of Max HP every second, not effective for Bosses/MVPs/MINIs); Water reduces Freeze Resistance by 50% and inflicts Freeze; Earth reduces Petrify Resistance by 50% and inflicts Petrify; Wind reduces Blind Resistance by 50% and inflicts Blind. |
-| Jack Frost | Toggle | 10 | When you deal Water damage to a target frozen by you, their Freeze is removed and you are not granted the effect of Water Armor Extension. You also deal Water magic damage equal to %s% of M.ATK to the target. Removing Freeze does not affect the next application of Freeze. |
-| Electric Induction | Toggle | 10 | Upon dealing damage to the target with Wind skills, there is a %s% chance to inflict the target with Electrify for 6 seconds. When two enemy targets with Electrify come within 4 meters of each other, current flows between them to form a chain lightning which then seeks out another target under the effect of Electrify within 4 meters of them. The chain lightning deals Wind magic damage equal to %s% of M.ATK to each unit under the effect of Electrify and removes the Electrify effect from them. |
-| Confusion Storm | Active | 10 | Creates a lightning storm that follows the target, dealing Wind magic damage equal to %s% of M.ATK every 0.5 seconds to the target and an area of 3 meters around the target. It also inflicts Confuse on all enemies within range. Enemies under the effect of Confuse will move erratically for 6 seconds. Each target can only take damage from one Confusion Storm from the same caster, but can be hit by Confusion Storms from different casters. |
-| Frosty Misty | Active | 10 | Spreads an icy fog, with a %s% chance of converting enemy armor attributes to water attributes for 6 sec. Enemies in range are also inflicted with Frost Misty, reducing their Movement Speed by %s% for the duration of the effect and granting a %s% chance of being Frozen for 3 sec after taking damage. Frost Misty's effect lasts for 6 sec and is cleared after triggering Frozen. |
-| Earth Strain | Active | 10 | Unleashes a powerful quake within a specified range, dealing Earth Magic Damage equal to %s% Magic Attack with a %s% chance of inflicting Petrify for 3 sec. Targets within range will be forced towards the center of the attack. |
-| Flame Shock | Active | 10 | Shrouds yourself in the power of flames, charging 8 meters in the specified direction and dealing Fire magic damage equal to %s% of M.ATK to each enemy unit in your path. You also leave behind a 3-meter-wide Path of Fire, inflicting Burn on enemies within it and causing them to lose %s% of their Max HP every second (not effective against Boss monsters, MVP, MINI). The Path of Fire lasts 7 seconds. Targets on the path will be slowed by a further 50%. This skill can be recharged 2 times. |
-| Flame Guard | Toggle | 10 | While within the range of the Path of Fire or Fire Wall, grants yourself Flame Guard. While under the effect of Flame Guard, grants yourself a shield equal to %s% of Max HP for 6 seconds. Triggers once every 12 seconds. |
-| Sienna Execrate | Toggle | 10 | When you inflict Earth damage on a target that was petrified by you, the target will get out of the Petrify state immediately and receive Earth attribute M.DMG equal to %s% of Max HP, up to %s% of ATK. The hit target will not enter the Earth Armor effect. Forcibly removing Petrify from a petrified target will curse them. Their Max HP is reduced by 15%, and healing received is reduced by 50% for 6 seconds. |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1312)
-
-#### Arch Mage (4th)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| Climax | Toggle | 10 | When you have 4 identical elemental energy orbs, you enter the Climax state, increasing your corresponding elemental power by %s%, Debuff Penetration by %s, and Debuff Enhancement by %s. When you have enough energy orbs under the effect of Climax, casting Crimson Arrow, All Bloom, Rock Down, Violent Quake, Frozen Slash, Rain of Crystal, Destructive Hurricane, or Storm Cannon no longer grants energy orbs but instead consumes them to add extra effect to the skills. |
-| Crimson Arrow | Active | 10 | Launches a fire arrow at the target, dealing Fire attribute M.DMG equal to %s% of M.ATK. While under the effect of Climax, the fire arrow explodes on impact, dealing extra damage equal to %s% of the target's lost HP (capped at 1,400% M.ATK). Consumes 2 Fire energy orbs when cast. |
-| All Bloom | Active | 10 | Summons a flower field at the designated location, where flame buds continuously explode, dealing Fire attribute M.DMG equal to %s% of M.ATK to all targets within a 6-meter radius every 0.5 seconds. While under the effect of Climax, the exploding flame buds will trigger the target's Kindle effect, dealing extra Fire attribute M.DMG equal to 0.9% of Max HP to the target (capped at 250%) for 4 seconds. Consumes 4 Fire energy orbs when cast. |
-| Rock Down | Active | 10 | Hurls a boulder at the target, dealing Earth attribute M.DMG equal to %s% of M.ATK. While under the effect of Climax, it deals extra Earth attribute M.DMG equal to %s% of M.ATK. After Rock Down deals damage, there's a (30% + INT/%s x 1%) chance to inflict Curse to the target (the increased chance from INT will not exceed 40%). Consumes 2 Earth energy orbs when cast. |
-| Violent Quake | Active | 10 | Triggers an earthquake at the target to make the rocks randomly emerge from the ground, dealing Earth attribute M.DMG equal to %s% of M.ATK within a 6-meter radius every 1 second for 4 seconds. While under the effect of Climax, the rocks emerge at 2 times the original speed and there's a (20% + INT/%s x 1%) chance to inflict Petrify to the target (the increased chance from INT will not exceed 30%). Consumes 4 Earth energy orbs when cast. |
-| Frozen Slash | Active | 10 | Unleashes 5 sharp ice shards at targets within 6 meters, dealing Water attribute M.DMG equal to %s% of M.ATK to each target. While under the effect of Climax, it deals extra Water attribute M.DMG equal to %s% of M.ATK. After Frozen Slash deals damage, there's a (20% + INT/%s x 1%) chance to inflict Frost Misty to the target (the increased chance from INT will not exceed 40%). Consumes 2 Water energy orbs when cast. |
-| Rain of Crystal | Active | 10 | Calls down the rain of crystals centered around you, dealing Water attribute M.DMG equal to %s% of M.ATK to all enemies within a 6-meter radius every 0.5 second for 4 seconds. While under the effect of Climax, the duration is extended by 2 seconds. After dealing damage, there's a (20% + INT/%s x 1%) chance to inflict Freeze to the target (the increased chance from INT will not exceed 30%). Consumes 4 Water energy orbs when cast. |
-| Destructive Hurricane | Active | 10 | Unleashes a tornado around you, dealing Wind attribute M.DMG equal to %s% of M.ATK to all enemies within a 6-meter radius. While under the effect of Climax, it deals extra Wind attribute M.DMG equal to %s% of M.ATK. After Destructive Hurricane deals damage, it knocks back enemies 6 meters and launches them into the air for 1.5 seconds. Consumes 2 Wind energy orbs when cast. |
-| Storm Cannon | Active | 10 | Channels for 4 seconds, continuously launching storms at the target and dealing Wind attribute M.DMG equal to %s% of M.ATK to all targets along the straight line every 0.5 seconds. While under the effect of Climax, the storm range is enlarged by 4 and there's a (20% + INT/%s x 1%) chance to inflict Blind to the target (the increased chance from INT will not exceed 30%). Consumes 4 Wind energy orbs when cast. |
-| Soul Vulcan Strike | Toggle/Active | 10 | When Intense Telekinesis is fully stacked, Soul Strike is replaced by Soul Vulcan Strike. After a 1.2-second cast time, Soul Vulcan Strike deals Ghost attribute M.DMG equal to %s% to the target. (Appears twice in the source, once as a Toggle entry and once as an Active entry, with identical text — likely a passive-enabler + active-cast pair.) |
-| Ice Shackles | Toggle | 10 | Frozen targets will no longer have the Freeze effect removed immediately upon taking damage. The Freeze effect will only be removed once the accumulated damage equals %s% of the target's Max HP. Jack Frost can still instantly remove the target's Freeze effect. |
-| Rock Chains | Toggle | 10 | Petrified targets will no longer have the Petrify effect removed immediately upon taking damage. The Petrify effect will only be removed once the accumulated damage equals %s% of the target's Max HP. Sienna Execrate can still instantly remove the target's Petrify effect. |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1313)
 
 #### Sage (2nd)
 

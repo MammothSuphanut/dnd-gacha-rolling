@@ -69,17 +69,17 @@
 | 19 | +6 | 74 | Ability Score Improvement |
 | 20 | +6 | 80 | - |
 
-**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool สะสมสะสมทุกเลเวล = รวม Proficiency Bonus ของทุกเลเวลที่ผ่านมา (universal ทุก Job, ไม่มี HP-swap) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — **cost curve ต่อการใช้ยังไม่ตกลง** (Linear จะ overpower เพราะ pool สะสมใหญ่ Escalating น่าจะพอดีกว่า ดูรายละเอียดใน [Mastery-Branches.md](Mastery-Branches.md) เมื่อออกแบบเสร็จ) ฟื้นเต็มตอน Long Rest, Short Rest คืนบางส่วน (สัดส่วนยังไม่ระบุ)
+**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool สะสมสะสมทุกเลเวล = รวม Proficiency Bonus ของทุกเลเวลที่ผ่านมา (universal ทุก Job, ไม่มี HP-swap) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — **cost curve ต่อการใช้ยังไม่ตกลง** (Linear จะ overpower เพราะ pool สะสมใหญ่ Escalating น่าจะพอดีกว่า รอออกแบบระบบ Mastery Branch ใหม่ก่อนสรุป — ดูหมายเหตุด้านล่าง) ฟื้นเต็มตอน Long Rest, Short Rest คืนบางส่วน (สัดส่วนยังไม่ระบุ)
 
 **หมายเหตุจังหวะ**: เลเวล 3/6/9/13/17 คือ "Job Change" milestone ใหญ่ 5 จุด แมปตรงกับ 5 tier จริงของ RO ทั้งหมด (First Class → Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — เลเวลอื่นทั้งหมด (1/2/5/7/10/11/14/15/18/20) ยังไม่กำหนด feature ไว้ ("-") รอออกแบบเพิ่มทีหลัง (ทั้ง Class Features พื้นฐานของ Novice เองและเนื้อหา Job Paths แต่ละสาย ถูกลบออกไปแล้วเพื่อออกแบบใหม่ให้ตรงจังหวะนี้)
 
-> 🚧 [Mastery-Branches.md](Mastery-Branches.md) ยังอ้างอิงจังหวะเก่า (3/5/7/10/11/14/15/17/19) อยู่ — ต้องปรับให้ตรงกับตารางนี้ก่อนใช้งานจริงเช่นกัน
+> 🚧 ระบบ Mastery Branch (เดิมอยู่ที่ Mastery-Branches.md) ถูกลบไปแล้ว รอออกแบบใหม่ทั้งจังหวะ Mastery Point และเนื้อหา pool ให้ตรงกับตารางเลเวลนี้ก่อนใช้งานจริง
 
 ## Job Paths
 
 Novice เลือก Job (subclass) ตอนเลเวล 3 จากทั้งหมด 7 สาย (6 สายหลัก + Super Novice) — แต่ละสายมี milestone ใหญ่ที่เลเวล 3/6/9/13/17 ตรงกับ First/Second/Transcendent Second/Third/Fourth Class ตามตาราง Level Progression ด้านบน (เนื้อหารายละเอียดของแต่ละสายยังไม่ได้เขียน รอออกแบบใหม่)
 
-**เพิ่มเติม**: นอกจาก feature ตายตัวของแต่ละ Job แล้ว ยังมีระบบ **[Mastery Branches](Mastery-Branches.md)** — pool เทคนิคเสริมที่ล็อกด้วยเงื่อนไข Job+Level (เช่น "Knight 7+") ให้เลือกเก็บสะสมได้ตลอดทาง ทำหน้าที่แทน spell list ของ full caster ให้ class นี้มีความลึกในการปรับ build โดยไม่ใช้ spell ของ D&D
+**เพิ่มเติม**: นอกจาก feature ตายตัวของแต่ละ Job แล้ว เดิมมีระบบ Mastery Branches — pool เทคนิคเสริมที่ล็อกด้วยเงื่อนไข Job+Level (เช่น "Knight 7+") ให้เลือกเก็บสะสมได้ตลอดทาง ทำหน้าที่แทน spell list ของ full caster — **ระบบนี้ถูกลบไปแล้วรอออกแบบใหม่** ให้ตรงกับแนวทาง "ข้าม First Class เป็น mechanical step" ที่ตกลงล่าสุด (First Class เดิมของแต่ละสายจะเข้าถึงได้ผ่าน Mastery Branch แทน ไม่ใช่ subclass feature ตายตัว)
 
 ### ROX Job Tree Reference (ทางการ)
 
@@ -109,11 +109,11 @@ Novice เลือก Job (subclass) ตอนเลเวล 3 จากทั
 
 รวบรวม skill จริงต่อ Job tier ไว้เป็นวัตถุดิบสำหรับออกแบบ feature ของแต่ละ Job Path ทีหลัง — **ยึดตาม ROX เป็นหลัก** ตามที่ระบุ แต่ ROX สืบทอด skill ส่วนใหญ่มาจาก RO classic (skill ชื่อเดียวกันในหลายเวอร์ชัน) จึงอ้างอิง RO classic database (ratemyserver, iRO Wiki, Divine Pride, Ragnarok Fandom Wiki, renewal.playragnarok.com) เสริมในจุดที่หาข้อมูล ROX โดยตรงไม่ได้ — **ครบทั้ง 12 สายย่อย ทุก tier รวม Fourth Class แล้ว** (อัปเดตล่าสุด: ปิดช่องว่างเดิมของ Shadow Cross, Abyss Chaser, Biolo, Scholar, Elemental Master ครบแล้ว) **และเพิ่ม 1st Class (Swordsman/Mage/Acolyte/Thief/Archer/Merchant เอง ก่อนเปลี่ยนอาชีพ) ที่เคยขาดไปครบทั้ง 6 สายแล้วเช่นกัน**
 
-> **แยกเป็นไฟล์ต่อสาย** (6 สายหลัก) ตาม convention การแยกไฟล์ต่อสาย/subclass ของโปรเจกต์ — คำอธิบายเป็นการสรุปคร่าวๆจากชื่อ/ข้อมูลที่ค้นเจอ ไม่ใช่ตัวเลขบาลานซ์จริง ดูหมายเหตุการค้นข้อมูลรวม (ROX vs RO classic source) ท้ายไฟล์ [Merchant.md](Merchant.md)
+> **แยกเป็นไฟล์ต่อ fork** (12 ไฟล์ — 1 ไฟล์ต่อ 1 Second Class ขึ้นไป) ตาม convention การแยกไฟล์ต่อสาย/subclass ของโปรเจกต์ — ดีไซน์ปัจจุบันข้าม First Class เป็น mechanical step แล้ว (เลือกตรงเป็น Second Class ตั้งแต่เลเวล 3) จึงแตกจาก 6 ไฟล์รวมเดิมเป็น 12 ไฟล์นี้ แต่ละคู่ fork ยังเก็บตาราง First Class เดิมไว้ซ้ำกันทั้งสองไฟล์เป็นวัตถุดิบ Mastery Branch — คำอธิบายเป็นการสรุปคร่าวๆจากชื่อ/ข้อมูลที่ค้นเจอ ไม่ใช่ตัวเลขบาลานซ์จริง ดูหมายเหตุการแก้ไขชื่ออาชีพที่คลาดเคลื่อนจากตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านบนในแต่ละไฟล์ที่เกี่ยวข้อง (Sage.md, Monk.md, Bard.md, Blacksmith.md, Alchemist.md)
 
-- [Swordsman.md](Swordsman.md) → Swordsman (1st) → Knight/Crusader (2nd) → Lord Knight/Paladin (Transcendent) → Rune Knight/Royal Guard (3rd) → Dragon Knight/Imperial Guard (4th) — มี Mastery Branch ตัวอย่างครบใน [Mastery-Branches.md](Mastery-Branches.md)
-- [Mage.md](Mage.md) → Mage (1st) → Wizard/Sage (2nd) → High Wizard/Scholar (Transcendent) → Warlock/Sorcerer (3rd) → Arch Mage/Elemental Master (4th)
-- [Acolyte.md](Acolyte.md) → Acolyte (1st) → Priest/Monk (2nd) → High Priest/Champion (Transcendent) → Arch Bishop/Sura (3rd) → Cardinal/Inquisitor (4th)
-- [Thief.md](Thief.md) → Thief (1st) → Assassin/Rogue (2nd) → Assassin Cross/Stalker (Transcendent) → Guillotine Cross/Shadow Chaser (3rd) → Shadow Cross/Abyss Chaser (4th)
-- [Archer.md](Archer.md) → Archer (1st) → Hunter/Bard-Dancer (2nd) → Sniper/Minstrel-Gypsy (Transcendent) → Ranger/Maestro-Wanderer (3rd) → Windhawk/Troubadour-Trouvere (4th)
-- [Merchant.md](Merchant.md) → Merchant (1st) → Blacksmith/Alchemist (2nd) → Mastersmith/Biochemist (Transcendent) → Mechanic/Geneticist (3rd) → Meister/Biolo (4th)
+- Swordsman → [Knight.md](Knight.md) (Knight → Lord Knight → Rune Knight → Dragon Knight) / [Crusader.md](Crusader.md) (Crusader → Paladin → Royal Guard → Imperial Guard)
+- Mage → [Wizard.md](Wizard.md) (Wizard → High Wizard → Warlock → Arch Mage) / [Sage.md](Sage.md) (Sage → Professor → Sorcerer → Elemental Master)
+- Acolyte → [Priest.md](Priest.md) (Priest → High Priest → Archbishop → Cardinal) / [Monk.md](Monk.md) (Monk → Champion → Shura → Inquisitor)
+- Thief → [Assassin.md](Assassin.md) (Assassin → Assassin Cross → Guillotine Cross → Shadow Cross) / [Rogue.md](Rogue.md) (Rogue → Stalker → Shadow Chaser → Abyss Chaser)
+- Archer → [Hunter.md](Hunter.md) (Hunter → Sniper → Ranger → Wind Hawk) / [Bard.md](Bard.md) (Bard → Clown → Minstrel → Troubadour)
+- Merchant → [Blacksmith.md](Blacksmith.md) (Blacksmith → Whitesmith → Mechanic → Meister) / [Alchemist.md](Alchemist.md) (Alchemist → Creator → Genetic → Biolo)

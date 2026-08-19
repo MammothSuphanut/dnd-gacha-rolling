@@ -1,14 +1,14 @@
-# Novice Job Line: Archer → Hunter/Bard-Dancer
+# Novice Job Line: Bard (Archer → Bard → Clown → Minstrel → Troubadour)
 
-> ส่วนหนึ่งของ [Novice-Concept.md](Novice-Concept.md) — แยกออกมาเป็นไฟล์เฉพาะสาย ตาม convention การแยกไฟล์ต่อสาย/subclass ของโปรเจกต์ (ดูตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) สำหรับภาพรวมทั้ง 6 สาย)
+> ส่วนหนึ่งของ [Novice-Concept.md](Novice-Concept.md) — แยกออกมาเป็นไฟล์เฉพาะสาย 1 ไฟล์ต่อ 1 fork ตั้งแต่ Second Class เป็นต้นไป (ดีไซน์ปัจจุบันข้าม First Class เป็น mechanical step แล้ว — เลือกตรงเป็น Second Class ตั้งแต่เลเวล 3) ตาม convention การแยกไฟล์ต่อสาย/subclass ของโปรเจกต์ (ดูตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) สำหรับภาพรวมทั้ง 12 สาย) — คู่ fork ของสายนี้คือ [Hunter.md](Hunter.md) (ไฟล์นี้แทนที่ Archer.md เดิมที่ถูกแยกออกเป็น 2 ไฟล์)
 
-> 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว
-
-## ROX Skill Reference — Archer → Hunter/Bard-Dancer
-
-> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1500, 1510-1513, 1520-1523) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) Sniper และ Minstrel มี Talent skill กลางเพิ่มเติม (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
+> 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว ตาราง Archer (1st Class) ด้านล่างเป็นเนื้อหาที่ใช้ร่วมกันกับ [Hunter.md](Hunter.md) เพราะทั้งคู่สืบทอดมาจาก Archer เดิม — เก็บไว้เป็นวัตถุดิบสำหรับออกแบบ Mastery Branch pool ในอนาคต (ระบบ Mastery Branch เดิมถูกลบไปรอออกแบบใหม่ตามจังหวะเลเวลล่าสุด)
 >
-> *หมายเหตุชื่ออาชีพ*: ROX ไม่มี Dancer แยกสายจาก Bard — สายที่ 2 ของ Archer line ใช้ชื่อ **Bard → Clown → Minstrel → Troubadour** ทั้งหมด (ไฟล์นี้เคยเดาว่า Transcendent = "Minstrel/Gypsy" และ 3rd = "Maestro/Wanderer" ซึ่งไม่ตรงกับฐานข้อมูลจริง — Transcendent คือ **Clown**, 3rd คือ **Minstrel**)
+> *หมายเหตุชื่ออาชีพ*: ROX ไม่มี Dancer แยกสายจาก Bard — สายที่ 2 ของ Archer line ใช้ชื่อ **Bard → Clown → Minstrel → Troubadour** ทั้งหมด (ไม่ใช่ "Bard/Dancer" → "Minstrel/Gypsy" → "Maestro/Wanderer" → "Troubadour/Trouvere" ตามที่ตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) ใน Novice-Concept.md เคยเดาไว้ — ชื่อ Transcendent คือ **Clown**, ชื่อ 3rd คือ **Minstrel**)
+
+## ROX Skill Reference — Archer → Bard
+
+> ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1500, 1520-1523) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) Minstrel มี Talent skill กลางเพิ่มเติม (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
 
 #### Archer (1st Class)
 
@@ -24,79 +24,6 @@
 | Elemental Arrow | Toggle | 10 | Normal attacks, Double Strafe, Charge Arrow, Multi Firing, Focused Shot, Sharp Shooting, Arrow Shower, Musical Strike, Throw Arrow, Severe Rainstorm, Arrow Vulcan, Rhythm Shooting, and Rose Blossom can be used in conjunction with Elemental Bolts, increasing skill damage by %s%. When using Exploding Arrow, Silver Arrow, Freezing Arrow, Wind Arrow, and Earth Arrow, your damage type will change to Fire, Holy, Water, Wind, and Earth, respectively. |
 
 *Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1500)
-
-#### Hunter (2nd)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| Improve Concentration | Active | 10 | Increase your AGI by %s and DEX by %s for %s seconds. |
-| Falconry Mastery | Toggle | 10 | After renting a falcon, normal attacks have a chance to trigger a falcon attack. Triggering this effect deals ((Steel Crow damage + (INT/8)^1.8 + DEX x 2) × %s + %s) Neutral attribute P.DMG that ignores defense. The initial falcon attack rate is 10%. The falcon's initial size modifier against enemies is 100%. |
-| Claymore Trap | Active | 10 | Deploys a Claymore Trap with a damage radius of 3 meters and a trigger radius of 2 meters at the specified location. After detonating, deals Fire attribute P.DMG equal to ((DEX + 100) x (10 + INT/2) x %s% + %s) to all enemies within the area and inflicts the Kindle effect on them for 5 seconds. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
-| Beast Bane | Toggle | 10 | Increases damage dealt to Brute, Insect, and Fish monsters by %s%. Every 80 DEX increases an additional %s% damage (up to 50%). |
-| Blitz Beat | Active | 10 | Can only be used if you own a falcon. Commands your falcon to attack an enemy unit, dealing ((Steel Crow damage + (INT/8)^1.8 + DEX × 2) × %s + %s) Neutral P.DMG that ignores defense and increases your ASPD by 30 for 12 seconds. Can stack up to 5 times. The falcon's initial size modifier against enemies is 100%. |
-| Electric Shock | Active | 10 | Deploys an Electric Shock trap with a damage radius of 3 meters and a trigger radius of 2 meters at the specified location. After detonating, deals Wind attribute P.DMG equal to ((DEX + 100) x (10 + INT/2) x %s% + %s) to all enemies within the area. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
-| Steel Crow | Toggle | 10 | When the falcon strikes, deals Neutral attribute P.DMG equal to (%s + (INT or DEX) x %s%) that ignores defense. For every 1 additional INT, your P.ATK is increased by 4. |
-| Spring Trap | Active | 10 | Increases trap damage by %s%. Uses all detonable traps that have been deployed. |
-| Focused Shot | Active | 10 | Aim and fire an arrow, dealing weapon attribute P.DMG equal to (%s% of P.ATK + %s) to an enemy and marking the target for 10 seconds. The Mark effect can be stacked up to 5 times. Each stack of the Marks increases the P.DMG dealt to the target by 8% (can be stacked with Multi Firing Marks). This skill can be used in conjunction with Elemental Arrow. |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1510)
-
-#### Sniper (Transcendent)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| Wind Walk | Toggle | 10 | Increases your Movement Speed by %s% and Dodge by %s%. |
-| Detect | Active | 5 | Your falcon actively searches for enemies. Reveals stealthed units within 8 meters and inflicts a Falcon's Mark on them for 10 seconds. Your normal attacks and skills deal %s% more damage to units with Falcon's Mark. All monsters within the area will notice your falcon, and you gain 1 Threat. |
-| Sandman | Active | 10 | Deploys a Sandman trap with an effect radius of 3 meters and trigger radius of 2 meters at the specified location. After detonating, deals ((DEX + 100) × (10 + INT/10) × %s%) + %s Neutral physical damage to all enemies in range and has a %s% chance to make the target sleep for %s seconds. After the Sleep state ends, the unit that triggered the Sandman trap becomes immune to Sleep for 1.5 seconds. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
-| True Sight | Active | 10 | Increases sniping ability in a short period of time. After casting the skill, increases six basic attributes by 10 points each, P.ATK by %s%, Crit DMG Bonus by %s%, and Final Physical Penetration by %s%. Every 50 DEX adds: 0.25% P.ATK, 1% Crit DMG, and 0.5% Final Physical Penetration. Lasts 15 seconds. |
-| Falcon Assault | Active | 10 | Sends your falcon to attack an enemy, dealing ((Steel Crow damage + (INT/8)^1.8 + DEX × 2) × %s + %s) Neutral attribute P.DMG that ignores defense. The falcon's initial size modifier against enemies is 100%. |
-| Land Mine | Active | 10 | Deploys a Land Mine with a damage radius of 3 meters and a trigger radius of 2 meters at the specified location. After detonating, deals Earth attribute P.DMG equal to ((DEX + 100) x (10 + INT/2) x %s% + %s) to all enemies within the area. The trap lasts for 180 seconds. Up to 7 traps can be deployed at the same time. |
-| Multi Firing | Active | 10 | While having multiple arrows in your hand, fire 7 arrows to the 60° fan-shaped area in front of you and knock back the hit target for 2 meters. Each arrow deals weapon attribute physical damage equal to (%s% of Physical Attack) to an enemy and marks the target for 10 seconds. The Mark effect can be stacked up to 5 times. Each stack of the Marks increases the physical damage dealt to the target by 8% (can be stacked with Focused Shot). This skill can be used in conjunction with Elemental Arrow. |
-| Intimidation | Toggle | 10 | When using Falcon Assault and Blitz Beat, there is a %s% chance to peck the enemy unit, stunning it for %s second(s), during which your normal attacks and skills deal %s% more damage. |
-| Trap Research | Toggle | 10 | Increases Intelligence by %s and the maximum number of traps that can be deployed at the same time by %s. |
-| Sharp Shooting | Active | 10 | Charges up and fires a powerful arrow at a target, dealing (%s% P.ATK + %s) Physical Damage of your Weapon's attribute to enemies in its path and knocking them back 4 meters. This skill has a 30% chance to increase skill damage by an additional 100%. Can be used in conjunction with Elemental Bolt. |
-| Ace Tamer | Toggle | 10 | Whenever a beast attacks, you gain a stack of Ace Tamer. When in the Ace Tamer state, your ATK increases by %s% for 7 seconds. Ace Tamer can stack up to 3 times. |
-| Wild Awakening | Toggle | 10 | Increases your LUK by %s and chance to trigger a beast attack by %s%. |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1511)
-
-#### Ranger (3rd)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| Warg Rider | Toggle | 10 | Mounts a Warg that increases MSPD by 4 points in battle (2 points in PVP). Reduces ASPD by %s% and Final Haste by %s% while increasing P.ATK by %s%. When not mounted on any combat mount, a Warg will be summoned to follow by your side. |
-| Warg Strike | Active | 10 | Commands your Warg to dash forward 12 meters in the desired direction, dealing Neutral attribute P.DMG equal to %s% P.ATK to all enemies in its path and reducing MSPD by %s. To cast, mount a Warg first. |
-| Warg Bite | Active | 10 | Commands a Warg to savagely bite a target, dealing Neutral attribute P.DMG equal to %s% of P.ATK, with a 50% chance of inflicting Bleed. While in effect, the target loses HP equal to %s% of Max HP per second for 4 seconds (does not apply to MVP, MINI, or Boss). Can only be triggered when the Warg is following. The Warg's initial size modifier against enemies is 100%. |
-| Prowling Wolf | Toggle | 10 | Grants a 2% chance of triggering Prowling Wolf when dealing a normal attack. Once triggered, your Warg launches a vicious attack, dealing Neutral attribute P.DMG equal to %s% of P.ATK and an additional %s% when the target's HP is below 20%. Can only be triggered when the Warg is following. The Warg's initial size modifier against enemies is 100%. |
-| Aimed Bolt | Active | 10 | Grants Aimed Bolt, during which you are immobilized. After drawing your bowstring back, you then fire a powerful arrow at one target, dealing weapon attribute P.DMG equal to %s% of P.ATK. Every 4 DEX increases the damage coefficient of this skill by 1% of P.ATK, up to 3,000%. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. Can be used with Elemental Arrow. If the hit target's HP is below 50%, the cooldown of Aimed Bolt is reduced by 4 seconds. |
-| Arrow Storm | Active | 10 | Spins rapidly while firing continuously, dealing 6 attacks to enemies within a 6-meter radius for 3 seconds and inflicting weapon attribute P.DMG equal to %s% of P.ATK. Can be used with Elemental Arrow. If your Final Crit is higher than Final P.PEN, this skill may trigger critical damage. The healing gained from Physical Lifesteal through this skill's damage is increased by %s%. This skill can be cast while moving and is not affected by Vulture's Eye. |
-| Fear Breeze | Toggle | 10 | Grants Fear Breeze upon triggering a crit, increasing Crit Damage Bonus by %s% for 2 sec. Can be stacked up to 4 times. |
-| Splitting Arrows | Toggle | 10 | A normal attack that splits into multiple arrows, dealing %s% Splash Damage to up to 2 enemies in a 3-meter range. Arrows that deal Splash Damage can deal crits but cannot trigger Falconry Mastery or Prowling Wolf. |
-| Precision Shot | Active | 10 | Use to grant Aimed Fire, reducing Final Attack Speed by %s%. While in effect, each normal attack unleashes 3 arrows on a target, dealing weapon-based Physical Damage equal to %s% Physical Attack per arrow, with a chance of triggering a crit, Falconry Mastery, or Prowling Wolf for 10 sec. May be paired with Elemental Arrows. Splitting Arrows cannot be triggered for the duration of the skill. |
-| No Limits | Active | 10 | Continuously fire at enemies within a 60° fan-shaped area in front of you for 3 seconds, dealing weapon attribute physical damage equal to %s% of Physical Attack per arrow. This skill can be used in conjunction with Elemental Arrow. When a target is hit by no less than 5 arrows, they will be Wounded, reducing their healing received by 50% (including Lifesteal) for 5 seconds. |
-| Elemental Trap | Active | 10 | Extracts the elemental power of an arrow, fusing it with a trap that covers a 4-meter radius. Upon consuming an Arrow and a Trap, the arrow's attributes are granted to the elemental trap, after which, if an enemy triggers it, the armor attributes of all enemies within range will be synchronized with the trap's elemental attribute (does not apply to Boss, MINI, and MVP targets). This effect lasts for 3 sec, and the trap itself can exist for up to %s sec, with a maximum of 7 traps at one time (including all other trap types). |
-| Machine Expert | Toggle | 10 | A modified trap, increasing the trigger area of effect by 2 meters and granting increased Movement Speed while pursuing the triggerer. Upon triggering the trap, it will use %s Movement Speed to pursue the enemy before exploding. Does not apply to Elemental Trap. |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1512)
-
-#### Wind Hawk (4th)
-
-| Skill | Type | Max Lv | Description |
-|---|---|---|---|
-| Hawk Boomerang | Active | 10 | When you have 1 stack of Ace Tamer, command your falcon to snipe the target by consuming every stack of Ace Tamer. Each 1 stack of Ace Tamer consumed deals 1 hit, with each hit dealing ((Steel Crow damage + (INT/8)^1.8 + DEX x 2) x %s) Neutral attribute P.DMG that ignores defense. The falcon's initial size modifier against enemies is 100%. |
-| Hawk Mastery | Toggle | 10 | Increases the range of Blitz Beat, Falcon Assault, and Hawk Boomerang by %s meters. When your DEX is higher than INT, Falconry Mastery, Blitz Beat, Falcon Assault, and Hawk Boomerang deal %s times, %s times, %s times, and %s times the Neutral attribute DMG equal to ((Steel Crow damage + (DEX/8)^1.8 + INT x 2) that ignores defense, respectively. When you have a longbow equipped and your Final Crit is higher than Final P.PEN, the damage dealt by Falconry Mastery, Blitz Beat, Falcon Assault, and Hawk Boomerang can trigger critical hits. |
-| Nature Friendly | Toggle | 10 | Rents a wind hawk for combat. When normal attacks do not trigger Falconry Mastery, there is a %s% chance to trigger Blitz Beat, Falcon Assault, and Hawk Boomerang. This effect triggers once every 3 seconds. Nature Friendly cannot be triggered by the splash effect of Splitting Arrows, and it won't apply the Intimidation effect when triggered. Precision Shot can trigger the attack effect. If your INT reaches 3,000 or higher, every 1 additional INT increases your P.ATK by 4. |
-| Wolf Fang | Toggle | 10 | Increases the range of Warg Bite by %s meters. There's a %s% chance to trigger Warg Bite when Wind Warg is in follow mode and the normal attack doesn't trigger Prowling Wolf. When you have a longbow equipped and your INT is higher than DEX, the skill coefficient of Prowling Wolf, Warg Strike, and Warg Bite is increased by 1% (up to %s%) for every %s INT you possess. When you have a longbow equipped and your Final Crit is higher than Final P.PEN, the damage of Prowling Wolf, Warg Strike, and Warg Bite can trigger critical hits. |
-| Hawk Rush | Active | 10 | Mounts the wind hawk to take Flight for 6 seconds, increasing MSPD by 5. During the flight, you can't attack and are immune to all ongoing ground effects from enemies (except those from MVP, MINI, and Instance Boss units). You also receive a shield equal to %s% of your Max HP. When time is up, or the shield is depleted, the Flight is canceled immediately. Upon landing, enemies within 6 meters are inflicted with Blind for 3 seconds, and you enter Bombard for 6 seconds, increasing your damage against enemies with less than %s% HP by %s%. |
-| Wind Sign | Toggle | 10 | When dealing damage to enemies with Aimed Bolt, No Limits, Arrow Storm, Gale Storm, or Crescive Bolt, there's a %s% chance to apply Wind Sign to the target. While marked, the target cannot enter Hiding. The Wind Sign lasts for 5 seconds and can only be triggered once every 20 seconds. |
-| Calamity Gale | Toggle | 10 | When Wind Sign is applied to the target, Calamity Gale is summoned at the target's location. Calamity Gale will follow the target, dealing weapon attribute P.DMG equal to %s% of P.ATK every 0.5 seconds to all enemies within a 3-meter radius. Calamity Gale lasts for 5 seconds and up to 8 Calamity Gale can be summoned at the same time. |
-| Gale Storm | Active | 10 | Launches the destructive Arrow Storm, dealing weapon attribute P.DMG equal to %s% of P.ATK to targets within a 6-meter radius. For each 1 additional target hit, Gale Storm's damage increases by 20%, up to 100%. Hitting 6 or more targets reduces the cooldown by 8 seconds. |
-| Crescive Bolt | Active | 10 | Creates a sniper zone at your position, allowing you to cast Crescive Bolt 5 times and deal weapon attribute P.DMG equal to %s% of P.ATK to all enemies on the path each time. Consumes 10% Max SP per cast. Each successive cast increases the damage by %s%. The sniper zone lasts for 12 seconds but disappears if you leave. |
-| Advanced Trap | Toggle | 10 | For every %s INT you have, the damage of traps is increased by 1%, up to %s%, and the range of traps is increased by 2 meters. |
-| Elemental Arrow Array | Active | 10 | Shoots at a targeted area to create a 4-meter radius Elemental Arrow Array. Consumes arrows on use, and the array adopts the element of the current arrow type. Enemies in the array take extra %s% elemental damage from party members. The array lasts for 8 seconds and doesn't count toward the trap limit. |
-| Gale Whistle | Type 5 | 10 | Wind Hawk can ride their summoned Wind Warg in battle. Using the whistle automatically mounts the Wind Warg. Using the whistle again will dismount, switching the Wind Warg to follow mode, and you can remount after 5 seconds. When Wind Warg is in follow mode, the chance to trigger Prowling Wolf is increased by %s%. |
-
-*Source:* [ROXPEDIA Job Database](https://roxpedia.com/job-database/detail/1513)
 
 #### Bard (2nd)
 
