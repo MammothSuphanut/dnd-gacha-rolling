@@ -46,28 +46,30 @@
 
 ## Level Progression
 
-| เลเวล | Proficiency Bonus | Feature |
-|---|---|---|
-| 1 | +2 | - |
-| 2 | +2 | - |
-| 3 | +2 | **Job Change: First Class** (เลือก subclass) |
-| 4 | +2 | Ability Score Improvement |
-| 5 | +3 | - |
-| 6 | +3 | **Job Change: Second Class** (subclass — จุดแตกสายส่วนใหญ่) |
-| 7 | +3 | - |
-| 8 | +3 | Ability Score Improvement |
-| 9 | +4 | **Job Change: Transcendent Second Class** (subclass) |
-| 10 | +4 | - |
-| 11 | +4 | - |
-| 12 | +4 | Ability Score Improvement |
-| 13 | +5 | **Job Change: Third Class** (subclass) |
-| 14 | +5 | - |
-| 15 | +5 | - |
-| 16 | +5 | Ability Score Improvement |
-| 17 | +6 | **Job Change: Fourth Class** (subclass — capstone ของสาย) |
-| 18 | +6 | - |
-| 19 | +6 | Ability Score Improvement |
-| 20 | +6 | - |
+| เลเวล | Proficiency Bonus | Mana | Feature |
+|---|---|---|---|
+| 1 | +2 | 2 | - |
+| 2 | +2 | 4 | - |
+| 3 | +2 | 6 | **Job Change: First Class** (เลือก subclass) |
+| 4 | +2 | 8 | Ability Score Improvement |
+| 5 | +3 | 11 | - |
+| 6 | +3 | 14 | **Job Change: Second Class** (subclass — จุดแตกสายส่วนใหญ่) |
+| 7 | +3 | 17 | - |
+| 8 | +3 | 20 | Ability Score Improvement |
+| 9 | +4 | 24 | **Job Change: Transcendent Second Class** (subclass) |
+| 10 | +4 | 28 | - |
+| 11 | +4 | 32 | - |
+| 12 | +4 | 36 | Ability Score Improvement |
+| 13 | +5 | 41 | **Job Change: Third Class** (subclass) |
+| 14 | +5 | 46 | - |
+| 15 | +5 | 51 | - |
+| 16 | +5 | 56 | Ability Score Improvement |
+| 17 | +6 | 62 | **Job Change: Fourth Class** (subclass — capstone ของสาย) |
+| 18 | +6 | 68 | - |
+| 19 | +6 | 74 | Ability Score Improvement |
+| 20 | +6 | 80 | - |
+
+**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool สะสมสะสมทุกเลเวล = รวม Proficiency Bonus ของทุกเลเวลที่ผ่านมา (universal ทุก Job, ไม่มี HP-swap) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — **cost curve ต่อการใช้ยังไม่ตกลง** (Linear จะ overpower เพราะ pool สะสมใหญ่ Escalating น่าจะพอดีกว่า ดูรายละเอียดใน [Mastery-Branches.md](Mastery-Branches.md) เมื่อออกแบบเสร็จ) ฟื้นเต็มตอน Long Rest, Short Rest คืนบางส่วน (สัดส่วนยังไม่ระบุ)
 
 **หมายเหตุจังหวะ**: เลเวล 3/6/9/13/17 คือ "Job Change" milestone ใหญ่ 5 จุด แมปตรงกับ 5 tier จริงของ RO ทั้งหมด (First Class → Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — เลเวลอื่นทั้งหมด (1/2/5/7/10/11/14/15/18/20) ยังไม่กำหนด feature ไว้ ("-") รอออกแบบเพิ่มทีหลัง (ทั้ง Class Features พื้นฐานของ Novice เองและเนื้อหา Job Paths แต่ละสาย ถูกลบออกไปแล้วเพื่อออกแบบใหม่ให้ตรงจังหวะนี้)
 
