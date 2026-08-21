@@ -65,6 +65,36 @@
 - **ยังเลื่อนไปเป็นวัตถุดิบ Mastery Branch (ไม่ใช่ตัดทิ้ง)**: Pierce, Spear Stab, Cavalry Mastery, Spear Boomerang, Double Blow — เหลือเฉพาะท่าที่ genuinely ผูกกับสาขาย่อยจนอธิบายแบบ generic ไม่ได้จริงๆ (ต้องถือหอกเท่านั้น เช่น Pierce/Spear Stab/Spear Boomerang ที่เนื้อหาซ้ำกันเองด้วย, หรือต้องขี่พาหนะเท่านั้นอย่าง Cavalry Mastery) กับ Double Blow ที่เป็นกลไก %-chance ซ้ำกับ Weapon Mastery property ของ D&D อยู่แล้ว (คล้าย Sword Mastery)
 - **เช็ค Day Math ที่ level 3 (หลัง rev. 3)**: pool 6 + short rest 2 ครั้ง×2 = 10 mana/วัน รวมกับของ Swordsman (7 ท่า) ในพูลเดียวกัน — avg cost ของ Knight tier นี้ตอนนี้ (1+2+2+2+1+2+0)/7 ≈ 1.4 ยังอยู่ในกรอบ 1-2 ของ level 3-4 band ปกติ ไม่ต้องปรับเพิ่ม
 
+## D&D Feature Draft — Lord Knight (Transcendent Second Class)
+
+> 🚧 **ฉบับร่างแรก (rev. 2)** ของการแปลง skill ROX Lord Knight (Transcendent Second Class) เป็น D&D feature — มอบที่ **level 7** ("Job Change: Transcendent Second Class") ใช้ [กฎการใช้ Mana](Novice-Concept.md#กฎการใช้-mana-mana-usage-rules) กลาง — ที่ level 7: pool 14, Prof Bonus +3, avg cost เป้าหมายตามตาราง reference คือ **2-3** (ขยับขึ้นจาก 1-2 ของ level 3-4 ตามธรรมชาติ ไม่ต้องคำนวณ balance ใหม่)
+>
+> **เกณฑ์คัดเลือก**: ใช้หลัก "generalize ก่อนเลื่อน" แบบเดียวกับ Knight (2nd) — จาก 10 ท่าใน tier นี้ เก็บ 7 ท่าที่ generalize ได้ (ไม่ผูกอาวุธ/สาขาย่อยในคำอธิบายต้นฉบับ), ตัดถาวร 1 ท่า (Call of Justice — flat stat conversion แบบเดียวกับ Sword/Spear Mastery), เลื่อนไป Mastery Branch 2 ท่าที่ genuinely ผูกกับหอก+ขี่มังกร/ม้า (Brandish Spear, Spiral Pierce)
+>
+> **rev. 2**: ปรับ 6 ท่าตามคำสั่งตรง — Weapon Blocking เปลี่ยนจาก stance/นับครั้งเป็น Reaction ลดดาเมจแบบ Steel Heart, Head Crush ตัด Bleed rider เหลือบัฟดาเมจล้วน, Joint Beat เปลี่ยนจาก save-based debuff table เป็น prone ตรงไม่ต้องทอย, Self-Ignite ย้าย trigger จากต้นเทิร์นเป็นจบเทิร์น+ลดระยะเหลือ 5 ft+ปิดด้วย Free Action, Lord's Aura ขยับจาก 1d4 เป็น 1d6 และยืนยันว่าตัวเองได้รับผลด้วย, Berserk เปลี่ยนข้อจำกัดจาก "ทำได้แค่ Attack/Dash/Disengage" เป็นเงื่อนไข maintenance (ต้องโจมตีทุกเทิร์น ไม่งั้นต้องจ่าย Bonus Action คงสถานะ) — Concentration ไม่มีการเปลี่ยนแปลง
+
+| Feature | Action | Mana | ผลลัพธ์ |
+|---|---|---|---|
+| **Weapon Blocking** | Reaction | 1 | Trigger: ถูกโจมตี — ลดดาเมจที่ได้รับจากการโจมตีนั้นลง **1d8 + Prof Bonus** แล้วคงสถานะ "Blocking" ไว้จนกว่าจะเริ่มเทิร์นถัดไปของตัวเอง (การโจมตีอื่นที่โดนตัวคุณระหว่างนี้ลดดาเมจเท่ากันด้วย ไม่ต้องจ่าย mana ซ้ำ) |
+| **Head Crush** | Bonus Action | 1 | เป็นเวลา 1 นาที: การโจมตีด้วยอาวุธของคุณเพิ่มดาเมจ **+1d6** ทุกครั้งที่โดน |
+| **Concentration** | Action | 2 | Mark ศัตรู 1 ตัวที่มองเห็นในระยะ 60 ft เป็นเวลา 1 นาที — ตัวคุณกับพวกพ้องในระยะ 30 ft (สูงสุด 5 ตัว) ได้ **immune ต่อ prone/ผลักดัน** (เหมือน Endure) ตลอดช่วงนี้ และโจมตีเป้าหมายที่ mark ไว้ได้ดาเมจเพิ่ม **+1d6** ทุกครั้งที่โดน |
+| **Joint Beat** | Action | 1 | โจมตีด้วยอาวุธ 1 ครั้ง ถ้าโดน — จ่าย mana เพื่อทำให้เป้าหมาย **Prone ทันที** (ไม่ต้องทอย save) |
+| **Self-Ignite** | Action | 3 | เปิดใช้งาน — ระหว่างที่เปิดอยู่ ณ **จบเทิร์นของคุณแต่ละครั้ง**: ตัวคุณรับดาเมจ **1d6** (เสียเลือดเอง ไม่มี damage type) และศัตรูทุกตัวในระยะ **5 ft** รอบตัวรับดาเมจเท่ากัน ไม่ต้องทอย save — ปิดได้ทุกเมื่อด้วย **Free Action** (ระหว่างมีผล Increase HP Recovery ของ Swordsman จะไม่ทำงาน) |
+| **Lord's Aura** | Action | 2 | เป็นเวลา 1 นาที: ตัวคุณ **(รวมตัวเอง)** กับพวกพ้องในระยะ 30 ft ได้โบนัสดาเมจการโจมตีด้วยอาวุธ **+1d6** ทุกครั้งที่โดน |
+| **Berserk** | Bonus Action | 3 | ฟื้น HP เต็มทันที แล้วเป็นเวลา 1 นาที: ได้ **Advantage** กับการโจมตีด้วยอาวุธทุกครั้ง และดาเมจอาวุธ +1d6 — แลกกับผู้โจมตีคุณได้ **Advantage** กลับด้วยเช่นกัน — ต้องโจมตีด้วยอาวุธอย่างน้อย 1 ครั้งทุกเทิร์นของตัวเองเพื่อคง Berserk ไว้ ถ้าเทิร์นไหนไม่โจมตี ต้องจ่าย **Bonus Action** ในเทิร์นนั้นแทนเพื่อคงสถานะไว้ ไม่งั้น Berserk จบทันที |
+
+**หมายเหตุการปรับจาก RO ต้นฉบับ**:
+- Weapon Blocking (rev. 2): เปลี่ยนจาก stance/นับจำนวนครั้ง+ตีสวน → **Reaction ลดดาเมจแบบ Steel Heart** (trigger ถูกโจมตี ลดดาเมจ + คงผลถึงต้นเทิร์นถัดไป) ตัดกลไกตีสวนออกเพราะไม่ถูกพูดถึงในคำสั่งใหม่ (ตามหลัก "ไม่พูดถึง = ตัด" ที่ใช้กับ Charge Attack ก่อนหน้า) ราคาลดจาก 2 → **1 mana** ให้ตรง band ของ Reaction/short duration (เจตนาให้เป็นทางเลือกที่ reliable กว่า Steel Heart แต่ผลอ่อนกว่า เพราะลดดาเมจแบบ flat ไม่ใช่ resistance เต็ม)
+- Head Crush (rev. 2): **ตัด Bleed/Critical rider ออก** เหลือแค่บัฟดาเมจอาวุธ +1d6 ล้วนๆ นาน 1 นาที — โครงสร้างเดียวกับ Aura Blade (บัฟสถิติล้วน) ราคาลดจาก 2 → **1 mana** ตามเหตุผลเดียวกับ Aura Blade
+- Concentration: ไม่มีการเปลี่ยนแปลงจาก rev. 1
+- Joint Beat (rev. 2): เปลี่ยนจาก save-based debuff table (4 แบบ) → **Prone ทันทีไม่ต้องทอย save** ตามที่ระบุ ("ตีโดนให้ prone ได้เลย") ราคาคงที่ 1 mana เพราะยังเป็น attack + rider เดี่ยวเหมือนเดิม แค่ทำให้ effect แน่นอนแทนการสุ่ม/ทอย
+- Self-Ignite (rev. 2): ย้าย trigger จาก **ต้นเทิร์น** เป็น **จบเทิร์น**, ลดรัศมี AoE จาก 10 ft → **5 ft**, และเปลี่ยนวิธีปิดจาก "เมื่อไหร่ก็ได้แบบไม่เสีย action" ให้ระบุชัดเป็น **Free Action** ตามที่สั่ง — ตัด duration ตายตัว 3 เทิร์นออกเพราะตอนนี้ปิดเองได้เมื่อไหร่ก็ได้อยู่แล้ว (ไม่จำเป็นต้องมี cap แยก) ราคาคงที่ 3 mana (capstone band) เพราะยังเป็น AoE ต่อเนื่องไม่จำกัดเทิร์นแลกเลือดตัวเอง
+- Lord's Aura (rev. 2): ขยับดาเมจจาก **+1d4 → +1d6** และยืนยันชัดเจนว่า **ตัวเองก็ได้รับผลด้วย** (ไม่ใช่แค่พวกพ้อง) ตามที่ระบุ ราคาคงที่ 2 mana เพราะยังเป็น AoE party buff 1 นาทีเหมือนเดิม แค่แรงขึ้นเล็กน้อย
+- Berserk (rev. 2): เปลี่ยนข้อจำกัดจาก **"ทำได้แค่ Attack/Dash/Disengage"** → **เงื่อนไข maintenance**: ต้องโจมตีด้วยอาวุธทุกเทิร์นเพื่อให้ Berserk ทำงานต่อฟรี ถ้าไม่โจมตีเทิร์นนั้นต้องจ่าย Bonus Action แทนไม่งั้นจบทันที — ให้ความรู้สึก "โหมดดุดัน" ตรงกับต้นฉบับมากขึ้น (บังคับให้เล่นเชิงรุกต่อเนื่อง) โดยไม่ต้องล็อก action option ทั้งหมดแบบเดิม ราคาคงที่ 3 mana (capstone-tier เท่า Self-Ignite)
+- **Call of Justice ตัดออกถาวร**: เหตุผลเดียวกับ Sword Mastery/Spear Mastery — เป็น flat stat conversion (VIT→ATK) ที่ D&D จัดการผ่าน ability score/ASI อยู่แล้ว
+- **ยังเลื่อนไปเป็นวัตถุดิบ Mastery Branch**: Brandish Spear (ต้องขี่ Cavalry Combat + สเกลกับหอกโดยเฉพาะ), Spiral Pierce (ต้องถือหอกเท่านั้นตามคำอธิบายต้นฉบับ) — ทั้งคู่ genuinely ผูกกับสาขาย่อยหอก+ขี่ม้า/มังกร ที่ยังไม่มี feature รองรับพาหนะจริงจนกว่าจะถึง Dragon Knight (4th)
+- **เช็ค Day Math ที่ level 7 (หลัง rev. 2)**: pool 14 + short rest 2 ครั้ง×3 = 20 mana/วัน — avg cost ของ Lord Knight tier นี้ตอนนี้ (1+1+2+1+3+2+3)/7 ≈ **1.86** ต่ำกว่ากรอบ 2-3 ของ level 5-8 band เล็กน้อย (≈11 ครั้ง/วัน แทนที่จะเป็น 6-10) — เกิดจาก Weapon Blocking/Head Crush ถูกลดความซับซ้อนลงเป็นเอฟเฟกต์เบาลงตามคำสั่งตรง ยังไม่ปรับราคาเพิ่มเพราะเป็นการลดพลังจริง ไม่ใช่แค่ reframe เฉยๆ — ถ้าจะดึง avg กลับเข้ากรอบพอดีทีหลังค่อยพิจารณาขยับ Weapon Blocking หรือ Head Crush ขึ้นเป็น 2 ได้
+
 ## ROX Skill Reference — Swordsman → Knight
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1100, 1110-1113) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลางชื่อ "Skill #1000107" (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตารางเพราะไม่มีข้อมูลให้อ้างอิง
