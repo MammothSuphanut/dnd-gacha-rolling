@@ -52,24 +52,24 @@
 | 2 | +2 | 4 | - |
 | 3 | +2 | 6 | **Job Change: Second Class** |
 | 4 | +2 | 8 | Ability Score Improvement |
-| 5 | +3 | 11 | - |
-| 6 | +3 | 14 | - |
-| 7 | +3 | 17 | **Job Change: Transcendent Second Class** |
-| 8 | +3 | 20 | Ability Score Improvement |
-| 9 | +4 | 24 | - |
-| 10 | +4 | 28 | - |
-| 11 | +4 | 32 | **Job Change: Third Class** |
-| 12 | +4 | 36 | Ability Score Improvement |
-| 13 | +5 | 41 | - |
-| 14 | +5 | 46 | - |
-| 15 | +5 | 51 | **Job Change: Fourth Class**  |
-| 16 | +5 | 56 | Ability Score Improvement |
-| 17 | +6 | 62 | - |
-| 18 | +6 | 68 | - |
-| 19 | +6 | 74 | Ability Score Improvement |
-| 20 | +6 | 80 | - |
+| 5 | +3 | 10 | - |
+| 6 | +3 | 12 | - |
+| 7 | +3 | 14 | **Job Change: Transcendent Second Class** |
+| 8 | +3 | 16 | Ability Score Improvement |
+| 9 | +4 | 18 | - |
+| 10 | +4 | 20 | - |
+| 11 | +4 | 22 | **Job Change: Third Class** |
+| 12 | +4 | 24 | Ability Score Improvement |
+| 13 | +5 | 26 | - |
+| 14 | +5 | 28 | - |
+| 15 | +5 | 30 | **Job Change: Fourth Class**  |
+| 16 | +5 | 32 | Ability Score Improvement |
+| 17 | +6 | 34 | - |
+| 18 | +6 | 36 | - |
+| 19 | +6 | 38 | Ability Score Improvement |
+| 20 | +6 | 40 | - |
 
-**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool สะสมสะสมทุกเลเวล = รวม Proficiency Bonus ของทุกเลเวลที่ผ่านมา (universal ทุก Job, ไม่มี HP-swap) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — **cost curve ต่อการใช้ยังไม่ตกลง** (Linear จะ overpower เพราะ pool สะสมใหญ่ Escalating น่าจะพอดีกว่า รอออกแบบระบบ Mastery Branch ใหม่ก่อนสรุป — ดูหมายเหตุด้านล่าง) ฟื้นเต็มตอน Long Rest, Short Rest คืนบางส่วน (สัดส่วนยังไม่ระบุ)
+**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **เลเวล × 2** (universal ทุก Job, ไม่มี HP-swap) — เปลี่ยนจากสูตรเดิม (สะสม Proficiency Bonus) เป็นสูตรเชิงเส้นตรงไปตรงมา เข้าใจง่าย ไล่จาก 2 (lv 1) ถึง 40 (lv 20) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — **cost curve ต่อการใช้ยังไม่ตกลง** (รอออกแบบระบบ Mastery Branch ใหม่ก่อนสรุป — ดูหมายเหตุด้านล่าง) ฟื้นเต็มตอน Long Rest, Short Rest คืนบางส่วน (สัดส่วนยังไม่ระบุ)
 
 **หมายเหตุจังหวะ**: เลเวล 3/7/11/15 คือ "Job Change" milestone ใหญ่ 4 จุด **ข้าม First Class เป็น mechanical step ไปเลย** แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — เลเวลอื่นทั้งหมด (1/2/5/6/9/10/13/14/17/18/20) ยังไม่กำหนด feature ไว้ ("-") รอออกแบบเพิ่มทีหลัง (ทั้ง Class Features พื้นฐานของ Novice เองและเนื้อหา Job Paths แต่ละสาย ถูกลบออกไปแล้วเพื่อออกแบบใหม่ให้ตรงจังหวะนี้)
 
