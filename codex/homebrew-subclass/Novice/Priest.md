@@ -4,6 +4,14 @@
 
 > 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว ตาราง Acolyte (1st Class) ด้านล่างเป็นเนื้อหาที่ใช้ร่วมกันกับ [Monk.md](Monk.md) เพราะทั้งคู่สืบทอดมาจาก Acolyte เดิม — เก็บไว้เป็นวัตถุดิบสำหรับออกแบบ Mastery Branch pool ในอนาคต (ระบบ Mastery Branch เดิมถูกลบไปรอออกแบบใหม่ตามจังหวะเลเวลล่าสุด)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Healer/Support บริสุทธิ์ | รักษา/บัฟปาร์ตี้ (Heal, Sanctuary, Coluceo Heal, Resurrection) |
+| Holy Nuker | ดาเมจศักดิ์สิทธิ์ต้านอันเดต/ปีศาจ (Judex, Magnus Exorcismus, Adoramus) |
+| Mace Melee | ตีประชิดเสริมพลังศักดิ์สิทธิ์ (Holy Strike, Expiatio, Sacred Hammer) |
+
 ## ROX Skill Reference — Acolyte → Priest
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1200, 1210-1213) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลาง (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง

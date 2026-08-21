@@ -4,6 +4,14 @@
 
 > 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว ตาราง Swordsman (1st Class) ด้านล่างเป็นเนื้อหาที่ใช้ร่วมกันกับ [Knight.md](Knight.md) เพราะทั้งคู่สืบทอดมาจาก Swordsman เดิม — เก็บไว้เป็นวัตถุดิบสำหรับออกแบบ Mastery Branch pool ในอนาคต (ระบบ Mastery Branch เดิมถูกลบไปรอออกแบบใหม่ตามจังหวะเลเวลล่าสุด)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| ดาบสองมือ | ดูดเลือดตัวเอง/บั่นทอนแลกดาเมจ (Sacrifice, Cyclone Strike, Fearless Charge) |
+| หอกสองมือ (Holy) | AoE ศักดิ์สิทธิ์ เล่นคล้ายนักบวชสายรบ (Holy Cross, Grand Cross, Moon Slasher) |
+| โล่ | แทงค์/ซัพพอร์ตปาร์ตี้ (Shield Charge, Guard, Devotion, Ultimate Sacrifice) |
+
 ## ROX Skill Reference — Swordsman → Crusader
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1100, 1120-1123) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลางชื่อ "Skill #1000107" (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตารางเพราะไม่มีข้อมูลให้อ้างอิง

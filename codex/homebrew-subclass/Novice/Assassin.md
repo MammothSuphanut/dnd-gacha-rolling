@@ -4,6 +4,13 @@
 
 > 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว ตาราง Thief (1st Class) ด้านล่างเป็นเนื้อหาที่ใช้ร่วมกันกับ [Rogue.md](Rogue.md) เพราะทั้งคู่สืบทอดมาจาก Thief เดิม — เก็บไว้เป็นวัตถุดิบสำหรับออกแบบ Mastery Branch pool ในอนาคต (ระบบ Mastery Branch เดิมถูกลบไปรอออกแบบใหม่ตามจังหวะเลเวลล่าสุด)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Dual Dagger Poison | DoT พิษสะสม + ลอบโจมตีจาก Hiding (Enchant Poison, Venom Spreader, Assassination mark) |
+| Katar | Crit burst ตรงไปตรงมา (Sonic Blow, Soul Destroyer, Advanced Katar Mastery) |
+
 ## ROX Skill Reference — Thief → Assassin
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1400, 1410-1413) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) Shadow Cross มี Talent skill กลางเพิ่มเติม (Type 6, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง

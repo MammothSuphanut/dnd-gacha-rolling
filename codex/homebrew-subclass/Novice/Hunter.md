@@ -4,6 +4,15 @@
 
 > 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว ตาราง Archer (1st Class) ด้านล่างเป็นเนื้อหาที่ใช้ร่วมกันกับ [Bard.md](Bard.md) เพราะทั้งคู่สืบทอดมาจาก Archer เดิม — เก็บไว้เป็นวัตถุดิบสำหรับออกแบบ Mastery Branch pool ในอนาคต (ระบบ Mastery Branch เดิมถูกลบไปรอออกแบบใหม่ตามจังหวะเลเวลล่าสุด)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Trapper | คุมพื้นที่ด้วยกับดักธาตุต่างๆ (Ankle Snare, Freezing Trap, Claymore Trap, Land Mine) |
+| Falcon Pet | เหยี่ยวโจมตีเสริมดาเมจ (Blitz Beat, Falcon Assault, Steel Crow) |
+| Direct-Shot Burst | ยิงนัดเดียวแรง (Focused Shot, Sharp Shooting, Aimed Bolt) |
+| Warg Mount (Ranger) | ขี่หมาป่าลุยประชิด-ไกลผสม (Warg Strike, Warg Bite, Prowling Wolf) |
+
 ## ROX Skill Reference — Archer → Hunter
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1500, 1510-1513) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) Sniper มี Talent skill กลางเพิ่มเติม (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง

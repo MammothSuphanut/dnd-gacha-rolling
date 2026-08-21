@@ -6,6 +6,14 @@
 >
 > *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมของ tier Transcendent ของสายนี้คือ **Professor** (ไม่ใช่ "Scholar" ตามที่ตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) ใน Novice-Concept.md เคยเดาไว้)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Battle Mage (Book melee) | ตีประชิดด้วยเวทมนตร์ (Advanced Book, Spell Fist, Striking) |
+| Field Control | คุมพื้นที่ต่อเนื่องด้วยสนามธาตุ (Elemental Field, Elemental Mark, Element Bonus) |
+| Spirit Summoner | เรียกวิญญาณธาตุมาเป็นโล่/ตัวช่วยดาเมจ (Summon Spirit, Spirit Possession, Elemental Action) |
+
 ## ROX Skill Reference — Mage → Sage
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1300, 1320-1323) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลาง (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง

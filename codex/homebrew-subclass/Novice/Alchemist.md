@@ -6,6 +6,14 @@
 >
 > *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมของ tier Transcendent ของสายนี้คือ **Creator** (ไม่ใช่ "Biochemist") และ tier 3rd คือ **Genetic** (ไม่ใช่ "Geneticist") ตามที่ตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) ใน Novice-Concept.md เคยเดาไว้
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Homunculus Summoner | เลี้ยงเพ็ท 4 แบบ (Lif/Amistr/Vanilmirth/Filir), Homunculus Upgrade, Life Fusion |
+| Bomb Thrower | ปาระเบิด/กรด AoE DoT (Demonstration, Acid Terror, Acid Demonstration, Spore Explosion) |
+| Cart Cannon Artillery | ปืนใหญ่ระยะไกล (Genetic tier: Cart Cannon, Heavy Cannon) |
+
 ## ROX Skill Reference — Merchant → Alchemist
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1600, 1620-1623) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล)

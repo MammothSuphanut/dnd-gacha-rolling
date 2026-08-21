@@ -6,6 +6,13 @@
 >
 > *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมของ tier 3rd ของสายนี้คือ **Shura** (ไม่ใช่ "Sura" ตามที่ไฟล์นี้เคยเขียนไว้ในเวอร์ชันก่อนแยกไฟล์)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Heavy Knuckle Combo | คอมโบต่อเนื่องแล้วปิดจ๊อบด้วย Asura Strike (Triple Attack → Raging Quadruple Blow → Combo Finish) |
+| Light Knuckle Spirit Spam | ยิง Spirit Sphere ระยะไกลต่อเนื่อง (Finger Offensive, Blade Stop, Tiger Cannon) |
+
 ## ROX Skill Reference — Acolyte → Monk
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1200, 1220-1223) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลาง (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง

@@ -6,6 +6,14 @@
 >
 > *หมายเหตุชื่ออาชีพ*: ชื่อจริงในเกมของ tier Transcendent ของสายนี้คือ **Whitesmith** (ไม่ใช่ "Mastersmith" ตามที่ตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) ใน Novice-Concept.md เคยเดาไว้)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Cart Melee | ตีด้วยรถเข็น (Cart Revolution, Cart Blitz, Cart Termination) |
+| Zeny Nuker | จ่ายเงินแลกดาเมจ (Mammonite, Hurl Zeny, Zeny Storm) |
+| Mado Gear Pilot | ขับหุ่นยนต์ยิงโดรน/ABR (Mechanic/Meister: Vulcan Arm, ABR - Battle Warrior/Dual Cannon) |
+
 ## ROX Skill Reference — Merchant → Blacksmith
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1600, 1610-1613) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล)

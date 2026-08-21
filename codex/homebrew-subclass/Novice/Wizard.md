@@ -4,6 +4,18 @@
 
 > 🚧 **สถานะ: DRAFT** — ไฟล์นี้เป็นวัตถุดิบอ้างอิง (real skill list จาก ROX/RO classic) สำหรับออกแบบ Job Path feature จริงทีหลัง ยังไม่ใช่ feature ที่ balance แล้ว ตาราง Mage (1st Class) ด้านล่างเป็นเนื้อหาที่ใช้ร่วมกันกับ [Sage.md](Sage.md) เพราะทั้งคู่สืบทอดมาจาก Mage เดิม — เก็บไว้เป็นวัตถุดิบสำหรับออกแบบ Mastery Branch pool ในอนาคต (ระบบ Mastery Branch เดิมถูกลบไปรอออกแบบใหม่ตามจังหวะเลเวลล่าสุด)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| ไฟ | เบิร์น/DoT สะสม (Fire Ball, Kindle, All Bloom, Conflagration) |
+| น้ำ | คุมฝูง/แช่แข็ง (Storm Gust, Frost Nova, Diamond Dust) |
+| ลม | Chain/knockback เป็นกลุ่ม (Jupitel Thunder, Lord of Vermilion, Chain Lightning) |
+| ดิน | หมุดเดี่ยวกลายหิน (Heaven's Drive, Earth Spike, Earth Strain) |
+| Ghost/Neutral | ดาเมจเดี่ยวใส่อันเดตโดยเฉพาะ (Soul Strike, Soul Expansion, Napalm Vulcan) |
+
+> หมายเหตุ: Arch Mage (4th) มีระบบ Climax ที่รวมธาตุทั้ง 4 เข้าด้วยกันผ่าน elemental orb — ไม่ใช่สาขาแยก แต่เป็น payoff ของการสะสมหลายธาตุพร้อมกัน
+
 ## ROX Skill Reference — Mage → Wizard
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1300, 1310-1313) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลาง (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง

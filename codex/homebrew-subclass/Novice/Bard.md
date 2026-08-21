@@ -6,6 +6,14 @@
 >
 > *หมายเหตุชื่ออาชีพ*: ROX ไม่มี Dancer แยกสายจาก Bard — สายที่ 2 ของ Archer line ใช้ชื่อ **Bard → Clown → Minstrel → Troubadour** ทั้งหมด (ไม่ใช่ "Bard/Dancer" → "Minstrel/Gypsy" → "Maestro/Wanderer" → "Troubadour/Trouvere" ตามที่ตาราง [ROX Job Tree Reference](Novice-Concept.md#rox-job-tree-reference-ทางการ) ใน Novice-Concept.md เคยเดาไว้ — ชื่อ Transcendent คือ **Clown**, ชื่อ 3rd คือ **Minstrel**)
 
+## สาขาย่อยในสายนี้ (สรุปจากข้อมูล skill ด้านล่าง — ไว้ใช้ตอน curate Mastery Branch)
+
+| สาขาย่อย | จุดเด่น |
+|---|---|
+| Solo Buffer | บัฟปาร์ตี้คนเดียว (The Apple of Idun, Assassin Cross of Sunset, A Poem of Bragi) |
+| Ensemble | บัฟ/ดีบัฟแรงขึ้นเมื่อจับคู่กับนักดนตรีอีกคน (Lullaby, March of Prontera, Eternal Chaos) |
+| Instrument Damage | โจมตีด้วยเครื่องดนตรี (Musical Strike, Arrow Vulcan, Rose Blossom) |
+
 ## ROX Skill Reference — Archer → Bard
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1500, 1520-1523) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) Minstrel มี Talent skill กลางเพิ่มเติม (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตาราง
