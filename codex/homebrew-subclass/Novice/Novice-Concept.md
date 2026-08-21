@@ -6,11 +6,11 @@
 
 ## Designer's Note
 
-แรงบันดาลใจจากระบบเลื่อนขั้นอาชีพของ Ragnarok Online / ROX: Novice → First Class → Second Class → Transcendent Second Class → Third Class → Fourth Class ปัญหาที่ต้องแก้คือ D&D 2024 ปกติให้เลือก subclass "ครั้งเดียวจบ" ตอนต้นเกม แต่ RO ให้ความรู้สึก "อัพคลาส" ซ้ำหลายรอบตลอดเกม — ดังนั้น class นี้จึงออกแบบให้ subclass (Job) มี milestone ใหญ่ถึง 5 จุด (เลเวล 3/6/9/13/17) แมปตรงกับ 5 tier จริงของ RO ครบทุก tier รวมถึง Fourth Class ด้วย แทนที่จะได้ features มาเรื่อยๆ แบบ subclass ปกติ โดยแต่ละจุดคือ "เลื่อนขั้น" จริงที่เปลี่ยนตัวตนการเล่นอย่างชัดเจน ไม่ใช่แค่บวกเลข — จังหวะนี้เลือกเพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย
+แรงบันดาลใจจากระบบเลื่อนขั้นอาชีพของ Ragnarok Online / ROX: Novice → First Class → Second Class → Transcendent Second Class → Third Class → Fourth Class ปัญหาที่ต้องแก้คือ D&D 2024 ปกติให้เลือก subclass "ครั้งเดียวจบ" ตอนต้นเกม แต่ RO ให้ความรู้สึก "อัพคลาส" ซ้ำหลายรอบตลอดเกม — ดังนั้น class นี้จึงออกแบบให้ subclass (Job) มี milestone ใหญ่ 4 จุด (เลเวล 3/7/11/15) โดย**ข้าม First Class (Swordsman/Mage/Archer/Thief/Acolyte/Merchant เอง) ไปเลย** เลเวล 3 เลือกตรงเป็น Second Class ทันที แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class) แทนที่จะได้ features มาเรื่อยๆ แบบ subclass ปกติ โดยแต่ละจุดคือ "เลื่อนขั้น" จริงที่เปลี่ยนตัวตนการเล่นอย่างชัดเจน ไม่ใช่แค่บวกเลข — จังหวะนี้เลือกเพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย
 
 รวมทั้ง **6 สายอาชีพหลักของ RO + Super Novice** — วัตถุดิบ skill reference ของแต่ละสาย (6 สายหลัก) แยกออกเป็นไฟล์ต่อสายแล้วตาม convention ปกติของโปรเจกต์ (ดูลิงก์ในหัวข้อ "ROX Skill Reference" ด้านล่าง) แต่ละสายอ้างอิง job tree + skill จริงจาก ROX (Ragnarok X: Next Generation) และตารางอ้างอิงทางการที่ผู้ใช้ให้มา (ดูหัวข้อ "ROX Job Tree Reference" ด้านล่าง)
 
-**6 สายหลัก** (ต่อยอดจาก Swordsman/Mage/Archer/Thief/Acolyte/Merchant): เลือกได้ตอนเลเวล 3 เหมือนกันหมด ชื่อ tier ทุกสายอ้างอิงตามตารางทางการครบทั้ง 5 tier (First Class เลเวล 3 → Second Class เลเวล 6 → Transcendent Second Class เลเวล 9 → Third Class เลเวล 13 → Fourth Class เลเวล 17)
+**6 สายหลัก** (ต่อยอดจาก Swordsman/Mage/Archer/Thief/Acolyte/Merchant): เลือกได้ตอนเลเวล 3 เหมือนกันหมด **ข้าม First Class ไปเลย** ชื่อ tier ทุกสายอ้างอิงตามตารางทางการ 4 tier ที่เหลือ (Second Class เลเวล 3 → Transcendent Second Class เลเวล 7 → Third Class เลเวล 11 → Fourth Class เลเวล 15)
 
 **Super Novice** เป็นสายพิเศษที่ 7 — ไม่ผ่าน job-change tree ปกติ (ในเกมจริง Super Novice คือทางเลือกทดแทน 1st job ที่ยึดติดกับความเป็น "Novice" ตลอดไป ไม่มี 2nd/3rd job ต่อ) จึงต้องออกแบบให้เป็น "jack of all trades" ที่หยิบยืม feature จากสายอื่นแทนการมี fork ของตัวเอง
 
@@ -50,34 +50,34 @@
 |---|---|---|---|
 | 1 | +2 | 2 | - |
 | 2 | +2 | 4 | - |
-| 3 | +2 | 6 | **Job Change: First Class** (เลือก subclass) |
+| 3 | +2 | 6 | **Job Change: Second Class** |
 | 4 | +2 | 8 | Ability Score Improvement |
 | 5 | +3 | 11 | - |
-| 6 | +3 | 14 | **Job Change: Second Class** (subclass — จุดแตกสายส่วนใหญ่) |
-| 7 | +3 | 17 | - |
+| 6 | +3 | 14 | - |
+| 7 | +3 | 17 | **Job Change: Transcendent Second Class** |
 | 8 | +3 | 20 | Ability Score Improvement |
-| 9 | +4 | 24 | **Job Change: Transcendent Second Class** (subclass) |
+| 9 | +4 | 24 | - |
 | 10 | +4 | 28 | - |
-| 11 | +4 | 32 | - |
+| 11 | +4 | 32 | **Job Change: Third Class** |
 | 12 | +4 | 36 | Ability Score Improvement |
-| 13 | +5 | 41 | **Job Change: Third Class** (subclass) |
+| 13 | +5 | 41 | - |
 | 14 | +5 | 46 | - |
-| 15 | +5 | 51 | - |
+| 15 | +5 | 51 | **Job Change: Fourth Class**  |
 | 16 | +5 | 56 | Ability Score Improvement |
-| 17 | +6 | 62 | **Job Change: Fourth Class** (subclass — capstone ของสาย) |
+| 17 | +6 | 62 | - |
 | 18 | +6 | 68 | - |
 | 19 | +6 | 74 | Ability Score Improvement |
 | 20 | +6 | 80 | - |
 
 **หมายเหตุ Mana** 🚧 (ยังไม่ final): pool สะสมสะสมทุกเลเวล = รวม Proficiency Bonus ของทุกเลเวลที่ผ่านมา (universal ทุก Job, ไม่มี HP-swap) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — **cost curve ต่อการใช้ยังไม่ตกลง** (Linear จะ overpower เพราะ pool สะสมใหญ่ Escalating น่าจะพอดีกว่า รอออกแบบระบบ Mastery Branch ใหม่ก่อนสรุป — ดูหมายเหตุด้านล่าง) ฟื้นเต็มตอน Long Rest, Short Rest คืนบางส่วน (สัดส่วนยังไม่ระบุ)
 
-**หมายเหตุจังหวะ**: เลเวล 3/6/9/13/17 คือ "Job Change" milestone ใหญ่ 5 จุด แมปตรงกับ 5 tier จริงของ RO ทั้งหมด (First Class → Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — เลเวลอื่นทั้งหมด (1/2/5/7/10/11/14/15/18/20) ยังไม่กำหนด feature ไว้ ("-") รอออกแบบเพิ่มทีหลัง (ทั้ง Class Features พื้นฐานของ Novice เองและเนื้อหา Job Paths แต่ละสาย ถูกลบออกไปแล้วเพื่อออกแบบใหม่ให้ตรงจังหวะนี้)
+**หมายเหตุจังหวะ**: เลเวล 3/7/11/15 คือ "Job Change" milestone ใหญ่ 4 จุด **ข้าม First Class เป็น mechanical step ไปเลย** แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — เลเวลอื่นทั้งหมด (1/2/5/6/9/10/13/14/17/18/20) ยังไม่กำหนด feature ไว้ ("-") รอออกแบบเพิ่มทีหลัง (ทั้ง Class Features พื้นฐานของ Novice เองและเนื้อหา Job Paths แต่ละสาย ถูกลบออกไปแล้วเพื่อออกแบบใหม่ให้ตรงจังหวะนี้)
 
 > 🚧 ระบบ Mastery Branch (เดิมอยู่ที่ Mastery-Branches.md) ถูกลบไปแล้ว รอออกแบบใหม่ทั้งจังหวะ Mastery Point และเนื้อหา pool ให้ตรงกับตารางเลเวลนี้ก่อนใช้งานจริง
 
 ## Job Paths
 
-Novice เลือก Job (subclass) ตอนเลเวล 3 จากทั้งหมด 7 สาย (6 สายหลัก + Super Novice) — แต่ละสายมี milestone ใหญ่ที่เลเวล 3/6/9/13/17 ตรงกับ First/Second/Transcendent Second/Third/Fourth Class ตามตาราง Level Progression ด้านบน (เนื้อหารายละเอียดของแต่ละสายยังไม่ได้เขียน รอออกแบบใหม่)
+Novice เลือก Job (subclass) ตอนเลเวล 3 จากทั้งหมด 7 สาย (6 สายหลัก + Super Novice) — **ข้าม First Class ไปเลย** แต่ละสายมี milestone ใหญ่ที่เลเวล 3/7/11/15 ตรงกับ Second/Transcendent Second/Third/Fourth Class ตามตาราง Level Progression ด้านบน (เนื้อหารายละเอียดของแต่ละสายยังไม่ได้เขียน รอออกแบบใหม่)
 
 **เพิ่มเติม**: นอกจาก feature ตายตัวของแต่ละ Job แล้ว เดิมมีระบบ Mastery Branches — pool เทคนิคเสริมที่ล็อกด้วยเงื่อนไข Job+Level (เช่น "Knight 7+") ให้เลือกเก็บสะสมได้ตลอดทาง ทำหน้าที่แทน spell list ของ full caster — **ระบบนี้ถูกลบไปแล้วรอออกแบบใหม่** ให้ตรงกับแนวทาง "ข้าม First Class เป็น mechanical step" ที่ตกลงล่าสุด (First Class เดิมของแต่ละสายจะเข้าถึงได้ผ่าน Mastery Branch แทน ไม่ใช่ subclass feature ตายตัว)
 
@@ -103,7 +103,7 @@ Novice เลือก Job (subclass) ตอนเลเวล 3 จากทั
 
 *ในเกมจริงชื่อฝั่ง Bard เพศชาย/Dancer เพศหญิงต่างกัน — เอกสารนี้ใช้เป็นตัวเลือก playstyle อิสระ ไม่ผูกกับเพศตัวละคร
 
-**Fourth Class อยู่ในสโคปแล้ว**: milestone ทั้ง 5 จุด (3/6/9/13/17) ของ class นี้แมปตรงกับ 5 คอลัมน์ในตาราง (First Class → Second Class → Transcendent Second Class → Third Class → **Fourth Class**) พอดี — Fourth Class คือ "Job Change: Fourth Class" ที่เลเวล 17 (capstone ของแต่ละสาย) ไม่ใช่แค่ชื่อสำรองอีกต่อไป
+**Fourth Class อยู่ในสโคปแล้ว**: milestone ทั้ง 4 จุด (3/7/11/15) ของ class นี้แมปตรงกับ 4 คอลัมน์ที่เหลือในตารางหลังข้าม First Class (Second Class → Transcendent Second Class → Third Class → **Fourth Class**) พอดี — Fourth Class คือ "Job Change: Fourth Class" ที่เลเวล 15 (capstone ของแต่ละสาย) ไม่ใช่แค่ชื่อสำรองอีกต่อไป
 
 ### ROX Skill Reference (แต่ละ Job มี skill อะไรบ้าง)
 
