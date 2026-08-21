@@ -117,3 +117,49 @@ Novice เลือก Job (subclass) ตอนเลเวล 3 จากทั
 - Thief → [Assassin.md](Assassin.md) (Assassin → Assassin Cross → Guillotine Cross → Shadow Cross) / [Rogue.md](Rogue.md) (Rogue → Stalker → Shadow Chaser → Abyss Chaser)
 - Archer → [Hunter.md](Hunter.md) (Hunter → Sniper → Ranger → Wind Hawk) / [Bard.md](Bard.md) (Bard → Clown → Minstrel → Troubadour)
 - Merchant → [Blacksmith.md](Blacksmith.md) (Blacksmith → Whitesmith → Mechanic → Meister) / [Alchemist.md](Alchemist.md) (Alchemist → Creator → Genetic → Biolo)
+
+### สาขาย่อยในแต่ละสาย (สรุปรวมทั้ง 12 สาย)
+
+ไล่ดู skill data จริงในแต่ละไฟล์ fork แล้วพบว่าเกือบทุกสายซ่อนสาขาย่อยไว้ 2-4 ทาง (แยกตามอาวุธ/สไตล์ที่ skill require หรือแยกตามธาตุ) — เก็บสรุปไว้เป็นวัตถุดิบสำหรับตอน curate Mastery Branch pool จริง รายละเอียดเต็มอยู่ในหัวข้อ "สาขาย่อยในสายนี้" ของแต่ละไฟล์
+
+| Job Path | สาขาย่อย | จุดเด่น |
+|---|---|---|
+| [Knight.md](Knight.md) | ดาบสองมือ | Crit/burst หนัก (Aura Blade, Bowling Bash AoE, Storm Slash) |
+| | หอก + ขี่ม้า/มังกร (Cavalry) | โจมตีเดี่ยวระยะไกล + mobility (Brandish Spear, Spiral Pierce, Dragon Breath ตอน 4th) |
+| | ดาบ/หอก + โล่ | สายตอบโต้/แทงค์ (Auto Counter, Weapon Blocking, Rune Shield) |
+| [Crusader.md](Crusader.md) | ดาบสองมือ | ดูดเลือดตัวเอง/บั่นทอนแลกดาเมจ (Sacrifice, Cyclone Strike, Fearless Charge) |
+| | หอกสองมือ (Holy) | AoE ศักดิ์สิทธิ์ เล่นคล้ายนักบวชสายรบ (Holy Cross, Grand Cross, Moon Slasher) |
+| | โล่ | แทงค์/ซัพพอร์ตปาร์ตี้ (Shield Charge, Guard, Devotion, Ultimate Sacrifice) |
+| [Wizard.md](Wizard.md) | ไฟ | เบิร์น/DoT สะสม (Fire Ball, Kindle, All Bloom, Conflagration) |
+| | น้ำ | คุมฝูง/แช่แข็ง (Storm Gust, Frost Nova, Diamond Dust) |
+| | ลม | Chain/knockback เป็นกลุ่ม (Jupitel Thunder, Lord of Vermilion, Chain Lightning) |
+| | ดิน | หมุดเดี่ยวกลายหิน (Heaven's Drive, Earth Spike, Earth Strain) |
+| | Ghost/Neutral | ดาเมจเดี่ยวใส่อันเดตโดยเฉพาะ (Soul Strike, Soul Expansion, Napalm Vulcan) |
+| [Sage.md](Sage.md) | Battle Mage (Book melee) | ตีประชิดด้วยเวทมนตร์ (Advanced Book, Spell Fist, Striking) |
+| | Field Control | คุมพื้นที่ต่อเนื่องด้วยสนามธาตุ (Elemental Field, Elemental Mark, Element Bonus) |
+| | Spirit Summoner | เรียกวิญญาณธาตุมาเป็นโล่/ตัวช่วยดาเมจ (Summon Spirit, Spirit Possession, Elemental Action) |
+| [Priest.md](Priest.md) | Healer/Support บริสุทธิ์ | รักษา/บัฟปาร์ตี้ (Heal, Sanctuary, Coluceo Heal, Resurrection) |
+| | Holy Nuker | ดาเมจศักดิ์สิทธิ์ต้านอันเดต/ปีศาจ (Judex, Magnus Exorcismus, Adoramus) |
+| | Mace Melee | ตีประชิดเสริมพลังศักดิ์สิทธิ์ (Holy Strike, Expiatio, Sacred Hammer) |
+| [Monk.md](Monk.md) | Heavy Knuckle Combo | คอมโบต่อเนื่องแล้วปิดจ๊อบด้วย Asura Strike (Triple Attack → Raging Quadruple Blow → Combo Finish) |
+| | Light Knuckle Spirit Spam | ยิง Spirit Sphere ระยะไกลต่อเนื่อง (Finger Offensive, Blade Stop, Tiger Cannon) |
+| [Assassin.md](Assassin.md) | Dual Dagger Poison | DoT พิษสะสม + ลอบโจมตีจาก Hiding (Enchant Poison, Venom Spreader, Assassination mark) |
+| | Katar | Crit burst ตรงไปตรงมา (Sonic Blow, Soul Destroyer, Advanced Katar Mastery) |
+| [Rogue.md](Rogue.md) | Dagger Melee | โจมตีประชิด/ขโมยค่าสเตตัส (Back Stab, Raid, Snatcher) |
+| | Bow Ranged | ยิงธนูผสมพิษระยะไกล (Assault, Double Strafe, Ranged Toxic Attack) |
+| | Utility/Debuff | Strip อุปกรณ์ศัตรู, ขโมยสกิล, กับดักมิติ (Strip Weapon/Armor, Plagiarism, Dimension Door) |
+| [Hunter.md](Hunter.md) | Trapper | คุมพื้นที่ด้วยกับดักธาตุต่างๆ (Ankle Snare, Freezing Trap, Claymore Trap, Land Mine) |
+| | Falcon Pet | เหยี่ยวโจมตีเสริมดาเมจ (Blitz Beat, Falcon Assault, Steel Crow) |
+| | Direct-Shot Burst | ยิงนัดเดียวแรง (Focused Shot, Sharp Shooting, Aimed Bolt) |
+| | Warg Mount (Ranger) | ขี่หมาป่าลุยประชิด-ไกลผสม (Warg Strike, Warg Bite, Prowling Wolf) |
+| [Bard.md](Bard.md) | Solo Buffer | บัฟปาร์ตี้คนเดียว (The Apple of Idun, Assassin Cross of Sunset, A Poem of Bragi) |
+| | Ensemble | บัฟ/ดีบัฟแรงขึ้นเมื่อจับคู่กับนักดนตรีอีกคน (Lullaby, March of Prontera, Eternal Chaos) |
+| | Instrument Damage | โจมตีด้วยเครื่องดนตรี (Musical Strike, Arrow Vulcan, Rose Blossom) |
+| [Blacksmith.md](Blacksmith.md) | Cart Melee | ตีด้วยรถเข็น (Cart Revolution, Cart Blitz, Cart Termination) |
+| | Zeny Nuker | จ่ายเงินแลกดาเมจ (Mammonite, Hurl Zeny, Zeny Storm) |
+| | Mado Gear Pilot | ขับหุ่นยนต์ยิงโดรน/ABR (Mechanic/Meister: Vulcan Arm, ABR - Battle Warrior/Dual Cannon) |
+| [Alchemist.md](Alchemist.md) | Homunculus Summoner | เลี้ยงเพ็ท 4 แบบ (Lif/Amistr/Vanilmirth/Filir), Homunculus Upgrade, Life Fusion |
+| | Bomb Thrower | ปาระเบิด/กรด AoE DoT (Demonstration, Acid Terror, Acid Demonstration, Spore Explosion) |
+| | Cart Cannon Artillery | ปืนใหญ่ระยะไกล (Genetic tier: Cart Cannon, Heavy Cannon) |
+
+**สรุปภาพรวม**: เฉลี่ย ≈ 2.75 สาขาย่อยต่อสาย (Wizard เยอะสุด 5 สาขาเพราะแยกตามธาตุ, ส่วนใหญ่สายอื่น 2-3 สาขาแยกตามอาวุธ/สไตล์) — แต่ละสาขาย่อยอาจกลายเป็น "ชุด Mastery" ที่เลือกเน้นได้ตอน curate จริง ไม่บังคับต้องเลือกสาขาเดียวตายตัว
