@@ -35,6 +35,36 @@
 - **Sword Mastery ตัดออก**: เป็นแค่ flat stat bonus ที่ D&D จัดการผ่าน proficiency/ASI อยู่แล้ว — จุดเชื่อมที่น่าสนใจคือ D&D 2024 มีระบบ **Weapon Mastery properties** (Cleave, Graze, Sap, Topple, Vex ฯลฯ) อยู่แล้ว อาจใช้เป็นช่องทางปลดล็อก mastery property ของดาบเร็วกว่าปกติแทน ไม่ต้องมี feature เดี่ยว
 - **เหตุผลรวมของการลด cost รอบนี้**: pool 6 mana/long rest ตอน level 3 ถ้าใช้ราคา rev. 1 จะหมดตั้งแต่ fight แรก (Bash+stun 2 + Battle Will 2 = 4) ทำให้เหลือทั้งวันแค่ตีเปล่าไม่มี feature — ปรับให้ Bash ฟรี + ท่า BA/Reaction เหลือ 1 + Short Rest คืน = Prof Bonus ทำให้ทั้งวันใช้ได้จริง ~10 mana (6 + 2 + 2 จาก short rest 2 ครั้ง) ≈ 8 ครั้งทั้งวัน กระจายได้ทั่วถึงหลาย encounter โดยยังคง pool เป็นทรัพยากรแบบ Long Rest (ไม่ใช่คืนเต็มทุก short rest แบบ Warlock)
 
+## D&D Feature Draft — Knight (2nd Class)
+
+> 🚧 **ฉบับร่างแรก (rev. 3)** ของการแปลง skill ROX Knight (2nd Class) เป็น D&D feature — ใช้ [กฎการใช้ Mana](Novice-Concept.md#กฎการใช้-mana-mana-usage-rules) กลางแล้ว ไม่ต้องคำนวณ balance ใหม่ตั้งแต่ต้น
+>
+> **จังหวะเลเวล (rev. 2 แก้)**: มอบพร้อมกับ Swordsman (1st Class) ทั้งชุดที่ **level 3** ("Job Change: Second Class") — เพราะระบบเลเวลถูกขยับให้ข้าม First Class เป็น mechanical step แล้ว การเลือก Job Path ตอนเลเวล 3 คือการได้ทั้ง Swordsman + Knight พร้อมกันในทีเดียว (ไม่ใช่แยกมอบทีหลังที่ level 6 แบบ rev. 1) — level 4/5/6 เว้นว่างไว้ตามตาราง [Level Progression](Novice-Concept.md#level-progression) เดิม (level 4 มี ASI อยู่แล้ว)
+>
+> **เกณฑ์คัดเลือก (rev. 2 ขยายเพิ่ม)**: rev. 1 คัดมาแค่ 3 ท่าที่ไม่ผูกอาวุธ/สาขาย่อยเลย ซึ่งบางไปเทียบกับความหนาแน่นของ Swordsman (7 ท่า) — รอบนี้ดึงกลับมาเพิ่มอีก 4 ท่าโดย **generalize ให้ไม่ผูกอาวุธเฉพาะ** (ตัดคำว่า "ต้องถือดาบ/หอก" ออก เก็บแก่นของท่าไว้) แทนที่จะเลื่อนไปรอ Mastery Branch ทั้งหมด — เหลือเลื่อนเฉพาะท่าที่ genuinely ผูกกับสาขาย่อยจริงๆ (ต้องขี่มังกร/ม้า หรือถือหอกเท่านั้นถึงจะสมเหตุผล)
+
+| Feature | Action | Mana | ผลลัพธ์ |
+|---|---|---|---|
+| **Steel Heart** | Reaction | 1 | Trigger: ถูกโจมตี — ได้ **Resistance ต่อดาเมจทุกชนิด** และ **immune ต่อ prone/ผลักดัน** จนกว่าจะเริ่มเทิร์นถัดไปของตัวเอง |
+| **Charge Attack** | Action | 2 | พุ่งเป็นเส้นตรง 15 ft เข้าหาศัตรูที่มองเห็น โดยไม่โดน Opportunity Attack จากเป้าหมายนั้น แล้วทำ **Attack Action** ปกติ (ถ้ามี Extra Attack จาก base class ทีหลังจะได้ครบทุกครั้งที่โจมตี) |
+| **Weapon Speed Boost** | Free (trigger: กำลังโจมตีด้วยอาวุธ) | 2 | ใช้ได้เทิร์นละ 1 ครั้ง: เมื่อโจมตีด้วยอาวุธ (ไม่ว่าโดนหรือไม่) สามารถจ่าย mana เพื่อโจมตีด้วยอาวุธเพิ่มอีก 1 ครั้งทันที |
+| **Auto Counter** | Reaction | 2 | Trigger: ถูกโจมตีระยะประชิดจากศัตรูในระยะที่โจมตีตอบได้ — ได้ **Temp HP เท่ากับ Prof Bonus + CON mod** แล้วโจมตีตอบกลับผู้โจมตีทันที 1 ครั้งด้วย **Advantage** |
+| **Aura Blade** | Bonus Action | 1 | เป็นเวลา 1 นาที: การโจมตีด้วยอาวุธของคุณ **Critical Hit ที่เลข 19-20** แทนที่จะเป็นแค่ 20 — ทุกครั้งที่ Critical Hit สำเร็จ ระยะเวลาต่ออายุกลับไปเต็ม 1 นาทีอีกครั้ง |
+| **Bowling Bash** | Action | 2 | ศัตรูทุกตัวในระยะ 10 ft รอบตัว ทอย **STR Save** (DC สูตรกลาง) แยกกัน: fail = ถูกดึงเข้ามาประชิดตัว (ถ้ายังไม่ประชิด) + รับดาเมจอาวุธ, save = ไม่ถูกดึง ไม่รับดาเมจ — เป้าหมายที่ fail STR Save ต้องทอย **CON Save** เพิ่มอีกที: fail = **Stunned จนจบเทิร์นถัดไปของคุณ** |
+| **Cavalry Combat** | Passive (0 mana เสมอ) | — | มี proficiency ขี่สัตว์พาหนะ ไม่มี disadvantage จากการต่อสู้ขณะขี่ และควบคุมพาหนะด้วย Bonus Action แทนที่จะเสีย action เต็ม (ยังไม่ได้พาหนะจริงตอนนี้ — รอ tier สูงกว่าที่ผูกกับมังกร/ม้าโดยเฉพาะ) |
+
+**หมายเหตุการปรับจาก RO ต้นฉบับ**:
+- Steel Heart (rev. 3): เปลี่ยนจาก Bonus Action/1 นาทีมีเงื่อนไขตัดจบ → **Reaction/duration สั้นลงเหลือ "จนกว่าจะเริ่มเทิร์นถัดไป"** ตามที่ปรับ — เอฟเฟกต์แรง (Resistance เต็ม) แต่อยู่สั้นแค่รอบเดียว เลยลดราคาจาก 2 → **1 mana** ให้ตรงกับ band ของ Reaction/short duration (เทียบเท่า Endure เดิม แต่ผลแรงกว่า)
+- Charge Attack (rev. 3): เปลี่ยนระยะจาก "speed" เป็น **fixed 15 ft** และเปลี่ยนจาก "โจมตี 1 ครั้ง" เป็น **"ทำ Attack Action เต็ม"** (ได้ทุกครั้งโจมตีถ้ามี Extra Attack ทีหลัง) — **ตัดสตัน/CON Save ออก** ตามที่ระบุ (ไม่พูดถึงในดราฟต์ใหม่) ให้เหลือแค่กลไก gap-closer + attack action ล้วนๆ ราคาคงที่ 2 mana เพราะยังประหยัด action economy ได้เยอะ (ไม่ต้องเสีย movement แยกจาก action)
+- Weapon Speed Boost (rev. 3): เปลี่ยนจาก "Bonus Action ตั้ง buff ไว้ก่อนแล้วรอโจมตีโดน" → **ไม่ใช้ action ของตัวเอง จ่าย mana ตอนกำลังโจมตีได้เลย ครั้งเดียวต่อเทิร์น** ตัดเงื่อนไข "ต้องโจมตีโดนก่อน" ออกด้วย (จ่ายได้ทันทีไม่ต้องรอผลตี) ราคาคงที่ 2 mana เพราะยังคือได้โจมตีฟรีเพิ่ม 1 ครั้ง (ของแรงเท่าเดิม แค่ใช้งานคล่องขึ้น)
+- Auto Counter: ไม่มีการเปลี่ยนแปลงจาก rev. 2 — ยังคงตัดเงื่อนไข "ต้องถือโล่" (ต้นฉบับ RO ผูกกับ shield stance) ราคา 2 mana เพราะได้ทั้ง temp HP และโจมตีตอบกลับ
+- Aura Blade: ไม่มีการเปลี่ยนแปลงจาก rev. 2 — Crit 19-20 นาน 1 นาที ต่ออายุเมื่อ crit ราคา 1 mana เพราะเป็นบัฟสถิติล้วน
+- Bowling Bash (rev. 3): แยกเป็น **2 save ต่อกัน** ตามที่ระบุ — STR Save ก่อนเพื่อตัดสินการดึงเข้าตัว+ดาเมจ (fail เท่านั้นถึงโดนดึง+โดนดาเมจ, save = รอดครบทั้งดึงและดาเมจ), จากนั้นเฉพาะตัวที่ fail STR ต้องทอย CON Save แยกอีกทีเพื่อตัดสินสตัน — ราคาคงที่ 2 mana (Action AoE band) เพราะยังเป็น AoE control ระดับเดียวกับ Magnum Break แค่แยกเงื่อนไขให้ชัดเจนขึ้น
+- Cavalry Combat: ไม่มีการเปลี่ยนแปลงจาก rev. 2 — proficiency เปล่าๆ ก่อน ยังไม่ให้พาหนะจริงจนกว่าจะถึง tier ที่มีธีมมังกรชัดเจน
+- **Spear Mastery ตัดออกถาวร**: เหตุผลเดียวกับ Sword Mastery ใน Swordsman tier — เป็น flat stat bonus ที่ D&D จัดการผ่าน proficiency/Weapon Mastery property อยู่แล้ว
+- **ยังเลื่อนไปเป็นวัตถุดิบ Mastery Branch (ไม่ใช่ตัดทิ้ง)**: Pierce, Spear Stab, Cavalry Mastery, Spear Boomerang, Double Blow — เหลือเฉพาะท่าที่ genuinely ผูกกับสาขาย่อยจนอธิบายแบบ generic ไม่ได้จริงๆ (ต้องถือหอกเท่านั้น เช่น Pierce/Spear Stab/Spear Boomerang ที่เนื้อหาซ้ำกันเองด้วย, หรือต้องขี่พาหนะเท่านั้นอย่าง Cavalry Mastery) กับ Double Blow ที่เป็นกลไก %-chance ซ้ำกับ Weapon Mastery property ของ D&D อยู่แล้ว (คล้าย Sword Mastery)
+- **เช็ค Day Math ที่ level 3 (หลัง rev. 3)**: pool 6 + short rest 2 ครั้ง×2 = 10 mana/วัน รวมกับของ Swordsman (7 ท่า) ในพูลเดียวกัน — avg cost ของ Knight tier นี้ตอนนี้ (1+2+2+2+1+2+0)/7 ≈ 1.4 ยังอยู่ในกรอบ 1-2 ของ level 3-4 band ปกติ ไม่ต้องปรับเพิ่ม
+
 ## ROX Skill Reference — Swordsman → Knight
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1100, 1110-1113) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลางชื่อ "Skill #1000107" (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตารางเพราะไม่มีข้อมูลให้อ้างอิง
