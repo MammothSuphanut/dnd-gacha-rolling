@@ -12,6 +12,29 @@
 | หอก + ขี่ม้า/มังกร (Cavalry) | โจมตีเดี่ยวระยะไกล + mobility (Brandish Spear, Spiral Pierce, Dragon Breath ตอน 4th) |
 | ดาบ/หอก + โล่ | สายตอบโต้/แทงค์ (Auto Counter, Weapon Blocking, Rune Shield) |
 
+## D&D Feature Draft — Swordsman (1st Class)
+
+> 🚧 **ฉบับร่างแรก (rev. 2)** ของการแปลง skill ROX Swordsman (1st Class) เป็น D&D feature จริง — ยังไม่ final ปรับได้หมด บันทึกไว้เป็นจุดเริ่มต้นก่อนแปลงสาย/tier อื่นต่อ อ้างอิง Mana pool = เลเวล×2 (level 3 = 6 mana) และ Save DC = 8 + Proficiency Bonus + primary ability modifier ตาม [Novice-Concept.md](Novice-Concept.md#level-progression) — **Short Rest คืน mana เท่ากับ Proficiency Bonus** (level 3 = +2) ส่วน Long Rest คืนเต็ม pool — rev. 2 ลด cost ทุกตัวลงเพราะ rev. 1 แพงเกินไปเทียบกับ pool 6 ที่ level 3 (ดูเหตุผลเต็มในแชท)
+
+| Feature | Action | Mana | ผลลัพธ์ |
+|---|---|---|---|
+| **Provoke** | Bonus Action | 2 | เลือกศัตรู 1 ตัวในระยะ 60 ft ที่มองเห็น ให้ทอย **WIS Save** (DC สูตรกลาง) ถ้า fail: เป็นเวลา 1 นาที — เมื่อมันโจมตีเป้าหมายอื่นที่ไม่ใช่ Knight จะมี **Disadvantage**, เมื่อมันโจมตี Knight จะมี **Advantage** (ไม่ต้อง Concentration) |
+| **Endure** | Reaction | 1 | Trigger: ถูกโจมตี/กำลังจะถูกโจมตี — ได้ **+3 AC** ย้อนหลัง (อาจทำให้ hit กลายเป็น miss) + **immune ต่อ prone/ผลักดัน** จนกว่าจะเริ่มเทิร์นถัดไปของตัวเอง |
+| **Battle Will** | Bonus Action | 1 | ได้ **Advantage** กับการโจมตีด้วยอาวุธทุกครั้ง จนจบเทิร์นนี้ |
+| **Bash** | Action | 1 | จ่าย 1 mana เมื่อโจมตีโดนเพื่อบังคับ **CON Save** (DC สูตรกลาง): fail = **Stunned จนจบเทิร์นถัดไปของเป้าหมาย** |
+| **Magnum Break** | Action | 2 | ทุกตัวในระยะ 10 ft รอบตัว ทอย **DEX Save**: fail = **2d6 Fire dmg**, save = ครึ่งเดียว (ดาเมจอาจ scale ตามเลเวล/Job tier ทีหลัง) |
+| **Increase HP Recovery** | Passive (ไม่ใช้ mana — ไม่ใช่การ "ใช้ท่า" กลางคัน) | — | จบ Short Rest แล้ว ฟื้น HP เพิ่มเท่ากับ **1d8 + Novice level** (บวกเพิ่มจาก Hit Dice ที่ใช้ปกติ) |
+| **Fatal Blow** | Passive (ผูกกับ Bash) | — | เมื่อ Bash ทำให้เป้าหมายเหลือ 0 HP **หรือ** สตันเป้าหมายสำเร็จ → ฟื้น HP เท่ากับ Novice level **และ** คืน mana ที่จ่ายไปกับ Bash ครั้งนั้น 1 หน่วย |
+
+**หมายเหตุการปรับจาก RO ต้นฉบับ**:
+- Provoke: เปลี่ยนจาก "บังคับตีแต่ Knight" (RO ต้นฉบับ) → เป็น Advantage/Disadvantage แทน เพราะ D&D ไม่ค่อยมีกลไก "บังคับเป้าหมาย" ตรงๆ (ปัญหาเรื่อง immune to charm/mind-affecting) — ใช้ soft-compulsion แทน ให้ DM ตัดสินใจเองแต่มี incentive ทางกลไกชัดเจน คงราคาไว้ที่ 2 mana เพราะเอฟเฟกต์อยู่ยาว 1 นาที แรงกว่าตัวอื่นในตารางนี้
+- Endure: ใส่ AC เป็น +3 (เทียบเคียง Shield spell ที่ +5 แต่ Shield คือ spell ระดับ 1 เต็มๆ อันนี้เป็นแค่ subclass feature เลยลดลง)
+- Bash: **rev. 2 ตัดโบนัสดาเมจ +1d6 ออก** เหลือแค่โจมตีปกติฟรี (0 mana) + จ่าย 1 mana เฉพาะตอนอยากได้สตัน — ให้ Bash เป็น "ท่าตีหลักที่ใช้ได้ไม่จำกัด" เหมือน weapon attack ปกติของ Fighter จริงๆ ไม่ใช่ resource ที่ต้องแบ่งจ่ายทุกครั้งที่ตี
+- Magnum Break: ลดจาก 3 → 2 mana ตามการปรับ cost รวมทั้งตาราง
+- Fatal Blow: ตีความจาก "ฆ่าได้/บัพ/ฟื้น" เป็น proc เดียวจบ (heal + refund mana) แทนที่จะแยกเป็น 3 effect
+- **Sword Mastery ตัดออก**: เป็นแค่ flat stat bonus ที่ D&D จัดการผ่าน proficiency/ASI อยู่แล้ว — จุดเชื่อมที่น่าสนใจคือ D&D 2024 มีระบบ **Weapon Mastery properties** (Cleave, Graze, Sap, Topple, Vex ฯลฯ) อยู่แล้ว อาจใช้เป็นช่องทางปลดล็อก mastery property ของดาบเร็วกว่าปกติแทน ไม่ต้องมี feature เดี่ยว
+- **เหตุผลรวมของการลด cost รอบนี้**: pool 6 mana/long rest ตอน level 3 ถ้าใช้ราคา rev. 1 จะหมดตั้งแต่ fight แรก (Bash+stun 2 + Battle Will 2 = 4) ทำให้เหลือทั้งวันแค่ตีเปล่าไม่มี feature — ปรับให้ Bash ฟรี + ท่า BA/Reaction เหลือ 1 + Short Rest คืน = Prof Bonus ทำให้ทั้งวันใช้ได้จริง ~10 mana (6 + 2 + 2 จาก short rest 2 ครั้ง) ≈ 8 ครั้งทั้งวัน กระจายได้ทั่วถึงหลาย encounter โดยยังคง pool เป็นทรัพยากรแบบ Long Rest (ไม่ใช่คืนเต็มทุก short rest แบบ Warlock)
+
 ## ROX Skill Reference — Swordsman → Knight
 
 > ตารางด้านล่างดึงมาจากหน้า job detail จริงของ [ROXPEDIA Job Database](https://roxpedia.com/job-database?page=1) (job-database/detail/1100, 1110-1113) ครบทุกสกิลของแต่ละอาชีพ — คอลัมน์ Type/Max Lv/Description คือข้อมูลสกิลจริงในเกม (คง `%s` ตามต้นฉบับไว้แทนค่าตัวเลขที่สเกลตามเลเวลสกิล) ทุกอาชีพยังมี Talent skill กลางชื่อ "Skill #1000107" (Toggle, Lv 1, ไม่มี description ในฐานข้อมูล) ซึ่งตัดออกจากตารางเพราะไม่มีข้อมูลให้อ้างอิง
