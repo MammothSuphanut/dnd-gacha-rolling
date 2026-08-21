@@ -551,7 +551,7 @@
       },
       {
         "partyTagId": "tag-2b35e9ca-23da-40e8-90f7-f49ccbc15d67",
-        "status": "On-Going"
+        "status": "Complete"
       }
     ],
     "campaignRole": "Playable"
@@ -1123,7 +1123,7 @@
     "continuesFrom": "",
     "campaignType": "One-Shot",
     "party": "",
-    "note": "มักใช้เป็นเกม One-Shot ต้อนรับผู้เล่นใหม่",
+    "note": "มักใช้เป็นเกม One-Shot ต้อนร���บผู้เล่นใหม่",
     "partyLinks": [
       {
         "partyTagId": "tag-1c6a35fa-de2c-4761-b724-f20fcb3579ca",
@@ -1949,7 +1949,7 @@
     "partyLinks": [
       {
         "partyTagId": "tag-fa2587b4-c0d2-4a2a-a0bf-f0b015f10f70",
-        "status": "On-Going"
+        "status": "Complete"
       }
     ]
   }
