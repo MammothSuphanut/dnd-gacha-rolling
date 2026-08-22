@@ -48,7 +48,7 @@
 
 | เลเวล | Proficiency Bonus | Mana | Feature |
 |---|---|---|---|
-| 1 | +2 | 2 | **Novice Features**: Strike, First Aid, Play Dead |
+| 1 | +2 | 2 | - |
 | 2 | +2 | 4 | - |
 | 3 | +2 | 6 | **Job Change: Second Class** |
 | 4 | +2 | 8 | Ability Score Improvement |
