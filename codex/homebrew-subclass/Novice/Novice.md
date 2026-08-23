@@ -26,7 +26,7 @@ A Novice's Job Skills — Strike, First Aid, Play Dead, and every technique gran
 
 **Mana Pool.** Your pool is set by your Tier, not your Proficiency Bonus: **2** in Tier 1 (1st-4th level), **3** in Tier 2 (5th-10th level), **4** in Tier 3 (11th-16th level), and **5** in Tier 4 (17th level and beyond) — see the Mana Pool column on the Novice table. You regain all spent Mana when you finish a Long Rest.
 
-**Recovering Mana Mid-Day.** Whenever you finish a Short Rest, you can use Play Dead (see *2nd Level: Play Dead*) to regain **half** your spent Mana, rounded down. There's no limit on how many times per day you can do this beyond how many Short Rests your day includes.
+**Recovering Mana Mid-Day.** Outside of a Long Rest, the only way to recover Mana is Play Dead (see *2nd Level: Play Dead*), which you can use once per Long Rest.
 
 **Spending Mana.** Every Job Skill lists its own Mana cost. If you don't have enough Mana left to pay for one, you can't use it — but Strike never costs more than 1 Mana and is always available, so you're never left with nothing to do.
 
@@ -77,7 +77,7 @@ You gain the First Aid Job Skill (see *Base Job Skills*, below), letting you pat
 
 ### 2nd Level: Play Dead
 
-You gain the Play Dead Job Skill (see *Base Job Skills*, below) — your only way to recover Mana outside of a Long Rest, usable at the end of any Short Rest you take.
+You gain the Play Dead Job Skill (see *Base Job Skills*, below) — your only way to recover Mana outside of a Long Rest, usable once per Long Rest.
 
 ### 3rd Level: Job Change — Second Class
 
@@ -183,7 +183,7 @@ You make one weapon attack against a creature within range, with a **+2** bonus 
 
 You touch a creature within melee range — yourself or an ally — and channel restorative energy into it. The target regains **2d8** hit points.
 
-*Job Skill Advancement.* The healing increase: 4d8 at 7th level, 6d8 at 11th level, and 8d8 at 15th level.
+*Job Skill Advancement.* The healing increase: 4d8 at 9th level, 6d8 at 13th level, and 8d8 at 17th level.
 
 ### Play Dead
 *Job Skill*
@@ -192,9 +192,9 @@ You touch a creature within melee range — yourself or an ally — and channel 
 **Range:** Self
 **Mana Cost:** 0
 
-You lie down and feign death for 10 minute. At the end, you regain **1** Mana, rounded down. you can only use this once per long rest.
+You lie down and feign death for 10 minutes. At the end, you regain **1** Mana. You can only use this once per Long Rest.
 
-*Job Skill Advancement.* Gain 1 additional Mana at 7th level (**2 Mana**), 2 Mana at 11th level (**3 Mana**), and 3 Mana at 15th level (**4 Mana**).
+*Job Skill Advancement.* Gain 1 additional Mana at 9th level (**2 Mana**), 2 Mana at 13th level (**3 Mana**), and 3 Mana at 17th level (**4 Mana**).
 
 ## Job Paths
 
