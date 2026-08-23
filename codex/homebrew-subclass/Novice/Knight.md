@@ -44,96 +44,114 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 ## Knight Job Skills
 
-The 8 Job Skills below are the Knight Job Path's pool. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more at 6th level (3 total), each starting at Rank 1 — and every one you know advances in Rank alongside your other Job Skills at 9th, 13th, and 17th level.
+The 9 Job Skills below are the Knight Job Path's pool, grouped into three playstyles — **Rapid Strike (ตีไว)**, **Skill Burst (กดสกิลใส่มอน)**, and **Tank & Burn (แท้งเผา)**. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more at 6th level (3 total), each starting at Rank 1 — and every one you know advances in Rank alongside your other Job Skills at 9th, 13th, and 17th level. The three groups are a guide for building a coherent Knight, not a hard restriction — picking all 3 from one group gives you the "pure" version of that playstyle, but mixing across groups works too.
 
-### Increase HP Recovery
+### ⚔️ Rapid Strike — ตีไว
+
+#### Wind Cutter
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
+**Range:** Self
+**Mana Cost:** 1
+
+Make **2** weapon attack.
+
+*Job Skill Advancement.* Increase the number of attacks by 1 at 9th (**3**), 13th, (**4**), and 17th level (**5**)
+
+#### Aura Weapon
+*Job Skill*
+
+**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-You gain **2** hit points every 6 seconds that pass, whether or not you're in combat, as long as you have at least 1 hit point. In combat, this amounts to regaining hit points at the start of each of your turns, capped at a total of your level × 5 hit points regained per combat encounter. Outside of combat, there's no cap — it counts as natural recovery while you travel or explore.
+For the duration, your weapon attacks deal an extra **1d6** Fire damage.
 
-*Job Skill Advancement.* The amount regenerated per 6 seconds, and the in-combat cap, both increase: 4 hit points (cap level × 6) at 9th level, 6 hit points (cap level × 7) at 13th level, and 8 hit points (cap level × 8) at 17th level.
+*Job Skill Advancement.* The bonus damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
 
-### Extra Strike
+#### Auto Counter
 *Job Skill*
 
-**Casting Time:** Special (see below)
+**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
+**Duration:** 1 minute
 
-Whenever you take the Attack action with a weapon, you can spend 1 Mana to make **1** additional weapon attack. This doesn't cost an extra action — it simply triggers as part of the Attack action you're already taking, as long as you can pay its Mana cost.
+First time each turn you're hit by a melee attack, you immediately make **1** weapon attack against the attacker.
 
-*Job Skill Advancement.* The number of additional attacks doesn't change at 9th level (still 1) — but it increases to **2** at 13th level and **3** at 17th level, all for the same flat 1 Mana cost.
+*Job Skill Advancement.* The number of counterattacks increases to **2** at 9th level, **3** at 13th level, and **4** at 17th level.
 
-### Mark
+### 🎯 Skill Burst — กดสกิลใส่มอน
+
+#### Mark
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
 **Range:** 60 feet
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-You mark one creature you can see within range. The first time each turn the marked creature is hit by an attack, from any source, it takes an extra **1d6** damage (no more than once per turn).
+You mark one creature you can see within range. The first time each turn the marked creature is hit by an attack, from any source, it takes an extra **1d6** Fire damage (no more than once per turn).
 
 *Job Skill Advancement.* The extra damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
 
-### Joint Beat
+#### Joint Beat
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
 **Range:** 30 feet
 **Mana Cost:** 1
 
-You choose one creature you can see within range. It must make a Constitution saving throw against your Job Skill save DC. On a failure, its speed is halved and it can't take reactions until the end of its next turn.
+You choose one creature you can see within range. It must make a Constitution saving throw against your Job Skill save DC. On a failure, until the start of its next turn its speed is halved and it can't take reactions.
 
-*Job Skill Advancement.* The condition inflicted on a failed save gets replaced by a stronger one as you gain Ranks. At 9th level, a failure reduces the target's speed to 0 instead (it still can't take reactions). At 13th level, the target is **Stunned** instead. At 17th level, the target is **Paralyzed** instead — though a Paralyzed target can attempt the same saving throw again at the start of its own turns, ending the effect early on a success.
+*Job Skill Advancement.* The condition inflicted on a failed save gets replaced by a stronger one as you gain Ranks. At 9th level, a failure reduces the target's speed to 0. At 13th level, the target is **Stunned** instead. At 17th level, the target is **Paralyzed** instead.
 
-### Weapon Empower
+#### Phantom Strike
 *Job Skill*
 
-**Casting Time:** Bonus Action
+**Casting Time:** 1 Attack
+**Range:** Self
+**Mana Cost:** 1
+
+Make **1** weapon attack. If it hits, the target takes an extra **2d8** damage. If the attack misses, you don't spend the Mana Cost.
+
+*Job Skill Advancement.* The extra damage increases to **4d8** at 9th level, **6d8** at 13th level, and **8d8** at 17th level.
+
+### 🔥 Tank & Burn — แท้งเผา
+
+#### Increase HP Recovery
+*Job Skill*
+
+**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-For the duration, your weapon attacks deal an extra **1d6** damage.
+You gain **2** hit points every 6 seconds or start of each of your turns
 
-*Job Skill Advancement.* The bonus damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
+*Job Skill Advancement.* increase by 2 at 9th (**4**), 13th, (**6**), and 17th level (**8**)
 
-### Self-Ignite
+#### Self-Ignite
 *Job Skill*
 
-**Casting Time:** Bonus Action
+**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute (or until you end it)
 
-You gain resistance to Fire damage, then ignite yourself, burning until you end it. At the end of each of your turns while active, every creature within 5 feet of you takes **1d6** Fire damage with no saving throw allowed. You can end this effect at any time as a Free Action.
+You gain resistance to Fire damage, then ignite yourself, burning until you end it. At the end of each of your turns while active, every creature within 5 feet of you takes **2d6** Fire damage with no saving throw allowed. You can end this effect at any time as a Free Action.
 
-*Job Skill Advancement.* The fire damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
+*Job Skill Advancement.* The fire damage increases to **4d6** at 9th level, **6d6** at 13th level, and **8d6** at 17th level.
 
-### Guard
+#### Guard
 *Job Skill*
 
-**Casting Time:** Reaction, which you take when you're hit by an attack
+**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 
-You gain temporary hit points equal to **1d8** + your Novice level.
+You gain temporary hit points equal to **2d8** + your Novice level.
 
-*Job Skill Advancement.* The temporary hit points increase to **2d8** + your Novice level at 9th level, **3d8** + your Novice level at 13th level, and **4d8** + your Novice level at 17th level.
-
-### Counter
-*Job Skill*
-
-**Casting Time:** Reaction, which you take when you're hit by a melee attack
-**Range:** Self
-**Mana Cost:** 1
-
-You immediately make **1** weapon attack against the attacker.
-
-*Job Skill Advancement.* The number of counterattacks increases to **2** at 9th level, **3** at 13th level, and **4** at 17th level.
+*Job Skill Advancement.* The temporary hit points increase to **4d8** + your Novice level at 9th level, **6d8** + your Novice level at 13th level, and **8d8** + your Novice level at 17th level.
