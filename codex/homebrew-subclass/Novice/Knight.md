@@ -48,16 +48,16 @@ The 9 Job Skills below are the Knight Job Path's pool, grouped into three playst
 
 ### ⚔️ Rapid Strike — ตีไว
 
-#### Wind Cutter
+#### Weapon Mastery
 *Job Skill*
 
 **Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 
-Make **2** weapon attack.
+Make an attack with your weapon. The attack roll and damage roll have **+1** bonus.
 
-*Job Skill Advancement.* Increase the number of attacks by 1 at 9th (**3**), 13th, (**4**), and 17th level (**5**)
+*Job Skill Advancement.* Increase the attack roll and damage roll by **1** at 9th (**+2**), 13th, (**+3**), and 17th level (**+4**).
 
 #### Aura Weapon
 *Job Skill*
@@ -115,7 +115,7 @@ You choose one creature you can see within range. It must make a Constitution sa
 **Range:** Self
 **Mana Cost:** 1
 
-Make **1** weapon attack. If it hits, the target takes an extra **3d8** damage. If the attack misses, you don't spend the Mana Cost.
+Make **1** weapon attack. If it hits, the target takes an extra **3d8** Fire damage. If the attack misses, you don't spend the Mana Cost.
 
 *Job Skill Advancement.* The extra damage increases to **6d8** at 9th level, **9d8** at 13th level, and **12d8** at 17th level.
 

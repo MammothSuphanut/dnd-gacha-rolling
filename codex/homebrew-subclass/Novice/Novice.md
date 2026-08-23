@@ -170,7 +170,7 @@ The 3 Job Skills below are the only ones that exist so far — every Job Path gr
 **Range:** 5 feet
 **Mana Cost:** 1
 
-You make one weapon attack against a creature within range, with a **+2** bonus to the attack roll.
+You make one weapon attack against a creature within range, with a **+2** bonus to the attack roll and damage roll.
 
 *Job Skill Advancement.* The bonus increases to +3 at 9th level, +4 at 13th level, and +5 at 17th level.
 
@@ -183,18 +183,18 @@ You make one weapon attack against a creature within range, with a **+2** bonus 
 
 You touch a creature within melee range — yourself or an ally — and channel restorative energy into it. The target regains **2d8** hit points.
 
-*Job Skill Advancement.* The healing and Mana cost both increase: 4d8 (2 Mana) at 9th level, 6d8 (3 Mana) at 13th level, and 8d8 (4 Mana) at 17th level.
+*Job Skill Advancement.* The healing increase: 4d8 at 7th level, 6d8 at 11th level, and 8d8 at 15th level.
 
 ### Play Dead
 *Job Skill*
 
-**Casting Time:** Action (takes 1 minute to complete, and only works outside combat)
+**Casting Time:** Action
 **Range:** Self
 **Mana Cost:** 0
 
-You lie down and feign death for 1 minute, usable only at the end of a Short Rest you take. At the end, you regain **half** of your spent Mana, rounded down. There's no limit to how many times you can use this per day — only to how many Short Rests your day includes.
+You lie down and feign death for 10 minute. At the end, you regain **1** Mana, rounded down. you can only use this once per long rest.
 
-*Job Skill Advancement.* None — Play Dead doesn't change with Rank.
+*Job Skill Advancement.* Gain 1 additional Mana at 7th level (**2 Mana**), 2 Mana at 11th level (**3 Mana**), and 3 Mana at 15th level (**4 Mana**).
 
 ## Job Paths
 
