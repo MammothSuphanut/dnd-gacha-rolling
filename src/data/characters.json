@@ -760,10 +760,10 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-68994f11-c873-4910-8568-b636c6989a0f",
+        "id": "classlevel-4b31efd2-1b03-40d9-b749-f567c83c281a",
         "className": "Warlock",
         "subclassName": "The Fathomless",
-        "level": 2
+        "level": 3
       }
     ],
     "species": "Deep Gnome",
@@ -784,7 +784,7 @@
     "hair": "",
     "skin": "",
     "height": "",
-    "weight": "",
+    "weight": "90 lb",
     "age": "",
     "ideals": "",
     "bonds": "",
@@ -804,13 +804,13 @@
     "combat": {
       "ac": "",
       "speed": "30 ft",
-      "hitDice": "2d8",
+      "hitDice": "3d8",
       "inspiration": false,
-      "xp": 0,
+      "xp": 900,
       "hp": {
-        "current": 21,
+        "current": 30,
         "max": "",
-        "temp": ""
+        "temp": 12
       },
       "deathSaves": {
         "successes": 0,
@@ -1037,12 +1037,28 @@
       {
         "name": "Fiendish Vigor",
         "description": "Prerequisite: Level 2+ Warlock You can cast @spell[False Life|XPHB] on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the @variantrule[Temporary Hit Points|XPHB]; you automatically get the highest number on the die."
+      },
+      {
+        "name": "Tentacle of the Deeps",
+        "description": "1st-level Fathomless feature You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle. When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes [[/damage 1d8 type=cold]] damage, and its speed is reduced by 10 feet until the start of your next turn. When you reach 10th level in this class, the damage increases to [[/damage 2d8]]. As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack. You can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      },
+      {
+        "name": "Gift of the Sea",
+        "description": "1st-level Fathomless feature You gain a swimming speed of 40 feet, and you can breathe underwater."
+      },
+      {
+        "name": "Grasp of Hadar",
+        "description": "Prerequisite: @spell[eldritch blast] cantrip Once on each of your turns when you hit a creature with your @spell[eldritch blast], you can move that creature in a straight line 10 feet closer to you."
+      },
+      {
+        "name": "Magical Cunning",
+        "description": "You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a @variantrule[Long Rest|XPHB]."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "Lucky",
+    "additionalFeaturesTraits": "Lucky; Eldritch Adept (Grasp of Hadar)",
     "spellcasting": {
       "spellcastingClass": "Warlock",
       "spellcastingAbility": "CHA",
@@ -1084,10 +1100,6 @@
               "prepared": true
             },
             {
-              "name": "Armor of Agathys",
-              "prepared": true
-            },
-            {
               "name": "False Life",
               "prepared": true
             },
@@ -1097,6 +1109,10 @@
             },
             {
               "name": "Lashing Tendrils",
+              "prepared": true
+            },
+            {
+              "name": "Abyssal Rebuke",
               "prepared": true
             },
             {
@@ -1134,8 +1150,8 @@
           "slotsRemaining": "",
           "spells": [
             {
-              "name": "",
-              "prepared": false
+              "name": "Misty Step",
+              "prepared": true
             },
             {
               "name": "",
@@ -1512,10 +1528,10 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-123ac852-f017-42cf-9e56-11992c153a10",
+        "id": "classlevel-722d245f-f35f-44ef-ac64-028f0e95c000",
         "className": "Warlock",
         "subclassName": "Celestial Patron",
-        "level": 2
+        "level": 3
       }
     ],
     "species": "Shadar-Kai",
@@ -1536,7 +1552,7 @@
     "hair": "",
     "skin": "",
     "height": "",
-    "weight": "",
+    "weight": "90 lb",
     "age": "",
     "ideals": "",
     "bonds": "",
@@ -1556,13 +1572,13 @@
     "combat": {
       "ac": "",
       "speed": "30 ft",
-      "hitDice": "2d8",
+      "hitDice": "3d8",
       "inspiration": false,
-      "xp": 0,
+      "xp": 900,
       "hp": {
-        "current": 19,
+        "current": 27,
         "max": "",
-        "temp": ""
+        "temp": 12
       },
       "deathSaves": {
         "successes": 0,
@@ -1757,17 +1773,29 @@
       {
         "name": "Agonizing Blast",
         "description": "Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls. Repeatable. You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+      },
+      {
+        "name": "Celestial Spells",
+        "description": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Celestial Spells table, you thereafter always have the listed spells prepared. Celestial Spells Warlock Level Spells 3 @spell[Aid|XPHB], @spell[Cure Wounds|XPHB], @spell[Guiding Bolt|XPHB], @spell[Lesser Restoration|XPHB], @spell[Light|XPHB], @spell[Sacred Flame|XPHB] 5 @spell[Daylight|XPHB], @spell[Revivify|XPHB] 7 @spell[Guardian of Faith|XPHB], @spell[Wall of Fire|XPHB] 9 @spell[Greater Restoration|XPHB], @spell[Summon Celestial|XPHB]"
+      },
+      {
+        "name": "Healing Light",
+        "description": "You gain the ability to channel celestial energy to heal wounds. You have a pool of d6s to fuel this healing. The number of dice in the pool equals 1 plus your Warlock level. As a @variantrule[Bonus Action|XPHB], you can heal yourself or one creature you can see within 60 feet of yourself, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend, and restore a number of @variantrule[Hit Points|XPHB] equal to the roll's total. Your pool regains all expended dice when you finish a @variantrule[Long Rest|XPHB]."
+      },
+      {
+        "name": "Magical Cunning",
+        "description": "You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a @variantrule[Long Rest|XPHB]."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "Magic Initiate; Cleric",
+    "additionalFeaturesTraits": "Magic Initiate; Cleric; Favorite Spell: Cure Wound",
     "spellcasting": {
       "spellcastingClass": "Warlock",
       "spellcastingAbility": "CHA",
-      "spellSaveDC": "14",
-      "spellAttackBonus": "+6",
+      "spellSaveDC": "",
+      "spellAttackBonus": "",
       "cantrips": [
         {
           "name": "Eldritch Blast"
@@ -1791,7 +1819,7 @@
           "name": "Guidance"
         },
         {
-          "name": ""
+          "name": "Light"
         }
       ],
       "levels": {
@@ -1828,12 +1856,12 @@
               "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Cure Wounds (Favorite Spell)",
+              "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Guiding Bolt",
+              "prepared": true
             },
             {
               "name": "",
@@ -1854,16 +1882,16 @@
           "slotsRemaining": "",
           "spells": [
             {
-              "name": "",
-              "prepared": false
+              "name": "Aid",
+              "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Lesser Restoration",
+              "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Suggestion",
+              "prepared": true
             },
             {
               "name": "",
