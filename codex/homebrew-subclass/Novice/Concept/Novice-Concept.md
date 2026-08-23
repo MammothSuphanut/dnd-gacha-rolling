@@ -46,26 +46,26 @@
 
 ## Level Progression
 
-| เลเวล | Proficiency Bonus | Max Mana | Mana per day (Pool = PB × 3) | Feature |
+| เลเวล | Proficiency Bonus | Max Mana | Mana per day (= Pool × 3) | Feature |
 |---|---|---|---|---|
 | 1 | +2 | 2 | 6 | ได้ **STRIKE** + **First Aid** |
 | 2 | +2 | 2 | 6 | ได้ **Play Dead** |
-| 3 | +2 | 2 | 6 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน |
+| 3 | +2 | 2 | 6 | **Job Change: Second Class** + เลือก Job Path Job Skill 2 อัน |
 | 4 | +2 | 2 | 6 | Ability Score Improvement |
 | 5 | +3 | 3 | 9 | **Extra Attack**|
-| 6 | +3 | 3 | 9 | เลือก Job Path Track 1 อัน  |
+| 6 | +3 | 3 | 9 | **Super Novice** — เลือก Job Path Job Skill เพิ่มอีก 1 อัน |
 | 7 | +3 | 3 | 9 | **Job Change: Transcendent Second Class** |
 | 8 | +3 | 3 | 9 | Ability Score Improvement |
-| 9 | +4 | 4 | 12 | **ทุก Track ที่ถืออยู่ → Rank 2** |
-| 10 | +4 | 4 | 12 | - |
+| 9 | +4 | 4 | 12 | **ทุก Job Skill ที่ถืออยู่ → Rank 2** |
+| 10 | +4 | 4 | 12 | **Ultra Super Novice** — Jack of All Trades |
 | 11 | +4 | 4 | 12 | **Job Change: Third Class** |
 | 12 | +4 | 4 | 12 | Ability Score Improvement |
-| 13 | +5 | 5 | 15 | **ทุก Track ที่ถืออยู่ → Rank 3** |
-| 14 | +5 | 5 | 15 | - |
+| 13 | +5 | 5 | 15 | **ทุก Job Skill ที่ถืออยู่ → Rank 3** |
+| 14 | +5 | 5 | 15 | **Elevated Novice** — เพิ่ม proficiency saving throw อีก 1 อัน |
 | 15 | +5 | 5 | 15 | **Job Change: Fourth Class** |
 | 16 | +5 | 5 | 15 | Ability Score Improvement |
-| 17 | +6 | 6 | 18 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
-| 18 | +6 | 6 | 18 | - |
+| 17 | +6 | 6 | 18 | **ทุก Job Skill ที่ถืออยู่ → Rank 4 (เต็ม)** |
+| 18 | +6 | 6 | 18 | **Hyper Novice** — Indomitable Will |
 | 19 | +6 | 6 | 18 | Ability Score Improvement |
 | 20 | +6 | 6 | 18 | **Extra Attack Improvement** |
 
@@ -76,28 +76,39 @@
 >
 > ⚠️ **ผลกระทบที่ต้องแก้ต่อ**: Job Skill ที่ระบุ Casting Time: Action ทุกอันตอนนี้ "ราคาโอกาส" ถูกลงมาก (เดิมใช้แล้วเสียทั้งเทิร์น ตอนนี้แค่เสีย 1 ใน 2-3 attack slot เท่านั้น ที่เหลือยังโจมตีต่อได้) ต้อง balance-pass ใหม่ทุก Job Skill ที่โดนผลนี้ — และ **Wind Cutter ("ทำ 2-3 การโจมตี" ต่อการใช้ 1 ครั้ง) ชนกับนิยาม Extra Attack ใหม่โดยตรง** เพราะตอนนี้ตัวคลาสเองมีกลไก "โจมตีได้หลายครั้ง" อยู่แล้วในระดับ baseline ต้องออกแบบ Wind Cutter ใหม่ (ไม่ใช่แค่ปรับตัวเลข) — ดูการตัดสินใจที่ [Knight.md](JobSkill/Knight.md)
 >
-> ดูรายละเอียดเต็มที่หัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง — สรุปสั้นๆ: Base Track ทั้ง 3 อันได้อัตโนมัติไม่ต้องเลือก (Strike+First Aid ที่ lv1, Play Dead ที่ lv2), Job Path Track เลือก 2 อันที่ lv3 + เพิ่มอีก 1 อันที่ lv20 (ไม่ auto-upgrade แล้วเพราะมาหลัง lv17), **ทุก Track ที่ถืออยู่ ณ ตอนนั้น (ไม่ว่า Base หรือ Job Path) อัป Rank ขึ้นเองพร้อมกันหมดที่ lv9/13/17** ไม่มีแต้มให้เลือก ไม่มีจุดแข่งกัน — **ไม่มี Respec**
+> ดูรายละเอียดเต็มที่หัวข้อ [ระบบการเลือก/อัพเกรด Job Skill](#ระบบการเลือกอัพเกรด-job-skill-pick--upgrade-schedule) ด้านล่าง — สรุปสั้นๆ: Base Job Skill ทั้ง 3 อันได้อัตโนมัติไม่ต้องเลือก (Strike+First Aid ที่ lv1, Play Dead ที่ lv2), Job Path Job Skill เลือก 2 อันที่ lv3 + เพิ่มอีก 1 อันที่ lv20 (ไม่ auto-upgrade แล้วเพราะมาหลัง lv17), **ทุก Job Skill ที่ถืออยู่ ณ ตอนนั้น (ไม่ว่า Base หรือ Job Path) อัป Rank ขึ้นเองพร้อมกันหมดที่ lv9/13/17** ไม่มีแต้มให้เลือก ไม่มีจุดแข่งกัน — **ไม่มี Respec**
 >
 > 🔄 **2026-08-23 (rev. 2 — auto-upgrade ทั้งหมด, ตัดจุดหยิบที่ lv7/11/15 ออก)**: เปลี่ยนจากระบบ "จุดอัพเกรดแบบเลือกเอง ผูก cap กับ milestone" (rev. 1 ด้านล่าง) → **auto-upgrade ล้วนๆ ไม่มีจุดให้เลือกอีกเลย** ทุก Track ที่ถืออยู่ ณ ตอนนั้นอัป Rank พร้อมกันหมดที่ lv9/13/17 — ตัดปัญหา "Track ไหนไม่ได้อัปจะรู้สึกแย่" ออกไปทั้งหมดเพราะไม่มี Track ไหนถูกทิ้งอีกแล้ว (ยกเว้น Job Path Track ที่หยิบตอน lv20 ซึ่งตั้งใจให้ค้าง Rank 1 ตลอดไปเป็นของแถมท้ายสาย) — **lv7/11/15 ไม่ผูกกับ Track อีกต่อไป** เหลือแค่ Job Change (เปลี่ยนชื่อ tier) + subclass feature คงที่ที่จะออกแบบทีหลัง (ไม่ใช่ Track)
 >
 > 🔄 **2026-08-23 (rev. 1, ถูกแทนที่ด้วย rev. 2 แล้ว)**: เคยลองผูก cap ของ Rank กับ Job Change milestone (R1@lv3→R2@lv7→R3@lv11→R4@lv15) แล้วให้จุดอัพเกรดที่ lv9/10/13/14/17/18 (6 แต้ม) เลือกเองว่าจะอัป Track ไหน — พบว่า level 5/6 (จุดอัพเกรดเดิม) ใช้จริงไม่ได้เพราะ cap ยังไม่ขยับจนกว่าจะถึง lv7 เลยตัดออกไปก่อน ก่อนจะเปลี่ยนไปใช้ auto-upgrade ล้วนๆ ใน rev. 2 แทน
 
-**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **Proficiency Bonus × 2** (universal ทุก Job, ไม่มี HP-swap) — ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — รายละเอียดเต็มเรื่อง cost/recovery ดูหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules) ด้านล่าง
+### Universal Chassis Feature (เลเวล 6/10/14/18)
+
+นอกจาก Job Skill กับ Job Change แล้ว มี feature เสริมอีกชุดที่**ทุก Job ได้เหมือนกันหมด ไม่ผูกกับสายที่เลือก** วางไว้ 4 จุด (6/10/14/18) — ตั้งชื่อล้อกับมีม "Super Novice → Ultra Super Novice" ในคอมมูนิตี้ RO (ฉายาที่แฟนๆเรียกผู้เล่น Super Novice ระดับสูง) มาใช้เป็น flavor name เฉยๆ แม้ตัว feature จะใช้ได้กับทุก Job ไม่ใช่แค่สาย Super Novice ก็ตาม — เป็น idiom มาตรฐานของ 5e ทั้งหมด ไม่แตะ Mana Pool/Day Math เลย:
+
+- **เลเวล 6 — Super Novice**: เลือก Job Path Job Skill เพิ่มอีก **1 อัน** จาก pool ของ Job ที่เลือกไว้ (Rank 1) — มาก่อนจุด auto-upgrade แรก (lv9) จึงตาม Rank ทันทุกจุดเหมือน 2 อันแรกจากเลเวล 3 (ดูรายละเอียดที่หัวข้อ [ระบบการเลือก/อัพเกรด Job Skill](#ระบบการเลือกอัพเกรด-job-skill-pick--upgrade-schedule))
+- **เลเวล 10 — Ultra Super Novice**: บวก**ครึ่งหนึ่งของ Proficiency Bonus** (ปัดลง) เข้า ability check ใดก็ตามที่คุณยังไม่มี proficiency อยู่แล้ว (Jack of All Trades)
+- **เลเวล 14 — Elevated Novice**: เลือกเพิ่ม proficiency ให้ saving throw ได้อีก **1 อัน** (นอกเหนือจาก Dexterity/Constitution ที่มีอยู่แล้วตั้งแต่ต้น)
+- **เลเวล 18 — Hyper Novice**: **1 ครั้ง/Long Rest** เมื่อ saving throw พลาด เลือกให้สำเร็จแทนได้ (Indomitable Will)
+
+**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **Proficiency Bonus × 1** (universal ทุก Job, ไม่มี HP-swap) — ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — รายละเอียดเต็มเรื่อง cost/recovery ดูหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules) ด้านล่าง
 >
 > 🔄 **2026-08-23**: ปรับจาก **เลเวล×2 → เลเวล×1** ตามคำสั่งตรง คู่กับการปรับทุก Track ของ [Knight.md](Knight.md#8-track-หลัก-passiveactionbonus-actionreaction) ให้เสีย mana 1 คงที่ทุก Rank — **⚠️ Day Math Sanity Check และตาราง reference ด้านล่างยังเป็นตัวเลขเก่าที่คำนวณจาก pool เดิม (เลเวล×2) อยู่ ยังไม่ได้ไล่คำนวณใหม่** โดยเฉพาะเลเวลสูง (9+) ที่ pool ยังโตเชิงเส้นตามเลเวลต่อไปแต่ท่าจะคงราคาที่ 1 mana เสมอ (ถ้า Job Path อื่นทำตาม pattern เดียวกับ Knight) อาจทำให้จำนวนครั้ง/วันเกินกรอบเป้าหมาย 6-10 ครั้ง/วันที่ตั้งไว้ — รอ balance pass รอบหน้า ขอบเขตการเปลี่ยนรอบนี้ยังจำกัดแค่ Knight เท่านั้น (Job Path อื่นที่ยังเป็นวัตถุดิบดิบยังไม่ได้แตะ) (ถูกแทนที่ด้วยรอบถัดไปด้านล่างแล้ว)
 >
 > 🔄 **2026-08-23 (รอบล่าสุด — เปลี่ยนไปผูกกับ Proficiency Bonus + ตัด Short Rest recovery)**: เปลี่ยนจาก **เลเวล×1 → Proficiency Bonus × 2** (pool = 4/6/8/10/12 ตามช่วงเลเวล 1-4/5-8/9-12/13-16/17-20) เพื่อไม่ให้ pool โตเชิงเส้นไม่มีเพดานเหมือนตอนผูกกับเลเวลตรงๆ — คู่กับการ **ตัด Short Rest recovery ออกจากระบบทั้งหมด** (เดิมคืน mana = PB ปัจจุบันตอน short rest) เปลี่ยนมาให้จุดคืนมานาระหว่างวันเป็นหน้าที่ของ Track **Play Dead** เพียงจุดเดียวแทน — ⚠️ ลองตั้งโควตา Play Dead ที่ **Proficiency Bonus ครั้ง/วัน** ก่อน พบว่า Day Math ไม่ผ่าน (โตแบบ quadratic ตาม PB) จึงแก้เป็นรอบถัดไปด้านล่างนี้แล้ว
 >
 > 🔄 **2026-08-23 (รอบถัดมา — ล็อกโควตา Play Dead ที่ 2 ครั้ง/วันคงที่ ไม่ผูกกับ PB)**: เปลี่ยนโควตา Play Dead จาก **Proficiency Bonus ครั้ง/วัน → 2 ครั้ง/วันคงที่ทุกเลเวล** (สะท้อนธีม "จำนวนรอบพักระหว่างวัน" แบบ 5e มาตรฐาน 2 short rest/วัน แทนที่จะสเกลตามพลัง) — ทำให้ Total mana/วัน = Pool × 3 (โตเชิงเส้นตาม Pool ล้วนๆ ไม่ใช่ quadratic แล้ว) ผ่าน Day Math สมเหตุสมผลกว่าเดิมมาก ดูตาราง reference ที่แก้แล้วด้านล่าง
+>
+> 🔄 **2026-08-23 (ล่าสุด — กลับไป Proficiency Bonus × 1 ตามคำสั่งตรงจากผู้ใช้)**: เปลี่ยนจาก **Proficiency Bonus × 2 → Proficiency Bonus × 1** (pool = 2/3/4/5/6 ตามช่วงเลเวล 1-4/5-8/9-12/13-16/17-20 — ตรงกับค่า Proficiency Bonus เป๊ะ) — สะท้อนเข้า [Novice.md](../Novice.md) แล้ว (ไฟล์ class หลักที่ compile จาก draft นี้) ตาราง reference/Day Math ด้านล่างคำนวณใหม่ตามค่านี้แล้ว — ⚠️ **ยังไม่ได้ตรวจ Day Math ใหม่กับราคา mana จริงของ First Aid ที่ Rank สูง** (Rank 4 ที่ lv17 ราคา 4 mana แต่ pool มีแค่ 6 — เหลือพื้นที่ใช้ได้จำกัดมากต่อ 1 pool) รอ balance pass รอบหน้าถ้าต้องการ
 
 ### กฎการใช้ Mana (Mana Usage Rules)
 
 > กฎกลางที่ใช้ได้กับทุกสาย/ทุก tier — ล็อกไว้แล้วหลังทดลองตั้งราคาจริงกับ Swordsman/Knight tier (ดู [Knight.md](Knight.md#dd-feature-draft--swordsman-1st-class)) ครั้งต่อไปที่แปลงสกิลสายอื่น ให้ใช้ cost band + sanity check ด้านล่างนี้แทนการคำนวณ balance ใหม่ตั้งแต่ต้น
 
 **Pool & Recovery**
-- Pool = **Proficiency Bonus × 2** (universal ทุก Job) — 🔄 2026-08-23: เปลี่ยนจากเดิมเลเวล×1 (ดู revision note ด้านบน)
+- Pool = **Proficiency Bonus × 1** (universal ทุก Job) — 🔄 2026-08-23: กลับไปที่ PB×1 ตามคำสั่งตรงจากผู้ใช้ (เคยผ่าน PB×2 มาก่อน ดู revision note ด้านบน)
 - Long Rest: คืนเต็ม pool เสมอ
-- **ไม่มี Short Rest recovery แล้ว** (เดิมคืน mana = Proficiency Bonus ปัจจุบันตอน short rest — ตัดออกทั้งกฎ) — จุดคืนมานาระหว่างวันจุดเดียวที่เหลืออยู่คือ Track **Play Dead** (Novice-Base, ทุกตัวละครได้ตั้งแต่ level 2): คืนเต็ม pool ต่อการใช้ 1 ครั้ง ใช้ได้ **2 ครั้ง/วันคงที่ทุกเลเวล** (ไม่ผูกกับ Proficiency Bonus แล้ว — ดู revision note ด้านบน) เท่ากันทุก Rank ไม่ scale — ดู [Novice-Base.md](Novice-Base.md#dd-feature-draft--novice-base-job)
+- **ไม่มี Short Rest recovery แล้ว** (เดิมคืน mana = Proficiency Bonus ปัจจุบันตอน short rest — ตัดออกทั้งกฎ) — จุดคืนมานาระหว่างวันจุดเดียวที่เหลืออยู่คือ Job Skill **Play Dead** (Novice-Base, ทุกตัวละครได้ตั้งแต่ level 2): คืนเต็ม pool ต่อการใช้ 1 ครั้ง ใช้ได้ **2 ครั้ง/วันคงที่ทุกเลเวล** (ไม่ผูกกับ Proficiency Bonus แล้ว — ดู revision note ด้านบน) เท่ากันทุก Rank ไม่ scale — ดู [Novice-Base.md](Novice-Base.md#dd-feature-draft--novice-base-job)
 - Feature อื่นนอกจาก Play Dead ยังห้ามออกแบบให้คืน mana เต็ม pool เด็ดขาด (Play Dead คือข้อยกเว้นเดียวที่อนุญาตไว้แล้วโดยตั้งใจ จำกัดด้วยโควตา 2 ครั้ง/วัน) — อนุญาตให้มี feature เฉพาะจุดที่คืน mana เพิ่มได้เป็นชั้นเสริมเล็กๆ (เช่น Fatal Blow คืน 1 mana ตอน proc) แต่ต้องผูกกับเงื่อนไขในเกม (โจมตีสำเร็จ/ฆ่า) ไม่ใช่ auto
 
 **Cost Bands ตามประเภทท่า** (baseline — ปรับได้ตามความแรงจริงของแต่ละท่า ไม่ใช่กฎตายตัว 100%)
@@ -118,31 +129,39 @@ Total mana ต่อวัน ≈ Pool (Long Rest) + (**2 ครั้ง/วั
 
 ตาราง reference สำเร็จรูปต่อช่วงเลเวล (คำนวณไว้แล้ว ใช้แทนได้เลย):
 
-| เลเวล | Pool (PB×2) | Play Dead เต็มโควตา/วัน | Total Mana/วัน (Pool × 3) | avg cost เป้าหมาย (ที่ 6-10 ครั้ง/วัน) |
+> 🔄 **2026-08-23**: ตารางนี้คำนวณใหม่ทั้งหมดตาม Pool = PB×1 ที่ล็อกล่าสุดแล้ว (เดิมคำนวณจาก PB×2 — ดู revision note ที่หัวข้อ [Universal Chassis Feature](#universal-chassis-feature-เลเวล-61014-18) ด้านบน)
+
+| เลเวล | Pool (PB×1) | Play Dead เต็มโควตา/วัน | Total Mana/วัน (Pool × 3) | avg cost เป้าหมาย (ที่ 6-10 ครั้ง/วัน) |
 |---|---|---|---|---|
-| 1-4 | 4 | 2 | 12 | 1.2-2 |
-| 5-8 | 6 | 2 | 18 | 1.8-3 |
-| 9-12 | 8 | 2 | 24 | 2.4-4 |
-| 13-16 | 10 | 2 | 30 | 3-5 |
-| 17-20 | 12 | 2 | 36 | 3.6-6 |
+| 1-4 | 2 | 2 | 6 | 0.6-1 |
+| 5-8 | 3 | 2 | 9 | 0.9-1.5 |
+| 9-12 | 4 | 2 | 12 | 1.2-2 |
+| 13-16 | 5 | 2 | 15 | 1.5-2.5 |
+| 17-20 | 6 | 2 | 18 | 1.8-3 |
 
-✅ **ผ่าน sanity check**: หลังล็อกโควตา Play Dead ที่ 2 ครั้ง/วันคงที่ (ไม่ผูกกับ PB แล้ว) Total Mana/วันโต**เชิงเส้นตาม Pool** เท่านั้น (×3 คงที่ทุกเลเวล) ไม่ใช่ quadratic แบบตอนผูกกับ PB — avg cost เป้าหมายไล่จาก ~1.5 (เลเวลต้น) ถึง ~5 (เลเวลปลาย) ซึ่งอยู่ในกรอบที่ Cost Bands ด้านบนออกแบบไว้พอดี (ท่า Bonus Action/Reaction เริ่มที่ 1, ท่า AoE/capstone แพงขึ้นไปถึง 3+ ตาม Rank) — เงื่อนไข **Play Dead ใช้ได้แค่นอกการต่อสู้ + ใช้เวลา 1 นาที** ยังคงไว้เหมือนเดิมเพื่อกันไม่ให้ spam กลางไฟต์
+⚠️ **ยังไม่ผ่าน sanity check เต็มรูปแบบหลังกลับไป PB×1**: Total Mana/วันยังโต**เชิงเส้นตาม Pool** เหมือนเดิม (×3 คงที่ทุกเลเวล) แต่ avg cost เป้าหมายที่ 6-10 ครั้ง/วันตอนนี้แคบลงมาก โดยเฉพาะช่วงเลเวลต้น (1-4) ที่เหลือแค่ ~0.6-1 ต่อครั้ง ซึ่ง**ต่ำกว่า floor ขั้นต่ำ 1 mana/ท่าที่กติกา Cost Bands ด้านบนกำหนดไว้** (ทุกท่าที่ไม่ใช่ signature attack ฟรี/passive ต้องจ่ายอย่างน้อย 1 mana) — เท่ากับว่าเลเวลต้นเล่นได้จริงแค่ ~6 ครั้ง/วัน (ต่ำกว่ากรอบ 6-10 ที่ตั้งไว้พอดีที่ขอบล่าง) และ **First Aid ที่ Rank สูง (4 mana ที่ lv17, pool มีแค่ 6) แทบใช้ไม่ได้ 2 ครั้งต่อ pool เดียว** — จุดนี้ยังไม่ได้ balance pass ใหม่ รอผู้ใช้ยืนยันว่าจะยอมรับตัวเลขนี้หรือปรับราคา Job Skill ให้ต่ำลงตาม
 
-**หมายเหตุจังหวะ**: เลเวล 3/7/11/15 คือ "Job Change" milestone ใหญ่ 4 จุด **ข้าม First Class เป็น mechanical step ไปเลย** แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — lv3 ยังทำหน้าที่เลือก Job Path Track ด้วย ส่วน lv7/11/15 เหลือแค่ Job Change + subclass feature (รอออกแบบ) ไม่ผูกกับ Track แล้ว — Track ทั้งหมดอัป Rank อัตโนมัติพร้อมกันที่ **lv9/13/17** แทน (ดูหัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง) ส่วน level 5/6/10/14/18 ว่างไว้ก่อน ("-") รอออกแบบ feature อื่นที่ไม่ใช่ Track, level 20 ได้ Job Path Track เพิ่ม 1 อัน (bonus ท้ายสาย)
+**หมายเหตุจังหวะ**: เลเวล 3/7/11/15 คือ "Job Change" milestone ใหญ่ 4 จุด **ข้าม First Class เป็น mechanical step ไปเลย** แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — lv3 ยังทำหน้าที่เลือก Job Path Job Skill ด้วย ส่วน lv7/11/15 เหลือแค่ Job Change + subclass feature (รอออกแบบ) ไม่ผูกกับ Job Skill แล้ว — Job Skill ทั้งหมดอัป Rank อัตโนมัติพร้อมกันที่ **lv9/13/17** แทน (ดูหัวข้อ [ระบบการเลือก/อัพเกรด Job Skill](#ระบบการเลือกอัพเกรด-job-skill-pick--upgrade-schedule) ด้านล่าง) ส่วน level 5 ได้ Extra Attack, level 6/10/14/18 ได้ **Universal Chassis Feature** (Super Novice / Ultra Super Novice / Elevated Novice / Hyper Novice — ดูหัวข้อด้านบน) โดยเลเวล 6 เป็นจุดเลือก Job Path Job Skill เพิ่มอีก 1 อันด้วย (จุดสุดท้ายที่หยิบ Job Path Job Skill — ไม่มีจุดหยิบที่ level 20 อีกต่อไป ดู revision note ที่หัวข้อ [ระบบการเลือก/อัพเกรด Job Skill](#ระบบการเลือกอัพเกรด-job-skill-pick--upgrade-schedule)), level 20 ได้แค่ **Extra Attack Improvement**
 
 > 🚧 ระบบ Mastery Branch (เดิมอยู่ที่ Mastery-Branches.md) ถูกลบไปแล้ว รอออกแบบใหม่ทั้งจังหวะ Mastery Point และเนื้อหา pool ให้ตรงกับตารางเลเวลนี้ก่อนใช้งานจริง
 
-## ระบบการเลือก/อัพเกรด Track (Pick & Upgrade Schedule)
+## ระบบการเลือก/อัพเกรด Job Skill (Pick & Upgrade Schedule)
 
 > 🔄 **2026-08-23**: เปลี่ยนเป็น**ระบบ auto-upgrade ล้วนๆ** — ตัดจุด "อัพเกรดแบบเลือกเอง" ออกทั้งหมด แทนที่ด้วยจุด auto ที่ตายตัว 3 จุด (lv9/13/17) ที่อัป Rank ให้ **ทุก Track ที่ถืออยู่พร้อมกันหมด** ไม่ต้องเลือก ไม่มีแต้มให้บริหาร (ดูประวัติการเปลี่ยนแปลงที่หมายเหตุใต้ตาราง [Level Progression](#level-progression)) — **Respec ยังคงไม่มี**: Track ที่เลือกไว้แล้ว (Job Path ที่ lv3/lv20) เปลี่ยนใจทีหลังไม่ได้
+>
+> 🔄 **2026-08-23 (เพิ่มจุดเลือกที่ lv6 — Super Novice)**: เติม level 6/10/14/18 ที่เคยว่างเป็น "-" ด้วยชุด **Universal Chassis Feature** (ดูหัวข้อ [Universal Chassis Feature](#universal-chassis-feature-เลเวล-61014-18) ใต้ตาราง Level Progression) — เลเวล 6 ("Super Novice") กลายเป็นจุดเลือก Job Path Track เพิ่มอีก 1 อันของจริง (ไม่ใช่เศษข้อความเก่าที่ตกหล่นจาก rev.1 อย่างที่เข้าใจไว้ก่อนหน้า) ทำให้ Job Path Track รวมเพิ่มจาก 3 → **4 อัน** (Track รวมทั้งสายเพิ่มจาก 6 → **7 อัน**) — เลเวล 10/14/18 ที่เหลือได้ Jack of All Trades / เพิ่ม saving throw proficiency / Indomitable Will ตามลำดับ ทั้งหมดเป็น idiom มาตรฐาน 5e ไม่แตะ Mana Pool/Day Math
+>
+> 🔄 **2026-08-23 (เปลี่ยนชื่อระบบ Track → Job Skill)**: เปลี่ยนคำศัพท์ "Track" เป็น "Job Skill" ทั่วทั้งเอกสาร (รวมชื่อหัวข้อนี้) ตามคำสั่งตรงจากผู้ใช้ — ให้ตรงกับคำที่ใช้ใน [Novice.md](../Novice.md) (ไฟล์ class หลัก) และ [JobSkill Planning/Novice.md](../JobSkill%20Planning/Novice.md) ที่เรียกแต่ละความสามารถว่า Job Skill อยู่แล้ว กลไกเดิมทุกอย่างเหมือนเดิมทุกประการ (Rank 1-4, auto-upgrade ที่ lv9/13/17, pick schedule lv3/6/20) — เปลี่ยนแค่ชื่อเรียก ข้อความใน revision log ที่มีวันที่ก่อนหน้าโน้ตนี้ (2 ก้อนด้านบน) ยังคงคำว่า "Track" ไว้ตามเดิมโดยตั้งใจ เพื่อรักษาความถูกต้องของบันทึกประวัติการตัดสินใจ ณ ตอนนั้น
 
-**Base Track (3 อัน, ไม่ต้องเลือก)**: ได้อัตโนมัติทั้ง 3 อันจาก [Novice-Base.md](Novice-Base.md) — **Strike + First Aid ที่ level 1**, **Play Dead ที่ level 2** — ไม่มีการเลือก/แข่งกันอีกต่อไป ทุกตัวละคร Novice ได้เหมือนกันหมด (ตัด Tame Pet ออกจากสโคปแล้ว ไม่ใช้งาน)
+**Base Job Skill (3 อัน, ไม่ต้องเลือก)**: ได้อัตโนมัติทั้ง 3 อันจาก [Novice-Base.md](Novice-Base.md) — **Strike + First Aid ที่ level 1**, **Play Dead ที่ level 2** — ไม่มีการเลือก/แข่งกันอีกต่อไป ทุกตัวละคร Novice ได้เหมือนกันหมด (ตัด Tame Pet ออกจากสโคปแล้ว ไม่ใช้งาน)
 
-**Job Path Track (3 อัน ตลอดสาย)**:
-- **Level 3**: เลือก **2 อัน** จาก Track pool ของ Job Path ที่เลือกไว้ (ดูไฟล์ fork แต่ละสาย เช่น [Knight.md](Knight.md)) เริ่มที่ Rank 1
-- **Level 20**: เลือกเพิ่มอีก **1 อัน** จาก pool เดียวกัน (Rank 1) — เป็นของแถมท้ายสาย มาหลังจุด auto-upgrade สุดท้าย (lv17) แล้ว จึง**ค้างที่ Rank 1 ตลอดไปโดยตั้งใจ** (ไม่ใช่ของเสียของ — ดูหลักการออกแบบ "Rank 1 ต้องใช้ได้ดีในตัวเอง" ในหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules))
+> 🔄 **2026-08-23 (ตัด Level 20 pick ออก)**: เดิมมีจุดเลือก Job Path Job Skill เพิ่มอีก 1 อันที่ level 20 (ค้าง Rank 1 ตลอดไปเพราะมาหลัง auto-upgrade จุดสุดท้าย) — **ตัดออกตามคำสั่งตรงจากผู้ใช้** ตอนนี้ Job Path Job Skill มีแค่ **3 อัน** (เลือกที่ lv3×2 + lv6×1) ไม่มีจุดหยิบที่ lv20 อีกต่อไป level 20 เหลือแค่ **Extra Attack Improvement** อย่างเดียว (ดู [Level Progression](#level-progression)) — Job Skill รวมทั้งสายตอนนี้เหลือ **6 อัน** (Base 3 + Job Path 3) และ**ทุกอันถึง Rank 4 พร้อมกันหมดที่ lv17** ไม่มี Job Skill ไหนค้าง Rank 1 อีกแล้ว
 
-**จุด Auto-Upgrade (3 จุด)**: level **9, 13, 17** — **ทุก Track ที่ถืออยู่ ณ ตอนนั้น** (Base ทั้ง 3 + Job Path ที่หยิบไว้ตอน lv3) อัป Rank ขึ้น 1 ขั้นพร้อมกันหมดโดยอัตโนมัติ ไม่ต้องเลือก ไม่มีแต้ม:
+**Job Path Job Skill (3 อัน ตลอดสาย)**:
+- **Level 3**: เลือก **2 อัน** จาก Job Skill pool ของ Job Path ที่เลือกไว้ (ดูไฟล์ fork แต่ละสาย เช่น [Knight.md](Knight.md)) เริ่มที่ Rank 1
+- **Level 6 (Super Novice)**: เลือกเพิ่มอีก **1 อัน** จาก pool เดียวกัน (Rank 1) — มาก่อนจุด auto-upgrade แรก (lv9) จึงตาม Rank ทันทุกจุดเหมือน 2 อันแรกจากเลเวล 3
+
+**จุด Auto-Upgrade (3 จุด)**: level **9, 13, 17** — **ทุก Job Skill ที่ถืออยู่ ณ ตอนนั้น** (Base ทั้ง 3 + Job Path ที่หยิบไว้ตอน lv3/lv6) อัป Rank ขึ้น 1 ขั้นพร้อมกันหมดโดยอัตโนมัติ ไม่ต้องเลือก ไม่มีแต้ม:
 
 | Level | Rank ที่ได้ |
 |---|---|
@@ -151,9 +170,9 @@ Total mana ต่อวัน ≈ Pool (Long Rest) + (**2 ครั้ง/วั
 | 13 | Rank 3 |
 | 17 | Rank 4 (เต็ม) |
 
-Track ที่หยิบตั้งแต่ lv1-3 (Base ทั้ง 3 + Job Path 2 อันแรก) จะถึง **Rank 4 พร้อมกันหมดตอน lv17** แน่นอน 100% — ไม่มี Track ไหนถูกทิ้งร้างหรือแข่งแย่งกันอีกต่อไป ส่วน Job Path Track ที่หยิบเพิ่มตอน lv20 ไม่ทันจุด auto-upgrade ไหนแล้ว จึงค้าง Rank 1 ตลอดไปตามที่ออกแบบไว้
+Job Skill ทั้งหมด (Base 3 + Job Path 3 จาก lv3×2 + lv6×1) จะถึง **Rank 4 พร้อมกันหมดตอน lv17** แน่นอน 100% — ไม่มี Job Skill ไหนถูกทิ้งร้างหรือแข่งแย่งกันอีกต่อไป และไม่มี Job Skill ไหนค้าง Rank 1 อีกแล้ว
 
-**ผลรวมทั้งสาย**: Track รวมทั้งหมด **6 อัน** (Base 3 + Job Path 3) — 5 อันแรก (Base 3 + Job Path 2 จาก lv3) จบที่ Rank 4 เต็มทุกอันการันตี, อันสุดท้าย (Job Path จาก lv20) อยู่ที่ Rank 1
+**ผลรวมทั้งสาย**: Job Skill รวมทั้งหมด **6 อัน** (Base 3 + Job Path 3) — จบที่ **Rank 4 เต็มทุกอันการันตี** ที่ level 17
 
 ## Job Paths
 
