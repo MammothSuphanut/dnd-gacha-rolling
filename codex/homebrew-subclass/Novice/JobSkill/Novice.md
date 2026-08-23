@@ -19,12 +19,12 @@ You touch a creature within melee range — yourself or an ally — and channel 
 ---
 
 ### PLAY DEAD
-*Job Skill (Passive)*
+*Job Skill*
 
-**Trigger:** You finish a Short Rest
 **Range:** Self
+**Mana Cost:** 0
 **Duration:** Instantaneous
 
-You may recover **2** mana and **2** hp. You can use this feature one of time per long rest.
+You lie down and feign death for 10 minute. At the end, you regain **all** of your expended mana. You can use this feature **twice**, and regain all expended uses when you finish a Long Rest.
 
-***Job Skill Upgrade.*** The bonus mana and hp increases when you reach levels 9 (**4**), 13 (**8**), and 17 (**16**).
+***Job Skill Upgrade.*** None — this Job Skill doesn't change with Rank.

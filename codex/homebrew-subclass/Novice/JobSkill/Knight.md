@@ -25,7 +25,7 @@ You gain **2** hit points every 6 seconds that pass or at the start of your turn
 
 Whenever you take the Attack action with a weapon on your turn, you can spend 1 mana to make **one** additional weapon attack.
 
-***Job Skill Upgrade.*** The number of additional attacks per use increases when you reach levels 9 (**2** additional attacks), 13 (**3**), and 17 (**4**).
+***Job Skill Upgrade.*** The number of additional attacks per use increases when you reach levels 13 (**2** additional attacks) and 17 (**3**). (No change at level 9 — this Job Skill stays at 1 additional attack through Rank 2.)
 
 ---
 
@@ -52,7 +52,7 @@ You mark one creature you can see within range. The first time each turn the mar
 
 You choose one creature you can see within range. It must make a Constitution saving throw against your Job Skill save DC. On a failure, it is **Slowed** (its speed is halved) and can't take reactions until the end of its next turn.
 
-***Job Skill Upgrade.*** The condition inflicted on a failed save gets replaced by a stronger one as you gain Ranks — at level 9, Slowed instead reduces the target's speed to 0 (it still can't take reactions). At level 13, the target is **Stunned** instead. At level 17, the target is **Paralyzed** instead. Every condition ends at the start of your next turn.
+***Job Skill Upgrade.*** The condition inflicted on a failed save gets replaced by a stronger one as you gain Ranks — at level 9, Slowed instead reduces the target's speed to 0 (it still can't take reactions). At level 13, the target is **Stunned** instead. At level 17, the target is **Paralyzed** instead.
 
 ---
 

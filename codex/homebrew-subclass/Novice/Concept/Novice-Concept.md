@@ -46,28 +46,28 @@
 
 ## Level Progression
 
-| เลเวล | Proficiency Bonus | Mana | Feature |
+| เลเวล | Proficiency Bonus | Mana (Pool = PB × 2) | Feature |
 |---|---|---|---|
-| 1 | +2 | 2 | ได้ **Strike + First Aid** (Novice-Base, Rank 1) |
+| 1 | +2 | 4 | ได้ **First Aid** (Novice-Base, Rank 1) |
 | 2 | +2 | 4 | ได้ **Play Dead** (Novice-Base, Rank 1) |
-| 3 | +2 | 6 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน (Rank 1) |
-| 4 | +2 | 8 | Ability Score Improvement |
-| 5 | +3 | 10 | - |
-| 6 | +3 | 12 | - |
-| 7 | +3 | 14 | **Job Change: Transcendent Second Class** (subclass feature — รอออกแบบ) |
-| 8 | +3 | 16 | Ability Score Improvement |
-| 9 | +4 | 18 | **ทุก Track ที่ถืออยู่ → Rank 2** |
-| 10 | +4 | 20 | - |
-| 11 | +4 | 22 | **Job Change: Third Class** (subclass feature — รอออกแบบ) |
-| 12 | +4 | 24 | Ability Score Improvement |
-| 13 | +5 | 26 | **ทุก Track ที่ถืออยู่ → Rank 3** |
-| 14 | +5 | 28 | - |
-| 15 | +5 | 30 | **Job Change: Fourth Class** (subclass feature — รอออกแบบ) |
-| 16 | +5 | 32 | Ability Score Improvement |
-| 17 | +6 | 34 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
-| 18 | +6 | 36 | - |
-| 19 | +6 | 38 | Ability Score Improvement |
-| 20 | +6 | 40 | เลือก Job Path Track เพิ่ม 1 อัน (Rank 1) |
+| 3 | +2 | 4 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน (Rank 1) |
+| 4 | +2 | 4 | Ability Score Improvement |
+| 5 | +3 | 6 | - |
+| 6 | +3 | 6 | - |
+| 7 | +3 | 6 | **Job Change: Transcendent Second Class** (subclass feature — รอออกแบบ) |
+| 8 | +3 | 6 | Ability Score Improvement |
+| 9 | +4 | 8 | **ทุก Track ที่ถืออยู่ → Rank 2** |
+| 10 | +4 | 8 | - |
+| 11 | +4 | 8 | **Job Change: Third Class** (subclass feature — รอออกแบบ) |
+| 12 | +4 | 8 | Ability Score Improvement |
+| 13 | +5 | 10 | **ทุก Track ที่ถืออยู่ → Rank 3** |
+| 14 | +5 | 10 | - |
+| 15 | +5 | 10 | **Job Change: Fourth Class** (subclass feature — รอออกแบบ) |
+| 16 | +5 | 10 | Ability Score Improvement |
+| 17 | +6 | 12 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
+| 18 | +6 | 12 | - |
+| 19 | +6 | 12 | Ability Score Improvement |
+| 20 | +6 | 12 | เลือก Job Path Track เพิ่ม 1 อัน (Rank 1) |
 
 > ดูรายละเอียดเต็มที่หัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง — สรุปสั้นๆ: Base Track ทั้ง 3 อันได้อัตโนมัติไม่ต้องเลือก (Strike+First Aid ที่ lv1, Play Dead ที่ lv2), Job Path Track เลือก 2 อันที่ lv3 + เพิ่มอีก 1 อันที่ lv20 (ไม่ auto-upgrade แล้วเพราะมาหลัง lv17), **ทุก Track ที่ถืออยู่ ณ ตอนนั้น (ไม่ว่า Base หรือ Job Path) อัป Rank ขึ้นเองพร้อมกันหมดที่ lv9/13/17** ไม่มีแต้มให้เลือก ไม่มีจุดแข่งกัน — **ไม่มี Respec**
 >
@@ -75,19 +75,23 @@
 >
 > 🔄 **2026-08-23 (rev. 1, ถูกแทนที่ด้วย rev. 2 แล้ว)**: เคยลองผูก cap ของ Rank กับ Job Change milestone (R1@lv3→R2@lv7→R3@lv11→R4@lv15) แล้วให้จุดอัพเกรดที่ lv9/10/13/14/17/18 (6 แต้ม) เลือกเองว่าจะอัป Track ไหน — พบว่า level 5/6 (จุดอัพเกรดเดิม) ใช้จริงไม่ได้เพราะ cap ยังไม่ขยับจนกว่าจะถึง lv7 เลยตัดออกไปก่อน ก่อนจะเปลี่ยนไปใช้ auto-upgrade ล้วนๆ ใน rev. 2 แทน
 
-**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **เลเวล × 1** (universal ทุก Job, ไม่มี HP-swap) — เปลี่ยนจากสูตรเดิม (สะสม Proficiency Bonus) เป็นสูตรเชิงเส้นตรงไปตรงมา เข้าใจง่าย ไล่จาก 1 (lv 1) ถึง 20 (lv 20) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — รายละเอียดเต็มเรื่อง cost/recovery ดูหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules) ด้านล่าง
+**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **Proficiency Bonus × 2** (universal ทุก Job, ไม่มี HP-swap) — ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — รายละเอียดเต็มเรื่อง cost/recovery ดูหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules) ด้านล่าง
 >
-> 🔄 **2026-08-23**: ปรับจาก **เลเวล×2 → เลเวล×1** ตามคำสั่งตรง คู่กับการปรับทุก Track ของ [Knight.md](Knight.md#8-track-หลัก-passiveactionbonus-actionreaction) ให้เสีย mana 1 คงที่ทุก Rank — **⚠️ Day Math Sanity Check และตาราง reference ด้านล่างยังเป็นตัวเลขเก่าที่คำนวณจาก pool เดิม (เลเวล×2) อยู่ ยังไม่ได้ไล่คำนวณใหม่** โดยเฉพาะเลเวลสูง (9+) ที่ pool ยังโตเชิงเส้นตามเลเวลต่อไปแต่ท่าจะคงราคาที่ 1 mana เสมอ (ถ้า Job Path อื่นทำตาม pattern เดียวกับ Knight) อาจทำให้จำนวนครั้ง/วันเกินกรอบเป้าหมาย 6-10 ครั้ง/วันที่ตั้งไว้ — รอ balance pass รอบหน้า ขอบเขตการเปลี่ยนรอบนี้ยังจำกัดแค่ Knight เท่านั้น (Job Path อื่นที่ยังเป็นวัตถุดิบดิบยังไม่ได้แตะ)
+> 🔄 **2026-08-23**: ปรับจาก **เลเวล×2 → เลเวล×1** ตามคำสั่งตรง คู่กับการปรับทุก Track ของ [Knight.md](Knight.md#8-track-หลัก-passiveactionbonus-actionreaction) ให้เสีย mana 1 คงที่ทุก Rank — **⚠️ Day Math Sanity Check และตาราง reference ด้านล่างยังเป็นตัวเลขเก่าที่คำนวณจาก pool เดิม (เลเวล×2) อยู่ ยังไม่ได้ไล่คำนวณใหม่** โดยเฉพาะเลเวลสูง (9+) ที่ pool ยังโตเชิงเส้นตามเลเวลต่อไปแต่ท่าจะคงราคาที่ 1 mana เสมอ (ถ้า Job Path อื่นทำตาม pattern เดียวกับ Knight) อาจทำให้จำนวนครั้ง/วันเกินกรอบเป้าหมาย 6-10 ครั้ง/วันที่ตั้งไว้ — รอ balance pass รอบหน้า ขอบเขตการเปลี่ยนรอบนี้ยังจำกัดแค่ Knight เท่านั้น (Job Path อื่นที่ยังเป็นวัตถุดิบดิบยังไม่ได้แตะ) (ถูกแทนที่ด้วยรอบถัดไปด้านล่างแล้ว)
+>
+> 🔄 **2026-08-23 (รอบล่าสุด — เปลี่ยนไปผูกกับ Proficiency Bonus + ตัด Short Rest recovery)**: เปลี่ยนจาก **เลเวล×1 → Proficiency Bonus × 2** (pool = 4/6/8/10/12 ตามช่วงเลเวล 1-4/5-8/9-12/13-16/17-20) เพื่อไม่ให้ pool โตเชิงเส้นไม่มีเพดานเหมือนตอนผูกกับเลเวลตรงๆ — คู่กับการ **ตัด Short Rest recovery ออกจากระบบทั้งหมด** (เดิมคืน mana = PB ปัจจุบันตอน short rest) เปลี่ยนมาให้จุดคืนมานาระหว่างวันเป็นหน้าที่ของ Track **Play Dead** เพียงจุดเดียวแทน — ⚠️ ลองตั้งโควตา Play Dead ที่ **Proficiency Bonus ครั้ง/วัน** ก่อน พบว่า Day Math ไม่ผ่าน (โตแบบ quadratic ตาม PB) จึงแก้เป็นรอบถัดไปด้านล่างนี้แล้ว
+>
+> 🔄 **2026-08-23 (รอบถัดมา — ล็อกโควตา Play Dead ที่ 2 ครั้ง/วันคงที่ ไม่ผูกกับ PB)**: เปลี่ยนโควตา Play Dead จาก **Proficiency Bonus ครั้ง/วัน → 2 ครั้ง/วันคงที่ทุกเลเวล** (สะท้อนธีม "จำนวนรอบพักระหว่างวัน" แบบ 5e มาตรฐาน 2 short rest/วัน แทนที่จะสเกลตามพลัง) — ทำให้ Total mana/วัน = Pool × 3 (โตเชิงเส้นตาม Pool ล้วนๆ ไม่ใช่ quadratic แล้ว) ผ่าน Day Math สมเหตุสมผลกว่าเดิมมาก ดูตาราง reference ที่แก้แล้วด้านล่าง
 
 ### กฎการใช้ Mana (Mana Usage Rules)
 
 > กฎกลางที่ใช้ได้กับทุกสาย/ทุก tier — ล็อกไว้แล้วหลังทดลองตั้งราคาจริงกับ Swordsman/Knight tier (ดู [Knight.md](Knight.md#dd-feature-draft--swordsman-1st-class)) ครั้งต่อไปที่แปลงสกิลสายอื่น ให้ใช้ cost band + sanity check ด้านล่างนี้แทนการคำนวณ balance ใหม่ตั้งแต่ต้น
 
 **Pool & Recovery**
-- Pool = เลเวล × 1 (universal ทุก Job) — 🔄 2026-08-23: ลดจากเดิมเลเวล×2 (ดู revision note ด้านบน) ตาราง reference/Day Math ด้านล่างยังไม่ได้คำนวณใหม่ตาม
+- Pool = **Proficiency Bonus × 2** (universal ทุก Job) — 🔄 2026-08-23: เปลี่ยนจากเดิมเลเวล×1 (ดู revision note ด้านบน)
 - Long Rest: คืนเต็ม pool เสมอ
-- Short Rest: คืน mana เท่ากับ **Proficiency Bonus ปัจจุบัน** (flat formula เดียว ไม่ต้องออกแบบค่าคืนแยกรายสกิล)
-- ห้ามออกแบบสกิลที่คืน mana เต็มตอน Short Rest — จะกลายเป็น pattern แบบ Warlock ขัดกับ identity แบบ Long Rest ที่ตั้งใจไว้ (เทียบ Wizard) — อนุญาตให้มี feature เฉพาะจุดที่คืน mana เพิ่มได้เป็นชั้นเสริม (เช่น Fatal Blow คืน 1 mana ตอน proc) แต่ต้องผูกกับเงื่อนไขในเกม (โจมตีสำเร็จ/ฆ่า) ไม่ใช่ auto ทุก short rest
+- **ไม่มี Short Rest recovery แล้ว** (เดิมคืน mana = Proficiency Bonus ปัจจุบันตอน short rest — ตัดออกทั้งกฎ) — จุดคืนมานาระหว่างวันจุดเดียวที่เหลืออยู่คือ Track **Play Dead** (Novice-Base, ทุกตัวละครได้ตั้งแต่ level 2): คืนเต็ม pool ต่อการใช้ 1 ครั้ง ใช้ได้ **2 ครั้ง/วันคงที่ทุกเลเวล** (ไม่ผูกกับ Proficiency Bonus แล้ว — ดู revision note ด้านบน) เท่ากันทุก Rank ไม่ scale — ดู [Novice-Base.md](Novice-Base.md#dd-feature-draft--novice-base-job)
+- Feature อื่นนอกจาก Play Dead ยังห้ามออกแบบให้คืน mana เต็ม pool เด็ดขาด (Play Dead คือข้อยกเว้นเดียวที่อนุญาตไว้แล้วโดยตั้งใจ จำกัดด้วยโควตา 2 ครั้ง/วัน) — อนุญาตให้มี feature เฉพาะจุดที่คืน mana เพิ่มได้เป็นชั้นเสริมเล็กๆ (เช่น Fatal Blow คืน 1 mana ตอน proc) แต่ต้องผูกกับเงื่อนไขในเกม (โจมตีสำเร็จ/ฆ่า) ไม่ใช่ auto
 
 **Cost Bands ตามประเภทท่า** (baseline — ปรับได้ตามความแรงจริงของแต่ละท่า ไม่ใช่กฎตายตัว 100%)
 
@@ -103,20 +107,19 @@
 
 **Day Math Sanity Check** (เช็คทุกครั้งก่อนล็อกราคาใหม่ของสายอื่น)
 
-Total mana ต่อวัน ≈ pool (Long Rest) + 2 × Proficiency Bonus (สมมติ short rest มาตรฐาน 2 ครั้ง/วันตาม 5e) หารด้วย avg cost ของท่า active ที่ตั้งใจไว้ ควรได้ **6-10 ครั้ง/วัน** (ใกล้เคียงจำนวน encounter ที่ 5e คาดหวังต่อวัน) — ต่ำกว่านี้มาก = แพงไป, สูงกว่า ~15 = ถูกไปจนไม่รู้สึกเป็น resource
+Total mana ต่อวัน ≈ Pool (Long Rest) + (**2 ครั้ง/วันคงที่** × Pool เพราะ Play Dead คืนเต็ม pool ทุกครั้ง) = Pool × 3 หารด้วย avg cost ของท่า active ที่ตั้งใจไว้ ควรได้ **6-10 ครั้ง/วัน** (ใกล้เคียงจำนวน encounter ที่ 5e คาดหวังต่อวัน) — ต่ำกว่านี้มาก = แพงไป, สูงกว่า ~15 = ถูกไปจนไม่รู้สึกเป็น resource
 
 ตาราง reference สำเร็จรูปต่อช่วงเลเวล (คำนวณไว้แล้ว ใช้แทนได้เลย):
 
-| เลเวล | Pool | Prof Bonus | Total Mana/วัน (pool + 2×PB) | avg cost เป้าหมาย (ที่ 6-10 ครั้ง/วัน) |
+| เลเวล | Pool (PB×2) | Play Dead เต็มโควตา/วัน | Total Mana/วัน (Pool × 3) | avg cost เป้าหมาย (ที่ 6-10 ครั้ง/วัน) |
 |---|---|---|---|---|
-| 1-2 | 2-4 | +2 | 6-8 | ~1 |
-| 3-4 | 6-8 | +2 | 10-12 | 1-2 |
-| 5-8 | 10-16 | +3 | 16-22 | 2-3 |
-| 9-12 | 18-24 | +4 | 26-32 | 3-5 |
-| 13-16 | 26-32 | +5 | 36-42 | 4-6 |
-| 17-20 | 34-40 | +6 | 46-52 | 5-8 |
+| 1-4 | 4 | 2 | 12 | 1.2-2 |
+| 5-8 | 6 | 2 | 18 | 1.8-3 |
+| 9-12 | 8 | 2 | 24 | 2.4-4 |
+| 13-16 | 10 | 2 | 30 | 3-5 |
+| 17-20 | 12 | 2 | 36 | 3.6-6 |
 
-Swordsman/Knight tier ปัจจุบัน (level 3) ใช้ avg cost ~1.2-1.5 ตรงตามช่วงเป้าหมายพอดี ไม่ต้องปรับเพิ่ม — tier ที่แปลงต่อไปในเลเวลสูงขึ้น (Transcendent 7, Third 11, Fourth 15) ให้ตั้ง cost แพงขึ้นตามตารางนี้ได้เลยตามธรรมชาติ ไม่ต้องมาถกใหม่ทุกครั้ง
+✅ **ผ่าน sanity check**: หลังล็อกโควตา Play Dead ที่ 2 ครั้ง/วันคงที่ (ไม่ผูกกับ PB แล้ว) Total Mana/วันโต**เชิงเส้นตาม Pool** เท่านั้น (×3 คงที่ทุกเลเวล) ไม่ใช่ quadratic แบบตอนผูกกับ PB — avg cost เป้าหมายไล่จาก ~1.5 (เลเวลต้น) ถึง ~5 (เลเวลปลาย) ซึ่งอยู่ในกรอบที่ Cost Bands ด้านบนออกแบบไว้พอดี (ท่า Bonus Action/Reaction เริ่มที่ 1, ท่า AoE/capstone แพงขึ้นไปถึง 3+ ตาม Rank) — เงื่อนไข **Play Dead ใช้ได้แค่นอกการต่อสู้ + ใช้เวลา 1 นาที** ยังคงไว้เหมือนเดิมเพื่อกันไม่ให้ spam กลางไฟต์
 
 **หมายเหตุจังหวะ**: เลเวล 3/7/11/15 คือ "Job Change" milestone ใหญ่ 4 จุด **ข้าม First Class เป็น mechanical step ไปเลย** แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — lv3 ยังทำหน้าที่เลือก Job Path Track ด้วย ส่วน lv7/11/15 เหลือแค่ Job Change + subclass feature (รอออกแบบ) ไม่ผูกกับ Track แล้ว — Track ทั้งหมดอัป Rank อัตโนมัติพร้อมกันที่ **lv9/13/17** แทน (ดูหัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง) ส่วน level 5/6/10/14/18 ว่างไว้ก่อน ("-") รอออกแบบ feature อื่นที่ไม่ใช่ Track, level 20 ได้ Job Path Track เพิ่ม 1 อัน (bonus ท้ายสาย)
 
