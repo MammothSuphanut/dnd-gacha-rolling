@@ -16,7 +16,7 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 *You stop being someone who merely swings a weapon and start being someone the front line can be built around.*
 
-**Battle Will.** You gain proficiency with Martial melee weapons, and you gain training with Medium armor.
+**Battle Will.** You gain proficiency with Martial melee weapons, and you gain training with Medium armor, Heavy armor, and Shields.
 
 **Steel Heart.** Your body toughens as you throw yourself into every fight. Your maximum hit points increase by 2 for every level you have in this class. This bonus is recalculated whenever your Novice level changes — it's +6 at 3rd level, growing all the way to +40 by 20th level.
 
@@ -112,7 +112,7 @@ For the duration, your weapon attacks deal an extra **1d6** damage.
 **Mana Cost:** 1
 **Duration:** 1 minute (or until you end it)
 
-You ignite yourself, burning until you end it. At the end of each of your turns while active, every creature within 5 feet of you takes **1d6** Fire damage with no saving throw allowed; you take half that amount, rounded down. You can end this effect at any time as a Free Action.
+You gain resistance to Fire damage, then ignite yourself, burning until you end it. At the end of each of your turns while active, every creature within 5 feet of you takes **1d6** Fire damage with no saving throw allowed. You can end this effect at any time as a Free Action.
 
 *Job Skill Advancement.* The fire damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
 
