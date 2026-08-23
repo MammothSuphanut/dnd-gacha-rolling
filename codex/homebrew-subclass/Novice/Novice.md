@@ -40,28 +40,28 @@ Starting at 20th level (*Extra Attack Improvement*), this becomes **three** atta
 
 ## The Novice
 
-| Level | Proficiency Bonus | Features | Mana Pool |
-|---|---|---|---|
-| 1st | +2 | Strike, First Aid | 2 |
-| 2nd | +2 | Play Dead | 2 |
-| 3rd | +2 | Job Change: Second Class, Job Path Job Skills | 2 |
-| 4th | +2 | Ability Score Improvement | 2 |
-| 5th | +3 | Extra Attack | 3 |
-| 6th | +3 | Super Novice | 3 |
-| 7th | +3 | Job Change: Transcendent Second Class | 3 |
-| 8th | +3 | Ability Score Improvement | 3 |
-| 9th | +4 | Job Skill Advancement (Rank 2) | 4 |
-| 10th | +4 | Ultra Super Novice | 4 |
-| 11th | +4 | Job Change: Third Class | 4 |
-| 12th | +4 | Ability Score Improvement | 4 |
-| 13th | +5 | Job Skill Advancement (Rank 3) | 5 |
-| 14th | +5 | Elevated Novice | 5 |
-| 15th | +5 | Job Change: Fourth Class | 5 |
-| 16th | +5 | Ability Score Improvement | 5 |
-| 17th | +6 | Job Skill Advancement (Rank 4) | 6 |
-| 18th | +6 | Hyper Novice | 6 |
-| 19th | +6 | Ability Score Improvement | 6 |
-| 20th | +6 | Extra Attack Improvement | 6 |
+| Level | Proficiency Bonus | Features | Mana Pool | Job Skills |
+|---|---|---|---|---|
+| 1st | +2 | Strike, First Aid | 2 | 0 |
+| 2nd | +2 | Play Dead | 2 | 0 |
+| 3rd | +2 | Job Change: Second Class, Job Path Job Skills | 2 | 2 |
+| 4th | +2 | Ability Score Improvement | 2 | 2 |
+| 5th | +3 | Extra Attack | 3 | 2 |
+| 6th | +3 | Super Novice | 3 | 3 |
+| 7th | +3 | Job Change: Transcendent Second Class | 3 | 3 |
+| 8th | +3 | Ability Score Improvement | 3 | 3 |
+| 9th | +4 | Job Skill Advancement (Rank 2) | 4 | 3 |
+| 10th | +4 | Ultra Super Novice | 4 | 3 |
+| 11th | +4 | Job Change: Third Class | 4 | 3 |
+| 12th | +4 | Ability Score Improvement | 4 | 3 |
+| 13th | +5 | Job Skill Advancement (Rank 3) | 5 | 3 |
+| 14th | +5 | Elevated Novice | 5 | 3 |
+| 15th | +5 | Job Change: Fourth Class | 5 | 3 |
+| 16th | +5 | Ability Score Improvement | 5 | 3 |
+| 17th | +6 | Job Skill Advancement (Rank 4) | 6 | 3 |
+| 18th | +6 | Hyper Novice | 6 | 3 |
+| 19th | +6 | Ability Score Improvement | 6 | 3 |
+| 20th | +6 | Extra Attack Improvement | 6 | 3 |
 
 ## Class Features
 
