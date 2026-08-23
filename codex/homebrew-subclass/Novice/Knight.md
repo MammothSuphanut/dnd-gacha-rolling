@@ -44,11 +44,9 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 ## Knight Job Skills
 
-The 9 Job Skills below are the Knight Job Path's pool, grouped into three playstyles — **Rapid Strike (ตีไว)**, **Skill Burst (กดสกิลใส่มอน)**, and **Tank & Burn (แท้งเผา)**. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more at 6th level (3 total), each starting at Rank 1 — and every one you know advances in Rank alongside your other Job Skills at 9th, 13th, and 17th level. The three groups are a guide for building a coherent Knight, not a hard restriction — picking all 3 from one group gives you the "pure" version of that playstyle, but mixing across groups works too.
+The 9 Job Skills below are the Knight Job Path's pool. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more at 6th level (3 total), each starting at Rank 1 — and every one you know advances in Rank alongside your other Job Skills at 9th, 13th, and 17th level.
 
-### ⚔️ Rapid Strike — ตีไว
-
-#### Weapon Mastery
+### Weapon Mastery
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -59,7 +57,7 @@ Make an attack with your weapon. The attack roll and damage roll have **+1** bon
 
 *Job Skill Advancement.* Increase the attack roll and damage roll by **1** at 9th (**+2**), 13th, (**+3**), and 17th level (**+4**).
 
-#### Aura Weapon
+### Aura Weapon
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -71,7 +69,7 @@ For the duration, your weapon attacks deal an extra **1d4** Fire damage.
 
 *Job Skill Advancement.* The bonus damage increases to **2d4** at 9th level, **3d4** at 13th level, and **4d4** at 17th level.
 
-#### Auto Counter
+### Auto Counter
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -83,9 +81,7 @@ First time each turn you're hit by a melee attack, you immediately make **1** we
 
 *Job Skill Advancement.* The number of counterattacks increases to **2** at 9th level, **3** at 13th level, and **4** at 17th level.
 
-### 🎯 Skill Burst — กดสกิลใส่มอน
-
-#### Mark
+### Mark
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -97,7 +93,7 @@ You mark one creature you can see within range. The first time each turn the mar
 
 *Job Skill Advancement.* The extra damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
 
-#### Joint Beat
+### Joint Beat
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -108,7 +104,7 @@ You choose one creature you can see within range. It must make a Constitution sa
 
 *Job Skill Advancement.* The condition inflicted on a failed save gets replaced by a stronger one as you gain Ranks. At 9th level, a failure reduces the target's speed to 0. At 13th level, the target is **Stunned** instead. At 17th level, the target is **Paralyzed** instead.
 
-#### Phantom Strike
+### Phantom Strike
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -119,9 +115,7 @@ Make **1** weapon attack. If it hits, the target takes an extra **3d8** Fire dam
 
 *Job Skill Advancement.* The extra damage increases to **6d8** at 9th level, **9d8** at 13th level, and **12d8** at 17th level.
 
-### 🔥 Tank & Burn — แท้งเผา
-
-#### Increase HP Recovery
+### Increase HP Recovery
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -133,7 +127,7 @@ You gain **2** hit points every 6 seconds or start of each of your turns
 
 *Job Skill Advancement.* increase by 2 at 9th (**4**), 13th, (**6**), and 17th level (**8**)
 
-#### Self-Ignite
+### Self-Ignite
 *Job Skill*
 
 **Casting Time:** 1 Attack
@@ -145,7 +139,7 @@ You gain resistance to Fire damage, then ignite yourself, burning until you end 
 
 *Job Skill Advancement.* The fire damage increases to **4d6** at 9th level, **6d6** at 13th level, and **8d6** at 17th level.
 
-#### Guard
+### Guard
 *Job Skill*
 
 **Casting Time:** 1 Attack
