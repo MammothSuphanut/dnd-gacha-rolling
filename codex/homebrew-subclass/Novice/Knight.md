@@ -16,7 +16,7 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 *You stop being someone who merely swings a weapon and start being someone the front line can be built around.*
 
-**Battle Will.** You gain proficiency with Martial melee weapons, and you gain training with Medium armor, Heavy armor, and Shields.
+**Battle Will.** You gain proficiency with Martial melee weapons, and you gain training with Medium armor.
 
 **Steel Heart.** Your body toughens as you throw yourself into every fight. Your maximum hit points increase by 2 for every level you have in this class. This bonus is recalculated whenever your Novice level changes — it's +6 at 3rd level, growing all the way to +40 by 20th level.
 
