@@ -115,9 +115,9 @@ You choose one creature you can see within range. It must make a Constitution sa
 **Range:** Self
 **Mana Cost:** 1
 
-Make **1** weapon attack. If it hits, the target takes an extra **2d8** damage. If the attack misses, you don't spend the Mana Cost.
+Make **1** weapon attack. If it hits, the target takes an extra **3d8** damage. If the attack misses, you don't spend the Mana Cost.
 
-*Job Skill Advancement.* The extra damage increases to **4d8** at 9th level, **6d8** at 13th level, and **8d8** at 17th level.
+*Job Skill Advancement.* The extra damage increases to **6d8** at 9th level, **9d8** at 13th level, and **12d8** at 17th level.
 
 ### 🔥 Tank & Burn — แท้งเผา
 

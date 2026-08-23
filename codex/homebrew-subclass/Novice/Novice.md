@@ -34,7 +34,7 @@ A Novice's Job Skills — Strike, First Aid, Play Dead, and every technique gran
 
 ## Extra Attack
 
-Starting at 5th level, when you take the Attack action, you can attack **twice** instead of once. Each of those attacks can independently be a normal weapon attack or the use of a Job Skill whose casting time is an action, mixed freely in any combination — the only restriction is that **you can't use the same named Job Skill more than once in the same turn.**
+Starting at 5th level, when you take the Attack action, you can attack **twice** instead of once. Each of those attacks can independently be a normal weapon attack or the use of a Job Skill whose casting time is an action, mixed freely in any combination — subject as always to the **Once per Turn** rule (see *Job Skills*, below).
 
 Starting at 20th level (*Extra Attack Improvement*), this becomes **three** attacks per Attack action, under the same restriction.
 
@@ -156,6 +156,8 @@ Every Job Skill you know has a **Rank** from 1 to 4 that determines how strong i
 Because Job Skill Advancement happens at 9th, 13th, and 17th level, all 6 Job Skills you know (3 base + 3 Job Path) reach **Rank 4** together at 17th level — none of them ever falls behind.
 
 **No Respec.** Once you choose a Job Path Job Skill at 3rd or 6th level, it's yours for the rest of the game.
+
+**Once per Turn.** You can't use the same named Job Skill more than once on the same turn, no matter its Casting Time — this applies to every Job Skill you know (base or Job Path), not just ones you'd otherwise repeat through Extra Attack.
 
 ## Base Job Skills
 
