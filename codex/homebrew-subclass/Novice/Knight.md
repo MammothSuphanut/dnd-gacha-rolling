@@ -67,9 +67,9 @@ Make **2** weapon attack.
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-For the duration, your weapon attacks deal an extra **1d6** Fire damage.
+For the duration, your weapon attacks deal an extra **1d4** Fire damage.
 
-*Job Skill Advancement.* The bonus damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
+*Job Skill Advancement.* The bonus damage increases to **2d4** at 9th level, **3d4** at 13th level, and **4d4** at 17th level.
 
 #### Auto Counter
 *Job Skill*
