@@ -25,6 +25,6 @@ You touch a creature within melee range — yourself or an ally — and channel 
 **Range:** Self
 **Duration:** Instantaneous
 
-You may recover **2** additional mana beyond the normal amount a Short Rest restores. You can use this feature a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest.
+You may recover **2** mana and **2** hp. You can use this feature one of time per long rest.
 
-***Job Skill Upgrade.*** The bonus mana increases when you reach levels 9 (**4**), 13 (**8**), and 17 (**16**).
+***Job Skill Upgrade.*** The bonus mana and hp increases when you reach levels 9 (**4**), 13 (**8**), and 17 (**16**).
