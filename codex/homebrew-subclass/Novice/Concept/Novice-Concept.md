@@ -75,14 +75,16 @@
 >
 > 🔄 **2026-08-23 (rev. 1, ถูกแทนที่ด้วย rev. 2 แล้ว)**: เคยลองผูก cap ของ Rank กับ Job Change milestone (R1@lv3→R2@lv7→R3@lv11→R4@lv15) แล้วให้จุดอัพเกรดที่ lv9/10/13/14/17/18 (6 แต้ม) เลือกเองว่าจะอัป Track ไหน — พบว่า level 5/6 (จุดอัพเกรดเดิม) ใช้จริงไม่ได้เพราะ cap ยังไม่ขยับจนกว่าจะถึง lv7 เลยตัดออกไปก่อน ก่อนจะเปลี่ยนไปใช้ auto-upgrade ล้วนๆ ใน rev. 2 แทน
 
-**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **เลเวล × 2** (universal ทุก Job, ไม่มี HP-swap) — เปลี่ยนจากสูตรเดิม (สะสม Proficiency Bonus) เป็นสูตรเชิงเส้นตรงไปตรงมา เข้าใจง่าย ไล่จาก 2 (lv 1) ถึง 40 (lv 20) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — รายละเอียดเต็มเรื่อง cost/recovery ดูหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules) ด้านล่าง (ล็อกไว้แล้วจากการทดลองกับ Swordsman/Knight tier — ใช้อ้างอิงได้เลยไม่ต้องคำนวณใหม่ทุกสาย)
+**หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **เลเวล × 1** (universal ทุก Job, ไม่มี HP-swap) — เปลี่ยนจากสูตรเดิม (สะสม Proficiency Bonus) เป็นสูตรเชิงเส้นตรงไปตรงมา เข้าใจง่าย ไล่จาก 1 (lv 1) ถึง 20 (lv 20) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — รายละเอียดเต็มเรื่อง cost/recovery ดูหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules) ด้านล่าง
+>
+> 🔄 **2026-08-23**: ปรับจาก **เลเวล×2 → เลเวล×1** ตามคำสั่งตรง คู่กับการปรับทุก Track ของ [Knight.md](Knight.md#8-track-หลัก-passiveactionbonus-actionreaction) ให้เสีย mana 1 คงที่ทุก Rank — **⚠️ Day Math Sanity Check และตาราง reference ด้านล่างยังเป็นตัวเลขเก่าที่คำนวณจาก pool เดิม (เลเวล×2) อยู่ ยังไม่ได้ไล่คำนวณใหม่** โดยเฉพาะเลเวลสูง (9+) ที่ pool ยังโตเชิงเส้นตามเลเวลต่อไปแต่ท่าจะคงราคาที่ 1 mana เสมอ (ถ้า Job Path อื่นทำตาม pattern เดียวกับ Knight) อาจทำให้จำนวนครั้ง/วันเกินกรอบเป้าหมาย 6-10 ครั้ง/วันที่ตั้งไว้ — รอ balance pass รอบหน้า ขอบเขตการเปลี่ยนรอบนี้ยังจำกัดแค่ Knight เท่านั้น (Job Path อื่นที่ยังเป็นวัตถุดิบดิบยังไม่ได้แตะ)
 
 ### กฎการใช้ Mana (Mana Usage Rules)
 
 > กฎกลางที่ใช้ได้กับทุกสาย/ทุก tier — ล็อกไว้แล้วหลังทดลองตั้งราคาจริงกับ Swordsman/Knight tier (ดู [Knight.md](Knight.md#dd-feature-draft--swordsman-1st-class)) ครั้งต่อไปที่แปลงสกิลสายอื่น ให้ใช้ cost band + sanity check ด้านล่างนี้แทนการคำนวณ balance ใหม่ตั้งแต่ต้น
 
 **Pool & Recovery**
-- Pool = เลเวล × 2 (universal ทุก Job)
+- Pool = เลเวล × 1 (universal ทุก Job) — 🔄 2026-08-23: ลดจากเดิมเลเวล×2 (ดู revision note ด้านบน) ตาราง reference/Day Math ด้านล่างยังไม่ได้คำนวณใหม่ตาม
 - Long Rest: คืนเต็ม pool เสมอ
 - Short Rest: คืน mana เท่ากับ **Proficiency Bonus ปัจจุบัน** (flat formula เดียว ไม่ต้องออกแบบค่าคืนแยกรายสกิล)
 - ห้ามออกแบบสกิลที่คืน mana เต็มตอน Short Rest — จะกลายเป็น pattern แบบ Warlock ขัดกับ identity แบบ Long Rest ที่ตั้งใจไว้ (เทียบ Wizard) — อนุญาตให้มี feature เฉพาะจุดที่คืน mana เพิ่มได้เป็นชั้นเสริม (เช่น Fatal Blow คืน 1 mana ตอน proc) แต่ต้องผูกกับเงื่อนไขในเกม (โจมตีสำเร็จ/ฆ่า) ไม่ใช่ auto ทุก short rest
