@@ -46,31 +46,35 @@
 
 ## Level Progression
 
-| เลเวล | Proficiency Bonus | Max Mana | Mana (Pool = PB × 2) | Feature |
+| เลเวล | Proficiency Bonus | Max Mana | Mana per day (Pool = PB × 3) | Feature |
 |---|---|---|---|---|
-| 1 | +2 | 2 | 4 | ได้ **First Aid** |
-| 2 | +2 | 2 | 4 | ได้ **Play Dead** |
-| 3 | +2 | 2 | 4 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน |
-| 4 | +2 | 2 | 4 | Ability Score Improvement |
-| 5 | +3 | 3 | 6 | **Multi Casting** |
-| 6 | +3 | 3 | 6 | - |
-| 7 | +3 | 3 | 6 | **Job Change: Transcendent Second Class** |
-| 8 | +3 | 3 | 6 | Ability Score Improvement |
-| 9 | +4 | 4 | 8 | **ทุก Track ที่ถืออยู่ → Rank 2** |
-| 10 | +4 | 4 | 8 | - |
-| 11 | +4 | 4 | 8 | **Job Change: Third Class** |
-| 12 | +4 | 4 | 8 | Ability Score Improvement |
-| 13 | +5 | 5 | 10 | **ทุก Track ที่ถืออยู่ → Rank 3** |
-| 14 | +5 | 5 | 10 | - |
-| 15 | +5 | 5 | 10 | **Job Change: Fourth Class** |
-| 16 | +5 | 5 | 10 | Ability Score Improvement |
-| 17 | +6 | 6 | 12 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
-| 18 | +6 | 6 | 12 | - |
-| 19 | +6 | 6 | 12 | Ability Score Improvement |
-| 20 | +6 | 6 | 12 | **Multi Casting Improvement** |
+| 1 | +2 | 2 | 6 | ได้ **STRIKE** + **First Aid** |
+| 2 | +2 | 2 | 6 | ได้ **Play Dead** |
+| 3 | +2 | 2 | 6 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน |
+| 4 | +2 | 2 | 6 | Ability Score Improvement |
+| 5 | +3 | 3 | 9 | **Extra Attack**|
+| 6 | +3 | 3 | 9 | เลือก Job Path Track 1 อัน  |
+| 7 | +3 | 3 | 9 | **Job Change: Transcendent Second Class** |
+| 8 | +3 | 3 | 9 | Ability Score Improvement |
+| 9 | +4 | 4 | 12 | **ทุก Track ที่ถืออยู่ → Rank 2** |
+| 10 | +4 | 4 | 12 | - |
+| 11 | +4 | 4 | 12 | **Job Change: Third Class** |
+| 12 | +4 | 4 | 12 | Ability Score Improvement |
+| 13 | +5 | 5 | 15 | **ทุก Track ที่ถืออยู่ → Rank 3** |
+| 14 | +5 | 5 | 15 | - |
+| 15 | +5 | 5 | 15 | **Job Change: Fourth Class** |
+| 16 | +5 | 5 | 15 | Ability Score Improvement |
+| 17 | +6 | 6 | 18 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
+| 18 | +6 | 6 | 18 | - |
+| 19 | +6 | 6 | 18 | Ability Score Improvement |
+| 20 | +6 | 6 | 18 | **Extra Attack Improvement** |
 
-> **Multi Casting (level 5)**: ใช้ Track/skill ได้จเป็น 2 ครั้ง ใน 1 Action
-> **Multi Casting Improvement (level 20)**: ใช้ Track/skill ได้จเป็น 3 ครั้ง ใน 1 Action
+> 🔄 **2026-08-23 (เปลี่ยน Multi Casting → Extra Attack)**: เดิม Multi Casting ให้ "ใช้ Track/skill เดิมซ้ำได้ 2-3 ครั้งใน 1 Action" (ปัญหาคือ Track แบบ "เพิ่มจำนวนตี" อย่าง Wind Cutter จะคูณกับตัวเองซ้ำเป็นทวีคูณ) — เปลี่ยนนิยามใหม่ทั้งหมดเป็นระบบ **Extra Attack**: เวลาใช้ Attack action คุณโจมตีได้ตามจำนวนครั้งที่กำหนด และ **แต่ละครั้งเลือกได้อิสระว่าจะโจมตีด้วยอาวุธปกติ หรือใช้ Job Skill ที่ระบุ Casting Time: Action แทนก็ได้** — ข้อจำกัดเดียว: **ห้ามใช้ Job Skill ชื่อเดียวกันซ้ำ 2 ครั้งขึ้นไปในเทิร์นเดียวกัน** (ต้องเป็น Job Skill คนละชื่อ หรือสลับกับการโจมตีปกติ)
+>
+> **Extra Attack (level 5)**: โจมตีได้ **2 ครั้ง** ต่อ Attack action — เช่น ใช้ Job Skill 2 อัน (คนละชื่อ), ใช้ Job Skill 1 อัน + โจมตีปกติ 1 ครั้ง, หรือโจมตีปกติ 2 ครั้งแบบเดิมก็ได้
+> **Extra Attack Improvement (level 20)**: จำนวนครั้งเพิ่มเป็น **3 ครั้ง** ต่อ Attack action (กติกาเดียวกัน — ห้ามใช้ Job Skill ชื่อเดียวกันซ้ำในเทิร์นเดียวกัน)
+>
+> ⚠️ **ผลกระทบที่ต้องแก้ต่อ**: Job Skill ที่ระบุ Casting Time: Action ทุกอันตอนนี้ "ราคาโอกาส" ถูกลงมาก (เดิมใช้แล้วเสียทั้งเทิร์น ตอนนี้แค่เสีย 1 ใน 2-3 attack slot เท่านั้น ที่เหลือยังโจมตีต่อได้) ต้อง balance-pass ใหม่ทุก Job Skill ที่โดนผลนี้ — และ **Wind Cutter ("ทำ 2-3 การโจมตี" ต่อการใช้ 1 ครั้ง) ชนกับนิยาม Extra Attack ใหม่โดยตรง** เพราะตอนนี้ตัวคลาสเองมีกลไก "โจมตีได้หลายครั้ง" อยู่แล้วในระดับ baseline ต้องออกแบบ Wind Cutter ใหม่ (ไม่ใช่แค่ปรับตัวเลข) — ดูการตัดสินใจที่ [Knight.md](JobSkill/Knight.md)
 >
 > ดูรายละเอียดเต็มที่หัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง — สรุปสั้นๆ: Base Track ทั้ง 3 อันได้อัตโนมัติไม่ต้องเลือก (Strike+First Aid ที่ lv1, Play Dead ที่ lv2), Job Path Track เลือก 2 อันที่ lv3 + เพิ่มอีก 1 อันที่ lv20 (ไม่ auto-upgrade แล้วเพราะมาหลัง lv17), **ทุก Track ที่ถืออยู่ ณ ตอนนั้น (ไม่ว่า Base หรือ Job Path) อัป Rank ขึ้นเองพร้อมกันหมดที่ lv9/13/17** ไม่มีแต้มให้เลือก ไม่มีจุดแข่งกัน — **ไม่มี Respec**
 >

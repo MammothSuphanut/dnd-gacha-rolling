@@ -1,12 +1,14 @@
 # Knight — Job Skills (8 Track)
 
 > Extracted from [Knight.md](../Concept/Knight.md) — the current (rev. 14) **8 Track** system, formatted as spell-card-style Job Skills. Pick **2** Tracks at level 3 and **1** more at level 20 (3 of the 8 below, total, across the whole path). Every Track you hold auto-upgrades in Rank together at levels 9 (→R2), 13 (→R3), and 17 (→R4) — no further picks needed for that. **Every Job Skill below costs a flat 1 mana, at every Rank, no exceptions.**
+>
+> 🔄 **2026-08-23 (Multi Casting → Extra Attack)**: Job Skills with **Casting Time: Action** can now fill one attack of your Extra Attack sequence (2 attacks at lv5, 3 at lv20) instead of a normal weapon attack — you can't use the same Job Skill twice in the same turn, but can freely mix different Job Skills with normal attacks. See [Novice-Concept.md](../Concept/Novice-Concept.md#level-progression) for the full rule.
 
 ---
 
 ### INCREASE HP RECOVERY
 *Job Skill*
-**Casting Time:** Action
+**Casting Time:** Action or 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute
@@ -20,19 +22,19 @@ You gain **2** hit points every 6 seconds that pass or at the start of your turn
 ### Wind Cutter
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
 **Mana Cost:** 1
 
-You make **2** attacks with a weapon on your turn
+Make **1** additional weapon attack.
 
-***Job Skill Upgrade.*** The number of attacks per use increases when you reach levels 9 (**3**), 13 (**4**) and 17 (**5**).
+***Job Skill Upgrade.*** The number of additional attacks increases when you reach levels 9 (**2**), 13 (**3**), and 17 (**4**).
 
 ---
 
 ### Concentration
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
 **Range:** 60 feet
 **Mana Cost:** 1
 **Duration:** 1 minute
@@ -46,7 +48,7 @@ You mark one creature you can see within range. The first time each turn the mar
 ### JOINT BEAT
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
 **Range:** 30 feet
 **Mana Cost:** 1
 
@@ -59,10 +61,10 @@ You choose one creature you can see within range. It must make a Constitution sa
 ### Aura Weapon
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
 **Mana Cost:** 1
 
-For 1 minute, your weapon attacks deal an extra **1d6** damage.
+For 1 minute, your melee weapon attacks deal an extra **1d6** damage.
 
 ***Job Skill Upgrade.*** The bonus damage increases when you reach levels 9 (**2d6**), 13 (**3d6**), and 17 (**4d6**).
 
@@ -71,7 +73,7 @@ For 1 minute, your weapon attacks deal an extra **1d6** damage.
 ### SELF-IGNITE
 *Job Skill*
 
-**Casting Time:** Action
+**Casting Time:** 1 Attack
 **Mana Cost:** 1
 **Duration:** 1 minute
 
@@ -84,8 +86,7 @@ You ignite yourself, burning until you end it. At the end of each of your turns 
 ### GUARD
 *Job Skill*
 
-**Casting Time:** Reaction
-**Trigger:** You are hit by an attack
+**Casting Time:** 1 Attack
 **Mana Cost:** 1
 
 You gain temporary hit points equal to **1d8** + your Novice level.
@@ -97,10 +98,10 @@ You gain temporary hit points equal to **1d8** + your Novice level.
 ### Auto Counter
 *Job Skill*
 
-**Casting Time:** Reaction
-**Trigger:** You are hit by a melee attack
+**Casting Time:** 1 Attack
 **Mana Cost:** 1
+**Duration:** 1 minute
 
-You immediately make **one** weapon attack against the attacker.
+The next time you are hit by a melee attack within the next minute, you immediately make **1** weapon attack against the attacker, then this effect ends.
 
 ***Job Skill Upgrade.*** The number of counterattacks increases when you reach levels 9 (**2** attacks), 13 (**3** attacks), and 17 (**4** attacks).
