@@ -2,7 +2,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import ConfirmDialog from '../components/ConfirmDialog'
 import SearchSelect from '../components/SearchSelect'
-import { useGachaStore } from '../store/GachaStore'
+import { isLocalHost, useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
 import {
@@ -13,7 +13,7 @@ import {
   getReferenceLinks,
   getSpeciesOptions,
 } from '../utils/gachaOptions'
-import { downloadDataUrl, getExtensionFromDataUrl } from '../utils/exportImport'
+import { downloadDataUrl, getExtensionFromDataUrl, saveDefaultData } from '../utils/exportImport'
 import {
   characterImageKey,
   deleteImage,
@@ -1318,6 +1318,11 @@ function CharacterFormModal({
   // overlay — no backdrop, and no close controls since there's no "back to
   // the list" to close to (the list lives in a different tab).
   standalone = false,
+  // Extra controls to show in the header when standalone — the page has no
+  // Navbar (see STANDALONE_ROUTES in App.jsx), so anything normally reached
+  // from the Navbar's "จัดการข้อมูล" menu (e.g. save-to-default-data) needs
+  // its own way in here.
+  headerExtra = null,
 }) {
   const shopItemOptions = useMemo(() => {
     const names = new Set()
@@ -1813,7 +1818,9 @@ function CharacterFormModal({
                 )}
               </div>
             </div>
-            {!standalone && (
+            {standalone ? (
+              headerExtra
+            ) : (
               <button
                 type="button"
                 onClick={onCancel}
@@ -2652,6 +2659,7 @@ function CharacterFormModal({
                 📄 Export PDF
               </button>
             )}
+            {standalone && headerExtra}
             <button
               type="button"
               onClick={handleCancel}
@@ -4393,6 +4401,8 @@ export function CharacterDetailPage() {
   const { state, dispatch } = useGachaStore()
   const { showToast } = useToast()
   const [deleteTarget, setDeleteTarget] = useState(null)
+  const [confirmSaveDefault, setConfirmSaveDefault] = useState(false)
+  const [savingDefault, setSavingDefault] = useState(false)
 
   const character = useMemo(() => {
     const found = (state.characters ?? []).find((c) => c.id === characterId)
@@ -4419,6 +4429,33 @@ export function CharacterDetailPage() {
     setDeleteTarget(null)
     showToast('ลบตัวละครแล้ว', 'success')
   }
+
+  async function confirmSaveAsDefault() {
+    setSavingDefault(true)
+    try {
+      await saveDefaultData(state)
+      showToast('บันทึกลง Default Data สำเร็จ', 'success')
+    } catch (err) {
+      showToast(err.message || 'บันทึกลง Default Data ไม่สำเร็จ', 'error')
+    } finally {
+      setSavingDefault(false)
+      setConfirmSaveDefault(false)
+    }
+  }
+
+  // Standalone pages (this one included) skip the Navbar entirely, so the
+  // "จัดการข้อมูล" menu's save-to-default-data action isn't reachable from
+  // there — surface a compact equivalent in the character sheet header.
+  const headerExtra = isLocalHost() && (
+    <button
+      type="button"
+      onClick={() => setConfirmSaveDefault(true)}
+      className="inline-flex items-center gap-1.5 rounded-md border border-amber-200 bg-amber-50 px-3 py-1.5 text-xs font-medium text-amber-700 hover:bg-amber-100"
+      title="เขียนทับไฟล์ข้อมูลตั้งต้นในโปรเจกต์ด้วยข้อมูลปัจจุบัน"
+    >
+      💾 บันทึกลง Default Data
+    </button>
+  )
 
   if (!character) {
     return (
@@ -4447,6 +4484,7 @@ export function CharacterDetailPage() {
         onDelete={setDeleteTarget}
         showToast={showToast}
         standalone
+        headerExtra={headerExtra}
       />
       <ConfirmDialog
         open={!!deleteTarget}
@@ -4456,6 +4494,14 @@ export function CharacterDetailPage() {
         danger
         onCancel={() => setDeleteTarget(null)}
         onConfirm={confirmDelete}
+      />
+      <ConfirmDialog
+        open={confirmSaveDefault}
+        title="บันทึกลง Default Data"
+        message="จะเขียนทับไฟล์ข้อมูลตั้งต้น (src/data) ด้วยข้อมูลปัจจุบันทั้งหมด ได้แก่ ตู้สุ่ม ร้านค้า แคมเปญ ตัวละคร และรูปตัวละคร การกระทำนี้แก้ไขไฟล์ในโปรเจกต์โดยตรง ต้องการดำเนินการต่อหรือไม่?"
+        confirmLabel={savingDefault ? 'กำลังบันทึก...' : 'ยืนยันบันทึก'}
+        onCancel={() => setConfirmSaveDefault(false)}
+        onConfirm={confirmSaveAsDefault}
       />
     </div>
   )

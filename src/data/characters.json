@@ -13,11 +13,11 @@
     "size": "Medium",
     "stats": {
       "str": 16,
-      "dex": 16,
+      "dex": 14,
       "con": 19,
       "int": 7,
       "wis": 11,
-      "cha": 14
+      "cha": 17
     },
     "note": "",
     "hasImage": true,
@@ -29,19 +29,27 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-b91aa27b-8417-427a-8761-4d4f7df1eeb4",
+        "id": "classlevel-40a5164a-bb4d-443f-8c78-12e461eaf7cd",
         "className": "Paladin",
-        "subclassName": "Oath of Glory",
-        "level": 2
+        "subclassName": "Oath of Devotion",
+        "level": 3
       }
     ],
     "images": [
       {
         "id": "img-a48c536c-368f-4023-80d5-9326b6cd2df4",
         "label": "ร่างหลัก"
+      },
+      {
+        "id": "img-46e29121-3bcb-423b-8aef-31b80bdffe6b",
+        "label": ""
+      },
+      {
+        "id": "img-3751774c-7b73-4de3-b87f-34314cd29367",
+        "label": ""
       }
     ],
-    "activeImageId": "img-a48c536c-368f-4023-80d5-9326b6cd2df4",
+    "activeImageId": "img-46e29121-3bcb-423b-8aef-31b80bdffe6b",
     "alignment": "",
     "faith": "",
     "gender": "",
@@ -49,7 +57,7 @@
     "hair": "",
     "skin": "",
     "height": "",
-    "weight": "",
+    "weight": "240 lb",
     "age": "",
     "ideals": "",
     "bonds": "",
@@ -61,12 +69,12 @@
     "combat": {
       "ac": "",
       "speed": "30 ft",
-      "hitDice": "2d10",
-      "inspiration": true,
-      "xp": 300,
+      "hitDice": "3d10",
+      "inspiration": false,
+      "xp": 900,
       "hp": {
+        "current": 33,
         "max": "",
-        "current": 28,
         "temp": ""
       },
       "deathSaves": {
@@ -188,10 +196,6 @@
     "attacksSpellcasting": "",
     "equipment": [
       {
-        "name": "Shield",
-        "qty": 1
-      },
-      {
         "name": "Holy Symbol",
         "qty": 1
       },
@@ -209,6 +213,10 @@
       },
       {
         "name": "Backpack",
+        "qty": 1
+      },
+      {
+        "name": "Shield",
         "qty": 1
       }
     ],
@@ -253,12 +261,36 @@
       {
         "name": "Paladin's Smite",
         "description": "You always have the @spell[Divine Smite|XPHB] spell prepared. In addition, you can cast it without expending a spell slot, but you must finish a @variantrule[Long Rest|XPHB] before you can cast it in this way again."
+      },
+      {
+        "name": "Channel Divinity",
+        "description": "You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class's Channel Divinity, you choose which effect from this class to create. You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a @variantrule[Short Rest|XPHB], and you regain all expended uses when you finish a @variantrule[Long Rest|XPHB]. You gain an additional use when you reach Paladin level 11. If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature. @UUID[Actor.n4QXcSa3Z1NI8noP.Item.NO0yi5QXsEFUzmkh]{Divine Sense}"
+      },
+      {
+        "name": "Divine Sense",
+        "description": "As a @variantrule[Bonus Action|XPHB], you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the &Reference[condition=Incapacitated] condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the @spell[Hallow|XPHB] spell."
+      },
+      {
+        "name": "Oath of Devotion Spells",
+        "description": "The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Devotion Spells table, you thereafter always have the listed spells prepared. Oath of Devotion Spells Paladin Level Spells 3rd @spell[Protection from Evil and Good|XPHB], @spell[Shield of Faith|XPHB] 5th @spell[Aid|XPHB], @spell[Zone of Truth|XPHB] 9th @spell[Beacon of Hope|XPHB], @spell[Dispel Magic|XPHB] 13th @spell[Freedom of Movement|XPHB], @spell[Guardian of Faith|XPHB] 17th @spell[Commune|XPHB], @spell[Flame Strike|XPHB]"
+      },
+      {
+        "name": "Sacred Weapon",
+        "description": "When you take the @action[Attack|XPHB] action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage. The weapon also emits @variantrule[Bright Light|XPHB] in a 20-foot radius and @variantrule[Dim Light|XPHB] 20 feet beyond that. You can end this effect early (no action required). This effect also ends if you aren't carrying the weapon."
+      },
+      {
+        "name": "Divine Recovery",
+        "description": "You can regain some of your divine energy by praying your holy symbol. When you finish a Short Rest , you can choose an expended spell slots to recover. The spell slots can have a combined level equal to no more than half your proficiency bonus (round up), and none of the slots can be level 3 or higher. For example, if you're a level 5 paladin (+3 proficiency), you can recover one level 2 spell slot or two level 1 spell slots. Once you use this feature, you can't do so again until you finish a Long Rest ."
+      },
+      {
+        "name": "Defense",
+        "description": "(Prerequisite: Fighting Style Feature) While you're wearing Light, Medium, or Heavy armor, you gain a +1 bonus to Armor Class. Foundry Note This feature includes an Active Effect which provides the Armor Class bonus. Disable it when you are not wearing armor."
       }
     ],
     "alliesOrganizations": "",
     "factionName": "",
     "treasure": "",
-    "additionalFeaturesTraits": "Tough; Fighting Style: Blessed Warrior",
+    "additionalFeaturesTraits": "Tough; Dragon Fear",
     "spellcasting": {
       "spellcastingClass": "Paladin",
       "spellcastingAbility": "CHA",
@@ -266,10 +298,10 @@
       "spellAttackBonus": "",
       "cantrips": [
         {
-          "name": "Word of Radiance"
+          "name": ""
         },
         {
-          "name": "Thaumaturgy"
+          "name": ""
         },
         {
           "name": ""
@@ -292,7 +324,7 @@
       ],
       "levels": {
         "1": {
-          "slotsTotal": 2,
+          "slotsTotal": 3,
           "slotsRemaining": "",
           "spells": [
             {
@@ -300,11 +332,11 @@
               "prepared": true
             },
             {
-              "name": "Bless",
+              "name": "Divine Favor",
               "prepared": true
             },
             {
-              "name": "Command",
+              "name": "Bless",
               "prepared": true
             },
             {
@@ -312,16 +344,16 @@
               "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Protection from Evil and Good",
+              "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Shield of Faith",
+              "prepared": true
             },
             {
-              "name": "",
-              "prepared": false
+              "name": "Purify Food and Drink",
+              "prepared": true
             },
             {
               "name": "",
