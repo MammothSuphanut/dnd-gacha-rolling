@@ -4,6 +4,20 @@
 
 ---
 
+### STRIKE
+*Job Skill*
+
+**Casting Time:** Action
+**Range:** 5 feet
+**Mana Cost:** 1
+**Duration:** Instantaneous
+
+You make one weapon attack against a creature within range with **+2** attack rolls. 
+
+***Job Skill Upgrade.*** The attack rolls bonus increases by 1 at levels 9 (**+3**), 13 (**+4**), and 17 (**+5**).
+
+---
+
 ### FIRST AID
 *Job Skill*
 

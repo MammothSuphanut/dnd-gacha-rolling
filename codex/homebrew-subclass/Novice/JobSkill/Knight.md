@@ -6,26 +6,26 @@
 
 ### INCREASE HP RECOVERY
 *Job Skill*
-**Casting Time:** Bonus Action
+**Casting Time:** Action
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute
 
 You gain **2** hit points every 6 seconds that pass or at the start of your turn.
 
-***Job Skill Upgrade.*** The amount regenerated, and the in-combat cap, increase when you reach levels 9 (**4** HP, cap ×6), 13 (**6** HP, cap ×7), and 17 (**8** HP, cap ×8).
+***Job Skill Upgrade.*** The amount regenerated, and the in-combat cap, increase when you reach levels 9 (**3** HP), 13 (**4** HP), and 17 (**5** HP).
 
 ---
 
-### Battle Will
+### Wind Cutter
 *Job Skill*
 
-**Casting Time:** Free Action
+**Casting Time:** Action
 **Mana Cost:** 1
 
-Whenever you take the Attack action with a weapon on your turn, you can spend 1 mana to make **one** additional weapon attack.
+You make **2** attacks with a weapon on your turn
 
-***Job Skill Upgrade.*** The number of additional attacks per use increases when you reach levels 13 (**2** additional attacks) and 17 (**3**). (No change at level 9 — this Job Skill stays at 1 additional attack through Rank 2.)
+***Job Skill Upgrade.*** The number of attacks per use increases when you reach levels 9 (**3**), 13 (**4**) and 17 (**5**).
 
 ---
 
@@ -59,7 +59,7 @@ You choose one creature you can see within range. It must make a Constitution sa
 ### Aura Weapon
 *Job Skill*
 
-**Casting Time:** Free Action
+**Casting Time:** Action
 **Mana Cost:** 1
 
 For 1 minute, your weapon attacks deal an extra **1d6** damage.
@@ -71,7 +71,7 @@ For 1 minute, your weapon attacks deal an extra **1d6** damage.
 ### SELF-IGNITE
 *Job Skill*
 
-**Casting Time:** Bonus Action
+**Casting Time:** Action
 **Mana Cost:** 1
 **Duration:** 1 minute
 

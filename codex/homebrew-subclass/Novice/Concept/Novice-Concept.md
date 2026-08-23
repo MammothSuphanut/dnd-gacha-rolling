@@ -46,29 +46,32 @@
 
 ## Level Progression
 
-| เลเวล | Proficiency Bonus | Mana (Pool = PB × 2) | Feature |
-|---|---|---|---|
-| 1 | +2 | 4 | ได้ **First Aid** (Novice-Base, Rank 1) |
-| 2 | +2 | 4 | ได้ **Play Dead** (Novice-Base, Rank 1) |
-| 3 | +2 | 4 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน (Rank 1) |
-| 4 | +2 | 4 | Ability Score Improvement |
-| 5 | +3 | 6 | - |
-| 6 | +3 | 6 | - |
-| 7 | +3 | 6 | **Job Change: Transcendent Second Class** (subclass feature — รอออกแบบ) |
-| 8 | +3 | 6 | Ability Score Improvement |
-| 9 | +4 | 8 | **ทุก Track ที่ถืออยู่ → Rank 2** |
-| 10 | +4 | 8 | - |
-| 11 | +4 | 8 | **Job Change: Third Class** (subclass feature — รอออกแบบ) |
-| 12 | +4 | 8 | Ability Score Improvement |
-| 13 | +5 | 10 | **ทุก Track ที่ถืออยู่ → Rank 3** |
-| 14 | +5 | 10 | - |
-| 15 | +5 | 10 | **Job Change: Fourth Class** (subclass feature — รอออกแบบ) |
-| 16 | +5 | 10 | Ability Score Improvement |
-| 17 | +6 | 12 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
-| 18 | +6 | 12 | - |
-| 19 | +6 | 12 | Ability Score Improvement |
-| 20 | +6 | 12 | เลือก Job Path Track เพิ่ม 1 อัน (Rank 1) |
+| เลเวล | Proficiency Bonus | Max Mana | Mana (Pool = PB × 2) | Feature |
+|---|---|---|---|---|
+| 1 | +2 | 2 | 4 | ได้ **First Aid** |
+| 2 | +2 | 2 | 4 | ได้ **Play Dead** |
+| 3 | +2 | 2 | 4 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน |
+| 4 | +2 | 2 | 4 | Ability Score Improvement |
+| 5 | +3 | 3 | 6 | **Multi Casting** |
+| 6 | +3 | 3 | 6 | - |
+| 7 | +3 | 3 | 6 | **Job Change: Transcendent Second Class** |
+| 8 | +3 | 3 | 6 | Ability Score Improvement |
+| 9 | +4 | 4 | 8 | **ทุก Track ที่ถืออยู่ → Rank 2** |
+| 10 | +4 | 4 | 8 | - |
+| 11 | +4 | 4 | 8 | **Job Change: Third Class** |
+| 12 | +4 | 4 | 8 | Ability Score Improvement |
+| 13 | +5 | 5 | 10 | **ทุก Track ที่ถืออยู่ → Rank 3** |
+| 14 | +5 | 5 | 10 | - |
+| 15 | +5 | 5 | 10 | **Job Change: Fourth Class** |
+| 16 | +5 | 5 | 10 | Ability Score Improvement |
+| 17 | +6 | 6 | 12 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
+| 18 | +6 | 6 | 12 | - |
+| 19 | +6 | 6 | 12 | Ability Score Improvement |
+| 20 | +6 | 6 | 12 | **Multi Casting Improvement** |
 
+> **Multi Casting (level 5)**: ใช้ Track/skill ได้จเป็น 2 ครั้ง ใน 1 Action
+> **Multi Casting Improvement (level 20)**: ใช้ Track/skill ได้จเป็น 3 ครั้ง ใน 1 Action
+>
 > ดูรายละเอียดเต็มที่หัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง — สรุปสั้นๆ: Base Track ทั้ง 3 อันได้อัตโนมัติไม่ต้องเลือก (Strike+First Aid ที่ lv1, Play Dead ที่ lv2), Job Path Track เลือก 2 อันที่ lv3 + เพิ่มอีก 1 อันที่ lv20 (ไม่ auto-upgrade แล้วเพราะมาหลัง lv17), **ทุก Track ที่ถืออยู่ ณ ตอนนั้น (ไม่ว่า Base หรือ Job Path) อัป Rank ขึ้นเองพร้อมกันหมดที่ lv9/13/17** ไม่มีแต้มให้เลือก ไม่มีจุดแข่งกัน — **ไม่มี Respec**
 >
 > 🔄 **2026-08-23 (rev. 2 — auto-upgrade ทั้งหมด, ตัดจุดหยิบที่ lv7/11/15 ออก)**: เปลี่ยนจากระบบ "จุดอัพเกรดแบบเลือกเอง ผูก cap กับ milestone" (rev. 1 ด้านล่าง) → **auto-upgrade ล้วนๆ ไม่มีจุดให้เลือกอีกเลย** ทุก Track ที่ถืออยู่ ณ ตอนนั้นอัป Rank พร้อมกันหมดที่ lv9/13/17 — ตัดปัญหา "Track ไหนไม่ได้อัปจะรู้สึกแย่" ออกไปทั้งหมดเพราะไม่มี Track ไหนถูกทิ้งอีกแล้ว (ยกเว้น Job Path Track ที่หยิบตอน lv20 ซึ่งตั้งใจให้ค้าง Rank 1 ตลอดไปเป็นของแถมท้ายสาย) — **lv7/11/15 ไม่ผูกกับ Track อีกต่อไป** เหลือแค่ Job Change (เปลี่ยนชื่อ tier) + subclass feature คงที่ที่จะออกแบบทีหลัง (ไม่ใช่ Track)
