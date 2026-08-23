@@ -17,7 +17,7 @@ You gain **2** hit points every 6 seconds that pass or at the start of your turn
 
 ---
 
-### EXTRA STRIKE
+### Battle Will
 *Job Skill*
 
 **Casting Time:** Free Action
@@ -29,7 +29,7 @@ Whenever you take the Attack action with a weapon on your turn, you can spend 1 
 
 ---
 
-### MARK
+### Concentration
 *Job Skill*
 
 **Casting Time:** Action
@@ -56,7 +56,7 @@ You choose one creature you can see within range. It must make a Constitution sa
 
 ---
 
-### WEAPON EMPOWER
+### Aura Weapon
 *Job Skill*
 
 **Casting Time:** Free Action
@@ -75,9 +75,9 @@ For 1 minute, your weapon attacks deal an extra **1d6** damage.
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-You ignite yourself, burning until you end it. At the end of each of your turns while active, every creature within 5 feet of you takes **5** Fire damage with no saving throw allowed; you take half that amount, rounded down. You can end this effect at any time as a Free Action.
+You ignite yourself, burning until you end it. At the end of each of your turns while active, every creature within 5 feet of you takes **1d10** Fire damage with no saving throw allowed; you take half that amount, rounded down. You can end this effect at any time as a Free Action.
 
-***Job Skill Upgrade.*** The fire damage increases when you reach levels 9 (**10**), 13 (**15**), and 17 (**20**).
+***Job Skill Upgrade.*** The fire damage increases when you reach levels 9 (**2d10**), 13 (**3d10**), and 17 (**4d10**).
 
 ---
 
@@ -94,7 +94,7 @@ You gain temporary hit points equal to **1d8** + your Novice level.
 
 ---
 
-### COUNTER
+### Auto Counter
 *Job Skill*
 
 **Casting Time:** Reaction
