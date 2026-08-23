@@ -1826,13 +1826,13 @@ function CharacterFormModal({
           </div>
 
           {/* View Mode Tabs */}
-          <div className="flex border-b border-[#e2cfb3] bg-white px-4">
+          <div className="flex overflow-x-auto border-b border-[#e2cfb3] bg-white px-4 md:justify-center">
             {EDIT_TABS.map((t) => (
               <button
                 key={t.key}
                 type="button"
                 onClick={() => setViewTab(t.key)}
-                className={`flex-1 inline-flex items-center justify-center gap-1.5 whitespace-nowrap border-b-2 py-3 text-xs sm:text-sm font-semibold transition-colors ${
+                className={`shrink-0 inline-flex items-center justify-center gap-1.5 whitespace-nowrap border-b-2 px-3 py-3 text-xs sm:text-sm font-semibold transition-colors md:flex-1 ${
                   viewTab === t.key
                     ? 'border-violet-600 text-violet-700 bg-violet-50/30'
                     : 'border-transparent text-stone-500 hover:bg-stone-50/50 hover:text-stone-800'
@@ -1850,7 +1850,7 @@ function CharacterFormModal({
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 {/* Left Column: Image showcase (5 cols) */}
                 <div className="md:col-span-5 flex flex-col gap-3">
-                  <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl border border-[#e2cfb3] bg-[#f5ede0] shadow-inner flex items-center justify-center">
+                  <div className="relative mx-auto aspect-[3/4] h-[42vh] max-h-[420px] w-auto max-w-full overflow-hidden rounded-xl border border-[#e2cfb3] bg-[#f5ede0] shadow-inner flex items-center justify-center md:h-[50vh] md:max-h-[560px]">
                     {activePreview ? (
                       <img src={activePreview} alt={form.name} className="h-full w-full object-cover" />
                     ) : (
@@ -2663,13 +2663,13 @@ function CharacterFormModal({
           </div>
         </div>
 
-        <div className="flex border-b border-[#e2cfb3] bg-white px-4">
+        <div className="flex overflow-x-auto border-b border-[#e2cfb3] bg-white px-4 md:justify-center">
           {EDIT_TABS.map((t) => (
             <button
               key={t.key}
               type="button"
               onClick={() => setEditTab(t.key)}
-              className={`flex-1 inline-flex items-center justify-center gap-1.5 whitespace-nowrap border-b-2 py-3 text-xs sm:text-sm font-semibold transition-colors ${
+              className={`shrink-0 inline-flex items-center justify-center gap-1.5 whitespace-nowrap border-b-2 px-3 py-3 text-xs sm:text-sm font-semibold transition-colors md:flex-1 ${
                 editTab === t.key
                   ? 'border-violet-600 text-violet-700 bg-violet-50/30'
                   : 'border-transparent text-stone-500 hover:bg-stone-50/50 hover:text-stone-800'
