@@ -48,28 +48,32 @@
 
 | เลเวล | Proficiency Bonus | Mana | Feature |
 |---|---|---|---|
-| 1 | +2 | 2 | เลือก Track ใหม่ (Novice-Base) |
-| 2 | +2 | 4 | เลือก Track ใหม่ (Novice-Base) |
-| 3 | +2 | 6 | **Job Change: Second Class** + เลือก Track ใหม่ (Job Path) |
+| 1 | +2 | 2 | ได้ **Strike + First Aid** (Novice-Base, Rank 1) |
+| 2 | +2 | 4 | ได้ **Play Dead** (Novice-Base, Rank 1) |
+| 3 | +2 | 6 | **Job Change: Second Class** + เลือก Job Path Track 2 อัน (Rank 1) |
 | 4 | +2 | 8 | Ability Score Improvement |
-| 5 | +3 | 10 | อัพเกรด Track |
-| 6 | +3 | 12 | อัพเกรด Track |
-| 7 | +3 | 14 | **Job Change: Transcendent Second Class** + เลือก Track ใหม่ (Job Path) |
+| 5 | +3 | 10 | - |
+| 6 | +3 | 12 | - |
+| 7 | +3 | 14 | **Job Change: Transcendent Second Class** (subclass feature — รอออกแบบ) |
 | 8 | +3 | 16 | Ability Score Improvement |
-| 9 | +4 | 18 | อัพเกรด Track |
-| 10 | +4 | 20 | อัพเกรด Track |
-| 11 | +4 | 22 | **Job Change: Third Class** + เลือก Track ใหม่ (Job Path) |
+| 9 | +4 | 18 | **ทุก Track ที่ถืออยู่ → Rank 2** |
+| 10 | +4 | 20 | - |
+| 11 | +4 | 22 | **Job Change: Third Class** (subclass feature — รอออกแบบ) |
 | 12 | +4 | 24 | Ability Score Improvement |
-| 13 | +5 | 26 | อัพเกรด Track |
-| 14 | +5 | 28 | อัพเกรด Track |
-| 15 | +5 | 30 | **Job Change: Fourth Class** + เลือก Track ใหม่ (Job Path) |
+| 13 | +5 | 26 | **ทุก Track ที่ถืออยู่ → Rank 3** |
+| 14 | +5 | 28 | - |
+| 15 | +5 | 30 | **Job Change: Fourth Class** (subclass feature — รอออกแบบ) |
 | 16 | +5 | 32 | Ability Score Improvement |
-| 17 | +6 | 34 | อัพเกรด Track |
-| 18 | +6 | 36 | อัพเกรด Track |
+| 17 | +6 | 34 | **ทุก Track ที่ถืออยู่ → Rank 4 (เต็ม)** |
+| 18 | +6 | 36 | - |
 | 19 | +6 | 38 | Ability Score Improvement |
-| 20 | +6 | 40 | - |
+| 20 | +6 | 40 | เลือก Job Path Track เพิ่ม 1 อัน (Rank 1) |
 
-> ดูรายละเอียดเต็มของ "เลือก Track ใหม่" / "อัพเกรด Track" ที่หัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง — สรุปสั้นๆ: เลือก Track ใหม่ (Rank 1) ที่ level 1/2 (จาก Novice-Base) และ 3/7/11/15 (จาก Job Path ที่เลือก), อัพเกรด Track ที่ถืออยู่ (+1 Rank ไม่เกิน Rank 4) ที่ level 5/6/9/10/13/14/17/18 — **ไม่มี Respec**
+> ดูรายละเอียดเต็มที่หัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง — สรุปสั้นๆ: Base Track ทั้ง 3 อันได้อัตโนมัติไม่ต้องเลือก (Strike+First Aid ที่ lv1, Play Dead ที่ lv2), Job Path Track เลือก 2 อันที่ lv3 + เพิ่มอีก 1 อันที่ lv20 (ไม่ auto-upgrade แล้วเพราะมาหลัง lv17), **ทุก Track ที่ถืออยู่ ณ ตอนนั้น (ไม่ว่า Base หรือ Job Path) อัป Rank ขึ้นเองพร้อมกันหมดที่ lv9/13/17** ไม่มีแต้มให้เลือก ไม่มีจุดแข่งกัน — **ไม่มี Respec**
+>
+> 🔄 **2026-08-23 (rev. 2 — auto-upgrade ทั้งหมด, ตัดจุดหยิบที่ lv7/11/15 ออก)**: เปลี่ยนจากระบบ "จุดอัพเกรดแบบเลือกเอง ผูก cap กับ milestone" (rev. 1 ด้านล่าง) → **auto-upgrade ล้วนๆ ไม่มีจุดให้เลือกอีกเลย** ทุก Track ที่ถืออยู่ ณ ตอนนั้นอัป Rank พร้อมกันหมดที่ lv9/13/17 — ตัดปัญหา "Track ไหนไม่ได้อัปจะรู้สึกแย่" ออกไปทั้งหมดเพราะไม่มี Track ไหนถูกทิ้งอีกแล้ว (ยกเว้น Job Path Track ที่หยิบตอน lv20 ซึ่งตั้งใจให้ค้าง Rank 1 ตลอดไปเป็นของแถมท้ายสาย) — **lv7/11/15 ไม่ผูกกับ Track อีกต่อไป** เหลือแค่ Job Change (เปลี่ยนชื่อ tier) + subclass feature คงที่ที่จะออกแบบทีหลัง (ไม่ใช่ Track)
+>
+> 🔄 **2026-08-23 (rev. 1, ถูกแทนที่ด้วย rev. 2 แล้ว)**: เคยลองผูก cap ของ Rank กับ Job Change milestone (R1@lv3→R2@lv7→R3@lv11→R4@lv15) แล้วให้จุดอัพเกรดที่ lv9/10/13/14/17/18 (6 แต้ม) เลือกเองว่าจะอัป Track ไหน — พบว่า level 5/6 (จุดอัพเกรดเดิม) ใช้จริงไม่ได้เพราะ cap ยังไม่ขยับจนกว่าจะถึง lv7 เลยตัดออกไปก่อน ก่อนจะเปลี่ยนไปใช้ auto-upgrade ล้วนๆ ใน rev. 2 แทน
 
 **หมายเหตุ Mana** 🚧 (ยังไม่ final): pool = **เลเวล × 2** (universal ทุก Job, ไม่มี HP-swap) — เปลี่ยนจากสูตรเดิม (สะสม Proficiency Bonus) เป็นสูตรเชิงเส้นตรงไปตรงมา เข้าใจง่าย ไล่จาก 2 (lv 1) ถึง 40 (lv 20) ใช้จ่ายกับ Active Mastery Branch ที่ scale ได้ (เช่น Fire Bolt) — รายละเอียดเต็มเรื่อง cost/recovery ดูหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules) ด้านล่าง (ล็อกไว้แล้วจากการทดลองกับ Swordsman/Knight tier — ใช้อ้างอิงได้เลยไม่ต้องคำนวณใหม่ทุกสาย)
 
@@ -112,21 +116,32 @@ Total mana ต่อวัน ≈ pool (Long Rest) + 2 × Proficiency Bonus (ส
 
 Swordsman/Knight tier ปัจจุบัน (level 3) ใช้ avg cost ~1.2-1.5 ตรงตามช่วงเป้าหมายพอดี ไม่ต้องปรับเพิ่ม — tier ที่แปลงต่อไปในเลเวลสูงขึ้น (Transcendent 7, Third 11, Fourth 15) ให้ตั้ง cost แพงขึ้นตามตารางนี้ได้เลยตามธรรมชาติ ไม่ต้องมาถกใหม่ทุกครั้ง
 
-**หมายเหตุจังหวะ**: เลเวล 3/7/11/15 คือ "Job Change" milestone ใหญ่ 4 จุด **ข้าม First Class เป็น mechanical step ไปเลย** แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — เลเวลที่เหลือ (1/2/5/6/9/10/13/14/17/18) ตอนนี้มีหน้าที่ครบแล้วทั้งหมดในฐานะจุด **เลือก/อัพเกรด Track** (ดูหัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง) เหลือแค่ level 20 ที่ยังไม่มี feature ("-")
+**หมายเหตุจังหวะ**: เลเวล 3/7/11/15 คือ "Job Change" milestone ใหญ่ 4 จุด **ข้าม First Class เป็น mechanical step ไปเลย** แมปตรงกับ 4 tier ที่เหลือของ RO (Second Class → Transcendent Second Class → Third Class → Fourth Class — ดูตาราง [ROX Job Tree Reference](#rox-job-tree-reference-ทางการ) ด้านล่าง) เลือกจังหวะนี้เพื่อไม่ให้ทับเลเวล ASI/Epic Boon (4/8/12/16/19) เลย — lv3 ยังทำหน้าที่เลือก Job Path Track ด้วย ส่วน lv7/11/15 เหลือแค่ Job Change + subclass feature (รอออกแบบ) ไม่ผูกกับ Track แล้ว — Track ทั้งหมดอัป Rank อัตโนมัติพร้อมกันที่ **lv9/13/17** แทน (ดูหัวข้อ [ระบบการเลือก/อัพเกรด Track](#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ด้านล่าง) ส่วน level 5/6/10/14/18 ว่างไว้ก่อน ("-") รอออกแบบ feature อื่นที่ไม่ใช่ Track, level 20 ได้ Job Path Track เพิ่ม 1 อัน (bonus ท้ายสาย)
 
 > 🚧 ระบบ Mastery Branch (เดิมอยู่ที่ Mastery-Branches.md) ถูกลบไปแล้ว รอออกแบบใหม่ทั้งจังหวะ Mastery Point และเนื้อหา pool ให้ตรงกับตารางเลเวลนี้ก่อนใช้งานจริง
 
 ## ระบบการเลือก/อัพเกรด Track (Pick & Upgrade Schedule)
 
-> 🔄 **2026-08-22**: กฎกลางนี้ใช้กับ**ทุก Job Path เหมือนกันหมด** (ทดลองออกแบบกับ Knight ก่อนแล้วยกมาเป็นกฎกลางของทั้ง class) แทนที่ระบบ "Pick Budget ต่อ Job Change + auto-upgrade" แบบเดิมที่เคยทดลองใน [Knight.md](Knight.md) รอบ 12 — **Respec ถูกตัดออกทั้งหมด**: Track ที่เลือกหรืออัพไปแล้ว **เปลี่ยนใจทีหลังไม่ได้อีกต่อไป** ทุกจุดเป็นการตัดสินใจถาวร
+> 🔄 **2026-08-23**: เปลี่ยนเป็น**ระบบ auto-upgrade ล้วนๆ** — ตัดจุด "อัพเกรดแบบเลือกเอง" ออกทั้งหมด แทนที่ด้วยจุด auto ที่ตายตัว 3 จุด (lv9/13/17) ที่อัป Rank ให้ **ทุก Track ที่ถืออยู่พร้อมกันหมด** ไม่ต้องเลือก ไม่มีแต้มให้บริหาร (ดูประวัติการเปลี่ยนแปลงที่หมายเหตุใต้ตาราง [Level Progression](#level-progression)) — **Respec ยังคงไม่มี**: Track ที่เลือกไว้แล้ว (Job Path ที่ lv3/lv20) เปลี่ยนใจทีหลังไม่ได้
 
-**จุดเลือก Track ใหม่ (6 จุด)**: level **1, 2, 3, 7, 11, 15** — แต่ละจุดเลือก Track ที่ยังไม่เคยมีมาก่อน 1 อัน เริ่มที่ **Rank 1** เสมอ
-- Level 1, 2: เลือกจาก **Track ของ Novice-Base เอง** (ดู [Novice-Base.md](Novice-Base.md)) — ยังไม่มี Job Path ให้เลือกจนกว่าจะถึง level 3 ดังนั้น 2 จุดนี้ดึงจาก pool เดียวกัน (เลือกได้ 2 จาก Track ทั้งหมดของ Base — ที่เหลือไม่เคยหยิบจะไม่มีทางได้อีกเลยเพราะไม่มี Respec)
-- Level 3, 7, 11, 15: เลือกจาก **Track ของ Job Path ที่เลือกไว้ตอน level 3** (ดูไฟล์ fork ของแต่ละสาย เช่น [Knight.md](Knight.md))
+**Base Track (3 อัน, ไม่ต้องเลือก)**: ได้อัตโนมัติทั้ง 3 อันจาก [Novice-Base.md](Novice-Base.md) — **Strike + First Aid ที่ level 1**, **Play Dead ที่ level 2** — ไม่มีการเลือก/แข่งกันอีกต่อไป ทุกตัวละคร Novice ได้เหมือนกันหมด (ตัด Tame Pet ออกจากสโคปแล้ว ไม่ใช้งาน)
 
-**จุดอัพเกรด Track เดิม (8 จุด)**: level **5, 6, 9, 10, 13, 14, 17, 18** — แต่ละจุดเลือก Track ที่ถืออยู่แล้ว 1 อัน (Track ไหนก็ได้ ไม่จำกัดว่าต้องเป็น Base หรือ Job Path) อัป Rank ขึ้น 1 ขั้น — Rank สูงสุด 4 เสมอ (ถ้า Track ที่ถืออยู่ทุกอันเป็น Rank 4 หมดแล้ว จุดนั้นไม่มีผล ถือว่าพลาดแต้มไป)
+**Job Path Track (3 อัน ตลอดสาย)**:
+- **Level 3**: เลือก **2 อัน** จาก Track pool ของ Job Path ที่เลือกไว้ (ดูไฟล์ fork แต่ละสาย เช่น [Knight.md](Knight.md)) เริ่มที่ Rank 1
+- **Level 20**: เลือกเพิ่มอีก **1 อัน** จาก pool เดียวกัน (Rank 1) — เป็นของแถมท้ายสาย มาหลังจุด auto-upgrade สุดท้าย (lv17) แล้ว จึง**ค้างที่ Rank 1 ตลอดไปโดยตั้งใจ** (ไม่ใช่ของเสียของ — ดูหลักการออกแบบ "Rank 1 ต้องใช้ได้ดีในตัวเอง" ในหัวข้อ [กฎการใช้ Mana](#กฎการใช้-mana-mana-usage-rules))
 
-**ผลรวมทั้งสาย**: ตลอด 20 เลเวล ได้ Track ใหม่รวม **6 อัน** (2 จาก Novice-Base + 4 จาก Job Path) และมีแต้มอัพเกรดให้กระจาย **8 แต้ม** ลงกี่ Track ก็ได้ตามใจ (ไม่บังคับ 1 Track ต่อ 1 แต้ม) — Track นึงจะขึ้นถึง Rank 4 ได้ต้องใช้แต้มอัพเกรด 3 แต้ม (Rank 1→2→3→4) เช่น ถ้าอยากได้ 2 Track ที่ Rank 4 พอดี (ใช้ 6 แต้ม) จะเหลืออีก 2 แต้มกระจายอัป Track อื่นเป็น Rank 2 ได้ 2 อัน (หรือ Rank 3 ได้ 1 อัน) — เป็น trade-off เชิงกลยุทธ์แบบเดียวกับที่ [Knight.md](Knight.md) เคยมีก่อนรอบ 12 แต่กระจายจุดตัดสินใจให้ละเอียดขึ้น (ตัดสินใจอย่างมากสุด 1 อย่างต่อเลเวลที่มีจุดหยิบ/อัพ แทนที่จะยัดหลายอย่างไว้ที่ level 3 จุดเดียวเหมือนที่เคยทำ)
+**จุด Auto-Upgrade (3 จุด)**: level **9, 13, 17** — **ทุก Track ที่ถืออยู่ ณ ตอนนั้น** (Base ทั้ง 3 + Job Path ที่หยิบไว้ตอน lv3) อัป Rank ขึ้น 1 ขั้นพร้อมกันหมดโดยอัตโนมัติ ไม่ต้องเลือก ไม่มีแต้ม:
+
+| Level | Rank ที่ได้ |
+|---|---|
+| 3 (หยิบ) | Rank 1 |
+| 9 | Rank 2 |
+| 13 | Rank 3 |
+| 17 | Rank 4 (เต็ม) |
+
+Track ที่หยิบตั้งแต่ lv1-3 (Base ทั้ง 3 + Job Path 2 อันแรก) จะถึง **Rank 4 พร้อมกันหมดตอน lv17** แน่นอน 100% — ไม่มี Track ไหนถูกทิ้งร้างหรือแข่งแย่งกันอีกต่อไป ส่วน Job Path Track ที่หยิบเพิ่มตอน lv20 ไม่ทันจุด auto-upgrade ไหนแล้ว จึงค้าง Rank 1 ตลอดไปตามที่ออกแบบไว้
+
+**ผลรวมทั้งสาย**: Track รวมทั้งหมด **6 อัน** (Base 3 + Job Path 3) — 5 อันแรก (Base 3 + Job Path 2 จาก lv3) จบที่ Rank 4 เต็มทุกอันการันตี, อันสุดท้าย (Job Path จาก lv20) อยู่ที่ Rank 1
 
 ## Job Paths
 

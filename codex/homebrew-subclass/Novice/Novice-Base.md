@@ -2,7 +2,7 @@
 
 > ส่วนหนึ่งของ [Novice-Concept.md](Novice-Concept.md) — วัตถุดิบอ้างอิง skill จริงของ "Novice" เอง (ตัว base job ก่อนเปลี่ยนอาชีพ ไม่ใช่ 1st Class อย่าง Swordsman/Mage) สำหรับใช้ออกแบบ Class Features เลเวล 1-2 ที่ตาราง [Level Progression](Novice-Concept.md#level-progression) ยังเว้นว่างไว้ ("-") — คู่กับไฟล์ fork อื่นๆ ที่แยกตาม Job Path (Knight.md, Crusader.md, ฯลฯ) แต่ไฟล์นี้ไม่มี fork เพราะ Novice เป็น job เดียว ไม่แตกสาย
 
-> 🚧 **สถานะ: DRAFT** — มี D&D Feature Draft แล้วสำหรับ Strike/First Aid/Play Dead ในรูปแบบ **Track (Rank 1-4)** ตาม [ระบบการเลือก/อัพเกรด Track](Novice-Concept.md#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ของ Novice-Concept.md — เลือกได้ **2 จาก 3 Track นี้** ที่ level 1 กับ 2 (ไม่ใช่ได้ทั้ง 3 อัตโนมัติแบบเดิมอีกต่อไป และไม่มี Respec ให้เปลี่ยนใจทีหลัง) — เหลือ **Tame Pet** ที่ยังไม่ได้ออกแบบ (รอตัดสินใจว่าจะทำเป็น pet mechanic จริงหรือไม่ — ถ้าออกแบบเสร็จจะกลายเป็น Track ที่ 4 ของ pool นี้) และ Skill #1000104 ที่ไม่มีข้อมูลต้นทาง
+> 🚧 **สถานะ: DRAFT** — มี D&D Feature Draft แล้วสำหรับ Strike/First Aid/Play Dead ในรูปแบบ **Track (Rank 1-4)** ตาม [ระบบการเลือก/อัพเกรด Track](Novice-Concept.md#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) ของ Novice-Concept.md — ได้ทั้ง **3 Track อัตโนมัติ ไม่ต้องเลือก** (Strike + First Aid ที่ level 1, Play Dead ที่ level 2) ทุก Track อัป Rank เองพร้อมกันที่ lv9/13/17 จนเต็ม Rank 4 ตอน lv17 — **Tame Pet ตัดออกจากสโคปแล้ว ไม่ใช้งาน** และ Skill #1000104 ที่ไม่มีข้อมูลต้นทางก็ไม่ใช้เช่นกัน
 
 ## ROX Skill Reference — Novice (Base Job)
 
@@ -22,7 +22,9 @@
 
 ## D&D Feature Draft — Novice (Base Job)
 
-> 🔄 **2026-08-22 (rev. 2 — แปลงเป็น Track ตามระบบกลาง)**: เปลี่ยนจาก "ได้ทั้ง 3 feature พร้อมกันที่ level 1 ค่าตายตัว" → **3 Track (Rank 1-4)** ตาม [ระบบการเลือก/อัพเกรด Track](Novice-Concept.md#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) กลาง — เลือกได้ **2 จาก 3** ที่ level 1 กับ 2 (คนละ 1 อัน) ส่วนอีกอันที่ไม่ได้เลือกจะไม่มีทางได้อีกเลยเพราะไม่มี Respec แล้ว — Rank ขึ้นต่อไปได้ผ่านจุดอัพเกรดกลาง (level 5/6/9/10/13/14/17/18) ร่วม pool เดียวกับ Track ของ Job Path ที่เลือกตอน level 3 เป็นต้นไป
+> 🔄 **2026-08-22 (rev. 2 — แปลงเป็น Track ตามระบบกลาง)**: เปลี่ยนจาก "ได้ทั้ง 3 feature พร้อมกันที่ level 1 ค่าตายตัว" → **3 Track (Rank 1-4)** ตาม [ระบบการเลือก/อัพเกรด Track](Novice-Concept.md#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) กลาง
+>
+> 🔄 **2026-08-23 (rev. 3 — เลิกเลือก กลับไปได้ทั้ง 3 อัตโนมัติ + auto-upgrade)**: rev. 2 เคยให้เลือก 2 จาก 3 ที่ level 1/2 — เปลี่ยนใจกลับมาเป็น **ได้ทั้ง 3 อัตโนมัติ ไม่ต้องเลือก** เพราะ level 1-2 ยังไม่มีข้อมูลระบบพอจะเดิมพันเลือกทิ้งอันนึงถาวร (ไม่มี Respec) — **Strike + First Aid ที่ level 1, Play Dead ที่ level 2** — Rank ขึ้นเองพร้อมกันทั้ง 3 Track (ไม่ต้องเลือก ไม่มีแต้ม) ที่ **level 9 (→R2), 13 (→R3), 17 (→R4 เต็ม)** ตามกฎกลางใน [Novice-Concept.md](Novice-Concept.md#ระบบการเลือกอัพเกรด-track-pick--upgrade-schedule) — จุดนี้ร่วมกับ Job Path Track ที่เลือกไว้ตอน level 3 ด้วย (ทุก Track ที่ถืออยู่ ณ ตอนนั้นอัปพร้อมกันหมด)
 
 | Track | หมวด | Mana | Rank 1 (หยิบครั้งที่ 1) | Rank 2 | Rank 3 | Rank 4 |
 |---|---|---|---|---|---|---|
@@ -36,5 +38,5 @@
 - Strike: ตัดกลไก "200% ATK" ตรงตัวออก (ตัวเลขจากเกมมือถือสเกลสูงเกินสำหรับ level 1) → แปลงเป็นท่าโจมตีที่ทอย **Xd8 คงที่แทนลูกเต๋าอาวุธ** สเกลตาม Rank แทน — ตัดขาดจากอาวุธที่ถืออยู่โดยเจตนา (ถืออาวุธอะไรก็ได้ดาเมจเท่ากัน แลกกับการเสียโบนัสจากลูกเต๋าอาวุธวิเศษ/Weapon Mastery property)
 - First Aid: 300 HP ต้นฉบับสเกลสูงเกิน level 1 เช่นกัน → ใช้ Xd8 สเกลตาม Rank เดียวกับ Strike และขยายเป็นรักษา**พันธมิตรในระยะประชิดได้ด้วย** ไม่ใช่แค่ตัวเองแล้ว (เปลี่ยนบทบาทจาก self-sustain เป็น battlefield support เล็กน้อย — ดูความเห็นเรื่อง overlap กับ Priest ที่เคยพูดถึง)
 - Play Dead: ตัดกลไก "เคลียร์ threat" ออก (D&D ไม่มีระบบ threat/aggro ตรงๆ) เก็บแก่น "นอนนิ่งฟื้นตัว" มาผูกกับจังหวะ Short Rest แทนการนับวินาทีจริง แปลงเป็น **mana refund ล้วน สเกล 2/4/8/16 ตาม Rank จำกัดใช้ Prof Bonus ครั้ง/Long Rest**
-- Tame Pet: ยังไม่แปลง — เก็บไว้เป็นของค้างรอ balance session แยก (ถ้าออกแบบเสร็จจะเป็น Track ที่ 4 ของ pool นี้)
+- Tame Pet: 🔄 **2026-08-23** ตัดออกจากสโคปแล้ว (ไม่ทำเป็น pet mechanic) — ไม่ใช่ Track ของ pool นี้อีกต่อไป
 - **เช็ค Day Math ที่ level 1-2 (Rank 1)**: pool 2-4 + short rest 2 ครั้ง×2 = 6-8 mana/วัน — avg cost ของท่า active ที่เสีย mana จริง (Strike/First Aid Rank 1 = 1 mana) ตรงกรอบเป้าหมาย ~1 ของ level 1-2 band พอดี → 6-8 mana ÷ 1 ≈ 6-8 ครั้ง/วัน อยู่ในกรอบ 6-10 ครั้ง/วัน ไม่ต้องปรับ — **ยังไม่ได้เช็ค Rank 2-4** (เกิดตอนเลเวลสูงกว่า pool จะโตตามธรรมชาติ รอ balance pass รอบหน้าเทียบตาราง cost band ใน [Novice-Concept.md](Novice-Concept.md#กฎการใช้-mana-mana-usage-rules))
