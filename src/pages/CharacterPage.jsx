@@ -109,7 +109,13 @@ const EQUIPMENT_QTY_PATTERN = /^(.*?)\s*(?:[x×]\s*(\d+)|\(\s*[x×]?\s*(\d+)\s*\
 function toEquipmentList(value) {
   return toItemList(value).map((it) => {
     if (it && typeof it === 'object') {
-      return { name: it.name ?? '', qty: Math.max(1, Number(it.qty) || 1) }
+      // description/weight are optional enrichment from a Foundry VTT import
+      // (see foundryImport.js) — not edited by the manual UI, but carried
+      // through so the PDF export can use them.
+      const base = { name: it.name ?? '', qty: Math.max(1, Number(it.qty) || 1) }
+      if (it.description) base.description = it.description
+      if (typeof it.weight === 'number') base.weight = it.weight
+      return base
     }
     const str = String(it ?? '').trim()
     const match = str.match(EQUIPMENT_QTY_PATTERN)

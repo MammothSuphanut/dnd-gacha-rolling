@@ -42,14 +42,141 @@ const LANGUAGE_CODE_MAP = {
 
 const EQUIPMENT_ITEM_TYPES = new Set(['equipment', 'consumable', 'tool', 'loot', 'container'])
 
+// Foundry item descriptions carry both real HTML and a mix of inline-roll
+// syntax ("[[/damage 2d4 type=bludgeoning]]") and reference tags. Some of
+// this project's Foundry exports were themselves converted from 5etools text,
+// so several bracket styles show up: native Foundry "@UUID[...]{label}"
+// links, "&Reference[skill=Investigation]"-style system references, and
+// 5etools-style "@tag[content|source]" tags (which — unlike @UUID — have no
+// {label} and can nest further "[...]" inside their own content, e.g.
+// "@variantrule[Emanation [Area of Effect]|XPHB|Emanation]").
+function resolveBracketTags(str) {
+  let out = ''
+  let i = 0
+  while (i < str.length) {
+    if ((str[i] === '@' || str[i] === '&') && /[A-Za-z]/.test(str[i + 1] || '')) {
+      let j = i + 1
+      while (j < str.length && /[A-Za-z0-9]/.test(str[j])) j++
+      if (str[j] === '[') {
+        let depth = 1
+        let k = j + 1
+        while (k < str.length && depth > 0) {
+          if (str[k] === '[') depth++
+          else if (str[k] === ']') depth--
+          k++
+        }
+        const content = str.slice(j + 1, k - 1)
+        // "content|source" (5etools convention) -> first segment;
+        // "key=value" (Foundry's &Reference[skill=Investigation]) -> the value.
+        out += content.includes('|') ? content.split('|')[0] : content.includes('=') ? content.split('=').pop() : content
+        i = k
+        continue
+      }
+    }
+    out += str[i]
+    i++
+  }
+  return out
+}
+
+function resolveInlineRolls(str) {
+  return str.replace(/\[\[\/?(\w+)\s*([^\]]*)\]\]/g, (_, cmd, args) => {
+    const diceMatch = args.match(/(\d*d\d+(?:\s*[+-]\s*\d+)?)/i)
+    const typeMatch = args.match(/type=(\w+)/i)
+    const dice = diceMatch ? diceMatch[1].replace(/\s+/g, '') : args.trim()
+    return typeMatch ? `${dice} ${typeMatch[1]}` : dice
+  })
+}
+
+// Converts one Foundry item's HTML description into plain text, preserving
+// paragraph breaks (needed so an "At Higher Levels"-style trailing block
+// reads as its own paragraph, matching how the SRD-sourced text renders).
 function stripHtml(raw) {
   if (!raw) return ''
-  return raw
-    .replace(/<[^>]+>/g, ' ')
+  // Entities decode first — a literal "&" (as opposed to an HTML entity)
+  // only appears in the source as "&amp;", including in "&amp;Reference[...]"
+  // tags, so resolveBracketTags needs a real "&" to recognize those.
+  let text = raw
     .replace(/&amp;/g, '&')
     .replace(/&nbsp;/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+  text = resolveInlineRolls(text)
+  text = text.replace(/@UUID\[[^\]]*\]\{([^}]*)\}/g, '$1')
+  text = resolveBracketTags(text)
+  text = text.replace(/<\/(p|div|li|h[1-6])>/gi, '\n\n')
+  text = text.replace(/<br\s*\/?>/gi, '\n')
+  text = text.replace(/<li[^>]*>/gi, '• ')
+  text = text.replace(/<[^>]+>/g, '')
+  return text
+    .split(/\n{2,}/)
+    .map((p) => p.replace(/\s+/g, ' ').trim())
+    .filter(Boolean)
+    .join('\n\n')
+}
+
+const FOUNDRY_SCHOOL_NAMES = {
+  abj: 'Abjuration', con: 'Conjuration', div: 'Divination', enc: 'Enchantment',
+  evo: 'Evocation', ill: 'Illusion', nec: 'Necromancy', trs: 'Transmutation',
+}
+
+function foundryActivationText(activation) {
+  const type = activation?.type
+  if (!type) return ''
+  const labels = {
+    action: 'Action', bonus: 'Bonus Action', reaction: 'Reaction',
+    minute: 'Minute', hour: 'Hour', day: 'Day', special: 'Special', legendary: 'Legendary Action',
+  }
+  const label = labels[type] || type
+  const value = Number(activation.value) || 0
+  if ((type === 'minute' || type === 'hour' || type === 'day') && value) {
+    return `${value} ${label}${value === 1 ? '' : 's'}`
+  }
+  return label
+}
+
+function foundryRangeText(range) {
+  if (!range) return ''
+  if (range.units === 'self') return 'Self'
+  if (range.units === 'touch') return 'Touch'
+  if (range.units === 'any') return 'Any'
+  if (range.units === 'spec' || range.units === 'special') return range.special || 'Special'
+  if (range.value) return `${range.value} ${range.units || 'ft'}`
+  return range.units || ''
+}
+
+function foundryDurationText(duration) {
+  if (!duration) return ''
+  if (duration.units === 'inst') return 'Instantaneous'
+  if (duration.units === 'perm') return 'Until dispelled'
+  const labels = { round: 'Round', minute: 'Minute', hour: 'Hour', day: 'Day', spec: 'Special' }
+  const label = labels[duration.units] || duration.units || ''
+  const n = Number(duration.value) || 0
+  return n ? `${n} ${label}${n === 1 ? '' : 's'}` : label
+}
+
+function foundryComponentsText(properties, materials) {
+  const parts = []
+  if (properties?.includes('vocal')) parts.push('V')
+  if (properties?.includes('somatic')) parts.push('S')
+  if (properties?.includes('material')) parts.push(materials?.value ? `M (${materials.value})` : 'M')
+  return parts.join(', ')
+}
+
+// One-line "School — Casting Time, Range, Components, Concentration,
+// Duration" summary, matching the format used elsewhere for SRD-sourced spells.
+function foundrySpellMeta(system) {
+  const school = FOUNDRY_SCHOOL_NAMES[system?.school] || system?.school || ''
+  const ritual = !!system?.properties?.includes('ritual')
+  const concentration = !!system?.properties?.includes('concentration')
+  const bits = [
+    foundryActivationText(system?.activation),
+    foundryRangeText(system?.range),
+    foundryComponentsText(system?.properties, system?.materials),
+    concentration ? 'Concentration' : null,
+    foundryDurationText(system?.duration),
+  ].filter(Boolean)
+  return `${school}${ritual ? ' (ritual)' : ''} — ${bits.join(', ')}`
 }
 
 function parseClassLevels(items) {
@@ -174,10 +301,16 @@ function parseWeaponsAndEquipment(items, system, profBonus) {
   const equipmentItems = items.filter(
     (it) => EQUIPMENT_ITEM_TYPES.has(it.type) || overflowWeapons.includes(it),
   )
-  const equipment = equipmentItems.map((it) => ({
-    name: it.name || '',
-    qty: Math.max(1, Number(it.system?.quantity) || 1),
-  }))
+  const equipment = equipmentItems.map((it) => {
+    const description = stripHtml(it.system?.description?.value)
+    const weight = it.system?.weight?.value
+    return {
+      name: it.name || '',
+      qty: Math.max(1, Number(it.system?.quantity) || 1),
+      ...(description ? { description } : {}),
+      ...(typeof weight === 'number' ? { weight } : {}),
+    }
+  })
 
   return { weapons: weaponRows.length > 0 ? weaponRows : null, equipment }
 }
@@ -208,15 +341,20 @@ function parseSpellcasting(data, items) {
   const spellcastingAbility = abilityRaw ? abilityRaw.toUpperCase() : ''
 
   const spellItems = items.filter((it) => it.type === 'spell')
+  const spellEntry = (s) => ({
+    name: s.name || '',
+    description: stripHtml(s.system?.description?.value),
+    meta: foundrySpellMeta(s.system),
+  })
   const cantrips = spellItems
     .filter((s) => Number(s.system?.level) === 0)
-    .map((s) => ({ name: s.name || '' }))
+    .map((s) => ({ ...spellEntry(s) }))
 
   const levels = {}
   for (let lvl = 1; lvl <= 9; lvl++) {
     const spells = spellItems
       .filter((s) => Number(s.system?.level) === lvl && Number(s.system?.prepared) >= 1)
-      .map((s) => ({ name: s.name || '', prepared: true }))
+      .map((s) => ({ ...spellEntry(s), prepared: true }))
     const slotsTotal = data.system?.spells?.[`spell${lvl}`]?.value
     levels[lvl] = { slotsTotal: slotsTotal != null ? slotsTotal : '', spells }
   }

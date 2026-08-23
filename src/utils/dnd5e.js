@@ -169,17 +169,17 @@ export function blankSpellcasting() {
     spellcastingAbility: '',
     spellSaveDC: '',
     spellAttackBonus: '',
-    cantrips: Array.from({ length: 8 }, () => ({ name: '' })),
+    cantrips: Array.from({ length: 8 }, () => ({ name: '', description: '', meta: '' })),
     levels: {
-      1: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 12 }, () => ({ name: '', prepared: false })) },
-      2: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 13 }, () => ({ name: '', prepared: false })) },
-      3: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 13 }, () => ({ name: '', prepared: false })) },
-      4: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 13 }, () => ({ name: '', prepared: false })) },
-      5: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 9 }, () => ({ name: '', prepared: false })) },
-      6: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 9 }, () => ({ name: '', prepared: false })) },
-      7: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 9 }, () => ({ name: '', prepared: false })) },
-      8: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 7 }, () => ({ name: '', prepared: false })) },
-      9: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 7 }, () => ({ name: '', prepared: false })) },
+      1: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 12 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      2: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 13 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      3: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 13 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      4: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 13 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      5: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 9 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      6: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 9 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      7: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 9 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      8: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 7 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
+      9: { slotsTotal: '', slotsRemaining: '', spells: Array.from({ length: 7 }, () => ({ name: '', prepared: false, description: '', meta: '' })) },
     }
   }
 }
@@ -188,8 +188,13 @@ export function normalizeSpellcasting(raw) {
   const blank = blankSpellcasting()
   if (!raw) return blank
 
+  // description/meta are optional enrichment carried in from a Foundry VTT
+  // import (see foundryImport.js) — not part of the manual editor UI, but
+  // preserved across normalization so the PDF export can use them.
   const cantrips = Array.from({ length: 8 }, (_, i) => ({
-    name: raw.cantrips?.[i]?.name ?? ''
+    name: raw.cantrips?.[i]?.name ?? '',
+    description: raw.cantrips?.[i]?.description ?? '',
+    meta: raw.cantrips?.[i]?.meta ?? '',
   }))
 
   const levels = {}
@@ -205,7 +210,9 @@ export function normalizeSpellcasting(raw) {
       slotsRemaining: rawLvl.slotsRemaining ?? '',
       spells: Array.from({ length: count }, (_, i) => ({
         name: rawLvl.spells?.[i]?.name ?? '',
-        prepared: !!rawLvl.spells?.[i]?.prepared
+        prepared: !!rawLvl.spells?.[i]?.prepared,
+        description: rawLvl.spells?.[i]?.description ?? '',
+        meta: rawLvl.spells?.[i]?.meta ?? '',
       }))
     }
   }

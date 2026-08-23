@@ -214,10 +214,17 @@ async function buildCharacterSection(sheet, character) {
 
 async function buildSpellsSection(sheet, character) {
   const sp = character.spellcasting
-  const named = new Map() // name -> level (from character record, prepared or not)
-  for (const c of sp?.cantrips ?? []) if (c?.name?.trim()) named.set(c.name.trim(), 0)
+  // name -> { level, description, meta } — description/meta are optional,
+  // populated when this character came from a Foundry VTT import (see
+  // foundryImport.js), which embeds each spell's own full rules text.
+  const named = new Map()
+  for (const c of sp?.cantrips ?? []) {
+    if (c?.name?.trim()) named.set(c.name.trim(), { level: 0, description: c.description || '', meta: c.meta || '' })
+  }
   for (let lvl = 1; lvl <= 9; lvl++) {
-    for (const s of sp?.levels?.[lvl]?.spells ?? []) if (s?.name?.trim()) named.set(s.name.trim(), lvl)
+    for (const s of sp?.levels?.[lvl]?.spells ?? []) {
+      if (s?.name?.trim()) named.set(s.name.trim(), { level: lvl, description: s.description || '', meta: s.meta || '' })
+    }
   }
   if (named.size === 0 && !sp?.spellcastingClass) return
 
@@ -244,14 +251,20 @@ async function buildSpellsSection(sheet, character) {
   }
   sheet.y += 10
 
+  // A character-embedded description (from Foundry import) is this specific
+  // character's own spell — prefer it outright and skip the SRD lookup
+  // entirely for that spell; only spells without one need the database.
   const entries = await Promise.all(
-    [...named.entries()].map(async ([name, fallbackLevel]) => ({ name, fallbackLevel, info: await getSpellInfo(name) })),
+    [...named.entries()].map(async ([name, own]) => {
+      if (own.description) return { name, own, info: null }
+      return { name, own, info: await getSpellInfo(name) }
+    }),
   )
-  entries.sort((a, b) => (a.info?.level ?? a.fallbackLevel) - (b.info?.level ?? b.fallbackLevel) || a.name.localeCompare(b.name))
+  entries.sort((a, b) => (a.info?.level ?? a.own.level) - (b.info?.level ?? b.own.level) || a.name.localeCompare(b.name))
 
   let lastLevel = null
-  for (const { name, fallbackLevel, info } of entries) {
-    const lvl = info?.level ?? fallbackLevel
+  for (const { name, own, info } of entries) {
+    const lvl = info?.level ?? own.level
     if (lvl !== lastLevel) {
       lastLevel = lvl
       sheet.ensure(18, onNewPage)
@@ -259,13 +272,15 @@ async function buildSpellsSection(sheet, character) {
       sheet.y += 15
     }
 
-    const metaText = info
-      ? `${info.school}${info.ritual ? ' (ritual)' : ''} — ${info.time}, ${info.range}, ${info.components}${info.concentration ? ', Concentration' : ''}, ${info.duration}`
-      : 'ไม่พบข้อมูลสเปลล์นี้ในฐานข้อมูล SRD ในโปรเจกต์ — อาจเป็นสเปลล์ homebrew หรือพิมพ์ชื่อไม่ตรงกับฐานข้อมูล'
-    const bodyText = info?.text || ''
-    // entriesHigherLevel already renders its own "At Higher Levels" / custom
-    // heading (see fiveEtoolsText's `entries`-type handling) — don't prefix it again.
-    const higherText = info?.higherLevelText || ''
+    const metaText = own.description
+      ? own.meta
+      : info
+        ? `${info.school}${info.ritual ? ' (ritual)' : ''} — ${info.time}, ${info.range}, ${info.components}${info.concentration ? ', Concentration' : ''}, ${info.duration}`
+        : 'ไม่พบข้อมูลสเปลล์นี้ในฐานข้อมูล SRD ในโปรเจกต์ — อาจเป็นสเปลล์ homebrew หรือพิมพ์ชื่อไม่ตรงกับฐานข้อมูล'
+    // entriesHigherLevel (SRD path) already renders its own "At Higher
+    // Levels" / custom heading — don't prefix it again.
+    const bodyText = own.description || info?.text || ''
+    const higherText = own.description ? '' : info?.higherLevelText || ''
     const fullBody = [bodyText, higherText].filter(Boolean).join('\n\n')
     const bodyH = fullBody ? sheet.measureParagraphHeight(fullBody, CW, { size: 9, lineHeight: 12.5 }) : 0
     sheet.ensure(Math.min(14 + 12 + bodyH + 10, 720), onNewPage)
@@ -286,11 +301,16 @@ async function buildInventorySection(sheet, character) {
   const equipment = (character.equipment ?? []).filter((it) => (typeof it === 'string' ? it.trim() : it?.name?.trim()))
   if (equipment.length === 0 && !character.treasure) return
 
+  // description/weight embedded on the item itself come from a Foundry
+  // import (see foundryImport.js) — this character's own copy of the item,
+  // preferred outright over the generic SRD lookup when present.
   const infos = await Promise.all(
     equipment.map(async (it) => {
       const nm = typeof it === 'string' ? it : it.name
       const qty = typeof it === 'string' ? 1 : Number(it.qty) || 1
-      return { name: nm, qty, info: await getItemInfo(nm) }
+      const own = typeof it === 'string' ? {} : { description: it.description, weight: it.weight }
+      if (own.description || typeof own.weight === 'number') return { name: nm, qty, own, info: null, lookedUp: false }
+      return { name: nm, qty, own, info: await getItemInfo(nm), lookedUp: true }
     }),
   )
 
@@ -299,13 +319,13 @@ async function buildInventorySection(sheet, character) {
   const onNewPage = onNewPageFor('Inventory')
 
   let totalWeight = 0
-  for (const { name, qty, info } of infos) {
-    const weight = info?.weight ?? null
+  for (const { name, qty, own, info, lookedUp } of infos) {
+    const weight = typeof own.weight === 'number' ? own.weight : info?.weight ?? null
     if (weight != null) totalWeight += weight * qty
 
     const headerText = `${name}${qty > 1 ? `  ×${qty}` : ''}`
     const metaText = weight != null ? `${weight} lbs${qty > 1 ? ` each (${(weight * qty).toFixed(1)} lbs total)` : ''}` : ''
-    const bodyText = info?.text || ''
+    const bodyText = own.description || info?.text || ''
     const bodyH = bodyText ? sheet.measureParagraphHeight(bodyText, CW, { size: 9, lineHeight: 12.5 }) : 0
     sheet.ensure(Math.min(14 + bodyH + 10, 720), onNewPage)
     sheet.text(headerText, MARGIN, sheet.y, { size: 10, color: INK, bold: true })
@@ -313,7 +333,7 @@ async function buildInventorySection(sheet, character) {
     sheet.y += 14
     if (bodyText) {
       sheet.paragraph(bodyText, MARGIN, CW, { size: 9, lineHeight: 12.5, paraGap: 5, onNewPage })
-    } else if (!info) {
+    } else if (lookedUp && !info) {
       sheet.richWrap([{ text: 'ไม่พบข้อมูลชิ้นนี้ในฐานข้อมูล SRD ในโปรเจกต์', color: FAINT, size: 8 }], MARGIN, CW, { size: 8, onNewPage })
     }
     sheet.y += 6
@@ -360,21 +380,42 @@ async function buildFeaturesSection(sheet, character) {
   sheet.banner('Features & Feats')
   const onNewPage = onNewPageFor('Features & Feats')
 
-  // Official class + subclass features, by level, per multiclass entry.
-  const classBlocks = []
-  for (const cl of character.classLevels ?? []) {
-    if (!cl.className) continue
-    const [cf, scf] = await Promise.all([
-      getClassFeaturesUpTo(cl.className, cl.level),
-      cl.subclassName ? getSubclassFeaturesUpTo(cl.className, cl.subclassName, cl.level) : Promise.resolve([]),
-    ])
-    classBlocks.push({ className: cl.className, subclassName: cl.subclassName, features: [...cf, ...scf].sort((a, b) => a.level - b.level) })
+  // Species traits (SRD) — computed up front so the class-features list below
+  // can skip anything that duplicates one of these by name.
+  const traits = await getSpeciesTraits(character.species)
+  const traitNameSet = new Set(traits.map((t) => t.name.trim().toLowerCase()))
+
+  // A character imported from Foundry VTT (see foundryImport.js) already has
+  // each of its own features/traits with full rules text attached — that's
+  // this specific character's own choices (which Invocations, which Fighting
+  // Style, etc.), so prefer it outright over the generic "every official
+  // feature up to this level" SRD dump, which can't know those choices.
+  const ownFeatures = (character.featuresAndTraits ?? []).filter(
+    (f) => f.name?.trim() && f.description?.trim().length > 15,
+  )
+  const ownClassFeatures = ownFeatures.filter((f) => !traitNameSet.has(f.name.trim().toLowerCase()))
+  const useOwnFeatures = ownClassFeatures.length > 0
+
+  let classBlocks = []
+  if (!useOwnFeatures) {
+    for (const cl of character.classLevels ?? []) {
+      if (!cl.className) continue
+      const [cf, scf] = await Promise.all([
+        getClassFeaturesUpTo(cl.className, cl.level),
+        cl.subclassName ? getSubclassFeaturesUpTo(cl.className, cl.subclassName, cl.level) : Promise.resolve([]),
+      ])
+      classBlocks.push({ className: cl.className, subclassName: cl.subclassName, features: [...cf, ...scf].sort((a, b) => a.level - b.level) })
+    }
   }
   const hasOfficialFeatures = classBlocks.some((b) => b.features.length > 0)
 
-  sheet.text('Class Features', MARGIN, sheet.y, { size: 12, color: ACCENT, bold: true })
+  sheet.text(useOwnFeatures ? 'Class Features & Traits' : 'Class Features', MARGIN, sheet.y, { size: 12, color: ACCENT, bold: true })
   sheet.y += 18
-  if (hasOfficialFeatures) {
+  if (useOwnFeatures) {
+    for (const f of ownClassFeatures) {
+      await renderFeatureEntry(sheet, onNewPage, f.name, '', f.description)
+    }
+  } else if (hasOfficialFeatures) {
     for (const block of classBlocks) {
       if (classBlocks.length > 1) {
         sheet.ensure(16, onNewPage)
@@ -386,8 +427,9 @@ async function buildFeaturesSection(sheet, character) {
       }
     }
   } else {
-    // Homebrew / unrecognized class — fall back to the character's own short
-    // feature list rather than showing an empty section.
+    // Homebrew / unrecognized class with no rich descriptions either — fall
+    // back to the character's own short feature list (names, maybe short
+    // notes) rather than showing an empty section.
     const list = (character.featuresAndTraits ?? []).filter((f) => f.name?.trim())
     if (list.length === 0) {
       sheet.text('—', MARGIN, sheet.y, { size: 9, color: FAINT })
@@ -400,7 +442,6 @@ async function buildFeaturesSection(sheet, character) {
   sheet.y += 6
 
   // Species traits
-  const traits = await getSpeciesTraits(character.species)
   sheet.ensure(20, onNewPage)
   sheet.text('Species Traits', MARGIN, sheet.y, { size: 12, color: ACCENT, bold: true })
   sheet.y += 18
