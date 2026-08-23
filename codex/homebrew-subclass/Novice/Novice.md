@@ -24,9 +24,9 @@ The Novice is built around the class-change ladder from *Ragnarok Online* (and i
 
 A Novice's Job Skills — Strike, First Aid, Play Dead, and every technique granted by a Job Path — are powered by a pool of **Mana**.
 
-**Mana Pool.** Your pool equals your Proficiency Bonus (2 at 1st level, rising to 6 at 17th level and beyond — see the Mana Pool column on the Novice table). You regain all spent Mana when you finish a Long Rest.
+**Mana Pool.** Your pool is set by your Tier, not your Proficiency Bonus: **2** in Tier 1 (1st-4th level), **3** in Tier 2 (5th-10th level), **4** in Tier 3 (11th-16th level), and **5** in Tier 4 (17th level and beyond) — see the Mana Pool column on the Novice table. You regain all spent Mana when you finish a Long Rest.
 
-**Recovering Mana Mid-Day.** There's no Short Rest recovery. Outside of a Long Rest, the only way to recover Mana is Play Dead (see *2nd Level: Play Dead*), which you can use twice per day.
+**Recovering Mana Mid-Day.** Whenever you finish a Short Rest, you can use Play Dead (see *2nd Level: Play Dead*) to regain **half** your spent Mana, rounded down. There's no limit on how many times per day you can do this beyond how many Short Rests your day includes.
 
 **Spending Mana.** Every Job Skill lists its own Mana cost. If you don't have enough Mana left to pay for one, you can't use it — but Strike never costs more than 1 Mana and is always available, so you're never left with nothing to do.
 
@@ -50,18 +50,18 @@ Starting at 20th level (*Extra Attack Improvement*), this becomes **three** atta
 | 6th | +3 | Super Novice | 3 | 3 |
 | 7th | +3 | Job Change: Transcendent Second Class | 3 | 3 |
 | 8th | +3 | Ability Score Improvement | 3 | 3 |
-| 9th | +4 | Job Skill Advancement (Rank 2) | 4 | 3 |
-| 10th | +4 | Ultra Super Novice | 4 | 3 |
+| 9th | +4 | Job Skill Advancement (Rank 2) | 3 | 3 |
+| 10th | +4 | Ultra Super Novice | 3 | 3 |
 | 11th | +4 | Job Change: Third Class | 4 | 3 |
 | 12th | +4 | Ability Score Improvement | 4 | 3 |
-| 13th | +5 | Job Skill Advancement (Rank 3) | 5 | 3 |
-| 14th | +5 | Elevated Novice | 5 | 3 |
-| 15th | +5 | Job Change: Fourth Class | 5 | 3 |
-| 16th | +5 | Ability Score Improvement | 5 | 3 |
-| 17th | +6 | Job Skill Advancement (Rank 4) | 6 | 3 |
-| 18th | +6 | Hyper Novice | 6 | 3 |
-| 19th | +6 | Ability Score Improvement | 6 | 3 |
-| 20th | +6 | Extra Attack Improvement | 6 | 3 |
+| 13th | +5 | Job Skill Advancement (Rank 3) | 4 | 3 |
+| 14th | +5 | Elevated Novice | 4 | 3 |
+| 15th | +5 | Job Change: Fourth Class | 4 | 3 |
+| 16th | +5 | Ability Score Improvement | 4 | 3 |
+| 17th | +6 | Job Skill Advancement (Rank 4) | 5 | 3 |
+| 18th | +6 | Hyper Novice | 5 | 3 |
+| 19th | +6 | Ability Score Improvement | 5 | 3 |
+| 20th | +6 | Extra Attack Improvement | 5 | 3 |
 
 ## Class Features
 
@@ -77,7 +77,7 @@ You gain the First Aid Job Skill (see *Base Job Skills*, below), letting you pat
 
 ### 2nd Level: Play Dead
 
-You gain the Play Dead Job Skill (see *Base Job Skills*, below) — your only way to recover Mana outside of a Long Rest.
+You gain the Play Dead Job Skill (see *Base Job Skills*, below) — your only way to recover Mana outside of a Long Rest, usable at the end of any Short Rest you take.
 
 ### 3rd Level: Job Change — Second Class
 
@@ -190,7 +190,7 @@ You touch a creature within melee range — yourself or an ally — and channel 
 **Range:** Self
 **Mana Cost:** 0
 
-You lie down and feign death for 1 minute. At the end, you regain **all** of your spent Mana. You can use this feature **twice**, regaining all expended uses when you finish a Long Rest.
+You lie down and feign death for 1 minute, usable only at the end of a Short Rest you take. At the end, you regain **half** of your spent Mana, rounded down. There's no limit to how many times you can use this per day — only to how many Short Rests your day includes.
 
 *Job Skill Advancement.* None — Play Dead doesn't change with Rank.
 

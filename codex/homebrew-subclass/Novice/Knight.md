@@ -24,7 +24,7 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 *A Lord Knight's fury is a resource in its own right — one they can call on exactly when it matters most.*
 
-**Berserk.** As an action, once per Long Rest, you give yourself over to battle fury: you instantly regain all of your lost hit points and all of your spent Mana.
+**Berserk.** As an action, once per Long Rest, you give yourself over to battle fury: you instantly regain all of your lost hit points and half (round down) of your maximum Mana.
 
 ### 11th Level: Third Class — Rune Knight
 
