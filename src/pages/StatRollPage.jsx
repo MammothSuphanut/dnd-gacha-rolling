@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import SearchSelect from '../components/SearchSelect'
 import { createId } from '../utils/id'
 
@@ -60,6 +61,11 @@ export default function StatRollPage({
   onToggleStatKey,
   onToggleAllStatKeys,
 }) {
+  // UI-only (not persisted in statRollState) — purely a display preference,
+  // doesn't need to survive leaving this page. Starts collapsed to stay out
+  // of the way; the defaults are usually fine, so most visits won't need it.
+  const [settingsExpanded, setSettingsExpanded] = useState(false)
+
   const {
     results,
     assignments,
@@ -71,6 +77,8 @@ export default function StatRollPage({
     fixedFaces = {},
     fixedFacesEnabled = false,
     includeHonSan = true,
+    rerollLimit = DEFAULT_REROLLS,
+    extraRerollLimit = DEFAULT_EXTRA_REROLLS,
     rerollsLeft = DEFAULT_REROLLS,
     extraRerollsLeft = DEFAULT_EXTRA_REROLLS,
   } = statRollState
@@ -84,10 +92,30 @@ export default function StatRollPage({
     setStatRollState((prev) => ({ ...prev, minTotal: value }))
   }
 
+  // Only ever changeable pre-roll (the settings fieldset is locked
+  // otherwise), so it's safe to also sync rerollsLeft here immediately —
+  // no in-progress count to clobber.
+  function setRerollLimit(value) {
+    setStatRollState((prev) => ({
+      ...prev,
+      rerollLimit: value,
+      rerollsLeft: Math.max(0, Number(value) || 0),
+    }))
+  }
+
+  function setExtraRerollLimit(value) {
+    setStatRollState((prev) => ({
+      ...prev,
+      extraRerollLimit: value,
+      extraRerollsLeft: Math.max(0, Number(value) || 0),
+    }))
+  }
+
   // Roll count changes shape (6 vs 8) when this flips, so any existing rolls
   // no longer line up 1:1 with the stat boxes — clear them like a reset.
   // minTotal is untouched: it only ever governs the core six (see
-  // handleRoll), so there's nothing to re-tune here.
+  // handleRoll), so there's nothing to re-tune here. Reroll budgets refill
+  // to whatever limits are currently configured, not the hardcoded defaults.
   function setIncludeHonSan(value) {
     setStatRollState((prev) => ({
       ...prev,
@@ -95,8 +123,8 @@ export default function StatRollPage({
       results: [],
       assignments: {},
       bonuses: {},
-      rerollsLeft: DEFAULT_REROLLS,
-      extraRerollsLeft: DEFAULT_EXTRA_REROLLS,
+      rerollsLeft: Math.max(0, Number(prev.rerollLimit ?? DEFAULT_REROLLS) || 0),
+      extraRerollsLeft: Math.max(0, Number(prev.extraRerollLimit ?? DEFAULT_EXTRA_REROLLS) || 0),
     }))
   }
 
@@ -307,6 +335,8 @@ export default function StatRollPage({
       fixedFaces: {},
       fixedFacesEnabled: false,
       includeHonSan: true,
+      rerollLimit: DEFAULT_REROLLS,
+      extraRerollLimit: DEFAULT_EXTRA_REROLLS,
       rerollsLeft: DEFAULT_REROLLS,
       extraRerollsLeft: DEFAULT_EXTRA_REROLLS,
     })
@@ -452,138 +482,191 @@ export default function StatRollPage({
         สุ่มค่าพลัง ({diceCount}d{diceSides} ตัดต่ำสุด {dropCount} ลูก)
       </h2>
 
-      <div className="mb-4 flex flex-wrap items-center gap-3">
-        {isFirstRoll ? (
-          <button
-            onClick={handleRoll}
-            className="rounded-lg bg-violet-700 py-3 px-6 text-lg font-bold text-white transition hover:bg-violet-800 md:px-8"
-          >
-            สุ่มเลย!
-          </button>
-        ) : (
-          <>
+      {/* Action bar — the buttons you actually press, kept visually separate
+          from the settings card below so this row never gets crowded out. */}
+      <div className="mb-4 flex flex-wrap items-center gap-3 rounded-xl border border-[#e2cfb3] bg-white p-3">
+        <div className="flex flex-wrap items-center gap-2">
+          {isFirstRoll ? (
             <button
-              onClick={handleRerollStandard}
-              disabled={!canReroll}
-              className="rounded-lg bg-violet-700 py-3 px-6 text-base font-bold text-white transition hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:hover:bg-stone-300 md:px-7"
+              onClick={handleRoll}
+              className="rounded-lg bg-violet-700 py-2.5 px-6 text-base font-bold text-white transition hover:bg-violet-800 md:px-8"
             >
-              สุ่มใหม่ (Standard)
+              สุ่มเลย!
             </button>
-            {includeHonSan && (
+          ) : (
+            <>
               <button
-                onClick={handleRerollExtra}
-                disabled={!canRerollExtra}
-                className="rounded-lg bg-violet-500 py-3 px-6 text-base font-bold text-white transition hover:bg-violet-600 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:hover:bg-stone-300 md:px-7"
+                onClick={handleRerollStandard}
+                disabled={!canReroll}
+                className="rounded-lg bg-violet-700 py-2.5 px-5 text-sm font-bold text-white transition hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:hover:bg-stone-300"
               >
-                สุ่มใหม่ (Extra)
+                สุ่มใหม่ (Standard)
               </button>
-            )}
-          </>
-        )}
-        <button
-          type="button"
-          onClick={handleReset}
-          className="rounded-lg border border-gray-300 bg-white py-3 px-6 text-sm font-semibold text-stone-600 transition hover:bg-[#f5ede0]"
-        >
-          รีเซ็ต
-        </button>
-        <span
-          className={`rounded-lg border px-3 py-2 text-sm font-semibold ${
-            rerollsLeft > 0
-              ? 'border-[#e2cfb3] bg-white text-stone-600'
-              : 'border-red-200 bg-red-50 text-red-600'
-          }`}
-          title='ใช้ร่วมกันทั้ง "สุ่มใหม่ (Standard)" และ 🎲 รายการ์ด Standard — สุ่มครั้งแรกไม่เสีย Reroll, หมดแล้วต้องกด "รีเซ็ต"'
-        >
-          Reroll เหลือ: {rerollsLeft}/{DEFAULT_REROLLS}
-        </span>
-        {includeHonSan && (
+              {includeHonSan && (
+                <button
+                  onClick={handleRerollExtra}
+                  disabled={!canRerollExtra}
+                  className="rounded-lg bg-violet-500 py-2.5 px-5 text-sm font-bold text-white transition hover:bg-violet-600 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:hover:bg-stone-300"
+                >
+                  สุ่มใหม่ (Extra)
+                </button>
+              )}
+            </>
+          )}
+          <button
+            type="button"
+            onClick={handleReset}
+            className="rounded-lg border border-gray-300 bg-white py-2.5 px-5 text-sm font-semibold text-stone-600 transition hover:bg-[#f5ede0]"
+          >
+            รีเซ็ต
+          </button>
+        </div>
+        {/* Reroll budgets — pushed to the far end as quiet status pills
+            rather than competing with the buttons for attention. */}
+        <div className="ml-auto flex flex-wrap items-center gap-2">
           <span
-            className={`rounded-lg border px-3 py-2 text-sm font-semibold ${
-              extraRerollsLeft > 0
-                ? 'border-[#e2cfb3] bg-white text-stone-600'
-                : 'border-red-200 bg-red-50 text-red-600'
+            className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
+              rerollsLeft > 0 ? 'bg-stone-100 text-stone-500' : 'bg-red-50 text-red-600'
             }`}
-            title='ใช้ร่วมกันทั้ง "สุ่มใหม่ (Extra)" และ 🎲 รายการ์ด Extra — หมดแล้วต้องกด "รีเซ็ต"'
+            title='ใช้ร่วมกันทั้ง "สุ่มใหม่ (Standard)" และ 🎲 รายการ์ด Standard — สุ่มครั้งแรกไม่เสีย Reroll, หมดแล้วต้องกด "รีเซ็ต"'
           >
-            Reroll Extra เหลือ: {extraRerollsLeft}/{DEFAULT_EXTRA_REROLLS}
+            🎲 Standard {rerollsLeft}/{rerollLimit}
           </span>
-        )}
-        {/* Locked once the first roll exists — settings shouldn't change out
-            from under a roll already in progress. "รีเซ็ต" is the only way
-            back in, since it's the button that clears results. className
-            "contents" keeps these as if they weren't wrapped at all, so the
-            flex-wrap row layout is unaffected. */}
-        <fieldset disabled={!isFirstRoll} className="contents">
-          <label
-            className="flex items-center gap-2 rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-600 disabled:opacity-50"
-            title="เพิ่มการสุ่ม HON (Honor) และ SAN (Sanity) — ใช้เฉพาะแคมเปญที่มีระบบเกียรติยศ/สติ ทอยแยกจากค่าพลัง Standard ไม่นับรวมกับเงื่อนไขขั้นต่ำ/สูงสุดด้านล่าง"
-          >
-            <input
-              type="checkbox"
-              checked={includeHonSan}
-              onChange={(e) => setIncludeHonSan(e.target.checked)}
-              className="h-4 w-4 accent-violet-700"
-            />
-            รวม HON/SAN ในการสุ่มด้วย
-          </label>
-          <label className="flex items-center gap-2 text-sm text-stone-600">
-            จำนวนลูกเต๋า
-            <input
-              type="number"
-              min="1"
-              value={diceCount}
-              onChange={(e) => setDiceCount(e.target.value)}
-              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
-            />
-            d
-            <input
-              type="number"
-              min="2"
-              value={diceSides}
-              onChange={(e) => setDiceSides(e.target.value)}
-              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
-            />
-          </label>
-          <label className="flex items-center gap-2 text-sm text-stone-600">
-            ตัดต่ำสุดกี่ลูก
-            <input
-              type="number"
-              min="0"
-              value={dropCount}
-              onChange={(e) => setDropCount(e.target.value)}
-              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
-            />
-          </label>
-          <label
-            className="flex items-center gap-2 text-sm text-stone-600"
-            title="ใช้กับค่าพลัง Standard เท่านั้น — Extra (HON/SAN) ไม่ถูกนับรวมในเงื่อนไขนี้"
-          >
-            รวมขั้นต่ำที่ยอมรับ (Standard)
-            <input
-              type="number"
-              min="0"
-              value={minTotal}
-              onChange={(e) => setMinTotal(e.target.value)}
-              className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
-            />
-          </label>
-        </fieldset>
+          {includeHonSan && (
+            <span
+              className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
+                extraRerollsLeft > 0 ? 'bg-stone-100 text-stone-500' : 'bg-red-50 text-red-600'
+              }`}
+              title='ใช้ร่วมกันทั้ง "สุ่มใหม่ (Extra)" และ 🎲 รายการ์ด Extra — หมดแล้วต้องกด "รีเซ็ต"'
+            >
+              🎲 Extra {extraRerollsLeft}/{extraRerollLimit}
+            </span>
+          )}
+        </div>
       </div>
 
-      <fieldset disabled={!isFirstRoll} className="mb-8 border-0 p-0">
-        <div className="mb-2 flex items-center gap-2">
-          <label className="flex items-center gap-2 text-sm font-semibold text-stone-500">
-            <input
-              type="checkbox"
-              checked={fixedFacesEnabled}
-              onChange={(e) => setFixedFacesEnabled(e.target.checked)}
-            />
-            กำหนดหน้าเต๋า (ใส่เฉพาะช่องที่ต้องการบังคับ ช่องที่เว้นว่างจะสุ่มตามปกติ)
-          </label>
-        </div>
-        {fixedFacesEnabled && (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
+      {/* Settings — everything that shapes the roll, grouped in its own card
+          and locked (see fieldset) once a roll exists, so it reads as "setup
+          before you commit" rather than blending into the action bar above. */}
+      <div className="mb-6 rounded-xl border border-[#e2cfb3] bg-[#fdfbf8] p-4">
+        <button
+          type="button"
+          onClick={() => setSettingsExpanded((v) => !v)}
+          className="flex w-full flex-wrap items-center justify-between gap-2 text-left"
+        >
+          <span className="flex items-center gap-1.5 text-sm font-bold text-stone-700">
+            <span className={`inline-block transition-transform ${settingsExpanded ? 'rotate-90' : ''}`}>▸</span>
+            ⚙️ ตั้งค่าการสุ่ม
+          </span>
+          {!isFirstRoll && (
+            <span className="rounded-full bg-stone-100 px-2.5 py-1 text-xs font-medium text-stone-500">
+              🔒 ล็อกไว้ระหว่างรอบนี้ — กด "รีเซ็ต" เพื่อแก้ไข
+            </span>
+          )}
+        </button>
+
+        {settingsExpanded && (
+          <>
+            <fieldset
+              disabled={!isFirstRoll}
+              className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-3 lg:grid-cols-6 disabled:opacity-50"
+            >
+              <label className="flex flex-col gap-1">
+                <span className="text-xs font-medium text-stone-500">จำนวนลูกเต๋า</span>
+                <span className="flex items-center gap-1.5">
+                  <input
+                    type="number"
+                    min="1"
+                    value={diceCount}
+                    onChange={(e) => setDiceCount(e.target.value)}
+                    className="w-14 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                  />
+                  <span className="text-sm text-stone-400">d</span>
+                  <input
+                    type="number"
+                    min="2"
+                    value={diceSides}
+                    onChange={(e) => setDiceSides(e.target.value)}
+                    className="w-14 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                  />
+                </span>
+              </label>
+              <label className="flex flex-col gap-1">
+                <span className="text-xs font-medium text-stone-500">ตัดต่ำสุดกี่ลูก</span>
+                <input
+                  type="number"
+                  min="0"
+                  value={dropCount}
+                  onChange={(e) => setDropCount(e.target.value)}
+                  className="w-20 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </label>
+              <label
+                className="flex flex-col gap-1"
+                title="ใช้กับค่าพลัง Standard เท่านั้น — Extra (HON/SAN) ไม่ถูกนับรวมในเงื่อนไขนี้"
+              >
+                <span className="text-xs font-medium text-stone-500">ขั้นต่ำ (Standard)</span>
+                <input
+                  type="number"
+                  min="0"
+                  value={minTotal}
+                  onChange={(e) => setMinTotal(e.target.value)}
+                  className="w-20 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </label>
+              <label
+                className="flex flex-col gap-1"
+                title='จำนวนครั้งที่กด "สุ่มใหม่ (Standard)" หรือ 🎲 รายการ์ด Standard ได้ ก่อนต้องกด "รีเซ็ต"'
+              >
+                <span className="text-xs font-medium text-stone-500">Reroll (Standard)</span>
+                <input
+                  type="number"
+                  min="0"
+                  value={rerollLimit}
+                  onChange={(e) => setRerollLimit(e.target.value)}
+                  className="w-16 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                />
+              </label>
+              <label
+                className="flex items-end gap-2 pb-1.5"
+                title="เพิ่มการสุ่ม HON (Honor) และ SAN (Sanity) — ใช้เฉพาะแคมเปญที่มีระบบเกียรติยศ/สติ ทอยแยกจากค่าพลัง Standard ไม่นับรวมกับเงื่อนไขขั้นต่ำ/สูงสุดด้านบน"
+              >
+                <input
+                  type="checkbox"
+                  checked={includeHonSan}
+                  onChange={(e) => setIncludeHonSan(e.target.checked)}
+                  className="h-4 w-4 accent-violet-700"
+                />
+                <span className="text-sm font-medium text-stone-600">รวม HON/SAN</span>
+              </label>
+              {includeHonSan && (
+                <label
+                  className="flex flex-col gap-1"
+                  title='จำนวนครั้งที่กด "สุ่มใหม่ (Extra)" หรือ 🎲 รายการ์ด Extra ได้ ก่อนต้องกด "รีเซ็ต"'
+                >
+                  <span className="text-xs font-medium text-stone-500">Reroll (Extra)</span>
+                  <input
+                    type="number"
+                    min="0"
+                    value={extraRerollLimit}
+                    onChange={(e) => setExtraRerollLimit(e.target.value)}
+                    className="w-16 rounded-md border border-gray-300 px-2 py-1.5 text-sm"
+                  />
+                </label>
+              )}
+            </fieldset>
+
+            <fieldset disabled={!isFirstRoll} className="mt-4 border-t border-dashed border-[#e2cfb3] pt-3 disabled:opacity-50">
+              <label className="flex items-center gap-2 text-xs font-semibold text-stone-500">
+                <input
+                  type="checkbox"
+                  checked={fixedFacesEnabled}
+                  onChange={(e) => setFixedFacesEnabled(e.target.checked)}
+                />
+                กำหนดหน้าเต๋าล่วงหน้า (ใส่เฉพาะช่องที่ต้องการบังคับ ช่องที่เว้นว่างจะสุ่มตามปกติ)
+              </label>
+              {fixedFacesEnabled && (
+                <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
             {Array.from({ length: ROLL_COUNT }, (_, idx) => idx).map((idx) => {
               const row = fixedFaces[idx] ?? []
               const count = Math.max(1, Number(diceCount) || DEFAULT_DICE_COUNT)
@@ -621,7 +704,10 @@ export default function StatRollPage({
             })}
           </div>
         )}
-      </fieldset>
+            </fieldset>
+          </>
+        )}
+      </div>
 
       {results.length > 0 && (
         <>
