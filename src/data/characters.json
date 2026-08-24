@@ -29,7 +29,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-eea30164-4679-41b5-adb6-67ae7486be70",
+        "id": "classlevel-9ea442b2-bbf4-4d87-a7ab-7e349351ee1c",
         "className": "Paladin",
         "subclassName": "Oath of Devotion",
         "level": 3
@@ -38,7 +38,7 @@
     "images": [
       {
         "id": "img-a48c536c-368f-4023-80d5-9326b6cd2df4",
-        "label": "ร่างหลัก"
+        "label": ""
       },
       {
         "id": "img-46e29121-3bcb-423b-8aef-31b80bdffe6b",
@@ -88,7 +88,9 @@
       "con": false,
       "int": false,
       "wis": true,
-      "cha": true
+      "cha": true,
+      "hon": false,
+      "san": false
     },
     "skills": {
       "acrobatics": {
@@ -960,7 +962,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-e11a952e-855e-4b92-a7d5-310b710ca638",
+        "id": "classlevel-7c23ebd4-4a18-4b29-8c8e-227548d33585",
         "className": "Warlock",
         "subclassName": "The Fathomless",
         "level": 3
@@ -1023,7 +1025,9 @@
       "con": false,
       "int": false,
       "wis": true,
-      "cha": true
+      "cha": true,
+      "hon": false,
+      "san": false
     },
     "skills": {
       "acrobatics": {
@@ -1928,7 +1932,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-a4050042-1117-4701-8f11-91b5ae478a61",
+        "id": "classlevel-6713aaf1-07cb-4c34-9bc0-86470304e6fd",
         "className": "Warlock",
         "subclassName": "Celestial Patron",
         "level": 3
@@ -1991,7 +1995,9 @@
       "con": false,
       "int": false,
       "wis": true,
-      "cha": true
+      "cha": true,
+      "hon": false,
+      "san": false
     },
     "skills": {
       "acrobatics": {
@@ -2860,7 +2866,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-9def2055-2612-4133-b35a-251ab1ad5269",
+        "id": "classlevel-f050e78b-2438-4311-a2a2-cf9d225bedc6",
         "className": "Fighter",
         "subclassName": "Arcane Archer",
         "level": 3
@@ -2923,7 +2929,9 @@
       "con": true,
       "int": false,
       "wis": false,
-      "cha": false
+      "cha": false,
+      "hon": false,
+      "san": false
     },
     "skills": {
       "acrobatics": {
@@ -3805,7 +3813,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-da517f5f-8755-47df-96b1-388b1e502078",
+        "id": "classlevel-85f41ff2-aa3f-417b-8d39-d88cfbc09afd",
         "className": "Tactician",
         "subclassName": "Gambler",
         "level": 3
@@ -3868,7 +3876,9 @@
       "con": false,
       "int": true,
       "wis": true,
-      "cha": false
+      "cha": false,
+      "hon": false,
+      "san": false
     },
     "skills": {
       "acrobatics": {
@@ -20677,7 +20687,7 @@
     ],
     "classLevels": [
       {
-        "id": "classlevel-6728baf3-a4ef-4a9f-96a1-663432d40f7a",
+        "id": "classlevel-021269eb-c80a-49a7-855e-065e34d385c1",
         "className": "Barbarian",
         "subclassName": "Path of the Fractured",
         "level": 3
@@ -20743,7 +20753,9 @@
       "con": true,
       "int": false,
       "wis": false,
-      "cha": false
+      "cha": false,
+      "hon": false,
+      "san": false
     },
     "skills": {
       "acrobatics": {
