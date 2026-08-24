@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import SearchSelect from '../components/SearchSelect'
 import { createId } from '../utils/id'
 
 const CORE_STATS = [
@@ -65,6 +64,11 @@ export default function StatRollPage({
   // doesn't need to survive leaving this page. Starts collapsed to stay out
   // of the way; the defaults are usually fine, so most visits won't need it.
   const [settingsExpanded, setSettingsExpanded] = useState(false)
+  // "Click a result card, then click a stat box" assignment flow (replaces
+  // the old per-box dropdown, which needed an internal scroll for 8 options).
+  // Local/UI-only — a stale id (from a reroll that changed `results`) just
+  // stops matching anything below, so it self-clears without extra effort.
+  const [selectedResultId, setSelectedResultId] = useState(null)
 
   const {
     results,
@@ -394,7 +398,6 @@ export default function StatRollPage({
   // min/max-total fields above actually constrain.
   const coreResultsSum = results.slice(0, CORE_STATS.length).reduce((sum, r) => sum + r.total, 0)
   const resultIndexById = new Map(results.map((r, idx) => [r.id, idx]))
-  const sortedResults = [...results].sort((a, b) => b.total - a.total)
 
   function finalScore(statKey) {
     const resultId = assignments[statKey]
@@ -420,16 +423,26 @@ export default function StatRollPage({
     const used = assignedResultIds.has(r.id)
     const isExtra = idx >= CORE_STATS.length
     const allowed = isExtra ? canRerollExtra : canReroll
+    const isSelected = selectedResultId === r.id
     return (
       <div
         key={r.id}
-        className={`relative rounded-lg border p-3 text-center ${
-          used ? 'border-violet-300 bg-violet-50' : 'border-[#e2cfb3] bg-white'
+        onClick={() => setSelectedResultId((prev) => (prev === r.id ? null : r.id))}
+        title="คลิกเพื่อเลือก แล้วไปคลิกช่องค่าพลังด้านล่างที่ต้องการวาง"
+        className={`relative cursor-pointer rounded-lg border p-3 text-center transition-colors ${
+          isSelected
+            ? 'border-violet-500 bg-violet-100 ring-2 ring-violet-400'
+            : used
+              ? 'border-violet-300 bg-violet-50 hover:border-violet-400'
+              : 'border-[#e2cfb3] bg-white hover:border-violet-300'
         }`}
       >
         <button
           type="button"
-          onClick={() => handleRerollOne(idx)}
+          onClick={(e) => {
+            e.stopPropagation()
+            handleRerollOne(idx)
+          }}
           disabled={!allowed}
           title={
             allowed
@@ -440,7 +453,9 @@ export default function StatRollPage({
         >
           🎲
         </button>
-        <div className="text-xs text-stone-400">{label}</div>
+        <div className={`text-xs ${isSelected ? 'font-semibold text-violet-600' : 'text-stone-400'}`}>
+          {label}
+        </div>
         <div className="mt-1 flex justify-center gap-1">
           {r.rolls.map((v, i) => (
             <span
@@ -458,7 +473,10 @@ export default function StatRollPage({
         <div className="mt-2 flex items-center justify-center gap-2">
           <button
             type="button"
-            onClick={() => adjustResultTotal(r.id, -1)}
+            onClick={(e) => {
+              e.stopPropagation()
+              adjustResultTotal(r.id, -1)
+            }}
             className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
           >
             −
@@ -466,7 +484,10 @@ export default function StatRollPage({
           <div className="w-8 text-xl font-bold text-stone-900">{r.total}</div>
           <button
             type="button"
-            onClick={() => adjustResultTotal(r.id, 1)}
+            onClick={(e) => {
+              e.stopPropagation()
+              adjustResultTotal(r.id, 1)
+            }}
             className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
           >
             +
@@ -779,6 +800,22 @@ export default function StatRollPage({
                 <span className="font-bold text-stone-900">{assignedSum}</span>
               </span>
             </div>
+            {selectedResultId && resultById.has(selectedResultId) && (
+              <div className="mb-3 flex flex-wrap items-center gap-2 rounded-lg border border-violet-300 bg-violet-50 px-3 py-2 text-sm text-violet-700">
+                🎯 กำลังเลือก{' '}
+                <b>
+                  {resultLabel(resultIndexById.get(selectedResultId))} ({resultById.get(selectedResultId).total})
+                </b>
+                — คลิกช่องค่าพลังด้านล่างที่ต้องการวาง
+                <button
+                  type="button"
+                  onClick={() => setSelectedResultId(null)}
+                  className="ml-auto text-xs font-semibold text-violet-500 underline hover:text-violet-700"
+                >
+                  ยกเลิก
+                </button>
+              </div>
+            )}
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {STATS.map((stat) => {
                 const assignedId = assignments[stat.key]
@@ -833,17 +870,35 @@ export default function StatRollPage({
                       </span>
                     </div>
 
-                    <SearchSelect
-                      options={sortedResults.map((r) => ({
-                        value: r.id,
-                        label: `${resultLabel(resultIndexById.get(r.id))} (${r.total})`,
-                        disabled: assignedResultIds.has(r.id) && assignedId !== r.id,
-                      }))}
-                      value={assignedId ?? ''}
-                      onChange={(v) => assignStat(stat.key, v || null)}
-                      placeholder="-"
-                      clearLabel="เปลี่ยน"
-                    />
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (selectedResultId && resultById.has(selectedResultId)) {
+                          assignStat(stat.key, selectedResultId)
+                          setSelectedResultId(null)
+                        } else if (assignedId) {
+                          assignStat(stat.key, null)
+                        }
+                      }}
+                      title={
+                        assignedId
+                          ? 'คลิกเพื่อล้างค่า หรือเลือกผลสุ่มด้านบนแล้วคลิกที่นี่เพื่อเปลี่ยน'
+                          : 'เลือกผลสุ่มด้านบนก่อน แล้วคลิกที่นี่เพื่อวาง'
+                      }
+                      className={`w-full rounded-md border px-3 py-2 text-left text-sm transition-colors ${
+                        assignedResult
+                          ? 'border-violet-300 bg-violet-50 font-semibold text-stone-800 hover:border-red-300 hover:bg-red-50 hover:text-red-600'
+                          : selectedResultId
+                            ? 'animate-pulse border-dashed border-violet-400 bg-violet-50/60 text-violet-600 hover:bg-violet-100'
+                            : 'border-dashed border-stone-300 bg-stone-50 text-stone-400'
+                      }`}
+                    >
+                      {assignedResult
+                        ? `${resultLabel(resultIndexById.get(assignedId))} (${assignedResult.total})`
+                        : selectedResultId
+                          ? 'คลิกเพื่อวางที่นี่'
+                          : '-'}
+                    </button>
 
                     {!stat.noBonus && (
                       <div className="flex items-center gap-3 text-xs text-stone-500">
