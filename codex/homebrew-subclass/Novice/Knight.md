@@ -49,18 +49,17 @@ The 9 Job Skills below are the Knight Job Path's pool. As described under *Job S
 ### Weapon Mastery
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
+**Duration:** 1 minute
 
-Make an attack with your weapon. The attack roll and damage roll have **+1** bonus.
+For duration your Weapon attack roll and damage roll have **+1** bonus.
 
 *Job Skill Advancement.* Increase the attack roll and damage roll by **1** at 9th (**+2**), 13th, (**+3**), and 17th level (**+4**).
 
 ### Aura Weapon
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute
@@ -72,7 +71,6 @@ For the duration, your weapon attacks deal an extra **1d4** Fire damage.
 ### Auto Counter
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute
@@ -84,7 +82,6 @@ First time each turn you're hit by a melee attack, you immediately make **1** we
 ### Mark
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** 60 feet
 **Mana Cost:** 1
 **Duration:** 1 minute
@@ -96,7 +93,6 @@ You mark one creature you can see within range. The first time each turn the mar
 ### Joint Beat
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** 30 feet
 **Mana Cost:** 1
 
@@ -107,7 +103,6 @@ You choose one creature you can see within range. It must make a Constitution sa
 ### Phantom Strike
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 
@@ -118,7 +113,6 @@ Make **1** weapon attack. If it hits, the target takes an extra **3d8** Fire dam
 ### Increase HP Recovery
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute
@@ -130,7 +124,6 @@ You gain **2** hit points every 6 seconds or start of each of your turns
 ### Self-Ignite
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 **Duration:** 1 minute (or until you end it)
@@ -142,7 +135,6 @@ You gain resistance to Fire damage, then ignite yourself, burning until you end 
 ### Guard
 *Job Skill*
 
-**Casting Time:** 1 Attack
 **Range:** Self
 **Mana Cost:** 1
 
