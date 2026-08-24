@@ -1,13 +1,23 @@
 import SearchSelect from '../components/SearchSelect'
 import { createId } from '../utils/id'
 
-const STATS = [
+const CORE_STATS = [
   { key: 'str', label: 'STR' },
   { key: 'dex', label: 'DEX' },
   { key: 'con', label: 'CON' },
   { key: 'int', label: 'INT' },
   { key: 'wis', label: 'WIS' },
   { key: 'cha', label: 'CHA' },
+]
+
+// Optional variant-rule scores (Honor/Sanity) — only some campaigns use
+// these, so rolling them is opt-in (see includeHonSan below) rather than
+// always part of the pool. Assigned from the roll pool same as the core
+// six, but never get the species/background +2/+1 ability-score-improvement
+// bonus, so their card skips those checkboxes.
+const EXTRA_STATS = [
+  { key: 'hon', label: 'HON', noBonus: true },
+  { key: 'san', label: 'SAN', noBonus: true },
 ]
 
 function rollDie(sides) {
@@ -53,10 +63,30 @@ export default function StatRollPage({
     dropCount = DEFAULT_DROP_COUNT,
     fixedFaces = {},
     fixedFacesEnabled = false,
+    includeHonSan = true,
   } = statRollState
+
+  const STATS = includeHonSan ? [...CORE_STATS, ...EXTRA_STATS] : CORE_STATS
+  // One roll result per stat box (including HON/SAN when included) keeps
+  // the 1:1 roll-to-assignment relationship the rest of this page assumes.
+  const ROLL_COUNT = STATS.length
 
   function setMinTotal(value) {
     setStatRollState((prev) => ({ ...prev, minTotal: value }))
+  }
+
+  // Roll count changes shape (6 vs 8) when this flips, so any existing rolls
+  // no longer line up 1:1 with the stat boxes — clear them like a reset.
+  // minTotal/maxTotal are untouched: they only ever govern the core six (see
+  // handleRoll), so there's nothing to re-tune here.
+  function setIncludeHonSan(value) {
+    setStatRollState((prev) => ({
+      ...prev,
+      includeHonSan: value,
+      results: [],
+      assignments: {},
+      bonuses: {},
+    }))
   }
 
   function setFixedFacesEnabled(value) {
@@ -150,12 +180,17 @@ export default function StatRollPage({
       return buildRollResult(rolls, drop)
     }
 
+    // The min/max-total search only ever governs the core six ability
+    // scores — this is the exact same search as before HON/SAN existed.
+    // Honor/Sanity (when included) are extra flavor rolls appended after,
+    // rolled plainly with no sum constraint, so toggling them on never
+    // dilutes the core six's budget (and never makes a 16-18 harder to hit).
     let best = null
     let bestDistance = Infinity
     let guard = 0
     let dist
     do {
-      const next = Array.from({ length: 6 }, (_, idx) => rollResultForIndex(idx))
+      const next = Array.from({ length: CORE_STATS.length }, (_, idx) => rollResultForIndex(idx))
       const sum = next.reduce((s, r) => s + r.total, 0)
       dist = distanceFromRange(sum)
       if (dist < bestDistance) {
@@ -164,7 +199,12 @@ export default function StatRollPage({
       }
       guard++
     } while (dist > 0 && guard < 50000)
-    setResults(best)
+
+    const extraResults = includeHonSan
+      ? EXTRA_STATS.map((_, i) => rollResultForIndex(CORE_STATS.length + i))
+      : []
+
+    setResults([...best, ...extraResults])
     setAssignments({})
     setBonuses({})
   }
@@ -181,6 +221,7 @@ export default function StatRollPage({
       dropCount: DEFAULT_DROP_COUNT,
       fixedFaces: {},
       fixedFacesEnabled: false,
+      includeHonSan: true,
     })
   }
 
@@ -232,6 +273,9 @@ export default function StatRollPage({
   const assignedResultIds = new Set(Object.values(assignments))
   const resultById = new Map(results.map((r) => [r.id, r]))
   const resultsSum = results.reduce((sum, r) => sum + r.total, 0)
+  // Shown separately since only the first slice (STR-CHA) is what the
+  // min/max-total fields above actually constrain.
+  const coreResultsSum = results.slice(0, CORE_STATS.length).reduce((sum, r) => sum + r.total, 0)
   const resultIndexById = new Map(results.map((r, idx) => [r.id, idx]))
   const sortedResults = [...results].sort((a, b) => b.total - a.total)
 
@@ -267,6 +311,18 @@ export default function StatRollPage({
         >
           รีเซ็ต
         </button>
+        <label
+          className="flex items-center gap-2 rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-600"
+          title="เพิ่มการสุ่ม HON (Honor) และ SAN (Sanity) — ใช้เฉพาะแคมเปญที่มีระบบเกียรติยศ/สติ ทอยแยกจาก STR-CHA ไม่นับรวมกับเงื่อนไขขั้นต่ำ/สูงสุดด้านล่าง"
+        >
+          <input
+            type="checkbox"
+            checked={includeHonSan}
+            onChange={(e) => setIncludeHonSan(e.target.checked)}
+            className="h-4 w-4 accent-violet-700"
+          />
+          รวม HON/SAN ในการสุ่มด้วย
+        </label>
         <label className="flex items-center gap-2 text-sm text-stone-600">
           จำนวนลูกเต๋า
           <input
@@ -295,8 +351,11 @@ export default function StatRollPage({
             className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
           />
         </label>
-        <label className="flex items-center gap-2 text-sm text-stone-600">
-          รวมขั้นต่ำที่ยอมรับ
+        <label
+          className="flex items-center gap-2 text-sm text-stone-600"
+          title="ใช้กับ STR-CHA เท่านั้น — HON/SAN ไม่ถูกนับรวมในเงื่อนไขนี้"
+        >
+          รวมขั้นต่ำที่ยอมรับ (STR-CHA)
           <input
             type="number"
             min="0"
@@ -305,8 +364,11 @@ export default function StatRollPage({
             className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm"
           />
         </label>
-        <label className="flex items-center gap-2 text-sm text-stone-600">
-          รวมสูงสุดที่ยอมรับ
+        <label
+          className="flex items-center gap-2 text-sm text-stone-600"
+          title="ใช้กับ STR-CHA เท่านั้น — HON/SAN ไม่ถูกนับรวมในเงื่อนไขนี้"
+        >
+          รวมสูงสุดที่ยอมรับ (STR-CHA)
           <input
             type="number"
             min="0"
@@ -330,8 +392,8 @@ export default function StatRollPage({
           </label>
         </div>
         {fixedFacesEnabled && (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
-            {Array.from({ length: 6 }, (_, idx) => idx).map((idx) => {
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
+            {Array.from({ length: ROLL_COUNT }, (_, idx) => idx).map((idx) => {
               const row = fixedFaces[idx] ?? []
               const count = Math.max(1, Number(diceCount) || DEFAULT_DICE_COUNT)
               const hasValues = row.some((v) => v !== undefined && v !== '')
@@ -374,12 +436,21 @@ export default function StatRollPage({
         <>
           <div className="mt-8">
             <div className="mb-2 flex items-center justify-between">
-              <h2 className="text-sm font-semibold text-stone-500">ผลการสุ่ม (6 ครั้ง)</h2>
+              <h2 className="text-sm font-semibold text-stone-500">ผลการสุ่ม ({ROLL_COUNT} ครั้ง)</h2>
               <span className="text-sm font-medium text-stone-600">
-                รวมทั้งหมด: <span className="font-bold text-stone-900">{resultsSum}</span>
+                {includeHonSan ? (
+                  <>
+                    รวม STR-CHA: <span className="font-bold text-stone-900">{coreResultsSum}</span>{' '}
+                    <span className="text-stone-400">(รวมทั้งหมด {resultsSum})</span>
+                  </>
+                ) : (
+                  <>
+                    รวมทั้งหมด: <span className="font-bold text-stone-900">{resultsSum}</span>
+                  </>
+                )}
               </span>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
               {results.map((r, idx) => {
                 const used = assignedResultIds.has(r.id)
                 return (
@@ -445,16 +516,16 @@ export default function StatRollPage({
                       onChange={() => onToggleAllStatKeys?.(assignableStatKeys)}
                       className="h-4 w-4 accent-violet-700 disabled:opacity-40"
                     />
-                    เลือกค่าพลังทั้ง 6
+                    เลือกค่าพลังทั้ง {STATS.length}
                   </label>
                 )}
               </div>
               <span className="text-sm font-medium text-stone-600">
-                รวมที่ลงแล้ว ({assignedResultIds.size}/6):{' '}
+                รวมที่ลงแล้ว ({assignedResultIds.size}/{STATS.length}):{' '}
                 <span className="font-bold text-stone-900">{assignedSum}</span>
               </span>
             </div>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {STATS.map((stat) => {
                 const assignedId = assignments[stat.key]
                 const assignedResult = assignedId ? resultById.get(assignedId) : null
@@ -520,34 +591,36 @@ export default function StatRollPage({
                       clearLabel="เปลี่ยน"
                     />
 
-                    <div className="flex items-center gap-3 text-xs text-stone-500">
-                      <label
-                        className={`flex items-center gap-1 ${
-                          disabled2 ? 'cursor-not-allowed opacity-40' : 'cursor-pointer'
-                        }`}
-                      >
-                        <input
-                          type="checkbox"
-                          checked={currentBonus === 2}
-                          disabled={disabled2}
-                          onChange={() => toggleBonus(stat.key, 2, disabled2)}
-                        />
-                        +2
-                      </label>
-                      <label
-                        className={`flex items-center gap-1 ${
-                          disabled1 ? 'cursor-not-allowed opacity-40' : 'cursor-pointer'
-                        }`}
-                      >
-                        <input
-                          type="checkbox"
-                          checked={currentBonus === 1}
-                          disabled={disabled1}
-                          onChange={() => toggleBonus(stat.key, 1, disabled1)}
-                        />
-                        +1
-                      </label>
-                    </div>
+                    {!stat.noBonus && (
+                      <div className="flex items-center gap-3 text-xs text-stone-500">
+                        <label
+                          className={`flex items-center gap-1 ${
+                            disabled2 ? 'cursor-not-allowed opacity-40' : 'cursor-pointer'
+                          }`}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={currentBonus === 2}
+                            disabled={disabled2}
+                            onChange={() => toggleBonus(stat.key, 2, disabled2)}
+                          />
+                          +2
+                        </label>
+                        <label
+                          className={`flex items-center gap-1 ${
+                            disabled1 ? 'cursor-not-allowed opacity-40' : 'cursor-pointer'
+                          }`}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={currentBonus === 1}
+                            disabled={disabled1}
+                            onChange={() => toggleBonus(stat.key, 1, disabled1)}
+                          />
+                          +1
+                        </label>
+                      </div>
+                    )}
                   </div>
                 )
               })}

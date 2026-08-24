@@ -5,7 +5,7 @@ import StartingGoldModal from '../components/StartingGoldModal'
 import { useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
-import { STAT_KEYS } from '../utils/gachaOptions'
+import { EXTRA_STAT_KEYS, STAT_KEYS } from '../utils/gachaOptions'
 import {
   applyRateUp,
   calculateHierarchicalPercentages,
@@ -144,7 +144,10 @@ export default function RollPage({
       if (species) prefillCharacter.species = species
       if (background) prefillCharacter.background = background
       if (Object.keys(stats).length > 0) {
-        prefillCharacter.stats = STAT_KEYS.reduce((acc, s) => ({ ...acc, [s.key]: stats[s.key] ?? 0 }), {})
+        prefillCharacter.stats = [...STAT_KEYS, ...EXTRA_STAT_KEYS].reduce(
+          (acc, s) => ({ ...acc, [s.key]: stats[s.key] ?? 0 }),
+          {},
+        )
       }
       if (otherNames.length > 0) prefillCharacter.equipment = otherNames
       navigate('/characters', { state: { prefillCharacter } })
