@@ -13,7 +13,7 @@ The Novice is built around the class-change ladder from *Ragnarok Online* (and i
 | **Primary Ability** | Determined by your Job Path, chosen at 3rd level |
 | **Hit Point Die** | D6 per Novice level |
 | **Saving Throw Proficiencies** | Dexterity, Constitution |
-| **Skill Proficiencies** | Choose 2: Acrobatics, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Persuasion, Stealth, Survival (plus 1 more proficiency and 1 Expertise at 2nd level — see *Quick Study*) |
+| **Skill Proficiencies** | Choose 2: Acrobatics, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Persuasion, Stealth, Survival (plus 1 more proficiency and 1 Expertise at 2nd level and again at 6th level — see *Quick Study* and *Super Novice*) |
 | **Tool Proficiencies** | Choose 1: any artisan's tools or any gaming set |
 | **Weapon Proficiencies** | Simple weapons (additional proficiencies granted by your Job Path — see *Job Paths*) |
 | **Armor Training** | Light armor (additional training granted by your Job Path) |
@@ -53,17 +53,17 @@ Starting at 20th level (*Skill Combo Improvement*), this becomes **3** Job Skill
 | 7th | +3 | Job Change: Transcendent Second Class | 3 | 3 |
 | 8th | +3 | Ability Score Improvement | 3 | 3 |
 | 9th | +4 | Job Skill Advancement (Rank 2) | 3 | 3 |
-| 10th | +4 | Ultra Super Novice | 3 | 3 |
-| 11th | +4 | Job Change: Third Class | 4 | 3 |
-| 12th | +4 | Ability Score Improvement | 4 | 3 |
-| 13th | +5 | Job Skill Advancement (Rank 3) | 4 | 3 |
-| 14th | +5 | Elevated Novice | 4 | 3 |
-| 15th | +5 | Job Change: Fourth Class | 4 | 3 |
-| 16th | +5 | Ability Score Improvement | 4 | 3 |
-| 17th | +6 | Job Skill Advancement (Rank 4) | 5 | 3 |
-| 18th | +6 | Hyper Novice | 5 | 3 |
-| 19th | +6 | Ability Score Improvement | 5 | 3 |
-| 20th | +6 | Skill Combo Improvement | 5 | 3 |
+| 10th | +4 | Ultra Super Novice | 3 | 4 |
+| 11th | +4 | Job Change: Third Class | 4 | 4 |
+| 12th | +4 | Ability Score Improvement | 4 | 4 |
+| 13th | +5 | Job Skill Advancement (Rank 3) | 4 | 4 |
+| 14th | +5 | Elevated Novice | 4 | 5 |
+| 15th | +5 | Job Change: Fourth Class | 4 | 5 |
+| 16th | +5 | Ability Score Improvement | 4 | 5 |
+| 17th | +6 | Job Skill Advancement (Rank 4) | 5 | 5 |
+| 18th | +6 | Hyper Novice | 5 | 6 |
+| 19th | +6 | Ability Score Improvement | 5 | 6 |
+| 20th | +6 | Skill Combo Improvement | 5 | 6 |
 
 ## Class Features
 
@@ -109,6 +109,10 @@ See *Skill Use*, above.
 
 Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
 
+You also choose 1 additional skill from the list under *Skill Proficiencies* in *Core Novice Traits* that you don't already have proficiency in — you gain proficiency in it.
+
+Then choose 1 skill in which you have proficiency (from any source) and don't already have Expertise in. Your proficiency bonus is doubled for any ability check you make using that skill.
+
 ### 7th Level: Job Change — Transcendent Second Class
 
 You undergo your second Job Change. See your Job Path's document for the feature this grants.
@@ -122,6 +126,8 @@ Every Job Skill you know — your 3 base Job Skills (Strike, First Aid, Play Dea
 ### 10th Level: Ultra Super Novice
 
 You add half your Proficiency Bonus (round down) to any ability check you make that doesn't already include your Proficiency Bonus.
+
+You also choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
 
 ### 11th Level: Job Change — Third Class
 
@@ -137,6 +143,8 @@ As 9th level: every Job Skill you know advances to **Rank 3**.
 
 Choose one ability score you don't already have saving throw proficiency in. You gain proficiency in saving throws using that ability score.
 
+You also choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+
 ### 15th Level: Job Change — Fourth Class
 
 You undergo your fourth and final Job Change, reaching the top of your profession. See your Job Path's document for the feature this grants.
@@ -151,6 +159,8 @@ As 9th level: every Job Skill you know advances to **Rank 4**, its maximum.
 
 Once per Long Rest, when you fail a saving throw, you can choose to succeed instead.
 
+You also choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+
 ### 19th Level: Ability Score Improvement
 
 ### 20th Level: Skill Combo Improvement
@@ -163,11 +173,11 @@ Every Job Skill you know has a **Rank** from 1 to 4 that determines how strong i
 
 **Base Job Skills (3, automatic).** You gain all 3 base Job Skills without choosing, all at 1st level: Strike, First Aid, and Play Dead. See *Base Job Skills*, below, for their full rules text.
 
-**Job Path Job Skills (3 total).** You choose 2 at 3rd level and 1 more at 6th level, all from your Job Path's Job Skill pool.
+**Job Path Job Skills (6 total).** You choose 2 at 3rd level and 1 more each at 6th, 10th, 14th, and 18th level, all from your Job Path's Job Skill pool.
 
-Because Job Skill Advancement happens at 9th, 13th, and 17th level, all 6 Job Skills you know (3 base + 3 Job Path) reach **Rank 4** together at 17th level — none of them ever falls behind.
+Because Job Skill Advancement happens at 9th, 13th, and 17th level, all 9 Job Skills you know (3 base + 6 Job Path) reach **Rank 4** together at 17th level — none of them ever falls behind.
 
-**No Respec.** Once you choose a Job Path Job Skill at 3rd or 6th level, it's yours for the rest of the game.
+**No Respec.** Once you choose a Job Path Job Skill at 3rd, 6th, 10th, 14th, or 18th level, it's yours for the rest of the game.
 
 **Once per Turn.** You can't use the same named Job Skill more than once on the same turn, no matter its Casting Time — this applies to every Job Skill you know (base or Job Path), not just ones you'd otherwise repeat through Skill Combo.
 
@@ -200,7 +210,7 @@ You touch a creature within melee range — yourself or an ally — and channel 
 
 Whenever you finish a Short Rest, you automatically regain **1** Mana and **1d8** hit points — no Action or Mana Cost required.
 
-*Job Skill Advancement.* The Mana and hit points regained increase to **2** Mana and **2d8** hit points at 9th level, **3** Mana and **3d8** hit points at 13th level, and **4** Mana and **4d8** hit points at 17th level.
+*Job Skill Advancement.* The Mana and hit points regained increase to **2** Mana and **2d8** hit points at 9th level, **2** Mana and **3d8** hit points at 13th level, and **3** Mana and **4d8** hit points at 17th level.
 
 ## Job Paths
 
