@@ -193,7 +193,7 @@ The 3 Job Skills below are the only ones that exist so far — every Job Path gr
 
 You make one weapon attack against a creature within range, with a **+2** bonus to the attack roll and damage roll.
 
-*Job Skill Advancement.* The bonus increases to +3 at 9th level, +4 at 13th level, and +5 at 17th level.
+*Job Skill Advancement.* The bonus increases to **+3** at 9th level, **+4** at 13th level, and **+5** at 17th level.
 
 ### First Aid
 *Job Skill*
