@@ -47,8 +47,10 @@ function App() {
     bonuses: {},
     // includeHonSan defaults on (see StatRollPage.jsx) — minTotal only ever
     // governs the core six (HON/SAN roll unconstrained).
-    minTotal: 80,
+    minTotal: 75,
     includeHonSan: true,
+    // Shared budget for full reroll + per-card reroll (see StatRollPage.jsx).
+    rerollsLeft: 3,
   })
   const [visibility, setVisibility] = useState({
     selectedBoxId: {},

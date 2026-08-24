@@ -39,10 +39,18 @@ function abilityModifier(score) {
 
 const STAT_CAP = 20
 
-const DEFAULT_MIN_TOTAL = 80
+const DEFAULT_MIN_TOTAL = 75
 const DEFAULT_DICE_COUNT = 4
 const DEFAULT_DICE_SIDES = 6
 const DEFAULT_DROP_COUNT = 1
+// Shared budget for BOTH "สุ่มใหม่" (full reroll) and the per-card 🎲 reroll
+// of a Standard card — the very first roll (from an empty results set) is
+// always free and doesn't touch this; only redoing a roll you already have
+// costs from the budget.
+const DEFAULT_REROLLS = 3
+// Separate, smaller budget just for rerolling an Extra (HON/SAN) card
+// individually — doesn't share with, or get spent by, the Standard pool.
+const DEFAULT_EXTRA_REROLLS = 2
 
 export default function StatRollPage({
   statRollState,
@@ -63,6 +71,8 @@ export default function StatRollPage({
     fixedFaces = {},
     fixedFacesEnabled = false,
     includeHonSan = true,
+    rerollsLeft = DEFAULT_REROLLS,
+    extraRerollsLeft = DEFAULT_EXTRA_REROLLS,
   } = statRollState
 
   const STATS = includeHonSan ? [...CORE_STATS, ...EXTRA_STATS] : CORE_STATS
@@ -85,6 +95,8 @@ export default function StatRollPage({
       results: [],
       assignments: {},
       bonuses: {},
+      rerollsLeft: DEFAULT_REROLLS,
+      extraRerollsLeft: DEFAULT_EXTRA_REROLLS,
     }))
   }
 
@@ -144,39 +156,34 @@ export default function StatRollPage({
     }))
   }
 
-  function handleRoll() {
-    const threshold = Math.max(0, Number(minTotal) || 0)
+  // Shared by both the full roll and the per-card reroll button below —
+  // reads the current dice settings fresh each call.
+  function fixedFaceValue(idx, diceIdx, sides) {
+    if (!fixedFacesEnabled) return null
+    const raw = fixedFaces[idx]?.[diceIdx]
+    const v = Number(raw)
+    if (raw === undefined || raw === '' || !Number.isFinite(v) || v < 1 || v > sides) {
+      return null
+    }
+    return v
+  }
+
+  function rollResultForIndex(idx) {
     const count = Math.max(1, Number(diceCount) || DEFAULT_DICE_COUNT)
     const sides = Math.max(2, Number(diceSides) || DEFAULT_DICE_SIDES)
     const drop = Math.min(Math.max(0, Number(dropCount) || 0), count - 1)
+    const rolls = Array.from({ length: count }, (_, diceIdx) => {
+      const fixed = fixedFaceValue(idx, diceIdx, sides)
+      return fixed !== null ? fixed : rollDie(sides)
+    })
+    return buildRollResult(rolls, drop)
+  }
 
-    function distanceBelowMin(sum) {
-      return sum < threshold ? threshold - sum : 0
-    }
-
-    function fixedFaceValue(idx, diceIdx) {
-      if (!fixedFacesEnabled) return null
-      const raw = fixedFaces[idx]?.[diceIdx]
-      const v = Number(raw)
-      if (raw === undefined || raw === '' || !Number.isFinite(v) || v < 1 || v > sides) {
-        return null
-      }
-      return v
-    }
-
-    function rollResultForIndex(idx) {
-      const rolls = Array.from({ length: count }, (_, diceIdx) => {
-        const fixed = fixedFaceValue(idx, diceIdx)
-        return fixed !== null ? fixed : rollDie(sides)
-      })
-      return buildRollResult(rolls, drop)
-    }
-
-    // The min/max-total search only ever governs the core six ability
-    // scores — this is the exact same search as before HON/SAN existed.
-    // Honor/Sanity (when included) are extra flavor rolls appended after,
-    // rolled plainly with no sum constraint, so toggling them on never
-    // dilutes the core six's budget (and never makes a 16-18 harder to hit).
+  // Searches for a fresh set of the core six that clears minTotal — the
+  // min-total search only ever governs these, so it's the exact same search
+  // as before HON/SAN existed (Honor/Sanity never dilute this budget).
+  function rollStandardBatch() {
+    const threshold = Math.max(0, Number(minTotal) || 0)
     let best = null
     let bestDistance = Infinity
     let guard = 0
@@ -184,21 +191,108 @@ export default function StatRollPage({
     do {
       const next = Array.from({ length: CORE_STATS.length }, (_, idx) => rollResultForIndex(idx))
       const sum = next.reduce((s, r) => s + r.total, 0)
-      dist = distanceBelowMin(sum)
+      dist = sum < threshold ? threshold - sum : 0
       if (dist < bestDistance) {
         best = next
         bestDistance = dist
       }
       guard++
     } while (dist > 0 && guard < 50000)
+    return best
+  }
 
-    const extraResults = includeHonSan
-      ? EXTRA_STATS.map((_, i) => rollResultForIndex(CORE_STATS.length + i))
-      : []
+  // Extra (HON/SAN) rolls plainly, no threshold search.
+  function rollExtraBatch() {
+    return EXTRA_STATS.map((_, i) => rollResultForIndex(CORE_STATS.length + i))
+  }
 
-    setResults([...best, ...extraResults])
-    setAssignments({})
-    setBonuses({})
+  // Applies a batch of { idx -> newResult } replacements to results, carrying
+  // forward any assignment that pointed at the old roll in that slot (so a
+  // reroll — single card or a whole group — never silently unassigns a
+  // stat that was already filled in).
+  function applyResultUpdates(prevResults, prevAssignments, updates) {
+    const nextResults = prevResults.map((r, i) => (updates.has(i) ? updates.get(i) : r))
+    const nextAssignments = { ...prevAssignments }
+    for (const [idx, newResult] of updates) {
+      const oldResult = prevResults[idx]
+      if (!oldResult) continue
+      const statKey = Object.keys(nextAssignments).find((k) => nextAssignments[k] === oldResult.id)
+      if (statKey) nextAssignments[statKey] = newResult.id
+    }
+    return { nextResults, nextAssignments }
+  }
+
+  // The very first roll (nothing rolled yet) is free and rolls Standard +
+  // Extra together in one "สุ่มเลย!" button. Afterward the button splits into
+  // two independent reroll actions (see JSX below) — Standard spends from
+  // rerollsLeft, Extra spends from its own separate, smaller extraRerollsLeft.
+  const isFirstRoll = results.length === 0
+  const canReroll = isFirstRoll || rerollsLeft > 0
+  const canRerollExtra = extraRerollsLeft > 0
+
+  function handleRoll() {
+    if (!isFirstRoll) return
+    const standard = rollStandardBatch()
+    const extra = includeHonSan ? rollExtraBatch() : []
+    setStatRollState((prev) => ({
+      ...prev,
+      results: [...standard, ...extra],
+      assignments: {},
+      bonuses: {},
+    }))
+  }
+
+  function handleRerollStandard() {
+    if (!canReroll) return
+    const standard = rollStandardBatch()
+    setStatRollState((prev) => {
+      const updates = new Map(standard.map((r, i) => [i, r]))
+      const { nextResults, nextAssignments } = applyResultUpdates(prev.results, prev.assignments, updates)
+      return {
+        ...prev,
+        results: nextResults,
+        assignments: nextAssignments,
+        rerollsLeft: Math.max(0, prev.rerollsLeft - 1),
+      }
+    })
+  }
+
+  function handleRerollExtra() {
+    if (!canRerollExtra) return
+    const extra = rollExtraBatch()
+    setStatRollState((prev) => {
+      const updates = new Map(extra.map((r, i) => [CORE_STATS.length + i, r]))
+      const { nextResults, nextAssignments } = applyResultUpdates(prev.results, prev.assignments, updates)
+      return {
+        ...prev,
+        results: nextResults,
+        assignments: nextAssignments,
+        extraRerollsLeft: Math.max(0, prev.extraRerollsLeft - 1),
+      }
+    })
+  }
+
+  // Rerolls just one card in place — no threshold search, plain single roll.
+  // Standard cards spend from rerollsLeft; Extra (HON/SAN) cards spend from
+  // their own separate extraRerollsLeft budget instead.
+  function handleRerollOne(idx) {
+    const isExtra = idx >= CORE_STATS.length
+    if (isExtra ? !canRerollExtra : !canReroll) return
+    const newResult = rollResultForIndex(idx)
+    setStatRollState((prev) => {
+      const { nextResults, nextAssignments } = applyResultUpdates(
+        prev.results,
+        prev.assignments,
+        new Map([[idx, newResult]]),
+      )
+      return {
+        ...prev,
+        results: nextResults,
+        assignments: nextAssignments,
+        rerollsLeft: isExtra ? prev.rerollsLeft : Math.max(0, prev.rerollsLeft - 1),
+        extraRerollsLeft: isExtra ? Math.max(0, prev.extraRerollsLeft - 1) : prev.extraRerollsLeft,
+      }
+    })
   }
 
   function handleReset() {
@@ -213,6 +307,8 @@ export default function StatRollPage({
       fixedFaces: {},
       fixedFacesEnabled: false,
       includeHonSan: true,
+      rerollsLeft: DEFAULT_REROLLS,
+      extraRerollsLeft: DEFAULT_EXTRA_REROLLS,
     })
   }
 
@@ -290,15 +386,30 @@ export default function StatRollPage({
       : `Extra ${idx - CORE_STATS.length + 1}`
   }
 
-  function rollResultCard(r, label) {
+  function rollResultCard(r, label, idx) {
     const used = assignedResultIds.has(r.id)
+    const isExtra = idx >= CORE_STATS.length
+    const allowed = isExtra ? canRerollExtra : canReroll
     return (
       <div
         key={r.id}
-        className={`rounded-lg border p-3 text-center ${
+        className={`relative rounded-lg border p-3 text-center ${
           used ? 'border-violet-300 bg-violet-50' : 'border-[#e2cfb3] bg-white'
         }`}
       >
+        <button
+          type="button"
+          onClick={() => handleRerollOne(idx)}
+          disabled={!allowed}
+          title={
+            allowed
+              ? `สุ่มใหม่เฉพาะช่องนี้ (ใช้ ${isExtra ? 'Reroll Extra' : 'Reroll'} 1 ครั้ง)`
+              : `${isExtra ? 'Reroll Extra' : 'Reroll'} หมดแล้ว — กด "รีเซ็ต" ก่อน`
+          }
+          className="absolute right-1.5 top-1.5 flex h-5 w-5 items-center justify-center rounded-full text-xs leading-none text-stone-400 hover:bg-[#f5ede0] hover:text-stone-700 disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent"
+        >
+          🎲
+        </button>
         <div className="text-xs text-stone-400">{label}</div>
         <div className="mt-1 flex justify-center gap-1">
           {r.rolls.map((v, i) => (
@@ -342,12 +453,33 @@ export default function StatRollPage({
       </h2>
 
       <div className="mb-4 flex flex-wrap items-center gap-3">
-        <button
-          onClick={handleRoll}
-          className="rounded-lg bg-violet-700 py-3 px-6 text-lg font-bold text-white transition hover:bg-violet-800 md:px-8"
-        >
-          {results.length === 0 ? 'สุ่มเลย!' : 'สุ่มใหม่'}
-        </button>
+        {isFirstRoll ? (
+          <button
+            onClick={handleRoll}
+            className="rounded-lg bg-violet-700 py-3 px-6 text-lg font-bold text-white transition hover:bg-violet-800 md:px-8"
+          >
+            สุ่มเลย!
+          </button>
+        ) : (
+          <>
+            <button
+              onClick={handleRerollStandard}
+              disabled={!canReroll}
+              className="rounded-lg bg-violet-700 py-3 px-6 text-base font-bold text-white transition hover:bg-violet-800 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:hover:bg-stone-300 md:px-7"
+            >
+              สุ่มใหม่ (Standard)
+            </button>
+            {includeHonSan && (
+              <button
+                onClick={handleRerollExtra}
+                disabled={!canRerollExtra}
+                className="rounded-lg bg-violet-500 py-3 px-6 text-base font-bold text-white transition hover:bg-violet-600 disabled:cursor-not-allowed disabled:bg-stone-300 disabled:hover:bg-stone-300 md:px-7"
+              >
+                สุ่มใหม่ (Extra)
+              </button>
+            )}
+          </>
+        )}
         <button
           type="button"
           onClick={handleReset}
@@ -355,62 +487,91 @@ export default function StatRollPage({
         >
           รีเซ็ต
         </button>
-        <label
-          className="flex items-center gap-2 rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-600"
-          title="เพิ่มการสุ่ม HON (Honor) และ SAN (Sanity) — ใช้เฉพาะแคมเปญที่มีระบบเกียรติยศ/สติ ทอยแยกจากค่าพลัง Standard ไม่นับรวมกับเงื่อนไขขั้นต่ำ/สูงสุดด้านล่าง"
+        <span
+          className={`rounded-lg border px-3 py-2 text-sm font-semibold ${
+            rerollsLeft > 0
+              ? 'border-[#e2cfb3] bg-white text-stone-600'
+              : 'border-red-200 bg-red-50 text-red-600'
+          }`}
+          title='ใช้ร่วมกันทั้ง "สุ่มใหม่ (Standard)" และ 🎲 รายการ์ด Standard — สุ่มครั้งแรกไม่เสีย Reroll, หมดแล้วต้องกด "รีเซ็ต"'
         >
-          <input
-            type="checkbox"
-            checked={includeHonSan}
-            onChange={(e) => setIncludeHonSan(e.target.checked)}
-            className="h-4 w-4 accent-violet-700"
-          />
-          รวม HON/SAN ในการสุ่มด้วย
-        </label>
-        <label className="flex items-center gap-2 text-sm text-stone-600">
-          จำนวนลูกเต๋า
-          <input
-            type="number"
-            min="1"
-            value={diceCount}
-            onChange={(e) => setDiceCount(e.target.value)}
-            className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
-          />
-          d
-          <input
-            type="number"
-            min="2"
-            value={diceSides}
-            onChange={(e) => setDiceSides(e.target.value)}
-            className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
-          />
-        </label>
-        <label className="flex items-center gap-2 text-sm text-stone-600">
-          ตัดต่ำสุดกี่ลูก
-          <input
-            type="number"
-            min="0"
-            value={dropCount}
-            onChange={(e) => setDropCount(e.target.value)}
-            className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
-          />
-        </label>
-        <label
-          className="flex items-center gap-2 text-sm text-stone-600"
-          title="ใช้กับค่าพลัง Standard เท่านั้น — Extra (HON/SAN) ไม่ถูกนับรวมในเงื่อนไขนี้"
-        >
-          รวมขั้นต่ำที่ยอมรับ (Standard)
-          <input
-            type="number"
-            min="0"
-            value={minTotal}
-            onChange={(e) => setMinTotal(e.target.value)}
-            className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm"
-          />
-        </label>
+          Reroll เหลือ: {rerollsLeft}/{DEFAULT_REROLLS}
+        </span>
+        {includeHonSan && (
+          <span
+            className={`rounded-lg border px-3 py-2 text-sm font-semibold ${
+              extraRerollsLeft > 0
+                ? 'border-[#e2cfb3] bg-white text-stone-600'
+                : 'border-red-200 bg-red-50 text-red-600'
+            }`}
+            title='ใช้ร่วมกันทั้ง "สุ่มใหม่ (Extra)" และ 🎲 รายการ์ด Extra — หมดแล้วต้องกด "รีเซ็ต"'
+          >
+            Reroll Extra เหลือ: {extraRerollsLeft}/{DEFAULT_EXTRA_REROLLS}
+          </span>
+        )}
+        {/* Locked once the first roll exists — settings shouldn't change out
+            from under a roll already in progress. "รีเซ็ต" is the only way
+            back in, since it's the button that clears results. className
+            "contents" keeps these as if they weren't wrapped at all, so the
+            flex-wrap row layout is unaffected. */}
+        <fieldset disabled={!isFirstRoll} className="contents">
+          <label
+            className="flex items-center gap-2 rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-600 disabled:opacity-50"
+            title="เพิ่มการสุ่ม HON (Honor) และ SAN (Sanity) — ใช้เฉพาะแคมเปญที่มีระบบเกียรติยศ/สติ ทอยแยกจากค่าพลัง Standard ไม่นับรวมกับเงื่อนไขขั้นต่ำ/สูงสุดด้านล่าง"
+          >
+            <input
+              type="checkbox"
+              checked={includeHonSan}
+              onChange={(e) => setIncludeHonSan(e.target.checked)}
+              className="h-4 w-4 accent-violet-700"
+            />
+            รวม HON/SAN ในการสุ่มด้วย
+          </label>
+          <label className="flex items-center gap-2 text-sm text-stone-600">
+            จำนวนลูกเต๋า
+            <input
+              type="number"
+              min="1"
+              value={diceCount}
+              onChange={(e) => setDiceCount(e.target.value)}
+              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
+            />
+            d
+            <input
+              type="number"
+              min="2"
+              value={diceSides}
+              onChange={(e) => setDiceSides(e.target.value)}
+              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
+            />
+          </label>
+          <label className="flex items-center gap-2 text-sm text-stone-600">
+            ตัดต่ำสุดกี่ลูก
+            <input
+              type="number"
+              min="0"
+              value={dropCount}
+              onChange={(e) => setDropCount(e.target.value)}
+              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
+            />
+          </label>
+          <label
+            className="flex items-center gap-2 text-sm text-stone-600"
+            title="ใช้กับค่าพลัง Standard เท่านั้น — Extra (HON/SAN) ไม่ถูกนับรวมในเงื่อนไขนี้"
+          >
+            รวมขั้นต่ำที่ยอมรับ (Standard)
+            <input
+              type="number"
+              min="0"
+              value={minTotal}
+              onChange={(e) => setMinTotal(e.target.value)}
+              className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm disabled:bg-stone-100 disabled:text-stone-400"
+            />
+          </label>
+        </fieldset>
       </div>
 
-      <div className="mb-8">
+      <fieldset disabled={!isFirstRoll} className="mb-8 border-0 p-0">
         <div className="mb-2 flex items-center gap-2">
           <label className="flex items-center gap-2 text-sm font-semibold text-stone-500">
             <input
@@ -451,7 +612,7 @@ export default function StatRollPage({
                         max={diceSides}
                         value={row[diceIdx] ?? ''}
                         onChange={(e) => setFixedFace(idx, diceIdx, e.target.value)}
-                        className="h-6 w-6 rounded border border-gray-300 p-0 text-center text-xs"
+                        className="h-6 w-6 rounded border border-gray-300 p-0 text-center text-xs disabled:bg-stone-100 disabled:text-stone-400"
                       />
                     ))}
                   </div>
@@ -460,7 +621,7 @@ export default function StatRollPage({
             })}
           </div>
         )}
-      </div>
+      </fieldset>
 
       {results.length > 0 && (
         <>
@@ -488,7 +649,7 @@ export default function StatRollPage({
             <div className="flex flex-wrap items-stretch gap-3">
               {results.slice(0, CORE_STATS.length).map((r, i) => (
                 <div key={r.id} className="grow shrink basis-32">
-                  {rollResultCard(r, resultLabel(i))}
+                  {rollResultCard(r, resultLabel(i), i)}
                 </div>
               ))}
               {includeHonSan && results.length > CORE_STATS.length && (
@@ -497,7 +658,7 @@ export default function StatRollPage({
                   <div className="w-px shrink-0 self-stretch bg-[#e2cfb3]" />
                   {results.slice(CORE_STATS.length).map((r, i) => (
                     <div key={r.id} className="grow shrink basis-32">
-                      {rollResultCard(r, resultLabel(CORE_STATS.length + i))}
+                      {rollResultCard(r, resultLabel(CORE_STATS.length + i), CORE_STATS.length + i)}
                     </div>
                   ))}
                 </>
