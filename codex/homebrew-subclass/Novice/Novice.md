@@ -203,7 +203,7 @@ You make one weapon attack against a creature within range, with a **+2** bonus 
 
 You touch a creature within melee range — yourself or an ally — and channel restorative energy into it. The target regains **2d8** hit points.
 
-*Job Skill Advancement.* The healing increase: 4d8 at 9th level, 6d8 at 13th level, and 8d8 at 17th level.
+*Job Skill Advancement.* The healing increase: **4d8** at 9th level, **6d8** at 13th level, and **8d8** at 17th level.
 
 ### Play Dead
 *Job Skill (Passive)*
