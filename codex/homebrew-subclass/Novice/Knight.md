@@ -18,13 +18,13 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 **Battle Will.** You gain proficiency with Martial melee weapons, and you gain training with Medium armor, Heavy armor, and Shields.
 
-**Steel Heart.** Your body toughens as you throw yourself into every fight. Your maximum hit points increase by 2 for every level you have in this class. This bonus is recalculated whenever your Novice level changes — it's +6 at 3rd level, growing all the way to +40 by 20th level.
+**Steel Heart.** Your body toughens as you throw yourself into every fight. Your maximum hit points increase by 3 for every level you have in this class. This bonus is recalculated whenever your Novice level changes — it's +9 at 3rd level, growing all the way to +60 by 20th level.
 
 ### 7th Level: Transcendent Second Class — Lord Knight
 
 *A Lord Knight's fury is a resource in its own right — one they can call on exactly when it matters most.*
 
-**Berserk.** As an action, once per Long Rest, you give yourself over to battle fury: you instantly regain all of your lost hit points and half (round down) of your maximum Mana.
+**Berserk.** As an action, once per Long Rest, you give yourself over to battle fury: you instantly regain all of your lost hit points, but your Mana immediately drops to 0.
 
 ### 11th Level: Third Class — Rune Knight
 
@@ -75,9 +75,9 @@ For the duration, your weapon attacks deal an extra **1d4** Fire damage.
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-First time each turn you're hit by a melee attack, you immediately make **1** weapon attack against the attacker.
+The first time you're hit by a melee attack while this is active, you immediately make **1** weapon attack against the attacker, then this effect ends.
 
-*Job Skill Advancement.* The number of counterattacks increases to **2** at 9th level, **3** at 13th level, and **4** at 17th level.
+*Job Skill Advancement.* The number of counterattacks you make when this triggers increases to **2** at 9th level, **3** at 13th level, and **4** at 17th level.
 
 ### Mark
 *Job Skill*
@@ -96,7 +96,7 @@ You mark one creature you can see within range. The first time each turn the mar
 **Range:** 30 feet
 **Mana Cost:** 1
 
-You choose one creature you can see within range. It must make a Constitution saving throw against your Job Skill save DC. On a failure, until the start of its next turn its speed is halved and it can't take reactions.
+You choose one creature you can see within range. It must make a Constitution saving throw against your Job Skill save DC. On a failure, until the start of your next turn, its speed is halved and it can't take reactions.
 
 *Job Skill Advancement.* The condition inflicted on a failed save gets replaced by a stronger one as you gain Ranks. At 9th level, a failure reduces the target's speed to 0. At 13th level, the target is **Stunned** instead. At 17th level, the target is **Paralyzed** instead.
 
@@ -128,7 +128,7 @@ You gain **2** hit points every 6 seconds or start of each of your turns
 **Mana Cost:** 1
 **Duration:** 1 minute (or until you end it)
 
-You gain resistance to Fire damage, then ignite yourself, burning until you end it. At the end of each of your turns while active, every creature within 5 feet of you takes **2d6** Fire damage with no saving throw allowed. You can end this effect at any time as a Free Action.
+You gain resistance to Fire damage, then ignite yourself, burning until you end it. At the end of each of your turns while active, choose any number of creatures within 5 feet of you. Each creature you choose must make a Constitution saving throw against your Job Skill save DC, taking **2d6** Fire damage on a failure, or half as much on a success. You can end this effect at any time as a Free Action.
 
 *Job Skill Advancement.* The fire damage increases to **4d6** at 9th level, **6d6** at 13th level, and **8d6** at 17th level.
 

@@ -11,7 +11,7 @@ The Novice is built around the class-change ladder from *Ragnarok Online* (and i
 | | |
 |---|---|
 | **Primary Ability** | Determined by your Job Path, chosen at 3rd level |
-| **Hit Point Die** | D8 per Novice level |
+| **Hit Point Die** | D6 per Novice level |
 | **Saving Throw Proficiencies** | Dexterity, Constitution |
 | **Skill Proficiencies** | Choose 2: Acrobatics, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Persuasion, Stealth, Survival (plus 1 more proficiency and 1 Expertise at 2nd level — see *Quick Study*) |
 | **Tool Proficiencies** | Choose 1: any artisan's tools or any gaming set |
