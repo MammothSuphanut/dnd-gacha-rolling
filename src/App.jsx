@@ -46,9 +46,8 @@ function App() {
     assignments: {},
     bonuses: {},
     // includeHonSan defaults on (see StatRollPage.jsx) — minTotal only ever
-    // governs the core six (HON/SAN roll unconstrained), so it stays at the
-    // original 75 regardless.
-    minTotal: 75,
+    // governs the core six (HON/SAN roll unconstrained).
+    minTotal: 80,
     includeHonSan: true,
   })
   const [visibility, setVisibility] = useState({

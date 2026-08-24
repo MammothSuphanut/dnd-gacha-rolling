@@ -39,7 +39,7 @@ function abilityModifier(score) {
 
 const STAT_CAP = 20
 
-const DEFAULT_MIN_TOTAL = 75
+const DEFAULT_MIN_TOTAL = 80
 const DEFAULT_DICE_COUNT = 4
 const DEFAULT_DICE_SIDES = 6
 const DEFAULT_DROP_COUNT = 1
@@ -57,7 +57,6 @@ export default function StatRollPage({
     assignments,
     bonuses,
     minTotal = DEFAULT_MIN_TOTAL,
-    maxTotal = '',
     diceCount = DEFAULT_DICE_COUNT,
     diceSides = DEFAULT_DICE_SIDES,
     dropCount = DEFAULT_DROP_COUNT,
@@ -77,7 +76,7 @@ export default function StatRollPage({
 
   // Roll count changes shape (6 vs 8) when this flips, so any existing rolls
   // no longer line up 1:1 with the stat boxes — clear them like a reset.
-  // minTotal/maxTotal are untouched: they only ever govern the core six (see
+  // minTotal is untouched: it only ever governs the core six (see
   // handleRoll), so there's nothing to re-tune here.
   function setIncludeHonSan(value) {
     setStatRollState((prev) => ({
@@ -91,10 +90,6 @@ export default function StatRollPage({
 
   function setFixedFacesEnabled(value) {
     setStatRollState((prev) => ({ ...prev, fixedFacesEnabled: value }))
-  }
-
-  function setMaxTotal(value) {
-    setStatRollState((prev) => ({ ...prev, maxTotal: value }))
   }
 
   function setDiceCount(value) {
@@ -151,15 +146,12 @@ export default function StatRollPage({
 
   function handleRoll() {
     const threshold = Math.max(0, Number(minTotal) || 0)
-    const ceiling = maxTotal === '' || maxTotal === null ? null : Math.max(0, Number(maxTotal) || 0)
     const count = Math.max(1, Number(diceCount) || DEFAULT_DICE_COUNT)
     const sides = Math.max(2, Number(diceSides) || DEFAULT_DICE_SIDES)
     const drop = Math.min(Math.max(0, Number(dropCount) || 0), count - 1)
 
-    function distanceFromRange(sum) {
-      if (sum < threshold) return threshold - sum
-      if (ceiling !== null && sum > ceiling) return sum - ceiling
-      return 0
+    function distanceBelowMin(sum) {
+      return sum < threshold ? threshold - sum : 0
     }
 
     function fixedFaceValue(idx, diceIdx) {
@@ -192,7 +184,7 @@ export default function StatRollPage({
     do {
       const next = Array.from({ length: CORE_STATS.length }, (_, idx) => rollResultForIndex(idx))
       const sum = next.reduce((s, r) => s + r.total, 0)
-      dist = distanceFromRange(sum)
+      dist = distanceBelowMin(sum)
       if (dist < bestDistance) {
         best = next
         bestDistance = dist
@@ -215,7 +207,6 @@ export default function StatRollPage({
       assignments: {},
       bonuses: {},
       minTotal: DEFAULT_MIN_TOTAL,
-      maxTotal: '',
       diceCount: DEFAULT_DICE_COUNT,
       diceSides: DEFAULT_DICE_SIDES,
       dropCount: DEFAULT_DROP_COUNT,
@@ -291,6 +282,59 @@ export default function StatRollPage({
     0,
   )
 
+  // "Standard 1-6" = the core six (subject to the min/max-total search),
+  // "Extra 1-2" = HON/SAN (rolled unconstrained) — see handleRoll.
+  function resultLabel(idx) {
+    return idx < CORE_STATS.length
+      ? `Standard ${idx + 1}`
+      : `Extra ${idx - CORE_STATS.length + 1}`
+  }
+
+  function rollResultCard(r, label) {
+    const used = assignedResultIds.has(r.id)
+    return (
+      <div
+        key={r.id}
+        className={`rounded-lg border p-3 text-center ${
+          used ? 'border-violet-300 bg-violet-50' : 'border-[#e2cfb3] bg-white'
+        }`}
+      >
+        <div className="text-xs text-stone-400">{label}</div>
+        <div className="mt-1 flex justify-center gap-1">
+          {r.rolls.map((v, i) => (
+            <span
+              key={i}
+              className={`flex h-6 w-6 items-center justify-center rounded text-xs font-medium ${
+                r.dropIndices.has(i)
+                  ? 'bg-[#f5ede0] text-stone-400 line-through'
+                  : 'bg-gray-800 text-white'
+              }`}
+            >
+              {v}
+            </span>
+          ))}
+        </div>
+        <div className="mt-2 flex items-center justify-center gap-2">
+          <button
+            type="button"
+            onClick={() => adjustResultTotal(r.id, -1)}
+            className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
+          >
+            −
+          </button>
+          <div className="w-8 text-xl font-bold text-stone-900">{r.total}</div>
+          <button
+            type="button"
+            onClick={() => adjustResultTotal(r.id, 1)}
+            className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="pb-[150px]">
       <h2 className="mb-4 text-xl font-bold text-stone-900">
@@ -313,7 +357,7 @@ export default function StatRollPage({
         </button>
         <label
           className="flex items-center gap-2 rounded-lg border border-[#e2cfb3] bg-white px-3 py-2 text-sm font-medium text-stone-600"
-          title="เพิ่มการสุ่ม HON (Honor) และ SAN (Sanity) — ใช้เฉพาะแคมเปญที่มีระบบเกียรติยศ/สติ ทอยแยกจาก STR-CHA ไม่นับรวมกับเงื่อนไขขั้นต่ำ/สูงสุดด้านล่าง"
+          title="เพิ่มการสุ่ม HON (Honor) และ SAN (Sanity) — ใช้เฉพาะแคมเปญที่มีระบบเกียรติยศ/สติ ทอยแยกจากค่าพลัง Standard ไม่นับรวมกับเงื่อนไขขั้นต่ำ/สูงสุดด้านล่าง"
         >
           <input
             type="checkbox"
@@ -353,29 +397,15 @@ export default function StatRollPage({
         </label>
         <label
           className="flex items-center gap-2 text-sm text-stone-600"
-          title="ใช้กับ STR-CHA เท่านั้น — HON/SAN ไม่ถูกนับรวมในเงื่อนไขนี้"
+          title="ใช้กับค่าพลัง Standard เท่านั้น — Extra (HON/SAN) ไม่ถูกนับรวมในเงื่อนไขนี้"
         >
-          รวมขั้นต่ำที่ยอมรับ (STR-CHA)
+          รวมขั้นต่ำที่ยอมรับ (Standard)
           <input
             type="number"
             min="0"
             value={minTotal}
             onChange={(e) => setMinTotal(e.target.value)}
             className="w-20 rounded-md border border-gray-300 px-2 py-1 text-sm"
-          />
-        </label>
-        <label
-          className="flex items-center gap-2 text-sm text-stone-600"
-          title="ใช้กับ STR-CHA เท่านั้น — HON/SAN ไม่ถูกนับรวมในเงื่อนไขนี้"
-        >
-          รวมสูงสุดที่ยอมรับ (STR-CHA)
-          <input
-            type="number"
-            min="0"
-            placeholder="ไม่จำกัด"
-            value={maxTotal}
-            onChange={(e) => setMaxTotal(e.target.value)}
-            className="w-24 rounded-md border border-gray-300 px-2 py-1 text-sm"
           />
         </label>
       </div>
@@ -440,7 +470,7 @@ export default function StatRollPage({
               <span className="text-sm font-medium text-stone-600">
                 {includeHonSan ? (
                   <>
-                    รวม STR-CHA: <span className="font-bold text-stone-900">{coreResultsSum}</span>{' '}
+                    รวม Standard: <span className="font-bold text-stone-900">{coreResultsSum}</span>{' '}
                     <span className="text-stone-400">(รวมทั้งหมด {resultsSum})</span>
                   </>
                 ) : (
@@ -450,51 +480,28 @@ export default function StatRollPage({
                 )}
               </span>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
-              {results.map((r, idx) => {
-                const used = assignedResultIds.has(r.id)
-                return (
-                  <div
-                    key={r.id}
-                    className={`rounded-lg border p-3 text-center ${
-                      used ? 'border-violet-300 bg-violet-50' : 'border-[#e2cfb3] bg-white'
-                    }`}
-                  >
-                    <div className="text-xs text-stone-400">ครั้งที่ {idx + 1}</div>
-                    <div className="mt-1 flex justify-center gap-1">
-                      {r.rolls.map((v, i) => (
-                        <span
-                          key={i}
-                          className={`flex h-6 w-6 items-center justify-center rounded text-xs font-medium ${
-                            r.dropIndices.has(i)
-                              ? 'bg-[#f5ede0] text-stone-400 line-through'
-                              : 'bg-gray-800 text-white'
-                          }`}
-                        >
-                          {v}
-                        </span>
-                      ))}
+            {/* Every card gets the same grow factor + basis (not a grid split
+                proportionally between the two groups), so Standard and Extra
+                cards stretch to fill the full row equally instead of leaving
+                dead space — and wrap to a new row on narrow screens instead
+                of shrinking unreadably small. */}
+            <div className="flex flex-wrap items-stretch gap-3">
+              {results.slice(0, CORE_STATS.length).map((r, i) => (
+                <div key={r.id} className="grow shrink basis-32">
+                  {rollResultCard(r, resultLabel(i))}
+                </div>
+              ))}
+              {includeHonSan && results.length > CORE_STATS.length && (
+                <>
+                  {/* Divider marking Standard vs Extra */}
+                  <div className="w-px shrink-0 self-stretch bg-[#e2cfb3]" />
+                  {results.slice(CORE_STATS.length).map((r, i) => (
+                    <div key={r.id} className="grow shrink basis-32">
+                      {rollResultCard(r, resultLabel(CORE_STATS.length + i))}
                     </div>
-                    <div className="mt-2 flex items-center justify-center gap-2">
-                      <button
-                        type="button"
-                        onClick={() => adjustResultTotal(r.id, -1)}
-                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
-                      >
-                        −
-                      </button>
-                      <div className="w-8 text-xl font-bold text-stone-900">{r.total}</div>
-                      <button
-                        type="button"
-                        onClick={() => adjustResultTotal(r.id, 1)}
-                        className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 text-sm font-bold text-stone-600 hover:bg-[#f5ede0]"
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
-                )
-              })}
+                  ))}
+                </>
+              )}
             </div>
           </div>
 
@@ -582,7 +589,7 @@ export default function StatRollPage({
                     <SearchSelect
                       options={sortedResults.map((r) => ({
                         value: r.id,
-                        label: `ครั้งที่ ${resultIndexById.get(r.id) + 1} (${r.total})`,
+                        label: `${resultLabel(resultIndexById.get(r.id))} (${r.total})`,
                         disabled: assignedResultIds.has(r.id) && assignedId !== r.id,
                       }))}
                       value={assignedId ?? ''}
