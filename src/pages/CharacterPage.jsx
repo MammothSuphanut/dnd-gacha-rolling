@@ -6,6 +6,7 @@ import { isLocalHost, useGachaStore } from '../store/GachaStore'
 import { useToast } from '../store/ToastContext'
 import { createId } from '../utils/id'
 import {
+  EXTRA_STAT_KEYS,
   SIZE_OPTIONS,
   STAT_KEYS,
   getBackgroundOptions,
@@ -86,7 +87,17 @@ function blankPartyTag() {
 }
 
 function blankStats() {
-  return STAT_KEYS.reduce((acc, s) => ({ ...acc, [s.key]: 0 }), {})
+  return [...STAT_KEYS, ...EXTRA_STAT_KEYS].reduce((acc, s) => ({ ...acc, [s.key]: 0 }), {})
+}
+
+// blankSavingThrows() (dnd5e.js) only knows about the core six abilities —
+// extend it with the optional Honor/Sanity keys so every character always
+// has a defined (default-false) entry for them too.
+function blankSavingThrowsExt() {
+  return {
+    ...blankSavingThrows(),
+    ...EXTRA_STAT_KEYS.reduce((acc, s) => ({ ...acc, [s.key]: false }), {}),
+  }
 }
 
 function blankClassLevel() {
@@ -169,7 +180,7 @@ function blankCharacter() {
     images: [],
     activeImageId: '',
     combat: blankCombat(),
-    savingThrows: blankSavingThrows(),
+    savingThrows: blankSavingThrowsExt(),
     skills: blankSkills(),
     weapons: [blankAction(), blankAction(), blankAction()],
     attacksSpellcasting: '',
@@ -232,7 +243,7 @@ function normalizeCharacter(raw) {
   const biography = raw.biography ?? ''
 
   const combat = { ...blankCombat(), ...raw.combat, hp: { ...blankCombat().hp, ...raw.combat?.hp }, deathSaves: { ...blankCombat().deathSaves, ...raw.combat?.deathSaves } }
-  const savingThrows = { ...blankSavingThrows(), ...raw.savingThrows }
+  const savingThrows = { ...blankSavingThrowsExt(), ...raw.savingThrows }
   const skills = SKILLS.reduce(
     (acc, s) => ({ ...acc, [s.key]: normalizeSkillState(raw.skills?.[s.key]) }),
     {},
@@ -1172,8 +1183,13 @@ function SearchableMultiSelect({ options, selectedIds, onToggle, emptyLabel, get
   )
 }
 
-function StatsRadarChart({ stats, savingThrows, profBonus }) {
-  const maxVal = Math.max(20, ...STAT_KEYS.map((s) => Number(stats[s.key]) || 0))
+function StatsRadarChart({ stats, savingThrows, profBonus, extraStats = [] }) {
+  // extraStats (e.g. Honor/Sanity) appends as extra spokes — the angle step
+  // is derived from the point count so the hexagon becomes an octagon (etc.)
+  // instead of assuming exactly six abilities.
+  const keys = [...STAT_KEYS, ...extraStats]
+  const angleStep = (2 * Math.PI) / keys.length
+  const maxVal = Math.max(20, ...keys.map((s) => Number(stats[s.key]) || 0))
   const cx = 110
   const cy = 110
   const r = 70
@@ -1194,8 +1210,8 @@ function StatsRadarChart({ stats, savingThrows, profBonus }) {
         {/* Outer and inner concentric hexagons */}
         {levels.map((level, lIdx) => {
           const radius = r * level
-          const points = STAT_KEYS.map((_, idx) => {
-            const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+          const points = keys.map((_, idx) => {
+            const angle = -Math.PI / 2 + idx * angleStep
             const x = cx + radius * Math.cos(angle)
             const y = cy + radius * Math.sin(angle)
             return `${x},${y}`
@@ -1214,8 +1230,8 @@ function StatsRadarChart({ stats, savingThrows, profBonus }) {
         })}
 
         {/* Axis line connectors */}
-        {STAT_KEYS.map((_, idx) => {
-          const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+        {keys.map((_, idx) => {
+          const angle = -Math.PI / 2 + idx * angleStep
           const x = cx + r * Math.cos(angle)
           const y = cy + r * Math.sin(angle)
           return (
@@ -1234,10 +1250,10 @@ function StatsRadarChart({ stats, savingThrows, profBonus }) {
 
         {/* Stats Fill Area */}
         {(() => {
-          const points = STAT_KEYS.map((s, idx) => {
+          const points = keys.map((s, idx) => {
             const val = Number(stats[s.key]) || 0
             const radius = (val / maxVal) * r
-            const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+            const angle = -Math.PI / 2 + idx * angleStep
             const x = cx + radius * Math.cos(angle)
             const y = cy + radius * Math.sin(angle)
             return `${x},${y}`
@@ -1255,10 +1271,10 @@ function StatsRadarChart({ stats, savingThrows, profBonus }) {
         })()}
 
         {/* Markers and Labels */}
-        {STAT_KEYS.map((s, idx) => {
+        {keys.map((s, idx) => {
           const val = Number(stats[s.key]) || 0
           const radius = (val / maxVal) * r
-          const angle = -Math.PI / 2 + (idx * Math.PI) / 3
+          const angle = -Math.PI / 2 + idx * angleStep
           const x = cx + radius * Math.cos(angle)
           const y = cy + radius * Math.sin(angle)
 
@@ -1748,6 +1764,12 @@ function CharacterFormModal({
     const ownerUser = users.find((u) => u.id === form.ownerId)
     const selectedParties = partyTags.filter((t) => form.partyTagIds.includes(t.id))
     const selectedCampaigns = campaigns.filter((c) => form.campaignIds.includes(c.id))
+    // Honor/Sanity are an optional variant rule — only show them once a
+    // character actually has one set, so sheets that don't use the variant
+    // stay uncluttered.
+    const activeExtraStats = EXTRA_STAT_KEYS.filter(
+      (s) => Number(form.stats?.[s.key]) > 0 || form.savingThrows?.[s.key],
+    )
     const speciesLink = referenceLinks?.speciesLinks?.get(form.species)
     const backgroundLink = referenceLinks?.backgroundLinks?.get(form.background)
 
@@ -1827,14 +1849,28 @@ function CharacterFormModal({
             {standalone ? (
               headerExtra
             ) : (
-              <button
-                type="button"
-                onClick={onCancel}
-                className="rounded-md p-1.5 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600"
-                aria-label="ปิด"
-              >
-                ✕
-              </button>
+              <div className="flex items-center gap-1.5">
+                {isEditing && (
+                  <a
+                    href={`/characters/${form.id}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1 rounded-md border border-stone-300 bg-white px-2 py-1.5 text-xs font-medium text-stone-600 hover:bg-[#f5ede0]"
+                    title="เปิดหน้าตัวละครในแท็บใหม่"
+                  >
+                    ↗ เปิดแท็บใหม่
+                  </a>
+                )}
+                <button
+                  type="button"
+                  onClick={onCancel}
+                  className="rounded-md p-1.5 text-stone-400 hover:bg-[#f5ede0] hover:text-stone-600"
+                  aria-label="ปิด"
+                >
+                  ✕
+                </button>
+              </div>
             )}
           </div>
 
@@ -1993,6 +2029,7 @@ function CharacterFormModal({
                         stats={form.stats}
                         savingThrows={form.savingThrows}
                         profBonus={proficiencyBonus(level)}
+                        extraStats={activeExtraStats}
                       />
                     </div>
                     <div className="w-full flex flex-col gap-2">
@@ -2153,6 +2190,7 @@ function CharacterFormModal({
                         stats={form.stats}
                         savingThrows={form.savingThrows}
                         profBonus={proficiencyBonus(level)}
+                        extraStats={activeExtraStats}
                       />
                     </div>
                   </div>
@@ -2164,7 +2202,7 @@ function CharacterFormModal({
                     🛡️ Saving Throws &amp; 🎯 ทักษะ (Skills)
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
-                    {ABILITY_KEYS.map((key) => {
+                    {[...ABILITY_KEYS, ...activeExtraStats.map((s) => s.key)].map((key) => {
                       const isProf = form.savingThrows[key]
                       const bonus = savingThrowBonus(form, key, proficiencyBonus(level))
                       const abilitySkills = SKILLS.filter((s) => s.ability === key)
@@ -2665,6 +2703,17 @@ function CharacterFormModal({
                 📄 Export PDF
               </button>
             )}
+            {isEditing && !standalone && (
+              <a
+                href={`/characters/${form.id}`}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1 rounded-md border border-stone-300 bg-white px-2 py-1.5 text-xs font-medium text-stone-600 hover:bg-[#f5ede0]"
+                title="เปิดหน้าตัวละครในแท็บใหม่"
+              >
+                ↗ เปิดแท็บใหม่
+              </a>
+            )}
             {standalone && headerExtra}
             <button
               type="button"
@@ -2894,6 +2943,21 @@ function CharacterFormModal({
                 </div>
               ))}
             </div>
+            <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-6">
+              {EXTRA_STAT_KEYS.map((s) => (
+                <div key={s.key}>
+                  <label className="mb-0.5 block text-center text-[11px] font-medium text-stone-400" title="ค่าพลังเสริม ใช้เฉพาะบางแคมเปญ (เช่น Honor/Sanity)">
+                    {s.label}
+                  </label>
+                  <input
+                    type="number"
+                    value={form.stats[s.key] ?? 0}
+                    onChange={(e) => patchStat(s.key, e.target.value)}
+                    className="w-full rounded-md border border-dashed border-gray-300 px-1 py-1 text-center text-sm"
+                  />
+                </div>
+              ))}
+            </div>
           </FormSection>
 
           <FormSection
@@ -3110,7 +3174,7 @@ function CharacterFormModal({
 
           <FormSection icon="🛡️" title="Saving Throws" hint="ติ๊กเมื่อมี proficiency">
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-              {ABILITY_KEYS.map((key) => (
+              {[...ABILITY_KEYS, ...EXTRA_STAT_KEYS.map((s) => s.key)].map((key) => (
                 <label
                   key={key}
                   className="flex items-center justify-between gap-2 rounded-md border border-[#e2cfb3] bg-white px-2.5 py-1.5 text-sm"
@@ -3656,7 +3720,7 @@ function CharactersTab({
   }, [prefillCharacter])
 
   const [search, setSearch] = useState('')
-  const [filterStatus, setFilterStatus] = useState('')
+  const [filterStatus, setFilterStatus] = useState('In-Action')
   const [filterUserId, setFilterUserId] = useState('')
   const [filterPartyId, setFilterPartyId] = useState('')
   const [filterClass, setFilterClass] = useState('')
@@ -3744,6 +3808,10 @@ function CharactersTab({
 
   function openCreate() {
     setEditingCharacter(blankCharacter())
+  }
+
+  function openEdit(character) {
+    setEditingCharacter(character)
   }
 
   function handleSave(character, keepOpen = false) {
@@ -3904,11 +3972,10 @@ function CharactersTab({
           {filteredCharacters.map((character) => {
             const summary = classSummary(character)
             return (
-              <a
+              <button
+                type="button"
                 key={character.id}
-                href={`/characters/${character.id}`}
-                target="_blank"
-                rel="noreferrer"
+                onClick={() => openEdit(character)}
                 className="group flex flex-row items-stretch overflow-hidden rounded-xl border border-[#e2cfb3] bg-white text-left shadow-sm transition-all duration-200 hover:shadow-md h-20 sm:h-24 w-full"
               >
                 {/* Left Portrait Image */}
@@ -3992,7 +4059,7 @@ function CharactersTab({
                     </div>
                   )}
                 </div>
-              </a>
+              </button>
             )
           })}
         </div>

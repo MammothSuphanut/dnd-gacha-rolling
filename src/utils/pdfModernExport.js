@@ -34,6 +34,16 @@ import {
 const CW = PAGE_W - MARGIN * 2
 const ABILITY_LABELS = { str: 'STR', dex: 'DEX', con: 'CON', int: 'INT', wis: 'WIS', cha: 'CHA' }
 const ABILITY_LABELS_LONG = { str: 'Strength', dex: 'Dexterity', con: 'Constitution', int: 'Intelligence', wis: 'Wisdom', cha: 'Charisma' }
+// Optional variant-rule scores (Honor/Sanity) — only printed when a character
+// actually has one set, same gating as the app's own character view.
+const EXTRA_ABILITY_LABELS = { hon: 'HON', san: 'SAN' }
+const EXTRA_ABILITY_LABELS_LONG = { hon: 'Honor', san: 'Sanity' }
+
+function activeExtraAbilityKeys(character) {
+  return Object.keys(EXTRA_ABILITY_LABELS).filter(
+    (k) => Number(character.stats?.[k]) > 0 || character.savingThrows?.[k],
+  )
+}
 
 function totalLevel(character) {
   return (character.classLevels ?? []).reduce((sum, cl) => sum + (Number(cl.level) || 0), 0)
@@ -110,12 +120,16 @@ async function buildCharacterSection(sheet, character) {
   sheet.y += 6
 
   // Ability scores — one compact line, PHB stat-block style.
-  const abilityLine = ABILITY_KEYS.map((k) => `${ABILITY_LABELS[k]} ${character.stats?.[k] ?? 10} (${formatMod(abilityMod(character.stats?.[k]))})`).join('    ')
+  const extraKeys = activeExtraAbilityKeys(character)
+  const allAbilityKeys = [...ABILITY_KEYS, ...extraKeys]
+  const allAbilityLabels = { ...ABILITY_LABELS, ...EXTRA_ABILITY_LABELS }
+  const allAbilityLabelsLong = { ...ABILITY_LABELS_LONG, ...EXTRA_ABILITY_LABELS_LONG }
+  const abilityLine = allAbilityKeys.map((k) => `${allAbilityLabels[k]} ${character.stats?.[k] ?? 10} (${formatMod(abilityMod(character.stats?.[k]))})`).join('    ')
   sheet.richWrap([{ text: abilityLine, bold: true, size: 10 }], MARGIN, CW, { size: 10, lineHeight: 15, onNewPage })
   sheet.y += 4
 
-  const saveEntries = ABILITY_KEYS.filter((k) => character.savingThrows?.[k]).map(
-    (k) => `${ABILITY_LABELS_LONG[k].slice(0, 3)} ${formatMod(savingThrowBonus(character, k, profBonus))}`,
+  const saveEntries = allAbilityKeys.filter((k) => character.savingThrows?.[k]).map(
+    (k) => `${allAbilityLabelsLong[k].slice(0, 3)} ${formatMod(savingThrowBonus(character, k, profBonus))}`,
   )
   if (saveEntries.length > 0) {
     sheet.richWrap(

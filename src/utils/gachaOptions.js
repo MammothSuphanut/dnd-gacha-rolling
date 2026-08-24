@@ -9,6 +9,16 @@ export const STAT_KEYS = [
   { key: 'cha', label: 'CHA' },
 ]
 
+// Optional variant-rule ability scores (Foundry's dnd5e system calls these
+// "hon"/"san") used by some settings — e.g. Curse of Strahd's Sanity, or
+// Honor in oriental-adventure-style campaigns. Kept separate from STAT_KEYS
+// since they aren't part of the core six (no skills key off them, and they
+// only show up in the UI when a character actually has one set).
+export const EXTRA_STAT_KEYS = [
+  { key: 'hon', label: 'HON' },
+  { key: 'san', label: 'SAN' },
+]
+
 function collectNamesByCategory(boxes, category) {
   const set = new Set()
   for (const box of boxes ?? []) {

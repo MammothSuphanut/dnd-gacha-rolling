@@ -194,6 +194,11 @@ function parseClassLevels(items) {
   })
 }
 
+// Optional variant-rule ability scores (Foundry's "Honor and Sanity Scores"
+// module rule) — only present in system.abilities when a campaign actually
+// uses them, so these are copied over when found rather than defaulted.
+const OPTIONAL_ABILITY_KEYS = ['hon', 'san']
+
 function parseStats(abilities) {
   if (!abilities) return null
   const stats = {}
@@ -203,6 +208,10 @@ function parseStats(abilities) {
     if (val != null) any = true
     stats[key] = Number(val) || 0
   }
+  for (const key of OPTIONAL_ABILITY_KEYS) {
+    const val = abilities[key]?.value
+    if (val != null) stats[key] = Number(val) || 0
+  }
   return any ? stats : null
 }
 
@@ -210,6 +219,11 @@ function parseSavingThrows(abilities) {
   const savingThrows = blankSavingThrows()
   for (const key of ABILITY_KEYS) {
     savingThrows[key] = Number(abilities?.[key]?.proficient) > 0
+  }
+  for (const key of OPTIONAL_ABILITY_KEYS) {
+    if (abilities?.[key] != null) {
+      savingThrows[key] = Number(abilities[key]?.proficient) > 0
+    }
   }
   return savingThrows
 }
