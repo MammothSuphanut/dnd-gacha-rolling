@@ -83,9 +83,9 @@ You gain the Play Dead Job Skill (see *Base Job Skills*, below) — the knack of
 
 ### 2nd Level: Quick Study
 
-Choose 1 additional skill from the list under *Skill Proficiencies* in *Core Novice Traits* that you don't already have proficiency in — you gain proficiency in it.
+Choose 1 additional skill you don't already have proficiency in — you gain proficiency in it.
 
-Then choose 1 skill in which you have proficiency (from any source). Your proficiency bonus is doubled for any ability check you make using that skill.
+Then choose 1 skill in which you have proficiency. Your proficiency bonus is doubled for any ability check you make using that skill.
 
 ### 3rd Level: Job Change — Second Class
 
@@ -105,9 +105,9 @@ See *Skill Use*, above.
 
 Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
 
-You also choose 1 additional skill from the list under *Skill Proficiencies* in *Core Novice Traits* that you don't already have proficiency in — you gain proficiency in it.
+You also choose 1 additional skill you don't already have proficiency in — you gain proficiency in it.
 
-Then choose 1 skill in which you have proficiency (from any source) and don't already have Expertise in. Your proficiency bonus is doubled for any ability check you make using that skill.
+Then choose 1 skill in which you have proficiency and don't already have Expertise in. Your proficiency bonus is doubled for any ability check you make using that skill.
 
 ### 7th Level: Job Change — Transcendent Second Class
 
@@ -175,7 +175,7 @@ Because Job Skill Advancement happens at 9th, 13th, and 17th level, all 8 Job Sk
 
 **Swapping Job Skills.** Whenever you gain a Novice level, you can swap out 1 Job Path Job Skill you know for a different one from your Job Path's pool. The replacement enters at the same Rank your other Job Path Job Skills are currently at. Your 2 base Job Skills (First Aid and Play Dead) can't be swapped.
 
-**Once per Turn.** You can't use the same named Job Skill more than once on the same turn, no matter its Casting Time — this applies to every Job Skill you know (base or Job Path), not just ones you'd otherwise repeat through Skill Combo.
+**Once per Turn.** You can't use the same named Job Skill more than once on the same turn, no matter its Casting Time — this applies to every Job Skill you know (base or Job Path), not just ones you'd otherwise repeat through Skill Combo. Some Job Skills are written as an exception to this rule; where a Job Skill's own text says you can use it more than once per turn, that overrides this rule for that Job Skill only.
 
 ## Base Job Skills
 
