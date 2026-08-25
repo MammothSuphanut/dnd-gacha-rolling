@@ -242,7 +242,7 @@ At 3rd level, you choose a Job Path, drawn from the six primary trades of the No
 | Hunter | Hunter | Sniper | Ranger | Windhawk |
 | Bard | Bard/Dancer | Minstrel/Gypsy | Maestro/Wanderer | Troubadour/Trouvère |
 | Blacksmith | Blacksmith | Whitesmith | Mechanic | Meister |
-| Alchemist | Alchemist | Biochemist | Geneticist | Biolo |
+| Alchemist | Alchemist | Biochemist | Geneticist | Geneticist |
 | Super Novice | — | — | — | — |
 
 🚧 **In Development.** None of these Job Paths are finished yet — each one still needs its Primary Ability, proficiencies, Job Path Job Skill pool, and 4 Job Change features written up as its own document, one path per file, the way the *Sacred Throne* documents work for the Sacred Knight. Until at least one path is finished, a Novice can't actually reach 3rd level at the table. `codex/homebrew-subclass/Novice/JobSkill Planning/Knight.md` has an early work-in-progress draft of the Knight path's Job Skills, and `codex/homebrew-subclass/Novice/Concept/` holds the raw skill reference each path will be built from.
