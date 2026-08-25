@@ -38,35 +38,34 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 *The final Job Change. A Dragon Knight's body has stopped behaving like an ordinary mortal's — their strikes cut clean through what should stop them, and their skin shrugs off what should break it.*
 
-**Dragonic Weapon.** Your weapon attacks ignore resistance to the damage type they deal.
+**Dragonic Weapon.** Your Strike ignores resistance to the damage type it deals.
 
 **Dragonic Defense.** You gain resistance to Bludgeoning, Piercing, and Slashing damage from nonmagical attacks.
 
 ## Knight Job Skills
 
-The 9 Job Skills below are the Knight Job Path's pool. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more each at 6th, 10th, 14th, and 18th level (6 total), each starting at Rank 1 — and every one you know advances in Rank alongside your other Job Skills at 9th, 13th, and 17th level.
+The 9 Job Skills below are the Knight Job Path's pool. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more each at 6th, 10th, 14th, and 18th level (6 total), each starting at Rank 1 — and every one you know advances in Rank alongside your Class Die (see *Job Skills* in the Novice class document).
 
-### Weapon Mastery
+### Focus Strike
 *Job Skill*
 
 **Range:** Self
 **Mana Cost:** 1
-**Duration:** 1 minute
 
-For duration your Weapon attack roll and damage roll have **+1** bonus.
+Use your Strike, with a bonus to the attack roll equal to 1 roll of your Class Die.
 
-*Job Skill Advancement.* Increase the attack roll and damage roll by **1** at 9th (**+2**), 13th, (**+3**), and 17th level (**+4**).
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Aura Weapon
 *Job Skill*
 
 **Range:** Self
-**Mana Cost:** 1
+**Mana Cost:** 2
 **Duration:** 1 minute
 
-For the duration, your weapon attacks deal an extra **1d4** Fire damage.
+For the duration, your Strike deals extra Fire damage equal to 1 roll of your Class Die.
 
-*Job Skill Advancement.* The bonus damage increases to **2d4** at 9th level, **3d4** at 13th level, and **4d4** at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Auto Counter
 *Job Skill*
@@ -75,9 +74,9 @@ For the duration, your weapon attacks deal an extra **1d4** Fire damage.
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-The first time you're hit by a melee attack while this is active, you immediately make **1** weapon attack against the attacker, then this effect ends.
+Each time you're hit by a melee attack while this is active, you immediately use your Strike against the attacker. If it hits, the target takes extra damage equal to 1 roll of your Class Die, and this effect ends. If it misses, this effect remains active — keep making a counterattack each time you're hit until one lands or the duration expires.
 
-*Job Skill Advancement.* The number of counterattacks you make when this triggers increases to **2** at 9th level, **3** at 13th level, and **4** at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Mark
 *Job Skill*
@@ -86,19 +85,19 @@ The first time you're hit by a melee attack while this is active, you immediatel
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-You mark one creature you can see within range. The first time each turn the marked creature is hit by an attack, from any source, it takes an extra **1d6** Fire damage (no more than once per turn).
+You mark one creature you can see within range. The first time each turn the marked creature is hit by an attack, from any source, it takes extra Fire damage equal to 1 roll of your Class Die (no more than once per turn).
 
-*Job Skill Advancement.* The extra damage increases to **2d6** at 9th level, **3d6** at 13th level, and **4d6** at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Joint Beat
 *Job Skill*
 
-**Range:** 30 feet
+**Range:** Self
 **Mana Cost:** 1
 
-You choose one creature you can see within range. It must make a Constitution saving throw against your Job Skill save DC. On a failure, until the start of your next turn, its speed is halved and it can't take reactions.
+Use your Strike. If it hits, the target takes extra damage equal to 1 roll of your Class Die, and it must make a Constitution saving throw against your Job Skill save DC. On a failure, until the start of your next turn, the target takes damage equal to 2 rolls of your Class Die if it moves more than 1 foot on its turn.
 
-*Job Skill Advancement.* The condition inflicted on a failed save gets replaced by a stronger one as you gain Ranks. At 9th level, a failure reduces the target's speed to 0. At 13th level, the target is **Stunned** instead. At 17th level, the target is **Paralyzed** instead.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Phantom Strike
 *Job Skill*
@@ -106,9 +105,9 @@ You choose one creature you can see within range. It must make a Constitution sa
 **Range:** Self
 **Mana Cost:** 1
 
-Make **1** weapon attack. If it hits, the target takes an extra **3d8** Fire damage. If the attack misses, you don't spend the Mana Cost.
+Use your Strike. If it hits, the target takes extra Fire damage equal to 3 rolls of your Class Die. If it misses, you don't spend the Mana Cost.
 
-*Job Skill Advancement.* The extra damage increases to **6d8** at 9th level, **9d8** at 13th level, and **12d8** at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Increase HP Recovery
 *Job Skill*
@@ -117,20 +116,20 @@ Make **1** weapon attack. If it hits, the target takes an extra **3d8** Fire dam
 **Mana Cost:** 1
 **Duration:** 1 minute
 
-You gain **2** hit points every 6 seconds or start of each of your turns
+You gain hit points equal to half the number of sides on your Class Die, rounded down (**3** at d6, **4** at d8, **5** at d10, **6** at d12), every 6 seconds or at the start of each of your turns.
 
-*Job Skill Advancement.* increase by 2 at 9th (**4**), 13th, (**6**), and 17th level (**8**)
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Self-Ignite
 *Job Skill*
 
 **Range:** Self
-**Mana Cost:** 1
+**Mana Cost:** 2
 **Duration:** 1 minute (or until you end it)
 
-You gain resistance to Fire damage, then ignite yourself, burning until you end it. At the end of each of your turns while active, choose any number of creatures within 5 feet of you. Each creature you choose must make a Constitution saving throw against your Job Skill save DC, taking **2d6** Fire damage on a failure, or half as much on a success. You can end this effect at any time as a Free Action.
+You gain resistance to Fire damage, then ignite yourself, burning until you end it. At the end of each of your turns while active, choose any number of creatures within 5 feet of you. Each creature you choose must make a Constitution saving throw against your Job Skill save DC, taking Fire damage equal to 2 rolls of your Class Die on a failure, or half as much on a success. You can end this effect at any time as a Free Action.
 
-*Job Skill Advancement.* The fire damage increases to **4d6** at 9th level, **6d6** at 13th level, and **8d6** at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.
 
 ### Guard
 *Job Skill*
@@ -138,6 +137,6 @@ You gain resistance to Fire damage, then ignite yourself, burning until you end 
 **Range:** Self
 **Mana Cost:** 1
 
-You gain temporary hit points equal to **2d8** + your Novice level.
+You gain temporary hit points equal to 2 rolls of your Class Die + your Novice level.
 
-*Job Skill Advancement.* The temporary hit points increase to **4d8** + your Novice level at 9th level, **6d8** + your Novice level at 13th level, and **8d8** + your Novice level at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills* in the Novice class document.

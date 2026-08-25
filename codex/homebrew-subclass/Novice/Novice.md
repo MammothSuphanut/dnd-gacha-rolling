@@ -13,7 +13,7 @@ The Novice is built around the class-change ladder from *Ragnarok Online* (and i
 | **Primary Ability** | Determined by your Job Path, chosen at 3rd level |
 | **Hit Point Die** | D6 per Novice level |
 | **Saving Throw Proficiencies** | Dexterity, Constitution |
-| **Skill Proficiencies** | Choose 2: Acrobatics, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Persuasion, Stealth, Survival (plus 1 more proficiency and 1 Expertise at 2nd level and again at 6th level — see *Quick Study* and *Super Novice*) |
+| **Skill Proficiencies** | Choose 2: Acrobatics, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Persuasion, Stealth, Survival (plus 1 more proficiency and 1 Expertise at 2nd level and again at 6th level — see *Quick Study* and *Adaptive*) |
 | **Tool Proficiencies** | Choose 1: any artisan's tools or any gaming set |
 | **Weapon Proficiencies** | Simple weapons (additional proficiencies granted by your Job Path — see *Job Paths*) |
 | **Armor Training** | Light armor (additional training granted by your Job Path) |
@@ -22,13 +22,13 @@ The Novice is built around the class-change ladder from *Ragnarok Online* (and i
 
 ## Mana
 
-A Novice's Job Skills — First Aid, Play Dead, and every technique granted by a Job Path — are powered by a pool of **Mana**.
+A Novice's Job Skills — Strike, First Aid, Play Dead, and every technique granted by a Job Path — are powered by a pool of **Mana**.
 
-**Mana Pool.** Your pool is set by your Tier, not your Proficiency Bonus: **2** in Tier 1 (1st-4th level), **3** in Tier 2 (5th-10th level), **4** in Tier 3 (11th-16th level), and **5** in Tier 4 (17th level and beyond) — see the Mana Pool column on the Novice table. You regain all spent Mana when you finish a Long Rest.
+**Mana Pool.** Your pool is set by your Tier, not your Proficiency Bonus: **6** in Tier 1 (1st-5th level), **8** in Tier 2 (6th-10th level), **10** in Tier 3 (11th-15th level), and **12** in Tier 4 (16th level and beyond) — see the Mana Pool column on the Novice table. You regain all spent Mana when you finish a Long Rest.
 
 **Recovering Mana Mid-Day.** Outside of a Long Rest, the only way to recover Mana is Play Dead (see *1st Level: Play Dead*) — once per Short Rest, you can spend it to recover Mana even if you can't actually take a Short Rest.
 
-**Spending Mana.** Every Job Skill lists its own Mana cost. If you don't have enough Mana left to pay for one, you can't use it — you can still fall back on a plain weapon attack, and First Aid can still be used once per Short Rest without spending Mana, so you're never left with no way to patch up when it matters.
+**Spending Mana.** Every Job Skill lists its own Mana cost. If you don't have enough Mana left to pay for one, you can't use it — but Strike never costs Mana at all, and First Aid can still be used once per Short Rest without spending Mana, so you're never left with nothing to do or no way to patch up when it matters.
 
 **Saving Throw DC.** Any Job Skill that calls for a saving throw uses DC = 8 + your Proficiency Bonus + your Primary Ability modifier.
 
@@ -42,28 +42,28 @@ Starting at 20th level (*Skill Combo Improvement*), this becomes **3** Job Skill
 
 ## The Novice
 
-| Level | Proficiency Bonus | Features | Mana Pool | Job Skills |
-|---|---|---|---|---|
-| 1st | +2 | Skill Use, First Aid, Play Dead | 2 | 0 |
-| 2nd | +2 | Quick Study | 2 | 0 |
-| 3rd | +2 | Job Change: Second Class, Job Path Job Skills | 2 | 2 |
-| 4th | +2 | Ability Score Improvement | 2 | 2 |
-| 5th | +3 | Skill Combo | 3 | 2 |
-| 6th | +3 | Super Novice | 3 | 3 |
-| 7th | +3 | Job Change: Transcendent Second Class | 3 | 3 |
-| 8th | +3 | Ability Score Improvement | 3 | 3 |
-| 9th | +4 | Job Skill Advancement (Rank 2) | 3 | 3 |
-| 10th | +4 | Ultra Super Novice | 3 | 4 |
-| 11th | +4 | Job Change: Third Class | 4 | 4 |
-| 12th | +4 | Ability Score Improvement | 4 | 4 |
-| 13th | +5 | Job Skill Advancement (Rank 3) | 4 | 4 |
-| 14th | +5 | Elevated Novice | 4 | 5 |
-| 15th | +5 | Job Change: Fourth Class | 4 | 5 |
-| 16th | +5 | Ability Score Improvement | 4 | 5 |
-| 17th | +6 | Job Skill Advancement (Rank 4) | 5 | 5 |
-| 18th | +6 | Hyper Novice | 5 | 6 |
-| 19th | +6 | Ability Score Improvement | 5 | 6 |
-| 20th | +6 | Skill Combo Improvement | 5 | 6 |
+| Level | Proficiency Bonus | Features | Mana Pool | Job Skills | Class Die |
+|---|---|---|---|---|---|
+| 1st | +2 | Skill Use, Strike, First Aid, Play Dead | 6 | 0 | d6 |
+| 2nd | +2 | Quick Study | 6 | 0 | d6 |
+| 3rd | +2 | Job Change, Job Path Job Skills | 6 | 2 | d6 |
+| 4th | +2 | Ability Score Improvement | 6 | 2 | d6 |
+| 5th | +3 | Skill Combo | 6 | 2 | d6 |
+| 6th | +3 | Adaptive, Job Path Job Skills | 8 | 3 | d8 |
+| 7th | +3 | Job Change | 8 | 3 | d8 |
+| 8th | +3 | Ability Score Improvement | 8 | 3 | d8 |
+| 9th | +4 | Quick Reflexes | 8 | 3 | d8 |
+| 10th | +4 | Resourceful, Job Path Job Skills | 8 | 4 | d8 |
+| 11th | +4 | Job Change | 10 | 4 | d10 |
+| 12th | +4 | Ability Score Improvement | 10 | 4 | d10 |
+| 13th | +5 | Novice's Grit | 10 | 4 | d10 |
+| 14th | +5 | Steadfast, Job Path Job Skills | 10 | 5 | d10 |
+| 15th | +5 | Job Change | 10 | 5 | d10 |
+| 16th | +5 | Ability Score Improvement | 12 | 5 | d12 |
+| 17th | +6 | Unbreakable Novice | 12 | 5 | d12 |
+| 18th | +6 | Peerless, Job Path Job Skills | 12 | 6 | d12 |
+| 19th | +6 | Ability Score Improvement | 12 | 6 | d12 |
+| 20th | +6 | Skill Combo Improvement | 12 | 6 | d12 |
 
 ## Class Features
 
@@ -72,6 +72,10 @@ As a Novice, you gain the following class features.
 ### 1st Level: Skill Use
 
 See *Skill Use*, above.
+
+### 1st Level: Strike
+
+You gain the Strike Job Skill (see *Base Job Skills*, below) — your basic weapon attack. It never costs Mana, and it's exempt from the Once per Turn rule: you can use it twice on your turn starting at 5th level, and three times starting at 20th level.
 
 ### 1st Level: First Aid
 
@@ -87,7 +91,7 @@ Choose 1 additional skill you don't already have proficiency in — you gain pro
 
 Then choose 1 skill in which you have proficiency. Your proficiency bonus is doubled for any ability check you make using that skill.
 
-### 3rd Level: Job Change — Second Class
+### 3rd Level: Job Change
 
 You undergo your first Job Change: choose a **Job Path** (see *Job Paths*, below). Your Job Path sets your Primary Ability, grants additional proficiencies, and opens up a pool of **Job Path Job Skills** unique to that path.
 
@@ -101,61 +105,69 @@ As normal. You gain this feature again at 8th, 12th, 16th, and 19th level.
 
 See *Skill Use*, above.
 
-### 6th Level: Super Novice
+### 6th Level: Adaptive
 
-Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
-
-You also choose 1 additional skill you don't already have proficiency in — you gain proficiency in it.
+Choose 1 additional skill you don't already have proficiency in — you gain proficiency in it.
 
 Then choose 1 skill in which you have proficiency and don't already have Expertise in. Your proficiency bonus is doubled for any ability check you make using that skill.
 
-### 7th Level: Job Change — Transcendent Second Class
+### 6th Level: Job Path Job Skills
+
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+
+### 7th Level: Job Change
 
 You undergo your second Job Change. See your Job Path's document for the feature this grants.
 
 ### 8th Level: Ability Score Improvement
 
-### 9th Level: Job Skill Advancement
+### 9th Level: Quick Reflexes
 
-Every Job Skill you know — your 2 base Job Skills (First Aid, Play Dead) and every Job Path Job Skill you've chosen so far — advances to **Rank 2** at the same time. This isn't a choice; every Job Skill you know goes up together, and none is left behind.
+Add your Proficiency Bonus to Initiative rolls.
 
-### 10th Level: Ultra Super Novice
+### 10th Level: Resourceful
 
 You add half your Proficiency Bonus (round down) to any ability check you make that doesn't already include your Proficiency Bonus.
 
-You also choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+### 10th Level: Job Path Job Skills
 
-### 11th Level: Job Change — Third Class
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+
+### 11th Level: Job Change
 
 You undergo your third Job Change. See your Job Path's document for the feature this grants.
 
 ### 12th Level: Ability Score Improvement
 
-### 13th Level: Job Skill Advancement
+### 13th Level: Novice's Grit
 
-As 9th level: every Job Skill you know advances to **Rank 3**.
+Choose one damage type. You gain resistance to that damage type. You can change the damage type you chose whenever you finish a Long Rest.
 
-### 14th Level: Elevated Novice
+### 14th Level: Steadfast
 
 Choose one ability score you don't already have saving throw proficiency in. You gain proficiency in saving throws using that ability score.
 
-You also choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+### 14th Level: Job Path Job Skills
 
-### 15th Level: Job Change — Fourth Class
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+
+### 15th Level: Job Change
 
 You undergo your fourth and final Job Change, reaching the top of your profession. See your Job Path's document for the feature this grants.
 
 ### 16th Level: Ability Score Improvement
 
-### 17th Level: Job Skill Advancement
+### 17th Level: Unbreakable Novice
 
-As 9th level: every Job Skill you know advances to **Rank 4**, its maximum.
+Once per Long Rest, when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.
 
-### 18th Level: Hyper Novice
+### 18th Level: Peerless
 
 Once per Long Rest, when you fail a saving throw, you can choose to succeed instead.
 
-You also choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+### 18th Level: Job Path Job Skills
+
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
 
 ### 19th Level: Ability Score Improvement
 
@@ -165,21 +177,33 @@ See *Skill Use*, above — you can now use 3 Job Skills per Action instead of 2.
 
 ## Job Skills
 
-Every Job Skill you know has a **Rank** from 1 to 4 that determines how strong it is. You never spend points or make choices to rank a Job Skill up — every Job Skill you know advances together, automatically, at 9th, 13th, and 17th level (see *Job Skill Advancement*, above).
+Every Job Skill you know has a **Rank** from 1 to 4 that determines how strong it is. You never spend points or make choices to rank a Job Skill up — every Job Skill you know advances together, automatically, alongside your Class Die: **Rank 1** at d6, **Rank 2** at d8, **Rank 3** at d10, and **Rank 4** at d12 (see *Class Die*, below). The one exception is Strike, which has no Rank — see *Base Job Skills*, below, for how it scales instead.
 
-**Base Job Skills (2, automatic).** You gain both base Job Skills without choosing, at 1st level: First Aid and Play Dead. See *Base Job Skills*, below, for their full rules text.
+**Class Die.** Many Job Skills deal damage or grant hit points/temporary hit points equal to a number of rolls of a shared **Class Die**, instead of each having its own separate die type. Your Class Die is **d6** at 1st level; it becomes **d8** at 6th level, **d10** at 11th level, and **d12** at 16th level (see the Class Die column on the Novice table). Where a Job Skill's text calls for rolls of your Class Die, use whatever size it currently is; the number of dice rolled doesn't change.
+
+**Base Job Skills (3, automatic).** You gain all 3 base Job Skills without choosing, at 1st level: Strike, First Aid, and Play Dead. See *Base Job Skills*, below, for their full rules text.
 
 **Job Path Job Skills (6 total).** You choose 2 at 3rd level and 1 more each at 6th, 10th, 14th, and 18th level, all from your Job Path's Job Skill pool.
 
-Because Job Skill Advancement happens at 9th, 13th, and 17th level, all 8 Job Skills you know (2 base + 6 Job Path) reach **Rank 4** together at 17th level — none of them ever falls behind.
+Because Rank now advances alongside your Class Die, all 8 Ranked Job Skills you know (First Aid, Play Dead, and 6 Job Path Job Skills) reach **Rank 4** together at 16th level — none of them ever falls behind.
 
-**Swapping Job Skills.** Whenever you gain a Novice level, you can swap out 1 Job Path Job Skill you know for a different one from your Job Path's pool. The replacement enters at the same Rank your other Job Path Job Skills are currently at. Your 2 base Job Skills (First Aid and Play Dead) can't be swapped.
+**Swapping Job Skills.** Whenever you gain a Novice level, you can swap out 1 Job Path Job Skill you know for a different one from your Job Path's pool. The replacement enters at the same Rank your other Job Path Job Skills are currently at. Your 3 base Job Skills (Strike, First Aid, and Play Dead) can't be swapped.
 
 **Once per Turn.** You can't use the same named Job Skill more than once on the same turn, no matter its Casting Time — this applies to every Job Skill you know (base or Job Path), not just ones you'd otherwise repeat through Skill Combo. Some Job Skills are written as an exception to this rule; where a Job Skill's own text says you can use it more than once per turn, that overrides this rule for that Job Skill only.
 
 ## Base Job Skills
 
-The 2 Job Skills below are the only ones that exist so far — every Job Path grants its own additional Job Skills once that path is written (see *Job Paths*, below).
+The 3 Job Skills below are the only ones that exist so far — every Job Path grants its own additional Job Skills once that path is written (see *Job Paths*, below).
+
+### Strike
+*Job Skill*
+
+**Range:** 5 feet
+**Mana Cost:** None
+
+You make one melee attack — with a weapon or unarmed strike — against a creature within range. You can use your Strength or Dexterity modifier (your choice) for the attack roll and damage roll. On a hit, the target takes damage equal to 1 roll of your Class Die plus that modifier.
+
+*Exception to Once per Turn.* You can use Strike more than once on your turn — twice starting at 5th level, and three times starting at 20th level.
 
 ### First Aid
 *Job Skill*
@@ -187,9 +211,9 @@ The 2 Job Skills below are the only ones that exist so far — every Job Path gr
 **Range:** Touch
 **Mana Cost:** 1 (free once per Short Rest)
 
-You touch a creature within melee range — yourself or an ally — and channel restorative energy into it. The target regains **2d8** hit points.
+You touch a creature within melee range — yourself or an ally — and channel restorative energy into it. The target regains hit points equal to 2 rolls of your Class Die.
 
-*Job Skill Advancement.* The healing increase: **4d8** at 9th level, **6d8** at 13th level, and **8d8** at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills*, above.
 
 ### Play Dead
 *Job Skill*
@@ -197,9 +221,9 @@ You touch a creature within melee range — yourself or an ally — and channel 
 **Casting Time:** 1 minute
 **Mana Cost:** None (usable once per Short Rest)
 
-You lie down and play dead, feigning death for the full minute. At the end of it, you regain **1** Mana and **1d8** hit points.
+You lie down and play dead, feigning death for the full minute. At the end of it, you regain a number of Mana equal to half the number of sides on your Class Die (**3** at d6, **4** at d8, **5** at d10, **6** at d12), and that many rolls of your Class Die in hit points. (Example: your Class Die is d6 — you regain **3** Mana and **3d6** hit points.)
 
-*Job Skill Advancement.* The Mana and hit points regained increase to **2** Mana and **2d8** hit points at 9th level, **2** Mana and **3d8** hit points at 13th level, and **3** Mana and **4d8** hit points at 17th level.
+*Job Skill Advancement.* Scales automatically with your Class Die — see *Job Skills*, above.
 
 ## Job Paths
 
