@@ -13,12 +13,12 @@ The Novice is built around the class-change ladder from *Ragnarok Online* (and i
 | **Primary Ability** | Determined by your Job Path, chosen at 3rd level |
 | **Hit Point Die** | D6 per Novice level |
 | **Saving Throw Proficiencies** | Dexterity, Constitution |
-| **Skill Proficiencies** | Choose 2: Acrobatics, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Persuasion, Stealth, Survival (plus 1 more proficiency and 1 Expertise at 2nd level and again at 6th level — see *Quick Study* and *Adaptive*) |
+| **Skill Proficiencies** | Choose 2: Acrobatics, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Persuasion, Stealth, Survival |
 | **Tool Proficiencies** | Choose 1: any artisan's tools or any gaming set |
 | **Weapon Proficiencies** | Simple weapons (additional proficiencies granted by your Job Path — see *Job Paths*) |
 | **Armor Training** | Light armor (additional training granted by your Job Path) |
 
-**Starting Equipment.** A simple weapon, leather armor, an explorer's pack, and the standard starting gold for a 2024 character.
+**Starting Equipment.** A simple weapon, leather armor, and an explorer's pack, or **100 GP** to buy your own equipment.
 
 ## Mana
 
@@ -95,7 +95,7 @@ Then choose 1 skill in which you have proficiency. Your proficiency bonus is dou
 
 You undergo your first Job Change: choose a **Job Path** (see *Job Paths*, below). Your Job Path sets your Primary Ability, grants additional proficiencies, and opens up a pool of **Job Path Job Skills** unique to that path.
 
-Choose **2** Job Path Job Skills from your Job Path's pool. Each begins at **Rank 1** (see *Job Skills*, below).
+Choose **2** Job Path Job Skills from your Job Path's pool. Each begins at your current Rank (see *Job Skills*, below).
 
 ### 4th Level: Ability Score Improvement
 
@@ -113,7 +113,7 @@ Then choose 1 skill in which you have proficiency and don't already have Experti
 
 ### 6th Level: Job Path Job Skills
 
-Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at your current Rank.
 
 ### 7th Level: Job Change
 
@@ -131,7 +131,7 @@ You add half your Proficiency Bonus (round down) to any ability check you make t
 
 ### 10th Level: Job Path Job Skills
 
-Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at your current Rank.
 
 ### 11th Level: Job Change
 
@@ -149,7 +149,7 @@ Choose one ability score you don't already have saving throw proficiency in. You
 
 ### 14th Level: Job Path Job Skills
 
-Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at your current Rank.
 
 ### 15th Level: Job Change
 
@@ -167,7 +167,7 @@ Once per Long Rest, when you fail a saving throw, you can choose to succeed inst
 
 ### 18th Level: Job Path Job Skills
 
-Choose **1** additional Job Path Job Skill from your Job Path's pool, at Rank 1.
+Choose **1** additional Job Path Job Skill from your Job Path's pool, at your current Rank.
 
 ### 19th Level: Ability Score Improvement
 
@@ -201,9 +201,9 @@ The 3 Job Skills below are the only ones that exist so far — every Job Path gr
 **Range:** 5 feet
 **Mana Cost:** None
 
-You make one melee attack — with a weapon or unarmed strike — against a creature within range. You can use your Strength or Dexterity modifier (your choice) for the attack roll and damage roll. On a hit, the target takes damage equal to 1 roll of your Class Die plus that modifier.
+You make one melee attack — with a weapon or unarmed strike — against a creature within range. You can use your Strength or Dexterity modifier (your choice) for the attack roll and damage roll. On a hit, the target takes damage — of the weapon's type, or Bludgeoning if unarmed — equal to 1 roll of your Class Die plus that modifier.
 
-*Exception to Once per Turn.* You can use Strike more than once on your turn — twice starting at 5th level, and three times starting at 20th level.
+*Exception to Once per Turn.* You can use Strike more than once on your turn — twice starting at 5th level, and three times starting at 20th level. (This draws from your Skill Combo allowance — see *Skill Use*, above — it doesn't grant extra Job Skill uses on top of it.)
 
 ### First Aid
 *Job Skill*
@@ -241,7 +241,7 @@ At 3rd level, you choose a Job Path, drawn from the six primary trades of the No
 | Rogue | Rogue | Stalker | Shadow Chaser | Abyss Chaser |
 | Hunter | Hunter | Sniper | Ranger | Windhawk |
 | Bard | Bard/Dancer | Minstrel/Gypsy | Maestro/Wanderer | Troubadour/Trouvère |
-| Blacksmith | Blacksmith | Mastersmith | Mechanic | Meister |
+| Blacksmith | Blacksmith | Whitesmith | Mechanic | Meister |
 | Alchemist | Alchemist | Biochemist | Geneticist | Biolo |
 | Super Novice | — | — | — | — |
 

@@ -44,7 +44,7 @@ As a Knight, you gain the following features at each of your Job Changes.
 
 ## Knight Job Skills
 
-The 9 Job Skills below are the Knight Job Path's pool. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more each at 6th, 10th, 14th, and 18th level (6 total), each starting at Rank 1 — and every one you know advances in Rank alongside your Class Die (see *Job Skills* in the Novice class document).
+The 9 Job Skills below are the Knight Job Path's pool. As described under *Job Skills* in the Novice class document, you choose **2** of these at 3rd level and **1** more each at 6th, 10th, 14th, and 18th level (6 total), each starting at your current Rank — and every one you know advances in Rank alongside your Class Die (see *Job Skills* in the Novice class document).
 
 ### Focus Strike
 *Job Skill*
