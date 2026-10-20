@@ -99,8 +99,8 @@
 | Sehanine | นครลวงตาใน Issylra | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
 | Torog | ใต้ Vasselheim (Issylra) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
 | Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Utesspire (Issylra) |
-| Asmodeus | Ank'Harel (Marquet) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ |
-| Ioun | Yios (Marquet) | กลมกลืนในเมืองวิจัย |
+| Asmodeus | Emon (Tal'Dorei) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
+| Ioun | Emon (Tal'Dorei) | กลมกลืนในสถาบัน Emon (ย้ายตามสถาบัน, 2026-10-20) |
 | Melora | ป่า Aeshanadoor (Marquet) | ซ่อนในป่าดิบ |
 | The Great Mother | ใต้ทะเลทราย Rumedam (Marquet) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
 | Tharizdun | ก้นทะเลของทวีปที่จม (Shattered Teeth) | 🔒 ถูกล่ามโซ่ โซ่กำลังอ่อนลง |

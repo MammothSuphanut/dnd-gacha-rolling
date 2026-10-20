@@ -1,0 +1,386 @@
+[
+ {
+  "name": "Zadash",
+  "x": 1397.8,
+  "y": 436.7,
+  "population": 150
+ },
+ {
+  "name": "Hupperdook",
+  "x": 1438.9,
+  "y": 378.9,
+  "population": 50
+ },
+ {
+  "name": "Trostenwald",
+  "x": 1408.9,
+  "y": 503.3,
+  "population": 10
+ },
+ {
+  "name": "Alfield",
+  "x": 1413.3,
+  "y": 482.2,
+  "population": 8
+ },
+ {
+  "name": "Icehaven",
+  "x": 1283.3,
+  "y": 316.7,
+  "population": 12
+ },
+ {
+  "name": "Druvenlode",
+  "x": 1373.3,
+  "y": 358.9,
+  "population": 15
+ },
+ {
+  "name": "Nogvurot",
+  "x": 1425.6,
+  "y": 336.7,
+  "population": 12
+ },
+ {
+  "name": "Yrrosa",
+  "x": 1327.8,
+  "y": 353.3,
+  "population": 10
+ },
+ {
+  "name": "Pride's Gall",
+  "x": 1286.7,
+  "y": 388.9,
+  "population": 8
+ },
+ {
+  "name": "Kamordah",
+  "x": 1333.3,
+  "y": 418.9,
+  "population": 8
+ },
+ {
+  "name": "Felderwin",
+  "x": 1444.4,
+  "y": 438.9,
+  "population": 6
+ },
+ {
+  "name": "Wuyun Gates",
+  "x": 1392.2,
+  "y": 548.9,
+  "population": 6
+ },
+ {
+  "name": "Talonstadt",
+  "x": 1486.7,
+  "y": 435.6,
+  "population": 6
+ },
+ {
+  "name": "Bladegarden",
+  "x": 1505.6,
+  "y": 413.3,
+  "population": 5
+ },
+ {
+  "name": "Othe",
+  "x": 1308.9,
+  "y": 500.0,
+  "population": 5
+ },
+ {
+  "name": "Bazzoxan",
+  "x": 1600.0,
+  "y": 402.2,
+  "population": 15
+ },
+ {
+  "name": "Ghostwall",
+  "x": 1653.3,
+  "y": 446.7,
+  "population": 8
+ },
+ {
+  "name": "Asarius",
+  "x": 1547.8,
+  "y": 446.7,
+  "population": 10
+ },
+ {
+  "name": "Galgarad",
+  "x": 1564.4,
+  "y": 488.9,
+  "population": 8
+ },
+ {
+  "name": "Dumaran",
+  "x": 1591.1,
+  "y": 524.4,
+  "population": 6
+ },
+ {
+  "name": "Nicodranas",
+  "x": 1366.7,
+  "y": 606.7,
+  "population": 150
+ },
+ {
+  "name": "Port Zoon",
+  "x": 1324.4,
+  "y": 591.1,
+  "population": 60
+ },
+ {
+  "name": "Tussoa",
+  "x": 1233.3,
+  "y": 481.1,
+  "population": 50
+ },
+ {
+  "name": "Feolinn",
+  "x": 1320.0,
+  "y": 555.6,
+  "population": 15
+ },
+ {
+  "name": "Palma Flora",
+  "x": 1236.7,
+  "y": 570.0,
+  "population": 8
+ },
+ {
+  "name": "Bisaft Port",
+  "x": 1163.3,
+  "y": 572.2,
+  "population": 6
+ },
+ {
+  "name": "Brokenbank",
+  "x": 1202.2,
+  "y": 605.6,
+  "population": 5
+ },
+ {
+  "name": "Palebank Village",
+  "x": 1466.7,
+  "y": 172.2,
+  "population": 2
+ },
+ {
+  "name": "Kymal",
+  "x": 842.2,
+  "y": 474.4,
+  "population": 1500
+ },
+ {
+  "name": "Westruun",
+  "x": 891.1,
+  "y": 431.1,
+  "population": 1000
+ },
+ {
+  "name": "Stilben",
+  "x": 955.6,
+  "y": 516.7,
+  "population": 800
+ },
+ {
+  "name": "Drynna",
+  "x": 986.7,
+  "y": 431.1,
+  "population": 120
+ },
+ {
+  "name": "Port Daxio",
+  "x": 783.3,
+  "y": 364.4,
+  "population": 150
+ },
+ {
+  "name": "Shalesteps",
+  "x": 733.3,
+  "y": 441.1,
+  "population": 90
+ },
+ {
+  "name": "Turst Fields",
+  "x": 955.6,
+  "y": 425.6,
+  "population": 60
+ },
+ {
+  "name": "Jorenn Village",
+  "x": 888.9,
+  "y": 388.9,
+  "population": 40
+ },
+ {
+  "name": "Emerald Outpost",
+  "x": 800.0,
+  "y": 505.6,
+  "population": 50
+ },
+ {
+  "name": "New O'Noa",
+  "x": 733.3,
+  "y": 505.6,
+  "population": 70
+ },
+ {
+  "name": "Zephrah",
+  "x": 933.3,
+  "y": 472.2,
+  "population": 30
+ },
+ {
+  "name": "Lyrengorn",
+  "x": 868.9,
+  "y": 302.2,
+  "population": 20
+ },
+ {
+  "name": "Hdar-Fye",
+  "x": 807.8,
+  "y": 711.1,
+  "population": 80
+ },
+ {
+  "name": "Ezordam-Haar",
+  "x": 866.7,
+  "y": 711.1,
+  "population": 100
+ },
+ {
+  "name": "Rybad-Kol",
+  "x": 911.1,
+  "y": 726.7,
+  "population": 70
+ },
+ {
+  "name": "Ortem-Vellak",
+  "x": 933.3,
+  "y": 680.0,
+  "population": 60
+ },
+ {
+  "name": "Muldire",
+  "x": 488.9,
+  "y": 290.0,
+  "population": 10
+ },
+ {
+  "name": "Josgren's Hollow",
+  "x": 494.4,
+  "y": 374.4,
+  "population": 15
+ },
+ {
+  "name": "Shorecomb",
+  "x": 441.1,
+  "y": 411.1,
+  "population": 15
+ },
+ {
+  "name": "Seedfeld",
+  "x": 314.4,
+  "y": 430.0,
+  "population": 60
+ },
+ {
+  "name": "Ivaadel",
+  "x": 185.6,
+  "y": 563.3,
+  "population": 120
+ },
+ {
+  "name": "Shandal",
+  "x": 455.6,
+  "y": 866.7,
+  "population": 50
+ },
+ {
+  "name": "Shammel",
+  "x": 428.9,
+  "y": 796.7,
+  "population": 30
+ },
+ {
+  "name": "Eish-Allay",
+  "x": 144.4,
+  "y": 863.3,
+  "population": 20
+ },
+ {
+  "name": "Sapiro Haven",
+  "x": 185.6,
+  "y": 873.3,
+  "population": 25
+ },
+ {
+  "name": "Goradire",
+  "x": 220.0,
+  "y": 888.9,
+  "population": 20
+ },
+ {
+  "name": "Otaladume",
+  "x": 124.4,
+  "y": 952.2,
+  "population": 15
+ },
+ {
+  "name": "Evishi",
+  "x": 227.8,
+  "y": 944.4,
+  "population": 15
+ },
+ {
+  "name": "King's Fall",
+  "x": 306.7,
+  "y": 972.2,
+  "population": 10
+ },
+ {
+  "name": "Bassuras",
+  "x": 377.8,
+  "y": 992.2,
+  "population": 15
+ },
+ {
+  "name": "Loonpur",
+  "x": 300.0,
+  "y": 1027.8,
+  "population": 10
+ },
+ {
+  "name": "Nadigarh",
+  "x": 357.8,
+  "y": 1033.3,
+  "population": 10
+ },
+ {
+  "name": "Barinak",
+  "x": 466.7,
+  "y": 1033.3,
+  "population": 20
+ },
+ {
+  "name": "Artati",
+  "x": 480.0,
+  "y": 1061.1,
+  "population": 25
+ },
+ {
+  "name": "Qorco",
+  "x": 433.3,
+  "y": 1105.6,
+  "population": 15
+ },
+ {
+  "name": "Gelvar",
+  "x": 307.8,
+  "y": 1094.4,
+  "population": 15
+ }
+]

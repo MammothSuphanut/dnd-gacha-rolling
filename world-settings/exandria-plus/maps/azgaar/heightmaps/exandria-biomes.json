@@ -1,0 +1,20 @@
+[
+  {
+    "id": 13,
+    "name": "Xhorhas Badlands",
+    "color": "#a08660",
+    "habitability": 15
+  },
+  {
+    "id": 14,
+    "name": "Greying Wildlands",
+    "color": "#6f6680",
+    "habitability": 6
+  },
+  {
+    "id": 15,
+    "name": "Rosohna Blight",
+    "color": "#8e2b2b",
+    "habitability": 2
+  }
+]
