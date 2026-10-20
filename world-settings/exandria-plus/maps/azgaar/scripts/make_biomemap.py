@@ -22,7 +22,7 @@ sat = (s.max(-1) - s.min(-1)) / np.maximum(s.max(-1), 1)
 hm = np.asarray(Image.open(heightmap).convert("L").resize((W, H), Image.NEAREST)).astype(float)
 land = hm >= 52
 # mountain score from the heightmap (same pipeline that made the relief)
-mountain = hm >= 95
+mountain = hm >= 118  # mountain cores (heightmap peaks raised to 220 for Azgaar mountain icons)
 
 # latitude bands (1080-preview coords) with a wobbly edge so they don't read as straight lines
 rng = np.random.default_rng(7)
@@ -97,9 +97,9 @@ grey = ndi.gaussian_filter(grey.astype(np.float32), 8) > 0.5
 cls[grey & land & (cls != 11)] = 14
 cls[ndi.binary_dilation(xhorhas & land & ((R - G) > 45), iterations=3) & land] = 15
 
-# Eiselcross is all ice and tundra: the pale sun-washed patches on the source read as savanna/grassland
+# Eiselcross is all ice: the pale sun-washed patches on the source read as savanna/grassland/tundra
 eisel = box(1080, 36, 1287, 185) & land
-cls[eisel & np.isin(cls, [1, 2, 3, 4, 5, 6, 7, 8, 12])] = 10
+cls[eisel & np.isin(cls, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12])] = 11
 
 # lava flow across Foren (Eiselcross), traced from the source map; points in 1800x1200 Azgaar coords
 LAVA = [(1326, 70), (1323, 79), (1317, 89), (1313, 102), (1317, 111), (1324, 122), (1334, 133), (1338, 140),

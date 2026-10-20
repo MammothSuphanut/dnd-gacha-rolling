@@ -60,7 +60,9 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 - Map size: **1800 × 1200** px (สัดส่วน 3:2 เท่าแผนที่ต้นฉบับ)
 - Burgs number: **250** (เมืองสุ่มเพิ่มจากเมืองที่มีชื่อ — โลกชายแดน ไม่ต้องหนาแน่น)
 - Points number: **15** (300K cells — patch เพิ่มขั้น 14 = 200K / 15 = 300K จากเดิมสูงสุด 100K เพื่อให้ชายฝั่ง แหลมแคบ และเกาะเล็กออกมาครบ · generate ราว 20–30 วินาที)
-- Heightmap: **Exandria**
+- Heightmap: **Exandria** — ยอดเขาสูงสุด 220/255 (Azgaar ~86) ให้แนวเขาเกิน 71 ซึ่งเป็นเกณฑ์ไอคอนภูเขา (~12% ของแผ่นดิน)
+- Relief rules (Style/Relief, เก็บใน `.map` และค่า default ใน patch): ภูเขาขนาดไอคอน 9–16 (เล็ก ถี่ แบบแผนที่ต้นฉบับ) · ภูเขาหิมะเฉพาะอุณหภูมิ ≤ −12°C
+- น้ำแข็ง (ice layer): แผนที่ที่มี biome map วาดน้ำแข็งเฉพาะ cell ที่ biome map เป็น Glacier ไม่ใช่ตามความหนาวของยอดเขา (ไม่งั้นแนวเขาทั้งหมดจะขาวโพลน)
 
 **Configure World**
 - Equator **27°C** · North Pole **-30°C** · South Pole **-20°C**

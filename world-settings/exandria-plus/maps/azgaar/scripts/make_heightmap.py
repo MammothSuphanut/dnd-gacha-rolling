@@ -108,7 +108,7 @@ dist_sea = ndi.distance_transform_edt(~land)
 
 h = np.zeros((H, W), float)
 inland = np.clip(dist_land / (40 * k), 0, 1)
-h[land] = 57 + 10 * inland[land] + 110 * np.clip(mount[land] - 0.2, 0, 1) ** 1.2
+h[land] = 57 + 10 * inland[land] + 200 * np.clip(mount[land] - 0.2, 0, 1) ** 1.2  # peaks reach Azgaar 71+ (mountain icons)
 sea_depth = np.clip(dist_sea / (60 * k), 0, 1)
 # shallow water right at the coast sits just under the land threshold (51) so Azgaar's cell
 # averaging keeps narrow land and islets instead of drowning them
