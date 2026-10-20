@@ -167,36 +167,121 @@
  {
   "text": "Biessel",
   "x": 1223.0,
-  "y": 63.0
+  "y": 63.0,
+  "size": 60
  },
  {
   "text": "Gelier",
   "x": 1247.0,
-  "y": 117.0
+  "y": 117.0,
+  "size": 60
  },
  {
   "text": "Schneescel",
   "x": 1276.0,
-  "y": 155.0
+  "y": 155.0,
+  "size": 60
  },
  {
   "text": "Frostbogen",
   "x": 1309.0,
-  "y": 184.0
+  "y": 184.0,
+  "size": 60
  },
  {
   "text": "Taergoss",
   "x": 1369.0,
-  "y": 198.0
+  "y": 198.0,
+  "size": 60
  },
  {
   "text": "Kaltsel",
   "x": 1421.0,
-  "y": 137.0
+  "y": 137.0,
+  "size": 60
  },
  {
   "text": "Dampfkan",
   "x": 1365.0,
-  "y": 61.0
+  "y": 61.0,
+  "size": 60
+ },
+ {
+  "text": "Far Hharom",
+  "x": 1694.6,
+  "y": 332.2,
+  "size": 45
+ },
+ {
+  "text": "Barbed Fields",
+  "x": 1623.4,
+  "y": 437.5,
+  "size": 45
+ },
+ {
+  "text": "Iothia Moorland",
+  "x": 1594.0,
+  "y": 508.0,
+  "size": 45
+ },
+ {
+  "text": "Ebonglass Massif",
+  "x": 1718.6,
+  "y": 386.8,
+  "size": 45
+ },
+ {
+  "text": "Strathfell",
+  "x": 1738.9,
+  "y": 396.4,
+  "size": 45
+ },
+ {
+  "text": "Bromkiln Hills",
+  "x": 1326.3,
+  "y": 439.5,
+  "size": 45
+ },
+ {
+  "text": "Mordant Isle",
+  "x": 1731.0,
+  "y": 473.0,
+  "size": 45
+ },
+ {
+  "text": "Many Hosts of Igrathad",
+  "x": 1512.0,
+  "y": 521.0,
+  "size": 45
+ },
+ {
+  "text": "Vide Cay",
+  "x": 1232.5,
+  "y": 633.9,
+  "size": 45
+ },
+ {
+  "text": "Rumblecusp",
+  "x": 1312.7,
+  "y": 668.3,
+  "size": 45
+ },
+ {
+  "text": "Urukayxl",
+  "x": 1366.9,
+  "y": 696.1,
+  "size": 45
+ },
+ {
+  "text": "Diver's Grave",
+  "x": 1110.0,
+  "y": 593.1,
+  "size": 45
+ },
+ {
+  "text": "Everplume",
+  "x": 1105.9,
+  "y": 500.7,
+  "size": 45
  }
 ]

@@ -86,7 +86,7 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 | `exandria-plus-political.png` | สีประเทศ + ชื่อ (ดินแดนไร้รัฐเป็นสีขาว) |
 | `exandria-plus-physical.png` | ความสูง (heightmap สี) |
 
-สร้างใหม่: เปิด `.map` แล้วรันใน console (เปลี่ยน layer ตามต้องการก่อน):
+สร้างใหม่: เปิด `.map` แล้วรันใน console (เปลี่ยน layer ตามต้องการก่อน) — Azgaar วาดชื่อเมืองเฉพาะที่อยู่ในจอและตามระดับซูม ก่อน export จึงต้องเปิด `options.app.labels.showAll = true` (ชื่อชื่อถนนปิดไว้ใน `.map` แล้ว: label group ประเภท route `active=false`) แล้วซูมเต็มแผนที่ (`resetZoom(0)`) ให้ชื่อทุกเมืองขึ้น:
 
 ```js
 const url = await Services.ExportMap.getRegionImage({ x0: 0, y0: 0, x1: 1800, y1: 1200, width: 1800, height: 1200 }, 5);
@@ -144,13 +144,13 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 - ชื่อที่มี `(TBD)` = canon ยังไม่ได้ตั้งชื่อ (อาณาจักรจีน, แคว้นญี่ปุ่น) — แก้ในไฟล์แล้ว generate ใหม่
 
 ### เมือง (`exandria-burgs.json`)
-- เมืองหลวง 17 แห่ง (จาก states) + เมือง/สถานที่มีชื่อ 74 แห่ง (รวมจุดบน Eiselcross: Syrinlya, Balenpost, Vurmas, Allowak's Sanctuary, จุดตก Aeor, Salsvault, Fortress of the Dead Jarl, Tomb of the Worm, Garden of Stone, Mutalos) วางที่ cell แผ่นดินใกล้พิกัดที่สุด · พิกัดเมืองใน Wildemount มาจาก `pin` ของการ์ดใน `world-settings/exandria/manifest.json` (×18, ×12 = พิกัด Azgaar) ซึ่งตรงกับไอคอนเมืองบนแผนที่ต้นฉบับ · `"coast": true` = บังคับให้อยู่ cell ติดทะเล (Palebank, Syrinlya, Balenpost, Vurmas) · เมืองมีชื่อที่ติดทะเลได้เป็นท่าเรือแม้ทะเลเย็นจัด และเส้นทางเรือแล่นผ่านทะเลน้ำแข็งได้ (ช้ากว่า 3 เท่า — เรือตัดน้ำแข็ง) เช่น Palebank ↔ Syrinlya · ประชากรตามไฟล์ (คนจริง ไม่ขึ้นกับ population scale) ตาม Map Brief หัวข้อ 3
+- เมืองหลวง 17 แห่ง (จาก states) + เมือง/สถานที่มีชื่อ 116 แห่ง (Wildemount ครบทุกการ์ดใน canon: เมือง/หมู่บ้าน/ป้อมมีประชากรตามขนาด, ซาก/เหมือง/จุดสำคัญเป็นจุดประชากร 50 คน) (รวมจุดบน Eiselcross: Syrinlya, Balenpost, Vurmas, Allowak's Sanctuary, จุดตก Aeor, Salsvault, Fortress of the Dead Jarl, Tomb of the Worm, Garden of Stone, Mutalos) วางที่ cell แผ่นดินใกล้พิกัดที่สุด · พิกัดเมืองใน Wildemount มาจาก `pin` ของการ์ดใน `world-settings/exandria/manifest.json` (×18, ×12 = พิกัด Azgaar) ซึ่งตรงกับไอคอนเมืองบนแผนที่ต้นฉบับ · `"coast": true` = บังคับให้อยู่ cell ติดทะเล (Palebank, Syrinlya, Balenpost, Vurmas) · เมืองมีชื่อที่ติดทะเลได้เป็นท่าเรือแม้ทะเลเย็นจัด และเส้นทางเรือแล่นผ่านทะเลน้ำแข็งได้ (ช้ากว่า 3 เท่า — เรือตัดน้ำแข็ง) เช่น Palebank ↔ Syrinlya · ประชากรตามไฟล์ (คนจริง ไม่ขึ้นกับ population scale) ตาม Map Brief หัวข้อ 3
 - เมืองสุ่ม 250 แห่งเติมเฉพาะในเขต `region` ของประเทศ — ดินแดนไร้รัฐไม่มีเมืองสุ่ม (มีแค่เมืองที่มีชื่อ เช่น Palebank)
 
 ### วัฒนธรรม ศาสนา ชื่อภูมิภาค
 - **วัฒนธรรม**: cell บนบกเป็นของวัฒนธรรมแรกในลิสต์ที่ `region` ครอบ (ลำดับสำคัญ: ชนเผ่า → นครรัฐเล็ก → รัฐใหญ่) ไม่มี region ไหนครอบ = วัฒนธรรมที่ศูนย์กลางใกล้สุด · ภาษาเมืองสุ่มตาม name base: Dwendalian=German, Kryn=Dark Elven, Clovis=Italian, Tal'Dorei=English, Othanzian=Korean, Celestial=Chinese, Utesspire=Japanese, Harelian=Roman, Jrusari=Vietnamese (ใกล้ไทยที่สุดที่ Azgaar มี), Yiosi=Karnataka, Ehrvarian=Greek, Shammeli=Nordic ฯลฯ
 - **ศาสนา**: ทุก cell นับถือศาสนาประจำวัฒนธรรมของตน (`religion` ในไฟล์วัฒนธรรม) · เทพตาม canon "ที่อยู่ของเทพ" ที่มีระบุ (Bahamut, Luxon, Erathis, Pelor, Moradin, Bane, Sarenrae, Titania, Melora, Great Mother, Seren) — ศาสนาที่ deity ว่าง (Way of Heaven, Shrines of the Kami, Imperial Cult, Lambent Path, Old Blood ฯลฯ) และศาสนาของ Corellon ที่ Syngorn เป็น**ข้อเสนอ ยังไม่ใช่ canon**
-- **ชื่อภูมิภาค**: added labels จาก `exandria-labels.json` ใส่ตอนสร้างแผนที่
+- **ชื่อภูมิภาค**: added labels จาก `exandria-labels.json` ใส่ตอนสร้างแผนที่ · `size` = ขนาดตัวอักษร % ของกลุ่ม (30–300) ใช้กับชื่อเล็ก เช่น เกาะ Eiselcross 60, ภูมิประเทศย่อยของ Wildemount 45
 
 ### ข้อจำกัดที่รู้แล้ว
 - เกาะจิ๋วระดับจุด (เล็กกว่า ~1 cell) ยังหาย เช่นเกาะหินเล็ก ๆ รอบ Shattered Teeth

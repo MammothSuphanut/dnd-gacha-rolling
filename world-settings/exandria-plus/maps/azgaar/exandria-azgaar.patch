@@ -27,7 +27,7 @@ index 1a418e0..3b7611d 100644
  
  export const DENSITY_STEPS = Object.keys(POINTS_BY_DENSITY).map(Number);
 diff --git a/src/data/precreated-heightmaps.ts b/src/data/precreated-heightmaps.ts
-index e942550..fece8b8 100644
+index e942550..7a6bcc7 100644
 --- a/src/data/precreated-heightmaps.ts
 +++ b/src/data/precreated-heightmaps.ts
 @@ -28,12 +28,87 @@ export const precreatedHeightmaps: Record<string, PrecreatedHeightmap> = {
@@ -72,7 +72,7 @@ index e942550..fece8b8 100644
 +  religion: string;
 +};
 +export type PrecreatedReligion = { name: string; deity: string | null; type: string; form: string; color: string };
-+export type PrecreatedLabel = { text: string; x: number; y: number };
++export type PrecreatedLabel = { text: string; x: number; y: number; size?: number }; // size: % of the group font
 +
 +/** a named settlement shipped with a precreated heightmap; population in thousands */
 +export type PrecreatedBurg = { name: string; x: number; y: number; population: number; coast?: boolean };
@@ -120,15 +120,16 @@ index e942550..fece8b8 100644
  
  // temp legacy compatibility
 diff --git a/src/generators/added-labels.ts b/src/generators/added-labels.ts
-index 9813b75..2bf7b55 100644
+index 9813b75..4217300 100644
 --- a/src/generators/added-labels.ts
 +++ b/src/generators/added-labels.ts
-@@ -17,6 +17,8 @@ export interface AddedLabel {
+@@ -17,6 +17,9 @@ export interface AddedLabel {
  export class AddedLabelsModule {
    initiate(): void {
      pack.addedLabels = []; // empty on map creation
 +    const group = window.precreatedLabels?.length ? Labels.findGroup("", "added").name : "";
-+    for (const { text, x, y } of window.precreatedLabels ?? []) this.add({ x, y, label: { text, group } });
++    for (const { text, x, y, size } of window.precreatedLabels ?? [])
++      this.add({ x, y, label: size ? { text, group, fontSize: size } : { text, group } });
    }
  
    get(i: number): AddedLabel | undefined {

@@ -452,5 +452,260 @@
   "x": 1309.6,
   "y": 88.9,
   "population": 0.05
+ },
+ {
+  "name": "Odessloe",
+  "x": 1395.0,
+  "y": 329.4,
+  "population": 1
+ },
+ {
+  "name": "Blumenthal",
+  "x": 1402.6,
+  "y": 356.2,
+  "population": 0.5
+ },
+ {
+  "name": "Berleben",
+  "x": 1413.9,
+  "y": 406.3,
+  "population": 2
+ },
+ {
+  "name": "Deastok",
+  "x": 1333.0,
+  "y": 465.0,
+  "population": 6
+ },
+ {
+  "name": "Bysaes Tyl",
+  "x": 1362.3,
+  "y": 272.1,
+  "population": 5
+ },
+ {
+  "name": "Grimgolir",
+  "x": 1506.1,
+  "y": 356.7,
+  "population": 10
+ },
+ {
+  "name": "Yardel",
+  "x": 1489.4,
+  "y": 332.0,
+  "population": 0.3
+ },
+ {
+  "name": "Shadycreek Run",
+  "x": 1454.1,
+  "y": 314.7,
+  "population": 2
+ },
+ {
+  "name": "Rockguard Garrison",
+  "x": 1522.9,
+  "y": 377.9,
+  "population": 1
+ },
+ {
+  "name": "Ashguard Garrison",
+  "x": 1511.6,
+  "y": 416.2,
+  "population": 1
+ },
+ {
+  "name": "Gwardan",
+  "x": 1198.2,
+  "y": 438.5,
+  "population": 8
+ },
+ {
+  "name": "Charis",
+  "x": 1542.1,
+  "y": 565.2,
+  "population": 0.3
+ },
+ {
+  "name": "Urzin",
+  "x": 1543.7,
+  "y": 389.7,
+  "population": 1.5
+ },
+ {
+  "name": "Jigow",
+  "x": 1588.7,
+  "y": 381.9,
+  "population": 2,
+  "coast": true
+ },
+ {
+  "name": "New Haxon",
+  "x": 1669.1,
+  "y": 536.4,
+  "population": 2
+ },
+ {
+  "name": "Rotthold",
+  "x": 1645.2,
+  "y": 569.1,
+  "population": 0.8
+ },
+ {
+  "name": "Boroftkrah",
+  "x": 1529.1,
+  "y": 296.7,
+  "population": 1
+ },
+ {
+  "name": "Uraliss",
+  "x": 1540.0,
+  "y": 235.2,
+  "population": 0.5
+ },
+ {
+  "name": "Vol'antim",
+  "x": 1291.1,
+  "y": 435.7,
+  "population": 0.3
+ },
+ {
+  "name": "Darktow",
+  "x": 1086.0,
+  "y": 665.1,
+  "population": 3,
+  "coast": true
+ },
+ {
+  "name": "Olc Skerry",
+  "x": 1670.2,
+  "y": 353.9,
+  "population": 0.05,
+  "coast": true
+ },
+ {
+  "name": "Cinderrest Sanctum",
+  "x": 1517.5,
+  "y": 206.8,
+  "population": 0.1
+ },
+ {
+  "name": "Mythburrow",
+  "x": 1612.1,
+  "y": 182.0,
+  "population": 0.05
+ },
+ {
+  "name": "Ruins of Molaesmyr",
+  "x": 1452.3,
+  "y": 272.1,
+  "population": 0.05
+ },
+ {
+  "name": "Ruins of Sepesca",
+  "x": 1135.4,
+  "y": 420.0,
+  "population": 0.05
+ },
+ {
+  "name": "Ruins of Shattengrod",
+  "x": 1337.0,
+  "y": 386.4,
+  "population": 0.05
+ },
+ {
+  "name": "Ruins of Draconia",
+  "x": 1519.5,
+  "y": 575.6,
+  "population": 0.05
+ },
+ {
+  "name": "Amber Crossroads",
+  "x": 1384.2,
+  "y": 353.0,
+  "population": 0.05
+ },
+ {
+  "name": "Rastum Den",
+  "x": 1387.3,
+  "y": 306.5,
+  "population": 0.05
+ },
+ {
+  "name": "Vergesson Sanatorium",
+  "x": 1413.9,
+  "y": 300,
+  "population": 0.05
+ },
+ {
+  "name": "Herathis Mines",
+  "x": 1356.4,
+  "y": 467.3,
+  "population": 0.05
+ },
+ {
+  "name": "Dolithil Mine",
+  "x": 1210.1,
+  "y": 428.1,
+  "population": 0.05
+ },
+ {
+  "name": "Blooming Grove",
+  "x": 1465.9,
+  "y": 302.2,
+  "population": 0.05
+ },
+ {
+  "name": "Quannah Breach",
+  "x": 1450.1,
+  "y": 323.5,
+  "population": 0.05
+ },
+ {
+  "name": "Deepriver Mining Camp",
+  "x": 1614.3,
+  "y": 456.3,
+  "population": 0.05
+ },
+ {
+  "name": "Incanter's Rest",
+  "x": 1652.6,
+  "y": 506.3,
+  "population": 0.05
+ },
+ {
+  "name": "Ghor Veles",
+  "x": 1677.5,
+  "y": 428.0,
+  "population": 0.05
+ },
+ {
+  "name": "Xarzith Kitril",
+  "x": 1509.7,
+  "y": 598.4,
+  "population": 0.05
+ },
+ {
+  "name": "The Miskath Pit",
+  "x": 1653.8,
+  "y": 549.5,
+  "population": 0.05
+ },
+ {
+  "name": "Verstglade",
+  "x": 1436.0,
+  "y": 530.8,
+  "population": 0.05
+ },
+ {
+  "name": "Tooth of Zehir",
+  "x": 1745.8,
+  "y": 426.1,
+  "population": 0.05
+ },
+ {
+  "name": "Kravaraad",
+  "x": 1533.8,
+  "y": 199.8,
+  "population": 0.05
  }
 ]
