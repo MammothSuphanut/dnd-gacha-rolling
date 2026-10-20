@@ -1,0 +1,3 @@
+# keep these byte-exact: git apply needs LF patches, Azgaar reads .map as-is
+*.patch -text
+*.map -text
