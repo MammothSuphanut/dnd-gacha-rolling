@@ -1,20 +1,27 @@
 [
   {
     "id": 13,
-    "name": "Xhorhas Badlands",
+    "name": "Nythrass Badlands",
     "color": "#a08660",
     "habitability": 15
   },
   {
     "id": 14,
-    "name": "Greying Wildlands",
+    "name": "Greyfrost Wilds",
     "color": "#6f6680",
     "habitability": 6
   },
   {
     "id": 15,
-    "name": "Rosohna Blight",
+    "name": "Nyxara Blight",
     "color": "#8e2b2b",
     "habitability": 2
+  },
+  {
+    "id": 16,
+    "name": "Lava Flow",
+    "color": "#e0561b",
+    "habitability": 0,
+    "noIce": true
   }
 ]

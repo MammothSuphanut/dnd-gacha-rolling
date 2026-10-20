@@ -1,6 +1,6 @@
 {
   "id": "exandria-plus",
-  "name": "Exandria+",
+  "name": "Aurelith",
   "source": "Homebrew (ดัดแปลงจาก Exandria)",
   "mapImage": "/world-settings/exandria-plus/maps/world/Exandria.jpeg",
   "categories": [
@@ -10,7 +10,7 @@
     },
     {
       "id": "wildemount",
-      "title": "Wildemount",
+      "title": "Valdmark",
       "overviewPath": "/world-settings/exandria-plus/wildemount/_overview.md",
       "map": {
         "image": "/world-settings/exandria-plus/maps/wildemount/Wildemount.jpg"
@@ -22,7 +22,7 @@
     },
     {
       "id": "tal-dorei",
-      "title": "Tal'Dorei",
+      "title": "Haneora",
       "overviewPath": "/world-settings/exandria-plus/tal-dorei/_overview.md",
       "map": {
         "image": "/world-settings/exandria-plus/maps/tal-dorei/Tal'Dorei.jpg"
@@ -34,7 +34,7 @@
     },
     {
       "id": "issylra",
-      "title": "Issylra",
+      "title": "Seiran",
       "overviewPath": "/world-settings/exandria-plus/issylra/_overview.md",
       "map": {
         "image": "/world-settings/exandria-plus/maps/issylra/Issylra.webp"
@@ -46,7 +46,7 @@
     },
     {
       "id": "marquet",
-      "title": "Marquet",
+      "title": "Meridane",
       "overviewPath": "/world-settings/exandria-plus/marquet/_overview.md",
       "map": {
         "image": "/world-settings/exandria-plus/maps/marquet/Marquet.webp"

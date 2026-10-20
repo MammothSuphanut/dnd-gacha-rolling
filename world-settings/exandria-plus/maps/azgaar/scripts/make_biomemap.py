@@ -7,7 +7,7 @@ Azgaar ids: 0 marine, 1 hot desert, 2 cold desert, 3 savanna, 4 grassland, 5 tro
 import json
 import sys
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageDraw
 from scipy import ndimage as ndi
 
 src, heightmap, out, preview = sys.argv[1:5]
@@ -71,9 +71,10 @@ cls[land & (cls == 0)] = 4
 
 # --- Exandria-specific biomes (ids 13+, defined in CUSTOM and written to <out>.json for Azgaar) ---
 CUSTOM = [
-    {"id": 13, "name": "Xhorhas Badlands", "color": "#a08660", "habitability": 15},
-    {"id": 14, "name": "Greying Wildlands", "color": "#6f6680", "habitability": 6},
-    {"id": 15, "name": "Rosohna Blight", "color": "#8e2b2b", "habitability": 2},
+    {"id": 13, "name": "Nythrass Badlands", "color": "#a08660", "habitability": 15},
+    {"id": 14, "name": "Greyfrost Wilds", "color": "#6f6680", "habitability": 6},
+    {"id": 15, "name": "Nyxara Blight", "color": "#8e2b2b", "habitability": 2},
+    {"id": 16, "name": "Lava Flow", "color": "#e0561b", "habitability": 0, "noIce": True},
 ]
 k = W / 1620  # boxes in 1620x1080 preview coords
 
@@ -95,6 +96,17 @@ grey = box(1255, 190, 1375, 295) & land & (cls != 11) & (lum < 150)
 grey = ndi.gaussian_filter(grey.astype(np.float32), 8) > 0.5
 cls[grey & land & (cls != 11)] = 14
 cls[ndi.binary_dilation(xhorhas & land & ((R - G) > 45), iterations=3) & land] = 15
+
+# Eiselcross is all ice and tundra: the pale sun-washed patches on the source read as savanna/grassland
+eisel = box(1080, 36, 1287, 185) & land
+cls[eisel & np.isin(cls, [1, 2, 3, 4, 5, 6, 7, 8, 12])] = 10
+
+# lava flow across Foren (Eiselcross), traced from the source map; points in 1800x1200 Azgaar coords
+LAVA = [(1326, 70), (1323, 79), (1317, 89), (1313, 102), (1317, 111), (1324, 122), (1334, 133), (1338, 140),
+        (1347, 151), (1360, 162), (1372, 168), (1380, 172)]
+lava = Image.new("L", (W, H), 0)
+ImageDraw.Draw(lava).line([(x * W / 1800, y * H / 1200) for x, y in LAVA], fill=1, width=int(round(4 * W / 1800)), joint="curve")
+cls[(np.asarray(lava) > 0) & land] = 16
 
 out_img = Image.fromarray(cls, "L").resize((1620, 1080), Image.NEAREST)
 out_img.save(out)

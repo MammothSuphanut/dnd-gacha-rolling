@@ -1,4 +1,4 @@
-"""สร้าง PDF (A4) ของคู่มือผู้เล่น Exandria+ จากไฟล์ markdown
+"""สร้าง PDF (A4) ของคู่มือผู้เล่น Aurelith จากไฟล์ markdown
 
 - session-0/exandria-plus-player-guide.md -> session-0/exandria-plus-player-guide.pdf
 - ใช้ python-markdown แปลงเป็น HTML แล้วพิมพ์ด้วย Chrome headless (ฟอนต์ Sarabun/Trirong จาก Google Fonts — ต้องออนไลน์)
@@ -51,7 +51,7 @@ FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
 def main():
     body = markdown.markdown(SRC.read_text(encoding="utf-8"), extensions=["tables"])
     html = (f'<!doctype html><html lang="th"><head><meta charset="utf-8">'
-            f'<title>Exandria+ — คู่มือโลกสำหรับผู้เล่น</title>{FONTS}<style>{CSS}</style></head>'
+            f'<title>Aurelith — คู่มือโลกสำหรับผู้เล่น</title>{FONTS}<style>{CSS}</style></head>'
             f'<body>{body}</body></html>')
     with tempfile.TemporaryDirectory() as tmp:
         page = pathlib.Path(tmp) / "guide.html"

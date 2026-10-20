@@ -1,4 +1,4 @@
-"""แตกไฟล์หลักของ Exandria+ ออกเป็นไฟล์ย่อย (ไฟล์หลักไม่ถูกแก้)
+"""แตกไฟล์หลักของ Aurelith ออกเป็นไฟล์ย่อย (ไฟล์หลักไม่ถูกแก้)
 
 - contents/_canon-decisions.md  -> contents/canon/*.md (แยกตามหมวด)
 - contents/_location-themes-draft.md + องค์กรระดับทวีป -> ท้าย <ทวีป>/_overview.md
@@ -31,10 +31,10 @@ SPLITS = [
 
 # โฟลเดอร์ทวีป -> (prefix หัวข้อใน themes, prefix หัวข้อ "### " ขององค์กรระดับทวีป)
 CONTINENTS = {
-    "wildemount": ("❄️ Wildemount", "❄️ Wildemount"),
-    "tal-dorei": ("🌾 Tal'Dorei", "🌾 Tal'Dorei"),
-    "issylra": ("⛰️ Issylra", "⛰️ Issylra"),
-    "marquet": ("☀️ Marquet", "☀️ Marquet"),
+    "wildemount": ("❄️ Valdmark", "❄️ Valdmark"),
+    "tal-dorei": ("🌾 Haneora", "🌾 Haneora"),
+    "issylra": ("⛰️ Seiran", "⛰️ Seiran"),
+    "marquet": ("☀️ Meridane", "☀️ Meridane"),
 }
 SYNC_HEADING = "## ธีมและองค์กรของทวีป (sync จากไฟล์หลัก)"
 
@@ -77,7 +77,7 @@ def split_canon():
         for p in prefixes:
             bodies.append(strip_rule(pick(parts, p)))
             used.update(t for t, _ in parts if t.startswith(p))
-        text = f"# Exandria+ — {title}\n\n" + NOTE.format(src="contents/_canon-decisions.md", what="ไฟล์นี้", extra="") + "\n"
+        text = f"# Aurelith — {title}\n\n" + NOTE.format(src="contents/_canon-decisions.md", what="ไฟล์นี้", extra="") + "\n"
         text += "\n".join(bodies)
         (OUT / fname).write_text(text, encoding="utf-8")
     missing = [t for t, _ in parts if t not in used]

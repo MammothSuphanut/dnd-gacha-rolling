@@ -1,4 +1,4 @@
-# ประชากรและระดับพลังของ Exandria+
+# ประชากรและระดับพลังของ Aurelith
 
 > ข้อมูลประชากร สัดส่วนผู้ฝึกพลังวิญญาณ และการกระจายของ Tier of Being ในปี **935 PD**
 > ระบบ Tier อ้างอิง `codex/Core-Rules/astral-nexus-lore.md` / บันทึกการตัดสินใจอยู่ที่ `_canon-decisions.md` (ข้อ 4)
