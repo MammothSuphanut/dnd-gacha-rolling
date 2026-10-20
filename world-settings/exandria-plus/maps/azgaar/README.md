@@ -126,7 +126,7 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 | 13 | Nythrass Badlands | `#a08660` | 15 | พื้นสีน้ำตาลฝั่งตะวันออกของ Valdmark (ตะวันออกของแนวเขา Ashkeeper) |
 | 14 | Greyfrost Wilds | `#6f6680` | 6 | ป่าทึบสีม่วงเทาใต้แผ่นน้ำแข็งทางเหนือของ Valdmark (ส่วนที่เป็นหิมะยังเป็น Glacier) |
 | 15 | Nyxara Blight | `#8e2b2b` | 2 | พื้นที่สีแดงกลาง Nythrass |
-| 16 | Lava Flow | `#e0561b` | 0 | ธารลาวาผ่ากลางเกาะ Foren (Eiselcross) — วาดตามเส้น `LAVA` (พิกัด 1800×1200) · `noIce: true` = Azgaar ไม่วาดน้ำแข็งทับ |
+| 16 | Lava Flow | `#e0561b` | 0 | ธารลาวาผ่ากลางเกาะ Foren (Eiselcross) — วาดตามเส้น `LAVA` (พิกัด 1800×1200) · `noIce: true` = cell ที่อยู่ในหรือห่างแถบนี้ไม่เกิน 2 px เป็นลาวาทั้งหมดและ Azgaar ไม่วาดน้ำแข็งทับ (`noIceBiomeAt` ใน patch) |
 
 บน Eiselcross (กรอบ `eisel`) biome ที่จับได้เป็นทุ่งหญ้า/สะวันนา/ป่า แปลงเป็น Tundra ทั้งหมด (สีซีดของภาพต้นฉบับไม่ใช่ทุ่งหญ้า)
 
