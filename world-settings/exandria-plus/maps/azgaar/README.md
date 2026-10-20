@@ -130,6 +130,8 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 | 15 | Rosohna Blight | `#8e2b2b` | 2 | พื้นที่สีแดงกลาง Xhorhas |
 | 16 | Lava Flow | `#e0561b` | 0 | ธารลาวาผ่ากลางเกาะ Foren (Eiselcross) — วาดตามเส้น `LAVA` (พิกัด 1800×1200) · `noIce: true` = cell ที่อยู่ในหรือห่างแถบนี้ไม่เกิน 2 px เป็นลาวาทั้งหมดและ Azgaar ไม่วาดน้ำแข็งทับ (`noIceBiomeAt` ใน patch) |
 
+ทางเหนือของ Greying Wildlands บนแผ่นดินใหญ่ (Crystalsands Tundra, Flotket Alps, Rime Plains) ภาพโลกวาดเป็นหิมะ แต่แผนที่ Wildemount เป็นทุนดรา → แปลง Glacier เป็น Tundra และสี Tundra ใน patch เปลี่ยนเป็นครีมซีด `#d8d2bd` (เดิมน้ำตาล `#96784b`)
+
 บน Eiselcross (กรอบ `eisel`) biome ที่จับได้เป็นทุ่งหญ้า/สะวันนา/ป่า แปลงเป็น Tundra ทั้งหมด (สีซีดของภาพต้นฉบับไม่ใช่ทุ่งหญ้า)
 
 เพิ่ม biome ใหม่: ใส่ใน `CUSTOM` (id ต้องเรียงต่อกันจาก 13) แล้ววาดลง `cls` — Azgaar จะสร้าง biome ให้เองตอน generate

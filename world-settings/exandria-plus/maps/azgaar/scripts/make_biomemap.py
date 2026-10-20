@@ -95,6 +95,9 @@ cls[xhorhas & land & open_ground & brown] = 13
 grey = box(1255, 190, 1375, 295) & land & (cls != 11) & (lum < 150)
 grey = ndi.gaussian_filter(grey.astype(np.float32), 8) > 0.5
 cls[grey & land & (cls != 11)] = 14
+# Greying Wildlands mainland north (Crystalsands Tundra, Flotket Alps, Rime Plains) is tundra on the Wildemount map,
+# not an ice sheet: the snow white of the world map becomes tundra here
+cls[box(1287, 126, 1530, 270) & land & (cls == 11)] = 10
 cls[ndi.binary_dilation(xhorhas & land & ((R - G) > 45), iterations=3) & land] = 15
 
 # Eiselcross is all ice: the pale sun-washed patches on the source read as savanna/grassland/tundra

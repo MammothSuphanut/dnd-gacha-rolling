@@ -143,7 +143,7 @@ index 9813b75..4217300 100644
  
    get(i: number): AddedLabel | undefined {
 diff --git a/src/generators/biomes-generator.ts b/src/generators/biomes-generator.ts
-index 682f0ec..9272706 100644
+index 682f0ec..ccb5220 100644
 --- a/src/generators/biomes-generator.ts
 +++ b/src/generators/biomes-generator.ts
 @@ -1,6 +1,7 @@
@@ -154,6 +154,15 @@ index 682f0ec..9272706 100644
  import { requireName } from "@/utils/validationUtils";
  import { rn } from "../utils";
  
+@@ -44,7 +45,7 @@ function getDefaultBiomes(): Biome[] {
+     "#7dcb35",
+     "#409c43",
+     "#4b6b32",
+-    "#96784b",
++    "#d8d2bd", // Exandria: pale tundra like the Wildemount map (default #96784b)
+     "#d5e7eb",
+     "#0b9131"
+   ];
 @@ -130,6 +131,26 @@ class BiomesGenerator {
        const temperature = temp[gridReference[cellId]];
        pack.cells.biome[cellId] = this.getId(moisture, temperature, height, Boolean(riverIds[cellId]));
