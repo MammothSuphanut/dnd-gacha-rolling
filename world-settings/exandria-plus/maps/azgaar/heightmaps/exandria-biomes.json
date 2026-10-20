@@ -1,19 +1,19 @@
 [
   {
     "id": 13,
-    "name": "Nythrass Badlands",
+    "name": "Xhorhas Badlands",
     "color": "#a08660",
     "habitability": 15
   },
   {
     "id": 14,
-    "name": "Greyfrost Wilds",
+    "name": "Greying Wildlands",
     "color": "#6f6680",
     "habitability": 6
   },
   {
     "id": 15,
-    "name": "Nyxara Blight",
+    "name": "Rosohna Blight",
     "color": "#8e2b2b",
     "habitability": 2
   },

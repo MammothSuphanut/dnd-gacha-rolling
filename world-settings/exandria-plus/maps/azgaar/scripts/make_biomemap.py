@@ -71,9 +71,9 @@ cls[land & (cls == 0)] = 4
 
 # --- Exandria-specific biomes (ids 13+, defined in CUSTOM and written to <out>.json for Azgaar) ---
 CUSTOM = [
-    {"id": 13, "name": "Nythrass Badlands", "color": "#a08660", "habitability": 15},
-    {"id": 14, "name": "Greyfrost Wilds", "color": "#6f6680", "habitability": 6},
-    {"id": 15, "name": "Nyxara Blight", "color": "#8e2b2b", "habitability": 2},
+    {"id": 13, "name": "Xhorhas Badlands", "color": "#a08660", "habitability": 15},
+    {"id": 14, "name": "Greying Wildlands", "color": "#6f6680", "habitability": 6},
+    {"id": 15, "name": "Rosohna Blight", "color": "#8e2b2b", "habitability": 2},
     {"id": 16, "name": "Lava Flow", "color": "#e0561b", "habitability": 0, "noIce": True},
 ]
 k = W / 1620  # boxes in 1620x1080 preview coords

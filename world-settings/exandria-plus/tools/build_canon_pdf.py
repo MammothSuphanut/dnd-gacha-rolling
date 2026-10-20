@@ -1,4 +1,4 @@
-"""สร้าง PDF (A4) ฉบับ DM ของ Aurelith จากไฟล์หลัก
+"""สร้าง PDF (A4) ฉบับ DM ของ Exandria+ จากไฟล์หลัก
 
 - history-timeline, _canon-decisions, population-and-power, astral-nexus-lore (กฎกลาง),
   _location-themes-draft, _cr-nations-reference -> exports/exandria-plus-canon.pdf
@@ -53,7 +53,7 @@ FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
 def main():
     body = "".join(markdown.markdown(s.read_text(encoding="utf-8"), extensions=["tables"]) for s in SRCS)
     html = (f'<!doctype html><html lang="th"><head><meta charset="utf-8">'
-            f'<title>Aurelith — Canon (ฉบับ DM)</title>{FONTS}<style>{CSS}</style></head>'
+            f'<title>Exandria+ — Canon (ฉบับ DM)</title>{FONTS}<style>{CSS}</style></head>'
             f'<body>{body}</body></html>')
     with tempfile.TemporaryDirectory() as tmp:
         page = pathlib.Path(tmp) / "guide.html"

@@ -1,4 +1,4 @@
-# Aurelith — เทพและตัวตนชั้นสูง
+# Exandria+ — เทพและตัวตนชั้นสูง
 
 > สร้างอัตโนมัติจาก `contents/_canon-decisions.md` — **อย่าแก้ไฟล์นี้โดยตรง** แก้ที่ไฟล์หลักแล้วรัน `tools/split_canon.py`
 
@@ -48,18 +48,18 @@
   - Asmodeus, Bane, Gruumsh, Lolth, Tharizdun, Tiamat, Torog, Vecna, Zehir
   - The Luxon
 - **ตาย 228 องค์** ถูกดวงดาวแห่ง Aeor สังหาร นับเฉพาะ D&D (ไม่นับตำนานโลกจริง กรีก/นอร์ส/อียิปต์/เคลต์) จาก `src/data/5etools/official/deities.json`
-  - เทพ D&D นอก Aurelith **218 องค์**: Forgotten Realms 48, เอลฟ์ 27, Greyhawk 22, ดวาร์ฟ 21, Dragonlance 21, Theros 15, Eberron 14, gnome 13, เผ่าอื่น 13, halfling 7, drow 7, orc 5, yuan-ti 3, อื่นๆ 2
+  - เทพ D&D นอก Exandria **218 องค์**: Forgotten Realms 48, เอลฟ์ 27, Greyhawk 22, ดวาร์ฟ 21, Dragonlance 21, Theros 15, Eberron 14, gnome 13, เผ่าอื่น 13, halfling 7, drow 7, orc 5, yuan-ti 3, อื่นๆ 2
   - เทพรองและ idol ของ Exandria (CR) **10 องค์**: Arms of the Betrayers, Ceratos, Desirat, Naviask, Quajath, The Hag Mother, The Traveler, Uk'otoa, Vesh, Xalicas
   - (ถ้าตัด Theros ออกเหลือ 213)
 
 ## การวางเทพและตัวตนชั้นสูงลงพื้นที่ (ข้อ 6 ต่อ)
 
-### Kaiserhald (Valdmark) — Dwendalian Empire
+### Rexxentrum (Wildemount) — Dwendalian Empire
 - **ผู้ปกครอง: Manfried Dwendal — Elder Star** (หนึ่งในดวงดาวทั้ง 9 ตั้งแต่ที่เป็นที่รู้จักปลาย Founding) — ปกครองแต่ไม่สนใจเรื่องการเมืองหรือการกดขี่เผ่าอื่น
   - **อยู่มาตั้งแต่ยุค Founding** (อายุนับหมื่นถึงเกือบแสนปี) — เดิมชื่อแค่ Manfried เป็น**ทาสของเทพออร์คองค์หนึ่งที่ตายไปแล้ว** (อยู่ใน 228 — ถูกดวงดาวแห่ง Aeor สังหารใน Divergence ขณะที่ Manfried ยืนดู / เขาแค้นจริงหรือไม่สนใจจริง ไม่มีใครรู้ 🔒) และของเผ่าที่ Dwendalian กีดกันอยู่ทุกวันนี้
   - ค่อยๆ เติบโตแข็งแกร่งจนกลายเป็น Elder — อยู่ในดวงดาวทั้ง 9 ตั้งแต่ที่ Elder Star เป็นที่รู้จักปลาย Founding (ก่อนหน้านั้นเขาอาจเป็นหนึ่งใน "เรื่องเล่า")
   - ในยุค PD เขาวางรากฐานใหม่ ก่อตั้ง Dwendalian Empire และวางกฎเกณฑ์ต่างๆ รวมถึงการกีดกันเผ่าอื่น — ทั้งที่จริงแล้วเขาไม่ได้สนใจเรื่องพวกนี้นัก
-  - **สิ่งที่ต้องการจริงๆ: พัฒนาเวทมนตร์ให้ก้าวหน้ายิ่งขึ้น** (→ เชื่อมกับห้องลับใต้ Kaiserhald ที่ฟื้นเทคโนโลยี Aeor และ Cerberus Assembly)
+  - **สิ่งที่ต้องการจริงๆ: พัฒนาเวทมนตร์ให้ก้าวหน้ายิ่งขึ้น** (→ เชื่อมกับห้องลับใต้ Rexxentrum ที่ฟื้นเทคโนโลยี Aeor และ Cerberus Assembly)
   - **ว่ากันว่าเคยเป็นเพื่อนกับดวงดาวแห่ง Aeor** ตั้งแต่ตอนที่ราชาจอมเวทยังไม่ได้เป็น Elder
 - **ศาสนาประจำจักรวรรดิ: Bahamut องค์เดียว** — แต่นับถือแค่ในนาม ชนชั้นปกครองใช้ชื่อ Bahamut อ้างความชอบธรรมให้การกระทำของตน (รวมถึงการกีดกันหลายเผ่า)
 - **Bahamut ตัวจริง**: พลังอ่อนลง อยู่ใน**ร่างเด็ก** ใช้ชีวิตในเมืองไม่ต่างจากเด็กเร่ร่อน (ยังเป็น Divine — Tier คือเพดาน ไม่ใช่พลังปัจจุบัน)
@@ -74,41 +74,41 @@
 
 | ใคร | ที่ไหน | ตำแหน่ง |
 |---|---|---|
-| Sarenrae | Shenjing (Seiran) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
-| The Raven Queen | Shenjing (Seiran) | ผู้พาวิญญาณออกนอกกรง |
-| The Luxon | Nyxara (Valdmark) | ศรัทธาของ Velkyr Dynasty |
-| Bane | Gangcheol (Haneora) | เทพของ Iron Authority |
-| Moradin | Cheolbong (Haneora) | เทพของนครดวาร์ฟใต้ภูเขา |
-| Titania | Pureun Expanse (Haneora) | ราชินีของเศษเฟย์ที่ติดในโลก |
+| Sarenrae | Vasselheim (Issylra) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
+| The Raven Queen | Vasselheim (Issylra) | ผู้พาวิญญาณออกนอกกรง |
+| The Luxon | Rosohna (Wildemount) | ศรัทธาของ Kryn Dynasty |
+| Bane | Tz'Arrm (Tal'Dorei) | เทพของ Iron Authority |
+| Moradin | Kraghammer (Tal'Dorei) | เทพของนครดวาร์ฟใต้ภูเขา |
+| Titania | Verdant Expanse (Tal'Dorei) | ราชินีของเศษเฟย์ที่ติดในโลก |
 
 **ซ่อนตัว**
 
 | ใคร | ที่ไหน | ซ่อนอย่างไร |
 |---|---|---|
-| Bahamut | Kaiserhald (Valdmark) | เด็กเร่ร่อน |
-| Tiamat | ซาก Wyrmholt (Valdmark) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
-| Gruumsh | Greyfrost Wilds (Valdmark) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
-| Corellon | Brannhold (Valdmark) | **กลมกลืนอยู่ในนคร** |
-| Vecna | Eiselcross (Valdmark) | **เร่ร่อน**ในซาก Aeor |
-| Lolth | Underdark ใต้ Nythrass (Valdmark) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
-| Pelor | Baekseok (Haneora) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
-| Erathis | Seorin (Haneora) | กลมกลืนอยู่ในสาธารณรัฐของเงิน |
-| Avandra | Hwangdo (Haneora) | กลมกลืนอยู่ในเมืองคาสิโน |
-| Zehir | Angae / ซาก Ohnara (Haneora) | ซ่อนในป่าดิบ |
-| Glasya | Heukpo (Haneora) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
-| Sehanine | นครลวงตาใน Seiran | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
-| Torog | ใต้ Shenjing (Seiran) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
-| Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Amagiri (Seiran) |
-| Asmodeus | Seorin (Haneora) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
-| Ioun | Seorin (Haneora) | กลมกลืนในสถาบัน Seorin (ย้ายตามสถาบัน, 2026-10-20) |
-| Melora | ป่า Ashvaranya (Meridane) | ซ่อนในป่าดิบ |
-| The Great Mother | ใต้ทะเลทราย Desheret (Meridane) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
-| Tharizdun | ก้นทะเลของทวีปที่จม (Sunken Fangs) | 🔒 ถูกล่ามโซ่ โซ่กำลังอ่อนลง |
+| Bahamut | Rexxentrum (Wildemount) | เด็กเร่ร่อน |
+| Tiamat | ซาก Draconia (Wildemount) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
+| Gruumsh | Greying Wildlands (Wildemount) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
+| Corellon | Uthodurn (Wildemount) | **กลมกลืนอยู่ในนคร** |
+| Vecna | Eiselcross (Wildemount) | **เร่ร่อน**ในซาก Aeor |
+| Lolth | Underdark ใต้ Xhorhas (Wildemount) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
+| Pelor | Whitestone (Tal'Dorei) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
+| Erathis | Emon (Tal'Dorei) | กลมกลืนอยู่ในสาธารณรัฐของเงิน |
+| Avandra | Kymal (Tal'Dorei) | กลมกลืนอยู่ในเมืองคาสิโน |
+| Zehir | Rifenmist / ซาก Qoniira (Tal'Dorei) | ซ่อนในป่าดิบ |
+| Glasya | Stilben (Tal'Dorei) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
+| Sehanine | นครลวงตาใน Issylra | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
+| Torog | ใต้ Vasselheim (Issylra) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
+| Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Utesspire (Issylra) |
+| Asmodeus | Emon (Tal'Dorei) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
+| Ioun | Emon (Tal'Dorei) | กลมกลืนในสถาบัน Emon (ย้ายตามสถาบัน, 2026-10-20) |
+| Melora | ป่า Aeshanadoor (Marquet) | ซ่อนในป่าดิบ |
+| The Great Mother | ใต้ทะเลทราย Rumedam (Marquet) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
+| Tharizdun | ก้นทะเลของทวีปที่จม (Shattered Teeth) | 🔒 ถูกล่ามโซ่ โซ่กำลังอ่อนลง |
 | Baba Yaga | ทั่วโลก | กระท่อมเคลื่อนที่ |
 | Kord (Elder) | ทั่วโลก | เร่ร่อน |
 | Graz'zt (Elder) | ไม่เปิดเผย | สันโดษ |
 
-- **ปมของ Shenjing**: วิหารของ Kord และ Bahamut ยังตั้งอยู่ แต่เทพทั้งสองไม่อยู่แล้ว
+- **ปมของ Vasselheim**: วิหารของ Kord และ Bahamut ยังตั้งอยู่ แต่เทพทั้งสองไม่อยู่แล้ว
 
 #### Octhogal, The Ancient Kraken — ผู้รักษาผนึกของ Tharizdun
 - Divine CR 30 / เป็น**ผู้คุมโซ่คนสุดท้ายที่ยังเหลืออยู่** (ผู้คุมบางองค์ตายใน 228 → โซ่อ่อนลง)

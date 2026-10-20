@@ -1,128 +1,128 @@
 [
-  {
-    "name": "Faith of Bahamut",
-    "deity": "Bahamut",
-    "type": "Organized",
-    "form": "Church",
-    "color": "#c9c9e8"
-  },
-  {
-    "name": "Light of the Luxon",
-    "deity": "The Luxon",
-    "type": "Organized",
-    "form": "Church",
-    "color": "#6a5acd"
-  },
-  {
-    "name": "Civic Faith of Erathis",
-    "deity": "Erathis",
-    "type": "Organized",
-    "form": "Church",
-    "color": "#4a90d9"
-  },
-  {
-    "name": "Tree of Pelor",
-    "deity": "Pelor",
-    "type": "Organized",
-    "form": "Church",
-    "color": "#f2d16b"
-  },
-  {
-    "name": "Forge of Moradin",
-    "deity": "Moradin",
-    "type": "Organized",
-    "form": "Church",
-    "color": "#b07b3e"
-  },
-  {
-    "name": "Iron Creed of Bane",
-    "deity": "Bane",
-    "type": "Organized",
-    "form": "Cult",
-    "color": "#444444"
-  },
-  {
-    "name": "Old Ways of Sanglim",
-    "deity": "Corellon",
-    "type": "Folk",
-    "form": "Shamanism",
-    "color": "#55aa66"
-  },
-  {
-    "name": "Last Pantheon of Shenjing",
-    "deity": "Sarenrae",
-    "type": "Organized",
-    "form": "Pantheon",
-    "color": "#e8b84a"
-  },
-  {
-    "name": "Way of Heaven",
-    "deity": null,
-    "type": "Folk",
-    "form": "Ancestor Worship",
-    "color": "#d24b3a"
-  },
-  {
-    "name": "Shrines of the Kami",
-    "deity": null,
-    "type": "Folk",
-    "form": "Animism",
-    "color": "#c0507a"
-  },
-  {
-    "name": "Imperial Cult of Valerium",
-    "deity": null,
-    "type": "Organized",
-    "form": "Cult",
-    "color": "#d9a441"
-  },
-  {
-    "name": "Wings of Seren",
-    "deity": "Seren",
-    "type": "Organized",
-    "form": "Church",
-    "color": "#f0f0f0"
-  },
-  {
-    "name": "The Lambent Path",
-    "deity": null,
-    "type": "Organized",
-    "form": "Philosophy",
-    "color": "#a07cd0"
-  },
-  {
-    "name": "Wildmother's Circle",
-    "deity": "Melora",
-    "type": "Folk",
-    "form": "Druidism",
-    "color": "#2f8f4f"
-  },
-  {
-    "name": "Tomb-Keepers of the Great Mother",
-    "deity": "The Great Mother",
-    "type": "Folk",
-    "form": "Ancestor Worship",
-    "color": "#caa070"
-  },
-  {
-    "name": "Old Blood",
-    "deity": null,
-    "type": "Folk",
-    "form": "Shamanism",
-    "color": "#7a7a7a"
-  },
-  {
-    "name": "Tides of the Host",
-    "deity": null,
-    "type": "Folk",
-    "form": "Animism",
-    "color": "#2a9dbf"
-  },
-  {
-    "name": "Summer Court",
-    "deity": "Titania",
-    "type": "Folk",
-    "form": "Animism",
-    "color": "#9ad15b"
-  }
+ {
+  "name": "Faith of Bahamut",
+  "deity": "Bahamut",
+  "type": "Organized",
+  "form": "Church",
+  "color": "#c9c9e8"
+ },
+ {
+  "name": "Light of the Luxon",
+  "deity": "The Luxon",
+  "type": "Organized",
+  "form": "Church",
+  "color": "#6a5acd"
+ },
+ {
+  "name": "Civic Faith of Erathis",
+  "deity": "Erathis",
+  "type": "Organized",
+  "form": "Church",
+  "color": "#4a90d9"
+ },
+ {
+  "name": "Tree of Pelor",
+  "deity": "Pelor",
+  "type": "Organized",
+  "form": "Church",
+  "color": "#f2d16b"
+ },
+ {
+  "name": "Forge of Moradin",
+  "deity": "Moradin",
+  "type": "Organized",
+  "form": "Church",
+  "color": "#b07b3e"
+ },
+ {
+  "name": "Iron Creed of Bane",
+  "deity": "Bane",
+  "type": "Organized",
+  "form": "Cult",
+  "color": "#444444"
+ },
+ {
+  "name": "Old Ways of Syngorn",
+  "deity": "Corellon",
+  "type": "Folk",
+  "form": "Shamanism",
+  "color": "#55aa66"
+ },
+ {
+  "name": "Last Pantheon of Vasselheim",
+  "deity": "Sarenrae",
+  "type": "Organized",
+  "form": "Pantheon",
+  "color": "#e8b84a"
+ },
+ {
+  "name": "Way of Heaven",
+  "deity": null,
+  "type": "Folk",
+  "form": "Ancestor Worship",
+  "color": "#d24b3a"
+ },
+ {
+  "name": "Shrines of the Kami",
+  "deity": null,
+  "type": "Folk",
+  "form": "Animism",
+  "color": "#c0507a"
+ },
+ {
+  "name": "Imperial Cult of Ank'Harel",
+  "deity": null,
+  "type": "Organized",
+  "form": "Cult",
+  "color": "#d9a441"
+ },
+ {
+  "name": "Wings of Seren",
+  "deity": "Seren",
+  "type": "Organized",
+  "form": "Church",
+  "color": "#f0f0f0"
+ },
+ {
+  "name": "The Lambent Path",
+  "deity": null,
+  "type": "Organized",
+  "form": "Philosophy",
+  "color": "#a07cd0"
+ },
+ {
+  "name": "Wildmother's Circle",
+  "deity": "Melora",
+  "type": "Folk",
+  "form": "Druidism",
+  "color": "#2f8f4f"
+ },
+ {
+  "name": "Tomb-Keepers of the Great Mother",
+  "deity": "The Great Mother",
+  "type": "Folk",
+  "form": "Ancestor Worship",
+  "color": "#caa070"
+ },
+ {
+  "name": "Old Blood",
+  "deity": null,
+  "type": "Folk",
+  "form": "Shamanism",
+  "color": "#7a7a7a"
+ },
+ {
+  "name": "Tides of the Host",
+  "deity": null,
+  "type": "Folk",
+  "form": "Animism",
+  "color": "#2a9dbf"
+ },
+ {
+  "name": "Summer Court",
+  "deity": "Titania",
+  "type": "Folk",
+  "form": "Animism",
+  "color": "#9ad15b"
+ }
 ]
