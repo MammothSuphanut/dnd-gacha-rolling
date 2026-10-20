@@ -1,170 +1,176 @@
 [
  {
   "name": "Zadash",
-  "x": 1397.8,
-  "y": 436.7,
+  "x": 1401.7,
+  "y": 443.1,
   "population": 150
  },
  {
   "name": "Hupperdook",
-  "x": 1438.9,
-  "y": 378.9,
+  "x": 1450.5,
+  "y": 376.9,
   "population": 50
  },
  {
   "name": "Trostenwald",
-  "x": 1408.9,
-  "y": 503.3,
+  "x": 1409.7,
+  "y": 504.8,
   "population": 10
  },
  {
   "name": "Alfield",
-  "x": 1413.3,
-  "y": 482.2,
+  "x": 1412.4,
+  "y": 481.4,
   "population": 8
  },
  {
   "name": "Icehaven",
-  "x": 1283.3,
-  "y": 316.7,
-  "population": 12
+  "x": 1297.4,
+  "y": 317.7,
+  "population": 12,
+  "coast": true
  },
  {
   "name": "Druvenlode",
-  "x": 1373.3,
-  "y": 358.9,
+  "x": 1391.3,
+  "y": 361.9,
   "population": 15
  },
  {
   "name": "Nogvurot",
-  "x": 1425.6,
-  "y": 336.7,
+  "x": 1442.8,
+  "y": 339.6,
   "population": 12
  },
  {
   "name": "Yrrosa",
-  "x": 1327.8,
-  "y": 353.3,
+  "x": 1339.9,
+  "y": 357.8,
   "population": 10
  },
  {
-  "name": "Pride's Gall",
-  "x": 1286.7,
-  "y": 388.9,
+  "name": "Pride's Call",
+  "x": 1303.6,
+  "y": 399.2,
   "population": 8
  },
  {
   "name": "Kamordah",
-  "x": 1333.3,
-  "y": 418.9,
+  "x": 1336.6,
+  "y": 431.5,
   "population": 8
  },
  {
   "name": "Felderwin",
-  "x": 1444.4,
-  "y": 438.9,
+  "x": 1460.1,
+  "y": 452.3,
   "population": 6
  },
  {
   "name": "Wuyun Gates",
   "x": 1392.2,
-  "y": 548.9,
+  "y": 550.2,
   "population": 6
  },
  {
   "name": "Talonstadt",
-  "x": 1486.7,
-  "y": 435.6,
+  "x": 1490.0,
+  "y": 445.8,
   "population": 6
  },
  {
   "name": "Bladegarden",
-  "x": 1505.6,
-  "y": 413.3,
+  "x": 1499.8,
+  "y": 401.1,
   "population": 5
  },
  {
   "name": "Othe",
-  "x": 1308.9,
-  "y": 500.0,
+  "x": 1309.0,
+  "y": 500.8,
   "population": 5
  },
  {
   "name": "Bazzoxan",
-  "x": 1600.0,
-  "y": 402.2,
+  "x": 1618.7,
+  "y": 423.3,
   "population": 15
  },
  {
   "name": "Ghostwall",
-  "x": 1653.3,
-  "y": 446.7,
+  "x": 1643.0,
+  "y": 457.0,
   "population": 8
  },
  {
   "name": "Asarius",
-  "x": 1547.8,
-  "y": 446.7,
+  "x": 1545.1,
+  "y": 451.3,
   "population": 10
  },
  {
   "name": "Galgarad",
-  "x": 1564.4,
-  "y": 488.9,
+  "x": 1584.2,
+  "y": 482.5,
   "population": 8
  },
  {
   "name": "Dumaran",
-  "x": 1591.1,
-  "y": 524.4,
+  "x": 1608.7,
+  "y": 502.9,
   "population": 6
  },
  {
   "name": "Nicodranas",
-  "x": 1366.7,
-  "y": 606.7,
-  "population": 150
+  "x": 1366.2,
+  "y": 607.2,
+  "population": 150,
+  "coast": true
  },
  {
   "name": "Port Zoon",
-  "x": 1324.4,
-  "y": 591.1,
-  "population": 60
+  "x": 1323.7,
+  "y": 589.3,
+  "population": 60,
+  "coast": true
  },
  {
   "name": "Tussoa",
-  "x": 1233.3,
-  "y": 481.1,
+  "x": 1250.0,
+  "y": 478.8,
   "population": 50
  },
  {
   "name": "Feolinn",
-  "x": 1320.0,
-  "y": 555.6,
+  "x": 1319.9,
+  "y": 556.9,
   "population": 15
  },
  {
   "name": "Palma Flora",
-  "x": 1236.7,
-  "y": 570.0,
-  "population": 8
+  "x": 1236.1,
+  "y": 563.0,
+  "population": 8,
+  "coast": true
  },
  {
   "name": "Bisaft Port",
-  "x": 1163.3,
-  "y": 572.2,
-  "population": 6
+  "x": 1166.1,
+  "y": 570.3,
+  "population": 6,
+  "coast": true
  },
  {
   "name": "Brokenbank",
-  "x": 1202.2,
-  "y": 605.6,
-  "population": 5
+  "x": 1213.3,
+  "y": 615.0,
+  "population": 5,
+  "coast": true
  },
  {
   "name": "Palebank Village",
-  "x": 1437.6,
-  "y": 165.2,
+  "x": 1499.7,
+  "y": 178.7,
   "population": 2,
   "coast": true
  },

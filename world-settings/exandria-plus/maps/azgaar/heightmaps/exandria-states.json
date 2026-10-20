@@ -4,8 +4,8 @@
   "formName": "Empire",
   "fullName": "Dwendalian Empire",
   "capital": "Rexxentrum",
-  "x": 1388.9,
-  "y": 335.6,
+  "x": 1393.3,
+  "y": 345.2,
   "expansionism": 3.0,
   "color": "#b33a3a",
   "region": [
@@ -81,8 +81,8 @@
   "formName": "Dynasty",
   "fullName": "Kryn Dynasty",
   "capital": "Rosohna",
-  "x": 1625.6,
-  "y": 468.9,
+  "x": 1634.9,
+  "y": 466.4,
   "expansionism": 2.5,
   "color": "#4b3f8f",
   "region": [
@@ -134,8 +134,8 @@
   "formName": "Concord",
   "fullName": "Clovis Concord",
   "capital": "Port Damali",
-  "x": 1242.2,
-  "y": 524.4,
+  "x": 1244.8,
+  "y": 526.2,
   "expansionism": 1.2,
   "color": "#2f8f8a",
   "region": [
@@ -183,8 +183,8 @@
   "formName": "Diarchy",
   "fullName": "Diarchy of Uthodurn",
   "capital": "Uthodurn",
-  "x": 1518.9,
-  "y": 220.0,
+  "x": 1516.6,
+  "y": 220.3,
   "expansionism": 5.0,
   "color": "#7f8c99",
   "region": [

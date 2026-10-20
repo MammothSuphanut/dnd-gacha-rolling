@@ -144,7 +144,7 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 - ชื่อที่มี `(TBD)` = canon ยังไม่ได้ตั้งชื่อ (อาณาจักรจีน, แคว้นญี่ปุ่น) — แก้ในไฟล์แล้ว generate ใหม่
 
 ### เมือง (`exandria-burgs.json`)
-- เมืองหลวง 17 แห่ง (จาก states) + เมือง/สถานที่มีชื่อ 74 แห่ง (รวมจุดบน Eiselcross: Syrinlya, Balenpost, Vurmas, Allowak's Sanctuary, จุดตก Aeor, Salsvault, Fortress of the Dead Jarl, Tomb of the Worm, Garden of Stone, Mutalos) วางที่ cell แผ่นดินใกล้พิกัดที่สุด · `"coast": true` = บังคับให้อยู่ cell ติดทะเล (Palebank, Syrinlya, Balenpost, Vurmas) · เมืองมีชื่อที่ติดทะเลได้เป็นท่าเรือแม้ทะเลเย็นจัด และเส้นทางเรือแล่นผ่านทะเลน้ำแข็งได้ (ช้ากว่า 3 เท่า — เรือตัดน้ำแข็ง) เช่น Palebank ↔ Syrinlya · ประชากรตามไฟล์ (คนจริง ไม่ขึ้นกับ population scale) ตาม Map Brief หัวข้อ 3
+- เมืองหลวง 17 แห่ง (จาก states) + เมือง/สถานที่มีชื่อ 74 แห่ง (รวมจุดบน Eiselcross: Syrinlya, Balenpost, Vurmas, Allowak's Sanctuary, จุดตก Aeor, Salsvault, Fortress of the Dead Jarl, Tomb of the Worm, Garden of Stone, Mutalos) วางที่ cell แผ่นดินใกล้พิกัดที่สุด · พิกัดเมืองใน Wildemount มาจาก `pin` ของการ์ดใน `world-settings/exandria/manifest.json` (×18, ×12 = พิกัด Azgaar) ซึ่งตรงกับไอคอนเมืองบนแผนที่ต้นฉบับ · `"coast": true` = บังคับให้อยู่ cell ติดทะเล (Palebank, Syrinlya, Balenpost, Vurmas) · เมืองมีชื่อที่ติดทะเลได้เป็นท่าเรือแม้ทะเลเย็นจัด และเส้นทางเรือแล่นผ่านทะเลน้ำแข็งได้ (ช้ากว่า 3 เท่า — เรือตัดน้ำแข็ง) เช่น Palebank ↔ Syrinlya · ประชากรตามไฟล์ (คนจริง ไม่ขึ้นกับ population scale) ตาม Map Brief หัวข้อ 3
 - เมืองสุ่ม 250 แห่งเติมเฉพาะในเขต `region` ของประเทศ — ดินแดนไร้รัฐไม่มีเมืองสุ่ม (มีแค่เมืองที่มีชื่อ เช่น Palebank)
 
 ### วัฒนธรรม ศาสนา ชื่อภูมิภาค
