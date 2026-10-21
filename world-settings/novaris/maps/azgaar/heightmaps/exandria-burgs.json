@@ -1,167 +1,167 @@
 [
  {
-  "name": "Zadash",
+  "name": "Trivane",
   "x": 1426.7,
   "y": 443.1,
   "population": 150
  },
  {
-  "name": "Hupperdook",
+  "name": "Cogwick",
   "x": 1475.5,
   "y": 376.9,
   "population": 50
  },
  {
-  "name": "Trostenwald",
+  "name": "Hopsdale",
   "x": 1434.7,
   "y": 504.8,
   "population": 10
  },
  {
-  "name": "Alfield",
+  "name": "Wheaton",
   "x": 1437.4,
   "y": 481.4,
   "population": 8
  },
  {
-  "name": "Icehaven",
+  "name": "Frosthaven",
   "x": 1322.4,
   "y": 317.7,
   "population": 12,
   "coast": true
  },
  {
-  "name": "Druvenlode",
+  "name": "Oreton",
   "x": 1416.3,
   "y": 361.9,
   "population": 15
  },
  {
-  "name": "Nogvurot",
+  "name": "Northwatch",
   "x": 1467.8,
   "y": 339.6,
   "population": 12
  },
  {
-  "name": "Yrrosa",
+  "name": "Rimeholt",
   "x": 1364.9,
   "y": 357.8,
   "population": 10
  },
  {
-  "name": "Pride's Call",
+  "name": "Stonepride",
   "x": 1328.6,
   "y": 399.2,
   "population": 8
  },
  {
-  "name": "Kamordah",
+  "name": "Vinehill",
   "x": 1361.6,
   "y": 431.5,
   "population": 8
  },
  {
-  "name": "Felderwin",
+  "name": "Harvel",
   "x": 1485.1,
   "y": 452.3,
   "population": 6
  },
  {
-  "name": "Wuyun Gates",
+  "name": "Porta Ferro",
   "x": 1417.2,
   "y": 550.2,
   "population": 6
  },
  {
-  "name": "Talonstadt",
+  "name": "Tenton",
   "x": 1515.0,
   "y": 445.8,
   "population": 6
  },
  {
-  "name": "Bladegarden",
+  "name": "Bladehold",
   "x": 1524.8,
   "y": 401.1,
   "population": 5
  },
  {
-  "name": "Othe",
+  "name": "Santuaria",
   "x": 1334.0,
   "y": 500.8,
   "population": 5
  },
  {
-  "name": "Bazzoxan",
+  "name": "Pitwatch",
   "x": 1643.7,
   "y": 423.3,
   "population": 15
  },
  {
-  "name": "Ghostwall",
+  "name": "Wraithwall",
   "x": 1668.0,
   "y": 457.0,
   "population": 8
  },
  {
-  "name": "Asarius",
+  "name": "Asterin",
   "x": 1570.1,
   "y": 451.3,
   "population": 10
  },
  {
-  "name": "Galgarad",
+  "name": "Grimhollow",
   "x": 1609.2,
   "y": 482.5,
   "population": 8
  },
  {
-  "name": "Dumaran",
+  "name": "Gorgrim",
   "x": 1633.7,
   "y": 502.9,
   "population": 6
  },
  {
-  "name": "Nicodranas",
+  "name": "Belmare",
   "x": 1391.2,
   "y": 607.2,
   "population": 150,
   "coast": true
  },
  {
-  "name": "Port Zoon",
+  "name": "Porto Vetro",
   "x": 1348.7,
   "y": 589.3,
   "population": 60,
   "coast": true
  },
  {
-  "name": "Tussoa",
+  "name": "Riva",
   "x": 1275.0,
   "y": 478.8,
   "population": 50
  },
  {
-  "name": "Feolinn",
+  "name": "Verdella",
   "x": 1344.9,
   "y": 556.9,
   "population": 15
  },
  {
-  "name": "Palma Flora",
+  "name": "Fiorella",
   "x": 1261.1,
   "y": 563.0,
   "population": 8,
   "coast": true
  },
  {
-  "name": "Bisaft Isle",
+  "name": "Isola Grande",
   "x": 1191.1,
   "y": 570.3,
   "population": 6,
   "coast": true
  },
  {
-  "name": "Brokenbank",
+  "name": "Rocca",
   "x": 1238.3,
   "y": 615.0,
   "population": 5,
@@ -175,217 +175,217 @@
   "coast": true
  },
  {
-  "name": "Kymal",
+  "name": "Fortuna",
   "x": 842.2,
   "y": 474.4,
   "population": 1500
  },
  {
-  "name": "Westruun",
+  "name": "Midgate",
   "x": 891.1,
   "y": 431.1,
   "population": 1000
  },
  {
-  "name": "Stilben",
+  "name": "Port Noir",
   "x": 955.6,
   "y": 516.7,
   "population": 800
  },
  {
-  "name": "Drynna",
+  "name": "Calmwater",
   "x": 986.7,
   "y": 431.1,
   "population": 120
  },
  {
-  "name": "Fort Daxio",
+  "name": "Fort Granite",
   "x": 783.3,
   "y": 364.4,
   "population": 150
  },
  {
-  "name": "Shalesteps",
+  "name": "Cliffsteps",
   "x": 733.3,
   "y": 441.1,
   "population": 90
  },
  {
-  "name": "Turst Fields",
+  "name": "Goldfields",
   "x": 955.6,
   "y": 425.6,
   "population": 60
  },
  {
-  "name": "Jorenn Village",
+  "name": "Hillmarket",
   "x": 888.9,
   "y": 388.9,
   "population": 40
  },
  {
-  "name": "Emerald Outpost",
+  "name": "Greenwatch",
   "x": 800.0,
   "y": 505.6,
   "population": 50
  },
  {
-  "name": "New O'Noa",
+  "name": "Firsthaven",
   "x": 733.3,
   "y": 505.6,
   "population": 70
  },
  {
-  "name": "Zephrah",
+  "name": "Windward",
   "x": 933.3,
   "y": 472.2,
   "population": 30
  },
  {
-  "name": "Lyrengorn",
+  "name": "Elvenpeak",
   "x": 868.9,
   "y": 302.2,
   "population": 20
  },
  {
-  "name": "Hdar-Fye",
+  "name": "Steelspire",
   "x": 807.8,
   "y": 711.1,
   "population": 80
  },
  {
-  "name": "Ezordam-Haar",
+  "name": "Redwing",
   "x": 866.7,
   "y": 711.1,
   "population": 100
  },
  {
-  "name": "Rybad-Kol",
+  "name": "Forgehold",
   "x": 911.1,
   "y": 726.7,
   "population": 70
  },
  {
-  "name": "Ortem-Vellak",
+  "name": "Ashgate",
   "x": 933.3,
   "y": 680.0,
   "population": 60
  },
  {
-  "name": "Muldire",
+  "name": "Kanmon",
   "x": 488.9,
   "y": 290.0,
   "population": 10
  },
  {
-  "name": "Josgren's Hollow",
+  "name": "Yakushi",
   "x": 494.4,
   "y": 374.4,
   "population": 15
  },
  {
-  "name": "Shorecomb",
+  "name": "Hamamura",
   "x": 441.1,
   "y": 411.1,
   "population": 15
  },
  {
-  "name": "Seedfeld",
+  "name": "Ssiat",
   "x": 314.4,
   "y": 430.0,
   "population": 60
  },
  {
-  "name": "Ivaadel",
+  "name": "Shiraki",
   "x": 185.6,
   "y": 563.3,
   "population": 120
  },
  {
-  "name": "Shandal",
+  "name": "Fontana",
   "x": 455.6,
   "y": 866.7,
   "population": 50
  },
  {
-  "name": "Shammel",
+  "name": "Giftvik",
   "x": 428.9,
   "y": 796.7,
   "population": 30
  },
  {
-  "name": "Eish-Allay",
+  "name": "Huai Kaeo",
   "x": 144.4,
   "y": 863.3,
   "population": 20
  },
  {
-  "name": "Sapiro Haven",
+  "name": "Tha Samut",
   "x": 185.6,
   "y": 873.3,
   "population": 25
  },
  {
-  "name": "Goradire",
+  "name": "Ban Pa",
   "x": 220.0,
   "y": 888.9,
   "population": 20
  },
  {
-  "name": "Otaladume",
+  "name": "Ban Klang",
   "x": 124.4,
   "y": 952.2,
   "population": 15
  },
  {
-  "name": "Evishi",
+  "name": "Muang Ngoen",
   "x": 227.8,
   "y": 944.4,
   "population": 15
  },
  {
-  "name": "King's Fall",
+  "name": "Jarlsfall",
   "x": 306.7,
   "y": 972.2,
   "population": 10
  },
  {
-  "name": "Bassuras",
+  "name": "Steinborg",
   "x": 377.8,
   "y": 992.2,
   "population": 15
  },
  {
-  "name": "Loonpur",
+  "name": "Ravnby",
   "x": 300.0,
   "y": 1027.8,
   "population": 10
  },
  {
-  "name": "Nadigarh",
+  "name": "Sandby",
   "x": 357.8,
   "y": 1033.3,
   "population": 10
  },
  {
-  "name": "Barinak",
+  "name": "Vrika",
   "x": 466.7,
   "y": 1033.3,
   "population": 20
  },
  {
-  "name": "Aruati",
+  "name": "Matsya",
   "x": 480.0,
   "y": 1061.1,
   "population": 25
  },
  {
-  "name": "Qoreo",
+  "name": "Kamala",
   "x": 433.3,
   "y": 1105.6,
   "population": 15
  },
  {
-  "name": "Gelvaan",
+  "name": "Grenfeld",
   "x": 307.8,
   "y": 1094.4,
   "population": 15
@@ -398,21 +398,21 @@
   "coast": true
  },
  {
-  "name": "Balenpost",
+  "name": "Westpost",
   "x": 1373.4,
   "y": 171.8,
   "population": 0.5,
   "coast": true
  },
  {
-  "name": "Vurmas",
+  "name": "Duskraft",
   "x": 1258.3,
   "y": 113.3,
   "population": 0.3,
   "coast": true
  },
  {
-  "name": "Allowak's Sanctuary",
+  "name": "Yeti's Hollow",
   "x": 1358.3,
   "y": 139.3,
   "population": 0.2
@@ -436,7 +436,7 @@
   "population": 0.05
  },
  {
-  "name": "Tomb of the Worm",
+  "name": "Wormgrave",
   "x": 1295.0,
   "y": 124.0,
   "population": 0.05
@@ -448,55 +448,55 @@
   "population": 0.05
  },
  {
-  "name": "Mutalos",
+  "name": "Shiftlands",
   "x": 1334.6,
   "y": 88.9,
   "population": 0.05
  },
  {
-  "name": "Odessloe",
+  "name": "Logford",
   "x": 1420.0,
   "y": 329.4,
   "population": 1
  },
  {
-  "name": "Blumenthal",
+  "name": "Rosedale",
   "x": 1427.6,
   "y": 356.2,
   "population": 0.5
  },
  {
-  "name": "Berleben",
+  "name": "Mirebrook",
   "x": 1438.9,
   "y": 406.3,
   "population": 2
  },
  {
-  "name": "Deastok",
+  "name": "Goldwall",
   "x": 1358.0,
   "y": 465.0,
   "population": 6
  },
  {
-  "name": "Bysaes Tyl",
+  "name": "Elandil",
   "x": 1387.3,
   "y": 272.1,
   "population": 5
  },
  {
-  "name": "Grimgolir",
+  "name": "Kragmar",
   "x": 1531.1,
   "y": 356.7,
   "population": 10
  },
  {
-  "name": "Yardel",
+  "name": "Chiselby",
   "x": 1514.4,
   "y": 332.0,
   "population": 0.3
  },
  {
-  "name": "Shadycreek Run",
+  "name": "Shadeby",
   "x": 1479.1,
   "y": 314.7,
   "population": 2
@@ -514,106 +514,106 @@
   "population": 1
  },
  {
-  "name": "Gwardan",
+  "name": "Guardia",
   "x": 1223.2,
   "y": 438.5,
   "population": 8
  },
  {
-  "name": "Charis",
+  "name": "Leafhome",
   "x": 1567.1,
   "y": 565.2,
   "population": 0.3
  },
  {
-  "name": "Urzin",
+  "name": "Shellwander",
   "x": 1568.7,
   "y": 389.7,
   "population": 1.5
  },
  {
-  "name": "Jigow",
+  "name": "Netmouth",
   "x": 1613.7,
   "y": 381.9,
   "population": 2,
   "coast": true
  },
  {
-  "name": "New Haxon",
+  "name": "Ironpost",
   "x": 1694.1,
   "y": 536.4,
   "population": 2
  },
  {
-  "name": "Rotthold",
+  "name": "Rotwick",
   "x": 1670.2,
   "y": 569.1,
   "population": 0.8
  },
  {
-  "name": "Boroftkrah",
+  "name": "Grakmoot",
   "x": 1554.1,
   "y": 296.7,
   "population": 1
  },
  {
-  "name": "Uraliss",
+  "name": "Haverby",
   "x": 1565.0,
   "y": 235.2,
   "population": 0.5
  },
  {
-  "name": "Vol'antim",
+  "name": "Eaglecrest",
   "x": 1316.1,
   "y": 435.7,
   "population": 0.3
  },
  {
-  "name": "Darktow Isle",
+  "name": "Isola Nera",
   "x": 1111.0,
   "y": 665.1,
   "population": 3,
   "coast": true
  },
  {
-  "name": "Olc Skerry",
+  "name": "Lonely Rock",
   "x": 1695.2,
   "y": 353.9,
   "population": 0.05,
   "coast": true
  },
  {
-  "name": "Cinderrest Sanctum",
+  "name": "Ashrest Shrine",
   "x": 1542.5,
   "y": 206.8,
   "population": 0.1
  },
  {
-  "name": "Mythburrow",
+  "name": "Ivoryden",
   "x": 1637.1,
   "y": 182.0,
   "population": 0.05
  },
  {
-  "name": "Ruins of Molaesmyr",
+  "name": "Elvenfall Ruins",
   "x": 1477.3,
   "y": 272.1,
   "population": 0.05
  },
  {
-  "name": "Ruins of Sepesca",
+  "name": "Ruins of Serenna",
   "x": 1160.4,
   "y": 420.0,
   "population": 0.05
  },
  {
-  "name": "Ruins of Shattengrod",
+  "name": "Shadowfall Ruins",
   "x": 1362.0,
   "y": 386.4,
   "population": 0.05
  },
  {
-  "name": "Ruins of Draconia",
+  "name": "Ruins of Drakara",
   "x": 1544.5,
   "y": 575.6,
   "population": 0.05
@@ -625,97 +625,97 @@
   "population": 0.05
  },
  {
-  "name": "Rastum Den",
+  "name": "Griffon Roost",
   "x": 1412.3,
   "y": 306.5,
   "population": 0.05
  },
  {
-  "name": "Vergesson Sanatorium",
+  "name": "Lethe Sanatorium",
   "x": 1438.9,
   "y": 300,
   "population": 0.05
  },
  {
-  "name": "Herathis Mines",
+  "name": "Silverpit",
   "x": 1381.4,
   "y": 467.3,
   "population": 0.05
  },
  {
-  "name": "Dolithil Mine",
+  "name": "Vena d'Oro",
   "x": 1235.1,
   "y": 428.1,
   "population": 0.05
  },
  {
-  "name": "Blooming Grove",
+  "name": "Bloomgrove",
   "x": 1490.9,
   "y": 302.2,
   "population": 0.05
  },
  {
-  "name": "Quannah Breach",
+  "name": "Wolfgate",
   "x": 1475.1,
   "y": 323.5,
   "population": 0.05
  },
  {
-  "name": "Deepriver Mining Camp",
+  "name": "Deepcut Camp",
   "x": 1639.3,
   "y": 456.3,
   "population": 0.05
  },
  {
-  "name": "Incanter's Rest",
+  "name": "Spellgrave",
   "x": 1677.6,
   "y": 506.3,
   "population": 0.05
  },
  {
-  "name": "Ghor Veles",
+  "name": "Grimspire",
   "x": 1702.5,
   "y": 428.0,
   "population": 0.05
  },
  {
-  "name": "Xarzith Kitril",
+  "name": "Scalehaven",
   "x": 1534.7,
   "y": 598.4,
   "population": 0.05
  },
  {
-  "name": "Miskath Pit",
+  "name": "The Maw",
   "x": 1678.8,
   "y": 549.5,
   "population": 0.05
  },
  {
-  "name": "Verstglade",
+  "name": "Hexvale",
   "x": 1461.0,
   "y": 530.8,
   "population": 0.05
  },
  {
-  "name": "Tooth of Zehir",
+  "name": "Serpent's Tooth",
   "x": 1770.8,
   "y": 426.1,
   "population": 0.05
  },
  {
-  "name": "Kravaraad",
+  "name": "Blackfell",
   "x": 1558.8,
   "y": 199.8,
   "population": 0.05
  },
  {
-  "name": "Skagaden",
+  "name": "Stonedeep",
   "x": 1483.0,
   "y": 207.0,
   "population": 0.05
  },
  {
-  "name": "Croaker Cave",
+  "name": "Frog Cave",
   "x": 1536.6,
   "y": 170.6,
   "population": 0.05

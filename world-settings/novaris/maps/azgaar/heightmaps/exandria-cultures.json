@@ -27,7 +27,7 @@
   "religion": "Old Blood"
  },
  {
-  "name": "Greying Wildlanders",
+  "name": "Gråmark Clans",
   "base": 6,
   "type": "Hunting",
   "color": "#8a8095",
@@ -66,7 +66,7 @@
   "religion": "Old Blood"
  },
  {
-  "name": "Xhorhas Tribes",
+  "name": "Ödland Tribes",
   "base": 37,
   "type": "Nomadic",
   "color": "#9b7a4c",
@@ -101,7 +101,7 @@
   "religion": "Old Blood"
  },
  {
-  "name": "Rifenmist Hunters",
+  "name": "Riftwild Hunters",
   "base": 14,
   "type": "Hunting",
   "color": "#3c7a3c",
@@ -136,7 +136,7 @@
   "religion": "Summer Court"
  },
  {
-  "name": "Thorain Tribes",
+  "name": "Tsagaan Tribes",
   "base": 31,
   "type": "Nomadic",
   "color": "#b8b0a0",
@@ -171,7 +171,7 @@
   "religion": "Old Blood"
  },
  {
-  "name": "Rumedam Nomads",
+  "name": "Deshret Nomads",
   "base": 18,
   "type": "Nomadic",
   "color": "#e3c27a",
@@ -198,7 +198,7 @@
   "religion": "Tomb-Keepers of the Great Mother"
  },
  {
-  "name": "Aeshanadoor Tribes",
+  "name": "Dandaka Tribes",
   "base": 28,
   "type": "Hunting",
   "color": "#3f8f3f",
@@ -222,10 +222,10 @@
     1166.7
    ]
   ],
-  "religion": "Wildmother's Circle"
+  "religion": "Melora's Circle"
  },
  {
-  "name": "Ossended Host",
+  "name": "Eldmere",
   "base": 25,
   "type": "Naval",
   "color": "#3aa0c0",
@@ -249,10 +249,10 @@
     1088.9
    ]
   ],
-  "religion": "Tides of the Host"
+  "religion": "Old Tides"
  },
  {
-  "name": "Demithore",
+  "name": "Jungwon",
   "base": 30,
   "type": "Generic",
   "color": "#d08f5a",
@@ -276,10 +276,10 @@
     500.0
    ]
   ],
-  "religion": "Last Pantheon of Vasselheim"
+  "religion": "Last Pantheon of Kamizono"
  },
  {
-  "name": "Kraghammer",
+  "name": "Deepforge",
   "base": 35,
   "type": "Highland",
   "color": "#a0703c",
@@ -306,7 +306,7 @@
   "religion": "Forge of Moradin"
  },
  {
-  "name": "Whitestone",
+  "name": "Sunspire",
   "base": 5,
   "type": "Highland",
   "color": "#d9d9e8",
@@ -368,7 +368,7 @@
   "religion": "Old Ways of Syngorn"
  },
  {
-  "name": "Uthodurn",
+  "name": "Twinhold",
   "base": 35,
   "type": "Highland",
   "color": "#7f8c99",
@@ -395,7 +395,7 @@
   "religion": "Forge of Moradin"
  },
  {
-  "name": "Shammeli",
+  "name": "Giftvik",
   "base": 6,
   "type": "Naval",
   "color": "#4f7fa0",
@@ -419,7 +419,7 @@
     844.4
    ]
   ],
-  "religion": "Imperial Cult of Ank'Harel"
+  "religion": "Imperial Cult of Solaria"
  },
  {
   "name": "Dwendalian",
@@ -497,7 +497,7 @@
   "religion": "Faith of Bahamut"
  },
  {
-  "name": "Kryn",
+  "name": "Lumenvael",
   "base": 34,
   "type": "Generic",
   "color": "#4b3f8f",
@@ -548,7 +548,7 @@
   "religion": "Light of the Luxon"
  },
  {
-  "name": "Clovis",
+  "name": "Lagunaran",
   "base": 3,
   "type": "Naval",
   "color": "#2f8f8a",
@@ -595,7 +595,7 @@
   "religion": "Faith of Bahamut"
  },
  {
-  "name": "Tal'Dorei",
+  "name": "Voxarian",
   "base": 1,
   "type": "Generic",
   "color": "#2c6fbf",
@@ -705,7 +705,7 @@
   "religion": "Iron Creed of Bane"
  },
  {
-  "name": "Othanzian",
+  "name": "Amanokado",
   "base": 10,
   "type": "Generic",
   "color": "#e0b84a",
@@ -733,10 +733,10 @@
     333.3
    ]
   ],
-  "religion": "Last Pantheon of Vasselheim"
+  "religion": "Last Pantheon of Kamizono"
  },
  {
-  "name": "Celestial",
+  "name": "Tianchao",
   "base": 11,
   "type": "River",
   "color": "#c9503a",
@@ -779,7 +779,7 @@
   "religion": "Way of Heaven"
  },
  {
-  "name": "Utesspire",
+  "name": "Akitsu",
   "base": 12,
   "type": "Highland",
   "color": "#8c2f5c",
@@ -814,7 +814,7 @@
   "religion": "Shrines of the Kami"
  },
  {
-  "name": "Harelian",
+  "name": "Solarian",
   "base": 8,
   "type": "Generic",
   "color": "#c98a2b",
@@ -854,10 +854,10 @@
     866.7
    ]
   ],
-  "religion": "Imperial Cult of Ank'Harel"
+  "religion": "Imperial Cult of Solaria"
  },
  {
-  "name": "Jrusari",
+  "name": "Himmapan",
   "base": 29,
   "type": "Generic",
   "color": "#5f9e3a",
@@ -888,7 +888,7 @@
   "religion": "Wings of Seren"
  },
  {
-  "name": "Yiosi",
+  "name": "Jyoti",
   "base": 26,
   "type": "Generic",
   "color": "#9b6bc9",
@@ -954,7 +954,7 @@
   "religion": "Old Blood"
  },
  {
-  "name": "Hellcatch Clans",
+  "name": "Ulfdal Clans",
   "base": 22,
   "type": "Nomadic",
   "color": "#b5a26a",

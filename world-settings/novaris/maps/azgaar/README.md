@@ -9,11 +9,11 @@
 | `heightmaps/exandria.png` | heightmap สีเทา 1800×1200 (ค่าแดง/255 < 0.2 = น้ำ) — สร้างจาก `make_heightmap.py` |
 | `heightmaps/exandria-biomes.png` | biome map 1620×1080 (ค่าแดง = biome id: 0–12 ของ Azgaar, 13+ ของ Exandria) — สร้างจาก `make_biomemap.py` |
 | `heightmaps/exandria-rivers.json` | เส้นแม่น้ำที่ trace จากแผนที่ต้นฉบับ (polyline พิกัดแผนที่ 1800×1200, ต้นน้ำก่อน) — สร้างจาก `make_rivers.py` |
-| `heightmaps/exandria-states.json` | 17 ประเทศ: ชื่อ รูปแบบการปกครอง เมืองหลวง (พิกัด) สี ขอบเขต (`region` polygon) — แก้มือได้ |
+| `heightmaps/exandria-states.json` | 17 รายการ (ชื่อ Novaris — บนแผนที่เหลือ 14 ประเทศ: Forgeheim, Gloamwood, Iron Authority มี `note` ว่ารวมเข้า Voxaria แล้ว): ชื่อ รูปแบบการปกครอง เมืองหลวง (พิกัด) สี ขอบเขต (`region` polygon) — แก้มือได้ |
 | `heightmaps/exandria-burgs.json` | 64 เมืองที่มีชื่อ (นอกจากเมืองหลวง): ชื่อ พิกัด ประชากรจริง (พันคน) — อ่านจากแผนที่ต้นฉบับ + Map Brief |
 | `heightmaps/exandria-cultures.json` | 27 วัฒนธรรม: name base ของ Azgaar (ใช้ตั้งชื่อเมืองสุ่ม), ขอบเขต, ศาสนาประจำ |
 | `heightmaps/exandria-religions.json` | 18 ศาสนา (ชื่อ, เทพ, รูปแบบ, สี) |
-| `heightmaps/exandria-labels.json` | 32 ชื่อภูมิภาค/ทะเลบนแผนที่ (พิกัดจากแผนที่ต้นฉบับ) |
+| `heightmaps/exandria-labels.json` | ชื่อภูมิภาค/ทะเล/ภูมิประเทศย่อยบนแผนที่ (ชื่อ Novaris) (พิกัดจากแผนที่ต้นฉบับ) |
 | `heightmaps/exandria-biomes.json` | ชื่อ/สี/habitability ของ biome เฉพาะ Exandria (id 13+) — สร้างคู่กับ biome map |
 | `saves/novaris.map` | **แผนที่หลัก** — ไฟล์ .map ของ Azgaar (เปิดได้ทั้งใน app เราและ azgaar.github.io) |
 | `exandria-azgaar.patch` | โค้ดที่แก้ใน Azgaar (ลงทะเบียน heightmap "Exandria", อ่าน biome map + biome เพิ่ม, แทนแม่น้ำที่ Azgaar สร้างด้วยแม่น้ำที่ trace, cell สูงสุด 300K, ปิด iceberg, endpoint เซฟ/โหลดลง `saves/`) |
@@ -165,9 +165,11 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 - แต่ละรายการ = 1 ประเทศ: Azgaar วางเมืองหลวงที่ `x,y` (cell ที่มีคนใกล้สุด) ใช้ `name`/`capital` ตามไฟล์ และขยายเขตแดนตามปกติ แต่**ห้ามออกนอก `region`** (polygon พิกัด 1800×1200, ขอบสั่นเล็กน้อยให้ดูเป็นธรรมชาติ)
 - สี/ชื่อเต็ม/รูปแบบ ล็อกไว้ (`lock`) ไม่ให้ Azgaar เปลี่ยน · พื้นที่นอก region ทุกประเทศ = ดินแดนไร้รัฐ (Neutrals ~27% ของแผ่นดิน: Greying Wildlands, Xhorhas ใต้/Blightshore, Rifenmist/Verdant, Thorain, เกาะต่าง ๆ, Shattered Teeth)
 - `expansionism` = ความไวในการขยายภายใน region (นครรัฐตั้ง 5 ให้เต็มพื้นที่เล็ก ๆ ของตัวเอง)
-- `labelSize` = ขนาดป้ายชื่อประเทศ (%) — ตั้งไว้ให้ป้ายใหญ่ไม่ทับชื่อภูมิภาค (Tal'Dorei 100, Ank'Harel 110, Bassur 60 ฯลฯ) · `"stateLabel": false` = ไม่วาดป้ายประเทศ ใช้กับนครรัฐที่ชื่อเมืองหลวงซ้ำกับชื่อประเทศ (Kraghammer, Whitestone, Syngorn)
+- `labelSize` = ขนาดป้ายชื่อประเทศ (%) — ตั้งไว้ให้ป้ายใหญ่ไม่ทับชื่อภูมิภาค (Voxaria 100, Imperium Solis 110, Varga 60 ฯลฯ) · `"stateLabel": false` = ไม่วาดป้ายประเทศ ใช้กับนครรัฐที่ชื่อเมืองหลวงซ้ำกับชื่อประเทศ (Syngorn)
 - ลำดับชั้นป้าย: ป้ายประเทศและชื่อภูมิภาคอยู่**ใต้**ชื่อเมือง (`options.map.labels.groups` ใน `.map`) ชื่อเมืองจึงไม่ถูกป้ายใหญ่บัง
-- ชื่อที่มี `(TBD)` = canon ยังไม่ได้ตั้งชื่อ (อาณาจักรจีน, แคว้นญี่ปุ่น) — แก้ในไฟล์แล้ว generate ใหม่
+- ชื่อ CR เดิมทั้งหมดเปลี่ยนเป็นชื่อ Novaris แล้ว (2026-10-22) ตาม `contents/_name-table.md` — ไม่มีชื่อ `(TBD)` เหลือ
+
+- **แก้ใน app แล้ว ไม่อยู่ใน JSON** (2026-10-22, `saves/novaris.map`): รวม Tal'Dorei + Kraghammer + Whitestone + Iron Authority เป็นประเทศ **Voxaria** (`States.merge`) แบ่ง 7 province = 7 รัฐ — Crownshore, Forgeheim, Heartland, Blacktide Coast, Gloamwood, Thunderspine, Iron Authority (Iron Authority = เขตเดิมของรัฐนั้น + Ashgate, ที่เหลือแบ่งตามเมืองที่ใกล้ที่สุดของแต่ละภูมิภาค CR) · ย้าย **Syngorn** ไปเกาะเดี่ยวกลาง Sundering Ocean (feature 151) แผ่นดินเดิมใน The Verge เป็นไร้รัฐ ศาสนา Summer Court · ถ้า generate ใหม่จาก JSON ต้องรวมรัฐและแบ่ง province ซ้ำ (JSON รองรับ `region` ได้รูปเดียวต่อรายการ)
 
 ### เมือง (`exandria-burgs.json`)
 - เมืองหลวง 17 แห่ง (จาก states) + เมือง/สถานที่มีชื่อ 116 แห่ง (Wildemount ครบทุกการ์ดใน canon: เมือง/หมู่บ้าน/ป้อมมีประชากรตามขนาด, ซาก/เหมือง/จุดสำคัญเป็นจุดประชากร 50 คน) (รวมจุดบน Eiselcross: Syrinlya, Balenpost, Vurmas, Allowak's Sanctuary, จุดตก Aeor, Salsvault, Fortress of the Dead Jarl, Tomb of the Worm, Garden of Stone, Mutalos) วางที่ cell แผ่นดินใกล้พิกัดที่สุด · พิกัดเมืองใน Wildemount มาจาก `pin` ของการ์ดใน `world-settings/exandria/manifest.json` (×18, ×12 = พิกัด Azgaar) ซึ่งตรงกับไอคอนเมืองบนแผนที่ต้นฉบับ · `"coast": true` = บังคับให้อยู่ cell ติดทะเล (Palebank, Syrinlya, Balenpost, Vurmas) · เมืองมีชื่อที่ติดทะเลได้เป็นท่าเรือแม้ทะเลเย็นจัด และเส้นทางเรือแล่นผ่านทะเลน้ำแข็งได้ (ช้ากว่า 3 เท่า — เรือตัดน้ำแข็ง) เช่น Palebank ↔ Syrinlya · ประชากรตามไฟล์ (คนจริง ไม่ขึ้นกับ population scale) ตาม Map Brief หัวข้อ 3

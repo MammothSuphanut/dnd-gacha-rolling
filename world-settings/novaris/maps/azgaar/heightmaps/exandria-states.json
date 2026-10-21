@@ -3,7 +3,7 @@
   "name": "Dwendal",
   "formName": "Empire",
   "fullName": "Dwendalian Empire",
-  "capital": "Rexxentrum",
+  "capital": "Dwendalis",
   "x": 1418.3,
   "y": 345.2,
   "expansionism": 3.0,
@@ -78,10 +78,10 @@
   "labelSize": 80
  },
  {
-  "name": "Kryn",
+  "name": "Lumenvael",
   "formName": "Dynasty",
-  "fullName": "Kryn Dynasty",
-  "capital": "Rosohna",
+  "fullName": "Lumenvael Dynasty",
+  "capital": "Lumora",
   "x": 1659.9,
   "y": 466.4,
   "expansionism": 2.5,
@@ -132,10 +132,10 @@
   "labelSize": 55
  },
  {
-  "name": "Clovis",
+  "name": "Lagunara",
   "formName": "Concord",
-  "fullName": "Clovis Concord",
-  "capital": "Port Damali",
+  "fullName": "Lagunara Concord",
+  "capital": "Lagunara",
   "x": 1269.8,
   "y": 526.2,
   "expansionism": 1.2,
@@ -182,10 +182,10 @@
   "labelSize": 60
  },
  {
-  "name": "Uthodurn",
+  "name": "Twinhold",
   "formName": "Diarchy",
-  "fullName": "Diarchy of Uthodurn",
-  "capital": "Uthodurn",
+  "fullName": "Twinhold Diarchy",
+  "capital": "Twinhold",
   "x": 1541.6,
   "y": 220.3,
   "expansionism": 5.0,
@@ -223,10 +223,10 @@
   "population": 50
  },
  {
-  "name": "Tal'Dorei",
-  "formName": "Republic",
-  "fullName": "Republic of Tal'Dorei",
-  "capital": "Emon",
+  "name": "Voxaria",
+  "formName": "Union",
+  "fullName": "Voxaria",
+  "capital": "Lumen City",
   "x": 750.0,
   "y": 457.8,
   "expansionism": 3.0,
@@ -306,9 +306,9 @@
  },
  {
   "name": "Iron Authority",
-  "formName": "Authority",
+  "formName": "State",
   "fullName": "Iron Authority",
-  "capital": "Tz'Arrm",
+  "capital": "Ironhelm",
   "x": 877.8,
   "y": 742.2,
   "expansionism": 5.0,
@@ -335,13 +335,14 @@
     733.3
    ]
   ],
-  "population": 900
+  "population": 900,
+  "note": "merged into Voxaria as a province (state of Voxaria) — novaris.map holds the merged borders"
  },
  {
-  "name": "Kraghammer",
-  "formName": "City-state",
-  "fullName": "Kraghammer",
-  "capital": "Kraghammer",
+  "name": "Forgeheim",
+  "formName": "State",
+  "fullName": "Forgeheim",
+  "capital": "Deepforge",
   "x": 808.9,
   "y": 381.1,
   "expansionism": 5.0,
@@ -365,13 +366,14 @@
    ]
   ],
   "population": 250,
-  "stateLabel": false
+  "stateLabel": false,
+  "note": "merged into Voxaria as a province (state of Voxaria) — novaris.map holds the merged borders"
  },
  {
-  "name": "Whitestone",
-  "formName": "City-state",
-  "fullName": "Whitestone",
-  "capital": "Whitestone",
+  "name": "Gloamwood",
+  "formName": "State",
+  "fullName": "Gloamwood",
+  "capital": "Sunspire",
   "x": 975.6,
   "y": 346.7,
   "expansionism": 5.0,
@@ -403,43 +405,57 @@
    ]
   ],
   "population": 250,
-  "stateLabel": false
+  "stateLabel": false,
+  "note": "merged into Voxaria as a province (state of Voxaria) — novaris.map holds the merged borders"
  },
  {
   "name": "Syngorn",
   "formName": "City-state",
   "fullName": "Syngorn",
   "capital": "Syngorn",
-  "x": 877.8,
-  "y": 568.9,
+  "x": 1124.9,
+  "y": 815.2,
   "expansionism": 5.0,
   "color": "#3fa65a",
   "region": [
    [
-    861.1,
-    550.0
+    1130,
+    808
    ],
    [
-    900.0,
-    550.0
+    1124,
+    804
    ],
    [
-    900.0,
-    583.3
+    1119,
+    807
    ],
    [
-    861.1,
-    583.3
+    1117,
+    816
+   ],
+   [
+    1119,
+    824
+   ],
+   [
+    1125,
+    825
+   ],
+   [
+    1130,
+    819
    ]
   ],
   "population": 80,
-  "stateLabel": false
+  "stateLabel": false,
+  "note": "moved to its island in the Sundering Ocean (canon 2026-10-22)"
  },
  {
-  "name": "Othanzia",
+  "name": "Amanokado",
   "formName": "Theocracy",
-  "fullName": "Othanzia",
-  "capital": "Vasselheim",
+  "fullName": "Amanokado",
+  "capital": "Kamizono",
   "x": 522.2,
   "y": 330.0,
   "expansionism": 1.8,
@@ -470,10 +486,10 @@
   "labelSize": 85
  },
  {
-  "name": "Celestial Empire (TBD)",
+  "name": "Tianchao",
   "formName": "Empire",
-  "fullName": "Celestial Empire (TBD)",
-  "capital": "Imperial Capital (TBD)",
+  "fullName": "Tianchao",
+  "capital": "Yujing",
   "x": 233.3,
   "y": 655.6,
   "expansionism": 3.0,
@@ -515,10 +531,10 @@
   "population": 400
  },
  {
-  "name": "Utesspire Domains (TBD)",
+  "name": "Akitsu",
   "formName": "Shogunate",
-  "fullName": "Utesspire Domains (TBD)",
-  "capital": "Shogun Seat (TBD)",
+  "fullName": "Akitsu Shogunate",
+  "capital": "Shirasagi",
   "x": 166.7,
   "y": 400.0,
   "expansionism": 2.0,
@@ -553,10 +569,10 @@
   "labelSize": 50
  },
  {
-  "name": "Ank'Harel",
+  "name": "Imperium Solis",
   "formName": "Empire",
-  "fullName": "Ank'Harel",
-  "capital": "Ank'Harel",
+  "fullName": "Imperium Solis",
+  "capital": "Solaria",
   "x": 431.1,
   "y": 851.1,
   "expansionism": 2.5,
@@ -599,10 +615,10 @@
   "labelSize": 110
  },
  {
-  "name": "Chandei Quorum",
+  "name": "Pancha Sabha",
   "formName": "Quorum",
-  "fullName": "Chandei Quorum",
-  "capital": "Jrusar",
+  "fullName": "Pancha Sabha",
+  "capital": "Benjasila",
   "x": 181.1,
   "y": 927.8,
   "expansionism": 1.5,
@@ -633,10 +649,10 @@
   "labelSize": 95
  },
  {
-  "name": "Lambent Path",
+  "name": "Jyoti Marga",
   "formName": "Court",
-  "fullName": "Court of the Lambent Path",
-  "capital": "Yios",
+  "fullName": "Jyoti Marga",
+  "capital": "Jyotipura",
   "x": 477.8,
   "y": 1075.6,
   "expansionism": 1.5,
@@ -671,10 +687,10 @@
   "labelSize": 80
  },
  {
-  "name": "Stratos Throne",
-  "formName": "Throne",
-  "fullName": "Stratos Throne",
-  "capital": "Sruwargas",
+  "name": "Ehrvarn",
+  "formName": "Conquest",
+  "fullName": "Ehrvarn Conquest",
+  "capital": "Ehrenburg",
   "x": 286.7,
   "y": 1125.6,
   "expansionism": 1.3,
@@ -705,10 +721,10 @@
   "labelSize": 75
  },
  {
-  "name": "Bassur",
+  "name": "Varga",
   "formName": "Republic",
-  "fullName": "Bassur Republic",
-  "capital": "Gujjar-Serai",
+  "fullName": "Varga Republic",
+  "capital": "Vargholm",
   "x": 281.1,
   "y": 968.9,
   "expansionism": 1.0,

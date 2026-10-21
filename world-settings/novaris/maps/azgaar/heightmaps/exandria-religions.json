@@ -49,7 +49,7 @@
   "color": "#55aa66"
  },
  {
-  "name": "Last Pantheon of Vasselheim",
+  "name": "Last Pantheon of Kamizono",
   "deity": "Sarenrae",
   "type": "Organized",
   "form": "Pantheon",
@@ -70,7 +70,7 @@
   "color": "#c0507a"
  },
  {
-  "name": "Imperial Cult of Ank'Harel",
+  "name": "Imperial Cult of Solaria",
   "deity": null,
   "type": "Organized",
   "form": "Cult",
@@ -91,7 +91,7 @@
   "color": "#a07cd0"
  },
  {
-  "name": "Wildmother's Circle",
+  "name": "Melora's Circle",
   "deity": "Melora",
   "type": "Folk",
   "form": "Druidism",
@@ -112,7 +112,7 @@
   "color": "#7a7a7a"
  },
  {
-  "name": "Tides of the Host",
+  "name": "Old Tides",
   "deity": null,
   "type": "Folk",
   "form": "Animism",
