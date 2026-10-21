@@ -195,7 +195,7 @@
 | Mythburrow | **Ivoryden** | [mythburrow.md](../../exandria/wildemount/greying-wildlands/mythburrow.md) | ✅ | ✅ | ☐ | ☐ |
 | Savalirwood | **Greypine** | [savalirwood.md](../../exandria/wildemount/greying-wildlands/savalirwood.md) | ✅ | ✅ | ☐ | ☐ |
 | Uraliss | **Haverby** | [uraliss.md](../../exandria/wildemount/greying-wildlands/uraliss.md) | ✅ | ✅ | ☐ | ☐ |
-| Palebank Village | **Palebank Village (คงเดิม)** | [palebank-village.md](../../exandria/wildemount/greying-wildlands/palebank-village.md) | ✅ | ✅ | ☐ | ☐ |
+| Palebank Village | **Palebank Village (คงเดิม)** | [palebank-village.md](../../exandria/wildemount/greying-wildlands/palebank-village.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 | Crystalsands Tundra | **Glimmer Tundra** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Flotket Alps | **Whitehorn Alps** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Rime Plains | **Hoarfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
