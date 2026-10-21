@@ -107,7 +107,7 @@
 | **Rosohna** (Lumenvael Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
 | **Bazzoxan** | 2 | ป้อม | ไม่เปลี่ยน |
 | **Uthodurn** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
-| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Foren (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Foren จากเหนือลงตะวันออกเฉียงใต้ · **Vurmas** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Gelier · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Foren เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Frosthaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Foren, Gelier, Biessel, Dampfkan, Kaltsel, Taergoss |
+| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Highfrost (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Highfrost จากเหนือลงตะวันออกเฉียงใต้ · **Duskraft** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Glacia · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Highfrost เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Frosthaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Highfrost, Glacia, Northend, Coldfire, Icelet, Fishholm |
 | ซาก Draconia | ซาก | — | ซากใน Dreemoth Ravine |
 | Gråmark | 0–1 | — | **คงป่าเถื่อน** ชนเผ่าไวกิ้ง ค่ายเล็ก |
 | Ödland ใต้ / Witherstrand | 0–1 | — | **คงรกร้าง** ชนเผ่า มอนสเตอร์ |
@@ -172,7 +172,7 @@
 - [x] **ขนาดเมือง**: ✅ กำหนดตามการกระจายตัว (หัวข้อ 3)
 - [x] **เรือเหาะ**: ✅ น้อยที่สุด — Jrusar/Ank'Harel ↔ Emon, Port Damali
 - [x] **Teleportation circle**: ✅ เฉพาะเมืองหลวง 7 แห่ง
-- [x] **Eiselcross**: ✅ ตาม CR เดิม (Syrinlya, Vurmas, จุดตก Aeor, Palebank, Frosthaven)
+- [x] **Eiselcross**: ✅ ตาม CR เดิม (Syrinlya, Duskraft, จุดตก Aeor, Palebank, Frosthaven)
 - [x] **ธีมทวีป**: ✅ ปรับ 2026-10-20 — Aldenreich ยุคกลางตะวันตก · Voxaria ยุคปัจจุบัน + เวท · Shenzhou ตะวันออกทั้งทวีป · Suvarna นครโบราณหลากชนเผ่า (canon ข้อ 15/17 แก้แล้ว)
 - [x] **Shenzhou**: ✅ ไม่เพิ่มแผ่นดิน — แบ่งทวีปเดิม (ปรับตอนวางเมือง: เทือกเขา Tengu Range อยู่ตะวันตกเฉียงใต้): **ญี่ปุ่น = Mizuho ทางตะวันตกของ Tengu Range** · **จีน = แผ่นดินใต้ทั้งหมด** (เมืองหลวงที่แหลมใต้, Ivaadel เป็นเมืองท่า) · Tianmen ตะวันออกเฉียงเหนือ · แผ่นดินเหนือ-ตะวันตก (ใต้ทุนดรา Tsagaan Tal) = ไร้รัฐ (ข้อ 9 ของงานแผนที่ = ไม่ต้องทำ)
 - [x] **กำแพงยาว**: ✅ วาด — ตามชายแดนเหนือของอาณาจักรจีน กันชนเผ่าทุนดรา Tsagaan Tal

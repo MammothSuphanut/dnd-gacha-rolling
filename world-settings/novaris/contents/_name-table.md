@@ -155,3 +155,26 @@
 | Cyrios Mountains | **Cloudpeak Mountains** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Ashkeeper Peaks | **Ashpeaks** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Silberquel Ridge | **Silver Ridge** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### ❄️ Aldenreich — Eiselcross
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Allowak's Sanctuary | **Yeti's Hollow** | [allowaks-sanctuary.md](../../exandria/wildemount/eiselcross/allowaks-sanctuary.md) | ✅ | ✅ | ☐ | ☐ |
+| Tomb of the Worm | **Wormgrave** | [tomb-of-the-worm.md](../../exandria/wildemount/eiselcross/tomb-of-the-worm.md) | ✅ | ✅ | ☐ | ☐ |
+| River Inferno | **Emberflow** | [river-inferno.md](../../exandria/wildemount/eiselcross/river-inferno.md) | ✅ | ✅ | ☐ | ☐ |
+| Foren | **Highfrost** | [foren.md](../../exandria/wildemount/eiselcross/foren.md) | ✅ | ✅ | ☐ | ☐ |
+| Gelier | **Glacia** | [gelier.md](../../exandria/wildemount/eiselcross/gelier.md) | ✅ | ✅ | ☐ | ☐ |
+| Biessel | **Northend** | [biessel.md](../../exandria/wildemount/eiselcross/biessel.md) | ✅ | ✅ | ☐ | ☐ |
+| Dampfkan | **Coldfire** | [dampfkan.md](../../exandria/wildemount/eiselcross/dampfkan.md) | ✅ | ✅ | ☐ | ☐ |
+| Frostbogen | **Whiteout** | [frostbogen.md](../../exandria/wildemount/eiselcross/frostbogen.md) | ✅ | ✅ | ☐ | ☐ |
+| Schneescel | **Snowveil** | [schneescel.md](../../exandria/wildemount/eiselcross/schneescel.md) | ✅ | ✅ | ☐ | ☐ |
+| Kaltsel | **Icelet** | [kaltsel.md](../../exandria/wildemount/eiselcross/kaltsel.md) | ✅ | ✅ | ☐ | ☐ |
+| Taergoss | **Fishholm** | [taergoss.md](../../exandria/wildemount/eiselcross/taergoss.md) | ✅ | ✅ | ☐ | ☐ |
+| Balenpost | **Westpost** | [balenpost.md](../../exandria/wildemount/eiselcross/balenpost.md) | ✅ | ✅ | ☐ | ☐ |
+| Mutalos | **Shiftlands** | [mutalos.md](../../exandria/wildemount/eiselcross/mutalos.md) | ✅ | ✅ | ☐ | ☐ |
+| Vurmas | **Duskraft** | [vurmas.md](../../exandria/wildemount/eiselcross/vurmas.md) | ✅ | ✅ | ☐ | ☐ |
+| Syrinlya | **Syrinlya (คงเดิม)** | [syrinlya.md](../../exandria/wildemount/eiselcross/syrinlya.md) | ✅ | ✅ | ☐ | ☐ |
+| Aeor | **Aeor (คงเดิม)** | [aeor.md](../../exandria/wildemount/eiselcross/aeor.md) | ✅ | ✅ | ☐ | ☐ |
+| Salsvault | **Salsvault (คงเดิม)** | [salsavault.md](../../exandria/wildemount/eiselcross/salsavault.md) | ✅ | ✅ | ☐ | ☐ |
+| Fortress of the Dead Jarl | **Fortress of the Dead Jarl (คงเดิม)** | [fortress-of-the-dead-jarl.md](../../exandria/wildemount/eiselcross/fortress-of-the-dead-jarl.md) | ✅ | ✅ | ☐ | ☐ |
