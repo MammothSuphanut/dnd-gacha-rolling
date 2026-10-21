@@ -385,3 +385,13 @@
 | Zenwick | **Mubong** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Hishari (ซากเมือง Tumilo) | **Heukseong** | [hishari.md](../../exandria/issylra/unspecified/hishari.md) | ✅ | ✅ | ☐ | ☐ |
 | Ivaadel | **Shiraki** | [ivaadel.md](../../exandria/issylra/unspecified/ivaadel.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ☀️ Suvarna — Deshret
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Ank'Harel | **Solaria** | [ankharel.md](../../exandria/marquet/rumedam-desert/ankharel.md) | ✅ | ✅ | ☐ | ☐ |
+| Shandal | **Fontana** | [shandal.md](../../exandria/marquet/rumedam-desert/shandal.md) | ✅ | ✅ | ☐ | ☐ |
+| Drowned City (Cael Morrow) | **Sandgrave** | [drowned-city.md](../../exandria/marquet/rumedam-desert/drowned-city.md) | ✅ | ✅ | ☐ | ☐ |
+| Ziggurat แห่ง Smouldercrown Mountains | **Sun Ziggurat** | [ziggurat.md](../../exandria/marquet/rumedam-desert/ziggurat.md) | ✅ | ✅ | ☐ | ☐ |
+| Smouldercrown Mountains | **Emberpeak** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
