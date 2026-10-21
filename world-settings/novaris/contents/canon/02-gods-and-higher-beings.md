@@ -54,7 +54,7 @@
 
 ## การวางเทพและตัวตนชั้นสูงลงพื้นที่ (ข้อ 6 ต่อ)
 
-### Rexxentrum (Wildemount) — Dwendalian Empire
+### Rexxentrum (Aldenreich) — Dwendalian Empire
 - **ผู้ปกครอง: Manfried Dwendal — Elder Star** (หนึ่งในดวงดาวทั้ง 9 ตั้งแต่ที่เป็นที่รู้จักปลาย Founding) — ปกครองแต่ไม่สนใจเรื่องการเมืองหรือการกดขี่เผ่าอื่น
   - **อยู่มาตั้งแต่ยุค Founding** (อายุนับหมื่นถึงเกือบแสนปี) — เดิมชื่อแค่ Manfried เป็น**ทาสของเทพออร์คองค์หนึ่งที่ตายไปแล้ว** (อยู่ใน 228 — ถูกดวงดาวแห่ง Aeor สังหารใน Divergence ขณะที่ Manfried ยืนดู / เขาแค้นจริงหรือไม่สนใจจริง ไม่มีใครรู้ 🔒) และของเผ่าที่ Dwendalian กีดกันอยู่ทุกวันนี้
   - ค่อยๆ เติบโตแข็งแกร่งจนกลายเป็น Elder — อยู่ในดวงดาวทั้ง 9 ตั้งแต่ที่ Elder Star เป็นที่รู้จักปลาย Founding (ก่อนหน้านั้นเขาอาจเป็นหนึ่งใน "เรื่องเล่า")
@@ -74,36 +74,36 @@
 
 | ใคร | ที่ไหน | ตำแหน่ง |
 |---|---|---|
-| Sarenrae | Vasselheim (Issylra) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
-| The Raven Queen | Vasselheim (Issylra) | ผู้พาวิญญาณออกนอกกรง |
-| The Luxon | Rosohna (Wildemount) | ศรัทธาของ Kryn Dynasty |
-| Bane | Tz'Arrm (Tal'Dorei) | เทพของ Iron Authority |
-| Moradin | Kraghammer (Tal'Dorei) | เทพของนครดวาร์ฟใต้ภูเขา |
-| Titania | Verdant Expanse (Tal'Dorei) | ราชินีของเศษเฟย์ที่ติดในโลก |
+| Sarenrae | Vasselheim (Shenzhou) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
+| The Raven Queen | Vasselheim (Shenzhou) | ผู้พาวิญญาณออกนอกกรง |
+| The Luxon | Rosohna (Aldenreich) | ศรัทธาของ Kryn Dynasty |
+| Erathis | Emon (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
+| Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
+| Moradin | Kraghammer (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
+| Titania | Verdant Expanse (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
 
 **ซ่อนตัว**
 
 | ใคร | ที่ไหน | ซ่อนอย่างไร |
 |---|---|---|
-| Bahamut | Rexxentrum (Wildemount) | เด็กเร่ร่อน |
-| Tiamat | ซาก Draconia (Wildemount) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
-| Gruumsh | Greying Wildlands (Wildemount) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
-| Corellon | Uthodurn (Wildemount) | **กลมกลืนอยู่ในนคร** |
-| Vecna | Eiselcross (Wildemount) | **เร่ร่อน**ในซาก Aeor |
-| Lolth | Underdark ใต้ Xhorhas (Wildemount) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
-| Pelor | Whitestone (Tal'Dorei) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
-| Erathis | Emon (Tal'Dorei) | กลมกลืนอยู่ในสาธารณรัฐของเงิน |
-| Avandra | Kymal (Tal'Dorei) | กลมกลืนอยู่ในเมืองคาสิโน |
-| Zehir | Rifenmist / ซาก Qoniira (Tal'Dorei) | ซ่อนในป่าดิบ |
-| Glasya | Stilben (Tal'Dorei) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
-| Sehanine | นครลวงตาใน Issylra | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
-| Torog | ใต้ Vasselheim (Issylra) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
-| Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Utesspire (Issylra) |
-| Asmodeus | Emon (Tal'Dorei) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
-| Ioun | Emon (Tal'Dorei) | กลมกลืนในสถาบัน Emon (ย้ายตามสถาบัน, 2026-10-20) |
-| Melora | ป่า Aeshanadoor (Marquet) | ซ่อนในป่าดิบ |
-| The Great Mother | ใต้ทะเลทราย Rumedam (Marquet) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
-| Tharizdun | ก้นทะเลของทวีปที่จม (Shattered Teeth) | 🔒 ถูกล่ามโซ่ โซ่กำลังอ่อนลง |
+| Bahamut | Rexxentrum (Aldenreich) | เด็กเร่ร่อน |
+| Tiamat | ซาก Draconia (Aldenreich) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
+| Gruumsh | Greying Wildlands (Aldenreich) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
+| Corellon | Uthodurn (Aldenreich) | **กลมกลืนอยู่ในนคร** |
+| Vecna | Eiselcross (Aldenreich) | **เร่ร่อน**ในซาก Aeor |
+| Lolth | Underdark ใต้ Xhorhas (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
+| Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
+| Avandra | Kymal (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
+| Zehir | Rifenmist / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
+| Glasya | Stilben (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
+| Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
+| Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
+| Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Utesspire (Shenzhou) |
+| Asmodeus | Emon (Voxaria) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
+| Ioun | Emon (Voxaria) | กลมกลืนในสถาบัน Emon (ย้ายตามสถาบัน, 2026-10-20) |
+| Melora | ป่า Aeshanadoor (Suvarna) | ซ่อนในป่าดิบ |
+| The Great Mother | ใต้ทะเลทราย Rumedam (Suvarna) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
+| Tharizdun | ก้นทะเลระหว่าง Aldenreich กับ Eldmere — ใต้ซากแผ่นดินของทวีปที่จม | 🔒 ถูกล่ามโซ่ โซ่กำลังอ่อนลง |
 | Baba Yaga | ทั่วโลก | กระท่อมเคลื่อนที่ |
 | Kord (Elder) | ทั่วโลก | เร่ร่อน |
 | Graz'zt (Elder) | ไม่เปิดเผย | สันโดษ |
@@ -112,7 +112,7 @@
 
 #### Octhogal, The Ancient Kraken — ผู้รักษาผนึกของ Tharizdun
 - Divine CR 30 / เป็น**ผู้คุมโซ่คนสุดท้ายที่ยังเหลืออยู่** (ผู้คุมบางองค์ตายใน 228 → โซ่อ่อนลง)
-- ผนึกเดิมอยู่ลึกใต้แผ่นดินของทวีปที่จม → จมลงก้นทะเลพร้อมทวีปตอน Divergence
+- ผนึกเดิมอยู่ลึกใต้แผ่นดินของทวีปที่จม → จมลงก้นทะเลพร้อมทวีปตอน Divergence — ปัจจุบันอยู่**ใต้ทะเลระหว่าง Aldenreich กับ Eldmere** (2026-10-21)
 - เฝ้าผนึกมาตั้งแต่ก่อน Founding — **เบื่อหน่ายเหลือเกิน**
 - **patron ของ warlock ในแคมเปญ**: สัญญาคือ "ใช้ชีวิตอย่างไรก็ได้ให้ Octhogal สนุก แล้วจะมอบพลังให้" (patron ในโลก = พลังเต็ม)
 - hook เสริม (ยังไม่ยืนยัน): ยิ่ง warlock ทำให้สนุก ความสนใจยิ่งละจากผนึก 🔒 / ถ้า Angel of Irons รู้ความเชื่อมโยงของ warlock ได้ อาจได้เบาะแสแรกว่าผนึกอยู่ใต้ทะเล / ถ้าชีวิตน่าเบื่อ Octhogal อาจ "จัดฉาก" เอง

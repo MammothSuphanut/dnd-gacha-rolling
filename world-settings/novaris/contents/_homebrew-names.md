@@ -5,10 +5,10 @@
 
 | ชื่อบนแผนที่ | ประเภท | ทวีป | ตำแหน่งบน Azgaar (x, y) | ที่มา / หมายเหตุ |
 |---|---|---|---|---|
-| Celestial Empire (TBD) | ประเทศ (Empire) | Issylra | — (เขตแดน `region` ใน states.json) | อาณาจักรแบบจีน — canon ยังไม่ตั้งชื่อ |
-| Imperial Capital (TBD) | เมืองหลวง | Issylra | 233.3, 655.6 | เมืองหลวงของ Celestial Empire (TBD) — ยังไม่ตั้งชื่อ |
-| Utesspire Domains (TBD) | ประเทศ (Shogunate) | Issylra | — (เขตแดน `region` ใน states.json) | อาณาจักรแบบญี่ปุ่น — canon ยังไม่ตั้งชื่อ |
-| Shogun Seat (TBD) | เมืองหลวง | Issylra | 166.7, 400.0 | เมืองหลวงของ Utesspire Domains (TBD) — ยังไม่ตั้งชื่อ |
+| Celestial Empire (TBD) | ประเทศ (Empire) | Shenzhou | — (เขตแดน `region` ใน states.json) | อาณาจักรแบบจีน — canon ยังไม่ตั้งชื่อ |
+| Imperial Capital (TBD) | เมืองหลวง | Shenzhou | 233.3, 655.6 | เมืองหลวงของ Celestial Empire (TBD) — ยังไม่ตั้งชื่อ |
+| Utesspire Domains (TBD) | ประเทศ (Shogunate) | Shenzhou | — (เขตแดน `region` ใน states.json) | อาณาจักรแบบญี่ปุ่น — canon ยังไม่ตั้งชื่อ |
+| Shogun Seat (TBD) | เมืองหลวง | Shenzhou | 166.7, 400.0 | เมืองหลวงของ Utesspire Domains (TBD) — ยังไม่ตั้งชื่อ |
 
 ## ที่เกี่ยวข้องแต่ยังไม่ได้ไล่ตรวจ
 

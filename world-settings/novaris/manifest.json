@@ -10,7 +10,7 @@
     },
     {
       "id": "wildemount",
-      "title": "Wildemount",
+      "title": "Aldenreich",
       "overviewPath": "/world-settings/novaris/wildemount/_overview.md",
       "map": {
         "image": "/world-settings/novaris/maps/wildemount/Wildemount.jpg"
@@ -22,7 +22,7 @@
     },
     {
       "id": "tal-dorei",
-      "title": "Tal'Dorei",
+      "title": "Voxaria",
       "overviewPath": "/world-settings/novaris/tal-dorei/_overview.md",
       "map": {
         "image": "/world-settings/novaris/maps/tal-dorei/Tal'Dorei.jpg"
@@ -34,7 +34,7 @@
     },
     {
       "id": "issylra",
-      "title": "Issylra",
+      "title": "Shenzhou",
       "overviewPath": "/world-settings/novaris/issylra/_overview.md",
       "map": {
         "image": "/world-settings/novaris/maps/issylra/Issylra.webp"
@@ -46,7 +46,7 @@
     },
     {
       "id": "marquet",
-      "title": "Marquet",
+      "title": "Suvarna",
       "overviewPath": "/world-settings/novaris/marquet/_overview.md",
       "map": {
         "image": "/world-settings/novaris/maps/marquet/Marquet.webp"
