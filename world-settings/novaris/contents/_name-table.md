@@ -35,17 +35,17 @@
 
 | ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|---|---|
-| ประเทศ | Dwendalian Empire | **Dwendalian Empire** (คงเดิม) | ดเวน-ดา-เลียน | ตั้งตาม Elder Manfried Dwendal | [dwendalian-empire/_overview.md](../../exandria/wildemount/dwendalian-empire/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Kryn Dynasty | **Lumenvael Dynasty** | ลู-เมน-เวล | แสงในเงา — ศรัทธา Luxon | [xhorhas/rosohna.md](../../exandria/wildemount/xhorhas/rosohna.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Clovis Concord | **Lagunara Concord** | ลา-กู-นา-รา | เมืองลากูนแบบเวนิส | [menagerie-coast/port-damali.md](../../exandria/wildemount/menagerie-coast/port-damali.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Diarchy of Uthodurn | **Twinhold Diarchy** | ทวิน-โฮลด์ | ป้อมคู่ — ดวาร์ฟกับเอลฟ์ | [greying-wildlands/uthodurn.md](../../exandria/wildemount/greying-wildlands/uthodurn.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Dwendalian Empire | **Dwendalian Empire** (คงเดิม) |  | ภูมิภาคเดียวกับประเทศ | [dwendalian-empire/_overview.md](../../exandria/wildemount/dwendalian-empire/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Xhorhas | **Ödland** | เอิด-ลันท์ | ดินแดนรกร้าง (ชื่อที่จักรวรรดิเรียกดินแดนศัตรู) | [xhorhas/_overview.md](../../exandria/wildemount/xhorhas/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Blightshore | **Witherstrand** | วิ-เธอ-สแตรนด์ | ชายฝั่งเหี่ยวเฉา | [blightshore/_overview.md](../../exandria/wildemount/blightshore/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Menagerie Coast | **Costa Mosaica** | คอส-ตา โม-ไซ-กา | ชายฝั่งโมเสก ผู้คนหลากหลาย | [menagerie-coast/_overview.md](../../exandria/wildemount/menagerie-coast/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาคย่อย | Swavain Islands | **Isole Smeralde** | อี-โซ-เล สเม-รัล-เด | หมู่เกาะมรกต (ใน Costa Mosaica) | [swavain-islands/_overview.md](../../exandria/wildemount/menagerie-coast/swavain-islands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Greying Wildlands | **Gråmark** | กรอ-มาร์ก | ดินแดนชายแดนสีเทา (นอร์ส) | [greying-wildlands/_overview.md](../../exandria/wildemount/greying-wildlands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Eiselcross | **Eiselcross** (คงเดิม) | ไอ-เซล-ครอส | หมู่เกาะน้ำแข็ง ซาก Aeor | [eiselcross/_overview.md](../../exandria/wildemount/eiselcross/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Dwendalian Empire | **Dwendalian Empire** (คงเดิม) | ดเวน-ดา-เลียน | ตั้งตาม Elder Manfried Dwendal | [dwendalian-empire/_overview.md](../../exandria/wildemount/dwendalian-empire/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ประเทศ | Kryn Dynasty | **Lumenvael Dynasty** | ลู-เมน-เวล | แสงในเงา — ศรัทธา Luxon | [xhorhas/rosohna.md](../../exandria/wildemount/xhorhas/rosohna.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ประเทศ | Clovis Concord | **Lagunara Concord** | ลา-กู-นา-รา | เมืองลากูนแบบเวนิส | [menagerie-coast/port-damali.md](../../exandria/wildemount/menagerie-coast/port-damali.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ประเทศ | Diarchy of Uthodurn | **Twinhold Diarchy** | ทวิน-โฮลด์ | ป้อมคู่ — ดวาร์ฟกับเอลฟ์ | [greying-wildlands/uthodurn.md](../../exandria/wildemount/greying-wildlands/uthodurn.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Dwendalian Empire | **Dwendalian Empire** (คงเดิม) |  | ภูมิภาคเดียวกับประเทศ | [dwendalian-empire/_overview.md](../../exandria/wildemount/dwendalian-empire/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Xhorhas | **Ödland** | เอิด-ลันท์ | ดินแดนรกร้าง (ชื่อที่จักรวรรดิเรียกดินแดนศัตรู) | [xhorhas/_overview.md](../../exandria/wildemount/xhorhas/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Blightshore | **Witherstrand** | วิ-เธอ-สแตรนด์ | ชายฝั่งเหี่ยวเฉา | [blightshore/_overview.md](../../exandria/wildemount/blightshore/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Menagerie Coast | **Costa Mosaica** | คอส-ตา โม-ไซ-กา | ชายฝั่งโมเสก ผู้คนหลากหลาย | [menagerie-coast/_overview.md](../../exandria/wildemount/menagerie-coast/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาคย่อย | Swavain Islands | **Isole Smeralde** | อี-โซ-เล สเม-รัล-เด | หมู่เกาะมรกต (ใน Costa Mosaica) | [swavain-islands/_overview.md](../../exandria/wildemount/menagerie-coast/swavain-islands/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Greying Wildlands | **Gråmark** | กรอ-มาร์ก | ดินแดนชายแดนสีเทา (นอร์ส) | [greying-wildlands/_overview.md](../../exandria/wildemount/greying-wildlands/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Eiselcross | **Eiselcross** (คงเดิม) | ไอ-เซล-ครอส | หมู่เกาะน้ำแข็ง ซาก Aeor | [eiselcross/_overview.md](../../exandria/wildemount/eiselcross/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria
 
@@ -53,48 +53,48 @@
 
 | ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|---|---|
-| รัฐ (เมืองหลวง) | Bladeshimmer Shoreline | **Crownshore** | คราวน์-ชอร์ | ฝั่งมงกุฎ — บัลลังก์ Erathis · Emon | [bladeshimmer-shoreline/_overview.md](../../exandria/tal-dorei/bladeshimmer-shoreline/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| รัฐ | Cliffkeep Mountains | **Forgeheim** | ฟอร์จ-ไฮม์ | บ้านเตาหลอม — ดวาร์ฟ · Kraghammer | [cliffkeep-mountains/_overview.md](../../exandria/tal-dorei/cliffkeep-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| รัฐ | Dividing Plains | **Heartland** | ฮาร์ต-แลนด์ | ใจกลางทวีป ชุมทาง ไร่ คาสิโน · Westruun, Kymal | [dividing-plains/_overview.md](../../exandria/tal-dorei/dividing-plains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| รัฐ | Lucidian Coast | **Blacktide Coast** | แบล็ก-ไทด์ โคสต์ | ชายฝั่งน้ำดำ — มาเฟีย · Stilben | [lucidian-coast/_overview.md](../../exandria/tal-dorei/lucidian-coast/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| รัฐ | Parchwood Timberlands | **Gloamwood** | โกลม-วูด | ป่าสนธยา — กอธิก บรรษัทอาวุธ · Whitestone | [parchwood-timberlands/_overview.md](../../exandria/tal-dorei/parchwood-timberlands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| รัฐ | Stormcrest Mountains | **Thunderspine** | ธัน-เดอร์-สไปน์ | สันหลังสายฟ้า — ชายแดนภูเขา ชนเผ่าออร์ค | [stormcrest-mountains/_overview.md](../../exandria/tal-dorei/stormcrest-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| รัฐ | Rifenmist Peninsula (ตอนใต้) | **Iron Authority** (คงเดิม) | ไอ-เอิร์น ออ-ทอ-ริ-ตี | รัฐทหารฮอบกอบลินของ Bane · Tz'Arrm | [rifenmist-peninsula/_overview.md](../../exandria/tal-dorei/rifenmist-peninsula/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| เขต Gate | Rifenmist Peninsula (ตอนเหนือ) | **Riftwild** | ริฟต์-ไวลด์ | ป่ารอยแยก — มอนสเตอร์ ซาก Qoniira | [rifenmist-peninsula/_overview.md](../../exandria/tal-dorei/rifenmist-peninsula/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| เขต Gate | Verdant Expanse | **The Verge** | เดอะ เวิร์จ | ขอบระหว่างโลกกับเฟย์ — Gate สูงสุด ป่าของ Titania | [verdant-expanse/_overview.md](../../exandria/tal-dorei/verdant-expanse/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| รัฐ (เมืองหลวง) | Bladeshimmer Shoreline | **Crownshore** | คราวน์-ชอร์ | ฝั่งมงกุฎ — บัลลังก์ Erathis · Emon | [bladeshimmer-shoreline/_overview.md](../../exandria/tal-dorei/bladeshimmer-shoreline/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| รัฐ | Cliffkeep Mountains | **Forgeheim** | ฟอร์จ-ไฮม์ | บ้านเตาหลอม — ดวาร์ฟ · Kraghammer | [cliffkeep-mountains/_overview.md](../../exandria/tal-dorei/cliffkeep-mountains/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| รัฐ | Dividing Plains | **Heartland** | ฮาร์ต-แลนด์ | ใจกลางทวีป ชุมทาง ไร่ คาสิโน · Westruun, Kymal | [dividing-plains/_overview.md](../../exandria/tal-dorei/dividing-plains/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| รัฐ | Lucidian Coast | **Blacktide Coast** | แบล็ก-ไทด์ โคสต์ | ชายฝั่งน้ำดำ — มาเฟีย · Stilben | [lucidian-coast/_overview.md](../../exandria/tal-dorei/lucidian-coast/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| รัฐ | Parchwood Timberlands | **Gloamwood** | โกลม-วูด | ป่าสนธยา — กอธิก บรรษัทอาวุธ · Whitestone | [parchwood-timberlands/_overview.md](../../exandria/tal-dorei/parchwood-timberlands/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| รัฐ | Stormcrest Mountains | **Thunderspine** | ธัน-เดอร์-สไปน์ | สันหลังสายฟ้า — ชายแดนภูเขา ชนเผ่าออร์ค | [stormcrest-mountains/_overview.md](../../exandria/tal-dorei/stormcrest-mountains/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| รัฐ | Rifenmist Peninsula (ตอนใต้) | **Iron Authority** (คงเดิม) | ไอ-เอิร์น ออ-ทอ-ริ-ตี | รัฐทหารฮอบกอบลินของ Bane · Tz'Arrm | [rifenmist-peninsula/_overview.md](../../exandria/tal-dorei/rifenmist-peninsula/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| เขต Gate | Rifenmist Peninsula (ตอนเหนือ) | **Riftwild** | ริฟต์-ไวลด์ | ป่ารอยแยก — มอนสเตอร์ ซาก Qoniira | [rifenmist-peninsula/_overview.md](../../exandria/tal-dorei/rifenmist-peninsula/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| เขต Gate | Verdant Expanse | **The Verge** | เดอะ เวิร์จ | ขอบระหว่างโลกกับเฟย์ — Gate สูงสุด ป่าของ Titania | [verdant-expanse/_overview.md](../../exandria/tal-dorei/verdant-expanse/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ⛰️ Shenzhou
 
 | ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|---|---|
-| ประเทศ | Celestial Empire (TBD) | **Tianchao** 天朝 | เทียน-เฉา | ราชสำนักสวรรค์ — อาณาจักรแบบจีน (คาบสมุทรใต้ ครึ่งยุทธภพ) | — | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Celestial Empire (TBD) | **Tianchao** 天朝 | เทียน-เฉา | ราชสำนักสวรรค์ — อาณาจักรแบบจีน (คาบสมุทรใต้ ครึ่งยุทธภพ) | — | ✅ | ✅ | ✅ ร่าง | ☐ |
 | ↳ เมืองหลวง | Imperial Capital (TBD) | **Yujing** 玉京 | อวี้-จิง | นครหยก — นครสวรรค์ในตำนานเต๋า | — | ✅ | ✅ | ✅ ร่าง | ☐ |
-| ประเทศ | Utesspire Domains (TBD) | **Akitsu Shogunate** 秋津 | อา-คิ-ทสึ | ชื่อโบราณเชิงกวีของญี่ปุ่น — แคว้นแบบญี่ปุ่น (ตะวันตก) | — | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Utesspire Domains (TBD) | **Akitsu Shogunate** 秋津 | อา-คิ-ทสึ | ชื่อโบราณเชิงกวีของญี่ปุ่น — แคว้นแบบญี่ปุ่น (ตะวันตก) | — | ✅ | ✅ | ✅ ร่าง | ☐ |
 | ↳ เมืองหลวง | Shogun Seat (TBD) | **Shirasagi** 白鷺 | ชิ-รา-ซา-งิ | ปราสาทนกกระยางขาว | — | ✅ | ✅ | ✅ ร่าง | ☐ |
-| ประเทศ + ภูมิภาค | Othanzia | **Amanokado** 天の門 | อา-มะ-โนะ-คา-โดะ | ประตูสวรรค์ — นครเทพ Vasselheim (ครึ่งญี่ปุ่น; เดิมตั้ง Tianmen) | [othanzia/_overview.md](../../exandria/issylra/othanzia/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาคย่อย | Vesper Timberland | **Yūgure Forest** 夕暮れ | ยู-งุ-เระ | ป่าสนธยา (ใน Amanokado) | [vesper-timberland/_overview.md](../../exandria/issylra/othanzia/vesper-timberland/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาคย่อย | Sunderpeak Mountains | **Kazan Range** 火山 | คา-ซัง | ภูเขาไฟใกล้นครเทพ ที่ตั้งวัด Fire Ashari (ใน Amanokado) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ + ภูมิภาค | Othanzia | **Amanokado** 天の門 | อา-มะ-โนะ-คา-โดะ | ประตูสวรรค์ — นครเทพ Vasselheim (ครึ่งญี่ปุ่น; เดิมตั้ง Tianmen) | [othanzia/_overview.md](../../exandria/issylra/othanzia/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาคย่อย | Vesper Timberland | **Yūgure Forest** 夕暮れ | ยู-งุ-เระ | ป่าสนธยา (ใน Amanokado) | [vesper-timberland/_overview.md](../../exandria/issylra/othanzia/vesper-timberland/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาคย่อย | Sunderpeak Mountains | **Kazan Range** 火山 | คา-ซัง | ภูเขาไฟใกล้นครเทพ ที่ตั้งวัด Fire Ashari (ใน Amanokado) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 | สันเขา (ใหม่) | — | **Cheonsan** 天山 | ช็อน-ซัน | ฝั่งใต้ของเทือกเขาเส้นแบ่งญี่ปุ่น/ยุทธภพ — ที่ตั้งสำนักฝ่ายธรรมะ | — | ✅ | ✅ | ✅ ร่าง | ☐ |
-| ภูมิภาค | Demithore Valley | **Jungwon** 中原 | จุง-วอน | ที่ราบกลาง — ชุมทางคาราวาน ใจกลางยุทธภพ | [demithore-valley/_overview.md](../../exandria/issylra/demithore-valley/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Caramarin Reach | **Mizuho** 瑞穂 | มิ-ซุ-โฮะ | ทุ่งรวงข้าวงาม — ในเขต Akitsu | — | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Utesspire Mountains | **Tengu Range** 天狗岳 | เท็ง-งุ | ภูเขาของโยไคเท็งงุ — กั้น Akitsu จากส่วนอื่น | [utesspire-mountains.md](../../exandria/issylra/unspecified/utesspire-mountains.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Thorain Tundra | **Tsagaan Tal** | ทซา-กาน ทาล | ทุ่งขาว (มองโกล) — ชนเผ่าเหนือ | [thorain-tundra.md](../../exandria/issylra/unspecified/thorain-tundra.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Demithore Valley | **Jungwon** 中原 | จุง-วอน | ที่ราบกลาง — ชุมทางคาราวาน ใจกลางยุทธภพ | [demithore-valley/_overview.md](../../exandria/issylra/demithore-valley/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Caramarin Reach | **Mizuho** 瑞穂 | มิ-ซุ-โฮะ | ทุ่งรวงข้าวงาม — ในเขต Akitsu | — | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Utesspire Mountains | **Tengu Range** 天狗岳 | เท็ง-งุ | ภูเขาของโยไคเท็งงุ — กั้น Akitsu จากส่วนอื่น | [utesspire-mountains.md](../../exandria/issylra/unspecified/utesspire-mountains.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Thorain Tundra | **Tsagaan Tal** | ทซา-กาน ทาล | ทุ่งขาว (มองโกล) — ชนเผ่าเหนือ | [thorain-tundra.md](../../exandria/issylra/unspecified/thorain-tundra.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ☀️ Suvarna
 
 | ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|---|---|
-| ประเทศ | Ank'Harel (ประเทศ) | **Imperium Solis** | อิม-เพ-ริ-อุม โซ-ลิส | จักรวรรดิสุริยะ แบบโรมัน (เมืองหลวง Ank'Harel — ชื่อเมืองไว้ชั้นสถานที่) | [ankharel.md](../../exandria/marquet/rumedam-desert/ankharel.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Chandei Quorum | **Pancha Sabha** ปัญจสภา | ปัน-จะ-สะ-พา | สภาแห่งห้า — นครห้ายอด Jrusar ใต้ Elder Seren | [jrusar.md](../../exandria/marquet/oderan-wilds/jrusar.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Court of the Lambent Path | **Jyoti Marga** โชติมรรค | โช-ติ-มัก | ทางแห่งแสง — นครปราชญ์ Yios | [yios.md](../../exandria/marquet/aeshanadoor/yios.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Stratos Throne | **Ehrvarn Conquest** | แอร์-วาร์น คอน-เควสต์ | ดินแดนของผู้พิชิต — ผู้นำคือผู้พิชิตหอคอย (บัลลังก์ของ Stratos ยังว่าง) | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Bassur Republic | **Varga Republic** | วาร์-กา | หมาป่า (นอร์ส) — สาธารณรัฐแค่ในนาม | [gujjar-serai.md](../../exandria/marquet/hellcatch-valley/gujjar-serai.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Rumedam Desert | **Deshret** | เดช-เร็ต | แผ่นดินแดง (อียิปต์โบราณ = ทะเลทราย) | [rumedam-desert/_overview.md](../../exandria/marquet/rumedam-desert/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Oderan Wilds | **Himmapan Wilds** ป่าหิมพานต์ | หิม-มะ-พาน | ป่าในตำนานไทย | [oderan-wilds/_overview.md](../../exandria/marquet/oderan-wilds/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Aeshanadoor | **Dandaka** ทัณฑกะ | ทัน-ดะ-กะ | ป่าใหญ่ในรามายณะ | [aeshanadoor/_overview.md](../../exandria/marquet/aeshanadoor/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Hellcatch Valley | **Ulfdal** | อุลฟ์-ดาล | หุบเขาหมาป่า | [hellcatch-valley/_overview.md](../../exandria/marquet/hellcatch-valley/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Taloned Highlands | **Ehrvarn Highlands** | แอร์-วาร์น | ที่ราบสูงของเผ่า Ehrvarn | [taloned-highlands/_overview.md](../../exandria/marquet/taloned-highlands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาค | Aggrad Mountains | **Jarnfell** | ยาร์น-เฟลล์ | ภูเขาเหล็ก — เมืองท่าไวกิ้ง Shammel | [aggrad-mountains/_overview.md](../../exandria/marquet/aggrad-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Ank'Harel (ประเทศ) | **Imperium Solis** | อิม-เพ-ริ-อุม โซ-ลิส | จักรวรรดิสุริยะ แบบโรมัน (เมืองหลวง Ank'Harel — ชื่อเมืองไว้ชั้นสถานที่) | [ankharel.md](../../exandria/marquet/rumedam-desert/ankharel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ประเทศ | Chandei Quorum | **Pancha Sabha** ปัญจสภา | ปัน-จะ-สะ-พา | สภาแห่งห้า — นครห้ายอด Jrusar ใต้ Elder Seren | [jrusar.md](../../exandria/marquet/oderan-wilds/jrusar.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ประเทศ | Court of the Lambent Path | **Jyoti Marga** โชติมรรค | โช-ติ-มัก | ทางแห่งแสง — นครปราชญ์ Yios | [yios.md](../../exandria/marquet/aeshanadoor/yios.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ประเทศ | Stratos Throne | **Ehrvarn Conquest** | แอร์-วาร์น คอน-เควสต์ | ดินแดนของผู้พิชิต — ผู้นำคือผู้พิชิตหอคอย (บัลลังก์ของ Stratos ยังว่าง) | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ประเทศ | Bassur Republic | **Varga Republic** | วาร์-กา | หมาป่า (นอร์ส) — สาธารณรัฐแค่ในนาม | [gujjar-serai.md](../../exandria/marquet/hellcatch-valley/gujjar-serai.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Rumedam Desert | **Deshret** | เดช-เร็ต | แผ่นดินแดง (อียิปต์โบราณ = ทะเลทราย) | [rumedam-desert/_overview.md](../../exandria/marquet/rumedam-desert/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Oderan Wilds | **Himmapan Wilds** ป่าหิมพานต์ | หิม-มะ-พาน | ป่าในตำนานไทย | [oderan-wilds/_overview.md](../../exandria/marquet/oderan-wilds/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Aeshanadoor | **Dandaka** ทัณฑกะ | ทัน-ดะ-กะ | ป่าใหญ่ในรามายณะ | [aeshanadoor/_overview.md](../../exandria/marquet/aeshanadoor/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Hellcatch Valley | **Ulfdal** | อุลฟ์-ดาล | หุบเขาหมาป่า | [hellcatch-valley/_overview.md](../../exandria/marquet/hellcatch-valley/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Taloned Highlands | **Ehrvarn Highlands** | แอร์-วาร์น | ที่ราบสูงของเผ่า Ehrvarn | [taloned-highlands/_overview.md](../../exandria/marquet/taloned-highlands/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | Aggrad Mountains | **Jarnfell** | ยาร์น-เฟลล์ | ภูเขาเหล็ก — เมืองท่าไวกิ้ง Shammel | [aggrad-mountains/_overview.md](../../exandria/marquet/aggrad-mountains/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌊 Eldmere
 
