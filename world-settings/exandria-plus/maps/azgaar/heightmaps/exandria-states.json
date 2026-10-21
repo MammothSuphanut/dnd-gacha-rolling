@@ -4,205 +4,220 @@
   "formName": "Empire",
   "fullName": "Dwendalian Empire",
   "capital": "Rexxentrum",
-  "x": 1393.3,
+  "x": 1418.3,
   "y": 345.2,
   "expansionism": 3.0,
   "color": "#b33a3a",
   "region": [
    [
-    1033.3,
+    1058.3,
     311.1
    ],
    [
-    1111.1,
+    1136.1,
     277.8
    ],
    [
-    1277.8,
+    1302.8,
     266.7
    ],
    [
-    1377.8,
+    1402.8,
     238.9
    ],
    [
-    1444.4,
+    1469.4,
     261.1
    ],
    [
-    1483.3,
+    1508.3,
     311.1
    ],
    [
-    1488.9,
+    1513.9,
     422.2
    ],
    [
-    1477.8,
+    1502.8,
     522.2
    ],
    [
-    1444.4,
+    1469.4,
     622.2
    ],
    [
-    1333.3,
+    1358.3,
     655.6
    ],
    [
-    1277.8,
+    1302.8,
     577.8
    ],
    [
-    1255.6,
+    1280.6,
     488.9
    ],
    [
-    1216.7,
+    1241.7,
     455.6
    ],
    [
-    1155.6,
+    1180.6,
     422.2
    ],
    [
-    1077.8,
+    1102.8,
     388.9
    ],
    [
-    1033.3,
+    1058.3,
     355.6
    ]
   ],
-  "population": 300
+  "population": 300,
+  "labelSize": 80
  },
  {
   "name": "Kryn",
   "formName": "Dynasty",
   "fullName": "Kryn Dynasty",
   "capital": "Rosohna",
-  "x": 1634.9,
+  "x": 1659.9,
   "y": 466.4,
   "expansionism": 2.5,
   "color": "#4b3f8f",
   "region": [
    [
-    1483.3,
+    1508.3,
     311.1
    ],
    [
-    1600.0,
+    1625.0,
     283.3
    ],
    [
-    1688.9,
+    1713.9,
     294.4
    ],
    [
-    1733.3,
+    1758.3,
     333.3
    ],
    [
-    1711.1,
+    1736.1,
     400.0
    ],
    [
-    1672.2,
+    1697.2,
     444.4
    ],
    [
-    1666.7,
+    1691.7,
     511.1
    ],
    [
-    1600.0,
+    1625.0,
     533.3
    ],
    [
-    1511.1,
+    1536.1,
     533.3
    ],
    [
-    1488.9,
+    1513.9,
     422.2
    ]
   ],
-  "population": 200
+  "population": 200,
+  "labelSize": 55
  },
  {
   "name": "Clovis",
   "formName": "Concord",
   "fullName": "Clovis Concord",
   "capital": "Port Damali",
-  "x": 1244.8,
+  "x": 1269.8,
   "y": 526.2,
   "expansionism": 1.2,
   "color": "#2f8f8a",
   "region": [
    [
-    1150.0,
+    1175.0,
     438.9
    ],
    [
-    1227.8,
+    1252.8,
     450.0
    ],
    [
-    1266.7,
+    1291.7,
     488.9
    ],
    [
-    1277.8,
+    1302.8,
     555.6
    ],
    [
-    1333.3,
+    1358.3,
     600.0
    ],
    [
-    1322.2,
+    1347.2,
     638.9
    ],
    [
-    1244.4,
+    1269.4,
     677.8
    ],
    [
-    1155.6,
+    1180.6,
     677.8
    ],
    [
-    1133.3,
+    1158.3,
     577.8
    ]
   ],
-  "population": 180
+  "population": 180,
+  "labelSize": 60
  },
  {
   "name": "Uthodurn",
   "formName": "Diarchy",
   "fullName": "Diarchy of Uthodurn",
   "capital": "Uthodurn",
-  "x": 1516.6,
+  "x": 1541.6,
   "y": 220.3,
   "expansionism": 5.0,
   "color": "#7f8c99",
   "region": [
    [
-    1466.7,
-    194.4
+    1515.0,
+    166.0
    ],
    [
-    1577.8,
-    188.9
+    1557.0,
+    168.0
    ],
    [
-    1588.9,
+    1605.0,
+    186.0
+   ],
+   [
+    1613.9,
     238.9
    ],
    [
-    1500.0,
+    1525.0,
     250.0
+   ],
+   [
+    1491.7,
+    205.0
+   ],
+   [
+    1513.0,
+    190.0
    ]
   ],
   "population": 50
@@ -286,7 +301,8 @@
     388.9
    ]
   ],
-  "population": 3500
+  "population": 3500,
+  "labelSize": 100
  },
  {
   "name": "Iron Authority",
@@ -348,7 +364,8 @@
     405.6
    ]
   ],
-  "population": 250
+  "population": 250,
+  "stateLabel": false
  },
  {
   "name": "Whitestone",
@@ -385,7 +402,8 @@
     388.9
    ]
   ],
-  "population": 250
+  "population": 250,
+  "stateLabel": false
  },
  {
   "name": "Syngorn",
@@ -414,7 +432,8 @@
     583.3
    ]
   ],
-  "population": 80
+  "population": 80,
+  "stateLabel": false
  },
  {
   "name": "Othanzia",
@@ -447,7 +466,8 @@
     333.3
    ]
   ],
-  "population": 200
+  "population": 200,
+  "labelSize": 85
  },
  {
   "name": "Celestial Empire (TBD)",
@@ -529,7 +549,8 @@
     511.1
    ]
   ],
-  "population": 80
+  "population": 80,
+  "labelSize": 50
  },
  {
   "name": "Ank'Harel",
@@ -574,7 +595,8 @@
     866.7
    ]
   ],
-  "population": 600
+  "population": 600,
+  "labelSize": 110
  },
  {
   "name": "Chandei Quorum",
@@ -607,7 +629,8 @@
     955.6
    ]
   ],
-  "population": 150
+  "population": 150,
+  "labelSize": 95
  },
  {
   "name": "Lambent Path",
@@ -644,7 +667,8 @@
     1088.9
    ]
   ],
-  "population": 80
+  "population": 80,
+  "labelSize": 80
  },
  {
   "name": "Stratos Throne",
@@ -677,7 +701,8 @@
     1177.8
    ]
   ],
-  "population": 60
+  "population": 60,
+  "labelSize": 75
  },
  {
   "name": "Bassur",
@@ -710,6 +735,7 @@
     1044.4
    ]
   ],
-  "population": 25
+  "population": 25,
+  "labelSize": 60
  }
 ]

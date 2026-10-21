@@ -51,7 +51,7 @@ cd world-settings/exandria-plus/maps/azgaar
 git clone https://github.com/Azgaar/Fantasy-Map-Generator.git app
 git -C app checkout 8936c9c235d08fe3eac1b00ec5b74fb57ed791cc
 git -C app apply ../exandria-azgaar.patch
-cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-biomes.json heightmaps/exandria-rivers.json heightmaps/exandria-states.json heightmaps/exandria-burgs.json heightmaps/exandria-cultures.json heightmaps/exandria-religions.json heightmaps/exandria-labels.json app/public/heightmaps/
+cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-biomes.json heightmaps/exandria-rivers.json heightmaps/exandria-states.json heightmaps/exandria-burgs.json heightmaps/exandria-cultures.json heightmaps/exandria-religions.json heightmaps/exandria-labels.json heightmaps/exandria-lava.json heightmaps/exandria-peaks.json app/public/heightmaps/
 ```
 
 ## ค่าที่ตั้งใน Azgaar
@@ -108,10 +108,27 @@ python scripts/make_mid.py "<high res png>" mid.png
 python scripts/make_heightmap.py mid.png heightmaps/exandria.png hm_preview.png
 python scripts/make_biomemap.py mid.png heightmaps/exandria.png heightmaps/exandria-biomes.png biomes_preview.png
 python scripts/make_rivers.py mid.png heightmaps/exandria.png heightmaps/exandria-rivers.json rivers_preview.png
-cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-biomes.json heightmaps/exandria-rivers.json heightmaps/exandria-states.json heightmaps/exandria-burgs.json heightmaps/exandria-cultures.json heightmaps/exandria-religions.json heightmaps/exandria-labels.json app/public/heightmaps/
+python scripts/make_peaks.py mid.png heightmaps/exandria.png heightmaps/exandria-peaks.json
+cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-biomes.json heightmaps/exandria-rivers.json heightmaps/exandria-states.json heightmaps/exandria-burgs.json heightmaps/exandria-cultures.json heightmaps/exandria-religions.json heightmaps/exandria-labels.json heightmaps/exandria-lava.json heightmaps/exandria-peaks.json app/public/heightmaps/
 ```
 
 `make_biomemap.py` และ `make_rivers.py` ต้องรันหลัง `make_heightmap.py` เสมอ (ใช้ heightmap เป็นตัวกำหนดแผ่นดิน/ภูเขา)
+
+### ช่องแคบ Tal'Dorei – Wildemount (`scripts/east_shift.py`)
+แผนที่ต้นฉบับวาดสองทวีปเกือบติดกันทางเหนือ (~6 px ≈ 280 ไมล์) → Exandria+ เลื่อน **Wildemount + Eiselcross + Shattered Teeth ไปทางตะวันออก 25 px** (`SHIFT`) ช่องแคบที่แคบสุดเหลือ **~26 px ≈ 1,120 ไมล์** (วัดแนวทแยง; แนวนอนตามละติจูด ~31 px ≈ 1,350 ไมล์) — ขอบขวาเหลือที่ว่างไม่พอจะเลื่อนมากกว่านี้โดยไม่ขยายแผนที่
+- `make_mid.py` เลื่อนภาพทำงาน (`mid.png`) ทุกครั้ง → ทุกสคริปต์และพิกัดที่ใส่มือในสคริปต์ (กรอบ, `MASSIFS`, `CAPS`, `SEA_FIX` ฯลฯ) อยู่ในพิกัด**หลังเลื่อน**แล้ว
+- ไฟล์ JSON ใน `heightmaps/` (burgs, states, cultures, labels, rivers, lava) เก็บพิกัดหลังเลื่อน — ถ้าอ่านพิกัดจากแผนที่ต้นฉบับใหม่ (ฝั่งตะวันออกของ `LINE`) ต้องบวก 25 ด้วย `east_shift.shift_point()`
+- `grid_compare.py` เลื่อนภาพต้นฉบับแบบเดียวกันก่อนเทียบ (cache `exports/grid/_original-5400-shifted.png`)
+- `LINE` = เส้นทางทะเลระหว่างสองฝั่ง (พิกัดก่อนเลื่อน) — ทุกอย่างทางตะวันออกของเส้นเลื่อน
+
+### Wildemount ใช้แผนที่ทวีปทางการช่วย (`scripts/wildemount_ref.py`)
+แผนที่โลกวาด Wildemount หยาบ (ป่าม่วงทับ Savalirwood, Penumbra Range เป็นหย่อม, Rosohna Blight เล็ก) → `wildemount_ref.py` warp แผนที่ `maps/wildemount/Wildemount.jpg` ลงพิกัด Azgaar (thin-plate spline ผ่านตำแหน่งเมือง 61 แห่งใน `PINS`) แล้ว:
+- `make_biomemap.py` — บนแผ่นดิน Wildemount (ยกเว้น Eiselcross): ป่า/ทุ่งตามสีเขียวของแผนที่ทางการ (ป่าทั้งผืนเป็นชนิดเดียว เขียวเข้มแบบต้นฉบับ: ทางเหนือ Taiga, Quoraska Jungle เขตร้อน, ที่เหลือ Temperate rainforest) และ Rosohna Blight ตามผืนแดง · หิมะ/น้ำแข็งคงตามแผนที่โลก · Xhorhas Badlands เฉพาะตะวันออกของสันเขา Dunrock → Ashkeeper (`crest_x/crest_y`) ไม่รวม Rime Plains และ Far Hharom
+- `make_heightmap.py` — ภูเขาทั้งทวีป Wildemount ใช้**เฉพาะเทือกเขาของแผนที่ทางการ** (ไม่เอาภูเขาที่แผนที่โลกโรยไว้บน Rime Plains, Barbed Fields, Bromkiln Hills) · หมึกภูเขา ×2.5 · เทือกเขาหน้าสว่างที่หมึกจับไม่ติด (Uthodurn, Cyrios Mountains, เขาฝั่งตะวันตกของ Copia Lake) วาดเป็น polygon ใน `MASSIFS` · `CAPS` = จำกัดความสูงเป็นจุด (แอ่ง Barbed Fields รอบ Rosohna = 0, Bromkiln Hills = เนิน, ตัวหนังสือ XHORHAS = 0)
+- ทะเลสาบใน Wildemount: แผนที่โลกวาดกว้างกว่าแผนที่ทางการหลายเท่า → เก็บไว้แค่ครึ่งในของแต่ละทะเลสาบ (Copia Lake, Sorrowseep Waters, Feverguff Lake, Kaltenloch ฯลฯ)
+- `make_peaks.py` — วางไอคอนภูเขาบน Flotket Alps / Mythburrow ตามแผนที่ทางการด้วย
+- ตำแหน่งป้ายชื่อภูมิภาค Wildemount ใน `exandria-labels.json` แปลงจากตำแหน่งป้ายบนแผนที่ทางการ (`transforms()`)
+ดูผลการจับ: `python scripts/wildemount_ref.py preview.png`
 
 ### ปรับได้ใน `make_heightmap.py`
 - `boxes` — กรอบป้าย/legend บนแผนที่ต้นฉบับที่ต้องตัดทิ้ง (พิกัดแบบ 1620×1080)
@@ -126,11 +143,13 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 | id | ชื่อ | สี | habitability | จับจาก |
 |---|---|---|---|---|
 | 13 | Xhorhas Badlands | `#a08660` | 15 | พื้นสีน้ำตาลฝั่งตะวันออกของ Wildemount (ตะวันออกของแนวเขา Ashkeeper) |
-| 14 | Greying Wildlands | `#6f6680` | 6 | ป่าทึบสีม่วงเทาใต้แผ่นน้ำแข็งทางเหนือของ Wildemount (ส่วนที่เป็นหิมะยังเป็น Glacier) |
+| 14 | Greying Wildlands | `#6f6680` | 6 | **ไม่ได้ใช้แล้ว** (คงไว้ให้ id เรียงต่อกัน) — ป่าม่วงของแผนที่โลกตรงนี้คือ Savalirwood/Pearlbow ซึ่งแผนที่ทางการเป็นป่าเขียว |
 | 15 | Rosohna Blight | `#8e2b2b` | 2 | พื้นที่สีแดงกลาง Xhorhas |
-| 16 | Lava Flow | `#e0561b` | 0 | ธารลาวาผ่ากลางเกาะ Foren (Eiselcross) — วาดตามเส้น `LAVA` (พิกัด 1800×1200) · `noIce: true` = cell ที่อยู่ในหรือห่างแถบนี้ไม่เกิน 2 px เป็นลาวาทั้งหมดและ Azgaar ไม่วาดน้ำแข็งทับ (`noIceBiomeAt` ใน patch) |
+| 16 | Lava Flow | `#e0561b` | 0 | **ไม่ได้วาดเป็น biome แล้ว** — ธารลาวา (River Inferno) บน Foren วาดเป็นเส้นจาก `heightmaps/exandria-lava.json` (layer `lavaFlows`, `draw-lava-flows.ts` ใน patch) |
 
-ทางเหนือของ Greying Wildlands บนแผ่นดินใหญ่ (Crystalsands Tundra, Flotket Alps, Rime Plains) ภาพโลกวาดเป็นหิมะ แต่แผนที่ Wildemount เป็นทุนดรา → แปลง Glacier เป็น Tundra และสี Tundra ใน patch เปลี่ยนเป็นครีมซีด `#d8d2bd` (เดิมน้ำตาล `#96784b`)
+ทางเหนือของ Greying Wildlands บนแผ่นดินใหญ่ ภาพโลกวาดเป็นหิมะ: **Crystalsands Tundra คงเป็นน้ำแข็งขาว** (DM เลือก, grid review E1) · ฝั่งตะวันออก/ใต้ของแนวเขา Palebank → Flotket Alps (Uthodurn, Flotket Alps, Rime Plains) แปลง Glacier เป็น Tundra ตามแผนที่ Wildemount (polygon `cs` ใน `make_biomemap.py`) และสี Tundra ใน patch เปลี่ยนเป็นครีมซีด `#d8d2bd` (เดิมน้ำตาล `#96784b`) · ไอคอนภูเขาในโซนของ `make_peaks.py` วางตาม `exandria-peaks.json` ทั้งบน Glacier และ Tundra
+
+เทือกเขารอบ Uthodurn (Palebank → Kravaraad → Cinderrest Sanctum → Uthodurn) บนแผนที่ทางการเป็นภูเขาหน้าสว่างที่กฎหมึกจับได้แค่ด้านเงา → วาดเป็น polygon ใน `MASSIFS` ของ `wildemount_ref.py` (ใช้ทั้ง heightmap และ peaks)
 
 บน Eiselcross (กรอบ `eisel`) biome ที่จับได้เป็นทุ่งหญ้า/สะวันนา/ป่า แปลงเป็น Tundra ทั้งหมด (สีซีดของภาพต้นฉบับไม่ใช่ทุ่งหญ้า)
 
@@ -145,6 +164,8 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 - แต่ละรายการ = 1 ประเทศ: Azgaar วางเมืองหลวงที่ `x,y` (cell ที่มีคนใกล้สุด) ใช้ `name`/`capital` ตามไฟล์ และขยายเขตแดนตามปกติ แต่**ห้ามออกนอก `region`** (polygon พิกัด 1800×1200, ขอบสั่นเล็กน้อยให้ดูเป็นธรรมชาติ)
 - สี/ชื่อเต็ม/รูปแบบ ล็อกไว้ (`lock`) ไม่ให้ Azgaar เปลี่ยน · พื้นที่นอก region ทุกประเทศ = ดินแดนไร้รัฐ (Neutrals ~27% ของแผ่นดิน: Greying Wildlands, Xhorhas ใต้/Blightshore, Rifenmist/Verdant, Thorain, เกาะต่าง ๆ, Shattered Teeth)
 - `expansionism` = ความไวในการขยายภายใน region (นครรัฐตั้ง 5 ให้เต็มพื้นที่เล็ก ๆ ของตัวเอง)
+- `labelSize` = ขนาดป้ายชื่อประเทศ (%) — ตั้งไว้ให้ป้ายใหญ่ไม่ทับชื่อภูมิภาค (Tal'Dorei 100, Ank'Harel 110, Bassur 60 ฯลฯ) · `"stateLabel": false` = ไม่วาดป้ายประเทศ ใช้กับนครรัฐที่ชื่อเมืองหลวงซ้ำกับชื่อประเทศ (Kraghammer, Whitestone, Syngorn)
+- ลำดับชั้นป้าย: ป้ายประเทศและชื่อภูมิภาคอยู่**ใต้**ชื่อเมือง (`options.map.labels.groups` ใน `.map`) ชื่อเมืองจึงไม่ถูกป้ายใหญ่บัง
 - ชื่อที่มี `(TBD)` = canon ยังไม่ได้ตั้งชื่อ (อาณาจักรจีน, แคว้นญี่ปุ่น) — แก้ในไฟล์แล้ว generate ใหม่
 
 ### เมือง (`exandria-burgs.json`)
@@ -157,6 +178,6 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 - **ชื่อภูมิภาค**: added labels จาก `exandria-labels.json` ใส่ตอนสร้างแผนที่ · `size` = ขนาดตัวอักษร % ของกลุ่ม (30–300) ใช้กับชื่อเล็ก เช่น เกาะ Eiselcross 60, ภูมิประเทศย่อยของ Wildemount 45
 
 ### ข้อจำกัดที่รู้แล้ว
-- เกาะจิ๋วระดับจุด (เล็กกว่า ~1 cell) ยังหาย เช่นเกาะหินเล็ก ๆ รอบ Shattered Teeth
+- เกาะจิ๋วระดับจุด (เล็กกว่า ~1 cell) ยังหายนอก Shattered Teeth — ใน Shattered Teeth `make_heightmap.py` ใส่เกาะหินสีเขียวที่ opening ลบทิ้งกลับเป็นวงกว้าง ~1.5 cell (ไม่รวมตัวหนังสือสีน้ำตาลแดง)
 - ป่าจับจาก "ความหนาแน่นไอคอนต้นไม้" (พิกเซลเขียวเข้มในรัศมี ~15px ของภาพ 3240 > 17%) แล้วแยกชนิดตามละติจูด: เหนือ = Taiga, กลาง = Temperate deciduous, ใต้ = Tropical rainforest — รอยต่อแถบละติจูดยังเห็นเป็นเส้นได้บางจุด (เช่นกลาง Tal'Dorei ใต้)
 - แม่น้ำจับได้เฉพาะเส้นที่เห็นชัด (83 สาย) — เส้นจาง ๆ บางสายหลุด; ส่วนที่ไม่มีแม่น้ำในต้นฉบับจะไม่มีแม่น้ำเลย เพิ่มเองได้ด้วยปุ่ม "Add river" ของ Azgaar (คลิกจุดเดียว แม่น้ำไหลลงเนินจนถึงน้ำให้เอง)

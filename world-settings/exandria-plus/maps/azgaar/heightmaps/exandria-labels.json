@@ -1,48 +1,49 @@
 [
  {
   "text": "Zemni Fields",
-  "x": 1344.4,
+  "x": 1369.4,
   "y": 363.3
  },
  {
   "text": "Marrow Valley",
-  "x": 1444.4,
-  "y": 416.7
+  "x": 1495,
+  "y": 428
  },
  {
   "text": "Pearlbow Wilderness",
-  "x": 1405.6,
-  "y": 302.2
+  "x": 1411,
+  "y": 320
  },
  {
   "text": "Greying Wildlands",
-  "x": 1511.1,
-  "y": 277.8
+  "x": 1585,
+  "y": 150
  },
  {
   "text": "Xhorhas",
-  "x": 1577.8,
-  "y": 433.3
+  "x": 1597,
+  "y": 408
  },
  {
   "text": "Blightshore",
-  "x": 1688.9,
-  "y": 455.6
+  "x": 1737,
+  "y": 505
  },
  {
   "text": "Menagerie Coast",
-  "x": 1177.8,
-  "y": 511.1
+  "x": 1137,
+  "y": 472
  },
  {
   "text": "Eiselcross",
-  "x": 1228.0,
+  "x": 1253.0,
   "y": 196.0
  },
  {
   "text": "Dividing Plains",
-  "x": 877.8,
-  "y": 466.7
+  "x": 872,
+  "y": 517,
+  "size": 60
  },
  {
   "text": "Cliffkeep Mountains",
@@ -51,23 +52,23 @@
  },
  {
   "text": "Bladeshimmer Shoreline",
-  "x": 746.7,
-  "y": 444.4
+  "x": 721.7,
+  "y": 422.4
  },
  {
   "text": "Lucidian Coast",
-  "x": 968.9,
-  "y": 472.2
+  "x": 1004.9,
+  "y": 497.2
  },
  {
   "text": "Verdant Expanse",
   "x": 816.7,
-  "y": 583.3
+  "y": 585.3
  },
  {
   "text": "Rifenmist Peninsula",
   "x": 844.4,
-  "y": 672.2
+  "y": 648.2
  },
  {
   "text": "Stormcrest Mountains",
@@ -77,25 +78,25 @@
  {
   "text": "Parchwood Timberlands",
   "x": 988.9,
-  "y": 383.3
+  "y": 368.3
  },
  {
   "text": "Caramarin Reach",
   "x": 222.2,
-  "y": 400.0
+  "y": 392
  },
  {
   "text": "Utesspire Mountains",
   "x": 238.9,
-  "y": 477.8
+  "y": 496.8
  },
  {
   "text": "Demithore Valley",
   "x": 355.6,
-  "y": 427.8
+  "y": 443.8
  },
  {
-  "text": "Vesper Timberlands",
+  "text": "Vesper Timberland",
   "x": 466.7,
   "y": 346.7
  },
@@ -107,7 +108,7 @@
  {
   "text": "Rumedam Desert",
   "x": 411.1,
-  "y": 888.9
+  "y": 899.9
  },
  {
   "text": "Oderan Wilds",
@@ -116,8 +117,8 @@
  },
  {
   "text": "Hellcatch Valley",
-  "x": 311.1,
-  "y": 1005.6
+  "x": 290,
+  "y": 1047
  },
  {
   "text": "Taloned Highlands",
@@ -127,11 +128,11 @@
  {
   "text": "Aeshanadoor",
   "x": 522.2,
-  "y": 1050.0
+  "y": 1043
  },
  {
   "text": "Shattered Teeth",
-  "x": 1366.7,
+  "x": 1391.7,
   "y": 1038.9
  },
  {
@@ -155,133 +156,223 @@
   "y": 1144.4
  },
  {
-  "text": "Emerald Gulch Sea",
-  "x": 1577.8,
-  "y": 316.7
+  "text": "The Emerald Gulch",
+  "x": 1617,
+  "y": 325
  },
  {
   "text": "Foren",
-  "x": 1368.0,
-  "y": 129.0
+  "x": 1393.0,
+  "y": 129.0,
+  "size": 60
  },
  {
   "text": "Biessel",
-  "x": 1223.0,
+  "x": 1248.0,
   "y": 63.0,
-  "size": 60
+  "size": 40
  },
  {
   "text": "Gelier",
-  "x": 1247.0,
+  "x": 1272.0,
   "y": 117.0,
-  "size": 60
+  "size": 40
  },
  {
   "text": "Schneescel",
-  "x": 1276.0,
+  "x": 1301.0,
   "y": 155.0,
-  "size": 60
+  "size": 40
  },
  {
   "text": "Frostbogen",
-  "x": 1309.0,
+  "x": 1334.0,
   "y": 184.0,
-  "size": 60
+  "size": 40
  },
  {
   "text": "Taergoss",
-  "x": 1369.0,
+  "x": 1394.0,
   "y": 198.0,
-  "size": 60
+  "size": 40
  },
  {
   "text": "Kaltsel",
-  "x": 1421.0,
+  "x": 1446.0,
   "y": 137.0,
-  "size": 60
+  "size": 40
  },
  {
   "text": "Dampfkan",
-  "x": 1365.0,
+  "x": 1390.0,
   "y": 61.0,
-  "size": 60
+  "size": 40
  },
  {
   "text": "Far Hharom",
-  "x": 1694.6,
+  "x": 1719.6,
   "y": 332.2,
   "size": 45
  },
  {
   "text": "Barbed Fields",
-  "x": 1623.4,
+  "x": 1648.4,
   "y": 437.5,
   "size": 45
  },
  {
   "text": "Iothia Moorland",
-  "x": 1594.0,
+  "x": 1619.0,
   "y": 508.0,
   "size": 45
  },
  {
   "text": "Ebonglass Massif",
-  "x": 1718.6,
+  "x": 1743.6,
   "y": 386.8,
   "size": 45
  },
  {
   "text": "Strathfell",
-  "x": 1738.9,
+  "x": 1763.9,
   "y": 396.4,
   "size": 45
  },
  {
   "text": "Bromkiln Hills",
-  "x": 1326.3,
-  "y": 439.5,
+  "x": 1387,
+  "y": 447,
   "size": 45
  },
  {
   "text": "Mordant Isle",
-  "x": 1731.0,
+  "x": 1756.0,
   "y": 473.0,
   "size": 45
  },
  {
   "text": "Many Hosts of Igrathad",
-  "x": 1512.0,
+  "x": 1537.0,
   "y": 521.0,
   "size": 45
  },
  {
   "text": "Vide Cay",
-  "x": 1232.5,
+  "x": 1257.5,
   "y": 633.9,
   "size": 45
  },
  {
   "text": "Rumblecusp",
-  "x": 1312.7,
+  "x": 1337.7,
   "y": 668.3,
   "size": 45
  },
  {
   "text": "Urukayxl",
-  "x": 1366.9,
+  "x": 1391.9,
   "y": 696.1,
   "size": 45
  },
  {
   "text": "Diver's Grave",
-  "x": 1110.0,
+  "x": 1135.0,
   "y": 593.1,
   "size": 45
  },
  {
   "text": "Everplume",
-  "x": 1105.9,
+  "x": 1130.9,
   "y": 500.7,
+  "size": 45
+ },
+ {
+  "text": "Crystalsands Tundra",
+  "x": 1489.0,
+  "y": 193.0,
+  "size": 45
+ },
+ {
+  "text": "Dunrock Mountains",
+  "x": 1425,
+  "y": 286,
+  "size": 45
+ },
+ {
+  "text": "Savalirwood",
+  "x": 1502,
+  "y": 298,
+  "size": 45
+ },
+ {
+  "text": "The Emerald Gulch",
+  "x": 1617,
+  "y": 325
+ },
+ {
+  "text": "Cyrios Mountains",
+  "x": 1346,
+  "y": 488,
+  "size": 45
+ },
+ {
+  "text": "Ashkeeper Peaks",
+  "x": 1515,
+  "y": 482,
+  "size": 45
+ },
+ {
+  "text": "Ashkeeper Peaks",
+  "x": 1468,
+  "y": 575,
+  "size": 45
+ },
+ {
+  "text": "Penumbra Range",
+  "x": 1690,
+  "y": 485,
+  "size": 45
+ },
+ {
+  "text": "Flotket Alps",
+  "x": 1517,
+  "y": 231,
+  "size": 45
+ },
+ {
+  "text": "Rime Plains",
+  "x": 1573,
+  "y": 255,
+  "size": 45
+ },
+ {
+  "text": "Silberquel Ridge",
+  "x": 1464,
+  "y": 377,
+  "size": 45
+ },
+ {
+  "text": "Quoraska Jungle",
+  "x": 1395,
+  "y": 624,
+  "size": 45
+ },
+ {
+  "text": "Lotusden Greenwood",
+  "x": 1570,
+  "y": 595,
+  "size": 45
+ },
+ {
+  "text": "Hearthstar Peaks",
+  "x": 1247,
+  "y": 533,
+  "size": 45
+ },
+ {
+  "text": "The Barren Shores",
+  "x": 1177,
+  "y": 398,
   "size": 45
  }
 ]

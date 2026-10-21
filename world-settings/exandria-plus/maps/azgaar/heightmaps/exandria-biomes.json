@@ -9,7 +9,12 @@
     "id": 14,
     "name": "Greying Wildlands",
     "color": "#6f6680",
-    "habitability": 6
+    "habitability": 6,
+    "iconsDensity": 150,
+    "icons": {
+      "conifer": 3,
+      "deciduous": 1
+    }
   },
   {
     "id": 15,
