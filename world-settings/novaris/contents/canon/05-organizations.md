@@ -28,12 +28,12 @@
 
 | องค์กร | ฐาน | แนว |
 |---|---|---|
-| Cerberus Assembly (CR) | Rexxentrum | สภาจอมเวทของจักรวรรดิ / หน่วยวิจัยของ Manfried / คุมห้องลับใต้ Rexxentrum |
+| Cerberus Assembly (CR) | Dwendalis | สภาจอมเวทของจักรวรรดิ / หน่วยวิจัยของ Manfried / คุมห้องลับใต้ Dwendalis |
 | Righteous Brand (CR) | จักรวรรดิ | กองทัพจักรวรรดิ |
 | The Volstrucker (CR) | จักรวรรดิ | หน่วยนักฆ่าลับใต้ Cerberus |
 | Den ทั้งหลายของ Lumenvael (CR) | Rosohna | ตระกูลขุนนางที่เกิดใหม่โดยจำชาติก่อนได้ |
 | The Revelry (CR) | Costa Mosaica | โจรสลัด |
-| เส้นทางของเด็กเร่ร่อน ✨ | Rexxentrum | พาผู้ถูกกีดกันหนีออกจักรวรรดิ — 🔒 Bahamut |
+| เส้นทางของเด็กเร่ร่อน ✨ | Dwendalis | พาผู้ถูกกีดกันหนีออกจักรวรรดิ — 🔒 Bahamut |
 | ผู้ขุดซาก Aeor ✨ | Eiselcross | หน่วยขุดของสองจักรวรรดิ (สงครามเย็น) |
 
 ### 🌾 Voxaria (7)
@@ -71,7 +71,7 @@
 ### รายละเอียดองค์กรระดับโลก
 
 #### Cobalt Soul — ผู้บันทึกความจริง
-- **ฐาน**: Cobalt Reserve ใน Zadash (Aldenreich) + หอจดหมายเหตุทุกทวีป / **ผู้นำ**: หัวหน้าบรรณารักษ์ (Grand Archivist)
+- **ฐาน**: Cobalt Reserve ใน Trivane (Aldenreich) + หอจดหมายเหตุทุกทวีป / **ผู้นำ**: หัวหน้าบรรณารักษ์ (Grand Archivist)
 - **บทบาท**: The Compass = ข่าวของ**ปัจจุบัน** / Cobalt Soul = ความจริงของ**อดีต** (Founding, Aeor, Divergence)
 - **กฎเหล็ก**: บันทึกเรื่องของ Elder ได้ แต่**ห้ามเผยแพร่เด็ดขาด**
 - 🔒 หัวหน้าบรรณารักษ์ติดต่อกับ "นักวิจัยคนหนึ่งในสถาบัน Emon (เดิมที่ Yios)" มาหลายร้อยปี = Ioun

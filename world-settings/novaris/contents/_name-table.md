@@ -111,4 +111,47 @@
 
 ## สถานที่
 
-ยังไม่เริ่ม
+> ชื่ออ่านง่ายแบบแฟนตาซีอังกฤษ 2–3 พยางค์ (ภูมิภาคที่มีธีมเฉพาะใช้ภาษาของธีม แต่ต้องอ่านง่ายเท่ากัน)
+
+### ❄️ Aldenreich — Dwendalian Empire
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Ruins of Shattengrod | **Shadowfall Ruins** | [ruins-of-shattengrod.md](../../exandria/wildemount/dwendalian-empire/ruins-of-shattengrod.md) | ✅ | ✅ | ☐ | ☐ |
+| Vergesson Sanatorium | **Lethe Sanatorium** | [vergesson-sanatorium.md](../../exandria/wildemount/dwendalian-empire/vergesson-sanatorium.md) | ✅ | ✅ | ☐ | ☐ |
+| Herathis Mines | **Silverpit** | [herathis-mines.md](../../exandria/wildemount/dwendalian-empire/herathis-mines.md) | ✅ | ✅ | ☐ | ☐ |
+| Bromkiln Hills | **Steamhills** | [bromkiln-hills.md](../../exandria/wildemount/dwendalian-empire/bromkiln-hills.md) | ✅ | ✅ | ☐ | ☐ |
+| Bysaes Tyl | **Elandil** | [bysaes-tyl.md](../../exandria/wildemount/dwendalian-empire/bysaes-tyl.md) | ✅ | ✅ | ☐ | ☐ |
+| Pride's Call | **Stonepride** | [prides-call.md](../../exandria/wildemount/dwendalian-empire/prides-call.md) | ✅ | ✅ | ☐ | ☐ |
+| Rastum Den | **Griffon Roost** | [rastum-den.md](../../exandria/wildemount/dwendalian-empire/rastum-den.md) | ✅ | ✅ | ☐ | ☐ |
+| Rexxentrum | **Dwendalis** | [rexxentrum.md](../../exandria/wildemount/dwendalian-empire/rexxentrum.md) | ✅ | ✅ | ☐ | ☐ |
+| Zadash | **Trivane** | [zadash.md](../../exandria/wildemount/dwendalian-empire/zadash.md) | ✅ | ✅ | ☐ | ☐ |
+| Trostenwald | **Hopsdale** | [trostenwald.md](../../exandria/wildemount/dwendalian-empire/trostenwald.md) | ✅ | ✅ | ☐ | ☐ |
+| Alfield | **Wheaton** | [alfield.md](../../exandria/wildemount/dwendalian-empire/alfield.md) | ✅ | ✅ | ☐ | ☐ |
+| Hupperdook | **Cogwick** | [hupperdook.md](../../exandria/wildemount/dwendalian-empire/hupperdook.md) | ✅ | ✅ | ☐ | ☐ |
+| Berleben | **Mirebrook** | [berleben.md](../../exandria/wildemount/dwendalian-empire/berleben.md) | ✅ | ✅ | ☐ | ☐ |
+| Bladegarden | **Bladehold** | [bladegarden.md](../../exandria/wildemount/dwendalian-empire/bladegarden.md) | ✅ | ✅ | ☐ | ☐ |
+| Blumenthal | **Rosedale** | [blumenthal.md](../../exandria/wildemount/dwendalian-empire/blumenthal.md) | ✅ | ✅ | ☐ | ☐ |
+| Deastok | **Goldwall** | [deastok.md](../../exandria/wildemount/dwendalian-empire/deastok.md) | ✅ | ✅ | ☐ | ☐ |
+| Druvenlode | **Oreton** | [druvenlode.md](../../exandria/wildemount/dwendalian-empire/druvenlode.md) | ✅ | ✅ | ☐ | ☐ |
+| Felderwin | **Harvel** | [felderwin.md](../../exandria/wildemount/dwendalian-empire/felderwin.md) | ✅ | ✅ | ☐ | ☐ |
+| Grimgolir | **Kragmar** | [grimgolir.md](../../exandria/wildemount/dwendalian-empire/grimgolir.md) | ✅ | ✅ | ☐ | ☐ |
+| Icehaven | **Frosthaven** | [icehaven.md](../../exandria/wildemount/dwendalian-empire/icehaven.md) | ✅ | ✅ | ☐ | ☐ |
+| Kamordah | **Vinehill** | [kamordah.md](../../exandria/wildemount/dwendalian-empire/kamordah.md) | ✅ | ✅ | ☐ | ☐ |
+| Nogvurot | **Northwatch** | [nogvurot.md](../../exandria/wildemount/dwendalian-empire/nogvurot.md) | ✅ | ✅ | ☐ | ☐ |
+| Odessloe | **Logford** | [odessloe.md](../../exandria/wildemount/dwendalian-empire/odessloe.md) | ✅ | ✅ | ☐ | ☐ |
+| Talonstadt | **Tenton** | [talonstadt.md](../../exandria/wildemount/dwendalian-empire/talonstadt.md) | ✅ | ✅ | ☐ | ☐ |
+| Verstglade | **Hexvale** | [verstglade.md](../../exandria/wildemount/dwendalian-empire/verstglade.md) | ✅ | ✅ | ☐ | ☐ |
+| Vol'antim | **Eaglecrest** | [volantim.md](../../exandria/wildemount/dwendalian-empire/volantim.md) | ✅ | ✅ | ☐ | ☐ |
+| Yardel | **Chiselby** | [yardel.md](../../exandria/wildemount/dwendalian-empire/yardel.md) | ✅ | ✅ | ☐ | ☐ |
+| Yrrosa | **Rimeholt** | [yrrosa.md](../../exandria/wildemount/dwendalian-empire/yrrosa.md) | ✅ | ✅ | ☐ | ☐ |
+| Amber Crossroads | **Amber Crossroads (คงเดิม)** | [amber-crossroads.md](../../exandria/wildemount/dwendalian-empire/amber-crossroads.md) | ✅ | ✅ | ☐ | ☐ |
+| Ashguard Garrison | **Ashguard Garrison (คงเดิม)** | [ashguard-garrison.md](../../exandria/wildemount/dwendalian-empire/ashguard-garrison.md) | ✅ | ✅ | ☐ | ☐ |
+| Rockguard Garrison | **Rockguard Garrison (คงเดิม)** | [rockguard-garrison.md](../../exandria/wildemount/dwendalian-empire/rockguard-garrison.md) | ✅ | ✅ | ☐ | ☐ |
+| Zemni Fields | **Broadfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Marrow Valley | **Corevale** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Pearlbow Wilderness | **Pearlwood** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Dunrock Mountains | **Greyrock Mountains** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Cyrios Mountains | **Cloudpeak Mountains** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Ashkeeper Peaks | **Ashpeaks** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Silberquel Ridge | **Silver Ridge** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |

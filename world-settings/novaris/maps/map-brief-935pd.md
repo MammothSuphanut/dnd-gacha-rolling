@@ -35,7 +35,7 @@
 | 3 ฟื้นฟูศิลปวิทยาการ | ถนนหลักปูหิน ท่าเรือใหญ่ ไร่นาวงกว้าง (~2–3 วันเดิน) เหมือง โรงสี |
 | 4 อุตสาหกรรม/Steampunk | ชานเมืองขยาย โรงงาน เหมืองใหญ่ ป่ารอบเมืองหายเป็นแถบ ควัน/ท่าเรือเหาะ (ถ้ามี) |
 | 5 ปัจจุบัน + เวท (Voxaria) | เขตมหานคร ชานเมืองกว้าง ทางด่วน ทางรถไฟ สนามบิน ท่าเรือสินค้า ไร่นาขนาดอุตสาหกรรม ป่าถูกตัดมาก — ยกเว้น**เขต Gate** (Riftwild, The Verge) ที่ล้อมรั้วไว้ |
-| 6 กึ่งอนาคต | เฉพาะจุด (สถาบัน Emon, ห้องลับใต้ Rexxentrum, ซาก Aeor) — บนแผนที่โลกเห็นแค่เป็นจุด ไม่กระทบภูมิทัศน์ |
+| 6 กึ่งอนาคต | เฉพาะจุด (สถาบัน Emon, ห้องลับใต้ Dwendalis, ซาก Aeor) — บนแผนที่โลกเห็นแค่เป็นจุด ไม่กระทบภูมิทัศน์ |
 
 ---
 
@@ -47,7 +47,7 @@
 | ทวีป / รัฐ | ประชากร | คนเมือง | เมือง (ประชากร 935 PD) |
 |---|---|---|---|
 | **Aldenreich** | **30.5 ล้าน** | | |
-| · Dwendalian Empire | 15 ล้าน | 12% | Rexxentrum ~300k · Zadash ~150k · Hupperdook ~50k · Trostenwald ~10k · Alfield ~8k |
+| · Dwendalian Empire | 15 ล้าน | 12% | Dwendalis ~300k · Trivane ~150k · Cogwick ~50k · Hopsdale ~10k · Wheaton ~8k |
 | · Lumenvael Dynasty | 8 ล้าน | 10% | Rosohna ~200k · Bazzoxan ~15k (ป้อม) |
 | · Lagunara Concord | 4.5 ล้าน | 20% | Port Damali ~180k · Nicodranas ~150k · Port Zoon ~60k · Tussoa ~50k |
 | · Uthodurn + ชายขอบ | 1 ล้าน | — | Uthodurn ~50k |
@@ -98,16 +98,16 @@
 
 | ที่ | ระดับ | ขนาด | เปลี่ยนจากแผนที่ CR |
 |---|---|---|---|
-| **Rexxentrum** (Dwendalian Empire) | 3 (+6 ลับใต้ดิน) | นครใหญ่ | ภายนอกเป็นเมืองยุคกลาง — ห้องลับใต้ดินไม่แสดงบนแผนที่ · ถนนทหารสู่ชายแดน Ödland |
-| **Zadash** | 2–3 | นครใหญ่ | ไร่นาของ Zemni Fields เต็มทุ่ง |
-| **Trostenwald / Alfield** | 2 | เมือง | ชนบท ไร่ข้าว โรงเบียร์ — Marrow Valley เป็นยุ้งฉางของจักรวรรดิ |
-| **Hupperdook** | 4 | นคร | โรงงานโนม ควัน เหมือง — ป่ารอบเมืองหาย |
+| **Dwendalis** (Dwendalian Empire) | 3 (+6 ลับใต้ดิน) | นครใหญ่ | ภายนอกเป็นเมืองยุคกลาง — ห้องลับใต้ดินไม่แสดงบนแผนที่ · ถนนทหารสู่ชายแดน Ödland |
+| **Trivane** | 2–3 | นครใหญ่ | ไร่นาของ Broadfield เต็มทุ่ง |
+| **Hopsdale / Wheaton** | 2 | เมือง | ชนบท ไร่ข้าว โรงเบียร์ — Corevale เป็นยุ้งฉางของจักรวรรดิ |
+| **Cogwick** | 4 | นคร | โรงงานโนม ควัน เหมือง — ป่ารอบเมืองหาย |
 | **Wuyun Gates** | 2 | ป้อม | ด่านชายแดน Empire–Costa Mosaica |
 | **Nicodranas / Port Damali** (Lagunara Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
 | **Rosohna** (Lumenvael Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
 | **Bazzoxan** | 2 | ป้อม | ไม่เปลี่ยน |
 | **Uthodurn** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
-| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Foren (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Foren จากเหนือลงตะวันออกเฉียงใต้ · **Vurmas** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Gelier · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Foren เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Icehaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Foren, Gelier, Biessel, Dampfkan, Kaltsel, Taergoss |
+| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Foren (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Foren จากเหนือลงตะวันออกเฉียงใต้ · **Vurmas** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Gelier · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Foren เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Frosthaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Foren, Gelier, Biessel, Dampfkan, Kaltsel, Taergoss |
 | ซาก Draconia | ซาก | — | ซากใน Dreemoth Ravine |
 | Gråmark | 0–1 | — | **คงป่าเถื่อน** ชนเผ่าไวกิ้ง ค่ายเล็ก |
 | Ödland ใต้ / Witherstrand | 0–1 | — | **คงรกร้าง** ชนเผ่า มอนสเตอร์ |
@@ -151,7 +151,7 @@
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
 | **เส้นทางเรือ** | Emon ↔ Nicodranas/Port Damali ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
 | **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Port Damali** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
-| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Rexxentrum, Rosohna, Port Damali, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
+| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Dwendalis, Rosohna, Port Damali, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Jungwon |
 
 ---
@@ -172,7 +172,7 @@
 - [x] **ขนาดเมือง**: ✅ กำหนดตามการกระจายตัว (หัวข้อ 3)
 - [x] **เรือเหาะ**: ✅ น้อยที่สุด — Jrusar/Ank'Harel ↔ Emon, Port Damali
 - [x] **Teleportation circle**: ✅ เฉพาะเมืองหลวง 7 แห่ง
-- [x] **Eiselcross**: ✅ ตาม CR เดิม (Syrinlya, Vurmas, จุดตก Aeor, Palebank, Icehaven)
+- [x] **Eiselcross**: ✅ ตาม CR เดิม (Syrinlya, Vurmas, จุดตก Aeor, Palebank, Frosthaven)
 - [x] **ธีมทวีป**: ✅ ปรับ 2026-10-20 — Aldenreich ยุคกลางตะวันตก · Voxaria ยุคปัจจุบัน + เวท · Shenzhou ตะวันออกทั้งทวีป · Suvarna นครโบราณหลากชนเผ่า (canon ข้อ 15/17 แก้แล้ว)
 - [x] **Shenzhou**: ✅ ไม่เพิ่มแผ่นดิน — แบ่งทวีปเดิม (ปรับตอนวางเมือง: เทือกเขา Tengu Range อยู่ตะวันตกเฉียงใต้): **ญี่ปุ่น = Mizuho ทางตะวันตกของ Tengu Range** · **จีน = แผ่นดินใต้ทั้งหมด** (เมืองหลวงที่แหลมใต้, Ivaadel เป็นเมืองท่า) · Tianmen ตะวันออกเฉียงเหนือ · แผ่นดินเหนือ-ตะวันตก (ใต้ทุนดรา Tsagaan Tal) = ไร้รัฐ (ข้อ 9 ของงานแผนที่ = ไม่ต้องทำ)
 - [x] **กำแพงยาว**: ✅ วาด — ตามชายแดนเหนือของอาณาจักรจีน กันชนเผ่าทุนดรา Tsagaan Tal
