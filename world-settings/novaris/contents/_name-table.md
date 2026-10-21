@@ -265,3 +265,14 @@
 | Quoraska Jungle | **Selva Scura** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Hearthstar Peaks | **Monti Stella** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | The Barren Shores | **Costa Secca** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — Crownshore
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Emerald Outpost | **Greenwatch** | [emerald-outpost.md](../../exandria/tal-dorei/bladeshimmer-shoreline/emerald-outpost.md) | ✅ | ✅ | ☐ | ☐ |
+| New O'Noa | **Firsthaven** | [new-onoa.md](../../exandria/tal-dorei/bladeshimmer-shoreline/new-onoa.md) | ✅ | ✅ | ☐ | ☐ |
+| Visa Isle | **Feral Isle** | [visa-isle.md](../../exandria/tal-dorei/bladeshimmer-shoreline/visa-isle.md) | ✅ | ✅ | ☐ | ☐ |
+| Shalesteps | **Cliffsteps** | [shalesteps.md](../../exandria/tal-dorei/bladeshimmer-shoreline/shalesteps.md) | ✅ | ✅ | ☐ | ☐ |
+| Puddlefoot | **Brookfoot** | [puddlefoot.md](../../exandria/tal-dorei/bladeshimmer-shoreline/puddlefoot.md) | ✅ | ✅ | ☐ | ☐ |
+| Emon | **Lumen City** | [emon.md](../../exandria/tal-dorei/bladeshimmer-shoreline/emon.md) | ✅ | ✅ | ☐ | ☐ |

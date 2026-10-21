@@ -35,7 +35,7 @@
 | 3 ฟื้นฟูศิลปวิทยาการ | ถนนหลักปูหิน ท่าเรือใหญ่ ไร่นาวงกว้าง (~2–3 วันเดิน) เหมือง โรงสี |
 | 4 อุตสาหกรรม/Steampunk | ชานเมืองขยาย โรงงาน เหมืองใหญ่ ป่ารอบเมืองหายเป็นแถบ ควัน/ท่าเรือเหาะ (ถ้ามี) |
 | 5 ปัจจุบัน + เวท (Voxaria) | เขตมหานคร ชานเมืองกว้าง ทางด่วน ทางรถไฟ สนามบิน ท่าเรือสินค้า ไร่นาขนาดอุตสาหกรรม ป่าถูกตัดมาก — ยกเว้น**เขต Gate** (Riftwild, The Verge) ที่ล้อมรั้วไว้ |
-| 6 กึ่งอนาคต | เฉพาะจุด (สถาบัน Emon, ห้องลับใต้ Dwendalis, ซาก Aeor) — บนแผนที่โลกเห็นแค่เป็นจุด ไม่กระทบภูมิทัศน์ |
+| 6 กึ่งอนาคต | เฉพาะจุด (สถาบัน Lumen City, ห้องลับใต้ Dwendalis, ซาก Aeor) — บนแผนที่โลกเห็นแค่เป็นจุด ไม่กระทบภูมิทัศน์ |
 
 ---
 
@@ -53,7 +53,7 @@
 | · Twinhold + ชายขอบ | 1 ล้าน | — | Twinhold ~50k |
 | · ชนเผ่า (Gråmark, Ödland ใต้, Witherstrand) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
 | **Voxaria** | **18.5 ล้าน** | | |
-| · Crownshore · Heartland · Blacktide Coast · Thunderspine (Emon, Westruun, Kymal, Stilben ฯลฯ) | 14.5 ล้าน | 75% | **Emon ~3.5 ล้าน** (ใหญ่สุดในโลก) · Kymal ~1.5 ล้าน · Westruun ~1 ล้าน · Stilben ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
+| · Crownshore · Heartland · Blacktide Coast · Thunderspine (Lumen City, Westruun, Kymal, Stilben ฯลฯ) | 14.5 ล้าน | 75% | **Lumen City ~3.5 ล้าน** (ใหญ่สุดในโลก) · Kymal ~1.5 ล้าน · Westruun ~1 ล้าน · Stilben ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
 | · รัฐ Iron Authority | 2.5 ล้าน | 70% | Tz'Arrm ~900k |
 | · รัฐ Forgeheim (Kraghammer) · Gloamwood (Whitestone) | 1.5 ล้าน | — | Kraghammer ~250k (CR 73,550 ปี 836 PD) · Whitestone ~250k · ~~Syngorn ~80k~~ (ย้ายไปเกาะ — canon ข้อ 24) |
 | · เขต Gate (Riftwild, The Verge) | — | — | ไม่มีผู้อยู่อาศัยถาวร — ฐานฮันเตอร์ตามขอบเขต |
@@ -83,7 +83,7 @@
 
 | ที่ | ระดับ | ขนาด | เปลี่ยนจากแผนที่ CR (935 PD) |
 |---|---|---|---|
-| **Emon** (เมืองหลวง Voxaria) | 5 | มหานคร | เขตมหานครขยายเต็มชายฝั่ง Crownshore · ท่าเรือสินค้า สนามบิน · The Golden Ledger + สถาบัน Emon |
+| **Lumen City** (เมืองหลวง Voxaria) | 5 | มหานคร | เขตมหานครขยายเต็มชายฝั่ง Crownshore · ท่าเรือสินค้า สนามบิน · The Golden Ledger + สถาบัน Lumen City |
 | **Westruun** | 5 | มหานคร | ชุมทางทางด่วน/รถไฟกลางทวีป · Heartland เป็นไร่นาอุตสาหกรรมทั้งทุ่ง |
 | **Kymal** | 5 | มหานคร | เมืองคาสิโนนีออน ถนนทุกสายวิ่งเข้าเมือง |
 | **Stilben** | 5 | นครใหญ่ | ท่าเรือสินค้าใหญ่ เขตเมืองหนาแน่น — ถิ่นมาเฟีย/ยากูซ่า |
@@ -147,11 +147,11 @@
 
 | ชนิด | เส้นทาง |
 |---|---|
-| **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Emon, Kymal, Westruun, Stilben, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
+| **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Kymal, Westruun, Stilben, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
-| **เส้นทางเรือ** | Emon ↔ Belmare/Lagunara ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
-| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
-| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Dwendalis, Lumora, Lagunara, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
+| **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
+| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
+| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Lumen City, Dwendalis, Lumora, Lagunara, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Jungwon |
 
 ---
@@ -170,7 +170,7 @@
 
 - [x] **ประชากร**: ✅ คง ~100 ล้าน (โลกชายแดน)
 - [x] **ขนาดเมือง**: ✅ กำหนดตามการกระจายตัว (หัวข้อ 3)
-- [x] **เรือเหาะ**: ✅ น้อยที่สุด — Jrusar/Ank'Harel ↔ Emon, Lagunara
+- [x] **เรือเหาะ**: ✅ น้อยที่สุด — Jrusar/Ank'Harel ↔ Lumen City, Lagunara
 - [x] **Teleportation circle**: ✅ เฉพาะเมืองหลวง 7 แห่ง
 - [x] **Eiselcross**: ✅ ตาม CR เดิม (Syrinlya, Duskraft, จุดตก Aeor, Palebank, Frosthaven)
 - [x] **ธีมทวีป**: ✅ ปรับ 2026-10-20 — Aldenreich ยุคกลางตะวันตก · Voxaria ยุคปัจจุบัน + เวท · Shenzhou ตะวันออกทั้งทวีป · Suvarna นครโบราณหลากชนเผ่า (canon ข้อ 15/17 แก้แล้ว)

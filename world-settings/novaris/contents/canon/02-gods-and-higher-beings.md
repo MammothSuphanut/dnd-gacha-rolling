@@ -77,7 +77,7 @@
 | Sarenrae | Vasselheim (Shenzhou) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
 | The Raven Queen | Vasselheim (Shenzhou) | ผู้พาวิญญาณออกนอกกรง |
 | The Luxon | Lumora (Aldenreich) | ศรัทธาของ Lumenvael Dynasty |
-| Erathis | Emon (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
+| Erathis | Lumen City (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
 | Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
 | Moradin | Kraghammer (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
 | Titania | The Verge (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
@@ -99,8 +99,8 @@
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
 | Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
 | Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Tengu Range (Shenzhou) |
-| Asmodeus | Emon (Voxaria) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
-| Ioun | Emon (Voxaria) | กลมกลืนในสถาบัน Emon (ย้ายตามสถาบัน, 2026-10-20) |
+| Asmodeus | Lumen City (Voxaria) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
+| Ioun | Lumen City (Voxaria) | กลมกลืนในสถาบัน Lumen City (ย้ายตามสถาบัน, 2026-10-20) |
 | Melora | ป่า Dandaka (Suvarna) | ซ่อนในป่าดิบ |
 | The Great Mother | ใต้ทะเลทราย Deshret (Suvarna) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
 | Tharizdun | ก้นทะเลระหว่าง Aldenreich กับ Eldmere — ใต้ซากแผ่นดินของทวีปที่จม | 🔒 ถูกล่ามโซ่ โซ่กำลังอ่อนลง |
