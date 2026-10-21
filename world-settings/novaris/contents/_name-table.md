@@ -47,7 +47,23 @@
 | ภูมิภาค | Greying Wildlands | **Gråmark** | กรอ-มาร์ก | ดินแดนชายแดนสีเทา (นอร์ส) | [greying-wildlands/_overview.md](../../exandria/wildemount/greying-wildlands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Eiselcross | **Eiselcross** (คงเดิม) | ไอ-เซล-ครอส | หมู่เกาะน้ำแข็ง ซาก Aeor | [eiselcross/_overview.md](../../exandria/wildemount/eiselcross/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 
-### 🌾 Voxaria · ⛰️ Shenzhou · ☀️ Suvarna · 🌊 Eldmere
+### 🌾 Voxaria
+
+> 1 ภูมิภาค = 1 รัฐ (7 รัฐเลือกตั้งผู้นำเอง — Iron Authority เป็นรัฐทหาร วิธีเลือกผู้นำรอคุย) + 2 เขต Gate ที่รัฐบาลกลางดูแลตรง
+
+| ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| รัฐ (เมืองหลวง) | Bladeshimmer Shoreline | **Crownshore** | คราวน์-ชอร์ | ฝั่งมงกุฎ — บัลลังก์ Erathis · Emon | [bladeshimmer-shoreline/_overview.md](../../exandria/tal-dorei/bladeshimmer-shoreline/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| รัฐ | Cliffkeep Mountains | **Forgeheim** | ฟอร์จ-ไฮม์ | บ้านเตาหลอม — ดวาร์ฟ · Kraghammer | [cliffkeep-mountains/_overview.md](../../exandria/tal-dorei/cliffkeep-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| รัฐ | Dividing Plains | **Heartland** | ฮาร์ต-แลนด์ | ใจกลางทวีป ชุมทาง ไร่ คาสิโน · Westruun, Kymal | [dividing-plains/_overview.md](../../exandria/tal-dorei/dividing-plains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| รัฐ | Lucidian Coast | **Blacktide Coast** | แบล็ก-ไทด์ โคสต์ | ชายฝั่งน้ำดำ — มาเฟีย · Stilben | [lucidian-coast/_overview.md](../../exandria/tal-dorei/lucidian-coast/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| รัฐ | Parchwood Timberlands | **Gloamwood** | โกลม-วูด | ป่าสนธยา — กอธิก บรรษัทอาวุธ · Whitestone | [parchwood-timberlands/_overview.md](../../exandria/tal-dorei/parchwood-timberlands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| รัฐ | Stormcrest Mountains | **Thunderspine** | ธัน-เดอร์-สไปน์ | สันหลังสายฟ้า — ชายแดนภูเขา ชนเผ่าออร์ค | [stormcrest-mountains/_overview.md](../../exandria/tal-dorei/stormcrest-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| รัฐ | Rifenmist Peninsula (ตอนใต้) | **Iron Authority** (คงเดิม) | ไอ-เอิร์น ออ-ทอ-ริ-ตี | รัฐทหารฮอบกอบลินของ Bane · Tz'Arrm | [rifenmist-peninsula/_overview.md](../../exandria/tal-dorei/rifenmist-peninsula/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| เขต Gate | Rifenmist Peninsula (ตอนเหนือ) | **Riftwild** | ริฟต์-ไวลด์ | ป่ารอยแยก — มอนสเตอร์ ซาก Qoniira | [rifenmist-peninsula/_overview.md](../../exandria/tal-dorei/rifenmist-peninsula/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| เขต Gate | Verdant Expanse | **The Verge** | เดอะ เวิร์จ | ขอบระหว่างโลกกับเฟย์ — Gate สูงสุด ป่าของ Titania | [verdant-expanse/_overview.md](../../exandria/tal-dorei/verdant-expanse/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ⛰️ Shenzhou · ☀️ Suvarna · 🌊 Eldmere
 
 ยังไม่เริ่ม
 

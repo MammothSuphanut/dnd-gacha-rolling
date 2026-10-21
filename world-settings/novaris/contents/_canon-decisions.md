@@ -29,7 +29,7 @@
 | 22 | ขนาดโลก/สเกลแผนที่ | **ใหญ่เป็น 4 เท่าของสเกลอ้างอิง** (แผนที่ occidentalavian "Speculative 2024" ที่ 1.2 ไมล์/พิกเซล) / ดาวเส้นรอบวง **~138,000 ไมล์ (~5.5 เท่าโลกจริง)** / แผนที่โลกกว้าง ~77,800 × 51,800 ไมล์ ครอบคลุมละติจูด 83°N–52°S / **สเกล**: ภาพ 16200 px = **4.8 ไมล์/พิกเซล** · Azgaar (1800×1200) = **43.2 ไมล์/พิกเซล** / ตัวอย่าง: Palebank → Uthodurn ~2,100 ไมล์ ≈ **87 วัน**เดินทาง Normal pace (24 ไมล์/วัน) / ผลต่อโลก: เดินข้ามทวีปใช้หลายเดือน → เรือ, เรือเหาะ (The Skyward Line), teleportation circle มีค่ามาก (สอดคล้องข้อ 17) / ไฟล์แผนที่: `maps/azgaar/` |
 | 23 | ชื่อโลก | **Novaris** (2026-10-21) — จาก *novem* (เก้า) = "โลกใต้ดาวเก้าดวง" (Elder Star ข้อ 4) / แทนชื่อเดิม "Exandria+" ทั้งหมดแล้ว (2026-10-21): เอกสาร เครื่องมือ ชื่อโลกใน lore และบนแผนที่ Azgaar · โฟลเดอร์ `world-settings/novaris/` · `manifest.json` id `novaris` · ชื่อไฟล์ (`novaris.map`, `novaris-canon.pdf`, `novaris-player-guide.*`, `novaris-atlas.png` ฯลฯ) — ส่วนที่หมายถึง Exandria ของ CR ยังเรียก Exandria (ฉบับชื่อ CR ของแผนที่ = `exandria-cr.map`) / **ยังไม่เปลี่ยน**: ชื่อ folder/compendium ใน Foundry ที่ macro อ้างถึง ("Exandria+ Unique NPCs", prefix "Exandria+") / ร่างชื่อ Aurelith เดิม (`_rename-log.md`) ไม่ใช้แล้ว |
 | 24 | ชื่อทวีป | (2026-10-21) **Wildemount → Aldenreich** (อัล-เดน-ไรช์) · **Tal'Dorei → Voxaria** (วอก-ซา-เรีย; *vox* = เสียงโหวต) · **Issylra → Shenzhou 神州** (เสิน-โจว / เกาหลี ซินจู; "แผ่นดินแห่งเทพ" — Vasselheim) · **Marquet → Suvarna** (สุ-วรร-ณา; สุวรรณ = ทองคำ) · **Shattered Teeth → Eldmere** (เอลด์-เมียร์; ทะเลของผู้เก่าแก่) / ธีมใหม่ของ **Eldmere**: เผ่ายิ่งใหญ่โบราณ (มังกร ธาตุโบราณ สิ่งมีชีวิตโบราณ) ย้ายมาหาความสงบ — พายุเวทรอบเกาะทำให้เรือธรรมดาแทบเข้าไม่ได้ เป็นเกาะในตำนานของคนทวีปอื่น / **พายุเวทรอบ Eldmere = แผลเป็นจากการรบของดวงดาวกับเหล่าเทพที่ทำให้ทวีปจม** · **Eldmere ไม่ใช่ประเทศ** — เป็นถิ่นที่อยู่ของเผ่าโบราณ แต่ละตนมีถิ่นของตัวเองกระจายตามเกาะต่าง ๆ (แทนโจรสลัด Ossended Host / Wanderman Assembly ของ CR ที่ตัดออก) · ผนึก Tharizdun อยู่ใต้ทะเลระหว่าง Aldenreich กับ Eldmere (ไม่ได้อยู่ใต้ Eldmere) / **Voxaria = ประเทศเดียวทั้งทวีป ภายใต้การนำของเทพ Erathis ตั้งแต่ 300 PD** (เทพแห่งอารยธรรมและกฎหมาย — เปิดเผยตัว ครองบัลลังก์ที่ Emon) แบ่งเป็น**รัฐ** — Kraghammer, Whitestone และ Iron Authority (Tz'Arrm) กลายเป็นรัฐของ Voxaria ไม่ใช่ประเทศแยก · **Syngorn ของ Oren ย้ายออกจากทวีป ไปอยู่บนเกาะ** (เกาะไหน — เลือกหลังตั้งชื่อครบ) · **การเลือกตั้ง = แต่ละรัฐเลือกผู้นำรัฐของตัวเอง** · มี**การเมืองและคอร์รัปชัน**หนัก (เงินซื้อเสียงได้ ฯลฯ) → ทวีปอื่นเห็นปัญหานี้ จึง**ยังปกครองแบบผู้นำหนึ่งเดียว**กันต่อไป · **Erathis ไม่สนการเมืองหรือคอร์รัปชัน** — แค่รวมทวีปเป็นหนึ่ง แล้วปล่อยให้อารยธรรมดำรงอยู่และเดินหน้าไปตามที่เป็น · ทวีปนี้มีอาชีพ **Hero** ที่รัฐรับรอง (ศูนย์ Hero · สถาบันสอน Hero · สำนักงาน Hero ประจำรัฐ) แยกจากตำรวจ/ทหาร และผู้กระทำผิดกฎหมายด้วยพลังถูกประกาศเป็น**วิลเลิน (Villain)** — รายละเอียด `tal-dorei/_overview.md` หัวข้อ "ฮีโร่และวิลเลิน" / **Domunas (ทวีปที่จม) → Nethmar** (เนธ-มาร์; *neth* = เบื้องล่าง + *mar* = ทะเล) / **ทะเลและมหาสมุทร**: Frigid Depths → **The Pale Deep** · Lucidian Ocean → **Sundering Ocean** (ที่ Nethmar จม) · Ozmit Sea → **Donghai 東海** (ตง-ไห่) · Beryl Sea → **Sagara สาคร** / ตารางชื่อกลางทุกชั้น: `contents/_name-table.md` — ชื่อ CR ในเอกสารและแผนที่ยังไม่ได้แทน |
-| 25 | ชื่อภูมิภาค/ประเทศ | ตั้งชื่อชั้นภูมิภาคและประเทศทีละทวีป (ตารางเต็ม: `contents/_name-table.md`) / **Aldenreich** (2026-10-21): ประเทศ — Dwendalian Empire **คงชื่อเดิม** (ตั้งตาม Elder Manfried Dwendal) · Kryn Dynasty → **Lumenvael Dynasty** (ลู-เมน-เวล; แสงในเงา — Luxon) · Clovis Concord → **Lagunara Concord** (ลา-กู-นา-รา) · Diarchy of Uthodurn → **Twinhold Diarchy** / ภูมิภาค — Xhorhas → **Ödland** (เอิด-ลันท์; ดินแดนรกร้าง) · Blightshore → **Witherstrand** · Menagerie Coast → **Costa Mosaica** · Swavain Islands → **Isole Smeralde** · Greying Wildlands → **Gråmark** (กรอ-มาร์ก) · Eiselcross **คงชื่อเดิม** / ชื่อภูมิประเทศย่อย (ทุ่ง หุบเขา เทือกเขา ป่า เกาะย่อย) และเมือง → ชั้นสถานที่ |
+| 25 | ชื่อภูมิภาค/ประเทศ | ตั้งชื่อชั้นภูมิภาคและประเทศทีละทวีป (ตารางเต็ม: `contents/_name-table.md`) / **Aldenreich** (2026-10-21): ประเทศ — Dwendalian Empire **คงชื่อเดิม** (ตั้งตาม Elder Manfried Dwendal) · Kryn Dynasty → **Lumenvael Dynasty** (ลู-เมน-เวล; แสงในเงา — Luxon) · Clovis Concord → **Lagunara Concord** (ลา-กู-นา-รา) · Diarchy of Uthodurn → **Twinhold Diarchy** / ภูมิภาค — Xhorhas → **Ödland** (เอิด-ลันท์; ดินแดนรกร้าง) · Blightshore → **Witherstrand** · Menagerie Coast → **Costa Mosaica** · Swavain Islands → **Isole Smeralde** · Greying Wildlands → **Gråmark** (กรอ-มาร์ก) · Eiselcross **คงชื่อเดิม** / **Voxaria** (2026-10-21): **1 ภูมิภาค = 1 รัฐ** — 7 รัฐเลือกตั้งผู้นำเอง + 2 เขต Gate ที่รัฐบาลกลางดูแลตรง (ไม่มีคนอยู่ถาวร ไม่มีเลือกตั้ง) · Bladeshimmer Shoreline → **Crownshore** (รัฐเมืองหลวง — Emon) · Cliffkeep Mountains → **Forgeheim** (รัฐดวาร์ฟ — Kraghammer) · Dividing Plains → **Heartland** (Westruun, Kymal) · Lucidian Coast → **Blacktide Coast** (Stilben) · Parchwood Timberlands → **Gloamwood** (Whitestone) · Stormcrest Mountains → **Thunderspine** (ชายแดนภูเขา ชนเผ่าออร์ค) · Rifenmist Peninsula แบ่ง 2: ตอนใต้ = **รัฐ Iron Authority** (คงชื่อเดิม — Tz'Arrm) / ตอนเหนือ = **เขต Gate Riftwild** · Verdant Expanse → **เขต Gate The Verge** / ชื่อภูมิประเทศย่อย (ทุ่ง หุบเขา เทือกเขา ป่า เกาะย่อย) และเมือง → ชั้นสถานที่ |
 
 ## ศัพท์หลัก
 
@@ -213,7 +213,7 @@
 | Erathis | Emon (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
 | Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
 | Moradin | Kraghammer (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
-| Titania | Verdant Expanse (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
+| Titania | The Verge (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
 
 **ซ่อนตัว**
 
@@ -227,7 +227,7 @@
 | Lolth | Underdark ใต้ Ödland (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
 | Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
 | Avandra | Kymal (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
-| Zehir | Rifenmist / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
+| Zehir | Riftwild / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
 | Glasya | Stilben (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
 | Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
@@ -467,7 +467,7 @@
 | สหภาพโรงงาน Emon ✨ | Emon | แรงงานยุคอุตสาหกรรม |
 | บรรษัทอาวุธ Whitestone ✨ | Whitestone | ผู้ผลิตอาวุธยักษ์ของทวีป — ปืน ขีปนาวุธ อาวุธเวท |
 | เครือคาสิโน Kymal ✨ | Kymal | ธุรกิจการพนัน — 🔒 Avandra ซ่อนอยู่ในเมือง |
-| ราชสำนักฤดูร้อน ✨ | Verdant Expanse | ราชสำนักเฟย์ของ Titania |
+| ราชสำนักฤดูร้อน ✨ | The Verge | ราชสำนักเฟย์ของ Titania |
 
 ### ⛰️ Shenzhou (6)
 
@@ -582,7 +582,7 @@
 | ต้น Maith | ใต้ร่มซากุระ | ฮานามิ | ส่วนลึกของ Shenzhou (ธีมญี่ปุ่น) | |
 | 🌙 กลาง Junor | แข่งเรือมังกร | เทศกาลเรือมังกร | ลูกหลานผู้ลี้ภัยจาก Draconia | รำลึกนครที่ร่วง 🔒 Tiamat (แฝงตัวที่ซาก Draconia) มาดูทุกปี |
 | 7 Julvar | คืนดาวพบกัน | ทานาบาตะ | ส่วนลึกของ Shenzhou | เขียนคำอธิษฐานแขวนไว้ ตามตำนานว่า "ดวงดาวทั้งเก้า" ได้ยิน — แต่ Elder ไม่สนใจ |
-| 14 Julvar | คืนกลางฤดูร้อน | Midsummer | Verdant Expanse | ราชสำนักฤดูร้อนของ Titania เปิดรับแขก / คืนที่คนหลงเข้าเขตเฟย์มากที่สุด |
+| 14 Julvar | คืนกลางฤดูร้อน | Midsummer | The Verge | ราชสำนักฤดูร้อนของ Titania เปิดรับแขก / คืนที่คนหลงเข้าเขตเฟย์มากที่สุด |
 | 12 Augast | วันรวมชาติ ✨ | Bastille Day / 4th of July | Voxaria (Emon) | ฉลองวันที่ Erathis รวมทวีป (300 PD) — งานใหญ่ ขบวนพาเหรด Hero และผู้นำรัฐ (ปรับ 2026-10-21 เดิมวันสาธารณรัฐ 812 PD) |
 | 🌙 จันทร์เต็มดวงของ Septheim | ไหว้พระจันทร์ | เทศกาลไหว้พระจันทร์ | ทั่วโลก | ฉลองเก็บเกี่ยว 🔒 พิธีเก่าของ Sehanine |
 | ปลาย Septheim | เทศกาลถังเบียร์ | Oktoberfest | Kraghammer | รินเบียร์ถวาย Moradin (เทพเปิดตัว มาดื่มด้วย) |
@@ -596,5 +596,5 @@
 ## รอคุย
 
 - **ชื่อใหม่ของ Nethmar (ข้อ 24) — ค้าง**: ทวีปที่จม ยังไม่ได้ตั้งชื่อ
-- **Voxaria — ค้าง**: (1) Syngorn ย้ายไปเกาะไหน (เลือกหลังตั้งชื่อครบ) (2) ก่อน 300 PD ทวีปเป็นอย่างไร / Erathis รวมทวีปด้วยวิธีไหน (3) ชื่อประเทศอย่างเป็นทางการ (4) รายละเอียดระบบ Hero (อันดับ ระดับภัยของวิลเลิน ข้าราชการหรือเอกชน) (5) แผนที่ (ทำตอนท้ายสุด): รวม state บนทวีปเป็น Voxaria แล้วแบ่ง province ตามรัฐ, ย้าย Syngorn
+- **Voxaria — ค้าง**: (1) Syngorn ย้ายไปเกาะไหน (เลือกหลังตั้งชื่อครบ) (2) ก่อน 300 PD ทวีปเป็นอย่างไร / Erathis รวมทวีปด้วยวิธีไหน (3) ชื่อประเทศอย่างเป็นทางการ (4) รายละเอียดระบบ Hero (อันดับ ระดับภัยของวิลเลิน ข้าราชการหรือเอกชน) (5) รัฐ Iron Authority เป็นรัฐทหารเผด็จการ — ผู้นำรัฐมาจากการเลือกตั้งจริง หรือเลือกตั้งแค่ในนาม (6) แผนที่ (ทำตอนท้ายสุด): รวม state บนทวีปเป็น Voxaria แล้วแบ่ง province ตามรัฐ, ย้าย Syngorn
 - **ยุคสมัย (ต่อ)**:

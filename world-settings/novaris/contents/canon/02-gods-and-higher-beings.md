@@ -80,7 +80,7 @@
 | Erathis | Emon (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
 | Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
 | Moradin | Kraghammer (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
-| Titania | Verdant Expanse (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
+| Titania | The Verge (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
 
 **ซ่อนตัว**
 
@@ -94,7 +94,7 @@
 | Lolth | Underdark ใต้ Ödland (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
 | Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
 | Avandra | Kymal (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
-| Zehir | Rifenmist / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
+| Zehir | Riftwild / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
 | Glasya | Stilben (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
 | Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
