@@ -31,7 +31,25 @@
 
 ## ภูมิภาค / ประเทศ
 
-ยังไม่เริ่ม (ชั้นถัดไป)
+### ❄️ Aldenreich
+
+| ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| ประเทศ | Dwendalian Empire | **Dwendalian Empire** (คงเดิม) | ดเวน-ดา-เลียน | ตั้งตาม Elder Manfried Dwendal | [dwendalian-empire/_overview.md](../../exandria/wildemount/dwendalian-empire/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Kryn Dynasty | **Lumenvael Dynasty** | ลู-เมน-เวล | แสงในเงา — ศรัทธา Luxon | [xhorhas/rosohna.md](../../exandria/wildemount/xhorhas/rosohna.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Clovis Concord | **Lagunara Concord** | ลา-กู-นา-รา | เมืองลากูนแบบเวนิส | [menagerie-coast/port-damali.md](../../exandria/wildemount/menagerie-coast/port-damali.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Diarchy of Uthodurn | **Twinhold Diarchy** | ทวิน-โฮลด์ | ป้อมคู่ — ดวาร์ฟกับเอลฟ์ | [greying-wildlands/uthodurn.md](../../exandria/wildemount/greying-wildlands/uthodurn.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Dwendalian Empire | **Dwendalian Empire** (คงเดิม) |  | ภูมิภาคเดียวกับประเทศ | [dwendalian-empire/_overview.md](../../exandria/wildemount/dwendalian-empire/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Xhorhas | **Ödland** | เอิด-ลันท์ | ดินแดนรกร้าง (ชื่อที่จักรวรรดิเรียกดินแดนศัตรู) | [xhorhas/_overview.md](../../exandria/wildemount/xhorhas/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Blightshore | **Witherstrand** | วิ-เธอ-สแตรนด์ | ชายฝั่งเหี่ยวเฉา | [blightshore/_overview.md](../../exandria/wildemount/blightshore/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Menagerie Coast | **Costa Mosaica** | คอส-ตา โม-ไซ-กา | ชายฝั่งโมเสก ผู้คนหลากหลาย | [menagerie-coast/_overview.md](../../exandria/wildemount/menagerie-coast/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาคย่อย | Swavain Islands | **Isole Smeralde** | อี-โซ-เล สเม-รัล-เด | หมู่เกาะมรกต (ใน Costa Mosaica) | [swavain-islands/_overview.md](../../exandria/wildemount/menagerie-coast/swavain-islands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Greying Wildlands | **Gråmark** | กรอ-มาร์ก | ดินแดนชายแดนสีเทา (นอร์ส) | [greying-wildlands/_overview.md](../../exandria/wildemount/greying-wildlands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Eiselcross | **Eiselcross** (คงเดิม) | ไอ-เซล-ครอส | หมู่เกาะน้ำแข็ง ซาก Aeor | [eiselcross/_overview.md](../../exandria/wildemount/eiselcross/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria · ⛰️ Shenzhou · ☀️ Suvarna · 🌊 Eldmere
+
+ยังไม่เริ่ม
 
 ## สถานที่
 

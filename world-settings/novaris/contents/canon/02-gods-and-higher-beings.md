@@ -76,7 +76,7 @@
 |---|---|---|
 | Sarenrae | Vasselheim (Shenzhou) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
 | The Raven Queen | Vasselheim (Shenzhou) | ผู้พาวิญญาณออกนอกกรง |
-| The Luxon | Rosohna (Aldenreich) | ศรัทธาของ Kryn Dynasty |
+| The Luxon | Rosohna (Aldenreich) | ศรัทธาของ Lumenvael Dynasty |
 | Erathis | Emon (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
 | Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
 | Moradin | Kraghammer (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
@@ -88,10 +88,10 @@
 |---|---|---|
 | Bahamut | Rexxentrum (Aldenreich) | เด็กเร่ร่อน |
 | Tiamat | ซาก Draconia (Aldenreich) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
-| Gruumsh | Greying Wildlands (Aldenreich) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
+| Gruumsh | Gråmark (Aldenreich) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
 | Corellon | Uthodurn (Aldenreich) | **กลมกลืนอยู่ในนคร** |
 | Vecna | Eiselcross (Aldenreich) | **เร่ร่อน**ในซาก Aeor |
-| Lolth | Underdark ใต้ Xhorhas (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
+| Lolth | Underdark ใต้ Ödland (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
 | Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
 | Avandra | Kymal (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
 | Zehir | Rifenmist / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |

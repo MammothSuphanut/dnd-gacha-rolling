@@ -211,7 +211,7 @@ Aeor ผลิตทุกอย่างได้เอง จึงยืน�
 | 300 PD | เทพ **Erathis** รวมทั้งทวีป Voxaria เป็นประเทศเดียว และครองบัลลังก์ที่ Emon อย่างเปิดเผย — แต่ละรัฐได้เลือกตั้งผู้นำของตัวเอง |
 | 835 PD | Frozen Sick |
 | 835–836 PD | **War of Ash and Light**: Empire ขยายดินแดน และ Luxon Beacon ตกไปอยู่ในมือ Empire ตามด้วยเหตุการณ์ที่ Ashguard, Felderwin, Hupperdook และการบุก Rexxentrum จนสุดท้าย **Sarenrae** เป็นผู้ไกล่เกลี่ยให้เจรจากันได้ |
-| 836–935 PD | **สงครามเย็นยาว 100 ปี** ระหว่าง Dwendalian Empire กับ Kryn Dynasty ทั้งสองฝ่ายแข่งกันขุดซาก Aeor |
+| 836–935 PD | **สงครามเย็นยาว 100 ปี** ระหว่าง Dwendalian Empire กับ Lumenvael Dynasty ทั้งสองฝ่ายแข่งกันขุดซาก Aeor |
 
 **กรงยังคงอยู่** และหลายฝ่ายกำลังตามหา**กุญแจ**ที่จะเปิดมัน
 
@@ -417,7 +417,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | มหาอำนาจ | ทวีป | หมายเหตุ |
 |---|---|---|
 | Dwendalian Empire | Aldenreich | ปกครองโดยดวงดาว Manfried |
-| Kryn Dynasty | Aldenreich | ศรัทธาใน The Luxon |
+| Lumenvael Dynasty | Aldenreich | ศรัทธาใน The Luxon |
 | Voxaria | Voxaria (ทั้งทวีป) | ประเทศเดียวทั้งทวีปใต้เทพ **Erathis** — แต่ละรัฐเลือกตั้งผู้นำของตัวเอง แต่เงินคุมเกม การเมืองและคอร์รัปชันหนัก |
 | Othanzia (Vasselheim) | Shenzhou | นครเทพแบบตะวันออกที่เทพหลายองค์อยู่จริง |
 | Ank'Harel | Suvarna | นครหลวงจักรวรรดิโบราณแบบโรมัน |
@@ -445,9 +445,9 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | Trostenwald / Alfield | ชนบท ไร่ข้าว โรงเบียร์ คาร์นิวัล | 2 |
 | Hupperdook | เมืองโรงงานของโนม Steampunk ดอกไม้ไฟ | 4 |
 | Nicodranas / Port Damali | สาธารณรัฐพ่อค้าแบบเวนิส (ตระกูลพ่อค้าเลือกกันเอง) เรือใบ ปืนคาบศิลา | 3 |
-| Rosohna | เมืองหลวง Kryn Dynasty "City of Night" ของ drow มืดถาวร | 2–3 |
+| Rosohna | เมืองหลวง Lumenvael Dynasty "City of Night" ของ drow มืดถาวร | 2–3 |
 | Uthodurn | นครในถ้ำ ดวาร์ฟกับเอลฟ์ปกครองร่วมกัน | 2 |
-| Greying Wildlands | ดินแดนไร้กฎหมายต้องคำสาป ชนเผ่าไวกิ้ง | 0–1 |
+| Gråmark | ดินแดนไร้กฎหมายต้องคำสาป ชนเผ่าไวกิ้ง | 0–1 |
 | ซาก Draconia | ซากนครลอยฟ้าของดราก้อนบอร์นที่ Dreemoth Ravine | ซาก |
 | Eiselcross | ซาก Aeor ใต้หิมะ หุ่นยามยังทำงาน สองจักรวรรดิแย่งกันขุด | 6 (ซาก) |
 
@@ -521,7 +521,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | The Myriad | Stilben | อาชญากรรมข้ามทวีป "เงินดำ" |
 | The Golden Ledger | Emon | ธนาคารและตลาดหลักทรัพย์ "เงินขาว" |
 | สถาบัน Emon | Emon | สร้างเทคโนโลยีระดับ 6 ขึ้นใหม่โดยไม่ซ้ำรอย Aeor |
-| ตระกูล Vorlath | Greying Wildlands + แฝงตัวในชนชั้นสูง | ราชวงศ์แวมไพร์เลือดบริสุทธิ์ (รายละเอียดด้านล่าง) |
+| ตระกูล Vorlath | Gråmark + แฝงตัวในชนชั้นสูง | ราชวงศ์แวมไพร์เลือดบริสุทธิ์ (รายละเอียดด้านล่าง) |
 
 **ตระกูล Vorlath:** ปัจจุบันผู้สำเร็จราชการปกครองแทนราชันที่ถูกฆ่า แวมไพร์เลือดบริสุทธิ์**เกิดมาเป็นแวมไพร์** เป็นเผ่าพันธุ์ที่มีชีวิต ไม่ใช่ undead แสงแดดแค่ทำให้อ่อนแรง และมีชะตาที่ยังไม่ถูกเขียน จึงไต่ระดับตัวตนได้
 
@@ -529,7 +529,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 
 | ทวีป | องค์กร |
 |---|---|
-| Aldenreich | Cerberus Assembly (สภาจอมเวทของจักรวรรดิ ขุดของ Aeor มาใช้) · Righteous Brand (กองทัพจักรวรรดิ) · The Volstrucker (นักฆ่าลับ) · Den ของ Kryn · The Revelry (โจรสลัด) · ผู้ขุดซาก Aeor |
+| Aldenreich | Cerberus Assembly (สภาจอมเวทของจักรวรรดิ ขุดของ Aeor มาใช้) · Righteous Brand (กองทัพจักรวรรดิ) · The Volstrucker (นักฆ่าลับ) · Den ของ Lumenvael · The Revelry (โจรสลัด) · ผู้ขุดซาก Aeor |
 | Voxaria | ราชสำนักของ Erathis และผู้นำรัฐจากการเลือกตั้ง · ศูนย์ Hero · The Clasp (กิลด์โจร) · Iron Authority · สหภาพโรงงาน Emon · บรรษัทอาวุธ Whitestone · เครือคาสิโน Kymal · ราชสำนักฤดูร้อนของ Titania |
 | Shenzhou | สภาวิหาร Vasselheim · สำนักฝ่ายธรรมะ (Sunderpeak) · พรรคมารสวรรค์ (Hishari) · รัฐบาลโชกุน · องครักษ์เสื้อแพร |
 | Suvarna | Chandei Quorum (สภาปกครองใต้ Seren) · บ้านแห่งหมวกเหล็ก (Ehrvarn) · เผ่าบาร์บาเรียน Hellcatch · ผู้เฝ้าสุสาน Rumedam |

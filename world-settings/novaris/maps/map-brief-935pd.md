@@ -48,10 +48,10 @@
 |---|---|---|---|
 | **Aldenreich** | **30.5 ล้าน** | | |
 | · Dwendalian Empire | 15 ล้าน | 12% | Rexxentrum ~300k · Zadash ~150k · Hupperdook ~50k · Trostenwald ~10k · Alfield ~8k |
-| · Kryn Dynasty | 8 ล้าน | 10% | Rosohna ~200k · Bazzoxan ~15k (ป้อม) |
-| · Clovis Concord | 4.5 ล้าน | 20% | Port Damali ~180k · Nicodranas ~150k · Port Zoon ~60k · Tussoa ~50k |
+| · Lumenvael Dynasty | 8 ล้าน | 10% | Rosohna ~200k · Bazzoxan ~15k (ป้อม) |
+| · Lagunara Concord | 4.5 ล้าน | 20% | Port Damali ~180k · Nicodranas ~150k · Port Zoon ~60k · Tussoa ~50k |
 | · Uthodurn + ชายขอบ | 1 ล้าน | — | Uthodurn ~50k |
-| · ชนเผ่า (Greying Wildlands, Xhorhas ใต้, Blightshore) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
+| · ชนเผ่า (Gråmark, Ödland ใต้, Witherstrand) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
 | **Voxaria** | **18.5 ล้าน** | | |
 | · รัฐส่วนกลาง (Emon, Westruun, Kymal, Stilben ฯลฯ) | 14.5 ล้าน | 75% | **Emon ~3.5 ล้าน** (ใหญ่สุดในโลก) · Kymal ~1.5 ล้าน · Westruun ~1 ล้าน · Stilben ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
 | · Iron Authority | 2.5 ล้าน | 70% | Tz'Arrm ~900k |
@@ -69,7 +69,7 @@
 | · Hellcatch Valley | 2.5 ล้าน | 5% | Gujjar-Serai ~25k · Bassuras ~15k · ค่ายเผ่าบาร์บาเรียน |
 | · Taloned Highlands | 2 ล้าน | 10% | Sruwargas ~60k |
 | · ชายฝั่งเหนือ + ชนเผ่าเร่ร่อน | 2 ล้าน | — | Shammel ~30k |
-| **Eldmere** | — | — | ไม่มีเมืองมนุษย์ — ถิ่นของเผ่าโบราณ (canon ข้อ 24) · 2 ล้านเดิม (ชาวเรือ) ย้ายไปทวีปอื่นทวีปละ 0.5 ล้าน: Clovis Concord, Republic of Voxaria, Othanzia, ชายฝั่งเหนือ Suvarna |
+| **Eldmere** | — | — | ไม่มีเมืองมนุษย์ — ถิ่นของเผ่าโบราณ (canon ข้อ 24) · 2 ล้านเดิม (ชาวเรือ) ย้ายไปทวีปอื่นทวีปละ 0.5 ล้าน: Lagunara Concord, Republic of Voxaria, Othanzia, ชายฝั่งเหนือ Suvarna |
 | **รวม** | **100 ล้าน** | ~22% | |
 
 ระดับขนาด: **มหานคร** 1 ล้าน+ · **นครใหญ่** 150k+ · **นคร** 40k+ · **เมือง** 5k+ · **หมู่บ้าน/ป้อม**
@@ -98,19 +98,19 @@
 
 | ที่ | ระดับ | ขนาด | เปลี่ยนจากแผนที่ CR |
 |---|---|---|---|
-| **Rexxentrum** (Dwendalian Empire) | 3 (+6 ลับใต้ดิน) | นครใหญ่ | ภายนอกเป็นเมืองยุคกลาง — ห้องลับใต้ดินไม่แสดงบนแผนที่ · ถนนทหารสู่ชายแดน Xhorhas |
+| **Rexxentrum** (Dwendalian Empire) | 3 (+6 ลับใต้ดิน) | นครใหญ่ | ภายนอกเป็นเมืองยุคกลาง — ห้องลับใต้ดินไม่แสดงบนแผนที่ · ถนนทหารสู่ชายแดน Ödland |
 | **Zadash** | 2–3 | นครใหญ่ | ไร่นาของ Zemni Fields เต็มทุ่ง |
 | **Trostenwald / Alfield** | 2 | เมือง | ชนบท ไร่ข้าว โรงเบียร์ — Marrow Valley เป็นยุ้งฉางของจักรวรรดิ |
 | **Hupperdook** | 4 | นคร | โรงงานโนม ควัน เหมือง — ป่ารอบเมืองหาย |
-| **Wuyun Gates** | 2 | ป้อม | ด่านชายแดน Empire–Menagerie Coast |
-| **Nicodranas / Port Damali** (Clovis Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
-| **Rosohna** (Kryn Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
+| **Wuyun Gates** | 2 | ป้อม | ด่านชายแดน Empire–Costa Mosaica |
+| **Nicodranas / Port Damali** (Lagunara Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
+| **Rosohna** (Lumenvael Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
 | **Bazzoxan** | 2 | ป้อม | ไม่เปลี่ยน |
 | **Uthodurn** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
-| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Foren (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Foren จากเหนือลงตะวันออกเฉียงใต้ · **Vurmas** ฐานลอยน้ำ Kryn (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Gelier · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Foren เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Icehaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Foren, Gelier, Biessel, Dampfkan, Kaltsel, Taergoss |
+| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Foren (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Foren จากเหนือลงตะวันออกเฉียงใต้ · **Vurmas** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Gelier · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Foren เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Icehaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Foren, Gelier, Biessel, Dampfkan, Kaltsel, Taergoss |
 | ซาก Draconia | ซาก | — | ซากใน Dreemoth Ravine |
-| Greying Wildlands | 0–1 | — | **คงป่าเถื่อน** ชนเผ่าไวกิ้ง ค่ายเล็ก |
-| Xhorhas ใต้ / Blightshore | 0–1 | — | **คงรกร้าง** ชนเผ่า มอนสเตอร์ |
+| Gråmark | 0–1 | — | **คงป่าเถื่อน** ชนเผ่าไวกิ้ง ค่ายเล็ก |
+| Ödland ใต้ / Witherstrand | 0–1 | — | **คงรกร้าง** ชนเผ่า มอนสเตอร์ |
 
 ### ⛰️ Shenzhou — ตะวันออกยุคกลางทั้งทวีป
 
@@ -148,9 +148,9 @@
 | ชนิด | เส้นทาง |
 |---|---|
 | **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Emon, Kymal, Westruun, Stilben, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
-| **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Rumedam ลึก, Aeshanadoor, Greying Wildlands) |
+| **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Rumedam ลึก, Aeshanadoor, Gråmark) |
 | **เส้นทางเรือ** | Emon ↔ Nicodranas/Port Damali ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
-| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Port Damali** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Kryn Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
+| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Port Damali** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
 | **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Rexxentrum, Rosohna, Port Damali, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Demithore Valley |
 
