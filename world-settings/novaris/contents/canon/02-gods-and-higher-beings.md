@@ -95,7 +95,7 @@
 | Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
 | Avandra | Fortuna (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
 | Zehir | Riftwild / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
-| Glasya | Stilben (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
+| Glasya | Port Noir (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
 | Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
 | Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Tengu Range (Shenzhou) |

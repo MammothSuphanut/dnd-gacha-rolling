@@ -304,3 +304,12 @@
 | Shadebarrow | **Sunbarrow** | [shadebarrow.md](../../exandria/tal-dorei/dividing-plains/shadebarrow.md) | ✅ | ✅ | ☐ | ☐ |
 | Westruun | **Midgate** | [westruun.md](../../exandria/tal-dorei/dividing-plains/westruun.md) | ✅ | ✅ | ☐ | ☐ |
 | Kymal | **Fortuna** | [kymal.md](../../exandria/tal-dorei/dividing-plains/kymal.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — Blacktide Coast
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Mooren Lake | **Mirror Lake** | [mooren-lake.md](../../exandria/tal-dorei/lucidian-coast/mooren-lake.md) | ✅ | ✅ | ☐ | ☐ |
+| Stilben | **Port Noir** | [stilben.md](../../exandria/tal-dorei/lucidian-coast/stilben.md) | ✅ | ✅ | ☐ | ☐ |
+| Drynna | **Calmwater** | [drynna.md](../../exandria/tal-dorei/lucidian-coast/drynna.md) | ✅ | ✅ | ☐ | ☐ |
+| Zephrah | **Windward** | [zephrah.md](../../exandria/tal-dorei/lucidian-coast/zephrah.md) | ✅ | ✅ | ☐ | ☐ |
