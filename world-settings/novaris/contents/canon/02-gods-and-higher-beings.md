@@ -89,7 +89,7 @@
 | Bahamut | Dwendalis (Aldenreich) | เด็กเร่ร่อน |
 | Tiamat | ซาก Draconia (Aldenreich) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
 | Gruumsh | Gråmark (Aldenreich) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
-| Corellon | Uthodurn (Aldenreich) | **กลมกลืนอยู่ในนคร** |
+| Corellon | Twinhold (Aldenreich) | **กลมกลืนอยู่ในนคร** |
 | Vecna | Eiselcross (Aldenreich) | **เร่ร่อน**ในซาก Aeor |
 | Lolth | Underdark ใต้ Ödland (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
 | Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |

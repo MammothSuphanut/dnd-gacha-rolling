@@ -50,7 +50,7 @@
 | · Dwendalian Empire | 15 ล้าน | 12% | Dwendalis ~300k · Trivane ~150k · Cogwick ~50k · Hopsdale ~10k · Wheaton ~8k |
 | · Lumenvael Dynasty | 8 ล้าน | 10% | Rosohna ~200k · Bazzoxan ~15k (ป้อม) |
 | · Lagunara Concord | 4.5 ล้าน | 20% | Port Damali ~180k · Nicodranas ~150k · Port Zoon ~60k · Tussoa ~50k |
-| · Uthodurn + ชายขอบ | 1 ล้าน | — | Uthodurn ~50k |
+| · Twinhold + ชายขอบ | 1 ล้าน | — | Twinhold ~50k |
 | · ชนเผ่า (Gråmark, Ödland ใต้, Witherstrand) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
 | **Voxaria** | **18.5 ล้าน** | | |
 | · Crownshore · Heartland · Blacktide Coast · Thunderspine (Emon, Westruun, Kymal, Stilben ฯลฯ) | 14.5 ล้าน | 75% | **Emon ~3.5 ล้าน** (ใหญ่สุดในโลก) · Kymal ~1.5 ล้าน · Westruun ~1 ล้าน · Stilben ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
@@ -106,8 +106,8 @@
 | **Nicodranas / Port Damali** (Lagunara Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
 | **Rosohna** (Lumenvael Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
 | **Bazzoxan** | 2 | ป้อม | ไม่เปลี่ยน |
-| **Uthodurn** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
-| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Highfrost (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Highfrost จากเหนือลงตะวันออกเฉียงใต้ · **Duskraft** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Glacia · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Highfrost เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Frosthaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Highfrost, Glacia, Northend, Coldfire, Icelet, Fishholm |
+| **Twinhold** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
+| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Twinhold บน Highfrost (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Highfrost จากเหนือลงตะวันออกเฉียงใต้ · **Duskraft** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Glacia · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Highfrost เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Twinhold — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Frosthaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Highfrost, Glacia, Northend, Coldfire, Icelet, Fishholm |
 | ซาก Draconia | ซาก | — | ซากใน Dreemoth Ravine |
 | Gråmark | 0–1 | — | **คงป่าเถื่อน** ชนเผ่าไวกิ้ง ค่ายเล็ก |
 | Ödland ใต้ / Witherstrand | 0–1 | — | **คงรกร้าง** ชนเผ่า มอนสเตอร์ |

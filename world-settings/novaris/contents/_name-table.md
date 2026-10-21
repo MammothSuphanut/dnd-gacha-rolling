@@ -178,3 +178,23 @@
 | Aeor | **Aeor (คงเดิม)** | [aeor.md](../../exandria/wildemount/eiselcross/aeor.md) | ✅ | ✅ | ☐ | ☐ |
 | Salsvault | **Salsvault (คงเดิม)** | [salsavault.md](../../exandria/wildemount/eiselcross/salsavault.md) | ✅ | ✅ | ☐ | ☐ |
 | Fortress of the Dead Jarl | **Fortress of the Dead Jarl (คงเดิม)** | [fortress-of-the-dead-jarl.md](../../exandria/wildemount/eiselcross/fortress-of-the-dead-jarl.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ❄️ Aldenreich — Gråmark
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Shadycreek Run | **Shadeby** | [shadycreek-run.md](../../exandria/wildemount/greying-wildlands/shadycreek-run.md) | ✅ | ✅ | ☐ | ☐ |
+| Cinderrest Sanctum | **Ashrest Shrine** | [cinderrest-sanctum.md](../../exandria/wildemount/greying-wildlands/cinderrest-sanctum.md) | ✅ | ✅ | ☐ | ☐ |
+| Quannah Breach | **Wolfgate** | [quannah-breach.md](../../exandria/wildemount/greying-wildlands/quannah-breach.md) | ✅ | ✅ | ☐ | ☐ |
+| Ruins of Molaesmyr | **Elvenfall Ruins** | [ruins-of-molaesmyr.md](../../exandria/wildemount/greying-wildlands/ruins-of-molaesmyr.md) | ✅ | ✅ | ☐ | ☐ |
+| Blooming Grove | **Bloomgrove** | [blooming-grove.md](../../exandria/wildemount/greying-wildlands/blooming-grove.md) | ✅ | ✅ | ☐ | ☐ |
+| Uthodurn | **Twinhold** | [uthodurn.md](../../exandria/wildemount/greying-wildlands/uthodurn.md) | ✅ | ✅ | ☐ | ☐ |
+| Boroftkrah | **Grakmoot** | [boroftkrah.md](../../exandria/wildemount/greying-wildlands/boroftkrah.md) | ✅ | ✅ | ☐ | ☐ |
+| Kravaraad | **Blackfell** | [kravaraad.md](../../exandria/wildemount/greying-wildlands/kravaraad.md) | ✅ | ✅ | ☐ | ☐ |
+| Mythburrow | **Ivoryden** | [mythburrow.md](../../exandria/wildemount/greying-wildlands/mythburrow.md) | ✅ | ✅ | ☐ | ☐ |
+| Savalirwood | **Greypine** | [savalirwood.md](../../exandria/wildemount/greying-wildlands/savalirwood.md) | ✅ | ✅ | ☐ | ☐ |
+| Uraliss | **Haverby** | [uraliss.md](../../exandria/wildemount/greying-wildlands/uraliss.md) | ✅ | ✅ | ☐ | ☐ |
+| Palebank Village | **Palebank Village (คงเดิม)** | [palebank-village.md](../../exandria/wildemount/greying-wildlands/palebank-village.md) | ✅ | ✅ | ☐ | ☐ |
+| Crystalsands Tundra | **Glimmer Tundra** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Flotket Alps | **Whitehorn Alps** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Rime Plains | **Hoarfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
