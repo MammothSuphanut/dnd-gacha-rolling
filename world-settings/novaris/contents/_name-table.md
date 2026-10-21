@@ -271,92 +271,92 @@
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Emerald Outpost | **Greenwatch** | [emerald-outpost.md](../../exandria/tal-dorei/bladeshimmer-shoreline/emerald-outpost.md) | ✅ | ✅ | ☐ | ☐ |
-| New O'Noa | **Firsthaven** | [new-onoa.md](../../exandria/tal-dorei/bladeshimmer-shoreline/new-onoa.md) | ✅ | ✅ | ☐ | ☐ |
-| Visa Isle | **Feral Isle** | [visa-isle.md](../../exandria/tal-dorei/bladeshimmer-shoreline/visa-isle.md) | ✅ | ✅ | ☐ | ☐ |
-| Shalesteps | **Cliffsteps** | [shalesteps.md](../../exandria/tal-dorei/bladeshimmer-shoreline/shalesteps.md) | ✅ | ✅ | ☐ | ☐ |
-| Puddlefoot | **Brookfoot** | [puddlefoot.md](../../exandria/tal-dorei/bladeshimmer-shoreline/puddlefoot.md) | ✅ | ✅ | ☐ | ☐ |
-| Emon | **Lumen City** | [emon.md](../../exandria/tal-dorei/bladeshimmer-shoreline/emon.md) | ✅ | ✅ | ☐ | ☐ |
+| Emerald Outpost | **Greenwatch** | [emerald-outpost.md](../../exandria/tal-dorei/bladeshimmer-shoreline/emerald-outpost.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| New O'Noa | **Firsthaven** | [new-onoa.md](../../exandria/tal-dorei/bladeshimmer-shoreline/new-onoa.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Visa Isle | **Feral Isle** | [visa-isle.md](../../exandria/tal-dorei/bladeshimmer-shoreline/visa-isle.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Shalesteps | **Cliffsteps** | [shalesteps.md](../../exandria/tal-dorei/bladeshimmer-shoreline/shalesteps.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Puddlefoot | **Brookfoot** | [puddlefoot.md](../../exandria/tal-dorei/bladeshimmer-shoreline/puddlefoot.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Emon | **Lumen City** | [emon.md](../../exandria/tal-dorei/bladeshimmer-shoreline/emon.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria — Forgeheim
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Fort Daxio | **Fort Granite** | [fort-daxio.md](../../exandria/tal-dorei/cliffkeep-mountains/fort-daxio.md) | ✅ | ✅ | ☐ | ☐ |
-| Othendin Pass | **Giantstep Pass** | [othendin-pass.md](../../exandria/tal-dorei/cliffkeep-mountains/othendin-pass.md) | ✅ | ✅ | ☐ | ☐ |
-| Reaching Bluff | **Goldbluff** | [reaching-bluff.md](../../exandria/tal-dorei/cliffkeep-mountains/reaching-bluff.md) | ✅ | ✅ | ☐ | ☐ |
-| Jorenn Village | **Hillmarket** | [jorenn-village.md](../../exandria/tal-dorei/cliffkeep-mountains/jorenn-village.md) | ✅ | ✅ | ☐ | ☐ |
-| Kraghammer | **Deepforge** | [kraghammer.md](../../exandria/tal-dorei/cliffkeep-mountains/kraghammer.md) | ✅ | ✅ | ☐ | ☐ |
-| Lyrengorn | **Elvenpeak** | [lyrengorn.md](../../exandria/tal-dorei/cliffkeep-mountains/lyrengorn.md) | ✅ | ✅ | ☐ | ☐ |
-| Gatsibadow | **Gloomvale** | [gatsibadow.md](../../exandria/tal-dorei/cliffkeep-mountains/gatsibadow.md) | ✅ | ✅ | ☐ | ☐ |
-| Terrah | **Earthward** | [terrah.md](../../exandria/tal-dorei/cliffkeep-mountains/terrah.md) | ✅ | ✅ | ☐ | ☐ |
+| Fort Daxio | **Fort Granite** | [fort-daxio.md](../../exandria/tal-dorei/cliffkeep-mountains/fort-daxio.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Othendin Pass | **Giantstep Pass** | [othendin-pass.md](../../exandria/tal-dorei/cliffkeep-mountains/othendin-pass.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Reaching Bluff | **Goldbluff** | [reaching-bluff.md](../../exandria/tal-dorei/cliffkeep-mountains/reaching-bluff.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Jorenn Village | **Hillmarket** | [jorenn-village.md](../../exandria/tal-dorei/cliffkeep-mountains/jorenn-village.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Kraghammer | **Deepforge** | [kraghammer.md](../../exandria/tal-dorei/cliffkeep-mountains/kraghammer.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Lyrengorn | **Elvenpeak** | [lyrengorn.md](../../exandria/tal-dorei/cliffkeep-mountains/lyrengorn.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Gatsibadow | **Gloomvale** | [gatsibadow.md](../../exandria/tal-dorei/cliffkeep-mountains/gatsibadow.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Terrah | **Earthward** | [terrah.md](../../exandria/tal-dorei/cliffkeep-mountains/terrah.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria — Heartland
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Gatshadow Mountain | **Blackcrown Mountain** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
-| Foramere Basin | **Bluebasin** | [foramere-basin.md](../../exandria/tal-dorei/dividing-plains/foramere-basin.md) | ✅ | ✅ | ☐ | ☐ |
-| Ironseat Ridge | **Ironback Ridge** | [ironseat-ridge.md](../../exandria/tal-dorei/dividing-plains/ironseat-ridge.md) | ✅ | ✅ | ☐ | ☐ |
-| Ivyheart Thicket | **Ivywood** | [ivyheart-thicket.md](../../exandria/tal-dorei/dividing-plains/ivyheart-thicket.md) | ✅ | ✅ | ☐ | ☐ |
-| Murdoon Mines | **Redrock Mines** | [murdoon-mines.md](../../exandria/tal-dorei/dividing-plains/murdoon-mines.md) | ✅ | ✅ | ☐ | ☐ |
-| Silvercut Crossroads | **Silver Junction** | [silvercut-crossroads.md](../../exandria/tal-dorei/dividing-plains/silvercut-crossroads.md) | ✅ | ✅ | ☐ | ☐ |
-| Turst Fields | **Goldfields** | [turst-fields.md](../../exandria/tal-dorei/dividing-plains/turst-fields.md) | ✅ | ✅ | ☐ | ☐ |
-| Shadebarrow | **Sunbarrow** | [shadebarrow.md](../../exandria/tal-dorei/dividing-plains/shadebarrow.md) | ✅ | ✅ | ☐ | ☐ |
-| Westruun | **Midgate** | [westruun.md](../../exandria/tal-dorei/dividing-plains/westruun.md) | ✅ | ✅ | ☐ | ☐ |
-| Kymal | **Fortuna** | [kymal.md](../../exandria/tal-dorei/dividing-plains/kymal.md) | ✅ | ✅ | ☐ | ☐ |
+| Gatshadow Mountain | **Blackcrown Mountain** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Foramere Basin | **Bluebasin** | [foramere-basin.md](../../exandria/tal-dorei/dividing-plains/foramere-basin.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ironseat Ridge | **Ironback Ridge** | [ironseat-ridge.md](../../exandria/tal-dorei/dividing-plains/ironseat-ridge.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ivyheart Thicket | **Ivywood** | [ivyheart-thicket.md](../../exandria/tal-dorei/dividing-plains/ivyheart-thicket.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Murdoon Mines | **Redrock Mines** | [murdoon-mines.md](../../exandria/tal-dorei/dividing-plains/murdoon-mines.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Silvercut Crossroads | **Silver Junction** | [silvercut-crossroads.md](../../exandria/tal-dorei/dividing-plains/silvercut-crossroads.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Turst Fields | **Goldfields** | [turst-fields.md](../../exandria/tal-dorei/dividing-plains/turst-fields.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Shadebarrow | **Sunbarrow** | [shadebarrow.md](../../exandria/tal-dorei/dividing-plains/shadebarrow.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Westruun | **Midgate** | [westruun.md](../../exandria/tal-dorei/dividing-plains/westruun.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Kymal | **Fortuna** | [kymal.md](../../exandria/tal-dorei/dividing-plains/kymal.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria — Blacktide Coast
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Mooren Lake | **Mirror Lake** | [mooren-lake.md](../../exandria/tal-dorei/lucidian-coast/mooren-lake.md) | ✅ | ✅ | ☐ | ☐ |
-| Stilben | **Port Noir** | [stilben.md](../../exandria/tal-dorei/lucidian-coast/stilben.md) | ✅ | ✅ | ☐ | ☐ |
-| Drynna | **Calmwater** | [drynna.md](../../exandria/tal-dorei/lucidian-coast/drynna.md) | ✅ | ✅ | ☐ | ☐ |
-| Zephrah | **Windward** | [zephrah.md](../../exandria/tal-dorei/lucidian-coast/zephrah.md) | ✅ | ✅ | ☐ | ☐ |
+| Mooren Lake | **Mirror Lake** | [mooren-lake.md](../../exandria/tal-dorei/lucidian-coast/mooren-lake.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Stilben | **Port Noir** | [stilben.md](../../exandria/tal-dorei/lucidian-coast/stilben.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Drynna | **Calmwater** | [drynna.md](../../exandria/tal-dorei/lucidian-coast/drynna.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Zephrah | **Windward** | [zephrah.md](../../exandria/tal-dorei/lucidian-coast/zephrah.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria — Gloamwood
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Skyanchor Citadel | **Giantkeep** | [skyanchor-citadel.md](../../exandria/tal-dorei/parchwood-timberlands/skyanchor-citadel.md) | ✅ | ✅ | ☐ | ☐ |
-| Whitestone | **Sunspire** | [whitestone.md](../../exandria/tal-dorei/parchwood-timberlands/whitestone.md) | ✅ | ✅ | ☐ | ☐ |
+| Skyanchor Citadel | **Giantkeep** | [skyanchor-citadel.md](../../exandria/tal-dorei/parchwood-timberlands/skyanchor-citadel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Whitestone | **Sunspire** | [whitestone.md](../../exandria/tal-dorei/parchwood-timberlands/whitestone.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria — Thunderspine
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Ashen Gorge | **Twinfire Gorge** | [ashen-gorge.md](../../exandria/tal-dorei/stormcrest-mountains/ashen-gorge.md) | ✅ | ✅ | ☐ | ☐ |
-| Cavern of Axiom | **Riddle Cavern** | [cavern-of-axiom.md](../../exandria/tal-dorei/stormcrest-mountains/cavern-of-axiom.md) | ✅ | ✅ | ☐ | ☐ |
-| Shivergut Tribe | **Frostfang Tribe** | [shivergut-tribe.md](../../exandria/tal-dorei/stormcrest-mountains/shivergut-tribe.md) | ✅ | ✅ | ☐ | ☐ |
-| Bronbog | **Mushmire** | [bronbog.md](../../exandria/tal-dorei/stormcrest-mountains/bronbog.md) | ✅ | ✅ | ☐ | ☐ |
-| Ruhn-Shak | **Deepshade** | [ruhn-shak.md](../../exandria/tal-dorei/stormcrest-mountains/ruhn-shak.md) | ✅ | ✅ | ☐ | ☐ |
+| Ashen Gorge | **Twinfire Gorge** | [ashen-gorge.md](../../exandria/tal-dorei/stormcrest-mountains/ashen-gorge.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Cavern of Axiom | **Riddle Cavern** | [cavern-of-axiom.md](../../exandria/tal-dorei/stormcrest-mountains/cavern-of-axiom.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Shivergut Tribe | **Frostfang Tribe** | [shivergut-tribe.md](../../exandria/tal-dorei/stormcrest-mountains/shivergut-tribe.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Bronbog | **Mushmire** | [bronbog.md](../../exandria/tal-dorei/stormcrest-mountains/bronbog.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ruhn-Shak | **Deepshade** | [ruhn-shak.md](../../exandria/tal-dorei/stormcrest-mountains/ruhn-shak.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria — Iron Authority + เขต Gate Riftwild
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Qoniira | **Quetza** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
-| Niirdal-Poc | **Quetza Crown** | [niirdal-poc.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-poc.md) | ✅ | ✅ | ☐ | ☐ |
-| Niirdal-Gan | **Quetza Fields** | [niirdal-gan.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-gan.md) | ✅ | ✅ | ☐ | ☐ |
-| Niirdal-Hup | **Quetza Fort** | [niirdal-hup.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-hup.md) | ✅ | ✅ | ☐ | ☐ |
-| Niirdal-Sarqet | **Quetza Temple** | [niirdal-sarqet.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-sarqet.md) | ✅ | ✅ | ☐ | ☐ |
-| Ezordam-Haar | **Redwing** | [ezordam-haar.md](../../exandria/tal-dorei/rifenmist-peninsula/ezordam-haar.md) | ✅ | ✅ | ☐ | ☐ |
-| Hdar-Fye | **Steelspire** | [hdar-fye.md](../../exandria/tal-dorei/rifenmist-peninsula/hdar-fye.md) | ✅ | ✅ | ☐ | ☐ |
-| Ortem-Vellak | **Ashgate** | [ortem-vellak.md](../../exandria/tal-dorei/rifenmist-peninsula/ortem-vellak.md) | ✅ | ✅ | ☐ | ☐ |
-| Rybad-Kol | **Forgehold** | [rybad-kol.md](../../exandria/tal-dorei/rifenmist-peninsula/rybad-kol.md) | ✅ | ✅ | ☐ | ☐ |
-| Tz'Arrm | **Ironhelm** | [tzaarm.md](../../exandria/tal-dorei/rifenmist-peninsula/tzaarm.md) | ✅ | ✅ | ☐ | ☐ |
-| Byroden | **Glade Hollow** | [byroden.md](../../exandria/tal-dorei/rifenmist-peninsula/byroden.md) | ✅ | ✅ | ☐ | ☐ |
+| Qoniira | **Quetza** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Niirdal-Poc | **Quetza Crown** | [niirdal-poc.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-poc.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Niirdal-Gan | **Quetza Fields** | [niirdal-gan.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-gan.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Niirdal-Hup | **Quetza Fort** | [niirdal-hup.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-hup.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Niirdal-Sarqet | **Quetza Temple** | [niirdal-sarqet.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-sarqet.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ezordam-Haar | **Redwing** | [ezordam-haar.md](../../exandria/tal-dorei/rifenmist-peninsula/ezordam-haar.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Hdar-Fye | **Steelspire** | [hdar-fye.md](../../exandria/tal-dorei/rifenmist-peninsula/hdar-fye.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ortem-Vellak | **Ashgate** | [ortem-vellak.md](../../exandria/tal-dorei/rifenmist-peninsula/ortem-vellak.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Rybad-Kol | **Forgehold** | [rybad-kol.md](../../exandria/tal-dorei/rifenmist-peninsula/rybad-kol.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Tz'Arrm | **Ironhelm** | [tzaarm.md](../../exandria/tal-dorei/rifenmist-peninsula/tzaarm.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Byroden | **Glade Hollow** | [byroden.md](../../exandria/tal-dorei/rifenmist-peninsula/byroden.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌾 Voxaria — เขต Gate The Verge
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Shifting Keep | **Mirage Keep** | [shifting-keep.md](../../exandria/tal-dorei/verdant-expanse/shifting-keep.md) | ✅ | ✅ | ☐ | ☐ |
-| Tormor Falls | **Veilfalls** | [tormor-falls.md](../../exandria/tal-dorei/verdant-expanse/tormor-falls.md) | ✅ | ✅ | ☐ | ☐ |
-| Vues'dal villages | **Fernlake** | [vuesdal-villages.md](../../exandria/tal-dorei/verdant-expanse/vuesdal-villages.md) | ✅ | ✅ | ☐ | ☐ |
-| Orencleft | **Faewatch** | [orencleft.md](../../exandria/tal-dorei/verdant-expanse/orencleft.md) | ✅ | ✅ | ☐ | ☐ |
-| Syngorn | **Syngorn (คงเดิม)** | [syngorn.md](../../exandria/tal-dorei/verdant-expanse/syngorn.md) | ✅ | ✅ | ☐ | ☐ |
+| Shifting Keep | **Mirage Keep** | [shifting-keep.md](../../exandria/tal-dorei/verdant-expanse/shifting-keep.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Tormor Falls | **Veilfalls** | [tormor-falls.md](../../exandria/tal-dorei/verdant-expanse/tormor-falls.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Vues'dal villages | **Fernlake** | [vuesdal-villages.md](../../exandria/tal-dorei/verdant-expanse/vuesdal-villages.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Orencleft | **Faewatch** | [orencleft.md](../../exandria/tal-dorei/verdant-expanse/orencleft.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Syngorn | **Syngorn (คงเดิม)** | [syngorn.md](../../exandria/tal-dorei/verdant-expanse/syngorn.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ⛰️ Shenzhou — Amanokado (ครึ่งญี่ปุ่น)
 
