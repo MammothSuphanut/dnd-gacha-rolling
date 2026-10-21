@@ -313,3 +313,10 @@
 | Stilben | **Port Noir** | [stilben.md](../../exandria/tal-dorei/lucidian-coast/stilben.md) | ✅ | ✅ | ☐ | ☐ |
 | Drynna | **Calmwater** | [drynna.md](../../exandria/tal-dorei/lucidian-coast/drynna.md) | ✅ | ✅ | ☐ | ☐ |
 | Zephrah | **Windward** | [zephrah.md](../../exandria/tal-dorei/lucidian-coast/zephrah.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — Gloamwood
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Skyanchor Citadel | **Giantkeep** | [skyanchor-citadel.md](../../exandria/tal-dorei/parchwood-timberlands/skyanchor-citadel.md) | ✅ | ✅ | ☐ | ☐ |
+| Whitestone | **Sunspire** | [whitestone.md](../../exandria/tal-dorei/parchwood-timberlands/whitestone.md) | ✅ | ✅ | ☐ | ☐ |

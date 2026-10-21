@@ -92,7 +92,7 @@
 | Corellon | Twinhold (Aldenreich) | **กลมกลืนอยู่ในนคร** |
 | Vecna | Eiselcross (Aldenreich) | **เร่ร่อน**ในซาก Aeor |
 | Lolth | Underdark ใต้ Ödland (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
-| Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
+| Pelor | Sunspire (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
 | Avandra | Fortuna (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
 | Zehir | Riftwild / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
 | Glasya | Port Noir (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
