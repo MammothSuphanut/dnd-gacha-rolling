@@ -1,14 +1,14 @@
 # ชื่อที่ Novaris ตั้งเอง (ไม่ใช่ของ Critical Role)
 
 > เก็บแยกไว้สำหรับตอนสร้างโลก homebrew ของเราเอง — ชื่อพวกนี้**ไม่มีใน Critical Role Wiki** จึงไม่อยู่ในคลัง `world-settings/exandria/`
-> ตอนนี้ยังอยู่บนแผนที่ Azgaar (`maps/azgaar/heightmaps/exandria-states.json`) เพราะแผนที่นี้คือแผนที่ของ Novaris (935 PD) · ที่มาของแต่ละชื่อ: Map Brief หัวข้อ 3–4 และ `_canon-decisions.md` ข้อ 15
+> ป้ายบนแผนที่ยังเป็นชื่อ (TBD) เดิม (แผนที่เปลี่ยนทีเดียวตอนท้ายสุด) · ชื่ออยู่บนแผนที่ Azgaar (`maps/azgaar/heightmaps/exandria-states.json`) เพราะแผนที่นี้คือแผนที่ของ Novaris (935 PD) · ที่มาของแต่ละชื่อ: Map Brief หัวข้อ 3–4 และ `_canon-decisions.md` ข้อ 15
 
-| ชื่อบนแผนที่ | ประเภท | ทวีป | ตำแหน่งบน Azgaar (x, y) | ที่มา / หมายเหตุ |
-|---|---|---|---|---|
-| Celestial Empire (TBD) | ประเทศ (Empire) | Shenzhou | — (เขตแดน `region` ใน states.json) | อาณาจักรแบบจีน — canon ยังไม่ตั้งชื่อ |
-| Imperial Capital (TBD) | เมืองหลวง | Shenzhou | 233.3, 655.6 | เมืองหลวงของ Celestial Empire (TBD) — ยังไม่ตั้งชื่อ |
-| Utesspire Domains (TBD) | ประเทศ (Shogunate) | Shenzhou | — (เขตแดน `region` ใน states.json) | อาณาจักรแบบญี่ปุ่น — canon ยังไม่ตั้งชื่อ |
-| Shogun Seat (TBD) | เมืองหลวง | Shenzhou | 166.7, 400.0 | เมืองหลวงของ Utesspire Domains (TBD) — ยังไม่ตั้งชื่อ |
+| ชื่อบนแผนที่ (ยังไม่เปลี่ยน) | ชื่อ Novaris | ประเภท | ทวีป | ตำแหน่งบน Azgaar (x, y) | ที่มา / หมายเหตุ |
+|---|---|---|---|---|---|
+| Celestial Empire (TBD) | **Tianchao** 天朝 | ประเทศ (Empire) | Shenzhou | — (เขตแดน `region` ใน states.json) | อาณาจักรแบบจีน — ตั้งชื่อแล้ว 2026-10-21 (canon ข้อ 25) |
+| Imperial Capital (TBD) | **Yujing** 玉京 | เมืองหลวง | Shenzhou | 233.3, 655.6 | เมืองหลวงของ Tianchao — ตั้งชื่อแล้ว 2026-10-21 |
+| Utesspire Domains (TBD) | **Akitsu Shogunate** 秋津 | ประเทศ (Shogunate) | Shenzhou | — (เขตแดน `region` ใน states.json) | แคว้นแบบญี่ปุ่น — ตั้งชื่อแล้ว 2026-10-21 (canon ข้อ 25) |
+| Shogun Seat (TBD) | **Shirasagi** 白鷺 | เมืองหลวง | Shenzhou | 166.7, 400.0 | เมืองหลวงของ Akitsu — ตั้งชื่อแล้ว 2026-10-21 |
 
 ## ที่เกี่ยวข้องแต่ยังไม่ได้ไล่ตรวจ
 

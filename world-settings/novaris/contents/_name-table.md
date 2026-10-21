@@ -63,7 +63,23 @@
 | เขต Gate | Rifenmist Peninsula (ตอนเหนือ) | **Riftwild** | ริฟต์-ไวลด์ | ป่ารอยแยก — มอนสเตอร์ ซาก Qoniira | [rifenmist-peninsula/_overview.md](../../exandria/tal-dorei/rifenmist-peninsula/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | เขต Gate | Verdant Expanse | **The Verge** | เดอะ เวิร์จ | ขอบระหว่างโลกกับเฟย์ — Gate สูงสุด ป่าของ Titania | [verdant-expanse/_overview.md](../../exandria/tal-dorei/verdant-expanse/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 
-### ⛰️ Shenzhou · ☀️ Suvarna · 🌊 Eldmere
+### ⛰️ Shenzhou
+
+| ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| ประเทศ | Celestial Empire (TBD) | **Tianchao** 天朝 | เทียน-เฉา | ราชสำนักสวรรค์ — อาณาจักรแบบจีน (ตอนใต้) | — | ✅ | ✅ | ☐ | ☐ |
+| ↳ เมืองหลวง | Imperial Capital (TBD) | **Yujing** 玉京 | อวี้-จิง | นครหยก — นครสวรรค์ในตำนานเต๋า | — | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Utesspire Domains (TBD) | **Akitsu Shogunate** 秋津 | อา-คิ-ทสึ | ชื่อโบราณเชิงกวีของญี่ปุ่น — แคว้นแบบญี่ปุ่น (ตะวันตก) | — | ✅ | ✅ | ☐ | ☐ |
+| ↳ เมืองหลวง | Shogun Seat (TBD) | **Shirasagi** 白鷺 | ชิ-รา-ซา-งิ | ปราสาทนกกระยางขาว | — | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ + ภูมิภาค | Othanzia | **Tianmen** 天門 | เทียน-เหมิน | ประตูสวรรค์ — นครเทพ Vasselheim | [othanzia/_overview.md](../../exandria/issylra/othanzia/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาคย่อย | Vesper Timberland | **Yūgure Forest** 夕暮れ | ยู-งุ-เระ | ป่าสนธยา (ใน Tianmen) | [vesper-timberland/_overview.md](../../exandria/issylra/othanzia/vesper-timberland/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาคย่อย | Sunderpeak Mountains | **Cheonsan** 天山 | ช็อน-ซัน | ภูเขาสวรรค์ — ยุทธภพฝ่ายธรรมะ (ใน Tianmen) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Demithore Valley | **Jungwon** 中原 | จุง-วอน | ที่ราบกลาง — ชุมทางคาราวาน ใจกลางยุทธภพ | [demithore-valley/_overview.md](../../exandria/issylra/demithore-valley/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Caramarin Reach | **Mizuho** 瑞穂 | มิ-ซุ-โฮะ | ทุ่งรวงข้าวงาม — ในเขต Akitsu | — | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Utesspire Mountains | **Tengu Range** 天狗岳 | เท็ง-งุ | ภูเขาของโยไคเท็งงุ — กั้น Akitsu จากส่วนอื่น | [utesspire-mountains.md](../../exandria/issylra/unspecified/utesspire-mountains.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Thorain Tundra | **Tsagaan Tal** | ทซา-กาน ทาล | ทุ่งขาว (มองโกล) — ชนเผ่าเหนือ | [thorain-tundra.md](../../exandria/issylra/unspecified/thorain-tundra.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ☀️ Suvarna · 🌊 Eldmere
 
 ยังไม่เริ่ม
 

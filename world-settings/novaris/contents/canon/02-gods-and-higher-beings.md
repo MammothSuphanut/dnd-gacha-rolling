@@ -98,7 +98,7 @@
 | Glasya | Stilben (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
 | Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
-| Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Utesspire (Shenzhou) |
+| Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Tengu Range (Shenzhou) |
 | Asmodeus | Emon (Voxaria) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
 | Ioun | Emon (Voxaria) | กลมกลืนในสถาบัน Emon (ย้ายตามสถาบัน, 2026-10-20) |
 | Melora | ป่า Aeshanadoor (Suvarna) | ซ่อนในป่าดิบ |
