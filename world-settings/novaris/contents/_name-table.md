@@ -72,8 +72,8 @@
 | ประเทศ | Utesspire Domains (TBD) | **Akitsu Shogunate** 秋津 | อา-คิ-ทสึ | ชื่อโบราณเชิงกวีของญี่ปุ่น — แคว้นแบบญี่ปุ่น (ตะวันตก) | — | ✅ | ✅ | ☐ | ☐ |
 | ↳ เมืองหลวง | Shogun Seat (TBD) | **Shirasagi** 白鷺 | ชิ-รา-ซา-งิ | ปราสาทนกกระยางขาว | — | ✅ | ✅ | ☐ | ☐ |
 | ประเทศ + ภูมิภาค | Othanzia | **Amanokado** 天の門 | อา-มะ-โนะ-คา-โดะ | ประตูสวรรค์ — นครเทพ Vasselheim (ครึ่งญี่ปุ่น; เดิมตั้ง Tianmen) | [othanzia/_overview.md](../../exandria/issylra/othanzia/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาคย่อย | Vesper Timberland | **Yūgure Forest** 夕暮れ | ยู-งุ-เระ | ป่าสนธยา (ใน Tianmen) | [vesper-timberland/_overview.md](../../exandria/issylra/othanzia/vesper-timberland/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาคย่อย | Sunderpeak Mountains | ☐ รอชื่อญี่ปุ่น — Cheonsan ย้ายไปฝั่งใต้ของเทือกเขาเส้นแบ่ง | | ภูเขาไฟใกล้นครเทพ ที่ตั้งวัด Fire Ashari (ใน Tianmen) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ☐ | ✅ | ☐ | ☐ |
+| ภูมิภาคย่อย | Vesper Timberland | **Yūgure Forest** 夕暮れ | ยู-งุ-เระ | ป่าสนธยา (ใน Amanokado) | [vesper-timberland/_overview.md](../../exandria/issylra/othanzia/vesper-timberland/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาคย่อย | Sunderpeak Mountains | **Kazan Range** 火山 | คา-ซัง | ภูเขาไฟใกล้นครเทพ ที่ตั้งวัด Fire Ashari (ใน Amanokado) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | สันเขา (ใหม่) | — | **Cheonsan** 天山 | ช็อน-ซัน | ฝั่งใต้ของเทือกเขาเส้นแบ่งญี่ปุ่น/ยุทธภพ — ที่ตั้งสำนักฝ่ายธรรมะ | — | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Demithore Valley | **Jungwon** 中原 | จุง-วอน | ที่ราบกลาง — ชุมทางคาราวาน ใจกลางยุทธภพ | [demithore-valley/_overview.md](../../exandria/issylra/demithore-valley/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Caramarin Reach | **Mizuho** 瑞穂 | มิ-ซุ-โฮะ | ทุ่งรวงข้าวงาม — ในเขต Akitsu | — | ✅ | ✅ | ☐ | ☐ |
@@ -357,3 +357,15 @@
 | Vues'dal villages | **Fernlake** | [vuesdal-villages.md](../../exandria/tal-dorei/verdant-expanse/vuesdal-villages.md) | ✅ | ✅ | ☐ | ☐ |
 | Orencleft | **Faewatch** | [orencleft.md](../../exandria/tal-dorei/verdant-expanse/orencleft.md) | ✅ | ✅ | ☐ | ☐ |
 | Syngorn | **Syngorn (คงเดิม)** | [syngorn.md](../../exandria/tal-dorei/verdant-expanse/syngorn.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ⛰️ Shenzhou — Amanokado (ครึ่งญี่ปุ่น)
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Josgren's Hollow | **Yakushi** | [josgrens-hollow.md](../../exandria/issylra/othanzia/vesper-timberland/josgrens-hollow.md) | ✅ | ✅ | ☐ | ☐ |
+| Himblewood | **Moriichi** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Vasselheim | **Kamizono** | [vasselheim.md](../../exandria/issylra/othanzia/vesper-timberland/vasselheim.md) | ✅ | ✅ | ☐ | ☐ |
+| Shorecomb | **Hamamura** | [shorecomb.md](../../exandria/issylra/othanzia/shorecomb.md) | ✅ | ✅ | ☐ | ☐ |
+| Pyrah | **Enzan** | [pyrah.md](../../exandria/issylra/othanzia/sunderpeak-mountains/pyrah.md) | ✅ | ✅ | ☐ | ☐ |
+| Muldire | **Kanmon** | [muldire.md](../../exandria/issylra/othanzia/vesper-timberland/muldire.md) | ✅ | ✅ | ☐ | ☐ |
+| Rimecleft | **Futagoyama** | [rimecleft.md](../../exandria/issylra/othanzia/vesper-timberland/rimecleft.md) | ✅ | ✅ | ☐ | ☐ |

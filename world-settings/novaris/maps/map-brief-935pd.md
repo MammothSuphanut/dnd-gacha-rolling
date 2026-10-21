@@ -60,7 +60,7 @@
 | **Shenzhou** | **32.5 ล้าน** | | |
 | · Tianchao (อาณาจักรแบบจีน) | 14 ล้าน | 10% | เมืองหลวง ~400k · นครรอง 3–5 แห่ง ~50–150k |
 | · Akitsu Shogunate (แคว้นแบบญี่ปุ่น) | 7 ล้าน | 10% | เมืองปราสาทหลายแคว้น ~30–80k ต่อแคว้น |
-| · Amanokado | 6.5 ล้าน | 8% | Vasselheim ~200k · Shorecomb ~15k · Himblewood ~10k |
+| · Amanokado | 6.5 ล้าน | 8% | Kamizono ~200k · Hamamura ~15k · Moriichi ~10k |
 | · Jungwon / ยุทธภพ / ชนเผ่า | 5 ล้าน | — | เมืองตลาด Jungwon ~60k · สำนักบนเขา |
 | **Suvarna** | **18.5 ล้าน** | | |
 | · Deshret (Imperium Solis — Ank'Harel) | 6 ล้าน | 15% | Ank'Harel ~600k (นครหลวงจักรวรรดิโบราณ) · Shandal และเมืองโอเอซิส ~20–50k |
@@ -116,10 +116,10 @@
 
 | ที่ | ระดับ | ขนาด | เปลี่ยนจากแผนที่ CR |
 |---|---|---|---|
-| **Vasselheim** (Amanokado) | 2 | นครใหญ่ | นครเทพแบบตะวันออกบนยอดเขา วัดและศาลเจ้า — นาขั้นบันได/หมู่บ้านรอบนคร |
-| Pyrah | 1 | หมู่บ้าน | วัดในปล่องภูเขาไฟ |
-| Shorecomb / Himblewood | 2 | เมือง | หมู่บ้านชาวประมง/เมืองตลาดแบบญี่ปุ่น |
-| Tsagaan Tal / Muldire | 0–1 | — | **คงทุนดรา** ชนเผ่าเหนือ |
+| **Kamizono** (Amanokado) | 2 | นครใหญ่ | นครเทพแบบตะวันออกบนยอดเขา วัดและศาลเจ้า — นาขั้นบันได/หมู่บ้านรอบนคร |
+| Enzan | 1 | หมู่บ้าน | วัดในปล่องภูเขาไฟ |
+| Hamamura / Moriichi | 2 | เมือง | หมู่บ้านชาวประมง/เมืองตลาดแบบญี่ปุ่น |
+| Tsagaan Tal / Kanmon | 0–1 | — | **คงทุนดรา** ชนเผ่าเหนือ |
 | **Jungwon** | 2 | นคร | เมืองตลาดชุมทางระหว่างแคว้นจีนกับญี่ปุ่น — ถนนคาราวาน |
 | **Zenwick / Cheonsan** | 2 | สำนัก | สำนักมูริมบนยอดเขา (จุดเล็ก ๆ ไม่มีถนนใหญ่) |
 | **Akitsu Shogunate** (แคว้นหลัง Tengu Range) | 2–3 | หลายเมือง | แคว้นแบบญี่ปุ่น เมืองปราสาทหลายแห่ง ถนนเชื่อมแคว้น · เขตโยไคในป่าเขา |
@@ -149,9 +149,9 @@
 |---|---|
 | **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Fortuna, Midgate, Port Noir, Ironhelm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
-| **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Port Noir · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
-| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
-| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Lumen City, Dwendalis, Lumora, Lagunara, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
+| **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Port Noir · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Hamamura) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
+| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Kamizono และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
+| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Lumen City, Dwendalis, Lumora, Lagunara, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Kamizono (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Jungwon |
 
 ---

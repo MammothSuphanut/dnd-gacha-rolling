@@ -74,8 +74,8 @@
 
 | ใคร | ที่ไหน | ตำแหน่ง |
 |---|---|---|
-| Sarenrae | Vasselheim (Shenzhou) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
-| The Raven Queen | Vasselheim (Shenzhou) | ผู้พาวิญญาณออกนอกกรง |
+| Sarenrae | Kamizono (Shenzhou) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
+| The Raven Queen | Kamizono (Shenzhou) | ผู้พาวิญญาณออกนอกกรง |
 | The Luxon | Lumora (Aldenreich) | ศรัทธาของ Lumenvael Dynasty |
 | Erathis | Lumen City (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
 | Bane | Ironhelm (Voxaria) | เทพของ Iron Authority |
@@ -97,7 +97,7 @@
 | Zehir | Riftwild / ซาก Quetza (Voxaria) | ซ่อนในป่าดิบ |
 | Glasya | Port Noir (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
-| Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
+| Torog | ใต้ Kamizono (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |
 | Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Tengu Range (Shenzhou) |
 | Asmodeus | Lumen City (Voxaria) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
 | Ioun | Lumen City (Voxaria) | กลมกลืนในสถาบัน Lumen City (ย้ายตามสถาบัน, 2026-10-20) |
@@ -108,7 +108,7 @@
 | Kord (Elder) | ทั่วโลก | เร่ร่อน |
 | Graz'zt (Elder) | ไม่เปิดเผย | สันโดษ |
 
-- **ปมของ Vasselheim**: วิหารของ Kord และ Bahamut ยังตั้งอยู่ แต่เทพทั้งสองไม่อยู่แล้ว
+- **ปมของ Kamizono**: วิหารของ Kord และ Bahamut ยังตั้งอยู่ แต่เทพทั้งสองไม่อยู่แล้ว
 
 #### Octhogal, The Ancient Kraken — ผู้รักษาผนึกของ Tharizdun
 - Divine CR 30 / เป็น**ผู้คุมโซ่คนสุดท้ายที่ยังเหลืออยู่** (ผู้คุมบางองค์ตายใน 228 → โซ่อ่อนลง)
