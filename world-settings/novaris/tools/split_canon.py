@@ -84,6 +84,12 @@ def split_canon():
     assert not missing, f"หัวข้อในไฟล์หลักที่ยังไม่ถูกแตกไฟล์: {missing}"
 
 
+def strip_secrets(text):
+    """ตัดข้อความ 🔒 (ความลับของ DM) ออก — ใช้กับ overview ทวีปเท่านั้น canon ยังเก็บไว้ครบ"""
+    # ตัดตั้งแต่ตัวคั่นก่อน 🔒 ไปจนจบช่องตาราง (ก่อน " |") หรือจนจบบรรทัด
+    return re.sub(r"\s*(?:[—/·]\s*)?🔒[^|\n]*?(?=\s*\||$)", "", text, flags=re.M)
+
+
 def sync_continents():
     themes = sections(THEMES.read_text(encoding="utf-8"), 2)
     org = pick(sections(CANON.read_text(encoding="utf-8"), 2), "องค์กร (ข้อ 16)")
@@ -93,7 +99,7 @@ def sync_continents():
         orgs = strip_rule(pick(org_parts, org_prefix)).replace("### ", "### องค์กร — ", 1)
         block = (SYNC_HEADING + "\n\n"
                  + NOTE.format(src="contents/_location-themes-draft.md` และ `contents/_canon-decisions.md", what="หัวข้อนี้", extra=" (เนื้อหาที่เขียนเองให้วางไว้เหนือหัวข้อนี้)")
-                 + "\n" + theme + "\n" + orgs)
+                 + "\n" + strip_secrets(theme) + "\n" + strip_secrets(orgs))
         path = ROOT / folder / "_overview.md"
         current = path.read_text(encoding="utf-8")
         head = current.split(SYNC_HEADING)[0].rstrip() + "\n\n"
