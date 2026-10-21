@@ -86,7 +86,7 @@
 | ประเทศ | Ank'Harel (ประเทศ) | **Imperium Solis** | อิม-เพ-ริ-อุม โซ-ลิส | จักรวรรดิสุริยะ แบบโรมัน (เมืองหลวง Ank'Harel — ชื่อเมืองไว้ชั้นสถานที่) | [ankharel.md](../../exandria/marquet/rumedam-desert/ankharel.md) | ✅ | ✅ | ☐ | ☐ |
 | ประเทศ | Chandei Quorum | **Pancha Sabha** ปัญจสภา | ปัน-จะ-สะ-พา | สภาแห่งห้า — นครห้ายอด Jrusar ใต้ Elder Seren | [jrusar.md](../../exandria/marquet/oderan-wilds/jrusar.md) | ✅ | ✅ | ☐ | ☐ |
 | ประเทศ | Court of the Lambent Path | **Jyoti Marga** โชติมรรค | โช-ติ-มัก | ทางแห่งแสง — นครปราชญ์ Yios | [yios.md](../../exandria/marquet/aeshanadoor/yios.md) | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ | Stratos Throne | **Stratos Throne** (คงเดิม) | สตรา-ทอส โธรน | ตั้งตาม Elder Stratos — เผ่า Ehrvarn | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Stratos Throne | **Ehrvarn Conquest** | แอร์-วาร์น คอน-เควสต์ | ดินแดนของผู้พิชิต — ผู้นำคือผู้พิชิตหอคอย (บัลลังก์ของ Stratos ยังว่าง) | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ☐ | ☐ |
 | ประเทศ | Bassur Republic | **Varga Republic** | วาร์-กา | หมาป่า (นอร์ส) — สาธารณรัฐแค่ในนาม | [gujjar-serai.md](../../exandria/marquet/hellcatch-valley/gujjar-serai.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Rumedam Desert | **Deshret** | เดช-เร็ต | แผ่นดินแดง (อียิปต์โบราณ = ทะเลทราย) | [rumedam-desert/_overview.md](../../exandria/marquet/rumedam-desert/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Oderan Wilds | **Himmapan Wilds** ป่าหิมพานต์ | หิม-มะ-พาน | ป่าในตำนานไทย | [oderan-wilds/_overview.md](../../exandria/marquet/oderan-wilds/_overview.md) | ✅ | ✅ | ☐ | ☐ |
