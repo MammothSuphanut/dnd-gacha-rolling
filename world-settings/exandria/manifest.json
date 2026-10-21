@@ -91,7 +91,7 @@
     {
       "id": "domunas",
       "title": "Domunas / The Shattered Teeth",
-      "overviewPath": "/world-settings/exandria/domunas/_overview.md",
+      "overviewPath": "/world-settings/exandria/shattered-teeth/_overview.md",
       "pin": {
         "x": 75.88530703586963,
         "y": 88.02667118652332
@@ -158,7 +158,7 @@
       "category": "wildemount",
       "title": "Rexxentrum",
       "summary": "เมืองหลวงของ Dwendalian Empire เมืองที่ใหญ่ที่สุดใน Wildemount ศูนย์กลางอำนาจการเมืองและวิชาอาร์เคน",
-      "contentPath": "/world-settings/exandria/wildemount/rexxentrum.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/rexxentrum.md",
       "pin": {
         "x": 77.4032258064516,
         "y": 28.769813191373764
@@ -179,7 +179,7 @@
       "category": "wildemount",
       "title": "Zadash",
       "summary": "เมืองใหญ่ทางใต้ของ Rexxentrum จุดศูนย์กลางการค้าระหว่าง Empire กับ Menagerie Coast",
-      "contentPath": "/world-settings/exandria/wildemount/zadash.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/zadash.md",
       "pin": {
         "x": 77.87168761484085,
         "y": 36.92504925339732
@@ -200,7 +200,7 @@
       "category": "tal-dorei",
       "title": "Whitestone",
       "summary": "นครแห่งต้นสุริยะ (City of the Sun Tree) บนเทือกเขา Alabaster Sierras ทางตะวันออกเฉียงเหนือของ Tal'Dorei",
-      "contentPath": "/world-settings/exandria/tal-dorei/whitestone.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/parchwood-timberlands/whitestone.md",
       "pin": {
         "x": 54.55725838445848,
         "y": 29.207258022985158
@@ -221,7 +221,7 @@
       "category": "tal-dorei",
       "title": "Lyrengorn",
       "summary": "นครรัฐเอลฟ์ลับบนยอดเขา Elvenpeaks ทางเหนือสุดของ Tal'Dorei ปกคลุมด้วยป่าเขตร้อนใต้หิมะ",
-      "contentPath": "/world-settings/exandria/tal-dorei/lyrengorn.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/lyrengorn.md",
       "pin": {
         "x": 48.37128983036165,
         "y": 25.622419354838705
@@ -242,7 +242,7 @@
       "category": "tal-dorei",
       "title": "Reaching Bluff",
       "summary": "หมู่บ้านนักขุดแร่ในเทือกเขา Cliffkeep Mountains ที่บูชาโดเดคาฮีดรอนเรืองแสงลึกลับ",
-      "contentPath": "/world-settings/exandria/tal-dorei/reaching-bluff.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/reaching-bluff.md",
       "pin": {
         "x": 45.35129044563539,
         "y": 26.576935760744153
@@ -263,7 +263,7 @@
       "category": "tal-dorei",
       "title": "Terrah",
       "summary": "หมู่บ้านของ Earth Ashari กลางหุบเขาแผ่นดินไหวเหนือ Kraghammer",
-      "contentPath": "/world-settings/exandria/tal-dorei/terrah.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/terrah.md",
       "pin": {
         "x": 46.11354814098728,
         "y": 29.225644792126072
@@ -284,7 +284,7 @@
       "category": "tal-dorei",
       "title": "Fort Daxio",
       "summary": "ป้อมปราการทหารหลักของ Tal'Dorei เฝ้า Othendin Pass และเส้นทางสู่ Emon",
-      "contentPath": "/world-settings/exandria/tal-dorei/fort-daxio.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/fort-daxio.md",
       "pin": {
         "x": 43.81032270369992,
         "y": 31.716775116459015
@@ -305,7 +305,7 @@
       "category": "tal-dorei",
       "title": "Kraghammer",
       "summary": "มหานครดวอร์ฟใต้พิภพสามชั้น แหล่งมิธรัลหลักของสาธารณรัฐ",
-      "contentPath": "/world-settings/exandria/tal-dorei/kraghammer.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/kraghammer.md",
       "pin": {
         "x": 46.28677419354838,
         "y": 32.690483870967746
@@ -326,7 +326,7 @@
       "category": "tal-dorei",
       "title": "Othendin Pass",
       "summary": "ช่องเขาหินแห้งแล้งที่เคยเป็นดินแดนสโตนไจแอนต์ ปัจจุบันมี Stoneherders เฝ้าอยู่",
-      "contentPath": "/world-settings/exandria/tal-dorei/othendin-pass.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/othendin-pass.md",
       "pin": {
         "x": 43.62225794146138,
         "y": 32.847742766103444
@@ -345,9 +345,9 @@
     {
       "id": "mooren",
       "category": "tal-dorei",
-      "title": "Mooren",
+      "title": "Mooren Lake",
       "summary": "เมืองประมงเล็ก ๆ ริมแม่น้ำ Mooren River Run ทางตะวันออกของ Alabaster Sierras",
-      "contentPath": "/world-settings/exandria/tal-dorei/mooren.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/lucidian-coast/mooren-lake.md",
       "pin": {
         "x": 54.79,
         "y": 31.438548940843155
@@ -368,7 +368,7 @@
       "category": "tal-dorei",
       "title": "Jorenn Village",
       "summary": "เมืองบูมทาวน์เหมืองเงินที่ตกอยู่ใต้อิทธิพลของแก๊ง Shadewatch",
-      "contentPath": "/world-settings/exandria/tal-dorei/jorenn-village.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/jorenn-village.md",
       "pin": {
         "x": 50.13,
         "y": 32.08
@@ -389,7 +389,7 @@
       "category": "tal-dorei",
       "title": "Skyanchor Citadel",
       "summary": "ป้อมปราการที่ยิ่งใหญ่ที่สุดของสโตนไจแอนต์ ซ่อนในภูเขาแห่ง Alabaster Sierras",
-      "contentPath": "/world-settings/exandria/tal-dorei/skyanchor-citadel.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/parchwood-timberlands/skyanchor-citadel.md",
       "pin": {
         "x": 55.01161314933529,
         "y": 27.804193179222846
@@ -410,7 +410,7 @@
       "category": "tal-dorei",
       "title": "Westruun",
       "summary": "นครใหญ่กึ่งกลาง Republic of Tal'Dorei และบ้านเกิดของ Vox Machina",
-      "contentPath": "/world-settings/exandria/tal-dorei/westruun.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/westruun.md",
       "pin": {
         "x": 50.53,
         "y": 36.74
@@ -431,7 +431,7 @@
       "category": "tal-dorei",
       "title": "Shadebarrow",
       "summary": "สุสานดรูอิดโบราณที่กลายเป็นรังอันเดดใต้อิทธิพลของ Orcus",
-      "contentPath": "/world-settings/exandria/tal-dorei/shadebarrow.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/shadebarrow.md",
       "pin": {
         "x": 51.27,
         "y": 37.33
@@ -452,7 +452,7 @@
       "category": "tal-dorei",
       "title": "Gatsibadow",
       "summary": "หมู่บ้านเล็กใน Wildwood Valley ที่ยังไม่มีเนื้อเรื่องอย่างเป็นทางการ",
-      "contentPath": "/world-settings/exandria/tal-dorei/gatsibadow.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/cliffkeep-mountains/gatsibadow.md",
       "pin": {
         "x": 49.73,
         "y": 35.72
@@ -460,14 +460,20 @@
       "detailPin": {
         "x": 39.3,
         "y": 33
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Gatshadow Mountain",
+          "url": "https://criticalrole.fandom.com/wiki/Gatshadow_Mountain"
+        }
+      ]
     },
     {
       "id": "murdoon-mines",
       "category": "tal-dorei",
       "title": "Murdoon Mines",
       "summary": "เหมืองแร่เหล็กและเงินที่ฐานเทือกเขา Cliffkeep Mountains",
-      "contentPath": "/world-settings/exandria/tal-dorei/murdoon-mines.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/murdoon-mines.md",
       "pin": {
         "x": 49.4,
         "y": 36.9
@@ -488,7 +494,7 @@
       "category": "tal-dorei",
       "title": "Turst Fields",
       "summary": "ชุมชนเกษตรกรรมที่เลี้ยงดูทั้งสาธารณรัฐและ Whitestone",
-      "contentPath": "/world-settings/exandria/tal-dorei/turst-fields.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/turst-fields.md",
       "pin": {
         "x": 53.18806390085528,
         "y": 34.76370976971042
@@ -509,7 +515,7 @@
       "category": "tal-dorei",
       "title": "Drynna",
       "summary": "เมืองประมงริม Mooren Lake ผู้ส่งออกปลาน้ำจืดรายใหญ่",
-      "contentPath": "/world-settings/exandria/tal-dorei/drynna.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/lucidian-coast/drynna.md",
       "pin": {
         "x": 55.56774218159338,
         "y": 36.87838635844569
@@ -530,7 +536,7 @@
       "category": "tal-dorei",
       "title": "Emon",
       "summary": "เมืองหลวงและท่าเรือใหญ่ที่สุดของ Republic of Tal'Dorei บน Bladeshimmer Shoreline",
-      "contentPath": "/world-settings/exandria/tal-dorei/emon.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/bladeshimmer-shoreline/emon.md",
       "pin": {
         "x": 42.22741972400296,
         "y": 38.34838728135632
@@ -559,7 +565,7 @@
       "category": "tal-dorei",
       "title": "Shalesteps",
       "summary": "กลุ่มหมู่บ้านชาวประมง/นักล่าในเทือกเขา Seashale ทางตะวันตกเฉียงเหนือของ Emon",
-      "contentPath": "/world-settings/exandria/tal-dorei/shalesteps.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/bladeshimmer-shoreline/shalesteps.md",
       "pin": {
         "x": 41.27258113738029,
         "y": 37.747257510769764
@@ -580,7 +586,7 @@
       "category": "tal-dorei",
       "title": "Puddlefoot",
       "summary": "หมู่บ้านเล็กในกลุ่ม Shalesteps บ้านของฤๅษี Rill",
-      "contentPath": "/world-settings/exandria/tal-dorei/puddlefoot.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/bladeshimmer-shoreline/puddlefoot.md",
       "pin": {
         "x": 40.69193499165197,
         "y": 37.3230643315469
@@ -601,7 +607,7 @@
       "category": "tal-dorei",
       "title": "Ironseat Ridge",
       "summary": "สันเขาในตำนานที่เป็นทั้งบัลลังก์ไททันเก่าและแหล่งกำเนิดยุคตื่นทองของ Kymal",
-      "contentPath": "/world-settings/exandria/tal-dorei/ironseat-ridge.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/ironseat-ridge.md",
       "pin": {
         "x": 47.529676681026345,
         "y": 39.122095666700794
@@ -622,7 +628,7 @@
       "category": "tal-dorei",
       "title": "Kymal",
       "summary": "เมืองคาร์นิวัลและละครสัญจร บ้านเกิดของ Kaylie ลูกสาว Scanlan",
-      "contentPath": "/world-settings/exandria/tal-dorei/kymal.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/kymal.md",
       "pin": {
         "x": 48.33032307286416,
         "y": 39.89225769535188
@@ -643,7 +649,7 @@
       "category": "tal-dorei",
       "title": "Silvercut Crossroads",
       "summary": "จุดตัดถนนสำคัญเหนือ Kymal พร้อมประวัติศาสตร์การประหารยุค Drassig",
-      "contentPath": "/world-settings/exandria/tal-dorei/silvercut-crossroads.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/silvercut-crossroads.md",
       "pin": {
         "x": 48.12806451612904,
         "y": 38.54725704931443
@@ -664,7 +670,7 @@
       "category": "tal-dorei",
       "title": "Emerald Outpost",
       "summary": "ด่านการค้า/ทหารร่วมระหว่าง Syngorn กับ Tal'Dorei",
-      "contentPath": "/world-settings/exandria/tal-dorei/emerald-outpost.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/bladeshimmer-shoreline/emerald-outpost.md",
       "pin": {
         "x": 44.205484240132,
         "y": 42.32596755735335
@@ -685,7 +691,7 @@
       "category": "tal-dorei",
       "title": "Ivyheart Thicket",
       "summary": "ป่าลึกลับกับซากอารยธรรมโบราณ ปัจจุบันเป็นถิ่นของ azer",
-      "contentPath": "/world-settings/exandria/tal-dorei/ivyheart-thicket.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/ivyheart-thicket.md",
       "pin": {
         "x": 46.772903225806445,
         "y": 39.825322026898775
@@ -706,7 +712,7 @@
       "category": "tal-dorei",
       "title": "Zephrah",
       "summary": "หมู่บ้านชาว Air Ashari บนหน้าผา Summit Peaks ตรงรอยแยกสู่ระนาบธาตุลม",
-      "contentPath": "/world-settings/exandria/tal-dorei/zephrah.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/lucidian-coast/zephrah.md",
       "pin": {
         "x": 53.51967717324535,
         "y": 40.617419170256575
@@ -727,7 +733,7 @@
       "category": "tal-dorei",
       "title": "Stilben",
       "summary": "ท่าเรือใหญ่สุดของ Lucidian Coast ที่ตกอยู่ใต้อิทธิพลกิลด์อาชญากรรม",
-      "contentPath": "/world-settings/exandria/tal-dorei/stilben.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/lucidian-coast/stilben.md",
       "pin": {
         "x": 54.45741935483871,
         "y": 43.79693566845308
@@ -746,9 +752,9 @@
     {
       "id": "foramere-villages",
       "category": "tal-dorei",
-      "title": "Foramere villages",
+      "title": "Foramere Basin",
       "summary": "กลุ่มหมู่บ้านชาวประมงรอบ Foramere Basin ที่เอลฟ์และคนแคระอยู่ร่วมกันอย่างสงบ",
-      "contentPath": "/world-settings/exandria/tal-dorei/foramere-villages.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/dividing-plains/foramere-basin.md",
       "pin": {
         "x": 50.05917626104048,
         "y": 42.48193640678159
@@ -769,7 +775,7 @@
       "category": "tal-dorei",
       "title": "Syngorn",
       "summary": "นครเอลฟ์ปิดตัวที่ใหญ่ที่สุดใน Tal'Dorei หลังกำแพงหยกสูง 40 ฟุต",
-      "contentPath": "/world-settings/exandria/tal-dorei/syngorn.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/verdant-expanse/syngorn.md",
       "pin": {
         "x": 47.22774242770287,
         "y": 46.19177382438413
@@ -790,7 +796,7 @@
       "category": "tal-dorei",
       "title": "Shifting Keep",
       "summary": "ป้อมมายาลวงตาของ Syngorn ที่พลิกชัยชนะใน Scattered War",
-      "contentPath": "/world-settings/exandria/tal-dorei/shifting-keep.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/verdant-expanse/shifting-keep.md",
       "pin": {
         "x": 44.76129081479965,
         "y": 46.41128995341639
@@ -811,7 +817,7 @@
       "category": "tal-dorei",
       "title": "Orencleft",
       "summary": "ชุมชนเชิงเขา Orencleft Mountain ต้นทางน้ำตกและถ้ำลึกลับใกล้ Syngorn",
-      "contentPath": "/world-settings/exandria/tal-dorei/orencleft.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/verdant-expanse/orencleft.md",
       "pin": {
         "x": 46.66064565350933,
         "y": 46.45822562186949
@@ -830,9 +836,9 @@
     {
       "id": "termor-falls",
       "category": "tal-dorei",
-      "title": "Termor Falls",
+      "title": "Tormor Falls",
       "summary": "น้ำตกหลายชั้นข้าง Orencleft Mountain ซ่อนถ้ำที่เปลี่ยนโครงสร้างทุกวัน",
-      "contentPath": "/world-settings/exandria/tal-dorei/termor-falls.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/verdant-expanse/tormor-falls.md",
       "pin": {
         "x": 47.526130508915074,
         "y": 47.02322543728737
@@ -853,7 +859,7 @@
       "category": "tal-dorei",
       "title": "Ruhn-Shak",
       "summary": "นครใต้ดินของ drow ที่กำลังเสื่อมสลายจากอิทธิพลของ Tharizdun",
-      "contentPath": "/world-settings/exandria/tal-dorei/ruhn-shak.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/stormcrest-mountains/ruhn-shak.md",
       "pin": {
         "x": 49.27064491518082,
         "y": 47.40532294980942
@@ -870,7 +876,7 @@
       "category": "tal-dorei",
       "title": "Bronbog",
       "summary": "หมู่บ้านบึงห่างไกลที่มีชื่อเสียงจากเชื้อรา queenscap หายาก",
-      "contentPath": "/world-settings/exandria/tal-dorei/bronbog.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/stormcrest-mountains/bronbog.md",
       "pin": {
         "x": 50.408064516129016,
         "y": 47.72661345697219
@@ -891,7 +897,7 @@
       "category": "tal-dorei",
       "title": "Cavern of Axiom",
       "summary": "ถ้ำลับใน Frostweald ที่อยู่ของสฟิงซ์ Kamaljiori",
-      "contentPath": "/world-settings/exandria/tal-dorei/cavern-of-axiom.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/stormcrest-mountains/cavern-of-axiom.md",
       "pin": {
         "x": 49.5141942867156,
         "y": 45.56241972400296
@@ -912,7 +918,7 @@
       "category": "tal-dorei",
       "title": "Ashen Gorge",
       "summary": "ปล่องภูเขาไฟที่เคยเป็นรังของ Thordak the Cinder King",
-      "contentPath": "/world-settings/exandria/tal-dorei/ashen-gorge.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/stormcrest-mountains/ashen-gorge.md",
       "pin": {
         "x": 51.566774931876886,
         "y": 46.86419456358879
@@ -933,7 +939,7 @@
       "category": "tal-dorei",
       "title": "Shivergut Tribe",
       "summary": "เผ่านักรบออร์คแห่ง Frostweald ผู้บูชา the Ruiner",
-      "contentPath": "/world-settings/exandria/tal-dorei/shivergut-tribe.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/stormcrest-mountains/shivergut-tribe.md",
       "pin": {
         "x": 50.23193572998047,
         "y": 44.10129050716277
@@ -954,7 +960,7 @@
       "category": "tal-dorei",
       "title": "Vues'dal villages",
       "summary": "กลุ่มหมู่บ้านเกษตรกรรมรอบทะเลสาบ Vues'dal Waters ภายใต้การคุ้มครองของ Syngorn",
-      "contentPath": "/world-settings/exandria/tal-dorei/vuesdal-villages.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/verdant-expanse/vuesdal-villages.md",
       "pin": {
         "x": 47.101612903225806,
         "y": 49.666613456972186
@@ -975,7 +981,7 @@
       "category": "tal-dorei",
       "title": "Byroden",
       "summary": "บ้านเกิดของฝาแฝด Vex'ahlia และ Vax'ildan แห่ง Vox Machina ที่ถูกมังกร Thordak เผาทำลาย",
-      "contentPath": "/world-settings/exandria/tal-dorei/byroden.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/byroden.md",
       "pin": {
         "x": 44.464838709677416,
         "y": 51.8674186165102
@@ -996,7 +1002,7 @@
       "category": "tal-dorei",
       "title": "Niirdal-Poc",
       "summary": "นครหลวงที่ยังอยู่รอดของอารยธรรมโบราณ Qoniira Tetrarchy",
-      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-poc.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/niirdal-poc.md",
       "pin": {
         "x": 45.958387219828936,
         "y": 55.14689616726291
@@ -1017,7 +1023,7 @@
       "category": "tal-dorei",
       "title": "Niirdal-Hup",
       "summary": "อดีตนครทหารของ Qoniira Tetrarchy ที่ถูกทำลายจนราบเป็นผงธุลี",
-      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-hup.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/niirdal-hup.md",
       "pin": {
         "x": 45.465484240132,
         "y": 54.673064331546904
@@ -1038,7 +1044,7 @@
       "category": "tal-dorei",
       "title": "Niirdal-Gan",
       "summary": "นครเกษตรกรรมของ Qoniira Tetrarchy ทางเหนือของ Niirdal-Poc",
-      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-gan.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/niirdal-gan.md",
       "pin": {
         "x": 46.56193560692572,
         "y": 54.558226175615864
@@ -1057,9 +1063,9 @@
     {
       "id": "niirdal-sarquet",
       "category": "tal-dorei",
-      "title": "Niirdal-Sarquet",
+      "title": "Niirdal-Sarqet",
       "summary": "อดีตศูนย์กลางศาสนาของ Qoniira Tetrarchy ปัจจุบันเหลือเพียงซากปรักหักพัง",
-      "contentPath": "/world-settings/exandria/tal-dorei/niirdal-sarquet.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/niirdal-sarqet.md",
       "pin": {
         "x": 45.610645161290314,
         "y": 55.87451594445014
@@ -1080,7 +1086,7 @@
       "category": "tal-dorei",
       "title": "Ortem-Vellak",
       "summary": "นครรัฐเหนือสุดของ Iron Authority บนที่ราบสูงภูเขาไฟ",
-      "contentPath": "/world-settings/exandria/tal-dorei/ortem-vellak.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/ortem-vellak.md",
       "pin": {
         "x": 50.9925808912708,
         "y": 57.41983889425954
@@ -1101,7 +1107,7 @@
       "category": "tal-dorei",
       "title": "Hdar-Fye",
       "summary": "นครรัฐ Iron Authority รู้จักกันในนาม Necropolis of Prince Hdar",
-      "contentPath": "/world-settings/exandria/tal-dorei/hdar-fye.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/hdar-fye.md",
       "pin": {
         "x": 45.568548227125596,
         "y": 58.710685059332086
@@ -1122,7 +1128,7 @@
       "category": "tal-dorei",
       "title": "Ezordam-Haar",
       "summary": "นครรัฐ Iron Authority ที่รู้จักกันในนามรังเพกาซัสแดง",
-      "contentPath": "/world-settings/exandria/tal-dorei/ezordam-haar.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/ezordam-haar.md",
       "pin": {
         "x": 46.999838605080875,
         "y": 58.44104899621779
@@ -1143,7 +1149,7 @@
       "category": "tal-dorei",
       "title": "Rybad-Kol",
       "summary": "อดีตป้อมคุกของ Strife Emperor ที่กลายเป็นนครรัฐ Iron Authority",
-      "contentPath": "/world-settings/exandria/tal-dorei/rybad-kol.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/rybad-kol.md",
       "pin": {
         "x": 49.18540213061917,
         "y": 60.477823558930446
@@ -1162,9 +1168,9 @@
     {
       "id": "tzaarm",
       "category": "tal-dorei",
-      "title": "Tz'aarm",
+      "title": "Tz'Arrm",
       "summary": "เมืองหลวงของ Iron Authority สร้างจากหมวกเกราะของเทพผู้ทรยศ Bane",
-      "contentPath": "/world-settings/exandria/tal-dorei/tzaarm.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/rifenmist-peninsula/tzaarm.md",
       "pin": {
         "x": 47.90855025752898,
         "y": 61.64620991737612
@@ -1185,7 +1191,7 @@
       "category": "tal-dorei",
       "title": "Visa Isle",
       "summary": "เกาะลึกลับที่ซ่อนซากนครเซอร์เพนต์โฟล์กโบราณ Vos'sykriss",
-      "contentPath": "/world-settings/exandria/tal-dorei/visa-isle.md",
+      "contentPath": "/world-settings/exandria/tal-dorei/bladeshimmer-shoreline/visa-isle.md",
       "pin": {
         "x": 41.032258187570875,
         "y": 48.31048350180349
@@ -1210,7 +1216,7 @@
       "category": "wildemount",
       "title": "Palebank Village",
       "summary": "หมู่บ้านประมงของ Uthodurn ด่านหน้าแรกก่อนข้ามไป Eiselcross",
-      "contentPath": "/world-settings/exandria/wildemount/palebank-village.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/palebank-village.md",
       "pin": {
         "x": 83.31923628802755,
         "y": 14.888363733786694
@@ -1229,9 +1235,9 @@
     {
       "id": "aeor-crash-site",
       "category": "wildemount",
-      "title": "Aeor Crash Site",
+      "title": "Aeor",
       "summary": "จุดที่นครลอยฟ้า Aeor ตกกระแทกเกาะ Foren เมื่อสิ้นสุด The Calamity",
-      "contentPath": "/world-settings/exandria/wildemount/aeor-crash-site.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/aeor.md",
       "pin": {
         "x": 73.91997153766557,
         "y": 9.326527409295245
@@ -1252,15 +1258,19 @@
       "category": "wildemount",
       "title": "Salsvault",
       "summary": "ห้องทดลองอาวุธชีวภาพของ Aeor ที่ Ferol Sal ยังคงติดอยู่",
-      "contentPath": "/world-settings/exandria/wildemount/salsavault.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/salsavault.md",
       "pin": {
         "x": 74.91998104672146,
         "y": 9.318322405242915
       },
       "sources": [
         {
-          "label": "Critical Role Wiki: Salsvault",
-          "url": "https://criticalrole.fandom.com/wiki/Salsvault"
+          "label": "Critical Role Wiki: Foren",
+          "url": "https://criticalrole.fandom.com/wiki/Foren"
+        },
+        {
+          "label": "Critical Role Wiki: Frigid woe",
+          "url": "https://criticalrole.fandom.com/wiki/Frigid_woe"
         }
       ],
       "detailPin": {
@@ -1273,7 +1283,7 @@
       "category": "wildemount",
       "title": "Mythburrow",
       "summary": "รังของมังกรขาว Gelidon ใน Flotker Alps",
-      "contentPath": "/world-settings/exandria/wildemount/mythburrow.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/mythburrow.md",
       "pin": {
         "x": 89.55924535499223,
         "y": 15.166395449306107
@@ -1294,7 +1304,7 @@
       "category": "wildemount",
       "title": "Nicodranas",
       "summary": "เมืองท่าตะวันออกสุดของ Menagerie Coast บ้านเกิดของ Jester และ Marion Lavorre",
-      "contentPath": "/world-settings/exandria/wildemount/nicodranas.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/nicodranas.md",
       "pin": {
         "x": 75.9,
         "y": 50.6
@@ -1315,7 +1325,7 @@
       "category": "wildemount",
       "title": "Port Damali",
       "summary": "เมืองใหญ่ที่สุดของ Menagerie Coast เมืองหลวงโดยพฤตินัยของ Clovis Concord",
-      "contentPath": "/world-settings/exandria/wildemount/port-damali.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/port-damali.md",
       "pin": {
         "x": 69.15723855418544,
         "y": 43.84789363338102
@@ -1334,9 +1344,9 @@
     {
       "id": "bisaft-port",
       "category": "wildemount",
-      "title": "Bisaft Port",
+      "title": "Bisaft Isle",
       "summary": "นิคมตะวันตกสุดของ Clovis Concord บน Bisaft Isle",
-      "contentPath": "/world-settings/exandria/wildemount/bisaft-port.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/bisaft-isle.md",
       "pin": {
         "x": 64.7859261174356,
         "y": 47.52803537268792
@@ -1361,7 +1371,7 @@
       "category": "wildemount",
       "title": "Feolinn",
       "summary": "เมืองชายฝั่งขึ้นชื่อเรื่องไวน์และน้ำมัน willowshade",
-      "contentPath": "/world-settings/exandria/wildemount/feolinn.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/feolinn.md",
       "pin": {
         "x": 73.32782215610628,
         "y": 46.40866935483871
@@ -1382,7 +1392,7 @@
       "category": "wildemount",
       "title": "Palma Flora",
       "summary": "นิคมตากอากาศเล็กๆ บนปลายแหลม Vezdali Peninsula",
-      "contentPath": "/world-settings/exandria/wildemount/palma-flora.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/palma-flora.md",
       "pin": {
         "x": 68.67419312384818,
         "y": 46.91995850993741
@@ -1403,7 +1413,7 @@
       "category": "wildemount",
       "title": "Wuyun Gates",
       "summary": "ด่านชายแดนป้อมปราการระหว่าง Dwendalian Empire กับ Menagerie Coast",
-      "contentPath": "/world-settings/exandria/wildemount/wuyun-gates.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/wuyun-gates.md",
       "pin": {
         "x": 77.34717685330298,
         "y": 45.85040365034535
@@ -1424,7 +1434,7 @@
       "category": "wildemount",
       "title": "Port Zoon",
       "summary": "เมืองอุตสาหกรรม/วิทยาศาสตร์ ขึ้นชื่อเรื่องโลหะวิทยา",
-      "contentPath": "/world-settings/exandria/wildemount/port-zoon.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/port-zoon.md",
       "pin": {
         "x": 73.53925435773787,
         "y": 49.107863115495256
@@ -1445,7 +1455,7 @@
       "category": "wildemount",
       "title": "Gwardan",
       "summary": "นครรัฐเหนือสุดของ Clovis Concord ขึ้นชื่อเรื่องโลหะวิทยา",
-      "contentPath": "/world-settings/exandria/wildemount/gwardan.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/gwardan.md",
       "pin": {
         "x": 66.5645159875193,
         "y": 36.538306239343456
@@ -1466,7 +1476,7 @@
       "category": "wildemount",
       "title": "Othe",
       "summary": "นครรัฐเล็กที่สุดของ Clovis Concord ศูนย์กลางจิตวิญญาณของ Menagerie Coast",
-      "contentPath": "/world-settings/exandria/wildemount/othe.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/othe.md",
       "pin": {
         "x": 72.72378947350288,
         "y": 41.734879032258064
@@ -1491,7 +1501,7 @@
       "category": "wildemount",
       "title": "Rosohna",
       "summary": "เมืองหลวงของ Kryn Dynasty สร้างทับซากเมือง Ghor Dranas",
-      "contentPath": "/world-settings/exandria/wildemount/rosohna.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/rosohna.md",
       "pin": {
         "x": 90.8278228636711,
         "y": 38.86391107805313
@@ -1516,7 +1526,7 @@
       "category": "wildemount",
       "title": "Bazzoxan",
       "summary": "หมู่บ้านใต้ Betrayers' Rise ฉากหลักของ Call of the Netherdeep",
-      "contentPath": "/world-settings/exandria/wildemount/bazzoxan.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/bazzoxan.md",
       "pin": {
         "x": 89.93024246461927,
         "y": 35.272782059638736
@@ -1541,7 +1551,7 @@
       "category": "wildemount",
       "title": "Asarius",
       "summary": "เมือง \"City of Beasts\" ทางตะวันตกของ Xhorhas",
-      "contentPath": "/world-settings/exandria/wildemount/asarius.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/asarius.md",
       "pin": {
         "x": 85.8411891906492,
         "y": 37.612086205328666
@@ -1562,7 +1572,7 @@
       "category": "wildemount",
       "title": "Dumaran",
       "summary": "ป้อมปราการโกงคอบลินบูชา Lolth ใต้ Vermaloc Wildwood",
-      "contentPath": "/world-settings/exandria/wildemount/dumaran.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/dumaran.md",
       "pin": {
         "x": 89.37139076109854,
         "y": 41.905493739343456
@@ -1583,7 +1593,7 @@
       "category": "wildemount",
       "title": "Ghostwall",
       "summary": "พื้นที่ใน Ghostlands รอบนอกกำแพง Rosohna ที่ nether gnome ชื่อ Dryca ตั้งเครื่องป้องกันทางเข้าสู่ระนาบ Abyssal ของ Lolth",
-      "contentPath": "/world-settings/exandria/wildemount/ghostwall.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/ghostwall.md",
       "pin": {
         "x": 90.4,
         "y": 37.6
@@ -1604,7 +1614,7 @@
       "category": "wildemount",
       "title": "New Haxon",
       "summary": "ฐานทัพเดียวของ Dwendalian Empire บน Blightshore",
-      "contentPath": "/world-settings/exandria/wildemount/new-haxon.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/new-haxon.md",
       "pin": {
         "x": 92.72782258064517,
         "y": 44.699395798098664
@@ -1625,7 +1635,7 @@
       "category": "wildemount",
       "title": "Rotthold",
       "summary": "เมืองไร้กฎหมายบน Blightshore ปกครองโดย the Myriad และ the Revelry",
-      "contentPath": "/world-settings/exandria/wildemount/rotthold.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/rotthold.md",
       "pin": {
         "x": 91.39798302188996,
         "y": 47.42298408323718
@@ -1646,7 +1656,7 @@
       "category": "wildemount",
       "title": "Mordant Isle",
       "summary": "เกาะของเผ่าพันธุ์งูมีปีกบูชา Zehir นอกฝั่ง Tooth of Zehir",
-      "contentPath": "/world-settings/exandria/wildemount/mordant-isle.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/mordant-isle.md",
       "pin": {
         "x": 95.8218697207974,
         "y": 38.56835138876589
@@ -1667,7 +1677,7 @@
       "category": "wildemount",
       "title": "Tooth of Zehir",
       "summary": "คาบสมุทรหมอกทางตะวันออกของ Blightshore ถิ่นมังกรเงา Karketh",
-      "contentPath": "/world-settings/exandria/wildemount/tooth-of-zehir.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/tooth-of-zehir.md",
       "pin": {
         "x": 96.99003378727072,
         "y": 35.50465435883313
@@ -1688,7 +1698,7 @@
       "category": "wildemount",
       "title": "Ebonglass Massif",
       "summary": "เทือกเขาหินออบซิเดียนบน Blightshore ถิ่นของ Fang of the Worm",
-      "contentPath": "/world-settings/exandria/wildemount/ebonglass-massif.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/ebonglass-massif.md",
       "pin": {
         "x": 95.47903310714227,
         "y": 32.230241935483875
@@ -1709,7 +1719,7 @@
       "category": "wildemount",
       "title": "Far Hharom",
       "summary": "คาบสมุทรทุ่งร้างเหนือสุดของ Blightshore",
-      "contentPath": "/world-settings/exandria/wildemount/far-hharom.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/far-hharom.md",
       "pin": {
         "x": 94.14193548387098,
         "y": 27.680846668058827
@@ -1730,7 +1740,7 @@
       "category": "wildemount",
       "title": "Barbed Fields",
       "summary": "ดินแดนรกร้างจุดศูนย์กลาง The Calamity เดิม",
-      "contentPath": "/world-settings/exandria/wildemount/barbed-fields.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/barbed-fields.md",
       "pin": {
         "x": 90.1891129032258,
         "y": 36.457257321573074
@@ -1751,18 +1761,19 @@
       "category": "wildemount",
       "title": "Galgarad",
       "summary": "ชื่อสถานที่บนแผนที่ทางใต้ของ Xhorhas ยังไม่พบข้อมูลใน Wiki",
-      "contentPath": "/world-settings/exandria/wildemount/galgarad.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/galgarad.md",
       "pin": {
         "x": 88.00887054320305,
         "y": 40.20826676584059
-      }
+      },
+      "sources": []
     },
     {
       "id": "many-hosts-of-igrathad",
       "category": "wildemount",
       "title": "Many Hosts of Igrathad",
       "summary": "สมาพันธ์ 7 หมู่บ้านปกครองตนเองทางใต้ของ Sorrowseep Waters",
-      "contentPath": "/world-settings/exandria/wildemount/many-hosts-of-igrathad.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/many-hosts-of-igrathad.md",
       "pin": {
         "x": 84.88427447657432,
         "y": 42.77963677837003
@@ -1783,7 +1794,7 @@
       "category": "wildemount",
       "title": "Iothia Moorland",
       "summary": "บ้านเกิดของ Yasha Nydoorin ใน Xhorhas",
-      "contentPath": "/world-settings/exandria/wildemount/iothia-moorland.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/iothia-moorland.md",
       "pin": {
         "x": 87.83911346927762,
         "y": 42.78568590840985
@@ -1804,7 +1815,7 @@
       "category": "wildemount",
       "title": "Charis",
       "summary": "หมู่บ้านดรูอิดใน Lotusden Greenwood",
-      "contentPath": "/world-settings/exandria/wildemount/charis.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/charis.md",
       "pin": {
         "x": 85.67258022062242,
         "y": 47.09879064098481
@@ -1825,7 +1836,7 @@
       "category": "wildemount",
       "title": "Vurmas",
       "summary": "ฐานลอยน้ำของ Kryn Dynasty บนเรือสามลำใกล้ Gelier",
-      "contentPath": "/world-settings/exandria/wildemount/vurmas.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/vurmas.md",
       "pin": {
         "x": 68.6129031027517,
         "y": 9.691935114706716
@@ -1846,7 +1857,7 @@
       "category": "wildemount",
       "title": "Tomb of the Worm",
       "summary": "ถ้ำน้ำแข็งบน Gelier ที่ฝังร่างของ Quajath, the Undermaw",
-      "contentPath": "/world-settings/exandria/wildemount/tomb-of-the-worm.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/tomb-of-the-worm.md",
       "pin": {
         "x": 70.58709652808405,
         "y": 10.458871244615125
@@ -1867,7 +1878,7 @@
       "category": "wildemount",
       "title": "Gelier",
       "summary": "เกาะใหญ่อันดับสองของ Eiselcross เป็นที่ตั้งของ Tomb of the Worm",
-      "contentPath": "/world-settings/exandria/wildemount/gelier.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/gelier.md",
       "pin": {
         "x": 68.77782247604864,
         "y": 10.754032258064516
@@ -1876,6 +1887,10 @@
         {
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        },
+        {
+          "label": "Critical Role Wiki: Eiselcross § Gelier",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross#Gelier"
         }
       ],
       "detailPin": {
@@ -1888,7 +1903,7 @@
       "category": "wildemount",
       "title": "Schneescel",
       "summary": "เกาะเล็กที่มีพายุหิมะเวทมนตร์ปกคลุมถาวร",
-      "contentPath": "/world-settings/exandria/wildemount/schneescel.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/schneescel.md",
       "pin": {
         "x": 71.14677480882213,
         "y": 12.399193917551349
@@ -1897,6 +1912,10 @@
         {
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        },
+        {
+          "label": "Critical Role Wiki: Eiselcross § Schneescel",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross#Schneescel"
         }
       ],
       "detailPin": {
@@ -1909,7 +1928,7 @@
       "category": "wildemount",
       "title": "Frostbogen",
       "summary": "เกาะที่คณะสำรวจ Cerberus Assembly กว่า 100 คนหายสาบสูญ",
-      "contentPath": "/world-settings/exandria/wildemount/frostbogen.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/frostbogen.md",
       "pin": {
         "x": 72.34193548387096,
         "y": 13.884677419354839
@@ -1918,6 +1937,10 @@
         {
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        },
+        {
+          "label": "Critical Role Wiki: Eiselcross § Frostbogen",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross#Frostbogen"
         }
       ],
       "detailPin": {
@@ -1930,7 +1953,7 @@
       "category": "wildemount",
       "title": "Taergoss",
       "summary": "เกาะเล็กที่มีพายุฟ้าผ่าสีเขียวปรากฏขึ้นในปี 835 PD",
-      "contentPath": "/world-settings/exandria/wildemount/taergoss.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/taergoss.md",
       "pin": {
         "x": 76.22661346927767,
         "y": 16.611290747119533
@@ -1939,6 +1962,10 @@
         {
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        },
+        {
+          "label": "Critical Role Wiki: Eiselcross § Taergoss",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross#Taergoss"
         }
       ],
       "detailPin": {
@@ -1951,7 +1978,7 @@
       "category": "wildemount",
       "title": "Biessel",
       "summary": "เกาะใหญ่อันดับสามของ Eiselcross ปกครองโดยมังกรขาว",
-      "contentPath": "/world-settings/exandria/wildemount/biessel.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/biessel.md",
       "pin": {
         "x": 68.5370968972483,
         "y": 6.38709649732036
@@ -1960,6 +1987,10 @@
         {
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        },
+        {
+          "label": "Critical Role Wiki: Eiselcross § Beissel",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross#Beissel"
         }
       ],
       "detailPin": {
@@ -1972,7 +2003,7 @@
       "category": "wildemount",
       "title": "Foren",
       "summary": "เกาะใหญ่ที่สุดของ Eiselcross จุดตกของนคร Aeor",
-      "contentPath": "/world-settings/exandria/wildemount/foren.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/foren.md",
       "pin": {
         "x": 74.98387096774195,
         "y": 10.490322765227289
@@ -1993,7 +2024,7 @@
       "category": "wildemount",
       "title": "Syrinlya",
       "summary": "ด่านหน้าของ Uthodurn บน Foren ต้นกำเนิด \"relic rush\"",
-      "contentPath": "/world-settings/exandria/wildemount/syrinlya.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/syrinlya.md",
       "pin": {
         "x": 77.79032282675465,
         "y": 12.02419364067816
@@ -2014,7 +2045,7 @@
       "category": "wildemount",
       "title": "Kaltsel",
       "summary": "เกาะเล็กที่สุดของ Eiselcross ข่าวลือถิ่น warlock อมตะ",
-      "contentPath": "/world-settings/exandria/wildemount/kaltsel.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/kaltsel.md",
       "pin": {
         "x": 78.52133194708055,
         "y": 12.559929435483868
@@ -2023,6 +2054,10 @@
         {
           "label": "Critical Role Wiki: Eiselcross",
           "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        },
+        {
+          "label": "Critical Role Wiki: Eiselcross § Kaltsel",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross#Kaltsel"
         }
       ],
       "detailPin": {
@@ -2035,7 +2070,7 @@
       "category": "wildemount",
       "title": "Allowak's Sanctuary",
       "summary": "หมู่บ้านลับของเยติที่ฉลาดขึ้นจากผลึก Aeor",
-      "contentPath": "/world-settings/exandria/wildemount/allowaks-sanctuary.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/allowaks-sanctuary.md",
       "pin": {
         "x": 73.5758069438319,
         "y": 11.73870949283723
@@ -2044,6 +2079,10 @@
         {
           "label": "Critical Role Wiki: Allowak's Sanctuary",
           "url": "https://criticalrole.fandom.com/wiki/Allowak's_Sanctuary"
+        },
+        {
+          "label": "Critical Role Wiki: Allowak's Sanctuary",
+          "url": "https://criticalrole.fandom.com/wiki/Allowak%27s_Sanctuary"
         }
       ],
       "detailPin": {
@@ -2056,7 +2095,7 @@
       "category": "wildemount",
       "title": "Balenpost",
       "summary": "ด่านหน้าของ Cerberus Assembly สำหรับสำรวจซาก Aeor",
-      "contentPath": "/world-settings/exandria/wildemount/balenpost.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/balenpost.md",
       "pin": {
         "x": 74.8842737690095,
         "y": 14.336492572292205
@@ -2077,7 +2116,7 @@
       "category": "wildemount",
       "title": "Fortress of the Dead Jarl",
       "summary": "ปราสาทน้ำแข็งของยักษ์น้ำแข็งที่กลายเป็นซอมบี้",
-      "contentPath": "/world-settings/exandria/wildemount/fortress-of-the-dead-jarl.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/fortress-of-the-dead-jarl.md",
       "pin": {
         "x": 74.0467737013294,
         "y": 7.933064054673716
@@ -2098,7 +2137,7 @@
       "category": "wildemount",
       "title": "Uthodurn",
       "summary": "เมืองถ้ำของ Diarchy ดวาร์ฟ-เอลฟ์ ใน Flotker Alps",
-      "contentPath": "/world-settings/exandria/wildemount/uthodurn.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/uthodurn.md",
       "pin": {
         "x": 84.25564501977736,
         "y": 18.36169227477043
@@ -2123,7 +2162,7 @@
       "category": "wildemount",
       "title": "Icehaven",
       "summary": "ท่าเรือแห่งเดียวของ Dwendalian Empire บน Frigid Depths",
-      "contentPath": "/world-settings/exandria/wildemount/icehaven.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/icehaven.md",
       "pin": {
         "x": 72.07822580645161,
         "y": 26.476815365206807
@@ -2144,7 +2183,7 @@
       "category": "wildemount",
       "title": "Odessloe",
       "summary": "นิคมประมง/ตัดไม้ ฐานลักลอบขนของของ the Myriad",
-      "contentPath": "/world-settings/exandria/wildemount/odessloe.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/odessloe.md",
       "pin": {
         "x": 77.5,
         "y": 27.45
@@ -2165,7 +2204,7 @@
       "category": "wildemount",
       "title": "Yrrosa",
       "summary": "เมืองที่ the Myriad ก่อตั้งขึ้นเป็นครั้งแรก",
-      "contentPath": "/world-settings/exandria/wildemount/yrrosa.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/yrrosa.md",
       "pin": {
         "x": 74.43992020391649,
         "y": 29.814314197724865
@@ -2186,7 +2225,7 @@
       "category": "wildemount",
       "title": "Nogvurot",
       "summary": "เมืองชายแดนเหนือของ Empire ใกล้ Quannah Breach",
-      "contentPath": "/world-settings/exandria/wildemount/nogvurot.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/nogvurot.md",
       "pin": {
         "x": 80.1544349178191,
         "y": 28.30342710095067
@@ -2207,7 +2246,7 @@
       "category": "wildemount",
       "title": "Blumenthal",
       "summary": "หมู่บ้านเกษตรกรรม บ้านเกิดของ Caleb Widogast",
-      "contentPath": "/world-settings/exandria/wildemount/blumenthal.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/blumenthal.md",
       "pin": {
         "x": 77.91975820602909,
         "y": 29.680039898041755
@@ -2228,7 +2267,7 @@
       "category": "wildemount",
       "title": "Grimgolir",
       "summary": "นครรัฐดวาร์ฟปกครองตนเองเพียงแห่งเดียวใน Empire",
-      "contentPath": "/world-settings/exandria/wildemount/grimgolir.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/grimgolir.md",
       "pin": {
         "x": 83.66975763997726,
         "y": 29.721774193548384
@@ -2249,7 +2288,7 @@
       "category": "wildemount",
       "title": "Druvenlode",
       "summary": "เมืองเหมืองแร่เงินหลักของ Dwendalian Empire",
-      "contentPath": "/world-settings/exandria/wildemount/druvenlode.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/druvenlode.md",
       "pin": {
         "x": 77.29677461808727,
         "y": 30.159677207085394
@@ -2270,7 +2309,7 @@
       "category": "wildemount",
       "title": "Hupperdook",
       "summary": "เมืองอุตสาหกรรมของโนมที่ผลิตอาวุธสงครามของ Empire",
-      "contentPath": "/world-settings/exandria/wildemount/hupperdook.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/hupperdook.md",
       "pin": {
         "x": 80.58592774483466,
         "y": 31.40419446114571
@@ -2291,7 +2330,7 @@
       "category": "wildemount",
       "title": "Rockguard Garrison",
       "summary": "ด่านทหารของ Empire ป้องกันการบุกจาก Xhorhas",
-      "contentPath": "/world-settings/exandria/wildemount/rockguard-garrison.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/rockguard-garrison.md",
       "pin": {
         "x": 84.60685455568374,
         "y": 31.489516553571153
@@ -2312,7 +2351,7 @@
       "category": "wildemount",
       "title": "Ashguard Garrison",
       "summary": "ป้อมคู่แฝดของ Rockguard จุดเริ่มสงคราม Ash and Light",
-      "contentPath": "/world-settings/exandria/wildemount/ashguard-garrison.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/ashguard-garrison.md",
       "pin": {
         "x": 83.98004032258063,
         "y": 34.68390145378728
@@ -2333,7 +2372,7 @@
       "category": "wildemount",
       "title": "Urzin",
       "summary": "เมืองเร่ร่อนบนหลังเต่ายักษ์ในหนอง Brokenveil Marsh",
-      "contentPath": "/world-settings/exandria/wildemount/urzin.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/urzin.md",
       "pin": {
         "x": 85.76340725806452,
         "y": 32.475766829521426
@@ -2354,7 +2393,7 @@
       "category": "wildemount",
       "title": "Bladegarden",
       "summary": "ฐานทัพหลักของ Righteous Brand ทางตะวันออกของ Empire",
-      "contentPath": "/world-settings/exandria/wildemount/bladegarden.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/bladegarden.md",
       "pin": {
         "x": 83.31995967741935,
         "y": 33.42211644726415
@@ -2375,7 +2414,7 @@
       "category": "wildemount",
       "title": "Berleben",
       "summary": "เมืองหนองน้ำที่สร้างบนเสาเข็มใกล้ Labenda Swamps",
-      "contentPath": "/world-settings/exandria/wildemount/berleben.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/berleben.md",
       "pin": {
         "x": 78.5512095359064,
         "y": 33.857057406825405
@@ -2396,7 +2435,7 @@
       "category": "wildemount",
       "title": "Pride's Call",
       "summary": "เมืองดวาร์ฟผู้ผลิตผ้าไหม Pride silk",
-      "contentPath": "/world-settings/exandria/wildemount/prides-call.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/prides-call.md",
       "pin": {
         "x": 72.42318675748763,
         "y": 33.269607491647044
@@ -2417,7 +2456,7 @@
       "category": "wildemount",
       "title": "Vol'antim",
       "summary": "ชุมชนลับของ aarakocra บนหน้าผา Cyrios Mountains",
-      "contentPath": "/world-settings/exandria/wildemount/volantim.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/volantim.md",
       "pin": {
         "x": 71.72983955875519,
         "y": 36.31248900659622
@@ -2438,7 +2477,7 @@
       "category": "wildemount",
       "title": "Kamordah",
       "summary": "เมืองไวน์ บ้านเกิดของ Beauregard Lionett",
-      "contentPath": "/world-settings/exandria/wildemount/kamordah.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/kamordah.md",
       "pin": {
         "x": 74.2532255234257,
         "y": 35.957057406825406
@@ -2459,7 +2498,7 @@
       "category": "wildemount",
       "title": "Bromkiln Hills",
       "summary": "เนินเขาความร้อนใต้พิภพ ล้อมรอบ Kamordah",
-      "contentPath": "/world-settings/exandria/wildemount/bromkiln-hills.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/bromkiln-hills.md",
       "pin": {
         "x": 73.68254069051436,
         "y": 36.6256749468465
@@ -2480,7 +2519,7 @@
       "category": "wildemount",
       "title": "Felderwin",
       "summary": "เมืองเกษตรกรรม บ้านเกิดของ Veth Brenatto",
-      "contentPath": "/world-settings/exandria/wildemount/felderwin.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/felderwin.md",
       "pin": {
         "x": 81.11604766538066,
         "y": 37.68991755054841
@@ -2505,7 +2544,7 @@
       "category": "wildemount",
       "title": "Talonstadt",
       "summary": "เมืองเต็นท์ผู้ลี้ภัยจาก Draconia ริมชายแดน Xhorhas",
-      "contentPath": "/world-settings/exandria/wildemount/talonstadt.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/talonstadt.md",
       "pin": {
         "x": 82.77580560253514,
         "y": 37.15342763162428
@@ -2526,7 +2565,7 @@
       "category": "wildemount",
       "title": "Alfield",
       "summary": "เมืองเกษตรกรรมเล็กๆ บน Amber Road ใน Marrow Valley",
-      "contentPath": "/world-settings/exandria/wildemount/alfield.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/alfield.md",
       "pin": {
         "x": 78.46774165245796,
         "y": 40.11284379266924
@@ -2547,7 +2586,7 @@
       "category": "wildemount",
       "title": "Trostenwald",
       "summary": "เมืองที่ The Mighty Nein พบกันครั้งแรก",
-      "contentPath": "/world-settings/exandria/wildemount/trostenwald.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/trostenwald.md",
       "pin": {
         "x": 78.31445653669296,
         "y": 42.0693454903941
@@ -2568,7 +2607,7 @@
       "category": "wildemount",
       "title": "Deastok",
       "summary": "เมืองมั่งคั่ง บ้านเกิดของ Taryon Darrington",
-      "contentPath": "/world-settings/exandria/wildemount/deastok.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/deastok.md",
       "pin": {
         "x": 74.05566382254324,
         "y": 38.75095829809866
@@ -2589,7 +2628,7 @@
       "category": "wildemount",
       "title": "Tussoa",
       "summary": "เมืองชายแดนริมแม่น้ำ Tyodan สมาชิก Clovis Concord",
-      "contentPath": "/world-settings/exandria/wildemount/tussoa.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/tussoa.md",
       "pin": {
         "x": 69.44596618529289,
         "y": 39.90000000000001
@@ -2610,7 +2649,7 @@
       "category": "wildemount",
       "title": "Bysaes Tyl",
       "summary": "นครเอลฟ์แห่งเดียวใน Empire ก่อตั้งโดยผู้ลี้ภัยจาก Molaesmyr",
-      "contentPath": "/world-settings/exandria/wildemount/bysaes-tyl.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/bysaes-tyl.md",
       "pin": {
         "x": 75.6842744765743,
         "y": 22.677822156106267
@@ -2631,7 +2670,7 @@
       "category": "wildemount",
       "title": "Shadycreek Run",
       "summary": "เมืองไร้กฎหมายนอกการปกครองของ Empire",
-      "contentPath": "/world-settings/exandria/wildemount/shadycreek-run.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/shadycreek-run.md",
       "pin": {
         "x": 80.78532127872595,
         "y": 26.22910215393189
@@ -2652,7 +2691,7 @@
       "category": "wildemount",
       "title": "Yardel",
       "summary": "หมู่บ้านช่างหินเหนือ Grimgolir ปรากฏในแคมเปญ 3",
-      "contentPath": "/world-settings/exandria/wildemount/yardel.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/yardel.md",
       "pin": {
         "x": 82.74233927572926,
         "y": 27.66653247033396
@@ -2673,7 +2712,7 @@
       "category": "wildemount",
       "title": "Mutalos",
       "summary": "พื้นที่รกร้างเหนือเกาะ Foren ที่ภูมิประเทศเปลี่ยนไปทุกเช้าตามเวทมนตร์แปรสภาพยุค Aeor",
-      "contentPath": "/world-settings/exandria/wildemount/mutalos.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/mutalos.md",
       "pin": {
         "x": 72.1,
         "y": 8.4
@@ -2694,7 +2733,7 @@
       "category": "wildemount",
       "title": "Dampfkan",
       "summary": "หนึ่งในเกาะของ Eiselcross มีภูเขาไฟเย็นและแท่งหินปริศนา",
-      "contentPath": "/world-settings/exandria/wildemount/dampfkan.md",
+      "contentPath": "/world-settings/exandria/wildemount/eiselcross/dampfkan.md",
       "pin": {
         "x": 77.2,
         "y": 7
@@ -2702,14 +2741,24 @@
       "detailPin": {
         "x": 45.77370830372578,
         "y": 6.326389609447257
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Eiselcross",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross"
+        },
+        {
+          "label": "Critical Role Wiki: Eiselcross § Dampfkan",
+          "url": "https://criticalrole.fandom.com/wiki/Eiselcross#Dampfkan"
+        }
+      ]
     },
     {
       "id": "kravaraad",
       "category": "wildemount",
       "title": "Kravaraad",
       "summary": "ภูเขาไฟหินดำใน Flotket Alps ที่ตั้งของ Cinderrest Sanctum และจุดตี Star Razor คืน",
-      "contentPath": "/world-settings/exandria/wildemount/kravaraad.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/kravaraad.md",
       "pin": {
         "x": 85.21004187036452,
         "y": 16.64799840090128
@@ -2730,7 +2779,7 @@
       "category": "wildemount",
       "title": "Cinderrest Sanctum",
       "summary": "ศาลเจ้าบนภ��เขาไฟ Kravaraad อุทิศแด่ Melora และ Moradin ดูแลโดยตระกูล Dust",
-      "contentPath": "/world-settings/exandria/wildemount/cinderrest-sanctum.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/cinderrest-sanctum.md",
       "pin": {
         "x": 84.30466175125183,
         "y": 17.236969692822093
@@ -2751,7 +2800,7 @@
       "category": "wildemount",
       "title": "Uraliss",
       "summary": "หมู่บ้านเกษตรกรรมร้างของ Uthodurn ที่ชายแดน Flotket Alps กับ Rime Plains",
-      "contentPath": "/world-settings/exandria/wildemount/uraliss.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/uraliss.md",
       "pin": {
         "x": 85.55726341108772,
         "y": 19.60400518193129
@@ -2772,7 +2821,7 @@
       "category": "wildemount",
       "title": "Ruins of Molaesmyr",
       "summary": "ซากนครโบราณของเอลฟ์เหนือแห่ง Wildemount ใน Savalirwood ก่อนถูกความเสื่อมทรามทำลาย",
-      "contentPath": "/world-settings/exandria/wildemount/ruins-of-molaesmyr.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/ruins-of-molaesmyr.md",
       "pin": {
         "x": 80.68364984450801,
         "y": 22.67186504140977
@@ -2793,7 +2842,7 @@
       "category": "wildemount",
       "title": "Boroftkrah",
       "summary": "เมืองเต็นท์เ���������่ร่อนของออร์คผู้ศรัทธา Kord ที่ขอบใต้ของ Rime Plains",
-      "contentPath": "/world-settings/exandria/wildemount/boroftkrah.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/boroftkrah.md",
       "pin": {
         "x": 84.94733984784688,
         "y": 24.72704745207048
@@ -2814,7 +2863,7 @@
       "category": "wildemount",
       "title": "Ruins of Sepesca",
       "summary": "ซากวิหาร Ki'Nau แด่ Melora บน Menagerie Coast ถูกก็อบลินบูชา Gruumsh บุกทำลาย",
-      "contentPath": "/world-settings/exandria/wildemount/ruins-of-sepesca.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/ruins-of-sepesca.md",
       "pin": {
         "x": 63.07796403515723,
         "y": 34.99989919354839
@@ -2835,7 +2884,7 @@
       "category": "wildemount",
       "title": "Everplume",
       "summary": "ภูเขาไฟใต้น้ำมหึมาใน Lucidian Ocean ที่แปรสัตว์แนวปะการังให้กลายเป็นสิ่งมีชีวิตธาตุไฟ",
-      "contentPath": "/world-settings/exandria/wildemount/everplume.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/everplume.md",
       "pin": {
         "x": 61.43687483726009,
         "y": 41.72788233218654
@@ -2856,7 +2905,7 @@
       "category": "wildemount",
       "title": "Amber Crossroads",
       "summary": "สี่แยกถนนใต้ Rexxentrum จุดตัด Amber Road กับถนนสายอื่น มีตลาดนอกสายตากฎหมาย",
-      "contentPath": "/world-settings/exandria/wildemount/amber-crossroads.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/amber-crossroads.md",
       "pin": {
         "x": 76.90020161290323,
         "y": 29.41599773976111
@@ -2877,7 +2926,7 @@
       "category": "wildemount",
       "title": "Rastum Den",
       "summary": "ค่ายฝึกกริฟฟินทางทหารของ Dwendalian Empire บนเทือกเขา Dunrock",
-      "contentPath": "/world-settings/exandria/wildemount/rastum-den.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/rastum-den.md",
       "pin": {
         "x": 77.07221806741529,
         "y": 25.5438806822223
@@ -2898,7 +2947,7 @@
       "category": "wildemount",
       "title": "Vergesson Sanatorium",
       "summary": "สถานบำบัดจิตเวชใน Pearlbow Wilderness ส่วนหนึ่งของปูมหลัง Caleb Widogast",
-      "contentPath": "/world-settings/exandria/wildemount/vergesson-sanatorium.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/vergesson-sanatorium.md",
       "pin": {
         "x": 78.55058532837897,
         "y": 25
@@ -2919,7 +2968,7 @@
       "category": "wildemount",
       "title": "Ruins of Shattengrod",
       "summary": "ซากนครยุค Age of Arcanum ใกล้ Pride's Call ที่ Cerberus Assembly กำลังขุดค้น",
-      "contentPath": "/world-settings/exandria/wildemount/ruins-of-shattengrod.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/ruins-of-shattengrod.md",
       "pin": {
         "x": 74.27877048677011,
         "y": 32.204062744109876
@@ -2940,7 +2989,7 @@
       "category": "wildemount",
       "title": "Herathis Mines",
       "summary": "ชื่อเหมืองบนแผนที่ใกล้ Deastok ยังไม่พบเนื้อเรื่องอย่างเป็นทางการ",
-      "contentPath": "/world-settings/exandria/wildemount/herathis-mines.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/herathis-mines.md",
       "pin": {
         "x": 75.35596709097584,
         "y": 38.944132698351346
@@ -2948,14 +2997,20 @@
       "detailPin": {
         "x": 45.76407878636342,
         "y": 60.50499120686051
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Deastok",
+          "url": "https://criticalrole.fandom.com/wiki/Deastok"
+        }
+      ]
     },
     {
       "id": "dolithil-mine",
       "category": "wildemount",
       "title": "Dolithil Mine",
       "summary": "เหมืองแร่หลากชนิดตะวันออกเฉียงเหนือของ Gwardan วัตถุดิบของงาน steamcasting",
-      "contentPath": "/world-settings/exandria/wildemount/dolithil-mine.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/dolithil-mine.md",
       "pin": {
         "x": 67.22798354548793,
         "y": 35.676027981696585
@@ -2976,7 +3031,7 @@
       "category": "wildemount",
       "title": "Blooming Grove",
       "summary": "สุสาน/วิหารแด่ The Wildmother ใน Savalirwood บ้านตระกูล Clay ของ Caduceus",
-      "contentPath": "/world-settings/exandria/wildemount/blooming-grove.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/blooming-grove.md",
       "pin": {
         "x": 81.4398185483871,
         "y": 25.179939516129032
@@ -2997,7 +3052,7 @@
       "category": "wildemount",
       "title": "Quannah Breach",
       "summary": "ช่องเขา Dunrock ทางเข้า Shadycreek Run เก็บค่าผ่านทางโดยตระกูล Uttolot",
-      "contentPath": "/world-settings/exandria/wildemount/quannah-breach.md",
+      "contentPath": "/world-settings/exandria/wildemount/greying-wildlands/quannah-breach.md",
       "pin": {
         "x": 80.56135048097181,
         "y": 26.95947702700092
@@ -3018,7 +3073,7 @@
       "category": "wildemount",
       "title": "Jigow",
       "summary": "ท่าเรือประมงชายฝั่งเหนือสุดของ Xhorhas จุดที่แม่น้ำ Ifolon ไหลลง Emerald Gulch",
-      "contentPath": "/world-settings/exandria/wildemount/jigow.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/jigow.md",
       "pin": {
         "x": 88.2638079262142,
         "y": 31.826421358799106
@@ -3039,7 +3094,7 @@
       "category": "wildemount",
       "title": "Deepriver Mining Camp",
       "summary": "ค่ายเหมืองเหล็ก/ทองแดงของ Xhorhas ตะวันตกเฉียงใต้ของ Rosohna รวม Icozrin Steelworks",
-      "contentPath": "/world-settings/exandria/wildemount/deepriver-mining-camp.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/deepriver-mining-camp.md",
       "pin": {
         "x": 89.68419403260755,
         "y": 38.02613981846841
@@ -3060,7 +3115,7 @@
       "category": "wildemount",
       "title": "Incanter's Rest",
       "summary": "ทุ่งสนามรบผีสิงจากยุค The Calamity ใน Blightshore มีโครงกระดูกไททันสามตัว",
-      "contentPath": "/world-settings/exandria/wildemount/incanters-rest.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/incanters-rest.md",
       "pin": {
         "x": 91.81036429251394,
         "y": 42.191178640627086
@@ -3081,7 +3136,7 @@
       "category": "wildemount",
       "title": "Olc Skerry",
       "summary": "หมู่บ้านร้างลึกลับบนเกาะนอกชายฝั่งตะวันตกของ Far Hharom",
-      "contentPath": "/world-settings/exandria/wildemount/olc-skerry.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/olc-skerry.md",
       "pin": {
         "x": 92.79102002986522,
         "y": 29.4904138578708
@@ -3102,7 +3157,7 @@
       "category": "wildemount",
       "title": "Strathfell",
       "summary": "ป่าที่กลายเป็นหินใน Ebonglass Massif ถิ่นมังกรเงา Karketh",
-      "contentPath": "/world-settings/exandria/wildemount/strathfell.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/strathfell.md",
       "pin": {
         "x": 96.60700748494574,
         "y": 33.03258279312586
@@ -3123,7 +3178,7 @@
       "category": "wildemount",
       "title": "Ghor Veles",
       "summary": "ซากนคร Age of Arcanum ที่เป็นห้องทดลองลับของ Betrayer Gods ใน Blightshore",
-      "contentPath": "/world-settings/exandria/wildemount/ghor-veles.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/ghor-veles.md",
       "pin": {
         "x": 93.19200475159714,
         "y": 35.66911283792372
@@ -3144,7 +3199,7 @@
       "category": "wildemount",
       "title": "Ruins of Draconia",
       "summary": "ซากอาณาจักรลอยฟ้าของมังกรพ่นธาตุเหนือ Dreemoth Ravine ทำลายโดย Chroma Conclave",
-      "contentPath": "/world-settings/exandria/wildemount/ruins-of-draconia.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/ruins-of-draconia.md",
       "pin": {
         "x": 84.41752081224995,
         "y": 47.96760129467133
@@ -3165,7 +3220,7 @@
       "category": "wildemount",
       "title": "Xarzith Kitril",
       "summary": "นครมังกรพ่นธาตุแห่งใหม่ของ ravenite ที่ปลายใต้ Dreemoth Ravine",
-      "contentPath": "/world-settings/exandria/wildemount/xarzith-kitril.md",
+      "contentPath": "/world-settings/exandria/wildemount/xhorhas/xarzith-kitril.md",
       "pin": {
         "x": 83.87485854548794,
         "y": 49.863488147335666
@@ -3186,7 +3241,7 @@
       "category": "wildemount",
       "title": "Verstglade",
       "summary": "หุบเขาต้องคำสาปซ่อนในยอด Ashkeeper Peaks อดีตห้องทดลองลับของลิช Vecna",
-      "contentPath": "/world-settings/exandria/wildemount/verstglade.md",
+      "contentPath": "/world-settings/exandria/wildemount/dwendalian-empire/verstglade.md",
       "pin": {
         "x": 79.77506015839117,
         "y": 44.23585661072885
@@ -3201,9 +3256,9 @@
     {
       "id": "miskath-pit",
       "category": "wildemount",
-      "title": "The Miskath Pit",
+      "title": "Miskath Pit",
       "summary": "หลุมยุบเวทมนตร์ลึกไม่มีที่สิ้นสุดทางใต้ของ Blightshore ถิ่น core spawn",
-      "contentPath": "/world-settings/exandria/wildemount/miskath-pit.md",
+      "contentPath": "/world-settings/exandria/wildemount/blightshore/miskath-pit.md",
       "pin": {
         "x": 91.87926371497494,
         "y": 45.79455985596104
@@ -3224,7 +3279,7 @@
       "category": "wildemount",
       "title": "Diver's Grave",
       "summary": "น่านน้ำปั่นป่วนใน Swavain Islands เต็มไปด้วยซากเรือ ถิ่น Sea Fury Dashilla",
-      "contentPath": "/world-settings/exandria/wildemount/divers-grave.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/divers-grave.md",
       "pin": {
         "x": 61.66526160855447,
         "y": 49.42783314951005
@@ -3243,9 +3298,9 @@
     {
       "id": "darktow",
       "category": "wildemount",
-      "title": "Darktow (Isle)",
+      "title": "Darktow Isle",
       "summary": "เกาะหน้าผาของโจรสลัด The Revelry ปกครองโดย Plank King นอก Clovis Concord",
-      "contentPath": "/world-settings/exandria/wildemount/darktow.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/darktow-isle.md",
       "pin": {
         "x": 60.33189548677012,
         "y": 55.42376979512555
@@ -3266,7 +3321,7 @@
       "category": "wildemount",
       "title": "Brokenbank",
       "summary": "ท่าเรือด่านศุลกากรแรกของ Menagerie Coast หนึ่งในแปดนครของ Clovis Concord",
-      "contentPath": "/world-settings/exandria/wildemount/brokenbank.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/brokenbank.md",
       "pin": {
         "x": 67.40518177709272,
         "y": 51.252106976893636
@@ -3287,7 +3342,7 @@
       "category": "wildemount",
       "title": "Vide Cay",
       "summary": "เกาะเล็กในหมู่เกาะ Swavain ถิ่นเฟย์ที่กันไม่ให้ The Revelry ใช้ประโยชน์ได้",
-      "contentPath": "/world-settings/exandria/wildemount/vide-cay.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/vide-cay.md",
       "pin": {
         "x": 68.47054337839927,
         "y": 52.82818597209068
@@ -3308,7 +3363,7 @@
       "category": "wildemount",
       "title": "Rumblecusp",
       "summary": "เกาะภูเขาไฟกลาง Lucidian Ocean ที่จัด Traveler Con ถิ่นของ Vokodo ผู้ลบความทรงจำ",
-      "contentPath": "/world-settings/exandria/wildemount/rumblecusp.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/rumblecusp.md",
       "pin": {
         "x": 72.92788436643538,
         "y": 55.692529753715775
@@ -3329,7 +3384,7 @@
       "category": "wildemount",
       "title": "Urukayxl",
       "summary": "เกาะใต้ Nicodranas ถิ่น lizardfolk กับ yuan-ti แย่งชิง Temple of the False Serpent",
-      "contentPath": "/world-settings/exandria/wildemount/urukayxl.md",
+      "contentPath": "/world-settings/exandria/wildemount/menagerie-coast/swavain-islands/urukayxl.md",
       "pin": {
         "x": 75.9411908180483,
         "y": 58.004465969916325
@@ -3350,7 +3405,7 @@
       "category": "issylra",
       "title": "Vasselheim",
       "summary": "นครหลวงศาสนาของมนุษย์บน Issylra สร้างบนยอดเขา Heaven's Stair เปลแห่งศรัทธาของ Exandria",
-      "contentPath": "/world-settings/exandria/issylra/vasselheim.md",
+      "contentPath": "/world-settings/exandria/issylra/othanzia/vesper-timberland/vasselheim.md",
       "pin": {
         "x": 29.04612940142232,
         "y": 27.608387281356322
@@ -3371,7 +3426,7 @@
       "category": "issylra",
       "title": "Muldire",
       "summary": "เมืองหนาวเหน็บบน Glasswalk Road ทางตะวันตกเฉียงเหนือของ Vasselheim",
-      "contentPath": "/world-settings/exandria/issylra/muldire.md",
+      "contentPath": "/world-settings/exandria/issylra/othanzia/vesper-timberland/muldire.md",
       "pin": {
         "x": 27.066129032258065,
         "y": 24.25725843368038
@@ -3392,7 +3447,7 @@
       "category": "issylra",
       "title": "Pyrah",
       "summary": "หมู่บ้าน Fire Ashari ในปล่องภูเขาไฟ Cindergrove เฝ้าพอร์ทัลสู่ Elemental Plane of Fire",
-      "contentPath": "/world-settings/exandria/issylra/pyrah.md",
+      "contentPath": "/world-settings/exandria/issylra/othanzia/sunderpeak-mountains/pyrah.md",
       "pin": {
         "x": 23.240997213702048,
         "y": 31.14733370125295
@@ -3413,7 +3468,7 @@
       "category": "issylra",
       "title": "Endovaar",
       "summary": "เมืองใน Demithore Valley สำนักงานใหญ่ตระกูล Silvercall เจ้าของโรงเลื่อยไม้",
-      "contentPath": "/world-settings/exandria/issylra/endovaar.md",
+      "contentPath": "/world-settings/exandria/issylra/demithore-valley/endovaar.md",
       "pin": {
         "x": 22.3,
         "y": 33.59677456271263
@@ -3434,7 +3489,7 @@
       "category": "issylra",
       "title": "Hearthdell",
       "summary": "หมู่บ้านเกษตรใน Demithore Valley ศูนย์กลางเหตุการณ์เส้นเลย์ไลน์ในแคมเปญ 3",
-      "contentPath": "/world-settings/exandria/issylra/hearthdell.md",
+      "contentPath": "/world-settings/exandria/issylra/demithore-valley/hearthdell.md",
       "pin": {
         "x": 20.27580669772241,
         "y": 33.89032276522729
@@ -3455,7 +3510,7 @@
       "category": "issylra",
       "title": "Shorecomb",
       "summary": "เมืองท่าชายฝั่งใกล้เกาะภูเขาไฟ Scaldseat ขึ้นชื่อเรื่องส่งออกปลาและอาหารทะเล",
-      "contentPath": "/world-settings/exandria/issylra/shorecomb.md",
+      "contentPath": "/world-settings/exandria/issylra/othanzia/shorecomb.md",
       "pin": {
         "x": 24.5,
         "y": 34.3
@@ -3476,7 +3531,7 @@
       "category": "issylra",
       "title": "Ivaadel",
       "summary": "เมืองเอลฟ์เล็ก ๆ ใน Caramarin Reach บ้านเกิดเดิมของ Ludinus Da'leth ก่อนย้ายไป Molaesmyr",
-      "contentPath": "/world-settings/exandria/issylra/ivaadel.md",
+      "contentPath": "/world-settings/exandria/issylra/unspecified/ivaadel.md",
       "pin": {
         "x": 10.337096281974546,
         "y": 47.0306449767082
@@ -3497,7 +3552,7 @@
       "category": "issylra",
       "title": "Hishari",
       "summary": "ซากเมืองลัทธิ (เดิมชื่อ Tumilo) ที่ถูกทำลายจากพิธีกรรมของ Efterin ปัจจุบันถูกมองว่าถูกสาป",
-      "contentPath": "/world-settings/exandria/issylra/hishari.md",
+      "contentPath": "/world-settings/exandria/issylra/unspecified/hishari.md",
       "pin": {
         "x": 13.943548017932523,
         "y": 40.696773639802
@@ -3518,7 +3573,7 @@
       "category": "issylra",
       "title": "Rimecleft",
       "summary": "ภูเขายอดคู่ใกล้ Vasselheim ถิ่นพำนักของสฟิงซ์ Kamaljiori คู่ของ Osysa",
-      "contentPath": "/world-settings/exandria/issylra/rimecleft.md",
+      "contentPath": "/world-settings/exandria/issylra/othanzia/vesper-timberland/rimecleft.md",
       "pin": {
         "x": 24.051613026280556,
         "y": 26.354839078841668
@@ -3539,12 +3594,16 @@
       "category": "marquet",
       "title": "Ank'Harel",
       "summary": "นครหลวงกลาง Rumedam Desert อัญมณีแห่ง Marquet ปกครองโดย J'mon Sa Ord มังกรทองเหลืองปลอมกาย",
-      "contentPath": "/world-settings/exandria/marquet/ankharel.md",
+      "contentPath": "/world-settings/exandria/marquet/rumedam-desert/ankharel.md",
       "pin": {
         "x": 23.90963898606039,
         "y": 71.04950687870274
       },
       "sources": [
+        {
+          "label": "Critical Role Wiki: Ank'Harel",
+          "url": "https://criticalrole.fandom.com/wiki/Ank'Harel"
+        },
         {
           "label": "Critical Role Wiki: Ank'Harel",
           "url": "https://criticalrole.fandom.com/wiki/Ank%27Harel"
@@ -3560,7 +3619,7 @@
       "category": "marquet",
       "title": "Eish-Allay",
       "summary": "หุบเขาเล็กในเทือกเขา Serpentwind Peaks จุดพักหนึ่งของ Oderan Wilds",
-      "contentPath": "/world-settings/exandria/marquet/eish-allay.md",
+      "contentPath": "/world-settings/exandria/marquet/oderan-wilds/eish-allay.md",
       "pin": {
         "x": 8.130066053678824,
         "y": 71.83652890415088
@@ -3581,7 +3640,7 @@
       "category": "marquet",
       "title": "Goradire",
       "summary": "เมืองหนึ่งใน Oderan Wilds ล้อมรอบด้วยเทือกเขา Serpentwind Peaks",
-      "contentPath": "/world-settings/exandria/marquet/goradire.md",
+      "contentPath": "/world-settings/exandria/marquet/oderan-wilds/goradire.md",
       "pin": {
         "x": 12.250164373765752,
         "y": 74.04950687870274
@@ -3602,7 +3661,7 @@
       "category": "marquet",
       "title": "Shandal",
       "summary": "หมู่บ้านโอเอซิสหนึ่งวันเดินทางจาก Ank'Harel บ้านเกิดของ Shaun Gilmore",
-      "contentPath": "/world-settings/exandria/marquet/shandal.md",
+      "contentPath": "/world-settings/exandria/marquet/rumedam-desert/shandal.md",
       "pin": {
         "x": 25.33805978121907,
         "y": 72.24583876246412
@@ -3623,7 +3682,7 @@
       "category": "marquet",
       "title": "Shammel",
       "summary": "นครท่าเรือท่องเที่ยวบน Bay of Gifts ที่ Vox Machina เคยมาพักผ่อนช่วง Winter's Crest",
-      "contentPath": "/world-settings/exandria/marquet/shammel.md",
+      "contentPath": "/world-settings/exandria/marquet/aggrad-mountains/shammel.md",
       "pin": {
         "x": 24.421085323112756,
         "y": 66.54189379208604
@@ -3644,7 +3703,7 @@
       "category": "marquet",
       "title": "Vault of Shumas",
       "summary": "วิหารลับในเทือกเขา Aggrad Mountains ที่ Arkhan the Cruel พบ Wreath of the Prism",
-      "contentPath": "/world-settings/exandria/marquet/vault-of-shumas.md",
+      "contentPath": "/world-settings/exandria/marquet/aggrad-mountains/vault-of-shumas.md",
       "pin": {
         "x": 18.46066985477107,
         "y": 69.09901415415226
@@ -3665,7 +3724,7 @@
       "category": "marquet",
       "title": "Jrusar",
       "summary": "นครหลวงของ Oderan Wilds เมืองยอดหินห้ายอด บ้านเกิดของ Bells Hells ในช่วงต้นแคมเปญ 3",
-      "contentPath": "/world-settings/exandria/marquet/jrusar.md",
+      "contentPath": "/world-settings/exandria/marquet/oderan-wilds/jrusar.md",
       "pin": {
         "x": 10.039211158010648,
         "y": 77.35416123753586
@@ -3686,7 +3745,7 @@
       "category": "marquet",
       "title": "Heartmoor Hamlet",
       "summary": "หมู่บ้านในพื้นที่ชุ่มน้ำ Heartmoor เต็มไปด้วยร้านค้าเล็ก ๆ และเรื่องราวของ Ashton Greymoore",
-      "contentPath": "/world-settings/exandria/marquet/heartmoor-hamlet.md",
+      "contentPath": "/world-settings/exandria/marquet/oderan-wilds/heartmoor-hamlet.md",
       "pin": {
         "x": 8.109638225629084,
         "y": 76.1428794643571
@@ -3707,7 +3766,7 @@
       "category": "marquet",
       "title": "Otaladume",
       "summary": "นิคมหนึ่งใน Oderan Wilds ใกล้ Jrusar ยังไม่มีรายละเอียดปรากฏในสื่อหลัก",
-      "contentPath": "/world-settings/exandria/marquet/otaladume.md",
+      "contentPath": "/world-settings/exandria/marquet/oderan-wilds/otaladume.md",
       "pin": {
         "x": 7.469770332986731,
         "y": 79.16445733844363
@@ -3715,14 +3774,15 @@
       "detailPin": {
         "x": 25.233194102756634,
         "y": 36.72550651674225
-      }
+      },
+      "sources": []
     },
     {
       "id": "evishi",
       "category": "marquet",
       "title": "Evishi",
       "summary": "เมืองโทรลล์ใน Oderan Wilds ใกล้เหมืองเงินของตระกูล Rayia",
-      "contentPath": "/world-settings/exandria/marquet/evishi.md",
+      "contentPath": "/world-settings/exandria/marquet/oderan-wilds/evishi.md",
       "pin": {
         "x": 12.688718036713391,
         "y": 78.78307591442312
@@ -3743,7 +3803,7 @@
       "category": "marquet",
       "title": "Bassuras",
       "summary": "นครใหญ่ใน Hellcatch Valley บ้านเกิดของ Ashton Greymoore, Dancer และ Fresh Cut Grass",
-      "contentPath": "/world-settings/exandria/marquet/bassuras.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/bassuras.md",
       "pin": {
         "x": 21.8,
         "y": 83.39069128233373
@@ -3764,7 +3824,7 @@
       "category": "marquet",
       "title": "Gujjar-Serai",
       "summary": "นครสีเขียว เมืองหลวงของ Bassur Republic บนขอบ The Rift เหนือ Hellcatch Valley",
-      "contentPath": "/world-settings/exandria/marquet/gujjar-serai.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/gujjar-serai.md",
       "pin": {
         "x": 15.119933946321174,
         "y": 80.65416123753587
@@ -3785,7 +3845,7 @@
       "category": "marquet",
       "title": "King's Fall",
       "summary": "เมืองเล็กชิดเทือกเขา Aggrad Mountains ทางเหนือของ Hellcatch Valley",
-      "contentPath": "/world-settings/exandria/marquet/kings-fall.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/kings-fall.md",
       "pin": {
         "x": 17.039867892642352,
         "y": 80.9036681162386
@@ -3806,7 +3866,7 @@
       "category": "marquet",
       "title": "Loonpur",
       "summary": "นิคมหนึ่งใน Hellcatch Valley บนเส้นทางสัญจรของ Bells Hells",
-      "contentPath": "/world-settings/exandria/marquet/loonpur.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/loonpur.md",
       "pin": {
         "x": 16.62026345428399,
         "y": 85.59633074311444
@@ -3814,14 +3874,20 @@
       "detailPin": {
         "x": 40.25314197407922,
         "y": 50.42915648910164
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Hellcatch Valley",
+          "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
+        }
+      ]
     },
     {
       "id": "nadigarh",
       "category": "marquet",
       "title": "Nadigarh",
       "summary": "นิคมทางใต้ของ Hellcatch Valley ใกล้ซาก Drowned City",
-      "contentPath": "/world-settings/exandria/marquet/nadigarh.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/nadigarh.md",
       "pin": {
         "x": 19.69036177437092,
         "y": 85.8009862425945
@@ -3829,14 +3895,20 @@
       "detailPin": {
         "x": 44.783599808603554,
         "y": 52.069506844180644
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Hellcatch Valley",
+          "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
+        }
+      ]
     },
     {
       "id": "tishatan-excavation",
       "category": "marquet",
-      "title": "หลุมขุดค้น Tishtan",
+      "title": "Tishtan excavation site",
       "summary": "ไซต์โบราณคดีที่กลายเป็นจุดสร้าง Malleus Key และจุดเริ่ม Battle of the Red Center",
-      "contentPath": "/world-settings/exandria/marquet/tishatan-excavation.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/tishtan-excavation-site.md",
       "pin": {
         "x": 19.86944082502392,
         "y": 79.94852063610823
@@ -3857,7 +3929,7 @@
       "category": "marquet",
       "title": "Rajarma",
       "summary": "จุดหนึ่งใน Hellcatch Valley ใกล้พรมแดน The Rift",
-      "contentPath": "/world-settings/exandria/marquet/rajarma.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/rajarma.md",
       "pin": {
         "x": 21.24052538770536,
         "y": 80.02990091948178
@@ -3865,14 +3937,20 @@
       "detailPin": {
         "x": 49.27788142606735,
         "y": 45.29183732428008
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Hellcatch Valley",
+          "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
+        }
+      ]
     },
     {
       "id": "dead-mans-crater",
       "category": "marquet",
       "title": "Dead Man's Crater",
       "summary": "แอ่งขนาดใหญ่ใน Hellcatch Valley ดินแดนไร้กฎหมายของกลุ่ม Crawlers",
-      "contentPath": "/world-settings/exandria/marquet/dead-mans-crater.md",
+      "contentPath": "/world-settings/exandria/marquet/hellcatch-valley/dead-mans-crater.md",
       "pin": {
         "x": 19.941019269433934,
         "y": 83.4
@@ -3880,14 +3958,20 @@
       "detailPin": {
         "x": 46.64537568782267,
         "y": 49.09832898348971
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Hellcatch Valley",
+          "url": "https://criticalrole.fandom.com/wiki/Hellcatch_Valley"
+        }
+      ]
     },
     {
       "id": "drowned-city",
       "category": "marquet",
       "title": "Drowned City (Cael Morrow)",
       "summary": "ซากนครเอลฟ์-ออร์คยุค Calamity ที่จมใต้ดิน จุดกำเนิดของ the Netherdeep",
-      "contentPath": "/world-settings/exandria/marquet/drowned-city.md",
+      "contentPath": "/world-settings/exandria/marquet/rumedam-desert/drowned-city.md",
       "pin": {
         "x": 21.53006453281621,
         "y": 87.34852063610823
@@ -3908,7 +3992,7 @@
       "category": "marquet",
       "title": "Barinak",
       "summary": "หมู่บ้านลับของไลแคนโทรป Gorgynei ซ่อนตัวในผืนป่า Gloomed Jungles",
-      "contentPath": "/world-settings/exandria/marquet/barinak.md",
+      "contentPath": "/world-settings/exandria/marquet/aeshanadoor/barinak.md",
       "pin": {
         "x": 25.688718036713386,
         "y": 86.43871765649774
@@ -3927,9 +4011,9 @@
     {
       "id": "gelvan",
       "category": "marquet",
-      "title": "Gelvan",
+      "title": "Gelvaan",
       "summary": "เมืองเกษตรกรรมบนที่ราบสูงริม Taloned Highlands บ้านเกิดของ Imogen Temult",
-      "contentPath": "/world-settings/exandria/marquet/gelvan.md",
+      "contentPath": "/world-settings/exandria/marquet/taloned-highlands/gelvaan.md",
       "pin": {
         "x": 17.330230427444576,
         "y": 91.2794077981845
@@ -3950,7 +4034,7 @@
       "category": "marquet",
       "title": "Sruwargas",
       "summary": "เมืองหลวงของ Taloned Highlands ที่นั่งบัลลังก์ Stratos Throne บนเทือกเขา Coven Peaks",
-      "contentPath": "/world-settings/exandria/marquet/sruwargas.md",
+      "contentPath": "/world-settings/exandria/marquet/taloned-highlands/sruwargas.md",
       "pin": {
         "x": 15.3,
         "y": 94.6
@@ -3971,12 +4055,16 @@
       "category": "marquet",
       "title": "Zha'Vrollo",
       "summary": "วิหารกึ่งปรักหักพังของ Sahyaadon ในผืนป่า Gloomed Jungles ใกล้ Barinak",
-      "contentPath": "/world-settings/exandria/marquet/zhavrolle.md",
+      "contentPath": "/world-settings/exandria/marquet/aeshanadoor/zhavrolle.md",
       "pin": {
         "x": 25.83921191844196,
         "y": 84.8916763842813
       },
       "sources": [
+        {
+          "label": "Critical Role Wiki: Zha'Vrollo",
+          "url": "https://criticalrole.fandom.com/wiki/Zha'Vrollo"
+        },
         {
           "label": "Critical Role Wiki: Zha'Vrollo",
           "url": "https://criticalrole.fandom.com/wiki/Zha%27Vrollo"
@@ -3992,7 +4080,7 @@
       "category": "marquet",
       "title": "Silken Squall",
       "summary": "นครเต็นท์ลอยฟ้าเร่ร่อนของตระกูล Wyvernwind บ้านเกิดของ Dorian Storm",
-      "contentPath": "/world-settings/exandria/marquet/silken-squall.md",
+      "contentPath": "/world-settings/exandria/marquet/aeshanadoor/silken-squall.md",
       "pin": {
         "x": 32.73953914511085,
         "y": 85.16078808155805
@@ -4013,7 +4101,7 @@
       "category": "marquet",
       "title": "Ziggurat แห่ง Smouldercrown Mountains",
       "summary": "วิหารโบราณที่ the Remnants ใช้เป็นพอร์ทัลสู่ Shadowfell จุดที่ Vox Machina หยุดยั้ง Delilah Briarwood",
-      "contentPath": "/world-settings/exandria/marquet/ziggurat.md",
+      "contentPath": "/world-settings/exandria/marquet/rumedam-desert/ziggurat.md",
       "pin": {
         "x": 24.849506878702744,
         "y": 78.76445733844362
@@ -4034,7 +4122,7 @@
       "category": "marquet",
       "title": "Qoreo",
       "summary": "นิคมเล็กในแคว้น Aeshanadoor ใกล้ทะเลสาบทางตะวันออกเฉียงเหนือของ Gloomed Jungles",
-      "contentPath": "/world-settings/exandria/marquet/qoreo.md",
+      "contentPath": "/world-settings/exandria/marquet/aeshanadoor/qoreo.md",
       "pin": {
         "x": 24.266646471006116,
         "y": 92.60307705507009
@@ -4042,19 +4130,29 @@
       "detailPin": {
         "x": 51.83031704061123,
         "y": 66.58703158721801
-      }
+      },
+      "sources": [
+        {
+          "label": "Critical Role Wiki: Qoreo",
+          "url": "https://criticalrole.fandom.com/wiki/Qoreo"
+        }
+      ]
     },
     {
       "id": "aruati",
       "category": "marquet",
       "title": "Aruati",
       "summary": "หมู่บ้านชาวประมงริมฝั่งเหนือของ Lake Koron ใกล้นคร Yios",
-      "contentPath": "/world-settings/exandria/marquet/aruati.md",
+      "contentPath": "/world-settings/exandria/marquet/aeshanadoor/aruati.md",
       "pin": {
         "x": 26.96976957255542,
         "y": 88.73921077779498
       },
       "sources": [
+        {
+          "label": "Critical Role Wiki: Aruati",
+          "url": "https://criticalrole.fandom.com/wiki/Aruati"
+        },
         {
           "label": "Critical Role Wiki: Lake Koron",
           "url": "https://criticalrole.fandom.com/wiki/Lake_Koron"
@@ -4070,7 +4168,7 @@
       "category": "marquet",
       "title": "Yios",
       "summary": "นครแห่งแสงไหลเลื่อน เมืองออร์คกลาง Lake Koron ศูนย์กลางวิชาการคู่แข่ง Ank'Harel",
-      "contentPath": "/world-settings/exandria/marquet/yios.md",
+      "contentPath": "/world-settings/exandria/marquet/aeshanadoor/yios.md",
       "pin": {
         "x": 26.68986789264235,
         "y": 89.69019702038952

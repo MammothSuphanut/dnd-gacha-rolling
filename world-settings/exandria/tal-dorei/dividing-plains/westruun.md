@@ -5,3 +5,8 @@
 ก่อตั้งโดย Palest Westruun พ่อค้านักปรัชญาผู้เป็นที่มาของชื่อเมือง ปัจจุบันเป็นที่ตั้งของ **Cobalt Reserve** ห้องสมุดใหญ่ที่สุดใน Tal'Dorei และ **Westhall Academy** สถาบันการศึกษาสำคัญ อีกทั้งยังเป็นบ้านเกิดของ Vox Machina คณะผจญภัยที่ภายหลังกอบกู้ทั้งทวีปจากภัย Chroma Conclave
 
 ป่า Bramblewood ล้อมรอบเมืองทั้งด้านเหนือ ตะวันตก และใต้ ทำให้ไม้จากป่าแห่งนี้กลายเป็นทรัพยากรหลักที่หล่อเลี้ยงเศรษฐกิจของ Westruun มาช้านาน
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Dividing Plains**, Tal'Dorei
+- [Critical Role Wiki: Westruun](https://criticalrole.fandom.com/wiki/Westruun)

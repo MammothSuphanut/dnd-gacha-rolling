@@ -2,4 +2,9 @@
 
 รู้จักกันในชื่อ "city of the Forge Lords" เดิมทีเป็นป้อมคุกที่รับใช้ Strife Emperor ในยุค Calamity ปกครองโดย Sundering Lord Azmog ฮอบกอบลินแวมไพร์ ก่อนที่ The Wildmother และเหล่า Free Children ของนางจะบุกโจมตีจนป้อมปราการแตก หอคอยกลางถูกเหวี่ยงกระเด็นไปไกลเกือบหนึ่งไมล์ตกลงบนภูเขาใกล้เคียง ทหารยามถูกสังหารหมดสิ้นแต่เหล่านักโทษกลับรอดชีวิตและหลบหนีไปได้
 
-หลังยุค Divergence มีอาณาจักรฮอบกอบลินต่าง ๆ เข้ามาตั้งถิ่นฐานใหม่ที่ Rybad-Kol จนกระทั่งปี 722 PD จึงถูก Tz'Jarr จักรพรรดิแห่ง Tz'aarm พิชิตและผนวกเข้าเป็นส่วนหนึ่งของ Iron Authority
+หลังยุค Divergence มีอาณาจักรฮอบกอบลินต่าง ๆ เข้ามาตั้งถิ่นฐานใหม่ที่ Rybad-Kol จนกระทั่งปี 722 PD จึงถูก Tz'Jarr จักรพรรดิแห่ง Tz'Arrm พิชิตและผนวกเข้าเป็นส่วนหนึ่งของ Iron Authority
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Rifenmist Peninsula**, Tal'Dorei
+- [Critical Role Wiki: Rybad-Kol](https://criticalrole.fandom.com/wiki/Rybad-Kol)

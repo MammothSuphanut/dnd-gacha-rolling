@@ -3,3 +3,8 @@
 เกาะภูเขาไฟในหมู่เกาะ Swavain ทางตะวันตกเฉียงใต้ของ Nicodranas กลาง Lucidian Ocean สถานที่จัด Traveler Con ในวันที่ 26 Unndilar ปี 836 PD
 
 ชาวบ้านบนเกาะต่างจำไม่ได้ว่าตนเป็นใครมาจากไหนก่อนมาตั้งรกรากที่นี่ เพราะมีบางสิ่งบนเกาะลบความทรงจำเพื่อกักพวกเขาไว้รับใช้ Vokodo — Viridian หนึ่งในผู้นำหมู่บ้านบรรยายเกาะนี้ว่าเป็นจุดศูนย์กลางของโลก บ้านของเศษเสี้ยวดินแดนต่างถิ่นที่มารวมกันเป็นผืนแผ่นดินเดียว
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Swavain Islands (Menagerie Coast)**, Wildemount
+- [Critical Role Wiki: Rumblecusp](https://criticalrole.fandom.com/wiki/Rumblecusp)

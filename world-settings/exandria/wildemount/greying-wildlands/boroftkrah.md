@@ -1,3 +1,8 @@
 # Boroftkrah
 
 เมืองเต็นท์เร่ร่อนของออร์คและครึ่งออร์คที่ขอบใต้ของ Rime Plains ติดเชิงเขา Dunrock ฝั่งตะวันออก ปฏิเสธ Gruumsh หันมาศรัทธา Kord แทน จัดผังเป็นวงเต็นท์รอบศาลเจ้ากลางเมือง ทุกคนฝึกต่อสู้เพื่อป้องกันตัว ประชากรราว 3,060 คนในปี 835 PD
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Greying Wildlands**, Wildemount
+- [Critical Role Wiki: Boroftkrah](https://criticalrole.fandom.com/wiki/Boroftkrah)

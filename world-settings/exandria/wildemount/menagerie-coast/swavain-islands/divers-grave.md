@@ -3,3 +3,8 @@
 พื้นที่ทะเลปั่นป่วนใน Lucidian Ocean กลางหมู่เกาะ Swavain นอกชายฝั่ง Menagerie Coast ขึ้นชื่อเรื่องพายุรุนแรงบ่อยครั้ง พื้นทะเลเป็นหุบเหวลึกราว 700 ฟุตเต็มไปด้วยซากเรืออับปางนับไม่ถ้วน
 
 Sea Fury ชื่อ Dashilla อาศัยอยู่ในถ้ำใต้น้ำที่นี่ ใช้เมอร์โรว์ท้องถิ่นเป็นพลังงานให้พิธีกรรมเรียกพายุที่จมเรือมานับครั้งไม่ถ้วน
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Swavain Islands (Menagerie Coast)**, Wildemount
+- [Critical Role Wiki: Diver's Grave](https://criticalrole.fandom.com/wiki/Diver's_Grave)

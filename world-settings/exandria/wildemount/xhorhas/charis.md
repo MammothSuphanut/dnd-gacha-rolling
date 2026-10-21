@@ -1,3 +1,8 @@
 # Charis
 
 หมู่บ้านดรูอิดขนาดเล็กใน Lotusden Greenwood นิคมร่วมระหว่างชาวฮาล์ฟลิง Lotusden พื้นเมืองกับผู้ลี้ภัย dragonborn จากการล่มสลายของ Draconia สร้างขึ้นภายในต้นไม้กลวงพร้อมสะพานเชือกระดับเรือนยอด ชื่อ Charis แปลว่า "ความหวัง" ในภาษามังกร (Draconic)
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Xhorhas**, Wildemount
+- [Critical Role Wiki: Charis](https://criticalrole.fandom.com/wiki/Charis)

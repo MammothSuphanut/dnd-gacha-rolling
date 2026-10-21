@@ -3,3 +3,8 @@
 หมู่บ้านของชาว Air Ashari ตั้งอยู่บนยอด Summit Peaks จุดที่รอยแยกสู่ Elemental Plane of Air เปิดออกสู่ Exandria ตัวหมู่บ้านอยู่บนหน้าผาสูงชันที่มีลมแรงพัดปกป้องจากศัตรูทางอากาศ ชาว Zephrah ปรับตัวใช้ชีวิตท่ามกลางเมฆ ดำรงชีพด้วยพืชพรรณบนที่สูงและการล่าสัตว์ปีกขนาดใหญ่ ส่วนใหญ่เป็นนักล่าและนักปีนเขาฝีมือดี
 
 ปกครองโดยหัวหน้าเผ่าที่มีตำแหน่งเรียกว่า **Voice of the Tempest** ผู้ซึ่งต้องเดินทางไกลไปเยือนเผ่า Ashari อื่น ๆ ก่อนจะขึ้นดำรงตำแหน่งได้ Zephrah คือบ้านเกิดของ Keyleth อดีต Voice of the Tempest และ Orym แห่ง Bells Hells
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Lucidian Coast**, Tal'Dorei
+- [Critical Role Wiki: Zephrah](https://criticalrole.fandom.com/wiki/Zephrah)

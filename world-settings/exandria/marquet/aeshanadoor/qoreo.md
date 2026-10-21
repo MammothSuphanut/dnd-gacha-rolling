@@ -3,3 +3,8 @@
 นิคมเล็ก ๆ ในแคว้น Aeshanadoor ทางตอนใต้ของ Marquet ตั้งอยู่ใกล้ทะเลสาบทางตะวันออกเฉียงเหนือของผืนป่า Gloomed Jungles ไม่ไกลจากหมู่บ้าน Barinak ของกลุ่มไลแคนโทรป Gorgynei
 
 รายละเอียดเกี่ยวกับ Qoreo ในสื่อหลักยังค่อนข้างจำกัด ปรากฏเป็นชื่อสถานที่บนแผนที่ของภูมิภาคนี้เป็นหลัก
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Aeshanadoor**, Marquet
+- [Critical Role Wiki: Qoreo](https://criticalrole.fandom.com/wiki/Qoreo)

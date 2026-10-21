@@ -1,3 +1,9 @@
 # Niirdal-Hup
 
 หนึ่งในสี่นครบริวารของ **Qoniira Tetrarchy** อารยธรรมโบราณแห่ง Rifenmist Jungle ทำหน้าที่เป็นศูนย์กลางทางทหารของรัฐ มีรูปแบบเป็นนครป้อมปราการตั้งอยู่ทางตะวันตกของนครหลวง Niirdal-Poc ในบรรดานครทั้งหมดของ Qoniira ที่ล่มสลายไปตามกาลเวลา มีเพียง Niirdal-Hup เท่านั้นที่ถูกทำลายจนราบเป็นผงธุลีอย่างสิ้นเชิง ไม่หลงเหลือแม้แต่ซากปรักหักพังให้เห็น
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Rifenmist Peninsula**, Tal'Dorei
+- หมายเหตุ: ไม่มีหน้าแยก — กล่าวถึงในหน้า Qoniira Tetrarchy
+- [Critical Role Wiki: Qoniira Tetrarchy](https://criticalrole.fandom.com/wiki/Qoniira_Tetrarchy)

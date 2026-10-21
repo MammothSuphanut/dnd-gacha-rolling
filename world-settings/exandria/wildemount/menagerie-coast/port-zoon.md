@@ -3,3 +3,8 @@
 เมืองอุตสาหกรรม/วิทยาศาสตร์ริมชายฝั่ง อยู่ห่างจาก Nicodranas ไปทางตะวันตกเฉียงเหนือราวสามวัน และอยู่ใต้ Feolinn ขึ้นชื่อเรื่องโลหะวิทยาและงานตีเหล็ก อาคารหินสูงทาสีทึมๆ และวิหารขนาดมหึมาของ Moradin โรงเรียนของกิลด์ฝึกผู้เชี่ยวชาญด้านอาร์เคนและวิทยาศาสตร์
 
 ในปี 835 PD ปกครองโดย Alamads Haddou ซึ่งเป็นทั้ง marquis และหัวหน้ากิลด์ Silverbone Smithing ที่ดำเนินการทั่วชายฝั่ง
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Menagerie Coast**, Wildemount
+- [Critical Role Wiki: Port Zoon](https://criticalrole.fandom.com/wiki/Port_Zoon)

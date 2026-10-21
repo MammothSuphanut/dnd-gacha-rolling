@@ -3,3 +3,8 @@
 เมืองเล็กๆ ในหิมะที่ทรุดโทรม เป็นหนึ่งในด่านแรกๆ หลัง The Calamity ที่นี่คือจุดกำเนิดขององค์กรอาชญากรรม **the Myriad** (ราวปี 755 PD) และเป็นสำนักงานใหญ่มายาวนานจนกระทั่ง Empire บุกทลายในปี 820 PD
 
 ปัจจุบันเป็นฐานส่งคณะสำรวจซากปรักหักพัง Shattengrod ที่อยู่ใกล้เคียง
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Dwendalian Empire**, Wildemount
+- [Critical Role Wiki: Yrrosa](https://criticalrole.fandom.com/wiki/Yrrosa)

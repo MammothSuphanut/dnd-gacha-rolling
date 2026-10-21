@@ -3,3 +3,8 @@
 เมืองหนองน้ำห่างจาก Zadash ไปทางตะวันออกเฉียงเหนือ 70 ไมล์ ติดกับ Ounterloch และล้อมรอบด้วย Labenda Swamps สร้างบนเสาเข็ม/แท่นยกพื้นเพื่อรับมือระดับน้ำที่สูงขึ้น ประชากร 3,230 คน (ส่วนใหญ่เป็นมนุษย์, 835 PD)
 
 **The Mighty Nein** เคยมาเยือนที่นี่ สถานที่เด่นได้แก่ผับ Keystone Pub และโรงแรม Drowned Nest
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Dwendalian Empire**, Wildemount
+- [Critical Role Wiki: Berleben](https://criticalrole.fandom.com/wiki/Berleben)

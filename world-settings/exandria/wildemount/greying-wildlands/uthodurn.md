@@ -3,3 +3,9 @@
 เมืองในถ้ำขนาดใหญ่ที่ขุดคดเคี้ยวลงสู่พื้นดิน ตั้งอยู่ทางใต้ของ Ivory Lake ทางตะวันตกเฉียงใต้ของ Kravaraad ใน Flotker Alps บริเวณ Greying Wildlands — อยู่นอกเขตแดน Dwendalian Empire
 
 บ้านของ **Diarchy** ผู้ปกครองร่วมที่หาได้ยาก หลังผู้ลี้ภัยเอลฟ์จาก Molaesmyr ที่ถูกร้างมารวมตัวกับประชากรดวาร์ฟดั้งเดิม ขึ้นชื่อเรื่องงานฝีมือและงานตีเหล็กระดับสูง
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Greying Wildlands**, Wildemount
+- [Critical Role Wiki: Uthodurn](https://criticalrole.fandom.com/wiki/Uthodurn)
+- [Critical Role Wiki: Diarchy of Uthodurn](https://criticalrole.fandom.com/wiki/Diarchy_of_Uthodurn)

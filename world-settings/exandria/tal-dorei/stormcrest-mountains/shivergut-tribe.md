@@ -3,3 +3,9 @@
 เผ่านักรบที่อาศัยอยู่ในป่า Frostweald ทางเหนือของ Stormcrest Mountains เดิมเป็นเผ่าออร์คที่ตั้งถิ่นฐานในป่านี้ก่อนจะกลายเป็น Frostweald ในยุค Icelost Years เมื่อหิมะปกคลุมทั้งป่าและพื้นที่ส่วนใหญ่ของ Tal'Dorei มนุษย์ เอลฟ์ และคนแคระจำนวนมากอพยพเข้าร่วมวิถีชีวิตกับชาว Shivergut
 
 ชาว Shivergut บูชา **the Ruiner (Gruumsh)** และแม้จะขึ้นชื่อว่าสงวนท่าที แต่โดยทั่วไปมักให้ความช่วยเหลือแก่นักเดินทางที่ผ่านเข้ามาในป่าด้วยความเคารพซึ่งกันและกัน
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Stormcrest Mountains**, Tal'Dorei
+- หมายเหตุ: wiki: ชนเผ่าในป่า Frostweald
+- [Critical Role Wiki: Shivergut tribe](https://criticalrole.fandom.com/wiki/Shivergut_tribe)

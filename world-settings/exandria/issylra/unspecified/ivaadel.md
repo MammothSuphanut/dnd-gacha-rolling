@@ -3,3 +3,8 @@
 ชุมชนเอลฟ์ที่ตั้งอยู่ในย่าน Caramarin Reach บริเวณเทือกเขา Utesspire ทางเหนือของชายฝั่ง Tal'Dorei ตามบันทึกที่พบใน Vellum Steeple Archive แห่ง Uthodurn ระบุว่า Ludinus Da'leth เคยพำนักอยู่ที่นี่ก่อนจะเดินทางไปศึกษาต่อที่ Molaesmyr และปักหลักอยู่ในอาณาจักรเอลฟ์แห่งนั้นในเวลาต่อมา สันนิษฐานว่าเขาอาจย้ายมาที่ Ivaadel หลังบ้านเกิดเดิมของเขาที่ Ozana ถูกทำลาย
 
 นอกเหนือจากเรื่องราวนี้ ยังไม่มีรายละเอียดอื่นเกี่ยวกับ Ivaadel ปรากฏในสื่อหลักมากนัก
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **ไม่ระบุภูมิภาค**, Issylra
+- [Critical Role Wiki: Ivaadel](https://criticalrole.fandom.com/wiki/Ivaadel)

@@ -3,3 +3,9 @@
 ท่าเรือบนชายฝั่งทางเหนือของ Oderan Wilds ภูมิภาคป่าดงดิบทางตะวันตกเฉียงเหนือของทวีป Marquet เป็นหนึ่งในจุดเชื่อมต่อทางทะเลสำคัญของภูมิภาคนี้
 
 การอ้างอิงที่ชัดเจนที่สุดถึง Sapiro Haven ในเรื่องราวคือ Oltgar Dradegon ช่างทำของเล่นฝีมือเยี่ยม ที่เดินทางออกจากถิ่นเดิมมุ่งสู่ท่าเรือแห่งนี้ไม่เกินปี 823 PD
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Oderan Wilds**, Marquet
+- หมายเหตุ: ไม่มีหน้าแยก — กล่าวถึงในหน้า Oderan Wilds
+- [Critical Role Wiki: Oderan Wilds](https://criticalrole.fandom.com/wiki/Oderan_Wilds)

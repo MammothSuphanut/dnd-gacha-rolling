@@ -3,3 +3,8 @@
 ฐานทัพหลักของ Dwendalian Empire ทางตะวันออก ทางตะวันออกเฉียงใต้ของ Hupperdook ที่ตั้งของกองทัพ **Righteous Brand** ประชากร 9,910 คน (835 PD) ส่วนใหญ่เป็นฮาล์ฟออร์ค/ออร์ค (เดิมเป็นถิ่นฐานของออร์ค)
 
 วิหาร Arioch ในเมืองถูกโจมตีในปี 835 PD โดยกลุ่มลัทธิที่ต้องการสิ่งประดิษฐ์ (เบื้องต้นถูกเข้าใจผิดว่าเป็นฝีมือ Kryn Dynasty)
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Dwendalian Empire**, Wildemount
+- [Critical Role Wiki: Bladegarden](https://criticalrole.fandom.com/wiki/Bladegarden)

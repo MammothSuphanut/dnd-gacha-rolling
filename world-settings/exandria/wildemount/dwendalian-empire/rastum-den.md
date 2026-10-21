@@ -3,3 +3,8 @@
 ค่ายฝึกกริฟฟินทางทหารของ Dwendalian Empire ในหุบเขาเล็ก ๆ บนเทือกเขา Dunrock สูงกว่า 4,000 ฟุต เหนือ Pearlbow Wilderness ความสูงและสภาพอากาศแปรปรวนทำให้เข้าถึงได้เฉพาะผู้ขี่กริฟฟินที่ชำนาญ
 
 เดิมเป็นถิ่นกริฟฟินป่าที่ใหญ่ที่สุดของ Wildemount จึงเหมาะสำหรับฝึกกริฟฟินหนุ่มให้ Righteous Brand
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Dwendalian Empire**, Wildemount
+- [Critical Role Wiki: Rastum Den](https://criticalrole.fandom.com/wiki/Rastum_Den)

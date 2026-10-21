@@ -3,3 +3,8 @@
 ด่านหน้าของ **Uthodurn** บน Foren ก่อตั้งโดย Gulrim Shalebrow ในฐานะหมู่บ้านประมง ก่อนจะกลายเป็นด่านหน้าแรกของมหาอำนาจแผ่นดินใหญ่ใน Eiselcross และต้นกำเนิดของ "relic rush" ยุคตื่นทองล่าสิ่งประดิษฐ์ Aeor
 
 นักผจญภัยอาศัยอยู่ในกระโจมยูร์ต นำโดยเอลฟ์ non-binary ที่รู้จักกันในชื่อ "the Buyer" ผู้ครอบครองหีบที่เทเลพอร์ตสิ่งประดิษฐ์กลับไปยัง Uthodurn/Palebank Village
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Eiselcross**, Wildemount · เกาะ Foren
+- [Critical Role Wiki: Syrinlya](https://criticalrole.fandom.com/wiki/Syrinlya)

@@ -5,3 +5,10 @@
 Cloudtop District เสียหายหนักช่วงปลายปี 810 PD เมื่อมังกรแดง Thordak แห่ง Chroma Conclave ยึดเขตนี้เป็นรังระหว่างการโจมตีเมือง ทุ่งนาทางตะวันออกของเมืองก็ถูกเผาจนกลายเป็น **Scar of the Cinder King** ผืนดินที่ไม่ยอมสมานตัวเพราะพลังธาตุไฟจาก Ember Seed ที่ฝังอยู่ในตัวมังกร จนต้องมีหน่วย Fire Ashari ประจำการที่ Flamereach Outpost คอยเฝ้าดูแล
 
 นอกกำแพงเมืองทางใต้คือ **Greyskull Keep** ที่พำนักที่ Sovereign Uriel Tal'Dorei II มอบให้ Vox Machina หลังพวกเขาช่วยเมืองไว้ได้ครั้งแรก ก่อนจะถูกทิ้งร้างเมื่อคณะย้ายไปประจำที่ปราสาท Whitestone ในช่วง Chroma Crisis
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Bladeshimmer Shoreline**, Tal'Dorei
+- [Critical Role Wiki: Emon](https://criticalrole.fandom.com/wiki/Emon)
+- [Critical Role Wiki: Scar of the Cinder King](https://criticalrole.fandom.com/wiki/Scar_of_the_Cinder_King)
+- [Critical Role Wiki: Greyskull Keep](https://criticalrole.fandom.com/wiki/Greyskull_Keep)

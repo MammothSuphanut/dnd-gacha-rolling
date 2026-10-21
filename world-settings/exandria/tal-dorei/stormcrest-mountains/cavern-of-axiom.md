@@ -3,3 +3,8 @@
 ถ้ำลับที่ซ่อนอยู่ใน Frostweald เป็นที่อยู่ของ Kamaljiori สฟิงซ์เพศผู้ (androsphinx) ปากถ้ำถูกซ่อนด้วยภาพลวงตา ปรากฏแก่ผู้ไม่คู่ควรเพียงกองหิมะธรรมดา ส่วนเบาะแสที่นำทางไปสู่ถ้ำจริงคือเสาหิน obelisk ของ Ioun ที่กระจายอยู่รอบพื้นที่
 
 Vox Machina เดินทางมาที่นี่ตามคำแนะนำของ Osysa เพื่อตามหาคู่ของนาง ภายในถ้ำ Kamaljiori เปิดประตูมิติสู่ระนาบธาตุต่าง ๆ ให้คณะค้นหาตัวอักษรจากชื่อของตน เป็นบททดสอบคุณค่าก่อนจะช่วยพวกเขาตามหา Vestiges of Divergence
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Stormcrest Mountains**, Tal'Dorei
+- [Critical Role Wiki: Cavern of Axiom](https://criticalrole.fandom.com/wiki/Cavern_of_Axiom)

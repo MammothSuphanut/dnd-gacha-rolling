@@ -3,3 +3,8 @@
 เมืองเร่ร่อนในหนอง Brokenveil Marsh ของ Xhorhas สร้างอยู่บนหลังเต่ายักษ์ horizonback ราว 40 ตัว ร่วมกับเต็นท์และกระท่อมเคลื่อนที่ ทำหน้าที่เป็นป้อมปราการเคลื่อนที่ ผู้นำถูกกำหนดด้วยการต่อสู้ตัวต่อตัว (Sunbreaker Olomon ในปี 835 PD)
 
 ประชากรราว 5,930 คน ส่วนใหญ่เป็นกอบลินอยด์/นอลล์/ออร์ค
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Xhorhas**, Wildemount
+- [Critical Role Wiki: Urzin](https://criticalrole.fandom.com/wiki/Urzin)

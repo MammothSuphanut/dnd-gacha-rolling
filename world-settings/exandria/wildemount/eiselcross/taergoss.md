@@ -1,3 +1,8 @@
 # Taergoss
 
 เกาะเล็กอันดับสองของ Eiselcross ปกติเป็นเพียงจุดจอดเรือประมง แต่ระหว่างสงคราม War of Ash and Light (835 PD) เกิดพายุฟ้าผ่าสีเขียวขึ้น สงสัยว่ามาจากสิ่งประดิษฐ์ควบคุมสภาพอากาศของ Aeor ที่จุดตก "Garden of Stone" (ตั้งชื่อตามรูปปั้นชาว Aeor ที่กลายเป็นหิน) ทั้งตระกูล Malta และกลุ่ม Blood Hounds ต่างส่งคนมาแย่งชิงสิ่งประดิษฐ์นี้
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Eiselcross**, Wildemount · เกาะ Taergoss — ไม่มีหน้าแยก
+- [Critical Role Wiki: Eiselcross § Taergoss](https://criticalrole.fandom.com/wiki/Eiselcross#Taergoss)

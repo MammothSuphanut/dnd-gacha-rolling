@@ -3,3 +3,8 @@
 ซากวิหาร Ki'Nau ที่เคยอุทิศแด่ Melora บน Menagerie Coast สร้างทับตำนานที่เลือดของ Melora หลั่งก่อน The Divergence เคยเป็นสุสานศักดิ์สิทธิ์ที่สุดของชาว Ki'Nau ก่อนถูกกลุ่มก็อบลินบูชา Gruumsh จาก Lushgut Forest บุกทำลาย
 
 ปัจจุบันเป็นซากร้างที่มีวิญญาณและอสูรกายสิงสู่ ชาว Ki'Nau บางส่วนยังหวังจะกลับมาชำระล้างให้บริสุทธิ์อีกครั้ง
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Menagerie Coast**, Wildemount
+- [Critical Role Wiki: Sepesca](https://criticalrole.fandom.com/wiki/Sepesca)

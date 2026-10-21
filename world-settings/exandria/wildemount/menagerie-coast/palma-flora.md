@@ -3,3 +3,8 @@
 นิคมตากอากาศขนาดเล็กบนปลายแหลม Vezdali Peninsula แบ่งเป็นฝั่งแผ่นดินใหญ่กับ Flora Isle เกาะรีสอร์ตที่เชื่อมด้วยสะพานไม้ เศรษฐกิจพึ่งพาการท่องเที่ยว เกษตรกรรม และการต้มเบียร์ นักล่าฉลามท้องถิ่นทำหน้าที่เป็นกองกำลังอาสาป้องกันโจรสลัดและ sahuagin ไปในตัว
 
 ปรากฏในบทผจญภัย "Tide of Retribution" จาก Explorer's Guide to Wildemount (ราวปี 835 PD) ที่กลุ่ม sahuagin เผ่า Sharkfeather บุกโจมตีเมืองภายใต้อิทธิพลของ warlock ที่ได้พลังจาก **Uk'otoa**
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Menagerie Coast**, Wildemount
+- [Critical Role Wiki: Palma Flora](https://criticalrole.fandom.com/wiki/Palma_Flora)

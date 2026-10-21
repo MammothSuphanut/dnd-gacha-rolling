@@ -3,3 +3,8 @@
 เมืองใหญ่ที่สุดของ **Menagerie Coast** และเมืองหลวงโดยพฤตินัยของ **Clovis Concord** ก่อตั้งขึ้นราวปี 400 PD จากสนธิสัญญาทางการทูตระหว่างนักสำรวจ Marquesian กับชาว Ki'Nau พื้นเมือง ได้ฉายา "Jewel of the Coast"
 
 เป็นเมืองเดียวใน Wildemount ที่มีทั้งท่าเรือทะเลและท่าเรืออากาศ (skyport) ทำให้เป็นศูนย์กลางการค้าระดับโลก แต่เขตรอบนอกกลับเป็นสลัมแออัด และกลุ่มอาชญากรรม **the Myriad** มีอิทธิพลสูงต่อการค้าในพื้นที่ รวมถึงการค้าทาส
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Menagerie Coast**, Wildemount
+- [Critical Role Wiki: Port Damali](https://criticalrole.fandom.com/wiki/Port_Damali)

@@ -3,3 +3,8 @@
 เมืองที่ตั้งอยู่บน Glasswalk Road ห่างจาก Vasselheim ไปทางตะวันตกเฉียงเหนือกว่าสองวันโดยม้า อากาศที่นี่หนาวเหน็บตลอดปี ถัดจาก Muldire ไปทางตะวันตกเฉียงเหนือคือ Tordusk Pass และเทือกเขา Zenwick Mountains
 
 เมืองนี้มีความเกี่ยวพันกับตัวละครในเรื่อง โดยเป็นบ้านเกิดของพี่ชายของ Dagon บาร์เทนเดอร์แห่ง Vasselheim นับเป็นหนึ่งในนิคมทางตอนเหนือของแคว้น Othanzia ที่ปรากฏในแผนที่ภูมิศาสตร์ของ Issylra
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Vesper Timberland (Othanzia)**, Issylra
+- [Critical Role Wiki: Muldire](https://criticalrole.fandom.com/wiki/Muldire)

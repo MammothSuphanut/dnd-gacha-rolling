@@ -1,5 +1,10 @@
-# Aeor Crash Site
+# Aeor
 
 **Aeor** เคยเป็นนครลอยฟ้าที่ใหญ่ที่สุดในยุค Age of Arcanum เหล่าอาร์คเมจของนครสร้างอาวุธสังหารเทพขึ้นระหว่าง The Calamity เหล่าเทพจึงตอบโต้ด้วยการทำให้นครทั้งเมืองร่วงตกลงมากระแทกเกาะ Foren ใน Eiselcross
 
 ซากปรักหักพังกระจัดกระจายเป็นจุดตกหลายจุด (ตั้งชื่อรหัส เช่น A2, A5) สร้างอยู่บนแผ่นลอยที่โคจรรอบยอดแหลมกลาง การขุดค้นเริ่มขึ้นก่อนปี 835 PD **The Mighty Nein** เคยเดินทางผ่านจุดตกหลายจุดขณะตามล่า Lucien ร่วมกับกลุ่ม Tombtakers
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Eiselcross**, Wildemount · เกาะ Foren
+- [Critical Role Wiki: Aeor](https://criticalrole.fandom.com/wiki/Aeor)

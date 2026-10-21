@@ -3,3 +3,8 @@
 เทือกเขาหินออบซิเดียนบน Blightshore อันตรายต่อการเดินทาง แบ่ง Blightshore ออกเป็นสามส่วน ได้แก่ Far Hharom (เหนือ), Tooth of Zehir (ตะวันออก) และแผ่นดินหลัก (ใต้) เป็นถิ่นของ **Fang of the Worm** โคบอลด์เกล็ดเทาที่ใช้ตะขอ สายเคเบิล และเครื่องร่อนเดินทางผ่านภูมิประเทศ ปกครองโดยราชินีนักเวทย์อาร์เคนที่ได้รับพลังลับจากสิ่งประดิษฐ์ที่เกี่ยวข้องกับ Quajath, the Undermaw
 
 ภายในมีซากป้อมปราการดวาร์ฟที่ถูกทำลายจาก Calamity (เช่น Xagonstar) ซึ่งยังคงมีวิญญาณอดีตผู้อยู่อาศัยหลอกหลอนอยู่
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Blightshore**, Wildemount
+- [Critical Role Wiki: Ebonglass Massif](https://criticalrole.fandom.com/wiki/Ebonglass_Massif)

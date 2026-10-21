@@ -3,3 +3,8 @@
 ภูเขายอดคู่ทรงแหลมสูงตระหง่าน ราวกับถูกผ่าออกเป็นสองซีก โผล่พ้นผืนป่าแช่แข็งใกล้ Vasselheim และทะเลสาบ Marrowglade Loch เป็นถิ่นพำนักของ Kamaljiori สฟิงซ์คู่ของ Osysa รอบภูเขามีเสาโอเบลิสก์แกะสลักอักษรโบราณเตือนไว้ว่า "ผู้แสวงหา (หรือคนโง่) จงหนีจากดินแดนนี้ เพราะภยันตรายมาจากสวรรค์"
 
 Osysa บอกให้ Vox Machina นำเวสทิจแรกคือ Deathwalker's Ward มามอบให้ Kamaljiori คู่ของนาง หลัง Vax'ildan สวมใส่ Deathwalker's Ward เขาได้เห็นนิมิตสฟิงซ์ยักษ์และภูเขายอดคู่แห่งนี้ นำพา Vox Machina เดินทางมาถึงที่นี่ในเวลาต่อมา
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Vesper Timberland (Othanzia)**, Issylra
+- [Critical Role Wiki: Rimecleft](https://criticalrole.fandom.com/wiki/Rimecleft)

@@ -3,3 +3,8 @@
 เกาะเล็กในหมู่เกาะ Swavain ทางตะวันออกเฉียงใต้ของ Brokenbank ราว 50 ไมล์ ภูมิประเทศเป็นเนินหินสูงชันล้อมรอบหุบเขาที่มีป่าเขตร้อนซึ่งถูกร่ายมนตร์ไว้ เป็นที่อยู่ของกลุ่มเฟย์เล็ก ๆ ที่คอยขัดขวางไม่ให้ The Revelry เข้าใช้ประโยชน์จากเกาะได้
 
 Avantika เคยชี้ตำแหน่งนี้ให้ Fjord ว่าเป็นที่ซ่อน Cloven Crystal พร้อมอ้างว่ามีป้อมร้างไร้ยามเฝ้าอยู่นอกชายฝั่ง
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Swavain Islands (Menagerie Coast)**, Wildemount
+- [Critical Role Wiki: Vide Cay](https://criticalrole.fandom.com/wiki/Vide_Cay)

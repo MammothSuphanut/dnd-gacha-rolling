@@ -3,3 +3,8 @@
 หมู่บ้านนักขุดแร่ที่แยกตัวจากโลกภายนอก ตั้งอยู่ทางตะวันตกเฉียงเหนือของเทือกเขา Cliffkeep Mountains ในหุบเขาเล็ก ๆ ที่อุดมด้วยแร่ทองคำและเหล็ก ก่อตั้งขึ้นในปี 826 PD โดยผู้บุกเบิกจาก Republic of Tal'Dorei ร่วมกับดวอร์ฟที่ถูกเนรเทศจาก Kraghammer
 
 ไม่นานหลังก่อตั้ง นักขุดพบโดเดคาฮีดรอนเรืองแสงลึกลับฝังอยู่ใต้ดิน ซึ่งชาวบ้านตั้งชื่อว่า Lost Beacon of Unknown Light และเริ่มบูชาในฐานะเทพที่จะนำความรุ่งเรืองมาสู่หมู่บ้าน
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Cliffkeep Mountains**, Tal'Dorei
+- [Critical Role Wiki: Reaching Bluff](https://criticalrole.fandom.com/wiki/Reaching_Bluff)

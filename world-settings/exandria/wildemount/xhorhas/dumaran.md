@@ -3,3 +3,8 @@
 ป้อมปราการโกงคอบลินที่เป็นระบบอุโมงค์ซับซ้อน ตั้งอยู่ขอบใต้ของ Vermaloc Wildwood ที่จรดกับ Penumbra Range ควบคุมโดยกลุ่ม "Children of Malice" ผู้บูชา Lolth โกงคอบลินที่นี่เปลี่ยนมานับถือ Lolth ไม่นานหลัง The Calamity แลกกับขนสีดำและดวงตาสีซีด
 
 หัวหน้าคือ Vivurk Tonn กำลังขุดอุโมงค์มุ่งสู่ Rosohna เพื่อหวังโค่นล้ม เป็นเผ่าที่ทำลายเผ่าดั้งเดิมของ **Yasha Nydoorin**
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Xhorhas**, Wildemount
+- [Critical Role Wiki: Dumaran](https://criticalrole.fandom.com/wiki/Dumaran)

@@ -3,3 +3,8 @@
 หมู่บ้านขนาดใหญ่ใกล้ Umbra Hills ใน Black Valley ทางเหนือของ Westruun ในฝั่งตะวันออกของเทือกเขา Cliffkeep Mountains เดิมเป็นหมู่บ้านเล็ก ๆ ที่ค้าขาย shadegrass จาก Umbra Hills จนกระทั่งพบสายแร่เงินมหาศาลราวปี 742 PD ทำให้เติบโตเป็นเมืองบูมทาวน์อย่างรวดเร็ว
 
 เพราะอยู่ไกลจาก Emon อิทธิพลของ Tal'Dorei Council จึงเข้าไม่ถึง หมู่บ้านตกอยู่ภายใต้การควบคุมของ Shadewatch องค์กรที่เริ่มต้นจากการปกป้องหมู่บ้านจากสิ่งมีชีวิตใน Umbra Hills แต่ภายหลังกลายเป็นผู้แสวงหาผลประโยชน์จากชาวบ้านที่ตนคุ้มครองเอง
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Cliffkeep Mountains**, Tal'Dorei
+- [Critical Role Wiki: Jorenn Village](https://criticalrole.fandom.com/wiki/Jorenn_Village)

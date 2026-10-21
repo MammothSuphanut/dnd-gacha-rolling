@@ -1,5 +1,10 @@
-# Darktow (Isle)
+# Darktow Isle
 
 เกาะในหมู่เกาะ Swavain นอกชายฝั่งตะวันตกเฉียงใต้ของ Wildemount ที่ตั้งของ The Revelry กลุ่มโจรสลัดปกครองโดย Plank King ต่างจากเกาะเขตร้อนอื่น ๆ ในย่านนี้ เกาะหลักเป็นหน้าผาหินสูงหลายร้อยฟุต มีท่าเทียบเรือพันกันยุ่งเหยิงรอบฐานหน้าผาและตัวเมืองสร้างเข้าไปในเนื้อหน้าผาเอง
 
 แนวปะการัง Dragshallow Reefs รอบเกาะเป็นอันตรายจากมังกรเต่าและซากเรือ Darktow เป็นข้อยกเว้นเดียวในหมู่เกาะ Swavain ที่ไม่อยู่ใต้การปกครองของ Clovis Concord
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Swavain Islands (Menagerie Coast)**, Wildemount
+- [Critical Role Wiki: Darktow Isle](https://criticalrole.fandom.com/wiki/Darktow_Isle)

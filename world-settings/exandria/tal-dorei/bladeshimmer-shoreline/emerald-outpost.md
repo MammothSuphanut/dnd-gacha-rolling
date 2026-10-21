@@ -3,3 +3,8 @@
 ป้อมและด่านการค้าที่ก่อตั้งโดยชาวเอลฟ์แห่ง Syngorn ในยุคของราชอาณาจักร Drassig เดิมทำหน้าที่เป็นฐานลับ ก่อนจะกลายเป็นกองทหารร่วมระหว่าง Syngorn กับ Republic of Tal'Dorei ในปัจจุบัน ปัจจุบันทำหน้าที่เป็นจุดค้าขายเชื่อมระหว่าง Syngorn กับ Emon
 
 ในปี 812 PD Jorn Krastef เป็นผู้บัญชาการที่สภา Tal'Dorei แต่งตั้งให้ดูแล Emerald Outpost และมักมีเรื่องขัดแย้งกับ Maina Rusalla ผู้บัญชาการที่ Wardens of Syngorn แต่งตั้งมา ความบาดหมางระหว่างทั้งคู่มักทำให้การเจรจาทางการเมืองล่าช้า
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Bladeshimmer Shoreline**, Tal'Dorei
+- [Critical Role Wiki: Emerald Outpost](https://criticalrole.fandom.com/wiki/Emerald_Outpost)

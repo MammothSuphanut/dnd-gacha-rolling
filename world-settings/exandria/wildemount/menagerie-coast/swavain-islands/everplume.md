@@ -3,3 +3,8 @@
 ภูเขาไฟใต้น้ำขนาดมหึมาใน Lucidian Ocean กลาง Torrid Reef ทางตะวันออกเฉียงใต้ของ Shearing Channel สังเกตได้จากเสาควันดำที่พวยพุ่งขึ้นจากใต้น้ำ
 
 น้ำรอบ ๆ ขุ่นด้วยเขม่า ร้อนจัด และเป็นพิษ ทำให้สัตว์ในแนวปะการังกลายพันธุ์เป็นสิ่งมีชีวิตธาตุไฟ ผู้เชี่ยวชาญบางคนสันนิษฐานว่าอาจมีรอยแยกสู่ Elemental Plane of Fire อยู่ใจกลาง
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Swavain Islands (Menagerie Coast)**, Wildemount
+- [Critical Role Wiki: Everplume](https://criticalrole.fandom.com/wiki/Everplume)

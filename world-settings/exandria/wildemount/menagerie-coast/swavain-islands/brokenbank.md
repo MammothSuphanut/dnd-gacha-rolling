@@ -3,3 +3,8 @@
 นิคมชายฝั่งบนเกาะ Brokenbank ในหมู่เกาะ Swavain หนึ่งในแปดนครของ Clovis Concord เป็นท่าเรือด่านแรกและจุดศุลกากรสำหรับเรือสินค้าเข้าออก Menagerie Coast ก่อนแล่นเข้าแผ่นดินใหญ่
 
 ปกครองโดย Portcaller แทนที่จะเป็น marquis เพราะไม่ใช่หนึ่งในเจ็ดนครหลักอย่างเป็นทางการ ปัจจุบันมี Portcaller Mazin Fahreed ดูแล
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Swavain Islands (Menagerie Coast)**, Wildemount
+- [Critical Role Wiki: Brokenbank](https://criticalrole.fandom.com/wiki/Brokenbank)

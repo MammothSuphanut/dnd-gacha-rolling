@@ -3,3 +3,8 @@
 หมู่บ้านที่ตั้งอยู่ในหุบเขารูปชามกลางเทือกเขา Cliffkeep Mountains ทางเหนือของ Kraghammer เป็นที่อยู่ของ Earth Ashari ผู้เฝ้าประตูมิติสู่ Elemental Plane of Earth พื้นที่แถบนี้มีแผ่นดินไหวเกิดขึ้นตลอดเวลา บางครั้งพื้นดินก็แหลมพุ่งขึ้นเมื่อแผ่นเปลือกโลกสองแผ่นชนกัน
 
 ประชากรเป็นชาวมนุษย์และดวอร์ฟเป็นส่วนใหญ่ เติบโตจากราว 673 คนในปี 812 PD เป็นกว่า 838 คนในปี 836 PD
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Cliffkeep Mountains**, Tal'Dorei
+- [Critical Role Wiki: Terrah](https://criticalrole.fandom.com/wiki/Terrah)

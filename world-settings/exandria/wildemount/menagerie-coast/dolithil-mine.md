@@ -3,3 +3,8 @@
 เหมืองทางตะวันออกเฉียงเหนือของ Gwardan บริหารโดย Dolithil Orekeepers Guild ขุดแร่หลากชนิดทั้งทอง แพลทินัม เหล็ก ดีบุก ทองแดง และสังกะสี ซึ่งเป็นวัตถุดิบสำคัญของงานหัตถศิลป์ steamcasting อันเลื่องชื่อของ Gwardan
 
 เนื่องจากความสำคัญต่อ Clovis Concord ทางเข้าเหมืองจึงถูกซ่อนด้วยเวทมนตร์ภาพลวงตา
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Menagerie Coast**, Wildemount
+- [Critical Role Wiki: Dolithil Mine](https://criticalrole.fandom.com/wiki/Dolithil_Mine)

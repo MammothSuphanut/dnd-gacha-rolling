@@ -1,3 +1,8 @@
 # Kaltsel
 
 เกาะเล็กที่สุดของ Eiselcross อยู่นอกชายฝั่งตะวันออกเฉียงใต้ของ Foren มีข่าวลือว่าเป็นถิ่นของ Mynarc Furdahl warlock อมตะผู้บูชา Asmodeus ที่แลกเปลี่ยนความช่วยเหลือกับดวงวิญญาณ (ข้อมูลจากซอร์สบุ๊ก Explorer's Guide to Wildemount เท่านั้น ยังไม่ยืนยันว่าปรากฏในแคมเปญจริง)
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Eiselcross**, Wildemount · เกาะ Kaltsel — ไม่มีหน้าแยก
+- [Critical Role Wiki: Eiselcross § Kaltsel](https://criticalrole.fandom.com/wiki/Eiselcross#Kaltsel)

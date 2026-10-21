@@ -3,3 +3,8 @@
 เมืองชายแดนริมแม่น้ำ Tyodan สมาชิกของ **Clovis Concord** เดิมเป็นหมู่บ้านประมงของชาว Ki'Nau เขตกลางเมืองทันสมัยตัดกับย่านรอบนอกที่ยังคงสร้างด้วยกกและฟาง เศรษฐกิจพึ่งพาการส่งออกไม้
 
 ปกครองโดย Marquis Tusila Latu ผู้มีชื่อเสียงเรื่องการปฏิบัติต่อประชาชนอย่างเป็นธรรม
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Menagerie Coast**, Wildemount
+- [Critical Role Wiki: Tussoa](https://criticalrole.fandom.com/wiki/Tussoa)

@@ -1,5 +1,10 @@
-# Termor Falls
+# Tormor Falls
 
 น้ำตกหลายชั้นที่ไหลเลาะข้าง Orencleft Mountain ใน Verdant Expanse (Critical Role Wiki สะกดชื่อนี้ว่า "Tormor Falls") สายน้ำไหลลงไปหล่อเลี้ยง Feshun River เบื้องหลังม่านน้ำตกมีเครือข่ายถ้ำลึกทอดเข้าสู่ Stormcrest Mountains ซึ่งบางคนเชื่อว่าโครงสร้างภายในเปลี่ยนแปลงตัวเองใหม่ทุกรุ่งอรุณ
 
 หน่วย Verdant Guard แห่ง Syngorn ลาดตระเวนพื้นที่นี้อยู่เสมอ แต่ผลลัพธ์ของการสำรวจถ้ำแตกต่างกันไปในแต่ละครั้ง ตั้งแต่ไม่พบสิ่งผิดปกติ พบสมบัติจากยุค Calamity ไปจนถึงไม่มีใครกลับออกมาอีกเลย
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Verdant Expanse**, Tal'Dorei
+- [Critical Role Wiki: Tormor Falls](https://criticalrole.fandom.com/wiki/Tormor_Falls)

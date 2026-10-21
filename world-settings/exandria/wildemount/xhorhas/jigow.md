@@ -3,3 +3,8 @@
 กลุ่มหมู่บ้านที่รวมกันเป็นท่าเรือประมงบนชายฝั่งเหนือสุดของ Xhorhas จุดที่แม่น้ำ Ifolon ไหลลงสู่ The Emerald Gulch ประชากรส่วนใหญ่เป็นออร์คและก็อบลินที่มีวัฒนธรรมแข่งขันสูง
 
 มีโรงเตี๊ยม Unbroken Tusk ขึ้นชื่อเรื่องพาย ท่าเรือหลัก Meatwaters เป็นศูนย์กลางประมง และย่านใน The Jumble ที่ปลูกบ้านตามต้นโกงกางและบนหลังเต่ายักษ์ horizonback
+
+## แหล่งข้อมูล
+
+- ภูมิภาค (CR Wiki): **Xhorhas**, Wildemount
+- [Critical Role Wiki: Jigow](https://criticalrole.fandom.com/wiki/Jigow)
