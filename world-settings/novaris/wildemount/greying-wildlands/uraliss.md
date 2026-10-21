@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านร้าง |
-| ที่ตั้ง | Aldenreich → Gråmark · ชายแดน Whitehorn Alps กับทุ่งน้ำแข็งตะวันออก |
+| ที่ตั้ง | Aldenreich → Gråmark · ชายแดน Whitehorn Alps กับHoarfield |
 | สังกัด | Twinhold Diarchy (เดิม) |
 | ระดับอารยธรรม | ซาก |
 | ประชากร | ไม่มีคน |

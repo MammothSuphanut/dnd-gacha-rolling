@@ -198,7 +198,7 @@
 | Palebank Village | **Palebank Village (คงเดิม)** | [palebank-village.md](../../exandria/wildemount/greying-wildlands/palebank-village.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 | Crystalsands Tundra | **Glimmer Tundra** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 | Flotket Alps | **Whitehorn Alps** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
-| Rime Plains | **Hoarfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Rime Plains | **Hoarfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ❄️ Aldenreich — Ödland
 
