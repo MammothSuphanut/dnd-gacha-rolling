@@ -222,3 +222,19 @@
 | Penumbra Range | **Twilight Range** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Lotusden Greenwood | **Lotuswood** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Draconia (นครลอยฟ้าในประวัติศาสตร์) | **Drakara** | — | ✅ | ✅ | ☐ | ☐ |
+
+### ❄️ Aldenreich — Witherstrand
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Ebonglass Massif | **Blackglass Mountains** | [ebonglass-massif.md](../../exandria/wildemount/blightshore/ebonglass-massif.md) | ✅ | ✅ | ☐ | ☐ |
+| Far Hharom | **Gale Point** | [far-hharom.md](../../exandria/wildemount/blightshore/far-hharom.md) | ✅ | ✅ | ☐ | ☐ |
+| Ghor Veles | **Grimspire** | [ghor-veles.md](../../exandria/wildemount/blightshore/ghor-veles.md) | ✅ | ✅ | ☐ | ☐ |
+| Incanter's Rest | **Spellgrave** | [incanters-rest.md](../../exandria/wildemount/blightshore/incanters-rest.md) | ✅ | ✅ | ☐ | ☐ |
+| Miskath Pit | **The Maw** | [miskath-pit.md](../../exandria/wildemount/blightshore/miskath-pit.md) | ✅ | ✅ | ☐ | ☐ |
+| Mordant Isle | **Venom Isle** | [mordant-isle.md](../../exandria/wildemount/blightshore/mordant-isle.md) | ✅ | ✅ | ☐ | ☐ |
+| New Haxon | **Ironpost** | [new-haxon.md](../../exandria/wildemount/blightshore/new-haxon.md) | ✅ | ✅ | ☐ | ☐ |
+| Olc Skerry | **Lonely Rock** | [olc-skerry.md](../../exandria/wildemount/blightshore/olc-skerry.md) | ✅ | ✅ | ☐ | ☐ |
+| Tooth of Zehir | **Serpent's Tooth** | [tooth-of-zehir.md](../../exandria/wildemount/blightshore/tooth-of-zehir.md) | ✅ | ✅ | ☐ | ☐ |
+| Rotthold | **Rotwick** | [rotthold.md](../../exandria/wildemount/blightshore/rotthold.md) | ✅ | ✅ | ☐ | ☐ |
+| Strathfell | **Stonewood** | [strathfell.md](../../exandria/wildemount/blightshore/strathfell.md) | ✅ | ✅ | ☐ | ☐ |
