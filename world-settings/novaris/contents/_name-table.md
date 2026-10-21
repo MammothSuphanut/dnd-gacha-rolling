@@ -390,65 +390,65 @@
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Ank'Harel | **Solaria** | [ankharel.md](../../exandria/marquet/rumedam-desert/ankharel.md) | ✅ | ✅ | ☐ | ☐ |
-| Shandal | **Fontana** | [shandal.md](../../exandria/marquet/rumedam-desert/shandal.md) | ✅ | ✅ | ☐ | ☐ |
-| Drowned City (Cael Morrow) | **Sandgrave** | [drowned-city.md](../../exandria/marquet/rumedam-desert/drowned-city.md) | ✅ | ✅ | ☐ | ☐ |
-| Ziggurat แห่ง Smouldercrown Mountains | **Sun Ziggurat** | [ziggurat.md](../../exandria/marquet/rumedam-desert/ziggurat.md) | ✅ | ✅ | ☐ | ☐ |
-| Smouldercrown Mountains | **Emberpeak** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Ank'Harel | **Solaria** | [ankharel.md](../../exandria/marquet/rumedam-desert/ankharel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Shandal | **Fontana** | [shandal.md](../../exandria/marquet/rumedam-desert/shandal.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Drowned City (Cael Morrow) | **Sandgrave** | [drowned-city.md](../../exandria/marquet/rumedam-desert/drowned-city.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ziggurat แห่ง Smouldercrown Mountains | **Sun Ziggurat** | [ziggurat.md](../../exandria/marquet/rumedam-desert/ziggurat.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Smouldercrown Mountains | **Emberpeak** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ☀️ Suvarna — Himmapan Wilds
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Jrusar | **Benjasila** | [jrusar.md](../../exandria/marquet/oderan-wilds/jrusar.md) | ✅ | ✅ | ☐ | ☐ |
-| Eish-Allay | **Huai Kaeo** | [eish-allay.md](../../exandria/marquet/oderan-wilds/eish-allay.md) | ✅ | ✅ | ☐ | ☐ |
-| Evishi | **Muang Ngoen** | [evishi.md](../../exandria/marquet/oderan-wilds/evishi.md) | ✅ | ✅ | ☐ | ☐ |
-| Goradire | **Ban Pa** | [goradire.md](../../exandria/marquet/oderan-wilds/goradire.md) | ✅ | ✅ | ☐ | ☐ |
-| Heartmoor Hamlet | **Ban Nong** | [heartmoor-hamlet.md](../../exandria/marquet/oderan-wilds/heartmoor-hamlet.md) | ✅ | ✅ | ☐ | ☐ |
-| Otaladume | **Ban Klang** | [otaladume.md](../../exandria/marquet/oderan-wilds/otaladume.md) | ✅ | ✅ | ☐ | ☐ |
-| Sapiro Haven | **Tha Samut** | [sapiro-haven.md](../../exandria/marquet/oderan-wilds/sapiro-haven.md) | ✅ | ✅ | ☐ | ☐ |
-| Serpentwind Peaks | **Naga Range** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Jrusar | **Benjasila** | [jrusar.md](../../exandria/marquet/oderan-wilds/jrusar.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Eish-Allay | **Huai Kaeo** | [eish-allay.md](../../exandria/marquet/oderan-wilds/eish-allay.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Evishi | **Muang Ngoen** | [evishi.md](../../exandria/marquet/oderan-wilds/evishi.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Goradire | **Ban Pa** | [goradire.md](../../exandria/marquet/oderan-wilds/goradire.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Heartmoor Hamlet | **Ban Nong** | [heartmoor-hamlet.md](../../exandria/marquet/oderan-wilds/heartmoor-hamlet.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Otaladume | **Ban Klang** | [otaladume.md](../../exandria/marquet/oderan-wilds/otaladume.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Sapiro Haven | **Tha Samut** | [sapiro-haven.md](../../exandria/marquet/oderan-wilds/sapiro-haven.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Serpentwind Peaks | **Naga Range** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ☀️ Suvarna — Dandaka
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Yios | **Jyotipura** | [yios.md](../../exandria/marquet/aeshanadoor/yios.md) | ✅ | ✅ | ☐ | ☐ |
-| Aruati | **Matsya** | [aruati.md](../../exandria/marquet/aeshanadoor/aruati.md) | ✅ | ✅ | ☐ | ☐ |
-| Barinak | **Vrika** | [barinak.md](../../exandria/marquet/aeshanadoor/barinak.md) | ✅ | ✅ | ☐ | ☐ |
-| Qoreo | **Kamala** | [qoreo.md](../../exandria/marquet/aeshanadoor/qoreo.md) | ✅ | ✅ | ☐ | ☐ |
-| Zha'Vrollo (วิหารแห่งหัวใจดุร้าย) | **Ugra Mandir** | [zhavrolle.md](../../exandria/marquet/aeshanadoor/zhavrolle.md) | ✅ | ✅ | ☐ | ☐ |
-| Silken Squall | **Vayupura** | [silken-squall.md](../../exandria/marquet/aeshanadoor/silken-squall.md) | ✅ | ✅ | ☐ | ☐ |
-| Lake Koron | **Lake Prabha** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
-| Gloomed Jungles | **Tamasa Jungle** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Yios | **Jyotipura** | [yios.md](../../exandria/marquet/aeshanadoor/yios.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Aruati | **Matsya** | [aruati.md](../../exandria/marquet/aeshanadoor/aruati.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Barinak | **Vrika** | [barinak.md](../../exandria/marquet/aeshanadoor/barinak.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Qoreo | **Kamala** | [qoreo.md](../../exandria/marquet/aeshanadoor/qoreo.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Zha'Vrollo (วิหารแห่งหัวใจดุร้าย) | **Ugra Mandir** | [zhavrolle.md](../../exandria/marquet/aeshanadoor/zhavrolle.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Silken Squall | **Vayupura** | [silken-squall.md](../../exandria/marquet/aeshanadoor/silken-squall.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Lake Koron | **Lake Prabha** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Gloomed Jungles | **Tamasa Jungle** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ☀️ Suvarna — Ulfdal
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Gujjar-Serai | **Vargholm** | [gujjar-serai.md](../../exandria/marquet/hellcatch-valley/gujjar-serai.md) | ✅ | ✅ | ☐ | ☐ |
-| Bassuras | **Steinborg** | [bassuras.md](../../exandria/marquet/hellcatch-valley/bassuras.md) | ✅ | ✅ | ☐ | ☐ |
-| King's Fall | **Jarlsfall** | [kings-fall.md](../../exandria/marquet/hellcatch-valley/kings-fall.md) | ✅ | ✅ | ☐ | ☐ |
-| Loonpur | **Ravnby** | [loonpur.md](../../exandria/marquet/hellcatch-valley/loonpur.md) | ✅ | ✅ | ☐ | ☐ |
-| Nadigarh | **Sandby** | [nadigarh.md](../../exandria/marquet/hellcatch-valley/nadigarh.md) | ✅ | ✅ | ☐ | ☐ |
-| Rajarma | **Riftwatch** | [rajarma.md](../../exandria/marquet/hellcatch-valley/rajarma.md) | ✅ | ✅ | ☐ | ☐ |
-| Dead Man's Crater | **Draugr Crater** | [dead-mans-crater.md](../../exandria/marquet/hellcatch-valley/dead-mans-crater.md) | ✅ | ✅ | ☐ | ☐ |
-| Tishtan excavation site | **Nomad's Dig** | [tishtan-excavation-site.md](../../exandria/marquet/hellcatch-valley/tishtan-excavation-site.md) | ✅ | ✅ | ☐ | ☐ |
-| The Rift | **Wolfcliff** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Gujjar-Serai | **Vargholm** | [gujjar-serai.md](../../exandria/marquet/hellcatch-valley/gujjar-serai.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Bassuras | **Steinborg** | [bassuras.md](../../exandria/marquet/hellcatch-valley/bassuras.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| King's Fall | **Jarlsfall** | [kings-fall.md](../../exandria/marquet/hellcatch-valley/kings-fall.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Loonpur | **Ravnby** | [loonpur.md](../../exandria/marquet/hellcatch-valley/loonpur.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Nadigarh | **Sandby** | [nadigarh.md](../../exandria/marquet/hellcatch-valley/nadigarh.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Rajarma | **Riftwatch** | [rajarma.md](../../exandria/marquet/hellcatch-valley/rajarma.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Dead Man's Crater | **Draugr Crater** | [dead-mans-crater.md](../../exandria/marquet/hellcatch-valley/dead-mans-crater.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Tishtan excavation site | **Nomad's Dig** | [tishtan-excavation-site.md](../../exandria/marquet/hellcatch-valley/tishtan-excavation-site.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| The Rift | **Wolfcliff** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ☀️ Suvarna — Ehrvarn Highlands
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Sruwargas | **Ehrenburg** | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ☐ | ☐ |
-| Gelvaan | **Grenfeld** | [gelvaan.md](../../exandria/marquet/taloned-highlands/gelvaan.md) | ✅ | ✅ | ☐ | ☐ |
-| Coven Peaks | **Helm Peaks** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Sruwargas | **Ehrenburg** | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Gelvaan | **Grenfeld** | [gelvaan.md](../../exandria/marquet/taloned-highlands/gelvaan.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Coven Peaks | **Helm Peaks** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ☀️ Suvarna — Jarnfell + ทุ่งตอนเหนือ
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Shammel | **Giftvik** | [shammel.md](../../exandria/marquet/aggrad-mountains/shammel.md) | ✅ | ✅ | ☐ | ☐ |
-| Vault of Shumas | **Serpent Vault** | [vault-of-shumas.md](../../exandria/marquet/aggrad-mountains/vault-of-shumas.md) | ✅ | ✅ | ☐ | ☐ |
-| Bay of Gifts | **Giftvik Bay** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
-| ทุ่งตอนเหนือ (ชนเผ่าแบบอินเดียนแดง) | **Windgrass Plains** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Shammel | **Giftvik** | [shammel.md](../../exandria/marquet/aggrad-mountains/shammel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Vault of Shumas | **Serpent Vault** | [vault-of-shumas.md](../../exandria/marquet/aggrad-mountains/vault-of-shumas.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Bay of Gifts | **Giftvik Bay** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ทุ่งตอนเหนือ (ชนเผ่าแบบอินเดียนแดง) | **Windgrass Plains** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
