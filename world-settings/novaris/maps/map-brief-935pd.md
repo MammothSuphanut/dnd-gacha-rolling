@@ -54,7 +54,7 @@
 | · ชนเผ่า (Gråmark, Ödland ใต้, Witherstrand) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
 | **Voxaria** | **18.5 ล้าน** | | |
 | · Crownshore · Heartland · Blacktide Coast · Thunderspine (Lumen City, Midgate, Fortuna, Port Noir ฯลฯ) | 14.5 ล้าน | 75% | **Lumen City ~3.5 ล้าน** (ใหญ่สุดในโลก) · Fortuna ~1.5 ล้าน · Midgate ~1 ล้าน · Port Noir ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
-| · รัฐ Iron Authority | 2.5 ล้าน | 70% | Tz'Arrm ~900k |
+| · รัฐ Iron Authority | 2.5 ล้าน | 70% | Ironhelm ~900k |
 | · รัฐ Forgeheim (Deepforge) · Gloamwood (Sunspire) | 1.5 ล้าน | — | Deepforge ~250k (CR 73,550 ปี 836 PD) · Sunspire ~250k · ~~Syngorn ~80k~~ (ย้ายไปเกาะ — canon ข้อ 24) |
 | · เขต Gate (Riftwild, The Verge) | — | — | ไม่มีผู้อยู่อาศัยถาวร — ฐานฮันเตอร์ตามขอบเขต |
 | **Shenzhou** | **32.5 ล้าน** | | |
@@ -90,8 +90,8 @@
 | **Sunspire** | 5 | นครใหญ่ | นิคมอุตสาหกรรมอาวุธ · ป่า Gloamwood ใกล้เมืองหายเป็นแถบ |
 | **Deepforge** | 5 | นครใหญ่ (ใต้ดิน) | เหมือง mithral + วิศวกรรมหนัก · รถไฟขนแร่ |
 | **Syngorn** | 5 | นคร | **ไม่ขยาย** — นครเอลฟ์ปิดตัว กำแพงหยก |
-| **Tz'Arrm** (Iron Authority) | 5 | นครใหญ่ | ฐานทัพ ฐานขีปนาวุธ แนวป้องกันชายแดน |
-| Riftwild | เขต Gate | — | **ป่าดิบคงอยู่** แต่ล้อมรั้ว มีฐานฮันเตอร์ตามขอบ · ซาก Qoniira = ดันเจี้ยน |
+| **Ironhelm** (Iron Authority) | 5 | นครใหญ่ | ฐานทัพ ฐานขีปนาวุธ แนวป้องกันชายแดน |
+| Riftwild | เขต Gate | — | **ป่าดิบคงอยู่** แต่ล้อมรั้ว มีฐานฮันเตอร์ตามขอบ · ซาก Quetza = ดันเจี้ยน |
 | The Verge | เขต Gate | — | **ป่าเฟย์คงอยู่ 100%** — Gate ระดับสูงสุด ห้ามสร้างถนนผ่าน |
 
 ### ❄️ Aldenreich — ยุคกลางตะวันตก สงครามเย็นสองจักรวรรดิ
@@ -147,7 +147,7 @@
 
 | ชนิด | เส้นทาง |
 |---|---|
-| **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Fortuna, Midgate, Port Noir, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
+| **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Fortuna, Midgate, Port Noir, Ironhelm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
 | **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Port Noir · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
 | **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |

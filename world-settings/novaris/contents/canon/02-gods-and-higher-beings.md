@@ -78,7 +78,7 @@
 | The Raven Queen | Vasselheim (Shenzhou) | ผู้พาวิญญาณออกนอกกรง |
 | The Luxon | Lumora (Aldenreich) | ศรัทธาของ Lumenvael Dynasty |
 | Erathis | Lumen City (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
-| Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
+| Bane | Ironhelm (Voxaria) | เทพของ Iron Authority |
 | Moradin | Deepforge (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
 | Titania | The Verge (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
 
@@ -94,7 +94,7 @@
 | Lolth | Underdark ใต้ Ödland (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
 | Pelor | Sunspire (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
 | Avandra | Fortuna (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
-| Zehir | Riftwild / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
+| Zehir | Riftwild / ซาก Quetza (Voxaria) | ซ่อนในป่าดิบ |
 | Glasya | Port Noir (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |
 | Torog | ใต้ Vasselheim (Shenzhou) | 🔒 นครของเทพตั้งอยู่บนคุกของเทพแห่งการจองจำ |

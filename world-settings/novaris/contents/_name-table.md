@@ -330,3 +330,19 @@
 | Shivergut Tribe | **Frostfang Tribe** | [shivergut-tribe.md](../../exandria/tal-dorei/stormcrest-mountains/shivergut-tribe.md) | ✅ | ✅ | ☐ | ☐ |
 | Bronbog | **Mushmire** | [bronbog.md](../../exandria/tal-dorei/stormcrest-mountains/bronbog.md) | ✅ | ✅ | ☐ | ☐ |
 | Ruhn-Shak | **Deepshade** | [ruhn-shak.md](../../exandria/tal-dorei/stormcrest-mountains/ruhn-shak.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — Iron Authority + เขต Gate Riftwild
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Qoniira | **Quetza** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Niirdal-Poc | **Quetza Crown** | [niirdal-poc.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-poc.md) | ✅ | ✅ | ☐ | ☐ |
+| Niirdal-Gan | **Quetza Fields** | [niirdal-gan.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-gan.md) | ✅ | ✅ | ☐ | ☐ |
+| Niirdal-Hup | **Quetza Fort** | [niirdal-hup.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-hup.md) | ✅ | ✅ | ☐ | ☐ |
+| Niirdal-Sarqet | **Quetza Temple** | [niirdal-sarqet.md](../../exandria/tal-dorei/rifenmist-peninsula/niirdal-sarqet.md) | ✅ | ✅ | ☐ | ☐ |
+| Ezordam-Haar | **Redwing** | [ezordam-haar.md](../../exandria/tal-dorei/rifenmist-peninsula/ezordam-haar.md) | ✅ | ✅ | ☐ | ☐ |
+| Hdar-Fye | **Steelspire** | [hdar-fye.md](../../exandria/tal-dorei/rifenmist-peninsula/hdar-fye.md) | ✅ | ✅ | ☐ | ☐ |
+| Ortem-Vellak | **Ashgate** | [ortem-vellak.md](../../exandria/tal-dorei/rifenmist-peninsula/ortem-vellak.md) | ✅ | ✅ | ☐ | ☐ |
+| Rybad-Kol | **Forgehold** | [rybad-kol.md](../../exandria/tal-dorei/rifenmist-peninsula/rybad-kol.md) | ✅ | ✅ | ☐ | ☐ |
+| Tz'Arrm | **Ironhelm** | [tzaarm.md](../../exandria/tal-dorei/rifenmist-peninsula/tzaarm.md) | ✅ | ✅ | ☐ | ☐ |
+| Byroden | **Glade Hollow** | [byroden.md](../../exandria/tal-dorei/rifenmist-peninsula/byroden.md) | ✅ | ✅ | ☐ | ☐ |

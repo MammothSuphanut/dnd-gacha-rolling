@@ -347,7 +347,7 @@ class สายเวทไม่ได้หายาก แต่ในโล�
 | Sarenrae | Vasselheim (Shenzhou) |
 | The Raven Queen | Vasselheim (Shenzhou) |
 | The Luxon | Lumora (Aldenreich) |
-| Bane | Tz'Arrm (Voxaria) |
+| Bane | Ironhelm (Voxaria) |
 | Moradin | Deepforge (Voxaria) |
 
 เทพองค์อื่น**ซ่อนตัวกลมกลืนไปกับผู้คน** คนรอบข้างไม่รู้ว่าเป็นใคร
@@ -464,7 +464,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | Sunspire | เมืองกอธิกบนเขา ต้นไม้ของ Pelor บรรษัทอาวุธยักษ์ของทวีป | 5 |
 | Deepforge | นครดวาร์ฟใต้พิภพ เหมือง mithral วิศวกรรมหนัก | 5 |
 | Syngorn | นครเอลฟ์ปิดตัว กำแพงหยก เวทสูงที่ล้ำกว่าข้างนอก ปกครองโดยดวงดาว Oren | 5 |
-| Tz'Arrm | รัฐทหารเผด็จการสมัยใหม่ของฮอบกอบลิน (Iron Authority) | 5 |
+| Ironhelm | รัฐทหารเผด็จการสมัยใหม่ของฮอบกอบลิน (Iron Authority) | 5 |
 | Riftwild | เขต Gate/ดันเจี้ยน ป่าที่มอนสเตอร์ล้น ซากโบราณ | เขตอันตราย |
 | The Verge | Gate ระดับสูงสุด ป่าเฟย์ที่ติดค้างมาตั้งแต่ก่อนมีกรง | เขตอันตราย |
 
