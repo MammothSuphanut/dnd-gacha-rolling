@@ -238,3 +238,30 @@
 | Tooth of Zehir | **Serpent's Tooth** | [tooth-of-zehir.md](../../exandria/wildemount/blightshore/tooth-of-zehir.md) | ✅ | ✅ | ☐ | ☐ |
 | Rotthold | **Rotwick** | [rotthold.md](../../exandria/wildemount/blightshore/rotthold.md) | ✅ | ✅ | ☐ | ☐ |
 | Strathfell | **Stonewood** | [strathfell.md](../../exandria/wildemount/blightshore/strathfell.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ❄️ Aldenreich — Costa Mosaica (รวม Isole Smeralde)
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Port Damali | **Lagunara** | [port-damali.md](../../exandria/wildemount/menagerie-coast/port-damali.md) | ✅ | ✅ | ☐ | ☐ |
+| Port Zoon | **Porto Vetro** | [port-zoon.md](../../exandria/wildemount/menagerie-coast/port-zoon.md) | ✅ | ✅ | ☐ | ☐ |
+| Palma Flora | **Fiorella** | [palma-flora.md](../../exandria/wildemount/menagerie-coast/palma-flora.md) | ✅ | ✅ | ☐ | ☐ |
+| Dolithil Mine | **Vena d'Oro** | [dolithil-mine.md](../../exandria/wildemount/menagerie-coast/dolithil-mine.md) | ✅ | ✅ | ☐ | ☐ |
+| Ruins of Sepesca | **Ruins of Serenna** | [ruins-of-sepesca.md](../../exandria/wildemount/menagerie-coast/ruins-of-sepesca.md) | ✅ | ✅ | ☐ | ☐ |
+| Wuyun Gates | **Porta Ferro** | [wuyun-gates.md](../../exandria/wildemount/menagerie-coast/wuyun-gates.md) | ✅ | ✅ | ☐ | ☐ |
+| Bisaft Isle | **Isola Grande** | [bisaft-isle.md](../../exandria/wildemount/menagerie-coast/swavain-islands/bisaft-isle.md) | ✅ | ✅ | ☐ | ☐ |
+| Darktow Isle | **Isola Nera** | [darktow-isle.md](../../exandria/wildemount/menagerie-coast/swavain-islands/darktow-isle.md) | ✅ | ✅ | ☐ | ☐ |
+| Diver's Grave | **Gorgo** | [divers-grave.md](../../exandria/wildemount/menagerie-coast/swavain-islands/divers-grave.md) | ✅ | ✅ | ☐ | ☐ |
+| Vide Cay | **Isoletta** | [vide-cay.md](../../exandria/wildemount/menagerie-coast/swavain-islands/vide-cay.md) | ✅ | ✅ | ☐ | ☐ |
+| Nicodranas | **Belmare** | [nicodranas.md](../../exandria/wildemount/menagerie-coast/nicodranas.md) | ✅ | ✅ | ☐ | ☐ |
+| Gwardan | **Guardia** | [gwardan.md](../../exandria/wildemount/menagerie-coast/gwardan.md) | ✅ | ✅ | ☐ | ☐ |
+| Othe | **Santuaria** | [othe.md](../../exandria/wildemount/menagerie-coast/othe.md) | ✅ | ✅ | ☐ | ☐ |
+| Feolinn | **Verdella** | [feolinn.md](../../exandria/wildemount/menagerie-coast/feolinn.md) | ✅ | ✅ | ☐ | ☐ |
+| Tussoa | **Riva** | [tussoa.md](../../exandria/wildemount/menagerie-coast/tussoa.md) | ✅ | ✅ | ☐ | ☐ |
+| Brokenbank | **Rocca** | [brokenbank.md](../../exandria/wildemount/menagerie-coast/swavain-islands/brokenbank.md) | ✅ | ✅ | ☐ | ☐ |
+| Everplume | **Fumarella** | [everplume.md](../../exandria/wildemount/menagerie-coast/swavain-islands/everplume.md) | ✅ | ✅ | ☐ | ☐ |
+| Rumblecusp | **Vulcana** | [rumblecusp.md](../../exandria/wildemount/menagerie-coast/swavain-islands/rumblecusp.md) | ✅ | ✅ | ☐ | ☐ |
+| Urukayxl | **Corallina** | [urukayxl.md](../../exandria/wildemount/menagerie-coast/swavain-islands/urukayxl.md) | ✅ | ✅ | ☐ | ☐ |
+| Quoraska Jungle | **Selva Scura** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Hearthstar Peaks | **Monti Stella** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| The Barren Shores | **Costa Secca** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |

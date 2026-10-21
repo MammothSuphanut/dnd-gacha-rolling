@@ -49,7 +49,7 @@
 | **Aldenreich** | **30.5 ล้าน** | | |
 | · Dwendalian Empire | 15 ล้าน | 12% | Dwendalis ~300k · Trivane ~150k · Cogwick ~50k · Hopsdale ~10k · Wheaton ~8k |
 | · Lumenvael Dynasty | 8 ล้าน | 10% | Lumora ~200k · Pitwatch ~15k (ป้อม) |
-| · Lagunara Concord | 4.5 ล้าน | 20% | Port Damali ~180k · Nicodranas ~150k · Port Zoon ~60k · Tussoa ~50k |
+| · Lagunara Concord | 4.5 ล้าน | 20% | Lagunara ~180k · Belmare ~150k · Porto Vetro ~60k · Riva ~50k |
 | · Twinhold + ชายขอบ | 1 ล้าน | — | Twinhold ~50k |
 | · ชนเผ่า (Gråmark, Ödland ใต้, Witherstrand) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
 | **Voxaria** | **18.5 ล้าน** | | |
@@ -102,8 +102,8 @@
 | **Trivane** | 2–3 | นครใหญ่ | ไร่นาของ Broadfield เต็มทุ่ง |
 | **Hopsdale / Wheaton** | 2 | เมือง | ชนบท ไร่ข้าว โรงเบียร์ — Corevale เป็นยุ้งฉางของจักรวรรดิ |
 | **Cogwick** | 4 | นคร | โรงงานโนม ควัน เหมือง — ป่ารอบเมืองหาย |
-| **Wuyun Gates** | 2 | ป้อม | ด่านชายแดน Empire–Costa Mosaica |
-| **Nicodranas / Port Damali** (Lagunara Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
+| **Porta Ferro** | 2 | ป้อม | ด่านชายแดน Empire–Costa Mosaica |
+| **Belmare / Lagunara** (Lagunara Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
 | **Lumora** (Lumenvael Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
 | **Pitwatch** | 2 | ป้อม | ไม่เปลี่ยน |
 | **Twinhold** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
@@ -149,9 +149,9 @@
 |---|---|
 | **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Emon, Kymal, Westruun, Stilben, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
-| **เส้นทางเรือ** | Emon ↔ Nicodranas/Port Damali ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
-| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Port Damali** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
-| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Dwendalis, Lumora, Port Damali, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
+| **เส้นทางเรือ** | Emon ↔ Belmare/Lagunara ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
+| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
+| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Dwendalis, Lumora, Lagunara, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Jungwon |
 
 ---
@@ -170,7 +170,7 @@
 
 - [x] **ประชากร**: ✅ คง ~100 ล้าน (โลกชายแดน)
 - [x] **ขนาดเมือง**: ✅ กำหนดตามการกระจายตัว (หัวข้อ 3)
-- [x] **เรือเหาะ**: ✅ น้อยที่สุด — Jrusar/Ank'Harel ↔ Emon, Port Damali
+- [x] **เรือเหาะ**: ✅ น้อยที่สุด — Jrusar/Ank'Harel ↔ Emon, Lagunara
 - [x] **Teleportation circle**: ✅ เฉพาะเมืองหลวง 7 แห่ง
 - [x] **Eiselcross**: ✅ ตาม CR เดิม (Syrinlya, Duskraft, จุดตก Aeor, Palebank, Frosthaven)
 - [x] **ธีมทวีป**: ✅ ปรับ 2026-10-20 — Aldenreich ยุคกลางตะวันตก · Voxaria ยุคปัจจุบัน + เวท · Shenzhou ตะวันออกทั้งทวีป · Suvarna นครโบราณหลากชนเผ่า (canon ข้อ 15/17 แก้แล้ว)
