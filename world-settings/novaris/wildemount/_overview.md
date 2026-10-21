@@ -1,6 +1,69 @@
 # Aldenreich
 
-> ยังไม่ได้เขียน — ภาพรวมทวีปฉบับ Novaris (ต้นฉบับ canon อ้างอิงได้ที่ `world-settings/exandria/wildemount/_overview.md`)
+> origin: `world-settings/exandria/wildemount/_overview.md` (Wildemount ของ CR) · ชื่อทวีป → canon ข้อ 24 · อ่านว่า อัล-เดน-ไรช์
+> **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
+
+## ข้อมูลด่วน
+
+| หัวข้อ | ข้อมูล |
+|---|---|
+| ธีม | **ยุคกลางตะวันตก** · สงครามเย็นสองจักรวรรดิ |
+| ระดับอารยธรรม | ส่วนใหญ่ 2–3 · Cogwick 4 · ซาก Aeor 6 · ชนเผ่า 0–1 |
+| ประชากร | **~30.5 ล้าน** |
+| มหาอำนาจ | **Dwendalian Empire** · **Lumenvael Dynasty** (2 ใน 5 มหาอำนาจของโลก) |
+| อำนาจระดับภูมิภาค | Lagunara Concord · Twinhold Diarchy |
+| ทะเลรอบทวีป | The Pale Deep (เหนือ) · Sundering Ocean (ตะวันตกและใต้) |
+| การเดินทาง | ถนนหลักในจักรวรรดิ · เส้นทางเรือ · teleportation circle ที่ Dwendalis, Lumora, Lagunara · เรือเหาะที่ Lagunara เท่านั้น |
+
+## ภาพรวม
+
+ทวีปยุคกลางแบบตะวันตกที่ถูกแบ่งด้วย**สงครามเย็น**ยาว 100 ปี ฝั่งหนึ่งคือ **Dwendalian Empire** จักรวรรดิสไตล์เยอรมันของ Elder Manfried Dwendal ที่ศรัทธาเวทอาร์เคนและกีดกันเผ่าอื่น อีกฝั่งคือ **Lumenvael Dynasty** นครแห่งความมืดของ drow ผู้ศรัทธา The Luxon ที่ต้อนรับทุกเผ่าซึ่งยอมรับเทพของตน ทั้งสองแข่งกันขุดซาก **Aeor** ที่ Eiselcross ทางเหนือ — มรดกของนครลอยฟ้าที่ครั้งหนึ่งทำให้ทั้งโลกลุกเป็นไฟ
+
+ระหว่างสองจักรวรรดิมีผู้ที่ทำกำไรจากความตึงเครียด — **Lagunara Concord** สมาพันธ์นครรัฐพ่อค้าแบบเวนิสทางตะวันตกเฉียงใต้ และ **Twinhold Diarchy** นครใต้ภูเขาของดวาร์ฟกับเอลฟ์ทางเหนือ ส่วนที่เหลือของทวีปคือดินแดนที่ยังไม่มีใครปราบได้ — ชนเผ่าไวกิ้งแห่ง Gråmark ทุ่งร้างทางใต้ของ Ödland และคาบสมุทร Witherstrand ที่บาดแผลจากยุค Calamity ยังไม่หาย
+
+## ประวัติ
+
+| ช่วง | เหตุการณ์ |
+|---|---|
+| ยุค Founding | Manfried เป็นทาสของเทพออร์ค ก่อนไต่ขึ้นเป็นหนึ่งในดวงดาวทั้งเก้า |
+| ยุค Arcanum | Aeor รุ่งเรือง · Vecna (ตอนยังเป็นมนุษย์) ทดลองที่ Hexvale |
+| ยุค Calamity | สมรภูมิทั่วทวีป · **Aeor ร่วงลงที่ Eiselcross** |
+| Divergence | นครลอยฟ้า Drakara ร่วงเมื่อเทพผู้อุปถัมภ์ตาย |
+| ยุค PD | Manfried ก่อตั้ง Dwendalian Empire · drow สร้าง Lumora · Lagunara Concord · Twinhold Diarchy |
+| 835–836 PD | **War of Ash and Light** — Sarenrae ไกล่เกลี่ยจนพักรบ |
+| 836–935 PD | สงครามเย็น · relic rush ที่ Eiselcross |
+
+## ภูมิภาคและประเทศ
+
+| ภูมิภาค | ประเทศ/การปกครอง | ธีม |
+|---|---|---|
+| [Dwendalian Empire](dwendalian-empire/_overview.md) | Dwendalian Empire | จักรวรรดิเยอรมัน เวทอาร์เคน การกีดกันเผ่า |
+| [Ödland](xhorhas/_overview.md) | Lumenvael Dynasty (เหนือ) · ชนเผ่า (ใต้) | นครแห่งความมืด การเกิดใหม่ ทุ่งร้าง |
+| [Witherstrand](blightshore/_overview.md) | ไม่มีรัฐ | คาบสมุทรรกร้าง สนามรบเก่า สิ่งที่ไม่ควรมีอยู่ |
+| [Costa Mosaica](menagerie-coast/_overview.md) · [Isole Smeralde](menagerie-coast/swavain-islands/_overview.md) | Lagunara Concord | นครรัฐพ่อค้าแบบอิตาลี โจรสลัด |
+| [Gråmark](greying-wildlands/_overview.md) | Twinhold Diarchy · ชนเผ่าไวกิ้ง | ดินแดนเหนือไร้กฎหมาย ต้องคำสาป |
+| [Eiselcross](eiselcross/_overview.md) | ไม่มีรัฐ — ด่านของสามฝ่าย | ซาก Aeor ใต้หิมะ |
+
+## ภูมิศาสตร์
+
+- **เหนือสุด**: หมู่เกาะน้ำแข็ง Eiselcross ข้าม The Pale Deep
+- **เหนือ**: เทือกเขาหิมะ ป่าสน และทุนดราของ Gråmark
+- **กลางค่อนตะวันตก**: ทุ่งราบและหุบเขาเกษตรของจักรวรรดิ ล้อมด้วยเทือกเขาสามด้าน
+- **ตะวันออก**: Ödland — ทุ่ง บึง ป่า และเทือกเขา Twilight Range
+- **ตะวันออกสุด**: คาบสมุทร Witherstrand
+- **ตะวันตกเฉียงใต้**: ชายฝั่ง Costa Mosaica และหมู่เกาะ Isole Smeralde
+
+## ผู้คนและวัฒนธรรม
+
+- **ภาษาชื่อ**: เยอรมัน (จักรวรรดิ, Ödland) · นอร์ส (Gråmark) · อิตาลี (Costa Mosaica) · อังกฤษแฟนตาซี
+- **ศาสนา**: Bahamut (จักรวรรดิ — ในนาม) · The Luxon (Lumenvael) · Moradin และ Melora ในชุมชนดวาร์ฟและป่า · Gruumsh และ Kord ในหมู่ชนเผ่า
+- **เทศกาลเด่น**: คืนยาวที่สุด (จักรวรรดิ) · เทศกาลแห่งแสง (Lumenvael) · แข่งเรือมังกร (ลูกหลาน Drakara) · วันเปิดน่านน้ำ (เมืองท่า)
+
+## การเมืองและความสัมพันธ์ระดับทวีป
+
+- **Dwendalian Empire vs Lumenvael Dynasty**: สงครามเย็น — สายลับ ป้อมชายแดน การแข่งขุด Aeor
+- **Lagunara Concord และ Twinhold**: เป็นกลาง ร่ำรวยจากการค้ากับทั้งสองฝ่าย
+- **ทวีปอื่น**: Voxaria เป็นคู่ค้าผ่าน Lagunara · Kamizono คือที่มาของ Sarenrae ผู้ไกล่เกลี่ยสงคราม
 
 ## ธีมและองค์กรของทวีป (sync จากไฟล์หลัก)
 

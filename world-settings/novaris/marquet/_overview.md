@@ -1,6 +1,70 @@
 # Suvarna
 
-> ยังไม่ได้เขียน — ภาพรวมทวีปฉบับ Novaris (ต้นฉบับ canon อ้างอิงได้ที่ `world-settings/exandria/marquet/_overview.md`)
+> origin: `world-settings/exandria/marquet/_overview.md` (Marquet ของ CR) · ชื่อทวีป → canon ข้อ 24 · อ่านว่า สุ-วรร-ณา (ทองคำ)
+> **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
+
+## ข้อมูลด่วน
+
+| หัวข้อ | ข้อมูล |
+|---|---|
+| ธีม | **นครโบราณหลากชนเผ่า** — โรม ไทย อินเดีย สปาร์ตา ไวกิ้ง บาร์บาเรียน ชนเผ่าเร่ร่อน |
+| ระดับอารยธรรม | 2 (นครโบราณ) · ชนเผ่า 0–1 |
+| ประชากร | **~18.5 ล้าน** |
+| มหาอำนาจ | **Imperium Solis** (Solaria) |
+| อำนาจระดับภูมิภาค | Pancha Sabha · Jyoti Marga · Ehrvarn Conquest · Varga Republic (ในนาม) |
+| Elder ในทวีป | **Seren** ปกครอง Benjasila · **Stratos** บ้านเกิดที่ Ehrenburg (เร่ร่อน) |
+| ทะเลรอบทวีป | Sagara สาคร |
+| การเดินทาง | **ฮับเรือเหาะของ The Skyward Line** (Benjasila + Solaria) · teleportation circle ที่ Solaria, Benjasila · เส้นทางเรือ Giftvik ↔ Voxaria |
+
+## ภาพรวม
+
+ทวีปที่**แตกเป็นหลายวัฒนธรรมโบราณ** แต่ละภูมิภาครักษาวิถีของบรรพบุรุษไว้อย่างเคร่งครัด กลางทะเลทรายแดงคือ **Solaria** นครหลวงแบบโรมันของ Imperium Solis ทางตะวันตกเฉียงเหนือคือป่าหิมพานต์และนครห้ายอด **Benjasila** แบบไทยที่ Elder Seren ปกครอง ทางใต้คือป่าใหญ่ Dandaka กับนครปราชญ์ออร์ค **Jyotipura** แบบอินเดีย ตะวันตกเฉียงใต้คือนครทหารแบบสปาร์ตา **Ehrenburg** ของชาว Ehrvarian ผู้สวมหมวกเกราะตั้งแต่เกิด กลางทวีปคือหุบเขาบาร์บาเรียน **Ulfdal** และทางเหนือคือเมืองท่าไวกิ้ง **Giftvik** กับทุ่งหญ้าของชนเผ่าเร่ร่อน
+
+ความล้ำของ Suvarna เดิม — ธนาคาร The Golden Ledger และสถาบันวิจัยของ Jyotipura — ย้ายไป Voxaria หมดแล้ว สิ่งที่เหลือคือทวีปที่เลือกจะเก่า และภูมิใจกับมัน ยกเว้นสิ่งเดียว: **เรือเหาะ** ที่แกนขับยุค Founding ทำให้ Suvarna เป็นศูนย์กลางการเดินทางทางอากาศของทั้งโลก
+
+## ประวัติ
+
+| ช่วง | เหตุการณ์ |
+|---|---|
+| ยุคแรกสุด | Stratos ให้กำเนิดชาว Ehrvarian |
+| ยุค Founding | สุสานแบบอียิปต์ใต้ Deshret · ชนเผ่าเร่ร่อนมาถึงทุ่งเหนือ |
+| ยุค Arcanum | อารยธรรมเร่ร่อนตั้งวงหินใน Ulfdal · สาวก Zehir ผนึกถ้ำใน Jarnfell |
+| ยุค Calamity | ✨ ป่ากลางทวีปกลายเป็นทะเลทราย · เมืองหนึ่งจมใต้ทราย |
+| ยุค PD | Seren ปกครอง Benjasila · The Skyward Line ตั้งฐาน · ออร์คสร้าง Jyotipura |
+| ✨ ~535 PD | J'mon Sa Ord ก่อตั้ง Solaria |
+| ✨ ~880 PD | The Golden Ledger และสถาบันวิจัยย้ายไป Lumen City |
+
+## ภูมิภาคและประเทศ
+
+| ภูมิภาค | ประเทศ/การปกครอง | วัฒนธรรม |
+|---|---|---|
+| [Deshret](rumedam-desert/_overview.md) | Imperium Solis | โรมัน + อียิปต์โบราณ |
+| [Himmapan Wilds](oderan-wilds/_overview.md) | Pancha Sabha (ใต้ Seren) | ไทย / อยุธยา |
+| [Dandaka](aeshanadoor/_overview.md) | Jyoti Marga | อินเดีย |
+| [Ulfdal](hellcatch-valley/_overview.md) | Varga Republic (ในนาม) | บาร์บาเรียนนอร์ส |
+| [Ehrvarn Highlands](taloned-highlands/_overview.md) | Ehrvarn Conquest | สปาร์ตา / อัศวินหมวกเหล็ก |
+| [Jarnfell](aggrad-mountains/_overview.md) + Windgrass Plains | Giftvik (อิสระ) · ชนเผ่าเร่ร่อน | ไวกิ้ง · ชนพื้นเมืองอเมริกัน |
+
+## ภูมิศาสตร์
+
+- **กลาง**: ทะเลทรายแดง Deshret และหุบเขาแห้ง Ulfdal
+- **ตะวันตกเฉียงเหนือ**: ป่าดงดิบหิมพานต์ ล้อมด้วย Naga Range · หน้าผา Wolfcliff แบ่งป่ากับหุบเขา
+- **ใต้**: ป่า Dandaka · ทะเลสาบเรืองแสง Lake Prabha
+- **ตะวันตกเฉียงใต้**: ที่ราบสูงและภูเขาหมวกเกราะของ Ehrvarn
+- **เหนือ**: เทือกเขาเหล็ก Jarnfell · อ่าว Giftvik · ทุ่ง Windgrass Plains
+
+## ผู้คนและวัฒนธรรม
+
+- **ภาษาชื่อ**: ละติน (Solaria) · ไทย (Himmapan) · สันสกฤต (Dandaka) · นอร์ส (Ulfdal, Jarnfell) · เยอรมัน (Ehrvarn)
+- **เผ่าพันธุ์**: หลากหลายที่สุดในโลก — Benjasila คือที่ที่ทุกเผ่าอยู่ร่วมกัน · ออร์คนักปราชญ์ · โทรลล์ · genasi ลม
+- **เทศกาลเด่น**: สาดสี (ทั้งทวีป) · ค่ำคืนโคมลอย (Benjasila)
+
+## การเมืองและความสัมพันธ์ระดับทวีป
+
+- **Solaria + Benjasila**: พันธมิตรเรือเหาะ — ปลายทาง Lumen City และ Lagunara
+- **ทะเลของ Nerissa vs ท้องฟ้าของ Seren**: การแข่งขันฉันมิตรของสอง Elder
+- **Ehrvarn**: ไม่มีใครอยากเป็นศัตรู · **Ulfdal**: ทุกคาราวานต้องผ่าน และต้องจ่าย
+- **องค์กร**: Pancha Sabha · บ้านแห่งหมวกเหล็ก · เผ่าบาร์บาเรียน Ulfdal · ผู้เฝ้าสุสาน · The Skyward Line (ระดับโลก)
 
 ## ธีมและองค์กรของทวีป (sync จากไฟล์หลัก)
 
