@@ -1,0 +1,62 @@
+{
+  "id": "novaris",
+  "name": "Novaris",
+  "source": "Homebrew (ดัดแปลงจาก Exandria)",
+  "mapImage": "/world-settings/novaris/maps/world/Exandria.jpeg",
+  "categories": [
+    {
+      "id": "contents",
+      "title": "Contents"
+    },
+    {
+      "id": "wildemount",
+      "title": "Wildemount",
+      "overviewPath": "/world-settings/novaris/wildemount/_overview.md",
+      "map": {
+        "image": "/world-settings/novaris/maps/wildemount/Wildemount.jpg"
+      },
+      "pin": {
+        "x": 64.82363584113607,
+        "y": 20.260872991580968
+      }
+    },
+    {
+      "id": "tal-dorei",
+      "title": "Tal'Dorei",
+      "overviewPath": "/world-settings/novaris/tal-dorei/_overview.md",
+      "map": {
+        "image": "/world-settings/novaris/maps/tal-dorei/Tal'Dorei.jpg"
+      },
+      "pin": {
+        "x": 40.11556276559401,
+        "y": 24.726673552745677
+      }
+    },
+    {
+      "id": "issylra",
+      "title": "Issylra",
+      "overviewPath": "/world-settings/novaris/issylra/_overview.md",
+      "map": {
+        "image": "/world-settings/novaris/maps/issylra/Issylra.webp"
+      },
+      "pin": {
+        "x": 11.192218617202995,
+        "y": 24.057107682313802
+      }
+    },
+    {
+      "id": "marquet",
+      "title": "Marquet",
+      "overviewPath": "/world-settings/novaris/marquet/_overview.md",
+      "map": {
+        "image": "/world-settings/novaris/maps/marquet/Marquet.webp"
+      },
+      "pin": {
+        "x": 35.73973969997252,
+        "y": 77.39245284142739
+      }
+    }
+  ],
+  "cards": [],
+  "partyPins": []
+}

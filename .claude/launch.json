@@ -19,7 +19,7 @@
         "5179",
         "--strictPort"
       ],
-      "cwd": "world-settings/exandria-plus/maps/azgaar/app",
+      "cwd": "world-settings/novaris/maps/azgaar/app",
       "port": 5179,
       "autoPort": false
     }

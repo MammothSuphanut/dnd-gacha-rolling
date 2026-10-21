@@ -6,7 +6,7 @@
 ## สรุป
 
 - **2026-10-21: แก้ชื่อให้ตรงกับ wiki** ทั้งในคลังและบนแผนที่ Azgaar: Bisaft Port → Bisaft Isle, Darktow → Darktow Isle, Port Daxio → Fort Daxio, Artati → Aruati, Qorco → Qoreo, Gelvar/Gelvan → Gelvaan, Aeor Crash Site → Aeor, The Miskath Pit → Miskath Pit, Vesper Timberlands → Vesper Timberland, Tz'aarm → Tz'Arrm, Niirdal-Sarquet → Niirdal-Sarqet, Termor Falls → Tormor Falls, Foramere villages → Foramere Basin, Mooren → Mooren Lake, หลุมขุดค้น Tishtan → Tishtan excavation site (ตาราง "ชื่อไม่ตรงกับ wiki" ด้านล่างเป็นบันทึกก่อนแก้)
-- ชื่อที่ Exandria+ ตั้งเอง (ไม่มีใน wiki) แยกไว้ที่ `exandria-plus/contents/_homebrew-names.md`
+- ชื่อที่ Novaris ตั้งเอง (ไม่มีใน wiki) แยกไว้ที่ `novaris/contents/_homebrew-names.md`
 - **2026-10-21: ลบทุกสถานที่ที่ไม่อยู่บนแผนที่ Azgaar** (88 ไฟล์ — มี lore 17 ไฟล์ กู้คืนได้จากประวัติ git) รายชื่ออยู่หัวข้อ "ลบแล้ว" ท้ายไฟล์ · ตาราง "ขาด" และ "เกิน" ด้านล่างเป็นบันทึกก่อนลบ
 - ไฟล์เดิม 210 ไฟล์ จัดเข้าภูมิภาคครบ (ย้าย 192 ไฟล์ด้วย `git mv`) · การ์ดใน `manifest.json` แก้ path และลิงก์ wiki แล้ว
 - **ขาด** (มีใน wiki แต่ไม่มีไฟล์): 76 แห่ง → สร้างไฟล์แบบมีแค่ลิงก์แล้ว
