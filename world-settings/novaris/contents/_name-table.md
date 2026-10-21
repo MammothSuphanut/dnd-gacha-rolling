@@ -67,13 +67,14 @@
 
 | ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|---|---|
-| ประเทศ | Celestial Empire (TBD) | **Tianchao** 天朝 | เทียน-เฉา | ราชสำนักสวรรค์ — อาณาจักรแบบจีน (ตอนใต้) | — | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Celestial Empire (TBD) | **Tianchao** 天朝 | เทียน-เฉา | ราชสำนักสวรรค์ — อาณาจักรแบบจีน (คาบสมุทรใต้ ครึ่งยุทธภพ) | — | ✅ | ✅ | ☐ | ☐ |
 | ↳ เมืองหลวง | Imperial Capital (TBD) | **Yujing** 玉京 | อวี้-จิง | นครหยก — นครสวรรค์ในตำนานเต๋า | — | ✅ | ✅ | ☐ | ☐ |
 | ประเทศ | Utesspire Domains (TBD) | **Akitsu Shogunate** 秋津 | อา-คิ-ทสึ | ชื่อโบราณเชิงกวีของญี่ปุ่น — แคว้นแบบญี่ปุ่น (ตะวันตก) | — | ✅ | ✅ | ☐ | ☐ |
 | ↳ เมืองหลวง | Shogun Seat (TBD) | **Shirasagi** 白鷺 | ชิ-รา-ซา-งิ | ปราสาทนกกระยางขาว | — | ✅ | ✅ | ☐ | ☐ |
-| ประเทศ + ภูมิภาค | Othanzia | **Tianmen** 天門 | เทียน-เหมิน | ประตูสวรรค์ — นครเทพ Vasselheim | [othanzia/_overview.md](../../exandria/issylra/othanzia/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ + ภูมิภาค | Othanzia | **Amanokado** 天の門 | อา-มะ-โนะ-คา-โดะ | ประตูสวรรค์ — นครเทพ Vasselheim (ครึ่งญี่ปุ่น; เดิมตั้ง Tianmen) | [othanzia/_overview.md](../../exandria/issylra/othanzia/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาคย่อย | Vesper Timberland | **Yūgure Forest** 夕暮れ | ยู-งุ-เระ | ป่าสนธยา (ใน Tianmen) | [vesper-timberland/_overview.md](../../exandria/issylra/othanzia/vesper-timberland/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| ภูมิภาคย่อย | Sunderpeak Mountains | **Cheonsan** 天山 | ช็อน-ซัน | ภูเขาสวรรค์ — ยุทธภพฝ่ายธรรมะ (ใน Tianmen) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาคย่อย | Sunderpeak Mountains | ☐ รอชื่อญี่ปุ่น — Cheonsan ย้ายไปฝั่งใต้ของเทือกเขาเส้นแบ่ง | | ภูเขาไฟใกล้นครเทพ ที่ตั้งวัด Fire Ashari (ใน Tianmen) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ☐ | ✅ | ☐ | ☐ |
+| สันเขา (ใหม่) | — | **Cheonsan** 天山 | ช็อน-ซัน | ฝั่งใต้ของเทือกเขาเส้นแบ่งญี่ปุ่น/ยุทธภพ — ที่ตั้งสำนักฝ่ายธรรมะ | — | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Demithore Valley | **Jungwon** 中原 | จุง-วอน | ที่ราบกลาง — ชุมทางคาราวาน ใจกลางยุทธภพ | [demithore-valley/_overview.md](../../exandria/issylra/demithore-valley/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Caramarin Reach | **Mizuho** 瑞穂 | มิ-ซุ-โฮะ | ทุ่งรวงข้าวงาม — ในเขต Akitsu | — | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Utesspire Mountains | **Tengu Range** 天狗岳 | เท็ง-งุ | ภูเขาของโยไคเท็งงุ — กั้น Akitsu จากส่วนอื่น | [utesspire-mountains.md](../../exandria/issylra/unspecified/utesspire-mountains.md) | ✅ | ✅ | ☐ | ☐ |

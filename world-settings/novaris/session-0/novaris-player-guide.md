@@ -419,7 +419,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | Dwendalian Empire | Aldenreich | ปกครองโดยดวงดาว Manfried |
 | Lumenvael Dynasty | Aldenreich | ศรัทธาใน The Luxon |
 | Voxaria | Voxaria (ทั้งทวีป) | ประเทศเดียวทั้งทวีปใต้เทพ **Erathis** — แต่ละรัฐเลือกตั้งผู้นำของตัวเอง แต่เงินคุมเกม การเมืองและคอร์รัปชันหนัก |
-| Tianmen (Vasselheim) | Shenzhou | นครเทพแบบตะวันออกที่เทพหลายองค์อยู่จริง |
+| Amanokado (Vasselheim) | Shenzhou | นครเทพแบบตะวันออกที่เทพหลายองค์อยู่จริง |
 | Imperium Solis | Suvarna | เมืองหลวง Ank'Harel — นครหลวงจักรวรรดิโบราณแบบโรมัน |
 
 **แต่ละทวีปคนละยุค:** Aldenreich = ยุคกลางตะวันตก · **Voxaria = ยุคปัจจุบัน + เวท (ล้ำที่สุด)** · Shenzhou = ตะวันออกยุคกลาง · Suvarna = นครโบราณหลากชนเผ่า
