@@ -12,7 +12,7 @@
 |---|---|---|
 | ปัจจุบัน | 935 PD — ราว 100 ปีหลังยุค CR (Frozen Sick 835 PD), ช่วง 843–935 PD ไม่มีเหตุการณ์พิเศษ | canon ข้อ 15 |
 | เทคโนโลยี | **แต่ละทวีปคนละยุค** (ปรับ 2026-10-20): Aldenreich ยุคกลางตะวันตก · **Voxaria ยุคปัจจุบัน + เวท** (รถยนต์ โทรศัพท์ ขีปนาวุธ) · Shenzhou ตะวันออกยุคกลาง · Suvarna นครโบราณหลากชนเผ่า | canon ข้อ 15/17 |
-| การเดินทาง | **Voxaria**: ทางด่วน รถไฟ อากาศยานสมัยใหม่ · **ทวีปอื่น** บก: ม้า รถม้า คาราวาน ถนนหลักเชื่อมเมืองใหญ่ · น้ำ: เรือใบ = เส้นทางการค้าข้ามทวีป · ฟ้า: เรือเหาะมีน้อย ผูกขาดโดย The Skyward Line (Jrusar) แกนขับสร้างใหม่ไม่ได้ · เวท: teleportation circle ในเมืองใหญ่ เฉพาะคนรวย/มีเส้นสาย | canon ข้อ 17 + องค์กร |
+| การเดินทาง | **Voxaria**: ทางด่วน รถไฟ อากาศยานสมัยใหม่ · **ทวีปอื่น** บก: ม้า รถม้า คาราวาน ถนนหลักเชื่อมเมืองใหญ่ · น้ำ: เรือใบ = เส้นทางการค้าข้ามทวีป · ฟ้า: เรือเหาะมีน้อย ผูกขาดโดย The Skyward Line (Benjasila) แกนขับสร้างใหม่ไม่ได้ · เวท: teleportation circle ในเมืองใหญ่ เฉพาะคนรวย/มีเส้นสาย | canon ข้อ 17 + องค์กร |
 | การเมือง | สงครามเย็น Empire–Dynasty 100 ปี แข่งกันขุดซาก Aeor ที่ Eiselcross · Voxaria = Voxaria ประเทศเดียวทั้งทวีปใต้ Erathis (ตั้งแต่ 300 PD) แต่ละรัฐเลือกตั้งผู้นำเอง | canon ข้อ 15 |
 | สเกล | ×4 — เดินข้ามทวีปหลายเดือน | canon ข้อ 22 |
 | ประชากรโลก | **~100 ล้าน** | canon ข้อ 4 |
@@ -64,7 +64,7 @@
 | · Jungwon / ยุทธภพ / ชนเผ่า | 5 ล้าน | — | เมืองตลาด Jungwon ~60k · สำนักบนเขา |
 | **Suvarna** | **18.5 ล้าน** | | |
 | · Deshret (Imperium Solis — Solaria) | 6 ล้าน | 15% | Solaria ~600k (นครหลวงจักรวรรดิโบราณ) · Fontana และเมืองโอเอซิส ~20–50k |
-| · Himmapan Wilds (Jrusar) | 3 ล้าน | 12% | Jrusar ~150k |
+| · Himmapan Wilds (Benjasila) | 3 ล้าน | 12% | Benjasila ~150k |
 | · Dandaka (Yios) | 3 ล้าน | 10% | Yios ~80k |
 | · Ulfdal | 2.5 ล้าน | 5% | Gujjar-Serai ~25k · Bassuras ~15k · ค่ายเผ่าบาร์บาเรียน |
 | · Ehrvarn Highlands | 2 ล้าน | 10% | Sruwargas ~60k |
@@ -130,7 +130,7 @@
 | ที่ | ระดับ | ขนาด | เปลี่ยนจากแผนที่ CR |
 |---|---|---|---|
 | **Solaria** | 2 | นครใหญ่ | นครหลวงจักรวรรดิแบบโรมัน — ถนนโรมันปูหินออกจากนคร ท่อส่งน้ำ · เมืองโอเอซิสรายรอบ · ทะเลทราย Deshret รอบนอกคงเดิม |
-| **Jrusar** | 2 | นครใหญ่ | นครห้ายอดแบบไทย วัด เจดีย์ · ฐาน The Skyward Line (ท่าเรือเหาะ) |
+| **Benjasila** | 2 | นครใหญ่ | นครห้ายอดแบบไทย วัด เจดีย์ · ฐาน The Skyward Line (ท่าเรือเหาะ) |
 | **Yios** | 2 | นคร | มหาวิทยาลัยโบราณแบบอินเดีย กลางป่า Dandaka — ภายนอกคงป่า |
 | **Sruwargas** | 2 | นคร | นครทหารแบบสปาร์ตา หอคอยผู้พิชิต ถนนทหารบนภูเขา |
 | **Ulfdal** (Gujjar-Serai, Bassuras) | 1–2 | เมืองเล็ก + ค่ายเผ่า | ดินแดนบาร์บาเรียน — ทางเดินคาราวาน ไม่มีถนนใหญ่ |
@@ -150,8 +150,8 @@
 | **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Fortuna, Midgate, Port Noir, Ironhelm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
 | **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Port Noir · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Hamamura) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
-| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Solaria → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Kamizono และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
-| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Lumen City, Dwendalis, Lumora, Lagunara, Solaria, Jrusar, เมืองหลวงจีน — ไม่มีที่ Kamizono (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
+| **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Benjasila + Solaria → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Kamizono และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
+| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Lumen City, Dwendalis, Lumora, Lagunara, Solaria, Benjasila, เมืองหลวงจีน — ไม่มีที่ Kamizono (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Jungwon |
 
 ---
@@ -170,7 +170,7 @@
 
 - [x] **ประชากร**: ✅ คง ~100 ล้าน (โลกชายแดน)
 - [x] **ขนาดเมือง**: ✅ กำหนดตามการกระจายตัว (หัวข้อ 3)
-- [x] **เรือเหาะ**: ✅ น้อยที่สุด — Jrusar/Solaria ↔ Lumen City, Lagunara
+- [x] **เรือเหาะ**: ✅ น้อยที่สุด — Benjasila/Solaria ↔ Lumen City, Lagunara
 - [x] **Teleportation circle**: ✅ เฉพาะเมืองหลวง 7 แห่ง
 - [x] **Eiselcross**: ✅ ตาม CR เดิม (Syrinlya, Duskraft, จุดตก Aeor, Palebank, Frosthaven)
 - [x] **ธีมทวีป**: ✅ ปรับ 2026-10-20 — Aldenreich ยุคกลางตะวันตก · Voxaria ยุคปัจจุบัน + เวท · Shenzhou ตะวันออกทั้งทวีป · Suvarna นครโบราณหลากชนเผ่า (canon ข้อ 15/17 แก้แล้ว)

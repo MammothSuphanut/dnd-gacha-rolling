@@ -395,3 +395,16 @@
 | Drowned City (Cael Morrow) | **Sandgrave** | [drowned-city.md](../../exandria/marquet/rumedam-desert/drowned-city.md) | ✅ | ✅ | ☐ | ☐ |
 | Ziggurat แห่ง Smouldercrown Mountains | **Sun Ziggurat** | [ziggurat.md](../../exandria/marquet/rumedam-desert/ziggurat.md) | ✅ | ✅ | ☐ | ☐ |
 | Smouldercrown Mountains | **Emberpeak** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### ☀️ Suvarna — Himmapan Wilds
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Jrusar | **Benjasila** | [jrusar.md](../../exandria/marquet/oderan-wilds/jrusar.md) | ✅ | ✅ | ☐ | ☐ |
+| Eish-Allay | **Huai Kaeo** | [eish-allay.md](../../exandria/marquet/oderan-wilds/eish-allay.md) | ✅ | ✅ | ☐ | ☐ |
+| Evishi | **Muang Ngoen** | [evishi.md](../../exandria/marquet/oderan-wilds/evishi.md) | ✅ | ✅ | ☐ | ☐ |
+| Goradire | **Ban Pa** | [goradire.md](../../exandria/marquet/oderan-wilds/goradire.md) | ✅ | ✅ | ☐ | ☐ |
+| Heartmoor Hamlet | **Ban Nong** | [heartmoor-hamlet.md](../../exandria/marquet/oderan-wilds/heartmoor-hamlet.md) | ✅ | ✅ | ☐ | ☐ |
+| Otaladume | **Ban Klang** | [otaladume.md](../../exandria/marquet/oderan-wilds/otaladume.md) | ✅ | ✅ | ☐ | ☐ |
+| Sapiro Haven | **Tha Samut** | [sapiro-haven.md](../../exandria/marquet/oderan-wilds/sapiro-haven.md) | ✅ | ✅ | ☐ | ☐ |
+| Serpentwind Peaks | **Naga Range** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
