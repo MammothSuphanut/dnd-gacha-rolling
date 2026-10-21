@@ -45,7 +45,7 @@
 | Iron Authority (CR) | Tz'Arrm | รัฐทหารฮอบกอบลิน (Bane) |
 | สหภาพโรงงาน Lumen City ✨ | Lumen City | แรงงานยุคอุตสาหกรรม |
 | บรรษัทอาวุธ Whitestone ✨ | Whitestone | ผู้ผลิตอาวุธยักษ์ของทวีป — ปืน ขีปนาวุธ อาวุธเวท |
-| เครือคาสิโน Kymal ✨ | Kymal | ธุรกิจการพนัน — 🔒 Avandra ซ่อนอยู่ในเมือง |
+| เครือคาสิโน Fortuna ✨ | Fortuna | ธุรกิจการพนัน — 🔒 Avandra ซ่อนอยู่ในเมือง |
 | ราชสำนักฤดูร้อน ✨ | The Verge | ราชสำนักเฟย์ของ Titania |
 
 ### ⛰️ Shenzhou (6)

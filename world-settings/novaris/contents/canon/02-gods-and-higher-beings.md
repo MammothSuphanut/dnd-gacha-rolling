@@ -93,7 +93,7 @@
 | Vecna | Eiselcross (Aldenreich) | **เร่ร่อน**ในซาก Aeor |
 | Lolth | Underdark ใต้ Ödland (Aldenreich) | ซ่อนใต้ดินแดนของ drow ที่ทิ้งนาง (กลัว Elder) |
 | Pelor | Whitestone (Voxaria) | ต้นไม้ของ Pelor เป็นสัญลักษณ์ แต่ตัวเขากลมกลืนอยู่ในเมือง |
-| Avandra | Kymal (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
+| Avandra | Fortuna (Voxaria) | กลมกลืนอยู่ในเมืองคาสิโน |
 | Zehir | Riftwild / ซาก Qoniira (Voxaria) | ซ่อนในป่าดิบ |
 | Glasya | Stilben (Voxaria) | เจ้าพ่อเบื้องหลังเมืองมาเฟีย — ไม่มีใครรู้ว่าเป็น archdevil |
 | Sehanine | นครลวงตาใน Shenzhou | ซ่อนผู้คนของตัวเองใต้ภาพลวงตาตั้งแต่สงคราม |

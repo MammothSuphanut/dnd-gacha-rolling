@@ -53,7 +53,7 @@
 | · Twinhold + ชายขอบ | 1 ล้าน | — | Twinhold ~50k |
 | · ชนเผ่า (Gråmark, Ödland ใต้, Witherstrand) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
 | **Voxaria** | **18.5 ล้าน** | | |
-| · Crownshore · Heartland · Blacktide Coast · Thunderspine (Lumen City, Westruun, Kymal, Stilben ฯลฯ) | 14.5 ล้าน | 75% | **Lumen City ~3.5 ล้าน** (ใหญ่สุดในโลก) · Kymal ~1.5 ล้าน · Westruun ~1 ล้าน · Stilben ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
+| · Crownshore · Heartland · Blacktide Coast · Thunderspine (Lumen City, Midgate, Fortuna, Stilben ฯลฯ) | 14.5 ล้าน | 75% | **Lumen City ~3.5 ล้าน** (ใหญ่สุดในโลก) · Fortuna ~1.5 ล้าน · Midgate ~1 ล้าน · Stilben ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
 | · รัฐ Iron Authority | 2.5 ล้าน | 70% | Tz'Arrm ~900k |
 | · รัฐ Forgeheim (Deepforge) · Gloamwood (Whitestone) | 1.5 ล้าน | — | Deepforge ~250k (CR 73,550 ปี 836 PD) · Whitestone ~250k · ~~Syngorn ~80k~~ (ย้ายไปเกาะ — canon ข้อ 24) |
 | · เขต Gate (Riftwild, The Verge) | — | — | ไม่มีผู้อยู่อาศัยถาวร — ฐานฮันเตอร์ตามขอบเขต |
@@ -84,8 +84,8 @@
 | ที่ | ระดับ | ขนาด | เปลี่ยนจากแผนที่ CR (935 PD) |
 |---|---|---|---|
 | **Lumen City** (เมืองหลวง Voxaria) | 5 | มหานคร | เขตมหานครขยายเต็มชายฝั่ง Crownshore · ท่าเรือสินค้า สนามบิน · The Golden Ledger + สถาบัน Lumen City |
-| **Westruun** | 5 | มหานคร | ชุมทางทางด่วน/รถไฟกลางทวีป · Heartland เป็นไร่นาอุตสาหกรรมทั้งทุ่ง |
-| **Kymal** | 5 | มหานคร | เมืองคาสิโนนีออน ถนนทุกสายวิ่งเข้าเมือง |
+| **Midgate** | 5 | มหานคร | ชุมทางทางด่วน/รถไฟกลางทวีป · Heartland เป็นไร่นาอุตสาหกรรมทั้งทุ่ง |
+| **Fortuna** | 5 | มหานคร | เมืองคาสิโนนีออน ถนนทุกสายวิ่งเข้าเมือง |
 | **Stilben** | 5 | นครใหญ่ | ท่าเรือสินค้าใหญ่ เขตเมืองหนาแน่น — ถิ่นมาเฟีย/ยากูซ่า |
 | **Whitestone** | 5 | นครใหญ่ | นิคมอุตสาหกรรมอาวุธ · ป่า Gloamwood ใกล้เมืองหายเป็นแถบ |
 | **Deepforge** | 5 | นครใหญ่ (ใต้ดิน) | เหมือง mithral + วิศวกรรมหนัก · รถไฟขนแร่ |
@@ -147,7 +147,7 @@
 
 | ชนิด | เส้นทาง |
 |---|---|
-| **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Kymal, Westruun, Stilben, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
+| **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Fortuna, Midgate, Stilben, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
 | **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
 | **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |

@@ -289,3 +289,18 @@
 | Lyrengorn | **Elvenpeak** | [lyrengorn.md](../../exandria/tal-dorei/cliffkeep-mountains/lyrengorn.md) | ✅ | ✅ | ☐ | ☐ |
 | Gatsibadow | **Gloomvale** | [gatsibadow.md](../../exandria/tal-dorei/cliffkeep-mountains/gatsibadow.md) | ✅ | ✅ | ☐ | ☐ |
 | Terrah | **Earthward** | [terrah.md](../../exandria/tal-dorei/cliffkeep-mountains/terrah.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — Heartland
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Gatshadow Mountain | **Blackcrown Mountain** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Foramere Basin | **Bluebasin** | [foramere-basin.md](../../exandria/tal-dorei/dividing-plains/foramere-basin.md) | ✅ | ✅ | ☐ | ☐ |
+| Ironseat Ridge | **Ironback Ridge** | [ironseat-ridge.md](../../exandria/tal-dorei/dividing-plains/ironseat-ridge.md) | ✅ | ✅ | ☐ | ☐ |
+| Ivyheart Thicket | **Ivywood** | [ivyheart-thicket.md](../../exandria/tal-dorei/dividing-plains/ivyheart-thicket.md) | ✅ | ✅ | ☐ | ☐ |
+| Murdoon Mines | **Redrock Mines** | [murdoon-mines.md](../../exandria/tal-dorei/dividing-plains/murdoon-mines.md) | ✅ | ✅ | ☐ | ☐ |
+| Silvercut Crossroads | **Silver Junction** | [silvercut-crossroads.md](../../exandria/tal-dorei/dividing-plains/silvercut-crossroads.md) | ✅ | ✅ | ☐ | ☐ |
+| Turst Fields | **Goldfields** | [turst-fields.md](../../exandria/tal-dorei/dividing-plains/turst-fields.md) | ✅ | ✅ | ☐ | ☐ |
+| Shadebarrow | **Sunbarrow** | [shadebarrow.md](../../exandria/tal-dorei/dividing-plains/shadebarrow.md) | ✅ | ✅ | ☐ | ☐ |
+| Westruun | **Midgate** | [westruun.md](../../exandria/tal-dorei/dividing-plains/westruun.md) | ✅ | ✅ | ☐ | ☐ |
+| Kymal | **Fortuna** | [kymal.md](../../exandria/tal-dorei/dividing-plains/kymal.md) | ✅ | ✅ | ☐ | ☐ |

@@ -458,8 +458,8 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | พื้นที่ | เป็นอย่างไร | ระดับ |
 |---|---|---|
 | Lumen City | เมืองหลวงของ Voxaria บัลลังก์ของ Erathis ตึกระฟ้า ธนาคาร สื่อ | 5 |
-| Westruun | ชุมทางคมนาคม เมืองใหญ่อันดับ 2 | 5 |
-| Kymal | เมืองคาสิโนแบบลาสเวกัส/มาเก๊า นีออนเวททั้งคืน | 5 |
+| Midgate | ชุมทางคมนาคม เมืองใหญ่อันดับ 2 | 5 |
+| Fortuna | เมืองคาสิโนแบบลาสเวกัส/มาเก๊า นีออนเวททั้งคืน | 5 |
 | Stilben | เมืองท่ามาเฟีย/ยากูซ่าสมัยใหม่ | 5 |
 | Whitestone | เมืองกอธิกบนเขา ต้นไม้ของ Pelor บรรษัทอาวุธยักษ์ของทวีป | 5 |
 | Deepforge | นครดวาร์ฟใต้พิภพ เหมือง mithral วิศวกรรมหนัก | 5 |
@@ -531,7 +531,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | ทวีป | องค์กร |
 |---|---|
 | Aldenreich | Cerberus Assembly (สภาจอมเวทของจักรวรรดิ ขุดของ Aeor มาใช้) · Righteous Brand (กองทัพจักรวรรดิ) · The Volstrucker (นักฆ่าลับ) · Den ของ Lumenvael · The Revelry (โจรสลัด) · ผู้ขุดซาก Aeor |
-| Voxaria | ราชสำนักของ Erathis และผู้นำรัฐจากการเลือกตั้ง · ศูนย์ Hero · The Clasp (กิลด์โจร) · Iron Authority · สหภาพโรงงาน Lumen City · บรรษัทอาวุธ Whitestone · เครือคาสิโน Kymal · ราชสำนักฤดูร้อนของ Titania |
+| Voxaria | ราชสำนักของ Erathis และผู้นำรัฐจากการเลือกตั้ง · ศูนย์ Hero · The Clasp (กิลด์โจร) · Iron Authority · สหภาพโรงงาน Lumen City · บรรษัทอาวุธ Whitestone · เครือคาสิโน Fortuna · ราชสำนักฤดูร้อนของ Titania |
 | Shenzhou | สภาวิหาร Vasselheim · สำนักฝ่ายธรรมะ (Cheonsan) · พรรคมารสวรรค์ (Hishari) · รัฐบาลโชกุน · องครักษ์เสื้อแพร |
 | Suvarna | Pancha Sabha (สภาปกครองใต้ Seren) · บ้านแห่งหมวกเหล็ก (Ehrvarn) · เผ่าบาร์บาเรียน Ulfdal · ผู้เฝ้าสุสาน Deshret |
 
