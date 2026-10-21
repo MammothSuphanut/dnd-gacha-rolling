@@ -31,7 +31,7 @@
 | Cerberus Assembly (CR) | Dwendalis | สภาจอมเวทของจักรวรรดิ / หน่วยวิจัยของ Manfried / คุมห้องลับใต้ Dwendalis |
 | Righteous Brand (CR) | จักรวรรดิ | กองทัพจักรวรรดิ |
 | The Volstrucker (CR) | จักรวรรดิ | หน่วยนักฆ่าลับใต้ Cerberus |
-| Den ทั้งหลายของ Lumenvael (CR) | Rosohna | ตระกูลขุนนางที่เกิดใหม่โดยจำชาติก่อนได้ |
+| Den ทั้งหลายของ Lumenvael (CR) | Lumora | ตระกูลขุนนางที่เกิดใหม่โดยจำชาติก่อนได้ |
 | The Revelry (CR) | Costa Mosaica | โจรสลัด |
 | เส้นทางของเด็กเร่ร่อน ✨ | Dwendalis | พาผู้ถูกกีดกันหนีออกจักรวรรดิ — 🔒 Bahamut |
 | ผู้ขุดซาก Aeor ✨ | Eiselcross | หน่วยขุดของสองจักรวรรดิ (สงครามเย็น) |

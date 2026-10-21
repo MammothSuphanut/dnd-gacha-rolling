@@ -76,7 +76,7 @@
 |---|---|---|
 | Sarenrae | Vasselheim (Shenzhou) | เทพประจำ Dawn City / ผู้ไกล่เกลี่ย War of Ash and Light |
 | The Raven Queen | Vasselheim (Shenzhou) | ผู้พาวิญญาณออกนอกกรง |
-| The Luxon | Rosohna (Aldenreich) | ศรัทธาของ Lumenvael Dynasty |
+| The Luxon | Lumora (Aldenreich) | ศรัทธาของ Lumenvael Dynasty |
 | Erathis | Emon (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
 | Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
 | Moradin | Kraghammer (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
@@ -87,7 +87,7 @@
 | ใคร | ที่ไหน | ซ่อนอย่างไร |
 |---|---|---|
 | Bahamut | Dwendalis (Aldenreich) | เด็กเร่ร่อน |
-| Tiamat | ซาก Draconia (Aldenreich) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
+| Tiamat | ซาก Drakara (Aldenreich) | **อาศัยกลมกลืนกับผู้คนที่นั่น** แม้นิสัยโหดร้ายเกรี้ยวกราด |
 | Gruumsh | Gråmark (Aldenreich) | **เร่ร่อน**ในหมู่ชนเผ่าไวกิ้ง |
 | Corellon | Twinhold (Aldenreich) | **กลมกลืนอยู่ในนคร** |
 | Vecna | Eiselcross (Aldenreich) | **เร่ร่อน**ในซาก Aeor |

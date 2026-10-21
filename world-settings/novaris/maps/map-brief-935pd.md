@@ -48,7 +48,7 @@
 |---|---|---|---|
 | **Aldenreich** | **30.5 ล้าน** | | |
 | · Dwendalian Empire | 15 ล้าน | 12% | Dwendalis ~300k · Trivane ~150k · Cogwick ~50k · Hopsdale ~10k · Wheaton ~8k |
-| · Lumenvael Dynasty | 8 ล้าน | 10% | Rosohna ~200k · Bazzoxan ~15k (ป้อม) |
+| · Lumenvael Dynasty | 8 ล้าน | 10% | Lumora ~200k · Pitwatch ~15k (ป้อม) |
 | · Lagunara Concord | 4.5 ล้าน | 20% | Port Damali ~180k · Nicodranas ~150k · Port Zoon ~60k · Tussoa ~50k |
 | · Twinhold + ชายขอบ | 1 ล้าน | — | Twinhold ~50k |
 | · ชนเผ่า (Gråmark, Ödland ใต้, Witherstrand) | 2 ล้าน | — | ค่าย/หมู่บ้าน |
@@ -104,11 +104,11 @@
 | **Cogwick** | 4 | นคร | โรงงานโนม ควัน เหมือง — ป่ารอบเมืองหาย |
 | **Wuyun Gates** | 2 | ป้อม | ด่านชายแดน Empire–Costa Mosaica |
 | **Nicodranas / Port Damali** (Lagunara Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
-| **Rosohna** (Lumenvael Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
-| **Bazzoxan** | 2 | ป้อม | ไม่เปลี่ยน |
+| **Lumora** (Lumenvael Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
+| **Pitwatch** | 2 | ป้อม | ไม่เปลี่ยน |
 | **Twinhold** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
 | **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Twinhold บน Highfrost (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Highfrost จากเหนือลงตะวันออกเฉียงใต้ · **Duskraft** ฐานลอยน้ำ Lumenvael (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Glacia · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Highfrost เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Twinhold — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Frosthaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Highfrost, Glacia, Northend, Coldfire, Icelet, Fishholm |
-| ซาก Draconia | ซาก | — | ซากใน Dreemoth Ravine |
+| ซาก Drakara | ซาก | — | ซากใน Dreemoth Ravine |
 | Gråmark | 0–1 | — | **คงป่าเถื่อน** ชนเผ่าไวกิ้ง ค่ายเล็ก |
 | Ödland ใต้ / Witherstrand | 0–1 | — | **คงรกร้าง** ชนเผ่า มอนสเตอร์ |
 
@@ -151,7 +151,7 @@
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
 | **เส้นทางเรือ** | Emon ↔ Nicodranas/Port Damali ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
 | **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Port Damali** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
-| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Dwendalis, Rosohna, Port Damali, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
+| **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Dwendalis, Lumora, Port Damali, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Jungwon |
 
 ---

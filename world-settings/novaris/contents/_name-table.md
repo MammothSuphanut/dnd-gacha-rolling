@@ -198,3 +198,27 @@
 | Crystalsands Tundra | **Glimmer Tundra** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Flotket Alps | **Whitehorn Alps** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Rime Plains | **Hoarfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### ❄️ Aldenreich — Ödland
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Ruins of Draconia | **Ruins of Drakara** | [ruins-of-draconia.md](../../exandria/wildemount/xhorhas/ruins-of-draconia.md) | ✅ | ✅ | ☐ | ☐ |
+| Deepriver Mining Camp | **Deepcut Camp** | [deepriver-mining-camp.md](../../exandria/wildemount/xhorhas/deepriver-mining-camp.md) | ✅ | ✅ | ☐ | ☐ |
+| Many Hosts of Igrathad | **Sevenfold** | [many-hosts-of-igrathad.md](../../exandria/wildemount/xhorhas/many-hosts-of-igrathad.md) | ✅ | ✅ | ☐ | ☐ |
+| Iothia Moorland | **Mistmoor** | [iothia-moorland.md](../../exandria/wildemount/xhorhas/iothia-moorland.md) | ✅ | ✅ | ☐ | ☐ |
+| Barbed Fields | **Thornwaste** | [barbed-fields.md](../../exandria/wildemount/xhorhas/barbed-fields.md) | ✅ | ✅ | ☐ | ☐ |
+| Xarzith Kitril | **Scalehaven** | [xarzith-kitril.md](../../exandria/wildemount/xhorhas/xarzith-kitril.md) | ✅ | ✅ | ☐ | ☐ |
+| Rosohna | **Lumora** | [rosohna.md](../../exandria/wildemount/xhorhas/rosohna.md) | ✅ | ✅ | ☐ | ☐ |
+| Asarius | **Asterin** | [asarius.md](../../exandria/wildemount/xhorhas/asarius.md) | ✅ | ✅ | ☐ | ☐ |
+| Bazzoxan | **Pitwatch** | [bazzoxan.md](../../exandria/wildemount/xhorhas/bazzoxan.md) | ✅ | ✅ | ☐ | ☐ |
+| Charis | **Leafhome** | [charis.md](../../exandria/wildemount/xhorhas/charis.md) | ✅ | ✅ | ☐ | ☐ |
+| Dumaran | **Gorgrim** | [dumaran.md](../../exandria/wildemount/xhorhas/dumaran.md) | ✅ | ✅ | ☐ | ☐ |
+| Galgarad | **Grimhollow** | [galgarad.md](../../exandria/wildemount/xhorhas/galgarad.md) | ✅ | ✅ | ☐ | ☐ |
+| Ghostwall | **Wraithwall** | [ghostwall.md](../../exandria/wildemount/xhorhas/ghostwall.md) | ✅ | ✅ | ☐ | ☐ |
+| Jigow | **Netmouth** | [jigow.md](../../exandria/wildemount/xhorhas/jigow.md) | ✅ | ✅ | ☐ | ☐ |
+| Urzin | **Shellwander** | [urzin.md](../../exandria/wildemount/xhorhas/urzin.md) | ✅ | ✅ | ☐ | ☐ |
+| The Emerald Gulch | **Greengorge** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Penumbra Range | **Twilight Range** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Lotusden Greenwood | **Lotuswood** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Draconia (นครลอยฟ้าในประวัติศาสตร์) | **Drakara** | — | ✅ | ✅ | ☐ | ☐ |
