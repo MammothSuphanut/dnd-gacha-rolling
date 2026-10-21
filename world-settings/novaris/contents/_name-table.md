@@ -68,13 +68,13 @@
 | ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|---|---|
 | ประเทศ | Celestial Empire (TBD) | **Tianchao** 天朝 | เทียน-เฉา | ราชสำนักสวรรค์ — อาณาจักรแบบจีน (คาบสมุทรใต้ ครึ่งยุทธภพ) | — | ✅ | ✅ | ☐ | ☐ |
-| ↳ เมืองหลวง | Imperial Capital (TBD) | **Yujing** 玉京 | อวี้-จิง | นครหยก — นครสวรรค์ในตำนานเต๋า | — | ✅ | ✅ | ☐ | ☐ |
+| ↳ เมืองหลวง | Imperial Capital (TBD) | **Yujing** 玉京 | อวี้-จิง | นครหยก — นครสวรรค์ในตำนานเต๋า | — | ✅ | ✅ | ✅ ร่าง | ☐ |
 | ประเทศ | Utesspire Domains (TBD) | **Akitsu Shogunate** 秋津 | อา-คิ-ทสึ | ชื่อโบราณเชิงกวีของญี่ปุ่น — แคว้นแบบญี่ปุ่น (ตะวันตก) | — | ✅ | ✅ | ☐ | ☐ |
-| ↳ เมืองหลวง | Shogun Seat (TBD) | **Shirasagi** 白鷺 | ชิ-รา-ซา-งิ | ปราสาทนกกระยางขาว | — | ✅ | ✅ | ☐ | ☐ |
+| ↳ เมืองหลวง | Shogun Seat (TBD) | **Shirasagi** 白鷺 | ชิ-รา-ซา-งิ | ปราสาทนกกระยางขาว | — | ✅ | ✅ | ✅ ร่าง | ☐ |
 | ประเทศ + ภูมิภาค | Othanzia | **Amanokado** 天の門 | อา-มะ-โนะ-คา-โดะ | ประตูสวรรค์ — นครเทพ Vasselheim (ครึ่งญี่ปุ่น; เดิมตั้ง Tianmen) | [othanzia/_overview.md](../../exandria/issylra/othanzia/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาคย่อย | Vesper Timberland | **Yūgure Forest** 夕暮れ | ยู-งุ-เระ | ป่าสนธยา (ใน Amanokado) | [vesper-timberland/_overview.md](../../exandria/issylra/othanzia/vesper-timberland/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาคย่อย | Sunderpeak Mountains | **Kazan Range** 火山 | คา-ซัง | ภูเขาไฟใกล้นครเทพ ที่ตั้งวัด Fire Ashari (ใน Amanokado) | [sunderpeak-mountains/_overview.md](../../exandria/issylra/othanzia/sunderpeak-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
-| สันเขา (ใหม่) | — | **Cheonsan** 天山 | ช็อน-ซัน | ฝั่งใต้ของเทือกเขาเส้นแบ่งญี่ปุ่น/ยุทธภพ — ที่ตั้งสำนักฝ่ายธรรมะ | — | ✅ | ✅ | ☐ | ☐ |
+| สันเขา (ใหม่) | — | **Cheonsan** 天山 | ช็อน-ซัน | ฝั่งใต้ของเทือกเขาเส้นแบ่งญี่ปุ่น/ยุทธภพ — ที่ตั้งสำนักฝ่ายธรรมะ | — | ✅ | ✅ | ✅ ร่าง | ☐ |
 | ภูมิภาค | Demithore Valley | **Jungwon** 中原 | จุง-วอน | ที่ราบกลาง — ชุมทางคาราวาน ใจกลางยุทธภพ | [demithore-valley/_overview.md](../../exandria/issylra/demithore-valley/_overview.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Caramarin Reach | **Mizuho** 瑞穂 | มิ-ซุ-โฮะ | ทุ่งรวงข้าวงาม — ในเขต Akitsu | — | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Utesspire Mountains | **Tengu Range** 天狗岳 | เท็ง-งุ | ภูเขาของโยไคเท็งงุ — กั้น Akitsu จากส่วนอื่น | [utesspire-mountains.md](../../exandria/issylra/unspecified/utesspire-mountains.md) | ✅ | ✅ | ☐ | ☐ |
@@ -362,29 +362,29 @@
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Josgren's Hollow | **Yakushi** | [josgrens-hollow.md](../../exandria/issylra/othanzia/vesper-timberland/josgrens-hollow.md) | ✅ | ✅ | ☐ | ☐ |
-| Himblewood | **Moriichi** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
-| Vasselheim | **Kamizono** | [vasselheim.md](../../exandria/issylra/othanzia/vesper-timberland/vasselheim.md) | ✅ | ✅ | ☐ | ☐ |
-| Shorecomb | **Hamamura** | [shorecomb.md](../../exandria/issylra/othanzia/shorecomb.md) | ✅ | ✅ | ☐ | ☐ |
-| Pyrah | **Enzan** | [pyrah.md](../../exandria/issylra/othanzia/sunderpeak-mountains/pyrah.md) | ✅ | ✅ | ☐ | ☐ |
-| Muldire | **Kanmon** | [muldire.md](../../exandria/issylra/othanzia/vesper-timberland/muldire.md) | ✅ | ✅ | ☐ | ☐ |
-| Rimecleft | **Futagoyama** | [rimecleft.md](../../exandria/issylra/othanzia/vesper-timberland/rimecleft.md) | ✅ | ✅ | ☐ | ☐ |
+| Josgren's Hollow | **Yakushi** | [josgrens-hollow.md](../../exandria/issylra/othanzia/vesper-timberland/josgrens-hollow.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Himblewood | **Moriichi** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Vasselheim | **Kamizono** | [vasselheim.md](../../exandria/issylra/othanzia/vesper-timberland/vasselheim.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Shorecomb | **Hamamura** | [shorecomb.md](../../exandria/issylra/othanzia/shorecomb.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Pyrah | **Enzan** | [pyrah.md](../../exandria/issylra/othanzia/sunderpeak-mountains/pyrah.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Muldire | **Kanmon** | [muldire.md](../../exandria/issylra/othanzia/vesper-timberland/muldire.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Rimecleft | **Futagoyama** | [rimecleft.md](../../exandria/issylra/othanzia/vesper-timberland/rimecleft.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ⛰️ Shenzhou — Jungwon (ครึ่งยุทธภพ)
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Endovaar | **Mokcheon** | [endovaar.md](../../exandria/issylra/demithore-valley/endovaar.md) | ✅ | ✅ | ☐ | ☐ |
-| Hearthdell | **Toji** | [hearthdell.md](../../exandria/issylra/demithore-valley/hearthdell.md) | ✅ | ✅ | ☐ | ☐ |
-| Seedfeld | **Ssiat** | [seedfeld.md](../../exandria/issylra/demithore-valley/seedfeld.md) | ✅ | ✅ | ☐ | ☐ |
+| Endovaar | **Mokcheon** | [endovaar.md](../../exandria/issylra/demithore-valley/endovaar.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Hearthdell | **Toji** | [hearthdell.md](../../exandria/issylra/demithore-valley/hearthdell.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Seedfeld | **Ssiat** | [seedfeld.md](../../exandria/issylra/demithore-valley/seedfeld.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ⛰️ Shenzhou — ฝั่งตะวันตก (Hishari, Ivaadel) + Zenwick
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Zenwick | **Mubong** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
-| Hishari (ซากเมือง Tumilo) | **Heukseong** | [hishari.md](../../exandria/issylra/unspecified/hishari.md) | ✅ | ✅ | ☐ | ☐ |
-| Ivaadel | **Shiraki** | [ivaadel.md](../../exandria/issylra/unspecified/ivaadel.md) | ✅ | ✅ | ☐ | ☐ |
+| Zenwick | **Mubong** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Hishari (ซากเมือง Tumilo) | **Heukseong** | [hishari.md](../../exandria/issylra/unspecified/hishari.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ivaadel | **Shiraki** | [ivaadel.md](../../exandria/issylra/unspecified/ivaadel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ☀️ Suvarna — Deshret
 
