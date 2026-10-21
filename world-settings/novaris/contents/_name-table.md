@@ -346,3 +346,13 @@
 | Rybad-Kol | **Forgehold** | [rybad-kol.md](../../exandria/tal-dorei/rifenmist-peninsula/rybad-kol.md) | ✅ | ✅ | ☐ | ☐ |
 | Tz'Arrm | **Ironhelm** | [tzaarm.md](../../exandria/tal-dorei/rifenmist-peninsula/tzaarm.md) | ✅ | ✅ | ☐ | ☐ |
 | Byroden | **Glade Hollow** | [byroden.md](../../exandria/tal-dorei/rifenmist-peninsula/byroden.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — เขต Gate The Verge
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Shifting Keep | **Mirage Keep** | [shifting-keep.md](../../exandria/tal-dorei/verdant-expanse/shifting-keep.md) | ✅ | ✅ | ☐ | ☐ |
+| Tormor Falls | **Veilfalls** | [tormor-falls.md](../../exandria/tal-dorei/verdant-expanse/tormor-falls.md) | ✅ | ✅ | ☐ | ☐ |
+| Vues'dal villages | **Fernlake** | [vuesdal-villages.md](../../exandria/tal-dorei/verdant-expanse/vuesdal-villages.md) | ✅ | ✅ | ☐ | ☐ |
+| Orencleft | **Faewatch** | [orencleft.md](../../exandria/tal-dorei/verdant-expanse/orencleft.md) | ✅ | ✅ | ☐ | ☐ |
+| Syngorn | **Syngorn (คงเดิม)** | [syngorn.md](../../exandria/tal-dorei/verdant-expanse/syngorn.md) | ✅ | ✅ | ☐ | ☐ |
