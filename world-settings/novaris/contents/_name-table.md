@@ -24,10 +24,10 @@
 
 | ชื่อ CR | ชื่อ Novaris | อ่านว่า | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|
-| Lucidian Ocean | ☐ | | | ☐ | ☐ | ☐ | ☐ |
-| Ozmit Sea | ☐ | | | ☐ | ☐ | ☐ | ☐ |
-| Beryl Sea | ☐ | | [marquet/unspecified/beryl-sea.md](../../exandria/marquet/unspecified/beryl-sea.md) | ☐ | ☐ | ☐ | ☐ |
-| Frigid Depths | ☐ | | | ☐ | ☐ | ☐ | ☐ |
+| Lucidian Ocean | **Sundering Ocean** | ซัน-เดอ-ริง โอเชียน | — มหาสมุทรกลางโลกที่ Nethmar จม (ผนึก Tharizdun อยู่ใต้ทะเลส่วนนี้) | ✅ | ✅ | ☐ | ☐ |
+| Ozmit Sea | **Donghai** (東海) | ตง-ไห่ | — ทะเลตะวันออกในสายตาคน Shenzhou (ระหว่าง Shenzhou กับ Voxaria) | ✅ | ✅ | ☐ | ☐ |
+| Beryl Sea | **Sagara** (สาคร) | สา-คอน | [marquet/unspecified/beryl-sea.md](../../exandria/marquet/unspecified/beryl-sea.md) — ทะเลทางใต้ติด Suvarna | ✅ | ✅ | ☐ | ☐ |
+| Frigid Depths | **The Pale Deep** | เดอะ เพล ดีพ | — ทะเลเหนือ ระหว่าง Voxaria, Aldenreich และ Eiselcross | ✅ | ✅ | ☐ | ☐ |
 
 ## ภูมิภาค / ประเทศ
 

@@ -103,11 +103,11 @@
 | **Trostenwald / Alfield** | 2 | เมือง | ชนบท ไร่ข้าว โรงเบียร์ — Marrow Valley เป็นยุ้งฉางของจักรวรรดิ |
 | **Hupperdook** | 4 | นคร | โรงงานโนม ควัน เหมือง — ป่ารอบเมืองหาย |
 | **Wuyun Gates** | 2 | ป้อม | ด่านชายแดน Empire–Menagerie Coast |
-| **Nicodranas / Port Damali** (Clovis Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Lucidian Ocean |
+| **Nicodranas / Port Damali** (Clovis Concord) | 3 | นครใหญ่ | ท่าเรือการค้าใหญ่ เส้นทางเรือออก Sundering Ocean |
 | **Rosohna** (Kryn Dynasty) | 2–3 | นครใหญ่ | ถนนทหารสู่ชายแดน Empire · ป้อม Aurora Watch |
 | **Bazzoxan** | 2 | ป้อม | ไม่เปลี่ยน |
 | **Uthodurn** | 2 | นคร (ใต้ดิน) | ไม่เปลี่ยน |
-| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Foren (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Foren จากเหนือลงตะวันออกเฉียงใต้ · **Vurmas** ฐานลอยน้ำ Kryn (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Gelier · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Foren เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Icehaven** (ท่าเรือเดียวของ Empire บน Frigid Depths) · เกาะ: Foren, Gelier, Biessel, Dampfkan, Kaltsel, Taergoss |
+| **Eiselcross** | 6 (ซาก) | — | ✅ **ตาม CR เดิม** (`world-settings/exandria/wildemount/`): **Syrinlya** ด่านหน้า Uthodurn บน Foren (กระโจมนักผจญภัย) · **ธารลาวา** ผ่ากลาง Foren จากเหนือลงตะวันออกเฉียงใต้ · **Vurmas** ฐานลอยน้ำ Kryn (เรือผูกกัน 3 ลำ) นอกฝั่งเหนือ Gelier · **จุดตก Aeor** (A2, A5 ฯลฯ) บน Foren เป็นจุดขุด · ประตูฝั่งแผ่นดินใหญ่: **Palebank Village** (Uthodurn — หมู่บ้านท่าเรือบนปลายแหลมเหนือ มีเส้นทางเรือตัดน้ำแข็งไป Syrinlya) และ **Icehaven** (ท่าเรือเดียวของ Empire บน The Pale Deep) · เกาะ: Foren, Gelier, Biessel, Dampfkan, Kaltsel, Taergoss |
 | ซาก Draconia | ซาก | — | ซากใน Dreemoth Ravine |
 | Greying Wildlands | 0–1 | — | **คงป่าเถื่อน** ชนเผ่าไวกิ้ง ค่ายเล็ก |
 | Xhorhas ใต้ / Blightshore | 0–1 | — | **คงรกร้าง** ชนเผ่า มอนสเตอร์ |
