@@ -101,8 +101,8 @@
 | Queen of Air and Darkness | ไม่มีใครรู้ | ข่าวลือ: แคว้นแบบญี่ปุ่นหลัง Tengu Range (Shenzhou) |
 | Asmodeus | Emon (Voxaria) | กลมกลืนในมหานคร — สัญญาและตลาดหลักทรัพย์ผ่านมือเขาโดยไม่มีใครรู้ (ย้ายตาม The Golden Ledger, 2026-10-20) |
 | Ioun | Emon (Voxaria) | กลมกลืนในสถาบัน Emon (ย้ายตามสถาบัน, 2026-10-20) |
-| Melora | ป่า Aeshanadoor (Suvarna) | ซ่อนในป่าดิบ |
-| The Great Mother | ใต้ทะเลทราย Rumedam (Suvarna) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
+| Melora | ป่า Dandaka (Suvarna) | ซ่อนในป่าดิบ |
+| The Great Mother | ใต้ทะเลทราย Deshret (Suvarna) | หลับใต้สุสานยุค Founding มี beholder เฝ้า |
 | Tharizdun | ก้นทะเลระหว่าง Aldenreich กับ Eldmere — ใต้ซากแผ่นดินของทวีปที่จม | 🔒 ถูกล่ามโซ่ โซ่กำลังอ่อนลง |
 | Baba Yaga | ทั่วโลก | กระท่อมเคลื่อนที่ |
 | Kord (Elder) | ทั่วโลก | เร่ร่อน |

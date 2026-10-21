@@ -79,7 +79,23 @@
 | ภูมิภาค | Utesspire Mountains | **Tengu Range** 天狗岳 | เท็ง-งุ | ภูเขาของโยไคเท็งงุ — กั้น Akitsu จากส่วนอื่น | [utesspire-mountains.md](../../exandria/issylra/unspecified/utesspire-mountains.md) | ✅ | ✅ | ☐ | ☐ |
 | ภูมิภาค | Thorain Tundra | **Tsagaan Tal** | ทซา-กาน ทาล | ทุ่งขาว (มองโกล) — ชนเผ่าเหนือ | [thorain-tundra.md](../../exandria/issylra/unspecified/thorain-tundra.md) | ✅ | ✅ | ☐ | ☐ |
 
-### ☀️ Suvarna · 🌊 Eldmere
+### ☀️ Suvarna
+
+| ประเภท | ชื่อ CR | ชื่อ Novaris | อ่านว่า | ความหมาย | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| ประเทศ | Ank'Harel (ประเทศ) | **Imperium Solis** | อิม-เพ-ริ-อุม โซ-ลิส | จักรวรรดิสุริยะ แบบโรมัน (เมืองหลวง Ank'Harel — ชื่อเมืองไว้ชั้นสถานที่) | [ankharel.md](../../exandria/marquet/rumedam-desert/ankharel.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Chandei Quorum | **Pancha Sabha** ปัญจสภา | ปัน-จะ-สะ-พา | สภาแห่งห้า — นครห้ายอด Jrusar ใต้ Elder Seren | [jrusar.md](../../exandria/marquet/oderan-wilds/jrusar.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Court of the Lambent Path | **Jyoti Marga** โชติมรรค | โช-ติ-มัก | ทางแห่งแสง — นครปราชญ์ Yios | [yios.md](../../exandria/marquet/aeshanadoor/yios.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Stratos Throne | **Stratos Throne** (คงเดิม) | สตรา-ทอส โธรน | ตั้งตาม Elder Stratos — เผ่า Ehrvarn | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ☐ | ☐ |
+| ประเทศ | Bassur Republic | **Varga Republic** | วาร์-กา | หมาป่า (นอร์ส) — สาธารณรัฐแค่ในนาม | [gujjar-serai.md](../../exandria/marquet/hellcatch-valley/gujjar-serai.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Rumedam Desert | **Deshret** | เดช-เร็ต | แผ่นดินแดง (อียิปต์โบราณ = ทะเลทราย) | [rumedam-desert/_overview.md](../../exandria/marquet/rumedam-desert/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Oderan Wilds | **Himmapan Wilds** ป่าหิมพานต์ | หิม-มะ-พาน | ป่าในตำนานไทย | [oderan-wilds/_overview.md](../../exandria/marquet/oderan-wilds/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Aeshanadoor | **Dandaka** ทัณฑกะ | ทัน-ดะ-กะ | ป่าใหญ่ในรามายณะ | [aeshanadoor/_overview.md](../../exandria/marquet/aeshanadoor/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Hellcatch Valley | **Ulfdal** | อุลฟ์-ดาล | หุบเขาหมาป่า | [hellcatch-valley/_overview.md](../../exandria/marquet/hellcatch-valley/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Taloned Highlands | **Ehrvarn Highlands** | แอร์-วาร์น | ที่ราบสูงของเผ่า Ehrvarn | [taloned-highlands/_overview.md](../../exandria/marquet/taloned-highlands/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+| ภูมิภาค | Aggrad Mountains | **Jarnfell** | ยาร์น-เฟลล์ | ภูเขาเหล็ก — เมืองท่าไวกิ้ง Shammel | [aggrad-mountains/_overview.md](../../exandria/marquet/aggrad-mountains/_overview.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌊 Eldmere
 
 ยังไม่เริ่ม
 

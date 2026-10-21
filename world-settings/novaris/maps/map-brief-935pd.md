@@ -63,11 +63,11 @@
 | · Tianmen | 6.5 ล้าน | 8% | Vasselheim ~200k · Shorecomb ~15k · Himblewood ~10k |
 | · Jungwon / ยุทธภพ / ชนเผ่า | 5 ล้าน | — | เมืองตลาด Jungwon ~60k · สำนักบนเขา |
 | **Suvarna** | **18.5 ล้าน** | | |
-| · Rumedam (Ank'Harel) | 6 ล้าน | 15% | Ank'Harel ~600k (นครหลวงจักรวรรดิโบราณ) · Shandal และเมืองโอเอซิส ~20–50k |
-| · Oderan Wilds (Jrusar) | 3 ล้าน | 12% | Jrusar ~150k |
-| · Aeshanadoor (Yios) | 3 ล้าน | 10% | Yios ~80k |
-| · Hellcatch Valley | 2.5 ล้าน | 5% | Gujjar-Serai ~25k · Bassuras ~15k · ค่ายเผ่าบาร์บาเรียน |
-| · Taloned Highlands | 2 ล้าน | 10% | Sruwargas ~60k |
+| · Deshret (Imperium Solis — Ank'Harel) | 6 ล้าน | 15% | Ank'Harel ~600k (นครหลวงจักรวรรดิโบราณ) · Shandal และเมืองโอเอซิส ~20–50k |
+| · Himmapan Wilds (Jrusar) | 3 ล้าน | 12% | Jrusar ~150k |
+| · Dandaka (Yios) | 3 ล้าน | 10% | Yios ~80k |
+| · Ulfdal | 2.5 ล้าน | 5% | Gujjar-Serai ~25k · Bassuras ~15k · ค่ายเผ่าบาร์บาเรียน |
+| · Ehrvarn Highlands | 2 ล้าน | 10% | Sruwargas ~60k |
 | · ชายฝั่งเหนือ + ชนเผ่าเร่ร่อน | 2 ล้าน | — | Shammel ~30k |
 | **Eldmere** | — | — | ไม่มีเมืองมนุษย์ — ถิ่นของเผ่าโบราณ (canon ข้อ 24) · 2 ล้านเดิม (ชาวเรือ) ย้ายไปทวีปอื่นทวีปละ 0.5 ล้าน: Lagunara Concord, Voxaria, Tianmen, ชายฝั่งเหนือ Suvarna |
 | **รวม** | **100 ล้าน** | ~22% | |
@@ -129,14 +129,14 @@
 
 | ที่ | ระดับ | ขนาด | เปลี่ยนจากแผนที่ CR |
 |---|---|---|---|
-| **Ank'Harel** | 2 | นครใหญ่ | นครหลวงจักรวรรดิแบบโรมัน — ถนนโรมันปูหินออกจากนคร ท่อส่งน้ำ · เมืองโอเอซิสรายรอบ · ทะเลทราย Rumedam รอบนอกคงเดิม |
+| **Ank'Harel** | 2 | นครใหญ่ | นครหลวงจักรวรรดิแบบโรมัน — ถนนโรมันปูหินออกจากนคร ท่อส่งน้ำ · เมืองโอเอซิสรายรอบ · ทะเลทราย Deshret รอบนอกคงเดิม |
 | **Jrusar** | 2 | นครใหญ่ | นครห้ายอดแบบไทย วัด เจดีย์ · ฐาน The Skyward Line (ท่าเรือเหาะ) |
-| **Yios** | 2 | นคร | มหาวิทยาลัยโบราณแบบอินเดีย กลางป่า Aeshanadoor — ภายนอกคงป่า |
+| **Yios** | 2 | นคร | มหาวิทยาลัยโบราณแบบอินเดีย กลางป่า Dandaka — ภายนอกคงป่า |
 | **Sruwargas** | 2 | นคร | นครทหารแบบสปาร์ตา หอคอยผู้พิชิต ถนนทหารบนภูเขา |
-| **Hellcatch Valley** (Gujjar-Serai, Bassuras) | 1–2 | เมืองเล็ก + ค่ายเผ่า | ดินแดนบาร์บาเรียน — ทางเดินคาราวาน ไม่มีถนนใหญ่ |
+| **Ulfdal** (Gujjar-Serai, Bassuras) | 1–2 | เมืองเล็ก + ค่ายเผ่า | ดินแดนบาร์บาเรียน — ทางเดินคาราวาน ไม่มีถนนใหญ่ |
 | **Shammel** | 2 | เมือง | เมืองท่าชาวเรือแบบไวกิ้ง |
-| Rumedam Desert | 0–1 | — | **คงทะเลทราย** ชนเผ่าเร่ร่อน สุสานยุค Founding |
-| ป่า Aeshanadoor | 0 | — | **คงป่าดิบ** |
+| Deshret | 0–1 | — | **คงทะเลทราย** ชนเผ่าเร่ร่อน สุสานยุค Founding |
+| ป่า Dandaka | 0 | — | **คงป่าดิบ** |
 
 ### 🌊 Eldmere (ซากของ Nethmar)
 (ปรับ 2026-10-21, canon ข้อ 24) **Eldmere** — ถิ่นของเผ่ายิ่งใหญ่โบราณ (มังกร ธาตุโบราณ ฯลฯ) แต่ละตนมีถิ่นของตัวเองกระจายตามเกาะ · พายุเวทล้อมรอบ เรือธรรมดาแทบเข้าไม่ได้ → **ไม่มีท่าเรือ ไม่มีเส้นทางเรือผ่าน** · ~~ยุคโจรสลัด Ossended Host / Wanderman Assembly~~ ตัดออก
@@ -148,7 +148,7 @@
 | ชนิด | เส้นทาง |
 |---|---|
 | **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Emon, Kymal, Westruun, Stilben, Tz'Arrm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
-| **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Rumedam ลึก, Aeshanadoor, Gråmark) |
+| **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
 | **เส้นทางเรือ** | Emon ↔ Nicodranas/Port Damali ↔ Stilben · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Shorecomb) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
 | **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Jrusar + Ank'Harel → **Emon** และ **Port Damali** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Vasselheim และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
 | **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Emon, Rexxentrum, Rosohna, Port Damali, Ank'Harel, Jrusar, เมืองหลวงจีน — ไม่มีที่ Vasselheim (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
