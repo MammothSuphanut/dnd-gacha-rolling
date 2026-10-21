@@ -161,43 +161,43 @@
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Allowak's Sanctuary | **Yeti's Hollow** | [allowaks-sanctuary.md](../../exandria/wildemount/eiselcross/allowaks-sanctuary.md) | ✅ | ✅ | ☐ | ☐ |
-| Tomb of the Worm | **Wormgrave** | [tomb-of-the-worm.md](../../exandria/wildemount/eiselcross/tomb-of-the-worm.md) | ✅ | ✅ | ☐ | ☐ |
-| River Inferno | **Emberflow** | [river-inferno.md](../../exandria/wildemount/eiselcross/river-inferno.md) | ✅ | ✅ | ☐ | ☐ |
-| Foren | **Highfrost** | [foren.md](../../exandria/wildemount/eiselcross/foren.md) | ✅ | ✅ | ☐ | ☐ |
-| Gelier | **Glacia** | [gelier.md](../../exandria/wildemount/eiselcross/gelier.md) | ✅ | ✅ | ☐ | ☐ |
-| Biessel | **Northend** | [biessel.md](../../exandria/wildemount/eiselcross/biessel.md) | ✅ | ✅ | ☐ | ☐ |
-| Dampfkan | **Coldfire** | [dampfkan.md](../../exandria/wildemount/eiselcross/dampfkan.md) | ✅ | ✅ | ☐ | ☐ |
-| Frostbogen | **Whiteout** | [frostbogen.md](../../exandria/wildemount/eiselcross/frostbogen.md) | ✅ | ✅ | ☐ | ☐ |
-| Schneescel | **Snowveil** | [schneescel.md](../../exandria/wildemount/eiselcross/schneescel.md) | ✅ | ✅ | ☐ | ☐ |
-| Kaltsel | **Icelet** | [kaltsel.md](../../exandria/wildemount/eiselcross/kaltsel.md) | ✅ | ✅ | ☐ | ☐ |
-| Taergoss | **Fishholm** | [taergoss.md](../../exandria/wildemount/eiselcross/taergoss.md) | ✅ | ✅ | ☐ | ☐ |
-| Balenpost | **Westpost** | [balenpost.md](../../exandria/wildemount/eiselcross/balenpost.md) | ✅ | ✅ | ☐ | ☐ |
-| Mutalos | **Shiftlands** | [mutalos.md](../../exandria/wildemount/eiselcross/mutalos.md) | ✅ | ✅ | ☐ | ☐ |
-| Vurmas | **Duskraft** | [vurmas.md](../../exandria/wildemount/eiselcross/vurmas.md) | ✅ | ✅ | ☐ | ☐ |
-| Syrinlya | **Syrinlya (คงเดิม)** | [syrinlya.md](../../exandria/wildemount/eiselcross/syrinlya.md) | ✅ | ✅ | ☐ | ☐ |
-| Aeor | **Aeor (คงเดิม)** | [aeor.md](../../exandria/wildemount/eiselcross/aeor.md) | ✅ | ✅ | ☐ | ☐ |
-| Salsvault | **Salsvault (คงเดิม)** | [salsavault.md](../../exandria/wildemount/eiselcross/salsavault.md) | ✅ | ✅ | ☐ | ☐ |
-| Fortress of the Dead Jarl | **Fortress of the Dead Jarl (คงเดิม)** | [fortress-of-the-dead-jarl.md](../../exandria/wildemount/eiselcross/fortress-of-the-dead-jarl.md) | ✅ | ✅ | ☐ | ☐ |
+| Allowak's Sanctuary | **Yeti's Hollow** | [allowaks-sanctuary.md](../../exandria/wildemount/eiselcross/allowaks-sanctuary.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Tomb of the Worm | **Wormgrave** | [tomb-of-the-worm.md](../../exandria/wildemount/eiselcross/tomb-of-the-worm.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| River Inferno | **Emberflow** | [river-inferno.md](../../exandria/wildemount/eiselcross/river-inferno.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Foren | **Highfrost** | [foren.md](../../exandria/wildemount/eiselcross/foren.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Gelier | **Glacia** | [gelier.md](../../exandria/wildemount/eiselcross/gelier.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Biessel | **Northend** | [biessel.md](../../exandria/wildemount/eiselcross/biessel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Dampfkan | **Coldfire** | [dampfkan.md](../../exandria/wildemount/eiselcross/dampfkan.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Frostbogen | **Whiteout** | [frostbogen.md](../../exandria/wildemount/eiselcross/frostbogen.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Schneescel | **Snowveil** | [schneescel.md](../../exandria/wildemount/eiselcross/schneescel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Kaltsel | **Icelet** | [kaltsel.md](../../exandria/wildemount/eiselcross/kaltsel.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Taergoss | **Fishholm** | [taergoss.md](../../exandria/wildemount/eiselcross/taergoss.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Balenpost | **Westpost** | [balenpost.md](../../exandria/wildemount/eiselcross/balenpost.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Mutalos | **Shiftlands** | [mutalos.md](../../exandria/wildemount/eiselcross/mutalos.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Vurmas | **Duskraft** | [vurmas.md](../../exandria/wildemount/eiselcross/vurmas.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Syrinlya | **Syrinlya (คงเดิม)** | [syrinlya.md](../../exandria/wildemount/eiselcross/syrinlya.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Aeor | **Aeor (คงเดิม)** | [aeor.md](../../exandria/wildemount/eiselcross/aeor.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Salsvault | **Salsvault (คงเดิม)** | [salsavault.md](../../exandria/wildemount/eiselcross/salsavault.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Fortress of the Dead Jarl | **Fortress of the Dead Jarl (คงเดิม)** | [fortress-of-the-dead-jarl.md](../../exandria/wildemount/eiselcross/fortress-of-the-dead-jarl.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### ❄️ Aldenreich — Gråmark
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|
-| Shadycreek Run | **Shadeby** | [shadycreek-run.md](../../exandria/wildemount/greying-wildlands/shadycreek-run.md) | ✅ | ✅ | ☐ | ☐ |
-| Cinderrest Sanctum | **Ashrest Shrine** | [cinderrest-sanctum.md](../../exandria/wildemount/greying-wildlands/cinderrest-sanctum.md) | ✅ | ✅ | ☐ | ☐ |
-| Quannah Breach | **Wolfgate** | [quannah-breach.md](../../exandria/wildemount/greying-wildlands/quannah-breach.md) | ✅ | ✅ | ☐ | ☐ |
-| Ruins of Molaesmyr | **Elvenfall Ruins** | [ruins-of-molaesmyr.md](../../exandria/wildemount/greying-wildlands/ruins-of-molaesmyr.md) | ✅ | ✅ | ☐ | ☐ |
-| Blooming Grove | **Bloomgrove** | [blooming-grove.md](../../exandria/wildemount/greying-wildlands/blooming-grove.md) | ✅ | ✅ | ☐ | ☐ |
-| Uthodurn | **Twinhold** | [uthodurn.md](../../exandria/wildemount/greying-wildlands/uthodurn.md) | ✅ | ✅ | ☐ | ☐ |
-| Boroftkrah | **Grakmoot** | [boroftkrah.md](../../exandria/wildemount/greying-wildlands/boroftkrah.md) | ✅ | ✅ | ☐ | ☐ |
-| Kravaraad | **Blackfell** | [kravaraad.md](../../exandria/wildemount/greying-wildlands/kravaraad.md) | ✅ | ✅ | ☐ | ☐ |
-| Mythburrow | **Ivoryden** | [mythburrow.md](../../exandria/wildemount/greying-wildlands/mythburrow.md) | ✅ | ✅ | ☐ | ☐ |
-| Savalirwood | **Greypine** | [savalirwood.md](../../exandria/wildemount/greying-wildlands/savalirwood.md) | ✅ | ✅ | ☐ | ☐ |
-| Uraliss | **Haverby** | [uraliss.md](../../exandria/wildemount/greying-wildlands/uraliss.md) | ✅ | ✅ | ☐ | ☐ |
+| Shadycreek Run | **Shadeby** | [shadycreek-run.md](../../exandria/wildemount/greying-wildlands/shadycreek-run.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Cinderrest Sanctum | **Ashrest Shrine** | [cinderrest-sanctum.md](../../exandria/wildemount/greying-wildlands/cinderrest-sanctum.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Quannah Breach | **Wolfgate** | [quannah-breach.md](../../exandria/wildemount/greying-wildlands/quannah-breach.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Ruins of Molaesmyr | **Elvenfall Ruins** | [ruins-of-molaesmyr.md](../../exandria/wildemount/greying-wildlands/ruins-of-molaesmyr.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Blooming Grove | **Bloomgrove** | [blooming-grove.md](../../exandria/wildemount/greying-wildlands/blooming-grove.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Uthodurn | **Twinhold** | [uthodurn.md](../../exandria/wildemount/greying-wildlands/uthodurn.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Boroftkrah | **Grakmoot** | [boroftkrah.md](../../exandria/wildemount/greying-wildlands/boroftkrah.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Kravaraad | **Blackfell** | [kravaraad.md](../../exandria/wildemount/greying-wildlands/kravaraad.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Mythburrow | **Ivoryden** | [mythburrow.md](../../exandria/wildemount/greying-wildlands/mythburrow.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Savalirwood | **Greypine** | [savalirwood.md](../../exandria/wildemount/greying-wildlands/savalirwood.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Uraliss | **Haverby** | [uraliss.md](../../exandria/wildemount/greying-wildlands/uraliss.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 | Palebank Village | **Palebank Village (คงเดิม)** | [palebank-village.md](../../exandria/wildemount/greying-wildlands/palebank-village.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
-| Crystalsands Tundra | **Glimmer Tundra** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
-| Flotket Alps | **Whitehorn Alps** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Crystalsands Tundra | **Glimmer Tundra** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| Flotket Alps | **Whitehorn Alps** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ☐ |
 | Rime Plains | **Hoarfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 
 ### ❄️ Aldenreich — Ödland
