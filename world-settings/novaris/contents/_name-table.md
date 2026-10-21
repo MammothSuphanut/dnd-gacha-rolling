@@ -408,3 +408,16 @@
 | Otaladume | **Ban Klang** | [otaladume.md](../../exandria/marquet/oderan-wilds/otaladume.md) | ✅ | ✅ | ☐ | ☐ |
 | Sapiro Haven | **Tha Samut** | [sapiro-haven.md](../../exandria/marquet/oderan-wilds/sapiro-haven.md) | ✅ | ✅ | ☐ | ☐ |
 | Serpentwind Peaks | **Naga Range** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### ☀️ Suvarna — Dandaka
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Yios | **Jyotipura** | [yios.md](../../exandria/marquet/aeshanadoor/yios.md) | ✅ | ✅ | ☐ | ☐ |
+| Aruati | **Matsya** | [aruati.md](../../exandria/marquet/aeshanadoor/aruati.md) | ✅ | ✅ | ☐ | ☐ |
+| Barinak | **Vrika** | [barinak.md](../../exandria/marquet/aeshanadoor/barinak.md) | ✅ | ✅ | ☐ | ☐ |
+| Qoreo | **Kamala** | [qoreo.md](../../exandria/marquet/aeshanadoor/qoreo.md) | ✅ | ✅ | ☐ | ☐ |
+| Zha'Vrollo (วิหารแห่งหัวใจดุร้าย) | **Ugra Mandir** | [zhavrolle.md](../../exandria/marquet/aeshanadoor/zhavrolle.md) | ✅ | ✅ | ☐ | ☐ |
+| Silken Squall | **Vayupura** | [silken-squall.md](../../exandria/marquet/aeshanadoor/silken-squall.md) | ✅ | ✅ | ☐ | ☐ |
+| Lake Koron | **Lake Prabha** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Gloomed Jungles | **Tamasa Jungle** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
