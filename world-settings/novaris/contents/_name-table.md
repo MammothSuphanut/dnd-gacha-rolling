@@ -369,3 +369,19 @@
 | Pyrah | **Enzan** | [pyrah.md](../../exandria/issylra/othanzia/sunderpeak-mountains/pyrah.md) | ✅ | ✅ | ☐ | ☐ |
 | Muldire | **Kanmon** | [muldire.md](../../exandria/issylra/othanzia/vesper-timberland/muldire.md) | ✅ | ✅ | ☐ | ☐ |
 | Rimecleft | **Futagoyama** | [rimecleft.md](../../exandria/issylra/othanzia/vesper-timberland/rimecleft.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ⛰️ Shenzhou — Jungwon (ครึ่งยุทธภพ)
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Endovaar | **Mokcheon** | [endovaar.md](../../exandria/issylra/demithore-valley/endovaar.md) | ✅ | ✅ | ☐ | ☐ |
+| Hearthdell | **Toji** | [hearthdell.md](../../exandria/issylra/demithore-valley/hearthdell.md) | ✅ | ✅ | ☐ | ☐ |
+| Seedfeld | **Ssiat** | [seedfeld.md](../../exandria/issylra/demithore-valley/seedfeld.md) | ✅ | ✅ | ☐ | ☐ |
+
+### ⛰️ Shenzhou — ฝั่งตะวันตก (Hishari, Ivaadel) + Zenwick
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Zenwick | **Mubong** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| Hishari (ซากเมือง Tumilo) | **Heukseong** | [hishari.md](../../exandria/issylra/unspecified/hishari.md) | ✅ | ✅ | ☐ | ☐ |
+| Ivaadel | **Shiraki** | [ivaadel.md](../../exandria/issylra/unspecified/ivaadel.md) | ✅ | ✅ | ☐ | ☐ |
