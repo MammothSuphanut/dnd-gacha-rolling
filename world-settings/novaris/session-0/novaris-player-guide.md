@@ -348,7 +348,7 @@ class สายเวทไม่ได้หายาก แต่ในโล�
 | The Raven Queen | Vasselheim (Shenzhou) |
 | The Luxon | Lumora (Aldenreich) |
 | Bane | Tz'Arrm (Voxaria) |
-| Moradin | Kraghammer (Voxaria) |
+| Moradin | Deepforge (Voxaria) |
 
 เทพองค์อื่น**ซ่อนตัวกลมกลืนไปกับผู้คน** คนรอบข้างไม่รู้ว่าเป็นใคร
 
@@ -462,7 +462,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | Kymal | เมืองคาสิโนแบบลาสเวกัส/มาเก๊า นีออนเวททั้งคืน | 5 |
 | Stilben | เมืองท่ามาเฟีย/ยากูซ่าสมัยใหม่ | 5 |
 | Whitestone | เมืองกอธิกบนเขา ต้นไม้ของ Pelor บรรษัทอาวุธยักษ์ของทวีป | 5 |
-| Kraghammer | นครดวาร์ฟใต้พิภพ เหมือง mithral วิศวกรรมหนัก | 5 |
+| Deepforge | นครดวาร์ฟใต้พิภพ เหมือง mithral วิศวกรรมหนัก | 5 |
 | Syngorn | นครเอลฟ์ปิดตัว กำแพงหยก เวทสูงที่ล้ำกว่าข้างนอก ปกครองโดยดวงดาว Oren | 5 |
 | Tz'Arrm | รัฐทหารเผด็จการสมัยใหม่ของฮอบกอบลิน (Iron Authority) | 5 |
 | Riftwild | เขต Gate/ดันเจี้ยน ป่าที่มอนสเตอร์ล้น ซากโบราณ | เขตอันตราย |
@@ -573,7 +573,7 @@ Glasya และ Graz'zt เหลือเป็นผู้ครองนร�
 | 14 Julvar | คืนกลางฤดูร้อน | Midsummer | The Verge ราชสำนักของ Titania เปิดรับแขก |
 | 12 Augast | วันรวมชาติ | Bastille Day | Lumen City |
 | 🌙 จันทร์เต็มดวงของ Septheim | ไหว้พระจันทร์ | ไหว้พระจันทร์ | ทั่วโลก ฉลองการเก็บเกี่ยว |
-| ปลาย Septheim | เทศกาลถังเบียร์ | Oktoberfest | Kraghammer (Moradin มาดื่มด้วย) |
+| ปลาย Septheim | เทศกาลถังเบียร์ | Oktoberfest | Deepforge (Moradin มาดื่มด้วย) |
 | 🌙 จันทร์ดับของ Octavel | เทศกาลแห่งแสง | ดิวาลี | Lumora ตะเกียงนับล้านถวาย The Luxon |
 | 28 Octavel | คืนม่านบาง | ฮาโลวีน | ทั่วโลก สวมหน้ากากให้ "สิ่งที่มองเข้ามาจากข้างนอก" จำหน้าไม่ได้ |
 | 1–2 Novrin | วันแห่งการจดจำ | Día de los Muertos | ทั่วโลก จุดเทียนรำลึกผู้ตายและบูชา The Raven Queen |

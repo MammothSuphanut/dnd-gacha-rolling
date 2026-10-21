@@ -55,7 +55,7 @@
 | **Voxaria** | **18.5 ล้าน** | | |
 | · Crownshore · Heartland · Blacktide Coast · Thunderspine (Lumen City, Westruun, Kymal, Stilben ฯลฯ) | 14.5 ล้าน | 75% | **Lumen City ~3.5 ล้าน** (ใหญ่สุดในโลก) · Kymal ~1.5 ล้าน · Westruun ~1 ล้าน · Stilben ~800k · เมืองบริวาร/ชานเมืองอีกหลายสิบแห่ง |
 | · รัฐ Iron Authority | 2.5 ล้าน | 70% | Tz'Arrm ~900k |
-| · รัฐ Forgeheim (Kraghammer) · Gloamwood (Whitestone) | 1.5 ล้าน | — | Kraghammer ~250k (CR 73,550 ปี 836 PD) · Whitestone ~250k · ~~Syngorn ~80k~~ (ย้ายไปเกาะ — canon ข้อ 24) |
+| · รัฐ Forgeheim (Deepforge) · Gloamwood (Whitestone) | 1.5 ล้าน | — | Deepforge ~250k (CR 73,550 ปี 836 PD) · Whitestone ~250k · ~~Syngorn ~80k~~ (ย้ายไปเกาะ — canon ข้อ 24) |
 | · เขต Gate (Riftwild, The Verge) | — | — | ไม่มีผู้อยู่อาศัยถาวร — ฐานฮันเตอร์ตามขอบเขต |
 | **Shenzhou** | **32.5 ล้าน** | | |
 | · Tianchao (อาณาจักรแบบจีน) | 14 ล้าน | 10% | เมืองหลวง ~400k · นครรอง 3–5 แห่ง ~50–150k |
@@ -88,7 +88,7 @@
 | **Kymal** | 5 | มหานคร | เมืองคาสิโนนีออน ถนนทุกสายวิ่งเข้าเมือง |
 | **Stilben** | 5 | นครใหญ่ | ท่าเรือสินค้าใหญ่ เขตเมืองหนาแน่น — ถิ่นมาเฟีย/ยากูซ่า |
 | **Whitestone** | 5 | นครใหญ่ | นิคมอุตสาหกรรมอาวุธ · ป่า Gloamwood ใกล้เมืองหายเป็นแถบ |
-| **Kraghammer** | 5 | นครใหญ่ (ใต้ดิน) | เหมือง mithral + วิศวกรรมหนัก · รถไฟขนแร่ |
+| **Deepforge** | 5 | นครใหญ่ (ใต้ดิน) | เหมือง mithral + วิศวกรรมหนัก · รถไฟขนแร่ |
 | **Syngorn** | 5 | นคร | **ไม่ขยาย** — นครเอลฟ์ปิดตัว กำแพงหยก |
 | **Tz'Arrm** (Iron Authority) | 5 | นครใหญ่ | ฐานทัพ ฐานขีปนาวุธ แนวป้องกันชายแดน |
 | Riftwild | เขต Gate | — | **ป่าดิบคงอยู่** แต่ล้อมรั้ว มีฐานฮันเตอร์ตามขอบ · ซาก Qoniira = ดันเจี้ยน |

@@ -79,7 +79,7 @@
 | The Luxon | Lumora (Aldenreich) | ศรัทธาของ Lumenvael Dynasty |
 | Erathis | Lumen City (Voxaria) | **ผู้ปกครอง Voxaria** ทั้งทวีป (ปรับ 2026-10-21 — เดิมซ่อนตัวกลมกลืนในสาธารณรัฐ) |
 | Bane | Tz'Arrm (Voxaria) | เทพของ Iron Authority |
-| Moradin | Kraghammer (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
+| Moradin | Deepforge (Voxaria) | เทพของนครดวาร์ฟใต้ภูเขา |
 | Titania | The Verge (Voxaria) | ราชินีของเศษเฟย์ที่ติดในโลก |
 
 **ซ่อนตัว**

@@ -276,3 +276,16 @@
 | Shalesteps | **Cliffsteps** | [shalesteps.md](../../exandria/tal-dorei/bladeshimmer-shoreline/shalesteps.md) | ✅ | ✅ | ☐ | ☐ |
 | Puddlefoot | **Brookfoot** | [puddlefoot.md](../../exandria/tal-dorei/bladeshimmer-shoreline/puddlefoot.md) | ✅ | ✅ | ☐ | ☐ |
 | Emon | **Lumen City** | [emon.md](../../exandria/tal-dorei/bladeshimmer-shoreline/emon.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — Forgeheim
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Fort Daxio | **Fort Granite** | [fort-daxio.md](../../exandria/tal-dorei/cliffkeep-mountains/fort-daxio.md) | ✅ | ✅ | ☐ | ☐ |
+| Othendin Pass | **Giantstep Pass** | [othendin-pass.md](../../exandria/tal-dorei/cliffkeep-mountains/othendin-pass.md) | ✅ | ✅ | ☐ | ☐ |
+| Reaching Bluff | **Goldbluff** | [reaching-bluff.md](../../exandria/tal-dorei/cliffkeep-mountains/reaching-bluff.md) | ✅ | ✅ | ☐ | ☐ |
+| Jorenn Village | **Hillmarket** | [jorenn-village.md](../../exandria/tal-dorei/cliffkeep-mountains/jorenn-village.md) | ✅ | ✅ | ☐ | ☐ |
+| Kraghammer | **Deepforge** | [kraghammer.md](../../exandria/tal-dorei/cliffkeep-mountains/kraghammer.md) | ✅ | ✅ | ☐ | ☐ |
+| Lyrengorn | **Elvenpeak** | [lyrengorn.md](../../exandria/tal-dorei/cliffkeep-mountains/lyrengorn.md) | ✅ | ✅ | ☐ | ☐ |
+| Gatsibadow | **Gloomvale** | [gatsibadow.md](../../exandria/tal-dorei/cliffkeep-mountains/gatsibadow.md) | ✅ | ✅ | ☐ | ☐ |
+| Terrah | **Earthward** | [terrah.md](../../exandria/tal-dorei/cliffkeep-mountains/terrah.md) | ✅ | ✅ | ☐ | ☐ |
