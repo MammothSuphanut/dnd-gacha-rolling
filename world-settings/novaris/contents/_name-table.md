@@ -320,3 +320,13 @@
 |---|---|---|---|---|---|---|
 | Skyanchor Citadel | **Giantkeep** | [skyanchor-citadel.md](../../exandria/tal-dorei/parchwood-timberlands/skyanchor-citadel.md) | ✅ | ✅ | ☐ | ☐ |
 | Whitestone | **Sunspire** | [whitestone.md](../../exandria/tal-dorei/parchwood-timberlands/whitestone.md) | ✅ | ✅ | ☐ | ☐ |
+
+### 🌾 Voxaria — Thunderspine
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Ashen Gorge | **Twinfire Gorge** | [ashen-gorge.md](../../exandria/tal-dorei/stormcrest-mountains/ashen-gorge.md) | ✅ | ✅ | ☐ | ☐ |
+| Cavern of Axiom | **Riddle Cavern** | [cavern-of-axiom.md](../../exandria/tal-dorei/stormcrest-mountains/cavern-of-axiom.md) | ✅ | ✅ | ☐ | ☐ |
+| Shivergut Tribe | **Frostfang Tribe** | [shivergut-tribe.md](../../exandria/tal-dorei/stormcrest-mountains/shivergut-tribe.md) | ✅ | ✅ | ☐ | ☐ |
+| Bronbog | **Mushmire** | [bronbog.md](../../exandria/tal-dorei/stormcrest-mountains/bronbog.md) | ✅ | ✅ | ☐ | ☐ |
+| Ruhn-Shak | **Deepshade** | [ruhn-shak.md](../../exandria/tal-dorei/stormcrest-mountains/ruhn-shak.md) | ✅ | ✅ | ☐ | ☐ |
