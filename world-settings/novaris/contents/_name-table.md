@@ -435,3 +435,20 @@
 | Dead Man's Crater | **Draugr Crater** | [dead-mans-crater.md](../../exandria/marquet/hellcatch-valley/dead-mans-crater.md) | ✅ | ✅ | ☐ | ☐ |
 | Tishtan excavation site | **Nomad's Dig** | [tishtan-excavation-site.md](../../exandria/marquet/hellcatch-valley/tishtan-excavation-site.md) | ✅ | ✅ | ☐ | ☐ |
 | The Rift | **Wolfcliff** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### ☀️ Suvarna — Ehrvarn Highlands
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Sruwargas | **Ehrenburg** | [sruwargas.md](../../exandria/marquet/taloned-highlands/sruwargas.md) | ✅ | ✅ | ☐ | ☐ |
+| Gelvaan | **Grenfeld** | [gelvaan.md](../../exandria/marquet/taloned-highlands/gelvaan.md) | ✅ | ✅ | ☐ | ☐ |
+| Coven Peaks | **Helm Peaks** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### ☀️ Suvarna — Jarnfell + ทุ่งตอนเหนือ
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Shammel | **Giftvik** | [shammel.md](../../exandria/marquet/aggrad-mountains/shammel.md) | ✅ | ✅ | ☐ | ☐ |
+| Vault of Shumas | **Serpent Vault** | [vault-of-shumas.md](../../exandria/marquet/aggrad-mountains/vault-of-shumas.md) | ✅ | ✅ | ☐ | ☐ |
+| Bay of Gifts | **Giftvik Bay** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+| ทุ่งตอนเหนือ (ชนเผ่าแบบอินเดียนแดง) | **Windgrass Plains** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |

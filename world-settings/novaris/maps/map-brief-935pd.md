@@ -67,8 +67,8 @@
 | · Himmapan Wilds (Benjasila) | 3 ล้าน | 12% | Benjasila ~150k |
 | · Dandaka (Jyotipura) | 3 ล้าน | 10% | Jyotipura ~80k |
 | · Ulfdal | 2.5 ล้าน | 5% | Vargholm ~25k · Steinborg ~15k · ค่ายเผ่าบาร์บาเรียน |
-| · Ehrvarn Highlands | 2 ล้าน | 10% | Sruwargas ~60k |
-| · ชายฝั่งเหนือ + ชนเผ่าเร่ร่อน | 2 ล้าน | — | Shammel ~30k (ไวกิ้ง) · ชนเผ่าเร่ร่อนแบบอินเดียนแดงในทุ่งตอนเหนือ — ค่าย/กระโจม ไม่มีเมืองถาวร |
+| · Ehrvarn Highlands | 2 ล้าน | 10% | Ehrenburg ~60k |
+| · ชายฝั่งเหนือ + ชนเผ่าเร่ร่อน | 2 ล้าน | — | Giftvik ~30k (ไวกิ้ง) · ชนเผ่าเร่ร่อนแบบอินเดียนแดงใน Windgrass Plains — ค่าย/กระโจม ไม่มีเมืองถาวร |
 | **Eldmere** | — | — | ไม่มีเมืองมนุษย์ — ถิ่นของเผ่าโบราณ (canon ข้อ 24) · 2 ล้านเดิม (ชาวเรือ) ย้ายไปทวีปอื่นทวีปละ 0.5 ล้าน: Lagunara Concord, Voxaria, Amanokado, ชายฝั่งเหนือ Suvarna |
 | **รวม** | **100 ล้าน** | ~22% | |
 
@@ -132,9 +132,9 @@
 | **Solaria** | 2 | นครใหญ่ | นครหลวงจักรวรรดิแบบโรมัน — ถนนโรมันปูหินออกจากนคร ท่อส่งน้ำ · เมืองโอเอซิสรายรอบ · ทะเลทราย Deshret รอบนอกคงเดิม |
 | **Benjasila** | 2 | นครใหญ่ | นครห้ายอดแบบไทย วัด เจดีย์ · ฐาน The Skyward Line (ท่าเรือเหาะ) |
 | **Jyotipura** | 2 | นคร | มหาวิทยาลัยโบราณแบบอินเดีย กลางป่า Dandaka — ภายนอกคงป่า |
-| **Sruwargas** | 2 | นคร | นครทหารแบบสปาร์ตา หอคอยผู้พิชิต ถนนทหารบนภูเขา |
+| **Ehrenburg** | 2 | นคร | นครทหารแบบสปาร์ตา หอคอยผู้พิชิต ถนนทหารบนภูเขา |
 | **Ulfdal** (Vargholm, Steinborg) | 1–2 | เมืองเล็ก + ค่ายเผ่า | ดินแดนบาร์บาเรียน — ทางเดินคาราวาน ไม่มีถนนใหญ่ |
-| **Shammel** | 2 | เมือง | เมืองท่าชาวเรือแบบไวกิ้ง |
+| **Giftvik** | 2 | เมือง | เมืองท่าชาวเรือแบบไวกิ้ง |
 | Deshret | 0–1 | — | **คงทะเลทราย** ชนเผ่าเร่ร่อน สุสานยุค Founding |
 | ป่า Dandaka | 0 | — | **คงป่าดิบ** |
 
@@ -149,7 +149,7 @@
 |---|---|
 | **Voxaria** | ทางด่วน + ทางรถไฟเชื่อมทุกเมือง · สนามบินที่ Lumen City, Fortuna, Midgate, Port Noir, Ironhelm (ข้อเสนอ) · อากาศยานสมัยใหม่บินภายในทวีป (และแข่งกับ Skyward Line) · ไม่มีถนนผ่านเขต Gate |
 | **ถนนหลัก (ทวีปอื่น)** | เชื่อมเมืองระดับ 2+ ภายในทวีป · ไม่มีถนนผ่านพื้นที่ระดับ 0 (Deshret ลึก, Dandaka, Gråmark) |
-| **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Port Noir · Voxaria ↔ Suvarna (Shammel) · Shenzhou (Hamamura) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
+| **เส้นทางเรือ** | Lumen City ↔ Belmare/Lagunara ↔ Port Noir · Voxaria ↔ Suvarna (Giftvik) · Shenzhou (Hamamura) ↔ Voxaria · ~~Concord ↔ Eldmere~~ (ตัด — พายุเวทรอบ Eldmere, canon ข้อ 24) |
 | **เรือเหาะ (The Skyward Line)** | ✅ **น้อยที่สุด**: ฮับ Benjasila + Solaria → **Lumen City** และ **Lagunara** เท่านั้น (เมืองการค้าที่เป็นกลาง) · Dwendalian Empire, Lumenvael Dynasty, Kamizono และ Shenzhou ทั้งทวีป**ไม่มีบริการ** — เรือเหาะหายากมาก เห็นได้แค่ใน 4 เมืองนี้ |
 | **Teleportation circle** | ✅ **เฉพาะเมืองหลวง**: Lumen City, Dwendalis, Lumora, Lagunara, Solaria, Benjasila, เมืองหลวงจีน — ไม่มีที่ Kamizono (ระแวงเวทอาร์เคน) · การเดินทางส่วนใหญ่ยังต้องใช้เท้า/เรือ |
 | **คาราวาน Shenzhou** | เส้นทางคาราวานจีน ↔ ญี่ปุ่น ผ่าน Jungwon |
