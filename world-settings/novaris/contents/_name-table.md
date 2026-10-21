@@ -421,3 +421,17 @@
 | Silken Squall | **Vayupura** | [silken-squall.md](../../exandria/marquet/aeshanadoor/silken-squall.md) | ✅ | ✅ | ☐ | ☐ |
 | Lake Koron | **Lake Prabha** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
 | Gloomed Jungles | **Tamasa Jungle** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
+
+### ☀️ Suvarna — Ulfdal
+
+| ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Gujjar-Serai | **Vargholm** | [gujjar-serai.md](../../exandria/marquet/hellcatch-valley/gujjar-serai.md) | ✅ | ✅ | ☐ | ☐ |
+| Bassuras | **Steinborg** | [bassuras.md](../../exandria/marquet/hellcatch-valley/bassuras.md) | ✅ | ✅ | ☐ | ☐ |
+| King's Fall | **Jarlsfall** | [kings-fall.md](../../exandria/marquet/hellcatch-valley/kings-fall.md) | ✅ | ✅ | ☐ | ☐ |
+| Loonpur | **Ravnby** | [loonpur.md](../../exandria/marquet/hellcatch-valley/loonpur.md) | ✅ | ✅ | ☐ | ☐ |
+| Nadigarh | **Sandby** | [nadigarh.md](../../exandria/marquet/hellcatch-valley/nadigarh.md) | ✅ | ✅ | ☐ | ☐ |
+| Rajarma | **Riftwatch** | [rajarma.md](../../exandria/marquet/hellcatch-valley/rajarma.md) | ✅ | ✅ | ☐ | ☐ |
+| Dead Man's Crater | **Draugr Crater** | [dead-mans-crater.md](../../exandria/marquet/hellcatch-valley/dead-mans-crater.md) | ✅ | ✅ | ☐ | ☐ |
+| Tishtan excavation site | **Nomad's Dig** | [tishtan-excavation-site.md](../../exandria/marquet/hellcatch-valley/tishtan-excavation-site.md) | ✅ | ✅ | ☐ | ☐ |
+| The Rift | **Wolfcliff** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ☐ | ☐ |
