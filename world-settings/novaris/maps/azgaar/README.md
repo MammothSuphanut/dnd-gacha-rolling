@@ -16,6 +16,7 @@
 | `heightmaps/exandria-labels.json` | 98 ป้าย: ชื่อทวีป ภูมิภาค/ทะเล/ภูมิประเทศย่อยบนแผนที่ (ชื่อ Novaris) (พิกัดจากแผนที่ต้นฉบับ) |
 | `heightmaps/exandria-biomes.json` | ชื่อ/สี/habitability ของ biome เฉพาะ Exandria (id 13+) — สร้างคู่กับ biome map |
 | `saves/novaris.map` | **แผนที่หลัก** — ไฟล์ .map ของ Azgaar (เปิดได้ทั้งใน app เราและ azgaar.github.io) |
+| `saves/novaris-v1.map` | **Version 1** (2026-10-22, git tag `novaris-map-v1`) — ชื่อ Novaris ครบ, ป้ายไม่ทับกัน · ไฟล์เก็บถาวร ห้ามเซฟทับ (เปิดด้วย `?maplink=...%3Fname%3Dnovaris-v1`) |
 | `exandria-azgaar.patch` | โค้ดที่แก้ใน Azgaar (ลงทะเบียน heightmap "Exandria", อ่าน biome map + biome เพิ่ม, แทนแม่น้ำที่ Azgaar สร้างด้วยแม่น้ำที่ trace, cell สูงสุด 300K, ปิด iceberg, endpoint เซฟ/โหลดลง `saves/`) |
 | `scripts/` | สคริปต์ Python สร้าง heightmap/biome map ใหม่จากแผนที่ต้นฉบับ |
 | `app/` | Azgaar ที่แก้แล้วพร้อมรัน — **ไม่อยู่ใน git** (third-party + node_modules) สร้างใหม่ได้ตามขั้นตอนข้างล่าง |
