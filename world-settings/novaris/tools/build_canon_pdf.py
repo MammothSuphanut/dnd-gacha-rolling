@@ -18,6 +18,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRCS = [ROOT / "contents" / n for n in ("history-timeline.md", "_canon-decisions.md", "population-and-power.md")] + [ROOT.parent.parent / "codex" / "Core-Rules" / "astral-nexus-lore.md"] + [ROOT / "contents" / n for n in ("_location-themes-draft.md", "_cr-nations-reference.md")]
 OUT = ROOT / "exports" / "novaris-canon.pdf"
 CHROME = pathlib.Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe")
+if not CHROME.exists():  # macOS
+    CHROME = pathlib.Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 CSS = """
 @page { size: A4; margin: 18mm 16mm 18mm; }

@@ -16,6 +16,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "session-0" / "novaris-player-guide.md"
 OUT = ROOT / "session-0" / "novaris-player-guide.pdf"
 CHROME = pathlib.Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe")
+if not CHROME.exists():  # macOS
+    CHROME = pathlib.Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 CSS = """
 @page { size: A4; margin: 18mm 16mm 18mm; }
