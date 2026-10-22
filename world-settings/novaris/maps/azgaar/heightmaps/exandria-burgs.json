@@ -719,5 +719,239 @@
   "x": 1536.6,
   "y": 170.6,
   "population": 0.05
+ },
+ {
+  "name": "Brookfoot",
+  "x": 724.23,
+  "y": 440.01,
+  "population": 1.5
+ },
+ {
+  "name": "Goldbluff",
+  "x": 806.1,
+  "y": 308.6,
+  "population": 6
+ },
+ {
+  "name": "Gloomvale",
+  "x": 877.77,
+  "y": 424.07,
+  "population": 0.9
+ },
+ {
+  "name": "Earthward",
+  "x": 816.6,
+  "y": 340.98,
+  "population": 1
+ },
+ {
+  "name": "Bluebasin",
+  "x": 874.9,
+  "y": 501.85,
+  "population": 60
+ },
+ {
+  "name": "Redrock Mines",
+  "x": 869.24,
+  "y": 437.36,
+  "population": 8
+ },
+ {
+  "name": "Silver Junction",
+  "x": 840.37,
+  "y": 455.77,
+  "population": 3
+ },
+ {
+  "name": "Sunbarrow",
+  "x": 905.25,
+  "y": 440.65,
+  "population": 0.05
+ },
+ {
+  "name": "Mirror Lake",
+  "x": 979.62,
+  "y": 376.22,
+  "population": 15
+ },
+ {
+  "name": "Giantkeep",
+  "x": 982.13,
+  "y": 330.05,
+  "population": 3
+ },
+ {
+  "name": "Twinfire Gorge",
+  "x": 900.09,
+  "y": 552.32,
+  "population": 0.05
+ },
+ {
+  "name": "Riddle Cavern",
+  "x": 863.49,
+  "y": 536.83,
+  "population": 0.05
+ },
+ {
+  "name": "Frostfang Tribe",
+  "x": 877.1,
+  "y": 521.3,
+  "population": 4
+ },
+ {
+  "name": "Mushmire",
+  "x": 881.24,
+  "y": 564.84,
+  "population": 0.7
+ },
+ {
+  "name": "Deepshade",
+  "x": 871.21,
+  "y": 563.69,
+  "population": 6
+ },
+ {
+  "name": "Quetza Crown",
+  "x": 833.89,
+  "y": 669.72,
+  "population": 0.05
+ },
+ {
+  "name": "Quetza Fields",
+  "x": 847.54,
+  "y": 661,
+  "population": 0.05
+ },
+ {
+  "name": "Quetza Fort",
+  "x": 823.63,
+  "y": 662.25,
+  "population": 0.05
+ },
+ {
+  "name": "Quetza Temple",
+  "x": 826.3,
+  "y": 678.86,
+  "population": 0.05
+ },
+ {
+  "name": "Glade Hollow",
+  "x": 802.66,
+  "y": 627.78,
+  "population": 20
+ },
+ {
+  "name": "Mirage Keep",
+  "x": 797.63,
+  "y": 554.12,
+  "population": 0.05
+ },
+ {
+  "name": "Veilfalls",
+  "x": 838.62,
+  "y": 560.32,
+  "population": 0.05
+ },
+ {
+  "name": "Fernlake",
+  "x": 851.61,
+  "y": 601.35,
+  "population": 5
+ },
+ {
+  "name": "Faewatch",
+  "x": 830.4,
+  "y": 554.48,
+  "population": 0.2
+ },
+ {
+  "name": "Enzan",
+  "x": 419.09,
+  "y": 371.24,
+  "population": 1
+ },
+ {
+  "name": "Mokcheon",
+  "x": 401.34,
+  "y": 403.06,
+  "population": 20
+ },
+ {
+  "name": "Toji",
+  "x": 364.82,
+  "y": 406.07,
+  "population": 2
+ },
+ {
+  "name": "Heukseong",
+  "x": 249.9,
+  "y": 486.56,
+  "population": 0.05
+ },
+ {
+  "name": "Sandgrave",
+  "x": 384.8,
+  "y": 1047.29,
+  "population": 0.05
+ },
+ {
+  "name": "Sun Ziggurat",
+  "x": 444.31,
+  "y": 940.38,
+  "population": 0.05
+ },
+ {
+  "name": "Ban Nong",
+  "x": 140.6,
+  "y": 915.14,
+  "population": 1.2
+ },
+ {
+  "name": "Ugra Mandir",
+  "x": 466.99,
+  "y": 1016.44,
+  "population": 0.05
+ },
+ {
+  "name": "Vayupura",
+  "x": 588.95,
+  "y": 1020.59,
+  "population": 2
+ },
+ {
+  "name": "Riftwatch",
+  "x": 375.78,
+  "y": 957.08,
+  "population": 0.8
+ },
+ {
+  "name": "Draugr Crater",
+  "x": 354.19,
+  "y": 999.17,
+  "population": 0.05
+ },
+ {
+  "name": "Nomad's Dig",
+  "x": 353.2,
+  "y": 958.56,
+  "population": 0.05
+ },
+ {
+  "name": "Serpent Vault",
+  "x": 327.45,
+  "y": 827.14,
+  "population": 0.05
+ },
+ {
+  "name": "Moriichi",
+  "x": 478.23,
+  "y": 371.31,
+  "population": 10
+ },
+ {
+  "name": "Mubong",
+  "x": 430.05,
+  "y": 252.8,
+  "population": 3
  }
 ]

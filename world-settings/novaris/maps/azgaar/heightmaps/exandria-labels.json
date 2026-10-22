@@ -380,5 +380,185 @@
   "x": 868,
   "y": 725,
   "size": 45
+ },
+ {
+  "text": "Aldenreich",
+  "x": 1600,
+  "y": 705,
+  "size": 130
+ },
+ {
+  "text": "Shenzhou",
+  "x": 130,
+  "y": 250,
+  "size": 130
+ },
+ {
+  "text": "Suvarna",
+  "x": 648,
+  "y": 882,
+  "size": 130
+ },
+ {
+  "text": "Isole Smeralde",
+  "x": 1200,
+  "y": 690,
+  "size": 60
+ },
+ {
+  "text": "Kazan Range",
+  "x": 420,
+  "y": 388,
+  "size": 45
+ },
+ {
+  "text": "Cheonsan",
+  "x": 300,
+  "y": 425,
+  "size": 45
+ },
+ {
+  "text": "Jarnfell",
+  "x": 380,
+  "y": 815,
+  "size": 45
+ },
+ {
+  "text": "Windgrass Plains",
+  "x": 300,
+  "y": 848,
+  "size": 45
+ },
+ {
+  "text": "Stormwall",
+  "x": 1660,
+  "y": 1005,
+  "size": 60
+ },
+ {
+  "text": "Shellward Reach",
+  "x": 1250,
+  "y": 905,
+  "size": 45
+ },
+ {
+  "text": "Wyrmhold Isles",
+  "x": 1450,
+  "y": 925,
+  "size": 45
+ },
+ {
+  "text": "Cinderteeth",
+  "x": 1660,
+  "y": 880,
+  "size": 45
+ },
+ {
+  "text": "Mistholm",
+  "x": 1420,
+  "y": 840,
+  "size": 45
+ },
+ {
+  "text": "Eldwood",
+  "x": 1560,
+  "y": 965,
+  "size": 45
+ },
+ {
+  "text": "Halo Peaks",
+  "x": 1520,
+  "y": 890,
+  "size": 45
+ },
+ {
+  "text": "Emberflow",
+  "x": 1388,
+  "y": 152,
+  "size": 40
+ },
+ {
+  "text": "Feral Isle",
+  "x": 734.4,
+  "y": 574.6,
+  "size": 45
+ },
+ {
+  "text": "Giantstep Pass",
+  "x": 775.6,
+  "y": 380.8,
+  "size": 45
+ },
+ {
+  "text": "Blackcrown Mountain",
+  "x": 868,
+  "y": 410,
+  "size": 45
+ },
+ {
+  "text": "Ironback Ridge",
+  "x": 834.6,
+  "y": 464.5,
+  "size": 45
+ },
+ {
+  "text": "Ivywood",
+  "x": 828,
+  "y": 490,
+  "size": 45
+ },
+ {
+  "text": "Quetza",
+  "x": 833,
+  "y": 679.6,
+  "size": 50
+ },
+ {
+  "text": "Futagoyama",
+  "x": 433.5,
+  "y": 315.3,
+  "size": 45
+ },
+ {
+  "text": "Emberpeak",
+  "x": 452,
+  "y": 958,
+  "size": 45
+ },
+ {
+  "text": "Naga Range",
+  "x": 150,
+  "y": 848,
+  "size": 45
+ },
+ {
+  "text": "Lake Prabha",
+  "x": 492,
+  "y": 1088,
+  "size": 40
+ },
+ {
+  "text": "Tamasa Jungle",
+  "x": 430,
+  "y": 1042,
+  "size": 45
+ },
+ {
+  "text": "Wolfcliff",
+  "x": 330,
+  "y": 985,
+  "size": 45
+ },
+ {
+  "text": "Helm Peaks",
+  "x": 268,
+  "y": 1145,
+  "size": 45
+ },
+ {
+  "text": "Giftvik Bay",
+  "x": 442,
+  "y": 780,
+  "size": 40
  }
 ]
