@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunol Lv4 Options</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="char-sheet.css">
+<style>
+:root{--gold:#6A4AA0;--gold-soft:#ECE5F7;--gold-ink:#3E2870;--band:#C9B6F0}
+.page{gap:3mm;padding:11mm 12mm 9mm}
+.auto{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:3mm;overflow:hidden}
+.auto div{padding:1.6mm 2.5mm;border-right:1px solid var(--line);font-size:8.5pt;line-height:1.35}
+.auto div:last-child{border-right:0}
+.auto b{display:block;font-family:var(--f-mono);font-size:11pt;color:var(--gold-ink)}
+.sec{display:flex;flex-direction:column;gap:1.4mm}
+.sec h2{font-size:12pt;padding-bottom:1mm}
+.rule{display:flex;gap:2mm;flex-wrap:wrap;font-size:8pt}
+.rule span{background:var(--gold-soft);color:var(--gold-ink);border-radius:99px;padding:0 7px;font-weight:600}
+.rule span.x{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:8.2pt;line-height:1.36}
+td{padding:.7mm 1.6mm;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.n{width:40mm;font-weight:600;line-height:1.25}
+td.n small{display:inline;margin-left:4px;font-weight:400;color:var(--muted);font-size:7pt}
+td.s{width:15mm;font-family:var(--f-mono);color:var(--gold);font-size:8pt;white-space:nowrap;letter-spacing:-.5px}
+tr.top td{background:var(--gold-soft)}
+tr.top td.n{color:var(--gold-ink)}
+.skip{font-size:7.6pt;color:var(--muted);line-height:1.4}
+.skip b{color:var(--ink)}
+.pick{border:1.5px solid var(--gold);border-radius:3mm;padding:2mm 3mm;font-size:8.6pt;line-height:1.45;background:#fff}
+.pick h3{font-family:var(--f-display);font-weight:400;font-size:11pt;color:var(--gold-ink);margin-bottom:.6mm}
+.pick ol{margin:0;padding-left:5mm}
+.legend{font-size:7.4pt;color:var(--muted)}
+.asi{display:inline-block;font-size:7.2pt;font-weight:700;padding:0 6px;border-radius:99px;background:var(--gold);color:#fff;margin-right:3px}
+.asi.no{background:var(--fire-soft);color:var(--fire)}
+.foot{margin-top:auto;display:flex;justify-content:space-between;font-size:7pt;color:var(--muted)}
+@media screen{body{background:#E9E6EF}.page{margin:8mm auto;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.12)}}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 : FEAT ============ -->
+<section class="page">
+  <div class="head">
+    <svg class="crest" viewBox="0 0 120 140">
+      <path class="soft line" d="M60 4 L112 20 V66 C112 100 90 124 60 136 C30 124 8 100 8 66 V20 Z" stroke-width="3"/>
+      <path class="fill" d="M60 30 C78 30 90 46 90 64 C90 84 76 98 60 100 C70 92 76 80 76 66 C76 50 70 38 60 30 Z"/>
+      <path class="fill" d="M44 58 L56 70 L44 82 L32 70 Z" opacity=".75"/>
+    </svg>
+    <div>
+      <span class="label">Witsawa · Aeorian Cataclysm · Level up 3 → 4</span>
+      <h1>Lunol <span>Lv 4</span></h1>
+      <p class="sub">Warlock 4 — Celestial · ตัวเลือกที่ต้องเลือก + ที่เปลี่ยนได้ + ตัวที่แนะนำ</p>
+    </div>
+    <div class="pagetag">1 / 3<br><span class="label">Feat</span></div>
+  </div>
+
+  <div class="auto">
+    <div><span class="label">HP</span><b>27 → 35</b>d8 เฉลี่ย 5 + CON 3</div>
+    <div><span class="label">Healing Light</span><b>4 → 5 ลูก</b>ใช้ได้สูงสุดต่อครั้ง = CHA mod</div>
+    <div><span class="label">Pact Slot</span><b>2 × ระดับ 2</b>เท่าเดิม</div>
+    <div><span class="label">Invocation</span><b>3 (เท่าเดิม)</b>ได้เพิ่ม 2 ตัวตอน Lv 5</div>
+  </div>
+
+  <p class="legend">คะแนนเต็ม 5 ดาว ให้ตามบทบาทของ Lunol (ฮีลเลอร์แนวหลัง ยิง EB, AC 14) · แถวสีม่วงคือตัวที่ได้ 4–5 ดาว</p>
+
+  <div class="sec">
+    <h2>Feat <small>Lv 4 · CHA 19 เป็นเลขคี่ feat ทุกตัวยกเว้น Eldritch Adept ให้ +1 CHA จึงดัน CHA เป็น 20 (+5) ได้ฟรี</small></h2>
+    <div class="rule"><span>เลือก 1</span><span class="x">เปลี่ยนภายหลังไม่ได้</span><span class="x">CHA 20: Healing Light ลูกละ +1 · ใช้ได้ 5 ลูก/ครั้ง · EB +1 · DC 15</span></div>
+    <table>
+      <tr class="top"><td class="n">Magic Connoisseur<small>AU · ต้องมี Magic Initiate</small></td><td class="s">★★★★★</td><td><span class="asi">+1 CHA → 20</span> <b>คุ้มที่สุดตอนนี้</b> ได้สเปลล์ Cleric ระดับ 1 + ระดับ 2 แบบ prepared ตลอด ร่ายฟรีอย่างละ 1 ครั้ง/Long Rest และใช้ pact slot ร่ายเพิ่มได้ เปลี่ยนสเปลล์ได้ทุกเลเวล · แนะนำคู่ <b>Command</b> (คุมศัตรู ไม่ต้องใช้สมาธิ) กับ <b>Hold Person</b> หรือ <b>Prayer of Healing</b> ถ้าอยากเน้นฮีล</td></tr>
+      <tr class="top"><td class="n">Evocation Adept<small>AU</small></td><td class="s">★★★★★</td><td><span class="asi">+1 CHA → 20</span> <b>แรงที่สุดในระยะยาว</b> ได้ Chromatic Orb + <b>Shatter</b> (AoE ที่ตี้ยังไม่มี) prepared ตลอด และได้ <b>Fireball</b> ทันทีที่ Lv 5 · EB และ Guiding Bolt เป็นสาย Evocation จึงเติมดาเมจได้เทิร์นละครั้ง ครั้งละไม่เกิน 2 Hit Dice (Lv 4 มี 4d8)</td></tr>
+      <tr class="top"><td class="n">Gift of the Gem Dragon<small>FTD</small></td><td class="s">★★★★☆</td><td><span class="asi">+1 CHA → 20</span> <b>แก้จุดอ่อน AC 14</b> ใช้ Reaction เมื่อโดนตีจากศัตรูในระยะ 10 ฟุต ให้มันเซฟ STR (DC 15) ถ้าเซฟไม่ผ่านโดน 2d8 force และกระเด็น 10 ฟุต ใช้ได้ 2 ครั้ง/Long Rest จึงหนีได้โดยไม่ต้องเปลือง Raven Queen</td></tr>
+      <tr class="top"><td class="n">Abjuration Adept<small>AU</small></td><td class="s">★★★★☆</td><td><span class="asi">+1 CHA → 20</span> <b>เข้ากับสายฮีล</b> ทุกครั้งที่ร่าย Cure Wounds, Healing Word, Aid หรือ Lesser Restoration ด้วย slot (สเปลล์เหล่านี้เป็นสาย Abjuration ใน 2024) Lunol หรือเพื่อน 1 คนได้ temp HP 4 แต้ม · ได้ Shield ตอนนี้ และได้ Mass Cure Wounds ที่ Lv 9 · Lesser Restoration ซ้ำกับ Celestial</td></tr>
+      <tr class="top"><td class="n">Shadow-Touched<small>PHB'24</small></td><td class="s">★★★★☆</td><td><span class="asi">+1 CHA → 20</span> ได้ <b>Invisibility</b> + สเปลล์ระดับ 1 สาย Illusion หรือ Necromancy (เช่น Cause Fear) ร่ายฟรีอย่างละครั้ง/Long Rest · เข้ากับธีม Shadar-Kai ที่สุด</td></tr>
+      <tr><td class="n">Fairy Trickster<small>FRHoF</small></td><td class="s">★★★☆☆</td><td><span class="asi">+1 CHA หรือ DEX → CHA 20</span> เมื่อ EB โดน ให้เป้าเซฟ WIS ถ้าไม่ผ่านจะเซฟทุกอย่างด้วย Disadvantage จนจบเทิร์นหน้า (2 ครั้ง/Long Rest) ใช้ก่อนร่าย Suggestion หรือ Hold Person</td></tr>
+      <tr><td class="n">Spell Sniper<small>PHB'24</small></td><td class="s">★★★☆☆</td><td><span class="asi">+1 CHA → 20</span> ยิงสเปลล์ตอนศัตรูอยู่ติดตัวได้โดยไม่เสีย Disadvantage + ไม่สนกำบังครึ่งตัวและ 3/4 + EB ยิงไกล 180 ฟุต</td></tr>
+      <tr><td class="n">Divination Adept<small>AU</small></td><td class="s">★★☆☆☆</td><td><span class="asi">+1 CHA → 20</span> ได้ Detect Evil and Good + Mind Spike · ใช้ Reaction ให้ Advantage หรือ Disadvantage กับการทอย d20 ได้ 1 ครั้ง/Long Rest (ได้คืนเมื่อร่ายสเปลล์ Divination ด้วย slot)</td></tr>
+      <tr><td class="n">Eldritch Adept<small>TCE</small></td><td class="s">★★☆☆☆</td><td><span class="asi no">ไม่มี +1 stat</span> ได้ Invocation เพิ่ม 1 ตัว เช่น Eldritch Mind หรือ Pact of the Chain แต่ CHA ค้างที่ 19 เสียโอกาสดันเป็น 20 ไปฟรีๆ</td></tr>
+    </table>
+  </div>
+
+  <div class="foot"><span>Lunol · Warlock 3 → 4 · Feat</span><span>1 / 3</span></div>
+</section>
+
+<!-- ============ PAGE 2 : CANTRIP + INVOCATION ============ -->
+<section class="page">
+  <div class="head" style="grid-template-columns:1fr auto">
+    <div><span class="label">Lunol · Level up 3 → 4</span><h1 style="font-size:18pt">Cantrip <span>+</span> Invocation</h1></div>
+    <div class="pagetag">2 / 3</div>
+  </div>
+
+  <div class="sec">
+    <h2>Cantrip <small>Warlock cantrip 2 → 3 ตัว · ไม่นับตัวที่ Lunol มีอยู่แล้ว</small></h2>
+    <div class="rule"><span>เพิ่ม 1</span><span>เปลี่ยน Warlock cantrip เดิมได้ 1 ตัวทุกครั้งที่ขึ้นเลเวล</span><span class="x">ตัวที่ได้จาก Tome / Magic Initiate / Celestial เปลี่ยนไม่ได้</span></div>
+    <table>
+      <tr class="top"><td class="n">Mind Sliver<small>PHB'24 · 60 ฟุต</small></td><td class="s">★★★★★</td><td>เซฟ INT ถ้าไม่ผ่านโดน 1d6 psychic และ<b>เซฟครั้งถัดไป −1d4</b> ใช้เปิดทางก่อนร่าย Suggestion, Hold Person หรือ Dazing Blast</td></tr>
+      <tr class="top"><td class="n">Toll the Dead<small>PHB'24 · 60 ฟุต</small></td><td class="s">★★★★☆</td><td>เซฟ WIS 1d8 necrotic (หรือ 1d12 ถ้าเป้าเลือดไม่เต็ม) ใช้แทน EB กับศัตรูที่ AC สูง</td></tr>
+      <tr class="top"><td class="n">Frostbite<small>XGE · 60 ฟุต</small></td><td class="s">★★★★☆</td><td>เซฟ CON 1d6 cold และศัตรูโจมตีด้วยอาวุธครั้งถัดไปติด <b>Disadvantage</b> ช่วยกันแนวหน้าหรือกันตัวเอง</td></tr>
+      <tr><td class="n">Frightful Start<small>GH:PG'24 · 30 ฟุต</small></td><td class="s">★★★☆☆</td><td>เซฟ WIS ถ้าไม่ผ่านติด Frightened จนถึงเทิร์นหน้า ไม่มีดาเมจ</td></tr>
+      <tr><td class="n">Eldritch Orb<small>VSS'24 · 60 ฟุต</small></td><td class="s">★★★☆☆</td><td>ยิงโดน 1d8 force แล้วระเบิดใส่ศัตรูรอบเป้าในระยะ 5 ฟุต (เซฟ DEX โดนครึ่ง) แต่ไม่ได้บัพจาก Agonizing Blast</td></tr>
+      <tr><td class="n">Shriek<small>VSS'24 · Bonus Action</small></td><td class="s">★★★☆☆</td><td>ผลักศัตรูที่เลือกซึ่งอยู่ติดตัวถอยไป 5 ฟุต ใช้หนีโดยไม่โดน Opportunity Attack แต่ชิง Bonus Action กับ Healing Light</td></tr>
+      <tr><td class="n">Prestidigitation<small>PHB'24</small></td><td class="s">★★★☆☆</td><td>เวทจิปาถะใช้นอกไฟต์ เช่น ทำความสะอาด จุดไฟ หรือทำเครื่องหมาย</td></tr>
+      <tr><td class="n">Infestation<small>XGE · 30 ฟุต</small></td><td class="s">★★☆☆☆</td><td>เซฟ CON 1d6 poison และเป้าเดินสุ่ม 5 ฟุต (ไม่โดน Opportunity Attack)</td></tr>
+      <tr><td class="n">Chill Touch<small>PHB'24 · ประชิด</small></td><td class="s">★★☆☆☆</td><td>1d10 necrotic และเป้าฟื้น HP ไม่ได้จนจบเทิร์นหน้า ใช้กับบอสที่ฮีลตัวเอง แต่ต้องเข้าประชิด</td></tr>
+      <tr><td class="n">Thunderclap<small>PHB'24 · รอบตัว 5 ฟุต</small></td><td class="s">★★☆☆☆</td><td>ทุกตัวรอบตัวเซฟ CON 1d6 thunder ใช้ตอนโดนล้อม</td></tr>
+      <tr><td class="n">Poison Spray<small>PHB'24 · 30 ฟุต</small></td><td class="s">★★☆☆☆</td><td>ยิง 1d12 poison แต่ศัตรูหลายชนิดต้านทาน poison</td></tr>
+      <tr><td class="n">Magic Stone<small>XGE · Bonus Action</small></td><td class="s">★★☆☆☆</td><td>เสกหิน 3 ก้อนให้เพื่อนขว้างได้ (1d6+CHA ใช้ค่าโจมตีของ Lunol) แต่ชิง Bonus Action</td></tr>
+    </table>
+    <p class="skip"><b>ข้ามได้:</b> ตระกูล Blade ทั้งหมดและ True Strike (ต้องใช้อาวุธประชิด) · Lightning Surge (รอบตัว 5 ฟุต เหมือน Thunderclap) · Cheat, Calling Card, Cryptogram, Hocuspocus, Illusory Instrument, Concealed Shot (ใช้นอกไฟต์ ไม่มีผลในการต่อสู้) · ไม่มีข้อมูลในโปรเจกต์: Dim, Ignited Fist, Lightning Strike, Serpent Tongue, Shouting Blast, Vile Strike (YAG)</p>
+  </div>
+
+  <div class="sec">
+    <h2>Eldritch Invocation <small>Lv 4 ไม่ได้เพิ่ม · Lv 5 ได้เพิ่ม 2 ตัว</small></h2>
+    <div class="rule"><span>เพิ่ม 0</span><span>สลับตัวเดิมได้ 1</span><span class="x">ของเดิม: Pact of the Tome · Agonizing Blast · Fiendish Vigor ควรเก็บไว้ทั้ง 3 ตัว</span></div>
+    <table>
+      <tr class="top"><td class="n">Eldritch Mind<small>PHB'24</small></td><td class="s">★★★★★</td><td>ได้ Advantage ตอนเซฟรักษาสมาธิ ช่วยไม่ให้ Hex, Suggestion, Hold Person หลุด · <b>ตัวแรกที่ควรเลือกตอน Lv 5</b></td></tr>
+      <tr class="top"><td class="n">Pact of the Chain<small>PHB'24</small></td><td class="s">★★★★☆</td><td>ได้ Find Familiar แบบพิเศษ (เช่น Pseudodragon หรือ Sprite) · familiar ใช้ Help ให้เพื่อนได้ Advantage และส่ง<b>สเปลล์แบบสัมผัสอย่าง Cure Wounds</b> ไปให้เพื่อนที่อยู่ไกลได้</td></tr>
+      <tr class="top"><td class="n">Repelling Blast<small>PHB'24</small></td><td class="s">★★★★☆</td><td>EB ที่โดนจะผลักเป้า 10 ฟุตต่อลำแสง ใช้ไล่ศัตรูที่เข้าประชิด</td></tr>
+      <tr class="top"><td class="n">Lessons of the First Ones<small>PHB'24</small></td><td class="s">★★★★☆</td><td>ได้ Origin feat 1 อัน เช่น <b>Tough</b> (HP +8 ตอน Lv 4), Alert หรือ Healer (สายฮีล)</td></tr>
+      <tr><td class="n">Lance of Lethargy<small>XGE</small></td><td class="s">★★★☆☆</td><td>EB โดนแล้วลดความเร็วเป้า 10 ฟุต (เทิร์นละครั้ง) ทำให้ศัตรูเข้าถึงแนวหลังยากขึ้น</td></tr>
+      <tr><td class="n">Thief of Five Fates<small>PHB'14</small></td><td class="s">★★☆☆☆</td><td>ร่าย Bane ได้ 1 ครั้ง/Long Rest แต่ต้องใช้ pact slot</td></tr>
+      <tr><td class="n">Armor of Shadows<small>PHB'24</small></td><td class="s">★★☆☆☆</td><td>ร่าย Mage Armor ฟรี ได้ AC 13 + DEX 2 = 15 (มากกว่าเกราะ Studded Leather แค่ +1)</td></tr>
+      <tr><td class="n">Devil's Sight<small>PHB'24</small></td><td class="s">★★☆☆☆</td><td>มองในความมืดได้ 120 ฟุตรวมความมืดจากเวท · Shadar-Kai มี Darkvision อยู่แล้ว</td></tr>
+      <tr><td class="n">Eldritch Spear<small>PHB'24</small></td><td class="s">★★☆☆☆</td><td>EB ยิงได้ไกลขึ้น 30 ฟุตต่อเลเวล Warlock (Lv 4 = 240 ฟุต)</td></tr>
+      <tr><td class="n">Misty Visions<small>PHB'24</small></td><td class="s">★★☆☆☆</td><td>ร่าย Silent Image ได้ไม่จำกัด ใช้สร้างภาพลวงบังทางหรือหลอกศัตรู</td></tr>
+      <tr><td class="n">Grasp of Hadar<small>XGE</small></td><td class="s">★☆☆☆☆</td><td>EB ดึงเป้าเข้าหาตัว 10 ฟุต ซึ่งสวนทางกับการยืนแนวหลังของ Lunol</td></tr>
+    </table>
+    <p class="skip"><b>หมายเหตุ:</b> Gift of the Ever-Living Ones (ฮีลตัวเองได้เต็มลูกเมื่อ familiar อยู่ใกล้) ต้องมี Pact of the Chain ก่อน เป็นตัวเลือกตอน Lv 5 · <b>ข้ามได้:</b> Sigil of Protection, Abyssal Concord (กิน pact slot) · Pale Horse, Beguiling Influence, Eldritch Sight, Aspect of the Moon, Crimson Investigator, Mask of Many Faces, Otherworldly Leap (ใช้นอกไฟต์ หรือซ้ำกับที่มีอยู่แล้ว)</p>
+  </div>
+
+  <div class="foot"><span>Lunol · Warlock 3 → 4 · Cantrip &amp; Invocation · Invocation จาก PHB'14 / XGE / VSS ควรถาม DM ก่อน</span><span>2 / 3</span></div>
+</section>
+
+<!-- ============ PAGE 3 : SPELL + PICK ============ -->
+<section class="page">
+  <div class="head" style="grid-template-columns:1fr auto">
+    <div><span class="label">Lunol · Level up 3 → 4</span><h1 style="font-size:18pt">Spell <span>+ ชุดแนะนำ</span></h1></div>
+    <div class="pagetag">3 / 3</div>
+  </div>
+
+  <div class="sec">
+    <h2>Spell <small>Prepared 4 → 5 ตัว · เลือกได้ระดับ 1–2 · ไม่นับตัวที่ Lunol มีอยู่แล้ว</small></h2>
+    <div class="rule"><span>เพิ่ม 1</span><span>เปลี่ยนสเปลล์เดิมได้ 1 ตัว</span><span class="x">สเปลล์ Celestial ติดตัวอยู่แล้ว ไม่นับรวม</span></div>
+    <table>
+      <tr class="top"><td class="n">Dazing Blast<small>GH:PG'24 · ระดับ 2</small></td><td class="s">★★★★★</td><td>เซฟ CON ถ้าไม่ผ่านโดน 2d6 force และ<b>ติด Stunned จนจบเทิร์นหน้า</b> ไม่ต้องใช้สมาธิ แรงมากสำหรับระดับ 2 (ควรให้ DM อนุมัติก่อน)</td></tr>
+      <tr class="top"><td class="n">Hold Person<small>PHB'24 · ระดับ 2</small></td><td class="s">★★★★★</td><td>ทำให้ศัตรูรูปร่างคนติด Paralyzed เพื่อนที่ตีประชิดได้ Critical ทุกครั้งที่โดน · ใช้สมาธิ จึงใช้พร้อม Hex ไม่ได้</td></tr>
+      <tr class="top"><td class="n">Mirror Image<small>PHB'24 · ระดับ 2</small></td><td class="s">★★★★★</td><td>สร้างร่างแยก 3 ร่างไว้รับการโจมตีแทน<b>โดยไม่ต้องใช้สมาธิ</b> จึงช่วยกันตัวได้ดีที่สุดสำหรับคน AC ต่ำ</td></tr>
+      <tr class="top"><td class="n">Bloat<small>GH:PG'24 · ระดับ 2</small></td><td class="s">★★★★☆</td><td>เซฟ CON โดน 3d10 necrotic (เซฟผ่านโดนครึ่ง) ไม่ต้องใช้สมาธิ ถ้าดาเมจถึงค่า CON ของเป้า มันจะลอยติดอากาศ 1 รอบ</td></tr>
+      <tr class="top"><td class="n">Tasha's Hideous Laughter<small>PHB'24 · ระดับ 1</small></td><td class="s">★★★★☆</td><td>เซฟ WIS ถ้าไม่ผ่านติด Prone + Incapacitated · ใช้สมาธิ · ใช้ได้กับศัตรูทุกรูปร่าง ไม่จำกัดแค่คน</td></tr>
+      <tr class="top"><td class="n">Bane<small>PHB'24 · ระดับ 1</small></td><td class="s">★★★★☆</td><td>ศัตรู 3 ตัวเซฟ CHA ถ้าไม่ผ่านโจมตีและเซฟทุกครั้ง −1d4 · ใช้สมาธิ</td></tr>
+      <tr><td class="n">Aberrate<small>VSS'24 · ระดับ 2</small></td><td class="s">★★★☆☆</td><td>1 นาที ไม่โดน Critical และใช้ Reaction รับ Resistance ต่อชนิดดาเมจที่เพิ่งโดนได้ · ไม่ต้องใช้สมาธิ</td></tr>
+      <tr><td class="n">Invisibility<small>PHB'24 · ระดับ 2</small></td><td class="s">★★★☆☆</td><td>ล่องหน 1 ชั่วโมง ใช้แอบเข้าหรือพาเพื่อนหนี · ใช้สมาธิ</td></tr>
+      <tr><td class="n">Cloud of Daggers<small>PHB'24 · ระดับ 2</small></td><td class="s">★★★☆☆</td><td>มีดหมุนในพื้นที่ 5 ฟุต 4d4 ทุกเทิร์น ใช้ปิดทางเดินแคบ · ใช้สมาธิ</td></tr>
+      <tr><td class="n">Ray of Enfeeblement<small>PHB'24 · ระดับ 2</small></td><td class="s">★★★☆☆</td><td>ศัตรูสาย STR ดาเมจทุกครั้ง −1d8 · เซฟผ่านก็ยังติด Disadvantage 1 ครั้ง · ใช้สมาธิ</td></tr>
+      <tr><td class="n">Life Tether<small>GH:PG'24 · ระดับ 2</small></td><td class="s">★★★☆☆</td><td>ผูกศัตรูไว้ ทุกครั้งที่ Lunol โดนดาเมจ มันโดนครึ่งหนึ่งเป็น necrotic · ใช้สมาธิ</td></tr>
+      <tr><td class="n">Protection from Evil and Good<small>PHB'24 · ระดับ 1</small></td><td class="s">★★★☆☆</td><td>กัน Fiend, Undead, Fey ฯลฯ โจมตีติด Disadvantage และกันการ Charm / Frighten · ใช้สมาธิ</td></tr>
+      <tr><td class="n">Misty Step<small>PHB'24 · ระดับ 2</small></td><td class="s">★★☆☆☆</td><td>วาร์ป 30 ฟุตด้วย Bonus Action แต่ Raven Queen ทำได้อยู่แล้วและดีกว่า</td></tr>
+      <tr><td class="n">Mind Spike<small>PHB'24 · ระดับ 2</small></td><td class="s">★★☆☆☆</td><td>3d8 psychic และตามรู้ตำแหน่งเป้าที่ล่องหนได้ · ใช้สมาธิ</td></tr>
+    </table>
+    <p class="skip"><b>สเปลล์ที่ควรสลับออก:</b> <b>Armor of Agathys</b> ซ้ำกับ Fiendish Vigor เพราะ temp HP ไม่สะสมกัน มี False Life ฟรี 12 แต้มอยู่แล้ว · <b>ข้ามได้:</b> Shadow Blade (อาวุธประชิด), Darkness, Earthbind, Hollowing Curse, Curse Ward, Zephyr's Feather, Fiend Flesh, Flawed Reconstruction (ฮีลแต่ลด HP สูงสุด) · <b>หาข้อมูลไม่เจอ:</b> Uncertain Footing, Battle Familiar (AU) และสเปลล์ YAG ทั้งหมด</p>
+  </div>
+
+  <div class="pick">
+    <h3>ชุดที่แนะนำ</h3>
+    <ol>
+      <li><b>Feat:</b> Magic Connoisseur (Command + Hold Person) → CHA 20 · ถ้าอยากได้ดาเมจและ Fireball ตอน Lv 5 ให้เลือก <b>Evocation Adept</b> · ถ้าโดนศัตรูไล่ตีบ่อยให้เลือก Gift of the Gem Dragon</li>
+      <li><b>Cantrip:</b> Mind Sliver · <b>Spell ใหม่:</b> Mirror Image · <b>สลับออก:</b> Armor of Agathys → Dazing Blast (ถ้า DM ไม่อนุญาต ให้ใช้ Tasha's Hideous Laughter หรือ Bane แทน)</li>
+      <li><b>Invocation:</b> ยังไม่ต้องเปลี่ยน · Lv 5 เลือก <b>Eldritch Mind</b> + Pact of the Chain หรือ Repelling Blast</li>
+    </ol>
+  </div>
+
+  <div class="foot"><span>Lunol · Warlock 3 → 4 · กติกา D&amp;D 2024 · ข้อมูล homebrew จาก VSS / Grim Hollow ในโปรเจกต์</span><span>19 ต.ค. 2026 · 3 / 3</span></div>
+</section>
+</body>
+</html>

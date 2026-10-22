@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>Thalric Dawn-Shield</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+@page{size:A4;margin:0}
+:root{
+  --ink:#18213A; --muted:#5A6380; --line:#D6DAE4; --sunk:#F4F5F8;
+  --gold:#9A6E0C; --gold-soft:#F4E8C6; --gold-ink:#5C4105;
+  --fire:#B23D27; --fire-soft:#F8E1DA; --heal:#23795C; --heal-soft:#DDF1E8; --holy:#3D56A8; --holy-soft:#E3E8F8;
+  --f-display:"Marcellus SC",Georgia,serif;
+  --f-body:"IBM Plex Sans Thai",Tahoma,sans-serif;
+  --f-mono:"IBM Plex Mono",Consolas,monospace;
+}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{margin:0;background:#fff;color:var(--ink);font-family:var(--f-body);font-size:10pt;line-height:1.5}
+.page{width:210mm;height:297mm;padding:13mm 14mm 11mm;display:flex;flex-direction:column;gap:5mm;overflow:hidden;page-break-after:always;position:relative}
+.page:last-child{page-break-after:auto}
+h1,h2,h3,p{margin:0}
+h2{font-family:var(--f-display);font-weight:400;font-size:13pt;letter-spacing:.04em;color:var(--ink);display:flex;align-items:baseline;gap:8px;border-bottom:1.5px solid var(--gold);padding-bottom:1.5mm}
+h2 small{font-family:var(--f-body);font-size:8pt;color:var(--muted);letter-spacing:0}
+h3{font-size:10pt;font-weight:600}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.label{font-size:6.5pt;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+b{font-weight:600}
+
+/* header */
+.head{display:grid;grid-template-columns:24mm 1fr auto;gap:5mm;align-items:center}
+.crest{width:24mm;height:auto}
+.head h1{font-family:var(--f-display);font-weight:400;font-size:26pt;line-height:1.05}
+.head h1 span{color:var(--gold)}
+.sub{color:var(--muted);font-size:9.5pt}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:2mm}
+.chip{font-size:7.5pt;font-weight:600;padding:1px 8px;border-radius:99px;background:var(--sunk);border:1px solid var(--line)}
+.chip.g{background:var(--gold-soft);border-color:transparent;color:var(--gold-ink)}
+.chip.h{background:var(--heal-soft);border-color:transparent;color:var(--heal)}
+.chip.f{background:var(--fire-soft);border-color:transparent;color:var(--fire)}
+.pagetag{font-family:var(--f-display);font-size:9pt;color:var(--gold);text-align:right;align-self:start}
+
+/* stat strip */
+.strip{display:grid;grid-template-columns:repeat(8,1fr);border:1px solid var(--line);border-radius:3mm;overflow:hidden}
+.strip div{padding:2mm 1mm;text-align:center;border-right:1px solid var(--line);display:flex;flex-direction:column}
+.strip div:last-child{border-right:0}
+.strip .big{font-family:var(--f-mono);font-size:15pt;font-weight:600;line-height:1.15}
+.strip .key .big{color:var(--gold)}
+.strip .hint{font-size:6pt;color:var(--muted);line-height:1.25}
+
+.abil{display:grid;grid-template-columns:repeat(6,1fr);gap:2mm}
+.ab{border:1px solid var(--line);background:var(--sunk);border-radius:2mm;padding:1.5mm;text-align:center;position:relative}
+.ab .mod{font-family:var(--f-mono);font-size:14pt;font-weight:600;line-height:1.1}
+.ab .sc{font-size:7pt;color:var(--muted)}
+.ab.save{border-color:var(--gold)}
+.ab.save::after{content:"SAVE";position:absolute;top:1mm;right:1.5mm;font-size:5.5pt;font-weight:700;color:var(--gold);letter-spacing:.06em}
+.ab.dump .mod{color:var(--fire)}
+
+/* pros / cons */
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.pc ul{list-style:none;margin:2mm 0 0;padding:0;display:flex;flex-direction:column;gap:2mm}
+.pc li{position:relative;padding-left:6mm;font-size:9pt;line-height:1.45}
+.pc li::before{position:absolute;left:0;top:.5mm;width:4mm;height:4mm;border-radius:50%;font:700 7pt/4mm var(--f-mono);text-align:center}
+.pros li::before{content:"+";background:var(--heal-soft);color:var(--heal)}
+.cons li::before{content:"!";background:var(--fire-soft);color:var(--fire)}
+.pros h2{border-color:var(--heal)} .cons h2{border-color:var(--fire)}
+.pc li span{display:block;color:var(--muted);font-size:8pt}
+
+/* key abilities */
+.kab{display:grid;grid-template-columns:1fr 1fr;gap:1.5mm 5mm;margin-top:2mm}
+.kab div{font-size:8.5pt;line-height:1.4;padding:1.2mm 0;border-bottom:1px dashed var(--line)}
+.tag{display:inline-block;font-size:6pt;font-weight:700;padding:0 4px;border-radius:2px;margin-left:3px;vertical-align:1px}
+.t-a{background:var(--sunk);color:var(--ink);border:1px solid var(--line)}
+.t-b{background:var(--holy-soft);color:var(--holy)}
+.t-s{background:var(--gold-soft);color:var(--gold-ink)}
+
+/* resources */
+.res{display:grid;grid-template-columns:repeat(6,1fr);gap:2mm;margin-top:2mm}
+.r{border:1px solid var(--line);border-radius:2mm;padding:2mm;display:flex;flex-direction:column;gap:1mm}
+.r .n{font-weight:600;font-size:8pt;line-height:1.25}
+.pips{display:flex;gap:1.5mm}
+.pips i{width:3.6mm;height:3.6mm;border-radius:50%;border:1.3px solid var(--gold)}
+.r .m{font-size:6.5pt;color:var(--muted);line-height:1.3}
+
+/* page 2 */
+.loop{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5mm;margin-top:2mm}
+.st{background:var(--sunk);border-radius:2mm;padding:2.5mm;display:flex;flex-direction:column;gap:1mm}
+.st .k{font-family:var(--f-display);font-size:13pt;color:var(--gold);line-height:1}
+.st h3{font-size:9pt}
+.st p{font-size:8pt;color:var(--muted);line-height:1.4}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm;margin-top:2mm}
+.case{border-left:2.5px solid var(--gold);background:var(--sunk);border-radius:0 2mm 2mm 0;padding:2mm 3mm;display:flex;flex-direction:column;gap:.6mm}
+.case.f{border-color:var(--fire)} .case.h{border-color:var(--heal)} .case.b{border-color:var(--holy)}
+.case strong{font-size:9pt;font-weight:600}
+.case span{font-size:8.2pt;line-height:1.42}
+.case em{font-style:normal;font-size:7pt;color:var(--muted)}
+.party{display:grid;grid-template-columns:repeat(3,1fr);gap:2mm;margin-top:2mm}
+.mate{border:1px solid var(--line);border-radius:2mm;padding:1.8mm 2.5mm;font-size:8pt;line-height:1.38}
+.mate b{display:block;font-size:8.5pt}
+/* advanced pages */
+.adv-band{display:flex;justify-content:space-between;align-items:flex-end;background:var(--ink);color:#fff;margin:-13mm -14mm 0;padding:7mm 14mm 4mm}
+.adv-band .k{font-family:var(--f-mono);font-size:7pt;letter-spacing:.3em;color:#E2B84E}
+.adv-band h1{font-family:var(--f-display);font-weight:400;font-size:20pt;line-height:1.1;color:#fff}
+.adv-band .pg{font-family:var(--f-display);font-size:10pt;color:#E2B84E;text-align:right}
+.adv-band .pg span{display:block;font-family:var(--f-body);font-size:7pt;color:#B9C0D6}
+.intro{font-size:8.5pt;color:var(--muted)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.card{border:1px solid var(--line);border-radius:2mm;padding:2.5mm 3mm;display:flex;flex-direction:column;gap:1.2mm;break-inside:avoid}
+.card.wide{grid-column:1/-1}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:2mm}
+.card h3{font-size:10.5pt}
+.card .src{font-size:6.5pt;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.meta{display:flex;flex-wrap:wrap;gap:1mm}
+.meta span{font-size:6.5pt;font-weight:600;padding:0 5px;border-radius:2px;background:var(--sunk);border:1px solid var(--line)}
+.meta .c{background:var(--holy-soft);border-color:transparent;color:var(--holy)}
+.meta .u{background:var(--gold-soft);border-color:transparent;color:var(--gold-ink)}
+.meta .x{background:var(--fire-soft);border-color:transparent;color:var(--fire)}
+.rule{font-size:8.3pt;line-height:1.45}
+.tip{font-size:8.3pt;line-height:1.45;background:var(--gold-soft);border-radius:1.5mm;padding:1.5mm 2.5mm;color:var(--gold-ink)}
+.tip b{color:var(--gold-ink)}
+.tip::before{content:"วิธีใช้ · ";font-weight:700}
+.note{font-size:8pt;background:var(--sunk);border-radius:2mm;padding:2mm 3mm;line-height:1.45}
+.skills{width:100%;border-collapse:collapse;font-size:8.3pt}
+.skills th{text-align:left;font-size:6.5pt;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);border-bottom:1.5px solid var(--gold);padding:1mm 2mm}
+.skills td{padding:1.3mm 2mm;border-bottom:1px solid var(--line);vertical-align:top}
+.skills td.n{font-family:var(--f-mono);font-weight:600;text-align:center;width:12mm}
+.skills tr.p td:first-child{font-weight:600}
+.foot{margin-top:auto;font-size:6.5pt;color:var(--muted);display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:1.5mm}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 ============ -->
+<section class="page">
+  <div class="head">
+    <svg class="crest" viewBox="0 0 120 140">
+      <path d="M60 4 L112 20 V66 C112 100 90 124 60 136 C30 124 8 100 8 66 V20 Z" fill="#F4E8C6" stroke="#9A6E0C" stroke-width="3"/>
+      <g stroke="#9A6E0C" stroke-width="2.2" stroke-linecap="round">
+        <line x1="60" y1="38" x2="60" y2="28"/><line x1="60" y1="94" x2="60" y2="104"/><line x1="32" y1="66" x2="22" y2="66"/><line x1="88" y1="66" x2="98" y2="66"/>
+        <line x1="40" y1="46" x2="33" y2="39"/><line x1="80" y1="46" x2="87" y2="39"/><line x1="40" y1="86" x2="33" y2="93"/><line x1="80" y1="86" x2="87" y2="93"/>
+      </g>
+      <circle cx="60" cy="66" r="18" fill="#9A6E0C"/><path d="M52 66 L60 54 L68 66 L60 78 Z" fill="#F4E8C6"/>
+    </svg>
+    <div>
+      <span class="label">Witsawa · Aeorian Cataclysm · Level 3</span>
+      <h1>Thalric <span>Dawn-Shield</span></h1>
+      <p class="sub">Paladin 3 — Oath of Devotion · Dragonborn (Gold) · Farmer</p>
+      <div class="chips"><span class="chip g">แทงค์แนวหน้าหลัก</span><span class="chip h">ฮีลสำรอง</span><span class="chip f">ดาเมจระเบิดด้วย Smite</span><span class="chip">หน้าตาเจรจาสำรอง</span></div>
+    </div>
+    <div class="pagetag">1 / 6<br><span class="label">ข้อมูลตัวละคร</span></div>
+  </div>
+
+  <div class="strip">
+    <div class="key"><span class="label">AC</span><span class="big">19</span><span class="hint">Mail 16 + Shield 2 + Defense 1</span></div>
+    <div class="key"><span class="label">HP</span><span class="big">40</span><span class="hint">3d10 + CON + Tough</span></div>
+    <div><span class="label">Speed</span><span class="big">30</span><span class="hint">ฟุต</span></div>
+    <div><span class="label">Init</span><span class="big">+2</span><span class="hint">DEX</span></div>
+    <div><span class="label">Prof</span><span class="big">+2</span><span class="hint">Proficiency</span></div>
+    <div><span class="label">Spell DC</span><span class="big">13</span><span class="hint">CHA</span></div>
+    <div><span class="label">Spear</span><span class="big">+5</span><span class="hint">1d6+3 · Sacred +8</span></div>
+    <div><span class="label">Passive</span><span class="big">10</span><span class="hint">Perception</span></div>
+  </div>
+
+  <div class="abil">
+    <div class="ab"><span class="label">STR</span><div class="mod">+3</div><div class="sc num">16</div></div>
+    <div class="ab"><span class="label">DEX</span><div class="mod">+2</div><div class="sc num">14</div></div>
+    <div class="ab"><span class="label">CON</span><div class="mod">+4</div><div class="sc num">19</div></div>
+    <div class="ab dump"><span class="label">INT</span><div class="mod">−2</div><div class="sc num">7</div></div>
+    <div class="ab save"><span class="label">WIS</span><div class="mod">+0</div><div class="sc num">11 · save +2</div></div>
+    <div class="ab save"><span class="label">CHA</span><div class="mod">+3</div><div class="sc num">17 · save +5</div></div>
+  </div>
+
+  <div class="pc">
+    <div class="pros">
+      <h2>จุดเด่น</h2>
+      <ul>
+        <li><b>ทนที่สุดในตี้</b> AC 19 + HP 40<span>ยืนรับหน้าศัตรูได้นานกว่าใคร ต้านทาน Fire ด้วย</span></li>
+        <li><b>ดาเมจก้อนใหญ่ตอนต้องการ</b> Divine Smite +2d8<span>ตัดสินใจหลังรู้ว่าตีโดน ใส่ undead/fiend ได้ 3d8</span></li>
+        <li><b>ฮีลและปลุกเพื่อนได้</b> Lay on Hands 15 HP<span>ใช้ Bonus Action ปลุกคนล้มได้ทันที ล้างพิษได้</span></li>
+        <li><b>ตีแม่นตลอดไฟต์</b> Sacred Weapon<span>Spear +8 to hit นาน 10 นาที จาก Channel Divinity ครั้งเดียว</span></li>
+        <li><b>มีตัวเลือกคุมฝูง</b> Breath Weapon / Dragon Fear / Command<span>พ่นไฟใส่กลุ่ม หรือทำให้ศัตรูกลัวจนเข้าใกล้ไม่ได้</span></li>
+        <li><b>ฉากสังคมพอไหว</b> Persuasion +5, CHA save +5</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h2>จุดด้อยที่ควรเลี่ยง</h2>
+      <ul>
+        <li><b>INT −2</b><span>อย่าอาสาทอย Arcana / History / Investigation ให้เพื่อนที่ INT สูงทำ</span></li>
+        <li><b>Slot น้อย</b> ร่ายได้ราว 5 ครั้งต่อวัน<span>3 slot + Smite ฟรี 1 + Divine Recovery 1 อย่า Smite หมดตั้งแต่ไฟต์แรก</span></li>
+        <li><b>Bonus Action ชนกัน</b><span>Smite, Lay on Hands, Shield of Faith, Divine Favor เลือกได้อย่างเดียวต่อเทิร์น</span></li>
+        <li><b>ระยะไกลอ่อน</b><span>มีแค่ขว้าง Spear 20/60 ฟุต หรือพ่นไฟแบบเส้น 30 ฟุต ศัตรูบินจะลำบาก</span></li>
+        <li><b>ตีได้ครั้งเดียวต่อเทิร์น</b> (ถึง Lv 5)<span>พ่นไฟ = เสียการตีทั้งเทิร์น ใช้เมื่อโดนได้ 2 ตัวขึ้นไปเท่านั้น</span></li>
+        <li><b>ช้าและไม่มีทางหนี</b><span>เกราะหนัก Speed 30 ไม่มีตัวช่วยเคลื่อนที่ อย่าวิ่งไล่ศัตรูทิ้งแนว</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <h2>ความสามารถหลัก <small><span class="tag t-a">A</span> Action · <span class="tag t-b">BA</span> Bonus Action · <span class="tag t-s">SLOT</span> ใช้ spell slot</small></h2>
+    <div class="kab">
+      <div><b>Spear</b><span class="tag t-a">A</span> +5 · 1d6+3 (สองมือ 1d8+3) · Mastery <b>Sap</b>: ศัตรูที่โดนตีติด Disadvantage ตีครั้งถัดไป</div>
+      <div><b>Divine Smite</b><span class="tag t-b">BA</span><span class="tag t-s">SLOT</span> หลังตีโดน +2d8 radiant · ครั้งแรกของวันฟรี</div>
+      <div><b>Sacred Weapon</b><span class="tag t-a">A</span> ใช้ Channel Divinity ตอนตี · +3 to hit, Radiant, ส่องแสง 20 ฟุต</div>
+      <div><b>Lay on Hands</b><span class="tag t-b">BA</span> ฮีลจากบ่อ 15 HP · 5 แต้มล้าง Poisoned</div>
+      <div><b>Breath Weapon</b><span class="tag t-a">A</span> กรวย 15 / เส้น 30 ฟุต · DEX DC 14 · 1d10 fire</div>
+      <div><b>Shield of Faith</b><span class="tag t-b">BA</span><span class="tag t-s">SLOT</span> เพื่อน AC +2 · Concentration</div>
+      <div><b>Dragon Fear</b><span class="tag t-a">A</span> คำรามแทนพ่นไฟ · 30 ฟุต · WIS DC 13 · Frightened</div>
+      <div><b>Bless</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 3 คน +1d4 attack และ save · Concentration</div>
+      <div><b>Command</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> WIS DC 13 · Grovel / Halt / Drop / Flee</div>
+      <div><b>Cure Wounds</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 2d8+3 · <b>Divine Sense</b> หา undead/fiend 60 ฟุต</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>ทรัพยากรต่อวัน <small>ติ๊กด้วยดินสอระหว่างเล่น</small></h2>
+    <div class="res">
+      <div class="r"><span class="n">Spell Slot Lv 1</span><div class="pips"><i></i><i></i><i></i></div><span class="m">คืนตอน Long Rest</span></div>
+      <div class="r"><span class="n">Smite ฟรี</span><div class="pips"><i></i></div><span class="m">1 / Long Rest</span></div>
+      <div class="r"><span class="n">Channel Divinity</span><div class="pips"><i></i><i></i></div><span class="m">Short Rest คืน 1</span></div>
+      <div class="r"><span class="n">Breath Weapon</span><div class="pips"><i></i><i></i></div><span class="m">แชร์กับ Dragon Fear</span></div>
+      <div class="r"><span class="n">Divine Recovery</span><div class="pips"><i></i></div><span class="m">คืน 1 slot ตอน Short Rest</span></div>
+      <div class="r"><span class="n">Lay on Hands</span><span class="num" style="font-size:10pt">___ / 15</span><span class="m">คืนตอน Long Rest</span></div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Thalric Dawn-Shield · Paladin 3 · กติกา D&amp;D 2024</span><span>ข้อมูลจาก Foundry group W · 12 ต.ค. 2026</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="head" style="grid-template-columns:1fr auto">
+    <div>
+      <span class="label">Thalric Dawn-Shield</span>
+      <h1 style="font-size:22pt">วิธีเล่น<span> ในแต่ละสถานการณ์</span></h1>
+    </div>
+    <div class="pagetag">2 / 6<br><span class="label">คู่มือเล่น</span></div>
+  </div>
+
+  <div>
+    <h2>ลำดับคิดในทุกเทิร์น</h2>
+    <div class="loop">
+      <div class="st"><span class="k">1</span><h3>ยืนขวางไว้</h3><p>อยู่ระหว่างศัตรูกับ Lunol / Salem ให้ศัตรูต้องผ่านเราก่อน</p></div>
+      <div class="st"><span class="k">2</span><h3>มีเพื่อนล้มไหม</h3><p>ถ้ามี เดินไปหาแล้ว Lay on Hands ก่อนทุกอย่าง 1 HP ก็พอ</p></div>
+      <div class="st"><span class="k">3</span><h3>ตีด้วย Spear</h3><p>ไฟต์หนักเปิด Sacred Weapon ในเทิร์นแรก ศัตรูจับกลุ่มค่อยพ่นไฟ</p></div>
+      <div class="st"><span class="k">4</span><h3>โดนแล้วค่อย Smite</h3><p>ใช้ตอนคริ เจอบอส undead/fiend หรือดาเมจนี้ปิดศัตรูได้พอดี</p></div>
+    </div>
+  </div>
+
+  <div>
+    <h2>เจอแบบนี้ ทำแบบนี้</h2>
+    <div class="cases">
+      <div class="case"><strong>เริ่มไฟต์กับศัตรูหนัก / บอส</strong><span>เทิร์นแรกกด Attack พร้อม <b>Sacred Weapon</b> (+8 to hit ทั้งไฟต์) ถ้ายังไม่ปะทะและมีเวลา ร่าย <b>Bless</b> ใส่ตัวเอง, Vorgash, Xiah ก่อน</span><em>Smite ทุกครั้งที่โดนบอส · ติดคริ = เต๋า Smite คูณสอง</em></div>
+      <div class="case f"><strong>ศัตรูกำลังวิ่งไปหาแนวหลัง</strong><span>ยืนขวางทางแล้วใช้ <b>Dragon Fear</b> ศัตรูที่กลัวเราจะเดินเข้าใกล้เราไม่ได้ จึงผ่านไปไม่ได้</span><em>ถ้าเราไม่ได้ขวางทาง ศัตรูยังอ้อมไปหาเพื่อนได้</em></div>
+      <div class="case f"><strong>ลูกสมุนจับกลุ่ม 3 ตัวขึ้นไป</strong><span><b>Breath Weapon</b> แบบกรวย 15 ฟุต ถ้าอยู่ทางเดินแคบและยืนเรียงกัน ใช้แบบเส้น 30 ฟุต</span><em>ศัตรู 1–2 ตัว ตีด้วย Spear คุ้มกว่า</em></div>
+      <div class="case b"><strong>ศัตรูตัวใหญ่ตัวเดียว</strong><span><b>Command "Grovel"</b> ให้มันล้มหมอบ เพื่อนสาย melee ได้ Advantage หรือ <b>"Drop"</b> ให้ทิ้งอาวุธ</span><em>WIS DC 13 · ได้ผลกับศัตรู WIS ต่ำ</em></div>
+      <div class="case b"><strong>เจอ undead หรือ fiend</strong><span>เปิด <b>Divine Sense</b> ก่อนเข้าห้องเพื่อรู้ว่ามีกี่ตัว Smite ได้ <b>3d8</b> และขว้าง <b>Holy Water</b> (มี 5 ขวด) ได้ 2d8 radiant</span><em>เจอผีสิงหรือ charm → Protection from Evil and Good</em></div>
+      <div class="case h"><strong>เพื่อนล้ม (0 HP)</strong><span><b>Lay on Hands</b> แค่ 1–5 HP ให้ลุกขึ้นมาเล่นต่อ ใช้ Bonus Action จึงยังตีได้ในเทิร์นเดียวกัน</span><em>เก็บบ่อไว้ปลุกคนล้ม ดีกว่าเติมคนที่ยังไม่ล้ม</em></div>
+      <div class="case h"><strong>เพื่อนแนวหลังโดนรุม</strong><span><b>Shield of Faith</b> ใส่ Lunol (AC 14 → 16) แล้วเดินเข้าไปยืนข้างเธอ ศัตรูที่ถอยออกจะโดน Opportunity Attack</span><em>ใช้ Concentration แทน Bless ไม่ได้ทั้งคู่</em></div>
+      <div class="case"><strong>ศัตรูบินหรือยิงจากไกล</strong><span>ขว้าง <b>Spear</b> (20/60 ฟุต) แล้วค่อยเก็บ หรือพ่นไฟแบบเส้น 30 ฟุต ให้ Xiah กับ Oxton จัดการเป็นหลัก</span><em>พกอาวุธขว้างสำรองจะช่วยมาก</em></div>
+      <div class="case"><strong>ไฟต์ยาว / slot เหลือน้อย</strong><span>ขอ <b>Short Rest</b> แล้วใช้ <b>Divine Recovery</b> คืน slot 1 ช่อง Channel Divinity คืนมา 1 ครั้ง</span><em>slot สุดท้ายเก็บไว้ Smite ปิดบอส หรือ Cure Wounds ฉุกเฉิน</em></div>
+      <div class="case b"><strong>ฉากเจรจา / สำรวจ</strong><span>ให้ Oxton เป็นหน้าหลัก เราเสริมด้วย <b>Persuasion +5</b> ใช้ Athletics +5 ปีน ผลัก จับล็อก</span><em>เลี่ยงการทอยความรู้ทุกแบบ (INT −2)</em></div>
+    </div>
+  </div>
+
+  <div>
+    <h2>เล่นคู่กับเพื่อนในตี้</h2>
+    <div class="party">
+      <div class="mate"><b>Lunol · AC 14</b>ศัตรูฉลาดจะรุมเธอก่อน ยืนใกล้เธอเสมอ</div>
+      <div class="mate"><b>Vorgash · AC 18</b>แนวหน้าคู่ แบ่งกันยืนคนละฝั่ง Bless ใส่เขา</div>
+      <div class="mate"><b>Xiah · ยิงไกล</b>Sap ของเราทำให้ศัตรูตีพลาด Xiah ยิงอยู่หลังเราได้</div>
+      <div class="mate"><b>Salem · HP 27</b>Perfect Plan + Bless เสริมทอยพร้อมกัน กันเขาไว้ด้านหลัง</div>
+      <div class="mate"><b>Oxton · CHA +5</b>หน้าหลักตอนเจรจา เราเป็นหน้าสำรอง</div>
+      <div class="mate"><b>ไปถึง Lv 5</b>Extra Attack ตี 2 ครั้ง · slot ระดับ 2 · บินได้</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Thalric Dawn-Shield · คู่มือเล่น</span><span>2 / 6 · รายละเอียดเต็มอยู่ในส่วน Advanced หน้า 3–6</span></div>
+</section>
+
+<!-- ============ PAGE 3 · ADVANCED: CLASS FEATURES ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>ความสามารถคลาส Paladin + Oath of Devotion</h1></div>
+    <div class="pg">3 / 6<span>Class Features</span></div>
+  </div>
+  <p class="intro">ฟีเจอร์ที่ได้จากคลาสถึง Lv 3 แต่ละใบบอกกติกาแบบย่อ ต้นทุน และวิธีใช้ให้คุ้ม</p>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Lay on Hands</h3><span class="src">Paladin Lv 1</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>สัมผัส</span><span class="u">บ่อ 15 HP / Long Rest</span></div>
+      <p class="rule">มีบ่อพลังฮีล 5 × เลเวล Paladin (= 15) แบ่งจ่ายกี่แต้มก็ได้ให้ตัวเองหรือเพื่อน หรือจ่าย 5 แต้มเพื่อล้างสถานะ Poisoned</p>
+      <p class="tip">ใช้ <b>ปลุกเพื่อนที่ 0 HP</b> ด้วย 1–3 แต้ม คุ้มที่สุด เพราะเป็น Bonus Action เทิร์นเดียวกันยังตีได้ ช่วงหลังไฟต์ค่อยเทแต้มที่เหลือเติมเลือด</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Paladin's Smite</h3><span class="src">Paladin Lv 2</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span class="u">ฟรี 1 / Long Rest</span></div>
+      <p class="rule">Divine Smite ถูกเตรียมไว้เสมอ (ไม่นับโควตาสเปลล์) และร่ายฟรีโดยไม่ใช้ slot ได้วันละ 1 ครั้ง</p>
+      <p class="tip">ใช้ครั้งฟรีก่อนเสมอ ถ้ายังไม่ได้ใช้และใกล้ Long Rest ให้ใช้ทิ้งในไฟต์ถัดไปเลย ไม่ต้องเก็บ</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Channel Divinity</h3><span class="src">Paladin Lv 3</span></div>
+      <div class="meta"><span class="u">2 ครั้ง</span><span>Short Rest คืน 1</span><span>Long Rest คืนหมด</span></div>
+      <p class="rule">พลังศักดิ์สิทธิ์ใช้สร้างเอฟเฟกต์ได้ 2 แบบ คือ Divine Sense หรือ Sacred Weapon (จาก Oath) เลือกครั้งละอย่าง</p>
+      <p class="tip">ปกติเก็บไว้ทำ <b>Sacred Weapon</b> ทั้ง 2 ครั้ง ใช้ Divine Sense เฉพาะตอนสงสัยว่ามี undead/fiend ซ่อนอยู่ ขอ Short Rest เมื่อใช้หมด</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Sacred Weapon</h3><span class="src">Oath of Devotion Lv 3</span></div>
+      <div class="meta"><span>ตอนกด Attack</span><span class="x">ใช้ Channel Divinity</span><span>10 นาที</span></div>
+      <p class="rule">อาวุธ melee ที่ถือได้ +CHA (+3) เข้า attack roll เลือกให้ดาเมจเป็น Radiant ได้ และส่องแสงจ้า 20 ฟุต + สลัว 20 ฟุต</p>
+      <p class="tip">เปิดตอน <b>เทิร์นแรกของไฟต์หนัก</b> เพราะอยู่ 10 นาทีครอบคลุมทั้งไฟต์ Spear จะตีที่ +8 Radiant ทะลุศัตรูที่ต้านดาเมจกายภาพ แสงช่วยตี้ในที่มืด แต่ทำให้แอบไม่ได้</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Divine Sense</h3><span class="src">Paladin Lv 3</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span class="x">ใช้ Channel Divinity</span><span>60 ฟุต · 10 นาที</span></div>
+      <p class="rule">รู้ตำแหน่งและประเภทของ celestial, fiend, undead ในระยะ 60 ฟุต และรู้ว่าที่ไหนถูกทำให้ศักดิ์สิทธิ์หรือแปดเปื้อน</p>
+      <p class="tip">ใช้ <b>ก่อนเปิดประตู</b> สุสาน ห้องใต้ดิน หรือเมื่อสงสัยว่า NPC เป็นปีศาจปลอมตัว รู้จำนวนศัตรูก่อนช่วยให้ตี้วางแผนได้</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Weapon Mastery</h3><span class="src">Paladin Lv 1</span></div>
+      <div class="meta"><span>Passive</span><span>2 ชนิดอาวุธ</span><span>เปลี่ยนได้ตอน Long Rest</span></div>
+      <p class="rule">ใช้คุณสมบัติพิเศษของอาวุธได้ 2 ชนิด ตอนนี้ใช้ <b>Spear = Sap</b>: ตีโดนแล้วศัตรูติด Disadvantage ในการโจมตีครั้งถัดไป</p>
+      <p class="tip">ยังเหลือช่องว่างอีก 1 ชนิด ลองเลือก <b>Javelin (Slow)</b> ไว้ขว้างใส่ศัตรูที่อยู่ไกล หรือ <b>Longsword (Sap)</b> ถ้าเปลี่ยนอาวุธในอนาคต</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Spellcasting</h3><span class="src">Paladin Lv 1</span></div>
+      <div class="meta"><span>CHA</span><span>DC 13 · Attack +5</span><span class="u">Slot Lv1 × 3</span></div>
+      <p class="rule">เตรียมสเปลล์จากลิสต์ Paladin ได้ และเปลี่ยนสเปลล์ที่เตรียมไว้ได้ 1 ตัวหลัง Long Rest ใช้ Holy Symbol เป็น focus</p>
+      <p class="tip">ก่อนออกผจญภัยวันไหน ให้ถามว่า "วันนี้น่าจะเจออะไร" แล้วสลับสเปลล์ 1 ตัวให้เข้ากับสถานการณ์ เช่น เข้าเมือง = Command, เข้าสุสาน = PfEaG</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Oath of Devotion Spells</h3><span class="src">Oath Lv 3</span></div>
+      <div class="meta"><span>เตรียมไว้เสมอ</span><span>ไม่นับโควตา</span></div>
+      <p class="rule">ได้ <b>Protection from Evil and Good</b> และ <b>Shield of Faith</b> แบบเตรียมไว้ตลอด เลเวล 5 จะได้ Aid และ Zone of Truth เพิ่ม</p>
+      <p class="tip">ไม่ต้องเสียช่องเตรียมสเปลล์กับ 2 ตัวนี้ ใช้ช่องที่เหลือกับ Bless, Command, Cure Wounds ได้เต็มที่</p>
+    </div>
+  </div>
+  <div class="foot"><span>Advanced · Class Features</span><span>3 / 6</span></div>
+</section>
+
+<!-- ============ PAGE 4 · ADVANCED: SPECIES & FEATS ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>สายพันธุ์มังกรทอง + Feats</h1></div>
+    <div class="pg">4 / 6<span>Species &amp; Feats</span></div>
+  </div>
+  <p class="intro">ความสามารถจาก Dragonborn (Gold) และ feat ทั้ง 4 ตัว (รวม house rule General Feat ตอนเลเวล 1)</p>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Breath Weapon</h3><span class="src">Dragonborn</span></div>
+      <div class="meta"><span>แทนการโจมตี 1 ครั้ง</span><span class="u">2 ครั้ง / Long Rest</span><span class="x">DEX DC 14</span></div>
+      <p class="rule">พ่นไฟเป็นกรวย 15 ฟุต หรือเส้นยาว 30 ฟุต กว้าง 5 ฟุต ทุกตัวในพื้นที่ทอย DEX save ไม่ผ่านโดน 1d10 fire ผ่านโดนครึ่ง (2d10 ที่ Lv 5)</p>
+      <p class="tip">ที่ Lv 3 ตีได้ครั้งเดียว พ่นไฟจึงแทนการตีทั้งเทิร์น <b>คุ้มเมื่อโดนได้ 2–3 ตัวขึ้นไป</b> ระวังอย่าให้เพื่อนอยู่ในเส้น ศัตรูต้านไฟ (ปีศาจ, elemental ไฟ) ใช้ Dragon Fear แทน</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Dragon Fear</h3><span class="src">Feat (Lv 1 house rule)</span></div>
+      <div class="meta"><span class="x">ใช้ Breath Weapon</span><span>30 ฟุต</span><span class="x">WIS DC 13</span><span>+1 CHA</span></div>
+      <p class="rule">คำรามแทนพ่นไฟ ศัตรูที่เลือกในระยะ 30 ฟุตที่เห็นหรือได้ยินเรา ทอย WIS save ไม่ผ่านติด Frightened 1 นาที ถ้าโดนดาเมจจะได้ทอย save ใหม่</p>
+      <p class="tip">Frightened = ตี/เช็กเสีย Disadvantage และ <b>เดินเข้าใกล้เราไม่ได้</b> ใช้ตอนยืนขวางทางเดินแคบ ศัตรูจะผ่านไปหาแนวหลังไม่ได้ อย่าให้เพื่อนตีตัวที่กลัวอยู่ทันที เพราะดาเมจให้มันทอยหลุด</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Damage Resistance</h3><span class="src">Dragonborn</span></div>
+      <div class="meta"><span>Passive</span><span>Fire</span></div>
+      <p class="rule">ต้านทานดาเมจไฟ โดนไฟเหลือครึ่งเดียว</p>
+      <p class="tip">เจอศัตรูพ่นไฟ, fireball, กับดักไฟ ให้ <b>เดินนำหน้า</b> รับแทนเพื่อน ฉากไฟไหม้ ฝ่ากองไฟเข้าไปช่วยคนได้ปลอดภัยกว่าคนอื่น</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Darkvision</h3><span class="src">Dragonborn</span></div>
+      <div class="meta"><span>Passive</span><span>60 ฟุต</span></div>
+      <p class="rule">มองในที่มืดเหมือนแสงสลัว ในระยะ 60 ฟุต (เห็นเป็นขาวดำ)</p>
+      <p class="tip">ในถ้ำ เดินนำได้โดยไม่ต้องจุดไฟ แต่ถ้าเปิด Sacred Weapon แสงจะเปิดเผยตำแหน่งตี้ เลือกให้ดีว่าจะแอบหรือจะสู้</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Draconic Flight</h3><span class="src">Dragonborn · ปลดล็อก Lv 5</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span class="u">1 / Long Rest</span><span>10 นาที</span></div>
+      <p class="rule">งอกปีกพลังงานมังกร ได้ความเร็วบินเท่าความเร็วเดิน (30 ฟุต) นาน 10 นาที ยังใช้ไม่ได้จนถึงเลเวล 5</p>
+      <p class="tip">พอถึง Lv 5 ใช้แก้จุดอ่อนเรื่องศัตรูบิน หรือข้ามหุบเหว ขึ้นกำแพง เก็บไว้ไฟต์บอสที่อยู่บนที่สูง</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Tough</h3><span class="src">Feat</span></div>
+      <div class="meta"><span>Passive</span><span>+2 HP / เลเวล</span></div>
+      <p class="rule">HP สูงสุดเพิ่ม 2 ต่อเลเวล ตอนนี้ได้ +6 (HP 40) และเพิ่มอีก 2 ทุกครั้งที่เลเวลอัป</p>
+      <p class="tip">ทำให้ Thalric เป็นคนที่ <b>ควรโดนตีแทนเพื่อน</b> ไม่ต้องกลัวโดนรุมช่วงต้นไฟต์ ใช้ HP ที่มากกว่าซื้อเวลาให้ตี้</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Defense</h3><span class="src">Fighting Style Feat</span></div>
+      <div class="meta"><span>Passive</span><span>+1 AC</span></div>
+      <p class="rule">ได้ AC +1 ขณะสวมเกราะ light, medium หรือ heavy (เดิมเคยเป็น Blessed Warrior แต่เปลี่ยนมาแล้ว)</p>
+      <p class="tip">ถ้าต้องถอดเกราะ (นอน, ว่ายน้ำ) AC จะเหลือ 12 + โล่ ปลุกให้ตื่นแล้วถูกซุ่มโจมตีกลางคืน ให้เพื่อนรับหน้าแทนก่อน</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Divine Recovery</h3><span class="src">Feat (homebrew อนุมัติแล้ว)</span></div>
+      <div class="meta"><span>ตอนจบ Short Rest</span><span class="u">1 / Long Rest</span></div>
+      <p class="rule">สวดภาวนากับ Holy Symbol เพื่อคืน spell slot ระดับรวมไม่เกินครึ่ง Proficiency (ปัดขึ้น) ห้ามระดับ 3 ขึ้นไป ตอนนี้ = slot ระดับ 1 หนึ่งช่อง</p>
+      <p class="tip">ใช้ทุกครั้งที่ได้ Short Rest ครั้งแรกของวัน (ถ้าใช้ slot ไปแล้ว) ห้ามลืม เท่ากับได้ Smite เพิ่มอีก 1 ครั้งต่อวัน ที่ Lv 5 คืนได้ slot ระดับ 2</p>
+    </div>
+  </div>
+  <div class="foot"><span>Advanced · Species &amp; Feats</span><span>4 / 6</span></div>
+</section>
+
+<!-- ============ PAGE 5 · ADVANCED: SPELLS ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>สเปลล์ทั้งหมด</h1></div>
+    <div class="pg">5 / 6<span>Spells</span></div>
+  </div>
+  <div class="note"><b>กติกา Concentration:</b> Bless, Shield of Faith และ Protection from Evil and Good ต้อง Concentration ใช้ได้ทีละตัว ร่ายตัวใหม่ ตัวเก่าหลุด · ทุกครั้งที่โดนดาเมจต้องทอย <b>CON save</b> (DC 10 หรือครึ่งดาเมจ แล้วแต่อันไหนสูงกว่า) Thalric ได้ +4 จาก CON จึงรักษา Concentration ได้ค่อนข้างดี</div>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Divine Smite</h3><span class="src">Lv 1 · เตรียมไว้เสมอ</span></div>
+      <div class="meta"><span class="c">Bonus Action หลังตีโดน</span><span class="u">Slot</span></div>
+      <p class="rule">หลังตีโดนด้วยอาวุธ melee หรือ unarmed strike เพิ่ม 2d8 radiant (+1d8 ใส่ undead/fiend, +1d8 ต่อ slot ระดับที่สูงขึ้น)</p>
+      <p class="tip">ตัดสินใจหลังรู้ผลว่าโดน ใช้ตอน <b>ติดคริ (ทอย 4d8)</b> หรือเมื่อดาเมจจะปิดศัตรูได้พอดี อย่า Smite ใส่ลูกสมุน HP น้อย</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Bless</h3><span class="src">Lv 1</span></div>
+      <div class="meta"><span>Action</span><span>30 ฟุต</span><span class="c">Conc · 1 นาที</span><span class="u">Slot</span></div>
+      <p class="rule">ได้ 3 คน ทุกครั้งที่ทอยโจมตีหรือ saving throw บวก 1d4</p>
+      <p class="tip">สเปลล์ที่ <b>คุ้มที่สุดในไฟต์ยาว</b> ใส่ตัวเอง + Vorgash + Xiah (คนที่ทอยโจมตีบ่อย) ร่ายก่อนปะทะถ้าทำได้ เพราะเสีย Action ทั้งเทิร์น</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Shield of Faith</h3><span class="src">Lv 1 · Oath</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>60 ฟุต</span><span class="c">Conc · 10 นาที</span><span class="u">Slot</span></div>
+      <p class="rule">สิ่งมีชีวิต 1 ตัว AC +2</p>
+      <p class="tip">ใส่ <b>Lunol</b> (AC 14 → 16) เมื่อศัตรูเริ่มรุมเธอ หรือใส่ตัวเอง (AC 21) ตอนเจอบอสที่ตีแรง ใช้แทน Bless ไม่ได้พร้อมกัน</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Command</h3><span class="src">Lv 1</span></div>
+      <div class="meta"><span>Action</span><span>60 ฟุต</span><span>1 รอบ</span><span class="x">WIS DC 13</span><span class="u">Slot</span></div>
+      <p class="rule">สั่งคำเดียว: <b>Approach</b> เดินเข้ามา · <b>Drop</b> ทิ้งของ · <b>Flee</b> หนี · <b>Grovel</b> หมอบลง · <b>Halt</b> หยุดนิ่ง</p>
+      <p class="tip"><b>Grovel</b> = ศัตรูล้ม Prone เพื่อนสาย melee ได้ Advantage · <b>Drop</b> ให้ทิ้งไอเท็มสำคัญ/ไม้เท้า · <b>Approach</b> ดึงพลธนูเข้ามาหาเรา ไม่ได้ผลกับ undead ที่ไม่เข้าใจภาษา</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Cure Wounds</h3><span class="src">Lv 1</span></div>
+      <div class="meta"><span>Action</span><span>สัมผัส</span><span class="u">Slot</span></div>
+      <p class="rule">ฮีล 2d8 + 3 (เฉลี่ย 12 HP)</p>
+      <p class="tip">ปกติใช้ Lay on Hands ก่อนเพราะเป็น Bonus Action ใช้ Cure Wounds เมื่อ <b>บ่อ Lay on Hands หมด</b> หรือนอกไฟต์ที่ไม่มีเวลา Short Rest</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Divine Favor</h3><span class="src">Lv 1</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>ตัวเอง</span><span>1 นาที</span><span class="u">Slot</span></div>
+      <p class="rule">ทุกครั้งที่ตีโดนด้วยอาวุธ เพิ่ม 1d4 radiant</p>
+      <p class="tip">ที่ Lv 3 ยังตีได้ครั้งเดียวต่อเทิร์น ได้ดาเมจน้อยกว่า Smite มาก <b>ควรสลับออกไปเตรียมสเปลล์อื่นแทน</b> จะคุ้มขึ้นตอนได้ Extra Attack ที่ Lv 5</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Protection from Evil and Good</h3><span class="src">Lv 1 · Oath</span></div>
+      <div class="meta"><span>Action</span><span>สัมผัส</span><span class="c">Conc · 10 นาที</span><span class="u">Slot</span></div>
+      <p class="rule">ป้องกันจาก aberration, celestial, elemental, fey, fiend, undead: พวกนั้นตีเสีย Disadvantage และทำให้ติด Charmed / Frightened / ถูกสิงไม่ได้</p>
+      <p class="tip">ใช้กับ <b>บอสประเภทนั้นที่ชอบสิงหรือ charm</b> ใส่เพื่อนที่ save WIS ต่ำ หรือใส่ตัวเองตอนรับหน้าบอส</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Purify Food and Drink</h3><span class="src">Lv 1</span></div>
+      <div class="meta"><span>Action</span><span>10 ฟุต</span><span class="u">Slot</span></div>
+      <p class="rule">ล้างพิษและความเน่าเสียจากอาหารและเครื่องดื่มที่ไม่ใช่เวทในทรงกลมรัศมี 5 ฟุต</p>
+      <p class="tip">ใช้ slot จริงทุกครั้ง <b>อย่าเตรียมไว้ปกติ</b> สลับเข้ามาเฉพาะช่วงที่สงสัยว่าอาหารถูกวางยา เช่น งานเลี้ยงของศัตรู</p>
+    </div>
+  </div>
+  <div class="foot"><span>Advanced · Spells</span><span>5 / 6</span></div>
+</section>
+
+<!-- ============ PAGE 6 · ADVANCED: ITEMS & SKILLS ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>ไอเท็ม + Skill</h1></div>
+    <div class="pg">6 / 6<span>Items &amp; Skills</span></div>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Whisperlink Mail</h3><span class="src">เกราะหนัก (homebrew)</span></div>
+      <div class="meta"><span>AC 16</span><span>ไม่บวก DEX</span></div>
+      <p class="rule">เกราะหนักฐาน AC 16 ไม่รับ DEX bonus รวม Shield และ Defense ได้ AC 19 · คุณสมบัติพิเศษของชิ้นนี้ยังไม่มีบันทึกในเอกสาร</p>
+      <p class="tip">ถาม DM ว่า Whisperlink มีความสามารถพิเศษหรือข้อเสียเรื่อง Stealth หรือไม่ เกราะหนักส่วนใหญ่ทำให้แอบเสีย Disadvantage</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Shield</h3><span class="src">โล่</span></div>
+      <div class="meta"><span>+2 AC</span><span>ใช้มือ 1 ข้าง</span></div>
+      <p class="rule">AC +2 ขณะถือ การสวม/ถอดใช้ Utilize action</p>
+      <p class="tip">ถือโล่ = Spear ใช้มือเดียว (1d6) ถ้าต้องการดาเมจมากขึ้นนอกไฟต์ไม่มีความเสี่ยงค่อยถอด แต่ในไฟต์ +2 AC คุ้มกว่า 1d8 เสมอ</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Spear</h3><span class="src">Simple Melee</span></div>
+      <div class="meta"><span>+5</span><span>1d6+3 / สองมือ 1d8+3</span><span>ขว้าง 20/60</span><span>Mastery: Sap</span></div>
+      <p class="rule">อาวุธประจำตัว ใช้ได้ทั้งตีประชิดและขว้าง Sacred Weapon ทำให้ +8 to hit และเป็น Radiant ได้</p>
+      <p class="tip">ขว้างแล้วต้องไปเก็บคืน ซื้อ Spear หรือ Javelin สำรองอีก 1–2 อันไว้ขว้างใส่ศัตรูที่บินหรืออยู่ไกล ราคาถูกมาก</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Holy Water × 5</h3><span class="src">ของใช้</span></div>
+      <div class="meta"><span>แทนการโจมตี</span><span>ขว้าง 20 ฟุต</span><span class="x">DEX DC 12</span></div>
+      <p class="rule">ขว้างใส่สิ่งมีชีวิต ทอย DEX save ไม่ผ่านโดน 2d8 radiant ถ้าเป็น fiend หรือ undead</p>
+      <p class="tip">เก็บไว้ใช้กับ <b>undead/fiend ที่อยู่ไกล</b> หรือเมื่อ slot หมดแล้วต้องการ radiant ดาเมจ ดาเมจเท่า Smite ไม่ต้องใช้ slot</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Holy Symbol</h3><span class="src">Spellcasting Focus</span></div>
+      <div class="meta"><span>Focus</span></div>
+      <p class="rule">ใช้แทนส่วนประกอบวัตถุของสเปลล์ และใช้สวดภาวนาตอน Divine Recovery</p>
+      <p class="tip">สลักไว้บนโล่ได้ จะได้ไม่ต้องใช้มือแยก ถือ Spear + โล่ แล้วร่ายสเปลล์ได้เลย</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Unarmed Strike / Grapple</h3><span class="src">ทุกคนทำได้</span></div>
+      <div class="meta"><span>+5</span><span>4 bludgeoning</span><span class="x">Grapple / Shove DC 13</span></div>
+      <p class="rule">ต่อย 1+3 ดาเมจ หรือเลือกจับล็อก (Grappled) / ผลักล้ม-ผลักถอย 5 ฟุต ศัตรูทอย STR หรือ DEX save DC 13</p>
+      <p class="tip">ผลักศัตรูให้ <b>ล้ม Prone</b> เพื่อให้ Vorgash ตีด้วย Advantage หรือจับล็อกศัตรูที่จะหนีไป Smite ใช้กับ unarmed strike ได้ด้วย</p>
+    </div>
+  </div>
+  <div>
+    <h2>Skill และการทอยเช็ก <small>ตัวหนา = ถนัด</small></h2>
+    <table class="skills">
+      <tr><th>Skill</th><th>โบนัส</th><th>ใช้ตอนไหน</th></tr>
+      <tr class="p"><td>Athletics (STR)</td><td class="n">+5</td><td>ปีน ว่ายน้ำ กระโดด จับล็อก ผลัก · skill ที่ใช้บ่อยที่สุดของ Thalric</td></tr>
+      <tr class="p"><td>Persuasion (CHA)</td><td class="n">+5</td><td>เกลี้ยกล่อม ต่อรอง ขอความช่วยเหลือ · หน้าตาสำรองรองจาก Oxton</td></tr>
+      <tr class="p"><td>Animal Handling (WIS)</td><td class="n">+2</td><td>ปลอบสัตว์ ขี่ม้า ทักษะจากพื้นเพ Farmer</td></tr>
+      <tr class="p"><td>Nature (INT)</td><td class="n">+0</td><td>ความรู้พืช สัตว์ ภูมิประเทศ · ถนัดแต่ INT ต่ำ ผลออกมากลางๆ</td></tr>
+      <tr><td>Intimidation (CHA)</td><td class="n">+3</td><td>ขู่ศัตรูได้ดีแม้ไม่ถนัด เพราะ CHA สูงและรูปร่างมังกร 240 ปอนด์</td></tr>
+      <tr><td>Insight / Perception (WIS)</td><td class="n">+0</td><td>อ่านใจ สังเกต · ปล่อยให้คนที่ WIS สูงกว่าทอย</td></tr>
+      <tr><td>Stealth (DEX)</td><td class="n">+2</td><td>เกราะหนักน่าจะทำให้เสีย Disadvantage · อย่าอาสาแอบ</td></tr>
+      <tr><td>Arcana / History / Investigation</td><td class="n">−2</td><td>จุดอ่อนที่สุด · หลีกเลี่ยงทุกครั้ง</td></tr>
+    </table>
+  </div>
+  <div class="foot"><span>Advanced · Items &amp; Skills · ข้อมูลจาก Foundry group W + characters.json · กติกา D&amp;D 2024</span><span>6 / 6</span></div>
+</section>
+
+</body>
+</html>

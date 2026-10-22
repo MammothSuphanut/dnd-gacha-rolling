@@ -123,12 +123,24 @@
     // Find a spell in any Item compendium. Prefers 2024 packs (collection id containing "24").
     const itemPacks = game.packs.filter(p => p.documentName === "Item")
       .sort((a, b) => Number(b.collection.includes("24")) - Number(a.collection.includes("24")));
+    // Search order: 2024 compendiums → spells already in the world's Items directory
+    // (e.g. imported with Plutonium) → every other compendium.
     async function findSpell(name) {
       const lower = name.toLowerCase();
-      for ( const pack of itemPacks ) {
+      const fromPack = async pack => {
         const index = await pack.getIndex({ fields: ["type"] });
         const entry = index.find(e => (e.type === "spell") && (e.name.toLowerCase() === lower));
-        if ( entry ) return (await pack.getDocument(entry._id)).toObject();
+        return entry ? (await pack.getDocument(entry._id)).toObject() : null;
+      };
+      for ( const pack of itemPacks.filter(p => p.collection.includes("24")) ) {
+        const data = await fromPack(pack);
+        if ( data ) return data;
+      }
+      const worldSpell = game.items.find(i => (i.type === "spell") && (i.name.toLowerCase() === lower));
+      if ( worldSpell ) return worldSpell.toObject();
+      for ( const pack of itemPacks.filter(p => !p.collection.includes("24")) ) {
+        const data = await fromPack(pack);
+        if ( data ) return data;
       }
       return null;
     }
@@ -402,6 +414,7 @@
     await wipe(xear);
     await xear.update({
       system: xearSystem,
+      "prototypeToken.actorLink": true,
       "prototypeToken.disposition": CONST.TOKEN_DISPOSITIONS.HOSTILE
     });
     await addItems(xear, xearItems, failed);

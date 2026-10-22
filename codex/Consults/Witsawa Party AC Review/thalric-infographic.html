@@ -1,0 +1,412 @@
+<title>Thalric Dawn-Shield</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: heraldic "oath ledger" — crest band on top, then stat strip, then a 2-col sheet that stacks on phones */
+:root{
+  --bg:#ECEEF3; --surface:#FFFFFF; --sunk:#F5F6F9; --ink:#18213A; --muted:#59627F; --line:#D6DAE4;
+  --gold:#9A6E0C; --gold-soft:#F4E8C6; --gold-ink:#5C4105;
+  --fire:#B9412A; --fire-soft:#F8E1DA; --heal:#23795C; --heal-soft:#DDF1E8; --holy:#3D56A8; --holy-soft:#E1E7F8;
+  --f-display:"Marcellus SC","Trajan Pro",Georgia,serif;
+  --f-body:"IBM Plex Sans Thai","Noto Sans Thai",Tahoma,system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1322; --surface:#161E33; --sunk:#111829; --ink:#E8EBF4; --muted:#9CA5C2; --line:#29334F;
+  --gold:#E2B84E; --gold-soft:#3A311B; --gold-ink:#F3D58A;
+  --fire:#EE7A5E; --fire-soft:#3A201B; --heal:#55C99F; --heal-soft:#163128; --holy:#8EA5F0; --holy-soft:#1C2645;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1322; --surface:#161E33; --sunk:#111829; --ink:#E8EBF4; --muted:#9CA5C2; --line:#29334F;
+  --gold:#E2B84E; --gold-soft:#3A311B; --gold-ink:#F3D58A;
+  --fire:#EE7A5E; --fire-soft:#3A201B; --heal:#55C99F; --heal-soft:#163128; --holy:#8EA5F0; --holy-soft:#1C2645;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;padding-inline:16px;padding-block:24px 48px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{margin:0;text-wrap:balance}
+h2{font-family:var(--f-display);font-weight:400;font-size:1.3rem;letter-spacing:.04em;display:flex;align-items:baseline;gap:10px}
+h2 small{font-family:var(--f-body);font-size:.8rem;color:var(--muted);letter-spacing:0}
+h3{font-size:.95rem;font-weight:600}
+p{margin:0}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.label{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+
+/* hero */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;padding:28px;border-radius:6px;background:var(--surface);border:1px solid var(--line);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -60px -120px auto;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,var(--gold-soft) 0%,transparent 70%);pointer-events:none}
+.crest{width:112px;height:auto;flex-shrink:0}
+.hero-text{min-width:0;position:relative;z-index:1;display:flex;flex-direction:column;gap:8px}
+.hero h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2rem,5vw,3.1rem);line-height:1.05;letter-spacing:.02em}
+.hero h1 span{color:var(--gold)}
+.sub{color:var(--muted);font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chip{font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:var(--sunk)}
+.chip.gold{background:var(--gold-soft);border-color:transparent;color:var(--gold-ink)}
+.chip.heal{background:var(--heal-soft);border-color:transparent;color:var(--heal)}
+.chip.fire{background:var(--fire-soft);border-color:transparent;color:var(--fire)}
+.pitch{max-width:62ch;margin-top:6px}
+
+/* stat strip */
+.strip{display:grid;grid-template-columns:repeat(8,1fr);background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.strip>div{padding:14px 10px;text-align:center;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:2px;min-width:0}
+.strip>div:last-child{border-right:0}
+.strip .big{font-family:var(--f-mono);font-size:1.6rem;font-weight:600;line-height:1.1}
+.strip .hint{font-size:.68rem;color:var(--muted);line-height:1.3}
+.strip .key .big{color:var(--gold)}
+
+/* sheet */
+.sheet{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.55fr);gap:20px;align-items:start}
+.col{display:flex;flex-direction:column;gap:20px;min-width:0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+
+/* abilities */
+.abil{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.ab{border:1px solid var(--line);border-radius:4px;padding:10px 8px;text-align:center;background:var(--sunk);position:relative}
+.ab .mod{font-family:var(--f-mono);font-size:1.45rem;font-weight:600;line-height:1.1}
+.ab .score{font-size:.75rem;color:var(--muted)}
+.ab.save{border-color:var(--gold)}
+.ab.save::after{content:"SAVE";position:absolute;top:4px;right:5px;font-size:.55rem;font-weight:700;letter-spacing:.08em;color:var(--gold)}
+.ab.dump .mod{color:var(--fire)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:.88rem}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0}
+
+/* role bars */
+.role{display:flex;flex-direction:column;gap:9px}
+.role-row{display:grid;grid-template-columns:7.5em 1fr 2.4em;align-items:center;gap:10px;font-size:.86rem}
+.bar{height:8px;border-radius:4px;background:var(--sunk);border:1px solid var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--gold);border-radius:4px}
+
+/* resource tracker */
+.res{display:flex;flex-direction:column;gap:2px}
+.res-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line)}
+.res-row:last-child{border-bottom:0}
+.res-name{font-weight:600;font-size:.9rem}
+.res-meta{font-size:.75rem;color:var(--muted);grid-column:1/-1}
+.pips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.pip{width:22px;height:22px;border-radius:50%;border:2px solid var(--gold);background:var(--gold);cursor:pointer;padding:0;transition:background .15s}
+.pip.used{background:transparent}
+.pip:focus-visible{outline:2px solid var(--holy);outline-offset:2px}
+.pool{display:flex;align-items:center;gap:6px}
+.pool button{width:30px;height:30px;border-radius:4px;border:1px solid var(--line);background:var(--sunk);color:var(--ink);font:600 1rem var(--f-mono);cursor:pointer}
+.pool button:focus-visible{outline:2px solid var(--holy)}
+.pool output{font-family:var(--f-mono);font-weight:600;min-width:4.2em;text-align:center}
+.rest{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font:600 .82rem var(--f-body);padding:7px 14px;border-radius:4px;border:1px solid var(--gold);background:transparent;color:var(--gold-ink);cursor:pointer}
+.btn.solid{background:var(--gold);color:var(--surface);border-color:var(--gold)}
+.btn:focus-visible{outline:2px solid var(--holy);outline-offset:2px}
+
+/* action board */
+.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.lane{border:1px solid var(--line);border-radius:4px;background:var(--sunk);display:flex;flex-direction:column}
+.lane-head{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line)}
+.lane-head h3{font-family:var(--f-display);font-weight:400;font-size:1rem;letter-spacing:.04em}
+.lane ul{list-style:none;margin:0;padding:6px 12px 10px;display:flex;flex-direction:column}
+.lane li{padding:7px 0;border-bottom:1px solid var(--line);font-size:.86rem;line-height:1.45}
+.lane li:last-child{border-bottom:0}
+.lane b{font-weight:600}
+.tag{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.04em;padding:0 6px;border-radius:3px;margin-left:4px;vertical-align:1px}
+.t-conc{background:var(--holy-soft);color:var(--holy)}
+.t-slot{background:var(--gold-soft);color:var(--gold-ink)}
+.t-cd{background:var(--heal-soft);color:var(--heal)}
+.t-fire{background:var(--fire-soft);color:var(--fire)}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:.75rem;color:var(--muted)}
+
+/* game plan */
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);counter-increment:s}
+.steps li:last-child{border-bottom:0}
+.steps li::before{content:counter(s);width:30px;height:30px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-family:var(--f-display);font-size:1rem}
+.steps h3{margin-bottom:2px}
+.steps p{font-size:.88rem;color:var(--muted)}
+.steps p b{color:var(--ink);font-weight:600}
+
+.cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.case{padding:12px 14px;border-left:3px solid var(--gold);background:var(--sunk);border-radius:0 4px 4px 0;font-size:.86rem;display:flex;flex-direction:column;gap:3px}
+.case.f{border-left-color:var(--fire)} .case.h{border-left-color:var(--heal)} .case.b{border-left-color:var(--holy)}
+.case strong{font-size:.88rem}
+
+.warn{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.warn li{font-size:.86rem;padding-left:22px;position:relative}
+.warn li::before{content:"!";position:absolute;left:0;top:2px;width:16px;height:16px;border-radius:50%;background:var(--fire-soft);color:var(--fire);font:700 .7rem/16px var(--f-mono);text-align:center}
+
+.party{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.mate{border:1px solid var(--line);border-radius:4px;padding:10px 12px;font-size:.84rem;display:flex;flex-direction:column;gap:3px}
+.mate .who{display:flex;justify-content:space-between;gap:6px;font-weight:600}
+.mate .who span{font-family:var(--f-mono);font-size:.75rem;color:var(--muted);font-weight:500}
+
+.road{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:6px;background:var(--surface);overflow:hidden}
+.lv{padding:16px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:6px;font-size:.85rem}
+.lv:last-child{border-right:0}
+.lv .n{font-family:var(--f-display);font-size:1.5rem;color:var(--gold);line-height:1}
+.lv ul{margin:0;padding-left:18px}
+
+footer{font-size:.75rem;color:var(--muted);text-align:center;max-width:70ch;margin:4px auto 0}
+
+@media (max-width:900px){
+  .strip{grid-template-columns:repeat(4,1fr)}
+  .strip>div:nth-child(4){border-right:0}
+  .strip>div:nth-child(-n+4){border-bottom:1px solid var(--line)}
+  .sheet{grid-template-columns:minmax(0,1fr)}
+  .road{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lv:nth-child(2){border-right:0}
+  .lv:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .party{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  .hero{grid-template-columns:1fr;padding:20px}
+  .crest{width:76px}
+  .board,.cases,.party{grid-template-columns:minmax(0,1fr)}
+  .road{grid-template-columns:minmax(0,1fr)}
+  .lv{border-right:0;border-bottom:1px solid var(--line)}
+  .lv:last-child{border-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <svg class="crest" viewBox="0 0 120 140" role="img" aria-label="ตราโล่ทองคำ Oath of Devotion">
+      <path d="M60 4 L112 20 V66 C112 100 90 124 60 136 C30 124 8 100 8 66 V20 Z" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="3"/>
+      <path d="M60 16 L101 29 V66 C101 93 84 113 60 123 C36 113 19 93 19 66 V29 Z" fill="none" stroke="var(--gold)" stroke-width="1" opacity=".6"/>
+      <g stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round">
+        <line x1="60" y1="38" x2="60" y2="28"/><line x1="60" y1="94" x2="60" y2="104"/>
+        <line x1="32" y1="66" x2="22" y2="66"/><line x1="88" y1="66" x2="98" y2="66"/>
+        <line x1="40" y1="46" x2="33" y2="39"/><line x1="80" y1="46" x2="87" y2="39"/>
+        <line x1="40" y1="86" x2="33" y2="93"/><line x1="80" y1="86" x2="87" y2="93"/>
+      </g>
+      <circle cx="60" cy="66" r="18" fill="var(--gold)"/>
+      <path d="M52 66 L60 54 L68 66 L60 78 Z" fill="var(--gold-soft)"/>
+    </svg>
+    <div class="hero-text">
+      <span class="label">Witsawa · Aeorian Cataclysm · Level 3</span>
+      <h1>Thalric <span>Dawn-Shield</span></h1>
+      <p class="sub">Paladin 3 — Oath of Devotion · Dragonborn (Gold) · Farmer</p>
+      <div class="chips">
+        <span class="chip gold">แทงค์แนวหน้าหลัก</span>
+        <span class="chip heal">ฮีลสำรอง</span>
+        <span class="chip fire">ดาเมจระเบิดด้วย Smite</span>
+        <span class="chip">หน้าตาเจรจา</span>
+      </div>
+      <p class="pitch">AC และ HP สูงสุดในตี้ หน้าที่คือยืนขวางศัตรูไว้ไม่ให้ไปถึงแนวหลัง ฮีลเพื่อนด้วย Lay on Hands และเก็บ Divine Smite ไว้ปิดเกมตอนที่ต้องการดาเมจก้อนใหญ่</p>
+    </div>
+  </header>
+
+  <section class="strip" aria-label="ค่าหลัก">
+    <div class="key"><span class="label">AC</span><span class="big">19</span><span class="hint">Mail 16 + Shield 2 + Defense 1</span></div>
+    <div class="key"><span class="label">HP</span><span class="big">40</span><span class="hint">3d10 + CON + Tough</span></div>
+    <div><span class="label">Speed</span><span class="big">30</span><span class="hint">ฟุต</span></div>
+    <div><span class="label">Initiative</span><span class="big">+2</span><span class="hint">DEX</span></div>
+    <div><span class="label">Prof</span><span class="big">+2</span><span class="hint">Proficiency Bonus</span></div>
+    <div><span class="label">Spell DC</span><span class="big">13</span><span class="hint">8 + 2 + CHA 3</span></div>
+    <div><span class="label">Spell Atk</span><span class="big">+5</span><span class="hint">CHA</span></div>
+    <div><span class="label">Passive</span><span class="big">10</span><span class="hint">Perception</span></div>
+  </section>
+
+  <div class="sheet">
+    <div class="col">
+
+      <section class="panel">
+        <h2>ค่าสถานะ <small>กรอบทอง = Saving Throw ที่ถนัด</small></h2>
+        <div class="abil">
+          <div class="ab"><span class="label">STR</span><div class="mod">+3</div><div class="score num">16</div></div>
+          <div class="ab"><span class="label">DEX</span><div class="mod">+2</div><div class="score num">14</div></div>
+          <div class="ab"><span class="label">CON</span><div class="mod">+4</div><div class="score num">19</div></div>
+          <div class="ab dump"><span class="label">INT</span><div class="mod">−2</div><div class="score num">7</div></div>
+          <div class="ab save"><span class="label">WIS</span><div class="mod">+0</div><div class="score num">11 · save +2</div></div>
+          <div class="ab save"><span class="label">CHA</span><div class="mod">+3</div><div class="score num">17 · save +5</div></div>
+        </div>
+        <dl class="facts">
+          <dt>Skill</dt><dd>Athletics <b class="num">+5</b> · Persuasion <b class="num">+5</b> · Animal Handling <b class="num">+2</b> · Nature <b class="num">+0</b></dd>
+          <dt>ภาษา</dt><dd>Common, Draconic, Sign</dd>
+          <dt>ประสาท</dt><dd>Darkvision 60 ฟุต · Divine Sense</dd>
+          <dt>ต้านทาน</dt><dd>Fire (เชื้อสายมังกรทอง)</dd>
+          <dt>Feats</dt><dd>Tough · Defense · Dragon Fear · Divine Recovery</dd>
+          <dt>ของติดตัว</dt><dd>Whisperlink Mail, Shield, Spear, Holy Water ×5, 60 gp</dd>
+        </dl>
+      </section>
+
+      <section class="panel">
+        <h2>บทบาทในตี้ <small>ประเมิน ณ Lv 3</small></h2>
+        <div class="role">
+          <div class="role-row"><span>รับดาเมจ</span><div class="bar"><i style="width:95%"></i></div><span class="num">5/5</span></div>
+          <div class="role-row"><span>ดาเมจระเบิด</span><div class="bar"><i style="width:70%"></i></div><span class="num">3.5</span></div>
+          <div class="role-row"><span>ฮีล / ช่วยชีวิต</span><div class="bar"><i style="width:60%"></i></div><span class="num">3/5</span></div>
+          <div class="role-row"><span>สังคม</span><div class="bar"><i style="width:60%"></i></div><span class="num">3/5</span></div>
+          <div class="role-row"><span>ควบคุมฝูง</span><div class="bar"><i style="width:40%"></i></div><span class="num">2/5</span></div>
+          <div class="role-row"><span>ระยะไกล</span><div class="bar"><i style="width:20%"></i></div><span class="num">1/5</span></div>
+        </div>
+      </section>
+
+      <section class="panel" id="tracker">
+        <h2>ทรัพยากร <small>กดจุดเพื่อติ๊กว่าใช้แล้ว</small></h2>
+        <div class="res">
+          <div class="res-row"><span class="res-name">Spell Slot ระดับ 1</span><div class="pips" data-key="slot" data-max="3" data-rest="long"></div><span class="res-meta">คืนตอน Long Rest · Divine Recovery คืนได้ 1 ช่องตอน Short Rest</span></div>
+          <div class="res-row"><span class="res-name">Divine Smite ฟรี</span><div class="pips" data-key="smite" data-max="1" data-rest="long"></div><span class="res-meta">Paladin's Smite: ร่ายฟรีไม่ใช้ slot 1 ครั้ง / Long Rest</span></div>
+          <div class="res-row"><span class="res-name">Channel Divinity</span><div class="pips" data-key="cd" data-max="2" data-rest="short1"></div><span class="res-meta">Sacred Weapon หรือ Divine Sense · Short Rest คืน 1 · Long Rest คืนหมด</span></div>
+          <div class="res-row"><span class="res-name">Breath Weapon</span><div class="pips" data-key="breath" data-max="2" data-rest="long"></div><span class="res-meta">ใช้พ่นไฟ หรือคำราม Dragon Fear (กินโควตาเดียวกัน)</span></div>
+          <div class="res-row"><span class="res-name">Divine Recovery</span><div class="pips" data-key="recov" data-max="1" data-rest="long"></div><span class="res-meta">ใช้ตอนจบ Short Rest เพื่อคืน slot ระดับ 1 หนึ่งช่อง</span></div>
+          <div class="res-row"><span class="res-name">Lay on Hands</span>
+            <div class="pool"><button type="button" id="loh-minus" aria-label="ใช้ 1 HP จาก Lay on Hands">−</button><output id="loh" class="num">15 / 15</output><button type="button" id="loh-plus" aria-label="คืน 1 HP ให้ Lay on Hands">+</button></div>
+            <span class="res-meta">บ่อฮีล 15 HP · Bonus Action · จ่าย 5 แต้มเพื่อล้าง Poisoned</span></div>
+        </div>
+        <div class="rest">
+          <button type="button" class="btn" id="short-rest">Short Rest</button>
+          <button type="button" class="btn solid" id="long-rest">Long Rest</button>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="col">
+
+      <section class="panel">
+        <h2>สิ่งที่ทำได้ในเทิร์น</h2>
+        <div class="legend">
+          <span><span class="tag t-slot">SLOT</span> ใช้ spell slot</span>
+          <span><span class="tag t-conc">CONC</span> ต้อง Concentration</span>
+          <span><span class="tag t-cd">CD</span> ใช้ Channel Divinity</span>
+          <span><span class="tag t-fire">BREATH</span> ใช้ Breath Weapon</span>
+        </div>
+        <div class="board">
+          <div class="lane">
+            <div class="lane-head"><h3>Action</h3><span class="label">1 / เทิร์น</span></div>
+            <ul>
+              <li><b>Spear</b> <span class="num">+5</span> · 1d6+3 piercing (ถือสองมือ 1d8+3) · ขว้างได้ 20/60 ฟุต · Mastery <b>Sap</b>: โดนแล้วศัตรูติด Disadvantage ตีครั้งถัดไป</li>
+              <li><b>Sacred Weapon</b> <span class="tag t-cd">CD</span> ตอนกด Attack · อาวุธ +3 to hit (รวม <span class="num">+8</span>) เปลี่ยนดาเมจเป็น Radiant ได้ ส่องแสง 20 ฟุต นาน 10 นาที</li>
+              <li><b>Breath Weapon</b> <span class="tag t-fire">BREATH</span> แทนการโจมตี · กรวย 15 ฟุต หรือเส้น 30 ฟุต · DEX save DC <span class="num">14</span> · 1d10 fire</li>
+              <li><b>Dragon Fear</b> <span class="tag t-fire">BREATH</span> คำรามแทนพ่นไฟ · ศัตรูที่เลือกใน 30 ฟุต WIS save DC <span class="num">13</span> ไม่ผ่านติด Frightened 1 นาที</li>
+              <li><b>Bless</b> <span class="tag t-slot">SLOT</span><span class="tag t-conc">CONC</span> 3 คน +1d4 ทั้ง attack และ save</li>
+              <li><b>Command</b> <span class="tag t-slot">SLOT</span> WIS DC <span class="num">13</span> · Halt / Drop / Flee / Grovel / Approach</li>
+              <li><b>Cure Wounds</b> <span class="tag t-slot">SLOT</span> 2d8+3 HP (สัมผัส)</li>
+              <li><b>Holy Water</b> แทนการโจมตี · 2d8 radiant ใส่ undead / fiend</li>
+            </ul>
+          </div>
+          <div class="lane">
+            <div class="lane-head"><h3>Bonus Action</h3><span class="label">1 / เทิร์น</span></div>
+            <ul>
+              <li><b>Divine Smite</b> <span class="tag t-slot">SLOT</span> หลังตีโดนด้วยอาวุธ · +2d8 radiant (+1d8 ถ้าเป็น undead หรือ fiend)</li>
+              <li><b>Lay on Hands</b> ฮีลจากบ่อ 15 HP · ปลุกเพื่อนที่ล้มด้วยแค่ 1 HP ก็พอ</li>
+              <li><b>Shield of Faith</b> <span class="tag t-slot">SLOT</span><span class="tag t-conc">CONC</span> เพื่อน 1 คน AC +2 นาน 10 นาที</li>
+              <li><b>Divine Favor</b> <span class="tag t-slot">SLOT</span> อาวุธ +1d4 radiant ทุกครั้งที่โดน 1 นาที</li>
+              <li><b>Divine Sense</b> <span class="tag t-cd">CD</span> รู้ตำแหน่ง celestial / fiend / undead ใน 60 ฟุต 10 นาที</li>
+            </ul>
+            <div class="lane-head" style="border-top:1px solid var(--line)"><h3>Reaction</h3><span class="label">1 / รอบ</span></div>
+            <ul>
+              <li><b>Opportunity Attack</b> ด้วย Spear เมื่อศัตรูเดินออกจากระยะ</li>
+            </ul>
+            <div class="lane-head" style="border-top:1px solid var(--line)"><h3>นอกการต่อสู้</h3><span class="label">พิธีกรรม</span></div>
+            <ul>
+              <li><b>Protection from Evil and Good</b> <span class="tag t-slot">SLOT</span><span class="tag t-conc">CONC</span> กันการสิง / charm / frighten จาก 6 ประเภท</li>
+              <li><b>Purify Food and Drink</b> <span class="tag t-slot">SLOT</span> ล้างพิษอาหาร รัศมี 5 ฟุต</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>วิธีเล่น <small>ลำดับคิดในแต่ละเทิร์น</small></h2>
+        <ol class="steps">
+          <li><div><h3>ยืนให้ถูกที่ก่อน</h3><p>เดินไปอยู่<b>ระหว่างศัตรูกับ Lunol / Salem</b> ศัตรูต้องผ่านเราก่อนถึงแนวหลัง ถ้าเพื่อนล้มอยู่ ให้เดินไปหาและใช้ Lay on Hands ก่อนทุกอย่าง</p></div></li>
+          <li><div><h3>เทิร์นแรกของไฟต์หนัก: เปิด Sacred Weapon</h3><p>ใช้ Channel Divinity ตอนกด Attack ได้ <b>+3 to hit ตลอด 10 นาที</b> ครอบคลุมทั้งไฟต์ ถ้าทั้งตี้ยังไม่ปะทะและมีเวลา Bless ใส่ตัวตีหลักก่อนก็คุ้ม</p></div></li>
+          <li><div><h3>ตีด้วย Spear ทุกเทิร์น</h3><p>Sap ทำให้ศัตรูที่โดนตีพลาดง่ายขึ้นในการโจมตีครั้งถัดไป ช่วยทั้งตัวเราและเพื่อน ถ้าศัตรูยืนเรียงเส้นหรือจับกลุ่ม 3 ตัวขึ้นไป เปลี่ยนเป็น Breath Weapon</p></div></li>
+          <li><div><h3>ตีโดนแล้วค่อยตัดสินใจ Smite</h3><p>Smite <b>หลังรู้ว่าโดน</b> เสมอ ใช้ตอนติดคริติคอล (ทอยเต๋า smite สองเท่า) ตอนเจอบอส ตอนศัตรูเป็น undead/fiend หรือตอนดาเมจนี้จะปิดศัตรูได้พอดี ครั้งแรกของวันใช้ Smite ฟรีก่อน</p></div></li>
+          <li><div><h3>Bonus Action ที่เหลือ</h3><p>ถ้าไม่ได้ Smite ให้ดูตามลำดับ: เพื่อนล้ม → Lay on Hands · ตัวตีหลักโดนรุม → Shield of Faith · ไม่มีอะไรด่วน → Divine Favor (ถ้า slot ยังเหลือ)</p></div></li>
+        </ol>
+      </section>
+
+      <section class="panel">
+        <h2>เจอสถานการณ์นี้ ทำอะไร</h2>
+        <div class="cases">
+          <div class="case f"><strong>ศัตรูกำลังวิ่งไปหาแนวหลัง</strong><span>Dragon Fear: ศัตรูที่กลัวเราเดินเข้าใกล้เราไม่ได้ ถ้าเรายืนขวางทางอยู่ มันจะผ่านไปไม่ได้เลย</span></div>
+          <div class="case f"><strong>ลูกสมุนจับกลุ่มกัน</strong><span>Breath Weapon แบบกรวย 15 ฟุต หรือแบบเส้น 30 ฟุตถ้ายืนเรียงในทางเดินแคบ</span></div>
+          <div class="case b"><strong>ศัตรูตัวใหญ่ตัวเดียว</strong><span>Command "Grovel" ให้มันล้มหมอบ เพื่อนสาย melee ได้ Advantage ทั้งรอบ</span></div>
+          <div class="case b"><strong>เจอ undead หรือ fiend</strong><span>Smite ได้ 3d8 · Holy Water 2d8 · เปิด Divine Sense ก่อนเข้าห้องเพื่อรู้ว่ามีกี่ตัวและอยู่ตรงไหน</span></div>
+          <div class="case h"><strong>เพื่อน HP ต่ำแต่ยังไม่ล้ม</strong><span>ยังไม่ต้องรีบ เก็บบ่อ Lay on Hands ไว้ปลุกคนล้ม เพราะ 1 HP ก็พากลับมาเล่นได้ทั้งเทิร์น</span></div>
+          <div class="case h"><strong>ไฟต์ยาว slot เหลือน้อย</strong><span>Short Rest แล้วใช้ Divine Recovery คืน slot และ Channel Divinity คืนมา 1 ครั้ง</span></div>
+          <div class="case"><strong>ศัตรูบินหรืออยู่ไกล</strong><span>ขว้าง Spear (20/60 ฟุต) แล้วเก็บกลับ หรือพ่นไฟแบบเส้น 30 ฟุต</span></div>
+          <div class="case"><strong>ฉากเจรจา</strong><span>Persuasion +5 เป็นหน้าตาสำรองรองจาก Oxton · เลี่ยงการทอย Arcana / Investigation / History เพราะ INT −2</span></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>ข้อควรระวัง</h2>
+        <ul class="warn">
+          <li>Divine Smite, Lay on Hands, Shield of Faith, Divine Favor <b>ใช้ Bonus Action ร่วมกัน</b> เทิร์นเดียวเลือกได้อย่างเดียว</li>
+          <li>Bless, Shield of Faith และ Protection from Evil and Good ต้อง Concentration ร่ายตัวใหม่ ตัวเก่าจะหลุดทันที</li>
+          <li>Breath Weapon และ Dragon Fear <b>แชร์โควตา 2 ครั้ง / Long Rest</b> ใช้คำรามไปแล้วก็พ่นไฟได้น้อยลง</li>
+          <li>ที่ Lv 3 ยังมีการโจมตีครั้งเดียว ถ้าพ่นไฟ = เสียการตีด้วย Spear ทั้งเทิร์น</li>
+          <li>Frightened ทำให้ศัตรูเข้าหาเราไม่ได้ แต่ยังเดินไปหาเพื่อนได้ ใช้ตอนที่เราขวางทางอยู่จริงเท่านั้น</li>
+          <li>Slot มีแค่ 3 + Smite ฟรี 1 + Divine Recovery 1 = ร่ายได้ประมาณ <b>5 ครั้งต่อวัน</b> อย่าใช้ Smite หมดตั้งแต่ไฟต์แรก</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>เล่นคู่กับเพื่อนในตี้ Witsawa</h2>
+        <div class="party">
+          <div class="mate"><div class="who">Lunol <span>AC 14</span></div><span>เป้าที่ศัตรูฉลาดจะรุมก่อน ยืนข้างเธอเสมอ Shield of Faith ใส่ได้ทำให้ AC 16</span></div>
+          <div class="mate"><div class="who">Vorgash <span>AC 18</span></div><span>แนวหน้าคู่ แบ่งกันคนละฝั่ง Bless ใส่เขาเพราะ Reckless Attack ตีบ่อย</span></div>
+          <div class="mate"><div class="who">Xiah <span>ranged</span></div><span>Sap ของเราทำให้ศัตรูตีพลาดง่าย Xiah ยิงอยู่หลังเราได้ปลอดภัย</span></div>
+          <div class="mate"><div class="who">Salem <span>HP 27</span></div><span>Perfect Plan + Bless เสริมทอยให้ตี้ได้พร้อมกัน ระวังเขาโดนเข้าประชิด</span></div>
+          <div class="mate"><div class="who">Oxton <span>CHA +5</span></div><span>ให้ Oxton เป็นหน้าหลักตอนเจรจา เราเสริมด้วย Persuasion และความน่าเชื่อถือแบบอัศวิน</span></div>
+          <div class="mate"><div class="who">N'Earth <span>companion</span></div><span>ถ้ามาด้วย นับเป็นอีกร่างที่ต้องกันไว้ด้านหลัง</span></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <section class="panel" style="gap:12px">
+    <h2>เส้นทางเลเวลถัดไป <small>ตามกติกา 2024</small></h2>
+    <div class="road">
+      <div class="lv"><span class="n">Lv 4</span><b>ASI / Feat</b><ul><li>CHA 17 เป็นเลขคี่ เลือก half-feat ที่ให้ +1 CHA จะได้ CHA 18 (+4) ทันที</li><li>DC, Sacred Weapon และ Aura ในอนาคตแรงขึ้นพร้อมกัน</li></ul></div>
+      <div class="lv"><span class="n">Lv 5</span><b>จุดพลิกของคลาส</b><ul><li>Extra Attack ตี 2 ครั้ง</li><li>Slot ระดับ 2 · Aid, Zone of Truth</li><li>Breath Weapon 2d10</li><li>Draconic Flight ปลดล็อก</li></ul></div>
+      <div class="lv"><span class="n">Lv 6</span><b>Aura of Protection</b><ul><li>ตัวเราและเพื่อนใน 10 ฟุต บวก CHA เข้าทุก saving throw</li><li>ตำแหน่งยืนจะสำคัญขึ้นมาก</li></ul></div>
+      <div class="lv"><span class="n">Lv 7</span><b>Aura of Devotion</b><ul><li>ตัวเราและเพื่อนใน aura ติด Charmed ไม่ได้</li></ul></div>
+    </div>
+  </section>
+
+  <footer>ข้อมูลจาก Foundry world <span class="num">astral-nexus-constellation-protocol</span> (group W) และ <span class="num">characters.json</span> ณ 12 ต.ค. 2026 · คำนวณตามกติกา D&amp;D 2024 · สถานะการใช้ทรัพยากรบันทึกในเบราว์เซอร์ของผู้ดูเท่านั้น</footer>
+</div>
+
+<script>
+(function(){
+  const KEY='thalric-tracker-v1';
+  let state={};
+  try{state=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){state={}}
+  const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+  const groups=[...document.querySelectorAll('.pips')];
+  const LOH_MAX=15;
+  if(typeof state.loh!=='number') state.loh=LOH_MAX;
+
+  function render(){
+    groups.forEach(g=>{
+      const k=g.dataset.key, max=+g.dataset.max, used=state[k]||0;
+      g.innerHTML='';
+      for(let i=0;i<max;i++){
+        const b=document.createElement('button');
+        b.type='button'; b.className='pip'+(i<used?' used':'');
+        b.setAttribute('aria-label',g.previousElementSibling.textContent+' ช่องที่ '+(i+1)+(i<used?' (ใช้แล้ว)':' (พร้อมใช้)'));
+        b.addEventListener('click',()=>{state[k]=(i<used)?i:i+1;save();render();});
+        g.appendChild(b);
+      }
+    });
+    document.getElementById('loh').textContent=state.loh+' / '+LOH_MAX;
+  }
+  document.getElementById('loh-minus').addEventListener('click',()=>{state.loh=Math.max(0,state.loh-1);save();render();});
+  document.getElementById('loh-plus').addEventListener('click',()=>{state.loh=Math.min(LOH_MAX,state.loh+1);save();render();});
+  document.getElementById('short-rest').addEventListener('click',()=>{
+    state.cd=Math.max(0,(state.cd||0)-1);
+    save();render();
+  });
+  document.getElementById('long-rest').addEventListener('click',()=>{
+    state={loh:LOH_MAX};save();render();
+  });
+  render();
+})();
+</script>

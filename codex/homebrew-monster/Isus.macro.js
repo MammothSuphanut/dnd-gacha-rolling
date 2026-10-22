@@ -12,6 +12,8 @@
  *   - Creates (or rebuilds) a world NPC "Shadow Revenant" in the same folder.
  *     Isus's "Rise, Revenants" and "Rise From Ruin" summon it straight onto the map.
  *   - Domain เงาทมิฬกลืนโลก: the "Devouring Dark" tracker item rolls the growing damage.
+ *   - Paladin spells are copied from compendiums (2024 first) or the world's Items directory
+ *     (e.g. Plutonium imports). Missing spells become placeholders.
  */
 (async () => {
   /* ------------------------------------------------------------------ */
@@ -20,6 +22,34 @@
   const ACTOR_NAME = "Isus";
   const REVENANT_NAME = "Shadow Revenant";
   const MAKE_BACKUP = false;   // true = copy "Isus (backup)" before wiping
+
+  // Oathbreaker Paladin spellcasting (Charisma, DC 20, +12 to hit).
+  // NPC slot rule (Core-Rules/NPC-Design-system.md): CR 19 row, Hybrid (max 5th) = 7 / 7 / 6 / 6 / 5.
+  // No smite spells: Dread Smite and Monarch's Ruin replace them. always = Oathbreaker oath spells.
+  const SLOTS = { spell1: 7, spell2: 7, spell3: 6, spell4: 6, spell5: 5 };
+  const SPELLS = [
+    // 1st
+    { name: "Command", level: 1 },
+    { name: "Compelled Duel", level: 1 },
+    { name: "Inflict Wounds", level: 1, always: true },
+    { name: "Protection from Evil and Good", level: 1 },
+    // 2nd
+    { name: "Darkness", level: 2, always: true },
+    { name: "Crown of Madness", level: 2, always: true },
+    { name: "Find Steed", level: 2 },
+    // 3rd
+    { name: "Bestow Curse", level: 3, always: true },
+    { name: "Dispel Magic", level: 3 },
+    { name: "Fear", level: 3 },
+    // 4th
+    { name: "Blight", level: 4, always: true },
+    { name: "Confusion", level: 4, always: true },
+    { name: "Banishment", level: 4 },
+    // 5th
+    { name: "Destructive Wave", level: 5 },
+    { name: "Dominate Person", level: 5, always: true },
+    { name: "Contagion", level: 5, always: true }
+  ];
 
   try {
     if ( game.system.id !== "dnd5e" ) return ui.notifications.error("This macro requires the D&D 5e system.");
@@ -70,6 +100,52 @@
       const effectIds = actor.effects.map(e => e.id);
       if ( effectIds.length ) await actor.deleteEmbeddedDocuments("ActiveEffect", effectIds);
     }
+
+    // Search order: 2024 compendiums → spells already in the world's Items directory
+    // (e.g. imported with Plutonium) → every other compendium.
+    const itemPacks = game.packs.filter(p => p.documentName === "Item")
+      .sort((a, b) => Number(b.collection.includes("24")) - Number(a.collection.includes("24")));
+    async function findSpell(name) {
+      const lower = name.toLowerCase();
+      const fromPack = async pack => {
+        const index = await pack.getIndex({ fields: ["type"] });
+        const entry = index.find(e => (e.type === "spell") && (e.name.toLowerCase() === lower));
+        return entry ? (await pack.getDocument(entry._id)).toObject() : null;
+      };
+      for ( const pack of itemPacks.filter(p => p.collection.includes("24")) ) {
+        const data = await fromPack(pack);
+        if ( data ) return data;
+      }
+      const worldSpell = game.items.find(i => (i.type === "spell") && (i.name.toLowerCase() === lower));
+      if ( worldSpell ) return worldSpell.toObject();
+      for ( const pack of itemPacks.filter(p => !p.collection.includes("24")) ) {
+        const data = await fromPack(pack);
+        if ( data ) return data;
+      }
+      return null;
+    }
+
+    const missingSpells = [];
+    async function buildSpell({ name, level, always = false }) {
+      let data = await findSpell(name);
+      if ( !data ) {
+        missingSpells.push(name);
+        data = { name, type: "spell", img: "icons/magic/unholy/silhouette-robe-evil-power.webp",
+          system: { level, description: { value: `<p>Placeholder: "${name}" wasn't found in a compendium or the world's Items. Import it (e.g. with Plutonium) and run the macro again.</p>` }, activities: {} } };
+      }
+      delete data._id;
+      if ( data.system.preparation ) data.system.preparation = { mode: always ? "always" : "prepared", prepared: true };
+      else { data.system.method = "spell"; data.system.prepared = always ? 2 : 1; }
+      return data;
+    }
+
+    const spellBlock = "<ul>" + Array.from({ length: 10 }, (_, lvl) => {
+      const names = SPELLS.filter(s => s.level === lvl)
+        .map(s => `<em>${s.name.toLowerCase()}</em>${s.always ? " (oath spell)" : ""}`).join(", ");
+      if ( !names ) return "";
+      const label = `${lvl}${["st", "nd", "rd"][lvl - 1] ?? "th"} level (${SLOTS[`spell${lvl}`]} slots)`;
+      return `<li><strong>${label}:</strong> ${names}</li>`;
+    }).join("") + "</ul>";
 
     async function addItems(actor, items, failed) {
       for ( const data of items ) {
@@ -255,7 +331,7 @@
 
       // ---- Actions ----
       feat("Multiattack", "icons/skills/melee/strike-sword-dagger-runes-yellow.webp",
-        "<p>Isus makes three Ruin Blade attacks. He can replace one of them with Shield Bash, and he can move between the attacks.</p>",
+        "<p>Isus makes three Ruin Blade attacks. He can replace one of them with Shield Bash, and he can move between the attacks. Casting a spell takes his whole action instead of Multiattack.</p>",
         { activities: [act("utility", { activation: activation("action") })] }),
 
       (() => {
@@ -300,6 +376,12 @@
             })
           ]
         }),
+
+      feat("Spellcasting", "icons/magic/unholy/silhouette-robe-evil-power.webp",
+        "<p>Isus is a CR 19 Boss spellcaster (NPC slot rule: CR 19, Hybrid). His spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He uses Ruin Blade as his holy symbol, so he can cast with sword and shield in hand.</p>"
+        + "<p>Casting a spell takes his whole action (it can't replace an attack in Multiattack). He knows no smite spells: Dread Smite and Monarch's Ruin are what his broken oath left him.</p>"
+        + "<p><strong>Prepared Paladin spells:</strong></p>"
+        + spellBlock),
 
       feat("Domain: Shadow That Swallows the World (1/Day)", "icons/magic/unholy/silhouette-robe-evil-glow.webp",
         "<p><strong>Divine Domain — เงาทมิฬกลืนโลก.</strong> Isus opens his Domain, the expression of his Definition: the oath is gone, and the darkness he took in its place spreads over everything. Shadow floods the whole scene (no range: the Domain covers the entire scene). It lasts 1 minute, until he has the Incapacitated condition, or until he ends it (no action required). It doesn't require Concentration.</p>"
@@ -412,6 +494,7 @@
       + "<li><strong>Monarch's Ruin:</strong> Saved for the healer or the caster. Anyone it kills gets back up on his side.</li>"
       + "<li><strong>Revenants:</strong> A bonus action when it recharges, used to body-block healers and archers. He never spends his action on them.</li>"
       + "<li><strong>Legendary:</strong> Ruin Strike on the most hurt target, Iron Rush to chase a fleeing caster, Shadow Swap out of a bad spot.</li>"
+      + "<li><strong>Spells (whole action):</strong> <em>Compelled duel</em> or <em>command</em> (\"Kneel\") on whoever runs; <em>darkness</em> to split the party; <em>banishment</em> or <em>dominate person</em> on the party's strongest; <em>destructive wave</em> when three or more PCs crowd him; <em>dispel magic</em> on the buff that's keeping them alive.</li>"
       + "<li><strong>Domain:</strong> The longer the fight lasts, the more it hurts (round 5 = 5d4 per creature, round 10 = 10d4). Once it is open he plays for time with Aegis Parry, Iron Rush and revenant walls.</li></ul>"
       + "<h3>Counterplay</h3><ul>"
       + "<li>The Domain rewards burst: spend everything early, because the damage only grows. Incapacitating Isus ends it.</li>"
@@ -419,7 +502,8 @@
       + "<li>Revenants have only 45 HP and AC 16, and Radiant damage or Critical Hits ignore Undying Loyalty. Killing Isus destroys every revenant at once.</li>"
       + "<li>Legendary Resistance (4/Day) is the wall. Burn it with cheap DEX or INT save effects first.</li></ul>"
       + "<h3>CR Check</h3>"
-      + "<p>Defense ≈ CR 19 (AC 21, 294 HP, Aegis Parry, Necrotic resistance, Legendary Resistance 4/Day). Offense ≈ CR 20 (best 3 rounds average ~145 damage per round at +13 to hit, DC 20–21: Multiattack 3 × 26.5 = 80 + Dread Smite 13 + Ruin Strike 26.5 = ~120, plus Monarch's Ruin 44 once (~15 per round) and the Domain on 2 targets over rounds 1–3 (~10 per round)). Average ≈ CR 19–20. Revenants add a little on top; with four out, treat the fight as CR 20.</p>";
+      + "<p>Defense ≈ CR 19 (AC 21, 294 HP, Aegis Parry, Necrotic resistance, Legendary Resistance 4/Day). Offense ≈ CR 20 (best 3 rounds average ~145 damage per round at +13 to hit, DC 20–21: Multiattack 3 × 26.5 = 80 + Dread Smite 13 + Ruin Strike 26.5 = ~120, plus Monarch's Ruin 44 once (~15 per round) and the Domain on 2 targets over rounds 1–3 (~10 per round)). Average ≈ CR 19–20. Revenants add a little on top; with four out, treat the fight as CR 20. "
+      + "Spells don't raise offense: they take his whole action, and his best spell round (<em>destructive wave</em> 35 on 2 targets = 70 + legendary Ruin Strike) is below a Multiattack round. They give him control (<em>command</em>, <em>banishment</em>, <em>dominate person</em>) instead of damage.</p>";
 
     const isusSystem = {
       abilities: {
@@ -433,8 +517,14 @@
         init: { ability: "", bonus: "" },
         movement: { ...EMPTY_MOVEMENT, walk: "40" },
         senses: { ranges: { darkvision: 120, blindsight: null, tremorsense: null, truesight: null }, units: "ft", special: "" },
-        spellcasting: "cha"
+        spellcasting: "cha",
+        spell: { level: 19 }
       },
+      spells: Object.fromEntries(Array.from({ length: 9 }, (_, i) => {
+        const key = `spell${i + 1}`;
+        const max = SLOTS[key] ?? 0;
+        return [key, { value: max, override: max }];
+      })),
       details: {
         cr: 19,
         alignment: "Neutral Evil",
@@ -471,10 +561,15 @@
       "prototypeToken.actorLink": true,
       "prototypeToken.disposition": CONST.TOKEN_DISPOSITIONS.HOSTILE
     });
+    for ( const spell of SPELLS ) {
+      try { isusItems.push(await buildSpell(spell)); }
+      catch ( err ) { console.error(`Isus macro | Failed to build spell "${spell.name}"`, err); failed.push(spell.name); }
+    }
     await addItems(isus, isusItems, failed);
 
     isus.sheet.render(true);
     ui.notifications.info(`${isus.name} rebuilt (${isusItems.length} features) and "${REVENANT_NAME}" is ready to summon.`);
+    if ( missingSpells.length ) ui.notifications.warn(`Spells not found (placeholders made): ${missingSpells.join(", ")}`, { permanent: true });
     if ( failed.length ) ui.notifications.error(`Could not create: ${failed.join(", ")}. Press F12 → Console for details.`, { permanent: true });
   } catch ( err ) {
     console.error("Isus macro | ", err);

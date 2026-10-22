@@ -10,6 +10,8 @@
 | Grim Hollow (Ghostfire Gaming) | `src/data/5etools/homebrew/grim-hollow/` | class/subclass/feat/species สายดาร์กแฟนตาซี |
 | Valda's Spire of Secrets (Mage Hand Press) | `src/data/5etools/homebrew/valdas-spire/` | class/subclass/feat/species เสริมทางเลือกอื่นๆ |
 
+**รายชื่อเล่มทั้งหมดที่อยู่ใน scope ตอนนี้ + กติกา 2014/2024 + เล่มที่ยังขาด**: ดู [source-books.md](source-books.md)
+
 **ดัชนี class/subclass ทั้งหมด**: [class-subclass-index.md](../codex/General/class-subclass-index.md) เป็นไฟล์ auto-generated รวมทุก class (official + homebrew) พร้อม subclass ของแต่ละ class ครบทุกตัว ระบุ edition/source/book กำกับ — สร้างขึ้นเพราะ homebrew subclass (โดยเฉพาะ Valda's Spire of Secrets ที่มีเกือบ 200 ตัว) ถูกฝังปนกับ spell/monster/item อยู่ในไฟล์ compendium ก้อนใหญ่ก้อนเดียวต่อเล่ม เปิดไฟล์ตรงๆ แล้วมีโอกาสเห็นไม่ครบ **ทุกครั้งที่จะเสนอ/เปรียบเทียบ subclass ของ class ใดก็ตาม ให้เปิดไฟล์นี้ดูรายชื่อ subclass ทั้งหมดของ class นั้นก่อนเสมอ** (ทั้ง official และ homebrew) แล้วค่อยไปอ่านรายละเอียด feature จากไฟล์ source จริงใน `src/data/5etools/` ตามที่ระบุไว้ในตาราง — ห้ามข้ามขั้นนี้แล้วไล่หาเองในไฟล์ homebrew ก้อนใหญ่ตรงๆ เพราะเป็นสาเหตุที่เคยเสนอ subclass ไม่ครบ
 
 ถ้าข้อมูลใน `src/data/5etools/` เปลี่ยน (เพิ่ม/อัปเดต mirror) ให้รันคำสั่งนี้เพื่อ regenerate ไฟล์ดัชนีใหม่:

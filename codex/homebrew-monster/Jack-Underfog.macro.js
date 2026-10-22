@@ -297,6 +297,7 @@
     await wipe(jack);
     await jack.update({
       system: jackSystem,
+      "prototypeToken.actorLink": true,
       "prototypeToken.disposition": CONST.TOKEN_DISPOSITIONS.HOSTILE
     });
     await addItems(jack, jackItems, failed);

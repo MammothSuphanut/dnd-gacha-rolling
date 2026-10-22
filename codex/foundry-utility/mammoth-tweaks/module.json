@@ -1,0 +1,9 @@
+{
+  "id": "mammoth-tweaks",
+  "title": "Mammoth Tweaks",
+  "description": "CSS-only fixes for this table. No JavaScript. Disable to revert.",
+  "version": "1.0.0",
+  "authors": [{ "name": "Mammoth" }],
+  "compatibility": { "minimum": "13", "verified": "14" },
+  "styles": ["css/mammoth-tweaks.css"]
+}

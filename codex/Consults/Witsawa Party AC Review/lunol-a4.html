@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>Lunol</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="char-sheet.css">
+<style>:root{--gold:#6A4AA0;--gold-soft:#ECE5F7;--gold-ink:#3E2870;--band:#C9B6F0}</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 ============ -->
+<section class="page">
+  <div class="head">
+    <svg class="crest" viewBox="0 0 120 140">
+      <path class="soft line" d="M60 4 L112 20 V66 C112 100 90 124 60 136 C30 124 8 100 8 66 V20 Z" stroke-width="3"/>
+      <path class="fill" d="M60 30 C78 30 90 46 90 64 C90 84 76 98 60 100 C70 92 76 80 76 66 C76 50 70 38 60 30 Z"/>
+      <path class="fill" d="M44 58 L56 70 L44 82 L32 70 Z" opacity=".75"/>
+      <circle class="fill" cx="60" cy="112" r="3"/>
+    </svg>
+    <div>
+      <span class="label">Witsawa · Aeorian Cataclysm · Level 3</span>
+      <h1>Lunol</h1>
+      <p class="sub">Warlock 3 — Celestial Patron · Shadar-Kai · Acolyte</p>
+      <div class="chips"><span class="chip g">ฮีลเลอร์หลักของตี้</span><span class="chip">ยิงเวทระยะไกล</span><span class="chip">บัพ / แก้สถานะ</span><span class="chip f">ตัวบาง ต้องมีคนคุ้ม</span></div>
+    </div>
+    <div class="pagetag">1 / 6<br><span class="label">ข้อมูลตัวละคร</span></div>
+  </div>
+
+  <div class="strip">
+    <div><span class="label">AC</span><span class="big">14</span><span class="hint">Studded Leather 12 + DEX 2</span></div>
+    <div class="key"><span class="label">HP</span><span class="big">27</span><span class="hint">+12 temp ทุกไฟต์</span></div>
+    <div><span class="label">Speed</span><span class="big">30</span><span class="hint">ฟุต</span></div>
+    <div><span class="label">Init</span><span class="big">+2</span><span class="hint">DEX</span></div>
+    <div><span class="label">Prof</span><span class="big">+2</span><span class="hint">Proficiency</span></div>
+    <div class="key"><span class="label">Spell DC</span><span class="big">14</span><span class="hint">8 + 2 + CHA 4</span></div>
+    <div><span class="label">Spell Atk</span><span class="big">+6</span><span class="hint">Eldritch Blast 1d10+4</span></div>
+    <div><span class="label">Passive</span><span class="big">14</span><span class="hint">Perception</span></div>
+  </div>
+
+  <div class="abil">
+    <div class="ab"><span class="label">STR</span><div class="mod">+2</div><div class="sc num">14</div></div>
+    <div class="ab"><span class="label">DEX</span><div class="mod">+2</div><div class="sc num">14</div></div>
+    <div class="ab"><span class="label">CON</span><div class="mod">+3</div><div class="sc num">16</div></div>
+    <div class="ab"><span class="label">INT</span><div class="mod">+0</div><div class="sc num">10</div></div>
+    <div class="ab save"><span class="label">WIS</span><div class="mod">+2</div><div class="sc num">15 · save +4</div></div>
+    <div class="ab save"><span class="label">CHA</span><div class="mod">+4</div><div class="sc num">19 · save +6</div></div>
+  </div>
+
+  <div class="pc">
+    <div class="pros">
+      <h2>จุดเด่น</h2>
+      <ul>
+        <li><b>ฮีลได้เยอะที่สุดในตี้</b> Healing Light 4 ลูก<span>แต่ละลูก d6+4 (บัพแล้ว) ใช้ Bonus Action ระยะ 60 ฟุต ไม่ใช้ slot</span></li>
+        <li><b>ปลุกคนล้มได้หลายทาง</b><span>Healing Light, Healing Word ฟรี, Cure Wounds ฟรี, Spare the Dying</span></li>
+        <li><b>เกราะชั่วคราวฟรีทุกไฟต์</b> Fiendish Vigor<span>ร่าย False Life ได้ไม่จำกัด ได้ 12 temp HP เสมอ</span></li>
+        <li><b>หนีเก่ง</b> Blessing of the Raven Queen<span>วาร์ป 30 ฟุตด้วย Bonus Action และต้านทานดาเมจทุกชนิดจนถึงเทิร์นถัดไป</span></li>
+        <li><b>Slot คืนตอน Short Rest</b><span>Warlock ได้ slot ระดับ 2 สองช่อง พักสั้นแล้วได้คืนหมด</span></li>
+        <li><b>สังคมดี</b> Deception / Intimidation +6, Suggestion, Friends</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h2>จุดด้อยที่ควรเลี่ยง</h2>
+      <ul>
+        <li><b>AC 14 ต่ำที่สุดในตี้</b><span>ศัตรูฉลาดจะเลือกตีก่อน ยืนหลัง Thalric หรือ Vorgash เสมอ</span></li>
+        <li><b>HP 27</b><span>โดนรุม 2–3 ตัวล้มได้ใน 1 รอบ อย่ายืนแนวหน้าแม้จะมี temp HP</span></li>
+        <li><b>Slot มีแค่ 2 ช่อง</b><span>ใช้ Healing Light ก่อนเสมอ เก็บ slot ไว้กับสเปลล์ที่ไม่มีอะไรแทนได้</span></li>
+        <li><b>Concentration ชนกัน</b><span>Hex, Suggestion, Guidance, Friends, Detect Magic ใช้ได้ทีละตัว</span></li>
+        <li><b>Bonus Action แน่น</b><span>Healing Light, Healing Word, Raven Queen, ย้าย Hex ใช้ช่องเดียวกัน</span></li>
+        <li><b>ไม่มีอาวุธประชิด</b><span>โดนเข้าประชิดแล้วให้วาร์ปหนีก่อน ยิงทีหลัง</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <h2>ความสามารถหลัก <small><span class="tag t-a">A</span> Action · <span class="tag t-b">BA</span> Bonus Action · <span class="tag t-s">SLOT</span> ใช้ pact slot (ร่ายที่ระดับ 2)</small></h2>
+    <div class="kab">
+      <div><b>Eldritch Blast</b><span class="tag t-a">A</span> +6 · 1d10+4 force · 120 ฟุต · ท่ายิงหลักทุกเทิร์น</div>
+      <div><b>Healing Light</b><span class="tag t-b">BA</span> ใช้ได้ถึง 4 ลูกต่อครั้ง · ลูกละ d6+4 · 60 ฟุต</div>
+      <div><b>Guiding Bolt</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 5d6 radiant · ตีครั้งถัดไปใส่เป้าได้ Advantage</div>
+      <div><b>Healing Word</b><span class="tag t-b">BA</span> 60 ฟุต · ฟรีวันละครั้ง 2d4+4 · ใช้ slot ได้ 4d4+4</div>
+      <div><b>Hex</b><span class="tag t-b">BA</span><span class="tag t-s">SLOT</span> +1d6 necrotic ทุกครั้งที่ยิงโดน · Concentration</div>
+      <div><b>Raven Queen</b><span class="tag t-b">BA</span> วาร์ป 30 ฟุต + ต้านทานทุกดาเมจ · 2 / Long Rest</div>
+      <div><b>Cure Wounds</b><span class="tag t-a">A</span> ฟรีวันละครั้ง 2d8+4 · ใช้ slot = 6d8+4 (Favorite Spell)</div>
+      <div><b>Vicious Mockery</b><span class="tag t-a">A</span> WIS DC 14 · 1d6 psychic + ศัตรูตีครั้งถัดไปเสีย Disadvantage</div>
+      <div><b>Aid</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 3 คน HP สูงสุด +5 นาน 8 ชั่วโมง</div>
+      <div><b>Suggestion</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> WIS DC 14 · สั่งให้ทำตามประโยคเดียว · Concentration</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>ทรัพยากรต่อวัน <small>ติ๊กด้วยดินสอระหว่างเล่น</small></h2>
+    <div class="res">
+      <div class="r"><span class="n">Pact Slot (Lv 2)</span><div class="pips"><i></i><i></i></div><span class="m">คืนหมดตอน Short Rest</span></div>
+      <div class="r"><span class="n">Healing Light</span><div class="pips"><i></i><i></i><i></i><i></i></div><span class="m">4 ลูก / Long Rest</span></div>
+      <div class="r"><span class="n">ร่ายฟรี</span><div class="pips"><i></i><i></i></div><span class="m">Healing Word · Cure Wounds</span></div>
+      <div class="r"><span class="n">Raven Queen</span><div class="pips"><i></i><i></i></div><span class="m">2 / Long Rest</span></div>
+      <div class="r"><span class="n">Magical Cunning</span><div class="pips"><i></i></div><span class="m">คืน 1 slot · 1 / Long Rest</span></div>
+      <div class="r"><span class="n">False Life</span><span class="num" style="font-size:10pt">ไม่จำกัด</span><span class="m">12 temp HP ทุกครั้ง</span></div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Lunol · Warlock 3 · กติกา D&amp;D 2024</span><span>ข้อมูลจาก Foundry group W · 12 ต.ค. 2026</span></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page">
+  <div class="head" style="grid-template-columns:1fr auto">
+    <div><span class="label">Lunol</span><h1 style="font-size:22pt">วิธีเล่น<span> ในแต่ละสถานการณ์</span></h1></div>
+    <div class="pagetag">2 / 6<br><span class="label">คู่มือเล่น</span></div>
+  </div>
+
+  <div>
+    <h2>ลำดับคิดในทุกเทิร์น</h2>
+    <div class="loop">
+      <div class="st"><span class="k">1</span><h3>มีเพื่อนล้มไหม</h3><p>ถ้ามี ใช้ Healing Light 1–2 ลูกปลุกก่อน (Bonus Action ระยะ 60 ฟุต)</p></div>
+      <div class="st"><span class="k">2</span><h3>ตัวเองปลอดภัยไหม</h3><p>ศัตรูอยู่ติดตัว ให้วาร์ปด้วย Raven Queen ไปหลังแนวหน้าก่อน</p></div>
+      <div class="st"><span class="k">3</span><h3>ยิง Eldritch Blast</h3><p>เป็นท่ายิงหลักทุกเทิร์น เปิด Guiding Bolt ตอนเพื่อนจะตีเป้าเดียวกันต่อ</p></div>
+      <div class="st"><span class="k">4</span><h3>เก็บ slot ไว้</h3><p>ใช้ slot เมื่อไม่มีทางอื่นแทนได้ เช่น Lesser Restoration, Suggestion, Cure Wounds ก้อนใหญ่</p></div>
+    </div>
+  </div>
+
+  <div>
+    <h2>เจอแบบนี้ ทำแบบนี้</h2>
+    <div class="cases">
+      <div class="case"><strong>เริ่มวันใหม่หลัง Long Rest</strong><span>ร่าย <b>Aid</b> ใส่ 3 คนที่อยู่แนวหน้า (HP +5 นาน 8 ชั่วโมง) แล้วขอ Short Rest ครั้งแรกเพื่อเอา slot คืน</span><em>Slot ของ Warlock คืนตอนพักสั้น จึงเหมือนได้ Aid ฟรี</em></div>
+      <div class="case"><strong>ก่อนเข้าไฟต์ทุกครั้ง</strong><span>ร่าย <b>False Life</b> ฟรีจาก Fiendish Vigor ได้ 12 temp HP หลังจบไฟต์ร่ายใหม่ได้เรื่อยๆ</span><em>HP จริงจะเริ่มลดก็ต่อเมื่อ temp HP 12 แต้มหมดก่อน</em></div>
+      <div class="case h"><strong>เพื่อนล้ม 1 คน</strong><span><b>Healing Light</b> 1 ลูก (d6+4) พอให้ลุก แล้วใช้ Action ยิงต่อได้ในเทิร์นเดียวกัน</span><em>ไม่ต้องเติมเต็ม ฮีลก้อนเล็กปลุกคุ้มกว่า</em></div>
+      <div class="case h"><strong>เพื่อนโดนหนักหลายคน</strong><span>ฮีลคนที่ HP เหลือน้อยสุดด้วย Healing Light 2–4 ลูก แล้วจบไฟต์ค่อยใช้ <b>Cure Wounds</b> แบบใช้ slot (6d8+4)</span><em>Healing Light ทั้ง 4 ลูกพร้อมกัน ≈ 30 HP</em></div>
+      <div class="case f"><strong>ศัตรูเข้าประชิดตัว</strong><span><b>Raven Queen</b> วาร์ป 30 ฟุตไปหลัง Thalric ได้ต้านทานดาเมจทุกชนิดจนถึงเทิร์นหน้า แล้วยิงต่อ</span><em>วาร์ปไม่โดน Opportunity Attack</em></div>
+      <div class="case b"><strong>บอสตัวเดียว</strong><span><b>Guiding Bolt</b> ใส่บอสก่อนเทิร์นของ Vorgash หรือ Xiah เพื่อให้เขาตีด้วย Advantage หรือ <b>Hex</b> แล้วยิง Eldritch Blast ทุกเทิร์น</span><em>Hex ต้อง Concentration อยู่ได้นานถึง 4 ชั่วโมงที่ slot ระดับ 2</em></div>
+      <div class="case b"><strong>เพื่อนติดพิษ ตาบอด หรือเป็นอัมพาต</strong><span><b>Lesser Restoration</b> แก้ได้ทันที ถ้าเป็นแค่พิษให้ Thalric ใช้ Lay on Hands 5 แต้มแทน ประหยัด slot</span><em>Paralyzed คือเคสที่ต้องแก้ด่วนที่สุด</em></div>
+      <div class="case"><strong>เพื่อนกำลังตายแต่อยู่ไกล</strong><span>Healing Light และ Healing Word ไปได้ 60 ฟุต ถ้าใช้หมดแล้ว เดินเข้าไปใช้ <b>Spare the Dying</b> ให้หยุดทอย death save</span><em>Spare the Dying ไม่ใช้ slot</em></div>
+      <div class="case b"><strong>ฉากเจรจา / ศัตรูยอมคุย</strong><span>Deception / Intimidation +6 หรือ <b>Suggestion</b> ให้ศัตรูหยุดสู้ ("วางอาวุธแล้วออกไปจากที่นี่")</span><em>Friends ใช้ได้ก่อนเริ่มสู้เท่านั้น เป้าจะรู้ตัวหลังหมดเวลา</em></div>
+      <div class="case"><strong>เจอของเวท ภาษาแปลก หรืองานจุกจิก</strong><span>ร่ายเป็น <b>ritual</b> ไม่ใช้ slot ได้: Detect Magic, Comprehend Languages, Unseen Servant (ใช้เวลาเพิ่ม 10 นาที)</span><em>มาจาก Pact of the Tome</em></div>
+    </div>
+  </div>
+
+  <div>
+    <h2>เล่นคู่กับเพื่อนในตี้</h2>
+    <div class="party">
+      <div class="mate"><b>Thalric · AC 19</b>ยืนหลังเขาเสมอ ฝากเขาใช้ Shield of Faith ใส่เราตอนโดนรุม</div>
+      <div class="mate"><b>Vorgash · Reckless</b>โดนตีบ่อยเพราะ Reckless Attack ฮีลเขาเป็นคนแรกที่ต้องดู</div>
+      <div class="mate"><b>Xiah · ยิงไกล</b>Guiding Bolt ใส่เป้าก่อนเทิร์นเขา ได้ Advantage กับ Arcane Shot</div>
+      <div class="mate"><b>Oxton · Warlock</b>slot คืนตอนพักสั้นเหมือนกัน ขอ Short Rest พร้อมกันหลังไฟต์ใหญ่</div>
+      <div class="mate"><b>Salem · HP 27</b>ตัวบางพอกัน ยืนด้วยกันหลังแนวหน้า Perfect Plan ช่วยทอย save</div>
+      <div class="mate"><b>ไปถึง Lv 5</b>Slot ระดับ 3 · Eldritch Blast 2 ลำ · ได้ Revivify</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Lunol · คู่มือเล่น</span><span>2 / 6 · รายละเอียดเต็มอยู่ในส่วน Advanced หน้า 3–6</span></div>
+</section>
+
+<!-- ============ PAGE 3 ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>ความสามารถคลาส Warlock + Celestial</h1></div>
+    <div class="pg">3 / 6<span>Class Features</span></div>
+  </div>
+  <p class="intro">ฟีเจอร์ที่ได้จากคลาสถึง Lv 3 แต่ละใบบอกกติกาแบบย่อ ต้นทุน และวิธีใช้ให้คุ้ม</p>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Healing Light</h3><span class="src">Celestial Lv 3 · บัพแล้ว</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>60 ฟุต</span><span class="u">4 ลูก / Long Rest</span></div>
+      <p class="rule">มีบ่อลูกเต๋า d6 จำนวน 1 + เลเวล Warlock (= 4) ใช้ได้สูงสุดครั้งละ CHA mod (= 4) ลูก <b>ตามบัพที่อนุมัติ ทุกลูกได้ d6 + 4</b></p>
+      <p class="tip">ใช้ <b>1 ลูกปลุกคนล้ม</b> (5–10 HP) ได้ 4 ครั้งต่อวัน หรือทุ่มทั้ง 4 ลูก (~30 HP) ตอนเพื่อนแนวหน้าใกล้ล้ม นี่คือฮีลหลัก ควรใช้ก่อนสเปลล์ฮีลทุกตัว</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Pact Magic</h3><span class="src">Warlock Lv 1</span></div>
+      <div class="meta"><span>CHA</span><span>DC 14 · Attack +6</span><span class="u">Slot Lv 2 × 2</span></div>
+      <p class="rule">Slot ทุกช่องเป็นระดับ 2 เสมอ สเปลล์ระดับ 1 จะถูกร่ายที่ระดับ 2 อัตโนมัติ คืนหมดเมื่อ Short Rest หรือ Long Rest</p>
+      <p class="tip">ใช้ slot ให้หมดได้ไม่ต้องเสียดาย ถ้าตี้จะพักสั้นหลังไฟต์ ถ้าวันนั้นตี้ไม่พักเลย ค่อยประหยัด</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Magical Cunning</h3><span class="src">Warlock Lv 2</span></div>
+      <div class="meta"><span>พิธี 1 นาที</span><span class="u">1 / Long Rest</span></div>
+      <p class="rule">ทำพิธี 1 นาทีเพื่อคืน pact slot ได้ครึ่งหนึ่งของสูงสุด (ปัดขึ้น) = 1 ช่อง</p>
+      <p class="tip">ใช้ตอน <b>ตี้ไม่มีเวลาพักสั้น</b> แต่มีเวลาหายใจ 1 นาที เช่น หลังไฟต์ก่อนเปิดประตูห้องบอส</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Eldritch Blast + Agonizing Blast</h3><span class="src">Cantrip + Invocation</span></div>
+      <div class="meta"><span>Action</span><span>120 ฟุต</span><span>+6 to hit</span><span>1d10+4 force</span></div>
+      <p class="rule">ยิงลำแสงพลังงาน Agonizing Blast เพิ่ม CHA (+4) เข้าดาเมจ ที่ Lv 5 ยิงได้ 2 ลำ</p>
+      <p class="tip">ดาเมจเฉลี่ย ~9.5 ต่อเทิร์นโดยไม่ใช้ทรัพยากร คู่กับ <b>Hex</b> ได้อีก 1d6 ต่อลำ Force แทบไม่มีศัตรูต้านทาน</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Pact of the Tome</h3><span class="src">Invocation</span></div>
+      <div class="meta"><span>เสกหนังสือหลังพัก</span><span>Focus</span></div>
+      <p class="rule">Book of Shadows ให้ cantrip 3 ตัวและสเปลล์ ritual ระดับ 1 สองตัวแบบเตรียมไว้เสมอ ใช้เป็น spellcasting focus ได้</p>
+      <p class="tip">สเปลล์ ritual ร่ายแบบใช้เวลา +10 นาทีโดยไม่เสีย slot ใช้กับ Comprehend Languages, Unseen Servant, Detect Magic นอกไฟต์ทั้งหมด</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Fiendish Vigor</h3><span class="src">Invocation</span></div>
+      <div class="meta"><span>Action</span><span>ไม่ใช้ slot</span><span>ไม่จำกัด</span></div>
+      <p class="rule">ร่าย False Life ใส่ตัวเองโดยไม่ใช้ slot และได้ค่าสูงสุดเสมอ = <b>12 temp HP</b></p>
+      <p class="tip">ร่ายทุกครั้งก่อนเปิดประตู หลังจบไฟต์ร่ายใหม่ temp HP ไม่ซ้อนกัน ถ้ามี Armor of Agathys อยู่ต้องเลือกอันที่มากกว่า</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Celestial Spells</h3><span class="src">Celestial Lv 3</span></div>
+      <div class="meta"><span>เตรียมไว้เสมอ</span><span>ไม่นับโควตา</span></div>
+      <p class="rule">ได้ Aid, Cure Wounds, Guiding Bolt, Lesser Restoration, Light, Sacred Flame แบบเตรียมไว้ตลอด เลเวล 5 ได้ Daylight และ Revivify</p>
+      <p class="tip">ช่องเตรียมสเปลล์ของ Warlock จึงเหลือไปใช้กับ Hex, Suggestion, Healing Word, Armor of Agathys ได้เต็มที่</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Eldritch Invocations</h3><span class="src">Warlock Lv 1–3</span></div>
+      <div class="meta"><span>3 ตัว</span><span>เปลี่ยนได้ตอนเลเวลอัป</span></div>
+      <p class="rule">ตอนนี้มี Pact of the Tome, Agonizing Blast, Fiendish Vigor ที่ Lv 5 ได้เพิ่มอีก 2 ตัว</p>
+      <p class="tip">Lv 5 ลองพิจารณา <b>Repelling Blast</b> (ผลักศัตรูออก 10 ฟุต ช่วยป้องกันตัว) หรือ <b>Eldritch Mind</b> (รักษา Concentration ของ Hex/Suggestion)</p>
+    </div>
+  </div>
+  <div class="foot"><span>Advanced · Class Features</span><span>3 / 6</span></div>
+</section>
+
+<!-- ============ PAGE 4 ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>สายพันธุ์ Shadar-Kai + Feats</h1></div>
+    <div class="pg">4 / 6<span>Species &amp; Feats</span></div>
+  </div>
+  <p class="intro">ความสามารถจาก Shadar-Kai (เอลฟ์แห่ง Shadowfell) และ feat ทั้ง 2 ตัว (รวม house rule General Feat ตอนเลเวล 1)</p>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Blessing of the Raven Queen</h3><span class="src">Shadar-Kai</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>วาร์ป 30 ฟุต</span><span class="u">2 / Long Rest</span></div>
+      <p class="rule">เทเลพอร์ตไปจุดว่างที่มองเห็นในระยะ 30 ฟุต ตั้งแต่ Lv 3 ได้ <b>ต้านทานดาเมจทุกชนิด</b> จนถึงต้นเทิร์นถัดไป (ร่างโปร่งแสง)</p>
+      <p class="tip">ปุ่มหนีตายของ Lunol วาร์ปออกจากวงล้อมไม่โดน Opportunity Attack แต่ใช้ Bonus Action เดียวกับ Healing Light เทิร์นนั้นจะฮีลไม่ได้</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Necrotic Resistance</h3><span class="src">Shadar-Kai</span></div>
+      <div class="meta"><span>Passive</span></div>
+      <p class="rule">ต้านทานดาเมจ necrotic โดนเหลือครึ่งเดียว</p>
+      <p class="tip">เจอ undead, wraith หรือคาถามืด Lunol ทนกว่าคนอื่นในตี้ ยืนใกล้แนวหน้าได้มากขึ้นนิดหน่อยในไฟต์แบบนี้</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Fey Ancestry</h3><span class="src">Shadar-Kai</span></div>
+      <div class="meta"><span>Passive</span></div>
+      <p class="rule">ทอย saving throw กัน Charmed หรือเพื่อหลุดจาก Charmed ด้วย Advantage</p>
+      <p class="tip">ฮีลเลอร์ที่โดน charm คือหายนะของตี้ จุดนี้ทำให้ Lunol ยืนอยู่ฝั่งตี้ได้มั่นคงกว่า</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Darkvision · Keen Senses</h3><span class="src">Shadar-Kai</span></div>
+      <div class="meta"><span>Passive</span><span>60 ฟุต</span><span>Perception +4</span></div>
+      <p class="rule">มองในที่มืดได้ 60 ฟุต และถนัด Perception จาก Keen Senses (Passive Perception 14)</p>
+      <p class="tip">ช่วยเป็นยามตอนตี้พักแรม เพราะ Trance ทำให้ยังรู้ตัวตลอดเวลา</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Trance</h3><span class="src">Shadar-Kai</span></div>
+      <div class="meta"><span>Long Rest 4 ชั่วโมง</span><span>+2 proficiency ชั่วคราว</span></div>
+      <p class="rule">ไม่ต้องนอนและเวทมนตร์ทำให้หลับไม่ได้ พักยาวจบใน 4 ชั่วโมง หลังจบได้ proficiency อาวุธหรือเครื่องมือ 2 อย่างจนถึงพักยาวครั้งถัดไป</p>
+      <p class="tip">ก่อนวันที่ต้องสะเดาะกุญแจ เลือก Thieves' Tools ก่อนวันเดินทางไกลเลือก Herbalism Kit วางแผนกับตี้ทุกเช้า</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Magic Initiate (Cleric)</h3><span class="src">Feat · Acolyte</span></div>
+      <div class="meta"><span>2 cantrip</span><span class="u">สเปลล์ระดับ 1 ฟรี 1 / Long Rest</span></div>
+      <p class="rule">ได้ cantrip ของ Cleric 2 ตัว และ <b>Healing Word</b> แบบเตรียมไว้เสมอ ร่ายฟรีโดยไม่ใช้ slot ได้วันละครั้ง</p>
+      <p class="tip">Healing Word ฟรีคือของปลุกเพื่อนระยะไกลสำรอง ใช้ตอน Healing Light หมดแล้ว</p>
+    </div>
+    <div class="card wide">
+      <div class="top"><h3>Favorite Spell: Cure Wounds</h3><span class="src">Feat (Lv 1 house rule)</span></div>
+      <div class="meta"><span>Action</span><span>สัมผัส</span><span class="u">ฟรี 1 / Long Rest</span><span>กัน Counterspell</span></div>
+      <p class="rule">ร่าย Cure Wounds ฟรีที่ระดับต่ำสุด (2d8+4) ได้วันละครั้ง ถ้าร่ายด้วย slot จะนับเป็น slot สูงขึ้น 1 ระดับ: slot ระดับ 2 กลายเป็นระดับ 3 = <b>6d8+4 (~31 HP)</b> และไม่มีใครใช้ Counterspell กับสเปลล์นี้ได้</p>
+      <p class="tip">นี่คือฮีลก้อนใหญ่ที่สุดของตี้ ใช้ตอน <b>จบไฟต์แล้วมีคน HP ต่ำมาก</b> และตี้กำลังจะพักสั้น (slot จะคืนอยู่แล้ว) ในไฟต์ใช้ Healing Light ดีกว่า เพราะ Cure Wounds ต้องเดินไปแตะตัวและกิน Action</p>
+    </div>
+  </div>
+  <div class="foot"><span>Advanced · Species &amp; Feats</span><span>4 / 6</span></div>
+</section>
+
+<!-- ============ PAGE 5 ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>สเปลล์ระดับ 1–2</h1></div>
+    <div class="pg">5 / 6<span>Spells</span></div>
+  </div>
+  <div class="note"><b>Concentration:</b> Hex, Suggestion, Detect Magic, Guidance และ Friends ใช้ได้ทีละตัว · โดนดาเมจต้องทอย <b>CON save +3</b> (DC 10 หรือครึ่งดาเมจ) · ทุกสเปลล์ที่ใช้ pact slot ร่ายที่ระดับ 2 เสมอ ตัวเลขในการ์ดคำนวณที่ระดับ 2 แล้ว</div>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Healing Word</h3><span class="src">Lv 1 · Magic Initiate</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>60 ฟุต</span><span class="u">ฟรี 1 ครั้ง / Slot</span></div>
+      <p class="rule">ฟรี: 2d4+4 · ใช้ slot ระดับ 2: 4d4+4</p>
+      <p class="tip">ใช้ตอน Healing Light หมดแล้ว อย่าใช้ slot กับ Healing Word ถ้า Healing Light ยังเหลือ</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Guiding Bolt</h3><span class="src">Lv 1 · Celestial</span></div>
+      <div class="meta"><span>Action</span><span>120 ฟุต</span><span class="u">Slot</span></div>
+      <p class="rule">Ranged spell attack +6 โดนแล้ว 5d6 radiant (~17) และการโจมตีครั้งถัดไปใส่เป้าได้ Advantage</p>
+      <p class="tip">ดาเมจก้อนใหญ่ที่สุดของ Lunol ยิงก่อนเทิร์นของ Vorgash หรือ Xiah เพื่อส่ง Advantage ให้ ได้ทั้งดาเมจและบัพ</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Hex</h3><span class="src">Lv 1</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>90 ฟุต</span><span class="c">Conc · 4 ชม.</span><span class="u">Slot</span></div>
+      <p class="rule">ทุกครั้งที่โจมตีโดนเป้า +1d6 necrotic และเป้าเช็กค่าสถานะที่เลือกด้วย Disadvantage เป้าตายย้ายด้วย Bonus Action ได้</p>
+      <p class="tip">คุ้มในไฟต์ยาวหรือหลายไฟต์ติดกัน (อยู่ได้ 4 ชั่วโมง) แต่ชน Bonus Action กับ Healing Light เลือกใช้ในเทิร์นที่ยังไม่มีใครต้องฮีล</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Armor of Agathys</h3><span class="src">Lv 1</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>ตัวเอง</span><span class="u">Slot</span></div>
+      <p class="rule">ได้ 10 temp HP ใครตีประชิดโดนเราจะโดน 10 cold จนกว่า temp HP หมด</p>
+      <p class="tip">ไม่ซ้อนกับ False Life (12) ใช้เมื่อ temp HP จาก False Life หมดแล้ว และรู้ว่าจะโดนศัตรูประชิดตี</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Aid</h3><span class="src">Lv 2 · Celestial</span></div>
+      <div class="meta"><span>Action</span><span>30 ฟุต</span><span>8 ชั่วโมง</span><span class="u">Slot</span></div>
+      <p class="rule">ได้ 3 คน HP สูงสุดและ HP ปัจจุบัน +5</p>
+      <p class="tip">ร่ายตอนเช้าใส่ Thalric, Vorgash และตัวเอง แล้วพักสั้นเอา slot คืน ได้ HP รวม +15 ทั้งวัน</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Lesser Restoration</h3><span class="src">Lv 2 · Celestial</span></div>
+      <div class="meta"><span>Action</span><span>สัมผัส</span><span class="u">Slot</span></div>
+      <p class="rule">ลบสถานะ Blinded, Deafened, Paralyzed หรือ Poisoned 1 อย่าง</p>
+      <p class="tip">เก็บ slot ไว้ 1 ช่องเสมอในดันเจี้ยนที่มี ghoul, แมงมุม หรือกับดักพิษ Paralyzed แก้ก่อนทุกอย่าง</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Suggestion</h3><span class="src">Lv 2</span></div>
+      <div class="meta"><span>Action</span><span>30 ฟุต</span><span class="c">Conc · 8 ชม.</span><span class="x">WIS DC 14</span></div>
+      <p class="rule">พูดคำสั่งไม่เกิน 25 คำ ต้องฟังดูทำได้และไม่ทำร้ายตัวเอง ไม่ผ่าน save จะติด Charmed และทำตาม</p>
+      <p class="tip">"หยุดสู้แล้วกลับไปที่ค่าย" หรือ "พาเราไปหาหัวหน้า" จบไฟต์โดยไม่ต้องฆ่า ห้ามเพื่อนตีเป้าที่โดนอยู่ เพราะดาเมจทำให้หลุด</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Cure Wounds</h3><span class="src">Lv 1 · Favorite Spell</span></div>
+      <div class="meta"><span>Action</span><span>สัมผัส</span><span class="u">ฟรี 1 ครั้ง / Slot</span></div>
+      <p class="rule">ฟรี: 2d8+4 · ใช้ slot: 6d8+4 (นับเป็นระดับ 3 จาก Favorite Spell)</p>
+      <p class="tip">ฮีลก้อนใหญ่หลังไฟต์ ดูรายละเอียดในหน้า 4</p>
+    </div>
+  </div>
+  <div class="foot"><span>Advanced · Spells</span><span>5 / 6</span></div>
+</section>
+
+<!-- ============ PAGE 6 ============ -->
+<section class="page">
+  <div class="adv-band">
+    <div><div class="k">ADVANCED</div><h1>Cantrip, Ritual, ไอเท็ม + Skill</h1></div>
+    <div class="pg">6 / 6<span>Cantrips · Items · Skills</span></div>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="top"><h3>Vicious Mockery</h3><span class="src">Cantrip</span></div>
+      <div class="meta"><span>Action</span><span>60 ฟุต</span><span class="x">WIS DC 14</span></div>
+      <p class="rule">ด่าแรงจนเจ็บ 1d6 psychic และเป้าโจมตีครั้งถัดไปเสีย Disadvantage</p>
+      <p class="tip">ใช้แทน Eldritch Blast เมื่อศัตรูตัวใหญ่กำลังจะตีเพื่อนแนวหน้า ดาเมจน้อยกว่าแต่ช่วยป้องกัน</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Sacred Flame</h3><span class="src">Cantrip · Celestial</span></div>
+      <div class="meta"><span>Action</span><span>60 ฟุต</span><span class="x">DEX DC 14</span></div>
+      <p class="rule">1d8 radiant ศัตรูทอย DEX save ไม่ได้โบนัสจากที่กำบัง</p>
+      <p class="tip">ใช้กับศัตรูที่หลบหลังกำแพงหรือมี AC สูงมาก เพราะไม่ต้องทอยโจมตี</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Cantrip สนับสนุน</h3><span class="src">หลายแหล่ง</span></div>
+      <div class="meta"><span>Spare the Dying</span><span>Guidance</span><span>Light</span><span>Mage Hand</span></div>
+      <p class="rule"><b>Spare the Dying</b> ทำให้เพื่อนที่ 0 HP หยุดทอย death save · <b>Guidance</b> +1d4 skill ที่เลือก (Conc) · <b>Light</b> ทำให้วัตถุส่องสว่าง · <b>Mage Hand</b> มือวิญญาณยกของ 10 ปอนด์</p>
+      <p class="tip">Guidance ใส่ Salem ก่อนเช็ก Investigation หรือ Thalric ก่อน Persuasion ช่วยได้ทุกฉากสำรวจ</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Cantrip สังคม</h3><span class="src">หลายแหล่ง</span></div>
+      <div class="meta"><span>Friends</span><span>Minor Illusion</span></div>
+      <p class="rule"><b>Friends</b> ทำให้ humanoid ติด Charmed (WIS save, Conc 1 นาที) เป้ารู้ตัวหลังหมดเวลา · <b>Minor Illusion</b> สร้างเสียงหรือภาพลวงขนาด 5 ฟุต</p>
+      <p class="tip">Friends ใช้ตอนต้องการข้อมูลเร็วแล้วจะไม่เจอกันอีก Minor Illusion สร้างกล่องให้แอบ หรือเสียงล่อยาม</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Ritual จาก Book of Shadows</h3><span class="src">Pact of the Tome</span></div>
+      <div class="meta"><span>+10 นาที</span><span>ไม่ใช้ slot</span></div>
+      <p class="rule"><b>Detect Magic</b> สัมผัสเวทใน 30 ฟุต · <b>Comprehend Languages</b> เข้าใจทุกภาษาที่ได้ยินหรือแตะ · <b>Unseen Servant</b> คนรับใช้ล่องหนทำงานง่ายๆ</p>
+      <p class="tip">Unseen Servant ส่งไปเปิดประตูหรือเหยียบพื้นที่สงสัยว่ามีกับดักก่อนตี้เดินเข้าไป</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Potion of Healing · Studded Leather</h3><span class="src">ไอเท็ม</span></div>
+      <div class="meta"><span>ยา 2d4+2</span><span>AC 12 + DEX</span></div>
+      <p class="rule">ยาฮีล 1 ขวด และเกราะหนังเบา ได้ AC 14 รวม DEX</p>
+      <p class="tip">ยาเก็บไว้ให้ <b>ตัวเอง</b> ตอนโดนจนล้มแล้วมีเพื่อนป้อน เพราะเราเป็นคนฮีลคนอื่น ถ้าเราล้ม ตี้ไม่มีใครฮีลแทนได้ดีเท่า</p>
+    </div>
+  </div>
+  <div>
+    <h2>Skill และการทอยเช็ก <small>ตัวหนา = ถนัด</small></h2>
+    <table class="skills">
+      <tr><th>Skill</th><th>โบนัส</th><th>ใช้ตอนไหน</th></tr>
+      <tr class="p"><td>Deception (CHA)</td><td class="n">+6</td><td>โกหก ปลอมตัว เบี่ยงความสนใจ · สูงที่สุดของ Lunol</td></tr>
+      <tr class="p"><td>Intimidation (CHA)</td><td class="n">+6</td><td>ข่มขู่ศัตรูที่จับได้ บังคับให้ยอมพูด</td></tr>
+      <tr class="p"><td>Insight (WIS)</td><td class="n">+4</td><td>จับโกหก อ่านเจตนา NPC</td></tr>
+      <tr class="p"><td>Perception (WIS)</td><td class="n">+4</td><td>สังเกตศัตรูซุ่ม หาของ · Passive 14</td></tr>
+      <tr class="p"><td>Religion (INT)</td><td class="n">+2</td><td>ความรู้เทพเจ้า สัญลักษณ์ศักดิ์สิทธิ์ undead</td></tr>
+      <tr><td>Persuasion (CHA)</td><td class="n">+4</td><td>ไม่ถนัดแต่ CHA สูง ใช้ได้ดี</td></tr>
+      <tr><td>Arcana / History / Investigation</td><td class="n">+0</td><td>ปล่อยให้ Salem หรือ Xiah ทอยแทน</td></tr>
+    </table>
+  </div>
+  <div class="foot"><span>Advanced · Cantrips, Items &amp; Skills · ข้อมูลจาก Foundry group W · กติกา D&amp;D 2024</span><span>6 / 6</span></div>
+</section>
+
+<script>addEventListener("load",()=>setTimeout(()=>document.querySelectorAll(".page").forEach((p,i)=>{if(p.scrollHeight>p.clientHeight+1)p.setAttribute("data-overflow","p"+(i+1)+":"+(p.scrollHeight-p.clientHeight))}),1500))</script>
+</body>
+</html>
