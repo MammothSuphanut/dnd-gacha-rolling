@@ -31,10 +31,10 @@ SPLITS = [
 
 # โฟลเดอร์ทวีป -> (prefix หัวข้อใน themes, prefix หัวข้อ "### " ขององค์กรระดับทวีป)
 CONTINENTS = {
-    "wildemount": ("❄️ Aldenreich", "❄️ Aldenreich"),
-    "tal-dorei": ("🌾 Voxaria", "🌾 Voxaria"),
-    "issylra": ("⛰️ Shenzhou", "⛰️ Shenzhou"),
-    "marquet": ("☀️ Suvarna", "☀️ Suvarna"),
+    "aldenreich": ("❄️ Aldenreich", "❄️ Aldenreich"),
+    "voxaria": ("🌾 Voxaria", "🌾 Voxaria"),
+    "shenzhou": ("⛰️ Shenzhou", "⛰️ Shenzhou"),
+    "suvarna": ("☀️ Suvarna", "☀️ Suvarna"),
 }
 SYNC_HEADING = "## ธีมและองค์กรของทวีป (sync จากไฟล์หลัก)"
 
