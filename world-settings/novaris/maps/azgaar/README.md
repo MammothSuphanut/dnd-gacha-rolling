@@ -13,7 +13,7 @@
 | `heightmaps/exandria-burgs.json` | 157 เมือง/สถานที่ที่มีชื่อ (นอกจากเมืองหลวง): ชื่อ พิกัด ประชากรจริง (พันคน) — อ่านจากแผนที่ต้นฉบับ + Map Brief |
 | `heightmaps/exandria-cultures.json` | 27 วัฒนธรรม: name base ของ Azgaar (ใช้ตั้งชื่อเมืองสุ่ม), ขอบเขต, ศาสนาประจำ |
 | `heightmaps/exandria-religions.json` | 18 ศาสนา (ชื่อ, เทพ, รูปแบบ, สี) |
-| `heightmaps/exandria-labels.json` | 99 ป้าย: ชื่อทวีป ภูมิภาค/ทะเล/ภูมิประเทศย่อยบนแผนที่ (ชื่อ Novaris) (พิกัดจากแผนที่ต้นฉบับ) |
+| `heightmaps/exandria-labels.json` | 98 ป้าย: ชื่อทวีป ภูมิภาค/ทะเล/ภูมิประเทศย่อยบนแผนที่ (ชื่อ Novaris) (พิกัดจากแผนที่ต้นฉบับ) |
 | `heightmaps/exandria-biomes.json` | ชื่อ/สี/habitability ของ biome เฉพาะ Exandria (id 13+) — สร้างคู่กับ biome map |
 | `saves/novaris.map` | **แผนที่หลัก** — ไฟล์ .map ของ Azgaar (เปิดได้ทั้งใน app เราและ azgaar.github.io) |
 | `exandria-azgaar.patch` | โค้ดที่แก้ใน Azgaar (ลงทะเบียน heightmap "Exandria", อ่าน biome map + biome เพิ่ม, แทนแม่น้ำที่ Azgaar สร้างด้วยแม่น้ำที่ trace, cell สูงสุด 300K, ปิด iceberg, endpoint เซฟ/โหลดลง `saves/`) |
@@ -179,6 +179,7 @@ cp heightmaps/exandria.png heightmaps/exandria-biomes.png heightmaps/exandria-bi
 - **วัฒนธรรม**: cell บนบกเป็นของวัฒนธรรมแรกในลิสต์ที่ `region` ครอบ (ลำดับสำคัญ: ชนเผ่า → นครรัฐเล็ก → รัฐใหญ่) ไม่มี region ไหนครอบ = วัฒนธรรมที่ศูนย์กลางใกล้สุด · ภาษาเมืองสุ่มตาม name base: Dwendalian=German, Kryn=Dark Elven, Clovis=Italian, Tal'Dorei=English, Othanzian=Korean, Celestial=Chinese, Utesspire=Japanese, Harelian=Roman, Jrusari=Vietnamese (ใกล้ไทยที่สุดที่ Azgaar มี), Yiosi=Karnataka, Ehrvarian=Greek, Shammeli=Nordic ฯลฯ
 - **ศาสนา**: ทุก cell นับถือศาสนาประจำวัฒนธรรมของตน (`religion` ในไฟล์วัฒนธรรม) · เทพตาม canon "ที่อยู่ของเทพ" ที่มีระบุ (Bahamut, Luxon, Erathis, Pelor, Moradin, Bane, Sarenrae, Titania, Melora, Great Mother, Seren) — ศาสนาที่ deity ว่าง (Way of Heaven, Shrines of the Kami, Imperial Cult, Lambent Path, Old Blood ฯลฯ) และศาสนาของ Corellon ที่ Syngorn เป็น**ข้อเสนอ ยังไม่ใช่ canon**
 - **ชื่อภูมิภาค**: added labels จาก `exandria-labels.json` ใส่ตอนสร้างแผนที่ · `size` = ขนาดตัวอักษร % ของกลุ่ม (30–300) ชื่อทวีป 130 · ใช้กับชื่อเล็ก เช่น เกาะ Eiselcross 60, ภูมิประเทศย่อยของ Wildemount 45
+- **ตำแหน่งป้าย (แก้ใน app แล้ว ไม่อยู่ใน JSON)** (2026-10-22): จัดป้ายทั้งแผนที่ไม่ให้ทับกันที่สเกล export (ชื่อเมือง ป้ายเพิ่ม และชื่อแม่น้ำ รวม 616 ป้าย) — ชื่อเมืองวางรอบจุดเมืองของตัวเองโดยไม่ทับจุดเมืองใด ๆ เก็บใน `label.dx/dy` ของ burg / added label / river ใน `.map` · จุดที่แน่นมากไม่กี่ป้ายย่อฟอนต์เหลือ 72–85% (`label.fontSize`) · ลบป้าย Greengorge ที่ซ้ำ · ป้ายประเทศและชื่อภูมิภาคใหญ่คงที่ · ถ้า generate ใหม่จาก JSON ตำแหน่งจะกลับเป็นค่า default ต้องจัดใหม่
 
 ### ข้อจำกัดที่รู้แล้ว
 - เกาะจิ๋วระดับจุด (เล็กกว่า ~1 cell) ยังหายนอก Shattered Teeth — ใน Shattered Teeth `make_heightmap.py` ใส่เกาะหินสีเขียวที่ opening ลบทิ้งกลับเป็นวงกว้าง ~1.5 cell (ไม่รวมตัวหนังสือสีน้ำตาลแดง)
