@@ -17,7 +17,7 @@
 | `heightmaps/exandria-biomes.json` | ชื่อ/สี/habitability ของ biome เฉพาะ Exandria (id 13+) — สร้างคู่กับ biome map |
 | `saves/novaris.map` | **แผนที่หลัก** — ไฟล์ .map ของ Azgaar (เปิดได้ทั้งใน app เราและ azgaar.github.io) |
 | `saves/novaris-v1.map` | **Version 1** (2026-10-22, git tag `novaris-map-v1`) — ชื่อ Novaris ครบ, ป้ายไม่ทับกัน · ไฟล์เก็บถาวร ห้ามเซฟทับ (เปิดด้วย `?maplink=...%3Fname%3Dnovaris-v1`) |
-| `saves/novaris-v3.map` | **Version 3** (2026-10-22, git tag `novaris-map-v3`) — v1 + ลาวา Emberflow ไหลลงทะเล, ไอคอนเมืองใหญ่ขึ้น, ป้ายจัดใหม่ · ไฟล์เก็บถาวร ห้ามเซฟทับ · ภาพ `exports/novaris-v3-atlas(-x10).png` มีแถบสเกล (ไม่อยู่ใน git) · *คนละเรื่องกับ "ผังทวีป v3" ข้างล่างซึ่งเป็นภาพร่าง* |
+| `saves/novaris-v3.map` | **Version 3** (2026-10-22, git tag `novaris-map-v3`) — **ผังทวีป v3** (Eldmere ย้ายไปขวาล่าง) + ลาวา Emberflow ไหลลงทะเล, ไอคอนเมืองใหญ่ขึ้น, ป้ายจัดใหม่ · ไฟล์เก็บถาวร ห้ามเซฟทับ · ภาพ `exports/novaris-v3-atlas(-x10).png` มีแถบสเกล (ไม่อยู่ใน git) |
 | `exandria-azgaar.patch` | โค้ดที่แก้ใน Azgaar (ลงทะเบียน heightmap "Exandria", อ่าน biome map + biome เพิ่ม, แทนแม่น้ำที่ Azgaar สร้างด้วยแม่น้ำที่ trace, cell สูงสุด 300K, ปิด iceberg, endpoint เซฟ/โหลดลง `saves/`) |
 | `scripts/` | สคริปต์ Python สร้าง heightmap/biome map ใหม่จากแผนที่ต้นฉบับ |
 | `app/` | Azgaar ที่แก้แล้วพร้อมรัน — **ไม่อยู่ใน git** (third-party + node_modules) สร้างใหม่ได้ตามขั้นตอนข้างล่าง |
@@ -102,7 +102,7 @@ await fetch('/Fantasy-Map-Generator/__exandria/export?name=novaris-atlas', { met
 - Grid **50 px / Distance 432 mi** (1 ช่อง = เดิน 18 วัน Normal pace) — หรือซ่อน grid แล้วใช้ ruler วัดระยะ
 - Grid units: `mi`
 
-## ผังทวีป v3 (อนุมัติ 2026-10-22 — ยังไม่ได้ generate จริง)
+## ผังทวีป v3 (2026-10-22 — ใช้แล้วใน `novaris.map` และ `novaris-v3.map`)
 
 - ทุกทวีปคงตำแหน่งเดิม ไม่หมุน · **Eldmere เลื่อนขวา 55 px ลง 150 px** (ห่าง Aldenreich ~11,500 ไมล์ จากเดิม ~5,000) · ป้าย Eldmere/Stormwall ย้ายตาม (`scripts/layout/v3.json`)
 - ภาพร่าง: `exports/novaris-v3-sketch.png` (ไม่อยู่ใน git) — สร้างด้วย `scripts/layout/segment.py` (แยกทวีปจาก heightmap) + `compose.py` (ตัดทวีปจาก atlas แล้วหมุน/เลื่อนตาม config) ต้องมี numpy, Pillow, scipy
@@ -110,7 +110,8 @@ await fetch('/Fantasy-Map-Generator/__exandria/export?name=novaris-atlas', { met
   python scripts/layout/segment.py heightmaps/exandria.png <out>
   python scripts/layout/compose.py exports/novaris-v2-atlas.png <out> scripts/layout/v3.json <out>/v3
   ```
-- ตอน generate จริง: เลื่อน Eldmere ใน heightmap / biome map / JSON (labels, burgs ฯลฯ) ตามระยะนี้ แล้วทำงานที่แก้มือซ้ำ (รวม Voxaria, ย้าย Syngorn, ลบ trail ในเขต Gate, จัดป้าย)
+- **ในแผนที่**: ย้ายใน Azgaar ด้วยตัวแก้ heightmap โหมด risk (erosion ปิด) — ทุกอย่างนอก Eldmere คงเดิม · เกาะที่ย้ายได้ biome/วัฒนธรรม/ศาสนาเดิม · ไอคอนภูมิประเทศ marker และป้ายย้ายตาม · แม่น้ำสุ่ม 1 สายบน Eldmere (Aeahule) ถูกลบ
+- **ข้อมูลต้นทาง**: `scripts/layout/move_eldmere.py` เลื่อน Eldmere ใน `exandria.png`, `exandria-biomes.png`, labels, rivers (traced), cultures (Eldmere) แล้ว — **ถ้าสร้าง heightmap/biome map ใหม่ด้วย `make_heightmap.py` / `make_biomemap.py` ต้องรัน `move_eldmere.py` ซ้ำ** (รันได้ครั้งเดียวต่อไฟล์ที่ยังไม่เลื่อน)
 
 ## สร้าง heightmap / biome map ใหม่
 
