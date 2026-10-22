@@ -179,7 +179,7 @@
 | Aeor | **Aeor (คงเดิม)** | [aeor.md](../../exandria/wildemount/eiselcross/aeor.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Salsvault | **Salsvault (คงเดิม)** | [salsavault.md](../../exandria/wildemount/eiselcross/salsavault.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Fortress of the Dead Jarl | **Fortress of the Dead Jarl (คงเดิม)** | [fortress-of-the-dead-jarl.md](../../exandria/wildemount/eiselcross/fortress-of-the-dead-jarl.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
-| Garden of Stone | **Garden of Stone** (คงเดิม) | — (จุดตก Aeor บน Fishholm) | ✅ | ✅ | ☐ | ✅ |
+| Garden of Stone | **Garden of Stone** (คงเดิม) | — (จุดตก Aeor บน Fishholm) | ✅ | ✅ | ✅ ร่าง | ✅ |
 
 ### ❄️ Aldenreich — Gråmark
 
@@ -197,8 +197,8 @@
 | Savalirwood | **Greypine** | [savalirwood.md](../../exandria/wildemount/greying-wildlands/savalirwood.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Uraliss | **Haverby** | [uraliss.md](../../exandria/wildemount/greying-wildlands/uraliss.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Palebank Village | **Palebank Village (คงเดิม)** | [palebank-village.md](../../exandria/wildemount/greying-wildlands/palebank-village.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
-| Skagaden | **Stonedeep** | — (จุดบนแผนที่ CR — ซากนครดวาร์ฟ) | ✅ | ☐ | ☐ | ✅ |
-| Croaker Cave | **Frog Cave** | — (จุดบนแผนที่ CR — ถ้ำกบใกล้ Palebank, ชื่อตามแคมเปญ Aeorian Cataclysm) | ✅ | ☐ | ☐ | ✅ |
+| Skagaden | **Stonedeep** | — (จุดบนแผนที่ CR — ซากนครดวาร์ฟ) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Croaker Cave | **Croaker Cave (คงเดิม)** | — (จุดบนแผนที่ CR — ถ้ำกบใกล้ Palebank ในแคมเปญ Aeorian Cataclysm) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Crystalsands Tundra | **Glimmer Tundra** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Flotket Alps | **Whitehorn Alps** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Rime Plains | **Hoarfield** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |

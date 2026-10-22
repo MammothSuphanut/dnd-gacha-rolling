@@ -46,7 +46,7 @@
 |---|---|
 | Twinhold Diarchy | [Twinhold](uthodurn.md) · [Palebank Village](palebank-village.md) · [Haverby](uraliss.md) (ร้าง) |
 | ชุมชนอิสระ | [Shadeby](shadycreek-run.md) · [Grakmoot](boroftkrah.md) · [Wolfgate](quannah-breach.md) |
-| ศักดิ์สิทธิ์และซาก | [Ashrest Shrine](cinderrest-sanctum.md) · [Bloomgrove](blooming-grove.md) · [Elvenfall Ruins](ruins-of-molaesmyr.md) · [Ivoryden](mythburrow.md) |
+| ศักดิ์สิทธิ์และซาก | [Stonedeep](skagaden.md) · [Croaker Cave](croaker-cave.md) · [Ashrest Shrine](cinderrest-sanctum.md) · [Bloomgrove](blooming-grove.md) · [Elvenfall Ruins](ruins-of-molaesmyr.md) · [Ivoryden](mythburrow.md) |
 | ภูมิประเทศ | [Whitehorn Alps](whitehorn-alps.md) · [Greypine](savalirwood.md) · [Glimmer Tundra](glimmer-tundra.md) · [Hoarfield](hoarfield.md) · [Blackfell](kravaraad.md) |
 
 ## ผู้คนและวัฒนธรรม
