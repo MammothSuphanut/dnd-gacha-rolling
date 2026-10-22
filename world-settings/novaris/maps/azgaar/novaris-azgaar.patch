@@ -66,7 +66,7 @@ index e942550..90f939c 100644
    world: { id: 21, name: "World" },
 -  "world-from-pacific": { id: 22, name: "World from Pacific" }
 +  "world-from-pacific": { id: 22, name: "World from Pacific" },
-+  exandria: { id: 23, name: "Exandria" }
++  novaris: { id: 23, name: "Novaris" }
  };
  
 +/** Exandria: snowfield zones and the peaks drawn on them ([x, y, size], icon centre), from heightmaps/<id>-peaks.json */

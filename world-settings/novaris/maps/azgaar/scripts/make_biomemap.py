@@ -9,7 +9,7 @@ import sys
 import numpy as np
 from PIL import Image, ImageDraw
 from scipy import ndimage as ndi
-import wildemount_ref as wref
+import aldenreich_ref as wref
 
 src, heightmap, out, preview = sys.argv[1:5]
 im = Image.open(src).convert("RGB")  # mid res 3240x2160
@@ -114,8 +114,8 @@ cols = np.clip(np.arange(W)[None, :] + (wobble * 0.15).astype(int), 0, W - 1)  #
 cs = np.take_along_axis(cs, cols, 1)
 north_main = box(1309.5, 126, 1552.5, 270) & land & ~cs
 
-# --- Wildemount from the official continent map (scripts/wildemount_ref.py) ---
-# forests, open land and the Rosohna blight follow Wildemount.jpg; snow/ice and Xhorhas badlands stay as above
+# --- Wildemount from the official continent map (scripts/aldenreich_ref.py) ---
+# forests, open land and the Rosohna blight follow aldenreich-source.jpg; snow/ice and Xhorhas badlands stay as above
 ka = W / 1800
 lab, n = ndi.label(land)
 cent = np.array(ndi.center_of_mass(land, lab, range(1, n + 1))) / ka if n else np.zeros((0, 2))
@@ -159,7 +159,7 @@ cls[north_main & wm & (cls == 11)] = 10
 eisel = box(1102.5, 36, 1309.5, 185) & land
 cls[eisel & np.isin(cls, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12])] = 11
 
-# the lava flow across Foren is no longer a biome band: Azgaar draws it as a thin line from heightmaps/exandria-lava.json
+# the lava flow across Foren is no longer a biome band: Azgaar draws it as a thin line from heightmaps/novaris-lava.json
 
 out_img = Image.fromarray(cls, "L").resize((1620, 1080), Image.NEAREST)
 out_img.save(out)

@@ -1,7 +1,7 @@
 """Find the individual snowy-mountain icons drawn on the source map's snowfields, so Azgaar can put one
 relief icon on each instead of filling the range by rule (grid review M1: "fewer, and where the source has them").
 
-usage: python scripts/make_peaks.py mid.png heightmaps/exandria.png heightmaps/exandria-peaks.json [preview.png]
+usage: python scripts/make_peaks.py mid.png heightmaps/novaris.png heightmaps/novaris-peaks.json [preview.png]
 Output: {"zones": [[x0, y0, x1, y1], ...], "peaks": [[x, y, size], ...]} in Azgaar 1800x1200 coords;
 x, y = the centre of the icon. Azgaar drops its own icons on glacier cells inside a zone.
 """
@@ -10,7 +10,7 @@ import sys
 import numpy as np
 from PIL import Image, ImageDraw
 from scipy import ndimage as ndi
-import wildemount_ref as wref
+import aldenreich_ref as wref
 
 src, heightmap, out = sys.argv[1:4]
 a = np.asarray(Image.open(src).convert("RGB")).astype(float)  # 3240x2160

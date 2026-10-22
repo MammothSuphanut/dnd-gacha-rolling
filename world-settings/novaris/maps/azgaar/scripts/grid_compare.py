@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ORIGINAL = Path("D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/Campaigns/"
                 "00 Gerneral Campaigns Data/scenes/Exandria/Exandria - Speculative 2024 (high res).png")
 ATLAS = ROOT / "exports/novaris-atlas.png"
-HEIGHTMAP = ROOT / "heightmaps/exandria.png"
+HEIGHTMAP = ROOT / "heightmaps/novaris.png"
 OUT = ROOT / "exports/grid"
 CACHE = OUT / "_original-5400-shifted.png"  # original at 3x Azgaar size with the east moved (east_shift.py); 16200 px is slow
 

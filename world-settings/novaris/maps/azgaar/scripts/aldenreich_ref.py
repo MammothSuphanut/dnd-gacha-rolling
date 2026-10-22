@@ -1,11 +1,11 @@
-"""The official Wildemount map (maps/wildemount/Wildemount.jpg) warped into Azgaar 1800x1200 coords.
+"""The official Wildemount map (maps/aldenreich/aldenreich-source.jpg) warped into Azgaar 1800x1200 coords.
 
 The world map the heightmap comes from draws Wildemount loosely (purple woods over Savalirwood, scattered
 Penumbra peaks, a tiny Rosohna blight), so make_biomemap.py reads forests and blight,
 and make_heightmap.py / make_peaks.py the Xhorhas and Flotket ranges, for Wildemount from the official map instead. The warp is a thin-plate spline through the
-towns in PINS (pixel on Wildemount.jpg scaled to 1800 px wide -> the town's x, y in exandria-burgs.json).
+towns in PINS (pixel on aldenreich-source.jpg scaled to 1800 px wide -> the town's x, y in novaris-burgs.json).
 
-usage (preview): python scripts/wildemount_ref.py out.png
+usage (preview): python scripts/aldenreich_ref.py out.png
 """
 import json
 from pathlib import Path
@@ -16,11 +16,11 @@ from scipy.interpolate import RBFInterpolator
 
 Image.MAX_IMAGE_PIXELS = None
 ROOT = Path(__file__).resolve().parent.parent
-OFFICIAL = ROOT.parent / "wildemount/Wildemount.jpg"
+OFFICIAL = ROOT.parent / "aldenreich/aldenreich-source.jpg"
 BOX = (1000, 0, 1800, 800)  # Azgaar area covered (x0, y0, x1, y1)
 EISEL = (1105, 0, 1465, 215)  # Eiselcross: keeps the world-map snow (DM choice), not read from here
 
-# town dot on Wildemount.jpg resized to 1800 px wide
+# town dot on aldenreich-source.jpg resized to 1800 px wide
 PINS = {
     "Palebank Village": (1074, 269), "Kravaraad": (1098, 302), "Cinderrest Sanctum": (1120, 314), "Uthodurn": (1107, 345),
     "Uraliss": (1148, 369), "Mythburrow": (1274, 292), "Ruins of Molaesmyr": (1013, 431), "Blooming Grove": (1002, 491),
@@ -44,8 +44,8 @@ PINS = {
 
 def _towns():
     h = ROOT / "heightmaps"
-    t = {b["name"]: (b["x"], b["y"]) for b in json.load(open(h / "exandria-burgs.json", encoding="utf-8"))}
-    t.update({s["capital"]: (s["x"], s["y"]) for s in json.load(open(h / "exandria-states.json", encoding="utf-8"))})
+    t = {b["name"]: (b["x"], b["y"]) for b in json.load(open(h / "novaris-burgs.json", encoding="utf-8"))}
+    t.update({s["capital"]: (s["x"], s["y"]) for s in json.load(open(h / "novaris-states.json", encoding="utf-8"))})
     return t
 
 

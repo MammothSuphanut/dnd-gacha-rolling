@@ -6,7 +6,7 @@ import sys
 import numpy as np
 from PIL import Image, ImageFilter
 from scipy import ndimage as ndi
-import wildemount_ref as wref
+import aldenreich_ref as wref
 
 src, out, preview = sys.argv[1], sys.argv[2], sys.argv[3]
 im = Image.open(src).convert("RGB")  # 3240x2160 (2x the 1620 preview)
@@ -155,7 +155,7 @@ snowfield = np.zeros_like(land); snowfield[int(120 * ka):int(270 * ka), int(1445
 eisel |= snowfield & (ndi.uniform_filter(lum, 41) > 185)
 text = ndi.binary_dilation((lum < 70) | ((R - B) > 40), iterations=4)  # black lettering and the tan lava line are not hatching
 hatch = (lum < 170) & (sat < 0.25) & ~text & ndi.binary_erosion(land, iterations=6) & eisel
-# Wildemount ranges from the official map (scripts/wildemount_ref.py): the world map barely hatches the Flotket
+# Wildemount ranges from the official map (scripts/aldenreich_ref.py): the world map barely hatches the Flotket
 # Alps / Mythburrow, and scatters the Xhorhas peaks over the Barbed Fields instead of the Penumbra arc
 ref_mtn = wref.to_grid(wref.mountains(), (W, H))
 # snowfield: only the official ranges (Crystalsands and Rime Plains are flat there)
