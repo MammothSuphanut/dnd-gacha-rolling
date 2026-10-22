@@ -101,6 +101,16 @@ await fetch('/Fantasy-Map-Generator/__exandria/export?name=novaris-atlas', { met
 - Grid **50 px / Distance 432 mi** (1 ช่อง = เดิน 18 วัน Normal pace) — หรือซ่อน grid แล้วใช้ ruler วัดระยะ
 - Grid units: `mi`
 
+## ผังทวีป v3 (อนุมัติ 2026-10-22 — ยังไม่ได้ generate จริง)
+
+- ทุกทวีปคงตำแหน่งเดิม ไม่หมุน · **Eldmere เลื่อนขวา 55 px ลง 150 px** (ห่าง Aldenreich ~11,500 ไมล์ จากเดิม ~5,000) · ป้าย Eldmere/Stormwall ย้ายตาม (`scripts/layout/v3.json`)
+- ภาพร่าง: `exports/novaris-v3-sketch.png` (ไม่อยู่ใน git) — สร้างด้วย `scripts/layout/segment.py` (แยกทวีปจาก heightmap) + `compose.py` (ตัดทวีปจาก atlas แล้วหมุน/เลื่อนตาม config) ต้องมี numpy, Pillow, scipy
+  ```bash
+  python scripts/layout/segment.py heightmaps/exandria.png <out>
+  python scripts/layout/compose.py exports/novaris-v2-atlas.png <out> scripts/layout/v3.json <out>/v3
+  ```
+- ตอน generate จริง: เลื่อน Eldmere ใน heightmap / biome map / JSON (labels, burgs ฯลฯ) ตามระยะนี้ แล้วทำงานที่แก้มือซ้ำ (รวม Voxaria, ย้าย Syngorn, ลบ trail ในเขต Gate, จัดป้าย)
+
 ## สร้าง heightmap / biome map ใหม่
 
 ต้องมี Python + Pillow + numpy + scipy แผนที่ต้นฉบับ high res อยู่ใน Foundry: `D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/Campaigns/00 Gerneral Campaigns Data/scenes/Exandria/Exandria - Speculative 2024 (high res).png`
