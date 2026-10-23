@@ -1,4 +1,4 @@
-# Forgehold
+# Sector 09: Forgehold
 
 > origin: [`exandria/tal-dorei/rifenmist-peninsula/rybad-kol.md`](../../../exandria/tal-dorei/rifenmist-peninsula/rybad-kol.md) · ชื่อ CR: Rybad-Kol
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครอุตสาหกรรม |
+| Sector | **09** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Iron Authority |
 | สังกัด | **Voxaria** — รัฐ Iron Authority |
 | ระดับอารยธรรม | 5 |

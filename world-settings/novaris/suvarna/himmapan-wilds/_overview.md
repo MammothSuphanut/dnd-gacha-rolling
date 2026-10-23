@@ -39,6 +39,10 @@
 | เมือง | [Tha Samut](tha-samut.md) · [Muang Ngoen](muang-ngoen.md) · [Ban Pa](ban-pa.md) |
 | หมู่บ้าน | [Ban Nong](ban-nong.md) · [Ban Klang](ban-klang.md) · [Huai Kaeo](huai-kaeo.md) |
 | ภูมิประเทศ | [Naga Range](naga-range.md) |
+| ✨ ชาวเล | [Ko Lom](ko-lom.md) · [Ko Hoi](ko-hoi.md) · [Laem Sai](laem-sai.md) · [Pha Daeng](pha-daeng.md) |
+| ✨ หัวเมืองหลวง | [Bang Bua](bang-bua.md) · [Nakhon Phet](nakhon-phet.md) · [Khao Kaeo](khao-kaeo.md) · [Kamphaeng Hin](kamphaeng-hin.md) |
+| ✨ ชาวดอย | [Doi Mok](doi-mok.md) · [Doi Fa](doi-fa.md) · [Pang Ma](pang-ma.md) |
+| ✨ ล้านนา | [Wiang Chang](wiang-chang.md) · [Wiang Hin](wiang-hin.md) · [Wiang Kham](wiang-kham.md) · [Mae Pha](mae-pha.md) · [Ban Tung](ban-tung.md) |
 
 ## ผู้คนและวัฒนธรรม
 

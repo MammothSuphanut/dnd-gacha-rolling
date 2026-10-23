@@ -1,4 +1,4 @@
-# Gloomvale
+# Sector 54: Gloomvale
 
 > origin: [`exandria/tal-dorei/cliffkeep-mountains/gatsibadow.md`](../../../exandria/tal-dorei/cliffkeep-mountains/gatsibadow.md) · ชื่อ CR: Gatsibadow
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้าน |
+| Sector | **54** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Forgeheim · หุบเขาป่าใกล้ Redrock Mines ทางตะวันตกเฉียงเหนือของ Midgate |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 4 |

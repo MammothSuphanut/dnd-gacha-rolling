@@ -1,4 +1,4 @@
-# Redwing
+# Sector 08: Redwing
 
 > origin: [`exandria/tal-dorei/rifenmist-peninsula/ezordam-haar.md`](../../../exandria/tal-dorei/rifenmist-peninsula/ezordam-haar.md) · ชื่อ CR: Ezordam-Haar
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครฐานทัพอากาศ |
+| Sector | **08** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Iron Authority · บนที่ราบสูงภูเขาไฟ |
 | สังกัด | **Voxaria** — รัฐ Iron Authority |
 | ระดับอารยธรรม | 5 |

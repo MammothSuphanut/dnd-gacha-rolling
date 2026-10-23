@@ -38,6 +38,7 @@
 | นครและเมือง | [Solaria](imperium-solis.md) · [Fontana](fontana.md) |
 | ซากและศักดิ์สิทธิ์ | [Sandgrave](sandgrave.md) · [Sun Ziggurat](sun-ziggurat.md) |
 | ภูมิประเทศ | [Emberpeak](emberpeak.md) |
+| ✨ ชายแดน | [Castra Solis](castra-solis.md) · [Heshet](heshet.md) |
 
 ## ผู้คนและวัฒนธรรม
 
@@ -49,3 +50,4 @@
 - **Pancha Sabha**: พันธมิตรด้านเรือเหาะ (The Skyward Line)
 - **ชนเผ่า**: ปกครองตนเองตราบที่ไม่แตะเส้นทางคาราวาน
 - **องค์กร**: ผู้เฝ้าสุสาน
+- **Jarnfell** ✨: จักรวรรดิอ้างสิทธิ์ชายฝั่งไวกิ้งบนแผนที่ แต่ปกครองจริงไม่ได้ · ค่าย [Castra Solis](castra-solis.md) คือชายแดนเหนือสุดที่ลีเจียนเฝ้าจริง

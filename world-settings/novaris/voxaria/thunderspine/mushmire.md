@@ -1,4 +1,4 @@
-# Mushmire
+# Sector 63: Mushmire
 
 > origin: [`exandria/tal-dorei/stormcrest-mountains/bronbog.md`](../../../exandria/tal-dorei/stormcrest-mountains/bronbog.md) · ชื่อ CR: Bronbog
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้าน |
+| Sector | **63** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Thunderspine · ในบึงทางตะวันออกเฉียงใต้ |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 3–4 |

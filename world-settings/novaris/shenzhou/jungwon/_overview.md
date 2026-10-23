@@ -27,7 +27,7 @@
 |---|---|
 | ✨ ยุค PD | สำนักยุทธเกิดขึ้นตามภูเขารอบที่ราบ |
 | ✨ ~700 PD | สัญญาห้ามรบที่ Ssiat |
-| ✨ ~820 PD | ฝ่ายธรรมะประกาศว่าลัทธิมารที่ Heukseong ถูกทำลาย |
+| ✨ ~820 PD | ปะทะใหญ่ระหว่างฝ่ายธรรมะกับคนของพรรคมารนอกเขตมาร — ฝ่ายธรรมะประกาศชัยชนะ แต่ไม่มีใครเข้าใกล้ Heukseong ✨ |
 
 ## ภูมิศาสตร์
 
@@ -41,7 +41,7 @@
 | กลุ่ม | สถานที่ |
 |---|---|
 | เมืองและหมู่บ้าน | [Mokcheon](mokcheon.md) · [Toji](toji.md) · [Ssiat](ssiat.md) |
-| ยุทธภพ | [Cheonsan](../unspecified/cheonsan.md) · [Mubong](../unspecified/mubong.md) · [Heukseong](../unspecified/heukseong.md) |
+| ยุทธภพ | [Cheonsan](../unspecified/cheonsan.md) · [Mubong](../unspecified/mubong.md) · [Heukseong](../heukseong/_overview.md) |
 
 ## ผู้คนและวัฒนธรรม
 

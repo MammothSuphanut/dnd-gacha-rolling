@@ -1,4 +1,4 @@
-# Midgate
+# Sector 02: Midgate
 
 > origin: [`exandria/tal-dorei/dividing-plains/westruun.md`](../../../exandria/tal-dorei/dividing-plains/westruun.md) · ชื่อ CR: Westruun
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | มหานคร · เมืองหลวงของรัฐ |
+| Sector | **02** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Heartland · กลางทวีป ตีนเขา Blackcrown Mountain |
 | สังกัด | **Voxaria** — รัฐ Heartland |
 | ระดับอารยธรรม | 5 |

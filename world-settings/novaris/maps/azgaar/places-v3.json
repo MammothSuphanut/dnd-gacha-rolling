@@ -1,0 +1,4540 @@
+{
+ "source": "saves/novaris.map (v3)",
+ "exported": "2026-10-23",
+ "places": [
+  {
+   "type": "burg",
+   "name": "Dwendalis",
+   "x": 1417.55,
+   "y": 344.73,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Lumora",
+   "x": 1661.32,
+   "y": 465.44,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Lagunara",
+   "x": 1269.13,
+   "y": 524.56,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Twinhold",
+   "x": 1543.15,
+   "y": 219.94,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Lumen City (S00)",
+   "x": 750.2,
+   "y": 458.1,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Ironhelm (S04)",
+   "x": 877.08,
+   "y": 742.56,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Deepforge (S06)",
+   "x": 809.17,
+   "y": 381.76,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sunspire (S05)",
+   "x": 975.06,
+   "y": 345.85,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Syngorn",
+   "x": 1124.9,
+   "y": 815.2,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Kamizono",
+   "x": 523.79,
+   "y": 329.95,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Yujing",
+   "x": 233.78,
+   "y": 654.81,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Shirasagi",
+   "x": 167.56,
+   "y": 412.56,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Solaria",
+   "x": 430.05,
+   "y": 852.69,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Benjasila",
+   "x": 180.28,
+   "y": 926.9,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Jyotipura",
+   "x": 478.76,
+   "y": 1076.69,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Ehrenburg",
+   "x": 287.07,
+   "y": 1127.32,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Vargholm",
+   "x": 279.64,
+   "y": 969.2,
+   "group": "capital",
+   "capital": true
+  },
+  {
+   "type": "burg",
+   "name": "Trivane",
+   "x": 1427.07,
+   "y": 443.69,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cogwick",
+   "x": 1475.52,
+   "y": 377.42,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hopsdale",
+   "x": 1435.1,
+   "y": 504.7,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wheaton",
+   "x": 1437.6,
+   "y": 481.67,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Frosthaven",
+   "x": 1322.51,
+   "y": 316.08,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Oreton",
+   "x": 1416.27,
+   "y": 362.54,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Northwatch",
+   "x": 1468.93,
+   "y": 339.6,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Rimeholt",
+   "x": 1366.05,
+   "y": 356.99,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Stonepride",
+   "x": 1328.35,
+   "y": 400.92,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Vinehill",
+   "x": 1360.77,
+   "y": 431.62,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Harvel",
+   "x": 1484.05,
+   "y": 452.11,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Porta Ferro",
+   "x": 1416.58,
+   "y": 551.09,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tenton",
+   "x": 1516.53,
+   "y": 446.51,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bladehold",
+   "x": 1525.13,
+   "y": 401.13,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Santuaria",
+   "x": 1333.17,
+   "y": 502.54,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pitwatch",
+   "x": 1644.56,
+   "y": 421.62,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wraithwall",
+   "x": 1669.33,
+   "y": 457.54,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Asterin",
+   "x": 1569.38,
+   "y": 452.64,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Grimhollow",
+   "x": 1609.92,
+   "y": 483.4,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Gorgrim",
+   "x": 1634.45,
+   "y": 503.11,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Belmare",
+   "x": 1388.39,
+   "y": 608.02,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Porto Vetro",
+   "x": 1347.02,
+   "y": 591.05,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Riva",
+   "x": 1275.35,
+   "y": 477.39,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Verdella",
+   "x": 1343.82,
+   "y": 556.9,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fiorella",
+   "x": 1261.4,
+   "y": 562.98,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Isola Grande",
+   "x": 1190.86,
+   "y": 573.77,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Rocca",
+   "x": 1236.72,
+   "y": 612.98,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Palebank Village",
+   "x": 1524.33,
+   "y": 175.72,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fortuna (S01)",
+   "x": 842.64,
+   "y": 475.77,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Midgate (S02)",
+   "x": 891.89,
+   "y": 430.42,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Port Noir (S03)",
+   "x": 955.18,
+   "y": 515.96,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Calmwater (S14)",
+   "x": 987.51,
+   "y": 431.19,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fort Granite",
+   "x": 783.67,
+   "y": 364.73,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cliffsteps (S07)",
+   "x": 731.88,
+   "y": 441.06,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Goldfields (S13)",
+   "x": 956.43,
+   "y": 426.42,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hillmarket (S15)",
+   "x": 888.87,
+   "y": 387.46,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Greenwatch",
+   "x": 799.69,
+   "y": 505.45,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Firsthaven",
+   "x": 741.31,
+   "y": 510.25,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Windward",
+   "x": 931.7,
+   "y": 472.85,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Elvenpeak",
+   "x": 869.62,
+   "y": 303.05,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Steelspire (S10)",
+   "x": 811.5,
+   "y": 708.27,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Redwing (S08)",
+   "x": 867.88,
+   "y": 712.37,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Forgehold (S09)",
+   "x": 897.34,
+   "y": 723.36,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ashgate (S11)",
+   "x": 931.15,
+   "y": 667.5,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kanmon",
+   "x": 487.21,
+   "y": 289.76,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yakushi",
+   "x": 494.81,
+   "y": 373.03,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hamamura",
+   "x": 440.05,
+   "y": 410.95,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ssiat",
+   "x": 315.38,
+   "y": 428.99,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shiraki",
+   "x": 187.42,
+   "y": 564.2,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fontana",
+   "x": 455.81,
+   "y": 867.28,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Giftvik",
+   "x": 428,
+   "y": 795.81,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Huai Kaeo",
+   "x": 144.28,
+   "y": 861.86,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tha Samut",
+   "x": 185.92,
+   "y": 872.86,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ban Pa",
+   "x": 219.14,
+   "y": 887.94,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ban Klang",
+   "x": 124.45,
+   "y": 951.69,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Muang Ngoen",
+   "x": 229.96,
+   "y": 944.25,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Jarlsfall",
+   "x": 307.06,
+   "y": 970.7,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Steinborg",
+   "x": 377.23,
+   "y": 992.45,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ravnby",
+   "x": 299.45,
+   "y": 1027.22,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sandby",
+   "x": 357.29,
+   "y": 1031.94,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Vrika",
+   "x": 464.98,
+   "y": 1033.27,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Matsya",
+   "x": 480.7,
+   "y": 1061.03,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kamala",
+   "x": 434.19,
+   "y": 1104.44,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Grenfeld",
+   "x": 307.5,
+   "y": 1093.89,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Syrinlya",
+   "x": 1425.55,
+   "y": 144.16,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Westpost",
+   "x": 1373.94,
+   "y": 171.3,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Duskraft",
+   "x": 1259.25,
+   "y": 115.52,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yeti's Hollow",
+   "x": 1358.6,
+   "y": 138.65,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Aeor Crash Site",
+   "x": 1355.57,
+   "y": 111.61,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Salsvault",
+   "x": 1373.81,
+   "y": 112.63,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fortress of the Dead Jarl",
+   "x": 1360.15,
+   "y": 96.22,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wormgrave",
+   "x": 1294.87,
+   "y": 122.69,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Garden of Stone",
+   "x": 1398.8,
+   "y": 187.7,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shiftlands",
+   "x": 1333.82,
+   "y": 89.56,
+   "group": "fort",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Logford",
+   "x": 1420.63,
+   "y": 328.84,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Rosedale",
+   "x": 1429.06,
+   "y": 355.85,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mirebrook",
+   "x": 1438.73,
+   "y": 406.14,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Goldwall",
+   "x": 1357.78,
+   "y": 464.5,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Elandil",
+   "x": 1387.82,
+   "y": 271.66,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kragmar",
+   "x": 1531.52,
+   "y": 355.87,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Chiselby",
+   "x": 1514.49,
+   "y": 331.72,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shadeby",
+   "x": 1477.97,
+   "y": 314.83,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Rockguard Garrison",
+   "x": 1548.09,
+   "y": 379.16,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ashguard Garrison",
+   "x": 1535.82,
+   "y": 415.69,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Guardia",
+   "x": 1223.59,
+   "y": 439.9,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Leafhome",
+   "x": 1567.53,
+   "y": 564.42,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shellwander",
+   "x": 1569.11,
+   "y": 387.9,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Netmouth",
+   "x": 1614.2,
+   "y": 382.58,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ironpost",
+   "x": 1693.23,
+   "y": 536.45,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Rotwick",
+   "x": 1670.74,
+   "y": 568.5,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Grakmoot",
+   "x": 1552.25,
+   "y": 296.97,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Haverby",
+   "x": 1564.69,
+   "y": 237.49,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Eaglecrest",
+   "x": 1317.53,
+   "y": 434.38,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Isola Nera",
+   "x": 1107.36,
+   "y": 664.26,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lonely Rock",
+   "x": 1694.36,
+   "y": 353.36,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ashrest Shrine",
+   "x": 1541.82,
+   "y": 207.44,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ivoryden",
+   "x": 1637.93,
+   "y": 182.1,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Elvenfall Ruins",
+   "x": 1477.13,
+   "y": 271.58,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ruins of Serenna",
+   "x": 1160.77,
+   "y": 419.48,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shadowfall Ruins",
+   "x": 1362.07,
+   "y": 386.73,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ruins of Drakara",
+   "x": 1544.98,
+   "y": 576,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Amber Crossroads",
+   "x": 1409.14,
+   "y": 352.59,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Griffon Roost",
+   "x": 1413.94,
+   "y": 306.61,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lethe Sanatorium",
+   "x": 1438.61,
+   "y": 298.07,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Silverpit",
+   "x": 1382.13,
+   "y": 466.14,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Vena d'Oro",
+   "x": 1235.22,
+   "y": 428.05,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bloomgrove",
+   "x": 1491,
+   "y": 303.96,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wolfgate",
+   "x": 1475.02,
+   "y": 323.87,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Deepcut Camp",
+   "x": 1639.34,
+   "y": 456.72,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Spellgrave",
+   "x": 1677.42,
+   "y": 506.66,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Grimspire",
+   "x": 1702.95,
+   "y": 427.8,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Scalehaven",
+   "x": 1535.22,
+   "y": 598,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "The Maw",
+   "x": 1679.39,
+   "y": 548.53,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hexvale",
+   "x": 1461.24,
+   "y": 532.22,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Serpent's Tooth",
+   "x": 1771.23,
+   "y": 424.74,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Blackfell",
+   "x": 1558.53,
+   "y": 200.79,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Stonedeep",
+   "x": 1484.4,
+   "y": 208.87,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Croaker Cave",
+   "x": 1536.57,
+   "y": 171.11,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Granthapura",
+   "x": 499.87,
+   "y": 1055.75,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tidehold (S33)",
+   "x": 958.16,
+   "y": 559.28,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Candlewick (S57)",
+   "x": 1011.7,
+   "y": 364.66,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cablecross (S44)",
+   "x": 882.15,
+   "y": 360.78,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lockwood",
+   "x": 1411.79,
+   "y": 629.36,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Nilaghat",
+   "x": 489.3,
+   "y": 1043.42,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Boltcrest (S53)",
+   "x": 907.84,
+   "y": 542.79,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lamplight Point (S67)",
+   "x": 936.67,
+   "y": 370.88,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Stillwater",
+   "x": 1410.37,
+   "y": 631.55,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Asahi",
+   "x": 579.4,
+   "y": 309,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fernhollow",
+   "x": 1395.5,
+   "y": 502.59,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wiang Chang",
+   "x": 247.04,
+   "y": 915.65,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hafenburg",
+   "x": 216.67,
+   "y": 1165.66,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Funado",
+   "x": 217.66,
+   "y": 324.48,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Akagane",
+   "x": 235.45,
+   "y": 369.37,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kantun",
+   "x": 518.16,
+   "y": 1124.85,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tunbalam",
+   "x": 494.89,
+   "y": 1124.49,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Jarnstad",
+   "x": 359.76,
+   "y": 808.07,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pravala",
+   "x": 625.63,
+   "y": 1063.12,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cheonmamun",
+   "x": 184.51,
+   "y": 498.23,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ostwacht",
+   "x": 324.64,
+   "y": 1111.9,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wreckers' Cove (S66)",
+   "x": 972.33,
+   "y": 554.45,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yeomma",
+   "x": 136.25,
+   "y": 516.56,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Castra Solis",
+   "x": 497.9,
+   "y": 856.6,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Freightyard (S42)",
+   "x": 907.29,
+   "y": 422.54,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Stonecairn",
+   "x": 1148.84,
+   "y": 393.08,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ban Tung",
+   "x": 261.72,
+   "y": 946.4,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tetsumura",
+   "x": 264.32,
+   "y": 360.61,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kuchil",
+   "x": 604.59,
+   "y": 1124.05,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Coldspring (S43)",
+   "x": 855.8,
+   "y": 374.77,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Dipika",
+   "x": 449.96,
+   "y": 1060.66,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Suro-chae",
+   "x": 349.6,
+   "y": 627.8,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yamikaze",
+   "x": 262.14,
+   "y": 332.17,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Setu",
+   "x": 625.52,
+   "y": 1018.39,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Highmantle",
+   "x": 1309.9,
+   "y": 359.82,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Freeharbor (S27)",
+   "x": 941.18,
+   "y": 400.72,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Snjofjell",
+   "x": 375.8,
+   "y": 787.47,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wiang Hin",
+   "x": 262.92,
+   "y": 941.55,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ahnenhall",
+   "x": 294.61,
+   "y": 1155.58,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kornau",
+   "x": 321.04,
+   "y": 1160.97,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ferrymoor",
+   "x": 1451.99,
+   "y": 569.13,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tapovana",
+   "x": 408.75,
+   "y": 1049.9,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hatun",
+   "x": 509.43,
+   "y": 1132.28,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yaxkin",
+   "x": 498.3,
+   "y": 1146.18,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Coppergate",
+   "x": 1210.32,
+   "y": 400.35,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Huzhou",
+   "x": 269.93,
+   "y": 659.98,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sakha",
+   "x": 511.18,
+   "y": 1148.93,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pha Daeng",
+   "x": 116.02,
+   "y": 896.11,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Padmaghat",
+   "x": 455.97,
+   "y": 1086.1,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kumokage",
+   "x": 200.86,
+   "y": 462.13,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kadali",
+   "x": 572.17,
+   "y": 1066.97,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Balamkin",
+   "x": 498.07,
+   "y": 1135.37,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Brinehaven",
+   "x": 1145.69,
+   "y": 387.67,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Dangmun",
+   "x": 133.91,
+   "y": 574.29,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Scraptown (S60)",
+   "x": 941,
+   "y": 534.48,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Dhulika",
+   "x": 439.81,
+   "y": 1009.18,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Silkford (S52)",
+   "x": 975.66,
+   "y": 486.56,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Doi Mok",
+   "x": 173.79,
+   "y": 968.74,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Driftwood (S64)",
+   "x": 1020.98,
+   "y": 461.49,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shikimura",
+   "x": 530.1,
+   "y": 284.3,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kamphaeng Hin",
+   "x": 208.04,
+   "y": 947.21,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ekchah",
+   "x": 529.58,
+   "y": 1123.79,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Skylift (S39)",
+   "x": 880.04,
+   "y": 362.89,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Chaktun",
+   "x": 585.64,
+   "y": 1118.7,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Gravemere (S51)",
+   "x": 994.79,
+   "y": 390.93,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yuimori",
+   "x": 515.53,
+   "y": 295.28,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Railhead (S25)",
+   "x": 789.15,
+   "y": 337.23,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Rampart (S48)",
+   "x": 853.16,
+   "y": 369.04,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Marisola",
+   "x": 1305.01,
+   "y": 583.4,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pado",
+   "x": 351.43,
+   "y": 646.43,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hakan",
+   "x": 620.15,
+   "y": 1074.95,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ikpet",
+   "x": 636.1,
+   "y": 1108.7,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Westreach",
+   "x": 1173.49,
+   "y": 403.38,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Dynamo Falls (S22)",
+   "x": 839.48,
+   "y": 421.67,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Neon Wharf (S34)",
+   "x": 1017.25,
+   "y": 439.33,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Smedheim",
+   "x": 360.64,
+   "y": 810.32,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mae Pha",
+   "x": 238.69,
+   "y": 965.59,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Moha",
+   "x": 573.29,
+   "y": 1113.04,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ekmul",
+   "x": 496.37,
+   "y": 1139.47,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Maunagiri",
+   "x": 402.28,
+   "y": 1116.7,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ixkab",
+   "x": 562.02,
+   "y": 1134.15,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Velapura",
+   "x": 445.82,
+   "y": 1143.82,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Saktun",
+   "x": 484.52,
+   "y": 1149.2,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Usugure",
+   "x": 550.19,
+   "y": 332.73,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Moyong-jang",
+   "x": 170.35,
+   "y": 590.27,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Briarwatch (S71)",
+   "x": 807.46,
+   "y": 536.31,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Vaultwick (S28)",
+   "x": 988.78,
+   "y": 495.29,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Marshgate",
+   "x": 1410.37,
+   "y": 633.52,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Arsenal Bay (S26)",
+   "x": 993.51,
+   "y": 355.26,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Regatta (S47)",
+   "x": 909.3,
+   "y": 495.2,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mangryang",
+   "x": 167,
+   "y": 486.3,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Starmere",
+   "x": 1567.44,
+   "y": 497.44,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ketaki",
+   "x": 573.92,
+   "y": 1062.41,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sumiyaki",
+   "x": 261.83,
+   "y": 373.66,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bekhal",
+   "x": 465.58,
+   "y": 1104.96,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pietralba",
+   "x": 1133.36,
+   "y": 396.93,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ko Lom",
+   "x": 127.08,
+   "y": 824.74,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Akebono",
+   "x": 552.86,
+   "y": 309.62,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Nadipura",
+   "x": 578.28,
+   "y": 1058.16,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Chakha",
+   "x": 612.58,
+   "y": 1134.46,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Heukgok",
+   "x": 185.36,
+   "y": 506.68,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Purewell (S40)",
+   "x": 782.83,
+   "y": 441.64,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Skarvik",
+   "x": 345.16,
+   "y": 794.59,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fernbrook",
+   "x": 1437.71,
+   "y": 614.76,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Uhmal",
+   "x": 520.77,
+   "y": 1107.27,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cheongseong-san",
+   "x": 172.06,
+   "y": 633.09,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pinehold (S46)",
+   "x": 857.36,
+   "y": 376.65,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hyeolchon",
+   "x": 217.73,
+   "y": 492,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mumei",
+   "x": 259.69,
+   "y": 432.53,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Khao Kaeo",
+   "x": 147.76,
+   "y": 945.3,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hollowbell (S58)",
+   "x": 984.99,
+   "y": 379.87,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bulwark Harbor (S24)",
+   "x": 780.03,
+   "y": 345.6,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shellcase (S37)",
+   "x": 1013.79,
+   "y": 354.2,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Jegal-gok",
+   "x": 205,
+   "y": 613.06,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Dimcrest",
+   "x": 1548.04,
+   "y": 502.98,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yeomjeon",
+   "x": 331.32,
+   "y": 652.97,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tsonot",
+   "x": 611.21,
+   "y": 1070.46,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kurozuka",
+   "x": 596.6,
+   "y": 343.6,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Red Hoof",
+   "x": 305.27,
+   "y": 828.49,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mineiri",
+   "x": 474.63,
+   "y": 313.26,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Heukryong-hang",
+   "x": 330.46,
+   "y": 647.15,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Nohha",
+   "x": 605.5,
+   "y": 1108.5,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Terumura",
+   "x": 577.17,
+   "y": 315.23,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Nongnim-chae",
+   "x": 173.49,
+   "y": 597.02,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Timberton",
+   "x": 1433.46,
+   "y": 602.62,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Laem Sai",
+   "x": 110.95,
+   "y": 868.73,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Blackreef (S32)",
+   "x": 983.3,
+   "y": 541.1,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pingyang",
+   "x": 286.31,
+   "y": 649.47,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Amcho",
+   "x": 347.76,
+   "y": 665.36,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Westwacht",
+   "x": 241.53,
+   "y": 1115.72,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Strandfeste",
+   "x": 324.48,
+   "y": 1170,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Testfire (S23)",
+   "x": 1012.18,
+   "y": 357.72,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cragwatch",
+   "x": 1305.77,
+   "y": 494.85,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mudang-san",
+   "x": 188.23,
+   "y": 617.61,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kagemori",
+   "x": 549.21,
+   "y": 369.2,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ravenmoor (S56)",
+   "x": 1007.45,
+   "y": 370.02,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wardline (S61)",
+   "x": 826.47,
+   "y": 539.57,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kagaribi",
+   "x": 584.39,
+   "y": 301.78,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Otemon",
+   "x": 218.56,
+   "y": 440.07,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Gwisan",
+   "x": 181.56,
+   "y": 523.07,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hwanrak",
+   "x": 352.18,
+   "y": 649.3,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Claimstake (S70)",
+   "x": 842.9,
+   "y": 699.01,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kolby",
+   "x": 359.3,
+   "y": 806.4,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fudamachi",
+   "x": 527.66,
+   "y": 298.03,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Thistledown",
+   "x": 1292.68,
+   "y": 362.52,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kingpin Heights (S41)",
+   "x": 963.95,
+   "y": 474.51,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mosswick",
+   "x": 1421.16,
+   "y": 588.45,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ulfhall",
+   "x": 325.89,
+   "y": 981.82,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Karasuma",
+   "x": 597,
+   "y": 345.3,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Namgung-seong",
+   "x": 220.58,
+   "y": 622.09,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cantano",
+   "x": 1180.91,
+   "y": 443.58,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lootfall (S36)",
+   "x": 837.68,
+   "y": 694.36,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Drillfield (S31)",
+   "x": 826.1,
+   "y": 520.26,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Quietstone (S30)",
+   "x": 818.63,
+   "y": 339.83,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Pang Ma",
+   "x": 175.87,
+   "y": 969.1,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hinode",
+   "x": 560.85,
+   "y": 296.02,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hokuto",
+   "x": 515.49,
+   "y": 298.76,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kurobane",
+   "x": 240.4,
+   "y": 430.23,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Dojang",
+   "x": 340.58,
+   "y": 657.35,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ratnakara",
+   "x": 629.12,
+   "y": 1039.41,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Chakmuul",
+   "x": 464.7,
+   "y": 1133.08,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Birchgate",
+   "x": 1391.43,
+   "y": 324.11,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lowmantle",
+   "x": 1308.94,
+   "y": 358.03,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hwangcheon",
+   "x": 145.31,
+   "y": 505.49,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Doi Fa",
+   "x": 174.55,
+   "y": 965.43,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Thunder Butte",
+   "x": 312.68,
+   "y": 845.55,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kampfburg",
+   "x": 307.93,
+   "y": 1117.43,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tamayobi",
+   "x": 562.6,
+   "y": 324.5,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hatamoto",
+   "x": 198.51,
+   "y": 437.56,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Nakhon Phet",
+   "x": 143.62,
+   "y": 921.63,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Saltgate",
+   "x": 1079.31,
+   "y": 320.25,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sasurai",
+   "x": 252.52,
+   "y": 438,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Gruvby",
+   "x": 353.24,
+   "y": 821.78,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kurayashiki",
+   "x": 211.2,
+   "y": 431,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ashmeadow",
+   "x": 1470.3,
+   "y": 584.1,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Smeltwick",
+   "x": 1454.93,
+   "y": 369.12,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bihyeol",
+   "x": 161.93,
+   "y": 497.97,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Thornhold",
+   "x": 1437.04,
+   "y": 589.22,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fernridge",
+   "x": 1442.28,
+   "y": 620.37,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bjornstad",
+   "x": 410.67,
+   "y": 1010.79,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mukta",
+   "x": 604.38,
+   "y": 1042.16,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Adlerhorst",
+   "x": 250.18,
+   "y": 1085,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kitsunebi",
+   "x": 508.36,
+   "y": 306.65,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hagane",
+   "x": 256.83,
+   "y": 373.54,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lanternhold",
+   "x": 1581.6,
+   "y": 527.1,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Highrod (S72)",
+   "x": 909.91,
+   "y": 546.29,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Marupura",
+   "x": 442.66,
+   "y": 998.8,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kaanmul",
+   "x": 516.97,
+   "y": 1092.5,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Schildberg",
+   "x": 308.74,
+   "y": 1157.62,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Many Fires",
+   "x": 266.19,
+   "y": 835.9,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shikhara",
+   "x": 518.66,
+   "y": 1049.44,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Rishikula",
+   "x": 392.34,
+   "y": 1086.38,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ikal",
+   "x": 524.69,
+   "y": 1133.27,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Muyeong",
+   "x": 316.58,
+   "y": 649.63,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Simhagarh",
+   "x": 446.82,
+   "y": 1004.75,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Meghagiri",
+   "x": 389.71,
+   "y": 1074.09,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hammerstein",
+   "x": 256.9,
+   "y": 1164.24,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Cinderyard (S55)",
+   "x": 830.06,
+   "y": 404.84,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ami-san",
+   "x": 183.35,
+   "y": 669.57,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Wiang Kham",
+   "x": 265.76,
+   "y": 955.63,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Asagiri",
+   "x": 571.81,
+   "y": 295.77,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Dunmere",
+   "x": 1081.08,
+   "y": 352.55,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lowtide (S69)",
+   "x": 1030.38,
+   "y": 464.62,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Glimmerhold (S59)",
+   "x": 789.68,
+   "y": 543.63,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Solvik",
+   "x": 462.24,
+   "y": 814.29,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Heshet",
+   "x": 524.55,
+   "y": 924.37,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Lehrberg",
+   "x": 267.12,
+   "y": 1140.73,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Veinlight (S45)",
+   "x": 836.43,
+   "y": 395.42,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ammun",
+   "x": 205.56,
+   "y": 510.46,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hwangbo-seong",
+   "x": 302.45,
+   "y": 545.41,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Gaebang-chon",
+   "x": 289.82,
+   "y": 638.81,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shantivana",
+   "x": 407.02,
+   "y": 1052.31,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Millrace",
+   "x": 1311.82,
+   "y": 360.55,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Glasshaven (S29)",
+   "x": 778.61,
+   "y": 432.85,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hillcrest",
+   "x": 1439.92,
+   "y": 622.1,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Reedmoor",
+   "x": 1410.21,
+   "y": 638.73,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ornfjell",
+   "x": 375.69,
+   "y": 803.12,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bang Bua",
+   "x": 143.2,
+   "y": 911.88,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ushtra",
+   "x": 501.55,
+   "y": 1012.78,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Quarryside (S50)",
+   "x": 799.87,
+   "y": 343.51,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Brackenfield",
+   "x": 1119.67,
+   "y": 368.43,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Stormwatch (S49)",
+   "x": 901.22,
+   "y": 532.32,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Shankhapura",
+   "x": 628.34,
+   "y": 1036.48,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Somagiri",
+   "x": 536.23,
+   "y": 1069.12,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kukmul",
+   "x": 579.76,
+   "y": 1118.88,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kitaboshi",
+   "x": 530.27,
+   "y": 234.96,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Echo Hollow (S65)",
+   "x": 847.7,
+   "y": 346.41,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Westerhold",
+   "x": 1249.02,
+   "y": 350.92,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Summit Station (S62)",
+   "x": 819.29,
+   "y": 354.44,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Jeomchang-san",
+   "x": 181.56,
+   "y": 690.81,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kaupstad",
+   "x": 460.56,
+   "y": 820.53,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ko Hoi",
+   "x": 120.46,
+   "y": 837.37,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tarangapura",
+   "x": 642.25,
+   "y": 1041.34,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sakbe",
+   "x": 581.8,
+   "y": 1119.34,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kejha",
+   "x": 491.74,
+   "y": 1138.27,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Oxtun",
+   "x": 502.98,
+   "y": 1150.76,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tenmon",
+   "x": 536.16,
+   "y": 289.71,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hoshimi",
+   "x": 532.46,
+   "y": 294.65,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kawabata",
+   "x": 217.79,
+   "y": 396.39,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tengudani",
+   "x": 214.17,
+   "y": 439.83,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Malmdal",
+   "x": 364.09,
+   "y": 804.66,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Vardberg",
+   "x": 387.47,
+   "y": 805.74,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Hvalnes",
+   "x": 349.41,
+   "y": 808.01,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Tarnwick",
+   "x": 1104.69,
+   "y": 349.42,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Kanayama",
+   "x": 248.33,
+   "y": 355.25,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Anvilgate (S35)",
+   "x": 804.87,
+   "y": 401.09,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Last Stop (S68)",
+   "x": 820.58,
+   "y": 521.08,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Brimnes",
+   "x": 351.68,
+   "y": 784.39,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Brookfoot (S38)",
+   "x": 724.23,
+   "y": 440.01,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Goldbluff (S19)",
+   "x": 806.1,
+   "y": 308.6,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Gloomvale (S54)",
+   "x": 877.77,
+   "y": 424.07,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Earthward",
+   "x": 816.6,
+   "y": 340.98,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Bluebasin (S12)",
+   "x": 874.9,
+   "y": 501.85,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Redrock Mines (S18)",
+   "x": 869.24,
+   "y": 437.36,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Silver Junction (S21)",
+   "x": 840.37,
+   "y": 455.77,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sunbarrow",
+   "x": 905.25,
+   "y": 440.65,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mirror Lake (S17)",
+   "x": 979.62,
+   "y": 376.22,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Giantkeep",
+   "x": 982.13,
+   "y": 330.05,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Twinfire Gorge",
+   "x": 900.09,
+   "y": 552.32,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Riddle Cavern",
+   "x": 863.49,
+   "y": 536.83,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Frostfang Tribe",
+   "x": 877.1,
+   "y": 521.3,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mushmire (S63)",
+   "x": 881.24,
+   "y": 564.84,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Deepshade",
+   "x": 871.21,
+   "y": 563.69,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Quetza Crown",
+   "x": 833.89,
+   "y": 669.72,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Quetza Fields",
+   "x": 847.54,
+   "y": 661,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Quetza Fort",
+   "x": 823.63,
+   "y": 662.25,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Quetza Temple",
+   "x": 826.3,
+   "y": 678.86,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Glade Hollow (S16)",
+   "x": 802.66,
+   "y": 627.78,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mirage Keep",
+   "x": 797.63,
+   "y": 554.12,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Veilfalls",
+   "x": 838.62,
+   "y": 560.32,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Fernlake (S20)",
+   "x": 851.61,
+   "y": 601.35,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Faewatch",
+   "x": 830.4,
+   "y": 554.48,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Enzan",
+   "x": 419.09,
+   "y": 371.24,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mokcheon",
+   "x": 401.34,
+   "y": 403.06,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Toji",
+   "x": 364.82,
+   "y": 406.07,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Heukseong",
+   "x": 249.9,
+   "y": 486.56,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sandgrave",
+   "x": 384.8,
+   "y": 1047.29,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Sun Ziggurat",
+   "x": 444.31,
+   "y": 940.38,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ban Nong",
+   "x": 140.6,
+   "y": 915.14,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Ugra Mandir",
+   "x": 466.99,
+   "y": 1016.44,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Vayupura",
+   "x": 588.95,
+   "y": 1020.59,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Riftwatch",
+   "x": 375.78,
+   "y": 957.08,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Draugr Crater",
+   "x": 354.19,
+   "y": 999.17,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Nomad's Dig",
+   "x": 353.2,
+   "y": 958.56,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Serpent Vault",
+   "x": 327.45,
+   "y": 827.14,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Moriichi",
+   "x": 478.23,
+   "y": 371.31,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Mubong",
+   "x": 430.05,
+   "y": 252.8,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "state",
+   "name": "Dwendalian|Empire",
+   "x": 1398,
+   "y": 416
+  },
+  {
+   "type": "state",
+   "name": "Lumenvael|Dynasty",
+   "x": 1589,
+   "y": 460
+  },
+  {
+   "type": "state",
+   "name": "Lagunara|Concord",
+   "x": 1257,
+   "y": 491
+  },
+  {
+   "type": "state",
+   "name": "Twinhold",
+   "x": 1533,
+   "y": 215
+  },
+  {
+   "type": "state",
+   "name": "Voxaria",
+   "x": 852,
+   "y": 448
+  },
+  {
+   "type": "state",
+   "name": "Amanokado",
+   "x": 514,
+   "y": 271
+  },
+  {
+   "type": "state",
+   "name": "Tianchao",
+   "x": 228,
+   "y": 664
+  },
+  {
+   "type": "state",
+   "name": "Akitsu|Shogunate",
+   "x": 204,
+   "y": 461
+  },
+  {
+   "type": "state",
+   "name": "Imperium|Solis",
+   "x": 395,
+   "y": 868
+  },
+  {
+   "type": "state",
+   "name": "Pancha|Sabha",
+   "x": 168,
+   "y": 912
+  },
+  {
+   "type": "state",
+   "name": "Jyoti|Marga",
+   "x": 483,
+   "y": 1080
+  },
+  {
+   "type": "state",
+   "name": "Ehrvarn|Conquest",
+   "x": 274,
+   "y": 1119
+  },
+  {
+   "type": "state",
+   "name": "Varga|Republic",
+   "x": 355,
+   "y": 1008
+  },
+  {
+   "type": "added",
+   "name": "Broadfield",
+   "x": 1369.4,
+   "y": 363.3
+  },
+  {
+   "type": "added",
+   "name": "Corevale",
+   "x": 1495,
+   "y": 428
+  },
+  {
+   "type": "added",
+   "name": "Pearlwood",
+   "x": 1411,
+   "y": 320
+  },
+  {
+   "type": "added",
+   "name": "Gråmark",
+   "x": 1585,
+   "y": 150
+  },
+  {
+   "type": "added",
+   "name": "Ödland",
+   "x": 1597,
+   "y": 408
+  },
+  {
+   "type": "added",
+   "name": "Witherstrand",
+   "x": 1737,
+   "y": 505
+  },
+  {
+   "type": "added",
+   "name": "Costa Mosaica",
+   "x": 1137,
+   "y": 472
+  },
+  {
+   "type": "added",
+   "name": "Eiselcross",
+   "x": 1253,
+   "y": 196
+  },
+  {
+   "type": "added",
+   "name": "Heartland",
+   "x": 872,
+   "y": 517
+  },
+  {
+   "type": "added",
+   "name": "Forgeheim",
+   "x": 850,
+   "y": 338.9
+  },
+  {
+   "type": "added",
+   "name": "Crownshore",
+   "x": 721.7,
+   "y": 422.4
+  },
+  {
+   "type": "added",
+   "name": "Blacktide Coast",
+   "x": 1004.9,
+   "y": 497.2
+  },
+  {
+   "type": "added",
+   "name": "The Verge",
+   "x": 816.7,
+   "y": 585.3
+  },
+  {
+   "type": "added",
+   "name": "Riftwild",
+   "x": 844.4,
+   "y": 648.2
+  },
+  {
+   "type": "added",
+   "name": "Thunderspine",
+   "x": 877.8,
+   "y": 544.4
+  },
+  {
+   "type": "added",
+   "name": "Gloamwood",
+   "x": 988.9,
+   "y": 368.3
+  },
+  {
+   "type": "added",
+   "name": "Mizuho",
+   "x": 222.2,
+   "y": 392
+  },
+  {
+   "type": "added",
+   "name": "Tengu Range",
+   "x": 238.9,
+   "y": 496.8
+  },
+  {
+   "type": "added",
+   "name": "Jungwon",
+   "x": 355.6,
+   "y": 443.8
+  },
+  {
+   "type": "added",
+   "name": "Yūgure Forest",
+   "x": 466.7,
+   "y": 346.7
+  },
+  {
+   "type": "added",
+   "name": "Tsagaan Tal",
+   "x": 322.2,
+   "y": 155.6
+  },
+  {
+   "type": "added",
+   "name": "Deshret",
+   "x": 411.1,
+   "y": 899.9
+  },
+  {
+   "type": "added",
+   "name": "Himmapan Wilds",
+   "x": 122.2,
+   "y": 966.7
+  },
+  {
+   "type": "added",
+   "name": "Ulfdal",
+   "x": 290,
+   "y": 1047
+  },
+  {
+   "type": "added",
+   "name": "Ehrvarn Highlands",
+   "x": 188.9,
+   "y": 1072.2
+  },
+  {
+   "type": "added",
+   "name": "Dandaka",
+   "x": 522.2,
+   "y": 1043
+  },
+  {
+   "type": "added",
+   "name": "Eldmere",
+   "x": 1226.7,
+   "y": 1113.9
+  },
+  {
+   "type": "added",
+   "name": "The Pale Deep",
+   "x": 911.1,
+   "y": 188.9
+  },
+  {
+   "type": "added",
+   "name": "Sundering Ocean",
+   "x": 1000,
+   "y": 788.9
+  },
+  {
+   "type": "added",
+   "name": "Donghai",
+   "x": 555.6,
+   "y": 611.1
+  },
+  {
+   "type": "added",
+   "name": "Sagara",
+   "x": 711.1,
+   "y": 1144.4
+  },
+  {
+   "type": "added",
+   "name": "Greengorge",
+   "x": 1617,
+   "y": 325
+  },
+  {
+   "type": "added",
+   "name": "Highfrost",
+   "x": 1393,
+   "y": 129
+  },
+  {
+   "type": "added",
+   "name": "Northend",
+   "x": 1248,
+   "y": 63
+  },
+  {
+   "type": "added",
+   "name": "Glacia",
+   "x": 1272,
+   "y": 117
+  },
+  {
+   "type": "added",
+   "name": "Snowveil",
+   "x": 1301,
+   "y": 155
+  },
+  {
+   "type": "added",
+   "name": "Whiteout",
+   "x": 1334,
+   "y": 184
+  },
+  {
+   "type": "added",
+   "name": "Fishholm",
+   "x": 1394,
+   "y": 198
+  },
+  {
+   "type": "added",
+   "name": "Icelet",
+   "x": 1446,
+   "y": 137
+  },
+  {
+   "type": "added",
+   "name": "Coldfire",
+   "x": 1390,
+   "y": 61
+  },
+  {
+   "type": "added",
+   "name": "Gale Point",
+   "x": 1719.6,
+   "y": 332.2
+  },
+  {
+   "type": "added",
+   "name": "Thornwaste",
+   "x": 1648.4,
+   "y": 437.5
+  },
+  {
+   "type": "added",
+   "name": "Mistmoor",
+   "x": 1619,
+   "y": 508
+  },
+  {
+   "type": "added",
+   "name": "Blackglass Mountains",
+   "x": 1743.6,
+   "y": 386.8
+  },
+  {
+   "type": "added",
+   "name": "Stonewood",
+   "x": 1763.9,
+   "y": 396.4
+  },
+  {
+   "type": "added",
+   "name": "Steamhills",
+   "x": 1387,
+   "y": 447
+  },
+  {
+   "type": "added",
+   "name": "Venom Isle",
+   "x": 1756,
+   "y": 473
+  },
+  {
+   "type": "added",
+   "name": "Sevenfold",
+   "x": 1537,
+   "y": 521
+  },
+  {
+   "type": "added",
+   "name": "Isoletta",
+   "x": 1257.5,
+   "y": 633.9
+  },
+  {
+   "type": "added",
+   "name": "Vulcana",
+   "x": 1337.7,
+   "y": 668.3
+  },
+  {
+   "type": "added",
+   "name": "Corallina",
+   "x": 1391.9,
+   "y": 696.1
+  },
+  {
+   "type": "added",
+   "name": "Gorgo",
+   "x": 1135,
+   "y": 593.1
+  },
+  {
+   "type": "added",
+   "name": "Fumarella",
+   "x": 1130.9,
+   "y": 500.7
+  },
+  {
+   "type": "added",
+   "name": "Glimmer Tundra",
+   "x": 1489,
+   "y": 193
+  },
+  {
+   "type": "added",
+   "name": "Greyrock Mountains",
+   "x": 1425,
+   "y": 286
+  },
+  {
+   "type": "added",
+   "name": "Greypine",
+   "x": 1502,
+   "y": 298
+  },
+  {
+   "type": "added",
+   "name": "Cloudpeak Mountains",
+   "x": 1346,
+   "y": 488
+  },
+  {
+   "type": "added",
+   "name": "Ashpeaks",
+   "x": 1515,
+   "y": 482
+  },
+  {
+   "type": "added",
+   "name": "Ashpeaks",
+   "x": 1468,
+   "y": 575
+  },
+  {
+   "type": "added",
+   "name": "Twilight Range",
+   "x": 1690,
+   "y": 485
+  },
+  {
+   "type": "added",
+   "name": "Whitehorn Alps",
+   "x": 1517,
+   "y": 231
+  },
+  {
+   "type": "added",
+   "name": "Hoarfield",
+   "x": 1573,
+   "y": 255
+  },
+  {
+   "type": "added",
+   "name": "Silver Ridge",
+   "x": 1464,
+   "y": 377
+  },
+  {
+   "type": "added",
+   "name": "Selva Scura",
+   "x": 1395,
+   "y": 624
+  },
+  {
+   "type": "added",
+   "name": "Lotuswood",
+   "x": 1570,
+   "y": 595
+  },
+  {
+   "type": "added",
+   "name": "Monti Stella",
+   "x": 1247,
+   "y": 533
+  },
+  {
+   "type": "added",
+   "name": "Costa Secca",
+   "x": 1177,
+   "y": 398
+  },
+  {
+   "type": "added",
+   "name": "Iron Authority",
+   "x": 868,
+   "y": 725
+  },
+  {
+   "type": "added",
+   "name": "Aldenreich",
+   "x": 1600,
+   "y": 705
+  },
+  {
+   "type": "added",
+   "name": "Shenzhou",
+   "x": 130,
+   "y": 250
+  },
+  {
+   "type": "added",
+   "name": "Suvarna",
+   "x": 648,
+   "y": 882
+  },
+  {
+   "type": "added",
+   "name": "Isole Smeralde",
+   "x": 1200,
+   "y": 690
+  },
+  {
+   "type": "added",
+   "name": "Kazan Range",
+   "x": 420,
+   "y": 388
+  },
+  {
+   "type": "added",
+   "name": "Cheonsan",
+   "x": 300,
+   "y": 425
+  },
+  {
+   "type": "added",
+   "name": "Jarnfell",
+   "x": 380,
+   "y": 815
+  },
+  {
+   "type": "added",
+   "name": "Windgrass Plains",
+   "x": 300,
+   "y": 848
+  },
+  {
+   "type": "added",
+   "name": "Stormwall",
+   "x": 1330,
+   "y": 955
+  },
+  {
+   "type": "added",
+   "name": "Shellward Reach",
+   "x": 1305,
+   "y": 1055
+  },
+  {
+   "type": "added",
+   "name": "Wyrmhold Isles",
+   "x": 1505,
+   "y": 1075
+  },
+  {
+   "type": "added",
+   "name": "Cinderteeth",
+   "x": 1715,
+   "y": 1030
+  },
+  {
+   "type": "added",
+   "name": "Mistholm",
+   "x": 1475,
+   "y": 990
+  },
+  {
+   "type": "added",
+   "name": "Eldwood",
+   "x": 1615,
+   "y": 1115
+  },
+  {
+   "type": "added",
+   "name": "Halo Peaks",
+   "x": 1575,
+   "y": 1040
+  },
+  {
+   "type": "added",
+   "name": "Emberflow",
+   "x": 1388,
+   "y": 152
+  },
+  {
+   "type": "added",
+   "name": "Feral Isle",
+   "x": 734.4,
+   "y": 574.6
+  },
+  {
+   "type": "added",
+   "name": "Giantstep Pass",
+   "x": 775.6,
+   "y": 380.8
+  },
+  {
+   "type": "added",
+   "name": "Blackcrown Mountain",
+   "x": 868,
+   "y": 410
+  },
+  {
+   "type": "added",
+   "name": "Ironback Ridge",
+   "x": 834.6,
+   "y": 464.5
+  },
+  {
+   "type": "added",
+   "name": "Ivywood",
+   "x": 828,
+   "y": 490
+  },
+  {
+   "type": "added",
+   "name": "Quetza",
+   "x": 833,
+   "y": 679.6
+  },
+  {
+   "type": "added",
+   "name": "Futagoyama",
+   "x": 433.5,
+   "y": 315.3
+  },
+  {
+   "type": "added",
+   "name": "Emberpeak",
+   "x": 452,
+   "y": 958
+  },
+  {
+   "type": "added",
+   "name": "Naga Range",
+   "x": 150,
+   "y": 848
+  },
+  {
+   "type": "added",
+   "name": "Lake Prabha",
+   "x": 492,
+   "y": 1088
+  },
+  {
+   "type": "added",
+   "name": "Tamasa Jungle",
+   "x": 430,
+   "y": 1042
+  },
+  {
+   "type": "added",
+   "name": "Wolfcliff",
+   "x": 330,
+   "y": 985
+  },
+  {
+   "type": "added",
+   "name": "Helm Peaks",
+   "x": 268,
+   "y": 1145
+  },
+  {
+   "type": "added",
+   "name": "Giftvik Bay",
+   "x": 442,
+   "y": 780
+  },
+  {
+   "type": "river",
+   "name": "Dalai Uul River",
+   "x": 363.51,
+   "y": 206.99
+  },
+  {
+   "type": "river",
+   "name": "Tsenkhirvan River",
+   "x": 418.65,
+   "y": 240
+  },
+  {
+   "type": "river",
+   "name": "Bagaan Brook",
+   "x": 426.42,
+   "y": 252.88
+  },
+  {
+   "type": "river",
+   "name": "Khovshaat River",
+   "x": 460.35,
+   "y": 232.12
+  },
+  {
+   "type": "river",
+   "name": "Algi River",
+   "x": 395.49,
+   "y": 243.43
+  },
+  {
+   "type": "river",
+   "name": "Gwang River",
+   "x": 517.93,
+   "y": 255.57
+  },
+  {
+   "type": "river",
+   "name": "Seocheong River",
+   "x": 496.23,
+   "y": 283.91
+  },
+  {
+   "type": "river",
+   "name": "Fludar River",
+   "x": 1437.64,
+   "y": 281.08
+  },
+  {
+   "type": "river",
+   "name": "Voyageid River",
+   "x": 1446.98,
+   "y": 287.52
+  },
+  {
+   "type": "river",
+   "name": "Hailer River",
+   "x": 1402.55,
+   "y": 285.45
+  },
+  {
+   "type": "river",
+   "name": "Emin Creek",
+   "x": 1406.73,
+   "y": 281.85
+  },
+  {
+   "type": "river",
+   "name": "Lumenha River",
+   "x": 1548.28,
+   "y": 290.08
+  },
+  {
+   "type": "river",
+   "name": "Ponan Creek",
+   "x": 583.45,
+   "y": 295.85
+  },
+  {
+   "type": "river",
+   "name": "Hnifsvog River",
+   "x": 1478.19,
+   "y": 288.54
+  },
+  {
+   "type": "river",
+   "name": "Trorar River",
+   "x": 1464.94,
+   "y": 292.64
+  },
+  {
+   "type": "river",
+   "name": "Pungdong River",
+   "x": 537.49,
+   "y": 303.84
+  },
+  {
+   "type": "river",
+   "name": "Otmos River",
+   "x": 1367.83,
+   "y": 318.67
+  },
+  {
+   "type": "river",
+   "name": "Straunah River",
+   "x": 1527.03,
+   "y": 303.54
+  },
+  {
+   "type": "river",
+   "name": "Brunahlid Brook",
+   "x": 1512.06,
+   "y": 312.31
+  },
+  {
+   "type": "river",
+   "name": "Towcesin River",
+   "x": 806.86,
+   "y": 327.28
+  },
+  {
+   "type": "river",
+   "name": "Oseushi River",
+   "x": 255.39,
+   "y": 350.9
+  },
+  {
+   "type": "river",
+   "name": "Jecheon River",
+   "x": 528.67,
+   "y": 354.41
+  },
+  {
+   "type": "river",
+   "name": "Namchau River",
+   "x": 349.57,
+   "y": 379.56
+  },
+  {
+   "type": "river",
+   "name": "Pichambe River",
+   "x": 914.11,
+   "y": 358.22
+  },
+  {
+   "type": "river",
+   "name": "Onigsbachlin River",
+   "x": 1319.67,
+   "y": 388.75
+  },
+  {
+   "type": "river",
+   "name": "Dobel River",
+   "x": 1298.41,
+   "y": 385.35
+  },
+  {
+   "type": "river",
+   "name": "Wargham River",
+   "x": 861.19,
+   "y": 400.94
+  },
+  {
+   "type": "river",
+   "name": "Rheindind River",
+   "x": 1422.83,
+   "y": 408.03
+  },
+  {
+   "type": "river",
+   "name": "Haundra River",
+   "x": 1568.72,
+   "y": 388.27
+  },
+  {
+   "type": "river",
+   "name": "Sutsu River",
+   "x": 261.46,
+   "y": 387.32
+  },
+  {
+   "type": "river",
+   "name": "Dryndlume River",
+   "x": 1594.41,
+   "y": 420.97
+  },
+  {
+   "type": "river",
+   "name": "Linpak River",
+   "x": 386.94,
+   "y": 384.43
+  },
+  {
+   "type": "river",
+   "name": "Blechwel River",
+   "x": 773.58,
+   "y": 409.49
+  },
+  {
+   "type": "river",
+   "name": "Towcester Creek",
+   "x": 764.05,
+   "y": 406.18
+  },
+  {
+   "type": "river",
+   "name": "Nishima River",
+   "x": 257.84,
+   "y": 414.45
+  },
+  {
+   "type": "river",
+   "name": "Duyarilov River",
+   "x": 931.58,
+   "y": 418.44
+  },
+  {
+   "type": "river",
+   "name": "Dunster River",
+   "x": 840.04,
+   "y": 418.83
+  },
+  {
+   "type": "river",
+   "name": "Zutivl River",
+   "x": 982.81,
+   "y": 419.87
+  },
+  {
+   "type": "river",
+   "name": "Torricuciva River",
+   "x": 1193.92,
+   "y": 425.32
+  },
+  {
+   "type": "river",
+   "name": "Sulzgravels River",
+   "x": 1505.94,
+   "y": 419.03
+  },
+  {
+   "type": "river",
+   "name": "Munsberg River",
+   "x": 1462.56,
+   "y": 461.61
+  },
+  {
+   "type": "river",
+   "name": "Kedine River",
+   "x": 812.85,
+   "y": 456.26
+  },
+  {
+   "type": "river",
+   "name": "Bretford River",
+   "x": 788.44,
+   "y": 454.47
+  },
+  {
+   "type": "river",
+   "name": "Taiwai River",
+   "x": 309.96,
+   "y": 464.89
+  },
+  {
+   "type": "river",
+   "name": "Hlaugmarsogith River",
+   "x": 1594.99,
+   "y": 498.05
+  },
+  {
+   "type": "river",
+   "name": "Totham River",
+   "x": 921.29,
+   "y": 486.46
+  },
+  {
+   "type": "river",
+   "name": "Schofenlin River",
+   "x": 1303.21,
+   "y": 507.01
+  },
+  {
+   "type": "river",
+   "name": "Waltenstadt River",
+   "x": 1482.38,
+   "y": 492.48
+  },
+  {
+   "type": "river",
+   "name": "Zhenping River",
+   "x": 308.01,
+   "y": 501.76
+  },
+  {
+   "type": "river",
+   "name": "Asheldock River",
+   "x": 771.58,
+   "y": 488.97
+  },
+  {
+   "type": "river",
+   "name": "Hausach River",
+   "x": 1456.48,
+   "y": 511.1
+  },
+  {
+   "type": "river",
+   "name": "Milcesbury River",
+   "x": 934.69,
+   "y": 522.33
+  },
+  {
+   "type": "river",
+   "name": "Beterke River",
+   "x": 869.4,
+   "y": 537.47
+  },
+  {
+   "type": "river",
+   "name": "Ruzgkigh River",
+   "x": 1537.8,
+   "y": 533.81
+  },
+  {
+   "type": "river",
+   "name": "Qidroz River",
+   "x": 1527.84,
+   "y": 535.59
+  },
+  {
+   "type": "river",
+   "name": "Bhicrodh River",
+   "x": 1605.05,
+   "y": 543.32
+  },
+  {
+   "type": "river",
+   "name": "Durbury River",
+   "x": 816.89,
+   "y": 562.97
+  },
+  {
+   "type": "river",
+   "name": "Tlalpan River",
+   "x": 933.05,
+   "y": 647.56
+  },
+  {
+   "type": "river",
+   "name": "Tuchtlan River",
+   "x": 839.68,
+   "y": 680.53
+  },
+  {
+   "type": "river",
+   "name": "Metztalihua River",
+   "x": 834.66,
+   "y": 695.75
+  },
+  {
+   "type": "river",
+   "name": "Bogadir River",
+   "x": 357.18,
+   "y": 799.23
+  },
+  {
+   "type": "river",
+   "name": "Kabergealnin River",
+   "x": 202.11,
+   "y": 904.16
+  },
+  {
+   "type": "river",
+   "name": "Do Nam Thuy Branch",
+   "x": 225.8,
+   "y": 926.33
+  },
+  {
+   "type": "river",
+   "name": "Thai Creek",
+   "x": 215.48,
+   "y": 894.03
+  },
+  {
+   "type": "river",
+   "name": "Vung Son River",
+   "x": 179.24,
+   "y": 902.77
+  },
+  {
+   "type": "river",
+   "name": "Huong Chau River",
+   "x": 139.15,
+   "y": 918.09
+  },
+  {
+   "type": "river",
+   "name": "Asefenver River",
+   "x": 239.79,
+   "y": 953.13
+  },
+  {
+   "type": "river",
+   "name": "Ba Cat River",
+   "x": 251.71,
+   "y": 951.06
+  },
+  {
+   "type": "river",
+   "name": "Afzalnagal River",
+   "x": 478.28,
+   "y": 1078.2
+  },
+  {
+   "type": "river",
+   "name": "Kushpur River",
+   "x": 489.31,
+   "y": 1074.02
+  },
+  {
+   "type": "river",
+   "name": "Pitonticyon River",
+   "x": 321.24,
+   "y": 1126.96
+  },
+  {
+   "type": "river",
+   "name": "Crodolis Stream",
+   "x": 330.92,
+   "y": 1130.26
+  },
+  {
+   "type": "river",
+   "name": "Sihimote River",
+   "x": 450.74,
+   "y": 1106.46
+  },
+  {
+   "type": "river",
+   "name": "Margytos River",
+   "x": 291.65,
+   "y": 1115.37
+  },
+  {
+   "type": "river",
+   "name": "Muwenza River",
+   "x": 510.28,
+   "y": 1138.66
+  },
+  {
+   "type": "river",
+   "name": "Nakaunde River",
+   "x": 609.39,
+   "y": 1128.94
+  },
+  {
+   "type": "river",
+   "name": "Hatnasimvar River",
+   "x": 431.7,
+   "y": 1130.18
+  },
+  {
+   "type": "river",
+   "name": "Pyrelopopo River",
+   "x": 240.82,
+   "y": 1140.61
+  },
+  {
+   "type": "river",
+   "name": "Piniapon Creek",
+   "x": 226.52,
+   "y": 1140.48
+  },
+  {
+   "type": "river",
+   "name": "Waburulu River",
+   "x": 530.26,
+   "y": 1143.19
+  },
+  {
+   "type": "river",
+   "name": "Naibinsim River",
+   "x": 575.92,
+   "y": 1137.38
+  },
+  {
+   "type": "river",
+   "name": "Buyandia River",
+   "x": 470.59,
+   "y": 1135.74
+  }
+ ]
+}

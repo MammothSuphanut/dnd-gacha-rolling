@@ -36,6 +36,7 @@
 | เมือง | [Vargholm](varga-republic.md) · [Steinborg](steinborg.md) · [Jarlsfall](jarlsfall.md) |
 | นิคม | [Ravnby](ravnby.md) · [Sandby](sandby.md) · [Riftwatch](riftwatch.md) |
 | ซากและภูมิประเทศ | [Nomad's Dig](nomads-dig.md) · [Draugr Crater](draugr-crater.md) · [Wolfcliff](wolfcliff.md) |
+| ✨ ตระกูลนักรบ | [Ulfhall](ulfhall.md) · [Bjornstad](bjornstad.md) |
 
 ## ผู้คนและวัฒนธรรม
 

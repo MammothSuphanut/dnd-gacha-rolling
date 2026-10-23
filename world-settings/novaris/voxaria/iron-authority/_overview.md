@@ -36,6 +36,7 @@
 | Iron Authority | [Ironhelm](ironhelm.md) · [Redwing](redwing.md) · [Steelspire](steelspire.md) · [Ashgate](ashgate.md) · [Forgehold](forgehold.md) |
 | Riftwild | [Quetza](quetza.md) · [Quetza Crown](quetza-crown.md) · [Quetza Fields](quetza-fields.md) · [Quetza Fort](quetza-fort.md) · [Quetza Temple](quetza-temple.md) |
 | ขอบเขต Gate | [Glade Hollow](glade-hollow.md) |
+| เมืองเพิ่ม 2026-10-23 ✨ | [Lootfall](lootfall.md) (S36) · [Claimstake](claimstake.md) (S70) |
 
 ## ผู้คนและวัฒนธรรม
 

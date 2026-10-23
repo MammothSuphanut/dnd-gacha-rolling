@@ -95,6 +95,7 @@
 | ภูมิภาค | Hellcatch Valley | **Ulfdal** | อุลฟ์-ดาล | หุบเขาหมาป่า | [hellcatch-valley/_overview.md](../../exandria/marquet/hellcatch-valley/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | ภูมิภาค | Taloned Highlands | **Ehrvarn Highlands** | แอร์-วาร์น | ที่ราบสูงของเผ่า Ehrvarn | [taloned-highlands/_overview.md](../../exandria/marquet/taloned-highlands/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | ภูมิภาค | Aggrad Mountains | **Jarnfell** | ยาร์น-เฟลล์ | ภูเขาเหล็ก — เมืองท่าไวกิ้ง Shammel | [aggrad-mountains/_overview.md](../../exandria/marquet/aggrad-mountains/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| ภูมิภาค | — (Novaris ตั้งเอง 2026-10-23) | **Chakan Wilds** | ชา-กัน | ทุ่งป่า (คำแบบมายา) — ดินแดนเผ่ามายา 4 เผ่า | [chakan-wilds/_overview.md](../suvarna/chakan-wilds/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
 
 ### 🌊 Eldmere
 
@@ -270,6 +271,50 @@
 | Hearthstar Peaks | **Monti Stella** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | The Barren Shores | **Costa Secca** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 
+### ❄️ Aldenreich — เมืองสุ่มจากแผนที่ Azgaar (ตั้งชื่อใหม่ 2026-10-23)
+
+> ไม่มีใน CR — เมืองที่ Azgaar สุ่มเติมในเขตประเทศตอนสร้างแผนที่ ตั้งชื่อใหม่ตามธีมภูมิภาค แล้วเขียน lore ครบ · Dwendalian Empire / Ödland ใช้ชื่ออังกฤษ · Costa Mosaica (Concord) ใช้ชื่ออิตาลี · เมืองในอาณานิคมของจักรวรรดิใช้ชื่ออังกฤษแบบจักรวรรดิ · เพิ่มลง `novaris-burgs.json` แล้ว
+
+| ชื่อเดิม (Azgaar) | ชื่อ Novaris | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Karlswaldt | **Birchgate** | [birchgate.md](../aldenreich/dwendalian-empire/birchgate.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gusen | **Smeltwick** | [smeltwick.md](../aldenreich/dwendalian-empire/smeltwick.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Rasbach | **Westerhold** | [westerhold.md](../aldenreich/dwendalian-empire/westerhold.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Malstalden | **Highmantle** | [highmantle.md](../aldenreich/dwendalian-empire/highmantle.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Haibachtal | **Lowmantle** | [lowmantle.md](../aldenreich/dwendalian-empire/lowmantle.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Schom | **Millrace** | [millrace.md](../aldenreich/dwendalian-empire/millrace.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lofen | **Thistledown** | [thistledown.md](../aldenreich/dwendalian-empire/thistledown.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Opold | **Cragwatch** | [cragwatch.md](../aldenreich/dwendalian-empire/cragwatch.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Strau | **Fernhollow** | [fernhollow.md](../aldenreich/dwendalian-empire/fernhollow.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| — (อาณานิคมใหม่) | **Saltmarch** | [saltmarch/_overview.md](../aldenreich/costa-mosaica/saltmarch/_overview.md) | ✅ | ✅ | ✅ ร่าง | — |
+| Kusterngen | **Westreach** | [westreach.md](../aldenreich/costa-mosaica/saltmarch/westreach.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Braun | **Saltgate** | [saltgate.md](../aldenreich/costa-mosaica/saltmarch/saltgate.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Nagold | **Brinehaven** | [brinehaven.md](../aldenreich/costa-mosaica/saltmarch/brinehaven.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Heiler | **Stonecairn** | [stonecairn.md](../aldenreich/costa-mosaica/saltmarch/stonecairn.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Aiseierben | **Coppergate** | [coppergate.md](../aldenreich/costa-mosaica/saltmarch/coppergate.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Vildenterwol | **Dunmere** | [dunmere.md](../aldenreich/costa-mosaica/saltmarch/dunmere.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kapenheim | **Tarnwick** | [tarnwick.md](../aldenreich/costa-mosaica/saltmarch/tarnwick.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Pfalzlindern | **Brackenfield** | [brackenfield.md](../aldenreich/costa-mosaica/saltmarch/brackenfield.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tusengenbach | **Pietralba** | [pietralba.md](../aldenreich/costa-mosaica/pietralba.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Cantano | **Cantano** (คงเดิม) | [cantano.md](../aldenreich/costa-mosaica/cantano.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Bolcicenaza | **Marisola** | [marisola.md](../aldenreich/costa-mosaica/marisola.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| — (อาณานิคมใหม่) | **Green March** | [green-march/_overview.md](../aldenreich/costa-mosaica/green-march/_overview.md) | ✅ | ✅ | ✅ ร่าง | — |
+| Trinach | **Thornhold** | [thornhold.md](../aldenreich/costa-mosaica/green-march/thornhold.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ottindorf | **Ferrymoor** | [ferrymoor.md](../aldenreich/costa-mosaica/green-march/ferrymoor.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Rheimelheim | **Ashmeadow** | [ashmeadow.md](../aldenreich/costa-mosaica/green-march/ashmeadow.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Todtwan | **Mosswick** | [mosswick.md](../aldenreich/costa-mosaica/green-march/mosswick.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Dornsbach | **Timberton** | [timberton.md](../aldenreich/costa-mosaica/green-march/timberton.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Friebachlen | **Fernbrook** | [fernbrook.md](../aldenreich/costa-mosaica/green-march/fernbrook.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Alttengen | **Hillcrest** | [hillcrest.md](../aldenreich/costa-mosaica/green-march/hillcrest.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Weiburgheim | **Fernridge** | [fernridge.md](../aldenreich/costa-mosaica/green-march/fernridge.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Herhartal | **Lockwood** | [lockwood.md](../aldenreich/costa-mosaica/green-march/lockwood.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hutenburg | **Stillwater** | [stillwater.md](../aldenreich/costa-mosaica/green-march/stillwater.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Wienau | **Marshgate** | [marshgate.md](../aldenreich/costa-mosaica/green-march/marshgate.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Krobertengen | **Reedmoor** | [reedmoor.md](../aldenreich/costa-mosaica/green-march/reedmoor.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ghrong'en | **Starmere** | [starmere.md](../aldenreich/odland/starmere.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Melheivalz | **Dimcrest** | [dimcrest.md](../aldenreich/odland/dimcrest.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kel-Nine | **Lanternhold** | [lanternhold.md](../aldenreich/odland/lanternhold.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+
 ### 🌾 Voxaria — Crownshore
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
@@ -361,6 +406,61 @@
 | Orencleft | **Faewatch** | [orencleft.md](../../exandria/tal-dorei/verdant-expanse/orencleft.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Syngorn | **Syngorn (คงเดิม)** | [syngorn.md](../../exandria/tal-dorei/verdant-expanse/syngorn.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 
+### 🌾 Voxaria — เมืองสุ่มจากแผนที่ Azgaar + ระบบ Sector (2026-10-23)
+
+> ไม่มีใน CR — เมืองที่ Azgaar สุ่มเติมใน Voxaria ตั้งชื่อใหม่แบบ "ชื่อบอกตัวตนของเมือง" (อังกฤษอ่านง่าย) · ทุกเมืองของ Voxaria มีเลข **Sector** ตาม Sector Charter (900 PD) — ดู `voxaria/_overview.md` หัวข้อ "ระบบ Sector" · บนแผนที่เขียน **ชื่อ (Snn)** · เมืองเดิม 25 เมืองได้เลขด้วย (ไม่เปลี่ยนชื่อ)
+
+| ชื่อเดิม (Azgaar) | ชื่อ Novaris | Sector | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Chiches | **Dynamo Falls** | 22 | [dynamo-falls.md](../voxaria/forgeheim/dynamo-falls.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Poryesk | **Testfire** | 23 | [testfire.md](../voxaria/gloamwood/testfire.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Chiplema | **Bulwark Harbor** | 24 | [bulwark-harbor.md](../voxaria/forgeheim/bulwark-harbor.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Arabington | **Railhead** | 25 | [railhead.md](../voxaria/forgeheim/railhead.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Belecha | **Arsenal Bay** | 26 | [arsenal-bay.md](../voxaria/gloamwood/arsenal-bay.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kirporbot | **Freeharbor** | 27 | [freeharbor.md](../voxaria/heartland/freeharbor.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Crafton | **Vaultwick** | 28 | [vaultwick.md](../voxaria/blacktide-coast/vaultwick.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tutongay | **Glasshaven** | 29 | [glasshaven.md](../voxaria/crownshore/glasshaven.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hertrinches | **Quietstone** | 30 | [quietstone.md](../voxaria/forgeheim/quietstone.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Dunstondoke | **Drillfield** | 31 | [drillfield.md](../voxaria/heartland/drillfield.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Shomyarden | **Blackreef** | 32 | [blackreef.md](../voxaria/blacktide-coast/blackreef.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Shorough | **Tidehold** | 33 | [tidehold.md](../voxaria/blacktide-coast/tidehold.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tavewen | **Neon Wharf** | 34 | [neon-wharf.md](../voxaria/blacktide-coast/neon-wharf.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Narakzund | **Anvilgate** | 35 | [anvilgate.md](../voxaria/forgeheim/anvilgate.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Stuik | **Lootfall** | 36 | [lootfall.md](../voxaria/iron-authority/lootfall.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Duragotel | **Shellcase** | 37 | [shellcase.md](../voxaria/gloamwood/shellcase.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Altbury | **Skylift** | 39 | [skylift.md](../voxaria/forgeheim/skylift.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Wickneth | **Purewell** | 40 | [purewell.md](../voxaria/crownshore/purewell.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Quatley | **Kingpin Heights** | 41 | [kingpin-heights.md](../voxaria/blacktide-coast/kingpin-heights.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Newbute | **Freightyard** | 42 | [freightyard.md](../voxaria/heartland/freightyard.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ormsterlow | **Coldspring** | 43 | [coldspring.md](../voxaria/forgeheim/coldspring.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Totham | **Cablecross** | 44 | [cablecross.md](../voxaria/forgeheim/cablecross.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Unzar | **Veinlight** | 45 | [veinlight.md](../voxaria/forgeheim/veinlight.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Reates | **Pinehold** | 46 | [pinehold.md](../voxaria/forgeheim/pinehold.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Holnema | **Regatta** | 47 | [regatta.md](../voxaria/heartland/regatta.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Soutford | **Rampart** | 48 | [rampart.md](../voxaria/forgeheim/rampart.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Bingham | **Stormwatch** | 49 | [stormwatch.md](../voxaria/thunderspine/stormwatch.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Louthester | **Quarryside** | 50 | [quarryside.md](../voxaria/forgeheim/quarryside.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Krylavar | **Gravemere** | 51 | [gravemere.md](../voxaria/gloamwood/gravemere.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Grantford | **Silkford** | 52 | [silkford.md](../voxaria/blacktide-coast/silkford.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Wiscomney | **Boltcrest** | 53 | [boltcrest.md](../voxaria/thunderspine/boltcrest.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Brascast | **Cinderyard** | 55 | [cinderyard.md](../voxaria/forgeheim/cinderyard.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lubnorodok | **Ravenmoor** | 56 | [ravenmoor.md](../voxaria/gloamwood/ravenmoor.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Loten | **Candlewick** | 57 | [candlewick.md](../voxaria/gloamwood/candlewick.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Sorovsk | **Hollowbell** | 58 | [hollowbell.md](../voxaria/gloamwood/hollowbell.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Pilworth | **Glimmerhold** | 59 | [glimmerhold.md](../voxaria/thunderspine/glimmerhold.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hathambe | **Scraptown** | 60 | [scraptown.md](../voxaria/blacktide-coast/scraptown.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Nostokenil | **Wardline** | 61 | [wardline.md](../voxaria/thunderspine/wardline.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Monton | **Summit Station** | 62 | [summit-station.md](../voxaria/forgeheim/summit-station.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Mourymering | **Driftwood** | 64 | [driftwood.md](../voxaria/blacktide-coast/driftwood.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ponrithing | **Echo Hollow** | 65 | [echo-hollow.md](../voxaria/forgeheim/echo-hollow.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Daltonzan | **Wreckers' Cove** | 66 | [wreckers-cove.md](../voxaria/blacktide-coast/wreckers-cove.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Searavere | **Lamplight Point** | 67 | [lamplight-point.md](../voxaria/gloamwood/lamplight-point.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Withole | **Last Stop** | 68 | [last-stop.md](../voxaria/heartland/last-stop.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Manchboury | **Lowtide** | 69 | [lowtide.md](../voxaria/blacktide-coast/lowtide.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ulbruing | **Claimstake** | 70 | [claimstake.md](../voxaria/iron-authority/claimstake.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Helsted | **Briarwatch** | 71 | [briarwatch.md](../voxaria/thunderspine/briarwatch.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Berwickley | **Highrod** | 72 | [highrod.md](../voxaria/thunderspine/highrod.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+
 ### ⛰️ Shenzhou — Amanokado (ครึ่งญี่ปุ่น)
 
 | ชื่อ CR | ชื่อ Novaris | origin | ชื่อ | เอกสาร | lore | แผนที่ |
@@ -388,6 +488,79 @@
 | Zenwick | **Mubong** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Hishari (ซากเมือง Tumilo) | **Heukseong** | [hishari.md](../../exandria/issylra/unspecified/hishari.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Ivaadel | **Shiraki** | [ivaadel.md](../../exandria/issylra/unspecified/ivaadel.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+
+### ⛰️ Shenzhou — เมืองสุ่มจากแผนที่ Azgaar + สำนัก/ตระกูล/ฝ่าย (2026-10-23)
+
+> ไม่มีใน CR — เมืองที่ Azgaar สุ่มเติม ตั้งชื่อตามเจ้าของ: ฝั่งญี่ปุ่นใช้ชื่อญี่ปุ่น · เมืองของสำนักยุทธ/ตระกูลยุทธ/ฝ่ายอธรรม/พรรคมารใช้ชื่ออ่านแบบเกาหลี · เมืองของราชสำนัก Tianchao ใช้ชื่อจีนกลาง · Huzhou ใช้ชื่อเดิม · โครงสร้างฝ่ายอยู่ใน `shenzhou/_overview.md` หัวข้อ "สำนัก ตระกูล และฝ่าย" · เพิ่มลง `novaris-burgs.json` แล้ว
+
+| ชื่อเดิม (Azgaar) | ชื่อ Novaris | สังกัด | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Seungju | **Asahi** | สำนักมิโกะ | [asahi.md](../shenzhou/amanokado/asahi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yeongwang | **Akebono** | สำนักมิโกะ | [akebono.md](../shenzhou/amanokado/akebono.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gyeontein | **Hinode** | สำนักมิโกะ | [hinode.md](../shenzhou/amanokado/hinode.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Amyang | **Terumura** | สำนักมิโกะ | [terumura.md](../shenzhou/amanokado/terumura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Poseongwon | **Kagaribi** | สำนักมิโกะ | [kagaribi.md](../shenzhou/amanokado/kagaribi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Samchwang | **Asagiri** | สำนักมิโกะ | [asagiri.md](../shenzhou/amanokado/asagiri.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Saphe | **Karasuma** | สำนักคนทรงอีกาดำ | [karasuma.md](../shenzhou/amanokado/karasuma.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ginyeon | **Kurozuka** | สำนักคนทรงอีกาดำ | [kurozuka.md](../shenzhou/amanokado/kurozuka.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gochangnam | **Tamayobi** | สำนักคนทรงอีกาดำ | [tamayobi.md](../shenzhou/amanokado/tamayobi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ungju | **Usugure** | สำนักคนทรงอีกาดำ | [usugure.md](../shenzhou/amanokado/usugure.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hawon | **Kagemori** | สำนักคนทรงอีกาดำ | [kagemori.md](../shenzhou/amanokado/kagemori.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Wayangju | **Hoshimi** | ตระกูล Hoshimi | [hoshimi.md](../shenzhou/amanokado/hoshimi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Peng | **Tenmon** | ตระกูล Hoshimi | [tenmon.md](../shenzhou/amanokado/tenmon.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Jangdeoksan | **Shikimura** | ตระกูล Hoshimi | [shikimura.md](../shenzhou/amanokado/shikimura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yeomchi | **Fudamachi** | ตระกูล Hoshimi | [fudamachi.md](../shenzhou/amanokado/fudamachi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hongjin | **Yuimori** | ตระกูล Hoshimi | [yuimori.md](../shenzhou/amanokado/yuimori.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Sancheongam | **Hokuto** | ตระกูล Hoshimi | [hokuto.md](../shenzhou/amanokado/hokuto.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gangheon | **Kitsunebi** | ตระกูล Hoshimi | [kitsunebi.md](../shenzhou/amanokado/kitsunebi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Giwondong | **Kitaboshi** | ตระกูล Hoshimi | [kitaboshi.md](../shenzhou/amanokado/kitaboshi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Cheon | **Mineiri** | ยามาบุชิ | [mineiri.md](../shenzhou/amanokado/mineiri.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Okawasa | **Otemon** | โชกุน | [otemon.md](../shenzhou/mizuho/otemon.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ryuoto | **Hatamoto** | โชกุน | [hatamoto.md](../shenzhou/mizuho/hatamoto.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Reihawama | **Kurayashiki** | โชกุน | [kurayashiki.md](../shenzhou/mizuho/kurayashiki.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tajimita | **Akagane** | ตระกูล Akagane | [akagane.md](../shenzhou/mizuho/akagane.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Karamata | **Kanayama** | ตระกูล Akagane | [kanayama.md](../shenzhou/mizuho/kanayama.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gojodaiwai | **Tetsumura** | ตระกูล Akagane | [tetsumura.md](../shenzhou/mizuho/tetsumura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Katohata | **Hagane** | ตระกูล Akagane | [hagane.md](../shenzhou/mizuho/hagane.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Mitojoto | **Sumiyaki** | ตระกูล Akagane | [sumiyaki.md](../shenzhou/mizuho/sumiyaki.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Nishi | **Funado** | ตระกูล Mizuchi | [funado.md](../shenzhou/mizuho/funado.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yuni | **Kawabata** | ตระกูล Mizuchi | [kawabata.md](../shenzhou/mizuho/kawabata.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kora | **Kurobane** | ตระกูล Kurobane | [kurobane.md](../shenzhou/mizuho/kurobane.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gyotodosa | **Tengudani** | ตระกูล Kurobane | [tengudani.md](../shenzhou/mizuho/tengudani.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ororo | **Kumokage** | นินจา Kumokage | [kumokage.md](../shenzhou/mizuho/kumokage.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ichi | **Yamikaze** | นินจา Yamikaze | [yamikaze.md](../shenzhou/mizuho/yamikaze.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hojo | **Mumei** | โรนิน | [mumei.md](../shenzhou/mizuho/mumei.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kuwakokama | **Sasurai** | โรนิน | [sasurai.md](../shenzhou/mizuho/sasurai.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Jinzhou | **Namgung-seong** | ธรรมะ · ตระกูล Namgung | [namgung-seong.md](../shenzhou/tianchao/namgung-seong.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Anshun | **Moyong-jang** | ธรรมะ · ตระกูล Moyong | [moyong-jang.md](../shenzhou/tianchao/moyong-jang.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Xinchang | **Jegal-gok** | ธรรมะ · ตระกูล Jegal | [jegal-gok.md](../shenzhou/tianchao/jegal-gok.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Xincheng | **Hwangbo-seong** | ธรรมะ · ตระกูล Hwangbo | [hwangbo-seong.md](../shenzhou/tianchao/hwangbo-seong.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Jiading | **Dangmun** | ธรรมะ · ตระกูล Dang | [dangmun.md](../shenzhou/tianchao/dangmun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Linangchen | **Mudang-san** | ธรรมะ · Mudang-pa | [mudang-san.md](../shenzhou/tianchao/mudang-san.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yuanhailan | **Ami-san** | ธรรมะ · Ami-pa | [ami-san.md](../shenzhou/tianchao/ami-san.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Jinzhou | **Cheongseong-san** | ธรรมะ · Cheongseong-pa | [cheongseong-san.md](../shenzhou/tianchao/cheongseong-san.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Shaoxing | **Jeomchang-san** | ธรรมะ · Jeomchang-pa | [jeomchang-san.md](../shenzhou/tianchao/jeomchang-san.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kuizhong | **Gaebang-chon** | ธรรมะ · Gaebang | [gaebang-chon.md](../shenzhou/tianchao/gaebang-chon.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Huzhou | **Huzhou** | ราชสำนัก Tianchao | [huzhou.md](../shenzhou/tianchao/huzhou.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yichaoping | **Pingyang** | ราชสำนัก Tianchao | [pingyang.md](../shenzhou/tianchao/pingyang.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Xinchang | **Nongnim-chae** | อธรรม · Nongnim | [nongnim-chae.md](../shenzhou/tianchao/nongnim-chae.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Longning | **Suro-chae** | อธรรม · Suro-chae | [suro-chae.md](../shenzhou/tianchao/suro-chae.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Zhong | **Pado** | อธรรม · Suro-chae | [pado.md](../shenzhou/tianchao/pado.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Sizhong | **Amcho** | อธรรม · Suro-chae | [amcho.md](../shenzhou/tianchao/amcho.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Suihua | **Heukryong-hang** | อธรรม · Heukryong-bang | [heukryong-hang.md](../shenzhou/tianchao/heukryong-hang.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Fenzhou | **Yeomjeon** | อธรรม · Heukryong-bang | [yeomjeon.md](../shenzhou/tianchao/yeomjeon.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Baoqing | **Hwanrak** | อธรรม · Haomun | [hwanrak.md](../shenzhou/tianchao/hwanrak.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Cheng | **Dojang** | อธรรม · Haomun | [dojang.md](../shenzhou/tianchao/dojang.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Changjiang | **Muyeong** | อธรรม · Salmak | [muyeong.md](../shenzhou/tianchao/muyeong.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kutchiate | **Cheonmamun** | พรรคมารสวรรค์ | [cheonmamun.md](../shenzhou/heukseong/cheonmamun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hiko | **Heukgok** | พรรคมารสวรรค์ | [heukgok.md](../shenzhou/heukseong/heukgok.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kazura | **Hyeolchon** | พรรคมารสวรรค์ | [hyeolchon.md](../shenzhou/heukseong/hyeolchon.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yongshun | **Ammun** | พรรคมารสวรรค์ | [ammun.md](../shenzhou/heukseong/ammun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Xiyao | **Gwisan** | พรรคมารสวรรค์ | [gwisan.md](../shenzhou/heukseong/gwisan.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tatsu | **Mangryang** | พรรคมารสวรรค์ | [mangryang.md](../shenzhou/heukseong/mangryang.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tatsu | **Bihyeol** | พรรคมารสวรรค์ | [bihyeol.md](../shenzhou/heukseong/bihyeol.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Shise | **Hwangcheon** | พรรคมารสวรรค์ | [hwangcheon.md](../shenzhou/heukseong/hwangcheon.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Howa | **Yeomma** | พรรคมารสวรรค์ | [yeomma.md](../shenzhou/heukseong/yeomma.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 
 ### ☀️ Suvarna — Deshret
 
@@ -455,3 +628,109 @@
 | Vault of Shumas | **Serpent Vault** | [vault-of-shumas.md](../../exandria/marquet/aggrad-mountains/vault-of-shumas.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Bay of Gifts | **Giftvik Bay** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | ทุ่งตอนเหนือ (ชนเผ่าแบบอินเดียนแดง) | **Windgrass Plains** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
+
+### ☀️ Suvarna — เมืองสุ่มจากแผนที่ Azgaar + เผ่าและตระกูล (2026-10-23)
+
+> ไม่มีใน CR — เมืองที่ Azgaar สุ่มเติม แบ่งเป็นเผ่าเล็กหลายเผ่าตามที่ผู้ใช้ขอ · ชื่อตามวัฒนธรรม: ไทย · นอร์ส (ไวกิ้ง/Ulfdal) · อังกฤษแบบบรรยายภาพ (ชนเผ่าทุ่ง) · ละติน/อียิปต์ (Deshret) · เยอรมัน (Ehrvarn) · สันสกฤต (Dandaka) · มายา (Chakan Wilds — ภูมิภาคใหม่) · ไวกิ้งเป็นอิสระทั้งหมด · Ehrvarn เป็นเผ่าเดียว · Quy (Pancha Sabha บนแผนที่) ย้ายให้ชนเผ่าทุ่ง · เพิ่มลง `novaris-burgs.json` แล้ว
+
+| ชื่อเดิม (Azgaar) | ชื่อ Novaris | เผ่า | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Dien | **Ko Lom** | ไทย · ชาวเล | [ko-lom.md](../suvarna/himmapan-wilds/ko-lom.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Thai | **Ko Hoi** | ไทย · ชาวเล | [ko-hoi.md](../suvarna/himmapan-wilds/ko-hoi.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gia Lo | **Laem Sai** | ไทย · ชาวเล | [laem-sai.md](../suvarna/himmapan-wilds/laem-sai.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Huong | **Pha Daeng** | ไทย · ชาวเล | [pha-daeng.md](../suvarna/himmapan-wilds/pha-daeng.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lac My Gon | **Bang Bua** | ไทย · หัวเมืองหลวง | [bang-bua.md](../suvarna/himmapan-wilds/bang-bua.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Vinh | **Nakhon Phet** | ไทย · หัวเมืองหลวง | [nakhon-phet.md](../suvarna/himmapan-wilds/nakhon-phet.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lac | **Khao Kaeo** | ไทย · หัวเมืองหลวง | [khao-kaeo.md](../suvarna/himmapan-wilds/khao-kaeo.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tam | **Kamphaeng Hin** | ไทย · หัวเมืองหลวง | [kamphaeng-hin.md](../suvarna/himmapan-wilds/kamphaeng-hin.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Nghi | **Doi Mok** | ไทย · ชาวดอย | [doi-mok.md](../suvarna/himmapan-wilds/doi-mok.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Thai | **Doi Fa** | ไทย · ชาวดอย | [doi-fa.md](../suvarna/himmapan-wilds/doi-fa.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Con Uyen | **Pang Ma** | ไทย · ชาวดอย | [pang-ma.md](../suvarna/himmapan-wilds/pang-ma.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Nga | **Wiang Chang** | ไทย · ล้านนา | [wiang-chang.md](../suvarna/himmapan-wilds/wiang-chang.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hung Yen | **Wiang Hin** | ไทย · ล้านนา | [wiang-hin.md](../suvarna/himmapan-wilds/wiang-hin.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ngoc Phong | **Wiang Kham** | ไทย · ล้านนา | [wiang-kham.md](../suvarna/himmapan-wilds/wiang-kham.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Vinh | **Mae Pha** | ไทย · ล้านนา | [mae-pha.md](../suvarna/himmapan-wilds/mae-pha.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Thuan Minh | **Ban Tung** | ไทย · ล้านนา | [ban-tung.md](../suvarna/himmapan-wilds/ban-tung.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Quy | **Many Fires** | ทุ่ง · เผ่าม้าลม | [many-fires.md](../suvarna/jarnfell/many-fires.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Vicrem | **Red Hoof** | ทุ่ง · เผ่าม้าลม | [red-hoof.md](../suvarna/jarnfell/red-hoof.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Cantia | **Thunder Butte** | ทุ่ง · เผ่าผาฟ้าร้อง | [thunder-butte.md](../suvarna/jarnfell/thunder-butte.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ludirgar | **Skarvik** | ไวกิ้ง · ตระกูลฟยอร์ด | [skarvik.md](../suvarna/jarnfell/skarvik.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Bringland | **Brimnes** | ไวกิ้ง · ตระกูลฟยอร์ด | [brimnes.md](../suvarna/jarnfell/brimnes.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Olskarko | **Hvalnes** | ไวกิ้ง · ตระกูลฟยอร์ด | [hvalnes.md](../suvarna/jarnfell/hvalnes.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Olfostad | **Jarnstad** | ไวกิ้ง · ตระกูลหุบเหล็ก | [jarnstad.md](../suvarna/jarnfell/jarnstad.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Stokkrores | **Smedheim** | ไวกิ้ง · ตระกูลหุบเหล็ก | [smedheim.md](../suvarna/jarnfell/smedheim.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Valmengen | **Malmdal** | ไวกิ้ง · ตระกูลหุบเหล็ก | [malmdal.md](../suvarna/jarnfell/malmdal.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Krysmyda | **Kolby** | ไวกิ้ง · ตระกูลหุบเหล็ก | [kolby.md](../suvarna/jarnfell/kolby.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Supipovund | **Gruvby** | ไวกิ้ง · ตระกูลหุบเหล็ก | [gruvby.md](../suvarna/jarnfell/gruvby.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Jungarlaks | **Ornfjell** | ไวกิ้ง · ตระกูลยอดเขา | [ornfjell.md](../suvarna/jarnfell/ornfjell.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lonsver | **Snjofjell** | ไวกิ้ง · ตระกูลยอดเขา | [snjofjell.md](../suvarna/jarnfell/snjofjell.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Oforstad | **Vardberg** | ไวกิ้ง · ตระกูลยอดเขา | [vardberg.md](../suvarna/jarnfell/vardberg.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hofjorme | **Solvik** | ไวกิ้ง · Giftvik | [solvik.md](../suvarna/jarnfell/solvik.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Blonland | **Kaupstad** | ไวกิ้ง · Giftvik | [kaupstad.md](../suvarna/jarnfell/kaupstad.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Agosloboduri | **Ulfhall** | Ulfdal · ตระกูลหมาป่า | [ulfhall.md](../suvarna/ulfdal/ulfhall.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Sabergrery | **Bjornstad** | Ulfdal · ตระกูลหมี | [bjornstad.md](../suvarna/ulfdal/bjornstad.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Marcurum | **Castra Solis** | Imperium Solis · ลีเจียน | [castra-solis.md](../suvarna/deshret/castra-solis.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Murain | **Heshet** | เผ่าเร่ร่อนทะเลทราย | [heshet.md](../suvarna/deshret/heshet.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Nauclea | **Hafenburg** | Ehrvarn | [hafenburg.md](../suvarna/ehrvarn-highlands/hafenburg.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Pyremearis | **Westwacht** | Ehrvarn | [westwacht.md](../suvarna/ehrvarn-highlands/westwacht.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gorganais | **Ostwacht** | Ehrvarn | [ostwacht.md](../suvarna/ehrvarn-highlands/ostwacht.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Methos | **Kampfburg** | Ehrvarn | [kampfburg.md](../suvarna/ehrvarn-highlands/kampfburg.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Aimesialy | **Lehrberg** | Ehrvarn | [lehrberg.md](../suvarna/ehrvarn-highlands/lehrberg.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Amphidamna | **Hammerstein** | Ehrvarn | [hammerstein.md](../suvarna/ehrvarn-highlands/hammerstein.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Troyriara | **Schildberg** | Ehrvarn | [schildberg.md](../suvarna/ehrvarn-highlands/schildberg.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Cleolicea | **Ahnenhall** | Ehrvarn | [ahnenhall.md](../suvarna/ehrvarn-highlands/ahnenhall.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Braukeliona | **Adlerhorst** | Ehrvarn | [adlerhorst.md](../suvarna/ehrvarn-highlands/adlerhorst.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Vathelapo | **Strandfeste** | Ehrvarn | [strandfeste.md](../suvarna/ehrvarn-highlands/strandfeste.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Gourma | **Kornau** | Ehrvarn | [kornau.md](../suvarna/ehrvarn-highlands/kornau.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Pulurganama | **Simhagarh** | อินเดีย · Kshatra | [simhagarh.md](../suvarna/dandaka/simhagarh.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ronkoni | **Marupura** | อินเดีย · Kshatra | [marupura.md](../suvarna/dandaka/marupura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Garadi | **Dhulika** | อินเดีย · Kshatra | [dhulika.md](../suvarna/dandaka/dhulika.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Chibenkole | **Ushtra** | อินเดีย · Kshatra | [ushtra.md](../suvarna/dandaka/ushtra.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kontakalki | **Rishikula** | อินเดีย · อาศรมฤๅษี | [rishikula.md](../suvarna/dandaka/rishikula.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tekleshtara | **Tapovana** | อินเดีย · อาศรมฤๅษี | [tapovana.md](../suvarna/dandaka/tapovana.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kudchnapur | **Meghagiri** | อินเดีย · อาศรมฤๅษี | [meghagiri.md](../suvarna/dandaka/meghagiri.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Sidenapur | **Shantivana** | อินเดีย · อาศรมฤๅษี | [shantivana.md](../suvarna/dandaka/shantivana.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Afzal | **Maunagiri** | อินเดีย · อาศรมฤๅษี | [maunagiri.md](../suvarna/dandaka/maunagiri.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hombevaga | **Granthapura** | อินเดีย · นครบริวาร Jyotipura | [granthapura.md](../suvarna/dandaka/granthapura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kolikopal | **Dipika** | อินเดีย · นครบริวาร Jyotipura | [dipika.md](../suvarna/dandaka/dipika.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lakshna | **Padmaghat** | อินเดีย · นครบริวาร Jyotipura | [padmaghat.md](../suvarna/dandaka/padmaghat.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Mulgundrago | **Nilaghat** | อินเดีย · นครบริวาร Jyotipura | [nilaghat.md](../suvarna/dandaka/nilaghat.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kahalgaumbe | **Shikhara** | อินเดีย · นครบริวาร Jyotipura | [shikhara.md](../suvarna/dandaka/shikhara.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Linghatraya | **Somagiri** | อินเดีย · นครบริวาร Jyotipura | [somagiri.md](../suvarna/dandaka/somagiri.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Armatkal | **Velapura** | อินเดีย · นครบริวาร Jyotipura | [velapura.md](../suvarna/dandaka/velapura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Tekagani | **Ratnakara** | อินเดีย · Samudra | [ratnakara.md](../suvarna/dandaka/ratnakara.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Jaramanara | **Tarangapura** | อินเดีย · Samudra | [tarangapura.md](../suvarna/dandaka/tarangapura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hosangama | **Shankhapura** | อินเดีย · Samudra | [shankhapura.md](../suvarna/dandaka/shankhapura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Chikhansur | **Mukta** | อินเดีย · Samudra | [mukta.md](../suvarna/dandaka/mukta.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yegal | **Pravala** | อินเดีย · Samudra | [pravala.md](../suvarna/dandaka/pravala.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Yelki | **Nadipura** | อินเดีย · Samudra | [nadipura.md](../suvarna/dandaka/nadipura.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hunkodi | **Ketaki** | อินเดีย · Samudra | [ketaki.md](../suvarna/dandaka/ketaki.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kalani | **Kadali** | อินเดีย · Samudra | [kadali.md](../suvarna/dandaka/kadali.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Surali | **Setu** | อินเดีย · Samudra | [setu.md](../suvarna/dandaka/setu.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kimobo | **Balamkin** | มายา · Balam | [balamkin.md](../suvarna/chakan-wilds/balamkin.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Karahu | **Tunbalam** | มายา · Balam | [tunbalam.md](../suvarna/chakan-wilds/tunbalam.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Ilisioka | **Chakmuul** | มายา · Balam | [chakmuul.md](../suvarna/chakan-wilds/chakmuul.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Empalonga | **Bekhal** | มายา · Balam | [bekhal.md](../suvarna/chakan-wilds/bekhal.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Paldo | **Saktun** | มายา · Balam | [saktun.md](../suvarna/chakan-wilds/saktun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Hiri | **Kejha** | มายา · Balam | [kejha.md](../suvarna/chakan-wilds/kejha.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Naninyan | **Ekmul** | มายา · Balam | [ekmul.md](../suvarna/chakan-wilds/ekmul.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Mpandiaro | **Yaxkin** | มายา · Balam | [yaxkin.md](../suvarna/chakan-wilds/yaxkin.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lwentebwo | **Oxtun** | มายา · Balam | [oxtun.md](../suvarna/chakan-wilds/oxtun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Mbazangu | **Kaanmul** | มายา · Kaan | [kaanmul.md](../suvarna/chakan-wilds/kaanmul.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Motiligo | **Kantun** | มายา · Kaan | [kantun.md](../suvarna/chakan-wilds/kantun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Nkoroga | **Ikal** | มายา · Kaan | [ikal.md](../suvarna/chakan-wilds/ikal.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Balaboko | **Hatun** | มายา · Kaan | [hatun.md](../suvarna/chakan-wilds/hatun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Paldo | **Sakha** | มายา · Kaan | [sakha.md](../suvarna/chakan-wilds/sakha.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Lonsimbe | **Uhmal** | มายา · Kaan | [uhmal.md](../suvarna/chakan-wilds/uhmal.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Embuli | **Ekchah** | มายา · Kaan | [ekchah.md](../suvarna/chakan-wilds/ekchah.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kigobirit | **Kukmul** | มายา · Kuk | [kukmul.md](../suvarna/chakan-wilds/kukmul.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Kisahamu | **Moha** | มายา · Kuk | [moha.md](../suvarna/chakan-wilds/moha.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Mayunko | **Chaktun** | มายา · Kuk | [chaktun.md](../suvarna/chakan-wilds/chaktun.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Sonsakaun | **Sakbe** | มายา · Kuk | [sakbe.md](../suvarna/chakan-wilds/sakbe.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Doya | **Ixkab** | มายา · Kuk | [ixkab.md](../suvarna/chakan-wilds/ixkab.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Zanga | **Hakan** | มายา · Ha | [hakan.md](../suvarna/chakan-wilds/hakan.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Alirisin | **Tsonot** | มายา · Ha | [tsonot.md](../suvarna/chakan-wilds/tsonot.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Morutema | **Nohha** | มายา · Ha | [nohha.md](../suvarna/chakan-wilds/nohha.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Handase | **Chakha** | มายา · Ha | [chakha.md](../suvarna/chakan-wilds/chakha.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Arisason | **Ikpet** | มายา · Ha | [ikpet.md](../suvarna/chakan-wilds/ikpet.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+| Njombabu | **Kuchil** | มายา · Ha | [kuchil.md](../suvarna/chakan-wilds/kuchil.md) | ✅ | ✅ | ✅ ร่าง | ✅ |

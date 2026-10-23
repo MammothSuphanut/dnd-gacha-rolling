@@ -175,25 +175,25 @@
   "coast": true
  },
  {
-  "name": "Fortuna",
+  "name": "Fortuna (S01)",
   "x": 842.2,
   "y": 474.4,
   "population": 1500
  },
  {
-  "name": "Midgate",
+  "name": "Midgate (S02)",
   "x": 891.1,
   "y": 431.1,
   "population": 1000
  },
  {
-  "name": "Port Noir",
+  "name": "Port Noir (S03)",
   "x": 955.6,
   "y": 516.7,
   "population": 800
  },
  {
-  "name": "Calmwater",
+  "name": "Calmwater (S14)",
   "x": 986.7,
   "y": 431.1,
   "population": 120
@@ -205,19 +205,19 @@
   "population": 150
  },
  {
-  "name": "Cliffsteps",
+  "name": "Cliffsteps (S07)",
   "x": 733.3,
   "y": 441.1,
   "population": 90
  },
  {
-  "name": "Goldfields",
+  "name": "Goldfields (S13)",
   "x": 955.6,
   "y": 425.6,
   "population": 60
  },
  {
-  "name": "Hillmarket",
+  "name": "Hillmarket (S15)",
   "x": 888.9,
   "y": 388.9,
   "population": 40
@@ -247,25 +247,25 @@
   "population": 20
  },
  {
-  "name": "Steelspire",
+  "name": "Steelspire (S10)",
   "x": 807.8,
   "y": 711.1,
   "population": 80
  },
  {
-  "name": "Redwing",
+  "name": "Redwing (S08)",
   "x": 866.7,
   "y": 711.1,
   "population": 100
  },
  {
-  "name": "Forgehold",
+  "name": "Forgehold (S09)",
   "x": 911.1,
   "y": 726.7,
   "population": 70
  },
  {
-  "name": "Ashgate",
+  "name": "Ashgate (S11)",
   "x": 933.3,
   "y": 680.0,
   "population": 60
@@ -721,19 +721,19 @@
   "population": 0.05
  },
  {
-  "name": "Brookfoot",
+  "name": "Brookfoot (S38)",
   "x": 724.23,
   "y": 440.01,
   "population": 1.5
  },
  {
-  "name": "Goldbluff",
+  "name": "Goldbluff (S19)",
   "x": 806.1,
   "y": 308.6,
   "population": 6
  },
  {
-  "name": "Gloomvale",
+  "name": "Gloomvale (S54)",
   "x": 877.77,
   "y": 424.07,
   "population": 0.9
@@ -745,19 +745,19 @@
   "population": 1
  },
  {
-  "name": "Bluebasin",
+  "name": "Bluebasin (S12)",
   "x": 874.9,
   "y": 501.85,
   "population": 60
  },
  {
-  "name": "Redrock Mines",
+  "name": "Redrock Mines (S18)",
   "x": 869.24,
   "y": 437.36,
   "population": 8
  },
  {
-  "name": "Silver Junction",
+  "name": "Silver Junction (S21)",
   "x": 840.37,
   "y": 455.77,
   "population": 3
@@ -769,7 +769,7 @@
   "population": 0.05
  },
  {
-  "name": "Mirror Lake",
+  "name": "Mirror Lake (S17)",
   "x": 979.62,
   "y": 376.22,
   "population": 15
@@ -799,7 +799,7 @@
   "population": 4
  },
  {
-  "name": "Mushmire",
+  "name": "Mushmire (S63)",
   "x": 881.24,
   "y": 564.84,
   "population": 0.7
@@ -835,7 +835,7 @@
   "population": 0.05
  },
  {
-  "name": "Glade Hollow",
+  "name": "Glade Hollow (S16)",
   "x": 802.66,
   "y": 627.78,
   "population": 20
@@ -853,7 +853,7 @@
   "population": 0.05
  },
  {
-  "name": "Fernlake",
+  "name": "Fernlake (S20)",
   "x": 851.61,
   "y": 601.35,
   "population": 5
@@ -953,5 +953,1514 @@
   "x": 430.05,
   "y": 252.8,
   "population": 3
+ },
+ {
+  "name": "Birchgate",
+  "x": 1391.4,
+  "y": 324.1,
+  "population": 2.925
+ },
+ {
+  "name": "Smeltwick",
+  "x": 1454.9,
+  "y": 369.1,
+  "population": 4.128
+ },
+ {
+  "name": "Westerhold",
+  "x": 1249,
+  "y": 350.9,
+  "population": 2.327
+ },
+ {
+  "name": "Highmantle",
+  "x": 1309.9,
+  "y": 359.8,
+  "population": 2.729
+ },
+ {
+  "name": "Lowmantle",
+  "x": 1308.9,
+  "y": 358,
+  "population": 2.012
+ },
+ {
+  "name": "Millrace",
+  "x": 1311.8,
+  "y": 360.6,
+  "population": 0.36
+ },
+ {
+  "name": "Thistledown",
+  "x": 1292.7,
+  "y": 362.5,
+  "population": 0.31
+ },
+ {
+  "name": "Cragwatch",
+  "x": 1305.8,
+  "y": 494.9,
+  "population": 2.861
+ },
+ {
+  "name": "Fernhollow",
+  "x": 1395.5,
+  "y": 502.6,
+  "population": 0.272
+ },
+ {
+  "name": "Westreach",
+  "x": 1173.5,
+  "y": 403.4,
+  "population": 3.36
+ },
+ {
+  "name": "Saltgate",
+  "x": 1079.3,
+  "y": 320.3,
+  "population": 0.76,
+  "coast": true
+ },
+ {
+  "name": "Brinehaven",
+  "x": 1145.7,
+  "y": 387.7,
+  "population": 1.876
+ },
+ {
+  "name": "Stonecairn",
+  "x": 1148.8,
+  "y": 393.1,
+  "population": 2.031
+ },
+ {
+  "name": "Coppergate",
+  "x": 1210.3,
+  "y": 400.4,
+  "population": 2.128
+ },
+ {
+  "name": "Dunmere",
+  "x": 1081.1,
+  "y": 352.6,
+  "population": 2.116
+ },
+ {
+  "name": "Tarnwick",
+  "x": 1104.7,
+  "y": 349.4,
+  "population": 1.04
+ },
+ {
+  "name": "Brackenfield",
+  "x": 1119.7,
+  "y": 368.4,
+  "population": 0.556
+ },
+ {
+  "name": "Pietralba",
+  "x": 1133.4,
+  "y": 396.9,
+  "population": 0.245
+ },
+ {
+  "name": "Thornhold",
+  "x": 1437,
+  "y": 589.2,
+  "population": 2.544
+ },
+ {
+  "name": "Ferrymoor",
+  "x": 1452,
+  "y": 569.1,
+  "population": 1.111
+ },
+ {
+  "name": "Ashmeadow",
+  "x": 1470.3,
+  "y": 584.1,
+  "population": 0.204
+ },
+ {
+  "name": "Mosswick",
+  "x": 1421.2,
+  "y": 588.5,
+  "population": 0.541
+ },
+ {
+  "name": "Timberton",
+  "x": 1433.5,
+  "y": 602.6,
+  "population": 2.249
+ },
+ {
+  "name": "Fernbrook",
+  "x": 1437.7,
+  "y": 614.8,
+  "population": 0.237
+ },
+ {
+  "name": "Hillcrest",
+  "x": 1439.9,
+  "y": 622.1,
+  "population": 2.107
+ },
+ {
+  "name": "Fernridge",
+  "x": 1442.3,
+  "y": 620.4,
+  "population": 0.286
+ },
+ {
+  "name": "Lockwood",
+  "x": 1411.8,
+  "y": 629.4,
+  "population": 0.421
+ },
+ {
+  "name": "Stillwater",
+  "x": 1410.4,
+  "y": 631.6,
+  "population": 0.353
+ },
+ {
+  "name": "Marshgate",
+  "x": 1410.4,
+  "y": 633.5,
+  "population": 1.05
+ },
+ {
+  "name": "Reedmoor",
+  "x": 1410.2,
+  "y": 638.7,
+  "population": 0.21
+ },
+ {
+  "name": "Starmere",
+  "x": 1567.4,
+  "y": 497.4,
+  "population": 1.785
+ },
+ {
+  "name": "Dimcrest",
+  "x": 1548,
+  "y": 503,
+  "population": 0.835
+ },
+ {
+  "name": "Lanternhold",
+  "x": 1581.6,
+  "y": 527.1,
+  "population": 0.328
+ },
+ {
+  "name": "Marisola",
+  "x": 1305,
+  "y": 583.4,
+  "population": 1.046,
+  "coast": true
+ },
+ {
+  "name": "Cantano",
+  "x": 1180.9,
+  "y": 443.6,
+  "population": 2.122
+ },
+ {
+  "name": "Dynamo Falls (S22)",
+  "x": 839.5,
+  "y": 421.7,
+  "population": 3.293
+ },
+ {
+  "name": "Testfire (S23)",
+  "x": 1012.2,
+  "y": 357.7,
+  "population": 2.77
+ },
+ {
+  "name": "Bulwark Harbor (S24)",
+  "x": 780,
+  "y": 345.6,
+  "population": 3.008,
+  "coast": true
+ },
+ {
+  "name": "Railhead (S25)",
+  "x": 789.2,
+  "y": 337.2,
+  "population": 2.956
+ },
+ {
+  "name": "Arsenal Bay (S26)",
+  "x": 993.5,
+  "y": 355.3,
+  "population": 2.449,
+  "coast": true
+ },
+ {
+  "name": "Freeharbor (S27)",
+  "x": 941.2,
+  "y": 400.7,
+  "population": 1.781,
+  "coast": true
+ },
+ {
+  "name": "Vaultwick (S28)",
+  "x": 988.8,
+  "y": 495.3,
+  "population": 2.282
+ },
+ {
+  "name": "Glasshaven (S29)",
+  "x": 778.6,
+  "y": 432.9,
+  "population": 1.417
+ },
+ {
+  "name": "Quietstone (S30)",
+  "x": 818.6,
+  "y": 339.8,
+  "population": 1.999
+ },
+ {
+  "name": "Drillfield (S31)",
+  "x": 826.1,
+  "y": 520.3,
+  "population": 1.534
+ },
+ {
+  "name": "Blackreef (S32)",
+  "x": 983.3,
+  "y": 541.1,
+  "population": 2.112
+ },
+ {
+  "name": "Tidehold (S33)",
+  "x": 958.2,
+  "y": 559.3,
+  "population": 2.1
+ },
+ {
+  "name": "Neon Wharf (S34)",
+  "x": 1017.3,
+  "y": 439.3,
+  "population": 2.096,
+  "coast": true
+ },
+ {
+  "name": "Anvilgate (S35)",
+  "x": 804.9,
+  "y": 401.1,
+  "population": 1.83
+ },
+ {
+  "name": "Lootfall (S36)",
+  "x": 837.7,
+  "y": 694.4,
+  "population": 4.244
+ },
+ {
+  "name": "Shellcase (S37)",
+  "x": 1013.8,
+  "y": 354.2,
+  "population": 1.673
+ },
+ {
+  "name": "Skylift (S39)",
+  "x": 880,
+  "y": 362.9,
+  "population": 1.643
+ },
+ {
+  "name": "Purewell (S40)",
+  "x": 782.8,
+  "y": 441.6,
+  "population": 1.126
+ },
+ {
+  "name": "Kingpin Heights (S41)",
+  "x": 964,
+  "y": 474.5,
+  "population": 1.68
+ },
+ {
+  "name": "Freightyard (S42)",
+  "x": 907.3,
+  "y": 422.5,
+  "population": 1.151
+ },
+ {
+  "name": "Coldspring (S43)",
+  "x": 855.8,
+  "y": 374.8,
+  "population": 1.411
+ },
+ {
+  "name": "Cablecross (S44)",
+  "x": 882.2,
+  "y": 360.8,
+  "population": 1.402
+ },
+ {
+  "name": "Veinlight (S45)",
+  "x": 836.4,
+  "y": 395.4,
+  "population": 1.32
+ },
+ {
+  "name": "Pinehold (S46)",
+  "x": 857.4,
+  "y": 376.7,
+  "population": 1.315
+ },
+ {
+  "name": "Regatta (S47)",
+  "x": 909.3,
+  "y": 495.2,
+  "population": 1.002
+ },
+ {
+  "name": "Rampart (S48)",
+  "x": 853.2,
+  "y": 369,
+  "population": 1.228
+ },
+ {
+  "name": "Stormwatch (S49)",
+  "x": 901.2,
+  "y": 532.3,
+  "population": 2.178
+ },
+ {
+  "name": "Quarryside (S50)",
+  "x": 799.9,
+  "y": 343.5,
+  "population": 1.177
+ },
+ {
+  "name": "Gravemere (S51)",
+  "x": 994.8,
+  "y": 390.9,
+  "population": 0.995
+ },
+ {
+  "name": "Silkford (S52)",
+  "x": 975.7,
+  "y": 486.6,
+  "population": 1.071
+ },
+ {
+  "name": "Boltcrest (S53)",
+  "x": 907.8,
+  "y": 542.8,
+  "population": 1.664
+ },
+ {
+  "name": "Cinderyard (S55)",
+  "x": 830.1,
+  "y": 404.8,
+  "population": 0.824
+ },
+ {
+  "name": "Ravenmoor (S56)",
+  "x": 1007.5,
+  "y": 370,
+  "population": 0.671
+ },
+ {
+  "name": "Candlewick (S57)",
+  "x": 1011.7,
+  "y": 364.7,
+  "population": 0.657
+ },
+ {
+  "name": "Hollowbell (S58)",
+  "x": 985,
+  "y": 379.9,
+  "population": 0.637
+ },
+ {
+  "name": "Glimmerhold (S59)",
+  "x": 789.7,
+  "y": 543.6,
+  "population": 1.016
+ },
+ {
+  "name": "Scraptown (S60)",
+  "x": 941,
+  "y": 534.5,
+  "population": 0.603
+ },
+ {
+  "name": "Wardline (S61)",
+  "x": 826.5,
+  "y": 539.6,
+  "population": 0.806
+ },
+ {
+  "name": "Summit Station (S62)",
+  "x": 819.3,
+  "y": 354.4,
+  "population": 0.427
+ },
+ {
+  "name": "Driftwood (S64)",
+  "x": 1021,
+  "y": 461.5,
+  "population": 0.391,
+  "coast": true
+ },
+ {
+  "name": "Echo Hollow (S65)",
+  "x": 847.7,
+  "y": 346.4,
+  "population": 0.302
+ },
+ {
+  "name": "Wreckers' Cove (S66)",
+  "x": 972.3,
+  "y": 554.5,
+  "population": 0.316,
+  "coast": true
+ },
+ {
+  "name": "Lamplight Point (S67)",
+  "x": 936.7,
+  "y": 370.9,
+  "population": 0.242
+ },
+ {
+  "name": "Last Stop (S68)",
+  "x": 820.6,
+  "y": 521.1,
+  "population": 0.204
+ },
+ {
+  "name": "Lowtide (S69)",
+  "x": 1030.4,
+  "y": 464.6,
+  "population": 0.246
+ },
+ {
+  "name": "Claimstake (S70)",
+  "x": 842.9,
+  "y": 699,
+  "population": 0.302
+ },
+ {
+  "name": "Briarwatch (S71)",
+  "x": 807.5,
+  "y": 536.3,
+  "population": 0.295
+ },
+ {
+  "name": "Highrod (S72)",
+  "x": 909.9,
+  "y": 546.3,
+  "population": 0.252
+ },
+ {
+  "name": "Asahi",
+  "x": 579.4,
+  "y": 309,
+  "population": 2.708
+ },
+ {
+  "name": "Akebono",
+  "x": 552.9,
+  "y": 309.6,
+  "population": 2.26
+ },
+ {
+  "name": "Hinode",
+  "x": 560.9,
+  "y": 296,
+  "population": 1.529
+ },
+ {
+  "name": "Terumura",
+  "x": 577.2,
+  "y": 315.2,
+  "population": 0.289
+ },
+ {
+  "name": "Kagaribi",
+  "x": 584.4,
+  "y": 301.8,
+  "population": 0.27
+ },
+ {
+  "name": "Asagiri",
+  "x": 571.8,
+  "y": 295.8,
+  "population": 0.3
+ },
+ {
+  "name": "Karasuma",
+  "x": 597,
+  "y": 345.3,
+  "population": 1.698
+ },
+ {
+  "name": "Kurozuka",
+  "x": 596.6,
+  "y": 343.6,
+  "population": 1.255
+ },
+ {
+  "name": "Tamayobi",
+  "x": 562.6,
+  "y": 324.5,
+  "population": 1.992
+ },
+ {
+  "name": "Usugure",
+  "x": 550.2,
+  "y": 332.7,
+  "population": 0.847
+ },
+ {
+  "name": "Kagemori",
+  "x": 549.2,
+  "y": 369.2,
+  "population": 0.261
+ },
+ {
+  "name": "Hoshimi",
+  "x": 532.5,
+  "y": 294.7,
+  "population": 2.338
+ },
+ {
+  "name": "Tenmon",
+  "x": 536.2,
+  "y": 289.7,
+  "population": 0.746
+ },
+ {
+  "name": "Shikimura",
+  "x": 530.1,
+  "y": 284.3,
+  "population": 1.504
+ },
+ {
+  "name": "Fudamachi",
+  "x": 527.7,
+  "y": 298,
+  "population": 0.343
+ },
+ {
+  "name": "Yuimori",
+  "x": 515.5,
+  "y": 295.3,
+  "population": 0.892
+ },
+ {
+  "name": "Hokuto",
+  "x": 515.5,
+  "y": 298.8,
+  "population": 0.278
+ },
+ {
+  "name": "Kitsunebi",
+  "x": 508.4,
+  "y": 306.7,
+  "population": 1.593
+ },
+ {
+  "name": "Kitaboshi",
+  "x": 530.3,
+  "y": 235,
+  "population": 0.205
+ },
+ {
+  "name": "Mineiri",
+  "x": 474.6,
+  "y": 313.3,
+  "population": 2.834
+ },
+ {
+  "name": "Otemon",
+  "x": 218.6,
+  "y": 440.1,
+  "population": 3.002
+ },
+ {
+  "name": "Hatamoto",
+  "x": 198.5,
+  "y": 437.6,
+  "population": 0.477
+ },
+ {
+  "name": "Kurayashiki",
+  "x": 211.2,
+  "y": 431,
+  "population": 0.358
+ },
+ {
+  "name": "Akagane",
+  "x": 235.5,
+  "y": 369.4,
+  "population": 2.383
+ },
+ {
+  "name": "Kanayama",
+  "x": 248.3,
+  "y": 355.3,
+  "population": 1.94
+ },
+ {
+  "name": "Tetsumura",
+  "x": 264.3,
+  "y": 360.6,
+  "population": 0.442
+ },
+ {
+  "name": "Hagane",
+  "x": 256.8,
+  "y": 373.5,
+  "population": 1.012
+ },
+ {
+  "name": "Sumiyaki",
+  "x": 261.8,
+  "y": 373.7,
+  "population": 0.275
+ },
+ {
+  "name": "Funado",
+  "x": 217.7,
+  "y": 324.5,
+  "population": 1.096,
+  "coast": true
+ },
+ {
+  "name": "Kawabata",
+  "x": 217.8,
+  "y": 396.4,
+  "population": 0.233
+ },
+ {
+  "name": "Kurobane",
+  "x": 240.4,
+  "y": 430.2,
+  "population": 0.954
+ },
+ {
+  "name": "Tengudani",
+  "x": 214.2,
+  "y": 439.8,
+  "population": 0.19
+ },
+ {
+  "name": "Kumokage",
+  "x": 200.9,
+  "y": 462.1,
+  "population": 0.259
+ },
+ {
+  "name": "Yamikaze",
+  "x": 262.1,
+  "y": 332.2,
+  "population": 0.529
+ },
+ {
+  "name": "Mumei",
+  "x": 259.7,
+  "y": 432.5,
+  "population": 0.963
+ },
+ {
+  "name": "Sasurai",
+  "x": 252.5,
+  "y": 438,
+  "population": 0.6
+ },
+ {
+  "name": "Namgung-seong",
+  "x": 220.6,
+  "y": 622.1,
+  "population": 1.518
+ },
+ {
+  "name": "Moyong-jang",
+  "x": 170.4,
+  "y": 590.3,
+  "population": 2.233
+ },
+ {
+  "name": "Jegal-gok",
+  "x": 205,
+  "y": 613.1,
+  "population": 1.665
+ },
+ {
+  "name": "Hwangbo-seong",
+  "x": 302.5,
+  "y": 545.4,
+  "population": 1.637
+ },
+ {
+  "name": "Dangmun",
+  "x": 133.9,
+  "y": 574.3,
+  "population": 0.779,
+  "coast": true
+ },
+ {
+  "name": "Mudang-san",
+  "x": 188.2,
+  "y": 617.6,
+  "population": 2.329
+ },
+ {
+  "name": "Ami-san",
+  "x": 183.4,
+  "y": 669.6,
+  "population": 1.392
+ },
+ {
+  "name": "Cheongseong-san",
+  "x": 172.1,
+  "y": 633.1,
+  "population": 1.213,
+  "coast": true
+ },
+ {
+  "name": "Jeomchang-san",
+  "x": 181.6,
+  "y": 690.8,
+  "population": 0.266
+ },
+ {
+  "name": "Gaebang-chon",
+  "x": 289.8,
+  "y": 638.8,
+  "population": 2.149
+ },
+ {
+  "name": "Huzhou",
+  "x": 269.9,
+  "y": 660,
+  "population": 0.822
+ },
+ {
+  "name": "Pingyang",
+  "x": 286.3,
+  "y": 649.5,
+  "population": 1.477
+ },
+ {
+  "name": "Nongnim-chae",
+  "x": 173.5,
+  "y": 597,
+  "population": 0.282
+ },
+ {
+  "name": "Suro-chae",
+  "x": 349.6,
+  "y": 627.8,
+  "population": 0.923
+ },
+ {
+  "name": "Pado",
+  "x": 351.4,
+  "y": 646.4,
+  "population": 1.27
+ },
+ {
+  "name": "Amcho",
+  "x": 347.8,
+  "y": 665.4,
+  "population": 0.404,
+  "coast": true
+ },
+ {
+  "name": "Heukryong-hang",
+  "x": 330.5,
+  "y": 647.2,
+  "population": 2.963,
+  "coast": true
+ },
+ {
+  "name": "Yeomjeon",
+  "x": 331.3,
+  "y": 653,
+  "population": 2.766,
+  "coast": true
+ },
+ {
+  "name": "Hwanrak",
+  "x": 352.2,
+  "y": 649.3,
+  "population": 0.685
+ },
+ {
+  "name": "Dojang",
+  "x": 340.6,
+  "y": 657.4,
+  "population": 1.12
+ },
+ {
+  "name": "Muyeong",
+  "x": 316.6,
+  "y": 649.6,
+  "population": 0.771,
+  "coast": true
+ },
+ {
+  "name": "Cheonmamun",
+  "x": 184.5,
+  "y": 498.2,
+  "population": 3.024
+ },
+ {
+  "name": "Heukgok",
+  "x": 185.4,
+  "y": 506.7,
+  "population": 3.217
+ },
+ {
+  "name": "Hyeolchon",
+  "x": 217.7,
+  "y": 492,
+  "population": 0.261
+ },
+ {
+  "name": "Ammun",
+  "x": 205.6,
+  "y": 510.5,
+  "population": 0.354
+ },
+ {
+  "name": "Gwisan",
+  "x": 181.6,
+  "y": 523.1,
+  "population": 1.769
+ },
+ {
+  "name": "Mangryang",
+  "x": 167,
+  "y": 486.3,
+  "population": 0.259
+ },
+ {
+  "name": "Bihyeol",
+  "x": 161.9,
+  "y": 498,
+  "population": 0.972
+ },
+ {
+  "name": "Hwangcheon",
+  "x": 145.3,
+  "y": 505.5,
+  "population": 0.244
+ },
+ {
+  "name": "Yeomma",
+  "x": 136.3,
+  "y": 516.6,
+  "population": 1.496
+ },
+ {
+  "name": "Ko Lom",
+  "x": 127.1,
+  "y": 824.7,
+  "population": 0.864
+ },
+ {
+  "name": "Ko Hoi",
+  "x": 120.5,
+  "y": 837.4,
+  "population": 0.816
+ },
+ {
+  "name": "Laem Sai",
+  "x": 111,
+  "y": 868.7,
+  "population": 1.532
+ },
+ {
+  "name": "Pha Daeng",
+  "x": 116,
+  "y": 896.1,
+  "population": 0.26
+ },
+ {
+  "name": "Bang Bua",
+  "x": 143.2,
+  "y": 911.9,
+  "population": 1.073
+ },
+ {
+  "name": "Nakhon Phet",
+  "x": 143.6,
+  "y": 921.6,
+  "population": 1.701
+ },
+ {
+  "name": "Khao Kaeo",
+  "x": 147.8,
+  "y": 945.3,
+  "population": 1.296
+ },
+ {
+  "name": "Kamphaeng Hin",
+  "x": 208,
+  "y": 947.2,
+  "population": 2.979
+ },
+ {
+  "name": "Doi Mok",
+  "x": 173.8,
+  "y": 968.7,
+  "population": 1.877
+ },
+ {
+  "name": "Doi Fa",
+  "x": 174.6,
+  "y": 965.4,
+  "population": 1.356
+ },
+ {
+  "name": "Pang Ma",
+  "x": 175.9,
+  "y": 969.1,
+  "population": 0.793
+ },
+ {
+  "name": "Wiang Chang",
+  "x": 247,
+  "y": 915.7,
+  "population": 1.594
+ },
+ {
+  "name": "Wiang Hin",
+  "x": 262.9,
+  "y": 941.6,
+  "population": 0.341
+ },
+ {
+  "name": "Wiang Kham",
+  "x": 265.8,
+  "y": 955.6,
+  "population": 0.874
+ },
+ {
+  "name": "Mae Pha",
+  "x": 238.7,
+  "y": 965.6,
+  "population": 0.397
+ },
+ {
+  "name": "Ban Tung",
+  "x": 261.7,
+  "y": 946.4,
+  "population": 0.304
+ },
+ {
+  "name": "Many Fires",
+  "x": 266.2,
+  "y": 835.9,
+  "population": 1.588
+ },
+ {
+  "name": "Red Hoof",
+  "x": 305.3,
+  "y": 828.5,
+  "population": 0.579
+ },
+ {
+  "name": "Thunder Butte",
+  "x": 312.7,
+  "y": 845.6,
+  "population": 0.207
+ },
+ {
+  "name": "Skarvik",
+  "x": 345.2,
+  "y": 794.6,
+  "population": 2.525,
+  "coast": true
+ },
+ {
+  "name": "Brimnes",
+  "x": 351.7,
+  "y": 784.4,
+  "population": 2.198,
+  "coast": true
+ },
+ {
+  "name": "Hvalnes",
+  "x": 349.4,
+  "y": 808,
+  "population": 2.243
+ },
+ {
+  "name": "Jarnstad",
+  "x": 359.8,
+  "y": 808.1,
+  "population": 1.775
+ },
+ {
+  "name": "Smedheim",
+  "x": 360.6,
+  "y": 810.3,
+  "population": 1.643
+ },
+ {
+  "name": "Malmdal",
+  "x": 364.1,
+  "y": 804.7,
+  "population": 1.125
+ },
+ {
+  "name": "Kolby",
+  "x": 359.3,
+  "y": 806.4,
+  "population": 0.359
+ },
+ {
+  "name": "Gruvby",
+  "x": 353.2,
+  "y": 821.8,
+  "population": 0.254
+ },
+ {
+  "name": "Ornfjell",
+  "x": 375.7,
+  "y": 803.1,
+  "population": 0.752
+ },
+ {
+  "name": "Snjofjell",
+  "x": 375.8,
+  "y": 787.5,
+  "population": 1.051
+ },
+ {
+  "name": "Vardberg",
+  "x": 387.5,
+  "y": 805.7,
+  "population": 1.351
+ },
+ {
+  "name": "Solvik",
+  "x": 462.2,
+  "y": 814.3,
+  "population": 1.141
+ },
+ {
+  "name": "Kaupstad",
+  "x": 460.6,
+  "y": 820.5,
+  "population": 1.388
+ },
+ {
+  "name": "Ulfhall",
+  "x": 325.9,
+  "y": 981.8,
+  "population": 3.233
+ },
+ {
+  "name": "Bjornstad",
+  "x": 410.7,
+  "y": 1010.8,
+  "population": 1.446
+ },
+ {
+  "name": "Castra Solis",
+  "x": 497.9,
+  "y": 856.6,
+  "population": 0.761
+ },
+ {
+  "name": "Heshet",
+  "x": 524.6,
+  "y": 924.4,
+  "population": 1.617
+ },
+ {
+  "name": "Hafenburg",
+  "x": 216.7,
+  "y": 1165.7,
+  "population": 3.742,
+  "coast": true
+ },
+ {
+  "name": "Westwacht",
+  "x": 241.5,
+  "y": 1115.7,
+  "population": 2.281
+ },
+ {
+  "name": "Ostwacht",
+  "x": 324.6,
+  "y": 1111.9,
+  "population": 2.639
+ },
+ {
+  "name": "Kampfburg",
+  "x": 307.9,
+  "y": 1117.4,
+  "population": 2.519
+ },
+ {
+  "name": "Lehrberg",
+  "x": 267.1,
+  "y": 1140.7,
+  "population": 1.114
+ },
+ {
+  "name": "Hammerstein",
+  "x": 256.9,
+  "y": 1164.2,
+  "population": 2.144
+ },
+ {
+  "name": "Schildberg",
+  "x": 308.7,
+  "y": 1157.6,
+  "population": 1.489
+ },
+ {
+  "name": "Ahnenhall",
+  "x": 294.6,
+  "y": 1155.6,
+  "population": 0.856
+ },
+ {
+  "name": "Adlerhorst",
+  "x": 250.2,
+  "y": 1085,
+  "population": 0.195
+ },
+ {
+  "name": "Strandfeste",
+  "x": 324.5,
+  "y": 1170,
+  "population": 0.913
+ },
+ {
+  "name": "Kornau",
+  "x": 321,
+  "y": 1161,
+  "population": 1.611
+ },
+ {
+  "name": "Simhagarh",
+  "x": 446.8,
+  "y": 1004.8,
+  "population": 1.814
+ },
+ {
+  "name": "Marupura",
+  "x": 442.7,
+  "y": 998.8,
+  "population": 2.223
+ },
+ {
+  "name": "Dhulika",
+  "x": 439.8,
+  "y": 1009.2,
+  "population": 0.585
+ },
+ {
+  "name": "Ushtra",
+  "x": 501.6,
+  "y": 1012.8,
+  "population": 0.665
+ },
+ {
+  "name": "Rishikula",
+  "x": 392.3,
+  "y": 1086.4,
+  "population": 2.921
+ },
+ {
+  "name": "Tapovana",
+  "x": 408.8,
+  "y": 1049.9,
+  "population": 2.502
+ },
+ {
+  "name": "Meghagiri",
+  "x": 389.7,
+  "y": 1074.1,
+  "population": 0.276
+ },
+ {
+  "name": "Shantivana",
+  "x": 407,
+  "y": 1052.3,
+  "population": 0.288
+ },
+ {
+  "name": "Maunagiri",
+  "x": 402.3,
+  "y": 1116.7,
+  "population": 1.36
+ },
+ {
+  "name": "Granthapura",
+  "x": 499.9,
+  "y": 1055.8,
+  "population": 2.319
+ },
+ {
+  "name": "Dipika",
+  "x": 450,
+  "y": 1060.7,
+  "population": 1.469
+ },
+ {
+  "name": "Padmaghat",
+  "x": 456,
+  "y": 1086.1,
+  "population": 0.26
+ },
+ {
+  "name": "Nilaghat",
+  "x": 489.3,
+  "y": 1043.4,
+  "population": 0.351
+ },
+ {
+  "name": "Shikhara",
+  "x": 518.7,
+  "y": 1049.4,
+  "population": 0.226
+ },
+ {
+  "name": "Somagiri",
+  "x": 536.2,
+  "y": 1069.1,
+  "population": 0.274
+ },
+ {
+  "name": "Velapura",
+  "x": 445.8,
+  "y": 1143.8,
+  "population": 4.603,
+  "coast": true
+ },
+ {
+  "name": "Ratnakara",
+  "x": 629.1,
+  "y": 1039.4,
+  "population": 3.969
+ },
+ {
+  "name": "Tarangapura",
+  "x": 642.3,
+  "y": 1041.3,
+  "population": 1.838
+ },
+ {
+  "name": "Shankhapura",
+  "x": 628.3,
+  "y": 1036.5,
+  "population": 1.647
+ },
+ {
+  "name": "Mukta",
+  "x": 604.4,
+  "y": 1042.2,
+  "population": 1.823
+ },
+ {
+  "name": "Pravala",
+  "x": 625.6,
+  "y": 1063.1,
+  "population": 1.475
+ },
+ {
+  "name": "Nadipura",
+  "x": 578.3,
+  "y": 1058.2,
+  "population": 1.795
+ },
+ {
+  "name": "Ketaki",
+  "x": 573.9,
+  "y": 1062.4,
+  "population": 0.295
+ },
+ {
+  "name": "Kadali",
+  "x": 572.2,
+  "y": 1067,
+  "population": 0.266
+ },
+ {
+  "name": "Setu",
+  "x": 625.5,
+  "y": 1018.4,
+  "population": 0.338,
+  "coast": true
+ },
+ {
+  "name": "Balamkin",
+  "x": 498.1,
+  "y": 1135.4,
+  "population": 2.967
+ },
+ {
+  "name": "Tunbalam",
+  "x": 494.9,
+  "y": 1124.5,
+  "population": 1.356
+ },
+ {
+  "name": "Chakmuul",
+  "x": 464.7,
+  "y": 1133.1,
+  "population": 1.201
+ },
+ {
+  "name": "Bekhal",
+  "x": 465.6,
+  "y": 1105,
+  "population": 0.67
+ },
+ {
+  "name": "Saktun",
+  "x": 484.5,
+  "y": 1149.2,
+  "population": 2.3
+ },
+ {
+  "name": "Kejha",
+  "x": 491.7,
+  "y": 1138.3,
+  "population": 0.277
+ },
+ {
+  "name": "Ekmul",
+  "x": 496.4,
+  "y": 1139.5,
+  "population": 0.295
+ },
+ {
+  "name": "Yaxkin",
+  "x": 498.3,
+  "y": 1146.2,
+  "population": 1.467
+ },
+ {
+  "name": "Oxtun",
+  "x": 503,
+  "y": 1150.8,
+  "population": 0.905
+ },
+ {
+  "name": "Kaanmul",
+  "x": 517,
+  "y": 1092.5,
+  "population": 0.646
+ },
+ {
+  "name": "Kantun",
+  "x": 518.2,
+  "y": 1124.9,
+  "population": 1.193
+ },
+ {
+  "name": "Ikal",
+  "x": 524.7,
+  "y": 1133.3,
+  "population": 0.387
+ },
+ {
+  "name": "Hatun",
+  "x": 509.4,
+  "y": 1132.3,
+  "population": 0.343
+ },
+ {
+  "name": "Sakha",
+  "x": 511.2,
+  "y": 1148.9,
+  "population": 0.284
+ },
+ {
+  "name": "Uhmal",
+  "x": 520.8,
+  "y": 1107.3,
+  "population": 0.341
+ },
+ {
+  "name": "Ekchah",
+  "x": 529.6,
+  "y": 1123.8,
+  "population": 0.593
+ },
+ {
+  "name": "Kukmul",
+  "x": 579.8,
+  "y": 1118.9,
+  "population": 3.25
+ },
+ {
+  "name": "Moha",
+  "x": 573.3,
+  "y": 1113,
+  "population": 1.709
+ },
+ {
+  "name": "Chaktun",
+  "x": 585.6,
+  "y": 1118.7,
+  "population": 1.708
+ },
+ {
+  "name": "Sakbe",
+  "x": 581.8,
+  "y": 1119.3,
+  "population": 0.284
+ },
+ {
+  "name": "Ixkab",
+  "x": 562,
+  "y": 1134.2,
+  "population": 0.496
+ },
+ {
+  "name": "Hakan",
+  "x": 620.2,
+  "y": 1075,
+  "population": 3.005
+ },
+ {
+  "name": "Tsonot",
+  "x": 611.2,
+  "y": 1070.5,
+  "population": 0.451
+ },
+ {
+  "name": "Nohha",
+  "x": 605.5,
+  "y": 1108.5,
+  "population": 2.094
+ },
+ {
+  "name": "Chakha",
+  "x": 612.6,
+  "y": 1134.5,
+  "population": 1.957,
+  "coast": true
+ },
+ {
+  "name": "Ikpet",
+  "x": 636.1,
+  "y": 1108.7,
+  "population": 2.579
+ },
+ {
+  "name": "Kuchil",
+  "x": 604.6,
+  "y": 1124.1,
+  "population": 1.484
  }
 ]

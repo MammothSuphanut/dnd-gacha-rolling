@@ -1,4 +1,4 @@
-# Sunspire
+# Sector 05: Sunspire
 
 > origin: [`exandria/tal-dorei/parchwood-timberlands/whitestone.md`](../../../exandria/tal-dorei/parchwood-timberlands/whitestone.md) · ชื่อ CR: Whitestone
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครใหญ่ · เมืองหลวงของรัฐ |
+| Sector | **05** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Gloamwood · บนภูเขาตะวันออกเฉียงเหนือสุดของทวีป |
 | สังกัด | **Voxaria** — รัฐ Gloamwood |
 | ระดับอารยธรรม | 5 |

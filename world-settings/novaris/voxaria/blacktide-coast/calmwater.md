@@ -1,4 +1,4 @@
-# Calmwater
+# Sector 14: Calmwater
 
 > origin: [`exandria/tal-dorei/lucidian-coast/drynna.md`](../../../exandria/tal-dorei/lucidian-coast/drynna.md) · ชื่อ CR: Drynna
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมือง |
+| Sector | **14** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Blacktide Coast · จุดที่แม่น้ำบรรจบทะเลสาบ |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

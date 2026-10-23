@@ -1,4 +1,4 @@
-# Cliffsteps
+# Sector 07: Cliffsteps
 
 > origin: [`exandria/tal-dorei/bladeshimmer-shoreline/shalesteps.md`](../../../exandria/tal-dorei/bladeshimmer-shoreline/shalesteps.md) · ชื่อ CR: Shalesteps
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองบริวาร (กลุ่มชุมชนบนเขา) |
+| Sector | **07** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Crownshore · ภูเขาชายฝั่งทางตะวันตกเฉียงเหนือของ Lumen City |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

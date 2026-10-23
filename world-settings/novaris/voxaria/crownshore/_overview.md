@@ -43,6 +43,7 @@
 | มหานคร | [Lumen City](lumen-city.md) |
 | เมืองบริวารและชุมชน | [Cliffsteps](cliffsteps.md) · [Brookfoot](brookfoot.md) · [Firsthaven](firsthaven.md) |
 | ทหารและเขตอันตราย | [Greenwatch](greenwatch.md) · [Feral Isle](feral-isle.md) |
+| เมืองเพิ่ม 2026-10-23 ✨ | [Glasshaven](glasshaven.md) (S29) · [Purewell](purewell.md) (S40) |
 
 ## ผู้คนและวัฒนธรรม
 

@@ -37,6 +37,11 @@
 | เมืองท่า | [Giftvik](giftvik.md) |
 | ดันเจี้ยน | [Serpent Vault](serpent-vault.md) |
 | ภูมิประเทศ | [Giftvik Bay](giftvik-bay.md) · [Windgrass Plains](windgrass-plains.md) |
+| ✨ Giftvik | [Solvik](solvik.md) · [Kaupstad](kaupstad.md) |
+| ✨ ตระกูลฟยอร์ด | [Skarvik](skarvik.md) · [Brimnes](brimnes.md) · [Hvalnes](hvalnes.md) |
+| ✨ ตระกูลหุบเหล็ก | [Jarnstad](jarnstad.md) · [Smedheim](smedheim.md) · [Malmdal](malmdal.md) · [Kolby](kolby.md) · [Gruvby](gruvby.md) |
+| ✨ ตระกูลยอดเขา | [Ornfjell](ornfjell.md) · [Snjofjell](snjofjell.md) · [Vardberg](vardberg.md) |
+| ✨ ชนเผ่าแห่งทุ่ง | [Many Fires](many-fires.md) · [Red Hoof](red-hoof.md) · [Thunder Butte](thunder-butte.md) |
 
 ## ผู้คนและวัฒนธรรม
 
@@ -47,3 +52,4 @@
 - **Voxaria**: คู่ค้าหลักของ Giftvik
 - **Tha Samut**: คู่แข่งการค้าฝั่งเหนือ
 - **ชนเผ่าแห่งทุ่ง**: ค้าหนังสัตว์กับ Giftvik · ไม่ยอมรับอำนาจของรัฐใด
+- **Imperium Solis** ✨: แผนที่ของจักรวรรดิวาด Jarnfell ทั้งหมดเป็นของ Solaria — ตระกูลจาร์ลทั้งสี่ไม่เคยจ่ายภาษีสักเหรียญ และเคยเผาเรือของลีเจียนที่มาเก็บภาษีเมื่อ ~720 PD · ทุกวันนี้ทั้งสองฝ่ายค้าขายกันแบบไม่พูดเรื่องนี้

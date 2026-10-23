@@ -33,6 +33,7 @@
 |---|---|
 | ชุมชน | [Frostfang Tribe](frostfang-tribe.md) · [Mushmire](mushmire.md) · [Deepshade](deepshade.md) |
 | สถานที่พิเศษ | [Twinfire Gorge](twinfire-gorge.md) · [Riddle Cavern](riddle-cavern.md) |
+| เมืองเพิ่ม 2026-10-23 ✨ | [Stormwatch](stormwatch.md) (S49) · [Boltcrest](boltcrest.md) (S53) · [Glimmerhold](glimmerhold.md) (S59) · [Wardline](wardline.md) (S61) · [Briarwatch](briarwatch.md) (S71) · [Highrod](highrod.md) (S72) |
 
 ## ผู้คนและวัฒนธรรม
 

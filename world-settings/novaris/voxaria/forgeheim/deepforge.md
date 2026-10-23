@@ -1,4 +1,4 @@
-# Deepforge
+# Sector 06: Deepforge
 
 > origin: [`exandria/tal-dorei/cliffkeep-mountains/kraghammer.md`](../../../exandria/tal-dorei/cliffkeep-mountains/kraghammer.md) · ชื่อ CR: Kraghammer
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครใหญ่ใต้ดิน · เมืองหลวงของรัฐ |
+| Sector | **06** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Forgeheim · ในภูเขาทางเหนือของทวีป |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 5 |

@@ -1,4 +1,4 @@
-# Fortuna
+# Sector 01: Fortuna
 
 > origin: [`exandria/tal-dorei/dividing-plains/kymal.md`](../../../exandria/tal-dorei/dividing-plains/kymal.md) · ชื่อ CR: Kymal
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | มหานคร · เมืองคาสิโน |
+| Sector | **01** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Heartland · กลางค่อนตะวันออก ใต้ Ironback Ridge |
 | สังกัด | **Voxaria** — รัฐ Heartland |
 | ระดับอารยธรรม | 5 |

@@ -36,6 +36,7 @@
 | นครทหาร | [Ehrenburg](ehrvarn-conquest.md) |
 | เมือง | [Grenfeld](grenfeld.md) |
 | ภูมิประเทศ | [Helm Peaks](helm-peaks.md) |
+| ✨ เมืองของเผ่า | [Hafenburg](hafenburg.md) · [Westwacht](westwacht.md) · [Ostwacht](ostwacht.md) · [Kampfburg](kampfburg.md) · [Lehrberg](lehrberg.md) · [Hammerstein](hammerstein.md) · [Schildberg](schildberg.md) · [Ahnenhall](ahnenhall.md) · [Adlerhorst](adlerhorst.md) · [Strandfeste](strandfeste.md) · [Kornau](kornau.md) |
 
 ## ผู้คนและวัฒนธรรม
 

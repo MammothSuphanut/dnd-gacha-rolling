@@ -1,4 +1,4 @@
-# Glade Hollow
+# Sector 16: Glade Hollow
 
 > origin: [`exandria/tal-dorei/rifenmist-peninsula/byroden.md`](../../../exandria/tal-dorei/rifenmist-peninsula/byroden.md) · ชื่อ CR: Byroden
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองฐานฮันเตอร์ |
+| Sector | **16** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → ขอบเขต Gate Riftwild · ใกล้บ่อน้ำในป่า |
 | สังกัด | **Voxaria** (นอกเขต Gate) |
 | ระดับอารยธรรม | 5 |

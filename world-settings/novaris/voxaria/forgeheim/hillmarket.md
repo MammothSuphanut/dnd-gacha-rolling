@@ -1,4 +1,4 @@
-# Hillmarket
+# Sector 15: Hillmarket
 
 > origin: [`exandria/tal-dorei/cliffkeep-mountains/jorenn-village.md`](../../../exandria/tal-dorei/cliffkeep-mountains/jorenn-village.md) · ชื่อ CR: Jorenn Village
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมือง |
+| Sector | **15** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Forgeheim · ฝั่งตะวันออกของภูเขา ใกล้เนินเขามืด |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

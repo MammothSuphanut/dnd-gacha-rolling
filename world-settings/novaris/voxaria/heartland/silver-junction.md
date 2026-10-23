@@ -1,4 +1,4 @@
-# Silver Junction
+# Sector 21: Silver Junction
 
 > origin: [`exandria/tal-dorei/dividing-plains/silvercut-crossroads.md`](../../../exandria/tal-dorei/dividing-plains/silvercut-crossroads.md) · ชื่อ CR: Silvercut Crossroads
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ทางแยกต่างระดับ · จุดพักรถ |
+| Sector | **21** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Heartland · ทางเหนือของ Fortuna |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

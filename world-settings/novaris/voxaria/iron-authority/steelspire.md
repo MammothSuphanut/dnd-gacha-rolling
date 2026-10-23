@@ -1,4 +1,4 @@
-# Steelspire
+# Sector 10: Steelspire
 
 > origin: [`exandria/tal-dorei/rifenmist-peninsula/hdar-fye.md`](../../../exandria/tal-dorei/rifenmist-peninsula/hdar-fye.md) · ชื่อ CR: Hdar-Fye
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นคร |
+| Sector | **10** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Iron Authority · ที่ราบสูงภูเขาไฟที่ไร้พืช |
 | สังกัด | **Voxaria** — รัฐ Iron Authority |
 | ระดับอารยธรรม | 5 |

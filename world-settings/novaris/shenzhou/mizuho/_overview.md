@@ -28,6 +28,8 @@
 | ✨ ยุค PD | แคว้นซามูไรรบกันเอง |
 | ✨ ~600 PD | เอลฟ์แห่ง Shiraki ยอมรับโชกุน |
 | ✨ ~700 PD | ตระกูลโชกุนปัจจุบันรวมแคว้นได้ |
+| ✨ ~760 PD | ตั้งหมู่บ้านนินจา Kumokage ให้เฝ้าเขตมารที่ชายแดนใต้ |
+| ✨ ~880 PD | สงครามสามแคว้น — Akagane, Mizuchi, Kurobane รบกันสองปี โชกุนยุติด้วยการแต่งงานข้ามตระกูล · ซามูไรที่แพ้กลายเป็นโรนิน |
 
 ## สถานที่ในภูมิภาค
 
@@ -35,7 +37,13 @@
 |---|---|
 | เมืองหลวง | [Shirasagi](shirasagi.md) |
 | เมืองท่า | [Shiraki](shiraki.md) |
-| ภูเขา | [Tengu Range](tengu-range.md) |
+| ภูเขา | [Tengu Range](../unspecified/tengu-range.md) |
+| ✨ เมืองของโชกุน | [Otemon](otemon.md) · [Hatamoto](hatamoto.md) · [Kurayashiki](kurayashiki.md) |
+| ✨ แคว้น Akagane | [Akagane](akagane.md) · [Kanayama](kanayama.md) · [Tetsumura](tetsumura.md) · [Hagane](hagane.md) · [Sumiyaki](sumiyaki.md) |
+| ✨ แคว้น Mizuchi | [Funado](funado.md) · [Kawabata](kawabata.md) |
+| ✨ แคว้น Kurobane | [Kurobane](kurobane.md) · [Tengudani](tengudani.md) |
+| ✨ หมู่บ้านนินจา | [Kumokage](kumokage.md) · [Yamikaze](yamikaze.md) |
+| ✨ หมู่บ้านโรนิน | [Mumei](mumei.md) · [Sasurai](sasurai.md) |
 
 ## ผู้คนและวัฒนธรรม
 
@@ -46,4 +54,5 @@
 
 - **Amanokado**: เคารพนครเทพ · ไม่ให้นักบวชยุ่งการเมือง
 - **Tianchao**: คู่แข่งข้ามทะเล · ✨ เคยรบกันหลายครั้ง
+- **เขตมาร** ✨: เมืองสี่แห่งของพรรคมารอยู่ในแผ่นดินที่ Akitsu อ้างสิทธิ์ (Mangryang · Bihyeol · Hwangcheon · Yeomma) — โชกุนแสร้งไม่เห็น แต่ให้ Kumokage นับทุกคนที่เข้าออก
 - ✨ ข่าวลือว่าราชินีเฟย์ที่ไม่มีใครเคยเห็นซ่อนอยู่ในแดนนี้

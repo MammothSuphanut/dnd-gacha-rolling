@@ -27,6 +27,7 @@
 |---|---|
 | นครใหญ่ | [Sunspire](sunspire.md) |
 | ยักษ์ | [Giantkeep](giantkeep.md) |
+| เมืองเพิ่ม 2026-10-23 ✨ | [Testfire](testfire.md) (S23) · [Arsenal Bay](arsenal-bay.md) (S26) · [Shellcase](shellcase.md) (S37) · [Gravemere](gravemere.md) (S51) · [Ravenmoor](ravenmoor.md) (S56) · [Candlewick](candlewick.md) (S57) · [Hollowbell](hollowbell.md) (S58) · [Lamplight Point](lamplight-point.md) (S67) |
 
 ## ผู้คนและวัฒนธรรม
 

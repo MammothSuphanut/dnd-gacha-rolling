@@ -1,4 +1,4 @@
-# Bluebasin
+# Sector 12: Bluebasin
 
 > origin: [`exandria/tal-dorei/dividing-plains/foramere-basin.md`](../../../exandria/tal-dorei/dividing-plains/foramere-basin.md) · ชื่อ CR: Foramere Basin
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | กลุ่มเมืองริมทะเลสาบ |
+| Sector | **12** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Heartland · แอ่งทะเลสาบระหว่าง Midgate กับ Fortuna |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

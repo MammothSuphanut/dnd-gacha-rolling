@@ -47,7 +47,7 @@ Dynasty ไม่ใช่ประเทศของ drow ล้วน — ก�
 
 | กลุ่ม | สถานที่ |
 |---|---|
-| Lumenvael Dynasty | [Lumora](lumenvael-dynasty.md) · [Asterin](asterin.md) · [Pitwatch](pitwatch.md) · [Deepcut Camp](deepcut-camp.md) · [Netmouth](netmouth.md) |
+| Lumenvael Dynasty | [Lumora](lumenvael-dynasty.md) · [Asterin](asterin.md) · [Pitwatch](pitwatch.md) · [Deepcut Camp](deepcut-camp.md) · [Netmouth](netmouth.md) · [Starmere](starmere.md) · [Dimcrest](dimcrest.md) · [Lanternhold](lanternhold.md) |
 | ชุมชนอิสระ | [Sevenfold](sevenfold.md) · [Shellwander](shellwander.md) · [Scalehaven](scalehaven.md) · [Leafhome](leafhome.md) · [Grimhollow](grimhollow.md) · [Wraithwall](wraithwall.md) · [Gorgrim](gorgrim.md) |
 | ซากและประวัติศาสตร์ | [Ruins of Drakara](ruins-of-drakara.md) · [Drakara](drakara.md) |
 | ภูมิประเทศ | [Mistmoor](mistmoor.md) · [Thornwaste](thornwaste.md) · [Greengorge](greengorge.md) · [Twilight Range](twilight-range.md) · [Lotuswood](lotuswood.md) |

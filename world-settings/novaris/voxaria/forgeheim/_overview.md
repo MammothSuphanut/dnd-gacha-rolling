@@ -44,6 +44,7 @@
 | นครและเมือง | [Deepforge](deepforge.md) · [Hillmarket](hillmarket.md) · [Goldbluff](goldbluff.md) · [Gloomvale](gloomvale.md) |
 | ชุมชนพิเศษ | [Elvenpeak](elvenpeak.md) · [Earthward](earthward.md) |
 | ทหารและภูมิประเทศ | [Fort Granite](fort-granite.md) · [Giantstep Pass](giantstep-pass.md) |
+| เมืองเพิ่ม 2026-10-23 ✨ | [Dynamo Falls](dynamo-falls.md) (S22) · [Bulwark Harbor](bulwark-harbor.md) (S24) · [Railhead](railhead.md) (S25) · [Quietstone](quietstone.md) (S30) · [Anvilgate](anvilgate.md) (S35) · [Skylift](skylift.md) (S39) · [Coldspring](coldspring.md) (S43) · [Cablecross](cablecross.md) (S44) · [Veinlight](veinlight.md) (S45) · [Pinehold](pinehold.md) (S46) · [Rampart](rampart.md) (S48) · [Quarryside](quarryside.md) (S50) · [Cinderyard](cinderyard.md) (S55) · [Summit Station](summit-station.md) (S62) · [Echo Hollow](echo-hollow.md) (S65) |
 
 ## ผู้คนและวัฒนธรรม
 

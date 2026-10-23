@@ -1,4 +1,4 @@
-# Mirror Lake
+# Sector 17: Mirror Lake
 
 > origin: [`exandria/tal-dorei/lucidian-coast/mooren-lake.md`](../../../exandria/tal-dorei/lucidian-coast/mooren-lake.md) · ชื่อ CR: Mooren Lake
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองริมแม่น้ำ |
+| Sector | **17** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Blacktide Coast · ริมแม่น้ำจากภูเขาตะวันออก ใกล้ป่า Gloamwood |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

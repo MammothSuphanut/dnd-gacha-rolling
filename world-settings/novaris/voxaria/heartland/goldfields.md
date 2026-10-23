@@ -1,4 +1,4 @@
-# Goldfields
+# Sector 13: Goldfields
 
 > origin: [`exandria/tal-dorei/dividing-plains/turst-fields.md`](../../../exandria/tal-dorei/dividing-plains/turst-fields.md) · ชื่อ CR: Turst Fields
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองเกษตรอุตสาหกรรม |
+| Sector | **13** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Heartland · ตะวันออกเฉียงเหนือของ Midgate ใต้ป่า Gloamwood |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

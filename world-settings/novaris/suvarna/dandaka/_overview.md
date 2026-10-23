@@ -37,6 +37,11 @@
 | ชุมชน | [Matsya](matsya.md) · [Kamala](kamala.md) · [Vrika](vrika.md) · [Vayupura](vayupura.md) (นครลอยฟ้า — แวะผ่าน) |
 | ศักดิ์สิทธิ์ | [Ugra Mandir](ugra-mandir.md) |
 | ภูมิประเทศ | [Lake Prabha](lake-prabha.md) · [Tamasa Jungle](tamasa-jungle.md) |
+| ✨ Kshatra | [Simhagarh](simhagarh.md) · [Marupura](marupura.md) · [Dhulika](dhulika.md) · [Ushtra](ushtra.md) |
+| ✨ อาศรมฤๅษี | [Rishikula](rishikula.md) · [Tapovana](tapovana.md) · [Meghagiri](meghagiri.md) · [Shantivana](shantivana.md) · [Maunagiri](maunagiri.md) |
+| ✨ นครบริวาร Jyotipura | [Granthapura](granthapura.md) · [Dipika](dipika.md) · [Padmaghat](padmaghat.md) · [Nilaghat](nilaghat.md) · [Shikhara](shikhara.md) · [Somagiri](somagiri.md) · [Velapura](velapura.md) |
+| ✨ Samudra | [Ratnakara](ratnakara.md) · [Tarangapura](tarangapura.md) · [Shankhapura](shankhapura.md) · [Mukta](mukta.md) · [Pravala](pravala.md) · [Nadipura](nadipura.md) · [Ketaki](ketaki.md) · [Kadali](kadali.md) · [Setu](setu.md) |
+| ✨ เพื่อนบ้านทางใต้ | [Chakan Wilds](../chakan-wilds/_overview.md) — เผ่ามายา |
 
 ## ผู้คนและวัฒนธรรม
 
@@ -47,3 +52,4 @@
 - **สถาบัน Lumen City**: ญาติที่แยกทางกัน
 - **Cobalt Soul**: คัดลอกคัมภีร์
 - ✨ ขุดค้นซากอารยธรรมเร่ร่อนที่ Nomad's Dig ใน Ulfdal
+- **Chakan Wilds (เผ่ามายา)** ✨: แผนที่ของ Jyoti Marga วาดป่าใต้ทั้งผืนเป็นของตัวเอง แต่เผ่ามายาทั้งสี่ไม่เคยยอมรับ · อาณาจักร Samudra ค้าขายและปะทะกับเผ่า Ha ตลอดชายแดนตะวันออก

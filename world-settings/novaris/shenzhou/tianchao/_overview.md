@@ -33,7 +33,11 @@
 
 | กลุ่ม | สถานที่ |
 |---|---|
-| เมืองหลวง | [Yujing](yujing.md) |
+| เมืองหลวง | **Yujing** |
+| ✨ เมืองของราชสำนัก | [Huzhou](huzhou.md) · [Pingyang](pingyang.md) |
+| ✨ ฝ่ายธรรมะ — สำนัก | [Mudang-san](mudang-san.md) · [Ami-san](ami-san.md) · [Cheongseong-san](cheongseong-san.md) · [Jeomchang-san](jeomchang-san.md) · [Gaebang-chon](gaebang-chon.md) |
+| ✨ ฝ่ายธรรมะ — ตระกูลใหญ่ | [Namgung-seong](namgung-seong.md) · [Moyong-jang](moyong-jang.md) · [Jegal-gok](jegal-gok.md) · [Hwangbo-seong](hwangbo-seong.md) · [Dangmun](dangmun.md) |
+| ✨ ฝ่ายอธรรม | [Nongnim-chae](nongnim-chae.md) · [Suro-chae](suro-chae.md) · [Pado](pado.md) · [Amcho](amcho.md) · [Heukryong-hang](heukryong-hang.md) · [Yeomjeon](yeomjeon.md) · [Hwanrak](hwanrak.md) · [Dojang](dojang.md) · [Muyeong](muyeong.md) |
 
 ## ผู้คนและวัฒนธรรม
 
@@ -42,6 +46,7 @@
 
 ## การเมืองและความสัมพันธ์
 
-- **ยุทธภพ**: ไม่ยุ่งกัน — **องครักษ์เสื้อแพร**ของราชสำนักจับตาสำนักยุทธเงียบ ๆ
+- **ยุทธภพ**: ไม่ยุ่งกัน — **องครักษ์เสื้อแพร**ของราชสำนักจับตาสำนักยุทธเงียบ ๆ · ✨ เมืองของสำนักยุทธกว่ายี่สิบแห่งตั้งบนแผ่นดินที่ Tianchao อ้างสิทธิ์ ราชสำนักเก็บภาษีได้แค่จากเมืองที่ยอมจ่าย และปกครองเองจริงแค่ Huzhou กับ Pingyang
+- **เขตมาร** ✨: เมืองห้าแห่งของพรรคมารอยู่บนแผนที่ของ Tianchao (Cheonmamun · Heukgok · Hyeolchon · Ammun · Gwisan) — ไม่มีขุนนางคนไหนยอมไปเก็บภาษี
 - **Akitsu**: คู่แข่งข้ามทะเล
 - **ชนเผ่า Tsagaan Tal**: ศัตรูหลังกำแพง

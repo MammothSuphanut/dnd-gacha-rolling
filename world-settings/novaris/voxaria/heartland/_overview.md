@@ -44,6 +44,7 @@
 | มหานคร | [Midgate](midgate.md) · [Fortuna](fortuna.md) |
 | เมืองและชุมชน | [Bluebasin](bluebasin.md) · [Goldfields](goldfields.md) · [Redrock Mines](redrock-mines.md) · [Silver Junction](silver-junction.md) |
 | โบราณและอันตราย | [Ironback Ridge](ironback-ridge.md) · [Ivywood](ivywood.md) · [Sunbarrow](sunbarrow.md) · [Blackcrown Mountain](blackcrown-mountain.md) |
+| เมืองเพิ่ม 2026-10-23 ✨ | [Freeharbor](freeharbor.md) (S27) · [Drillfield](drillfield.md) (S31) · [Freightyard](freightyard.md) (S42) · [Regatta](regatta.md) (S47) · [Last Stop](last-stop.md) (S68) |
 
 ## ผู้คนและวัฒนธรรม
 

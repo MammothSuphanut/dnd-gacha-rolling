@@ -1,4 +1,4 @@
-# Port Noir
+# Sector 03: Port Noir
 
 > origin: [`exandria/tal-dorei/lucidian-coast/stilben.md`](../../../exandria/tal-dorei/lucidian-coast/stilben.md) · ชื่อ CR: Stilben
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครใหญ่ · เมืองท่า · เมืองหลวงของรัฐ |
+| Sector | **03** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Blacktide Coast · ชายฝั่งตะวันออกเฉียงใต้ ริมอ่าว ล้อมด้วยหนองน้ำ |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 |

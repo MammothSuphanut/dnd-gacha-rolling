@@ -32,8 +32,10 @@
 | ยุค PD ตอนต้น | Manfried วางรากฐานจักรวรรดิใหม่ |
 | ✨ 514 PD | ตั้ง Dwendalis เป็นเมืองหลวง |
 | ✨ ~760 PD | ผนวก Julous Dominion (Trivane) |
+| ✨ ~780 PD | ตั้งอาณานิคม **[Saltmarch](../costa-mosaica/saltmarch/_overview.md)** หลังชายฝั่ง Costa Secca — ฟื้นนาเกลือร้างของ Concord · Concord ยอมรับผ่าน **Salt Accord** (~792 PD) แลกสิทธิ์ค้าขายปลอดภาษีที่ Porta Ferro |
+| ✨ ~800 PD | รุกลงใต้จาก Porta Ferro เข้าป่า Selva Scura ตั้งอาณานิคม **[Green March](../costa-mosaica/green-march/_overview.md)** เพื่อไม้เนื้อแข็งและสมุนไพร |
 | ~820 PD | ทลายฐานของ The Myriad ที่ Rimeholt |
-| 835–836 PD | **War of Ash and Light** กับ Lumenvael — Ashguard แตก, Harvel ถูกเผา, Cogwick ถูกโจมตี, ทัพศัตรูถึงชานเมืองหลวง · Sarenrae ไกล่เกลี่ยจนพักรบ |
+| 835–836 PD | **War of Ash and Light** กับ Lumenvael — Ashguard แตก, Harvel ถูกเผา, Cogwick ถูกโจมตี, ทัพศัตรูถึงชานเมืองหลวง · ✨ Green March ถูกตัดขาดจากแผ่นดินแม่เกือบปี · Sarenrae ไกล่เกลี่ยจนพักรบ |
 | 836–935 PD | สงครามเย็น · การขุดซาก Aeor |
 
 ## ภูมิศาสตร์
@@ -44,14 +46,16 @@
 - **ตะวันตก**: **Cloudpeak Mountains** และเนินไอน้ำ **Steamhills** (ไวน์, ไหม)
 - **ตะวันออก**: **Silver Ridge** (เหมืองเงิน, โรงงาน Cogwick) และชายแดน Ödland
 - **ตะวันออกเฉียงใต้**: **Ashpeaks** ภูเขาสีเถ้าที่ซ่อน Hexvale
+- **อาณานิคมโพ้นแดน** ✨ (อยู่ในภูมิภาค Costa Mosaica): **Saltmarch** หลังชายฝั่ง Costa Secca ทางตะวันตก (เชื่อมแผ่นดินแม่ด้วยถนนจาก Westerhold และเรือ) · **Green March** ในป่า Selva Scura ใต้ด่าน Porta Ferro
 
 ## สถานที่ในภูมิภาค
 
 | กลุ่ม | สถานที่ |
 |---|---|
 | เมืองหลวงและนครใหญ่ | [Dwendalis](dwendalis.md) · [Trivane](trivane.md) · [Cogwick](cogwick.md) |
-| เมือง | [Kragmar](kragmar.md) · [Oreton](oreton.md) · [Northwatch](northwatch.md) · [Bladehold](bladehold.md) · [Goldwall](goldwall.md) · [Elandil](elandil.md) · [Stonepride](stonepride.md) · [Harvel](harvel.md) · [Vinehill](vinehill.md) · [Frosthaven](frosthaven.md) · [Hopsdale](hopsdale.md) · [Wheaton](wheaton.md) · [Tenton](tenton.md) · [Mirebrook](mirebrook.md) |
-| หมู่บ้าน/ชุมชนเล็ก | [Rimeholt](rimeholt.md) · [Logford](logford.md) · [Chiselby](chiselby.md) · [Rosedale](rosedale.md) · [Eaglecrest](eaglecrest.md) · [Amber Crossroads](amber-crossroads.md) · [Silverpit](silverpit.md) |
+| เมือง | [Kragmar](kragmar.md) · [Oreton](oreton.md) · [Northwatch](northwatch.md) · [Bladehold](bladehold.md) · [Goldwall](goldwall.md) · [Elandil](elandil.md) · [Stonepride](stonepride.md) · [Harvel](harvel.md) · [Vinehill](vinehill.md) · [Frosthaven](frosthaven.md) · [Hopsdale](hopsdale.md) · [Wheaton](wheaton.md) · [Tenton](tenton.md) · [Mirebrook](mirebrook.md) · [Birchgate](birchgate.md) · [Smeltwick](smeltwick.md) · [Westerhold](westerhold.md) · [Highmantle](highmantle.md) · [Lowmantle](lowmantle.md) · [Millrace](millrace.md) · [Cragwatch](cragwatch.md) |
+| หมู่บ้าน/ชุมชนเล็ก | [Rimeholt](rimeholt.md) · [Logford](logford.md) · [Chiselby](chiselby.md) · [Rosedale](rosedale.md) · [Eaglecrest](eaglecrest.md) · [Amber Crossroads](amber-crossroads.md) · [Silverpit](silverpit.md) · [Thistledown](thistledown.md) · [Fernhollow](fernhollow.md) |
+| อาณานิคม ✨ | [Saltmarch](../costa-mosaica/saltmarch/_overview.md) · [Green March](../costa-mosaica/green-march/_overview.md) (อยู่ในภูมิภาค Costa Mosaica) |
 | ทหาร | [Ashguard Garrison](ashguard-garrison.md) · [Rockguard Garrison](rockguard-garrison.md) · [Griffon Roost](griffon-roost.md) |
 | สถานที่พิเศษ | [Lethe Sanatorium](lethe-sanatorium.md) · [Shadowfall Ruins](shadowfall-ruins.md) · [Hexvale](hexvale.md) |
 | ภูมิประเทศ | [Broadfield](broadfield.md) · [Corevale](corevale.md) · [Pearlwood](pearlwood.md) · [Greyrock Mountains](greyrock-mountains.md) · [Cloudpeak Mountains](cloudpeak-mountains.md) · [Steamhills](steamhills.md) · [Silver Ridge](silver-ridge.md) · [Ashpeaks](ashpeaks.md) |
@@ -68,5 +72,5 @@
 
 - **Lumenvael Dynasty**: ศัตรูในสงครามเย็น
 - **Twinhold Diarchy**: คู่ค้าที่เป็นกลาง ขายของเก่า Aeor ให้ทุกฝ่าย
-- **Lagunara Concord**: คู่ค้าทางทะเล — ด่าน Porta Ferro คือพรมแดนทางใต้
+- **Lagunara Concord**: คู่ค้าทางทะเล — ด่าน Porta Ferro คือประตูลงใต้ · ✨ ยอมรับอาณานิคม Saltmarch ตาม Salt Accord แต่ไม่เคยยอมรับ Green March เป็นทางการ — ชายแดนป่ากับ Belmare จึงตึงเครียดกว่าชายแดนอื่น
 - **องค์กรในประเทศ**: Cerberus Assembly · Righteous Brand (กองทัพ) · The Volstrucker (นักฆ่าลับ) · Cobalt Soul (Cobalt Reserve ที่ Trivane)

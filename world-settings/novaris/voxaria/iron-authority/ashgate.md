@@ -1,4 +1,4 @@
-# Ashgate
+# Sector 11: Ashgate
 
 > origin: [`exandria/tal-dorei/rifenmist-peninsula/ortem-vellak.md`](../../../exandria/tal-dorei/rifenmist-peninsula/ortem-vellak.md) · ชื่อ CR: Ortem-Vellak
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครชายแดน |
+| Sector | **11** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Iron Authority · ตะวันออกสุดและเหนือสุดของรัฐ |
 | สังกัด | **Voxaria** — รัฐ Iron Authority |
 | ระดับอารยธรรม | 5 |

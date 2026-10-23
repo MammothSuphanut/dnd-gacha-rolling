@@ -63,6 +63,56 @@
 - **ตะวันตกเฉียงใต้**: ป่าเฟย์ The Verge
 - **ใต้สุด**: คาบสมุทร — Riftwild (เหนือ) และ Iron Authority (ใต้)
 
+## ระบบ Sector ✨
+
+> ข้อเสนอใหม่ 2026-10-23 — ทุก**เมือง**ของ Voxaria เป็นเขตปกครองที่มีเลข เรียกเต็มว่า **Sector 00: Lumen City** · บนแผนที่เขียน **Lumen City (S00)** · สถานที่ที่ไม่ใช่เมือง (ภูเขา ป่า เขต Gate ซาก) ใช้ชื่อปกติ
+
+- **Sector Charter (900 PD)** — สำนักทะเบียนของ Lumen City สำรวจ **ดัชนีอารยธรรม** ของทุกเมืองทั่วทวีป (ไฟฟ้า การคมนาคม การศึกษา รายได้ ความปลอดภัย และ "ความก้าวหน้า" ตามแบบที่ Erathis ชอบ) แล้วให้เลขตามลำดับ — **เลขน้อยคือเจริญกว่า** · Sector 00 คือเมืองหลวง
+- **เลขตายตัว** — กฎหมายกำหนดให้เลขไม่เปลี่ยนตลอดไป เลขจึงกลายเป็น**ศักดิ์ศรีประจำเมือง** เหมือนตระกูลขุนนาง เมืองที่เจริญขึ้นทีหลังยังติดเลขสูง ส่วนเมืองที่ตกต่ำลงยังภูมิใจกับเลขต่ำ — คนในเมืองเลขต่ำมองคนจากเลขสูงว่า "บ้านนอก" แม้ทุกวันนี้บางเมืองเลขสูงจะรวยกว่าแล้ว
+- **เลขใช้จริงในชีวิตประจำวัน** — ทะเบียนรถ รหัสไปรษณีย์ บัตรประชาชน ระดับงบประมาณจากรัฐบาลกลาง และ**สิทธิ์จัดสอบ Hero** (เฉพาะ Sector 00–15) · คนทั่วไปเรียกเมืองด้วยเลขบ่อยกว่าชื่อ เช่น "คนจากสาม" (Port Noir)
+- **เมืองที่ตั้งหลัง 900 PD** — ได้เลขต่อท้ายตามลำดับการจดทะเบียน ✨ ยังไม่มีเมืองใดได้รับเลขใหม่ตั้งแต่ Charter
+- **ที่ไม่มีเลข** — เขตปกครองพิเศษ (Elvenpeak · หมู่บ้าน Ashari Windward และ Earthward) · เมืองที่ไม่ขึ้นกับรัฐ (Deepshade · Syngorn) · ฐานทัพ (Fort Granite · Greenwatch · Faewatch) · ยักษ์และชนเผ่า (Giantkeep · Frostfang Tribe) · และ **Firsthaven** ที่ทางการถือว่าเป็นเมืองร้าง — ชาวสลัมเรียกตัวเองประชดว่า "Sector ไม่มีเลข"
+
+| Sector | เมือง | รัฐ | Sector | เมือง | รัฐ |
+|---|---|---|---|---|---|
+| **00** | [Lumen City](crownshore/lumen-city.md) | Crownshore | **37** | [Shellcase](gloamwood/shellcase.md) | Gloamwood |
+| **01** | [Fortuna](heartland/fortuna.md) | Heartland | **38** | [Brookfoot](crownshore/brookfoot.md) | Crownshore |
+| **02** | [Midgate](heartland/midgate.md) | Heartland | **39** | [Skylift](forgeheim/skylift.md) | Forgeheim |
+| **03** | [Port Noir](blacktide-coast/port-noir.md) | Blacktide Coast | **40** | [Purewell](crownshore/purewell.md) | Crownshore |
+| **04** | [Ironhelm](iron-authority/ironhelm.md) | Iron Authority | **41** | [Kingpin Heights](blacktide-coast/kingpin-heights.md) | Blacktide Coast |
+| **05** | [Sunspire](gloamwood/sunspire.md) | Gloamwood | **42** | [Freightyard](heartland/freightyard.md) | Heartland |
+| **06** | [Deepforge](forgeheim/deepforge.md) | Forgeheim | **43** | [Coldspring](forgeheim/coldspring.md) | Forgeheim |
+| **07** | [Cliffsteps](crownshore/cliffsteps.md) | Crownshore | **44** | [Cablecross](forgeheim/cablecross.md) | Forgeheim |
+| **08** | [Redwing](iron-authority/redwing.md) | Iron Authority | **45** | [Veinlight](forgeheim/veinlight.md) | Forgeheim |
+| **09** | [Forgehold](iron-authority/forgehold.md) | Iron Authority | **46** | [Pinehold](forgeheim/pinehold.md) | Forgeheim |
+| **10** | [Steelspire](iron-authority/steelspire.md) | Iron Authority | **47** | [Regatta](heartland/regatta.md) | Heartland |
+| **11** | [Ashgate](iron-authority/ashgate.md) | Iron Authority | **48** | [Rampart](forgeheim/rampart.md) | Forgeheim |
+| **12** | [Bluebasin](heartland/bluebasin.md) | Heartland | **49** | [Stormwatch](thunderspine/stormwatch.md) | Thunderspine |
+| **13** | [Goldfields](heartland/goldfields.md) | Heartland | **50** | [Quarryside](forgeheim/quarryside.md) | Forgeheim |
+| **14** | [Calmwater](blacktide-coast/calmwater.md) | Blacktide Coast | **51** | [Gravemere](gloamwood/gravemere.md) | Gloamwood |
+| **15** | [Hillmarket](forgeheim/hillmarket.md) | Forgeheim | **52** | [Silkford](blacktide-coast/silkford.md) | Blacktide Coast |
+| **16** | [Glade Hollow](iron-authority/glade-hollow.md) | Iron Authority | **53** | [Boltcrest](thunderspine/boltcrest.md) | Thunderspine |
+| **17** | [Mirror Lake](blacktide-coast/mirror-lake.md) | Blacktide Coast | **54** | [Gloomvale](forgeheim/gloomvale.md) | Forgeheim |
+| **18** | [Redrock Mines](heartland/redrock-mines.md) | Heartland | **55** | [Cinderyard](forgeheim/cinderyard.md) | Forgeheim |
+| **19** | [Goldbluff](forgeheim/goldbluff.md) | Forgeheim | **56** | [Ravenmoor](gloamwood/ravenmoor.md) | Gloamwood |
+| **20** | [Fernlake](the-verge/fernlake.md) | The Verge (ขอบเขต Gate) | **57** | [Candlewick](gloamwood/candlewick.md) | Gloamwood |
+| **21** | [Silver Junction](heartland/silver-junction.md) | Heartland | **58** | [Hollowbell](gloamwood/hollowbell.md) | Gloamwood |
+| **22** | [Dynamo Falls](forgeheim/dynamo-falls.md) | Forgeheim | **59** | [Glimmerhold](thunderspine/glimmerhold.md) | Thunderspine |
+| **23** | [Testfire](gloamwood/testfire.md) | Gloamwood | **60** | [Scraptown](blacktide-coast/scraptown.md) | Blacktide Coast |
+| **24** | [Bulwark Harbor](forgeheim/bulwark-harbor.md) | Forgeheim | **61** | [Wardline](thunderspine/wardline.md) | Thunderspine |
+| **25** | [Railhead](forgeheim/railhead.md) | Forgeheim | **62** | [Summit Station](forgeheim/summit-station.md) | Forgeheim |
+| **26** | [Arsenal Bay](gloamwood/arsenal-bay.md) | Gloamwood | **63** | [Mushmire](thunderspine/mushmire.md) | Thunderspine |
+| **27** | [Freeharbor](heartland/freeharbor.md) | Heartland | **64** | [Driftwood](blacktide-coast/driftwood.md) | Blacktide Coast |
+| **28** | [Vaultwick](blacktide-coast/vaultwick.md) | Blacktide Coast | **65** | [Echo Hollow](forgeheim/echo-hollow.md) | Forgeheim |
+| **29** | [Glasshaven](crownshore/glasshaven.md) | Crownshore | **66** | [Wreckers' Cove](blacktide-coast/wreckers-cove.md) | Blacktide Coast |
+| **30** | [Quietstone](forgeheim/quietstone.md) | Forgeheim | **67** | [Lamplight Point](gloamwood/lamplight-point.md) | Gloamwood |
+| **31** | [Drillfield](heartland/drillfield.md) | Heartland | **68** | [Last Stop](heartland/last-stop.md) | Heartland |
+| **32** | [Blackreef](blacktide-coast/blackreef.md) | Blacktide Coast | **69** | [Lowtide](blacktide-coast/lowtide.md) | Blacktide Coast |
+| **33** | [Tidehold](blacktide-coast/tidehold.md) | Blacktide Coast | **70** | [Claimstake](iron-authority/claimstake.md) | Iron Authority |
+| **34** | [Neon Wharf](blacktide-coast/neon-wharf.md) | Blacktide Coast | **71** | [Briarwatch](thunderspine/briarwatch.md) | Thunderspine |
+| **35** | [Anvilgate](forgeheim/anvilgate.md) | Forgeheim | **72** | [Highrod](thunderspine/highrod.md) | Thunderspine |
+| **36** | [Lootfall](iron-authority/lootfall.md) | Iron Authority | | | |
+
 ## Hero และวิลเลิน
 
 > แรงบันดาลใจ: มันฮวา *Hero Killer* (Naver Webtoon) — องค์กร Hero ที่ฉากหน้าผดุงความยุติธรรม แต่ข้างในเน่า / ปรับให้เข้ากับ Novaris ไม่ได้ลอกโครงสร้างมาตรง ๆ

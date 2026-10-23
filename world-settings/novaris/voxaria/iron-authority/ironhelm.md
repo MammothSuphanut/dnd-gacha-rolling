@@ -1,4 +1,4 @@
-# Ironhelm
+# Sector 04: Ironhelm
 
 > origin: [`exandria/tal-dorei/rifenmist-peninsula/tzaarm.md`](../../../exandria/tal-dorei/rifenmist-peninsula/tzaarm.md) · ชื่อ CR: Tz'Arrm
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครใหญ่ · เมืองหลวงของรัฐ |
+| Sector | **04** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Iron Authority · ปลายแหลมใต้สุดของทวีป |
 | สังกัด | **Voxaria** — รัฐ Iron Authority |
 | ระดับอารยธรรม | 5 |

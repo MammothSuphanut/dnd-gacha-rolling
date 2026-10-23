@@ -1,4 +1,4 @@
-# Lumen City
+# Sector 00: Lumen City
 
 > origin: [`exandria/tal-dorei/bladeshimmer-shoreline/emon.md`](../../../exandria/tal-dorei/bladeshimmer-shoreline/emon.md) · ชื่อ CR: Emon
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองหลวง · มหานคร |
+| Sector | **00** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Crownshore · ชายฝั่งเหนือ ริมทะเล Donghai |
 | สังกัด | **Voxaria** (เมืองหลวงของประเทศและของรัฐ Crownshore) |
 | ระดับอารยธรรม | **5 (ปัจจุบัน + เวท)** · บางห้องปฏิบัติการระดับ 6 |

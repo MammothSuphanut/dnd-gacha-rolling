@@ -1,4 +1,4 @@
-# Redrock Mines
+# Sector 18: Redrock Mines
 
 > origin: [`exandria/tal-dorei/dividing-plains/murdoon-mines.md`](../../../exandria/tal-dorei/dividing-plains/murdoon-mines.md) · ชื่อ CR: Murdoon Mines
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
@@ -8,6 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เหมืองอุตสาหกรรม |
+| Sector | **18** — ✨ ตาม Sector Charter (900 PD) · ดู [ระบบ Sector](../_overview.md#ระบบ-sector-) |
 | ที่ตั้ง | Voxaria → Heartland · ฐานภูเขา ตะวันตกเฉียงเหนือของ Midgate |
 | สังกัด | **Voxaria** |
 | ระดับอารยธรรม | 5 |

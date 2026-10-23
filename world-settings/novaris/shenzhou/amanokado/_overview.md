@@ -48,6 +48,10 @@
 | นครเทพ | [Kamizono](yugure-forest/kamizono.md) |
 | เมือง | [Hamamura](hamamura.md) · [Moriichi](yugure-forest/moriichi.md) · [Yakushi](yugure-forest/yakushi.md) · [Kanmon](yugure-forest/kanmon.md) |
 | ศักดิ์สิทธิ์ | [Enzan](kazan-range/enzan.md) · [Futagoyama](yugure-forest/futagoyama.md) |
+| ✨ สำนักมิโกะแห่งรุ่งอรุณ (Sarenrae) | [Asahi](asahi.md) · [Akebono](akebono.md) · [Hinode](hinode.md) · [Terumura](terumura.md) · [Kagaribi](kagaribi.md) · [Asagiri](asagiri.md) |
+| ✨ สำนักคนทรงอีกาดำ (The Raven Queen) | [Karasuma](karasuma.md) · [Kurozuka](kurozuka.md) · [Tamayobi](tamayobi.md) · [Usugure](usugure.md) · [Kagemori](kagemori.md) |
+| ✨ ตระกูลองเมียวจิ Hoshimi | [Hoshimi](hoshimi.md) · [Tenmon](tenmon.md) · [Shikimura](shikimura.md) · [Fudamachi](fudamachi.md) · [Yuimori](yuimori.md) · [Hokuto](hokuto.md) · [Kitsunebi](kitsunebi.md) · [Kitaboshi](kitaboshi.md) |
+| ✨ ยามาบุชิ | [Mineiri](mineiri.md) |
 
 ## ผู้คนและวัฒนธรรม
 
@@ -57,6 +61,7 @@
 
 ## การเมืองและความสัมพันธ์
 
+- **สำนักศักดิ์สิทธิ์** ✨: สภาวิหารไม่ได้ปกครองเมืองเล็กเอง — ฝากเมืองให้สำนักมิโกะ คนทรงอีกาดำ ตระกูล Hoshimi และยามาบุชิดูแลแทน สามสำนักแรกแย่งที่นั่งในสภากันเงียบ ๆ
 - **Akitsu Shogunate**: เพื่อนบ้านซามูไรที่เคารพนครเทพ แต่ไม่ให้นักบวชยุ่งการเมือง
 - **ยุทธภพ**: ✨ ศิษย์สำนักฝ่ายธรรมะมาฝึกจิตที่วิหาร
 - **Voxaria**: คู่ค้าผ่าน Hamamura — สภาวิหารระแวงเทคโนโลยีที่ผสมเวท
