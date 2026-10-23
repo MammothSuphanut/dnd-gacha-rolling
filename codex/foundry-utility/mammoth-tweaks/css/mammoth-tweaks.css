@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Mammoth Tweaks — CSS-only fixes. Disable the module to revert everything.
+   Mammoth Tweaks — CSS fixes. Each one is switched on/off in Configure Settings.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -9,14 +9,15 @@
    also stacks .dice-result as a column and gives TokenBar's empty trailing
    <span class="total"> a gold border, so the ✓ ✗ buttons overlap the number.
    Scoped to TokenBar cards only; the Assign XP card (.xp-result) is skipped.
+   Active only while body has .mammoth-tokenbar-fix (setting "tokenBarFix").
    -------------------------------------------------------------------------- */
-.monks-tokenbar li.item .dice-roll .dice-total:not(.xp-result) {
+body.mammoth-tokenbar-fix .monks-tokenbar li.item .dice-roll .dice-total:not(.xp-result) {
   word-break: normal;
   flex: 0 0 auto;
   min-width: 84px;
 }
 
-.monks-tokenbar li.item .dice-roll .dice-total:not(.xp-result) .dice-result {
+body.mammoth-tokenbar-fix .monks-tokenbar li.item .dice-roll .dice-total:not(.xp-result) .dice-result {
   flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
@@ -24,7 +25,7 @@
   margin: 0;
 }
 
-.monks-tokenbar li.item .dice-roll .dice-total:not(.xp-result) > span.total {
+body.mammoth-tokenbar-fix .monks-tokenbar li.item .dice-roll .dice-total:not(.xp-result) > span.total {
   border: none;
   min-width: 0;
   flex: 0 0 auto;
