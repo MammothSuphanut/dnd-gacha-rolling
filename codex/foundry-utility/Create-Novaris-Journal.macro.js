@@ -13,7 +13,9 @@
  *   - One journal entry per .md file (overviews included), one text page each. Ownership: GM only,
  *     so players never see the entries or their pins.
  *   - Pins (map notes) on the world scene "Novaris" and on the continent scene, icon by place type.
- *     Country labels get an extra shield pin that opens the country's entry.
+ *     Country labels get an extra shield pin that opens the country's entry; the continent name opens
+ *     the continent overview. Sea pins also go on each continent scene that shows them.
+ *     Pins outside a scene's map area are skipped on that scene.
  *     Places with no position on the map get an entry but no pin (listed in the console).
  *   Re-running is safe: entries are matched by their file path (flag), their page is overwritten with
  *   the repo text, and this continent's pins are rebuilt. Edit lore in the repo, not in Foundry.
@@ -21,7 +23,7 @@
 (async () => {
   const DATA_DIR = "worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal";
   const IMG_DIR = "worlds/astral-nexus-constellation-protocol/World_Setting/Novaris";
-  // "seas" spans the whole world, so it has no continent scene: its pins go on the world scene only
+  // "seas" spans the whole world, so it has no continent scene of its own (see the pin loop)
   const CONTINENTS = ["aldenreich", "eldmere", "shenzhou", "suvarna", "voxaria", "seas"];
   const ROOT_FOLDER = "Novaris";
   // Scenes the pins go on: image = background that identifies the scene, box = Azgaar map area it shows.
@@ -84,7 +86,9 @@
     if (orphans.length) console.warn(`Novaris ${continent}: entries whose .md file is gone (not deleted):`, orphans.map(j => j.name));
 
     // Pins: rebuild this continent's notes on each scene
-    for (const def of [WORLD_SCENE, CONTINENT_SCENES[continent]].filter(Boolean)) {
+    // Seas lie between continents: their pins go on every continent scene that shows them
+    const scenes = continent === "seas" ? Object.values(CONTINENT_SCENES) : [CONTINENT_SCENES[continent]];
+    for (const def of [WORLD_SCENE, ...scenes].filter(Boolean)) {
       const scene = findScene(def);
       if (!scene) { ui.notifications.warn(`Scene "${def.name}" not found — pins skipped.`); continue; }
       const old = scene.notes.filter(n => n.getFlag(FLAG, "novarisContinent") === continent).map(n => n.id);
@@ -97,7 +101,7 @@
       const notes = data.entries.flatMap(e => [
         e.pin && { ...e.pin, text: e.name, icon: e.icon, tint: e.tint },
         ...(e.extraPins ?? []).map(p => ({ ...p, text: p.name }))
-      ].filter(Boolean).map(p => ({
+      ].filter(p => p && p.x >= x0 && p.x <= x1 && p.y >= y0 && p.y <= y1).map(p => ({
         entryId: entryIds[e.key],
         x: Math.round(d.sceneX + (p.x - x0) * sx),
         y: Math.round(d.sceneY + (p.y - y0) * sy),

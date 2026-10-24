@@ -110,8 +110,10 @@ def to_html(text):
 def main():
     continent, out_dir = sys.argv[1], sys.argv[2]
     x0, y0, x1, y1 = BOXES[continent]
-    places = [p for p in json.load(open(PLACES, encoding="utf-8"))["places"]
-              if x0 <= p["x"] <= x1 and y0 <= p["y"] <= y1]
+    all_places = json.load(open(PLACES, encoding="utf-8"))["places"]
+    places = [p for p in all_places if x0 <= p["x"] <= x1 and y0 <= p["y"] <= y1]
+    # The continent's own name label (may sit just outside its box, e.g. Eldmere) pins the continent overview
+    continent_pin = next((p for p in all_places if p["type"] == "added" and p["name"] == continent.capitalize()), None)
     states = {p["name"]: p for p in places if p["type"] == "state"}
     # burgs win over labels of the same name
     by_name = {}
@@ -149,8 +151,9 @@ def main():
         is_overview = rel.endswith("/_overview.md")
         kind = place_type(text)
         icon, tint = ("book", "#ffffff") if is_overview else icon_for(kind)
-        pin = None if rel == f"{continent}/_overview.md" else find_pin(re.sub(r"\s*\(.*\)$", "", re.sub(r"^Sector \d+:\s*", "", title)))
-        if pin is None and rel != f"{continent}/_overview.md":
+        is_continent = rel == f"{continent}/_overview.md"
+        pin = continent_pin if is_continent else find_pin(re.sub(r"\s*\(.*\)$", "", re.sub(r"^Sector \d+:\s*", "", title)))
+        if pin is None and not is_continent:
             unpinned.append(rel)
         entries.append({
             "key": rel,
