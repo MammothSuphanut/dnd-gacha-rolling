@@ -1,0 +1,1056 @@
+{
+ "_note": "Learned from user-saved sample maps (test01, test03, test_city, test_cave) 2026-10-24, Canvas of Kings 0.1.0.44. Values = the type numbers seen and how often.",
+ "path_types": {
+  "Paths/PathsRoofs/par_roof_thatched.tscn": {
+   "43": 1
+  },
+  "Paths/PathsRoofs/par_roof_tiles.tscn": {
+   "41": 982
+  },
+  "Paths/PathsRoofs/par_roof_wooden.tscn": {
+   "42": 111
+  },
+  "Paths/PathsWater/paw_river_deep.tscn": {
+   "36": 5
+  },
+  "Paths/pa_bridge_1.tscn": {
+   "34": 5
+  },
+  "Paths/pa_bridge_2.tscn": {
+   "35": 2
+  },
+  "Paths/pa_fence_1.tscn": {
+   "14": 18
+  },
+  "Paths/pa_fence_3.tscn": {
+   "16": 23
+  },
+  "Paths/pa_hedge.tscn": {
+   "1": 194
+  },
+  "Paths/pa_hedge_trees.tscn": {
+   "2": 40
+  },
+  "Paths/pa_palisade_1.tscn": {
+   "9": 1
+  },
+  "Paths/pa_palisade_2.tscn": {
+   "10": 12
+  },
+  "Paths/pa_road.tscn": {
+   "17": 7,
+   "23": 233,
+   "18": 52,
+   "19": 101,
+   "22": 184,
+   "20": 9,
+   "21": 1
+  },
+  "Paths/pa_salad_row.tscn": {
+   "3": 1
+  },
+  "Paths/pa_stone_wall_1.tscn": {
+   "11": 12
+  },
+  "Paths/pa_stone_wall_2.tscn": {
+   "12": 11
+  },
+  "Paths/pa_stone_wall_3.tscn": {
+   "13": 37
+  },
+  "Plots/Plateaus/papl_plateau_plateau.tscn": {
+   "68": 77
+  },
+  "Plots/PlotsDistricts/papd_farmers.tscn": {
+   "65": 1
+  },
+  "Plots/PlotsDistricts/papd_merchants.tscn": {
+   "67": 1
+  },
+  "Plots/PlotsLands/papl_wall.tscn": {
+   "49": 23
+  },
+  "Plots/PlotsWater/papw_lake.tscn": {
+   "32": 8
+  },
+  "Plots/PlotsWater/papw_ocean.tscn": {
+   "33": 1
+  },
+  "Plots/Rooms/papr_blacksmith.tscn": {
+   "57": 1
+  },
+  "Plots/pap_cottages.tscn": {
+   "28": 12
+  },
+  "Plots/pap_field.tscn": {
+   "26": 26
+  },
+  "Plots/pap_forest.tscn": {
+   "25": 15
+  },
+  "Plots/pap_lumberyard.tscn": {
+   "30": 3
+  },
+  "Plots/pap_market.tscn": {
+   "27": 1
+  },
+  "Plots/pap_tent_camp.tscn": {
+   "31": 2
+  }
+ },
+ "path_extra_fields": {
+  "Paths/PathsRoofs/par_roof_thatched.tscn": {
+   "line_object_type_idx": [
+    1
+   ]
+  },
+  "Paths/PathsRoofs/par_roof_tiles.tscn": {
+   "line_object_type_idx": [
+    0,
+    1
+   ]
+  },
+  "Paths/PathsRoofs/par_roof_wooden.tscn": {
+   "line_object_type_idx": [
+    0,
+    1
+   ]
+  },
+  "Paths/pa_road.tscn": {
+   "width": [
+    0.50615006685257,
+    0.510686933994293,
+    0.511593914031983,
+    0.513455080986023,
+    0.513640546798706,
+    0.518952643871307,
+    0.52088737487793,
+    0.52314979583025,
+    0.523675978183746,
+    0.524060463905335,
+    0.527087712287903,
+    0.539525473117828,
+    0.571597325801849,
+    0.578208541870117,
+    0.60399819612503,
+    0.605841016769409,
+    0.702439826726913,
+    0.75475389957428,
+    0.849986231327057,
+    0.887433552742004,
+    0.934772074222565,
+    0.983626183494925,
+    1.07683458301419,
+    1.0770660161972,
+    1.13111172617453,
+    1.14578194022178,
+    1.16258298209654,
+    1.18062701821327,
+    1.18728635311127,
+    1.24644926786423,
+    1.27318277359009,
+    1.2766939997673,
+    1.31203550100326,
+    1.32923332452774,
+    1.35057593026592,
+    1.35340565637622,
+    1.49827817082405,
+    1.51139608621597,
+    1.54799486398697,
+    1.55984289646149,
+    1.56908657550812,
+    1.60462659597396,
+    1.61042056083679,
+    1.61608395576477,
+    1.64109201431274,
+    1.66314928531647,
+    1.67957513332367,
+    1.6878922700882,
+    1.69900755882263,
+    1.71350114345551,
+    1.71821074485779,
+    1.71999938488007,
+    1.72597441673279,
+    1.75054230690002,
+    1.75526864528656,
+    1.77516578137875,
+    1.78262721300125,
+    1.78277094364166,
+    1.78408994674683,
+    1.78418686389923,
+    1.79235817790031,
+    1.7935848236084,
+    1.794465097785
+   ],
+   "c_o_type": [
+    23
+   ]
+  },
+  "Plots/Plateaus/papl_plateau_plateau.tscn": {
+   "texture_type": [
+    1,
+    12,
+    13,
+    14,
+    2
+   ],
+   "edge_texture_type": [
+    1,
+    2
+   ],
+   "custom_gradient": [
+    0.1,
+    0.5
+   ]
+  },
+  "Plots/PlotsDistricts/papd_farmers.tscn": {
+   "layout_type": [
+    3
+   ]
+  },
+  "Plots/PlotsDistricts/papd_merchants.tscn": {
+   "layout_type": [
+    2
+   ]
+  },
+  "Plots/Rooms/papr_blacksmith.tscn": {
+   "texture_type": [
+    1
+   ],
+   "line_object_type": [
+    116
+   ],
+   "window_scene_idx": [
+    4
+   ]
+  },
+  "Plots/pap_field.tscn": {
+   "line_object_type_idx": [
+    1,
+    3
+   ]
+  }
+ },
+ "object_types": {
+  "woBuildings/woHuts/wo_hut_cottage_a.tscn": {
+   "23": 142
+  },
+  "woBuildings/woHuts/wo_hut_cottage_b.tscn": {
+   "23": 106
+  },
+  "woBuildings/woHuts/wo_hut_cottage_c.tscn": {
+   "23": 118
+  },
+  "woBuildings/woHuts/wo_hut_cottage_cb.tscn": {
+   "23": 122
+  },
+  "woBuildings/woHuts/wo_hut_tiles_a.tscn": {
+   "148": 1
+  },
+  "woBuildings/wo_market_stall_a.tscn": {
+   "21": 11
+  },
+  "woBuildings/wo_market_stall_b.tscn": {
+   "21": 3
+  },
+  "woBuildings/wo_market_stall_c.tscn": {
+   "21": 6
+  },
+  "woBuildings/wo_market_stall_d.tscn": {
+   "21": 5
+  },
+  "woBuildings/wo_market_stall_e.tscn": {
+   "21": 5
+  },
+  "woBuildings/wo_market_stall_f.tscn": {
+   "21": 8
+  },
+  "woBuildings/wo_market_stall_g.tscn": {
+   "21": 4
+  },
+  "woBuildings/wo_market_stall_h.tscn": {
+   "21": 8
+  },
+  "woBuildings/wo_market_stall_i.tscn": {
+   "21": 6
+  },
+  "woBuildings/wo_market_stall_j.tscn": {
+   "21": 6
+  },
+  "woBuildings/wo_market_stall_k.tscn": {
+   "21": 2
+  },
+  "woBuildings/wo_market_stall_l.tscn": {
+   "21": 4
+  },
+  "woBuildings/wo_market_stall_m.tscn": {
+   "21": 8
+  },
+  "woBuildings/wo_tavern_a.tscn": {
+   "24": 5
+  },
+  "woBuildings/wo_tent_a.tscn": {
+   "18": 7
+  },
+  "woBuildings/wo_tent_b.tscn": {
+   "18": 7
+  },
+  "woBuildings/wo_tent_c.tscn": {
+   "18": 3
+  },
+  "woBuildings/wo_tent_d.tscn": {
+   "18": 6
+  },
+  "woBuildings/wo_tent_e.tscn": {
+   "18": 3
+  },
+  "woBuildings/wo_tent_f.tscn": {
+   "18": 5
+  },
+  "woBuildings/wo_tent_g.tscn": {
+   "18": 7
+  },
+  "woBuildings/wo_well_a.tscn": {
+   "13": 22
+  },
+  "woBuildings/wo_well_b.tscn": {
+   "13": 29
+  },
+  "woBuildings/wo_well_c.tscn": {
+   "13": 17
+  },
+  "woBuildings/wo_well_d.tscn": {
+   "13": 30
+  },
+  "woDecos/woDecosRooms/wo_anvil_a.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_anvil_b.tscn": {
+   "136": 2
+  },
+  "woDecos/woDecosRooms/wo_cabinet_d.tscn": {
+   "132": 2
+  },
+  "woDecos/woDecosRooms/wo_cabinet_f.tscn": {
+   "132": 4
+  },
+  "woDecos/woDecosRooms/wo_cabinet_h.tscn": {
+   "132": 2
+  },
+  "woDecos/woDecosRooms/wo_cabinet_j.tscn": {
+   "132": 1
+  },
+  "woDecos/woDecosRooms/wo_cabinet_k.tscn": {
+   "132": 1
+  },
+  "woDecos/woDecosRooms/wo_chair_b.tscn": {
+   "133": 1
+  },
+  "woDecos/woDecosRooms/wo_chair_g.tscn": {
+   "133": 1
+  },
+  "woDecos/woDecosRooms/wo_chair_i.tscn": {
+   "133": 2
+  },
+  "woDecos/woDecosRooms/wo_crate_single_a.tscn": {
+   "143": 1
+  },
+  "woDecos/woDecosRooms/wo_crate_single_b.tscn": {
+   "143": 2
+  },
+  "woDecos/woDecosRooms/wo_crate_single_d.tscn": {
+   "143": 2
+  },
+  "woDecos/woDecosRooms/wo_crate_single_e.tscn": {
+   "143": 1
+  },
+  "woDecos/woDecosRooms/wo_crate_single_h.tscn": {
+   "143": 1
+  },
+  "woDecos/woDecosRooms/wo_device_b.tscn": {
+   "137": 2
+  },
+  "woDecos/woDecosRooms/wo_device_e.tscn": {
+   "137": 1
+  },
+  "woDecos/woDecosRooms/wo_device_f.tscn": {
+   "137": 1
+  },
+  "woDecos/woDecosRooms/wo_device_h.tscn": {
+   "137": 3
+  },
+  "woDecos/woDecosRooms/wo_door_b.tscn": {
+   "125": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_a.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_b.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_g.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_h.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_j.tscn": {
+   "16": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_k.tscn": {
+   "16": 3
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_l.tscn": {
+   "16": 2
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_o.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_q.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_r.tscn": {
+   "136": 3
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_t.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_sign_a.tscn": {
+   "141": 3
+  },
+  "woDecos/woDecosRooms/wo_sign_b.tscn": {
+   "141": 2
+  },
+  "woDecos/woDecosRooms/wo_sign_c.tscn": {
+   "141": 1
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_a.tscn": {
+   "140": 2
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_b.tscn": {
+   "140": 3
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_d.tscn": {
+   "140": 1
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_g.tscn": {
+   "140": 2
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_h.tscn": {
+   "140": 1
+  },
+  "woDecos/woDecosRooms/wo_table2_a.tscn": {
+   "134": 1
+  },
+  "woDecos/woDecosRooms/wo_table2_b.tscn": {
+   "134": 1
+  },
+  "woDecos/woDecosRooms/wo_table2_e.tscn": {
+   "134": 1
+  },
+  "woDecos/woDecosRooms/wo_table3_a.tscn": {
+   "135": 1
+  },
+  "woDecos/woDecosRooms/wo_water_source_a.tscn": {
+   "138": 2
+  },
+  "woDecos/woDecosRooms/wo_water_source_c.tscn": {
+   "138": 1
+  },
+  "woDecos/woDecosRooms/wo_water_source_e.tscn": {
+   "138": 1
+  },
+  "woDecos/woDecosRooms/wo_water_source_f.tscn": {
+   "138": 2
+  },
+  "woDecos/woDecosRooms/wo_water_source_g.tscn": {
+   "138": 2
+  },
+  "woDecos/woDecosRooms/wo_window_e.tscn": {
+   "126": 2
+  },
+  "woDecos/woDecosRooms/wo_window_f.tscn": {
+   "126": 3
+  },
+  "woDecos/wo_beam_a.tscn": {
+   "11": 2
+  },
+  "woDecos/wo_beam_b.tscn": {
+   "11": 34
+  },
+  "woDecos/wo_beam_c.tscn": {
+   "11": 10
+  },
+  "woDecos/wo_beam_d.tscn": {
+   "11": 35
+  },
+  "woDecos/wo_beam_e.tscn": {
+   "11": 34
+  },
+  "woDecos/wo_beam_f.tscn": {
+   "11": 27
+  },
+  "woDecos/wo_beam_g.tscn": {
+   "11": 25
+  },
+  "woDecos/wo_beam_h.tscn": {
+   "11": 29
+  },
+  "woDecos/wo_branch_a.tscn": {
+   "14": 37
+  },
+  "woDecos/wo_branch_b.tscn": {
+   "14": 29
+  },
+  "woDecos/wo_branch_c.tscn": {
+   "14": 37
+  },
+  "woDecos/wo_branch_d.tscn": {
+   "14": 22
+  },
+  "woDecos/wo_bush_a.tscn": {
+   "4": 392
+  },
+  "woDecos/wo_bush_b.tscn": {
+   "4": 409
+  },
+  "woDecos/wo_bush_c.tscn": {
+   "4": 414
+  },
+  "woDecos/wo_bush_d.tscn": {
+   "4": 410
+  },
+  "woDecos/wo_bush_e.tscn": {
+   "4": 419
+  },
+  "woDecos/wo_bush_f.tscn": {
+   "4": 408
+  },
+  "woDecos/wo_bush_g.tscn": {
+   "4": 412
+  },
+  "woDecos/wo_bush_h.tscn": {
+   "4": 466
+  },
+  "woDecos/wo_bush_i.tscn": {
+   "4": 381
+  },
+  "woDecos/wo_bush_j.tscn": {
+   "4": 383
+  },
+  "woDecos/wo_campfire_a.tscn": {
+   "12": 2
+  },
+  "woDecos/wo_campfire_b.tscn": {
+   "12": 1
+  },
+  "woDecos/wo_crane_a.tscn": {
+   "84": 9
+  },
+  "woDecos/wo_crane_b.tscn": {
+   "84": 4
+  },
+  "woDecos/wo_crane_c.tscn": {
+   "84": 4
+  },
+  "woDecos/wo_crate_a.tscn": {
+   "7": 24
+  },
+  "woDecos/wo_crate_b.tscn": {
+   "7": 25
+  },
+  "woDecos/wo_crate_c.tscn": {
+   "7": 27
+  },
+  "woDecos/wo_crate_d.tscn": {
+   "7": 24
+  },
+  "woDecos/wo_crate_e.tscn": {
+   "7": 28
+  },
+  "woDecos/wo_crate_f.tscn": {
+   "7": 29
+  },
+  "woDecos/wo_crate_g.tscn": {
+   "7": 29
+  },
+  "woDecos/wo_crate_h.tscn": {
+   "7": 22
+  },
+  "woDecos/wo_crate_i.tscn": {
+   "7": 25
+  },
+  "woDecos/wo_crate_j.tscn": {
+   "7": 24
+  },
+  "woDecos/wo_crate_k.tscn": {
+   "7": 24
+  },
+  "woDecos/wo_crate_l.tscn": {
+   "7": 32
+  },
+  "woDecos/wo_crate_m.tscn": {
+   "7": 31
+  },
+  "woDecos/wo_flowers_a.tscn": {
+   "20": 10
+  },
+  "woDecos/wo_flowers_b.tscn": {
+   "20": 18
+  },
+  "woDecos/wo_flowers_c.tscn": {
+   "20": 85
+  },
+  "woDecos/wo_glow_light_a.tscn": {
+   "64": 2
+  },
+  "woDecos/wo_glow_light_b.tscn": {
+   "64": 6
+  },
+  "woDecos/wo_glow_light_c.tscn": {
+   "64": 12
+  },
+  "woDecos/wo_glow_light_d.tscn": {
+   "64": 6
+  },
+  "woDecos/wo_goods_a.tscn": {
+   "9": 39
+  },
+  "woDecos/wo_goods_b.tscn": {
+   "9": 4
+  },
+  "woDecos/wo_goods_c.tscn": {
+   "9": 2
+  },
+  "woDecos/wo_goods_d.tscn": {
+   "9": 3
+  },
+  "woDecos/wo_goods_e.tscn": {
+   "9": 2
+  },
+  "woDecos/wo_goods_g.tscn": {
+   "9": 2
+  },
+  "woDecos/wo_grass_a.tscn": {
+   "2": 1114
+  },
+  "woDecos/wo_grass_b.tscn": {
+   "2": 74
+  },
+  "woDecos/wo_grass_c.tscn": {
+   "2": 72
+  },
+  "woDecos/wo_grass_d.tscn": {
+   "2": 79
+  },
+  "woDecos/wo_grass_e.tscn": {
+   "2": 78
+  },
+  "woDecos/wo_grass_f.tscn": {
+   "2": 80
+  },
+  "woDecos/wo_grass_g.tscn": {
+   "2": 63
+  },
+  "woDecos/wo_smoke_a.tscn": {
+   "109": 1
+  },
+  "woDecos/wo_stone_a.tscn": {
+   "5": 175
+  },
+  "woDecos/wo_stone_b.tscn": {
+   "5": 74
+  },
+  "woDecos/wo_stone_c.tscn": {
+   "5": 60
+  },
+  "woDecos/wo_stone_d.tscn": {
+   "5": 67
+  },
+  "woDecos/wo_stone_e.tscn": {
+   "5": 50
+  },
+  "woDecos/wo_stone_f.tscn": {
+   "5": 77
+  },
+  "woDecos/wo_stone_fragments_a.tscn": {
+   "19": 5
+  },
+  "woDecos/wo_stone_fragments_c.tscn": {
+   "19": 3
+  },
+  "woDecos/wo_stone_fragments_f.tscn": {
+   "19": 2
+  },
+  "woDecos/wo_stone_g.tscn": {
+   "5": 85
+  },
+  "woDecos/wo_stone_h.tscn": {
+   "5": 54
+  },
+  "woDecos/wo_stone_i.tscn": {
+   "5": 72
+  },
+  "woDecos/wo_stone_j.tscn": {
+   "5": 61
+  },
+  "woDecos/wo_stone_k.tscn": {
+   "5": 75
+  },
+  "woDecos/wo_table_a.tscn": {
+   "8": 4
+  },
+  "woDecos/wo_table_b.tscn": {
+   "8": 8
+  },
+  "woDecos/wo_table_c.tscn": {
+   "8": 12
+  },
+  "woDecos/wo_table_d.tscn": {
+   "8": 14
+  },
+  "woDecos/wo_table_e.tscn": {
+   "8": 13
+  },
+  "woDecos/wo_table_f.tscn": {
+   "8": 9
+  },
+  "woDecos/wo_tool_a.tscn": {
+   "16": 1
+  },
+  "woDecos/wo_tool_axe_on_wood_a.tscn": {
+   "6": 16
+  },
+  "woDecos/wo_tool_axe_on_wood_b.tscn": {
+   "6": 27
+  },
+  "woDecos/wo_tool_b.tscn": {
+   "16": 2
+  },
+  "woDecos/wo_tree_a.tscn": {
+   "3": 1040
+  },
+  "woDecos/wo_tree_ab.tscn": {
+   "3": 1073,
+   "54": 54
+  },
+  "woDecos/wo_tree_ac.tscn": {
+   "3": 1119
+  },
+  "woDecos/wo_tree_b.tscn": {
+   "3": 1087
+  },
+  "woDecos/wo_tree_c.tscn": {
+   "3": 1041
+  },
+  "woDecos/wo_tree_cb.tscn": {
+   "3": 1017
+  },
+  "woDecos/wo_trunk_a.tscn": {
+   "6": 20
+  },
+  "woDecos/wo_trunk_b.tscn": {
+   "6": 26
+  },
+  "woDecos/wo_trunk_c.tscn": {
+   "6": 26
+  },
+  "woDecos/wo_trunk_d.tscn": {
+   "6": 25
+  },
+  "woDecos/wo_trunk_e.tscn": {
+   "6": 26
+  },
+  "woDecos/wo_water_dock_a_a.tscn": {
+   "73": 41
+  },
+  "woDecos/wo_water_dock_a_b.tscn": {
+   "73": 40
+  },
+  "woDecos/wo_water_dock_a_c.tscn": {
+   "73": 5
+  },
+  "woDecos/wo_water_dock_a_d.tscn": {
+   "73": 1
+  },
+  "woDecos/wo_water_flower_a.tscn": {
+   "70": 6
+  },
+  "woDecos/wo_water_flower_b.tscn": {
+   "70": 8
+  },
+  "woDecos/wo_water_flower_c.tscn": {
+   "70": 6
+  },
+  "woDecos/wo_water_flower_d.tscn": {
+   "70": 7
+  },
+  "woDecos/wo_water_flower_e.tscn": {
+   "70": 6
+  },
+  "woDecos/wo_water_flower_f.tscn": {
+   "70": 5
+  },
+  "woDecos/wo_water_flower_g.tscn": {
+   "70": 3
+  },
+  "woDecos/wo_wood_pile_a.tscn": {
+   "10": 12
+  },
+  "woDecos/wo_wood_pile_b.tscn": {
+   "10": 17
+  },
+  "woDecos/wo_wood_pile_c.tscn": {
+   "10": 18
+  },
+  "woDecos/wo_wood_pile_d.tscn": {
+   "10": 24
+  },
+  "woDecos/wo_wood_pile_e.tscn": {
+   "10": 17
+  },
+  "woPathObjects/woPathObjectsRooms/wo_room_wood_wall_b.tscn": {
+   "116": 4
+  },
+  "woPathObjects/wo_bridge_a.tscn": {
+   "75": 5
+  },
+  "woPathObjects/wo_bridge_b.tscn": {
+   "76": 2
+  },
+  "woPathObjects/wo_bridge_pillar_a.tscn": {
+   "77": 10
+  },
+  "woPathObjects/wo_bridge_pillar_ab.tscn": {
+   "79": 21
+  },
+  "woPathObjects/wo_bridge_pillar_b.tscn": {
+   "78": 4
+  },
+  "woPathObjects/wo_bridge_pillar_bb.tscn": {
+   "80": 9
+  },
+  "woPathObjects/wo_fence_a.tscn": {
+   "33": 49
+  },
+  "woPathObjects/wo_fence_b.tscn": {
+   "34": 18
+  },
+  "woPathObjects/wo_fence_c.tscn": {
+   "35": 60
+  },
+  "woPathObjects/wo_fence_pillar_a.tscn": {
+   "61": 14
+  },
+  "woPathObjects/wo_fence_pillar_b.tscn": {
+   "62": 1
+  },
+  "woPathObjects/wo_fence_pillar_c.tscn": {
+   "63": 20
+  },
+  "woPathObjects/wo_palisade_wood_a.tscn": {
+   "37": 3
+  },
+  "woPathObjects/wo_palisade_wood_b.tscn": {
+   "38": 11
+  },
+  "woPathObjects/wo_palisade_wood_tower_a.tscn": {
+   "39": 4
+  },
+  "woPathObjects/wo_palisade_wood_tower_b.tscn": {
+   "40": 22
+  },
+  "woPathObjects/wo_pillar_a.tscn": {
+   "36": 2
+  },
+  "woPathObjects/wo_pillar_b.tscn": {
+   "36": 6
+  },
+  "woPathObjects/wo_pillar_c.tscn": {
+   "36": 2
+  },
+  "woPathObjects/wo_pillar_e.tscn": {
+   "36": 6
+  },
+  "woPathObjects/wo_road_a.tscn": {
+   "41": 75
+  },
+  "woPathObjects/wo_road_b.tscn": {
+   "42": 458
+  },
+  "woPathObjects/wo_road_c.tscn": {
+   "43": 644
+  },
+  "woPathObjects/wo_road_d.tscn": {
+   "44": 36
+  },
+  "woPathObjects/wo_road_e.tscn": {
+   "45": 8
+  },
+  "woPathObjects/wo_road_f.tscn": {
+   "46": 268
+  },
+  "woPathObjects/wo_road_g.tscn": {
+   "47": 1092
+  },
+  "woPathObjects/wo_roof_chimney_a.tscn": {
+   "85": 916
+  },
+  "woPathObjects/wo_roof_thatched_b.tscn": {
+   "95": 1
+  },
+  "woPathObjects/wo_roof_thatched_b_pillar_a.tscn": {
+   "97": 2
+  },
+  "woPathObjects/wo_roof_tiles_a.tscn": {
+   "86": 660
+  },
+  "woPathObjects/wo_roof_tiles_a_dormer_a.tscn": {
+   "103": 52
+  },
+  "woPathObjects/wo_roof_tiles_a_edge_a.tscn": {
+   "87": 158
+  },
+  "woPathObjects/wo_roof_tiles_a_pillar_a.tscn": {
+   "88": 2003
+  },
+  "woPathObjects/wo_roof_tiles_b.tscn": {
+   "98": 666
+  },
+  "woPathObjects/wo_roof_tiles_b_dormer_a.tscn": {
+   "104": 106
+  },
+  "woPathObjects/wo_roof_tiles_b_edge_a.tscn": {
+   "99": 189
+  },
+  "woPathObjects/wo_roof_wooden_a.tscn": {
+   "89": 60
+  },
+  "woPathObjects/wo_roof_wooden_a_edge_a.tscn": {
+   "90": 4
+  },
+  "woPathObjects/wo_roof_wooden_a_pillar_a.tscn": {
+   "91": 115
+  },
+  "woPathObjects/wo_roof_wooden_b.tscn": {
+   "100": 56
+  },
+  "woPathObjects/wo_roof_wooden_b_edge_a.tscn": {
+   "101": 2
+  },
+  "woPathObjects/wo_roof_wooden_b_pillar_a.tscn": {
+   "102": 108
+  },
+  "woPathObjects/wo_salad_row_path_a.tscn": {
+   "48": 263
+  },
+  "woPathObjects/wo_salad_row_path_b.tscn": {
+   "49": 217
+  },
+  "woPathObjects/wo_salad_row_path_c.tscn": {
+   "50": 119
+  },
+  "woPathObjects/wo_salad_row_path_d.tscn": {
+   "51": 87
+  },
+  "woPathObjects/wo_salad_row_path_e.tscn": {
+   "52": 103
+  },
+  "woPathObjects/wo_salad_row_path_f.tscn": {
+   "53": 195
+  },
+  "woPathObjects/wo_wall_stone_a.tscn": {
+   "29": 139
+  },
+  "woPathObjects/wo_wall_stone_tower_a.tscn": {
+   "30": 107
+  },
+  "woPathObjects/wo_wall_stone_tower_a_b.tscn": {
+   "30": 3
+  },
+  "woPathObjects/wo_wall_stone_tower_a_c.tscn": {
+   "30": 3
+  },
+  "woPathObjects/wo_wall_stone_tower_a_d.tscn": {
+   "30": 27
+  },
+  "woPathObjects/wo_wall_stone_tower_a_gate_a.tscn": {
+   "56": 5
+  },
+  "woPathObjects/wo_wall_stone_tower_a_gate_c.tscn": {
+   "56": 2
+  },
+  "woPathObjects/wo_wall_stone_tower_b.tscn": {
+   "31": 48
+  },
+  "woPathObjects/wo_wall_stone_tower_b_c.tscn": {
+   "31": 2
+  },
+  "woPathObjects/wo_wall_stone_tower_b_d.tscn": {
+   "31": 162
+  },
+  "woPathObjects/wo_wall_stone_tower_b_gate_a.tscn": {
+   "57": 3
+  },
+  "woPathObjects/wo_wall_stone_tower_b_gate_c.tscn": {
+   "57": 2
+  },
+  "woPathObjects/wo_wall_stone_tower_c.tscn": {
+   "32": 128
+  },
+  "woPathObjects/wo_wall_stone_tower_c_c.tscn": {
+   "32": 3
+  },
+  "woPathObjects/wo_wall_stone_tower_c_d.tscn": {
+   "32": 107
+  },
+  "woPathObjects/wo_wall_stone_tower_c_gate_b.tscn": {
+   "58": 1
+  },
+  "woPathObjects/wo_wall_stone_tower_c_gate_c.tscn": {
+   "58": 2
+  },
+  "woPathObjects/wo_wall_stone_tower_d.tscn": {
+   "105": 111
+  },
+  "woUnits/woBoats/wo_boat_a.tscn": {
+   "81": 12
+  },
+  "woUnits/woBoats/wo_boat_b.tscn": {
+   "81": 6
+  },
+  "woUnits/woBoats/wo_boat_c.tscn": {
+   "81": 4
+  },
+  "woUnits/woBoats/wo_boat_d.tscn": {
+   "81": 7
+  },
+  "woUnits/woBoats/wo_boat_e.tscn": {
+   "81": 5
+  },
+  "woUnits/woBoats/wo_boat_f.tscn": {
+   "81": 4
+  },
+  "woUnits/wo_hand_cart_b.tscn": {
+   "27": 10
+  },
+  "woUnits/wo_hand_cart_bb.tscn": {
+   "27": 1
+  },
+  "woUnits/wo_horse_cart_c.tscn": {
+   "25": 1
+  },
+  "woUnits/wo_ox_cart_bb.tscn": {
+   "26": 3
+  },
+  "woUnits/wo_ox_cart_cb.tscn": {
+   "26": 1
+  },
+  "wo_placeholder.tscn": {
+   "1": 6892
+  },
+  "wo_placeholder_area.tscn": {
+   "113": 2213
+  }
+ }
+}

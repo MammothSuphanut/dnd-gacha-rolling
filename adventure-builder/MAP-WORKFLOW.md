@@ -5,6 +5,7 @@
 ## เครื่องมือที่ใช้อยู่
 - **AI image gen (Gemini)** — สำหรับภาพ illustration/บรรยากาศ และแมพสไตล์ top-down ที่ไม่ต้อง grid แม่นยำ
 - **Dungeon Alchemist** — สำหรับ battle map ที่ใช้เล่นจริงใน FoundryVTT (ซื้อแล้ว)
+- **Canvas of Kings** (ซื้อตัวเต็ม 2026-10-24) — แผนที่เมือง/region แบบวาดมือ มองจากบน มีป้ายตัวหนังสือ · Claude เขียนไฟล์ `.mommap` ให้เองได้ → ดู [canvas-of-kings/COK-FORMAT.md](canvas-of-kings/COK-FORMAT.md)
 
 ## แมพ 3 ประเภท
 
