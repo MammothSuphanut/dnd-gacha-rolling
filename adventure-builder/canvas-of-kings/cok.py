@@ -378,7 +378,8 @@ PLOT_SETTINGS = ("layout_type", "roads", "buildings", "nature", "busy_roads", "r
 
 # Presets so the user only presses "Populate Plot". Pick by place, then by quarter.
 PRESETS = {
-    "cave": {"nature": False},  # no trees under the mountain
+    # no trees under the mountain; every cave district busy, with roadside deco (user's District Design, 2026-10-24)
+    "cave": {"roads": True, "buildings": True, "nature": False, "busy_roads": True, "roadside_deco": True},
     "outdoor": {"nature": True},
     "market": {"layout_type": 4, "roads": True, "buildings": True, "busy_roads": True, "roadside_deco": True},
     "residential": {"layout_type": 4, "roads": True, "buildings": True, "busy_roads": False, "roadside_deco": True},

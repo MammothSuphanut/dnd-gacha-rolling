@@ -74,7 +74,8 @@
         entry = await JournalEntry.create({ ...base, pages: [{ name: e.name, type: "text", text: { content: e.html } }] });
       } else {
         await entry.update(base);
-        const page = entry.pages.contents[0];
+        // the overview page — a city's place pages (Create-Novaris-City) are left alone
+        const page = entry.pages.find(p => !p.getFlag(FLAG, "novarisPlace")) ?? null;
         if (page) await page.update({ name: e.name, "text.content": e.html });
         else await entry.createEmbeddedDocuments("JournalEntryPage", [{ name: e.name, type: "text", text: { content: e.html } }]);
       }

@@ -74,6 +74,11 @@ LOOSE = {"unspecified"}
 # Folders with no _overview.md that get a display name instead of their folder name
 FOLDER_NAMES = {"rivers": "แม่น้ำ"}
 
+# Cities with their own map scene (tools/build_foundry_city.py): the entry goes into a folder of its own, named like
+# the city's scene folder, and its places section becomes one page per place there — not part of the overview page
+CITIES = {"aldenreich/gramark/twinhold-diarchy.md": ("aldenreich/gramark/twinhold", "Twinhold")}
+PLACES_SECTION = "## สถานที่ในเมือง"
+
 
 def folder_of(rel):
     folder = os.path.dirname(rel)
@@ -103,6 +108,7 @@ def icon_for(kind):
 
 def to_html(text):
     body = "\n".join(text.splitlines()[1:])  # the H1 is the entry name
+    body = re.sub(rf"^{PLACES_SECTION}\b.*?(?=^## |\Z)", "", body, flags=re.M | re.S)  # city places get pages of their own
     body = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", body)  # repo links mean nothing inside Foundry
     return markdown.markdown(body, extensions=["tables"])
 
@@ -143,6 +149,7 @@ def main():
         name = title_of(open(overview, encoding="utf-8").read()) if os.path.exists(overview) else FOLDER_NAMES.get(os.path.basename(rel), os.path.basename(rel))
         parent = os.path.dirname(rel) if rel != continent else None
         folders.append({"key": rel, "name": re.sub(r"\s*\(.*\)$", "", name), "parent": parent})
+        folders += [{"key": key, "name": city, "parent": rel} for f, (key, city) in CITIES.items() if os.path.dirname(f) == rel]
 
     for f in sorted(glob.glob(os.path.join(base, "**", "*.md"), recursive=True)):
         rel = os.path.relpath(f, ROOT).replace("\\", "/")
@@ -158,7 +165,7 @@ def main():
         entries.append({
             "key": rel,
             "name": title,
-            "folder": folder_of(rel),
+            "folder": CITIES[rel][0] if rel in CITIES else folder_of(rel),
             "sort": 0 if is_overview else 1,
             "type": kind,
             "html": to_html(text),

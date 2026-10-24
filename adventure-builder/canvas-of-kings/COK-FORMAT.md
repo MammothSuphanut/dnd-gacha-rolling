@@ -94,6 +94,20 @@
 - ตัวอย่างแยกแต่ละชั้นเป็น 3 layer: พื้น / ผนัง / ของแต่ง (ชั้น 1 แสดง ชั้น 2 ซ่อน) — ทุกชั้นอยู่ที่ความสูง 0 เท่ากัน ใช้การเปิด/ปิด layer สลับดูทีละชั้น แล้ว export ทีละชั้น
 - พื้นห้อง = `papl_plateau_plateau` `texture_type 2`, `edge_texture_type 1` (พื้นเรียบ) · ผนัง = `pa_fence_3` ชิ้น `wo_fence_c` (35) + เสา `wo_fence_pillar_c` · บันได `pas_stairs_stone` ชิ้น `wo_stairs_stone_a/b` (112)
 
+## Environment (แผง Environment ในแอป → `environment` ในไฟล์ · ใช้ร่วมกันทั้งแผนที่ แยกต่อ layer ไม่ได้)
+
+- แท็บ Light: Sun Light = `light_color` / `light_energy` / `light_is_negative` · Ambient = `ambient_color` / `ambient_brightness` / `ambient_contrast` / `ambient_saturation` · Shadows = `shadow_position` / `shadow_length` / `shadow_opactiy` (สะกดผิดตามแอป) · Water = `water_color` · Objects = `glow_light_alpha` (Light) / `glow_light_color` / `objects_no_smoke` / `smoke_color` · Textures = `black_level`
+- แท็บ Weather: `fog_color` / `fog_density` / `fog_brightness` / `fog_threshold` · `cloud_threshold` · `wind_direction` / `wind_strength` · `snow_*`
+- สี = RRGGBBAA · ธีมของ Twinhold (forge / sepia / deep) อยู่ใน `twinhold_atmos.py` `THEMES` · ปุ่ม Open/Save As Template ยังไม่รู้ว่าเก็บไฟล์ที่ไหน (ยังไม่มีใน `%APPDATA%\Godot\app_userdata\Canvas of Kings`)
+- **ระวัง:** แปลง Field / Logging camp สร้างต้นไม้ (`wo_tree`) ให้เองแม้ในถ้ำ — ใน twinhold มี 426 ต้น
+
+## Export (Export Mode + แผง Map Settings — จาก Twinhold 2026-10-24)
+
+- กรอบที่ export = **Map Area กรอบเส้นแดง** (ไม่ใช่ขอบหินของแผนที่) ตั้งที่แผง **Map Settings** (ไอคอนลายตารางแถบซ้าย) แท็บ Print / Digital · Print: Paper Size, Orientation, Unit (cm/inch), Width × Height, Tile Size, Fit Tile Size · Multi Pages (Horizontal/Vertical) · Map Size Scale
+- ขนาดกรอบบนแผนที่ขึ้นกับความกว้างกระดาษ (~3 ฟุตต่อ cm ที่ Map Size Scale 1) · จำนวนพิกเซล = กระดาษ (นิ้ว) × DPI — MAX DPI = 1200 · ค่าตั้งต้น A4 → กรอบเล็กแค่ราวร้อยฟุต
+- ภาพใหญ่ระดับ ~13,500 px export ได้ปกติ (PNG ~270 MB) · ภาพไปอยู่ที่ `%APPDATA%\Godot\app_userdata\Canvas of Kings\user_projects\exports\`
+- ค่า Map Area เซฟลง `map_settings` เฉพาะตอนผู้ใช้กดเซฟ — ไม่ต้องพึ่งค่านี้: หาตำแหน่งภาพจากตัวภาพเอง (วงปล่อง/จุดที่รู้พิกัด) ด้วย `world-settings/novaris/tools/crop_city_map.py`
+
 ## ยังไม่รู้
 
 - `deco_legends`
