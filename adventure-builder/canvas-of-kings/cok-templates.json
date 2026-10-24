@@ -1,0 +1,628 @@
+{
+	"_note": "Plot-tool templates + blank map, copied 2026-10-24 from the user's sample saves (test_districts, test_city, test_cave, test01) so scripts don't depend on files in the Save folder. Contents stripped; cok.district_plot rebuilds the rest.",
+	"base": {
+		"info": {
+			"application_name": "Canvas of Kings",
+			"version": "0.1.0.44",
+			"camera_pos_x": 0.1,
+			"camera_pos_z": 0.4,
+			"camera_zoom": 10.0,
+			"camera_rotation": 0.0,
+			"steam_file_id": -1,
+			"map_layers_open": false,
+			"last_uid": 18
+		},
+		"layers": {
+			"last_idx": -1,
+			"map_layers": []
+		},
+		"environment": {
+			"light_color": "d9bd8bff",
+			"light_energy": 1.0,
+			"light_is_negative": false,
+			"ambient_color": "3a677bff",
+			"ambient_brightness": 1.0,
+			"ambient_contrast": 1.0,
+			"ambient_saturation": 1.0,
+			"black_level": 0.0,
+			"shadow_position": 230.0,
+			"shadow_length": 0.7,
+			"shadow_opactiy": 0.7,
+			"glow_light_alpha": 0.5,
+			"glow_light_color": "ed850fff",
+			"water_color": "0c6b8fff",
+			"objects_no_smoke": false,
+			"smoke_color": "ffffffff",
+			"wind_direction": 45.0,
+			"wind_strength": 0.4,
+			"snow_strength": 0.0,
+			"snow_layer": 0.0,
+			"snow_is_unshaded": true,
+			"snow_color": "ffffffff",
+			"snow_ground_color": "ffffffff",
+			"fog_color": "bfbfbfff",
+			"fog_density": 0.7,
+			"fog_brightness": 1.0,
+			"fog_threshold": 0.0,
+			"cloud_threshold": 0.0
+		},
+		"map_settings": {
+			"map_area_enabled": false,
+			"grid_enabled": false,
+			"snap_map_area_to_grid": false,
+			"snap_objects_to_grid": false,
+			"grid_position_x": 0.0,
+			"grid_position_y": 0.0,
+			"map_export_is_digital": false,
+			"paper_size": 4,
+			"paper_orientation": 0,
+			"paper_unit": 0,
+			"paper_width": "21",
+			"paper_height": "29.7",
+			"grid_tile_size": "2.0",
+			"fit_tile_size": true,
+			"digital_grid_tile_size": "70",
+			"digital_rows": "24",
+			"digital_columns": "30",
+			"horizontal_map_areas": 1.0,
+			"vertical_map_areas": 1.0,
+			"show_map_area_borders": true,
+			"unlimited_grid_enabled": false,
+			"grid_style": 0,
+			"grid_size_scale": 1.0,
+			"grid_height": 1.0,
+			"grid_rotation": 0.0,
+			"grid_color": "ff000080",
+			"grid_line_thickness": 0.2,
+			"grid_shadow_enabled": false,
+			"grid_is_unshaded": true
+		},
+		"deco_tool": {},
+		"deco_images": [],
+		"deco_legends": [],
+		"objects": [],
+		"paths": [],
+		"deco_labels": []
+	},
+	"plots": {
+		"merchants": {
+			"filename": "res://Source/World/Plots/PlotsDistricts/papd_merchants.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 67,
+			"main_points": [
+				{
+					"x": -5.45,
+					"z": 2.3
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": -5.45,
+					"position_y": 0.0,
+					"position_z": 2.3,
+					"object_type": 1,
+					"assigned_path_point_idx": 0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"sub_paths": [],
+			"is_closed": true,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": -15.23,
+				"position_y": 0.0,
+				"position_z": -7.48,
+				"object_type": 113,
+				"uid": 1,
+				"assigned_path_area_idx": 33,
+				"snap_to_grid_position_offset_x": 0.043,
+				"snap_to_grid_position_offset_y": 0.044
+			},
+			"area_objects": [],
+			"layout_type": 2
+		},
+		"craftsmen": {
+			"filename": "res://Source/World/Plots/PlotsDistricts/papd_craftmen.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 66,
+			"main_points": [
+				{
+					"x": 2.97,
+					"z": -16.95
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": 2.97,
+					"position_y": 0.0,
+					"position_z": -16.95,
+					"object_type": 1,
+					"assigned_path_point_idx": 0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"sub_paths": [],
+			"is_closed": true,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": 12.93,
+				"position_y": 0.0,
+				"position_z": -6.99,
+				"object_type": 113,
+				"uid": 23,
+				"assigned_path_area_idx": 33,
+				"snap_to_grid_position_offset_x": -0.056,
+				"snap_to_grid_position_offset_y": -0.063
+			},
+			"area_objects": []
+		},
+		"farmers": {
+			"filename": "res://Source/World/Plots/PlotsDistricts/papd_farmers.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 65,
+			"main_points": [
+				{
+					"x": -25.29,
+					"z": 7.76
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": -25.29,
+					"position_y": 0.0,
+					"position_z": 7.76,
+					"object_type": 1,
+					"assigned_path_point_idx": 0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"sub_paths": [],
+			"is_closed": true,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": -15.47,
+				"position_y": 0.0,
+				"position_z": 17.58,
+				"object_type": 113,
+				"uid": 41,
+				"assigned_path_area_idx": 33,
+				"snap_to_grid_position_offset_x": 0.06,
+				"snap_to_grid_position_offset_y": 0.038
+			},
+			"area_objects": [],
+			"layout_type": 3
+		},
+		"cottages": {
+			"filename": "res://Source/World/Plots/pap_cottages.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 28,
+			"main_points": [
+				{
+					"x": 19.96,
+					"z": 11.0
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": 19.96,
+					"position_y": 0.0,
+					"position_z": 11.0,
+					"object_type": 1,
+					"assigned_path_point_idx": 0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": 13.07,
+				"position_y": 0.0,
+				"position_z": 17.89,
+				"object_type": 113,
+				"uid": 81,
+				"assigned_path_area_idx": 33,
+				"snap_to_grid_position_offset_x": -0.014,
+				"snap_to_grid_position_offset_y": -0.043
+			},
+			"area_objects": []
+		},
+		"market": {
+			"filename": "res://Source/World/Plots/pap_market.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 27,
+			"main_points": [
+				{
+					"x": 21.41,
+					"z": 46.69
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": 21.41,
+					"position_y": 0.0,
+					"position_z": 46.69,
+					"object_type": 1,
+					"assigned_path_point_idx": 0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": 25.95,
+				"position_y": 0.0,
+				"position_z": 47.01,
+				"object_type": 113,
+				"uid": 683,
+				"assigned_path_area_idx": 33
+			},
+			"area_objects": []
+		},
+		"campsite": {
+			"filename": "res://Source/World/Plots/pap_tent_camp.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 31,
+			"main_points": [
+				{
+					"x": -8.3,
+					"z": 113.83
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": -8.3,
+					"position_y": 0.0,
+					"position_z": 113.83,
+					"object_type": 1,
+					"assigned_path_point_idx": 0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": -5.14,
+				"position_y": 0.0,
+				"position_z": 113.04,
+				"object_type": 113,
+				"uid": 2072,
+				"assigned_path_area_idx": 33
+			},
+			"area_objects": []
+		},
+		"field": {
+			"filename": "res://Source/World/Plots/pap_field.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 26,
+			"main_points": [
+				{
+					"x": -39.83,
+					"z": 44.56
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": -39.83,
+					"position_y": 0.0,
+					"position_z": 44.56,
+					"object_type": 1,
+					"assigned_path_point_idx": 0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": -48.37,
+				"position_y": 0.0,
+				"position_z": 48.44,
+				"object_type": 113,
+				"uid": 235,
+				"assigned_path_area_idx": 33
+			},
+			"line_object_type_idx": 3,
+			"custom_object_object_type_row": 53,
+			"area_objects": []
+		},
+		"lumberyard": {
+			"filename": "res://Source/World/Plots/pap_lumberyard.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 30,
+			"main_points": [
+				{
+					"x": 16.21,
+					"z": 63.99
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": 16.21,
+					"position_y": 0.59,
+					"position_z": 63.99,
+					"object_type": 1,
+					"assigned_path_point_idx": 0,
+					"height_changing_position_y": 0.59
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"height_changing_position_y": 0.59,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": 14.04,
+				"position_y": 0.59,
+				"position_z": 71.21,
+				"object_type": 113,
+				"uid": 349,
+				"assigned_path_area_idx": 33,
+				"height_changing_position_y": 0.59
+			},
+			"area_objects": []
+		},
+		"forest": {
+			"filename": "res://Source/World/Plots/pap_forest.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 25,
+			"main_points": [
+				{
+					"x": 140.49,
+					"z": 77.72
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": 140.49,
+					"position_y": -4.0,
+					"position_z": 77.72,
+					"object_type": 1,
+					"assigned_path_point_idx": 0,
+					"height_changing_position_y": -4.0
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"height_changing_position_y": -4.0,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": 124.42,
+				"position_y": -4.0,
+				"position_z": 102.11,
+				"object_type": 113,
+				"uid": 570,
+				"assigned_path_area_idx": 33,
+				"height_changing_position_y": -4.0
+			},
+			"area_objects": []
+		},
+		"castle": {
+			"filename": "res://Source/World/Plots/PlotsLands/papl_wall.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 49,
+			"main_points": [
+				{
+					"x": 55.14,
+					"z": 0.3
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/woPathObjects/wo_wall_stone_tower_d.tscn",
+					"position_x": 55.14,
+					"position_y": 2.35,
+					"position_z": 0.3,
+					"rotation_y": -4.06,
+					"object_type": 105,
+					"assigned_path_point_idx": 0,
+					"height_changing_position_y": 2.35
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"height_changing_position_y": 2.35,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": 57.56,
+				"position_y": 2.35,
+				"position_z": 4.55,
+				"object_type": 113,
+				"uid": 27,
+				"assigned_path_area_idx": 33,
+				"height_changing_position_y": 2.35,
+				"snap_to_grid_position_offset_x": 0.094,
+				"snap_to_grid_position_offset_y": -0.004
+			},
+			"area_objects": []
+		},
+		"lake": {
+			"filename": "res://Source/World/Plots/PlotsWater/papw_lake.tscn",
+			"position_x": 0.0,
+			"position_y": 0.0,
+			"position_z": 0.0,
+			"path_type": 32,
+			"main_points": [
+				{
+					"x": -1.48,
+					"z": 3.18
+				}
+			],
+			"in_out_handles": [],
+			"points_objects": [
+				{
+					"filename": "res://Source/World/WorldObjects/wo_placeholder.tscn",
+					"position_x": -1.48,
+					"position_y": -0.08,
+					"position_z": 3.18,
+					"object_type": 1,
+					"assigned_path_point_idx": 0,
+					"height_changing_position_y": -0.08
+				}
+			],
+			"lines_objects": [],
+			"lines_custom_objects": [],
+			"lines_leaned_points": [],
+			"lines_custom_scales": [
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"is_closed": true,
+			"height_changing_position_y": -0.08,
+			"click_and_placing_wo": {
+				"filename": "res://Source/World/WorldObjects/wo_placeholder_area.tscn",
+				"position_x": -1.32,
+				"position_y": -0.08,
+				"position_z": 3.75,
+				"object_type": 113,
+				"uid": 44,
+				"assigned_path_area_idx": 33,
+				"height_changing_position_y": -0.08
+			},
+			"area_objects": []
+		}
+	}
+}

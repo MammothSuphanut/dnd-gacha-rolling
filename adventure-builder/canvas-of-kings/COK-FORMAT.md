@@ -49,6 +49,32 @@
 
 เลขอื่นที่รู้แล้ว: hedge 1 · hedge_trees 2 · salad_row 3 · palisade 9/10 · fence 14/16 · forest 25 · field 26 · market 27 · cottages 28 · lumberyard 30 · tent_camp 31 · lake 32 · ocean 33 · bridge 34/35 · river_deep 36 · farmers 65 · merchants 67 — ดู `cok-types.json`
 
+## Plot tool — แปลงทั้งหมดในแอป (ชื่อจากแอป ยืนยันโดยผู้ใช้ 2026-10-24)
+
+| ชื่อในแอป | ไฟล์ | path_type | แอปใส่อะไรให้ |
+|---|---|---|---|
+| Forest | `Plots/pap_forest` | 25 | ต้นไม้ พุ่มไม้ |
+| Field | `Plots/pap_field` | 26 | ทุ่งนามีรั้ว แถวพืช |
+| Market | `Plots/pap_market` | 27 | แผงตลาดกระจายเป็นกลุ่ม |
+| Cottages | `Plots/pap_cottages` | 28 | กระท่อม + รั้วล้อม |
+| Logging camp | `Plots/pap_lumberyard` | 30 | โรงไม้ กองซุง |
+| Campsite | `Plots/pap_tent_camp` | 31 | เต็นท์ + กองไฟ |
+| District of Farmers / Craftsmen / Merchants | `Plots/PlotsDistricts/papd_farmers/craftmen/merchants` | 65 / 66 / 67 | บ้านสำเร็จรูป ถนนภายใน คน เกวียน ฯลฯ · District Design ที่ผู้ใช้ชอบ = `layout_type: 4` |
+| Lake | `Plots/PlotsWater/papw_lake` | 32 | น้ำ (วาดจากขอบเอง) · สีของแปลงเอง = `water_color: "d42a00ff"` (RRGGBBAA) + `is_individual: true` (ลาวาของผู้ใช้ใน twinhold) · Gradient 0.5 ไม่ถูกเซฟลงไฟล์ (น่าจะเป็นค่าตั้งต้น) |
+| Sea | `Plots/PlotsWater/papw_ocean` | 33 | ทะเล |
+| Plateau | `Plots/Plateaus/papl_plateau_plateau` | 68 | ที่ราบสูง/หิน/พื้นปู (texture_type) |
+| **Castle surface** | `Plots/PlotsLands/papl_wall` | 49 | **ลานปราสาทยกพื้นทึบ มีกำแพง+หอคอยรอบ** — ไม่ใช่กำแพงล้อมลานโล่ง (ของที่วางข้างในจะจม) |
+| Citizens | `Plots/pap_citizens` | ? (ยังไม่มีตัวอย่าง) | ฝูงคน |
+
+**ค่าตั้งของแปลง (เก็บต่อแปลง เฉพาะเมื่อผู้ใช้เคยเปลี่ยน — จาก `twinhold-level1-filled`):** `layout_type` (District Design: 2/3 ค่าตั้งต้นของพ่อค้า/ชาวนา · **4 = ช่องหลายเหลี่ยม** ที่ผู้ใช้ชอบ · ปุ่ม Triangles = ค่าใดค่าหนึ่งในชุดนี้ ยังไม่ยืนยันเลข) · `roads` · `buildings` · `nature` · `busy_roads` · `roadside_deco` (true/false) · **จากแปลง Field ใน `twinhold` ของผู้ใช้ (2026-10-24):** Density = `custom_density` (0.5–0.9 ที่ผู้ใช้ใช้) · ปิด Populate Border = `has_no_border: true` · Layout Rotation = `layout_rotation` (องศา 0–180) — ยังไม่เห็นในแปลง District เพราะผู้ใช้ไม่ได้เปลี่ยน · ชุดค่าตามสถานที่: `cok.PRESETS` / `cok.preset(place, quarter)` — เมืองในถ้ำ `nature: false` เสมอ
+
+แปลงที่ "สร้างของเอง" (ทุกอันยกเว้น Lake/Sea/Plateau/Castle surface) — ไฟล์ที่เขียนมาจะว่าง ผู้ใช้ต้องขยับแปลงในแอปให้สร้าง · ใช้แปลงที่ผู้ใช้เซฟเป็นแม่แบบ (`cok.district_plot`) แล้วลบของข้างในทิ้ง
+- **แม่แบบแปลงทุกชนิด + แผนที่เปล่า อยู่ใน [`cok-templates.json`](cok-templates.json) แล้ว** (`cok.PLOT_TEMPLATES[kind]`, `cok.Map()` ไม่ต้องใส่ไฟล์) — ไม่ต้องพึ่งไฟล์ในโฟลเดอร์ Save อีก (ไฟล์ตัวอย่างเดิมทั้งหมดย้ายไป `Save/backup/old/` เมื่อ 2026-10-24 ตามที่ผู้ใช้ขอล้างโฟลเดอร์ Save)
+- `cok.district_plot` ใช้ได้กับทุกชนิดแปลง (2026-10-24): แม่แบบ District/Cottages จาก `test_districts` · Market/Campsite/Field/Castle surface จาก `test_city` · Castle surface เก็บความสูง 2.35 + หอคอย `wo_wall_stone_tower_d` ที่มุมให้เอง · `sub_paths` ใส่เฉพาะชนิดที่แม่แบบมี
+- ค่าตั้ง (`layout_type`, `nature` ฯลฯ) ใส่เฉพาะแปลง District — Market/Campsite/Field/Cottages ยังไม่เคยเห็นค่าตั้งในไฟล์ จึงปล่อยตามแม่แบบ · ผลลองใน `twinhold-level1-plots` (2026-10-24): Field / Cottages / Castle surface ขึ้นได้ · **Campsite ~19,800 ตร.ฟุต ขึ้น "area too large" แล้วไม่สร้างของ** — แอปมีเพดานขนาดต่อชนิดแปลง
+- **ขนาดแปลงที่ใช้ได้จริง** (ตร.ฟุต จากไฟล์ผู้ใช้): Campsite 3,200–5,100 · Market ~6,500 · Cottages 6,400–33,700 · Field 19,000–112,000 · Logging camp 10,300–63,600 · Castle surface 600–17,800 · Merchants 14,500–80,400 · Craftsmen 55,000–140,800 · Farmers 68,600–202,300 → พื้นที่ใหญ่กว่านี้ให้ผ่าเป็นหลายแปลงคั่นทางเดิน
+- **ยืนยันเพิ่มจาก `twinhold` ที่ผู้ใช้ Populate แล้ว (2026-10-24):** Craftsmen **213,400** ขึ้นได้ (769 ชิ้น) · Merchants **98,900** ได้ · Logging camp เล็กสุด **6,900** ได้ · Campsite ≤ 4,200 ได้ทุกแปลง · Market ≤ 5,930 ได้ทุกแปลง · แปลงเศษ < 3,000 ตร.ฟุต (เหลือจากการผ่า) ผู้ใช้ไม่ได้ Populate — ควรรวมเข้าแปลงข้างเคียง
+
 ## ทำถ้ำ / ชั้นใต้ดิน (จาก `test_cave`)
 
 - ผนังถ้ำ = **ที่ราบสูงหลายก้อน** (`papl_plateau_plateau`, 44 ก้อนในตัวอย่าง) `texture_type` 1 (หิน) บางก้อน 12/14 · ความสูงต่างกัน 0–5 ให้ดูขรุขระ · ช่องว่างระหว่างก้อน = ทางเดิน/โพรง

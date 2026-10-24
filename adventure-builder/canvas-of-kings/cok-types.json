@@ -1,5 +1,5 @@
 {
- "_note": "Learned from user-saved sample maps (test01, test03, test_city, test_cave, test_floor) 2026-10-24, Canvas of Kings 0.1.0.44. Values = the type numbers seen and how often.",
+ "_note": "Learned from user-saved sample maps (test01, test03, test_city, test_cave, test_floor, test_districts) 2026-10-24, Canvas of Kings 0.1.0.44. Values = the type numbers seen and how often.",
  "path_types": {
   "Paths/PathsRoofs/par_roof_thatched.tscn": {
    "43": 1
@@ -44,8 +44,8 @@
    "10": 12
   },
   "Paths/pa_road.tscn": {
-   "17": 7,
-   "23": 233,
+   "17": 20,
+   "23": 242,
    "18": 52,
    "19": 101,
    "22": 184,
@@ -67,11 +67,14 @@
   "Plots/Plateaus/papl_plateau_plateau.tscn": {
    "68": 278
   },
+  "Plots/PlotsDistricts/papd_craftmen.tscn": {
+   "66": 1
+  },
   "Plots/PlotsDistricts/papd_farmers.tscn": {
-   "65": 1
+   "65": 2
   },
   "Plots/PlotsDistricts/papd_merchants.tscn": {
-   "67": 1
+   "67": 2
   },
   "Plots/PlotsLands/papl_wall.tscn": {
    "49": 27
@@ -86,7 +89,7 @@
    "57": 1
   },
   "Plots/pap_cottages.tscn": {
-   "28": 12
+   "28": 13
   },
   "Plots/pap_field.tscn": {
    "26": 26
@@ -146,58 +149,7 @@
     0.523675978183746,
     0.524060463905335,
     0.527087712287903,
-    0.539525473117828,
-    0.571597325801849,
-    0.578208541870117,
-    0.60399819612503,
-    0.605841016769409,
-    0.702439826726913,
-    0.75475389957428,
-    0.849986231327057,
-    0.887433552742004,
-    0.934772074222565,
-    0.983626183494925,
-    1.07683458301419,
-    1.0770660161972,
-    1.13111172617453,
-    1.14578194022178,
-    1.16258298209654,
-    1.18062701821327,
-    1.18728635311127,
-    1.24644926786423,
-    1.27318277359009,
-    1.2766939997673,
-    1.31203550100326,
-    1.32923332452774,
-    1.35057593026592,
-    1.35340565637622,
-    1.49827817082405,
-    1.51139608621597,
-    1.54799486398697,
-    1.55984289646149,
-    1.56908657550812,
-    1.60462659597396,
-    1.61042056083679,
-    1.61608395576477,
-    1.64109201431274,
-    1.66314928531647,
-    1.67957513332367,
-    1.6878922700882,
-    1.69900755882263,
-    1.71350114345551,
-    1.71821074485779,
-    1.71999938488007,
-    1.72597441673279,
-    1.75054230690002,
-    1.75526864528656,
-    1.77516578137875,
-    1.78262721300125,
-    1.78277094364166,
-    1.78408994674683,
-    1.78418686389923,
-    1.79235817790031,
-    1.7935848236084,
-    1.794465097785
+    0.539525473117828
    ],
    "c_o_type": [
     23
@@ -250,58 +202,82 @@
  },
  "object_types": {
   "woBuildings/woHuts/wo_hut_cottage_a.tscn": {
-   "23": 142
+   "23": 155
   },
   "woBuildings/woHuts/wo_hut_cottage_b.tscn": {
-   "23": 106
-  },
-  "woBuildings/woHuts/wo_hut_cottage_c.tscn": {
-   "23": 118
-  },
-  "woBuildings/woHuts/wo_hut_cottage_cb.tscn": {
    "23": 122
   },
+  "woBuildings/woHuts/wo_hut_cottage_c.tscn": {
+   "23": 148
+  },
+  "woBuildings/woHuts/wo_hut_cottage_cb.tscn": {
+   "23": 151
+  },
   "woBuildings/woHuts/wo_hut_tiles_a.tscn": {
-   "148": 1
+   "148": 22
+  },
+  "woBuildings/woHuts/wo_hut_tiles_ab.tscn": {
+   "148": 14
+  },
+  "woBuildings/woHuts/wo_hut_tiles_c.tscn": {
+   "148": 4
+  },
+  "woBuildings/woHuts/wo_hut_tiles_cb.tscn": {
+   "148": 9
+  },
+  "woBuildings/woHuts/wo_hut_wooden_a.tscn": {
+   "147": 8
+  },
+  "woBuildings/woHuts/wo_hut_wooden_b.tscn": {
+   "147": 12
+  },
+  "woBuildings/woHuts/wo_hut_wooden_bb.tscn": {
+   "147": 10
+  },
+  "woBuildings/woHuts/wo_hut_wooden_d.tscn": {
+   "147": 6
+  },
+  "woBuildings/woHuts/wo_hut_wooden_e.tscn": {
+   "147": 1
   },
   "woBuildings/wo_market_stall_a.tscn": {
-   "21": 11
+   "21": 15
   },
   "woBuildings/wo_market_stall_b.tscn": {
-   "21": 3
+   "21": 9
   },
   "woBuildings/wo_market_stall_c.tscn": {
-   "21": 6
+   "21": 11
   },
   "woBuildings/wo_market_stall_d.tscn": {
-   "21": 5
+   "21": 8
   },
   "woBuildings/wo_market_stall_e.tscn": {
-   "21": 5
+   "21": 8
   },
   "woBuildings/wo_market_stall_f.tscn": {
-   "21": 8
+   "21": 13
   },
   "woBuildings/wo_market_stall_g.tscn": {
-   "21": 4
+   "21": 8
   },
   "woBuildings/wo_market_stall_h.tscn": {
-   "21": 8
+   "21": 14
   },
   "woBuildings/wo_market_stall_i.tscn": {
-   "21": 6
+   "21": 11
   },
   "woBuildings/wo_market_stall_j.tscn": {
-   "21": 6
+   "21": 9
   },
   "woBuildings/wo_market_stall_k.tscn": {
-   "21": 2
+   "21": 7
   },
   "woBuildings/wo_market_stall_l.tscn": {
-   "21": 4
+   "21": 7
   },
   "woBuildings/wo_market_stall_m.tscn": {
-   "21": 8
+   "21": 12
   },
   "woBuildings/wo_tavern_a.tscn": {
    "24": 5
@@ -328,16 +304,16 @@
    "18": 7
   },
   "woBuildings/wo_well_a.tscn": {
-   "13": 24
+   "13": 25
   },
   "woBuildings/wo_well_b.tscn": {
-   "13": 31
+   "13": 32
   },
   "woBuildings/wo_well_c.tscn": {
-   "13": 18
+   "13": 20
   },
   "woBuildings/wo_well_d.tscn": {
-   "13": 31
+   "13": 35
   },
   "woDecos/woDecosRooms/wo_anvil_a.tscn": {
    "136": 3
@@ -712,103 +688,106 @@
    "11": 29
   },
   "woDecos/wo_branch_a.tscn": {
-   "14": 42
+   "14": 47
   },
   "woDecos/wo_branch_b.tscn": {
-   "14": 32
+   "14": 33
   },
   "woDecos/wo_branch_c.tscn": {
-   "14": 41
+   "14": 45
   },
   "woDecos/wo_branch_d.tscn": {
    "14": 25
   },
   "woDecos/wo_bush_a.tscn": {
-   "4": 392
+   "4": 397
   },
   "woDecos/wo_bush_b.tscn": {
-   "4": 409
-  },
-  "woDecos/wo_bush_c.tscn": {
    "4": 415
   },
-  "woDecos/wo_bush_d.tscn": {
-   "4": 413
-  },
-  "woDecos/wo_bush_e.tscn": {
+  "woDecos/wo_bush_c.tscn": {
    "4": 420
   },
+  "woDecos/wo_bush_d.tscn": {
+   "4": 427
+  },
+  "woDecos/wo_bush_e.tscn": {
+   "4": 424
+  },
   "woDecos/wo_bush_f.tscn": {
-   "4": 411
+   "4": 420
   },
   "woDecos/wo_bush_g.tscn": {
-   "4": 414
+   "4": 423
   },
   "woDecos/wo_bush_h.tscn": {
-   "4": 466
+   "4": 470
   },
   "woDecos/wo_bush_i.tscn": {
-   "4": 382
+   "4": 387
   },
   "woDecos/wo_bush_j.tscn": {
-   "4": 383
+   "4": 389
   },
   "woDecos/wo_campfire_a.tscn": {
-   "12": 2
+   "12": 3
   },
   "woDecos/wo_campfire_b.tscn": {
-   "12": 1
+   "12": 2
   },
   "woDecos/wo_campfire_d.tscn": {
    "12": 1
   },
   "woDecos/wo_crane_a.tscn": {
-   "84": 9
+   "84": 15
   },
   "woDecos/wo_crane_b.tscn": {
-   "84": 4
+   "84": 14
   },
   "woDecos/wo_crane_c.tscn": {
-   "84": 4
+   "84": 12
   },
   "woDecos/wo_crate_a.tscn": {
-   "7": 31
+   "7": 36
   },
   "woDecos/wo_crate_b.tscn": {
-   "7": 44
+   "7": 47
   },
   "woDecos/wo_crate_c.tscn": {
-   "7": 32
+   "7": 37
   },
   "woDecos/wo_crate_d.tscn": {
-   "7": 32
-  },
-  "woDecos/wo_crate_e.tscn": {
-   "7": 42
-  },
-  "woDecos/wo_crate_f.tscn": {
-   "7": 39
-  },
-  "woDecos/wo_crate_g.tscn": {
-   "7": 38
-  },
-  "woDecos/wo_crate_h.tscn": {
-   "7": 35
-  },
-  "woDecos/wo_crate_i.tscn": {
    "7": 33
   },
+  "woDecos/wo_crate_e.tscn": {
+   "7": 50
+  },
+  "woDecos/wo_crate_f.tscn": {
+   "7": 43
+  },
+  "woDecos/wo_crate_g.tscn": {
+   "7": 44
+  },
+  "woDecos/wo_crate_h.tscn": {
+   "7": 46
+  },
+  "woDecos/wo_crate_i.tscn": {
+   "7": 39
+  },
   "woDecos/wo_crate_j.tscn": {
-   "7": 32
+   "7": 34
   },
   "woDecos/wo_crate_k.tscn": {
-   "7": 32
+   "7": 35
   },
   "woDecos/wo_crate_l.tscn": {
    "7": 43
   },
   "woDecos/wo_crate_m.tscn": {
-   "7": 38
+   "7": 42
+  },
+  "woDecos/wo_flag_rope_a.tscn": {
+   "123": 32
   },
   "woDecos/wo_flowers_a.tscn": {
    "20": 10
@@ -832,46 +811,46 @@
    "64": 7
   },
   "woDecos/wo_goods_a.tscn": {
-   "9": 40
+   "9": 41
   },
   "woDecos/wo_goods_b.tscn": {
    "9": 4
   },
   "woDecos/wo_goods_c.tscn": {
-   "9": 3
+   "9": 4
   },
   "woDecos/wo_goods_d.tscn": {
    "9": 3
   },
   "woDecos/wo_goods_e.tscn": {
-   "9": 2
+   "9": 3
   },
   "woDecos/wo_goods_f.tscn": {
    "9": 1
   },
   "woDecos/wo_goods_g.tscn": {
-   "9": 2
+   "9": 3
   },
   "woDecos/wo_grass_a.tscn": {
-   "2": 1115
+   "2": 1264
   },
   "woDecos/wo_grass_b.tscn": {
-   "2": 85
+   "2": 94
   },
   "woDecos/wo_grass_c.tscn": {
-   "2": 77
+   "2": 87
   },
   "woDecos/wo_grass_d.tscn": {
-   "2": 80
+   "2": 87
   },
   "woDecos/wo_grass_e.tscn": {
-   "2": 79
+   "2": 89
   },
   "woDecos/wo_grass_f.tscn": {
-   "2": 83
+   "2": 90
   },
   "woDecos/wo_grass_g.tscn": {
-   "2": 63
+   "2": 66
   },
   "woDecos/wo_smoke_a.tscn": {
    "109": 23
@@ -940,7 +919,7 @@
    "8": 13
   },
   "woDecos/wo_table_c.tscn": {
-   "8": 18
+   "8": 19
   },
   "woDecos/wo_table_d.tscn": {
    "8": 20
@@ -949,7 +928,7 @@
    "8": 16
   },
   "woDecos/wo_table_f.tscn": {
-   "8": 13
+   "8": 14
   },
   "woDecos/wo_tool_a.tscn": {
    "16": 1
@@ -958,41 +937,41 @@
    "6": 16
   },
   "woDecos/wo_tool_axe_on_wood_b.tscn": {
-   "6": 27
+   "6": 28
   },
   "woDecos/wo_tool_b.tscn": {
    "16": 2
   },
   "woDecos/wo_tree_a.tscn": {
-   "3": 1040
+   "3": 1052
   },
   "woDecos/wo_tree_ab.tscn": {
-   "3": 1075,
+   "3": 1090,
    "54": 54
   },
   "woDecos/wo_tree_ac.tscn": {
-   "3": 1120
+   "3": 1137
   },
   "woDecos/wo_tree_b.tscn": {
-   "3": 1089
+   "3": 1112
   },
   "woDecos/wo_tree_c.tscn": {
-   "3": 1042
+   "3": 1050
   },
   "woDecos/wo_tree_cb.tscn": {
-   "3": 1017
+   "3": 1030
   },
   "woDecos/wo_trunk_a.tscn": {
-   "6": 20
+   "6": 21
   },
   "woDecos/wo_trunk_b.tscn": {
-   "6": 26
+   "6": 28
   },
   "woDecos/wo_trunk_c.tscn": {
-   "6": 27
+   "6": 28
   },
   "woDecos/wo_trunk_d.tscn": {
-   "6": 25
+   "6": 26
   },
   "woDecos/wo_trunk_e.tscn": {
    "6": 26
@@ -1031,19 +1010,19 @@
    "70": 3
   },
   "woDecos/wo_wood_pile_a.tscn": {
-   "10": 15
+   "10": 21
   },
   "woDecos/wo_wood_pile_b.tscn": {
-   "10": 27
+   "10": 39
   },
   "woDecos/wo_wood_pile_c.tscn": {
-   "10": 24
+   "10": 31
   },
   "woDecos/wo_wood_pile_d.tscn": {
-   "10": 29
+   "10": 34
   },
   "woDecos/wo_wood_pile_e.tscn": {
-   "10": 24
+   "10": 34
   },
   "woPathObjects/woPathObjectsRooms/wo_room_wood_wall_b.tscn": {
    "116": 4
@@ -1125,7 +1104,7 @@
    "142": 4
   },
   "woPathObjects/wo_road_a.tscn": {
-   "41": 75
+   "41": 110
   },
   "woPathObjects/wo_road_b.tscn": {
    "42": 458
@@ -1143,7 +1122,7 @@
    "46": 268
   },
   "woPathObjects/wo_road_g.tscn": {
-   "47": 1092
+   "47": 1122
   },
   "woPathObjects/wo_roof_chimney_a.tscn": {
    "85": 916
@@ -1298,6 +1277,12 @@
   "woUnits/wo_bird_a.tscn": {
    "22": 6
   },
+  "woUnits/wo_citizen_a.tscn": {
+   "28": 192
+  },
+  "woUnits/wo_hand_cart_a.tscn": {
+   "27": 9
+  },
   "woUnits/wo_hand_cart_b.tscn": {
    "27": 19
   },
@@ -1307,8 +1292,20 @@
   "woUnits/wo_horse_a.tscn": {
    "83": 3
   },
+  "woUnits/wo_horse_cart_a.tscn": {
+   "25": 3
+  },
+  "woUnits/wo_horse_cart_b.tscn": {
+   "25": 11
+  },
+  "woUnits/wo_horse_cart_bb.tscn": {
+   "25": 16
+  },
   "woUnits/wo_horse_cart_c.tscn": {
-   "25": 1
+   "25": 15
+  },
+  "woUnits/wo_horse_cart_cb.tscn": {
+   "25": 11
   },
   "woUnits/wo_ox_a.tscn": {
    "83": 3
@@ -1320,10 +1317,10 @@
    "26": 1
   },
   "wo_placeholder.tscn": {
-   "1": 11350
+   "1": 11424
   },
   "wo_placeholder_area.tscn": {
-   "113": 2779
+   "113": 2805
   }
  }
 }
