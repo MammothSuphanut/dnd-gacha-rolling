@@ -42,6 +42,14 @@
 | ✨ นครบริวาร Jyotipura | [Granthapura](granthapura.md) · [Dipika](dipika.md) · [Padmaghat](padmaghat.md) · [Nilaghat](nilaghat.md) · [Shikhara](shikhara.md) · [Somagiri](somagiri.md) · [Velapura](velapura.md) |
 | ✨ Samudra | [Ratnakara](ratnakara.md) · [Tarangapura](tarangapura.md) · [Shankhapura](shankhapura.md) · [Mukta](mukta.md) · [Pravala](pravala.md) · [Nadipura](nadipura.md) · [Ketaki](ketaki.md) · [Kadali](kadali.md) · [Setu](setu.md) |
 | ✨ เพื่อนบ้านทางใต้ | [Chakan Wilds](../chakan-wilds/_overview.md) — เผ่ามายา |
+| เกาะ ✨ | [Ekadvipa](ekadvipa.md) · [Manidvipa](manidvipa.md) · [Chandradvipa](chandradvipa.md) · [Meghadvipa](meghadvipa.md) · [Nandika](nandika.md) · [Bindu](bindu.md) · [Velatira](velatira.md) |
+
+### แม่น้ำ
+
+- **[Dipavati River](rivers/dipavati-river.md)** — แม่น้ำ · แม่น้ำชายแดน Jyoti Marga กับเผ่ามายา
+- **[Kusha River](rivers/kusha-river.md)** — แม่น้ำ · สาขาของ Dipavati River
+- **[Mauna River](rivers/mauna-river.md)** — แม่น้ำ
+- **[Padmini River](rivers/padmini-river.md)** — แม่น้ำ · สาขาของ Dipavati River
 
 ## ผู้คนและวัฒนธรรม
 

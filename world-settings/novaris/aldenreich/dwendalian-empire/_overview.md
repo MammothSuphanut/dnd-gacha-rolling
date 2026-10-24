@@ -59,6 +59,22 @@
 | ทหาร | [Ashguard Garrison](ashguard-garrison.md) · [Rockguard Garrison](rockguard-garrison.md) · [Griffon Roost](griffon-roost.md) |
 | สถานที่พิเศษ | [Lethe Sanatorium](lethe-sanatorium.md) · [Shadowfall Ruins](shadowfall-ruins.md) · [Hexvale](hexvale.md) |
 | ภูมิประเทศ | [Broadfield](broadfield.md) · [Corevale](corevale.md) · [Pearlwood](pearlwood.md) · [Greyrock Mountains](greyrock-mountains.md) · [Cloudpeak Mountains](cloudpeak-mountains.md) · [Steamhills](steamhills.md) · [Silver Ridge](silver-ridge.md) · [Ashpeaks](ashpeaks.md) |
+| หมู่เกาะ ✨ | [Saltfrost Isles](saltfrost-isles/_overview.md) |
+
+### แม่น้ำ
+
+- **[Birch River](rivers/birch-river.md)** — แม่น้ำ · ทางล่องซุง
+- **[Elan River](rivers/elan-river.md)** — แม่น้ำ · สาขาของ Griffon River
+- **[Goldmead River](rivers/goldmead-river.md)** — แม่น้ำ · แม่น้ำชลประทาน
+- **[Greyflow River](rivers/greyflow-river.md)** — แม่น้ำ · แม่น้ำอุตสาหกรรม
+- **[Griffon River](rivers/griffon-river.md)** — แม่น้ำ
+- **[Hexwater River](rivers/hexwater-river.md)** — แม่น้ำ · สาขาของ Goldmead River
+- **[Hop River](rivers/hop-river.md)** — แม่น้ำ
+- **[Lethe River](rivers/lethe-river.md)** — แม่น้ำ · แม่น้ำในตำนาน
+- **[Mantle River](rivers/mantle-river.md)** — แม่น้ำ · เส้นเลือดของเขต Mantle
+- **[Stillwater River](rivers/stillwater-river.md)** — แม่น้ำ · สาขาของ Lethe River
+- **[Thistle River](rivers/thistle-river.md)** — แม่น้ำ · สาขาของ Mantle River
+- **[Warden River](rivers/warden-river.md)** — แม่น้ำ · แม่น้ำชายแดน
 
 ## ผู้คนและวัฒนธรรม
 

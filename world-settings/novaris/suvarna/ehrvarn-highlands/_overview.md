@@ -38,6 +38,14 @@
 | ภูมิประเทศ | [Helm Peaks](helm-peaks.md) |
 | ✨ เมืองของเผ่า | [Hafenburg](hafenburg.md) · [Westwacht](westwacht.md) · [Ostwacht](ostwacht.md) · [Kampfburg](kampfburg.md) · [Lehrberg](lehrberg.md) · [Hammerstein](hammerstein.md) · [Schildberg](schildberg.md) · [Ahnenhall](ahnenhall.md) · [Adlerhorst](adlerhorst.md) · [Strandfeste](strandfeste.md) · [Kornau](kornau.md) |
 
+### แม่น้ำ
+
+- **[Ehrach River](rivers/ehrach-river.md)** — แม่น้ำ · แม่น้ำใหญ่ของเผ่า Ehrvarian
+- **[Helmach River](rivers/helmach-river.md)** — แม่น้ำ · สาขาของ Ehrach River
+- **[Kalte River](rivers/kalte-river.md)** — แม่น้ำ · แม่น้ำสั้นชายฝั่ง
+- **[Klinge River](rivers/klinge-river.md)** — แม่น้ำ · สาขาของ Schwarzach River
+- **[Schwarzach River](rivers/schwarzach-river.md)** — แม่น้ำ
+
 ## ผู้คนและวัฒนธรรม
 
 - **นักรบ Ehrvarian** ทุกเผ่าพันธุ์ · ผู้ชายสวมหมวกเกราะ ถอดเฉพาะตอนอยู่กับคนรัก

@@ -24,10 +24,10 @@
 
 | ชื่อ CR | ชื่อ Novaris | อ่านว่า | origin | ชื่อ | เอกสาร | lore | แผนที่ |
 |---|---|---|---|---|---|---|---|
-| Lucidian Ocean | **Sundering Ocean** | ซัน-เดอ-ริง โอเชียน | — มหาสมุทรกลางโลกที่ Nethmar จม (ผนึก Tharizdun อยู่ใต้ทะเลส่วนนี้) | ✅ | ✅ | ☐ | ✅ |
-| Ozmit Sea | **Donghai** (東海) | ตง-ไห่ | — ทะเลตะวันออกในสายตาคน Shenzhou (ระหว่าง Shenzhou กับ Voxaria) | ✅ | ✅ | ☐ | ✅ |
-| Beryl Sea | **Sagara** (สาคร) | สา-คอน | [marquet/unspecified/beryl-sea.md](../../exandria/marquet/unspecified/beryl-sea.md) — ทะเลทางใต้ติด Suvarna | ✅ | ✅ | ☐ | ✅ |
-| Frigid Depths | **The Pale Deep** | เดอะ เพล ดีพ | — ทะเลเหนือ ระหว่าง Voxaria, Aldenreich และ Eiselcross | ✅ | ✅ | ☐ | ✅ |
+| Lucidian Ocean | **Sundering Ocean** | ซัน-เดอ-ริง โอเชียน | [seas/sundering-ocean.md](../seas/sundering-ocean.md) — มหาสมุทรกลางโลกที่ Nethmar จม (ผนึก Tharizdun อยู่ใต้ทะเลส่วนนี้) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ozmit Sea | **Donghai** (東海) | ตง-ไห่ | [seas/donghai.md](../seas/donghai.md) — ทะเลตะวันออกในสายตาคน Shenzhou (ระหว่าง Shenzhou กับ Voxaria) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Beryl Sea | **Sagara** (สาคร) | สา-คอน | [marquet/unspecified/beryl-sea.md](../../exandria/marquet/unspecified/beryl-sea.md) · [seas/sagara.md](../seas/sagara.md) — ทะเลทางใต้ติด Suvarna | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Frigid Depths | **The Pale Deep** | เดอะ เพล ดีพ | [seas/the-pale-deep.md](../seas/the-pale-deep.md) — ทะเลเหนือ ระหว่าง Voxaria, Aldenreich และ Eiselcross | ✅ | ✅ | ✏️ ร่าง | ✅ |
 
 ## ภูมิภาค / ประเทศ
 
@@ -95,7 +95,7 @@
 | ภูมิภาค | Hellcatch Valley | **Ulfdal** | อุลฟ์-ดาล | หุบเขาหมาป่า | [hellcatch-valley/_overview.md](../../exandria/marquet/hellcatch-valley/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | ภูมิภาค | Taloned Highlands | **Ehrvarn Highlands** | แอร์-วาร์น | ที่ราบสูงของเผ่า Ehrvarn | [taloned-highlands/_overview.md](../../exandria/marquet/taloned-highlands/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | ภูมิภาค | Aggrad Mountains | **Jarnfell** | ยาร์น-เฟลล์ | ภูเขาเหล็ก — เมืองท่าไวกิ้ง Shammel | [aggrad-mountains/_overview.md](../../exandria/marquet/aggrad-mountains/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
-| ภูมิภาค | — (Novaris ตั้งเอง 2026-10-23) | **Chakan Wilds** | ชา-กัน | ทุ่งป่า (คำแบบมายา) — ดินแดนเผ่ามายา 4 เผ่า | [chakan-wilds/_overview.md](../suvarna/chakan-wilds/_overview.md) | ✅ | ✅ | ✅ ร่าง | ☐ |
+| ภูมิภาค | — (Novaris ตั้งเอง 2026-10-23) | **Chakan Wilds** | ชา-กัน | ทุ่งป่า (คำแบบมายา) — ดินแดนเผ่ามายา 4 เผ่า | [chakan-wilds/_overview.md](../suvarna/chakan-wilds/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 
 ### 🌊 Eldmere
 
@@ -734,3 +734,284 @@
 | Handase | **Chakha** | มายา · Ha | [chakha.md](../suvarna/chakan-wilds/chakha.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Arisason | **Ikpet** | มายา · Ha | [ikpet.md](../suvarna/chakan-wilds/ikpet.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | Njombabu | **Kuchil** | มายา · Ha | [kuchil.md](../suvarna/chakan-wilds/kuchil.md) | ✅ | ✅ | ✅ ร่าง | ✅ |
+
+## เกาะ (ตั้งชื่อ 2026-10-23)
+
+> ไม่มีใน CR — เกาะที่ Azgaar สร้างแต่ไม่มีชื่อ ตั้งชื่อครบทุกเกาะตามธีมของทวีป · เกาะที่อยู่ใกล้กันรวมเป็นหมู่เกาะ · ทุกเกาะมีไฟล์และป้าย added บนแผนที่ (byte-patch `novaris.map` = `novaris-v3.map`)
+> เกาะที่มีชื่อและไฟล์อยู่แล้วแต่ป้ายลอยในทะเล (Northend, Icelet, Venom Isle, Isoletta, Vulcana, Corallina, Isola Nera, Feral Isle) ไม่ได้ตั้งชื่อซ้ำ
+
+### หมู่เกาะใหม่
+
+| ทวีป | ชื่อ Novaris | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| ❄️ Aldenreich | **Saltfrost Isles** | [saltfrost-isles/_overview.md](../aldenreich/dwendalian-empire/saltfrost-isles/_overview.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| ❄️ Aldenreich | **Isole del Vento** | [isole-del-vento/_overview.md](../aldenreich/costa-mosaica/isole-del-vento/_overview.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| ☀️ Suvarna | **Utskjaer** | [utskjaer/_overview.md](../suvarna/jarnfell/utskjaer/_overview.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| ☀️ Suvarna | **Kaknab** | [kaknab/_overview.md](../suvarna/chakan-wilds/kaknab/_overview.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### 🌊 Eldmere — เกาะ (47)
+
+| ถิ่น/กลุ่ม | ชื่อ Novaris | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Mistholm | **Thunderhame** | เกาะหมอก / ที่มั่นยักษ์พายุ | [thunderhame.md](../eldmere/mistholm/thunderhame.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mistholm | **Titansleep** | เกาะหมอก / ถ้ำทะเลศักดิ์สิทธิ์ | [titansleep.md](../eldmere/mistholm/titansleep.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mistholm | **Greywatch** | เกาะหมอก / หอเฝ้าทะเล | [greywatch.md](../eldmere/mistholm/greywatch.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Aurenhold** | รังมังกร / เกาะใหญ่ | [aurenhold.md](../eldmere/wyrmhold-isles/aurenhold.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Kaelreach** | รังมังกร / เกาะหน้าผา | [kaelreach.md](../eldmere/wyrmhold-isles/kaelreach.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Thornmere** | รังมังกร / เกาะป่าทึบ | [thornmere.md](../eldmere/wyrmhold-isles/thornmere.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Hollowcrown** | เกาะใหญ่ไร้เจ้าของ / ซาก Nethmar | [hollowcrown.md](../eldmere/wyrmhold-isles/hollowcrown.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Scaleskerry** | เกาะเล็ก / ลานผลัดเกล็ด | [scaleskerry.md](../eldmere/wyrmhold-isles/scaleskerry.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Clawrock** | เกาะหิน | [clawrock.md](../eldmere/wyrmhold-isles/clawrock.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Wingfall** | เกาะ / ซากกระดูก | [wingfall.md](../eldmere/wyrmhold-isles/wingfall.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Hoardstone** | เกาะ / หินเครื่องหมาย | [hoardstone.md](../eldmere/wyrmhold-isles/hoardstone.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Fangisle** | เกาะหิน | [fangisle.md](../eldmere/wyrmhold-isles/fangisle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Talon Cay** | เกาะเล็ก | [talon-cay.md](../eldmere/wyrmhold-isles/talon-cay.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Sunscale** | เกาะเล็ก | [sunscale.md](../eldmere/wyrmhold-isles/sunscale.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Wyrmling Rock** | เกาะหิน | [wyrmling-rock.md](../eldmere/wyrmhold-isles/wyrmling-rock.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Bronzewatch** | เกาะ / หอเฝ้า | [bronzewatch.md](../eldmere/wyrmhold-isles/bronzewatch.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Vinewreath** | เกาะป่า | [vinewreath.md](../eldmere/wyrmhold-isles/vinewreath.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Mirefang** | เกาะหนองน้ำ | [mirefang.md](../eldmere/wyrmhold-isles/mirefang.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Thornlet** | เกาะเล็ก | [thornlet.md](../eldmere/wyrmhold-isles/thornlet.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Wyrmhold Isles | **Goldtail** | เกาะเล็ก | [goldtail.md](../eldmere/wyrmhold-isles/goldtail.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Seraph's Rise** | วิหาร / เกาะภูเขาศักดิ์สิทธิ์ | [seraphs-rise.md](../eldmere/halo-peaks/seraphs-rise.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Ember Aerie** | เกาะ / รังของ phoenix | [ember-aerie.md](../eldmere/halo-peaks/ember-aerie.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Lantern Isle** | เกาะ | [lantern-isle.md](../eldmere/halo-peaks/lantern-isle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Vigil Isle** | เกาะเล็ก | [vigil-isle.md](../eldmere/halo-peaks/vigil-isle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Feather Cay** | เกาะเล็ก | [feather-cay.md](../eldmere/halo-peaks/feather-cay.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Dawnmere** | เกาะล่าง | [dawnmere.md](../eldmere/halo-peaks/dawnmere.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Cloudfoot** | เกาะล่าง | [cloudfoot.md](../eldmere/halo-peaks/cloudfoot.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Brightwater** | เกาะล่าง | [brightwater.md](../eldmere/halo-peaks/brightwater.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Halo Peaks | **Kneeling Rock** | เกาะหิน | [kneeling-rock.md](../eldmere/halo-peaks/kneeling-rock.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Eldwood | **Greatroot** | ป่าดึกดำบรรพ์ / เกาะใหญ่ | [greatroot.md](../eldmere/eldwood/greatroot.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Eldwood | **Fernholm** | เกาะป่าเฟิร์น | [fernholm.md](../eldmere/eldwood/fernholm.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Eldwood | **Seedling Isle** | เกาะเล็ก | [seedling-isle.md](../eldmere/eldwood/seedling-isle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Eldwood | **Mossback** | เกาะป่า | [mossback.md](../eldmere/eldwood/mossback.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Eldwood | **Barkhollow** | เกาะป่า | [barkhollow.md](../eldmere/eldwood/barkhollow.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Eldwood | **Lowbough** | เกาะป่า | [lowbough.md](../eldmere/eldwood/lowbough.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Cinderteeth | **Kilnmaw** | หมู่เกาะภูเขาไฟ / ถิ่นธาตุไฟ | [kilnmaw.md](../eldmere/cinderteeth/kilnmaw.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Cinderteeth | **Ashcay** | เกาะ / ด่านเถ้า | [ashcay.md](../eldmere/cinderteeth/ashcay.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Cinderteeth | **Gate Rock** | ภูเขาไฟ / ปล่องประตู | [gate-rock.md](../eldmere/cinderteeth/gate-rock.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Cinderteeth | **Sundered Isle** | เกาะภูเขาไฟ / พรมแดน | [sundered-isle.md](../eldmere/cinderteeth/sundered-isle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Cinderteeth | **Basalt Crown** | เกาะภูเขาไฟ / ถิ่นธาตุดิน | [basalt-crown.md](../eldmere/cinderteeth/basalt-crown.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Cinderteeth | **Anvilhold** | เกาะภูเขาไฟ / ที่มั่นธาตุดิน | [anvilhold.md](../eldmere/cinderteeth/anvilhold.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shellward Reach | **Shellback** | เกาะ / สุสานกระดอง | [shellback.md](../eldmere/shellward-reach/shellback.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shellward Reach | **Lanternwreck** | เกาะ / ซากประภาคาร | [lanternwreck.md](../eldmere/shellward-reach/lanternwreck.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shellward Reach | **Coralhold** | เกาะปะการัง | [coralhold.md](../eldmere/shellward-reach/coralhold.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shellward Reach | **Southspur** | เกาะ | [southspur.md](../eldmere/shellward-reach/southspur.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shellward Reach | **Pebble Cay** | เกาะเล็ก | [pebble-cay.md](../eldmere/shellward-reach/pebble-cay.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shellward Reach | **Driftcay** | เกาะเล็ก | [driftcay.md](../eldmere/shellward-reach/driftcay.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### ❄️ Aldenreich — เกาะ (29)
+
+| ถิ่น/กลุ่ม | ชื่อ Novaris | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Saltfrost Isles | **Rimeholm** | เกาะน้ำแข็ง · ด่านประมง | [rimeholm.md](../aldenreich/dwendalian-empire/saltfrost-isles/rimeholm.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Saltfrost Isles | **Gullskerry** | เกาะหิน · อาณานิคมนก | [gullskerry.md](../aldenreich/dwendalian-empire/saltfrost-isles/gullskerry.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Saltfrost Isles | **Icebarrow** | เกาะน้ำแข็ง · เนินสุสาน | [icebarrow.md](../aldenreich/dwendalian-empire/saltfrost-isles/icebarrow.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Saltfrost Isles | **Saltwatch** | เกาะ · หอสัญญาณ | [saltwatch.md](../aldenreich/dwendalian-empire/saltfrost-isles/saltwatch.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Del Vento | **Ventosa** | เกาะ · หมู่บ้านชาวประมง | [ventosa.md](../aldenreich/costa-mosaica/isole-del-vento/ventosa.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Del Vento | **Ventina** | เกาะเล็ก | [ventina.md](../aldenreich/costa-mosaica/isole-del-vento/ventina.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Costa Mosaica | **Sant'Orso** | เกาะ · อาราม | [sant-orso.md](../aldenreich/costa-mosaica/sant-orso.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Costa Mosaica | **Santa Rosalba** | เกาะ · หมู่บ้านทำแก้ว | [santa-rosalba.md](../aldenreich/costa-mosaica/santa-rosalba.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Costa Mosaica | **Isola Rondine** | เกาะเล็ก | [isola-rondine.md](../aldenreich/costa-mosaica/isola-rondine.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Costa Mosaica | **Lido Piccolo** | เกาะเล็ก · หาด | [lido-piccolo.md](../aldenreich/costa-mosaica/lido-piccolo.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isola Palma** | เกาะ · สวนมะพร้าว | [isola-palma.md](../aldenreich/costa-mosaica/isole-smeralde/isola-palma.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isola Lunga** | เกาะ | [isola-lunga.md](../aldenreich/costa-mosaica/isole-smeralde/isola-lunga.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Gemella** | เกาะเล็ก | [gemella.md](../aldenreich/costa-mosaica/isole-smeralde/gemella.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Scoglio Verde** | เกาะหิน | [scoglio-verde.md](../aldenreich/costa-mosaica/isole-smeralde/scoglio-verde.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isola Ombrosa** | เกาะ · ป่าดิบ | [isola-ombrosa.md](../aldenreich/costa-mosaica/isole-smeralde/isola-ombrosa.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Tartaruga** | เกาะเล็ก · หาดเต่า | [tartaruga.md](../aldenreich/costa-mosaica/isole-smeralde/tartaruga.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isola dei Gabbiani** | เกาะเล็ก | [isola-dei-gabbiani.md](../aldenreich/costa-mosaica/isole-smeralde/isola-dei-gabbiani.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Scoglio del Faro** | เกาะหิน · ประภาคาร | [scoglio-del-faro.md](../aldenreich/costa-mosaica/isole-smeralde/scoglio-del-faro.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Monte Smeraldo** | เกาะภูเขา | [monte-smeraldo.md](../aldenreich/costa-mosaica/isole-smeralde/monte-smeraldo.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isola Alba** | เกาะเล็ก | [isola-alba.md](../aldenreich/costa-mosaica/isole-smeralde/isola-alba.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isola Selvaggia** | เกาะป่า | [isola-selvaggia.md](../aldenreich/costa-mosaica/isole-smeralde/isola-selvaggia.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isola Estrema** | เกาะ | [isola-estrema.md](../aldenreich/costa-mosaica/isole-smeralde/isola-estrema.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Isole Lontane Maggiore** | เกาะไกล | [isole-lontane-maggiore.md](../aldenreich/costa-mosaica/isole-smeralde/isole-lontane-maggiore.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Lontana Minore** | เกาะไกล | [lontana-minore.md](../aldenreich/costa-mosaica/isole-smeralde/lontana-minore.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Vulcanella** | เกาะเล็ก · ภูเขาไฟ | [vulcanella.md](../aldenreich/costa-mosaica/isole-smeralde/vulcanella.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Isole Smeralde | **Corallino** | เกาะเล็ก · ปะการัง | [corallino.md](../aldenreich/costa-mosaica/isole-smeralde/corallino.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Green March | **Ashfall Isle** | เกาะ · ด่านทหาร | [ashfall-isle.md](../aldenreich/costa-mosaica/green-march/ashfall-isle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Green March | **Mirewatch** | เกาะเล็ก · หอเฝ้า | [mirewatch.md](../aldenreich/costa-mosaica/green-march/mirewatch.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Odland | **Lotus Key** | เกาะเล็ก | [lotus-key.md](../aldenreich/odland/lotus-key.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### 🌊 ทะเล — เกาะ (1)
+
+| ถิ่น/กลุ่ม | ชื่อ Novaris | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Sundering Ocean | **Skyrest** | เกาะเดี่ยว · จุดพักเรือเหาะ | [skyrest.md](../seas/skyrest.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### ☀️ Suvarna — เกาะ (33)
+
+| ถิ่น/กลุ่ม | ชื่อ Novaris | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Utskjaer | **Hvalsey** | เกาะ · หมู่บ้านล่าวาฬ | [hvalsey.md](../suvarna/jarnfell/utskjaer/hvalsey.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Ravnsey** | เกาะ · ศาลเจ้าอีกา | [ravnsey.md](../suvarna/jarnfell/utskjaer/ravnsey.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Langey** | เกาะ · หมู่บ้านประมง | [langey.md](../suvarna/jarnfell/utskjaer/langey.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Saltey** | เกาะ · นาเกลือ | [saltey.md](../suvarna/jarnfell/utskjaer/saltey.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Ormsey** | เกาะ | [ormsey.md](../suvarna/jarnfell/utskjaer/ormsey.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Kolsey** | เกาะเล็ก | [kolsey.md](../suvarna/jarnfell/utskjaer/kolsey.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Litlasker** | เกาะหิน | [litlasker.md](../suvarna/jarnfell/utskjaer/litlasker.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Fjadrsker** | เกาะหิน | [fjadrsker.md](../suvarna/jarnfell/utskjaer/fjadrsker.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Utskjaer | **Draugsker** | เกาะหิน · ซากเรือ | [draugsker.md](../suvarna/jarnfell/utskjaer/draugsker.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Deshret | **Insula Vigilia** | เกาะเล็ก · หอเฝ้า | [insula-vigilia.md](../suvarna/deshret/insula-vigilia.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Deshret | **Scopulus** | โขดหิน | [scopulus.md](../suvarna/deshret/scopulus.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Deshret | **Insula Serpentis** | เกาะเล็ก · หนองน้ำ | [insula-serpentis.md](../suvarna/deshret/insula-serpentis.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka | **Ekadvipa** | เกาะเดี่ยว · ประภาคาร | [ekadvipa.md](../suvarna/dandaka/ekadvipa.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka | **Manidvipa** | เกาะ · แหล่งอัญมณี | [manidvipa.md](../suvarna/dandaka/manidvipa.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka | **Chandradvipa** | เกาะ · เทวาลัย | [chandradvipa.md](../suvarna/dandaka/chandradvipa.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Ak Tun** | เกาะ · ท่าแคนู | [ak-tun.md](../suvarna/chakan-wilds/kaknab/ak-tun.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Kay Ha'** | เกาะ · หมู่บ้านประมง | [kay-ha.md](../suvarna/chakan-wilds/kaknab/kay-ha.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Uh Tun** | เกาะ · หอดูจันทร์ | [uh-tun.md](../suvarna/chakan-wilds/kaknab/uh-tun.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Sak Lol** | เกาะ | [sak-lol.md](../suvarna/chakan-wilds/kaknab/sak-lol.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Ek' Tun** | เกาะเล็ก | [ek-tun.md](../suvarna/chakan-wilds/kaknab/ek-tun.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Muyal** | เกาะเล็ก | [muyal.md](../suvarna/chakan-wilds/kaknab/muyal.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Chak Ak** | เกาะเล็ก | [chak-ak.md](../suvarna/chakan-wilds/kaknab/chak-ak.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Ixim** | เกาะเล็ก · ไร่ข้าวโพด | [ixim.md](../suvarna/chakan-wilds/kaknab/ixim.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Kaknab | **Kab Ch'een** | เกาะเล็ก · บ่อน้ำศักดิ์สิทธิ์ | [kab-cheen.md](../suvarna/chakan-wilds/kaknab/kab-cheen.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Chakan Wilds | **Nohoch Ak** | เกาะใหญ่ · ดินแดนพิพาท | [nohoch-ak.md](../suvarna/chakan-wilds/nohoch-ak.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Chakan Wilds | **Ts'unu'un** | เกาะเล็ก | [tsunuun.md](../suvarna/chakan-wilds/tsunuun.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka | **Meghadvipa** | เกาะใหญ่ · ป่าเมฆ | [meghadvipa.md](../suvarna/dandaka/meghadvipa.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka | **Nandika** | เกาะ · สวนผลไม้ | [nandika.md](../suvarna/dandaka/nandika.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka | **Bindu** | เกาะเล็ก · ที่ปฏิบัติธรรม | [bindu.md](../suvarna/dandaka/bindu.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka | **Velatira** | เกาะ · ท่าพักเรือ | [velatira.md](../suvarna/dandaka/velatira.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Jarnfell | **Thunderbird Rest** | เกาะ · ที่ศักดิ์สิทธิ์ | [thunderbird-rest.md](../suvarna/jarnfell/thunderbird-rest.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds | **Ko Kinnon** | เกาะ · ป่าหิมพานต์ | [ko-kinnon.md](../suvarna/himmapan-wilds/ko-kinnon.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds | **Ko Hongsa** | เกาะ | [ko-hongsa.md](../suvarna/himmapan-wilds/ko-hongsa.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### ⛰️ Shenzhou — เกาะ (12)
+
+| ถิ่น/กลุ่ม | ชื่อ Novaris | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Amanokado | **Repunshiri** | เกาะน้ำแข็ง | [repunshiri.md](../shenzhou/amanokado/repunshiri.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado | **Chikapshiri** | เกาะน้ำแข็ง | [chikapshiri.md](../shenzhou/amanokado/chikapshiri.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado | **Hoshikage-jima** | เกาะในทะเลสาบ | [hoshikage-jima.md](../shenzhou/amanokado/hoshikage-jima.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado | **Tomoshibi-jima** | เกาะเล็ก · ประภาคาร | [tomoshibi-jima.md](../shenzhou/amanokado/tomoshibi-jima.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado | **Kasumi-jima** | เกาะในทะเลสาบ | [kasumi-jima.md](../shenzhou/amanokado/kasumi-jima.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado | **Yūnagi-jima** | เกาะ · หมู่บ้านประมง | [yunagi-jima.md](../shenzhou/amanokado/yunagi-jima.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mizuho | **Namari-jima** | เกาะหิน | [namari-jima.md](../shenzhou/mizuho/namari-jima.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mizuho | **Suzu-jima** | เกาะหิน | [suzu-jima.md](../shenzhou/mizuho/suzu-jima.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mizuho | **Sagi-jima** | เกาะเล็ก · หนองน้ำ | [sagi-jima.md](../shenzhou/mizuho/sagi-jima.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Jungwon | **Haeun-do** | เกาะ · สำนักลับ | [haeun-do.md](../shenzhou/jungwon/haeun-do.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Unspecified | **Heukpa-do** | เกาะ · ฐานโจรสลัด | [heukpa-do.md](../shenzhou/unspecified/heukpa-do.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Tianchao | **Geumrin-do** | เกาะ · ค่ายโจรน้ำ | [geumrin-do.md](../shenzhou/tianchao/geumrin-do.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### 🌾 Voxaria — เกาะ (9)
+
+| ถิ่น/กลุ่ม | ชื่อ Novaris | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|
+| Forgeheim | **Coldvault Island** | เกาะ · ทัณฑสถานวิลเลิน | [coldvault-island.md](../voxaria/forgeheim/coldvault-island.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Crownshore | **Crown Isle** | เกาะส่วนตัว · คฤหาสน์ | [crown-isle.md](../voxaria/crownshore/crown-isle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Crownshore | **Landing Rock** | เกาะเล็ก · อนุสรณ์ | [landing-rock.md](../voxaria/crownshore/landing-rock.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Crownshore | **Little Feral** | เกาะ · เขตอันตรายรอบนอก | [little-feral.md](../voxaria/crownshore/little-feral.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gloamwood | **Lantern Rock** | เกาะเล็ก · ประภาคาร | [lantern-rock.md](../voxaria/gloamwood/lantern-rock.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gloamwood | **Wick Isle** | เกาะเล็ก · ศาลเจ้า | [wick-isle.md](../voxaria/gloamwood/wick-isle.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gloamwood | **Ember Islet** | เกาะเล็ก | [ember-islet.md](../voxaria/gloamwood/ember-islet.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Blacktide Coast | **Gauge Island** | เกาะ · สถานีพยากรณ์พายุ | [gauge-island.md](../voxaria/blacktide-coast/gauge-island.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Blacktide Coast | **Breakwater Island** | เกาะ · กำแพงกันคลื่น | [breakwater-island.md](../voxaria/blacktide-coast/breakwater-island.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+## แม่น้ำ (ตั้งชื่อ 2026-10-24)
+
+> ไม่มีใน CR — แม่น้ำ 82 สายที่ Azgaar สุ่มชื่อ ตั้งชื่อใหม่ตามธีมภูมิภาค · บนแผนที่ทุกสายเป็น "ชื่อ River" · ไฟล์อยู่ในโฟลเดอร์ `rivers/` ของภูมิภาค (Tsagaan Tal อยู่ที่ `shenzhou/rivers/`) · ลำน้ำสาขาแยกไฟล์ทุกสาย · byte-patch `novaris.map` = `novaris-v3.map` (ชื่อ + type = River)
+
+### ❄️ Aldenreich — แม่น้ำ (25)
+
+| ภูมิภาค | ชื่อเดิม (Azgaar) | ชื่อ Novaris | อ่านว่า | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| Costa Mosaica | `Torricuciva River` | **Rame River** | รา-เม (ทองแดง, อิตาลี) | แม่น้ำ · แม่น้ำชายแดน | [rame-river.md](../aldenreich/costa-mosaica/rivers/rame-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Costa Mosaica | `Schofenlin River` | **Serena River** | เซ-เร-นา (สงบ, อิตาลี) | แม่น้ำ | [serena-river.md](../aldenreich/costa-mosaica/rivers/serena-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Otmos River` | **Birch River** | เบิร์ช | แม่น้ำ · ทางล่องซุง | [birch-river.md](../aldenreich/dwendalian-empire/rivers/birch-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Emin Creek` | **Elan River** | เอ-ลัน (ตั้งตามภาษาเอลฟ์ของ Elandil) | แม่น้ำ · สาขาของ Griffon River | [elan-river.md](../aldenreich/dwendalian-empire/rivers/elan-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Munsberg River` | **Goldmead River** | โกลด์-มีด (ทุ่งทอง) | แม่น้ำ · แม่น้ำชลประทาน | [goldmead-river.md](../aldenreich/dwendalian-empire/rivers/goldmead-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Rheindind River` | **Greyflow River** | เกรย์-โฟลว์ (สายน้ำเทา) | แม่น้ำ · แม่น้ำอุตสาหกรรม | [greyflow-river.md](../aldenreich/dwendalian-empire/rivers/greyflow-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Hailer River` | **Griffon River** | กริฟ-ฟอน | แม่น้ำ | [griffon-river.md](../aldenreich/dwendalian-empire/rivers/griffon-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Waltenstadt River` | **Hexwater River** | เฮ็กซ์-วอ-เตอร์ (น้ำต้องคำสาป) | แม่น้ำ · สาขาของ Goldmead River | [hexwater-river.md](../aldenreich/dwendalian-empire/rivers/hexwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Hausach River` | **Hop River** | ฮอป | แม่น้ำ | [hop-river.md](../aldenreich/dwendalian-empire/rivers/hop-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Fludar River` | **Lethe River** | ลี-ธี (แม่น้ำแห่งการลืม) | แม่น้ำ · แม่น้ำในตำนาน | [lethe-river.md](../aldenreich/dwendalian-empire/rivers/lethe-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Onigsbachlin River` | **Mantle River** | แมน-เทิล | แม่น้ำ · เส้นเลือดของเขต Mantle | [mantle-river.md](../aldenreich/dwendalian-empire/rivers/mantle-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Voyageid River` | **Stillwater River** | สติล-วอ-เตอร์ | แม่น้ำ · สาขาของ Lethe River | [stillwater-river.md](../aldenreich/dwendalian-empire/rivers/stillwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Dobel River` | **Thistle River** | ทิส-เซิล | แม่น้ำ · สาขาของ Mantle River | [thistle-river.md](../aldenreich/dwendalian-empire/rivers/thistle-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dwendalian Empire | `Sulzgravels River` | **Warden River** | วอร์-เดิน (ผู้เฝ้า) | แม่น้ำ · แม่น้ำชายแดน | [warden-river.md](../aldenreich/dwendalian-empire/rivers/warden-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gråmark | `Hnifsvog River` | **Alvar River** | อัล-วาร์ (เอลฟ์, นอร์ส) | แม่น้ำ | [alvar-river.md](../aldenreich/gramark/rivers/alvar-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gråmark | `Brunahlid Brook` | **Brunn River** | บรุนน์ (น้ำพุ, นอร์ส) | แม่น้ำ · สาขาของ Straum River | [brunn-river.md](../aldenreich/gramark/rivers/brunn-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gråmark | `Lumenha River` | **Kalda River** | คัล-ดา (แม่น้ำเย็น, นอร์ส) | แม่น้ำ · แม่น้ำใหญ่ของ Gråmark | [kalda-river.md](../aldenreich/gramark/rivers/kalda-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gråmark | `Straunah River` | **Straum River** | สเตราม์ (กระแสน้ำ, นอร์ส) | แม่น้ำ · สาขาของ Kalda River | [straum-river.md](../aldenreich/gramark/rivers/straum-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Gråmark | `Trorar River` | **Ulva River** | อุล-วา (หมาป่า, นอร์ส) | แม่น้ำ | [ulva-river.md](../aldenreich/gramark/rivers/ulva-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ödland | `Qidroz River` | **Dim River** | ดิม (สลัว) | แม่น้ำ · สาขาของ Drake River | [dim-river.md](../aldenreich/odland/rivers/dim-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ödland | `Ruzgkigh River` | **Drake River** | เดรก (มังกร) | แม่น้ำ | [drake-river.md](../aldenreich/odland/rivers/drake-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ödland | `Hlaugmarsogith River` | **Gloamwater River** | โกลม-วอ-เตอร์ (น้ำสนธยา) | แม่น้ำ · แม่น้ำหนองบึง | [gloamwater-river.md](../aldenreich/odland/rivers/gloamwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ödland | `Dryndlume River` | **Lume River** | ลูม (แสง — ชื่อแบบ Lumenvael) | แม่น้ำ · สาขาของ Shellwater River | [lume-river.md](../aldenreich/odland/rivers/lume-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ödland | `Bhicrodh River` | **Maw River** | มอว์ (ปากเหว) | แม่น้ำ · แม่น้ำใต้ดินที่ผุดขึ้น | [maw-river.md](../aldenreich/odland/rivers/maw-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ödland | `Haundra River` | **Shellwater River** | เชลล์-วอ-เตอร์ | แม่น้ำ | [shellwater-river.md](../aldenreich/odland/rivers/shellwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### 🌾 Voxaria — แม่น้ำ (18)
+
+| ภูมิภาค | ชื่อเดิม (Azgaar) | ชื่อ Novaris | อ่านว่า | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| Blacktide Coast | `Milcesbury River` | **Rust River** | รัสต์ (สนิม) | แม่น้ำ · แม่น้ำเมือง | [rust-river.md](../voxaria/blacktide-coast/rivers/rust-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Blacktide Coast | `Zutivl River` | **Undertow River** | อัน-เดอร์-โทว์ (กระแสใต้น้ำ) | แม่น้ำ | [undertow-river.md](../voxaria/blacktide-coast/rivers/undertow-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Crownshore | `Asheldock River` | **Firstwater River** | เฟิร์สต์-วอ-เตอร์ | แม่น้ำ · แม่น้ำประวัติศาสตร์ | [firstwater-river.md](../voxaria/crownshore/rivers/firstwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Crownshore | `Towcester Creek` | **Glass River** | กลาส | แม่น้ำ · สาขาของ Slagwater River | [glass-river.md](../voxaria/crownshore/rivers/glass-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Crownshore | `Bretford River` | **Wellspring River** | เวลล์-สปริง | แม่น้ำ · แหล่งน้ำประปา | [wellspring-river.md](../voxaria/crownshore/rivers/wellspring-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Forgeheim | `Towcesin River` | **Gravelrun River** | แกร-เวิล-รัน | แม่น้ำ · แม่น้ำใน "เขตเงียบ" | [gravelrun-river.md](../voxaria/forgeheim/rivers/gravelrun-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Forgeheim | `Pichambe River` | **Lantern River** | แลน-เทิร์น | แม่น้ำ | [lantern-river.md](../voxaria/forgeheim/rivers/lantern-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Forgeheim | `Wargham River` | **Pinewater River** | ไพน์-วอ-เตอร์ | แม่น้ำ | [pinewater-river.md](../voxaria/forgeheim/rivers/pinewater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Forgeheim | `Blechwel River` | **Slagwater River** | สแล็ก-วอ-เตอร์ (น้ำตะกรัน) | แม่น้ำ · แม่น้ำอุตสาหกรรม | [slagwater-river.md](../voxaria/forgeheim/rivers/slagwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Forgeheim | `Dunster River` | **Turbine River** | เทอร์-ไบน์ | แม่น้ำ · แม่น้ำเขื่อน | [turbine-river.md](../voxaria/forgeheim/rivers/turbine-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Heartland | `Duyarilov River` | **Goldwater River** | โกลด์-วอ-เตอร์ | แม่น้ำ · ทางเรือสินค้า | [goldwater-river.md](../voxaria/heartland/rivers/goldwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Heartland | `Kedine River` | **Meridian River** | เม-ริ-เดียน (เส้นกลาง) | แม่น้ำ · แม่น้ำสายหลักของ Heartland | [meridian-river.md](../voxaria/heartland/rivers/meridian-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Heartland | `Totham River` | **Sailwind River** | เซล-วินด์ | แม่น้ำ | [sailwind-river.md](../voxaria/heartland/rivers/sailwind-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Iron Authority และ Riftwild | `Tlalpan River` | **Itztli River** | อิตซ์-ตลี (ออบซิเดียน, แบบ Nahuatl) | แม่น้ำ | [itztli-river.md](../voxaria/iron-authority/rivers/itztli-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Iron Authority และ Riftwild | `Metztalihua River` | **Metztli River** | เม็ตซ์-ตลี (ดวงจันทร์, แบบ Nahuatl) | แม่น้ำ | [metztli-river.md](../voxaria/iron-authority/rivers/metztli-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Iron Authority และ Riftwild | `Tuchtlan River` | **Tuchtlan River** | ตุช-ตลัน | แม่น้ำ · แม่น้ำในเขต Gate | [tuchtlan-river.md](../voxaria/iron-authority/rivers/tuchtlan-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| The Verge | `Durbury River` | **Veilwater River** | เวล-วอ-เตอร์ (น้ำม่าน) | แม่น้ำ · แม่น้ำเฟย์ในเขต Gate | [veilwater-river.md](../voxaria/the-verge/rivers/veilwater-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Thunderspine | `Beterke River` | **Echo River** | เอ็ก-โค (เสียงสะท้อน) | แม่น้ำ · แม่น้ำใต้ดินที่ผุดขึ้น | [echo-river.md](../voxaria/thunderspine/rivers/echo-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### ⛰️ Shenzhou — แม่น้ำ (17)
+
+| ภูมิภาค | ชื่อเดิม (Azgaar) | ชื่อ Novaris | อ่านว่า | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| Amanokado 天の門 | `Pungdong River` | **Asa River** | อา-สะ 朝 (รุ่งเช้า) | แม่น้ำ | [asa-river.md](../shenzhou/amanokado/rivers/asa-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado 天の門 | `Gwang River` | **Ginga River** | กิน-งะ 銀河 (ทางช้างเผือก) | แม่น้ำ | [ginga-river.md](../shenzhou/amanokado/rivers/ginga-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado 天の門 | `Ponan Creek` | **Hikari River** | ฮิ-คะ-ริ 光 (แสง) | แม่น้ำ · แม่น้ำเส้นแบ่งโยไค | [hikari-river.md](../shenzhou/amanokado/rivers/hikari-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado 天の門 | `Seocheong River` | **Mitarashi River** | มิ-ทา-ระ-ชิ 御手洗 (ธารชำระมือหน้าศาลเจ้า) | แม่น้ำ · แม่น้ำศักดิ์สิทธิ์ | [mitarashi-river.md](../shenzhou/amanokado/rivers/mitarashi-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado 天の門 | `Khovshaat River` | **Sakai River** | ซา-ไก 境 (เส้นเขต) | แม่น้ำ · แม่น้ำชายแดน · สาขาของ Tsenkher River | [sakai-river.md](../shenzhou/amanokado/rivers/sakai-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Amanokado 天の門 | `Jecheon River` | **Tasogare River** | ทะ-โซ-กะ-เระ 黄昏 (สนธยา) | แม่น้ำ · แม่น้ำของคนตาย | [tasogare-river.md](../shenzhou/amanokado/rivers/tasogare-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Jungwon 中原 | `Namchau River` | **Cheongryu River** | ช็อง-รยู 清流 (กระแสใส) | แม่น้ำ | [cheongryu-river.md](../shenzhou/jungwon/rivers/cheongryu-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Jungwon 中原 | `Taiwai River` | **Daeha River** | แด-ฮา 大河 (มหานที) | แม่น้ำ · แม่น้ำใหญ่ของยุทธภพ | [daeha-river.md](../shenzhou/jungwon/rivers/daeha-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Jungwon 中原 | `Linpak River` | **Songha River** | ซง-ฮา 松河 (แม่น้ำสน) | แม่น้ำ · สาขาของ Cheongryu River · ทางล่องซุง | [songha-river.md](../shenzhou/jungwon/rivers/songha-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mizuho 瑞穂 และ Akitsu Shogunate 秋津 | `Sutsu River` | **Inaho River** | อิ-นะ-โฮะ 稲穂 (รวงข้าว) | แม่น้ำ · แม่น้ำใหญ่ของ Mizuho | [inaho-river.md](../shenzhou/mizuho/rivers/inaho-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mizuho 瑞穂 และ Akitsu Shogunate 秋津 | `Oseushi River` | **Kurogane River** | คุ-โระ-กะ-เนะ 黒鉄 (เหล็กดำ) | แม่น้ำ · แม่น้ำทรายเหล็ก | [kurogane-river.md](../shenzhou/mizuho/rivers/kurogane-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Mizuho 瑞穂 และ Akitsu Shogunate 秋津 | `Nishima River` | **Nanashi River** | นะ-นะ-ชิ 名無し (ไร้นาม) | แม่น้ำ · สาขาของ Inaho River | [nanashi-river.md](../shenzhou/mizuho/rivers/nanashi-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shenzhou 神州 | `Algi River` | **Altan River** | อัล-ทัน (ทอง, มองโกล) | แม่น้ำ | [altan-river.md](../shenzhou/rivers/altan-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shenzhou 神州 | `Bagaan Brook` | **Baga River** | บา-กา (น้อย, มองโกล) | แม่น้ำ · สาขาของ Tsenkher River | [baga-river.md](../shenzhou/rivers/baga-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shenzhou 神州 | `Tsenkhirvan River` | **Tsenkher River** | เซ็น-เคอร์ (ฟ้า, มองโกล) | แม่น้ำ | [tsenkher-river.md](../shenzhou/rivers/tsenkher-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Shenzhou 神州 | `Dalai Uul River` | **Ulaan River** | อู-ลาน (แดง, มองโกล) | แม่น้ำ | [ulaan-river.md](../shenzhou/rivers/ulaan-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Tianchao 天朝 | `Zhenping River` | **Heuksu River** | ฮึก-ซู 黑水 (น้ำดำ) | แม่น้ำ · แม่น้ำจากเขตมาร | [heuksu-river.md](../shenzhou/tianchao/rivers/heuksu-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+
+### ☀️ Suvarna — แม่น้ำ (22)
+
+| ภูมิภาค | ชื่อเดิม (Azgaar) | ชื่อ Novaris | อ่านว่า | ประเภท | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|---|---|---|
+| Chakan Wilds | `Buyandia River` | **Balamha River** | บา-ลัม-ฮา (น้ำของเสือจากัวร์ — คำแบบมายา) | แม่น้ำ · แม่น้ำของเผ่า Balam | [balamha-river.md](../suvarna/chakan-wilds/rivers/balamha-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Chakan Wilds | `Nakaunde River` | **Chelha River** | เชล-ฮา (น้ำรุ้ง — คำแบบมายา) | แม่น้ำ · แม่น้ำชายฝั่งของเผ่า Ha | [chelha-river.md](../suvarna/chakan-wilds/rivers/chelha-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Chakan Wilds | `Waburulu River` | **Ikha River** | อิก-ฮา (น้ำแห่งลม — คำแบบมายา) | แม่น้ำ · แม่น้ำศักดิ์สิทธิ์ของเผ่า Kaan | [ikha-river.md](../suvarna/chakan-wilds/rivers/ikha-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Chakan Wilds | `Muwenza River` | **Kantzul River** | คัน-ซุล (คำแบบมายา) | แม่น้ำ · แม่น้ำชายแดนเผ่า Kaan กับ Balam | [kantzul-river.md](../suvarna/chakan-wilds/rivers/kantzul-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Chakan Wilds | `Naibinsim River` | **Kukha River** | คุก-ฮา (น้ำของนกเควทซัล — คำแบบมายา) | แม่น้ำ · แม่น้ำของเผ่า Kuk | [kukha-river.md](../suvarna/chakan-wilds/rivers/kukha-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka ทัณฑกะ | `Afzalnagal River` | **Dipavati River** | ที-ปะ-วะ-ตี (ธารแห่งประทีป) | แม่น้ำ · แม่น้ำชายแดน Jyoti Marga กับเผ่ามายา | [dipavati-river.md](../suvarna/dandaka/rivers/dipavati-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka ทัณฑกะ | `Kushpur River` | **Kusha River** | กุ-ชะ (หญ้ากุศะ — หญ้าศักดิ์สิทธิ์) | แม่น้ำ · สาขาของ Dipavati River | [kusha-river.md](../suvarna/dandaka/rivers/kusha-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka ทัณฑกะ | `Hatnasimvar River` | **Mauna River** | เมา-นะ (ความเงียบ) | แม่น้ำ | [mauna-river.md](../suvarna/dandaka/rivers/mauna-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Dandaka ทัณฑกะ | `Sihimote River` | **Padmini River** | ปัด-มิ-นี (ดอกบัว) | แม่น้ำ · สาขาของ Dipavati River | [padmini-river.md](../suvarna/dandaka/rivers/padmini-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ehrvarn Highlands | `Pitonticyon River` | **Ehrach River** | แอร์-อัค (สายน้ำแห่งเกียรติ, เยอรมัน) | แม่น้ำ · แม่น้ำใหญ่ของเผ่า Ehrvarian | [ehrach-river.md](../suvarna/ehrvarn-highlands/rivers/ehrach-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ehrvarn Highlands | `Margytos River` | **Helmach River** | เฮล์ม-อัค (สายน้ำหมวกเกราะ, เยอรมัน) | แม่น้ำ · สาขาของ Ehrach River | [helmach-river.md](../suvarna/ehrvarn-highlands/rivers/helmach-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ehrvarn Highlands | `Crodolis Stream` | **Kalte River** | คัล-เทอ (ความเย็น, เยอรมัน) | แม่น้ำ · แม่น้ำสั้นชายฝั่ง | [kalte-river.md](../suvarna/ehrvarn-highlands/rivers/kalte-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ehrvarn Highlands | `Piniapon Creek` | **Klinge River** | คลิง-เงอ (ใบมีด, เยอรมัน) | แม่น้ำ · สาขาของ Schwarzach River | [klinge-river.md](../suvarna/ehrvarn-highlands/rivers/klinge-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Ehrvarn Highlands | `Pyrelopopo River` | **Schwarzach River** | ชวาร์ซ-อัค (สายน้ำดำ, เยอรมัน) | แม่น้ำ | [schwarzach-river.md](../suvarna/ehrvarn-highlands/rivers/schwarzach-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds ป่าหิมพานต์ | `Do Nam Thuy Branch` | **Bua River** | บัว | แม่น้ำ · สาขาของ Suwanna River · ลำน้ำสั้นที่สุดใน Suvarna | [bua-river.md](../suvarna/himmapan-wilds/rivers/bua-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds ป่าหิมพานต์ | `Ba Cat River` | **Hin River** | หิน | แม่น้ำ · สาขาของ Ngoen River | [hin-river.md](../suvarna/himmapan-wilds/rivers/hin-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds ป่าหิมพานต์ | `Asefenver River` | **Ngoen River** | เงิน | แม่น้ำ · สาขาของ Suwanna River | [ngoen-river.md](../suvarna/himmapan-wilds/rivers/ngoen-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds ป่าหิมพานต์ | `Huong Chau River` | **Nong River** | หนอง | แม่น้ำ · สาขาของ Phet River | [nong-river.md](../suvarna/himmapan-wilds/rivers/nong-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds ป่าหิมพานต์ | `Thai Creek` | **Pa River** | ป่า | แม่น้ำ · สาขาของ Suwanna River | [pa-river.md](../suvarna/himmapan-wilds/rivers/pa-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds ป่าหิมพานต์ | `Vung Son River` | **Phet River** | เพชร | แม่น้ำ · แม่น้ำของหัวเมืองหลวง | [phet-river.md](../suvarna/himmapan-wilds/rivers/phet-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Himmapan Wilds ป่าหิมพานต์ | `Kabergealnin River` | **Suwanna River** | สุ-วัน-นะ (สุวรรณ — ทอง) | แม่น้ำ · **แม่น้ำที่ยาวที่สุดในโลก** · แม่น้ำแม่ของ Himmapan | [suwanna-river.md](../suvarna/himmapan-wilds/rivers/suwanna-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |
+| Jarnfell | `Bogadir River` | **Svarta River** | สวาร์-ตา (แม่น้ำดำ, นอร์ส) | แม่น้ำ · แม่น้ำหุบเหล็ก | [svarta-river.md](../suvarna/jarnfell/rivers/svarta-river.md) | ✅ | ✅ | ✏️ ร่าง | ✅ |

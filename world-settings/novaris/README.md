@@ -48,21 +48,21 @@
 |---|---|---|
 | แอป Azgaar | `maps/azgaar/app/` (gitignored) | สร้างใหม่ตาม `maps/azgaar/README.md` หัวข้อ "สร้าง `app/` ใหม่" แล้ว `npm ci --ignore-scripts` ใน `app/` · เปิดด้วย preview ชื่อ `azgaar` (มีใน `.claude/launch.json`) |
 | ภาพ export | `maps/azgaar/exports/*.png` (gitignored ยกเว้น `novaris-v3-atlas-noscale-x10.png`) | export ใหม่จาก Azgaar (ดูขั้นตอนท้ายไฟล์) |
-| ภาพและ journal ใน Foundry | `D:\FoundryVTT_Data\Data\worlds\astral-nexus-constellation-protocol\World_Setting\Novaris\` — `novaris-v3-atlas.webp` + `novaris-v3-<ทวีป>.webp` 5 ไฟล์ + `journal/<ทวีป>.json` 5 ไฟล์ | สร้างใหม่ตามงานข้อ 1 |
+| ภาพและ journal ใน Foundry | `D:\FoundryVTT_Data\Data\worlds\astral-nexus-constellation-protocol\World_Setting\Novaris\` — `novaris-v3-atlas.webp` + `novaris-v3-<ทวีป>.webp` 5 ไฟล์ + `journal/<ทวีป>.json` 5 ไฟล์ + `journal/seas.json` | สร้างใหม่ตามงานข้อ 1 |
 
 ## งานที่ต้องทำ
 
 0. **ทำ lore ส่วนที่ยังขาดก่อน — เป็นงานแรก** (เสนอชื่อ/แนวคิดเป็นตารางให้ผู้ใช้อนุมัติก่อนเขียนทุกครั้ง)
-   - **Eldmere**: ตอนนี้มีแค่ `eldmere/_overview.md` — เขียนไฟล์ละถิ่นให้ครบ 7 ถิ่นตามตารางใน overview (**Stormwall · Shellward Reach · Wyrmhold Isles · Cinderteeth · Mistholm · Eldwood · Halo Peaks**) ระดับเดียวกับ Palebank · ต้องตรงกับ canon ข้อ 24 (ไม่มีคน ไม่ใช่ประเทศ ถิ่นของเผ่ายิ่งใหญ่โบราณ ล้อมด้วยพายุเวท)
-   - **ป้ายทะเลบนแผนที่ที่ยังไม่มีไฟล์**: The Pale Deep · Sundering Ocean · Donghai · Sagara
-   - **ตั้งชื่อให้ทุกเกาะที่ยังไม่มีชื่อ** — หาใน Azgaar: `pack.features` ที่ `land && type === 'island'` แล้วตัดเกาะที่มีเมืองอยู่ (`pack.cells.f[burg.cell]`) หรือมีป้าย added/state อยู่บนเกาะออก · ตั้งชื่อตามธีมของทวีปที่เกาะนั้นอยู่ (ดูตารางกล่องทวีปท้ายไฟล์) · เพิ่มเป็นป้าย "added" บนแผนที่ (byte-patch ทั้งสองไฟล์ `.map` — ห้ามเซฟจากแอป) · เกาะที่มีความหมายใน lore ให้มีไฟล์ด้วย เกาะเล็กมากอาจลงแค่ name table — ถามผู้ใช้ว่าจะเอาแบบไหน
-   - **แม่น้ำ 81 สาย** ยังใช้ชื่อสุ่มของ Azgaar (เช่น Dalai Uul River, Onigsbachlin River) — ถามผู้ใช้ว่าจะเปลี่ยนชื่อให้เข้าธีมไหม
-   - **ป้ายภูมิภาค Chakan Wilds** ยังไม่มีบนแผนที่ (ทำพร้อมงานตั้งชื่อเกาะได้)
-   - เสร็จแล้ว: อัปเดต name table · overview · `places-v3.json` · export ภาพ · journal (ขั้นตอนท้ายไฟล์)
+   - ✅ **Eldmere** (2026-10-23): ไฟล์ถิ่นครบ 7 ถิ่น — `stormwall.md` + 6 ถิ่นเป็นโฟลเดอร์ (`<ถิ่น>/_overview.md`) · ผนึก Tharizdun เขียนเป็นความลับของ DM ใน Mistholm · มังกรตั้งใหม่ทั้งหมด
+   - ✅ **ทะเล 4 แห่ง**: โฟลเดอร์ใหม่ `seas/` (journal กลุ่มที่ 6 `seas` — หมุดขึ้นเฉพาะฉากโลก)
+   - ✅ **เกาะที่ไม่มีชื่อ 139 เกาะ**: ตั้งชื่อ + ไฟล์ครบทุกเกาะ (131 ชื่อใหม่ · 8 เกาะมีชื่ออยู่แล้วแต่ป้ายลอยในทะเล) · หมู่เกาะใหม่ Saltfrost Isles · Isole del Vento · Utskjaer · Kaknab · รายชื่อทั้งหมดใน `contents/_name-table.md` หัวข้อ "เกาะ" · ป้ายบนแผนที่ byte-patch แล้ว
+   - ✅ **ป้าย Chakan Wilds** ขึ้นแผนที่แล้ว · ป้าย Stormwall ขยับเข้ากรอบ Eldmere (y 955 → 963)
+   - ✅ name table · overview · `places-v3.json` · export ภาพ · WebP · journal ทั้ง 6 กลุ่ม (เครื่องนี้)
+   - ✅ **แม่น้ำ 82 สาย** (2026-10-24): ตั้งชื่อใหม่ตามธีมภูมิภาค + ไฟล์ lore ทุกสาย (เน้นใช้ทำฉาก: ตลอดสาย · จุดสำคัญ · ไอเดียฉาก) ใน `<ภูมิภาค>/rivers/` (Tsagaan Tal อยู่ `shenzhou/rivers/`) · ลำน้ำสาขาแยกไฟล์ · ป้ายแผนที่ "ชื่อ River" ทุกสาย (byte-patch ชื่อ + type) · Tuchtlan คงชื่อเดิม · รายชื่อใน `contents/_name-table.md` หัวข้อ "แม่น้ำ" · overview ภูมิภาคมีหัวข้อ "แม่น้ำ" · journal ใช้โฟลเดอร์ "แม่น้ำ" (หมุดครบ 82)
    - **เมื่อทำ lore เสร็จ ให้สรุปให้ผู้ใช้ฟังคร่าว ๆ ว่าเขียนอะไรไปบ้าง แล้วเสนอสิ่งที่จะทำต่อไป** (เช่น งานข้อ 1–3 ข้างล่าง)
 1. **เช็คไฟล์ Foundry ในเครื่องนี้** — ดูว่าโฟลเดอร์ `World_Setting\Novaris\` ข้างบนมีครบไหม และ `journal/*.json` ใหม่กว่า commit ล่าสุดหรือเปล่า
    - ถ้าเป็นเครื่องเดิมที่เขียน README นี้ (มีครบแล้ว) ข้ามได้
-   - ถ้าเพิ่ง pull มาเครื่องอื่น หรือไฟล์ขาด/เก่า: เตรียมแอป Azgaar → export ภาพโลก x10 และทวีปทั้ง 5 → แปลง WebP → รัน `build_foundry_journal.py` ครบ 5 ทวีป (คำสั่งอยู่ท้ายไฟล์) — ถ้า path ของ Foundry ในเครื่องนี้ไม่ใช่ `D:\FoundryVTT_Data` ให้ถามผู้ใช้
+   - ถ้าเพิ่ง pull มาเครื่องอื่น หรือไฟล์ขาด/เก่า: เตรียมแอป Azgaar → export ภาพโลก x10 และทวีปทั้ง 5 → แปลง WebP → รัน `build_foundry_journal.py` ครบ 5 ทวีป + seas (คำสั่งอยู่ท้ายไฟล์) — ถ้า path ของ Foundry ในเครื่องนี้ไม่ใช่ `D:\FoundryVTT_Data` ให้ถามผู้ใช้
 2. **ให้ผู้ใช้รัน macro ใน Foundry** — `Create-Novaris-Journal` (และ `Create-Novaris-Scene` ถ้าเป็นโลก Foundry ใหม่) แล้วถามว่าหมุดขึ้นครบไหม · หมุดที่ไม่มีโดยตั้งใจ: overview ของแต่ละทวีป และ `suvarna/chakan-wilds/_overview.md` (ยังไม่มีป้ายบนแผนที่ — ดูข้อ 3)
 3. **ถามผู้ใช้เรื่องที่ค้าง** (ทีละเรื่อง ทำเฉพาะที่ผู้ใช้สั่ง):
    - **ระยะทางไม่ตรงสเกล** ในไฟล์เดิมบางไฟล์ เช่น `shenzhou/amanokado/yugure-forest/kanmon.md` บอกว่าห่าง Kamizono "สองวันโดยม้า" แต่บนแผนที่ห่างเป็นพันไมล์ (1 หน่วย Azgaar = 43.2 ไมล์) — จะแก้ไฟล์ให้ตรงแผนที่ หรือปล่อยไว้
@@ -109,7 +109,7 @@ for c in ["aldenreich", "eldmere", "shenzhou", "suvarna", "voxaria"]:
 **journal** (จาก root ของ repo — ต้องมี `pip install markdown`):
 
 ```bash
-for c in aldenreich eldmere shenzhou suvarna voxaria; do python world-settings/novaris/tools/build_foundry_journal.py $c "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal"; done
+for c in aldenreich eldmere shenzhou suvarna voxaria seas; do python world-settings/novaris/tools/build_foundry_journal.py $c "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal"; done
 ```
 
 **places-v3.json** (ถ้าเปลี่ยนชื่อ/ตำแหน่งเมืองในแผนที่ ต้องสร้างใหม่ก่อนรัน journal):

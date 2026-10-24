@@ -44,6 +44,13 @@
 | เมืองบริวารและชุมชน | [Cliffsteps](cliffsteps.md) · [Brookfoot](brookfoot.md) · [Firsthaven](firsthaven.md) |
 | ทหารและเขตอันตราย | [Greenwatch](greenwatch.md) · [Feral Isle](feral-isle.md) |
 | เมืองเพิ่ม 2026-10-23 ✨ | [Glasshaven](glasshaven.md) (S29) · [Purewell](purewell.md) (S40) |
+| เกาะ ✨ | [Crown Isle](crown-isle.md) · [Landing Rock](landing-rock.md) · [Little Feral](little-feral.md) |
+
+### แม่น้ำ
+
+- **[Firstwater River](rivers/firstwater-river.md)** — แม่น้ำ · แม่น้ำประวัติศาสตร์
+- **[Glass River](rivers/glass-river.md)** — แม่น้ำ · สาขาของ Slagwater River
+- **[Wellspring River](rivers/wellspring-river.md)** — แม่น้ำ · แหล่งน้ำประปา
 
 ## ผู้คนและวัฒนธรรม
 

@@ -44,6 +44,13 @@
 | ✨ แคว้น Kurobane | [Kurobane](kurobane.md) · [Tengudani](tengudani.md) |
 | ✨ หมู่บ้านนินจา | [Kumokage](kumokage.md) · [Yamikaze](yamikaze.md) |
 | ✨ หมู่บ้านโรนิน | [Mumei](mumei.md) · [Sasurai](sasurai.md) |
+| เกาะ ✨ | [Namari-jima](namari-jima.md) · [Suzu-jima](suzu-jima.md) · [Sagi-jima](sagi-jima.md) |
+
+### แม่น้ำ
+
+- **[Inaho River](rivers/inaho-river.md)** — แม่น้ำ · แม่น้ำใหญ่ของ Mizuho
+- **[Kurogane River](rivers/kurogane-river.md)** — แม่น้ำ · แม่น้ำทรายเหล็ก
+- **[Nanashi River](rivers/nanashi-river.md)** — แม่น้ำ · สาขาของ Inaho River
 
 ## ผู้คนและวัฒนธรรม
 

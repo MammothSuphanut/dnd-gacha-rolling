@@ -42,6 +42,13 @@
 |---|---|
 | เมืองและหมู่บ้าน | [Mokcheon](mokcheon.md) · [Toji](toji.md) · [Ssiat](ssiat.md) |
 | ยุทธภพ | [Cheonsan](../unspecified/cheonsan.md) · [Mubong](../unspecified/mubong.md) · [Heukseong](../heukseong/_overview.md) |
+| เกาะ ✨ | [Haeun-do](haeun-do.md) |
+
+### แม่น้ำ
+
+- **[Cheongryu River](rivers/cheongryu-river.md)** — แม่น้ำ
+- **[Daeha River](rivers/daeha-river.md)** — แม่น้ำ · แม่น้ำใหญ่ของยุทธภพ
+- **[Songha River](rivers/songha-river.md)** — แม่น้ำ · สาขาของ Cheongryu River · ทางล่องซุง
 
 ## ผู้คนและวัฒนธรรม
 

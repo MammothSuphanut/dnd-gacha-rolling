@@ -42,6 +42,12 @@
 | เมือง | [Calmwater](calmwater.md) · [Mirror Lake](mirror-lake.md) |
 | Ashari | [Windward](windward.md) |
 | เมืองเพิ่ม 2026-10-23 ✨ | [Vaultwick](vaultwick.md) (S28) · [Blackreef](blackreef.md) (S32) · [Tidehold](tidehold.md) (S33) · [Neon Wharf](neon-wharf.md) (S34) · [Kingpin Heights](kingpin-heights.md) (S41) · [Silkford](silkford.md) (S52) · [Scraptown](scraptown.md) (S60) · [Driftwood](driftwood.md) (S64) · [Wreckers' Cove](wreckers-cove.md) (S66) · [Lowtide](lowtide.md) (S69) |
+| เกาะ ✨ | [Gauge Island](gauge-island.md) · [Breakwater Island](breakwater-island.md) |
+
+### แม่น้ำ
+
+- **[Rust River](rivers/rust-river.md)** — แม่น้ำ · แม่น้ำเมือง
+- **[Undertow River](rivers/undertow-river.md)** — แม่น้ำ
 
 ## ผู้คนและวัฒนธรรม
 

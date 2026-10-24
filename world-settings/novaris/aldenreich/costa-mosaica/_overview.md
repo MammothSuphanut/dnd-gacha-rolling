@@ -54,7 +54,13 @@ Concord **เป็นกลางในสงครามเย็น** แล�
 | ชุมชนและสถานที่ | [Fiorella](fiorella.md) · [Vena d'Oro](vena-doro.md) · [Ruins of Serenna](ruins-of-serenna.md) · [Porta Ferro](porta-ferro.md) (ด่านของจักรวรรดิ) · [Marisola](marisola.md) · [Cantano](cantano.md) (เมืองอิสระ) · [Pietralba](pietralba.md) (หมู่บ้านพื้นเมือง) |
 | อาณานิคมของจักรวรรดิ ✨ | [Saltmarch](saltmarch/_overview.md) · [Green March](green-march/_overview.md) |
 | ภูมิประเทศ | [Selva Scura](selva-scura.md) · [Monti Stella](monti-stella.md) · [Costa Secca](costa-secca.md) |
-| หมู่เกาะ | [Isole Smeralde](isole-smeralde/_overview.md) |
+| หมู่เกาะ | [Isole Smeralde](isole-smeralde/_overview.md) · [Isole del Vento](isole-del-vento/_overview.md) ✨ |
+| เกาะ ✨ | [Sant'Orso](sant-orso.md) · [Santa Rosalba](santa-rosalba.md) · [Isola Rondine](isola-rondine.md) · [Lido Piccolo](lido-piccolo.md) |
+
+### แม่น้ำ
+
+- **[Rame River](rivers/rame-river.md)** — แม่น้ำ · แม่น้ำชายแดน
+- **[Serena River](rivers/serena-river.md)** — แม่น้ำ
 
 ## ผู้คนและวัฒนธรรม
 

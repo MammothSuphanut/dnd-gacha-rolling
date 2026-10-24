@@ -43,6 +43,17 @@
 | ✨ หัวเมืองหลวง | [Bang Bua](bang-bua.md) · [Nakhon Phet](nakhon-phet.md) · [Khao Kaeo](khao-kaeo.md) · [Kamphaeng Hin](kamphaeng-hin.md) |
 | ✨ ชาวดอย | [Doi Mok](doi-mok.md) · [Doi Fa](doi-fa.md) · [Pang Ma](pang-ma.md) |
 | ✨ ล้านนา | [Wiang Chang](wiang-chang.md) · [Wiang Hin](wiang-hin.md) · [Wiang Kham](wiang-kham.md) · [Mae Pha](mae-pha.md) · [Ban Tung](ban-tung.md) |
+| เกาะ ✨ | [Ko Kinnon](ko-kinnon.md) · [Ko Hongsa](ko-hongsa.md) |
+
+### แม่น้ำ
+
+- **[Bua River](rivers/bua-river.md)** — แม่น้ำ · สาขาของ Suwanna River · ลำน้ำสั้นที่สุดใน Suvarna
+- **[Hin River](rivers/hin-river.md)** — แม่น้ำ · สาขาของ Ngoen River
+- **[Ngoen River](rivers/ngoen-river.md)** — แม่น้ำ · สาขาของ Suwanna River
+- **[Nong River](rivers/nong-river.md)** — แม่น้ำ · สาขาของ Phet River
+- **[Pa River](rivers/pa-river.md)** — แม่น้ำ · สาขาของ Suwanna River
+- **[Phet River](rivers/phet-river.md)** — แม่น้ำ · แม่น้ำของหัวเมืองหลวง
+- **[Suwanna River](rivers/suwanna-river.md)** — แม่น้ำ · **แม่น้ำที่ยาวที่สุดในโลก** · แม่น้ำแม่ของ Himmapan
 
 ## ผู้คนและวัฒนธรรม
 

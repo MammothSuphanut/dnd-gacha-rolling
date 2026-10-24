@@ -31,6 +31,13 @@
 
 - นักรบม้า หมอผี คนต้อนสัตว์ · ✨ เคารพหมีและนกอินทรีเป็นสัตว์ศักดิ์สิทธิ์
 
+### แม่น้ำ
+
+- **[Altan River](../rivers/altan-river.md)** — แม่น้ำ
+- **[Baga River](../rivers/baga-river.md)** — แม่น้ำ · สาขาของ Tsenkher River
+- **[Tsenkher River](../rivers/tsenkher-river.md)** — แม่น้ำ
+- **[Ulaan River](../rivers/ulaan-river.md)** — แม่น้ำ
+
 ## การเมืองและความสัมพันธ์
 
 - **Amanokado**: คู่ค้า

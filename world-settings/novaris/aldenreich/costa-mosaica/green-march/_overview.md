@@ -51,6 +51,7 @@
 | ค่ายและเมืองไม้ | [Mosswick](mosswick.md) · [Timberton](timberton.md) |
 | เนินในป่า | [Hillcrest](hillcrest.md) · [Fernridge](fernridge.md) · [Fernbrook](fernbrook.md) |
 | สี่เมืองแม่น้ำ | [Lockwood](lockwood.md) · [Stillwater](stillwater.md) · [Marshgate](marshgate.md) · [Reedmoor](reedmoor.md) |
+| เกาะ ✨ | [Ashfall Isle](ashfall-isle.md) · [Mirewatch](mirewatch.md) |
 
 ## ผู้คนและวัฒนธรรม
 

@@ -4,7 +4,7 @@
  *
  * How to use:
  *   1. Build the data from the repo (once per change to the .md files), for each continent
- *      (aldenreich, eldmere, shenzhou, suvarna, voxaria):
+ *      (aldenreich, eldmere, shenzhou, suvarna, voxaria, seas):
  *        python world-settings/novaris/tools/build_foundry_journal.py aldenreich "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal"
  *   2. Macro Directory → Create Macro → Type: "Script" → paste this file → Execute (GM only).
  *
@@ -20,7 +20,8 @@
 (async () => {
   const DATA_DIR = "worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal";
   const IMG_DIR = "worlds/astral-nexus-constellation-protocol/World_Setting/Novaris";
-  const CONTINENTS = ["aldenreich", "eldmere", "shenzhou", "suvarna", "voxaria"];
+  // "seas" spans the whole world, so it has no continent scene: its pins go on the world scene only
+  const CONTINENTS = ["aldenreich", "eldmere", "shenzhou", "suvarna", "voxaria", "seas"];
   const ROOT_FOLDER = "Novaris";
   // Scenes the pins go on: image = background that identifies the scene, box = Azgaar map area it shows.
   // Icon/font sizes follow each image's scale (world ×9, continents ×18 or ×27) so pins look the same size.
@@ -82,9 +83,9 @@
     if (orphans.length) console.warn(`Novaris ${continent}: entries whose .md file is gone (not deleted):`, orphans.map(j => j.name));
 
     // Pins: rebuild this continent's notes on each scene
-    for (const def of [WORLD_SCENE, CONTINENT_SCENES[continent]]) {
-      const scene = def && findScene(def);
-      if (!scene) { ui.notifications.warn(`Scene "${def?.name}" not found — pins skipped.`); continue; }
+    for (const def of [WORLD_SCENE, CONTINENT_SCENES[continent]].filter(Boolean)) {
+      const scene = findScene(def);
+      if (!scene) { ui.notifications.warn(`Scene "${def.name}" not found — pins skipped.`); continue; }
       const old = scene.notes.filter(n => n.getFlag(FLAG, "novarisContinent") === continent).map(n => n.id);
       if (old.length) await scene.deleteEmbeddedDocuments("Note", old);
 

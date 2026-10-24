@@ -38,6 +38,11 @@
 | ✨ ฝ่ายธรรมะ — สำนัก | [Mudang-san](mudang-san.md) · [Ami-san](ami-san.md) · [Cheongseong-san](cheongseong-san.md) · [Jeomchang-san](jeomchang-san.md) · [Gaebang-chon](gaebang-chon.md) |
 | ✨ ฝ่ายธรรมะ — ตระกูลใหญ่ | [Namgung-seong](namgung-seong.md) · [Moyong-jang](moyong-jang.md) · [Jegal-gok](jegal-gok.md) · [Hwangbo-seong](hwangbo-seong.md) · [Dangmun](dangmun.md) |
 | ✨ ฝ่ายอธรรม | [Nongnim-chae](nongnim-chae.md) · [Suro-chae](suro-chae.md) · [Pado](pado.md) · [Amcho](amcho.md) · [Heukryong-hang](heukryong-hang.md) · [Yeomjeon](yeomjeon.md) · [Hwanrak](hwanrak.md) · [Dojang](dojang.md) · [Muyeong](muyeong.md) |
+| เกาะ ✨ | [Geumrin-do](geumrin-do.md) |
+
+### แม่น้ำ
+
+- **[Heuksu River](rivers/heuksu-river.md)** — แม่น้ำ · แม่น้ำจากเขตมาร
 
 ## ผู้คนและวัฒนธรรม
 

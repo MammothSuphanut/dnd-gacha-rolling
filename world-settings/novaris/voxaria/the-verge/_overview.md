@@ -39,6 +39,10 @@
 | ฐานริมเขต | [Fernlake](fernlake.md) · [Faewatch](faewatch.md) |
 | ที่ตั้งเดิม | [Syngorn](syngorn.md) (ย้ายไปเกาะแล้ว) |
 
+### แม่น้ำ
+
+- **[Veilwater River](rivers/veilwater-river.md)** — แม่น้ำ · แม่น้ำเฟย์ในเขต Gate
+
 ## ผู้คนและวัฒนธรรม
 
 - **Titania** และ**ราชสำนักฤดูร้อน** · เฟย์ที่ติดในโลก · ฮันเตอร์

@@ -52,6 +52,15 @@
 | ✨ เผ่า Kaan | [Kaanmul](kaanmul.md) · [Kantun](kantun.md) · [Ikal](ikal.md) · [Hatun](hatun.md) · [Sakha](sakha.md) · [Uhmal](uhmal.md) · [Ekchah](ekchah.md) |
 | ✨ เผ่า Kuk | [Kukmul](kukmul.md) · [Moha](moha.md) · [Chaktun](chaktun.md) · [Sakbe](sakbe.md) · [Ixkab](ixkab.md) |
 | ✨ เผ่า Ha | [Hakan](hakan.md) · [Tsonot](tsonot.md) · [Nohha](nohha.md) · [Chakha](chakha.md) · [Ikpet](ikpet.md) · [Kuchil](kuchil.md) |
+| หมู่เกาะและเกาะ ✨ | [Kaknab](kaknab/_overview.md) · [Nohoch Ak](nohoch-ak.md) · [Ts'unu'un](tsunuun.md) |
+
+### แม่น้ำ
+
+- **[Balamha River](rivers/balamha-river.md)** — แม่น้ำ · แม่น้ำของเผ่า Balam
+- **[Chelha River](rivers/chelha-river.md)** — แม่น้ำ · แม่น้ำชายฝั่งของเผ่า Ha
+- **[Ikha River](rivers/ikha-river.md)** — แม่น้ำ · แม่น้ำศักดิ์สิทธิ์ของเผ่า Kaan
+- **[Kantzul River](rivers/kantzul-river.md)** — แม่น้ำ · แม่น้ำชายแดนเผ่า Kaan กับ Balam
+- **[Kukha River](rivers/kukha-river.md)** — แม่น้ำ · แม่น้ำของเผ่า Kuk
 
 ## ผู้คนและวัฒนธรรม
 

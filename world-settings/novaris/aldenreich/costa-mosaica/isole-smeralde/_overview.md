@@ -36,6 +36,7 @@
 | ชุมชน | [Rocca](rocca.md) · [Isola Grande](isola-grande.md) · [Isola Nera](isola-nera.md) |
 | เกาะอันตราย | [Isoletta](isoletta.md) · [Vulcana](vulcana.md) · [Corallina](corallina.md) |
 | ทะเล | [Gorgo](gorgo.md) · [Fumarella](fumarella.md) |
+| เกาะอื่น ✨ | [Isola Palma](isola-palma.md) · [Isola Lunga](isola-lunga.md) · [Gemella](gemella.md) · [Scoglio Verde](scoglio-verde.md) · [Isola Ombrosa](isola-ombrosa.md) · [Tartaruga](tartaruga.md) · [Isola dei Gabbiani](isola-dei-gabbiani.md) · [Scoglio del Faro](scoglio-del-faro.md) · [Monte Smeraldo](monte-smeraldo.md) · [Isola Alba](isola-alba.md) · [Isola Selvaggia](isola-selvaggia.md) · [Isola Estrema](isola-estrema.md) · [Isole Lontane Maggiore](isole-lontane-maggiore.md) · [Lontana Minore](lontana-minore.md) · [Vulcanella](vulcanella.md) · [Corallino](corallino.md) |
 
 ## ผู้คนและวัฒนธรรม
 

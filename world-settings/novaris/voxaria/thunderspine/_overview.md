@@ -35,6 +35,10 @@
 | สถานที่พิเศษ | [Twinfire Gorge](twinfire-gorge.md) · [Riddle Cavern](riddle-cavern.md) |
 | เมืองเพิ่ม 2026-10-23 ✨ | [Stormwatch](stormwatch.md) (S49) · [Boltcrest](boltcrest.md) (S53) · [Glimmerhold](glimmerhold.md) (S59) · [Wardline](wardline.md) (S61) · [Briarwatch](briarwatch.md) (S71) · [Highrod](highrod.md) (S72) |
 
+### แม่น้ำ
+
+- **[Echo River](rivers/echo-river.md)** — แม่น้ำ · แม่น้ำใต้ดินที่ผุดขึ้น
+
 ## ผู้คนและวัฒนธรรม
 
 - ออร์คแห่ง Frostfang (บูชา Gruumsh) · drow (บูชา Lolth) · ชาวบึงผู้ศรัทธา Pelor

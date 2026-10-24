@@ -26,6 +26,7 @@ BOXES = {
     "shenzhou": (30, 105, 639, 719),
     "suvarna": (20, 697, 769, 1198),
     "voxaria": (650, 240, 1137, 827),
+    "seas": (0, 0, 1800, 1200),  # seas touch several continents: the whole world map
 }
 
 # First match wins: (pattern on the "ประเภท" row, icon, tint)
@@ -53,6 +54,9 @@ DEFAULT_ICON = ("stone-path", "#e0e0e0")
 
 # Lore folders that hold places with no region yet: their files go straight into the continent folder
 LOOSE = {"unspecified"}
+
+# Folders with no _overview.md that get a display name instead of their folder name
+FOLDER_NAMES = {"rivers": "แม่น้ำ"}
 
 
 def folder_of(rel):
@@ -117,7 +121,7 @@ def main():
         if os.path.basename(rel) in LOOSE:
             continue
         overview = os.path.join(d, "_overview.md")
-        name = title_of(open(overview, encoding="utf-8").read()) if os.path.exists(overview) else os.path.basename(rel)
+        name = title_of(open(overview, encoding="utf-8").read()) if os.path.exists(overview) else FOLDER_NAMES.get(os.path.basename(rel), os.path.basename(rel))
         parent = os.path.dirname(rel) if rel != continent else None
         folders.append({"key": rel, "name": re.sub(r"\s*\(.*\)$", "", name), "parent": parent})
 

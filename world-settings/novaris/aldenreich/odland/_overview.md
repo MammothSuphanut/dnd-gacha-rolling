@@ -51,6 +51,16 @@ Dynasty ไม่ใช่ประเทศของ drow ล้วน — ก�
 | ชุมชนอิสระ | [Sevenfold](sevenfold.md) · [Shellwander](shellwander.md) · [Scalehaven](scalehaven.md) · [Leafhome](leafhome.md) · [Grimhollow](grimhollow.md) · [Wraithwall](wraithwall.md) · [Gorgrim](gorgrim.md) |
 | ซากและประวัติศาสตร์ | [Ruins of Drakara](ruins-of-drakara.md) · [Drakara](drakara.md) |
 | ภูมิประเทศ | [Mistmoor](mistmoor.md) · [Thornwaste](thornwaste.md) · [Greengorge](greengorge.md) · [Twilight Range](twilight-range.md) · [Lotuswood](lotuswood.md) |
+| เกาะ ✨ | [Lotus Key](lotus-key.md) |
+
+### แม่น้ำ
+
+- **[Dim River](rivers/dim-river.md)** — แม่น้ำ · สาขาของ Drake River
+- **[Drake River](rivers/drake-river.md)** — แม่น้ำ
+- **[Gloamwater River](rivers/gloamwater-river.md)** — แม่น้ำ · แม่น้ำหนองบึง
+- **[Lume River](rivers/lume-river.md)** — แม่น้ำ · สาขาของ Shellwater River
+- **[Maw River](rivers/maw-river.md)** — แม่น้ำ · แม่น้ำใต้ดินที่ผุดขึ้น
+- **[Shellwater River](rivers/shellwater-river.md)** — แม่น้ำ
 
 ## ผู้คนและวัฒนธรรม
 

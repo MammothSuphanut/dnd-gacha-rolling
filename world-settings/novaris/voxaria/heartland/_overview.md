@@ -46,6 +46,12 @@
 | โบราณและอันตราย | [Ironback Ridge](ironback-ridge.md) · [Ivywood](ivywood.md) · [Sunbarrow](sunbarrow.md) · [Blackcrown Mountain](blackcrown-mountain.md) |
 | เมืองเพิ่ม 2026-10-23 ✨ | [Freeharbor](freeharbor.md) (S27) · [Drillfield](drillfield.md) (S31) · [Freightyard](freightyard.md) (S42) · [Regatta](regatta.md) (S47) · [Last Stop](last-stop.md) (S68) |
 
+### แม่น้ำ
+
+- **[Goldwater River](rivers/goldwater-river.md)** — แม่น้ำ · ทางเรือสินค้า
+- **[Meridian River](rivers/meridian-river.md)** — แม่น้ำ · แม่น้ำสายหลักของ Heartland
+- **[Sailwind River](rivers/sailwind-river.md)** — แม่น้ำ
+
 ## ผู้คนและวัฒนธรรม
 
 - คนขนส่ง เกษตรกร นักแสดง นักพนัน · นอลล์ที่เป็นพลเมือง · azer ใน Ivywood

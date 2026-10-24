@@ -121,6 +121,7 @@
 - **กลาง**: ที่ราบ Jungwon ชุมทางคาราวาน · สันเขา Cheonsan
 - **ตะวันตกไกล**: Mubong · Heukseong
 - **ใต้**: แผ่นดินและคาบสมุทรของ Tianchao
+- **กลางทะเล Donghai** ✨: [Heukpa-do](unspecified/heukpa-do.md) ฐานโจรสลัดยุทธภพ
 
 ## ผู้คนและวัฒนธรรม
 

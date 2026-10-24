@@ -42,6 +42,12 @@
 | ✨ ตระกูลหุบเหล็ก | [Jarnstad](jarnstad.md) · [Smedheim](smedheim.md) · [Malmdal](malmdal.md) · [Kolby](kolby.md) · [Gruvby](gruvby.md) |
 | ✨ ตระกูลยอดเขา | [Ornfjell](ornfjell.md) · [Snjofjell](snjofjell.md) · [Vardberg](vardberg.md) |
 | ✨ ชนเผ่าแห่งทุ่ง | [Many Fires](many-fires.md) · [Red Hoof](red-hoof.md) · [Thunder Butte](thunder-butte.md) |
+| หมู่เกาะ ✨ | [Utskjaer](utskjaer/_overview.md) |
+| เกาะ ✨ | [Thunderbird Rest](thunderbird-rest.md) |
+
+### แม่น้ำ
+
+- **[Svarta River](rivers/svarta-river.md)** — แม่น้ำ · แม่น้ำหุบเหล็ก
 
 ## ผู้คนและวัฒนธรรม
 

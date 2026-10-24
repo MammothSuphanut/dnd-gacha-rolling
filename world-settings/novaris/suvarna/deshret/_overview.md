@@ -39,6 +39,7 @@
 | ซากและศักดิ์สิทธิ์ | [Sandgrave](sandgrave.md) · [Sun Ziggurat](sun-ziggurat.md) |
 | ภูมิประเทศ | [Emberpeak](emberpeak.md) |
 | ✨ ชายแดน | [Castra Solis](castra-solis.md) · [Heshet](heshet.md) |
+| เกาะ ✨ | [Insula Vigilia](insula-vigilia.md) · [Scopulus](scopulus.md) · [Insula Serpentis](insula-serpentis.md) |
 
 ## ผู้คนและวัฒนธรรม
 

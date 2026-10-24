@@ -1,6 +1,6 @@
 {
  "source": "saves/novaris.map (v3)",
- "exported": "2026-10-23",
+ "exported": "2026-10-24",
  "places": [
   {
    "type": "burg",
@@ -3916,7 +3916,7 @@
    "type": "added",
    "name": "Stormwall",
    "x": 1330,
-   "y": 955
+   "y": 963
   },
   {
    "type": "added",
@@ -4045,350 +4045,1166 @@
    "y": 780
   },
   {
+   "type": "added",
+   "name": "Repunshiri",
+   "x": 595.4,
+   "y": 150.9
+  },
+  {
+   "type": "added",
+   "name": "Chikapshiri",
+   "x": 618.5,
+   "y": 192
+  },
+  {
+   "type": "added",
+   "name": "Hoshikage-jima",
+   "x": 544.3,
+   "y": 244.1
+  },
+  {
+   "type": "added",
+   "name": "Coldvault Island",
+   "x": 811.6,
+   "y": 275.5
+  },
+  {
+   "type": "added",
+   "name": "Icebarrow",
+   "x": 1349.2,
+   "y": 264.4
+  },
+  {
+   "type": "added",
+   "name": "Rimeholm",
+   "x": 1339.8,
+   "y": 280.1
+  },
+  {
+   "type": "added",
+   "name": "Gullskerry",
+   "x": 1362.3,
+   "y": 274.5
+  },
+  {
+   "type": "added",
+   "name": "Tomoshibi-jima",
+   "x": 591.7,
+   "y": 282.9
+  },
+  {
+   "type": "added",
+   "name": "Saltwatch",
+   "x": 1308.8,
+   "y": 288.9
+  },
+  {
+   "type": "added",
+   "name": "Kasumi-jima",
+   "x": 564.7,
+   "y": 311.5
+  },
+  {
+   "type": "added",
+   "name": "Namari-jima",
+   "x": 284.5,
+   "y": 344.5
+  },
+  {
+   "type": "added",
+   "name": "Suzu-jima",
+   "x": 284.7,
+   "y": 349.7
+  },
+  {
+   "type": "added",
+   "name": "Lantern Rock",
+   "x": 960.3,
+   "y": 364.7
+  },
+  {
+   "type": "added",
+   "name": "Wick Isle",
+   "x": 1033.9,
+   "y": 367.3
+  },
+  {
+   "type": "added",
+   "name": "Ember Islet",
+   "x": 1027,
+   "y": 370.6
+  },
+  {
+   "type": "added",
+   "name": "Sagi-jima",
+   "x": 200.4,
+   "y": 416.3
+  },
+  {
+   "type": "added",
+   "name": "Yūnagi-jima",
+   "x": 510.5,
+   "y": 428.2
+  },
+  {
+   "type": "added",
+   "name": "Crown Isle",
+   "x": 717.1,
+   "y": 433.6
+  },
+  {
+   "type": "added",
+   "name": "Haeun-do",
+   "x": 407.9,
+   "y": 445.9
+  },
+  {
+   "type": "added",
+   "name": "Ventosa",
+   "x": 1108.4,
+   "y": 454.9
+  },
+  {
+   "type": "added",
+   "name": "Ventina",
+   "x": 1119.2,
+   "y": 449.5
+  },
+  {
+   "type": "added",
+   "name": "Sant'Orso",
+   "x": 1178.1,
+   "y": 468.6
+  },
+  {
+   "type": "added",
+   "name": "Heukpa-do",
+   "x": 581.2,
+   "y": 536.6
+  },
+  {
+   "type": "added",
+   "name": "Landing Rock",
+   "x": 761.4,
+   "y": 550
+  },
+  {
+   "type": "added",
+   "name": "Isola Lunga",
+   "x": 1195,
+   "y": 551
+  },
+  {
+   "type": "added",
+   "name": "Gemella",
+   "x": 1215,
+   "y": 553
+  },
+  {
+   "type": "added",
+   "name": "Isola Palma",
+   "x": 1187.8,
+   "y": 565.3
+  },
+  {
+   "type": "added",
+   "name": "Scoglio Verde",
+   "x": 1205.4,
+   "y": 562.5
+  },
+  {
+   "type": "added",
+   "name": "Santa Rosalba",
+   "x": 1291.6,
+   "y": 571.1
+  },
+  {
+   "type": "added",
+   "name": "Isola Rondine",
+   "x": 1299.6,
+   "y": 566.1
+  },
+  {
+   "type": "added",
+   "name": "Little Feral",
+   "x": 738.6,
+   "y": 567.6
+  },
+  {
+   "type": "added",
+   "name": "Gauge Island",
+   "x": 951.6,
+   "y": 582
+  },
+  {
+   "type": "added",
+   "name": "Lido Piccolo",
+   "x": 1301.9,
+   "y": 588.6
+  },
+  {
+   "type": "added",
+   "name": "Isola Ombrosa",
+   "x": 1209.4,
+   "y": 592.7
+  },
+  {
+   "type": "added",
+   "name": "Breakwater Island",
+   "x": 976.7,
+   "y": 595.8
+  },
+  {
+   "type": "added",
+   "name": "Scoglio del Faro",
+   "x": 1192.2,
+   "y": 598
+  },
+  {
+   "type": "added",
+   "name": "Geumrin-do",
+   "x": 389.7,
+   "y": 608
+  },
+  {
+   "type": "added",
+   "name": "Tartaruga",
+   "x": 1201.4,
+   "y": 608.2
+  },
+  {
+   "type": "added",
+   "name": "Isola dei Gabbiani",
+   "x": 1217.6,
+   "y": 614
+  },
+  {
+   "type": "added",
+   "name": "Lotus Key",
+   "x": 1519.1,
+   "y": 630.7
+  },
+  {
+   "type": "added",
+   "name": "Ashfall Isle",
+   "x": 1491.5,
+   "y": 635.4
+  },
+  {
+   "type": "added",
+   "name": "Mirewatch",
+   "x": 1430,
+   "y": 663.4
+  },
+  {
+   "type": "added",
+   "name": "Isola Alba",
+   "x": 1238.3,
+   "y": 670.4
+  },
+  {
+   "type": "added",
+   "name": "Vulcanella",
+   "x": 1356,
+   "y": 664
+  },
+  {
+   "type": "added",
+   "name": "Monte Smeraldo",
+   "x": 1250,
+   "y": 684
+  },
+  {
+   "type": "added",
+   "name": "Corallino",
+   "x": 1384.7,
+   "y": 703.6
+  },
+  {
+   "type": "added",
+   "name": "Isola Selvaggia",
+   "x": 1240.4,
+   "y": 712.2
+  },
+  {
+   "type": "added",
+   "name": "Ravnsey",
+   "x": 535.2,
+   "y": 726.5
+  },
+  {
+   "type": "added",
+   "name": "Isola Estrema",
+   "x": 1236.8,
+   "y": 737.4
+  },
+  {
+   "type": "added",
+   "name": "Hvalsey",
+   "x": 534.4,
+   "y": 754.8
+  },
+  {
+   "type": "added",
+   "name": "Kolsey",
+   "x": 507.3,
+   "y": 760.1
+  },
+  {
+   "type": "added",
+   "name": "Litlasker",
+   "x": 506.3,
+   "y": 766.3
+  },
+  {
+   "type": "added",
+   "name": "Saltey",
+   "x": 537.4,
+   "y": 779.6
+  },
+  {
+   "type": "added",
+   "name": "Fjadrsker",
+   "x": 547.9,
+   "y": 775
+  },
+  {
+   "type": "added",
+   "name": "Isole Lontane Maggiore",
+   "x": 1244.2,
+   "y": 780.1
+  },
+  {
+   "type": "added",
+   "name": "Draugsker",
+   "x": 505.2,
+   "y": 774
+  },
+  {
+   "type": "added",
+   "name": "Ormsey",
+   "x": 512.6,
+   "y": 785
+  },
+  {
+   "type": "added",
+   "name": "Langey",
+   "x": 557.1,
+   "y": 788.3
+  },
+  {
+   "type": "added",
+   "name": "Lontana Minore",
+   "x": 1236.2,
+   "y": 790.4
+  },
+  {
+   "type": "added",
+   "name": "Insula Vigilia",
+   "x": 508.2,
+   "y": 831.2
+  },
+  {
+   "type": "added",
+   "name": "Ekadvipa",
+   "x": 635,
+   "y": 878.7
+  },
+  {
+   "type": "added",
+   "name": "Thunderbird Rest",
+   "x": 274.4,
+   "y": 881.6
+  },
+  {
+   "type": "added",
+   "name": "Scopulus",
+   "x": 527.3,
+   "y": 922.1
+  },
+  {
+   "type": "added",
+   "name": "Insula Serpentis",
+   "x": 538.4,
+   "y": 962.8
+  },
+  {
+   "type": "added",
+   "name": "Manidvipa",
+   "x": 727,
+   "y": 968.7
+  },
+  {
+   "type": "added",
+   "name": "Chandradvipa",
+   "x": 727.1,
+   "y": 978.5
+  },
+  {
+   "type": "added",
+   "name": "Thunderhame",
+   "x": 1457.8,
+   "y": 981.7
+  },
+  {
+   "type": "added",
+   "name": "Dawnmere",
+   "x": 1512.6,
+   "y": 999
+  },
+  {
+   "type": "added",
+   "name": "Skyrest",
+   "x": 1028.7,
+   "y": 1001.6
+  },
+  {
+   "type": "added",
+   "name": "Ko Kinnon",
+   "x": 103.9,
+   "y": 1004.2
+  },
+  {
+   "type": "added",
+   "name": "Seraph's Rise",
+   "x": 1558,
+   "y": 1014.2
+  },
+  {
+   "type": "added",
+   "name": "Anvilhold",
+   "x": 1762.9,
+   "y": 1009
+  },
+  {
+   "type": "added",
+   "name": "Titansleep",
+   "x": 1461.9,
+   "y": 1007.4
+  },
+  {
+   "type": "added",
+   "name": "Ember Aerie",
+   "x": 1613.9,
+   "y": 1020
+  },
+  {
+   "type": "added",
+   "name": "Kilnmaw",
+   "x": 1684.7,
+   "y": 1020.8
+  },
+  {
+   "type": "added",
+   "name": "Greywatch",
+   "x": 1475.3,
+   "y": 1018.8
+  },
+  {
+   "type": "added",
+   "name": "Cloudfoot",
+   "x": 1507.5,
+   "y": 1017.6
+  },
+  {
+   "type": "added",
+   "name": "Sundered Isle",
+   "x": 1706.8,
+   "y": 1013.1
+  },
+  {
+   "type": "added",
+   "name": "Basalt Crown",
+   "x": 1726.3,
+   "y": 1017.4
+  },
+  {
+   "type": "added",
+   "name": "Feather Cay",
+   "x": 1631.6,
+   "y": 1016.3
+  },
+  {
+   "type": "added",
+   "name": "Ko Hongsa",
+   "x": 120.8,
+   "y": 1017.7
+  },
+  {
+   "type": "added",
+   "name": "Hollowcrown",
+   "x": 1461.9,
+   "y": 1039.5
+  },
+  {
+   "type": "added",
+   "name": "Gate Rock",
+   "x": 1718.7,
+   "y": 1040
+  },
+  {
+   "type": "added",
+   "name": "Brightwater",
+   "x": 1506.3,
+   "y": 1043.4
+  },
+  {
+   "type": "added",
+   "name": "Scaleskerry",
+   "x": 1415.9,
+   "y": 1036.3
+  },
+  {
+   "type": "added",
+   "name": "Clawrock",
+   "x": 1398.5,
+   "y": 1045.5
+  },
+  {
+   "type": "added",
+   "name": "Wingfall",
+   "x": 1425.5,
+   "y": 1047.3
+  },
+  {
+   "type": "added",
+   "name": "Kneeling Rock",
+   "x": 1529.6,
+   "y": 1042.1
+  },
+  {
+   "type": "added",
+   "name": "Lantern Isle",
+   "x": 1606.3,
+   "y": 1047.1
+  },
+  {
+   "type": "added",
+   "name": "Ashcay",
+   "x": 1661.7,
+   "y": 1043.2
+  },
+  {
+   "type": "added",
+   "name": "Vigil Isle",
+   "x": 1550.5,
+   "y": 1047.3
+  },
+  {
+   "type": "added",
+   "name": "Hoardstone",
+   "x": 1389.1,
+   "y": 1058.3
+  },
+  {
+   "type": "added",
+   "name": "Kaelreach",
+   "x": 1477.5,
+   "y": 1059.6
+  },
+  {
+   "type": "added",
+   "name": "Aurenhold",
+   "x": 1416.9,
+   "y": 1082.1
+  },
+  {
+   "type": "added",
+   "name": "Seedling Isle",
+   "x": 1574.7,
+   "y": 1065.6
+  },
+  {
+   "type": "added",
+   "name": "Ak Tun",
+   "x": 672.5,
+   "y": 1075.4
+  },
+  {
+   "type": "added",
+   "name": "Greatroot",
+   "x": 1593,
+   "y": 1091.5
+  },
+  {
+   "type": "added",
+   "name": "Nohoch Ak",
+   "x": 712,
+   "y": 1087.6
+  },
+  {
+   "type": "added",
+   "name": "Chak Ak",
+   "x": 640.6,
+   "y": 1077.9
+  },
+  {
+   "type": "added",
+   "name": "Ixim",
+   "x": 638.2,
+   "y": 1081.6
+  },
+  {
+   "type": "added",
+   "name": "Driftcay",
+   "x": 1377.8,
+   "y": 1089.4
+  },
+  {
+   "type": "added",
+   "name": "Kay Ha'",
+   "x": 672,
+   "y": 1092.5
+  },
+  {
+   "type": "added",
+   "name": "Fangisle",
+   "x": 1402.4,
+   "y": 1089.6
+  },
+  {
+   "type": "added",
+   "name": "Fernholm",
+   "x": 1539.2,
+   "y": 1097
+  },
+  {
+   "type": "added",
+   "name": "Talon Cay",
+   "x": 1413.6,
+   "y": 1098.5
+  },
+  {
+   "type": "added",
+   "name": "Sunscale",
+   "x": 1442.2,
+   "y": 1098.5
+  },
+  {
+   "type": "added",
+   "name": "Mossback",
+   "x": 1629.3,
+   "y": 1099.1
+  },
+  {
+   "type": "added",
+   "name": "Muyal",
+   "x": 649.1,
+   "y": 1107.1
+  },
+  {
+   "type": "added",
+   "name": "Bronzewatch",
+   "x": 1499.9,
+   "y": 1107.1
+  },
+  {
+   "type": "added",
+   "name": "Coralhold",
+   "x": 1353.1,
+   "y": 1112
+  },
+  {
+   "type": "added",
+   "name": "Shellback",
+   "x": 1380.9,
+   "y": 1117.8
+  },
+  {
+   "type": "added",
+   "name": "Barkhollow",
+   "x": 1630.3,
+   "y": 1111.9
+  },
+  {
+   "type": "added",
+   "name": "Wyrmling Rock",
+   "x": 1425.5,
+   "y": 1110
+  },
+  {
+   "type": "added",
+   "name": "Ek' Tun",
+   "x": 648.7,
+   "y": 1115.4
+  },
+  {
+   "type": "added",
+   "name": "Lowbough",
+   "x": 1617.2,
+   "y": 1127
+  },
+  {
+   "type": "added",
+   "name": "Nandika",
+   "x": 384.1,
+   "y": 1123.8
+  },
+  {
+   "type": "added",
+   "name": "Kab Ch'een",
+   "x": 624,
+   "y": 1118.5
+  },
+  {
+   "type": "added",
+   "name": "Uh Tun",
+   "x": 635.2,
+   "y": 1123.5
+  },
+  {
+   "type": "added",
+   "name": "Lanternwreck",
+   "x": 1335,
+   "y": 1125.4
+  },
+  {
+   "type": "added",
+   "name": "Thornmere",
+   "x": 1426.8,
+   "y": 1126.2
+  },
+  {
+   "type": "added",
+   "name": "Vinewreath",
+   "x": 1451,
+   "y": 1127.4
+  },
+  {
+   "type": "added",
+   "name": "Bindu",
+   "x": 392.2,
+   "y": 1127.2
+  },
+  {
+   "type": "added",
+   "name": "Sak Lol",
+   "x": 626,
+   "y": 1131
+  },
+  {
+   "type": "added",
+   "name": "Meghadvipa",
+   "x": 422.3,
+   "y": 1152.7
+  },
+  {
+   "type": "added",
+   "name": "Southspur",
+   "x": 1301.1,
+   "y": 1139.3
+  },
+  {
+   "type": "added",
+   "name": "Pebble Cay",
+   "x": 1315.5,
+   "y": 1131.4
+  },
+  {
+   "type": "added",
+   "name": "Mirefang",
+   "x": 1485.3,
+   "y": 1135.6
+  },
+  {
+   "type": "added",
+   "name": "Thornlet",
+   "x": 1418.6,
+   "y": 1141.1
+  },
+  {
+   "type": "added",
+   "name": "Ts'unu'un",
+   "x": 588.9,
+   "y": 1142.4
+  },
+  {
+   "type": "added",
+   "name": "Goldtail",
+   "x": 1465.9,
+   "y": 1147.4
+  },
+  {
+   "type": "added",
+   "name": "Velatira",
+   "x": 442.7,
+   "y": 1150.7
+  },
+  {
+   "type": "added",
+   "name": "Chakan Wilds",
+   "x": 580.5,
+   "y": 1100
+  },
+  {
+   "type": "added",
+   "name": "Saltfrost Isles",
+   "x": 1318,
+   "y": 250
+  },
+  {
+   "type": "added",
+   "name": "Isole del Vento",
+   "x": 1114,
+   "y": 463
+  },
+  {
+   "type": "added",
+   "name": "Utskjaer",
+   "x": 575,
+   "y": 742
+  },
+  {
+   "type": "added",
+   "name": "Kaknab",
+   "x": 662,
+   "y": 1060
+  },
+  {
    "type": "river",
-   "name": "Dalai Uul River",
+   "name": "Ulaan River",
    "x": 363.51,
    "y": 206.99
   },
   {
    "type": "river",
-   "name": "Tsenkhirvan River",
+   "name": "Tsenkher River",
    "x": 418.65,
    "y": 240
   },
   {
    "type": "river",
-   "name": "Bagaan Brook",
+   "name": "Baga River",
    "x": 426.42,
    "y": 252.88
   },
   {
    "type": "river",
-   "name": "Khovshaat River",
+   "name": "Sakai River",
    "x": 460.35,
    "y": 232.12
   },
   {
    "type": "river",
-   "name": "Algi River",
+   "name": "Altan River",
    "x": 395.49,
    "y": 243.43
   },
   {
    "type": "river",
-   "name": "Gwang River",
+   "name": "Ginga River",
    "x": 517.93,
    "y": 255.57
   },
   {
    "type": "river",
-   "name": "Seocheong River",
+   "name": "Mitarashi River",
    "x": 496.23,
    "y": 283.91
   },
   {
    "type": "river",
-   "name": "Fludar River",
+   "name": "Lethe River",
    "x": 1437.64,
    "y": 281.08
   },
   {
    "type": "river",
-   "name": "Voyageid River",
+   "name": "Stillwater River",
    "x": 1446.98,
    "y": 287.52
   },
   {
    "type": "river",
-   "name": "Hailer River",
+   "name": "Griffon River",
    "x": 1402.55,
    "y": 285.45
   },
   {
    "type": "river",
-   "name": "Emin Creek",
+   "name": "Elan River",
    "x": 1406.73,
    "y": 281.85
   },
   {
    "type": "river",
-   "name": "Lumenha River",
+   "name": "Kalda River",
    "x": 1548.28,
    "y": 290.08
   },
   {
    "type": "river",
-   "name": "Ponan Creek",
+   "name": "Hikari River",
    "x": 583.45,
    "y": 295.85
   },
   {
    "type": "river",
-   "name": "Hnifsvog River",
+   "name": "Alvar River",
    "x": 1478.19,
    "y": 288.54
   },
   {
    "type": "river",
-   "name": "Trorar River",
+   "name": "Ulva River",
    "x": 1464.94,
    "y": 292.64
   },
   {
    "type": "river",
-   "name": "Pungdong River",
+   "name": "Asa River",
    "x": 537.49,
    "y": 303.84
   },
   {
    "type": "river",
-   "name": "Otmos River",
+   "name": "Birch River",
    "x": 1367.83,
    "y": 318.67
   },
   {
    "type": "river",
-   "name": "Straunah River",
+   "name": "Straum River",
    "x": 1527.03,
    "y": 303.54
   },
   {
    "type": "river",
-   "name": "Brunahlid Brook",
+   "name": "Brunn River",
    "x": 1512.06,
    "y": 312.31
   },
   {
    "type": "river",
-   "name": "Towcesin River",
+   "name": "Gravelrun River",
    "x": 806.86,
    "y": 327.28
   },
   {
    "type": "river",
-   "name": "Oseushi River",
+   "name": "Kurogane River",
    "x": 255.39,
    "y": 350.9
   },
   {
    "type": "river",
-   "name": "Jecheon River",
+   "name": "Tasogare River",
    "x": 528.67,
    "y": 354.41
   },
   {
    "type": "river",
-   "name": "Namchau River",
+   "name": "Cheongryu River",
    "x": 349.57,
    "y": 379.56
   },
   {
    "type": "river",
-   "name": "Pichambe River",
+   "name": "Lantern River",
    "x": 914.11,
    "y": 358.22
   },
   {
    "type": "river",
-   "name": "Onigsbachlin River",
+   "name": "Mantle River",
    "x": 1319.67,
    "y": 388.75
   },
   {
    "type": "river",
-   "name": "Dobel River",
+   "name": "Thistle River",
    "x": 1298.41,
    "y": 385.35
   },
   {
    "type": "river",
-   "name": "Wargham River",
+   "name": "Pinewater River",
    "x": 861.19,
    "y": 400.94
   },
   {
    "type": "river",
-   "name": "Rheindind River",
+   "name": "Greyflow River",
    "x": 1422.83,
    "y": 408.03
   },
   {
    "type": "river",
-   "name": "Haundra River",
+   "name": "Shellwater River",
    "x": 1568.72,
    "y": 388.27
   },
   {
    "type": "river",
-   "name": "Sutsu River",
+   "name": "Inaho River",
    "x": 261.46,
    "y": 387.32
   },
   {
    "type": "river",
-   "name": "Dryndlume River",
+   "name": "Lume River",
    "x": 1594.41,
    "y": 420.97
   },
   {
    "type": "river",
-   "name": "Linpak River",
+   "name": "Songha River",
    "x": 386.94,
    "y": 384.43
   },
   {
    "type": "river",
-   "name": "Blechwel River",
+   "name": "Slagwater River",
    "x": 773.58,
    "y": 409.49
   },
   {
    "type": "river",
-   "name": "Towcester Creek",
+   "name": "Glass River",
    "x": 764.05,
    "y": 406.18
   },
   {
    "type": "river",
-   "name": "Nishima River",
+   "name": "Nanashi River",
    "x": 257.84,
    "y": 414.45
   },
   {
    "type": "river",
-   "name": "Duyarilov River",
+   "name": "Goldwater River",
    "x": 931.58,
    "y": 418.44
   },
   {
    "type": "river",
-   "name": "Dunster River",
+   "name": "Turbine River",
    "x": 840.04,
    "y": 418.83
   },
   {
    "type": "river",
-   "name": "Zutivl River",
+   "name": "Undertow River",
    "x": 982.81,
    "y": 419.87
   },
   {
    "type": "river",
-   "name": "Torricuciva River",
+   "name": "Rame River",
    "x": 1193.92,
    "y": 425.32
   },
   {
    "type": "river",
-   "name": "Sulzgravels River",
+   "name": "Warden River",
    "x": 1505.94,
    "y": 419.03
   },
   {
    "type": "river",
-   "name": "Munsberg River",
+   "name": "Goldmead River",
    "x": 1462.56,
    "y": 461.61
   },
   {
    "type": "river",
-   "name": "Kedine River",
+   "name": "Meridian River",
    "x": 812.85,
    "y": 456.26
   },
   {
    "type": "river",
-   "name": "Bretford River",
+   "name": "Wellspring River",
    "x": 788.44,
    "y": 454.47
   },
   {
    "type": "river",
-   "name": "Taiwai River",
+   "name": "Daeha River",
    "x": 309.96,
    "y": 464.89
   },
   {
    "type": "river",
-   "name": "Hlaugmarsogith River",
+   "name": "Gloamwater River",
    "x": 1594.99,
    "y": 498.05
   },
   {
    "type": "river",
-   "name": "Totham River",
+   "name": "Sailwind River",
    "x": 921.29,
    "y": 486.46
   },
   {
    "type": "river",
-   "name": "Schofenlin River",
+   "name": "Serena River",
    "x": 1303.21,
    "y": 507.01
   },
   {
    "type": "river",
-   "name": "Waltenstadt River",
+   "name": "Hexwater River",
    "x": 1482.38,
    "y": 492.48
   },
   {
    "type": "river",
-   "name": "Zhenping River",
+   "name": "Heuksu River",
    "x": 308.01,
    "y": 501.76
   },
   {
    "type": "river",
-   "name": "Asheldock River",
+   "name": "Firstwater River",
    "x": 771.58,
    "y": 488.97
   },
   {
    "type": "river",
-   "name": "Hausach River",
+   "name": "Hop River",
    "x": 1456.48,
    "y": 511.1
   },
   {
    "type": "river",
-   "name": "Milcesbury River",
+   "name": "Rust River",
    "x": 934.69,
    "y": 522.33
   },
   {
    "type": "river",
-   "name": "Beterke River",
+   "name": "Echo River",
    "x": 869.4,
    "y": 537.47
   },
   {
    "type": "river",
-   "name": "Ruzgkigh River",
+   "name": "Drake River",
    "x": 1537.8,
    "y": 533.81
   },
   {
    "type": "river",
-   "name": "Qidroz River",
+   "name": "Dim River",
    "x": 1527.84,
    "y": 535.59
   },
   {
    "type": "river",
-   "name": "Bhicrodh River",
+   "name": "Maw River",
    "x": 1605.05,
    "y": 543.32
   },
   {
    "type": "river",
-   "name": "Durbury River",
+   "name": "Veilwater River",
    "x": 816.89,
    "y": 562.97
   },
   {
    "type": "river",
-   "name": "Tlalpan River",
+   "name": "Itztli River",
    "x": 933.05,
    "y": 647.56
   },
@@ -4400,139 +5216,139 @@
   },
   {
    "type": "river",
-   "name": "Metztalihua River",
+   "name": "Metztli River",
    "x": 834.66,
    "y": 695.75
   },
   {
    "type": "river",
-   "name": "Bogadir River",
+   "name": "Svarta River",
    "x": 357.18,
    "y": 799.23
   },
   {
    "type": "river",
-   "name": "Kabergealnin River",
+   "name": "Suwanna River",
    "x": 202.11,
    "y": 904.16
   },
   {
    "type": "river",
-   "name": "Do Nam Thuy Branch",
+   "name": "Bua River",
    "x": 225.8,
    "y": 926.33
   },
   {
    "type": "river",
-   "name": "Thai Creek",
+   "name": "Pa River",
    "x": 215.48,
    "y": 894.03
   },
   {
    "type": "river",
-   "name": "Vung Son River",
+   "name": "Phet River",
    "x": 179.24,
    "y": 902.77
   },
   {
    "type": "river",
-   "name": "Huong Chau River",
+   "name": "Nong River",
    "x": 139.15,
    "y": 918.09
   },
   {
    "type": "river",
-   "name": "Asefenver River",
+   "name": "Ngoen River",
    "x": 239.79,
    "y": 953.13
   },
   {
    "type": "river",
-   "name": "Ba Cat River",
+   "name": "Hin River",
    "x": 251.71,
    "y": 951.06
   },
   {
    "type": "river",
-   "name": "Afzalnagal River",
+   "name": "Dipavati River",
    "x": 478.28,
    "y": 1078.2
   },
   {
    "type": "river",
-   "name": "Kushpur River",
+   "name": "Kusha River",
    "x": 489.31,
    "y": 1074.02
   },
   {
    "type": "river",
-   "name": "Pitonticyon River",
+   "name": "Ehrach River",
    "x": 321.24,
    "y": 1126.96
   },
   {
    "type": "river",
-   "name": "Crodolis Stream",
+   "name": "Kalte River",
    "x": 330.92,
    "y": 1130.26
   },
   {
    "type": "river",
-   "name": "Sihimote River",
+   "name": "Padmini River",
    "x": 450.74,
    "y": 1106.46
   },
   {
    "type": "river",
-   "name": "Margytos River",
+   "name": "Helmach River",
    "x": 291.65,
    "y": 1115.37
   },
   {
    "type": "river",
-   "name": "Muwenza River",
+   "name": "Kantzul River",
    "x": 510.28,
    "y": 1138.66
   },
   {
    "type": "river",
-   "name": "Nakaunde River",
+   "name": "Chelha River",
    "x": 609.39,
    "y": 1128.94
   },
   {
    "type": "river",
-   "name": "Hatnasimvar River",
+   "name": "Mauna River",
    "x": 431.7,
    "y": 1130.18
   },
   {
    "type": "river",
-   "name": "Pyrelopopo River",
+   "name": "Schwarzach River",
    "x": 240.82,
    "y": 1140.61
   },
   {
    "type": "river",
-   "name": "Piniapon Creek",
+   "name": "Klinge River",
    "x": 226.52,
    "y": 1140.48
   },
   {
    "type": "river",
-   "name": "Waburulu River",
+   "name": "Ikha River",
    "x": 530.26,
    "y": 1143.19
   },
   {
    "type": "river",
-   "name": "Naibinsim River",
+   "name": "Kukha River",
    "x": 575.92,
    "y": 1137.38
   },
   {
    "type": "river",
-   "name": "Buyandia River",
+   "name": "Balamha River",
    "x": 470.59,
    "y": 1135.74
   }

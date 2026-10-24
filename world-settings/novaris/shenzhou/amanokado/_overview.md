@@ -52,6 +52,16 @@
 | ✨ สำนักคนทรงอีกาดำ (The Raven Queen) | [Karasuma](karasuma.md) · [Kurozuka](kurozuka.md) · [Tamayobi](tamayobi.md) · [Usugure](usugure.md) · [Kagemori](kagemori.md) |
 | ✨ ตระกูลองเมียวจิ Hoshimi | [Hoshimi](hoshimi.md) · [Tenmon](tenmon.md) · [Shikimura](shikimura.md) · [Fudamachi](fudamachi.md) · [Yuimori](yuimori.md) · [Hokuto](hokuto.md) · [Kitsunebi](kitsunebi.md) · [Kitaboshi](kitaboshi.md) |
 | ✨ ยามาบุชิ | [Mineiri](mineiri.md) |
+| เกาะ ✨ | [Repunshiri](repunshiri.md) · [Chikapshiri](chikapshiri.md) · [Hoshikage-jima](hoshikage-jima.md) · [Tomoshibi-jima](tomoshibi-jima.md) · [Kasumi-jima](kasumi-jima.md) · [Yūnagi-jima](yunagi-jima.md) |
+
+### แม่น้ำ
+
+- **[Asa River](rivers/asa-river.md)** — แม่น้ำ
+- **[Ginga River](rivers/ginga-river.md)** — แม่น้ำ
+- **[Hikari River](rivers/hikari-river.md)** — แม่น้ำ · แม่น้ำเส้นแบ่งโยไค
+- **[Mitarashi River](rivers/mitarashi-river.md)** — แม่น้ำ · แม่น้ำศักดิ์สิทธิ์
+- **[Sakai River](rivers/sakai-river.md)** — แม่น้ำ · แม่น้ำชายแดน · สาขาของ Tsenkher River
+- **[Tasogare River](rivers/tasogare-river.md)** — แม่น้ำ · แม่น้ำของคนตาย
 
 ## ผู้คนและวัฒนธรรม
 

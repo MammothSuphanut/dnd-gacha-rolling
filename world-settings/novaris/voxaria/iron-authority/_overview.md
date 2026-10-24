@@ -38,6 +38,12 @@
 | ขอบเขต Gate | [Glade Hollow](glade-hollow.md) |
 | เมืองเพิ่ม 2026-10-23 ✨ | [Lootfall](lootfall.md) (S36) · [Claimstake](claimstake.md) (S70) |
 
+### แม่น้ำ
+
+- **[Itztli River](rivers/itztli-river.md)** — แม่น้ำ
+- **[Metztli River](rivers/metztli-river.md)** — แม่น้ำ
+- **[Tuchtlan River](rivers/tuchtlan-river.md)** — แม่น้ำ · แม่น้ำในเขต Gate
+
 ## ผู้คนและวัฒนธรรม
 
 - **Iron Authority**: ฮอบกอบลินราว 70% · ก็อบลินเป็นพลเมืองชั้นรอง · ตำรวจลับ Gauntlet · "Hero" ของรัฐคือทหารพิเศษ
