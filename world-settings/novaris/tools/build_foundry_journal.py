@@ -51,6 +51,22 @@ ICONS = [
 ]
 DEFAULT_ICON = ("stone-path", "#e0e0e0")
 
+# Country labels on the map ("|" = line break) → the file that describes the country.
+# These files already pin their capital or region, so the country label is an extra pin.
+STATE_PINS = {
+    "Lumenvael|Dynasty": "aldenreich/odland/lumenvael-dynasty.md",
+    "Lagunara|Concord": "aldenreich/costa-mosaica/lagunara-concord.md",
+    "Twinhold": "aldenreich/gramark/twinhold-diarchy.md",
+    "Voxaria": "voxaria/_overview.md",
+    "Akitsu|Shogunate": "shenzhou/mizuho/_overview.md",
+    "Imperium|Solis": "suvarna/deshret/_overview.md",
+    "Pancha|Sabha": "suvarna/himmapan-wilds/_overview.md",
+    "Jyoti|Marga": "suvarna/dandaka/jyoti-marga.md",
+    "Ehrvarn|Conquest": "suvarna/ehrvarn-highlands/_overview.md",
+    "Varga|Republic": "suvarna/ulfdal/_overview.md",
+}
+STATE_ICON = ("holy-shield", "#ffd54f")
+
 
 # Lore folders that hold places with no region yet: their files go straight into the continent folder
 LOOSE = {"unspecified"}
@@ -96,6 +112,7 @@ def main():
     x0, y0, x1, y1 = BOXES[continent]
     places = [p for p in json.load(open(PLACES, encoding="utf-8"))["places"]
               if x0 <= p["x"] <= x1 and y0 <= p["y"] <= y1]
+    states = {p["name"]: p for p in places if p["type"] == "state"}
     # burgs win over labels of the same name
     by_name = {}
     for p in sorted(places, key=lambda p: p["type"] != "burg"):
@@ -145,13 +162,17 @@ def main():
             "icon": f"icons/svg/{icon}.svg",
             "tint": tint,
             "pin": {"x": pin["x"], "y": pin["y"], "name": pin["name"]} if pin else None,
+            "extraPins": [{"x": s["x"], "y": s["y"], "name": s["name"].replace("|", " "),
+                           "icon": f"icons/svg/{STATE_ICON[0]}.svg", "tint": STATE_ICON[1]}
+                          for label, key in STATE_PINS.items() if key == rel and (s := states.get(label))],
         })
 
     os.makedirs(out_dir, exist_ok=True)
     out = os.path.join(out_dir, f"{continent}.json")
     json.dump({"continent": continent, "folders": folders, "entries": entries},
               open(out, "w", encoding="utf-8"), ensure_ascii=False)
-    print(f"{out}: {len(folders)} folders, {len(entries)} entries, {sum(1 for e in entries if e['pin'])} pinned")
+    print(f"{out}: {len(folders)} folders, {len(entries)} entries, {sum(1 for e in entries if e['pin'])} pinned, "
+          f"{sum(len(e['extraPins']) for e in entries)} country pins")
     for rel in unpinned:
         print("  no pin:", rel)
 

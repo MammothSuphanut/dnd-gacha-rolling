@@ -13,6 +13,7 @@
  *   - One journal entry per .md file (overviews included), one text page each. Ownership: GM only,
  *     so players never see the entries or their pins.
  *   - Pins (map notes) on the world scene "Novaris" and on the continent scene, icon by place type.
+ *     Country labels get an extra shield pin that opens the country's entry.
  *     Places with no position on the map get an entry but no pin (listed in the console).
  *   Re-running is safe: entries are matched by their file path (flag), their page is overwritten with
  *   the repo text, and this continent's pins are rebuilt. Edit lore in the repo, not in Foundry.
@@ -92,17 +93,21 @@
       const d = scene.dimensions;
       const [x0, y0, x1, y1] = def.box;
       const sx = d.sceneWidth / (x1 - x0), sy = d.sceneHeight / (y1 - y0);
-      const notes = data.entries.filter(e => e.pin).map(e => ({
+      // Each entry: its own pin, plus extra pins (country labels) that open the same entry
+      const notes = data.entries.flatMap(e => [
+        e.pin && { ...e.pin, text: e.name, icon: e.icon, tint: e.tint },
+        ...(e.extraPins ?? []).map(p => ({ ...p, text: p.name }))
+      ].filter(Boolean).map(p => ({
         entryId: entryIds[e.key],
-        x: Math.round(d.sceneX + (e.pin.x - x0) * sx),
-        y: Math.round(d.sceneY + (e.pin.y - y0) * sy),
-        texture: { src: e.icon, tint: e.tint },
+        x: Math.round(d.sceneX + (p.x - x0) * sx),
+        y: Math.round(d.sceneY + (p.y - y0) * sy),
+        texture: { src: p.icon, tint: p.tint },
         iconSize: def.iconSize,
-        text: e.name,
+        text: p.text,
         fontSize: def.fontSize,
         textAnchor: CONST.TEXT_ANCHOR_POINTS.BOTTOM,
         flags: { [FLAG]: { novarisKey: e.key, novarisContinent: continent } }
-      }));
+      })));
       await scene.createEmbeddedDocuments("Note", notes);
     }
 
