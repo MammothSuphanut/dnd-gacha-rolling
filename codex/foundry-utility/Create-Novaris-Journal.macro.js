@@ -12,7 +12,8 @@
  *   - Journal folders mirror the lore folders: 📁 Novaris › 📁 <Continent> › 📁 <Region> (› 📁 <Sub-region>).
  *   - One journal entry per .md file (overviews included), one text page each. Ownership: GM only,
  *     so players never see the entries or their pins.
- *   - Pins (map notes) on the world scene "Novaris" and on the continent scene, icon by place type.
+ *   - Pins (map notes) on the world scene "Novaris" and on the continent scene, icon by place type,
+ *     and the same pins on their "(Player)" copies.
  *     Country labels get an extra shield pin that opens the country's entry; the continent name opens
  *     the continent overview. Sea pins also go on each continent scene that shows them.
  *     Pins outside a scene's map area are skipped on that scene.
@@ -36,6 +37,8 @@
     suvarna: { name: "Suvarna", image: `${IMG_DIR}/novaris-v3-suvarna.webp`, box: [20, 697, 769, 1198], iconSize: 48, fontSize: 20 },
     voxaria: { name: "Voxaria", image: `${IMG_DIR}/novaris-v3-voxaria.webp`, box: [650, 240, 1137, 827], iconSize: 72, fontSize: 30 }
   };
+  // Player copy of each scene (Create-Novaris-Scene) gets the same pins
+  const PLAYER = def => ({ ...def, name: `${def.name} (Player)`, image: def.image.replace(".webp", "-player.webp") });
   const FLAG = "world"; // getFlag only accepts a registered scope; keys are prefixed instead
 
   if (!game.user.isGM) return ui.notifications.error("GM only.");
@@ -89,7 +92,7 @@
     // Pins: rebuild this continent's notes on each scene
     // Seas lie between continents: their pins go on every continent scene that shows them
     const scenes = continent === "seas" ? Object.values(CONTINENT_SCENES) : [CONTINENT_SCENES[continent]];
-    for (const def of [WORLD_SCENE, ...scenes].filter(Boolean)) {
+    for (const def of [WORLD_SCENE, ...scenes].filter(Boolean).flatMap(d => [d, PLAYER(d)])) {
       const scene = findScene(def);
       if (!scene) { ui.notifications.warn(`Scene "${def.name}" not found — pins skipped.`); continue; }
       const old = scene.notes.filter(n => n.getFlag(FLAG, "novarisContinent") === continent).map(n => n.id);

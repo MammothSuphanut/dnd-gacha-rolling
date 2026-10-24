@@ -95,6 +95,17 @@ await post('novaris-v3-atlas-noscale-x10', await Services.ExportMap.getRegionIma
 await post('novaris-v3-suvarna', await Services.ExportMap.getRegionImage({x0: 20, y0: 697, x1: 769, y1: 1198, width: 749, height: 501}, 18));
 ```
 
+**ชุดผู้เล่น (`-player`)** — ภาพเดียวกันแต่มีป้ายแค่ประเทศ ทวีป ทะเล และเทือกเขา ชื่ออื่นใช้หมุดแทน · หลังสั่ง export ข้างบนแล้ว ให้รันโค้ดนี้ก่อน export ชุด `-player` (ต้องใช้ `<style>` เพราะตอน export โปรแกรมวาดป้ายนอกจอขึ้นมาใหม่ การซ่อนทีละ element ไม่ได้ผล) แล้วตั้งชื่อ PNG ลงท้าย `-player` และ WebP เป็น `novaris-v3-*-player.webp` · scene "(Player)" มาจาก `Create-Novaris-Scene` และหมุดมาจาก `Create-Novaris-Journal`
+
+```js
+const KEEP = new Set(['Aldenreich','Shenzhou','Suvarna','Eldmere','The Pale Deep','Sundering Ocean','Donghai','Sagara','Iron Authority','Monti Stella','Ashpeaks','Cloudpeak Mountains','Greyrock Mountains','Silver Ridge','Whitehorn Alps','Twilight Range','Blackglass Mountains','Cheonsan','Tengu Range','Kazan Range','Helm Peaks','Naga Range','Ironback Ridge']);
+const keepIds = getLabelsData().filter(l => l.type === 'added' && KEEP.has(l.text)).map(l => '#' + l.id);
+const hide = ['river','route','hamlet','village','trading_post','caravanserai','monastery','fort','town','city','capital','province'].map(g => '#labels-' + g).join(',');
+const st = document.createElementNS('http://www.w3.org/2000/svg', 'style');
+st.textContent = `${hide}{display:none!important} #labels-added text:not(${keepIds.join(',')}){display:none!important}`;
+document.getElementById('map').prepend(st);
+```
+
 **แปลง WebP ไป Foundry** (Python + Pillow, รันใน `maps/azgaar/`):
 
 ```python

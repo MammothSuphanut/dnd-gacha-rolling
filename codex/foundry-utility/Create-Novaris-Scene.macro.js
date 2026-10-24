@@ -9,8 +9,10 @@
  * Builds this tree in the Scenes sidebar (missing parts are created, existing ones reused):
  *   📁 Novaris
  *      🗺 Novaris                       world map
+ *      🗺 Novaris (Player)              world map, place names left to the pins
  *      📁 <Continent>
  *         🗺 <Continent>                continent map
+ *         🗺 <Continent> (Player)       continent map, place names left to the pins
  *         📁 <Region>                   empty — for the region's place maps later
  *   Foundry allows 4 folder levels; this uses 3, so a region folder can still take one sub-folder.
  *
@@ -20,6 +22,7 @@
  * Images (world-settings/novaris/maps/azgaar/exports/, v3 map, WebP in DIR):
  *   World: novaris-v3-atlas-noscale-x10.png resized to 16200×10800 (×9 of the 1800×1200 Azgaar map).
  *   Continents: exported from Azgaar per region at ×18 or ×27 — 2–3× sharper than the world map.
+ *   Player maps (*-player.webp): same exports with only country, continent, sea and mountain-range labels.
  * Scale (canon rule 22): 1 Azgaar unit = 43.2 mi, so mi/px = 43.2 / export scale.
  *   World ×9  → 4.8 mi/px → 35 px hex = 168 mi (7 days at Normal pace, 24 mi/day)
  *   ×18       → 2.4 mi/px → 20 px hex = 48 mi (2 days)
@@ -41,6 +44,8 @@
     { name: "Voxaria", image: `${DIR}/novaris-v3-voxaria.webp`, width: 13149, height: 15849, gridSize: 30, distance: 48,
       regions: ["Blacktide Coast", "Crownshore", "Forgeheim", "Gloamwood", "Heartland", "Iron Authority", "The Verge", "Thunderspine"] }
   ];
+  // Player copy of each map: same size and grid, only country/continent/sea/mountain-range labels baked in
+  const PLAYER = def => ({ ...def, name: `${def.name} (Player)`, image: def.image.replace(".webp", "-player.webp") });
   const OLD_FOLDER = "Novaris Map";
   const OLD_SCENES = ["Novaris (Light)"];
 
@@ -80,10 +85,12 @@
 
   const root = await ensureFolder(ROOT);
   await ensureScene(WORLD, root.id);
+  await ensureScene(PLAYER(WORLD), root.id);
 
   for (const continent of CONTINENTS) {
     const folder = await ensureFolder(continent.name, root.id);
     await ensureScene(continent, folder.id);
+    await ensureScene(PLAYER(continent), folder.id);
     for (const region of continent.regions) await ensureFolder(region, folder.id);
   }
 
