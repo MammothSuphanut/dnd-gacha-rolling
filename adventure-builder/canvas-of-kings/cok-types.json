@@ -1,5 +1,5 @@
 {
- "_note": "Learned from user-saved sample maps (test01, test03, test_city, test_cave) 2026-10-24, Canvas of Kings 0.1.0.44. Values = the type numbers seen and how often.",
+ "_note": "Learned from user-saved sample maps (test01, test03, test_city, test_cave, test_floor) 2026-10-24, Canvas of Kings 0.1.0.44. Values = the type numbers seen and how often.",
  "path_types": {
   "Paths/PathsRoofs/par_roof_thatched.tscn": {
    "43": 1
@@ -9,6 +9,12 @@
   },
   "Paths/PathsRoofs/par_roof_wooden.tscn": {
    "42": 111
+  },
+  "Paths/PathsStairs/pas_stairs_stone.tscn": {
+   "52": 13
+  },
+  "Paths/PathsStairs/pas_stairs_wood.tscn": {
+   "51": 1
   },
   "Paths/PathsWater/paw_river_deep.tscn": {
    "36": 5
@@ -23,7 +29,7 @@
    "14": 18
   },
   "Paths/pa_fence_3.tscn": {
-   "16": 23
+   "16": 369
   },
   "Paths/pa_hedge.tscn": {
    "1": 194
@@ -59,7 +65,7 @@
    "13": 37
   },
   "Plots/Plateaus/papl_plateau_plateau.tscn": {
-   "68": 77
+   "68": 278
   },
   "Plots/PlotsDistricts/papd_farmers.tscn": {
    "65": 1
@@ -68,10 +74,10 @@
    "67": 1
   },
   "Plots/PlotsLands/papl_wall.tscn": {
-   "49": 23
+   "49": 27
   },
   "Plots/PlotsWater/papw_lake.tscn": {
-   "32": 8
+   "32": 9
   },
   "Plots/PlotsWater/papw_ocean.tscn": {
    "33": 1
@@ -114,6 +120,17 @@
    "line_object_type_idx": [
     0,
     1
+   ]
+  },
+  "Paths/PathsStairs/pas_stairs_stone.tscn": {
+   "width": [
+    1.16352647542953,
+    1.17614054679871,
+    1.23524576127529,
+    1.26743719577789,
+    1.40306552648544,
+    1.49267711043358,
+    1.77225861549377
    ]
   },
   "Paths/pa_road.tscn": {
@@ -311,61 +328,157 @@
    "18": 7
   },
   "woBuildings/wo_well_a.tscn": {
-   "13": 22
+   "13": 24
   },
   "woBuildings/wo_well_b.tscn": {
-   "13": 29
+   "13": 31
   },
   "woBuildings/wo_well_c.tscn": {
-   "13": 17
+   "13": 18
   },
   "woBuildings/wo_well_d.tscn": {
-   "13": 30
+   "13": 31
   },
   "woDecos/woDecosRooms/wo_anvil_a.tscn": {
-   "136": 1
+   "136": 3
   },
   "woDecos/woDecosRooms/wo_anvil_b.tscn": {
-   "136": 2
+   "136": 4
+  },
+  "woDecos/woDecosRooms/wo_bed_a.tscn": {
+   "131": 34
+  },
+  "woDecos/woDecosRooms/wo_bed_b.tscn": {
+   "131": 24
+  },
+  "woDecos/woDecosRooms/wo_bed_c.tscn": {
+   "131": 26
+  },
+  "woDecos/woDecosRooms/wo_bed_d.tscn": {
+   "131": 18
+  },
+  "woDecos/woDecosRooms/wo_bed_e.tscn": {
+   "131": 30
+  },
+  "woDecos/woDecosRooms/wo_bed_f.tscn": {
+   "131": 8
+  },
+  "woDecos/woDecosRooms/wo_cabinet_a.tscn": {
+   "132": 12
+  },
+  "woDecos/woDecosRooms/wo_cabinet_b.tscn": {
+   "132": 5
+  },
+  "woDecos/woDecosRooms/wo_cabinet_c.tscn": {
+   "132": 9
   },
   "woDecos/woDecosRooms/wo_cabinet_d.tscn": {
-   "132": 2
+   "132": 9
+  },
+  "woDecos/woDecosRooms/wo_cabinet_e.tscn": {
+   "132": 6
   },
   "woDecos/woDecosRooms/wo_cabinet_f.tscn": {
-   "132": 4
+   "132": 7
+  },
+  "woDecos/woDecosRooms/wo_cabinet_g.tscn": {
+   "132": 5
   },
   "woDecos/woDecosRooms/wo_cabinet_h.tscn": {
-   "132": 2
+   "132": 5
+  },
+  "woDecos/woDecosRooms/wo_cabinet_i.tscn": {
+   "132": 6
   },
   "woDecos/woDecosRooms/wo_cabinet_j.tscn": {
-   "132": 1
+   "132": 4
   },
   "woDecos/woDecosRooms/wo_cabinet_k.tscn": {
-   "132": 1
+   "132": 3
+  },
+  "woDecos/woDecosRooms/wo_carpet_a.tscn": {
+   "130": 12
+  },
+  "woDecos/woDecosRooms/wo_carpet_b.tscn": {
+   "130": 16
+  },
+  "woDecos/woDecosRooms/wo_carpet_c.tscn": {
+   "130": 20
+  },
+  "woDecos/woDecosRooms/wo_carpet_d.tscn": {
+   "130": 13
+  },
+  "woDecos/woDecosRooms/wo_carpet_e.tscn": {
+   "130": 22
+  },
+  "woDecos/woDecosRooms/wo_carpet_f.tscn": {
+   "130": 22
+  },
+  "woDecos/woDecosRooms/wo_carpet_g.tscn": {
+   "130": 17
+  },
+  "woDecos/woDecosRooms/wo_carpet_h.tscn": {
+   "130": 9
+  },
+  "woDecos/woDecosRooms/wo_cellar_entrance_a.tscn": {
+   "127": 2
+  },
+  "woDecos/woDecosRooms/wo_cellar_entrance_b.tscn": {
+   "127": 2
   },
   "woDecos/woDecosRooms/wo_chair_b.tscn": {
+   "133": 3
+  },
+  "woDecos/woDecosRooms/wo_chair_d.tscn": {
    "133": 1
+  },
+  "woDecos/woDecosRooms/wo_chair_f.tscn": {
+   "133": 4
   },
   "woDecos/woDecosRooms/wo_chair_g.tscn": {
    "133": 1
   },
   "woDecos/woDecosRooms/wo_chair_i.tscn": {
-   "133": 2
+   "133": 5
+  },
+  "woDecos/woDecosRooms/wo_chair_j.tscn": {
+   "133": 1
+  },
+  "woDecos/woDecosRooms/wo_chair_m.tscn": {
+   "133": 6
+  },
+  "woDecos/woDecosRooms/wo_chair_n.tscn": {
+   "133": 1
   },
   "woDecos/woDecosRooms/wo_crate_single_a.tscn": {
    "143": 1
   },
   "woDecos/woDecosRooms/wo_crate_single_b.tscn": {
-   "143": 2
+   "143": 3
   },
   "woDecos/woDecosRooms/wo_crate_single_d.tscn": {
-   "143": 2
+   "143": 4
   },
   "woDecos/woDecosRooms/wo_crate_single_e.tscn": {
    "143": 1
   },
-  "woDecos/woDecosRooms/wo_crate_single_h.tscn": {
+  "woDecos/woDecosRooms/wo_crate_single_f.tscn": {
    "143": 1
+  },
+  "woDecos/woDecosRooms/wo_crate_single_h.tscn": {
+   "143": 2
+  },
+  "woDecos/woDecosRooms/wo_crate_single_i.tscn": {
+   "143": 2
+  },
+  "woDecos/woDecosRooms/wo_curtains_a.tscn": {
+   "139": 10
+  },
+  "woDecos/woDecosRooms/wo_curtains_b.tscn": {
+   "139": 1
+  },
+  "woDecos/woDecosRooms/wo_curtains_c.tscn": {
+   "139": 2
   },
   "woDecos/woDecosRooms/wo_device_b.tscn": {
    "137": 2
@@ -379,13 +492,64 @@
   "woDecos/woDecosRooms/wo_device_h.tscn": {
    "137": 3
   },
+  "woDecos/woDecosRooms/wo_door_a.tscn": {
+   "125": 39
+  },
   "woDecos/woDecosRooms/wo_door_b.tscn": {
-   "125": 1
+   "125": 84
+  },
+  "woDecos/woDecosRooms/wo_door_c.tscn": {
+   "125": 50
+  },
+  "woDecos/woDecosRooms/wo_door_d.tscn": {
+   "125": 61
+  },
+  "woDecos/woDecosRooms/wo_door_e.tscn": {
+   "125": 20
+  },
+  "woDecos/woDecosRooms/wo_door_f.tscn": {
+   "125": 15
+  },
+  "woDecos/woDecosRooms/wo_fireplace_a.tscn": {
+   "128": 2
+  },
+  "woDecos/woDecosRooms/wo_fireplace_b.tscn": {
+   "128": 4
+  },
+  "woDecos/woDecosRooms/wo_fireplace_c.tscn": {
+   "128": 15
+  },
+  "woDecos/woDecosRooms/wo_fireplace_d.tscn": {
+   "128": 8
+  },
+  "woDecos/woDecosRooms/wo_fireplace_e.tscn": {
+   "128": 6
+  },
+  "woDecos/woDecosRooms/wo_fireplace_f.tscn": {
+   "128": 8
+  },
+  "woDecos/woDecosRooms/wo_fireplace_g.tscn": {
+   "128": 20
+  },
+  "woDecos/woDecosRooms/wo_fireplace_h.tscn": {
+   "128": 7
+  },
+  "woDecos/woDecosRooms/wo_latrine_a.tscn": {
+   "129": 3
+  },
+  "woDecos/woDecosRooms/wo_latrine_b.tscn": {
+   "129": 5
+  },
+  "woDecos/woDecosRooms/wo_latrine_c.tscn": {
+   "129": 3
   },
   "woDecos/woDecosRooms/wo_metal_goods_a.tscn": {
    "136": 1
   },
   "woDecos/woDecosRooms/wo_metal_goods_b.tscn": {
+   "136": 1
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_f.tscn": {
    "136": 1
   },
   "woDecos/woDecosRooms/wo_metal_goods_g.tscn": {
@@ -403,59 +567,110 @@
   "woDecos/woDecosRooms/wo_metal_goods_l.tscn": {
    "16": 2
   },
+  "woDecos/woDecosRooms/wo_metal_goods_n.tscn": {
+   "136": 4
+  },
   "woDecos/woDecosRooms/wo_metal_goods_o.tscn": {
-   "136": 1
+   "136": 4
   },
   "woDecos/woDecosRooms/wo_metal_goods_q.tscn": {
-   "136": 1
-  },
-  "woDecos/woDecosRooms/wo_metal_goods_r.tscn": {
    "136": 3
   },
-  "woDecos/woDecosRooms/wo_metal_goods_t.tscn": {
+  "woDecos/woDecosRooms/wo_metal_goods_r.tscn": {
+   "136": 5
+  },
+  "woDecos/woDecosRooms/wo_metal_goods_s.tscn": {
    "136": 1
   },
+  "woDecos/woDecosRooms/wo_metal_goods_t.tscn": {
+   "136": 22
+  },
+  "woDecos/woDecosRooms/wo_music_equipment_a.tscn": {
+   "144": 7
+  },
+  "woDecos/woDecosRooms/wo_pub_bar_a.tscn": {
+   "124": 6
+  },
   "woDecos/woDecosRooms/wo_sign_a.tscn": {
-   "141": 3
+   "141": 5
   },
   "woDecos/woDecosRooms/wo_sign_b.tscn": {
-   "141": 2
+   "141": 3
   },
   "woDecos/woDecosRooms/wo_sign_c.tscn": {
-   "141": 1
+   "141": 3
   },
   "woDecos/woDecosRooms/wo_straw_stuff_a.tscn": {
-   "140": 2
+   "140": 4
   },
   "woDecos/woDecosRooms/wo_straw_stuff_b.tscn": {
-   "140": 3
+   "140": 4
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_c.tscn": {
+   "140": 13
   },
   "woDecos/woDecosRooms/wo_straw_stuff_d.tscn": {
+   "140": 6
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_e.tscn": {
    "140": 1
   },
   "woDecos/woDecosRooms/wo_straw_stuff_g.tscn": {
-   "140": 2
+   "140": 6
   },
   "woDecos/woDecosRooms/wo_straw_stuff_h.tscn": {
-   "140": 1
+   "140": 2
+  },
+  "woDecos/woDecosRooms/wo_straw_stuff_i.tscn": {
+   "140": 2
   },
   "woDecos/woDecosRooms/wo_table2_a.tscn": {
-   "134": 1
+   "134": 3
   },
   "woDecos/woDecosRooms/wo_table2_b.tscn": {
-   "134": 1
+   "134": 5
+  },
+  "woDecos/woDecosRooms/wo_table2_c.tscn": {
+   "134": 4
+  },
+  "woDecos/woDecosRooms/wo_table2_d.tscn": {
+   "134": 5
   },
   "woDecos/woDecosRooms/wo_table2_e.tscn": {
+   "134": 12
+  },
+  "woDecos/woDecosRooms/wo_table2_f.tscn": {
    "134": 1
   },
   "woDecos/woDecosRooms/wo_table3_a.tscn": {
-   "135": 1
+   "135": 7
+  },
+  "woDecos/woDecosRooms/wo_table3_b.tscn": {
+   "135": 9
+  },
+  "woDecos/woDecosRooms/wo_table3_c.tscn": {
+   "135": 4
+  },
+  "woDecos/woDecosRooms/wo_table3_d.tscn": {
+   "135": 7
+  },
+  "woDecos/woDecosRooms/wo_table3_e.tscn": {
+   "135": 3
+  },
+  "woDecos/woDecosRooms/wo_table3_f.tscn": {
+   "135": 4
   },
   "woDecos/woDecosRooms/wo_water_source_a.tscn": {
-   "138": 2
+   "138": 4
+  },
+  "woDecos/woDecosRooms/wo_water_source_b.tscn": {
+   "138": 1
   },
   "woDecos/woDecosRooms/wo_water_source_c.tscn": {
-   "138": 1
+   "138": 2
+  },
+  "woDecos/woDecosRooms/wo_water_source_d.tscn": {
+   "138": 2
   },
   "woDecos/woDecosRooms/wo_water_source_e.tscn": {
    "138": 1
@@ -464,7 +679,7 @@
    "138": 2
   },
   "woDecos/woDecosRooms/wo_water_source_g.tscn": {
-   "138": 2
+   "138": 4
   },
   "woDecos/woDecosRooms/wo_window_e.tscn": {
    "126": 2
@@ -485,7 +700,7 @@
    "11": 35
   },
   "woDecos/wo_beam_e.tscn": {
-   "11": 34
+   "11": 35
   },
   "woDecos/wo_beam_f.tscn": {
    "11": 27
@@ -497,16 +712,16 @@
    "11": 29
   },
   "woDecos/wo_branch_a.tscn": {
-   "14": 37
+   "14": 42
   },
   "woDecos/wo_branch_b.tscn": {
-   "14": 29
+   "14": 32
   },
   "woDecos/wo_branch_c.tscn": {
-   "14": 37
+   "14": 41
   },
   "woDecos/wo_branch_d.tscn": {
-   "14": 22
+   "14": 25
   },
   "woDecos/wo_bush_a.tscn": {
    "4": 392
@@ -515,25 +730,25 @@
    "4": 409
   },
   "woDecos/wo_bush_c.tscn": {
-   "4": 414
+   "4": 415
   },
   "woDecos/wo_bush_d.tscn": {
-   "4": 410
+   "4": 413
   },
   "woDecos/wo_bush_e.tscn": {
-   "4": 419
+   "4": 420
   },
   "woDecos/wo_bush_f.tscn": {
-   "4": 408
+   "4": 411
   },
   "woDecos/wo_bush_g.tscn": {
-   "4": 412
+   "4": 414
   },
   "woDecos/wo_bush_h.tscn": {
    "4": 466
   },
   "woDecos/wo_bush_i.tscn": {
-   "4": 381
+   "4": 382
   },
   "woDecos/wo_bush_j.tscn": {
    "4": 383
@@ -542,6 +757,9 @@
    "12": 2
   },
   "woDecos/wo_campfire_b.tscn": {
+   "12": 1
+  },
+  "woDecos/wo_campfire_d.tscn": {
    "12": 1
   },
   "woDecos/wo_crane_a.tscn": {
@@ -554,43 +772,43 @@
    "84": 4
   },
   "woDecos/wo_crate_a.tscn": {
-   "7": 24
+   "7": 31
   },
   "woDecos/wo_crate_b.tscn": {
-   "7": 25
+   "7": 44
   },
   "woDecos/wo_crate_c.tscn": {
-   "7": 27
-  },
-  "woDecos/wo_crate_d.tscn": {
-   "7": 24
-  },
-  "woDecos/wo_crate_e.tscn": {
-   "7": 28
-  },
-  "woDecos/wo_crate_f.tscn": {
-   "7": 29
-  },
-  "woDecos/wo_crate_g.tscn": {
-   "7": 29
-  },
-  "woDecos/wo_crate_h.tscn": {
-   "7": 22
-  },
-  "woDecos/wo_crate_i.tscn": {
-   "7": 25
-  },
-  "woDecos/wo_crate_j.tscn": {
-   "7": 24
-  },
-  "woDecos/wo_crate_k.tscn": {
-   "7": 24
-  },
-  "woDecos/wo_crate_l.tscn": {
    "7": 32
   },
+  "woDecos/wo_crate_d.tscn": {
+   "7": 32
+  },
+  "woDecos/wo_crate_e.tscn": {
+   "7": 42
+  },
+  "woDecos/wo_crate_f.tscn": {
+   "7": 39
+  },
+  "woDecos/wo_crate_g.tscn": {
+   "7": 38
+  },
+  "woDecos/wo_crate_h.tscn": {
+   "7": 35
+  },
+  "woDecos/wo_crate_i.tscn": {
+   "7": 33
+  },
+  "woDecos/wo_crate_j.tscn": {
+   "7": 32
+  },
+  "woDecos/wo_crate_k.tscn": {
+   "7": 32
+  },
+  "woDecos/wo_crate_l.tscn": {
+   "7": 43
+  },
   "woDecos/wo_crate_m.tscn": {
-   "7": 31
+   "7": 38
   },
   "woDecos/wo_flowers_a.tscn": {
    "20": 10
@@ -602,25 +820,25 @@
    "20": 85
   },
   "woDecos/wo_glow_light_a.tscn": {
-   "64": 2
+   "64": 5
   },
   "woDecos/wo_glow_light_b.tscn": {
-   "64": 6
+   "64": 9
   },
   "woDecos/wo_glow_light_c.tscn": {
-   "64": 12
+   "64": 15
   },
   "woDecos/wo_glow_light_d.tscn": {
-   "64": 6
+   "64": 7
   },
   "woDecos/wo_goods_a.tscn": {
-   "9": 39
+   "9": 40
   },
   "woDecos/wo_goods_b.tscn": {
    "9": 4
   },
   "woDecos/wo_goods_c.tscn": {
-   "9": 2
+   "9": 3
   },
   "woDecos/wo_goods_d.tscn": {
    "9": 3
@@ -628,92 +846,110 @@
   "woDecos/wo_goods_e.tscn": {
    "9": 2
   },
+  "woDecos/wo_goods_f.tscn": {
+   "9": 1
+  },
   "woDecos/wo_goods_g.tscn": {
    "9": 2
   },
   "woDecos/wo_grass_a.tscn": {
-   "2": 1114
+   "2": 1115
   },
   "woDecos/wo_grass_b.tscn": {
-   "2": 74
+   "2": 85
   },
   "woDecos/wo_grass_c.tscn": {
-   "2": 72
+   "2": 77
   },
   "woDecos/wo_grass_d.tscn": {
-   "2": 79
+   "2": 80
   },
   "woDecos/wo_grass_e.tscn": {
-   "2": 78
+   "2": 79
   },
   "woDecos/wo_grass_f.tscn": {
-   "2": 80
+   "2": 83
   },
   "woDecos/wo_grass_g.tscn": {
    "2": 63
   },
   "woDecos/wo_smoke_a.tscn": {
-   "109": 1
+   "109": 23
   },
   "woDecos/wo_stone_a.tscn": {
-   "5": 175
+   "5": 179
   },
   "woDecos/wo_stone_b.tscn": {
-   "5": 74
+   "5": 82
   },
   "woDecos/wo_stone_c.tscn": {
-   "5": 60
+   "5": 65
   },
   "woDecos/wo_stone_d.tscn": {
-   "5": 67
+   "5": 72
   },
   "woDecos/wo_stone_e.tscn": {
-   "5": 50
+   "5": 53
   },
   "woDecos/wo_stone_f.tscn": {
-   "5": 77
+   "5": 82
   },
   "woDecos/wo_stone_fragments_a.tscn": {
    "19": 5
   },
+  "woDecos/wo_stone_fragments_b.tscn": {
+   "19": 1
+  },
   "woDecos/wo_stone_fragments_c.tscn": {
-   "19": 3
+   "19": 4
+  },
+  "woDecos/wo_stone_fragments_d.tscn": {
+   "19": 1
   },
   "woDecos/wo_stone_fragments_f.tscn": {
+   "19": 3
+  },
+  "woDecos/wo_stone_fragments_g.tscn": {
    "19": 2
   },
+  "woDecos/wo_stone_fragments_h.tscn": {
+   "19": 1
+  },
+  "woDecos/wo_stone_fragments_i.tscn": {
+   "19": 1
+  },
   "woDecos/wo_stone_g.tscn": {
-   "5": 85
+   "5": 91
   },
   "woDecos/wo_stone_h.tscn": {
-   "5": 54
+   "5": 56
   },
   "woDecos/wo_stone_i.tscn": {
-   "5": 72
+   "5": 74
   },
   "woDecos/wo_stone_j.tscn": {
-   "5": 61
+   "5": 63
   },
   "woDecos/wo_stone_k.tscn": {
-   "5": 75
+   "5": 80
   },
   "woDecos/wo_table_a.tscn": {
-   "8": 4
-  },
-  "woDecos/wo_table_b.tscn": {
-   "8": 8
-  },
-  "woDecos/wo_table_c.tscn": {
    "8": 12
   },
-  "woDecos/wo_table_d.tscn": {
-   "8": 14
-  },
-  "woDecos/wo_table_e.tscn": {
+  "woDecos/wo_table_b.tscn": {
    "8": 13
   },
+  "woDecos/wo_table_c.tscn": {
+   "8": 18
+  },
+  "woDecos/wo_table_d.tscn": {
+   "8": 20
+  },
+  "woDecos/wo_table_e.tscn": {
+   "8": 16
+  },
   "woDecos/wo_table_f.tscn": {
-   "8": 9
+   "8": 13
   },
   "woDecos/wo_tool_a.tscn": {
    "16": 1
@@ -731,17 +967,17 @@
    "3": 1040
   },
   "woDecos/wo_tree_ab.tscn": {
-   "3": 1073,
+   "3": 1075,
    "54": 54
   },
   "woDecos/wo_tree_ac.tscn": {
-   "3": 1119
+   "3": 1120
   },
   "woDecos/wo_tree_b.tscn": {
-   "3": 1087
+   "3": 1089
   },
   "woDecos/wo_tree_c.tscn": {
-   "3": 1041
+   "3": 1042
   },
   "woDecos/wo_tree_cb.tscn": {
    "3": 1017
@@ -753,7 +989,7 @@
    "6": 26
   },
   "woDecos/wo_trunk_c.tscn": {
-   "6": 26
+   "6": 27
   },
   "woDecos/wo_trunk_d.tscn": {
    "6": 25
@@ -795,19 +1031,19 @@
    "70": 3
   },
   "woDecos/wo_wood_pile_a.tscn": {
-   "10": 12
+   "10": 15
   },
   "woDecos/wo_wood_pile_b.tscn": {
-   "10": 17
+   "10": 27
   },
   "woDecos/wo_wood_pile_c.tscn": {
-   "10": 18
-  },
-  "woDecos/wo_wood_pile_d.tscn": {
    "10": 24
   },
+  "woDecos/wo_wood_pile_d.tscn": {
+   "10": 29
+  },
   "woDecos/wo_wood_pile_e.tscn": {
-   "10": 17
+   "10": 24
   },
   "woPathObjects/woPathObjectsRooms/wo_room_wood_wall_b.tscn": {
    "116": 4
@@ -837,16 +1073,19 @@
    "34": 18
   },
   "woPathObjects/wo_fence_c.tscn": {
-   "35": 60
+   "35": 1990
   },
   "woPathObjects/wo_fence_pillar_a.tscn": {
-   "61": 14
+   "61": 14,
+   "142": 3
   },
   "woPathObjects/wo_fence_pillar_b.tscn": {
-   "62": 1
+   "62": 1,
+   "142": 3
   },
   "woPathObjects/wo_fence_pillar_c.tscn": {
-   "63": 20
+   "63": 155,
+   "142": 981
   },
   "woPathObjects/wo_palisade_wood_a.tscn": {
    "37": 3
@@ -861,16 +1100,29 @@
    "40": 22
   },
   "woPathObjects/wo_pillar_a.tscn": {
-   "36": 2
+   "36": 2,
+   "142": 6
   },
   "woPathObjects/wo_pillar_b.tscn": {
-   "36": 6
+   "36": 6,
+   "142": 3
   },
   "woPathObjects/wo_pillar_c.tscn": {
-   "36": 2
+   "36": 2,
+   "142": 5
+  },
+  "woPathObjects/wo_pillar_d.tscn": {
+   "142": 3
   },
   "woPathObjects/wo_pillar_e.tscn": {
-   "36": 6
+   "36": 6,
+   "142": 3
+  },
+  "woPathObjects/wo_pillar_f.tscn": {
+   "142": 10
+  },
+  "woPathObjects/wo_pillar_g.tscn": {
+   "142": 4
   },
   "woPathObjects/wo_road_a.tscn": {
    "41": 75
@@ -959,6 +1211,18 @@
   "woPathObjects/wo_salad_row_path_f.tscn": {
    "53": 195
   },
+  "woPathObjects/wo_stairs_stone_a.tscn": {
+   "112": 42
+  },
+  "woPathObjects/wo_stairs_stone_b.tscn": {
+   "112": 40
+  },
+  "woPathObjects/wo_stairs_wood_b.tscn": {
+   "111": 3
+  },
+  "woPathObjects/wo_stairs_wood_c.tscn": {
+   "111": 6
+  },
   "woPathObjects/wo_wall_stone_a.tscn": {
    "29": 139
   },
@@ -1011,7 +1275,7 @@
    "58": 2
   },
   "woPathObjects/wo_wall_stone_tower_d.tscn": {
-   "105": 111
+   "105": 127
   },
   "woUnits/woBoats/wo_boat_a.tscn": {
    "81": 12
@@ -1031,14 +1295,23 @@
   "woUnits/woBoats/wo_boat_f.tscn": {
    "81": 4
   },
+  "woUnits/wo_bird_a.tscn": {
+   "22": 6
+  },
   "woUnits/wo_hand_cart_b.tscn": {
-   "27": 10
+   "27": 19
   },
   "woUnits/wo_hand_cart_bb.tscn": {
-   "27": 1
+   "27": 3
+  },
+  "woUnits/wo_horse_a.tscn": {
+   "83": 3
   },
   "woUnits/wo_horse_cart_c.tscn": {
    "25": 1
+  },
+  "woUnits/wo_ox_a.tscn": {
+   "83": 3
   },
   "woUnits/wo_ox_cart_bb.tscn": {
    "26": 3
@@ -1047,10 +1320,10 @@
    "26": 1
   },
   "wo_placeholder.tscn": {
-   "1": 6892
+   "1": 11350
   },
   "wo_placeholder_area.tscn": {
-   "113": 2213
+   "113": 2779
   }
  }
 }

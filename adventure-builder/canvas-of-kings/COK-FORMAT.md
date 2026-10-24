@@ -1,6 +1,6 @@
 # Canvas of Kings — รูปแบบไฟล์ `.mommap` (สำหรับให้ Claude เขียนแผนที่เอง)
 
-> แกะจากไฟล์ตัวอย่างที่ผู้ใช้เซฟจากแอปจริง (2026-10-24, Canvas of Kings **0.1.0.44** ตัวเต็ม): `test01` (ของพื้นฐาน + ป้าย), `test03` (ห้อง + ที่ราบสูง), `test_city` (เมืองเต็ม ~7,700 วัตถุ / ~2,150 path), `test_cave` (ถ้ำ) — อยู่ใน `D:\Steam\steamapps\common\Canvas of Kings\Save\`
+> แกะจากไฟล์ตัวอย่างที่ผู้ใช้เซฟจากแอปจริง (2026-10-24, Canvas of Kings **0.1.0.44** ตัวเต็ม): `test01` (ของพื้นฐาน + ป้าย), `test03` (ห้อง + ที่ราบสูง), `test_city` (เมืองเต็ม ~7,700 วัตถุ / ~2,150 path), `test_cave` (ถ้ำ), `test_floor` (อาคาร 2 ชั้นด้วย layer) — อยู่ใน `D:\Steam\steamapps\common\Canvas of Kings\Save\`
 > ตารางเลขประเภททั้งหมดอยู่ใน [`cok-types.json`](cok-types.json) (สร้างจากไฟล์ตัวอย่าง — ห้ามเดาเลขที่ไม่มีในตาราง)
 
 ## บทเรียนจากการลองเขียนเอง
@@ -11,7 +11,7 @@
 
 ## โครงไฟล์
 
-`info` (version, camera, `last_uid`) · `layers {last_idx, map_layers[]}` (ยังไม่มีตัวอย่าง) · `objects[]` (ของวางเดี่ยว) · `paths[]` (เส้นและพื้นที่) · `environment` · `map_settings` · `deco_labels[]` (ป้ายตัวหนังสือ) · `deco_legends[]` · `deco_images[]`
+`info` (version, camera, `last_uid`) · `layers {last_idx, map_layers[]}` (ดูหัวข้อ Layer) · `objects[]` (ของวางเดี่ยว) · `paths[]` (เส้นและพื้นที่) · `environment` · `map_settings` · `deco_labels[]` (ป้ายตัวหนังสือ) · `deco_legends[]` · `deco_images[]`
 
 พิกัด: `position_x` / `position_z` หน่วยโลก (ประมาณ 1 หน่วย ≈ 1 ช่องกริด) · `position_y` = ความสูง · `rotation_y` เป็นองศา
 
@@ -56,8 +56,19 @@
 - ของแต่งในถ้ำ: เครื่องจักร ลัง เศษหิน แหล่งน้ำ ป้าย · แม่น้ำ/ทะเลสาบใต้ดินใช้ `paw_river_deep` / `papw_lake`
 - ทางเข้าเหมืองใช้ของ Workshop "mine entrance" (`steam://3404732845`)
 
+## Layer / หลายชั้น (จาก `test_floor` — ในแอปปรับที่แผง **Groups** มุมขวาบน)
+
+```json
+"layers": {"last_idx": 7, "map_layers": [
+  {"idx": 3, "name": "floor 1", "is_unlocked": false},
+  {"idx": 5, "name": "Floor 2", "is_visible": false}]}
+```
+- `idx` ไม่ซ้ำ ไม่ต้องเรียง · `last_idx` = idx สูงสุด · ไม่มี `is_visible` = แสดง · `is_unlocked: false` = ล็อกไว้ (กันแก้พลาด) · `info.map_layers_open: true` = เปิดแผงไว้
+- ทุกชิ้นที่อยู่ใน layer มี `"assigned_map_layer_idx": <idx>` — **ทั้งตัว path/object และทุกชิ้นข้างใน** (`points_objects`, `lines_objects[].objects`, `area_objects`)
+- ตัวอย่างแยกแต่ละชั้นเป็น 3 layer: พื้น / ผนัง / ของแต่ง (ชั้น 1 แสดง ชั้น 2 ซ่อน) — ทุกชั้นอยู่ที่ความสูง 0 เท่ากัน ใช้การเปิด/ปิด layer สลับดูทีละชั้น แล้ว export ทีละชั้น
+- พื้นห้อง = `papl_plateau_plateau` `texture_type 2`, `edge_texture_type 1` (พื้นเรียบ) · ผนัง = `pa_fence_3` ชิ้น `wo_fence_c` (35) + เสา `wo_fence_pillar_c` · บันได `pas_stairs_stone` ชิ้น `wo_stairs_stone_a/b` (112)
+
 ## ยังไม่รู้
 
-- `layers` (ระบบชั้น) — ยังไม่มีตัวอย่างที่ใช้
 - `deco_legends`
 - เลขประเภทของที่ไม่มีในไฟล์ตัวอย่าง (~220 ชิ้นจาก 495)
