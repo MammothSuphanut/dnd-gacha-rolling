@@ -8,6 +8,7 @@ const MODULE_ID = "mammoth-tweaks";
 Hooks.once("init", () => {
   registerTokenBarFix();
   registerPhbTravelPace();
+  registerTierGap();
 });
 
 /* --------------------------------------------------------------------------
@@ -127,4 +128,97 @@ function formatTime(totalMinutes) {
   if (hours > 0) parts.push(`${hours}h`);
   if (minutes > 0 && days === 0) parts.push(`${minutes}m`);
   return parts.join(" ") || "< 1m";
+}
+
+/* --------------------------------------------------------------------------
+   Tier of Being: automatic Tier Gap bonus
+   House rule (codex/Core-Rules/astral-nexus-lore.md): a creature gets +5 per tier
+   it is above the other creature on every d20 Test that involves it, and +5 AC per
+   tier against that creature's attacks. Apart from that AC, the lower side's rolls
+   are unchanged. Tier is read from the "<Tier> Being" feature, then from "Tier of Being:
+   <Tier>" in a feature's description, then flags.world.tierOfBeing; no tier = Mortal.
+   Covered:
+   - Attack rolls against the targeted token(s): +5 per tier if the attacker is above
+     every target, or -5 per tier if it is below every target (the higher side's AC
+     bonus, applied to the roll so dnd5e and Midi-QOL both compare it to the real AC).
+     Mixed targets (some above, some below) get nothing. Smallest gap counts.
+   - Saves and checks rolled from a chat card's button: the other side is whoever
+     posted that card (dnd5e stores it as the roll message's system.origin).
+   - Saves and checks Midi-QOL rolls for its workflow: the other side owns the
+     item in config.midiOptions.saveActivityUuid / saveItemUuid.
+   Rolls with no known opponent (a plain sheet roll, concentration) are left alone.
+   -------------------------------------------------------------------------- */
+const TIERS = ["Mortal", "Ascendant", "Divine", "Sovereign", "Law"];
+const TIER_BONUS = 5;
+const TIER_PATTERN = TIERS.join("|");
+
+function registerTierGap() {
+  const key = "tierGap";
+  game.settings.register(MODULE_ID, key, {
+    name: "Tier of Being: add Tier Gap bonus automatically",
+    hint: "+5 per tier of difference on attacks against a lower-tier target and on saves/checks against a lower-tier creature's chat card; -5 per tier on attacks against a higher-tier target (its AC bonus).",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
+  Hooks.on("dnd5e.preRollD20TestV2", (config, dialog, message) => {
+    if (!game.settings.get(MODULE_ID, key)) return;
+    const subject = config.subject;
+    const actor = subject instanceof Actor ? subject : subject?.actor;
+    if (!actor) return;
+    const isAttack = config.hookNames?.includes("attack");
+    const opponents = isAttack ? targetActors() : [originActor(config, message)].filter(Boolean);
+    if (!opponents.length) return;
+
+    // Tiers this roller is above (+) or below (-) each opponent
+    const mine = tierIndex(actor);
+    const gaps = opponents.map(o => mine - tierIndex(o));
+    let modifier = 0;
+    if (gaps.every(g => g > 0)) modifier = Math.min(...gaps) * TIER_BONUS;
+    else if (isAttack && gaps.every(g => g < 0)) modifier = Math.max(...gaps) * TIER_BONUS;
+    if (!modifier) return;
+
+    const roll = config.rolls?.[0];
+    if (!roll) return;
+    roll.parts ??= [];
+    roll.data ??= {};
+    roll.parts.push("@tierGap");
+    roll.data.tierGap = modifier;
+  });
+}
+
+// Base tier plus flags.world.tierBoost, a temporary change set by an Active Effect
+// (e.g. Fragment of Zenith's "+1 Tier"), kept within Mortal..Law
+function tierIndex(actor) {
+  const boost = Number(foundry.utils.getProperty(actor, "flags.world.tierBoost")) || 0;
+  return Math.clamp(baseTierIndex(actor) + boost, 0, TIERS.length - 1);
+}
+
+function baseTierIndex(actor) {
+  for (const item of actor.items) {
+    const name = item.name.match(new RegExp(`^(${TIER_PATTERN}) Being$`, "i"));
+    if (name) return TIERS.findIndex(t => t.toLowerCase() === name[1].toLowerCase());
+  }
+  for (const item of actor.items) {
+    const desc = (item.system.description?.value ?? "").match(new RegExp(`Tier of Being:\s*(${TIER_PATTERN})`, "i"));
+    if (desc) return TIERS.findIndex(t => t.toLowerCase() === desc[1].toLowerCase());
+  }
+  return Math.max(0, TIERS.indexOf(actor.getFlag("world", "tierOfBeing")));
+}
+
+function targetActors() {
+  return [...game.user.targets].map(t => t.actor).filter(Boolean);
+}
+
+// The actor whose effect forced this save/check: Midi-QOL's workflow item, or whoever
+// posted the chat card whose save/check button was clicked
+function originActor(config, message) {
+  const midiUuid = config.midiOptions?.saveActivityUuid ?? config.midiOptions?.saveItemUuid;
+  const midiSource = midiUuid ? fromUuidSync(midiUuid) : null;
+  if (midiSource?.actor) return midiSource.actor;
+  const originId = message?.data?.system?.origin;
+  const origin = originId ? game.messages.get(originId) : null;
+  return origin ? ChatMessage.getSpeakerActor(origin.speaker) : null;
 }

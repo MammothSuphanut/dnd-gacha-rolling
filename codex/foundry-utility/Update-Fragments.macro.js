@@ -1,170 +1,169 @@
 /**
- * The Fragment (Aeorian Cataclysm) — rebalance 2026-10-13
+ * Update Fragments — rewrite The Fragment items (Aeorian Cataclysm) to the Novaris rules
+ * (adventures/aeorian-cataclysm-novaris/01-the-fragments.md).
  * For Foundry VTT v14 + D&D 5e system 6.x
  *
  * How to use:
  *   1. Macro Directory → Create Macro → Type: "Script"
  *   2. Paste this whole file, then Execute (GM only).
+ *   3. A preview lists every item it will change (world items + copies on actors). Confirm to apply.
  *
- * What it does:
- *   - Rewrites Core + the 5 Fragment items, matched by name: the world Items AND every copy
- *     embedded on an actor (PCs/NPCs that already hold a Fragment).
+ * Replaces the 2026-10-13 rebalance version of this macro (still in git history).
+ *
+ * What it does, for "Core" and the 5 "The Fragment of ..." items, wherever they are:
  *   - Rules text goes ONLY into "Unidentified Description" (GM eyes). Description and
  *     Chat Description are cleared so players can't read the mechanics.
- *   - Sets attunement, uses (per Long Rest), and replaces all activities.
- *     Free Action = activation "Special" with condition "Free Action" (dnd5e has no free type).
- *   - Embedded copies keep their spent uses (clamped to the new max). Item effects
- *     (e.g. Wisdom's animation) are left untouched.
- *   - Source of truth: adventures/aeorian-cataclysm/01-the-fragments.md
+ *   - Fragments: 1 use per Long Rest (spent is kept, capped at 1), flags.world.fragment = <key>.
+ *   - Fragments: replaces the old activities with one Free Action utility activity that
+ *     spends the use and rolls 1d20. Wisdom keeps the effect linked to its old activity.
+ *   - Zenith: adds 3 effects to apply from the chat card ("+1 Tier (1 นาที)", "+1 Tier (1 เทิร์น)",
+ *     "−1 Tier (1 เทิร์น)"). They set flags.world.tierBoost, which Mammoth Tweaks adds to the Tier.
+ *   Re-running is safe: items already up to date are skipped.
  */
 (async () => {
-  if ( !game.user.isGM ) return ui.notifications.warn("GM only.");
-
   /* ------------------------------------------------------------------ */
-  /*  Helpers                                                           */
+  /*  Settings                                                          */
   /* ------------------------------------------------------------------ */
-  const rid = () => foundry.utils.randomID();
-  const FREE = { type: "special", value: null, override: false, condition: "Free Action" };
-  const LR = max => ({ spent: 0, max: String(max), recovery: [{ period: "lr", type: "recoverAll" }] });
-  const CONSUME = { spellSlot: true, scaling: { allowed: false }, targets: [{ type: "itemUses", value: "1", target: "", scaling: {} }] };
+  const ACTIVITY_ID = "frgActivity00001";        // fixed id so re-runs can tell it is already done
+  const VERSION = 4;                            // flags.world.fragmentRules — bump to force a rewrite
+  const CORE_FOOT = `<p><em>อยู่ภายใต้ Core Rules: Free Action, ใช้ Fragment ได้ 1 ชิ้นต่อเทิร์น, "ระดับ" = Tier of Being</em></p>`;
 
-  const act = (type, name, extra = {}) => ({
-    _id: rid(), type, name,
-    activation: FREE,
-    consumption: CONSUME,
-    duration: { units: "inst", concentration: false, override: false },
-    range: { units: "self", override: false },
-    target: { affects: { type: "", count: "", choice: false }, template: { type: "" }, override: false, prompt: true },
-    description: { chatFlavor: "" },
-    ...extra
-  });
-  const sight = { units: "spec", special: "มองเห็น", override: false };
-  const one = { affects: { type: "creature", count: "1", choice: false }, template: { type: "" }, override: false, prompt: true };
-  const zenith = (name, formula) => act("damage", name, {
-    range: sight, target: one,
-    damage: { critical: { allow: false }, parts: [{
-      number: null, denomination: null, bonus: "", types: ["force"],
-      custom: { enabled: true, formula }, scaling: { mode: "", number: null, formula: "" }
-    }] }
-  });
+  const fragmentHtml = (title, tagline, ability, usage, limit = "1 ครั้งต่อ Long Rest") =>
+    `<h3>${title}</h3><p>${tagline}</p><h4>${ability}</h4><ul>`
+    + `<li><p><strong>Usage:</strong> ${usage}</p></li>`
+    + `<li><p><strong>Limit:</strong> <strong>${limit}</strong></p></li></ul>${CORE_FOOT}`;
 
-  const CORE_NOTE = `<p><em>อยู่ภายใต้ Core Rules: Free Action, ใช้ Fragment ได้ 1 ชนิดต่อเทิร์น, "ระดับ" = Tier of Being</em></p>`;
+  const CORE_HTML = `<h3>Core Rules (กฎพื้นฐานการใช้งาน)</h3><ul>`
+    + `<li><p><strong>Attunement:</strong> Fragment ทุกชิ้นต้อง Attune และใช้ช่องร่วมกับไอเทมเวทมนตร์อื่น (สูงสุด 3 ชิ้น) — ถ้าช่องเต็มแล้วจะผสาน Fragment เพิ่มไม่ได้</p></li>`
+    + `<li><p><strong>การใช้งาน:</strong> Fragment ทุกชิ้นใช้ <strong>Free Action</strong> ในเทิร์นของตัวเอง และ<strong>ทอย d20 ทุกครั้ง</strong> — DM เป็นคนตัดสินผล</p></li>`
+    + `<li><p><strong>1 ชิ้นต่อเทิร์น:</strong> ในแต่ละเทิร์นใช้ Fragment ได้แค่ 1 ชิ้น</p></li>`
+    + `<li><p><strong>โควตา:</strong> Fragment ทุกชิ้นใช้ได้ <strong>1 ครั้งต่อ Long Rest</strong></p></li>`
+    + `<li><p><strong>การถอดออก:</strong> หลุดจากร่างได้แค่ 2 ทาง คือโฮสต์ตายจริง (<strong>True Death</strong>) หรือให้ <strong>Messenger</strong> ถอดให้</p></li>`
+    + `<li><p><strong>"ระดับ"</strong> หมายถึง Tier of Being (Mortal → Ascendant → Divine → Sovereign → Law)</p></li></ul>`;
 
-  /* ------------------------------------------------------------------ */
-  /*  Fragment data                                                     */
-  /* ------------------------------------------------------------------ */
+  const SIGHT = { units: "spec", special: "มองเห็น" };
+  const ONE_CREATURE = { type: "creature", count: "1", choice: false };
+  const NONE = { type: "", count: "", choice: false };
+
   const FRAGMENTS = {
-    "Core": {
-      attunement: "",
-      uses: { spent: 0, max: "", recovery: [] },
-      activities: [],
-      html: `<h3>Core Rules (กฎพื้นฐานการใช้งาน)</h3><ul>
-<li><p><strong>Attunement:</strong> Fragment ทุกชิ้นต้อง Attune และใช้ช่องร่วมกับไอเทมเวทมนตร์อื่น (สูงสุด 3 ชิ้น) — ถ้าช่องเต็มแล้วจะผสาน Fragment เพิ่มไม่ได้</p></li>
-<li><p><strong>การใช้งาน:</strong> Fragment ทุกชิ้นใช้ <strong>Free Action</strong> ในเทิร์นของตัวเอง</p></li>
-<li><p><strong>1 ชนิดต่อเทิร์น:</strong> ในแต่ละเทิร์นใช้ Fragment ได้แค่ <strong>1 ชนิด</strong> — ใช้ชนิดเดียวกันซ้ำหลายครั้งในเทิร์นเดียวได้ตามโควตาที่เหลือ (เช่น Wisdom 3 ครั้ง) แต่ห้ามผสมคนละชนิด (เช่น Void + Zenith) — Genesis ที่ทำงานอัตโนมัติไม่นับ</p></li>
-<li><p><strong>โควตา:</strong> แต่ละชิ้นมีจำนวนครั้งของตัวเอง ฟื้นคืนทั้งหมดเมื่อจบ Long Rest</p></li>
-<li><p><strong>การถอดออก:</strong> หลุดจากร่างได้แค่ 2 ทาง คือโฮสต์ตายจริง (<strong>True Death</strong>) หรือให้ <strong>Messenger</strong> ถอดให้</p></li>
-<li><p><strong>"ระดับ"</strong> หมายถึง Tier of Being (Mortal → Ascendant → Divine → Sovereign → Law)</p></li></ul>`
+    wisdom: {
+      name: "The Fragment of Wisdom", ability: "Insight", range: { units: "" }, affects: NONE,
+      html: fragmentHtml("The Fragment of Wisdom", "ชิ้นส่วนแห่งปัญญาที่เปิดเผยความลับของสรรพสิ่ง", "Insight",
+        "Free Action ใช้เพื่อขอดูข้อมูลบางอย่าง ทอย d20 ทุกครั้งที่ใช้ DM เป็นคนตัดสินว่าจะเปิดเผยอะไร ตามความเป็นไปได้")
     },
-
-    "The Fragment of Wisdom": {
-      uses: LR(3),
-      activities: [act("utility", "Analyze", { range: sight, target: one })],
-      keepEffectLink: true,
-      html: `<h3>The Fragment of Wisdom</h3><p>ชิ้นส่วนแห่งปัญญาที่เปิดเผยความลับของสรรพสิ่ง</p>
-<h4>Analyze</h4><ul>
-<li><p><strong>Usage:</strong> Free Action เลือกเป้าหมาย 1 ตัวที่มองเห็น</p></li>
-<li><p><strong>Effect:</strong> รู้ข้อมูลบางอย่างของเป้าหมาย ยิ่งเป้าหมายระดับสูงกว่าผู้ใช้ ยิ่งได้ข้อมูลน้อยลง — DM เป็นคนตัดสินว่าได้ข้อมูลอะไรบ้าง</p></li>
-<li><p><strong>Limit:</strong> <strong>3 ครั้ง/Long Rest</strong></p></li></ul>${CORE_NOTE}`
+    void: {
+      name: "The Fragment of Void", ability: "Void Anchor", range: { units: "spec", special: "Mark ของตัวเอง" }, affects: NONE,
+      html: fragmentHtml("The Fragment of Void", "ชิ้นส่วนแห่งความว่างเปล่า ฉีกระยะทางให้หายไปในพริบตา", "Void Anchor",
+        "Free Action ทำได้ 2 อย่าง: <strong>วาง Mark</strong> ความว่างเปล่าไว้ ณ จุดที่ยืนอยู่ (มีได้สูงสุด 1 อัน เมื่อวางอันใหม่ อันเก่าจะหายไป) <strong>หรือ</strong> ฉีกมิติตรงหน้าไปยัง Mark นั้น ประตูเปิดค้างอยู่ 6 วินาที ทอย d20 ทุกครั้งที่ฉีกมิติ DM เป็นคนตัดสินว่าจะไปโผล่ใกล้ Mark แค่ไหน", "ฉีกมิติได้ 1 ครั้งต่อ Long Rest (การวาง Mark ไม่นับ)")
     },
-
-    "The Fragment of Void": {
-      uses: LR(3),
-      activities: [act("utility", "Void Step", { range: { units: "ft", value: "30", override: false } })],
-      html: `<h3>The Fragment of Void</h3><p>ชิ้นส่วนแห่งความว่างเปล่า ฉีกระยะทางให้หายไปในพริบตา</p>
-<h4>Void Step</h4><ul>
-<li><p><strong>Usage:</strong> Free Action</p></li>
-<li><p><strong>Effect:</strong> เทเลพอร์ตตัวเองพร้อมของที่สวมใส่/ถือ ไปยังพื้นที่ว่างที่มองเห็นในระยะ <strong>30 ฟุต</strong></p></li>
-<li><p><strong>Limit:</strong> <strong>3 ครั้ง/Long Rest</strong></p></li></ul>${CORE_NOTE}`
+    stasis: {
+      name: "The Fragment of Stasis", ability: "Stasis", range: SIGHT, affects: ONE_CREATURE,
+      html: fragmentHtml("The Fragment of Stasis", "ชิ้นส่วนแห่งการหยุดนิ่ง บิดห้วงเวลาของสรรพสิ่ง", "Stasis",
+        "Free Action เลือกเป้าหมาย 1 ตัวที่มองเห็น บิดห้วงเวลาของเป้าหมายนั้น ทอย d20 ทุกครั้งที่ใช้ DM เป็นคนตัดสินว่าเวลาของเป้าหมายจะเป็นอย่างไร")
     },
-
-    "The Fragment of Stasis": {
-      uses: LR(1),
-      activities: [act("utility", "Haste")],
-      html: `<h3>The Fragment of Stasis</h3><p>ชิ้นส่วนแห่งการหยุดนิ่ง บิดห้วงเวลาให้ผู้ใช้เคลื่อนไหวเร็วกว่าโลกรอบตัว</p>
-<h4>Haste</h4><ul>
-<li><p><strong>Usage:</strong> Free Action</p></li>
-<li><p><strong>Effect:</strong> ได้ผลของ <em>Haste</em> จนจบเทิร์นนี้ — AC +2, Advantage ใน DEX Save, Speed ×2 และได้ <strong>Action เพิ่ม 1 Action</strong> (ใช้ทำอะไรก็ได้ตามปกติ) — ไม่มีผลอ่อนแรง (lethargy) ตอนหมดผล</p></li>
-<li><p><strong>Limit:</strong> <strong>1 ครั้ง/Long Rest</strong></p></li></ul>${CORE_NOTE}`
+    genesis: {
+      name: "The Fragment of Genesis", ability: "Genesis", range: SIGHT, affects: ONE_CREATURE,
+      html: fragmentHtml("The Fragment of Genesis", "ชิ้นส่วนแห่งการก่อกำเนิด พลังแห่งชีวิตที่ให้กำเนิดสรรพสิ่ง", "Genesis",
+        "Free Action เลือกเป้าหมาย 1 ตัวที่มองเห็น หลั่งพลังแห่งชีวิตใส่เป้าหมายนั้น ทอย d20 DM ตัดสินว่าเกิดอะไรขึ้น")
     },
-
-    "The Fragment of Genesis": {
-      uses: LR(1),
-      activities: [
-        act("utility", "Rebirth", { activation: { type: "special", value: null, override: false, condition: "อัตโนมัติ เมื่อผู้ถือ True Death" } })
-      ],
-      html: `<h3>The Fragment of Genesis</h3><p>ชิ้นส่วนแห่งการก่อกำเนิด พลังแห่งชีวิตที่ดึงวิญญาณของผู้ถือกลับคืนร่าง</p>
-<h4>Rebirth</h4><ul>
-<li><p><strong>Usage:</strong> อัตโนมัติ (Passive)</p></li>
-<li><p><strong>Effect:</strong> เมื่อผู้ถือเข้าสู่ <strong>True Death</strong> จะฟื้นขึ้นทันทีด้วย <strong>HP เต็ม</strong> (ทำงานก่อนกฎ "Fragment หลุดเมื่อ True Death" จึงไม่หลุดออกจากร่าง)</p></li>
-<li><p><strong>Limit:</strong> <strong>1 ครั้ง/Long Rest</strong></p></li></ul>${CORE_NOTE}`
-    },
-
-    "The Fragment of Zenith": {
-      uses: LR(1),
-      activities: [
-        zenith("Zenith — เป้าหมายระดับต่ำกว่า", "(2 * @details.level)d10"),
-        zenith("Zenith — เป้าหมายระดับเท่ากัน", "(@details.level)d10"),
-        zenith("Zenith — เป้าหมายระดับสูงกว่า", "(max(1, floor(@details.level / 2)))d10")
-      ],
-      html: `<h3>The Fragment of Zenith</h3><p>ชิ้นส่วนแห่งจุดสูงสุด ปลดปล่อยพลังทั้งหมดใส่เป้าหมายเดียว</p>
-<h4>Absolute Zenith</h4><ul>
-<li><p><strong>Usage:</strong> Free Action เลือกเป้าหมาย 1 ตัวที่มองเห็น — <strong>โดนอัตโนมัติ</strong> ไม่ต้องทอยโจมตีหรือเซฟ</p></li>
-<li><p><strong>Effect:</strong> ทำ <strong>Force damage</strong> ตามระดับของเป้าหมาย (lv = เลเวลตัวละครของผู้ใช้)</p><ul>
-<li><p><strong>ต่ำกว่า:</strong> (2 × lv)d10</p></li>
-<li><p><strong>เท่ากัน:</strong> (lv)d10</p></li>
-<li><p><strong>สูงกว่า 1 ขั้นขึ้นไป:</strong> (lv ÷ 2 ปัดลง, ขั้นต่ำ 1)d10</p></li></ul></li>
-<li><p><strong>Limit:</strong> <strong>1 ครั้ง/Long Rest</strong></p></li></ul>${CORE_NOTE}`
+    zenith: {
+      name: "The Fragment of Zenith", ability: "Zenith", range: { units: "self" }, affects: NONE,
+      html: fragmentHtml("The Fragment of Zenith", "ชิ้นส่วนแห่งจุดสูงสุด ผลักตัวตนให้ทะยานเหนือขีดจำกัด", "Zenith",
+        "Free Action ผลักระดับตัวตนของตัวเองให้สูงขึ้น ทอย d20 ทุกครั้งที่ใช้ DM เป็นคนตัดสินว่าเกิดอะไรขึ้น"),
+      effects: [
+        { name: "Zenith: +1 Tier (1 นาที)", boost: 1, duration: { value: 10, units: "rounds", expiry: "sourceStart" } },
+        { name: "Zenith: +1 Tier (1 เทิร์น)", boost: 1, duration: { value: 1, units: "turns", expiry: "sourceStart" } },
+        { name: "Zenith: −1 Tier (1 เทิร์น)", boost: -1, duration: { value: 1, units: "turns", expiry: "sourceStart" } }
+      ]
     }
   };
 
-  /* ------------------------------------------------------------------ */
-  /*  Apply                                                             */
-  /* ------------------------------------------------------------------ */
-  const buildSystem = (item, data) => {
-    const sys = item.toObject().system;
-    sys.description = { ...(sys.description ?? {}), value: "", chat: "" };
-    sys.unidentified = { ...(sys.unidentified ?? {}), description: data.html };
-    sys.attunement = data.attunement ?? "required";
-    const spent = item.parent ? Math.min(Number(sys.uses?.spent) || 0, Number(data.uses.max) || 0) : 0;
-    sys.uses = { ...data.uses, spent };
-    const acts = foundry.utils.deepClone(data.activities);
-    // Keep Wisdom's animation effect linked to its activity
-    if ( data.keepEffectLink && item.effects.size ) acts[0].effects = item.effects.map(e => ({ _id: e.id }));
-    sys.activities = Object.fromEntries(acts.map((a, i) => [a._id, { sort: (i + 1) * 100000, ...a }]));
-    return sys;
-  };
+  try {
+    if ( game.system.id !== "dnd5e" ) return ui.notifications.error("This macro requires the D&D 5e system.");
+    if ( !game.user.isGM ) return ui.notifications.error("Only a GM can run this macro.");
 
-  const targets = [];
-  for ( const item of game.items ) if ( FRAGMENTS[item.name] ) targets.push(item);
-  for ( const actor of game.actors ) for ( const item of actor.items ) if ( FRAGMENTS[item.name] ) targets.push(item);
+    /* ------------------------------------------------------------------ */
+    /*  Find every copy (world items + items on actors)                   */
+    /* ------------------------------------------------------------------ */
+    const byName = new Map(Object.entries(FRAGMENTS).map(([key, f]) => [f.name, key]));
+    const isTarget = i => byName.has(i.name) || ((i.name === "Core") && (i.folder?.name === "The Fragment"));
+    const docs = [...game.items.filter(isTarget)];
+    for ( const actor of game.actors ) docs.push(...actor.items.filter(i => byName.has(i.name)));
 
-  const log = [];
-  for ( const item of targets ) {
-    try {
-      await item.update({ system: buildSystem(item, FRAGMENTS[item.name]) }, { recursive: false, diff: false });
-      log.push(`✅ ${item.parent ? item.parent.name + " → " : "[World] "}${item.name}`);
-    } catch (err) {
-      console.error(err);
-      log.push(`❌ ${item.parent ? item.parent.name + " → " : "[World] "}${item.name}: ${err.message}`);
+    const upToDate = i => (i.getFlag("world", "fragmentRules") ?? 0) >= VERSION;
+    const todo = docs.filter(i => !upToDate(i));
+    if ( !todo.length ) return ui.notifications.info("Fragments are already up to date.");
+
+    const esc = s => foundry.utils.escapeHTML(String(s));
+    const rows = todo.map(i => `<li>${esc(i.name)} — ${i.actor ? esc(i.actor.name) : "World item"}</li>`).join("");
+    const ok = await foundry.applications.api.DialogV2.confirm({
+      window: { title: "Update Fragments" },
+      content: `<p>Rewrite ${todo.length} item(s) to the Novaris Fragment rules?</p><ul>${rows}</ul>`
+    });
+    if ( !ok ) return;
+
+    /* ------------------------------------------------------------------ */
+    /*  Apply                                                             */
+    /* ------------------------------------------------------------------ */
+    for ( const item of todo ) {
+      const key = byName.get(item.name);
+      if ( !key ) {                                // Core
+        await item.update({
+          "system.description.value": "",
+          "system.description.chat": "",
+          "system.unidentified.description": CORE_HTML,
+          "flags.world.fragmentRules": VERSION
+        });
+        continue;
+      }
+      const frag = FRAGMENTS[key];
+
+      // Zenith effects (created once, matched by name)
+      const effectRefs = [];
+      for ( const e of frag.effects ?? [] ) {
+        let effect = item.effects.find(x => x.name === e.name);
+        if ( !effect ) [effect] = await item.createEmbeddedDocuments("ActiveEffect", [{
+          name: e.name, img: item.img, transfer: false, duration: e.duration,
+          system: { magical: true, changes: [{ key: "flags.world.tierBoost", type: "override", value: String(e.boost), phase: "initial" }] }
+        }]);
+        effectRefs.push({ _id: effect.id });
+      }
+
+      // Old activities: Wisdom's linked effect carries over to the new one
+      for ( const activity of [...(item.system.activities ?? [])] ) {
+        for ( const ref of activity.effects ?? [] ) {
+          if ( !effectRefs.some(r => r._id === ref._id) ) effectRefs.push({ _id: ref._id });
+        }
+        await item.deleteActivity(activity.id);
+      }
+
+      await item.update({
+        "system.description.value": "",
+        "system.description.chat": "",
+        "system.unidentified.description": frag.html,
+        "system.uses.max": "1",
+        "system.uses.spent": Math.min(item.system.uses?.spent ?? 0, 1),
+        "system.uses.recovery": [{ period: "lr", type: "recoverAll" }],
+        "flags.world.fragment": key,
+        "flags.world.fragmentRules": VERSION
+      });
+
+      await item.createActivity("utility", {
+        _id: ACTIVITY_ID,
+        name: frag.ability,
+        activation: { type: "special", condition: "Free Action", override: false },
+        consumption: { spellSlot: true, scaling: { allowed: false }, targets: [{ type: "itemUses", value: "1", target: "" }] },
+        duration: { units: "inst", concentration: false, override: false },
+        range: { ...frag.range, override: false },
+        target: { affects: frag.affects, override: false, prompt: false },
+        roll: { formula: "1d20", name: "d20", prompt: false, visible: true },
+        effects: effectRefs
+      }, { renderSheet: false });
     }
+
+    ui.notifications.info(`Updated ${todo.length} Fragment item(s).`);
+  } catch ( err ) {
+    console.error("Update Fragments |", err);
+    ui.notifications.error(`Update Fragments failed: ${err.message}`);
   }
-
-  const missing = Object.keys(FRAGMENTS).filter(n => !game.items.getName(n));
-  ChatMessage.create({
-    whisper: [game.user.id],
-    content: `<h3>Fragment rebalance</h3><p>${log.join("<br>")}</p>`
-      + (missing.length ? `<p>⚠️ ไม่พบใน World Items: ${missing.join(", ")}</p>` : "")
-  });
-  ui.notifications.info(`Fragment rebalance: updated ${log.filter(l => l.startsWith("✅")).length}/${targets.length} items.`);
 })();

@@ -2,7 +2,7 @@
   "id": "mammoth-tweaks",
   "title": "Mammoth Tweaks",
   "description": "Small fixes for this table, each switched on/off in Configure Settings. Disable the module to revert everything.",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "authors": [{ "name": "Mammoth" }],
   "compatibility": { "minimum": "13", "verified": "14" },
   "esmodules": ["scripts/mammoth-tweaks.mjs"],
