@@ -1,6 +1,6 @@
 # Syngorn
 
-> origin: [`exandria/tal-dorei/verdant-expanse/syngorn.md`](../../../exandria/tal-dorei/verdant-expanse/syngorn.md) · ชื่อคงเดิม (ตามนามสกุลของ Elder Oren — canon ข้อ 26)
+> origin: [`exandria/tal-dorei/verdant-expanse/syngorn.md`](../../../exandria/tal-dorei/verdant-expanse/syngorn.md) · ชื่อคงเดิม (ตามนามสกุลของ Star Oren — canon ข้อ 26)
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน
 
 ## ข้อมูลด่วน
@@ -13,7 +13,7 @@
 | ระดับอารยธรรม | **5 — เวทสูงที่ล้ำกว่าเทคโนโลยีข้างนอก** |
 | ประชากร | ✨ ~80,000 คน |
 | เผ่าพันธุ์ | เอลฟ์ราว 90% |
-| ผู้ปกครอง | **Oren Aldwyn Syngorn** — Elder Star |
+| ผู้ปกครอง | **Oren Aldwyn Syngorn** — Star |
 | เศรษฐกิจ | ปิด — ไม่ค้าขายกับข้างนอก |
 | ภูมิอากาศ | ✨ ควบคุมด้วยเวท |
 | การเดินทาง | **ไม่มีใครเข้าออกได้หากไม่ได้รับอนุญาต** |
@@ -42,10 +42,10 @@
 
 ## ผู้คน
 
-- **Oren Aldwyn Syngorn** — Elder ผู้พ่ายแพ้ต่อกาลเวลา
+- **Oren Aldwyn Syngorn** — Star ผู้พ่ายแพ้ต่อกาลเวลา
 - **ชาว Syngorn** — คนนอกไม่รู้ว่าพวกเขาใช้ชีวิตอย่างไร
 
 ## การเมืองและความสัมพันธ์
 
-- **ทุกประเทศ**: ไม่มีใครยุ่ง — ใครไปยุ่งกับ Elder ไม่รอด
+- **ทุกประเทศ**: ไม่มีใครยุ่ง — ใครไปยุ่งกับ Star ไม่รอด
 - **The Verge**: ป้อมและหมู่บ้านที่เหลือของ Syngorn กลายเป็นส่วนหนึ่งของเขต Gate

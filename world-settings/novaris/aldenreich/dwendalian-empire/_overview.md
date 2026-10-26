@@ -1,6 +1,6 @@
 # Dwendalian Empire
 
-> origin: [`exandria/wildemount/dwendalian-empire/_overview.md`](../../../exandria/wildemount/dwendalian-empire/_overview.md) · ชื่อคงเดิม (ตั้งตาม Elder Manfried Dwendal)
+> origin: [`exandria/wildemount/dwendalian-empire/_overview.md`](../../../exandria/wildemount/dwendalian-empire/_overview.md) · ชื่อคงเดิม (ตั้งตาม Star Manfried Dwendal)
 > **ร่าง 2026-10-22 — รอ DM ตรวจ** · ✨ = ข้อเสนอที่ยังไม่ยืนยัน · ภูมิภาคและประเทศใช้ชื่อเดียวกัน
 
 ## ข้อมูลด่วน
@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | ประเทศ (จักรวรรดิ) + ภูมิภาค |
 | ทวีป | Aldenreich · กลางค่อนตะวันตกของทวีป |
-| การปกครอง | จักรวรรดิ — **Manfried Dwendal** (Elder Star) ปกครองอย่างเปิดเผย · งานบริหารอยู่ในมือ Cerberus Assembly และขุนนาง |
+| การปกครอง | จักรวรรดิ — **Manfried Dwendal** (Star) ปกครองอย่างเปิดเผย · งานบริหารอยู่ในมือ Cerberus Assembly และขุนนาง |
 | สถานะ | **มหาอำนาจระดับโลก 1 ใน 5** |
 | ระดับอารยธรรม | 3 (ฟื้นฟูศิลปวิทยาการ) · Cogwick ระดับ 4 · ข่าวลือห้องลับระดับ 6 ใต้เมืองหลวง |
 | ประชากร | ~15 ล้าน (คนเมือง ~12%) |
@@ -28,7 +28,7 @@
 
 | ช่วง | เหตุการณ์ |
 |---|---|
-| ยุค Founding | Manfried เป็นทาสของเทพออร์ค ก่อนไต่ขึ้นเป็น Elder |
+| ยุค Founding | Manfried เป็นทาสของเทพออร์ค ก่อนไต่ขึ้นเป็น Star |
 | ยุค PD ตอนต้น | Manfried วางรากฐานจักรวรรดิใหม่ |
 | ✨ 514 PD | ตั้ง Dwendalis เป็นเมืองหลวง |
 | ✨ ~760 PD | ผนวก Julous Dominion (Trivane) |

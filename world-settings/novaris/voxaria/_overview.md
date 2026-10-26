@@ -40,7 +40,7 @@
 | เขต Gate [Riftwild](iron-authority/_overview.md) | — (ฐานฮันเตอร์ Glade Hollow) | ป่าดิบ ดันเจี้ยน ซาก Quetza |
 | เขต Gate [The Verge](the-verge/_overview.md) | — (ฐานฮันเตอร์ Fernlake) | ป่าเฟย์ของ Titania |
 
-> Syngorn นครเอลฟ์ของ Elder Oren เคยอยู่ที่ The Verge — ปัจจุบันย้ายไปเกาะแล้ว ([syngorn.md](the-verge/syngorn.md))
+> Syngorn นครเอลฟ์ของ Star Oren เคยอยู่ที่ The Verge — ปัจจุบันย้ายไปเกาะแล้ว ([syngorn.md](the-verge/syngorn.md))
 
 ## ประวัติ
 
