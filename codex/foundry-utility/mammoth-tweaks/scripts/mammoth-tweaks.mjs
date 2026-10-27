@@ -132,7 +132,7 @@ function formatTime(totalMinutes) {
 
 /* --------------------------------------------------------------------------
    Tier of Being: automatic Tier Gap bonus
-   House rule (codex/Core-Rules/astral-nexus-lore.md): a creature gets +5 per tier
+   House rule (codex/Core-Rules/cosmology-and-tier-of-being.md): a creature gets +5 per tier
    it is above the other creature on every d20 Test that involves it, and +5 AC per
    tier against that creature's attacks. Apart from that AC, the lower side's rolls
    are unchanged. Tier is read from the "<Tier> Being" feature, then from "Tier of Being:

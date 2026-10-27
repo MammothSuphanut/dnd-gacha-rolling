@@ -26,7 +26,7 @@
      tier-list files exist, CodexClassBrowser has no tier data to merge in.) -->
 
 ## Core-Rules | Core Rules
-- astral-nexus-lore
+- cosmology-and-tier-of-being
 - Fatigue-system
 - Death-and-Dying-system
 

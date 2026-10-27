@@ -1,5 +1,5 @@
 // Homebrew rule references shared across every adventure and character in
-// the project (Fatigue, Death & Dying, the Astral Nexus meta-campaign lore,
+// the project (Fatigue, Death & Dying, cosmology & Tier of Being,
 // the class/subclass index, subclass tier lists, party consults) — grouped
 // into category subfolders under codex/ (Core-Rules/, General/, Consults/,
 // 2024-tier-list/, ...). Mirrors the adventures/ + import.meta.glob pattern

@@ -4,7 +4,7 @@
 
 ## เสร็จแล้ว
 - [x] โครงราก: `00-overview.md`, `01-hook-and-antagonist.md`, `02-npcs.md`, `99-notes.md`
-- [x] จุดเชื่อม Astral Nexus: Constellation Protocol (Halaster's madness = เมล็ดพันธุ์แห่งการทำลายล้างฝังลึกใต้ Undermountain, Dragon Heist ยังไม่แตะปมนี้ตรงๆ)
+- [x] ที่มา (Halaster's madness = เมล็ดพันธุ์แห่งการทำลายล้างฝังลึกใต้ Undermountain, Dragon Heist ยังไม่แตะปมนี้ตรงๆ)
 - [x] วางแผนผสาน Dungeon of the Mad Mage Companion เข้ากับ WDMM หลัก (ดู [99-notes.md](./99-notes.md))
 - [x] ย้ายไฟล์ต้นฉบับ 3 ไฟล์ (WDH, WDMM, WDMMC) เข้า `_source/`
 - [x] Act 1 (Dragon Heist): `00-act-outline.md` + CH01-CH04 brief

@@ -1,7 +1,7 @@
 # ประชากรและระดับพลังของ Novaris
 
 > ข้อมูลประชากร สัดส่วนผู้ฝึกพลังวิญญาณ และการกระจายของ Tier of Being ในปี **935 PD**
-> ระบบ Tier อ้างอิง `codex/Core-Rules/astral-nexus-lore.md` / บันทึกการตัดสินใจอยู่ที่ `_canon-decisions.md` (ข้อ 4)
+> ระบบ Tier อ้างอิง `codex/Core-Rules/cosmology-and-tier-of-being.md` / บันทึกการตัดสินใจอยู่ที่ `_canon-decisions.md` (ข้อ 4)
 
 ---
 
@@ -191,7 +191,7 @@ DM ใช้ช่วงนี้กำหนดแต่ละประเท�
 
 ### เพดานพลังตามระดับตัวตน
 
-ระดับตัวตนเป็น**ตัวกำหนดเพดาน** ไม่ใช่พลังปัจจุบัน (กฎกลางอยู่ที่ `codex/Core-Rules/astral-nexus-lore.md`)
+ระดับตัวตนเป็น**ตัวกำหนดเพดาน** ไม่ใช่พลังปัจจุบัน (กฎกลางอยู่ที่ `codex/Core-Rules/cosmology-and-tier-of-being.md`)
 
 | ระดับ | เพดาน level | เพดาน CR | เพดานสเตตัส |
 |---|---|---|---|

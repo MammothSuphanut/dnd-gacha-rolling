@@ -9,7 +9,7 @@
 ## จุดที่ยังเปิดกว้างให้ DM ปรับหน้างาน
 - รายละเอียด encounter/stat block เต็มของแต่ละ EP ลงไว้ครบแล้วทั้ง 19 EP — ปรับสมดุลตามปาร์ตี้จริงได้เสมอ
 - ชาวเมือง Phandalin ที่หายตัวไปบางคนอาจไม่ถูกพบระหว่างแคมเปญ (ถ้ากลุ่มพลาดจุดช่วยเหลือใน Act 3) — DM กำหนดชะตากรรมของพวกเขาเองได้ตามหมายเหตุท้าย [EP11](<./ACT03-the-shattered-obelisk/EP11 - Beyond a Lightless Star.md>)
-- Epilogue hook หลัง level 12 (Attack of the Nematode, Ilvaash's Revenge, Netherese Obelisk อื่นในโลก) เก็บไว้เป็นแนวทางถ้าอยากต่อแคมเปญเป็น homebrew ใหม่ — ไม่ใช้ official module ต่อเพราะพล็อต Far Realm ผูกกับ Astral Nexus ไปแล้ว
+- Epilogue hook หลัง level 12 (Attack of the Nematode, Ilvaash's Revenge, Netherese Obelisk อื่นในโลก) เก็บไว้เป็นแนวทางถ้าอยากต่อแคมเปญเป็น homebrew ใหม่ — ไม่ใช้ official module ต่อเพราะพล็อต Far Realm ผูกกับเมล็ดพันธุ์แห่งการทำลายล้างไปแล้ว
 
 ## ช่วงเลเวลตลอดแคมเปญ (1-12)
 | Act | ชื่อ | ช่วงเลเวล | จำนวน EP |

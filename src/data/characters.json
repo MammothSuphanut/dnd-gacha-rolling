@@ -9903,7 +9903,7 @@
   {
     "id": "character-fa2d7849-b387-4b77-bed5-32bf0ea16ed2",
     "name": "Jack Underfog",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-cb3f7729-7f22-4296-9cd1-2e959751b05e",
     "partyTagIds": [
       "tag-ec0d2618-4421-486a-a327-c7f666827175",
@@ -10034,7 +10034,7 @@
   {
     "id": "character-a1c696b8-ef0f-47ec-9654-7713028976c8",
     "name": "Berronar Truesilver",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-7194c6e0-4df6-4561-b239-cf6eecfac958",
     "partyTagIds": [
       "tag-ec0d2618-4421-486a-a327-c7f666827175",
@@ -10165,7 +10165,7 @@
   {
     "id": "character-cb8eeef6-c0ec-4a49-9d2d-1883db656c47",
     "name": "Xear",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-0f2c5824-53b0-4a53-97e6-da3872c0efb1",
     "partyTagIds": [
       "tag-ec0d2618-4421-486a-a327-c7f666827175",
@@ -10296,7 +10296,7 @@
   {
     "id": "character-17d64ab1-2ce1-4a6d-9b4b-1e562be96509",
     "name": "ISUS",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-4ee161b1-9b28-4b17-ae80-b4e64485a7a1",
     "partyTagIds": [
       "tag-ec0d2618-4421-486a-a327-c7f666827175",
@@ -10427,7 +10427,7 @@
   {
     "id": "character-26f03337-b0d5-470d-a143-89c0301886bf",
     "name": "Rufus",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-4ee161b1-9b28-4b17-ae80-b4e64485a7a1",
     "partyTagIds": [],
     "campaignIds": [],
@@ -10477,7 +10477,7 @@
   {
     "id": "character-0d6f510a-30e7-4d22-8e6f-b5340f862290",
     "name": "Aethon Dawnhoof",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-c12a9fac-cd28-4378-be9d-e1222bc22d7b",
     "partyTagIds": [],
     "campaignIds": [],
@@ -10527,7 +10527,7 @@
   {
     "id": "character-351251cc-7dfd-4e70-8117-75163159e920",
     "name": "Kargoth Winterhide",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "",
     "partyTagIds": [],
     "campaignIds": [],
@@ -10577,7 +10577,7 @@
   {
     "id": "character-85cc1815-1f38-45c5-9865-119e2f103418",
     "name": "ZikZak",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-0f2c5824-53b0-4a53-97e6-da3872c0efb1",
     "partyTagIds": [],
     "campaignIds": [],
@@ -10627,7 +10627,7 @@
   {
     "id": "character-47a643fe-865a-4db0-a622-be509eefd185",
     "name": "Orem",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-987ef0a6-6bbe-4c99-a569-d5a0afec19e5",
     "partyTagIds": [],
     "campaignIds": [],
@@ -16141,7 +16141,7 @@
   {
     "id": "character-6bd99997-9b68-4b3f-8f2e-e0d5c2955cef",
     "name": "Rogue",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "",
     "partyTagIds": [
       "tag-db0fd033-0a82-4591-897b-72be63f1dcf0"
@@ -16789,7 +16789,7 @@
   {
     "id": "character-0b01aac9-a6ed-4c3b-b9eb-408a928ae82c",
     "name": "Barbarian",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "user-a1254d50-9453-4425-975e-99295b7f9298",
     "partyTagIds": [
       "tag-db0fd033-0a82-4591-897b-72be63f1dcf0"
@@ -17437,7 +17437,7 @@
   {
     "id": "character-bc2da9ce-0789-4421-82dd-86bd3b53d94c",
     "name": "Wizard",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "",
     "partyTagIds": [
       "tag-db0fd033-0a82-4591-897b-72be63f1dcf0"
@@ -18085,7 +18085,7 @@
   {
     "id": "character-0d1f65ba-6aae-49c1-93f7-00d3b3a253af",
     "name": "Fighter",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "",
     "partyTagIds": [
       "tag-db0fd033-0a82-4591-897b-72be63f1dcf0"
@@ -18733,7 +18733,7 @@
   {
     "id": "character-c32da948-ecd7-4fc1-b9a7-156607842867",
     "name": "Cleric",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "",
     "partyTagIds": [
       "tag-db0fd033-0a82-4591-897b-72be63f1dcf0"
@@ -19381,7 +19381,7 @@
   {
     "id": "character-7b1e58be-0518-4d28-866c-56f58dd5a5f2",
     "name": "Paladin",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "",
     "partyTagIds": [
       "tag-db0fd033-0a82-4591-897b-72be63f1dcf0"
@@ -20029,7 +20029,7 @@
   {
     "id": "character-01e3b6cd-54ff-47cb-954e-a2b7c8b7d35d",
     "name": "Ranger",
-    "status": "Astral Nexus",
+    "status": "Realm of Fortunes",
     "ownerId": "",
     "partyTagIds": [
       "tag-db0fd033-0a82-4591-897b-72be63f1dcf0"

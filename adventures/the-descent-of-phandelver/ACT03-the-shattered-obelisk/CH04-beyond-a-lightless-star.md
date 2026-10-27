@@ -5,7 +5,7 @@
 
 ## สารบัญ EP
 - [EP10: The Briny Maze](<./EP10 - The Briny Maze.md>) — เขาวงกตเนื้อเยื่อของ Ilvaash, mindgate สามจุด, พันธมิตรและศัตรูหลากหลาย
-- [EP11: Beyond a Lightless Star](<./EP11 - Beyond a Lightless Star.md>) — Endless Void, ช่วยชาวเมือง, ปะทะ mind flayer fanatics + Refraction of Ilvaash, ปิดฉากแคมเปญ + บทส่งท้าย Astral Nexus
+- [EP11: Beyond a Lightless Star](<./EP11 - Beyond a Lightless Star.md>) — Endless Void, ช่วยชาวเมือง, ปะทะ mind flayer fanatics + Refraction of Ilvaash, ปิดฉากแคมเปญ
 
 ---
 [← Chapter 3](./CH03-rifts-in-reality.md) · [Act outline](./00-act-outline.md)

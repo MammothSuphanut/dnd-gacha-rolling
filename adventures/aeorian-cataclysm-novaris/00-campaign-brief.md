@@ -3,7 +3,6 @@
 แคมเปญเปิดโลกใน [Novaris](../../world-settings/novaris/) เล่นแบบ session ต่อ session — 1 Act = 1 Fragment = 1 ทวีป
 เนื้อหาแต่ละ Act มีแค่ brief (Fragment อยู่ไหน อยู่กับใคร ทำไม) แล้วค่อยเพิ่ม EP ทีละ session เมื่อปาร์ตี้ไปถึง
 
-- **Play Mode:** Native — ตัวละครเป็นคนในโลกนี้
 - **กลไก Fragment:** [01-the-fragments.md](./01-the-fragments.md)
 - **ฉบับ Exandria เดิม (ใช้หยิบ NPC/ฉาก/encounter):** [../aeorian-cataclysm/](../aeorian-cataclysm/00-overview.md)
 
@@ -90,7 +89,7 @@ Messenger บอกว่ามีใครบางคนเปิดใช้�
 - **Messenger** ใน Novaris คือใคร เกี่ยวกับดวงดาวแห่ง Aeor หรือไม่
 - **Fragment ทั้ง 5 ชิ้นกับ Ofear** เกี่ยวกันอย่างไร (ข้อเสนอ: เป็นแกนของ Ofear ที่สร้างไม่เสร็จ — กระจายให้คนใช้จนกรงสึกกร่อน แล้วรวมกลับเพื่อสร้าง Ofear ให้เสร็จแล้วทุบกรง)
 - **ฉากหนีในตอนเปิด** ถูกจัดฉากหรือไม่ (ฉบับ Exandria ลัทธิจงใจปล่อยตัวละครไป)
-- **ตอนจบ** — ฆ่า / ไถ่บาป / ซ่อมกรง / ทางอื่น · ฉบับ Exandria จบด้วยทางเลือก Astral Nexus ซึ่งอาจไม่เข้ากับโหมด Native
+- **ตอนจบ** — ฆ่า / ไถ่บาป / ซ่อมกรง / ทางอื่น
 - **Act 3-5** (ผู้ถือ Fragment, brief, เลเวล) — **รอเล่นใกล้จบ Act 2 ก่อนค่อยมาทำ**
 - **Fronts & Clocks** ของลัทธิและผู้ถือแต่ละคน
 - **กฎ True Death + Genesis** — ถ้าเพื่อนฟื้นให้ทันในเทิร์นเดียวกัน Fragment ยังหลุดไหม

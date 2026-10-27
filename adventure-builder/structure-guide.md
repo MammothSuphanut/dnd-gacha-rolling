@@ -13,7 +13,7 @@
 - มี Act เดียวทั้งเรื่อง (ธรรมชาติของ one-shot/short campaign) → ยังคงมีโฟลเดอร์ `ACT01-slug/` หนึ่งอัน ครอบทุก Chapter/EP ของทั้งเรื่องไว้ในนั้น (แบบ `frozen-sick-the-plague-covenant` — ทั้ง 6 EP อยู่ใน `ACT01-the-plague-covenant/`)
 - มีหลาย Act จริง (long campaign) → แต่ละ Act ได้โฟลเดอร์ของตัวเอง `ACT0X-slug/`
 - ชื่อ slug ของ Act เดียว (กรณีมี Act เดียว) ตั้งให้สื่อธีม/ชื่อรองของ adventure นั้นได้เลย ไม่ต้องเป็นคำว่า "act-1" เฉยๆ
-- **ระวังเนื้อหาซ้ำเมื่อมี Act เดียว**: ถ้าทั้งเรื่องมี Act เดียว ห้ามใส่รายละเอียดแคมเปญชุดเดียวกัน (ประเภท, level range, ระบบเลื่อนระดับ, theme, setting, สารบัญ EP) ซ้ำทั้งใน `00-overview.md` (root) และ `ACT01-slug/00-act-outline.md` — ให้รายละเอียดพวกนี้อยู่ใน `00-act-outline.md` ที่เดียว ส่วน root `00-overview.md` เหลือแค่สิ่งที่เป็น root-scope จริงๆ (จุดเชื่อม Astral Nexus + สารบัญ Act ที่ชี้ไปไฟล์เดียวนั้น) พร้อมประโยคสั้นๆ บอกให้ไปอ่านรายละเอียดที่ act-outline — ข้อยกเว้นคือ **Story Overview / Adventure Summary แบบ prose เต็ม** (เนื้อเรื่อง ไม่ใช่ตัวเลข/สารบัญ) ที่ `/build-ep` เติมเข้ามาทีหลังได้ตามปกติ ไม่นับเป็นเนื้อหาซ้ำ — ตัวอย่างแก้แล้วดูที่ `frozen-sick-the-plague-covenant/00-overview.md`
+- **ระวังเนื้อหาซ้ำเมื่อมี Act เดียว**: ถ้าทั้งเรื่องมี Act เดียว ห้ามใส่รายละเอียดแคมเปญชุดเดียวกัน (ประเภท, level range, ระบบเลื่อนระดับ, theme, setting, สารบัญ EP) ซ้ำทั้งใน `00-overview.md` (root) และ `ACT01-slug/00-act-outline.md` — ให้รายละเอียดพวกนี้อยู่ใน `00-act-outline.md` ที่เดียว ส่วน root `00-overview.md` เหลือแค่สิ่งที่เป็น root-scope จริงๆ (ที่มา + สารบัญ Act ที่ชี้ไปไฟล์เดียวนั้น) พร้อมประโยคสั้นๆ บอกให้ไปอ่านรายละเอียดที่ act-outline — ข้อยกเว้นคือ **Story Overview / Adventure Summary แบบ prose เต็ม** (เนื้อเรื่อง ไม่ใช่ตัวเลข/สารบัญ) ที่ `/build-ep` เติมเข้ามาทีหลังได้ตามปกติ ไม่นับเป็นเนื้อหาซ้ำ — ตัวอย่างแก้แล้วดูที่ `frozen-sick-the-plague-covenant/00-overview.md`
 
 ### กฎ 2 — ภายในโฟลเดอร์ Act: Chapter กับ EP เป็นไฟล์แบน เรียงตามลำดับเล่น
 
@@ -54,7 +54,7 @@
 
 ```
 adventures/<slug>/
-  00-overview.md               ภาพรวม, level range, ระบบเลื่อนระดับ, จุดเชื่อม Astral Nexus, สารบัญ Act
+  00-overview.md               ภาพรวม, level range, ระบบเลื่อนระดับ, ที่มา, สารบัญ Act
   01-hook-and-antagonist.md    Hook, ตัวร้าย, เดิมพัน
   02-npcs.md                   ตาราง NPC สำคัญ
   99-notes.md                  องค์ประกอบพิเศษ + จุดเปิดกว้างให้ DM ปรับหน้างาน

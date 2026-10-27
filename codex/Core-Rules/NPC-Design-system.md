@@ -1,6 +1,6 @@
 # การออกแบบ NPC / มอนสเตอร์ (NPC Design)
 
-กฎกลางสำหรับสร้าง NPC และมอนสเตอร์ทุกตัวใน campaign (ใช้ร่วมกับ [Tier of Being](astral-nexus-lore.md#ระดับตัวตน-tier-of-being))
+กฎกลางสำหรับสร้าง NPC และมอนสเตอร์ทุกตัวใน campaign (ใช้ร่วมกับ [Tier of Being](cosmology-and-tier-of-being.md#ระดับตัวตน-tier-of-being))
 
 ## 1. CR ไม่ใช่ Level
 
@@ -53,7 +53,7 @@ NPC **ไม่ต้องยึดตาราง slot ของ PC** (ไม�
 | **Sovereign** | **นาม (Name)** เป็น feature — ไร้ขีดจำกัดภายใต้นามนั้น + **Signature Move** — **นาม**ที่ปรากฏเป็นท่า | **ต้องถามผู้สร้าง NPC** ทั้งชื่อนามและความสามารถ |
 | **Law** | **Global Passive** — กฎเกณฑ์ของตนมีผลทั้งโลก | **ต้องถาม DM** ทั้งชื่อและความสามารถ |
 
-ที่มา: [astral-nexus-lore.md — สิ่งที่ได้เมื่อขึ้นแต่ละระดับ](astral-nexus-lore.md#สิ่งที่ได้เมื่อขึ้นแต่ละระดับ-tier-feature) (ตกลง 2026-10-24)
+ที่มา: [cosmology-and-tier-of-being.md — สิ่งที่ได้เมื่อขึ้นแต่ละระดับ](cosmology-and-tier-of-being.md#สิ่งที่ได้เมื่อขึ้นแต่ละระดับ-tier-feature) (ตกลง 2026-10-24)
 
 ### Legendary Action (ทุกระดับ)
 
@@ -107,7 +107,7 @@ NPC **ไม่ต้องยึดตาราง slot ของ PC** (ไม�
 
 Slot เปลี่ยนทุก 2 CR (ตอนขึ้น CR เลขคี่) — CR เลขคู่ได้เท่ากับเลขคี่ก่อนหน้า
 
-"ระดับตัวตนขั้นต่ำ" = CR นี้ต้องเป็นอย่างน้อยระดับนี้ (ตามเพดานใน [astral-nexus-lore.md](astral-nexus-lore.md)) / Prof หลัง CR 20 = 1 + ⌈CR ÷ 4⌉ / slot ในตารางคือแบบ Full caster (Hybrid ตัดคอลัมน์ 6th–9th, Minor ตัด 5th–9th)
+"ระดับตัวตนขั้นต่ำ" = CR นี้ต้องเป็นอย่างน้อยระดับนี้ (ตามเพดานใน [cosmology-and-tier-of-being.md](cosmology-and-tier-of-being.md)) / Prof หลัง CR 20 = 1 + ⌈CR ÷ 4⌉ / slot ในตารางคือแบบ Full caster (Hybrid ตัดคอลัมน์ 6th–9th, Minor ตัด 5th–9th)
 
 | CR | Prof | ระดับตัวตนขั้นต่ำ | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th | รวม |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|

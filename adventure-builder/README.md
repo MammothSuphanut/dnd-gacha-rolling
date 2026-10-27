@@ -2,7 +2,7 @@
 
 โฟลเดอร์นี้รวมเครื่องมือช่วยออกแบบ D&D Adventure แบบสัมภาษณ์ทีละคำถาม จนได้ adventure outline ที่มีรายละเอียดครบ มี 2 วิธีใช้งาน แล้วแต่ว่าจะใช้ที่ไหน
 
-ทุก adventure ที่สร้างผูกอยู่กับ meta-campaign หลัก **"Astral Nexus: Constellation Protocol"** (ดูเนื้อเรื่องเต็มที่ [astral-nexus-lore.md](../codex/Core-Rules/astral-nexus-lore.md)) — บทสัมภาษณ์จะมีคำถามเพิ่มว่า adventure นี้เชื่อมกับ "เมล็ดพันธุ์แห่งการทำลายล้าง" ในเรื่องหลักอย่างไร แล้วแทรกเป็นบทนำสั้นๆ ใน `00-overview.md` และบทส่งท้ายใน EP สุดท้าย
+ทุก adventure ใช้**จักรวาลวิทยาและระดับตัวตน (Tier of Being) กลางเดียวกัน**ตาม [cosmology-and-tier-of-being.md](../codex/Core-Rules/cosmology-and-tier-of-being.md) — บทสัมภาษณ์จะถาม (ไม่บังคับ) ว่าภัยของเรื่องเกี่ยวกับ "เมล็ดพันธุ์แห่งการทำลายล้าง" ไหม แล้วจดไว้ในหัวข้อ "ที่มา" ของ `00-overview.md`
 
 ทุก adventure ยังใช้**ระบบ Fatigue กลางเดียวกัน**ตามกฎใน [Fatigue-system.md](../codex/Core-Rules/Fatigue-system.md) ถ้ามีกลไกในเรื่องที่ให้ตัวละครรับ Fatigue (เช่น สภาพแวดล้อมสุดขั้ว, การเดินทางหนัก) — ให้ลิงก์ไปไฟล์นั้นแทนการนิยามผลลัพธ์ของ Fatigue ซ้ำเอง
 
@@ -26,13 +26,13 @@
 /build-adventure บุกรังหมาป่าเงา
 ```
 
-Claude จะสัมภาษณ์ทีละหัวข้อ (ขนาด adventure, level range, theme, setting, hook, antagonist, stakes, จุดเชื่อมกับ Constellation Protocol, จำนวน EP/session, NPC, องค์ประกอบพิเศษ) — คำถามแบบเลือกตัวเลือกจะเด้งเป็นปุ่มให้กด ส่วนคำถามปลายเปิดให้พิมพ์ตอบเป็นข้อความ
+Claude จะสัมภาษณ์ทีละหัวข้อ (ขนาด adventure, level range, theme, setting, hook, antagonist, stakes, source เดิม + ความเกี่ยวกับเมล็ดพันธุ์ (ไม่บังคับ), จำนวน EP/session, NPC, องค์ประกอบพิเศษ) — คำถามแบบเลือกตัวเลือกจะเด้งเป็นปุ่มให้กด ส่วนคำถามปลายเปิดให้พิมพ์ตอบเป็นข้อความ
 
 เมื่อตอบครบทุกข้อ Claude จะสร้างโฟลเดอร์ `adventures/<ชื่อ-adventure>/` ในโปรเจกต์ ประกอบด้วยไฟล์:
 
 | ไฟล์ | เนื้อหา |
 |---|---|
-| `00-overview.md` | สรุปภาพรวม + จุดเชื่อมกับ Astral Nexus meta-campaign + สารบัญลิงก์ไปแต่ละ Act |
+| `00-overview.md` | สรุปภาพรวม + ที่มา (source เดิม / ความเกี่ยวกับเมล็ดพันธุ์) + สารบัญลิงก์ไปแต่ละ Act |
 | `01-hook-and-antagonist.md` | Hook, ตัวร้าย, เดิมพัน |
 | `02-npcs.md` | ตาราง NPC สำคัญ |
 | `99-notes.md` | องค์ประกอบพิเศษ + จุดที่เปิดกว้างให้ DM ปรับหน้างาน |

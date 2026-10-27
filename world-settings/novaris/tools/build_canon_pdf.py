@@ -1,6 +1,6 @@
 """สร้าง PDF (A4) ฉบับ DM ของ Novaris จากไฟล์หลัก
 
-- history-timeline, _canon-decisions, population-and-power, astral-nexus-lore (กฎกลาง),
+- history-timeline, _canon-decisions, population-and-power, cosmology-and-tier-of-being (กฎกลาง),
   _location-themes-draft, _cr-nations-reference -> exports/novaris-canon.pdf
 - ไม่อ่าน contents/canon/ (เป็นไฟล์ที่แตกออกมาจากไฟล์หลัก เนื้อหาซ้ำ)
 - ใช้ python-markdown + Chrome headless (ฟอนต์ Sarabun/Trirong จาก Google Fonts — ต้องออนไลน์)
@@ -15,7 +15,7 @@ import tempfile
 import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SRCS = [ROOT / "contents" / n for n in ("history-timeline.md", "_canon-decisions.md", "population-and-power.md")] + [ROOT.parent.parent / "codex" / "Core-Rules" / "astral-nexus-lore.md"] + [ROOT / "contents" / n for n in ("_location-themes-draft.md", "_cr-nations-reference.md")]
+SRCS = [ROOT / "contents" / n for n in ("history-timeline.md", "_canon-decisions.md", "population-and-power.md")] + [ROOT.parent.parent / "codex" / "Core-Rules" / "cosmology-and-tier-of-being.md"] + [ROOT / "contents" / n for n in ("_location-themes-draft.md", "_cr-nations-reference.md")]
 OUT = ROOT / "exports" / "novaris-canon.pdf"
 CHROME = pathlib.Path(r"C:\Program Files\Google\Chrome\Application\chrome.exe")
 if not CHROME.exists():  # macOS

@@ -5,7 +5,6 @@
 - Theme: Mystery/Exploration, Cosmic Horror/Aberration, Dungeon Crawl, Political Intrigue
 - **Setting:** [Novaris](../../world-settings/novaris/) — **Frostreach** ภาคตะวันออกของ [Gråmark](../../world-settings/novaris/aldenreich/gramark/_overview.md) (Aldenreich) แถบ Ivoryden · เมือง Phandalin, นครท่าเรือ Neverwinter, Neverwinter Wood, Sword Mountains, Triboar Trail
 - **ปีของเรื่อง:** **560 PD** (Act 1-2) — ราว 375 ปีก่อนเหตุการณ์ของ [Aeorian Cataclysm (Novaris)](../aeorian-cataclysm-novaris/00-campaign-brief.md) · แคมเปญแยก ปาร์ตี้ใหม่ ไม่ผูกเนื้อเรื่องกัน
-- **Play Mode:** Native — ตัวละครเป็นคนในโลกนี้
 - จำนวน EP: 19 EP รวมทั้งแคมเปญ (Act1: 1 EP | Act2: 7 EP | Act3: 11 EP) รวมประมาณ 25-30 session
 - อิงจาก: A Most Potent Brew (Winghorn Press) ต่อด้วย Phandelver and Below: The Shattered Obelisk (Wizards of the Coast)
 - **ฉบับ Forgotten Realms เดิม:** [../the-descent-of-phandelver/](../the-descent-of-phandelver/00-overview.md) · **ตารางเปลี่ยนชื่อและกฎการพอร์ต:** [NOVARIS-ADAPTATION.md](./NOVARIS-ADAPTATION.md)

@@ -9,7 +9,6 @@
 | ที่ตั้ง | **Frostreach** — ภาคตะวันออกของ Gråmark แถบ Ivoryden (ช่องว่างบนแผนที่) · สถานที่ทั้งหมดยังอยู่จนถึงปี 935 PD (lore ส่วนนั้นจะปรับทีหลัง) |
 | ปีของเรื่อง | **560 PD** (Act 1-2) · Act 3 ต่อเนื่อง 560–561 PD ✨ — 375 ปีก่อนปัจจุบันของ Novaris (935 PD) · ตารางลำดับเวลาอยู่ใน [00-overview.md](./00-overview.md) |
 | ความสัมพันธ์กับ Aeorian | แคมเปญแยก ปาร์ตี้ใหม่ |
-| Play Mode | Native |
 | ชื่อสถานที่ FR ในพื้นที่ | คงไว้ — Neverwinter, Phandalin, Waterdeep, Triboar, Thundertree ฯลฯ อยู่ใน Frostreach |
 | เทพของ FR | **คงชื่อ** — ตายในยุค Calamity แต่ชาว Frostreach ยังบูชาอยู่ นักบวชใช้พลังที่ตกค้าง (ตาม "ลัทธิเทพที่ตาย" ใน canon) |
 | Elvenfall | ไม่ผูกเรื่อง |

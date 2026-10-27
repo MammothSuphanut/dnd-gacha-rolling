@@ -5,7 +5,7 @@ Checklist ติดตามงานที่เหลือ หลังปร
 ## เสร็จแล้ว
 - [x] เก็บเนื้อหา Act 2–5 เวอร์ชันเก่า (ทวีปอื่น: Wildemount เดิม/Tal'Dorei/Issylra/Marquet) ไว้ที่ [_archive/](./_archive/) — ไม่ใช่เนื้อเรื่องหลักอีกต่อไป แต่ยังอ่านอ้างอิงได้ (บาง NPC/ฉากเลือกนำมาใช้ซ้ำแล้ว เช่น Druvenlode, Rosohna, Bazzoxan)
 - [x] สร้างโฟลเดอร์ Act 2–5 ใหม่ตามโครงเรื่อง Wildemount-only พร้อม `00-act-outline.md` + Chapter brief (`CH0X-*.md`) ครบทุก Act — ระดับ outline + CR แนะนำ + ลิสต์ "EP ที่แนะนำ" เท่านั้น ยังไม่ใช่ journal เต็ม
-- [x] เขียนใหม่ `ACT06-return-to-aeor-lab/00-act-outline.md` — ปรับให้สอดคล้องกับการเฉลย/ปะทะ Vaelkor Thess ที่ย้ายมา Act 5 แล้ว เพิ่มทางเลือกปิดแคมเปญ Astral Nexus (Constellation vs. อยู่ปกปักโลกเดิม)
+- [x] เขียนใหม่ `ACT06-return-to-aeor-lab/00-act-outline.md` — ปรับให้สอดคล้องกับการเฉลย/ปะทะ Vaelkor Thess ที่ย้ายมา Act 5 แล้ว
 - [x] sync `00-overview.md` (สารบัญ Act + level range + Fragment ต่อ Act) และ `99-notes.md` (จุดตัดสินใจ, ตารางเลเวล, อ้างอิง Exandria) ให้ตรงกับโครงใหม่
 - [x] Act 1 คงเดิม 100% ไม่ต้องแก้เนื้อหา (แก้แค่ลิงก์ท้ายไฟล์ให้ชี้ไป Act 2 โฟลเดอร์ใหม่)
 - [x] เขียน EP journal เต็มรูปแบบ (boxed read-aloud text, DC เฉพาะจุด, NPC ตั้งชื่อ+tactics, Treasure แยกตามจุด) ครบทุก Act 2–6 แล้ว — Act 2 (7 EP), Act 3 (5 EP), Act 4 (6 EP หลังแยก EP "ไล่ล่าข้ามทวีป" เป็น 2 EP), Act 5 (6 EP), Act 6 (3 EP) รวม 27 EP ใหม่ ความหนาแน่นเทียบเท่า Act 1 EP1/EP4 ตามที่ผู้เล่นยืนยัน
@@ -18,7 +18,7 @@ Checklist ติดตามงานที่เหลือ หลังปร
 | 3 | ทางแยกสู่ Xhorhas | Stasis | Rexxentrum → Rosohna → Bazzoxan → Ghor Veles → Rosohna |
 | 4 | ห้องนิรภัยแห่งชีวิตนิรันดร์ | Genesis | Ghor Veles → Ruins of Draconia → Ruins of Sepesca |
 | 5 | สิ่งที่ทะเลกลืนกิน | Zenith | Ruins of Sepesca → Diver's Grave → Darktow Isle — เฉลย + ปะทะ Vaelkor Thess (last boss) |
-| 6 | คืน Fragment สู่ Aeor Lab (บทส่งท้าย) | ปิดเรื่อง | เก็บกวาดภัยร้าย → Aeor Lab → Astral Nexus |
+| 6 | คืน Fragment สู่ Aeor Lab (บทส่งท้าย) | ปิดเรื่อง | เก็บกวาดภัยร้าย → Aeor Lab → พิธีคืน Fragment |
 
 ## งานที่เหลือ
 - [ ] ตัดสินใจว่าจะ**ลบ** `_archive/` ทิ้งถาวรเมื่อไหร่ หรือเก็บไว้เป็น reference ต่อไปเรื่อยๆ (ไม่บังคับ ไม่กระทบเนื้อเรื่องหลัก)

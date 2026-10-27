@@ -56,7 +56,7 @@ const TABS = [
 
 const DEFAULT_COLOR = '#7c3aed'
 const MAX_TOTAL_LEVEL = 20
-const STATUS_OPTIONS = ['Astral Nexus', 'In-Action', 'Hall of Fame']
+const STATUS_OPTIONS = ['Realm of Fortunes', 'In-Action', 'Hall of Fame']
 const NO_CAMPAIGN_FILTER = '__no_campaign__'
 const NO_PARTY_FILTER = '__no_party__'
 const NO_USER_FILTER = '__no_user__'
@@ -308,7 +308,7 @@ function totalLevel(character) {
 }
 
 const STATUS_BADGE_STYLES = {
-  'Astral Nexus': 'bg-sky-100 text-sky-700',
+  'Realm of Fortunes': 'bg-sky-100 text-sky-700',
   'In-Action': 'bg-emerald-100 text-emerald-700',
   'Hall of Fame': 'bg-amber-100 text-amber-700',
 }
