@@ -271,6 +271,33 @@
 | Hearthstar Peaks | **Monti Stella** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 | The Barren Shores | **Costa Secca** | — (ป้ายภูมิประเทศบนแผนที่) | ✅ | ✅ | ✅ ร่าง | ✅ |
 
+### ❄️ Aldenreich — Gråmark → Frostreach (จาก Forgotten Realms, 2026-10-27)
+
+> ไม่มีใน CR — ภาคใหม่บนพื้นที่ว่างทางตะวันออกของ Gråmark สำหรับแคมเปญ [The Descent of Phandelver (Novaris)](../../../adventures/the-descent-of-phandelver-novaris/00-overview.md) · **คงชื่อ Forgotten Realms** · แผนที่: "ป้าย/เมือง" = ขึ้นบน Azgaar · "หมุด" = หมุด journal อย่างเดียว (`maps/azgaar/places-extra.json`)
+
+| ชื่อ FR | ชื่อ Novaris | ไฟล์ | ชื่อ | เอกสาร | lore | แผนที่ |
+|---|---|---|---|---|---|---|
+| Frostreach | **Frostreach (คงเดิม)** | [_overview.md](../aldenreich/gramark/frostreach/_overview.md) | ✅ | ✅ | ✅ ร่าง | ✅ Azgaar |
+| Neverwinter | **Neverwinter (คงเดิม)** | [neverwinter.md](../aldenreich/gramark/frostreach/neverwinter.md) | ✅ | ✅ | ✅ ร่าง | ✅ Azgaar |
+| Phandalin | **Phandalin (คงเดิม)** | [phandalin.md](../aldenreich/gramark/frostreach/phandalin.md) | ✅ | ✅ | ✅ ร่าง | ✅ Azgaar |
+| Triboar | **Triboar (คงเดิม)** | [triboar.md](../aldenreich/gramark/frostreach/triboar.md) | ✅ | ✅ | ✅ ร่าง | ✅ Azgaar |
+| Yartar | **Yartar (คงเดิม)** | [yartar.md](../aldenreich/gramark/frostreach/yartar.md) | ✅ | ✅ | ✅ ร่าง | ✅ Azgaar |
+| Waterdeep | **Waterdeep ⚓ (คงเดิม)** | [waterdeep.md](../aldenreich/gramark/frostreach/waterdeep.md) | ✅ | ✅ | ✅ ร่าง | ✅ Azgaar |
+| Neverwinter Wood | **Neverwinter Wood (คงเดิม)** | [neverwinter-wood.md](../aldenreich/gramark/frostreach/neverwinter-wood.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Sword Mountains | **Sword Mountains (คงเดิม)** | [sword-mountains.md](../aldenreich/gramark/frostreach/sword-mountains.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Mount Hotenow | **Mount Hotenow (คงเดิม)** | [mount-hotenow.md](../aldenreich/gramark/frostreach/mount-hotenow.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Starmetal Hills | **Starmetal Hills (คงเดิม)** | [starmetal-hills.md](../aldenreich/gramark/frostreach/starmetal-hills.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Thundertree | **Thundertree (คงเดิม)** | [thundertree.md](../aldenreich/gramark/frostreach/thundertree.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Conyberry | **Conyberry (คงเดิม)** | [conyberry.md](../aldenreich/gramark/frostreach/conyberry.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Old Owl Well | **Old Owl Well (คงเดิม)** | [old-owl-well.md](../aldenreich/gramark/frostreach/old-owl-well.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Wyvern Tor | **Wyvern Tor (คงเดิม)** | [wyvern-tor.md](../aldenreich/gramark/frostreach/wyvern-tor.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Cragmaw Castle | **Cragmaw Castle (คงเดิม)** | [cragmaw-castle.md](../aldenreich/gramark/frostreach/cragmaw-castle.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Wave Echo Cave | **Wave Echo Cave (คงเดิม)** | [wave-echo-cave.md](../aldenreich/gramark/frostreach/wave-echo-cave.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Zorzula's Rest | **Zorzula's Rest (คงเดิม)** | [zorzulas-rest.md](../aldenreich/gramark/frostreach/zorzulas-rest.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Talhundereth | **Talhundereth (คงเดิม)** | [talhundereth.md](../aldenreich/gramark/frostreach/talhundereth.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Gibbet Crossing | **Gibbet Crossing (คงเดิม)** | [gibbet-crossing.md](../aldenreich/gramark/frostreach/gibbet-crossing.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+| Neverwinter River | **Neverwinter River (คงเดิม)** | [neverwinter-river.md](../aldenreich/gramark/rivers/neverwinter-river.md) | ✅ | ✅ | ✅ ร่าง | ✅ หมุด journal |
+
 ### ❄️ Aldenreich — เมืองสุ่มจากแผนที่ Azgaar (ตั้งชื่อใหม่ 2026-10-23)
 
 > ไม่มีใน CR — เมืองที่ Azgaar สุ่มเติมในเขตประเทศตอนสร้างแผนที่ ตั้งชื่อใหม่ตามธีมภูมิภาค แล้วเขียน lore ครบ · Dwendalian Empire / Ödland ใช้ชื่ออังกฤษ · Costa Mosaica (Concord) ใช้ชื่ออิตาลี · เมืองในอาณานิคมของจักรวรรดิใช้ชื่ออังกฤษแบบจักรวรรดิ · เพิ่มลง `novaris-burgs.json` แล้ว

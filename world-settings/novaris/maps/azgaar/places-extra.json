@@ -1,0 +1,89 @@
+{
+ "note": "Journal-only pins (not drawn on the Azgaar map). Read by tools/build_foundry_journal.py together with places-v3.json.",
+ "places": [
+  {
+   "type": "pin",
+   "name": "Neverwinter Wood",
+   "x": 1618,
+   "y": 179
+  },
+  {
+   "type": "pin",
+   "name": "Sword Mountains",
+   "x": 1614,
+   "y": 199
+  },
+  {
+   "type": "pin",
+   "name": "Mount Hotenow",
+   "x": 1614,
+   "y": 175.5
+  },
+  {
+   "type": "pin",
+   "name": "Starmetal Hills",
+   "x": 1634,
+   "y": 167
+  },
+  {
+   "type": "pin",
+   "name": "Thundertree",
+   "x": 1612,
+   "y": 181
+  },
+  {
+   "type": "pin",
+   "name": "Conyberry",
+   "x": 1623,
+   "y": 172
+  },
+  {
+   "type": "pin",
+   "name": "Old Owl Well",
+   "x": 1628,
+   "y": 176
+  },
+  {
+   "type": "pin",
+   "name": "Wyvern Tor",
+   "x": 1631,
+   "y": 186
+  },
+  {
+   "type": "pin",
+   "name": "Cragmaw Castle",
+   "x": 1622,
+   "y": 183
+  },
+  {
+   "type": "pin",
+   "name": "Wave Echo Cave",
+   "x": 1624,
+   "y": 190
+  },
+  {
+   "type": "pin",
+   "name": "Zorzula's Rest",
+   "x": 1622,
+   "y": 196
+  },
+  {
+   "type": "pin",
+   "name": "Talhundereth",
+   "x": 1638.5,
+   "y": 170
+  },
+  {
+   "type": "pin",
+   "name": "Gibbet Crossing",
+   "x": 1630,
+   "y": 170.5
+  },
+  {
+   "type": "pin",
+   "name": "Neverwinter River",
+   "x": 1608,
+   "y": 183
+  }
+ ]
+}

@@ -18,6 +18,8 @@ import markdown
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PLACES = os.path.join(ROOT, "maps", "azgaar", "places-v3.json")
+# Journal-only pins for places too close together to draw on the Azgaar map (e.g. Frostreach dungeons)
+PLACES_EXTRA = os.path.join(ROOT, "maps", "azgaar", "places-extra.json")
 
 # Azgaar map box of each continent (map units) — same boxes the continent maps were exported from
 BOXES = {
@@ -117,6 +119,8 @@ def main():
     continent, out_dir = sys.argv[1], sys.argv[2]
     x0, y0, x1, y1 = BOXES[continent]
     all_places = json.load(open(PLACES, encoding="utf-8"))["places"]
+    if os.path.exists(PLACES_EXTRA):
+        all_places += json.load(open(PLACES_EXTRA, encoding="utf-8"))["places"]
     places = [p for p in all_places if x0 <= p["x"] <= x1 and y0 <= p["y"] <= y1]
     # The continent's own name label (may sit just outside its box, e.g. Eldmere) pins the continent overview
     continent_pin = next((p for p in all_places if p["type"] == "added" and p["name"] == continent.capitalize()), None)

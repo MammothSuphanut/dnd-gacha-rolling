@@ -102,6 +102,12 @@ await fetch('/Fantasy-Map-Generator/__exandria/export?name=novaris-atlas', { met
 - Grid **50 px / Distance 432 mi** (1 ช่อง = เดิน 18 วัน Normal pace) — หรือซ่อน grid แล้วใช้ ruler วัดระยะ
 - Grid units: `mi`
 
+## เพิ่มเมือง/ป้ายใหม่โดยไม่เซฟจากแอป (2026-10-27)
+
+`scripts/add_burgs.py <in.map> <out.map> <burgs.json> [labels.json]` — byte-patch เมืองใหม่ลง `.map` (แก้แค่บรรทัด 5 SVG, 15 pack.burgs, 17 cells.burg, 47 added labels) · สร้าง burg object ในแอปด้วย `Burgs.definePopulation/defineEmblem/defineFeatures/defineGroup` (ไม่เรียก `Burgs.add` เพราะมันต่อถนนใหม่) แล้วเขียนลง JSON · ทดลองกับสำเนาก่อน แล้วค่อย patch `novaris.map` + copy เป็น `novaris-v3.map`
+- ครั้งแรก: ภาค **Frostreach** — `scripts/frostreach-burgs.json` (Neverwinter, Phandalin, Triboar, Yartar, Waterdeep) + `scripts/frostreach-labels.json` (ป้าย Frostreach)
+- สถานที่ที่อยู่ชิดกันเกินจะวาดบนแผนที่ → หมุด journal อย่างเดียวใน `places-extra.json` (`build_foundry_journal.py` อ่านรวมกับ `places-v3.json`)
+
 ## ผังทวีป v3 (2026-10-22 — ใช้แล้วใน `novaris.map` และ `novaris-v3.map`)
 
 - ทุกทวีปคงตำแหน่งเดิม ไม่หมุน · **Eldmere เลื่อนขวา 55 px ลง 150 px** (ห่าง Aldenreich ~11,500 ไมล์ จากเดิม ~5,000) · ป้าย Eldmere/Stormwall ย้ายตาม (`scripts/layout/v3.json`)

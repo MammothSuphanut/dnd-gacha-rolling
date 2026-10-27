@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองหลวง · นครใต้ดิน |
-| ที่ตั้ง | Aldenreich → Gråmark · ใน Whitehorn Alps ทางใต้ของทะเลสาบ Ivoryden |
+| ที่ตั้ง | Aldenreich → Gråmark · ใน Whitehorn Alps |
 | สังกัด | **Twinhold Diarchy** (เมืองหลวง) — อยู่นอกเขตแดน Dwendalian Empire |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~50,000 คน (ทั้งประเทศรวมชายขอบ ~1 ล้าน) |

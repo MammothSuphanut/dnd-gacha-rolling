@@ -14,6 +14,7 @@
 | เทพของ FR | **คงชื่อ** — ตายในยุค Calamity แต่ชาว Frostreach ยังบูชาอยู่ นักบวชใช้พลังที่ตกค้าง (ตาม "ลัทธิเทพที่ตาย" ใน canon) |
 | Elvenfall | ไม่ผูกเรื่อง |
 | "Far Realm" ที่ปาร์ตี้เข้าไป | คือ **The Interstice** (ช่องว่างระหว่างกรงกับข้างนอก) |
+| ระยะทาง | **EP คงระยะตามหนังสือ** (เช่น Neverwinter → Phandalin ~2 วัน) · บนแผนที่ Novaris ระยะยาวกว่าหลายเท่าเพื่อให้หมุดไม่ทับกัน — จงใจให้ไม่ตรง (ตัดสิน 2026-10-27) |
 | แคมเปญ Waterdeep | จะย้ายเข้า Novaris ในอนาคต — ดูหัวข้อ "เผื่อที่ให้ Waterdeep" |
 
 ## รายการที่เปลี่ยน
@@ -53,4 +54,4 @@
 ## ที่ยังเปิดอยู่
 - ✨ องค์กร FR ในฐานะองค์กรท้องถิ่น — ยังอยู่ถึงปี 935 PD ไหม
 - ✨ Red Wizard ผู้ศรัทธา Vecna — ผูกกับ Hexvale (ห้องทดลองของ Vecna ยุค Arcanum) ไหม
-- ไฟล์ lore ของ Frostreach ใน `world-settings/novaris/` + หมุดบนแผนที่ Azgaar (เผื่อจุดให้ Waterdeep ด้วย)
+- ✅ lore ของ Frostreach เขียนแล้วที่ `world-settings/novaris/aldenreich/gramark/frostreach/` · ตำแหน่งตามระยะในเนื้อเรื่อง · Waterdeep ขึ้นแผนที่แล้วที่อ่าวทางใต้ (ไฟล์ lore ว่างไว้ ⚓)

@@ -1,6 +1,6 @@
 {
  "source": "saves/novaris.map (v3)",
- "exported": "2026-10-24",
+ "exported": "2026-10-27",
  "places": [
   {
    "type": "burg",
@@ -3379,6 +3379,46 @@
    "capital": false
   },
   {
+   "type": "burg",
+   "name": "Neverwinter",
+   "x": 1608.5,
+   "y": 178,
+   "group": "city",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Phandalin",
+   "x": 1617,
+   "y": 188,
+   "group": "village",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Triboar",
+   "x": 1641,
+   "y": 192,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Yartar",
+   "x": 1651,
+   "y": 198,
+   "group": "town",
+   "capital": false
+  },
+  {
+   "type": "burg",
+   "name": "Waterdeep",
+   "x": 1603.3,
+   "y": 191,
+   "group": "city",
+   "capital": false
+  },
+  {
    "type": "state",
    "name": "Dwendalian|Empire",
    "x": 1398,
@@ -4859,6 +4899,12 @@
    "name": "Kaknab",
    "x": 662,
    "y": 1060
+  },
+  {
+   "type": "added",
+   "name": "Frostreach",
+   "x": 1634,
+   "y": 204
   },
   {
    "type": "river",
