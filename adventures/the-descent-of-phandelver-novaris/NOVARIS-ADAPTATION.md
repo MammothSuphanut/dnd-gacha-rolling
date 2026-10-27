@@ -25,7 +25,7 @@
 | Sword Coast | Frostreach | 4 | A2-EP02, EP04, EP05 · root |
 | Faerûn | Frostreach | 2 | A2-EP02, EP03 |
 | Netherese / Netheril / เนเธอรีส | **Aeor** · Aeorian Obelisk · แท่งหินแห่ง Aeor | 34 | A2-EP03, EP05 · Act 3 เกือบทุก EP · root |
-| Thay (Red Wizard of Thay) | Red Wizard = ลัทธิจอมเวทผู้ศรัทธา **Vecna** จากทางตะวันตก ✨ | 2 | A2-EP05 (Hamun Kost) |
+| Thay (Red Wizard of Thay) | Red Wizard = ลัทธิจอมเวทผู้ศรัทธา **Vecna** ฐานที่ Hexvale (Dwendalian Empire) | 2 | A2-EP05 (Hamun Kost) |
 | Far Realm (ที่ปาร์ตี้เดินเข้าไป) | The Interstice · Interstice Rifts · Interstice Exposure · หัวข้อ "In the Interstice" · "Interstice Explorers" | ~55 | Act 3 EP8-11, CH03-04, act outline |
 | บทส่งท้าย Constellation Protocol (แบบ Summon) | บทส่งท้ายในโลก + "สิ่งที่ส่งต่อไปถึงปี 935 PD" | 3 | A3-EP11 · root |
 | Through the Radiant Citadel · Atagua | ตัด → "ไปต่อใน Novaris" | 4 | A3-EP11 |
@@ -39,7 +39,7 @@
 | Dumathoin | เทพที่ตาย ความศักดิ์สิทธิ์ตกค้างในวิหาร · กล่องหมายเหตุ | A2-EP07 · A3-EP03, EP04, EP05 |
 | Ilsensine | เทพที่ตาย ซาก God-Brain ติดใน The Interstice จนเกิด Ilvaash ✨ | A3-EP02 (Z17), EP08, act outline |
 | Far Realm (ที่เหลือ ~109 ครั้ง) | Far Realm ตัวจริงอยู่นอกกรง · คนในเรื่องเรียก The Interstice ว่า Far Realm | Act 3 |
-| Lords' Alliance · Harpers · Zhentarim · Emerald Enclave · Order of the Gauntlet · Cult of the Dragon | องค์กรท้องถิ่นของ Frostreach ✨ | Act 2 (A2-EP03 มากสุด) |
+| Lords' Alliance · Harpers · Zhentarim · Emerald Enclave · Order of the Gauntlet · Cult of the Dragon | องค์กรท้องถิ่นของ Frostreach — ยังอยู่ถึงปี 935 PD | Act 2 (A2-EP03 มากสุด) |
 | Neverwinter · Waterdeep · Triboar · Sword Mountains · Mount Hotenow · Thundertree ฯลฯ | สถานที่ใน Frostreach | ทุก Act |
 | Vecna · Underdark | มีใน canon Novaris อยู่แล้ว | — |
 
@@ -52,6 +52,6 @@
 - **ยังต้องตัดสินตอนทำแคมเปญ Waterdeep:** ปีของเรื่อง (ฉบับนี้ 560 PD) · Waterdeep ห่าง Phandalin/Neverwinter แค่ไหนบนแผนที่ · ทั้งสองแคมเปญใช้เมล็ดพันธุ์แห่งการทำลายล้างเหมือนกัน (Halaster ↔ Obelisk) จะผูกกันหรือไม่
 
 ## ที่ยังเปิดอยู่
-- ✨ องค์กร FR ในฐานะองค์กรท้องถิ่น — ยังอยู่ถึงปี 935 PD ไหม
-- ✨ Red Wizard ผู้ศรัทธา Vecna — ผูกกับ Hexvale (ห้องทดลองของ Vecna ยุค Arcanum) ไหม
+- ✅ องค์กร FR = องค์กรท้องถิ่นของ Frostreach ยังอยู่ถึงปี 935 PD (2026-10-27)
+- ✅ Red Wizards มีฐานที่ Hexvale (2026-10-27)
 - ✅ lore ของ Frostreach เขียนแล้วที่ `world-settings/novaris/aldenreich/gramark/frostreach/` · ตำแหน่งตามระยะในเนื้อเรื่อง · Waterdeep ขึ้นแผนที่แล้วที่อ่าวทางใต้ (ไฟล์ lore ว่างไว้ ⚓)

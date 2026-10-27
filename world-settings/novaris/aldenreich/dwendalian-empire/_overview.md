@@ -30,7 +30,7 @@
 |---|---|
 | ยุค Founding | Manfried เป็นทาสของเทพออร์ค ก่อนไต่ขึ้นเป็น Star |
 | ยุค PD ตอนต้น | Manfried วางรากฐานจักรวรรดิใหม่ |
-| ✨ 514 PD | ตั้ง Dwendalis เป็นเมืองหลวง |
+| 514 PD | ตั้ง Dwendalis เป็นเมืองหลวง |
 | ✨ ~760 PD | ผนวก Julous Dominion (Trivane) |
 | ✨ ~780 PD | ตั้งอาณานิคม **[Saltmarch](../costa-mosaica/saltmarch/_overview.md)** หลังชายฝั่ง Costa Secca — ฟื้นนาเกลือร้างของ Concord · Concord ยอมรับผ่าน **Salt Accord** (~792 PD) แลกสิทธิ์ค้าขายปลอดภาษีที่ Porta Ferro |
 | ✨ ~800 PD | รุกลงใต้จาก Porta Ferro เข้าป่า Selva Scura ตั้งอาณานิคม **[Green March](../costa-mosaica/green-march/_overview.md)** เพื่อไม้เนื้อแข็งและสมุนไพร |

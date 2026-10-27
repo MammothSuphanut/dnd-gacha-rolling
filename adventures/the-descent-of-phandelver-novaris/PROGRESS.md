@@ -9,5 +9,5 @@
 ## ที่เหลือ
 - [x] lore ภาค **Frostreach** — [world-settings/novaris/aldenreich/gramark/frostreach/](../../world-settings/novaris/aldenreich/gramark/frostreach/_overview.md) 20 ไฟล์ · เมือง 5 แห่ง + ป้าย Frostreach บนแผนที่ Azgaar · ที่เหลือเป็นหมุด journal (2026-10-27)
 - [ ] ปรับสภาพปี 935 PD ของสถานที่ใน Frostreach (ผู้ใช้จะทำเอง — ตอนนี้ติด ✨ "รอปรับ")
-- [ ] ตรวจข้อ ✨ ใน NOVARIS-ADAPTATION.md (องค์กร FR ในฐานะองค์กรท้องถิ่น, Red Wizard ผู้ศรัทธา Vecna)
+- [x] ตัดสินข้อ ✨ แล้ว: องค์กร FR อยู่ถึงปี 935 PD เฉพาะ Frostreach · Red Wizards ฐานที่ Hexvale · Dwendalis เป็นเมืองหลวงปี 514 PD (2026-10-27)
 - [ ] (จากฉบับเดิม) แมพ/ภาพประกอบ และทวน stat block ที่ปรับแต่งเองก่อนรันโต๊ะ
