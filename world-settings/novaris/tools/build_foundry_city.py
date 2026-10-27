@@ -2,7 +2,7 @@
 
     python world-settings/novaris/tools/build_foundry_city.py twinhold
 
-Writes <Foundry world>/World_Setting/Novaris/<Continent>/<Region>/<City>/<city>.json, read by
+Writes Data/assets/world/novaris/<Continent>/<Region>/<City>/<city>.json, read by
 codex/foundry-utility/Create-Novaris-City.macro.js. The map images (one per floor, exported from Canvas of Kings and
 cropped to the frame by tools/crop_city_map.py) sit in the same folder.
 
@@ -19,8 +19,8 @@ import sys
 import markdown
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WORLD = "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol"
-DATA_DIR = "World_Setting/Novaris"  # relative to the world folder
+FOUNDRY_DATA = "D:/FoundryVTT_Data/Data"
+DATA_DIR = "assets/world/novaris"  # relative to Foundry's Data folder
 
 
 def polar(r, a):  # a in degrees, 0 = east, 90 = south (twinhold_plan.py)
@@ -116,9 +116,9 @@ def main():
                       # pixel on the map image; the macro adds the scene's padding offset
                       "pin": {"x": round((spot[0] - f["x0"]) * k), "y": round((spot[1] - f["z0"]) * k)} if spot else None})
     missing = set(c["places"]) - {p["name"] for p in pages}
-    out_dir = os.path.join(WORLD, DATA_DIR, c["dir"])
+    out_dir = os.path.join(FOUNDRY_DATA, DATA_DIR, c["dir"])
     os.makedirs(out_dir, exist_ok=True)
-    img = f"worlds/{os.path.basename(WORLD)}/{DATA_DIR}/{c['dir']}"
+    img = f"{DATA_DIR}/{c['dir']}"
     w, h = round(f["w_ft"] * k), round(f["h_ft"] * k)
     found = os.path.join(out_dir, f"{key}-lights.json")  # find_city_lights.py
     lights = [{"kind": l["kind"], "level": l["level"], "x": round((l["x"] - f["x0"]) * k), "y": round((l["z"] - f["z0"]) * k)}

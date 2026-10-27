@@ -16,8 +16,7 @@ from east_shift import shift_image
 
 Image.MAX_IMAGE_PIXELS = None
 ROOT = Path(__file__).resolve().parent.parent
-ORIGINAL = Path("D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/Campaigns/"
-                "00 Gerneral Campaigns Data/scenes/Exandria/Exandria - Speculative 2024 (high res).png")
+ORIGINAL = Path("D:/FoundryVTT_Data/Data/assets/scenes/Exandria/Exandria - Speculative 2024 (high res).png")
 ATLAS = ROOT / "exports/novaris-atlas.png"
 HEIGHTMAP = ROOT / "heightmaps/novaris.png"
 OUT = ROOT / "exports/grid"

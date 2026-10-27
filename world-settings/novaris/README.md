@@ -48,7 +48,7 @@
 |---|---|---|
 | แอป Azgaar | `maps/azgaar/app/` (gitignored) | สร้างใหม่ตาม `maps/azgaar/README.md` หัวข้อ "สร้าง `app/` ใหม่" แล้ว `npm ci --ignore-scripts` ใน `app/` · เปิดด้วย preview ชื่อ `azgaar` (มีใน `.claude/launch.json`) |
 | ภาพ export | `maps/azgaar/exports/*.png` (gitignored ยกเว้น `novaris-v3-atlas-noscale-x10.png`) | export ใหม่จาก Azgaar (ดูขั้นตอนท้ายไฟล์) |
-| ภาพและ journal ใน Foundry | `D:\FoundryVTT_Data\Data\worlds\astral-nexus-constellation-protocol\World_Setting\Novaris\` — `novaris-v3-atlas.webp` + `novaris-v3-<ทวีป>.webp` 5 ไฟล์ + `journal/<ทวีป>.json` 5 ไฟล์ + `journal/seas.json` | สร้างใหม่ตามงานข้อ 1 |
+| ภาพและ journal ใน Foundry | `D:\FoundryVTT_Data\Data\assets\world\novaris\` — `atlas/novaris-v3-atlas.webp` + `atlas/novaris-v3-<ทวีป>.webp` 5 ไฟล์ + `journal/<ทวีป>.json` 5 ไฟล์ + `journal/seas.json` | สร้างใหม่ตามงานข้อ 1 |
 
 ## งานที่ต้องทำ
 
@@ -60,7 +60,7 @@
    - ✅ name table · overview · `places-v3.json` · export ภาพ · WebP · journal ทั้ง 6 กลุ่ม (เครื่องนี้)
    - ✅ **แม่น้ำ 82 สาย** (2026-10-24): ตั้งชื่อใหม่ตามธีมภูมิภาค + ไฟล์ lore ทุกสาย (เน้นใช้ทำฉาก: ตลอดสาย · จุดสำคัญ · ไอเดียฉาก) ใน `<ภูมิภาค>/rivers/` (Tsagaan Tal อยู่ `shenzhou/rivers/`) · ลำน้ำสาขาแยกไฟล์ · ป้ายแผนที่ "ชื่อ River" ทุกสาย (byte-patch ชื่อ + type) · Tuchtlan คงชื่อเดิม · รายชื่อใน `contents/_name-table.md` หัวข้อ "แม่น้ำ" · overview ภูมิภาคมีหัวข้อ "แม่น้ำ" · journal ใช้โฟลเดอร์ "แม่น้ำ" (หมุดครบ 82)
    - ✅ สรุปให้ผู้ใช้ฟังแล้ว — แชทถัดไปเริ่มที่ข้อ 1
-1. **เช็คไฟล์ Foundry ในเครื่องนี้** — ดูว่าโฟลเดอร์ `World_Setting\Novaris\` ข้างบนมีครบไหม และ `journal/*.json` ใหม่กว่า commit ล่าสุดหรือเปล่า
+1. **เช็คไฟล์ Foundry ในเครื่องนี้** — ดูว่าโฟลเดอร์ `assets\world\novaris\` ข้างบนมีครบไหม และ `journal/*.json` ใหม่กว่า commit ล่าสุดหรือเปล่า
    - ถ้าเป็นเครื่องเดิมที่เขียน README นี้ (มีครบแล้ว) ข้ามได้
    - ถ้าเพิ่ง pull มาเครื่องอื่น หรือไฟล์ขาด/เก่า: เตรียมแอป Azgaar → export ภาพโลก x10 และทวีปทั้ง 5 → แปลง WebP → รัน `build_foundry_journal.py` ครบ 5 ทวีป + seas (คำสั่งอยู่ท้ายไฟล์) — ถ้า path ของ Foundry ในเครื่องนี้ไม่ใช่ `D:\FoundryVTT_Data` ให้ถามผู้ใช้
 2. **ให้ผู้ใช้รัน macro ใน Foundry** — `Create-Novaris-Journal` (และ `Create-Novaris-Scene` ถ้าเป็นโลก Foundry ใหม่) แล้วถามว่าหมุดขึ้นครบไหม · หมุดที่ไม่มีโดยตั้งใจ: overview ของทวีปและภูมิภาคย่อยบางอัน (เช่น `green-march`, `saltmarch`) · ของใหม่ที่ควรเห็นหมุด: เกาะ ทะเล ถิ่น Eldmere และแม่น้ำ 82 สาย (โฟลเดอร์ "แม่น้ำ" ใต้แต่ละภูมิภาค) · หมุดโล่ทองที่ป้ายประเทศ 10 ป้าย (2026-10-24 — เปิด journal ของประเทศนั้น ผูกไว้ใน `STATE_PINS` ของ `build_foundry_journal.py`)
@@ -111,7 +111,7 @@ document.getElementById('map').prepend(st);
 ```python
 from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
-D = r"D:\FoundryVTT_Data\Data\worlds\astral-nexus-constellation-protocol\World_Setting\Novaris"
+D = r"D:\FoundryVTT_Data\Data\assets\world\novaris\atlas"
 Image.open("exports/novaris-v3-atlas-noscale-x10.png").convert("RGB").resize((16200, 10800), Image.LANCZOS).save(D + r"\novaris-v3-atlas.webp", "WEBP", quality=90, method=4)
 for c in ["aldenreich", "eldmere", "shenzhou", "suvarna", "voxaria"]:
     Image.open(f"exports/novaris-v3-{c}.png").convert("RGB").save(D + rf"\novaris-v3-{c}.webp", "WEBP", quality=90, method=4)
@@ -120,7 +120,7 @@ for c in ["aldenreich", "eldmere", "shenzhou", "suvarna", "voxaria"]:
 **journal** (จาก root ของ repo — ต้องมี `pip install markdown`):
 
 ```bash
-for c in aldenreich eldmere shenzhou suvarna voxaria seas; do python world-settings/novaris/tools/build_foundry_journal.py $c "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal"; done
+for c in aldenreich eldmere shenzhou suvarna voxaria seas; do python world-settings/novaris/tools/build_foundry_journal.py $c "D:/FoundryVTT_Data/Data/assets/world/novaris/journal"; done
 ```
 
 **places-v3.json** (ถ้าเปลี่ยนชื่อ/ตำแหน่งเมืองในแผนที่ ต้องสร้างใหม่ก่อนรัน journal):

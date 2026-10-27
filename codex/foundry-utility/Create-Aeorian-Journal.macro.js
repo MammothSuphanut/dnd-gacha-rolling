@@ -4,7 +4,7 @@
  *
  * How to use:
  *   1. Build the data from the repo (once per change to the campaign .md files):
- *        python adventures/aeorian-cataclysm-novaris/tools/build_foundry_journal.py "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/Campaigns/Aeorian Cataclysm/journal"
+ *        python adventures/aeorian-cataclysm-novaris/tools/build_foundry_journal.py "D:/FoundryVTT_Data/Data/assets/campaigns/aeorian-cataclysm/journal"
  *   2. Macro Directory → Create Macro → Type: "Script" → paste this file → Execute (GM only).
  *
  * What it does:
@@ -18,7 +18,7 @@
  *   text, and pages you add yourself (session EPs) are left alone. Edit the campaign in the repo, not in Foundry.
  */
 (async () => {
-  const DATA = "worlds/astral-nexus-constellation-protocol/Campaigns/Aeorian Cataclysm/journal/aeorian-novaris.json";
+  const DATA = "assets/campaigns/aeorian-cataclysm/journal/aeorian-novaris.json";
   const PARENT_FOLDER = "Campaigns";
   const FOLDER = "Aeorian Cataclysm";
   const ARCHIVE_FOLDER = "Archive";

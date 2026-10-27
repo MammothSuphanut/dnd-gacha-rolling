@@ -16,7 +16,7 @@ const path = require("path");
 /*  Settings                                                          */
 /* ------------------------------------------------------------------ */
 const FOUNDRY_APP = "D:/Foundry Virtual Tabletop/resources/app";
-const WORLD_DIR = "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol";
+const WORLD_DIR = "D:/FoundryVTT_Data/Data/worlds/novaris";
 
 const { ClassicLevel } = require(path.join(FOUNDRY_APP, "node_modules/classic-level"));
 

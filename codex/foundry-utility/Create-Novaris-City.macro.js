@@ -6,7 +6,7 @@
  *   1. Run Create-Novaris-Journal first (the city's journal entry must exist — this macro only adds to it).
  *   2. Build the data from the repo (once per change to the city's lore or map):
  *        python world-settings/novaris/tools/build_foundry_city.py twinhold
- *      It writes <city>.json next to the city's map images, in World_Setting/Novaris/<Continent>/<Region>/<City>/.
+ *      It writes <city>.json next to the city's map images, in Data/assets/world/novaris/<Continent>/<Region>/<City>/.
  *   3. Macro Directory → Create Macro → Type: "Script" → paste this file → set CITY below → Execute (GM only).
  *
  * What it does:
@@ -24,7 +24,7 @@
  */
 (async () => {
   const CITY = { key: "twinhold", path: "Aldenreich/Gråmark/Twinhold" };
-  const DATA = `worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/${CITY.path}/${CITY.key}.json`;
+  const DATA = `assets/world/novaris/${CITY.path}/${CITY.key}.json`;
   const ICON_SIZE = 64, FONT_SIZE = 22;
   // Light per kind (radii in ft): house lanterns small and soft, open fires flicker, lava and the forge glow wide and red
   const LIGHTS = {

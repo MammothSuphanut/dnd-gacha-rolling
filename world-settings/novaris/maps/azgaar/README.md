@@ -121,7 +121,7 @@ await fetch('/Fantasy-Map-Generator/__exandria/export?name=novaris-atlas', { met
 
 ## สร้าง heightmap / biome map ใหม่
 
-ต้องมี Python + Pillow + numpy + scipy แผนที่ต้นฉบับ high res อยู่ใน Foundry: `D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/Campaigns/00 Gerneral Campaigns Data/scenes/Exandria/Exandria - Speculative 2024 (high res).png`
+ต้องมี Python + Pillow + numpy + scipy แผนที่ต้นฉบับ high res อยู่ใน Foundry: `D:/FoundryVTT_Data/Data/assets/scenes/Exandria/Exandria - Speculative 2024 (high res).png`
 
 ```bash
 python scripts/make_mid.py "<high res png>" mid.png

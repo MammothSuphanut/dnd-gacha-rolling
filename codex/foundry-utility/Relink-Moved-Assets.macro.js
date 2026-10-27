@@ -1,6 +1,6 @@
 /**
  * Relink Moved Assets — rewrite image paths after the 2026-10-25 reorganisation of
- *   worlds/astral-nexus-constellation-protocol/Campaigns/00 Gerneral Campaigns Data/assets/
+ *   Campaigns/00 Gerneral Campaigns Data/assets/ (now Data/assets/map-assets/ since 2026-10-27)
  * For Foundry VTT v14 + D&D 5e system 6.x
  *
  * Moved folders (old → new):
@@ -28,7 +28,7 @@
     /*  Path rules                                                        */
     /* ------------------------------------------------------------------ */
     const MOVES = { "CampTokens": "Camp/Camp Tokens", "Nature": "Nature/Nature Tokens", "Trap": "Dungeon/Trap Tokens" };
-    const ROOTS = ["00 Gerneral Campaigns Data/assets/", "00%20Gerneral%20Campaigns%20Data/assets/"];
+    const ROOTS = ["assets/map-assets/"];
     const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
     // Only files sitting directly in the old folder match (no "/" after it), so the new

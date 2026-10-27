@@ -5,7 +5,7 @@
  * How to use:
  *   1. Build the data from the repo (once per change to the .md files), for each continent
  *      (aldenreich, eldmere, shenzhou, suvarna, voxaria, seas):
- *        python world-settings/novaris/tools/build_foundry_journal.py aldenreich "D:/FoundryVTT_Data/Data/worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal"
+ *        python world-settings/novaris/tools/build_foundry_journal.py aldenreich "D:/FoundryVTT_Data/Data/assets/world/novaris/journal"
  *   2. Macro Directory → Create Macro → Type: "Script" → paste this file → Execute (GM only).
  *
  * What it does, per continent in CONTINENTS:
@@ -22,8 +22,8 @@
  *   the repo text, and this continent's pins are rebuilt. Edit lore in the repo, not in Foundry.
  */
 (async () => {
-  const DATA_DIR = "worlds/astral-nexus-constellation-protocol/World_Setting/Novaris/journal";
-  const IMG_DIR = "worlds/astral-nexus-constellation-protocol/World_Setting/Novaris";
+  const DATA_DIR = "assets/world/novaris/journal";
+  const IMG_DIR = "assets/world/novaris/atlas";
   // "seas" spans the whole world, so it has no continent scene of its own (see the pin loop)
   const CONTINENTS = ["aldenreich", "eldmere", "shenzhou", "suvarna", "voxaria", "seas"];
   const ROOT_FOLDER = "Novaris";

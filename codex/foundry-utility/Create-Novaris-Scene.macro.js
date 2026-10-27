@@ -29,7 +29,7 @@
  *   ×27       → 1.6 mi/px → 30 px hex = 48 mi (2 days)
  */
 (async () => {
-  const DIR = "worlds/astral-nexus-constellation-protocol/World_Setting/Novaris";
+  const DIR = "assets/world/novaris/atlas";
   const ROOT = "Novaris";
   const WORLD = { name: "Novaris", image: `${DIR}/novaris-v3-atlas.webp`, width: 16200, height: 10800, gridSize: 35, distance: 168 };
   const CONTINENTS = [
