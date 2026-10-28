@@ -42,7 +42,7 @@ sys.setrecursionlimit(10000)
 CS = (3240, 2160)               # terrain classes are read from Exandria.jpeg at this size (5 map px per px)
 
 # ---------- Exandria terrain classes ----------
-PLAIN, RANGE, FOREST, SNOW, DUSK, DESERT, ICE_RANGE = range(7)  # DUSK = the purple Savalirwood / Greying Wildlands
+PLAIN, RANGE, FOREST, SNOW, DUSK, DESERT, ICE_RANGE, ISLE_GRASS = range(8)  # ISLE_GRASS: Eldmere's open ground  # DUSK = the purple Savalirwood / Greying Wildlands
 # woods; ICE_RANGE = snow-covered mountains (Eiselcross, the Greying Wildlands), drawn grey on white
 
 def _eldmere(a, pre_land, k):
@@ -109,6 +109,17 @@ def terrain_classes():
             m = big[lab]
         out[m] = c
     k = CS[0] / 1800
+    # Eldmere (the Shattered Teeth) sits under the poster's grey mist, which the rules above misread:
+    # there only saturated ink counts - dark/yellow-green tree clumps and brown peaks; the rest is grass
+    x0, y0, x1, y1 = [round(v * k) for v in (1225, 810, 1745, 1015)]
+    c = mid[y0:y1, x0:x1].astype(np.float32) / 255
+    r, g, b = c[..., 0], c[..., 1], c[..., 2]; lum = c.mean(-1); cv = c.max(-1); cs = (cv - c.min(-1)) / (cv + 1e-6)
+    tree = nd.binary_closing(nd.uniform_filter(((g > r + 0.02) & (g > b + 0.06) & (lum < 0.5)).astype(np.float32), 5) > 0.3, iterations=1)
+    tree |= nd.binary_closing((r > 0.55) & (g > 0.5) & (b < 0.3), iterations=2)
+    peak = nd.binary_closing(nd.binary_opening((r > g + 0.02) & (r > b + 0.05) & (lum < 0.45) & (cs > 0.15), iterations=1), iterations=2)
+    lab, n = nd.label(peak); big = np.bincount(lab.ravel()) >= 8; big[0] = False; peak = big[lab]
+    box = out[y0:y1, x0:x1]; isle = pre_land[y0:y1, x0:x1]
+    box[isle] = ISLE_GRASS; box[tree & isle] = FOREST; box[peak & isle] = RANGE
     return _eldmere(out, pre_land, k)
 
 # ---------- Azgaar save: routes, state borders ----------
@@ -283,7 +294,7 @@ def count_overlaps(boxes, shrink=6):
 
 # ---------- colours ----------
 CLASS_RGB = {RANGE: (150, 134, 118), FOREST: (92, 108, 56), SNOW: (234, 233, 228), DUSK: (104, 92, 112),
-             DESERT: (214, 192, 145), ICE_RANGE: (234, 233, 228)}
+             DESERT: (214, 192, 145), ICE_RANGE: (234, 233, 228), ISLE_GRASS: (150, 168, 102)}
 ROAD = Color(0.45, 0.26, 0.14, 0.9)
 TRAIL = Color(0.50, 0.33, 0.20, 0.75)
 SEAWAY = Color(0.22, 0.42, 0.44, 0.7)
@@ -730,11 +741,30 @@ def build():
         ice = at(iceA, x, y)                                        # snowy peaks: white inked set
         tex = rng.choice((ice_large if big else ice_small) if ice else (large if big else small)); _, img = sprite(tex)
         width = (rng.uniform(120, 150) if big else rng.uniform(80, 100)) if ice else (rng.uniform(140, 175) if big else rng.uniform(92, 118))
-        f = place(tex, x, y, width, 'mountain', block=tree_block)
-        if f is None: n['no_fit'] += 1; continue
+        f = place(tex, x, y, width, 'mountain', (1.0, 0.85, 0.72, 0.6, 0.5, 0.45), block=tree_block)
+        if f is None:                                               # among crowded towns: a hill instead
+            if place(rng.choice(hills), x, y, rng.uniform(44, 56), 'mountain', (1.0, 0.8), block=tree_block): n['hill'] += 1
+            else: n['no_fit'] += 1
+            continue
         n['shrunk'] += f < 1
         n['mountain'] += 1
-    near_range = nd.binary_dilation(rangeA, iterations=40 // R) & ~rangeA
+    # Eldmere's ranges are single drawn peaks, too small for the scatter: one sprite per peak blob
+    ex0, ey0, ex1, ey1 = [round(t * S / R) for t in (1280, 960, 1800, 1165)]
+    blobs, nb = nd.label(rangeA[ey0:ey1, ex0:ex1])
+    for i, (cy, cx) in enumerate(nd.center_of_mass(blobs > 0, blobs, range(1, nb + 1)), 1):
+        area = (blobs == i).sum() * R * R
+        for j in range(max(1, min(4, round(area / 2500)))):
+            x = (cx + ex0) * R + rng.uniform(-12, 12) * j; y = (cy + ey0) * R + 20 + rng.uniform(-8, 8) * j
+            width = float(np.clip(50 + 0.9 * np.sqrt(area), 70, 130))
+            if place(rng.choice(large if width >= 110 else small), x, y, width, 'mountain', (1.0, 0.8, 0.65, 0.5), block=tree_block):
+                n['mountain'] += 1; n['eld_peaks'] = n.get('eld_peaks', 0) + 1
+    # second, finer pass of small peaks: fills the gaps left between crowded town labels (Voxaria's Sectors)
+    for x, y in scatter(30, 10):
+        if not at(rangeA, x, y) or in_eis(x, y) or at(deep, x, y) < 8: continue
+        ice = at(iceA, x, y)
+        if place(rng.choice(ice_small if ice else small), x, y, rng.uniform(62, 80), 'mountain', (1.0, 0.8, 0.65), tree_block, tree_block):
+            n['mountain'] += 1; n['gap_fill'] = n.get('gap_fill', 0) + 1
+    near_range =nd.binary_dilation(rangeA, iterations=40 // R) & ~rangeA
     for x, y in scatter(86, 32):  # hills: foothills around the ranges, and Novaris uplands
         h = hm[min(1199, int(y / S)), min(1799, int(x / S))]
         if not (at(near_range, x, y) or 55 <= h < 71) or rng.random() > 0.5: continue
