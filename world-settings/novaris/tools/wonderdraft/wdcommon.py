@@ -85,7 +85,7 @@ def symbol(tex, x, y, scale, kind, mirror=False, sample=None, custom_colors=MARK
         'z_index': 0, 'offset': Vec2(float(m['offset_x']), float(m['offset_y'])),
         'radius': float(m['radius']), 'type': kind, 'mirror': mirror, 'outline_width': 0,
         'outline_color': Color(1.0, 1.0, 1.0, 1.0),
-        'sample': sample if (mode == 'sample_color' or kind == 'tree') else None,
+        'sample': sample if mode == 'sample_color' else None,  # as Wonderdraft saves it: other sprites draw as painted
         'custom_colors': list(custom_colors) if custom else None,
         'custom_color_mode': (2 if mode == 'custom_colors_2' else 1) if custom else None,
     }
@@ -120,22 +120,25 @@ def land_mask_rgba(alpha, fresh):
     mask[..., 0] = np.maximum(mask[..., 0], (fresh * 255).round().astype(np.uint8) * (a8 > 0))
     return mask
 
-def assemble(tpl, W, H, theme, mask, symbols, labels, paths, ground=None):
+def assemble(tpl, W, H, theme, mask, symbols, labels, paths, ground=None, water_tint=None):
     """Full map dict, keeping the template's packs, frame, layers and image object layout.
-    mask/ground: H x W x 4 uint8 arrays, or memoryviews of them (big maps: no copy, use wdmap.save_stream)."""
+    mask/ground/water_tint: H x W x 4 uint8 arrays, or memoryviews of them (big maps: no copy, use
+    wdmap.save_stream). water_tint colours the sea: Wonderdraft draws the sea from the theme's water
+    texture (water_colors only feed the tint brush), multiplying its lightness by the tint where alpha > 0."""
     def image(rgba):
         cls, props = tpl['mask'].v
         data = rgba if isinstance(rgba, (bytes, memoryview)) else rgba.tobytes()
         props = [(k, dict(v, width=W, height=H, data=Typed(20, data)) if k == 'data' else v) for k, v in props]
         return Typed(17, (cls, props))
-    blank = memoryview(np.zeros((H, W, 4), np.uint8)).cast('B')
+    blank = memoryview(np.zeros((H, W, 4), np.uint8)).cast('B') if ground is None or water_tint is None else None
     ground = blank if ground is None else ground
+    water_tint = blank if water_tint is None else water_tint
     m = dict(tpl)
     m.update({
         'map_width': float(W), 'map_height': float(H), 'theme': theme,
         'windroses': [], 'paths': paths, 'territories': {'territories': []},
         'symbols': sorted(symbols, key=lambda s: s['position'][1]), 'labels': labels, 'boxes': [],
-        'mask': image(mask), 'ground': image(ground), 'water_tint': image(blank),
+        'mask': image(mask), 'ground': image(ground), 'water_tint': image(water_tint),
         'trace': None, 'grid': None, 'scale': None,
     })
     return m
@@ -156,13 +159,22 @@ def text_box(text, font, size, spacing=0):
 
 def preview(m, alpha, fresh, out, sea=(0.66, 0.73, 0.74), ground=(0.93, 0.94, 0.95), scale=1.0, ground_img=None):
     """Draw land, freshwater, paths, symbols and labels; scale < 1 renders a smaller image.
-    alpha/fresh: 0..1 floats or uint8; ground_img: optional PIL image of the painted ground colours."""
+    alpha/fresh: 0..1 floats or uint8; ground_img: optional PIL image of the painted ground colours.
+    Freshwater is drawn like Wonderdraft's landmass shader when the theme has freshwater_color
+    (outline colour by mask red, fill by its cosine "inner" curve); otherwise as sea."""
     W, H = int(m['map_width'] * scale), int(m['map_height'] * scale)
     u8 = lambda a: a if a.dtype == np.uint8 else (np.clip(a, 0, 1) * 255).astype('uint8')
     alpha = np.asarray(Image.fromarray(u8(alpha)).resize((W, H), Image.BILINEAR)) / 255
     fresh = np.asarray(Image.fromarray(u8(fresh)).resize((W, H), Image.BILINEAR)) / 255
-    a = np.clip(alpha - fresh, 0, 1)[..., None]
+    fc, fo = m['theme'].get('freshwater_color'), m['theme'].get('freshwater_outline_color')
+    a = (alpha if fc else np.clip(alpha - fresh, 0, 1))[..., None]
     g = np.asarray(ground_img.convert('RGB').resize((W, H), Image.BILINEAR)) if ground_img else np.array(ground) * 255
+    g = np.broadcast_to(g, (H, W, 3)).astype(np.float32)
+    if fc:
+        f = fresh[..., None]
+        inner = 0.5 * np.cos((f * f - 1) ** 2 * np.pi) + 0.5
+        g = g * (1 - f * fo[3]) + np.array(fo[:3]) * 255 * f * fo[3]
+        g = g * (1 - inner * fc[3]) + np.array(fc[:3]) * 255 * inner * fc[3]
     img = Image.fromarray((np.array(sea) * 255 * (1 - a) + g * a).astype('uint8')).convert('RGBA')
     edge = Image.fromarray(((a[..., 0] > 0.5) * 255).astype('uint8')).filter(ImageFilter.FIND_EDGES)
     img.paste(Image.new('RGBA', img.size, (43, 48, 58, 255)), mask=edge)
