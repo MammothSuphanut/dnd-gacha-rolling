@@ -15,13 +15,14 @@ What v2 adds over v1 (build_world.py, kept as is):
               (conifer / broadleaf / jungle by region, placed by drawn shape off labels, water, roads and peaks)
               in the Wildemount poster's painted style
   eiselcross  peaks, lava river and site dots from the Wildemount poster trace (build_eiselcross.py)
+  labels      sized for reading zoomed in; spaced sea/region names, river names tilted along their river
   places      Salsvault moved to the hand-picked spot of the Eiselcross map; label overlaps are counted
               and labels that still collide are shrunk step by step
 
 Run:  python tools/wonderdraft/build_world_v2.py [out.wonderdraft_map] [--preview preview.png] [--preview-scale 0.33] [--preview-only]
 Default out: D:/Wonderdraft Map/novaris-world-v2.wonderdraft_map (never v1's file).
 """
-import json, os, re, sys
+import json, math, os, re, sys
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 from scipy import ndimage as nd
@@ -199,33 +200,65 @@ def salsvault_az():
     return tuple(np.linalg.solve(M[:2].T, t - M[2]))
 
 # ---------- labels ----------
+# Sizes for a map that is read zoomed in (at play time) - v1's were sized to read the whole world at once
+# and filled it with names. Markers shrink with their labels.
+SIZE = {'continent': 280, 'sea': 110, 'state': 120, 'region': 0.55, 'archipelago': 28, 'island': 20, 'river': 22}
+# at whole-map distance only countries (states) and continents should read; regions are for zooming in
+BURGS = {  # group -> (marker, width px, label size)
+    'capital': ('symbols/custom_colors/s1_capital', 40, 34),
+    'city':    ('symbols/custom_colors/s1_city', 32, 28),
+    'town':    ('symbols/custom_colors/s1_town', 20, 21),
+    'fort':    ('symbols/custom_colors/s1_fortress', 28, 19),
+    'village': ('symbols/custom_colors/s1_town', 15, 17),
+}
+
+def river_spots(course, x, y):
+    """label spots along a river course, nearest the Azgaar label first, each tilted with the river
+    (kept readable: never upside down, at most ~35 degrees)"""
+    out = []
+    for i in sorted(range(len(course)), key=lambda i: (course[i][0] - x) ** 2 + (course[i][1] - y) ** 2):
+        a, b = course[max(0, i - 2)], course[min(len(course) - 1, i + 2)]
+        ang = math.atan2(b[1] - a[1], b[0] - a[0])
+        if ang > math.pi / 2: ang -= math.pi
+        if ang < -math.pi / 2: ang += math.pi
+        ang = max(-0.6, min(0.6, ang))
+        nx, ny = -math.sin(ang), math.cos(ang)                       # off the river, either side
+        for d in (-22, 22, -40, 40, -60, 60):
+            out.append((course[i][0] + nx * d, course[i][1] + ny * d, ang))
+    return out
+
 def layout_labels(places, sized, rivers):
     """v1's greedy placement, with more candidate spots and, if a label still collides, smaller sizes
     (down to 60 %). -> (labels, markers, keepout boxes, label boxes, overlap report)"""
     lay, labels, markers, keep, boxes = Layout(), [], [], [], []
     def put(text, cands, font, size, color, outline=PAPER, outline_size=5, spacing=0, block=False, kind=''):
+        """cands: (x, y) or (x, y, rotation) spots; a tilted label reserves its rotated bounding box"""
         for f in (1.0, 0.88, 0.78, 0.7, 0.6):
-            sz = max(8, round(size * f)); w, h = text_box(text, font, sz, spacing * f)
+            sz = max(8, round(size * f)); w0, h0 = text_box(text, font, sz, spacing * f)
             best = None
-            for cx, cy in cands:
+            for c in cands:
+                cx, cy = c[0], c[1]; rot = c[2] if len(c) > 2 else 0.0
+                w = abs(w0 * math.cos(rot)) + abs(h0 * math.sin(rot)); h = abs(w0 * math.sin(rot)) + abs(h0 * math.cos(rot))
                 if not (w / 2 < cx < W - w / 2 and h / 2 < cy < H - h / 2): continue
                 b = (cx - w / 2 - outline_size - 6, cy - h / 2 - 6, cx + w / 2 + outline_size + 6, cy + h / 2 + 6)
                 o = lay.overlap(b)
-                if best is None or o < best[0]: best = (o, (cx, cy), b, sz)
+                if best is None or o < best[0]: best = (o, (cx, cy, rot), b, sz)
                 if o == 0: break
             if best and best[0] == 0: break
         if best is None:
-            cx, cy = cands[0]; best = (0, (cx, cy), (cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2), sz)
-        o, (x, y), b, sz = best
+            c = cands[0]; w, h = text_box(text, font, size, spacing)
+            best = (0, (c[0], c[1], 0.0), (c[0] - w / 2, c[1] - h / 2, c[0] + w / 2, c[1] + h / 2), size)
+        o, (x, y, rot), b, sz = best
         lay.add(b); boxes.append((text, kind, b))
         labels.append(_label(text, x, y, font, sz, color, outline, outline_size, round(spacing * sz / size)))
+        labels[-1]['rotation'] = float(rot)
         if block: keep.append(b)
     def around(x, y, w, h, steps=(0, 0.6, -0.6, 1.2, -1.2, 1.8, -1.8, 2.4, -2.4, 3.0, -3.0)):
         return [(x + dx * w, y + dy * h) for dy in steps for dx in (0, 0.3, -0.3, 0.6, -0.6, 0.9, -0.9)]
 
     burgs = [p for p in places if p['type'] == 'burg']
     for p in burgs:
-        tex, width, _ = bw.BURGS[p['group']]
+        tex, width, _ = BURGS[p['group']]
         x, y = az(p['x'], p['y'])
         markers.append((tex, x, y, width))
         b = (x - width / 2, y - width / 2, x + width / 2, y + width / 2)
@@ -236,47 +269,46 @@ def layout_labels(places, sized, rivers):
     for p in added:
         x, y = az(p['x'], p['y'])
         if p['name'] in bw.CONTINENTS:
-            t = p['name'].upper(); w, h = text_box(t, 'Cinzel Decorative', bw.SIZE['continent'], 30)
-            put(t, around(x, y, w, h), 'Cinzel Decorative', bw.SIZE['continent'], INK, outline_size=10, spacing=30, kind='continent')
+            t = p['name'].upper(); w, h = text_box(t, 'Cinzel Decorative', SIZE['continent'], 60)
+            put(t, around(x, y, w, h), 'Cinzel Decorative', SIZE['continent'], INK, outline_size=8, spacing=60, kind='continent')
         elif p['name'] in bw.SEAS:
-            w, h = text_box(p['name'], 'IM FELL English Italic', bw.SIZE['sea'], 8)
-            put(p['name'], around(x, y, w, h), 'IM FELL English Italic', bw.SIZE['sea'], SEA_INK, outline_size=0, spacing=8, kind='sea')
+            w, h = text_box(p['name'], 'IM FELL English Italic', SIZE['sea'], 24)   # widely spaced, as on old charts
+            put(p['name'], around(x, y, w, h), 'IM FELL English Italic', SIZE['sea'], SEA_INK, outline_size=0, spacing=24, kind='sea')
     for p in places:
         if p['type'] == 'state':
             x, y = az(p['x'], p['y']); t = p['name'].upper().replace('|', '\n')
-            w, h = text_box(t, 'Cinzel Decorative', bw.SIZE['state'], 12)
-            put(t, around(x, y, w, h), 'Cinzel Decorative', bw.SIZE['state'], STATE_INK, outline_size=7, spacing=12, kind='state')
+            w, h = text_box(t, 'Cinzel Decorative', SIZE['state'], 14)
+            put(t, around(x, y, w, h), 'Cinzel Decorative', SIZE['state'], STATE_INK, outline_size=5, spacing=14, kind='state')
     for p in added:
         n = p['name']
         if n in bw.CONTINENTS or n in bw.SEAS or not (n in sized or n in bw.ARCHIPELAGOS): continue
-        size = round(sized[n] * bw.SIZE['region']) if sized.get(n) else bw.SIZE['archipelago']
-        x, y = az(p['x'], p['y']); w, h = text_box(n, 'Cinzel Decorative', size, 4)
-        put(n, around(x, y, w, h), 'Cinzel Decorative', size, INK, outline_size=6, spacing=4, kind='region')
-    for group in bw.BURGS:
+        size = round(sized[n] * SIZE['region']) if sized.get(n) else SIZE['archipelago']
+        sp = max(3, round(size * 0.12))                             # spaced capitals for regions
+        x, y = az(p['x'], p['y']); w, h = text_box(n, 'Cinzel Decorative', size, sp)
+        put(n, around(x, y, w, h), 'Cinzel Decorative', size, INK, outline_size=4, spacing=sp, kind='region')
+    for group in BURGS:
         for p, (tex, x, y, width) in zip(burgs, markers):
             if p['group'] != group: continue
-            size = bw.BURGS[group][2]; w, h = text_box(p['name'], 'IM FELL DW Pica', size)
+            size = BURGS[group][2]; w, h = text_box(p['name'], 'IM FELL DW Pica', size)
             cands = []
             for k in (0, 1, 2, 3):
                 r, g = width / 2 + k * h, 6
                 cands += [(x, y + r + h / 2 + g), (x + r + w / 2 + g, y), (x - r - w / 2 - g, y), (x, y - r - h / 2 - g),
                           (x + r + w / 2, y + r + h / 2), (x - r - w / 2, y + r + h / 2),
                           (x + r + w / 2, y - r - h / 2), (x - r - w / 2, y - r - h / 2)]
-            put(p['name'], cands, 'IM FELL DW Pica', size, INK, outline_size=5, block=True, kind='burg')
+            put(p['name'], cands, 'IM FELL DW Pica', size, INK, outline_size=3, block=True, kind='burg')
     for p in added:
         n = p['name']
         if n in bw.CONTINENTS or n in bw.SEAS or n in sized or n in bw.ARCHIPELAGOS: continue
-        x, y = az(p['x'], p['y']); w, h = text_box(n, 'IM FELL DW Pica', bw.SIZE['island'])
-        put(n, around(x, y, w, h, (0, 0.8, -0.8, 1.6, -1.6, 2.4, -2.4, 3.2, -3.2, 4.0, -4.0)), 'IM FELL DW Pica', bw.SIZE['island'], INK, block=True, kind='island')
+        x, y = az(p['x'], p['y']); w, h = text_box(n, 'IM FELL DW Pica', SIZE['island'])
+        put(n, around(x, y, w, h, (0, 0.8, -0.8, 1.6, -1.6, 2.4, -2.4, 3.2, -3.2, 4.0, -4.0)), 'IM FELL DW Pica', SIZE['island'], INK, outline_size=3, block=True, kind='island')
     lines = [[az(*q) for q in r['points']] for r in rivers]
     for p in places:
         if p['type'] != 'river': continue
         x, y = az(p['x'], p['y'])
         course = min(lines, key=lambda l: min((qx - x) ** 2 + (qy - y) ** 2 for qx, qy in l))
-        cands = sorted(course, key=lambda q: (q[0] - x) ** 2 + (q[1] - y) ** 2)
-        cands = [(x, y)] + [(qx, qy + d) for qx, qy in cands for d in (-30, 30, -60, 60, -90, 90, -120, 120)]
-        put(p['name'], cands, 'IM FELL English Italic', bw.SIZE['river'], LAVA_INK if p['name'] == 'Emberflow' else SEA_INK,
-            outline_size=4, block=True, kind='river')
+        put(p['name'], river_spots(course, x, y), 'IM FELL English Italic', SIZE['river'],
+            LAVA_INK if p['name'] == 'Emberflow' else SEA_INK, outline_size=3, block=True, kind='river')
     return labels, markers, keep, boxes
 
 def count_overlaps(boxes, shrink=6):
@@ -305,6 +337,7 @@ FRESH = Color(0.59, 0.75, 0.80, 1.0)
 # the sea: Exandria.jpeg's light blue. Wonderdraft ignores water_colors for the sea itself (they feed the
 # tint brush) and draws its water texture, so the colour goes in as a full-map water_tint
 SEA = Color(0.80, 0.875, 0.87, 1.0)
+COAST_GLOW = Color(0.62, 0.78, 0.78, 0.45)   # the light glow Exandria draws along its coasts
 FRESH_EDGE = Color(0.30, 0.43, 0.48, 1.0)
 
 BROAD, CONIFER, JUNGLE = range(3)
@@ -543,6 +576,109 @@ class Roads:
                 r_[0] = 'road'; self.stats['promoted'] += 1
         return runs
 
+class SeaRoutes:
+    """Sea routes kept on the water: Azgaar's routes re-found over the sea between their own stops (they
+    were drawn against Azgaar's coast, not this one), then every island of some size and every port the
+    network misses is joined to it, nearest first, so island chains (Eldmere) link up one by one.
+    Paths run on a SG-px grid and keep a little off the shore."""
+    SG = 6
+    def __init__(self, landA):
+        k = self.SG // R
+        land = np.asarray(Image.fromarray(landA.astype(np.uint8) * 255).resize((AW // k, AH // k), Image.BOX)) > 0
+        self.land = land; self.h, self.w = land.shape
+        off = nd.distance_transform_edt(~land)                      # cells from the shore
+        self.cost = np.where(land, np.inf, 1.0 + 6.0 * np.clip(3.0 - off, 0, 3))
+        _, (self.iy, self.ix) = nd.distance_transform_edt(land, return_indices=True)
+        self.stats = dict(rerouted=0, islands=0, ports=0)
+
+    def cell(self, x, y):
+        cy, cx = min(self.h - 1, max(0, int(y // self.SG))), min(self.w - 1, max(0, int(x // self.SG)))
+        return int(self.iy[cy, cx]), int(self.ix[cy, cx])           # nearest sea cell
+
+    def route(self, a, b, margin=80):
+        from skimage.graph import MCP_Geometric
+        (ay, ax), (by, bx) = self.cell(*a), self.cell(*b)
+        y0, y1 = max(0, min(ay, by) - margin), min(self.h, max(ay, by) + margin)
+        x0, x1 = max(0, min(ax, bx) - margin), min(self.w, max(ax, bx) + margin)
+        mcp = MCP_Geometric(self.cost[y0:y1, x0:x1])
+        costs, _ = mcp.find_costs([(ay - y0, ax - x0)], [(by - y0, bx - x0)])
+        if not np.isfinite(costs[by - y0, bx - x0]): return None
+        return [((xx + x0) * self.SG + self.SG / 2, (yy + y0) * self.SG + self.SG / 2) for yy, xx in mcp.traceback((by - y0, bx - x0))]
+
+    def refit(self, pts):
+        """an Azgaar route through stops ~250 px apart along it, each leg found over water"""
+        d = np.r_[0, np.cumsum(np.hypot(*np.diff(np.array(pts), axis=0).T))]
+        n = max(1, int(d[-1] // 250))
+        stops = [tuple(np.interp(t, d, np.array(pts)[:, i]) for i in (0, 1)) for t in np.linspace(0, d[-1], n + 1)]
+        out = [pts[0]]
+        for a, b in zip(stops, stops[1:]):
+            leg = self.route(a, b)
+            out += (leg[1:] if leg else [b])
+        out.append(pts[-1])
+        return rdp(out, 3.0)
+
+    def build(self, sea, towns, landA):
+        runs = [self.refit(pts) for pts in sea]; self.stats['rerouted'] = len(runs)
+        net = lambda: np.vstack([np.array(r) for r in runs])
+        # islands (land pieces >= 2000 px^2 at the analysis grid) and ports the network does not reach
+        lab, n = nd.label(landA); sz = np.bincount(lab.ravel())
+        shore = landA & ~nd.binary_erosion(landA)
+        sl = lab[shore]; ys, xs = np.nonzero(shore)
+        order = np.argsort(sl); sl, ys, xs = sl[order], ys[order], xs[order]
+        cut = np.searchsorted(sl, np.arange(1, n + 2))
+        targets = []
+        for i in range(1, n + 1):
+            if sz[i] * R * R < 2000: continue
+            a, b = cut[i - 1], cut[i]
+            targets.append(('island', np.c_[xs[a:b] * R + R / 2, ys[a:b] * R + R / 2][::2]))
+        coast = nd.distance_transform_edt(landA) * R
+        for x, y, g in towns:
+            if coast[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)] < 40: targets.append(('port', np.array([[x, y]])))
+        while True:
+            from scipy.spatial import cKDTree
+            P = net(); tree = cKDTree(P); best = None
+            keep = []
+            for ti, t in enumerate(targets):
+                kind, Q = t
+                dd, jj = tree.query(Q); j = int(dd.argmin()); dist = dd[j]
+                if dist <= (120 if kind == 'island' else 80): continue   # reached: drop it
+                keep.append(t)
+                if best is None or dist < best[0]: best = (dist, t, tuple(Q[j]), tuple(P[jj[j]]))
+            targets = keep
+            if best is None: break
+            dist, t, a, b = best; targets = [q for q in targets if q is not t]
+            if dist > 6000: continue
+            leg = self.route(a, b, margin=120)
+            if not leg: continue
+            runs.append(rdp([a] + leg + [b], 3.0)); self.stats['islands' if t[0] == 'island' else 'ports'] += 1
+        return [self.smooth(r) for r in runs]
+
+    def wet(self, pts, skip=40):
+        """True when no point (away from the ends, which sit at ports) is on land"""
+        P = np.array(pts); d = np.r_[0, np.cumsum(np.hypot(*np.diff(P, axis=0).T))]
+        t = np.arange(skip, d[-1] - skip, 4)
+        if not len(t): return True
+        xs, ys = np.interp(t, d, P[:, 0]), np.interp(t, d, P[:, 1])
+        return not self.land[np.clip((ys // self.SG).astype(int), 0, self.h - 1), np.clip((xs // self.SG).astype(int), 0, self.w - 1)].any()
+
+    def smooth(self, pts):
+        """Chaikin corner cutting turns the grid's stair-steps into curves; fewer rounds where a curve
+        would cut a headland"""
+        if len(pts) < 3: return pts
+        for rounds in (4, 3, 2, 1):
+            q = [tuple(pts[0])]
+            cur = [tuple(p) for p in pts]
+            for _ in range(rounds):
+                nxt = [cur[0]]
+                for (ax, ay), (bx, by) in zip(cur, cur[1:]):
+                    nxt += [(0.75 * ax + 0.25 * bx, 0.75 * ay + 0.25 * by), (0.25 * ax + 0.75 * bx, 0.25 * ay + 0.75 * by)]
+                nxt.append(cur[-1]); cur = nxt
+            cur = rdp(cur, 0.8)
+            if self.wet(cur):
+                self.stats['smoothed'] = self.stats.get('smoothed', 0) + 1
+                return cur
+        return pts
+
 # ---------- build ----------
 def build():
     land, lakes = bw.trace_land()                                   # 6480 x 4320
@@ -604,7 +740,7 @@ def build():
     theme.update({
         'water_colors': [SEA, Color(0.72, 0.82, 0.83, 1.0), Color(0.64, 0.77, 0.79, 1.0), Color(0.56, 0.71, 0.74, 1.0)],
         'water_hue': 0.0, 'water_saturation': 0.0, 'water_value': 0.0,
-        'coastline_color': bw.COAST_TEAL, 'coastal_fx_distance': 40.0,
+        'coastline_color': COAST_GLOW, 'coastal_fx_distance': 18.0,   # Exandria: a thin pale glow, not a band
         'landmass_outline_color': Color(0.16, 0.13, 0.10, 1.0), 'landmass_outline_blend': 1.0,
         'freshwater_color': FRESH, 'freshwater_outline_color': FRESH_EDGE,
         'vignette_strength': 0.35,
@@ -645,9 +781,12 @@ def build():
         pts = [az(p[0], p[1]) for p in rdp([tuple(p[:2]) for p in r['points']], 0.3)]
         if r['group'] == 'searoutes': sea.append(pts)
         else: land_routes.append(('road' if r['group'] == 'roads' else 'trail', pts))
+    seaways = SeaRoutes(landA)
+    sea = seaways.build(sea, roads.towns, landA)
     roads.sea = np.vstack([np.array(q) for q in sea]) if sea else np.zeros((0, 2))
     for pts in sea:
-        paths.append(path(pts, SEAWAY, 'path_dash_dot', 6, 0.25, 935)); np_['searoute'] += 1
+        paths.append(path(pts, SEAWAY, 'path_dash_dot', 6, 0.15, 935)); np_['searoute'] += 1
+    print('sea routes', seaways.stats)
     for key, run in roads.fit(land_routes):
         st, col, wd = ('path_solid', ROAD, 7) if key == 'road' else ('path_dash', TRAIL, 5)
         paths.append(path(run, col, st, wd, 0.25, 935)); np_[key] += 1
