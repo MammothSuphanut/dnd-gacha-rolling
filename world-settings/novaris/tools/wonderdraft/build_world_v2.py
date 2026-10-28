@@ -4,8 +4,8 @@ What v2 adds over v1 (build_world.py, kept as is):
   relief      mountains, hills and forests placed where Exandria.jpeg paints them (colour classes of the
               poster, moved into the Novaris layout like the coastline) instead of the Azgaar heightmap;
               ground colours follow the same classes (snow, desert, forest, ranges), Novaris biomes for the rest
-  roads       Azgaar routes (saves/novaris-v3.map): roads solid, trails dashed, sea routes dash-dot; led
-              around lakes, loose ends joined, every town reached, city links promoted to main roads
+  roads       built like Exandria's: a spanning tree over each landmass's towns plus city-to-city shortcuts,
+              routed around lakes, shore and ranges, merged into one net; Azgaar's sea routes kept (refitted)
   borders     Azgaar state borders from the same save, dash-dot-dot in the state-name red
   islands     every named island whose label has no traced land under it gets its Azgaar land shape
   lakes       traced from Exandria.jpeg's freshwater colour (v1 used holes in the traced coastline)
@@ -33,7 +33,7 @@ import wdmap
 import build_world as bw
 from build_world import W, H, R, AW, AH, S, az, rng, soft, Layout, INK, PAPER, SEA_INK, STATE_INK, LAVA
 from wdmap import Color
-from wdcommon import (TEMPLATE, sprite, set_files, builtin_theme, symbol as _symbol, label as _label, path,
+from wdcommon import (TEMPLATE, sprite, set_files, builtin_theme, symbol as _symbol, label as _label, path as _path,
                       text_box, assemble, preview)
 
 SAVE = os.path.join(bw.AZ, 'saves', 'novaris-v3.map')
@@ -41,6 +41,10 @@ OUT = r'D:/Wonderdraft Map/novaris-world-v2.wonderdraft_map'
 V1 = os.path.normcase(os.path.abspath(r'D:/Wonderdraft Map/novaris-world-v1.wonderdraft_map'))
 sys.setrecursionlimit(10000)
 CS = (3240, 2160)               # terrain classes are read from Exandria.jpeg at this size (5 map px per px)
+
+def path(pts, color, style, width, roughness=0.08, seed=0):
+    """every path on this map keeps Wonderdraft's roughness at 0.1 or less (user's rule: more wobble looks sloppy)"""
+    return _path(pts, color, style, width, min(0.1, roughness), seed)
 
 # ---------- Exandria terrain classes ----------
 PLAIN, RANGE, FOREST, SNOW, DUSK, DESERT, ICE_RANGE, ISLE_GRASS = range(8)  # ISLE_GRASS: Eldmere's open ground  # DUSK = the purple Savalirwood / Greying Wildlands
@@ -182,9 +186,7 @@ def add_missing_islands(land, islands):
         ys, xs = np.nonzero(lab)
         j = np.argmin((ys + oy - y) ** 2 + (xs + ox - x) ** 2)
         piece = lab == lab[ys[j], xs[j]]
-        if piece.sum() < 4:  # a single heightmap cell: draw a small round islet instead
-            piece = np.zeros_like(win); yy, xx = np.ogrid[:win.shape[0], :win.shape[1]]
-            piece[(yy - (y - oy)) ** 2 + (xx - (x - ox)) ** 2 <= (1.2 * k) ** 2] = True
+        if piece.sum() < 4: continue  # a single heightmap cell: no islet (it read as a stray town dot)
         land[oy:oy + win.shape[0], ox:ox + win.shape[1]] |= piece
         added.append(p['name'])
     return land, added
@@ -202,7 +204,7 @@ def salsvault_az():
 # ---------- labels ----------
 # Sizes for a map that is read zoomed in (at play time) - v1's were sized to read the whole world at once
 # and filled it with names. Markers shrink with their labels.
-SIZE = {'continent': 280, 'sea': 110, 'state': 120, 'region': 0.55, 'archipelago': 28, 'island': 20, 'river': 22}
+SIZE = {'continent': 280, 'sea': 110, 'state': 120, 'region': 0.55, 'archipelago': 28, 'island': 20, 'river': 15}   # rivers below villages (17)
 # at whole-map distance only countries (states) and continents should read; regions are for zooming in
 BURGS = {  # group -> (marker, width px, label size)
     'capital': ('symbols/custom_colors/s1_capital', 40, 34),
@@ -308,7 +310,7 @@ def layout_labels(places, sized, rivers):
         x, y = az(p['x'], p['y'])
         course = min(lines, key=lambda l: min((qx - x) ** 2 + (qy - y) ** 2 for qx, qy in l))
         put(p['name'], river_spots(course, x, y), 'IM FELL English Italic', SIZE['river'],
-            LAVA_INK if p['name'] == 'Emberflow' else SEA_INK, outline_size=3, block=True, kind='river')
+            LAVA_INK if p['name'] == 'Emberflow' else RIVER_INK, outline_size=3, block=True, kind='river')
     return labels, markers, keep, boxes
 
 def count_overlaps(boxes, shrink=6):
@@ -329,7 +331,8 @@ CLASS_RGB = {RANGE: (150, 134, 118), FOREST: (92, 108, 56), SNOW: (234, 233, 228
              DESERT: (214, 192, 145), ICE_RANGE: (234, 233, 228), ISLE_GRASS: (150, 168, 102)}
 ROAD = Color(0.45, 0.26, 0.14, 0.9)
 TRAIL = Color(0.50, 0.33, 0.20, 0.75)
-SEAWAY = Color(0.22, 0.42, 0.44, 0.7)
+SEAWAY = Color(0.36, 0.60, 0.68, 0.75)
+RIVER_INK = Color(0.18, 0.42, 0.62, 1.0)   # river names: clear blue, apart from the brown place names   # light sea blue, softer than the land roads (user's pick)
 BORDER = Color(0.55, 0.16, 0.10, 0.75)
 # rivers / lakes: Exandria's pale river blue. Alpha 1: Wonderdraft lets freshwater show the sea layer
 # through by (1 - alpha), and the sea here is parchment, which turned v1's rivers grey
@@ -457,7 +460,7 @@ def snap_towns(places, land, lakes):
     """town dots that fall in the sea or a lake (Azgaar ports sit just past the traced coast, lakes now
     follow Exandria) move to the nearest dry ground, a few px in from the shore. -> moved names"""
     k = land.shape[1] / 1800
-    dry = nd.binary_erosion(land & ~lakes, iterations=3)
+    dry = nd.binary_erosion(land & ~lakes, iterations=7)          # ~18 map px in: clear of the roads' shore margin
     _, (iy, ix) = nd.distance_transform_edt(~dry, return_indices=True)
     moved = []
     for p in places:
@@ -474,16 +477,19 @@ class Roads:
     short trail, and trails that serve a capital or city drawn as main roads. Points are map px; paths
     are found on the analysis grid (R px) over dry land."""
     def __init__(self, landA, lakesA, towns):
-        self.dry = landA & ~lakesA
         self.landA, self.lakesA = landA, lakesA
-        self.cost = np.where(self.dry, 1.0, 400.0)
         self.coast = nd.distance_transform_edt(landA) * R
+        # roads keep off the shore too: a road drawn 7 px wide (plus Wonderdraft's wobble) along the
+        # last few px of land spills onto the sea
+        self.wetA = lakesA | (self.coast < 14) | (nd.distance_transform_edt(~lakesA) * R < 8)
+        self.dry = landA & ~self.wetA
+        self.cost = np.where(self.dry, 1.0, np.where(landA & ~lakesA, 30.0, 5000.0))   # shore margin dear, water dearer
         self.towns = towns                                          # [(x, y, group)]
         self.T = np.array([(x, y) for x, y, g in towns])
         self.stats = dict(lake_detours=0, stubs_dropped=0, ends_joined=0, towns_linked=0, promoted=0)
 
     def wet(self, x, y):
-        return self.lakesA[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)]
+        return self.wetA[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)]
 
     def route(self, a, b):
         """cheapest dry path a -> b (map px) on the analysis grid, or None"""
@@ -533,9 +539,19 @@ class Roads:
         """routes: [(key, [map px points])] land routes -> [(key, run)]"""
         runs = []
         for key, pts in routes:
-            for run in on_land_runs(pts, self.landA, 2):
-                run = self.around_lakes(run)
-                if len(run) > 1: runs.append([key, run])
+            pieces = [r for r in (self.around_lakes(run) for run in on_land_runs(pts, self.landA, 2)) if len(r) > 1]
+            # pieces of one route split by a bay, lake or the shore margin: rejoin them over land when a dry
+            # way round is not much longer than the gap, so a road never just stops
+            merged = pieces[:1]
+            for nxt in pieces[1:]:
+                a, b = merged[-1][-1], nxt[0]
+                gap = float(np.hypot(b[0] - a[0], b[1] - a[1]))
+                link = self.route(a, b) if gap < 900 else None
+                if link and self.length(link) < 3 * gap + 150 and not any(self.wet(x, y) and not self.landA[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)] or self.lakesA[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)] for x, y in self.dense(link)):
+                    merged[-1] = merged[-1] + link[1:-1] + nxt; self.stats['gaps_joined'] = self.stats.get('gaps_joined', 0) + 1
+                else:
+                    merged.append(nxt)
+            runs += [[key, r] for r in merged]
         keep = []
         for key, run in runs:                                       # stray stubs left by the coast cut
             ends = [self.near_town(*run[0])[1], self.near_town(*run[-1])[1]]
@@ -617,8 +633,49 @@ class SeaRoutes:
         out.append(pts[-1])
         return rdp(out, 3.0)
 
+    def port_net(self, towns, landA):
+        """Shipping lanes the way Exandria draws them: between the ports (coastal towns) of different
+        landmasses. Every landmass with a port is tied in by its shortest lane (a spanning tree over
+        landmasses, by sea distance), then each pair of landmasses may get one more lane between major
+        ports when that saves a long way round. Lanes follow the water, off the shore."""
+        from scipy.spatial import Delaunay
+        lab, _ = nd.label(landA)
+        coast = nd.distance_transform_edt(landA) * R
+        ports = [(x, y, g) for x, y, g in towns if coast[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)] < 45]
+        P = np.array([(x, y) for x, y, g in ports]); major = [g in ('capital', 'city') for x, y, g in ports]
+        isl = [int(lab[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)]) for x, y in P]
+        tri = Delaunay(P)
+        pairs = {tuple(sorted((a, b))) for t in tri.simplices for a, b in ((t[0], t[1]), (t[1], t[2]), (t[0], t[2]))}
+        cand = []
+        for a, b in pairs:
+            if isl[a] == isl[b]: continue
+            d = float(np.hypot(*(P[a] - P[b])))
+            if d > 6000: continue
+            leg = self.route(tuple(P[a]), tuple(P[b]), margin=int(max(60, d / self.SG * 0.4)))
+            if not leg: continue
+            L_ = sum(np.hypot(q[0] - o[0], q[1] - o[1]) for o, q in zip(leg, leg[1:]))
+            cand.append((L_, a, b, leg))
+        cand.sort(key=lambda c: c[0])
+        parent = {}
+        def find(u):
+            while parent.get(u, u) != u: u = parent[u]
+            return u
+        runs, used = [], {}
+        for L_, a, b, leg in cand:                                  # spanning tree over landmasses
+            ra, rb = find(isl[a]), find(isl[b])
+            if ra == rb: continue
+            parent[ra] = rb; used[tuple(sorted((isl[a], isl[b])))] = L_
+            runs.append([tuple(P[a])] + leg + [tuple(P[b])])
+        for L_, a, b, leg in cand:                                  # a second lane between major ports
+            k_ = tuple(sorted((isl[a], isl[b])))
+            if not (major[a] and major[b]) or k_ in used and used[k_] < 0: continue
+            if k_ in used and L_ < 1.6 * used[k_]: continue
+            used[k_] = -1; runs.append([tuple(P[a])] + leg + [tuple(P[b])])
+        self.stats['lanes'] = len(runs); self.stats['ports'] = len(ports)
+        return [rdp(r, 3.0) for r in runs]
+
     def build(self, sea, towns, landA):
-        runs = [self.refit(pts) for pts in sea]; self.stats['rerouted'] = len(runs)
+        runs = self.port_net(towns, landA)                          # Azgaar's routes (sea) are not used any more
         net = lambda: np.vstack([np.array(r) for r in runs])
         # islands (land pieces >= 2000 px^2 at the analysis grid) and ports the network does not reach
         lab, n = nd.label(landA); sz = np.bincount(lab.ravel())
@@ -628,7 +685,7 @@ class SeaRoutes:
         cut = np.searchsorted(sl, np.arange(1, n + 2))
         targets = []
         for i in range(1, n + 1):
-            if sz[i] * R * R < 2000: continue
+            if True: continue   # islands without a port get no lane (user's call); kept: ports only
             a, b = cut[i - 1], cut[i]
             targets.append(('island', np.c_[xs[a:b] * R + R / 2, ys[a:b] * R + R / 2][::2]))
         coast = nd.distance_transform_edt(landA) * R
@@ -650,7 +707,7 @@ class SeaRoutes:
             if dist > 6000: continue
             leg = self.route(a, b, margin=120)
             if not leg: continue
-            runs.append(rdp([a] + leg + [b], 3.0)); self.stats['islands' if t[0] == 'island' else 'ports'] += 1
+            runs.append(rdp([a] + leg + [b], 3.0)); self.stats['islands' if t[0] == 'island' else 'ports_linked'] = self.stats.get('islands' if t[0] == 'island' else 'ports_linked', 0) + 1
         return [self.smooth(r) for r in runs]
 
     def wet(self, pts, skip=40):
@@ -679,10 +736,194 @@ class SeaRoutes:
                 return cur
         return pts
 
+DROP = {'Croaker Cave'}   # places left off this map (user's call)
+CUT_SEA = [(150, 715, 262, 822), (85, 840, 122, 905)]   # Azgaar-px boxes: lanes crossing these are dropped (user's call)
+NO_SEA = {'Syngorn', 'Ko Lom', 'Ko Hoi', 'Jeomchang-san'}   # towns with no sea lane (user's call)
+
+def road_network(runs, towns, dry, merge=6, router=None):
+    """Azgaar draws one route per pair of towns, so two routes to the same town run side by side and
+    meet it as a fan of lines. Here every road is painted on the analysis grid, thickened by `merge`
+    cells (lines closer than ~2*merge*R px become one band), kept on dry land, and thinned back to a
+    single centreline; that skeleton is cut into one line per stretch between junctions. A stretch is a
+    main road where most of it came from main roads. Towns the centreline passes close by get a short
+    spur. runs: [(key, pts)], towns: [(x, y, group)] -> [(key, pts)]"""
+    from skimage.morphology import skeletonize
+    def paint(sel, width):
+        im = Image.new('L', (AW, AH), 0); d = ImageDraw.Draw(im)
+        for key, pts in runs:
+            if sel(key): d.line([(x / R, y / R) for x, y in pts], fill=255, width=width)
+        return np.asarray(im) > 0
+    allr = paint(lambda k: True, 2)
+    main = nd.binary_dilation(paint(lambda k: k == 'road', 2), iterations=merge + 2)
+    band = nd.binary_dilation(allr, iterations=merge) & dry
+    band = nd.binary_closing(band, iterations=2) & dry
+    sk = skeletonize(band)
+    # thinning leaves short whiskers on wide bands: drop end branches shorter than 2*merge cells
+    nb = lambda m: nd.convolve(m.astype(np.uint8), np.ones((3, 3), np.uint8), mode='constant') - m
+    T = np.array([(x / R, y / R) for x, y, g in towns]) if towns else np.zeros((0, 2))
+    near_town = np.zeros_like(sk)
+    for x, y in T.astype(int):
+        near_town[max(0, y - 4):y + 5, max(0, x - 4):x + 5] = True
+    for _ in range(2 * merge):
+        deg = nb(sk) * sk
+        tip = sk & (deg == 1) & ~near_town
+        if not tip.any(): break
+        sk &= ~tip
+    # trace edges between nodes (degree != 2)
+    deg = nb(sk) * sk
+    H_, W_ = sk.shape
+    node = sk & (deg != 2)
+    seen = np.zeros_like(sk)
+    def nbrs(y, x):
+        for dy in (-1, 0, 1):
+            for dx in (-1, 0, 1):
+                if (dy or dx) and 0 <= y + dy < H_ and 0 <= x + dx < W_ and sk[y + dy, x + dx]:
+                    yield y + dy, x + dx
+    edges = []
+    for y, x in zip(*np.nonzero(node)):
+        for ny, nx in nbrs(y, x):
+            if seen[ny, nx] and not node[ny, nx]: continue
+            path_ = [(y, x), (ny, nx)]; py, px = y, x; cy, cx = ny, nx
+            while not node[cy, cx]:
+                seen[cy, cx] = True
+                nxt = [q for q in nbrs(cy, cx) if q != (py, px) and not (seen[q] and not node[q])]
+                if not nxt: break
+                py, px = cy, cx; cy, cx = nxt[0]; path_.append((cy, cx))
+            if len(path_) >= 2: edges.append(path_)
+    seen_e = set(); out = []
+    for e in edges:
+        k_ = (min(e[0], e[-1]), max(e[0], e[-1]), len(e))
+        if k_ in seen_e: continue
+        seen_e.add(k_)
+        ys = np.array([q[0] for q in e]); xs = np.array([q[1] for q in e])
+        key = 'road' if main[ys, xs].mean() > 0.5 else 'trail'
+        pts = [((x + 0.5) * R, (y + 0.5) * R) for y, x in e]
+        if len(pts) >= 2: out.append([key, pts])
+    # junction pixels come in clumps: treat each clump as one node, drop clump-internal scraps, and chain
+    # stretches through nodes where only two meet, so each road is one line between real junctions
+    clump, _ = nd.label(nd.binary_dilation(node, iterations=1))
+    cid = lambda q: int(clump[int(q[1] // R), int(q[0] // R)])
+    out = [e for e in out if not (cid(e[1][0]) and cid(e[1][0]) == cid(e[1][-1]) and len(e[1]) < 8)]
+    for _ in range(4):
+        inc = {}
+        for i, (k_, pts_) in enumerate(out):
+            for end in (0, -1):
+                c_ = cid(pts_[end])
+                if c_: inc.setdefault((c_, k_), []).append((i, end))
+        used, merged = set(), []
+        for (c_, k_), lst in inc.items():
+            if len(lst) != 2: continue
+            (i, ei), (j, ej) = lst
+            if i == j or i in used or j in used: continue
+            a = out[i][1] if ei == -1 else out[i][1][::-1]
+            b = out[j][1] if ej == 0 else out[j][1][::-1]
+            merged.append([k_, a + b[1:]]); used |= {i, j}
+        if not merged: break
+        out = [e for i, e in enumerate(out) if i not in used] + merged
+    # whiskers and hooks the thinning leaves where a town sat beside the band: stretches with a loose end
+    # (no other stretch, no town) go when short, and fragments loose at both ends go unless long
+    T_ = np.array([(x, y) for x, y, g in towns])
+    length = lambda pts_: sum(np.hypot(b[0] - a[0], b[1] - a[1]) for a, b in zip(pts_, pts_[1:]))
+    for _ in range(5):
+        ends = np.vstack([np.array([q[1][0], q[1][-1]]) for q in out])
+        keep = []
+        for i, (k_, pts_) in enumerate(out):
+            others = np.delete(ends, [2 * i, 2 * i + 1], axis=0)
+            loose = sum(np.hypot(*(others - e).T).min() > 15 and np.hypot(*(T_ - e).T).min() > 30 for e in (pts_[0], pts_[-1]))
+            L_ = length(pts_)
+            if (loose == 1 and L_ < 200) or (loose == 2 and L_ < 400) or L_ < 12: continue
+            keep.append([k_, pts_])
+        if len(keep) == len(out): break
+        out = keep
+    # every town on a road: towns the merged centreline passes by get a short spur over dry land
+    if out:
+        P = np.vstack([np.array(q[1]) for q in out])
+        for x, y, g in towns:
+            d = np.hypot(P[:, 0] - x, P[:, 1] - y); j = int(d.argmin())
+            if d[j] <= 8 or d[j] > 240: continue
+            link = router((x, y), tuple(P[j])) if router else None
+            if not link or length(link) > 2.5 * d[j] + 40: link = [(x, y), tuple(P[j])] if d[j] < 120 else None
+            if link: out.append(['road' if g in ('capital', 'city') else 'trail', [(x, y)] + list(link[1:-1]) + [tuple(P[j])]])
+    # smooth each stretch (grid stair-steps), keep its ends fixed so junctions still meet
+    def smooth(pts):
+        pts = rdp(pts, 1.5)
+        for _ in range(2):
+            if len(pts) < 3: break
+            nxt = [pts[0]]
+            for (ax, ay), (bx, by) in zip(pts, pts[1:]):
+                nxt += [(0.75 * ax + 0.25 * bx, 0.75 * ay + 0.25 * by), (0.25 * ax + 0.75 * bx, 0.25 * ay + 0.75 * by)]
+            nxt.append(pts[-1]); pts = nxt
+        return pts
+    return [(k, smooth(p_)) for k, p_ in out]
+
+def exandria_style_roads(roads, rangeA, forestA):
+    """A road net drawn the way Exandria's are, instead of Azgaar's one-route-per-town-pair tangle:
+    on each landmass the towns are joined by a minimum spanning tree over their Delaunay neighbours
+    (every town reachable, no parallel duplicates), plus a few extra links between capitals and cities
+    where the tree makes a long detour. Each link is routed over dry land, around lakes and the shore,
+    through passes rather than over ranges. Links between capitals/cities (and any link in the tree
+    with one of them at an end, if long) are main roads; the rest are trails.
+    -> [(key, pts)] for road_network() to merge and smooth"""
+    from scipy.spatial import Delaunay
+    from scipy.sparse import coo_matrix
+    from scipy.sparse.csgraph import minimum_spanning_tree, shortest_path
+    from skimage.graph import MCP_Geometric
+    cost = roads.cost * np.where(rangeA, 7.0, 1.0) * np.where(forestA, 1.4, 1.0)
+    ELD = (1280 * S, 960 * S, 1800 * S, 1200 * S)
+    towns = [t for t in roads.towns if not in_eis(t[0], t[1]) and not (ELD[0] <= t[0] < ELD[2] and ELD[1] <= t[1] < ELD[3])]
+    T = np.array([(x, y) for x, y, g in towns]); G = [g for x, y, g in towns]   # Eiselcross / Eldmere: no roads (as Exandria)
+    major = np.array([g in ('capital', 'city') for g in G])
+    lab, _ = nd.label(roads.landA)
+    isl = np.array([lab[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)] for x, y in T])
+    edges = set()
+    for k in np.unique(isl):
+        idx = np.nonzero(isl == k)[0]
+        if k == 0 or len(idx) < 2: continue
+        P = T[idx]
+        if len(idx) == 2: pairs = [(0, 1)]
+        else:
+            try:
+                tri = Delaunay(P)
+                pairs = {tuple(sorted((a, b))) for t in tri.simplices for a, b in ((t[0], t[1]), (t[1], t[2]), (t[0], t[2]))}
+            except Exception:
+                pairs = [(a, b) for a in range(len(idx)) for b in range(a + 1, len(idx))]
+        pairs = [(a, b) for a, b in pairs if np.hypot(*(P[a] - P[b])) < 2500]
+        if not pairs: continue
+        w = np.array([np.hypot(*(P[a] - P[b])) for a, b in pairs])
+        n = len(idx)
+        Wm = coo_matrix((w, ([a for a, b in pairs], [b for a, b in pairs])), shape=(n, n)).tocsr()
+        mst = minimum_spanning_tree(Wm).tocoo()
+        tree = set(zip(mst.row.tolist(), mst.col.tolist()))
+        edges |= {(idx[a], idx[b], True) for a, b in tree}
+        # shortcuts between major towns where the tree wanders
+        D = shortest_path(minimum_spanning_tree(Wm) + minimum_spanning_tree(Wm).T, directed=False)
+        for (a, b), ww in zip(pairs, w):
+            if (a, b) in tree or (b, a) in tree: continue
+            if (major[idx[a]] and major[idx[b]] and D[a, b] > 1.7 * ww) or (ww < 900 and D[a, b] > 2.6 * ww):
+                edges.add((idx[a], idx[b], False))          # Exandria's nets have loops and crossroads, not just a tree
+    runs = []
+    for a, b, in_tree in edges:
+        (ax, ay), (bx, by) = T[a], T[b]
+        m = 40
+        x0, x1 = int(max(0, min(ax, bx) // R - m)), int(min(AW, max(ax, bx) // R + m))
+        y0, y1 = int(max(0, min(ay, by) // R - m)), int(min(AH, max(ay, by) // R + m))
+        c = cost[y0:y1, x0:x1]
+        st = (min(c.shape[0] - 1, int(ay // R) - y0), min(c.shape[1] - 1, int(ax // R) - x0))
+        en = (min(c.shape[0] - 1, int(by // R) - y0), min(c.shape[1] - 1, int(bx // R) - x0))
+        mcp = MCP_Geometric(c); mcp.find_costs([st], [en])
+        pts = [((xx + x0) * R + R / 2, (yy + y0) * R + R / 2) for yy, xx in mcp.traceback(en)]
+        if len(pts) < 2: continue
+        L_ = float(np.hypot(bx - ax, by - ay))
+        key = 'road' if (major[a] and major[b]) or (in_tree and (major[a] or major[b]) and L_ > 500) else 'trail'
+        runs.append([key, [tuple(T[a])] + rdp(pts, 2.5)[1:-1] + [tuple(T[b])]])
+    roads.stats['links'] = len(runs)
+    return runs
+
 # ---------- build ----------
 def build():
     land, lakes = bw.trace_land()                                   # 6480 x 4320
-    places = json.load(open(os.path.join(bw.AZ, 'places-v3.json'), encoding='utf8'))['places']
+    places = [p for p in json.load(open(os.path.join(bw.AZ, 'places-v3.json'), encoding='utf8'))['places']
+              if p['name'] not in DROP]
     sized = {l['text']: l.get('size') for l in json.load(open(os.path.join(bw.AZ, 'heightmaps', 'novaris-labels.json'), encoding='utf8'))}
     islands = [p for p in places if p['type'] == 'added' and p['name'] not in bw.CONTINENTS | bw.SEAS | bw.ARCHIPELAGOS
                and p['name'] not in sized]
@@ -696,6 +937,8 @@ def build():
 
     old = nd.label(lakes)[1]
     land = nd.binary_fill_holes(land)   # sea pockets inside land are the traced lakes' rims: land now, lakes come from Exandria
+    lab_, n_ = nd.label(land); sz_ = np.bincount(lab_.ravel())
+    land &= (sz_ >= 12)[lab_]                                       # specks off the trace read as stray town dots
     alpha = soft(land, 1.0)
     lakes = exandria_lakes(land)
     print('lakes: %d traced from Exandria (was %d coastline holes)' % (nd.label(lakes)[1], old))
@@ -768,13 +1011,15 @@ def build():
     onl = lambda q: landA[min(AH - 1, int(q[1]) // R), min(AW - 1, int(q[0]) // R)]
     while len(lv) > 2 and not onl(lv[1]): lv.pop(0)
     while len(lv) > 2 and not onl(lv[-2]): lv.pop()
-    paths = [path(lv, LAVA, 'path_solid_outlined', 14, 0.2, 935)]
+    paths = [path(lv, LAVA, 'path_solid_outlined', 14, 0.08, 935)]
     routes, borders = routes_and_borders(_save_lines())
     np_ = {'border': 0, 'road': 0, 'trail': 0, 'searoute': 0}
-    for pts in borders:
-        for run in on_land_runs([az(x, y) for x, y in rdp(pts, 0.4)], landA, 2):
-            paths.append(path(run, BORDER, 'path_dash_dot_dot', 12, 0.15, 935)); np_['border'] += 1
     lakesA = np.asarray(Image.fromarray(lakes.astype(np.uint8) * 255).resize((AW, AH), Image.BILINEAR)) > 127
+    dry_b = landA & ~nd.binary_dilation(lakesA, iterations=2)          # borders stop at lake shores, no stubs in the water
+    for pts in borders:
+        for run in on_land_runs([az(x, y) for x, y in rdp(pts, 0.4)], dry_b, 2):
+            if Roads.length(run) < 60: continue
+            paths.append(path(run, BORDER, 'path_dash_dot_dot', 6, 0.08, 935)); np_['border'] += 1   # thin: must not read as a road
     roads = Roads(landA, lakesA, [(*az(p['x'], p['y']), p['group']) for p in places if p['type'] == 'burg'])
     land_routes, sea = [], []
     for r in routes:
@@ -782,14 +1027,23 @@ def build():
         if r['group'] == 'searoutes': sea.append(pts)
         else: land_routes.append(('road' if r['group'] == 'roads' else 'trail', pts))
     seaways = SeaRoutes(landA)
-    sea = seaways.build(sea, roads.towns, landA)
+    ELDB = (1280 * S, 960 * S, 1800 * S, 1200 * S)
+    sea_towns = [(*az(p['x'], p['y']), p['group']) for p in places if p['type'] == 'burg' and p['name'] not in NO_SEA
+                 and not (ELDB[0] <= p['x'] * S < ELDB[2] and ELDB[1] <= p['y'] * S < ELDB[3])]
+    sea = seaways.build(sea, sea_towns, landA)
+    inbox = lambda q: any(x0 * S <= q[0] < x1 * S and y0 * S <= q[1] < y1 * S for x0, y0, x1, y1 in CUT_SEA)
+    sea = [r for r in sea if sum(map(inbox, Roads.dense(r, 20))) < 3]
     roads.sea = np.vstack([np.array(q) for q in sea]) if sea else np.zeros((0, 2))
     for pts in sea:
-        paths.append(path(pts, SEAWAY, 'path_dash_dot', 6, 0.15, 935)); np_['searoute'] += 1
+        paths.append(path(pts, SEAWAY, 'path_dash_dot', 6, 0.08, 935)); np_['searoute'] += 1
     print('sea routes', seaways.stats)
-    for key, run in roads.fit(land_routes):
-        st, col, wd = ('path_solid', ROAD, 7) if key == 'road' else ('path_dash', TRAIL, 5)
-        paths.append(path(run, col, st, wd, 0.25, 935)); np_[key] += 1
+    # Azgaar's land routes (land_routes) are no longer drawn: the net is built Exandria-style instead
+    fitted = exandria_style_roads(roads, rangeA, np.isin(clsA, (FOREST, DUSK)) & landA)
+    net = road_network(fitted, [t for t in roads.towns if not in_eis(t[0], t[1])], roads.dry | (roads.landA & ~roads.lakesA & (roads.coast >= 6)), router=roads.route)
+    print('road network: %d routes -> %d stretches' % (len(fitted), len(net)))
+    for key, run in net:
+        st, col, wd = ('path_dash', ROAD, 7) if key == 'road' else ('path_dash', TRAIL, 4.5)   # dashed (user's pick); main roads darker/wider
+        paths.append(path(run, col, st, wd, 0.08, 935)); np_[key] += 1   # little wobble: it pushed roads onto the shore
     print('paths', np_, roads.stats)
 
     def at(a, x, y): return a[min(AH - 1, int(y) // R), min(AW - 1, int(x) // R)]
