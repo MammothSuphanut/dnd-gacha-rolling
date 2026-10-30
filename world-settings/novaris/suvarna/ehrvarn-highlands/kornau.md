@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองเกษตร · ยุ้งฉางของเผ่า |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ที่ราบตะวันออกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~2,070 ไมล์ · ห่าง [Strandfeste](strandfeste.md) ~420 ไมล์ · [Schildberg](schildberg.md) ~550 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ที่ราบตะวันออกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~520 ไมล์ · ห่าง [Strandfeste](strandfeste.md) ~70 ไมล์ · [Schildberg](schildberg.md) ~140 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,610 คน |

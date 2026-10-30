@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านริมแม่น้ำ · ท่าแคนู |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ริมแม่น้ำที่ไหลขึ้นไป Lake Prabha ห่าง [Padmaghat](../dandaka/padmaghat.md) ~920 ไมล์ · [Chakmuul](chakmuul.md) ~1,210 ไมล์ · ตะวันตกเฉียงใต้ของ [Jyotipura](../dandaka/jyoti-marga.md) ~1,350 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ริมแม่น้ำที่ไหลขึ้นไป Lake Prabha ห่าง [Padmaghat](../dandaka/padmaghat.md) ~230 ไมล์ · [Chakmuul](chakmuul.md) ~300 ไมล์ · ตะวันตกเฉียงใต้ของ [Jyotipura](../dandaka/jyoti-marga.md) ~340 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~670 คน |

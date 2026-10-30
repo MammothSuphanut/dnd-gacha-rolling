@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านริมแม่น้ำ · ท่าแพล่องไม้ |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ริมแม่น้ำ ใต้ของ [Muang Ngoen](muang-ngoen.md) ~1,000 ไมล์ · ห่าง [Wiang Kham](wiang-kham.md) ~1,250 ไมล์ · [Ban Tung](ban-tung.md) ~1,290 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ริมแม่น้ำ ใต้ของ [Muang Ngoen](muang-ngoen.md) ~250 ไมล์ · ห่าง [Wiang Kham](wiang-kham.md) ~310 ไมล์ · [Ban Tung](ban-tung.md) ~320 ไมล์ |
 | สังกัด | **ล้านนา** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~400 คน |

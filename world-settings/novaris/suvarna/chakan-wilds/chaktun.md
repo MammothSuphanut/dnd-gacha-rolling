@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครป้อมหินแดง |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าลึกตะวันออก ห่าง [Sakbe](sakbe.md) ~170 ไมล์ · [Kukmul](kukmul.md) ~250 ไมล์ · [Nohha](nohha.md) ~970 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าลึกตะวันออก ห่าง [Sakbe](sakbe.md) ~85 ไมล์ · [Kukmul](kukmul.md) ~120 ไมล์ · [Nohha](nohha.md) ~240 ไมล์ |
 | สังกัด | **เผ่า Kuk** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,700 คน |

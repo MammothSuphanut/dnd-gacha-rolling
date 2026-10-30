@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองโรงงานน้ำแร่ |
 | Sector | **43** |
-| ที่ตั้ง | Voxaria → Forgeheim · หุบเขาสูงห่าง **[Pinehold](pinehold.md)** ~110 ไมล์ และ **[Rampart](rampart.md)** ~275 ไมล์ |
+| ที่ตั้ง | Voxaria → Forgeheim · หุบเขาสูงห่าง **[Pinehold](pinehold.md)** ~25 ไมล์ และ **[Rampart](rampart.md)** ~70 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,400 คน |

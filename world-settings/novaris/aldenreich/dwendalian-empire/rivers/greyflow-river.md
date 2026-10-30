@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำอุตสาหกรรม |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · เชิงเขา [Silver Ridge](../silver-ridge.md) |
 | ต้นน้ำ → ปลายน้ำ | ลำธารบนไหล่เขาเหนือ [Oreton](../oreton.md) → ทะเลสาบใกล้ [Mirebrook](../mirebrook.md) |
-| ความยาว | ~4,630 ไมล์ |
+| ความยาว | ~1,160 ไมล์ |
 | กระแสน้ำ | แรงและลึก — แม่น้ำที่มีน้ำมากที่สุดในเขตตะวันออกของจักรวรรดิ |
 | เมืองริมน้ำ | [Oreton](../oreton.md) · [Smeltwick](../smeltwick.md) · [Rosedale](../rosedale.md) · [Mirebrook](../mirebrook.md) |
 | การเดินทาง | เรือท้องแบนบรรทุกแร่ล่องลงจาก Smeltwick · ถนน Amber Road เลียบฝั่งช่วงบน |

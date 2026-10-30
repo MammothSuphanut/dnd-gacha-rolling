@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองปราสาทกำแพงล้อม · เมืองหน้าด่านของโชกุน |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงใต้ของ **[Shirasagi](shirasagi.md)** ~2,500 ไมล์ · ตะวันตกเฉียงเหนือของ **[Heukseong](../heukseong/_overview.md)** ~2,420 ไมล์ · ห่าง [Tengudani](tengudani.md) ~190 ไมล์ และ [Kurayashiki](kurayashiki.md) ~510 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงใต้ของ **[Shirasagi](shirasagi.md)** ~620 ไมล์ · ตะวันตกเฉียงเหนือของ **[Heukseong](../heukseong/_overview.md)** ~610 ไมล์ · ห่าง [Tengudani](tengudani.md) ~60 ไมล์ และ [Kurayashiki](kurayashiki.md) ~130 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — ดินแดนสายตรงของโชกุน (เท็นเรียว) |
 | ระดับอารยธรรม | 2–3 |
 | ประชากร | ~3,000 คน |

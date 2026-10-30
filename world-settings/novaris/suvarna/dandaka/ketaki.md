@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านทำน้ำหอม |
-| ที่ตั้ง | Suvarna → Dandaka · ฐานคาบสมุทร ห่าง [Kadali](kadali.md) ~210 ไมล์ · [Nadipura](nadipura.md) ~260 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ฐานคาบสมุทร ห่าง [Kadali](kadali.md) ~50 ไมล์ · [Nadipura](nadipura.md) ~65 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~300 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองเล็กริมทะเลสาบบนเขา |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ทะเลสาบบนที่สูงทางตะวันตกของอาณานิคม ห่าง Dunmere และ Brackenfield ~1,030–1,050 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ทะเลสาบบนที่สูงทางตะวันตกของอาณานิคม ห่าง Dunmere และ Brackenfield ~1,030–260 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Saltmarch |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,000 คน |

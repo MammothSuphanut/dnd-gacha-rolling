@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครริมทะเลสาบในป่า |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าลึกตะวันออก ห่าง [Kukmul](kukmul.md) ~380 ไมล์ · [Sakbe](sakbe.md) ~460 ไมล์ · [Chaktun](chaktun.md) ~590 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าลึกตะวันออก ห่าง [Kukmul](kukmul.md) ~120 ไมล์ · [Sakbe](sakbe.md) ~120 ไมล์ · [Chaktun](chaktun.md) ~210 ไมล์ |
 | สังกัด | **เผ่า Kuk** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~1,700 คน |

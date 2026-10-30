@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | อาศรมบนยอดเขา |
-| ที่ตั้ง | Suvarna → Dandaka · ยอดเขาสูงสุดของ Tamasa ห่าง [Rishikula](rishikula.md) ~540 ไมล์ · ใต้ของ [Sandgrave](../deshret/sandgrave.md) ~1,180 ไมล์ · [Shantivana](shantivana.md) ~1,200 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ยอดเขาสูงสุดของ Tamasa ห่าง [Rishikula](rishikula.md) ~140 ไมล์ · ใต้ของ [Sandgrave](../deshret/sandgrave.md) ~290 ไมล์ · [Shantivana](shantivana.md) ~300 ไมล์ |
 | สังกัด | **Jyoti Marga** ในนาม — อาศรมฤๅษี |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~280 คน |

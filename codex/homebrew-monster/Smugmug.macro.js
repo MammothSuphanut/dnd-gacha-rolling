@@ -101,7 +101,7 @@
       // ---- Traits ----
       feat("Mortal Being", "icons/magic/nature/leaf-glow-green.webp",
         "<p><strong>Tier of Being: Mortal.</strong> Smugmug is an ordinary goblin with an extraordinary opinion of himself — and, annoyingly, the fists to back some of it up.</p>"
-        + "<p><em>Tier Gap:</em> Creatures one tier above him (Ascendant) gain a +5 bonus to d20 Tests that involve him, and creatures two or more tiers above can't be affected by him at all.</p>"),
+        + "<p><em>Tier Gap:</em> Mortal is the lowest tier. A creature above Smugmug gains +5 per tier of difference to every d20 Test that involves Smugmug and +5 AC per tier against his attacks (Ascendant +5, Divine +10, Sovereign +15, Law +20). His other rolls are unchanged.</p>"),
 
       feat("Legendary Resistance (2/Day, or 3/Day in Lair)", "icons/magic/symbols/star-solid-gold.webp",
         "<p>If Smugmug fails a saving throw, he can choose to succeed instead (he insists it was a feint). Mortal tier = 2 uses. In his lair (the \"dojo\" he stole from a retired master) he has 3 uses instead of 2 (set the maximum to 3 on the sheet).</p>",

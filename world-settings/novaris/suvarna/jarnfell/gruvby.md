@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านเหมืองบนไหล่เขา |
-| ที่ตั้ง | Suvarna → Jarnfell · ขอบใต้ของหุบเหล็ก ห่าง [Smedheim](smedheim.md) ~590 ไมล์ · [Hvalnes](hvalnes.md) ~620 ไมล์ · ตะวันออกของ [Serpent Vault](serpent-vault.md) ~1,140 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · ขอบใต้ของหุบเหล็ก ห่าง [Smedheim](smedheim.md) ~85 ไมล์ · [Hvalnes](hvalnes.md) ~150 ไมล์ · ตะวันออกของ [Serpent Vault](serpent-vault.md) ~280 ไมล์ |
 | สังกัด | **ตระกูลหุบเหล็ก** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~250 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อมบนภูเขา · เมืองช่างโล่ |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันออกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~1,610 ไมล์ · ห่าง [Kornau](kornau.md) ~550 ไมล์ · [Ahnenhall](ahnenhall.md) ~620 ไมล์ · [Strandfeste](strandfeste.md) ~870 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันออกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~400 ไมล์ · ห่าง [Kornau](kornau.md) ~140 ไมล์ · [Ahnenhall](ahnenhall.md) ~160 ไมล์ · [Strandfeste](strandfeste.md) ~190 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,490 คน |

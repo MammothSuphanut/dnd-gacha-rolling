@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองเศษเหล็ก · ชานเมืองยากจน |
 | Sector | **60** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · ทุ่งหญ้าทางใต้ของ **Port Noir** (~1,010 ไมล์) · ระหว่างทางไป Thunderspine |
+| ที่ตั้ง | Voxaria → Blacktide Coast · ทุ่งหญ้าทางใต้ของ **Port Noir** (~250 ไมล์) · ระหว่างทางไป Thunderspine |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 (ไฟฟ้าขโมยต่อ) |
 | ประชากร | ~600 คน |

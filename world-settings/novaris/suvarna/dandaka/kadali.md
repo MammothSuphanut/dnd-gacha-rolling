@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านสวนกล้วยและมะพร้าว |
-| ที่ตั้ง | Suvarna → Dandaka · ฐานคาบสมุทร ห่าง [Ketaki](ketaki.md) ~210 ไมล์ · [Nadipura](nadipura.md) ~460 ไมล์ · [Somagiri](somagiri.md) ~1,560 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ฐานคาบสมุทร ห่าง [Ketaki](ketaki.md) ~50 ไมล์ · [Nadipura](nadipura.md) ~110 ไมล์ · [Somagiri](somagiri.md) ~390 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~270 คน |

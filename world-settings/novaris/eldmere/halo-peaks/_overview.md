@@ -10,7 +10,7 @@
 | ประเภท | ภูเขาลอย / ถิ่นสิ่งมีชีวิตสายสวรรค์ |
 | ที่ตั้ง | Eldmere → กลางหมู่เกาะค่อนตะวันออก · ระหว่าง [Wyrmhold Isles](../wyrmhold-isles/_overview.md) กับ [Cinderteeth](../cinderteeth/_overview.md) · เหนือ [Eldwood](../eldwood/_overview.md) |
 | สังกัด | ไม่มีเจ้าถิ่นเดี่ยว — สิ่งมีชีวิตสายสวรรค์อยู่ร่วมกัน |
-| ขนาด | กลุ่มเกาะกว้างราว 3,500 ไมล์ · ยอดเขาสูงที่สุดของ Eldmere · ✨ บางยอดลอยเหนือทะเลเมฆ ไม่แตะพื้น |
+| ขนาด | กลุ่มเกาะกว้างราว 880 ไมล์ · ยอดเขาสูงที่สุดของ Eldmere · ✨ บางยอดลอยเหนือทะเลเมฆ ไม่แตะพื้น |
 | ผู้อยู่อาศัย | ✨ couatl, ki-rin, phoenix · สัตว์ปีกสายสวรรค์ |
 | ภูมิอากาศ | เกาะล่างอบอุ่น · บนยอดหนาวและแดดแรง · ทะเลเมฆปกคลุมรอบยอดเขาเกือบทั้งวัน |
 | การเดินทาง | เกาะล่างขึ้นฝั่งได้ · ยอดลอยต้องบินขึ้นไป หรือได้รับเชิญ |
@@ -61,12 +61,12 @@
 
 | เกาะ | ขนาด | ที่ตั้ง | เป็นอย่างไร |
 |---|---|---|---|
-| [Seraph's Rise](seraphs-rise.md) | ~2,480,000 ตร.ไมล์ | เกาะใหญ่ที่สุดของ Halo Peaks ฝั่งตะวันตก | วิหาร / เกาะภูเขาศักดิ์สิทธิ์ |
-| [Ember Aerie](ember-aerie.md) | ~1,390,000 ตร.ไมล์ | เกาะตะวันออกของ Halo Peaks | เกาะ / รังของ phoenix |
-| [Cloudfoot](cloudfoot.md) | ~1,140,000 ตร.ไมล์ | เกาะล่างฝั่งตะวันตกของ Halo Peaks | เกาะล่าง |
-| [Brightwater](brightwater.md) | ~760,000 ตร.ไมล์ | เกาะล่างฝั่งตะวันตกใต้ Cloudfoot | เกาะล่าง |
-| [Lantern Isle](lantern-isle.md) | ~560,000 ตร.ไมล์ | เกาะตะวันออกเฉียงใต้ของ Halo Peaks | เกาะ |
-| [Dawnmere](dawnmere.md) | ~520,000 ตร.ไมล์ | เกาะล่างตะวันตกเฉียงเหนือของ Halo Peaks | เกาะล่าง |
-| [Vigil Isle](vigil-isle.md) | ~210,000 ตร.ไมล์ | เกาะเล็กตะวันตกเฉียงใต้ของ Seraph's Rise | เกาะเล็ก |
-| [Kneeling Rock](kneeling-rock.md) | ~130,000 ตร.ไมล์ | เกาะหินเล็กระหว่าง Wyrmhold กับ Halo Peaks | เกาะหิน |
-| [Feather Cay](feather-cay.md) | ~120,000 ตร.ไมล์ | เกาะเล็กตะวันออกของ Ember Aerie | เกาะเล็ก |
+| [Seraph's Rise](seraphs-rise.md) | ~160,000 ตร.ไมล์ | เกาะใหญ่ที่สุดของ Halo Peaks ฝั่งตะวันตก | วิหาร / เกาะภูเขาศักดิ์สิทธิ์ |
+| [Ember Aerie](ember-aerie.md) | ~87,000 ตร.ไมล์ | เกาะตะวันออกของ Halo Peaks | เกาะ / รังของ phoenix |
+| [Cloudfoot](cloudfoot.md) | ~71,000 ตร.ไมล์ | เกาะล่างฝั่งตะวันตกของ Halo Peaks | เกาะล่าง |
+| [Brightwater](brightwater.md) | ~48,000 ตร.ไมล์ | เกาะล่างฝั่งตะวันตกใต้ Cloudfoot | เกาะล่าง |
+| [Lantern Isle](lantern-isle.md) | ~35,000 ตร.ไมล์ | เกาะตะวันออกเฉียงใต้ของ Halo Peaks | เกาะ |
+| [Dawnmere](dawnmere.md) | ~32,000 ตร.ไมล์ | เกาะล่างตะวันตกเฉียงเหนือของ Halo Peaks | เกาะล่าง |
+| [Vigil Isle](vigil-isle.md) | ~13,000 ตร.ไมล์ | เกาะเล็กตะวันตกเฉียงใต้ของ Seraph's Rise | เกาะเล็ก |
+| [Kneeling Rock](kneeling-rock.md) | ~8,100 ตร.ไมล์ | เกาะหินเล็กระหว่าง Wyrmhold กับ Halo Peaks | เกาะหิน |
+| [Feather Cay](feather-cay.md) | ~7,500 ตร.ไมล์ | เกาะเล็กตะวันออกของ Ember Aerie | เกาะเล็ก |

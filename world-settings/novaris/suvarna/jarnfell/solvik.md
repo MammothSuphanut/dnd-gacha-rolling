@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าการค้า |
-| ที่ตั้ง | Suvarna → Jarnfell · ชายฝั่งตะวันออกเฉียงใต้ของ [Giftvik](giftvik.md) ~1,680 ไมล์ · ห่าง [Kaupstad](kaupstad.md) ~280 ไมล์ · [Solaria](../deshret/imperium-solis.md) ~2,160 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · ชายฝั่งตะวันออกเฉียงใต้ของ [Giftvik](giftvik.md) ~280 ไมล์ · ห่าง [Kaupstad](kaupstad.md) ~100 ไมล์ · [Solaria](../deshret/imperium-solis.md) ~540 ไมล์ |
 | สังกัด | **Giftvik** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,140 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าป้อม · ท่าเรือใต้ของ Jyoti Marga |
-| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งใต้ ใต้ของ [Kamala](kamala.md) ~1,770 ไมล์ · ห่าง [Chakmuul](../chakan-wilds/chakmuul.md) ~940 ไมล์ · [Saktun](../chakan-wilds/saktun.md) ~1,690 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งใต้ ใต้ของ [Kamala](kamala.md) ~410 ไมล์ · ห่าง [Chakmuul](../chakan-wilds/chakmuul.md) ~220 ไมล์ · [Saktun](../chakan-wilds/saktun.md) ~430 ไมล์ |
 | สังกัด | **Jyoti Marga** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~4,600 คน — เมืองที่ใหญ่ที่สุดในบรรดาเมืองบริวาร |

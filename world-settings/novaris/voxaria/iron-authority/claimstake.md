@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | ค่ายจับจองพื้นที่ล่า (ระดับหมู่บ้าน) |
 | Sector | **70** |
-| ที่ตั้ง | Voxaria → Iron Authority (เขต Gate **Riftwild**) · ป่าดิบห่าง **[Lootfall](lootfall.md)** ~300 ไมล์ และ Redwing ~1,220 ไมล์ |
+| ที่ตั้ง | Voxaria → Iron Authority (เขต Gate **Riftwild**) · ป่าดิบห่าง **[Lootfall](lootfall.md)** ~75 ไมล์ และ Redwing ~310 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Iron Authority (ในนาม) |
 | ระดับอารยธรรม | 4 |
 | ประชากร | ~300 คน |

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Voxaria → Forgeheim · Heartland |
 | ต้นน้ำ → ปลายน้ำ | บ่อน้ำพุของ [Coldspring](../coldspring.md) → ป่าปลูกของ [Pinehold](../pinehold.md) → ลอดกำแพง [Rampart](../rampart.md) → ทะเลสาบข้าง [Redrock Mines](../../heartland/redrock-mines.md) |
-| ความยาว | ~3,920 ไมล์ |
+| ความยาว | ~980 ไมล์ |
 | กระแสน้ำ | เย็นและใส · มีน้ำมาก |
 | เมืองริมน้ำ | [Coldspring](../coldspring.md) · [Pinehold](../pinehold.md) · [Rampart](../rampart.md) · [Redrock Mines](../../heartland/redrock-mines.md) |
 | การเดินทาง | ทางหลวงภูเขาเลียบแม่น้ำ · เรือยางท่องเที่ยว |

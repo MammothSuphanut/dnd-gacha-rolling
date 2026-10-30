@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำหุบเหล็ก |
 | ที่ตั้ง | Suvarna → Jarnfell · ดินแดนตระกูลหุบเหล็กและตระกูลฟยอร์ด |
 | ต้นน้ำ → ปลายน้ำ | ถ้ำผนึก [Serpent Vault](../serpent-vault.md) ในเทือกเขา → หุบเหล็กของ [Jarnstad](../jarnstad.md) · [Malmdal](../malmdal.md) · [Kolby](../kolby.md) → [Hvalnes](../hvalnes.md) → ทะเลที่แหลม [Brimnes](../brimnes.md) |
-| ความยาว | ~3,890 ไมล์ |
+| ความยาว | ~970 ไมล์ |
 | กระแสน้ำ | เชี่ยว · **น้ำดำจากถ่านและแร่เหล็ก** |
 | เมืองริมน้ำ | [Jarnstad](../jarnstad.md) · [Malmdal](../malmdal.md) · [Kolby](../kolby.md) · [Hvalnes](../hvalnes.md) |
 | การเดินทาง | เรือแร่ลงจากหุบ · เรือหัวมังกรที่ปากแม่น้ำ |

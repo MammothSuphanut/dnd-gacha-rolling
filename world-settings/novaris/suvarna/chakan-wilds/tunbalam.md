@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครป้อมกำแพงหิน · ค่ายนักรบจากัวร์ |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ห่าง [Balamkin](balamkin.md) ~490 ไมล์ · [Kejha](kejha.md) ~610 ไมล์ · [Ekmul](ekmul.md) ~650 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ห่าง [Balamkin](balamkin.md) ~120 ไมล์ · [Kejha](kejha.md) ~150 ไมล์ · [Ekmul](ekmul.md) ~160 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,360 คน |

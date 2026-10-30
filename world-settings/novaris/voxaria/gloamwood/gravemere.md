@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองสุสานริมทะเลสาบ |
 | Sector | **51** |
-| ที่ตั้ง | Voxaria → Gloamwood · ทะเลสาบในป่าใต้ ห่าง **[Hollowbell](hollowbell.md)** ~640 ไมล์ และ Mirror Lake ~910 ไมล์ |
+| ที่ตั้ง | Voxaria → Gloamwood · ทะเลสาบในป่าใต้ ห่าง **[Hollowbell](hollowbell.md)** ~160 ไมล์ และ Mirror Lake ~230 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Gloamwood |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,000 คน |

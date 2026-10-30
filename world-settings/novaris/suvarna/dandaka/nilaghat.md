@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านย้อมคราม |
-| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบ ตะวันออกเฉียงเหนือของ [Matsya](matsya.md) ~850 ไมล์ · ห่าง [Granthapura](granthapura.md) ~700 ไมล์ · [Vrika](vrika.md) ~1,140 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบ ตะวันออกเฉียงเหนือของ [Matsya](matsya.md) ~210 ไมล์ · ห่าง [Granthapura](granthapura.md) ~180 ไมล์ · [Vrika](vrika.md) ~290 ไมล์ |
 | สังกัด | **Jyoti Marga** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~350 คน |

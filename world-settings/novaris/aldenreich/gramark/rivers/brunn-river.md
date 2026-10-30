@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Straum River](straum-river.md) |
 | ที่ตั้ง | Aldenreich → Gråmark · ชายแดนจักรวรรดิ ใกล้ [Chiselby](../../dwendalian-empire/chiselby.md) |
 | ต้นน้ำ → ปลายน้ำ | น้ำพุใต้หน้าผาตัดหินของ Chiselby → บรรจบ Straum River |
-| ความยาว | ~720 ไมล์ |
+| ความยาว | ~180 ไมล์ |
 | กระแสน้ำ | เล็ก ใส เย็นจัด · ก้นเป็นกรวดอัญมณีเล็ก ๆ |
 | เมืองริมน้ำ | [Chiselby](../../dwendalian-empire/chiselby.md) |
 | การเดินทาง | เดินลุยได้ |

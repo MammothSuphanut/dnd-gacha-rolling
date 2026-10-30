@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำใหญ่ของ Gråmark |
 | ที่ตั้ง | Aldenreich → Gråmark · จาก [Whitehorn Alps](../whitehorn-alps.md) ผ่าน [Hoarfield](../hoarfield.md) |
 | ต้นน้ำ → ปลายน้ำ | ธารน้ำแข็งใน Whitehorn Alps ใกล้ [Twinhold](../twinhold-diarchy.md) → ทุ่งของ [Grakmoot](../grakmoot.md) → ทะเลเหนือที่ [Haverby](../haverby.md) |
-| ความยาว | ~7,140 ไมล์ |
+| ความยาว | ~1,780 ไมล์ |
 | กระแสน้ำ | กว้าง ลึก เย็นจัด · **แข็งตัวทั้งสายครึ่งปี** |
 | สาขา | [Straum River](straum-river.md) (← [Brunn River](brunn-river.md)) |
 | เมืองริมน้ำ | [Grakmoot](../grakmoot.md) (ตามฤดู) · [Haverby](../haverby.md) (ร้าง) |

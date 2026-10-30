@@ -233,7 +233,7 @@
       // ---- Traits ----
       feat("Mortal Being (Peak)", "icons/magic/nature/leaf-glow-green.webp",
         "<p><strong>Tier of Being: Mortal, at its very peak.</strong> Pippen stands on the threshold of Ascendant. He has reached the Mortal level cap (10) and the next step means fusing body and soul into a single will.</p>"
-        + "<p><em>Tier Gap:</em> Creatures one tier above him (Ascendant) gain a +5 bonus to d20 Tests that involve him, and creatures two or more tiers above can't be affected by him at all.</p>"),
+        + "<p><em>Tier Gap:</em> Mortal is the lowest tier. A creature above Pippen gains +5 per tier of difference to every d20 Test that involves Pippen and +5 AC per tier against his attacks (Ascendant +5, Divine +10, Sovereign +15, Law +20). His other rolls are unchanged.</p>"),
 
       feat("Legendary Resistance (2/Day, or 3/Day in Lair)", "icons/magic/symbols/star-solid-gold.webp",
         "<p>If Pippen fails a saving throw, he can choose to succeed instead. Mortal tier = 2 uses. In his lair (his home grove) he has 3 uses instead of 2 (set the maximum to 3 on the sheet).</p>",

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำหนองบึง |
 | ที่ตั้ง | Aldenreich → Ödland · ผ่าน [Mistmoor](../mistmoor.md) |
 | ต้นน้ำ → ปลายน้ำ | โพรงเขาของ [Grimhollow](../grimhollow.md) → ที่ราบหนองบึง Mistmoor → ทะเลสาบดาวของ [Starmere](../starmere.md) |
-| ความยาว | ~8,820 ไมล์ — ยาวที่สุดใน Aldenreich |
+| ความยาว | ~2,200 ไมล์ — ยาวที่สุดใน Aldenreich |
 | กระแสน้ำ | ช้าและตื้นมาก แตกเป็นร่องน้ำนับร้อยในหนองบึง |
 | เมืองริมน้ำ | [Grimhollow](../grimhollow.md) · [Starmere](../starmere.md) · ✨ [Deepcut Camp](../deepcut-camp.md) |
 | การเดินทาง | เรือแบนถ่อในหนองบึง · ต้องมีคนนำทาง |

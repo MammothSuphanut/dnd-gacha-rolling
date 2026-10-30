@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านยุ้งข้าวริมทะเลสาบ · คลังเสบียงของโชกุน |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงใต้ของ **[Shirasagi](shirasagi.md)** ~2,050 ไมล์ · ห่าง [Tengudani](tengudani.md) ~400 ไมล์ · [Otemon](otemon.md) ~510 ไมล์ · [Hatamoto](hatamoto.md) ~620 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงใต้ของ **[Shirasagi](shirasagi.md)** ~510 ไมล์ · ห่าง [Tengudani](tengudani.md) ~90 ไมล์ · [Otemon](otemon.md) ~130 ไมล์ · [Hatamoto](hatamoto.md) ~150 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — ดินแดนสายตรงของโชกุน |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~360 คน |

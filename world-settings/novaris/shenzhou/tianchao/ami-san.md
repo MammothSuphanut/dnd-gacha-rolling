@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองอารามในป่าฝน · **ที่ตั้งสำนัก Ami-pa** 峨嵋派 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ป่าฝนตะวันตกของ **[Yujing](../unspecified/yujing.md)** ~2,270 ไมล์ · ห่าง [Jeomchang-san](jeomchang-san.md) ~920 ไมล์ · [Cheongseong-san](cheongseong-san.md) ~1,650 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ป่าฝนตะวันตกของ **[Yujing](../unspecified/yujing.md)** ~570 ไมล์ · ห่าง [Jeomchang-san](jeomchang-san.md) ~230 ไมล์ · [Cheongseong-san](cheongseong-san.md) ~420 ไมล์ |
 | สังกัด | **Ami-pa** — 9 ยอดสำนัก ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,400 คน (ภิกษุณีและศิษย์หญิง ~400) |

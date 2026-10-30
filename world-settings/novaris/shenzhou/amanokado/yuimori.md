@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านวัดในป่า · ม่านผนึก (เคคไค) |
-| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~1,250 ไมล์ · ห่าง [Hokuto](hokuto.md) ~150 ไมล์ · [Fudamachi](fudamachi.md) ~540 ไมล์ · [Kitsunebi](kitsunebi.md) ~580 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~310 ไมล์ · ห่าง [Hokuto](hokuto.md) ~65 ไมล์ · [Fudamachi](fudamachi.md) ~140 ไมล์ · [Kitsunebi](kitsunebi.md) ~150 ไมล์ |
 | สังกัด | **Amanokado** — ตระกูล Hoshimi |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~890 คน |

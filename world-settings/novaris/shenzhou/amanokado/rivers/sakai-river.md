@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำชายแดน · สาขาของ [Tsenkher River](../../rivers/tsenkher-river.md) |
 | ที่ตั้ง | Shenzhou → ชายแดน Amanokado กับ [Tsagaan Tal](../../unspecified/tsagaan-tal.md) |
 | ต้นน้ำ → ปลายน้ำ | ป่าไทกาเหนือ [Kitaboshi](../kitaboshi.md) → บรรจบ Tsenkher River ใต้ยอด [Mubong](../../unspecified/mubong.md) |
-| ความยาว | ~1,960 ไมล์ |
+| ความยาว | ~490 ไมล์ |
 | กระแสน้ำ | ปานกลาง · แข็งตัวในฤดูหนาว |
 | เมืองริมน้ำ | — (ค่ายชนเผ่าตามฤดู) |
 | การเดินทาง | ข้ามได้ด้วยแพหนังและน้ำแข็ง |

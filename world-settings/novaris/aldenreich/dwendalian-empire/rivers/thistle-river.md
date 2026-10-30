@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Mantle River](mantle-river.md) |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · เขต Mantle |
 | ต้นน้ำ → ปลายน้ำ | เนินแกะของ [Thistledown](../thistledown.md) → บรรจบ Mantle River ใกล้ [Stonepride](../stonepride.md) |
-| ความยาว | ~1,620 ไมล์ |
+| ความยาว | ~400 ไมล์ |
 | กระแสน้ำ | เชี่ยว ไม่เคยแห้ง · น้ำสีม่วงจาง ๆ ช่วงบน |
 | เมืองริมน้ำ | [Thistledown](../thistledown.md) · [Millrace](../millrace.md) |
 | การเดินทาง | ทางเดินริมน้ำ — แคบเกินกว่าเรือบรรทุก |

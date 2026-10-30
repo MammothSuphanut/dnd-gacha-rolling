@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายทหารลีเจียน · ป้อมชายแดนเหนือ |
-| ที่ตั้ง | Suvarna → Deshret · ทุ่งหญ้าตะวันออกของ [Fontana](fontana.md) ~1,880 ไมล์ · ห่าง [Kaupstad](../jarnfell/kaupstad.md) ~2,240 ไมล์ |
+| ที่ตั้ง | Suvarna → Deshret · ทุ่งหญ้าตะวันออกของ [Fontana](fontana.md) ~460 ไมล์ · ห่าง [Kaupstad](../jarnfell/kaupstad.md) ~540 ไมล์ |
 | สังกัด | **Imperium Solis** — กองลีเจียนที่ 9 "Aquila Borealis" |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~760 คน (ทหาร ~500) |

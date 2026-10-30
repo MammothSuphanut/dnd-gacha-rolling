@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · ทางเรือสินค้า |
 | ที่ตั้ง | Voxaria → Forgeheim · Heartland |
 | ต้นน้ำ → ปลายน้ำ | เนินเหมืองเงินของ [Hillmarket](../../forgeheim/hillmarket.md) → ทุ่ง [Goldfields](../goldfields.md) → ลานสินค้า [Freightyard](../freightyard.md) → อ่าวหน้าเกาะ [Freeharbor](../freeharbor.md) |
-| ความยาว | ~3,690 ไมล์ |
+| ความยาว | ~920 ไมล์ |
 | กระแสน้ำ | ปานกลาง ขุดลอกให้ลึกพอเรือสินค้า |
 | เมืองริมน้ำ | [Hillmarket](../../forgeheim/hillmarket.md) · [Goldfields](../goldfields.md) · [Freightyard](../freightyard.md) |
 | การเดินทาง | เรือบรรทุกตู้คอนเทนเนอร์ · เรือข้ามฟากไป Freeharbor |

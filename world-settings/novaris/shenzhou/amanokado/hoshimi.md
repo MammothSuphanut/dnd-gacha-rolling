@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองริมทะเลสาบ · **บ้านใหญ่ของตระกูลองเมียวจิ Hoshimi** |
-| ที่ตั้ง | Shenzhou → Amanokado · เหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~1,570 ไมล์ · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~1,970 ไมล์ · ห่าง [Fudamachi](fudamachi.md) ~250 ไมล์ และ [Tenmon](tenmon.md) ~270 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · เหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~400 ไมล์ · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~490 ไมล์ · ห่าง [Fudamachi](fudamachi.md) ~70 ไมล์ และ [Tenmon](tenmon.md) ~85 ไมล์ |
 | สังกัด | **Amanokado** — สภาวิหารฝากเมืองฝั่งเหนือให้ตระกูล Hoshimi ดูแล |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,300 คน (คนในตระกูลและสาขา ~200) |

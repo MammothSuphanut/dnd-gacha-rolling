@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Schwarzach River](schwarzach-river.md) |
 | ที่ตั้ง | Suvarna → Ehrvarn Highlands · ชายฝั่งตะวันตกเฉียงใต้ |
 | ต้นน้ำ → ปลายน้ำ | เนินหลังท่าเรือรบ [Hafenburg](../hafenburg.md) → บรรจบ Schwarzach River |
-| ความยาว | ~700 ไมล์ |
+| ความยาว | ~180 ไมล์ |
 | กระแสน้ำ | แคบ ตรง เชี่ยว — เหมือนรอยฟัน |
 | เมืองริมน้ำ | [Hafenburg](../hafenburg.md) (ใกล้) |
 | การเดินทาง | ทางเดินป่า |

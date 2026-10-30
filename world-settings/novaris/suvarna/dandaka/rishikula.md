@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | อาศรมป้อมบนภูเขาสูง · **อาศรมใหญ่ของฤๅษีแห่ง Tamasa** |
-| ที่ตั้ง | Suvarna → Dandaka · ภูเขาฝั่งตะวันตกของป่า Tamasa ใต้ของ [Sandgrave](../deshret/sandgrave.md) ~1,720 ไมล์ · ห่าง [Meghagiri](meghagiri.md) ~540 ไมล์ · [Maunagiri](maunagiri.md) ~1,380 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ภูเขาฝั่งตะวันตกของป่า Tamasa ใต้ของ [Sandgrave](../deshret/sandgrave.md) ~430 ไมล์ · ห่าง [Meghagiri](meghagiri.md) ~140 ไมล์ · [Maunagiri](maunagiri.md) ~340 ไมล์ |
 | สังกัด | **Jyoti Marga** ในนาม — อาศรมฤๅษีปกครองตัวเอง |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~2,900 คน (ฤๅษี โยคี ศิษย์ และผู้แสวงบุญ) |

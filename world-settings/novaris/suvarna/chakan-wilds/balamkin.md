@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครพีระมิด · **นครหลวงของเผ่า Balam** · ที่ตั้งสภาสี่เผ่า |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ใต้ของ [Jyotipura](../dandaka/jyoti-marga.md) ~2,670 ไมล์ · ห่าง [Ekmul](ekmul.md) ~190 ไมล์ · [Kejha](kejha.md) ~300 ไมล์ · [Yaxkin](yaxkin.md) ~470 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ใต้ของ [Jyotipura](../dandaka/jyoti-marga.md) ~670 ไมล์ · ห่าง [Ekmul](ekmul.md) ~50 ไมล์ · [Kejha](kejha.md) ~75 ไมล์ · [Yaxkin](yaxkin.md) ~120 ไมล์ |
 | สังกัด | **เผ่า Balam** — อิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~3,000 คนในนคร · หลายหมื่นในหมู่บ้านรอบป่า |

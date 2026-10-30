@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | หมู่บ้านกอธิกในป่า |
 | Sector | **56** |
-| ที่ตั้ง | Voxaria → Gloamwood · ทุ่งพรุในป่าตะวันออก ห่าง **[Candlewick](candlewick.md)** ~290 ไมล์ และ **[Testfire](testfire.md)** ~570 ไมล์ |
+| ที่ตั้ง | Voxaria → Gloamwood · ทุ่งพรุในป่าตะวันออก ห่าง **[Candlewick](candlewick.md)** ~75 ไมล์ และ **[Testfire](testfire.md)** ~140 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Gloamwood |
 | ระดับอารยธรรม | 4–5 |
 | ประชากร | ~670 คน |

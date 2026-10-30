@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองบนยอดเขา · ชุมทางกระเช้า |
 | Sector | **44** |
-| ที่ตั้ง | Voxaria → Forgeheim · ยอดเขาคู่กับ **[Skylift](skylift.md)** (~130 ไมล์) · ห่าง Hillmarket ~1,190 ไมล์ |
+| ที่ตั้ง | Voxaria → Forgeheim · ยอดเขาคู่กับ **[Skylift](skylift.md)** (~30 ไมล์) · ห่าง Hillmarket ~300 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,400 คน |

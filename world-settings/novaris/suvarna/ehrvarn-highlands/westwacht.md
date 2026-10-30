@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองป้อมกำแพงล้อม · ด่านชายแดนตะวันตก |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันตกของ [Ehrenburg](ehrvarn-conquest.md) ~2,030 ไมล์ · ห่าง [Adlerhorst](adlerhorst.md) ~1,380 ไมล์ · [Lehrberg](lehrberg.md) ~1,550 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันตกของ [Ehrenburg](ehrvarn-conquest.md) ~510 ไมล์ · ห่าง [Adlerhorst](adlerhorst.md) ~340 ไมล์ · [Lehrberg](lehrberg.md) ~390 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,300 คน (นักรบ ~1,000) |

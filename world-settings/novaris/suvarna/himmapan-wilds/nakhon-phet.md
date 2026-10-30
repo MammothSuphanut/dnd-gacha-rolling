@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม · หัวเมืองหลวง · เมืองช่างอัญมณี |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ตะวันออกเฉียงใต้ของ [Ban Nong](ban-nong.md) ~310 ไมล์ · ห่าง [Bang Bua](bang-bua.md) ~420 ไมล์ · [Khao Kaeo](khao-kaeo.md) ~1,040 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ตะวันออกเฉียงใต้ของ [Ban Nong](ban-nong.md) ~150 ไมล์ · ห่าง [Bang Bua](bang-bua.md) ~130 ไมล์ · [Khao Kaeo](khao-kaeo.md) ~240 ไมล์ |
 | สังกัด | **Pancha Sabha** — หัวเมืองชั้นใน |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,700 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่า |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · อ่าวปลายแหลมเหนือสุดของอาณานิคม ห่าง Dunmere ~1,400 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · อ่าวปลายแหลมเหนือสุดของอาณานิคม ห่าง Dunmere ~330 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Saltmarch |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~760 คน · ฤดูเรือเข้า (ปลายฤดูใบไม้ผลิ) เพิ่มอีกหลายร้อย |

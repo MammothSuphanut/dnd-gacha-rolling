@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านบนดอย · ปางม้าต่าง |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ดอยทางใต้ ห่าง [Doi Mok](doi-mok.md) ~90 ไมล์ · [Doi Fa](doi-fa.md) ~170 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ดอยทางใต้ ห่าง [Doi Mok](doi-mok.md) ~40 ไมล์ · [Doi Fa](doi-fa.md) ~55 ไมล์ |
 | สังกัด | **Pancha Sabha** ในนาม · ชาวดอย |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~790 คน |

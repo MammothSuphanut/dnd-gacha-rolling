@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองบ่อนพนัน |
-| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ห่าง [Yeomjeon](yeomjeon.md) ~440 ไมล์ · [Amcho](amcho.md) ~460 ไมล์ · **[Hwanrak](hwanrak.md)** ~610 ไมล์ · [Heukryong-hang](heukryong-hang.md) ~620 ไมล์ |
+| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ห่าง [Yeomjeon](yeomjeon.md) ~110 ไมล์ · [Amcho](amcho.md) ~95 ไมล์ · **[Hwanrak](hwanrak.md)** ~150 ไมล์ · [Heukryong-hang](heukryong-hang.md) ~160 ไมล์ |
 | สังกัด | **Haomun** — พันธมิตรอธรรม |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,100 คน |

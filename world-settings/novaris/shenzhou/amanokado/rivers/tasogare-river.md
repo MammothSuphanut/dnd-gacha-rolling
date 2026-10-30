@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำของคนตาย |
 | ที่ตั้ง | Shenzhou → Amanokado · ผ่าน Yūgure Forest |
 | ต้นน้ำ → ปลายน้ำ | ไหล่เขาใต้นครเทพ [Kamizono](../yugure-forest/kamizono.md) → ผ่าน Yūgure Forest → หมู่บ้านกักวิญญาณ [Kagemori](../kagemori.md) → ทะเล |
-| ความยาว | ~2,240 ไมล์ |
+| ความยาว | ~560 ไมล์ |
 | กระแสน้ำ | ช้าและมืด · หมอกลงทุกพลบค่ำ |
 | เมืองริมน้ำ | [Kagemori](../kagemori.md) · ✨ ใกล้ [Usugure](../usugure.md) · [Kitsunebi](../kitsunebi.md) |
 | การเดินทาง | เรือของคนทรงอีกาดำเท่านั้น |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองค่ายนักรบ · **ห้องโถงของตระกูลหมี** |
-| ที่ตั้ง | Suvarna → Ulfdal · ขอบตะวันออกของหุบ ตะวันออกเฉียงใต้ของ [Steinborg](steinborg.md) ~1,650 ไมล์ · ห่าง [Dhulika](../dandaka/dhulika.md) ~1,260 ไมล์ · [Marupura](../dandaka/marupura.md) ~1,480 ไมล์ |
+| ที่ตั้ง | Suvarna → Ulfdal · ขอบตะวันออกของหุบ ตะวันออกเฉียงใต้ของ [Steinborg](steinborg.md) ~410 ไมล์ · ห่าง [Dhulika](../dandaka/dhulika.md) ~310 ไมล์ · [Marupura](../dandaka/marupura.md) ~370 ไมล์ |
 | สังกัด | **Varga Republic** ในนาม — **ตระกูลหมี** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~1,450 คน |

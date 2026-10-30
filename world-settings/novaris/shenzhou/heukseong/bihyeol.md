@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองบนภูเขาสูง · โรงยาและห้องพิษของพรรค |
-| ที่ตั้ง | Shenzhou → เขตมาร (บนแผนที่ของ Akitsu) · ภูเขา เหนือของ [Shiraki](../mizuho/shiraki.md) ~3,060 ไมล์ · ห่าง [Mangryang](mangryang.md) ~550 ไมล์ · [Hwangcheon](hwangcheon.md) ~790 ไมล์ · [Cheonmamun](cheonmamun.md) ~980 ไมล์ |
+| ที่ตั้ง | Shenzhou → เขตมาร (บนแผนที่ของ Akitsu) · ภูเขา เหนือของ [Shiraki](../mizuho/shiraki.md) ~770 ไมล์ · ห่าง [Mangryang](mangryang.md) ~140 ไมล์ · [Hwangcheon](hwangcheon.md) ~200 ไมล์ · [Cheonmamun](cheonmamun.md) ~240 ไมล์ |
 | สังกัด | **พรรคมารสวรรค์** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~970 คน |

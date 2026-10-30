@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · [Corevale](../corevale.md) ใกล้ [Ashpeaks](../ashpeaks.md) |
 | ต้นน้ำ → ปลายน้ำ | เนินขอบ [Hexvale](../hexvale.md) → ทะเลสาบคาร์นิวัลของ [Hopsdale](../hopsdale.md) |
-| ความยาว | ~1,730 ไมล์ |
+| ความยาว | ~430 ไมล์ |
 | กระแสน้ำ | เรียบ ใส · ไหลเอื่อยผ่านไร่ข้าว |
 | เมืองริมน้ำ | [Hopsdale](../hopsdale.md) |
 | การเดินทาง | เรือพายเล็ก · แพเบียร์ช่วงปลาย |

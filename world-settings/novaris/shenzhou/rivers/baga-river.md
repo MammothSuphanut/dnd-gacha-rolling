@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Tsenkher River](tsenkher-river.md) |
 | ที่ตั้ง | Shenzhou → [Tsagaan Tal](../unspecified/tsagaan-tal.md) · ตีนเขา [Mubong](../unspecified/mubong.md) |
 | ต้นน้ำ → ปลายน้ำ | ป่าบนตีนเขา Mubong → บรรจบ Tsenkher River |
-| ความยาว | ~610 ไมล์ |
+| ความยาว | ~150 ไมล์ |
 | กระแสน้ำ | เล็ก เย็น ใส |
 | เมืองริมน้ำ | — |
 | การเดินทาง | เดินลุย |

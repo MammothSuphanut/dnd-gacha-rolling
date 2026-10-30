@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครกำแพงหินปูน · เหมืองหินขาว |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้ ห่าง [Kejha](kejha.md) ~560 ไมล์ · [Yaxkin](yaxkin.md) ~610 ไมล์ · [Ekmul](ekmul.md) ~660 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้ ห่าง [Kejha](kejha.md) ~140 ไมล์ · [Yaxkin](yaxkin.md) ~150 ไมล์ · [Ekmul](ekmul.md) ~170 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,300 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าป้อม · **ห้องโถงของตระกูลฟยอร์ด** |
-| ที่ตั้ง | Suvarna → Jarnfell · ฟยอร์ดตะวันตก ห่าง [Brimnes](brimnes.md) ~520 ไมล์ · [Hvalnes](hvalnes.md) ~610 ไมล์ · ตะวันออกเฉียงเหนือของ [Serpent Vault](serpent-vault.md) ~1,600 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · ฟยอร์ดตะวันตก ห่าง [Brimnes](brimnes.md) ~140 ไมล์ · [Hvalnes](hvalnes.md) ~130 ไมล์ · ตะวันออกเฉียงเหนือของ [Serpent Vault](serpent-vault.md) ~390 ไมล์ |
 | สังกัด | **ตระกูลฟยอร์ด** — ไวกิ้งอิสระ (Imperium Solis อ้างบนแผนที่เท่านั้น) |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,500 คน |

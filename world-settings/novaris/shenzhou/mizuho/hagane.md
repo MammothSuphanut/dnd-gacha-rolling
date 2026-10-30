@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองหลอมเหล็กกำแพงล้อม |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันตกเฉียงเหนือของ [Ssiat](../jungwon/ssiat.md) ~3,490 ไมล์ · ห่าง [Sumiyaki](sumiyaki.md) ~220 ไมล์ · [Tetsumura](tetsumura.md) ~640 ไมล์ · [Kanayama](kanayama.md) ~870 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันตกเฉียงเหนือของ [Ssiat](../jungwon/ssiat.md) ~870 ไมล์ · ห่าง [Sumiyaki](sumiyaki.md) ~55 ไมล์ · [Tetsumura](tetsumura.md) ~160 ไมล์ · [Kanayama](kanayama.md) ~220 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้น Akagane |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,000 คน |

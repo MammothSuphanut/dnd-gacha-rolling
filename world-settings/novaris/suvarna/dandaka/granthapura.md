@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม · **นครบริวารใหญ่ของ Jyotipura** · โรงคัดลอกคัมภีร์ |
-| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบ ตะวันออกของ [Matsya](matsya.md) ~860 ไมล์ · ห่าง [Nilaghat](nilaghat.md) ~700 ไมล์ · [Shikhara](shikhara.md) ~860 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบ ตะวันออกของ [Matsya](matsya.md) ~220 ไมล์ · ห่าง [Nilaghat](nilaghat.md) ~180 ไมล์ · [Shikhara](shikhara.md) ~210 ไมล์ |
 | สังกัด | **Jyoti Marga** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,300 คน (นักคัดลอก ~600) |

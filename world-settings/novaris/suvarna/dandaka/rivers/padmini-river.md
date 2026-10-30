@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Dipavati River](dipavati-river.md) |
 | ที่ตั้ง | Suvarna → Dandaka · ชายแดนกับ Chakan Wilds |
 | ต้นน้ำ → ปลายน้ำ | บึงบัวของนิคม [Kamala](../kamala.md) → ผ่านใกล้ [Bekhal](../../chakan-wilds/bekhal.md) → บรรจบ Dipavati River |
-| ความยาว | ~2,810 ไมล์ |
+| ความยาว | ~700 ไมล์ |
 | กระแสน้ำ | ช้ามาก · บัวเต็มผิวน้ำ |
 | เมืองริมน้ำ | [Kamala](../kamala.md) · [Bekhal](../../chakan-wilds/bekhal.md) |
 | การเดินทาง | เรือพายผ่านดงบัว |

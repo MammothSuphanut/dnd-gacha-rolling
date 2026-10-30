@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Aldenreich → Costa Mosaica · ตีนเขา Cloudpeak ชายแดนจักรวรรดิกับ Concord |
 | ต้นน้ำ → ปลายน้ำ | หน้าผาใต้ [Cragwatch](../../dwendalian-empire/cragwatch.md) → ผ่าน [Riva](../riva.md) → หนองบึงแร่ของ [Santuaria](../santuaria.md) → ทะเล |
-| ความยาว | ~3,130 ไมล์ |
+| ความยาว | ~780 ไมล์ |
 | กระแสน้ำ | น้ำตกจากหน้าผาช่วงบน · กว้างและสงบช่วงล่าง |
 | เมืองริมน้ำ | [Riva](../riva.md) · [Santuaria](../santuaria.md) |
 | การเดินทาง | เรือแม่น้ำ Riva–Lagunara · เรือกกของชาวพื้นเมือง |

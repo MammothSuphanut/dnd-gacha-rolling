@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าตีนเขา · **ที่ตั้งสำนัก Cheongseong-pa** 靑城派 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ชายฝั่งป่าฝน ตะวันตกของ **[Yujing](../unspecified/yujing.md)** ~2,820 ไมล์ · ห่าง [Mudang-san](mudang-san.md) ~970 ไมล์ · [Nongnim-chae](nongnim-chae.md) ~1,560 ไมล์ · [Ami-san](ami-san.md) ~1,650 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ชายฝั่งป่าฝน ตะวันตกของ **[Yujing](../unspecified/yujing.md)** ~710 ไมล์ · ห่าง [Mudang-san](mudang-san.md) ~240 ไมล์ · [Nongnim-chae](nongnim-chae.md) ~390 ไมล์ · [Ami-san](ami-san.md) ~420 ไมล์ |
 | สังกัด | **Cheongseong-pa** — 9 ยอดสำนัก ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,200 คน |

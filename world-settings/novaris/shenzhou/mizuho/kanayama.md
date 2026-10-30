@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองเหมืองกำแพงล้อม |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงเหนือของ [Shirasagi](shirasagi.md) ~4,280 ไมล์ · ห่าง [Tetsumura](tetsumura.md) ~730 ไมล์ · **[Akagane](akagane.md)** ~820 ไมล์ · [Hagane](hagane.md) ~870 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงเหนือของ [Shirasagi](shirasagi.md) ~1,100 ไมล์ · ห่าง [Tetsumura](tetsumura.md) ~180 ไมล์ · **[Akagane](akagane.md)** ~210 ไมล์ · [Hagane](hagane.md) ~220 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้น Akagane |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,900 คน |
@@ -52,4 +52,4 @@
 
 - **[Akagane](akagane.md)**: ไดเมียวเก็บรายได้ — ✨ และสั่งปิดปากเรื่องชั้นล่าง
 - **[Tetsumura](tetsumura.md) / [Hagane](hagane.md)**: แร่จากที่นี่ไปเป็นดาบที่นั่น
-- **[Yamikaze](yamikaze.md)**: ✨ เมืองเดียวที่ใกล้หมู่บ้านนินจารับจ้าง (~1,160 ไมล์) — คนงานที่หนีมักไปทางนั้น
+- **[Yamikaze](yamikaze.md)**: ✨ เมืองเดียวที่ใกล้หมู่บ้านนินจารับจ้าง (~290 ไมล์) — คนงานที่หนีมักไปทางนั้น

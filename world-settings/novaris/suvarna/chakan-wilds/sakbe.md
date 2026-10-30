@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ป้อมเล็กปลายถนนขาว |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าลึกตะวันออก ห่าง [Kukmul](kukmul.md) ~90 ไมล์ · [Chaktun](chaktun.md) ~170 ไมล์ · [Moha](moha.md) ~460 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าลึกตะวันออก ห่าง [Kukmul](kukmul.md) ~80 ไมล์ · [Chaktun](chaktun.md) ~85 ไมล์ · [Moha](moha.md) ~120 ไมล์ |
 | สังกัด | **เผ่า Kuk** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~280 คน |

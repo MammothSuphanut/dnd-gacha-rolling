@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | วัดภูเขากำแพงล้อม · **ฐานของยามาบุชิ** |
-| ที่ตั้ง | Shenzhou → Amanokado · ที่ราบสูงบนเทือกเขา ตะวันตกเฉียงใต้ของ [Kanmon](yugure-forest/kanmon.md) ~1,150 ไมล์ · ตะวันตกของ **[Kamizono](yugure-forest/kamizono.md)** ~2,240 ไมล์ · ห่าง [Kitsunebi](kitsunebi.md) ~1,490 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ที่ราบสูงบนเทือกเขา ตะวันตกเฉียงใต้ของ [Kanmon](yugure-forest/kanmon.md) ~290 ไมล์ · ตะวันตกของ **[Kamizono](yugure-forest/kamizono.md)** ~560 ไมล์ · ห่าง [Kitsunebi](kitsunebi.md) ~370 ไมล์ |
 | สังกัด | **Amanokado** — สภาวิหารรับรอง แต่ยามาบุชิไม่รับคำสั่งจากใคร |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~2,800 คน (ยามาบุชิและศิษย์ ~600) |

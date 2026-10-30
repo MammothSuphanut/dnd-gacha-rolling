@@ -31,3 +31,46 @@ body.mammoth-tokenbar-fix .monks-tokenbar li.item .dice-roll .dice-total:not(.xp
   flex: 0 0 auto;
   padding: 0;
 }
+
+/* --------------------------------------------------------------------------
+   Raise My Hand — queue number after each raised ✋ in the player list
+   (setting "handOrder"; the badge is only added while it is on).
+   -------------------------------------------------------------------------- */
+#players .mammoth-hand-order {
+  display: inline-block;
+  min-width: 1.4em;
+  margin-left: 0.25em;
+  padding: 0 0.3em;
+  border-radius: 0.7em;
+  background: var(--raise-my-hand-yellow, #ffd43b);
+  color: #1a1a1a;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-align: center;
+  vertical-align: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   Player list — long names cut with "…" but the ✋ + queue number stay
+   (setting "playerNameFit"; the JS wraps the name text in .mammoth-name-text).
+   -------------------------------------------------------------------------- */
+body.mammoth-player-name-fit #players .player-name {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  overflow: visible;
+}
+
+body.mammoth-player-name-fit #players .player-name > .mammoth-name-text {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.mammoth-player-name-fit #players .player-name > .raise-my-hand-indicator,
+body.mammoth-player-name-fit #players .player-name > .mammoth-hand-order {
+  flex: none;
+}

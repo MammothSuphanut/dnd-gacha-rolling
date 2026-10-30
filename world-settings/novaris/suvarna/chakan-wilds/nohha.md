@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครป้อมชายฝั่ง · ป่าชายเลน |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งตะวันออก ห่าง [Kuchil](kuchil.md) ~680 ไมล์ · [Chaktun](chaktun.md) ~970 ไมล์ · [Sakbe](sakbe.md) ~1,130 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งตะวันออก ห่าง [Kuchil](kuchil.md) ~140 ไมล์ · [Chaktun](chaktun.md) ~240 ไมล์ · [Sakbe](sakbe.md) ~260 ไมล์ |
 | สังกัด | **เผ่า Ha** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,100 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านบนผาริมทะเล · ศาลบรรพบุรุษชาวเล |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ผาชายฝั่งตะวันตก ห่าง [Laem Sai](laem-sai.md) ~1,200 ไมล์ · ตะวันตกเฉียงเหนือของ [Ban Nong](ban-nong.md) ~1,340 ไมล์ · [Bang Bua](bang-bua.md) ~1,360 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ผาชายฝั่งตะวันตก ห่าง [Laem Sai](laem-sai.md) ~280 ไมล์ · ตะวันตกเฉียงเหนือของ [Ban Nong](ban-nong.md) ~290 ไมล์ · [Bang Bua](bang-bua.md) ~370 ไมล์ |
 | สังกัด | **Pancha Sabha** ในนาม · ชาวเล |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~260 คน |

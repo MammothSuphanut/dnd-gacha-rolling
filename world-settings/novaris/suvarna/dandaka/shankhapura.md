@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองวัดริมทะเล |
-| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งตะวันออก ห่าง [Ratnakara](ratnakara.md) ~130 ไมล์ · [Tarangapura](tarangapura.md) ~640 ไมล์ · [Setu](setu.md) ~790 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งตะวันออก ห่าง [Ratnakara](ratnakara.md) ~55 ไมล์ · [Tarangapura](tarangapura.md) ~160 ไมล์ · [Setu](setu.md) ~180 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,650 คน |

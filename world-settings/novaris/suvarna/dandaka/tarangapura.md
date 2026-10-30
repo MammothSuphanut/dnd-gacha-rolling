@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่ากำแพงล้อม · อู่เรือหลวง |
-| ที่ตั้ง | Suvarna → Dandaka · ปลายคาบสมุทรตะวันออก ห่าง [Ratnakara](ratnakara.md) ~580 ไมล์ · [Shankhapura](shankhapura.md) ~640 ไมล์ · [Pravala](pravala.md) ~1,190 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ปลายคาบสมุทรตะวันออก ห่าง [Ratnakara](ratnakara.md) ~150 ไมล์ · [Shankhapura](shankhapura.md) ~160 ไมล์ · [Pravala](pravala.md) ~300 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,840 คน |

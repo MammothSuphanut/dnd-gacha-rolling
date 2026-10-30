@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำใหญ่ของเผ่า Ehrvarian |
 | ที่ตั้ง | Suvarna → Ehrvarn Highlands · ที่ราบตะวันออก |
 | ต้นน้ำ → ปลายน้ำ | ทุ่งเขียวของ [Grenfeld](../grenfeld.md) → ใต้ป้อม [Ostwacht](../ostwacht.md) → ลานประลอง [Kampfburg](../kampfburg.md) → ไร่ข้าวสาลี [Kornau](../kornau.md) → ทะเล |
-| ความยาว | ~5,040 ไมล์ |
+| ความยาว | ~1,260 ไมล์ |
 | กระแสน้ำ | กว้าง เชี่ยวปานกลาง · ป่าฝนช่วงล่าง |
 | สาขา | [Helmach River](helmach-river.md) |
 | เมืองริมน้ำ | [Grenfeld](../grenfeld.md) · [Ostwacht](../ostwacht.md) · [Kampfburg](../kampfburg.md) · [Kornau](../kornau.md) |

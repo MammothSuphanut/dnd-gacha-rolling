@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านบนยอดดอย · หมู่บ้านหมอผีชาวดอย |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ดอยทางใต้ ห่าง [Doi Mok](doi-mok.md) ~150 ไมล์ · [Pang Ma](pang-ma.md) ~170 ไมล์ · ใต้ของ [Benjasila](pancha-sabha.md) ~1,680 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ดอยทางใต้ ห่าง [Doi Mok](doi-mok.md) ~55 ไมล์ · [Pang Ma](pang-ma.md) ~55 ไมล์ · ใต้ของ [Benjasila](pancha-sabha.md) ~410 ไมล์ |
 | สังกัด | **Pancha Sabha** ในนาม · ชาวดอย |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~1,360 คน |

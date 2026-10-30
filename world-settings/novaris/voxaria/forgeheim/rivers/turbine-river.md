@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำเขื่อน |
 | ที่ตั้ง | Voxaria → Forgeheim · Heartland · ใกล้ Blackcrown Mountain |
 | ต้นน้ำ → ปลายน้ำ | ไหล่เขาเหนือ [Anvilgate](../anvilgate.md) → อ่างเก็บน้ำของเขื่อน [Dynamo Falls](../dynamo-falls.md) → ผ่าน [Cinderyard](../cinderyard.md) → ทะเลสาบข้าง [Redrock Mines](../../heartland/redrock-mines.md) |
-| ความยาว | ~3,220 ไมล์ |
+| ความยาว | ~800 ไมล์ |
 | กระแสน้ำ | ควบคุมโดยเขื่อน · ใต้เขื่อนเชี่ยวจัดเมื่อปล่อยน้ำ |
 | เมืองริมน้ำ | [Dynamo Falls](../dynamo-falls.md) · [Cinderyard](../cinderyard.md) |
 | การเดินทาง | ไม่มีเรือใต้เขื่อน · ถนนวิศวกรรมเลียบฝั่ง |

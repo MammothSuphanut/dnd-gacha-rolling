@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านเผาถ่านในป่า |
-| ที่ตั้ง | Shenzhou → Mizuho · ห่าง **[Hagane](hagane.md)** ~220 ไมล์ · [Tetsumura](tetsumura.md) ~580 ไมล์ · [Kanayama](kanayama.md) ~990 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ห่าง **[Hagane](hagane.md)** ~55 ไมล์ · [Tetsumura](tetsumura.md) ~140 ไมล์ · [Kanayama](kanayama.md) ~250 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้น Akagane |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~280 คน |

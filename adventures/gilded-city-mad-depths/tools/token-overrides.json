@@ -1,0 +1,10 @@
+{
+ "Xanathar Guild Hideout": {
+  "Q5": {"add": [{"actor": "Duergar", "count": 1, "name": "Zemk"}]},
+  "Q7": {"add": [{"actor": "Floon Blagmaar", "count": 1, "name": null}]},
+  "Q12": {"remove": ["Shard Shunner"], "add": [{"actor": "Shard Shunner", "count": 1, "name": "Roscoe Underbough"}]}
+ },
+ "Xanathar Lair": {
+  "X19": {"add": [{"actor": "Xanathar", "count": 1, "name": null}]}
+ }
+}

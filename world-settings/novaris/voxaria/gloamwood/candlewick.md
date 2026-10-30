@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองทำเทียน · เมืองศาสนา |
 | Sector | **57** |
-| ที่ตั้ง | Voxaria → Gloamwood · ป่าตะวันออก ห่าง **[Ravenmoor](ravenmoor.md)** ~290 ไมล์ และ **[Testfire](testfire.md)** ~300 ไมล์ |
+| ที่ตั้ง | Voxaria → Gloamwood · ป่าตะวันออก ห่าง **[Ravenmoor](ravenmoor.md)** ~75 ไมล์ และ **[Testfire](testfire.md)** ~75 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Gloamwood |
 | ระดับอารยธรรม | 5 (✨ ชาวเมืองเลือกใช้แสงเทียนในพิธี) |
 | ประชากร | ~660 คน |

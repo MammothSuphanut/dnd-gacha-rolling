@@ -210,7 +210,7 @@
       // ---- Traits ----
       feat("Ascendant Being", "icons/magic/symbols/star-solid-gold.webp",
         "<p><strong>Tier of Being: Ascendant.</strong> Elro's body and soul are fused into a single will. He doesn't age and can't die of old age.</p>"
-        + "<p><em>Tier Gap:</em> Against a Mortal-tier creature, Elro has a +5 bonus to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it). Mortal creatures gain no penalty, and creatures two or more tiers below him can't affect him at all.</p>"),
+        + "<p><em>Tier Gap:</em> For each tier Elro is above another creature, he gains +5 to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it) and +5 AC against that creature's attacks (Mortal +5). The lower creature's other rolls are unchanged.</p>"),
 
       feat("Legendary Resistance (3/Day)", "icons/magic/symbols/star-solid-gold.webp",
         "<p>If Elro fails a saving throw, he can choose to succeed instead.</p>",

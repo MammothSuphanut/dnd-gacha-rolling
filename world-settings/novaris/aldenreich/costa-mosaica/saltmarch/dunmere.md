@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองเกษตร |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ที่ราบลุ่มริมบึงทางตะวันตกเฉียงเหนือของอาณานิคม ห่าง Tarnwick ~1,030 ไมล์ และ Saltgate ~1,400 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ที่ราบลุ่มริมบึงทางตะวันตกเฉียงเหนือของอาณานิคม ห่าง Tarnwick ~260 ไมล์ และ Saltgate ~330 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Saltmarch |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,100 คน |

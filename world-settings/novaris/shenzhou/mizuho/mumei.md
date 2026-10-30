@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านโรนินบนที่สูง |
-| ที่ตั้ง | Shenzhou → Mizuho (นอกแคว้น) · ที่ราบสูงเหนือของ [Heukseong](../heukseong/_overview.md) ~2,370 ไมล์ · ตะวันตกของ [Ssiat](../jungwon/ssiat.md) ~2,410 ไมล์ · ห่าง [Sasurai](sasurai.md) ~390 ไมล์ · [Kurobane](kurobane.md) ~840 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho (นอกแคว้น) · ที่ราบสูงเหนือของ [Heukseong](../heukseong/_overview.md) ~590 ไมล์ · ตะวันตกของ [Ssiat](../jungwon/ssiat.md) ~600 ไมล์ · ห่าง [Sasurai](sasurai.md) ~95 ไมล์ · [Kurobane](kurobane.md) ~210 ไมล์ |
 | สังกัด | **ไม่ขึ้นกับแคว้นใด** — ที่ที่โชกุนไม่ส่งคนมาเก็บภาษี |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~960 คน (โรนิน ~300 กับครอบครัว) |

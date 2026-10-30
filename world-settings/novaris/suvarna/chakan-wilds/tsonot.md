@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ป้อมบ่อน้ำ · ด่านชายแดน |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายแดนเหนือ ห่าง [Hakan](hakan.md) ~430 ไมล์ · [Pravala](../dandaka/pravala.md) ~700 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายแดนเหนือ ห่าง [Hakan](hakan.md) ~110 ไมล์ · [Pravala](../dandaka/pravala.md) ~170 ไมล์ |
 | สังกัด | **เผ่า Ha** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~450 คน |

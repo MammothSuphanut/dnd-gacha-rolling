@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านท่าข้ามแม่น้ำ |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกของ **[Shirasagi](shirasagi.md)** ~2,280 ไมล์ · ห่าง [Akagane](akagane.md) ~1,390 ไมล์ · [Kurayashiki](kurayashiki.md) ~1,520 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกของ **[Shirasagi](shirasagi.md)** ~590 ไมล์ · ห่าง [Akagane](akagane.md) ~350 ไมล์ · [Kurayashiki](kurayashiki.md) ~380 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้น Mizuchi (ดินแดนแยก) |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~230 คน |

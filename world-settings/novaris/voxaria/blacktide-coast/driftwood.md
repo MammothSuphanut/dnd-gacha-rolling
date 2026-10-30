@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | หมู่บ้านชาวประมง |
 | Sector | **64** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · ชายฝั่งตะวันออกเฉียงเหนือของรัฐ ห่าง **[Lowtide](lowtide.md)** ~430 ไมล์ และ **[Neon Wharf](neon-wharf.md)** ~970 ไมล์ |
+| ที่ตั้ง | Voxaria → Blacktide Coast · ชายฝั่งตะวันออกเฉียงเหนือของรัฐ ห่าง **[Lowtide](lowtide.md)** ~110 ไมล์ และ **[Neon Wharf](neon-wharf.md)** ~240 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 (✨ เรือประมงยังเป็นเรือไม้) |
 | ประชากร | ~390 คน |

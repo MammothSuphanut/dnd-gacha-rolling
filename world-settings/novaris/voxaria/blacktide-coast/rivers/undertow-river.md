@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Voxaria → Gloamwood · Blacktide Coast |
 | ต้นน้ำ → ปลายน้ำ | ทะเลสาบดำของ [Gravemere](../../gloamwood/gravemere.md) ในป่าสนทึบ → ทะเลสาบน้ำนิ่งของ [Calmwater](../calmwater.md) |
-| ความยาว | ~2,870 ไมล์ |
+| ความยาว | ~720 ไมล์ |
 | กระแสน้ำ | **ผิวน้ำนิ่ง แต่กระแสใต้น้ำแรงจนดึงคนจม** |
 | เมืองริมน้ำ | [Gravemere](../../gloamwood/gravemere.md) · [Calmwater](../calmwater.md) |
 | การเดินทาง | แพงานศพช่วงบน · เรือประมงช่วงปลาย |

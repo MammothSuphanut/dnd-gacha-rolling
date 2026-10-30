@@ -143,6 +143,44 @@ def assemble(tpl, W, H, theme, mask, symbols, labels, paths, ground=None, water_
     })
     return m
 
+SAVE_LIMIT = 1 << 30   # Wonderdraft's own save grows its buffer to the next power of two in a 32-bit int,
+                       # so a map whose images pass 1 GiB raw opens fine but saves as an empty file
+
+def shrink(m, k):
+    """Scale an assembled map by k so Wonderdraft can save it: the three RGBA images must stay well under SAVE_LIMIT."""
+    m = rescale(m, k)
+    W2, H2 = int(m['map_width']), int(m['map_height'])
+    assert W2 * H2 * 4 * 3 < SAVE_LIMIT * 0.95, 'still too big for Wonderdraft to save: %dx%d' % (W2, H2)
+    return m
+
+def rescale(m, k):
+    """Scale a map by k: images, map size, symbols, labels, paths. Also used to blow a saved map back up
+    for export only (export_16k.py); a map past SAVE_LIMIT opens and exports but cannot be saved."""
+    W, H = int(m['map_width']), int(m['map_height'])
+    W2, H2 = round(W * k), round(H * k)
+    def image(t):
+        cls, props = t.v
+        src = np.frombuffer(dict(props)['data']['data'].v, np.uint8).reshape(H, W, 4)
+        out = np.empty((H2, W2, 4), np.uint8)
+        for c in range(4):   # channel by channel: RGBA resizes would mix colour into transparent land/sea
+            out[..., c] = np.asarray(Image.fromarray(src[..., c]).resize((W2, H2), Image.BILINEAR))
+        data = memoryview(out).cast('B')
+        return Typed(17, (cls, [(n, dict(v, width=W2, height=H2, data=Typed(20, data)) if n == 'data' else v)
+                                for n, v in props]))
+    same = lambda v: v * k if isinstance(v, float) else round(v * k)   # keep int fields int
+    pt = re.compile(r'Vector2\( ([-\d.e+]+), ([-\d.e+]+) \)')
+    m = dict(m, map_width=float(W2), map_height=float(H2),
+             mask=image(m['mask']), ground=image(m['ground']), water_tint=image(m['water_tint']))
+    m['symbols'] = [dict(s, position=Vec2(s['position'][0] * k, s['position'][1] * k),
+                         scale=Vec2(s['scale'][0] * k, s['scale'][1] * k)) for s in m['symbols']]
+    m['labels'] = [dict(l, position=Vec2(l['position'][0] * k, l['position'][1] * k), size=max(6, round(l['size'] * k)),
+                        outline_size=same(l['outline_size']), glow_size=same(l.get('glow_size', 0)),
+                        extra_spacing_char=same(l['extra_spacing_char']))
+                   for l in m['labels']]
+    m['paths'] = [dict(p, width=p['width'] * k, position=Vec2(p['position'][0] * k, p['position'][1] * k), points=var2str_points(
+                      [(float(x) * k, float(y) * k) for x, y in pt.findall(p['points'])])) for p in m['paths']]
+    return m
+
 # ---------- preview (rough, for checking placement without opening Wonderdraft) ----------
 FONTS = {'Cinzel Decorative': 'fonts/Cinzel Decorative.ttf', 'IM FELL DW Pica': 'fonts/IM Fell DW Pica.ttf',
          'IM FELL English Italic': 'fonts/IM Fell English Italic.ttf'}

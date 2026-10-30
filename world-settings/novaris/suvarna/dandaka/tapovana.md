@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | อาศรมกำแพงล้อม · ที่พักผู้แสวงบุญ |
-| ที่ตั้ง | Suvarna → Dandaka · ไหล่เขาฝั่งตะวันตกของป่า Tamasa ตะวันออกของ [Sandgrave](../deshret/sandgrave.md) ~1,040 ไมล์ · ห่าง [Shantivana](shantivana.md) ~130 ไมล์ · [Meghagiri](meghagiri.md) ~1,330 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ไหล่เขาฝั่งตะวันตกของป่า Tamasa ตะวันออกของ [Sandgrave](../deshret/sandgrave.md) ~260 ไมล์ · ห่าง [Shantivana](shantivana.md) ~35 ไมล์ · [Meghagiri](meghagiri.md) ~330 ไมล์ |
 | สังกัด | **Jyoti Marga** ในนาม — อาศรมฤๅษี |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,500 คน |

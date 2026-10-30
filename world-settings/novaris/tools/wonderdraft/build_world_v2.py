@@ -21,6 +21,7 @@ What v2 adds over v1 (build_world.py, kept as is):
 
 Run:  python tools/wonderdraft/build_world_v2.py [out.wonderdraft_map] [--preview preview.png] [--preview-scale 0.33] [--preview-only]
 Default out: D:/Wonderdraft Map/novaris-world-v2.wonderdraft_map (never v1's file).
+Built at 16200x10800, saved at 10800x7200 (SAVE_SCALE): larger maps open but Wonderdraft cannot save them.
 """
 import json, math, os, re, sys
 import numpy as np
@@ -34,10 +35,11 @@ import build_world as bw
 from build_world import W, H, R, AW, AH, S, az, rng, soft, Layout, INK, PAPER, SEA_INK, STATE_INK, LAVA
 from wdmap import Color
 from wdcommon import (TEMPLATE, sprite, set_files, builtin_theme, symbol as _symbol, label as _label, path as _path,
-                      text_box, assemble, preview)
+                      text_box, assemble, preview, shrink)
 
 SAVE = os.path.join(bw.AZ, 'saves', 'novaris-v3.map')
 OUT = r'D:/Wonderdraft Map/novaris-world-v2.wonderdraft_map'
+SAVE_SCALE = 2 / 3                # 16200x10800 -> 10800x7200, under Wonderdraft's save limit (wdcommon.shrink)
 V1 = os.path.normcase(os.path.abspath(r'D:/Wonderdraft Map/novaris-world-v1.wonderdraft_map'))
 sys.setrecursionlimit(10000)
 CS = (3240, 2160)               # terrain classes are read from Exandria.jpeg at this size (5 map px per px)
@@ -1206,5 +1208,6 @@ if __name__ == '__main__':
         preview(m, alpha, fresh, p, sea=theme['water_colors'][0][:3], scale=sc, ground_img=gsmall)
         print('preview', p)
     if '--preview-only' not in args:
+        m = shrink(m, SAVE_SCALE)
         wdmap.save_stream(out, m)
-        print('wrote', out, '%dx%d' % (W, H), len(m['symbols']), 'symbols', len(m['labels']), 'labels', len(m['paths']), 'paths')
+        print('wrote', out, '%dx%d' % (m['map_width'], m['map_height']), len(m['symbols']), 'symbols', len(m['labels']), 'labels', len(m['paths']), 'paths')

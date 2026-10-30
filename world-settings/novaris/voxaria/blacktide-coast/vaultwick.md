@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองกำแพงล้อม · เมืองห้องนิรภัย |
 | Sector | **28** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · ป่าบนเนินทางเหนือของรัฐ ห่าง **[Silkford](silkford.md)** ~680 ไมล์ และ Port Noir ~1,700 ไมล์ |
+| ที่ตั้ง | Voxaria → Blacktide Coast · ป่าบนเนินทางเหนือของรัฐ ห่าง **[Silkford](silkford.md)** ~170 ไมล์ และ Port Noir ~430 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~2,300 คน |

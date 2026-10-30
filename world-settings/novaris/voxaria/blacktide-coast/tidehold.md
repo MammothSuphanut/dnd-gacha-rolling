@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองกำแพงกันพายุ (บนแหลม/เกาะ) |
 | Sector | **33** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · ปลายแหลมใต้สุดของรัฐ ห่าง **[Wreckers' Cove](wreckers-cove.md)** ~640 ไมล์ และ **[Scraptown](scraptown.md)** ~1,300 ไมล์ |
+| ที่ตั้ง | Voxaria → Blacktide Coast · ปลายแหลมใต้สุดของรัฐ ห่าง **[Wreckers' Cove](wreckers-cove.md)** ~190 ไมล์ และ **[Scraptown](scraptown.md)** ~310 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~2,100 คน |

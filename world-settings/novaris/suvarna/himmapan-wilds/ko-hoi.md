@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านกำแพงไม้บนเกาะ · ตลาดมุกของชาวเล |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · เกาะตะวันตกเฉียงเหนือ ห่าง [Ko Lom](ko-lom.md) ~620 ไมล์ · [Laem Sai](laem-sai.md) ~1,410 ไมล์ · [Huai Kaeo](huai-kaeo.md) ~1,470 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · เกาะตะวันตกเฉียงเหนือ ห่าง [Ko Lom](ko-lom.md) ~150 ไมล์ · [Laem Sai](laem-sai.md) ~390 ไมล์ · [Huai Kaeo](huai-kaeo.md) ~370 ไมล์ |
 | สังกัด | **Pancha Sabha** ในนาม · ชาวเล |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~820 คน |

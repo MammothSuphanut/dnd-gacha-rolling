@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านเลี้ยงอูฐในทุ่งสะวันนา |
-| ที่ตั้ง | Suvarna → Dandaka · ทุ่งสะวันนาเหนือป่า ตะวันออกของ [Ugra Mandir](ugra-mandir.md) ~1,500 ไมล์ · ห่าง [Nilaghat](nilaghat.md) ~1,420 ไมล์ · [Shikhara](shikhara.md) ~1,750 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ทุ่งสะวันนาเหนือป่า ตะวันออกของ [Ugra Mandir](ugra-mandir.md) ~380 ไมล์ · ห่าง [Nilaghat](nilaghat.md) ~360 ไมล์ · [Shikhara](shikhara.md) ~440 ไมล์ |
 | สังกัด | **Jyoti Marga** — เผ่า Kshatra |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~670 คน |

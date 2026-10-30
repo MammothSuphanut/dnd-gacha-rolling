@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ป้อมบนภูเขา · **ห้องโถงของตระกูลยอดเขา** |
-| ที่ตั้ง | Suvarna → Jarnfell · ยอดเขาตะวันตกของ [Giftvik](giftvik.md) ~2,280 ไมล์ · ห่าง [Malmdal](malmdal.md) ~510 ไมล์ · [Vardberg](vardberg.md) ~520 ไมล์ · [Snjofjell](snjofjell.md) ~670 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · ยอดเขาตะวันตกของ [Giftvik](giftvik.md) ~700 ไมล์ · ห่าง [Malmdal](malmdal.md) ~120 ไมล์ · [Vardberg](vardberg.md) ~130 ไมล์ · [Snjofjell](snjofjell.md) ~170 ไมล์ |
 | สังกัด | **ตระกูลยอดเขา** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~750 คน |

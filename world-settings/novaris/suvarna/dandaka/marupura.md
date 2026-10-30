@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองคาราวานชายทะเลทราย |
-| ที่ตั้ง | Suvarna → Dandaka · ขอบเหนือติด Deshret ห่าง [Simhagarh](simhagarh.md) ~310 ไมล์ · [Dhulika](dhulika.md) ~470 ไมล์ · ตะวันตกเฉียงเหนือของ [Ugra Mandir](ugra-mandir.md) ~1,300 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ขอบเหนือติด Deshret ห่าง [Simhagarh](simhagarh.md) ~80 ไมล์ · [Dhulika](dhulika.md) ~120 ไมล์ · ตะวันตกเฉียงเหนือของ [Ugra Mandir](ugra-mandir.md) ~320 ไมล์ |
 | สังกัด | **เผ่า Kshatra** — ✨ เมืองเดียวของเผ่าที่ไม่ขึ้นตรงกับ Jyoti Marga (ปกครองตัวเองตามสัญญาเก่า) |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,200 คน |

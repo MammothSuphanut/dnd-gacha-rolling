@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านสำนักในป่าฝน · **ที่ตั้งสำนัก Jeomchang-pa** 點蒼派 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ป่าฝนตะวันตกเฉียงใต้ของ **[Yujing](../unspecified/yujing.md)** ~2,740 ไมล์ · ห่าง [Ami-san](ami-san.md) ~920 ไมล์ · [Cheongseong-san](cheongseong-san.md) ~2,530 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ป่าฝนตะวันตกเฉียงใต้ของ **[Yujing](../unspecified/yujing.md)** ~690 ไมล์ · ห่าง [Ami-san](ami-san.md) ~230 ไมล์ · [Cheongseong-san](cheongseong-san.md) ~640 ไมล์ |
 | สังกัด | **Jeomchang-pa** — 9 ยอดสำนัก ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~270 คน (ศิษย์ ~30) |

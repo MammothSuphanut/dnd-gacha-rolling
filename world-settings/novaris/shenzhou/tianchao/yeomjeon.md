@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าป้อม · นาเกลือ |
-| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ห่าง **[Heukryong-hang](heukryong-hang.md)** ~250 ไมล์ · [Dojang](dojang.md) ~440 ไมล์ · [Muyeong](muyeong.md) ~650 ไมล์ |
+| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ห่าง **[Heukryong-hang](heukryong-hang.md)** ~50 ไมล์ · [Dojang](dojang.md) ~110 ไมล์ · [Muyeong](muyeong.md) ~220 ไมล์ |
 | สังกัด | **Heukryong-bang** — พันธมิตรอธรรม |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,800 คน |

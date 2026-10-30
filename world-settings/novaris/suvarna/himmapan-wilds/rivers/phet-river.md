@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำของหัวเมืองหลวง |
 | ที่ตั้ง | Suvarna → Himmapan Wilds · หัวเมืองชั้นในรอบ Benjasila |
 | ต้นน้ำ → ปลายน้ำ | เนินเขาวัดของ [Khao Kaeo](../khao-kaeo.md) → ผ่าน [Nakhon Phet](../nakhon-phet.md) · [Bang Bua](../bang-bua.md) → บึงใหญ่ใต้นครห้ายอด [Benjasila](../pancha-sabha.md) |
-| ความยาว | ~4,600 ไมล์ |
+| ความยาว | ~1,150 ไมล์ |
 | กระแสน้ำ | ช้า แยกเป็นคลองนับร้อย · ไม่ลงทะเล — ไปจบในบึง |
 | สาขา | [Nong River](nong-river.md) |
 | เมืองริมน้ำ | [Khao Kaeo](../khao-kaeo.md) · [Nakhon Phet](../nakhon-phet.md) · [Bang Bua](../bang-bua.md) |

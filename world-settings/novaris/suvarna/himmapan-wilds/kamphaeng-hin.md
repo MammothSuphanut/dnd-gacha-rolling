@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองป้อม · หัวเมืองหลวง · ด่านทางใต้ |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · เนินเขาตะวันตกของ [Muang Ngoen](muang-ngoen.md) ~960 ไมล์ · ห่าง [Benjasila](pancha-sabha.md) ~1,480 ไมล์ · [Mae Pha](mae-pha.md) ~1,550 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · เนินเขาตะวันตกของ [Muang Ngoen](muang-ngoen.md) ~240 ไมล์ · ห่าง [Benjasila](pancha-sabha.md) ~370 ไมล์ · [Mae Pha](mae-pha.md) ~390 ไมล์ |
 | สังกัด | **Pancha Sabha** — หัวเมืองชั้นใน |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~3,000 คน (ทหาร ~800) |

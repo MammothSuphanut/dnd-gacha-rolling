@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม · เมืองลานประลอง |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันออกเฉียงเหนือของ [Ehrenburg](ehrvarn-conquest.md) ~1,000 ไมล์ · ห่าง [Ostwacht](ostwacht.md) ~760 ไมล์ · [Grenfeld](grenfeld.md) ~1,020 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันออกเฉียงเหนือของ [Ehrenburg](ehrvarn-conquest.md) ~250 ไมล์ · ห่าง [Ostwacht](ostwacht.md) ~190 ไมล์ · [Grenfeld](grenfeld.md) ~250 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,500 คน |

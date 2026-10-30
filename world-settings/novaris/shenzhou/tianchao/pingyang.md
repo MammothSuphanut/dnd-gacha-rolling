@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองป้อมของราชสำนัก · อุทยานล่าสัตว์หลวง |
-| ที่ตั้ง | Shenzhou → Tianchao · ป่าฝนตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~2,280 ไมล์ · ห่าง [Gaebang-chon](gaebang-chon.md) ~490 ไมล์ · [Huzhou](huzhou.md) ~840 ไมล์ · [Muyeong](muyeong.md) ~1,310 ไมล์ |
+| ที่ตั้ง | Shenzhou → Tianchao · ป่าฝนตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~570 ไมล์ · ห่าง [Gaebang-chon](gaebang-chon.md) ~120 ไมล์ · [Huzhou](huzhou.md) ~210 ไมล์ · [Muyeong](muyeong.md) ~290 ไมล์ |
 | สังกัด | **Tianchao** — ปกครองโดยราชสำนักโดยตรง |
 | ระดับอารยธรรม | 2–3 |
 | ประชากร | ~1,500 คน (ทหารประจำการ ~500) |

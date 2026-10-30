@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่า · ฐานทัพเรือของตระกูล Mizuchi |
-| ที่ตั้ง | Shenzhou → Mizuho · ชายฝั่งตะวันออกเฉียงเหนือของ [Shirasagi](shirasagi.md) ~4,380 ไมล์ · ห่าง [Kanayama](kanayama.md) ~1,880 ไมล์ · [Yamikaze](yamikaze.md) ~1,950 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ชายฝั่งตะวันออกเฉียงเหนือของ [Shirasagi](shirasagi.md) ~1,120 ไมล์ · ห่าง [Kanayama](kanayama.md) ~470 ไมล์ · [Yamikaze](yamikaze.md) ~490 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้นของไดเมียวตระกูล Mizuchi |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,100 คน |

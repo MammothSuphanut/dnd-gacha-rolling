@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองวัด · เมืองผู้แสวงบุญ |
-| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกเฉียงเหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~2,170 ไมล์ · ห่าง [Asagiri](asagiri.md) ~470 ไมล์ และ [Akebono](akebono.md) ~680 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกเฉียงเหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~540 ไมล์ · ห่าง [Asagiri](asagiri.md) ~120 ไมล์ และ [Akebono](akebono.md) ~170 ไมล์ |
 | สังกัด | **Amanokado** — สำนักมิโกะแห่งรุ่งอรุณ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,500 คน (ช่วงเทศกาลผู้แสวงบุญเพิ่มอีกหลายเท่า) |

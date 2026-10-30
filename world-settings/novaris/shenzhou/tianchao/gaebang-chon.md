@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม · **ที่ตั้งใหญ่ของพรรคกระยาจก Gaebang** 丐幇 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~2,520 ไมล์ · ห่าง [Pingyang](pingyang.md) ~490 ไมล์ · [Muyeong](muyeong.md) ~1,250 ไมล์ · [Huzhou](huzhou.md) ~1,260 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~630 ไมล์ · ห่าง [Pingyang](pingyang.md) ~120 ไมล์ · [Muyeong](muyeong.md) ~270 ไมล์ · [Huzhou](huzhou.md) ~310 ไมล์ |
 | สังกัด | **Gaebang** — "1 พรรค" ใน 9 ยอดสำนัก 1 พรรค ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,100 คน (ส่วนใหญ่ "ขอทาน") |

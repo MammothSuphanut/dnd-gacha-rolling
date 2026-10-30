@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำใหญ่ของยุทธภพ |
 | ที่ตั้ง | Shenzhou → Jungwon → Tianchao · ใต้สัน [Cheonsan](../../unspecified/cheonsan.md) |
 | ต้นน้ำ → ปลายน้ำ | ทุ่งนาเมล็ดพันธุ์ของ [Ssiat](../ssiat.md) → ที่ราบกลาง → ทะเลใกล้ [Hwangbo-seong](../../tianchao/hwangbo-seong.md) |
-| ความยาว | ~3,910 ไมล์ |
+| ความยาว | ~980 ไมล์ |
 | กระแสน้ำ | กว้าง น้ำมาก · ลึกจนเรือสำเภาล่องได้ |
 | เมืองริมน้ำ | [Ssiat](../ssiat.md) · [Hwangbo-seong](../../tianchao/hwangbo-seong.md) |
 | การเดินทาง | เรือสำเภา · เรือโดยสารของสำนักคุ้มภัย |

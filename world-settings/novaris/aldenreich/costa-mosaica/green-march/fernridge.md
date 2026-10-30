@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านบนสันเขา |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · สันเขาสูงในป่า ห่าง Hillcrest ~130 ไมล์ และ Fernbrook ~310 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · สันเขาสูงในป่า ห่าง Hillcrest ~55 ไมล์ และ Fernbrook ~100 ไมล์ |
 | สังกัด | **Dwendalian Empire** (ในนาม) — อาณานิคม Green March |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~290 คน |

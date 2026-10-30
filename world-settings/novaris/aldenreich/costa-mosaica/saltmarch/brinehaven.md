@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองนาเกลือ · ท่าเรือชายฝั่ง |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ชายฝั่ง Costa Secca ห่าง Stonecairn ~270 ไมล์ (≈ 11 วัน) |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ชายฝั่ง Costa Secca ห่าง Stonecairn ~70 ไมล์ (≈ 3 วัน) |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Saltmarch |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,900 คน · คนงานนาเกลือเป็นชาวพื้นเมืองเกินครึ่ง |

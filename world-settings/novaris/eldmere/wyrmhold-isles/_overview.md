@@ -10,7 +10,7 @@
 | ประเภท | รังมังกร / หมู่เกาะใหญ่ตอนกลาง |
 | ที่ตั้ง | Eldmere → ตอนกลางค่อนตะวันตก · หลัง [Shellward Reach](../shellward-reach/_overview.md) · ใต้ [Mistholm](../mistholm/_overview.md) · ตะวันตกของ [Halo Peaks](../halo-peaks/_overview.md) |
 | สังกัด | มังกรโบราณ 3 ตน — แต่ละตนครองเกาะของตัวเอง |
-| ขนาด | กลุ่มเกาะที่ใหญ่ที่สุดของ Eldmere กว้างกว่า 5,000 ไมล์ · เกาะมังกร 3 เกาะ + เกาะใหญ่ไร้เจ้าของ Hollowcrown + เกาะเล็กอีก 13 เกาะ |
+| ขนาด | กลุ่มเกาะที่ใหญ่ที่สุดของ Eldmere กว้างกว่า 1,250 ไมล์ · เกาะมังกร 3 เกาะ + เกาะใหญ่ไร้เจ้าของ Hollowcrown + เกาะเล็กอีก 13 เกาะ |
 | ผู้อยู่อาศัย | ✨ **Aurenthys** (มังกรทอง) · **Kaelvoros** (มังกรบรอนซ์) · **Sythrenna** (มังกรเขียว) · สัตว์และสิ่งมีชีวิตที่อาศัยใต้เงามังกร |
 | ภูมิอากาศ | อบอุ่นชื้น · ป่าเขียวทึบและทุ่งหญ้าบนที่ราบ |
 | การเดินทาง | ไม่มีท่าเรือ ไม่มีถนน · เข้าทางทะเลจาก Shellward Reach ต้องผ่านสายตามังกรอย่างน้อยหนึ่งตน |
@@ -62,20 +62,20 @@
 
 | เกาะ | ขนาด | ที่ตั้ง | เป็นอย่างไร |
 |---|---|---|---|
-| [Aurenhold](aurenhold.md) | ~6,870,000 ตร.ไมล์ | เกาะใหญ่ฝั่งตะวันตก ทอดยาวลงใต้ — เกาะที่ใหญ่และสูงที่สุดของ Eldmere | รังมังกร / เกาะใหญ่ |
-| [Hollowcrown](hollowcrown.md) | ~2,710,000 ตร.ไมล์ | เกาะใหญ่ทางเหนือของ Wyrmhold ใต้ Mistholm | เกาะใหญ่ไร้เจ้าของ / ซาก Nethmar |
-| [Kaelreach](kaelreach.md) | ~1,430,000 ตร.ไมล์ | เกาะกลางฝั่งตะวันออกของ Wyrmhold | รังมังกร / เกาะหน้าผา |
-| [Thornmere](thornmere.md) | ~830,000 ตร.ไมล์ | เกาะตะวันตกเฉียงใต้ของ Wyrmhold ใต้ Aurenhold | รังมังกร / เกาะป่าทึบ |
-| [Wingfall](wingfall.md) | ~510,000 ตร.ไมล์ | เกาะทางตะวันตกของ Hollowcrown | เกาะ / ซากกระดูก |
-| [Vinewreath](vinewreath.md) | ~440,000 ตร.ไมล์ | เกาะติด Thornmere ทางตะวันออก | เกาะป่า |
-| [Hoardstone](hoardstone.md) | ~380,000 ตร.ไมล์ | เกาะเล็กตะวันตกของ Wyrmhold ระหว่าง Clawrock กับ Aurenhold | เกาะ / หินเครื่องหมาย |
-| [Scaleskerry](scaleskerry.md) | ~350,000 ตร.ไมล์ | เกาะเล็กตะวันตกเฉียงเหนือของ Wyrmhold | เกาะเล็ก / ลานผลัดเกล็ด |
-| [Goldtail](goldtail.md) | ~320,000 ตร.ไมล์ | เกาะใต้สุดของ Wyrmhold ปลายหางของ Aurenhold | เกาะเล็ก |
-| [Clawrock](clawrock.md) | ~240,000 ตร.ไมล์ | เกาะหินตะวันตกสุดของกลุ่มเหนือ หันไปทาง Shellward Reach | เกาะหิน |
-| [Bronzewatch](bronzewatch.md) | ~94,000 ตร.ไมล์ | เกาะเล็กตะวันออกเฉียงใต้ของ Aurenhold | เกาะ / หอเฝ้า |
-| [Fangisle](fangisle.md) | ~80,000 ตร.ไมล์ | เกาะเล็กนอกชายฝั่งตะวันตกของ Aurenhold | เกาะหิน |
-| [Sunscale](sunscale.md) | ~80,000 ตร.ไมล์ | เกาะในอ่าวระหว่างสองซีกของ Aurenhold | เกาะเล็ก |
-| [Thornlet](thornlet.md) | ~80,000 ตร.ไมล์ | เกาะเล็กใต้ Thornmere | เกาะเล็ก |
-| [Talon Cay](talon-cay.md) | ~67,000 ตร.ไมล์ | เกาะเล็กชายฝั่งตะวันตกเฉียงใต้ของ Aurenhold | เกาะเล็ก |
-| [Mirefang](mirefang.md) | ~40,000 ตร.ไมล์ | เกาะเล็กตะวันออกเฉียงใต้สุดของ Wyrmhold | เกาะหนองน้ำ |
-| [Wyrmling Rock](wyrmling-rock.md) | ~13,000 ตร.ไมล์ | เกาะหินเล็กกลางอ่าวใต้ของ Aurenhold | เกาะหิน |
+| [Aurenhold](aurenhold.md) | ~430,000 ตร.ไมล์ | เกาะใหญ่ฝั่งตะวันตก ทอดยาวลงใต้ — เกาะที่ใหญ่และสูงที่สุดของ Eldmere | รังมังกร / เกาะใหญ่ |
+| [Hollowcrown](hollowcrown.md) | ~170,000 ตร.ไมล์ | เกาะใหญ่ทางเหนือของ Wyrmhold ใต้ Mistholm | เกาะใหญ่ไร้เจ้าของ / ซาก Nethmar |
+| [Kaelreach](kaelreach.md) | ~89,000 ตร.ไมล์ | เกาะกลางฝั่งตะวันออกของ Wyrmhold | รังมังกร / เกาะหน้าผา |
+| [Thornmere](thornmere.md) | ~52,000 ตร.ไมล์ | เกาะตะวันตกเฉียงใต้ของ Wyrmhold ใต้ Aurenhold | รังมังกร / เกาะป่าทึบ |
+| [Wingfall](wingfall.md) | ~32,000 ตร.ไมล์ | เกาะทางตะวันตกของ Hollowcrown | เกาะ / ซากกระดูก |
+| [Vinewreath](vinewreath.md) | ~28,000 ตร.ไมล์ | เกาะติด Thornmere ทางตะวันออก | เกาะป่า |
+| [Hoardstone](hoardstone.md) | ~24,000 ตร.ไมล์ | เกาะเล็กตะวันตกของ Wyrmhold ระหว่าง Clawrock กับ Aurenhold | เกาะ / หินเครื่องหมาย |
+| [Scaleskerry](scaleskerry.md) | ~22,000 ตร.ไมล์ | เกาะเล็กตะวันตกเฉียงเหนือของ Wyrmhold | เกาะเล็ก / ลานผลัดเกล็ด |
+| [Goldtail](goldtail.md) | ~20,000 ตร.ไมล์ | เกาะใต้สุดของ Wyrmhold ปลายหางของ Aurenhold | เกาะเล็ก |
+| [Clawrock](clawrock.md) | ~15,000 ตร.ไมล์ | เกาะหินตะวันตกสุดของกลุ่มเหนือ หันไปทาง Shellward Reach | เกาะหิน |
+| [Bronzewatch](bronzewatch.md) | ~5,900 ตร.ไมล์ | เกาะเล็กตะวันออกเฉียงใต้ของ Aurenhold | เกาะ / หอเฝ้า |
+| [Fangisle](fangisle.md) | ~5,000 ตร.ไมล์ | เกาะเล็กนอกชายฝั่งตะวันตกของ Aurenhold | เกาะหิน |
+| [Sunscale](sunscale.md) | ~5,000 ตร.ไมล์ | เกาะในอ่าวระหว่างสองซีกของ Aurenhold | เกาะเล็ก |
+| [Thornlet](thornlet.md) | ~5,000 ตร.ไมล์ | เกาะเล็กใต้ Thornmere | เกาะเล็ก |
+| [Talon Cay](talon-cay.md) | ~4,200 ตร.ไมล์ | เกาะเล็กชายฝั่งตะวันตกเฉียงใต้ของ Aurenhold | เกาะเล็ก |
+| [Mirefang](mirefang.md) | ~2,500 ตร.ไมล์ | เกาะเล็กตะวันออกเฉียงใต้สุดของ Wyrmhold | เกาะหนองน้ำ |
+| [Wyrmling Rock](wyrmling-rock.md) | ~810 ตร.ไมล์ | เกาะหินเล็กกลางอ่าวใต้ของ Aurenhold | เกาะหิน |

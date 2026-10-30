@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หอสัญญาณบนยอดเขา · ป้อมเฝ้าระวังเหนือ |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ยอดเขาสูงตะวันตกเฉียงเหนือของ [Ehrenburg](ehrvarn-conquest.md) ~2,420 ไมล์ · ห่าง [Westwacht](westwacht.md) ~1,380 ไมล์ · [Grenfeld](grenfeld.md) ~2,500 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ยอดเขาสูงตะวันตกเฉียงเหนือของ [Ehrenburg](ehrvarn-conquest.md) ~610 ไมล์ · ห่าง [Westwacht](westwacht.md) ~340 ไมล์ · [Grenfeld](grenfeld.md) ~630 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~200 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ป้อมบนเขา · **ป้อมใหญ่ของเผ่า Kshatra** |
-| ที่ตั้ง | Suvarna → Dandaka · เขาตอนเหนือติดทะเลทราย ตะวันตกเฉียงเหนือของ [Ugra Mandir](ugra-mandir.md) ~1,010 ไมล์ · ห่าง [Marupura](marupura.md) ~310 ไมล์ · [Dhulika](dhulika.md) ~360 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · เขาตอนเหนือติดทะเลทราย ตะวันตกเฉียงเหนือของ [Ugra Mandir](ugra-mandir.md) ~250 ไมล์ · ห่าง [Marupura](marupura.md) ~80 ไมล์ · [Dhulika](dhulika.md) ~90 ไมล์ |
 | สังกัด | **Jyoti Marga** — เผ่า Kshatra (นักรบที่สาบานรับใช้สภาปราชญ์) |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,800 คน |

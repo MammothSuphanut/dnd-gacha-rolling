@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · เส้นเลือดของเขต Mantle |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · เขต Mantle ทางเหนือ |
 | ต้นน้ำ → ปลายน้ำ | หน้าผาของ [Eaglecrest](../eaglecrest.md) ใน Cloudpeak → ทะเลสาบชายฝั่งใกล้ [Frosthaven](../frosthaven.md) |
-| ความยาว | ~5,950 ไมล์ |
+| ความยาว | ~1,490 ไมล์ |
 | กระแสน้ำ | เชี่ยวช่วงบน กว้างและช้าช่วงล่าง · หมอกหนาตอนเช้า |
 | สาขา | [Thistle River](thistle-river.md) |
 | เมืองริมน้ำ | [Stonepride](../stonepride.md) · [Highmantle](../highmantle.md) · [Lowmantle](../lowmantle.md) |

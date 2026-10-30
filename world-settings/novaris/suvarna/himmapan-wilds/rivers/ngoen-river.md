@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Suwanna River](suwanna-river.md) |
 | ที่ตั้ง | Suvarna → Himmapan Wilds · ล้านนา ถึงเขตเหมืองเงิน |
 | ต้นน้ำ → ปลายน้ำ | หุบเขาของเวียงหลวง [Wiang Chang](../wiang-chang.md) → ผ่าน [Wiang Kham](../wiang-kham.md) · [Muang Ngoen](../muang-ngoen.md) → บรรจบ Suwanna River ใกล้ [Mae Pha](../mae-pha.md) |
-| ความยาว | ~5,180 ไมล์ |
+| ความยาว | ~1,300 ไมล์ |
 | กระแสน้ำ | ใส มีประกายเงินในตะกอน · เชี่ยวช่วงบน |
 | สาขา | [Hin River](hin-river.md) |
 | เมืองริมน้ำ | [Wiang Chang](../wiang-chang.md) · [Muang Ngoen](../muang-ngoen.md) |

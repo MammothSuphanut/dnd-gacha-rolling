@@ -280,7 +280,7 @@
       // ---- Traits ----
       feat("Divine Being", "icons/magic/symbols/star-solid-gold.webp",
         "<p><strong>Tier of Being: Divine (Definition).</strong> Isus has defined himself: <em>\"an oath I broke is a crown no one can take back.\"</em> That definition, not his body, is the source of his existence. He doesn't age and can't die of old age.</p>"
-        + "<p><em>Tier Gap:</em> Against an Ascendant-tier creature, Isus has a +5 bonus to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it); the Ascendant gains no penalty. A creature two or more tiers below him (Mortal) can't affect him at all.</p>"),
+        + "<p><em>Tier Gap:</em> For each tier Isus is above another creature, he gains +5 to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it) and +5 AC against that creature's attacks (Ascendant +5, Mortal +10). The lower creature's other rolls are unchanged.</p>"),
 
       feat("Aura of Hate", "icons/magic/unholy/silhouette-robe-evil-power.webp",
         "<p>While Isus doesn't have the Incapacitated condition, he and each Undead of his choice within 30 feet of him deal an extra 6 damage with melee weapon attacks (included in his attacks).</p>",

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำในตำนาน |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · ป่าใต้ [Greyrock Mountains](../greyrock-mountains.md) ชายแดน Gråmark |
 | ต้นน้ำ → ปลายน้ำ | ทุ่งทุนดราบนภูเขา → ป่ารอบ [Lethe Sanatorium](../lethe-sanatorium.md) → ทะเลชายฝั่งเหนือ |
-| ความยาว | ~1,600 ไมล์ |
+| ความยาว | ~400 ไมล์ |
 | กระแสน้ำ | เย็นจัด นิ่งเกือบทั้งสาย · หมอกหนาลอยเหนือน้ำทั้งวัน |
 | สาขา | [Stillwater River](stillwater-river.md) |
 | เมืองริมน้ำ | [Lethe Sanatorium](../lethe-sanatorium.md) |

@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | หมู่บ้านเฝ้าพุ่มหนาม · ขอบเขต Gate |
 | Sector | **71** |
-| ที่ตั้ง | Voxaria → Thunderspine · ขอบป่าเหนือ The Verge ระหว่าง **[Glimmerhold](glimmerhold.md)** กับ **[Wardline](wardline.md)** (~830 ไมล์ทั้งสองทาง) |
+| ที่ตั้ง | Voxaria → Thunderspine · ขอบป่าเหนือ The Verge ระหว่าง **[Glimmerhold](glimmerhold.md)** กับ **[Wardline](wardline.md)** (~210 ไมล์ทั้งสองทาง) |
 | สังกัด | **Voxaria** — รัฐ Thunderspine |
 | ระดับอารยธรรม | 4 |
 | ประชากร | ~300 คน |

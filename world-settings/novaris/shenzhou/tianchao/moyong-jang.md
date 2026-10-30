@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองคฤหาสน์ริมทะเลสาบ · **บ้านใหญ่ของตระกูล Moyong** 慕容世家 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ตะวันตกเฉียงใต้ของ **[Shiraki](../mizuho/shiraki.md)** ~1,350 ไมล์ · ห่าง **[Nongnim-chae](nongnim-chae.md)** แค่ ~320 ไมล์ · [Mudang-san](mudang-san.md) ~1,410 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ตะวันตกเฉียงใต้ของ **[Shiraki](../mizuho/shiraki.md)** ~340 ไมล์ · ห่าง **[Nongnim-chae](nongnim-chae.md)** แค่ ~80 ไมล์ · [Mudang-san](mudang-san.md) ~350 ไมล์ |
 | สังกัด | **ตระกูล Moyong** — 5 ตระกูลใหญ่ ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,200 คน |

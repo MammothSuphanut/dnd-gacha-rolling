@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองเล็กหน้าตาสะอาด · ศูนย์ฟอกเงิน (ไม่เป็นทางการ) |
 | Sector | **52** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · เนินป่าทางเหนือ ระหว่าง **[Vaultwick](vaultwick.md)** (~680 ไมล์) กับ **[Kingpin Heights](kingpin-heights.md)** (~730 ไมล์) |
+| ที่ตั้ง | Voxaria → Blacktide Coast · เนินป่าทางเหนือ ระหว่าง **[Vaultwick](vaultwick.md)** (~170 ไมล์) กับ **[Kingpin Heights](kingpin-heights.md)** (~180 ไมล์) |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,100 คน |

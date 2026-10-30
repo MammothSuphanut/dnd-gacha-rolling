@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · เนินในป่าฝนห่าง Brinehaven ~270 ไมล์ และ Westreach ~1,160 ไมล์ · เส้นทางป่าลงใต้สู่ Ruins of Serenna |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · เนินในป่าฝนห่าง Brinehaven ~70 ไมล์ และ Westreach ~280 ไมล์ · เส้นทางป่าลงใต้สู่ Ruins of Serenna |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Saltmarch |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,000 คน |

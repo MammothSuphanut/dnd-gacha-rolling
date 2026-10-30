@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านน้ำตก · ที่ชำระกาย (มิโซงิ) |
-| ที่ตั้ง | Shenzhou → Amanokado · หุบเขาห่าง **[Hinode](hinode.md)** ~470 ไมล์ · [Kagaribi](kagaribi.md) ~600 ไมล์ · **[Asahi](asahi.md)** ~660 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · หุบเขาห่าง **[Hinode](hinode.md)** ~120 ไมล์ · [Kagaribi](kagaribi.md) ~150 ไมล์ · **[Asahi](asahi.md)** ~160 ไมล์ |
 | สังกัด | **Amanokado** — สำนักมิโกะแห่งรุ่งอรุณ |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~300 คน |

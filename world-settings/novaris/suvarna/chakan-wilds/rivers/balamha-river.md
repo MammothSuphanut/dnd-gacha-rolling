@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำของเผ่า Balam |
 | ที่ตั้ง | Suvarna → Chakan Wilds · ดินแดนเผ่า Balam ชายแดน Jyoti Marga |
 | ต้นน้ำ → ปลายน้ำ | ป่าใต้ค่ายนักรบ [Tunbalam](../tunbalam.md) → หมู่บ้านพราน [Kejha](../kejha.md) → นครพีระมิดแดง [Chakmuul](../chakmuul.md) → นครหินขาว [Saktun](../saktun.md) → ทะเล |
-| ความยาว | ~1,820 ไมล์ |
+| ความยาว | ~460 ไมล์ |
 | กระแสน้ำ | ปานกลาง · น้ำสีเขียวเข้มใต้ร่มป่าฝน |
 | เมืองริมน้ำ | [Tunbalam](../tunbalam.md) · [Kejha](../kejha.md) · [Chakmuul](../chakmuul.md) · [Saktun](../saktun.md) |
 | การเดินทาง | แคนูซีบา · ถนนขาวเลียบฝั่งช่วงล่าง |

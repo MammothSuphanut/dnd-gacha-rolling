@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองโรงงานกระสุน |
 | Sector | **37** |
-| ที่ตั้ง | Voxaria → Gloamwood · ป่าตะวันออก ห่าง **[Testfire](testfire.md)** ~170 ไมล์ และ **[Candlewick](candlewick.md)** ~460 ไมล์ |
+| ที่ตั้ง | Voxaria → Gloamwood · ป่าตะวันออก ห่าง **[Testfire](testfire.md)** ~40 ไมล์ และ **[Candlewick](candlewick.md)** ~120 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Gloamwood |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,700 คน |

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Aldenreich → Ödland · ป่าผลัดใบทางใต้ของ Lumenvael ใกล้ [Sevenfold](../sevenfold.md) |
 | ต้นน้ำ → ปลายน้ำ | ใต้ซาก [Ruins of Drakara](../ruins-of-drakara.md) → ทะเลสาบใต้ป้อม [Lanternhold](../lanternhold.md) |
-| ความยาว | ~4,490 ไมล์ |
+| ความยาว | ~1,120 ไมล์ |
 | กระแสน้ำ | ปานกลาง · น้ำสีสนิมช่วงบน |
 | สาขา | [Dim River](dim-river.md) |
 | เมืองริมน้ำ | [Lanternhold](../lanternhold.md) |

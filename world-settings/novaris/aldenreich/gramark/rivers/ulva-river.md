@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Aldenreich → Gråmark · ใต้ [Greyrock Mountains](../../dwendalian-empire/greyrock-mountains.md) ใกล้ [Wolfgate](../wolfgate.md) |
 | ต้นน้ำ → ปลายน้ำ | โตรกเขาของ Wolfgate → ผ่านทางตะวันตกของ [Shadeby](../shadeby.md) → ทะเลเหนือใกล้ [Elvenfall Ruins](../elvenfall-ruins.md) |
-| ความยาว | ~2,920 ไมล์ |
+| ความยาว | ~730 ไมล์ |
 | กระแสน้ำ | เชี่ยวในโตรก · เสียงน้ำก้องเหมือนเสียงหอน |
 | เมืองริมน้ำ | [Wolfgate](../wolfgate.md) (ด่าน) |
 | การเดินทาง | ทางเดินในโตรกเลียบน้ำ — ทางหลักเข้า Gråmark จากจักรวรรดิ |

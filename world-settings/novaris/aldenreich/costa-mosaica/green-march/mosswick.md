@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายตัดไม้ (ระดับเมืองเล็ก) |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ป่าทึบทางตะวันตกของ Thornhold (~680 ไมล์) ห่าง Timberton ~810 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ป่าทึบทางตะวันตกของ Thornhold (~170 ไมล์) ห่าง Timberton ~200 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~540 คน · ✨ ผู้ชายเกือบทั้งหมด |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครหอดูดาว · **นครหลวงของเผ่า Kaan** |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลางเหนือสุด ตะวันออกของ [Jyotipura](../dandaka/jyoti-marga.md) ~1,790 ไมล์ · ห่าง [Uhmal](uhmal.md) ~660 ไมล์ · [Somagiri](../dandaka/somagiri.md) ~1,310 ไมล์ · [Kantun](kantun.md) ~1,400 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลางเหนือสุด ตะวันออกของ [Jyotipura](../dandaka/jyoti-marga.md) ~450 ไมล์ · ห่าง [Uhmal](uhmal.md) ~160 ไมล์ · [Somagiri](../dandaka/somagiri.md) ~330 ไมล์ · [Kantun](kantun.md) ~350 ไมล์ |
 | สังกัด | **เผ่า Kaan** — อิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~650 คนในนคร (นักบวชและนักดูดาว) · หมู่บ้านรอบป่าอีกหลายพัน |

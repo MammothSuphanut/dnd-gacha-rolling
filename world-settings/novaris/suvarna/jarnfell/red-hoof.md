@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายฤดูหนาว · ทุ่งเลี้ยงม้า |
-| ที่ตั้ง | Suvarna → Windgrass Plains · ทุ่งตะวันตกของ [Serpent Vault](serpent-vault.md) ~960 ไมล์ · ห่าง [Thunder Butte](thunder-butte.md) ~800 ไมล์ · [Many Fires](many-fires.md) ~1,720 ไมล์ |
+| ที่ตั้ง | Suvarna → Windgrass Plains · ทุ่งตะวันตกของ [Serpent Vault](serpent-vault.md) ~240 ไมล์ · ห่าง [Thunder Butte](thunder-butte.md) ~200 ไมล์ · [Many Fires](many-fires.md) ~420 ไมล์ |
 | สังกัด | **เผ่าม้าลม** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~580 คน |

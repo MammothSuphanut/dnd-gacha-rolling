@@ -95,7 +95,7 @@
       // ---- Traits ----
       feat("Divine Being", "icons/magic/symbols/star-solid-gold.webp",
         "<p><strong>Tier of Being: Divine (Definition).</strong> Jack has defined himself: <em>\"nothing in this world is out of reach of my hands.\"</em> That definition, not his body, is the source of his existence. He doesn't age and can't die of old age.</p>"
-        + "<p><em>Tier Gap:</em> Against an Ascendant-tier creature, Jack has a +5 bonus to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it); the Ascendant gains no penalty. A creature two or more tiers below him (Mortal) can't affect him at all.</p>"),
+        + "<p><em>Tier Gap:</em> For each tier Jack is above another creature, he gains +5 to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it) and +5 AC against that creature's attacks (Ascendant +5, Mortal +10). The lower creature's other rolls are unchanged.</p>"),
 
       feat("Blessing of the Wind", "icons/magic/movement/trail-streak-zigzag-yellow.webp",
         "<p>The wind carries Jack twice as fast as anyone else. His Speed and Climb Speed are doubled (80 feet, included on the sheet).</p>"

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านกำแพงล้อมบนเขา · หอดูดาว |
-| ที่ตั้ง | Suvarna → Dandaka · เขาตะวันออกของ [Matsya](matsya.md) ~1,720 ไมล์ · ห่าง [Granthapura](granthapura.md) ~860 ไมล์ · [Somagiri](somagiri.md) ~1,140 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · เขาตะวันออกของ [Matsya](matsya.md) ~430 ไมล์ · ห่าง [Granthapura](granthapura.md) ~210 ไมล์ · [Somagiri](somagiri.md) ~280 ไมล์ |
 | สังกัด | **Jyoti Marga** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~230 คน |

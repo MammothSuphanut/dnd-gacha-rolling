@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | หมู่บ้านประภาคาร |
 | Sector | **67** |
-| ที่ตั้ง | Voxaria → Gloamwood · แหลมชายฝั่งตะวันตกของรัฐ มองเห็นเกาะ **[Freeharbor](../heartland/freeharbor.md)** (~1,300 ไมล์ ทางทะเล) |
+| ที่ตั้ง | Voxaria → Gloamwood · แหลมชายฝั่งตะวันตกของรัฐ มองเห็นเกาะ **[Freeharbor](../heartland/freeharbor.md)** (~360 ไมล์ ทางทะเล) |
 | สังกัด | **Voxaria** — รัฐ Gloamwood |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~240 คน |

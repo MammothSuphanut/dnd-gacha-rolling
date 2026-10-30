@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองหลวงกำแพงล้อม · **ราชธานีของอาณาจักร Samudra** |
-| ที่ตั้ง | Suvarna → Dandaka · คาบสมุทรตะวันออก ห่าง [Shankhapura](shankhapura.md) แค่ ~130 ไมล์ · [Tarangapura](tarangapura.md) ~580 ไมล์ · [Setu](setu.md) ~920 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · คาบสมุทรตะวันออก ห่าง [Shankhapura](shankhapura.md) แค่ ~55 ไมล์ · [Tarangapura](tarangapura.md) ~150 ไมล์ · [Setu](setu.md) ~230 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** — ขึ้นกับ Jyoti Marga ในนาม |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~4,000 คน |

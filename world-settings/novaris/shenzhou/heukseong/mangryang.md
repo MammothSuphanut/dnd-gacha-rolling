@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายฝึกบนภูเขาสูง |
-| ที่ตั้ง | Shenzhou → เขตมาร (บนแผนที่ของ Akitsu) · ป่าเขาใต้ของ [Shirasagi](../mizuho/shirasagi.md) ~3,190 ไมล์ · ห่าง [Bihyeol](bihyeol.md) ~550 ไมล์ · [Cheonmamun](cheonmamun.md) ~910 ไมล์ · [Heukgok](heukgok.md) ~1,190 ไมล์ |
+| ที่ตั้ง | Shenzhou → เขตมาร (บนแผนที่ของ Akitsu) · ป่าเขาใต้ของ [Shirasagi](../mizuho/shirasagi.md) ~770 ไมล์ · ห่าง [Bihyeol](bihyeol.md) ~140 ไมล์ · [Cheonmamun](cheonmamun.md) ~230 ไมล์ · [Heukgok](heukgok.md) ~300 ไมล์ |
 | สังกัด | **พรรคมารสวรรค์** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~260 คน (ศิษย์ฝึกและครูฝึก) |

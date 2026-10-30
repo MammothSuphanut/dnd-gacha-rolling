@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Ehrach River](ehrach-river.md) |
 | ที่ตั้ง | Suvarna → Ehrvarn Highlands · ใต้ [Helm Peaks](../helm-peaks.md) |
 | ต้นน้ำ → ปลายน้ำ | ภูเขาใต้นครทหาร [Ehrenburg](../ehrvarn-conquest.md) → บรรจบ Ehrach River ใกล้ [Kampfburg](../kampfburg.md) |
-| ความยาว | ~2,340 ไมล์ |
+| ความยาว | ~580 ไมล์ |
 | กระแสน้ำ | เชี่ยว เย็น · ผ่านป่าฝนช่วงล่าง |
 | เมืองริมน้ำ | [Ehrenburg](../ehrvarn-conquest.md) |
 | การเดินทาง | ถนนผู้ท้าชิง Kampfburg–Ehrenburg เลียบฝั่ง |

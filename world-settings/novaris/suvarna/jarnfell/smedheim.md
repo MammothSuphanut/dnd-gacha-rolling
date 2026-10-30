@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม · เมืองช่างตีเหล็ก |
-| ที่ตั้ง | Suvarna → Jarnfell · หุบเหล็ก ห่าง [Jarnstad](jarnstad.md) ~100 ไมล์ · [Kolby](kolby.md) ~180 ไมล์ · [Malmdal](malmdal.md) ~290 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · หุบเหล็ก ห่าง [Jarnstad](jarnstad.md) ~70 ไมล์ · [Kolby](kolby.md) ~120 ไมล์ · [Malmdal](malmdal.md) ~220 ไมล์ |
 | สังกัด | **ตระกูลหุบเหล็ก** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,640 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านชายฝั่ง · หินสามก้อน |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้สุด ห่าง [Yaxkin](yaxkin.md) ~280 ไมล์ · [Sakha](sakha.md) ~360 ไมล์ · [Ekmul](ekmul.md) ~570 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้สุด ห่าง [Yaxkin](yaxkin.md) ~70 ไมล์ · [Sakha](sakha.md) ~90 ไมล์ · [Ekmul](ekmul.md) ~140 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~900 คน |

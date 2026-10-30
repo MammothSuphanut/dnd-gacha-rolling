@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านนินจาบนที่สูง · **หมู่บ้านนินจา Kumokage** |
-| ที่ตั้ง | Shenzhou → Mizuho · ที่ราบสูงตะวันตกเฉียงเหนือของ **[Heukseong](../heukseong/_overview.md)** ~2,370 ไมล์ · ห่าง [Hatamoto](hatamoto.md) ~1,060 ไมล์ · [Tengudani](tengudani.md) ~1,120 ไมล์ · [Otemon](otemon.md) ~1,220 ไมล์ — ไม่มีบนแผนที่ทางการ |
+| ที่ตั้ง | Shenzhou → Mizuho · ที่ราบสูงตะวันตกเฉียงเหนือของ **[Heukseong](../heukseong/_overview.md)** ~590 ไมล์ · ห่าง [Hatamoto](hatamoto.md) ~270 ไมล์ · [Tengudani](tengudani.md) ~280 ไมล์ · [Otemon](otemon.md) ~300 ไมล์ — ไม่มีบนแผนที่ทางการ |
 | สังกัด | **Akitsu Shogunate** — รับใช้โชกุนโดยตรง ไม่ผ่านไดเมียว |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~260 คน ("ชาวนา" ทั้งหมด) |

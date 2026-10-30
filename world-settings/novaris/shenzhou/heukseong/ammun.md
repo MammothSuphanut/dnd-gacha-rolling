@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านด่านคาราวาน |
-| ที่ตั้ง | Shenzhou → เขตมาร · ทุ่งหญ้าเชิงเขา ตะวันตกเฉียงใต้ของ **[Heukseong](_overview.md)** ~2,180 ไมล์ · เหนือของ [Shiraki](../mizuho/shiraki.md) ~2,450 ไมล์ · ห่าง [Heukgok](heukgok.md) ~890 ไมล์ · [Hyeolchon](hyeolchon.md) ~950 ไมล์ |
+| ที่ตั้ง | Shenzhou → เขตมาร · ทุ่งหญ้าเชิงเขา ตะวันตกเฉียงใต้ของ **[Heukseong](_overview.md)** ~540 ไมล์ · เหนือของ [Shiraki](../mizuho/shiraki.md) ~610 ไมล์ · ห่าง [Heukgok](heukgok.md) ~220 ไมล์ · [Hyeolchon](hyeolchon.md) ~240 ไมล์ |
 | สังกัด | **พรรคมารสวรรค์** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~350 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านกำแพงล้อมริมแม่น้ำ |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ริมแม่น้ำ ห่าง [Kantun](kantun.md) ~500 ไมล์ · [Balamkin](balamkin.md) ~510 ไมล์ · [Ekmul](ekmul.md) ~640 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ริมแม่น้ำ ห่าง [Kantun](kantun.md) ~120 ไมล์ · [Balamkin](balamkin.md) ~130 ไมล์ · [Ekmul](ekmul.md) ~160 ไมล์ |
 | สังกัด | **เผ่า Kaan** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~340 คน |

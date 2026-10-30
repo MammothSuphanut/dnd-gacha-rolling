@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านบนยอดเขาสูง |
-| ที่ตั้ง | Suvarna → Jarnfell · ยอดเขาสูงสุดฝั่งตะวันตก ห่าง [Ornfjell](ornfjell.md) ~670 ไมล์ · [Malmdal](malmdal.md) ~900 ไมล์ · [Vardberg](vardberg.md) ~930 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · ยอดเขาสูงสุดฝั่งตะวันตก ห่าง [Ornfjell](ornfjell.md) ~170 ไมล์ · [Malmdal](malmdal.md) ~150 ไมล์ · [Vardberg](vardberg.md) ~230 ไมล์ |
 | สังกัด | **ตระกูลยอดเขา** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~1,050 คน |

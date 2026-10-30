@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อมบนภูเขา · โรงตีหมวกเกราะ |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ภูเขาตะวันตกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~2,060 ไมล์ · ห่าง [Lehrberg](lehrberg.md) ~1,110 ไมล์ · [Ahnenhall](ahnenhall.md) ~1,670 ไมล์ · [Hafenburg](hafenburg.md) ~1,740 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ภูเขาตะวันตกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~520 ไมล์ · ห่าง [Lehrberg](lehrberg.md) ~280 ไมล์ · [Ahnenhall](ahnenhall.md) ~420 ไมล์ · [Hafenburg](hafenburg.md) ~410 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 (✨ ช่างเกราะที่ล้ำที่สุดในทวีป) |
 | ประชากร | ~2,100 คน |

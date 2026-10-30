@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองชายฝั่ง · เมืองเลี้ยงหอยมุก |
-| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งเหนือของคาบสมุทร ห่าง [Shankhapura](shankhapura.md) ~1,060 ไมล์ · [Ratnakara](ratnakara.md) ~1,070 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งเหนือของคาบสมุทร ห่าง [Shankhapura](shankhapura.md) ~280 ไมล์ · [Ratnakara](ratnakara.md) ~260 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,820 คน |

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Aldenreich → Ödland · ชายฝั่งเหนือ |
 | ต้นน้ำ → ปลายน้ำ | หนองบึงที่เต่าของ [Shellwander](../shellwander.md) เดินผ่าน → อ่าว [Greengorge](../greengorge.md) ที่ [Netmouth](../netmouth.md) |
-| ความยาว | ~4,610 ไมล์ |
+| ความยาว | ~1,150 ไมล์ |
 | กระแสน้ำ | กว้างและช้า · ริมฝั่งเป็นโคลนนุ่ม |
 | สาขา | [Lume River](lume-river.md) |
 | เมืองริมน้ำ | [Shellwander](../shellwander.md) (ตามฤดู) · [Netmouth](../netmouth.md) |

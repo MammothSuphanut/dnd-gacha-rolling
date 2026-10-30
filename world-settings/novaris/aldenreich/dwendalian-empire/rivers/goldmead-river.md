@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำชลประทาน |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · [Corevale](../corevale.md) |
 | ต้นน้ำ → ปลายน้ำ | ที่ราบต่ำทางตะวันตกของ [Mirebrook](../mirebrook.md) → กระจายเป็นคลองไร่ของ the Tillage รอบ [Harvel](../harvel.md) |
-| ความยาว | ~7,240 ไมล์ |
+| ความยาว | ~1,810 ไมล์ |
 | กระแสน้ำ | ช้ามาก แทบนิ่ง · ตื้นและกว้าง · ไม่ลงทะเล |
 | สาขา | [Hexwater River](hexwater-river.md) |
 | เมืองริมน้ำ | [Trivane](../trivane.md) · [Wheaton](../wheaton.md) · [Harvel](../harvel.md) |

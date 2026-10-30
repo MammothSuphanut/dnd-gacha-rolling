@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าป้อม · **ฐานกองเรือของชาว Ehrvarian** |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ชายฝั่งตะวันตกเฉียงใต้ ตะวันตกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~3,460 ไมล์ · ห่าง [Hammerstein](hammerstein.md) ~1,740 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ชายฝั่งตะวันตกเฉียงใต้ ตะวันตกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~840 ไมล์ · ห่าง [Hammerstein](hammerstein.md) ~410 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~3,700 คน — เมืองใหญ่ที่สุดของเผ่ารองจาก Ehrenburg |

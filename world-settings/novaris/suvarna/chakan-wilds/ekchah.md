@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านบ่อ cenote |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลาง ห่าง [Ikal](ikal.md) ~460 ไมล์ · [Kantun](kantun.md) ~490 ไมล์ · [Uhmal](uhmal.md) ~810 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลาง ห่าง [Ikal](ikal.md) ~120 ไมล์ · [Kantun](kantun.md) ~120 ไมล์ · [Uhmal](uhmal.md) ~200 ไมล์ |
 | สังกัด | **เผ่า Kaan** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~590 คน |

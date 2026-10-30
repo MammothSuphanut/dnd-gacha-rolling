@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำอุตสาหกรรม |
 | ที่ตั้ง | Voxaria → Forgeheim · Crownshore |
 | ต้นน้ำ → ปลายน้ำ | น้ำใต้ดินที่ไหลออกจากนคร [Deepforge](../deepforge.md) ผ่านประตู [Anvilgate](../anvilgate.md) → ใกล้ [Glasshaven](../../crownshore/glasshaven.md) → ทะเลที่ [Cliffsteps](../../crownshore/cliffsteps.md) |
-| ความยาว | ~4,920 ไมล์ |
+| ความยาว | ~1,230 ไมล์ |
 | กระแสน้ำ | แรง น้ำมาก · ช่วงบนอุ่นและมีกลิ่นกำมะถัน |
 | สาขา | [Glass River](../../crownshore/rivers/glass-river.md) |
 | เมืองริมน้ำ | [Anvilgate](../anvilgate.md) · ✨ ใกล้ [Cinderyard](../cinderyard.md) · [Cliffsteps](../../crownshore/cliffsteps.md) |

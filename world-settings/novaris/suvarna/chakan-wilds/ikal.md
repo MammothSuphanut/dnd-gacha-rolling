@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านกำแพงล้อม · วัดลม |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลาง ห่าง [Kantun](kantun.md) ~460 ไมล์ · [Ekchah](ekchah.md) ~460 ไมล์ · [Hatun](hatun.md) ~660 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลาง ห่าง [Kantun](kantun.md) ~110 ไมล์ · [Ekchah](ekchah.md) ~120 ไมล์ · [Hatun](hatun.md) ~160 ไมล์ |
 | สังกัด | **เผ่า Kaan** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~390 คน |

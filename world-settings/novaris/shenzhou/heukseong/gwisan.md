@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองบนภูเขาสูง · หอคัมภีร์ลับและสุสานผู้อาวุโส |
-| ที่ตั้ง | Shenzhou → เขตมาร · ภูเขา เหนือของ [Shiraki](../mizuho/shiraki.md) ~1,790 ไมล์ · ห่าง [Heukgok](heukgok.md) ~730 ไมล์ · [Cheonmamun](cheonmamun.md) ~1,080 ไมล์ · [Ammun](ammun.md) ~1,170 ไมล์ · ตะวันตกเฉียงใต้ของ **[Heukseong](_overview.md)** ~3,350 ไมล์ |
+| ที่ตั้ง | Shenzhou → เขตมาร · ภูเขา เหนือของ [Shiraki](../mizuho/shiraki.md) ~450 ไมล์ · ห่าง [Heukgok](heukgok.md) ~180 ไมล์ · [Cheonmamun](cheonmamun.md) ~270 ไมล์ · [Ammun](ammun.md) ~290 ไมล์ · ตะวันตกเฉียงใต้ของ **[Heukseong](_overview.md)** ~840 ไมล์ |
 | สังกัด | **พรรคมารสวรรค์** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,800 คน |

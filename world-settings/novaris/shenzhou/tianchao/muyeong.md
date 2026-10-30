@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านท่าเรือ · **ฐานของนักฆ่า Salmak** 殺幕 |
-| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~3,580 ไมล์ · ห่าง [Heukryong-hang](heukryong-hang.md) ~610 ไมล์ · [Yeomjeon](yeomjeon.md) ~650 ไมล์ · [Gaebang-chon](gaebang-chon.md) ~1,250 ไมล์ |
+| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~860 ไมล์ · ห่าง [Heukryong-hang](heukryong-hang.md) ~190 ไมล์ · [Yeomjeon](yeomjeon.md) ~220 ไมล์ · [Gaebang-chon](gaebang-chon.md) ~270 ไมล์ |
 | สังกัด | **Salmak** — พันธมิตรอธรรม |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~770 คน (ชาวประมงเกือบทั้งหมด) |

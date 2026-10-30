@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านพราน |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ห่าง [Ekmul](ekmul.md) ~210 ไมล์ · [Balamkin](balamkin.md) ~300 ไมล์ · [Yaxkin](yaxkin.md) ~440 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ห่าง [Ekmul](ekmul.md) ~50 ไมล์ · [Balamkin](balamkin.md) ~75 ไมล์ · [Yaxkin](yaxkin.md) ~110 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~280 คน |

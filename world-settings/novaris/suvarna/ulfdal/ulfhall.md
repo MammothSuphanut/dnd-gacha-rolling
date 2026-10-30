@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม · **ห้องโถงของตระกูลหมาป่า** |
-| ที่ตั้ง | Suvarna → Ulfdal · หุบเขาแห้ง ตะวันออกเฉียงใต้ของ [Jarlsfall](jarlsfall.md) ~940 ไมล์ · ห่าง [Draugr Crater](draugr-crater.md) ~1,430 ไมล์ · [Nomad's Dig](nomads-dig.md) ~1,550 ไมล์ |
+| ที่ตั้ง | Suvarna → Ulfdal · หุบเขาแห้ง ตะวันออกเฉียงใต้ของ [Jarlsfall](jarlsfall.md) ~240 ไมล์ · ห่าง [Draugr Crater](draugr-crater.md) ~360 ไมล์ · [Nomad's Dig](nomads-dig.md) ~390 ไมล์ |
 | สังกัด | **Varga Republic** ในนาม — **ตระกูลหมาป่า** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~3,200 คน — เมืองใหญ่อันดับสามของ Ulfdal |

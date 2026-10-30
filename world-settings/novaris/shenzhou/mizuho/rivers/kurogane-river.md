@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำทรายเหล็ก |
 | ที่ตั้ง | Shenzhou → Mizuho · แคว้น Akagane |
 | ต้นน้ำ → ปลายน้ำ | ภูเขารังผึ้งของ [Kanayama](../kanayama.md) → ผ่าน [Hagane](../hagane.md) · [Tetsumura](../tetsumura.md) → ทะเลใกล้หมู่บ้านนินจา [Yamikaze](../yamikaze.md) |
-| ความยาว | ~2,380 ไมล์ |
+| ความยาว | ~600 ไมล์ |
 | กระแสน้ำ | เชี่ยว · **ทรายก้นแม่น้ำเป็นสีดำจากทรายเหล็ก** |
 | เมืองริมน้ำ | [Kanayama](../kanayama.md) · [Hagane](../hagane.md) · [Tetsumura](../tetsumura.md) · [Yamikaze](../yamikaze.md) |
 | การเดินทาง | เรือแร่ช่วงบน · ช่วงล่างไม่มีเรือของแคว้น |

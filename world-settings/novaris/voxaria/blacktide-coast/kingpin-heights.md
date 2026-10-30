@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองบนเนิน · ที่มั่นของเจ้าพ่อ |
 | Sector | **41** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · เนินป่าทางเหนือของรัฐ ห่าง **[Silkford](silkford.md)** ~730 ไมล์ และ Windward ~1,400 ไมล์ |
+| ที่ตั้ง | Voxaria → Blacktide Coast · เนินป่าทางเหนือของรัฐ ห่าง **[Silkford](silkford.md)** ~180 ไมล์ และ Windward ~350 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,700 คน |

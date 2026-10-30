@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านเลี้ยงแกะ |
-| ที่ตั้ง | Aldenreich → Dwendalian Empire · เนินหญ้าตะวันตกของเขต Mantle ห่าง Lowmantle ~730 ไมล์ (≈ 30 วัน) |
+| ที่ตั้ง | Aldenreich → Dwendalian Empire · เนินหญ้าตะวันตกของเขต Mantle ห่าง Lowmantle ~180 ไมล์ (≈ 8 วัน) |
 | สังกัด | **Dwendalian Empire** — เขต Mantle |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~310 คน · แกะราว 4,000 ตัว |

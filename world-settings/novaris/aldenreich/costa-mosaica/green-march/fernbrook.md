@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านเก็บสมุนไพร |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ลำธารในป่าห่าง Fernridge ~310 ไมล์ และ Hillcrest ~330 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ลำธารในป่าห่าง Fernridge ~100 ไมล์ และ Hillcrest ~110 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~240 คน · ชาวพื้นเมืองป่าเกือบครึ่ง |
@@ -16,7 +16,7 @@
 | ผู้ดูแล | ✨ **Kräuterin Dora Weide** หมอยาชาวอาณานิคม · คู่กับ **Ixchel** ผู้นำฝั่งชาวพื้นเมือง |
 | เศรษฐกิจ | **สมุนไพรป่าฝน** — ส่ง Soltryce Academy ผ่าน Thornhold · ยาพื้นบ้าน · น้ำผึ้งป่า |
 | ภูมิอากาศ | ร้อนชื้น · ลำธารเย็นไหลผ่านกลางหมู่บ้าน |
-| การเดินทาง | ทางเดินป่าไป Hillcrest และ Timberton (~560 ไมล์) |
+| การเดินทาง | ทางเดินป่าไป Hillcrest และ Timberton (~110 ไมล์) |
 
 ## ภาพรวม
 

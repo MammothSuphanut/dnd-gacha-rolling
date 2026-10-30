@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองโรงเลื่อย |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ริมแม่น้ำในป่าห่าง Thornhold ~600 ไมล์ และ Fernbrook ~560 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ริมแม่น้ำในป่าห่าง Thornhold ~150 ไมล์ และ Fernbrook ~110 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 2 (✨ โรงเลื่อยกังหันน้ำแบบที่ Cogwick ออกแบบ) |
 | ประชากร | ~2,200 คน |

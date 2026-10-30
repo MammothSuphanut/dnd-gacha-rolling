@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านหอดาวบนทุนดรา · ด่านค้าขาย |
-| ที่ตั้ง | Shenzhou → Amanokado · ทุนดราทางเหนือสุด ตะวันออกเฉียงเหนือของ [Kanmon](yugure-forest/kanmon.md) ~3,010 ไมล์ · ห่าง [Shikimura](shikimura.md) ~2,130 ไมล์ — เมืองเหนือสุดของ Amanokado ติดแดน [Tsagaan Tal](../unspecified/tsagaan-tal.md) |
+| ที่ตั้ง | Shenzhou → Amanokado · ทุนดราทางเหนือสุด ตะวันออกเฉียงเหนือของ [Kanmon](yugure-forest/kanmon.md) ~750 ไมล์ · ห่าง [Shikimura](shikimura.md) ~550 ไมล์ — เมืองเหนือสุดของ Amanokado ติดแดน [Tsagaan Tal](../unspecified/tsagaan-tal.md) |
 | สังกัด | **Amanokado** — ตระกูล Hoshimi |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~200 คน |

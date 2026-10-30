@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองฐานนักวิจัยมายา · ขอบเขต Gate |
 | Sector | **59** |
-| ที่ตั้ง | Voxaria → Thunderspine · ป่าด้านตะวันตกของรัฐ ขอบเหนือของเขต Gate **The Verge** · ห่างป้อมมายา **[Mirage Keep](../the-verge/mirage-keep.md)** ~570 ไมล์ |
+| ที่ตั้ง | Voxaria → Thunderspine · ป่าด้านตะวันตกของรัฐ ขอบเหนือของเขต Gate **The Verge** · ห่างป้อมมายา **[Mirage Keep](../the-verge/mirage-keep.md)** ~140 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Thunderspine |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,000 คน |

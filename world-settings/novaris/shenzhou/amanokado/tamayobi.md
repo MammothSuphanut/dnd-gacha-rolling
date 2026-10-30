@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองศาลเจ้ากำแพงล้อม · เมืองเทศกาลวิญญาณ |
-| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกของ **[Kamizono](yugure-forest/kamizono.md)** ~1,690 ไมล์ · ห่าง [Usugure](usugure.md) ~640 ไมล์ · [Terumura](terumura.md) ~750 ไมล์ · [Akebono](akebono.md) ~770 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกของ **[Kamizono](yugure-forest/kamizono.md)** ~420 ไมล์ · ห่าง [Usugure](usugure.md) ~160 ไมล์ · [Terumura](terumura.md) ~190 ไมล์ · [Akebono](akebono.md) ~190 ไมล์ |
 | สังกัด | **Amanokado** — สำนักคนทรงอีกาดำ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,000 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านด่าน (มีรั้วล้อม) |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ทุ่งกกปลายใต้สุดของสี่เมืองแม่น้ำ ห่าง Marshgate ~225 ไมล์ (≈ 9 วัน) |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ทุ่งกกปลายใต้สุดของสี่เมืองแม่น้ำ ห่าง Marshgate ~160 ไมล์ (≈ 7 วัน) |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~210 คน · ทหาร 20 นาย |

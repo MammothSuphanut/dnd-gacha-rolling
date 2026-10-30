@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านท่าน้ำ (ฆาฏ) |
-| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบ ตะวันตกของ [Jyotipura](jyoti-marga.md) ~1,060 ไมล์ · ห่าง [Bekhal](../chakan-wilds/bekhal.md) ~920 ไมล์ · [Dipika](dipika.md) ~1,130 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบ ตะวันตกของ [Jyotipura](jyoti-marga.md) ~270 ไมล์ · ห่าง [Bekhal](../chakan-wilds/bekhal.md) ~230 ไมล์ · [Dipika](dipika.md) ~280 ไมล์ |
 | สังกัด | **Jyoti Marga** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~260 คน |

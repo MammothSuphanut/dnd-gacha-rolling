@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | หมู่บ้านบนยอดเขา |
 | Sector | **72** — เลขสูงสุดของ Voxaria |
-| ที่ตั้ง | Voxaria → Thunderspine · ยอดเขาสูงห่าง **[Boltcrest](boltcrest.md)** ~180 ไมล์ และ Twinfire Gorge ~500 ไมล์ |
+| ที่ตั้ง | Voxaria → Thunderspine · ยอดเขาสูงห่าง **[Boltcrest](boltcrest.md)** ~45 ไมล์ และ Twinfire Gorge ~120 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Thunderspine |
 | ระดับอารยธรรม | 3 (ไฟฟ้าจากเสาล่อฟ้าของตัวเอง ไม่ต่อโครงข่าย) |
 | ประชากร | ~250 คน |

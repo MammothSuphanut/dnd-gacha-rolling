@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านหุบเขา · จุดพบระหว่างคนกับเท็งงุ |
-| ที่ตั้ง | Shenzhou → Mizuho · ห่าง **[Otemon](otemon.md)** แค่ ~190 ไมล์ · [Kurayashiki](kurayashiki.md) ~400 ไมล์ · ตะวันออกเฉียงใต้ของ [Shirasagi](shirasagi.md) ~2,330 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ห่าง **[Otemon](otemon.md)** ~60 ไมล์ · [Kurayashiki](kurayashiki.md) ~90 ไมล์ · ตะวันออกเฉียงใต้ของ [Shirasagi](shirasagi.md) ~560 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้น Kurobane (ดินแดนแยก) |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~190 คน |

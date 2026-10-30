@@ -205,7 +205,7 @@
       // ---- Traits ----
       feat("Divine Being", "icons/magic/symbols/star-solid-gold.webp",
         "<p><strong>Tier of Being: Divine (Definition).</strong> Xear has defined himself: <em>\"a thought is already a spell.\"</em> That definition, not his body, is the source of his existence. He doesn't age and can't die of old age.</p>"
-        + "<p><em>Tier Gap:</em> Against an Ascendant-tier creature, Xear has a +5 bonus to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it); the Ascendant gains no penalty. A creature two or more tiers below him (Mortal) can't affect him at all.</p>"),
+        + "<p><em>Tier Gap:</em> For each tier Xear is above another creature, he gains +5 to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it) and +5 AC against that creature's attacks (Ascendant +5, Mortal +10). The lower creature's other rolls are unchanged.</p>"),
 
       feat("Persisting Definition", "icons/magic/unholy/silhouette-robe-evil-power.webp",
         "<p>When Xear drops to 0 Hit Points, his body dissolves into silent thought instead of dying. He re-forms 1d10 days later in a place where his name is spoken or his spells are studied, with all his Hit Points. He stays gone for good only once no living creature remembers him (or his definition is broken in a way the DM decides).</p>"),

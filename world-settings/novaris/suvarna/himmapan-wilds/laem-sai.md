@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านชายหาด · ค่ายต่อเรือของชาวเล |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ชายฝั่งตะวันตก ห่าง [Pha Daeng](pha-daeng.md) ~1,200 ไมล์ · [Ko Hoi](ko-hoi.md) ~1,410 ไมล์ · ตะวันตกของ [Huai Kaeo](huai-kaeo.md) ~1,470 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ชายฝั่งตะวันตก ห่าง [Pha Daeng](pha-daeng.md) ~280 ไมล์ · [Ko Hoi](ko-hoi.md) ~390 ไมล์ · ตะวันตกของ [Huai Kaeo](huai-kaeo.md) ~400 ไมล์ |
 | สังกัด | **Pancha Sabha** ในนาม · ชาวเล |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~1,500 คน |

@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองรีไซเคิลตะกรันแร่ |
 | Sector | **55** |
-| ที่ตั้ง | Voxaria → Forgeheim · หุบเขาใต้ ห่าง **[Veinlight](veinlight.md)** ~490 ไมล์ และ **[Dynamo Falls](dynamo-falls.md)** ~835 ไมล์ |
+| ที่ตั้ง | Voxaria → Forgeheim · หุบเขาใต้ ห่าง **[Veinlight](veinlight.md)** ~120 ไมล์ และ **[Dynamo Falls](dynamo-falls.md)** ~210 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 5 (ยากจนที่สุดในรัฐที่ยังมีไฟฟ้า) |
 | ประชากร | ~820 คน |

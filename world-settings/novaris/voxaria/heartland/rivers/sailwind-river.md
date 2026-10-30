@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Voxaria → Blacktide Coast · Heartland |
 | ต้นน้ำ → ปลายน้ำ | หน้าผาของ [Windward](../../blacktide-coast/windward.md) → ทะเลสาบรอบเกาะ [Regatta](../regatta.md) |
-| ความยาว | ~1,350 ไมล์ |
+| ความยาว | ~340 ไมล์ |
 | กระแสน้ำ | สั้นและแรง · ลมพัดตามลำน้ำตลอดเวลา |
 | เมืองริมน้ำ | [Windward](../../blacktide-coast/windward.md) · [Regatta](../regatta.md) |
 | การเดินทาง | เรือใบล่องได้ทั้งขาลงและขาขึ้นเพราะลม |

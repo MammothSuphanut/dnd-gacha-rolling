@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองศาลเจ้ากำแพงล้อม · **สำนักใหญ่ของสำนักมิโกะแห่งรุ่งอรุณ** |
-| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกไกลของ **[Kamizono](yugure-forest/kamizono.md)** ~2,570 ไมล์ · ห่าง [Terumura](terumura.md) ~280 ไมล์ และ [Kagaribi](kagaribi.md) ~380 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกไกลของ **[Kamizono](yugure-forest/kamizono.md)** ~640 ไมล์ · ห่าง [Terumura](terumura.md) ~75 ไมล์ และ [Kagaribi](kagaribi.md) ~90 ไมล์ |
 | สังกัด | **Amanokado** — สภาวิหารฝากเมืองให้สำนักมิโกะดูแล |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,700 คน (มิโกะและศิษย์ ~400) |

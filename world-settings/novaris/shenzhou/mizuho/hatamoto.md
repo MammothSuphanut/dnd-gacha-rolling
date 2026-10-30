@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านซามูไร · ที่ดินศักดินาของขุนนางสายตรง |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงใต้ของ **[Shirasagi](shirasagi.md)** ~1,720 ไมล์ · ห่าง [Kurayashiki](kurayashiki.md) ~620 ไมล์ · [Tengudani](tengudani.md) ~680 ไมล์ · [Otemon](otemon.md) ~880 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงใต้ของ **[Shirasagi](shirasagi.md)** ~420 ไมล์ · ห่าง [Kurayashiki](kurayashiki.md) ~150 ไมล์ · [Tengudani](tengudani.md) ~160 ไมล์ · [Otemon](otemon.md) ~220 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — ดินแดนสายตรงของโชกุน |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~480 คน |

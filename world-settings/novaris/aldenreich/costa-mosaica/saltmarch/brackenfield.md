@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านไร่ของผู้อพยพ |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ที่ราบป่าเฟิร์นกลางอาณานิคม ห่าง Tarnwick ~1,050 ไมล์ และ Pietralba ~1,370 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Saltmarch](_overview.md) · ที่ราบป่าเฟิร์นกลางอาณานิคม ห่าง Tarnwick ~260 ไมล์ และ Pietralba ~340 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Saltmarch |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~560 คน |

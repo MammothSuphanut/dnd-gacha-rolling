@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำชายแดน Jyoti Marga กับเผ่ามายา |
 | ที่ตั้ง | Suvarna → Dandaka · ฝั่งใต้ของ [Lake Prabha](../lake-prabha.md) |
 | ต้นน้ำ → ปลายน้ำ | ป่าฝนของเผ่า Balam ที่ [Bekhal](../../chakan-wilds/bekhal.md) → หมู่บ้านประมง [Matsya](../matsya.md) → ทะเลสาบเรืองแสง Lake Prabha หน้านคร [Jyotipura](../jyoti-marga.md) |
-| ความยาว | ~3,320 ไมล์ |
+| ความยาว | ~830 ไมล์ |
 | กระแสน้ำ | ปานกลาง · ปลายน้ำเรืองแสงฟ้าจาง ๆ ตอนกลางคืน |
 | สาขา | [Kusha River](kusha-river.md) · [Padmini River](padmini-river.md) |
 | เมืองริมน้ำ | [Bekhal](../../chakan-wilds/bekhal.md) · [Matsya](../matsya.md) · ✨ ใกล้ [Nilaghat](../nilaghat.md) |

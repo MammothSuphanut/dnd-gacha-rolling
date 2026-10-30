@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Shellwater River](shellwater-river.md) |
 | ที่ตั้ง | Aldenreich → Ödland · เขตชาวทุ่งทางเหนือของ Lumenvael |
 | ต้นน้ำ → ปลายน้ำ | ทุ่งรอบ [Asterin](../asterin.md) → บรรจบ Shellwater River ทางใต้ของ [Netmouth](../netmouth.md) |
-| ความยาว | ~6,060 ไมล์ |
+| ความยาว | ~1,520 ไมล์ |
 | กระแสน้ำ | ปานกลาง · น้ำใสจนเห็นก้นในแสงจันทร์ |
 | เมืองริมน้ำ | [Asterin](../asterin.md) |
 | การเดินทาง | เรือส่งเสบียงของ Aurora Watch · ทางทุ่งเลียบฝั่ง |

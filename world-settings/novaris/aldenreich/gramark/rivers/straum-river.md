@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Kalda River](kalda-river.md) |
 | ที่ตั้ง | Aldenreich → Gråmark · ป่า [Greypine](../greypine.md) ถึง [Hoarfield](../hoarfield.md) |
 | ต้นน้ำ → ปลายน้ำ | สวนกระดูกของ [Bloomgrove](../bloomgrove.md) → บรรจบ Kalda River ใกล้ทุ่งของ [Grakmoot](../grakmoot.md) |
-| ความยาว | ~3,740 ไมล์ |
+| ความยาว | ~940 ไมล์ |
 | กระแสน้ำ | เชี่ยว ไม่แข็งตัวสนิทแม้กลางฤดูหนาว |
 | สาขา | [Brunn River](brunn-river.md) |
 | เมืองริมน้ำ | [Bloomgrove](../bloomgrove.md) |

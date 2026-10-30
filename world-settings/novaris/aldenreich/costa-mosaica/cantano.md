@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองอิสระ · เมืองกำแพงล้อม |
-| ที่ตั้ง | Aldenreich → Costa Mosaica · ป่าฝนทางใต้ของอาณานิคม Saltmarch ห่าง Ruins of Serenna ~1,360 ไมล์ · Guardia ~1,850 ไมล์ · Westreach ~1,770 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica · ป่าฝนทางใต้ของอาณานิคม Saltmarch ห่าง Ruins of Serenna ~340 ไมล์ · Guardia ~460 ไมล์ · Westreach ~440 ไมล์ |
 | สังกัด | **ไม่มี** — Salt Accord กำหนดให้เป็นเขตกันชนระหว่าง Saltmarch กับ Concord |
 | ระดับอารยธรรม | 2–3 |
 | ประชากร | ~2,100 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านท่าเรือ · สะพานหินข้ามทะเล |
-| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งเหนือของคาบสมุทร ห่าง [Shankhapura](shankhapura.md) ~790 ไมล์ · [Ratnakara](ratnakara.md) ~920 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ชายฝั่งเหนือของคาบสมุทร ห่าง [Shankhapura](shankhapura.md) ~180 ไมล์ · [Ratnakara](ratnakara.md) ~230 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** — ✨ เมืองเดียวที่ทั้ง Samudra และ Imperium Solis อ้างสิทธิ์ |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~340 คน |

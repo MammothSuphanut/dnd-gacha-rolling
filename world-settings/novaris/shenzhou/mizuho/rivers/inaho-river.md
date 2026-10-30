@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำใหญ่ของ Mizuho |
 | ที่ตั้ง | Shenzhou → Mizuho · จากชายแดน Jungwon ผ่านแคว้น Akagane ถึงแคว้น Mizuchi |
 | ต้นน้ำ → ปลายน้ำ | ป่าเผาถ่าน [Sumiyaki](../sumiyaki.md) → ใกล้ปราสาท [Akagane](../akagane.md) → ท่าข้าม [Kawabata](../kawabata.md) → ทะเล |
-| ความยาว | ~4,640 ไมล์ |
+| ความยาว | ~1,160 ไมล์ |
 | กระแสน้ำ | กว้าง ไหลช้าช่วงล่าง · น้ำหลากทุกฤดูฝน |
 | สาขา | [Nanashi River](nanashi-river.md) |
 | เมืองริมน้ำ | [Sumiyaki](../sumiyaki.md) · [Kawabata](../kawabata.md) · ✨ ใกล้ [Akagane](../akagane.md) |

@@ -9,7 +9,130 @@ Hooks.once("init", () => {
   registerTokenBarFix();
   registerPhbTravelPace();
   registerTierGap();
+  registerNoteAnchor();
+  registerHandOrder();
+  registerPlayerNameFit();
 });
+
+/* --------------------------------------------------------------------------
+   Player list: long names no longer hide the raised hand
+   Core cuts .player-name with "…", and raise-my-hand appends its ✋ inside
+   that same span, so a long "Player [Character]" pushes the hand (and the
+   queue number) out of sight. This wraps the name text in its own span; the
+   CSS (body.mammoth-player-name-fit) then cuts only that text and keeps the
+   ✋ + number at the end. The full name is still in the hover tooltip.
+   -------------------------------------------------------------------------- */
+function registerPlayerNameFit() {
+  const key = "playerNameFit";
+  game.settings.register(MODULE_ID, key, {
+    name: "Player list: keep raised hand visible on long names",
+    hint: "Shortens a long player/character name with … so the ✋ and its queue number always fit in the player list.",
+    scope: "client",
+    config: true,
+    type: Boolean,
+    default: true,
+    onChange: value => document.body.classList.toggle("mammoth-player-name-fit", value)
+  });
+  document.body.classList.toggle("mammoth-player-name-fit", game.settings.get(MODULE_ID, key));
+  Hooks.on("renderPlayers", (app, html) => {
+    const root = html instanceof HTMLElement ? html : html?.[0];
+    for ( const name of root?.querySelectorAll(".player-name") ?? [] ) {
+      const text = [...name.childNodes].find(n => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+      if ( !text ) continue;
+      const label = Object.assign(document.createElement("span"), { className: "mammoth-name-text" });
+      text.replaceWith(label);
+      label.append(text);
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
+   Raise My Hand: queue number next to each raised hand
+   raise-my-hand only puts a ✋ (.raise-my-hand-indicator) after the player's
+   name. This watches the player list and adds 1, 2, 3… after each hand in the
+   order the hands went up; lowering a hand moves everyone behind it up one.
+   The order is kept per client, from when each ✋ appeared on that screen,
+   so a client that reloads starts a fresh queue (raise-my-hand drops its
+   icons on reload too).
+   -------------------------------------------------------------------------- */
+const handQueue = [];
+let handObserved = null;
+
+function registerHandOrder() {
+  const key = "handOrder";
+  game.settings.register(MODULE_ID, key, {
+    name: "Raise My Hand: show queue number",
+    hint: "Adds 1, 2, 3… next to each raised hand in the player list, in the order the hands went up.",
+    scope: "client",
+    config: true,
+    type: Boolean,
+    default: true,
+    onChange: () => syncHandOrder()
+  });
+  if ( !game.modules.get("raise-my-hand")?.active ) return;
+
+  const observer = new MutationObserver(() => syncHandOrder());
+  const watch = root => {
+    if ( !root || root === handObserved ) return syncHandOrder();
+    observer.disconnect();
+    observer.observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
+    handObserved = root;
+    syncHandOrder();
+  };
+  Hooks.on("renderPlayers", (app, html) => watch(html instanceof HTMLElement ? html : html?.[0]));
+  Hooks.once("ready", () => watch(ui.players?.element));
+}
+
+function syncHandOrder() {
+  if ( !handObserved ) return;
+  const icons = [...handObserved.querySelectorAll(".raise-my-hand-indicator:not(.fade-out)")];
+  const raised = icons.map(icon => icon.dataset.userId);
+
+  // Drop lowered hands, then append new ones in the order they appeared
+  for ( let i = handQueue.length - 1; i >= 0; i-- ) {
+    if ( !raised.includes(handQueue[i]) ) handQueue.splice(i, 1);
+  }
+  for ( const id of raised ) if ( !handQueue.includes(id) ) handQueue.push(id);
+
+  const show = game.settings.get(MODULE_ID, "handOrder");
+  for ( const badge of handObserved.querySelectorAll(".mammoth-hand-order") ) {
+    const icon = badge.previousElementSibling;
+    if ( !show || !icon?.matches(".raise-my-hand-indicator:not(.fade-out)") ) badge.remove();
+  }
+  if ( !show ) return;
+  for ( const icon of icons ) {
+    const number = String(handQueue.indexOf(icon.dataset.userId) + 1);
+    let badge = icon.nextElementSibling;
+    if ( !badge?.matches(".mammoth-hand-order") ) {
+      badge = Object.assign(document.createElement("span"), { className: "mammoth-hand-order" });
+      icon.after(badge);
+    }
+    if ( badge.textContent !== number ) badge.textContent = number;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Map pins open at a heading
+   Core notes only remember a journal page. A note with
+   flags["mammoth-tweaks"].anchor (a page TOC slug) also scrolls the page to
+   that heading on double-click — e.g. room "6d. Sleeping Quarters" on a map.
+   -------------------------------------------------------------------------- */
+function registerNoteAnchor() {
+  const key = "noteAnchor";
+  game.settings.register(MODULE_ID, key, {
+    name: "Map pins: open at the room's heading",
+    hint: "Double-clicking a map pin that remembers a heading (set by the Link-Gilded-City-Pins macro) scrolls its journal page straight to that heading.",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+  Hooks.on("activateNote", (note, options) => {
+    if ( !game.settings.get(MODULE_ID, key) ) return;
+    const anchor = note.document.getFlag(MODULE_ID, "anchor");
+    if ( anchor && options.pageId ) options.anchor = anchor;
+  });
+}
 
 /* --------------------------------------------------------------------------
    Monk's TokenBar request-roll card fix
@@ -132,7 +255,7 @@ function formatTime(totalMinutes) {
 
 /* --------------------------------------------------------------------------
    Tier of Being: automatic Tier Gap bonus
-   House rule (codex/Core-Rules/cosmology-and-tier-of-being.md): a creature gets +5 per tier
+   House rule (codex/Core-Rules/astral-nexus-lore.md): a creature gets +5 per tier
    it is above the other creature on every d20 Test that involves it, and +5 AC per
    tier against that creature's attacks. Apart from that AC, the lower side's rolls
    are unchanged. Tier is read from the "<Tier> Being" feature, then from "Tier of Being:

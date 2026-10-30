@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองวัดบนเขา · หัวเมืองหลวง |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · เนินเขาตะวันออกของ [Ban Klang](ban-klang.md) ~1,050 ไมล์ · ห่าง [Nakhon Phet](nakhon-phet.md) ~1,040 ไมล์ · [Ban Nong](ban-nong.md) ~1,340 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · เนินเขาตะวันออกของ [Ban Klang](ban-klang.md) ~260 ไมล์ · ห่าง [Nakhon Phet](nakhon-phet.md) ~240 ไมล์ · [Ban Nong](ban-nong.md) ~360 ไมล์ |
 | สังกัด | **Pancha Sabha** — หัวเมืองชั้นใน |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,300 คน (พระและสามเณร ~300) |

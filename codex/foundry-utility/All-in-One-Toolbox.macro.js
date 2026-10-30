@@ -6,9 +6,10 @@
 // 3. Swap Initiative
 // 4. Trigger Clone View (Lock View module)
 // 5. Dice Tools: บังคับหน้าสูงสุด / ต่ำสุด / เจาะจง (1-20)
-//    (ซ่อนไว้ในถาดพับได้ กดลูกศรใต้ Combat Tools เพื่อเปิด/ปิด)
+//    (ซ่อนไว้ในถาดพับได้ คลิกแถบว่างใต้หมวดสุดท้ายเพื่อเปิด/ปิด — ตั้งใจให้มองไม่เห็น)
 // 6. Token Light: ตั้ง Bright / Dim light ให้ Token ที่เลือก
 // 7. Macro Shortcuts: ปุ่มเปิด macro อื่น (Sound Board, Encounter Table Directory ฯลฯ)
+// 8. Tier & Legendary: เติมระดับตัวตน / LA LR สำรอง ให้ token ที่เลือก หรือทั้งโลก
 // ============================================================
 
 // ---- ตั้งค่ารูปฮูดตรงนี้ ----
@@ -249,6 +250,392 @@ async function runMacroShortcut(uuid) {
   await macro.execute();
 }
 
+// ------------------------------------------------------------
+// ฟังก์ชันที่ 8: Tier of Being + Legendary สำรอง
+// ทำงานแบบเดียวกับ Set-Tier-Of-Being.macro.js และ Add-Legendary-Reserve.macro.js
+// (RAISE_EXISTING = false) — ข้อความ/ตัวเลขต้องตรงกับสองไฟล์นั้น ถ้าแก้ที่นั่นให้แก้ที่นี่ด้วย
+// - token ที่เลือก: เปิดหน้าต่างให้เลือกระดับ / ตั้ง LA LR เอง (token แบบ unlinked แก้เฉพาะ token ตัวนั้น)
+// - ทั้งโลก: ขึ้นตารางให้ดูก่อน กดยืนยันถึงจะทำ
+// - ยกตัวเลขที่ตั้งไว้แล้ว / ถอด Reserve ออก: ใช้ macro ไฟล์เดิม (ไม่มีปุ่ม กันเผลอกด)
+// ------------------------------------------------------------
+const TIER_SKIP_FOLDERS = ["Travel Pace Token"];
+const TIER_LIST = [                            // [ชื่อ, เลเวล/CR สูงสุด, Legendary Action, Legendary Resistance, stage]
+  ["Mortal", 10, 3, 2, "Void"],
+  ["Ascendant", 20, 4, 3, "Premise"],
+  ["Divine", 30, 5, 4, "Definition"],
+  ["Sovereign", 40, 6, 5, "Name"],
+  ["Law", Infinity, 7, 6, "Genesis"]
+];
+const TIER_NAMES = TIER_LIST.map(t => t[0]);
+const TIER_NAME_RE = new RegExp(`^(${TIER_NAMES.join("|")}) Being$`, "i");
+const TIER_DESC_RE = new RegExp(`Tier of Being:\\s*(${TIER_NAMES.join("|")})`, "i");
+const TIER_GAP_RE = /<p><em>Tier Gap:<\/em>[\s\S]*?<\/p>/i;
+const TIER_ITEM_FLAG = "tierTrait";            // flags.world.tierTrait = feature ระดับตัวตนที่ macro เขียน
+const RESERVE_FLAG = "legendaryReserve";       // flags.world.legendaryReserve = ของที่ Legendary สำรองใส่
+const TIER_FLAG = "tierOfBeing";               // flags.world.tierOfBeing บน actor = ชื่อระดับ
+
+const tierNorm = s => TIER_NAMES.find(n => n.toLowerCase() === s?.toLowerCase());
+
+function tierSkipped(actor) {
+  if (!["character", "npc"].includes(actor.type)) return true;
+  if (actor.getFlag("item-piles", "data")?.enabled) return true;
+  for (let f = actor.folder; f; f = f.folder) if (TIER_SKIP_FOLDERS.includes(f.name)) return true;
+  return false;
+}
+
+function tierItemOf(actor) {
+  return actor.items.find(i => TIER_NAME_RE.test(i.name))
+    ?? actor.items.find(i => TIER_DESC_RE.test(i.system.description?.value ?? ""));
+}
+
+// ระดับ: ชื่อ feature → "Tier of Being: X" ในคำอธิบาย → flag → เพดานเลเวล (PC) / CR (NPC)
+function tierOfActor(actor) {
+  const item = tierItemOf(actor);
+  const n = actor.type === "character" ? (actor.system.details?.level ?? 0) : (actor.system.details?.cr ?? 0);
+  return tierNorm(item?.name.match(TIER_NAME_RE)?.[1])
+    ?? tierNorm(item?.system.description?.value?.match(TIER_DESC_RE)?.[1])
+    ?? tierNorm(actor.getFlag("world", TIER_FLAG))
+    ?? TIER_LIST.find(t => n <= t[1])[0];
+}
+
+function tierGapText(name, tier) {
+  const i = TIER_NAMES.indexOf(tier);
+  if (i === 0) return `<p><em>Tier Gap:</em> Mortal is the lowest tier. A creature above ${name} gains +5 per tier of difference `
+    + `to every d20 Test that involves ${name} and +5 AC per tier against ${name}'s attacks `
+    + `(Ascendant +5, Divine +10, Sovereign +15, Law +20). ${name}'s other rolls are unchanged.</p>`;
+  const below = TIER_NAMES.slice(0, i).reverse().map((n, k) => `${n} +${(k + 1) * 5}`).join(", ");
+  return `<p><em>Tier Gap:</em> For each tier ${name} is above another creature, it gains +5 to every d20 Test that involves `
+    + `that creature (its attack rolls against it, its saving throws against its effects, and contested checks with it) `
+    + `and +5 AC against that creature's attacks (${below}). The lower creature's other rolls are unchanged.</p>`;
+}
+
+function tierFullText(name, tier) {
+  const stage = TIER_LIST.find(t => t[0] === tier)[4];
+  const nature = {
+    Mortal: `${name}'s body and soul are still separate.`,
+    Ascendant: `${name}'s body and soul are fused into a single will. It doesn't age and can't die of old age.`,
+    Divine: `${name} exists through its own Definition, not its body. It doesn't age and can't die of old age.`,
+    Sovereign: `${name} bears a Name and is limitless within it. It doesn't age and can't die of old age.`,
+    Law: `${name} is a law of the world itself. It doesn't age and can't die of old age.`
+  }[tier];
+  const todo = { Divine: "Domain", Sovereign: "Name + Signature Move", Law: "Global Passive" }[tier];
+  return `<p><strong>Tier of Being: ${tier} (${stage}).</strong> ${nature}</p>${tierGapText(name, tier)}`
+    + (todo ? `<p><em>DM:</em> this tier also has a ${todo} (NPC-Design-system.md §3). Not designed yet.</p>` : "");
+}
+
+// แผนของ actor 1 ตัว: null = ครบแล้ว / add = ใส่ใหม่ / rewrite = เขียนข้อความที่ macro ทำใหม่ /
+// gap only = ข้อความที่เขียนเอง เปลี่ยนแค่ย่อหน้า Tier Gap / gap added = ข้อความเขียนเองที่ไม่มีย่อหน้า Tier Gap
+function planTier(actor) {
+  const tier = tierOfActor(actor);
+  const name = foundry.utils.escapeHTML(actor.name);
+  const item = tierItemOf(actor);
+  const desc = item?.system.description?.value ?? "";
+  const macroMade = !!(item?.getFlag("world", TIER_ITEM_FLAG) || item?.getFlag("world", RESERVE_FLAG));
+  let action, newDesc;
+  if (!item) [action, newDesc] = ["add", tierFullText(name, tier)];
+  else if (macroMade) [action, newDesc] = ["rewrite", tierFullText(name, tier)];
+  else if (TIER_GAP_RE.test(desc)) [action, newDesc] = ["gap only", desc.replace(TIER_GAP_RE, tierGapText(name, tier))];
+  else [action, newDesc] = ["gap added", desc + tierGapText(name, tier)];
+  const sameText = item && (newDesc === desc) && (!macroMade || item.name === `${tier} Being`);
+  if (sameText && (actor.getFlag("world", TIER_FLAG) === tier) && !item.getFlag("world", RESERVE_FLAG)) return null;
+  return { actor, tier, item, action, newDesc };
+}
+
+async function applyTierPlan({ actor, tier, item, action, newDesc }) {
+  if (action === "add") {
+    await actor.createEmbeddedDocuments("Item", [{
+      name: `${tier} Being`,
+      type: "feat",
+      img: "icons/magic/symbols/star-solid-gold.webp",
+      flags: { world: { [TIER_ITEM_FLAG]: true } },
+      system: {
+        type: { value: actor.type === "character" ? "" : "monster", subtype: "" },
+        description: { value: newDesc }
+      }
+    }]);
+  } else {
+    const macroMade = !!(item.getFlag("world", TIER_ITEM_FLAG) || item.getFlag("world", RESERVE_FLAG));
+    const update = { "system.description.value": newDesc };
+    if (macroMade) Object.assign(update, { name: `${tier} Being`, [`flags.world.${TIER_ITEM_FLAG}`]: true });
+    await item.update(update);
+    // ถอด Legendary สำรองออกทีหลัง feature ระดับตัวตนจะไม่หายไปด้วย
+    if (item.getFlag("world", RESERVE_FLAG)) await item.unsetFlag("world", RESERVE_FLAG);
+  }
+  await actor.setFlag("world", TIER_FLAG, tier);
+}
+
+// แผน Legendary สำรอง: เฉพาะ NPC ที่ LA หรือ LR ยังเป็น 0 — ตัวเลขที่ตั้งไว้แล้วไม่แตะ
+function planReserve(actor) {
+  if (actor.type !== "npc") return null;
+  const tier = tierOfActor(actor);
+  const [, , la, lr] = TIER_LIST.find(t => t[0] === tier);
+  const curLA = actor.system.resources?.legact?.max ?? 0;
+  const curLR = actor.system.resources?.legres?.max ?? 0;
+  if (curLA && curLR) return null;
+  const hasLegendaryItem = actor.items.some(i => !!i.system.activities?.some?.(x => x.activation?.type === "legendary"));
+  const hasResistItem = actor.items.some(i => /legendary resistance/i.test(i.name));
+  return {
+    actor, tier, la, lr,
+    raiseLA: !curLA, raiseLR: !curLR,
+    addLA: !curLA && !hasLegendaryItem, addLR: !curLR && !hasResistItem
+  };
+}
+
+const RESERVE_NOTE = "<p><em>Reserve (DM option):</em> not counted in this creature's CR. Use it only when the fight needs more push, "
+  + "e.g. a smaller encounter, a big party, or players who think this one is a pushover.</p>";
+const reserveResistName = lr => `Legendary Resistance (${lr}/Day, Reserve)`;
+const reserveResistDesc = (name, lr) =>
+  `<p>If ${name} fails a saving throw, it can choose to succeed instead. In its lair it has ${lr + 1} uses.</p>${RESERVE_NOTE}`;
+
+// ท่า Reserve: wantLA = Strike + Shift, lr > 0 = Legendary Resistance (lr/Day)
+function reserveItems(actor, wantLA, lr) {
+  const name = foundry.utils.escapeHTML(actor.name);
+  const LEGACT = { type: "attribute", target: "resources.legact.value", value: "1" };
+  const LEGRES = { type: "attribute", target: "resources.legres.value", value: "1" };
+  const feat = (itemName, img, desc, activation, consume) => {
+    const id = foundry.utils.randomID();
+    return {
+      name: itemName, type: "feat", img,
+      flags: { world: { [RESERVE_FLAG]: true } },
+      system: {
+        type: { value: "monster", subtype: "" },
+        description: { value: desc },
+        activities: { [id]: { _id: id, type: "utility", sort: 100000, activation, consumption: { spellSlot: true, targets: [consume] } } }
+      }
+    };
+  };
+  const items = [];
+  if (lr > 0) items.push(feat(reserveResistName(lr), "icons/magic/symbols/star-solid-gold.webp", reserveResistDesc(name, lr),
+    { type: "special", value: null, override: false, condition: "fails a saving throw" }, LEGRES));
+  if (wantLA) items.push(
+    feat("Reserve: Strike", "icons/skills/melee/strike-sword-slashing-red.webp",
+      `<p>${name} makes one attack it could make with its Attack or Multiattack action. Only once per round.</p>${RESERVE_NOTE}`,
+      { type: "legendary", value: 1, override: false, condition: "Once per round" }, LEGACT),
+    feat("Reserve: Shift", "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+      `<p>${name} moves up to half its Speed without provoking Opportunity Attacks.</p>${RESERVE_NOTE}`,
+      { type: "legendary", value: 1, override: false, condition: "" }, LEGACT));
+  return items;
+}
+
+async function applyReservePlan(p) {
+  const items = reserveItems(p.actor, p.addLA, p.addLR ? p.lr : 0);
+  if (items.length) await p.actor.createEmbeddedDocuments("Item", items);
+
+  // จำค่าเดิม (0) ไว้ ให้ MODE "remove" ของ Add-Legendary-Reserve คืนค่าได้
+  const set = { ...(p.actor.getFlag("world", RESERVE_FLAG) ?? {}) };
+  const update = {};
+  if (p.raiseLA) {
+    set.legact ??= 0;
+    Object.assign(update, { "system.resources.legact.max": p.la, "system.resources.legact.spent": 0 });
+  }
+  if (p.raiseLR) {
+    set.legres ??= 0;
+    Object.assign(update, { "system.resources.legres.max": p.lr, "system.resources.legres.spent": 0 });
+  }
+  update[`flags.world.${RESERVE_FLAG}`] = set;
+  await p.actor.update(update);
+}
+
+// actor ของ token ที่เลือก (ไม่ซ้ำ) — token แบบ unlinked ได้ actor ของ token ตัวนั้นเอง
+function selectedTokenActors() {
+  const tokens = canvas.tokens.controlled;
+  if (tokens.length === 0) {
+    ui.notifications.warn("กรุณาเลือก Token อย่างน้อย 1 ตัวก่อน");
+    return null;
+  }
+  const seen = new Set();
+  return tokens.map(t => t.actor).filter(a => a && !seen.has(a.uuid) && seen.add(a.uuid));
+}
+
+// ตั้งระดับตัวตนที่เลือกเองให้ actor 1 ตัว
+// - feature ที่ macro เขียน: เปลี่ยนชื่อ + เขียนข้อความใหม่ทั้งหมด
+// - feature ที่เขียนเอง (บอส): เปลี่ยนแค่คำว่าระดับในชื่อ / "Tier of Being: X" + ย่อหน้า Tier Gap
+//   ข้อความอื่น (เช่น Definition) ไม่แตะ → คืนค่า true ให้เตือนว่าต้องไปเช็คเอง
+async function setActorTier(actor, tier) {
+  const name = foundry.utils.escapeHTML(actor.name);
+  const item = tierItemOf(actor);
+  if (!item) {
+    await applyTierPlan({ actor, tier, item: null, action: "add", newDesc: tierFullText(name, tier) });
+    return false;
+  }
+  const macroMade = !!(item.getFlag("world", TIER_ITEM_FLAG) || item.getFlag("world", RESERVE_FLAG));
+  if (macroMade) {
+    await applyTierPlan({ actor, tier, item, action: "rewrite", newDesc: tierFullText(name, tier) });
+    return false;
+  }
+  let desc = (item.system.description?.value ?? "").replace(TIER_DESC_RE, `Tier of Being: ${tier}`);
+  desc = TIER_GAP_RE.test(desc) ? desc.replace(TIER_GAP_RE, tierGapText(name, tier)) : desc + tierGapText(name, tier);
+  const update = { "system.description.value": desc };
+  if (TIER_NAME_RE.test(item.name)) update.name = `${tier} Being`;
+  const changed = tierOfActor(actor) !== tier;
+  await item.update(update);
+  await actor.setFlag("world", TIER_FLAG, tier);
+  return changed;
+}
+
+// Dialog ฟอร์มเล็ก ๆ: คืนค่า FormData object หรือ null ถ้ากดยกเลิก
+// onRender(root) = ผูก event เพิ่มเติมหลังหน้าต่างเปิด
+async function askForm(title, html, okLabel, onRender) {
+  return foundry.applications.api.DialogV2.prompt({
+    window: { title },
+    position: { width: 400 },
+    content: `<div style="display:flex;flex-direction:column;gap:10px">${html}</div>`,
+    ok: {
+      label: okLabel,
+      callback: (event, button) => Object.fromEntries(new FormData(button.form))
+    },
+    rejectClose: false,
+    render: onRender ? (event, dialog) => onRender(dialog.element) : undefined
+  }).catch(() => null);
+}
+
+// ตาราง LA/LR ของแต่ละระดับ — คลิกแถวเพื่อเติมตัวเลขลงช่องกรอก
+function tierReserveTableHtml(highlight) {
+  const rows = TIER_LIST.map(([t, , la, lr]) => {
+    const on = t === highlight ? "background:rgba(200,140,240,.18);font-weight:700" : "";
+    return `<tr data-tier-fill data-la="${la}" data-lr="${lr}" style="cursor:pointer;${on}" title="คลิกเพื่อใช้ค่าของ ${t}">`
+      + `<td>${t}</td><td style="text-align:center">${la}</td><td style="text-align:center">${lr}</td></tr>`;
+  }).join("");
+  return `<table style="margin:0;font-size:12px">
+    <tr><th style="text-align:left">ระดับ</th><th>LA / รอบ</th><th>LR / วัน</th></tr>${rows}</table>
+    <p style="font-size:11px;opacity:.7;margin:0">คลิกแถวเพื่อใช้ค่าของระดับนั้น · ในที่ Lair LR +1</p>`;
+}
+
+function bindTierReserveTable(root) {
+  root?.querySelectorAll("[data-tier-fill]").forEach(row => row.addEventListener("click", () => {
+    root.querySelector('input[name="la"]').value = row.dataset.la;
+    root.querySelector('input[name="lr"]').value = row.dataset.lr;
+  }));
+}
+
+const tokenListHtml = (actors, line) =>
+  `<div style="max-height:140px;overflow:auto;font-size:12px;line-height:1.5">${actors.map(a =>
+    `• ${foundry.utils.escapeHTML(a.name)} — ${line(a)}`).join("<br>")}</div>`;
+
+async function tierSelectedTokens() {
+  if (!game.user.isGM) return ui.notifications.warn("ต้องเป็น GM ถึงจะใส่ระดับตัวตนได้");
+  const actors = selectedTokenActors()?.filter(a => !tierSkipped(a));
+  if (!actors) return;
+  if (!actors.length) return ui.notifications.warn("token ที่เลือกไม่ใช่ PC หรือ NPC");
+
+  const current = tierOfActor(actors[0]);
+  const options = TIER_NAMES.map(t => `<option value="${t}" ${t === current ? "selected" : ""}>${t}</option>`).join("");
+  const form = await askForm("ตั้งระดับตัวตน", `
+    <div>Token ที่เลือก (${actors.length}):</div>
+    ${tokenListHtml(actors, a => `ตอนนี้ ${tierItemOf(a) ? tierOfActor(a) : "ยังไม่มี"}`)}
+    <label>ระดับตัวตน <select name="tier">${options}</select></label>`, "ตั้งระดับ");
+  if (!form) return;
+
+  const tier = tierNorm(form.tier);
+  const check = [];
+  for (const actor of actors) if (await setActorTier(actor, tier)) check.push(actor.name);
+  ui.notifications.info(`ตั้งระดับ ${tier} ให้ ${actors.map(a => a.name).join(", ")} แล้ว`);
+  if (check.length) ui.notifications.warn(`${check.join(", ")}: feature เขียนเองไว้ เปลี่ยนแค่ชื่อระดับกับ Tier Gap — เช็คข้อความที่เหลือเองด้วย`);
+}
+
+async function reserveSelectedTokens() {
+  if (!game.user.isGM) return ui.notifications.warn("ต้องเป็น GM ถึงจะตั้ง LA/LR ได้");
+  const actors = selectedTokenActors()?.filter(a => !tierSkipped(a) && a.type === "npc");
+  if (!actors) return;
+  if (!actors.length) return ui.notifications.warn("ต้องเลือก token ที่เป็น NPC (PC ไม่มี LA/LR)");
+
+  const first = actors[0];
+  const [, , tierLA, tierLR] = TIER_LIST.find(t => t[0] === tierOfActor(first));
+  const curLA = first.system.resources?.legact?.max || 0;
+  const curLR = first.system.resources?.legres?.max || 0;
+  const form = await askForm("ตั้ง LA / LR", `
+    <div>NPC ที่เลือก (${actors.length}):</div>
+    ${tokenListHtml(actors, a => `${tierOfActor(a)} · ตอนนี้ LA ${a.system.resources?.legact?.max || 0} / LR ${a.system.resources?.legres?.max || 0}`)}
+    <label>Legendary Action / รอบ <input type="number" name="la" min="0" step="1" value="${curLA || tierLA}"></label>
+    <label>Legendary Resistance / วัน <input type="number" name="lr" min="0" step="1" value="${curLR || tierLR}"></label>
+    ${tierReserveTableHtml(tierOfActor(first))}
+    <label><input type="checkbox" name="items" checked> ใส่ท่า Reserve (Strike / Shift / Legendary Resistance) ให้ตัวที่ยังไม่มีท่าของตัวเอง</label>
+    <p style="font-size:11px;opacity:.7;margin:0">ค่าตั้งต้น = ค่าบนชีทของ ${foundry.utils.escapeHTML(first.name)} (ถ้าเป็น 0 ใช้ค่าตามระดับ ${tierOfActor(first)}) · ใส่ 0 = ปิด และถอดท่า Reserve ของช่องนั้นออก</p>`, "ตั้งค่า", bindTierReserveTable);
+  if (!form) return;
+
+  const la = Math.max(0, parseInt(form.la) || 0);
+  const lr = Math.max(0, parseInt(form.lr) || 0);
+  const withItems = form.items === "on";
+  for (const actor of actors) await setActorReserve(actor, la, lr, withItems);
+  ui.notifications.info(`ตั้ง LA ${la} / LR ${lr} ให้ ${actors.map(a => a.name).join(", ")} แล้ว`);
+}
+
+// ตั้ง LA/LR เป็นตัวเลขที่กำหนดเอง + จัดท่า Reserve ให้ตรง
+async function setActorReserve(actor, la, lr, withItems) {
+  const name = foundry.utils.escapeHTML(actor.name);
+  const reserve = actor.items.filter(i => i.getFlag("world", RESERVE_FLAG));
+  const reserveLA = reserve.filter(i => i.system.activities?.some?.(x => x.activation?.type === "legendary"));
+  const reserveLR = reserve.filter(i => /legendary resistance/i.test(i.name));
+  const ownLA = actor.items.some(i => !i.getFlag("world", RESERVE_FLAG)
+    && !!i.system.activities?.some?.(x => x.activation?.type === "legendary"));
+  const ownLR = actor.items.some(i => !i.getFlag("world", RESERVE_FLAG) && /legendary resistance/i.test(i.name));
+
+  // ปิดช่องไหน (0) ถอดท่า Reserve ของช่องนั้น
+  const remove = [...(la ? [] : reserveLA), ...(lr ? [] : reserveLR)].map(i => i.id);
+  if (remove.length) await actor.deleteEmbeddedDocuments("Item", remove);
+
+  // Legendary Resistance (Reserve) ที่มีอยู่แล้ว: แก้ตัวเลขในชื่อ/คำอธิบายให้ตรง
+  if (lr) for (const i of reserveLR) {
+    await i.update({ name: reserveResistName(lr), "system.description.value": reserveResistDesc(name, lr) });
+  }
+  if (withItems) {
+    const items = reserveItems(actor, la > 0 && !ownLA && !reserveLA.length, lr > 0 && !ownLR && !reserveLR.length ? lr : 0);
+    if (items.length) await actor.createEmbeddedDocuments("Item", items);
+  }
+
+  // จำค่าเดิมครั้งแรกไว้ ให้ MODE "remove" ของ Add-Legendary-Reserve คืนค่าได้
+  const set = { ...(actor.getFlag("world", RESERVE_FLAG) ?? {}) };
+  set.legact ??= actor.system.resources?.legact?.max ?? 0;
+  set.legres ??= actor.system.resources?.legres?.max ?? 0;
+  await actor.update({
+    "system.resources.legact.max": la, "system.resources.legact.spent": 0,
+    "system.resources.legres.max": lr, "system.resources.legres.spent": 0,
+    [`flags.world.${RESERVE_FLAG}`]: set
+  });
+}
+
+// ตารางให้ดูก่อนทำทั้งโลก
+async function confirmTable(title, intro, headers, rows) {
+  const esc = foundry.utils.escapeHTML;
+  return foundry.applications.api.DialogV2.confirm({
+    window: { title },
+    position: { width: 560 },
+    content: `<p>${intro}</p>
+      <div style="max-height:50vh;overflow:auto"><table>
+        <tr>${headers.map(h => `<th>${h}</th>`).join("")}</tr>
+        ${rows.map(r => `<tr>${r.map(c => `<td>${esc(String(c))}</td>`).join("")}</tr>`).join("")}
+      </table></div>`
+  });
+}
+
+async function tierWholeWorld() {
+  if (!game.user.isGM) return ui.notifications.warn("ต้องเป็น GM ถึงจะใส่ระดับตัวตนได้");
+  const plans = game.actors.filter(a => !tierSkipped(a)).map(planTier).filter(Boolean)
+    .sort((x, y) => x.actor.type.localeCompare(y.actor.type) || x.actor.name.localeCompare(y.actor.name));
+  if (!plans.length) return ui.notifications.info("PC และ NPC ทุกตัวมีระดับตัวตนครบแล้ว");
+  const ok = await confirmTable("เติม Tier ทั้งโลก",
+    `${plans.length} ตัว — add = ใส่ใหม่ · rewrite = เขียนข้อความใหม่ · gap only = เก็บข้อความเดิม เปลี่ยนแค่ย่อหน้า Tier Gap`,
+    ["ชื่อ", "ประเภท", "ระดับ", "เปลี่ยน"],
+    plans.map(p => [p.actor.name, p.actor.type === "character" ? "PC" : "NPC", p.tier, p.action]));
+  if (!ok) return;
+  for (const p of plans) await applyTierPlan(p);
+  ui.notifications.info(`ใส่ระดับตัวตนแล้ว ${plans.length} ตัว`);
+}
+
+async function reserveWholeWorld() {
+  if (!game.user.isGM) return ui.notifications.warn("ต้องเป็น GM ถึงจะเติม LA/LR ได้");
+  const plans = game.actors.filter(a => !tierSkipped(a)).map(planReserve).filter(Boolean)
+    .sort((x, y) => x.actor.name.localeCompare(y.actor.name));
+  if (!plans.length) return ui.notifications.info("NPC ทุกตัวมี LA/LR ครบแล้ว");
+  const ok = await confirmTable("เติม LA/LR ทั้งโลก",
+    `${plans.length} NPC ที่ LA หรือ LR ยังเป็น 0 ("—" = มีอยู่แล้ว ไม่แตะ)`,
+    ["NPC", "CR", "ระดับ", "Leg. Actions", "Leg. Resist"],
+    plans.map(p => [p.actor.name, p.actor.system.details?.cr ?? "—", p.tier, p.raiseLA ? p.la : "—", p.raiseLR ? p.lr : "—"]));
+  if (!ok) return;
+  for (const p of plans) await applyReservePlan(p);
+  ui.notifications.info(`เติม LA/LR แล้ว ${plans.length} ตัว`);
+}
+
 // HTML ปุ่ม macro (สร้างก่อนเปิด Dialog เพื่อดึงชื่อ + ไอคอนจาก macro จริง)
 function buildMacroShortcutsHtml() {
   if (!MACRO_SHORTCUTS.length) return "";
@@ -369,17 +756,35 @@ function injectToolboxStyle() {
       color: #ffffff;
       box-shadow: 0 0 10px rgba(120, 110, 220, 0.35);
     }
-    .toolbox-btn.gargantuan {
-      background: #191c33;
-      border-color: #2b3766;
-      color: #9db3ff;
-      font-size: 11px;
-      padding: 8px 2px;
+    /* ---- Custom Size ---- */
+    .toolbox-size-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 6px;
     }
-    .toolbox-btn.gargantuan:hover {
-      background: #212a4c;
-      border-color: #4a5da3;
-      color: #ffffff;
+    .toolbox-size-row input {
+      width: 100%;
+      height: 34px;
+      background: #1b1a2b;
+      border: 1px solid #3c3a58;
+      border-radius: 7px;
+      color: #e6e5f0;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .toolbox-size-row input::placeholder {
+      color: #6d6b8a;
+      font-weight: 500;
+    }
+    .toolbox-size-row input:focus {
+      border-color: #635fa0;
+      box-shadow: 0 0 8px rgba(120, 110, 220, 0.35);
+      outline: none;
+    }
+    .toolbox-size-row .toolbox-btn {
+      height: 34px;
+      padding: 0 4px;
     }
     .toolbox-btn.wide {
       padding: 11px 6px;
@@ -474,35 +879,33 @@ function injectToolboxStyle() {
       padding: 0 4px;
     }
 
-    /* ---- ลูกศรพับ/กางถาด Dice Tools ---- */
-    .toolbox-drawer-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ---- Tier & Legendary ---- */
+    .toolbox-btn.tier {
+      background: #2a1f33;
+      border-color: #5a3a6e;
+      color: #e0b8ff;
+    }
+    .toolbox-btn.tier:hover {
+      background: #3a2a47;
+      border-color: #8a5aa8;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(200, 140, 240, 0.3);
+    }
+
+    /* ---- ปุ่มลับพับ/กางถาด Dice Tools: แถบว่างใต้หมวดสุดท้าย มองไม่เห็นจนกว่าจะคลิก ---- */
+    .toolbox-drawer-toggle,
+    .toolbox-drawer-toggle:hover,
+    .toolbox-drawer-toggle:focus {
+      display: block;
       width: 100%;
       height: 22px;
       margin: -10px 0 8px 0;
       padding: 0;
       background: transparent;
       border: none;
-      border-radius: 6px;
-      color: #8f8dab;
-      font-size: 13px;
-      cursor: pointer;
+      outline: none;
       box-shadow: none;
-      transition: color 0.12s ease, background 0.12s ease;
-    }
-    .toolbox-drawer-toggle:hover {
-      background: #1d1c2e;
-      color: #ffffff;
-      box-shadow: none;
-    }
-    .toolbox-drawer-toggle i {
-      margin: 0;
-      transition: transform 0.18s ease;
-    }
-    .toolbox-drawer-toggle.open i {
-      transform: rotate(180deg);
+      cursor: default;
     }
     .toolbox-drawer {
       display: none;
@@ -544,18 +947,10 @@ ${buildMacroShortcutsHtml()}
       <button type="button" class="toolbox-btn" data-toolbox-action="resize" data-size="2">Large (2)</button>
       <button type="button" class="toolbox-btn" data-toolbox-action="resize" data-size="3">Huge (3)</button>
     </div>
-    <div class="toolbox-label" style="margin-top: 12px;">Gargantuan Sizes</div>
-    <div class="toolbox-grid cols-5-wrap">
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="4">G (4)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="5">G (5)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="6">G (6)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="7">G (7)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="8">G (8)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="9">G (9)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="10">G (10)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="11">G (11)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="12">G (12)</button>
-      <button type="button" class="toolbox-btn gargantuan" data-toolbox-action="resize" data-size="13">G (13)</button>
+    <div class="toolbox-label" style="margin-top: 12px;">Custom Size</div>
+    <div class="toolbox-size-row">
+      <input type="number" min="0.1" step="any" placeholder="Gargantuan 4-13" data-toolbox-size-input>
+      <button type="button" class="toolbox-btn accent" data-toolbox-size-apply>ปรับขนาด</button>
     </div>
   </div>
 
@@ -587,9 +982,17 @@ ${buildMacroShortcutsHtml()}
     </div>
   </div>
 
-  <button type="button" class="toolbox-drawer-toggle" data-toolbox-drawer-toggle title="เปิด/ปิด Dice Tools">
-    <i class="fas fa-chevron-down"></i>
-  </button>
+  <div class="toolbox-group">
+    <div class="toolbox-label">Tier &amp; Legendary</div>
+    <div class="toolbox-grid cols-2">
+      <button type="button" class="toolbox-btn tier" data-toolbox-action="tier-selected" title="เลือกระดับตัวตนให้ token ที่เลือก">Tier: token ที่เลือก</button>
+      <button type="button" class="toolbox-btn tier" data-toolbox-action="reserve-selected" title="ตั้งจำนวน LA / LR ให้ NPC ที่เลือก">LA/LR: token ที่เลือก</button>
+      <button type="button" class="toolbox-btn tier" data-toolbox-action="tier-world" title="ดูตารางก่อน แล้วกดยืนยัน">เติม Tier ทั้งโลก</button>
+      <button type="button" class="toolbox-btn tier" data-toolbox-action="reserve-world" title="ดูตารางก่อน แล้วกดยืนยัน">เติม LA/LR ทั้งโลก</button>
+    </div>
+  </div>
+
+  <button type="button" class="toolbox-drawer-toggle" data-toolbox-drawer-toggle aria-label="Dice Tools"></button>
 
   <div class="toolbox-group toolbox-drawer" data-toolbox-drawer>
     <div class="toolbox-label">Dice Tools</div>
@@ -647,13 +1050,25 @@ function bindToolboxEvents(root) {
         case "force-roll":
           forceNextRoll(btn.dataset.value);
           break;
+        case "tier-selected":
+          await tierSelectedTokens();
+          break;
+        case "reserve-selected":
+          await reserveSelectedTokens();
+          break;
+        case "tier-world":
+          await tierWholeWorld();
+          break;
+        case "reserve-world":
+          await reserveWholeWorld();
+          break;
       }
     });
   });
 }
 
 // ------------------------------------------------------------
-// ลูกศรพับ/กางถาด Dice Tools
+// แถบลับพับ/กางถาด Dice Tools
 // แยกจาก bindToolboxEvents เพื่อไม่ไปยุ่งกับปุ่มเดิม
 // onResize = ให้หน้าต่างปรับความสูงตามเนื้อหาหลังกาง/พับ
 // ------------------------------------------------------------
@@ -705,6 +1120,33 @@ function bindLightControls(root) {
 }
 
 // ------------------------------------------------------------
+// Custom Size: ช่องกรอกขนาด Token เอง (แทนปุ่ม Gargantuan 4-13 เดิม)
+// กด Enter ในช่องกรอก = ปรับขนาดเลย (และกันไม่ให้ Enter ไป submit/ปิด Dialog)
+// ------------------------------------------------------------
+function bindCustomSize(root) {
+  const input = root.querySelector("[data-toolbox-size-input]");
+  const btn = root.querySelector("[data-toolbox-size-apply]");
+  if (!input || !btn) return;
+
+  const applyFromInput = () => {
+    const size = parseFloat(input.value);
+    if (!(size > 0)) return ui.notifications.warn("กรุณาใส่ขนาดเป็นตัวเลขมากกว่า 0");
+    applyTokenSize(size);
+  };
+
+  btn.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    applyFromInput();
+  });
+  input.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Enter") return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    applyFromInput();
+  });
+}
+
+// ------------------------------------------------------------
 // Macro Shortcuts: ผูกปุ่มเปิด macro อื่น
 // ------------------------------------------------------------
 function bindMacroShortcuts(root) {
@@ -723,13 +1165,24 @@ function bindMacroShortcuts(root) {
 // ------------------------------------------------------------
 const DialogV2 = foundry.applications?.api?.DialogV2;
 
+// กาง/พับถาด Dice Tools = ปรับความสูงตามเนื้อหา
+// แต่ถ้าผู้ใช้ลากขยายหน้าต่างเองแล้ว จะไม่ไปรีเซ็ตขนาดที่ลากไว้ (เนื้อหาเกินก็เลื่อน scroll ดูได้)
+function autoHeightUnlessResized(windowEl, resize) {
+  let userResized = false;
+  windowEl?.querySelector(".window-resize-handle, .window-resizable-handle")
+    ?.addEventListener("pointerdown", () => { userResized = true; });
+  return () => { if (!userResized) resize(); };
+}
+
 if (DialogV2) {
   const app = new DialogV2({
     window: {
       title: "All-in-One Toolbox",
-      icon: "fas fa-toolbox"
+      icon: "fas fa-toolbox",
+      // ลากมุมขวาล่างเพื่อขยาย/ย่อหน้าต่างได้อิสระ (แบบหน้าต่าง Party Manager)
+      resizable: true
     },
-    position: { width: 420 },
+    position: { width: 420, height: "auto" },
     content: content,
     buttons: [
       {
@@ -748,8 +1201,9 @@ if (DialogV2) {
     root?.classList?.add("custom-toolbox-dialog");
     injectToolboxStyle();
     bindToolboxEvents(root);
-    bindDrawerToggle(root, () => app.setPosition({ height: "auto" }));
+    bindDrawerToggle(root, autoHeightUnlessResized(app.element ?? root, () => app.setPosition({ height: "auto" })));
     bindLightControls(root);
+    bindCustomSize(root);
     bindMacroShortcuts(root);
   });
 
@@ -773,12 +1227,14 @@ if (DialogV2) {
       html.closest(".app").addClass("custom-toolbox-dialog");
       injectToolboxStyle();
       bindToolboxEvents(root);
-      bindDrawerToggle(root, () => d.setPosition({ height: "auto" }));
+      bindDrawerToggle(root, autoHeightUnlessResized(html.closest(".app")[0], () => d.setPosition({ height: "auto" })));
       bindLightControls(root);
+      bindCustomSize(root);
       bindMacroShortcuts(root);
     }
   }, {
-    width: 420
+    width: 420,
+    resizable: true
   });
 
   d.render(true);

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองชายแดน · ด่านเผชิญเผ่ามายา |
-| ที่ตั้ง | Suvarna → Dandaka · ชายแดนใต้ของคาบสมุทร ห่าง [Hakan](../chakan-wilds/hakan.md) ~560 ไมล์ · [Tsonot](../chakan-wilds/tsonot.md) ~700 ไมล์ · [Ratnakara](ratnakara.md) ~1,030 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ชายแดนใต้ของคาบสมุทร ห่าง [Hakan](../chakan-wilds/hakan.md) ~140 ไมล์ · [Tsonot](../chakan-wilds/tsonot.md) ~170 ไมล์ · [Ratnakara](ratnakara.md) ~250 ไมล์ |
 | สังกัด | **อาณาจักร Samudra** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,480 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองป้อมกำแพงล้อม · ด่านชายแดนตะวันออก |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันออกเฉียงใต้ของ [Grenfeld](grenfeld.md) ~1,070 ไมล์ · ห่าง [Kampfburg](kampfburg.md) ~760 ไมล์ · [Ehrenburg](ehrvarn-conquest.md) ~1,750 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ตะวันออกเฉียงใต้ของ [Grenfeld](grenfeld.md) ~270 ไมล์ · ห่าง [Kampfburg](kampfburg.md) ~190 ไมล์ · [Ehrenburg](ehrvarn-conquest.md) ~440 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,600 คน (นักรบ ~1,200) |

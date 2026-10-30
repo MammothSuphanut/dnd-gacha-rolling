@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านเผาถ่าน |
-| ที่ตั้ง | Suvarna → Jarnfell · หุบเหล็ก ห่าง [Jarnstad](jarnstad.md) ~80 ไมล์ · [Smedheim](smedheim.md) ~180 ไมล์ · [Malmdal](malmdal.md) ~220 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · หุบเหล็ก ห่าง [Jarnstad](jarnstad.md) ~65 ไมล์ · [Smedheim](smedheim.md) ~120 ไมล์ · [Malmdal](malmdal.md) ~120 ไมล์ |
 | สังกัด | **ตระกูลหุบเหล็ก** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~360 คน |

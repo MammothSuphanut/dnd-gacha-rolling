@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · **แม่น้ำที่ยาวที่สุดในโลก** · แม่น้ำแม่ของ Himmapan |
 | ที่ตั้ง | Suvarna → Himmapan Wilds · ผ่านชายแดน Ulfdal |
 | ต้นน้ำ → ปลายน้ำ | ดอยใต้ป้อม [Kamphaeng Hin](../kamphaeng-hin.md) → วนผ่านหุบใต้ของ Pancha Sabha และชายแดน Ulfdal → [Muang Ngoen](../muang-ngoen.md) → ท่าแพ [Mae Pha](../mae-pha.md) → ทะเล |
-| ความยาว | ~11,650 ไมล์ |
+| ความยาว | ~2,910 ไมล์ |
 | กระแสน้ำ | กว้างมหึมา น้ำมากที่สุดใน Suvarna · น้ำสีทองขุ่นในหน้าน้ำ |
 | สาขา | [Ngoen River](ngoen-river.md) (← [Hin River](hin-river.md)) · [Pa River](pa-river.md) · [Bua River](bua-river.md) |
 | เมืองริมน้ำ | [Kamphaeng Hin](../kamphaeng-hin.md) · [Muang Ngoen](../muang-ngoen.md) · [Mae Pha](../mae-pha.md) |

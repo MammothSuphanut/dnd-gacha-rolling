@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองหน้าด่านกำแพงล้อมบนเขาสูง · ประตูทางตะวันตกของเขตมาร |
-| ที่ตั้ง | Shenzhou → เขตมาร · ภูเขาสูง ตะวันตกของ **[Heukseong](_overview.md)** ~2,870 ไมล์ · เหนือของ [Shiraki](../mizuho/shiraki.md) ~2,850 ไมล์ · ห่าง [Heukgok](heukgok.md) ~370 ไมล์ · [Mangryang](mangryang.md) ~910 ไมล์ · [Bihyeol](bihyeol.md) ~980 ไมล์ |
+| ที่ตั้ง | Shenzhou → เขตมาร · ภูเขาสูง ตะวันตกของ **[Heukseong](_overview.md)** ~720 ไมล์ · เหนือของ [Shiraki](../mizuho/shiraki.md) ~710 ไมล์ · ห่าง [Heukgok](heukgok.md) ~90 ไมล์ · [Mangryang](mangryang.md) ~230 ไมล์ · [Bihyeol](bihyeol.md) ~240 ไมล์ |
 | สังกัด | **พรรคมารสวรรค์** 天魔神敎 — บนแผนที่เป็นของ Tianchao (ไม่มีขุนนางคนไหนมาเก็บภาษี) |
 | ระดับอารยธรรม | 2–3 |
 | ประชากร | ~3,000 คน |

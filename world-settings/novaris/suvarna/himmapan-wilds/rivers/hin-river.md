@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Ngoen River](ngoen-river.md) |
 | ที่ตั้ง | Suvarna → Himmapan Wilds · ชายแดนล้านนากับ Ulfdal |
 | ต้นน้ำ → ปลายน้ำ | เนินหินของป้อม [Wiang Hin](../wiang-hin.md) → หมู่บ้านทอตุง [Ban Tung](../ban-tung.md) → บรรจบ Ngoen River |
-| ความยาว | ~1,600 ไมล์ |
+| ความยาว | ~400 ไมล์ |
 | กระแสน้ำ | เชี่ยว ก้นเป็นหินแบน |
 | เมืองริมน้ำ | [Wiang Hin](../wiang-hin.md) · [Ban Tung](../ban-tung.md) |
 | การเดินทาง | ทางเดินริมน้ำ · ข้ามด้วยสะพานไม้ไผ่ |

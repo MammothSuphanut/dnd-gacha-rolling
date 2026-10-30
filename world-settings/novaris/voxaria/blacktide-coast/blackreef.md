@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองบนเกาะ · คาสิโนเถื่อน |
 | Sector | **32** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · เกาะนอกชายฝั่งใต้ของรัฐ ห่าง Port Noir ~1,630 ไมล์ ทางทะเล · ห่าง **[Wreckers' Cove](wreckers-cove.md)** ~750 ไมล์ |
+| ที่ตั้ง | Voxaria → Blacktide Coast · เกาะนอกชายฝั่งใต้ของรัฐ ห่าง Port Noir ~360 ไมล์ ทางทะเล · ห่าง **[Wreckers' Cove](wreckers-cove.md)** ~160 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~2,100 คนประจำ · ✨ นักพนันหลายพันคนทุกสุดสัปดาห์ |

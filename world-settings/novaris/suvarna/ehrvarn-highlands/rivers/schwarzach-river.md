@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Suvarna → Ehrvarn Highlands · ภูเขาตะวันตกเฉียงใต้ |
 | ต้นน้ำ → ปลายน้ำ | ภูเขาของค่ายฝึกเด็ก [Lehrberg](../lehrberg.md) ใกล้ [Hammerstein](../hammerstein.md) → ป่าฝนดำ → ทะเลใต้ป้อม [Westwacht](../westwacht.md) |
-| ความยาว | ~2,770 ไมล์ |
+| ความยาว | ~690 ไมล์ |
 | กระแสน้ำ | เชี่ยว น้ำเย็นจัด · น้ำดำใต้ร่มป่าฝน |
 | สาขา | [Klinge River](klinge-river.md) |
 | เมืองริมน้ำ | [Westwacht](../westwacht.md) · ✨ [Lehrberg](../lehrberg.md) |

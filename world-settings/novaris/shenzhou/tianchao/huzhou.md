@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองของราชสำนัก · ที่ว่าการมณฑล |
-| ที่ตั้ง | Shenzhou → Tianchao · ป่าฝนตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~1,580 ไมล์ · ห่าง [Pingyang](pingyang.md) ~840 ไมล์ · [Gaebang-chon](gaebang-chon.md) ~1,260 ไมล์ |
+| ที่ตั้ง | Shenzhou → Tianchao · ป่าฝนตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~390 ไมล์ · ห่าง [Pingyang](pingyang.md) ~210 ไมล์ · [Gaebang-chon](gaebang-chon.md) ~310 ไมล์ |
 | สังกัด | **Tianchao** — ปกครองโดยราชสำนักโดยตรง |
 | ระดับอารยธรรม | 2–3 |
 | ประชากร | ~820 คน (เมืองขุนนาง ไม่ใช่เมืองใหญ่) |

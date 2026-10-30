@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำสายหลักของ Heartland |
 | ที่ตั้ง | Voxaria → Crownshore · Heartland · Forgeheim |
 | ต้นน้ำ → ปลายน้ำ | เนินป่าตะวันออกของ Lumen City ใกล้ [Purewell](../../crownshore/purewell.md) → ใต้ทางแยก [Silver Junction](../silver-junction.md) → ทะเลสาบข้าง [Redrock Mines](../redrock-mines.md) ใต้ [Blackcrown Mountain](../blackcrown-mountain.md) |
-| ความยาว | ~5,760 ไมล์ |
+| ความยาว | ~1,440 ไมล์ |
 | กระแสน้ำ | กว้าง ลึก ควบคุมด้วยประตูน้ำคอนกรีตหลายแห่ง |
 | เมืองริมน้ำ | [Silver Junction](../silver-junction.md) · [Redrock Mines](../redrock-mines.md) · ✨ ใกล้ [Fortuna](../fortuna.md) |
 | การเดินทาง | เรือบรรทุกสินค้าตามประตูน้ำ · สะพานทางด่วนหลายสิบสะพาน |

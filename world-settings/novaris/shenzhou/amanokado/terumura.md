@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านช่างกระจก · นาข้าว |
-| ที่ตั้ง | Shenzhou → Amanokado · ห่าง **[Asahi](asahi.md)** ~280 ไมล์ และ [Kagaribi](kagaribi.md) ~660 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ห่าง **[Asahi](asahi.md)** ~75 ไมล์ และ [Kagaribi](kagaribi.md) ~160 ไมล์ |
 | สังกัด | **Amanokado** — สำนักมิโกะแห่งรุ่งอรุณ |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~290 คน |

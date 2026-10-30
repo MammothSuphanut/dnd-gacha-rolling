@@ -32,8 +32,9 @@ D:\FoundryVTT_Data\
 │  │  ├─ map-assets\<Category>\<Pack>\   ของแต่งแมพ: Buildings Camp Dungeon Furniture Market
 │  │  │                               Nature Props Treasure Water (Market/Treasure ไม่มีชั้น Pack)
 │  │  ├─ scenes\                      ฉากที่ใช้ได้หลายแคมเปญ: Exandria Snow Shadowfell The Planes Remohaz Ship
+│  │  │                               + ภาพบรรยากาศ (General Scenes) แยกตามธีม เช่น Tavern
 │  │  ├─ world\novaris\               ข้อมูลโลก Novaris
-│  │  │  ├─ atlas\                    novaris-v3-*.webp (แผนที่ DM + -player)
+│  │  │  ├─ atlas\                    novaris-v3-*.webp (แผนที่ DM + -player) + novaris-wonderdraft-v2.webp
 │  │  │  ├─ journal\<ทวีป>.json       ข้อมูลให้ Create-Novaris-Journal
 │  │  │  └─ <Continent>\<Region>\<City|Map>\   แผนที่เมือง/battlemap + <key>.json
 │  │  ├─ campaigns\<campaign-slug>\   ของเฉพาะแต่ละแคมเปญ แยกเป็น actors\ scenes\ journal\ (+ cover/banner)
@@ -60,6 +61,7 @@ D:\FoundryVTT_Data\
 | NPC/มอนสเตอร์ของแคมเปญเดียว | `assets/campaigns/<slug>/actors/` |
 | แผนที่ฉากของแคมเปญเดียว | `assets/campaigns/<slug>/scenes/<พื้นที่>/` |
 | แผนที่ฉากใช้ซ้ำได้ | `assets/scenes/<ธีม>/` |
+| ภาพบรรยากาศใช้ได้ทุกแคมเปญ (โรงเตี๊ยม ป่า ถนน ฯลฯ ไม่มี grid) | `assets/scenes/<ธีม>/` แล้วเพิ่มบรรทัดใน `SCENES` ของ [Create-General-Scenes.macro.js](Create-General-Scenes.macro.js) → ฉากไปอยู่ 📁 General Scenes › <ธีม> |
 | แผนที่/เมือง/battlemap ในโลก Novaris (Canvas of Kings, Dungeondraft) | `assets/world/novaris/<Continent>/<Region>/<Name>/` |
 | ไฟล์ JSON ข้อมูลให้ macro อ่าน (journal, city, battlemap) | อยู่ข้างไฟล์รูปที่มันอธิบาย |
 | token ของแต่งแมพ (2MT ฯลฯ) | `assets/map-assets/<Category>/<Pack>/` |

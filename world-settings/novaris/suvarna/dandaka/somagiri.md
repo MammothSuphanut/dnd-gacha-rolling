@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านวัดบนเขา · วัดจันทร์ |
-| ที่ตั้ง | Suvarna → Dandaka · เขาชายแดนใต้ ห่าง [Shikhara](shikhara.md) ~1,140 ไมล์ · [Kaanmul](../chakan-wilds/kaanmul.md) ~1,310 ไมล์ · [Kadali](kadali.md) ~1,560 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · เขาชายแดนใต้ ห่าง [Shikhara](shikhara.md) ~280 ไมล์ · [Kaanmul](../chakan-wilds/kaanmul.md) ~330 ไมล์ · [Kadali](kadali.md) ~390 ไมล์ |
 | สังกัด | **Jyoti Marga** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~270 คน |

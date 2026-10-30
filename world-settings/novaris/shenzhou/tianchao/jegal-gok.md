@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองในหุบเขาสูง · **บ้านใหญ่ของตระกูล Jegal** 諸葛世家 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · หุบบนที่สูง ตะวันตกเฉียงเหนือของ **[Yujing](../unspecified/yujing.md)** ~2,190 ไมล์ · ห่าง [Mudang-san](mudang-san.md) ~750 ไมล์ · [Namgung-seong](namgung-seong.md) ~780 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · หุบบนที่สูง ตะวันตกเฉียงเหนือของ **[Yujing](../unspecified/yujing.md)** ~550 ไมล์ · ห่าง [Mudang-san](mudang-san.md) ~190 ไมล์ · [Namgung-seong](namgung-seong.md) ~190 ไมล์ |
 | สังกัด | **ตระกูล Jegal** — 5 ตระกูลใหญ่ ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 2–3 (✨ กลไกล้ำกว่าที่ใดในยุทธภพ) |
 | ประชากร | ~1,700 คน |

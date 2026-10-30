@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านป้อมหิน · ด่านชายแดนล้านนา |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ปลายหุบตะวันออก ตะวันตกเฉียงเหนือของ [Vargholm](../ulfdal/varga-republic.md) ~1,390 ไมล์ · ห่าง [Ban Tung](ban-tung.md) ~210 ไมล์ · [Wiang Kham](wiang-kham.md) ~620 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ปลายหุบตะวันออก ตะวันตกเฉียงเหนือของ [Vargholm](../ulfdal/varga-republic.md) ~350 ไมล์ · ห่าง [Ban Tung](ban-tung.md) ~55 ไมล์ · [Wiang Kham](wiang-kham.md) ~160 ไมล์ |
 | สังกัด | **ล้านนา** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~340 คน (ทหาร ~100) |

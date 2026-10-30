@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านศาลเจ้าเจ็ดหลัง |
-| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~1,280 ไมล์ · เหนือของ Kamizono ~1,390 ไมล์ · ห่าง [Yuimori](yuimori.md) ~150 ไมล์ · [Kitsunebi](kitsunebi.md) ~460 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~330 ไมล์ · เหนือของ Kamizono ~330 ไมล์ · ห่าง [Yuimori](yuimori.md) ~65 ไมล์ · [Kitsunebi](kitsunebi.md) ~110 ไมล์ |
 | สังกัด | **Amanokado** — ตระกูล Hoshimi |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~280 คน |

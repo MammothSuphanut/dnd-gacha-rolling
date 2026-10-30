@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | อาศรมในป่า · ที่พักคนป่วยใกล้ตาย |
-| ที่ตั้ง | Suvarna → Dandaka · ไหล่เขาฝั่งตะวันตก ห่าง [Tapovana](tapovana.md) ~130 ไมล์ · ตะวันออกของ [Sandgrave](../deshret/sandgrave.md) ~980 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ไหล่เขาฝั่งตะวันตก ห่าง [Tapovana](tapovana.md) ~35 ไมล์ · ตะวันออกของ [Sandgrave](../deshret/sandgrave.md) ~250 ไมล์ |
 | สังกัด | **Jyoti Marga** ในนาม — อาศรมฤๅษี |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~290 คน |

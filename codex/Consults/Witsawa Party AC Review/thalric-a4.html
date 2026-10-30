@@ -18,6 +18,8 @@
 html,body{margin:0;background:#fff;color:var(--ink);font-family:var(--f-body);font-size:10pt;line-height:1.5}
 .page{width:210mm;height:297mm;padding:13mm 14mm 11mm;display:flex;flex-direction:column;gap:5mm;overflow:hidden;page-break-after:always;position:relative}
 .page:last-child{page-break-after:auto}
+.page>*{flex-shrink:0}
+.page:first-child{gap:3.2mm}
 h1,h2,h3,p{margin:0}
 h2{font-family:var(--f-display);font-weight:400;font-size:13pt;letter-spacing:.04em;color:var(--ink);display:flex;align-items:baseline;gap:8px;border-bottom:1.5px solid var(--gold);padding-bottom:1.5mm}
 h2 small{font-family:var(--f-body);font-size:8pt;color:var(--muted);letter-spacing:0}
@@ -57,7 +59,7 @@ b{font-weight:600}
 
 /* pros / cons */
 .pc{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
-.pc ul{list-style:none;margin:2mm 0 0;padding:0;display:flex;flex-direction:column;gap:2mm}
+.pc ul{list-style:none;margin:2mm 0 0;padding:0;display:flex;flex-direction:column;gap:1.4mm}
 .pc li{position:relative;padding-left:6mm;font-size:9pt;line-height:1.45}
 .pc li::before{position:absolute;left:0;top:.5mm;width:4mm;height:4mm;border-radius:50%;font:700 7pt/4mm var(--f-mono);text-align:center}
 .pros li::before{content:"+";background:var(--heal-soft);color:var(--heal)}
@@ -141,9 +143,9 @@ b{font-weight:600}
       <circle cx="60" cy="66" r="18" fill="#9A6E0C"/><path d="M52 66 L60 54 L68 66 L60 78 Z" fill="#F4E8C6"/>
     </svg>
     <div>
-      <span class="label">Witsawa · Aeorian Cataclysm · Level 3</span>
+      <span class="label">Witsawa · Aeorian Cataclysm · Level 4</span>
       <h1>Thalric <span>Dawn-Shield</span></h1>
-      <p class="sub">Paladin 3 — Oath of Devotion · Dragonborn (Gold) · Farmer</p>
+      <p class="sub">Paladin 4 — Oath of Devotion · Dragonborn (Gold) · Farmer</p>
       <div class="chips"><span class="chip g">แทงค์แนวหน้าหลัก</span><span class="chip h">ฮีลสำรอง</span><span class="chip f">ดาเมจระเบิดด้วย Smite</span><span class="chip">หน้าตาเจรจาสำรอง</span></div>
     </div>
     <div class="pagetag">1 / 6<br><span class="label">ข้อมูลตัวละคร</span></div>
@@ -151,13 +153,13 @@ b{font-weight:600}
 
   <div class="strip">
     <div class="key"><span class="label">AC</span><span class="big">19</span><span class="hint">Mail 16 + Shield 2 + Defense 1</span></div>
-    <div class="key"><span class="label">HP</span><span class="big">40</span><span class="hint">3d10 + CON + Tough</span></div>
+    <div class="key"><span class="label">HP</span><span class="big">52</span><span class="hint">4d10 + CON + Tough</span></div>
     <div><span class="label">Speed</span><span class="big">30</span><span class="hint">ฟุต</span></div>
     <div><span class="label">Init</span><span class="big">+2</span><span class="hint">DEX</span></div>
     <div><span class="label">Prof</span><span class="big">+2</span><span class="hint">Proficiency</span></div>
-    <div><span class="label">Spell DC</span><span class="big">13</span><span class="hint">CHA</span></div>
-    <div><span class="label">Spear</span><span class="big">+5</span><span class="hint">1d6+3 · Sacred +8</span></div>
-    <div><span class="label">Passive</span><span class="big">10</span><span class="hint">Perception</span></div>
+    <div><span class="label">Spell DC</span><span class="big">14</span><span class="hint">CHA</span></div>
+    <div><span class="label">Spear</span><span class="big">+5</span><span class="hint">1d6+3 · Sacred +9</span></div>
+    <div><span class="label">Passive</span><span class="big">12</span><span class="hint">Perception</span></div>
   </div>
 
   <div class="abil">
@@ -166,30 +168,30 @@ b{font-weight:600}
     <div class="ab"><span class="label">CON</span><div class="mod">+4</div><div class="sc num">19</div></div>
     <div class="ab dump"><span class="label">INT</span><div class="mod">−2</div><div class="sc num">7</div></div>
     <div class="ab save"><span class="label">WIS</span><div class="mod">+0</div><div class="sc num">11 · save +2</div></div>
-    <div class="ab save"><span class="label">CHA</span><div class="mod">+3</div><div class="sc num">17 · save +5</div></div>
+    <div class="ab save"><span class="label">CHA</span><div class="mod">+4</div><div class="sc num">18 · save +6</div></div>
   </div>
 
   <div class="pc">
     <div class="pros">
       <h2>จุดเด่น</h2>
       <ul>
-        <li><b>ทนที่สุดในตี้</b> AC 19 + HP 40<span>ยืนรับหน้าศัตรูได้นานกว่าใคร ต้านทาน Fire ด้วย</span></li>
+        <li><b>ทนที่สุดในตี้</b> AC 19 + HP 52<span>ยืนรับหน้าศัตรูได้นานกว่าใคร ต้านทาน Fire ด้วย</span></li>
         <li><b>ดาเมจก้อนใหญ่ตอนต้องการ</b> Divine Smite +2d8<span>ตัดสินใจหลังรู้ว่าตีโดน ใส่ undead/fiend ได้ 3d8</span></li>
-        <li><b>ฮีลและปลุกเพื่อนได้</b> Lay on Hands 15 HP<span>ใช้ Bonus Action ปลุกคนล้มได้ทันที ล้างพิษได้</span></li>
-        <li><b>ตีแม่นตลอดไฟต์</b> Sacred Weapon<span>Spear +8 to hit นาน 10 นาที จาก Channel Divinity ครั้งเดียว</span></li>
+        <li><b>ฮีลและปลุกเพื่อนได้</b> Lay on Hands 20 HP<span>ใช้ Bonus Action ปลุกคนล้มได้ทันที ล้างพิษได้</span></li>
+        <li><b>ตีแม่นตลอดไฟต์</b> Sacred Weapon<span>Spear +9 to hit นาน 10 นาที จาก Channel Divinity ครั้งเดียว</span></li>
         <li><b>มีตัวเลือกคุมฝูง</b> Breath Weapon / Dragon Fear / Command<span>พ่นไฟใส่กลุ่ม หรือทำให้ศัตรูกลัวจนเข้าใกล้ไม่ได้</span></li>
-        <li><b>ฉากสังคมพอไหว</b> Persuasion +5, CHA save +5</li>
+        <li><b>วาร์ปได้</b> Misty Step ฟรีวันละครั้ง · Persuasion +6</li>
       </ul>
     </div>
     <div class="cons">
       <h2>จุดด้อยที่ควรเลี่ยง</h2>
       <ul>
         <li><b>INT −2</b><span>อย่าอาสาทอย Arcana / History / Investigation ให้เพื่อนที่ INT สูงทำ</span></li>
-        <li><b>Slot น้อย</b> ร่ายได้ราว 5 ครั้งต่อวัน<span>3 slot + Smite ฟรี 1 + Divine Recovery 1 อย่า Smite หมดตั้งแต่ไฟต์แรก</span></li>
-        <li><b>Bonus Action ชนกัน</b><span>Smite, Lay on Hands, Shield of Faith, Divine Favor เลือกได้อย่างเดียวต่อเทิร์น</span></li>
-        <li><b>ระยะไกลอ่อน</b><span>มีแค่ขว้าง Spear 20/60 ฟุต หรือพ่นไฟแบบเส้น 30 ฟุต ศัตรูบินจะลำบาก</span></li>
+        <li><b>Slot น้อย</b> ร่ายได้ราว 7 ครั้งต่อวัน<span>3 slot + ร่ายฟรี 3 + Divine Recovery อย่า Smite หมดตั้งแต่ไฟต์แรก</span></li>
+        <li><b>Bonus Action ชนกัน</b><span>Smite ทั้ง 2 แบบ, Lay on Hands, Misty Step, Shield of Faith เลือกได้อย่างเดียวต่อเทิร์น</span></li>
+        <li><b>ระยะไกลอ่อน</b><span>มีแค่ขว้าง Spear (พก 5 อัน) 20/60 ฟุต หรือพ่นไฟแบบเส้น 30 ฟุต ศัตรูบินจะลำบาก</span></li>
         <li><b>ตีได้ครั้งเดียวต่อเทิร์น</b> (ถึง Lv 5)<span>พ่นไฟ = เสียการตีทั้งเทิร์น ใช้เมื่อโดนได้ 2 ตัวขึ้นไปเท่านั้น</span></li>
-        <li><b>ช้าและไม่มีทางหนี</b><span>เกราะหนัก Speed 30 ไม่มีตัวช่วยเคลื่อนที่ อย่าวิ่งไล่ศัตรูทิ้งแนว</span></li>
+        <li><b>ช้า</b> Speed 30 วาร์ปได้วันละครั้ง<span>อย่าวิ่งไล่ศัตรูทิ้งแนว</span></li>
       </ul>
     </div>
   </div>
@@ -199,14 +201,16 @@ b{font-weight:600}
     <div class="kab">
       <div><b>Spear</b><span class="tag t-a">A</span> +5 · 1d6+3 (สองมือ 1d8+3) · Mastery <b>Sap</b>: ศัตรูที่โดนตีติด Disadvantage ตีครั้งถัดไป</div>
       <div><b>Divine Smite</b><span class="tag t-b">BA</span><span class="tag t-s">SLOT</span> หลังตีโดน +2d8 radiant · ครั้งแรกของวันฟรี</div>
-      <div><b>Sacred Weapon</b><span class="tag t-a">A</span> ใช้ Channel Divinity ตอนตี · +3 to hit, Radiant, ส่องแสง 20 ฟุต</div>
-      <div><b>Lay on Hands</b><span class="tag t-b">BA</span> ฮีลจากบ่อ 15 HP · 5 แต้มล้าง Poisoned</div>
+      <div><b>Wrathful Smite</b><span class="tag t-b">BA</span><span class="tag t-s">SLOT</span> หลังตีโดน +1d6 necrotic · WIS DC 14 · Frightened</div>
+      <div><b>Sacred Weapon</b><span class="tag t-a">A</span> ใช้ Channel Divinity ตอนตี · +4 to hit, Radiant, ส่องแสง 20 ฟุต</div>
+      <div><b>Lay on Hands</b><span class="tag t-b">BA</span> ฮีลจากบ่อ 20 HP · 5 แต้มล้าง Poisoned</div>
       <div><b>Breath Weapon</b><span class="tag t-a">A</span> กรวย 15 / เส้น 30 ฟุต · DEX DC 14 · 1d10 fire</div>
       <div><b>Shield of Faith</b><span class="tag t-b">BA</span><span class="tag t-s">SLOT</span> เพื่อน AC +2 · Concentration</div>
-      <div><b>Dragon Fear</b><span class="tag t-a">A</span> คำรามแทนพ่นไฟ · 30 ฟุต · WIS DC 13 · Frightened</div>
-      <div><b>Bless</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 3 คน +1d4 attack และ save · Concentration</div>
-      <div><b>Command</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> WIS DC 13 · Grovel / Halt / Drop / Flee</div>
-      <div><b>Cure Wounds</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 2d8+3 · <b>Divine Sense</b> หา undead/fiend 60 ฟุต</div>
+      <div><b>Dragon Fear</b><span class="tag t-a">A</span> คำรามแทนพ่นไฟ · 30 ฟุต · WIS DC 14 · Frightened</div>
+      <div><b>Bless</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 3 คน +1d4 attack และ save · Conc · ฟรี 1/วัน</div>
+      <div><b>Misty Step</b><span class="tag t-b">BA</span> วาร์ป 30 ฟุต ไปจุดที่มองเห็น · ฟรี 1/วัน (Fey-Touched)</div>
+      <div><b>Command</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> WIS DC 14 · Grovel / Halt / Drop / Flee</div>
+      <div><b>Cure Wounds</b><span class="tag t-a">A</span><span class="tag t-s">SLOT</span> 2d8+4 · <b>Divine Sense</b> หา undead/fiend 60 ฟุต</div>
     </div>
   </div>
 
@@ -214,15 +218,15 @@ b{font-weight:600}
     <h2>ทรัพยากรต่อวัน <small>ติ๊กด้วยดินสอระหว่างเล่น</small></h2>
     <div class="res">
       <div class="r"><span class="n">Spell Slot Lv 1</span><div class="pips"><i></i><i></i><i></i></div><span class="m">คืนตอน Long Rest</span></div>
-      <div class="r"><span class="n">Smite ฟรี</span><div class="pips"><i></i></div><span class="m">1 / Long Rest</span></div>
+      <div class="r"><span class="n">ร่ายฟรี</span><div class="pips"><i></i><i></i><i></i></div><span class="m">Smite · Bless · Misty Step อย่างละ 1 / Long Rest</span></div>
       <div class="r"><span class="n">Channel Divinity</span><div class="pips"><i></i><i></i></div><span class="m">Short Rest คืน 1</span></div>
       <div class="r"><span class="n">Breath Weapon</span><div class="pips"><i></i><i></i></div><span class="m">แชร์กับ Dragon Fear</span></div>
       <div class="r"><span class="n">Divine Recovery</span><div class="pips"><i></i></div><span class="m">คืน 1 slot ตอน Short Rest</span></div>
-      <div class="r"><span class="n">Lay on Hands</span><span class="num" style="font-size:10pt">___ / 15</span><span class="m">คืนตอน Long Rest</span></div>
+      <div class="r"><span class="n">Lay on Hands</span><span class="num" style="font-size:10pt">___ / 20</span><span class="m">คืนตอน Long Rest</span></div>
     </div>
   </div>
 
-  <div class="foot"><span>Thalric Dawn-Shield · Paladin 3 · กติกา D&amp;D 2024</span><span>ข้อมูลจาก Foundry group W · 12 ต.ค. 2026</span></div>
+  <div class="foot"><span>Thalric Dawn-Shield · Paladin 4 · กติกา D&amp;D 2024</span><span>ข้อมูลจาก Foundry group W · 26 ต.ค. 2026</span></div>
 </section>
 
 <!-- ============ PAGE 2 ============ -->
@@ -248,16 +252,16 @@ b{font-weight:600}
   <div>
     <h2>เจอแบบนี้ ทำแบบนี้</h2>
     <div class="cases">
-      <div class="case"><strong>เริ่มไฟต์กับศัตรูหนัก / บอส</strong><span>เทิร์นแรกกด Attack พร้อม <b>Sacred Weapon</b> (+8 to hit ทั้งไฟต์) ถ้ายังไม่ปะทะและมีเวลา ร่าย <b>Bless</b> ใส่ตัวเอง, Vorgash, Xiah ก่อน</span><em>Smite ทุกครั้งที่โดนบอส · ติดคริ = เต๋า Smite คูณสอง</em></div>
-      <div class="case f"><strong>ศัตรูกำลังวิ่งไปหาแนวหลัง</strong><span>ยืนขวางทางแล้วใช้ <b>Dragon Fear</b> ศัตรูที่กลัวเราจะเดินเข้าใกล้เราไม่ได้ จึงผ่านไปไม่ได้</span><em>ถ้าเราไม่ได้ขวางทาง ศัตรูยังอ้อมไปหาเพื่อนได้</em></div>
+      <div class="case"><strong>เริ่มไฟต์กับศัตรูหนัก / บอส</strong><span>เทิร์นแรกกด Attack พร้อม <b>Sacred Weapon</b> (+9 to hit ทั้งไฟต์) ถ้ายังไม่ปะทะและมีเวลา ร่าย <b>Bless</b> (ครั้งแรกของวันฟรี) ใส่ตัวเอง, Vorgash, Xiah ก่อน</span><em>Smite ทุกครั้งที่โดนบอส · ติดคริ = เต๋า Smite คูณสอง</em></div>
+      <div class="case f"><strong>ศัตรูกำลังวิ่งไปหาแนวหลัง</strong><span>ยืนขวางทางแล้วใช้ <b>Dragon Fear</b> ศัตรูที่กลัวเราจะเดินเข้าใกล้เราไม่ได้ จึงผ่านไปไม่ได้ ไกลเกินไป <b>Misty Step</b> ไปขวางก่อน</span><em>ตัวเดียวที่ตีโดนแล้ว ใช้ Wrathful Smite ให้กลัวแทนได้</em></div>
       <div class="case f"><strong>ลูกสมุนจับกลุ่ม 3 ตัวขึ้นไป</strong><span><b>Breath Weapon</b> แบบกรวย 15 ฟุต ถ้าอยู่ทางเดินแคบและยืนเรียงกัน ใช้แบบเส้น 30 ฟุต</span><em>ศัตรู 1–2 ตัว ตีด้วย Spear คุ้มกว่า</em></div>
-      <div class="case b"><strong>ศัตรูตัวใหญ่ตัวเดียว</strong><span><b>Command "Grovel"</b> ให้มันล้มหมอบ เพื่อนสาย melee ได้ Advantage หรือ <b>"Drop"</b> ให้ทิ้งอาวุธ</span><em>WIS DC 13 · ได้ผลกับศัตรู WIS ต่ำ</em></div>
-      <div class="case b"><strong>เจอ undead หรือ fiend</strong><span>เปิด <b>Divine Sense</b> ก่อนเข้าห้องเพื่อรู้ว่ามีกี่ตัว Smite ได้ <b>3d8</b> และขว้าง <b>Holy Water</b> (มี 5 ขวด) ได้ 2d8 radiant</span><em>เจอผีสิงหรือ charm → Protection from Evil and Good</em></div>
-      <div class="case h"><strong>เพื่อนล้ม (0 HP)</strong><span><b>Lay on Hands</b> แค่ 1–5 HP ให้ลุกขึ้นมาเล่นต่อ ใช้ Bonus Action จึงยังตีได้ในเทิร์นเดียวกัน</span><em>เก็บบ่อไว้ปลุกคนล้ม ดีกว่าเติมคนที่ยังไม่ล้ม</em></div>
+      <div class="case b"><strong>ศัตรูตัวใหญ่ตัวเดียว</strong><span><b>Command "Grovel"</b> ให้มันล้มหมอบ เพื่อนสาย melee ได้ Advantage หรือ <b>"Drop"</b> ให้ทิ้งอาวุธ</span><em>WIS DC 14 · ได้ผลกับศัตรู WIS ต่ำ</em></div>
+      <div class="case b"><strong>เจอ undead หรือ fiend</strong><span>เปิด <b>Divine Sense</b> ก่อนเข้าห้องเพื่อรู้ว่ามีกี่ตัว Smite ได้ <b>3d8</b> และขว้าง <b>Holy Water</b> (มี 3 ขวด) ได้ 2d8 radiant</span><em>เจอผีสิงหรือ charm → Protection from Evil and Good</em></div>
+      <div class="case h"><strong>เพื่อนล้ม (0 HP)</strong><span><b>Lay on Hands</b> แค่ 1–5 HP ให้ลุกขึ้นมาเล่นต่อ ใช้ Bonus Action จึงยังตีได้ในเทิร์นเดียวกัน</span><em>Misty Step ก็ใช้ Bonus Action วาร์ปไปแล้วต้องรอเทิร์นหน้าถึงจะปลุก</em></div>
       <div class="case h"><strong>เพื่อนแนวหลังโดนรุม</strong><span><b>Shield of Faith</b> ใส่ Lunol (AC 14 → 16) แล้วเดินเข้าไปยืนข้างเธอ ศัตรูที่ถอยออกจะโดน Opportunity Attack</span><em>ใช้ Concentration แทน Bless ไม่ได้ทั้งคู่</em></div>
-      <div class="case"><strong>ศัตรูบินหรือยิงจากไกล</strong><span>ขว้าง <b>Spear</b> (20/60 ฟุต) แล้วค่อยเก็บ หรือพ่นไฟแบบเส้น 30 ฟุต ให้ Xiah กับ Oxton จัดการเป็นหลัก</span><em>พกอาวุธขว้างสำรองจะช่วยมาก</em></div>
+      <div class="case"><strong>ศัตรูบินหรือยิงจากไกล</strong><span>ขว้าง <b>Spear</b> (20/60 ฟุต มี 5 อัน) หรือพ่นไฟแบบเส้น 30 ฟุต ให้ Xiah กับ Oxton จัดการเป็นหลัก</span><em>พลธนูบนที่สูง → Misty Step ขึ้นไปหามัน</em></div>
       <div class="case"><strong>ไฟต์ยาว / slot เหลือน้อย</strong><span>ขอ <b>Short Rest</b> แล้วใช้ <b>Divine Recovery</b> คืน slot 1 ช่อง Channel Divinity คืนมา 1 ครั้ง</span><em>slot สุดท้ายเก็บไว้ Smite ปิดบอส หรือ Cure Wounds ฉุกเฉิน</em></div>
-      <div class="case b"><strong>ฉากเจรจา / สำรวจ</strong><span>ให้ Oxton เป็นหน้าหลัก เราเสริมด้วย <b>Persuasion +5</b> ใช้ Athletics +5 ปีน ผลัก จับล็อก</span><em>เลี่ยงการทอยความรู้ทุกแบบ (INT −2)</em></div>
+      <div class="case b"><strong>ฉากเจรจา / สำรวจ</strong><span>ให้ Oxton เป็นหน้าหลัก เราเสริมด้วย <b>Persuasion +6</b> ใช้ Athletics +5 ปีน ผลัก จับล็อก</span><em>เลี่ยงการทอยความรู้ทุกแบบ (INT −2)</em></div>
     </div>
   </div>
 
@@ -282,12 +286,12 @@ b{font-weight:600}
     <div><div class="k">ADVANCED</div><h1>ความสามารถคลาส Paladin + Oath of Devotion</h1></div>
     <div class="pg">3 / 6<span>Class Features</span></div>
   </div>
-  <p class="intro">ฟีเจอร์ที่ได้จากคลาสถึง Lv 3 แต่ละใบบอกกติกาแบบย่อ ต้นทุน และวิธีใช้ให้คุ้ม</p>
+  <p class="intro">ฟีเจอร์ที่ได้จากคลาสถึง Lv 4 (Lv 4 ได้ feat Fey-Touched ดูหน้า 4) แต่ละใบบอกกติกาแบบย่อ ต้นทุน และวิธีใช้ให้คุ้ม</p>
   <div class="cards">
     <div class="card">
       <div class="top"><h3>Lay on Hands</h3><span class="src">Paladin Lv 1</span></div>
-      <div class="meta"><span class="c">Bonus Action</span><span>สัมผัส</span><span class="u">บ่อ 15 HP / Long Rest</span></div>
-      <p class="rule">มีบ่อพลังฮีล 5 × เลเวล Paladin (= 15) แบ่งจ่ายกี่แต้มก็ได้ให้ตัวเองหรือเพื่อน หรือจ่าย 5 แต้มเพื่อล้างสถานะ Poisoned</p>
+      <div class="meta"><span class="c">Bonus Action</span><span>สัมผัส</span><span class="u">บ่อ 20 HP / Long Rest</span></div>
+      <p class="rule">มีบ่อพลังฮีล 5 × เลเวล Paladin (= 20) แบ่งจ่ายกี่แต้มก็ได้ให้ตัวเองหรือเพื่อน หรือจ่าย 5 แต้มเพื่อล้างสถานะ Poisoned</p>
       <p class="tip">ใช้ <b>ปลุกเพื่อนที่ 0 HP</b> ด้วย 1–3 แต้ม คุ้มที่สุด เพราะเป็น Bonus Action เทิร์นเดียวกันยังตีได้ ช่วงหลังไฟต์ค่อยเทแต้มที่เหลือเติมเลือด</p>
     </div>
     <div class="card">
@@ -305,8 +309,8 @@ b{font-weight:600}
     <div class="card">
       <div class="top"><h3>Sacred Weapon</h3><span class="src">Oath of Devotion Lv 3</span></div>
       <div class="meta"><span>ตอนกด Attack</span><span class="x">ใช้ Channel Divinity</span><span>10 นาที</span></div>
-      <p class="rule">อาวุธ melee ที่ถือได้ +CHA (+3) เข้า attack roll เลือกให้ดาเมจเป็น Radiant ได้ และส่องแสงจ้า 20 ฟุต + สลัว 20 ฟุต</p>
-      <p class="tip">เปิดตอน <b>เทิร์นแรกของไฟต์หนัก</b> เพราะอยู่ 10 นาทีครอบคลุมทั้งไฟต์ Spear จะตีที่ +8 Radiant ทะลุศัตรูที่ต้านดาเมจกายภาพ แสงช่วยตี้ในที่มืด แต่ทำให้แอบไม่ได้</p>
+      <p class="rule">อาวุธ melee ที่ถือได้ +CHA (+4) เข้า attack roll เลือกให้ดาเมจเป็น Radiant ได้ และส่องแสงจ้า 20 ฟุต + สลัว 20 ฟุต</p>
+      <p class="tip">เปิดตอน <b>เทิร์นแรกของไฟต์หนัก</b> เพราะอยู่ 10 นาทีครอบคลุมทั้งไฟต์ Spear จะตีที่ +9 Radiant ทะลุศัตรูที่ต้านดาเมจกายภาพ แสงช่วยตี้ในที่มืด แต่ทำให้แอบไม่ได้</p>
     </div>
     <div class="card">
       <div class="top"><h3>Divine Sense</h3><span class="src">Paladin Lv 3</span></div>
@@ -317,20 +321,20 @@ b{font-weight:600}
     <div class="card">
       <div class="top"><h3>Weapon Mastery</h3><span class="src">Paladin Lv 1</span></div>
       <div class="meta"><span>Passive</span><span>2 ชนิดอาวุธ</span><span>เปลี่ยนได้ตอน Long Rest</span></div>
-      <p class="rule">ใช้คุณสมบัติพิเศษของอาวุธได้ 2 ชนิด ตอนนี้ใช้ <b>Spear = Sap</b>: ตีโดนแล้วศัตรูติด Disadvantage ในการโจมตีครั้งถัดไป</p>
-      <p class="tip">ยังเหลือช่องว่างอีก 1 ชนิด ลองเลือก <b>Javelin (Slow)</b> ไว้ขว้างใส่ศัตรูที่อยู่ไกล หรือ <b>Longsword (Sap)</b> ถ้าเปลี่ยนอาวุธในอนาคต</p>
+      <p class="rule">ใช้คุณสมบัติพิเศษของอาวุธได้ 2 ชนิด ตอนนี้เลือก <b>Spear = Sap</b>: ตีโดนแล้วศัตรูติด Disadvantage ในการโจมตีครั้งถัดไป และ <b>Halberd = Cleave</b></p>
+      <p class="tip">ตอนนี้ไม่มี Halberd ในกระเป๋า และ Halberd ต้องใช้สองมือ (ถือโล่ไม่ได้) ช่องนี้จึงยังไม่ได้ใช้ ถ้าไม่ได้วางแผนเปลี่ยนอาวุธ ลองสลับเป็น <b>Javelin (Slow)</b> ตอน Long Rest</p>
     </div>
     <div class="card">
       <div class="top"><h3>Spellcasting</h3><span class="src">Paladin Lv 1</span></div>
-      <div class="meta"><span>CHA</span><span>DC 13 · Attack +5</span><span class="u">Slot Lv1 × 3</span></div>
-      <p class="rule">เตรียมสเปลล์จากลิสต์ Paladin ได้ และเปลี่ยนสเปลล์ที่เตรียมไว้ได้ 1 ตัวหลัง Long Rest ใช้ Holy Symbol เป็น focus</p>
+      <div class="meta"><span>CHA</span><span>DC 14 · Attack +6</span><span class="u">Slot Lv1 × 3</span></div>
+      <p class="rule">เตรียมสเปลล์จากลิสต์ Paladin ได้ 6 ตัว และเปลี่ยนสเปลล์ที่เตรียมไว้ได้ 1 ตัวหลัง Long Rest ใช้ Holy Symbol เป็น focus</p>
       <p class="tip">ก่อนออกผจญภัยวันไหน ให้ถามว่า "วันนี้น่าจะเจออะไร" แล้วสลับสเปลล์ 1 ตัวให้เข้ากับสถานการณ์ เช่น เข้าเมือง = Command, เข้าสุสาน = PfEaG</p>
     </div>
     <div class="card">
       <div class="top"><h3>Oath of Devotion Spells</h3><span class="src">Oath Lv 3</span></div>
       <div class="meta"><span>เตรียมไว้เสมอ</span><span>ไม่นับโควตา</span></div>
       <p class="rule">ได้ <b>Protection from Evil and Good</b> และ <b>Shield of Faith</b> แบบเตรียมไว้ตลอด เลเวล 5 จะได้ Aid และ Zone of Truth เพิ่ม</p>
-      <p class="tip">ไม่ต้องเสียช่องเตรียมสเปลล์กับ 2 ตัวนี้ ใช้ช่องที่เหลือกับ Bless, Command, Cure Wounds ได้เต็มที่</p>
+      <p class="tip">ไม่ต้องเสียช่องเตรียมสเปลล์กับ 2 ตัวนี้ Bless ก็ได้ฟรีจาก Fey-Touched ใช้ช่องที่เหลือกับ Command, Cure Wounds, Wrathful Smite ได้เต็มที่</p>
     </div>
   </div>
   <div class="foot"><span>Advanced · Class Features</span><span>3 / 6</span></div>
@@ -342,31 +346,31 @@ b{font-weight:600}
     <div><div class="k">ADVANCED</div><h1>สายพันธุ์มังกรทอง + Feats</h1></div>
     <div class="pg">4 / 6<span>Species &amp; Feats</span></div>
   </div>
-  <p class="intro">ความสามารถจาก Dragonborn (Gold) และ feat ทั้ง 4 ตัว (รวม house rule General Feat ตอนเลเวล 1)</p>
+  <p class="intro">ความสามารถจาก Dragonborn (Gold) และ feat ทั้ง 5 ตัว (รวม house rule General Feat ตอนเลเวล 1 และ Fey-Touched ที่ได้ตอน Lv 4)</p>
   <div class="cards">
     <div class="card">
       <div class="top"><h3>Breath Weapon</h3><span class="src">Dragonborn</span></div>
       <div class="meta"><span>แทนการโจมตี 1 ครั้ง</span><span class="u">2 ครั้ง / Long Rest</span><span class="x">DEX DC 14</span></div>
       <p class="rule">พ่นไฟเป็นกรวย 15 ฟุต หรือเส้นยาว 30 ฟุต กว้าง 5 ฟุต ทุกตัวในพื้นที่ทอย DEX save ไม่ผ่านโดน 1d10 fire ผ่านโดนครึ่ง (2d10 ที่ Lv 5)</p>
-      <p class="tip">ที่ Lv 3 ตีได้ครั้งเดียว พ่นไฟจึงแทนการตีทั้งเทิร์น <b>คุ้มเมื่อโดนได้ 2–3 ตัวขึ้นไป</b> ระวังอย่าให้เพื่อนอยู่ในเส้น ศัตรูต้านไฟ (ปีศาจ, elemental ไฟ) ใช้ Dragon Fear แทน</p>
+      <p class="tip">ก่อน Lv 5 ตีได้ครั้งเดียว พ่นไฟจึงแทนการตีทั้งเทิร์น <b>คุ้มเมื่อโดนได้ 2–3 ตัวขึ้นไป</b> ระวังอย่าให้เพื่อนอยู่ในเส้น ศัตรูต้านไฟ (ปีศาจ, elemental ไฟ) ใช้ Dragon Fear แทน</p>
     </div>
     <div class="card">
       <div class="top"><h3>Dragon Fear</h3><span class="src">Feat (Lv 1 house rule)</span></div>
-      <div class="meta"><span class="x">ใช้ Breath Weapon</span><span>30 ฟุต</span><span class="x">WIS DC 13</span><span>+1 CHA</span></div>
+      <div class="meta"><span class="x">ใช้ Breath Weapon</span><span>30 ฟุต</span><span class="x">WIS DC 14</span><span>+1 CHA</span></div>
       <p class="rule">คำรามแทนพ่นไฟ ศัตรูที่เลือกในระยะ 30 ฟุตที่เห็นหรือได้ยินเรา ทอย WIS save ไม่ผ่านติด Frightened 1 นาที ถ้าโดนดาเมจจะได้ทอย save ใหม่</p>
       <p class="tip">Frightened = ตี/เช็กเสีย Disadvantage และ <b>เดินเข้าใกล้เราไม่ได้</b> ใช้ตอนยืนขวางทางเดินแคบ ศัตรูจะผ่านไปหาแนวหลังไม่ได้ อย่าให้เพื่อนตีตัวที่กลัวอยู่ทันที เพราะดาเมจให้มันทอยหลุด</p>
     </div>
     <div class="card">
-      <div class="top"><h3>Damage Resistance</h3><span class="src">Dragonborn</span></div>
-      <div class="meta"><span>Passive</span><span>Fire</span></div>
-      <p class="rule">ต้านทานดาเมจไฟ โดนไฟเหลือครึ่งเดียว</p>
-      <p class="tip">เจอศัตรูพ่นไฟ, fireball, กับดักไฟ ให้ <b>เดินนำหน้า</b> รับแทนเพื่อน ฉากไฟไหม้ ฝ่ากองไฟเข้าไปช่วยคนได้ปลอดภัยกว่าคนอื่น</p>
+      <div class="top"><h3>Fey-Touched</h3><span class="src">Feat · Lv 4</span></div>
+      <div class="meta"><span>+1 CHA (17 → 18)</span><span class="u">Misty Step ฟรี 1 / LR</span><span class="u">Bless ฟรี 1 / LR</span></div>
+      <p class="rule">CHA ขึ้นเป็น +4 (Spell DC 14, Sacred Weapon +9, Persuasion +6) เตรียม <b>Misty Step</b> กับ <b>Bless</b> ไว้เสมอไม่นับโควตา ร่ายฟรีได้อย่างละครั้งต่อ Long Rest และร่ายซ้ำด้วย slot ได้ (Misty Step ต้องใช้ slot ระดับ 2 จึงยังซ้ำไม่ได้จนถึง Lv 5)</p>
+      <p class="tip">ครั้งฟรีของ <b>Bless</b> ใช้ในไฟต์หนักแรกได้เลย ส่วน <b>Misty Step</b> เก็บไว้ตอนโดนล็อก/ล้อม หรือต้องไปยืนขวางหน้าเพื่อนที่โดนรุมไกลเกินเดินถึง</p>
     </div>
     <div class="card">
-      <div class="top"><h3>Darkvision</h3><span class="src">Dragonborn</span></div>
-      <div class="meta"><span>Passive</span><span>60 ฟุต</span></div>
-      <p class="rule">มองในที่มืดเหมือนแสงสลัว ในระยะ 60 ฟุต (เห็นเป็นขาวดำ)</p>
-      <p class="tip">ในถ้ำ เดินนำได้โดยไม่ต้องจุดไฟ แต่ถ้าเปิด Sacred Weapon แสงจะเปิดเผยตำแหน่งตี้ เลือกให้ดีว่าจะแอบหรือจะสู้</p>
+      <div class="top"><h3>Fire Resistance + Darkvision</h3><span class="src">Dragonborn</span></div>
+      <div class="meta"><span>Passive</span><span>ต้านไฟ</span><span>มองในมืด 60 ฟุต</span></div>
+      <p class="rule">โดนดาเมจไฟเหลือครึ่งเดียว และมองในที่มืดเหมือนแสงสลัวในระยะ 60 ฟุต (เห็นเป็นขาวดำ)</p>
+      <p class="tip">เจอไฟ, fireball, กับดักไฟ ให้ <b>เดินนำหน้า</b> รับแทนเพื่อน ในถ้ำเดินนำได้โดยไม่จุดไฟ แต่ Sacred Weapon จะส่องแสงเปิดเผยตำแหน่งตี้</p>
     </div>
     <div class="card">
       <div class="top"><h3>Draconic Flight</h3><span class="src">Dragonborn · ปลดล็อก Lv 5</span></div>
@@ -377,7 +381,7 @@ b{font-weight:600}
     <div class="card">
       <div class="top"><h3>Tough</h3><span class="src">Feat</span></div>
       <div class="meta"><span>Passive</span><span>+2 HP / เลเวล</span></div>
-      <p class="rule">HP สูงสุดเพิ่ม 2 ต่อเลเวล ตอนนี้ได้ +6 (HP 40) และเพิ่มอีก 2 ทุกครั้งที่เลเวลอัป</p>
+      <p class="rule">HP สูงสุดเพิ่ม 2 ต่อเลเวล ตอนนี้ได้ +8 (HP 52) และเพิ่มอีก 2 ทุกครั้งที่เลเวลอัป</p>
       <p class="tip">ทำให้ Thalric เป็นคนที่ <b>ควรโดนตีแทนเพื่อน</b> ไม่ต้องกลัวโดนรุมช่วงต้นไฟต์ ใช้ HP ที่มากกว่าซื้อเวลาให้ตี้</p>
     </div>
     <div class="card">
@@ -402,7 +406,7 @@ b{font-weight:600}
     <div><div class="k">ADVANCED</div><h1>สเปลล์ทั้งหมด</h1></div>
     <div class="pg">5 / 6<span>Spells</span></div>
   </div>
-  <div class="note"><b>กติกา Concentration:</b> Bless, Shield of Faith และ Protection from Evil and Good ต้อง Concentration ใช้ได้ทีละตัว ร่ายตัวใหม่ ตัวเก่าหลุด · ทุกครั้งที่โดนดาเมจต้องทอย <b>CON save</b> (DC 10 หรือครึ่งดาเมจ แล้วแต่อันไหนสูงกว่า) Thalric ได้ +4 จาก CON จึงรักษา Concentration ได้ค่อนข้างดี</div>
+  <div class="note"><b>กติกา Concentration:</b> Bless, Shield of Faith และ Protection from Evil and Good ต้อง Concentration (Smite ทั้งสองแบบไม่ต้อง) ใช้ได้ทีละตัว ร่ายตัวใหม่ ตัวเก่าหลุด · ทุกครั้งที่โดนดาเมจต้องทอย <b>CON save</b> (DC 10 หรือครึ่งดาเมจ แล้วแต่อันไหนสูงกว่า) Thalric ได้ +4 จาก CON จึงรักษา Concentration ได้ค่อนข้างดี</div>
   <div class="cards">
     <div class="card">
       <div class="top"><h3>Divine Smite</h3><span class="src">Lv 1 · เตรียมไว้เสมอ</span></div>
@@ -411,9 +415,15 @@ b{font-weight:600}
       <p class="tip">ตัดสินใจหลังรู้ผลว่าโดน ใช้ตอน <b>ติดคริ (ทอย 4d8)</b> หรือเมื่อดาเมจจะปิดศัตรูได้พอดี อย่า Smite ใส่ลูกสมุน HP น้อย</p>
     </div>
     <div class="card">
-      <div class="top"><h3>Bless</h3><span class="src">Lv 1</span></div>
+      <div class="top"><h3>Wrathful Smite</h3><span class="src">Lv 1 · ใหม่</span></div>
+      <div class="meta"><span class="c">Bonus Action หลังตีโดน</span><span>1 นาที</span><span class="x">WIS DC 14</span><span class="u">Slot</span></div>
+      <p class="rule">ตีโดนแล้วเพิ่ม 1d6 necrotic และเป้าหมายทอย WIS save ไม่ผ่านติด Frightened ทอยใหม่ได้ตอนจบเทิร์นของมัน (ไม่ต้อง Concentration)</p>
+      <p class="tip">ใช้กับ <b>ตัวอันตรายตัวเดียว</b> ที่ WIS ต่ำ มันจะตีเสีย Disadvantage และเข้าใกล้เราไม่ได้ ต้องการดาเมจล้วนใช้ Divine Smite (เทิร์นละ Smite เดียว)</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Bless</h3><span class="src">Lv 1 · Fey-Touched</span></div>
       <div class="meta"><span>Action</span><span>30 ฟุต</span><span class="c">Conc · 1 นาที</span><span class="u">Slot</span></div>
-      <p class="rule">ได้ 3 คน ทุกครั้งที่ทอยโจมตีหรือ saving throw บวก 1d4</p>
+      <p class="rule">ได้ 3 คน ทุกครั้งที่ทอยโจมตีหรือ saving throw บวก 1d4 · เตรียมไว้เสมอและร่ายฟรีได้ 1 ครั้ง / Long Rest (Fey-Touched)</p>
       <p class="tip">สเปลล์ที่ <b>คุ้มที่สุดในไฟต์ยาว</b> ใส่ตัวเอง + Vorgash + Xiah (คนที่ทอยโจมตีบ่อย) ร่ายก่อนปะทะถ้าทำได้ เพราะเสีย Action ทั้งเทิร์น</p>
     </div>
     <div class="card">
@@ -424,21 +434,21 @@ b{font-weight:600}
     </div>
     <div class="card">
       <div class="top"><h3>Command</h3><span class="src">Lv 1</span></div>
-      <div class="meta"><span>Action</span><span>60 ฟุต</span><span>1 รอบ</span><span class="x">WIS DC 13</span><span class="u">Slot</span></div>
+      <div class="meta"><span>Action</span><span>60 ฟุต</span><span>1 รอบ</span><span class="x">WIS DC 14</span><span class="u">Slot</span></div>
       <p class="rule">สั่งคำเดียว: <b>Approach</b> เดินเข้ามา · <b>Drop</b> ทิ้งของ · <b>Flee</b> หนี · <b>Grovel</b> หมอบลง · <b>Halt</b> หยุดนิ่ง</p>
       <p class="tip"><b>Grovel</b> = ศัตรูล้ม Prone เพื่อนสาย melee ได้ Advantage · <b>Drop</b> ให้ทิ้งไอเท็มสำคัญ/ไม้เท้า · <b>Approach</b> ดึงพลธนูเข้ามาหาเรา ไม่ได้ผลกับ undead ที่ไม่เข้าใจภาษา</p>
     </div>
     <div class="card">
       <div class="top"><h3>Cure Wounds</h3><span class="src">Lv 1</span></div>
       <div class="meta"><span>Action</span><span>สัมผัส</span><span class="u">Slot</span></div>
-      <p class="rule">ฮีล 2d8 + 3 (เฉลี่ย 12 HP)</p>
+      <p class="rule">ฮีล 2d8 + 4 (เฉลี่ย 13 HP)</p>
       <p class="tip">ปกติใช้ Lay on Hands ก่อนเพราะเป็น Bonus Action ใช้ Cure Wounds เมื่อ <b>บ่อ Lay on Hands หมด</b> หรือนอกไฟต์ที่ไม่มีเวลา Short Rest</p>
     </div>
     <div class="card">
       <div class="top"><h3>Divine Favor</h3><span class="src">Lv 1</span></div>
       <div class="meta"><span class="c">Bonus Action</span><span>ตัวเอง</span><span>1 นาที</span><span class="u">Slot</span></div>
       <p class="rule">ทุกครั้งที่ตีโดนด้วยอาวุธ เพิ่ม 1d4 radiant</p>
-      <p class="tip">ที่ Lv 3 ยังตีได้ครั้งเดียวต่อเทิร์น ได้ดาเมจน้อยกว่า Smite มาก <b>ควรสลับออกไปเตรียมสเปลล์อื่นแทน</b> จะคุ้มขึ้นตอนได้ Extra Attack ที่ Lv 5</p>
+      <p class="tip">ก่อน Lv 5 ยังตีได้ครั้งเดียวต่อเทิร์น ได้ดาเมจน้อยกว่า Smite มาก <b>ควรสลับออกไปเตรียมสเปลล์อื่นแทน</b> จะคุ้มขึ้นตอนได้ Extra Attack ที่ Lv 5</p>
     </div>
     <div class="card">
       <div class="top"><h3>Protection from Evil and Good</h3><span class="src">Lv 1 · Oath</span></div>
@@ -447,10 +457,15 @@ b{font-weight:600}
       <p class="tip">ใช้กับ <b>บอสประเภทนั้นที่ชอบสิงหรือ charm</b> ใส่เพื่อนที่ save WIS ต่ำ หรือใส่ตัวเองตอนรับหน้าบอส</p>
     </div>
     <div class="card">
+      <div class="top"><h3>Misty Step</h3><span class="src">Lv 2 · Fey-Touched</span></div>
+      <div class="meta"><span class="c">Bonus Action</span><span>ตัวเอง · 30 ฟุต</span><span class="u">ฟรี 1 / Long Rest</span></div>
+      <p class="rule">วาร์ปไปยังจุดว่างที่มองเห็นในระยะ 30 ฟุต ไม่โดน Opportunity Attack · ร่ายซ้ำต้องใช้ slot ระดับ 2 (มีตอน Lv 5)</p>
+      <p class="tip">หลุดจาก <b>Grapple / วงล้อม</b>, ข้ามเหว หรือวาร์ปไปขวางศัตรูที่หลุดไปหาแนวหลัง แล้วยังกด Attack ต่อได้</p>
+    </div>
+    <div class="card">
       <div class="top"><h3>Purify Food and Drink</h3><span class="src">Lv 1</span></div>
       <div class="meta"><span>Action</span><span>10 ฟุต</span><span class="u">Slot</span></div>
-      <p class="rule">ล้างพิษและความเน่าเสียจากอาหารและเครื่องดื่มที่ไม่ใช่เวทในทรงกลมรัศมี 5 ฟุต</p>
-      <p class="tip">ใช้ slot จริงทุกครั้ง <b>อย่าเตรียมไว้ปกติ</b> สลับเข้ามาเฉพาะช่วงที่สงสัยว่าอาหารถูกวางยา เช่น งานเลี้ยงของศัตรู</p>
+      <p class="rule">ล้างพิษและความเน่าเสียจากอาหารและเครื่องดื่มที่ไม่ใช่เวทในรัศมี 5 ฟุต · <b>อย่าเตรียมไว้ปกติ</b> สลับเข้ามาเฉพาะช่วงที่สงสัยว่าอาหารถูกวางยา</p>
     </div>
   </div>
   <div class="foot"><span>Advanced · Spells</span><span>5 / 6</span></div>
@@ -465,9 +480,9 @@ b{font-weight:600}
   <div class="cards">
     <div class="card">
       <div class="top"><h3>Whisperlink Mail</h3><span class="src">เกราะหนัก (homebrew)</span></div>
-      <div class="meta"><span>AC 16</span><span>ไม่บวก DEX</span></div>
-      <p class="rule">เกราะหนักฐาน AC 16 ไม่รับ DEX bonus รวม Shield และ Defense ได้ AC 19 · คุณสมบัติพิเศษของชิ้นนี้ยังไม่มีบันทึกในเอกสาร</p>
-      <p class="tip">ถาม DM ว่า Whisperlink มีความสามารถพิเศษหรือข้อเสียเรื่อง Stealth หรือไม่ เกราะหนักส่วนใหญ่ทำให้แอบเสีย Disadvantage</p>
+      <div class="meta"><span>AC 16</span><span>ไม่บวก DEX</span><span class="u">ไม่เสีย Stealth</span><span>STR 13</span></div>
+      <p class="rule">เกราะโซ่หนักฐาน AC 16 รวม Shield และ Defense ได้ AC 19 · ตีขึ้นด้วยเวทเงาจนเบาและเย็น ดูดเสียงการเคลื่อนไหวเหลือแค่เสียงกระซิบ ใน Foundry จึง<b>ไม่มี Disadvantage กับ Stealth</b></p>
+      <p class="tip">ต่างจากเกราะหนักทั่วไป Thalric แอบตามตี้ได้ (Stealth +2) แต่ถ้าเปิด Sacred Weapon แสงจะเปิดเผยทันที</p>
     </div>
     <div class="card">
       <div class="top"><h3>Shield</h3><span class="src">โล่</span></div>
@@ -476,13 +491,13 @@ b{font-weight:600}
       <p class="tip">ถือโล่ = Spear ใช้มือเดียว (1d6) ถ้าต้องการดาเมจมากขึ้นนอกไฟต์ไม่มีความเสี่ยงค่อยถอด แต่ในไฟต์ +2 AC คุ้มกว่า 1d8 เสมอ</p>
     </div>
     <div class="card">
-      <div class="top"><h3>Spear</h3><span class="src">Simple Melee</span></div>
+      <div class="top"><h3>Spear × 5</h3><span class="src">Simple Melee</span></div>
       <div class="meta"><span>+5</span><span>1d6+3 / สองมือ 1d8+3</span><span>ขว้าง 20/60</span><span>Mastery: Sap</span></div>
-      <p class="rule">อาวุธประจำตัว ใช้ได้ทั้งตีประชิดและขว้าง Sacred Weapon ทำให้ +8 to hit และเป็น Radiant ได้</p>
-      <p class="tip">ขว้างแล้วต้องไปเก็บคืน ซื้อ Spear หรือ Javelin สำรองอีก 1–2 อันไว้ขว้างใส่ศัตรูที่บินหรืออยู่ไกล ราคาถูกมาก</p>
+      <p class="rule">อาวุธประจำตัว ใช้ได้ทั้งตีประชิดและขว้าง Sacred Weapon ทำให้ +9 to hit และเป็น Radiant ได้</p>
+      <p class="tip">มี 5 อัน ถือ 1 อันตีประชิด ที่เหลือ <b>ขว้างใส่ศัตรูที่บินหรืออยู่ไกล</b> ได้หลายเทิร์นติด ขว้างแล้วอย่าลืมเก็บคืนหลังไฟต์</p>
     </div>
     <div class="card">
-      <div class="top"><h3>Holy Water × 5</h3><span class="src">ของใช้</span></div>
+      <div class="top"><h3>Holy Water × 3</h3><span class="src">ของใช้</span></div>
       <div class="meta"><span>แทนการโจมตี</span><span>ขว้าง 20 ฟุต</span><span class="x">DEX DC 12</span></div>
       <p class="rule">ขว้างใส่สิ่งมีชีวิต ทอย DEX save ไม่ผ่านโดน 2d8 radiant ถ้าเป็น fiend หรือ undead</p>
       <p class="tip">เก็บไว้ใช้กับ <b>undead/fiend ที่อยู่ไกล</b> หรือเมื่อ slot หมดแล้วต้องการ radiant ดาเมจ ดาเมจเท่า Smite ไม่ต้องใช้ slot</p>
@@ -505,12 +520,13 @@ b{font-weight:600}
     <table class="skills">
       <tr><th>Skill</th><th>โบนัส</th><th>ใช้ตอนไหน</th></tr>
       <tr class="p"><td>Athletics (STR)</td><td class="n">+5</td><td>ปีน ว่ายน้ำ กระโดด จับล็อก ผลัก · skill ที่ใช้บ่อยที่สุดของ Thalric</td></tr>
-      <tr class="p"><td>Persuasion (CHA)</td><td class="n">+5</td><td>เกลี้ยกล่อม ต่อรอง ขอความช่วยเหลือ · หน้าตาสำรองรองจาก Oxton</td></tr>
+      <tr class="p"><td>Persuasion (CHA)</td><td class="n">+6</td><td>เกลี้ยกล่อม ต่อรอง ขอความช่วยเหลือ · หน้าตาสำรองรองจาก Oxton</td></tr>
       <tr class="p"><td>Animal Handling (WIS)</td><td class="n">+2</td><td>ปลอบสัตว์ ขี่ม้า ทักษะจากพื้นเพ Farmer</td></tr>
       <tr class="p"><td>Nature (INT)</td><td class="n">+0</td><td>ความรู้พืช สัตว์ ภูมิประเทศ · ถนัดแต่ INT ต่ำ ผลออกมากลางๆ</td></tr>
-      <tr><td>Intimidation (CHA)</td><td class="n">+3</td><td>ขู่ศัตรูได้ดีแม้ไม่ถนัด เพราะ CHA สูงและรูปร่างมังกร 240 ปอนด์</td></tr>
-      <tr><td>Insight / Perception (WIS)</td><td class="n">+0</td><td>อ่านใจ สังเกต · ปล่อยให้คนที่ WIS สูงกว่าทอย</td></tr>
-      <tr><td>Stealth (DEX)</td><td class="n">+2</td><td>เกราะหนักน่าจะทำให้เสีย Disadvantage · อย่าอาสาแอบ</td></tr>
+      <tr class="p"><td>Perception (WIS)</td><td class="n">+2</td><td>สังเกต หาของซ่อน · ถนัด Passive 12 แต่ยังมีคนตาไวกว่าในตี้</td></tr>
+      <tr><td>Intimidation (CHA)</td><td class="n">+4</td><td>ขู่ศัตรูได้ดีแม้ไม่ถนัด เพราะ CHA สูงและรูปร่างมังกร 240 ปอนด์</td></tr>
+      <tr><td>Insight (WIS)</td><td class="n">+0</td><td>อ่านใจ จับโกหก · ปล่อยให้คนที่ WIS สูงกว่าทอย</td></tr>
+      <tr><td>Stealth (DEX)</td><td class="n">+2</td><td>Whisperlink Mail ไม่เสีย Disadvantage · แอบตามตี้ได้ แต่อย่าอาสานำ</td></tr>
       <tr><td>Arcana / History / Investigation</td><td class="n">−2</td><td>จุดอ่อนที่สุด · หลีกเลี่ยงทุกครั้ง</td></tr>
     </table>
   </div>

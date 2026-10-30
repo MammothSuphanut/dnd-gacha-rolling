@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำศักดิ์สิทธิ์ |
 | ที่ตั้ง | Shenzhou → Amanokado · ฝั่งเหนือในเขตตระกูล Hoshimi |
 | ต้นน้ำ → ปลายน้ำ | เนินป่าใต้ด่าน [Kanmon](../yugure-forest/kanmon.md) → ผ่านป่าผนึก [Yuimori](../yuimori.md) · [Hokuto](../hokuto.md) · [Fudamachi](../fudamachi.md) → ทะเลสาบของ [Shikimura](../shikimura.md) |
-| ความยาว | ~3,430 ไมล์ |
+| ความยาว | ~860 ไมล์ |
 | กระแสน้ำ | ใสเย็น ไหลเรียบ · ริมฝั่งปูหินเป็นขั้นหลายช่วง |
 | เมืองริมน้ำ | [Yuimori](../yuimori.md) · [Hokuto](../hokuto.md) · [Fudamachi](../fudamachi.md) · [Shikimura](../shikimura.md) |
 | การเดินทาง | เรือไม้แบนในช่วงล่าง · ทางเดินผู้แสวงบุญเลียบฝั่ง |

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Griffon River](griffon-river.md) |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · ป่า [Pearlwood](../pearlwood.md) |
 | ต้นน้ำ → ปลายน้ำ | น้ำพุในป่าหลัง [Elandil](../elandil.md) → บรรจบ Griffon River |
-| ความยาว | ~880 ไมล์ |
+| ความยาว | ~220 ไมล์ |
 | กระแสน้ำ | ใส เงียบ ตื้น · ก้นเป็นกรวดสีขาว |
 | เมืองริมน้ำ | [Elandil](../elandil.md) |
 | การเดินทาง | เดินลุยได้เกือบทั้งสาย |

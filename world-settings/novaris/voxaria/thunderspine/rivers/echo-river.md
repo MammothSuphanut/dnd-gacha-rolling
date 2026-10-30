@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำใต้ดินที่ผุดขึ้น |
 | ที่ตั้ง | Voxaria → Thunderspine · ป่าหิมะ |
 | ต้นน้ำ → ปลายน้ำ | ไหลออกจากนครใต้ดิน [Deepshade](../deepshade.md) → ผ่านถ้ำ [Riddle Cavern](../riddle-cavern.md) → ทะเลสาบในดินแดน [Frostfang Tribe](../frostfang-tribe.md) |
-| ความยาว | ~1,310 ไมล์ |
+| ความยาว | ~330 ไมล์ |
 | กระแสน้ำ | เย็นจัด · ไหลใต้ดินครึ่งสาย |
 | เมืองริมน้ำ | [Frostfang Tribe](../frostfang-tribe.md) · ✨ ใกล้ [Mushmire](../mushmire.md) |
 | การเดินทาง | ไม่มี · ทางเดินหิมะเลียบฝั่ง |

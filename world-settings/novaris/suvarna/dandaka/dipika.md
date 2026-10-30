@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองริมทะเลสาบ · เมืองช่างตะเกียง |
-| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบตะวันตกของ [Matsya](matsya.md) ~1,330 ไมล์ · ห่าง [Padmaghat](padmaghat.md) ~1,130 ไมล์ · [Vrika](vrika.md) ~1,350 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ริมทะเลสาบตะวันตกของ [Matsya](matsya.md) ~330 ไมล์ · ห่าง [Padmaghat](padmaghat.md) ~280 ไมล์ · [Vrika](vrika.md) ~340 ไมล์ |
 | สังกัด | **Jyoti Marga** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,470 คน |

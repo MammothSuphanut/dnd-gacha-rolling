@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองชุมทางรถไฟ |
 | Sector | **25** |
-| ที่ตั้ง | Voxaria → Forgeheim · เชิงเขาตะวันตก ระหว่าง Bulwark Harbor กับ Quarryside (~540 ไมล์ทั้งสองทาง) |
+| ที่ตั้ง | Voxaria → Forgeheim · เชิงเขาตะวันตก ระหว่าง Bulwark Harbor กับ Quarryside (~140 ไมล์ทั้งสองทาง) |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~3,000 คน |

@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองรั้วกั้นเวท · ขอบเขต Gate |
 | Sector | **61** |
-| ที่ตั้ง | Voxaria → Thunderspine · ขอบเหนือของ **The Verge** ห่างด่าน **Faewatch** ~670 ไมล์ · ห่าง **[Briarwatch](briarwatch.md)** ~830 ไมล์ |
+| ที่ตั้ง | Voxaria → Thunderspine · ขอบเหนือของ **The Verge** ห่างด่าน **Faewatch** ~170 ไมล์ · ห่าง **[Briarwatch](briarwatch.md)** ~210 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Thunderspine · ✨ รั้วเวทเป็นของรัฐบาลกลาง |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~800 คน |

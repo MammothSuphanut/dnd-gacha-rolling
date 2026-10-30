@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าแม่น้ำ · ตลาดประตูเหนือ |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ขอบเหนือของป่า Selva Scura ใต้ด่าน **Porta Ferro** · ห่าง Ashpeaks ~740 ไมล์ และ Thornhold ~1,080 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ขอบเหนือของป่า Selva Scura ใต้ด่าน **Porta Ferro** · ห่าง Ashpeaks ~180 ไมล์ และ Thornhold ~270 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,100 คน · ✨ ฤดูส่งไม้ (หลังฤดูฝน) เพิ่มอีกหลายร้อย |
@@ -16,7 +16,7 @@
 | ผู้ดูแล | ✨ **Fährmeister Otto Wendt** นายท่าและหัวหน้าสมาคมแพ |
 | เศรษฐกิจ | ท่าแม่น้ำที่ของทุกอย่างของอาณานิคมผ่าน · ตลาดกลางลานใหญ่ · โกดังไม้และสมุนไพร |
 | ภูมิอากาศ | ร้อนชื้น · แม่น้ำล้นตลิ่งช่วงฝนหนัก |
-| การเดินทาง | Amber Road ขึ้นเหนือสู่ Porta Ferro · เรือและแพลงใต้สู่ Thornhold · ทางทุ่งไป Ashmeadow (~1,020 ไมล์) |
+| การเดินทาง | Amber Road ขึ้นเหนือสู่ Porta Ferro · เรือและแพลงใต้สู่ Thornhold · ทางทุ่งไป Ashmeadow (~260 ไมล์) |
 
 ## ภาพรวม
 

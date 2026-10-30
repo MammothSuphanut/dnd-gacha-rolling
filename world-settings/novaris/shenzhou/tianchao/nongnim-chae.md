@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายป้อมบนเขา · **ค่ายใหญ่ของโจรป่า Nongnim** 綠林 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ป่าเขา ตะวันตกเฉียงใต้ของ **[Shiraki](../mizuho/shiraki.md)** ~1,540 ไมล์ · ห่าง **[Moyong-jang](moyong-jang.md)** ~320 ไมล์ · [Mudang-san](mudang-san.md) ~1,090 ไมล์ · [Jegal-gok](jegal-gok.md) ~1,530 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ป่าเขา ตะวันตกเฉียงใต้ของ **[Shiraki](../mizuho/shiraki.md)** ~380 ไมล์ · ห่าง **[Moyong-jang](moyong-jang.md)** ~80 ไมล์ · [Mudang-san](mudang-san.md) ~270 ไมล์ · [Jegal-gok](jegal-gok.md) ~380 ไมล์ |
 | สังกัด | **พันธมิตรอธรรม** — Nongnim คือหนึ่งในห้ากลุ่ม |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~280 คนในค่ายใหญ่ · ✨ "72 ค่าย" ทั่วป่าเขาของแผ่นดินใต้ รวมหลายพันคน |

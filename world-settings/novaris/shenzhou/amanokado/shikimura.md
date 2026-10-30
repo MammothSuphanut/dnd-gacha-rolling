@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองวัดกำแพงล้อม · เมืองผูกชิกิงามิ |
-| ที่ตั้ง | Shenzhou → Amanokado · ริมทะเลสาบ ห่าง [Tenmon](tenmon.md) ~350 ไมล์ · **[Hoshimi](hoshimi.md)** ~460 ไมล์ · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~1,870 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ริมทะเลสาบ ห่าง [Tenmon](tenmon.md) ~80 ไมล์ · **[Hoshimi](hoshimi.md)** ~100 ไมล์ · ตะวันออกของ [Kanmon](yugure-forest/kanmon.md) ~470 ไมล์ |
 | สังกัด | **Amanokado** — ตระกูล Hoshimi |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,500 คน |

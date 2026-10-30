@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองริมทะเลสาบ · สำนักงานปฏิทิน |
-| ที่ตั้ง | Shenzhou → Amanokado · ริมทะเลสาบเดียวกับ **[Hoshimi](hoshimi.md)** ห่าง ~270 ไมล์ · [Shikimura](shikimura.md) ~350 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ริมทะเลสาบเดียวกับ **[Hoshimi](hoshimi.md)** ห่าง ~85 ไมล์ · [Shikimura](shikimura.md) ~80 ไมล์ |
 | สังกัด | **Amanokado** — ตระกูล Hoshimi |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~750 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายโจรสลัดบนเกาะ · **ค่ายใหญ่ของโจรน้ำ Suro-chae** |
-| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออกของแผ่นดิน Tianchao · ตะวันออกไกลของ **[Yujing](../unspecified/yujing.md)** ~5,140 ไมล์ · ห่าง [Pado](pado.md) ~810 ไมล์ · [Hwanrak](hwanrak.md) ~940 ไมล์ · [Heukryong-hang](heukryong-hang.md) ~1,180 ไมล์ |
+| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออกของแผ่นดิน Tianchao · ตะวันออกไกลของ **[Yujing](../unspecified/yujing.md)** ~1,290 ไมล์ · ห่าง [Pado](pado.md) ~200 ไมล์ · [Hwanrak](hwanrak.md) ~230 ไมล์ · [Heukryong-hang](heukryong-hang.md) ~290 ไมล์ |
 | สังกัด | **พันธมิตรอธรรม** — Suro-chae คือหนึ่งในห้ากลุ่ม |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~920 คน · ✨ "18 ค่ายน้ำ" ทั่วหมู่เกาะ |

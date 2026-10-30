@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครป้อมริมแม่น้ำชายแดน · **นครหลวงของเผ่า Ha** |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายแดนเหนือติดอาณาจักร Samudra ห่าง [Tsonot](tsonot.md) ~430 ไมล์ · [Pravala](../dandaka/pravala.md) ~560 ไมล์ · [Mukta](../dandaka/mukta.md) ~1,570 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายแดนเหนือติดอาณาจักร Samudra ห่าง [Tsonot](tsonot.md) ~110 ไมล์ · [Pravala](../dandaka/pravala.md) ~140 ไมล์ · [Mukta](../dandaka/mukta.md) ~390 ไมล์ |
 | สังกัด | **เผ่า Ha** — อิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~3,000 คน |

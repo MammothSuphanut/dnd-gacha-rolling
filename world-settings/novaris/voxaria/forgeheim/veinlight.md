@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองเหมือง mithral |
 | Sector | **45** |
-| ที่ตั้ง | Voxaria → Forgeheim · ไหล่เขาใต้ ห่าง **[Cinderyard](cinderyard.md)** ~490 ไมล์ และ Deepforge ~1,320 ไมล์ |
+| ที่ตั้ง | Voxaria → Forgeheim · ไหล่เขาใต้ ห่าง **[Cinderyard](cinderyard.md)** ~120 ไมล์ และ Deepforge ~330 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Forgeheim · สัมปทานเหมืองของตระกูลดวาร์ฟจาก Deepforge |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,300 คน |

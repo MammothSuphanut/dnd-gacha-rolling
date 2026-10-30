@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองปราสาท · **เมืองหลวงแคว้นของตระกูล Akagane** |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงเหนือของ **[Shirasagi](shirasagi.md)** ~3,480 ไมล์ · ห่าง [Kanayama](kanayama.md) ~820 ไมล์ · [Hagane](hagane.md) ~940 ไมล์ · [Sumiyaki](sumiyaki.md) ~1,150 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันออกเฉียงเหนือของ **[Shirasagi](shirasagi.md)** ~890 ไมล์ · ห่าง [Kanayama](kanayama.md) ~210 ไมล์ · [Hagane](hagane.md) ~230 ไมล์ · [Sumiyaki](sumiyaki.md) ~290 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้นของไดเมียวตระกูล Akagane |
 | ระดับอารยธรรม | 2–3 |
 | ประชากร | ~2,400 คน (ในกำแพงปราสาท) |

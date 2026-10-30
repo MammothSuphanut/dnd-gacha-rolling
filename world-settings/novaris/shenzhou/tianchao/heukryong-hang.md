@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าป้อม · **ที่ตั้งใหญ่ของแก๊ง Heukryong-bang** 黑龍幇 |
-| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~4,190 ไมล์ · ห่าง **[Yeomjeon](yeomjeon.md)** แค่ ~250 ไมล์ · [Muyeong](muyeong.md) ~610 ไมล์ · [Dojang](dojang.md) ~620 ไมล์ |
+| ที่ตั้ง | Shenzhou → เกาะใหญ่ตะวันออก · ตะวันออกของ **[Yujing](../unspecified/yujing.md)** ~1,050 ไมล์ · ห่าง **[Yeomjeon](yeomjeon.md)** แค่ ~50 ไมล์ · [Muyeong](muyeong.md) ~190 ไมล์ · [Dojang](dojang.md) ~160 ไมล์ |
 | สังกัด | **Heukryong-bang** — พันธมิตรอธรรม |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~3,000 คน — เมืองใหญ่ที่สุดของฝ่ายอธรรม |

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · สาขาของ [Slagwater River](../../forgeheim/rivers/slagwater-river.md) |
 | ที่ตั้ง | Voxaria → Crownshore · ป่าตะวันออกของ Lumen City |
 | ต้นน้ำ → ปลายน้ำ | ทะเลสาบในป่าของ [Glasshaven](../glasshaven.md) → บรรจบ Slagwater River |
-| ความยาว | ~730 ไมล์ |
+| ความยาว | ~180 ไมล์ |
 | กระแสน้ำ | ใสจนเหมือนกระจก · ไหลช้า |
 | เมืองริมน้ำ | [Glasshaven](../glasshaven.md) |
 | การเดินทาง | เรือคายัคส่วนตัว · ทางเดินป่าส่วนบุคคล |

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Aldenreich → Gråmark · ป่า [Greypine](../greypine.md) ตอนเหนือ |
 | ต้นน้ำ → ปลายน้ำ | เนินป่าใกล้ [Bloomgrove](../bloomgrove.md) → ผ่าน [Shadeby](../shadeby.md) → ซาก [Elvenfall Ruins](../elvenfall-ruins.md) → ทะเลเหนือ |
-| ความยาว | ~3,710 ไมล์ |
+| ความยาว | ~930 ไมล์ |
 | กระแสน้ำ | กว้าง ไหลสม่ำเสมอ · ช่วงล่างน้ำมีประกายเงินจาง ๆ |
 | เมืองริมน้ำ | [Shadeby](../shadeby.md) · [Elvenfall Ruins](../elvenfall-ruins.md) (ซาก) |
 | การเดินทาง | เรือของพ่อค้าเถื่อนจาก Shadeby · ช่วงซากไม่มีใครล่อง |

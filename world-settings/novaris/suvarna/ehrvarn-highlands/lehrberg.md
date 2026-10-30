@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายฝึกเด็กบนภูเขา |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ภูเขาตะวันตกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~1,040 ไมล์ · ห่าง [Hammerstein](hammerstein.md) ~1,110 ไมล์ · [Ahnenhall](ahnenhall.md) ~1,350 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ภูเขาตะวันตกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~260 ไมล์ · ห่าง [Hammerstein](hammerstein.md) ~280 ไมล์ · [Ahnenhall](ahnenhall.md) ~340 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,100 คน (เด็กฝึก ~800) |

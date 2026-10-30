@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครกำแพงล้อม · นครสลักศิลาจารึก |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลาง ห่าง [Ikal](ikal.md) ~460 ไมล์ · [Ekchah](ekchah.md) ~490 ไมล์ · [Hatun](hatun.md) ~500 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลาง ห่าง [Ikal](ikal.md) ~110 ไมล์ · [Ekchah](ekchah.md) ~120 ไมล์ · [Hatun](hatun.md) ~120 ไมล์ |
 | สังกัด | **เผ่า Kaan** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,190 คน |

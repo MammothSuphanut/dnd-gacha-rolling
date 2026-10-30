@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | สุสานและวัดบนภูเขา · ที่ฝังผู้พิชิต |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ภูเขาใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~1,260 ไมล์ · ห่าง [Schildberg](schildberg.md) ~620 ไมล์ · [Kornau](kornau.md) ~1,160 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ภูเขาใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~320 ไมล์ · ห่าง [Schildberg](schildberg.md) ~160 ไมล์ · [Kornau](kornau.md) ~290 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~860 คน (นักบวชและผู้เฝ้าสุสาน) |

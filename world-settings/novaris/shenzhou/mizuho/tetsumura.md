@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านช่างตีดาบ |
-| ที่ตั้ง | Shenzhou → Mizuho · ตะวันตกเฉียงเหนือของ [Ssiat](../jungwon/ssiat.md) ~3,690 ไมล์ · ห่าง [Sumiyaki](sumiyaki.md) ~580 ไมล์ · [Hagane](hagane.md) ~640 ไมล์ · [Kanayama](kanayama.md) ~730 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · ตะวันตกเฉียงเหนือของ [Ssiat](../jungwon/ssiat.md) ~920 ไมล์ · ห่าง [Sumiyaki](sumiyaki.md) ~140 ไมล์ · [Hagane](hagane.md) ~160 ไมล์ · [Kanayama](kanayama.md) ~180 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้น Akagane |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~440 คน |

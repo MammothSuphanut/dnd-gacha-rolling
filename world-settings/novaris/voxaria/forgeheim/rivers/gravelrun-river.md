@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำใน "เขตเงียบ" |
 | ที่ตั้ง | Voxaria → Forgeheim · ที่ราบตะวันตกเฉียงเหนือ |
 | ต้นน้ำ → ปลายน้ำ | ทุ่งทุนดราใกล้หมู่บ้าน Ashari [Earthward](../earthward.md) → ผ่าน [Quietstone](../quietstone.md) · [Quarryside](../quarryside.md) · [Railhead](../railhead.md) → ทะเลใกล้ [Goldbluff](../goldbluff.md) |
-| ความยาว | ~4,190 ไมล์ |
+| ความยาว | ~1,050 ไมล์ |
 | กระแสน้ำ | ตื้น ก้นกรวด · ไหลผ่านหนองบึงช่วงกลาง |
 | เมืองริมน้ำ | [Earthward](../earthward.md) · [Quietstone](../quietstone.md) · [Quarryside](../quarryside.md) · [Railhead](../railhead.md) |
 | การเดินทาง | **ห้ามเรือยนต์ในเขตเงียบ** · เรือพายและแพเท่านั้น |

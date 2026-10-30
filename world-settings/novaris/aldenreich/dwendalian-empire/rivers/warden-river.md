@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำชายแดน |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · ชายแดนตะวันออกกับ Ödland |
 | ต้นน้ำ → ปลายน้ำ | เนินหลัง [Ashguard Garrison](../ashguard-garrison.md) → ทะเลสาบใกล้ [Mirebrook](../mirebrook.md) |
-| ความยาว | ~5,420 ไมล์ |
+| ความยาว | ~1,360 ไมล์ |
 | กระแสน้ำ | ลึกและเชี่ยว ข้ามได้แค่ที่ท่าข้ามเฝ้า |
 | เมืองริมน้ำ | [Ashguard Garrison](../ashguard-garrison.md) · [Bladehold](../bladehold.md) · [Tenton](../tenton.md) |
 | การเดินทาง | ท่าข้ามทหาร · เรือลาดตระเวนของจักรวรรดิ |

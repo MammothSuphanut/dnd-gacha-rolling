@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครพีระมิดแดง · ตลาดชายแดน |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ตะวันตก ห่าง [Velapura](../dandaka/velapura.md) ~940 ไมล์ · [Saktun](saktun.md) ~1,100 ไมล์ · ตะวันออกเฉียงใต้ของ [Kamala](../dandaka/kamala.md) ~1,810 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ตะวันตก ห่าง [Velapura](../dandaka/velapura.md) ~220 ไมล์ · [Saktun](saktun.md) ~280 ไมล์ · ตะวันออกเฉียงใต้ของ [Kamala](../dandaka/kamala.md) ~450 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,200 คน |

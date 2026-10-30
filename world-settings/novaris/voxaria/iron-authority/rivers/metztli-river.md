@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Voxaria → Iron Authority · เขต Gate Riftwild |
 | ต้นน้ำ → ปลายน้ำ | ป่าดิบรอบค่าย [Claimstake](../claimstake.md) → ใต้กำแพง [Lootfall](../lootfall.md) → ทะเลใกล้ [Quetza Temple](../quetza-temple.md) |
-| ความยาว | ~2,410 ไมล์ |
+| ความยาว | ~600 ไมล์ |
 | กระแสน้ำ | ลึก น้ำมาก · สีเงินในคืนจันทร์เต็มดวง |
 | เมืองริมน้ำ | [Claimstake](../claimstake.md) · [Lootfall](../lootfall.md) |
 | การเดินทาง | เรือเครื่องของฮันเตอร์ · ท่าเรือ Lootfall |

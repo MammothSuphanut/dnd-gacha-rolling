@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านวัดจันทร์ |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลางเหนือ ห่าง [Kaanmul](kaanmul.md) ~660 ไมล์ · [Kantun](kantun.md) ~770 ไมล์ · ตะวันออกเฉียงใต้ของ [Jyotipura](../dandaka/jyoti-marga.md) ~2,250 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่ากลางเหนือ ห่าง [Kaanmul](kaanmul.md) ~160 ไมล์ · [Kantun](kantun.md) ~190 ไมล์ · ตะวันออกเฉียงใต้ของ [Jyotipura](../dandaka/jyoti-marga.md) ~560 ไมล์ |
 | สังกัด | **เผ่า Kaan** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~340 คน |

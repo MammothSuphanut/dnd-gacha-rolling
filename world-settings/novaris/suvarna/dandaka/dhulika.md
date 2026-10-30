@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านเฝ้าด่าน |
-| ที่ตั้ง | Suvarna → Dandaka · ขอบป่าเหนือ ห่าง [Simhagarh](simhagarh.md) ~360 ไมล์ · [Marupura](marupura.md) ~470 ไมล์ · ตะวันตกของ [Ugra Mandir](ugra-mandir.md) ~1,220 ไมล์ |
+| ที่ตั้ง | Suvarna → Dandaka · ขอบป่าเหนือ ห่าง [Simhagarh](simhagarh.md) ~90 ไมล์ · [Marupura](marupura.md) ~120 ไมล์ · ตะวันตกของ [Ugra Mandir](ugra-mandir.md) ~300 ไมล์ |
 | สังกัด | **Jyoti Marga** — เผ่า Kshatra |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~590 คน |

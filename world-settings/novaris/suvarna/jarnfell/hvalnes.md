@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองป้อม · ล่าวาฬ |
-| ที่ตั้ง | Suvarna → Jarnfell · ฟยอร์ดตะวันตก ห่าง [Kolby](kolby.md) ~430 ไมล์ · [Jarnstad](jarnstad.md) ~450 ไมล์ · [Smedheim](smedheim.md) ~490 ไมล์ · [Skarvik](skarvik.md) ~610 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · ฟยอร์ดตะวันตก ห่าง [Kolby](kolby.md) ~110 ไมล์ · [Jarnstad](jarnstad.md) ~150 ไมล์ · [Smedheim](smedheim.md) ~150 ไมล์ · [Skarvik](skarvik.md) ~130 ไมล์ |
 | สังกัด | **ตระกูลฟยอร์ด** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,200 คน |

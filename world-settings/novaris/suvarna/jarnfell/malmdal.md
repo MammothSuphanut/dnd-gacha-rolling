@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ป้อมเหมือง |
-| ที่ตั้ง | Suvarna → Jarnfell · หุบเหล็ก ห่าง [Kolby](kolby.md) ~220 ไมล์ · [Jarnstad](jarnstad.md) ~240 ไมล์ · [Ornfjell](ornfjell.md) ~510 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · หุบเหล็ก ห่าง [Kolby](kolby.md) ~120 ไมล์ · [Jarnstad](jarnstad.md) ~150 ไมล์ · [Ornfjell](ornfjell.md) ~120 ไมล์ |
 | สังกัด | **ตระกูลหุบเหล็ก** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,130 คน |

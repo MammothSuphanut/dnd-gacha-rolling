@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Aldenreich → Dwendalian Empire · ป่า [Pearlwood](../pearlwood.md) |
 | ต้นน้ำ → ปลายน้ำ | หุบเขาสูงของ [Griffon Roost](../griffon-roost.md) ใน [Greyrock Mountains](../greyrock-mountains.md) → ทะเลชายฝั่งเหนือ ผ่าน [Elandil](../elandil.md) |
-| ความยาว | ~3,270 ไมล์ |
+| ความยาว | ~820 ไมล์ |
 | กระแสน้ำ | น้ำตกและแก่งช่วงบน · ใสเย็นไหลใต้เรือนยอดไม้ช่วงล่าง |
 | สาขา | [Elan River](elan-river.md) |
 | เมืองริมน้ำ | [Griffon Roost](../griffon-roost.md) · [Elandil](../elandil.md) |

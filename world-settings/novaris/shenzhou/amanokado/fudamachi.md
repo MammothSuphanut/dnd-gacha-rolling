@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองตลาดกำแพงล้อม · ตลาดยันต์ |
-| ที่ตั้ง | Shenzhou → Amanokado · ริมทะเลสาบ เหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~1,390 ไมล์ · ห่าง **[Hoshimi](hoshimi.md)** ~250 ไมล์ · [Hokuto](hokuto.md) ~530 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ริมทะเลสาบ เหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~350 ไมล์ · ห่าง **[Hoshimi](hoshimi.md)** ~70 ไมล์ · [Hokuto](hokuto.md) ~130 ไมล์ |
 | สังกัด | **Amanokado** — ตระกูล Hoshimi |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~340 คน |

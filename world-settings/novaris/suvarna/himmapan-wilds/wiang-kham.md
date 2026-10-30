@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เวียงกำแพงล้อม · เมืองตลาดชายแดน |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · หุบตะวันออก ตะวันตกเฉียงเหนือของ [Vargholm](../ulfdal/varga-republic.md) ~840 ไมล์ · ห่าง [Ban Tung](ban-tung.md) ~440 ไมล์ · [Wiang Hin](wiang-hin.md) ~620 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · หุบตะวันออก ตะวันตกเฉียงเหนือของ [Vargholm](../ulfdal/varga-republic.md) ~210 ไมล์ · ห่าง [Ban Tung](ban-tung.md) ~110 ไมล์ · [Wiang Hin](wiang-hin.md) ~160 ไมล์ |
 | สังกัด | **ล้านนา** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~870 คน |

@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ · แม่น้ำชายแดน |
 | ที่ตั้ง | Aldenreich → Costa Mosaica · ระหว่างอาณานิคม Saltmarch กับ Concord |
 | ต้นน้ำ → ปลายน้ำ | เนินเหมืองรอบ [Coppergate](../saltmarch/coppergate.md) → ผ่าน [Cantano](../cantano.md) → ทะเลชายฝั่งตะวันตก |
-| ความยาว | ~1,360 ไมล์ |
+| ความยาว | ~340 ไมล์ |
 | กระแสน้ำ | สั้นและเชี่ยว · น้ำสีเขียวอมฟ้าจากแร่ทองแดง |
 | เมืองริมน้ำ | [Coppergate](../saltmarch/coppergate.md) · [Cantano](../cantano.md) |
 | การเดินทาง | เรือพายระหว่าง Cantano กับทะเล · ถนนชายแดนเลียบฝั่ง |

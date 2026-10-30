@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองท่าในป่าดิบชื้น · **บ้านใหญ่ของตระกูล Dang** 唐家 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ชายฝั่งป่าฝน ตะวันตกของ **[Shiraki](../mizuho/shiraki.md)** ~2,350 ไมล์ · ห่าง [Moyong-jang](moyong-jang.md) ~1,720 ไมล์ · [Nongnim-chae](nongnim-chae.md) ~1,970 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ชายฝั่งป่าฝน ตะวันตกของ **[Shiraki](../mizuho/shiraki.md)** ~570 ไมล์ · ห่าง [Moyong-jang](moyong-jang.md) ~420 ไมล์ · [Nongnim-chae](nongnim-chae.md) ~490 ไมล์ |
 | สังกัด | **ตระกูล Dang** — 5 ตระกูลใหญ่ ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~780 คน |

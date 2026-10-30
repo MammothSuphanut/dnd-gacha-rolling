@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านบนดอย · **หมู่บ้านใหญ่ของชาวดอย** |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ดอยทางใต้ของ [Benjasila](pancha-sabha.md) ~1,830 ไมล์ · ห่าง [Pang Ma](pang-ma.md) ~90 ไมล์ · [Doi Fa](doi-fa.md) ~150 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ดอยทางใต้ของ [Benjasila](pancha-sabha.md) ~470 ไมล์ · ห่าง [Pang Ma](pang-ma.md) ~40 ไมล์ · [Doi Fa](doi-fa.md) ~55 ไมล์ |
 | สังกัด | **Pancha Sabha** ในนาม · ชาวดอยปกครองตัวเอง |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~1,900 คน |

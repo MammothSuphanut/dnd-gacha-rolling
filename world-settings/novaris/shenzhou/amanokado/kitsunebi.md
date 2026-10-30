@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองบนเนินเขา · เมืองสัญญาจิ้งจอก |
-| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกเฉียงใต้ของ [Kanmon](yugure-forest/kanmon.md) ~1,170 ไมล์ · ตะวันตกเฉียงเหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~1,200 ไมล์ · ห่าง [Hokuto](hokuto.md) ~460 ไมล์ |
+| ที่ตั้ง | Shenzhou → Amanokado · ตะวันออกเฉียงใต้ของ [Kanmon](yugure-forest/kanmon.md) ~290 ไมล์ · ตะวันตกเฉียงเหนือของ **[Kamizono](yugure-forest/kamizono.md)** ~300 ไมล์ · ห่าง [Hokuto](hokuto.md) ~110 ไมล์ |
 | สังกัด | **Amanokado** — ตระกูล Hoshimi |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,600 คน |

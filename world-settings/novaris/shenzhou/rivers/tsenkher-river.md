@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Shenzhou → [Tsagaan Tal](../unspecified/tsagaan-tal.md) · ใต้ยอด [Mubong](../unspecified/mubong.md) |
 | ต้นน้ำ → ปลายน้ำ | ไหล่เขา Mubong → ทุนดรา → ทะเลเหนือ |
-| ความยาว | ~2,070 ไมล์ |
+| ความยาว | ~520 ไมล์ |
 | กระแสน้ำ | สีฟ้าใสจากธารน้ำแข็ง · แข็งตัวในฤดูหนาว |
 | สาขา | [Baga River](baga-river.md) · [Sakai River](../amanokado/rivers/sakai-river.md) |
 | เมืองริมน้ำ | — (ค่ายชนเผ่าตามฤดู) · สำนักยุทธบนไหล่เขา Mubong |

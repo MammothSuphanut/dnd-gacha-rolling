@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านปากแม่น้ำ |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้ ห่าง [Oxtun](oxtun.md) ~360 ไมล์ · [Yaxkin](yaxkin.md) ~570 ไมล์ · [Hatun](hatun.md) ~720 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้ ห่าง [Oxtun](oxtun.md) ~90 ไมล์ · [Yaxkin](yaxkin.md) ~140 ไมล์ · [Hatun](hatun.md) ~180 ไมล์ |
 | สังกัด | **เผ่า Kaan** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~280 คน |

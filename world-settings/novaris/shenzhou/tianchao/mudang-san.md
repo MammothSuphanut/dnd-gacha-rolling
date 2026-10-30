@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองวัดบนภูเขา กำแพงล้อม · **ที่ตั้งสำนัก Mudang-pa** 武當派 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ภูเขาสูง ใต้ของ **[Shiraki](../mizuho/shiraki.md)** ~2,310 ไมล์ · ห่าง [Jegal-gok](jegal-gok.md) ~750 ไมล์ · [Cheongseong-san](cheongseong-san.md) ~970 ไมล์ · [Nongnim-chae](nongnim-chae.md) ~1,090 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · ภูเขาสูง ใต้ของ **[Shiraki](../mizuho/shiraki.md)** ~580 ไมล์ · ห่าง [Jegal-gok](jegal-gok.md) ~190 ไมล์ · [Cheongseong-san](cheongseong-san.md) ~240 ไมล์ · [Nongnim-chae](nongnim-chae.md) ~270 ไมล์ |
 | สังกัด | **Mudang-pa** — 9 ยอดสำนัก ฝ่ายธรรมะ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,300 คน (นักพรตและศิษย์ ~800) |

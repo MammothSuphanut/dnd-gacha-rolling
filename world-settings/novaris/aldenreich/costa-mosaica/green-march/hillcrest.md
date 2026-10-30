@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองกำแพงล้อม (บนเนิน) |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · เนินสูงกลางป่าทางตะวันออกเฉียงใต้ ห่าง Fernridge ~130 ไมล์ (≈ 5 วัน) และ Fernbrook ~330 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · เนินสูงกลางป่าทางตะวันออกเฉียงใต้ ห่าง Fernridge ~55 ไมล์ (≈ 2 วัน) และ Fernbrook ~110 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,100 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เวียงป้อม · **เวียงหลวงของล้านนา** |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · หุบเขาตะวันออก ตะวันออกเฉียงเหนือของ [Muang Ngoen](muang-ngoen.md) ~1,440 ไมล์ · ห่าง [Wiang Hin](wiang-hin.md) ~1,310 ไมล์ · [Ban Tung](ban-tung.md) ~1,470 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · หุบเขาตะวันออก ตะวันออกเฉียงเหนือของ [Muang Ngoen](muang-ngoen.md) ~360 ไมล์ · ห่าง [Wiang Hin](wiang-hin.md) ~330 ไมล์ · [Ban Tung](ban-tung.md) ~370 ไมล์ |
 | สังกัด | **ล้านนา** — ส่งเครื่องบรรณาการให้ Pancha Sabha แต่ปกครองตัวเอง |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,600 คน |

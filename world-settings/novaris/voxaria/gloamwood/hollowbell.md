@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองหล่อระฆัง |
 | Sector | **58** |
-| ที่ตั้ง | Voxaria → Gloamwood · ป่าใต้ใกล้ **Mirror Lake** (~280 ไมล์) · ห่าง **[Gravemere](gravemere.md)** ~640 ไมล์ |
+| ที่ตั้ง | Voxaria → Gloamwood · ป่าใต้ใกล้ **Mirror Lake** (~70 ไมล์) · ห่าง **[Gravemere](gravemere.md)** ~160 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Gloamwood |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~640 คน |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ป้อมชายฝั่ง |
-| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ชายฝั่งใต้ ตะวันออกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~2,450 ไมล์ · ห่าง [Kornau](kornau.md) ~420 ไมล์ · [Schildberg](schildberg.md) ~870 ไมล์ |
+| ที่ตั้ง | Suvarna → Ehrvarn Highlands · ชายฝั่งใต้ ตะวันออกเฉียงใต้ของ [Ehrenburg](ehrvarn-conquest.md) ~580 ไมล์ · ห่าง [Kornau](kornau.md) ~70 ไมล์ · [Schildberg](schildberg.md) ~190 ไมล์ |
 | สังกัด | **Ehrvarn Conquest** |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~910 คน |

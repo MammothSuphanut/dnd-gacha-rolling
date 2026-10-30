@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | หมู่บ้านบนเกาะ · นักงมซากเรือ |
 | Sector | **66** |
-| ที่ตั้ง | Voxaria → Blacktide Coast · เกาะเล็กนอกชายฝั่งใต้ ห่าง **[Tidehold](tidehold.md)** ~640 ไมล์ และ **[Blackreef](blackreef.md)** ~750 ไมล์ |
+| ที่ตั้ง | Voxaria → Blacktide Coast · เกาะเล็กนอกชายฝั่งใต้ ห่าง **[Tidehold](tidehold.md)** ~190 ไมล์ และ **[Blackreef](blackreef.md)** ~160 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Blacktide Coast |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~320 คน |

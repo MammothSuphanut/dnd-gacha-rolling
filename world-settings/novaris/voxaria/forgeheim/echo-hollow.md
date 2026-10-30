@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | หมู่บ้านหุบเขา |
 | Sector | **65** |
-| ที่ตั้ง | Voxaria → Forgeheim · หุบเขาลึกกลางเทือก Forgeheim ห่าง **[Rampart](rampart.md)** ~1,000 ไมล์ |
+| ที่ตั้ง | Voxaria → Forgeheim · หุบเขาลึกกลางเทือก Forgeheim ห่าง **[Rampart](rampart.md)** ~250 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 4 (ไฟฟ้ามีบ้าง สัญญาณโทรศัพท์ไม่มี) |
 | ประชากร | ~300 คน |

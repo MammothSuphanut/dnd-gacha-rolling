@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านโรนิน · ค่ายพักผู้พเนจร |
-| ที่ตั้ง | Shenzhou → Mizuho (นอกแคว้น) · เหนือของ [Heukseong](../heukseong/_overview.md) ~2,100 ไมล์ · ตะวันตกของ [Ssiat](../jungwon/ssiat.md) ~2,740 ไมล์ · ห่าง [Mumei](mumei.md) ~390 ไมล์ · [Kurobane](kurobane.md) ~620 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho (นอกแคว้น) · เหนือของ [Heukseong](../heukseong/_overview.md) ~530 ไมล์ · ตะวันตกของ [Ssiat](../jungwon/ssiat.md) ~680 ไมล์ · ห่าง [Mumei](mumei.md) ~95 ไมล์ · [Kurobane](kurobane.md) ~160 ไมล์ |
 | สังกัด | **ไม่ขึ้นกับแคว้นใด** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~600 คน (เปลี่ยนทุกฤดู) |

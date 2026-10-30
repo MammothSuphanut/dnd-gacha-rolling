@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ค่ายกระโจมตามฤดู · **ค่ายรวมเผ่าของชนเผ่าแห่งทุ่ง** |
-| ที่ตั้ง | Suvarna → Windgrass Plains · ขอบตะวันตกของทุ่ง ห่าง [Red Hoof](red-hoof.md) ~1,720 ไมล์ · [Thunder Butte](thunder-butte.md) ~2,050 ไมล์ · ตะวันตกของ [Serpent Vault](serpent-vault.md) ~2,670 ไมล์ |
+| ที่ตั้ง | Suvarna → Windgrass Plains · ขอบตะวันตกของทุ่ง ห่าง [Red Hoof](red-hoof.md) ~420 ไมล์ · [Thunder Butte](thunder-butte.md) ~500 ไมล์ · ตะวันตกของ [Serpent Vault](serpent-vault.md) ~660 ไมล์ |
 | สังกัด | **เผ่าม้าลม** — ชนเผ่าแห่งทุ่งไม่ยอมรับอำนาจของรัฐใด |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~1,600 คนในฤดูรวมเผ่า · เกือบว่างเปล่านอกฤดู |

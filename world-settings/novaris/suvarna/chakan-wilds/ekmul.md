@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านวัด · ที่ฝังกษัตริย์ |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ห่าง [Balamkin](balamkin.md) ~190 ไมล์ · [Kejha](kejha.md) ~210 ไมล์ · [Yaxkin](yaxkin.md) ~300 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ป่าใต้ ห่าง [Balamkin](balamkin.md) ~50 ไมล์ · [Kejha](kejha.md) ~50 ไมล์ · [Yaxkin](yaxkin.md) ~75 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~300 คน (นักบวชและผู้เฝ้าสุสาน) |

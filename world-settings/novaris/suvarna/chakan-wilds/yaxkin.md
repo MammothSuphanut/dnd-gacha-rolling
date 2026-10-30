@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | นครไร่ข้าวโพด |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้ ห่าง [Oxtun](oxtun.md) ~280 ไมล์ · [Ekmul](ekmul.md) ~300 ไมล์ · [Kejha](kejha.md) ~440 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งใต้ ห่าง [Oxtun](oxtun.md) ~70 ไมล์ · [Ekmul](ekmul.md) ~75 ไมล์ · [Kejha](kejha.md) ~110 ไมล์ |
 | สังกัด | **เผ่า Balam** |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~1,470 คน |

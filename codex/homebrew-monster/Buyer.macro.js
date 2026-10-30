@@ -178,7 +178,7 @@
       // ---- Traits ----
       feat("Ascendant Being", "icons/magic/symbols/star-solid-gold.webp",
         "<p><strong>Tier of Being: Ascendant.</strong> Buyer's body and soul are fused into a single will. He doesn't age and can't die of old age.</p>"
-        + "<p><em>Tier Gap:</em> Against a Mortal-tier creature, Buyer has a +5 bonus to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it). Mortal creatures gain no penalty, and creatures two or more tiers below him can't affect him at all.</p>"),
+        + "<p><em>Tier Gap:</em> For each tier Buyer is above another creature, he gains +5 to every d20 Test that involves that creature (his attack rolls against it, his saving throws against its effects, and contested checks with it) and +5 AC against that creature's attacks (Mortal +5). The lower creature's other rolls are unchanged.</p>"),
 
       feat("Thousand Faces", "icons/magic/control/hypnosis-mesmerism-swirl.webp",
         "<p>Buyer's true face is unknown, perhaps even to himself. When he changes shape (Change Shape, <em>disguise self</em>, <em>alter self</em>, <em>polymorph</em> on himself), the copy is perfect: his voice, smell, handwriting, and mannerisms match the form. Only Truesight or a creature that touches him and succeeds on a DC 17 Wisdom (Insight) check can tell. He has Advantage on Charisma (Deception) checks while disguised.</p>"),

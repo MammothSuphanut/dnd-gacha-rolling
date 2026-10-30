@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | ป้อมตลาดบนเนินเขา |
-| ที่ตั้ง | Suvarna → Jarnfell · เนินเขาตะวันออกเฉียงใต้ของ [Giftvik](giftvik.md) ~1,770 ไมล์ · ห่าง [Solvik](solvik.md) ~280 ไมล์ · [Solaria](../deshret/imperium-solis.md) ~1,920 ไมล์ |
+| ที่ตั้ง | Suvarna → Jarnfell · เนินเขาตะวันออกเฉียงใต้ของ [Giftvik](giftvik.md) ~320 ไมล์ · ห่าง [Solvik](solvik.md) ~100 ไมล์ · [Solaria](../deshret/imperium-solis.md) ~450 ไมล์ |
 | สังกัด | **Giftvik** — ไวกิ้งอิสระ |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,390 คน |

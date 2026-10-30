@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองริมคลอง · หัวเมืองหลวง |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · ใกล้ [Ban Nong](ban-nong.md) แค่ ~180 ไมล์ · ห่าง [Nakhon Phet](nakhon-phet.md) ~420 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · ห่าง [Ban Nong](ban-nong.md) ~130 ไมล์ · [Nakhon Phet](nakhon-phet.md) ~130 ไมล์ |
 | สังกัด | **Pancha Sabha** — หัวเมืองชั้นใน |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,070 คน |

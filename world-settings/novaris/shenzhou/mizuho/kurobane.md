@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองปราสาทชายแดน · **เมืองหลวงแคว้นของตระกูล Kurobane** |
-| ที่ตั้ง | Shenzhou → Mizuho · เหนือของ **[Heukseong](../heukseong/_overview.md)** ~2,470 ไมล์ · ห่าง [Sasurai](sasurai.md) ~620 ไมล์ · [Mumei](mumei.md) ~840 ไมล์ · [Otemon](otemon.md) ~1,030 ไมล์ |
+| ที่ตั้ง | Shenzhou → Mizuho · เหนือของ **[Heukseong](../heukseong/_overview.md)** ~620 ไมล์ · ห่าง [Sasurai](sasurai.md) ~160 ไมล์ · [Mumei](mumei.md) ~210 ไมล์ · [Otemon](otemon.md) ~260 ไมล์ |
 | สังกัด | **Akitsu Shogunate** — แคว้นของไดเมียวตระกูล Kurobane |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~950 คน |

@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองกำแพงบนช่องเขา |
 | Sector | **48** |
-| ที่ตั้ง | Voxaria → Forgeheim · ช่องเขาสูงห่าง **[Coldspring](coldspring.md)** ~275 ไมล์ และ **[Echo Hollow](echo-hollow.md)** ~1,000 ไมล์ |
+| ที่ตั้ง | Voxaria → Forgeheim · ช่องเขาสูงห่าง **[Coldspring](coldspring.md)** ~70 ไมล์ และ **[Echo Hollow](echo-hollow.md)** ~250 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 5 (เมือง) · กำแพงเป็นของยุคก่อนรวมชาติ |
 | ประชากร | ~1,200 คน |

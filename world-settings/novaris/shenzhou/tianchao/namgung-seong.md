@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองของตระกูลยุทธ · **บ้านใหญ่ของตระกูล Namgung** 南宮世家 |
-| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · เหนือของ **[Yujing](../unspecified/yujing.md)** ~1,520 ไมล์ · ห่าง [Jegal-gok](jegal-gok.md) ~780 ไมล์ · [Mudang-san](mudang-san.md) ~1,410 ไมล์ |
+| ที่ตั้ง | Shenzhou → แผ่นดิน Tianchao · เหนือของ **[Yujing](../unspecified/yujing.md)** ~380 ไมล์ · ห่าง [Jegal-gok](jegal-gok.md) ~190 ไมล์ · [Mudang-san](mudang-san.md) ~350 ไมล์ |
 | สังกัด | **ตระกูล Namgung** — อันดับหนึ่งของ 5 ตระกูลใหญ่ ฝ่ายธรรมะ · บนแผนที่เป็นของ Tianchao (จ่ายภาษีตามสมัครใจ) |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~1,500 คน (คนในตระกูลและศิษย์ ~300) |

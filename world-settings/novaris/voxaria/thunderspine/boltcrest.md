@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองบนยอดเขา · ฟาร์มเก็บพลังสายฟ้า |
 | Sector | **53** |
-| ที่ตั้ง | Voxaria → Thunderspine · ยอดเขาสูงห่าง **[Highrod](highrod.md)** ~180 ไมล์ และ **Twinfire Gorge** ~530 ไมล์ |
+| ที่ตั้ง | Voxaria → Thunderspine · ยอดเขาสูงห่าง **[Highrod](highrod.md)** ~45 ไมล์ และ **Twinfire Gorge** ~130 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Thunderspine |
 | ระดับอารยธรรม | 4–5 |
 | ประชากร | ~1,700 คน |

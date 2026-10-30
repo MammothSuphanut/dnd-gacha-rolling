@@ -10,7 +10,7 @@
 | ประเภท | แม่น้ำ |
 | ที่ตั้ง | Voxaria → Forgeheim · Gloamwood |
 | ต้นน้ำ → ปลายน้ำ | ยอดเขาหิมะใต้ [Skylift](../skylift.md) และ [Cablecross](../cablecross.md) → ป่าสนทึบของ Gloamwood → ทะเลที่ [Lamplight Point](../../gloamwood/lamplight-point.md) |
-| ความยาว | ~2,610 ไมล์ |
+| ความยาว | ~650 ไมล์ |
 | กระแสน้ำ | เชี่ยวลงจากภูเขา · ช่วงป่าไหลมืดใต้ร่มสน |
 | เมืองริมน้ำ | [Lamplight Point](../../gloamwood/lamplight-point.md) |
 | การเดินทาง | มองจากกระเช้า · ล่องแก่งท่องเที่ยวช่วงบน |

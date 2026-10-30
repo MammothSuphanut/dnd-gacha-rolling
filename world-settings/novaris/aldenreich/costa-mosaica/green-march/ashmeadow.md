@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านทุ่งหญ้า |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ทุ่งหญ้าตีนเขา **Ashpeaks** ด้านใต้ (~400 ไมล์ ≈ 17 วัน) ห่าง Ferrymoor ~1,020 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · ทุ่งหญ้าตีนเขา **Ashpeaks** ด้านใต้ (~100 ไมล์ ≈ 4 วัน) ห่าง Ferrymoor ~260 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 1–2 |
 | ประชากร | ~200 คน · วัวและแพะหลายร้อยตัว |

@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | เมืองป้อมปราการ · ที่ว่าการอาณานิคม |
-| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · กลางป่า Selva Scura ห่าง Timberton ~600 ไมล์ (≈ 25 วัน) และ Ferrymoor ~1,080 ไมล์ |
+| ที่ตั้ง | Aldenreich → Costa Mosaica → [Green March](_overview.md) · กลางป่า Selva Scura ห่าง Timberton ~150 ไมล์ (≈ 6 วัน) และ Ferrymoor ~270 ไมล์ |
 | สังกัด | **Dwendalian Empire** — อาณานิคม Green March |
 | ระดับอารยธรรม | 2 |
 | ประชากร | ~2,500 คน · ทหาร Righteous Brand ราว 350 (หนึ่งในสามเป็นฮาล์ฟออร์ค) |

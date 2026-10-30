@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองป่าไม้ภูเขา |
 | Sector | **46** |
-| ที่ตั้ง | Voxaria → Forgeheim · ป่าสนบนหุบเขาสูง ห่าง **[Coldspring](coldspring.md)** ~110 ไมล์ และ **[Rampart](rampart.md)** ~380 ไมล์ |
+| ที่ตั้ง | Voxaria → Forgeheim · ป่าสนบนหุบเขาสูง ห่าง **[Coldspring](coldspring.md)** ~25 ไมล์ และ **[Rampart](rampart.md)** ~95 ไมล์ |
 | สังกัด | **Voxaria** — รัฐ Forgeheim |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~1,300 คน |

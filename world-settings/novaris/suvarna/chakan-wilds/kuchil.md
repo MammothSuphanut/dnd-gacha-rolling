@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านชายฝั่ง · ที่พักแคนู |
-| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งตะวันออก ห่าง [Chakha](chakha.md) ~570 ไมล์ · [Nohha](nohha.md) ~680 ไมล์ · [Chaktun](chaktun.md) ~850 ไมล์ |
+| ที่ตั้ง | Suvarna → Chakan Wilds · ชายฝั่งตะวันออก ห่าง [Chakha](chakha.md) ~130 ไมล์ · [Nohha](nohha.md) ~140 ไมล์ · [Chaktun](chaktun.md) ~200 ไมล์ |
 | สังกัด | **เผ่า Ha** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~1,480 คน |

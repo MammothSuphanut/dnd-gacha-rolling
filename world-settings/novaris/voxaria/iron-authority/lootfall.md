@@ -9,7 +9,7 @@
 |---|---|
 | ประเภท | เมืองบูมของฮันเตอร์ · เมืองกำแพงล้อมในเขต Gate |
 | Sector | **36** |
-| ที่ตั้ง | Voxaria → Iron Authority (เขต Gate **Riftwild**) · ป่าดิบห่างซาก **[Quetza](quetza.md)** ~670 ไมล์ และ Quetza Temple ~830 ไมล์ · ห่าง **[Claimstake](claimstake.md)** ~300 ไมล์ |
+| ที่ตั้ง | Voxaria → Iron Authority (เขต Gate **Riftwild**) · ป่าดิบห่างซาก **[Quetza](quetza.md)** ~170 ไมล์ และ Quetza Temple ~210 ไมล์ · ห่าง **[Claimstake](claimstake.md)** ~75 ไมล์ |
 | สังกัด | **Voxaria** — ✨ ในนามขึ้นรัฐ Iron Authority แต่ปกครองตัวเองโดยสมาคมฮันเตอร์ |
 | ระดับอารยธรรม | 5 |
 | ประชากร | ~4,200 คน · ✨ ครึ่งหนึ่งอยู่ในสลัมนอกกำแพง |

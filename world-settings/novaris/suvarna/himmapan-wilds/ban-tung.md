@@ -8,7 +8,7 @@
 | หัวข้อ | ข้อมูล |
 |---|---|
 | ประเภท | หมู่บ้านช่างทอตุง |
-| ที่ตั้ง | Suvarna → Himmapan Wilds · หุบตะวันออก ห่าง [Wiang Hin](wiang-hin.md) ~210 ไมล์ · [Wiang Kham](wiang-kham.md) ~440 ไมล์ · ตะวันตกเฉียงเหนือของ [Vargholm](../ulfdal/varga-republic.md) ~1,250 ไมล์ |
+| ที่ตั้ง | Suvarna → Himmapan Wilds · หุบตะวันออก ห่าง [Wiang Hin](wiang-hin.md) ~55 ไมล์ · [Wiang Kham](wiang-kham.md) ~110 ไมล์ · ตะวันตกเฉียงเหนือของ [Vargholm](../ulfdal/varga-republic.md) ~310 ไมล์ |
 | สังกัด | **ล้านนา** |
 | ระดับอารยธรรม | 1 |
 | ประชากร | ~300 คน |
